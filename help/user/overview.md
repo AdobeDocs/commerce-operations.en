@@ -1,10 +1,7 @@
 ---
-solution: Adobe Commerce
-product: magento
-type: Documentation
-title: Commerce Operations overview
-description: A Magento platform built on Adobe.
+title: Commerce operations overview
+description: Introduction to commerce operations
 ---
-# Commerce overview
+# Commerce operations overview
 
 Home page - add content.

@@ -3,6 +3,9 @@ mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en
 index: no
 hide: yes
+solution: Adobe Commerce
+product: magento
+type: Documentation
 ---
 
 # Metadata for internal use
