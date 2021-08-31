@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce
+title: About Adobe Commerce
 description: Description of Adobe Commerce
 ---
 
