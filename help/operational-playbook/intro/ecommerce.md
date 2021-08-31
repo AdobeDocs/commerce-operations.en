@@ -67,8 +67,8 @@ Here are some common e-Commerce challenges organisations encounter:
 
 Customer expectations are rising and there are always new growth techniques to surge your conversion rate. This playbook will look to outline and explain in more detail how to address some of these customer challenges and successfully run an e-Commerce site to its full potential.
 
-[placholder-for-image]
+![The value of commerce technology](../../assets/playbooks/commerce-tech.png)
 
 ## Commerce industries
 
-[placholder-for-image]
+![The value of commerce technology](../../assets/playbooks/commerce-industries.png)
