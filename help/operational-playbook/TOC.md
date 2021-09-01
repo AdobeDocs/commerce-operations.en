@@ -16,3 +16,10 @@ user-guide-title: Commerce Operational Playbook
   - [Goals](leadership/goals.md)
   - [Vision](leadership/vision.md)
   - [Planning](leadership/planning.md)
+- Solution {#solution}
+  - [Software-as-a-service (Saas)](solution/software-service.md)
+  - [Platform-as-a-service (Saas)](solution/platform-service.md)
+  - [On-premises hosting](solution/on-premises.md)
+  - [Cloud vs on-premises](solution/hosting-comparison.md)
+  - [Third-party integrations](solution/integrations.md)
+  - [Upgrades, backups, and maintenance](solution/maintenance.md)
