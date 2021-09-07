@@ -39,7 +39,7 @@ A basic ecommerce project management plan would include:
 
 - **Ecommerce platform**—Analyse and finalise the platform required for the business to meet the requirements.
 
-## Best practises
+## Best practices
 
 Some best practices that businesses can refer to for project management:
 

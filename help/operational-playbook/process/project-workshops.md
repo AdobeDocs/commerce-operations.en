@@ -38,6 +38,19 @@ It is essential to outline the attendees for the project kick-off. Having a big 
 
 ### Topics to cover
 
+Topics that need to cover in the project kick- off depends on project size, requirement, technology etc. Some of the common things  that need to cover are:
+
+- Project budget
+- Team introduction
+- Timelines
+- Deliverables
+- Milestones
+- Proposed dates
+- Communication mode
+- Training
+- Testing
+- Change request
+
 ### Next steps
 
 Next steps for an e-commerce project refer to outlining the requirements such as the build solution, design Nd project planning. Be it a remotely managed project or same location project, the next steps need to be detailed so that the team is aligned.
