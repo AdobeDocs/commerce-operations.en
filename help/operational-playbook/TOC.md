@@ -23,3 +23,8 @@ user-guide-title: Commerce Operational Playbook
   - [Cloud vs on-premises](solution/hosting-comparison.md)
   - [Third-party integrations](solution/integrations.md)
   - [Upgrades, backups, and maintenance](solution/maintenance.md)
+- Strategy {#strategy}
+  - [Commerce strategy](strategy/commerce.md)
+  - [Focus](strategy/focus.md)
+  - [Content strategy](strategy/content.md)
+  - [Maturity](strategy/maturity.md)
