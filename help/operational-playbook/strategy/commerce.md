@@ -58,7 +58,9 @@ The overall Commerce strategy of every business will be unique in nature, depend
 - Automated renewals and replenishment
 - Product registration/activation
 
-## Key objectives to consider when planning the digital strategy of your business:
+## Objectives
+
+The following list includes key objectives to consider when planning the digital strategy of your business:
 
 - Consistency is important
 - Regularly review customer analytics

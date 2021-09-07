@@ -23,6 +23,8 @@ The following table summarizes the different levels of maturity:
 | Walk | At this level, organisations are starting to leverage past customer data  coming from multiple sources, needing multi-departmental collaboration.  Organisations within this level can use the full potential of campaigns  managed by people and have a mature set of best practices, processes and  development stream. |
 | Run | The highest level of maturity enables AI-powered campaigns across various  channels and uses predictive stock management to prevent churn, product  information management tools to enrich products. It is best achievedby organizations with an evolved data culture, development skills and processes in house and offshore. |
 
+{style="table-layout:auto"}
+
 ### Crawl
 
 This is the initial phase for any business, the starting point. In this phase, businesses need to focus on delivering a presentable, easy to navigate, user-friendly and simple checkout style of ecommerce platform, which is equipped with the basic features required in an ecommerce site. Businesses need to check if they already have a pricing system in place or would they require a pricing system.

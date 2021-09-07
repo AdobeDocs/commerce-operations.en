@@ -37,6 +37,4 @@ Adobe Experience Manager combines a number of infrastructure- level and applicat
 - **Forms**—Integrate enterprise-level forms into your websites and mobile experiences and simplify the creation of forms and the completion of transactions.
 - **Apps**—Create and deliver mobile apps with a solution that bridges the gap between marketers and IT, so marketers can easily update content, even after launch.
 
-## Framework for content strategy
-
 ![Content strategy framework diagram](../../assets/playbooks/content-strategy-framework2.png)
