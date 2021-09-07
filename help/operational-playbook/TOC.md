@@ -28,3 +28,12 @@ user-guide-title: Commerce Operational Playbook
   - [Focus](strategy/focus.md)
   - [Content strategy](strategy/content.md)
   - [Maturity](strategy/maturity.md)
+- Process {#process}
+  - [Order management](process/order-management.md)
+  - [Project plan](process/project-plan.md)
+  - [Project scope](process/project-scope.md)
+  - [Project management](process/project-management.md)
+  - [DACI model](process/project-management-framework.md)
+  - [Agile Scrum methodology](process/agile-scrum.md)
+  - [Common project workshops](process/project-workshops.md)
+  - [Testing](process/testing.md)
