@@ -37,3 +37,12 @@ user-guide-title: Commerce Operational Playbook
   - [Agile Scrum methodology](process/agile-scrum.md)
   - [Common project workshops](process/project-workshops.md)
   - [Testing](process/testing.md)
+- People {#people}
+  - [Teams](people/teams.md)
+  - [Team structure](people/team-structure.md)
+  - [Organization structure](people/organizational-structure.md)
+  - [Communication](people/communication.md)
+  - [Roles and responsibilities](people/roles-responsibilities.md)
+  - [Resources](people/resources.md)
+  - [Culture](people/culture.md)
+  - [Project teams](people/project-teams.md)
