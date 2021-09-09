@@ -64,3 +64,4 @@ user-guide-title: Commerce Operational Playbook
   - [Personalization](product/personalization.md)
   - [Click and collect](product/click-collect.md)
   - [PWA](product/progressive-web-app.md)
+- [Checklists and templates](checklists-templates/home.md)
