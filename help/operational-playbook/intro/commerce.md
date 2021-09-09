@@ -5,27 +5,27 @@ description: Description of Adobe Commerce
 
 # Adobe Commerce
 
-Magento is the leading platform for open commerce innovation. Every year, Magento handles over $100 billion in gross merchandise volume. Magento Commerce gives customers the power to create unique and engaging shopping experiences, out-of-the-box features, and the unlimited ability to customise, a flexible headless architecture, and seamless third-party integrations.
+Adobe [!DNL Commerce] is the leading platform for open commerce innovation. Every year, Adobe [!DNL Commerce] handles over $100 billion in gross merchandise volume. Adobe [!DNL Commerce] gives customers the power to create unique and engaging shopping experiences, out-of-the-box features, and the unlimited ability to customise, a flexible headless architecture, and seamless third-party integrations.
 
-There are two versions of the Magento platform:
+There are two versions of [!DNL Commerce]:
 
-_Magento Open Source_ is the free version of Magento, previously called Magento Community. You can download, customize, and run the platform on your own server or Magento host of choice.
+_Magento Open Source_ is the free version, previously called Magento Community. You can download, customize, and run the platform on your own server or hosting provider of your choice.
 
-The majority of merchants use Magento Open Source because of the low cost and open nature. For developers, it doesn’t really matter if he develops on Open Source or Commerce. But Commerce has more built-in features that can be used out of the box.
+The majority of merchants use Magento Open Source because of the low cost and open nature. For developers, it doesn’t really matter if they develop on Magento Open Source or Adobe [!DNL Commerce]. However, Adobe [!DNL Commerce] has more built-in features that can be used out of the box.
 
-_Magento Commerce_ is the paid version of Magento, previously known as Magento Enterprise. Being the premium version, there are a lot of additional features from Magento Commerce.
+_Adobe [!DNL Commerce]_ is the paid version, previously known as Magento Enterprise. Being the premium version, there are a lot of additional features.
 
-Magento Commerce can be hosted on-premise. So you host and develop locally on your own server, or have the choice of your own Magento host. Alternatively, there is Magento Commerce Cloud, the cloud-hosted solution from Adobe. In the Solution section, we look deeper into the differences between hosted (SaaS, on premise and Platform as a service hosting solutions.
+Adobe [!DNL Commerce] can be hosted on-premises. So you host and develop locally on your own server or you can choose a hosting provider. Alternatively, there is Adobe [!DNL Commerce] on cloud infrastrucure, the cloud-hosted solution from Adobe. In the Solution section, we look deeper into the differences between hosted (e.g., SaaS, on-premises) and PaaS hosting solutions.
 
-Magento Commerce is a full-featured e-Commerce platform that comes with additional features:
+Adobe [!DNL Commerce] is a full-featured ecommerce solution that comes with the following additional features:
 
-- B2B functionality, like quoting, custom catalogs, and manage buyer roles and permissions.
-- Magento BI dashboards, with Visualisation and custom report builder.
+- B2B functionality, like quoting, custom catalogs, and manage buyer roles and permissions
+- Magento BI dashboards with visualisation and custom report builder
 - Magento Chat (powered by dotdigital)
-- Advanced marketing tools.
-- Sense powered product recommendations.
-- WYSIWYG page builder.
-- Customer segmentation.
-- Customer Loyalty Tools, like Easy-to-redeem coupons.
-- Content staging and preview for Magento hosting.
-- Visual merchandising.
+- Advanced marketing tools
+- [!DNL Product Recommendations] powered by Adobe [!DNL Sensei]
+- WYSIWYG Page Builder
+- Customer segmentation
+- Customer loyalty tools, like easy-to-redeem coupons
+- Content staging and preview for hosting
+- Visual merchandising

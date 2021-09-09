@@ -1,20 +1,23 @@
 ---
 title: Commerce operations
-description: Definition of commerce operations
+description: Learn what it takes to have a successful operational strategy for your ecommerce business.
 ---
 
 # Commerce operations
 
-Commerce Operations is about centralising the back-end operations so that it works smarter, faster, and more efficient for an e-Commerce business to have a successful operational strategy, it requires a strong IT infrastructure that is capable to support the end-to-end e-Commerce operations from displaying products to inventory to checkout and shipping. e-Commerce operations are built on several things such as a user-friendly storefront, variety of products, proper management of inventory, promotions, easy checkout and convenient payment and shipping methods.
+Commerce operations is about centralizing backend operations so that they work smarter, faster, and more efficienty. A successful operational strategy requires a strong IT infrastructure that is capable of supporting end-to-end ecommerce operations; product catalog, inventory management, checkout, and shipping. Ecommerce operations are built on several things, such as a user-friendly storefront, variety of products, proper management of inventory, promotions, easy checkout, and convenient payment and shipping methods.
 
-## Why is e-commerce operation strategy important?
+## Why is ecommerce operation strategy important?
 
-e-Commerce is based on direct-to-consumer strategy; hence it is essential that customers receive the best customer experience for them to keep coming back. To do so:
+Ecommerce is based on a direct-to-consumer strategy. It is essential that customers receive the best customer experience for them to keep coming back. 
 
-- The owner would need to start with understanding the products they are hosting on the site and target audience they would be catering to which would lead to a higher conversion rate.
-- The owner needs to find the right platform which is not only secure but also scalable, has different features and functionality that are not over complicated for the team to manage.
-- There needs to be the right set of people with the required skill set to achieve the end vision •  There needs to be set Project Plan which covers team required, timelines, deliverables etc.
-- There needs to be clear Project Scope which mentions the singed  off/agreed in-scope and out of scope items to avoid scope creep and delay on the project deliverables.
-- The pricing modal of the project keeping in mind with any internal and external costs that would be incurred during the project.
+Steps you can take include:
 
-The importance of laying out an e-Commerce operations strategy is to provide the best e-Commerce experience to the customer by keeping all the internal plan, scope and team aligned. Better the commerce operations, better the focus and speed on selling products online to bring more revenue.
+- Understanding the products you are hosting on the site and the target audience that you are catering to. This leads to a higher conversion rate.
+- Finding the right platform, which is not only secure but also scalable. It should have different features and functionality that are not over complicated for the team to manage.
+- Building the right team that includes people with the required skills set to achieve the project vision.
+- Creating and follow a project plan that covers team requirements, timelines, and deliverables.
+- Establishing a clear project scope that mentions the singed-off/agreed in-scope and out-of-scope items to avoid scope creep and delay on the project deliverables.
+- Monitoring internal and external costs to make sure the project stays on budget.
+
+An ecommerce operations strategy is important to providing your customers with the best experience. Better commerce operations means better focus and speed on selling products online.

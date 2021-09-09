@@ -20,6 +20,6 @@ Benefits of this form of centralized model in a digital implementation project i
 
 ## Project-based structure
 
-The following diagram shows and example of a recommended project-based organization structure:
+The following diagram shows an example of a recommended project-based organizational structure:
 
 ![Projec-based organization structure diagram](../../assets/playbooks/org-structure-project.png)

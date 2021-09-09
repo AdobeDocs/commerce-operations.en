@@ -5,9 +5,9 @@ description: Learn about the different Commerce business models.
 
 # What is B2B and B2C?
 
-Simply, “B2B” stands for “business to business,” while “B2C” means “business to consumer". In general, B2B businesses sell products and services directly to other businesses. Or, more specifically, they sell to the decision makers in any business.  This can include everything from manufacturing to consumer.
+B2B stands for “business-to-business”, while B2C means “business-to-consumer". In general, B2B businesses sell products and services directly to other businesses (more specifically, they sell to the decision makers in any business). This can include everything from manufacturing to consumer.
 
-This contrasts with business-to-consumer (B2C) models, which sell products generally for personal use directly to individual customers. This can include travel, clothing, cars, and so much more.
+This contrasts with B2C models, which generally sell products for personal use directly to individual customers. This can include travel, clothing, cars, and so much more.
 
 B2B businesses need to focus on:
 

@@ -5,13 +5,13 @@ description: Description of ecommerce
 
 # What is e-commerce?
 
-In the overlapping worlds of e-commerce, social selling and digital marketplaces, the customer experience gives consumers a choice to engage in the channel they prefer, so making the right choice on how you engage and sell online has never been more paramount ‘E-commerce’ and ‘online shopping’ are often used interchangeably but at its core e-commerce is much broader than this – it embodies a concept for doing business online, incorporating a multitude of different services.
+In the overlapping worlds of ecommerce—social selling and digital marketplaces—the customer experience gives consumers a choice to engage in the channel they prefer, so making the right choice on how you engage and sell online has never been more paramount. Ecommerce and online shopping are often used interchangeably, but at its core ecommerce is much broader than this. It embodies a concept for doing business online, incorporating a multitude of different services.
 
-E-commerce is experiencing monumental growth. It went from being a 1.3 trillion-dollar industry in 2014 to a 3.5 trillion-dollar industry in 2019. And experts predict that by 2023, it will reach more than 6.5 trillion, which means there is a tremendous opportunity for e-commerce brands to capitalise on conversion optimisation. The power of e-commerce should not be underestimated as it continues to pervade everyday life and present significant opportunities for small, medium, and large businesses and online investors.
+Ecommerce is experiencing monumental growth. It went from being a 1.3 trillion-dollar industry in 2014 to a 3.5 trillion-dollar industry in 2019. Experts predict that by 2023, it will reach more than 6.5 trillion, which means there is a tremendous opportunity for ecommerce brands to capitalize on conversion optimisation. The power of ecommerce should not be underestimated as it continues to pervade everyday life and present significant opportunities for small, medium, and large businesses and online investors.
 
-Whether you’re just starting your e-commerce business, or you’ve been in the business for a while, you probably know that it’s hard to be successful, which is why we have compiled this guide on how to run a successful e-commerce business.
+Whether you’re just starting your ecommerce business or you’ve been in the business for a while, you probably know that it’s hard to be successful, which is why we have compiled this guide on how to run a successful ecommerce business.
 
-Here’s a quick summary of the types of e-commerce businesses out there according to each different category:
+Here’s a quick summary of the types of ecommerce businesses out there according to each different category:
 
 Here are the different e-commerce business models:
 
@@ -20,7 +20,7 @@ Here are the different e-commerce business models:
 - Consumer-to-Consumer (C2C)
 - Consumer-to-Business (C2B)
 
-Here are the different e-commerce revenue models:
+Here are the different ecommerce revenue models:
 
 - Dropshipping
 - Subscription
@@ -29,7 +29,7 @@ Here are the different e-commerce revenue models:
 - Wholesaling
 - Rent and loan
 
-Here are the different types of e-commerce website:
+Here are the different types of ecommerce website:
 
 - Individual brand website (one seller)
 - Online retailers (select number of sellers)
@@ -37,13 +37,11 @@ Here are the different types of e-commerce website:
 
 ## Advantages and disadvantages
 
-E-commerce makes it possible for people to open the doors of their very own virtual stores. Selling online makes it easier for small, specialized stores and big brand outlets to reach a wide audience. And, just like traditional businesses, e-commerce has its advantages and disadvantages.
-
-Here are a few advantages and disadvantages of Commerce: 
+Ecommerce makes it possible for people to open the doors of their very own virtual stores. Selling online makes it easier for small, specialized stores and big brand outlets to reach a wide audience. However, just like traditional businesses, ecommerce has advantages and disadvantages.
 
 ### Advantages
 
-- E-commerce overhead is low in comparison to bricks and mortar
+- Ecommerce overhead is low in comparison to bricks and mortar
 - Online stores are open 24/7
 - Purchasing is instant
 - Personalisation and customised user experiences
@@ -54,18 +52,18 @@ Here are a few advantages and disadvantages of Commerce:
 - Competition online is fierce
 - Shipping can be unpredictable
 
-It is clear from the above, that the advantages outweigh the disadvantages, which is why the Commerce market, retailers and merchant revenues are growing expediently.
+The advantages outweigh the disadvantages, which is why market, retailers, and merchant revenues are growing expediently.
 
 ## Customer challenges
 
-Here are some common e-Commerce challenges organisations encounter:
+Here are some common ecommerce challenges organisations encounter:
 
 - You might use an outdated platform that makes visitors leave your site.
 - Your site may be not responsive, forcing mobile visitors to head elsewhere.
-- Your internal team might lack structure and skills to be able to effectively run a Commerce platform.
+- Your internal team might lack structure and skills to be able to effectively run a commerce platform.
 - You might question whether your infrastructure is the right fit for your business.
 
-Customer expectations are rising and there are always new growth techniques to surge your conversion rate. This playbook will look to outline and explain in more detail how to address some of these customer challenges and successfully run an e-Commerce site to its full potential.
+Customer expectations are rising and there are always new growth techniques to surge your conversion rate. This playbook will look to outline and explain in more detail how to address some of these customer challenges and successfully run an ecommerce site to its full potential.
 
 ![The value of commerce technology](../../assets/playbooks/commerce-tech.png)
 
