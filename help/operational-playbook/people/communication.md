@@ -15,7 +15,7 @@ Creating a strong communication process within any ecommerce team is about manag
 - Customer acquisition
 - Customer retention
 
-Many roles will fall under these three areas.
+Most roles fall under these three areas.
 
 Listed below are some of the process’s ecommerce businesses should adopt in order to operationally tackle, manage, and improve those three areas effectively.
 
@@ -51,13 +51,13 @@ The following list includes ways JIRA can be used within any organization:
 - Customizable JIRA boards
 - Out-of-the-box Kanban and Scrum boards
 - Advanced security and administration
-- Integration with flexiable REST APIs
+- Integration with flexible REST APIs
 - JIRA hosting
 - Effectively import data from other systems
 
 #### JIRA workflow example
 
-JIRA allows teams to create and write detailed tasks, generate reports, customise workflows, and assign jobs across individuals relatively fast. 
+JIRA allows teams to create and write detailed tasks, generate reports, customize workflows, and assign jobs across individuals relatively fast. 
 
 Commerce Managers, Marketing and Development teams, even C-level stakeholders can track the daily, weekly, monthly, and yearly progress of any given JIRA task or project. The Atlassian project management tool comes in three versions including JIRA Align, JIRA Core, and JIRA Software.
 
@@ -79,7 +79,7 @@ Ecommerce teams can create standardized templates and checklists for deployment 
 
 ### Stand-ups
 
-In the world of start-ups, stand-ups were born. Businesses increasingly use meetingds to review their processes. Research has found that in general employees prefer fewer meetings, but to have a clear line of communication and openness, getting people together occasionally is important for the success of any business and more specifically ecommerce operations.
+In the world of start-ups, stand-ups were born. Businesses increasingly use meetings to review their processes. Research has found that in general employees prefer fewer meetings, but to have a clear line of communication and openness, getting people together occasionally is important for the success of any business and more specifically ecommerce operations.
 
 Therefore, as a more casual alternative to long and rigid meetings, companies of all sizes have moved to a more relaxed stand-up style of meeting. The culture of stand-ups within any ecommerce team allows for short and quick discussions, where all members are given the chance to talk, goals are set, and strong team bonds maintained.
 

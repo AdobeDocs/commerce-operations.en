@@ -1,11 +1,11 @@
 ---
 title: Personalization
-description: Learn about the kind of experienced personalization should provide your customers.
+description: Learn about the kind of experience personalization should provide your customers.
 ---
 
 # Personalization
 
-The baseline of ecommerce business growth is customer loyalty. Keeping the customers happy is a combination of a lot of factors from products, content, checkout, customer and service experience. Personalisation depends on AI which tracks customer information in real-time and delivers a personalised unique experience. Personalisation might not work for all types of business but it’s an additional feature which helped to drive traffic on the site.
+The baseline of ecommerce business growth is customer loyalty. Keeping the customers happy is a combination of a lot of factors from products, content, checkout, customer, and service experience. Personalization depends on AI, which tracks customer information in real-time and delivers a unique, personalized experience. Personalization might not work for all types of businesses, but it’s an additional feature that can help drive traffic to your site.
 
 Personalization should include:
 
@@ -17,24 +17,24 @@ Personalization should include:
 
 ## Examples
 
-There are several personalisation examples such as:
+Examples of personalization include:
 
-- **Customer interest**—Changing homepage and navigation based on customer profile, for example, if the user has visited the site previously and explored the women’s section then next time when they enter the URL, they would be navigated to the women’s homepage
+- **Customer interest**—Changing homepage and navigation based on customer profile. For example, if a user has visited the site previously and explored the women’s section, then next time when they enter the URL they're navigated to the women’s homepage.
 
-- **Recommended products**—Recommend products based on the customers browsing behaviour
+- **Recommended products**—Recommend products based on the customers browsing behavior.
 
-- **Search**—Display personalised search results based on customers previous search behaviour
+- **Search**—Display personalized search results based on a customers previous search behavior.
 
-- **Email**—Send personalised emails about products if the customer has left the item in the cart or the product was out of order to send a notification it is back in stock etc.
+- **Email**—Send personalized emails about products if a customer has left the item in their cart, or if the product was out of stock send a notification when it is back in stock.
 
-- **Geo-location**—Displaying multiple geo-location of the site, for example, a customer visits the AU site, but the US site option is also displayed to give the customer a choice
+- **Geo-location**—Displaying multiple geo-locations for the site. For example, a customer visits the AU site, but the US site option is also displayed to give the customer a choice.
 
-- **Discount code**—Display specific category discount codes to promote products of a particular category
+- **Discount code**—Display specific category discount codes to promote products of a particular category.
 
-- **Complementary products**—Display complementary products when the customer visits a product e.g., customer visits a dress, and they can view complimentary products like shoes, bags and accessories that would go with the dress
+- **Complementary products**—Display complementary products when the customer visits a product. For example, a customer views a dress and can view complimentary products like shoes, bags, and accessories that go with the dress.
 
-- **Personalised homepage**—Display a personalised homepage for the registered user to make them feel special
+- **Personalized homepage**—Display a personalized homepage for a registered user to make them feel special.
 
 ![Example of personalized products](../../assets/playbooks/personalization-example.png)
 
-These are just some examples of personalisation. There are countless more features and capabilities that can be explored as per the requirement of the business. Keeping up with the constantly changing market trends can be difficult but does help to improve overall customer experience.
+These are just a few examples of personalization. There are countless more features and capabilities that can be explored as per the requirement of the business. Keeping up with constantly changing market trends can be difficult, but it helps improve overall customer experience.

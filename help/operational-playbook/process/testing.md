@@ -13,14 +13,16 @@ Testing is a critical part of the development lifecycle.
 
 A/B testing is the process of comparing two different versions of the website to see the difference in performance.
 
-Once the website is created, running A/b testing helps to test which words, phrases, images, content etc. are working best towards increasing in conversion rate. E.g. A/B testing a green CTA button and red CTA button to understand which colour button is preferred by the customers.
+After creating the website, use A/B testing to test which words, phrases, images, and content are most effective at increasing your conversion rate. For example, A/B testing a green CTA button and red CTA button to understand which color customers prefer.
 
-As a rule. it is recommended that A/B testing is conducted twice a year on major release, features and front-end optimisations.
+As a rule, we recommend that you conduct A/B testing twice a year on major release, features, and frontend optimizations.
 
 ## Deployment testing
 
 ![Deployment testing icon](../../assets/playbooks/deployment-testing.png) 
 
-The objective of deployment testing to check that all the build, changes, design, load etc. Works are per the requirement on the production site. This is testing is important as this is the final check before the site goes live, and customers would get to view the site and the functionality.
+The objective of deployment testing to verify that all the build, changes, design, and load work as expected on the production site. Deployment testing is important because it is the final check before the site launches and customers get to view the site and the functionality.
 
-Deployment testing should be done on staging before the release and bug fixing executed accordingly to avoid any live issues and impacting customers from checking out. As well, testing should be done after every release on the live environment to ensure ease of adding to cart and transacting.
+You should do deployment testing on a staging (non-production) environment before launch and fix any bugs that could prevent customers from checking out.
+
+In addition, you should test after every release on the production environment to ensure ease of adding to cart and transacting.

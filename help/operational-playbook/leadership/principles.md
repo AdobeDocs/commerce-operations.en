@@ -10,16 +10,16 @@ We recommend following some core leadership principles when operating an ecommer
 ## Sponsorship
 
 ![Hand folding heart](../../assets/playbooks/sponsorship.png)
-Having an effective executive sponsor will help the project achieve maximum success. To be truly effective, this internal executive sponsor should have enough seniority and influence within the business to have buy-in from other stakeholders across the organization. They should also have a high-level of self-interest in the online store’s success and a passion for digital transformation and ecommerce; truly believing in how Adobe Commerce is going to transform the business is also critical.
+Having an effective executive sponsor helps the project achieve maximum success. To be truly effective, this internal executive sponsor should have enough seniority and influence within the business to have buy-in from other stakeholders across the organization. They should also have a high-level of self-interest in the online store’s success and a passion for digital transformation and ecommerce; truly believing in how Adobe Commerce is going to transform the business is also critical.
 
 An effective executive sponsor should guarantee the management, roadmap, and continual growth of the ecommerce platform stays in line with the corporate strategy; protecting it from conflicting initiatives or internal politics and helping address any limiting factors, such as resource, skill shortage, or budget constraints.
 
 ## Buy-in
 
 ![Ticket sticking out of machine](../../assets/playbooks/buyin.png)
-Achieving management buy-in across your leadership team is also key. Having multiple change agents to drive growth will help you drive growth easier and faster. The responsibility for the successful management of Adobe Commerce needs to be shared by the entire leadership team. It is then the executive sponsor’s responsibility to win over the executive team by sharing examples that prove the value of Adobe Commerce overall. Typically, this focuses on delivering a better customer experience and subsequent benefits to the business.
+Achieving management buy-in across your leadership team is also key. Having multiple change agents to drive growth helps you drive growth easier and faster. The responsibility for the successful management of Adobe Commerce needs to be shared by the entire leadership team. It is then the executive sponsor’s responsibility to win over the executive team by sharing examples that prove the value of Adobe Commerce overall. Typically, this focuses on delivering a better customer experience and subsequent benefits to the business.
 
-When managing ecommerce sites or implementing digital projects such as Adobe Commerce, leaders will be responsible for monitoring different departments and teams owning different parts of the ecommerce initiatives. It is critical to make sure that all groups share a common strategy to achieve common goals. Having an internal roadshow to win support from executives will help raise awareness, align teams, and obtain the necessary resources for an optimal implementation.
+When managing ecommerce sites or implementing digital projects such as Adobe Commerce, leaders are responsible for monitoring different departments and teams owning different parts of the ecommerce initiatives. It is critical to make sure that all groups share a common strategy to achieve common goals. Having an internal roadshow to win support from executives helps raise awareness, align teams, and obtain the necessary resources for an optimal implementation.
 
 ## Accountability
 
@@ -29,9 +29,9 @@ Project leadership is the act of leading a team towards the successful completio
 ## C-level
 
 ![Figure surrounded by stars](../../assets/playbooks/c-level.png)
-C-level executives play a strategic role within an organization. They hold senior positions and impact company-wide decisions. C stands for “Chief”, so a C-level executive is often in charge of an entire department or business unit, such as Finance, IT, or Sales. As these individuals are significant stakeholders within the organization, it is important to ensure that they are aware of the benefits the ecommerce project will bring to the organization.
+C-level executives play a strategic role within an organization. They hold senior positions and impact company-wide decisions. C stands for “Chief”, so a C-level executive is often in charge of an entire department or business unit, such as Finance, IT, or Sales. As these individuals are significant stakeholders within the organization, it is important to ensure that they are aware of the benefits the ecommerce project brings to the organization.
 
-More specifically, it can be helpful to identify the specific benefits the project will bring to their department, as this can be an important motivating factor. Tying tangible metrics to the successful delivery of the project can motivate and transform your C-level stakeholders to become active supporters of the digital transformation project.
+More specifically, it can be helpful to identify the specific benefits the project brings to their department, as this can be an important motivating factor. Tying tangible metrics to the successful delivery of the project can motivate and transform your C-level stakeholders to become active supporters of the digital transformation project.
 
 At smaller organizations, C-level executives tend to be heavily involved, or at least very close to the transformation project. As we start looking at larger merchants however, it’s natural that executive involvement decreases as the company size increases. As such, it’s critical to keep these stakeholders involved and informed throughout the project to ensure that buy-in and support remain intact.
 
@@ -40,7 +40,7 @@ At smaller organizations, C-level executives tend to be heavily involved, or at 
 ![Two figures](../../assets/playbooks/stakeholders.png)
 Stakeholders are those with an interest in your project’s outcome. They are typically members of your project team, project managers, executives, project sponsors and finally, your end users. It’s important to secure buy-in from all relevant stakeholders to ensure effective change. If you fail to get support from key stakeholders who contribute to the final decision, projects often fail.
 
-It’s also important to make sure you have an effective process in place to train and upskill users on the new systems or platforms. People can often be a strong barrier to change, especially when they are unfamiliar with a new system and the impact that this may have on the processes and workflows within their environment. Having effective change management and training processes may help mitigate this. In addition, upskilling users will ensure you get the most out of the system. Teams that are well-versed in the platform will be able to optimise the platform for effectiveness, ensuring you get the most bang for your buck.
+It’s also important to make sure you have an effective process in place to train and upskill users on the new systems or platforms. People can often be a strong barrier to change, especially when they are unfamiliar with a new system and the impact that this may have on the processes and workflows within their environment. Having effective change management and training processes may help mitigate this. In addition, upskilling users ensures you get the most out of the system. Teams that are well-versed in the platform are able to optimize the platform for effectiveness, ensuring you get the most bang for your buck.
 
 ## Steering committee
 
@@ -62,7 +62,7 @@ Ultimately accountable for the outcome of the project and responsible for securi
 
 #### Business executives
 
-Responsible for ensuring that the project is focused on achieving its objectives and adheres to a cost-conscious approach, delivering a product that will achieve the forecast benefits, doing cost-benefit analysis for the business.
+Responsible for ensuring that the project is focused on achieving its objectives and adheres to a cost-conscious approach, delivering a product that achieves the forecasted benefits, and doing cost-benefit analysis for the business.
 
 - Designs and appoints the project management teams
 - Oversees the development of the business case, ensuring corporate strategic alignment
@@ -71,16 +71,16 @@ reviewing the business case regularly
 - Escalates issues and risks (is the escalation point for issues and
 risks, and ensures that any risks associated with the business case are identified, assessed and controlled)
 - Makes decisions on escalated issues with particular focus on continued business justification
-- Ensures overall business assurance of the project and ensures that it remains on target to deliver products that will achieve the expected business benefits
+- Ensures overall business assurance of the project and ensures that it remains on target to deliver products that achieve the expected business benefits
 
 #### Business owner
 
-Represents the interests of all those who will use the product (including operations and maintenance), those for whom the product will achieve an objective, or those who will use the product to deliver the benefits and value drivers.
+Represents the interests of all those who use the product (including operations and maintenance), those for whom the product achieves an objective, or those who use the product to deliver the benefits and value drivers.
 
 - Provides the quality expectations and defines acceptance criteria
 - Ensures that the desired outcome is specified
-- Ensures that products will deliver the desired outcomes and meet user requirements
-- Ensures that the expected benefits are realised
+- Ensures that products deliver the desired outcomes and meet user requirements
+- Ensures that the expected benefits are realized
 - Provides a statement of actual versus forecast benefits at the benefits reviews
 - Resolves user requirements and conflicts
 
@@ -91,7 +91,7 @@ Represents the interests of those designing, developing, facilitating, procuring
 - Assesses and confirms the viability of the approach
 - Ensures that proposals for designing and developing the product are realistic
 - Advises on the selection of design, development, and acceptance methods
-- Ensures quality procedures are used correctly, so that products adhere to requirements
+- Ensures that quality procedures are used correctly, so that products adhere to requirements
 
 #### Head of Digital
 
@@ -115,7 +115,7 @@ Business assurance responsibilities:
 - Checks that the business case is being adhered to throughout the project
 - Checks that the project remains aligned to the corporate strategy and continues to provide value for money User assurance responsibilities
 - Ensures that the specification of users' needs is accurate, complete and unambiguous
-- Assesses whether the solution will meet users' needs and is progressing towards that target
+- Assesses whether the solution meet users' needs and is progressing towards that target
 - Advises on the impact of potential changes from users' point of view
 - Ensures that quality activities relating to products at all stages has appropriate user representation
 - Ensures that quality control procedures are used correctly to ensure that products meet user requirements
@@ -128,7 +128,7 @@ Supplier assurance responsibilities:
 - Advises on potential changes and their impact on the correctness, completeness and integrity of products against their product description from a supplier perspective
 - Assesses whether quality control procedures are used correctly, so that products adhere to requirements.
 
-#### E-commerce manager
+#### Ecommerce manager
 
 Has the authority to run the day-to-day operations with the prime responsibility of ensuring that the result produces the required products within the specified tolerances of time, cost, quality, scope, risk, and benefits.
 
@@ -154,4 +154,4 @@ Effective management of an ecommerce site requires the project management team t
 To get the organization on board, it is always a good idea to share the vision and repeatedly reinforce the reason why your company is investing in ecommerce technology by articulating both the customer benefits and business benefits. 
 
 Sharing documentation, such as success case studies of digital
-implementations, will help you validate why and how this investment will take the organization to a new level. If you want the organization to embrace digital transformation, it’s important to let employees know it is a priority.
+implementations, helps you validate why and how this investment takes the organization to a new level. If you want the organization to embrace digital transformation, it’s important to let employees know it is a priority.

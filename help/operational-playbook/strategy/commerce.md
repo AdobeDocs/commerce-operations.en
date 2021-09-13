@@ -5,13 +5,13 @@ description: Unlock core ecommerce capabilities using our suggested strategy fra
 
 # Commerce strategy
 
-Digital commerce is a rapidly moving force, that evolves expeditiously each year. While this can be exciting for individuals, it also comes with many challenges for organisations trying to navigate the lay of the land that is Commerce.
+Digital commerce is a rapidly moving force that evolves expeditiously each year. While this can be exciting for individuals, it also comes with many challenges for organizations trying to navigate the lay of the land that is ecommerce.
 
-As commerce continues to evolve in both B2B and B2C, businesses are seeing drastic changes in customer behaviours and expectations, from the way they research a product/service, consider and complete a purchase, or show loyalty to a brand, to the way they communicate all of this to their peers. Customer behaviours and expectations can shift instantly, and businesses can struggle to adapt to new market trends and creating a digital strategy that is both realistic and achievable.
+As ecommerce continues to evolve in both B2B and B2C, businesses are seeing drastic changes in customer behaviors and expectations; from the way they research a product/service, consider and complete a purchase, or show loyalty to a brand, to the way they communicate all of this to their peers. Customer behaviors and expectations can shift instantly and businesses can struggle to adapt to new market trends and create a digital strategy that is both realistic and achievable.
 
-Therefore, the execution and planning of any digital strategy is key to any successful e-Commerce business.
+Therefore, the execution and planning of any digital strategy is key to any successful ecommerce business.
 
-The overall Commerce strategy of every business will be unique in nature, depending on maturity, team size and resources. Here is a strategy for unlocking your core commerce capabilities:
+The overall ecommerce strategy of every business is unique in nature that depends on maturity, team size, and resources. The following sections describe strategies for unlocking your core commerce capabilities, including:
 
 - Awareness
 - Consideration
@@ -60,17 +60,17 @@ The overall Commerce strategy of every business will be unique in nature, depend
 
 ## Objectives
 
-The following list includes key objectives to consider when planning the digital strategy of your business:
+The following list includes key objectives to consider when planning the digital strategy for your business:
 
 - Consistency is important
 - Regularly review customer analytics
-- Improve personalisation online
-- Interactive product visualisation
+- Improve  online
+- Interactive product visualization
 - Leverage new technology where applicable
 - Artificial intelligence (AI)
 - More delivery options
 - Appropriately plan for upgrades and site maintenance
 
-See the following diagram for a suggested commerce strategy framework:
+See the following diagram for a suggested ecommerce strategy framework:
 
 ![Commerce strategy framework diagram](../../assets/playbooks/commerce-strategy-framework.png)

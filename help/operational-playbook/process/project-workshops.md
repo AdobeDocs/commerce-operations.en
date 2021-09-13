@@ -5,19 +5,19 @@ description: Learn about the different types of management workshops that are co
 
 # Common project workshops
 
-Throughout your ecommerce project, you'll need to have workshops to track progress. Common types of project workshops include:
+Throughout your ecommerce project, you need to have workshops to track progress. Common types of project workshops include:
 
 - Kick off
 - Discovery
 - Design
-- Techncial
+- Technical
 - QA
 
 ## Kick off
 
-Kicking off a new project is exciting and at the same time can be a horror. The only thing that can save it from becoming a horror if proper kick-off planning and presentation. 
+Kicking off a new project is exciting and at the same time can be a horror. The only thing that can save it from becoming a horror is proper kick-off planning and presentation.
 
-Project kick-off is the initial step and needs to be properly planned, laid out and executed. Some companies do not require this as they feel its standard but this phase no matter how standard it needs to be carried out effectively. This forms the foundation of the project.
+Project kick-off is the initial step and needs to be properly planned and executed. Some companies do not require this as they feel it's standard, but it still needs to be carried out effectively. This forms the foundation of the project.
 
 There are a few phases of project kick-off:
 
@@ -28,17 +28,17 @@ There are a few phases of project kick-off:
 
 ### Preparation
 
-In this step, the project manager and sometimes few team members get in touch with the client to understand when the kick- off will take place, where the kick-off will take place and who all will be attending. Usually, the project kick-off takes places at the client site to make the client feel comfortable as they are in their zone.
+In this step, the project manager (and sometimes a few team members) get in touch with the client to understand when the project kick-off is scheduled, where it is located, and who is invited to attend. Usually, the project kick-off takes places at the client site to make the client feel more comfortable.
 
-In this step it is essential to add-on a presentation deck, proposed agenda, deliverable, team and timelines to avoid any surprises. If face to face meeting is no possible with the client, the project kick-off can also be executed online. Make sure you are prepared for either of the scenarios.
+It is essential to include a presentation deck, proposed agenda, deliverable, team, and timelines to avoid any surprises. If face-to-face meetings are not possible with the client, you can also do an online (virtual) kick-off. Make sure that you are prepared for either scenario.
 
 ### Attendance
 
-It is essential to outline the attendees for the project kick-off. Having a big team which includes all the developers, users etc will only complicate the kick-off. It is important to call key stakeholders from the client site such as the project sponsors, C level, and project leader from the client-side. From the project team side, it should be Project manager, Functional Architect, Technical Architect and the Engagement lead.
+It is essential to outline the attendees for the project kick-off. Having a big team that includes all developers and users will only complicate the kick-off. It is important to call key stakeholders from the client side, such as the project sponsors, C-level, and project leader. From the project team side, include the Project Manager, Functional Architect, Technical Architect, and the Engagement lead.
 
 ### Topics to cover
 
-Topics that need to cover in the project kick- off depends on project size, requirement, technology etc. Some of the common things  that need to cover are:
+Topics that you need to cover in the project kick-off depend on project size, requirements, and technology. Common topics include:
 
 - Project budget
 - Team introduction
@@ -53,19 +53,21 @@ Topics that need to cover in the project kick- off depends on project size, requ
 
 ### Next steps
 
-Next steps for an e-commerce project refer to outlining the requirements such as the build solution, design Nd project planning. Be it a remotely managed project or same location project, the next steps need to be detailed so that the team is aligned.
+Next steps for an ecommerce project refer to outlining the requirements such as the build solution, design, and project planning. Be it a remotely managed project or same location project, the next steps need to be detailed so that the team is aligned.
 
 ## Discovery
 
-A discovery phase in e-Commerce is conducted with the leads of the client such as the product owner, project team lead, digital lead and sometimes even the C level do get involved.
+A discovery phase in ecommerce is conducted with the client leads, including the product owner, project team lead, and digital lead. C-level stakeholders sometimes get involved.
 
-From the team side the project manager, functional and technical leads attend the discovery workshop. This phase is to go through all the requirement of the client in greater detail to understand their business needs and expectations of customers.
+From the team side, the Project Manager, Functional Architect, and Technical Architect attend the discovery workshop. This phase is intended to go through all client requirements in greater detail to understand their business needs and expectations.
 
 ## Design
 
-Design and requirements go hand in hand. When an e-commerce system is being built one of the first key workshops is the design workshop. The design of the site matter when it comes to attracting customers and increasing traffic on-site In this workshop people involved from the client is usually the digital provider, product owner, creative lead and C level. from the team side project manager, functional lead and designers get involved.
+Design and requirements go hand in hand. When building an ecommerce system, one of the first key workshops is the design workshop. The design of the site matters when it comes to attracting customers and increasing site traffic. 
 
-In this workshop here is brainstorming done by the client site to understand what look are there after for their storefront. To create an effective workshop:
+Client-side attendees in this workshop include, the digital provider, product owner, creative lead, and C-level stakeholders. Team-side attendees include, project manager, functional lead, and designers.
+
+The purpose of the design workshop is to brainstorm what the client expects their storefront to look like. The following list includes suggestions for creating an effective workshop:
 
 - Start with an overview
 - Set a goal
@@ -78,18 +80,20 @@ In this workshop here is brainstorming done by the client site to understand wha
 
 ## Technical
 
-A technical workshop is used to define the details of the technical aspect of building a site. During this workshop the client and project team side will go through various technical accepts relating to:
+The purpose of a technical workshop is to define the details of the technical aspects of building a site. During this workshop the client and project team side will go through various technical accepts related to:
 
 - Team skills in-house
-- Intetgration
+- Integration
 - Coding language
-- OMS
-- ERP
+- Order management system (OMS)
+- Enterprise resource planning (ERP)
 - Current or new platform
 
 ## QA
 
-Testing in e-Commerce is important. One cannot go live with bugs on the site or a broken page, or poor checkout. Setting up an e-commerce site is complex and requires to be tested inside out covering all the aspects from:
+Testing in ecommerce is important. You shouldn't launch a site with bugs, broken pages, or a poor checkout experience.
+
+Setting up an ecommerce site is complex and requires rigorous testing of the following:
 
 - Browser compatibility
 - Page display
@@ -106,4 +110,4 @@ Testing in e-Commerce is important. One cannot go live with bugs on the site or 
 - Security
 - Performance
 
-All of these must be tested thoroughly as any issue in the site can negatively impact customer experience.
+All of these items must be tested thoroughly because issues can negatively impact customer experience.

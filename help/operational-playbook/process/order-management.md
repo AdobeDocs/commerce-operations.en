@@ -5,15 +5,14 @@ description: Learn how an order management system is essential to your ecommerce
 
 # Order management
 
-For brand new businesses the order levels are low, and it is easier to
-complete the orders at a low cost but when the demand rises, the orders increase, and it becomes difficult to handle the orders with a small team or by yourself at a lower cost. You might need a bigger place like a warehouse or more than one warehouse depending on the nature of the business which can be costly and would require more manpower. This is where Order Management comes to play.
+For brand new businesses, order levels are low and it is easier to
+complete orders at a lower cost. However, when demand increases orders increase and it becomes difficult to handle orders with a small team or by yourself at a lower cost. You might need a larger facility, like a warehouse or more than one warehouse depending on the nature of the business, which can be costly and requires more staff. This is where order management comes into the picture.
 
-Order management helps to meet the changing requirements and the changing operational needs to be able to manage the demand, inventory, packaging and shipping. Integrating an Order Management System to the Platform can help businesses meet their changing requirements, drive customer satisfaction, customer retention, higher conversion rate and brand loyalty. All these factors will directly or indirectly impact the performance of the business and the growth in the revenue.
+Order management helps meet the changing operational requirements for managing demand, inventory, packaging, and shipping. Integrating an Order Management System with the Platform can help businesses meet their changing requirements and drive customer satisfaction, customer retention, higher conversion rates, and brand loyalty. All these factors directly and indirectly impact the performance and revenue growth of your business.
 
-An Order Management system will help centralize all the crucial data in one centralised system which gives a
-single view of all the streams such as orders, products, customers, inventory, packing, returns, payment etc. so that you are easily meet customer expectations.
+Order management systems help centralize all the crucial data in one system, which provides a single view of all streams, including orders, products, customers, inventory, packing, returns, and payments so that you can easily meet customer expectations.
 
-Order management is essential in any ecommerce business as it forms a chain and binds all the factors together so that the business can:
+Order management is essential in any ecommerce business because it forms a chain and binds all of the factors together so that the business can do the following:
 
 - Keep inventory in check be it in multiple warehouses
 - Maintain the product stock level sow they are prepared for any promotions or sale period
@@ -24,6 +23,6 @@ Order management is essential in any ecommerce business as it forms a chain and 
 - Monitor return to understand why the returns re being made by the customers so that they can work on that and improve
 - Helps to understand the overall experience of the customer if they were satisfied with their purchase or not and how can the business improve to better serve the customers
 
-The correct Order Management system and the right use of it can do wonders for the organisation in terms of revenue as it helps to save money and time. Also provides an overview of the different departments of the business who are working together, helps the business to forecast the demand and overall work on improving customer experience to increase conversion rates
+The correct Order Management system and the right use of it can do wonders for the organization in terms of revenue. It saves money and time, provides an overview of the different departments that are working together, and helps the business forecast demand and work on improving customer experience to increase conversion rates.
 
 ![Order management process diagram](../../assets/playbooks/order-management.png)

@@ -5,42 +5,42 @@ description: Monitor KPIs, track sales, and measure the success of your ecommerc
 
 # Reporting and dashboards
 
-Ecommerce fits well as a use case when it comes to reporting and dashboards. In ecommerce, everything is online which lets the retailers leverage the power of different tools to gather data and analyse it to improve their business process, teams, offering and more.
+Ecommerce fits well as a use case when it comes to reporting and dashboards. In ecommerce, everything is online, which lets retailers leverage the power of different tools to gather data and analyze it to improve their business processes, teams, product offerings, and more.
 
 ![Reporting dashboard example](../../assets/playbooks/dashboard-example.png)
 
-Every business has a different requirement and dashboards can be meet those requirements. For example, if the brand wants to track a specific promotion, they can create a specific dashboard to see the progress of the promotion such as how many people used the promotions, which products sold the best, etc. They can also use the dashboard to track daily activities on the site, traffic, conversion rate, bestselling product, worst-selling product, returns etc.
+Every business has a different reporting requirements. For example, if you want to track a specific promotion, you can create a specific dashboard to see the progress of the promotion, such as how many people used the promotion, which products sold the best, and so on. You can also use a dashboard to track daily activities on the site, traffic, conversion rate, bestselling product, worst-selling product, and returns.
 
 ## Features
 
 Some other features of reports and dashboards:
 
-- Tracks ROI which helps retailers to make decisions and monitor their progress
+- Tracks ROI, which helps retailers make decisions and monitor progress
 
-- Track Sales to understand what on their site is generating the most sales
+- Track sales to understand what on is generating the most sales
 
-- Traffic on the site can be tracked in real-time to visualise the information
+- Track site traffic in real-time and visualize the information
 
-- Able to measure the success of the features on the site and to improve them to enhance customer service
+- Measure the success of site features and improve them to enhance customer service
 
-- Monitoring KPIs of each team
+- Monitor KPIs of each team
 
-There is so much going on in an ecommerce business, it can get difficult for the retailers to keep track and that’s where reports and dashboard come to play. They consolidate all the data in one place to give an overview of the business to everyone. Helps retailers to set new targets, identify new opportunities and get a competitive advantage.
+There is so much going on in an ecommerce business that it can be difficult to keep track. That’s where reports and dashboard can help. They consolidate all data in one place to provide an overview of the business to everyone. They also help retailers set new targets, identify new opportunities, and gain a competitive advantage.
 
 ## B2B options
 
-Top 4 reports and dashboards that can be used by B2B companies are:
+The top four reports and dashboards B2B companies use include:
 
-- **Company profile**—B2B businesses need to track the company profiles of their clients to understand their purchase history like what products they purchased, the payment details, which channel they used to purchase and so on. This dashboard can help to identify any potential risks or issues.
+- **Company profile**—B2B businesses need to track their client company profiles to understand their purchase history, payment details, and which channel they used to purchase. This dashboard can help identify potential risks and issues.
 
-- **Catalogue**—A catalogue report and dashboard can help a B2B business to view the performance of each product in the catalogue, promotions, inventory levels etc which can help them identify what kind of promotion best worked and which product is in demand. This will help them be one step ahead in terms of stocking up the inventory and give them a competitive advantage
+- **Catalog**—A catalog report and dashboard helps B2B businesses view the performance of each product in the catalog, promotions, and inventory levels, which helps identify what kind of promotion works best and which products are in demand. This helps businesses stock up on inventory and gain a competitive advantage.
 
-- **Quotes**—B2B model works on quotes and pricing where the B2B business needs to go through a process where they analyse the quote sent by the client with the pricing so that they can either approve or negotiate. A quote report and dashboard will help them improve their quote conversion rate by tracking the success rate, competition rates, performance and overall customer retention
+- **Quotes**—The B2B business model operates on quotes and pricing. B2B businesses must go through a process where they analyze a quote so that they can either approve it or attempt to negotiate. A quote report and dashboard helps improve your quote conversion rate by tracking the success rate, competition rates, performance, and overall customer retention.
 
-- **Sales**—Even though B2B business can work online but there is still a need for a sale representative to get things moving along in terms of identifying quotes that need negotiation, track quotes which are getting expired, contracts which are up for renewal, track team performance and help to streamline their day-to-day business activities.
+- **Sales**—Even though B2B businesses can work online, a sales representative is still necessary to get things moving in terms of identifying quotes that need negotiation, tracking quotes that are getting close to expiring, tracking contracts that are up for renewal, tracking team performance, and helping streamline day-to-day business activities.
 
 ## Better together
 
-If a merchant is using MBI and Adobe Analytics and is looking for a way to correlate behavioral data to transactional commerce data so they can gain a more accurate understanding of how marketing activities impact core commerce metrics.
+Merchants looking for a way to correlate behavioral data with transactional ecommerce data can use Adobe Commerce Reporting and Adobe Analytics to can gain a more accurate understanding of how marketing activities impact core ecommerce metrics.
 
 ![Reporting diagram](../../assets/playbooks/reporting-diagram.png)

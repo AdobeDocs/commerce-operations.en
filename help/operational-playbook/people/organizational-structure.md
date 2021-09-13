@@ -1,13 +1,13 @@
 ---
 title: Organizational Structure
-description: See an example of a typical organizational strucutre for an ecommerce project.
+description: See an example of a typical organizational structure for an ecommerce project.
 ---
 
 # Organizational structure
 
-For digital implementation projects, there is usually a centralised team structure which is implemented. There are individual teams  which have a team lead which then reports to the head of digital, e-commerce lead or the product owner. 
+For digital implementation projects, there is usually a centralized team structure which is implemented. There are individual teams  which have a team lead which then reports to the head of digital, ecommerce lead or the product owner. 
 
-The following diagram shows an example of how the organisational structure would look:
+The following diagram shows an example of how the organizational structure would look:
 
 ![Organizational structure diagram](../../assets/playbooks/org-structure.png)
 

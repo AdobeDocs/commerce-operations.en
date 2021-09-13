@@ -5,7 +5,7 @@ description: Create a marketing strategy to promote your products to your custom
 
 # Promotions
 
-DWith most of the population moving to shop online, retailers need to be one step ahead in providing the best to their customers, retailers need to think what would be the best way to get their products out there in the market? This is where marketing strategy comes into play. In a general aspect, marketing strategy consists of 6 P’s:
+With most of the population moving to online shopping, retailers need to be one step ahead in providing the best customer experience. Retailers need to think about the best ways to get their products out in the market. This is where marketing strategy comes into play. In a general aspect, marketing strategy consists of six P’s:
 
 - Product
 - Price
@@ -14,13 +14,13 @@ DWith most of the population moving to shop online, retailers need to be one ste
 - People
 - Processes
 
-Each of the six P’s is equally important but to market the products, retailers need to use promotion as a tactic to increase traffic on-site to lead to higher conversion rates. Promotion helps to market the products and services being offered by the brands. There are various promotional levels such as shipping, product and order.
+Each of the six P’s is equally important, but to market products retailers need to use promotions as a tactic to increase traffic on the site and lead to higher conversion rates. Promotions help market products and services offered by the brand. There are various promotional levels, such as shipping, product, and order.
 
 ![example promotional advertisement](../../assets/playbooks/promotion-example.png)
 
 ## Promotion types
 
-Each of these promotion levels has different types of promotions such as:
+Each of these promotion levels has different types of promotions, including:
 
 - Giveaways
 - flash sales
@@ -37,4 +37,4 @@ Each of these promotion levels has different types of promotions such as:
 - Free shipping
 - Discount on shipping
 
-Retailers face intense competition and to have a competitive advantage, retailers need to apply marketing strategies like promotions. Each retailer will need to analyse which promotion would best benefit them.
+Retailers face intense competition. To have a competitive advantage, retailers need to apply marketing strategies like promotions. Each retailer needs to analyze which promotions work best for them.

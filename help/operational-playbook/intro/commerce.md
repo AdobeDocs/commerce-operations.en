@@ -5,7 +5,7 @@ description: Description of Adobe Commerce
 
 # Adobe Commerce
 
-Adobe [!DNL Commerce] is the leading platform for open commerce innovation. Every year, Adobe [!DNL Commerce] handles over $100 billion in gross merchandise volume. Adobe [!DNL Commerce] gives customers the power to create unique and engaging shopping experiences, out-of-the-box features, and the unlimited ability to customise, a flexible headless architecture, and seamless third-party integrations.
+Adobe [!DNL Commerce] is the leading platform for open commerce innovation. Every year, Adobe [!DNL Commerce] handles over $100 billion in gross merchandise volume. Adobe [!DNL Commerce] gives customers the power to create unique and engaging shopping experiences, out-of-the-box features, and the unlimited ability to customize, a flexible headless architecture, and seamless third-party integrations.
 
 There are two versions of [!DNL Commerce]:
 
@@ -15,12 +15,12 @@ The majority of merchants use Magento Open Source because of the low cost and op
 
 _Adobe [!DNL Commerce]_ is the paid version, previously known as Magento Enterprise. Being the premium version, there are a lot of additional features.
 
-Adobe [!DNL Commerce] can be hosted on-premises. So you host and develop locally on your own server or you can choose a hosting provider. Alternatively, there is Adobe [!DNL Commerce] on cloud infrastrucure, the cloud-hosted solution from Adobe. In the Solution section, we look deeper into the differences between hosted (e.g., SaaS, on-premises) and PaaS hosting solutions.
+Adobe [!DNL Commerce] can be hosted on-premises. So you host and develop locally on your own server or you can choose a hosting provider. Alternatively, there is Adobe [!DNL Commerce] on cloud infrastructure, the cloud-hosted solution from Adobe. In the Solution section, we look deeper into the differences between hosted (e.g., SaaS, on-premises) and PaaS hosting solutions.
 
 Adobe [!DNL Commerce] is a full-featured ecommerce solution that comes with the following additional features:
 
 - B2B functionality, like quoting, custom catalogs, and manage buyer roles and permissions
-- Magento BI dashboards with visualisation and custom report builder
+- Magento BI dashboards with visualization and custom report builder
 - Magento Chat (powered by dotdigital)
 - Advanced marketing tools
 - [!DNL Product Recommendations] powered by Adobe [!DNL Sensei]

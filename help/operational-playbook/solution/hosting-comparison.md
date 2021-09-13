@@ -5,7 +5,7 @@ description: Make the best decision about hosting for your ecommerce project by 
 
 # Cloud vs on-premises
 
-Analysing and then determining the type of technical and economic resources an organisation is willing to devote to each of the areas below allows merchants to make tactful decision about which hosting solution is the best fit for their business.
+Analyzing and determining the type of technical and economic resources an organization is willing to devote to each of the areas below allows merchants to make tactful decisions about which hosting solution is the best fit for their business.
 
 The following table outlines the advantages and disadvantages of cloud versus on-premises solutions:
 
@@ -43,15 +43,15 @@ The following table outlines the advantages and disadvantages of cloud versus on
         </tr>
         <tr>
             <td>Security</td>
-            <td>The organisation can control all the data locally.</td>
+            <td>The organization can control all the data locally.</td>
             <td>Internal resources require specific skills and knowledge of the infrastructure.</td>
-            <td>Advanced data security is available and easily manageable for organisations.</td>
+            <td>Advanced data security is available and easily manageable for organizations.</td>
             <td>Aggressively targeted by hackers</td>
         </tr>
         <tr>
             <td></td>
             <td>No third-party access to the data.</td>
-            <td>If organisations lack the applicable skills and expertise, it risks significant exposure.</td>
+            <td>If organizations lack the applicable skills and expertise, it risks significant exposure.</td>
             <td></td>
             <td>Data could be accessed by 3rd party.</td>
         </tr>
@@ -71,10 +71,10 @@ The following table outlines the advantages and disadvantages of cloud versus on
         </tr>
         <tr>
             <td>Upgrades</td>
-            <td>The organisation can control when the upgrade takes place and what features are included/excluded as part of the output</td>
+            <td>The organization can control when the upgrade takes place and what features are included/excluded as part of the output</td>
             <td>Time consuming exercise which can impact other work pipelines</td>
             <td>Fast and cost effective exercise with low impact to other work streams</td>
-            <td>SaaS provider manages the upgrade, and the organisation is not always aware of the final output and impact on the site</td>
+            <td>SaaS provider manages the upgrade, and the organization is not always aware of the final output and impact on the site</td>
         </tr>
         <tr>
             <td></td>
@@ -84,9 +84,9 @@ The following table outlines the advantages and disadvantages of cloud versus on
             <td></td>
         </tr>
         <tr>
-            <td>Platform Customisation</td>
-            <td>Readily able to customise the platform to meet unique requirements</td>
-            <td>Customisations can lead to reliability and software support issues</td>
+            <td>Platform Customization</td>
+            <td>Readily able to customize the platform to meet unique requirements</td>
+            <td>Customizations can lead to reliability and software support issues</td>
             <td>SaaS platforms are quite stable. Updates are iterative and easy to manage</td>
             <td>SaaS minimises the ability to modify the platform</td>
         </tr>
@@ -100,7 +100,7 @@ The following table outlines the advantages and disadvantages of cloud versus on
         <tr>
             <td>IT Support</td>
             <td>Infrastructure and application expertise are readily available</td>
-            <td>Dedicated IT team is necessary, especially when applications are tailored to meet an organisation’s unique requirements.</td>
+            <td>Dedicated IT team is necessary, especially when applications are tailored to meet an organization’s unique requirements.</td>
             <td>The caution of scale inherent to cloud deployments mean that IT support can manage more with less time and effort.</td>
             <td>The learning curve for cloud is significant and adequately trained personnel are expensive</td>
         </tr>

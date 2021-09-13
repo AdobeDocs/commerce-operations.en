@@ -5,13 +5,17 @@ description: Learn about internal, external, and hybrid resources that can help 
 
 # Resources
 
-Digital implementation requires resources which can either be internal (in-house) or external (third parties) or a mix of both. A business would need to analyse their in-house team and their capabilities when deciding if they want to execute the entire project in-house or they would need support for an external third party. In most cases, businesses with less digital implementation experience would opt for outsourcing to an external third party. If the business wants to utilise their in-house team, they will need to access team capability and they can also opt for hiring new employees while retaining their digital talent.
+Digital implementation requires internal (in-house) and external (third-party) resources or both. A business must analyze their internal team and their capabilities when deciding if they want to execute the entire project in-house or if they need support from an external third party. 
 
-## Internal
+In most cases, businesses with less digital implementation experience choose to outsource to an external third party. If a business wants to use an internal team, they must have a capable team. They can hire new employees while retaining their digital talent.
 
-Some businesses try to develop and recruit people with the required skills to create an in-house team thinking that an e-Commerce site is a continuous development process which can be expensive if the project development is done with an external (third party) entity. To develop an in-house team, businesses need to focus on having the right people in the team with the required skills and capabilities. 
+## Internal teams
 
-Benefits of an in-house team include:
+Some businesses try to develop and recruit people with the required skills to create an internal team thinking that an ecommerce site is a continuous development process that can be expensive if the project development is done with an external (third-party) entity. 
+
+To develop an internal team, businesses must focus on having the right people in the team with the required skills and capabilities. 
+
+Benefits of an internal team include:
 
 - Effective and easier communication
 - Increased legal protection
@@ -19,41 +23,45 @@ Benefits of an in-house team include:
 - Easier collaboration
 - Same culture
 
-When do businesses decide on having an internal team:
+The following list includes examples of when businesses decide to use an internal team:
 
-- When the business has a highly secured business environment where all the information is sensitive and confidential which cannot be shared with a third party.
+- When the business has a highly secured business environment where all the information is sensitive and confidential and cannot be shared with a third party.
 
-- Technology the business is working on is patented and could create legal issues when working with a third party.
+- Technology that the business is working on is patented and could create legal issues when working with a third party.
 
-- Budgeting issues where the business is only able to afford an internal team.
+- Budget constraints that limit a business to using an internal team.
 
-- Products being sold are highly innovative such as devices, software etc. which cannot be shared with an external team.
+- Products being sold are highly innovative, such as hardware and software, which cannot be shared with an external team.
 
-There are few cons of operating with an internal team like there is no guarantee on if the team members understand the importance of the project, efficiency, self-motivation, understanding of the product or productivity. 
+There are a few drawbacks of operating with an internal team. For example, there is no guarantee that the team members understand the importance of the project, efficiency, self-motivation, understanding of the product, or productivity. 
 
-Overall, internal teams do have several benefits. Thus, the business needs to ensure that they have the right people working in the team who are self-motivated, skilled and have the required capabilities.
+Overall, internal teams have several benefits. S business needs to ensure that they have the right people working in the team who are self-motivated, skilled, and have the required capabilities.
 
-## External
+## External teams
 
-When businesses don’t have the required internal team in terms of resources and/or capabilities, then businesses resort to hiring external teams also known as third parties. Third-party resources are hired for a limited time frame where the third-party team consists of the required experience, knowledge, subject matter expert and implementation skills. While developing the project, third-party team also helps to enable the internal team so that they can handle the platform once the third party roles off. Third party resources can be in terms of consultancy, payment gateways, SEO/SEM related activities, marketing etc. Businesses need to analyse and figure out where their internal team lacks so they can hire the required third party. Like any other resources, third parties also have pros and cons.
+When businesses don’t have the required internal team, they must hire external teams (also known as third parties). Businesses hire external resources for a limited time, where the external team has the required experience, knowledge, subject matter experts, and implementation skills.
 
-Pros of an external/third-party team include:
+While developing the project, external teams also help enable internal teams so that they can handle the platform after the external team completes the project.
 
-- A specialised organisation has more experience in delivering similar ecommerce projects compared to the internal team which produces economies of scale.
+External teams include consultants, payment gateways, SEO/SEM-related activities, and marketing. Businesses must analyze and determine what their internal teams lack so that they can hire the required third party. Like any other resources, third parties also have advantages and disadvantages.
 
-- The team members of the third-party team are more experienced. Like an SME of a platform would know the inside out features of the platform and can suggest best practises that the business can use to maximise the use of the platform.
+### Advantages of an external team include:
 
-- Consultancy companies are always pushing their resources to be up to date in terms of technology and trend. Consultants have a flexible working style and bring a lot with them not only in terms of knowledge and experience but also culture.
+- A specialized organization has more experience in delivering similar ecommerce projects compared to the internal team, which produces economies of scale.
 
-- Third party can provide people to work on the project in terms of need. Thus, it allows team scalability.
+- External team members are more experienced. Platform experts know about all platform features and can suggest best practices that the business can use to maximize their use the platform.
 
-- Working with third-party resources requires the business to be more disciplined in terms of communication, planning and executing the project.
+- Consultancy companies push their resources to be up to date in terms of technology and industry trends. Consultants have a flexible working style and have a lot to offer; not only in terms of knowledge and experience but also culture.
 
-- Quality of the deliverable from a third party is always better than the internal team as they are experienced and have the knowledge to apply and build the requirements of the business.
+- Third parties can provide people to work on a project as resource needs change, which provides a more scalable team.
 
-- Payment gateways are managed and are more secure as the third party is responsible for providing the support and security.
+- Working with external teams requires the business to be more disciplined in project planning, communication, and execution.
 
-Cons of an external team include:
+- The quality of third-party deliverables is always better than internal teams because they are experienced and have the knowledge to apply and build the requirements of the business.
+
+- Payment gateways are managed and more secure because the third party is responsible for providing support and security.
+
+### Disadvantages of an external team include:
 
 - Can be quite expensive in the long run.
 
@@ -61,16 +69,16 @@ Cons of an external team include:
 
 - There is always a risk of sharing confidential data and security.
 
-- Contracts with third parties can be rigid which can cause issues during the project.
+- Contracts with external teams can be rigid, which can cause issues during the project.
 
-- There could be friction between what the business expects and what the team can provide within the guidelines of the contact.
+- There can be friction between what the business expects and what the team can provide within the guidelines of the contact.
 
-Overall, based on the pros and cons the business needs to identify their need and what suits them best. Businesses who have little or no experience, opt for external third-party resources who can implement the ecommerce site and train their employees to handle after go-live.
+Overall, businesses must identify their needs and what suits them best. Businesses that have little or no experience should choose an external team that can implement the ecommerce site and train their employees to handle it after launch.
 
 ## Hybrid
 
-When a business looks at carrying out a digital implementation, they need to consider a lot of factors from resources, budget, skills, capabilities etc. Some organisations tend to choose a hybrid modal. A hybrid modal consists of both internal and external third-party teams to work together. 
+When a business seeks to implement a digital transformation, they need to consider a lot of factors, including resources, budget, skills, and capabilities. Some businesses choose a hybrid model. A hybrid model consists of both internal and external teams that work together. 
 
-In a hybrid model, the external third-party team would usually carry out the complex bit of the project with the support of the internal team, where the internal team would be responsible to provide all the content, information, integrations etc. to the external team to successfully implement the system. During the project, the third-party resources train the internal team so once the project is delivered the internal team can manage. In a hybrid model, the third-party team becomes an extension of the in-house/internal team which allows better collaboration and communication.
+In a hybrid model, the external team usually carries out the more complex parts of the project with the support of the internal team. Meanwhile, the internal team is responsible for providing all of the content, information, and integrations to the external team to successfully implement the system.
 
-
+During the project, the external team trains the internal team so that the internal team can manage the site after launch. In a hybrid model, the external team becomes an extension of the internal team, which allows for better collaboration and communication.
