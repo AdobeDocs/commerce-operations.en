@@ -1,5 +1,6 @@
 ---
 user-guide-title: Commerce Operational Playbook
+user-guide-description: Learn how to get your businesses operationally ready to run a successful ecommerce site.
 ---
 
 # Commerce Operational Playbook {#operational-playbook}
