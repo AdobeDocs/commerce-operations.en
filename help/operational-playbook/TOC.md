@@ -18,8 +18,8 @@ user-guide-description: Learn how to get your businesses operationally ready to 
   - [Vision](leadership/vision.md)
   - [Planning](leadership/planning.md)
 - Solution {#solution}
-  - [Software-as-a-service (Saas)](solution/software-service.md)
-  - [Platform-as-a-service (Saas)](solution/platform-service.md)
+  - [Software-as-a-service (SaaS)](solution/software-service.md)
+  - [Platform-as-a-service (PaaS)](solution/platform-service.md)
   - [On-premises hosting](solution/on-premises.md)
   - [Cloud vs on-premises](solution/hosting-comparison.md)
   - [Third-party integrations](solution/integrations.md)
