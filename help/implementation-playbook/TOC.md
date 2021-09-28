@@ -1,6 +1,6 @@
 ---
 user-guide-title: Implementation Playbook
-user-guide-description: Learn about strategies for planning and implementing a successful ecommerce site.
+user-guide-description: Learn about strategies for planning and implementing a successful Adobe Commerce site.
 mini-toc-levels: 3
 ---
 
