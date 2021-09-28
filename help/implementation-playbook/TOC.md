@@ -1,0 +1,65 @@
+---
+user-guide-title: Implementation Playbook
+user-guide-description: Learn about strategies for planning and implementing a successful ecommerce site.
+mini-toc-levels: 3
+---
+
+# Implementation Playbook {#implementation-playbook}
+
+- [Overview](overview.md)
+- Commerce {#intro}
+  - [About Adobe Commerce](intro/about-commerce.md)
+  - [Principles of platform development](intro/platform-development.md)
+- Project scope {#project-scope}
+  - [Knowledge is power](project-scope/knowledge.md)
+  - [Key stakeholders](project-scope/key-stakeholders.md)
+  - [Process and timeline](project-scope/process-timeline.md)
+  - [Deliverables](project-scope/deliverables.md)
+  - [Requirement checklists](project-scope/requirement-checklists.md)
+- Development {#development}
+  - [Platform tools](development/platform-tools.md)
+  - [Project management tools](development/project-management-tools.md)
+  - [Project implementation methodology](development/delivery.md)
+  - [Quality control](development/quality-control.md)
+- Planning and governance {#planning}
+  - [Delivery and planning approach](planning/delivery.md)
+  - [Responsibility and ownership](planning/ownership.md)
+  - [Project governance](planning/governance.md)
+- Architecture and integrations {#architecture}
+  - [Capabilities](architecture/capabilities.md)
+  - [Integration strategy](architecture/integration-strategy.md)
+  - [Extensibility strategy](architecture/extensibility-strategy.md)
+  - [Integration options](architecture/integration-options.md)
+  - [Global reference architecture](architecture/global-reference.md)
+  - Headless commerce {#headless}
+    - [Benefits](architecture/headless/benefits.md)
+    - [Journey to headless](architecture/headless/journey-to-headless.md)
+    - [Microservices](architecture/headless/microservices.md)
+    - [Evolution of headless](architecture/headless/evolution.md)
+    - [Coupled storefront architecture](architecture/headless/legacy-storefront.md)
+    - [Headless architecture](architecture/headless/adobe-commerce.md)
+- Infrastructure and deployment {#infrastructure}
+  - [Overview](infrastructure/overview.md)
+  - [On-premises infrastructure](infrastructure/on-premises.md)
+  - Cloud infrastructure {#cloud}
+    - [Overview](infrastructure/cloud/overview.md)
+    - [Regions](infrastructure/cloud/regions.md)
+    - [Technologies](infrastructure/cloud/technology.md)
+    - [Environments](infrastructure/cloud/environments.md)
+    - [Managed services](infrastructure/cloud/managed-services.md)
+    - [Security and compliance](infrastructure/cloud/security.md)
+  - Performance optimization {#performance}
+    - [Typical issues](infrastructure/performance/optimization.md)
+    - [Benchmarks](infrastructure/performance/benchmarks.md)
+    - [Recommendations](infrastructure/performance/recommendations.md)
+- Launch readiness {#launch}
+  - [Overview](launch/overview.md)
+  - [Pre-launch steps](launch/pre-launch-steps.md)
+  - [Launch steps](launch/launch-steps.md)
+  - [Post-launch steps](launch/post-launch-steps.md)
+- Maintenance and support {#maintenance}
+  - [Overview](maintenance/overview.md)
+  - [Models](maintenance/models.md)
+  - [Service levels](maintenance/service-level-agreements.md)
+  - [Metrics](maintenance/metrics.md)
+  - [Adobe Managed Services](maintenance/adobe-managed-services.md)

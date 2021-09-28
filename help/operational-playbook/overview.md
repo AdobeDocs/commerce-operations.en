@@ -1,5 +1,5 @@
 ---
-title: Operational playbook
+title: Operational Playbook
 description: Objective of the Commerce operational playbook
 ---
 
