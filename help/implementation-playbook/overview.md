@@ -7,7 +7,7 @@ description: Objective of the Commerce implementation playbook
 
 The purpose of this playbook is to provide the most holistic overview of a typical Adobe Commerce implementation.
 
-From the early stages of project scoping through development and integrations and finally to deployment and ongoing support, there are many methodologies and best practices that you need to be consider to successfully launch a commerce project.
+From the early stages of project scoping through development, integrations, and deployment to ongoing support, there are many methodologies and best practices that you need to consider to successfully launch an Adobe Commerce project.
 
 Additionally, these processes and considerations apply to any kind of Adobe Commerce project:
 
