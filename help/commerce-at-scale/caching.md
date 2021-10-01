@@ -5,7 +5,7 @@ description: Refer to recommended benchmarks for caching to ensure the success o
 
 # Planning effective caching for ecommerce success under load
 
-Delivering a shopping experience under load requires a well-planned caching strategy. Whilst initially, the request from business stakeholders may be to always present real time product data to customers, this is not an optimal use of system resources, and the impacts of end user site performance would greatly outweigh the benefits of consistently showing real time information.
+Delivering a shopping experience under load will require a well-planned caching strategy. Whilst initially, the request from business stakeholders may be to always present real time product data to customers, this is not an optimal use of system resources, and the impacts of end user site performance would greatly outweigh the benefits of consistently showing real time information.
 
 The initial step in caching strategy should therefore be to define with the relevant stakeholders a matrix of acceptable caching timings for the different areas of the site, for example:
 
