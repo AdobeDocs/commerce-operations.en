@@ -1,6 +1,6 @@
 ---
-title: Performance Optimizations
-description: Optimize your default Adobe Experience MAnager configuration to support high loads on Adobe Commerce.
+title: AEM Performance Optimizations
+description: Optimize your default Adobe Experience Manager configuration to support high loads on Adobe Commerce.
 ---
 
 # AEM performance optimisations under load from default configurations

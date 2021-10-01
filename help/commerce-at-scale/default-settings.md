@@ -1,17 +1,13 @@
 ---
-title: Change Default Settings
+title: Optimize Adobe Commerce performance
 description: Prepare your Adobe Commerce project to use Adobe Experience Manager as a CMS by changing some default settings.
 ---
 
-# Change your default Adobe Commerce settings
+# Optimize Adobe Commerce performance
 
 ## Geographic location of AEM and Adobe Commerce infrastructure
 
 To reduce latency between the AEM publisher and Adobe Commerce GraphQL when building pages, the initial provisioning of the two separate infrastructures should be hosted within the same AWS (or Azure) Region. The geographical location chosen for both clouds should also be closest to the majority of your customer base, so that client side GraphQL requests are served from a geographically close location to the majority of your customers.
-
-## AWS/Azure PrivateLink - linking AEM and Adobe Commerce on cloud VPCs
-
-To improve response times and reduce latency further still for sites with extreme load expectations, an AWS (or Azure) Privatelink connection can be considered between AEM’s VPC and Adobe Commerce on cloud’s VPC. This would have the effect of all network traffic between the AEM publishers and Adobe Commerce staying on the global AWS backbone and not needing to traverse the public internet.
 
 ## GraphQL caching in Adobe Commerce
 

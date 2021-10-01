@@ -8,8 +8,8 @@ hide: yes
 
 - [Overview](overview.md)
 - [Plan effective caching](caching.md)
-- [Optimize performance](performance.md)
+- [Optimize Adobe Experience Manager performance](performance.md)
 - [Align infrastructure](infrastructure.md)
-- [Change default settings](default-settings.md)
-- [Prepare for launch](launch.md)
+- [Optimize Adobe Commerce performance](default-settings.md)
+- [Performance testing tips](launch.md)
 - [Conclusion](conclusion.md)

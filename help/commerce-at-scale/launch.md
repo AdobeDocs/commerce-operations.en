@@ -1,9 +1,9 @@
 ---
-title: Prepare to Launch
+title: Performance Testing Tips
 description: Learn how to set KPIs for launching your Adobe Commerce and ADobe Experience Manager solution.
 ---
 
-# Prepare to launch
+# Performance testing tips
 
 To evaluate the effectiveness of all of the changes above, thorough performance testing should be run before go-live and before any future major deployments to your production environments. When planning your load testing, it is important to simulate real life consumer traffic as much as possible.
 
