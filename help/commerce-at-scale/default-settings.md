@@ -1,9 +1,9 @@
 ---
-title: Optimize Adobe Commerce performance
+title: Adobe Commerce Performance Optimization
 description: Prepare your Adobe Commerce project to use Adobe Experience Manager as a CMS by changing some default settings.
 ---
 
-# Optimize Adobe Commerce performance
+# Adobe Commerce performance optimization
 
 ## Geographic location of AEM and Adobe Commerce infrastructure
 
