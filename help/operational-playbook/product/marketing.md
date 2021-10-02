@@ -1,8 +1,8 @@
 ---
 title: Marketing
 description: Promote your products and attract customers through ecommerce marketing campaigns.
+exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
 ---
-
 # Email marketing
 
 Email marketing (in simple terms) is sending marketing messages to leads and current customers through emails to promote, attract, and sell products to customers. Marketing teams have full control over retrieving customer information and sending customers personalized content through direct email campaigns. Email acts as a tool that helps build a relationship between your customers and your brand.

@@ -1,8 +1,8 @@
 ---
 title: Payment Gateways
 description: Choose a payment gateway provider for your ecommerce project based on the needs of your business.
+exl-id: eab50191-0744-41da-99ba-2e06ea61da27
 ---
-
 # Payment gateways
 
 There was a time when cash was the main source of transactions, but the online world has taken over and online payment methods are replacing old payment methods. Everything is now online, which makes things easier and more accessible, including credit cards, e-wallets, and bank transfers.

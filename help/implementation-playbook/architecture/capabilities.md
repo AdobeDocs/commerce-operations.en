@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce Capabilities
-description: Learn how Adobe Commerce capabilities differentiate us from competitors. 
+description: Learn how Adobe Commerce capabilities differentiate us from competitors.
+exl-id: 6d2196b4-56ee-4048-b5e5-930811e7e50b
 ---
-
 # Adobe Commerce capabilities
 
 Adobe Commerce is one of the most trusted and reliable ecommerce platforms on the market. That trust and reliability has been proven in the growth of the businesses that use it. According to[Hosting Tribunal](https://hostingtribunal.com/blog/magento-statistics/#gref), brands leveraging Adobe Commerce as their ecommerce platform grow three times faster compared to brands on other platforms.

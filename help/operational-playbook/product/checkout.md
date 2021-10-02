@@ -1,8 +1,8 @@
 ---
 title: Checkout Flows and Process
 description: Boost conversion rates by providing your customers with a seamless checkout experience.
+exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 ---
-
 # Checkout flows and process
 
 Checkout is a critical part of online shopping. This is where the real money is made. Retailers tend to focus more on the look and feel of the website and overlook the checkout flow, but both parts are equally important.

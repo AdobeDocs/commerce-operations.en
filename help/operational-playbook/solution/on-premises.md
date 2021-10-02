@@ -1,8 +1,8 @@
 ---
 title: Commerce Hosting On-Premises
 description: Cloud-based hosting solutions are very popular, but on-premises hosting may make sense for your ecommerce project.
+exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
 ---
-
 # On-premises hosting
 
 Cloud-based hosting solutions are extremely popular and it certainly serves an

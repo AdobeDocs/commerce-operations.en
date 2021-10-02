@@ -1,8 +1,8 @@
 ---
 title: Performance Optimization
 description: Learn all about performance optimization and steps to take to review the performance of your Adobe Commerce implementation.
+exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
 ---
-
 # Performance optimization
 
 Performance is a big topic. When users experience a slow or unresponsive site, it affects conversion. We recommend following these steps to optimize the performance of your Adobe Commerce on cloud infrastructure implementation:

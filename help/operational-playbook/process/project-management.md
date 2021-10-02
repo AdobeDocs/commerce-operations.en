@@ -1,8 +1,8 @@
 ---
 title: Project Management
 description: Apply well-known frameworks to manage your ecommerce project.
+exl-id: 514e2317-f409-4079-bdee-1596f6635467
 ---
-
 # Project management
 
 Project management is the application of knowledge, skills, tools, and techniques to achieve goals and successfully meet project requirements.

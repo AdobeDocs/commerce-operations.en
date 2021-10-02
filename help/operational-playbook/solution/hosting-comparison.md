@@ -1,8 +1,8 @@
 ---
 title: Commerce Hosting Comparison
 description: Make the best decision about hosting for your ecommerce project by reviewing this comparison table.
+exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
 ---
-
 # Cloud vs on-premises
 
 Analyzing and determining the type of technical and economic resources an organization is willing to devote to each of the areas below allows merchants to make tactful decisions about which hosting solution is the best fit for their business.

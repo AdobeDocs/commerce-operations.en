@@ -1,8 +1,8 @@
 ---
 title: Responsibility and Ownership
 description: Define project roles and responsibilities to ensure a succesful Adobe Commerce implementation.
+exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
 ---
-
 # Responsibility and ownership
 
 While executing a big project, everything often seems to be going fine at first. The project roadmap is detailed and comprehensive with clear milestones. Resource plans and stakeholder commitments are in place. However, soon things may start falling apart with missed deadlines and forgotten tasks.

@@ -1,8 +1,8 @@
 ---
 title: Lead Generation
 description: Follow this simple workflow to convert ecommerce leads to transacting customers.
+exl-id: 1a94fdef-ef5c-4755-bd5f-d775dae24a8c
 ---
-
 # Lead generation
 
 In the ecommerce industry, a lead is anyone who shows interest in the brand and its products; be it clicking on the website, checking out an advertisement on social media, or exploring products. Generating a lead in the ecommerce industry is a critical part of the business because a lead today can be a customer tomorrow. Lead generation is a long process that takes time and requires patience.

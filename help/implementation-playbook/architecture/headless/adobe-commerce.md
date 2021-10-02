@@ -1,8 +1,8 @@
 ---
 title: Headless Adobe Commerce Architecture
 description: Learn about what makes Adobe Commerce's headless architecture approach unique.
+exl-id: eac9d5b1-4917-4d2a-a8af-7f85c825fa0d
 ---
-
 # Headless Adobe Commerce Architecture
 
 The benefit of Adobe Commerce’s architecture is that it’s not an all-or-nothing proposition and a merchant can find the right mix of solutions for their business. They can build a PWA Studio-powered PWA for their primary site experience or use Adobe Experience Manaager as the layer in complex customer journeys, all while building out a custom frontend to experiment with new touchpoints. No other platform can match the time to market benefits and the flexibility that Adobe Commerce offers with its headless architecture.

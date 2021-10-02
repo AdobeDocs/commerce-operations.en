@@ -1,8 +1,8 @@
 ---
 title: Cloud Infrastructure Technologies
 description: Get a closer look at the collection of technology we use for Adobe Commerce on cloud infrastructure.
+exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 ---
-
 # Technologies
 
 As we’ve mentioned, Adobe Commerce leverages a number of software solutions to support the platform. Specifically, as it pertains to production, we have broken down some of the technical solutions and features included in Adobe Commerce on cloud infrastructure that help make the most of your production environment.

@@ -1,8 +1,8 @@
 ---
 title: Operational Playbook
 description: Objective of the Commerce operational playbook
+exl-id: f072f6ca-3654-4bd2-a32e-000358bb67b3
 ---
-
 # Operational playbook
 
 The objective of this playbook is to get your businesses operationally ready to run a successful ecommerce site. This helps you and your organization as users derive maximum value from your technology investments. Although we have seen many websites succeed, others have faltered due to a lack of internal investment in the businesses to ensure they are operationally ready to run an ecommerce site successfully.

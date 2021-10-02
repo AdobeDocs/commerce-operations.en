@@ -1,8 +1,8 @@
 ---
 title: Dynamic Pricing Management
 description: Gain a competitive advantage by creating a strategy to change product prices dynamically based on market conditions.
+exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
 ---
-
 # Dynamic pricing management
 
 Dynamic pricing is a responsive pricing strategy where the price changes based on the demand, supply, trend, and competition in real-time. It is not a new concept; it has been around for a while now but is surely taking over ecommerce. Dynamic pricing gives retailers the leverage to change prices to have a competitive advantage. For example, you can try decreasing the price of a product that isn't selling well to try increasing sales.

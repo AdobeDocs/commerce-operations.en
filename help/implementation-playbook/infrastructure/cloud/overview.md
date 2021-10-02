@@ -1,8 +1,8 @@
 ---
 title: Cloud Infrastructure Overview
 description: Learn about Adobe Commerce on cloud infrastucture.
+exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
 ---
-
 # Overview
 
 One of the most popular managed-hosting options for Adobe Commerce on AWS is offered by Adobe Commerce itself. Adobe Commerce on cloud infrastructure is a fully managed automated hosting platform for the Adobe Commerce software.

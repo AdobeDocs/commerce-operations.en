@@ -1,8 +1,8 @@
 ---
 title: Culture
 description: Pay attention to corporate culture to help reach your strategic goals.
+exl-id: 455716c6-3efd-4295-a079-4e61df313386
 ---
-
 # Culture
 
 When working with internal and external customers on a project, it can pay dividends to pay close attention to corporate culture. Corporate culture refers to the shared beliefs, attitudes, and values that an organization’s members share. Culture helps an organization reach strategic goals by encouraging desired behaviors, attitudes, and ways of working.

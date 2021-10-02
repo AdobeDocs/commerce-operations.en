@@ -1,8 +1,8 @@
 ---
 title: Commerce Principles
 description: Use these important leadership principles to help ensure that your Adobe Commerce project operates effectively.
+exl-id: 70b7346a-8536-428f-a980-b240bd5eb5ab
 ---
-
 # Principles
 
 We recommend following some core leadership principles when operating an ecommerce project.

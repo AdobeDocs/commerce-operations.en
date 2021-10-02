@@ -1,8 +1,8 @@
 ---
 title: Deliver Experiences At Scale
 description: Learn how to deliver experiences at scale with Adobe Commerce and Adobe Experience Manager.
+exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
 ---
-
 # Deliver experiences at scale with Adobe Commerce, Commerce Integration Framework, and Adobe Experience Manager
 
 A recommended integration pattern between AEM and Adobe Commerce using CIF as a connector is for AEM to own the presentation layer (the “glass”) and Adobe Commerce to power the commerce backend as a “headless” backend. This integration approach leverages the strengths of each application: the authoring, personalisation, and omnichannel capabilities of AEM and ecommerce operations of Adobe Commerce.

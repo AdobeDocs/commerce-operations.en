@@ -1,8 +1,8 @@
 ---
 title: Service Level Agreements
 description: Learn about service level agreements and how to use them to support your Adobe Commerce implementation.
+exl-id: 5da42dfa-e165-4142-a863-6f3ce7689478
 ---
-
 # Service level agreements (SLAs)
 
 The service-level agreement (SLA) defines the level of service expected by a customer from the service provider, with simple metrics by which that service is measured, as well as the remedies or penalties, if any, should the agreed-upon service levels not be achieved.

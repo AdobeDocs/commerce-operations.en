@@ -1,8 +1,8 @@
 ---
 title: What is ecommerce?
 description: Description of ecommerce
+exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 ---
-
 # What is ecommerce?
 
 In the overlapping worlds of ecommerce—social selling and digital marketplaces—the customer experience gives consumers a choice to engage in the channel they prefer, so making the right choice on how you engage and sell online has never been more paramount. Ecommerce and online shopping are often used interchangeably, but at its core ecommerce is much broader than this. It embodies a concept for doing business online, incorporating a multitude of different services.

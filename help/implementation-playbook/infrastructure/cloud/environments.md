@@ -1,8 +1,8 @@
 ---
 title: Cloud Infrastructure Environments
 description: Use the right environments for the right use cases.
+exl-id: 0c36145f-8de2-45e5-9050-9acbc9fb6100
 ---
-
 # Environments
 
 Adobe Commerce on cloud infrastructure Pro architecture supports environments that you can use to develop, test, and launch your store. Each environment contains a database and a web server. The four environments leveraged by Adobe Commerce are:

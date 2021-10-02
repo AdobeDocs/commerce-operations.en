@@ -1,8 +1,8 @@
 ---
 title: Key Stakeholders
 description: Review the key stakeholders involved in an Adobe Commerce implementation and who owns different aspects of the project.
+exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 ---
-
 # Key stakeholders
 
 Many businesses in 2021 have come to realize that becoming “pandemic-proof” directly relates to an organization’s digital strength. Based on Forrester data,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)found that ecommerce has seen 10 years' growth in as little as 3 months, with growth being driven by the need to connect digitally with customers while brick-and-mortar doors were locked shut.

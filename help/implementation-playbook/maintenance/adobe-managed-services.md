@@ -1,8 +1,8 @@
 ---
 title: Adobe Managed Services
 description: Learn how ADobe Managed Services can help support and maintain your Adobe Commerce implementation.
+exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 ---
-
 # Adobe Managed Services
 
 Adobe Commerce is a platform for delivering ecommerce capabilities, including out-of-the-box features, an ability to customize, and third-party integrations.

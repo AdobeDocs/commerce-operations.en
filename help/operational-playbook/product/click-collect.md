@@ -1,8 +1,8 @@
 ---
 title: Click and Collect
 description: Follow these ten tips to deliver a delightful click and collect experience for your customers.
+exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
 ---
-
 # Click and collect
 
 Click and collect has become an integral part of omni-channel strategies because it promotes increase in footfall, customer experience, and ROI. Click and collect is no longer just for big supermarkets, it is becoming a part of both B2B and B2C organizations.

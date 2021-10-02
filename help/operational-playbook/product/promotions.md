@@ -1,8 +1,8 @@
 ---
 title: Promotions
 description: Create a marketing strategy to promote your products to your customers.
+exl-id: 3b1cf7ab-6a24-40eb-b504-c19e3a064231
 ---
-
 # Promotions
 
 With most of the population moving to online shopping, retailers need to be one step ahead in providing the best customer experience. Retailers need to think about the best ways to get their products out in the market. This is where marketing strategy comes into play. In a general aspect, marketing strategy consists of six P’s:

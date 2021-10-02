@@ -1,8 +1,8 @@
 ---
 title: Effective Cache Planning
 description: Refer to recommended benchmarks for caching to ensure the success of your site under load.
+exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
 ---
-
 # Planning effective caching for ecommerce success under load
 
 Delivering a shopping experience under load will require a well-planned caching strategy. Whilst initially, the request from business stakeholders may be to always present real time product data to customers, this is not an optimal use of system resources, and the impacts of end user site performance would greatly outweigh the benefits of consistently showing real time information.

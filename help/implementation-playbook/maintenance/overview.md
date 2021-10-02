@@ -1,8 +1,8 @@
 ---
 title: Maintenance and support overview
 description: Properly maintain and support your newly launched Adobe Commerce implementation.
+exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 ---
-
 # Maintenance and support overview
 
 Consumers already have more options than ever before at their fingertips. With no shortage of brands vying for attention, you can’t give consumers any reason to look at your competitors. As we’ve seen, loyalty and patience with consumers is thin. It doesn’t take much for them to give up on your brand and having a poor ecommerce experience is an easy way for them to give up. 

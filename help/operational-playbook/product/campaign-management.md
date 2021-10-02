@@ -1,8 +1,8 @@
 ---
 title: Campaign Management
 description: Structure your ecommerce campaigns to suit your business requirements.
+exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
 ---
-
 # Campaign management
 
 In ecommerce, campaigns define a series of actions or tasks that are linked to each other, which benefits the business vision and goal. You can set up these actions or tasks in a way that they are able to function individually, sequentially, simultaneously, or in any combination. Campaigns play a major role in a business strategy.

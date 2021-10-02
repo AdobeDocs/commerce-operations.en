@@ -1,8 +1,8 @@
 ---
 title: Requirement Checklists
 description: Use this list of comprehensive questions to help you prepare for an Adobe Commerce implementation.
+exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
 ---
-
 # Requirement Checklists
 
 The following questions can serve as a starting point to see which information should be documented to confirm organizational preparedness. They can also help when developing an RFP.

@@ -1,8 +1,8 @@
 ---
 title: Maturity
 description: Assess what stage your business is at based on this maturity model.
+exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 ---
-
 # Maturity model
 
 A maturity model is a formula for businesses to use to determine what stage they're at with any given functional area or strategy. A useful and accurate maturity model helps businesses understand how to advance from one stage to another through their ecommerce roadmap.

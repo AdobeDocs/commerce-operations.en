@@ -1,8 +1,8 @@
 ---
 title: Agile Scrum Methodology
 description: Learn how combining Agile and Scrum methodologies can help accelerate your ecommerce project.
+exl-id: 2c46acad-bff9-4a9f-acfb-622ffbf97288
 ---
-
 # Agile Scrum methodology
 
 Agile is a time-boxed, iterative approach to project management and software delivery that focuses on delivering incremental value to customers quickly and continuously  rather than a traditional waterfall approach that takes much longer.

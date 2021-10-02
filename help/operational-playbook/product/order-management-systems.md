@@ -1,8 +1,8 @@
 ---
 title: Order Management Systems
 description: Complete your ecommerce project with a system for packaging, shipping, and returns.
+exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
 ---
-
 # Order management system (OMS)
 
 Online shopping is increasing at a rapid rate and companies are competing to provide the best service to attract customers to their site. To have competitive advantage, retailers need to grow their digital footprint, which includes selling online, other marketplaces, and even partnerships.

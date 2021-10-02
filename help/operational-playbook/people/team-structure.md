@@ -1,8 +1,8 @@
 ---
 title: Team Structure
-description: Review options for how to organize your ecommerce team. 
+description: Review options for how to organize your ecommerce team.
+exl-id: ce298092-63ae-489c-a2a7-4ba660b9d86f
 ---
-
 # Team structure
 
 Team structure refers to a combination of either an individual team or a multi-team structure. Team structures are a fundamental part of any team process. A correctly enabled team increases effective collaboration, communication, support, leadership, problem-solving, and decision-making.

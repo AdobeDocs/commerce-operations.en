@@ -1,8 +1,8 @@
 ---
 title: Launch Steps
 description: Use our launch checklist to ensure a smooth Adobe Commerce site implementation.
+exl-id: d7807b2f-85c0-4e3e-a473-c65dbec44d28
 ---
-
 # Launch steps
 
 After testing and completing the pre-launch checklist, we can start the final steps to launch at the time to cutover. These steps include entering site launch (go live) tickets, cutting over access, and finally, testing your store(s) when live. 

@@ -1,8 +1,8 @@
 ---
 title: Resources
 description: Learn about internal, external, and hybrid resources that can help support your ecommerce teams.
+exl-id: 8c5067ed-6dbe-4306-b825-959606d1b254
 ---
-
 # Resources
 
 Digital implementation requires internal (in-house) and external (third-party) resources or both. A business must analyze their internal team and their capabilities when deciding if they want to execute the entire project in-house or if they need support from an external third party. 

@@ -1,8 +1,8 @@
 ---
 title: Post-launch Steps
 description: Use our post-launch checklist to ensure a smooth Adobe Commerce site implementation.
+exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
 ---
-
 # Post-launch steps
 
 Once the website is live, these activities would be performed as soon as possible to ensure the site was launched properly:

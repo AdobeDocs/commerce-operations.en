@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce Microservices
 description: Be able to differentiate between healdess and microservices as it pertains to Adobe Commerce.
+exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
 ---
-
 # Headless and microservices
 
 It is important not to confuse headless with microservices. A lot of the time, we hear conversations about microservices in the same sentence as headless. They are completely different things. They can be used together, but they’re completely different concepts.

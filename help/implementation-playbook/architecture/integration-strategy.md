@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce Integration Strategy
 description: Review integration strategies and options for your Adobe Commerce implementation.
+exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
 ---
-
 # Adobe Commerce integration strategy
 
 The ability to integrate your platform is “non-negotiable.” Companies want their ecommerce platforms accessible from a variety of touchpoints and seamlessly integrated into their technology systems, especially their ERP. Customizability, global scalability, and affordability also play a role in final platform purchase.

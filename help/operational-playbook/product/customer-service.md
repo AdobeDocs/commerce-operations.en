@@ -1,8 +1,8 @@
 ---
 title: Customer Service
 description: Good customer service can be a competitive advantage in the ecommerce space.
+exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
 ---
-
 # Customer service
 
 Ecommerce is digitally based and the only team who interacts with the real customer behind the transaction is the Customer Service team. Customers expect a high-quality experience and if they do not get that retailers could lose them as customers. Customer Service teams in the ecommerce industry receive the highest number of calls, messages, and emails compared to other industries.

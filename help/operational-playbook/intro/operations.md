@@ -1,8 +1,8 @@
 ---
 title: Commerce operations
 description: Learn what it takes to have a successful operational strategy for your ecommerce business.
+exl-id: 21123987-0508-4d52-8af4-837b7a3ba1cb
 ---
-
 # Commerce operations
 
 Commerce operations is about centralizing backend operations so that they work smarter, faster, and more efficiency. A successful operational strategy requires a strong IT infrastructure that is capable of supporting end-to-end ecommerce operations; product catalog, inventory management, checkout, and shipping. Ecommerce operations are built on several things, such as a user-friendly storefront, variety of products, proper management of inventory, promotions, easy checkout, and convenient payment and shipping methods.

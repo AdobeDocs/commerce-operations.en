@@ -1,8 +1,8 @@
 ---
 title: About Adobe Commerce
 description: Description of Adobe Commerce
+exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
 ---
-
 # About Adobe Commerce
 
 Adobe Commerce gives merchants the power to create unique and engaging shopping experiences. The platform provides rich, out-of-the-box features, an unlimited ability to customize, a flexible headless architecture, and seamless third-party integrations. This is coupled with a global ecosystem of implementation partners and a vast marketplace of extensions to bring commerce projects to life.

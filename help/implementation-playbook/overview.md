@@ -1,8 +1,8 @@
 ---
 title: Implementation Playbook
 description: Objective of the Commerce implementation playbook
+exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 ---
-
 # Implementation playbook
 
 The purpose of this playbook is to provide the most holistic overview of a typical Adobe Commerce implementation.

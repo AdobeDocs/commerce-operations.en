@@ -1,8 +1,8 @@
 ---
 title: Commerce Checklists
 description: Find useful checklists to help organize your ecommerce project.
+exl-id: 4b5e5bca-7b5b-46e7-b3eb-ef6289d238ed
 ---
-
 # Commerce checklists and templates
 
 Use the templates and checklists on this page to organize your commerce project.

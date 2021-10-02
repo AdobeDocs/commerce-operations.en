@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce Global Reference Architecture
 description: Get the most our of your Adobe Commerce implementaiton by leveraging a global reference architecture.
+exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
 ---
-
 # Global Reference Architecture (GRA)
 
 When running businesses that have multiple sites for multiple brands in multiple local markets (with localized currencies, languages, media, shared catalogues, and unique carts) and who want to avoid unnecessary costs for implementing same feature and integrations—Global Reference Architecture (GRA) is always a good option.
@@ -40,4 +40,3 @@ GRA impacts:
 - How new markets are enabled
 
   - Simplifies the release of multiple channels and markets that would otherwise cost considerably more time and money.
-  

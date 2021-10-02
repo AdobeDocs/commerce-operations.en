@@ -1,8 +1,8 @@
 ---
 title: Order Management
 description: Learn how an order management system is essential to your ecommerce business.
+exl-id: 62edc895-d725-4252-9a43-e03427579444
 ---
-
 # Order management
 
 For brand new businesses, order levels are low and it is easier to

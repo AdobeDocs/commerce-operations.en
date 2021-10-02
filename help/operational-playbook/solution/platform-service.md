@@ -1,8 +1,8 @@
 ---
 title: Commerce Platform Services
 description: Review the advantages and disadvantages of using PaaS solutions for your hosting infrastructure to determine what's right for your ecommerce project.
+exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
 ---
-
 # Platform-as-a-service (PaaS)
 
 PaaS is a type of cloud computing that provides a platform that clients can use to develop, run, and manage the business without the requirement to build an infrastructure and manage the services.

@@ -1,8 +1,8 @@
 ---
 title: Project workshops
 description: Learn about the different types of management workshops that are common for ecommerce projects.
+exl-id: 72e465a0-b965-46a7-b0d0-0ed8a59a4bab
 ---
-
 # Common project workshops
 
 Throughout your ecommerce project, you need to have workshops to track progress. Common types of project workshops include:

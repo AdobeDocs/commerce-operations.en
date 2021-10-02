@@ -1,8 +1,8 @@
 ---
 title: Coupled Storefront Architecture
 description: Learn about what a coupled storefront means within the context of headless Adobe Commerce architectures.
+exl-id: 978e6853-4fbe-45b8-8e46-f491c6724fc6
 ---
-
 # Coupled (legacy) Adobe Commerce storefront architecture
 
 The current default deployment option for most commercial customers includes: 

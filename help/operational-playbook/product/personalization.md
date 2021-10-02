@@ -1,8 +1,8 @@
 ---
 title: Personalization
 description: Learn about the kind of experience personalization should provide your customers.
+exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
 ---
-
 # Personalization
 
 The baseline of ecommerce business growth is customer loyalty. Keeping the customers happy is a combination of a lot of factors from products, content, checkout, customer, and service experience. Personalization depends on AI, which tracks customer information in real-time and delivers a unique, personalized experience. Personalization might not work for all types of businesses, but it’s an additional feature that can help drive traffic to your site.

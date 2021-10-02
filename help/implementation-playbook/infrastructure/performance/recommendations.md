@@ -1,8 +1,8 @@
 ---
 title: Performance Optimization Recommendations
 description: Optimize the the performance of your Adobe Commerce implementation by following these recommendations.
+exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 ---
-
 # Performance optimization review
 
 Even as performance optimization can come from many aspects, there are some general recommendations that should be considered for most scenarios. This includes configuration optimization for infrastructure elements, Adobe Commerce backend configuration, and architecture scalability planning.

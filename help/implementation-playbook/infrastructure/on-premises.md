@@ -1,8 +1,8 @@
 ---
 title: On-premises Infrastructure
 description: Learn about Adobe Commerce on-premises infrastucture and third-party cloud services.
+exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
 ---
-
 # Adobe Commerce on-premises infrastructure
 
 The motivations for starting a new Adobe Commerce implementation or moving an existing on-premises Adobe Commerce implementation to the cloud are numerous, but the most common strategic drivers are reducing capital expenditure, decreasing ongoing cost, improving scalability and elasticity, improving time-to-market, and attaining improvements in security and compliance.

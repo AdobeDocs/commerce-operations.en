@@ -1,8 +1,8 @@
 ---
 title: Product Images
 description: Provide your customers with high-quality product images and videos to increase conversation rates.
+exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
 ---
-
 # Product images
 
 Ecommerce is entirely based on the online experience. Customers visiting your website should be intrigued to purchase the products available, which will increase your conversion rate. Many factors play a role in increasing ROI. One such a factor is the product image. Product images play a major role in attracting and convincing customers to purchase a product. You can use the same product images for both B2B and B2C.

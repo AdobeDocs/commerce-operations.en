@@ -1,8 +1,8 @@
 ---
 title: Resporting and Dashboards
-description: Monitor KPIs, track sales, and measure the success of your ecommerce site with reports and dashboards. 
+description: Monitor KPIs, track sales, and measure the success of your ecommerce site with reports and dashboards.
+exl-id: 7b57c11b-ff32-440f-85bd-6b6d09c522b7
 ---
-
 # Reporting and dashboards
 
 Ecommerce fits well as a use case when it comes to reporting and dashboards. In ecommerce, everything is online, which lets retailers leverage the power of different tools to gather data and analyze it to improve their business processes, teams, product offerings, and more.

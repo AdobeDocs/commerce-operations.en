@@ -1,8 +1,8 @@
 ---
 title: Teams
 description: Learn about the different types of teams that make ecommerce projects successful.
+exl-id: b1a007b2-49ff-475f-9ad7-5fa100cdfa3b
 ---
-
 # Teams
 
 Ecommerce is one of the fastest growing segments in the market and brands are rushing to get online. For every ecommerce project to be successful, it is necessary to have the right team balance. Managing an ecommerce business needs a team with experience, strategy, and cross-functional skills. Along with the right ecommerce team, it is also essential to have other teams within the organization that are equally involved in the entire project process. It needs to be a collaborative effort if the business is going to achieve the envisioned goal and to do so the business needs to ensure that departments aren’t working in isolation.

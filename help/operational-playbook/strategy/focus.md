@@ -1,8 +1,8 @@
 ---
 title: Focus
 description: Embrace fundamental metrics so that you can make data-driven decisions.
+exl-id: 5b946cce-25cd-4a69-b565-235acb16cad4
 ---
-
 # General commerce metrics
 
 The most successful ecommerce teams follow and embrace metrics to make informed decisions about backend operations, user experience, and (most importantly) customer behavior.

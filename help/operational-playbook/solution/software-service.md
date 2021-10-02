@@ -1,8 +1,8 @@
 ---
 title: Commerce Software Services
 description: Learn about key differences between SaaS applications and other self-hosted (on-premises) open source ecommerce options.
+exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
 ---
-
 # Software-as-a-service (SaaS)
 
 More businesses are turning to Software-as-a-Service (SaaS) apps and systems to optimize and forge business functions while better managing their ecommerce operations.

@@ -1,8 +1,8 @@
 ---
 title: Commerce Integrations
 description: Equip your team with the tools that they need to delight your customers and ensure seamless day-to-day operations.
+exl-id: 52bfa6c7-0687-45de-8889-c529cea7d01a
 ---
-
 # Third-party integrations
 
 Most businesses understand that many unique strategies and processes need to be considered as part of the overall digital roadmap when developing an online store. Sometimes, the platform alone does not provide all of the features and functionality needed to operate a storefront at the optimal level, which is why merchants turn to third-party providers to fill the gaps and move ecommerce operations forward.

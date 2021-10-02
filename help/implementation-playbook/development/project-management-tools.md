@@ -1,8 +1,8 @@
 ---
 title: Project Management Tools
 description: Choose recommended project management tools for your Adobe Commerce implementation.
+exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
 ---
-
 # Project management tools
 
 Moving out of the actual Adobe Commerce environment, but equally important, are the tools and solutions that make collaboration and the entire development process as smooth as possible.

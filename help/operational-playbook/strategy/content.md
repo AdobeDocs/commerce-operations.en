@@ -1,8 +1,8 @@
 ---
 title: Content Strategy
 description: Leverage your content to build engaging campaigns that engage your customers.
+exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
 ---
-
 # Content strategy
 
 Successful ecommerce content marketing plans do not come from brainstorming sessions, hunches, or inherited habits. Businesses must gather quantitative and qualitative data (some from sources they already own and some created or purchased) to plan for content that customers will find and value. With Adobe Experience Manager, you can leverage content managed in the AEM authoring environment to build highly engaging campaigns. You can easily publish marketing assets that you design, manage, and validate in Adobe Experience Manager across different channels.

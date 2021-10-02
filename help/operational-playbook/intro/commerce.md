@@ -1,8 +1,8 @@
 ---
 title: About Adobe Commerce
 description: Description of Adobe Commerce
+exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
 ---
-
 # Adobe Commerce
 
 Adobe [!DNL Commerce] is the leading platform for open commerce innovation. Every year, Adobe [!DNL Commerce] handles over $100 billion in gross merchandise volume. Adobe [!DNL Commerce] gives customers the power to create unique and engaging shopping experiences, out-of-the-box features, and the unlimited ability to customize, a flexible headless architecture, and seamless third-party integrations.

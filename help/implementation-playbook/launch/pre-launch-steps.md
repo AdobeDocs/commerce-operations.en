@@ -1,8 +1,8 @@
 ---
 title: Pre-Launch Steps
 description: Use our pre-launch checklists to ensure a smooth Adobe Commerce site implementation.
+exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
 ---
-
 # Pre-launch steps
 
 When you have completed deployment and testing in the staging environments, you can begin site-launch preparation. Staging is a near-production environment running on similar hardware, configurations, architecture, and services. It can reduce your downtime and make your extension, service, custom configurations, and merchant user acceptance testing vital components to releasing your sites and stores.

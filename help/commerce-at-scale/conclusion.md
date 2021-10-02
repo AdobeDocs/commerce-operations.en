@@ -1,8 +1,8 @@
 ---
 title: Conclusion
 description: Revisit concepts from the Deliver Commerce Experiences at Scale guide.
+exl-id: a5d5c398-451f-4283-b787-d16c7486e824
 ---
-
 # Conclusion
 
 This content is intended to be a high-level guide to provide some areas to investigate initially while preparing your AEM/CIF/Adobe Commerce environment for heavy load. There are many areas of Adobe Commerce, CIF, and Fastly that are not covered by the above guide which will require optimisations specific to your environment. Also, custom code and 3rd party modules may have effects on response times which cannot be covered here.

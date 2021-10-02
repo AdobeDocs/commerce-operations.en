@@ -1,8 +1,8 @@
 ---
 title: Project Scope
 description: Specify project requirements and define roles and responsibilities in your project plan.
+exl-id: 57a68f7b-adef-4b87-b9f3-3e184d8accf4
 ---
-
 # Project scope
 
 Project scope is an integral part of a project plan that outlines the goals, deliverables, costs, tasks, and deadlines. Project scope defines project limits, each team member's responsibilities, and sets the procedure for executing the project plan.

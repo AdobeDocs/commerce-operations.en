@@ -1,8 +1,8 @@
 ---
 title: Roles and Responsibilities
 description: Learn about the different roles and responsibilities involved in a successful ecommerce project.
+exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
 ---
-
 # Roles and responsibilities
 
 A successful ecommerce project requires several roles with varying levels of responsibility.

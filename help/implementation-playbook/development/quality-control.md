@@ -1,8 +1,8 @@
 ---
 title: Quality Control
 description: Learn about Adobe Commerce quality control processes related to implementation projects.
+exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
 ---
-
 # Quality control process and tools
 
 ![Quality control process diagram](../../assets/playbooks/quality-control-diagram.svg)

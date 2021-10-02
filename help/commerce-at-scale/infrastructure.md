@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce and Adobe Experience Manager Infrastructure Alignment
 description: Align your Adobe Commerce and Adobe Experience Manager infrastutrcure to set acceptable timeouts and connection limits.
+exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
 ---
-
 # Infrastructure alignments (timeouts and connection limits)
 
 There are settings with AEM and Adobe Commerce and surrounding infrastructure such as load balancers which need alignment, these are related to connection limits and timeout settings.

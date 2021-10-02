@@ -1,8 +1,8 @@
 ---
 title: Pricing
 description: Learn about different electronic payment methods and the benefits of online payments in general.
+exl-id: d2dd1a6d-0a75-433e-88cd-74bffcc47594
 ---
-
 # Pricing
 
 The importance of ecommerce is growing rapidly. Consumers prefer to purchase products online because they can do so anywhere at any time. For an ecommerce site to grow, it is essential to have a good pricing system in place. When a customer tries to pay online and the transaction fails, customers often choose a different payment method, whereas some customers abandon their cart. Customers who abandon their cart do so because they've had a negative experience as they find the payment method complicated and confusing. If a business chooses to have only one type of payment method, it will most likely not provide the expected level of customer service. Providing various payment methods allows potential shoppers to select the payment method that best suits their needs and boosts your ROI.

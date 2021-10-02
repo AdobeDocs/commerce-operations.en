@@ -1,8 +1,8 @@
 ---
 title: Maintenance and Support Models
-description: Use these common maintenance and support models to keep your ADobe Commerce implementation running smoothly. 
+description: Use these common maintenance and support models to keep your ADobe Commerce implementation running smoothly.
+exl-id: 44469b83-a10b-44c2-8721-9a7daa2733d3
 ---
-
 # Maintenance and support models
 
 There is not just one way to handle the support of your ecommerce site. We have outlined four options, depending on the needs and goals of your brand.

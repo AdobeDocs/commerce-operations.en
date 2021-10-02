@@ -1,8 +1,8 @@
 ---
 title: Launch Readiness Overview
 description: Review a summary of what launch readiness means for Adobe Commerce implementations.
+exl-id: 87cfcb48-3c0e-4c14-afb4-62bb9fe94c48
 ---
-
 # Launch readiness overview
 
 By this point in your ecommerce journey, your teams and organization have dedicated months to organizing, planning, and building a solution that fits your brand’s needs and will grow your business. Now that the point of launch is finally here, it doesn’t mean the job is now done.

@@ -1,8 +1,8 @@
 ---
 title: Support Metrics
 description: Monitor support and maintenance efforts for your Adobe Commerce implementation using common metrics.
+exl-id: a8171a08-3583-4c6a-bb18-158161be42d1
 ---
-
 # Support metrics
 
 The following diagram shows typical metrics/KPIs collected and reported for L1 functions:

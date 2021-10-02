@@ -1,8 +1,8 @@
 ---
 title: Commerce Strategy
 description: Unlock core ecommerce capabilities using our suggested strategy framework.
+exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 ---
-
 # Commerce strategy
 
 Digital commerce is a rapidly moving force that evolves expeditiously each year. While this can be exciting for individuals, it also comes with many challenges for organizations trying to navigate the lay of the land that is ecommerce.

@@ -1,8 +1,8 @@
 ---
 title: Project Governance
 description: Apply our project governance recommendations to your Adobe Commerce implementation.
+exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
 ---
-
 # Project governance
 
 Project governance is an oversight function aligned with the organization’s governance structure and encompasses the project life cycle. It provides the project manager and team with structure, processes, decision-making models, and tools for managing and controlling the project, while also ensuring the successful delivery of the project. Project governance is a crucial element, especially for complex and strategic projects.

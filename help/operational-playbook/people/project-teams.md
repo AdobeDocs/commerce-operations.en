@@ -1,8 +1,8 @@
 ---
 title: Project Teams
 description: Build the right team for your ecommerce project.
+exl-id: 57aee5ac-db27-4c2a-8e08-3e926d7658d3
 ---
-
 # Project teams
 
 Every brick-and-mortar store needs a team and it’s the same for an online ecommerce store. It's important to have people on your team who fit the role with the required skills. For both B2B and B2C  ecommerce, it is essential that each department in the organization is involved in the ecommerce project. 

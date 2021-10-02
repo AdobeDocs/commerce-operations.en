@@ -1,8 +1,8 @@
 ---
 title: Search Engine Optimization (SEO)
 description: Learn about the key differences between B2B and B2C SEO campaigns.
+exl-id: 7b1348b5-d379-48c1-9e9d-71a8d02b2ca4
 ---
-
 # Search engine optimization (SEO)
 
 Search engine optimization (SEO) is a tool that helps you optimize your website based on specific keywords so that the site ranks higher in Google search results. Google ranks the websites based on whether the brand has answered all the search questions asked by customers. When customers search something on Google, they find different types of results. The following sections describe those results.

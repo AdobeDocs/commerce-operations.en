@@ -1,8 +1,8 @@
 ---
 title: Communication Process and Tools
 description: Use the communication processes and tools that fit the needs of your ecommerce team.
+exl-id: e7eca8f1-aec0-4a45-8b57-2851b2df2de0
 ---
-
 # Communication
 
 Communication is critical to the success of an ecommerce project.

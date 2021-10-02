@@ -1,8 +1,8 @@
 ---
 title: Platform Tools
 description: Choose recommended platform tools for your Adobe Commerce implementation.
+exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
 ---
-
 # Platform tools
 
 There is no shortage of aspects that must be well thought through and rigorously tested to keep an ecommerce site running without interference. Not only must you identify the right solutions to tackle every aspect of the site—from data storage and programming to caching and security—but you need the right process to ensure the delivery of a platform that both runs smoothly and can be built and optimized efficiently.

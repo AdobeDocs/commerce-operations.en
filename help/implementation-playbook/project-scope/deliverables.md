@@ -1,8 +1,8 @@
 ---
 title: Deliverables
 description: Learn about the different deliverables associated with an Adobe Commerce implementation.
+exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
 ---
-
 # Deliverables 
 
 The discovery process identifies specific Adobe Commerce implementation deliverables. Review the following sections to learn more.

@@ -1,8 +1,8 @@
 ---
 title: Headless Commerce
 description: Learn what headless commerce means and how Adobe Commerce supports headless architectures.
+exl-id: acf66714-c10e-4c8b-b7ca-04cb2ca2fcf9
 ---
-
 # Headless Commerce
 
 ## Why Headless?

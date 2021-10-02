@@ -1,8 +1,8 @@
 ---
 title: AEM Performance Optimization
 description: Optimize your default Adobe Experience Manager configuration to support high loads on Adobe Commerce.
+exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
 ---
-
 # AEM performance optimization
 
 The AEM dispatcher is a reverse proxy, that helps deliver an environment that is both fast and dynamic. It works as part of a static HTML server, such as Apache HTTP Server, with the aim of storing (or “caching”) as much of the site content as is possible, in the form of static resources. This approach aims to minimize the need to access the AEM page rendering functionality and the Adobe Commerce GraphQL service as much as possible. The result of serving much of the pages as static HTML, CSS, & JS delivers performance benefits to users and reduces infrastructure requirements on the environment. Any page or query that is likely to be identically repeated from user to user should be considered for caching.
