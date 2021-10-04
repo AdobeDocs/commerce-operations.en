@@ -17,7 +17,7 @@ Additionally, these processes and considerations apply to any kind of Adobe Comm
 - Single-market or multi-market rollouts
 - Extensive integrations with or without middleware
 
-We hope that this playbook provides insights and guidance to a variety of stakeholders who would typically be involved in an ecommerce project initiative, such as:
+We hope that this playbook provides insights and guidance to a variety of stakeholders who would typically be involved in an ecommerce project initiative, including:
 
 - CEOs and general management, who should have a solid idea of what an ecommerce rollout entails
 - CMOs and digital managers, who will be working with business users on the platform itself
