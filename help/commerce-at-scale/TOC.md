@@ -12,4 +12,3 @@ user-guide-description: Learn how to deliver experiences at scale using Adobe Co
 - [Adobe Commerce performance optimization](default-settings.md)
 - [Performance testing tips](launch.md)
 - [Conclusion](conclusion.md)
-- [Bob's hidden file](bob.md)
