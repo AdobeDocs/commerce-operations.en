@@ -2,6 +2,7 @@
 title: Deliver Experiences At Scale
 description: Learn how to deliver experiences at scale with Adobe Commerce and Adobe Experience Manager.
 exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
+debug: true
 ---
 # Deliver experiences at scale with Adobe Commerce, Commerce Integration Framework, and Adobe Experience Manager
 
