@@ -113,7 +113,7 @@ We have a seperate section dedicated to detailing what [headless](../../architec
 
 ### Keep Adobe Commerce updated
 
-Adobe Commerce always has better performance when running the newest version. Even if it is not possible to keep Adobe Commerce up-to-date after each new version is released, it is still recommended to [upgrade](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) when Adobe Commerce introduces significant performance optimizations. 
+Adobe Commerce always has better performance when running the newest version. Even if it is not possible to keep Adobe Commerce up-to-date after each new version is released, it is still recommended to [upgrade](../../../upgrade/overview.md) when Adobe Commerce introduces significant performance optimizations. 
 
 For example, in 2020, Adobe released an optimization to the Redis layer, fixing a lot of inefficiencies, connection issues, and unnecessary data transfer between Redis and Adobe Commerce. Overall performance between 2.3 and 2.4 is night and day and we saw significant improvements in cart, checkout, concurrent users, just because of the Redis optimization.
 
