@@ -54,7 +54,7 @@ There are many ways to create custom patch files. The following example focuses 
 To create a custom patch:
 
 1. Create a `patches/composer` directory in your local project.
-1. Identify the GitHub commit or pull request to use for the patch. This example uses the [`2d31571`](https://github.com/magento/magento2/commit/) commit, linked to GitHub issue [#6474](https://github.com/magento/magento2/issues/6474).
+1. Identify the GitHub commit or pull request to use for the patch. This example uses the [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) commit, linked to GitHub issue [#6474](https://github.com/magento/magento2/issues/6474).
 1. Append the `.patch` or the `.diff` extensions to the commit URL. Use `.diff` for a smaller file size. For example: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. Save the page as a file in the `patches/composer` directory. For example, `github-issue-6474.diff`.
 1. Edit the file and remove `app/code/<VENDOR>/<PACKAGE>` from all paths so that they are relative to the `vendor/<VENDOR>/<PACKAGE>` directory.
@@ -72,11 +72,12 @@ index c8a6fef58d31..7d01c195791e 100644
 +++ b/view/frontend/web/js/view/payment/iframe.js
 @@ -154,6 +154,7 @@ define(
               */
-              clearTimeout: function () {
-                  clearTimeout(this.timeoutId);
-                  this.fail();
-                  return this;
-            },
+             clearTimeout: function () {
+                 clearTimeout(this.timeoutId);
++                this.fail();
+ 
+                 return this;
+             },
 ```
 
 ## Applying patches
