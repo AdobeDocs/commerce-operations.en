@@ -43,14 +43,4 @@ To update or upgrade a module or extension:
 
 Adobe removed all [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Vendors continue to support these extensions on the Adobe Commerce Marketplace.
 
-If you want to continue using these extensions with Adobe Commerce and Magento Open Source 2.4.4 and later, you must update the corresponding package dependencies in your `composer.json` file _before_ upgrading to 2.4.4.
-
-The following table shows the Composer package name and version for the Adobe Commerce Marketplace extensions that you should use to replace the VBE packages in your project:
-
-| Extension  | Marketplace package and version                         |
-|------------|---------------------------------------------------------|
-| Amazon Pay | `amzn/amazon-pay-magento-2-module: 5.9.1`               |
-| dotdigital | `dotmailer/TBD: x.x.x` |
-| Klarna     | `klarna/TBD: x.x.x`                             |
-| Vertex     | `vertex/TBD: x.x.x`                  |
-| Yotpo      | `yotpo/module-yotpo: x.x.x`     |
+If you want to continue using these extensions with Adobe Commerce and Magento Open Source 2.4.4 and later, you must update the corresponding package dependencies in your `composer.json` file _before_ upgrading to 2.4.4. Contact the vendor for the package name and version to use.
