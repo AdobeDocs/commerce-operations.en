@@ -14,7 +14,7 @@ An eCommerce implementation is an evolution—it’s never truly finished. Your 
 - Better developer experience and tooling
 - Ability to more deeply integrate with other Adobe Experience Cloud applications
 
-To provide our merchants with more flexibility when planning their upgrade to 2.4.4 or higher, we've recently updated our [2022 release schedule](https://devdocs.magento.com/release/), extended the 2.3 End of Support (EOS) date, and announced new extended support options for select versions of our software. For more information on these updates, please refer to our blog.
+To provide our merchants with more flexibility when planning their upgrade to 2.4.4 or higher, we recently updated our [2022 release schedule](https://devdocs.magento.com/release/), extended the 2.3 End of Support (EOS) date, and announced new extended support options for select versions of our software. For more information on these updates, please refer to our blog.
 
 The following are Adobe Commerce-recommended paths to 2.4.4 or later to keep your site secure and performant while upgrading to one of the latest verions.
 

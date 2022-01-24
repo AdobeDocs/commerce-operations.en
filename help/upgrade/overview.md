@@ -55,7 +55,7 @@ It may seem counterintuitive, but performing regular platform updates requires l
  
 When updates are performed regularly, changes are incremental and the corresponding upgrade effort reflects this. When platform updates are deferred for an extended period, they can become a much more involved process. Furthermore, the extensions you use from the [Marketplace](https://marketplace.magento.com/) and any other third-party integrations may also be impacted. Lastly, the time it takes to investigate, plan, and perform a delayed upgrade are all extended, which adds avoidable effort and costs.
 
-Some of the general factors that affect the level of effort to upgrade your project include, but are not milited to:
+Some of the general factors that affect the level of effort to upgrade your project include, but are not limited to:
 
 | Technical complexity                                      | Planning and strategy                                        |
 |-----------------------------------------------------------|--------------------------------------------------------------|
