@@ -105,4 +105,4 @@ We recommend saving the results from each upgrade project so that you can compar
 
 We also recommend that you run the tool regularly while working on the upgrade to have visibility into your progress. The number of issues should decrease as you fix them. This also helps your team decide on the best approach to distribute work.
 
-Future releases of the tool will incorporate PHP 8.1 compatibility tests and autofixes to help you fix issues as fast as possible. 
+The Upgrade Compatibility Tool continues to be improved upon and future releases will include features such as autofixes to help you fix issues as fast as possible. The latest improvements released in January 2022 include PHP 8.1 compatibility tests and HTML visualization capabilities that help you quickly identify areas that may require more effort to upgrade.
