@@ -1,11 +1,11 @@
 ---
-title: Upgrade Compatibility Tool Developer Information
-description: Customize the Upgrade Compatibility Tool using the API index integration.
+title: [!DNL Upgrade Compatibility Tool] Developer Information
+description: Customize the [!DNL Upgrade Compatibility Tool] using the API index integration.
 ---
 
-# Upgrade Compatibility Tool developer information
+# [!DNL Upgrade Compatibility Tool] developer information
 
-This topic contains information for developers who work closely with the Adobe Commerce code and want to learn detailed information about the Upgrade Compatibility Tool. You can use this knowledge to customize the tool's components.
+This topic contains information for developers who work closely with the Adobe Commerce code and want to learn detailed information about the [!DNL Upgrade Compatibility Tool]. You can use this knowledge to customize the tool's components.
 
 ## Adobe Commerce API index integration
 
@@ -23,7 +23,7 @@ Edit this file to customize the response according to your installation. Replace
 
 `sut\Domain\MRay\MRayInterface : "@sut_mray_mock"`
 
-In the previous example, the Upgrade Compatibility Tool uses `@sut_mray_mock` as the `MRayInterface` implementation. The responses from the `api()` and `modules()` methods come from the following files:
+In the previous example, the [!DNL Upgrade Compatibility Tool] uses `@sut_mray_mock` as the `MRayInterface` implementation. The responses from the `api()` and `modules()` methods come from the following files:
 
 - `dev/mray_mock_files/api.json`
 - `dev/mray_mock_files/modules.json`
@@ -111,7 +111,7 @@ This score is based on the results extracted from the analysis:
 - Number of issues identified
 - Severity of issues identified
 
-The Upgrade Compatibility Tool calculates this score according to the complexity score formula below.
+The [!DNL Upgrade Compatibility Tool] calculates this score according to the complexity score formula below.
 
 ### Complexity score formula
 

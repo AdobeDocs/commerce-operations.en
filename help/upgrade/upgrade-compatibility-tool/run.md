@@ -1,13 +1,13 @@
 ---
-title: Run the Upgrade Compatibility Tool
-description: Follow these steps to run the Upgrade Compatibility Tool on your Adobe Commerce project.
+title: Run the [!DNL Upgrade Compatibility Tool]
+description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] on your Adobe Commerce project.
 ---
 
-# Run the Upgrade Compatibility Tool
+# Run the [!DNL Upgrade Compatibility Tool]
 
-The Upgrade Compatibility Tool is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
+The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
 
-The Upgrade Compatibility Tool identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
+The [!DNL Upgrade Compatibility Tool] identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
 
 ## Use the `upgrade:check` command
 
@@ -21,7 +21,7 @@ bin/uct upgrade:check <dir>
 >
 >The `<dir>` value is the directory where your Adobe Commerce instance is located.
 
-The `upgrade:check` command runs the Upgrade Compatibility Tool and checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of your Adobe Commerce.
+The `upgrade:check` command runs the [!DNL Upgrade Compatibility Tool] and checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of your Adobe Commerce.
 
 >[!WARNING]
 >
@@ -35,7 +35,7 @@ While you can use the `graphql:compare` command to compare two GraphQL schemas t
 
 ### Recommendations to use the `upgrade:check` command
 
-- The Upgrade Compatibility Tool requires at least 2GB RAM to run. This setting is recommended to avoid issues due to a low memory limitation. The Upgrade Compatibility Tool displays a question if you run the `upgrade:check` command with a low `memory_limit` setting.
+- The [!DNL Upgrade Compatibility Tool] requires at least 2GB RAM to run. This setting is recommended to avoid issues due to a low memory limitation. The [!DNL Upgrade Compatibility Tool] displays a question if you run the `upgrade:check` command with a low `memory_limit` setting.
 - Specify the `-m` option to run the tool against a specific module:
 
    ```bash
@@ -49,7 +49,7 @@ Where arguments are as follows:
 
 ### Use the `--help` option
 
-To see the Upgrade Compatibility Tool command general options and help, run:
+To see the [!DNL Upgrade Compatibility Tool] command general options and help, run:
 
 ```bash
 bin/uct --help
@@ -69,7 +69,7 @@ Available `--help` options for the `upgrade:check` command:
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Path of the file where the output will be exported in json format.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Path of the file where the output will be exported in HTML format.
 - `--min-issue-level`: Minimum issue level to show in report. Default is [WARNING].
-- `--ignore-current-version-compatibility-issues`: Use this option when you do not want to include known critical issues, errors and warnings in your Upgrade Compatibility Tool report.
+- `--ignore-current-version-compatibility-issues`: Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report.
 - `--context=CONTEXT`: Execution context. This option is for integration purposes and does not affect the execution result.
 - `-h, --help`: Display help for that specific command. If no command is provided, `list` command is the default result.
 - `-q, --quiet`: Do not output any messages while executing the command.
@@ -80,7 +80,7 @@ Available `--help` options for the `upgrade:check` command:
 
 ### Output
 
-As a result of the analysis performed, the Upgrade Compatibility Tool exports a report that contains a list of issues for each file specifying its severity, error code and error description.
+As a result of the analysis performed, the [!DNL Upgrade Compatibility Tool] exports a report that contains a list of issues for each file specifying its severity, error code and error description.
 
 See the example below:
 
@@ -122,7 +122,7 @@ See the example below:
 
 >[!NOTE]
 >
->By default, the Upgrade Compatibility Tool exports the report into 2 different formats: `json` and `html`.
+>By default, the [!DNL Upgrade Compatibility Tool] exports the report into 2 different formats: `json` and `html`.
 
 #### JSON
 
@@ -184,7 +184,7 @@ Where arguments are as follows:
 
 ### Use the `--ignore-current-version-compatibility-issues` option
 
-The Upgrade Compatibility Tool allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option, so it only shows new or unknown critical issues, errors, and warnings. Use this option when you do not want to include known critical issues, errors and warnings in your Upgrade Compatibility Tool report.
+The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option, so it only shows new or unknown critical issues, errors, and warnings. Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report.
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -200,13 +200,13 @@ A _vanilla_ installation is a clean installation of a specified version tag or b
 
 The `bin/uct core:code:changes` command checks if there is a vanilla instance in your system. If this is the first time using a vanilla installation, an interactive command-line question prompts you to download the vanilla project from the [Adobe Commerce repository](https://repo.magento.com/).
 
-You can run an Upgrade Compatibility Tool command with the `--vanilla-dir` option to specify the Adobe Commerce vanilla installation directory.
+You can run an [!DNL Upgrade Compatibility Tool] command with the `--vanilla-dir` option to specify the Adobe Commerce vanilla installation directory.
 
 See the [Deploy vanilla instance](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) topic for more information.
 
 ## Use the `list` command
 
-To return a list of the Upgrade Compatibility Tool available commands, run:
+To return a list of the [!DNL Upgrade Compatibility Tool] available commands, run:
 
 ```bash
 bin/uct list
@@ -273,7 +273,7 @@ There are some limitations when running the previous command:
 
 ## GraphQL schema compatibility verification
 
-The Upgrade Compatibility Tool also provides the option to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
+The [!DNL Upgrade Compatibility Tool] also provides the option to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -306,7 +306,7 @@ Available `--help` options for the `graphql:compare` command:
 
 See [Developer information](../upgrade-compatibility-tool/developer.md) for more information.
 
-You can run the Upgrade Compatibility Tool with a run configuration via the PhpStorm plugin. See the [Upgrade Compatibility Tool Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
+You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via the PhpStorm plugin. See the [[!DNL Upgrade Compatibility Tool] Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
 
 ## Troubleshooting
 

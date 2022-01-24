@@ -52,10 +52,17 @@ Performance is another top reason for upgrading. According to [HubSpot](https://
 The case for delaying or deferring platform upgrades often comes down to the immediate cost. However, the real cost of running an outdated version of any software is much larger and can have a lasting impact on a business.
 
 It may seem counterintuitive, but performing regular platform updates requires less overall effort than performing infrequent updates due to the amount of accumulated technical debt that results from delaying. We recently worked with a partner who has a retail merchant that used to conduct upgrades infrequently and inconsistently (annually or longer). By transforming how they approach upgrades and following an Adobe-recommended regular upgrade path over the course of 12 months, the partner was able to save the client four weeks' worth of cumulative development time, effort, and associated costs, all of which were redirected to initiatives that drive business growth.
-
-![](../assets/upgrade-guide/waiting-is-not-a-winning-strategy.jpg)
  
 When updates are performed regularly, changes are incremental and the corresponding upgrade effort reflects this. When platform updates are deferred for an extended period, they can become a much more involved process. Furthermore, the extensions you use from the [Marketplace](https://marketplace.magento.com/) and any other third-party integrations may also be impacted. Lastly, the time it takes to investigate, plan, and perform a delayed upgrade are all extended, which adds avoidable effort and costs.
+
+Some of the general factors that affect the level of effort to upgrade your project include, but are not limited to:
+
+| Technical complexity                                      | Planning and strategy                                        |
+|-----------------------------------------------------------|--------------------------------------------------------------|
+| Extent of customizations                                  | Clarity of requirements, wavering decisions, and scope creep |
+| Number of extensions                                      | Your upgrade frequency                                       |
+| Number of integrations with third-parties (OMS, ERP)      | Your testing strategy                                        |
+| Coding to best practices                                  |                                                              |
 
 Continued growth in the digital commerce space has applied increased pressure on businesses to evolve faster, more often, and in unpredictable ways. Failure to keep up and anticipate customer purchasing behavior has leveled the playing field for even the biggest, most established brands. You must be able to provide robust, personalized experiences across all touchpoints, with no lapses in performance and uptime. You must be able to innovate faster, without limits, to stay ahead of global competitors. By upgrading, you’re future proofing your business and setting yourself up to better service dynamic customer needs.
 
@@ -63,11 +70,11 @@ Continued growth in the digital commerce space has applied increased pressure on
 
 Adobe publishes a [release schedule](https://devdocs.magento.com/release/) annually to facilitate merchants’ planning process and recommends upgrading each patch release cycle. To remain PCI-compliant, merchants must be on the latest patch or security patch. The following timeline shows the major release and EOL events in 2022.
 
-![](../assets/upgrade-guide/2022-release-timeline.svg)
+![](../assets/upgrade-guide/2022-release-timeline.jpg)
  
 Important events to note include:
 
-- 2.3.x support ends after April ‘22
-- 2.4.0 to 2.4.3 (based on PHP 7.4) reaches end of quality support in November ’22, when PHP 7.4 reaches EOL
-- Based on these two events above, it is important to upgrade to version 2.4.4 or higher by November ‘22 
-- In line with the Adobe Commerce [lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html), versions 2.4.4 and 2.4.5 are supported until Nov ’24
+- 2.3.x line reaches End of Support (EOS) in September 2022
+- 2.4.0 to 2.4.3 (based on PHP 7.4) reaches EOS in November 2022, when PHP 7.4 reaches End of Life (EOL)
+- Based on these two EOS events, **it is important to upgrade to version 2.4.4 or higher by November 2022** 
+- In line with the Adobe Commerce [lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html), versions 2.4.4 and 2.4.5 will receive quality support and security patches until Nov 2024

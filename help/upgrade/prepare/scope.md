@@ -22,13 +22,13 @@ Adobe Commerce Marketplace’s new compatibility policy ensures that _all_ liste
 
 All custom modules should be checked against the target version you are looking to upgrade to. This is the most time- and resource-intensive process of an upgrade. When evaluating your custom modules, you must look for backward-incompatible changes and be aware of new practices, such as controller decomposition. You can learn more about this in the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Also, ensure that you're following [best practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) for module development.
 
-## Upgrade Compatibility Tool
+## [!DNL Upgrade Compatibility Tool]
 
-The Upgrade Compatibility Tool is a command-line tool that analyzes your instance for potential upgrade issues. It checks for issues between the current version you have installed and the version you are trying to upgrade to.
+The [!DNL Upgrade Compatibility Tool] is a command-line tool that analyzes your instance for potential upgrade issues. It checks for issues between the current version you have installed and the version you are trying to upgrade to.
 
 Using this tool reduces the effort required from your team to understand the scope and impact of an upgrade. It helps you avoid common code issues when upgrading and provides clear direction on how to resolve identified issues. It also helps prioritize the most critical issues necessary to ensure a successful upgrade, saving both time and costs when upgrading.
 
-See the following sections to get started with the Upgrade Compatibility Tool. See the Upgrade Compatibility Tool [guide](../upgrade-compatibility-tool/overview.md) for more technical details and advanced use cases.
+See the following sections to get started with the [!DNL Upgrade Compatibility Tool]. See the [!DNL Upgrade Compatibility Tool] [guide](../upgrade-compatibility-tool/overview.md) for more technical details and advanced use cases.
 
 ### Download the tool
 
@@ -72,7 +72,7 @@ Some more options to use with this command are:
 
 ### Analyze the Output
 
-The Upgrade Compatibility Tool exports a JSON file identifying the affected code or modules, severity, and a description of the problem for every issue it encounters. It also outputs a summary report with a complexity score, which allows your team to understand roughly what it takes to upgrade to the latest version. The lower the complexity score, the easier it is to perform the upgrade. 
+The [!DNL Upgrade Compatibility Tool] exports a JSON file identifying the affected code or modules, severity, and a description of the problem for every issue it encounters. It also outputs a summary report with a complexity score, which allows your team to understand roughly what it takes to upgrade to the latest version. The lower the complexity score, the easier it is to perform the upgrade. 
  
 The following output shows an example summary report:
 
@@ -105,4 +105,4 @@ We recommend saving the results from each upgrade project so that you can compar
 
 We also recommend that you run the tool regularly while working on the upgrade to have visibility into your progress. The number of issues should decrease as you fix them. This also helps your team decide on the best approach to distribute work.
 
-Future releases of the tool will incorporate PHP 8.1 compatibility tests and autofixes to help you fix issues as fast as possible. 
+The [!DNL Upgrade Compatibility Tool] continues to be improved upon and future releases will include features such as autofixes to help you fix issues as fast as possible. The latest improvements released in January 2022 include PHP 8.1 compatibility tests and HTML visualization capabilities that help you quickly identify areas that may require more effort to upgrade.

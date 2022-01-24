@@ -68,7 +68,7 @@ Assess the work to be done for upgrading:
 
 - Review the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) to understand the scope and impact of the new version.
 
-- Use the [Upgrade Compatibility Tool](../upgrade-compatibility-tool/overview.md) to identify potential problems that must be fixed in your custom code before attempting to upgrade to a newer version.
+- Use the [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) to identify potential problems that must be fixed in your custom code before attempting to upgrade to a newer version.
 
 - If you are using third-party extensions, validate their compatibility with the target version you are planning to upgrade to.
 

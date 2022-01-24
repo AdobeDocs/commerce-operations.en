@@ -24,7 +24,7 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
 - Patches {#patches}
   - [How patches work](patches/overview.md)
   - [Apply patches](patches/apply.md)
-- Upgrade Compatibility Tool {#upgrade-compatibility-tool}
+- [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
   - [Overview](upgrade-compatibility-tool/overview.md)
   - [Prerequisites](upgrade-compatibility-tool/prerequisites.md)
   - [Install](upgrade-compatibility-tool/install.md)
@@ -40,5 +40,5 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
   - [Maintenance mode options for upgrade](troubleshooting/maintenance-mode-options.md)
 - Resources {#resources}
   - [Recommended reading](resources/recommended-reading.md)
-  - [Recommended upgrade paths for 2022](resources/recommended-upgrade-paths-2022.md)
+  - [Modernizing your platform with Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
   - [Upgrade plan checklist](https://support.magento.com/hc/en-us/articles/360057968951)
