@@ -21,7 +21,7 @@ The following are items that you may want to include in a thorough analysis:
 
 - **Scope of target release**—Documentation on [Commerce DevDocs](https://devdocs.magento.com) and information from partner release webinars provide all the details you must know about your target upgrade.
 
-- **Upgrade Compatibility Tool results**—This tool makes any upgrade faster and easier by comparing your current code to the target version’s code and producing a report of all the issues that need to be addressed. See the [Upgrade Compatibility Tool](../upgrade-compatibility-tool/overview.md). Key details from the report include:
+- **[!DNL Upgrade Compatibility Tool] results**—This tool makes any upgrade faster and easier by comparing your current code to the target version’s code and producing a report of all the issues that need to be addressed. See the [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Key details from the report include:
 
   - Current installed version
   - Upgrade target version

@@ -1,11 +1,11 @@
 ---
-title: Upgrade Compatibility Tool Error Messages
-description: Learn more about error messages you encounter when using the Upgrade Compatibility Tool on your Adobe Commerce project.
+title: [!DNL Upgrade Compatibility Tool] Error Messages
+description: Learn more about error messages you encounter when using the [!DNL Upgrade Compatibility Tool] on your Adobe Commerce project.
 ---
 
-# Upgrade Compatibility Tool error messages
+# [!DNL Upgrade Compatibility Tool] error messages
 
-This error message reference provides information about errors that can occur while executing the Upgrade Compatibility Tool.
+This error message reference provides information about errors that can occur while executing the [!DNL Upgrade Compatibility Tool].
 
 Error messages are categorized by level (critical issues, errors, and warnings) and type (core code, custom code, and GraphQL schemas). Each type contains the following information:
 

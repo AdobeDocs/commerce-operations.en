@@ -24,11 +24,11 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
 - [Upgrade best practices](../prepare/best-practices.md)
 - [Downloadable 2.4.4 Upgrade Guide](../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf)
 
-## Upgrade Compatibility Tool
+## [!DNL Upgrade Compatibility Tool]
 
-- [Prepare for your next upgrade with the Adobe Commerce Upgrade Compatibility Tool](https://community.magento.com/t5/Magento-DevBlog/Prepare-for-Your-Next-Upgrade-with-the-Adobe-Commerce-Upgrade/ba-p/483372)
+- [Prepare for your next upgrade with the Adobe Commerce [!DNL Upgrade Compatibility Tool]](https://community.magento.com/t5/Magento-DevBlog/Prepare-for-Your-Next-Upgrade-with-the-Adobe-Commerce-Upgrade/ba-p/483372)
 - [Overview](../upgrade-compatibility-tool/overview.md)
-- [PHPStorm and the Upgrade Compatibility Tool](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html)
+- [PHPStorm and the [!DNL Upgrade Compatibility Tool]](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html)
 
 ## Security
 

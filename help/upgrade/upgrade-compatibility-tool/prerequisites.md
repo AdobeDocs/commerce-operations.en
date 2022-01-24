@@ -1,13 +1,13 @@
 ---
-title: Upgrade Compatibility Tool Prerequisites
-description: Verify that your system meets the requirements necessary to run the Upgrade Compatibility Tool for your Adobe Commerce project. 
+title: [!DNL Upgrade Compatibility Tool] Prerequisites
+description: Verify that your system meets the requirements necessary to run the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project. 
 ---
 
-# Upgrade Compatibility Tool prerequisites
+# [!DNL Upgrade Compatibility Tool] prerequisites
 
-Running the Upgrade Compatibility Tool helps you identify what you must do **before** upgrading your Adobe Commerce version.
+Running the [!DNL Upgrade Compatibility Tool] helps you identify what you must do **before** upgrading your Adobe Commerce version.
 
-The minimum requirements to run the Upgrade Compatibility Tool are:
+The minimum requirements to run the [!DNL Upgrade Compatibility Tool] are:
 
 | **Requirements** | **Constraints** |
 |----------------|-----------------|
@@ -18,6 +18,6 @@ The minimum requirements to run the Upgrade Compatibility Tool are:
 | Adobe Commerce Access keys | none |
 | Adobe Commerce (Open Source or enterprise) | none |
 
-You can run the Upgrade Compatibility Tool in any operating system. There is no requirement to run the Upgrade Compatibility Tool where your Adobe Commerce instance is located.
+You can run the [!DNL Upgrade Compatibility Tool] in any operating system. There is no requirement to run the [!DNL Upgrade Compatibility Tool] where your Adobe Commerce instance is located.
 
-It is necessary for the Upgrade Compatibility Tool to have access to the source code of the Adobe Commerce instance. For example, you can install it on one server and point it at your Adobe Commerce installation on another server. Refer to the [install](../upgrade-compatibility-tool/install.md) topic for more information.
+It is necessary for the [!DNL Upgrade Compatibility Tool] to have access to the source code of the Adobe Commerce instance. For example, you can install it on one server and point it at your Adobe Commerce installation on another server. Refer to the [install](../upgrade-compatibility-tool/install.md) topic for more information.
