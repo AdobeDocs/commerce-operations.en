@@ -11,7 +11,7 @@ A holistic integration approach for both storefront and backend systems are supp
 
 The Adobe Commerce GraphQL API provides comprehesnive storefront coverage that you can use to integrate with other storefronts, including:
 
-- Digital experience platforms (DXPs) like Adobe Exeprience Manaber and Bloomreach
+- Digital experience platforms (DXPs) like Adobe Experience Manager and Bloomreach
 - Content management systems (CMS) like Drupal and WordPress
 - Modern custom storefront application like Adobe Commerce, PWA Studio, and Vue Storefront
 
@@ -20,7 +20,7 @@ GraphQL provides an efficient, channel-specific response, no over-fetching of da
 The Adobe Commerce REST API provides comprehensive system configuration coverage and data management features, including product and catalog; cart, quote, and checkout; customers, account, and companies; and orders and returns. REST APIs support bulk operations, multiple authentication modes, and granular authorization, so REST APIs are often chosen to integrate with enterprise systems, including:
 
 - Enterprise resource planning (ERP) systems like SAP
-- Product information management (PIM) systems likeAkeneo
+- Product information management (PIM) systems like Akeneo
 - Customer relationship management (CRM) systems like Salesforce
 - Order management systems (OMS) like MOM, Manhattan, and SAP
 - Warehouse Management System (WMS) or third-party logistics (3PL) like Oracle, NetSuite, and SAP WM
