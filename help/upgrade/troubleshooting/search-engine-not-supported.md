@@ -51,7 +51,7 @@ Use the following resources to help guide you through this process:
 - Configure Elasticsearch to work with [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) or [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
 - [Configure Magento to use Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
 
-After you configure Elasticsearch and reindex, you are ready to upgrade to 2.4.
+After you configure the search engine and reindex, you are ready to upgrade to 2.4.
 
 ## If your search engine is `elasticsearch`
 
@@ -59,7 +59,7 @@ A value of `elasticsearch` indicates your down-level version of Adobe Commerce o
 
 You must perform the following tasks before upgrading to 2.4:
 
-1. Update to a supported version of Elasticsearch or OpenSearch. Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
+1. Update to a supported version of Elasticsearch. Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
    >[!NOTE]
    >

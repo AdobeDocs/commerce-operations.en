@@ -26,7 +26,11 @@ Ensure that you updated all system requirements and dependencies in your environ
 
 ## Verify a supported search engine is installed
 
-Adobe Commerce and Magento Open Source require Elasticsearch or OpenSearch to be installed in order to use the software. Before you upgrade from 2.3.x to 2.4, you must check whether you are using MySQL, Elasticsearch, OpenSearch, or a third-party extension as your catalog search engine in your 2.3.x instance. The result determines what you must do _before_ upgrading to 2.4.
+Adobe Commerce and Magento Open Source require Elasticsearch or OpenSearch to be installed in order to use the software.
+
+**If you are upgrading from 2.3.x to 2.4**, you must check whether you are using MySQL, Elasticsearch, or a third-party extension as your catalog search engine in your 2.3.x instance. The result determines what you must do _before_ upgrading to 2.4.
+
+**If you are upgrading patch releases within the 2.3.x or 2.4.x release lines**, if Elasticsearch 7.x is already installed, you can optionally [migrate to OpenSearch](./opensearch-migration.html).
 
 You can use the command line or the Admin to determine your catalog search engine:
 
@@ -42,7 +46,7 @@ As of 2.4, MySQL is no longer a supported catalog search engine. You must instal
 
 - [Install and configure Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html)
 - [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configure Elasticsearch to work with [nginx](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-config-nginx.html) or [Apache](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-config-apache.html)
+- Configure [nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html) or [Apache](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html) to work with your search engine
 - [Configure Commerce to use Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) and reindex
 
 Some third-party catalog search engines run on top of the Adobe Commerce search engine. Contact your vendor to determine whether you must update your extension.
