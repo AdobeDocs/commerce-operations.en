@@ -30,7 +30,7 @@ Adobe Commerce and Magento Open Source require Elasticsearch or OpenSearch to be
 
 **If you are upgrading from 2.3.x to 2.4**, you must check whether you are using MySQL, Elasticsearch, or a third-party extension as your catalog search engine in your 2.3.x instance. The result determines what you must do _before_ upgrading to 2.4.
 
-**If you are upgrading patch releases within the 2.3.x or 2.4.x release lines**, if Elasticsearch 7.x is already installed, you can optionally [migrate to OpenSearch](./opensearch-migration.html).
+**If you are upgrading patch releases within the 2.3.x or 2.4.x release lines**, if Elasticsearch 7.x is already installed, you can optionally [migrate to OpenSearch](opensearch-migration.html).
 
 You can use the command line or the Admin to determine your catalog search engine:
 
@@ -69,7 +69,7 @@ OpenSearch is an open source fork of Elasticsearch 7.10.2, following Elasticsear
 - 2.4.3-p2
 - 2.3.7-p3
 
-You can [migrate from Elasticsearch to OpenSearch](./opensearch-migration.html) only if you are upgrading to a version of Adobe Commerce or Magento Open Source listed above (or higher).
+You can [migrate from Elasticsearch to OpenSearch](opensearch-migration.html) only if you are upgrading to a version of Adobe Commerce or Magento Open Source listed above (or higher).
 
 OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) to check which version of JDK is installed.
 
