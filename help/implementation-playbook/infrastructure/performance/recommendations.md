@@ -17,7 +17,7 @@ DNS lookup is the process of finding which IP address that the domain name belon
 
 ### Content delivery network (CDN)
 
-Use a CDN to optimize asset downloading performance. Adobe Commerce uses Fastly. If have an on-premises implementaiton of Adobe Commerce, you should also consider adding a CDN layer.
+Use a CDN to optimize asset downloading performance. Adobe Commerce uses Fastly. If have an on-premises implementation of Adobe Commerce, you should also consider adding a CDN layer.
 
 ### Web latency
 
@@ -97,7 +97,7 @@ Performance testing before each production release is always recommend to get an
 
 >[!NOTE]
 >
-> Adobe Commerce on cloud infrastrucrure already applies all of the above infrastructure and architecture optimizations, except for the DNS lookup because it's out of scope.
+> Adobe Commerce on cloud infrastructure already applies all of the above infrastructure and architecture optimizations, except for the DNS lookup because it's out of scope.
 
 ### Search
 
@@ -105,11 +105,11 @@ Elasticsearch is required as of Adobe Commerce version 2.4, but it’s also a be
 
 ## Operating models
 
-Apart from the previoiusly mentioend common infrastructure optimization recommendations, there are also approaches to enhance the performance for specific business modes and scales. This document does not provide in-depth tuning instructions for all of them because each scenario is different, but we can provide a few high-level options for your reference.
+Apart from the previously mentioned common infrastructure optimization recommendations, there are also approaches to enhance the performance for specific business modes and scales. This document does not provide in-depth tuning instructions for all of them because each scenario is different, but we can provide a few high-level options for your reference.
 
 ### Headless architecture
 
-We have a seperate section dedicated to detailing what [headless](../../architecture/headless/adobe-commerce.md) is and different options. In summary, it separates the storefront layer from the platform itself. It is still the same backend, but Adobe Commerce no longer processes requests directly and instead only supports custom storefronts through the GraphQL API.
+We have a separate section dedicated to detailing what [headless](../../architecture/headless/adobe-commerce.md) is and different options. In summary, it separates the storefront layer from the platform itself. It is still the same backend, but Adobe Commerce no longer processes requests directly and instead only supports custom storefronts through the GraphQL API.
 
 ### Keep Adobe Commerce updated
 

@@ -15,7 +15,7 @@ The following diagram describes a monolithic approach that uses Adobe Commerce a
 
 ## Headless 
 
-The following diagram describes a headless approach that uses Adobe Commerce as the backend systenm integrated with a DXP/CMS/custom application as the storefront application:
+The following diagram describes a headless approach that uses Adobe Commerce as the backend system integrated with a DXP/CMS/custom application as the storefront application:
 
 ![Adobe Commerce headless diagram](../../assets/playbooks/integration-headless.svg)
 
