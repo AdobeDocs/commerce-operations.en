@@ -49,11 +49,11 @@ The following questions can serve as a starting point to see which information s
 
 - Where do you see future growth coming from in your business?
 
-- What role does digital commerce play in your business strategy? What are your primary objectives for setting up thisecommerceplatform?
+- What role does digital commerce play in your business strategy? What are your primary objectives for setting up this ecommerce platform?
 
 - Do you have any brands/companies that you take as a reference on how you grow your omnichannel business?
 
-- Which teams or individuals are driving theecommercestrategy? Describe the relevant positions.
+- Which teams or individuals are driving the ecommerce strategy? Describe the relevant positions.
 
 ## Current platform
 
@@ -97,7 +97,7 @@ The following questions can serve as a starting point to see which information s
 
 - Will it be a high-availability system architecture?
 
-- How manyAdobe Commerceadministrators will you have?
+- How many Adobe Commerce administrators will you have?
 
 - Expected catalog size (number of SKUs)?
 
@@ -133,7 +133,7 @@ The following questions can serve as a starting point to see which information s
 
 - Is this primarily a B2C or B2B site? Is there any B2B2B or B2B2C element?
 
-- Is there an existing design that is adapted,or will the platform be designed from scratch?
+- Is there an existing design that is adapted or will the platform be designed from scratch?
 
 - Is there a requirement for headless commerce (separate frontend and backend layers)?
 
@@ -143,9 +143,9 @@ The following questions can serve as a starting point to see which information s
 
 - Any specific browsers that should be tested (except for the standard browsers IE9+, Firefox, Chrome, Safari)?
 
-- What are the language(s) for eachfront end? Is the translated content available or is support needed?
+- What are the language(s) for each frontend? Is the translated content available or is support needed?
 
-- Are there multiple websites? If so,cancustomers use their credentials across all sites?
+- Are there multiple websites? If so, can customers use their credentials across all sites?
 
 - Is product data shared across all sites?
 
@@ -157,31 +157,31 @@ The following questions can serve as a starting point to see which information s
 
 ## Integrations
 
-- Which CMS system will be integrated withAdobe Commerce? (Examples: WordPress, Drupal, Concrete5)
+- Which CMS system will be integrated with Adobe Commerce? (Examples: WordPress, Drupal, Concrete5)
 
 Are there existing APIs that can be used?
 
 - Has system-error handling been designed and developed for this third-party-system integration?
 
-- Which ERP system will be integrated withAdobe Commerce? (Examples: SAP, MS Dynamics NAV)
+- Which ERP system will be integrated with Adobe Commerce? (Examples: SAP, MS Dynamics NAV)
 
-- Which shipping carrier system will be integrated withAdobe Commerce?
+- Which shipping carrier system will be integrated with Adobe Commerce?
 
-- Which tax-software system will be integrated withAdobe Commerce? (Example:Taxware)
+- Which tax-software system will be integrated with Adobe Commerce? (Example: Taxware)
 
-- From which system will product data be imported intoAdobe Commerce?
+- From which system will product data be imported into Adobe Commerce?
 
 - Frequency of imported product data loads?
 
-- Into which system willAdobe Commerceexport product data?
+- Into which system will Adobe Commerce export product data?
 
 - Frequency of exported product data loads?
 
-- From which system will order data be imported intoAdobe Commerce?
+- From which system will order data be imported into Adobe Commerce?
 
 - Frequency of imported order data loads?
 
-- Into which system willAdobe Commerceexport order data?
+- Into which system will Adobe Commerce export order data?
 
 - Frequency of exported order data loads?
 
@@ -197,11 +197,11 @@ Are there existing APIs that can be used?
 
 - Which payment gateway do you want your site to have?
 
-- Which order management system will be integrated withAdobe Commerce? (Examples: Microsoft Dynamics, SAP, Retail Pro)
+- Which order management system will be integrated with Adobe Commerce? (Examples: Microsoft Dynamics, SAP, Retail Pro)
 
-- Which product inventory management system will be integrated withAdobe Commerce? (Examples: Akeneo, InRiver, Bluestone)
+- Which product inventory management system will be integrated with Adobe Commerce? (Examples: Akeneo, InRiver, Bluestone)
 
-- Which customer relationship management system will be integrated withAdobe Commerce? (Examples: Hubspot, Salesforce, Klaviyo)
+- Which customer relationship management system will be integrated with Adobe Commerce? (Examples: Hubspot, Salesforce, Klaviyo)
 
 ## Adobe Commerce-specific features
 
@@ -225,7 +225,7 @@ Are there existing APIs that can be used?
 
 - Will you require a content staging website?
 
-- Should customers be allowed to create a website account
+- Should customers be allowed to create a website account?
 
 - Will you use unique discount coupons for promotions?
 
@@ -243,7 +243,7 @@ Are there existing APIs that can be used?
 
 - Allow a customer to view past orders and select items to be exchanged?
 
-- Will you allow a customer to initiate the cancelling of an order from the website?
+- Will you allow a customer to initiate the canceling of an order from the website?
 
 - Will you allow a customer to initiate the exchange of items from the website?
 
@@ -253,7 +253,7 @@ Are there existing APIs that can be used?
 
 - Will Adobe Commerce issue a return RMA?
 
-- Capture refund information inAdobe Commerce?
+- Capture refund information in Adobe Commerce?
 
 - Will you require online order tracking for a registered customer?
 
@@ -279,7 +279,7 @@ Are there existing APIs that can be used?
 
 - Reward points
 
-- "Bill Me Later”– more commonly knownas“Buy Now, Pay Later”as it's immediately billed but not paid yet
+- "Bill Me Later” – more commonly known as “Buy Now, Pay Later” as it's immediately billed but not paid yet
 
 - Will there be different product pricing on different websites?
 
@@ -301,9 +301,9 @@ Are there existing APIs that can be used?
 
 - Shopping cart: Products in carts, abandoned arts
 
-- Products: Bestsellers, products ordered, most viewed, lowstock, downloads
+- Products: Bestsellers, products ordered, most viewed, low stock, downloads
 
-- Customers: Newaccounts,customersby orders total,customersby number of orders,customer segments,customer reviews
+- Customers: New accounts, customers by orders total, customers by number of orders, customer segments, customer reviews
 
 - Products reviews
 
@@ -317,7 +317,7 @@ Are there existing APIs that can be used?
 
 - Will you need Adobe Commerce to generate reports based on sales data?
 
-- Will you need custom Adobe Commercere ports?
+- Will you need custom Adobe Commerce reports?
 
 - What is your current SEO strategy?
 
@@ -329,7 +329,7 @@ Are there existing APIs that can be used?
 
 - Allow partial shipping?
 
-- Should shipment tracking information be stored inAdobe Commerce?
+- Should shipment tracking information be stored in Adobe Commerce?
 
 - Will you require tax-calculation rules for your domestic regions?
 

@@ -1,6 +1,6 @@
 ---
 title: Cloud Infrastructure Overview
-description: Learn about Adobe Commerce on cloud infrastucture.
+description: Learn about Adobe Commerce on cloud infrastructure.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
 ---
 # Overview

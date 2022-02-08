@@ -5,7 +5,7 @@ exl-id: eac9d5b1-4917-4d2a-a8af-7f85c825fa0d
 ---
 # Headless Adobe Commerce Architecture
 
-The benefit of Adobe Commerce’s architecture is that it’s not an all-or-nothing proposition and a merchant can find the right mix of solutions for their business. They can build a PWA Studio-powered PWA for their primary site experience or use Adobe Experience Manaager as the layer in complex customer journeys, all while building out a custom frontend to experiment with new touchpoints. No other platform can match the time to market benefits and the flexibility that Adobe Commerce offers with its headless architecture.
+The benefit of Adobe Commerce’s architecture is that it’s not an all-or-nothing proposition and a merchant can find the right mix of solutions for their business. They can build a PWA Studio-powered PWA for their primary site experience or use Adobe Experience Manager as the layer in complex customer journeys, all while building out a custom frontend to experiment with new touchpoints. No other platform can match the time to market benefits and the flexibility that Adobe Commerce offers with its headless architecture.
 
 ![Diagram showing a headless Adobe Commerce storefront architecture](../../../assets/playbooks/headless-storefront-architecture.svg)
 
@@ -25,7 +25,7 @@ The first is a progressive web application built with PWA Studio. Part of this i
 
 Most merchants understand the direction that the industry is heading toward with regards to PWAs and many potential blockers are being removed rapidly.
 
-Week over week, the number of partners building expertise in PWA Studio grows and we have an accelerating number of customer launches. The most recent update to PWA Studio included extensibility that will help make significant progress in compatibility with ADobe Commerce Marketplace extensions.
+Week over week, the number of partners building expertise in PWA Studio grows and we have an accelerating number of customer launches. The most recent update to PWA Studio included extensibility that will help make significant progress in compatibility with Adobe Commerce Marketplace extensions.
 
 Many merchants may feel they aren’t ready for headless and PWAs because they require heavy reliance on developers. One of the huge benefits of having both the commerce application and the head developed by Adobe Commerce is that it helps ensure compatibility across commerce capabilities.
 
@@ -33,9 +33,9 @@ In order to make PWAs more accessible and easier to manage for our merchants, we
 
 ## Adobe Experience Manager
 
-A powerhouse combination for your content and digital asset management needs,Adobe Exeprience Manager helps merchants get personalized, content-led experiences into market faster, combining digital asset management with the power of machine learning, Adobe Sensei-powered content, and customer journey management.
+A powerhouse combination for your content and digital asset management needs, Adobe Experience Manager helps merchants get personalized, content-led experiences into market faster, combining digital asset management with the power of machine learning, Adobe Sensei-powered content, and customer journey management.
 
-Adobe Commerce plus Adobe Exeprience Manager is a powerful story in that the commerce engine allows businesses to enable commerce though customer interfaces that are powered by Adobe Experience Manager.
+Adobe Commerce plus Adobe Experience Manager is a powerful story in that the commerce engine allows businesses to enable commerce though customer interfaces that are powered by Adobe Experience Manager.
 
 ## Custom Heads
 

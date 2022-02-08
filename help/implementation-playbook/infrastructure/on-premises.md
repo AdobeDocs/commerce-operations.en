@@ -1,6 +1,6 @@
 ---
 title: On-premises Infrastructure
-description: Learn about Adobe Commerce on-premises infrastucture and third-party cloud services.
+description: Learn about Adobe Commerce on-premises infrastructure and third-party cloud services.
 exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
 ---
 # Adobe Commerce on-premises infrastructure
@@ -43,7 +43,7 @@ In addition to providing a supporting technology platform for the enablement of 
 
 ## Cloud migration
 
-The value proposition for migrating Adobe Commerce to AWS is further enhanced by the availability of several services that provide operational insight and agility. What we mean is operational insight into the platform from not only a technical perspective (for exmaple, requests per hour) but also a business operational perspective (for example, orders per hour), particularly when the two sets of data can be married. This provides a near-real-time look into campaign performance, platform operations costs, and a near infinite number of other indicators.
+The value proposition for migrating Adobe Commerce to AWS is further enhanced by the availability of several services that provide operational insight and agility. What we mean is operational insight into the platform from not only a technical perspective (for example, requests per hour) but also a business operational perspective (for example, orders per hour), particularly when the two sets of data can be married. This provides a near-real-time look into campaign performance, platform operations costs, and a near infinite number of other indicators.
 
 Adobe Commerce setup to AWS can replace specific application dependencies with fully managed alternatives available in the cloud. For example, rather than directly hosting a relational database on EC2 instances, the database for many applications can be easily replaced by Amazon Relational Database Service (AmazonRDS). The benefit to this strategy is that the operating responsibility of undifferentiated components can be offloaded to AWS without requiring significant changes to the core application.
 
