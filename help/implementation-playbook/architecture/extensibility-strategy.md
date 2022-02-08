@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Extensibility Strategy
-description: Learn how Adobe Commerce's exttensibility model empowers you to customize your implementation.
+description: Learn how Adobe Commerce's extensibility model empowers you to customize your implementation.
 exl-id: fac4630d-8a41-40dc-899a-01eabceaa61e
 ---
 # Extensibility strategy

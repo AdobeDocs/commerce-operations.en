@@ -9,7 +9,7 @@ The ability to integrate your platform is “non-negotiable.” Companies want t
 
 A holistic integration approach for both storefront and backend systems are supported by performant GraphQL APIs, comprehensive REST APIs, and batch-file import between Adobe Commerce and other systems or services.
 
-The Adobe Commerce GraphQL API provides comprehesnive storefront coverage that you can use to integrate with other storefronts, including:
+The Adobe Commerce GraphQL API provides comprehensive storefront coverage that you can use to integrate with other storefronts, including:
 
 - Digital experience platforms (DXPs) like Adobe Experience Manager and Bloomreach
 - Content management systems (CMS) like Drupal and WordPress
