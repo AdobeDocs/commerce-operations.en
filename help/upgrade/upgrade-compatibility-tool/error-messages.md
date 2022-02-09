@@ -50,11 +50,9 @@ Critical errors are raised when the custom code is referencing entities that are
 | 1514 | Using non-existent Adobe Commerce property | Update code to use a class marked as `@api`. |
 | 1515 | Overriding non-existent Adobe Commerce property | Update code to use a class marked as `@api`. |
 | 1516 | Assignation of non-existent Adobe Commerce property | Update code to use a class marked as `@api`. Update the property access level to private if it can be used within a single class only. |
-| 5001 | Call-time pass-by-reference calls are prohibited | Passing by reference is not supported after PHP 5.6. |
 | 5002 | The opening PHP tag must be the first content in the file | Ensure there is no content in the file before the PHP opening tag. |
 | 5003 | Function has been deprecated | Use a replacement suggested in the error message. If the message does not suggest a replacement, a close review is needed to select an alternative function or implementation. |
 | 5005 | PHP syntax error | The code must be updated to comply with the PHP syntax standards. |
-| 5008 | Possible Magento 2 design violation. Detected a typical Magento 1.x construction | The code requires review and refactoring. Magento 1 constructions may no longer be supported by Magento 2 framework. |
 | 5072 | Possible Magento 2 design violation. Detected a typical Magento 1.x construction | Update construction to Magento 2 standards. |
 | 5076 | Cannot use in namespace as it is reserved since PHP 7 | Replace the reserved word in the namespace with a non-reserved keyword. |
 | 5077 | Cannot use as class name as it is reserved since PHP 7 | Replace the reserved class name with a non-reserved name. |
@@ -133,10 +131,7 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 | 5024 | Obsolete menu structure detected in line | Check app/code/Magento/Backend/etc/menu.xsd. |
 | 5025 | Obsolete system configuration structure detected in file | Check app/code/Magento/Config/etc/system_file.xsd. |
 | 5026 | Do not use `"text/javascript"` type attribute | Use only public members. |
-| 5027 | Access to members and methods of Block class through $this is obsolete in phtml templates | Use only `$block` instead of `$this`. |
 | 5028 | Access to protected and private members of `Block` class is obsolete in phtml templates | Use only public members. |
-| 5029 | Do not use `"jquery/ui"` library in templates | Use needed jquery ui widget instead. |
-| 5030 | Do not initialize JS component in PHP | initialize JS component in template. |
 | 5031 | Contains obsolete method | Use `getConnection()` method instead. |
 | 5032 | `loadLayout` method is deprecated | Use `\Magento\Framework\View\Layout\Builder::build` instead. |
 | 5033 | `renderLayout` method is deprecated | Use `\Magento\Framework\Controller\ResultInterface::renderResult` instead. |
@@ -186,7 +181,6 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 | 5081 | The use of helpers in templates is discouraged | Use ViewModel instead. |
 | 5082 | The use of $this in templates is deprecated | Use $block instead. |
 | 5083 | Constants are not allowed as the first argument of translation function | Use string literal instead. |
-| 5084 | Do not initialize JS component in php | Initialize JS component in a template. |
 | 5085 | The use of certain functions is discouraged | Use the alternative function advised on the message instead. |
 | 5087 | PHP cross-version compatibility issue | Follow the suggestions from the message and check the [migration guide](https://www.php.net/manual/en/migration81.php). |
 | 5088 | Optional parameters found after required ones | Move required parameters after optional ones. |
