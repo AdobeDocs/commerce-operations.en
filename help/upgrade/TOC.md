@@ -15,6 +15,7 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
   - [Best practices](prepare/best-practices.md)
   - [Review platform changes](prepare/platform-changes.md)
   - [Complete upgrade prerequisites](prepare/prerequisites.md)
+  - [Migrate from Elasticsearch to OpenSearch](prepare/opensearch-migration.md)
   - [Understand upgrade scope](prepare/scope.md)
 - Implementation {#implementation}
   - [Perform an upgrade](implementation/perform-upgrade.md)
