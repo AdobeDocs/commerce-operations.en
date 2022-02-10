@@ -59,7 +59,7 @@ A value of `elasticsearch` indicates your down-level version of Adobe Commerce o
 
 You must perform the following tasks before upgrading to 2.4:
 
-1. Update to a supported version of Elasticsearch. Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
+1. Update to a version of Elasticsearch that is supported by Commerce. Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
    >[!NOTE]
    >
