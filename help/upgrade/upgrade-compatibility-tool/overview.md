@@ -15,7 +15,7 @@ The [!DNL Upgrade Compatibility Tool] allows you to identify when core code chan
 
 It is distributed as a Composer package with every release of an Adobe Commerce version. See the [Developer](../upgrade-compatibility-tool/developer.md) topic for more information.
 
-Refer to the [Install](../upgrade-compatibility-tool/install.md) for the first steps with the [!DNL Upgrade Compatibility Tool].
+Refer to the [Install](../upgrade-compatibility-tool/install.md) topic for the first steps with the [!DNL Upgrade Compatibility Tool].
 
 ## Help improve the [!DNL Upgrade Compatibility Tool]
 
