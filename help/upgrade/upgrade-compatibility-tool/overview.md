@@ -21,10 +21,14 @@ Refer to the [Install](../upgrade-compatibility-tool/install.md) for the first s
 
 To connect with the [!DNL Upgrade Compatibility Tool] team, contact us on the Engineering Slack channel [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F). We want to hear your feedback, issues, and suggestions to help us improve the tool.
 
-The Upgrade Compatibility Tool uses rules defined within our [Coding Standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html), to ensure your project is following Adobe Commerce best practices, and at the same time allows you to improve and extend the Upgrade Compatibility Tool compatibility analysis by contributing to this project. Check the [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  page for more information.
+The [!DNL Upgrade Compatibility Tool] uses rules defined within our [Coding Standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) to ensure that your project is following Adobe Commerce best practices and to help you improve and extend the [!DNL Upgrade Compatibility Tool].
+
+Refer to the [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  topic for more information on contributing to this project.
 
 ## Resources
-We have developed other resources to help you understand Adobe Commerce upgrades, these are links to key resources:
-- [Upgrade guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf)
+
+We have developed the following resources to help you understand Adobe Commerce upgrades:
+
+- [Upgrade guide](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
 - [Upcoming releases](https://devdocs.magento.com/release/)
 - [Community Resources](https://devdocs.magento.com/community/resources/resources.html) page for more information.
