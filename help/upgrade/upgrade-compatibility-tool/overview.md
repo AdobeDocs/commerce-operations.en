@@ -17,6 +17,35 @@ It is distributed as a Composer package with every release of an Adobe Commerce 
 
 Refer to the [Install](../upgrade-compatibility-tool/install.md) topic for the first steps with the [!DNL Upgrade Compatibility Tool].
 
+## Workflow
+
+The following diagram shows the expected workflow when running the [!DNL Upgrade Compatibility Tool]:
+
+![[!DNL Upgrade Compatibility Tool] Diagram](../../assets/upgrade-guide/mvp-diagram-v3.png)
+
+## The [!DNL Upgrade Compatibility Tool] use case
+
+The following use case describes the typical process for an engineer to upgrade an Adobe Commerce instance:
+
+1. Download the [!DNL Upgrade Compatibility Tool] package from the [Adobe Commerce repository](https://repo.magento.com/). See the [Download the [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) topic for more information.
+2. Execute the tool during the [beta](https://devdocs.magento.com/release/beta-program.html) phase of the newest [Adobe Commerce release](https://devdocs.magento.com/release/). 
+3. The main command to use is upgrade:check. It analyzes your instance and checks for
+errors, warnings, and critical issues in your instance. To optimize results, use the option --ignore-current-version-compatibility-issues, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It will only provide errors against the version you are trying to upgrade to. You can also use the --min-issue-level option. This setting allows you to set the minimum issue level, to help prioritize only the most important issues with your upgrade. If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option
+as well. See the [Run the tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en) topic for more details.
+4. Generate a vanilla instance for the specific version of Adobe Commerce that is currently installed. See the [Contributor guide](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) for more information on using the `instance` command to generate a vanilla installation.
+5. The [!DNL Upgrade Compatibility Tool] Identifies customized broken areas, example: CustomInventory and PersonalizedCatalog modules. A detailed report will be exported in different formats (JSON, HTML).
+6. With this information, the Software Engineer is able to understand the complexity and estimate the effort of the upgrade. This information will be shared witth stakeholders.
+7. A budget and timeline will be defined for the upgrade.
+8. Software Engineers can then work on the required code modifications to fix the broken modules.
+9. The [!DNL Upgrade Compatibility Tool] can be executed to track upgrade progress.
+10. Everything checks out and engineering can now push the code to a staging environment where regression tests confirm that all tests are green, which allows them to release the latest Adobe Commerce version to production the same day that the Adobe Commerce pre-release is released.
+
+   ![[!DNL Upgrade Compatibility Tool] audience](../../assets/upgrade-guide/audience-uct-v3.png)
+
+>[!NOTE]
+>
+>A vanilla instance is a clean installation of a specified version tag or branch for a specific release version.
+
 ## Help improve the [!DNL Upgrade Compatibility Tool]
 
 To connect with the [!DNL Upgrade Compatibility Tool] team, contact us on the Engineering Slack channel [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F). We want to hear your feedback, issues, and suggestions to help us improve the tool.
