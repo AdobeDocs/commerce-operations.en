@@ -5,10 +5,6 @@ description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] on 
 
 # Run the [!DNL Upgrade Compatibility Tool]
 
-The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
-
-The [!DNL Upgrade Compatibility Tool] identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
-
 ## Use the `upgrade:check` command
 
 The `upgrade:check` command is the main command to execute the tool:
@@ -308,7 +304,45 @@ See [Developer information](../upgrade-compatibility-tool/developer.md) for more
 
 You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via the PhpStorm plugin. See the [[!DNL Upgrade Compatibility Tool] Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
 
+## Recommendations
+
+### Optimize your results
+
+By default the [!DNL Upgrade Compatibility Tool] gives all issues identified on your project, you can optimize the results to focus on those issues that you must fix to complete the upgrade by:
+- Using the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It will only provide errors against the version you are trying to upgrade to. 
+- Using the `--min-issue-level` option, this setting allows you to set the minimum issue level, to help prioritize only the most important issues with your upgrade. If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well.
+- Runing the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
+
+### Follow Adobe Commerce Best Practices
+
+- Avoid having two modules with the same name. 
+- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
+
 ## Troubleshooting
+
+### Segmentation fault error
+
+When two modules have the same name the [!DNL Upgrade Compatibility Tool] will show a segmentation fault error.
+
+To avoid this error it is recommended to run the `bin` command with the added option `-m`:
+
+```bash
+bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/<module-name>
+```
+
+>[!NOTE]
+>
+>The `<dir>` value is the directory where your Adobe Commerce instance is located.
+
+The `-m` option allows the [!DNL Upgrade Compatibility Tool] to analyze each specific module independently to avoid encountering two modules with the same name in your Adobe Commerce instance.
+
+This command option also allows the [!DNL Upgrade Compatibility Tool] to analyze a folder containing several modules:
+
+```bash
+bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/
+```
+
+This recommendation also helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
 
 ### Empty output
 
