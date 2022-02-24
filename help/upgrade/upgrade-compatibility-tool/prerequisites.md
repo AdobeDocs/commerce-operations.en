@@ -1,5 +1,5 @@
 ---
-title: [!DNL Upgrade Compatibility Tool] Prerequisites
+title: "[!DNL Upgrade Compatibility Tool] Prerequisites"
 description: Verify that your system meets the requirements necessary to run the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project. 
 ---
 
