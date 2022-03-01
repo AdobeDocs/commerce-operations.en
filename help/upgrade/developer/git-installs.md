@@ -9,15 +9,7 @@ This topic discusses how a contributing developer can update Adobe Commerce or M
 
 To upgrade if you are a contributing developer:
 
-1. Log in to your server.
-
-1. Switch to the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-
-1. Change to the directory where you cloned the application. For example,
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}}
 
 1. Save any changes you made to the `composer.json` file because the next steps  overwrite it.
 
