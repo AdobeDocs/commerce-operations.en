@@ -1,0 +1,5 @@
+## Commerce only
+
+>[!NOTE]
+>
+>The [!DNL Upgrade Compatibility Tool] is available for Adobe Commerce instances only.
