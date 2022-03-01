@@ -1,6 +1,6 @@
 # Snippets
 
-## Commerce only
+## Commerce only {#commerce-only}
 
 >[!NOTE]
 >
