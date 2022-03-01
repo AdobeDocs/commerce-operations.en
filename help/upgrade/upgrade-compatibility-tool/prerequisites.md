@@ -18,7 +18,7 @@ The minimum requirements to run the [!DNL Upgrade Compatibility Tool] are:
 | Node.js | [Node.js](https://nodejs.org/) (`^12.22.0`, `^14.17.0`, or `>=16.0.0`) |
 | Memory limitations | At least 2GB RAM |
 | Adobe Commerce Access keys | none |
-| Adobe Commerce (Open Source or enterprise) | none |
+| Adobe Commerce | none |
 
 You can run the [!DNL Upgrade Compatibility Tool] in any operating system. There is no requirement to run the [!DNL Upgrade Compatibility Tool] where your Adobe Commerce instance is located.
 
