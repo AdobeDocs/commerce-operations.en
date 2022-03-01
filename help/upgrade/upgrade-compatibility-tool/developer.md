@@ -5,6 +5,8 @@ description: Customize the [!DNL Upgrade Compatibility Tool] using the API index
 
 # [!DNL Upgrade Compatibility Tool] developer information
 
+{{commerce-only}}
+
 This topic contains information for developers who work closely with the Adobe Commerce code and want to learn detailed information about the [!DNL Upgrade Compatibility Tool]. You can use this knowledge to customize the tool's components.
 
 ## Adobe Commerce API index integration
