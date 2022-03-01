@@ -1,4 +1,4 @@
-## Commerce only
+# Commerce only
 
 >[!NOTE]
 >
