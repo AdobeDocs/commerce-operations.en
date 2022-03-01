@@ -1,4 +1,4 @@
-# Dummy
+# Snippets
 
 ## Commerce only {#commerce-only}
 
