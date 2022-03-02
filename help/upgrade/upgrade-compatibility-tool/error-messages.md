@@ -5,6 +5,8 @@ description: Learn more about error messages you encounter when using the [!DNL 
 
 # [!DNL Upgrade Compatibility Tool] error messages
 
+{{commerce-only}}
+
 This error message reference provides information about errors that can occur while executing the [!DNL Upgrade Compatibility Tool].
 
 Error messages are categorized by level (critical issues, errors, and warnings) and type (core code, custom code, and GraphQL schemas). Each type contains the following information:

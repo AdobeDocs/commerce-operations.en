@@ -5,6 +5,8 @@ description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] on 
 
 # Run the [!DNL Upgrade Compatibility Tool]
 
+{{commerce-only}}
+
 The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
 
 The [!DNL Upgrade Compatibility Tool] identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
