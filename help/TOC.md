@@ -1,5 +1,5 @@
 ---
-user-guide-title: Adobe Commerce Operational Guide
+user-guide-title: Operational Guides
 user-guide-description: Learn about operational aspects of maintaining your Adobe Commerce or Magento Open Source application.
 ---
 

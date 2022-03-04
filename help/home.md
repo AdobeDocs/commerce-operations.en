@@ -1,7 +1,7 @@
 ---
 keywords: Adobe Commerce;home;popular topics
-title: Adobe Commerce operational guides
-description: Browse Adobe Commerce operational product documentation.
+title: Home
+description: Browse an index of Adobe Commerce operational product documentation.
 ---
 
 # Adobe Commerce Operational Guides
