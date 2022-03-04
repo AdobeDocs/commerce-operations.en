@@ -14,8 +14,8 @@ This section includes recent changes that we think you would like to know about,
 
 | Description                                                                                                                        | Type         |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Added [information](upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool | Major update |
-| Removed outdated Upgrade Compatibility Tool [error codes](upgrade/upgrade-compatibility-tool/error-messages.md)                    | Technical    |
+| Added [information](upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool.| Major update |
+| Removed outdated Upgrade Compatibility Tool [error codes](upgrade/upgrade-compatibility-tool/error-messages.md).                   | Technical    |
 
 ## Guides
 
