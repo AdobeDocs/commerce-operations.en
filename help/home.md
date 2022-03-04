@@ -31,7 +31,7 @@ This section includes recent changes that we think you would like to know about,
   </td>
   <td valign="top">
     <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
-      <img alt="Installation" src="assets/icons/servers.svg" width="40" height="40"/><
+      <img alt="Installation" src="assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>Installation</strong></a>
