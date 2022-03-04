@@ -6,5 +6,5 @@ user-guide-description: Learn about operational aspects of maintaining your Adob
 # Adobe Commerce Operational Guides {#operational-guides}
 
 - [Home](home.md)
-- [Upgrade](upgrade/overview.md)
+- [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=en)
 - [Installation](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html)
