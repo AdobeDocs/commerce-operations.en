@@ -1,5 +1,5 @@
 ---
-title: Cloud Infrasrtructure Security
+title: Cloud Infrastructure Security
 description: Learn about how we keep Adobe Commerce on cloud infrastructure secure.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 ---

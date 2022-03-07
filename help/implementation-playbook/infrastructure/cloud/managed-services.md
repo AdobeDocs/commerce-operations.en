@@ -1,11 +1,11 @@
 ---
 title: Managed Services
-description: Review the responsibilities of Adobe Managed Services, customers, and cloud service providers for your Adobe Commerce on cloud infrastructure implementaiton.
+description: Review the responsibilities of Adobe Managed Services, customers, and cloud service providers for your Adobe Commerce on cloud infrastructure implementation.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
 ---
 # Managed services
 
-Adobe Commerce on cloud infrastructure manged services are secure by default.
+Adobe Commerce on cloud infrastructure managed services are secure by default.
 
 ![Diagram showing Adobe Commerce managed services](../../../assets/playbooks/managed-services.svg)
 
@@ -15,7 +15,7 @@ Adobe Commerce Pro plans rely on a shared responsibility security model. In this
 
 ![Diagram showing Adobe Commerce shared responsibility model](../../../assets/playbooks/shared-responsibility.svg)
 
-### Adobe Manged Services responsibilities
+### Adobe Managed Services responsibilities
 
 Adobe Managed Services is responsible for the security and availability of the Adobe Commerce Pro cloud environment, the core Adobe Commerce Pro application code, and internal commerce systems. This includes, but is not limited to:
 

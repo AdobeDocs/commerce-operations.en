@@ -1,6 +1,6 @@
 ---
 title: Knowledge is Power
-description: Learn why it's so important that everyone in your organizationinvests in your Adobe Commerce implementation.
+description: Learn why it's so important that everyone in your organization invests in your Adobe Commerce implementation.
 exl-id: a3929586-5ad2-4b30-8bc4-84da8f8b9eb5
 ---
 # Knowledge is power

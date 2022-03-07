@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Microservices
-description: Be able to differentiate between healdess and microservices as it pertains to Adobe Commerce.
+description: Be able to differentiate between headless and microservices as it pertains to Adobe Commerce.
 exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
 ---
 # Headless and microservices
@@ -9,7 +9,7 @@ It is important not to confuse headless with microservices. A lot of the time, w
 
 A microservices architecture is a term used to describe the practice of breaking up an application into a collection of smaller, loosely coupled services. Microservices enable individual backend services to be:
 
-- **Isolated from one another**—For exmaple, the pricing service has no dependency on the catalog service.
+- **Isolated from one another**—For example, the pricing service has no dependency on the catalog service.
 
 - **Deployed a la carte**—Customers deploy only the parts of the application that they need.
 
