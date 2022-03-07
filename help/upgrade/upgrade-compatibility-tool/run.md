@@ -71,7 +71,7 @@ Available `--help` options for the `upgrade:check` command:
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Path of the file where the output will be exported in json format.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Path of the file where the output will be exported in HTML format.
 - `--min-issue-level`: Minimum issue level to show in report. Default is [WARNING].
-- `--ignore-current-version-compatibility-issues`: Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report.
+- `-i, --ignore-current-version-compatibility-issues`: Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report.
 - `--context=CONTEXT`: Execution context. This option is for integration purposes and does not affect the execution result.
 - `-h, --help`: Display help for that specific command. If no command is provided, `list` command is the default result.
 - `-q, --quiet`: Do not output any messages while executing the command.
