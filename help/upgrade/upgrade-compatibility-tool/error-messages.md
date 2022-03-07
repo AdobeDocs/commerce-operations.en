@@ -1,9 +1,11 @@
 ---
-title: [!DNL Upgrade Compatibility Tool] Error Messages
+title: "[!DNL Upgrade Compatibility Tool] Error Messages"
 description: Learn more about error messages you encounter when using the [!DNL Upgrade Compatibility Tool] on your Adobe Commerce project.
 ---
 
 # [!DNL Upgrade Compatibility Tool] error messages
+
+{{commerce-only}}
 
 This error message reference provides information about errors that can occur while executing the [!DNL Upgrade Compatibility Tool].
 

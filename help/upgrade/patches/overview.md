@@ -85,8 +85,8 @@ index c8a6fef58d31..7d01c195791e 100644
 You can apply patches using any of the following methods:
 
 -  [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html)
--  [Command line](../patches/apply.md#command-line)
--  [Composer](../patches/apply.md#composer)
+-  [Command line](/help/upgrade/patches/apply.md#command-line)
+-  [Composer](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
