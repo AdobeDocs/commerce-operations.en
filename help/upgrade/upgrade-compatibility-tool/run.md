@@ -273,6 +273,20 @@ There are some limitations when running the previous command:
 - Provide the tag version without any quotation marks (neither single nor double): ~~'2.4.1-develop'~~.
 - You should NOT provide older versions than the one you have currently installed, nor older than 2.3, which is the oldest one supported at the moment.
 
+### Use the `refactor` command
+
+The [!DNL Upgrade Compatibility Tool] has the ability to automatically fix a reduced set of issues:
+
+- Functions that were allowed to be used without passing an argument, but with such usage now deprecated.
+- Usage of `$this` in Magento templates.
+- Usage of PHP keyword `final` in private methods.
+
+Run:
+
+```bash
+bin/uct refactor <dir>
+```
+
 ## GraphQL schema compatibility verification
 
 The [!DNL Upgrade Compatibility Tool] also provides the option to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
