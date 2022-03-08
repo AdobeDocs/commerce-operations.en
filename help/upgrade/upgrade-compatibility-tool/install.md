@@ -38,12 +38,6 @@ The following use case describes the typical process for an Adobe Commerce partn
 
 See [prerequisites](../upgrade-compatibility-tool/prerequisites.md) for more information.
 
->[!NOTE]
->
->You can run the [!DNL Upgrade Compatibility Tool] in any operating system. There is no requirement to run the [!DNL Upgrade Compatibility Tool] where your Adobe Commerce instance is located. It is necessary for the [!DNL Upgrade Compatibility Tool] to have access to the source code of the Adobe Commerce instance. For example, you can install the tool on one server and point it at your Adobe Commerce installation on another server.
-
-If you are running the [!DNL Upgrade Compatibility Tool] against an Adobe Commerce instance with large modules and files, the tool might require a high amount of RAM, at least 2GB RAM.
-
 ### Recommended actions
 
 Adobe Commerce best practices recommend to avoid having two modules with the same name. If this happens, the [!DNL Upgrade Compatibility Tool] shows a segmentation fault error.
@@ -119,6 +113,6 @@ To install Node.js, see the Node.js [documentation](https://nodejs.dev/learn/how
 
 ## Third-party extensions
 
-Adobe recommends that you contact your extension vendor to determine whether your extension is fully compatible with Adobe Commerce 2.4.x.
+Adobe recommends that you contact your extension vendor to determine whether your extension is fully compatible with Adobe Commerce latest released version.
 
 See [Run the tool](../upgrade-compatibility-tool/run.md) for information about executing the [!DNL Upgrade Compatibility Tool].
