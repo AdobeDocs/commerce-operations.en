@@ -23,3 +23,5 @@ The minimum requirements to run the [!DNL Upgrade Compatibility Tool] are:
 You can run the [!DNL Upgrade Compatibility Tool] in any operating system. There is no requirement to run the [!DNL Upgrade Compatibility Tool] where your Adobe Commerce instance is located.
 
 It is necessary for the [!DNL Upgrade Compatibility Tool] to have access to the source code of the Adobe Commerce instance. For example, you can install it on one server and point it at your Adobe Commerce installation on another server. Refer to the [install](../upgrade-compatibility-tool/install.md) topic for more information.
+
+If you are running the [!DNL Upgrade Compatibility Tool] against an Adobe Commerce instance with large modules and files, the tool might require a high amount of RAM, at least 2GB RAM.
