@@ -30,7 +30,7 @@ The following are Adobe Commerce-recommended paths to 2.4.4 or later to keep you
 
 ![](../../assets/upgrade-guide/2.4.0-2.4.3.jpg)
 
-## Upgrading from 2.4.3 (or newly upgraded)
+## Upgrading from 2.4.3 (or newly upgraded) 
 
 ![](../../assets/upgrade-guide/2.4.3.jpg)
  
