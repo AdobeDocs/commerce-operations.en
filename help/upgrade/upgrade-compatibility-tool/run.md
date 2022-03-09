@@ -67,7 +67,7 @@ Available `--help` options for the `upgrade:check` command:
 
 - `-m, --module-path[=MODULE-PATH]`: Path of the modules to be analysed
 - `-a, --current-version[=CURRENT-VERSION]`: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
-- `-c, --coming-version[=COMING-VERSION]`: Target Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
+- `-c, --coming-version[=COMING-VERSION]`: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted.
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Path of the file where the output will be exported in json format.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Path of the file where the output will be exported in HTML format.
 - `--min-issue-level`: Minimum issue level to show in report. Default is [WARNING].
