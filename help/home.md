@@ -10,7 +10,7 @@ This page provides links to all operational guides for Adobe Commerce and Magent
 
 ## What's New
 
-This section includes recent changes that we think you would like to know about, such as new topics and significant updates to existing topics.
+The following table includes recent changes that we think you would like to know about, such as new topics and significant updates to existing topics:
 
 | Description                                                                                                                        | Type         |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------|
