@@ -6,18 +6,7 @@ description: Browse an index of Adobe Commerce operational product documentation
 
 # Adobe Commerce Operational Guides
 
-This page provides links to all operational guides for Adobe Commerce and Magento Open Source.
-
-## What's New
-
-The following table includes recent changes that we think you would like to know about, such as new topics and significant updates to existing topics:
-
-| Description                                                                                                                        | Type         |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Added [information](../upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool.| Major update |
-| Removed outdated Upgrade Compatibility Tool [error codes](../upgrade/upgrade-compatibility-tool/error-messages.md).                   | Technical    |
-
-## Guides
+Get practical information about concepts, processes, tools, and best practices to develop, deploy, and maintain commerce projects deployed on Adobe Commerce and Magento Open Source platforms.
 
 <table>
 <tr>
@@ -57,7 +46,7 @@ The following table includes recent changes that we think you would like to know
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Upgrade" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="Upgrade" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
@@ -123,3 +112,12 @@ The following table includes recent changes that we think you would like to know
   </td>
 </tr>
 </table>
+
+## What's New
+
+Learn about new content and significant updates to existing content 
+
+| Change                                                                                                                                 | Type         |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Added [information](../upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool. | Major update |
+| Removed outdated Upgrade Compatibility Tool [error codes](../upgrade/upgrade-compatibility-tool/error-messages.md).                    | Technical    |
