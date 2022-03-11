@@ -14,8 +14,8 @@ The following table includes recent changes that we think you would like to know
 
 | Description                                                                                                                        | Type         |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Added [information](upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool.| Major update |
-| Removed outdated Upgrade Compatibility Tool [error codes](upgrade/upgrade-compatibility-tool/error-messages.md).                   | Technical    |
+| Added [information](../upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool.| Major update |
+| Removed outdated Upgrade Compatibility Tool [error codes](../upgrade/upgrade-compatibility-tool/error-messages.md).                   | Technical    |
 
 ## Guides
 
@@ -56,11 +56,11 @@ The following table includes recent changes that we think you would like to know
 </tr>
 <tr>
   <td valign="top">
-    <a href="upgrade/overview.md">
+    <a href="../upgrade/overview.md">
       <img alt="Upgrade" src="assets/icons/download-cloud.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="upgrade/overview.md"><strong>Upgrade</strong></a>
+      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -98,27 +98,27 @@ The following table includes recent changes that we think you would like to know
     </div>
   </td>
   <td valign="top">
-    <a href="implementation-playbook/overview.md">
+    <a href="../implementation-playbook/overview.md">
       <img alt="Implementation" src="assets/icons/play.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="operational-playbook/overview.md">
+    <a href="../operational-playbook/overview.md">
        <img alt="Operations" src="assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="operational-playbook/overview.md"><strong>Operational Playbook</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>Operational Playbook</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="operational-playbook/overview.md">
+    <a href="../operational-playbook/overview.md">
        <img alt="Enterprise" src="assets/icons/enterprise.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="operational-playbook/overview.md"><strong>Commerce at Scale</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>Commerce at Scale</strong></a>
     </div>
   </td>
 </tr>
