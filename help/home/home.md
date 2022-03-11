@@ -115,7 +115,7 @@ Get practical information about concepts, processes, tools, and best practices t
 
 ## What's New
 
-Learn about new content and significant updates to existing content 
+Learn about new documentation and significant updates to existing documentation. 
 
 | Change                                                                                                                                 | Type         |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
