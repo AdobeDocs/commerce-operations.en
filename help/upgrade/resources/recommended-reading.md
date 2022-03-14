@@ -14,6 +14,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
 - [Release schedule](https://devdocs.magento.com/release/)
 - [FAQ](https://support.magento.com/hc/en-us/articles/4409421516301-FAQ-for-New-Adobe-Commerce-Release-Strategy-and-Updated-Lifecycle-Policy)
 - [Release types](https://devdocs.magento.com/release/policy/)
+- [End of Support FAQ](https://fieldreadiness-adobe.highspot.com/items/622b80a39ce57220ecdfd6ef#1)
 - [Partner enablement](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/Community_47/Webinar_Recording_Commerce_Q4_Product_Update.URL)
 
 ## Planning
