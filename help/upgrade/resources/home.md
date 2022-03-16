@@ -1,6 +1,6 @@
 ---
 keywords: Adobe Commerce;home;popular topics
-title: Home
+title: Resources Home
 description: Browse an index of Adobe Commerce and Magento Open Source release documentation.
 ---
 
