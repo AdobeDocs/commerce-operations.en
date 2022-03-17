@@ -17,13 +17,13 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
             <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Adobe Security Bulletin</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">Release notes</a></li>
-            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Solutions Partner Portal</a> (for partners with a valid login)</li>
+            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Solutions Partner Portal</a></li>
           </ul>
         </td>
       <td><strong>Tools</strong>
         <ul>
             <li><a href="https://magento.com/tech-resources/downloads">Downloading Adobe Commerce versions</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">How to use the Upgrade Compatibility Tool with PHPStorm plugin</a> (video)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Upgrade Compatibility Tool PhpStorm plugin</a> (video)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">Upgrade Compatibility Tool</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack channel</a></li>
             <li><a href="https://devdocs.magento.com/quality-patches/usage.html">Quality Patches Tool</a></li>
@@ -54,7 +54,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
       <td><strong>Upgrade Resources</strong>
         <ul>
              <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">2022 Recommended Upgrade Paths</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html">2.4 Upgrade Guide</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf">2.4 Upgrade Guide</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Technical Upgrade Workshop recording</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">Accessing pre-releases</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">Beta Program overview</a></li>
