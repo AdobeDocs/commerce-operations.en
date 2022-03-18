@@ -1,5 +1,5 @@
 ---
-title: Manage Modules and Extensions
+title: Manage Modules and Extensions (developer)
 description: Manage Adobe Commerce and Magento Open Source modules and extensions using the command-line interface and Composer package manager.
 ---
 
