@@ -5,7 +5,7 @@ description: Get familiar with the major platform changes in a release as you pr
 
 # Review platform changes before upgrading
 
-Adobe Commerce 2.4.4 will be generally available on April 12, 2022 and beta code is now available for partners to start preparing. The 2.4.4 release is unique because it includes many platform updates. It is powered by PHP 8.1 together with several key framework upgrades including:  
+Adobe Commerce 2.4.4 will be generally available on April 12, 2022, with pre-release access for Adobe Commerce customers and Partners beginning March 29. The 2.4.4 release is unique because it includes many platform updates. It is powered by PHP 8.1 together with several key framework upgrades including:  
 
 - Removing support for PHP 7.3
 - Support for OpenSearch as an alternative to Elasticsearch
