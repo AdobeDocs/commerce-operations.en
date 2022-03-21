@@ -78,3 +78,4 @@ Important events to note include:
 - 2.4.0 to 2.4.3 (based on PHP 7.4) reaches EOS in November 2022, when PHP 7.4 reaches End of Life (EOL)
 - Based on these two EOS events, **it is important to upgrade to version 2.4.4 or higher by November 2022** 
 - In line with the Adobe Commerce [lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html), versions 2.4.4 and 2.4.5 will receive quality support and security patches until Nov 2024
+
