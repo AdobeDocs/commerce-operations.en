@@ -20,7 +20,7 @@ Marrying content with commerce to meet customer demands for flawless brand inter
 
 ## Conducting seamless shopping everywhere
 
-Commerce growth is fueled by serving your customers’ needs wherever they are. Expand your reach and grow into new channels, geographies, and sell online to both businesses and consumers in one platform. Bring commerce to your customers wherever, whenever, and however they prefer to shop.
+Commerce growth is fueled by serving your customers’ needs wherever they are. Expand your reach and grow into new channels, geographies, and sell online to both businesses and consumers in one platform. Bring commerce to your customers wherever, whenever, and however, they prefer to shop.
 
 - Mobile commerce
 - B2B ecommerce
