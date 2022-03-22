@@ -30,7 +30,7 @@ Some areas of an AEM/CIF/Adobe Commerce site which can be set to be cached in th
 - CSS files
 - All site JavaScript files – including CIF JavaScript files
 
-## Dispatcher statfilelevel anbd grace period optimization
+## Dispatcher statfilelevel and grace period optimization
 
 The default dispatcher configuration uses /statfilelevel “0” setting – this means that a single “.stat” file is placed at the root of htdocs directory (document root directory). If a change is made to a page or file in AEM, the modification time of this single stat file is updated to the time of the change. If the time is newer than modification time of the resource, then the dispatcher will consider all resources are invalidated and any subsequent request for an invalidated resource will trigger a call to the Publish instance. So essentially, with this setting every activation will invalidate the whole cache.
 
