@@ -22,7 +22,7 @@ Error messages are categorized by level (critical issues, errors, and warnings) 
 These errors are reported when some of the core files are missing or do not match the original.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 2001 | Core file was not found | Run the `composer install` command from the project's root directory. |
 | 2002 | Core file was modified | Run the `composer install` command from the project's root directory. |
 | 2003 | Composer dependency is not installed | Missing composer dependency may potentially result in issues. Restore dependency by running `composer require package_name`. |
@@ -35,7 +35,7 @@ These errors are reported when some of the core files are missing or do not matc
 Critical errors are raised when the custom code is referencing entities that are not present in the target Adobe Commerce version. These errors are also reported when critical coding standards have been broken.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 1110 | Instantiating non-existent Adobe Commerce class/interface | Update code to use a class marked as `@api`. Instantiating non-existent Adobe Commerce class/interface. |
 | 1111 | Extending from non-existent Adobe Commerce class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
 | 1112 | Importing non-existent Adobe Commerce class | Update code to use a class marked as `@api`. |
@@ -66,7 +66,7 @@ Critical errors are raised when the custom code is referencing entities that are
 GraphQL Schema critical issues are raised if the schema items are not present in the target version.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 3101 | Type was removed | List all queries that are referencing this field. Check if these queries are used by the customization implementation. Update the client code to handle the changed query interface. |
 | 3102 | Type removed from union | If the union type is used in the GraphQL request constructing or response processing implementation it may need to be updated. |
 | 3103 | Field removed | Check if the field is referenced in the customization codebase. Adjust the implementation to correctly handle the new field type. |
@@ -93,7 +93,7 @@ GraphQL Schema critical issues are raised if the schema items are not present in
 Custom code errors are raised when custom code is using the Adobe Commerce entry points that are not considered/marked as `@api`. The preserved behavior of such entry points is not guaranteed. The customization should rely on `@api` entry points instead. The functionality that is based on non-API Adobe Commerce code should be tested after the upgrade. These errors are also reported when major coding standards have been broken.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 1104 | Using non-API class that is inheriting API interface | Classes that are not marked as `@api` may be changed. Consider updating the code to rely on the interface marked as `@api` instead. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
 | 1121 | Extending from non-Adobe Commerce API class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
 | 1122 | Importing non-Adobe Commerce API class | The extended class is no longer present in the codebase. Update code to use a class marked as `@api`. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
@@ -213,7 +213,7 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 These warnings are reported when there are minor inconsistencies in the core codebase.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 2004 | Composer dependency version mismatch | Issue indicates that Composer dependency version in etalon and actual project is different. Update dependency by running `composer update <package_name>`. |
 
 {style="table-layout:auto"}
@@ -223,7 +223,7 @@ These warnings are reported when there are minor inconsistencies in the core cod
 Custom code warnings are raised when the references to deprecated code are detected. Such references should be replaced with the supported extension points. Pay attention to the `@see` annotation of deprecated item for recommendations. These errors are also reported when minor coding standards have been broken.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 1131 | Extending from Adobe Commerce ``@deprecated`` class | The extended class will be removed in upcoming versions. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
 | 1132 | Importing Adobe Commerce `@deprecated` class | The extended class will be removed in upcoming versions. Consider using Adobe Commerce class marked as `@api` instead. |
 | 1133 | Loading Adobe Commerce `@deprecated` class | The extended class will be removed in upcoming versions. Consider using Adobe Commerce class marked as `@api` instead. |
@@ -251,7 +251,7 @@ Custom code warnings are raised when the references to deprecated code are detec
 GraphQL Schema warnings are raised when the additional items are added to the schema in the new version. It is recommended to review the implementation to see if they should be used for requests.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 3206 | Argument default value changed | If the query is used in the customization the argument value may have to be specified explicitly. |
 | 3302 | Type added to union | The type was added to the union. Check the implementation processing the result of the query returning this union type and ensure it is able to handle the added type. |
 | 3304 | Optional input field added | Optional input field added. Check the implementation to ensure. |
