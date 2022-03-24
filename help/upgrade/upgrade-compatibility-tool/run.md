@@ -67,10 +67,10 @@ Available `--help` options for the `upgrade:check` command:
 
 - `-m, --module-path[=MODULE-PATH]`: Path of the modules to be analysed
 - `-a, --current-version[=CURRENT-VERSION]`: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
-- `-c, --coming-version[=COMING-VERSION]`: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted.
+- `-c, --coming-version[=COMING-VERSION]`: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Path of the file where the output will be exported in json format.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Path of the file where the output will be exported in HTML format.
-- `--min-issue-level`: Minimum issue level to show in report. Default is [WARNING].
+- `--min-issue-level`: Minimum issue level to show in report. Default level is [WARNING].
 - `-i, --ignore-current-version-compatibility-issues`: Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report.
 - `--context=CONTEXT`: Execution context. This option is for integration purposes and does not affect the execution result.
 - `-h, --help`: Display help for that specific command. If no command is provided, `list` command is the default result.
@@ -261,6 +261,10 @@ You must provide the version as a parameter when running the command:
 ```bash
 bin/uct upgrade:check <dir> -c 2.4.3
 ```
+
+>[!NOTE]
+>
+>This parameter provides a list of all available Adobe Commerce versions.
 
 Where:
 
