@@ -36,6 +36,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
       <td><strong>Calendars and Policy</strong>
         <p>Review details about Adobe Commerce and Magento Open Source releases and policies.</p>
           <ul>
+            <li><a href="https://support.magento.com/hc/en-us/articles/4965909814797-Adobe-Commerce-Software-End-of-Support-FAQ">Adobe Commerce Software End of Support FAQ</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace policy</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/4409421516301-FAQ-for-New-Adobe-Commerce-Release-Strategy-and-Updated-Lifecycle-Policy">FAQ for New Adobe Commerce Release Strategy, Updated Lifecycle Policy, and Extended Support</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Lifecycle policy</a></li>
