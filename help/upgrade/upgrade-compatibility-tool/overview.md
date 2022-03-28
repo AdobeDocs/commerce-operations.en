@@ -25,7 +25,7 @@ The following diagram shows the expected workflow when running the [!DNL Upgrade
 
 The following use case describes the typical process for an Adobe Commerce partner to upgrade a client's instance:
 
-1. Download the [!DNL Upgrade Compatibility Tool] package from the [Adobe Commerce repository](https://repo.magento.com/). See the [Download the [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) topic for more information.
+1. Download the [!DNL Upgrade Compatibility Tool] package from the Adobe Commerce repository (`https://repo.magento.com/`). See the [Download the [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) topic for more information.
 1. Execute the [!DNL Upgrade Compatibility Tool] during the [beta](https://devdocs.magento.com/release/beta-program.html) phase of newest [Adobe Commerce release](https://devdocs.magento.com/release/). 
 1. The main command is `upgrade:check`. This command analyzes your instance and checks for errors, warnings, and critical issues in the instance. To optimize results:
 
