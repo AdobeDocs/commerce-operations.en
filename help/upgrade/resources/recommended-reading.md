@@ -51,7 +51,6 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>
             <li><a href="https://marketplace.magento.com/magento-payment-services.html">Payment Services</a></li>
             <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">Product Recommendations</a></li>
-            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">Upgrading PWA Studio</a></li>
           </ul>
       </td>
     </tr>
@@ -71,7 +70,13 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
             <li><a href="https://devdocs.magento.com/release/availability.html">Software availability</a></li>
           </ul>
       </td>
-      <td></td>
+      <td><strong>Storefront Experience</strong>
+        <p>Learn about the latest storefront technology that you can use to build unique experiences for your customers.</p>
+          <ul>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studio</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">Upgrading PWA Studio</a></li>
+          </ul>
+      </td>
     </tr>
   </tbody>
 </table>
