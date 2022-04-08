@@ -1,5 +1,5 @@
 ---
-title: [!DNL Upgrade Compatibility Tool] Developer Information
+title: "[!DNL Upgrade Compatibility Tool] Developer Information"
 description: Customize the [!DNL Upgrade Compatibility Tool] using the API index integration.
 ---
 
