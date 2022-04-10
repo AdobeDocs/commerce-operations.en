@@ -11,7 +11,7 @@ More information related to the SWAT can be found in [DevDocs](https://docs.mage
 
 The SWAT dashboard provides ability to request execution of the [!DNL Upgrade Compatibility Tool] and access the results.
 
-# Run the [!DNL Upgrade Compatibility Tool] from SWAT
+## Run the [!DNL Upgrade Compatibility Tool] from SWAT
 
 Navigate to the SWAT dashboard for your project and locate the [!DNL Upgrade Compatibility Tool] widget.
 
