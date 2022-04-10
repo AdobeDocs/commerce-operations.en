@@ -3,7 +3,7 @@ title: "[!DNL Upgrade Compatibility Tool] SWAT Integration"
 description: Follow these steps to retrieve the [!DNL Upgrade Compatibility Tool] report from SWAT dashboard on your Adobe Commerce project.
 ---
 
-# Overview
+# [!DNL Upgrade Compatibility Tool] SWAT Integration
 
 The Site-Wide Analysis Tool provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability for installations of Adobe Commerce.
 
