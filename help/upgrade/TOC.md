@@ -29,6 +29,7 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
   - [Prerequisites](upgrade-compatibility-tool/prerequisites.md)
   - [Install](upgrade-compatibility-tool/install.md)
   - [Run the tool](upgrade-compatibility-tool/run.md)
+  - [SWAT Integration](upgrade-compatibility-tool/swat.md)
   - [Developer information](upgrade-compatibility-tool/developer.md)
   - [Error messages](upgrade-compatibility-tool/error-messages.md)
 - Contributing developers {#developer}
