@@ -1,5 +1,5 @@
 ---
-title: [!DNL Upgrade Compatibility Tool] SWAT Integration
+title: "[!DNL Upgrade Compatibility Tool] SWAT Integration"
 description: Follow these steps to retrieve the [!DNL Upgrade Compatibility Tool] report from SWAT dashboard on your Adobe Commerce project.
 ---
 
@@ -25,4 +25,4 @@ After the scan is completed the high level results will be displayed in the widg
 
 ![UCT SWAT widget - Results](../../assets/upgrade-guide/uct-swat-results.png)
 
-Click the "Download Report" button to retrieve [!DNL Upgrade Compatibility Tool] HTML report and review the details.
+Click the "Download Report" button to retrieve the [!DNL Upgrade Compatibility Tool] HTML report and review the details.
