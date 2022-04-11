@@ -17,7 +17,7 @@ Navigate to the [!DNL Site-Wide Analysis Tool] dashboard for your project and lo
 
 ![UCT SWAT widget - Initial](../../assets/upgrade-guide/uct-swat-initial.png)
 
-Click **Run Upgrade Scan**. The scan can take some time depending on the project size. A spinner indicates that the scan is in progress.
+Click **[!UICONTROL Run Upgrade Scan]**. The scan can take some time depending on the project size. A spinner indicates that the scan is in progress.
 
 ![UCT SWAT widget - In Progress](../../assets/upgrade-guide/uct-swat-progress.png)
 
@@ -25,4 +25,4 @@ After the scan is complete, the high level results are displayed in the widget.
 
 ![UCT SWAT widget - Results](../../assets/upgrade-guide/uct-swat-results.png)
 
-Click **Download Report** to retrieve the [!DNL Upgrade Compatibility Tool] HTML report and review the details.
+Click **[!UICONTROL Download Report]** to retrieve the [!DNL Upgrade Compatibility Tool] HTML report and review the details.
