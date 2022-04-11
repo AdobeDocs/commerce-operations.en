@@ -70,7 +70,7 @@ Continued growth in the digital commerce space has applied increased pressure on
 
 Adobe publishes a [release schedule](https://devdocs.magento.com/release/) annually to facilitate merchants’ planning process and recommends upgrading each patch release cycle. To remain PCI-compliant, merchants must be on the latest patch or security patch. The following timeline shows the major release and EOL events in 2022.
 
-![](../assets/upgrade-guide/2022-release-timeline.jpg)
+![](../assets/upgrade-guide/2022-release-timeline.png)
  
 Important events to note include:
 

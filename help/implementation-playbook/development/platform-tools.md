@@ -22,7 +22,7 @@ The following table includes solutions that we recommend and can be used within 
 | Message queue services                   | RabbitMQ                |
 | Security scan tool                       | SonarQube, ZAP          |
 
-## Datbase
+## Database
 
 There are three different tools that we use depending on the needs of the brand. MySQL is a great baseline solution as the Adobe Commerce database if you don’t expect your store to handle extreme loads.
 

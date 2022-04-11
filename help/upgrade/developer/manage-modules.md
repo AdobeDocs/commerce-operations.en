@@ -1,5 +1,5 @@
 ---
-title: Manage Modules and Extensions
+title: Manage Modules and Extensions (developer)
 description: Manage Adobe Commerce and Magento Open Source modules and extensions using the command-line interface and Composer package manager.
 ---
 
@@ -9,13 +9,7 @@ Contributing developers upgrade modules and extensions by specifying their versi
 
 You can either add a `require` section to the `composer.json` file or you can use the `composer require` command as follows:
 
-1. Log in to your server.
-1. Switch to the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Change to the directory where you cloned the application. For example,
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}}
 
 You have the following options:
 

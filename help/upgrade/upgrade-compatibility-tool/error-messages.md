@@ -5,6 +5,8 @@ description: Learn more about error messages you encounter when using the [!DNL 
 
 # [!DNL Upgrade Compatibility Tool] error messages
 
+{{commerce-only}}
+
 This error message reference provides information about errors that can occur while executing the [!DNL Upgrade Compatibility Tool].
 
 Error messages are categorized by level (critical issues, errors, and warnings) and type (core code, custom code, and GraphQL schemas). Each type contains the following information:
@@ -20,7 +22,7 @@ Error messages are categorized by level (critical issues, errors, and warnings) 
 These errors are reported when some of the core files are missing or do not match the original.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 2001 | Core file was not found | Run the `composer install` command from the project's root directory. |
 | 2002 | Core file was modified | Run the `composer install` command from the project's root directory. |
 | 2003 | Composer dependency is not installed | Missing composer dependency may potentially result in issues. Restore dependency by running `composer require package_name`. |
@@ -33,7 +35,7 @@ These errors are reported when some of the core files are missing or do not matc
 Critical errors are raised when the custom code is referencing entities that are not present in the target Adobe Commerce version. These errors are also reported when critical coding standards have been broken.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 1110 | Instantiating non-existent Adobe Commerce class/interface | Update code to use a class marked as `@api`. Instantiating non-existent Adobe Commerce class/interface. |
 | 1111 | Extending from non-existent Adobe Commerce class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
 | 1112 | Importing non-existent Adobe Commerce class | Update code to use a class marked as `@api`. |
@@ -50,11 +52,9 @@ Critical errors are raised when the custom code is referencing entities that are
 | 1514 | Using non-existent Adobe Commerce property | Update code to use a class marked as `@api`. |
 | 1515 | Overriding non-existent Adobe Commerce property | Update code to use a class marked as `@api`. |
 | 1516 | Assignation of non-existent Adobe Commerce property | Update code to use a class marked as `@api`. Update the property access level to private if it can be used within a single class only. |
-| 5001 | Call-time pass-by-reference calls are prohibited | Passing by reference is not supported after PHP 5.6. |
 | 5002 | The opening PHP tag must be the first content in the file | Ensure there is no content in the file before the PHP opening tag. |
 | 5003 | Function has been deprecated | Use a replacement suggested in the error message. If the message does not suggest a replacement, a close review is needed to select an alternative function or implementation. |
 | 5005 | PHP syntax error | The code must be updated to comply with the PHP syntax standards. |
-| 5008 | Possible Magento 2 design violation. Detected a typical Magento 1.x construction | The code requires review and refactoring. Magento 1 constructions may no longer be supported by Magento 2 framework. |
 | 5072 | Possible Magento 2 design violation. Detected a typical Magento 1.x construction | Update construction to Magento 2 standards. |
 | 5076 | Cannot use in namespace as it is reserved since PHP 7 | Replace the reserved word in the namespace with a non-reserved keyword. |
 | 5077 | Cannot use as class name as it is reserved since PHP 7 | Replace the reserved class name with a non-reserved name. |
@@ -66,7 +66,7 @@ Critical errors are raised when the custom code is referencing entities that are
 GraphQL Schema critical issues are raised if the schema items are not present in the target version.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 3101 | Type was removed | List all queries that are referencing this field. Check if these queries are used by the customization implementation. Update the client code to handle the changed query interface. |
 | 3102 | Type removed from union | If the union type is used in the GraphQL request constructing or response processing implementation it may need to be updated. |
 | 3103 | Field removed | Check if the field is referenced in the customization codebase. Adjust the implementation to correctly handle the new field type. |
@@ -93,7 +93,7 @@ GraphQL Schema critical issues are raised if the schema items are not present in
 Custom code errors are raised when custom code is using the Adobe Commerce entry points that are not considered/marked as `@api`. The preserved behavior of such entry points is not guaranteed. The customization should rely on `@api` entry points instead. The functionality that is based on non-API Adobe Commerce code should be tested after the upgrade. These errors are also reported when major coding standards have been broken.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 1104 | Using non-API class that is inheriting API interface | Classes that are not marked as `@api` may be changed. Consider updating the code to rely on the interface marked as `@api` instead. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
 | 1121 | Extending from non-Adobe Commerce API class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
 | 1122 | Importing non-Adobe Commerce API class | The extended class is no longer present in the codebase. Update code to use a class marked as `@api`. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
@@ -133,10 +133,7 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 | 5024 | Obsolete menu structure detected in line | Check app/code/Magento/Backend/etc/menu.xsd. |
 | 5025 | Obsolete system configuration structure detected in file | Check app/code/Magento/Config/etc/system_file.xsd. |
 | 5026 | Do not use `"text/javascript"` type attribute | Use only public members. |
-| 5027 | Access to members and methods of Block class through $this is obsolete in phtml templates | Use only `$block` instead of `$this`. |
 | 5028 | Access to protected and private members of `Block` class is obsolete in phtml templates | Use only public members. |
-| 5029 | Do not use `"jquery/ui"` library in templates | Use needed jquery ui widget instead. |
-| 5030 | Do not initialize JS component in PHP | initialize JS component in template. |
 | 5031 | Contains obsolete method | Use `getConnection()` method instead. |
 | 5032 | `loadLayout` method is deprecated | Use `\Magento\Framework\View\Layout\Builder::build` instead. |
 | 5033 | `renderLayout` method is deprecated | Use `\Magento\Framework\Controller\ResultInterface::renderResult` instead. |
@@ -155,7 +152,6 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 | 5046 | Class `Magento\Framework\Serialize\Serializer\Serialize` is restricted | Suggested replacement: `Magento\Framework\Serialize\SerializerInterface`. |
 | 5047 | Class `ArrayObject` is restricted | Suggested replacement: Custom class, extended from `ArrayObject` with overwritten serialize/unserialize methods. |
 | 5048 | Class `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` is restricted | Suggested replacement: Factory that creates custom class, extended from `ArrayObject` with overwritten serialize/unserialize methods. |
-| 5049 | Blocks `\Magento\Theme\Block\Html\Head\{Css,Link,Script}` are allowed within the "head" block only | Verify integrity of the nodes nesting. |
 | 5050 | The block being referenced is removed | Remove reference to block. |
 | 5051 | `output="toHtml"` is obsolete | Use `output="1"`. |
 | 5052 | The class `\Magento\Framework\View\Element\Text\ListText` is not supposed to be used in layout anymore | Remove class `\Magento\Framework\View\Element\Text\ListText` from layout. |
@@ -186,7 +182,6 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 | 5081 | The use of helpers in templates is discouraged | Use ViewModel instead. |
 | 5082 | The use of $this in templates is deprecated | Use $block instead. |
 | 5083 | Constants are not allowed as the first argument of translation function | Use string literal instead. |
-| 5084 | Do not initialize JS component in php | Initialize JS component in a template. |
 | 5085 | The use of certain functions is discouraged | Use the alternative function advised on the message instead. |
 | 5087 | PHP cross-version compatibility issue | Follow the suggestions from the message and check the [migration guide](https://www.php.net/manual/en/migration81.php). |
 | 5088 | Optional parameters found after required ones | Move required parameters after optional ones. |
@@ -218,7 +213,7 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 These warnings are reported when there are minor inconsistencies in the core codebase.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 2004 | Composer dependency version mismatch | Issue indicates that Composer dependency version in etalon and actual project is different. Update dependency by running `composer update <package_name>`. |
 
 {style="table-layout:auto"}
@@ -228,7 +223,7 @@ These warnings are reported when there are minor inconsistencies in the core cod
 Custom code warnings are raised when the references to deprecated code are detected. Such references should be replaced with the supported extension points. Pay attention to the `@see` annotation of deprecated item for recommendations. These errors are also reported when minor coding standards have been broken.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 1131 | Extending from Adobe Commerce ``@deprecated`` class | The extended class will be removed in upcoming versions. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
 | 1132 | Importing Adobe Commerce `@deprecated` class | The extended class will be removed in upcoming versions. Consider using Adobe Commerce class marked as `@api` instead. |
 | 1133 | Loading Adobe Commerce `@deprecated` class | The extended class will be removed in upcoming versions. Consider using Adobe Commerce class marked as `@api` instead. |
@@ -256,7 +251,7 @@ Custom code warnings are raised when the references to deprecated code are detec
 GraphQL Schema warnings are raised when the additional items are added to the schema in the new version. It is recommended to review the implementation to see if they should be used for requests.
 
 | Error code | Error description | Suggested action |
-| - | - | - |
+| --- | --- | --- |
 | 3206 | Argument default value changed | If the query is used in the customization the argument value may have to be specified explicitly. |
 | 3302 | Type added to union | The type was added to the union. Check the implementation processing the result of the query returning this union type and ensure it is able to handle the added type. |
 | 3304 | Optional input field added | Optional input field added. Check the implementation to ensure. |
