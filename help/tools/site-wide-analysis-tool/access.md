@@ -4,7 +4,7 @@ description: Learn how to access the [!DNL Site-Wide Analysis Tool]
 ---
 # How to Access the [!DNL Site-Wide Analysis Tool]
 
-The [!DNL Site-Wide Analysis Tool] service is available in [production mode](https://docs.magento.com/user-guide/magento/installation-modes.html) for Admin users with permission to access user [role resources](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+The [!DNL Site-Wide Analysis Tool] service is available in [production mode](https://docs.magento.com/user-guide/magento/installation-modes.html) for [!DNL Admin] users with permission to access user [role resources](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
 
 >[!NOTE]
 >
@@ -15,11 +15,11 @@ The [!DNL Site-Wide Analysis Tool] service is available in [production mode](htt
 
 ## Step 1: Verify permissions
 
-Verify that the Admin user account has permission to access the [!DNL Site-Wide Analysis Tool] through their [assigned user role](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+Verify that the [!DNL Admin] user account has permission to access the [!DNL Site-Wide Analysis Tool] through their [assigned user role](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
 
 >[!IMPORTANT]
 >
->The [!DNL Site-Wide Analysis Tool] role resource (permission) is **not** auto-assigned. It MUST be activated for the user role and the role individually assigned to each user account in the Admin.
+>The [!DNL Site-Wide Analysis Tool] role resource (permission) is **not** auto-assigned. It MUST be activated for the user role and the role individually assigned to each user account in the [!DNL Admin].
 
 For the custom role needing [!DNL Site-Wide Analysis Tool] access, do the following:
 
