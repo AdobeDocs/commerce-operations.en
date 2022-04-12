@@ -19,7 +19,7 @@ Verify that the [!DNL Admin] user account has permission to access the [!DNL Sit
 
 >[!IMPORTANT]
 >
->The [!DNL Site-Wide Analysis Tool] role resource (permission) is **not** auto-assigned. It MUST be activated for the user role and the role individually assigned to each user account in the [!DNL Admin].
+>The [!DNL Site-Wide Analysis Tool] role resource (permission) is **not** auto-assigned. It MUST be activated for the user role and the role individually assigned to each user account in the [!UICONTROL Admin].
 
 For the custom role needing [!DNL Site-Wide Analysis Tool] access, do the following:
 
