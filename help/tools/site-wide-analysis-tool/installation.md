@@ -1,28 +1,28 @@
 ---
 title: Install Guide
-description: Use this guide to install Site-Wide Analysis Tool for your website
+description: Use this guide to install [!DNL Site-Wide Analysis Tool] for your website
 ---
 # Install Guide
 
-The Site-Wide Analysis Tool provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability of Adobe Commerce on cloud infrastructure installations. It also provides detailed information about available and installed patches, third-party extensions, and your Adobe Commerce installation.
+The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability of Adobe Commerce on cloud infrastructure installations. It also provides detailed information about available and installed patches, third-party extensions, and your Adobe Commerce installation.
 
 >[!INFO]
 >
->Learn [how to enable](../site-wide-analysis-tool/access.md) the Site-Wide Analysis Tool and generate reports.
+>Learn [how to enable](../site-wide-analysis-tool/access.md) the [!DNL Site-Wide Analysis Tool] and generate reports.
 
 If you have an on-premises installation of Adobe Commerce, you must install an agent on your infrastructure to use the tool. You do not need to install the agent on Adobe Commerce on cloud infrastructure projects.
 
 ## Agent
 
-The Site-Wide Analysis Tool Agent allows you to use the Site-Wide Analysis Tool for on-premises installations of Adobe Commerce.
+The [!DNL Site-Wide Analysis Tool] Agent allows you to use the [!DNL Site-Wide Analysis Tool] for on-premises installations of Adobe Commerce.
 
-The Site-Wide Analysis Tool Agent collects application and business data, analyzes it, and provides additional insights about the health of your installation so that you can improve customer experience. It monitors your application and helps you identify performance, security, availability, and application issues.
+The [!DNL Site-Wide Analysis Tool] Agent collects application and business data, analyzes it, and provides additional insights about the health of your installation so that you can improve customer experience. It monitors your application and helps you identify performance, security, availability, and application issues.
 
 Installing the agent requires the following steps:
 
 1. Verify system requirements.
 
-1. Configure API keys in the Commerce Services Connector extension.
+1. Configure API keys in the [!UICONTROL Commerce Services Connector] extension.
 
 1. Install the agent.
 
@@ -38,15 +38,15 @@ Your on-premises infrastructure must meet the following requirements before inst
 
 - Operating systems
 
-  - Linux x86-64 distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar
+  - [!DNL Linux x86-64] distributions, such as [!DNL RedHat Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], and similar
 
   >[!IMPORTANT]
   >
-  >Adobe Commerce is not supported on Microsoft Windows or macOS.
+  >Adobe Commerce is not supported on [!DNL Microsoft Windows] or [!DNL macOS].
 
 - Adobe Commerce 2.4.1 or later
 
-- Commerce Services Connector extension
+- [!DNL Commerce Services Connector extension]
 
 - PHP CLI
 
@@ -60,9 +60,9 @@ Your on-premises infrastructure must meet the following requirements before inst
 
   - `grep`
 
-## Commerce Services Connector
+## [!DNL Commerce Services Connector]
 
-The agent requires the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) extension to be installed on your system and [configured](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) with API keys. To verify that the extension is installed, run the following command:
+The agent requires the [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) extension to be installed on your system and [configured](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) with API keys. To verify that the extension is installed, run the following command:
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -74,15 +74,15 @@ If you have installed the extension and configured it using an existing API key 
 
 1. Log into [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 
-1. Click **API Portal**.
+1. Click **[!UICONTROL API Portal]**.
 
-1. Click **Delete** next to the existing API Key.
+1. Click **[!UICONTROL Delete]** next to the existing API Key.
 
 1. [Configure](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) a new API key.
 
 >[!IMPORTANT]
 >
-> If you generate new keys in the API Portal, immediately update the API keys in the Admin configuration. If you generate new keys and do not update them in the Admin, your SaaS extensions will no longer work and you will lose valuable data.
+> If you generate new keys in the API Portal, immediately update the API keys in the [!DNL Admin configuration]. If you generate new keys and do not update them in the [!DNL Admin], your SaaS extensions will no longer work and you will lose valuable data.
 
 If the extension is not installed, use the following instructions to install it:
 
@@ -157,7 +157,7 @@ If you do not want to use our [shell script](https://github.com/magento-swat/ins
 
    >[!INFO]
    >
-   >To use the Site-Wide Analysis Tool, you must first read and accept the Terms of Use that are presented when you access the dashboard from the Adobe Commerce Admin.
+   >To use the [!DNL Site-Wide Analysis Tool], you must first read and accept the Terms of Use that are presented when you access the dashboard from the Adobe Commerce Admin.
 
    For the **AMD64** architecture:
 
@@ -386,4 +386,4 @@ You can override the values that you specified in the configuration file during 
 
 >[!INFO]
 >
->See [How to Access Site-Wide Analysis Tool and generate reports](../site-wide-analysis-tool/access.md).
+>See [How to Access [!DNL Site-Wide Analysis Tool] and generate reports](../site-wide-analysis-tool/access.md).
