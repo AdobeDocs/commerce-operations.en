@@ -38,3 +38,9 @@ To update or upgrade a module or extension:
    ```bash
    bin/magento cache:clean
    ```
+
+## Vendor bundled extensions (VBEs)
+
+Adobe removed all [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Vendors continue to support these extensions on the Adobe Commerce Marketplace.
+
+If you want to continue using these extensions with Adobe Commerce and Magento Open Source 2.4.4 and later, you must update the corresponding package dependencies in your `composer.json` file _before_ upgrading to 2.4.4. Contact the vendor for the package name and version to use.
