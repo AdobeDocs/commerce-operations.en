@@ -28,7 +28,7 @@ The [!DNL Site-Wide Analysis Tool] is a proactive self-service tool and central 
 
 View all of the important insights about your site in one place. [!DNL Site-Wide Analysis Tool] allows you to get direct access to and information from the [!DNL Security Scan Tool], [!DNL Upgrade Compatability Tool], and [!DNL Managed Alerts].
 
-- [**[!DNL Security Scan Tool]**]( https://docs.magento.com/user-guide/magento/security-scan.html) - Provides Adobe Commerce and Magento Open-Source customers with real-time insights into the security status of their store by proactively detecting malware and notifying them if their store is compromised.
+- [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Provides Adobe Commerce and Magento Open-Source customers with real-time insights into the security status of their store by proactively detecting malware and notifying them if their store is compromised.
 
 - [**[!DNL Upgrade Compatability Tool]**](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) - Runs Adobe Commerce's customized instance against the target upgrade version and returns a summary of critical issues, errors, and warnings that must be addressed, making the upgrade analysis process easier, faster, and cheaper.
 
