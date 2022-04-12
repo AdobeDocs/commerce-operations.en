@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Site-Wide Analysis Tool]"
-description: Learn about [!DNL Site-Wide Analysis] Tool, its uses, the installation process, and how to get access
+description: Learn about the [!DNL Site-Wide Analysis] Tool, its uses, the installation process, and how to get access
 ---
 # [!DNL Site-Wide Analysis Tool]
 
