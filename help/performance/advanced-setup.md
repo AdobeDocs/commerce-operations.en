@@ -24,14 +24,15 @@ You can tune indexer performance by adjusting the index batching size variables.
 
 For example, if you are running a profile similar to B2B Medium, you can override the configuration value `batchRowsCount` in `app/code/Magento/catalog/etc/di.xml` and override the default value of `5000` to `1000`. This reduces the full indexing time from 4 hours down to 2 hours with a default MySQL configuration.
 
- {:.bs-callout-info}
-We have not enabled batching for the catalog rules indexer. Merchants with a large number of catalog rules need to adjust their MySQL configuration to optimize indexing time. In this case, editing your MySQL configuration file and allocating more memory to the TMP_TABLE_SIZE and MAX_HEAP_TABLE_SIZE configuration values (the default is 16M for both) will improve performance for this indexer, but will result in MySQL consuming more RAM.
+>[!NOTE]
+>
+>We have not enabled batching for the catalog rules indexer. Merchants with a large number of catalog rules need to adjust their MySQL configuration to optimize indexing time. In this case, editing your MySQL configuration file and allocating more memory to the TMP_TABLE_SIZE and MAX_HEAP_TABLE_SIZE configuration values (the default is 16M for both) will improve performance for this indexer, but will result in MySQL consuming more RAM.
 
 ### Limit customer groups and shared catalogs by websites
 
 A large number of product SKUs, websites, customer groups, or shared catalogs will impact the running time of the Product Price and Catalog Rule indexers. This is because by default, all websites are assigned to all customer groups (shared catalogs).
 
-To decrease indexation time, you can [exclude certain websites from customer groups (shared catalogs)]({{page.baseurl}}/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+To decrease indexation time, you can [exclude certain websites from customer groups (shared catalogs)](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
 
 ## Set up Redis
 
@@ -45,14 +46,15 @@ You could also use a Redis cluster that performs parallel read/write operations 
 
 ## Set up RabbitMQ
 
-{{site.data.var.ce}} and {{site.data.var.ee}} support message queues implemented through RabbitMQ. Magento uses this service for executing numerous asynchronous operations, including B2B catalog operations and asynchronous stock updates. All interfaces for adding more jobs to the job server are distributed with the product and are available for custom asynchronous logic implementation in the scope of third-party extensions. As with any other integration, Magento provides a sample configuration file for RabbitMQ that contains all recommended settings and is fully ready for production usage.
+Magento Open Source and Adobe Commerce support message queues implemented through RabbitMQ. Magento uses this service for executing numerous asynchronous operations, including B2B catalog operations and asynchronous stock updates. All interfaces for adding more jobs to the job server are distributed with the product and are available for custom asynchronous logic implementation in the scope of third-party extensions. As with any other integration, Magento provides a sample configuration file for RabbitMQ that contains all recommended settings and is fully ready for production usage.
 
 ## Split the database
 
-{:.bs-callout-warning}
-The split database feature was [deprecated](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in version 2.4.2 of {{site.data.var.ee}}. See [Revert from a split database to a single database]({{ page.baseurl }}/config-guide/revert-split-database.html).
+>[!WARNING]
+>
+>The split database feature was [deprecated](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in version 2.4.2 of Adobe Commerce. See [Revert from a split database to a single database](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
 
-{{site.data.var.ee}} allows you to configure scalable database storage to meet the needs of a growing business. You can set up three separate master databases that serve specific domains:
+Adobe Commerce allows you to configure scalable database storage to meet the needs of a growing business. You can set up three separate master databases that serve specific domains:
 
 *  Main (Catalog) Database
 *  Checkout Database
@@ -89,7 +91,7 @@ This command performs configuration changes but does not configure replication i
 After splitting your master database and setting slave databases, Magento automatically regulates connections to a specific database, making decisions based on the type of request (POST, PUT, GET, etc) and data resource. If Magento or its extensions performs write operations on a GET request, the system automatically switches the connection from slave to master database. It works the same way with master databases: as soon as you work with a checkout-related table, the system redirects all the queries to a specific database. Meanwhile, all catalog-related queries will go to the main database.
 
 For more details on the configuration and the benefits of multiple master/slave configuration, see
-[Split database performance solution]({{page.baseurl}}/config-guide/multi-master/multi-master.html).
+[Split database performance solution](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
 
 ## Serve media content
 

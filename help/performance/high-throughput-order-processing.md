@@ -26,7 +26,6 @@ For example, a customer adds a product to their shopping cart and selects **Proc
 -  **Product available**—the order status changes to _Pending_, the product quantity is adjusted, an email with order details is sent to the customer, and the successful order details become available for viewing in the **Orders and Returns** list with actionable options, such as reorder.
 -  **Product out of stock or low supply**—the order status changes to _Rejected_, the Product quantity is not adjusted, an email with order details about the issue is sent to the customer, and the rejected order details become available in the **Orders and Returns** list with no actionable options.
 
-{:.procedure}
 To enable AsyncOrder:
 
 You can enable AsyncOrder using the command-line interface:
@@ -46,11 +45,11 @@ The `set` command writes the following to the `app/etc/env.php` file:
 
 See [AsyncOrder][] in the _Module Reference Guide_.
 
-{:.procedure}
 To disable AsyncOrder:
 
-{: .bs-callout-warning}
-Before disabling the AsyncOrder module, you must verify that _all_ asynchronous order processes are complete.
+>[!WARNING]
+>
+>Before disabling the AsyncOrder module, you must verify that _all_ asynchronous order processes are complete.
 
 You can disable AsyncOrder using the command-line interface:
 
@@ -95,11 +94,12 @@ When the AsyncOrder module is enabled, the following REST endpoints and GraphQL 
 
 **GraphQL:**
 
--  [`placeOrder`]({{page.baseurl}}/graphql/mutations/place-order.html)
--  [`setPaymentMethodAndPlaceOrder`]({{page.baseurl}}/graphql/mutations/set-payment-place-order.html)
+-  [`placeOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/place-order.html)
+-  [`setPaymentMethodAndPlaceOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-payment-place-order.html)
 
-{:.bs-callout-info}
-GraphQL does not support placing negotiable quote orders asynchronously.
+>[!INFO]
+>
+>GraphQL does not support placing negotiable quote orders asynchronously.
 
 #### Excluding payment methods
 
@@ -115,7 +115,6 @@ The _Deferred Total Calculation_ module optimizes the checkout process by deferr
 
 DeferredTotalCalculation is **disabled** by default.
 
-{:.procedure}
 To enable DeferredTotalCalculation:
 
 You can enable DeferredTotalCalculation using the command-line interface:
@@ -133,7 +132,6 @@ The `set` command writes the following to the `app/etc/env.php` file:
    ]
 ```
 
-{:.procedure}
 To disable DeferredTotalCalculation:
 
 You can disable DeferredTotalCalculation using the command-line interface:
@@ -169,13 +167,13 @@ To disable the inventory check when loading the cart, set **Enable Inventory Che
 
 <!-- link definitions -->
 
-[Apply patches]: {{site.baseurl}}/cloud/project/project-patch.html
+[Apply patches]: https://devdocs.magento.com/cloud/project/project-patch.html
 [global]: https://docs.magento.com/user-guide/catalog/inventory-options-global.html
 [inventory]: https://docs.magento.com/user-guide/configuration/catalog/inventory.html
-[Install extensions]: {{site.baseurl}}/extensions/install/
-[cloud-extensions]: {{site.baseurl}}/cloud/howtos/install-components.html
+[Install extensions]: https://devdocs.magento.com/extensions/install/
+[cloud-extensions]: https://devdocs.magento.com/cloud/howtos/install-components.html
 
-[mrg]: {{site.baseurl}}{{site.gdeurl}}/mrg/intro.html
-[AsyncOrder]: {{site.baseurl}}/guides/v2.4/mrg/module-async-order.html
-[DeferredTotalCalculating]: {{site.baseurl}}/guides/v2.4/mrg/module-deferred-total-calculating.html
-[NegotiableQuoteAsyncOrder]: {{site.baseurl}}/guides/v2.4/mrg/module-negotiable-quote-async-order.html
+[mrg]: https://devdocs.magento.com/guides/v2.4//mrg/intro.html
+[AsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-async-order.html
+[DeferredTotalCalculating]: https://devdocs.magento.com/guides/v2.4/mrg/module-deferred-total-calculating.html
+[NegotiableQuoteAsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-negotiable-quote-async-order.html

@@ -7,7 +7,7 @@ user-guide-description: Optimize the performance of your Adobe Commerce or Magen
 
 - [Introduction](introduction.md)
 - [Hardware recommendations](hardware.md)
-- [Software receommendations](software.md)
+- [Software recommendations](software.md)
 - [Reference architecture](reference-architecture.md)
 - [Development environment recommendations](development-environment.md)
 - [Configuration best practices](configuration.md)

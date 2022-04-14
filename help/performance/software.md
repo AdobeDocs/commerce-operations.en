@@ -9,25 +9,26 @@ functional_areas:
 
 We require the following software for production instances of Magento:
 
-*  [PHP]({{page.baseurl}}/install-gde/system-requirements.html)
+*  [PHP](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
 *  Nginx and [PHP-FPM](https://php-fpm.org/)
-*  [MySQL]({{page.baseurl}}/install-gde/prereq/mysql.html)
-*  [Elasticsearch or OpenSearch]({{page.baseurl}}/install-gde/prereq/elasticsearch.html)
+*  [MySQL](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html)
+*  [Elasticsearch or OpenSearch](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html)
 
 For multi-server deployments, or for merchants planning on scaling their business, we recommend the following:
 
-*  [Varnish cache]({{page.baseurl}}/config-guide/varnish/config-varnish.html)
-*  [Redis]({{page.baseurl}}/config-guide/redis/redis-session.html) for sessions (from 2.0.6+)
-*  A separate Redis instance as your [default cache]({{page.baseurl}}/config-guide/redis/redis-pg-cache.html) (do not use this instance for page cache)
+*  [Varnish cache](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html)
+*  [Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-session.html) for sessions (from 2.0.6+)
+*  A separate Redis instance as your [default cache](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html) (do not use this instance for page cache)
 
-See [Magento technology stack requirements]({{page.baseurl}}/install-gde/system-requirements.html) for information about supported versions of each type of software.
+See [Magento technology stack requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) for information about supported versions of each type of software.
 
 ## Operating system
 
 Operating system configurations and optimizations are similar for Magento as compared to other high-load web applications. As the number of concurrent connections handled by the server increases, the number of available sockets can become fully allocated. The Linux kernel supports a mechanism to "reuse" TCP connections. To enable this mechanism, set the following value in `/etc/sysctl.conf`:
 
-{:.bs-callout-info}
-Enabling net.ipv4.tcp_tw_reuse has no effect on incoming connections.
+>[!INFO]
+>
+>Enabling net.ipv4.tcp_tw_reuse has no effect on incoming connections.
 
 ```terminal
 net.ipv4.tcp_tw_reuse = 1
@@ -49,11 +50,13 @@ We recommend limiting the list of active PHP extensions to those that are requir
 
 Adding more extensions increases library load times.
 
- {:.bs-callout-info}
-`php-mcrypt` has been removed from PHP 7.2 and replaced with the [`sodium` library](https://www.php.net/manual/en/book.sodium.php). Ensure that [sodium](https://www.php.net/manual/en/sodium.installation.php) is properly enabled when upgrading PHP.
+>[!INFO]
+>
+>`php-mcrypt` has been removed from PHP 7.2 and replaced with the [`sodium` library](https://www.php.net/manual/en/book.sodium.php). Ensure that [sodium](https://www.php.net/manual/en/sodium.installation.php) is properly enabled when upgrading PHP.
 
- {:.bs-callout-info}
-The presence of any profiling and debugging extensions can negatively impact the response time of your pages. As an example, an active xDebug module without any debug session can increase the page response time by up to 30%.
+>[!INFO]
+>
+>The presence of any profiling and debugging extensions can negatively impact the response time of your pages. As an example, an active xDebug module without any debug session can increase the page response time by up to 30%.
 
 ### PHP Settings
 
@@ -95,7 +98,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-We recommend enabling the [PHP APCu extension](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) and [configuring `composer` to support it]({{ page.baseurl }}/performance-best-practices/deployment-flow.html#preprocess-dependency-injection-instructions) to optimize for maximum performance. This extension caches file locations for opened files, which increases performance for Magento server calls including pages, Ajax calls, and endpoints.
+We recommend enabling the [PHP APCu extension](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) and [configuring `composer` to support it](https://devdocs.magento.com/guides/v2.4/performance-best-practices/deployment-flow.html#preprocess-dependency-injection-instructions) to optimize for maximum performance. This extension caches file locations for opened files, which increases performance for Magento server calls including pages, Ajax calls, and endpoints.
 
 Edit your `apcu.ini` file to include the following:
 
@@ -146,7 +149,7 @@ Magento distributes a sample configuration file for Varnish (versions 4 and 5) t
 *  **Grace mode** allows you to instruct Varnish to keep an object in cache beyond its Time to Live (TTL) period and serve this stale content if Magento is not healthy or if fresh content hasn’t been fetched yet.
 *  **Saint mode** blacklists unhealthy Magento servers for a configurable amount of time. As a result, unhealthy backends cannot serve traffic when using Varnish as a load balancer.
 
-See [Advanced Varnish configuration]({{page.baseurl}}/config-guide/varnish/config-varnish-advanced.html) for more information about implementing these features.
+See [Advanced Varnish configuration](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish-advanced.html) for more information about implementing these features.
 
 ### Optimize asset performance
 
@@ -199,5 +202,6 @@ If you plan to serve all your traffic with just one web node, it does not make s
 
 For a multiple web nodes setup, Redis is the best option. Because Magento actively caches lots of data for better performance, pay attention to your network channel between the web nodes and the Redis server. You do not want the channel to become a bottleneck for request processing.
 
- {:.bs-callout-info}
-If you need to serve hundreds and thousands of simultaneous requests, you may need a channel of up to 1 Gbit (or even wider) to your Redis server.
+>[!INFO]
+>
+>If you need to serve hundreds and thousands of simultaneous requests, you may need a channel of up to 1 Gbit (or even wider) to your Redis server.

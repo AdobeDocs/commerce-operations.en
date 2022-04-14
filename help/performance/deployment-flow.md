@@ -36,12 +36,13 @@ bin/magento setup:di:compile
 
 ## Update the autoloader
 
-After compilation completes, confirm that [APCu is enabled]({{ page.baseurl }}/performance-best-practices/software.html#php-settings) and update the autoloader:
+After compilation completes, confirm that [APCu is enabled](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) and update the autoloader:
 
 To update the autoloader:
 
-{:.bs-callout-info}
-The `-o` option converts PSR-0/4 autoloading to classmap to get a faster autoloader. The `--apcu` option uses APCu to cache found/not-found classes.
+>[!INFO]
+>
+>The `-o` option converts PSR-0/4 autoloading to classmap to get a faster autoloader. The `--apcu` option uses APCu to cache found/not-found classes.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -77,7 +78,7 @@ Deploying static content causes Magento 2 to perform the following actions:
 
 If your static content is not deployed, Magento performs all listed operation on the fly, leading to a significant increase in response time.
 
-You can use a variety of options to customize deployment operations based on store size and fulfillment needs. The most common is the compact deploy strategy. See [Static files deployment strategies]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+You can use a variety of options to customize deployment operations based on store size and fulfillment needs. The most common is the compact deploy strategy. See [Static files deployment strategies](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
 
 To deploy static content:
 
@@ -89,8 +90,9 @@ This command allows Composer to rebuild the mapping to project files so that the
 
 ## Set production mode
 
-{:.bs-callout-info}
-Setting the mode to production automatically runs `setup:di:compile` and `setup:static-content:deploy`.
+>[!INFO]
+>
+>Setting the mode to production automatically runs `setup:di:compile` and `setup:static-content:deploy`.
 
 Finally, you need to place your store in Production mode. Production mode is specifically optimized for maximum performance of your store. It also de-activates all developer-specific features. This can be done in your `.htaccess` or `nginx.conf` file:
 

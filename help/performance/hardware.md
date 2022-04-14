@@ -25,7 +25,7 @@ Scenarios and expected PHP memory requirements:
 
 *  Webnode serving only storefront pages: 256 MB
 *  Webnode serving admin pages with a large catalog: 1 GB
-*  Magento 2 cron indexing a site with a large catalog: >256 MB (See [advanced-setup]({{ page.baseurl }}/performance-best-practices/advanced-setup.html) to tune for optimal performance.)
+*  Magento 2 cron indexing a site with a large catalog: >256 MB (See [advanced-setup](https://devdocs.magento.com/guides/v2.4/performance-best-practices/advanced-setup.html) to tune for optimal performance.)
 *  Magento 2 compile and deploy of static assets: 756 MB
 *  Magento 2 performance toolkit profile generation: >1 GB PHP RAM, >16 MB MySQL TMP_TABLE_SIZE & MAX_HEAP_TABLE_SIZE settings
 
