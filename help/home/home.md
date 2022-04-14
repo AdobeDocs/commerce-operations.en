@@ -73,7 +73,7 @@ Get practical information about concepts, processes, tools, and best practices t
        <img alt="Tools" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Tools</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Tools</strong></a>
     </div>
   </td>
 </tr>
