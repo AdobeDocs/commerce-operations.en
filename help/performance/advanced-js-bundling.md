@@ -16,7 +16,7 @@ In a modular application, the number of server requests can reach into the hundr
 
 ## Merging and bundling
 
-Out of the box, [!DNL Commerce] provides two ways to reduce the number of server requests: merging and bundling. These settings are turned off by default. You can turn them on within the Admin UI in **[!UICONTORL Stores]** > **Settings** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, or from the command line.
+Out of the box, [!DNL Commerce] provides two ways to reduce the number of server requests: merging and bundling. These settings are turned off by default. You can turn them on within the Admin UI in **[!UICONTROL Stores]** > **Settings** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, or from the command line.
 
 ![Bundling](../assets/performance/images/bundlingImage.png)
 
@@ -125,7 +125,7 @@ Add the following RequireJS build configuration nodes, `deps`, `shim`, `paths`, 
 
 #### 3\. Aggregate the requirejs-config.js instance values
 
-In this step, you will need to aggregate all of the multiple `deps`, `shim`, `paths`, and `map` configuration nodes from your store's `requirejs-config.js` file into the corresponding nodes in your `build.js` file. To do this, you can open the **[!UICONTORL Network]** tab in your browser's Developer Tools panel and navigate to any page in your store, such as the homepage. In the Network tab, you will see your store's instance of the `requirejs-config.js` file near the top, highlighted here:
+In this step, you will need to aggregate all of the multiple `deps`, `shim`, `paths`, and `map` configuration nodes from your store's `requirejs-config.js` file into the corresponding nodes in your `build.js` file. To do this, you can open the **[!UICONTROL Network]** tab in your browser's Developer Tools panel and navigate to any page in your store, such as the homepage. In the Network tab, you will see your store's instance of the `requirejs-config.js` file near the top, highlighted here:
 
 ![RequireJSConfig](images/RequireJSConfig.png)
 

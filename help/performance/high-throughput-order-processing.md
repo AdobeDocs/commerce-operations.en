@@ -68,11 +68,11 @@ The `set` command writes the following to the `app/etc/env.php` file:
 
 AsyncOrder supports a limited set of [!DNL Commerce] features.
 
-Category         | Supported Feature
----------------- | -----------------------
-Checkout types   | OnePage Checkout<br>Standard Checkout<br>B2B Negotiable Quote
-Payment methods  | Check/Money Order<br>Cash on Delivery<br>Braintree<br>PayPal PayFlow Pro
-Shipping methods | All shipping methods are supported.
+|Category         | Supported Feature|
+|---------------- | -----------------------|
+|Checkout types   | OnePage Checkout<br>Standard Checkout<br>B2B Negotiable Quote|
+|Payment methods  | Check/Money Order<br>Cash on Delivery<br>Braintree<br>PayPal PayFlow Pro|
+|Shipping methods | All shipping methods are supported.|
 
 The following features are **not** supported by AsyncOrder, but continue to work synchronously:
 

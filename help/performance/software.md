@@ -171,11 +171,11 @@ Magento fully supports the Nginx and Apache web servers. [!DNL Commerce] provide
 
 You should also configure the number of threads for input request processing, as listed below:
 
-Web server | Attribute name | Location | Related information
---- | --- | --- | ---
-Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Tuning NGINX for Performance](https://www.nginx.com/blog/tuning-nginx/)
-Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache Performance Tuning](http://httpd.apache.org/docs/2.2/misc/perf-tuning.html)
-Apache 2.4 | `MaxRequestWorkers` |  `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache MPM Common Directives](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers )
+|Web server | Attribute name | Location | Related information|
+|--- | --- | --- | ---|
+|Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Tuning NGINX for Performance](https://www.nginx.com/blog/tuning-nginx/)|
+|Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache Performance Tuning](http://httpd.apache.org/docs/2.2/misc/perf-tuning.html)|
+|Apache 2.4 | `MaxRequestWorkers` |  `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache MPM Common Directives](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers )|
 
 ## [!DNL MySQL]
 
@@ -183,12 +183,12 @@ This document does not provide in-depth [!DNL MySQL] tuning instructions because
 
 There have been many improvements to [!DNL MySQL] 5.7.9 We are confident that [!DNL MySQL] is distributed with good default settings. The most critical settings are:
 
-Parameter | Default | Description
---- | --- | ---
-`innodb_buffer_pool_instances` | 8 | The default value is set to 8 to avoid issues with multiple threads attempting to access the same instance.
-`innodb_buffer_pool_size` | 128MB | Combined with the multiple pool instances described above, this means a default memory allocation of 1024MB. The total size is divided among all the buffer pools. For best efficiency, specify a combination of `innodb_buffer_pool_instances` and `innodb_buffer_pool_size` so that each buffer pool instance is at least 1 GB.
-`max_connections` | 150 | The value of the `max_connections` parameter should correlate with the total number of PHP threads configured in the application server. A general recommendation would be 300 for a small and 1,000 for a medium environment.
-`innodb_thread_concurrency` | 0 | The best value for this configuration should be calculated by the formula: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)`
+|Parameter | Default | Description|
+|--- | --- | ---|
+|`innodb_buffer_pool_instances` | 8 | The default value is set to 8 to avoid issues with multiple threads attempting to access the same instance.|
+|`innodb_buffer_pool_size` | 128MB | Combined with the multiple pool instances described above, this means a default memory allocation of 1024MB. The total size is divided among all the buffer pools. For best efficiency, specify a combination of `innodb_buffer_pool_instances` and `innodb_buffer_pool_size` so that each buffer pool instance is at least 1 GB.|
+|`max_connections` | 150 | The value of the `max_connections` parameter should correlate with the total number of PHP threads configured in the application server. A general recommendation would be 300 for a small and 1,000 for a medium environment.|
+|`innodb_thread_concurrency` | 0 | The best value for this configuration should be calculated by the formula: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)`|
 
 ## [!DNL Varnish]
 
