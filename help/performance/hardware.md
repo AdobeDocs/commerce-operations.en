@@ -9,7 +9,7 @@ functional_areas:
 
 ## CPUs
 
-Magento web nodes serve all requests that are not cached or cannot be cached through the application. One CPU core can serve around two (sometimes up to four) Commerce requests effectively. Use the following equation to determine how many  web nodes/cores you need to process all incoming requests without putting them into queue:
+Magento web nodes serve all requests that are not cached or cannot be cached through the application. One CPU core can serve around two (sometimes up to four) [!DNL Commerce] requests effectively. Use the following equation to determine how many  web nodes/cores you need to process all incoming requests without putting them into queue:
 
   `N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]`
 
@@ -25,22 +25,22 @@ Scenarios and expected PHP memory requirements:
 
 *  Webnode serving only storefront pages: 256 MB
 *  Webnode serving admin pages with a large catalog: 1 GB
-*  Commerce cron indexing a site with a large catalog: >256 MB (See [advanced-setup](https://devdocs.magento.com/guides/v2.4/performance-best-practices/advanced-setup.html) to tune for optimal performance.)
-*  Commerce compile and deploy of static assets: 756 MB
-*  Commerce performance toolkit profile generation: >1 GB PHP RAM, >16 MB MySQL TMP_TABLE_SIZE & MAX_HEAP_TABLE_SIZE settings
+*  [!DNL Commerce] cron indexing a site with a large catalog: >256 MB (See [advanced-setup](https://devdocs.magento.com/guides/v2.4/performance-best-practices/advanced-setup.html) to tune for optimal performance.)
+*  [!DNL Commerce] compile and deploy of static assets: 756 MB
+*  [!DNL Commerce] performance toolkit profile generation: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE & MAX_HEAP_TABLE_SIZE settings
 
-### MySQL
+### [!DNL MySQL]
 
-The Commerce database (as well as any other database) is sensitive to the amount of the memory available for storing data and indexes. To effectively leverage MySQL data indexation, the amount of memory available should be, at minimum, close to half the size of the data stored in the database.
+The [!DNL Commerce] database (as well as any other database) is sensitive to the amount of the memory available for storing data and indexes. To effectively leverage [!DNL MySQL] data indexation, the amount of memory available should be, at minimum, close to half the size of the data stored in the database.
 
 ### Caches
 
-If you are deploying multiple Commerce and using Redis or Varnish for your caches, please keep the following principles in mind:
+If you are deploying multiple [!DNL Commerce] and using Redis or [!DNL Varnish] for your caches, please keep the following principles in mind:
 
-*  Varnish full page cache memory invalidation is effective, recommend enough memory allocated to Varnish to hold your most popular pages in memory
+*  [!DNL Varnish] full page cache memory invalidation is effective, recommend enough memory allocated to [!DNL Varnish] to hold your most popular pages in memory
 *  Session cache is a good candidate to configure for a separate instance of Redis.  Memory configuration for this cache type should consider the site's cart abandonment strategy and how long a session should expect to remain in the cache
 *  Redis should have enough memory allocated to hold all other caches in memory for optimal performance.  Block cache will be the key factor in determining the amount of memory to configure.  Block cache grows relative to number of pages on a site (number of skus x number of store views)
 
 ## Network bandwidth
 
-Sufficient network bandwidth is one of the key requirements for data exchange between web nodes, database(s), caching/session servers, and other services. Because Commerce effectively leverages caching for high performance, your system can actively exchange data with caching servers like Redis. If Redis is located on a remote server, you must provide a sufficient network channel between web nodes and the caching server to prevent bottlenecks on read/write operations.
+Sufficient network bandwidth is one of the key requirements for data exchange between web nodes, database(s), caching/session servers, and other services. Because [!DNL Commerce] effectively leverages caching for high performance, your system can actively exchange data with caching servers like Redis. If Redis is located on a remote server, you must provide a sufficient network channel between web nodes and the caching server to prevent bottlenecks on read/write operations.

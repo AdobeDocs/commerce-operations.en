@@ -8,29 +8,29 @@ functional_areas:
   - Setup
 ---
 
-This topic describes a generic recommended setup for Adobe Commerce and Commerce Open Source instances using plain servers hosted physically in a data center (not virtualized) in which resources are not shared with other users. Your hosting provider, especially if it specializes in Commerce high performance hosting, might recommend a different setup that is equally or more effective for your requirements.
+This topic describes a generic recommended setup for Adobe Commerce and Magento Open Source instances using plain servers hosted physically in a data center (not virtualized) in which resources are not shared with other users. Your hosting provider, especially if it specializes in Commerce high performance hosting, might recommend a different setup that is equally or more effective for your requirements.
 
 For Adobe Commerce on cloud infrastructure environments, see [Starter architecture](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
-## Commerce Reference Architecture diagram
+## [!DNL Commerce] Reference Architecture diagram
 
-The Commerce Reference Architecture diagram represents the best practice approach to set up a scalable Commerce site.
+The [!DNL Commerce] Reference Architecture diagram represents the best practice approach to set up a scalable [!DNL Commerce] site.
 
-The color of each element in the diagram indicates whether the element is part of Commerce Open Source or Adobe Commerce and if it is required.
+The color of each element in the diagram indicates whether the element is part of Magento Open Source or Adobe Commerce and if it is required.
 
-*  Orange elements are required for Commerce Open Source
-*  Grey elements are optional for Commerce Open Source
+*  Orange elements are required for Magento Open Source
+*  Grey elements are optional for Magento Open Source
 *  Blue elements are optional for Adobe Commerce
 
 ![Commerce reference architecture diagram](../assets/performance/images/ref-architecture-2.3.png)
 
 The following sections provide recommendations and considerations for each section of the Commerce Reference Architecture diagram.
 
-### Varnish
+### [!DNL Varnish]
 
-*  A Varnish cluster can scale to the traffic of a site
+*  A [!DNL Varnish] cluster can scale to the traffic of a site
 *  Tune the instance size based on the number of cache pages needed
-*  On a high-traffic site, use a Varnish Master to ensure on-cache flush one request (at most) per web tier
+*  On a high-traffic site, use a [!DNL Varnish] Master to ensure on-cache flush one request (at most) per web tier
 
 ### Web
 
@@ -59,14 +59,14 @@ The following sections provide recommendations and considerations for each secti
 *  Consider using GFS or GlusterFS for pub/media storage
 *  Alternatively, use DB storage for low-traffic sites
 
-### Recommended Varnish Reference Architecture
+### Recommended [!DNL Varnish] Reference Architecture
 
-Magento supports several full page caching engines (File, Memcache, Redis, Varnish) out of the box, along with expanded coverage through extensions. Varnish is the recommended full page cache engine.  Commerce supports many different Varnish configurations.
+Magento supports several full page caching engines (File, Memcache, Redis, [!DNL Varnish]) out of the box, along with expanded coverage through extensions. [!DNL Varnish] is the recommended full page cache engine.  [!DNL Commerce] supports many different [!DNL Varnish] configurations.
 
-For sites that do not require high availability, we recommend using a simple Varnish setup with Nginx SSL termination.
+For sites that do not require high availability, we recommend using a simple [!DNL Varnish] setup with Nginx SSL termination.
 
-![Simple Varnish Configuration with SSL Termination](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![Simple [!DNL Varnish] Configuration with SSL Termination](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
-For sites that require high availability, we recommend using a 2-tier Varnish configuration with an SSL terminating load balancer.
+For sites that require high availability, we recommend using a 2-tier [!DNL Varnish] configuration with an SSL terminating load balancer.
 
-![High availability two-tier Varnish configuration with SSL terminating load balancer](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![High availability two-tier [!DNL Varnish] configuration with SSL terminating load balancer](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

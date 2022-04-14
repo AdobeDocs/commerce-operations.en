@@ -1,6 +1,6 @@
 ---
 user-guide-title: Performance Best Practices
-user-guide-description: Optimize the performance of your Adobe Commerce or Commerce Open Source production deployment using our recommendations.
+user-guide-description: Optimize the performance of your Adobe Commerce or Magento Open Source production deployment using our recommendations.
 ---
 
 # Performance Best Practices {#performance-best-practices}
@@ -15,4 +15,4 @@ user-guide-description: Optimize the performance of your Adobe Commerce or Comme
 - [High-throughput order processing](high-throughput-order-processing.md)
 - Advanced concepts
   - [Advanced setup](advanced-setup.md)
-  - [Advanced JavaScript bundling](advanced-js-bundling.md)
+  - [Advanced [!DNL JavaScript] bundling](advanced-js-bundling.md)

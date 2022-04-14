@@ -7,13 +7,13 @@ functional_areas:
   - Setup
 ---
 
-The Commerce production deployment flow helps a store reach maximum performance.
+The [!DNL Commerce] production deployment flow helps a store reach maximum performance.
 
 ## Install dependencies
 
-The `composer.json` and `composer.lock` files manage Commerce dependencies and install the appropriate version for each package. You must install dependencies before [preprocessing dependency injection instructions](#preprocess-dependency-injection-instructions) if you plan to update the [autoloader](#update-the-autoloader).
+The `composer.json` and `composer.lock` files manage [!DNL Commerce] dependencies and install the appropriate version for each package. You must install dependencies before [preprocessing dependency injection instructions](#preprocess-dependency-injection-instructions) if you plan to update the [autoloader](#update-the-autoloader).
 
-To install Commerce dependencies:
+To install [!DNL Commerce] dependencies:
 
 ```bash
 composer install --no-dev
@@ -68,7 +68,7 @@ bin/magento setup:static-content:deploy
 
 ## Deploy static content
 
-Deploying static content causes Commerce to perform the following actions:
+Deploying static content causes [!DNL Commerce] to perform the following actions:
 
 *  Analyze all static resources
 *  Perform merge, minimization, and bundling of content
@@ -76,7 +76,7 @@ Deploying static content causes Commerce to perform the following actions:
 *  Analyze theme fallback
 *  Store all processed and materialized content to specific folder for further usage
 
-If your static content is not deployed, Commerce performs all listed operation on the fly, leading to a significant increase in response time.
+If your static content is not deployed, [!DNL Commerce] performs all listed operation on the fly, leading to a significant increase in response time.
 
 You can use a variety of options to customize deployment operations based on store size and fulfillment needs. The most common is the compact deploy strategy. See [Static files deployment strategies](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
 

@@ -1,21 +1,21 @@
 ---
-title: Advanced JavaScript bundling
+title: Advanced [!DNL JavaScript] bundling
 ---
 
 ## Introduction
 
-Bundling JavaScript modules for better performance is about reducing two things:
+Bundling [!DNL JavaScript] modules for better performance is about reducing two things:
 
 1. The number of server requests.
 1. The size of those server requests.
 
-In a modular application, the number of server requests can reach into the hundreds. For example, the following screen shot shows only the start of the list of JavaScript modules loaded on the home page of a clean installation.
+In a modular application, the number of server requests can reach into the hundreds. For example, the following screen shot shows only the start of the list of [!DNL JavaScript] modules loaded on the home page of a clean installation.
 
 ![No bundling](../assets/performance/images/noBundling.png)
 
 ### Merging and bundling
 
-Out of the box, Commerce provides two ways to reduce the number of server requests: merging and bundling. These settings are turned off by default. You can turn them on within the Admin UI in **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**, or from the command line.
+Out of the box, [!DNL Commerce] provides two ways to reduce the number of server requests: merging and bundling. These settings are turned off by default. You can turn them on within the Admin UI in **[!UICONTORL Stores]** > **Settings** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, or from the command line.
 
 ![Bundling](../assets/performance/images/bundlingImage.png)
 
@@ -27,13 +27,13 @@ To enable built-in bundling from the command line:
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-This is a native Commerce mechanism that combines all assets present in the system and distributes them among same-sized bundles (bundle_0.js, bundle_1.js ... bundle_x.js):
+This is a native [!DNL Commerce] mechanism that combines all assets present in the system and distributes them among same-sized bundles (bundle_0.js, bundle_1.js ... bundle_x.js):
 
-![Commerce bundling](../assets/performance/images/magentoBundling.png)
+![[!DNL Commerce] bundling](../assets/performance/images/magentoBundling.png)
 
-Better, but the browser still loads ALL the JavaScript bundles, not just the ones needed.
+Better, but the browser still loads ALL the [!DNL JavaScript] bundles, not just the ones needed.
 
-Commerce bundling reduces the number of connections per page, but for each page request it loads all bundles, even when the requested page may only depend on files within one or two of the bundles. Performance improves after the browser caches the bundles. But, because the browser loads these bundles synchronously, the user's first visit to a Commerce storefront could take a while to render and hurt the user experience.
+[!DNL Commerce] bundling reduces the number of connections per page, but for each page request it loads all bundles, even when the requested page may only depend on files within one or two of the bundles. Performance improves after the browser caches the bundles. But, because the browser loads these bundles synchronously, the user's first visit to a [!DNL Commerce] storefront could take a while to render and hurt the user experience.
 
 #### Basic merging
 
@@ -43,7 +43,7 @@ To enable built-in merging from the command line:
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
-This command merges all synchronous JavaScript files into one file. Enabling merging without also enabling bundling is not useful because Commerce uses RequireJS. If you don't enable bundling, Commerce only merges RequireJS and its configuration. When you enable both bundling and merging, Commerce creates a single JavaScript file:
+This command merges all synchronous [!DNL JavaScript] files into one file. Enabling merging without also enabling bundling is not useful because [!DNL Commerce] uses RequireJS. If you don't enable bundling, [!DNL Commerce] only merges RequireJS and its configuration. When you enable both bundling and merging, [!DNL Commerce] creates a single [!DNL JavaScript] file:
 
 ![Real-world merging](../assets/performance/images/magentoMergingDevWorld.png)
 
@@ -55,25 +55,25 @@ To test and prepare your storefront deployment for the real world, we recommend 
 
 ![Real-world bundling](../assets/performance/images/magentoBundlingRealWorld.png)
 
-At Slow 3G connectivity, it takes about 44 seconds to load all the bundles for the homepage of a clean Commerce installation.
+At Slow 3G connectivity, it takes about 44 seconds to load all the bundles for the homepage of a clean [!DNL Commerce] installation.
 
 The same is true when merging the bundles into a single file. Users could still wait around 42 seconds for the initial page load as shown here:
 
 ![Real-world merging](../assets/performance/images/magentoMergingRealWorld.png)
 
-With a more advanced approach to JavaScript bundling, we can improve these load times.
+With a more advanced approach to [!DNL JavaScript] bundling, we can improve these load times.
 
 ## Advanced bundling
 
-Remember, the goal of JavaScript bundling is to reduce the number and size of requested assets for each page loaded in the browser. To do that, we want to build our bundles so that each page in our store will only need to download a common bundle and a page-specific bundle for each page accessed.
+Remember, the goal of [!DNL JavaScript] bundling is to reduce the number and size of requested assets for each page loaded in the browser. To do that, we want to build our bundles so that each page in our store will only need to download a common bundle and a page-specific bundle for each page accessed.
 
-One way to achieve this is to define your bundles by page types. You can categorize Commerce's pages into several page types, including Category, Product, CMS, Customer, Cart, and Checkout. Each page categorized into one of these page types has a different set of RequireJS module dependencies. When you bundle your RequireJS modules by page type, you will end up with only a handful of bundles that cover the dependencies of any page in your store.
+One way to achieve this is to define your bundles by page types. You can categorize [!DNL Commerce]'s pages into several page types, including Category, Product, CMS, Customer, Cart, and Checkout. Each page categorized into one of these page types has a different set of RequireJS module dependencies. When you bundle your RequireJS modules by page type, you will end up with only a handful of bundles that cover the dependencies of any page in your store.
 
 For example, you might end up with a bundle for the dependencies common to all pages, a bundle for CMS-only pages, a bundle for Catalog-only pages, another bundle for Search-only pages, and a bundle for Checkout pages.
 
 You could also create bundles by purpose:  for common features, product-related features, shipping features, checkout features, taxes, and form validations. How you define your bundles is up to you and the structure of your store. You may find that some bundling strategies will work better than others.
 
-A clean Commerce installation allows reaching enough good performance by splitting bundles by page types, but some customizations may require deeper analysis and other asset distributions.
+A clean [!DNL Commerce] installation allows reaching enough good performance by splitting bundles by page types, but some customizations may require deeper analysis and other asset distributions.
 
 ### Required tools
 
@@ -95,7 +95,7 @@ Full versions of the sample code used in this article are available here:
 
 #### 1\. Add a build.js file
 
-Create a `build.js` file in the Commerce root directory. This file will contain the entire build configuration for your bundles.
+Create a `build.js` file in the [!DNL Commerce] root directory. This file will contain the entire build configuration for your bundles.
 
 ```javascript
 ({
@@ -124,7 +124,7 @@ Add the following RequireJS build configuration nodes, `deps`, `shim`, `paths`, 
 
 #### 3\. Aggregate the requirejs-config.js instance values
 
-In this step, you will need to aggregate all of the multiple `deps`, `shim`, `paths`, and `map` configuration nodes from your store's `requirejs-config.js` file into the corresponding nodes in your `build.js` file. To do this, you can open the **Network** tab in your browser's Developer Tools panel and navigate to any page in your store, such as the homepage. In the Network tab, you will see your store's instance of the `requirejs-config.js` file near the top, highlighted here:
+In this step, you will need to aggregate all of the multiple `deps`, `shim`, `paths`, and `map` configuration nodes from your store's `requirejs-config.js` file into the corresponding nodes in your `build.js` file. To do this, you can open the **[!UICONTORL Network]** tab in your browser's Developer Tools panel and navigate to any page in your store, such as the homepage. In the Network tab, you will see your store's instance of the `requirejs-config.js` file near the top, highlighted here:
 
 ![RequireJSConfig](images/RequireJSConfig.png)
 
@@ -162,14 +162,14 @@ At the end of the `build.js` file, add the modules[] array as a placeholder for 
 
 #### 5\. Retrieve RequireJS dependencies
 
-You can retrieve all the RequireJS module dependencies from your store's page types by using:
+You can retrieve all the [!DNL RequireJS] module dependencies from your store's page types by using:
 
 1. PhantomJS from the command line (assuming you have PhantomJS installed).
 1. RequireJS command in your browser's console.
 
 #### To use PhantomJS:
 
-In the Commerce root directory, create a new file called `deps.js` and copy in the code below. This code uses PhantomJS to open a page and wait for the browser to load all page assets. It then outputs all the RequireJS dependencies for a given page.
+In the [!DNL Commerce] root directory, create a new file called `deps.js` and copy in the code below. This code uses [!DNL PhantomJS] to open a page and wait for the browser to load all page assets. It then outputs all the [!DNL RequireJS] dependencies for a given page.
 
 ```javascript
 "use strict";
@@ -197,7 +197,7 @@ if (system.args.length === 1) {
 }
 ```
 
-Open a terminal inside the Commerce root directory and run the script against each page in your store that represents a specific page type:
+Open a terminal inside the [!DNL Commerce] root directory and run the script against each page in your store that represents a specific page type:
 
 <pre>
 phantomjs deps.js <i>url-to-specific-page</i> > <i>text-file-representing-pagetype-dependencies</i>
@@ -221,11 +221,11 @@ If you don't want to use PhantomJS, you can run the following command from your 
 Object.keys(window.require.s.contexts._.defined)
 ```
 
-This command (used within the PhantomJS script) creates the same list of RequireJS dependencies and displays them within the browser's console. The disadvantage of this approach is that you will have to create your own bundle/page-type text files.
+This command (used within the PhantomJS script) creates the same list of [!DNL RequireJS] dependencies and displays them within the browser's console. The disadvantage of this approach is that you will have to create your own bundle/page-type text files.
 
 #### 6\. Format and filter the output
 
-After you merge the RequireJS dependencies into page-type text files, you can use the following command on each page-type dependency file to replace the commas in your files with newlines:
+After you merge the [!DNL RequireJS] dependencies into page-type text files, you can use the following command on each page-type dependency file to replace the commas in your files with newlines:
 
 ```terminal
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
@@ -245,9 +245,9 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 
 #### 7\. Identify unique and common bundles
 
-The goal is to create a common bundle of JavaScript files needed by all pages. That way the browser only needs to load the common bundle along with one or more specific page types.
+The goal is to create a common bundle of [!DNL JavaScript] files needed by all pages. That way the browser only needs to load the common bundle along with one or more specific page types.
 
-Open a terminal in the Commerce root directory and use the following command to verify that you have dependencies you can split into separate bundles:
+Open a terminal in the [!DNL Commerce] root directory and use the following command to verify that you have dependencies you can split into separate bundles:
 
 ```bash
 sort bundle/*.txt |uniq -c |sort -n
@@ -280,7 +280,7 @@ This tells us that we can likely improve our store's page-loading speeds by spli
 
 #### 8\. Create a dependencies distribution file
 
-To find out which page types need which dependencies, create a new file in the Commerce root directory called `deps-map.sh` and copy in the code below:
+To find out which page types need which dependencies, create a new file in the [!DNL Commerce] root directory called `deps-map.sh` and copy in the code below:
 
 ```shell
 awk 'END {
@@ -302,7 +302,7 @@ awk 'END {
 
 You can also find the script at [https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
 
-Open a terminal in the Commerce root directory and run the file:
+Open a terminal in the [!DNL Commerce] root directory and run the file:
 
 ```bash
 bash deps-map.sh
@@ -371,7 +371,7 @@ This example reuses `mage/bootstrap` and `requirejs/require` assets, placing hig
 
 ### Part 2: Generate bundles
 
-The steps below describe the basic process for generating more efficient Commerce bundles. You can automate this process any way you want, but you will still need to use `nodejs` and `r.js` to actually generate your bundles. And if your themes have JavaScript-related customizations and cannot reuse the same `build.js` file, you may need to create several `build.js` configurations per theme.
+The steps below describe the basic process for generating more efficient [!DNL Commerce] bundles. You can automate this process any way you want, but you will still need to use `nodejs` and `r.js` to actually generate your bundles. And if your themes have [!DNL JavaScript]-related customizations and cannot reuse the same `build.js` file, you may need to create several `build.js` configurations per theme.
 
 #### 1. Generate static store sites
 
@@ -406,7 +406,7 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 #### 3. Run the r.js optimizer
 
-Then run the r.js optimizer on the `build.js` file from Commerce's root directory. Paths to all directories and files are relative to the working directory.
+Then run the r.js optimizer on the `build.js` file from [!DNL Commerce]'s root directory. Paths to all directories and files are relative to the working directory.
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
@@ -496,11 +496,11 @@ After the page loads, notice the browser loading different dependencies and bund
 
 ![Twice as fast](../assets/performance/images/TwiceAsFast.png)
 
-The page load time for an empty homepage is now twice as fast than using native Commerce bundling. But we can do even better.
+The page load time for an empty homepage is now twice as fast than using native [!DNL Commerce] bundling. But we can do even better.
 
 #### 7. Optimize the bundles
 
-Even if gzipped, the JavaScript files are still large. Minify them with RequireJS, which uses uglifier for minifying JavaScript to good result.
+Even if gzipped, the [!DNL JavaScript] files are still large. Minify them with RequireJS, which uses uglifier for minifying [!DNL JavaScript] to good result.
 
 To enable the optimizer in your `build.js` file, add `uglify2` as the value for the optimize property at the top of the `build.js` file:
 
@@ -514,4 +514,4 @@ To enable the optimizer in your `build.js` file, add `uglify2` as the value for 
 The results can be significant:
 ![Three times faster](../assets/performance/images/ThreeTimesFaster.png)
 
-The load times are now three times faster than with native Commerce bundling.
+The load times are now three times faster than with native [!DNL Commerce] bundling.

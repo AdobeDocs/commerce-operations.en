@@ -21,7 +21,7 @@ Use the command-line interface to enable these features, or edit the `app/etc/en
 
 The _Async Order_ module enables asynchronous order placement, which marks the order as `received`, places the order in a queue, and processes orders from the queue on a first-in-first-out basis. AsyncOrder is **disabled** by default.
 
-For example, a customer adds a product to their shopping cart and selects **Proceed to Checkout**. They fill out the **Shipping Address** form, select their preferred **Shipping Method**, select a payment method, and place the order. The shopping cart is cleared, the order is marked as **Received**, but the Product quantity is not adjusted yet, nor is a sales email sent to the customer. The order is received, but the order details are not yet available because the order has not been fully processed. It remains in the queue until the `placeOrderProcess` consumer begins, verifies the order with the [inventory check](#inventory-check) feature (enabled by default), and updates the order as follows:
+For example, a customer adds a product to their shopping cart and selects **[!UICONTROL Proceed to Checkout]**. They fill out the **[Shipping !UICONTROL Address]** form, select their preferred **[!UICONTROL Shipping Method]**, select a payment method, and place the order. The shopping cart is cleared, the order is marked as **[!UICONTROL Received]**, but the Product quantity is not adjusted yet, nor is a sales email sent to the customer. The order is received, but the order details are not yet available because the order has not been fully processed. It remains in the queue until the `placeOrderProcess` consumer begins, verifies the order with the [inventory check](#inventory-check) feature (enabled by default), and updates the order as follows:
 
 -  **Product available**—the order status changes to _Pending_, the product quantity is adjusted, an email with order details is sent to the customer, and the successful order details become available for viewing in the **Orders and Returns** list with actionable options, such as reorder.
 -  **Product out of stock or low supply**—the order status changes to _Rejected_, the Product quantity is not adjusted, an email with order details about the issue is sent to the customer, and the rejected order details become available in the **Orders and Returns** list with no actionable options.
@@ -68,7 +68,7 @@ The `set` command writes the following to the `app/etc/env.php` file:
 
 ### AsyncOrder compatibility
 
-AsyncOrder supports a limited set of Commerce features.
+AsyncOrder supports a limited set of [!DNL Commerce] features.
 
 Category         | Supported Feature
 ---------------- | -----------------------
@@ -163,7 +163,7 @@ When disabled, inventory check does not occur when adding a product to the shopp
 
 Enable Inventory On Cart Load is **enabled** by default.
 
-To disable the inventory check when loading the cart, set **Enable Inventory Check On Cart Load** to `No` in the Admin UI. See [Configure Global Options][global] and [Catalog Inventory][inventory] in the _User Guide_.
+To disable the inventory check when loading the cart, set **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` in the Admin UI. See [Configure Global Options][global] and [Catalog Inventory][inventory] in the _User Guide_.
 
 <!-- link definitions -->
 
