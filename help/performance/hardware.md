@@ -9,7 +9,7 @@ functional_areas:
 
 ## CPUs
 
-Magento web nodes serve all requests that are not cached or cannot be cached through the application. One CPU core can serve around two (sometimes up to four) Magento requests effectively. Use the following equation to determine how many  web nodes/cores you need to process all incoming requests without putting them into queue:
+Magento web nodes serve all requests that are not cached or cannot be cached through the application. One CPU core can serve around two (sometimes up to four) Commerce requests effectively. Use the following equation to determine how many  web nodes/cores you need to process all incoming requests without putting them into queue:
 
   `N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]`
 
@@ -19,23 +19,23 @@ If you expect a store's load to change, you can manually increase the number of 
 
 ### PHP
 
-Magento 2 has differing PHP memory requirements, based on how your system is deployed.  In general, if you are setting up a single server store, we recommend configuring PHP memory for 2G.  If you are setting up a site using pipeline deployment, we recommend 2 GB on your build server and 1 GB on your web nodes.
+Magento has differing PHP memory requirements, based on how your system is deployed.  In general, if you are setting up a single server store, we recommend configuring PHP memory for 2G.  If you are setting up a site using pipeline deployment, we recommend 2 GB on your build server and 1 GB on your web nodes.
 
 Scenarios and expected PHP memory requirements:
 
 *  Webnode serving only storefront pages: 256 MB
 *  Webnode serving admin pages with a large catalog: 1 GB
-*  Magento 2 cron indexing a site with a large catalog: >256 MB (See [advanced-setup](https://devdocs.magento.com/guides/v2.4/performance-best-practices/advanced-setup.html) to tune for optimal performance.)
-*  Magento 2 compile and deploy of static assets: 756 MB
-*  Magento 2 performance toolkit profile generation: >1 GB PHP RAM, >16 MB MySQL TMP_TABLE_SIZE & MAX_HEAP_TABLE_SIZE settings
+*  Commerce cron indexing a site with a large catalog: >256 MB (See [advanced-setup](https://devdocs.magento.com/guides/v2.4/performance-best-practices/advanced-setup.html) to tune for optimal performance.)
+*  Commerce compile and deploy of static assets: 756 MB
+*  Commerce performance toolkit profile generation: >1 GB PHP RAM, >16 MB MySQL TMP_TABLE_SIZE & MAX_HEAP_TABLE_SIZE settings
 
 ### MySQL
 
-The Magento 2 database (as well as any other database) is sensitive to the amount of the memory available for storing data and indexes. To effectively leverage MySQL data indexation, the amount of memory available should be, at minimum, close to half the size of the data stored in the database.
+The Commerce database (as well as any other database) is sensitive to the amount of the memory available for storing data and indexes. To effectively leverage MySQL data indexation, the amount of memory available should be, at minimum, close to half the size of the data stored in the database.
 
 ### Caches
 
-If you are deploying multiple Magento 2 and using Redis or Varnish for your caches, please keep the following principles in mind:
+If you are deploying multiple Commerce and using Redis or Varnish for your caches, please keep the following principles in mind:
 
 *  Varnish full page cache memory invalidation is effective, recommend enough memory allocated to Varnish to hold your most popular pages in memory
 *  Session cache is a good candidate to configure for a separate instance of Redis.  Memory configuration for this cache type should consider the site's cart abandonment strategy and how long a session should expect to remain in the cache
@@ -43,4 +43,4 @@ If you are deploying multiple Magento 2 and using Redis or Varnish for your cach
 
 ## Network bandwidth
 
-Sufficient network bandwidth is one of the key requirements for data exchange between web nodes, database(s), caching/session servers, and other services. Because Magento 2 effectively leverages caching for high performance, your system can actively exchange data with caching servers like Redis. If Redis is located on a remote server, you must provide a sufficient network channel between web nodes and the caching server to prevent bottlenecks on read/write operations.
+Sufficient network bandwidth is one of the key requirements for data exchange between web nodes, database(s), caching/session servers, and other services. Because Commerce effectively leverages caching for high performance, your system can actively exchange data with caching servers like Redis. If Redis is located on a remote server, you must provide a sufficient network channel between web nodes and the caching server to prevent bottlenecks on read/write operations.

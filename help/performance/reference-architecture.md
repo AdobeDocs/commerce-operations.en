@@ -8,23 +8,23 @@ functional_areas:
   - Setup
 ---
 
-This topic describes a generic recommended setup for Adobe Commerce and Magento Open Source instances using plain servers hosted physically in a data center (not virtualized) in which resources are not shared with other users. Your hosting provider, especially if it specializes in Magento high performance hosting, might recommend a different setup that is equally or more effective for your requirements.
+This topic describes a generic recommended setup for Adobe Commerce and Commerce Open Source instances using plain servers hosted physically in a data center (not virtualized) in which resources are not shared with other users. Your hosting provider, especially if it specializes in Commerce high performance hosting, might recommend a different setup that is equally or more effective for your requirements.
 
 For Adobe Commerce on cloud infrastructure environments, see [Starter architecture](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
-## Magento Reference Architecture diagram
+## Commerce Reference Architecture diagram
 
-The Magento Reference Architecture diagram represents the best practice approach to set up a scalable Magento site.
+The Commerce Reference Architecture diagram represents the best practice approach to set up a scalable Commerce site.
 
-The color of each element in the diagram indicates whether the element is part of Magento Open Source or Adobe Commerce and if it is required.
+The color of each element in the diagram indicates whether the element is part of Commerce Open Source or Adobe Commerce and if it is required.
 
-*  Orange elements are required for Magento Open Source
-*  Grey elements are optional for Magento Open Source
+*  Orange elements are required for Commerce Open Source
+*  Grey elements are optional for Commerce Open Source
 *  Blue elements are optional for Adobe Commerce
 
 ![Commerce reference architecture diagram](../assets/performance/images/ref-architecture-2.3.png)
 
-The following sections provide recommendations and considerations for each section of the Magento Reference Architecture diagram.
+The following sections provide recommendations and considerations for each section of the Commerce Reference Architecture diagram.
 
 ### Varnish
 
@@ -61,7 +61,7 @@ The following sections provide recommendations and considerations for each secti
 
 ### Recommended Varnish Reference Architecture
 
-Magento supports several full page caching engines (File, Memcache, Redis, Varnish) out of the box, along with expanded coverage through extensions. Varnish is the recommended full page cache engine.  Magento supports many different Varnish configurations.
+Magento supports several full page caching engines (File, Memcache, Redis, Varnish) out of the box, along with expanded coverage through extensions. Varnish is the recommended full page cache engine.  Commerce supports many different Varnish configurations.
 
 For sites that do not require high availability, we recommend using a simple Varnish setup with Nginx SSL termination.
 
