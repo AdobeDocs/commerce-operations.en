@@ -9,18 +9,13 @@ This page provides recommendations for Commerce development environments.
 
 ## Clean the caches instead of disabling
 
-Many developers tend to disable all caches on their developer instances.
-We recommend only cleaning caches, without disabling all caches.
-Magento runs more efficiently when you [clean the caches][] instead of disabling them completely.
-Most types of caches are rarely invalidated during development.
+Many developers tend to disable all caches on their developer instances. We recommend only cleaning caches, without disabling all caches. [!DNL Commerce] runs more efficiently when you [clean the caches][] instead of disabling them completely. Most types of caches are rarely invalidated during development.
 
-If you [disable the caches][], we recommend only disabling Page and Block caches in development instances.
-Remember to enable all caches during testing.
+If you [disable the caches][], we recommend only disabling Page and Block caches in development instances. Remember to enable all caches during testing.
 
 ## Commands to avoid in the development mode
 
-In the development mode, do not run commands for compilation, code generation and static content deployment.
-These commands were built for use in production mode only.
+In the development mode, do not run commands for compilation, code generation and static content deployment. These commands were built for use in production mode only.
 
 **Do not run** production commands in development mode:
 
