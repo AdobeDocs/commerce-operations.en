@@ -127,7 +127,7 @@ Add the following RequireJS build configuration nodes, `deps`, `shim`, `paths`, 
 
 In this step, you will need to aggregate all of the multiple `deps`, `shim`, `paths`, and `map` configuration nodes from your store's `requirejs-config.js` file into the corresponding nodes in your `build.js` file. To do this, you can open the **[!UICONTROL Network]** tab in your browser's Developer Tools panel and navigate to any page in your store, such as the homepage. In the Network tab, you will see your store's instance of the `requirejs-config.js` file near the top, highlighted here:
 
-![RequireJSConfig](images/RequireJSConfig.png)
+![RequireJS configuration](../assets/performance/images/RequireJSConfig.png)
 
 Within this file, you will find multiple entries for each of the configuration nodes (`deps`, `shim`, `paths`, `map`). You need to aggregate these multiple node values into your build.js file's single configuration node. For example, if your store's `requirejs-config.js` instance has entries for 15 separate `map` nodes, you will need to merge the entries for all 15 nodes into the single `map` node in your `build.js` file. The same will be true for the `deps`, `shim`, and `paths` nodes. Without a script to automate this process, it may take time.
 
