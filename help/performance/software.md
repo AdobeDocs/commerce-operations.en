@@ -1,11 +1,9 @@
 ---
-group: performance-best-practices
-title: Software recommendations
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Software Recommendations
+description: Review a list of recommended software related to optimal performance of Adobe Commerce and Magento Open Source deployments.
 ---
+
+# Software recommendations
 
 We require the following software for production instances of [!DNL Commerce]:
 
@@ -46,7 +44,62 @@ Magento fully supports PHP 7.3 and 7.4. There are several factors to account for
 
 We recommend limiting the list of active PHP extensions to those that are required for [!DNL Commerce] functionality.
 
-{% include install/php-extensions-template.md %}
+Magento Open Source and Adobe Commerce:
+
+* ext-bcmath
+* ext-ctype
+* ext-curl
+* ext-dom
+* ext-fileinfo
+* ext-gd
+* ext-hash
+* ext-iconv
+* ext-intl
+* ext-json
+* ext-libxml
+* ext-mbstring
+* ext-openssl
+* ext-pcre
+* ext-pdo_mysql
+* ext-simplexml
+* ext-soap
+* ext-sockets
+* ext-sodium
+* ext-tokenizer
+* ext-xmlwriter
+* ext-xsl
+* ext-zip
+* lib-libxml
+* lib-openssl
+
+Additionally Adobe Commerce requires:
+
+* ext-bcmath
+* ext-ctype
+* ext-curl
+* ext-dom
+* ext-fileinfo
+* ext-gd
+* ext-hash
+* ext-iconv
+* ext-intl
+* ext-json
+* ext-libxml
+* ext-mbstring
+* ext-openssl
+* ext-pcre
+* ext-pdo_mysql
+* ext-simplexml
+* ext-soap
+* ext-sockets
+* ext-sodium
+* ext-spl
+* ext-tokenizer
+* ext-xmlwriter
+* ext-xsl
+* ext-zip
+* lib-libxml
+* lib-openssl
 
 Adding more extensions increases library load times.
 

@@ -1,18 +1,15 @@
 ---
-group: performance-best-practices
-title: Reference architecture
-contributor_name: Chuck Choukalos
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Reference Architecture
+description: Review diagrams of the recommended reference architecture for Adobe Commerce and Magento Open Source deployments.
 ---
+
+# Reference architecture
 
 This topic describes a generic recommended setup for Adobe Commerce and Magento Open Source instances using plain servers hosted physically in a data center (not virtualized) in which resources are not shared with other users. Your hosting provider, especially if it specializes in Commerce high performance hosting, might recommend a different setup that is equally or more effective for your requirements.
 
 For Adobe Commerce on cloud infrastructure environments, see [Starter architecture](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
-## [!DNL Commerce] Reference Architecture diagram
+## [!DNL Commerce] Reference architecture diagram
 
 The [!DNL Commerce] Reference Architecture diagram represents the best practice approach to set up a scalable [!DNL Commerce] site.
 
@@ -59,7 +56,7 @@ The following sections provide recommendations and considerations for each secti
 *  Consider using GFS or GlusterFS for pub/media storage
 *  Alternatively, use DB storage for low-traffic sites
 
-### Recommended [!DNL Varnish] Reference Architecture
+### Recommended [!DNL Varnish] reference architecture
 
 Magento supports several full page caching engines (File, Memcache, Redis, [!DNL Varnish]) out of the box, along with expanded coverage through extensions. [!DNL Varnish] is the recommended full page cache engine.  [!DNL Commerce] supports many different [!DNL Varnish] configurations.
 

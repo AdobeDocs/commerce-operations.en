@@ -1,11 +1,9 @@
 ---
-group: performance-best-practices
-title: High-throughput order processing
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: High-Throughput Order Processing
+description: Optimize the order placement and checkout experience for your Adobe Commerce or Magento Open Source deployment.
 ---
+
+# High-throughput order processing
 
 You can optimize the order placement and checkout experience by configuring the following set of modules for **high-throughput order processing**:
 

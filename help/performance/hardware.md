@@ -1,17 +1,17 @@
 ---
-group: performance-best-practices
-title: Hardware recommendations
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Hardware Recommendations
+description: Review a list of recommended hardware related to optimal performance of Adobe Commerce and Magento Open Source deployments.
 ---
+
+# Hardware recommendations
 
 ## CPUs
 
-Magento web nodes serve all requests that are not cached or cannot be cached through the application. One CPU core can serve around two (sometimes up to four) [!DNL Commerce] requests effectively. Use the following equation to determine how many  web nodes/cores you need to process all incoming requests without putting them into queue:
+[!DNL Commerce] web nodes serve all requests that are not cached or cannot be cached through the application. One CPU core can serve around two (sometimes up to four) [!DNL Commerce] requests effectively. Use the following equation to determine how many  web nodes/cores you need to process all incoming requests without putting them into queue:
 
-  `N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]`
+```
+N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
+```
 
 If you expect a store's load to change, you can manually increase the number of web nodes/cores for an active sales period. Alternatively, an auto-scaling model can be used for automatically extending web tiers.
 

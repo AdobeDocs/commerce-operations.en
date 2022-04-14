@@ -1,11 +1,9 @@
 ---
-group: performance-best-practices
-title: Deployment flow
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Deployment Flow
+description: Learn about the steps necessary for deploying Adobe Commerce or Magento Open Source in a production environment. 
 ---
+
+# Deployment flow
 
 The [!DNL Commerce] production deployment flow helps a store reach maximum performance.
 

@@ -1,13 +1,11 @@
 ---
-group: performance-best-practices
-title: Configuration best practices
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Configuration Best Practices
+description: Optimize the response time of your Adobe Commerce or Magento Open Source deployment using these best practices.
 ---
 
-Magento provides many settings and tools that you can use to improve response time on the pages as well as provide higher throughput.
+# Configuration best practices
+
+Commerceo provides many settings and tools that you can use to improve response time on the pages as well as provide higher throughput.
 
 ## Cron Jobs
 

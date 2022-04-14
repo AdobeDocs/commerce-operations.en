@@ -1,13 +1,11 @@
 ---
-group: performance-best-practices
-title: Advanced setup
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Advanced Setup
+description: Review best practices and recommendations for large enterprise systems designed to process large volumes of data.
 ---
 
-Magento is a highly flexible and scalable product containing solutions for merchants of all sizes. This section covers best practices and recommendations on configuring [!DNL Commerce] to work with large amounts of data, extreme load, and other enterprise cases.
+# Advanced setup
+
+[!DNL Commerce] is a highly flexible and scalable product containing solutions for merchants of all sizes. This section covers best practices and recommendations on configuring [!DNL Commerce] to work with large amounts of data, extreme load, and other enterprise cases.
 
 ## Calibrate index performance
 

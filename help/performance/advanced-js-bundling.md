@@ -1,8 +1,9 @@
 ---
-title: Advanced [!DNL JavaScript] bundling
+title: Advanced [!DNL JavaScript] Bundling
+description: Learn about how JavaScript bundling can reduce the size and frequency of server requests.
 ---
 
-## Introduction
+# Advanced [!DNL JavaScript] bundling
 
 Bundling [!DNL JavaScript] modules for better performance is about reducing two things:
 
@@ -13,13 +14,13 @@ In a modular application, the number of server requests can reach into the hundr
 
 ![No bundling](../assets/performance/images/noBundling.png)
 
-### Merging and bundling
+## Merging and bundling
 
 Out of the box, [!DNL Commerce] provides two ways to reduce the number of server requests: merging and bundling. These settings are turned off by default. You can turn them on within the Admin UI in **[!UICONTORL Stores]** > **Settings** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, or from the command line.
 
 ![Bundling](../assets/performance/images/bundlingImage.png)
 
-#### Basic bundling
+### Basic bundling
 
 To enable built-in bundling from the command line:
 
@@ -35,7 +36,7 @@ Better, but the browser still loads ALL the [!DNL JavaScript] bundles, not just 
 
 [!DNL Commerce] bundling reduces the number of connections per page, but for each page request it loads all bundles, even when the requested page may only depend on files within one or two of the bundles. Performance improves after the browser caches the bundles. But, because the browser loads these bundles synchronously, the user's first visit to a [!DNL Commerce] storefront could take a while to render and hurt the user experience.
 
-#### Basic merging
+### Basic merging
 
 To enable built-in merging from the command line:
 
@@ -47,7 +48,7 @@ This command merges all synchronous [!DNL JavaScript] files into one file. Enabl
 
 ![Real-world merging](../assets/performance/images/magentoMergingDevWorld.png)
 
-### Real-world render times
+## Real-world render times
 
 The previous bundled and merged load times look great in a development environment. But in the real world, many things can slow down rendering: slow connections, large connection thresholds, limited networks. In addition, mobile devices do not render as fast as desktops.
 
@@ -81,7 +82,7 @@ The following steps require you to install and have familiarity with the followi
 
 -  [nodejs](https://nodejs.org/en/download/)
 -  [r.js](http://requirejs.org/docs/optimization.html#download)
--  [PhantomJS](http://phantomjs.org/) (optional)
+-  [[!DNL PhantomJS]](http://phantomjs.org/) (optional)
 
 ### Sample code
 
@@ -164,12 +165,12 @@ At the end of the `build.js` file, add the modules[] array as a placeholder for 
 
 You can retrieve all the [!DNL RequireJS] module dependencies from your store's page types by using:
 
-1. PhantomJS from the command line (assuming you have PhantomJS installed).
+1. [!DNL PhantomJS] from the command line (assuming you have [!DNL PhantomJS] installed).
 1. RequireJS command in your browser's console.
 
-#### To use PhantomJS:
+#### To use [!DNL PhantomJS]:
 
-In the [!DNL Commerce] root directory, create a new file called `deps.js` and copy in the code below. This code uses [!DNL PhantomJS] to open a page and wait for the browser to load all page assets. It then outputs all the [!DNL RequireJS] dependencies for a given page.
+In the [!DNL Commerce] root directory, create a new file called `deps.js` and copy in the code below. This code uses [!DNL [!DNL PhantomJS]] to open a page and wait for the browser to load all page assets. It then outputs all the [!DNL RequireJS] dependencies for a given page.
 
 ```javascript
 "use strict";
@@ -215,13 +216,13 @@ phantomjs deps.js http://m2.loc/checkout/cart/?SID=m2tjdt7ipvep9g0h8pmsgie975 > 
 
 #### To use the browser console:
 
-If you don't want to use PhantomJS, you can run the following command from your browser's console while viewing each page type in your storefront:
+If you don't want to use [!DNL PhantomJS], you can run the following command from your browser's console while viewing each page type in your storefront:
 
 ```shell
 Object.keys(window.require.s.contexts._.defined)
 ```
 
-This command (used within the PhantomJS script) creates the same list of [!DNL RequireJS] dependencies and displays them within the browser's console. The disadvantage of this approach is that you will have to create your own bundle/page-type text files.
+This command (used within the [!DNL PhantomJS] script) creates the same list of [!DNL RequireJS] dependencies and displays them within the browser's console. The disadvantage of this approach is that you will have to create your own bundle/page-type text files.
 
 #### 6\. Format and filter the output
 
