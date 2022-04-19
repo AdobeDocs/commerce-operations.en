@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Overview
 description: Follow these best practices to optimize the performance of your Adobe Commerce or Magento Open Source deployment.
 ---
 

@@ -5,7 +5,7 @@ user-guide-description: Optimize the performance of your Adobe Commerce or Magen
 
 # Performance Best Practices {#performance-best-practices}
 
-- [Introduction](introduction.md)
+- [Overview](overview.md)
 - [Hardware recommendations](hardware.md)
 - [Software recommendations](software.md)
 - [Reference architecture](reference-architecture.md)
