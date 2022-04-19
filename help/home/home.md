@@ -61,11 +61,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="../performance/introduction.md">
+    <a href="../performance/overview.md">
        <img alt="Performance" src="../assets/icons/gauge.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../performance/introduction.md"><strong>Performance Best Practices</strong></a>
+      <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
     </div>
   </td>
   <td valign="top">
