@@ -1,6 +1,6 @@
 ---
-title: Performance Best Practices
-description: Follow these best practices to optimize the performance of you Adobe Commerce or Magento Open Source deployment.
+title: Introduction
+description: Follow these best practices to optimize the performance of your Adobe Commerce or Magento Open Source deployment.
 ---
 
 # Performance best practices
