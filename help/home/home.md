@@ -61,11 +61,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html">
+    <a href="../performance/overview.md">
        <img alt="Performance" src="../assets/icons/gauge.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html"><strong>Performance Best Practices</strong></a>
+      <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -73,7 +73,7 @@ Get practical information about concepts, processes, tools, and best practices t
        <img alt="Tools" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Tools</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Tools</strong></a>
     </div>
   </td>
 </tr>
