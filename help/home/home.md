@@ -121,3 +121,4 @@ Learn about new documentation and significant updates to existing documentation.
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | Added [information](../upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool. | Major update |
 | Removed outdated Upgrade Compatibility Tool [error codes](../upgrade/upgrade-compatibility-tool/error-messages.md).                    | Technical    |
+| Moved [Site-Wide Analysis Tool guide](../tools/site-wide-analysis-tool/intro.md) from [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) to Experience League. | New |
