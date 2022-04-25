@@ -135,16 +135,6 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 | 5026 | Do not use `"text/javascript"` type attribute | Use only public members. |
 | 5028 | Access to protected and private members of `Block` class is obsolete in phtml templates | Use only public members. |
 | 5031 | Contains obsolete method | Use `getConnection()` method instead. |
-| 5032 | `loadLayout` method is deprecated | Use `\Magento\Framework\View\Layout\Builder::build` instead. |
-| 5033 | `renderLayout` method is deprecated | Use `\Magento\Framework\Controller\ResultInterface::renderResult` instead. |
-| 5034 | `_redirect` method is deprecated | Use `\Magento\Backend\Model\View\Result\Redirect::render` instead. |
-| 5035 | `_forward` method is deprecated | Use `\Magento\Backend\Model\View\Result\Forward::forward` instead. |
-| 5036 | `_setActiveMenu` method is deprecated | Use `\Magento\Backend\Model\View\Result\Page::setActiveMenu` instead. |
-| 5037 | `_addBreadcrumb` method is deprecated | Use `\Magento\Backend\Model\View\Result\Page::addBreadcrumb` instead. |
-| 5038 | `_addContent` method is deprecated | Use `\Magento\Backend\Model\View\Result\Page::addContent` instead. |
-| 5039 | `_addLeft` method is deprecated | Use `\Magento\Backend\Model\View\Result\Page::addLeft` instead. |
-| 5040 | `_addJs` method is deprecated | Use `\Magento\Backend\Model\View\Result\Page::addJs` instead. |
-| 5041 | `_moveBlockToContainer` method is deprecated | Use `\Magento\Backend\Model\View\Result\Page::moveBlockToContainer` instead. |
 | 5042 | Incorrect format of PHP class reference | Check that class is referenced using only camelCased letters, numbers, and no leading slash. |
 | 5043 | Incorrect format of module reference | Check that module is referenced using only letters, numbers, underscores, and no leading slash. |
 | 5044 | Class `Zend_Db_Select` is restricted | Suggested replacement: `\Magento\Framework\DB\Select`. |
