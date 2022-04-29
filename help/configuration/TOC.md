@@ -10,6 +10,16 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 - General setup {#setup}
 - Deployment {#deployment}
 - Cache {#cache}
+  - [Caching overview](cache/caching-overview.md)
+  - [Cache types](cache/cache-types.md)
+  - [Cache options](cache/cache-options.md)
+  - [L2 cache](cache/two-level-cache.md)
+  - Redis {#redis}
+    - [Configure Redis](redis/config-redis.md)
+    - [Use Redis for default cache](redis/redis-pg-cache.md)
+    - [Use Redis for session storage](redis/redis-session.md)
+  - Varnish {#varnish}
+  - [Static content cache](cache/static-content-signing.md)
 - Command Line {#cli}
 - Cron Jobs {#crons}
 - Logs {#logs}
