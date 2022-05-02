@@ -34,7 +34,9 @@ net.ipv4.tcp_tw_reuse = 1
 
 The kernel parameter `net.core.somaxconn` controls the maximum number of open sockets waiting for connections. This value can be safely increased to 1024, but it should be correlated with the ability of the server to handle this amount. To enable this kernel parameter, set the following value in `/etc/sysctl.conf`:
 
-`net.core.somaxconn = 1024`
+```terminal
+net.core.somaxconn = 1024
+```
 
 ## PHP
 
@@ -115,7 +117,9 @@ Adding more extensions increases library load times.
 
 To guarantee successful execution of all [!DNL Commerce] instances without dumping data or code to disk, set the memory limit as follows:
 
-`memory_limit=1G`
+```text
+memory_limit=1G
+```
 
 For debugging, increase this value to 2G.
 
