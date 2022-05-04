@@ -8,12 +8,10 @@ description: Optimize the order placement and checkout experience for your Adobe
 You can optimize the order placement and checkout experience by configuring the following set of modules for **high-throughput order processing**:
 
 -  [AsyncOrder](#asynchronous-order-placement)—Asynchronously processes orders using a queue.
--  [NegotiableQuoteAsyncOrder](#negotiable-quote-asyn-order)—Asynchronously processes NegotiableQuote save order items.
--  [DeferredTotalCalculation](#deferred-total-calculation)—Defers calculations for order totals until checkout begins.
+-  [Deferred Total Calculation](#deferred-total-calculation)—Defers calculations for order totals until checkout begins.
+-  [Inventory Check On Quote Load](#disable-inventory-check)—Choose to skip inventory validation of cart items.
 
-All features work independently. You can use all the features simultaneously or enable and disable features in any combination.
-
-Use the command-line interface to enable these features, or edit the `app/etc/env.php` file according to the corresponding README files defined in the [_Module Reference Guide_][mrg].
+All features—AsyncOrder, Deferred Total Calculation, and Inventory Check—work independently. You can use all three features simultaneously or enable and disable features in any combination.
 
 ## Asynchronous order placement
 
@@ -24,7 +22,9 @@ For example, a customer adds a product to their shopping cart and selects **[!UI
 -  **Product available**—the order status changes to _Pending_, the product quantity is adjusted, an email with order details is sent to the customer, and the successful order details become available for viewing in the **Orders and Returns** list with actionable options, such as reorder.
 -  **Product out of stock or low supply**—the order status changes to _Rejected_, the Product quantity is not adjusted, an email with order details about the issue is sent to the customer, and the rejected order details become available in the **Orders and Returns** list with no actionable options.
 
-To enable AsyncOrder:
+Use the command-line interface to enable these features, or edit the `app/etc/env.php` file according to the corresponding README files defined in the [_Module Reference Guide_][mrg].
+
+**To enable AsyncOrder**:
 
 You can enable AsyncOrder using the command-line interface:
 
@@ -43,7 +43,7 @@ The `set` command writes the following to the `app/etc/env.php` file:
 
 See [AsyncOrder][] in the _Module Reference Guide_.
 
-To disable AsyncOrder:
+**To disable AsyncOrder**:
 
 >[!WARNING]
 >
@@ -103,7 +103,7 @@ When the AsyncOrder module is enabled, the following REST endpoints and GraphQL 
 
 Developers can explicitly exclude certain payments methods from Asynchronous Order placement by adding them to the `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` array. Orders that use excluded payment methods are processed synchronously.
 
-## Negotiable Quote Async Order
+### Negotiable Quote Async Order
 
 The _Negotiable Quote Async Order_ B2B module enables you to save order items asynchronously for the `NegotiableQuote` functionality. You must have AsyncOrder and NegotiableQuote enabled.
 
@@ -111,9 +111,9 @@ The _Negotiable Quote Async Order_ B2B module enables you to save order items as
 
 The _Deferred Total Calculation_ module optimizes the checkout process by deferring the total calculation until it is requested for the shopping cart or during final checkout steps. When enabled, only the subtotal calculates as a customer adds products to the shopping cart.
 
-DeferredTotalCalculation is **disabled** by default.
+DeferredTotalCalculation is **disabled** by default. Use the command-line interface to enable these features, or edit the `app/etc/env.php` file according to the corresponding README files defined in the [_Module Reference Guide_][mrg].
 
-To enable DeferredTotalCalculation:
+**To enable DeferredTotalCalculation**:
 
 You can enable DeferredTotalCalculation using the command-line interface:
 
@@ -130,7 +130,7 @@ The `set` command writes the following to the `app/etc/env.php` file:
    ]
 ```
 
-To disable DeferredTotalCalculation:
+**To disable DeferredTotalCalculation**:
 
 You can disable DeferredTotalCalculation using the command-line interface:
 
@@ -159,9 +159,7 @@ The _Enable Inventory On Cart Load_ global setting determines whether to perform
 
 When disabled, inventory check does not occur when adding a product to the shopping cart. If this inventory check is skipped, some out-of-stock scenarios could throw other types of errors. An inventory check _always_ occurs at the order placement step, even when disabled.
 
-Enable Inventory On Cart Load is **enabled** by default.
-
-To disable the inventory check when loading the cart, set **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` in the Admin UI. See [Configure Global Options][global] and [Catalog Inventory][inventory] in the _User Guide_.
+**Enable Inventory Check On Cart Load** is enabled (set to Yes) by default. To disable the inventory check when loading the cart, set **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` in the Admin UI **Stores** > **Configuration** > **Catalog** > **Inventory** > **Stock Options** section. See [Configure Global Options][global] and [Catalog Inventory][inventory] in the _User Guide_.
 
 <!-- link definitions -->
 
