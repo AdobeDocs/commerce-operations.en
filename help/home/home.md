@@ -69,7 +69,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/quality-patches/tool.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
        <img alt="Tools" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
