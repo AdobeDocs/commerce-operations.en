@@ -45,7 +45,7 @@ Adobe removed all [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.
 
 If you want to continue using these extensions with Adobe Commerce and Magento Open Source 2.4.4 and later, you must update the corresponding package dependencies in your `composer.json` file _before_ upgrading to 2.4.4. Contact the vendor for the package name and version to use.
 
-See the following ADobe Commerce Marketplace listings for more information:
+See the following Adobe Commerce Marketplace listings for more information:
 
 - [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
 - [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
