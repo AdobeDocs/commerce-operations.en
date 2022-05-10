@@ -248,7 +248,7 @@ We recommend configuring the agent to run as a service. If you have limited acce
 
 ### Service {#service}
 
-1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the Unix user that owns the directory where the agent is installed and magento directory, if you downloaded an agent as root user change directory and nested files owner).
+1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the Unix user that owns the directory where the agent and the Adobe Commerce software is installed). If you downloaded the agent as the root user, change the directory and nested files owner.
 
    ```config
    [Unit]
