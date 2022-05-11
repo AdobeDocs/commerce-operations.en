@@ -39,7 +39,7 @@ Magento purges Varnish hosts after you configure Varnish hosts using the [`magen
 
 You can use the optional parameter `--http-cache-hosts` parameter to specify a comma-separated list of Varnish hosts and listen ports. Configure all Varnish hosts, whether you have one or many. (Do not separate hosts with a space character.)
 
-The parameter format must be `<hostname or ip>:<listen port>`, where you can omit `<listen port>` if it's port 80.
+The parameter format must be `<hostname or ip>:<listen port>`, where you can omit `<listen port>` if it is port 80.
 
 For example,
 

@@ -28,7 +28,7 @@ The following figure shows a basic view of Varnish in your Magento topology.
 
 In the preceding figure, users' HTTP requests over the internet result in numerous requests for CSS, HTML, JavaScript, and images (referred to collectively as _assets_). Varnish sits in front of the web server and proxies these requests to the web server.
 
-As the web server returns assets, cacheable assets are stored in Varnish. Any subsequent requests for those assets are fulfilled by Varnish (meaning, the requests don't reach the web server). Varnish returns cached content extremely quickly. The results are faster response times to return the content to users and a reduced number of requests that must be fulfilled by Magento.
+As the web server returns assets, cacheable assets are stored in Varnish. Any subsequent requests for those assets are fulfilled by Varnish (meaning, the requests do not reach the web server). Varnish returns cached content extremely quickly. The results are faster response times to return the content to users and a reduced number of requests that must be fulfilled by Magento.
 
 Assets cached by Varnish expire at a configurable interval or are replaced by newer versions of the same assets. You can also clear the cache manually either using the [Admin](https://glossary.magento.com/magento-admin) or the [magento cache:clean](../cli/config-cli-subcommands-cache.html) command.
 
@@ -99,7 +99,7 @@ More detail is provided in the sections that follow.
 
 ## Caching by browser request {#config-varnish-cache-browser}
 
-This section uses a browser inspector to show how assets are delivered to the browser in the first request and afterward loaded from the browser's local [cache](https://glossary.magento.com/cache).
+This section uses a browser inspector to show how assets are delivered to the browser in the first request and afterward loaded from the local browser [cache](https://glossary.magento.com/cache).
 
 ### First browser request
 
