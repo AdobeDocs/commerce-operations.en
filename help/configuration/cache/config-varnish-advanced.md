@@ -1,6 +1,6 @@
 ---
 title: Advanced Varnish configuration
-description: 
+description: Configure advanced Varnish features, including health check, grace and saint modes.
 ---
 
 # Advanced Varnish configuration
@@ -78,7 +78,7 @@ bin/magento cache:flush
 
 ### Installation
 
-Saint mode is not part of the main Varnish package. It is a separately-versioned vmod that must be downloaded and installed. As a result, you should re-compile Varnish from source, as described in the following articles:
+Saint mode is not part of the main Varnish package. It is a separately-versioned `vmod` that must be downloaded and installed. As a result, you should recompile Varnish from source, as described in the following articles:
 
 *  [Installing Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
 *  [Installing Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)

@@ -1,14 +1,14 @@
 ---
 title: Configure Redis
-description:
+description: Get an overview of Redis features and start your Redis configuration.
 ---
 # Configure Redis
 
 Redis features include:
 
-- Redis can also be used for [PHP](https://glossary.magento.com/php) session storage.
-- The backend supports tag-based cache cleanup without `foreach` loops.
-- Redis supports on-disk save and master/slave replication.
+- PHP session storage
+- Tag-based cache cleanup without `foreach` loops
+- On-disk saves and master/slave replication
 
 ## Install Redis
 

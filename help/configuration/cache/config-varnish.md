@@ -1,6 +1,6 @@
 ---
 title: Configure and use Varnish
-description:
+description: Understand how Varnish stores files and improves HTTP traffic.
 ---
 
 # Configure Varnish
@@ -34,7 +34,7 @@ Assets cached by Varnish expire at a configurable interval or are replaced by ne
 
 ## Process overview
 
-This topic discusses how to initially install Varnish with a minimal set of parameters and test that it works. Then export a Varnish configuration from the Magento [Admin](https://glossary.magento.com/admin) and test it again.
+This topic discusses how to initially install Varnish with a minimal set of parameters and test that it works. Then export a Varnish configuration from the Magento Admin and test it again.
 
 The process can be summarized as follows:
 
