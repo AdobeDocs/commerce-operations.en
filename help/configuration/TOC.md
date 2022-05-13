@@ -29,6 +29,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
     - [Varnish ESI block](cache/use-varnish-esi.md)
   - [Static content cache](cache/static-content-signing.md)
 - Command Line {#cli}
+  - [Command-line tool](cli/config-cli.md)
 - Cron Jobs {#crons}
 - Logs {#logs}
 - Message Queues {#message-queues}
