@@ -11,7 +11,7 @@ Installing the Varnish software is beyond the scope of this guide. For more info
 *  [Varnish installation guides](https://www.varnish-cache.org/docs)
 *  [How to install Varnish (Tecmint)](http://www.tecmint.com/install-varnish-cache-web-accelerator)
 
->[!NOTE]
+>[!INFO]
 >
 >This topic is written for Varnish on CentOS and Apache 2.4. If you are setting up Varnish in a different environment, some commands are likely different. Consult the preceding documentation for more information.
 >

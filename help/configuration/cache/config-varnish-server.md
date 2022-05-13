@@ -104,7 +104,7 @@ varnishd -d -f /etc/varnish/default.vcl
 This should display error messages.
 
 
->[!NOTE]
+>[!INFO]
 >
 >If Varnish does not start as a service, you must configure SELinux rules to allow it to run. Consult the following resources:
 >
@@ -199,11 +199,11 @@ backend default {
 
 Now you can verify that Varnish is serving pages by looking at [HTML](https://glossary.magento.com/html) response headers returned from any Magento page.
 
-Before you can look at headers, you must set Magento for developer mode. There are several ways to do it, the simplest of which is to modify `.htaccess` in the Magento 2 root. You can also use the [`magento deploy:mode:set`]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-mode.html) command.
+Before you can look at headers, you must set Magento for developer mode. There are several ways to do it, the simplest of which is to modify `.htaccess` in the Magento 2 root. You can also use the [`magento deploy:mode:set`](configuration/cli/config-cli-subcommands-mode.html) command.
 
 ### Set Magento for developer mode
 
-To set Magento for developer mode, use the [`magento deploy:mode:set`]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-mode.html#change-to-developer-mode) command.
+To set Magento for developer mode, use the [`magento deploy:mode:set`](configuration/cli/config-cli-subcommands-mode.html#change-to-developer-mode) command.
 
 ### Look at the Varnish log
 

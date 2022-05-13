@@ -159,7 +159,7 @@ To verify that Magento is talking to ElasiCache:
    ```
 
 1. Open a page in the Magento UI.
-1. Verify the [cache output]({{ page.baseurl }}/config-guide/redis/redis-pg-cache.html#redis-verify) in your terminal.
+1. Verify the [cache output](../cache/redis/redis-pg-cache.html#redis-verify) in your terminal.
 
 ## New Redis cache implementation
 

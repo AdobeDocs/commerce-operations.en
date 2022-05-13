@@ -6,7 +6,7 @@ description: Learn how to configure the Remote Storage module for the on-premise
 
 The Remote Storage module provides the option to store media files and schedule imports/exports in a persistent, remote storage container using a storage service, such as AWS S3. By default, the [!DNL Commerce] application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
 
->[!NOTE]
+>[!INFO]
 >
 >Remote storage is available in version 2.4.2 and later only. See the [2.4.2 release notes][].
 
@@ -80,7 +80,7 @@ After you enable remote storage for a specific adapter, you can use the CLI to m
 ./magento2ce/bin/magento remote-storage:sync
 ```
 
->[!NOTE]
+>[!INFO]
 >
 >The sync command only migrates files in the `pub/media` directory, _not_ the import/export files in the `var` directory. See [Scheduled Import/Export][import-export] in the _Commerce 2.4 User Guide_.
 

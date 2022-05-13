@@ -7,7 +7,7 @@ description: Learn to update and manage your Varnish configuration file for the 
 
 To configure Magento to use Varnish:
 
-1. Log in to the [Admin](https://glossary.magento.com/magento-admin) as an administrator.
+1. Log in to the Admin as an administrator.
 1. Click **[!UICONTROL Stores]** > Settings > **Configuration** > **Advanced** > **System** > **Full Page Cache**.
 1. From the **[!UICONTROL Caching Application]** list, click **Varnish Caching**.
 1. Enter a value in the **[!UICONTROL TTL for public content]** field.
@@ -64,7 +64,7 @@ To export a Varnish configuration file from the Admin panel:
     }
    ```
 
-1. If you want to customize the Vagrant health checks or grace mode or saint mode configuration, see [Advanced Varnish configuration]({{ page.baseurl }}/config-guide/varnish/config-varnish-advanced.html).
+1. If you want to customize the Vagrant health checks or grace mode or saint mode configuration, see [Advanced Varnish configuration](../cache/varnish/config-varnish-advanced.html).
 
 1. Restart Varnish and your web server:
 

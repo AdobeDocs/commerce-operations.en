@@ -8,9 +8,9 @@ The following steps walk through associating cache frontend with a cache type.
 
 ## Step 1: Define a cache frontend {#define-cache}
 
-The Commerce application has a `default` cache [frontend](https://glossary.magento.com/frontend) that you can use for any [cache type]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean-over). This section discusses how to optionally define a [cache frontend](https://glossary.magento.com/cache-frontend) with a different name, which is preferable if you expect to customize your frontend.
+The Commerce application has a `default` cache [frontend](https://glossary.magento.com/frontend) that you can use for any [cache type](configuration/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean-over). This section discusses how to optionally define a [cache frontend](https://glossary.magento.com/cache-frontend) with a different name, which is preferable if you expect to customize your frontend.
 
->[!NOTE]
+>[!INFO]
 >
 >To use the `default` cache type, you do not need to modify `env.php` at all; you modify Magento's global `di.xml`. See [Low-level cache options](cache/cache-options.html).
 

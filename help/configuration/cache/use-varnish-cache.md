@@ -35,7 +35,7 @@ After you have installed and configured Varnish to work with Magento, the follow
 
 ## Configure Magento to purge Varnish
 
-Magento purges Varnish hosts after you configure Varnish hosts using the [`magento setup:config:set`]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-deployment.html) command.
+Magento purges Varnish hosts after you configure Varnish hosts using the [`magento setup:config:set`](https://devdocs.magento.com/guides/2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) command.
 
 You can use the optional parameter `--http-cache-hosts` parameter to specify a comma-separated list of Varnish hosts and listen ports. Configure all Varnish hosts, whether you have one or many. (Do not separate hosts with a space character.)
 
@@ -47,8 +47,8 @@ For example,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-You can then purge Varnish hosts when you refresh the Magento cache (also referred to as *cleaning* the cache) in the [Admin](https://glossary.magento.com/magento-admin) or using the command line.
+You can then purge Varnish hosts when you refresh the Magento cache (also referred to as *cleaning* the cache) in the Admin or using the command line.
 
 To refresh the cache using the Admin, click **[!UICONTROL SYSTEM]** > Tools > **Cache Management**, then click **Flush Magento Cache** at the top of the page. (You can also refresh individual cache types.)
 
-To refresh the cache using the command line, you typically use the [`magento cache:clean <type>`]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) command as the [file system owner]({{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html).
+To refresh the cache using the command line, you typically use the [`magento cache:clean <type>`](../cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) command as the [file system owner](https://devdocs.magento.com/guides/2.4/install-gde/prereq/file-sys-perms-over.html).

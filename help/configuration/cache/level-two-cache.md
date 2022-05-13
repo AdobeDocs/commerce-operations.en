@@ -13,7 +13,7 @@ To reduce the network bandwidth to Redis, store cache data locally on each web n
 
 Commerce stores the hashed data version in Redis, with the suffix ':hash' appended to the regular key. If there is an outdated local cache, the data is transferred to the local machine with a cache adapter.
 
->[!NOTE]
+>[!INFO]
 >
 >For {{ site.data.var.ece }}, consider the best practices in the [Extended Redis cache implementation](https://support.magento.com/hc/en-us/articles/360049292532) support article.
 

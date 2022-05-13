@@ -11,7 +11,7 @@ Now that you are using the `default.vcl` generated for you by Magento, you can p
 
 Use `curl` or another utility to view HTTP response headers when you visit any Magento page in a web browser.
 
-First, make sure you are using Magento's [developer mode]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-mode.html#change-to-developer-mode); otherwise, you will not see the headers.
+First, make sure you are using Magento's [developer mode](configuration/cli/config-cli-subcommands-mode.html#change-to-developer-mode); otherwise, you will not see the headers.
 
 For example,
 
@@ -27,7 +27,7 @@ Age: 0
 X-Magento-Cache-Debug: MISS
 ```
 
->[!NOTE]
+>[!INFO]
 >
 >This value is also acceptable: `X-Magento-Cache-Debug: HIT`.
 

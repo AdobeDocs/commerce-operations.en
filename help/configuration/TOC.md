@@ -30,6 +30,10 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Static content cache](cache/static-content-signing.md)
 - Command Line {#cli}
   - [Command-line tool](cli/config-cli.md)
+  - [Common commands](cli/config-cli-subcommands.md)
+  - [Logging](cli/logging.md)
+  - [Manage the cache](cli/config-cli-subcommands-cache.md)
+  - [Manage indexers](cli/config-cli-subcommands-index.md)
 - Cron Jobs {#crons}
 - Logs {#logs}
 - Message Queues {#message-queues}
