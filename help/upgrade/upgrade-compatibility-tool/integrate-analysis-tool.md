@@ -1,11 +1,11 @@
 ---
 title: "Integrate the [!DNL Site-Wide Analysis Tool]"
-description: Follow these steps to retrieve the [!DNL Upgrade Compatibility Tool] report from the [!DNL Site-Wide Analysis Tool] dashboard on your Adobe Commerce project.
+description: Follow these steps to retrieve the [!DNL Upgrade Compatibility Tool] report from the [!DNL Site-Wide Analysis Tool] dashboard on your [!DNL Adobe Commerce] project.
 ---
 
 # Integrate the [!DNL Site-Wide Analysis Tool]
 
-The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability for installations of Adobe Commerce.
+The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability for installations of [!DNL Adobe Commerce].
 
 See the [user guide](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) for more information.
 
