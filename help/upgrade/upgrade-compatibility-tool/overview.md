@@ -3,9 +3,9 @@ title: Overview of the [!DNL Upgrade Compatibility Tool]
 description: Learn about the [!DNL Upgrade Compatibility Tool] and how it can help you with your [!DNL Adobe Commerce] project.
 ---
 
-# [!DNL Payment Services] Guide overview
+# Guide overview
 
-This guide is intended for administrators of [!DNL Adobe Commerce]. It includes detailed information about installation of the [!DNL Upgrade Compatibility Tool], as well as configuration and management of the tool. It assumes a basic understanding of the core Commerce configuration and functionality.
+This guide is intended for administrators and developers of [!DNL Adobe Commerce]. It includes detailed information about installation of the [!DNL Upgrade Compatibility Tool], as well as its configuration and management. It assumes a basic understanding of the core Commerce configuration and functionality.
 
 ## Overview of the [!DNL Upgrade Compatibility Tool]
 
@@ -69,4 +69,4 @@ We have developed the following resources to help you understand [!DNL Adobe Com
 - [Upgrade guide](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
 - [Upcoming releases](https://devdocs.magento.com/release/)
 - [Community Resources](https://devdocs.magento.com/community/resources/resources.html) page for more information.
-- [Related tools](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
+- [Related tools](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/related-tools.html)

@@ -11,6 +11,11 @@ The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an [!DN
 
 The [!DNL Upgrade Compatibility Tool] identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of [!DNL Adobe Commerce].
 
+
+| **Requirements** | **Constraints** |
+|----------------|-----------------|
+| PHP version| >= 7.3 |
+
 ## Use the `upgrade:check` command
 
 The `upgrade:check` command is the main command to execute the tool:

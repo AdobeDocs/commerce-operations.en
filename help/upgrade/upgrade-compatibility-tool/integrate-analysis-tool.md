@@ -5,11 +5,11 @@ description: Follow these steps to retrieve the [!DNL Upgrade Compatibility Tool
 
 # Integrate the [!DNL Site-Wide Analysis Tool]
 
-The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability for installations of [!DNL Adobe Commerce].
+The [!DNL Site-Wide Analysis Tool] (or SWAT) provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability for installations of [!DNL Adobe Commerce].
 
-See the [user guide](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) for more information.
+See the [[!DNL Site-Wide Analysis Tool] user guide](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) for more information.
 
-The [!DNL Site-Wide Analysis Tool] dashboard provides ability to request execution of the [!DNL Upgrade Compatibility Tool] and access the results.
+The [!DNL Site-Wide Analysis Tool] dashboard provides the ability to request an execution of the [!DNL Upgrade Compatibility Tool] and access these results.
 
 ## Run the [!DNL Upgrade Compatibility Tool] from SWAT
 
