@@ -58,8 +58,6 @@ If you need information or have questions that are not covered in this guide, us
 
 To connect with the [!DNL Upgrade Compatibility Tool] team, contact us on the Engineering Slack channel [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F). We want to hear your feedback, issues, and suggestions to help us improve the tool.
 
-Submit a [Support tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target="_blank"} to receive additional help.
-
 The [!DNL Upgrade Compatibility Tool] uses rules defined within our [Coding Standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) to ensure that your project is following [!DNL Adobe Commerce] best practices and to help you improve and extend the [!DNL Upgrade Compatibility Tool].
 
 Refer to the [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  topic for more information on contributing to this project.
