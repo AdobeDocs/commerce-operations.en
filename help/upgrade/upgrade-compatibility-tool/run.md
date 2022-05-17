@@ -326,7 +326,7 @@ Available `--help` options for the `graphql:compare` command:
 
 You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via the PhpStorm plugin. See the [[!DNL Upgrade Compatibility Tool] Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
 
-Check this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) to learn how to use the [!DNL Upgrade Compatibility Tool] with the Magento PHPStorm plugin.
+Check this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) to learn how to use the [!DNL Upgrade Compatibility Tool] with the Magento PHPStorm plugin.
 
 
 ## Recommended actions

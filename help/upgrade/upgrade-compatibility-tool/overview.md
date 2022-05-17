@@ -19,7 +19,7 @@ It is distributed as a Composer package with every release of [!DNL Adobe Commer
 
 Refer to [Install](../upgrade-compatibility-tool/install.md) for the first steps with the [!DNL Upgrade Compatibility Tool].
 
-Check this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) to learn more about the [!DNL Upgrade Compatibility Tool].
+Check this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) to learn more about the [!DNL Upgrade Compatibility Tool].
 
 ### Workflow
 
