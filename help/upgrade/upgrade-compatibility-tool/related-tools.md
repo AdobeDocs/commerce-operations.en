@@ -21,4 +21,4 @@ There are tools related to the [!DNL Upgrade Compatibility Tool] which can be us
    >
    >[!DNL AmpersandHQ] is not a [!DNL Magento] official tool.
 
-- **[!DNL Quality patches tool]**: A command-line tool that delivers quality patches for [!DNL Adobe Commerce] and [!DNL Magento Open Source]. See [[!DNL Quality patches tool] user guide]( https://devdocs.magento.com/quality-patches/tool.html) for more information.
+- **[!DNL Quality patches tool]**: A command-line tool that delivers quality patches for [!DNL Adobe Commerce] and [!DNL Magento Open Source]. See [[!DNL Quality patches tool] user guide](https://devdocs.magento.com/quality-patches/tool.html) for more information.
