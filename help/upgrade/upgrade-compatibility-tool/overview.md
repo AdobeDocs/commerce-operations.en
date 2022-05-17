@@ -25,7 +25,7 @@ Check this [video tutorial](https://experienceleague.adobe.com/docs/commerce-lea
 
 The following diagram shows the expected workflow when running the [!DNL Upgrade Compatibility Tool]:
 
-![[!DNL Upgrade Compatibility Tool] Diagram](../../assets/upgrade-guide/mvp-diagram-v3.png)
+![[!DNL Upgrade Compatibility Tool] Diagram](../../assets/upgrade-guide/uct-diagram-v4.png)
 
 ### The [!DNL Upgrade Compatibility Tool] use case
 
