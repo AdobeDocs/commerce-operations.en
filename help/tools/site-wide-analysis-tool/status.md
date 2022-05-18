@@ -12,7 +12,7 @@ The following status info appears on the top end of the [!DNL Site-Wide Analysis
 
 **[!UICONTROL Health Index Bar]**: It measures overall site health from 0 to 100, where zero is worst, and 100 is perfect health. It’s calculated based on the quantity and priority weight coefficient of active recommendations.
 
-**[!UICONTROL Download Recommendations Report]**: Recommendations Report provide personalized recommendations applicable to your project. You can download a PDF report by clicking on this section.
+**[!UICONTROL Download Recommendations Report]**: Recommendations Report provides personalized recommendations applicable to your project. You can download a PDF report by clicking on this section.
 
  
 
