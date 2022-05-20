@@ -4,7 +4,7 @@ description: Learn about the different status information in the [!DNL Site-Wide
 ---
 # Status Attributes
 
-The following status info appears on the top end of the [!DNL Site-Wide Analysis Tool] screen.
+The following status information appears across the top level of the page in the [!DNL Site-Wide Analysis Tool] screen.
 
 **[!UICONTROL Environment]**: It shows the current environment of your Adobe Commerce website. Currently, there are only two possible environments that can be displayed on the [!DNL Site-Wide Analysis Tool] screen: [!UICONTROL Production] and [!UICONTROL Staging]. The [!UICONTROL Production] environment is the live environment for launching and maintaining the live site. The [!UICONTROL Staging] environment is where services are tested before launching on the live website.
 
