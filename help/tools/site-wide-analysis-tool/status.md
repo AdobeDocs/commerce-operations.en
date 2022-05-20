@@ -1,6 +1,6 @@
 ---
 title: Status Attributes
-description: Learn about the different status information in [!DNL Site-Wide Analysis Tool]
+description: Learn about the different status information in the [!DNL Site-Wide Analysis Tool].
 ---
 # Status Attributes
 
