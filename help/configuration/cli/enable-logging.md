@@ -1,9 +1,9 @@
 ---
-title: Logging
+title: Enable logging
 description: Learn how to enable and disable types of logging.
 ---
 
-# Logging
+# Enable logging
 
 {{file-system-owner}}
 

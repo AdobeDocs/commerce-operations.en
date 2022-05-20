@@ -126,7 +126,7 @@ To purge out-of-date items from the cache, you can _clean_ or _flush_ cache type
 
 -  Flushing a cache type purges the cache storage, which might affect other processes applications that are using the same storage.
 
-Flush cache types if you've already tried cleaning the cache and you're still having issues that you cannot isolate.
+Flush cache types if you've already tried cleaning the cache and you are still having issues that you cannot isolate.
 
 Command usage:
 

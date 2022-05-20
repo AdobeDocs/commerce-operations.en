@@ -31,17 +31,39 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 - Command Line {#cli}
   - [Command-line tool](cli/config-cli.md)
   - [Common commands](cli/config-cli-subcommands.md)
-  - [Logging](cli/logging.md)
-  - [Manage the cache](cli/config-cli-subcommands-cache.md)
-  - [Manage indexers](cli/config-cli-subcommands-index.md)
+  - [Enable logging](cli/enable-logging.md)
+  - [Manage the cache](cli/manage-cache.md)
+  - [Manage indexers](cli/manage-indexers.md)
+  - [Configure cron jobs](cli/configure-cron-jobs.md)
+  - [Compile code](cli/code-compiler.md)
+  - [Set the operation mode](cli/set-mode.md)
+  - [Start message queue consumers](cli/start-message-queues.md)
+  - [URN highlighter](cli/urn-highlighter.md)
+  - [Dependency reports](cli/dependency-reports.md)
+  - [Localization](cli/localization.md)
+  - Configuration management {#configuration-management}
+    - [Set configuration values](cli/set-configuration-values.md)
+    - [Export settings](cli/export-configuration.md)
+    - [Import data](cli/import-configuration.md)
+  - Static view {#static-view}
+    - [Deployment strategies](cli/static-view-file-strategy.md)
+    - [Deploy static view files](cli/static-view-file-deployment.md)
+  - [Create symlinks](cli/create-symlinks.md)
+  - [Run unit tests](cli/unit-tests.md)
+  - [Convert layout files](cli/convert-layout-files.md)
+  - Generate data for performance testing
+  - Run support utilities (Commerce only)
 - Cron Jobs {#crons}
+  - [Cron jobs and groups](cron/custom-cron.md)
+  - [Customizing crons reference](cron/custom-cron-ref.md)
+  - [Configure a custom cron job](cron/custom-cron-tut.md)
 - Logs {#logs}
 - Message Queues {#message-queues}
 - Multiple sites {#multi-sites}
 - Remote storage {#remote-storage}
-  - [Remote storage module](remote-storage/config-remote-storage.md)
-  - [AWS S3 bucket](remote-storage/config-remote-storage-aws-s3.md)
-  - [Image resizing](remote-storage/config-remote-storage-image-resize.md)
+  - [Remote storage module](remote-storage/remote-storage.md)
+  - [AWS S3 bucket](remote-storage/remote-storage-aws-s3.md)
+  - [Image resizing](remote-storage/remote-storage-image-resize.md)
 - Search Engine {#search}
 - Storage {#storage}
 - Split Database {#split-db}

@@ -3,9 +3,9 @@ title: Manage the indexers
 description:
 ---
 
-{{file-system-owner}}
+# Manage the indexers
 
-## View a list of indexers
+{{file-system-owner}}
 
 To view a list of all indexers:
 
@@ -65,7 +65,7 @@ Sample result:
 | Category Products    | Reindex required | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:53 |
 | Customer Grid        | Ready            | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:52 |
 | Design Config Grid   | Ready            | Schedule  | idle (0 in backlog) | 2018-06-28 09:45:52 |
-| Inventory            | Ready            | Save      |                     |
+| Inventory            | Ready            | Save      |                     |                     |
 | Product Categories   | Reindex required | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:53 |
 | Product EAV          | Reindex required | Save      |                     |                     |
 | Product Price        | Reindex required | Save      |                     |                     |
@@ -79,7 +79,7 @@ Use this command to reindex all or selected indexers one time only.
 
 >[!INFO]
 >
->This command reindexes one time only. To keep indexers up to date, you must set up a [cron job](../cli/config-cli-subcommands-cron.html).
+>This command reindexes one time only. To keep indexers up to date, you must set up a [cron job](../cli/configure-cron-jobs.html).
 
 Command options:
 
@@ -87,7 +87,7 @@ Command options:
 bin/magento indexer:reindex [indexer]
 ```
 
-Where ```[indexer]``` is a space-separated list of indexers. Omit ```[indexer]``` to reindex all indexers.
+Where `[indexer]` is a space-separated list of indexers. Omit `[indexer]` to reindex all indexers.
 
 To view a list of all indexers:
 
@@ -200,7 +200,7 @@ Catalog Search indexer has been invalidated.
 
 Use this command to set the following indexer options:
 
--  **Update on save (`realtime`):** Indexed data is updated as soon as a change is made in the Admin. (For example, the [category](https://glossary.magento.com/category) products index is reindex after products are added to a category in the Admin.) This is the default.
+-  **Update on save (`realtime`):** Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
 -  **Update by schedule (`schedule`):** Data is indexed according to the schedule set by your Magento cron job.
 
 [Learn more about indexing](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing.html)
