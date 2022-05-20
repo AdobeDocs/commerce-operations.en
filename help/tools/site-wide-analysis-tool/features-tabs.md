@@ -18,7 +18,7 @@ The Findings include Finding Description, Recommendation, Site Impact, Root Caus
 **[!UICONTROL Exceptions]**: The [!UICONTROL Exceptions] page displays site log file errors/exceptions. Exceptions are sorted by Date/Time (UTC).
 The Exceptions information includes Last Date Detected (UTC), Exception Detail, and Count (number of times) that the Exception occurred that day.
 
-**[!UICONTROL Extensions]**: The [!UICONTROL Extensions] page displays the extensions currently installed on your Adobe Commerce instance. [!DNL Adobe Commerce Marketplace] information is provided, where available, for extensions listed there.
+**[!UICONTROL Extensions]**: The [!UICONTROL Extensions] page displays the extensions currently installed on your Adobe Commerce instance. Adobe Commerce Marketplace information is provided, where available, for extensions listed there.
 
 **[!UICONTROL Alerts]**: The [!UICONTROL Alerts] page displays the latest [!DNL NewRelic Managed Alerts] for the Adobe Commerce instance. Learn more about [Managed alerts for Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) and how to [Access NewRelic services](https://support.magento.com/hc/en-us/articles/360039127712) in the [!DNL Adobe Commerce Support Knowledge Base].
 
