@@ -16,7 +16,7 @@ The Adobe Commerce area displays Site Details, Products, Project & Integration l
 The Findings include Finding Description, Recommendation, Site Impact, Root Cause, Scenarios/Preconditions, and Tools Used.
 
 **[!UICONTROL Exceptions]**: The [!UICONTROL Exceptions] page displays site log file errors/exceptions. Exceptions are sorted by Date/Time (UTC).
-The Exceptions information include Last Date Detected (UTC), Exception Detail, and Count (number of times) that the Exception occurred that day.
+The Exceptions information includes Last Date Detected (UTC), Exception Detail, and Count (number of times) that the Exception occurred that day.
 
 **[!UICONTROL Extensions]**: The [!UICONTROL Extensions] page displays the extensions currently installed on your Adobe Commerce instance. [!DNL Adobe Commerce Marketplace] information is provided, where available, for extensions listed there.
 
