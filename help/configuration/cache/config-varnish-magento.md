@@ -38,7 +38,7 @@ To export a Varnish configuration file from the Admin panel:
 
    The following figure shows an example:
 
-   ![Configure Magento to use Varnish in the Admin](../../assets/configuration/config_varnish_admin_22.png)
+   ![Configure Magento to use Varnish in the Admin](../../assets/configuration/varnish-admin-22.png)
 
 1. Back up your existing `default.vcl`. Then rename the `varnish.vcl` file you just exported to `default.vcl`. Then copy the file to the `/etc/varnish/` directory.
 
@@ -84,7 +84,7 @@ Static files should not be cached by default, but if you want to cache them, you
 # Static files should not be cached by default
   return (pass);
 
-# But if you use a few locales and don't use CDN you can enable caching static files by commenting previous line (#return (pass);) and uncommenting next 3 lines
+# But if you use a few locales and do not use CDN you can enable caching static files by commenting previous line (#return (pass);) and uncommenting next 3 lines
   #unset req.http.Https;
   #unset req.http./* {{ ssl_offloaded_header }} */;
   #unset req.http.Cookie;

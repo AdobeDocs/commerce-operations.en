@@ -24,7 +24,7 @@ For more information about Varnish, see:
 
 The following figure shows a basic view of Varnish in your Magento topology.
 
-![Basic Varnish diagram](../../assets/configuration/varnish_basic.png)
+![Basic Varnish diagram](../../assets/configuration/varnish-basic.png)
 
 In the preceding figure, users' HTTP requests over the internet result in numerous requests for CSS, HTML, JavaScript, and images (referred to collectively as _assets_). Varnish sits in front of the web server and proxies these requests to the web server.
 
@@ -84,9 +84,9 @@ We know of the following issues with Varnish:
 
 Varnish caching works with Magento using:
 
-*  [`nginx.conf.sample`]({{ site.mage2bloburl }}/{{ page.guide_version }}/nginx.conf.sample) from the Magento 2 GitHub repository
+*  [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) from the Magento 2 GitHub repository
 *  `.htaccess` distributed configuration file for Apache provided with Magento
-*  `default.vcl` configuration for Varnish generated using the [Admin]({{ page.baseurl }}/config-guide/varnish/config-varnish-magento.html)
+*  `default.vcl` configuration for Varnish generated using the [Admin](../cache/config-varnish-magento.html)
 
 {:.bs-callout-info}
 This topic covers only the default options in the preceding list. There are many other ways to configure caching in complex scenarios (for example, using a Content Delivery Network); those methods are beyond the scope of this guide.
@@ -107,7 +107,7 @@ This section uses a browser inspector to show how assets are delivered to the br
 
 The following figure shows an example using a browser inspector:
 
-![The first time a request is made for a cacheable object, Varnish delivers it to the browser](../../assets/configuration/varnish_apache_first_visit.png)
+![The first time a request is made for a cacheable object, Varnish delivers it to the browser](../../assets/configuration/varnish-apache-first-visit.png)
 
 The preceding example shows a request for the [storefront](https://glossary.magento.com/storefront) main page (`m2_ce_my`). [CSS](https://glossary.magento.com/css) and [JavaScript](https://glossary.magento.com/javascript) assets are cached on the client browser.
 
@@ -119,7 +119,7 @@ The preceding example shows a request for the [storefront](https://glossary.mage
 
 If the same browser requests the same page again, these assets are delivered from the local browser cache, as the following figure shows.
 
-![The next time the same object is requested, assets load from the local browser cache](../../assets/configuration/varnish_apache_second_visit.png)
+![The next time the same object is requested, assets load from the local browser cache](../../assets/configuration/varnish-apache-second-visit.png)
 
 Note the difference in response time between the first and second request. Again, static assets have a 200 (OK) response code because they're delivered from local cache for the first time.
 
@@ -127,13 +127,13 @@ Note the difference in response time between the first and second request. Again
 
 The following example shows response headers for a particular static asset.
 
-![The ETag makes it easier to determine whether a static asset has changed or not](../../assets/configuration/varnish_etag.png)
+![The ETag makes it easier to determine whether a static asset has changed or not](../../assets/configuration/varnish-etag.png)
 
 `calendar.css` has an ETag response header which means the CSS file on the client browser can be compared to the one on the server.
 
 In addition, static assets are returned with a 304 (Not Modified) HTTP status code, as the following figure shows.
 
-![The HTTP 304 (Not Modified) response code indicates the static asset in the local cache is the same as on the server](../../assets/configuration/varnish_304.png)
+![The HTTP 304 (Not Modified) response code indicates the static asset in the local cache is the same as on the server](../../assets/configuration/varnish-304.png)
 
 The 304 status code occurs because the user invalidated their local cache and the content on the server did not change. Because of the 304 status code, the static asset _content_ is not transferred; only HTTP headers are downloaded to the browser.
 

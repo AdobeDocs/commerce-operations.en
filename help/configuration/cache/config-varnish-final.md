@@ -48,7 +48,7 @@ For example, to use the Chrome inspector:
 
    The following figure shows an example of loading the `magento2` index page.
 
-   ![Click the page you are viewing](../../assets/configuration/config_varnish_inspector.png)
+   ![Click the page you are viewing](../../assets/configuration/varnish-inspector.png)
 
    The page load time displays next to the page URL. In this case, the load time is 5 ms. This helps confirm that Varnish cached the page.
 

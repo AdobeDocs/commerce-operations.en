@@ -33,7 +33,7 @@ For more information, see the [Varnish health checks](https://varnish-cache.org/
 
 ## Grace mode
 
-Grace mode enables Varnish to keep an object in [cache](https://glossary.magento.com/cache) beyond its TTL value. Varnish can then serve the expired (stale) content while it fetches a new version. This improves the flow of traffic and decreases load times. It's used in the following situations:
+Grace mode enables Varnish to keep an object in [cache](https://glossary.magento.com/cache) beyond its TTL value. Varnish can then serve the expired (stale) content while it fetches a new version. This improves the flow of traffic and decreases load times. It is used in the following situations:
 
 *  When the Magento backend is healthy, but a request is taking longer than normal
 *  When the Magento backend is not healthy.
