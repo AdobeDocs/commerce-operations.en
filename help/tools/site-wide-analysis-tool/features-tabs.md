@@ -20,7 +20,7 @@ The Exceptions information includes Last Date Detected (UTC), Exception Detail, 
 
 **[!UICONTROL Extensions]**: The [!UICONTROL Extensions] page displays the extensions currently installed on your Adobe Commerce instance. Adobe Commerce Marketplace information is provided, where available, for extensions listed there.
 
-**[!UICONTROL Alerts]**: The [!UICONTROL Alerts] page displays the latest [!DNL NewRelic Managed Alerts] for the Adobe Commerce instance. Learn more about [Managed alerts for Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) and how to [Access NewRelic services](https://support.magento.com/hc/en-us/articles/360039127712) in the [!DNL Adobe Commerce Support Knowledge Base].
+**[!UICONTROL Alerts]**: The [!UICONTROL Alerts] page displays the latest [!DNL NewRelic Managed Alerts] for the Adobe Commerce instance. Learn more about [Managed alerts for Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) and how to [Access NewRelic services](https://support.magento.com/hc/en-us/articles/360039127712) in the Adobe Commerce Support Knowledge Base.
 
 **[!UICONTROL Patches]**: The [!UICONTROL Patches] page displays all the current patches from the [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) compatible with the merchant's Adobe Commerce instance version. Learn more about the [Quality Patches Tool](https://support.magento.com/hc/en-us/articles/360047139492) in the [!DNL Adobe Commerce Support Knowledge Base].
 
