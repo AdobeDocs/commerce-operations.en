@@ -122,11 +122,11 @@ To purge out-of-date items from the cache, you can _clean_ or _flush_ cache type
 
    >[!TIP]
    >
-   >    Always clean the cache after upgrading versions of {{site.data.var.ce}} or {{site.data.var.ee}}, upgrading from {{site.data.var.ce}} to {{site.data.var.ee}}, or installing {{site.data.var.b2b}} or any module.
+   >Always clean the cache after upgrading versions of {{site.data.var.ce}} or {{site.data.var.ee}}, upgrading from {{site.data.var.ce}} to {{site.data.var.ee}}, or installing {{site.data.var.b2b}} or any module.
 
 -  Flushing a cache type purges the cache storage, which might affect other processes applications that are using the same storage.
 
-Flush cache types if you've already tried cleaning the cache and you are still having issues that you cannot isolate.
+Flush cache types if you have already tried cleaning the cache and you are still having issues that you cannot isolate.
 
 Command usage:
 
