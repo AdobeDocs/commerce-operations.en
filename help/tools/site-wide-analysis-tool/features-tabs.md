@@ -12,8 +12,8 @@ The following features tabs information appears across the top end of the [!DNL 
 The [!UICONTROL General Information] area displays merchant site base data, displays Contact owner, [!DNL Jira] issues (Internal use only), and Report Tickets sections.
 The Adobe Commerce area displays Site Details, Products, Project & Integration links, Account, and Service and Components sections.
 
-**[!UICONTROL Recommendations]**: The [!UICONTROL Recommendations] page displays site Findings. Findings (Issues found and Recommendations to fix) are sorted by priority - P0 (Critical) to P4 (Notification).
-The Findings include Finding Description, Recommendation, Site Impact, Root Cause, Scenarios/Preconditions, and Tools Used.
+**[!UICONTROL Recommendations]**: The [!UICONTROL Recommendations] page displays site Best Practice Recommendations. Best Practice Recommendations (Issues found and Recommendations to fix) are sorted by priority - P0 (Critical) to P4 (Notification).
+The Best Practice Recommendations include Best Practice Recommendation Description, Recommendation, Site Impact, Root Cause, Scenarios/Preconditions, and Tools Used.
 
 **[!UICONTROL Exceptions]**: The [!UICONTROL Exceptions] page displays site log file errors/exceptions. Exceptions are sorted by Date/Time (UTC).
 The Exceptions information includes Last Date Detected (UTC), Exception Detail, and Count (number of times) that the Exception occurred that day.
