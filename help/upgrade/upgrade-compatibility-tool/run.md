@@ -156,7 +156,15 @@ Where arguments are as follows:
 
 #### HTML
 
-The HTML file also contains the list of identified issues and analysis summary. It also includes four different charts:
+The HTML file also contains the analysis summary and the list of identified issues.
+
+![HTML report - Summary](../../assets/upgrade-guide/uct-html-summary.png)
+
+You can easily navigate through the identified issues during the [!DNL Upgrade Compatibility Tool] analysis:
+
+![HTML report - Details](../../assets/upgrade-guide/uct-html-details.png)
+
+The HTML report also includes four different charts:
 
 - **Modules by issue severity**: Shows severity distribution by modules.
 - **Files by issue severity**: Shows severity distribution by files.
@@ -165,9 +173,21 @@ The HTML file also contains the list of identified issues and analysis summary. 
 
 These charts allow you to identify (at a glance) the parts that are most compromised and the ones that require more work to perform an upgrade.
 
-![HTML report - Summary](../../assets/upgrade-guide/uct-html-summary.png)
+![HTML report - Diagrams](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-![HTML report - Details](../../assets/upgrade-guide/uct-html-details.png)
+You will be able to filter the issues shown on the report according to the minimum issue level (by default, [WARNING]).
+
+There is a dropdown at the top right corner that will allow you to select a different one according to your necessities. The list of identified issues will be filtered accordingly.
+
+![HTML report - Drop Down usage](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+
+Please note that the issues with lower issue level are stripped out but you get a notification so you are always aware of the identified issues per module.
+
+The diagrams are also updated accordingly, with the only exception of the `Modules with relative sizes and issues`, which is generated with the `min-issue-level` originally set up. 
+
+If you want to see different results, you will need to re-run the command providing another value for the `--min-issue-level` option.
+
+![HTML report - Bubble Chart Diagram](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 To export this report into a different output folder run:
 
@@ -335,8 +355,8 @@ You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via t
 The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
 
 - Use the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It only provides errors against the version you are trying to upgrade to.
-- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade. If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well.
-- Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
+- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
+- If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
 
 ### Follow Adobe Commerce Best Practices
 
