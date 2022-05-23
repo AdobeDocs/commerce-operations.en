@@ -173,13 +173,13 @@ The HTML report also includes four different charts:
 
 These charts allow you to identify (at a glance) the parts that are most compromised and the ones that require more work to perform an upgrade.
 
-![HTML report - Details](../../assets/upgrade-guide/uct-html-diagrams.png)
+![HTML report - Diagrams](../../assets/upgrade-guide/uct-html-diagrams.png)
 
 You will be able to filter the issues shown on the report according to the minimum issue level (by default, [WARNING]).
 
 There is a dropdown at the top right corner that will allow you to select a different one according to your necessities. The list of identified issues will be filtered accordingly.
 
-![HTML report - Details](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![HTML report - Drop Down usage](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 Please note that the issues with lower issue level are stripped out but you get a notification so you are always aware of the identified issues per module.
 
@@ -187,7 +187,7 @@ The diagrams are also updated accordingly, with the only exception of the `Modul
 
 If you want to see different results, you will need to re-run the command providing another value for the `--min-issue-level` option.
 
-![HTML report - Details](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
+![HTML report - Bubble Chart Diagram](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 To export this report into a different output folder run:
 
