@@ -5,7 +5,7 @@ description: Optimize the response time of your Adobe Commerce or Magento Open S
 
 # Configuration best practices
 
-Commerceo provides many settings and tools that you can use to improve response time on the pages as well as provide higher throughput.
+Commerce provides many settings and tools that you can use to improve response time on the pages as well as provide higher throughput.
 
 ## Cron Jobs
 
