@@ -1,6 +1,6 @@
 ---
-title: Install the [!DNL Upgrade Compatibility Tool]
-description: Follow these steps to install the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project.
+title: Download the [!DNL Upgrade Compatibility Tool]
+description: Follow these steps to download the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project.
 ---
 
 # Install the [!DNL Upgrade Compatibility Tool]
@@ -11,11 +11,7 @@ The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adob
 
 ## Prerequisites
 
-To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites:
-
-*  Adobe Commerce access keys
-*  Composer
-*  Node.js
+To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites.
 
 See [prerequisites](../upgrade-compatibility-tool/prerequisites.md) for more information.
 

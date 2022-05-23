@@ -7,18 +7,16 @@ description: Learn more about related tools to the [!DNL Upgrade Compatibility T
 
 {{commerce-only}}
 
-The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules and core code installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
+There are tools related to the [!DNL Upgrade Compatibility Tool], which can be used for similar results, or can trigger an execution of the [!DNL Upgrade Compatibility Tool].
 
-There are tools related to the [!DNL Upgrade Compatibility Tool] which can be used for similar results, or can trigger an execution of the [!DNL Upgrade Compatibility Tool]. 
+- **[!DNL Security scanner]**: Provides Adobe Commerce and Magento Open Source customers with real-time insights into the security status of their store by proactively detecting malware and notifying them if their store is compromised. See the [[!DNL Security scan] user guide](https://docs.magento.com/user-guide/magento/security-scan.html) for more information.
 
-- **[!DNL Security scanner]**: Provides Adobe Commerce and Magento Open Source customers with real-time insights into the security status of their store by proactively detecting malware and notifying them if their store is compromised. See [[!DNL Security scan] user guide](https://docs.magento.com/user-guide/magento/security-scan.html) for more information.
+- **[!DNL Site-Wide Analysis Tool]**: A proactive self-service tool and central repository that includes detailed system insights and recommendations to ensure the security and operability of your Adobe Commerce installation. It provides 24/7 real-time performance monitoring, reports, and advice to identify potential issues and provide better visibility into site health, safety, and application configurations. See the [[!DNL Site-Wide Analysis Tool] guide](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en) for more information.
 
-- **[!DNL Site-Wide Analysis Tool]** (or SWAT): A proactive self-service tool and central repository that includes detailed system insights and recommendations to ensure the security and operability of your Adobe Commerce installation. It provides 24/7 real-time performance monitoring, reports, and advice to identify potential issues and better visibility into site health, safety, and application configurations. See [[!DNL Site-Wide Analysis Tool] guide](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en) for more information.
-
-- **[!DNL AmpersandHQ]**: This tool looks for files which have been modified as part of the upgrade and attempts to see if you have any overrides in your site. This allows you to focus in on the things that have changed and are specific to your site. See [[!DNL AmpersandHQ] repository guide](https://github.com/AmpersandHQ) for more information.
+- **[!DNL AmpersandHQ]**: Looks for files which have been modified as part of the upgrade and attempts to see if you have any overrides in your site. This allows you to focus in on the things that have changed and are specific to your site. See the [[!DNL AmpersandHQ] repository guide](https://github.com/AmpersandHQ) for more information.
 
    >[!WARNING]
    >
    >[!DNL AmpersandHQ] is not an Adobe official tool.
 
-- **[!DNL Quality Patches Tool]**: A command-line tool that delivers quality patches for Adobe Commerce and Magento Open Source. See [[!DNL Quality patches tool] user guide](https://devdocs.magento.com/quality-patches/tool.html) for more information.
+- **[!DNL Quality Patches Tool]**: A command-line tool that delivers quality patches for Adobe Commerce and Magento Open Source. See the [[!DNL Quality patches tool] user guide](https://devdocs.magento.com/quality-patches/tool.html) for more information.

@@ -33,7 +33,7 @@ This command checks for core code changes for that specific Adobe Commerce insta
 
 You can run the `core:code:changes` command to analyze only core code changes for that specific Adobe Commerce instance. See [Core code changes](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) section.
 
-You can use the `graphql:compare` command to compare two GraphQL schemas to check for any changes between them. See [GraphQL schema compatibility verification](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) section.
+You can use the `graphql:compare` command to compare two GraphQL schemas to check for any changes between them. See the [GraphQL schema compatibility verification](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) section.
 
 ### Recommendations to use the `upgrade:check` command
 
@@ -330,7 +330,7 @@ Available `--help` options for the `graphql:compare` command:
 
 You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via the PhpStorm plugin. See the [[!DNL Upgrade Compatibility Tool] Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
 
-Check this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) to learn how to use the [!DNL Upgrade Compatibility Tool] with the Magento PHPStorm plugin.
+See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) to learn how to use the [!DNL Upgrade Compatibility Tool] with the Magento PHPStorm plugin.
 
 
 ## Recommended actions
