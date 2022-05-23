@@ -226,10 +226,6 @@ Custom code warnings are raised when the references to deprecated code are detec
 | 1337 | Inherited from [!DNL Adobe Commerce] `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider removing the interface inheritance, using an interface marked as `@api` or an interface introduced within your implementation instead. |
 | 1338 | Implemented [!DNL Adobe Commerce] `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider removing the interface inheritance, using an interface marked as `@api` or an interface introduced within your implementation instead. |
 | 1430 | Call not declared dataobject method | The magic methods that are not declared may be changed. Consider relying on interface methods instead. |
-| 1439 | Call [!DNL Adobe Commerce] `@deprecated` method | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
-| 1534 | Using [!DNL Adobe Commerce] `@deprecated` property | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
-| 1535 | Overriding [!DNL Adobe Commerce] `@deprecated` property | The deprecated property will be removed in upcoming versions. Consider relying on methods declared in API interfaces or using a private property within your implementation instead. |
-| 1536 | Assignation of [!DNL Adobe Commerce] `@deprecated` property | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
 | 5006 | Proxies and interceptors MUST never be explicitly requested in constructors | The original class should be declared as a type of the constructor parameter. The Interceptor/Proxy class will be passed by the framework dependency injection implementation. |
 | 5074 | Use of deprecated method `getResource()` to (save / load / delete) data detected. | Use a repository instead. |
 | 5086 | Visibility is not declared on a constant | Declare the visibility on all constants. |
