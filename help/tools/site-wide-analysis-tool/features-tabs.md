@@ -8,7 +8,7 @@ The following features tabs information appears across the top end of the [!DNL 
 
 **[!UICONTROL Dashboard]**: The [!UICONTROL Dashboard] page shows widgets that contain the current Recommendations, Upgrade Compatibility, Security Scan, Extensions, and [!DNL NewRelic Alerts] for the current status of your Adobe Commerce website. There is also a list of [!UICONTROL External Resources] links for Adobe Commerce, including the [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html#patch-grid), [Security Center](https://magento.com/security), and [Observation for Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
 
-**[!UICONTROL Information]**: The [!UICONTROL Information] page displays overview information regarding the site. This page further displays product areas in the left navigation, if they are contracted (entitlement). These areas can include: Adobe Commerce, [!DNL Magento Order Management System] (OMS) for Adobe Commerce, and [!DNL Magento Business Intelligence].
+**[!UICONTROL Information]**: The [!UICONTROL Information] page displays overview information regarding the site.
 The [!UICONTROL General Information] area displays merchant site base data, displays Contact owner, [!DNL Jira] issues (Internal use only), and Report Tickets sections.
 The Adobe Commerce area displays Site Details, Products, Project & Integration links, Account, and Service and Components sections.
 
