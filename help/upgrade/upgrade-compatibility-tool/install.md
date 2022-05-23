@@ -1,13 +1,23 @@
 ---
 title: Install the [!DNL Upgrade Compatibility Tool]
-description: Follow these steps to install the [!DNL Upgrade Compatibility Tool] for your [!DNL Adobe Commerce] project.
+description: Follow these steps to install the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project.
 ---
 
 # Install the [!DNL Upgrade Compatibility Tool]
 
 {{commerce-only}}
 
-The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an [!DNL Adobe Commerce] customized instance against a specific version by analyzing all modules installed in it. It returns a list of errors and warnings that must be addressed before upgrading to the latest version of [!DNL Adobe Commerce].
+The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of errors and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
+
+## Prerequisites
+
+To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites:
+
+*  Adobe Commerce access keys
+*  Composer
+*  Node.js
+
+See [prerequisites](../upgrade-compatibility-tool/prerequisites.md) for more information.
 
 ## Download the [!DNL Upgrade Compatibility Tool]
 
@@ -17,21 +27,9 @@ To download the [!DNL Upgrade Compatibility Tool], run the following command:
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
-## Install
+### Adobe Commerce access keys
 
-To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites:
-
-*  [!DNL Adobe Commerce] access keys
-*  Composer
-*  Node.js
-
-## Prerequisites
-
-See [prerequisites](../upgrade-compatibility-tool/prerequisites.md) for more information.
-
-### [!DNL Adobe Commerce] access keys
-
-You must have [[!DNL Adobe Commerce] access keys](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your [!DNL Adobe Commerce] access keys to your `auth.json` file, which is located at `~/.composer` by default.
+You must have [Adobe Commerce access keys](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
 
 >[!WARNING]
 >
@@ -39,7 +37,7 @@ You must have [[!DNL Adobe Commerce] access keys](https://devdocs.magento.com/ma
 
 The **public key** corresponds to the _username_ whereas the **private key** is the _password_:
 
-### Example of [!DNL Adobe Commerce] access keys
+### Example of Adobe Commerce access keys
 
 ```json
     "http-basic": {
@@ -52,11 +50,11 @@ The **public key** corresponds to the _username_ whereas the **private key** is 
 
 ### Composer
 
-Clone the [!DNL Upgrade Compatibility Tool] repository and run `composer install` in your terminal to install dependencies.
+Download the [!DNL Upgrade Compatibility Tool] repository and run `composer install` in your terminal to install dependencies.
 
 >[!WARNING]
 >
->If the **[!DNL Adobe Commerce] access keys** are not correctly configured, the [!DNL Upgrade Compatibility Tool] will not install and you will get errors when running the `composer install` command.
+>If the **Adobe Commerce access keys** are not correctly configured, you cannot download the [!DNL Upgrade Compatibility Tool] and when running the `composer create-project` command it will fail.
 
 ### Node.js
 
@@ -64,6 +62,6 @@ To install Node.js, see the Node.js [documentation](https://nodejs.dev/learn/how
 
 ## Third-party extensions
 
-Adobe recommends that you contact your extension vendor to determine whether your extension is fully compatible with [!DNL Adobe Commerce] latest released version.
+Adobe recommends that you contact your extension vendor to determine whether your extension is fully compatible with Adobe Commerce latest released version.
 
 See [Run the tool](../upgrade-compatibility-tool/run.md) for information about executing the [!DNL Upgrade Compatibility Tool].

@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Upgrade Compatibility Tool] Error Messages"
-description: Learn more about error messages you encounter when using the [!DNL Upgrade Compatibility Tool] on your [!DNL Adobe Commerce] project.
+description: Learn more about error messages you encounter when using the [!DNL Upgrade Compatibility Tool] on your Adobe Commerce project.
 ---
 
 # [!DNL Upgrade Compatibility Tool] error messages
@@ -11,7 +11,7 @@ This error message reference provides information about errors that can occur wh
 
 Error messages are categorized by level (critical issues, errors, and warnings) and type (core code, custom code, and GraphQL schemas). Each type contains the following information:
 
-- **Error code**: The [!DNL Adobe Commerce] assigned identifier for the error message.
+- **Error code**: The Adobe Commerce assigned identifier for the error message.
 - **Error description**: A description that summarizes the cause of the error.
 - **Error suggested action**: If applicable, provides guidance to troubleshoot and resolve the error.
 
@@ -32,26 +32,26 @@ These errors are reported when some of the core files are missing or do not matc
 
 ### Custom code
 
-Critical errors are raised when the custom code is referencing entities that are not present in the target [!DNL Adobe Commerce] version. These errors are also reported when critical coding standards have been broken.
+Critical errors are raised when the custom code is referencing entities that are not present in the target Adobe Commerce version. These errors are also reported when critical coding standards have been broken.
 
 | Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 1110 | Instantiating non-existent [!DNL Adobe Commerce] class/interface | Update code to use a class marked as `@api`. Instantiating non-existent [!DNL Adobe Commerce] class/interface. |
-| 1111 | Extending from non-existent [!DNL Adobe Commerce] class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending [!DNL Adobe Commerce] functionality. Update code to use a class marked as `@api`. |
-| 1112 | Importing non-existent [!DNL Adobe Commerce] class | Update code to use a class marked as `@api`. |
-| 1113 | Loading non-existent [!DNL Adobe Commerce] class | Update code to use a class marked as `@api`. |
-| 1114 | Using non-existent [!DNL Adobe Commerce] class | Update code to use a class marked as `@api`. |
-| 1214 | Using non-existent [!DNL Adobe Commerce] constant | Consider introducing and using a private constant of the required value within the custom code instead. |
-| 1215 | Overriding non-existent [!DNL Adobe Commerce] constant | Consider introducing and using a private constant of the required value within the custom code instead. |
-| 1216 | Assignation of non-existent [!DNL Adobe Commerce] constant | Consider introducing and using a private constant of the required value within the custom code instead. |
-| 1312 | Imported non-existent [!DNL Adobe Commerce] interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
-| 1314 | Used non-existent [!DNL Adobe Commerce] interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
-| 1317 | Inherited non-existent [!DNL Adobe Commerce] interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
-| 1318 | Implemented non-existent [!DNL Adobe Commerce] interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
-| 1410 | Call non-existent [!DNL Adobe Commerce] method | Update code to use a class marked as `@api`. |
-| 1514 | Using non-existent [!DNL Adobe Commerce] property | Update code to use a class marked as `@api`. |
-| 1515 | Overriding non-existent [!DNL Adobe Commerce] property | Update code to use a class marked as `@api`. |
-| 1516 | Assignation of non-existent [!DNL Adobe Commerce] property | Update code to use a class marked as `@api`. Update the property access level to private if it can be used within a single class only. |
+| 1110 | Instantiating non-existent Adobe Commerce class/interface | Update code to use a class marked as `@api`. Instantiating non-existent Adobe Commerce class/interface. |
+| 1111 | Extending from non-existent Adobe Commerce class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
+| 1112 | Importing non-existent Adobe Commerce class | Update code to use a class marked as `@api`. |
+| 1113 | Loading non-existent Adobe Commerce class | Update code to use a class marked as `@api`. |
+| 1114 | Using non-existent Adobe Commerce class | Update code to use a class marked as `@api`. |
+| 1214 | Using non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1215 | Overriding non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1216 | Assignation of non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1312 | Imported non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1314 | Used non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1317 | Inherited non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1318 | Implemented non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1410 | Call non-existent Adobe Commerce method | Update code to use a class marked as `@api`. |
+| 1514 | Using non-existent Adobe Commerce property | Update code to use a class marked as `@api`. |
+| 1515 | Overriding non-existent Adobe Commerce property | Update code to use a class marked as `@api`. |
+| 1516 | Assignation of non-existent Adobe Commerce property | Update code to use a class marked as `@api`. Update the property access level to private if it can be used within a single class only. |
 | 5002 | The opening PHP tag must be the first content in the file | Ensure there is no content in the file before the PHP opening tag. |
 | 5003 | Function has been deprecated | Use a replacement suggested in the error message. If the message does not suggest a replacement, a close review is needed to select an alternative function or implementation. |
 | 5005 | PHP syntax error | The code must be updated to comply with the PHP syntax standards. |
@@ -90,29 +90,29 @@ GraphQL Schema critical issues are raised if the schema items are not present in
 
 ### Custom code
 
-Custom code errors are raised when custom code is using the [!DNL Adobe Commerce] entry points that are not considered/marked as `@api`. The preserved behavior of such entry points is not guaranteed. The customization should rely on `@api` entry points instead. The functionality that is based on non-API [!DNL Adobe Commerce] code should be tested after the upgrade. These errors are also reported when major coding standards have been broken.
+Custom code errors are raised when custom code is using the Adobe Commerce entry points that are not considered/marked as `@api`. The preserved behavior of such entry points is not guaranteed. The customization should rely on `@api` entry points instead. The functionality that is based on non-API Adobe Commerce code should be tested after the upgrade. These errors are also reported when major coding standards have been broken.
 
 | Error code | Error description | Suggested action |
 | --- | --- | --- |
 | 1104 | Using non-API class that is inheriting API interface | Classes that are not marked as `@api` may be changed. Consider updating the code to rely on the interface marked as `@api` instead. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
-| 1121 | Extending from non-[!DNL Adobe Commerce] API class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending [!DNL Adobe Commerce] functionality. Update code to use a class marked as `@api`. |
-| 1122 | Importing non-[!DNL Adobe Commerce] API class | The extended class is no longer present in the codebase. Update code to use a class marked as `@api`. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
-| 1123 | Loading non-[!DNL Adobe Commerce] API class | The extended class is no longer present in the codebase. Update code to use a class marked as `@api`. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
-| 1124 | Using non-[!DNL Adobe Commerce] API class | The extended class is no longer present in the codebase. Update code to use a class marked as `@api`. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
-| 1224 | Using non-[!DNL Adobe Commerce] API constant | Constants that are not marked as `@api` may be changed. Consider introducing and using a private constant of the required value within the custom code instead. |
-| 1225 | Overriding non-[!DNL Adobe Commerce] API constant | Constants that are not marked as `@api` may be changed. Consider introducing and using a private constant of the required value within the custom code instead. |
-| 1226 | Assignation of non-[!DNL Adobe Commerce] API constant | Constants that are not marked as `@api` may be changed. Consider introducing and using a private constant of the required value within the custom code instead. |
-| 1322 | Imported non-[!DNL Adobe Commerce] API interface | Interfaces not marked as `@api` may be changed. Consider removing this inheritance or replacing it with inheritance from the [!DNL Adobe Commerce] interface that is marked as `@api` or an interface introduced in the scope of customization code. |
-| 1324 | Used non-[!DNL Adobe Commerce] API interface | Interfaces not marked as `@api` may be changed. Consider removing this inheritance or replacing it with inheritance from the [!DNL Adobe Commerce] interface that is marked as `@api` or an interface introduced in the scope of customization code. |
-| 1327 | Inherited non-[!DNL Adobe Commerce] API interface | Constants that are not marked as `@api` may be changed. Consider introducing and using a private constant of the required value within the custom code instead. |
-| 1328 | Implemented non-[!DNL Adobe Commerce] API interface | Interfaces not marked as `@api` may be changed. Consider removing this inheritance or replacing it with inheritance from the [!DNL Adobe Commerce] interface that is marked as `@api` or an interface introduced in the scope of customization code. |
-| 1420 | Instantiating non-[!DNL Adobe Commerce] API class/interface | Classes that are not marked as `@api` may be changed. Consider updating the code to rely on the interface marked as `@api` instead. Otherwise, the functionality relying on this implementation should be tested after the upgrade. Also, the recommended way of retrieving an instance of the class is using DI. Consider using a factory if a new instance of the class is required. |
+| 1121 | Extending from non-Adobe Commerce API class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
+| 1122 | Importing non-Adobe Commerce API class | The extended class is no longer present in the codebase. Update code to use a class marked as `@api`. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1123 | Loading non-Adobe Commerce API class | The extended class is no longer present in the codebase. Update code to use a class marked as `@api`. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1124 | Using non-Adobe Commerce API class | The extended class is no longer present in the codebase. Update code to use a class marked as `@api`. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1224 | Using non-Adobe Commerce API constant | Constants that are not marked as `@api` may be changed. Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1225 | Overriding non-Adobe Commerce API constant | Constants that are not marked as `@api` may be changed. Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1226 | Assignation of non-Adobe Commerce API constant | Constants that are not marked as `@api` may be changed. Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1322 | Imported non-Adobe Commerce API interface | Interfaces not marked as `@api` may be changed. Consider removing this inheritance or replacing it with inheritance from the Adobe Commerce interface that is marked as `@api` or an interface introduced in the scope of customization code. |
+| 1324 | Used non-Adobe Commerce API interface | Interfaces not marked as `@api` may be changed. Consider removing this inheritance or replacing it with inheritance from the Adobe Commerce interface that is marked as `@api` or an interface introduced in the scope of customization code. |
+| 1327 | Inherited non-Adobe Commerce API interface | Constants that are not marked as `@api` may be changed. Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1328 | Implemented non-Adobe Commerce API interface | Interfaces not marked as `@api` may be changed. Consider removing this inheritance or replacing it with inheritance from the Adobe Commerce interface that is marked as `@api` or an interface introduced in the scope of customization code. |
+| 1420 | Instantiating non-Adobe Commerce API class/interface | Classes that are not marked as `@api` may be changed. Consider updating the code to rely on the interface marked as `@api` instead. Otherwise, the functionality relying on this implementation should be tested after the upgrade. Also, the recommended way of retrieving an instance of the class is using DI. Consider using a factory if a new instance of the class is required. |
 | 1428 | Possible dependency on implementation details. | Classes that are not marked as `@api` may be changed. Consider updating the code to rely on the interface marked as `@api` instead. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
-| 1429 | Call non-[!DNL Adobe Commerce] API methods | Methods that are not marked as `@api` or are not declared within API class/interface may be changed. Even if the interface of the method is not updated in the new version, its behaviour or output can be different. Consider relying on an interface method. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1429 | Call non-Adobe Commerce API methods | Methods that are not marked as `@api` or are not declared within API class/interface may be changed. Even if the interface of the method is not updated in the new version, its behaviour or output can be different. Consider relying on an interface method. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
 | 1449 | Call to non-interface method (that is present in implementation) | Methods that are not declared in the interface may be changed. Consider relying on an interface method. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
-| 1524 | Using non-[!DNL Adobe Commerce] API property | Values of the properties that are not marked as `@api` may be changed. Consider relying on the API interface method instead. |
-| 1525 | Overriding non-[!DNL Adobe Commerce] API property | Values of the properties that are not marked as `@api` may be changed. Consider relying on the API interface method instead. |
-| 1526 | Assignation of non-[!DNL Adobe Commerce] API property | Values of the properties that are not marked as `@api` may be changed. Consider relying on the API interface method instead. |
+| 1524 | Using non-Adobe Commerce API property | Values of the properties that are not marked as `@api` may be changed. Consider relying on the API interface method instead. |
+| 1525 | Overriding non-Adobe Commerce API property | Values of the properties that are not marked as `@api` may be changed. Consider relying on the API interface method instead. |
+| 1526 | Assignation of non-Adobe Commerce API property | Values of the properties that are not marked as `@api` may be changed. Consider relying on the API interface method instead. |
 | 5004 | Function without argument has been deprecated | Pass the input to validate as the first argument of the function. |
 | 5007 | The use of certain functions is discouraged | Avoid using these functions. |
 | 5009 | Template directives may not invoke methods. Only scalar array access is allowed | Remove method invocations from the template. |
@@ -214,22 +214,22 @@ Custom code warnings are raised when the references to deprecated code are detec
 
 | Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 1131 | Extending from [!DNL Adobe Commerce] ``@deprecated`` class | The extended class will be removed in upcoming versions. Inheritance is not recommended way of extending [!DNL Adobe Commerce] functionality. Update code to use a class marked as `@api`. |
-| 1132 | Importing [!DNL Adobe Commerce] `@deprecated` class | The extended class will be removed in upcoming versions. Consider using [!DNL Adobe Commerce] class marked as `@api` instead. |
-| 1133 | Loading [!DNL Adobe Commerce] `@deprecated` class | The extended class will be removed in upcoming versions. Consider using [!DNL Adobe Commerce] class marked as `@api` instead. |
-| 1134 | Using [!DNL Adobe Commerce] `@deprecated` class | The extended class will be removed in upcoming versions. Consider using [!DNL Adobe Commerce] class marked as `@api` instead. |
-| 1234 | Using [!DNL Adobe Commerce] `@deprecated` constant | The deprecated constant will be removed in upcoming versions. Consider using a constant marked as `@api` or a private constant within your implementation instead. |
-| 1235 | Overriding [!DNL Adobe Commerce] `@deprecated` constant | The deprecated constant will be removed in upcoming versions. Consider using a constant marked as `@api` or a private constant within your implementation instead. |
-| 1236 | Assignation of [!DNL Adobe Commerce] `@deprecated` constant | The deprecated constant will be removed in upcoming versions. Consider using a constant marked as `@api` or a private constant within your implementation instead. |
-| 1332 | Imported [!DNL Adobe Commerce] `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider using an interface or class marked as `@api` instead. |
-| 1334 | Used [!DNL Adobe Commerce] `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider using an interface or class marked as `@api` instead. |
-| 1337 | Inherited from [!DNL Adobe Commerce] `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider removing the interface inheritance, using an interface marked as `@api` or an interface introduced within your implementation instead. |
-| 1338 | Implemented [!DNL Adobe Commerce] `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider removing the interface inheritance, using an interface marked as `@api` or an interface introduced within your implementation instead. |
+| 1131 | Extending from Adobe Commerce ``@deprecated`` class | The extended class will be removed in upcoming versions. Inheritance is not recommended way of extending Adobe Commerce functionality. Update code to use a class marked as `@api`. |
+| 1132 | Importing Adobe Commerce `@deprecated` class | The extended class will be removed in upcoming versions. Consider using Adobe Commerce class marked as `@api` instead. |
+| 1133 | Loading Adobe Commerce `@deprecated` class | The extended class will be removed in upcoming versions. Consider using Adobe Commerce class marked as `@api` instead. |
+| 1134 | Using Adobe Commerce `@deprecated` class | The extended class will be removed in upcoming versions. Consider using Adobe Commerce class marked as `@api` instead. |
+| 1234 | Using Adobe Commerce `@deprecated` constant | The deprecated constant will be removed in upcoming versions. Consider using a constant marked as `@api` or a private constant within your implementation instead. |
+| 1235 | Overriding Adobe Commerce `@deprecated` constant | The deprecated constant will be removed in upcoming versions. Consider using a constant marked as `@api` or a private constant within your implementation instead. |
+| 1236 | Assignation of Adobe Commerce `@deprecated` constant | The deprecated constant will be removed in upcoming versions. Consider using a constant marked as `@api` or a private constant within your implementation instead. |
+| 1332 | Imported Adobe Commerce `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider using an interface or class marked as `@api` instead. |
+| 1334 | Used Adobe Commerce `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider using an interface or class marked as `@api` instead. |
+| 1337 | Inherited from Adobe Commerce `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider removing the interface inheritance, using an interface marked as `@api` or an interface introduced within your implementation instead. |
+| 1338 | Implemented Adobe Commerce `@deprecated` interface | The deprecated interface will be removed in upcoming versions. Consider removing the interface inheritance, using an interface marked as `@api` or an interface introduced within your implementation instead. |
 | 1430 | Call not declared dataobject method | The magic methods that are not declared may be changed. Consider relying on interface methods instead. |
-| 1439 | Call [!DNL Adobe Commerce] `@deprecated` method | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
-| 1534 | Using [!DNL Adobe Commerce] `@deprecated` property | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
-| 1535 | Overriding [!DNL Adobe Commerce] `@deprecated` property | The deprecated property will be removed in upcoming versions. Consider relying on methods declared in API interfaces or using a private property within your implementation instead. |
-| 1536 | Assignation of [!DNL Adobe Commerce] `@deprecated` property | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 1439 | Call Adobe Commerce `@deprecated` method | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 1534 | Using Adobe Commerce `@deprecated` property | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 1535 | Overriding Adobe Commerce `@deprecated` property | The deprecated property will be removed in upcoming versions. Consider relying on methods declared in API interfaces or using a private property within your implementation instead. |
+| 1536 | Assignation of Adobe Commerce `@deprecated` property | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
 | 5006 | Proxies and interceptors MUST never be explicitly requested in constructors | The original class should be declared as a type of the constructor parameter. The Interceptor/Proxy class will be passed by the framework dependency injection implementation. |
 | 5074 | Use of deprecated method `getResource()` to (save / load / delete) data detected. | Use a repository instead. |
 | 5086 | Visibility is not declared on a constant | Declare the visibility on all constants. |
