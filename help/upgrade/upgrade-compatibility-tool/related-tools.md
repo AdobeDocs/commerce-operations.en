@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] related tools"
+title: "[!DNL Upgrade Compatibility Tool] Related Tools"
 description: Learn more about related tools to the [!DNL Upgrade Compatibility Tool] on your [!DNL Adobe Commerce] project.
 ---
 
