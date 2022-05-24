@@ -33,7 +33,7 @@ This command checks for core code changes for that specific Adobe Commerce insta
 
 You can run the `core:code:changes` command to analyze only core code changes for that specific Adobe Commerce instance. See [Core code changes](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) section.
 
-While you can use the `graphql:compare` command to compare two GraphQL schemas to check for any changes between them. See [GraphQL schema compatibility verification](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) section.
+You can use the `graphql:compare` command to compare two GraphQL schemas to check for any changes between them. See the [GraphQL schema compatibility verification](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) section.
 
 ### Recommendations to use the `upgrade:check` command
 
@@ -311,6 +311,10 @@ Run:
 bin/uct refactor <dir>
 ```
 
+Where arguments are as follows:
+
+- `<dir>`: Adobe Commerce installation directory.
+
 ## GraphQL schema compatibility verification
 
 The [!DNL Upgrade Compatibility Tool] also provides the option to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
@@ -344,9 +348,10 @@ Available `--help` options for the `graphql:compare` command:
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
 
-See [Developer information](../upgrade-compatibility-tool/developer.md) for more information.
-
 You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via the PhpStorm plugin. See the [[!DNL Upgrade Compatibility Tool] Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
+
+See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) to learn how to use the [!DNL Upgrade Compatibility Tool] with the Magento PHPStorm plugin.
+
 
 ## Recommended actions
 
