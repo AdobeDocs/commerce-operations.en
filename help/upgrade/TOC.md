@@ -26,12 +26,12 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
   - [How patches work](patches/overview.md)
   - [Apply patches](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-  - [Overview](upgrade-compatibility-tool/overview.md)
+  - [[!DNL Upgrade Compatibility Tool] Overview](upgrade-compatibility-tool/overview.md)
   - [Prerequisites](upgrade-compatibility-tool/prerequisites.md)
   - [Install](upgrade-compatibility-tool/install.md)
   - [Run the tool](upgrade-compatibility-tool/run.md)
+  - [Related tools](upgrade-compatibility-tool/related-tools.md)
   - [Integrate the [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-  - [Developer information](upgrade-compatibility-tool/developer.md)
   - [Error messages](upgrade-compatibility-tool/error-messages.md)
 - Contributing developers {#developer}
   - [Upgrade a git-based installation](developer/git-installs.md)
