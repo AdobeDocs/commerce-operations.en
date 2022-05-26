@@ -16,7 +16,6 @@ The [!DNL Extensions] tab in the [!DNL Site-Wide Analysis Tool] provides informa
 
 * Get information on the versions of installed [!DNL extensions] and update them to the latest versions. 
 
-
 ## Best Practices for using [!DNL extensions]
 
 * Keep your third-party [!DNL extensions] up-to-date to their latest versions.
