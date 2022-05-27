@@ -1,26 +1,23 @@
 ---
-
 title: Run the support utilities
-ee_only: True
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+description: Troubleshoot your Commerce project using the built-in support utility.
 ---
+
+<!-- ee_only: True -->
 
 # Run the support utilities
 
 {{file-system-owner}}
 
-The {{site.data.var.ee}} Support utilities (also referred to as the [*Data Collector*]({{ site.user_guide_url }}/system/support-data-collector.html)) enable {{site.data.var.ee}} users to gather troubleshooting information about your system that can be used by our Support team.
+The Adobe Commerce Support utilities—also referred to as the [Data Collector]({{ site.user_guide_url }}/system/support-data-collector.html)—enable users to gather troubleshooting information about your system that can be used by our Support team.
 
-{{site.data.var.ee}} uses these backups (also referred to as *dumps*) to analyze issues that require access to your code. A typical scenario follows:
+Adobe Commerce uses these backups, also referred to as _dumps_,to analyze issues that require access to your code. A typical scenario follows:
 
-1. You are having an issue with your Magento store and you contact {{site.data.var.ee}} Support.
+1. You are having an issue with your Magento store and you contact Adobe Commerce Support.
 1. Support determines they need to see your code or database to reproduce the issue.
 1. You back up the code to a `.tar.gz` file.
 
-   This backup *excludes* your media files to speed up the process and to result in a much smaller file.
+   This backup _excludes your media files to speed up the process and to result in a much smaller file.
 
 1. You back up the database to a `.tar.gz` file.
 
@@ -31,11 +28,11 @@ The {{site.data.var.ee}} Support utilities (also referred to as the [*Data Colle
 
 The utilities can take several minutes to complete.
 
-## Create a code backup {#config-cli-spt-utils-code}
+## Create a code backup
 
 This command backs up code and compresses it in `tar.gz` format.
 
-{% include config/code-backup.md %}
+{{tip-backup-command}}
 
 Command options:
 
@@ -55,13 +52,13 @@ For example, to create a code backup named `/var/www/html/magento2/var/log/mycod
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
-After the command completes, provide the code backup to {{site.data.var.ee}} Support.
+After the command completes, provide the code backup to Adobe Commerce Support.
 
-## Create a database backup {#config-cli-spt-utils-db}
+## Create a database backup
 
 This command backs up the Magento database and compresses it in `tar.gz` format.
 
-{% include config/code-backup.md %}
+{{tip-backup-command}}
 
 Command options:
 
@@ -91,11 +88,11 @@ Sensitive data includes customer information from the following database tables:
 'sales_order_grid'
 ```
 
-After the command completes, provide the database backup to {{site.data.var.ee}} Support.
+After the command completes, provide the database backup to Adobe Commerce Support.
 
-## Troubleshooting: display utilities and paths {#config-cli-spt-utils-trouble}
+## Troubleshooting: display utilities and paths
 
-We provide commands that display paths to utilities required by the Data Collector and the command line. You can use these commands, for example, if errors like the following display in the [Admin](https://glossary.magento.com/admin) or on the command line:
+We provide commands that display paths to utilities required by the Data Collector and the command line. You can use these commands, for example, if errors like the following display in the Admin or on the command line:
 
 ```terminal
 Utility lsof not found
@@ -107,8 +104,9 @@ Run the following commands in the order shown to display the paths to the applic
 
    For example, `cd /var/www/magento2`
 
-    {:.bs-callout-info}
-   The commands run properly _only_ from your Magento installation directory.
+   >[!INFO]
+   >
+   >The commands run properly _only_ from your installation directory.
 
 1. `bin/magento support:utility:paths` creates `<magento_root>/var/support/Paths.php`, which lists the paths to all application used by the utility.
 1. `bin/magento support:utility:check` displays the file system paths.

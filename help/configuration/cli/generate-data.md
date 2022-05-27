@@ -1,34 +1,25 @@
 ---
-
 title: Generate data for performance testing
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+description: Learn how to generate a large amount of data to use for performance testing.
 ---
 
-## Overview of performance testing data {#config-cli-perf-overview}
+# Performance testing data
 
-To use the [Magento Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) or another tool for performance testing, you must generate a large amount of data (for example, stores, categories, products, and so on).
+To use the [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) or another tool for performance testing, you must generate a large amount of data, such as stores, categories, and products.
 
-You can adjust the amount of data you create using _profiles_ (small, medium, large, and extra large). The next section discusses profiles in more detail.
+{{file-system-owner}}
 
-The following figure shows how a product is displayed on the [storefront](https://glossary.magento.com/storefront) using the small profile:
+## Profiles
 
-![Sample storefront with generated data]({{ site.baseurl }}/common/images/generate-data.png){:width="550px"}
-
-## First steps {#config-cli-before}
-
-{% include install/first-steps-cli.md %}
-In addition to the command arguments discussed here, see [Common arguments](../cli/config-cli-subcommands.html#config-cli-subcommands-common).
-
-## About profiles {#config-cli-perf-prof}
-
-The following table provides details about the data generator profiles (small, medium, large, and extra large).
-
-Profiles are located in `<magento_root>/setup/performance-toolkit/profiles/<ce or ee>`
+You can adjust the amount of data you create using _profiles_ (small, medium, large, and extra large). Profiles are located in the `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` directory.
 
 For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
+
+The following figure shows how a product is displayed on the storefront using the _small_ profile:
+
+![Sample storefront with generated data](../../assets/configuration/generate-data.png)
+
+The following table provides details about the data generator profiles: small, medium, large, and extra large.
 
 | Parameter | Small profile | Medium profile | Medium multi-site profile | Large profile | Extra large profile |
 | --- | --- | --- | --- | --- | --- |
@@ -48,20 +39,21 @@ For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 | `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
 | `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
-### Run the data generator {#config-cli-perf-run}
+### Run the data generator
 
-{:.bs-callout-warning}
-Before running the data generator, disable all cron jobs running on the server. Disabling cron jobs prevents the data generator from performing actions that conflict with active cron jobs and avoids unnecessary errors.
+>[!WARNING]
+>
+>Before running the data generator, disable all cron jobs running on the server. Disabling cron jobs prevents the data generator from performing actions that conflict with active cron jobs and avoids unnecessary errors.
 
-Run the command as discussed in this section. After the command runs, you must [reindex all indexers](../cli/config-cli-subcommands-index.html#config-cli-subcommands-index-reindex).
+Run the command as discussed in this section. After the command runs, you must [reindex all indexers](../cli/manage-indexers.md).
 
 Command options:
 
 ```bash
-bin/magento setup:perf:generate-fixtures {path to profile}
+bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
-Where `<path to profile>` specifies the absolute file system path to, and name of, a profile.
+Where `<path-to-profile>` specifies the absolute file system path to, and name of, a profile.
 
 For example,
 
@@ -98,31 +90,9 @@ Generating simple products...  done in <time>
 ... more ...
 ```
 
-Current supported fixtures:
+## Performance fixtures
 
-*  [Admin users](#config-cli-gen-admin)
-*  [Attribute sets](#config-cli-gen-attrib)
-*  [Bundle products](#config-cli-gen-bundle)
-*  [Cart price rules](#config-cli-gen-cartrules)
-*  [Catalog price rules](#config-cli-gen-pricerules)
-*  [Categories](#config-cli-gen-cat)
-*  [Configurations](#config-cli-gen-config)
-*  [Configurable products](#config-cli-gen-configprod)
-*  [Customers](#config-cli-gen-cust)
-*  [Product images](#config-cli-gen-prodimg)
-*  [Indexers state](#config-cli-gen-index)
-*  [Orders](#config-cli-gen-orders)
-*  [Simple products](#config-cli-gen-simp)
-*  [Websites](#config-cli-gen-websites)
-*  [Store groups](#config-cli-gen-stores)
-*  [Store views](#config-cli-gen-storeview)
-*  [Tax rates](#config-cli-gen-taxrate)
-
-## Detailed information about fixtures
-
-The following sections discuss additional details about the performance fixtures.
-
-### Admin users {#config-cli-gen-admin}
+### Admin users
 
 Generates [admin](https://glossary.magento.com/admin) users. [XML](https://glossary.magento.com/xml) profile node:
 
@@ -131,7 +101,7 @@ Generates [admin](https://glossary.magento.com/admin) users. [XML](https://gloss
 <admin_users>{int}</admin_users>
 ```
 
-### Attribute sets {#config-cli-gen-attrib}
+### Attribute sets
 
 Generates attribute sets with specified configuration. XML profile node:
 
@@ -142,13 +112,13 @@ Generates attribute sets with specified configuration. XML profile node:
 <!-- Number of attributes per set -->
 <product_attribute_sets_attributes>{int}</product_attribute_sets_attributes>
 
-    <!-- Number of values per attribute -->
+<!-- Number of values per attribute -->
 <product_attribute_sets_attributes_values>{int}</product_attribute_sets_attributes_values>
 ```
 
-### Bundle products {#config-cli-gen-bundle}
+### Bundle products
 
-Generates bundle products. Generated bundle selections are not displayed individually in [catalog](https://glossary.magento.com/catalog). Products will be uniformly distributed per categories and websites. If  `assign_entities_to_all_websites` from the profile is set to `1`. products will be assigned to all websites.
+Generates bundle products. Generated bundle selections are not displayed individually in [catalog](https://glossary.magento.com/catalog). Products are uniformly distributed per categories and websites. If  `assign_entities_to_all_websites` from the profile is set to `1`. Products are assigned to all websites.
 
 XML profile node:
 
@@ -163,7 +133,7 @@ XML profile node:
 <bundle_products_variation>{int}</bundle_products_variation>
 ```
 
-### Cart price rules {#config-cli-gen-cartrules}
+### Cart price rules
 
 Generates cart price rules. XML profile node:
 
@@ -175,7 +145,7 @@ Generates cart price rules. XML profile node:
 <cart_price_rules_floor>{int}</cart_price_rules_floor>
 ```
 
-### Catalog price rules {#config-cli-gen-pricerules}
+### Catalog price rules
 
 Generates catalog price rules. XML profile node:
 
@@ -184,7 +154,7 @@ Generates catalog price rules. XML profile node:
 <catalog_price_rules>{int}</catalog_price_rules>
 ```
 
-### Categories {#config-cli-gen-cat}
+### Categories
 
 Generates categories. If `assign_entities_to_all_websites` is set to `0`, all categories are uniformly distributed per root categories; otherwise, all categories are assigned to one root [category](https://glossary.magento.com/category).
 
@@ -198,7 +168,7 @@ XML profile node:
 <categories_nesting_level>{int}</categories_nesting_level>
 ```
 
-### Configs {#config-cli-gen-config}
+### Configs
 
 Sets values for config fields. XML profile node:
 
@@ -216,27 +186,56 @@ Sets values for config fields. XML profile node:
 </configs>
 ```
 
-### Configurable products {#config-cli-gen-configprod}
+### Configurable products
 
-Generates Configurable products. Generated configurable options are not displayed individually in the catalog. Products are uniformly distributed per categories and websites. If `assign_entities_to_all_websites` is set to `1`, products will be assigned to all websites.
+Generates Configurable products. Generated configurable options are not displayed individually in the catalog. Products are uniformly distributed per categories and websites. If `assign_entities_to_all_websites` is set to `1`, products are assigned to all websites.
 
 We support the following XML node formats:
 
-*  Distribution per Default and pre-defined attribute sets:
+- Distribution per Default and pre-defined attribute sets:
 
-```xml
-<!-- Number of configurable products -->
-<configurable_products>{int}</configurable_products>
-```
+  ```xml
+  <!-- Number of configurable products -->
+  <configurable_products>{int}</configurable_products>
+  ```
 
-*  Generate products based on an existing attribute set:
+- Generate products based on an existing attribute set:
 
-```xml
-<configurable_products>
+    ```xml
+    <configurable_products>
 
-    <config>
-            <!-- Existing attribute set name -->
-            <attributeSet>{string}</attributeSet>
+        <config>
+                <!-- Existing attribute set name -->
+                <attributeSet>{string}</attributeSet>
+
+                <!-- Configurable sku pattern with %s -->
+                <sku>{string}</sku>
+
+                <!-- Number of configurable products -->
+                <products>{int}</products>
+
+                <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+                <category>[{string}]</category>
+
+                <!-- Type of Swatch attribute e.g. color|image -->
+                <swatches>{string}</swatches>
+        </config>
+
+    <!-- ... more entries ... -->
+    </configurable_products>
+    ```
+
+- Generate products based on a dynamically created [attribute set](https://glossary.magento.com/attribute-set) with a specified number of attributes and options:
+
+    ```xml
+    <configurable_products>
+
+        <config>
+            <!-- Number of attributes in configurable product -->
+            <attributes>{int}</attributes>
+
+            <!-- Number of options per attribute -->
+            <options>{int}</options>
 
             <!-- Configurable sku pattern with %s -->
             <sku>{string}</sku>
@@ -249,79 +248,50 @@ We support the following XML node formats:
 
             <!-- Type of Swatch attribute e.g. color|image -->
             <swatches>{string}</swatches>
-    </config>
+        </config>
 
-<!-- ... more entries ... -->
-</configurable_products>
-```
+        <!-- ... more entries ... -->
+    </configurable_products>
+    ```
 
-*  Generate products based on a dynamically created [attribute set](https://glossary.magento.com/attribute-set) with a specified amount of attributes and options:
+- Generate products based on a dynamically created attribute set with a specified configuration per each attribute:
 
-```xml
-<configurable_products>
+    ```xml
+    <configurable_products>
 
-    <config>
-        <!-- Number of attributes in configurable product -->
-        <attributes>{int}</attributes>
+        <config>
+            <attributes>
+                <!-- Configuration for a first attribute -->
+                <attribute>
+                    <!-- Amount of options per attribute -->
+                    <options>{int}</options>
 
-        <!-- Number of options per attribute -->
-        <options>{int}</options>
+                    <!-- Type of Swatch attribute -->
+                    <swatches>{string}</swatches>
+                </attribute>
 
-        <!-- Configurable sku pattern with %s -->
-        <sku>{string}</sku>
+                <!-- Configuration for a second attribute -->
+                <attribute>
+                    <!-- Amount of options per attribute -->
+                    <options>{int}</options>
+                </attribute>
+            </attributes>
 
-        <!-- Number of configurable products -->
-        <products>{int}</products>
+            <!-- Configurable sku pattern with %s -->
+            <sku>{string}</sku>
 
-        <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-        <category>[{string}]</category>
+            <!-- Number of configurable products -->
+            <products>{int}</products>
 
-        <!-- Type of Swatch attribute e.g. color|image -->
-        <swatches>{string}</swatches>
-    </config>
+            <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
+            <category>[{string}]</category>
+        </config>
 
-    <!-- ... more entries ... -->
-</configurable_products>
-```
+        <!-- ... more entries ... -->
+    </configurable_products>
+    ```
 
-*  Generate products based on a dynamically created attribute set with a specified configuration per each attribute:
-
-```xml
-<configurable_products>
-
-    <config>
-        <attributes>
-            <!-- Configuration for a first attribute -->
-            <attribute>
-                <!-- Amount of options per attribute -->
-                <options>{int}</options>
-
-                <!-- Type of Swatch attribute -->
-                <swatches>{string}</swatches>
-            </attribute>
-
-            <!-- Configuration for a second attribute -->
-            <attribute>
-                <!-- Amount of options per attribute -->
-                <options>{int}</options>
-            </attribute>
-        </attributes>
-
-        <!-- Configurable sku pattern with %s -->
-        <sku>{string}</sku>
-
-        <!-- Number of configurable products -->
-        <products>{int}</products>
-
-        <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
-        <category>[{string}]</category>
-    </config>
-
-    <!-- ... more entries ... -->
-</configurable_products>
-```
-
-### Customers {#config-cli-gen-cust}
+### Customers
 
 Generates customers. Customers have a normal distribution on all available websites. Each customer has the same data except customer email, customer group, and customer addresses.
 
@@ -332,7 +302,7 @@ XML profile node:
 <customers>{int}</customers>
 ```
 
-You can also use the following XML to change the customer configuration:
+You can use the following XML to change the customer configuration:
 
 ```xml
 <customer-config>
@@ -341,7 +311,7 @@ You can also use the following XML to change the customer configuration:
 </customer-config>
 ```
 
-### Product images {#config-cli-gen-prodimg}
+### Product images
 
 Generates product images. Generation does not include resizing.
 
@@ -357,7 +327,7 @@ XML profile node:
 </product-images>
 ```
 
-### Indexers state {#config-cli-gen-index}
+### Indexers state
 
 Updates indexers' state. XML profile node:
 
@@ -369,7 +339,7 @@ Updates indexers' state. XML profile node:
 </indexer>
 ```
 
-### Orders {#config-cli-gen-orders}
+### Orders
 
 Generates orders with configurable number of different types of order items. Optionally generates inactive quotes for generated orders.
 
@@ -401,7 +371,7 @@ XML profile node:
 <orders>{int}</orders>
 ```
 
-### Simple products {#config-cli-gen-simp}
+### Simple products
 
 Generates simple products. Products are distributed per default and pre-defined attribute sets. If extra attribute sets are specified in profile as: `<product_attribute_sets>{int}</product_attribute_sets>`, products are also distributed per additional attribute sets.
 
@@ -414,7 +384,7 @@ XML profile node:
 <simple_products>{int}</simple_products>
 ```
 
-### Websites {#config-cli-gen-websites}
+### Websites
 
 Generates websites. XML profile node:
 
@@ -423,7 +393,7 @@ Generates websites. XML profile node:
 <websites>{int}</websites>
 ```
 
-### Store groups {#config-cli-gen-stores}
+### Store groups
 
 Generates store groups (referred to in the Admin as _stores_). Store groups are distributed normally among websites.
 
@@ -434,7 +404,7 @@ XML profile node:
 <store_groups>{int}</store_groups>
 ```
 
-### Store views {#config-cli-gen-storeview}
+### Store views
 
 Generates store views. Store views are distributed normally among store groups. XML profile node:
 
@@ -446,29 +416,27 @@ Generates store views. Store views are distributed normally among store groups. 
 <assign_entities_to_all_websites>{0|1}<assign_entities_to_all_websites/>
 ```
 
-### Tax rates {#config-cli-gen-taxrate}
+### Tax rates
 
 Generates tax rates. XML profile node:
 
 ```xml
-<!-- Accepts name of [csv](https://glossary.magento.com/csv) file with tax rates (<path to magento folder>/setup/src/Magento/Setup/Fixtures/_files) -->
-<tax_rates_file>{csv file name}</tax_rates_file>
+<!-- Accepts name of CSV file with tax rates (<path to magento folder>/setup/src/Magento/Setup/Fixtures/_files) -->
+<tax_rates_file>{CSV file name}</tax_rates_file>
 ```
 
-## Additional information
+## Additional configuration information:
 
-Additional configuration information:
+- `<Magento root dir>/setup/performance-toolkit/config/attributeSets.xml`---Default attribute sets
 
-*  `<Magento root dir>/setup/performance-toolkit/config/attributeSets.xml`---Default attribute sets
+- `<Magento root dir>/setup/performance-toolkit/config/customerConfig.xml`---Customer configuration
 
-*  `<Magento root dir>/setup/performance-toolkit/config/customerConfig.xml`---Customer configuration
+- `<Magento root dir>/setup/performance-toolkit/config/description.xml`---Product full description configuration
 
-*  `<Magento root dir>/setup/performance-toolkit/config/description.xml`---Product full description configuration
+- `<Magento root dir>/setup/performance-toolkit/config/shortDescription.xml`---Product short description configuration
 
-*  `<Magento root dir>/setup/performance-toolkit/config/shortDescription.xml`---Product short description configuration
+- `<Magento root dir>/setup/performance-toolkit/config/searchConfig.xml`---Configuration for product short and full description. This older implementation is provided for backward compatibility.
 
-*  `<Magento root dir>/setup/performance-toolkit/config/searchConfig.xml`---Configuration for product short and full description. This older implementation is provided for backward compatibility.
+- `<Magento root dir>/setup/performance-toolkit/config/searchTerms.xml`---Small number of search terms to in short and full descriptions
 
-*  `<Magento root dir>/setup/performance-toolkit/config/searchTerms.xml`---Small number of search terms to in short and full descriptions
-
-*  `<Magento root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`---Larger number of search terms to use in short and full description.
+- `<Magento root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`---Larger number of search terms to use in short and full description.

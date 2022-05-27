@@ -51,8 +51,8 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Create symlinks](cli/create-symlinks.md)
   - [Run unit tests](cli/unit-tests.md)
   - [Convert layout files](cli/convert-layout-files.md)
-  - Generate data for performance testing
-  - Run support utilities (Commerce only)
+  - [Generate data for performance testing](cli/generate-data.md)
+  - [Run support utilities (Commerce only)](cli/run-support-utilities.md)
 - Cron Jobs {#crons}
   - [Cron jobs and groups](cron/custom-cron.md)
   - [Customizing crons reference](cron/custom-cron-ref.md)
