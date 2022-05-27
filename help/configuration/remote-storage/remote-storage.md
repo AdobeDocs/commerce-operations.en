@@ -12,7 +12,7 @@ The Remote Storage module provides the option to store media files and schedule 
 
 >[!INFO]
 >
->The Remote storage module has _limited_ support on {{site.data.var.ece}}. Adobe cannot fully troubleshoot the third-party storage adapter service.
+>The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service.
 
 
 ![schema image](../../assets/configuration/remote-storage-schema.png)

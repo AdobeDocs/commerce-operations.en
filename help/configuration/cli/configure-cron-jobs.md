@@ -14,7 +14,7 @@ Several Commerce features require at least one cron job, which schedules activit
 - Generating Google sitemaps
 - Customer Alerts/Notifications (product price change, product back in stock)
 - Reindexing
-- Private sales ({{site.data.var.ee}} only)
+- Private sales (Adobe Commerce only)
 - Automatic updating of currency rates
 - All Commerce e-mails (including order confirmation and transactional)
 
