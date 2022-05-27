@@ -8,7 +8,7 @@ By default, [!DNL Commerce] supports image resizing on the application side. How
 
 The following diagram shows how Nginx retrieves, resizes, and stores images in the cache. Resizing is determined by the parameters included in the URL, such as height and width.
 
-![image resize](../../assets/configuration/config-remote-storage-nginx-image-resize.png)
+![image resize](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 ## Configure URL format in [!DNL Commerce]
 
@@ -59,7 +59,7 @@ To continue configuring server-side image resizing, you must prepare the `nginx.
 
 1. [_Optional_] Configure a `proxy_pass` value for your specific adapter.
 
-   -  [Amazon Simple Storage Service (Amazon S3)](config-remote-storage-aws-s3.md)
+   -  [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
 <!-- link definitions -->
 

@@ -15,7 +15,7 @@ The Remote Storage module provides the option to store media files and schedule 
 >The Remote storage module has _limited_ support on {{site.data.var.ece}}. Adobe cannot fully troubleshoot the third-party storage adapter service.
 
 
-![schema image](../../assets/configuration/config-remote-storage-schema.png)
+![schema image](../../assets/configuration/remote-storage-schema.png)
 
 ## Remote storage options
 
@@ -29,7 +29,7 @@ The `parameter-name` refers to the specific remote storage parameter name. The f
 
 | Command-line Parameter | Parameter name | Description | Default value |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | driver | Adapter name<br>Possible values:<br>**file**: Disables remote storage and uses the local filesystem<br>**aws-s3**: Use the [Amazon Simple Storage Service (Amazon S3)](config-remote-storage-aws-s3.md) | none |
+| `remote-storage-driver` | driver | Adapter name<br>Possible values:<br>**file**: Disables remote storage and uses the local filesystem<br>**aws-s3**: Use the [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | none |
 | `remote-storage-bucket` | bucket | Object storage or container name | none |
 | `remote-storage-prefix` | prefix | Optional prefix (location inside of object storage) | empty |
 | `remote-storage-region` | region | Region name | none |
@@ -40,7 +40,7 @@ The `parameter-name` refers to the specific remote storage parameter name. The f
 
 The default storage location is in the local filesystem. A _storage adapter_ enables you to connect to a storage service and store your files anywhere. [!DNL Commerce] supports configuring the following storage services:
 
--  [Amazon Simple Storage Service (Amazon S3)](config-remote-storage-aws-s3.md)
+-  [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
 ## Enable remote storage
 
