@@ -9,7 +9,7 @@ description: Troubleshoot your Commerce project using the built-in support utili
 
 {{file-system-owner}}
 
-The Adobe Commerce Support utilities—also referred to as the [Data Collector]({{ site.user_guide_url }}/system/support-data-collector.html)—enable users to gather troubleshooting information about your system that can be used by our Support team.
+The Adobe Commerce Support utilities—also referred to as the [Data Collector](https://docs.magento.com/user-guide/system/support-data-collector.html)—enable users to gather troubleshooting information about your system that can be used by our Support team.
 
 Adobe Commerce uses these backups, also referred to as _dumps_,to analyze issues that require access to your code. A typical scenario follows:
 

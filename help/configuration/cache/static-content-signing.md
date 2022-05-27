@@ -27,7 +27,7 @@ This changes the URL of the static files and forces the browser to load the new 
 
 Magento enables this feature by default, and Adobe recommends keeping this feature enabled to prevent issues related to browsers serving up old static resources.
 
-You can find the configuration for this feature in [**[!UICONTROL Stores]** > Settings > Configuration > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Static Files Settings]**]({{ site.user_guide_url }}/system/static-file-signature.html).
+You can find the configuration for this feature in [**[!UICONTROL Stores]** > Settings > Configuration > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
 
 ![Static Files Settings](../../assets/configuration/static-files-settings.png)
 
