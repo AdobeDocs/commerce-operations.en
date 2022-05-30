@@ -30,7 +30,7 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
   - [Prerequisites](upgrade-compatibility-tool/prerequisites.md)
   - Use the [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
     - [Onboarding](upgrade-compatibility-tool/install.md)
-    - [Run the tool in a Command-line Interface](upgrade-compatibility-tool/run.md)
+    - [Run the tool in a command-line interface](upgrade-compatibility-tool/run.md)
     - [Integrate with the [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
     - [Run the tool within the Magento PHPStorm plugin](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
   - Reporting {#reporting}
