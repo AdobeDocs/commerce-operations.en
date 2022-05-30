@@ -22,7 +22,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 You can use the [!DNL Upgrade Compatibility Tool] via:
 
 - As a standalone [command-line interface](../upgrade-compatibility-tool/run.md) tool.
-- Integrating the [!DNL Upgrade Compatibility Tool] with the [!DNL Site-Wide Analysis Tool](../upgrade-compatibility-tool/integrate-analysis-tool.md).
+- Integrating the [!DNL Upgrade Compatibility Tool] with the [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - A run configuration within the [Magento PHPStorm plugin](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
 ### Example of an [!DNL Upgrade Compatibility Tool] use case
