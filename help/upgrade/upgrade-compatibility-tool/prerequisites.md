@@ -20,31 +20,7 @@ You can run the [!DNL Upgrade Compatibility Tool] in several operating systems (
 
 It is necessary for the [!DNL Upgrade Compatibility Tool] to have access to the source code of the Adobe Commerce instance. For example, you can install it on one server and point it at your Adobe Commerce installation on another server. 
 
-If you are running the [!DNL Upgrade Compatibility Tool] against an Adobe Commerce instance with large modules and files, the tool might require a high amount of RAM (at least 2GB). You can use the `[=MODULE-PATH]` option in your command to specify the module path directory to avoid issues due to a low memory limitation:
-
-   ```bash
-   bin/uct upgrade:check <dir> -m[=MODULE-PATH]
-   ```
-
-Where arguments are as follows:
-
-- `<dir>`: Adobe Commerce installation directory.
-- `[=MODULE-PATH]`: Specific module path directory.
-
-## Recommended actions
-
-### Optimize your results
-
-The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
-
-- Use the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It only provides errors against the version you are trying to upgrade to.
-- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
-- If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
-
-### Follow Adobe Commerce Best Practices
-
-- Avoid having two modules with the same name. 
-- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
+If you are running the [!DNL Upgrade Compatibility Tool] against an Adobe Commerce instance with large modules and files, the tool might require a high amount of RAM (at least 2GB). 
 
 ## Adobe Commerce access keys
 
@@ -78,3 +54,7 @@ Download the [!DNL Upgrade Compatibility Tool] repository and run `composer inst
 ## Node.js
 
 To install Node.js, see the Node.js [documentation](https://nodejs.dev/learn/how-to-install-nodejs).
+
+## Third-party extensions
+
+Adobe recommends that you contact your extension vendor to determine whether your extension is fully compatible with Adobe Commerce latest released version.

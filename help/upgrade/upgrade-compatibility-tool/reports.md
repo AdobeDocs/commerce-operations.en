@@ -60,10 +60,6 @@ The JSON file contains exactly the same information shown on output:
 
 For each encountered issue, the report provides detailed information such as the severity and description of the problem.
 
->[!NOTE]
->
-> The default path for the output folder is `var/output/[TIME]-results.json`.
-
 To export this report into a different output folder, run:
 
 ```bash
@@ -81,7 +77,7 @@ Where arguments are as follows:
 
 ## HTML report
 
-The HTML file also contains the analysis summary and the list of identified issues.
+The HTML file also contains the analysis summary and the list of identified issues. You can get the HTML report while running the tool on a command-line interface or through the [!DNL Site-Wide Analysis Tool].
 
 ![HTML report - Summary](../../assets/upgrade-guide/uct-html-summary.png)
 

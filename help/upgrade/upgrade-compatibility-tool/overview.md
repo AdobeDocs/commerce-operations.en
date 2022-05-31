@@ -11,13 +11,15 @@ This guide is intended for administrators and software engineers of Adobe Commer
 
 ## Overview of the [!DNL Upgrade Compatibility Tool]
 
-The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules and core code installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to a newer version of Adobe Commerce.
+The [!DNL Upgrade Compatibility Tool] is a tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules and core code installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to a newer version of Adobe Commerce.
 
-See [Run the tool](../upgrade-compatibility-tool/run.md) for more information.
+## Use the [!DNL Upgrade Compatibility Tool]
 
-Refer to [Install](../upgrade-compatibility-tool/install.md) for the first steps with the [!DNL Upgrade Compatibility Tool].
+You can use the [!DNL Upgrade Compatibility Tool] via:
 
-See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) to learn more about the [!DNL Upgrade Compatibility Tool].
+- As a standalone [command-line interface](../upgrade-compatibility-tool/run.md) tool.
+- Integrating the [!DNL Upgrade Compatibility Tool] with the [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
+- A run configuration within the [Magento PHPStorm plugin](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
 ### Workflow
 

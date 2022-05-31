@@ -3,13 +3,42 @@ title: "Run the [!DNL Upgrade Compatibility Tool]"
 description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] on your Adobe Commerce project.
 ---
 
-# Run the [!DNL Upgrade Compatibility Tool]
+# Download the [!DNL Upgrade Compatibility Tool]
 
 {{commerce-only}}
 
-The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
+To get started with the [!DNL Upgrade Compatibility Tool] in a command-line interface, download it by running the following command:
+
+```bash
+composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
+```
+
+   >[!NOTE]
+   >
+   > See the [prerequisites](../upgrade-compatibility-tool/prerequisites.md) page for more information about the minimum requirements to use the tool.
+
+## Run the [!DNL Upgrade Compatibility Tool]
+
+The [!DNL Upgrade Compatibility Tool] is a tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
 
 The [!DNL Upgrade Compatibility Tool] identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
+
+See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) to learn more about the [!DNL Upgrade Compatibility Tool].
+
+## Recommended actions
+
+### Optimize your results
+
+The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
+
+- Use the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It only provides errors against the version you are trying to upgrade to.
+- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
+- If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
+
+### Follow Adobe Commerce Best Practices
+
+- Avoid having two modules with the same name. 
+- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
 
 ## Use the `upgrade:check` command
 
