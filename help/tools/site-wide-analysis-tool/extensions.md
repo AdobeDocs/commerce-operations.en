@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Extensions]"
-description: Learn about the [!DNL Extensions] tab in [!DNL Site-Wide Analysis Tool], when to use, benefits, and best practices.
+description: Learn about the [!DNL Extensions] tab in the [!DNL Site-Wide Analysis Tool], when to use it, its benefits, and best practices.
 ---
 # [!DNL Extensions]
 
