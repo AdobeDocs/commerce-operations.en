@@ -1,6 +1,6 @@
 ---
-title: Install the [!DNL Upgrade Compatibility Tool]
-description: Follow these steps to install the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project.
+title: Download the [!DNL Upgrade Compatibility Tool]
+description: Follow these steps to download the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project.
 ---
 
 # Install the [!DNL Upgrade Compatibility Tool]
@@ -9,6 +9,12 @@ description: Follow these steps to install the [!DNL Upgrade Compatibility Tool]
 
 The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of errors and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
 
+## Prerequisites
+
+To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites.
+
+See [prerequisites](../upgrade-compatibility-tool/prerequisites.md) for more information.
+
 ## Download the [!DNL Upgrade Compatibility Tool]
 
 To download the [!DNL Upgrade Compatibility Tool], run the following command:
@@ -16,18 +22,6 @@ To download the [!DNL Upgrade Compatibility Tool], run the following command:
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
-
-## Install
-
-To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites:
-
-*  Adobe Commerce access keys
-*  Composer
-*  Node.js
-
-## Prerequisites
-
-See [prerequisites](../upgrade-compatibility-tool/prerequisites.md) for more information.
 
 ### Adobe Commerce access keys
 
@@ -52,11 +46,11 @@ The **public key** corresponds to the _username_ whereas the **private key** is 
 
 ### Composer
 
-Clone the [!DNL Upgrade Compatibility Tool] repository and run `composer install` in your terminal to install dependencies.
+Download the [!DNL Upgrade Compatibility Tool] repository and run `composer install` in your terminal to install dependencies.
 
 >[!WARNING]
 >
->If the **Adobe Commerce access keys** are not correctly configured, the [!DNL Upgrade Compatibility Tool] will not install and you will get errors when running the `composer install` command.
+>If the **Adobe Commerce access keys** are not correctly configured, you cannot download the [!DNL Upgrade Compatibility Tool] and when running the `composer create-project` command it will fail.
 
 ### Node.js
 

@@ -33,7 +33,7 @@ This command checks for core code changes for that specific Adobe Commerce insta
 
 You can run the `core:code:changes` command to analyze only core code changes for that specific Adobe Commerce instance. See [Core code changes](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) section.
 
-While you can use the `graphql:compare` command to compare two GraphQL schemas to check for any changes between them. See [GraphQL schema compatibility verification](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) section.
+You can use the `graphql:compare` command to compare two GraphQL schemas to check for any changes between them. See the [GraphQL schema compatibility verification](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) section.
 
 ### Recommendations to use the `upgrade:check` command
 
@@ -156,7 +156,15 @@ Where arguments are as follows:
 
 #### HTML
 
-The HTML file also contains the list of identified issues and analysis summary. It also includes four different charts:
+The HTML file also contains the analysis summary and the list of identified issues.
+
+![HTML report - Summary](../../assets/upgrade-guide/uct-html-summary.png)
+
+You can easily navigate through the identified issues during the [!DNL Upgrade Compatibility Tool] analysis:
+
+![HTML report - Details](../../assets/upgrade-guide/uct-html-details.png)
+
+The HTML report also includes four different charts:
 
 - **Modules by issue severity**: Shows severity distribution by modules.
 - **Files by issue severity**: Shows severity distribution by files.
@@ -165,9 +173,21 @@ The HTML file also contains the list of identified issues and analysis summary. 
 
 These charts allow you to identify (at a glance) the parts that are most compromised and the ones that require more work to perform an upgrade.
 
-![HTML report - Summary](../../assets/upgrade-guide/uct-html-summary.png)
+![HTML report - Diagrams](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-![HTML report - Details](../../assets/upgrade-guide/uct-html-details.png)
+You will be able to filter the issues shown on the report according to the minimum issue level (by default, [WARNING]).
+
+There is a dropdown at the top right corner that will allow you to select a different one according to your necessities. The list of identified issues will be filtered accordingly.
+
+![HTML report - Drop Down usage](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+
+Please note that the issues with lower issue level are stripped out but you get a notification so you are always aware of the identified issues per module.
+
+The diagrams are also updated accordingly, with the only exception of the `Modules with relative sizes and issues`, which is generated with the `min-issue-level` originally set up. 
+
+If you want to see different results, you will need to re-run the command providing another value for the `--min-issue-level` option.
+
+![HTML report - Bubble Chart Diagram](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 To export this report into a different output folder run:
 
@@ -291,6 +311,10 @@ Run:
 bin/uct refactor <dir>
 ```
 
+Where arguments are as follows:
+
+- `<dir>`: Adobe Commerce installation directory.
+
 ## GraphQL schema compatibility verification
 
 The [!DNL Upgrade Compatibility Tool] also provides the option to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
@@ -324,9 +348,10 @@ Available `--help` options for the `graphql:compare` command:
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
 
-See [Developer information](../upgrade-compatibility-tool/developer.md) for more information.
-
 You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via the PhpStorm plugin. See the [[!DNL Upgrade Compatibility Tool] Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
+
+See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) to learn how to use the [!DNL Upgrade Compatibility Tool] with the Magento PHPStorm plugin.
+
 
 ## Recommended actions
 
@@ -335,8 +360,8 @@ You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via t
 The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
 
 - Use the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It only provides errors against the version you are trying to upgrade to.
-- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade. If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well.
-- Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
+- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
+- If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
 
 ### Follow Adobe Commerce Best Practices
 
