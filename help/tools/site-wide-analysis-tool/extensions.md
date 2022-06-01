@@ -24,5 +24,5 @@ The [!DNL Extensions] tab in the [!DNL Site-Wide Analysis Tool] provides informa
 
 * If you cannot keep your third-party [!DNL extensions] up-to-date to their latest versions, consider using different [!DNL extensions].
 
-* To avoid potential issues, please download/purchase third-party [!DNL extensions] from a trusted source, like [Commerce Marketplace](https://marketplace.magento.com/extensions.html). 
+* To avoid potential issues, download/purchase third-party [!DNL extensions] from a trusted source, like [Commerce Marketplace](https://marketplace.magento.com/extensions.html). 
 
