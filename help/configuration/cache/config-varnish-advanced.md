@@ -15,7 +15,7 @@ The Varnish health check feature polls the Magento server to determine whether i
 
 Magento defines the following default health check:
 
-```json
+```conf
 .probe = {
     .url = "/pub/health_check.php";
     .timeout = 2s;
