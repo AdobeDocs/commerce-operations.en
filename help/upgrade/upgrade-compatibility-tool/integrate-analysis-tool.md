@@ -5,9 +5,9 @@ description: Follow these steps to retrieve the [!DNL Upgrade Compatibility Tool
 
 # Integrate the [!DNL Site-Wide Analysis Tool]
 
-The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability for installations of Adobe Commerce.
+The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability for Adobe Commerce instances.
 
-The [!DNL Upgrade Compatibility Tool] is now integrated with the [!DNL Site-Wide Analysis Tool] in order to provide the ability for non-technical people to run the [!DNL Upgrade Compatibility Tool] and get a [HTML report](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en#output) containing a list of issues for each file specifying its severity, error code and error description.
+The [!DNL Upgrade Compatibility Tool] is now integrated with the [!DNL Site-Wide Analysis Tool] in order to provide the ability for non-technical people to run the [!DNL Upgrade Compatibility Tool] and get a [report](../upgrade-compatibility-tool/reports.md) containing a list of issues for each file.
 
 See the [[!DNL Site-Wide Analysis Tool] user guide](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) for more information.
 

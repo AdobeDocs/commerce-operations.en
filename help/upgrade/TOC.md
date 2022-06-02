@@ -26,13 +26,16 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
   - [How patches work](patches/overview.md)
   - [Apply patches](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-  - [[!DNL Upgrade Compatibility Tool] Overview](upgrade-compatibility-tool/overview.md)
+  - [Overview](upgrade-compatibility-tool/overview.md)
   - [Prerequisites](upgrade-compatibility-tool/prerequisites.md)
-  - [Install](upgrade-compatibility-tool/install.md)
-  - [Run the tool](upgrade-compatibility-tool/run.md)
+  - Use the [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+    - [Run the tool in a command-line interface](upgrade-compatibility-tool/run.md)
+    - [Integrate with the [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+    - [Run the tool within the Magento PHPStorm plugin](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+  - Reporting {#reporting}
+    - [Reports](upgrade-compatibility-tool/reports.md)
+    - [Error messages](upgrade-compatibility-tool/error-messages.md)
   - [Related tools](upgrade-compatibility-tool/related-tools.md)
-  - [Integrate the [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-  - [Error messages](upgrade-compatibility-tool/error-messages.md)
 - Contributing developers {#developer}
   - [Upgrade a git-based installation](developer/git-installs.md)
   - [Manage modules](developer/manage-modules.md)
