@@ -27,7 +27,7 @@ The **[!UICONTROL Dashboard]** page is your at-a-glance command center in the [!
 
 ## Benefits
 
-* The [!DNL widgets] for [!UICONTROL Recommendations],  [!UICONTROL Extensions], and [!UICONTROL Security Scan] all use easy-to-read color-coded circular graphs with graph legends to the side and count totals in the center to denote how many [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan Tool] items each feature has. [!UICONTROL Recommendations] and [!UICONTROL Security Scan Tool] graphs are separated by severity. [!UICONTROL Extensions] are separated into four classifications: current version, old version, disabled, and unknown.
+* The [!DNL widgets] for [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan] all use easy-to-read color-coded circular graphs with graph legends to the side and count totals in the center to denote how many [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan Tool] items each feature has. [!UICONTROL Recommendations] and [!UICONTROL Security Scan Tool] graphs are separated by severity. [!UICONTROL Extensions] are separated into four classifications: current version, old version, disabled, and unknown.
 
 * [!DNL NewRelic Alerts] are listed with the most recent alert on top, including a short description and how long ago the alert occurred.
 
