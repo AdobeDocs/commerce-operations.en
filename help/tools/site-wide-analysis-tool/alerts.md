@@ -4,7 +4,7 @@ description: Learn about the [!DNL Alerts] tab in the [!DNL Site-Wide Analysis T
 ---
 # [!DNL Alerts]
 
-The [!DNL Site-Wide Analysis Tool's] [!DNL Alerts] page displays Adobe Commerce Managed Alerts patches for the merchant. Adobe provides the [!DNL Managed Alerts] to track performance metrics using industry best practices. Reference the [Managed alerts for the Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) article in our [!DNL support knowledge base].
+The [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] page displays Adobe Commerce Managed Alerts patches for the merchant. Adobe provides the [!DNL Managed Alerts] to track performance metrics using industry best practices. Reference the [Managed alerts for the Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) article in our [!DNL support knowledge base].
 
 ## When to use
 
