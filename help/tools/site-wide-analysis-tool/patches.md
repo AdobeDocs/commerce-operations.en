@@ -4,7 +4,7 @@ description: Learn about the [!UICONTROL Patches] tab in the [!DNL Site-Wide Ana
 ---
 # [!DNL Patches]
 
-The [!DNL Site-Wide Analysis Tool's] [!DNL Patches] page displays all patches available for your Adobe Commerce store. These patches help resolve issues you might experience with Adobe Commerce. Refer to the [Quality Patches Tool released: new tool to self-serve quality patches](https://support.magento.com/hc/en-us/articles/360047139492) article in our [!DNL support knowledge base]. 
+The [!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] page displays all patches available for your Adobe Commerce store. These patches help resolve issues you might experience with Adobe Commerce. Refer to the [Quality Patches Tool released: new tool to self-serve quality patches](https://support.magento.com/hc/en-us/articles/360047139492) article in our [!DNL support knowledge base]. 
 
 >[!NOTE]
 >
