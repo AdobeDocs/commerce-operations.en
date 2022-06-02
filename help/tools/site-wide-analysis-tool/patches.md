@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Patches]"
-description: Learn about the [!UICONTROL Patches] tab in the [!DNL Site-Wide Analysis Tool], when to use, and its benefits.
+description: Learn about the [!UICONTROL Patches] tab in the [!DNL Site-Wide Analysis Tool], when to use it, and its benefits.
 ---
 # [!DNL Patches]
 
