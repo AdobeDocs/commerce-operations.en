@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Alerts]"
-description: Learn about the [!DNL Alerts] tab in the [!DNL Site-Wide Analysis Tool], when to use, and its benefits.
+description: Learn about the [!DNL Alerts] tab in the [!DNL Site-Wide Analysis Tool], when to use it, and its benefits.
 ---
 # [!DNL Alerts]
 
