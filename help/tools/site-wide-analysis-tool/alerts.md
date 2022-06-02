@@ -12,5 +12,5 @@ The [!DNL Site-Wide Analysis Tool's] [!DNL Alerts] page displays Adobe Commerce 
 
 ## Benefits
 
-Improve your site performance by staying updated on [!DNL Alerts] and timely updating the site as needed.
+Improve your site performance by staying updated on [!DNL Alerts] and updating the site as needed.
 
