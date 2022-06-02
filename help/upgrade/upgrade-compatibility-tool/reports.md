@@ -7,7 +7,7 @@ description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] on 
 
 {{commerce-only}}
 
-As a result of the analysis performed, the [!DNL Upgrade Compatibility Tool] exports a report that contains a list of issues for each file specifying its severity, error code and error description.
+As a result of the analysis, the [!DNL Upgrade Compatibility Tool] exports a report that contains a list of issues for each file specifying its severity, error code, and error description.
 
 See the example below:
 

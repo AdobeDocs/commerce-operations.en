@@ -1,9 +1,9 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] Prerequisites"
-description: Verify that your system meets the requirements necessary to run the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project. 
+title: "[!DNL Upgrade Compatibility Tool] requirements"
+description: Verify that your system meets the necessary requirements to run the [!DNL Upgrade Compatibility Tool] for your Adobe Commerce project. 
 ---
 
-# Prerequisites
+# System requirements
 
 {{commerce-only}}
 
@@ -47,9 +47,9 @@ The **public key** corresponds to the _username_ whereas the **private key** is 
 
 Download the [!DNL Upgrade Compatibility Tool] repository and run `composer install` in your terminal to install dependencies.
 
->[!WARNING]
+>[!NOTE]
 >
->If the **Adobe Commerce access keys** are not correctly configured, you cannot download the [!DNL Upgrade Compatibility Tool] and when running the `composer create-project` command it will fail.
+> If you do not correctly configure your **Adobe Commerce access keys**, you cannot download the [!DNL Upgrade Compatibility Tool]. Running the `composer create-project` command will fail.
 
 ## Node.js
 
@@ -57,4 +57,4 @@ To install Node.js, see the Node.js [documentation](https://nodejs.dev/learn/how
 
 ## Third-party extensions
 
-Adobe recommends that you contact your extension vendor to determine whether your extension is fully compatible with Adobe Commerce latest released version.
+Adobe recommends that you contact your extension vendor to determine whether your extension is fully compatible with the latest version of Adobe Commerce.
