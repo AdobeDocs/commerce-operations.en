@@ -8,6 +8,11 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 - [Overview](overview.md)
 - Security {#security}
 - General setup {#setup}
+  - [Application initialization and bootstrap](bootstrap/overview.md)
+  - [Application modes](bootstrap/application-modes.md)
+  - [Profiling](bootstrap/mage-profiler.md)
+  - [Base directory paths](bootstrap/mage-directory.md)
+  - [Bootstrap parameters](bootstrap/set-parameters.md)
 - Deployment {#deployment}
 - Cache {#cache}
   - [Caching overview](cache/caching-overview.md)

@@ -36,7 +36,7 @@ To view the status of the cache, enter
    bin/magento cache:status
 ```
 
-<!-- where `--bootstrap=` is a URL-encoded associative array of Magento [application bootstrap parameters]({{ page.baseurl }}/config-guide/bootstrap/magento-how-to-set.html#config-bootparam-overview) and values. -->
+<!-- where `--bootstrap=` is a URL-encoded associative array of Magento [application bootstrap parameters](../bootstrap/set-parameters.md) and values. -->
 
 A sample follows:
 
@@ -81,7 +81,7 @@ bin/magento cache:disable [type] ... [type]
 
 Where omitting `[type]` enables or disables all cache types at the same time. The `type` option is a space-separated list of cache types.
 
-<!-- `--bootstrap=` is a URL-encoded associative array of Magento [application bootstrap parameters]({{ page.baseurl }}/config-guide/bootstrap/magento-how-to-set.html#config-bootparam-overview) and values. -->
+<!-- `--bootstrap=` is a URL-encoded associative array of Magento [application bootstrap parameters](../bootstrap/set-parameters.md#config-bootparam-overview) and values. -->
 
 To list cache types and their status:
 
@@ -109,7 +109,7 @@ Sample result:
 
 >[!INFO]
 >
->As of version 2.3.4, Magento caches all system EAV attributes as they are retrieved. Caching EAV attributes in this manner improves performance, because it decreases the amount of insert/select requests to the DB. However, it increases cache network size as well. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in [Developer mode]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html) by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**.
+>As of version 2.3.4, Magento caches all system EAV attributes as they are retrieved. Caching EAV attributes in this manner improves performance, because it decreases the amount of insert/select requests to the DB. However, it increases cache network size as well. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in [Developer mode](../bootstrap/application-modes.md) by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**.
 
 ## Clean and flush cache types
 

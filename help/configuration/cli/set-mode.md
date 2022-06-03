@@ -7,7 +7,7 @@ description: Read about setting the Adobe Commerce operation modes.
 
 {{file-system-owner}}
 
-To improve security and ease-of-use, we added a command that switches [Magento modes]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html) from developer to production and vice versa.
+To improve security and ease-of-use, we added a command that switches [application modes](../bootstrap/application-modes.md) from developer to production and vice versa.
 
 Production mode has better performance because static view files are populated in the `pub/static` directory and because of code compilation.
 
@@ -68,7 +68,7 @@ where:
 
 -  **`{mode}`** is required; it can be either `developer` or `production`
 
--  **`--skip-compilation`** is an optional parameter you can use to skip [code compilation](../cli/config-cli-subcommands-compiler.html) when you change to production mode.
+-  **`--skip-compilation`** is an optional parameter you can use to skip [code compilation](../cli/code-compiler.md) when you change to production mode.
 
 Examples follow.
 
@@ -155,6 +155,6 @@ Enabled default mode.
 
 ### Run Magento CLI commands from anywhere
 
-[Run Magento CLI commands from anywhere](../cli/config-cli.html#config-install-cli-first).
+[Run Magento CLI commands from anywhere](../cli/config-cli.md#config-install-cli-first).
 
 If you have not added `<magento-install-directory>/bin` to your system `PATH`, then you can expect an error when running the Magento command by itself.
