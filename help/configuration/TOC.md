@@ -14,6 +14,13 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Base directory paths](bootstrap/mage-directory.md)
   - [Bootstrap parameters](bootstrap/set-parameters.md)
 - Deployment {#deployment}
+  - [Overview](deployment/overview.md)
+  - [Technical details](deployment/technical-details.md)
+  - [Prerequisites](deployment/prerequisites.md)
+  - [Development system setup](deployment/development-system.md)
+  - [Build system setup](deployment/build-system.md)
+  - [Production system setup](deployment/production-system.md)
+  - File system permissions
 - Cache {#cache}
   - [Caching overview](cache/caching-overview.md)
   - [Cache types](cache/cache-types.md)
