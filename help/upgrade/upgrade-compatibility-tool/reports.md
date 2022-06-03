@@ -56,7 +56,7 @@ See the example below:
 
 ## JSON file
 
-The JSON file contains exactly the same information shown on output:
+You can get the JSON file output while running the [!DNL Upgrade Compatibility Tool] on a command-line interface. The JSON file contains exactly the same information shown on the tool's output:
 
 - List of the identified issues.
 - Summary of the analysis.
