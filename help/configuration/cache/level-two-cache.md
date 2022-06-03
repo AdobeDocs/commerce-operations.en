@@ -15,7 +15,7 @@ Commerce stores the hashed data version in Redis, with the suffix ':hash' append
 
 >[!INFO]
 >
->For {{ site.data.var.ece }}, consider the best practices in the [Extended Redis cache implementation](https://support.magento.com/hc/en-us/articles/360049292532) support article.
+>For Adobe Commerce on cloud infrastructure, consider the best practices in the [Extended Redis cache implementation](https://support.magento.com/hc/en-us/articles/360049292532) support article.
 
 ## Configuration example
 

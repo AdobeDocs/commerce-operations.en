@@ -76,15 +76,15 @@ When we import backend models, we do not save the configuration values.
 We import the following types of configurations.
 (These configurations are under the `scopes` array in `config.php`.)
 
-*  `websites`: websites related configuration
-*  `groups`: stores related configuration
-*  `stores`: store views related configuration
+- `websites`: websites related configuration
+- `groups`: stores related configuration
+- `stores`: store views related configuration
 
 The preceding configurations can be imported in the following modes:
 
-*  `create`: `config.php` contains new entities (`websites`, `groups`, `stores`) that are absent in the production environment
-*  `update`: `config.php` contains entities (`websites`, `groups`, `stores`) that are different from the production environment
-*  `delete`: `config.php` does _not_ contain entities (`websites`, `groups`, `stores`) that are present on production environment
+- `create`: `config.php` contains new entities (`websites`, `groups`, `stores`) that are absent in the production environment
+- `update`: `config.php` contains entities (`websites`, `groups`, `stores`) that are different from the production environment
+- `delete`: `config.php` does _not_ contain entities (`websites`, `groups`, `stores`) that are present on production environment
 
 >[!INFO]
 >
@@ -120,5 +120,5 @@ Full example:
 
 >[!INFO]
 >
->*  _Theme registration_. If a theme data is defined in `config.php` but the theme's source code is  not present in the file system, the theme is ignored (that is, not registered).
->*  _Theme removal_. If a theme is not present in `config.php` but the source code is present on the file system, the theme is not removed.
+>- _Theme registration_. If a theme data is defined in `config.php` but the theme's source code is  not present in the file system, the theme is ignored (that is, not registered).
+>- _Theme removal_. If a theme is not present in `config.php` but the source code is present on the file system, the theme is not removed.

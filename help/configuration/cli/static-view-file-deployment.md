@@ -7,7 +7,7 @@ description:
 
 {{file-system-owner}}
 
-The static view files deployment command enables you to write [static files](https://glossary.magento.com/static-files) to the Magento file system when the Magento software is set for [production mode]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#production-mode).
+The static view files deployment command enables you to write [static files](https://glossary.magento.com/static-files) to the Magento file system when the Magento software is set for [production mode](../bootstrap/application-modes.md#production-mode).
 
 The term _static view file_ refers to the following:
 
@@ -16,10 +16,10 @@ The term _static view file_ refers to the following:
 
 Static view files are located in the `<magento_root>/pub/static` directory, and some are cached in the `<magento_root>/var/view_preprocessed` directory as well.
 
-Static view files deployment is affected by Magento modes as follows:
+Static view files deployment is affected by application modes as follows:
 
--  **[Default]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#default-mode)** and **[developer]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#developer-mode)** modes: Magento generates them on demand, but the rest are cached in a file for speed of access.
--  **[Production]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#production-mode)** mode: Static files are _not_ generated or cached.
+-  **[Default](../bootstrap/application-modes.md#default-mode)** and **[developer](../bootstrap/application-modes.md#developer-mode)** modes: Magento generates them on demand, but the rest are cached in a file for speed of access.
+-  **[Production](../bootstrap/application-modes.md#production-mode)** mode: Static files are _not_ generated or cached.
 
 You must write static view files to the Magento file system manually using the command discussed in this topic; after that, you can restrict permissions to limit your vulnerabilities and to prevent accidental or malicious overwriting of files.
 

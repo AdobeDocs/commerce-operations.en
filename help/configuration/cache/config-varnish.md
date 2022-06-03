@@ -16,9 +16,9 @@ Magento 2.4.x is compatible with Varnish 6.x
 
 For more information about Varnish, see:
 
-*  [The Big Varnish Picture][]
-*  [Varnish startup options][]
-*  [Varnish and Website Performance][]
+- [The Big Varnish Picture][]
+- [Varnish startup options][]
+- [Varnish and Website Performance][]
 
 ## Varnish topology diagram
 
@@ -30,7 +30,7 @@ In the preceding figure, users' HTTP requests over the internet result in numero
 
 As the web server returns assets, cacheable assets are stored in Varnish. Any subsequent requests for those assets are fulfilled by Varnish (meaning, the requests do not reach the web server). Varnish returns cached content extremely quickly. The results are faster response times to return the content to users and a reduced number of requests that must be fulfilled by Magento.
 
-Assets cached by Varnish expire at a configurable interval or are replaced by newer versions of the same assets. You can also clear the cache manually either using the [Admin](https://glossary.magento.com/magento-admin) or the [magento cache:clean](../cli/config-cli-subcommands-cache.html) command.
+Assets cached by Varnish expire at a configurable interval or are replaced by newer versions of the same assets. You can also clear the cache manually either using the [Admin](https://glossary.magento.com/magento-admin) or the [`magento cache:clean`](../cli/config-cli-subcommands-cache.html) command.
 
 ## Process overview
 
@@ -47,21 +47,21 @@ The process can be summarized as follows:
 
 >[!NOTE]
 >
->*  Except where noted, you must enter all commands discussed in this topic as a user with `root` privileges.
+>- Except where noted, you must enter all commands discussed in this topic as a user with `root` privileges.
 >
->*  This topic is written for Varnish on CentOS and Apache 2.4. If you are setting up Varnish in a different environment, some commands may be different. Consult Varnish documentation for more information.
+>- This topic is written for Varnish on CentOS and Apache 2.4. If you are setting up Varnish in a different environment, some commands may be different. Consult Varnish documentation for more information.
 
 ## Known issues
 
 We know of the following issues with Varnish:
 
-*  [Varnish does not support SSL][]
+- [Varnish does not support SSL][]
 
    As an alternative, use SSL termination or an SSL termination proxy.
 
-*  If you manually delete the contents of the `<magento_root>/var/cache` directory, you must restart Varnish.
+- If you manually delete the contents of the `<magento_root>/var/cache` directory, you must restart Varnish.
 
-*  Possible error installing Magento:
+- Possible error installing Magento:
 
    ```terminal
    Error 503 Service Unavailable
@@ -84,9 +84,9 @@ We know of the following issues with Varnish:
 
 Varnish caching works with Magento using:
 
-*  [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) from the Magento 2 GitHub repository
-*  `.htaccess` distributed configuration file for Apache provided with Magento
-*  `default.vcl` configuration for Varnish generated using the [Admin](../cache/config-varnish-magento.html)
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) from the Magento 2 GitHub repository
+- `.htaccess` distributed configuration file for Apache provided with Magento
+- `default.vcl` configuration for Varnish generated using the [Admin](../cache/config-varnish-magento.html)
 
 >[!INFO]
 >
@@ -94,7 +94,7 @@ Varnish caching works with Magento using:
 
 On the first browser request, cacheable assets are delivered to the client browser from Varnish and cached on the browser.
 
-In addition, Varnish uses an [Entity](https://glossary.magento.com/entity) Tag ([ETag](https://en.wikipedia.org/wiki/HTTP_ETag)) for static assets. The ETag provides a way to determine when [static files](https://glossary.magento.com/static-files) change on the server. As a result, static assets are sent to the client when they change on the server---either on a new request from a browser or when the client refreshes the browser cache, typically by pressing F5 or Control+F5.
+In addition, Varnish uses an [Entity](https://glossary.magento.com/entity) Tag (ETag) for static assets. The ETag provides a way to determine when [static files](https://glossary.magento.com/static-files) change on the server. As a result, static assets are sent to the client when they change on the server---either on a new request from a browser or when the client refreshes the browser cache, typically by pressing F5 or Control+F5.
 
 More detail is provided in the sections that follow.
 

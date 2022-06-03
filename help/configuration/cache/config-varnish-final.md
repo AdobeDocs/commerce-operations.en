@@ -44,7 +44,7 @@ For example, to use the Chrome inspector:
 1. From the pop-up menu, click **[!UICONTROL Inspect Element]**
 1. In the inspector pane, click the **[!UICONTROL Network]** tab.
 1. Refresh the page.
-1. Scroll to the top of the inspector pane so you can see the [URL](https://glossary.magento.com/url) of the page you are viewing.
+1. Scroll to the top of the inspector pane so you can see the URL of the page you are viewing.
 
    The following figure shows an example of loading the `magento2` index page.
 

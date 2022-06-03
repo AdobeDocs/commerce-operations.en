@@ -27,8 +27,8 @@ Varnish fetches content from `http://domain.com/index.php/page_cache/block/esi/b
 
 The Commerce framework creates an ESI tag when the following conditions are met:
 
-*  The caching application is set to `Varnish Cache`
-*  A XML layout `block` element is added with a `ttl` attribute
+- The caching application is set to `Varnish Cache`
+- A XML layout `block` element is added with a `ttl` attribute
 
 ### Example
 

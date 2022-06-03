@@ -16,7 +16,7 @@ Code compilation includes the following (in no particular order):
 -  Repositories code generation (generated code for APIs)
 -  Service data attributes generation (generated [extension](https://glossary.magento.com/extension) classes for data objects)
 
-You can find code compilation classes in the [\Magento\Setup\Module\Di\App\Task\Operation](https://github.com/magento/magento2/blob/2.4/setup/src/Magento/Setup/Module/Di/App/Task/Operation) namespace.
+You can find code compilation classes in the [\Magento\Setup\Module\Di\App\Task\Operation][operation] namespace.
 
 To run the single-tenant compiler:
 
@@ -52,4 +52,8 @@ In some cases, you might want to compile code before you install the Commerce ap
    Generated code and dependency injection configuration successfully.
    ```
 
-To compile code without a database, see [Deploy static view files without installing Magento](../cli/config-cli-subcommands-static-view.html#deploy_without_db).
+To compile code without a database, see [Deploy static view files without installing Magento](../cli/static-view-file-deployment.md).
+
+<!-- link definitions -->
+
+[operation]: https://github.com/magento/magento2/blob/2.4/setup/src/Magento/Setup/Module/Di/App/Task/Operation

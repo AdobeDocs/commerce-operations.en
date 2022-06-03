@@ -35,8 +35,8 @@ For more information, see the [Varnish health checks](https://varnish-cache.org/
 
 Grace mode enables Varnish to keep an object in [cache](https://glossary.magento.com/cache) beyond its TTL value. Varnish can then serve the expired (stale) content while it fetches a new version. This improves the flow of traffic and decreases load times. It is used in the following situations:
 
-*  When the Magento backend is healthy, but a request is taking longer than normal
-*  When the Magento backend is not healthy.
+- When the Magento backend is healthy, but a request is taking longer than normal
+- When the Magento backend is not healthy.
 
 The `vcl_hit` subroutine defines how Varnish responds to a request for objects that have been cached.
 
@@ -80,8 +80,8 @@ bin/magento cache:flush
 
 Saint mode is not part of the main Varnish package. It is a separately-versioned `vmod` that must be downloaded and installed. As a result, you should recompile Varnish from source, as described in the following articles:
 
-*  [Installing Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
-*  [Installing Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+- [Installing Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
+- [Installing Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
 
 After you recompile, you can install the Saint mode [module](https://glossary.magento.com/module). In general, follow these steps:
 
@@ -99,7 +99,7 @@ After you recompile, you can install the Saint mode [module](https://glossary.ma
 
 See [Varnish module collection](https://github.com/varnish/varnish-modules) for information about installing the Saint mode module.
 
-### Sample `vcl` file
+### Sample VCL file
 
 The following code example shows the code that must be added to your VCL file to enable saint mode. Place the `import` statements and `backend` definitions at the top of the file.
 

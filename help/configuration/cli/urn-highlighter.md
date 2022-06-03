@@ -11,15 +11,15 @@ Magento code references all XSD schemas as [Uniform Resource Names (URNs)](https
 
 By default, an IDE like PhpStorm is not configured to recognize URNs and, as a result, they display in red text as follows:
 
-![](../../assets/configuration/urn-before.png)
+![PhpStorm not configured to recognize URN](../../assets/configuration/urn-before.png)
 
 The `bin/magento dev:urn-catalog:generate` command enables your IDE (currently, only PhpStorm and Visual Studio Code) to recognize and highlight URNs like the following:
 
-![](../../assets/configuration/urn-after.png)
+![Enable IDE to recognize URN](../../assets/configuration/urn-after.png)
 
 Specifically, this command creates the following PhpStorm configuration:
 
-![](../../assets/configuration/urn-settings.png)
+![PhpStorm configuration example](../../assets/configuration/urn-settings.png)
 
 ## Configure your IDE
 
