@@ -1,32 +1,33 @@
 ---
-
 title: Custom cron job and cron group reference
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+description: Learn to customize crons using cron groups.
 ---
 
-This topic helps you set up crontabs and optionally cron groups for custom modules. If your custom [module](https://glossary.magento.com/module) needs to schedule tasks periodically, you must set up a crontab for that module. A *crontab* is a cron job's configuration.
+# Customizing crons reference
 
-You can optionally set up a custom group, which among other things enables you to run cron jobs defined in that group independently of other cron jobs.
+This topic helps you set up crontabs and optionally cron groups for custom modules. If your custom [module](https://glossary.magento.com/module) needs to schedule tasks periodically, you must set up a crontab for that module. A _crontab_ is a cron job configuration.
 
-For a step-by-step tutorial, see [Configure custom cron jobs and cron groups (tutorial)]({{ page.baseurl }}/config-guide/cron/custom-cron-tut.html).
+Optionally, you can set up a custom group, which among other things enables you to run cron jobs defined in that group independently of other cron jobs.
 
-## Overview of cron {#config-cli-cron-overview}
+For a step-by-step tutorial, see [Configure custom cron jobs and cron groups (tutorial)](../cron/custom-cron-tut.md).
 
-{% include config/cron-overview.md %}
+For an overview about cron jobs, see [Configure cron jobs](../cli/configure-cron-jobs.md).
 
-## Configure cron groups {#config-cli-cron-group-conf}
+## Configure cron groups
 
 This section discusses how to optionally create a cron group for a custom module. If you do not need to do this, continue with the next section.
 
-A *cron group* is a logical group that enables you to easily run cron for more than one process at a time. Most Magento modules use the `default` cron group; some modules use the `index` group.
+A _cron group_ is a logical group that enables you to easily run cron for more than one process at a time. Most Magento modules use the `default` cron group; some modules use the `index` group.
 
 If you are implementing cron for a custom module, it is your choice of whether or not to use the `default` group or a different group.
 
-To configure a cron group for your module, create a `crontab.xml` file in your module directory:
-`<your component base dir>/<vendorname>/module-<name>/etc/crontab.xml`
+**To configure a cron group for your module**:
+
+Create a `crontab.xml` file in your module directory:
+
+```text
+<your component base dir>/<vendorname>/module-<name>/etc/crontab.xml
+```
 
 For one group, the file should have the following contents:
 
@@ -40,7 +41,7 @@ For one group, the file should have the following contents:
 </config>
 ```
 
-where:
+Where:
 
 |Value|Description|
 |---|---|
@@ -73,13 +74,15 @@ The resulting `crontab.xml` with two groups may look like this:
 </config>
 ```
 
-As an example, see [Magento_Customer crontab.xml]({{ site.mage2bloburl }}/{{ page.guide_version }}/app/code/Magento/Customer/etc/crontab.xml).
+As an example, see [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
 
-### Specifying Cron group options {#specify-cron-group-options}
+### Specifying Cron group options
 
 You may declare a new group and specify its configuration options (all of which run in [store view](https://glossary.magento.com/store-view) scope) via the `cron_groups.xml` file, located in:
 
-`<your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml`
+```text
+<your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
+```
 
 Below is an example of the `cron_groups.xml` file:
 
@@ -97,19 +100,19 @@ Below is an example of the `cron_groups.xml` file:
 </config>
 ```
 
-where:
+Where:
 
 | Option                     | Description                                                                                            |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ |
 | `schedule_generate_every`  | Frequency (in minutes) that schedules are written to the `cron_schedule` table.                        |
 | `schedule_ahead_for`       | Time (in minutes) in advance that schedules are written to the `cron_schedule` table.                  |
-| `schedule_lifetime`        | Window of time (in minutes) that cron job must start or will be considered missed ("too late" to run). |
+| `schedule_lifetime`        | Window of time (in minutes) that a cron job must start or the cron job is considered missed ("too late" to run). |
 | `history_cleanup_every`    | Time (in minutes) that cron history is kept in the database.                                           |
-| `history_success_lifetime` | Time (in minutes) that the record of successfully completed cron jobs are kept in the database.        |
-| `history_failure_lifetime` | Time (in minutes) that the record of failed cron jobs are kept in the database.                        |
-| `use_separate_process`     | Run this crongroup's jobs in a separate php process                                             |
+| `history_success_lifetime` | Time (in minutes) that the record of successfully completed cron jobs is kept in the database.        |
+| `history_failure_lifetime` | Time (in minutes) that the record of failed cron jobs is kept in the database.                        |
+| `use_separate_process`     | Run this cron group's jobs in a separate php process                                             |
 
-## Disable a cron job {#disable-cron-job}
+## Disable a cron job
 
 Cron jobs do not have a `disable` feature like we have for [observers](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html#subscribing-to-events). However, a cron job can be disabled by using the following technique: `schedule` a time that contains a date which will never happen.
 
@@ -138,7 +141,3 @@ To disable the `visitor_clean` cron job, create a custom module and rewrite the 
 ```
 
 Now, the `visitor_clean` cron job has been set to run at 00:00 on the 30th of February - at the date which will never occur.
-
-{:.ref-header}
-Related topic
-[Tutorial---configure custom cron jobs and cron groups]({{ page.baseurl }}/config-guide/cron/custom-cron-tut.html)
