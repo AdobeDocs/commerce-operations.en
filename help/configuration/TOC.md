@@ -63,6 +63,10 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Customizing crons reference](cron/custom-cron-ref.md)
   - [Configure a custom cron job](cron/custom-cron-tut.md)
 - Logs {#logs}
+  - [Customized logs](logs/overview.md)
+  - [Logger interface](logs/logger-interface.md)
+  - [Log database activity](logs/database-activity.md)
+  - [Write to a custom log file](logs/custom-log-files.md)
 - Message Queues {#message-queues}
 - Multiple sites {#multi-sites}
 - Remote storage {#remote-storage}
