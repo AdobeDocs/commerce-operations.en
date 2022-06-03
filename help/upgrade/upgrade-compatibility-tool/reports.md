@@ -24,7 +24,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 Check the [Error message reference](../upgrade-compatibility-tool/error-messages.md) topic for more information on the different errors this report can produce.
 
-This report also include a detailed summary that shows:
+This report also includes a detailed summary that shows:
 
 - *Current version*: the version currently installed.
 - *Target Version*: the version you want to upgrade to.
