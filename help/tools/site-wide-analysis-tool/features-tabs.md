@@ -1,8 +1,8 @@
 ---
-title: Features Tabs
+title: Features tabs
 description: Learn about the different features tabs in the [!DNL Site-Wide Analysis Tool]
 ---
-# Features Tabs
+# Features tabs
 
 The following features tabs information appears across the top end of the [!DNL Site-Wide Analysis Tool] screen.
 

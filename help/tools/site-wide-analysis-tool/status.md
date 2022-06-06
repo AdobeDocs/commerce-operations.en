@@ -1,8 +1,8 @@
 ---
-title: Status Attributes
+title: Status attributes
 description: Learn about the different status information in the [!DNL Site-Wide Analysis Tool].
 ---
-# Status Attributes
+# Status attributes
 
 The following status information appears across the top level of the page in the [!DNL Site-Wide Analysis Tool] screen.
 
@@ -13,6 +13,3 @@ The following status information appears across the top level of the page in the
 **[!UICONTROL Health Index Bar]**: It measures overall site health from 0 to 100, where zero is worst, and 100 is perfect health. It’s calculated based on the quantity and priority weight coefficient of active recommendations.
 
 **[!UICONTROL Download Recommendations Report]**: Recommendations Report provides personalized recommendations applicable to your project. You can download a PDF report by clicking on this section.
-
- 
-
