@@ -15,7 +15,7 @@ Recommendations include Description, Recommendation, Site Impact, Root Cause, Sc
 * **[!UICONTROL Upgrade Compatibility Tool]**: Checks an Adobe Commerce customized instance against a specific version by analyzing all modules and core code installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce. It also identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
 The [!UICONTROL Upgrade Compatibility Tool] allows you to identify when core code changes have been made to customized features.
 
-* **[!UICONTROL Security Scan Tool]**: The [!UICONTROL Security Scan Tool] is a tool to monitor Adobe Commerce sites for security risks. It can proactively and efficiently detect malware on merchant stores and notify merchants if there are any security risks, malware, or threats, and can identify missing Adobe Commerce patches and updates.
+* **[!UICONTROL Security Scan Tool]**: Monitors Adobe Commerce sites for security risks. It can proactively and efficiently detect malware on merchant stores and notify merchants if there are any security risks, malware, or threats, and can identify missing Adobe Commerce patches and updates.
 
 * **[!UICONTROL Extensions]**: The [!UICONTROL Extensions] page displays the extensions currently installed on your Adobe Commerce instance. [Adobe Commerce Marketplace](https://marketplace.magento.com/extensions.html) information is provided, where available, for extensions listed there.
 
