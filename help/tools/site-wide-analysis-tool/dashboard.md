@@ -9,7 +9,7 @@ There is also a list of [!UICONTROL External Resources] links for Adobe Commerce
 
 ## Elements
 
-* **[!UICONTROL Recommendations]**: The [!UICONTROL Recommendations] page displays site Best Practice Recommendations. Best Practice Recommendations (Issues found and Recommendations to fix) are sorted by priority - P0 (Critical) to P4 (Notification).
+* **[!UICONTROL Recommendations]**: Displays best practice recommendations for your site. Recommendations (issues found and recommendations to fix) are sorted by priority—P0 (Critical) to P4 (Notification).
 The Best Practice Recommendations include Best Practice Recommendation Description, Recommendation, Site Impact, Root Cause, Scenarios/Preconditions, and Tools Used.
 
 * **[!UICONTROL Upgrade Compatibility Tool]**: The [!UICONTROL Upgrade Compatibility Tool] is a tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules and core code installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce. It also identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
