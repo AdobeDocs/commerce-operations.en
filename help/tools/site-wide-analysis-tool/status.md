@@ -1,5 +1,5 @@
 ---
-title: Status Attributes
+title: Status attributes
 description: Learn about the different status information in the [!DNL Site-Wide Analysis Tool].
 ---
 # Status attributes
