@@ -10,7 +10,7 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [Introduction](site-wide-analysis-tool/intro.md)
   - [Installation](site-wide-analysis-tool/installation.md)
   - [How to access](site-wide-analysis-tool/access.md)
-  - [Status Attributes](site-wide-analysis-tool/status.md)
+  - [Status attributes](site-wide-analysis-tool/status.md)
   - [Features Tabs](site-wide-analysis-tool/features-tabs.md)
   - [Extensions](site-wide-analysis-tool/extensions.md)
   - [Patches](site-wide-analysis-tool/patches.md)
