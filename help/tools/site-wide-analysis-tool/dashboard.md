@@ -17,7 +17,7 @@ The [!UICONTROL Upgrade Compatibility Tool] allows you to identify when core cod
 
 * **[!UICONTROL Security Scan Tool]**: Monitors Adobe Commerce sites for security risks. It can proactively and efficiently detect malware on merchant stores and notify merchants if there are any security risks, malware, or threats, and can identify missing Adobe Commerce patches and updates.
 
-* **[!UICONTROL Extensions]**: The [!UICONTROL Extensions] page displays the extensions currently installed on your Adobe Commerce instance. [Adobe Commerce Marketplace](https://marketplace.magento.com/extensions.html) information is provided, where available, for extensions listed there.
+* **[!UICONTROL Extensions]**: Displays the extensions currently installed on your Adobe Commerce instance. [Adobe Commerce Marketplace](https://marketplace.magento.com/extensions.html) information is provided, where available, for extensions listed there.
 
 * **[!UICONTROL Alerts]**: The [!UICONTROL Alerts] page displays the latest [!DNL NewRelic Managed Alerts] for the Adobe Commerce instance. Learn more about [Managed alerts for Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) and how to [Access NewRelic services](https://support.magento.com/hc/en-us/articles/360039127712) in the Adobe Commerce Support Knowledge Base.
 
