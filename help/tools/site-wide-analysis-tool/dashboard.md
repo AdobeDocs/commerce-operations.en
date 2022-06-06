@@ -19,7 +19,7 @@ The [!UICONTROL Upgrade Compatibility Tool] allows you to identify when core cod
 
 * **[!UICONTROL Extensions]**: Displays the extensions currently installed on your Adobe Commerce instance. [Adobe Commerce Marketplace](https://marketplace.magento.com/extensions.html) information is provided, where available, for extensions listed there.
 
-* **[!UICONTROL Alerts]**: The [!UICONTROL Alerts] page displays the latest [!DNL NewRelic Managed Alerts] for the Adobe Commerce instance. Learn more about [Managed alerts for Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) and how to [Access NewRelic services](https://support.magento.com/hc/en-us/articles/360039127712) in the Adobe Commerce Support Knowledge Base.
+* **[!UICONTROL Alerts]**: Displays the latest [!DNL New Relic Managed Alerts] for the Adobe Commerce instance. Learn more about [Managed alerts for Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) and how to [Access New Relic services](https://support.magento.com/hc/en-us/articles/360039127712) in the Adobe Commerce Support Knowledge Base.
 
 * **[!UICONTROL Non-recommended software in use]**: The [!UICONTROL Non-recommended software in use] [!DNL widget] displays the non-recommended software that your Adobe Commerce instance is currently using, based on your Adobe Commerce version. The non-recommended software is listed by [!UICONTROL Name], [!UICONTROL Installed Version], and [!UICONTROL Recommended Version].
 
