@@ -1,8 +1,8 @@
 ---
-title: Status Attributes
+title: Status attributes
 description: Learn about the different status information in [!DNL Site-Wide Analysis Tool]
 ---
-# Status Attributes
+# Status attributes
 
 The following status info appears on the top end of the [!DNL Site-Wide Analysis Tool] screen.
 
