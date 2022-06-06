@@ -4,7 +4,7 @@ description: Learn about the [!DNL Dashboard] tab in the [!DNL Site-Wide Analysi
 ---
 # [!UICONTROL Dashboard]
 
-The [!UICONTROL Dashboard] page shows at-a-glance [!DNL widgets] that contain the current [!UICONTROL Recommendations], [!UICONTROL Upgrade Compatibility Tool], [!UICONTROL Security Scan Tool], [!UICONTROL Extensions], [!DNL NewRelic Alerts], [!DNL Non-recommended software in use], and [!DNL Recommended Patches] that all give a "single pane of glass view" of the health and current status of your Adobe Commerce website. These [!DNL widgets] each contain an access link to each feature’s page, to each tool itself, or to reports, depending on the [!DNL widget].
+The [!UICONTROL Dashboard] page shows at-a-glance [!DNL widgets] that provide a "single pane of glass view" of the health and current status of your Adobe Commerce website. These [!DNL widgets] each contain an access link to each feature’s page, to each tool itself, or to reports (depending on the [!DNL widget]).
 There is also a list of [!UICONTROL External Resources] links for Adobe Commerce, including the [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html#patch-grid), [Security Center](https://magento.com/security), and [Observation for Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
 
 ## Elements
