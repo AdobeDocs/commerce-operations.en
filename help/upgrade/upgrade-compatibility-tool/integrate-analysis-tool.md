@@ -25,4 +25,4 @@ After the scan is complete, the high level results are displayed in the widget.
 
 ![UCT SWAT widget - Results](../../assets/upgrade-guide/uct-swat-results.png)
 
-Click **[!UICONTROL Download Report]** to retrieve the [!DNL Upgrade Compatibility Tool] HTML report and review the details.
+Click **[!UICONTROL Download Report]** to retrieve the [!DNL Upgrade Compatibility Tool] [HTML report](../upgrade-compatibility-tool/reports.md#html-report) and review the details.

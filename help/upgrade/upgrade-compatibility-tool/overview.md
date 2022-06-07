@@ -21,13 +21,13 @@ You can use the [!DNL Upgrade Compatibility Tool] via:
 - Integrating the [!DNL Upgrade Compatibility Tool] with the [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - A run configuration within the [Magento PHPStorm plugin](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
-### Workflow
+## Workflow
 
 The following diagram shows the possible workflows when running the [!DNL Upgrade Compatibility Tool]:
 
 ![[!DNL Upgrade Compatibility Tool] Diagram](../../assets/upgrade-guide/uct-diagram-v5.png)
 
-### Help improve the [!DNL Upgrade Compatibility Tool]
+## Help improve the [!DNL Upgrade Compatibility Tool]
 
 If you need information or have questions that are not covered in this guide, use the following resources:
 
@@ -37,7 +37,7 @@ The [!DNL Upgrade Compatibility Tool] uses rules defined within our [Coding Stan
 
 Refer to the [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) topic for more information on contributing coding standards.
 
-### Resources
+## Resources
 
 See the following resources to help you understand Adobe Commerce upgrades:
 
