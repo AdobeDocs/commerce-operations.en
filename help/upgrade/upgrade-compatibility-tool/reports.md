@@ -7,19 +7,18 @@ description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] on 
 
 {{commerce-only}}
 
-As a result of the analysis, the [!DNL Upgrade Compatibility Tool] can export a report that contains a list of issues for each file specifying its severity, error code, and error description. The [!DNL Upgrade Compatibility Tool] exports the report into 2 different formats:
+As a result of the analysis, the [!DNL Upgrade Compatibility Tool] can export a report that contains a list of issues for each file specifying its severity, error code, and error description. The [!DNL Upgrade Compatibility Tool] exports the report into two different formats:
 
 - A [JSON file](reports.md#json-file).
 - An [HTML report](reports.md#html-report).
 
-See a command-line interface example of a report below:
+See the following command-line interface example of a report:
 
 ```terminal
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 ------------------------------------------------------------------
- * [WARNING][1131] Line 23: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'
- * [ERROR][1429] Line 103: Call method 'Magento\Framework\Api\SearchCriteriaBuilder::addFilters' that is non API on version '2.4.4'
- * [CRITICAL][1110] Line 60: Instantiating class/interface 'Magento\Catalog\Model\ProductRepository' that does not exist on version '2.4.4'
+ * [WARNING][1131] Line 10: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'
+ * [ERROR][1328] Line 10: Implemented interface 'Magento\Framework\App\Action\HttpGetActionInterface' that is non API on version '2.4.4'
 ```
 
 Check the [Error message reference](../upgrade-compatibility-tool/error-messages.md) topic for more information on the different errors this report can produce.
@@ -35,19 +34,20 @@ This report also includes a detailed summary that shows:
 - *Total errors*: the number of errors found.
 - *Total warnings*: the number of warnings found.
 
-See a command-line interface example below:
+See the following command-line interface example:
 
 ```terminal
- ----------------------------- ------------------
-  Current version               2.4.2
-  Target version                2.4.4
-  Execution time                1m:10s
-  Modules that require update   78.33% (47/60)
-  Files that require update     21.62% (115/532)
-  Total critical issues         35
-  Total errors                  201
-  Total warnings                103
- ----------------------------- ------------------
+ ----------------------------- ----------------- 
+  Current version               2.4.1            
+  Target version                2.4.4            
+  Execution time                1m:8s            
+  Modules that require update   71.67% (43/60)   
+  Files that require update     18.05% (96/532)  
+  Total critical issues         24               
+  Total errors                  159              
+  Total warnings                53               
+  Memory peak usage             902.00 MB        
+ ----------------------------- ----------------- 
 ```
 
 ## JSON file
@@ -76,7 +76,7 @@ Where arguments are as follows:
 
 ## HTML report
 
-You can get the HTML report while running the tool on a command-line interface, or through the [!DNL Site-Wide Analysis Tool]. The HTML report also contains:
+You can get the HTML report while running the tool on a command-line interface or through the [!DNL Site-Wide Analysis Tool]. The HTML report also contains:
 
 - A list of identified issues.
 - A summary of the analysis.
@@ -85,9 +85,9 @@ You can get the HTML report while running the tool on a command-line interface, 
 
 You can easily navigate through the identified issues during the [!DNL Upgrade Compatibility Tool] analysis.
 
-You can filter issues shown on the report according to the minimum issue level. Default value is `WARNING`.
+You can filter issues shown on the report according to the minimum issue level (default value is `WARNING`).
 
-There is a dropdown at the top right corner that will allow you to select a different one according to your necessities. The list of identified issues will be filtered accordingly.
+There is a dropdown at the top-right corner that allows you to select a different level. The list of identified issues is filtered accordingly.
 
 ![HTML report - Drop Down usage](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 

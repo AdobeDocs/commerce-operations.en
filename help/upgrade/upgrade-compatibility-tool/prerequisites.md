@@ -39,11 +39,11 @@ The minimum requirements to use the [!DNL Upgrade Compatibility Tool] in a comma
 | **Requirements** | **Constraints** |
 |----------------|-----------------|
 | PHP version| >= 7.3 |
-| Composer | none known requirement. |
-| Node.js | Node.js versions: `^12.22.0`, `^14.17.0`, or `>=16.0.0`. See the [Install Node.js](https://nodejs.dev/learn/how-to-install-nodejs) topic for more information. |
+| Composer | no known requirement. |
+| Node.js | Node.js versions `^12.22.0`, `^14.17.0`, or `>=16.0.0` (see [Install Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
 | Memory limitations | At least 2GB RAM. |
 
-You can run the [!DNL Upgrade Compatibility Tool] in several operating systems (Windows is not supported). You do not have to run the [!DNL Upgrade Compatibility Tool] where your Adobe Commerce instance is located.
+Adobe Commerce is only supported on Linux operating systems. You can run the [!DNL Upgrade Compatibility Tool] in a Linux OS. You do not have to run the [!DNL Upgrade Compatibility Tool] where your Adobe Commerce instance is located.
 
 It is necessary for the [!DNL Upgrade Compatibility Tool] to have access to the source code of the Adobe Commerce instance. For example, you can install it on one server and point it at your Adobe Commerce installation on another server. 
 
