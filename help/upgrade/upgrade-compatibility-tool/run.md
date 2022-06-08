@@ -46,7 +46,7 @@ Available options for the `upgrade:check` command:
 
 | **Command** | **Available options** |
 |----------------|-----------------|
-| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or i): If you do not want to include known critical issues, errors and warnings in your report.</li></ul> |
+| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or -i): If you do not want to include known critical issues, errors and warnings in your report.</li><li>--coming-version (or -c): Target an specific Adobe Commerce version.</li></ul> |
 
 The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option, so it only shows new or unknown critical issues, errors, and warnings.
 
@@ -59,6 +59,25 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 >[!NOTE]
 >
 > This applies only to PHP API validations.
+
+### [!DNL --coming-version] option
+
+You can compare your current Adobe Commerce installation with Adobe Commerce versions `>=2.3`.
+
+You must provide the version as a parameter when running the `upgrade:check` command:
+
+```bash
+bin/uct upgrade:check <dir> -c 2.4.3
+```
+
+Where `-c, --coming-version[=COMING-VERSION]` refers to the Adobe Commerce targeted version.
+
+There are some limitations when running the `--coming-version`:
+
+- This parameter refers to any tag that identifies a specific version of Adobe Commerce.
+- It is a requirement to provide this one explicitly; providing only the value of it does not work.
+- Provide the tag version without any quotation marks (neither single nor double): ~~'2.4.1-develop'~~.
+- You should NOT provide older versions than the one you have currently installed, nor older than 2.3, which is the oldest one supported at the moment.
 
 ## Use the [!DNL core:code:changes] command
 
@@ -146,51 +165,53 @@ To see the [!DNL Upgrade Compatibility Tool] command general options and help, r
 bin/uct --help
 ```
 
-However, it is possible to run `--help` as an option when running a specific command. This will return specific `--help` options for that specific command:
+That returns a list with all available `help` options for the [!DNL Upgrade Compatibility Tool] in a command-line interface:
+
+```terminal
+- -m, --module-path[=MODULE-PATH]: Path of the modules to be analysed
+- -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
+- -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
+- --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
+- --html-output-path[=HTML-OUTPUT-PATH]: Path of the file where the output will be exported in HTML format.
+- --context=CONTEXT: Execution context. This option is for integration purposes and does not affect the execution result.
+- -h, --help: Display help for that specific command. If no command is provided, `list` command is the default result.
+- -q, --quiet: Do not output any messages while executing the command.
+- -v, --version: Display application version.
+- --ansi, --no-ansi: Enable ANSI output.
+- -n, --no-interaction: Do not ask any interactive question while executing the command.
+- -v, --vv, --vvv, --verbose: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
+```
+
+However, it is possible to run `--help` as an option when running a specific command. This will return specific `--help` options for that specific command.
+
+Example of the `upgrade:check` command with `--help` option:
 
 ```bash
 bin/uct upgrade:check --help
 ```
 
-## Version
+This returns specific options that can be run for the `upgrade:check` command:
 
-You can compare your current Adobe Commerce installation with Adobe Commerce versions `>=2.3`.
-
-You must provide the version as a parameter when running the command:
-
-```bash
-bin/uct upgrade:check <dir> -c 2.4.3
+```terminal
+- --min-issue-level: Minimum issue level to show in report. Default level is [WARNING].
+- -i, --ignore-current-version-compatibility-issues: Use this option when you do not want to include known critical issues, errors and warnings in your report.
 ```
 
->[!NOTE]
->
->This parameter provides a list of all available Adobe Commerce versions.
-
-Where:
-
-- `-c, --coming-version[=COMING-VERSION]`: The Adobe Commerce targeted version.
-
-There are some limitations when running the previous command:
-
-- This parameter refers to any tag that identifies a specific version of Adobe Commerce.
-- It is a requirement to provide this one explicitly; providing only the value of it does not work.
-- Provide the tag version without any quotation marks (neither single nor double): ~~'2.4.1-develop'~~.
-- You should NOT provide older versions than the one you have currently installed, nor older than 2.3, which is the oldest one supported at the moment.
-
 ## Recommended actions
+
+### Follow Adobe Commerce Best Practices
+
+- Avoid having two modules with the same name. 
+- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
 
 ### Optimize your results
 
 The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
 
 - Use the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It only provides errors against the version you are trying to upgrade to.
-- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
-- If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
-
-### Recommendations to use the `upgrade:check` command
-
+- Adding the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
 - The [!DNL Upgrade Compatibility Tool] requires at least 2GB RAM to run. This setting is recommended to avoid issues due to a low memory limitation. The [!DNL Upgrade Compatibility Tool] displays a question if you run the `upgrade:check` command with a low `memory_limit` setting.
-- Specify the `-m` option to run the tool against a specific module:
+- If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool]. Specify the `-m` option to run the tool against a specific module:
 
    ```bash
    bin/uct upgrade:check <dir> -m[=MODULE-PATH]
@@ -200,60 +221,3 @@ Where arguments are as follows:
 
 - `<dir>`: Adobe Commerce installation directory.
 - `[=MODULE-PATH]`: Specific module path directory.
-
-### Follow Adobe Commerce Best Practices
-
-- Avoid having two modules with the same name. 
-- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
-
-## Troubleshooting
-
-### Segmentation fault error
-
-When two modules have the same name the [!DNL Upgrade Compatibility Tool] shows a segmentation fault error.
-
-To avoid this error it is recommended to run the `bin` command with the added option `-m`:
-
-```bash
-bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/<module-name>
-```
-
->[!NOTE]
->
->The `<dir>` value is the directory where your Adobe Commerce instance is located.
-
-The `-m` option allows the [!DNL Upgrade Compatibility Tool] to analyze each specific module independently to avoid encountering two modules with the same name in your Adobe Commerce instance.
-
-This command option also allows the [!DNL Upgrade Compatibility Tool] to analyze a folder containing several modules:
-
-```bash
-bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/
-```
-
-This recommendation also helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
-
-### Empty output
-
->[!NOTE]
->
->The `M2_VERSION` is the target Adobe Commerce version you want to compare to your Adobe Commerce instance.
-
-If after running this command:
-
-```bash
-bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
-```
-
-The only output is `Upgrade compatibility tool`:
-
-```terminal
-bin/uct upgrade:check /var/www/project/magento/ -c 2.4.1
-Upgrade compatibility tool
-```
-
-The likely cause is a PHP memory limitation.
-Override the memory limitation by setting `memory_limit` to `-1`:
-
-```bash
-php -d memory_limit=-1 /bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
-```
