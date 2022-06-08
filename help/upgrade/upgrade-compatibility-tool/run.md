@@ -23,14 +23,14 @@ Available commands for the [!DNL Upgrade Compatibility Tool] in a command-line i
 
 | **Command** | **Description** |
 |----------------|-----------------|
-| [`upgrade:check`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-upgrade%3Acheck-command) |This command runs the [!DNL Upgrade Compatibility Tool] by analyzing all modules installed in it. |
-| [`core:code:changes`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) | This command compares your current Adobe Commerce installation with a clean vanilla installation. |
-| [`refactor`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-refactor-command) | This command automatically fixes a reduced set of issues. |
-| [`graphql:compare`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-graphql:compare-command) | This command provides the option to introspect two GraphQL endpoints and compare their schemas. |
-| [`list`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-list-command) | This command returns a list of all the [!DNL Upgrade Compatibility Tool] available commands. |
-| [`help`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the---help-command) | This command returns all available `help`options for the [!DNL Upgrade Compatibility Tool]. This command can be run as well as an option with the previous commands. |
+| `upgrade:check` |This command runs the [!DNL Upgrade Compatibility Tool] by analyzing all modules installed in it. |
+| `core:code:changes` | This command compares your current Adobe Commerce installation with a clean vanilla installation. |
+| `refactor` | This command automatically fixes a reduced set of issues. |
+| `graphql:compare` | This command provides the option to introspect two GraphQL endpoints and compare their schemas. |
+| `list` | This command returns a list of all the [!DNL Upgrade Compatibility Tool] available commands. |
+| `help` | This command returns all available `help`options for the [!DNL Upgrade Compatibility Tool]. This command can be run as well as an option with the previous commands. |
 
-## Use the [!DNL upgrade:check] command
+## Use the `upgrade:check` command
 
 The `upgrade:check` command checks for core code changes for that specific Adobe Commerce instance, and all custom code changes installed in it.
 
@@ -60,7 +60,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 >
 > This applies only to PHP API validations.
 
-### Adding the [!DNL --coming-version] option
+### Adding the `--coming-version` option
 
 You can compare your current Adobe Commerce installation with Adobe Commerce versions `>=2.3`.
 
@@ -79,7 +79,7 @@ There are some limitations when running the `--coming-version`:
 - Provide the tag version without any quotation marks (neither single nor double): ~~'2.4.1-develop'~~.
 - You should NOT provide older versions than the one you have currently installed, nor older than 2.3, which is the oldest one supported at the moment.
 
-## Use the [!DNL core:code:changes] command
+## Use the `core:code:changes` command
 
 You can compare your current Adobe Commerce installation with a clean vanilla installation to see if the core code has any modifications made to implement a new feature or customization. This command shows a list of core modifications only:
 
@@ -108,7 +108,7 @@ You can run an [!DNL Upgrade Compatibility Tool] command with the `--vanilla-dir
 
 See the [Deploy vanilla instance](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) topic for more information.
 
-## Use the [!DNL refactor] command
+## Use the `refactor` command
 
 The [!DNL Upgrade Compatibility Tool] has the ability to automatically fix a reduced set of issues:
 
@@ -130,7 +130,7 @@ Available options for the `refactor` command:
 |----------------|-----------------|
 | `refactor` | `--help`: Returns all available `--help` options. |
 
-## Use the [!DNL graphql:compare] command
+## Use the `graphql:compare` command
 
 This command provides the option to the [!DNL Upgrade Compatibility Tool] to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
 
@@ -149,7 +149,7 @@ Available options for the `graphql:compare` command:
 |----------------|-----------------|
 | `graphql:compare` | `--help`: Returns all available `--help` options. |
 
-## Use the [!DNL list] command
+## Use the `list` command
 
 To return a list of the [!DNL Upgrade Compatibility Tool] available commands, run:
 
@@ -157,7 +157,7 @@ To return a list of the [!DNL Upgrade Compatibility Tool] available commands, ru
 bin/uct list
 ```
 
-## Use the [!DNL --help] command
+## Use the `--help` command
 
 To see the [!DNL Upgrade Compatibility Tool] command general options and help, run:
 
