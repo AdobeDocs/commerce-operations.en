@@ -60,7 +60,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 >
 > This applies only to PHP API validations.
 
-### [!DNL --coming-version] option
+### Adding the [!DNL --coming-version] option
 
 You can compare your current Adobe Commerce installation with Adobe Commerce versions `>=2.3`.
 
