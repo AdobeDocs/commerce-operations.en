@@ -13,22 +13,18 @@ To get started with the [!DNL Upgrade Compatibility Tool] in a command-line inte
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
-   >[!NOTE]
-   >
-   > See the [prerequisites](../upgrade-compatibility-tool/prerequisites.md) page for more information about the minimum requirements to use the tool.
-
-## The [!DNL Upgrade Compatibility Tool] commands
+## The [!DNL Upgrade Compatibility Tool] in a command-line interface
 
 The [!DNL Upgrade Compatibility Tool] is a tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
 
-The [!DNL Upgrade Compatibility Tool] identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
-
 See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) to learn more about the [!DNL Upgrade Compatibility Tool].
+
+Available commands for the [!DNL Upgrade Compatibility Tool] in a command-line interface:
 
 | **Command** | **Description** |
 |----------------|-----------------|
 | [`upgrade:check`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-upgrade%3Acheck-command) |This command runs the [!DNL Upgrade Compatibility Tool] by analyzing all modules installed in it. |
-| [`core:code:changes`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-upgrade%3Acheck-command) | This command compares your current Adobe Commerce installation with a clean vanilla installation. |
+| [`core:code:changes`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) | This command compares your current Adobe Commerce installation with a clean vanilla installation. |
 | [`refactor`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-refactor-command) | This command automatically fixes a reduced set of issues. |
 | [`graphql:compare`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-graphql:compare-command) | This command provides the option to introspect two GraphQL endpoints and compare their schemas. |
 | [`list`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.md#use-the-list-command) | This command returns a list of all the [!DNL Upgrade Compatibility Tool] available commands. |
@@ -36,32 +32,25 @@ See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn
 
 ## Use the [!DNL upgrade:check] command
 
+The `upgrade:check` command checks for core code changes for that specific Adobe Commerce instance, and all custom code changes installed in it.
+
 The `upgrade:check` command is the main command to execute the tool:
 
 ```bash
 bin/uct upgrade:check <dir>
 ```
 
->[!TIP]
->
-> The `<dir>` value is the directory where your Adobe Commerce instance is located. It is recommended to execute the tool only when the main directory is provided.
-
-The `upgrade:check` command runs the [!DNL Upgrade Compatibility Tool] and checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of your Adobe Commerce.
-
-This command checks for core code changes for that specific Adobe Commerce instance, and all custom code changes installed in it.
+Where `<dir>` value is the directory where your Adobe Commerce instance is located. It is recommended to execute the tool only when the main directory is provided.
 
 Available options for the `upgrade:check` command:
 
 | **Command** | **Available options** |
 |----------------|-----------------|
-| `upgrade:check` | - `help` <br/> - `--min-issue-level` <br/> - `--ignore-current-version-compatibility-issues` |
+| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or i): If you do not want to include known critical issues, errors and warnings in your report.</li></ul> |
 
-- `--min-issue-level`: Minimum issue level to show in report. Default level is [WARNING].
-- `-i, --ignore-current-version-compatibility-issues`: Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report.
+The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option, so it only shows new or unknown critical issues, errors, and warnings.
 
-### Use the `--ignore-current-version-compatibility-issues` option
-
-The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option, so it only shows new or unknown critical issues, errors, and warnings. Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report.
+Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report:
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -71,21 +60,24 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 >
 > This applies only to PHP API validations.
 
-## Use the --help command
+## Use the [!DNL core:code:changes] command
 
-To see the [!DNL Upgrade Compatibility Tool] command general options and help, run:
-
-```bash
-bin/uct --help
-```
-
-However, it is possible to run `--help` as an option when running a specific command, like `bin/uct upgrade:check`. This returns specific `--help` options for that command:
+You can compare your current Adobe Commerce installation with a clean vanilla installation to see if the core code has any modifications made to implement a new feature or customization. This command shows a list of core modifications only:
 
 ```bash
-bin/uct upgrade:check --help
+bin/uct core:code:changes <dir> <vanilla dir>
 ```
 
+Where arguments are as follows:
 
+- `<dir>`: Adobe Commerce installation directory.
+- `<vanilla dir>`: Adobe Commerce vanilla installation directory.
+
+Available options for the `core:code:changes` command:
+
+| **Command** | **Available options** |
+|----------------|-----------------|
+| `core:code:changes` | `--help`: Returns all available `--help` options. |
 
 ### Vanilla installation
 
@@ -97,7 +89,48 @@ You can run an [!DNL Upgrade Compatibility Tool] command with the `--vanilla-dir
 
 See the [Deploy vanilla instance](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) topic for more information.
 
-## Use the list command
+## Use the [!DNL refactor] command
+
+The [!DNL Upgrade Compatibility Tool] has the ability to automatically fix a reduced set of issues:
+
+- Functions that were allowed to be used without passing an argument, but with such usage now deprecated.
+- Usage of `$this` in Magento templates.
+- Usage of PHP keyword `final` in private methods.
+
+For that, execute the `refactor` command:
+
+```bash
+bin/uct refactor <dir>
+```
+
+Where `<dir>` value is the directory where your Adobe Commerce instance is located.
+
+Available options for the `refactor` command:
+
+| **Command** | **Available options** |
+|----------------|-----------------|
+| `refactor` | `--help`: Returns all available `--help` options. |
+
+## Use the [!DNL graphql:compare] command
+
+This command provides the option to the [!DNL Upgrade Compatibility Tool] to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
+
+```bash
+bin/uct graphql:compare <schema1> <schema2>
+```
+
+Where arguments are as follows:
+
+- `<schema1>`: Endpoint URL for the existing installation.
+- `<schema2>`: Endpoint URL for the vanilla installation.
+
+Available options for the `graphql:compare` command:
+
+| **Command** | **Available options** |
+|----------------|-----------------|
+| `graphql:compare` | `--help`: Returns all available `--help` options. |
+
+## Use the [!DNL list] command
 
 To return a list of the [!DNL Upgrade Compatibility Tool] available commands, run:
 
@@ -105,43 +138,19 @@ To return a list of the [!DNL Upgrade Compatibility Tool] available commands, ru
 bin/uct list
 ```
 
-The `list` command returns the following:
+## Use the [!DNL --help] command
 
-- `-h, --help`: Display help for that specific command. If no command is provided, `list` command is the default result.
-- `-q, --quiet`: Do not output any messages while executing the command.
-- `-v, --version`: Display app version.
-- `--ansi, --no-ansi`: Enable ANSI output.
-- `-n, --no-interaction`: Do not ask any interactive question while executing the command.
-- `-v, --vv, --vvv, --verbose`: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
-
-## Use the core:code:changes command
-
-You can compare your current Adobe Commerce installation with a clean vanilla installation to see if the core code has any modifications made to implement a new feature or customization. This validation helps estimate the effort that the upgrade requires based on those changes.
+To see the [!DNL Upgrade Compatibility Tool] command general options and help, run:
 
 ```bash
-bin/uct core:code:changes <dir> <vanilla dir>
+bin/uct --help
 ```
 
-Where arguments are as follows:
+However, it is possible to run `--help` as an option when running a specific command. This will return specific `--help` options for that specific command:
 
-- `<dir>`: Adobe Commerce installation directory.
-- `<vanilla dir>`: Adobe Commerce vanilla installation directory.
-
-There are some limitations when running this command:
-
-- Execute only when the project root (or main) directory is provided.
-- Shows a list of core modifications only.
-
-### Use the `core:code:changes` command  with the `--help` option
-
-Available `--help` options for the `core:code:changes` command:
-
-- `-h, --help`: Display help for that specific command. If no command is provided, `list` command is the default result.
-- `-q, --quiet`: Do not output any messages while executing the command.
-- `-v, --version`: Display app version.
-- `--ansi, --no-ansi`: Enable ANSI output.
-- `-n, --no-interaction`: Do not ask any interactive question while executing the command.
-- `-v, --vv, --vvv, --verbose`: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
+```bash
+bin/uct upgrade:check --help
+```
 
 ## Version
 
@@ -167,51 +176,6 @@ There are some limitations when running the previous command:
 - It is a requirement to provide this one explicitly; providing only the value of it does not work.
 - Provide the tag version without any quotation marks (neither single nor double): ~~'2.4.1-develop'~~.
 - You should NOT provide older versions than the one you have currently installed, nor older than 2.3, which is the oldest one supported at the moment.
-
-## Use the refactor command
-
-The [!DNL Upgrade Compatibility Tool] has the ability to automatically fix a reduced set of issues:
-
-- Functions that were allowed to be used without passing an argument, but with such usage now deprecated.
-- Usage of `$this` in Magento templates.
-- Usage of PHP keyword `final` in private methods.
-
-Run:
-
-```bash
-bin/uct refactor <dir>
-```
-
-Where arguments are as follows:
-
-- `<dir>`: Adobe Commerce installation directory.
-
-## Use the graphql:compare command
-
-The [!DNL Upgrade Compatibility Tool] also provides the option to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
-
-```bash
-bin/uct graphql:compare <schema1> <schema2>
-```
-
-Where arguments are as follows:
-
-- `<schema1>`: Endpoint URL for the existing installation.
-- `<schema2>`: Endpoint URL for the vanilla installation.
-
-You must have running `instance before` and `instance after` the upgrade.
-
-### GraphQL compare command `--help` options
-
-Available `--help` options for the `graphql:compare` command:
-
-- `-h, --help`: Display help for that specific command. If no command is provided, `list` command is the default result.
-- `-q, --quiet`: Do not output any messages while executing the command.
-- `-v, --version`: Display app version.
-- `--ansi, --no-ansi`: Enable ANSI output.
-- `-n, --no-interaction`: Do not ask any interactive question while executing the command.
-- `-v, --vv, --vvv, --verbose`: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
-
 
 ## Recommended actions
 
