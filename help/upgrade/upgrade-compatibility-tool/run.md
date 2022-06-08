@@ -197,14 +197,12 @@ This returns specific options that can be run for the `upgrade:check` command:
 - -i, --ignore-current-version-compatibility-issues: Use this option when you do not want to include known critical issues, errors and warnings in your report.
 ```
 
-## Recommended actions
-
-### Follow Adobe Commerce Best Practices
+## Follow Adobe Commerce Best Practices
 
 - Avoid having two modules with the same name. 
 - Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
 
-### Optimize your results
+## Optimize your results
 
 The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
 
