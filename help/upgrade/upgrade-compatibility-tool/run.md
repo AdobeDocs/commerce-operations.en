@@ -46,11 +46,9 @@ Available options for the `upgrade:check` command:
 
 | **Command** | **Available options** |
 |----------------|-----------------|
-| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or -i): If you do not want to include known critical issues, errors and warnings in your report.</li><li>--coming-version (or -c): Target an specific Adobe Commerce version.</li></ul> |
+| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or -i): If you do not want to include critical issues, errors and warnings from the current version in your report.</li><li>--coming-version (or -c): Target an specific Adobe Commerce version.</li></ul> |
 
-The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option, so it only shows new or unknown critical issues, errors, and warnings.
-
-Use this option when you only want to get new issues that are introduced with the update from your current version to the targeted version in your [!DNL Upgrade Compatibility Tool] report:
+The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option. Use this option when you only want to get new issues that are introduced with the update from your current version to the targeted version in your [!DNL Upgrade Compatibility Tool] report:
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -197,8 +195,8 @@ bin/uct upgrade:check --help
 This returns specific options that can be run for the `upgrade:check` command:
 
 ```terminal
-- --min-issue-level: Minimum issue level to show in report. Default level is [WARNING].
-- -i, --ignore-current-version-compatibility-issues: Use this option when you do not want to include known critical issues, errors and warnings in your report.
+--min-issue-level.
+-i, --ignore-current-version-compatibility-issues.
 ```
 
 ## Follow Adobe Commerce Best Practices
