@@ -4,11 +4,11 @@ description: Learn about the [!UICONTROL Recommendations] tab in the [!DNL Site-
 ---
 # [!DNL Recommendations]
 
-The [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] page lists recommendations based on best practices to address issues detected on your site. The recommendations are sorted by priority PO to P4, where PO is critical and P4 is low. The findings include description, recommendation, site impact, root cause, scenarios/preconditions, and tools used. 
+The [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] page lists recommendations based on best practices to address issues detected on your site. The recommendations are sorted by priority PO to P4, where PO is critical and P4 is low. The findings include description, recommendation, site impact, root cause, scenarios/preconditions, expected result, and tools used. 
 
 ## When to use
 
-Use the [!UICONTROL Recommendations] page to see and implement recommendations to improve your site health.
+Use the [!UICONTROL Recommendations] page to see and implement recommendations to improve your site's health.
 
 ## Benefits
 
