@@ -40,7 +40,7 @@ The `upgrade:check` command is the main command to execute the tool:
 bin/uct upgrade:check <dir>
 ```
 
-Where `<dir>` value is the directory where your Adobe Commerce instance is located. It is recommended to execute the tool only when the main directory is provided.
+Where `<dir>` value is the directory where your Adobe Commerce instance is located.
 
 Available options for the `upgrade:check` command:
 
