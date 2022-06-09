@@ -1,15 +1,44 @@
 ---
-title: Run the [!DNL Upgrade Compatibility Tool]
+title: "Run the [!DNL Upgrade Compatibility Tool]"
 description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] on your Adobe Commerce project.
 ---
 
-# Run the [!DNL Upgrade Compatibility Tool]
+# Download the [!DNL Upgrade Compatibility Tool]
 
 {{commerce-only}}
 
-The [!DNL Upgrade Compatibility Tool] is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
+To get started with the [!DNL Upgrade Compatibility Tool] in a command-line interface, download it by running the following command:
+
+```bash
+composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
+```
+
+   >[!NOTE]
+   >
+   > See the [prerequisites](../upgrade-compatibility-tool/prerequisites.md) page for more information about the minimum requirements to use the tool.
+
+## Run the [!DNL Upgrade Compatibility Tool]
+
+The [!DNL Upgrade Compatibility Tool] is a tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
 
 The [!DNL Upgrade Compatibility Tool] identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
+
+See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) to learn more about the [!DNL Upgrade Compatibility Tool].
+
+## Recommended actions
+
+### Optimize your results
+
+The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
+
+- Use the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It only provides errors against the version you are trying to upgrade to.
+- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
+- If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
+
+### Follow Adobe Commerce Best Practices
+
+- Avoid having two modules with the same name. 
+- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
 
 ## Use the `upgrade:check` command
 
@@ -33,7 +62,7 @@ This command checks for core code changes for that specific Adobe Commerce insta
 
 You can run the `core:code:changes` command to analyze only core code changes for that specific Adobe Commerce instance. See [Core code changes](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) section.
 
-While you can use the `graphql:compare` command to compare two GraphQL schemas to check for any changes between them. See [GraphQL schema compatibility verification](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) section.
+You can use the `graphql:compare` command to compare two GraphQL schemas to check for any changes between them. See the [GraphQL schema compatibility verification](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) section.
 
 ### Recommendations to use the `upgrade:check` command
 
@@ -79,110 +108,6 @@ Available `--help` options for the `upgrade:check` command:
 - `--ansi, --no-ansi`: Enable ANSI output.
 - `-n, --no-interaction`: Do not ask any interactive question while executing the command.
 - `-v, --vv, --vvv, --verbose`: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
-
-### Output
-
-As a result of the analysis performed, the [!DNL Upgrade Compatibility Tool] exports a report that contains a list of issues for each file specifying its severity, error code and error description.
-
-See the example below:
-
-```terminal
-File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
-------------------------------------------------------------------
- * [WARNING][1131] Line 23: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.2'
- * [ERROR][1429] Line 103: Call method 'Magento\Framework\Api\SearchCriteriaBuilder::addFilters' that is non API on version '2.4.2'
- * [CRITICAL][1110] Line 60: Instantiating class/interface 'Magento\Catalog\Model\ProductRepository' that does not exist on version '2.4.2'
-```
-
-Check the [Error message reference](error-messages.md) topic for more information.
-
-The report also includes a detailed summary that shows:
-
-- *Current version*: the version currently installed.
-- *Target Version*: the version you want to upgrade to.
-- *Execution time*: the amount of time the analysis took to build the report (mm:ss).
-- *Modules that require update*: the percentage of modules that contain compatibility issues and require update.
-- *Files that require update*: the percentage of files that contain compatibility issues and require update.
-- *Total critical errors*: the number of critical errors found.
-- *Total errors*: the number of errors found.
-- *Total warnings*: the number of warnings found.
-
-See the example below:
-
-```terminal
- ----------------------------- ------------------
-  Current version               2.4.2
-  Target version                2.4.3
-  Execution time                1m:10s
-  Modules that require update   78.33% (47/60)
-  Files that require update     21.62% (115/532)
-  Total critical issues         35
-  Total errors                  201
-  Total warnings                103
- ----------------------------- ------------------
-```
-
->[!NOTE]
->
->By default, the [!DNL Upgrade Compatibility Tool] exports the report into 2 different formats: `json` and `html`.
-
-#### JSON
-
-The JSON file contains exactly the same information shown on output:
-
-- List of the identified issues.
-- Summary of the analysis.
-
-For each encountered issue, the report provides detailed information such as the severity and description of the problem.
-
->[!NOTE]
->
->The default path for the output folder is `var/output/[TIME]-results.json`.
-
-To export this report into a different output folder, run:
-
-```bash
-bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
-```
-
-Where arguments are as follows:
-
-- `<dir>`: Adobe Commerce installation directory.
-- `[=JSON-OUTPUT-PATH]`: Path directory to export the `.json` output file.
-
->[!NOTE]
->
->The default path for the output folder is `var/output/[TIME]-results.json`.
-
-#### HTML
-
-The HTML file also contains the list of identified issues and analysis summary. It also includes four different charts:
-
-- **Modules by issue severity**: Shows severity distribution by modules.
-- **Files by issue severity**: Shows severity distribution by files.
-- **Modules ordered by total number of issues**: Shows the 10 most compromised modules taking into account warnings, errors, and critical errors.
-- **Modules with relative sizes and issues**: The more files a module contains, the bigger its circle. The more issues a module has, the more red its circle appears.
-
-These charts allow you to identify (at a glance) the parts that are most compromised and the ones that require more work to perform an upgrade.
-
-![HTML report - Summary](../../assets/upgrade-guide/uct-html-summary.png)
-
-![HTML report - Details](../../assets/upgrade-guide/uct-html-details.png)
-
-To export this report into a different output folder run:
-
-```bash
-bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
-```
-
-Where arguments are as follows:
-
-- `<dir>`: {{site.data.var.ee}} installation directory.
-- `[=HTML-OUTPUT-PATH]`: Path directory to export the `.html` output file.
-
->[!NOTE]
->
->The default path for the output folder is `var/output/[TIME]-results.html`.
 
 ### Use the `--ignore-current-version-compatibility-issues` option
 
@@ -291,6 +216,10 @@ Run:
 bin/uct refactor <dir>
 ```
 
+Where arguments are as follows:
+
+- `<dir>`: Adobe Commerce installation directory.
+
 ## GraphQL schema compatibility verification
 
 The [!DNL Upgrade Compatibility Tool] also provides the option to introspect two GraphQL endpoints and compare their schemas looking for breaking and dangerous changes between them:
@@ -323,25 +252,6 @@ Available `--help` options for the `graphql:compare` command:
  *   [WARNING] FIELD_CHANGED_KIND: ConfigurableProduct.gender changed type from Int to String.
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
-
-See [Developer information](../upgrade-compatibility-tool/developer.md) for more information.
-
-You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via the PhpStorm plugin. See the [[!DNL Upgrade Compatibility Tool] Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
-
-## Recommended actions
-
-### Optimize your results
-
-The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
-
-- Use the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It only provides errors against the version you are trying to upgrade to.
-- Add the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade. If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well.
-- Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool].
-
-### Follow Adobe Commerce Best Practices
-
-- Avoid having two modules with the same name. 
-- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
 
 ## Troubleshooting
 
