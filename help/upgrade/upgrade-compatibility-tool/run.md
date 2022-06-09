@@ -50,7 +50,7 @@ Available options for the `upgrade:check` command:
 
 The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option, so it only shows new or unknown critical issues, errors, and warnings.
 
-Use this option when you do not want to include known critical issues, errors and warnings in your [!DNL Upgrade Compatibility Tool] report:
+Use this option when you only want to get new issues that are introduced with the update from your current version to the targeted version in your [!DNL Upgrade Compatibility Tool] report:
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -62,7 +62,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 ### Adding the `--coming-version` option
 
-You can compare your current Adobe Commerce installation with Adobe Commerce versions `>=2.3`.
+You can compare your current Adobe Commerce installation with any Adobe Commerce version `>=2.3` by using the `--coming-version` option.
 
 You must provide the version as a parameter when running the `upgrade:check` command:
 
@@ -81,7 +81,7 @@ There are some limitations when running the `--coming-version`:
 
 ## Use the `core:code:changes` command
 
-You can compare your current Adobe Commerce installation with a clean vanilla installation to see if the core code has any modifications made to implement a new feature or customization. This command shows a list of core modifications only:
+You can compare your current Adobe Commerce installation to validate if the core code of Adobe Commerce was modified to implement a customization. This command shows a list of core modifications only:
 
 ```bash
 bin/uct core:code:changes <dir> <vanilla dir>
@@ -97,6 +97,10 @@ Available options for the `core:code:changes` command:
 | **Command** | **Available options** |
 |----------------|-----------------|
 | `core:code:changes` | `--help`: Returns all available `--help` options. |
+
+>[!NOTE]
+>
+> It is a best practice to keep custom code out of the core code. See the Adobe Commerce 2.4 [upgrade guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) for more upgrade best practices.
 
 ### Vanilla installation
 
@@ -200,13 +204,14 @@ This returns specific options that can be run for the `upgrade:check` command:
 ## Follow Adobe Commerce Best Practices
 
 - Avoid having two modules with the same name. 
-- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html). 
+- Follow Adobe Commerce [coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+- Adobe Commerce 2.4 [Upgrade guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) best practices.
 
 ## Optimize your results
 
 The [!DNL Upgrade Compatibility Tool] provides a report containing results with all issues identified on your project by default. You can optimize the results to focus on those issues that you must fix to complete the upgrade:
 
-- Use the option `--ignore-current-version-compatibility-issues`, which suppresses all known critical issues, errors and warnings against your current Adobe Commerce version. It only provides errors against the version you are trying to upgrade to.
+- Use the option `--ignore-current-version-compatibility-issues` when you only want to get new issues that are introduced with the update from your current version to the targeted version in your [!DNL Upgrade Compatibility Tool] report.
 - Adding the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
 - The [!DNL Upgrade Compatibility Tool] requires at least 2GB RAM to run. This setting is recommended to avoid issues due to a low memory limitation. The [!DNL Upgrade Compatibility Tool] displays a question if you run the `upgrade:check` command with a low `memory_limit` setting.
 - If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool]. Specify the `-m` option to run the tool against a specific module:
