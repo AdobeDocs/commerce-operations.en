@@ -6,7 +6,7 @@ description: Learn about the [!UICONTROL Information] tab in the [!DNL Site-Wide
 
 The [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] page displays overview information regarding your site. This page further displays two product areas in the left navigation, **[!UICONTROL General Information]** and **Adobe Commerce**.
 
-The [!UICONTROL General Information] area displays merchant site base data, displays Contact owner, [!DNL Jira] issues (Internal use only), and Report Tickets sections.
+The [!UICONTROL General Information] area displays merchant site base data, Contact owner, [!DNL Jira] issues (Internal use only), and Report Tickets sections.
 
 The Adobe Commerce area displays [!UICONTROL Site Details], [!UICONTROL Products], [!UICONTROL Project] & [!UICONTROL Integration links], [!UICONTROL Account], and [!UICONTROL Service and Components] sections.
 

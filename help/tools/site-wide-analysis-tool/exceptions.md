@@ -16,7 +16,7 @@ Use the [!UICONTROL Exceptions] page to see log file errors/exceptions logs for 
 
 * Learn about the exceptions that may occur and their frequency on your site.
 
-* Track the exception log issues and if needed, implement appropriate corrective actions to improve your site performance.
+* Track the exception log issues and, if needed, implement appropriate corrective actions to improve your site performance.
 
 ## Best practices
 
