@@ -33,6 +33,7 @@ This report also includes a detailed summary that shows:
 - *Total critical errors*: the number of critical errors found.
 - *Total errors*: the number of errors found.
 - *Total warnings*: the number of warnings found.
+- *Memory peak usage*: the maximum amount of memory the [!DNL Upgrade Compatibility Tool] has reached during execution.
 
 See the following command-line interface example:
 
