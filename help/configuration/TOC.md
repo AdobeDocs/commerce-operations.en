@@ -15,6 +15,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Bootstrap parameters](bootstrap/set-parameters.md)
 - Deployment {#deployment}
   - [Overview](deployment/overview.md)
+  - [Single machine deployment](deployment/single-machine.md)
   - [Technical details](deployment/technical-details.md)
   - [Prerequisites](deployment/prerequisites.md)
   - [Development system setup](deployment/development-system.md)

@@ -1,31 +1,23 @@
 ---
-group: configuration-guide
 title: Single machine deployment
-functional_areas:
-  - Configuration
-  - Deploy
-  - System
-  - Setup
+description:
 ---
-
 # Single-machine deployment
 
-This topic provides instructions for deploying updates to Magento on a production server using the command line.
-
-This process applies to technical users responsible for stores running on a single machine with some themes and locales installed.
+This topic provides instructions for deploying updates to Commerce on a production server using the command line. This process applies to technical users responsible for stores running on a single machine with some themes and locales installed.
 
 ## Assumptions
 
-*  You installed Magento using [Composer][8].
-*  You are directly applying updates to the server.
+- You installed Magento using [Composer][].
+- You are directly applying updates to the server.
 
-{:.bs-callout-warning}
-This guide does not apply if you used `git clone` to install Magento.
-Contributing developers should use [this guide][6] to update their Magento installation.
-
+>[!WARNING]
+>
+>This guide does not apply if you used `git clone` to install Magento.
+>Contributing developers should use [this guide][install] to update their Magento installation.
 ## Deployment steps
 
-1. Log in to your production server as, or switch to, the [file system owner][10].
+1. Log in to your production server as, or switch to, the [file system owner][file-owner].
 
 1. Change directory to the Magento base directory:
 
@@ -49,8 +41,8 @@ Contributing developers should use [this guide][6] to update their Magento insta
 
    For example:
 
-   *  `magento/product-community-edition`
-   *  `magento/product-enterprise-edition`
+   - `magento/product-community-edition`
+   - `magento/product-enterprise-edition`
 
    **version**: The target version of the package you want to update.
 
@@ -90,22 +82,8 @@ Contributing developers should use [this guide][6] to update their Magento insta
    bin/magento maintenance:disable
    ```
 
-## Alternative deployment strategies
+<!-- link definitions -->
 
-In Magento 2.2, a near-zero downtime deployment model will be available for a variety of complex environments, including {{site.data.var.ece}}.
-
-{:.ref-header}
-Related topics
-
-*  [Enable or disable maintenance mode][4]
-*  [Command line upgrade][1]
-*  [Update Magento][2]
-
-[0]: {{ page.baseurl }}/
-[1]: https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html
-[2]: {{ page.baseurl }}/install-gde/install/cli/dev_update-magento.html
-[4]: {{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-maint.html
-[5]: {{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#production-mode
-[6]: {{ page.baseurl }}/install-gde/install/prepare-install.html
-[8]: {{ page.baseurl }}/install-gde/composer.html
-[10]: {{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html#magento-file-system-owner
+[install]: https://devdocs.magento.com/guides/v2.4/install-gde/install/prepare-install.html
+[composer]: https://devdocs.magento.com/guides/v2.4/install-gde/composer.html
+[file-owner]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html#magento-file-system-owner
