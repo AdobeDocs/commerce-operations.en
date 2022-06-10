@@ -20,7 +20,10 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Development system setup](deployment/development-system.md)
   - [Build system setup](deployment/build-system.md)
   - [Production system setup](deployment/production-system.md)
-  - File system permissions
+  - [File systems access permissions](deployment/file-system-permissions.md)
+  - [Using a shared configuration](deployment/example-shared-configuration.md)
+  - [Using CLI commands](deployment/example-using-cli.md)
+  - [Using environment variables](deployment/example-environment-variables.md)
 - Cache {#cache}
   - [Caching overview](cache/caching-overview.md)
   - [Cache types](cache/cache-types.md)
