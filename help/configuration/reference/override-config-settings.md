@@ -13,6 +13,8 @@ You can override the value of _any_ configuration setting using environment vari
 >
 >Check out the [Configure environments](https://devdocs.magento.com/cloud/env/variables-intro.html) topic in the _Cloud_ guide for details on working with variables in {{site.data.var.ece}}.
 
+## Environment variables
+
 An environment variable name consists of its scope followed by its configuration path in a particular format. The following sections discuss how to determine a variable name in more detail.
 
 You can use variables for any of the following:
