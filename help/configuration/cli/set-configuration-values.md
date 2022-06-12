@@ -15,10 +15,10 @@ This topic discusses advanced configuration commands that you can use to:
 
 You can use these commands to set the Magento configuration manually or using scripts. You set configuration options using a _configuration path_, which is a `/`-delimited string that uniquely identifies that configuration option. You can find configuration paths in the following references:
 
-- [Sensitive and system-specific configuration paths reference](configuration/prod/config-reference-sens.html)
-- [Payment configuration paths reference](configuration/prod/config-reference-payment.html)
-- [Other configuration paths reference](configuration/prod/config-reference-most.html)
-- [Magento Enterprise B2B Extension configuration paths reference](configuration/prod/config-reference-b2b.html)
+- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
+- [Payment configuration paths reference](../reference/config-reference-payment.md)
+- [Other configuration paths reference](../reference/config-reference-most.md)
+- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 You can set values at the following times:
 
@@ -45,10 +45,10 @@ To set a configuration value, you must know at least one of the following:
 
 See the following references:
 
-- [Sensitive and system-specific configuration paths reference](configuration/prod/config-reference-sens.html)
-- [Payment configuration paths reference](configuration/prod/config-reference-payment.html)
-- [Other configuration paths reference](configuration/prod/config-reference-most.html)
-- [Magento Enterprise B2B Extension configuration paths reference](configuration/prod/config-reference-b2b.html)
+- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
+- [Payment configuration paths reference](../reference/config-reference-payment.md)
+- [Other configuration paths reference](../reference/config-reference-most.md)
+- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ### Find the scope code
 
@@ -136,7 +136,7 @@ Parameter | Description
 >
 >As of Magento 2.2.4, the `--lock-env` and `--lock-config` options replace the `--lock` option.
 >
->If you use the `--lock-env` or `--lock-config` option to set or change a value, you must use the [`bin/magento app:config:import` command](configuration/cli/config-cli-subcommands-config-mgmt-import.html) to import the setting before you access the Admin or storefront.
+>If you use the `--lock-env` or `--lock-config` option to set or change a value, you must use the [`bin/magento app:config:import` command](../cli/import-configuration.md) to import the setting before you access the Admin or storefront.
 
 If you enter an incorrect configuration path, this command returns an error
 
@@ -215,7 +215,7 @@ where
 
 >[!INFO]
 >
->The `bin/magento config:show` command displays the values of any [encrypted values]({{}}configuration/prod/config-reference-sens.html) as a series of asterisks: `******`.
+>The `bin/magento config:show` command displays the values of any [encrypted values](../reference/config-reference-sens.md) as a series of asterisks: `******`.
 
 ### Examples
 

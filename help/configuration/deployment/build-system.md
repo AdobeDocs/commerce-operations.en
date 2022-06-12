@@ -117,7 +117,7 @@ To set up the build system:
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   See the [`.gitignore` reference]({{ page.baseurl }}/config-guide/prod/config-reference-gitignore.html) for more information.
+   See the [`.gitignore` reference](../reference/config-reference-gitignore.md) for more information.
 
 1. The build system should use either [default mode](../bootstrap/application-modes.md#default-mode) or [developer mode](../bootstrap/application-modes.md#developer-mode):
 

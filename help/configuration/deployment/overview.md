@@ -71,11 +71,4 @@ We provide a way to synchronize the configuration of your systems:
 
 Most of the time, the configuration options you set in the shared, system-specific, or sensitive configuration cannot be edited in the Admin. This helps keep your settings consistent across all systems. (You can optionally use the [`magento config:set` command](../cli/set-configuration-values.md) without the `--lock` option to configure settings that are editable in the Admin.)
 
-Each Magento configuration option has a unique _configuration path_. To set a value for a configuration option, you can use either a CLI command or an environment variable to set the value for that configuration path on a specific system.
-
-For a complete list of configuration paths, see the following references:
-
-- [Sensitive and system-specific configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-sens.html)
-- [Payment configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-payment.html)
-- [Other configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-most.html)
-- [Magento Enterprise B2B Extension configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-b2b.html)
+Each Magento configuration option has a unique [configuration path]({{}}). To set a value for a configuration option, you can use either a CLI command or an environment variable to set the value for that configuration path on a specific system.

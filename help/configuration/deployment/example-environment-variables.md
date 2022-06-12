@@ -18,10 +18,10 @@ These configuration settings are either system-specific or sensitive, as indicat
 
 You can use the same procedure to configure any settings in the following references:
 
-- [Sensitive and system-specific configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-sens.html)
-- [Payment configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-payment.html)
-- [Other configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-most.html)
-- [Magento Enterprise B2B Extension configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-b2b.html)
+- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
+- [Payment configuration paths reference](../reference/config-reference-payment.md)
+- [Other configuration paths reference](../reference/config-reference-most.md)
+- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ## Before you begin
 
@@ -96,7 +96,7 @@ To set the sensitive and system-specific settings using environment variables, y
 
    If you followed the instructions in Step 1, the scope for Send Emails To is global (that is, the Default Config scope) and the scope for Default Email Domain is website.
 
-   You must know the website's code to set the Default Email Domain configuration value. See [Use environment variables to override configuration settings]({{ page.baseurl }}/config-guide/prod/config-reference-var-name.html) for more information on finding it.
+   You must know the website's code to set the Default Email Domain configuration value. See [Use environment variables to override configuration settings](../reference/config-reference-var-name.md) for more information on finding it.
 
 - Configuration path for each setting
 
@@ -107,11 +107,11 @@ To set the sensitive and system-specific settings using environment variables, y
    | Send Emails To | `contact/email/recipient_email` |
    | Default Email Domain | `customer/create_account/email_domain` |
 
-   You can find all sensitive and system-specific configuration paths in [Sensitive and system-specific configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-sens.html).
+   You can find all sensitive and system-specific configuration paths in [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md).
 
 #### Convert configuration paths to variable names
 
-As discussed in [Use environment variables to override configuration settings]({{ page.baseurl }}/config-guide/prod/config-reference-var-name.html), the format of variables is:
+As discussed in [Use environment variables to override configuration settings](../reference/config-reference-var-name.md), the format of variables is:
 
 ```text
 <SCOPE>__<SYSTEM__VARIABLE__NAME>

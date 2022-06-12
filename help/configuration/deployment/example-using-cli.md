@@ -24,10 +24,10 @@ This example uses the following configuration settings:
 
 You can use the same procedure shown in this example to configure any settings in the following references:
 
-- [Sensitive and system-specific configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-sens.html)
-- [Payment configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-payment.html)
-- [Other configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-most.html)
-- [Magento Enterprise B2B Extension configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-b2b.html)
+- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
+- [Payment configuration paths reference](../reference/config-reference-payment.md)
+- [Other configuration paths reference](../reference/config-reference-most.md)
+- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ## Before you begin
 
@@ -107,7 +107,7 @@ To set the sensitive and system-specific settings using environment variables, y
 
    You need the website code to set the **Send Emails To** configuration value.
 
-   For more information on finding this value, see: [Use environment variables to override configuration settings]({{ page.baseurl }}/config-guide/prod/config-reference-var-name.html).
+   For more information on finding this value, see: [Use environment variables to override configuration settings](../reference/config-reference-var-name.md).
 
 - Configuration paths for the settings used in this example:
 
@@ -116,7 +116,7 @@ To set the sensitive and system-specific settings using environment variables, y
    | Send Emails To       | `contact/email/recipient_email`        |
    | Default Email Domain | `customer/create_account/email_domain` |
 
-   For all sensitive and system-specific configuration paths, see: [Sensitive and system-specific configuration paths reference]({{ page.baseurl }}/config-guide/prod/config-reference-sens.html).
+   For all sensitive and system-specific configuration paths, see: [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md).
 
 ### Set the variables using CLI commands
 

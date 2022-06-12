@@ -14,9 +14,9 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Base directory paths](bootstrap/mage-directory.md)
   - [Bootstrap parameters](bootstrap/set-parameters.md)
 - Deployment {#deployment}
-  - [Overview](deployment/overview.md)
+  - [Deployment overview](deployment/overview.md)
   - [Single machine deployment](deployment/single-machine.md)
-  - [Technical details](deployment/technical-details.md)
+  - [Pipeline details](deployment/technical-details.md)
   - [Prerequisites](deployment/prerequisites.md)
   - [Development system setup](deployment/development-system.md)
   - [Build system setup](deployment/build-system.md)
@@ -69,6 +69,23 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Convert layout files](cli/convert-layout-files.md)
   - [Generate data for performance testing](cli/generate-data.md)
   - [Run support utilities (Commerce only)](cli/run-support-utilities.md)
+- Configuration files {#files}
+  - Deployment
+  - Configuration types
+  - Module directories
+  - Module output
+  - [config.php](reference/config-reference-configphp.md)
+  - [env.php](reference/config-reference-envphp.md)
+  - [gitignore](reference/config-reference-gitignore.md)
+  - [system.xml](reference/config-reference-systemxml.md)
+- Configuration paths {#paths}
+  - [General](reference/config-reference-general.md)
+  - [B2B Extension](reference/config-reference-b2b.md)
+  - [Catalog](reference/config-reference-catalog.md)
+  - [Customers](reference/config-reference-customers.md)
+  - [Payment methods](reference/config-reference-payment.md)
+  - [Sales](reference/config-reference-sales.md)
+  - [Services](reference/config-reference-services.md)
 - Cron Jobs {#crons}
   - [Cron jobs and groups](cron/custom-cron.md)
   - [Customizing crons reference](cron/custom-cron-ref.md)
@@ -87,3 +104,5 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 - Search Engine {#search}
 - Storage {#storage}
 - Split Database {#split-db}
+- [Sensitive and system-specific settings](reference/config-reference-sens.md)
+- Override configuration settings

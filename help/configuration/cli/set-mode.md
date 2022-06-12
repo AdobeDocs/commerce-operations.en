@@ -15,7 +15,7 @@ Production mode has better performance because static view files are populated i
 >
 >In version 2.0.6 and later, Magento does not explicitly set file or directory permissions when you switch between default, develop, and production modes. Unlike other modes, developer and production modes are set in the `env.php` file. Adobe Commerce on cloud infrastructure supports production and maintenance modes only.
 >
->See [Magento ownership and permissions in development and production]({{ page.baseurl }}/config-guide/prod/prod_file-sys-perms.html).
+>See [Magento ownership and permissions in development and production](../deployment/file-system-permissions.md).
 
 When you change to developer or production mode, we clear the contents of following directories:
 

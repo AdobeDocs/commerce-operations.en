@@ -26,7 +26,7 @@ As a result of the command execution, the following configuration files are upda
   This is the shared configuration file for all your Magento instances.
   Include this in your source control so it can be shared between the development, build, and production systems.
 
-  See [config.php reference]({{ page.baseurl }}/config-guide/prod/config-reference-configphp.html).
+  See [config.php reference](../reference/config-reference-configphp.md).
 
 - `app/etc/env.php`
 
@@ -35,7 +35,7 @@ As a result of the command execution, the following configuration files are upda
 
   Do _not_ include this file in source control.
 
-  See [env.php reference]({{ page.baseurl }}/config-guide/prod/config-reference-envphp.html).
+  See [env.php reference](../reference/config-reference-envphp.md).
 
 ## Sensitive or system-specific settings
 

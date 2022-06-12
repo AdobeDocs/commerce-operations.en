@@ -62,7 +62,7 @@ This section discusses how to set sensitive values on your production system usi
 
 To set sensitive values:
 
-1. Find a value to set using the [sensitive value reference]({{ page.baseurl }}/config-guide/prod/config-reference-sens.html).
+1. Find a value to set using the [sensitive value reference](../reference/config-reference-sens.md).
 1. Note the configuration path for the setting.
 1. Log in to the production system as, or switch to, the file system owner.
 1. Change to the Magento installation directory.
