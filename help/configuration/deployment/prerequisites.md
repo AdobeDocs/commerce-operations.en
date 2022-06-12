@@ -1,6 +1,6 @@
 ---
 title: Prerequisites for deployment
-description:
+description: See a list of prerequisites for deploying Commerce into a development, build, or production system.
 ---
 
 # Prerequisites for development, build, and production systems

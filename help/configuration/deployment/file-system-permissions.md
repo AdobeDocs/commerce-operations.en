@@ -1,13 +1,13 @@
 ---
 title: File systems access permissions
-description:
+description: See how to set up the owner or owners of the Commerce application file system for a development and production system.
 ---
 
 # File systems access permissions
 
-This section discusses how to set up the owner or owners of the Magento file system for a development and production system. Before you continue, review the concepts discussed in [Overview of file system ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html).
+This section discusses how to set up the owner or owners of the Magento file system for a development and production system. Before you continue, review the concepts discussed in [Overview of file system ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 
-This topic focuses on Magento development and production systems. If you are installing Magento, see [Set pre-installation ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-system-perms.html).
+This topic focuses on Magento development and production systems. If you are installing Magento, see [Set pre-installation ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
 
 The sections that follow discuss requirements for one or two file system owners. That means:
 

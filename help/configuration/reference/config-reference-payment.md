@@ -1,9 +1,6 @@
 ---
 title: Payment configuration paths reference
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+description: See a list of configurable payment method values.
 ---
 
 # Payment configuration paths reference

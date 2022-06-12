@@ -1,6 +1,6 @@
 ---
 title: Custom logging
-description:
+description: Learn how to investigate errors using custom logging.
 ---
 
 # Custom logging overview

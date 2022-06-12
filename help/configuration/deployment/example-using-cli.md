@@ -1,6 +1,6 @@
 ---
 title: Example using CLI commands
-description:
+description: See an example of how to set shared, system-specific, and sensitive values in your development system using the command line.
 ---
 
 # Example using CLI commands

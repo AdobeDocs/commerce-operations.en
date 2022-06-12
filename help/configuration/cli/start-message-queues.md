@@ -1,6 +1,6 @@
 ---
 title: Start message queue consumers
-description:
+description: Learn how to start a message queue consumer.
 ---
 
 # Start message queue consumers

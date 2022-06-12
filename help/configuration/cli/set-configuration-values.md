@@ -1,6 +1,6 @@
 ---
 title: Set configuration values
-description:
+description: Lesarn how to set configuration values.
 ---
 
 # Set configuration values
@@ -17,7 +17,7 @@ You can use these commands to set the Magento configuration manually or using sc
 
 - [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
-- [Other configuration paths reference](../reference/config-reference-most.md)
+- [General configuration paths reference](../reference/config-reference-general.md)
 - [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 You can set values at the following times:

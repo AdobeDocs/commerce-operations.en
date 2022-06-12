@@ -1,6 +1,6 @@
 ---
 title: Manage the indexers
-description:
+description: See examples of how to view and manage Commerce indexers.
 ---
 
 # Manage the indexers

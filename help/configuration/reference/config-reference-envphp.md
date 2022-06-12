@@ -1,6 +1,6 @@
 ---
 title: env.php reference
-description:
+description: See a list of values for the env.php file.
 ---
 
 # env.php reference

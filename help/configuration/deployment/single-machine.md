@@ -1,6 +1,6 @@
 ---
 title: Single machine deployment
-description:
+description: Learn how to deploy updates to Commerce on a production server using the command line.
 ---
 # Single-machine deployment
 
@@ -15,6 +15,7 @@ This topic provides instructions for deploying updates to Commerce on a producti
 >
 >This guide does not apply if you used `git clone` to install Magento.
 >Contributing developers should use [this guide][install] to update their Magento installation.
+
 ## Deployment steps
 
 1. Log in to your production server as, or switch to, the [file system owner][file-owner].

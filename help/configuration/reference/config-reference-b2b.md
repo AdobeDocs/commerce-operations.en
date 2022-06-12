@@ -1,6 +1,6 @@
 ---
 title: B2B Extension configuration paths reference
-description:
+description: See a list of B2B-related configuration values.
 b2b_only: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Sensitive and system-specific paths
-description:
+description: See a list of system-specific and sensitive configuration values.
 ---
 
 # Sensitive and system-specific settings

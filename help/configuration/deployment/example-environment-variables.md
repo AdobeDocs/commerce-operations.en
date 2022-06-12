@@ -1,6 +1,6 @@
 ---
 title: Example using environment variables
-description:
+description: See an example of how to set shared, system-specific, and sensitive values in your development system using environment variables.
 ---
 
 # Example using environment variables
@@ -20,7 +20,7 @@ You can use the same procedure to configure any settings in the following refere
 
 - [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
-- [Other configuration paths reference](../reference/config-reference-most.md)
+- [General configuration paths reference](../reference/config-reference-general.md)
 - [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ## Before you begin

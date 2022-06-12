@@ -1,6 +1,6 @@
 ---
 title: Deployment strategies for static view files
-description:
+description: Read about deployment strategies for the Commerce application.
 ---
 
 # Deployment strategies for static view files
@@ -43,76 +43,14 @@ For the most optimized result, three scopes for possible similarity are allocate
 
 The files are deployed to these subdirectories according to the following patterns.
 
-<table>
-  <tbody>
-    <tr>
-      <th>
-        Pattern
-      </th>
-      <th>
-        Description
-      </th>
-    </tr>
-    <tr>
-      <td>
-        <code>&lt;area>/&lt;theme>/&lt;locale></code>
-      </td>
-      <td>
-        <p>
-          Files specific for a particular area, theme, and locale
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>&lt;area>/&lt;theme>/default</code>
-      </td>
-      <td>
-        Files similar for all locales of a particular theme of a
-        particular area.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>&lt;area>/Magento/base/&lt;locale></code>
-      </td>
-      <td>
-        Files specific for a particular area and locale, but
-        similar for all themes.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>&lt;area>/Magento/base/default</code>
-      </td>
-      <td>
-        <p>
-          Files specific for a particular area, but similar for all
-          themes and locales.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>base/Magento/base/&lt;locale></code>
-      </td>
-      <td>
-        <p>
-          Files similar for all areas and themes, but specific to
-          a particular locale.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>base/Magento/base/default</code>
-      </td>
-      <td>
-        Similar for all areas, themes, and locales.
-      </td>
-    </tr>
-  </tbody>
-</table>
+Pattern | Description
+------- | -----------
+`<area>/<theme>/<locale>`      | Files specific for a particular area, theme, and locale
+`<area>/<theme>/default`       | Files similar for all locales of a particular theme of a particular area.
+`<area>/Magento/base/<locale>` | Files specific for a particular area and locale, but similar for all themes.
+`<area>/Magento/base/default`  | Files specific for a particular area, but similar for all themes and locales.
+`base/Magento/base/<locale>`   | Files similar for all areas and themes, but specific to a particular locale.
+`base/Magento/base/default`    | Similar for all areas, themes, and locales.
 
 ### Mapping deployed files
 

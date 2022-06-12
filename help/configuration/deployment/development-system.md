@@ -1,6 +1,6 @@
 ---
 title: Development system setup
-description:
+description: Learn how to set up a developments system for the Commerce application.
 ---
 
 # Development system setup
@@ -20,4 +20,4 @@ You can have any number of development systems, provided the following is true o
 
 - Make sure `app/etc/config.php` is _included_ in source control
 
-If you use Git, the `.gitignore` file provides most of the preceding. See the [`.gitignore` reference](../reference/config-reference-gitignore.md) for more information.
+If you use Git, the `.gitignore` file provides most of the preceding. See the [`.gitignore` reference](../reference/config-reference-gitignore.md).

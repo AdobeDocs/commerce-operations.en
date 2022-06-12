@@ -1,6 +1,6 @@
 ---
 title: Build System Setup
-description:
+description: Learn how to deploy Commerce into a build system.
 ---
 
 # Build system setup

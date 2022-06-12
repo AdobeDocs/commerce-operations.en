@@ -1,6 +1,6 @@
 ---
 title: Dependency reports
-description:
+description: Create reports that show the totals for module, circular, and framework dependencies.
 ---
 
 # Dependency reports

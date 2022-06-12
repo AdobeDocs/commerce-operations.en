@@ -1,6 +1,6 @@
 ---
 title: config.php reference
-description:
+description: See a list of values in the config.php file.
 ---
 
 # config.php reference

@@ -1,6 +1,6 @@
 ---
 title: Production system setup
-description:
+description: Learn how to set up a production system for the Commerce application.
 ---
 
 # Production system setup

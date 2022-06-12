@@ -1,6 +1,6 @@
 ---
 title: URN highlighter
-description:
+description: Learn how to set up URN highlighting in your IDE.
 ---
 
 # Overview of URN highlighter

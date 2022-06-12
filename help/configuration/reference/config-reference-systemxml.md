@@ -1,6 +1,6 @@
 ---
 title: system.xml reference
-description:
+description: Learn how the system XML file manages the Commerce application configuration.
 contributor_name: David Lambauer
 contributor_link: https://github.com/DavidLambauer
 ---
