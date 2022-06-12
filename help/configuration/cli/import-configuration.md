@@ -7,7 +7,7 @@ description: Import Adobe Commerce configuration settings from configuration fil
 
 {{file-system-owner}}
 
-When you set up a production system using the Magento 2.2 [pipeline deployment model]({{ page.baseurl }}/config-guide/deployment/pipeline/), you must _import_ configuration settings from `config.php` and `env.php` into the database.
+When you set up a production system using the Magento 2.2 [pipeline deployment model](../deployment/technical-details.md), you must _import_ configuration settings from `config.php` and `env.php` into the database.
 These settings include configuration paths and values, websites, stores, store views, and themes.
 
 After importing websites, stores, store views, and themes, you can create product attributes and apply them to websites, stores, and store views, on the production system.

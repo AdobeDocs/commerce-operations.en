@@ -86,6 +86,8 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Payment methods](reference/config-reference-payment.md)
   - [Sales](reference/config-reference-sales.md)
   - [Services](reference/config-reference-services.md)
+  - [Sensitive and system-specific settings](reference/config-reference-sens.md)
+  - [Override configuration settings](reference/override-config-settings.md)
 - Cron Jobs {#crons}
   - [Cron jobs and groups](cron/custom-cron.md)
   - [Customizing crons reference](cron/custom-cron-ref.md)
@@ -104,5 +106,3 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 - Search Engine {#search}
 - Storage {#storage}
 - Split Database {#split-db}
-- [Sensitive and system-specific settings](reference/config-reference-sens.md)
-- Override configuration settings

@@ -1,36 +1,35 @@
 ---
-group: configuration-guide
-title: Use environment variables to override configuration settings
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Override configuration settings
+description: Learn how to use environment variables to override configuration settings.
 ---
+
+# Override configuration settings
 
 This topic discusses how to derive an environment variable name knowing a configuration path. You can override Adobe Commerce configuration settings using environment variables. For example, you can override the value of a payment processor's live URL on your production system.
 
-You can override the value of _any_ configuration setting using environment variables; however, Adobe recommends you maintain consistent settings using the shared configuration file, `config.php`, and the system-specific configuration file, `env.php`, as discussed in [Deployment general overview]({{ page.baseurl }}/config-guide/deployment/pipeline/).
+You can override the value of _any_ configuration setting using environment variables; however, Adobe recommends you maintain consistent settings using the shared configuration file, `config.php`, and the system-specific configuration file, `env.php`, as discussed in [Deployment general overview](../deployment/overview.md).
 
-{:.bs-callout-tip}
-Check out the [Configure environments]({{ site.baseurl }}/cloud/env/variables-intro.html) topic in the _Cloud_ guide for details on working with variables in {{site.data.var.ece}}.
+>[!TIP]
+>
+>Check out the [Configure environments](https://devdocs.magento.com/cloud/env/variables-intro.html) topic in the _Cloud_ guide for details on working with variables in {{site.data.var.ece}}.
 
 An environment variable name consists of its scope followed by its configuration path in a particular format. The following sections discuss how to determine a variable name in more detail.
 
 You can use variables for any of the following:
 
-*  [Sensitive values](../reference/config-reference-sens.html) must be set using either environment variables or the [`magento config:sensitive:set`]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-config-mgmt-set.html) command.
-*  System-specific values must be set using:
+- [Sensitive values](../reference/config-reference-sens.html) must be set using either environment variables or the [`magento config:sensitive:set`](../cli/set-configuration-values.md) command.
+- System-specific values must be set using:
 
-   *  Environment variables
-   *  The [`magento config:set`]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-config-mgmt-set.html) command
-   *  The Admin followed by the [`magento app:config:dump` command]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-config-mgmt-export.html)
+  - Environment variables
+  - The [`magento config:set`](../cli/set-configuration-values.md) command
+  - The Admin followed by the [`magento app:config:dump` command](../cli/export-configuration.md)
 
 Configuration paths can be found in:
 
-*  [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.html)
-*  [Payment configuration paths reference](../reference/config-reference-payment.html)
-*  [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.html)
-*  [Other configuration paths reference](../reference/config-reference-most.html)
+- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.html)
+- [Payment configuration paths reference](../reference/config-reference-payment.html)
+- [Commerce B2B Extension configuration paths reference](../reference/config-reference-b2b.html)
+- [Other configuration paths reference](../reference/config-reference-most.html)
 
 ### Variable names
 
@@ -40,13 +39,13 @@ The general format of system settings variable names follows:
 
 `<SCOPE>` can be either:
 
-*  Global scope (that is, the global setting for _all_ scopes)
+- Global scope (that is, the global setting for _all_ scopes)
 
    Global scope variables have the following format:
 
   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
-*  A specific scope (that is, the setting affects only a specified store view or website)
+- A specific scope (that is, the setting affects only a specified store view or website)
 
    Store view scope variables, for example, have the following format:
 
@@ -54,9 +53,9 @@ The general format of system settings variable names follows:
 
    For more information about scopes, see:
 
-   *  [Step 1: Find the website or store view scope value](#deploy-system-vars-scopes)
-   *  [Magento User Guide topic on scope]({{ site.user_guide_url }}/configuration/scope.html)
-   *  [Scope quick reference]({{ site.user_guide_url }}/stores/store-scope-reference.html)
+  - [Step 1: Find the website or store view scope value](#deploy-system-vars-scopes)
+  - [Magento User Guide topic on scope](https://docs.magento.com/user-guide/configuration/scope.html)
+  - [Scope quick reference](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
 
 `<SYSTEM__VARIABLE__NAME>` is the configuration path with double underscore characters substituted for `/`. For more information, see [Step 2: Set system variables](#cloud-system-vars-sys).
 
@@ -70,10 +69,10 @@ If a configuration path contains an underscore character, the underscore charact
 
 A complete list of configuration paths can be found in:
 
-*  [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.html)
-*  [Payment configuration paths reference](../reference/config-reference-payment.html)
-*  [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.html)
-*  [Other configuration paths reference](../reference/config-reference-most.html)
+- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.html)
+- [Payment configuration paths reference](../reference/config-reference-payment.html)
+- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.html)
+- [Other configuration paths reference](../reference/config-reference-most.html)
 
 ## Step 1: Find the website or store view scope value {#deploy-system-vars-scopes}
 
@@ -81,25 +80,25 @@ This section discusses how you can find and set system configuration values per 
 
 Scope values come from the `store`, `store_group`, and `store_website` tables.
 
-*  The `store` table specifies store view names and codes
-*  The `store_website` table specifies website names and codes
+- The `store` table specifies store view names and codes
+- The `store_website` table specifies website names and codes
 
 You can also find the code values using the Admin.
 
 How to read the table:
 
-*  `Path in Admin` column
+- `Path in Admin` column
 
    Values before the comma are paths in the Admin navigation. Values after the comma are options in the right pane.
 
-*  `Variable name` column is the name of the corresponding environment variable.
+- `Variable name` column is the name of the corresponding environment variable.
 
    You have the option of specifying system values for these configuration parameters as environment variables if you wish.
 
-   *  The entire variable name is always ALL CAPS
-   *  Start a variable name with `CONFIG__` (note two underscore characters)
-   *  You can find the `<STORE_VIEW_CODE>` or `<WEBSITE_CODE>` portion of a variable name in either the Admin or the Magento database, as indicated in the following sections.
-   *  You can find `<SYSTEM__VARIABLE__NAME>` as discussed in [Step 2:  Set global, website, or store view variables](#cloud-system-vars-sys).
+  - The entire variable name is always ALL CAPS
+  - Start a variable name with `CONFIG__` (note two underscore characters)
+  - You can find the `<STORE_VIEW_CODE>` or `<WEBSITE_CODE>` portion of a variable name in either the Admin or the Magento database, as indicated in the following sections.
+  - You can find `<SYSTEM__VARIABLE__NAME>` as discussed in [Step 2:  Set global, website, or store view variables](#cloud-system-vars-sys).
 
 ### Find a website or store view scope in the Admin
 
@@ -108,7 +107,7 @@ The following table summarizes how to find website or store view value in the Ad
 | Description  | Path in Admin | Variable name |
 |--------------|--------------|----------------------|
 | Create, edit, delete store views | **Stores** > **All Stores** | `CONFIG__STORES__<STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`  |
-| Create, edit, delete websites | **Stores** > **All Stores**  | `CONFIG__WEBSITES__<WEBSITE_CODE>__<SYSTEM__VARIABLE__NAME>` |
+| Create, edit, delete websites | **Stores** > **All Stores** | `CONFIG__WEBSITES__<WEBSITE_CODE>__<SYSTEM__VARIABLE__NAME>` |
 
 For example, to find a website or store view scope value in the Admin:
 
@@ -174,14 +173,14 @@ To get these values from the database:
 
 This section discusses how to set system variables.
 
-*  To set values for the global scope (that is, all websites, stores, and store views), start the variable name with `CONFIG__DEFAULT__`.
+- To set values for the global scope (that is, all websites, stores, and store views), start the variable name with `CONFIG__DEFAULT__`.
 
-*  To set a value for a particular store view or website, start the variable name as discussed in [Step 1: Find the scope value](#deploy-system-vars-scopes):
+- To set a value for a particular store view or website, start the variable name as discussed in [Step 1: Find the scope value](#deploy-system-vars-scopes):
 
-   *  `CONFIG__WEBSITES`
-   *  `CONFIG__STORES`
+  - `CONFIG__WEBSITES`
+  - `CONFIG__STORES`
 
-*  The last part of the variable name is the configuration path, which is unique for each configuration setting.
+- The last part of the variable name is the configuration path, which is unique for each configuration setting.
 
 [See some examples](#cloud-system-vars-ex)
 
@@ -189,10 +188,10 @@ The following table shows a few sample variables.
 
 | Description  | Path in Admin (omitting **Stores** > **Settings** > **Configuration**) | Variable name |
 |--------------|--------------|----------------------|
-| Elasticsearch server hostname  | Catalog > **Catalog**, **Elasticsearch Server Hostname**   |  `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
+| Elasticsearch server hostname  | Catalog > **Catalog**, **Elasticsearch Server Hostname** |  `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
 | Elasticsearch server port |  Catalog > **Catalog**, **Elasticsearch Server Port** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT`  |
 | Shipping country origin  | Sales > **Shipping Settings** |  `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
-| Custom Admin URL | Advanced > **Admin**  | `<SCOPE>__ADMIN__URL__CUSTOM`  |
+| Custom Admin URL | Advanced > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM`  |
 | Custom Admin Path  | Advanced > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
 
 ## Examples {#cloud-system-vars-ex}
@@ -209,7 +208,7 @@ To find the variable name for global HTML minification:
 
 1. The rest of the variable name is `CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`.
 
-**Result**: The variable name is `CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
+   **Result**: The variable name is `CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
 
 ### Shipping country origin
 
@@ -223,18 +222,15 @@ To find the variable name for the shipping country origin:
 
 1. The rest of the variable name is `SHIPPING__ORIGIN__COUNTRY_ID`.
 
-**Result**: The variable name is `CONFIG__WEBSITES__DEFAULT__SHIPPING__ORIGIN__COUNTRY_ID`
+   **Result**: The variable name is `CONFIG__WEBSITES__DEFAULT__SHIPPING__ORIGIN__COUNTRY_ID`
 
 ## How to use environment variables
 
-Set configuration values as variables using PHP's [`$_ENV`](http://php.net/manual/en/reserved.variables.environment.php) associate array. You can set the values in any PHP script that runs when Commerce runs.
+Set configuration values as variables using PHP's [`$_ENV`](https://php.net/manual/en/reserved.variables.environment.php) associate array. You can set the values in any PHP script that runs when Commerce runs.
 
-{%
-include note.html
-type='tip'
-content='
-Be aware that setting variable values in `index.php` or `pub/index.php` does not always function as expected since different application entry points can be used depending on the web server configuration. By placing `$_ENV` directives in the `app/bootstrap.php` file,regardless of different application entry points, the `$_ENV` directives always execute since the `app/bootstrap.php` file loads as part of the Commerce architecture.
-'%}
+>[!TIP]
+>
+>Setting variable values in `index.php` or `pub/index.php` does not always function as expected since different application entry points can be used depending on the web server configuration. By placing `$_ENV` directives in the `app/bootstrap.php` file, regardless of different application entry points, the `$_ENV` directives always execute since the `app/bootstrap.php` file loads as part of the Commerce architecture.
 
 An example of setting two `$_ENV` values follows:
 
@@ -243,23 +239,12 @@ $_ENV['CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME'] = 'http
 $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '1234';
 ```
 
-A step-by-step example is shown in [Set configuration values using environment variables]({{ page.baseurl }}/config-guide/deployment/pipeline/example/environment-variables.html).
+A step-by-step example is shown in [Set configuration values using environment variables](../deployment/example-environment-variables.md).
 
-{%
-include note.html
-type='warning'
-content='
-
-*  To use values that you set in the `$_ENV` array, you must set `variables_order = "EGPCS"`(Environment, Get, Post, Cookie, and Server) in your `php.ini` file. For details, see [PHP documentation](http://us.php.net/manual/en/ini.core.php#ini.variables-order).
-
-*  For Adobe Commerce on cloud infrastructure, if you are attempting to override configuration settings using the [Project Web Interface](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), you must prepend the variable name with `env:`. For example:
-
-![Environment variable example](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
-
-'%}
-
-{:.ref-header}
-Related topics
-
-*  [Magento User Guide topic on scope]({{ site.user_guide_url }}/configuration/scope.html)
-*  [Magento User Guide scope quick reference]({{ site.user_guide_url }}/stores/store-scope-reference.html)
+>[!WARNING]
+>
+>- To use values that you set in the `$_ENV` array, you must set `variables_order = "EGPCS"`(Environment, Get, Post, Cookie, and Server) in your `php.ini` file. For details, see [PHP documentation](https://www.php.net/manual/en/ini.core.php).
+>
+>- For Adobe Commerce on cloud infrastructure, if you are attempting to override configuration settings using the [Project Web Interface](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), you must prepend the variable name with `env:`. For example:
+>
+>![Environment variable example](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
