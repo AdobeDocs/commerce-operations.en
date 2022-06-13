@@ -6,7 +6,6 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 # Configuration Guide {#configuration-guide}
 
 - [Overview](overview.md)
-- Security {#security}
 - General setup {#setup}
   - [Application initialization and bootstrap](bootstrap/overview.md)
   - [Application modes](bootstrap/application-modes.md)
@@ -104,5 +103,12 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [AWS S3 bucket](remote-storage/remote-storage-aws-s3.md)
   - [Image resizing](remote-storage/remote-storage-image-resize.md)
 - Search Engine {#search}
+- Security {#security}
+  - [Overview](security/overview.md)
+  - [Password hashing](security/hashing.md)
+  - [Cache poisoning](security/cache-poisoning.md)
+  - [Secure cron PHP](security/secure-cron-php.md)
+  - [Security TXT](security/security-txt.md)
+  - [X-Frame-Options header](security/xframe-options.md)
 - Storage {#storage}
 - Split Database {#split-db}

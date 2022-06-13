@@ -28,7 +28,7 @@ Several Commerce features require at least one cron job, which schedules activit
 
 UNIX systems schedule tasks to be performed by particular users using a _crontab_, which is a file that contains instructions to the cron daemon that tell the daemon in effect to "run this command at this time on this date". Each user has its own crontab, and commands in any given crontab are executed as the user who owns it.
 
-To run cron in a web browser, see [Secure cron.php to run in a browser]({{ page.baseurl }}/config-guide/secy/secy-cron.html)
+To run cron in a web browser, see [Secure cron.php to run in a browser](../security/secure-cron-php.md).
 
 ## Create or remove the Magento crontab
 
