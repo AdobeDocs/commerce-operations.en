@@ -70,10 +70,10 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Generate data for performance testing](cli/generate-data.md)
   - [Run support utilities (Commerce only)](cli/run-support-utilities.md)
 - Configuration files {#files}
-  - Deployment
-  - Configuration types
-  - Module directories
-  - Module output
+  - [Deployment](reference/deployment-files.md)
+  - [Configuration types](reference/config-create-types.md)
+  - [Module files](reference/module-files.md)
+  - [Module output](reference/disable-module-output.md)
   - [config.php](reference/config-reference-configphp.md)
   - [env.php](reference/config-reference-envphp.md)
   - [gitignore](reference/config-reference-gitignore.md)

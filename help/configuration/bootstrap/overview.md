@@ -1,6 +1,6 @@
 ---
 title: Application initialization and bootstrap
-description: Read about initializatoin and boostrapping logic for the Commerce application.
+description: Read about initialization and bootstrapping logic for the Commerce application.
 ---
 
 # Overview of initialization and bootstrapping
@@ -107,8 +107,8 @@ When the request is redirected to the entry point, the Magento application parse
 [app-face]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/AppInterface.php
 [bootinitial]: https://github.com/magento/magento2/blob/2.4/app/bootstrap.php
 [bootstrap]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Bootstrap.php
-[http]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Http
+[http]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Http
 [index]: https://github.com/magento/magento2/blob/2.4/pub/index.php
 [media]: https://github.com/magento/magento2/blob/2.4/app/code/Magento/MediaStorage/App/Media.php
-[object]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/ObjectManager
+[object]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/ObjectManager
 [static-resource]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/StaticResource.php
