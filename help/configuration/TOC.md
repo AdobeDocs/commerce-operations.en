@@ -15,15 +15,16 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 - Deployment {#deployment}
   - [Deployment overview](deployment/overview.md)
   - [Single machine deployment](deployment/single-machine.md)
-  - [Pipeline details](deployment/technical-details.md)
+  - [Pipeline deployment](deployment/technical-details.md)
   - [Prerequisites](deployment/prerequisites.md)
   - [Development system setup](deployment/development-system.md)
   - [Build system setup](deployment/build-system.md)
   - [Production system setup](deployment/production-system.md)
   - [File systems access permissions](deployment/file-system-permissions.md)
-  - [Using a shared configuration](deployment/example-shared-configuration.md)
-  - [Using CLI commands](deployment/example-using-cli.md)
-  - [Using environment variables](deployment/example-environment-variables.md)
+  - Examples {#example}
+    - [Using a shared configuration](deployment/example-shared-configuration.md)
+    - [Using CLI commands](deployment/example-using-cli.md)
+    - [Using environment variables](deployment/example-environment-variables.md)
 - Cache {#cache}
   - [Caching overview](cache/caching-overview.md)
   - [Cache types](cache/cache-types.md)
@@ -97,18 +98,40 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Log database activity](logs/database-activity.md)
   - [Write to a custom log file](logs/custom-log-files.md)
 - Message Queues {#message-queues}
+  - Message queue framework
+  - Manage message queues
+  - Set up Amazon MQ
 - Multiple sites {#multi-sites}
-- Remote storage {#remote-storage}
-  - [Remote storage module](remote-storage/remote-storage.md)
-  - [AWS S3 bucket](remote-storage/remote-storage-aws-s3.md)
-  - [Image resizing](remote-storage/remote-storage-image-resize.md)
+  - Multiple sites and views
+  - Set up in Admin
+  - Set up with Nginx
+  - Set up with Apache
 - Search Engine {#search}
+  - Configure search engine
+  - Filter with stopwords
 - Security {#security}
-  - [Overview](security/overview.md)
+  - [Security overview](security/overview.md)
   - [Password hashing](security/hashing.md)
   - [Cache poisoning](security/cache-poisoning.md)
   - [Secure cron PHP](security/secure-cron-php.md)
   - [Security TXT](security/security-txt.md)
   - [X-Frame-Options header](security/xframe-options.md)
 - Storage {#storage}
-- Split Database {#split-db}
+  - Database profiler
+  - Database entity Increment ID
+  - Remote storage {#remote-storage}
+    - [Remote storage module](remote-storage/remote-storage.md)
+    - [AWS S3 bucket](remote-storage/remote-storage-aws-s3.md)
+    - [Image resizing](remote-storage/remote-storage-image-resize.md)
+  - Session storage {#session-storage}
+    - Session storage overview
+    - memcached
+    - memcached on CentOS
+    - memcached on Ubuntu
+  - Split Database {#split-db}
+    - Split database overview
+    - Automatic configuration
+    - Manual configuration
+    - Verify split database
+    - Database replication
+    - Revert to single database
