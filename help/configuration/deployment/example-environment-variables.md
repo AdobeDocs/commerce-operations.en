@@ -73,7 +73,7 @@ Now that you have changed the configuration in the Admin, write the shared confi
 
 {{$include /help/_includes/config-save-config.md}}
 
-Note that even though `app/etc/env.php` (the system-specific configuration) was updated, do not check it in to source control. You'll create the same configuration settings on your production system later in this procedure.
+Note that even though `app/etc/env.php` (the system-specific configuration) was updated, do not check it in to source control. You will create the same configuration settings on your production system later in this procedure.
 
 ## Step 3: Update your build system and generate files
 

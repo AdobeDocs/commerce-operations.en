@@ -10,7 +10,7 @@ This topic lists configuration paths for Magento Enterprise B2B Extension. The [
 
 >[!INFO]
 >
->This reference lists _only_ configuration paths unique to Magento Enterprise B2B Extension. Magento Enterprise B2B Extension includes all configuration paths for {{site.data.var.ce}} and {{site.data.var.ee}} as well.
+>This reference lists _only_ configuration paths unique to Magento Enterprise B2B Extension. Magento Enterprise B2B Extension includes all configuration paths for Magento Open Source and Adobe Commerce as well.
 
 For those configuration paths, see:
 

@@ -38,7 +38,7 @@ Run the Commerce application in developer mode when you are extending or customi
 
 In developer mode:
 
--  Static view files are not cached; they are written to the Magento `pub/static` directory every time they're called
+-  Static view files are not cached; they are written to the Magento `pub/static` directory every time they are called
 -  Uncaught exceptions display in the browser
 -  System logging in `var/report` is verbose
 -  An [exception](https://glossary.magento.com/exception) is thrown in the error handler, rather than being logged

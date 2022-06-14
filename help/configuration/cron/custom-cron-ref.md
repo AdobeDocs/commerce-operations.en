@@ -45,7 +45,7 @@ Where:
 
 |Value|Description|
 |---|---|
-|`group_name`|Name of the cron group. The group name doesn't have to be unique. You can run cron for one group at a time.|
+|`group_name`|Name of the cron group. The group name does not have to be unique. You can run cron for one group at a time.|
 |`job_name`|Unique ID for this cron job.|
 |`classpath`|Class to be instantiated (classpath).|
 |`method`|Method in `classpath` to call.|

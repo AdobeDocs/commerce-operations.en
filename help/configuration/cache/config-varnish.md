@@ -122,7 +122,7 @@ If the same browser requests the same page again, these assets are delivered fro
 
 ![The next time the same object is requested, assets load from the local browser cache](../../assets/configuration/varnish-apache-second-visit.png)
 
-Note the difference in response time between the first and second request. Again, static assets have a 200 (OK) response code because they're delivered from local cache for the first time.
+Note the difference in response time between the first and second request. Again, static assets have a 200 (OK) response code because they are delivered from local cache for the first time.
 
 ## How Magento uses Etag
 

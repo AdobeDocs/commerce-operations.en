@@ -11,7 +11,7 @@ If you deploy Commerce on a single machine and can tolerate some downtime during
 
 ## Pipeline deployment
 
-With Commerce version 2.2, Adobe introduced _pipeline deployment_ as a new way to deploy to production with minimal downtime. This deployment process occurs on different systems and provides a way to maintain consistent configurations for all pipeline deployment systems. It's a simple but powerful model that enables you to separate ordinary configuration settings from either system-specific settings (like host and port) or sensitive settings (such as names and passwords).
+With Commerce version 2.2, Adobe introduced _pipeline deployment_ as a new way to deploy to production with minimal downtime. This deployment process occurs on different systems and provides a way to maintain consistent configurations for all pipeline deployment systems. It is a simple but powerful model that enables you to separate ordinary configuration settings from either system-specific settings (like host and port) or sensitive settings (such as names and passwords).
 
 To use pipeline deployment, Adobe assumes that you are:
 
@@ -35,7 +35,7 @@ We use the following terms to describe the systems involved with deployment.
 
   Your build system does not have to have Magento installed on it. It needs only the Magento code but no database connection is required. Also, your build system does not need to be a physically separate server.
 
-- **Staging system**—_Optional_. You can optionally set up a staging system to use for final testing of all integrated code, including User Acceptance Testing (UAT). Set up a staging system the same way you set up a production system. Except for the fact that staging is not your live store and doesn't process orders from customers, it's identical to production.
+- **Staging system**—_Optional_. You can optionally set up a staging system to use for final testing of all integrated code, including User Acceptance Testing (UAT). Set up a staging system the same way you set up a production system. Except for the fact that staging is not your live store and does not process orders from customers, it is identical to production.
 
 - **Production system**—Your live store. You should make minimal direct configuration changes here, and certainly nothing that has not been tested on a Staging instance. If possible, make configuration changes with [Data Patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) that have been tested on a Staging/Development instance.
 
@@ -44,7 +44,7 @@ We use the following terms to describe the systems involved with deployment.
 Optionally, you can use other deployment methods, including:
 
 - Secure copying with SCP or rsync
-- [Capistrano](http://capistranorb.com/documentation/overview/what-is-capistrano)
+- [Capistrano](https://capistranorb.com/documentation/overview/what-is-capistrano)
 - The [Deployer tool](https://deployer.org/)
 
 ## Manage the configuration
@@ -55,13 +55,13 @@ We provide a way to synchronize the configuration of your systems:
 
 - **Shared configuration**—Settings that are neither system-specific nor sensitive.
 
-   Shared settings are settings that you want to be consistent on development and production systems. Set the shared configuration in the Admin in your development (or {{site.data.var.ece}} _integration_) system.
+   Shared settings are settings that you want to be consistent on development and production systems. Set the shared configuration in the Admin in your development (or Adobe Commerce on cloud infrastructure _integration_) system.
 
    The shared configuration file, `app/etc/config.php`, should be included in source control so it can be shared between development, build, and production systems.
 
 - **System-specific configuration**—Settings that vary by system, such as search engine hostnames and ports.
 
-- **Sensitive configuration**—Settings that should _not_ be in source control because they expose personally-identifiable information (PII) or settings such as API keys or passwords.
+- **Sensitive configuration**—Settings that should _not_ be in source control because they expose personally identifiable information (PII) or settings such as API keys or passwords.
 
    The system-specific configuration file, `app/etc/env.php`, should _not_ be included in source control or otherwise shared between systems. Instead, use the [`magento config:set` and `magento:sensitive:set` commands](../cli/set-configuration-values.md) to provide values for those settings in your production system.
 
@@ -71,4 +71,4 @@ We provide a way to synchronize the configuration of your systems:
 
 Most of the time, the configuration options you set in the shared, system-specific, or sensitive configuration cannot be edited in the Admin. This helps keep your settings consistent across all systems. (You can optionally use the [`magento config:set` command](../cli/set-configuration-values.md) without the `--lock` option to configure settings that are editable in the Admin.)
 
-Each Magento configuration option has a unique [configuration path]({{}}). To set a value for a configuration option, you can use either a CLI command or an environment variable to set the value for that configuration path on a specific system.
+Each Magento configuration option has a unique _configuration path_. To set a value for a configuration option, you can use either a CLI command or an environment variable to set the value for that configuration path on a specific system.

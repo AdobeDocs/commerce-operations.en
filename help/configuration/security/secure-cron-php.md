@@ -5,7 +5,7 @@ description: Secure the cron.php to run in a browser.
 
 # Secure cron PHP
 
-This topic discusses securing `pub/cron.php` to prevent it from being used in a malicious exploit. If you don't secure cron, any user could potentially run cron to attack your Magento application.
+This topic discusses securing `pub/cron.php` to prevent it from being used in a malicious exploit. If you do not secure cron, any user could potentially run cron to attack your Magento application.
 
 The Magento cron job runs several scheduled tasks and is a vital part of your Magento configuration. Scheduled tasks include, but are not limited to:
 
@@ -36,7 +36,7 @@ This section discusses how to secure cron using HTTP Basic authentication with A
 
 ### Create a password file
 
-For security reasons, you can locate the password file anywhere except your web server docroot. In this example, we're storing the password file in a new directory.
+For security reasons, you can locate the password file anywhere except your web server docroot. In this example, we are storing the password file in a new directory.
 
 Enter the following commands as a user with `root` privileges:
 
@@ -164,11 +164,11 @@ Magento provides an optimized sample nginx configuration file out of the box. We
 
 ## Verify cron is secure
 
-The easiest way to verify that `pub/cron.php` is secure is to verify that it's creating rows in the `cron_schedule` Magento database table after you set up password authentication. This example uses SQL commands to check the database, but you can use whatever tool you like.
+The easiest way to verify that `pub/cron.php` is secure is to verify that it is creating rows in the `cron_schedule` Magento database table after you set up password authentication. This example uses SQL commands to check the database, but you can use whatever tool you like.
 
 >[!INFO]
 >
->The `default` cron you're running in this example runs according to the schedule defined in `crontab.xml`. Some cron job runs only once a day. The first time you run cron from the browser, the `cron_schedule` table is updated, but subsequent `pub/cron.php` requests run at the configured schedule.
+>The `default` cron you are running in this example runs according to the schedule defined in `crontab.xml`. Some cron job runs only once a day. The first time you run cron from the browser, the `cron_schedule` table is updated, but subsequent `pub/cron.php` requests run at the configured schedule.
 
 **To verify cron is secure**:
 

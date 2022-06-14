@@ -163,7 +163,7 @@ To verify the configuration settings:
    >
    >The **Store Name** field is editable in the website scope but if you switch to the Default Config scope, it is not editable. This is the result of how you set the options in the development system. The value of **VAT Number** is not editable in website scope.
 
-1. If you haven't already done so, switch to Default Config scope.
+1. If you have not already done so, switch to Default Config scope.
 1. In the left navigation, under General, click **Contacts**.
 
    The **Send Emails To** field is not editable, as the following figure shows. This is a sensitive setting.

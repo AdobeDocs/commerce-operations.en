@@ -24,7 +24,7 @@ You can have one production system. All of the following must be true:
 To set up a production machine:
 
 1. After installing Magento or pulling it from source control, log in to the production server as, or switch to, the [file system owner](https://glossary.magento.com/magento-file-system-owner).
-1. Create `~/.ssh/.composer/auth.json` if you haven't already done so.
+1. Create `~/.ssh/.composer/auth.json` if you have not already done so.
 
    Create the directory:
 

@@ -94,7 +94,7 @@ When the request is redirected to the entry point, the Magento application parse
 -  In developer mode, the content of the file is returned so that every time the resource is requested, the returned content is up to date.
 - In [default](../bootstrap/application-modes.md#default-mode) mode, the retrieved resource is published so it is accessible by the previously requested URL.
 
-   All future requests for the static resource are processed by the server the same as static files; that is, without involving the entry point. If it's necessary to synchronize published files with original ones, the `pub/static` directory should be removed; as a result, files are automatically republished with the next request.
+   All future requests for the static resource are processed by the server the same as static files; that is, without involving the entry point. If it is necessary to synchronize published files with original ones, the `pub/static` directory should be removed; as a result, files are automatically republished with the next request.
 
 ### Media resource entry point
 
