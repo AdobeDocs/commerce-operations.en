@@ -98,9 +98,9 @@ In addition, Varnish uses an [Entity](https://glossary.magento.com/entity) Tag (
 
 More detail is provided in the sections that follow.
 
-## Caching by browser request {#config-varnish-cache-browser}
+## Caching by browser request
 
-This section uses a browser inspector to show how assets are delivered to the browser in the first request and afterward loaded from the local browser [cache](https://glossary.magento.com/cache).
+This section uses a browser inspector to show how assets are delivered to the browser in the first request and afterward loaded from the local browser cache.
 
 ### First browser request
 
@@ -110,7 +110,7 @@ The following figure shows an example using a browser inspector:
 
 ![The first time a request is made for a cacheable object, Varnish delivers it to the browser](../../assets/configuration/varnish-apache-first-visit.png)
 
-The preceding example shows a request for the [storefront](https://glossary.magento.com/storefront) main page (`m2_ce_my`). [CSS](https://glossary.magento.com/css) and [JavaScript](https://glossary.magento.com/javascript) assets are cached on the client browser.
+The preceding example shows a request for the storefront main page (`m2_ce_my`). CSS and JavaScript assets are cached on the client browser.
 
 >[!NOTE]
 >

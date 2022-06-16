@@ -63,7 +63,7 @@ If so, try the following:
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
-## Reindexing catalog search and refreshing the full page cache {#es-reindex}
+## Reindexing catalog search and refreshing the full page cache
 
 After you change the search engine configuration, you must reindex the catalog search index and refresh the full page cache using the Admin or command line.
 

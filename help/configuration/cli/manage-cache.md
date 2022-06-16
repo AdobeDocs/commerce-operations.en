@@ -59,7 +59,7 @@ config_integration_api: 1
                 vertex: 1
 ```
 
-## Enable or disable cache types {#config-cli-subcommands-cache-en}
+## Enable or disable cache types
 
 This command enables you to enable or disable all cache types or only the ones you specify. Disabling cache types is useful during development because you see the results of your changes without having to flush the cache; however, disabling cache types has an adverse effect on performance.
 
@@ -81,7 +81,7 @@ bin/magento cache:disable [type] ... [type]
 
 Where omitting `[type]` enables or disables all cache types at the same time. The `type` option is a space-separated list of cache types.
 
-<!-- `--bootstrap=` is a URL-encoded associative array of Magento [application bootstrap parameters](../bootstrap/set-parameters.md#config-bootparam-overview) and values. -->
+<!-- `--bootstrap=` is a URL-encoded associative array of Magento [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
 To list cache types and their status:
 
@@ -105,7 +105,7 @@ Sample result:
 
 >[!INFO]
 >
->Enabling a [cache type](https://glossary.magento.com/cache-type) automatically clears that cache type.
+>Enabling a cache type automatically clears that cache type.
 
 >[!INFO]
 >
@@ -118,7 +118,6 @@ To purge out-of-date items from the cache, you can _clean_ or _flush_ cache type
 -  Cleaning a cache type deletes all items from enabled Magento cache types only. In other words, this option does not affect other processes or applications because it cleans only the cache that Magento uses.
 
    Disabled cache types are not cleaned.
-
 
    >[!TIP]
    >

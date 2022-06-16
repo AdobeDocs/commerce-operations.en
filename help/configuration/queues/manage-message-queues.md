@@ -76,6 +76,6 @@ Edit the `/app/etc/env.php` file to configure the cron job `consumers_runner`.
 
    >[!INFO]
    >
-   >If your {{ site.data.var.ee }} store is hosted on the Cloud platform, use the [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) to configure how consumers process messages from the message queue.
+   >If your Adobe Commerce store is hosted on the Cloud platform, use the [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) to configure how consumers process messages from the message queue.
 
 See [Start message queue consumers](../cli/start-message-queues.md).

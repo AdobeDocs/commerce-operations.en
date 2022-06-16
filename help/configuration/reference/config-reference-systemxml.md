@@ -179,8 +179,9 @@ A `<group>`-Tag can have the following children:
 | `attribute`                 | Custom attributes can be used by frontend models. Usually used to make a given frontend model more dynamic.                                                                               | `attribute`   |
 | `include`                   | Used to include additional `system_include.xsd` compatible files. Usually used to structure large `system.xml` files.                                                                     | `includeType` |
 
-{:.bs-callout-warning}
-The nodes `more_url`, `demo_url` and `help_url` are defined by a PayPal frontend model that is only used once. These nodes are not reusable.
+>[!WARNING]
+>
+>The nodes `more_url`, `demo_url` and `help_url` are defined by a PayPal frontend model that is only used once. These nodes are not reusable.
 
 ### Example: Create a group for a given section
 
@@ -297,8 +298,9 @@ A `<field>`-Tag can have the following children:
 | `attribute`                 | Custom attributes can be used by frontend models. Usually used to make a given frontend model more dynamic.                                                                               | `complexType`    |
 | `requires`                  | Not extensible. See below.                                                                                                                                                                | `complexType`    |
 
-{:.bs-callout-warning}
-The nodes `more_url`, `demo_url`, `requires` and `options` are defined by a different core payment model and are only used once. These nodes are not reusable.
+>[!WARNING]
+>
+>The nodes `more_url`, `demo_url`, `requires` and `options` are defined by a different core payment model and are only used once. These nodes are not reusable.
 
 ### Example: Create two fields in a given group
 

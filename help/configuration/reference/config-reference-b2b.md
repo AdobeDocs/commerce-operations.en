@@ -129,8 +129,9 @@ These configuration values are available in the Admin in **Stores** > Settings >
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Payment Methods**.
 
-{:.bs-callout-info}
-The available paths are determined by your choice of Merchant country.
+>[!INFO]
+>
+>The available paths are determined by your choice of Merchant country.
 
 | Name | Config path | Encrypted? | System-specific? | Sensitive? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |

@@ -119,7 +119,7 @@ For example, to find a website or store view scope value in the Admin:
 
    The right pane is displayed similar to the following.
 
-   ![Find a website code]({{ site.baseurl }}/common/images/cloud/cloud_vars_website-code.png){:width="300px"}
+   ![Find a website code](../../assets/configuration/website-code.png)
 
 1. The scope name is displayed in the **Code** field.
 1. Continue with [Step 2:  Set global, website, or store view variables](#cloud-system-vars-sys).

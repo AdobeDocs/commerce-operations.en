@@ -21,7 +21,7 @@ The `env.php` file contains the following sections:
 | `install`                     | The installation date                                           |
 | `lock`                        | Lock provider settings                                          |
 | `MAGE_MODE`                   | The [application mode](../bootstrap/application-modes.md)       |
-| `queue`                       | [Message queues]({{ }}/config-guide) settings                   |
+| `queue`                       | [Message queues](../queues/manage-message-queues.md) settings                   |
 | `resource`                    | Mapping of resource name to a connection                        |
 | `session`                     | Session storage data                                            |
 | `system`                      | Disables the field for editing in the admin                     |

@@ -212,7 +212,7 @@ The easiest way to verify that `pub/cron.php` is secure is to verify that it is 
 
 1. When prompted, enter an authorized user's name and password. The following figure shows an example.
 
-   ![Authorizing cron using HTTP Basic]({{ site.baseurl }}/common/images/cron_auth.png)
+   ![Authorizing cron using HTTP Basic](../../assets/configuration/cron-auth.png)
 
 1. Verify that rows were added to the table:
 

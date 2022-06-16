@@ -6,13 +6,13 @@ description: Associate cache frontends with cache types.
 
 The following steps walk through associating cache frontend with a cache type.
 
-## Step 1: Define a cache frontend {#define-cache}
+## Step 1: Define a cache frontend
 
-The Commerce application has a `default` cache [frontend](https://glossary.magento.com/frontend) that you can use for any [cache type](configuration/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean-over). This section discusses how to optionally define a [cache frontend](https://glossary.magento.com/cache-frontend) with a different name, which is preferable if you expect to customize your frontend.
+The Commerce application has a `default` cache frontend that you can use for any [cache type](../cli/manage-cache.md#clean-and-flush-cache-types). This section discusses how to optionally define a cache frontend with a different name, which is preferable if you expect to customize your frontend.
 
 >[!INFO]
 >
->To use the `default` cache type, you do not need to modify `env.php` at all; you modify Magento's global `di.xml`. See [Low-level cache options](cache/cache-options.html).
+>To use the `default` cache type, you do not need to modify `env.php` at all; you modify Magento's global `di.xml`. See [Low-level cache options](cache-options.md).
 
 You must specify a custom cache frontend either `app/etc/env.php` or Magento's global `app/etc/di.xml`.
 
@@ -40,9 +40,9 @@ The following example shows how to define it in the `env.php` file, which overri
 
 Where `<unique frontend id>` is a unique name to identify your frontend and `<cache options>` are options discussed in the topics specific to each type of caching (database, Redis, and so on).
 
-## Step 2: Configure the cache {#configure-cache}
+## Step 2: Configure the cache
 
-You can specify frontend and [backend](https://glossary.magento.com/backend) cache configuration options in `env.php` or `di.xml`. This task is optional.
+You can specify frontend and backend cache configuration options in `env.php` or `di.xml`. This task is optional.
 
 `env.php` example:
 
@@ -61,7 +61,7 @@ You can specify frontend and [backend](https://glossary.magento.com/backend) cac
 
 where
 
-- `<frontend_type>` is the low-level frontend [cache type](https://glossary.magento.com/cache-type). Specify the name of a class that is compatible with [Zend\Cache\Core](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Core.html).
+- `<frontend_type>` is the low-level frontend cache type. Specify the name of a class that is compatible with [Zend\Cache\Core](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Core.html).
 
   If you omit `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) is used.
 

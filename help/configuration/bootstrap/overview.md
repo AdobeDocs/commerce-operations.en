@@ -58,7 +58,7 @@ The bootstrap object specifies how the Magento application handles uncaught exce
 - In any other mode, attempts to log exception and display a generic error message.
 - Terminates Magento with error code `1`
 
-## Entry point applications {#config-boot-entry}
+## Entry point applications
 
 We have the following entry point applications (that is, applications defined by Magento that are used by the web server as a directory index):
 
