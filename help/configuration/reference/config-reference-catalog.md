@@ -199,5 +199,5 @@ Limit Sending By | `sendfriend/email/check_by` | <!-- ![Not EE-only][red-x] --> 
 
 <!-- link definitions -->
 
-[ee]: ../../assets/configuration/cloud_ee.png
+[ee]: ../../assets/configuration/cloud-ee.png
 [red-x]: ../../assets/configuration/red-x.png

@@ -34,5 +34,5 @@ OAuth consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <
 
 <!-- link definitions -->
 
-[ee]: ../../assets/configuration/cloud_ee.png
+[ee]: ../../assets/configuration/cloud-ee.png
 [red-x]: ../../assets/configuration/red-x.png

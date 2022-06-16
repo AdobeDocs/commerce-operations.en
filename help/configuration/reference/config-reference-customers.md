@@ -211,5 +211,5 @@ Persist Customer Group Membership and Segmentation | `persistent/options/custome
 
 <!-- link definitions -->
 
-[ee]: ../../assets/configuration/cloud_ee.png
+[ee]: ../../assets/configuration/cloud-ee.png
 [red-x]: ../../assets/configuration/red-x.png

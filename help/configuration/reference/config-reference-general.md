@@ -279,6 +279,6 @@ Cache User Defined Attributes | `dev/caching/cache_user_defined_attributes` | <!
 
 <!-- link definitions -->
 
-[ee]: ../../assets/configuration/cloud_ee.png
+[ee]: ../../assets/configuration/cloud-ee.png
 [red-x]: ../../assets/configuration/red-x.png
-[sen]: ../../assets/configuration/cloud_sens.png
+[sen]: ../../assets/configuration/cloud-sens.png

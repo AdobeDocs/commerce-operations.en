@@ -647,7 +647,7 @@ This section lists variable names and config paths available for options in the 
 | SFTP Credentials |
 | SFTP Credentials | `payment_nz/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not EE-only][red-x] --> | | | ![Sensitive][sen] |
 | SFTP Credentials | `payment_nz/paypal_payment_gateways/paypal_payflowpro_nz/settings_paypal_payflow/settings_paypal_payflow_advanced/paypal_payflow_settlement_report/heading_sftp` | <!-- ![Not EE-only][red-x] --> | | | ![Sensitive][sen] |
-| API Login ID | `payment_nz/authorizenet_directpost/login` | <!-- ![Not EE-only][red-x] --> | ![EE-only]({{ site.baseurl }}/common/images/cloud_enc.png) | | ![Sensitive][sen] |
+| API Login ID | `payment_nz/authorizenet_directpost/login` | <!-- ![Not EE-only][red-x] --> | ![EE-only]([enc] | | ![Sensitive][sen] |
 | Merchant MD5 | `payment_nz/authorizenet_directpost/trans_md5` | <!-- ![Not EE-only][red-x] --> | ![Encrypted][enc] | | ![Sensitive][sen] |
 | Email Customer | `payment_nz/authorizenet_directpost/email_customer` | <!-- ![Not EE-only][red-x] --> | | | ![Sensitive][sen] |
 | Merchant's Email | `payment_nz/authorizenet_directpost/merchant_email` | <!-- ![Not EE-only][red-x] --> | | | ![Sensitive][sen] |
@@ -802,8 +802,8 @@ This section lists variable names and config paths available for options in the 
 
 <!-- link definitions -->
 
-[ee]: ../../assets/configuration/cloud_ee.png
-[enc]: ../../assets/configuration/cloud_enc.png
+[ee]: ../../assets/configuration/cloud-ee.png
+[enc]: ../../assets/configuration/cloud-enc.png
 [red-x]: ../../assets/configuration/red-x.png
-[sen]: ../../assets/configuration/cloud_sens.png
-[sys]: ../../assets/configuration/cloud_env.png
+[sen]: ../../assets/configuration/cloud-sens.png
+[sys]: ../../assets/configuration/cloud-env.png

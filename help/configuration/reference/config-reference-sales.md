@@ -412,5 +412,5 @@ Low Code Pool Threshold | `giftcard/giftcardaccount_general/pool_threshold` | <!
 
 <!-- link definitions -->
 
-[ee]: ../../assets/configuration/cloud_ee.png
+[ee]: ../../assets/configuration/cloud-ee.png
 [red-x]: ../../assets/configuration/red-x.png

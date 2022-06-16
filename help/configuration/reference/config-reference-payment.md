@@ -1377,6 +1377,6 @@ Sort Order | `payment_us/eway/sort_order`
 
 <!-- link definitions -->
 
-[ee]: ../../assets/configuration/cloud_ee.png
-[enc]: ../../assets/configuration/cloud_enc.png
+[ee]: ../../assets/configuration/cloud-ee.png
+[enc]: ../../assets/configuration/cloud-enc.png
 [red-x]: ../../assets/configuration/red-x.png
