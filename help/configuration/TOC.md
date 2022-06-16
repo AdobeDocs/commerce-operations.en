@@ -98,9 +98,9 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Log database activity](logs/database-activity.md)
   - [Write to a custom log file](logs/custom-log-files.md)
 - Message Queues {#message-queues}
-  - Message queue framework
-  - Manage message queues
-  - Set up Amazon MQ
+  - [Message queue framework](queues/message-queue-framework.md)
+  - [Manage message queues](queues/manage-message-queues.md)
+  - [Set up Amazon MQ](queues/aws-mq.md)
 - Multiple sites {#multi-sites}
   - Multiple sites and views
   - Set up in Admin

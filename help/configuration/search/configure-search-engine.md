@@ -31,7 +31,7 @@ To configure your system to use Elasticsearch or OpenSearch:
 
    Sample response:
 
-   ![](../../assets/configuration/elastic_test-success.png)
+   ![success](../../assets/configuration/elastic_test-success.png)
 
    Continue with:
 
@@ -40,7 +40,7 @@ To configure your system to use Elasticsearch or OpenSearch:
 
    or you see:
 
-   ![](../../assets/configuration/elastic_test-fail.png)
+   ![failed](../../assets/configuration/elastic_test-fail.png)
 
 If so, try the following:
 
@@ -73,7 +73,7 @@ To refresh the cache using the Admin:
 1. Select the checkbox next to **Page Cache**.
 1. From the **Actions** list in the upper right, click **Refresh**.
 
-   ![](../../assets/configuration/refresh-cache.png)
+   ![cache management](../../assets/configuration/refresh-cache.png)
 
 To clean the cache using the command line: [`bin/magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types)
 
