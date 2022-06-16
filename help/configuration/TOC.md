@@ -107,8 +107,9 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - Set up with Nginx
   - Set up with Apache
 - Search Engine {#search}
-  - Configure search engine
-  - Filter with stopwords
+  - [Overview of search engines](search/overview-search.md)
+  - [Configure search engine](search/configure-search-engine.md)
+  - [Filter with stopwords](search/search-stopwords.md)
 - Security {#security}
   - [Security overview](security/overview.md)
   - [Password hashing](security/hashing.md)

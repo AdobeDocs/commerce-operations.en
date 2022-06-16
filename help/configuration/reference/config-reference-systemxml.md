@@ -59,7 +59,7 @@ A `<tab>`-Tag can have the following child:
 |---------|------------------------------------------------------|----------|
 | `label` | Defines the label that is displayed in the frontend. | `string` |
 
-### Example: Create a new tab
+### Example: Create a tab
 
 The following code snippet demonstrates the creation of a new tab with example data.
 
@@ -113,7 +113,7 @@ A `<section>`-Tag can have the following children:
 | `frontend_model` | Specifies a different frontend model to change the rendering and modify the output.                                   | `typeModel`         |
 | `include`        | Used to include additional `system_include.xsd` compatible files. Usually used to structure large `system.xml` files. | `includeType`       |
 
-### Example: Create a new section and assign it to a tab
+### Example: Create a section and assign it to a tab
 
 The following code snippet demonstrates the basic usage of creating a new section.
 
@@ -182,7 +182,7 @@ A `<group>`-Tag can have the following children:
 {:.bs-callout-warning}
 The nodes `more_url`, `demo_url` and `help_url` are defined by a PayPal frontend model that is only used once. These nodes are not reusable.
 
-### Example: Create a new group for a given section
+### Example: Create a group for a given section
 
 The following code snippet demonstrates the basic usage of creating a new group.
 
