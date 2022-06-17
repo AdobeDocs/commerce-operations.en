@@ -102,8 +102,9 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Manage message queues](queues/manage-message-queues.md)
   - [Set up Amazon MQ](queues/aws-mq.md)
 - Multiple sites {#multi-sites}
-  - Multiple sites and views
-  - Set up in Admin
+  - [Multiple sites and views](multi-sites/ms-overview.md)
+  - [Database entity Increment ID](multi-sites/change-increment-id.md)
+  - [Set up in Admin](multi-sites/ms-admin.md)
   - Set up with Nginx
   - Set up with Apache
 - Search Engine {#search}
@@ -119,7 +120,6 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [X-Frame-Options header](security/xframe-options.md)
 - Storage {#storage}
   - Database profiler
-  - Database entity Increment ID
   - Remote storage {#remote-storage}
     - [Remote storage module](remote-storage/remote-storage.md)
     - [AWS S3 bucket](remote-storage/remote-storage-aws-s3.md)
