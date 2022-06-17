@@ -12,7 +12,7 @@ user-guide-description: Learn about the operational aspects of maintaining your 
 - [Migration](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html)
 - [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=en)
 - [Extensions](https://devdocs.magento.com/extensions/)
-- [Performance Best Practices](https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html)
+- [Performance Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html?lang=en)
 - [Tools](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en)
 - [Command-Line Tools](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html)
 - [Implementation Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html?lang=en)
