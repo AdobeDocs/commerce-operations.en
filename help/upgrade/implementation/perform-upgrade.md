@@ -38,6 +38,28 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
     See [Enable or disable maintenance mode](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) for additional options. Optionally, you can create a [custom maintenance mode page](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
 
+1. Disable all cron jobs.
+
+   _Adobe Commerce on cloud infrastructure:_
+
+   ```bash
+   ./vendor/bin/ece-tools cron:disable
+   ```
+
+   _Magento Open Source:_
+
+   ```bash
+   bin/magento cron:remove
+   ```
+
+1. Run a cron job that starts all message queue consumers.
+
+   ```bash
+   bin/magento cron:run --group=consumers
+   ```
+
+   Wait for the cron job to complete. You can monitor the status of the job with the `ps aux | grep 'bin/magento queue'` command.
+
 1. Create a backup of the `composer.json` file.
 
    ```bash
