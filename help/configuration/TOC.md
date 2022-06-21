@@ -125,10 +125,10 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
     - [AWS S3 bucket](remote-storage/remote-storage-aws-s3.md)
     - [Image resizing](remote-storage/remote-storage-image-resize.md)
   - Session storage {#session-storage}
-    - Session storage overview
-    - memcached
-    - memcached on CentOS
-    - memcached on Ubuntu
+    - [Session storage location](storage/sessions.md)
+    - [memcached for session storage](storage/memcached.md)
+    - [memcached on CentOS](storage/memcache-centos.md)
+    - [memcached on Ubuntu](storage/memcache-ubuntu.md)
   - Split Database {#split-db}
     - Split database overview
     - Automatic configuration
