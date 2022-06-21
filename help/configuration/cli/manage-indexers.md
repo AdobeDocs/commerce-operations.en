@@ -239,7 +239,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Before switching indexer modes, we recommend putting your website to [maintenance](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) mode and [disable cron](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). This ensures you do not suffer database locks.
+>Before switching indexer modes, we recommend putting your website to [maintenance](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) mode and [disable cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). This ensures you do not suffer database locks.
 
 To specify the indexer configuration:
 

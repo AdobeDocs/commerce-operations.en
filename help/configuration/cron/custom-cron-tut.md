@@ -23,6 +23,8 @@ To set up a custom cron job, you need a sample module. We suggest the `magento-m
 
 If you already have a sample module, you can use it; skip this step and the next step and continue with Step 3: Create a class to run cron.
 
+**To get a sample module**:
+
 1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 1. Change to a directory that is not in your Magento application root (for example, your home directory).
 1. Clone the [`magento2-samples` repository][samples].
@@ -95,11 +97,13 @@ Before you continue, verify that the sample module is registered and enabled.
 
 >[!TIP]
 >
->If the output indicates that the `Module does not exist`, review Step 1 carefully. Make sure your code is in the correct directory. Spelling and case are important; if anything is different, the module will not load. Also, do not forget to run `magento setup:upgrade`.
+>If the output indicates that the `Module does not exist`, review [Step 1](#step-1-get-a-sample-module) carefully. Make sure your code is in the correct directory. Spelling and case are important; if anything is different, the module will not load. Also, do not forget to run `magento setup:upgrade`.
 
 ## Step 3: Create a class to run cron
 
 This step shows a simple class to create a cron job. The class only writes a row to the `cron_schedule` table that confirms it is set up successfully.
+
+To create a class:
 
 1. Create a directory for the class and change to that directory:
 
@@ -185,6 +189,8 @@ bin/magento cache:clean
 
 This step shows how to verify the custom cron job successfully using a SQL query on the `cron_schedule` database table.
 
+To verify cron:
+
 1. Run Magento cron jobs:
 
    ```bash
@@ -239,6 +245,8 @@ If the SQL command and system log contain no entries, run the `magento cron:run`
 
  This step shows how to optionally set up a custom cron group. You should set up a custom cron group if you want your custom cron job to run on a different schedule than other cron jobs (typically, once per minute) or if you want several custom cron jobs to run with different settings.
 
+ To set up a custom cron group:
+
 1. Open `crontab.xml` in a text editor.
 1. Change `<group id="default">` to `<group id="custom_crongroup">`
 1. Exit the text editor.
@@ -264,6 +272,8 @@ For a description of what the options mean, see [Customizing crons reference](..
 ## Step 8: Verify your custom cron group
 
 This _optional_ step shows how to verify your custom cron group using the Admin.
+
+To verify your custom cron group:
 
 1. Run Magento cron jobs for your custom group:
 

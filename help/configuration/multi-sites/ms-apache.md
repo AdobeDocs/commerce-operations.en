@@ -1,53 +1,51 @@
 ---
-group: configuration-guide
-title: Tutorial&mdash;Set up multiple websites with Apache
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Set up multiple websites with Apache
+description:  Follow this tutorial to set up multiple websites with Apache.
 ---
 
-## Set values in an entry point script {#ms-entry-script}
+# Set up multiple websites with Apache
 
-If necessary, copy the existing `index.php` entry point script for your [website](https://glossary.magento.com/website) or [store view](https://glossary.magento.com/store-view) and add to it the following:
+We assume that:
 
-*  You're working on a development machine (laptop, virtual machine, and so on)
+If necessary, copy the existing `index.php` entry point script for your website or [store view](https://glossary.magento.com/store-view) and add to it the following:
+
+- You are working on a development machine (laptop, virtual machine, and so on)
 
    Additional tasks might be required to deploy multiple websites in a hosted environment; check with your hosting provider for more information.
 
-   Additional tasks are required to set up {{site.data.var.ece}}. After you complete the tasks discussed in this topic, see [Set up multiple {{site.data.var.ece}} websites or stores]({{ site.baseurl }}/cloud/project/project-multi-sites.html).
+   Additional tasks are required to set up Adobe Commerce on cloud infrastructure. After you complete the tasks discussed in this topic, see [Set up multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in the _Commerce Cloud guide_.
 
-*  You use one virtual host per website; the virtual host configuration file is `/etc/httpd/httpd.conf`
+- You use one virtual host per website; the virtual host configuration file is `/etc/httpd/httpd.conf`
 
     Different versions of Apache on different operating systems set up virtual hosts differently. Consult the [Apache documentation](https://httpd.apache.org/docs/2.4/vhosts) or a network administrator if you're not sure how to set up a virtual host.
 
-*  The Magento software is installed in `/var/www/html/magento2`
-*  You have two websites other than the default:
+- The Commerce software is installed in `/var/www/html/magento2`
+- You have two websites other than the default:
 
-   *  `french.mysite.mg` with website code `french` and store view code `fr`
-   *  `german.mysite.mg` with website code `german` and store view code `de`
+  - `french.mysite.mg` with website code `french` and store view code `fr`
+  - `german.mysite.mg` with website code `german` and store view code `de`
 
-### Roadmap for setting up multiple websites with Apache
+## Roadmap for setting up multiple websites with Apache
 
 Setting up multiple stores consists of the following tasks:
 
-1. [Set up websites, stores, and store views]({{ page.baseurl }}/config-guide/multi-site/ms-admin.html) in the [Admin](https://glossary.magento.com/magento-admin).
-1. Create one [Apache virtual host](#ms-apache-vhosts) per Magento website.
+1. [Set up websites, stores, and store views](ms-admin.md) in the Admin.
+1. Create one [Apache virtual host](#step-2-create-apache-virtual-hosts) per Magento website.
 
 ## Step 1: Create websites, stores, and store views in the Admin
 
-See [Set up multiple websites, stores, and store views in the Admin]({{ page.baseurl }}/config-guide/multi-site/ms-admin.html).
+See [Set up multiple websites, stores, and store views in the Admin](ms-admin.md).
 
-## Step 2: Create Apache virtual hosts {#ms-apache-vhosts}
+## Step 2: Create Apache virtual hosts
 
 This section discusses how to set values for `MAGE_RUN_TYPE` and `MAGE_RUN_CODE` using the Apache server variable `SetEnvIf` in a virtual host.
 
 For more information about `SetEnvIf`, see:
 
-*  [Apache 2.2](http://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
-*  [Apache 2.4](http://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
+- [Apache 2.2](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
+- [Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
 
-{% collapsible To create Apache virtual hosts: %}
+**To create Apache virtual hosts**:
 
 1. As a user with `root` privileges, open the virtual host configuration file in a text editor.
 
@@ -80,11 +78,36 @@ For more information about `SetEnvIf`, see:
 1. Save your changes to `httpd.conf` and exit the text editor.
 1. Restart Apache:
 
-   *  CentOS: `service httpd restart`
-   *  Ubuntu: `service apache2 restart`
+   - CentOS: `service httpd restart`
+   - Ubuntu: `service apache2 restart`
 
-{% endcollapsible %}
+## Verify your site
 
-## Verify your site  {#ms-apache-verify}
+Unless you have DNS set up for your stores' URLs, you must add a static route to the host in your `hosts` file:
 
-{% include config/multi-site_verify.md %}
+1. Locate your operating system `hosts` file.
+1. Add the static route in the format:
+
+   ```conf
+   <ip address> french.mysite.mg
+   <ip address> german.mysite.mg
+   ```
+
+1. Go to one of the following URLs in your browser:
+
+   ```http
+   http://mysite.mg/admin
+   http://french.mysite.mg/frenchstoreview
+   http://german.mysite.mg/germanstoreview
+   ```
+
+>[!INFO]
+>
+>- Additional tasks might be required to deploy multiple websites in a hosted environment; check with your hosting provider for more information.
+>- Additional tasks are required to set up Adobe Commerce on cloud infrastructure; see [Set up multiple Cloud websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in the _Commerce Cloud guide_.
+
+### Troubleshooting
+
+- If your French and German sites return 404s but your Admin loads, make sure you completed [Step 6: Add the store code to the base URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- If all URLs return 404s, make sure you restarted your web server.
+- If the Admin doesn't function properly, make sure you set up your virtual hosts properly.

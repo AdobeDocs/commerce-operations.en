@@ -1,63 +1,59 @@
 ---
-group: configuration-guide
-title: Tutorial&mdash;Set up multiple websites or stores with nginx
-functional_areas:
-  - Configuration
-  - System
-  - Setup
+title: Set up multiple websites with Nginx
+description: Follow this tutorial to set up multiple websites with Nginx.
 ---
 
-## Set up multiple websites with nginx {#ms-nginx-over}
-
-This tutorial shows you step-by-step how to set up multiple websites using [nginx](https://glossary.magento.com/nginx).
-
-### Assumptions
+# Set up multiple websites with Nginx
 
 We assume that:
 
-*  You are working on a development machine (laptop, virtual machine, or similar).
+- You are working on a development machine (laptop, virtual machine, or similar).
 
    Additional tasks might be required to deploy multiple websites in a hosted environment; check with your hosting provider for more information.
 
-   Additional tasks are required to set up {{site.data.var.ece}}. After you complete the tasks discussed in this topic, see [Set up multiple {{site.data.var.ece}} websites or stores]({{ site.baseurl }}/cloud/project/project-multi-sites.html).
+   Additional tasks are required to set up Adobe Commerce on cloud infrastructure. After you complete the tasks discussed in this topic, see [Set up multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in the _Commerce Cloud guide_.
 
-*  You accept multiple domains in one virtual host file or use one virtual host per website; the virtual host configuration files are located in `/etc/nginx/sites-available`.
-*  You use the `nginx.conf.sample` provided by Magento with only the modifications discussed in this tutorial.
-*  The Magento software is installed in `/var/www/html/magento2`.
-*  You have two websites other than the default:
+- You accept multiple domains in one virtual host file or use one virtual host per website; the virtual host configuration files are located in `/etc/nginx/sites-available`.
+- You use the `nginx.conf.sample` provided by Magento with only the modifications discussed in this tutorial.
+- The Commerce software is installed in `/var/www/html/magento2`.
+- You have two websites other than the default:
 
-   *  `french.mysite.mg` with website code `french` and store view code `fr`
-   *  `german.mysite.mg` with website code `german` and store view code `de`
-   *  `mysite.mg` is the default website and default store view
+  - `french.mysite.mg` with website code `french` and store view code `fr`
+  - `german.mysite.mg` with website code `german` and store view code `de`
+  - `mysite.mg` is the default website and default store view
 
- {:.bs-callout-tip}
-Refer to [Create websites]({{ page.baseurl }}/config-guide/multi-site/ms-admin.html#step-2-create-websites) and [Create store views]({{ page.baseurl }}/config-guide/multi-site/ms-admin.html#step-4-create-store-views) for help locating these values.
+>[!TIP]
+>
+>Refer to [Create websites](ms-admin.md#step-2-create-websites) and [Create store views](ms-admin.md#step-4-create-store-views) for help with locating these values.
 
-### Roadmap for setting up multiple websites with nginx
+The following is a roadmap for setting up multiple websites with nginx:
 
-To set up multiple stores:
+1. [Set up websites, stores, and store views](ms-admin.md) in the Admin.
+1. Create an [Nginx virtual host](#step-2-create-nginx-virtual-hosts)) to map many websites or one Nginx virtual host per Magento website (steps detailed below).
+1. Pass the values of the [Magento variables](ms-overview.md) `$MAGE_RUN_TYPE` and `$MAGE_RUN_CODE` to nginx using the Magento-provided `nginx.conf.sample` (steps detailed below).
 
-1. [Set up websites, stores, and store views]({{ page.baseurl }}/config-guide/multi-site/ms-admin.html) in the [Admin](https://glossary.magento.com/magento-admin).
-1. Create an [nginx virtual host](#ms-nginx-vhosts) to map many websites or one [nginx virtual host](#ms-nginx-vhosts) per Magento [website](https://glossary.magento.com/website) (steps detailed below).
-1. Pass the values of the [Magento variables]({{ page.baseurl }}/config-guide/multi-site/ms-overview.html) `$MAGE_RUN_TYPE` and `$MAGE_RUN_CODE` to nginx using the Magento-provided `nginx.conf.sample` (steps detailed below).
+   - `$MAGE_RUN_TYPE` can be either `store` or `website`:
 
-   *  `$MAGE_RUN_TYPE` can be either `store` or `website`:
+     - Use `website` to load your website in your storefront.
+     - Use `store` to load any store view in your storefront.
 
-      *  Use `website` to load your website in your storefront.
-      *  Use `store` to load any store view in your storefront.
+   - `$MAGE_RUN_CODE` is the unique website or store view code that corresponds to `$MAGE_RUN_TYPE`.
 
-   *  `$MAGE_RUN_CODE` is the unique website or store view code that corresponds to `$MAGE_RUN_TYPE`.
 1. Update the Base URL configuration on the Magento admin.
 
-## Step 2: Create nginx virtual hosts {#ms-nginx-vhosts}
+## Step 1: Create websites, stores, and store views in the Admin
 
-This section discusses how to load websites on the [storefront](https://glossary.magento.com/storefront). You can use either websites or store views; if you use store views, you must adjust parameter values accordingly. You must complete the tasks in this section as a user with `sudo` privileges.
+See [Set up multiple websites, stores, and store views in the Admin](ms-admin.md).
 
-By using just one [nginx virtual host file](#ms-nginx-vhosts), you can keep your nginx configuration simple and clean. By using several virtual host files, you can customize each store (to use a custom location for `french.mysite.mg` for instance).
+## Step 2: Create nginx virtual hosts
 
-{% collapsible To use one virtual host (simplified): %}
+This step discusses how to load websites on the [storefront](https://glossary.magento.com/storefront). You can use either websites or store views; if you use store views, you must adjust parameter values accordingly. You must complete the tasks in this section as a user with `sudo` privileges.
 
-This configuration expands upon [Magento Nginx Configuration]({{ page.baseurl }}/install-gde/prereq/nginx.html). To create one virtual host:
+By using just one [nginx virtual host file](#step-2-create-nginx-virtual-hosts), you can keep your nginx configuration simple and clean. By using several virtual host files, you can customize each store (to use a custom location for `french.mysite.mg` for instance).
+
+**To create one virtual host** (simplified):
+
+This configuration expands upon [Nginx Configuration](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html).
 
 1. Open a text editor and add the following contents to a new file named `/etc/nginx/sites-available/magento`:
 
@@ -105,10 +101,8 @@ This configuration expands upon [Magento Nginx Configuration]({{ page.baseurl }}
 
 For more detail about the map directive, see [nginx documentation on the map directive](http://nginx.org/en/docs/http/ngx_http_map_module.html#map).
 
-{% endcollapsible %}
 
-{% collapsible To create multiple virtual hosts (customize per website): %}
-To create multiple virtual hosts:
+**To create multiple virtual hosts**:
 
 1. Open a text editor and add the following contents to a new file named `/etc/nginx/sites-available/french.mysite.mg`:
 
@@ -167,17 +161,15 @@ To create multiple virtual hosts:
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
-{% endcollapsible %}
+## Step 3: Modify nginx.conf.sample
 
-## Step 3: Modify nginx.conf.sample {#ms-nginx-conf-sample}
-{%
-include note.html
-type="tip"
-content="Do not edit the `nginx.conf.sample` file; it is a core Magento file that may be updated with each new release. Instead, copy the `nginx.conf.sample` file, rename it, and then edit the copied file."
-%}
+>[!TIP]
+>
+>Do not edit the `nginx.conf.sample` file; it is a core Magento file that may be updated with each new release. Instead, copy the `nginx.conf.sample` file, rename it, and then edit the copied file.
 
-{% collapsible To edit the PHP entry point for the main application: %}
-To modify the `nginx.conf.sample` file:
+**To edit the PHP entry point for the main application**:
+
+To modify the `nginx.conf.sample` file**:
 
 1. Open a text editor and review the `nginx.conf.sample` file ,`<magento2_installation_directory>/nginx.conf.sample`. Look for the following section:
 
@@ -231,9 +223,7 @@ location ~ (index|get|static|report|404|503|health_check)\.php$ {
 }
 ```
 
-{% endcollapsible %}
-
-## Step 4: Update the Base URL configuration {#update-base-url}
+## Step 4: Update the Base URL configuration
 
 You must update the Base URL for the `french` and the `german` websites in the Magento admin.
 
@@ -261,6 +251,33 @@ Run the following command to clean the `config` and `full_page` caches.
 bin/magento cache:clean config full_page
 ```
 
-## Verify your site  {#ms-nginx-verify}
+## Verify your site
 
-{% include config/multi-site_verify.md %}
+Unless you have DNS set up for your stores' URLs, you must add a static route to the host in your `hosts` file:
+
+1. Locate your operating system `hosts` file.
+1. Add the static route in the format:
+
+   ```conf
+   <ip address> french.mysite.mg
+   <ip address> german.mysite.mg
+   ```
+
+1. Go to one of the following URLs in your browser:
+
+   ```http
+   http://mysite.mg/admin
+   http://french.mysite.mg/frenchstoreview
+   http://german.mysite.mg/germanstoreview
+   ```
+
+>[!INFO]
+>
+>- Additional tasks might be required to deploy multiple websites in a hosted environment; check with your hosting provider for more information.
+>- Additional tasks are required to set up Adobe Commerce on cloud infrastructure; see [Set up multiple Cloud websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in the _Commerce Cloud guide_.
+
+### Troubleshooting
+
+- If your French and German sites return 404s but your Admin loads, make sure you completed [Step 6: Add the store code to the base URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- If all URLs return 404s, make sure you restarted your web server.
+- If the Admin doesn't function properly, make sure you set up your virtual hosts properly.

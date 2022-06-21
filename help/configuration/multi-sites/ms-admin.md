@@ -20,6 +20,8 @@ This task requires you to create a root category (and additional categories, if 
 
 Creating a root category is optional, but we show how to do it in this tutorial in the [event](https://glossary.magento.com/event) you want each website to have a unique root category. You can create additional categories if you choose.
 
+To create a root category:
+
 1. Log in to the Admin as a user authorized to create categories.
 1. Click **Catalog** > **Categories**.
 1. Click **Add Root Category**.
@@ -36,6 +38,8 @@ Creating a root category is optional, but we show how to do it in this tutorial 
 1. Repeat these tasks as many times as necessary to create root categories for your stores.
 
 ## Step 2: Create websites
+
+To create a website:
 
 1. Log in to the Admin as a user authorized to create websites, stores, and store views.
 1. Click **Stores** > **Settings** > **All Stores**.
@@ -54,6 +58,8 @@ Creating a root category is optional, but we show how to do it in this tutorial 
 
 ## Step 3: Create stores
 
+To create a store:
+
 1. In the _Admin_ panel, click **Stores** > **Settings** > **All Stores**.
 1. On the _Stores_ page, click **Create Store**.
 
@@ -70,6 +76,8 @@ Creating a root category is optional, but we show how to do it in this tutorial 
 1. Repeat these tasks as many times as necessary to create your stores.
 
 ## Step 4: Create store views
+
+To create a store view:
 
 1. In the _Admin_ panel, click **Stores** > **Settings** > **All Stores**.
 1. On the Stores page, click **Create Store View**.
@@ -89,6 +97,8 @@ Creating a root category is optional, but we show how to do it in this tutorial 
 ## Step 5: Change the website base URL
 
 To access a website using a unique URL like `http://french.magento.mg`, you must change the base URL for each site in the Admin.
+
+To change the website base URL:
 
 1. In the _Admin_ panel, click **Stores** > **Settings** > **Configuration** > **General** > **Web**.
 1. From the **Store View** list at the top of the page, click the name of one of your websites as the following figure shows.
@@ -117,6 +127,8 @@ This prevents `index.php` and `.htaccess` from getting out of sync with the Mage
 
 For more information, see the [Magento User Guide](https://docs.magento.com/user-guide/stores/store-urls.html).
 
+To add the store code to the base URL:
+
 1. In the _Admin_ panel, click **Stores** > **Settings** > **Configuration** > **General** > **Web**.
 1. From the **Store View** list at the top of the page, click **Default Config** as the following figure shows.
 
@@ -135,6 +147,8 @@ For more information, see the [Magento User Guide](https://docs.magento.com/user
 
 You must perform this step last because you will lose access to the Admin; your access returns after you set up virtual hosts as discussed in the web-server-specific topics.
 
+To change the default store view base URL:
+
 1. In the _Admin_ panel, click **Stores** > **Settings** > **Configuration** > **General** > **Web**.
 
 1. From the _Store View_ list at the top of the page, click **Default Config**.
@@ -149,7 +163,6 @@ You must perform this step last because you will lose access to the Admin; your 
 
    >[!INFO]
    >
-   >If you are setting up a base URL for {{site.data.var.ece}}, you must replace the first period with three dashes. For example, if your base URL is `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, enter `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
-
+   >If you are setting up a base URL for Adobe Commerce on cloud infrastructure, you must replace the first period with three dashes. For example, if your base URL is `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, enter `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. Click **Save Config**.

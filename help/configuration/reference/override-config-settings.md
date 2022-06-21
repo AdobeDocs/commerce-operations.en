@@ -11,7 +11,7 @@ You can override the value of _any_ configuration setting using environment vari
 
 >[!TIP]
 >
->Check out the [Configure environments](https://devdocs.magento.com/cloud/env/variables-intro.html) topic in the _Cloud_ guide for details on working with variables in Adobe Commerce on cloud infrastructure.
+>Check out the [Configure environments](https://devdocs.magento.com/cloud/env/variables-intro.html) topic in the _Commerce Cloud guide_ for details on working with variables in Adobe Commerce on cloud infrastructure.
 
 ## Environment variables
 
