@@ -20,6 +20,6 @@ bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 
 Where:
 
--  **`{xml file}`** is the full path and file name of a layout XML file to convert (required)
--  **`{xslt stylesheet}`** is the full path and file name of an XSLT stylesheet file to use for conversion (required)
--  **`-o|--overwrite`** include this option to overwrite the existing XML file
+-  `{xml file}`—is the full path and file name of a layout XML file to convert (required)
+-  `{xslt stylesheet}`—is the full path and file name of an XSLT stylesheet file to use for conversion (required)
+-  `-o|--overwrite`—include this option to overwrite the existing XML file

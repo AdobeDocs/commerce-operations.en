@@ -5,7 +5,7 @@ description: Learn to configure Redis as the default cache for Adobe Commerce an
 
 Magento provides command-line options to configure the Redis page and default caching. Although you can configure caching by editing the `<Magento install dir>app/etc/env.php` file, using the command line is the recommended method, especially for initial configurations. The command line provides validation, ensuring the configuration is syntactically correct.
 
-You must [install Redis](redis/config-redis.html#config-redis-install) before continuing.
+You must [install Redis](config-redis.md#install-redis) before continuing.
 
 ## Configure Redis default caching
 
@@ -159,7 +159,7 @@ To verify that Magento is talking to ElasiCache:
    ```
 
 1. Open a page in the Magento UI.
-1. Verify the [cache output](../cache/redis/redis-pg-cache.html#redis-verify) in your terminal.
+1. Verify the [cache output](#verify-redis-connection) in your terminal.
 
 ## New Redis cache implementation
 

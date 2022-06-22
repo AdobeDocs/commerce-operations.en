@@ -14,8 +14,8 @@ Commerce extends [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zen
 
 In general, the Magento application works with any backend cache that [Zend_Cache Backends](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) supports. However, this guide covers only the following low-level backend caches:
 
-- [Redis](cache/redis/config-redis.html)
-- [Database](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/partial-caching/database-caching.html)
+- [Redis](config-redis.md)
+- [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
 - File system (default): No configuration is necessary to use file system caching.
 
-[Varnish](cache/varnish/config-varnish.html) does not require setting up a low-level [cache backend](https://glossary.magento.com/cache-backend).
+[Varnish](config-varnish.md) does not require setting up a low-level cache backend.

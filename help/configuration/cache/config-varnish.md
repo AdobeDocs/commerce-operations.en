@@ -30,7 +30,7 @@ In the preceding figure, users' HTTP requests over the internet result in numero
 
 As the web server returns assets, cacheable assets are stored in Varnish. Any subsequent requests for those assets are fulfilled by Varnish (meaning, the requests do not reach the web server). Varnish returns cached content extremely quickly. The results are faster response times to return the content to users and a reduced number of requests that must be fulfilled by Magento.
 
-Assets cached by Varnish expire at a configurable interval or are replaced by newer versions of the same assets. You can also clear the cache manually either using the [Admin](https://glossary.magento.com/magento-admin) or the [`magento cache:clean`](../cli/config-cli-subcommands-cache.html) command.
+Assets cached by Varnish expire at a configurable interval or are replaced by newer versions of the same assets. You can also clear the cache manually either using the [Admin](https://glossary.magento.com/magento-admin) or the [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) command.
 
 ## Process overview
 
@@ -86,7 +86,7 @@ Varnish caching works with Magento using:
 
 - [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) from the Magento 2 GitHub repository
 - `.htaccess` distributed configuration file for Apache provided with Magento
-- `default.vcl` configuration for Varnish generated using the [Admin](../cache/config-varnish-magento.html)
+- `default.vcl` configuration for Varnish generated using the [Admin](../cache/config-varnish-magento.md)
 
 >[!INFO]
 >

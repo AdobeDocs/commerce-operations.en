@@ -11,7 +11,7 @@ Now that you are using the `default.vcl` generated for you by Magento, you can p
 
 Use `curl` or another utility to view HTTP response headers when you visit any Magento page in a web browser.
 
-First, make sure you are using Magento's [developer mode](configuration/cli/config-cli-subcommands-mode.html#change-to-developer-mode); otherwise, you will not see the headers.
+First, make sure you are using Magento's [developer mode](../cli/set-mode.md#change-to-developer-mode); otherwise, you will not see the headers.
 
 For example,
 
@@ -73,7 +73,6 @@ Make sure the `<magento_root>/var/page_cache` directory is empty:
    If the directory is empty, congratulations! You successfully configured Varnish and Magento to work together!
 
 1. If you cleared the `var/page_cache/` directory, restart Varnish.
-
 
 >[!TIP]
 >

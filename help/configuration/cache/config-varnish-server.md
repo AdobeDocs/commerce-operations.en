@@ -110,9 +110,7 @@ This should display error messages.
 >If Varnish does not start as a service, you must configure SELinux rules to allow it to run. Consult the following resources:
 >
 >- [flatlinesecurity](http://flatlinesecurity.com/posts/varnish-4-selinux/)
->
 >- [CentOS wiki](https://wiki.centos.org/HowTos/SELinux)
->
 >- [CentOS documentation](https://www.centos.org)
 
 ## Verify Varnish is working
@@ -126,7 +124,7 @@ Perform the tasks discussed in the following sections in the order shown:
 
 ### Start Varnish
 
-Enter `service varnish start`
+Enter: `service varnish start`
 
 If Varnish fails to start as a service, start it from the command line as follows:
 
@@ -200,11 +198,11 @@ backend default {
 
 Now you can verify that Varnish is serving pages by looking at [HTML](https://glossary.magento.com/html) response headers returned from any Magento page.
 
-Before you can look at headers, you must set Magento for developer mode. There are several ways to do it, the simplest of which is to modify `.htaccess` in the Magento 2 root. You can also use the [`magento deploy:mode:set`](configuration/cli/config-cli-subcommands-mode.html) command.
+Before you can look at headers, you must set Magento for developer mode. There are several ways to do it, the simplest of which is to modify `.htaccess` in the Magento 2 root. You can also use the [`magento deploy:mode:set`](../cli/set-mode.md) command.
 
 ### Set Magento for developer mode
 
-To set Magento for developer mode, use the [`magento deploy:mode:set`](configuration/cli/config-cli-subcommands-mode.html#change-to-developer-mode) command.
+To set Magento for developer mode, use the [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) command.
 
 ### Look at the Varnish log
 
@@ -260,4 +258,3 @@ Age: 0
 Via: 1.1 varnish-v6
 X-Magento-Cache-Debug: HIT
 ```
-

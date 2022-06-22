@@ -57,14 +57,14 @@ You can find the scope code either in the Magento database or in the Magento Adm
 **To Find the scope code in the Admin**:
 
 1. Log in to the Admin as a user who can view websites and store views.
-1. Click **Stores** > Settings > **All Stores**.
+1. Click **[!UICONTROL Stores]** > Settings > **[!UICONTROL All Stores]**.
 1. In the right pane, click the name of the website or store view to see its code.
 
    The following figure shows a sample website code.
 
    ![Get a website or store view code from the Admin](../../assets/configuration/website-code.png)
 
-1. Continue with [Set configuration values](#config-cli-config-set).
+1. Continue with [Set configuration values](#set-configuration-values-1).
 
 **To find the scope code in the database**:
 
@@ -146,8 +146,8 @@ The "wrong/config/path" does not exist
 
 See one of the following sections for more information:
 
-- [Set configuration values that can be edited in the Admin](#config-cli-config-set-edit)
-- [Set configuration values that cannot be edited in the Admin](#config-cli-config-file)
+- [Set configuration values that can be edited in the Admin](#set-configuration-values-that-can-be-edited-in-the-admin)
+- [Set configuration values that cannot be edited in the Admin](#set-configuration-values-that-cannot-be-edited-in-the-admin)
 
 ### Set configuration values that can be edited in the Admin
 

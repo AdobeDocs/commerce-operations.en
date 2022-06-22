@@ -1,6 +1,6 @@
 ---
 title: Set up multiple websites with Apache
-description:  Follow this tutorial to set up multiple websites with Apache.
+description: Follow this tutorial to set up multiple websites with Apache.
 ---
 
 # Set up multiple websites with Apache

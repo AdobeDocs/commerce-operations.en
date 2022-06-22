@@ -7,7 +7,7 @@ description: Learn how to configure Redis for session storage.
 
 >[!IMPORTANT]
 >
->You must [install Redis](redis/config-redis.html#config-redis-install) before continuing.
+>You must [install Redis](config-redis.md#install-redis) before continuing.
 
 
 Commerce now provides command-line options to configure Redis session storage. In previous releases, you edited the `<Magento install dir>app/etc/env.php` file. The command line provides validation and is the recommended configuration method, but you can still edit the `env.php` file.

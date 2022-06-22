@@ -79,7 +79,7 @@ Use this command to reindex all or selected indexers one time only.
 
 >[!INFO]
 >
->This command reindexes one time only. To keep indexers up to date, you must set up a [cron job](../cli/configure-cron-jobs.html).
+>This command reindexes one time only. To keep indexers up to date, you must set up a [cron job](../cli/configure-cron-jobs.md).
 
 Command options:
 
@@ -203,7 +203,7 @@ Use this command to set the following indexer options:
 -  **Update on save (`realtime`):** Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
 -  **Update by schedule (`schedule`):** Data is indexed according to the schedule set by your Magento cron job.
 
-[Learn more about indexing](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing.html)
+[Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
 ### Display the current configuration
 
@@ -249,9 +249,9 @@ bin/magento indexer:set-mode {realtime|schedule} [indexer]
 
 Where:
 
--  **`realtime`** - Sets the selected indexers to update on save.
--  **`schedule`** - Sets the specified indexers to save according to the cron schedule.
--  **`indexer`** - Is a space-separated list of indexers. Omit `indexer` to configure all indexers the same way.
+-  `realtime`—Sets the selected indexers to update on save.
+-  `schedule`—Sets the specified indexers to save according to the cron schedule.
+-  `indexer`—Is a space-separated list of indexers. Omit `indexer` to configure all indexers the same way.
 
 To view the list of indexers:
 

@@ -5,7 +5,7 @@ description: Learn how to set bootstrap parameters for the Commerce application.
 
 # Bootstrap parameters
 
-This topic demonstrates how to set the values of Commerce application bootstrap parameters. [See Overview of application initialization and bootstrapping](../bootstrap/magento-bootstrap.html).
+This topic demonstrates how to set the values of Commerce application bootstrap parameters. [See Overview of application initialization and bootstrapping](overview.md).
 
 The following table discusses the bootstrap parameters that you can set:
 
@@ -66,7 +66,7 @@ You can modify `.htaccess` in any of the following locations, depending on your 
 
 1. Open any of the preceding files in a text editor and either add or uncomment the desired setting.
 
-   For example, to specify a [mode](../bootstrap/application-modes.md), uncomment the following:
+   For example, to specify a [mode](application-modes.md), uncomment the following:
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug

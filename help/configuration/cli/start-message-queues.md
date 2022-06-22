@@ -31,4 +31,4 @@ See [queue:consumers:start](https://devdocs.magento.com/guides/v2.4/reference/cl
 
 >[!INFO]
 >
->The `--multi-process` option is present in the `queue:consumers:start` command, but to run consumers with parallel processes, configure the [`multiple_processes`](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html#configuration) option in `/app/etc/env.php`. Otherwise, if `queue:consumers:start` is called with the `--multi-process` option, it will only work on a single thread.
+>The `--multi-process` option is present in the `queue:consumers:start` command, but to run consumers with parallel processes, configure the [`multiple_processes`](../queues/manage-message-queues.md#configuration) option in `/app/etc/env.php`. Otherwise, if `queue:consumers:start` is called with the `--multi-process` option, it only works on a single thread.

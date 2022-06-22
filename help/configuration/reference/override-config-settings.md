@@ -19,7 +19,7 @@ An environment variable name consists of its scope followed by its configuration
 
 You can use variables for any of the following:
 
-- [Sensitive values](../reference/config-reference-sens.html) must be set using either environment variables or the [`magento config:sensitive:set`](../cli/set-configuration-values.md) command.
+- [Sensitive values](config-reference-sens.md) must be set using either environment variables or the [`magento config:sensitive:set`](../cli/set-configuration-values.md) command.
 - System-specific values must be set using:
 
   - Environment variables
@@ -28,10 +28,10 @@ You can use variables for any of the following:
 
 Configuration paths can be found in:
 
-- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.html)
-- [Payment configuration paths reference](../reference/config-reference-payment.html)
-- [Commerce B2B Extension configuration paths reference](../reference/config-reference-b2b.html)
-- [Other configuration paths reference](../reference/config-reference-most.html)
+- [Sensitive and system-specific configuration paths reference](config-reference-sens.md)
+- [Payment configuration paths reference](config-reference-payment.md)
+- [Commerce B2B Extension configuration paths reference](config-reference-b2b.md)
+- [Other configuration paths reference](config-reference-general.md)
 
 ### Variable names
 
@@ -55,11 +55,11 @@ The general format of system settings variable names follows:
 
    For more information about scopes, see:
 
-  - [Step 1: Find the website or store view scope value](#deploy-system-vars-scopes)
+  - [Step 1: Find the website or store view scope value](#step-1-find-the-website-or-store-view-scope-value)
   - [Magento User Guide topic on scope](https://docs.magento.com/user-guide/configuration/scope.html)
   - [Scope quick reference](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
 
-`<SYSTEM__VARIABLE__NAME>` is the configuration path with double underscore characters substituted for `/`. For more information, see [Step 2: Set system variables](#cloud-system-vars-sys).
+`<SYSTEM__VARIABLE__NAME>` is the configuration path with double underscore characters substituted for `/`. For more information, see [Step 2: Set system variables](#step-2-set-global-website-or-store-view-variables).
 
 ### Variable format
 
@@ -71,14 +71,14 @@ If a configuration path contains an underscore character, the underscore charact
 
 A complete list of configuration paths can be found in:
 
-- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.html)
-- [Payment configuration paths reference](../reference/config-reference-payment.html)
-- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.html)
-- [Other configuration paths reference](../reference/config-reference-most.html)
+- [Sensitive and system-specific configuration paths reference](config-reference-sens.md)
+- [Payment configuration paths reference](config-reference-payment.md)
+- [Magento Enterprise B2B Extension configuration paths reference](config-reference-b2b.md)
+- [Other configuration paths reference](config-reference-general.md)
 
-## Step 1: Find the website or store view scope value {#deploy-system-vars-scopes}
+## Step 1: Find the website or store view scope value
 
-This section discusses how you can find and set system configuration values per _scope_ (store view or website). To set global scope variables, see [Step 2:  Set global, website, or store view variables](#cloud-system-vars-sys).
+This section discusses how you can find and set system configuration values per _scope_ (store view or website). To set global scope variables, see [Step 2: Set global, website, or store view variables](#step-2-set-global-website-or-store-view-variables).
 
 Scope values come from the `store`, `store_group`, and `store_website` tables.
 
@@ -100,7 +100,7 @@ How to read the table:
   - The entire variable name is always ALL CAPS
   - Start a variable name with `CONFIG__` (note two underscore characters)
   - You can find the `<STORE_VIEW_CODE>` or `<WEBSITE_CODE>` portion of a variable name in either the Admin or the Magento database, as indicated in the following sections.
-  - You can find `<SYSTEM__VARIABLE__NAME>` as discussed in [Step 2:  Set global, website, or store view variables](#cloud-system-vars-sys).
+  - You can find `<SYSTEM__VARIABLE__NAME>` as discussed in [Step 2: Set global, website, or store view variables](#step-2-set-global-website-or-store-view-variables).
 
 ### Find a website or store view scope in the Admin
 
@@ -108,23 +108,23 @@ The following table summarizes how to find website or store view value in the Ad
 
 | Description  | Path in Admin | Variable name |
 |--------------|--------------|----------------------|
-| Create, edit, delete store views | **Stores** > **All Stores** | `CONFIG__STORES__<STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`  |
-| Create, edit, delete websites | **Stores** > **All Stores** | `CONFIG__WEBSITES__<WEBSITE_CODE>__<SYSTEM__VARIABLE__NAME>` |
+| Create, edit, delete store views | **[!UICONTROL Stores]** > **[!UICONTROL All Stores]** | `CONFIG__STORES__<STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`  |
+| Create, edit, delete websites | **[!UICONTROL Stores]** > **[!UICONTROL All Store]s** | `CONFIG__WEBSITES__<WEBSITE_CODE>__<SYSTEM__VARIABLE__NAME>` |
 
 For example, to find a website or store view scope value in the Admin:
 
 1. Log in to the Admin as a user authorized to view websites.
-1. Click **Stores** > **All Stores**.
+1. Click **[!UICONTROL Stores]** > **[!UICONTROL All Store]s**.
 1. Click the name of a website or store view.
 
    The right pane is displayed similar to the following.
 
    ![Find a website code](../../assets/configuration/website-code.png)
 
-1. The scope name is displayed in the **Code** field.
-1. Continue with [Step 2:  Set global, website, or store view variables](#cloud-system-vars-sys).
+1. The scope name is displayed in the **[!UICONTROL Code]** field.
+1. Continue with [Step 2: Set global, website, or store view variables](#step-2-set-global-website-or-store-view-variables).
 
-### Find a website or store view scope in the database {#cloud-vars-db}
+### Find a website or store view scope in the database
 
 To get these values from the database:
 
@@ -171,20 +171,20 @@ To get these values from the database:
 
     where `<SYSTEM__VARIABLE__NAME>` comes from the next section.
 
-## Step 2: Set global, website, or store view variables {#cloud-system-vars-sys}
+## Step 2: Set global, website, or store view variables
 
 This section discusses how to set system variables.
 
 - To set values for the global scope (that is, all websites, stores, and store views), start the variable name with `CONFIG__DEFAULT__`.
 
-- To set a value for a particular store view or website, start the variable name as discussed in [Step 1: Find the scope value](#deploy-system-vars-scopes):
+- To set a value for a particular store view or website, start the variable name as discussed in [Step 1: Find the scope value](#step-1-find-the-website-or-store-view-scope-value):
 
   - `CONFIG__WEBSITES`
   - `CONFIG__STORES`
 
 - The last part of the variable name is the configuration path, which is unique for each configuration setting.
 
-[See some examples](#cloud-system-vars-ex)
+[See some examples](#examples).
 
 The following table shows a few sample variables.
 
@@ -196,7 +196,7 @@ The following table shows a few sample variables.
 | Custom Admin URL | Advanced > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM`  |
 | Custom Admin Path  | Advanced > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
 
-## Examples {#cloud-system-vars-ex}
+## Examples
 
 This section shows how to find values of some sample variables.
 
@@ -218,7 +218,7 @@ To find the variable name for the shipping country origin:
 
 1. Determine the scope.
 
-   Find the scope in the [database](#deploy-system-vars-scopes) as discussed in Step 1: Find the website or store view scope value. (You can also find the value in the Admin as shown in the [table in Step 2: Set global, website, or store view variables](#cloud-system-vars-sys).
+   Find the scope in the [database](#find-a-website-or-store-view-scope-in-the-database) as discussed in Step 1: Find the website or store view scope value. (You can also find the value in the Admin as shown in the [table in Step 2: Set global, website, or store view variables](#step-2-set-global-website-or-store-view-variables.
 
    For example, the scope might be `CONFIG__WEBSITES__DEFAULT`.
 

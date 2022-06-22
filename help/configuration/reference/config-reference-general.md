@@ -5,9 +5,9 @@ description: See a list of general and advanced configuration values.
 
 # General and advanced configuration paths reference
 
-This topic lists general and advanced configuration paths and _not_ [sensitive and system-specific values](../reference/config-reference-sens.md). The [`magento app:config:dump` command](../cli/export-configuration.md) writes these values to the shared configuration file, `app/etc/config.php`, which should be in source control.
+This topic lists general and advanced configuration paths and _not_ [sensitive and system-specific values](config-reference-sens.md). The [`magento app:config:dump` command](../cli/export-configuration.md) writes these values to the shared configuration file, `app/etc/config.php`, which should be in source control.
 
-To optionally override any configuration settings or to set sensitive settings, see [Use environment variables to override configuration settings](../reference/config-reference-var-name.html).
+To optionally override any configuration settings or to set sensitive settings, see [Use environment variables to override configuration settings](override-config-settings.md#environment-variables).
 
 ## General category
 

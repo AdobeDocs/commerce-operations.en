@@ -42,7 +42,7 @@ The `vcl_hit` subroutine defines how Varnish responds to a request for objects t
 
 ### When the Magento backend is healthy
 
-When the health checks determine that the Magento backend is healthy, Varnish checks whether time remains in the grace period. The default grace period is 300 seconds, but a merchant can set the value from [Admin](https://glossary.magento.com/admin) as described in [Configure Magento to use Varnish](../cache/varnish/config-varnish-magento.html). If the grace period has not expired, Varnish delivers the stale content, and asynchronously refreshes the object from the Magento server. If the grace period has expired, Varnish serves the stale content and synchronously refreshes the object from the Magento backend.
+When the health checks determine that the Magento backend is healthy, Varnish checks whether time remains in the grace period. The default grace period is 300 seconds, but a merchant can set the value from [Admin](https://glossary.magento.com/admin) as described in [Configure Commerce to use Varnish](config-varnish-magento.md). If the grace period has not expired, Varnish delivers the stale content, and asynchronously refreshes the object from the Magento server. If the grace period has expired, Varnish serves the stale content and synchronously refreshes the object from the Magento backend.
 
 The maximum amount of time that Varnish serves a stale object is the sum of the grace period (300 seconds by default) and the TTL value (86400 seconds by default).
 

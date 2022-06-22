@@ -14,18 +14,18 @@ This topic lists configuration paths for Magento Enterprise B2B Extension. The [
 
 For those configuration paths, see:
 
-- [Payment configuration paths](../reference/config-reference-payment.html)
-- [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.html)
+- [Payment configuration paths](config-reference-payment.md)
+- [Sensitive and system-specific configuration paths reference](config-reference-sens.md)
 
-To optionally override any configuration settings or to set sensitive settings, see [Use environment variables to override configuration settings](../reference/config-reference-var-name.html).
+To optionally override any configuration settings or to set sensitive settings, see [Use environment variables to override configuration settings](override-config-settings.md#environment-variables).
 
 ## General category
 
-This section lists variable names and configuration paths available for options in the Admin under **Stores** > Settings > **Configuration** > **General**.
+This section lists variable names and configuration paths available for options in the Admin under **[!UICONTROL Stores]** > Settings > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
 
 ### B2B Features paths
 
-These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **General** > **B2B Features**.
+These configuration values are available in the Admin in **[!UICONTROL Stores]** > Settings > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
 
 | Name | Config path | Encrypted? | System-specific? | Sensitive? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -39,11 +39,11 @@ These configuration values are available in the Admin in **Stores** > Settings >
 
 ## Customers category
 
-This section lists variable names and config paths available for options in the Admin under **Stores** > Settings > **Configuration** > **Customers**.
+This section lists variable names and config paths available for options in the Admin under **[!UICONTROL Stores]** > Settings > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
 
 ### Company configuration paths
 
-These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Customers** > **Company Configuration**.
+These configuration values are available in the Admin in **[!UICONTROL Stores]** > Settings > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
 
 | Name | Config path | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|

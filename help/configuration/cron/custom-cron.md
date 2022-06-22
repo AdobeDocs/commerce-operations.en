@@ -10,8 +10,8 @@ If you use a Commerce-provided cron group, you do not have to define a custom cr
 The Commerce application provides the following cron groups:
 
 - `default`, which contains most cron jobs
-- `index`, which refreshes [indexers](../cli/config-cli-subcommands-index.html)
-- `consumers`, which runs message queue [consumers](../cli/config-cli-subcommands-queue.md)
+- `index`, which refreshes [indexers](../cli/manage-indexers.md)
+- `consumers`, which runs message queue [consumers](../cli/start-message-queues.md)
 - These topics are available in Adobe Commerce only
   - `staging`, which runs [Staging-related](https://docs.magento.com/user-guide/cms/content-staging.html) tasks
   - `catalog_event`, which runs tasks for target and shopping cart rules

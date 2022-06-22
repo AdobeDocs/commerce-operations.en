@@ -49,7 +49,7 @@ Where:
 |`job_name`|Unique ID for this cron job.|
 |`classpath`|Class to be instantiated (classpath).|
 |`method`|Method in `classpath` to call.|
-|`time`|Schedule in [cron format](http://www.nncron.ru/help/EN/working/cron-format.htm). Omit this parameter if the schedule is defined in the Magento database or other storage.|
+|`time`|Schedule in cron format. Omit this parameter if the schedule is defined in the Magento database or other storage.|
 
 The resulting `crontab.xml` with two groups may look like this:
 
@@ -114,7 +114,7 @@ Where:
 
 ## Disable a cron job
 
-Cron jobs do not have a `disable` feature like we have for [observers](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/events-and-observers.html#subscribing-to-events). However, a cron job can be disabled by using the following technique: `schedule` a time that contains a date which will never happen.
+Cron jobs do not have a `disable` feature like we have for [observers](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). However, a cron job can be disabled by using the following technique: `schedule` a time that contains a date which will never happen.
 
 For example, disable the `visitor_clean` cron job which defined in `Magento_Customer` module:
 

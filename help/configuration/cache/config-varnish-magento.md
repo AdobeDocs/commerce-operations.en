@@ -64,7 +64,7 @@ To export a Varnish configuration file from the Admin panel:
     }
    ```
 
-1. If you want to customize the Vagrant health checks or grace mode or saint mode configuration, see [Advanced Varnish configuration](../cache/varnish/config-varnish-advanced.html).
+1. If you want to customize the Vagrant health checks or grace mode or saint mode configuration, see [Advanced Varnish configuration](config-varnish-advanced.md).
 
 1. Restart Varnish and your web server:
 

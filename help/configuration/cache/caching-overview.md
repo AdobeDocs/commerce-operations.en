@@ -8,19 +8,19 @@ description: Learn about caching and how to configure cache mechanisms for the A
 
 - Set up the following [cache](https://glossary.magento.com/cache) mechanisms in the [!DNL Commerce] configuration:
 
-  - [Database](https://devdocs.magento.com/guides/2.4/extension-dev-guide/cache/partial-caching/database-caching.html)
-  - [Redis](cache/config-redis.html)
+  - [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
+  - [Redis](config-redis.md)
   - File system (default): No configuration is necessary to use default file system caching.
 
-- Set up the [Varnish](cache/config-varnish.html) without modifying the [!DNL Commerce]configuration.
+- Set up the [Varnish](config-varnish.md) without modifying the [!DNL Commerce]configuration.
 
 ## Caching terminology
 
 [!DNL Commerce] uses the following caching terminology:
 
-- **Frontend**—Similar to an interface or gateway to cache storage, implemented by [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Frontend).
-- **Cache types**—Can be one of the types provided with [!DNL Commerce] or you can [create your own](https://devdocs.magento.com/guides/2.4/extension-dev-guide/cache/partial-caching/create-cache-type.html).
-- **Backend**—Specifies details about [cache storage](http://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implemented by [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Backend)
+- **Frontend**—Similar to an interface or gateway to cache storage, implemented by [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
+- **Cache types**—Can be one of the types provided with [!DNL Commerce] or you can [create your own](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
+- **Backend**—Specifies details about [cache storage](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implemented by [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
 - **Two-level backend**—Stores cache records in two backends: a faster one and a slower one.
 
   >[!INFO]
@@ -39,4 +39,4 @@ description: Learn about caching and how to configure cache mechanisms for the A
 
 >[!TIP]
 >
->Varnish does not require changes to the [!DNL Commerce] configuration. See [Configure and use Varnish](cache/config-varnish.html).
+>Varnish does not require changes to the [!DNL Commerce] configuration. See [Configure and use Varnish](config-varnish.md).
