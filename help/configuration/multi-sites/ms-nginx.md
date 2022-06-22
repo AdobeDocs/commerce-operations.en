@@ -280,4 +280,4 @@ Unless you have DNS set up for your stores' URLs, you must add a static route to
 
 - If your French and German sites return 404s but your Admin loads, make sure you completed [Step 6: Add the store code to the base URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - If all URLs return 404s, make sure you restarted your web server.
-- If the Admin doesn't function properly, make sure you set up your virtual hosts properly.
+- If the Admin does not function properly, make sure you set up your virtual hosts properly.

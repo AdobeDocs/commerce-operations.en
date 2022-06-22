@@ -17,7 +17,7 @@ If necessary, copy the existing `index.php` entry point script for your website 
 
 - You use one virtual host per website; the virtual host configuration file is `/etc/httpd/httpd.conf`
 
-    Different versions of Apache on different operating systems set up virtual hosts differently. Consult the [Apache documentation](https://httpd.apache.org/docs/2.4/vhosts) or a network administrator if you're not sure how to set up a virtual host.
+    Different versions of Apache on different operating systems set up virtual hosts differently. Consult the [Apache documentation](https://httpd.apache.org/docs/2.4/vhosts) or a network administrator if you are not sure how to set up a virtual host.
 
 - The Commerce software is installed in `/var/www/html/magento2`
 - You have two websites other than the default:
@@ -110,4 +110,4 @@ Unless you have DNS set up for your stores' URLs, you must add a static route to
 
 - If your French and German sites return 404s but your Admin loads, make sure you completed [Step 6: Add the store code to the base URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - If all URLs return 404s, make sure you restarted your web server.
-- If the Admin doesn't function properly, make sure you set up your virtual hosts properly.
+- If the Admin does not function properly, make sure you set up your virtual hosts properly.

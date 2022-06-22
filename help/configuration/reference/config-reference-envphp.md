@@ -248,7 +248,7 @@ Magento session configurations are stored in the `session` node.
 ],
 ```
 
-Learn more about [Session]({{}}).
+Learn more about [Session](../storage/sessions.md).
 
 ## x-frame-options
 
@@ -258,7 +258,7 @@ x-frame-options header can be configured using this node.
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-Learn more about [x-frame-options]({{}}).
+Learn more about [x-frame-options](../security/xframe-options.md).
 
 ## system
 

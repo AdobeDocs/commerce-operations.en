@@ -113,7 +113,7 @@ To change the website base URL:
 
    >[!INFO]
    >
-   >If you are setting up a base URL for deployment {{site.data.var.ece}}, you must replace the first period with three dashes. For example, if your base URL is `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, enter `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`. If you are setting up a base URL for local testing, use a period.
+   >If you are setting up a base URL for deployment Adobe Commerce on cloud infrastructure, you must replace the first period with three dashes. For example, if your base URL is `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, enter `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`. If you are setting up a base URL for local testing, use a period.
 
 1. Click **Save Config**.
 

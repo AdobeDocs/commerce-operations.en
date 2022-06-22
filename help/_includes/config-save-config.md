@@ -11,7 +11,7 @@
    php bin/magento app:config:dump
    ```
 
-   For example, if Magento is installed in `/var/www/html/magento2`, enter:
+   For example, if Commerce is installed in `/var/www/html/magento2`, enter:
 
    ```bash
    cd /var/www/html/magento2
@@ -29,14 +29,14 @@
    ```terminal
    On branch m2.2_deploy
    Changed but not updated:
-     (use "git add &lt;file>..." to update what will be committed)
-     (use "git checkout -- &lt;file>..." to discard changes in working directory)
+     (use "git add <file>..." to update what will be committed)
+     (use "git checkout -- <file>..." to discard changes in working directory)
           modified:   app/etc/config.php
    ```
 
    >[!WARNING]
    >
-   >Do _not_ submit changes to the `generated`, `pub/media`, or `pub/static` directories to source control. You'll generate those files on your build system. The development system likely has code, themes, and so on, that are not ready for use on the production system.
+   >Do _not_ submit changes to the `generated`, `pub/media`, or `pub/static` directories to source control. You generate those files on your build system. The development system likely has code, themes, and so on, that are not ready for use on the production system.
 
 1. Check in your changes to `app/etc/config.php` only to source control.
 
