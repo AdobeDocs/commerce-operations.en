@@ -9,12 +9,12 @@ description: Learn how to run the code compiler from the command line.
 
 Code compilation includes the following (in no particular order):
 
--  Application code generation (factories, proxies)
--  Area configuration aggregation (optimized [dependency injection](https://glossary.magento.com/dependency-injection) configurations per area)
--  Interceptor generation (optimized code generation of interceptors)
--  Interception cache generation
--  Repositories code generation (generated code for APIs)
--  Service data attributes generation (generated [extension](https://glossary.magento.com/extension) classes for data objects)
+- Application code generation (factories, proxies)
+- Area configuration aggregation (optimized [dependency injection](https://glossary.magento.com/dependency-injection) configurations per area)
+- Interceptor generation (optimized code generation of interceptors)
+- Interception cache generation
+- Repositories code generation (generated code for APIs)
+- Service data attributes generation (generated [extension](https://glossary.magento.com/extension) classes for data objects)
 
 You can find code compilation classes in the [\Magento\Setup\Module\Di\App\Task\Operation][operation] namespace.
 

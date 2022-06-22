@@ -14,7 +14,6 @@ The Remote Storage module provides the option to store media files and schedule 
 >
 >The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service.
 
-
 ![schema image](../../assets/configuration/remote-storage-schema.png)
 
 ## Remote storage options
@@ -40,7 +39,7 @@ The `parameter-name` refers to the specific remote storage parameter name. The f
 
 The default storage location is in the local filesystem. A _storage adapter_ enables you to connect to a storage service and store your files anywhere. [!DNL Commerce] supports configuring the following storage services:
 
--  [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
+- [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
 ## Enable remote storage
 
@@ -48,17 +47,17 @@ You can install remote storage during a new [!DNL Commerce] installation or add 
 
 The following examples enable the remote storage with an AWS S3 storage adapter in the US:
 
--  Install new [!DNL Commerce] with remote storage
+- Install new [!DNL Commerce] with remote storage
 
-   ```bash
-   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
--  Enable remote storage on existing [!DNL Commerce]
+- Enable remote storage on existing [!DNL Commerce]
 
-   ```bash
-   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 ## Limitations
 

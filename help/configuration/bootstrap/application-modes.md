@@ -7,12 +7,12 @@ desciption: The Commerce application can operate in different modes depending on
 
 You can run the Commerce application in any of the following _modes_:
 
-Module name | Description
------------ | -----------
-default     | Enables you to deploy the Magento application on a single server without changing any settings. However, default mode is not optimized for production.<br>To deploy the Magento application on more than one server or to optimize it for production, change to one of the other modes.<ul><li>Static view file caching is enabled</li><li>Exceptions are not displayed to the user; instead, exceptions are written to log files.</li><li>Hides custom `X-Magento-*` HTTP request and response headers</li></ul>
-developer   | Intended for development only, this mode:<ul><li>Disables static view file caching</li><li>Provides verbose logging</li><li>Enables [automatic code compilation](../cli/code-compiler.md)</li><li>Enables enhanced debugging</li><li>Shows custom `X-Magento-*` HTTP request and response headers</li><li>Results in the slowest performance</li><li>Shows errors on the frontend</li></ul>
-production  | Intended for deployment on a production system, this mode:<ul><li>Does not show exceptions to the user (exceptions are written to logs only).</li><li>Serves static view files from cache only.</li><li>Prevents automatic code file compilation. New or updated files are not written to the file system.</li><li>**Does not allow you to enable or disable cache types in Admin.** [More information about enabling and disabling the cache](../cli/manage-cache.md#config-cli-subcommands-cache-en).</li><li>Some fields, such as the Advanced and Developer system configuration sections in the Admin, are not available in production mode.</li></ul>
-maintenance | Intended to prevent access to a site while it is being updated or reconfigured, this mode:<ul><li>Redirects site visitors to a default `Service Temporarily Unavailable` page.</li><li>When the site is in maintenance mode, the `var/` directory contains the `.maintenance.flag` file.</li><li>You can configure maintenance mode to allow visitor access from a specified list of IP addresses.</li></ul>
+| Module name | Description |
+| ----------- | ----------- |
+| default     | Enables you to deploy the Magento application on a single server without changing any settings. However, default mode is not optimized for production.<br>To deploy the Magento application on more than one server or to optimize it for production, change to one of the other modes.<ul><li>Static view file caching is enabled</li><li>Exceptions are not displayed to the user; instead, exceptions are written to log files.</li><li>Hides custom `X-Magento-*` HTTP request and response headers</li></ul> |
+| developer   | Intended for development only, this mode:<ul><li>Disables static view file caching</li><li>Provides verbose logging</li><li>Enables [automatic code compilation](../cli/code-compiler.md)</li><li>Enables enhanced debugging</li><li>Shows custom `X-Magento-*` HTTP request and response headers</li><li>Results in the slowest performance</li><li>Shows errors on the frontend</li></ul> |
+|production  | Intended for deployment on a production system, this mode:<ul><li>Does not show exceptions to the user (exceptions are written to logs only).</li><li>Serves static view files from cache only.</li><li>Prevents automatic code file compilation. New or updated files are not written to the file system.</li><li>**Does not allow you to enable or disable cache types in Admin.** [More information about enabling and disabling the cache](../cli/manage-cache.md#config-cli-subcommands-cache-en).</li><li>Some fields, such as the Advanced and Developer system configuration sections in the Admin, are not available in production mode.</li></ul> |
+| maintenance | Intended to prevent access to a site while it is being updated or reconfigured, this mode:<ul><li>Redirects site visitors to a default `Service Temporarily Unavailable` page.</li><li>When the site is in maintenance mode, the `var/` directory contains the `.maintenance.flag` file.</li><li>You can configure maintenance mode to allow visitor access from a specified list of IP addresses.</li></ul> |
 
 >[!INFO]
 >
@@ -26,9 +26,9 @@ To deploy the Magento application on more than one server or to optimize it for 
 
 In default mode:
 
--  Errors are logged to the file reports at server, and never shown to a user
--  Static view files are cached
--  Default mode is not optimized for a production environment, primarily because of the adverse performance impact of [static files](https://glossary.magento.com/static-files) being dynamically generated rather than materialized. In other words, creating static files and caching them has a greater performance impact than generating them using the static files creation tool.
+- Errors are logged to the file reports at server, and never shown to a user
+- Static view files are cached
+- Default mode is not optimized for a production environment, primarily because of the adverse performance impact of [static files](https://glossary.magento.com/static-files) being dynamically generated rather than materialized. In other words, creating static files and caching them has a greater performance impact than generating them using the static files creation tool.
 
 See [Set the operation mode](../cli/set-mode.md).
 
@@ -38,11 +38,11 @@ Run the Commerce application in developer mode when you are extending or customi
 
 In developer mode:
 
--  Static view files are not cached; they are written to the Magento `pub/static` directory every time they are called
--  Uncaught exceptions display in the browser
--  System logging in `var/report` is verbose
--  An [exception](https://glossary.magento.com/exception) is thrown in the error handler, rather than being logged
--  An exception is thrown when an [event](https://glossary.magento.com/event) subscriber cannot be invoked
+- Static view files are not cached; they are written to the Magento `pub/static` directory every time they are called
+- Uncaught exceptions display in the browser
+- System logging in `var/report` is verbose
+- An [exception](https://glossary.magento.com/exception) is thrown in the error handler, rather than being logged
+- An exception is thrown when an [event](https://glossary.magento.com/event) subscriber cannot be invoked
 
 See [Set the operation mode](../cli/set-mode.md).
 

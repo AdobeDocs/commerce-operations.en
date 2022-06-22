@@ -103,9 +103,9 @@ This section lists variable names and config paths available for options in the 
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Customers** > **Customer Configuration**.
 
-Name  | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
+| Name  | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
-Default Email Domain | `customer/create_account/email_domain` | <!-- ![Not EE-only][red-x] --> | | ![Sys-specific][sys] |
+| Default Email Domain | `customer/create_account/email_domain` | <!-- ![Not EE-only][red-x] --> | | ![Sys-specific][sys] |
 
 ## Catalog category
 

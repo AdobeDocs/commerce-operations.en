@@ -11,8 +11,8 @@ Magento translations enable you to customize and localize your store for multipl
 
 This topic discusses how to generate:
 
--  **Translation dictionaries** are a convenient way to customize or translate _some_ words and phrases, such as those for a custom module or theme.
--  **Language packages** enable you to translate _any or all_ words and phrases in the Magento application.
+- **Translation dictionaries** are a convenient way to customize or translate _some_ words and phrases, such as those for a custom module or theme.
+- **Language packages** enable you to translate _any or all_ words and phrases in the Magento application.
 
 See [Translations overview][].
 
@@ -92,7 +92,7 @@ This section discusses how to create a language package, which writes CSV files 
 
 1. [Collect and translate words and phrases](#config-cli-subcommands-xlate-dict).
 
-  (The `--magento` parameter is required.)
+   (The `--magento` parameter is required.)
 
 1. [Run the language package command](#config-cli-subcommands-xlate-pack-cmd).
 1. [Create directories and files](#m2devgde-xlate-files).
@@ -119,10 +119,10 @@ The following table explains the parameters and values for the language package 
 
 Language packages are located in a directory under `app/i18n/<VendorName>` in the Magento file system with the following contents:
 
--  Required license files
--  `composer.json`
--  `registration.php` that [registers][] the language package
--  [`language.xml`](#config-cli-subcommands-xlate-pack-meta-xml) meta-information file
+- Required license files
+- `composer.json`
+- `registration.php` that [registers][] the language package
+- [`language.xml`](#config-cli-subcommands-xlate-pack-meta-xml) meta-information file
 
 >[!INFO]
 >
@@ -160,11 +160,11 @@ To declare a package, specify the following information:
 
 Where:
 
--  **`<code>`:** Language package locale (required)
--  **`<vendor>`:** Module's vendor name (required)
--  **`<package>`:** Language package name (required)
--  **`<sort_order>`:** Priority of uploading a package when there are several language packages available for a store
--  **`<use>`:** Parent language package locale from which to inherit dictionaries
+- `<code>`—Language package locale (required)
+- `<vendor>`—Module's vendor name (required)
+- `<package>`—Language package name (required)
+- `<sort_order>`—Priority of uploading a package when there are several language packages available for a store
+- `<use>`—Parent language package locale from which to inherit dictionaries
 
 If necessary, you can specify several parent packages. The parent packages are applied on a first listed, first used basis.
 
@@ -187,8 +187,8 @@ If a language package inherits from two packages, its `language.xml` might look 
 
 In the preceding example:
 
--  `language_package_one` inherits from `en_au_package` and `en_au_package` inherits from `en_ie_package`
--  `language_package_two` inherits from `en_ca_package` and `en_ca_package` inherits from `en_us_package`
+- `language_package_one` inherits from `en_au_package` and `en_au_package` inherits from `en_ie_package`
+- `language_package_two` inherits from `en_ca_package` and `en_ca_package` inherits from `en_us_package`
 
 If the Magento application cannot find word or phrase in the `en_GB` package, it looks in other packages in following sequence:
 
@@ -211,8 +211,8 @@ To enable an additional package for an existing language, name the new package a
 
 The following sections provide end-to-end examples of using the commands discussed in this topic to create translation dictionaries and translation packages:
 
--  [Example: Create a translation dictionary for a module or theme](#config-cli-subcommands-xlate-example1)
--  [Example: Create a language package](#config-cli-subcommands-xlate-example2)
+- [Example: Create a translation dictionary for a module or theme](#example-create-a-translation-dictionary-for-a-module-or-theme)
+- [Example: Create a language package](#create-a-language-package)
 
 ### Example: Create a translation dictionary for a module or theme
 
@@ -228,7 +228,7 @@ To add a German translation to a module or theme that you want to distribute to 
    >
    >The CSV file name must _exactly match_ the locale, including the characters' case.
 
-1. Translate the words and phrases using [these guidelines](#config-cli-subcommands-xlate-dict-trans).
+1. Translate the words and phrases using [these guidelines](#translation-guidelines).
 1. If necessary, copy `xx_YY.csv` to `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` or to the module's theme directory (depending on whether the translation dictionary is for a module or a theme).
 
 ### Example: Create a language package
@@ -245,7 +245,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    >
    >The CSV file name must _exactly match_ the locale, including the characters' case.
 
-1. Translate the words and phrases using [these guidelines](#config-cli-subcommands-xlate-dict-trans).
+1. Translate the words and phrases using [these guidelines](#translation-guidelines).
 1. Create the language package.
 
    ```bash
@@ -258,12 +258,12 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
 
 1. In that directory, add all of the following:
 
-   -  A license, if required
-   -  `composer.json` (sample following)
-   -  `registration.php` (sample following)
-   -  `language.xml` (sample following)
+   - A license, if required
+   - `composer.json` (sample following)
+   - `registration.php` (sample following)
+   - `language.xml` (sample following)
 
-   **Sample `composer.json`:**
+   **Sample `composer.json`**:
 
    ```json
    {
@@ -286,7 +286,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    }
    ```
 
-   **Sample `registration.php`:**
+   **Sample `registration.php`**:
 
    ```php
    <?php
@@ -304,16 +304,14 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    );
    ```
 
-   **Sample `language.xml`:**
+   **Sample `language.xml`**:
 
    ```xml
    <?xml version="1.0"?>
-   <!--
-
-    /**
-    * Copyright © Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
-    */-->
+   /**
+   * Copyright © Magento, Inc. All rights reserved.
+   * See COPYING.txt for license details.
+   */
 
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
        <code>xx_YY</code>

@@ -39,7 +39,7 @@ To set a configuration value, you must know at least one of the following:
 - The configuration path
 - To set a configuration value for a particular scope, you must know the scope code.
 
-   To set a configuration value for the default scope, you do not need to do anything.
+  To set a configuration value for the default scope, you do not need to do anything.
 
 ### Find the configuration path
 
@@ -123,14 +123,14 @@ bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 
 The following table describes the `set` command parameters:
 
-Parameter | Description
---- | ---
-`--scope` | The scope of the configuration. The possible values are `default`, `website`, or `store`. The default is `default`.
-`--scope-code` | The scope code of configuration (website code or store view code)
-`-le or --lock-env` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Magento base dir>/app/etc/env.php` file.
-`-lc or --lock-config` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Magento base dir>/app/etc/config.php` file. The `--lock-config` option overwrites `--lock-env` if you specify both options.
-`path` | _Required_. The configuration path
-`value` | _Required_. The value of the configuration
+| Parameter | Description |
+| --- | --- |
+| `--scope` | The scope of the configuration. The possible values are `default`, `website`, or `store`. The default is `default`. |
+| `--scope-code` | The scope code of configuration (website code or store view code) |
+| `-le or --lock-env` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Magento base dir>/app/etc/env.php` file. |
+| `-lc or --lock-config` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Magento base dir>/app/etc/config.php` file. The `--lock-config` option overwrites `--lock-env` if you specify both options. |
+| `path` | _Required_. The configuration path |
+| `value` | _Required_. The value of the configuration |
 
 >[!INFO]
 >

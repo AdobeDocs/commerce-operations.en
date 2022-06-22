@@ -18,8 +18,8 @@ Static view files are located in the `<magento_root>/pub/static` directory, and 
 
 Static view files deployment is affected by application modes as follows:
 
--  [Default](../bootstrap/application-modes.md#default-mode) and [developer](../bootstrap/application-modes.md#developer-mode) modes: Magento generates them on demand, but the rest are cached in a file for speed of access.
--  [Production](../bootstrap/application-modes.md#production-mode) mode: Static files are _not_ generated or cached.
+- [Default](../bootstrap/application-modes.md#default-mode) and [developer](../bootstrap/application-modes.md#developer-mode) modes: Magento generates them on demand, but the rest are cached in a file for speed of access.
+- [Production](../bootstrap/application-modes.md#production-mode) mode: Static files are _not_ generated or cached.
 
 You must write static view files to the Magento file system manually using the command discussed in this topic; after that, you can restrict permissions to limit your vulnerabilities and to prevent accidental or malicious overwriting of files.
 
@@ -45,29 +45,29 @@ You must write static view files to the Magento file system manually using the c
 
 The following table explains this command's parameters and values.
 
-Option | Description | Required?
------- | ----------- | ---------
-`<languages>` | Space-separated list of [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) language codes for which to output static view files. (Default is `en_US`.)<br>Find the list by running: `bin/magento info:language:list` | No
-`--language (-l)` | Generate files only for the specified languages. The default, with no option specified, is to generate files for all ISO-639 language codes. You can specify the name of one language code at a time. Default value is **all**.<br>For example: `--language en_US --language es_ES` | No
-`--exclude-language`| Generate files for the specified language codes. The default, with no option specified, is to exclude nothing. You can specify the name of one language code or a comma-separated list of language codes. Default value is **none**. | No
-`--theme <theme>`| hemes for which to deploy static content. Default value is **all**.<br>For example: `--theme Magento/blank --theme Magento/luma` | No
-`--exclude-theme <theme>`| Themes to exclude when deploying static content. Default value is **none**.<br>For example, `--exclude-theme Magento/blank` | No
-`--area (-a)`| Generate files only for the specified areas. The default, with no option specified, is to generate files for all areas. Valid values are `adminhtml` and `frontend`. Default value is **all**.<br>For example: `--area adminhtml` | No
-`--exclude-area` | Do not generate files for the specified areas. The default, with no option specified, is to exclude nothing. Default value is **none**. | No
-`--jobs (-j)` | Enable parallel processing using the specified number of jobs. The default is 0 (do not run in parallel processes). Default value is **0**. | No
-`--symlink-locale` | Create symlinks for the files of those locales, which are passed for deployment, but have no customizations. | No
-`--content-version=CONTENT-VERSION` | Custom version of static content can be used if running deployment on multiple nodes to ensure that static content version is identical and caching works properly. | No
-`--no-javascript` | Do not deploy JavaScript files | No
-`--no-css` | Do not deploy CSS files. | No
-`--no-less` | Do not deploy LESS files. | No
-`--no-images` | Do not deploy images. | No
-`--no-fonts` | Do not deploy font files. | No
-`--no-html` | Do not deploy HTML files. | No
-`--no-misc` | Do not deploy other types of files: MD, JBF, CSV, JSON, TXT, HTC, SWF | No
-`--no-html-minify` | Do not minify HTML files. | No
-`-s <quick\|standard\|compact>` | Define the deployment strategy. Use these options only if you have more than one local.<ul><li>Use the [quick strategy](static-view-file-strategy.md#quick-strategy) to minimize deployment time. This is the default command option if not specified.</li><li>Use the [standard strategy](static-view-file-strategy.md#standard-strategy) to deploy all static view files for all packages.</li><li>Use the [compact strategy](static-view-file-strategy.md#compact-strategy) to conserve disk space on the server.</li></ul> | No
-`--no-parent` | Do not generate files for the parent themes of the current theme. It is strongly recommended to use this flag if you do not explicitly use the parent theme of the current theme you are trying to deploy. This significantly increases the speed of the process. This flag is available in Magento 2.4.2 | No
-`--force (-f)` | Deploy files in any mode. (by default, the static content deployment tool can be run only in production mode. Use this option to run it in default or developer mode). | No
+| Option | Description | Required? |
+| ------ | ----------- | --------- |
+| `<languages>` | Space-separated list of [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) language codes for which to output static view files. (Default is `en_US`.)<br>Find the list by running: `bin/magento info:language:list` | No |
+| `--language (-l)` | Generate files only for the specified languages. The default, with no option specified, is to generate files for all ISO-639 language codes. You can specify the name of one language code at a time. Default value is **all**.<br>For example: `--language en_US --language es_ES` | No |
+| `--exclude-language`| Generate files for the specified language codes. The default, with no option specified, is to exclude nothing. You can specify the name of one language code or a comma-separated list of language codes. Default value is **none**. | No |
+| `--theme <theme>`| hemes for which to deploy static content. Default value is **all**.<br>For example: `--theme Magento/blank --theme Magento/luma` | No |
+| `--exclude-theme <theme>`| Themes to exclude when deploying static content. Default value is **none**.<br>For example, `--exclude-theme Magento/blank` | No |
+| `--area (-a)`| Generate files only for the specified areas. The default, with no option specified, is to generate files for all areas. Valid values are `adminhtml` and `frontend`. Default value is **all**.<br>For example: `--area adminhtml` | No |
+| `--exclude-area` | Do not generate files for the specified areas. The default, with no option specified, is to exclude nothing. Default value is **none**. | No |
+| `--jobs (-j)` | Enable parallel processing using the specified number of jobs. The default is 0 (do not run in parallel processes). Default value is **0**. | No |
+| `--symlink-locale` | Create symlinks for the files of those locales, which are passed for deployment, but have no customizations. | No |
+| `--content-version=CONTENT-VERSION` | Custom version of static content can be used if running deployment on multiple nodes to ensure that static content version is identical and caching works properly. | No |
+| `--no-javascript` | Do not deploy JavaScript files | No |
+| `--no-css` | Do not deploy CSS files. | No |
+| `--no-less` | Do not deploy LESS files. | No |
+| `--no-images` | Do not deploy images. | No |
+| `--no-fonts` | Do not deploy font files. | No |
+| `--no-html` | Do not deploy HTML files. | No |
+| `--no-misc` | Do not deploy other types of files: MD, JBF, CSV, JSON, TXT, HTC, SWF | No |
+| `--no-html-minify` | Do not minify HTML files. | No |
+| `-s <quick\|standard\|compact>` | Define the deployment strategy. Use these options only if you have more than one local.<ul><li>Use the [quick strategy](static-view-file-strategy.md#quick-strategy) to minimize deployment time. This is the default command option if not specified.</li><li>Use the [standard strategy](static-view-file-strategy.md#standard-strategy) to deploy all static view files for all packages.</li><li>Use the [compact strategy](static-view-file-strategy.md#compact-strategy) to conserve disk space on the server.</li></ul> | No |
+| `--no-parent` | Do not generate files for the parent themes of the current theme. It is strongly recommended to use this flag if you do not explicitly use the parent theme of the current theme you are trying to deploy. This significantly increases the speed of the process. This flag is available in Magento 2.4.2 | No |
+| `--force (-f)` | Deploy files in any mode. (by default, the static content deployment tool can be run only in production mode. Use this option to run it in default or developer mode). | No |
 
 >[!INFO]
 >

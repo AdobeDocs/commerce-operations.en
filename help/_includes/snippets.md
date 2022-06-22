@@ -7,6 +7,7 @@
 >The [!DNL Upgrade Compatibility Tool] is available for Adobe Commerce instances only.
 
 <!-- Configuration guide snippets -->
+
 ## File system owner {#file-system-owner}
 
 >[!WARNING]

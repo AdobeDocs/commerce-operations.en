@@ -140,21 +140,21 @@ All exceptions from cron jobs are logged by `\Magento\Cron\Observer\ProcessCronQ
 
 In addition to being logged in `cron.log`:
 
--  Failed jobs with `ERROR` and `MISSED` statuses are logged to the `<install_directory>/var/log/support_report.log`.
+- Failed jobs with `ERROR` and `MISSED` statuses are logged to the `<install_directory>/var/log/support_report.log`.
 
--  Jobs with an `ERROR` status are always logged as `CRITICAL` in `<install_directory>/var/log/exception.log`.
+- Jobs with an `ERROR` status are always logged as `CRITICAL` in `<install_directory>/var/log/exception.log`.
 
--  Jobs with a `MISSED` status are logged as `INFO` in the `<install_directory>/var/log/debug.log` directory (developer mode only).
+- Jobs with a `MISSED` status are logged as `INFO` in the `<install_directory>/var/log/debug.log` directory (developer mode only).
 
 >[!INFO]
 >
 >All cron data is also written to the `cron_schedule` table in the Magento database. The table provides a history of cron jobs, including:
 >
->-  Job ID and code
->-  Status
->-  Created date
->-  Scheduled date
->-  Executed date
->-  Finished date
+>- Job ID and code
+>- Status
+>- Created date
+>- Scheduled date
+>- Executed date
+>- Finished date
 >
 >To see records in the table, log in to the Magento database on the command line and enter `SELECT * from cron_schedule;`.

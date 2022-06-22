@@ -7,20 +7,20 @@ description: Use the Commerce command-line tool to run installation and configur
 
 Commerce has one command-line interface (CLI)—`<magento_root>/bin/magento`—that runs installation and configuration tasks, including:
 
--  Installing Commerce (and related tasks such as update the database schema, create a deployment configuration)
--  Clearing the cache
--  Managing indexes, including reindexing
--  Creating translation dictionaries and translation packages
--  Generating non-existent classes such as factories and interceptors for plug-ins, generating the dependency injection configuration for the object manager
--  Deploying static view files
--  Creating CSS from Less
+- Installing Commerce (and related tasks such as update the database schema, create a deployment configuration)
+- Clearing the cache
+- Managing indexes, including reindexing
+- Creating translation dictionaries and translation packages
+- Generating non-existent classes such as factories and interceptors for plug-ins, generating the dependency injection configuration for the object manager
+- Deploying static view files
+- Creating CSS from Less
 
 Additional benefits include:
 
--  A single command (`<magento_root>/bin/magento list`) lists all available installation and configuration commands.
--  Consistent user interface based on Symfony.
--  The CLI is extensible so third-party developers can "plug in" to it. This has the additional benefit of eliminating users' learning curve.
--  Commands for disabled modules do not display.
+- A single command (`<magento_root>/bin/magento list`) lists all available installation and configuration commands.
+- Consistent user interface based on Symfony.
+- The CLI is extensible so third-party developers can "plug in" to it. This has the additional benefit of eliminating users' learning curve.
+- Commands for disabled modules do not display.
 
 This topic discusses configuring the Adobe Commerce and Magento Open Source software using the CLI. For information about installing Commerce, see [Installation overview](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) in the _Installation guide_.
 

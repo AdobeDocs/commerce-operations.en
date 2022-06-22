@@ -59,7 +59,7 @@ To continue configuring server-side image resizing, you must prepare the `nginx.
 
 1. [_Optional_] Configure a `proxy_pass` value for your specific adapter.
 
-   -  [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
+   - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
 <!-- link definitions -->
 

@@ -43,14 +43,14 @@ For the most optimized result, three scopes for possible similarity are allocate
 
 The files are deployed to these subdirectories according to the following patterns.
 
-Pattern | Description
-------- | -----------
-`<area>/<theme>/<locale>`      | Files specific for a particular area, theme, and locale
-`<area>/<theme>/default`       | Files similar for all locales of a particular theme of a particular area.
-`<area>/Magento/base/<locale>` | Files specific for a particular area and locale, but similar for all themes.
-`<area>/Magento/base/default`  | Files specific for a particular area, but similar for all themes and locales.
-`base/Magento/base/<locale>`   | Files similar for all areas and themes, but specific to a particular locale.
-`base/Magento/base/default`    | Similar for all areas, themes, and locales.
+| Pattern | Description |
+| ------- | ----------- |
+| `<area>/<theme>/<locale>`      | Files specific for a particular area, theme, and locale |
+| `<area>/<theme>/default`       | Files similar for all locales of a particular theme of a particular area. |
+| `<area>/Magento/base/<locale>` | Files specific for a particular area and locale, but similar for all themes. |
+| `<area>/Magento/base/default`  | Files specific for a particular area, but similar for all themes and locales. |
+| `base/Magento/base/<locale>`   | Files similar for all areas and themes, but specific to a particular locale. |
+| `base/Magento/base/default`    | Similar for all areas, themes, and locales. |
 
 ### Mapping deployed files
 

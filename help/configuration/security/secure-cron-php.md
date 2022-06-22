@@ -20,8 +20,8 @@ The Magento cron job runs several scheduled tasks and is a vital part of your Ma
 
 You can run a Magento cron job in the following ways:
 
--  Using the [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) command either from the command line or in a crontab
--  Accessing `pub/cron.php?[group=<name>]` in a web browser
+- Using the [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) command either from the command line or in a crontab
+- Accessing `pub/cron.php?[group=<name>]` in a web browser
 
 >[!INFO]
 >
@@ -31,8 +31,8 @@ You can run a Magento cron job in the following ways:
 
 This section discusses how to secure cron using HTTP Basic authentication with Apache. These instructions are based on Apache 2.2 with CentOS 6. For more information, refer to one of the following resources:
 
--  [Apache 2.2 authentication and authorization tutorial](https://httpd.apache.org/docs/2.2/howto/auth.html)
--  [Apache 2.4 authentication and authorization tutorial](https://httpd.apache.org/docs/2.4/howto/auth.html)
+- [Apache 2.2 authentication and authorization tutorial](https://httpd.apache.org/docs/2.2/howto/auth.html)
+- [Apache 2.4 authentication and authorization tutorial](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 ### Create a password file
 
@@ -126,8 +126,8 @@ This section discusses how to secure cron using the Nginx web server. You must p
 
 Consult one of the following resources to create a password file before continuing:
 
--  [How To Set Up Password Authentication with Nginx on Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
--  [Basic HTTP Authentication with Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+- [How To Set Up Password Authentication with Nginx on Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+- [Basic HTTP Authentication with Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
 ### Secure cron in `nginx.conf.sample`
 
@@ -289,12 +289,12 @@ If you are using an Apache web server, you must remove the restriction from the 
 
 Where:
 
--  `<your Magento hostname or IP>` is the hostname or IP address of your Magento installation
--  `<Magento root>` is the web server docroot-relative directory to which you installed the Magento software
+- `<your Magento hostname or IP>` is the hostname or IP address of your Magento installation
+- `<Magento root>` is the web server docroot-relative directory to which you installed the Magento software
 
    The exact URL that you use to run the Magento application depends on how you configured your web server and virtual host.
 
--  `<group name>` is any valid cron group name (optional)
+- `<group name>` is any valid cron group name (optional)
 
 For example,
 

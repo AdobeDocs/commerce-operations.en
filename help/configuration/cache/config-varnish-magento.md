@@ -13,12 +13,12 @@ To configure Magento to use Varnish:
 1. Enter a value in the **[!UICONTROL TTL for public content]** field.
 1. Expand **[!UICONTROL Varnish Configuration]** and enter the following information:
    
-   Field | Description
-   ------|------------
-   Access list | Enter the fully qualified hostname, IP address, or [Classless Inter-domain Routing (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) notation IP address range for which to invalidate content. See [Varnish cache Purging](https://varnish-cache.org/docs/3.0/tutorial/purging.html).
-   Backend host | Enter the fully qualified hostname or IP address and listen port of the Varnish _backend_ or _origin server_; that is, the server providing the content Varnish will accelerate. Typically, this is your web server. See [Varnish cache Backend servers](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html).
-   Backend port | Origin server's listen port.
-   Grace period | The grace period determines how long Varnish serves stale content if the backend is not responsive. The default value is 300 seconds.
+   | Field | Description |
+   | ----- | ----------- |
+   | Access list | Enter the fully qualified hostname, IP address, or [Classless Inter-domain Routing (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) notation IP address range for which to invalidate content. See [Varnish cache Purging](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Backend host | Enter the fully qualified hostname or IP address and listen port of the Varnish _backend_ or _origin server_; that is, the server providing the content Varnish accelerates. Typically, this is your web server. See [Varnish cache Backend servers](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | Backend port | Origin server's listen port. |
+   | Grace period | The grace period determines how long Varnish serves stale content if the backend is not responsive. The default value is 300 seconds. |
 
 1. Click **Save Config**.
 

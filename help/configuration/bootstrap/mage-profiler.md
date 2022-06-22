@@ -31,8 +31,8 @@ You can set the value of `MAGE_PROFILER` in any of the ways discussed in [Set th
 
   You can use one of the following values to enable a specific profiler:
 
-  -  `csvfile` which uses [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-  -  Any other value (except `2`), including an empty value, which uses [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
+  - `csvfile` which uses [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
+  - Any other value (except `2`), including an empty value, which uses [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
 - `2` to enable dependency graphs.
 
@@ -44,8 +44,8 @@ You can set the value of `MAGE_PROFILER` in any of the ways discussed in [Set th
 
 You can enable or disable the profiler using CLI commands:
 
--  `dev:profiler:enable <type>` enables the profiler with `type` of `html` (default) or `csvfile`. When enabled, a flagfile `var/profiler.flag` is created.
--  `dev:profiler:disable` disables the profiler. When disabled, the flagfile `var/profiler.flag` is removed.
+- `dev:profiler:enable <type>` enables the profiler with `type` of `html` (default) or `csvfile`. When enabled, a flagfile `var/profiler.flag` is created.
+- `dev:profiler:disable` disables the profiler. When disabled, the flagfile `var/profiler.flag` is removed.
 
 To enable dependency graphs, use the variable option.
 

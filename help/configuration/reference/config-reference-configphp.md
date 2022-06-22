@@ -94,7 +94,7 @@ Contains an array of system field configuration values.
 ]
 ```
 
-Learn more about [System-specific Configurations](../reference/config-reference-sens.md).
+Learn more about [System-specific Configurations](config-reference-sens.md).
 
 ## themes
 
