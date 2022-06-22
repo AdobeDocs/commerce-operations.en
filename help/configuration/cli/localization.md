@@ -57,9 +57,9 @@ The following table explains parameters and values:
 
 Use the following guidelines when translating words and phrases:
 
--  Change the contents of the second column only. Translate the phrases from English (`US`) to the desired language.
--  When creating dictionaries for locales, use the default Magento strings.
--  While translating, pay attention to placeholders: `%1`, `%2`
+- Change the contents of the second column only. Translate the phrases from English (`US`) to the desired language.
+- When creating dictionaries for locales, use the default Magento strings.
+- While translating, pay attention to placeholders: `%1`, `%2`
 
 Magento uses the placeholders to insert context values; they are _not_ used for translations. For example:
 
@@ -90,13 +90,13 @@ As opposed to a translation dictionary, you can translate any or all words and p
 
 This section discusses how to create a language package, which writes CSV files to modules and themes. To create a language package, you must perform the tasks discussed in the following sections:
 
-1. [Collect and translate words and phrases](#config-cli-subcommands-xlate-dict).
+1. [Collect and translate words and phrases](#generate-a-translation-dictionary).
 
    (The `--magento` parameter is required.)
 
-1. [Run the language package command](#config-cli-subcommands-xlate-pack-cmd).
-1. [Create directories and files](#m2devgde-xlate-files).
-1. (Optional.) [Configure multiple packages for a language](#m2devgde-xlate-severalpacks).
+1. [Run the language package command](#run-the-language-package-command).
+1. [Create directories and files](#create-directories-and-files).
+1. (Optional.) [Configure multiple packages for a language](#configure-multiple-packages-for-a-language).
 
 ### Run the language package command
 
@@ -112,7 +112,7 @@ The following table explains the parameters and values for the language package 
 |--- |--- |--- |
 |`<source>`|Absolute file system path and file name of a CSV file that contains the combined translation dictionary and meta-information necessary for breakdown into a language package.<br><br>Use [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) to create the CSV file then create the language package as discussed in [Create directories and files](#m2devgde-xlate-files).|Yes|
 |`<locale>`|[ISO 639-1][] (language) and [ISO 3166][] (country) identifier of language used as file name for all resulting CSV files. Examples: `de_DE`, `pt_PT`, `pt_BR`.|Yes|
-|`-m --mode`|If a target file exists, specifies whether to replace the existing language package or merge with the new language pack. Merging overrides any phrases that existed and adds new ones. <br><br>Values: merge or replace (default).|No|
+|`-m --mode`|If a target file exists, specifies whether to replace the existing language package or merge with the new language pack. Merging overrides any phrases that existed and adds new ones.<br><br>Values: merge or replace (default).|No|
 |`-d --allow-duplicates`|Include this option to allow duplicates in the language pack. Otherwise, the command fails with an error if it encounters the same phrase in multiple entries with different translations.|No|
 
 ### Create directories and files
@@ -122,7 +122,7 @@ Language packages are located in a directory under `app/i18n/<VendorName>` in th
 - Required license files
 - `composer.json`
 - `registration.php` that [registers][] the language package
-- [`language.xml`](#config-cli-subcommands-xlate-pack-meta-xml) meta-information file
+- [`language.xml`](#language-package-languagexml) meta-information file
 
 >[!INFO]
 >
@@ -143,11 +143,11 @@ To create these files:
 
 When declaring a language package in the `language.xml` configuration file, you must specify the sequence of the language inheritance for this package.
 
-Language inheritance enables you to create a translation called a _child_ based on an existing translation called a _parent_. The child translations override the parent. However, if the child translation fails to upload or display or is missing a phrase or word, Magento uses the parent [locale](https://glossary.magento.com/locale). [Examples of language package inheritance](#m2devgde-xlate-inheritancework).
+Language inheritance enables you to create a translation called a _child_ based on an existing translation called a _parent_. The child translations override the parent. However, if the child translation fails to upload or display or is missing a phrase or word, Magento uses the parent [locale](https://glossary.magento.com/locale). [Examples of language package inheritance](#example-of-language-inheritance).
 
 To declare a package, specify the following information:
 
-```xml
+```text
 <?xml version="1.0"?>
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
     <code>en_GB</code>
@@ -160,11 +160,11 @@ To declare a package, specify the following information:
 
 Where:
 
-- `<code>`—Language package locale (required)
-- `<vendor>`—Module's vendor name (required)
-- `<package>`—Language package name (required)
-- `<sort_order>`—Priority of uploading a package when there are several language packages available for a store
-- `<use>`—Parent language package locale from which to inherit dictionaries
+- `code`—Language package locale (required)
+- `vendor`—Module's vendor name (required)
+- `package`—Language package name (required)
+- `sort_order`—Priority of uploading a package when there are several language packages available for a store
+- `use`—Parent language package locale from which to inherit dictionaries
 
 If necessary, you can specify several parent packages. The parent packages are applied on a first listed, first used basis.
 
@@ -174,7 +174,7 @@ Suppose that a language package inherits from two other packages, and that those
 
 If a language package inherits from two packages, its `language.xml` might look like the following:
 
-```xml
+```text
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
     <code>en_GB</code>
     <vendor>magento</vendor>
