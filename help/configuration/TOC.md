@@ -21,7 +21,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Build system setup](deployment/build-system.md)
   - [Production system setup](deployment/production-system.md)
   - [File systems access permissions](deployment/file-system-permissions.md)
-  - Examples {#example}
+  - Examples {#examples}
     - [Using a shared configuration](deployment/example-shared-configuration.md)
     - [Using CLI commands](deployment/example-using-cli.md)
     - [Using environment variables](deployment/example-environment-variables.md)
@@ -130,9 +130,9 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
     - [memcached on CentOS](storage/memcache-centos.md)
     - [memcached on Ubuntu](storage/memcache-ubuntu.md)
   - Split Database {#split-db}
-    - Split database overview
-    - Automatic configuration
-    - Manual configuration
-    - Verify split database
-    - Database replication
-    - Revert to single database
+    - [Split database overview](storage/multi-master.md)
+    - [Automatic configuration](storage/multi-master-masterdb.md)
+    - [Manual configuration](storage/multi-master-manual.md)
+    - [Verify split database](storage/multi-master-verify.md)
+    - [Database replication](storage/multi-master-replication.md)
+    - [Revert to single database](storage/revert-split-database.md)
