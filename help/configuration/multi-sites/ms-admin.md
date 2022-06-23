@@ -1,6 +1,6 @@
 ---
 title: Set up multiple websites, stores, and store views in the Admin
-description:
+description: Configure additional websites, stores, and store views in the Commerce Admin.
 ---
 
 # Set up multiple views in the Admin

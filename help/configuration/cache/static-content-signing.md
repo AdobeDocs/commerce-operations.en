@@ -22,7 +22,7 @@ The following is an example of a URL signed with a version:
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 
-When you run the command [`setup:static-content:deploy`](../cli/static-view-file-deployment.mdl) to deploy static content, Magento automatically changes the deployment version.
+When you run the command [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) to deploy static content, Magento automatically changes the deployment version.
 This changes the URL of the static files and forces the browser to load the new version of the files.
 
 Magento enables this feature by default, and Adobe recommends keeping this feature enabled to prevent issues related to browsers serving up old static resources.

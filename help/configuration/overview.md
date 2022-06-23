@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Configuration guide overview
 description: Learn about all the configurable features and services for your Adobe Commerce or Magento Open Source application.
 ---
 

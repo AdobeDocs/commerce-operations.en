@@ -26,7 +26,7 @@ You can use the same procedure shown in this example to configure any settings i
 
 - [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
-- [Other configuration paths reference](../reference/config-reference-most.md)
+- [Other configuration paths reference](../reference/config-reference-general.md)
 - [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ## Before you begin
@@ -107,7 +107,7 @@ To set the sensitive and system-specific settings using environment variables, y
 
    You need the website code to set the **Send Emails To** configuration value.
 
-   For more information on finding this value, see: [Use environment variables to override configuration settings](../reference/config-reference-var-name.md).
+   For more information on finding this value, see: [Use environment variables to override configuration settings](../reference/override-config-settings.md#environment-variables).
 
 - Configuration paths for the settings used in this example:
 

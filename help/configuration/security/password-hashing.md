@@ -1,6 +1,6 @@
 ---
 title: Password hashing
-description:
+description: Read about password hashing strategies and implementation.
 ---
 
 # Password hashing

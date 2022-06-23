@@ -10,11 +10,11 @@ This topic lists configuration paths for system-specific and sensitive settings:
 - The [`magento app:config:dump` command](../cli/export-configuration.md) writes system-specific settings to the system-specific configuration file, `app/etc/env.php`, which should _not_ be in source control. It also writes shared configuration for all Magento instances to `app/etc/config.php`, this file _should_ be in source control.
 - The [`magento config:sensitive:set` command](../cli/set-configuration-values.md) writes sensitive settings to `app/etc/env.php`.
 
-   You can also set sensitive values using configuration variables as discussed in [Use environment variables to override configuration settings](../reference/config-reference-var-name.md).
+  You can also set sensitive values using configuration variables as discussed in [Use environment variables to override configuration settings](../reference/override-config-settings.md#environment-variables).
 
 For a list of other configuration paths, see:
 
-- [All configuration paths except payments](../reference/config-reference-most.md)
+- [All configuration paths except payments](../reference/config-reference-general.md)
 - [Payment configuration paths](../reference/config-reference-payment.md).
 
 >[!INFO]

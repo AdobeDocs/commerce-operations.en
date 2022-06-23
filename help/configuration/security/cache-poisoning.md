@@ -1,6 +1,6 @@
 ---
 title: Prevent cache poisoning
-description:
+description: Learn how to prevent page cache poisoning for your Commerce storefront.
 ---
 
 # Prevent cache poisoning

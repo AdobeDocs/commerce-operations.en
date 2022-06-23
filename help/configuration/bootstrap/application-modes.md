@@ -1,6 +1,6 @@
 ---
 title: Application modes
-desciption: The Commerce application can operate in different modes depending on your needs. View a detailed list of the application modes available.
+description: The Commerce application can operate in different modes depending on your needs. View a detailed list of the application modes available.
 ---
 
 # Application modes

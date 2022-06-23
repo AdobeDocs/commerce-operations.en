@@ -7,7 +7,7 @@ description: Learn where the session files are stored.
 
 This topic discusses how to locate where your session files are stored. The system uses the following logic to store session files:
 
-- If you configured memcached, sessions are stored in RAM; see [Use memcached for session storage](memcache.md).
+- If you configured memcached, sessions are stored in RAM; see [Use memcached for session storage](memcached.md).
 - If you configured Redis, sessions are stored on the Redis server; see [Use Redis for session storage](../cache/redis-session.md).
 - If you are using the default file-based session storage, we store sessions in the following locations in the order shown:
 

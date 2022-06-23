@@ -47,7 +47,7 @@ See the following references:
 
 - [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
-- [Other configuration paths reference](../reference/config-reference-most.md)
+- [Other configuration paths reference](../reference/config-reference-general.md)
 - [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ### Find the scope code

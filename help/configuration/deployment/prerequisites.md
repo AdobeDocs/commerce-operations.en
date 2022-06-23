@@ -15,9 +15,9 @@ File permissions and ownership must be consistent across development, build, and
 
 - Change Magento file system permissions and ownership on each system as necessary using the following guidelines:
 
-  - Development and build: [Set pre-installation ownership and permissions (two users)](../deployment/file-system-permissions.md)
-  - Production: [Magento ownership and permissions in development and production](../reference/prod_file-sys-perms.md)
+  - Development and build: [Set pre-installation ownership and permissions (two users)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+  - Production: [Magento ownership and permissions in development and production](file-system-permissions.md)
 
-   >[!INFO]
-   >
-   >If you choose this approach, you must set file system permissions and ownership every time you pull code from your build system (if the file system owner or web server user are different on your build system).
+>[!INFO]
+>
+>If you choose this approach, you must set file system permissions and ownership every time you pull code from your build system (if the file system owner or web server user are different on your build system).

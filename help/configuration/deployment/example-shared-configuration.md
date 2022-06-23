@@ -14,7 +14,7 @@ These settings are available in the Admin in **Stores** > Settings > **Configura
 
 You can use the same procedure to configure any non-sensitive, non-system-specific settings in the following references:
 
-- [Other configuration paths reference](../reference/config-reference-most.md)
+- [Other configuration paths reference](../reference/config-reference-general.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
 - [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 

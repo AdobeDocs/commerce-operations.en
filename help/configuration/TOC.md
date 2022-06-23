@@ -29,7 +29,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Caching overview](cache/caching-overview.md)
   - [Cache types](cache/cache-types.md)
   - [Cache options](cache/cache-options.md)
-  - [L2 cache](cache/two-level-cache.md)
+  - [L2 cache](cache/level-two-cache.md)
   - Redis {#redis}
     - [Configure Redis](cache/config-redis.md)
     - [Use Redis for default cache](cache/redis-pg-cache.md)
@@ -37,8 +37,9 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - Varnish {#varnish}
     - [Varnish overview](cache/config-varnish.md)
     - [Install Varnish](cache/config-varnish-install.md)
-    - [Web server](cache/config-varnish-configure.md)
+    - [Web server](cache/config-varnish-server.md)
     - [Configure Commerce application](cache/config-varnish-magento.md)
+    - [Advanced Varnish configuration](cache/config-varnish-advanced.md)
     - [Cache clearing](cache/use-varnish-cache.md)
     - [Cache clearing multiple Varnish instances](cache/use-multiple-varnish-cache.md)
     - [Verify Varnish configuration](cache/config-varnish-final.md)
@@ -113,7 +114,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Filter with stopwords](search/search-stopwords.md)
 - Security {#security}
   - [Security overview](security/overview.md)
-  - [Password hashing](security/hashing.md)
+  - [Password hashing](security/password-hashing.md)
   - [Cache poisoning](security/cache-poisoning.md)
   - [Secure cron PHP](security/secure-cron-php.md)
   - [Security TXT](security/security-txt.md)

@@ -1,6 +1,6 @@
 ---
 title: X-Frame-Options header
-description:
+description: Use X-Frame-Options to control page renderings.
 ---
 
 # X-Frame-Options header

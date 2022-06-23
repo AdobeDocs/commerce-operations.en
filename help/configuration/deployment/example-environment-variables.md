@@ -96,7 +96,7 @@ To set the sensitive and system-specific settings using environment variables, y
 
    If you followed the instructions in Step 1, the scope for Send Emails To is global (that is, the Default Config scope) and the scope for Default Email Domain is website.
 
-   You must know the website's code to set the Default Email Domain configuration value. See [Use environment variables to override configuration settings](../reference/config-reference-var-name.md) for more information on finding it.
+   You must know the website's code to set the Default Email Domain configuration value. See [Use environment variables to override configuration settings](../reference/override-config-settings.md#environment-variables) for more information on finding it.
 
 - Configuration path for each setting
 
@@ -111,7 +111,7 @@ To set the sensitive and system-specific settings using environment variables, y
 
 #### Convert configuration paths to variable names
 
-As discussed in [Use environment variables to override configuration settings](../reference/config-reference-var-name.md), the format of variables is:
+As discussed in [Use environment variables to override configuration settings](../reference/override-config-settings.md#environment-variables), the format of variables is:
 
 ```text
 <SCOPE>__<SYSTEM__VARIABLE__NAME>

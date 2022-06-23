@@ -1,13 +1,13 @@
 ---
 title: Security.txt
-description:
+description: Learn how to provide information to help security researchers report vulnerabilities.
 contributor_name: Kalpesh Mehta from Corra
 contributor_link: https://partners.magento.com/portal/details/partner/id/70/
 ---
 
 # Security TXT file
 
-When security vulnerabilities are discovered by researchers, proper reporting channels are often lacking. As a result, some vulnerabilities are not reported. The purpose of the `security.txt` [file format](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) file is to provide security researchers the information they must report their findings.
+When security vulnerabilities are discovered by researchers, proper reporting channels are often lacking. As a result, some vulnerabilities are not reported. The purpose of the `security.txt` [file format](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) file is to provide security researchers the information they can use to report their findings.
 
 Merchants can enter their contact information for [security issue reporting](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) from the Commerce _Admin_. For developers, the `Magento_Securitytxt` module provides the following functionality:
 
