@@ -3,7 +3,7 @@ title: Log database activity
 description: Configure Commerce to log database activity using the Logger interface.
 ---
 
-# Log database activitiy
+# Log database activity
 
 The following example shows how to log database activity using the [`Magento\Framework\DB\LoggerInterface`][interface], which has two implementations:
 
@@ -45,7 +45,7 @@ Finally, compile the code with:
 bin/magento setup:di:compile
 ```
 
-and clean the cache with:
+And clean the cache with:
 
 ```bash
 bin/magento cache:clean

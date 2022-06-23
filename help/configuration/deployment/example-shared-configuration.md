@@ -1,6 +1,6 @@
 ---
 title: Example using a shared configuration
-description: See an example of how to change settings in a development sysem with a shared configuration file.
+description: See an example of how to change settings in a development system with a shared configuration file.
 ---
 
 # Example using a shared configuration

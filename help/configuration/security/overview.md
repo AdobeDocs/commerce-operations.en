@@ -9,7 +9,7 @@ The Security section includes settings for security-related features, such as pa
 
 ## Security resources
 
-The topics in the Security section of the Configuration guide are not comprehensive across all Commerce functionaility. There are many important security-related topics in other Commerce guides, such as:
+The topics in the Security section of the Configuration guide are not comprehensive across all Commerce functionality. There are many important security-related topics in other Commerce guides, such as:
 
 - [PHP Developer guide](https://developer.adobe.com/commerce/php/development/security/) for information that Adobe Commerce and Magento Open Source developers can use to improve the security of the components that they build.
 - [Security and Compliance guide](https://devdocs.magento.com/security/security-and-compliance.html) for information about security, privacy, and regulation compliance, with links to technical resources.

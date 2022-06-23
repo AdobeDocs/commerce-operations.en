@@ -23,7 +23,7 @@ Together, `config.php` and `env.php` are referred to as the Commerce _deployment
 >
 >The [!DNL Magento 2] deployment configuration replaces `local.xml` in [!DNL Magento 1.x].
 
-Unlike other [module configuration files](../reference/config-files.md), Commerce deployment configuration is loaded into memory when during initialization, is not merged with any other files, and cannot be extended. (`config.php` and `env.php` are merged with each other, however.)
+Unlike other [module configuration files](../reference/module-files.md), Commerce deployment configuration is loaded into memory when during initialization, is not merged with any other files, and cannot be extended. (`config.php` and `env.php` are merged with each other, however.)
 
 ## Details about the deployment configuration
 

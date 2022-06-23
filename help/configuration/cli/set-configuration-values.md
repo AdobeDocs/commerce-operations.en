@@ -1,6 +1,6 @@
 ---
 title: Set configuration values
-description: Lesarn how to set configuration values.
+description: Learn how to set configuration values and change values that are locked in the Admin.
 ---
 
 # Set configuration values
