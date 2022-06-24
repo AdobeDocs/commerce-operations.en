@@ -198,7 +198,7 @@ This section discusses making the following configuration changes:
 
 After you make the change in the Admin, run `bin/magento app:config:dump` on your development system. This time, not all of your changes are written to `config.php`; in fact, only the website, store, and store view are written to that file as the following snippets show.
 
-#### config.php
+### config.php
 
 `config.php` contains:
 
@@ -275,7 +275,7 @@ After you make the change in the Admin, run `bin/magento app:config:dump` on you
         ),
 ```
 
-#### env.php
+### env.php
 
 The default email domain system-specific configuration setting is written to `app/etc/env.php`.
 

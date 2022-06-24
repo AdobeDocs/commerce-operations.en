@@ -9,9 +9,9 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 - General setup {#setup}
   - [Application initialization and bootstrap](bootstrap/overview.md)
   - [Application modes](bootstrap/application-modes.md)
+  - [Bootstrap parameters](bootstrap/set-parameters.md)
   - [Profiling](bootstrap/mage-profiler.md)
   - [Base directory paths](bootstrap/mage-directory.md)
-  - [Bootstrap parameters](bootstrap/set-parameters.md)
 - Deployment {#deployment}
   - [Deployment overview](deployment/overview.md)
   - [Single machine deployment](deployment/single-machine.md)
@@ -71,7 +71,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Generate data for performance testing](cli/generate-data.md)
   - [Run support utilities (Commerce only)](cli/run-support-utilities.md)
 - Configuration files {#files}
-  - [Deployment](reference/deployment-files.md)
+  - [Configuration files for deployment](reference/deployment-files.md)
   - [Configuration types](reference/config-create-types.md)
   - [Module files](reference/module-files.md)
   - [Module output](reference/disable-module-output.md)

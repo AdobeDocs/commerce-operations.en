@@ -90,10 +90,7 @@ As opposed to a translation dictionary, you can translate any or all words and p
 
 This section discusses how to create a language package, which writes CSV files to modules and themes. To create a language package, you must perform the tasks discussed in the following sections:
 
-1. [Collect and translate words and phrases](#generate-a-translation-dictionary).
-
-   (The `--magento` parameter is required.)
-
+1. [Collect and translate words and phrases](#generate-a-translation-dictionary). (The `--magento` parameter is required.)
 1. [Run the language package command](#run-the-language-package-command).
 1. [Create directories and files](#create-directories-and-files).
 1. (Optional.) [Configure multiple packages for a language](#configure-multiple-packages-for-a-language).
@@ -147,7 +144,7 @@ Language inheritance enables you to create a translation called a _child_ based 
 
 To declare a package, specify the following information:
 
-```text
+```xml
 <?xml version="1.0"?>
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
     <code>en_GB</code>
@@ -174,7 +171,7 @@ Suppose that a language package inherits from two other packages, and that those
 
 If a language package inherits from two packages, its `language.xml` might look like the following:
 
-```text
+```xml
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
     <code>en_GB</code>
     <vendor>magento</vendor>
@@ -210,9 +207,6 @@ To enable an additional package for an existing language, name the new package a
 ## Examples of using translation commands
 
 The following sections provide end-to-end examples of using the commands discussed in this topic to create translation dictionaries and translation packages:
-
-- [Example: Create a translation dictionary for a module or theme](#example-create-a-translation-dictionary-for-a-module-or-theme)
-- [Example: Create a language package](#create-a-language-package)
 
 ### Example: Create a translation dictionary for a module or theme
 

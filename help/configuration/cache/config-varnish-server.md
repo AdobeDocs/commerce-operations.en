@@ -9,7 +9,7 @@ Configure your web server to listen on a port other than the default port 80 bec
 
 In the sections that follow, we use port 8080 as an example.
 
-To change the Apache 2.4 listen port:
+**To change the Apache 2.4 listen port**:
 
 1. Open `/etc/httpd/conf/httpd.conf` in a text editor.
 1. Locate the `Listen` directive.
@@ -33,7 +33,7 @@ To modify the Varnish system configuration:
    VARNISH_LISTEN_PORT=80
    ```
 
-   For Varnish 4.&#42;, make sure that DAEMON_OPTS contains the correct listening port for the `-a` parameter (even if VARNISH_LISTEN_PORT is set to the correct value):
+   For Varnish 4.x, make sure that DAEMON_OPTS contains the correct listening port for the `-a` parameter (even if VARNISH_LISTEN_PORT is set to the correct value):
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -67,7 +67,7 @@ To minimally configure Varnish:
    }
    ```
 
-1. Replace the value of `.host` with the fully qualified hostname or IP address and listen port of the Varnish *backend* or *origin server*; that is, the server providing the content Varnish will accelerate.
+1. Replace the value of `.host` with the fully qualified hostname or IP address and listen port of the Varnish _backend_ or _origin server_; that is, the server providing the content Varnish will accelerate.
 
    Typically, this is your web server.
 
@@ -115,7 +115,7 @@ This should display error messages.
 
 ## Verify Varnish is working
 
-The following sections discuss how you can verify that Varnish is working but *without* configuring Magento to use it. You should try this before you configure Magento.
+The following sections discuss how you can verify that Varnish is working but _without_ configuring Magento to use it. You should try this before you configure Magento.
 
 Perform the tasks discussed in the following sections in the order shown:
 
@@ -231,7 +231,7 @@ A long list of response headers display in your command prompt window. Look for 
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-If headers like these do *not* display, stop Varnish, check your `default.vcl`, and try again.
+If headers like these do _not_ display, stop Varnish, check your `default.vcl`, and try again.
 
 ### Look at HTML response headers
 

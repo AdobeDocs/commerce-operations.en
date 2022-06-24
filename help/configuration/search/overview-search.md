@@ -24,5 +24,5 @@ After you install and integrate your search engine with Adobe Commerce, you migh
 [Configure Apache for your search engine]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html
 [Elasticsearch]: https://www.elastic.co
 [Elasticsearch documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-[Install the Magento software]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-install.html
+[Install the Commerce software]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-install.html
 [OpenSearch]: https://opensearch.org/docs/latest/opensearch/install/index/
