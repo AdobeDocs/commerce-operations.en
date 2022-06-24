@@ -47,6 +47,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Street Address Line 2 | `general/store_information/street_line2` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> | |
 | VAT Number | `general/store_information/merchant_vat_number` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> | |
 | Enable Single-Store Mode | `general/single_store_mode/enabled` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> | |
+
 {style="table-layout:auto"}
 
 ### Web paths
@@ -78,6 +79,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Redirect to CMS-page if Cookies are Disabled | `web/browser_capabilities/cookies` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> |
 | Show Notice if JavaScript is Disabled | `web/browser_capabilities/javascript` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> |
 | Show Notice if Local Storage is Disabled | `web/browser_capabilities/local_storage` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> |
+
+{style="table-layout:fixed"}
 
 ### Currency setup paths
 
@@ -277,3 +280,5 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Sign Static Files | `dev/static/sign` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> |
 | Asynchronous indexing | `dev/grid/async_indexing` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> |
 | Cache User Defined Attributes | `dev/caching/cache_user_defined_attributes` | <!-- ![Not EE-only](../../assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}

@@ -12,7 +12,7 @@ As of version 2.4.4, Adobe Commerce and Magento Open Source requires either [Ela
 - [Configure Apache for your search engine][]
 - [Install the Commerce software][] (command-line interface)
 
-After you install and integrate your search engine with Adobe Commerce, you might must perform additional maintenance:
+After you install and integrate your search engine with Adobe Commerce, you must perform additional maintenance:
 
 - [Configure search stopwords](search-stopwords.md)
 - [Search engine configuration](configure-search-engine.md)
