@@ -48,7 +48,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | VAT Number | `general/store_information/merchant_vat_number` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |
 | Enable Single-Store Mode | `general/single_store_mode/enabled` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |
 
-{style="table-layout:auto"}
+{style="table-layout:fixed"}
 
 ### Web paths
 
@@ -105,6 +105,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Error Email Sender | `currency/import/error_email_identity` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Error Email Template | `currency/import/error_email_template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:fixed"}
+
 ### Contacts paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **General** > **Contacts**.
@@ -116,6 +118,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Email Sender | `contact/email/sender_email_identity` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Email Template | `contact/email/email_template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:fixed"}
+
 ### Reports paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **General** > **Reports**.
@@ -124,6 +128,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 |--------------|--------------|--------------|
 | Year-To-Date Starts | `reports/dashboard/ytd_start` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Current Month Starts | `reports/dashboard/mtd_start` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:fixed"}
 
 ### Content management paths
 
@@ -137,6 +143,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Enable Hierarchy Metadata | `cms/hierarchy/metadata_enabled` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Default Layout for Hierarchy Menu | `cms/hierarchy/menu_layout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:fixed"}
+
 ### New Relic reporting paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **General** > **New Relic Reporting**.
@@ -146,6 +154,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Enable New Relic Integration | `newrelicreporting/general/enable` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | New Relic Application Name | `newrelicreporting/general/app_name` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Enable Cron | `newrelicreporting/cron/enable_cron` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:fixed"}
 
 ## Advanced category
 
@@ -186,6 +196,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Symbols Used in CAPTCHA | `admin/captcha/symbols` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Case Sensitive | `admin/captcha/case_sensitive` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Enabled Actions | `admin/magento_logging/actions` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:fixed"}
 
 ### System paths
 
@@ -253,6 +265,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Frequency | `system/magento_scheduled_import_export_log/frequency` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Error Email Template | `system/magento_scheduled_import_export_log/error_email_template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:fixed"}
+
 ### Developer paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Advanced** > **Developer**.
@@ -281,4 +295,4 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Asynchronous indexing | `dev/grid/async_indexing` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Cache User Defined Attributes | `dev/caching/cache_user_defined_attributes` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:auto"}
+{style="table-layout:fixed"}
