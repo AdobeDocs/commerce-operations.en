@@ -104,11 +104,11 @@ When the request is redirected to the entry point, the Magento application parse
 
 <!-- Link Definitions -->
 
-[app-face]: https://github.com/magento/magento2/text/2.4/lib/internal/Magento/Framework/AppInterface.php
-[bootinitial]: https://github.com/magento/magento2/text/2.4/app/bootstrap.php
-[bootstrap]: https://github.com/magento/magento2/text/2.4/lib/internal/Magento/Framework/App/Bootstrap.php
-[http]: https://github.com/magento/magento2/text/2.4/lib/internal/Magento/Framework/App/Http
-[index]: https://github.com/magento/magento2/text/2.4/pub/index.php
-[media]: https://github.com/magento/magento2/text/2.4/app/code/Magento/MediaStorage/App/Media.php
-[object]: https://github.com/magento/magento2/text/2.4/lib/internal/Magento/Framework/ObjectManager
-[static-resource]: https://github.com/magento/magento2/text/2.4/lib/internal/Magento/Framework/App/StaticResource.php
+[app-face]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/AppInterface.php
+[bootinitial]: https://github.com/magento/magento2/tree/2.4/app/bootstrap.php
+[bootstrap]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Bootstrap.php
+[http]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Http
+[index]: https://github.com/magento/magento2/tree/2.4/pub/index.php
+[media]: https://github.com/magento/magento2/tree/2.4/app/code/Magento/MediaStorage/App/Media.php
+[object]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/ObjectManager
+[static-resource]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/StaticResource.php

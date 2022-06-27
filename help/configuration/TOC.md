@@ -7,7 +7,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 
 - [Overview](overview.md)
 - General setup {#setup}
-  - [Application initialization and bootstrap](bootstrap/overview.md)
+  - [Application initialization and bootstrap](bootstrap/initialization.md)
   - [Application modes](bootstrap/application-modes.md)
   - [Bootstrap parameters](bootstrap/set-parameters.md)
   - [Profiling](bootstrap/mage-profiler.md)
@@ -53,13 +53,13 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Manage indexers](cli/manage-indexers.md)
   - [Configure cron jobs](cli/configure-cron-jobs.md)
   - [Compile code](cli/code-compiler.md)
-  - [Set the operation mode](cli/set-mode.md)
+  - [Operation mode](cli/set-mode.md)
   - [Start message queue consumers](cli/start-message-queues.md)
   - [URN highlighter](cli/urn-highlighter.md)
   - [Dependency reports](cli/dependency-reports.md)
   - [Localization](cli/localization.md)
   - Configuration management {#configuration-management}
-    - [Set configuration values](cli/set-configuration-values.md)
+    - [Set values](cli/set-configuration-values.md)
     - [Export settings](cli/export-configuration.md)
     - [Import data](cli/import-configuration.md)
   - Static view {#static-view}
@@ -94,7 +94,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Customizing crons reference](cron/custom-cron-ref.md)
   - [Configure a custom cron job](cron/custom-cron-tut.md)
 - Logs {#logs}
-  - [Customized logs](logs/overview.md)
+  - [Customized logs](logs/custom-logging.md)
   - [Logger interface](logs/logger-interface.md)
   - [Log database activity](logs/database-activity.md)
   - [Write to a custom log file](logs/custom-log-files.md)

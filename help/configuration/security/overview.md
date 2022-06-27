@@ -1,5 +1,5 @@
 ---
-title: Overview of security settings
+title: Overview of security
 description: Read a brief overview of the security settings for Adobe Commerce and Magento Open Source application.
 ---
 

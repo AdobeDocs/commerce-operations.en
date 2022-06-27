@@ -23,7 +23,7 @@ You can have one build system that meets the following requirements:
 
 >[!WARNING]
 >
->The database connection not required if it is already contained in `config.php` (see [Export the configuration](../cli/export-configuration.md). Otherwise, the database connection is required.
+>The database connection not required if it is already contained in `config.php`; see [Export the configuration](../cli/export-configuration.md). Otherwise, the database connection is required.
 
 >[!INFO]
 >

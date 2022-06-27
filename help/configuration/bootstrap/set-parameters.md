@@ -5,7 +5,7 @@ description: Learn how to set bootstrap parameters for the Commerce application.
 
 # Bootstrap parameters
 
-This topic demonstrates how to set the values of Commerce application bootstrap parameters. [See Overview of application initialization and bootstrapping](overview.md).
+This topic demonstrates how to set the values of Commerce application bootstrap parameters. See [Overview of application initialization and bootstrapping](initialization.md).
 
 The following table discusses the bootstrap parameters that you can set:
 
@@ -51,7 +51,7 @@ This section discusses how to specify the mode for either Apache or Nginx.
 
 ### Nginx setting
 
-See the [Nginx sample configuration][] on GitHub.
+See the [Nginx sample configuration][] on _GitHub_.
 
 ### Apache .htaccess setting
 
@@ -92,7 +92,7 @@ The procedures that follows show how to set the application mode in an Apache vi
 
 >[!TIP]
 >
->The following section assumes that you have already set up your virtual host. If you have not, consult a resource such as [this DigitalOcean tutorial][do-ubunto].
+>The following section assumes that you have already set up your virtual host. If you have not, consult a resource such as [this DigitalOcean tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
 
 **To Specify a bootstrap variable for Apache on Ubuntu**:
 
@@ -135,7 +135,7 @@ The procedures that follows show how to set the application mode in an Apache vi
 
 >[!TIP]
 >
->This section assumes that you have already set up your virtual host. If you have not, consult a resource such as [this DigitalOcean tutorial][do-centos].
+>This section assumes that you have already set up your virtual host. If you have not, consult a resource such as [this DigitalOcean tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
 
 **To Specify a bootstrap variable for Apache on CentOS**:
 
@@ -164,7 +164,5 @@ The procedures that follows show how to set the application mode in an Apache vi
 
 [Apache version 2.2]: http://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
 [Apache version 2.4]: http://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
-[do-centos]: https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6
-[do-ubunto]: https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
 [Nginx sample configuration]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
 [unix-stackx]: http://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

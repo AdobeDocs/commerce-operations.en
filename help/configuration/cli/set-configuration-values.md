@@ -64,7 +64,7 @@ You can find the scope code either in the Magento database or in the Magento Adm
 
    ![Get a website or store view code from the Admin](../../assets/configuration/website-code.png)
 
-1. Continue with [Set configuration values](#set-configuration-values-1).
+1. Continue with [Set values](#set-values).
 
 **To find the scope code in the database**:
 
@@ -107,7 +107,7 @@ Scope codes for websites and store views are stored in the Magento database in t
 
 1. Continue with the next section.
 
-## Set configuration values
+## Set values
 
 **To set system-specific configuration values**:
 

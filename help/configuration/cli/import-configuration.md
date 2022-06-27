@@ -16,7 +16,7 @@ After importing websites, stores, store views, and themes, you can create produc
 >
 >The `bin/magento app:config:import` command does not process configuration stored in environment variables.
 
-## Import configuration data
+## Import command
 
 On your production system, run the following command to import data from the configuration files (`config.php` and `env.php`) to the database:
 

@@ -1377,6 +1377,6 @@ These options are available only if you chose the United Kingdom as the [merchan
 
 <!-- link definitions -->
 
-[ee]: ../../assets/configuration/cloud-ee.png
-[enc]: ../../assets/configuration/cloud-enc.png
-[red-x]: ../../assets/configuration/red-x.png
+[ee]: /help/assets/configuration/cloud-ee.png
+[enc]: /help/assets/configuration/cloud-enc.png
+[red-x]: /help/assets/configuration/red-x.png

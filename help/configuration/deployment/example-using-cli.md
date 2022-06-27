@@ -35,8 +35,7 @@ Before you begin, set up file system permissions and ownership as discussed in [
 
 ## Assumptions
 
-This topic provides an example of modifying the production system configuration.
-You can choose different configuration options if you wish.
+This topic provides an example of modifying the production system configuration. You can choose different configuration options if you wish.
 
 For the purposes of this example, we assume the following:
 
