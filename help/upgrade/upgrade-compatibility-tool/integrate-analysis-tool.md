@@ -27,4 +27,6 @@ After the scan is complete, the high level results are displayed in the widget.
 
 Click **[!UICONTROL Download Report]** to retrieve the [!DNL Upgrade Compatibility Tool] [HTML report](../upgrade-compatibility-tool/reports.md#html-report) and review the details.
 
-When running the [!DNL Upgrade Compatibility Tool] through the [!DNL Site-Wide Analysis Tool] the report will show results comparing your project's version with the latest released version.
+## Note
+
+When running the [!DNL Upgrade Compatibility Tool] through the [!DNL Site-Wide Analysis Tool] it is executed to optimize your results and help you focus on those issues that are new and critical for your target upgrade. It uses the "--ignore-current-version-compatibility-errors" option as described [here](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html?lang=en#optimize-your-results) and it always shows results comparing your project's version with the latest released version.
