@@ -30,4 +30,4 @@ Click **[!UICONTROL Download Report]** to retrieve the [!DNL Upgrade Compatibili
 
 >[!NOTE]
 >
-> Running the [!DNL Upgrade Compatibility Tool] through the [!DNL Site-Wide Analysis Tool] optimizes your results and helps you focus on issues that are new and critical for your target upgrade. It uses the [`--ignore-current-version-compatibility-errors`](../upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html?lang=en#optimize-your-results) option and always shows results comparing your project's version with the latest released version.
+> Running the [!DNL Upgrade Compatibility Tool] through the [!DNL Site-Wide Analysis Tool] optimizes your results and helps you focus on issues that are new and critical for your target upgrade. It uses the [`--ignore-current-version-compatibility-errors`](run.md#optimize-your-results) option and always shows results comparing your project's version with the latest released version.
