@@ -113,7 +113,7 @@ If you use your own server (including a hosting provider's private server setup)
 
   >[!INFO]
   >
-  >   The command-line user is also referred to as the _file system owner_.
+  >The command-line user is also referred to as the _file system owner_.
 
 Because these users require access to the same files, we recommend you create a [shared group](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html#mage-owner-about-group) to which they both belong. The following procedures assume you have already done this.
 

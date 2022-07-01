@@ -64,6 +64,7 @@ The S3 integration relies on the ability to generate and store cached images on 
 It is highly recommended that you use [!DNL Commerce] file adapter methods in your coding or extension development, regardless of the file storage type. When using S3 for storage, do not use native PHP file I/O operations, such as `copy`, `rename` or `file_put_contents`, because S3 files are not located within the file system. See [DriverInterface.php][] for code examples.
 
 <!-- link definitions -->
+
 [AWS S3]: https://aws.amazon.com/s3
 [AWS IAM]: https://aws.amazon.com/iam/
 [ngx repo]: https://github.com/anomalizer/ngx_aws_auth

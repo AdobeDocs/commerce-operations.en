@@ -43,7 +43,7 @@ su <file system owner> -s /bin/bash -c <command>
 If the file system owner does not allow logins, you can use the following:
 
 ```bash
-sudo -u <file system owner>  <command>
+sudo -u <file system owner> <command>
 ```
 
 **To run Magento CLI commands from any directory**:

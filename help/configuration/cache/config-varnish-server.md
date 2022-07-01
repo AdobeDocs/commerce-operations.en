@@ -47,7 +47,7 @@ To modify the Varnish system configuration:
 
 ### Modify the default VCL
 
-This section discusses how to provide minimal configuration so Varnish returns HTTP response headers. This enables you to verify Varnish works before you configure Magento to use Varnish.
+This section discusses how to provide minimal configuration so Varnish returns HTTP response headers. This enables you to verify that Varnish works before you configure the COmmerce application to use Varnish.
 
 To minimally configure Varnish:
 
@@ -69,9 +69,7 @@ To minimally configure Varnish:
 
 1. Replace the value of `.host` with the fully qualified hostname or IP address and listen port of the Varnish _backend_ or _origin server_; that is, the server providing the content Varnish will accelerate.
 
-   Typically, this is your web server.
-
-   [More information](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)
+   Typically, this is your web server. See [Backend servers](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) in the _Varnish guide_.
 
 1. Replace the value of `.port` with the web server's listen port (8080 in this example).
 
@@ -86,7 +84,7 @@ To minimally configure Varnish:
 
    >[!INFO]
    >
-   >  If Varnish and Apache are running on the same host, we recommend you use an IP address or hostname and not `localhost`.
+   >If Varnish and Apache are running on the same host, Adobe recommends that you use an IP address or hostname and not `localhost`.
 
 1. Save your changes to `default.vcl` and exit the text editor.
 
@@ -107,20 +105,16 @@ This should display error messages.
 
 >[!INFO]
 >
->If Varnish does not start as a service, you must configure SELinux rules to allow it to run. Consult the following resources:
->
->- [flatlinesecurity](http://flatlinesecurity.com/posts/varnish-4-selinux/)
->- [CentOS wiki](https://wiki.centos.org/HowTos/SELinux)
->- [CentOS documentation](https://www.centos.org)
+>If Varnish does not start as a service, you must configure SELinux rules to allow it to run.
 
 ## Verify Varnish is working
 
-The following sections discuss how you can verify that Varnish is working but _without_ configuring Magento to use it. You should try this before you configure Magento.
+The following sections discuss how you can verify that Varnish is working but _without_ configuring Commerce to use it. You should try this before you configure Commerce.
 
 Perform the tasks discussed in the following sections in the order shown:
 
 - [Start Varnish](#start-varnish)
-- [netstat](#netstat)
+- [`netstat`](#netstat)
 
 ### Start Varnish
 
@@ -169,13 +163,13 @@ The preceding shows Varnish running on port 80 and Apache running on port 8080.
 
 If you do not see output for `varnishd`, make sure that Varnish is running.
 
-See [netstat options](http://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+See [`netstat` options](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
-## Install the Magento 2 software
+## Install the Commerce software
 
-Install the Magento 2 software if you have not already done so. When prompted for a Base URL, use the Varnish host and port 80 (for Varnish) because Varnish receives all incoming HTTP requests.
+Install the Commerce software if you have not already done so. When prompted for a Base URL, use the Varnish host and port 80 (for Varnish) because Varnish receives all incoming HTTP requests.
 
-Possible error installing Magento:
+Possible error installing Commerce:
 
 ```terminal
 Error 503 Service Unavailable
@@ -196,23 +190,23 @@ backend default {
 
 ## Verify HTTP response headers
 
-Now you can verify that Varnish is serving pages by looking at [HTML](https://glossary.magento.com/html) response headers returned from any Magento page.
+Now you can verify that Varnish is serving pages by looking at [HTML](https://glossary.magento.com/html) response headers returned from any page.
 
-Before you can look at headers, you must set Magento for developer mode. There are several ways to do it, the simplest of which is to modify `.htaccess` in the Magento 2 root. You can also use the [`magento deploy:mode:set`](../cli/set-mode.md) command.
+Before you can look at headers, you must set Commerce for developer mode. There are several ways to do it, the simplest of which is to modify `.htaccess` in the Commerce application root. You can also use the [`magento deploy:mode:set`](../cli/set-mode.md) command.
 
-### Set Magento for developer mode
+### Set Commerce for developer mode
 
-To set Magento for developer mode, use the [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) command.
+To set Commerce for developer mode, use the [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) command.
 
 ### Look at the Varnish log
 
-Make sure Varnish is running then enter the following command on the Varnish server:
+Make sure that Varnish is running then enter the following command on the Varnish server:
 
 ```bash
 varnishlog
 ```
 
-In a web browser, go to any Magento 2 page.
+In a web browser, go to any Commerce page.
 
 A long list of response headers display in your command prompt window. Look for headers like the following:
 
@@ -237,7 +231,7 @@ If headers like these do _not_ display, stop Varnish, check your `default.vcl`, 
 
 There are several ways to look at response headers, including using a browser [plug-in](https://glossary.magento.com/plug-in) or a browser inspector.
 
-The following example uses `curl`. You can enter this command from any machine that can access the Magento server using HTTP.
+The following example uses `curl`. You can enter this command from any machine that can access the Commerce server using HTTP.
 
 ```bash
 curl -I -v --location-trusted '<your Magento base URL>'

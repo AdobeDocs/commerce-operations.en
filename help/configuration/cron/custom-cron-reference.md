@@ -9,7 +9,7 @@ This topic helps you set up crontabs and optionally cron groups for custom modul
 
 Optionally, you can set up a custom group, which among other things enables you to run cron jobs defined in that group independently of other cron jobs.
 
-For a step-by-step tutorial, see [Configure custom cron jobs and cron groups (tutorial)](../cron/custom-cron-tut.md).
+For a step-by-step tutorial, see [Configure custom cron jobs and cron groups (tutorial)](custom-cron-tutorial.md).
 
 For an overview about cron jobs, see [Configure cron jobs](../cli/configure-cron-jobs.md).
 

@@ -192,7 +192,7 @@ After you make the change in the Admin, run `bin/magento app:config:dump` to wri
 
 This section discusses making the following configuration changes:
 
-- Adding a website, store, and store view (**Stores** > Settings >  **All Stores**)
+- Adding a website, store, and store view (**Stores** > Settings > **All Stores**)
 - Changing the default email domain (**Stores** > Settings > **Configuration** > Customers > **Customer Configuration**)
 - Setting the PayPal API Username and API password (**Stores** > Settings > **Configuration** > Sales > **Payment Methods** > **PayPal** > **Required PayPal Settings**)
 

@@ -8,7 +8,7 @@ The Remote Storage module provides the option to store media files and schedule 
 
 >[!INFO]
 >
->Remote storage is available in version 2.4.2 and later only. See the [2.4.2 release notes][].
+>Remote storage is available in version 2.4.2 and later only. See the [2.4.2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
@@ -84,8 +84,8 @@ After you enable remote storage for a specific adapter, you can use the CLI to m
 >The sync command only migrates files in the `pub/media` directory, _not_ the import/export files in the `var` directory. See [Scheduled Import/Export][import-export] in the _Commerce 2.4 User Guide_.
 
 <!-- link definitions -->
-[2.4.2 release notes]: https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html
-[import-export]: https://devdocs.magento.com/system/data-scheduled-import-export.html
+
+[import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
 [nginx-module]: http://nginx.org/en/docs/http/ngx_http_image_filter_module.html
 [Magento Coding Standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
 [setup]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp

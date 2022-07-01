@@ -267,7 +267,7 @@ If the SQL command and system log contain no entries, run the `magento cron:run`
    </config>
    ```
 
-For a description of what the options mean, see [Customizing crons reference](../cron/custom-cron-ref.md).
+For a description of what the options mean, see [Customizing crons reference](custom-cron-reference.md).
 
 ## Step 8: Verify your custom cron group
 

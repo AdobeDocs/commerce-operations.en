@@ -91,8 +91,8 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
   - [Override configuration settings](reference/override-config-settings.md)
 - Cron Jobs {#crons}
   - [Cron jobs and groups](cron/custom-cron.md)
-  - [Customizing crons reference](cron/custom-cron-ref.md)
-  - [Configure a custom cron job](cron/custom-cron-tut.md)
+  - [Customizing crons reference](cron/custom-cron-reference.md)
+  - [Configure a custom cron job](cron/custom-cron-tutorial.md)
 - Logs {#logs}
   - [Customized logs](logs/custom-logging.md)
   - [Logger interface](logs/logger-interface.md)

@@ -15,8 +15,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 
 | Name  | Config path | EE only? |
 |--------------|--------------|--------------|
-| Default Response Charset | `webapi/soap/charset` | <!-- ![Not EE-only][red-x] --> |
-| Allow Anonymous Guest Access | `webapi/webapisecurity/allow_insecure` | <!-- ![Not EE-only][red-x] --> |
+| Default Response Charset | `webapi/soap/charset` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| Allow Anonymous Guest Access | `webapi/webapisecurity/allow_insecure` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
 ## OAuth paths
 
@@ -24,15 +24,10 @@ These configuration values are available in the Admin in **Stores** > Settings >
 
 | Name  | Config path | EE only? |
 |--------------|--------------|--------------|
-| Customer Token Lifetime (hours) | `oauth/access_token_lifetime/customer` | <!-- ![Not EE-only][red-x] --> |
-| Admin Token Lifetime (hours) | `oauth/access_token_lifetime/admin` | <!-- ![Not EE-only][red-x] --> |
-| Cleanup Probability | `oauth/cleanup/cleanup_probability` | <!-- ![Not EE-only][red-x] --> |
-| Expiration Period | `oauth/cleanup/expiration_period` | <!-- ![Not EE-only][red-x] --> |
-| Expiration Period | `oauth/consumer/expiration_period` | <!-- ![Not EE-only][red-x] --> |
-| OAuth consumer credentials HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not EE-only][red-x] --> |
-| OAuth consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <!-- ![Not EE-only][red-x] --> |
-
-<!-- link definitions -->
-
-[ee]: ../../assets/configuration/cloud-ee.png
-[red-x]: ../../assets/configuration/red-x.png
+| Customer Token Lifetime (hours) | `oauth/access_token_lifetime/customer` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| Admin Token Lifetime (hours) | `oauth/access_token_lifetime/admin` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| Cleanup Probability | `oauth/cleanup/cleanup_probability` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| Expiration Period | `oauth/cleanup/expiration_period` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| Expiration Period | `oauth/consumer/expiration_period` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| OAuth consumer credentials HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| OAuth consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |

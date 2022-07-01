@@ -134,7 +134,7 @@ Run `setup` commands to specify the Redis endpoints.
 Configuring Magento for Redis as default caching:
 
 ```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host>  --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
 ```
 
 Configure Magento for Redis page caching:
