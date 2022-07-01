@@ -18,6 +18,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Default Response Charset | `webapi/soap/charset` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Allow Anonymous Guest Access | `webapi/webapisecurity/allow_insecure` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## OAuth paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Services** > **OAuth**.
@@ -31,3 +33,5 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Expiration Period | `oauth/consumer/expiration_period` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | OAuth consumer credentials HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | OAuth consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}

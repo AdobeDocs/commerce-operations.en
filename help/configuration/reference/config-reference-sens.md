@@ -47,6 +47,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Use HTTP Only | `web/cookie/cookie_httponly` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 | Cookie Restriction Mode | `web/cookie/cookie_restriction` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 
+{style="table-layout:auto"}
+
 ### Currency setup sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **General** > **Currency setup**.
@@ -54,6 +56,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Name | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Error Email Recipient | `currency/import/error_email` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 ### Store email address sensitive and system-specific paths
 
@@ -72,6 +76,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Sender Name | `trans_email/ident_custom2/name` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Sender Email | `trans_email/ident_custom2/email` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### Contacts sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **General** > **Contacts**.
@@ -81,6 +87,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Send Emails To | `contact/email/recipient_email` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Email Sender | `contact/email/sender_email_identity` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Email Template | `contact/email/email_template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 ### New Relic reporting sensitive and system-specific paths
 
@@ -95,6 +103,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | New Relic API URL | `newrelicreporting/general/api_url` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Insights API URL | `newrelicreporting/general/insights_api_url` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ## Customers category sensitive and system-specific paths
 
 This section lists variable names and config paths available for options in the Admin under **Stores** > Settings > **Configuration** > **Customers**.
@@ -106,6 +116,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Name  | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Default Email Domain | `customer/create_account/email_domain` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
+
+{style="table-layout:auto"}
 
 ## Catalog category
 
@@ -132,6 +144,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Elasticsearch HTTP Password | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch Server Timeout | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 
+{style="table-layout:auto"}
+
 ### Inventory sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Catalog** > **Inventory**.
@@ -140,6 +154,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Google API key | `cataloginventory/source_selection_distance_based_google/api_key` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | ![Encrypted](/help/assets/configuration/cloud-enc.png) | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### XML sitemap sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Catalog** > **XML Sitemap**.
@@ -147,6 +163,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Name | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Error Email Recipient | `sitemap/generate/error_email` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 ## Sales category
 
@@ -166,6 +184,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Street Address Line 2 | `shipping/origin/street_line2` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Live Account | `carriers/ups/is_account_live` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 
+{style="table-layout:auto"}
+
 ### Sales emails sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Sales Emails**.
@@ -182,6 +202,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Send Credit Memo Comment Email Copy To | `sales_email/creditmemo_comment/copy_to` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Send Pickup Ready Email Copy To | `sales_email/temando_pickup/copy_to` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### Checkout sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Checkout**.
@@ -190,6 +212,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Send Payment Failed Email Copy To | `checkout/payment_failed/copy_to` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### Google API sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Google API**.
@@ -197,6 +221,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Name | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Container Id | `google/analytics/container_id` | ![EE-only](/help/assets/configuration/cloud-ee.png) | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 ### Delivery methods sensitive and system-specific paths
 
@@ -227,6 +253,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Gateway URL | `carriers/dhl/gateway_url` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Sandbox Mode | `carriers/fedex/sandbox_mode` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### Sales sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Sales**.
@@ -245,6 +273,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Send RMA Comment Email Copy To | `sales_email/magento_rma_comment/copy_to` | ![EE-only](/help/assets/configuration/cloud-ee.png) | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Send RMA Comment Email Copy To | `sales_email/magento_rma_customer_comment/copy_to` | ![EE-only](/help/assets/configuration/cloud-ee.png) | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### Google API paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Google API**.
@@ -252,6 +282,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Name  | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Account Number | `google/analytics/account` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 ## Advanced category
 
@@ -266,6 +298,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Custom Admin URL | `admin/url/custom` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Custom Admin Path | `admin/url/custom_path` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### System sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Advanced** > **System**.
@@ -276,6 +310,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Access list | `system/full_page_cache/varnish/access_list` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Error Email Sender | `system/magento_scheduled_import_export_log/error_email_identity` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### Developer sensitive and system-specific paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Advanced** > **Developer**.
@@ -283,6 +319,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Name | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Allowed IPs (comma separated) | `dev/restrict/allow_ips` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 ## Advanced category
 
@@ -299,6 +337,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Backend host | `system/full_page_cache/varnish/backend_host` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Backend port | `system/full_page_cache/varnish/backend_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### Developer paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Advanced** > **Developer**.
@@ -306,6 +346,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Name  | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 Log JS Errors to Session Storage Key | `dev/js/session_storage_key` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
+
+{style="table-layout:auto"}
 
 ## Payment sensitive and system-specific paths
 
@@ -316,6 +358,8 @@ This section lists variable names and config paths available for options in the 
 | Name | Config path | EE only? | Encrypted? |
 |--------------|--------------|--------------|--------------|
 | Merchant Country | `paypal/general/merchant_country` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 >[!INFO]
 >
@@ -336,6 +380,8 @@ This section lists variable names and config paths available for options in the 
 | Debug Mode | `payment/paypal_billing_agreement/debug` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 | SFTP Credentials | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### PayPal Payflow Pro sensitive and system-specific paths
 
 | Name  | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
@@ -353,6 +399,8 @@ This section lists variable names and config paths available for options in the 
 | SFTP Credentials | `payment_all_paypal/paypal_payflowpro/settings_paypal_payflow/settings_paypal_payflow_advanced/paypal_payflow_settlement_report/heading_sftp` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 | Credit Card Settings | `payment_all_paypal/paypal_payflowpro/settings_paypal_payflow/heading_cc` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### PayPal Payflow Link sensitive and system-specific paths
 
 | Name | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
@@ -368,6 +416,8 @@ This section lists variable names and config paths available for options in the 
 | Debug Mode | `payment/payflow_express/debug` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 | SFTP Credentials | `payment_all_paypal/payflow_link/settings_payflow_link/settings_payflow_link_advanced/payflow_link_settlement_report/heading_sftp` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### PayPal Payments Pro sensitive and system-specific paths
 
 | Name | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
@@ -381,6 +431,8 @@ This section lists variable names and config paths available for options in the 
 | Sandbox Mode | `paypal/wpp/sandbox_flag` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 | SFTP Credentials | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 
+{style="table-layout:auto"}
+
 ### PayPal Payments Pro Hosted sensitive and system-specific paths
 
 | Name | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
@@ -388,6 +440,8 @@ This section lists variable names and config paths available for options in the 
 | Debug Mode | `payment/hosted_pro/debug` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 | SFTP Credentials | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | SFTP Credentials | `payment_au/paypal_group_all_in_one/payments_pro_hosted_solution_au/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 ### Braintree sensitive and system-specific paths
 
@@ -402,12 +456,16 @@ This section lists variable names and config paths available for options in the 
 | Phone | `payment/braintree/descriptor_phone` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | URL | `payment/braintree/descriptor_url` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-specific](/help/assets/configuration/cloud-env.png) |
 
+{style="table-layout:auto"}
+
 ### Check / Money Order paths
 
 | Name | Config path | EE only? | Encrypted? | System-specific? | Sensitive? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Send Check to | `payment/checkmo/mailing_address` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Send Check to | `payment_us/checkmo/mailing_address` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}
 
 ### International paths
 
@@ -799,3 +857,5 @@ This section lists variable names and config paths available for options in the 
 | Installation ID | `payment_it/worldpay/installation_id` | ![EE-only](/help/assets/configuration/cloud-ee.png) | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Remote Admin Installation ID | `payment_it/worldpay/admin_installation_id` | ![EE-only](/help/assets/configuration/cloud-ee.png) | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | MD5 Secret for Transactions | `payment_it/worldpay/md5_secret` | ![EE-only](/help/assets/configuration/cloud-ee.png) | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
+
+{style="table-layout:auto"}

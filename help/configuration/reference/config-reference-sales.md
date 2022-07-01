@@ -60,6 +60,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Enable RMA on Product Level | `sales/magento_rma/enabled_on_product` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Use Store Address | `sales/magento_rma/use_store_address` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 
+{style="table-layout:auto"}
+
 ## Sales emails paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Sales Emails**.
@@ -131,6 +133,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Display Order ID in Header | `sales_pdf/shipment/put_order_id` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Display Order ID in Header | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Tax paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Tax**.
@@ -178,6 +182,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Apply Tax To FPT | `tax/weee/apply_vat` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Include FPT In Subtotal | `tax/weee/include_in_subtotal` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Checkout paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Checkout**.
@@ -201,6 +207,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Payment Failed Template | `checkout/payment_failed/template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Send Payment Failed Email Copy Method | `checkout/payment_failed/copy_method` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Shipping settings paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Shipping Settings**.
@@ -210,6 +218,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Apply custom Shipping Policy | `shipping/shipping_policy/enable_shipping_policy` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Shipping Policy | `shipping/shipping_policy/shipping_policy_content` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Multishipping settings paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Multishipping Settings**.
@@ -218,6 +228,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 |--------------|--------------|--------------|
 | Allow Shipping to Multiple Addresses | `multishipping/options/checkout_multiple` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Maximum Qty Allowed for Shipping to Multiple Addresses | `multishipping/options/checkout_multiple_maximum_qty` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}
 
 ## Delivery methods paths
 
@@ -363,6 +375,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Show Method if Not Applicable | `carriers/dhl/showmethod` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Sort Order | `carriers/dhl/sort_order` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Google API paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Google API**.
@@ -387,6 +401,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Conversion Value Type | `google/adwords/conversion_value_type` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Conversion Value | `google/adwords/conversion_value` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Gift cards paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Gift Cards**.
@@ -409,3 +425,5 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Dash Every X Characters | `giftcard/giftcardaccount_general/code_split` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | New Pool Size | `giftcard/giftcardaccount_general/pool_size` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Low Code Pool Threshold | `giftcard/giftcardaccount_general/pool_threshold` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}

@@ -24,6 +24,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Unsubscription Email Sender | `newsletter/subscription/un_email_identity` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Unsubscription Email Template | `newsletter/subscription/un_email_template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Customer configuration paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Customers** > **Customer Configuration**.
@@ -92,6 +94,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Symbols Used in CAPTCHA | `customer/captcha/symbols` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Case Sensitive | `customer/captcha/case_sensitive` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Wish list paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Customers** > **Wish List**.
@@ -107,6 +111,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Email Text Length Limit | `wishlist/email/text_limit` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Display Wish Lists Summary | `wishlist/wishlist_link/use_qty` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Invitations paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Customers** > **Invitations**.
@@ -121,6 +127,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Max Invitations Allowed to be Sent at One Time | `magento_invitation/general/max_invitation_amount_per_send` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Customer Invitation Email Sender | `magento_invitation/email/identity` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Customer Invitation Email Template | `magento_invitation/email/template` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
+
+{style="table-layout:auto"}
 
 ## Reward points paths
 
@@ -154,6 +162,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Reward Points Expiry Warning Email | `magento_reward/notification/expiry_warning_template` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Expiry Warning Before (days) | `magento_reward/notification/expiry_day_before` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 
+{style="table-layout:auto"}
+
 ## Promotions paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Customers** > **Promotions**.
@@ -174,6 +184,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Code Suffix | `promo/auto_generated_coupon_codes/suffix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Dash Every X Characters | `promo/auto_generated_coupon_codes/dash` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Gift registry paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Customers** > **Gift Registry**.
@@ -189,6 +201,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Maximum Sent Emails Threshold | `magento_giftregistry/sharing_email/send_limit` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Email Template | `magento_giftregistry/update_email/template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Email Sender | `magento_giftregistry/update_email/identity` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}
 
 ## Persistent shopping cart paths
 
@@ -208,3 +222,5 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Persist Comparison History | `persistent/options/compare_history` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Persist Recently Viewed Products | `persistent/options/recently_viewed` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Persist Customer Group Membership and Segmentation | `persistent/options/customer` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}

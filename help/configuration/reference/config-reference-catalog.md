@@ -109,6 +109,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Show Upsell Products | `catalog/magento_targetrule/upsell_position_behavior` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Rotation Mode for Products in Upsell Product List | `catalog/magento_targetrule/upsell_rotation_mode` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 
+{style="table-layout:auto"}
+
 ## Inventory paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Catalog** > **Inventory**.
@@ -137,6 +139,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Computation mode | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Value | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Visual Merchandiser paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Catalog** > **Visual Merchandiser**.
@@ -147,6 +151,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Minimum Stock Threshold | `visualmerchandiser/options/minimum_stock_threshold` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Color Attribute Code | `visualmerchandiser/options/color_attribute_code` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Color Order | `visualmerchandiser/options/color_order` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
+
+{style="table-layout:auto"}
 
 ## XML sitemap paths
 
@@ -170,6 +176,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Maximum File Size | `sitemap/limit/max_file_size` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Enable Submission to Robots.txt | `sitemap/search_engines/submission_robots` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## RSS Feeds paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Catalog** > **RSS Feeds**.
@@ -184,6 +192,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Top Level Category | `rss/catalog/category` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Customer Order Status Notification | `rss/order/status` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Email to a friend paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Catalog** > **Email to a Friend**.
@@ -196,3 +206,5 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Max Recipients | `sendfriend/email/max_recipients` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Max Products Sent in 1 Hour | `sendfriend/email/max_per_hour` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Limit Sending By | `sendfriend/email/check_by` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}

@@ -78,6 +78,8 @@ The settings are further organized by payment method.
 | Scheduled Fetching | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## PayPal Payments Pro
 
 | Name  | Config path | EE only? | Encrypted? |
@@ -86,6 +88,8 @@ The settings are further organized by payment method.
 | API Uses Proxy | `paypal/wpp/use_proxy` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Scheduled Fetching | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Scheduled Fetching | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}
 
 ## Payments Pro Hosted Solution (United Kingdom)
 
@@ -101,6 +105,8 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Payment Applicable From | `payment/hosted_pro/allowspecific` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Countries Payment Applicable From | `payment/hosted_pro/specificcountry` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Enable SSL verification | `payment/hosted_pro/verify_peer` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}
 
 ## PayPal Payflow Pro
 
@@ -142,6 +148,8 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Require CVV Entry | `payment/payflow_advanced/csc_required` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Send Email Confirmation | `payment/payflow_advanced/email_confirmation` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## PayPal Payflow Link
 
 | Name  | Config path | EE only? | Encrypted? |
@@ -162,6 +170,8 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Sort Order | `payment/payflow_link/sort_order` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Payment Action | `payment/payflow_link/payment_action` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Zero Subtotal Checkout paths
 
 | Name  | Config path | EE only? | Encrypted? |
@@ -173,6 +183,8 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Payment from Applicable Countries | `payment/free/allowspecific` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Payment from Specific Countries | `payment/free/specificcountry` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Sort Order | `payment/free/sort_order` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}
 
 ## Cash on Delivery Payment paths
 
@@ -188,6 +200,8 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Maximum Order Total | `payment/cashondelivery/max_order_total` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Sort Order | `payment/cashondelivery/sort_order` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Bank Transfer Payment paths
 
 | Name  | Config path | EE only? | Encrypted? |
@@ -201,6 +215,8 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Minimum Order Total | `payment/banktransfer/min_order_total` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Maximum Order Total | `payment/banktransfer/max_order_total` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Sort Order | `payment/banktransfer/sort_order` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}
 
 ## Check or Money Order paths
 
@@ -216,6 +232,8 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Maximum Order Total | `payment/checkmo/max_order_total` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Sort Order | `payment/checkmo/sort_order` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
+{style="table-layout:auto"}
+
 ## Purchase Order paths
 
 | Name  | Config path | EE only? | Encrypted? |
@@ -228,6 +246,8 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Minimum Order Total | `payment/purchaseorder/min_order_total` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Maximum Order Total | `payment/purchaseorder/max_order_total` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Sort Order | `payment/purchaseorder/sort_order` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+
+{style="table-layout:auto"}
 
 ## International paths
 
@@ -1374,3 +1394,5 @@ These options are available only if you chose the United Kingdom as the [merchan
 | Payment from Applicable Countries | `payment_us/eway/allowspecific` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Payment from Specific Countries | `payment_us/eway/specificcountry` | ![EE-only](/help/assets/configuration/cloud-ee.png) |
 | Sort Order | `payment_us/eway/sort_order` | |
+
+{style="table-layout:auto"}

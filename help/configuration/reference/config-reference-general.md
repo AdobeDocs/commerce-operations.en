@@ -48,7 +48,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | VAT Number | `general/store_information/merchant_vat_number` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |
 | Enable Single-Store Mode | `general/single_store_mode/enabled` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ### Web paths
 
@@ -80,7 +80,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Show Notice if JavaScript is Disabled | `web/browser_capabilities/javascript` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Show Notice if Local Storage is Disabled | `web/browser_capabilities/local_storage` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ### Currency setup paths
 
@@ -105,7 +105,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Error Email Sender | `currency/import/error_email_identity` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Error Email Template | `currency/import/error_email_template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ### Contacts paths
 
@@ -118,7 +118,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Email Sender | `contact/email/sender_email_identity` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Email Template | `contact/email/email_template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ### Reports paths
 
@@ -129,7 +129,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Year-To-Date Starts | `reports/dashboard/ytd_start` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Current Month Starts | `reports/dashboard/mtd_start` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ### Content management paths
 
@@ -143,7 +143,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Enable Hierarchy Metadata | `cms/hierarchy/metadata_enabled` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Default Layout for Hierarchy Menu | `cms/hierarchy/menu_layout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ### New Relic reporting paths
 
@@ -155,7 +155,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | New Relic Application Name | `newrelicreporting/general/app_name` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Enable Cron | `newrelicreporting/cron/enable_cron` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ## Advanced category
 
@@ -197,7 +197,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Case Sensitive | `admin/captcha/case_sensitive` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Enabled Actions | `admin/magento_logging/actions` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ### System paths
 
@@ -265,7 +265,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Frequency | `system/magento_scheduled_import_export_log/frequency` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Error Email Template | `system/magento_scheduled_import_export_log/error_email_template` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}
 
 ### Developer paths
 
@@ -295,4 +295,4 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Asynchronous indexing | `dev/grid/async_indexing` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 | Cache User Defined Attributes | `dev/caching/cache_user_defined_attributes` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
 
-{style="table-layout:fixed"}
+{style="table-layout:auto"}

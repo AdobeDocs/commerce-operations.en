@@ -37,6 +37,8 @@ These configuration values are available in the Admin in **[!UICONTROL Stores]**
 | Applicable Payment Methods | `btob/default_b2b_payment_methods/applicable_payment_methods` | | | |
 | Payment Methods | `btob/default_b2b_payment_methods/available_payment_methods` | | | |
 
+{style="table-layout:auto"}
+
 ## Customers category
 
 This section lists variable names and config paths available for options in the Admin under **[!UICONTROL Stores]** > Settings > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
@@ -79,6 +81,8 @@ These configuration values are available in the Admin in **[!UICONTROL Stores]**
 | Refunded Email Template | `company/email/credit_refunded_email_template` | | | |
 | Reverted Email Template | `company/email/credit_reverted_email_template` | | | |
 
+{style="table-layout:auto"}
+
 ### Requisition lists paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Customers** > **Requisition Lists**.
@@ -86,6 +90,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Name | Config path | Encrypted? | System-specific? | Sensitive? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | Number of Requisition Lists | `requisitionlist/general/number_requisition_lists` | | | |
+
+{style="table-layout:auto"}
 
 ## Sales category
 
@@ -108,6 +114,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Send Quote Email Copy To | `sales_email/quote/copy_to` | | | ![Sensitive](/help/assets/configuration/cloud-sens.png) |
 | Send Quote Email Copy Method | `sales_email/quote/copy_method` | | | |
 
+{style="table-layout:auto"}
+
 ### Quotes paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Quotes**.
@@ -124,6 +132,8 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Default Expiration Period | `quote/general/default_expiration_period` | | | |
 | File formats for upload | `quote/attached_files/file_formats` | | | |
 | Maximum file size | `quote/attached_files/maximum_file_size` | | | |
+
+{style="table-layout:auto"}
 
 ## Payment method paths
 
@@ -239,3 +249,5 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Minimum Order Total | `payment/it/companycredit/min_order_total` | | | |
 | Maximum Order Total | `payment/it/companycredit/max_order_total` | | | |
 | Sort Order | `payment/it/companycredit/sort_order` | | | |
+
+{style="table-layout:auto"}
