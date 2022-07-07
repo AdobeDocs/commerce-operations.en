@@ -19,3 +19,4 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [Extensions](site-wide-analysis-tool/extensions.md)
   - [Alerts](site-wide-analysis-tool/alerts.md)
   - [Patches](site-wide-analysis-tool/patches.md)
+  
