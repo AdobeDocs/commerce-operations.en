@@ -1,13 +1,13 @@
 ---
 title: "[!UICONTROL Elasticsearch]"
-description: Learn about the [!UICONTROL Elasticsearch] tab of [!DNL Observation for Adobe Commerce], 
+description: Learn about the [!UICONTROL Elasticsearch] tab of [!DNL Observation for Adobe Commerce].
 ---
 
 # The Elasticsearch tab
 
 ## Cluster Status Summary:
 
-image-cluster-summary
+![Cluster Status Summary](../../assets/tools/cluster-status-summary.jpg)
 
 Over the selected time frame, this frame shows the color statuses that the Elasticsearch cluster has
 gonethrough. In this example, during the selected time frame, the cluster was in a Green status once
@@ -15,7 +15,7 @@ and in aYellow status once during the selected timeframe.
 
 ## Active Primary Shards:
 
-image-
+![Active Primary Shards](../../assets/tools/active-primary-shards.jpg)
 
 The Active Primary Shards frame will show differing numbers depending on the number of active
 primaryshards for the selected account’s Elasticsearch service.
@@ -36,13 +36,14 @@ There are also replica shards. These are primarily for failover. Replica shards 
 
 ## Active Shards in Cluster:
 
-image-
+![Active Shards in Cluster](../../assets/tools/active-shards-in-cluster.jpg)
+
 
 Active Shards in Cluster - ALL primary and replica shards in an Elasticsearch cluster.
 
 ## Index health - this will show the index name and color status
 
-image-
+![Index health](../../assets/tools/index-health.jpg)
 
 This frame will show the index name and the index color status count. Scrolling down the table, you
 will see the same index name with Yellow and Red color statuses. The number that follows the
@@ -52,27 +53,27 @@ that color status during theselected time frame.
 
 ## Elasticsearch Status by node information:
 
-image-
+![Elasticsearch Status](../../assets/tools/elasticsearch-status-by-node.jpg)
 
 This frame shows the Elasticsearch cluster status by Color, by node. This will help indicate which
 node in theElasticsearch cluster is returning what status during the selected time frame
 
 ## Elasticsearch index information:
 
-image-
+![Elasticsearch index information](../../assets/tools/elasticsearch-index-information.jpg)
 
 This table shows the index name, what node it is on, the number of indexed documents, the index
 health,and the index size in MB at a particular time.
 
 ## Elasticsearch process CPU %:
 
-image-
+![Elasticsearch process CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
 This frame shows the process CPU % by the Elasticsearch process over the selected time frame.
 
 ## Elasticsearch Memory garbage collection
 
-image-
+![Elasticsearch Memory garbage](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
 Elasticsearch is a Java process. If it runs low on allocated memory, it will initiate garbage collection to
 free up memory. If garbage collection is frequent, it is an indication that there may be too many
@@ -81,20 +82,20 @@ shards or Elasticsearch may need more memory.
 
 ## Elasticsearch Index information:
 
-image-
+![Elasticsearch Index Information](../../assets/tools/elasticsearch-index-information-2.jpg)
 
 As indexes are created and updated, the index health may change.
 
 ## Elasticsearch Index Size:
 
-image-
+![Elasticsearch Index size](../../assets/tools/elasticsearch-index-size.jpg)
 
 This frame indicates the index name and size across the selected time frame. It may indicate
 problems withhow a site is indexing.
 
 ## Elasticsearch Errors:
 
-image-
+![Elasticsearch Errors](../../assets/tools/elasticsearch-errors.jpg)
 
 This frame will display errors with Elasticsearch like running out of space, switching from Yellow to
 Red status, when all shards fail, when there are parameter issues with searches, version errors and
@@ -102,10 +103,6 @@ when all nodes are unavailable.
 
 ## Elasticsearch Unassigned Shards:
 
-image
+![Elasticsearch Unassigned Shards](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 
 Unassigned shards will cause a cluster to move from Green status to Yellow status.
-
-
-
-
