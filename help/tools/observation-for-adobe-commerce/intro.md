@@ -25,4 +25,3 @@ Merchants and partners who want to optimize their Adobe Commerce site performanc
 * Simplify data gathering and parsing with visual summaries of critical error messages from the logs.
 
 * Gain perspective across various services such as IP request frequency, URLs accessed, the APIs used, and more.
-
