@@ -1,5 +1,5 @@
 ---
-title: "Accessing the [!DNL Observation for Adobe Commerce]" nerdlet
+title: "Accessing the [!DNL Observation for Adobe Commerce] nerdlet"
 description: Learn how to access the [!DNL Observation for Adobe Commerce] nerdlet.
 ---
 # Accessing the [!DNL Observation for Adobe Commerce] nerdlet
