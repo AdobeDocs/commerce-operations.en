@@ -2,6 +2,7 @@
 title: "Accessing the [!DNL Observation for Adobe Commerce]" nerdlet
 description: Learn how to access the [!DNL Observation for Adobe Commerce] nerdlet.
 ---
+# Accessing the [!DNL Observation for Adobe Commerce] nerdlet
 
 To use the [!DNL New Relic Observation for Adobe Commerce] nerdlet, ensure you have access to [!DNL New Relic].
 
