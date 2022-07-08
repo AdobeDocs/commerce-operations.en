@@ -20,5 +20,4 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [Alerts](site-wide-analysis-tool/alerts.md)
   - [Patches](site-wide-analysis-tool/patches.md)
 - Observation for Adobe Commerce {#observation-for-adobe-commerce}
-  - [Introduction](observation-for-adobe-commerce/intro.md)
   - [How to access](observation-for-adobe-commerce/access.md)
