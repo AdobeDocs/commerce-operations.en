@@ -24,8 +24,7 @@ From Elasticsearch: The definitive Guide [2.x]
 
 “In Dynamically Updatable Indices, we explained that a shard is a Lucene index and that an
 Elasticsearch indexis a collection of shards. Your application talks to an index, and Elasticsearch
-routes your requests to the appropriate shards.
-A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be more thansufficient for your needs—a single shard can hold a lot of data—but it limits your ability to
+routes your requests to the appropriate shards. A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be more thansufficient for your needs—a single shard can hold a lot of data—but it limits your ability to
 scale.”
 
 When an index is created, there are several shards created with that index. By default, five primary
@@ -36,7 +35,6 @@ shard per node). There are also replica shards. These are primarily for failover
 
 ![Active Shards in Cluster](../../assets/tools/active-shards-in-cluster.jpg)
 
-
 Active Shards in Cluster - ALL primary and replica shards in an Elasticsearch cluster.
 
 ## Index health - this will show the index name and color status
@@ -45,9 +43,7 @@ Active Shards in Cluster - ALL primary and replica shards in an Elasticsearch cl
 
 This frame will show the index name and the index color status count. Scrolling down the table, you
 will see the same index name with Yellow and Red color statuses. The number that follows the
-27
-index name is the count of the status color. If it is zero, there were no instances of the index being in
-that color status during theselected time frame.
+27 index name is the count of the status color. If it is zero, there were no instances of the index being in that color status during theselected time frame.
 
 ## Elasticsearch Status by node information:
 
@@ -73,10 +69,7 @@ This frame shows the process CPU % by the Elasticsearch process over the selecte
 
 ![Elasticsearch Memory garbage](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
-Elasticsearch is a Java process. If it runs low on allocated memory, it will initiate garbage collection to
-free up memory. If garbage collection is frequent, it is an indication that there may be too many
-indices or shards for the allocated memory. There may be an opportunity to clean up the indices and
-shards or Elasticsearch may need more memory.
+Elasticsearch is a Java process. If it runs low on allocated memory, it will initiate garbage collection to free up memory. If garbage collection is frequent, it is an indication that there may be too many indices or shards for the allocated memory. There may be an opportunity to clean up the indices and shards or Elasticsearch may need more memory.
 
 ## Elasticsearch Index information:
 
@@ -95,9 +88,7 @@ problems withhow a site is indexing.
 
 ![Elasticsearch Errors](../../assets/tools/elasticsearch-errors.jpg)
 
-This frame will display errors with Elasticsearch like running out of space, switching from Yellow to
-Red status, when all shards fail, when there are parameter issues with searches, version errors and
-when all nodes are unavailable.
+This frame will display errors with Elasticsearch like running out of space, switching from Yellow to Red status, when all shards fail, when there are parameter issues with searches, version errors and when all nodes are unavailable.
 
 ## Elasticsearch Unassigned Shards:
 
