@@ -11,7 +11,7 @@ To use the [!DNL New Relic Observation for Adobe Commerce] nerdlet, ensure you h
 
     ![New Relic applet](../../assets/tools/new-relic-applet.jpeg)
 
-1. Authenticate through [!UICONTROL Okta]. (for internal Adobe users only)
+1. Authenticate through [!UICONTROL Okta] (for internal Adobe users only).
 1. From the [!DNL New Relic] home page, select the Apps menu item:
 
     ![New Relic home page](../../assets/tools/new-relic-homepage.jpeg)
