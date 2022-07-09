@@ -1,5 +1,5 @@
 ---
-title: "[!UICONTROL Elasticsearch]"
+title: "The [!UICONTROL Elasticsearch] tab"
 description: Learn about the [!UICONTROL Elasticsearch] tab of [!DNL Observation for Adobe Commerce].
 ---
 
@@ -25,14 +25,12 @@ From Elasticsearch: The definitive Guide [2.x]
 “In Dynamically Updatable Indices, we explained that a shard is a Lucene index and that an
 Elasticsearch indexis a collection of shards. Your application talks to an index, and Elasticsearch
 routes your requests to the appropriate shards.
-A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be
-more thansufficient for your needs—a single shard can hold a lot of data—but it limits your ability to
+A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be more thansufficient for your needs—a single shard can hold a lot of data—but it limits your ability to
 scale.”
 
 When an index is created, there are several shards created with that index. By default, five primary
 shards areallotted to each new index, meaning that an index can be spread across 5 nodes (one
-shard per node).
-There are also replica shards. These are primarily for failover. Replica shards can serve read requests.
+shard per node). There are also replica shards. These are primarily for failover. Replica shards can serve read requests.
 
 ## Active Shards in Cluster:
 
