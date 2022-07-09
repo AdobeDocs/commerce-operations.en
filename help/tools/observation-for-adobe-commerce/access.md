@@ -7,7 +7,7 @@ description: Learn how to access the [!DNL Observation for Adobe Commerce] nerdl
 To use the [!DNL New Relic Observation for Adobe Commerce] nerdlet, ensure you have access to [!DNL New Relic].
 
 1. Go to the [!UICONTROL Okta] home page (for internal Adobe users only).
-1. Select the [!UICONTROL New Relic applet]: (for internal Adobe users only)
+1. Select the [!UICONTROL New Relic applet] (for internal Adobe users only).
 
     ![New Relic applet](../../assets/tools/new-relic-applet.jpeg)
 
