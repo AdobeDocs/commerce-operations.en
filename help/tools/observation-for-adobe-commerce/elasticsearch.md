@@ -18,7 +18,7 @@ and in a Yellow status once during the selected timeframe.
 ![Active Primary Shards](../../assets/tools/active-primary-shards.jpg)
 
 The Active Primary Shards frame will show differing numbers depending on the number of active
-primaryshards for the selected account’s Elasticsearch service.
+primary shards for the selected account’s Elasticsearch service.
 
 From Elasticsearch: The definitive Guide [2.x]
 
