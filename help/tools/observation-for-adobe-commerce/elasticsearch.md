@@ -11,7 +11,7 @@ description: Learn about the [!UICONTROL Elasticsearch] tab of [!DNL Observation
 
 Over the selected time frame, this frame shows the color statuses that the Elasticsearch cluster has
 gone through. In this example, during the selected time frame, the cluster was in a Green status once
-and in aYellow status once during the selected timeframe.
+and in a Yellow status once during the selected timeframe.
 
 ## Active Primary Shards:
 
