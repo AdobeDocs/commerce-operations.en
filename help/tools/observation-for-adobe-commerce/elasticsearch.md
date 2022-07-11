@@ -3,7 +3,7 @@ title: "The [!UICONTROL Elasticsearch] tab"
 description: Learn about the [!UICONTROL Elasticsearch] tab of [!DNL Observation for Adobe Commerce].
 ---
 
-# The Elasticsearch tab
+# The [!UICONTROL Elasticsearch] tab
 
 ## Cluster Status Summary:
 
