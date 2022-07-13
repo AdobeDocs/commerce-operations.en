@@ -13,10 +13,10 @@ The [`magento app:config:dump` command](../cli/export-configuration.md) writes t
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Services** > **Web API**.
 
-| Name  | Config path | EE only? |
+| Name  | Config path | Commerce only? |
 |--------------|--------------|--------------|
-| Default Response Charset | `webapi/soap/charset` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
-| Allow Anonymous Guest Access | `webapi/webapisecurity/allow_insecure` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| Default Response Charset | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Allow Anonymous Guest Access | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
 
@@ -24,14 +24,14 @@ These configuration values are available in the Admin in **Stores** > Settings >
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Services** > **OAuth**.
 
-| Name  | Config path | EE only? |
+| Name  | Config path | Commerce only? |
 |--------------|--------------|--------------|
-| Customer Token Lifetime (hours) | `oauth/access_token_lifetime/customer` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
-| Admin Token Lifetime (hours) | `oauth/access_token_lifetime/admin` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
-| Cleanup Probability | `oauth/cleanup/cleanup_probability` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
-| Expiration Period | `oauth/cleanup/expiration_period` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
-| Expiration Period | `oauth/consumer/expiration_period` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
-| OAuth consumer credentials HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
-| OAuth consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |
+| Customer Token Lifetime (hours) | `oauth/access_token_lifetime/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Admin Token Lifetime (hours) | `oauth/access_token_lifetime/admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Cleanup Probability | `oauth/cleanup/cleanup_probability` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Expiration Period | `oauth/cleanup/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Expiration Period | `oauth/consumer/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth consumer credentials HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth consumer credentials HTTP Post timeout | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
