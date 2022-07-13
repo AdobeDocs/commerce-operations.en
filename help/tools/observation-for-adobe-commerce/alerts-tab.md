@@ -6,25 +6,25 @@ description: Learn about the [!UICONTROL Alerts] tab of [!DNL Observation for Ad
 
 This tab provides a range of alerts, including open and close critical alerts.
 
-## Open alert details
+## [!UICONTROL Open Alert Details]
 
 ![Open Critical Alerts](../../assets/tools/alerts-tab-1.jpg)
 
 This frame shows a count of the open critical alerts across the selected timeframe. The alerts will include Adobe-created alerts and any created by the partner or merchant.
 
-## Closed critical alerts
+## [!UICONTROL Closed Critical Alerts]
 
 ![Closed Critical Alerts](../../assets/tools/alerts-tab-2.jpg)
 
 This frame shows a count of the closed critical alerts across the selected timeframe. The alerts will include Adobe-created alerts and any created by the partner or merchant.
 
-## Critical alert details
+## [!UICONTROL Critical Alert Details]
 
 ![Critical Alert Details](../../assets/tools/alerts-tab-3.jpg)
 
 This frame shows a count of the critical alert details across the selected timeframe, including timestamp, condition name, and whether the alert event is open or closed.
 
-## Infrastructure alert details
+## [!UICONTROL Infrastructure Alert Details]
 
 ![Infrastructure Alert Details](../../assets/tools/alerts-tab-4.jpg)
 
