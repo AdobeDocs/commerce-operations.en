@@ -6,6 +6,8 @@ ee_only: True
 
 # Automatically configure master databases
 
+{{deprecate-split-db}}
+
 This topic discusses how to get started with the split database solution by:
 
 1. Installing Adobe Commerce with a single master database (named `magento`)

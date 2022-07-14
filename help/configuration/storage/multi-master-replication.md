@@ -6,6 +6,8 @@ ee_only: True
 
 # Database replication
 
+{{deprecate-split-db}}
+
 Setting up database replication provides the following benefits:
 
 - Provides data backup

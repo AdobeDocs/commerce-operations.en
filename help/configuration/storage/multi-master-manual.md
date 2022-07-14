@@ -6,6 +6,8 @@ ee_only: True
 
 # Manually configure master databases
 
+{{deprecate-split-db}}
+
 If the Magento application is already in production or if you have already installed custom code or components, you might need to configure split databases manually. Before continuing, contact Adobe Commerce Support to see if this is necessary in your case.
 
 Manually splitting databases involves:

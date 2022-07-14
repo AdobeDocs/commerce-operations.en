@@ -6,6 +6,8 @@ ee_only: True
 
 # Verify split database
 
+{{deprecate-split-db}}
+
 After configuration, the master databases are configured as follows:
 
 - Main magento database: 369 tables
