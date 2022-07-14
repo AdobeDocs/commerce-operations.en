@@ -1,6 +1,6 @@
 ---
 title: Configuration types
-description: Create or extend configuration types
+description: Create or extend configuration types.
 ---
 
 # Configuration types

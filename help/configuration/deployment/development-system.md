@@ -1,6 +1,6 @@
 ---
 title: Development system setup
-description: Learn how to set up a developments system for the Commerce application.
+description: Learn how to set up a development system for the Commerce application.
 ---
 
 # Development system setup

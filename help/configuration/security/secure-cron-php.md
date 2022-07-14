@@ -1,6 +1,6 @@
 ---
 title: Secure cron PHP
-description: Secure the cron.php to run in a browser.
+description: Restrict who can run the cron.php file in a browser.
 ---
 
 # Secure cron PHP

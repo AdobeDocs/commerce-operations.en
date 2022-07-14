@@ -1,6 +1,6 @@
 ---
 title: Configure search stopwords
-description: Learn how manage stopwords for Adobe Commerce using CSV files.
+description: Learn how to manage stopwords for Adobe Commerce using CSV files.
 ---
 
 # Configure search stopwords

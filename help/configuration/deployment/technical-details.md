@@ -1,6 +1,6 @@
 ---
 title: Technical details
-description: Read about the technical of pipeline deployment, types of configurations, and recommended workflows.
+description: Read about the technical details of pipeline deployment, types of configurations, and recommended workflows.
 ---
 
 # Technical details

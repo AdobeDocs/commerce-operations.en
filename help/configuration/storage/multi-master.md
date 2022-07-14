@@ -1,6 +1,6 @@
 ---
 title: Split database performance solution
-description: Read about the split database solution for Adobe Commerce and Magento Open source.
+description: Read about the split database solution for Adobe Commerce and Magento Open Source.
 ee_only: True
 ---
 

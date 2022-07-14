@@ -1,6 +1,6 @@
 ---
 title: Set up Amazon Message Queue
-description: Learn how to configure Magento to use the AWS MQ service.
+description: Learn how to configure Commerce to use the AWS MQ service.
 ---
 
 # Set up Amazon Message Queue

@@ -1,6 +1,6 @@
 ---
 title: Automatically configure master databases
-description: See guidance on automatically configuring split database solution.
+description: See guidance on automatically configuring the split database solution.
 ee_only: True
 ---
 

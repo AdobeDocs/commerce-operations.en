@@ -1,6 +1,6 @@
 ---
 title: Multiple websites or stores
-description: Learn how you can start multiple websites or implement store views with different options in different domains content.
+description: Learn how you can start multiple websites or implement store views with different options, domains, and content.
 ---
 
 # Multiple websites or stores

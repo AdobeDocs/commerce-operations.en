@@ -1,6 +1,6 @@
 ---
 title: Manually configure master databases
-description: See guidance on manually configuring split database solution.
+description: See guidance on manually configuring the split database solution.
 ee_only: True
 ---
 
