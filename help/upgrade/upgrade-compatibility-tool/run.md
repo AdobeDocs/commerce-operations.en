@@ -13,7 +13,7 @@ To get started with the [!DNL Upgrade Compatibility Tool] in a command-line inte
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
-It may be required to allow executable permissions to the tool. To do this simply run the following command:
+You may need to give the tool executable permissions with the `chmod` command:
 
 ```bash
 chmod +x ./uct/bin/uct
