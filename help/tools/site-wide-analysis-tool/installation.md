@@ -129,7 +129,7 @@ We have created a [shell script](https://github.com/magento-swat/install-agent-h
 1. Verify installation.
 
    ```bash
-   scheduler -v
+   ./scheduler -v
    ```
 
    ```bash
@@ -248,7 +248,7 @@ We recommend configuring the agent to run as a service. If you have limited acce
 
 ### Service {#service}
 
-1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the Unix user that owns the directory where the agent is installed).
+1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the Unix user that owns the directory where the agent and the Adobe Commerce software is installed). If you downloaded the agent as the root user, change the directory and nested files owner.
 
    ```config
    [Unit]
