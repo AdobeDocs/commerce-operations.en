@@ -17,6 +17,11 @@ To download the [!DNL Upgrade Compatibility Tool], run the following command:
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
+You need to give executable permissions afterwards. Run the following command:
+````bash
+chmod +x ./uct/bin/uct
+```
+
 ## Install
 
 To install the [!DNL Upgrade Compatibility Tool], you must install the necessary prerequisites:
