@@ -25,8 +25,11 @@ catalog_product_attribute                Product EAV
 inventory                                Inventory
 catalogrule_product                      Catalog Product Rule
 cataloginventory_stock                   Stock
+targetrule_product_rule                  Product/Target Rule
+targetrule_rule_product                  Target Rule/Product
 catalog_product_price                    Product Price
 catalogsearch_fulltext                   Catalog Search
+salesrule_rule                           Sales Rule
 ```
 
 ## View indexer status
@@ -41,17 +44,6 @@ bin/magento indexer:status [indexer]
 
 Where `[indexer]` is a space-separated list of indexers. Omit `[indexer]` to view the status of all indexers.
 
-To list all indexers:
-
-```bash
-bin/magento indexer:info
-```
-
-A sample follows:
-
-```bash
-bin/magento indexer:status
-```
 
 Sample result:
 
@@ -88,18 +80,6 @@ bin/magento indexer:reindex [indexer]
 ```
 
 Where `[indexer]` is a space-separated list of indexers. Omit `[indexer]` to reindex all indexers.
-
-To view a list of all indexers:
-
-```bash
-bin/magento indexer:info
-```
-
-A sample follows:
-
-```bash
-bin/magento indexer:reindex
-```
 
 Sample result:
 
@@ -174,12 +154,6 @@ bin/magento indexer:reset [indexer]
 
 Where ```[indexer]``` is a space-separated list of indexers. Omit `[indexer]` to invalidate all indexers.
 
-A sample follows:
-
-```bash
-bin/magento indexer:reset
-```
-
 Sample result:
 
 ```terminal
@@ -200,8 +174,8 @@ Catalog Search indexer has been invalidated.
 
 Use this command to set the following indexer options:
 
--  **Update on save (`realtime`):** Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
--  **Update by schedule (`schedule`):** Data is indexed according to the schedule set by your Magento cron job.
+-  **Update on save (`realtime`)**: Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
+-  **Update by schedule (`schedule`)**: Data is indexed according to the schedule set by your Magento cron job.
 
 [Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
@@ -214,10 +188,6 @@ bin/magento indexer:show-mode [indexer]
 ```
 
 Where `[indexer]` is a space-separated list of indexers. Omit `[indexer]` to show all indexers' modes. For example, to show the mode of all indexers:
-
-```bash
-bin/magento indexer:show-mode
-```
 
 Sample result:
 
@@ -252,12 +222,6 @@ Where:
 -  `realtime`—Sets the selected indexers to update on save.
 -  `schedule`—Sets the specified indexers to save according to the cron schedule.
 -  `indexer`—Is a space-separated list of indexers. Omit `indexer` to configure all indexers the same way.
-
-To view the list of indexers:
-
-```bash
-bin/magento indexer:info
-```
 
 For example, to change only the category products and product categories indexers to update on schedule, enter:
 

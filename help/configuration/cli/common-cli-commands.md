@@ -40,8 +40,8 @@ Commands are shown in summary form only; for more information about a command, c
 |[`magento setup:perf:generate-fixtures`](../cli/generate-data.md)|Generate data to use for performance testing.|
 |[`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html)|Installs optional Magento sample data after you install the Magento application.<br><br>For more details about Magento sample data, see [Optional Magento sample data](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html).|
 |[`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md)|Manages backend configurations|
-|[`bin/magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html)| Creates/edits/unlocks admin users.|
-|[`bin/magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html)|Enables/disables developer template hints.|
+|[`magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html)| Creates/edits/unlocks admin users.|
+|[`magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html)|Enables/disables developer template hints.|
 
 ## Common arguments
 

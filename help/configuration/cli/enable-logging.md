@@ -45,7 +45,7 @@ By default, Magento writes to the debug log (`<install_directory>/var/log/debug.
 
 ## Database logging
 
-By default, Magento writes database activity logs to the `var/debug/db.log` file inside the Magento application directory.
+By default, Magento writes database activity logs to the `<install-dir>var/debug/db.log` file.
 
 ### To enable database logging
 
