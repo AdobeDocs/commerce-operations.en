@@ -150,7 +150,7 @@ Commerce provides an optimized sample nginx configuration file out of the box. W
 
       fastcgi_index  index.php;
       fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-      include      fastcgi_params;
+      include        fastcgi_params;
    }
    ```
 
@@ -272,7 +272,7 @@ If you are using an Apache web server, you must remove the restriction from the 
    For example,
 
    ```conf
-   ## Deny access  to cron.php
+   ## Deny access to cron.php
       #<Files cron.php>
          # order allow,deny
          # deny from all

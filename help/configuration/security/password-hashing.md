@@ -19,7 +19,7 @@ Where `version<n>`...`version<n>` represents all the hash algorithms versions us
 a853b06f077b686f8a3af80c98acfca763cf10c0e03597c67e756f1c782d1ab0:8qnyO4H1OYIfGCUb:1:2
 ```
 
-The first part represents the password hash. The second, `8qnyO4H1OYIfGCUb` is the salt. The last two are the different hash algorithms: 1 is `SHA256` and  2 is `Argon 2ID13`. This means that the customer's password was originally hashed with `SHA256` and after that, the algorithm was updated with `Argon 2ID13` and the hash was rehashed with Argon.
+The first part represents the password hash. The second, `8qnyO4H1OYIfGCUb` is the salt. The last two are the different hash algorithms: 1 is `SHA256` and 2 is `Argon 2ID13`. This means that the customer's password was originally hashed with `SHA256` and after that, the algorithm was updated with `Argon 2ID13` and the hash was rehashed with Argon.
 
 ## Upgrade hash strategy
 

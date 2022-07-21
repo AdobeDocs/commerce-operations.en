@@ -1,14 +1,14 @@
 ---
 title: Application initialization and bootstrap
-description: Read about initialization and bootstrapping logic for the Commerce application.
+description: Read about initialization and bootstrap logic for the Commerce application.
 ---
 
-# Overview of initialization and bootstrapping
+# Overview of initialization and bootstrap
 
 To run the Commerce application, the following actions are implemented in [pub/index.php][index]:
 
 - Include [app/bootstrap.php][bootinitial], which performs essential initialization routines such as error handling, initializing the autoloader, setting profiling options, and setting the default timezone.
-- Create an instance of [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor.  Normally, the $_SERVER super-global variable is supposed to be passed there. -->
+- Create an instance of [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
 - Create a Commerce application instance: [\Magento\Framework\AppInterface][app-face]
 - Run Commerce
 

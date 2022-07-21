@@ -94,7 +94,7 @@ A `<section>`-Tag can have the following attributes:
 | `showInDefault` | Defines whether the section is shown in the default configuration scope. Specify `1` to show the section and `0` to hide the section.              | `int`    | optional |
 | `showInStore`   | Defines whether the section is shown on store level. Specify `1` to show the section and `0` to hide the section.                                  | `int`    | optional |
 | `showInWebsite` | Defines whether the section is shown on website level. Specify `1` to show the section and `0` to hide the section.                                | `int`    | optional |
-| `canRestore`    | Defines if the  section can be restored to default.                                                                                                | `int`    | optional |
+| `canRestore`    | Defines if the section can be restored to default.                                                                                                | `int`    | optional |
 | `advanced`      | Deprecated since 100.0.2.                                                                                                                          | `bool`   | optional |
 | `extends`       | By providing an identifier of another section, the content of this node will extend the section that you referenced.                               | `string` | optional |
 
@@ -243,7 +243,7 @@ A `<field>`-Tag can have the following values for the `type=""` attribute:
 | `select`        | Normal dropdown, may need a custom `source_model`. Also used for `Yes/No` selections. See `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` for an example.                                                                     |
 | `multiselect`   | Like `select` but multiple options are valid.                                                                                                                                                                              |
 | `button`        | A button that triggers an immediate event. Requires custom front-end model to define the button text and the action. See `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` for an example. |
-| `obscure`       | A text field with the value encrypted and displayed as `****`.  Changing the type using "Inspect Element" in the browser does not reveal the value.                                                                                             |
+| `obscure`       | A text field with the value encrypted and displayed as `****`. Changing the type using "Inspect Element" in the browser does not reveal the value.                                                                                             |
 | `password`      | Like `obscure` except that the hidden value is not encrypted, and forcibly changing the type using "Inspect Element" in the browser does reveal the value.                                                                                 |
 | `file`          | Allows a file to be uploaded for processing.                                                                                                                                                                                   |
 | `label`         | Displays a label instead of an editable field. Use this type when a field is editable only on specific scopes, for example Store View level only.                                                                     |

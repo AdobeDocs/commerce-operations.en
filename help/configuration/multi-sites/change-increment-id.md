@@ -18,7 +18,7 @@ This article discusses how to change the increment ID for a Commerce database (D
 You might need to change the increment ID for new DB entities in these cases:
 
 - After a hard backup restore on a Live site
-- Some order records have been lost, but their IDs are already being used by payment gateways (like PayPal) for your current Merchant account. Such being the case, the payment  gateways stop processing new orders that have the same IDs, returning the "Duplicate invoice id" error
+- Some order records have been lost, but their IDs are already being used by payment gateways (like PayPal) for your current Merchant account. Such being the case, the payment gateways stop processing new orders that have the same IDs, returning the "Duplicate invoice id" error
 
 >[!INFO]
 >

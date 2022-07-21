@@ -12,7 +12,7 @@ To configure Commerce to use Varnish:
 1. From the **[!UICONTROL Caching Application]** list, click **Varnish Caching**.
 1. Enter a value in the **[!UICONTROL TTL for public content]** field.
 1. Expand **[!UICONTROL Varnish Configuration]** and enter the following information:
-   
+
    | Field | Description |
    | ----- | ----------- |
    | Access list | Enter the fully qualified hostname, IP address, or [Classless Inter-domain Routing (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) notation IP address range for which to invalidate content. See [Varnish cache Purging](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |

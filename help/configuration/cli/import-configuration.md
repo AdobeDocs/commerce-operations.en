@@ -28,7 +28,7 @@ Use the optional `[-n, --no-interaction]` flag to import data without any intera
 
 If you enter `bin/magento app:config:import` without the optional flag, you are required to confirm the changes.
 
-For example, if configuration file contains one new website and one new store, the following  message is displayed:
+For example, if configuration file contains one new website and one new store, the following message is displayed:
 
 ```terminal
 These Websites will be created: New Website
@@ -120,5 +120,5 @@ Full example:
 
 >[!INFO]
 >
->- _Theme registration_. If a theme data is defined in `config.php` but the theme's source code is  not present in the file system, the theme is ignored (that is, not registered).
+>- _Theme registration_. If a theme data is defined in `config.php` but the theme's source code is not present in the file system, the theme is ignored (that is, not registered).
 >- _Theme removal_. If a theme is not present in `config.php` but the source code is present on the file system, the theme is not removed.

@@ -40,7 +40,7 @@ The Commerce framework creates an ESI tag when the following conditions are met:
    </referenceContainer>
 ```
 
-In the example above, the `block` element adds content from the `esi.phtml` template  to a homepage and Varnish  automatically updates it every 30 seconds.
+In the example above, the `block` element adds content from the `esi.phtml` template to a homepage and Varnish automatically updates it every 30 seconds.
 
 ## Limitations
 

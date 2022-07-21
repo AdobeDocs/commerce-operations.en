@@ -61,7 +61,7 @@ In production mode:
 
 ## Maintenance mode
 
-Run the Commerce application in maintenance mode to take your site offline while you complete maintenance, upgrade, or configuration tasks.  In maintenance mode, the site redirects visitors to a default `Service Temporarily Unavailable` page.
+Run the Commerce application in maintenance mode to take your site offline while you complete maintenance, upgrade, or configuration tasks. In maintenance mode, the site redirects visitors to a default `Service Temporarily Unavailable` page.
 
 You can create a [custom maintenance page](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html), manually enable and disable maintenance mode, and configure maintenance mode to allow visitors from authorized IP addresses to view the store normally. See [enable and disable maintenance mode](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
 
