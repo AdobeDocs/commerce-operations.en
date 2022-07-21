@@ -5,7 +5,7 @@ description: Learn to update and manage your Varnish configuration file for the 
 
 # Configure the Commerce application to use Varnish
 
-To configure Magento to use Varnish:
+To configure Commerce to use Varnish:
 
 1. Log in to the Admin as an administrator.
 1. Click **[!UICONTROL Stores]** > Settings > **Configuration** > **Advanced** > **System** > **Full Page Cache**.
@@ -22,7 +22,7 @@ To configure Magento to use Varnish:
 
 1. Click **Save Config**.
 
-You can also activate Varnish from the command line--instead of logging in to the Admin—using the Magento command-line interface tool:
+You can also activate Varnish from the command line--instead of logging in to the Admin—using the C command-line interface tool:
 
 ```bash
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
@@ -38,7 +38,7 @@ To export a Varnish configuration file from the Admin panel:
 
    The following figure shows an example:
 
-   ![Configure Magento to use Varnish in the Admin](../../assets/configuration/varnish-admin-22.png)
+   ![Configure Commerce to use Varnish in the Admin](../../assets/configuration/varnish-admin-22.png)
 
 1. Back up your existing `default.vcl`. Then rename the `varnish.vcl` file you just exported to `default.vcl`. Then copy the file to the `/etc/varnish/` directory.
 
@@ -90,4 +90,4 @@ Static files should not be cached by default, but if you want to cache them, you
   #unset req.http.Cookie;
 ```
 
-You must make these changes before you configure Magento to use Varnish.
+You must make these changes before you configure Commerce to use Varnish.

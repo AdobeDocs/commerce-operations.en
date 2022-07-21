@@ -11,7 +11,7 @@ You can run the following types of reports:
 
 -  **Module dependencies**: Shows the total number of dependencies between modules and whether the dependencies are hard or soft.
 -  **Circular dependencies**: Shows the total number of dependency chains and the number and list of circular dependencies for each module.
--  **Framework dependencies**: Shows the total number of dependencies on the Magento framework by module (including the total number of framework entries for each library).
+-  **Framework dependencies**: Shows the total number of dependencies on the Commerce framework by module (including the total number of framework entries for each library).
 
 A dependency in a comment is also a dependency.
 

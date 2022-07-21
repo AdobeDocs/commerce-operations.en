@@ -13,10 +13,10 @@ File permissions and ownership must be consistent across development, build, and
   - Make sure the web server runs as the same user on all systems
   - Make sure that the file system owner is in the web server group on all systems
 
-- Change Magento file system permissions and ownership on each system as necessary using the following guidelines:
+- Change Commerce file system permissions and ownership on each system as necessary using the following guidelines:
 
   - Development and build: [Set pre-installation ownership and permissions (two users)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-  - Production: [Magento ownership and permissions in development and production](file-system-permissions.md)
+  - Production: [Commerce ownership and permissions in development and production](file-system-permissions.md)
 
 >[!INFO]
 >

@@ -421,22 +421,22 @@ Generates store views. Store views are distributed normally among store groups. 
 Generates tax rates. XML profile node:
 
 ```xml
-<!-- Accepts name of CSV file with tax rates (<path to magento folder>/setup/src/Magento/Setup/Fixtures/_files) -->
+<!-- Accepts name of CSV file with tax rates (<path to Commerce folder>/setup/src/Magento/Setup/Fixtures/_files) -->
 <tax_rates_file>{CSV file name}</tax_rates_file>
 ```
 
 ## Additional configuration information:
 
-- `<Magento root dir>/setup/performance-toolkit/config/attributeSets.xml`---Default attribute sets
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`---Default attribute sets
 
-- `<Magento root dir>/setup/performance-toolkit/config/customerConfig.xml`---Customer configuration
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`---Customer configuration
 
-- `<Magento root dir>/setup/performance-toolkit/config/description.xml`---Product full description configuration
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`---Product full description configuration
 
-- `<Magento root dir>/setup/performance-toolkit/config/shortDescription.xml`---Product short description configuration
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`---Product short description configuration
 
-- `<Magento root dir>/setup/performance-toolkit/config/searchConfig.xml`---Configuration for product short and full description. This older implementation is provided for backward compatibility.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`---Configuration for product short and full description. This older implementation is provided for backward compatibility.
 
-- `<Magento root dir>/setup/performance-toolkit/config/searchTerms.xml`---Small number of search terms to in short and full descriptions
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`---Small number of search terms to in short and full descriptions
 
-- `<Magento root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`---Larger number of search terms to use in short and full description.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`---Larger number of search terms to use in short and full description.

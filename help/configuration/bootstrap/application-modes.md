@@ -9,7 +9,7 @@ You can run the Commerce application in any of the following _modes_:
 
 | Module name | Description |
 | ----------- | ----------- |
-| default     | Enables you to deploy the Magento application on a single server without changing any settings. However, default mode is not optimized for production.<br>To deploy the Magento application on more than one server or to optimize it for production, change to one of the other modes.<ul><li>Static view file caching is enabled</li><li>Exceptions are not displayed to the user; instead, exceptions are written to log files.</li><li>Hides custom `X-Magento-*` HTTP request and response headers</li></ul> |
+| default     | Enables you to deploy the Commerce application on a single server without changing any settings. However, default mode is not optimized for production.<br>To deploy the Commerce application on more than one server or to optimize it for production, change to one of the other modes.<ul><li>Static view file caching is enabled</li><li>Exceptions are not displayed to the user; instead, exceptions are written to log files.</li><li>Hides custom `X-Magento-*` HTTP request and response headers</li></ul> |
 | developer   | Intended for development only, this mode:<ul><li>Disables static view file caching</li><li>Provides verbose logging</li><li>Enables [automatic code compilation](../cli/code-compiler.md)</li><li>Enables enhanced debugging</li><li>Shows custom `X-Magento-*` HTTP request and response headers</li><li>Results in the slowest performance</li><li>Shows errors on the frontend</li></ul> |
 |production  | Intended for deployment on a production system, this mode:<ul><li>Does not show exceptions to the user (exceptions are written to logs only).</li><li>Serves static view files from cache only.</li><li>Prevents automatic code file compilation. New or updated files are not written to the file system.</li><li>**Does not allow you to enable or disable cache types in Admin.** See [enabling and disabling the cache](../cli/manage-cache.md#enable-or-disable-cache-types).</li><li>Some fields, such as the Advanced and Developer system configuration sections in the Admin, are not available in production mode.</li></ul> |
 | maintenance | Intended to prevent access to a site while it is being updated or reconfigured, this mode:<ul><li>Redirects site visitors to a default `Service Temporarily Unavailable` page.</li><li>When the site is in maintenance mode, the `var/` directory contains the `.maintenance.flag` file.</li><li>You can configure maintenance mode to allow visitor access from a specified list of IP addresses.</li></ul> |
@@ -20,9 +20,9 @@ You can run the Commerce application in any of the following _modes_:
 
 ## Default mode
 
-As its name implies, default mode is how Magento operates if no other mode is specified. Default mode enables you to deploy the Magento application on a single server without changing any settings. However, default mode is not as optimized for production as is production mode.
+As its name implies, default mode is how Commerce operates if no other mode is specified. Default mode enables you to deploy the Commerce application on a single server without changing any settings. However, default mode is not as optimized for production as is production mode.
 
-To deploy the Magento application on more than one server or to optimize it for production, change to one of the other modes.
+To deploy the Commerce application on more than one server or to optimize it for production, change to one of the other modes.
 
 In default mode:
 
@@ -38,7 +38,7 @@ Run the Commerce application in developer mode when you are extending or customi
 
 In developer mode:
 
-- Static view files are not cached; they are written to the Magento `pub/static` directory every time they are called
+- Static view files are not cached; they are written to the `pub/static` directory every time they are called
 - Uncaught exceptions display in the browser
 - System logging in `var/report` is verbose
 - An [exception](https://glossary.magento.com/exception) is thrown in the error handler, rather than being logged
@@ -48,9 +48,9 @@ See [Set the operation mode](../cli/set-mode.md).
 
 ## Production mode
 
-Run Magento in production mode when it is deployed to a production server. After optimizing the server environment, such as the database and web server, you should run the [static view files deployment tool](../cli/static-view-file-deployment.md) to write static view files to the Magento `pub/static` directory.
+Run Commerce in production mode when it is deployed to a production server. After optimizing the server environment, such as the database and web server, you should run the [static view files deployment tool](../cli/static-view-file-deployment.md) to write static view files to the `pub/static` directory.
 
-This improves performance by providing all necessary static files at deployment instead of forcing Magento to dynamically locate and copy (materialize) static files on demand during run time.
+This improves performance by providing all necessary static files at deployment instead of forcing Commerce to dynamically locate and copy (materialize) static files on demand during run time.
 
 In production mode:
 

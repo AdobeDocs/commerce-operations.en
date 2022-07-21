@@ -57,7 +57,7 @@ See the [Nginx sample configuration][] on _GitHub_.
 
 One way to set the application mode is by editing `.htaccess`. This way, you do not have to change Apache settings.
 
-You can modify `.htaccess` in any of the following locations, depending on your entry point to the Magento application:
+You can modify `.htaccess` in any of the following locations, depending on your entry point to the Commerce application:
 
 - `<magento_root>/.htaccess`
 - `<magento_root>/pub/.htaccess`

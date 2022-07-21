@@ -7,7 +7,7 @@ description: Import Adobe Commerce configuration settings from configuration fil
 
 {{file-system-owner}}
 
-When you set up a production system using the Magento 2.2 [pipeline deployment model](../deployment/technical-details.md), you must _import_ configuration settings from `config.php` and `env.php` into the database.
+When you set up a production system using the Commerce 2.2 [pipeline deployment model](../deployment/technical-details.md), you must _import_ configuration settings from `config.php` and `env.php` into the database.
 These settings include configuration paths and values, websites, stores, store views, and themes.
 
 After importing websites, stores, store views, and themes, you can create product attributes and apply them to websites, stores, and store views, on the production system.
@@ -58,7 +58,7 @@ The following sections discuss in detail what data we import.
 
 ### System configuration
 
-Magento directly uses values in the `system` array in the `config.php` or `env.php` files instead of importing them into the database because they require some pre- and post-processing actions.
+Commerce directly uses values in the `system` array in the `config.php` or `env.php` files instead of importing them into the database because they require some pre- and post-processing actions.
 
 For example, the value of the configuration path `web/secure/base_url` must be validated with [backend](https://glossary.magento.com/backend) models.
 
@@ -88,11 +88,11 @@ The preceding configurations can be imported in the following modes:
 
 >[!INFO]
 >
->We do not import the root [category](https://glossary.magento.com/category) associated with stores. You must associate a root category with a store using the Magento [Admin](https://glossary.magento.com/admin).
+>We do not import the root [category](https://glossary.magento.com/category) associated with stores. You must associate a root category with a store using the Commerce [Admin](https://glossary.magento.com/admin).
 
 ### Theme configuration
 
-Theme configuration includes all themes registered in your Magento system; the data comes directly from the `theme` database table. (Theme configuration is in the `themes` array in `config.php`.)
+Theme configuration includes all themes registered in your Commerce system; the data comes directly from the `theme` database table. (Theme configuration is in the `themes` array in `config.php`.)
 
 #### Structure of theme data
 

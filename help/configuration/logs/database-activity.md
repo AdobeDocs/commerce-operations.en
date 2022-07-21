@@ -8,11 +8,11 @@ description: Configure Commerce to log database activity using the Logger interf
 The following example shows how to log database activity using the [`Magento\Framework\DB\LoggerInterface`][interface], which has two implementations:
 
 - Logs nothing (default): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Logs to the Magento `var/log` directory: [`Magento\Framework\DB\Logger\File`][file]
+- Logs to the `var/log` directory: [`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >
->You can use the Magento CLI to [enable and disable database logging](../cli/enable-logging.md#database-logging).
+>You can use the Commerce CLI to [enable and disable database logging](../cli/enable-logging.md#database-logging).
 
 To change the default configuration of `\Magento\Framework\DB\Logger\LoggerProxy`, edit your `app/etc/di.xml`.
 

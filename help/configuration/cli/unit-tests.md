@@ -7,7 +7,7 @@ description: Run unit tests defined in the Adobe Commerce code base.
 
 {{file-system-owner}}
 
-This command runs a set of tests defined in the Magento 2 code base. You can either run all tests or tests you select. Whenever an unsupported type is specified, the program terminates and lists all available types. Following execution, a detailed report displays showing the test run and results.
+This command runs a set of tests defined in the Commerce 2 code base. You can either run all tests or tests you select. Whenever an unsupported type is specified, the program terminates and lists all available types. Following execution, a detailed report displays showing the test run and results.
 
 ## Prerequisites
 

@@ -9,15 +9,15 @@ With Commerce profiling, you can:
 
 - Enable a built-in profiler.
 
-  You can use a built-in profiler with Magento to perform tasks such as analyzing performance. The nature of profiling depends on the analytical tools that you use. We support multiple formats, including HTML. When you enable the profiler, a `var/profiler.flag` file generates indicating the profiler is enabled and configurations. When disabled, this file is deleted.
+  You can use a built-in profiler with Commerce to perform tasks such as analyzing performance. The nature of profiling depends on the analytical tools that you use. We support multiple formats, including HTML. When you enable the profiler, a `var/profiler.flag` file generates indicating the profiler is enabled and configurations. When disabled, this file is deleted.
 
-- Display dependency graphs on a Magento page.
+- Display dependency graphs on a Commerce page.
 
   A _dependency graph_ is a list of object dependencies and all of their dependencies, and all the dependencies for those dependencies, and so on.
 
   You should be particularly interested in the list of _unused dependencies_, which are objects that were created because they were requested in some constructor, but were never used (that is, none of their methods were called). As a result, processor time and memory spent to create these dependencies are wasted.
 
-Magento provides the base functionality in [`Magento\Framework\Profiler`][profiler].
+Commerce provides the base functionality in [`Magento\Framework\Profiler`][profiler].
 
 You can enable and configure the profiler using a MAGE_PROFILER variable or the command line.
 
@@ -51,8 +51,8 @@ To enable dependency graphs, use the variable option.
 
 **To enable or disable the profiler**:
 
-1. Log in to your Magento server.
-1. Change to your Magento installation directory.
+1. Log in to your Commerce server.
+1. Change to your Commerce installation directory.
 1. As the file system owner, enable the profiler:
 
    To enable the profiler using type `html` and create a flagfile:

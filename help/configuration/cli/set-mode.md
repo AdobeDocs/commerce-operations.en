@@ -13,9 +13,9 @@ Production mode has better performance because static view files are populated i
 
 >[!INFO]
 >
->In version 2.0.6 and later, Magento does not explicitly set file or directory permissions when you switch between default, develop, and production modes. Unlike other modes, developer and production modes are set in the `env.php` file. Adobe Commerce on cloud infrastructure supports production and maintenance modes only.
+>In version 2.0.6 and later, Commerce does not explicitly set file or directory permissions when you switch between default, develop, and production modes. Unlike other modes, developer and production modes are set in the `env.php` file. Adobe Commerce on cloud infrastructure supports production and maintenance modes only.
 >
->See [Magento ownership and permissions in development and production](../deployment/file-system-permissions.md).
+>See [Commerce ownership and permissions in development and production](../deployment/file-system-permissions.md).
 
 When you change to developer or production mode, we clear the contents of following directories:
 
@@ -34,11 +34,11 @@ Exceptions:
 
 >[!INFO]
 >
->By default, Magento uses the `var` directories to store the cache, logs, and compiled code. You can customize this directory but in this guide, it is assumed to be `var`.
+>By default, Commerce uses the `var` directories to store the cache, logs, and compiled code. You can customize this directory but in this guide, it is assumed to be `var`.
 
 ## Display the current mode
 
-The easiest way to do that is to run this command as the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). If you have shared hosting, this is the user your provider gives you to log in to the server. If you have a private server, it is typically a local user account on the Magento server.
+The easiest way to do that is to run this command as the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). If you have shared hosting, this is the user your provider gives you to log in to the server. If you have a private server, it is typically a local user account on the Commerce server.
 
 Command usage:
 
@@ -153,8 +153,8 @@ The following message displays:
 Enabled default mode.
 ```
 
-### Run Magento CLI commands from anywhere
+### Run CLI commands from anywhere
 
-[Run Magento CLI commands from anywhere](../cli/config-cli.md#config-install-cli-first).
+[Run CLI commands from anywhere](../cli/config-cli.md#config-install-cli-first).
 
-If you have not added `<magento-install-directory>/bin` to your system `PATH`, then you can expect an error when running the Magento command by itself.
+If you have not added `<Commerce-install-directory>/bin` to your system `PATH`, then you can expect an error when running the command by itself.

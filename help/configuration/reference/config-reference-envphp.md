@@ -16,7 +16,7 @@ The `env.php` file contains the following sections:
 | `cron`                        | Enable or disable the cron jobs                                 |
 | `crypt`                       | The encryption key for cryptographic functions                  |
 | `db`                          | Database connection settings                                    |
-| `directories`                 | Magento directories mapping settings                            |
+| `directories`                 | Commerce directories mapping settings                            |
 | `downloadable_domains`        | List of downloadable domains                                    |
 | `install`                     | The installation date                                           |
 | `lock`                        | Lock provider settings                                          |
@@ -29,7 +29,7 @@ The `env.php` file contains the following sections:
 
 ## backend
 
-Configure the **frontName** for the Magento admin url using the `backend` node in env.php.
+Configure the **frontName** for the Commerce admin url using the `backend` node in env.php.
 
 ```conf
 'backend' => [
@@ -115,7 +115,7 @@ The following options are available:
 
 ## cron
 
-Enable or disable cron jobs for the Magento application. By default, cron jobs are enabled. To disable them, add the `cron` configuration to the `env.php` file and set the value to `0`.
+Enable or disable cron jobs for the Commerce application. By default, cron jobs are enabled. To disable them, add the `cron` configuration to the `env.php` file and set the value to `0`.
 
 ```conf
 'cron' => [
@@ -131,7 +131,7 @@ Learn more about [Crons](../cli/configure-cron-jobs.md).
 
 ## crypt
 
-Magento uses an encryption key to protect passwords and other sensitive data. This key is generated during the Magento installation process.
+Commerce uses an encryption key to protect passwords and other sensitive data. This key is generated during the installation process.
 
 ```conf
 'crypt' => [
@@ -165,7 +165,7 @@ All database configurations are available in this node.
 
 ## directories
 
-Optional directory mapping options that need to be set when the web server is configured to serve Magento app from the `/pub` directory for [improved security][change-docroot-to-pub].
+Optional directory mapping options that need to be set when the web server is configured to serve Commerce app from the `/pub` directory for [improved security][change-docroot-to-pub].
 
 ```conf
 'directories' => [
@@ -187,7 +187,7 @@ Learn more about [Downloadable Domains](https://devdocs.magento.com/guides/v2.4/
 
 ## install
 
-The installation date of Magento application.
+The installation date of Commerce application.
 
 ```conf
 'install' => [
@@ -203,7 +203,7 @@ Learn more about [Lock Provider Configuration][lock-provider-config].
 
 ## MAGE_MODE
 
-The Magento deploy mode can be configured in this node.
+The deploy mode can be configured in this node.
 
 ```conf
 'MAGE_MODE' => 'developer'
@@ -240,7 +240,7 @@ Resource configuration settings are available in this node.
 
 ## session
 
-Magento session configurations are stored in the `session` node.
+Session configurations are stored in the `session` node.
 
 ```conf
 'session' => [

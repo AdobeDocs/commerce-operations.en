@@ -7,7 +7,7 @@ description: Learn how to deploy Commerce into a build system.
 
 You can have one build system that meets the following requirements:
 
-- All Magento code is under source control in the same repository as the development and production systems
+- All Commerce code is under source control in the same repository as the development and production systems
 - Make sure all of the following are _included_ in source control:
 
   -  `app/etc/config.php`
@@ -19,7 +19,7 @@ You can have one build system that meets the following requirements:
 -  Must have a compatible PHP version installed
 -  Must have Composer installed
 -  It has file system ownership and permissions set as discussed in [Prerequisite for your development, build, and production systems](../deployment/technical-details.md).
--  The build system does not need Magento to be installed, but the code must be available to it.
+-  The build system does not need Commerce to be installed, but the code must be available to it.
 
 >[!WARNING]
 >
@@ -27,7 +27,7 @@ You can have one build system that meets the following requirements:
 
 >[!INFO]
 >
->The build machine can be on its own host or on the same host as an installed Magento system.
+>The build machine can be on its own host or on the same host as an installed Commerce system.
 
 ## Configure the build machine
 
@@ -48,7 +48,7 @@ If an error displays, use the following steps to install Composer.
 
 To install Composer:
 
-1. Change to or create an empty directory on your Magento server.
+1. Change to or create an empty directory on your Commerce server.
 
 1. Enter the following commands:
 
@@ -71,7 +71,7 @@ Install PHP on [CentOS][] or [Ubuntu][].
 To set up the build system:
 
 1. Log in to the build system as, or switch to, the file system owner.
-1. Retrieve the Magento code from source control.
+1. Retrieve the Commerce code from source control.
 
    If you use Git, use the following command:
 
@@ -79,23 +79,23 @@ To set up the build system:
    git clone [-b <branch name>] <repository URL>
    ```
 
-1. Change to the Magento root directory and enter:
+1. Change to the Commerce root directory and enter:
 
    ```bash
    composer install
    ```
 
-1. Wait for Magento dependencies to update.
+1. Wait for dependencies to update.
 1. Set ownership:
 
    ```bash
-   chown -R <magento file system owner name>:<web server username> .
+   chown -R <Commerce file system owner name>:<web server username> .
    ```
 
    For example,
 
    ```bash
-   chown -R magento_user:apache .
+   chown -R commerce-username:apache .
    ```
 
 1. If you use Git, open `.gitignore` in a text editor.
@@ -119,7 +119,7 @@ To set up the build system:
 
    See the [`.gitignore` reference](../reference/config-reference-gitignore.md) for more information.
 
-1. The build system should use either [default mode](../bootstrap/application-modes.md#default-mode) or [developer mode](../bootstrap/application-modes.md#developer-mode):
+1. The build system should use [default mode](../bootstrap/application-modes.md#default-mode) or [developer mode](../bootstrap/application-modes.md#developer-mode):
 
    ```bash
    bin/magento deploy:mode:set <mode>

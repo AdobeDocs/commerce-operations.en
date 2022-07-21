@@ -5,7 +5,7 @@ description: Use the MAGE_DIRS variable to set an array of absolute paths.
 
 # Base directory paths
 
-The `MAGE_DIRS` environment variable enables you to specify custom base directory paths and fragments of base URLs that are used by the Magento application to build absolute paths to various files or for generating URLs.
+The `MAGE_DIRS` environment variable enables you to specify custom base directory paths and fragments of base URLs that are used by the Commerce application to build absolute paths to various files or for generating URLs.
 
 ## Set MAGE_DIRS
 

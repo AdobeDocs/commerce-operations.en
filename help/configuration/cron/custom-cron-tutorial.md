@@ -9,12 +9,12 @@ This step-by-step tutorial shows how to create a custom cron job and optionally 
 
 Running the cron job results in a row being added to the `cron_schedule` table with the name of the cron job, `custom_cron`.
 
-We also show you how to optionally create a cron group, which you can use to run custom cron jobs with settings other than Magento application defaults.
+We also show you how to optionally create a cron group, which you can use to run custom cron jobs with settings other than Commerce application defaults.
 
 In this tutorial, we assume the following:
 
-- The Magento application is installed in `/var/www/html/magento2`
-- Your Magento database username and password are both `magento`
+- The Commerce application is installed in `/var/www/html/magento2`
+- Your Commerce database username and password are both `magento`
 - You perform all actions as the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)
 
 ## Step 1: Get a sample module
@@ -25,8 +25,8 @@ If you already have a sample module, you can use it; skip this step and the next
 
 **To get a sample module**:
 
-1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Change to a directory that is not in your Magento application root (for example, your home directory).
+1. Log in to your Commerce server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Change to a directory that is not in your Commerce application root (for example, your home directory).
 1. Clone the [`magento2-samples` repository][samples].
 
    ```bash
@@ -67,7 +67,7 @@ If you already have a sample module, you can use it; skip this step and the next
    drwxrwsr-x.   3 magento_user apache  4096 Oct 30 13:19 Test
    ```
 
-1. Update the Magento database and schema:
+1. Update the Commerce database and schema:
 
    ```bash
    bin/magento setup:upgrade
@@ -191,7 +191,7 @@ This step shows how to verify the custom cron job successfully using a SQL query
 
 To verify cron:
 
-1. Run Magento cron jobs:
+1. Run Commerce cron jobs:
 
    ```bash
    bin/magento cron:run
@@ -275,7 +275,7 @@ This _optional_ step shows how to verify your custom cron group using the Admin.
 
 To verify your custom cron group:
 
-1. Run Magento cron jobs for your custom group:
+1. Run Commerce cron jobs for your custom group:
 
    ```bash
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
@@ -283,7 +283,7 @@ To verify your custom cron group:
 
    Run the command at least twice.
 
-1. Clean the Magento cache:
+1. Clean the cache:
 
    ```bash
    php /var/www/html/magento2/bin/magento cache:clean

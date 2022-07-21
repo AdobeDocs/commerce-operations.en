@@ -16,7 +16,7 @@ You can use the same procedure to configure any non-sensitive, non-system-specif
 
 - [Other configuration paths reference](../reference/config-reference-general.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
-- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
+- [Commerce Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ## Before you begin
 
@@ -48,7 +48,7 @@ To set the timezone and weight units in your development system:
 1. Clear the **Use system value** checkbox next to the **Weight Unit** field.
 1. From the **Weight Unit** list, click **kgs**.
 1. Click **Save Config**.
-1. If prompted, flush the Magento cache.
+1. If prompted, flush the cache.
 
 ## Step 2: Update the shared configuration
 

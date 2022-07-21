@@ -17,7 +17,7 @@ For an overview about cron jobs, see [Configure cron jobs](../cli/configure-cron
 
 This section discusses how to optionally create a cron group for a custom module. If you do not need to do this, continue with the next section.
 
-A _cron group_ is a logical group that enables you to easily run cron for more than one process at a time. Most Magento modules use the `default` cron group; some modules use the `index` group.
+A _cron group_ is a logical group that enables you to easily run cron for more than one process at a time. Most Commerce modules use the `default` cron group; some modules use the `index` group.
 
 If you are implementing cron for a custom module, it is your choice of whether or not to use the `default` group or a different group.
 
@@ -49,7 +49,7 @@ Where:
 |`job_name`|Unique ID for this cron job.|
 |`classpath`|Class to be instantiated (classpath).|
 |`method`|Method in `classpath` to call.|
-|`time`|Schedule in cron format. Omit this parameter if the schedule is defined in the Magento database or other storage.|
+|`time`|Schedule in cron format. Omit this parameter if the schedule is defined in the Commerce database or other storage.|
 
 The resulting `crontab.xml` with two groups may look like this:
 

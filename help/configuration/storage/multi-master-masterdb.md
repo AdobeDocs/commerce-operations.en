@@ -16,7 +16,7 @@ This topic discusses how to get started with the split database solution by:
 
 >[!INFO]
 >
->This guide assumes that all three databases are on the same host as the Magento application and that they are named `magento`, `magento_quote`, and `magento_sales`. However, the choice of where to locate the databases and what they are named is up to you. We hope our examples make the instructions easier to follow.
+>This guide assumes that all three databases are on the same host as the Commerce application and that they are named `magento`, `magento_quote`, and `magento_sales`. However, the choice of where to locate the databases and what they are named is up to you. We hope our examples make the instructions easier to follow.
 
 ## Install the Adobe Commerce software
 
@@ -80,7 +80,7 @@ Create checkout and OMS master databases as follows:
 
 ## Configure Commerce to use the master databases
 
-After setting up a total of three master databases, use the Magento command line to configure Magento to use them. (The command sets up database connections and distributes tables among the master databases.)
+After setting up a total of three master databases, use the command line to configure Commerce to use them. (The command sets up database connections and distributes tables among the master databases.)
 
 ### First steps
 

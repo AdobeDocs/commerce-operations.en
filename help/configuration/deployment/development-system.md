@@ -7,8 +7,8 @@ description: Learn how to set up a development system for the Commerce applicati
 
 You can have any number of development systems, provided the following is true of all of them:
 
-- They all run Magento 2.2 or later
-- All Magento code is under source control in the same repository as the build and production systems
+- They all run Commerce 2.2 or later
+- All Commerce code is under source control in the same repository as the build and production systems
 - Each development system should use either [default mode](../bootstrap/application-modes.md#default-mode) or [developer mode](../bootstrap/application-modes.md#developer-mode)
 - It has file system ownership and permissions set as discussed in [Prerequisite for your development, build, and production systems](../deployment/technical-details.md).
 - Make sure all of the following are _excluded_ from source control:

@@ -234,7 +234,7 @@ There are several ways to look at response headers, including using a browser [p
 The following example uses `curl`. You can enter this command from any machine that can access the Commerce server using HTTP.
 
 ```bash
-curl -I -v --location-trusted '<your Magento base URL>'
+curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 For example,

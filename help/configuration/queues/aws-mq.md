@@ -5,11 +5,11 @@ description: Learn how to configure Commerce to use the AWS MQ service.
 
 # Set up Amazon Message Queue
 
-As of Magento 2.4.3, Amazon Message Queue (MQ) is available as a cloud-ready replacement for on-premises message queue instances.
+As of Commerce 2.4.3, Amazon Message Queue (MQ) is available as a cloud-ready replacement for on-premises message queue instances.
 
 To create a message queue on AWS, see [Setting up Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) in the_ AWS documentation_.
 
-## Configure Magento for AWS MQ
+## Configure Commerce for AWS MQ
 
 In order to connect to the AWS MQ service, configure the `queue.amqp` object in the `env.php` file.
 AWS Message Queue requires a SSL/TLS connection.
@@ -45,7 +45,7 @@ After editing the `env.php` file, run the following command to finish the setup:
 bin/magento setup:upgrade
 ```
 
-## How Magento uses the AWS MQ service
+## How Commerce uses the AWS MQ service
 
 The `async.operations.all` message queue consumer uses the AMQP connection.
 
@@ -63,7 +63,7 @@ The default configuration for `InventoryCatalog` does not publish messages to Ra
 
 ## Testing the message queue
 
-To test message sending from Magento to RabbitMQ:
+To test message sending from Commerce to RabbitMQ:
 
 1. Log in to the RabbitMQ web console in AWS to monitor queues.
 1. In the Admin, create a product.

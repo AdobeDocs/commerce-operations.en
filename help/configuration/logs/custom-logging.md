@@ -27,7 +27,7 @@ This provides the ability for the implementation to be replaced easily without w
 
 ## Monolog
 
-Magento 2 complies with the PSR-3 standard. By default, Magento uses [Monolog][]. Monolog implemented as a preference for `Psr\Log\LoggerInterface` in the Magento application [`di.xml`][di].
+Commerce 2 complies with the PSR-3 standard. By default, Commerce uses [Monolog][]. Monolog implemented as a preference for `Psr\Log\LoggerInterface` in the Commerce application [`di.xml`][di].
 
 Monolog is a popular PHP logging solution with a wide range of handlers that enable you to build advanced logging strategies. Following is a summary of how Monolog works.
 

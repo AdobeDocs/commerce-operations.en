@@ -7,7 +7,7 @@ description: Learn how to set up a production system for the Commerce applicatio
 
 You can have one production system. All of the following must be true:
 
-- All Magento code is in source control in the same repository as the development and build systems
+- All Commerce code is in source control in the same repository as the development and build systems
 - Make sure all of the following are _included_ in source control:
 
   - `app/etc/config.php`
@@ -16,14 +16,14 @@ You can have one production system. All of the following must be true:
   - `pub/media/wysiwyg` directory (and subdirectories)
   - `pub/static` directory (and subdirectories)
 
-- Magento 2.2 or later must be installed and set for [production mode](../bootstrap/application-modes.md#production-mode)
+- Commerce 2.2 or later must be installed and set for [production mode](../bootstrap/application-modes.md#production-mode)
 - It has file system ownership and permissions set as discussed in [Prerequisite for your development, build, and production systems](../deployment/prerequisites.md).
 
 ## Set up a production machine
 
 To set up a production machine:
 
-1. After installing Magento or pulling it from source control, log in to the production server as, or switch to, the [file system owner](https://glossary.magento.com/magento-file-system-owner).
+1. After installing Commerce or pulling it from source control, log in to the production server as, or switch to, the [file system owner](https://glossary.magento.com/magento-file-system-owner).
 1. Create `~/.ssh/.composer/auth.json` if you have not already done so.
 
    Create the directory:
@@ -34,7 +34,7 @@ To set up a production machine:
 
    Create `auth.json` in that directory.
 
-   `auth.json` must contain your Magento [authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+   `auth.json` must contain your [authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
    A sample follows:
 
@@ -50,7 +50,7 @@ To set up a production machine:
    ```
 
 1. Save your changes to `auth.json`.
-1. Copy `<Magento root dir>/app/etc/env.php` from your development system to your production system.
+1. Copy `<Commerce root dir>/app/etc/env.php` from your development system to your production system.
 1. Open `env.php` in a text editor and change any values necessary (for example, database connection information).
 1. Run the [`magento config:set`](../cli/set-configuration-values.md) or [`magento config:set-sensitive`](../cli/set-configuration-values.md) command to set the values of any system-specific or sensitive configuration values, respectively.
 
@@ -65,7 +65,7 @@ To set sensitive values:
 1. Find a value to set using the [sensitive value reference](../reference/config-reference-sens.md).
 1. Note the configuration path for the setting.
 1. Log in to the production system as, or switch to, the file system owner.
-1. Change to the Magento installation directory.
+1. Change to the Commerce installation directory.
 1. Enter the following command:
 
    ```bash

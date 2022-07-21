@@ -65,6 +65,6 @@ where
 
   If you omit `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) is used.
 
-- `<frontend_option>`, `<frontend_option_value>` are the name and value of options the Magento framework passes as an associative array to the frontend cache upon its creation.
+- `<frontend_option>`, `<frontend_option_value>` are the name and value of options the Commerce framework passes as an associative array to the frontend cache upon its creation.
 - `<backend_type>` is the low-level backend cache type. Specify the name of a class that is compatible with [Zend_Cache_Backend](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend.html) and that implements [Zend_Cache_Backend_Interface](https://framework.zend.com/apidoc/1.6/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend_Interface.html).
-- `<backend_option>` and `<backend_option_value>` are the name and value of options the Magento framework passes as an associative array to backend cache upon its creation.
+- `<backend_option>` and `<backend_option_value>` are the name and value of options the Commerce framework passes as an associative array to backend cache upon its creation.

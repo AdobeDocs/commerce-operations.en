@@ -9,7 +9,7 @@ This section lists variable names and config paths available for options in the 
 
 The [`magento app:config:dump` command](../cli/export-configuration.md) writes these values to the shared configuration file, `app/etc/config.php`, which should be in source control. To optionally override any configuration settings or to set sensitive settings, see [Use environment variables to override configuration settings](override-config-settings.md#environment-variables). This topic does _not_ list [sensitive and system-specific values](config-reference-sens.md).
 
-## Magento Web API paths
+## Commerce Web API paths
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Services** > **Web API**.
 

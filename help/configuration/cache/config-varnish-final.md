@@ -9,7 +9,7 @@ Now that you are using the `default.vcl` generated for you by Magento, you can p
 
 ## Verify HTTP response headers
 
-Use `curl` or another utility to view HTTP response headers when you visit any Magento page in a web browser.
+Use `curl` or another utility to view HTTP response headers when you visit any Commerce page in a web browser.
 
 First, make sure you are using Magento's [developer mode](../cli/set-mode.md#change-to-developer-mode); otherwise, you will not see the headers.
 
@@ -33,13 +33,13 @@ X-Magento-Cache-Debug: MISS
 
 ## Check page load times
 
-If Varnish is working, any Magento page with cacheable blocks should load in less than 150ms. Examples of such pages are the front door and [storefront](https://glossary.magento.com/storefront) [category](https://glossary.magento.com/category) pages.
+If Varnish is working, any Commerce page with cacheable blocks should load in less than 150ms. Examples of such pages are the front door and [storefront](https://glossary.magento.com/storefront) [category](https://glossary.magento.com/category) pages.
 
 Use a browser inspector to measure page load times.
 
 For example, to use the Chrome inspector:
 
-1. Access any cacheable Magento page in Chrome.
+1. Access any cacheable Commerce page in Chrome.
 1. Right-click anywhere on the page.
 1. From the pop-up menu, click **[!UICONTROL Inspect Element]**
 1. In the inspector pane, click the **[!UICONTROL Network]** tab.
@@ -56,21 +56,21 @@ For example, to use the Chrome inspector:
 
    You can view HTTP headers which are discussed in more detail in the Verify HTTP response headers section.
 
-## Verify the Magento cache
+## Verify the Commerce cache
 
 Make sure the `<magento_root>/var/page_cache` directory is empty:
 
-1. Log in to your Magento server, or switch to, the [file system owner](https://glossary.magento.com/magento-file-system-owner).
+1. Log in to your Commerce server, or switch to, the [file system owner](https://glossary.magento.com/magento-file-system-owner).
 1. Enter the following command:
 
    ```bash
    rm -rf <magento_root>/var/page_cache/*
    ```
 
-1. Access one or more cacheable Magento pages.
+1. Access one or more cacheable Commerce pages.
 1. Check the `var/page_cache/` directory.
 
-   If the directory is empty, congratulations! You successfully configured Varnish and Magento to work together!
+   If the directory is empty, congratulations! You successfully configured Varnish and Commerce to work together!
 
 1. If you cleared the `var/page_cache/` directory, restart Varnish.
 

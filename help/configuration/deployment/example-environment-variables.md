@@ -21,7 +21,7 @@ You can use the same procedure to configure any settings in the following refere
 - [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
 - [General configuration paths reference](../reference/config-reference-general.md)
-- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
+- [Commerce Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ## Before you begin
 
@@ -134,7 +134,7 @@ The variable names follow:
 
 #### Set the variables using environment variables
 
-You can set the variable values in the Magento `index.php` using the following format:
+You can set the variable values in the `index.php` using the following format:
 
 ```php
 $_ENV['VARIABLE'] = 'value';
@@ -143,7 +143,7 @@ $_ENV['VARIABLE'] = 'value';
 **To set variable values**:
 
 1. Log in to your production system as, or switch to, the file system owner.
-1. Open `<Magento root dir>/pub/index.php` in a text editor.
+1. Open `<Commerce root dir>/pub/index.php` in a text editor.
 1. Anywhere in `index.php`, set values for the variables similar to the following:
 
    ```php

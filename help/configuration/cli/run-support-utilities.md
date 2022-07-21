@@ -13,7 +13,7 @@ The Adobe Commerce Support utilities—also referred to as the [Data Collector](
 
 Adobe Commerce uses these backups, also referred to as _dumps_,to analyze issues that require access to your code. A typical scenario follows:
 
-1. You are having an issue with your Magento store and you contact Adobe Commerce Support.
+1. You are having an issue with your Commerce store and you contact Adobe Commerce Support.
 1. Support determines they need to see your code or database to reproduce the issue.
 1. You back up the code to a `.tar.gz` file.
 
@@ -56,7 +56,7 @@ After the command completes, provide the code backup to Adobe Commerce Support.
 
 ## Create a database backup
 
-This command backs up the Magento database and compresses it in `tar.gz` format.
+This command backs up the Commerce database and compresses it in `tar.gz` format.
 
 {{tip-backup-command}}
 
@@ -100,7 +100,7 @@ Utility lsof not found
 
 Run the following commands in the order shown to display the paths to the applications used by the support utilities and Data Collector:
 
-1. Change to your Magento installation directory.
+1. Change to your Commerce installation directory.
 
    For example, `cd /var/www/magento2`
 

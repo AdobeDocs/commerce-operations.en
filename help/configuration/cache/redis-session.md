@@ -10,7 +10,7 @@ description: Learn how to configure Redis for session storage.
 >You must [install Redis](config-redis.md#install-redis) before continuing.
 
 
-Commerce now provides command-line options to configure Redis session storage. In previous releases, you edited the `<Magento install dir>app/etc/env.php` file. The command line provides validation and is the recommended configuration method, but you can still edit the `env.php` file.
+Commerce now provides command-line options to configure Redis session storage. In previous releases, you edited the `<Commerce install dir>app/etc/env.php` file. The command line provides validation and is the recommended configuration method, but you can still edit the `env.php` file.
 
 Run the `setup:config:set` command and specify Redis-specific parameters.
 
@@ -59,7 +59,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### Result
 
-Magento adds lines similar to the following to `<magento_root>app/etc/env.php`:
+Commerce adds lines similar to the following to `<magento_root>app/etc/env.php`:
 
 ```php
     'session' =>
@@ -95,7 +95,7 @@ Magento adds lines similar to the following to `<magento_root>app/etc/env.php`:
 
 ## Verify Redis connection
 
-To verify that Redis and Magento are working together, log in to the server running Redis, open a terminal, and use the Redis monitor command or the ping command.
+To verify that Redis and Commerce are working together, log in to the server running Redis, open a terminal, and use the Redis monitor command or the ping command.
 
 ### Redis monitor command
 
@@ -126,5 +126,5 @@ If both commands succeeded, Redis is set up properly.
 
 ### Inspecting compressed data
 
-To inspect compressed Session data and Page Cache, the [RESP.app](https://flathub.org/apps/details/app.resp.RESP) supports the automatic decompression of Magento 2 Session and Page cache and displays PHP session data in a human-readable form.
+To inspect compressed Session data and Page Cache, the [RESP.app](https://flathub.org/apps/details/app.resp.RESP) supports the automatic decompression of Commerce 2 Session and Page cache and displays PHP session data in a human-readable form.
 

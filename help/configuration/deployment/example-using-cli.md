@@ -6,7 +6,7 @@ description: See an example of how to set shared, system-specific, and sensitive
 # Example using CLI commands
 
 This example shows how to set shared, system-specific, and sensitive values in your development system, then deploy those values to your production system.
-This is done by using a combination of shared configurations, the `config.php` file, and Magento CLI command.
+This is done by using a combination of shared configurations, the `config.php` file, and Commerce CLI command.
 
 This example uses the following configuration settings:
 
@@ -27,7 +27,7 @@ You can use the same procedure shown in this example to configure any settings i
 - [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
 - [Other configuration paths reference](../reference/config-reference-general.md)
-- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
+- [Commerce Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ## Before you begin
 

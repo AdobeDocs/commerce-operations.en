@@ -257,7 +257,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Export Configuration | `system/full_page_cache/varnish/export_button_version4` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Days Saved in Log | `system/bulk/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Media Storage | `system/media_storage_configuration/media_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Select Media Database | `system/media_storage_configuration/media_database` (deprecated in Magento 2.4.3)| <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Select Media Database | `system/media_storage_configuration/media_database` (deprecated in Commerce 2.4.3)| <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Environment Update Time | `system/media_storage_configuration/configuration_update_time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Save Files, Days | `system/magento_scheduled_import_export_log/save_days` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Enable Scheduled File History Cleaning | `system/magento_scheduled_import_export_log/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

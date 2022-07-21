@@ -11,7 +11,7 @@ This topic shows the basics of configuring multiple Varnish instances with Magen
 
 ## Configuration to purge multiple Varnish instances
 
-Magento purges Varnish hosts after you configure Varnish hosts using the [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) command.
+Commerce purges Varnish hosts after you configure Varnish hosts using the [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) command.
 
 You should use the `--http-cache-hosts` parameter to specify a comma-separated list of Varnish hosts and listen ports. (Do not separate hosts with a space character.)
 
@@ -23,7 +23,7 @@ For example,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-You can then purge all Varnish hosts when you refresh the Magento cache (also referred to as *cleaning* the cache) in the Admin or using the command line.
+You can then purge all Varnish hosts when you refresh the Commerce cache (also referred to as _cleaning_ the cache) in the Admin or using the command line.
 
 To refresh the cache using the Admin, click **SYSTEM** > Tools > **Cache Management**, then click **Flush Magento Cache** at the top of the page. (You can also refresh individual cache types.)
 

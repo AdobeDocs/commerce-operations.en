@@ -9,29 +9,29 @@ To run the Commerce application, the following actions are implemented in [pub/i
 
 - Include [app/bootstrap.php][bootinitial], which performs essential initialization routines such as error handling, initializing the autoloader, setting profiling options, and setting the default timezone.
 - Create an instance of [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor.  Normally, the $_SERVER super-global variable is supposed to be passed there. -->
-- Create a Magento application instance: [\Magento\Framework\AppInterface][app-face]
-- Run Magento
+- Create a Commerce application instance: [\Magento\Framework\AppInterface][app-face]
+- Run Commerce
 
 ## Bootstrap run logic
 
-[The bootstrap object][bootinitial] uses the following algorithm to run the Magento application:
+[The bootstrap object][bootinitial] uses the following algorithm to run the Commerce application:
 
 1. Initializes the error handler.
 1. Creates the [object manager][object] and basic shared services that are used everywhere and are affected by the environment. The environment parameters are injected properly into these objects.
 1. Asserts that maintenance mode is _not_ enabled; otherwise, terminates.
-1. Asserts that the Magento application is installed; otherwise, terminates.
-1. Starts the Magento application.
+1. Asserts that the Commerce application is installed; otherwise, terminates.
+1. Starts the Commerce application.
 
-   Any uncaught exception during application launch is automatically passed back to Magento in the `catchException()` method which you can use to handle the exception. The latter must return either `true` or `false`:
+   Any uncaught exception during application launch is automatically passed back to Commerce in the `catchException()` method which you can use to handle the exception. The latter must return either `true` or `false`:
 
-   - If `true`: Magento handled exception successfully. No need to do anything else.
-   - If `false`: (or any other empty result) Magento did not handle the exception. The bootstrap object performs the default exception-handling subroutine.
+   - If `true`: Commerce handled exception successfully. No need to do anything else.
+   - If `false`: (or any other empty result) Commerce did not handle the exception. The bootstrap object performs the default exception-handling subroutine.
 
 1. Sends the response provided by the application object.
 
    >[!INFO]
    >
-   >The assertions that the Magento application is installed and not in maintenance mode is the default behavior of the `\Magento\Framework\App\Bootstrap` class. You can modify it using an entry point script when creating the bootstrap object.
+   >The assertions that the Commerce application is installed and not in maintenance mode is the default behavior of the `\Magento\Framework\App\Bootstrap` class. You can modify it using an entry point script when creating the bootstrap object.
 
    Sample entry point script that modifies the bootstrap object:
 
@@ -52,15 +52,15 @@ To run the Commerce application, the following actions are implemented in [pub/i
 
 ## Default exception handling
 
-The bootstrap object specifies how the Magento application handles uncaught exceptions as follows:
+The bootstrap object specifies how the Commerce application handles uncaught exceptions as follows:
 
 - In [developer mode](../bootstrap/application-modes.md#developer-mode), displays the exception as-is.
 - In any other mode, attempts to log exception and display a generic error message.
-- Terminates Magento with error code `1`
+- Terminates Commerce with error code `1`
 
 ## Entry point applications
 
-We have the following entry point applications (that is, applications defined by Magento that are used by the web server as a directory index):
+We have the following entry point applications (that is, applications defined by Commerce that are used by the web server as a directory index):
 
 ### HTTP entry point
 
@@ -72,10 +72,10 @@ We have the following entry point applications (that is, applications defined by
 1. Error handling (in the following priority order):
 
    1. If you are using [developer mode](../bootstrap/application-modes.md#developer-mode):
-      - If the Magento application is not installed, redirect to Setup Wizard.
-      - If the Magento application is installed, display an error and HTTP status code 500 (Internal Server Error).
-   1. If the Magento application is in maintenance mode, display a user-friendly "Service Unavailable" landing page with HTTP status code 503 (Service Unavailable).
-   1. If the Magento application is _not_ installed, redirect to Setup Wizard.
+      - If the Commerce application is not installed, redirect to Setup Wizard.
+      - If the Commerce application is installed, display an error and HTTP status code 500 (Internal Server Error).
+   1. If the Commerce application is in maintenance mode, display a user-friendly "Service Unavailable" landing page with HTTP status code 503 (Service Unavailable).
+   1. If the Commerce application is _not_ installed, redirect to Setup Wizard.
    1. If the session is invalid, redirect to the home page.
    1. If there is any other application initialization error, display a user-friendly "Page Not Found" page with HTTP status code 404 (Not Found).
    1. On any other error, display a user-friendly "Service Unavailable" page with HTTP response 503 and generate an error report and display its ID on the page.
@@ -86,10 +86,10 @@ We have the following entry point applications (that is, applications defined by
 
 >[!INFO]
 >
->The entry point for static view files is not used in [production mode](application-modes.md#production-mode) to avoid potential exploits on the server. In production mode, the Magento application expects that all necessary resources exist in the `<your Magento install dir>/pub/static` directory.
+>The entry point for static view files is not used in [production mode](application-modes.md#production-mode) to avoid potential exploits on the server. In production mode, the Commerce application expects that all necessary resources exist in the `<your Commerce install dir>/pub/static` directory.
 
 In default or developer mode, a request for a non-existent static resource is redirected to the static entry point according to the rewrite rules specified by the appropriate `.htaccess`.
-When the request is redirected to the entry point, the Magento application parses the requested URL based on retrieved parameters and finds the requested resource.
+When the request is redirected to the entry point, the Commerce application parses the requested URL based on retrieved parameters and finds the requested resource.
 
 - In [developer](application-modes.md#developer-mode) mode, the content of the file is returned so that every time the resource is requested, the returned content is up to date.
 - In [default](application-modes.md#default-mode) mode, the retrieved resource is published so it is accessible by the previously requested URL.

@@ -7,7 +7,7 @@ description: Learn to write static files to the Commerce file system during prod
 
 {{file-system-owner}}
 
-The static view files deployment command enables you to write [static files](https://glossary.magento.com/static-files) to the Magento file system when the Magento software is set for [production mode](../bootstrap/application-modes.md#production-mode).
+The static view files deployment command enables you to write [static files](https://glossary.magento.com/static-files) to the Commerce file system when the Commerce software is set for [production mode](../bootstrap/application-modes.md#production-mode).
 
 The term _static view file_ refers to the following:
 
@@ -18,10 +18,10 @@ Static view files are located in the `<magento_root>/pub/static` directory, and 
 
 Static view files deployment is affected by application modes as follows:
 
-- [Default](../bootstrap/application-modes.md#default-mode) and [developer](../bootstrap/application-modes.md#developer-mode) modes: Magento generates them on demand, but the rest are cached in a file for speed of access.
+- [Default](../bootstrap/application-modes.md#default-mode) and [developer](../bootstrap/application-modes.md#developer-mode) modes: Commerce generates them on demand, but the rest are cached in a file for speed of access.
 - [Production](../bootstrap/application-modes.md#production-mode) mode: Static files are _not_ generated or cached.
 
-You must write static view files to the Magento file system manually using the command discussed in this topic; after that, you can restrict permissions to limit your vulnerabilities and to prevent accidental or malicious overwriting of files.
+You must write static view files to the Commerce file system manually using the command discussed in this topic; after that, you can restrict permissions to limit your vulnerabilities and to prevent accidental or malicious overwriting of files.
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ You must write static view files to the Magento file system manually using the c
 
 **To deploy static view files**:
 
-1. Log in to the Magento server as, or [switch to the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to the Commerce server as, or [switch to the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 1. Delete the contents of `<magento_root>/pub/static`, except for the `.htaccess` file. Do not delete this file.
 1. Run the static view files deployment tool `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -66,7 +66,7 @@ The following table explains this command's parameters and values.
 | `--no-misc` | Do not deploy other types of files: MD, JBF, CSV, JSON, TXT, HTC, SWF | No |
 | `--no-html-minify` | Do not minify HTML files. | No |
 | `-s <quick\|standard\|compact>` | Define the deployment strategy. Use these options only if you have more than one local.<ul><li>Use the [quick strategy](static-view-file-strategy.md#quick-strategy) to minimize deployment time. This is the default command option if not specified.</li><li>Use the [standard strategy](static-view-file-strategy.md#standard-strategy) to deploy all static view files for all packages.</li><li>Use the [compact strategy](static-view-file-strategy.md#compact-strategy) to conserve disk space on the server.</li></ul> | No |
-| `--no-parent` | Do not generate files for the parent themes of the current theme. It is strongly recommended to use this flag if you do not explicitly use the parent theme of the current theme you are trying to deploy. This significantly increases the speed of the process. This flag is available in Magento 2.4.2 | No |
+| `--no-parent` | Do not generate files for the parent themes of the current theme. It is strongly recommended to use this flag if you do not explicitly use the parent theme of the current theme you are trying to deploy. This significantly increases the speed of the process. This flag is available in Commerce 2.4.2 | No |
 | `--force (-f)` | Deploy files in any mode. (by default, the static content deployment tool can be run only in production mode. Use this option to run it in default or developer mode). | No |
 
 >[!INFO]
@@ -118,7 +118,7 @@ bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts 
 
 ### Generating static view files for one theme and one area
 
-The following command generates static view files for all languages, the frontend area only, the Magento Luma theme only, without generating fonts:
+The following command generates static view files for all languages, the frontend area only, the Commerce Luma theme only, without generating fonts:
 
 ```bash
 bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magento/luma
@@ -152,20 +152,20 @@ To do this, take the following steps:
 
 ## Troubleshooting the static view files deployment tool
 
-[Install the Magento software first](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); otherwise, you cannot run the static view files deployment tool.
+[Install the Commerce software first](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); otherwise, you cannot run the static view files deployment tool.
 
 **Symptom**: The following error is displayed when you run the static view files deployment tool:
 
 ```terminal
-ERROR: You need to install the Magento application before running this utility.
+ERROR: You need to install the Commerce application before running this utility.
 ```
 
 **Solution**:
 
 Use the following steps:
 
-1. Install the Magento software using the [command line](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Log in to the Magento server as, or [switch to](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), the file system owner.
+1. Install the Commerce software using the [command line](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
+1. Log in to the Commerce server as, or [switch to](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), the file system owner.
 1. Delete the contents of `<magento_root>/pub/static` directory, except for the `.htaccess` file. Do not delete this file.
 1. Deploy static view files: `bin/magento setup:static-content:deploy`
 

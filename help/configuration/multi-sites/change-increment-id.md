@@ -5,11 +5,11 @@ description: Change the increment ID for a Commerce database entity.
 
 # Change increment ID
 
-This article discusses how to change the increment ID for a Magento database (DB) entity (order, invoice, credit memo, and so on) on a particular Magento store using the `ALTER TABLE` SQL statement.
+This article discusses how to change the increment ID for a Commerce database (DB) entity (order, invoice, credit memo, and so on) on a particular Commerce store using the `ALTER TABLE` SQL statement.
 
 ## Affected versions
 
-- Adobe Commerce (on premise): 2.x.x
+- Adobe Commerce (on premises): 2.x.x
 - Adobe Commerce on cloud infrastructure: 2.x.x
 - MySQL: [any supported version][]
 

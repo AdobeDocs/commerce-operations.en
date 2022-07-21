@@ -10,9 +10,9 @@ ee_only: True
 
 After configuration, the master databases are configured as follows:
 
-- Main magento database: 369 tables
-- Magento [quote](https://glossary.magento.com/quote) database: 11 tables
-- Magento sales database: 55 tables
+- Main Commerce database: 369 tables
+- Commerce [quote](https://glossary.magento.com/quote) database: 11 tables
+- Commerce sales database: 55 tables
 
 To verify that your split databases are working properly, perform the following tasks and verify that data is added to the database tables using a database tool like [phpmyadmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
 
@@ -23,4 +23,4 @@ To verify that your split databases are working properly, perform the following 
 
 >[!WARNING]
 >
->You must back up the two additional database instances manually. Magento backs up only the main database instance. The [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) command and Admin options do not back up the additional tables.
+>You must back up the two additional database instances manually. Commerce backs up only the main database instance. The [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) command and Admin options do not back up the additional tables.

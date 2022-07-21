@@ -14,7 +14,7 @@ We assume that:
    Additional tasks are required to set up Adobe Commerce on cloud infrastructure. After you complete the tasks discussed in this topic, see [Set up multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) in the _Commerce Cloud guide_.
 
 - You accept multiple domains in one virtual host file or use one virtual host per website; the virtual host configuration files are located in `/etc/nginx/sites-available`.
-- You use the `nginx.conf.sample` provided by Magento with only the modifications discussed in this tutorial.
+- You use the `nginx.conf.sample` provided by Commerce with only the modifications discussed in this tutorial.
 - The Commerce software is installed in `/var/www/html/magento2`.
 - You have two websites other than the default:
 
@@ -29,8 +29,8 @@ We assume that:
 The following is a roadmap for setting up multiple websites with nginx:
 
 1. [Set up websites, stores, and store views](ms-admin.md) in the Admin.
-1. Create an [Nginx virtual host](#step-2-create-nginx-virtual-hosts)) to map many websites or one Nginx virtual host per Magento website (steps detailed below).
-1. Pass the values of the [Magento variables](ms-overview.md) `$MAGE_RUN_TYPE` and `$MAGE_RUN_CODE` to nginx using the Magento-provided `nginx.conf.sample` (steps detailed below).
+1. Create an [Nginx virtual host](#step-2-create-nginx-virtual-hosts)) to map many websites or one Nginx virtual host per Commerce website (steps detailed below).
+1. Pass the values of the [MAGE variables](ms-overview.md) `$MAGE_RUN_TYPE` and `$MAGE_RUN_CODE` to nginx using the Magento-provided `nginx.conf.sample` (steps detailed below).
 
    - `$MAGE_RUN_TYPE` can be either `store` or `website`:
 
@@ -39,7 +39,7 @@ The following is a roadmap for setting up multiple websites with nginx:
 
    - `$MAGE_RUN_CODE` is the unique website or store view code that corresponds to `$MAGE_RUN_TYPE`.
 
-1. Update the Base URL configuration on the Magento admin.
+1. Update the Base URL configuration on the Commerce admin.
 
 ## Step 1: Create websites, stores, and store views in the Admin
 
@@ -165,7 +165,7 @@ For more detail about the map directive, see [nginx documentation on the map dir
 
 >[!TIP]
 >
->Do not edit the `nginx.conf.sample` file; it is a core Magento file that may be updated with each new release. Instead, copy the `nginx.conf.sample` file, rename it, and then edit the copied file.
+>Do not edit the `nginx.conf.sample` file; it is a core Commerce file that may be updated with each new release. Instead, copy the `nginx.conf.sample` file, rename it, and then edit the copied file.
 
 **To edit the PHP entry point for the main application**:
 
@@ -225,11 +225,11 @@ location ~ (index|get|static|report|404|503|health_check)\.php$ {
 
 ## Step 4: Update the Base URL configuration
 
-You must update the Base URL for the `french` and the `german` websites in the Magento admin.
+You must update the Base URL for the `french` and the `german` websites in the Commerce admin.
 
 ### Update French Website Base URL
 
-1. Log in to the Magento admin and navigate to **Stores** > **Settings** > **Configuration** > **General** > **Web**.
+1. Log in to the Commerce admin and navigate to **Stores** > **Settings** > **Configuration** > **General** > **Web**.
 1. Change the _configuration scope_ to the `french` website.
 1. Expand **Base URLs** section and update the **Base URL** and **Base Link URL** value to `http://french.magento24.com/`.
 1. Expand **Base URLs (Secure)** section and update the **Secure Base URL** and **Secure Base Link URL** value to `https://french.magento24.com/`.
@@ -237,7 +237,7 @@ You must update the Base URL for the `french` and the `german` websites in the M
 
 ### Update German Website Base URL
 
-1. Log in to the Magento admin and navigate to **Stores** > **Settings** > **Configuration** > **General** > **Web**.
+1. Log in to the Commerce admin and navigate to **Stores** > **Settings** > **Configuration** > **General** > **Web**.
 1. Change the _configuration scope_ to the `german` website.
 1. Expand **Base URLs** section and update the **Base URL** and **Base Link URL** value to `http://german.magento24.com/`.
 1. Expand **Base URLs (Secure)** section and update the **Secure Base URL** and **Secure Base Link URL** value to `https://german.magento24.com/`.

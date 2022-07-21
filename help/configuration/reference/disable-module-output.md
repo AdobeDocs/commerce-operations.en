@@ -70,7 +70,7 @@ See [Export the configuration](../cli/export-configuration.md).
 
 ## Disable module output in a simple deployment
 
-The procedure for disabling module output on a single instance of Magento is easier because the changes do not have to be distributed.
+The procedure for disabling module output on a single instance of Commerce is easier because the changes do not have to be distributed.
 
 1. Archive the original `<Magento_install_dir>/app/etc/config.php` file.
 1. Add the `advanced` and `modules_disable_output` sections to the `config.php` file (if they do not exist):

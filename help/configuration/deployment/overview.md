@@ -33,7 +33,7 @@ We use the following terms to describe the systems involved with deployment.
 
 - **Build system**—One system on which you deploy static assets and compile code for your production system. Because you build these assets on a system not in production, your production system's downtime is minimized.
 
-  Your build system does not have to have Magento installed on it. It needs only the Magento code but no database connection is required. Also, your build system does not need to be a physically separate server.
+  Your build system does not have to have Commerce installed on it. It needs only the Commerce code but no database connection is required. Also, your build system does not need to be a physically separate server.
 
 - **Staging system**—_Optional_. You can optionally set up a staging system to use for final testing of all integrated code, including User Acceptance Testing (UAT). Set up a staging system the same way you set up a production system. Except for the fact that staging is not your live store and does not process orders from customers, it is identical to production.
 
@@ -71,4 +71,4 @@ We provide a way to synchronize the configuration of your systems:
 
 Most of the time, the configuration options you set in the shared, system-specific, or sensitive configuration cannot be edited in the Admin. This helps keep your settings consistent across all systems. (You can optionally use the [`magento config:set` command](../cli/set-configuration-values.md) without the `--lock` option to configure settings that are editable in the Admin.)
 
-Each Magento configuration option has a unique _configuration path_. To set a value for a configuration option, you can use either a CLI command or an environment variable to set the value for that configuration path on a specific system.
+Each Commerce configuration option has a unique _configuration path_. To set a value for a configuration option, you can use either a CLI command or an environment variable to set the value for that configuration path on a specific system.

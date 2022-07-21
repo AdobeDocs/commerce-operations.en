@@ -11,7 +11,7 @@ You can manage message queues from the command line using cron jobs or an extern
 
 Cron jobs are the default mechanism to restart consumers. Processes started by `cron` consume the specified number of messages and then terminate. Rerunning `cron` restarts the consumer.
 
-The following example shows the Magento `crontab` configuration for running consumers:
+The following example shows the `crontab` configuration for running consumers:
 
 > /app/code/Magento/MessageQueue/etc/crontab.xml
 

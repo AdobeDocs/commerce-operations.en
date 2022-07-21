@@ -9,7 +9,7 @@ This topic discusses how to prevent [cache](https://glossary.magento.com/cache) 
 
 These types of attacks can be difficult to detect because they do not result in errors in web server logs.
 
-This solution applies to the following Magento versions:
+This solution applies to the following Commerce versions:
 
 - 2.0.10 and later
 - 2.1.2 and later

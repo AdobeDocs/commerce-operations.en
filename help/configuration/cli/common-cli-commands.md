@@ -29,23 +29,23 @@ Commands are shown in summary form only; for more information about a command, c
 |--- |--- |
 |[`magento cache:{enable/disable/clean/flush/status}`](../cli/manage-cache.md)|Manages the cache|
 |[`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md)|Manages the indexers|
-|[`magento cron:run`](../cli/configure-cron-jobs.md)|Runs Magento cron jobs|
+|[`magento cron:run`](../cli/configure-cron-jobs.md)|Runs Commerce cron jobs|
 |[`magento setup:di:compile`](../cli/code-compiler.md)|Compiles all non-existent proxies and factories; and pre-compiles class definitions, inheritance information, and plug-in definitions for one store and website.|
-|[`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md)|Module dependencies, circular dependencies, and Magento framework dependencies.|
+|[`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md)|Module dependencies, circular dependencies, and Commerce framework dependencies.|
 |[`magento i18n:{collect-phrases/pack/uninstall}`](../cli/localization.md)|Creates a translation dictionary or a translation package|
 |[`magento setup:static-content:deploy`](../cli/static-view-file-deployment.md)|Deploys static view files|
 |[`magento dev:source-theme:deploy`](../cli/create-symlinks.md)|Creates CSS from LESS|
 |[`magento dev:tests:run`](../cli/unit-tests.md)|Runs automated tests|
 |[`magento dev:xml:convert`](../cli/convert-layout-files.md)|Update your layout XML files to match the new Extensible Stylesheet Language Transformations (XSLT) stylesheet|
 |[`magento setup:perf:generate-fixtures`](../cli/generate-data.md)|Generate data to use for performance testing.|
-|[`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html)|Installs optional Magento sample data after you install the Magento application.<br><br>For more details about Magento sample data, see [Optional Magento sample data](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html).|
+|[`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html)|Installs optional sample data after you install the Commerce application.<br><br>For more details about sample data, see [Optional sample data](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html).|
 |[`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md)|Manages backend configurations|
 |[`magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html)| Creates/edits/unlocks admin users.|
 |[`magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html)|Enables/disables developer template hints.|
 
 ## Common arguments
 
-The following arguments are common to all commands. These commands can be run either before or after the Magento software is installed:
+The following arguments are common to all commands. These commands can be run either before or after the Commerce software is installed:
 
 |Long version|Short version|Meaning|
 |--- |--- |--- |

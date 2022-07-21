@@ -5,27 +5,27 @@ description: See how to set up the owner or owners of the Commerce application f
 
 # File systems access permissions
 
-This section discusses how to set up the owner or owners of the Magento file system for a development and production system. Before you continue, review the concepts discussed in [Overview of file system ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+This section discusses how to set up the owner or owners of the Commerce file system for a development and production system. Before you continue, review the concepts discussed in [Overview of file system ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 
-This topic focuses on Magento development and production systems. If you are installing Magento, see [Set pre-installation ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+This topic focuses on Commerce development and production systems. If you are installing Magento, see [Set pre-installation ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
 
 The sections that follow discuss requirements for one or two file system owners. That means:
 
 - **One user**—Typically necessary on shared hosting providers, which allow you to access only one user on the server This user can log in, transfer files using FTP, and this user also runs the web server.
 
-- **Two users**—We recommend two users if you run your own Magento server: one to transfer files and run command-line utilities, and a separate user for the web server software. When possible, this is preferable because it is more secure.
+- **Two users**—We recommend two users if you run your own Commerce server: one to transfer files and run command-line utilities, and a separate user for the web server software. When possible, this is preferable because it is more secure.
 
   Instead, you have separate users:
 
   - The web server user, which runs the Admin and storefront.
 
-  - A _command-line user_, which is a local user account you can use to log in to the server. This user runs Magento cron jobs and command-line utilities.
+  - A _command-line user_, which is a local user account you can use to log in to the server. This user runs Commerce cron jobs and command-line utilities.
 
 ## Production file system ownership for shared hosting (one user)
 
-To use the one-owner setup, you must log in to your Magento server as the same user that runs the web server. This is typical for shared hosting.
+To use the one-owner setup, you must log in to your Commerce server as the same user that runs the web server. This is typical for shared hosting.
 
-Because having one file system owner is less secure, we recommend you deploy Magento in production on a private server instead of on shared hosting, if possible.
+Because having one file system owner is less secure, we recommend you deploy Commerce in production on a private server instead of on shared hosting, if possible.
 
 ### Set up one owner for default or developer mode
 
@@ -55,15 +55,15 @@ When you are ready to deploy your site to production, you should remove write ac
 - `generated/metadata`
 - `var/view_preprocessed`
 
-To update components, install new components, or to upgrade the Magento software, all of the preceding directories must be read-write.
+To update components, install new components, or to upgrade the Commerce software, all of the preceding directories must be read-write.
 
 #### Make code files and directories read-only
 
 To remove write permissions to files and directories from the web server user's group:
 
-1. Log in to your Magento server.
+1. Log in to your Commerce server.
 
-1. Change to your Magento installation directory.
+1. Change to your Commerce installation directory.
 
 1. Change to production mode.
 
@@ -77,7 +77,7 @@ To remove write permissions to files and directories from the web server user's 
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
-1. Make the Magento command-line tool executable.
+1. Make the command-line tool executable.
 
    ```bash
    chmod u+x bin/magento
@@ -85,10 +85,10 @@ To remove write permissions to files and directories from the web server user's 
 
 #### Make code files and directories writable
 
-To make files and directories writable so you can update components and upgrade the Magento software:
+To make files and directories writable so you can update components and upgrade the Commerce software:
 
-1. Log in to your Magento server.
-1. Change to your Magento installation directory.
+1. Log in to your Commerce server.
+1. Change to your Commerce installation directory.
 1. Enter the following commands:
 
    ```bash
@@ -105,11 +105,11 @@ If you use your own server (including a hosting provider's private server setup)
 
 - The **web server user**, which runs the Admin and storefront.
 
-  Linux systems typically do not provide a shell for this user; you cannot log in to the Magento server as, or switch to, the web server user.
+  Linux systems typically do not provide a shell for this user; you cannot log in to the Commerce server as, or switch to, the web server user.
 
-- The **command-line user**, which you log in to your Magento server as or switch to.
+- The **command-line user**, which you log in to your Commerce server as or switch to.
 
-  Magento uses this user to run Magento CLI commands and cron.
+  Commerce uses this user to run CLI commands and cron.
 
   >[!INFO]
   >
@@ -144,7 +144,7 @@ In addition, the directories should be writable by the web server group. Because
 
 To set `setgid` and permissions for developer mode:
 
-1. Log in to your Magento server as, or switch to, the file system owner.
+1. Log in to your Commerce server as, or switch to, the file system owner.
 1. Enter the following commands in the order shown:
 
    ```bash
@@ -177,8 +177,8 @@ When you are ready to deploy your site to production, you should remove write ac
 
 To remove writable permissions to files and directories from the web server user's group:
 
-1. Log in to your Magento server.
-1. Change to your Magento installation directory.
+1. Log in to your Commerce server.
+1. Change to your Commerce installation directory.
 1. As the file system owner, enter the following command to change to production mode:
 
    ```bash
@@ -193,10 +193,10 @@ To remove writable permissions to files and directories from the web server user
 
 #### Make code files and directories writable
 
-To make files and directories writable so you can update components and upgrade the Magento software:
+To make files and directories writable so you can update components and upgrade the Commerce software:
 
-1. Log in to your Magento server.
-1. Change to your Magento installation directory.
+1. Log in to your Commerce server.
+1. Change to your Commerce installation directory.
 1. Enter the following command:
 
    ```bash

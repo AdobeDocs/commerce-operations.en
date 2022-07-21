@@ -10,7 +10,7 @@ To help prevent [Clickjacking](https://owasp.org/www-community/attacks/Clickjack
 The `X-Frame-Options` header enables you to specify whether or not a browser should be allowed to render a page in a `<frame>`, `<iframe>`, or `<object>` as follows:
 
 - `DENY`: Page cannot be displayed in a frame.
-- `SAMEORIGIN`: (The default Magento setting.) Page can be displayed only in a frame on the same origin as the page itself.
+- `SAMEORIGIN`: (default) Page can be displayed only in a frame on the same origin as the page itself.
 
 >[!WARNING]
 >
@@ -18,7 +18,7 @@ The `X-Frame-Options` header enables you to specify whether or not a browser sho
 
 >[!WARNING]
 >
->For security reasons, Magento strongly recommends against running the Magento storefront in a frame.
+>For security reasons, Adobe strongly recommends against running the Commerce storefront in a frame.
 
 ## Implement `X-Frame-Options`
 
@@ -36,12 +36,12 @@ Set a value for `X-Frame-Options` in `<magento_root>/app/etc/env.php`. Following
 
 To verify your setting, view HTTP headers on any storefront page. There are several ways to do this, including using a web browser inspector.
 
-The following example uses curl, which you can run from any machine that can connect to your Magento server over the HTTP protocol.
+The following example uses curl, which you can run from any machine that can connect to your Commerce server over the HTTP protocol.
 
 Use the following command:
 
 ```bash
-curl -I -v --location-trusted '<your Magento storefront URL>'
+curl -I -v --location-trusted '<your storefront URL>'
 ```
 
 Look for the `X-Frame-Options` value in the headers.

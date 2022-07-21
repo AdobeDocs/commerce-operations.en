@@ -5,9 +5,9 @@ description: Restrict who can run the cron.php file in a browser.
 
 # Secure cron PHP
 
-This topic discusses securing `pub/cron.php` to prevent it from being used in a malicious exploit. If you do not secure cron, any user could potentially run cron to attack your Magento application.
+This topic discusses securing `pub/cron.php` to prevent it from being used in a malicious exploit. If you do not secure cron, any user could potentially run cron to attack your Commerce application.
 
-The Magento cron job runs several scheduled tasks and is a vital part of your Magento configuration. Scheduled tasks include, but are not limited to:
+The cron job runs several scheduled tasks and is a vital part of your Commerce configuration. Scheduled tasks include, but are not limited to:
 
 - Reindexing
 - Generating e-mails
@@ -18,7 +18,7 @@ The Magento cron job runs several scheduled tasks and is a vital part of your Ma
 >
 >Refer to [Configure and run cron](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) for more information about cron groups.
 
-You can run a Magento cron job in the following ways:
+You can run a cron job in the following ways:
 
 - Using the [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) command either from the command line or in a crontab
 - Accessing `pub/cron.php?[group=<name>]` in a web browser
@@ -84,7 +84,7 @@ MagentoCronGroup: <username1> ... <usernameN>
 
 To secure cron in Magento's `.htaccess` file:
 
-1. Log in to your Magento server as, or switch to, the file system owner.
+1. Log in to your Commerce server as, or switch to, the file system owner.
 1. Open `<magento_root>/pub/.htaccess` in a text editor.
 
    (Because `cron.php` is located in the `pub` directory, edit this `.htaccess` only.)
@@ -131,9 +131,9 @@ Consult one of the following resources to create a password file before continui
 
 ### Secure cron in `nginx.conf.sample`
 
-Magento provides an optimized sample nginx configuration file out of the box. We recommend modifying it to secure cron.
+Commerce provides an optimized sample nginx configuration file out of the box. We recommend modifying it to secure cron.
 
-1. Add the following to your Magento [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) file:
+1. Add the following to your [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) file:
 
    ```conf
    #Securing cron
@@ -164,7 +164,7 @@ Magento provides an optimized sample nginx configuration file out of the box. We
 
 ## Verify cron is secure
 
-The easiest way to verify that `pub/cron.php` is secure is to verify that it is creating rows in the `cron_schedule` Magento database table after you set up password authentication. This example uses SQL commands to check the database, but you can use whatever tool you like.
+The easiest way to verify that `pub/cron.php` is secure is to verify that it is creating rows in the `cron_schedule` database table after you set up password authentication. This example uses SQL commands to check the database, but you can use whatever tool you like.
 
 >[!INFO]
 >
@@ -172,7 +172,7 @@ The easiest way to verify that `pub/cron.php` is secure is to verify that it is 
 
 **To verify cron is secure**:
 
-1. Log in to your Magento database as either the Magento database user or as `root`.
+1. Log in to the database as the Commerce database user or as `root`.
 
    For example,
 
@@ -180,10 +180,10 @@ The easiest way to verify that `pub/cron.php` is secure is to verify that it is 
    mysql -u magento -p
    ```
 
-1. Use the Magento database:
+1. Use the Commerce database:
 
    ```shell
-   use <magento database name>;
+   use <database-name>;
    ```
 
    For example,
@@ -201,7 +201,7 @@ The easiest way to verify that `pub/cron.php` is secure is to verify that it is 
 1. Run cron from a browser:
 
    ```shell
-   http[s]://<magento hostname or ip>/cron.php?group=default
+   http[s]://<Commerce hostname or ip>/cron.php?group=default
    ```
 
    For example:
@@ -251,7 +251,7 @@ You can run cron at any time, such as during development, using a web browser.
 
 If you are using an Apache web server, you must remove the restriction from the `.htaccess` file before you can run cron in a browser:
 
-1. Log in to your Magento server as a user with permissions to write to the Magento file system.
+1. Log in to your Commerce server as a user with permissions to write to the Commerce file system.
 1. Open any of the following in a text editor (depending on your entry point to Magento):
 
    ```text
@@ -284,15 +284,15 @@ If you are using an Apache web server, you must remove the restriction from the 
    You can then run cron in a web browser as follows:
 
    ```text
-   <your Magento hostname or IP>/<Magento root>/pub/cron.php[?group=<group name>]
+   <your hostname or IP>/<Commerce root>/pub/cron.php[?group=<group name>]
    ```
 
 Where:
 
-- `<your Magento hostname or IP>` is the hostname or IP address of your Magento installation
-- `<Magento root>` is the web server docroot-relative directory to which you installed the Magento software
+- `<your hostname or IP>` is the hostname or IP address of your Commerce installation
+- `<Commerce root>` is the web server docroot-relative directory to which you installed the Commerce software
 
-   The exact URL that you use to run the Magento application depends on how you configured your web server and virtual host.
+   The exact URL that you use to run the Commerce application depends on how you configured your web server and virtual host.
 
 - `<group name>` is any valid cron group name (optional)
 

@@ -8,22 +8,22 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
 ## Assumptions
 
-- You installed Magento using [Composer][].
+- You installed Commerce using [Composer][].
 - You are directly applying updates to the server.
 
 >[!WARNING]
 >
 >This guide does not apply if you used `git clone` to install Magento.
->Contributing developers should use [this guide][install] to update their Magento installation.
+>Contributing developers should use [this guide][install] to update their Commerce installation.
 
 ## Deployment steps
 
 1. Log in to your production server as, or switch to, the [file system owner][file-owner].
 
-1. Change directory to the Magento base directory:
+1. Change directory to the Commerce base directory:
 
    ```bash
-   cd <Magento base directory>
+   cd <Commerce base directory>
    ```
 
 1. Enable maintenance mode using the command:
@@ -32,7 +32,7 @@ This topic provides instructions for deploying updates to Commerce on a producti
    bin/magento maintenance:enable
    ```
 
-1. Apply updates to Magento or its components using the following command pattern:
+1. Apply updates to Commerce or its components using the following command pattern:
 
    ```bash
    composer require-commerce <package> <version> --no-update

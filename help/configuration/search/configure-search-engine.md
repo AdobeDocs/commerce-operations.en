@@ -79,7 +79,7 @@ To clean the cache using the command line: [`bin/magento cache:clean`](../cli/ma
 
 To reindex using the command line:
 
-1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 1. Enter any of the following commands:
 
    Enter the following command to reindex the catalog search index only:

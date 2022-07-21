@@ -4,7 +4,7 @@ description: Gain an understanding of static content signing and how to enable o
 ---
 # Static content cache
 
-To improve performance, Magento sets the `Expires` headers for static resources, such as images, JavaScript, and CSS files.
+To improve performance, Commerce sets the `Expires` headers for static resources, such as images, JavaScript, and CSS files.
 Setting the `Expires` header on a static resource tells the browser to cache the resource at that URL and serve the cached version until it expires.
 This is a common [best practice](https://developer.yahoo.com/performance/rules.html#expires=) for caching static resources.
 
@@ -13,8 +13,8 @@ Manually clearing the browser cache works if you are a [website](https://glossar
 
 ## Static content signing
 
-[Static content](https://glossary.magento.com/static-content) signing is a Magento feature that allows you to invalidate the browser cache for static resources.
-Magento accomplishes this by adding a deployment version to the URL of [static files](https://glossary.magento.com/static-files).
+[Static content](https://glossary.magento.com/static-content) signing is a Commerce feature that allows you to invalidate the browser cache for static resources.
+Commerce accomplishes this by adding a deployment version to the URL of [static files](https://glossary.magento.com/static-files).
 
 The following is an example of a URL signed with a version:
 
@@ -22,10 +22,10 @@ The following is an example of a URL signed with a version:
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 
-When you run the command [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) to deploy static content, Magento automatically changes the deployment version.
+When you run the command [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) to deploy static content, Commerce automatically changes the deployment version.
 This changes the URL of the static files and forces the browser to load the new version of the files.
 
-Magento enables this feature by default, and Adobe recommends keeping this feature enabled to prevent issues related to browsers serving up old static resources.
+Commerce enables this feature by default, and Adobe recommends keeping this feature enabled to prevent issues related to browsers serving up old static resources.
 
 You can find the configuration for this feature in [**[!UICONTROL Stores]** > Settings > Configuration > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
 

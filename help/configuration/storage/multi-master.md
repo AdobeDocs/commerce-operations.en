@@ -18,7 +18,7 @@ Checkout, orders, and product data can each use a separate master database that 
 >
 >Adobe Commerce on cloud infrastructure does _not_ support this feature.
 
-The `ResourceConnections` class provides the unified MySQL database connection to the Magento application. For queries to the master databases, we implement the Command Query Responsibility Segregation (CQRS) database pattern. This pattern handles the logic for routing the read and write queries to the appropriate databases. Developers do not need to know which configuration is being used and there are no separate read and write database connections.
+The `ResourceConnections` class provides the unified MySQL database connection to the Commerce application. For queries to the master databases, we implement the Command Query Responsibility Segregation (CQRS) database pattern. This pattern handles the logic for routing the read and write queries to the appropriate databases. Developers do not need to know which configuration is being used and there are no separate read and write database connections.
 
 If you set up optional database replication, you get the following advantages:
 
@@ -54,13 +54,13 @@ Because of the way the split database performance solution is designed, your cus
 
 This also means you can either:
 
-- Configure the split database solution _before_ putting Magento into production.
+- Configure the split database solution _before_ putting Commerce into production.
 
-  Adobe recommends configuring split databases as soon as possible after you install the Magento software.
+  Adobe recommends configuring split databases as soon as possible after you install the Commerce software.
 
 - [Manually configure](multi-master-manual.md) the split database solution.
 
-  You must perform this task if you have already installed components or if Magento is already in production. (_Do not_ update a production system; make the updates in a development system and synchronize the changes after you have tested them.)
+  You must perform this task if you have already installed components or if Commerce is already in production. (_Do not_ update a production system; make the updates in a development system and synchronize the changes after you have tested them.)
 
   >[!WARNING]
   >
@@ -68,11 +68,11 @@ This also means you can either:
 
 ## Prerequisites
 
-The split database requires you to set up three MySQL master databases on any host (all three on the Magento server, each database on a separate server, and so on). These are the _master_ databases and they are used as follows:
+The split database requires you to set up three MySQL master databases on any host (all three on the Commerce server, each database on a separate server, and so on). These are the _master_ databases and they are used as follows:
 
 - One master database for [checkout](https://glossary.magento.com/checkout) tables
 - One master database for sales tables (also referred to as _Order Management System_, or _OMS_, tables)
-- One master database for the remainder of the Magento 2 application tables
+- One master database for the remainder of the Commerce 2 application tables
 
 In addition, you can optionally set up any number of _slave_ databases that serve as load balancers and backups.
 

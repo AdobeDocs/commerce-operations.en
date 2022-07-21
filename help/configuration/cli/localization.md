@@ -7,12 +7,12 @@ description: Learn how to generate translation dictionaries and build language p
 
 {{file-system-owner}}
 
-Magento translations enable you to customize and localize your store for multiple regions and markets. We improved the localization and customization of Magento instances by making translation dictionaries easier to update and maintain and reduced the amount of code coupling and duplication.
+Commerce translations enable you to customize and localize your store for multiple regions and markets. We improved the localization and customization of Commerce instances by making translation dictionaries easier to update and maintain and reduced the amount of code coupling and duplication.
 
 This topic discusses how to generate:
 
 - **Translation dictionaries** are a convenient way to customize or translate _some_ words and phrases, such as those for a custom module or theme.
-- **Language packages** enable you to translate _any or all_ words and phrases in the Magento application.
+- **Language packages** enable you to translate _any or all_ words and phrases in the Commerce application.
 
 See [Translations overview][].
 
@@ -31,7 +31,7 @@ To generate the dictionary and begin translation:
 
    You have options for using the translated dictionary:
 
-1. You can package the translation dictionaries into a language package and provide the package to the Magento store administrator.
+1. You can package the translation dictionaries into a language package and provide the package to the Commerce store administrator.
 
 1. In the Admin, the store administrator [configures the translations].
 
@@ -58,10 +58,10 @@ The following table explains parameters and values:
 Use the following guidelines when translating words and phrases:
 
 - Change the contents of the second column only. Translate the phrases from English (`US`) to the desired language.
-- When creating dictionaries for locales, use the default Magento strings.
+- When creating dictionaries for locales, use the default Commerce strings.
 - While translating, pay attention to placeholders: `%1`, `%2`
 
-Magento uses the placeholders to insert context values; they are _not_ used for translations. For example:
+Commerce uses the placeholders to insert context values; they are _not_ used for translations. For example:
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -86,7 +86,7 @@ An example of translating a phrase:
 
 ## Create a language package
 
-As opposed to a translation dictionary, you can translate any or all words and phrases in the Magento application using a language package. You can translate a particular component—like a module or a theme—using a translation dictionary. [Learn more about language packages][].
+As opposed to a translation dictionary, you can translate any or all words and phrases in the Commerce application using a language package. You can translate a particular component—like a module or a theme—using a translation dictionary. [Learn more about language packages][].
 
 This section discusses how to create a language package, which writes CSV files to modules and themes. To create a language package, you must perform the tasks discussed in the following sections:
 
@@ -114,7 +114,7 @@ The following table explains the parameters and values for the language package 
 
 ### Create directories and files
 
-Language packages are located in a directory under `app/i18n/<VendorName>` in the Magento file system with the following contents:
+Language packages are located in a directory under `app/i18n/<VendorName>` in the Commerce file system with the following contents:
 
 - Required license files
 - `composer.json`
@@ -129,7 +129,7 @@ To create these files:
 
 1. Create a directory under `app/i18n`.
 
-   For example, Magento language packages are located in `app/i18n/magento`
+   For example, Commerce language packages are located in `app/i18n/magento`
 
 1. Add required license files.
 1. Add [`composer.json`][] that specifies dependencies for your language package.
@@ -140,7 +140,7 @@ To create these files:
 
 When declaring a language package in the `language.xml` configuration file, you must specify the sequence of the language inheritance for this package.
 
-Language inheritance enables you to create a translation called a _child_ based on an existing translation called a _parent_. The child translations override the parent. However, if the child translation fails to upload or display or is missing a phrase or word, Magento uses the parent [locale](https://glossary.magento.com/locale). [Examples of language package inheritance](#example-of-language-inheritance).
+Language inheritance enables you to create a translation called a _child_ based on an existing translation called a _parent_. The child translations override the parent. However, if the child translation fails to upload or display or is missing a phrase or word, Commerce uses the parent [locale](https://glossary.magento.com/locale). [Examples of language package inheritance](#example-of-language-inheritance).
 
 To declare a package, specify the following information:
 
@@ -187,7 +187,7 @@ In the preceding example:
 - `language_package_one` inherits from `en_au_package` and `en_au_package` inherits from `en_ie_package`
 - `language_package_two` inherits from `en_ca_package` and `en_ca_package` inherits from `en_us_package`
 
-If the Magento application cannot find word or phrase in the `en_GB` package, it looks in other packages in following sequence:
+If the Commerce application cannot find word or phrase in the `en_GB` package, it looks in other packages in following sequence:
 
 1. `parent-package-one/language_package_one`
 1. `<vendorname>/en_au_package`
@@ -227,7 +227,7 @@ To add a German translation to a module or theme that you want to distribute to 
 
 ### Example: Create a language package
 
-Similar to the preceding example, generate a CSV file, but instead of specifying a module or theme directory, specify the entire Magento application root directory. The resulting CSV contains any phrases that the command could find in the code.
+Similar to the preceding example, generate a CSV file, but instead of specifying a module or theme directory, specify the entire Commerce application root directory. The resulting CSV contains any phrases that the command could find in the code.
 
 1. Collect phrases from your module:
 

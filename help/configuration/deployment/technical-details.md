@@ -5,7 +5,7 @@ description: Read about the technical details of pipeline deployment, types of c
 
 # Technical details
 
-This topic discusses technical implementation details about pipeline deployment in Magento 2.2 and later. Improvements can be divided into the following areas:
+This topic discusses technical implementation details about pipeline deployment in Commerce 2.2 and later. Improvements can be divided into the following areas:
 
 - [Configuration management](#configuration-management)
 - [Changes in the Admin](#changes-in-the-admin)
@@ -54,7 +54,7 @@ You can manage the sensitive configuration in any of the following ways:
 ### Configuration settings locked in the Admin
 
 Any configuration settings in `config.php` or `env.php` are locked in the Admin; that is, those settings cannot be changed in the Admin.
-Use the [`magento config:set` or `magento config:set --lock`](../cli/export-configuration.md# config-cli-config-set) command to change the settings in the `config.php` or `env.php` files.
+Use the [`magento config:set` or `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) command to change the settings in the `config.php` or `env.php` files.
 
 ## Changes in the Admin
 
@@ -82,7 +82,7 @@ We changed the following behavior in the Admin in production mode:
 
 ## Install and remove cron
 
-In version 2.2 for the first time, we help you set up your Magento cron job by providing the [`magento cron:install` command](../cli/configure-cron-jobs.md). This command sets up a Magento crontab as the user who runs the command.
+In version 2.2 for the first time, we help you set up your cron job by providing the [`magento cron:install` command](../cli/configure-cron-jobs.md). This command sets up a crontab as the user who runs the command.
 
 Also, you can remove the crontab using the `magento cron:remove` command.
 
@@ -94,9 +94,9 @@ The following diagram shows how we recommend you use pipeline deployment to mana
 
 ### Development system
 
-On your development system, you make configuration changes in the Admin and generate the shared configuration, `app/etc/config.php` and the system-specific configuration, `app/etc/env.php`. Check Magento code and the shared configuration into source control and push it to the build server.
+On your development system, you make configuration changes in the Admin and generate the shared configuration, `app/etc/config.php` and the system-specific configuration, `app/etc/env.php`. Check Commerce code and the shared configuration into source control and push it to the build server.
 
-You should also install extensions and customize Magento code on the development system.
+You should also install extensions and customize Commerce code on the development system.
 
 On your development system:
 
@@ -151,7 +151,7 @@ On your production system:
 1. If you installed components that changed the database schema, run `magento setup:upgrade --keep-generated` to update the database schema and data, preserving generated static files.
 1. To set system-specific settings, use either the `magento config:set` command or environment variables.
 1. To set sensitive settings, use either the `magento config:sensitive:set` command or environment variables.
-1. Clean (also referred to as _flush_) the Magento cache.
+1. Clean (also referred to as _flush_) the cache.
 1. End maintenance mode.
 
 ## Configuration management commands

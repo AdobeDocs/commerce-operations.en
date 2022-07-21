@@ -49,7 +49,7 @@ An example follows:
 
 ## Step 2: Configure the output
 
-Configure the output in your Magento application bootstrap file; this might be `<magento_root>/pub/index.php` or it could be located in a web server virtual host configuration.
+Configure the output in your Commerce application bootstrap file; this might be `<magento_root>/pub/index.php` or it could be located in a web server virtual host configuration.
 
 The following example displays results in a three-column table:
 

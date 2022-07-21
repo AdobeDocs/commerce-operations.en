@@ -13,12 +13,12 @@ This topic discusses advanced configuration commands that you can use to:
 - Optionally lock any configuration option so its value cannot be changed in the Admin
 - Change a configuration option that is locked in the Admin
 
-You can use these commands to set the Magento configuration manually or using scripts. You set configuration options using a _configuration path_, which is a `/`-delimited string that uniquely identifies that configuration option. You can find configuration paths in the following references:
+You can use these commands to set the Commerce configuration manually or using scripts. You set configuration options using a _configuration path_, which is a `/`-delimited string that uniquely identifies that configuration option. You can find configuration paths in the following references:
 
 - [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
 - [General configuration paths reference](../reference/config-reference-general.md)
-- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
+- [Commerce Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 You can set values at the following times:
 
@@ -48,11 +48,11 @@ See the following references:
 - [Sensitive and system-specific configuration paths reference](../reference/config-reference-sens.md)
 - [Payment configuration paths reference](../reference/config-reference-payment.md)
 - [Other configuration paths reference](../reference/config-reference-general.md)
-- [Magento Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
+- [Commerce Enterprise B2B Extension configuration paths reference](../reference/config-reference-b2b.md)
 
 ### Find the scope code
 
-You can find the scope code either in the Magento database or in the Magento Admin.
+You can find the scope code either in the Commerce database or in the Commerce Admin.
 
 **To Find the scope code in the Admin**:
 
@@ -68,18 +68,18 @@ You can find the scope code either in the Magento database or in the Magento Adm
 
 **To find the scope code in the database**:
 
-Scope codes for websites and store views are stored in the Magento database in the `store_website` and `store` tables, respectively.
+Scope codes for websites and store views are stored in the Commerce database in the `store_website` and `store` tables, respectively.
 
-1. Connect to the Magento database.
+1. Connect to the Commerce database.
 
    ```bash
-   mysql -u <magento database username> -p
+   mysql -u <Commerce database username> -p
    ```
 
 1. Enter the following commands:
 
    ```shell
-   use <magento database name>;
+   use <Commerce database name>;
    ```
 
    ```shell
@@ -127,14 +127,14 @@ The following table describes the `set` command parameters:
 | --- | --- |
 | `--scope` | The scope of the configuration. The possible values are `default`, `website`, or `store`. The default is `default`. |
 | `--scope-code` | The scope code of configuration (website code or store view code) |
-| `-le or --lock-env` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Magento base dir>/app/etc/env.php` file. |
-| `-lc or --lock-config` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Magento base dir>/app/etc/config.php` file. The `--lock-config` option overwrites `--lock-env` if you specify both options. |
+| `-le or --lock-env` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file. |
+| `-lc or --lock-config` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/config.php` file. The `--lock-config` option overwrites `--lock-env` if you specify both options. |
 | `path` | _Required_. The configuration path |
 | `value` | _Required_. The value of the configuration |
 
 >[!INFO]
 >
->As of Magento 2.2.4, the `--lock-env` and `--lock-config` options replace the `--lock` option.
+>As of Commerce 2.2.4, the `--lock-env` and `--lock-config` options replace the `--lock` option.
 >
 >If you use the `--lock-env` or `--lock-config` option to set or change a value, you must use the [`bin/magento app:config:import` command](../cli/import-configuration.md) to import the setting before you access the Admin or storefront.
 
@@ -175,25 +175,25 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 ### Set configuration values that cannot be edited in the Admin
 
-If you use the `--lock-env`  option as follows, the command saves the configuration value in `<Magento base dir>/app/etc/env.php` and disables the field for editing this value in Admin.
+If you use the `--lock-env`  option as follows, the command saves the configuration value in `<Commerce base dir>/app/etc/env.php` and disables the field for editing this value in Admin.
 
 ```bash
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
-You can use the `--lock-env` option to set configuration values if Magento is not installed. However, you can set values only for the default scope.
+You can use the `--lock-env` option to set configuration values if Commerce is not installed. However, you can set values only for the default scope.
 
 >[!INFO]
 >
 >The `env.php` file is system specific. You should not transfer it to another system. You can use it to overwrite configuration values from the database. For example, you can take a database dump from another system and overwrite the `base_url` and other values so you do not have to modify the database.
 
-If you use the `--lock-config` option as follows, the configuration value is saved in `<Magento base dir>/app/etc/config.php`. The field for editing this value in Admin page is disabled.
+If you use the `--lock-config` option as follows, the configuration value is saved in `<Commerce base dir>/app/etc/config.php`. The field for editing this value in Admin page is disabled.
 
 ```bash
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
-You can use `--lock-config` to set configuration values if Magento is not installed. However, you can set values only for the default scope.
+You can use `--lock-config` to set configuration values if Commerce is not installed. However, you can set values only for the default scope.
 
 >[!INFO]
 >

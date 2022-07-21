@@ -28,7 +28,7 @@ bin/magento setup:di:compile
 Generated code and dependency injection configuration successfully.
 ```
 
-To compile code before installing the Magento application:
+To compile code before installing the Commerce application:
 
 In some cases, you might want to compile code before you install the Commerce application.
 

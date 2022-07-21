@@ -6,11 +6,11 @@ b2b_only: true
 
 # B2B Extension configuration paths reference
 
-This topic lists configuration paths for Magento Enterprise B2B Extension. The [`magento app:config:dump` command](../cli/export-configuration.md) writes these values to the shared configuration file, `app/etc/config.php`, which should be in source control.
+This topic lists configuration paths for Commerce Enterprise B2B Extension. The [`magento app:config:dump` command](../cli/export-configuration.md) writes these values to the shared configuration file, `app/etc/config.php`, which should be in source control.
 
 >[!INFO]
 >
->This reference lists _only_ configuration paths unique to Magento Enterprise B2B Extension. Magento Enterprise B2B Extension includes all configuration paths for Magento Open Source and Adobe Commerce as well.
+>This reference lists _only_ configuration paths unique to Commerce Enterprise B2B Extension. Commerce Enterprise B2B Extension includes all configuration paths for Magento Open Source and Adobe Commerce.
 
 For those configuration paths, see:
 

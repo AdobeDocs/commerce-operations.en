@@ -107,7 +107,7 @@ Indexers are scoped and multi-threaded to support reindexing in parallel mode. I
 
 In this context, `dimension` is the scope of the reindexing, for instance a `website` or just a specific `customer_group`.
 
-Index parallelization affects scoped indexers only, which means Magento splits the data into multiple tables using the indexer as its scope instead of keeping all data in one table.
+Index parallelization affects scoped indexers only, which means Commerce splits the data into multiple tables using the indexer as its scope instead of keeping all data in one table.
 
 You can run the following indexes in parallel mode:
 
@@ -175,7 +175,7 @@ Catalog Search indexer has been invalidated.
 Use this command to set the following indexer options:
 
 -  **Update on save (`realtime`)**: Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
--  **Update by schedule (`schedule`)**: Data is indexed according to the schedule set by your Magento cron job.
+-  **Update by schedule (`schedule`)**: Data is indexed according to the schedule set by your cron job.
 
 [Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/).
 

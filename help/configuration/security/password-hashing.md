@@ -5,7 +5,7 @@ description: Read about password hashing strategies and implementation.
 
 # Password hashing
 
-Currently Magento uses its own strategy for password hashing, based on different native PHP hashing algorithms. Magento supports multiple algorithms like `MD5`, `SHA256`, or `Argon 2ID13`. If the Sodium extension is installed (installed by default in PHP 7.3), then `Argon 2ID13` is chosen as the default hashing algorithm. Otherwise, `SHA256` is the default. Magento can use the native PHP `password_hash` function with Argon 2i algorithm support.
+Currently, Commerce uses its own strategy for password hashing, based on different native PHP hashing algorithms. Commerce supports multiple algorithms like `MD5`, `SHA256`, or `Argon 2ID13`. If the Sodium extension is installed (installed by default in PHP 7.3), then `Argon 2ID13` is chosen as the default hashing algorithm. Otherwise, `SHA256` is the default. Commerce can use the native PHP `password_hash` function with Argon 2i algorithm support.
 
 To avoid compromising older passwords that have been hashed with outdated algorithms like `MD5`, the current implementation provides a method to upgrade the hash without changing the original password. In general, the password hash has the following format:
 
@@ -27,7 +27,7 @@ Consider what the hash upgrade mechanism looks like. Assume that originally, a p
 
 ![Hash upgrade workflow](../../assets/configuration/hash-upgrade-algorithm.png)
 
-Each hash algorithm uses the previous password hash to generate a new hash. Magento does not store the original, raw password.
+Each hash algorithm uses the previous password hash to generate a new hash. Commerce does not store the original, raw password.
 
 ![Hash upgrade strategy](../../assets/configuration/hash-upgrade-strategy.png)
 
@@ -50,7 +50,7 @@ def verify(password, hash):
     return compare(restored, hash)
 ```
 
-Since Magento stores all used password hashes versions together with the password hash, we can restore the whole hash chain during the password verification. The hash verification mechanism is similar to the hash upgrade strategy: based on versions stored together with the password hash, the algorithm generates hashes from the provided password and returns the comparison result between hashed password and the database-stored hash.
+Since Commerce stores all used password hashes versions together with the password hash, we can restore the whole hash chain during the password verification. The hash verification mechanism is similar to the hash upgrade strategy: based on versions stored together with the password hash, the algorithm generates hashes from the provided password and returns the comparison result between hashed password and the database-stored hash.
 
 ## Implementation
 

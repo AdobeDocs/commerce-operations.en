@@ -12,7 +12,7 @@ Commerce extends [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zen
 
 ## Low-level backend cache
 
-In general, the Magento application works with any backend cache that [Zend_Cache Backends](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) supports. However, this guide covers only the following low-level backend caches:
+In general, the Commerce application works with any backend cache that [Zend_Cache Backends](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) supports. However, this guide covers only the following low-level backend caches:
 
 - [Redis](config-redis.md)
 - [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)

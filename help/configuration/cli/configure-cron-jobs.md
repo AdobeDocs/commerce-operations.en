@@ -24,17 +24,17 @@ Several Commerce features require at least one cron job, which schedules activit
 
 >[!INFO]
 >
->Commerce depends on proper cron job configuration for many important system functions, including indexing. Failure to set it up properly means that Magento will not function as expected.
+>Commerce depends on proper cron job configuration for many important system functions, including indexing. Failure to set it up properly means that Commerce will not function as expected.
 
 UNIX systems schedule tasks to be performed by particular users using a _crontab_, which is a file that contains instructions to the cron daemon that tell the daemon in effect to "run this command at this time on this date". Each user has its own crontab, and commands in any given crontab are executed as the user who owns it.
 
 To run cron in a web browser, see [Secure cron.php to run in a browser](../security/secure-cron-php.md).
 
-## Create or remove the Magento crontab
+## Create or remove the Commerce crontab
 
-This section discusses how to create or remove your Magento crontab (that is, the configuration for Magento cron jobs).
+This section discusses how to create or remove your Commerce crontab (that is, the configuration for Commerce cron jobs).
 
-The Magento _crontab_ is the configuration used to run Magento cron jobs.
+The _crontab_ is the configuration used to run cron jobs.
 
 The Commerce application uses cron tasks that can run with different configurations. The PHP command-line configuration controls the general cron job that reindexes indexers, generates e-mails, generates the sitemap, and so on.
 
@@ -52,19 +52,19 @@ The Commerce crontab is inside `#~ MAGENTO START` and `#~ MAGENTO END` comments 
 To create the Commerce crontab:
 
 1. Log in as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Change to your Magento installation directory.
+1. Change to your Commerce installation directory.
 1. Enter the following command:
 
    ```bash
    bin/magento cron:install [--force]
    ```
 
-Use `--force` to rewrite an existing Magento crontab.
+Use `--force` to rewrite an existing crontab.
 
 >[!INFO]
 >
 >- `magento cron:install` does not rewrite an existing crontab inside `#~ MAGENTO START` and `#~ MAGENTO END` comments in your crontab.
->- `magento cron:install --force` has no effect on any cron jobs outside the Magento comments.
+>- `magento cron:install --force` has no effect on any cron jobs outside the Commerce comments.
 
 To view the crontab, enter the following command as the file system owner:
 
@@ -82,18 +82,18 @@ A sample follows:
 
 >[!INFO]
 >
->The `update/cron.php` file has been removed in Magento 2.4.0, if this file exists on your installation, it can be safely removed.
+>The `update/cron.php` file has been removed in Commerce 2.4.0, if this file exists on your installation, it can be safely removed.
 >
 >Any reference to `update/cron.php` and `bin/magento setup:cron:run` should also be removed from the crontab'
 
-### Remove the Magento crontab
+### Remove the Commerce crontab
 
-You should remove the Magento crontab only before uninstalling the Magento application.
+You should remove the Commerce crontab only before uninstalling the Commerce application.
 
-To remove the Magento crontab:
+To remove the Commerce crontab:
 
 1. Log in as or switch to the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Change to the Magento installation directory.
+1. Change to the Commerce installation directory.
 1. Enter the following command:
 
    ```bash
@@ -148,7 +148,7 @@ In addition to being logged in `cron.log`:
 
 >[!INFO]
 >
->All cron data is also written to the `cron_schedule` table in the Magento database. The table provides a history of cron jobs, including:
+>All cron data is also written to the `cron_schedule` table in the Commerce database. The table provides a history of cron jobs, including:
 >
 >- Job ID and code
 >- Status
@@ -157,4 +157,4 @@ In addition to being logged in `cron.log`:
 >- Executed date
 >- Finished date
 >
->To see records in the table, log in to the Magento database on the command line and enter `SELECT * from cron_schedule;`.
+>To see records in the table, log in to the Commerce database on the command line and enter `SELECT * from cron_schedule;`.

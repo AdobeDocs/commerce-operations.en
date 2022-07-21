@@ -9,11 +9,11 @@ Memcached is a general-purpose, distributed memory caching system. It is often u
 
 Memcached provides a large hash table that can be distributed across multiple machines. When the table is full, subsequent inserts cause older data to be purged in least recently used (LRU) order. The size of this hash table is often very large. (Source: [memcached.org](http://memcached.org/))
 
-Magento uses memcached for session storage but not for page caching. For page caching, we recommend [Redis](../cache/redis-pg-cache.md) or [Varnish](../cache/config-varnish.md).
+Commerce uses memcached for session storage but not for page caching. For page caching, we recommend [Redis](../cache/redis-pg-cache.md) or [Varnish](../cache/config-varnish.md).
 
 **To configure Commerce to use memcached**:
 
-1. Open `<your Magento install dir>/app/etc/env.php` in a text editor.
+1. Open `<your install dir>/app/etc/env.php` in a text editor.
 1. Locate the following:
 
    ```php
@@ -39,7 +39,7 @@ Magento uses memcached for session storage but not for page caching. For page ca
 
 **To verify memcached works with Magento**:
 
-1. Delete the contents of the following directories under your Magento installation directory:
+1. Delete the contents of the following directories under your Commerce installation directory:
 
    ```bash
    rm -rf var/cache/* var/page_cache/* var/session/*

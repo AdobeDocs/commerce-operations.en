@@ -9,18 +9,18 @@ description: Manage cache types and view cache status.
 
 ## Cache types
 
-Magento 2 has the following cache types:
+Commerce 2 has the following cache types:
 
 |Cache type "friendly" name|Cache type code name|Description|
 |--- |--- |--- |
-|Configuration|config|Magento collects configuration from all modules, merges it, and saves the merged result to the cache. This cache also contains store-specific settings stored in the file system and database. Clean or flush this cache type after modifying configuration files.|
+|Configuration|config|Commerce collects configuration from all modules, merges it, and saves the merged result to the cache. This cache also contains store-specific settings stored in the file system and database. Clean or flush this cache type after modifying configuration files.|
 |Layout|layout|Compiled page layouts (that is, the layout components from all components). Clean or flush this cache type after modifying layout files.|
 |Block HTML output|block_html|HTML page fragments per block. Clean or flush this cache type after modifying the view layer.|
-|Collections data|collections|Results of database queries. If necessary, Magento cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type if your custom module uses logic that results in cache entries that Magento cannot clean.|
-|DDL|db_ddl|Database schema. If necessary, Magento cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type after you make custom changes to the database schema. (In other words, updates that Magento does not make itself.) One way to update the database schema automatically is using the `magento setup:db-schema:upgrade` command.|
+|Collections data|collections|Results of database queries. If necessary, Commerce cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type if your custom module uses logic that results in cache entries that Commerce cannot clean.|
+|DDL|db_ddl|Database schema. If necessary, Commerce cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type after you make custom changes to the database schema. (In other words, updates that Commerce does not make itself.) One way to update the database schema automatically is using the `magento setup:db-schema:upgrade` command.|
 |Compiled Config|compiled_config|Compilation configuration|
 |Entity attribute value (EAV)|eav|Metadata related to EAV attributes (for example, store labels, links to related PHP code, attribute rendering, search settings, and so on). You should not typically need to clean or flush this cache type.|
-|Page cache|full_page|Generated HTML pages. If necessary, Magento cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type after modifying code level that affects HTML output. It is recommended to keep this cache enabled because caching HTML improves performance significantly.|
+|Page cache|full_page|Generated HTML pages. If necessary, Commerce cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type after modifying code level that affects HTML output. It is recommended to keep this cache enabled because caching HTML improves performance significantly.|
 |Reflection|reflection|Removes a dependency between the Webapi module and the Customer module.|
 |Translations|translate|After merging translations from all modules, the merger cache will be cleaned.|
 |Integration configuration|config_integration|Compiled integrations. Clean or flush this cache after changing or adding integrations.|
@@ -36,7 +36,7 @@ To view the status of the cache, enter
    bin/magento cache:status
 ```
 
-<!-- where `--bootstrap=` is a URL-encoded associative array of Magento [application bootstrap parameters](../bootstrap/set-parameters.md) and values. -->
+<!-- where `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md) and values. -->
 
 A sample follows:
 
@@ -65,7 +65,7 @@ This command enables you to enable or disable all cache types or only the ones y
 
 >[!INFO]
 >
->Starting in version 2.2, you can only enable or disable cache types using the command line while running Magento in production mode. If running Magento in developer mode, you can enable or disable cache types using the command line or manually. Before doing so, you must manually make `<magento_root>/app/etc/env.php` writeable by the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>Starting in version 2.2, you can only enable or disable cache types using the command line while running Commerce in production mode. If running Commerce in developer mode, you can enable or disable cache types using the command line or manually. Before doing so, you must manually make `<magento_root>/app/etc/env.php` writeable by the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
 
 You can clean (also referred to as _flush_ or _refresh_) cache types using either the command line or the Admin.
 
@@ -81,7 +81,7 @@ bin/magento cache:disable [type] ... [type]
 
 Where omitting `[type]` enables or disables all cache types at the same time. The `type` option is a space-separated list of cache types.
 
-<!-- `--bootstrap=` is a URL-encoded associative array of Magento [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
+<!-- `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
 To list cache types and their status:
 
@@ -109,13 +109,13 @@ Sample result:
 
 >[!INFO]
 >
->As of version 2.3.4, Magento caches all system EAV attributes as they are retrieved. Caching EAV attributes in this manner improves performance, because it decreases the amount of insert/select requests to the DB. However, it increases cache network size as well. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in [Developer mode](../bootstrap/application-modes.md) by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**.
+>As of version 2.3.4, Commerce caches all system EAV attributes as they are retrieved. Caching EAV attributes in this manner improves performance, because it decreases the amount of insert/select requests to the DB. However, it increases cache network size as well. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in [Developer mode](../bootstrap/application-modes.md) by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**.
 
 ## Clean and flush cache types
 
 To purge out-of-date items from the cache, you can _clean_ or _flush_ cache types:
 
--  Cleaning a cache type deletes all items from enabled Magento cache types only. In other words, this option does not affect other processes or applications because it cleans only the cache that Magento uses.
+-  Cleaning a cache type deletes all items from enabled Commerce cache types only. In other words, this option does not affect other processes or applications because it cleans only the cache that Commerce uses.
 
    Disabled cache types are not cleaned.
 

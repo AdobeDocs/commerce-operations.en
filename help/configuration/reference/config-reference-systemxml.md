@@ -7,7 +7,7 @@ contributor_link: https://github.com/DavidLambauer
 
 # system.xml reference
 
-The `system.xml` file allows you to manage the Magento system configuration. Use this topic as a general reference for the `system.xml` file. The `system.xml` file is located under `etc/adminhtml/system.xml` in a given Magento 2 extension.
+The `system.xml` file allows you to manage the Commerce system configuration. Use this topic as a general reference for the `system.xml` file. The `system.xml` file is located under `etc/adminhtml/system.xml` in a given Commerce 2 extension.
 
 The following code snippet shows the bare skeleton of the file:
 
@@ -26,7 +26,7 @@ The following code snippet shows the bare skeleton of the file:
 
 ## Tabs // Sections // Groups // Fields
 
-In the `system.xml` file, it is possible to define four different types of entities, which are related to each other. The following section describes the relationship between tabs, sections, groups, and fields. The following screenshot displays the Magento 2 System Configuration in the Admin backend.
+In the `system.xml` file, it is possible to define four different types of entities, which are related to each other. The following section describes the relationship between tabs, sections, groups, and fields. The following screenshot displays the Commerce 2 System Configuration in the Admin backend.
 The red squares mark the different types that are defined in the `system.xml` file:
 
 ![Screenshot displaying a configured section in the Admin.](../../assets/configuration/magento2-system-configuration.png)
@@ -349,7 +349,7 @@ The field with the identifier `A_UNIQUE_FIELD_ID` defines a different source mod
 
 ### Common source models
 
-The following source models are provided by the Magento 2 Core. In general, there are many more source models; the following list describes the most common ones. Be aware, that these source models need the field attribute `type` to be set to `select` in order to work properly.
+The following source models are provided by the Commerce 2 Core. In general, there are many more source models; the following list describes the most common ones. Be aware, that these source models need the field attribute `type` to be set to `select` in order to work properly.
 
 | Source Model                                              | Description                                                                                                |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------|

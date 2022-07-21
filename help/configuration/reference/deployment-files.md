@@ -21,7 +21,7 @@ Together, `config.php` and `env.php` are referred to as the Commerce _deployment
 
 >[!INFO]
 >
->The [!DNL Magento 2] deployment configuration replaces `local.xml` in [!DNL Magento 1.x].
+>The [!DNL Commerce 2] deployment configuration replaces `local.xml` in [!DNL Magento 1.x].
 
 Unlike other [module configuration files](../reference/module-files.md), Commerce deployment configuration is loaded into memory when during initialization, is not merged with any other files, and cannot be extended. (`config.php` and `env.php` are merged with each other, however.)
 
@@ -72,6 +72,6 @@ return array (
 
 The value `1` or `0` indicates whether a module is enabled or disabled.
 
-Disabled modules are not recognized by the Magento application; in other words, they do not participate in merging configuration, in dependency injection, events, plug-ins, and so on. Disabled modules do not modify the [storefront](https://glossary.magento.com/storefront) or [Admin](https://glossary.magento.com/admin) and do not affect routing.
+Disabled modules are not recognized by the Commerce application; in other words, they do not participate in merging configuration, in dependency injection, events, plug-ins, and so on. Disabled modules do not modify the [storefront](https://glossary.magento.com/storefront) or [Admin](https://glossary.magento.com/admin) and do not affect routing.
 
 The only practical difference of a disabled module and an absent module in the code base is that a disabled module is found by the autoloader, and its classes and constants are available for reuse in other code.

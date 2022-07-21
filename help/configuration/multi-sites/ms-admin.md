@@ -5,7 +5,7 @@ description: Configure additional websites, stores, and store views in the Comme
 
 # Set up multiple views in the Admin
 
-This task requires you to create a root category (and additional categories, if desired) for each store. The tasks discussed in this topic provide one way to set up multiple stores. For additional information, see the following resources in the Magento User Guide:
+This task requires you to create a root category (and additional categories, if desired) for each store. The tasks discussed in this topic provide one way to set up multiple stores. For additional information, see the following resources in the Commerce User Guide:
 
 - [Categories](https://docs.magento.com/user-guide/catalog/categories.html)
 - [Adding Websites](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
@@ -121,11 +121,11 @@ To change the website base URL:
 
 ## Step 6: Add the store code to the base URL
 
-Magento gives you the option to add the store code to the site base URL, which simplifies the process of setting up multiple stores. Using this option, you do not have to create directories on the Magento file system to store `index.php` and `.htaccess`.
+Commerce gives you the option to add the store code to the site base URL, which simplifies the process of setting up multiple stores. Using this option, you do not have to create directories on the Commerce file system to store `index.php` and `.htaccess`.
 
-This prevents `index.php` and `.htaccess` from getting out of sync with the Magento codebase in future upgrades.
+This prevents `index.php` and `.htaccess` from getting out of sync with the Commerce codebase in future upgrades.
 
-For more information, see the [Magento User Guide](https://docs.magento.com/user-guide/stores/store-urls.html).
+See the [Commerce User Guide](https://docs.magento.com/user-guide/stores/store-urls.html).
 
 To add the store code to the base URL:
 
@@ -141,7 +141,7 @@ To add the store code to the base URL:
    ![Add the store code to the store base URL](../../assets/configuration/multi-site-add-store-url.png)
 
 1. Click **Save Config**.
-1. If prompted, flush the Magento cache. (**System** > **Cache Management**).
+1. If prompted, flush the cache. (**System** > **Cache Management**).
 
 ## Step 7: Change the default store view base URL
 

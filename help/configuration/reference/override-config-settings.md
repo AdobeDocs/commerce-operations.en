@@ -56,7 +56,7 @@ The general format of system settings variable names follows:
    For more information about scopes, see:
 
   - [Step 1: Find the website or store view scope value](#step-1-find-the-website-or-store-view-scope-value)
-  - [Magento User Guide topic on scope](https://docs.magento.com/user-guide/configuration/scope.html)
+  - [Commerce User Guide topic on scope](https://docs.magento.com/user-guide/configuration/scope.html)
   - [Scope quick reference](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
 
 `<SYSTEM__VARIABLE__NAME>` is the configuration path with double underscore characters substituted for `/`. For more information, see [Step 2: Set system variables](#step-2-set-global-website-or-store-view-variables).
@@ -73,7 +73,7 @@ A complete list of configuration paths can be found in:
 
 - [Sensitive and system-specific configuration paths reference](config-reference-sens.md)
 - [Payment configuration paths reference](config-reference-payment.md)
-- [Magento Enterprise B2B Extension configuration paths reference](config-reference-b2b.md)
+- [Commerce Enterprise B2B Extension configuration paths reference](config-reference-b2b.md)
 - [Other configuration paths reference](config-reference-general.md)
 
 ## Step 1: Find the website or store view scope value
@@ -99,7 +99,7 @@ How to read the table:
 
   - The entire variable name is always ALL CAPS
   - Start a variable name with `CONFIG__` (note two underscore characters)
-  - You can find the `<STORE_VIEW_CODE>` or `<WEBSITE_CODE>` portion of a variable name in either the Admin or the Magento database, as indicated in the following sections.
+  - You can find the `<STORE_VIEW_CODE>` or `<WEBSITE_CODE>` portion of a variable name in either the Admin or the Commerce database, as indicated in the following sections.
   - You can find `<SYSTEM__VARIABLE__NAME>` as discussed in [Step 2: Set global, website, or store view variables](#step-2-set-global-website-or-store-view-variables).
 
 ### Find a website or store view scope in the Admin
@@ -132,13 +132,13 @@ To get these values from the database:
 1. Enter the following command:
 
    ```bash
-   mysql -u <magento database username> -p
+   mysql -u <database-username> -p
    ```
 
 1. At the `mysql>` prompt, enter the following commands in the order shown:
 
    ```shell
-   use <magento database name>;
+   use <database-name>;
    ```
 
 1. Use the following SQL queries to find the relevant values:

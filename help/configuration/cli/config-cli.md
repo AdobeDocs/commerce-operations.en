@@ -30,7 +30,7 @@ Before you begin using the CLI, make sure that:
 
 1. Your system meets the requirements discussed in [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the _Installation guide_.
 1. You completed all prerequisite tasks discussed in [Prerequisites](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) in the _Installation guide_.
-1. After you log in to the Magento server, switch to a user that has permissions to write to the Magento file system. See [switch to the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) in the _Installation guide_.
+1. After you log in to the Commerce server, switch to a user that has permissions to write to the Commerce file system. See [switch to the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) in the _Installation guide_.
 
 ## Running commands
 
@@ -46,7 +46,7 @@ If the file system owner does not allow logins, you can use the following:
 sudo -u <file system owner> <command>
 ```
 
-**To run Magento CLI commands from any directory**:
+**To run CLI commands from any directory**:
 
 Add `<magento_root>/bin` to your system `PATH`.
 

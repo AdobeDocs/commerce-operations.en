@@ -5,15 +5,15 @@ description: Configure advanced Varnish features, including health check, grace 
 
 # Advanced Varnish configuration
 
-Varnish provides several features that prevent customers from experiencing long delays and timeouts when the Magento server is not functioning properly. These features can be configured in the `default.vcl` file. This topic describes the additions that Magento provides in the VCL (Varnish Configuration Language) file you download from Admin.
+Varnish provides several features that prevent customers from experiencing long delays and timeouts when the Commerce server is not functioning properly. These features can be configured in the `default.vcl` file. This topic describes the additions that Commerce provides in the VCL (Varnish Configuration Language) file you download from Admin.
 
 See the [Varnish Reference Manual](https://varnish-cache.org/docs/6.3/reference/index.html) for details about using the Varnish Configuration Language.
 
 ## Health check
 
-The Varnish health check feature polls the Magento server to determine whether it is responding in a timely manner. If it is responding normally, fresh content will be regenerated after the Time to Live (TTL) period has expired. If not, Varnish always serves stale content.
+The Varnish health check feature polls the Commerce server to determine whether it is responding in a timely manner. If it is responding normally, fresh content will be regenerated after the Time to Live (TTL) period has expired. If not, Varnish always serves stale content.
 
-Magento defines the following default health check:
+Commerce defines the following default health check:
 
 ```conf
 .probe = {
@@ -27,7 +27,7 @@ Magento defines the following default health check:
 
 Every 5 seconds, this health check calls the `pub/health_check.php` script. This script checks the availability of the server, each database, and Redis (if installed). The script must return a response within 2 seconds. If the script determines that any of these resources are down, it returns a 500 HTTP error code. If this error code is received in 6 out of 10 attempts, the [backend](https://glossary.magento.com/backend) is considered unhealthy.
 
-The `health_check.php` script is located in the `pub` directory. If your Magento root directory is `pub`, then be sure to change the path in the `url` parameter from `/pub/health_check.php` to `health_check.php`.
+The `health_check.php` script is located in the `pub` directory. If your Commerce root directory is `pub`, then be sure to change the path in the `url` parameter from `/pub/health_check.php` to `health_check.php`.
 
 For more information, see the [Varnish health checks](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentation.
 
@@ -35,14 +35,14 @@ For more information, see the [Varnish health checks](https://varnish-cache.org/
 
 Grace mode enables Varnish to keep an object in [cache](https://glossary.magento.com/cache) beyond its TTL value. Varnish can then serve the expired (stale) content while it fetches a new version. This improves the flow of traffic and decreases load times. It is used in the following situations:
 
-- When the Magento backend is healthy, but a request is taking longer than normal
-- When the Magento backend is not healthy.
+- When the Commerce backend is healthy, but a request is taking longer than normal
+- When the Commerce backend is not healthy.
 
 The `vcl_hit` subroutine defines how Varnish responds to a request for objects that have been cached.
 
-### When the Magento backend is healthy
+### When the Commerce backend is healthy
 
-When the health checks determine that the Magento backend is healthy, Varnish checks whether time remains in the grace period. The default grace period is 300 seconds, but a merchant can set the value from [Admin](https://glossary.magento.com/admin) as described in [Configure Commerce to use Varnish](config-varnish-magento.md). If the grace period has not expired, Varnish delivers the stale content, and asynchronously refreshes the object from the Magento server. If the grace period has expired, Varnish serves the stale content and synchronously refreshes the object from the Magento backend.
+When the health checks determine that the Commerce backend is healthy, Varnish checks whether time remains in the grace period. The default grace period is 300 seconds, but a merchant can set the value from [Admin](https://glossary.magento.com/admin) as described in [Configure Commerce to use Varnish](config-varnish-magento.md). If the grace period has not expired, Varnish delivers the stale content, and asynchronously refreshes the object from the Commerce server. If the grace period has expired, Varnish serves the stale content and synchronously refreshes the object from the Commerce backend.
 
 The maximum amount of time that Varnish serves a stale object is the sum of the grace period (300 seconds by default) and the TTL value (86400 seconds by default).
 
@@ -52,25 +52,25 @@ To change the default grace period from within the `default.vcl` file, edit the 
 if (obj.ttl + 300s > 0s) {
 ```
 
-### When the Magento backend is not healthy
+### When the Commerce backend is not healthy
 
-If the Magento backend is not responsive, Varnish serves stale content from cache for three days (or as defined in `beresp.grace`) plus the remaining TTL (which by default is one day), unless the cached content is manually purged.
+If the Commerce backend is not responsive, Varnish serves stale content from cache for three days (or as defined in `beresp.grace`) plus the remaining TTL (which by default is one day), unless the cached content is manually purged.
 
 ## Saint mode
 
 Saint mode blacklists unhealthy backends for a configurable amount of time. As a result, unhealthy backends cannot serve traffic when using Varnish as a load balancer. Saint mode can be used with grace mode to allow for complex handling of unhealthy backend servers. For example, if one backend server is unhealthy, retries can be routed to another server. If all other servers are down, then serve stale cached objects. The saint mode backend hosts and blackout periods are defined in the `default.vcl` file.
 
-Saint mode can also be used when Magento instances are individually taken offline to perform maintenance and upgrade tasks without affecting the availability of the Magento site.
+Saint mode can also be used when Commerce instances are individually taken offline to perform maintenance and upgrade tasks without affecting the availability of the Commerce site.
 
 ### Saint mode prerequisites
 
 Designate one machine as the primary installation. On this machine, install the main instance of Magento, mySQL database, and Varnish.
 
-On all other machines, the Magento instance must have access the primary machine's mySQL database. The secondary machines should also have access to the files of the primary Magento instance.
+On all other machines, the Commerce instance must have access the primary machine's mySQL database. The secondary machines should also have access to the files of the primary Commerce instance.
 
 Alternatively, [static files](https://glossary.magento.com/static-files) versioning can be turned off on all machines. This can be accessed from the Admin under **Stores** > Settings > **Configuration** > **Advanced** > **Developer** > **Static Files Settings** > **Sign Static Files** = **No**.
 
-Finally, all Magento instances must be in production mode. Before Varnish starts, clear the cache on each instance. In Admin, go to **System** > Tools > **Cache Management** and click **Flush Magento Cache**. You can also run the following command to clear the cache:
+Finally, all Commerce instances must be in production mode. Before Varnish starts, clear the cache on each instance. In Admin, go to **System** > Tools > **Cache Management** and click **Flush Magento Cache**. You can also run the following command to clear the cache:
 
 ```bash
 bin/magento cache:flush

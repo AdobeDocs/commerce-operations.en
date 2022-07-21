@@ -5,7 +5,7 @@ description: Export Adobe Commerce configuration settings to configuration files
 
 # Export configuration settings
 
-In Magento 2.2 and later [pipeline deployment model](../deployment/technical-details.md), you can maintain a consistent configuration across systems. After you configure settings in the Admin on your development system, export those settings to configuration files using the following command:
+In Commerce 2.2 and later [pipeline deployment model](../deployment/technical-details.md), you can maintain a consistent configuration across systems. After you configure settings in the Admin on your development system, export those settings to configuration files using the following command:
 
 ```bash
 bin/magento app:config:dump {config-types}
@@ -23,7 +23,7 @@ As a result of the command execution, the following configuration files are upda
 
 - `app/etc/config.php`
 
-  This is the shared configuration file for all your Magento instances.
+  This is the shared configuration file for all your Commerce instances.
   Include this in your source control so it can be shared between the development, build, and production systems.
 
   See [config.php reference](../reference/config-reference-configphp.md).

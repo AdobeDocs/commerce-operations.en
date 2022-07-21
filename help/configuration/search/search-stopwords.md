@@ -28,7 +28,7 @@ The default lifetime for stopwords file [cache](https://glossary.magento.com/cac
 
 **To edit stopwords**:
 
-1. Log in to your Magento server, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 1. Use a text editor to open a stopword file in the `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
    CSV files use the naming convention `stopwords_<locale_code>.csv`. For example, the German stopword file is named `stopwords_de_DE.csv`.
@@ -38,14 +38,14 @@ The default lifetime for stopwords file [cache](https://glossary.magento.com/cac
    (Each stopword in a file starts on a new line.)
 
 1. Save your changes and exit the text editor.
-1. Clean the Magento configuration cache.
+1. Clean the configuration cache.
 
    - Admin: **System** > Tools > **Cache Management**. Select the **Configuration** checkbox and, from the list above it, click **Refresh**. Click **Submit** to complete the action.
 
    - Command line: As the file system owner, enter the following command:
 
       ```bash
-      php <magento_root>/bin/magento magento cache:clean config
+      php <magento_root>/bin/magento cache:clean config
       ```
 
 1. Check the results by searching for terms on your [storefront](https://glossary.magento.com/storefront).
@@ -54,7 +54,7 @@ The default lifetime for stopwords file [cache](https://glossary.magento.com/cac
 
 **To add stopwords for a locale**:
 
-1. Log in to your Magento server, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 
 1. Use a text editor to create a stopword file named `stopwords_<locale_code>.csv` in the `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
@@ -76,7 +76,7 @@ The default lifetime for stopwords file [cache](https://glossary.magento.com/cac
    ```
 
 1. Save the changes to `esconfig.xml` and exit the text editor.
-1. Clean the Magento configuration cache.
+1. Clean the configuration cache.
 
    - Admin: **System** > Tools > **Cache Management**. Select the **Configuration** checkbox and, from the list above it, click **Refresh**. Click **Submit** to complete the action.
 
@@ -95,7 +95,7 @@ This section discusses how to optionally change the default stopword directory f
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-The location depends on how you installed the Magento software. If you cloned the Magento 2 GitHub repository, the path is under `app/code`. If you installed a compressed archive or a metapackage, the path is under `vendor`.
+The location depends on how you installed the Commerce software. If you cloned the Magento 2 GitHub repository, the path is under `app/code`. If you installed a compressed archive or a metapackage, the path is under `vendor`.
 
 **To change the directory**:
 
