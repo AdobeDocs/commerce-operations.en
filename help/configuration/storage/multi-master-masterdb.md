@@ -66,7 +66,7 @@ Create checkout and OMS master databases as follows:
    exit
    ```
 
-   Order management database:
+   Order management system database:
 
    ```bash
    mysql -u magento_sales -p

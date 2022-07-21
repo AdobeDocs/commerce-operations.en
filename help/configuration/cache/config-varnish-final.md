@@ -1,17 +1,17 @@
 ---
 title: Final verification
-description: Verify your Varnish configuration is set up properly to work with the Adobe Commerce application.
+description: Verify that your Varnish configuration is set up properly to work with the Adobe Commerce application.
 ---
 
 # Final verification of Varnish configuration
 
-Now that you are using the `default.vcl` generated for you by Magento, you can perform some final verifications to make sure Varnish is working.
+Now that you are using the `default.vcl` generated for you by Commerce, you can perform some final verifications to make sure that Varnish is working.
 
 ## Verify HTTP response headers
 
 Use `curl` or another utility to view HTTP response headers when you visit any Commerce page in a web browser.
 
-First, make sure you are using Magento's [developer mode](../cli/set-mode.md#change-to-developer-mode); otherwise, you will not see the headers.
+First, make sure you are using [developer mode](../cli/set-mode.md#change-to-developer-mode); otherwise, you will not see the headers.
 
 For example,
 
@@ -33,7 +33,7 @@ X-Magento-Cache-Debug: MISS
 
 ## Check page load times
 
-If Varnish is working, any Commerce page with cacheable blocks should load in less than 150ms. Examples of such pages are the front door and [storefront](https://glossary.magento.com/storefront) [category](https://glossary.magento.com/category) pages.
+If Varnish is working, any Commerce page with cacheable blocks should load in less than 150 ms. Examples of such pages are the front door and [storefront](https://glossary.magento.com/storefront) [category](https://glossary.magento.com/category) pages.
 
 Use a browser inspector to measure page load times.
 

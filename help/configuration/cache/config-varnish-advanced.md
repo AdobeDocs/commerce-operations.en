@@ -64,7 +64,7 @@ Saint mode can also be used when Commerce instances are individually taken offli
 
 ### Saint mode prerequisites
 
-Designate one machine as the primary installation. On this machine, install the main instance of Magento, mySQL database, and Varnish.
+Designate one machine as the primary installation. On this machine, install the main instance of Commerce, mySQL database, and Varnish.
 
 On all other machines, the Commerce instance must have access the primary machine's mySQL database. The secondary machines should also have access to the files of the primary Commerce instance.
 

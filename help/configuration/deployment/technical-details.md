@@ -125,7 +125,7 @@ After running the commands to clear the assets, Commerce generates working files
 
 ### Build system
 
-The build system compiles code and generates static view files for themes registered in Magento. It does not need a connection to the Commerce database; it needs only the Commerce codebase.
+The build system compiles code and generates static view files for themes registered in Commerce. It does not need a connection to the Commerce database; it needs only the Commerce codebase.
 
 On your build system:
 

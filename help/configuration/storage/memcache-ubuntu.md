@@ -58,7 +58,7 @@ The `memcache` extension currently _does not_ work with PHP 7. See [PHP document
 
 ## Verify memcached works before installing Magento
 
-Adobe recommends testing memcached to make sure it works before you install Magento. Doing so takes only a few minutes and can simplify troubleshooting later.
+Adobe recommends testing memcached to make sure it works before you install Commerce. Doing so takes only a few minutes and can simplify troubleshooting later.
 
 ### Verify memcached is recognized by the web server
 

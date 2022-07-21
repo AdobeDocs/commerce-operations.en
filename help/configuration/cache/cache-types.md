@@ -12,9 +12,9 @@ The Commerce application has a `default` cache frontend that you can use for any
 
 >[!INFO]
 >
->To use the `default` cache type, you do not need to modify `env.php` at all; you modify Magento's global `di.xml`. See [Low-level cache options](cache-options.md).
+>To use the `default` cache type, you do not need to modify `env.php` at all; you modify Commerce's global `di.xml`. See [Low-level cache options](cache-options.md).
 
-You must specify a custom cache frontend either `app/etc/env.php` or Magento's global `app/etc/di.xml`.
+You must specify a custom cache frontend either `app/etc/env.php` or Commerce's global `app/etc/di.xml`.
 
 The following example shows how to define it in the `env.php` file, which overrides the `di.xml` file:
 

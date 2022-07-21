@@ -7,7 +7,7 @@ description: See how to set up the owner or owners of the Commerce application f
 
 This section discusses how to set up the owner or owners of the Commerce file system for a development and production system. Before you continue, review the concepts discussed in [Overview of file system ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 
-This topic focuses on Commerce development and production systems. If you are installing Magento, see [Set pre-installation ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+This topic focuses on Commerce development and production systems. If you are installing Commerce, see [Set pre-installation ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
 
 The sections that follow discuss requirements for one or two file system owners. That means:
 

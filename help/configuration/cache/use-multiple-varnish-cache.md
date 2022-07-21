@@ -7,7 +7,7 @@ description: Learn how cache clearing works with multiple Varnish instances.
 
 Adobe Commerce and Magento Open Source supports multiple Varnish instances out of the box.
 
-This topic shows the basics of configuring multiple Varnish instances with Magento.
+This topic shows the basics of configuring multiple Varnish instances with Commerce.
 
 ## Configuration to purge multiple Varnish instances
 

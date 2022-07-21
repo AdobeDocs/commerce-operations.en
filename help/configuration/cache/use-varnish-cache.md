@@ -13,7 +13,7 @@ According to [Varnish documentation](https://www.varnish-cache.org/docs/trunk/us
 
 In fact, when you clean, flush, or refresh the Commerce cache, Varnish purges as well.
 
-After you have installed and configured Varnish to work with Magento, the following actions can result in a Varnish purge:
+After you have installed and configured Varnish to work with Commerce, the following actions can result in a Varnish purge:
 
 - Maintaining a [website](https://glossary.magento.com/website).
 

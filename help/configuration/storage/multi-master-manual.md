@@ -32,7 +32,7 @@ This topic uses the following naming conventions:
 
 - The sales database name is `magento_sales` and its username and password are both `magento_sales`
 
-   The sales database is also referred to as the order management system (_OMS_) database.
+   The sales database is also referred to as the OMS database.
 
 >[!INFO]
 >
@@ -465,7 +465,7 @@ Run the script as follows:
 
 ## Update your deployment configuration
 
-The final step in manually splitting databases is to add connection and resource information to Magento's deployment configuration, `env.php`.
+The final step in manually splitting databases is to add connection and resource information to Commerce's deployment configuration, `env.php`.
 
 To update the deployment configuration:
 

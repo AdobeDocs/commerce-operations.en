@@ -40,7 +40,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## Configure Redis page caching
 
-To configure Redis page caching on Magento, run the `setup:config:set` command with additional parameters.
+To configure Redis page caching on Commerce, run the `setup:config:set` command with additional parameters.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter_name>=<parameter_value>...
@@ -184,7 +184,7 @@ As of Commerce 2.3.5, it is recommended to use the extended Redis cache implemen
 ## Redis preload feature
 
 Since Commerce stores a lot of configuration data in the Redis cache, we can preload data that is reused between pages.
-To find keys that must be preloaded, you need to analyze data that is transferred from Redis to Magento. We suggest preloading data that is loaded on every page, common examples are `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+To find keys that must be preloaded, you need to analyze data that is transferred from Redis to Commerce. We suggest preloading data that is loaded on every page, common examples are `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 Redis uses the `pipeline` in order to composite load requests.
 Please note that keys should include the database prefix, for example, if database prefix is `061_`, preload key looks like `061_SYSTEM_DEFAULT`.
 

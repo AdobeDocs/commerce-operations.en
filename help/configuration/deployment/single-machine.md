@@ -13,7 +13,7 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
 >[!WARNING]
 >
->This guide does not apply if you used `git clone` to install Magento.
+>This guide does not apply if you used `git clone` to install Commerce.
 >Contributing developers should use [this guide][install] to update their Commerce installation.
 
 ## Deployment steps
@@ -47,7 +47,7 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
    **version**: The target version of the package you want to update.
 
-1. Update Magento's components with Composer:
+1. Update components with Composer:
 
    ```bash
    composer update

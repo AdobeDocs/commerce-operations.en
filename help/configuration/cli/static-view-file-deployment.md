@@ -79,7 +79,7 @@ Following are some example commands.
 
 ### Excluding a theme and HTML minification
 
-The following command deploys static content for the US English (`en_US`) language, excludes the Luma theme provided with Magento, and does not minify HTML files.
+The following command deploys static content for the US English (`en_US`) language, excludes the Luma theme provided with Commerce, and does not minify HTML files.
 
 ```bash
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify

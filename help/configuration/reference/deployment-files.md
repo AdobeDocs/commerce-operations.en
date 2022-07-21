@@ -5,7 +5,7 @@ description: Understand how the configuration files work for installing the Comm
 
 # Configuration files for deployment
 
-Adobe Commerce provides configuration files that enable you to easily customize a component and create configuration types to extend default functionality. The process of deployment configuration consists of the shared and system-specific configuration for your installation. Magento's deployment configuration is divided between [`app/etc/config.php`](../reference/config-reference-configphp.md) and [`app/etc/env.php`](../reference/config-reference-envphp.md).
+Adobe Commerce provides configuration files that enable you to easily customize a component and create configuration types to extend default functionality. The process of deployment configuration consists of the shared and system-specific configuration for your installation. Commerce's deployment configuration is divided between [`app/etc/config.php`](../reference/config-reference-configphp.md) and [`app/etc/env.php`](../reference/config-reference-envphp.md).
 
 - `app/etc/config.php` is the _shared_ configuration file.
   This file contains the list of installed modules, themes, and language packages; and shared configuration settings.

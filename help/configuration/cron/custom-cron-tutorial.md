@@ -220,7 +220,7 @@ To verify cron:
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       ```
 
-1. (Optional) Verify that messages are written to Magento's system log:
+1. (Optional) Verify that messages are written to Commerce's system log:
 
    ```bash
    cat /var/www/html/magento2/var/log/system.log
