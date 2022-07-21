@@ -43,7 +43,7 @@ The minimum requirements to use the [!DNL Upgrade Compatibility Tool] in a comma
 | Node.js | Node.js versions `^12.22.0`, `^14.17.0`, or `>=16.0.0` (see [Install Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
 | Memory limitations | At least 2GB RAM. |
 
-[!DNL Upgrade Compatibility Tool] requires [PCNTL](https://www.php.net/manual/en/book.pcntl.php) and other PHP extensions for the execution. Please check the required PHP extensions using `composer check-platform-reqs` command:
+[!DNL Upgrade Compatibility Tool] requires [PCNTL](https://www.php.net/manual/en/book.pcntl.php) and other PHP extensions for the execution. Check the required PHP extensions using `composer check-platform-reqs` command:
 
 ```bash
 # Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
