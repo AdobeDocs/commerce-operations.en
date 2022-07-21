@@ -11,16 +11,16 @@ This section offers not only a look at the tools, solutions, processes, and meth
 
 The following table includes solutions that we recommend and can be used within Adobe Commerce to drive performance on the platform:
 
-| Purpose                                  | Tool                    |
-|------------------------------------------|-------------------------|
-| Database                                 | MySQL, MariaDB, Percona |
-| Programming language                     | PHP, JS, HTML, LESS CSS |
-| Integrated development environment (IDE) | Eclipse, PHPStorm       |
-| Web server                               | Nginx, Apache           |
-| Caching services                         | Redis, Varnish          |
-| Search services                          | Elasticsearch           |
-| Message queue services                   | RabbitMQ                |
-| Security scan tool                       | SonarQube, ZAP          |
+| Purpose                                  | Tool                      |
+|------------------------------------------|---------------------------|
+| Database                                 | MySQL, MariaDB, Percona   |
+| Programming language                     | PHP, JS, HTML, LESS CSS   |
+| Integrated development environment (IDE) | Eclipse, PHPStorm         |
+| Web server                               | Nginx, Apache             |
+| Caching services                         | Redis, Varnish            |
+| Search services                          | Elasticsearch, OpenSearch |
+| Message queue services                   | RabbitMQ                  |
+| Security scan tool                       | SonarQube, ZAP            |
 
 ## Database
 
@@ -51,7 +51,7 @@ We highly recommend using Varnish as the full-page cache server for your store. 
 
 ## Search services
 
-For Adobe Commerce version 2.4 and later, all installations must be configured to use Elasticsearch as the catalog search solution. Elasticsearch provides quick and advanced searches on products in the catalog. Elasticsearch is optional for releases prior to 2.4, but it’s recommended.
+For Adobe Commerce version 2.4 and later, all installations must be configured to use Elasticsearch/OpenSearch as the catalog search solution. Elasticsearch provides quick and advanced searches on products in the catalog. Elasticsearch is optional for releases prior to 2.4, but it’s recommended.
 
 ## Message queue services
 
