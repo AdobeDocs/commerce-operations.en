@@ -1,10 +1,11 @@
 ---
 title: B2B Extension configuration paths reference
 description: See a list of B2B-related configuration values.
-b2b_only: true
 ---
 
 # B2B Extension configuration paths reference
+
+_This is available for Adobe Commerce B2B instances only._
 
 This topic lists configuration paths for Commerce Enterprise B2B Extension. The [`magento app:config:dump` command](../cli/export-configuration.md) writes these values to the shared configuration file, `app/etc/config.php`, which should be in source control.
 

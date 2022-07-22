@@ -6,6 +6,8 @@ ee_only: true
 
 # Revert from Split Database
 
+{{ee-only}}
+
 For Adobe Commerce customers who have implemented [Split Database](multi-master.md), the following topic describes how to revert or migrate back to a single database. We recommend that Adobe Commerce merchants currently using Split Database and plan to upgrade to 2.4.2 and later review these steps, as well as our [announcement](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) on the planned deprecation of Split Database.
 
 Reverting from a split database to a single database involves creating backups of the `magento_quote` and `magento_sales` databases before loading them into the single `magento_main` database.

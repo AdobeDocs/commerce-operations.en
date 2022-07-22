@@ -3,9 +3,9 @@ title: Run the support utilities
 description: Troubleshoot your Commerce project using the built-in support utility.
 ---
 
-<!-- ee_only: True -->
-
 # Run the support utilities
+
+{{ee-only}}
 
 {{file-system-owner}}
 

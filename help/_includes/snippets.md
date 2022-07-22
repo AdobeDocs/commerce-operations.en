@@ -20,6 +20,12 @@
 >
 >The `support:backup` command is _not_ the same code backup performed by the `setup:backup` command. The `support:backup` command is intended to back up code for examination by Adobe Commerce Support.
 
+## Adobe Commerce only {#ee-only}
+
+>[!NOTE]
+>
+>This feature is available for Adobe Commerce instances only.
+
 ## Split DB deprecated {#deprecate-split-db}
 
 >[!IMPORTANT]

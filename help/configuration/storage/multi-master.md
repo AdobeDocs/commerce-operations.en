@@ -8,7 +8,7 @@ ee_only: True
 
 {{deprecate-split-db}}
 
-_This feature is available for Adobe Commerce only._
+{{ee-only}}
 
 Adobe Commerce offers several scalability advantages, including the ability to use three separate master databases for different functional areas of the Commerce application.
 

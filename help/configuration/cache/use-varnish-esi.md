@@ -1,15 +1,11 @@
 ---
 title: Varnish ESI block
 description: Learn about Edge Side Includes and how you can use them to embed web pages.
+contributor_name: Goivvy LLC
+contributor_link: https://www.goivvy.com/magento-optimization-service
 ---
 
 # Varnish ESI block
-
->[!SUCCESS]
->
->contributor_name: Goivvy LLC
->
->contributor_link: https://www.goivvy.com/magento-optimization-service
 
 Edge Side Includes (ESI) are special directives that you can use to include web pages in other web pages.
 
