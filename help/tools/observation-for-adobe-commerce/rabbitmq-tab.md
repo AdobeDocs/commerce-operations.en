@@ -49,7 +49,7 @@ This frame shows RabbitMQ service start/stop signals that occurred during the se
 
 This frame shows RabbitMQ errors that occurred during the selected timeframe:
 
-* '%exit with reason {case_clause,timeout} and stacktrace [{rabbit_mgmt_wm_healthchecks%') as 'exit_timeout'
+* '%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%'} as 'exit_timeout'
 * '%client unexpectedly closed TCP connection%') as 'client_closed_tcp_conn'
 * '%at undefined exit with reason shutdown in context shutdown_error%') as 'undef_exit'
 * '%Connection attempt from disallowed node%') as 'disallowed_node'
