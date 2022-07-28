@@ -23,6 +23,8 @@ As we’ve mentioned, Adobe Commerce leverages a number of software solutions to
 
 - **Elasticsearch**—Search for Adobe Commerce version 2.2.x and later.
 
+- **OpenSearch**—Search for Adobe Commerce version 2.4.6 and later.
+
 - **Galera**—Database cluster with one MariaDB MySQL database per node with an auto-increment setting of three for unique IDs across every database.
 
 ## Features and benefits
