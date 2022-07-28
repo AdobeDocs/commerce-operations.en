@@ -33,7 +33,7 @@ Check environment resources states:
   * For any [!DNL Fastly] related issues, check the **[!UICONTROL Fastly Cache]** frame, and select the Error facet to see the percentage of requests that are errors. They may indicate a backend issue if they coincide with non-web load.
   * If the load does not appear to be due to web traffic, there may be errors or a build-up of non-web requests, such as slow queries or crons.
 
-* Check the **[!Database Errors]** frame for errors that may coincide with the issue/problem timeline. 
+* Check the **[!UICONTROL Database Errors]** frame for errors that may coincide with the issue/problem timeline. 
 * Check the **[!UICONTROL Database mysql-slow.log]** frame to identify SQL statements that are occurring. `INSERT`, `UPDATE`, and `DELETE` commands may take a while if the query is not optimized. Even `SELECT` statements can be very inefficient if done against large tables.
 * **[!UICONTROL PHP States and PHP Errors]** frames will show potential issues with PHP. The **[!UICONTROL PHP States]** frame will show PHP process terminations, starts, and when the service reaches the ready state by node. The **[!UICONTROL PHP Errors]** frame may help isolate where the issue is with PHP, such as memory size, workers, or the number of servers.
 * To see latency in transactions, the Transactions – Avg., Max, Min table can be sorted by column to show the longest-running transaction duration. An overloaded cluster will have latent durations in transactions, but it will also show anomalies that might pinpoint a problem with a method or cron.
