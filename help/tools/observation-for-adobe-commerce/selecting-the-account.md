@@ -18,4 +18,4 @@ When clicking on the [!UICONTROL Observation for Adobe Commerce] icon, the [!DNL
 
     ![Click on the dropdown menu](../../assets/tools/observation-for-adobe-commerce/start-using-3.jpg)
 
-1. You should set the time prior to the ticket date time to see if there were any preceding events/data. You can use the preset time frames on the left or set a custom time frame by selecting **Set custom**.
+1. You should set the time prior to the ticket date time to see if there were any preceding events/data. You can use the preset timeframes on the left or set a custom timeframe by selecting **Set custom**.
