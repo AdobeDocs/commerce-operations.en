@@ -136,6 +136,198 @@ This frame helps identify heavy traffic against the APIs and the IP addresses ma
 
 This frame provides details of heavy traffic against the APIs and details of the URLs making the requests.
 
+## [IUICONTROL IP Frequency Rate per minute]
+
+![ip frequency rate per minute](../../assets/tools/ip-frequency-rate-per-minute.jpg)
+
+Sometimes it is hard to tell which IP address has the most requests on the other frames. This one shows the rate per minute per IP address.
+
+## [!UICONTROL Potential Bots]
+
+![potential bots](../../assets/tools/potential-bots.jpg)
+
+This frame looks at requests with a `request_user_agent` name like NULL or ‘%bot%’. Typically, the ‘%bot%’ `request_user_agent` will follow the policy setup in `robots.txt` file.
+
+## [!UICONTROL Transaction Errors]
+
+![transaction errors](../../assets/tools/transaction-errors.jpg)
+
+This frame displays the count of TransactionError from [!DNS New Relic].
+
+## [!UICONTROL Nginx access by node]
+
+![nginx access by node](../../assets/tools/nginx-access-by-node.jpg)
+
+This frame looks at counts from the `access.log` by node. It is helpful to see if load is evenly distributed. It often shows when a node drops. This will also show load across the site.
+
+## [!UICONTROL Galera Log]
+
+![galera log](../../assets/tools/galera-log.jpg)
+
+**[Galera](https://galeracluster.com/library/galera-documentation.pdf)** is used for the database cluster. This frame is focused on particular signals from the Galera cluster. These signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the Galera cluster state changes:
+
+**List of Galera state changes:**
+
+* '%1047 WSREP has not yet prepared node for application use%') as 'node_not_prep_for_use'
+* '%[ERROR] WSREP: Failed to read from: wsrep_sst_xtrabackup-v2%') as 'xtrabackup_read_fail'
+* '%[ERROR] WSREP: Process completed with error: wsrep_sst_xtrabackup-v2 %') as 'xtrabackup_compl_w_err'
+* '%[ERROR] WSREP: rbr write fail%') as 'rbr_write_fail'
+* '%self-leave%') as 'susp_node'
+* '%members = 3/3 (joined/total)%') as '3of3'
+* '%members = 2/3 (joined/total)%') as '2of3'
+* '%members = 2/2%') as '2of2' • '%members = 1/2%') as '1of2' • '%members = 1/3%') as '1of3'
+* '%members = 1/1%') as '1of1'
+* '%[Note] /usr/sbin/mysqld (mysqld 10.%') as 'sql_restart'
+* '%Quorum: No node with complete state:%') as 'no_node_count'
+* '%WSREP: Member 0%') as 'mem_0'
+* '%WSREP: Member 1.0%') as 'mem_1'
+* '%WSREP: Member 2%') as 'mem2'
+* '%WSREP: Synchronized with group, ready for connections%') as 'ready'
+* '%/usr/sbin/mysqld, Version:%') as 'mysql_restart_mysql.slow'
+* ‘%[Note] WSREP: New cluster view: global state:%') as 'galera_cluster_view_chng'
+
+These signals may indicate storage, memory, or query issues if the state changes frequently.
+
+## [!UICONTROL Database errors]
+
+![database errors](../../assets/tools/database-errors.jpg)
+
+**List of database errors or messages detected:**
+
+* '%Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size%') as 'temp_tbl_buff_pool'
+* '%[ERROR] WSREP: rbr write fail%') as 'rbr_write_fail'
+* '%mysqld: Disk full%') as 'disk_full'
+* '%Error number 28%') as 'err_28'
+* '%rollback%') as 'rollback'
+* '%Foreign key constraint fails for table%') as 'foreign_key_constraint'
+* '%Error_code: 1114%') as 'sql_1114_full'
+* '%CRITICAL: SQLSTATE[HY000] [2006] MySQL server has gone away%') as 'sql_gone'
+* '%SQLSTATE[HY000] [1040] Too many connections%') as 'sql_1040'
+* '%CRITICAL: SQLSTATE[HY000] [2002]%') as 'sql_2002'
+* '%SQLSTATE[08S01]:%') as 'sql_1047'
+* '%[Warning] Aborted connection%') as 'aborted_conn'
+* '%SQLSTATE[23000]: Integrity constraint violation:%') as 'sql_23000'
+* '%1205 Lock wait timeout%') as 'sql_1205'
+* '%SQLSTATE[HY000] [1049] Unknown database%') as 'sql_1049'
+* '%SQLSTATE[42S02]: Base table or view not found:%') as 'sql_42S02'
+* '%General error: 1114%') as 'sql_1114'
+* '%SQLSTATE[40001]%') as 'sql_1213'
+* '%SQLSTATE[42S22]: Column not found: 1054 Unknown column%') as 'sq1_1054'
+* '%SQLSTATE[42000]: Syntax error or access violation:%') as 'sql_42000'
+* '%SQLSTATE[21000]: Cardinality violation:%') as 'sql_1241'
+* '%SQLSTATE[22003]:%') as 'sql_22003'
+* '%SQLSTATE[HY000] [9000] Client with IP address%') as 'sql_9000'
+* '%SQLSTATE[HY000]: General error: 2014%') as 'sql_2014'
+* '%1927 Connection was killed%') as 'sql_1927'
+* '%1062 [ERROR] InnoDB:%') as 'sql_1062_e'
+* '%[Note] WSREP: Flushing memory map to disk...%') as 'mem_map_flush'
+* '%Internal MariaDB error code: 1146%') as 'sql_1146'
+* '%Internal MariaDB error code: 1062%') as 'sql_1062' • '%1062 [Warning] InnoDB:%') as 'sql_1062_w'
+* '%Internal MariaDB error code: 1064%') as 'sql_1064'
+* '%InnoDB: Assertion failure in file%') as 'assertion_err'
+* '%mysqld_safe Number of processes running now: 0%') as 'mysql_oom'
+* '%[ERROR] mysqld got signal%') as 'mysql_sigterm'
+* '%1452 Cannot add%') as 'sql_1452'
+* '%ERROR 1698%') as 'sql_1698'
+* '%SQLSTATE[HY000]: General error: 3%') as 'cnt_wrt_tmp'
+* '%General error: 1 %') as 'sql_syntax’
+* '%42S22%') as 'sql_42S22'
+* '%InnoDB: Error (Duplicate key)%') as 'innodb_dup_key'
+
+## [!UICONTROL Database traces]
+
+![database traces](../../assets/tools/database-traces.jpg)
+
+This frame looks at data from the [sql trace](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) entity of [!DNL New Relic] and returns the path of the trace.
+
+## Database mysql-slow.log
+
+![database mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
+
+This frame does a count of entries in the [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) by query request type. It isolates time frames visually that might be of interest in the mysql-slow.log (slow query log). Queries of tables without indices, or queries that update large tables may block other queries.
+
+## Redis synchronization from Log
+
+![redis synchronization from log](../../assets/tools/redis-synchronization-from-log.jpg)
+
+[Redis](https://redis.io/docs/about/) is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. It can do database and session caching if configured. This frame focuses on [Redis synchronization](https://redis.io/docs/manual/replication/). The larger the Redis dataset, the more likely that there will be problems with synchronization (more data to keep synchronized).
+
+**Redis errors and messages**
+
+* '%SLAVE synchronization: No space left on device%') as 'space'
+* '%Server started, Redis version%') as 'serv_start'
+* '%The server is now ready to accept connections%') as 'ready'
+* '%Connection with master lost.%') as 'mstr_lost'
+* '%+sdown sentinel%') as '+sentinal'
+* '%-sdown sentinel%') as '-sentinal'
+* '%-sdown slave%') as '-slave', '%+sdown slave%') as '+slave'
+* '%-failover-abort-not-elected master mymaster%') as '-failover'
+* '%+failover-abort-not-elected master mymaster%') as '+failover'
+* '%Partial resynchronization not possible (no cached master)%') as 'part_sync_err'
+* '%MASTER aborted replication with an error: ERR Can%') as 'mstr_sync_err'
+* '%Master does not support PSYNC or is in error state%') as 'mstr_psync_err'
+* '%SLAVE sync: Finished with success%') as ' slv_sync_suc'
+* '%MASTER aborted replication with an error: ERR Can%') as 'mstr_sync_err,coun'
+* '%OOM command not allowed when used memory%') as ' max_mem_err'
+* '%CredisException(code: 0): read error on connection%') as 'credis_read_error'
+* '%Uncaught RedisException:%') as 'redis_excp_err'
+* '%psync scheduled to be closed ASAP for overcoming of output buffer%') as 'output_buf_err'
+
+## [!UICONTROL PHP process states]
+
+![PHP process states](../../assets/tools/php-process-states.jpg)
+
+The way that PHP process(es) behave is dependent upon [configuration](https://www.php.net/manual/en/install.fpm.configuration.php). The configuration is complex with many variables and options. This frame helps to understand when PHP processes are terminated and restarted.
+
+## PHP errors
+
+![php errors](../../assets/tools/php-errors.jpg)
+
+This frame shows the number of php errors with workers across the selected timeframe. [Adobe Commerce PHP settings](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+
+**PHP errors and messages**
+
+* '%worker_connections are not enough%') as 'worker'
+* '%PHP Fatal error: Allowed memory size!%') as 'mem_size'
+* '%exited on signal 11 (SIGSEGV)%') as 'sig_11'
+* '%exited on signal 7 (SIGBUS)%') as 'sig_7'
+* '%increase pm.start_servers%') as 'pmstart_serv'
+* '%max_children%') as 'max_children_cnt'
+* '%PHP Fatal error: Allowed memory size of%') as 'mem_exhst_coun'
+* '%Unable to allocate memory for pool%') as 'opc_mem_count'
+* '%Warning Interned string buffer overflow%') as 'opc_str_buf'
+* '%Illegal string offsetl%') as 'opc_sv_comments'
+* '%PHP Fatal error: Uncaught RedisException: read error on connection%') as 'php_exc'
+
+## [!UICONTROL PHP processes]
+
+![php processes](../../assets/tools/php-processes.jpg)
+
+[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] used by nginx. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). This frame shows the number of PHP processes running at a particular time in the selected timeline.
+
+## [!UICONTROL Secondary processes]
+
+![secondary processes](../../assets/tools/secondary-processes.jpg)
+
+**[!UICONTROL Secondary processes]** can impact site response. This frame can indicate a process or processes that may be adding load to the site. The database primarily has the most secondary processes running.
+
+## [!UICONTROL Traffic vs Week Ago]
+
+![traffic vs week ago](../../assets/tools/traffic-vs-week-ago.jpg)
+
+This frame is looking at the website traffic (requests) from the Fastly logs with (‘MISS’, ‘PASS’) cache statuses. These requests add load to the origin servers. This frame displays the web request volume versus one week ago during the same timeframe.
+
+## [!UICONTROL Fastly Cache]
+
+![fastly Cache](../../assets/tools/fastly-cache.jpg)
+
+This shows an aggregate view of the cache status of requests from the Fastly logs. If you click on ERROR, it will show the % of errors in the requests. This will typically increase when the origin server is not responding quickly enough to page requests.
+
+## [!UICONTROL Page Rendering]
+
+![page rendering](../../assets/tools/page-rendering.jpg)
+
+This frame displays the average page rendering duration from the page view source of New Relic as compared to the same time period the prior week.
 
 
 
