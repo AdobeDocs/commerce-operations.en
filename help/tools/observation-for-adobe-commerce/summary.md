@@ -464,4 +464,3 @@ This frame displays the top 25 operations by duration time, table name, and SQL 
 
 
 
-
