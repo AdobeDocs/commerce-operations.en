@@ -105,7 +105,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
 - Multiple sites {#multi-sites}
   - [Multiple sites and views](multi-sites/ms-overview.md)
   - [Database entity Increment ID](multi-sites/change-increment-id.md)
-  - [Set up in Admin](multi-sites/ms-admin.md)
+  - [Set up in the Admin](multi-sites/ms-admin.md)
   - [Set up with Nginx](multi-sites/ms-nginx.md)
   - [Set up with Apache](multi-sites/ms-apache.md)
 - Search Engine {#search}

@@ -2,7 +2,7 @@
 
 **To update the production system**:
 
-1. Log in to your production system as, or switch to, the file system owner.
+1. Log in to the production system as the file system owner.
 1. Change to the application root and enable maintenance mode.
 
    ```bash

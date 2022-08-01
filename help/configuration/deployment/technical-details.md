@@ -74,7 +74,7 @@ We changed the following behavior in the Admin in production mode:
 
     ![You can change the Admin locale only to deployed locales](../../assets/configuration/split-deploy-admin-locale.png)
 
-- You cannot change locale configurations for any scope using the Admin Panel.
+- You cannot change locale configurations for any scope using the Admin.
 
     We recommend making these changes before switching to Production mode.
 
@@ -279,7 +279,7 @@ After you make the change in the Admin, run `bin/magento app:config:dump` on you
 
 The default email domain system-specific configuration setting is written to `app/etc/env.php`.
 
-The PayPal settings are written to neither file because the `magento app:config:dump` command does not write sensitive settings. You must set the PayPal settings on the production system using the following commands:
+The PayPal settings are written to neither file because the `bin/magento app:config:dump` command does not write sensitive settings. You must set the PayPal settings on the production system using the following commands:
 
 ```bash
 bin/magento config:sensitive:set paypal/wpp/api_username <username>

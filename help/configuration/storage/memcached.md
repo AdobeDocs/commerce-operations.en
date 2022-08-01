@@ -37,7 +37,7 @@ Commerce uses memcached for session storage but not for page caching. For page c
 
 1. Continue with the next section.
 
-**To verify memcached works with Magento**:
+**To verify memcached works with Commerce**:
 
 1. Delete the contents of the following directories under your Commerce installation directory:
 

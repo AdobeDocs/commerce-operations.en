@@ -175,7 +175,7 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 ### Set configuration values that cannot be edited in the Admin
 
-If you use the `--lock-env`  option as follows, the command saves the configuration value in `<Commerce base dir>/app/etc/env.php` and disables the field for editing this value in Admin.
+If you use the `--lock-env`  option as follows, the command saves the configuration value in `<Commerce base dir>/app/etc/env.php` and disables the field for editing this value in the Admin.
 
 ```bash
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
@@ -187,7 +187,7 @@ You can use the `--lock-env` option to set configuration values if Commerce is n
 >
 >The `env.php` file is system specific. You should not transfer it to another system. You can use it to overwrite configuration values from the database. For example, you can take a database dump from another system and overwrite the `base_url` and other values so you do not have to modify the database.
 
-If you use the `--lock-config` option as follows, the configuration value is saved in `<Commerce base dir>/app/etc/config.php`. The field for editing this value in Admin page is disabled.
+If you use the `--lock-config` option as follows, the configuration value is saved in `<Commerce base dir>/app/etc/config.php`. The field for editing this value in the Admin is disabled.
 
 ```bash
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1

@@ -93,4 +93,4 @@ To set sensitive values:
 
    The setting is displayed in the Admin and cannot be edited. The following figure shows an example.
 
-   ![Sensitive setting in Admin](../../assets/configuration/sensitive-set.png)
+   ![Sensitive setting in the Admin](../../assets/configuration/sensitive-set.png)

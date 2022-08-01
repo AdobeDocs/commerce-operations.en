@@ -30,7 +30,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
 ## Export a Varnish configuration file
 
-To export a Varnish configuration file from the Admin panel:
+To export a Varnish configuration file from the Admin:
 
 1. Click one of the export buttons to create a `varnish.vcl` you can use with Varnish.
 

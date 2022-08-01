@@ -1,8 +1,8 @@
 # Update build system
 
-**To update your build system**:
+**To update the build system**:
 
-1. Log in to your build system as, or switch to, the file system owner.
+1. Log in to the build system as the file system owner.
 1. Change to the application root directory.
 
    ```bash

@@ -5,7 +5,7 @@ description: Configure advanced Varnish features, including health check, grace 
 
 # Advanced Varnish configuration
 
-Varnish provides several features that prevent customers from experiencing long delays and timeouts when the Commerce server is not functioning properly. These features can be configured in the `default.vcl` file. This topic describes the additions that Commerce provides in the VCL (Varnish Configuration Language) file you download from Admin.
+Varnish provides several features that prevent customers from experiencing long delays and timeouts when the Commerce server is not functioning properly. These features can be configured in the `default.vcl` file. This topic describes the additions that Commerce provides in the VCL (Varnish Configuration Language) file you download from the Admin.
 
 See the [Varnish Reference Manual](https://varnish-cache.org/docs/6.3/reference/index.html) for details about using the Varnish Configuration Language.
 
@@ -42,7 +42,7 @@ The `vcl_hit` subroutine defines how Varnish responds to a request for objects t
 
 ### When the Commerce backend is healthy
 
-When the health checks determine that the Commerce backend is healthy, Varnish checks whether time remains in the grace period. The default grace period is 300 seconds, but a merchant can set the value from [Admin](https://glossary.magento.com/admin) as described in [Configure Commerce to use Varnish](config-varnish-magento.md). If the grace period has not expired, Varnish delivers the stale content, and asynchronously refreshes the object from the Commerce server. If the grace period has expired, Varnish serves the stale content and synchronously refreshes the object from the Commerce backend.
+When the health checks determine that the Commerce backend is healthy, Varnish checks whether time remains in the grace period. The default grace period is 300 seconds, but a merchant can set the value from the [Admin](https://glossary.magento.com/admin) as described in [Configure Commerce to use Varnish](config-varnish-magento.md). If the grace period has not expired, Varnish delivers the stale content, and asynchronously refreshes the object from the Commerce server. If the grace period has expired, Varnish serves the stale content and synchronously refreshes the object from the Commerce backend.
 
 The maximum amount of time that Varnish serves a stale object is the sum of the grace period (300 seconds by default) and the TTL value (86400 seconds by default).
 
@@ -70,7 +70,7 @@ On all other machines, the Commerce instance must have access the primary machin
 
 Alternatively, [static files](https://glossary.magento.com/static-files) versioning can be turned off on all machines. This can be accessed from the Admin under **Stores** > Settings > **Configuration** > **Advanced** > **Developer** > **Static Files Settings** > **Sign Static Files** = **No**.
 
-Finally, all Commerce instances must be in production mode. Before Varnish starts, clear the cache on each instance. In Admin, go to **System** > Tools > **Cache Management** and click **Flush Magento Cache**. You can also run the following command to clear the cache:
+Finally, all Commerce instances must be in production mode. Before Varnish starts, clear the cache on each instance. In the Admin, go to **System** > Tools > **Cache Management** and click **Flush Magento Cache**. You can also run the following command to clear the cache:
 
 ```bash
 bin/magento cache:flush
