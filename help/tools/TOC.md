@@ -22,4 +22,5 @@ user-guide-description: Learn about the different tools you can use with Adobe C
 - Observation for Adobe Commerce {#observation-for-adobe-commerce}
   - [Introduction](observation-for-adobe-commerce/intro.md)
   - [How to access](observation-for-adobe-commerce/access.md)
+  - [The WAF tab](observation-for-adobe-commerce/access.md)
   
