@@ -24,4 +24,6 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [How to access](observation-for-adobe-commerce/access.md)
   - [Selecting the account and timeframe](observation-for-adobe-commerce/selecting-the-account.md)
   - [Choosing the focus tabs](observation-for-adobe-commerce/choosing-focus-tabs.md)
+  - [The Alerts tab](observation-for-adobe-commerce/alerts-tab.md)
+
   
