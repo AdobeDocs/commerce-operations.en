@@ -10,13 +10,13 @@ This tab is an attempt to isolate issues and causes of deployment problems quick
 
 ![Deploy log Deployment Troubleshooter](../../assets/tools/deploy-tab-1.jpg)
 
-This frame shows a count of deploy log events that occurred across the selected timeframe. The intent is to provide an at-a-glance view of deployment activity and determine the complexity of the deployment by the count. The more logged messages, the more complex the deployment typically is.
+The **[!UICONTROL Deploy log Deployment Troubleshooter]** frame shows a count of deploy log events that occurred across the selected timeframe. The intent is to provide an at-a-glance view of deployment activity and determine the complexity of the deployment by the count. The more logged messages, the more complex the deployment typically is.
 
 ## [!UICONTROL Deploy State]
 
 ![Deploy State](../../assets/tools/deploy-tab-2.jpg)
 
-This frame shows the deploy events that occurred across the selected timeframe. The parser for this frame is looking for these specific signals:
+The **[!UICONTROL Deploy State]** frame shows the deploy events that occurred across the selected timeframe. The parser for this frame is looking for these specific signals:
 
 * '%NOTICE: Starting generate command%') as 'start_gen'
 * '%git apply /app/vendor/magento/ece-tools/patches%') as 'apply_patches'
@@ -32,8 +32,7 @@ This frame shows the deploy events that occurred across the selected timeframe. 
 
 ![Deploy Log Detail](../../assets/tools/deploy-tab-3.jpg)
 
-This frame shows the deploy log message summary details that occurred across the selected 
-timeframe. The frame is parsing for the following strings in the deployment logs:
+The **[!UICONTROL Deploy Log Detail]** frame shows the deploy log message summary details that occurred across the selected timeframe. The frame is parsing for the following strings in the deployment logs:
 
 * ‘%NOTICE: Starting deploy.%') as 'start_dply'
 * '%INFO: Starting scenario(s): scenario/deploy.xml%') as 'start_scenario'
@@ -78,7 +77,7 @@ configured.%') as'nest_err_reporting'
 
 ![Post deploy log detail](../../assets/tools/deploy-tab-4.jpg)
 
-This frame shows the post-deploy log details that occurred across the selected timeframe. This frame is focused on particular log messages that contain the following strings:
+The **[!UICONTROL Post Deploy Log Detail]** frame shows the post-deploy log details that occurred across the selected timeframe. This frame is focused on particular log messages that contain the following strings:
 
 * '%Disabled maintenance mode%') as 'disabled_maint_mode'
 * '%INFO: Starting scenario(s): scenario/post-deploy.xml%') as 'start_pstdply_scenario'
@@ -96,7 +95,7 @@ This frame shows the post-deploy log details that occurred across the selected t
 
 ![Cloud Log Detail](../../assets/tools/deploy-tab-5.jpg)
 
-This frame shows the cloud log details that occurred across the selected timeframe. The following strings are parsed and returned with the ‘AS’ label below:
+The **[!UICONTROL Cloud Log Detail]** frame shows the cloud log details that occurred across the selected timeframe. The following strings are parsed and returned with the ‘AS’ label below:
 
 * '%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%') as 'start_update'
 * '%Schema creation/updates:%') as 'schema_updates'
@@ -153,11 +152,11 @@ used as asearch engine.%') as'es_not_used'
 
 ![Count of modules imported during deploy](../../assets/tools/deploy-tab-6.jpg)
 
-This frame shows the count of modules imported during deployment across the selected timeframe. 
+The **[!UICONTROL Count of modules imported during deploy]** frame shows the number of modules imported during deployment across the selected timeframe. 
 
 ## [!UICONTROL Deployed module list]
 
 ![Deployed module list](../../assets/tools/deploy-tab-7.jpg)
 
-This frame shows deployed modules across the selected timeframe.
+The **[!UICONTROL Deployed module list]** frame shows deployed modules across the selected timeframe.
 
