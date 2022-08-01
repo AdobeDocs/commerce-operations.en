@@ -329,6 +329,124 @@ This shows an aggregate view of the cache status of requests from the Fastly log
 
 This frame displays the average page rendering duration from the page view source of New Relic as compared to the same time period the prior week.
 
+## [!UICONTROL Page loading detail]
+
+![page loading detail](../../assets/tools/page-loading-detail.png)
+
+This frame describes the page loading events. It details on the meanings of these facets. Here is the query that is being run for this frame:
+
+SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint' , percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES
+
+## [!UICONTROL Transactions – Avg, Max, Min]
+
+![transactions – avg, max, min](../../assets/tools/transactions-avg-max-min.jpg)
+
+Transaction duration is in seconds. Depending on the transaction, it may impact other transactions if it is long running. The transactions listed under name and the durations are for the specific time period. If there is a concise issue timeframe, resize the Observation for Adobe Commerce date/time selector to that narrow timeframe.
+
+## [!UICONTROL Admin Activities]
+
+![admin activities](../../assets/tools/admin-activities.jpg)
+
+This frame identifies transactions with an admin user.
+
+## [!UICONTROL Order transactions (default?)]
+
+![Order transactions default](../../assets/tools/order-transactions-default.jpg)
+
+This frame is looking for transactions `request.headers.host` from transactions where the name = 'WebTransaction/Action/checkout/onepage/success’ if the order success URL is different, this frame will not have data.
+
+## [!UICONTROL Elasticsearch Index information]
+
+![elasticsearch index information](../../assets/tools/elasticsearch-Index-information.jpg)
+
+**[Elasticsearch statuses:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
+
+* Green: All shards are assigned.
+* Yellow: All primary shards are assigned, but one or more replica shards are unassigned. If a node in the cluster fails, some data could be unavailable until that node is repaired.
+* Red: One or more primary shards are unassigned, so some data is unavailable. This can occur briefly during cluster startup as primary shards are assigned.
+
+## [!UICONTROL Elasticsearch Errors]
+
+![elasticsearch errors](../../assets/tools/elasticsearch-errors.jpg)
+
+**Elasticsearch errors:**
+
+* '%all shards failed%' as 'all_shards_failed’
+* '%NoNodesAvailableException%' as 'no_alive_nodes'
+* '%PHP Fatal error: Uncaught Error: Wrong parameters for Elasticsearch%' as 'wrong_param'
+* '%You can fix this issue by upgrading the Elasticsearch service on your Magento Cloud infrastructure to version%' as 'ver_err'
+* '%cluster health status changed from [YELLOW] to [RED] (reason:%' as 'yel_red'
+* '%No space left on device%' as 'no_space'
+* '% Failed to execute [SearchRequest{searchType=%' as 'failed_query'
+
+
+## [!UICONTROL Cron view]
+
+![cron view](../../assets/tools/cron-view.jpg)
+
+This frame is looking at the cron log for balance between the number of crons started versus the number of crons finishing.
+
+## [!UICONTROL Cron error]
+
+![cron error](../../assets/tools/cron-error.png)
+
+**Cron errors from cron.log:**
+
+* '%_stg%' as 'stg_crons'
+* '%Could not acquire lock for cron job%' as 'cron_lock'
+* '%General error: 2006 MySQL server has gone away%' as 'mysql_has_gone_away'
+* '%error%' as 'error'
+* '%General error: 1205 Lock wait timeout exceeded%’ as sql_1205_cron
+
+## [!UICONTROL cron_schedule table updates]
+
+![cron_schedule table updates](../../assets/tools/cron-schedule-table-updates.jpg)
+
+This is looking at maximum duration in seconds where datastore operations updates involve the cron_schedule table. It is faceted on the SQL request type.
+
+## [!UICONTROL Datastore Operations Tables]
+
+![datastore operations tables](../../assets/tools/datastore-operations-tables.jpg)
+
+This frame displays the top 25 operations by duration time, table name, and SQL request type. Hover over the spikes to see details of what table was being accessed and by what request type.
+
+## [!UICONTROL Cache Flush]
+
+![cache flush](../../assets/tools/cache-flush.jpg)
+
+**Cache flushes detected:**
+
+* '%config%' as 'config_cache_flushed'
+* '%layout%' as 'layout_cache_flush'
+* '%block_html%' as 'block_html_cache_flush'
+* '%collections%' as 'collections_cache_flush'
+* '%reflection%' as 'reflection_cache_flush'
+* '%db_ddl%' as 'db_ddl_cache_flush'
+* '%compiled_config%' as 'compiled_config_cache_flush'
+* '%eav%' as 'eav_cache_flush'
+* '%customer_notification%' as 'cust_notif_cache_flush'
+* '%config_integration%' as 'config_integ_cache_flush'
+* '%config_integration_api%' as 'config_integ_api_cache_flush'
+* '%full_page%' as 'full_page_cache_flush'
+* '%config_webservice%' as 'config_webserv_cache_flush'
+* '%translate%' as 'translate_cache_flush'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
