@@ -27,4 +27,5 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [The Alerts tab](observation-for-adobe-commerce/alerts-tab.md)
   - [The WAF tab](observation-for-adobe-commerce/waf-tab.md)
   - [The Deploy tab](observation-for-adobe-commerce/deploy-tab.md)
+  - [The Redis tab](observation-for-adobe-commerce/redis-tab.md)
 
