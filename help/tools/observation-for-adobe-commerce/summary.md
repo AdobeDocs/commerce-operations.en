@@ -11,21 +11,21 @@ The **[!UICONTROL Summary]** tab of Observation for Adobe Commerce is intended t
 
 ![Transaction Overview](../../assets/tools/transaction-overview.jpg)
 
-[What is a transacrion?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
+### [What is a transacrion?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
-“At [!DNL New Relic], a transaction is defined as one logical unit of work in a software application. Specifically, it refers to the function calls and method calls that make up that unit of work…it will often refer to a web transaction, which represents activity that happens from when the application receives a web request to when the response is sent.”
+“At [!DNL New Relic], a transaction is defined as one logical unit of work in a software application. Specifically, it refers to the function calls and method calls that make up that unit of work. It often refers to a web transaction, which represents activity that happens from when the application receives a web request to when the response is sent.”
 
-**Types of transactions:**
+### Types of transactions:
 
 **Web:** Transactions are initiated with an HTTP request. For most organizations, these represent customer-centric interactions and thus are the most important transactions to monitor.
 
 **Non-web:** Non-web transactions are not initiated with a web request. They can include non-web worker processes, background processes, scripts, message queue activity, and other tasks.
 
-Looking at the Transaction overview frame, there were almost 53,000 transactions with an average APDEX score of .76 and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter time frame may show deviation from that current average if there is an APDEX hit during a short timeframe.
+Looking at the **[!UICONTROL Transaction Overview]** frame, there were almost 53,000 transactions with an average APDEX score of .76 and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter time frame may show deviation from that current average if there is an APDEX hit during a short timeframe.
 
 ## [!UICONTROL 404 page Errors frame]
 
-![404 page Errors frame](../../assets/tools/404-page-errors.jpg)
+![404 page errors frame](../../assets/tools/404-page-errors.jpg)
 
 This frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) and the count of 404 page errors during the selected timeframe.
 
@@ -33,13 +33,13 @@ This frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identi
 
 ![percent of Storage Free frame](../../assets/tools/percent-of-storage-free.jpg)
 
-This frame will display the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the MySQL tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
+This frame displays the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
 
 ## [!UICONTROL % of system memory that is free frame]
 
 ![percent of system memory that is free frame](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-This frame will display, by node, the amount of system memory that is free on each node.
+This frame displays by node, the amount of system memory that is free on each node.
 
 ## [!UICONTROL Swap memory free in bytes]
 
@@ -51,7 +51,7 @@ This frame displays, by node, the amount of SWAP memory that is free on the node
 
 ![CPU percent by host](../../assets/tools/cpu-percent-by-host.jpg)
 
-The aggregate of all environments and nodes is displayed in this frame. You should deselect the non-production environments. You should note any instances where all nodes for the production environment are not present. This article gives tips on [High CPU Utilization](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
+The aggregate of all environments and nodes is displayed in this frame. You should deselect the non-production environments. You should note any instances where all nodes for the production environment are not present. This article gives tips on high CPU utilization: [Troubleshoot performance using New Relic on Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -63,13 +63,13 @@ The Alerts during timeframe will display all alerts, including the Managed Alert
 
 ![CPU usage](../../assets/tools/cpu-usage.jpg)
 
-If this frame is blank, it is an indicator that the Infrastructure application of New Relic is not enabled. See [this information]() on New Relic to enable it.
+If this frame is blank, it is an indicator that the infrastructure application of New Relic is not enabled. See [this information]() on New Relic to enable it.
 
 ## [!UICONTROL Average Response Time]
 
 ![average response time](../../assets/tools/average-response-time.jpg)
 
-This is the graph showing the average response time for transactions (Web and Other).
+This is the graph showing the average response time for transactions (web and others).
 
 ## [!UICONTROL Long duration cron_schedule updates]
 
@@ -81,7 +81,7 @@ The `cron_schedule` table is written to at the start and finish of cron jobs. Lo
 
 ![response code](../../assets/tools/response-code.jpg)
 
-This frame is a good indication of web traffic and the response code of requests. It is New Relic transaction data, and it is faceted by the `httpResponseCode` returned.
+This frame is a good indication of web traffic and the response code of requests. It is [!DNL New Relic] transaction data, and it is faceted by the `httpResponseCode` returned.
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
@@ -116,7 +116,7 @@ This frame facets particular deployment phrases from the deploy logs. Here are e
 
 ![IP frequency](../../assets/tools/ip-frequency.jpg)
 
-This frame counts the (‘MISS’ and ‘PASS’) statuses for each IP from the Fastly logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
+This frame counts the (‘MISS’ and ‘PASS’) statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -136,7 +136,7 @@ This frame helps identify heavy traffic against the APIs and the IP addresses ma
 
 This frame provides details of heavy traffic against the APIs and details of the URLs making the requests.
 
-## [IUICONTROL IP Frequency Rate per minute]
+## [!UICONTROL IP Frequency Rate per minute]
 
 ![ip frequency rate per minute](../../assets/tools/ip-frequency-rate-per-minute.jpg)
 
@@ -152,7 +152,7 @@ This frame looks at requests with a `request_user_agent` name like NULL or ‘%b
 
 ![transaction errors](../../assets/tools/transaction-errors.jpg)
 
-This frame displays the count of TransactionError from [!DNS New Relic].
+This frame displays the count of transaction error from [!DNL New Relic].
 
 ## [!UICONTROL Nginx access by node]
 
@@ -164,7 +164,7 @@ This frame looks at counts from the `access.log` by node. It is helpful to see i
 
 ![galera log](../../assets/tools/galera-log.jpg)
 
-**[Galera](https://galeracluster.com/library/galera-documentation.pdf)** is used for the database cluster. This frame is focused on particular signals from the Galera cluster. These signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the Galera cluster state changes:
+[Galera](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the Galera cluster. These signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the Galera cluster state changes.
 
 **List of Galera state changes:**
 
@@ -430,6 +430,7 @@ This frame displays the top 25 operations by duration time, table name, and SQL 
 * '%full_page%' as 'full_page_cache_flush'
 * '%config_webservice%' as 'config_webserv_cache_flush'
 * '%translate%' as 'translate_cache_flush'
+
 
 
 
