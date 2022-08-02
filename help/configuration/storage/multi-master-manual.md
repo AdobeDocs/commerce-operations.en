@@ -5,7 +5,7 @@ description: See guidance on manually configuring the split database solution.
 
 # Manually configure master databases
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

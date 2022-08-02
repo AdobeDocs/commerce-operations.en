@@ -5,7 +5,7 @@ description: See the benefits of configuring database replication.
 
 # Database replication
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
