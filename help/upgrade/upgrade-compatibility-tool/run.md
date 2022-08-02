@@ -13,6 +13,12 @@ To get started with the [!DNL Upgrade Compatibility Tool] in a command-line inte
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
+You may need to give the tool executable permissions with the `chmod` command:
+
+```bash
+chmod +x ./uct/bin/uct
+```
+
 ## The [!DNL Upgrade Compatibility Tool] in a command-line interface
 
 The [!DNL Upgrade Compatibility Tool] is a tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
