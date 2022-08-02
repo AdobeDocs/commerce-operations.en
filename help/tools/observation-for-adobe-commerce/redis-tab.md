@@ -14,7 +14,7 @@ This is inclusive of all nodes in an environment. This example includes the node
 
 ![Redis node detail](../../assets/tools/redis-tab-2.jpg)
 
-This frame will indicate the environment, [!DNL Redis] role, software version, and node size. 
+This frame indicates the environment, [!DNL Redis] role, software version, and node size. 
 
 ## [!UICONTROL Redis node roles timeline]
 
