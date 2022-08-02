@@ -8,7 +8,7 @@ description: Learn about the [!UICONTROL Redis] tab of [!DNL Observation for Ado
 
 ![Redis Node summary](../../assets/tools/redis-tab-1.jpg)
 
-This is inclusive of all nodes in an environment. This example includes the nodes for shared staging. There is one primary and two secondaries on production and also a primary and two secondaries on staging.
+The **[!UICONTROL Redis Node summary]** is inclusive of all nodes in an environment. This example includes the nodes for shared staging. There is one primary and two secondaries on production and also a primary and two secondaries on staging.
 
 ## [!UICONTROL Redis node detail]
 
