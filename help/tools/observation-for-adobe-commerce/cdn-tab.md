@@ -10,7 +10,7 @@ This tab has information that is focused on the [!DNL content delivery network (
 
 ![HIT rate](../../assets/tools/cdn-tab-1.png)
 
-The [!UICONTROL HIT rate] frame shows the number of cacheable requests that resulted in [!UICONTROL HITS] at the last minute. This indicates successful caching. The arrow to the right will show the percentage above or below the same time a week ago.
+The [!UICONTROL HIT rate] frame shows the number of cacheable requests that resulted in [!UICONTROL HITS] at the last minute. This indicates successful caching. The arrow to the right shows the percentage above or below the same time a week ago.
 
 ## [!UICONTROL HIT Processing]
 
