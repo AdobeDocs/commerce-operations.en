@@ -1,7 +1,6 @@
 ---
 title: Revert Split Database
 description: Revert from a deprecated split database implementation to a single database implementation.
-ee_only: true
 ---
 
 # Revert from Split Database

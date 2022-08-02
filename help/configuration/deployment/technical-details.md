@@ -56,9 +56,9 @@ You can manage the sensitive configuration in any of the following ways:
 Any configuration settings in `config.php` or `env.php` are locked in the Admin; that is, those settings cannot be changed in the Admin.
 Use the [`magento config:set` or `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) command to change the settings in the `config.php` or `env.php` files.
 
-## Changes in the Admin
+## The Commerce Admin
 
-We changed the following behavior in the Admin in production mode:
+The Admin exhibits the following behavior while in production mode:
 
 - You cannot enable or disable cache types in the Admin
 - Developer settings are unavailable (**Stores** > Settings > **Configuration** > Advanced > **Developer**), including:

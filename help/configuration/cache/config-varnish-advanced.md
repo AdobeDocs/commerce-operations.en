@@ -1,6 +1,6 @@
 ---
 title: Advanced Varnish configuration
-description: Configure advanced Varnish features, including health check, grace and saint modes.
+description: Configure advanced Varnish features, including health check, grace, and saint modes.
 ---
 
 # Advanced Varnish configuration
@@ -25,7 +25,7 @@ Commerce defines the following default health check:
     }
 ```
 
-Every 5 seconds, this health check calls the `pub/health_check.php` script. This script checks the availability of the server, each database, and Redis (if installed). The script must return a response within 2 seconds. If the script determines that any of these resources are down, it returns a 500 HTTP error code. If this error code is received in 6 out of 10 attempts, the [backend](https://glossary.magento.com/backend) is considered unhealthy.
+Every 5 seconds, this health check calls the `pub/health_check.php` script. This script checks the availability of the server, each database, and Redis (if installed). The script must return a response within 2 seconds. If the script determines that any of these resources are down, it returns a 500 HTTP error code. If this error code is received in six out of ten attempts, the [backend](https://glossary.magento.com/backend) is considered unhealthy.
 
 The `health_check.php` script is located in the `pub` directory. If your Commerce root directory is `pub`, then be sure to change the path in the `url` parameter from `/pub/health_check.php` to `health_check.php`.
 
@@ -58,7 +58,7 @@ If the Commerce backend is not responsive, Varnish serves stale content from cac
 
 ## Saint mode
 
-Saint mode blacklists unhealthy backends for a configurable amount of time. As a result, unhealthy backends cannot serve traffic when using Varnish as a load balancer. Saint mode can be used with grace mode to allow for complex handling of unhealthy backend servers. For example, if one backend server is unhealthy, retries can be routed to another server. If all other servers are down, then serve stale cached objects. The saint mode backend hosts and blackout periods are defined in the `default.vcl` file.
+Saint mode excludes unhealthy backends for a configurable amount of time. As a result, unhealthy backends cannot serve traffic when using Varnish as a load balancer. Saint mode can be used with grace mode to allow for complex handling of unhealthy backend servers. For example, if one backend server is unhealthy, retries can be routed to another server. If all other servers are down, then serve stale cached objects. The saint mode backend hosts and blackout periods are defined in the `default.vcl` file.
 
 Saint mode can also be used when Commerce instances are individually taken offline to perform maintenance and upgrade tasks without affecting the availability of the Commerce site.
 
@@ -78,7 +78,7 @@ bin/magento cache:flush
 
 ### Installation
 
-Saint mode is not part of the main Varnish package. It is a separately-versioned `vmod` that must be downloaded and installed. As a result, you should recompile Varnish from source, as described in the following articles:
+Saint mode is not part of the main Varnish package. It is a separately versioned `vmod` that must be downloaded and installed. As a result, you should recompile Varnish from source, as described in the following articles:
 
 - [Installing Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
 - [Installing Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)

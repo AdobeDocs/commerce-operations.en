@@ -1,10 +1,11 @@
 ---
 title: Automatically configure master databases
 description: See guidance on automatically configuring the split database solution.
-ee_only: True
 ---
 
 # Automatically configure master databases
+
+{#ee-only}
 
 {{deprecate-split-db}}
 

@@ -1,10 +1,11 @@
 ---
 title: Verify split database
 description: Learn how to verify that a Commerce split database configuration is working properly.
-ee_only: True
 ---
 
 # Verify split database
+
+{#ee-only}
 
 {{deprecate-split-db}}
 

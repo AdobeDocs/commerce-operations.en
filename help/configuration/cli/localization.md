@@ -7,16 +7,12 @@ description: Learn how to generate translation dictionaries and build language p
 
 {{file-system-owner}}
 
-Commerce translations enable you to customize and localize your store for multiple regions and markets. We improved the localization and customization of Commerce instances by making translation dictionaries easier to update and maintain and reduced the amount of code coupling and duplication.
+Commerce translations enable you to customize and localize your store for multiple regions and markets by generating:
 
-This topic discusses how to generate:
-
-- **Translation dictionaries** are a convenient way to customize or translate _some_ words and phrases, such as those for a custom module or theme.
-- **Language packages** enable you to translate _any or all_ words and phrases in the Commerce application.
+- **Translation dictionaries**, which are a convenient way to customize or translate _some_ words and phrases, such as those for a custom module or theme.
+- **Language packages** that enable you to translate _any or all_ words and phrases in the Commerce application.
 
 See [Translations overview][].
-
-We also accept [Community Engineering contributions] using CrowdIn for translations. The project may include package creation and further support using the contributed translations. Join us and other contributors around the globe working to localize Magento!
 
 ## Generate a translation dictionary
 
@@ -73,10 +69,7 @@ Populates with a value:
 Product 'Multimeter-2000' has been added to shopping cart.
 ```
 
-The resulting phrase must contain at least one of each placeholder.
-For example, suppose that there are placeholders from `%1` to `%3` in the original phrase.
- The translation can have as many of these placeholders in any order, but there must be at least one occurrence of `%1`, `%2`, and `%3`.
-The translation cannot contain placeholder values not present in the original value (for example, `%4`, `%5`, and so on).
+The resulting phrase must contain at least one of each placeholder. For example, suppose that there are placeholders from `%1` to `%3` in the original phrase. The translation can have as many of these placeholders in any order, but there must be at least one occurrence of `%1`, `%2`, and `%3`. The translation cannot contain placeholder values not present in the original value (for example, `%4`, `%5`, and so on).
 
 An example of translating a phrase:
 

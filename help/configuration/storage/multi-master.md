@@ -1,14 +1,13 @@
 ---
 title: Split database performance solution
 description: Read about the split database solution for Adobe Commerce and Magento Open Source.
-ee_only: True
 ---
 
 # Overview of the split database solution
 
-{{deprecate-split-db}}
+{#ee-only}
 
-{{ee-only}}
+{{deprecate-split-db}}
 
 Adobe Commerce offers several scalability advantages, including the ability to use three separate master databases for different functional areas of the Commerce application.
 

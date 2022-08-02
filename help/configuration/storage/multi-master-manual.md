@@ -1,10 +1,11 @@
 ---
 title: Manually configure master databases
 description: See guidance on manually configuring the split database solution.
-ee_only: True
 ---
 
 # Manually configure master databases
+
+{#ee-only}
 
 {{deprecate-split-db}}
 

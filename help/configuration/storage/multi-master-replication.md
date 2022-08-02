@@ -1,10 +1,11 @@
 ---
 title: Database replication
 description: See the benefits of configuring database replication.
-ee_only: True
 ---
 
 # Database replication
+
+{#ee-only}
 
 {{deprecate-split-db}}
 
