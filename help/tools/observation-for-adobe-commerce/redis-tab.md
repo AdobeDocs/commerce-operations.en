@@ -14,13 +14,13 @@ This is inclusive of all nodes in an environment. This example includes the node
 
 ![Redis node detail](../../assets/tools/redis-tab-2.jpg)
 
-The **[!UICONTROL Redis node detail]** frame will indicate the environment, [!DNL Redis] role, software version, and node size. 
+The **[!UICONTROL Redis node detail]** frame indicates the environment, [!DNL Redis] role, software version, and node size. 
 
 ## [!UICONTROL Redis node roles timeline]
 
 ![Redis node roles timeline](../../assets/tools/redis-tab-3.jpg)
 
-The **[!UICONTROL Redis node roles timeline]** frame indicates the loss of [!DNL Redis] service in particular roles. If a line dips, it indicates that the particular role that the line represents has lost a node or nodes. 
+The **[!UICONTROL Redis node roles timeline]** frame indicates the loss of [!DNL Redis] service in particular roles. If a line dips, it indicates that the particular role that the line represents has lost a node or nodes.
 
 ## [!UICONTROL Connection to Redis]
 
@@ -32,7 +32,7 @@ The **[!UICONTROL Connection to Redis]** frame displays the net.connectedClients
 
 ![Commands per second by node](../../assets/tools/redis-tab-5.jpg)
 
-The **[!UICONTROL Commands per second by node]** frame shows the [!DNL Redis] commands by node per second over the selected timeframe. 
+The **[!UICONTROL Commands per second by node]** frame shows the [!DNL Redis] commands by node per second over the selected timeframe.
 
 ## [!UICONTROL Redis % of memory used]
 
@@ -50,7 +50,7 @@ The **[!UICONTROL Redis used memory]** frame shows the node usage of memory in G
 
 ![Redis changes since last db save](../../assets/tools/redis-tab-8.jpg)
 
-[!DNL Redis] is a memory resident and saves the information to storage. The **[!UICONTROL Redis changes since last db save]** frame indicates the number of changes to memory that have occurred since the last database was saved to storage. [This information](https://redis.io/docs/manual/persistence/) explains [!DNL Redis's] persistence. 
+[!DNL Redis] is a memory resident and saves the information to storage. The **[!UICONTROL Redis changes since last db save]** frame indicates the number of changes to memory that have occurred since the last database was saved to storage. [This information](https://redis.io/docs/manual/persistence/) explains [!DNL Redis's] persistence.
 
 ## [!UICONTROL Redis synchronization from Log]
 
