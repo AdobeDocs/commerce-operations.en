@@ -32,7 +32,7 @@ This frame displays the net.connectedClients value from the [!DNL New Relic Redi
 
 ![Commands per second by node](../../assets/tools/redis-tab-5.jpg)
 
-This frame will show the [!DNL Redis] commands by node per second over the selected time frame. 
+This frame shows the [!DNL Redis] commands by node per second over the selected time frame. 
 
 ## [!UICONTROL Redis % of memory used]
 
