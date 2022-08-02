@@ -12,7 +12,7 @@ description: Learn about caching and how to configure cache mechanisms for the A
   - [Redis](config-redis.md)
   - File system (default): No configuration is necessary to use default file system caching.
 
-- Set up the [Varnish](config-varnish.md) without modifying the [!DNL Commerce]configuration.
+- Set up the [Varnish](config-varnish.md) without modifying the [!DNL Commerce] configuration.
 
 ## Caching terminology
 

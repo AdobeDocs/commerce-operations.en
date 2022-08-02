@@ -137,7 +137,7 @@ The procedures that follows show how to set the application mode in an Apache vi
 >
 >This section assumes that you have already set up your virtual host. If you have not, consult a resource such as [this DigitalOcean tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
 
-**To Specify a bootstrap variable for Apache on CentOS**:
+**To specify a bootstrap variable for Apache on CentOS**:
 
    1. As a user with `root` privileges, open `/etc/httpd/conf/httpd.conf` in a text editor.
 

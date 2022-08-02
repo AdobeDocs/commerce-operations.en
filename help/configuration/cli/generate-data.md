@@ -118,7 +118,7 @@ Generates attribute sets with specified configuration. XML profile node:
 
 ### Bundle products
 
-Generates bundle products. Generated bundle selections are not displayed individually in [catalog](https://glossary.magento.com/catalog). Products are uniformly distributed per categories and websites. If  `assign_entities_to_all_websites` from the profile is set to `1`. Products are assigned to all websites.
+Generates bundle products. Generated bundle selections are not displayed individually in the [catalog](https://glossary.magento.com/catalog). Products are uniformly distributed per categories and websites. If  `assign_entities_to_all_websites` from the profile is set to `1`. Products are assigned to all websites.
 
 XML profile node:
 
@@ -190,7 +190,7 @@ Sets values for config fields. XML profile node:
 
 Generates Configurable products. Generated configurable options are not displayed individually in the catalog. Products are uniformly distributed per categories and websites. If `assign_entities_to_all_websites` is set to `1`, products are assigned to all websites.
 
-We support the following XML node formats:
+The following XML node formats are supported:
 
 - Distribution per Default and pre-defined attribute sets:
 

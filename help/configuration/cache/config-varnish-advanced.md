@@ -11,7 +11,7 @@ See the [Varnish Reference Manual](https://varnish-cache.org/docs/6.3/reference/
 
 ## Health check
 
-The Varnish health check feature polls the Commerce server to determine whether it is responding in a timely manner. If it is responding normally, fresh content will be regenerated after the Time to Live (TTL) period has expired. If not, Varnish always serves stale content.
+The Varnish health check feature polls the Commerce server to determine whether it is responding in a timely manner. If it is responding normally, fresh content is regenerated after the Time to Live (TTL) period expires. If not, Varnish always serves stale content.
 
 Commerce defines the following default health check:
 

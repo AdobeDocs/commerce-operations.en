@@ -19,7 +19,7 @@ This section discusses how to optionally create a cron group for a custom module
 
 A _cron group_ is a logical group that enables you to easily run cron for more than one process at a time. Most Commerce modules use the `default` cron group; some modules use the `index` group.
 
-If you are implementing cron for a custom module, it is your choice of whether or not to use the `default` group or a different group.
+If you are implementing cron for a custom module, you can choose to use the `default` group or a different group.
 
 **To configure a cron group for your module**:
 

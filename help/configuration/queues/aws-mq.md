@@ -7,7 +7,7 @@ description: Learn how to configure Commerce to use the AWS MQ service.
 
 As of Commerce 2.4.3, Amazon Message Queue (MQ) is available as a cloud-ready replacement for on-premises message queue instances.
 
-To create a message queue on AWS, see [Setting up Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) in the_ AWS documentation_.
+To create a message queue on AWS, see [Setting up Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) in the _AWS documentation_.
 
 ## Configure Commerce for AWS MQ
 

@@ -54,7 +54,7 @@ See the following references:
 
 You can find the scope code either in the Commerce database or in the Commerce Admin.
 
-**To Find the scope code in the Admin**:
+**To find the scope code in the Admin**:
 
 1. Log in to the Admin as a user who can view websites and store views.
 1. Click **[!UICONTROL Stores]** > Settings > **[!UICONTROL All Stores]**.
@@ -260,7 +260,7 @@ Result:
 web/unsecure/base_url - http://example.com/
 ```
 
-**Show the base URL for the `base` website**:
+**To show the base URL for the `base` website**:
 
 ```bash
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
@@ -272,7 +272,7 @@ Result:
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
-**Show the base URL for the `default` store**:
+**To show the base URL for the `default` store**:
 
 ```bash
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url

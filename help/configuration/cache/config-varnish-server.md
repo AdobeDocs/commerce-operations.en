@@ -7,7 +7,7 @@ description: Learn how to configure your web server to work with Varnish.
 
 Configure your web server to listen on a port other than the default port 80 because Varnish responds directly to incoming HTTP requests, not the web server.
 
-In the sections that follow, we use port 8080 as an example.
+The following sections use port 8080 as an example.
 
 **To change the Apache 2.4 listen port**:
 
@@ -47,7 +47,7 @@ To modify the Varnish system configuration:
 
 ### Modify the default VCL
 
-This section discusses how to provide minimal configuration so Varnish returns HTTP response headers. This enables you to verify that Varnish works before you configure the COmmerce application to use Varnish.
+This section discusses how to provide minimal configuration so Varnish returns HTTP response headers. This enables you to verify that Varnish works before you configure the [!DNL Commerce] application to use Varnish.
 
 To minimally configure Varnish:
 
