@@ -20,7 +20,7 @@ This frame indicates the environment, [!DNL Redis] role, software version, and n
 
 ![Redis node roles timeline](../../assets/tools/redis-tab-3.jpg)
 
-This frame will indicate the loss of [!DNL Redis] service in particular roles. If a line dips, it indicates that the particular role that the line represents has lost a node or nodes. 
+This frame indicates the loss of [!DNL Redis] service in particular roles. If a line dips, it indicates that the particular role that the line represents has lost a node or nodes. 
 
 ## [!UICONTROL Connection to Redis]
 
