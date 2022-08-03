@@ -5,7 +5,7 @@ description: Learn about the [!UICONTROL summary] tab of [!DNL Observation for A
 
 # The [!UICONTROL Summary] tab
 
-The **[!UICONTROL Summary]** tab of Observation for Adobe Commerce is intended to quickly see some of the problems experienced by sites to help you auto-resolve or identify potential root causes of site  problems. The additional tabs provide deeper level information on component services, database, infrastructure, and process states.
+The [!UICONTROL Summary] tab of Observation for Adobe Commerce is intended to quickly see some of the problems experienced by sites to help you auto-resolve or identify potential root causes of site  problems. The additional tabs provide deeper level information on component services, database, infrastructure, and process states.
 
 ## [!UICONTROL Transaction Overview]
 
@@ -23,17 +23,17 @@ The **[!UICONTROL Summary]** tab of Observation for Adobe Commerce is intended t
 
 Looking at the **[!UICONTROL Transaction Overview]** frame, there were almost 53,000 transactions with an average APDEX score of .76 and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter time frame may show deviation from that current average if there is an APDEX hit during a short timeframe.
 
-## [!UICONTROL 404 page Errors frame]
+## [!UICONTROL 404 page errors frame]
 
 ![404 page errors frame](../../assets/tools/404-page-errors.jpg)
 
-This frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) and the count of 404 page errors during the selected timeframe.
+The **[!UICONTROL 404 page errors]** frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) and the count of 404 page errors during the selected timeframe.
 
 ## [!UICONTROL % of Storage Free frame]
 
 ![percent of Storage Free frame](../../assets/tools/percent-of-storage-free.jpg)
 
-This frame displays the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
+The **[!UICONTROL % of Storage Free]** frame displays the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
 
 ## [!UICONTROL % of system memory that is free frame]
 
@@ -51,37 +51,37 @@ This frame displays, by node, the amount of SWAP memory that is free on the node
 
 ![CPU percent by host](../../assets/tools/cpu-percent-by-host.jpg)
 
-The aggregate of all environments and nodes is displayed in this frame. You should deselect the non-production environments. You should note any instances where all nodes for the production environment are not present. This article gives tips on high CPU utilization: [Troubleshoot performance using New Relic on Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
+The aggregate of all environments and nodes is displayed in the **[!UICONTROL CPU % by host]** frame. You should deselect the non-production environments. You should note any instances where all nodes for the production environment are not present. This article gives tips on high CPU utilization: [Troubleshoot performance using New Relic on Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
 
 ## [!UICONTROL Alerts during timeframe]
 
 ![alerts during timeframe](../../assets/tools/alerts-during-timeframe.jpg)
 
-The Alerts during timeframe will display all alerts, including the Managed Alerts added by Magento Support.
+The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the [!UICONTROL Managed Alerts] added by Magento Support.
 
 ## [!UICONTROL CPU Usage]
 
 ![CPU usage](../../assets/tools/cpu-usage.jpg)
 
-If this frame is blank, it is an indicator that the infrastructure application of New Relic is not enabled. See [this information]() on New Relic to enable it.
+If the **[!UICONTROL CPU Usage]** frame is blank, it is an indicator that the infrastructure application of [!DNL New Relic] is not enabled. If your site is on Starter, you will not see this information. If your site is on Pro, please open a support ticket to have [!DNL New Relic Infrastructure] enabled for your site.
 
 ## [!UICONTROL Average Response Time]
 
 ![average response time](../../assets/tools/average-response-time.jpg)
 
-This is the graph showing the average response time for transactions (web and others).
+The **[!UICONTROL Average Response Time]** graph shows the average response time for transactions (web and others).
 
 ## [!UICONTROL Long duration cron_schedule updates]
 
 ![long duration cron_schedule updates](../../assets/tools/long-duration-cron-schedule-updates.jpg)
 
-The `cron_schedule` table is written to at the start and finish of cron jobs. Long duration cron jobs could indicate latency in updating this table, which can indicate cron stackup or an issue with how crons are scheduled.
+The **[!UICONTROL cron_schedule]** table is written to at the start and finish of cron jobs. Long duration cron jobs could indicate latency in updating this table, which can indicate cron stackup or an issue with how crons are scheduled.
 
 ## [!UICONTROL Response Code]
 
 ![response code](../../assets/tools/response-code.jpg)
 
-This frame is a good indication of web traffic and the response code of requests. It is [!DNL New Relic] transaction data, and it is faceted by the `httpResponseCode` returned.
+The **[!UICONTROL Response Code]** frame is a good indication of web traffic and the response code of requests. It is [!DNL New Relic] transaction data, and it is faceted by the `httpResponseCode` returned.
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
@@ -93,13 +93,13 @@ This frame displays the web traffic volume of one week ago compared to current v
 
 ![deployment log entries](../../assets/tools/deployment-log-entries.jpg)
 
-This frame displays a count of deployment and cloud log entries and facets the counts by the deployment log name.
+The **[!UICONTROL Deployment Log Entries]** frame displays a count of deployment and cloud log entries and facets the counts by the deployment log name.
 
 ## [!UICONTROL Deployment State]
 
 ![deployment state](../../assets/tools/deployment-state.jpg)
 
-This frame facets particular deployment phrases from the deploy logs. Here are examples of phrases counted in the log and the facet name: 
+The **[!UICONTROL Deployment State]** frame facets particular deployment phrases from the deploy logs. Here are examples of phrases counted in the log and the facet name: 
 
 **Deployment Log Phrases:**
 
@@ -116,7 +116,7 @@ This frame facets particular deployment phrases from the deploy logs. Here are e
 
 ![IP frequency](../../assets/tools/ip-frequency.jpg)
 
-This frame counts the (‘MISS’ and ‘PASS’) statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
+The **[!UICONTROL IP Frequency]** frame counts the (‘MISS’ and ‘PASS’) statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -128,7 +128,7 @@ This frame displays the URLs with the longest duration in response. It may indic
 
 ![api calls by ip](../../assets/tools/api-calls-by-ip.jpg)
 
-This frame helps identify heavy traffic against the APIs and the IP addresses making requests from the API URLs.
+The **[!UICONTROL API Calls by IP]** frame helps identify heavy traffic against the APIs and the IP addresses making requests from the API URLs.
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
@@ -140,13 +140,13 @@ This frame provides details of heavy traffic against the APIs and details of the
 
 ![ip frequency rate per minute](../../assets/tools/ip-frequency-rate-per-minute.jpg)
 
-Sometimes it is hard to tell which IP address has the most requests on the other frames. This one shows the rate per minute per IP address.
+Sometimes it is hard to tell which IP address has the most requests on the other frames. This frame shows the rate per minute per IP address.
 
 ## [!UICONTROL Potential Bots]
 
 ![potential bots](../../assets/tools/potential-bots.jpg)
 
-This frame looks at requests with a `request_user_agent` name like NULL or ‘%bot%’. Typically, the ‘%bot%’ `request_user_agent` will follow the policy setup in `robots.txt` file.
+The **[!UICONTROL Potential Bots]** frame looks at requests with a `request_user_agent` name like NULL or ‘%bot%’. Typically, the ‘%bot%’ `request_user_agent` will follow the policy setup in `robots.txt` file.
 
 ## [!UICONTROL Transaction Errors]
 
