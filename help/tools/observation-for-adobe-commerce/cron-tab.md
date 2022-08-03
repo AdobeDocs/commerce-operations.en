@@ -4,7 +4,7 @@ description: Learn about the [!UICONTROL Cron] tab of [!DNL Observation for Adob
 ---
 # The [!UICONTROL Cron] tab
 
-The [!UICONTROL Cron] tab is an attempt to quickly isolate issues and causes of cron problems.
+This tab is an attempt to quickly isolate issues and causes of cron problems.
 
 ## [!UICONTROL Cron transaction duration in seconds]
 
@@ -40,13 +40,13 @@ This frame looks at cron schedule table locks across a selected timeframe.
 
 ![Cron schedule table locks](../../assets/tools/cron-tab-6.jpg)
 
-This frame looks at the number of crons cleaned up across a selected timeframe. If no data is displayed in this frame, it could indicate a problem with crons running correctly. If the cron job schedule is not cleaned,crons will not run optimally and may take longer to run.
+The **[!UICONTROL Cron schedule clean cron fired]** frame looks at the number of crons cleaned up across a selected timeframe. If no data is displayed in this frame, it could indicate a problem with crons running correctly. If the cron job schedule is not cleaned, crons will not run optimally and may take longer to run.
 
 ## [!UICONTROL Cron schedule clean records details table]
 
 ![Cron schedule clean records details table](../../assets/tools/cron-tab-7.jpg)
 
-This table provides details on the job to clean records from the cron_schedule table across a selected timeframe.
+The **[!UICONTROL Cron schedule clean records details table]** table provides details on the job to clean records from the `cron_schedule` table across a selected timeframe.
 
 ## [!UICONTROL cron_schedule table updates]
 
@@ -58,4 +58,4 @@ This frame looks at the number of cron scheduled table updates across a selected
 
 ![Datastore Operations Tables](../../assets/tools/cron-tab-9.jpg)
 
-This frame looks at database table operations, including [!UICONTROL SELECT], [!UICONTROL DELETE], and [!UICONTROL UPDATE] across a selected timeframe. This frame shows the database tables with the highest operation frequency against them.
+This frame looks at database table operations, including `SELECT`, `DELETE`, and `UPDATE` across a selected timeframe. This frame shows the database tables with the highest operation frequency against them.
