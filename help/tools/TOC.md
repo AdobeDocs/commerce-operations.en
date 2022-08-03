@@ -29,3 +29,4 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [The Deploy tab](observation-for-adobe-commerce/deploy-tab.md)
   - [The Redis tab](observation-for-adobe-commerce/redis-tab.md)
   - [The CDN tab](observation-for-adobe-commerce/cdn-tab.md)
+  - [The Cron tab](observation-for-adobe-commerce/cron-tab.md)
