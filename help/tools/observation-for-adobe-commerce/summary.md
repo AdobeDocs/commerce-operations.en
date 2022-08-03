@@ -375,7 +375,7 @@ The **[!UICONTROL Order transactions (default?)]** frame looks for transactions 
 * '%NoNodesAvailableException%' as 'no_alive_nodes'
 * '%PHP Fatal error: Uncaught Error: Wrong parameters for Elasticsearch%' as 'wrong_param'
 * '%You can fix this issue by upgrading the Elasticsearch service on your Magento Cloud infrastructure to version%' as 'ver_err'
-* '%cluster health status changed from [YELLOW] to [RED] (reason:%' as 'yel_red'
+* '%cluster health status changed from \[YELLOW\] to \[RED\] (reason:%' as 'yel_red'
 * '%No space left on device%' as 'no_space'
 * '% Failed to execute [SearchRequest{searchType=%' as 'failed_query'
 
