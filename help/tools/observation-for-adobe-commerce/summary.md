@@ -377,7 +377,7 @@ The **[!UICONTROL Order transactions (default?)]** frame looks for transactions 
 * '%You can fix this issue by upgrading the Elasticsearch service on your Magento Cloud infrastructure to version%' as 'ver_err'
 * '%cluster health status changed from \[YELLOW\] to \[RED\] (reason:%' as 'yel_red'
 * '%No space left on device%' as 'no_space'
-* '% Failed to execute [SearchRequest{searchType=%' as 'failed_query'
+* '% Failed to execute \[SearchRequest\{searchType\=%' as 'failed_query'
 
 ## [!UICONTROL Cron view]
 
@@ -429,26 +429,4 @@ This **[!UICONTROL Datastore Operations Tables]** frame displays the top 25 oper
 * '%full_page%' as 'full_page_cache_flush'
 * '%config_webservice%' as 'config_webserv_cache_flush'
 * '%translate%' as 'translate_cache_flush'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
