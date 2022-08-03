@@ -152,39 +152,39 @@ The **[!UICONTROL Potential Bots]** frame looks at requests with a `request_user
 
 ![transaction errors](../../assets/tools/transaction-errors.jpg)
 
-This frame displays the count of transaction error from [!DNL New Relic].
+The **[!UICONTROL Transaction Errors]** frame displays the count of transaction error from [!DNL New Relic].
 
 ## [!UICONTROL Nginx access by node]
 
 ![nginx access by node](../../assets/tools/nginx-access-by-node.jpg)
 
-This frame looks at counts from the `access.log` by node. It is helpful to see if load is evenly distributed. It often shows when a node drops. This will also show load across the site.
+The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access.log` by node. It is helpful to see if load is evenly distributed. It often shows when a node drops. This will also show load across the site.
 
 ## [!UICONTROL Galera Log]
 
 ![galera log](../../assets/tools/galera-log.jpg)
 
-[Galera](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the Galera cluster. These signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the Galera cluster state changes.
+[Galera](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the [!UICONTROL Galera] cluster. These signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the [!UICONTROL Galera] cluster state changes.
 
-**List of Galera state changes:**
+**List of [!UICONTROL Galera] state changes:**
 
 * '%1047 WSREP has not yet prepared node for application use%') as 'node_not_prep_for_use'
-* '%[ERROR] WSREP: Failed to read from: wsrep_sst_xtrabackup-v2%') as 'xtrabackup_read_fail'
-* '%[ERROR] WSREP: Process completed with error: wsrep_sst_xtrabackup-v2 %') as 'xtrabackup_compl_w_err'
-* '%[ERROR] WSREP: rbr write fail%') as 'rbr_write_fail'
+* '%\[ERROR\] WSREP: Failed to read from: wsrep_sst_xtrabackup-v2%') as 'xtrabackup_read_fail'
+* '%\[ERROR\] WSREP: Process completed with error: wsrep_sst_xtrabackup-v2 %') as 'xtrabackup_compl_w_err'
+* '%\[ERROR\] WSREP: rbr write fail%') as 'rbr_write_fail'
 * '%self-leave%') as 'susp_node'
 * '%members = 3/3 (joined/total)%') as '3of3'
 * '%members = 2/3 (joined/total)%') as '2of3'
 * '%members = 2/2%') as '2of2' • '%members = 1/2%') as '1of2' • '%members = 1/3%') as '1of3'
 * '%members = 1/1%') as '1of1'
-* '%[Note] /usr/sbin/mysqld (mysqld 10.%') as 'sql_restart'
+* '%\[Note\] /usr/sbin/mysqld (mysqld 10.%') as 'sql_restart'
 * '%Quorum: No node with complete state:%') as 'no_node_count'
 * '%WSREP: Member 0%') as 'mem_0'
 * '%WSREP: Member 1.0%') as 'mem_1'
 * '%WSREP: Member 2%') as 'mem2'
 * '%WSREP: Synchronized with group, ready for connections%') as 'ready'
 * '%/usr/sbin/mysqld, Version:%') as 'mysql_restart_mysql.slow'
-* ‘%[Note] WSREP: New cluster view: global state:%') as 'galera_cluster_view_chng'
+* ‘%\[Note\] WSREP: New cluster view: global state:%') as 'galera_cluster_view_chng'
 
 These signals may indicate storage, memory, or query issues if the state changes frequently.
 
@@ -195,41 +195,41 @@ These signals may indicate storage, memory, or query issues if the state changes
 **List of database errors or messages detected:**
 
 * '%Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size%') as 'temp_tbl_buff_pool'
-* '%[ERROR] WSREP: rbr write fail%') as 'rbr_write_fail'
+* '%\[ERROR\] WSREP: rbr write fail%') as 'rbr_write_fail'
 * '%mysqld: Disk full%') as 'disk_full'
 * '%Error number 28%') as 'err_28'
 * '%rollback%') as 'rollback'
 * '%Foreign key constraint fails for table%') as 'foreign_key_constraint'
 * '%Error_code: 1114%') as 'sql_1114_full'
-* '%CRITICAL: SQLSTATE[HY000] [2006] MySQL server has gone away%') as 'sql_gone'
-* '%SQLSTATE[HY000] [1040] Too many connections%') as 'sql_1040'
-* '%CRITICAL: SQLSTATE[HY000] [2002]%') as 'sql_2002'
-* '%SQLSTATE[08S01]:%') as 'sql_1047'
-* '%[Warning] Aborted connection%') as 'aborted_conn'
-* '%SQLSTATE[23000]: Integrity constraint violation:%') as 'sql_23000'
+* '%CRITICAL: SQLSTATE\[HY000\] \[2006\] MySQL server has gone away%') as 'sql_gone'
+* '%SQLSTATE\[HY000\] \[1040\] Too many connections%') as 'sql_1040'
+* '%CRITICAL: SQLSTATE\[HY000\] \[2002\]%') as 'sql_2002'
+* '%SQLSTATE\[08S01\]:%') as 'sql_1047'
+* '%\[Warning\] Aborted connection%') as 'aborted_conn'
+* '%SQLSTATE\[23000\]: Integrity constraint violation:%') as 'sql_23000'
 * '%1205 Lock wait timeout%') as 'sql_1205'
-* '%SQLSTATE[HY000] [1049] Unknown database%') as 'sql_1049'
-* '%SQLSTATE[42S02]: Base table or view not found:%') as 'sql_42S02'
+* '%SQLSTATE\[HY000\] \[1049\] Unknown database%') as 'sql_1049'
+* '%SQLSTATE\[42S02\]: Base table or view not found:%') as 'sql_42S02'
 * '%General error: 1114%') as 'sql_1114'
-* '%SQLSTATE[40001]%') as 'sql_1213'
-* '%SQLSTATE[42S22]: Column not found: 1054 Unknown column%') as 'sq1_1054'
-* '%SQLSTATE[42000]: Syntax error or access violation:%') as 'sql_42000'
-* '%SQLSTATE[21000]: Cardinality violation:%') as 'sql_1241'
-* '%SQLSTATE[22003]:%') as 'sql_22003'
-* '%SQLSTATE[HY000] [9000] Client with IP address%') as 'sql_9000'
-* '%SQLSTATE[HY000]: General error: 2014%') as 'sql_2014'
+* '%SQLSTATE\[40001\]%') as 'sql_1213'
+* '%SQLSTATE\[42S22\]: Column not found: 1054 Unknown column%') as 'sq1_1054'
+* '%SQLSTATE\[42000\]: Syntax error or access violation:%') as 'sql_42000'
+* '%SQLSTATE\[21000\]: Cardinality violation:%') as 'sql_1241'
+* '%SQLSTATE\[22003\]:%') as 'sql_22003'
+* '%SQLSTATE\[HY000\] \[9000\] Client with IP address%') as 'sql_9000'
+* '%SQLSTATE\[HY000\]: General error: 2014%') as 'sql_2014'
 * '%1927 Connection was killed%') as 'sql_1927'
-* '%1062 [ERROR] InnoDB:%') as 'sql_1062_e'
-* '%[Note] WSREP: Flushing memory map to disk...%') as 'mem_map_flush'
+* '%1062 \[\ERROR\] InnoDB:%') as 'sql_1062_e'
+* '%\[Note\] WSREP: Flushing memory map to disk...%') as 'mem_map_flush'
 * '%Internal MariaDB error code: 1146%') as 'sql_1146'
-* '%Internal MariaDB error code: 1062%') as 'sql_1062' • '%1062 [Warning] InnoDB:%') as 'sql_1062_w'
+* '%Internal MariaDB error code: 1062%') as 'sql_1062' • '%1062 \[Warning\] InnoDB:%') as 'sql_1062_w'
 * '%Internal MariaDB error code: 1064%') as 'sql_1064'
 * '%InnoDB: Assertion failure in file%') as 'assertion_err'
 * '%mysqld_safe Number of processes running now: 0%') as 'mysql_oom'
-* '%[ERROR] mysqld got signal%') as 'mysql_sigterm'
+* '%\[ERROR\] mysqld got signal%') as 'mysql_sigterm'
 * '%1452 Cannot add%') as 'sql_1452'
 * '%ERROR 1698%') as 'sql_1698'
-* '%SQLSTATE[HY000]: General error: 3%') as 'cnt_wrt_tmp'
+* '%SQLSTATE\[HY000\]: General error: 3%') as 'cnt_wrt_tmp'
 * '%General error: 1 %') as 'sql_syntax’
 * '%42S22%') as 'sql_42S22'
 * '%InnoDB: Error (Duplicate key)%') as 'innodb_dup_key'
@@ -238,21 +238,21 @@ These signals may indicate storage, memory, or query issues if the state changes
 
 ![database traces](../../assets/tools/database-traces.jpg)
 
-This frame looks at data from the [sql trace](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) entity of [!DNL New Relic] and returns the path of the trace.
+The **[!UICONTROL Database traces]** frame looks at data from the [sql trace](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) entity of [!DNL New Relic] and returns the path of the trace.
 
-## Database mysql-slow.log
+## [!UICONTROL Database mysql-slow.log]
 
 ![database mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
 
-This frame does a count of entries in the [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) by query request type. It isolates time frames visually that might be of interest in the mysql-slow.log (slow query log). Queries of tables without indices, or queries that update large tables may block other queries.
+The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in the [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) by query request type. It isolates time frames visually that might be of interest in the mysql-slow.log (slow query log). Queries of tables without indices, or queries that update large tables may block other queries.
 
-## Redis synchronization from Log
+## [!UICONTROL Redis synchronization from Log]
 
 ![redis synchronization from log](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[Redis](https://redis.io/docs/about/) is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. It can do database and session caching if configured. This frame focuses on [Redis synchronization](https://redis.io/docs/manual/replication/). The larger the Redis dataset, the more likely that there will be problems with synchronization (more data to keep synchronized).
+[Redis](https://redis.io/docs/about/) is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. It can do database and session caching if configured. The **[!UICONTROL Redis synchronization from Log]** frame focuses on [Redis synchronization](https://redis.io/docs/manual/replication/). The larger the [!DNL Redis] dataset, the more likely that there will be problems with synchronization (more data to keep synchronized).
 
-**Redis errors and messages**
+**[!DNL Redis] errors and messages**
 
 * '%SLAVE synchronization: No space left on device%') as 'space'
 * '%Server started, Redis version%') as 'serv_start'
@@ -277,13 +277,13 @@ This frame does a count of entries in the [mysql-slow.log](https://dev.mysql.com
 
 ![PHP process states](../../assets/tools/php-process-states.jpg)
 
-The way that PHP process(es) behave is dependent upon [configuration](https://www.php.net/manual/en/install.fpm.configuration.php). The configuration is complex with many variables and options. This frame helps to understand when PHP processes are terminated and restarted.
+The way that PHP process(es) behave is dependent upon [configuration](https://www.php.net/manual/en/install.fpm.configuration.php). The configuration is complex with many variables and options. The **[!UICONTROL PHP process states]** frame helps to understand when PHP processes are terminated and restarted.
 
-## PHP errors
+### [!UICONTROL PHP errors]
 
 ![php errors](../../assets/tools/php-errors.jpg)
 
-This frame shows the number of php errors with workers across the selected timeframe. [Adobe Commerce PHP settings](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+The **[!UICONTROL PHP errors]** frame shows the number of php errors with workers across the selected timeframe. For more information, refer [Adobe Commerce PHP settings](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
 
 **PHP errors and messages**
 
@@ -303,37 +303,37 @@ This frame shows the number of php errors with workers across the selected timef
 
 ![php processes](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] used by nginx. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). This frame shows the number of PHP processes running at a particular time in the selected timeline.
+[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] used by nginx. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). The **[!UICONTROL PHP processes]** frame shows the number of PHP processes running at a particular time in the selected timeline.
 
 ## [!UICONTROL Secondary processes]
 
 ![secondary processes](../../assets/tools/secondary-processes.jpg)
 
-**[!UICONTROL Secondary processes]** can impact site response. This frame can indicate a process or processes that may be adding load to the site. The database primarily has the most secondary processes running.
+Secondary processes can impact site response. The **[!UICONTROL Secondary processes]** frame can indicate a process or processes that may be adding load to the site. The database primarily has the most secondary processes running.
 
 ## [!UICONTROL Traffic vs Week Ago]
 
 ![traffic vs week ago](../../assets/tools/traffic-vs-week-ago.jpg)
 
-This frame is looking at the website traffic (requests) from the Fastly logs with (‘MISS’, ‘PASS’) cache statuses. These requests add load to the origin servers. This frame displays the web request volume versus one week ago during the same timeframe.
+The **[!UICONTROL Traffic vs Week Ago]** frame looks at the website traffic (requests) from the [!DNL Fastly] logs with (‘MISS’, ‘PASS’) cache statuses. These requests add load to the origin servers. This frame displays the web request volume versus one week ago during the same timeframe.
 
 ## [!UICONTROL Fastly Cache]
 
 ![fastly Cache](../../assets/tools/fastly-cache.jpg)
 
-This shows an aggregate view of the cache status of requests from the Fastly logs. If you click on ERROR, it will show the % of errors in the requests. This will typically increase when the origin server is not responding quickly enough to page requests.
+The **[!UICONTROL Fastly Cache]** frame shows an aggregate view of the cache status of requests from the Fastly logs. If you click on ERROR, it will show the % of errors in the requests. This will typically increase when the origin server is not responding quickly enough to page requests.
 
 ## [!UICONTROL Page Rendering]
 
 ![page rendering](../../assets/tools/page-rendering.jpg)
 
-This frame displays the average page rendering duration from the page view source of New Relic as compared to the same time period the prior week.
+The **[!UICONTROL Page Rendering]** frame displays the average page rendering duration from the page view source of [!DNL New Relic] as compared to the same time period the prior week.
 
 ## [!UICONTROL Page loading detail]
 
 ![page loading detail](../../assets/tools/page-loading-detail.png)
 
-This frame describes the page loading events. It details on the meanings of these facets. Here is the query that is being run for this frame:
+The **[!UICONTROL Page loading detail]** frame describes the page loading events. It details on the meanings of these facets. Here is the query that is being run for this frame:
 
 SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint' , percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES
 
@@ -347,13 +347,13 @@ Transaction duration is in seconds. Depending on the transaction, it may impact 
 
 ![admin activities](../../assets/tools/admin-activities.jpg)
 
-This frame identifies transactions with an admin user.
+The **[!UICONTROL Admin Activities]** frame identifies transactions with an admin user.
 
 ## [!UICONTROL Order transactions (default?)]
 
 ![Order transactions default](../../assets/tools/order-transactions-default.jpg)
 
-This frame is looking for transactions `request.headers.host` from transactions where the name = 'WebTransaction/Action/checkout/onepage/success’ if the order success URL is different, this frame will not have data.
+The **[!UICONTROL Order transactions (default?)]** frame looks for transactions `request.headers.host` from transactions where the name = 'WebTransaction/Action/checkout/onepage/success’. If the order success URL is different, this frame will not have data.
 
 ## [!UICONTROL Elasticsearch Index information]
 
@@ -384,7 +384,7 @@ This frame is looking for transactions `request.headers.host` from transactions 
 
 ![cron view](../../assets/tools/cron-view.jpg)
 
-This frame is looking at the cron log for balance between the number of crons started versus the number of crons finishing.
+The **[!UICONTROL Cron view]** frame looks at the cron log for balance between the number of crons started versus the number of crons finishing.
 
 ## [!UICONTROL Cron error]
 
@@ -402,13 +402,13 @@ This frame is looking at the cron log for balance between the number of crons st
 
 ![cron_schedule table updates](../../assets/tools/cron-schedule-table-updates.jpg)
 
-This is looking at maximum duration in seconds where datastore operations updates involve the cron_schedule table. It is faceted on the SQL request type.
+The **[!UICONTROL cron_schedule table updates]** frame looks at maximum duration in seconds where datastore operations updates involve the cron_schedule table. It is faceted on the SQL request type.
 
 ## [!UICONTROL Datastore Operations Tables]
 
 ![datastore operations tables](../../assets/tools/datastore-operations-tables.jpg)
 
-This frame displays the top 25 operations by duration time, table name, and SQL request type. Hover over the spikes to see details of what table was being accessed and by what request type.
+This **[!UICONTROL Datastore Operations Tables]** frame displays the top 25 operations by duration time, table name, and SQL request type. Hover over the spikes to see details of what table was being accessed and by what request type.
 
 ## [!UICONTROL Cache Flush]
 
@@ -430,18 +430,6 @@ This frame displays the top 25 operations by duration time, table name, and SQL 
 * '%full_page%' as 'full_page_cache_flush'
 * '%config_webservice%' as 'config_webserv_cache_flush'
 * '%translate%' as 'translate_cache_flush'
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
