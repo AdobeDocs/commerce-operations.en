@@ -40,7 +40,7 @@ This frame looks at cron schedule table locks across a selected timeframe.
 
 ![Cron schedule table locks](../../assets/tools/cron-tab-6.jpg)
 
-This frame looks at the number of crons cleaned up across a selected timeframe. If no data is displayed in this frame, it could indicate a problem with crons running correctly. If the cron job schedule is not cleaned,crons will not run optimally and may take longer to run.
+This frame looks at the number of crons cleaned up across a selected timeframe. If no data is displayed in this frame, it could indicate a problem with crons running correctly. If the cron job schedule is not cleaned, crons will not run optimally and may take longer to run.
 
 ## [!UICONTROL Cron schedule clean records details table]
 
