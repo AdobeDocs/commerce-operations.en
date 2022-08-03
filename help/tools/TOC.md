@@ -23,4 +23,3 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [Introduction](observation-for-adobe-commerce/intro.md)
   - [How to access](observation-for-adobe-commerce/access.md)
   - [The Summary tab](observation-for-adobe-commerce/summary.md)
-  
