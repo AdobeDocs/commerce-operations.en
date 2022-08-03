@@ -169,7 +169,7 @@ When disabled, inventory check does not occur when adding a product to the shopp
 [Install extensions]: https://devdocs.magento.com/extensions/install/
 [cloud-extensions]: https://devdocs.magento.com/cloud/howtos/install-components.html
 
-[mrg]: https://devdocs.magento.com/guides/v2.4/mrg/intro.html
+[mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-async-order.html
 [DeferredTotalCalculating]: https://devdocs.magento.com/guides/v2.4/mrg/module-deferred-total-calculating.html
 [NegotiableQuoteAsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-negotiable-quote-async-order.html
