@@ -5,7 +5,7 @@ description: Read about the split database solution for Adobe Commerce and Magen
 
 # Overview of the split database solution
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
