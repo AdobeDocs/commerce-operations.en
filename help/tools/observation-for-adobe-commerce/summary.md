@@ -379,7 +379,6 @@ The **[!UICONTROL Order transactions (default?)]** frame looks for transactions 
 * '%No space left on device%' as 'no_space'
 * '% Failed to execute [SearchRequest{searchType=%' as 'failed_query'
 
-
 ## [!UICONTROL Cron view]
 
 ![cron view](../../assets/tools/cron-view.jpg)
