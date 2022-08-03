@@ -121,4 +121,3 @@ The **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]
 ![IP Frequency](../../assets/tools/cdn-tab-22.jpeg)
 
 The **[!UICONTROL IP Frequency]** frame counts the (‘MISS’ and ‘PASS’) statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website. This graph is also present on the summary tab and is placed here for easy comparison to more details on the [!DNL Fastly] log information displayed on this tab.
-
