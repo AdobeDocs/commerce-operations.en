@@ -120,7 +120,7 @@ The **[!UICONTROL IP Frequency]** frame counts the (‘MISS’ and ‘PASS’) s
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
-![ip response – top 20 urls in duration](../../assets/tools/ip-response%20%E2%80%93%20top-20-urls.jpg)
+![ip response – top 20 urls in duration](../../assets/tools/ip-response-top-20-urls.jpg)
 
 This frame displays the URLs with the longest duration in response. It may indicate large image files or pages, API or pages with the longest response duration.
 
@@ -430,4 +430,3 @@ This **[!UICONTROL Datastore Operations Tables]** frame displays the top 25 oper
 * '%full_page%' as 'full_page_cache_flush'
 * '%config_webservice%' as 'config_webserv_cache_flush'
 * '%translate%' as 'translate_cache_flush'
-
