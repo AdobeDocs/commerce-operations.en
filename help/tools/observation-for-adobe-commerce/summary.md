@@ -431,25 +431,3 @@ This **[!UICONTROL Datastore Operations Tables]** frame displays the top 25 oper
 * '%config_webservice%' as 'config_webserv_cache_flush'
 * '%translate%' as 'translate_cache_flush'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
