@@ -21,7 +21,7 @@ The [!UICONTROL Summary] tab of Observation for Adobe Commerce is intended to qu
 
 **Non-web:** Non-web transactions are not initiated with a web request. They can include non-web worker processes, background processes, scripts, message queue activity, and other tasks.
 
-Looking at the **[!UICONTROL Transaction Overview]** frame, there were almost 53,000 transactions with an average APDEX score of .76 and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter time frame may show deviation from that current average if there is an APDEX hit during a short timeframe.
+Looking at the **[!UICONTROL Transaction Overview]** frame, there were almost 53,000 transactions with an average APDEX score of .76 and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter timeframe may show deviation from that current average if there is an APDEX hit during a short timeframe.
 
 ## [!UICONTROL 404 page errors frame]
 
@@ -244,7 +244,7 @@ The **[!UICONTROL Database traces]** frame looks at data from the [sql trace](ht
 
 ![database mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
 
-The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in the [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) by query request type. It isolates time frames visually that might be of interest in the mysql-slow.log (slow query log). Queries of tables without indices, or queries that update large tables may block other queries.
+The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in the [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) by query request type. It isolates timeframes visually that might be of interest in the mysql-slow.log (slow query log). Queries of tables without indices, or queries that update large tables may block other queries.
 
 ## [!UICONTROL Redis synchronization from Log]
 
