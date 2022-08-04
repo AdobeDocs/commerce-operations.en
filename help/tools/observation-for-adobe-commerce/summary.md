@@ -377,13 +377,14 @@ The **[!UICONTROL Order transactions (default?)]** frame looks for transactions 
 * '%You can fix this issue by upgrading the Elasticsearch service on your Magento Cloud infrastructure to version%' as 'ver_err'
 * '%cluster health status changed from \[YELLOW\] to \[RED\] (reason:%' as 'yel_red'
 * '%No space left on device%' as 'no_space'
-* '% Failed to execute [SearchRequest{searchType=%' as 'failed_query'
+* '% Failed to execute &#91;SearchRequest&#123;searchType=%' as 'failed_query'
 
 ## [!UICONTROL Cron view]
 
 ![cron view](../../assets/tools/cron-view.jpg)
 
 The **[!UICONTROL Cron view]** frame looks at the cron log for balance between the number of crons started versus the number of crons finishing.
+
 
 ## [!UICONTROL Cron error]
 
