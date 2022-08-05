@@ -57,5 +57,4 @@ This frame looks at catalogsearch index tables across a selected timeframe. This
 
 ![product index table(s)](../../assets/tools/indexing-tab-4.jpg)
 
-This frame looks at product index tables across a selected timeframe. This query is looking at the 
-duration ofany datastore operations against tables with ‘%product%’ in the table name.
+This frame looks at product index tables across a selected timeframe. This query is looking at the duration of any datastore operations against tables with ‘%product%’ in the table name.
