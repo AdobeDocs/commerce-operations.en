@@ -4,13 +4,13 @@ description: Learn about the [!UICONTROL RabbitMQ] tab of [!DNL Observation for 
 ---
 # The [!UICONTROL RabbitMQ] tab
 
-The [!UICONTROL RabbitMQ] tab has information that is focused on RabbitMQ signals.
+The **[!UICONTROL RabbitMQ]** tab has information that is focused on [!DNL RabbitMQ] signals.
 
 ## [!UICONTROL RabbitMQ Infrastructure events]
 
 ![RabbitMQ Infrastructure events](../../assets/tools/rabbitmq-tab-1.jpeg)
 
-The **[!UICONTROL RabbitMQ Infrastructure events]** frame shows Infrastructure events that involve RabbitMQ that occurred across the selected timeframe:
+The **[!UICONTROL RabbitMQ Infrastructure events]** frame shows Infrastructure events that involve [!DNL RabbitMQ] that occurred across the selected timeframe:
 
 * %Response [error] for node [rabbit@host1]: unexpected http response from%') as 'unexpected_resp_node1'
 * '%Response [error] for node [rabbit@host2]: unexpected http response from%') as 'unexpected_resp_node2'
@@ -38,7 +38,7 @@ as 'node3_timeout_exceeded'
 
 ![RabbitMQ service start/stop signals](../../assets/tools/rabbitmq-tab-2.jpeg)
 
-This frame shows RabbitMQ service start/stop signals that occurred during the selected timeframe:
+This frame shows [!DNL RabbitMQ] service start/stop signals that occurred during the selected timeframe:
 
 * '%RabbitMQ is asked to stop...%') as 'rabbitmq_stop'
 * '%Starting RabbitMQ%') as 'rabbitmq_start'
@@ -47,7 +47,7 @@ This frame shows RabbitMQ service start/stop signals that occurred during the se
 
 ![RabbitMQ errors](../../assets/tools/rabbitmq-tab-3.jpeg)
 
-This frame shows RabbitMQ errors that occurred during the selected timeframe:
+This frame shows [!DNL RabbitMQ] errors that occurred during the selected timeframe:
 
 * '%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%'} as 'exit_timeout'
 * '%client unexpectedly closed TCP connection%') as 'client_closed_tcp_conn'
@@ -70,7 +70,7 @@ This frame shows RabbitMQ errors that occurred during the selected timeframe:
 
 ![RabbitMQ Message High-Level Summary status by Queue](../../assets/tools/rabbitmq-tab-5.jpeg)
 
-The **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** graph shows the number of published messages by the RabbitMQ queue for the selected timeframe.
+The **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** graph shows the number of published messages by the [!DNL RabbitMQ] queue for the selected timeframe.
 
 ## [!UICONTROL RabbitMQ Message Detail Summary]
 
@@ -85,29 +85,28 @@ The **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** graph s
 
 ![RabbitMQ Queue Consumption MB](../../assets/tools/rabbitmq-tab-7.jpeg)
 
-The **[!UICONTROL RabbitMQ Queue Consumption MB]** graph shows the number of bytes consumed by each RabbitMQ queue over the selected timeframe.
+The **[!UICONTROL RabbitMQ Queue Consumption MB]** graph shows the number of bytes consumed by each [!DNL RabbitMQ] queue over the selected timeframe.
 
 ## [!UICONTROL RabbitMQ Published Messages by Queue]
 
 ![RabbitMQ Published Messages by Queue](../../assets/tools/rabbitmq-tab-8.jpeg)
 
-The **[!UICONTROL RabbitMQ Published Messages by Queue]** graph shows the number of bytes consumed by each RabbitMQ queue over the selected timeframe.
+The **[!UICONTROL RabbitMQ Published Messages by Queue]** graph shows the number of bytes consumed by each [!DNL RabbitMQ] queue over the selected timeframe.
 
 ## [!UICONTROL RabbitMQ Published Message Throughput by Queue]
 
 ![RabbitMQ Published Message Throughput by Queue](../../assets/tools/rabbitmq-tab-9.jpeg)
 
-The **[!UICONTROL RabbitMQ Published Message Throughput by Queue]** graph shows the average number of published messages per second by each RabbitMQ queue over the selected timeframe.
+The **[!UICONTROL RabbitMQ Published Message Throughput by Queue]** graph shows the average number of published messages per second by each [!DNL RabbitMQ] queue over the selected timeframe.
 
 ## [!UICONTROL RabbitMQ Total Message Throughput by Queue]
 
 ![RabbitMQ Total Message Throughput by Queue](../../assets/tools/rabbitmq-tab-10.jpeg)
 
-The **[!UICONTROL RabbitMQ Total Message Throughput by Queue]** graph shows the average total number of messages per second by each 
-RabbitMQ queue over the selected timeframe.
+The **[!UICONTROL RabbitMQ Total Message Throughput by Queue]** graph shows the average total number of messages per second by each [!DNL RabbitMQ] queue over the selected timeframe.
 
 ## [!UICONTROL RabbitMQ Consumers by Queue]
 
 ![RabbitMQ Consumers by Queue](../../assets/tools/rabbitmq-tab-11.jpeg)
 
-The **[!UICONTROL RabbitMQ Consumers by Queue]** graph shows the average total number of consumers by each RabbitMQ queue over the selected timeframe.
+The **[!UICONTROL RabbitMQ Consumers by Queue]** graph shows the average total number of consumers by each [!DNL RabbitMQ] queue over the selected timeframe.
