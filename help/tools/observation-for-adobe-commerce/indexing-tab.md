@@ -4,13 +4,13 @@ description: Learn about the [!UICONTROL Indexing] tab of [!DNL Observation for 
 ---
 # The [!UICONTROL Indexing] tab
 
-The [!UICONTROL Indexing] tab attempts to explain issues with indexing and identify potential causes.
+The **[!UICONTROL Indexing]** tab attempts to explain issues with indexing and identify potential causes.
 
 ## [!UICONTROL Core index invalidated]
 
 ![Core index invalidated](../../assets/tools/indexing-tab-1.jpg)
 
-The [!UICONTROL Core index invalidated] frame looks at indexing invalidation across a selected timeframe. If indexing is happening at the same time as other resource-intensive crons, it will place a heavy load on the site resources.
+The **[!UICONTROL Core index invalidated]** frame looks at indexing invalidation across a selected timeframe. If indexing is happening at the same time as other resource-intensive crons, it will place a heavy load on the site resources.
 
 * '%Catalog Product Rule indexer has been invalidated%') as 'catalog_product_rule_idx_reset'
 * '%Catalog Rule Product indexer has been invalidated%') as 'catalog_rule_product_idx_reset'
@@ -57,5 +57,4 @@ This frame looks at catalogsearch index tables across a selected timeframe. This
 
 ![product index table(s)](../../assets/tools/indexing-tab-4.jpg)
 
-This frame looks at product index tables across a selected timeframe. This query is looking at the 
-duration ofany datastore operations against tables with ‘%product%’ in the table name.
+This frame looks at product index tables across a selected timeframe. This query is looking at the duration of any datastore operations against tables with ‘%product%’ in the table name.
