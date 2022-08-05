@@ -11,7 +11,7 @@ Adobe’s Managed Services is a hosted and managed application and infrastructur
 
 ## Benefits
 
-![Infographic showing benefits of Adobe Managed Services](../../assets/playbooks/managed-services-benefits.svg)
+![Infographic showing benefits of Adobe Managed Services](../../assets/playbooks/managed-services-benefits.png)
 
 ## Security
 
