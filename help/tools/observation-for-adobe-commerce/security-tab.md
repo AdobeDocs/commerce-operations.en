@@ -1,6 +1,6 @@
 ---
  title: "The Security tab"
- description: Learn how to start using the [!DNL Observation for Adobe Commerce] nerdlet by selecting the account and timeframe.
+ description: The **[!UICONTROL Security]** tab explains security issues and isolates their potential causes.
 ---
 
 # The [!UICONTROL Security] tab
