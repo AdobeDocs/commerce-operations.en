@@ -37,173 +37,173 @@ Review the following infographic for a more detailed comparison of key Managed S
 Adobe provides a set of services around the provisioning, development, staging and production of Adobe Commerce on Managed Services systems. For the development and deployment of the solution to proceed as efficiently as possible, it is important that the customer and partner understand and fulfill their roles, as described below:
 
 <table>
-	<thead>
-		<tr>
+    <thead>
+        <tr>
             <th></th>
             <th>Customer</th>
             <th>Partner</th>
             <th>Customer Success Engineer</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td colspan="4" style="background:lightgray;"><strong>Provisioning</strong></td>
-		</tr>
-		<tr>
-			<td>Cloud Region Selection</td>
-			<td>Owner</td>
-			<td>Contributor</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Instance Provisioning</td>
-			<td></td>
-			<td></td>
-			<td>Owner</td>
-		</tr>
-		<tr>
-			<td>Internal Network Configuration and Security</td>
-			<td></td>
-			<td></td>
-			<td>Owner</td>
-		</tr>
-		<tr>
-			<td>Adobe Commerce Application Provisioning</td>
-			<td></td>
-			<td></td>
-			<td>Owner</td>
-		</tr>
-		<tr>
-			<td>Adobe Commerce Source Code Access</td>
-			<td></td>
-			<td></td>
-			<td>Owner</td>
-		</tr>
-		<tr>
-			<td>CDN Service Provisioning</td>
-			<td></td>
-			<td></td>
-			<td>Owner</td>
-		</tr>
-		<tr>
-			<td>Local development environment</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td colspan="4" style="background:lightgray;"><strong>Development and QA</strong></td>
-		</tr>
-		<tr>
-			<td>Requirement gathering and project management</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Application Development</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Application Testing</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td colspan="4" style="background:lightgray;"><strong>Staging &amp; Transition</strong></td>
-		</tr>
-		<tr>
-			<td>Code Deployment to development, integration, and Staging</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Content deployment</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>User-acceptance Test development</td>
-			<td>Owner</td>
-			<td>Contributor</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>User-acceptance Testing</td>
-			<td>Owner</td>
-			<td>Contributor</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Custom monitoring requirements</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Customer-provided SSL Certificates</td>
-			<td>Owner</td>
-			<td></td>
-			<td>Contributor</td>
-		</tr>
-		<tr>
-			<td>Performance and Load Test Development</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Performance and Load Testing</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Customization Development and QA</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-			<td>Advisor</td>
-		</tr>
-		<tr>
-			<td>Runbook completion</td>
-			<td>Owner</td>
-			<td>Contributor</td>
-			<td>Contributor</td>
-		</tr>
-		<tr>
-			<td>Runbook Review</td>
-			<td></td>
-			<td></td>
-			<td>Owner</td>
-		</tr>
-		<tr>
-			<td colspan="4" style="background:lightgray;"><strong>Launch</strong></td>
-		</tr>
-		<tr>
-			<td>Go-live checklist</td>
-			<td>Contributor</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-		</tr>
-		<tr>
-			<td>Go-live event conference room</td>
-			<td>Contributor</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-		</tr>
+        </tr>
+    </thead>
+    <tbody>
         <tr>
-			<td>Production code deployment</td>
-			<td>Contributor</td>
-			<td>Contributor</td>
-			<td>Owner</td>
-		</tr>
+            <td colspan="4" style="background:lightgray;"><strong>Provisioning</strong></td>
+        </tr>
         <tr>
-	        <td colspan="4" style="background:lightgray;"><strong>Production</strong></td>
+            <td>Cloud Region Selection</td>
+            <td>Owner</td>
+            <td>Contributor</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Instance Provisioning</td>
+            <td></td>
+            <td></td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td>Internal Network Configuration and Security</td>
+            <td></td>
+            <td></td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td>Adobe Commerce Application Provisioning</td>
+            <td></td>
+            <td></td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td>Adobe Commerce Source Code Access</td>
+            <td></td>
+            <td></td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td>CDN Service Provisioning</td>
+            <td></td>
+            <td></td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td>Local development environment</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background:lightgray;"><strong>Development and QA</strong></td>
+        </tr>
+        <tr>
+            <td>Requirement gathering and project management</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Application Development</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Application Testing</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background:lightgray;"><strong>Staging &amp; Transition</strong></td>
+        </tr>
+        <tr>
+            <td>Code Deployment to development, integration, and Staging</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Content deployment</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>User-acceptance Test development</td>
+            <td>Owner</td>
+            <td>Contributor</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>User-acceptance Testing</td>
+            <td>Owner</td>
+            <td>Contributor</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Custom monitoring requirements</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Customer-provided SSL Certificates</td>
+            <td>Owner</td>
+            <td></td>
+            <td>Contributor</td>
+        </tr>
+        <tr>
+            <td>Performance and Load Test Development</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Performance and Load Testing</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Customization Development and QA</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+            <td>Advisor</td>
+        </tr>
+        <tr>
+            <td>Runbook completion</td>
+            <td>Owner</td>
+            <td>Contributor</td>
+            <td>Contributor</td>
+        </tr>
+        <tr>
+            <td>Runbook Review</td>
+            <td></td>
+            <td></td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background:lightgray;"><strong>Launch</strong></td>
+        </tr>
+        <tr>
+            <td>Go-live checklist</td>
+            <td>Contributor</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td>Go-live event conference room</td>
+            <td>Contributor</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td>Production code deployment</td>
+            <td>Contributor</td>
+            <td>Contributor</td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background:lightgray;"><strong>Production</strong></td>
         </tr>
         <tr>
             <td>Production infrastructure monitoring</td>
@@ -358,7 +358,7 @@ Adobe provides a set of services around the provisioning, development, staging a
             <td>Advisor</td>
             <td>Advisor</td>
         </tr>
-	</tbody>
+    </tbody>
 </table>
 
 ## Security
