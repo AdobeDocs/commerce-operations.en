@@ -163,7 +163,7 @@ When disabled, inventory check does not occur when adding a product to the shopp
 
 ## Slave connections
 
-Enabling SLAVE connections for the MySQL database and Redis can help to spread out the load across different nodes.
+You can help balance the load across different nodes by enabling secondary connections for the MySQL database and Redis instance.
 
 Adobe Commerce can read multiple databases or Redis asynchronously. Updating the .magento.env.yaml file by setting to true the values MYSQL_USE_SLAVE_CONNECTION and REDIS_USE_SLAVE_CONNECTION to use a read-only connection to the database to receive read-only traffic on a non-master node. This improves performance through load balancing because only one node needs to handle read-write traffic. Set to false to remove any existing read-only connection array from the env.php file.
 
