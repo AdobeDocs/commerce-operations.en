@@ -167,7 +167,7 @@ You can help balance the load across different nodes by enabling secondary conne
 
 Adobe Commerce can read multiple databases or Redis instances asynchronously. If you are using Commerce on cloud infrastructure, you can configure the secondary connections by editing the [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) and [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) values in the `.magento.env.yaml` file. Only one node needs to handle read-write traffic, so setting the variables to `true` results in creating a secondary connection for read-only traffic. Set the values to `false` to remove any existing read-only connection array from the `env.php` file.
 
-Example of how  `magento.env.yaml` should looks like
+Example of the `.magento.env.yaml` file:
 
 ```yml
 stage:
