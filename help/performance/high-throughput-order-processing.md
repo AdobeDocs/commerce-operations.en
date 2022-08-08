@@ -161,7 +161,7 @@ When disabled, inventory check does not occur when adding a product to the shopp
 
 **Enable Inventory Check On Cart Load** is enabled (set to Yes) by default. To disable the inventory check when loading the cart, set **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` in the Admin UI **Stores** > **Configuration** > **Catalog** > **Inventory** > **Stock Options** section. See [Configure Global Options][global] and [Catalog Inventory][inventory] in the _User Guide_.
 
-## Slave connections
+## Load balancing
 
 You can help balance the load across different nodes by enabling secondary connections for the MySQL database and Redis instance.
 
