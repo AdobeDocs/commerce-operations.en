@@ -52,7 +52,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
    bin/magento cron:remove
    ```
 
-1. Run a CLI command that starts all message queue consumers manually to ensure all messages are consumed.
+1. Start all message queue consumers manually to ensure all messages are consumed.
 
    ```bash
    bin/magento cron:run --group=consumers
