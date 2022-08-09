@@ -158,7 +158,7 @@ The **[!UICONTROL Transaction Errors]** frame displays the count of transaction 
 
 ![nginx access by node](../../assets/tools/nginx-access-by-node.jpg)
 
-The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access.log` by node. It is helpful to see if load is evenly distributed. It often shows when a node drops. This will also show load across the site.
+The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access.log` by node. It is helpful to see if the load is evenly distributed. It often shows when a node drops. This will also show load across the site.
 
 ## [!UICONTROL Galera Log]
 
