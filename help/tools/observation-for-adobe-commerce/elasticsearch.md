@@ -69,7 +69,7 @@ As indexes are created and updated, the index health may change.
 
 ![Elasticsearch Index size](../../assets/tools/elasticsearch-index-size.jpg)
 
-This frame indicates the index name and size across the selected time frame. It may indicate problems with how a site is indexing.
+This frame indicates the index name and size across the selected timeframe. It may indicate problems with how a site is indexing.
 
 ## [!UICONTROL Elasticsearch Errors]:
 
