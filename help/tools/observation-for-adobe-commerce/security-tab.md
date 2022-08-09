@@ -39,7 +39,7 @@ The **[!UICONTROL POST activities details table]** frame shows the POST activiti
 
 ## [!UICONTROL Guest Carts activities]
 
-The **[!UICONTROL Guest Carts activities]** frame shows the number of guest cart activities across a selected timeframe, faceted by IP address and URL accessed. Guest carts may be used in a carding attack and this frame is showing the total of requests where the guest-carts URLs are accessed.
+The **[!UICONTROL Guest Carts activities]** frame shows the number of guest cart activities across a selected timeframe, faceted by IP address and URL accessed. Guest carts may be used in a carding attack. This frame shows the total number of requests where the guest-carts URLs are accessed.
 ![guest-carts-activities](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpeg)
 
 ## [!UICONTROL API – forgot password, create account by Countries]
