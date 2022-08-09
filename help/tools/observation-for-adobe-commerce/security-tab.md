@@ -5,7 +5,7 @@
 
 # The [!UICONTROL Security] tab
 
-The **Security** tab explains security issues and isolates their potential causes. Further the frames of the tab are described.
+The **[!UICONTROL Security]** tab explains security issues and isolates their potential causes. Further, the frames of the tab are described.
 
 ## [!UICONTROL API calls by IP, details by URL]
 
