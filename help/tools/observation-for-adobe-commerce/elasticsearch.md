@@ -19,7 +19,7 @@ The **[!UICONTROL Active Primary Shards]** frame will show differing numbers dep
 
 From [!DNL Elasticsearch]: The definitive Guide [2.x]:
 
-“In [Dynamically Updatable Indices](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), we explained that a shard is a Lucene index and that an [!UICONTROL Elasticsearch] index is a collection of shards. Your application talks to an index, and Elasticsearch routes your requests to the appropriate shards. A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be more than sufficient for your needs — a single shard can hold a lot of data — but it limits your ability to scale.”
+“In [Dynamically Updatable Indices](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), we explained that a shard is a Lucene index and that an [!DNL Elasticsearch] index is a collection of shards. Your application talks to an index, and [!DNL Elasticsearch] routes your requests to the appropriate shards. A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be more than sufficient for your needs — a single shard can hold a lot of data — but it limits your ability to scale.”
 
 When an index is created, there are several shards created with that index. By default, five primary shards are allotted to each new index, meaning that an index can be spread across 5 nodes (one shard per node). There are also replica shards. These are primarily for failover. Replica shards can serve read requests.
 
