@@ -33,19 +33,19 @@ The **[!UICONTROL 404 page errors]** frame lists the [URI](https://en.wikipedia.
 
 ![percent of Storage Free frame](../../assets/tools/percent-of-storage-free.jpg)
 
-The **[!UICONTROL % of Storage Free]** frame displays the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is variance across three nodes. An example of variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
+The **[!UICONTROL % of Storage Free]** frame displays the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
 
 ## [!UICONTROL % of system memory that is free frame]
 
 ![percent of system memory that is free frame](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-This frame displays, by node, the amount of system memory that is free on each node.
+This frame displays by node, the amount of system memory that is free on each node.
 
 ## [!UICONTROL Swap memory free in bytes]
 
 ![swap memory free in bytes](../../assets/tools/swap-memory-free-in-bytes.jpg)
 
-This frame displays, by node, the amount of SWAP memory that is free on the node.
+The **[!UICONTROL Swap memory free in bytes]** frame displays, by node, the amount of SWAP memory that is free on the node.
 
 ## [!UICONTROL CPU % by host]
 
@@ -75,7 +75,7 @@ The **[!UICONTROL Average Response Time]** graph shows the average response time
 
 ![long duration cron_schedule updates](../../assets/tools/long-duration-cron-schedule-updates.jpg)
 
-The **[!UICONTROL cron_schedule]** table is written at the start and finish of cron jobs. Long duration cron jobs could indicate latency in updating this table, which can indicate cron stack up or an issue with how crons are scheduled.
+The **[!UICONTROL cron_schedule]** table is written to at the start and finish of cron jobs. Long duration cron jobs could indicate latency in updating this table, which can indicate cron stackup or an issue with how crons are scheduled.
 
 ## [!UICONTROL Response Code]
 
@@ -134,7 +134,7 @@ The **[!UICONTROL API Calls by IP]** frame helps identify heavy traffic against 
 
 ![api calls by ip details by url](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
-This frame provides details of heavy traffic against the APIs and details of the URLs making the requests.
+The **[!UICONTROL API Calls by IP, details by URL]** frame provides details of heavy traffic against the APIs and details of the URLs making the requests.
 
 ## [!UICONTROL IP Frequency Rate per minute]
 
@@ -152,7 +152,7 @@ The **[!UICONTROL Potential Bots]** frame looks at requests with a `request_user
 
 ![transaction errors](../../assets/tools/transaction-errors.jpg)
 
-The **[!UICONTROL Transaction Errors]** frame displays the count of transaction errors from [!DNL New Relic].
+The **[!UICONTROL Transaction Errors]** frame displays the count of transaction error from [!DNL New Relic].
 
 ## [!UICONTROL Nginx access by node]
 
