@@ -55,7 +55,7 @@ The **[!UICONTROL API - forgot password, create account by Countries and IP addr
 ## [!UICONTROL Guest cart activities by IP]
 
 The **[!UICONTROL Guest cart activities by IP]** frame shows guest cart activities by IP across a selected timeframe.
-![guest-cart-ip](../../assets/tools/observation-for-adobe-commerce/guest-cart-ip.jpeg)
+![guest-cart-ip](../../assets/tools/observation-for-adobe-commerce/guest-cart-ip.png)
 
 ## [!UICONTROL Guest cart activities by Countries]
 
