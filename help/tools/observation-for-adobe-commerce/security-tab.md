@@ -1,5 +1,5 @@
 ---
- title: "The Security tab"
+ title: "The [!UICONTROL Security] tab"
  description: The **[!UICONTROL Security]** tab explains security issues and isolates their potential causes.
 ---
 
