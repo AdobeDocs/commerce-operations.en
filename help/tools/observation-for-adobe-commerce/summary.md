@@ -39,7 +39,7 @@ The **[!UICONTROL % of Storage Free]** frame displays the average % free of the 
 
 ![percent of system memory that is free frame](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-This frame displays by node, the amount of system memory that is free on each node.
+This frame displays, by node, the amount of system memory that is free on each node.
 
 ## [!UICONTROL Swap memory free in bytes]
 
@@ -75,7 +75,7 @@ The **[!UICONTROL Average Response Time]** graph shows the average response time
 
 ![long duration cron_schedule updates](../../assets/tools/long-duration-cron-schedule-updates.jpg)
 
-The **[!UICONTROL cron_schedule]** table is written to at the start and finish of cron jobs. Long duration cron jobs could indicate latency in updating this table, which can indicate cron stackup or an issue with how crons are scheduled.
+The **[!UICONTROL cron_schedule]** table is written at the start and finish of cron jobs. Long duration cron jobs could indicate latency in updating this table, which can indicate cron stackup or an issue with how crons are scheduled.
 
 ## [!UICONTROL Response Code]
 
@@ -152,7 +152,7 @@ The **[!UICONTROL Potential Bots]** frame looks at requests with a `request_user
 
 ![transaction errors](../../assets/tools/transaction-errors.jpg)
 
-The **[!UICONTROL Transaction Errors]** frame displays the count of transaction error from [!DNL New Relic].
+The **[!UICONTROL Transaction Errors]** frame displays the count of transaction errors from [!DNL New Relic].
 
 ## [!UICONTROL Nginx access by node]
 
