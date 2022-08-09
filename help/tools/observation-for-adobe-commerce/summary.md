@@ -283,7 +283,7 @@ The way that PHP process(es) behave is dependent upon [configuration](https://ww
 
 ![php errors](../../assets/tools/php-errors.jpg)
 
-The **[!UICONTROL PHP errors]** frame shows the number of php errors with workers across the selected timeframe. For more information, refer [Adobe Commerce PHP settings](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+The **[!UICONTROL PHP errors]** frame shows the number of PHP errors with workers across the selected timeframe. For more information, refer to [Adobe Commerce PHP settings](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
 
 **PHP errors and messages**
 
