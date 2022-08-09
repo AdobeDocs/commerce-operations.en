@@ -8,13 +8,13 @@ description: Learn about the [!UICONTROL MySQL] tab of [!DNL Observation for Ado
 
 ![MySQL% free storage by node](../../assets/tools/mysql-tab-1.jpg)
 
-Many problems are caused by MySQL running out of storage in the storage assigned to MySQL (datadir MySQL configuration setting, default is /data/mysql) or the tmpdir running out of space. The default tmpdir (MySQL setting) is /tmp. This frame looks at the /, /tmp (if defined as a separate mount) and the /data/mysql % of free storage. Starting in MySQL version 5.7 (MariaDB version 10.2), uncompressed tmp tables are written to a tmp tablespace in the /data/mysql directory in the file (ibtmp1). This file auto expands without limit by default. As it is a tablespace, it will not decrease in size and will reset to 12MB when MySQL restarts.
+Many problems are caused by MySQL running out of storage in the storage assigned to MySQL (`datadir` MySQL configuration setting, default is `/data/mysql`) or the `tmpdir` running out of space. The default `tmpdir` (MySQL setting) is `/tmp`. This frame looks at the `/, /tmp` (if defined as a separate mount) and the `/data/mysql` % of free storage. Starting in MySQL version 5.7 (MariaDB version 10.2), uncompressed tmp tables are written to a tmp tablespace in the `/data/mysql` directory in the file (ibtmp1). This file auto expands without limit by default. As it is a tablespace, it will not decrease in size and will reset to 12MB when MySQL restarts.
 
 ## [!UICONTROL MySQL Connections by Node]
 
 ![MySQL Connections by Node](../../assets/tools/mysql-tab-2.jpg)
 
-The **[!UICONTROL MySQL Connections by Node]** frame can indicate periods of database node outages or high volumes of connections.
+The **[!UICONTROL MySQL Connections by Node]** frame indicates periods of database node outages or high volumes of connections.
 
 ## [!UICONTROL MySQL Node Summary]
 
@@ -26,19 +26,19 @@ The **[!UICONTROL MySQL Node Summary]** table shows database node details such a
 
 ![Galera Number of Nodes in cluster](../../assets/tools/mysql-tab-4.jpg)
 
-The **[!UICONTROL Galera Number of Nodes in cluster]** frame displays information from the MySQL logs. As nodes join and leave a cluster, only the messages for the selected time frame will be shown. If a node leaves the cluster before the timeframe, no message will exist during that timeframe. If you suspect that the database may be running short of a node, expand the timeframe to a larger period to see if you can see additional information. If there is information during the time period that indicates less than all nodes in the Galera cluster, expand the timeframe to see if you can determine when the node left the cluster.
+The **[!UICONTROL Galera Number of Nodes in cluster]** frame displays information from the MySQL logs. As nodes join and leave a cluster, only the messages for the selected timeframe will be shown. If a node leaves the cluster before the timeframe, no message will exist during that timeframe. If you suspect that the database may be running short of a node, expand the timeframe to a larger period to see if you can see additional information. If there is information during the time period that indicates less than all nodes in the [!DNL Galera] cluster, expand the timeframe to see if you can determine when the node left the cluster.
 
 ## [!UICONTROL MySQL shutdowns and starts]
 
 ![MySQL shutdowns and starts](../../assets/tools/mysql-tab-5.jpg)
 
-The **[!UICONTROL MySQL shutdowns and starts]** frame detects when there is a shutdown of a node. Galera nodes will be evicted and will self-evict from the Galera node. This will typically result in a restart of the MySQL service.
+The **[!UICONTROL MySQL shutdowns and starts]** frame detects when there is a shutdown of a node. [!DNL Galera] nodes will be evicted and will self-evict from the [!DNL Galera] node. This will typically result in a restart of the MySQL service.
 
 ## [!UICONTROL Galera log]
 
 ![Galera log](../../assets/tools/mysql-tab-6.jpg)
 
-The **[!UICONTROL Galera log]** frame shows counts of particular signals from the MySQL logs concerning Galera nodes, their states, and the state changes of the Galera cluster.
+The **[!UICONTROL Galera log]** frame shows counts of particular signals from the MySQL logs concerning [!DNL Galera] nodes, their states, and the state changes of the [!DNL Galera] cluster.
 
 * '%1047 WSREP has not yet prepared node for application use%') as 'node_not_prep_for_use'
 * '%\[ERROR\] WSREP: Failed to read from: wsrep_sst_xtrabackup-v2%') as 'xtrabackup_read_fail'
@@ -273,5 +273,5 @@ The **[!UICONTROL MySQL mem used by node]** frame shows the node usage of memory
 
 ![Database mysql-slow.log](../../assets/tools/mysql-tab-24.jpg)
 
-The [!UICONTROL Database mysql-slow.log] frame shows the query statement types that were in the mysql-slow.log file across the selected timeframe.
+The **[!UICONTROL Database mysql-slow.log]** frame shows the query statement types that were in the mysql-slow.log file across the selected timeframe.
 
