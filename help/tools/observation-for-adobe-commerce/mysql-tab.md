@@ -108,7 +108,7 @@ Even `SELECT` statements may lock rows if used with FOR UPDATE.
 
 ![Cron table change](../../assets/tools/mysql-tab-13.jpg)
 
-The **[!UICONTROL Cron table change]** frame is looking for *could not acquire lock for cron job:* error messages, along with a specific PHP memory error and locks involving the `cron_schedule` table. If the `cron_schedule` table is locked (for example, by a `DELETE` query being run against it), it will block other crons from running.
+The **[!UICONTROL Cron table change]** frame is looking for "could not acquire lock for cron job:" error messages, along with a specific PHP memory error and locks involving the `cron_schedule` table. If the `cron_schedule` table is locked (for example, by a `DELETE` query being run against it), it will block other crons from running.
 
 ## [!UICONTROL Deadlocks]
 
