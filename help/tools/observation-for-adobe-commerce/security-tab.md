@@ -20,7 +20,7 @@ The **[!UICONTROL Forgot Password]** access frame shows the number of forgot pas
 ## [!UICONTROL Create Account access]
 
 The **[!UICONTROL Create Account access]** frame shows the number of new account activities across a selected timeframe. High activity from a single IP address can indicate an attack.
-![create-account-access](../../assets/tools/observation-for-adobe-commerce/create-account-accsess.jpeg)
+![create-account-access](../../assets/tools/observation-for-adobe-commerce/create-account-accsess.png)
 
 ## [!UICONTROL POST activities]
 
