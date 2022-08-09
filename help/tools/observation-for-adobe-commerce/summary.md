@@ -341,7 +341,7 @@ The **[!UICONTROL Page loading detail]** frame describes the page loading events
 
 ![transactions – avg, max, min](../../assets/tools/transactions-avg-max-min.jpg)
 
-Transaction duration is in seconds. Depending on the transaction, it may impact other transactions if it is long running. The transactions listed under name and the durations are for the specific time period. If there is a concise issue timeframe, resize the Observation for Adobe Commerce date/time selector to that narrow timeframe.
+Transaction duration is in seconds. Depending on the transaction, it may impact other transactions if it is long-running. The transactions listed under name and the durations are for the specific time period. If there is a concise issue timeframe, resize the [!DNL Observation for Adobe Commerce] date/time selector to that narrow timeframe.
 
 ## [!UICONTROL Admin Activities]
 
