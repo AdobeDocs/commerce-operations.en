@@ -30,7 +30,7 @@ The **[!UICONTROL POST activities]** frame shows the POST activities for the sit
 ## [!UICONTROL POST activities summary table]
 
 The **POST activities summary table** frame shows the summarized POST activities for the site, faceted on client_ip from the [!DNL Fastly] logs. It also shows the count for the URL that is accessed by the IP address. The count is for the selected timeframe.
-  ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpeg)
+  ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
