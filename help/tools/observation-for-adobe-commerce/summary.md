@@ -87,7 +87,7 @@ The **[!UICONTROL Response Code]** frame is a good indication of web traffic and
 
 ![web traffic volume compared with one week ago](../../assets/tools/web-traffic-volume-compared.jpg)
 
-This frame displays the web traffic volume of one week ago compared to current volume.
+This frame displays the web traffic volume of one week ago compared to the current volume.
 
 ## [!UICONTROL Deployment Log Entries]
 
