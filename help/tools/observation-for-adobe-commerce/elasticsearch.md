@@ -15,7 +15,7 @@ Over the selected time frame, the [!UICONTROL **Cluster Status Summary**] frame 
 
 ![Active Primary Shards](../../assets/tools/active-primary-shards.jpg)
 
-The [!UICONTROL **Active Primary Shards**] frame will show differing numbers depending on the number of active primary shards for the selected account’s [!UICONTROL Elasticsearch] service.
+The **[!UICONTROL Active Primary Shards]** frame will show differing numbers depending on the number of active primary shards for the selected account’s [!DNL Elasticsearch] service.
 
 From [!UICONTROL Elasticsearch]: The definitive Guide [2.x]:
 
