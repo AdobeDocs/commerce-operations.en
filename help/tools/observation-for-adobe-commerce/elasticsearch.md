@@ -57,7 +57,7 @@ This frame shows the process CPU% by the [!DNL Elasticsearch] process over the s
 
 ![Elasticsearch Memory garbage](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
-[!UICONTROL Elasticsearch] is a Java process. If it runs low on allocated memory, it will initiate garbage collection to free up memory. If garbage collection is frequent, it is an indication that there may be too many indices or shards for the allocated memory. There may be an opportunity to clean up the indices and shards or [!UICONTROL Elasticsearch] may need more memory.
+[!DNL Elasticsearch] is a Java process. If it runs low on allocated memory, it will initiate garbage collection to free up memory. If garbage collection is frequent, it is an indication that there may be too many indices or shards for the allocated memory. There may be an opportunity to clean up the indices and shards or [!DNL Elasticsearch] may need more memory.
 
 ## [!UICONTROL Elasticsearch Index information]:
 
