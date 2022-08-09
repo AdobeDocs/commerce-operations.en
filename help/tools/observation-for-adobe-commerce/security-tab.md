@@ -45,7 +45,7 @@ The **[!UICONTROL Guest Carts activities]** frame shows the number of guest cart
 ## [!UICONTROL API – forgot password, create account by Countries]
 
 The **[!UICONTROL API – forgot password, create account by Countries]** frame shows the number of accounts created and requests to reset a forgotten password across a selected timeframe. It is faceted to show the country of origin of the request as well. This frame is focused on the country of origin of the request.
-![api-forgot-countries](../../assets/tools/observation-for-adobe-commerce/api-forgot-countries.jpeg)
+![api-forgot-countries](../../assets/tools/observation-for-adobe-commerce/api-forgot-countries.jpg)
 
 ## [!UICONTROL API - forgot password, create account by Countries and IP address]
 
