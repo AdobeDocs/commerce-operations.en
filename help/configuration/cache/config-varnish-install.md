@@ -7,9 +7,9 @@ description: See advice about installing Varnish.
 
 Installing the Varnish software is beyond the scope of this guide. For more information about installing Varnish, see:
 
-- [installation wiki](http://wiki.mikejung.biz/Varnish)
+- [installation guide](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Varnish installation guides](https://www.varnish-cache.org/docs)
-- [How to install Varnish (Tecmint)](http://www.tecmint.com/install-varnish-cache-web-accelerator)
+- [How to install Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >

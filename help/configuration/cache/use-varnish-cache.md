@@ -35,7 +35,7 @@ After you have installed and configured Varnish to work with Commerce, the follo
 
 ## Configure Commerce to purge Varnish
 
-Commerce purges Varnish hosts after you configure Varnish hosts using the [`magento setup:config:set`](https://devdocs.magento.com/guides/2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) command.
+Commerce purges Varnish hosts after you configure Varnish hosts using the [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) command.
 
 You can use the optional parameter `--http-cache-hosts` parameter to specify a comma-separated list of Varnish hosts and listen ports. Configure all Varnish hosts, whether you have one or many. (Do not separate hosts with a space character.)
 
@@ -51,4 +51,4 @@ You can then purge Varnish hosts when you refresh the Commerce cache (also refer
 
 To refresh the cache using the Admin, click **[!UICONTROL SYSTEM]** > Tools > **Cache Management**, then click **Flush Magento Cache** at the top of the page. (You can also refresh individual cache types.)
 
-To refresh the cache using the command line, you typically use the [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) command as the [file system owner](https://devdocs.magento.com/guides/2.4/install-gde/prereq/file-sys-perms-over.html).
+To refresh the cache using the command line, you typically use the [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) command as the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
