@@ -13,7 +13,7 @@ The [!UICONTROL Summary] tab of Observation for Adobe Commerce is intended to qu
 
 ### [What is a transacrion?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
-“At [!DNL New Relic], a transaction is defined as one logical unit of work in a software application. Specifically, it refers to the function calls and method calls that make up that unit of work. It often refers to a web transaction, which represents activity that happens from when the application receives a web request to when the response is sent.”
+“At [!DNL New Relic], a transaction is defined as one logical unit of work in a software application. Specifically, it refers to the function calls and method calls that make up that unit of work. It often refers to a web transaction, which represents an activity that happens from when the application receives a web request to when the response is sent.”
 
 ### Types of transactions:
 
