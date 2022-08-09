@@ -17,7 +17,7 @@ Over the selected timeframe, the **[!UICONTROL Cluster Status Summary]** frame s
 
 The **[!UICONTROL Active Primary Shards]** frame will show differing numbers depending on the number of active primary shards for the selected account’s [!DNL Elasticsearch] service.
 
-From [!UICONTROL Elasticsearch]: The definitive Guide [2.x]:
+From [!DNL Elasticsearch]: The definitive Guide [2.x]:
 
 “In [Dynamically Updatable Indices](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), we explained that a shard is a Lucene index and that an [!UICONTROL Elasticsearch] index is a collection of shards. Your application talks to an index, and Elasticsearch routes your requests to the appropriate shards. A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be more than sufficient for your needs — a single shard can hold a lot of data — but it limits your ability to scale.”
 
