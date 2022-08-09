@@ -140,13 +140,13 @@ The **[!UICONTROL API Calls by IP, details by URL]** frame provides details of h
 
 ![ip frequency rate per minute](../../assets/tools/ip-frequency-rate-per-minute.jpg)
 
-Sometimes it is hard to tell which IP address has the most requests on the other frames. This frame shows the rate per minute per IP address.
+Sometimes it is hard to tell which IP address has the most requests on the other frames. The **[!UICONTROL IP Frequency Rate per minute]** frame shows the rate per minute per IP address.
 
 ## [!UICONTROL Potential Bots]
 
 ![potential bots](../../assets/tools/potential-bots.jpg)
 
-The **[!UICONTROL Potential Bots]** frame looks at requests with a `request_user_agent` name like NULL or ‘%bot%’. Typically, the ‘%bot%’ `request_user_agent` will follow the policy setup in `robots.txt` file.
+The **[!UICONTROL Potential Bots]** frame looks at requests with a request_user_agent name like NULL or ‘%bot%’. Typically, the ‘%bot%’ request_user_agent will follow the policy setup in `robots.txt` file.
 
 ## [!UICONTROL Transaction Errors]
 
