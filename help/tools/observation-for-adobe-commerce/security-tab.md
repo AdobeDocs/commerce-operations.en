@@ -49,7 +49,7 @@ The **[!UICONTROL API – forgot password, create account by Countries]** frame 
 
 ## [!UICONTROL API - forgot password, create account by Countries and IP address]
 
-The **[!UICONTROL API - forgot password, create account by Countries and IP address]** frame shows the number of accounts created and requests to reset a forgotten password across a selected timeframe. It is faceted to show the IP address, URL accessed and country of origin of the request as well. This frame is focused on the count of IP.
+The **[!UICONTROL API - forgot password, create account by Countries and IP address]** frame shows the number of accounts created and requests to reset a forgotten password across a selected timeframe. It is faceted to show the IP address, URL accessed, and country of origin of the request as well. This frame is focused on the count of IP.
 ![api-forgot-countries-ip](../../assets/tools/observation-for-adobe-commerce/api-forgot-countries-ip.jpeg)
 
 ## [!UICONTROL Guest cart activities by IP]
