@@ -75,7 +75,7 @@ The **[!UICONTROL Average Response Time]** graph shows the average response time
 
 ![long duration cron_schedule updates](../../assets/tools/long-duration-cron-schedule-updates.jpg)
 
-The **[!UICONTROL cron_schedule]** table is written to at the start and finish of cron jobs. Long duration cron jobs could indicate latency in updating this table, which can indicate cron stackup or an issue with how crons are scheduled.
+The **[!UICONTROL cron_schedule]** table is written at the start and finish of cron jobs. Long duration cron jobs could indicate latency in updating this table, which can indicate cron stack up or an issue with how crons are scheduled.
 
 ## [!UICONTROL Response Code]
 
