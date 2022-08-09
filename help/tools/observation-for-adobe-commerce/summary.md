@@ -1,6 +1,6 @@
 ---
 title: "The [!UICONTROL Summary] tab"
-description: Learn about the [!UICONTROL summary] tab of [!DNL Observation for Adobe Commerce].
+description: Learn about the [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce].
 ---
 
 # The [!UICONTROL Summary] tab
