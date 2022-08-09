@@ -369,7 +369,7 @@ The **[!UICONTROL Order transactions (default?)]** frame looks for transactions 
 
 ![elasticsearch errors](../../assets/tools/elasticsearch-errors.jpg)
 
-**Elasticsearch errors:**
+**[!DNL Elasticsearch] errors:**
 
 * '%all shards failed%' as 'all_shards_failed’
 * '%NoNodesAvailableException%' as 'no_alive_nodes'
