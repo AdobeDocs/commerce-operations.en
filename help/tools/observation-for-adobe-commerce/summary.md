@@ -152,7 +152,7 @@ The **[!UICONTROL Potential Bots]** frame looks at requests with a `request_user
 
 ![transaction errors](../../assets/tools/transaction-errors.jpg)
 
-The **[!UICONTROL Transaction Errors]** frame displays the count of transaction error from [!DNL New Relic].
+The **[!UICONTROL Transaction Errors]** frame displays the count of transaction errors from [!DNL New Relic].
 
 ## [!UICONTROL Nginx access by node]
 
