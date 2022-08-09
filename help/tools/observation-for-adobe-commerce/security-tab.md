@@ -35,7 +35,7 @@ The **POST activities summary table** frame shows the summarized POST activities
 ## [!UICONTROL POST activities details table]
 
 The **[!UICONTROL POST activities details table]** frame shows the POST activities for the site from the [!DNL Fastly] logs. It also shows all the details from the [!DNL Fastly] log for these requests. It is limited to the last 2000 requests.
-![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpeg)
+![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
