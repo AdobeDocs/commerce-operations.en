@@ -15,7 +15,7 @@ The **[!UICONTROL API calls by IP, details by URL]** frame shows a number of API
 ## [!UICONTROL Forgot Password]
 
 The **[!UICONTROL Forgot Password]** access frame shows the number of forgot password attempts across a selected timeframe. High activity against an IP address may be an attack on the site.
-![Forgot password](../../assets/tools/observation-for-adobe-commerce/forgot-password.jpeg)
+![Forgot password](../../assets/tools/observation-for-adobe-commerce/forgot-password.jpg)
 
 ## [!UICONTROL Create Account access]
 
