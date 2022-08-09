@@ -161,6 +161,21 @@ When disabled, inventory check does not occur when adding a product to the shopp
 
 **Enable Inventory Check On Cart Load** is enabled (set to Yes) by default. To disable the inventory check when loading the cart, set **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` in the Admin UI **Stores** > **Configuration** > **Catalog** > **Inventory** > **Stock Options** section. See [Configure Global Options][global] and [Catalog Inventory][inventory] in the _User Guide_.
 
+## Load balancing
+
+You can help balance the load across different nodes by enabling secondary connections for the MySQL database and Redis instance.
+
+Adobe Commerce can read multiple databases or Redis instances asynchronously. If you are using Commerce on cloud infrastructure, you can configure the secondary connections by editing the [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) and [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) values in the `.magento.env.yaml` file. Only one node needs to handle read-write traffic, so setting the variables to `true` results in creating a secondary connection for read-only traffic. Set the values to `false` to remove any existing read-only connection array from the `env.php` file.
+
+Example of the `.magento.env.yaml` file:
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
+
 <!-- link definitions -->
 
 [Apply patches]: https://devdocs.magento.com/cloud/project/project-patch.html
