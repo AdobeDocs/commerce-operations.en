@@ -39,7 +39,7 @@ This frame will show the index name and the index color status count. Scrolling 
 
 ![Elasticsearch Status](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-This frame shows the [!UICONTROL Elasticsearch] cluster status by Color, by node. This will help indicate which node in the [!UICONTROL Elasticsearch] cluster is returning what status during the selected time frame.
+This frame shows the [!DNL Elasticsearch] cluster status by color, by node. This will help indicate which node in the [!DNL Elasticsearch] cluster is returning what status during the selected timeframe.
 
 ## [!UICONTROL Elasticsearch index information]:
 
