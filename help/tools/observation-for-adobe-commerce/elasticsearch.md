@@ -75,7 +75,7 @@ This frame indicates the index name and size across the selected timeframe. It m
 
 ![Elasticsearch Errors](../../assets/tools/elasticsearch-errors.jpg)
 
-This frame will display errors with [!UICONTROL Elasticsearch] like running out of space, switching from Yellow to Red status, when all shards fail, when there are parameter issues with searches, version errors and when all nodes are unavailable.
+This frame will display errors with [!DNL Elasticsearch] like running out of space, switching from Yellow to Red status, when all shards fail, when there are parameter issues with searches, version errors and when all nodes are unavailable.
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 
