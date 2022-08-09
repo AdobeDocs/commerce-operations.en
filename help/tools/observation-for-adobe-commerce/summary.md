@@ -57,7 +57,7 @@ The aggregate of all environments and nodes is displayed in the **[!UICONTROL CP
 
 ![alerts during timeframe](../../assets/tools/alerts-during-timeframe.jpg)
 
-The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the [!UICONTROL Managed Alerts] added by Magento Support.
+The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the [!UICONTROL Managed Alerts] added by Adobe Commerce Support.
 
 ## [!UICONTROL CPU Usage]
 
