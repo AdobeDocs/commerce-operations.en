@@ -273,5 +273,5 @@ The **[!UICONTROL MySQL mem used by node]** frame shows the node usage of memory
 
 ![Database mysql-slow.log](../../assets/tools/mysql-tab-24.jpg)
 
-The **[!UICONTROL Database mysql-slow.log]** frame shows the query statement types that were in the mysql-slow.log file across the selected timeframe.
+The **[!UICONTROL Database mysql-slow.log]** frame shows the query statement types that were in the `mysql-slow.log` file across the selected timeframe.
 
