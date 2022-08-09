@@ -51,7 +51,7 @@ This table shows the index name, what node it is on, the number of indexed docum
 
 ![Elasticsearch process CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-This frame shows the process CPU% by the [!UICONTROL Elasticsearch] process over the selected time frame.
+This frame shows the process CPU% by the [!DNL Elasticsearch] process over the selected timeframe.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
