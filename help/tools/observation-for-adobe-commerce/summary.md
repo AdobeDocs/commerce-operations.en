@@ -244,7 +244,7 @@ The **[!UICONTROL Database traces]** frame looks at data from the [sql trace](ht
 
 ![database mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
 
-The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in the [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) by query request type. It isolates timeframes visually that might be of interest in the mysql-slow.log (slow query log). Queries of tables without indices, or queries that update large tables may block other queries.
+The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in the [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) by query request type. It isolates timeframes visually that might be of interest in the mysql-slow.log (slow query log). Queries of tables without indices or queries that update large tables may block other queries.
 
 ## [!UICONTROL Redis synchronization from Log]
 
