@@ -39,7 +39,7 @@ The **[!UICONTROL % of Storage Free]** frame displays the average % free of the 
 
 ![percent of system memory that is free frame](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-This frame displays by node, the amount of system memory that is free on each node.
+This frame displays, by node, the amount of system memory that is free on each node.
 
 ## [!UICONTROL Swap memory free in bytes]
 
