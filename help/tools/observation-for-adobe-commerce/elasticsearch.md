@@ -33,7 +33,7 @@ When an index is created, there are several shards created with that index. By d
 
 ![Index health](../../assets/tools/index-health.jpg)
 
-This frame will show the index name and the index color status count. Scrolling down the table, you will see the same index name with Yellow and Red color statuses. The number that follows the 27 index name is the count of the status color. If it is zero, there were no instances of the index being in that color status during these lected time frame.
+This frame will show the index name and the index color status count. Scrolling down the table, you will see the same index name with Yellow and Red color statuses. The number that follows the 27 index name is the count of the status color. If it is zero, there were no instances of the index being in that color status during these selected timeframes.
 
 ## [!UICONTROL Elasticsearch Status by node information]:
 
