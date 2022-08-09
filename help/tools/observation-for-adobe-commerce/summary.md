@@ -335,7 +335,7 @@ The **[!UICONTROL Page Rendering]** frame displays the average page rendering du
 
 The **[!UICONTROL Page loading detail]** frame describes the page loading events. It details on the meanings of these facets. Here is the query that is being run for this frame:
 
-SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint' , percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES
+`SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint', percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES`
 
 ## [!UICONTROL Transactions – Avg, Max, Min]
 
