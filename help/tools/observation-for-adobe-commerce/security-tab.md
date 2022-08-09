@@ -24,7 +24,7 @@ The **[!UICONTROL Create Account access]** frame shows the number of new account
 
 ## [!UICONTROL POST activities]
 
-The **[!UICONTROL POST activities]** frame shows the POST activities for the site, faceted on client_ip from the Fastly logs. It also shows the URL that is accessed by the IP address.
+The **[!UICONTROL POST activities]** frame shows the POST activities for the site, faceted on client_ip from the [!DNL Fastly] logs. It also shows the URL that is accessed by the IP address.
 ![POST-activities](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpeg)
 
 ## [!UICONTROL POST activities summary table]
