@@ -60,4 +60,4 @@ The **[!UICONTROL Guest cart activities by IP]** frame shows guest cart activiti
 ## [!UICONTROL Guest cart activities by Countries]
 
 The **[!UICONTROL Guest cart activities by Countries]** frame shows guest cart activities by countries across a selected timeframe.
-![guest-cart-country](../../assets/tools/observation-for-adobe-commerce/guest-cart-country.jpeg)
+![guest-cart-country](../../assets/tools/observation-for-adobe-commerce/guest-cart-country.png)
