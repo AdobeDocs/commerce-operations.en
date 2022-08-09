@@ -9,7 +9,7 @@ The **[!UICONTROL Security]** tab explains security issues and isolates their po
 
 ## [!UICONTROL API calls by IP, details by URL]
 
-The **[!UICONTROL API calls by IP, details by URL]** frame shows a number of API calls by IP across a selected timeframe. This frame displays the IP address and the API url that was accessed by that IP address.
+The **[!UICONTROL API calls by IP, details by URL]** frame shows a number of API calls by IP across a selected timeframe. This frame displays the IP address and the API URL that was accessed by that IP address.
   ![API calls by IP](../../assets/tools/observation-for-adobe-commerce/calls-by-ip.jpeg)
 
 ## [!UICONTROL Forgot Password]
