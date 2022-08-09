@@ -33,7 +33,7 @@ The **[!UICONTROL 404 page errors]** frame lists the [URI](https://en.wikipedia.
 
 ![percent of Storage Free frame](../../assets/tools/percent-of-storage-free.jpg)
 
-The **[!UICONTROL % of Storage Free]** frame displays the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
+The **[!UICONTROL % of Storage Free]** frame displays the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is variance across three nodes. An example of variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
 
 ## [!UICONTROL % of system memory that is free frame]
 
