@@ -33,7 +33,7 @@ The **[!UICONTROL PHP CPU Utilization]** frame shows the CPU % utilization of PH
 
 ## [!UICONTROL PHP Process states]
 
-![PHP Process states](../../assets/tools/php-process-states.jpg)
+![PHP Process states](../../assets/tools/php-process-states-image-1.jpg)
 
 The **[!UICONTROL PHP Process states]** frame shows the PHP process states across the selected timeframe. It will display when PHP processes terminate and restart. Beware of terminated PHP processes that do not show restarts.
 
@@ -44,7 +44,7 @@ The **[!UICONTROL PHP Process states]** frame shows the PHP process states acros
 
 ## [!UICONTROL PHP Errors]
 
-![PHP Errors](../../assets/tools/php-errors.jpg)
+![PHP Errors](../../assets/tools/php-errors-image-1.jpg)
 
 The **[!UICONTROL PHP Errors]** frame shows the number of PHP worker errors across the selected timeframe. Error messages parsed and displayed include:
 
@@ -68,7 +68,7 @@ The **[!UICONTROL PHP processes count]** frame shows a count of PHP processes ac
 
 ## [!UICONTROL Database Errors]
 
-![Database Errors](../../assets/tools/database-errors.jpg)
+![Database Errors](../../assets/tools/php-tab-database-errors.jpg)
 
 The **[!UICONTROL Database Errors]** frame shows database errors across the selected timeframe. Errors parsed include:
 
@@ -114,7 +114,7 @@ The **[!UICONTROL Database Errors]** frame shows database errors across the sele
 
 ## [!UICONTROL Database traces]
 
-![Database traces](../../assets/tools/database-traces.jpg)
+![Database traces](../../assets/tools/php-tab-database-traces.jpg)
 
 The **[!UICONTROL Database traces]** frame shows database trace information. This frame aligns with the APM transaction summary view for the selected timeline.
 
