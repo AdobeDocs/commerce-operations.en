@@ -43,7 +43,7 @@ The **[!UICONTROL Elasticsearch Status by node information]** frame shows the [!
 
 ## [!UICONTROL Elasticsearch index information]
 
-![Elasticsearch index information](../../assets/tools/elasticsearch-index-information.jpg)
+![Elasticsearch index information](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 This **[!UICONTROL Elasticsearch index information]** table shows the index name, what node it is on, the number of indexed documents, the index health, and the index size in MB at a particular time.
 
