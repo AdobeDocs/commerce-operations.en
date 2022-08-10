@@ -73,7 +73,7 @@ The **[!UICONTROL Elasticsearch Index Size]** frame indicates the index name and
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![Elasticsearch Errors](../../assets/tools/elasticsearch-errors.jpg)
+![Elasticsearch Errors](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 The **[!UICONTROL Elasticsearch Errors]** frame will display errors with [!DNL Elasticsearch] like running out of space, switching from Yellow to Red status, when all shards fail, when there are parameter issues with searches, version errors and when all nodes are unavailable.
 
