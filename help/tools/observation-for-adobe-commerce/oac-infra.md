@@ -10,7 +10,7 @@ The **[!UICONTROL Infra]** tab isolates issues and causes of infrastructure prob
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
 The **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** graph shows the service alerts collected by the [!DNL New Relic] infrastructure agent. This will show service restarts, many associated with deployments.
-![Service alerts](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpeg)
+![Service alerts](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
 
 ## [!UICONTROL Inode usage by mount]
 
