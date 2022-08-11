@@ -33,4 +33,5 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [The Cron tab](observation-for-adobe-commerce/cron-tab.md)
   - [The Indexing tab](observation-for-adobe-commerce/indexing-tab.md)
   - [The RabbitMQ tab](observation-for-adobe-commerce/rabbitmq-tab.md)
+  - [The Infra tab](observation-for-adobe-commerce/oac-infra.md)
   - [The MySQL tab](observation-for-adobe-commerce/mysql-tab.md)
