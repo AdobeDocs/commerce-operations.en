@@ -40,5 +40,5 @@ The **[!UICONTROL Instance details]** table shows instance details of each [!DNL
 
 ## [!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]
 
-The **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]** frame shows non responsive nodes across a time period.
+The **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]** frame shows non-responsive nodes across a time period.
 ![non-responsive-node](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpg)
