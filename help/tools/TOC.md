@@ -22,6 +22,7 @@ user-guide-description: Learn about the different tools you can use with Adobe C
 - Observation for Adobe Commerce {#observation-for-adobe-commerce}
   - [Introduction](observation-for-adobe-commerce/intro.md)
   - [How to access](observation-for-adobe-commerce/access.md)
+  - [The Summary tab](observation-for-adobe-commerce/summary.md)
   - [Selecting the account and timeframe](observation-for-adobe-commerce/selecting-the-account.md)
   - [Choosing the focus tabs](observation-for-adobe-commerce/choosing-focus-tabs.md)
   - [The Alerts tab](observation-for-adobe-commerce/alerts-tab.md)
@@ -33,3 +34,4 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [The Indexing tab](observation-for-adobe-commerce/indexing-tab.md)
   - [The Security tab](observation-for-adobe-commerce/security-tab.md) 
   - [The RabbitMQ tab](observation-for-adobe-commerce/rabbitmq-tab.md)
+  - [The MySQL tab](observation-for-adobe-commerce/mysql-tab.md)
