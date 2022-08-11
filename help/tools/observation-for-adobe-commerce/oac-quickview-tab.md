@@ -1,6 +1,6 @@
 ---
 title: "The [!UICONTROL QuickView] tab"
-description: The QuickView tab explains the different alert types you may see including those on low disk pace and server usage
+description: The QuickView tab explains the different alert types you may see including those on low disk pace and server usage.
 ---
 
 # The [!UICONTROL QuickView] tab
