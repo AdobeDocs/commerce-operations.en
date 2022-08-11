@@ -24,7 +24,7 @@ The **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** frame shows vC
 
 ## [!UICONTROL vCPU tier view over timeline]
 
-The **[!UICONTROL vCPU tier view over timeline]** frame shows vCPU tier view across the selected timeframe of more than 24 hours. This frame looks at the number of vCPUs assigned to the New Relic application name shown. It will show both cluster upsizes and downsizes.
+The **[!UICONTROL vCPU tier view over timeline]** frame shows vCPU tier view across the selected timeframe of more than 24 hours. This frame looks at the number of vCPUs assigned to the [!DNL New Relic] application name shown. It will show both cluster upsizes and downsizes.
 ![vCPU tier view over timeline](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpg)
 
 ## [!UICONTROL vCPU tier view over timeline BY NODE]
@@ -35,10 +35,10 @@ vCPU tier view over timeline BY NODE, should look at timeline LESS than 24 hours
 
 ## [!UICONTROL Instance details]
 
-The **[!UICONTROL Instance details]** table shows instance details of each New Relic application.
+The **[!UICONTROL Instance details]** table shows instance details of each [!DNL New Relic] application.
 ![Instance details](../../assets/tools/observation-for-adobe-commerce/instance-details.jpg)
 
 ## [!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]
 
-The **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]** frame shows non responsive nodes across a time period.
+The **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]** frame shows non-responsive nodes across a time period.
 ![non-responsive-node](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpg)
