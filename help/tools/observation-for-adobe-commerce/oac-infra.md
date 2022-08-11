@@ -19,7 +19,7 @@ The **[!UICONTROL Inode usage by mount]** frame shows inode usage by mount acros
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 
-The **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** frame shows vCPU tier view across the selected timeframe of more than 2 weeks. This frame looks at the number of vCPUs assigned to the New Relic application name shown.
+The **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** frame shows vCPU tier view across the selected timeframe of more than two weeks. This frame looks at the number of vCPUs assigned to the [!DNL New Relic] application name shown.
 ![vCPU tier view over timeline GREATER 2 weeks](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpeg)
 
 ## [!UICONTROL vCPU tier view over timeline]
