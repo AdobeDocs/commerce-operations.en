@@ -1,6 +1,6 @@
 ---
  title: "The [!UICONTROL Infra] tab"
- description: The Infra tab isolates issues and causes of infrastructure problems.
+ description: The [!UICONTROL Infra] tab isolates issues and causes of infrastructure problems.
 ---
 
 # The [!UICONTROL Infra] tab
