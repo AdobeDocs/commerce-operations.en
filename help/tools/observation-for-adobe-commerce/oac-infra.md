@@ -15,30 +15,30 @@ The **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]*
 ## [!UICONTROL Inode usage by mount]
 
 The **[!UICONTROL Inode usage by mount]** frame shows inode usage by mount across the selected timeframe. Even though there may be plenty of storage free, if a node runs out of inodes, it will show a lack of available storage. Removing files (especially small ones) will free up both space and make inodes available.
-![Inode usage by mount](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpeg)
+![Inode usage by mount](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 
 The **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** frame shows vCPU tier view across the selected timeframe of more than two weeks. This frame looks at the number of vCPUs assigned to the [!DNL New Relic] application name shown.
-![vCPU tier view over timeline GREATER 2 weeks](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpeg)
+![vCPU tier view over timeline GREATER 2 weeks](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
 
 ## [!UICONTROL vCPU tier view over timeline]
 
 The **[!UICONTROL vCPU tier view over timeline]** frame shows vCPU tier view across the selected timeframe of more than 24 hours. This frame looks at the number of vCPUs assigned to the New Relic application name shown. It will show both cluster upsizes and downsizes.
-![vCPU tier view over timeline](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpeg)
+![vCPU tier view over timeline](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpg)
 
 ## [!UICONTROL vCPU tier view over timeline BY NODE]
 
 The **[!UICONTROL vCPU tier view over timeline BY NODE]** frame shows vCPU tier views across the selected timeframe by node. This frame is helpful in detecting loss of node(s) or when nodes are upsized or downsized.
 vCPU tier view over timeline BY NODE, should look at timeline LESS than 24 hours
-![vCPU tier view over timeline BY NODE](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-node.jpeg)
+![vCPU tier view over timeline BY NODE](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-node.png)
 
 ## [!UICONTROL Instance details]
 
 The **[!UICONTROL Instance details]** table shows instance details of each New Relic application.
-![Instance details](../../assets/tools/observation-for-adobe-commerce/instance-details.jpeg)
+![Instance details](../../assets/tools/observation-for-adobe-commerce/instance-details.jpg)
 
 ## [!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]
 
 The **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]** frame shows non responsive nodes across a time period.
-![non-responsive-node](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpeg)
+![non-responsive-node](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpg)
