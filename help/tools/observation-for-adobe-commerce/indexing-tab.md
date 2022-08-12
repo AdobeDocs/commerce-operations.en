@@ -57,4 +57,4 @@ This frame looks at catalogsearch index tables across a selected timeframe. This
 
 ![product index table(s)](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-This frame looks at product index tables across a selected timeframe. This query is looking at the duration of any datastore operations against tables with ‘%product%’ in the table name.
+The **[!UICONTROL product index table(s)]** frame looks at product index tables across a selected timeframe. This query is looking at the duration of any datastore operations against tables with ‘%product%’ in the table name.
