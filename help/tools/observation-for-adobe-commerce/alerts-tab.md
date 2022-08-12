@@ -22,7 +22,7 @@ The **[!UICONTROL Closed Critical Alerts]** frame shows a count of the closed cr
 
 ![Critical Alert Details](../../assets/tools/observation-for-adobe-commerce/alerts-tab-3.jpg)
 
-The [!UICONTROL Critical Alert Details] frame shows a count of the critical alert details across the selected timeframe, including timestamp, condition name, and whether the alert event is open or closed.
+The **[!UICONTROL Critical Alert Details]** frame shows a count of the critical alert details across the selected timeframe, including timestamp, condition name, and whether the alert event is open or closed.
 
 ## [!UICONTROL Infrastructure Alert Details]
 
