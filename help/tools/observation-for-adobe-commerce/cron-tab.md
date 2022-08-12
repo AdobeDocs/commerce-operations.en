@@ -16,7 +16,7 @@ The **[!UICONTROL Cron transaction duration in seconds]** frame displays crons t
 
 ![MySql Non Sleeping Threads by Node](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
 
-This frame shows the MySql Non-Sleeping threads by node across the selected timeframe.
+The **[!UICONTROL MySql Non-Sleeping Threads by Node]** frame shows the MySql Non-Sleeping threads by node across the selected timeframe.
 
 ## [!UICONTROL SQL Trace count by path]
 
