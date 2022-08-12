@@ -33,8 +33,7 @@ The **[!UICONTROL vCPU tier view over timeline]** frame shows vCPU tier view acr
 
 ## [!UICONTROL vCPU tier view over timeline BY NODE]
 
-The **[!UICONTROL vCPU tier view over timeline BY NODE]** frame shows vCPU tier views across the selected timeframe by node. This frame is helpful in detecting loss of node(s) or when nodes are upsized or downsized.
-vCPU tier view over timeline BY NODE, should look at timeline LESS than 24 hours.
+The **[!UICONTROL vCPU tier view over timeline BY NODE]** frame shows vCPU tier views across the selected timeframe by node. This frame is helpful in detecting loss of node(s) or when nodes are upsized or downsized. vCPU tier view over timeline BY NODE, should look at timeline LESS than 24 hours.
 
 ## [!UICONTROL Instance details]
 
