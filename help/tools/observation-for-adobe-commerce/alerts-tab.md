@@ -10,7 +10,7 @@ The [!UICONTROL Alerts] tab provides a range of alerts, including open and close
 
 ![Open Critical Alerts](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
-The [!UICONTROL Open Alert Details] frame shows a count of the open critical alerts across the selected timeframe. The alerts will include Adobe-created alerts and any created by the partner or merchant.
+The **[!UICONTROL Open Alert Details]** frame shows a count of the open critical alerts across the selected timeframe. The alerts will include Adobe-created alerts and any created by the partner or merchant.
 
 ## [!UICONTROL Closed Critical Alerts]
 
