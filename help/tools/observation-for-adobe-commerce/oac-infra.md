@@ -37,7 +37,7 @@ vCPU tier view over timeline BY NODE, should look at timeline LESS than 24 hours
 ![Instance details](../../assets/tools/observation-for-adobe-commerce/instance-details.jpg)
 The **[!UICONTROL Instance details]** table shows instance details of each [!DNL New Relic] application.
 
-## [!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]
+## [!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]
 
 ![non-responsive-node](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpg)
 The **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period:]** frame shows non-responsive nodes across a time period.
