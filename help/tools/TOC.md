@@ -36,3 +36,5 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [The Security tab](observation-for-adobe-commerce/security-tab.md) 
   - [The RabbitMQ tab](observation-for-adobe-commerce/rabbitmq-tab.md)
   - [The MySQL tab](observation-for-adobe-commerce/mysql-tab.md)
+  - [The PHP tab](observation-for-adobe-commerce/php-tab.md)
+ 
