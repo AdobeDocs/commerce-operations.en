@@ -6,9 +6,9 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 
 # Adobe Managed Services
 
-Adobe Commerce is a platform for delivering ecommerce capabilitie and includes robust out-of-the-box features, extensive customizability options, and third-party integrations.
+Adobe Commerce is a platform for delivering ecommerce capabilities that includes robust out-of-the-box features, extensive customizability options, and third-party integrations.
 
-Adobe Managed Services rovides hosted and managed application and infrastructure for Adobe Commerce on cloud infrastructure Pro plans.
+Adobe Managed Services provides hosted and managed application and infrastructure for Adobe Commerce on cloud infrastructure Pro plans.
 
 ## Benefits
 
@@ -34,7 +34,7 @@ Review the following infographic for a more detailed comparison of key Managed S
 
 ## Roles and responsibilities
 
-Adobe provides a set of services around the provisioning, development, staging and production of Adobe Commerce on Managed Services systems. For the development and deployment of the solution to proceed as efficiently as possible, it is important that the customer and partner understand and fulfill their roles, as described below:
+Adobe provides a set of services around the provisioning, development, staging, and production of Adobe Commerce on Managed Services systems. For the development and deployment of the solution to proceed as efficiently as possible, it is important that the customer and partner understand and fulfill their roles, as described below:
 
 <table>
     <thead>
@@ -377,7 +377,7 @@ The Managed Services team plays an active role in helping to plan and assist wit
 
 Managed Services CSEs have worked with Adobe Commerce customers to execute upgrades in large environments. Your CSE can help you leverage expert knowledge to maximize upgrade success while minimizing downtime and reducing overall risk. Additionally, Managed Services CSEs work with your dedicated staging environment for the upgrade so that existing production processes are not impacted while validating the upgrade.
 
-Adobe provides a set of services around the provisioning, development, staging, and production of your Managed Services system. The following table provides an overview of the roles each participant plays in the upgrade process:
+Adobe provides a set of services around the provisioning, development, staging, and production of your Managed Services system. The following table provides an overview of the roles that each participant plays in the upgrade process:
 
 <table>
 <thead>
@@ -395,7 +395,7 @@ Adobe provides a set of services around the provisioning, development, staging, 
     <td>Create upgrade project plan</td>
     <td>Owner</td>
     <td>Contributor</td>
-    <td>Contributor<br />CSE provides upgrade template and upgrade plansamples; offers advice and best practices tips.</td>
+    <td>Contributor<br />CSE provides upgrade template and upgrade plan samples; offers advice and best practices tips.</td>
   </tr>
   <tr>
     <td>Determine needed infrastructure changes</td>
@@ -426,7 +426,7 @@ Adobe provides a set of services around the provisioning, development, staging, 
     <td>Perform post-upgrade checks and troubleshooting</td>
     <td></td>
     <td>Owner</td>
-    <td>Contributor<br />CSE executes post upgrade runbook to detect and remediate issues related to upgrade.</td>
+    <td>Contributor<br />CSE executes post-upgrade runbook to detect and remediate issues related to upgrade.</td>
   </tr>
   <tr>
     <td rowspan="3">UAT and Launch</td>
@@ -445,7 +445,7 @@ Adobe provides a set of services around the provisioning, development, staging, 
     <td>Launch to Production</td>
     <td>Contributor</td>
     <td>Owner</td>
-    <td>Contributor<br />CSE schedules launch ceonference meeting event.</td>
+    <td>Contributor<br />CSE schedules launch conference meeting event.</td>
   </tr>
   <tr>
     <td>Post-Launch</td>
