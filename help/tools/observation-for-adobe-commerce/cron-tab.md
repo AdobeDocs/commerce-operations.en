@@ -34,7 +34,7 @@ The **[!UICONTROL Cron database call]** frame looks at the number of crons calli
 
 ![Cron schedule table locks](../../assets/tools/observation-for-adobe-commerce/cron-tab-5.jpg)
 
-This frame looks at cron schedule table locks across a selected timeframe.
+The **[!UICONTROL Cron schedule table locks]** frame looks at cron schedule table locks across a selected timeframe.
 
 ## [!UICONTROL Cron schedule clean cron fired]
 
