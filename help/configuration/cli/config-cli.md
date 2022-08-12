@@ -22,7 +22,7 @@ Additional benefits include:
 - The CLI is extensible so third-party developers can "plug in" to it. This has the additional benefit of eliminating users' learning curve.
 - Commands for disabled modules do not display.
 
-This topic discusses configuring the Adobe Commerce and Magento Open Source software using the CLI. For information about installing Commerce, see [Installation overview](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) in the _Installation guide_.
+This topic discusses configuring the Adobe Commerce and Magento Open Source software using the CLI. For information about installing Commerce, see [Installation flow](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) in the _Installation guide_.
 
 ## Prerequisites
 
