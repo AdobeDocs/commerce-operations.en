@@ -51,7 +51,7 @@ The **[!UICONTROL Core index rebuilds]** frame looks at core index rebuilds acro
 
 ![catalogsearch index table(s)](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
-This frame looks at catalogsearch index tables across a selected timeframe. This query is looking at the duration of any datastore operations against tables with ‘%catalogsearch%’ in the table name.
+The **[!UICONTROL catalogsearch index table(s)]** frame looks at catalogsearch index tables across a selected timeframe. This query is looking at the duration of any datastore operations against tables with ‘%catalogsearch%’ in the table name.
 
 ## [!UICONTROL product index table(s)]
 
