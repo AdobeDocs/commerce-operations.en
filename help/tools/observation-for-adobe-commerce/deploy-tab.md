@@ -8,13 +8,13 @@ This tab is an attempt to isolate issues and causes of deployment problems quick
 
 ## [!UICONTROL Deploy log Deployment Troubleshooter]
 
-![Deploy log Deployment Troubleshooter](../../assets/tools/deploy-tab-1.jpg)
+![Deploy log Deployment Troubleshooter](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
 The **[!UICONTROL Deploy log Deployment Troubleshooter]** frame shows a count of deploy log events that occurred across the selected timeframe. The intent is to provide an at-a-glance view of deployment activity and determine the complexity of the deployment by the count. The more logged messages, the more complex the deployment typically is.
 
 ## [!UICONTROL Deploy State]
 
-![Deploy State](../../assets/tools/deploy-tab-2.jpg)
+![Deploy State](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
 The **[!UICONTROL Deploy State]** frame shows the deploy events that occurred across the selected timeframe. The parser for this frame is looking for these specific signals:
 
@@ -30,7 +30,7 @@ The **[!UICONTROL Deploy State]** frame shows the deploy events that occurred ac
 
 ## [!UICONTROL Deploy Log Detail]
 
-![Deploy Log Detail](../../assets/tools/deploy-tab-3.jpg)
+![Deploy Log Detail](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
 The **[!UICONTROL Deploy Log Detail]** frame shows the deploy log message summary details that occurred across the selected timeframe. The frame is parsing for the following strings in the deployment logs:
 
@@ -75,7 +75,7 @@ configured.%') as'nest_err_reporting'
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Post deploy log detail](../../assets/tools/deploy-tab-4.jpg)
+![Post deploy log detail](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
 The **[!UICONTROL Post Deploy Log Detail]** frame shows the post-deploy log details that occurred across the selected timeframe. This frame is focused on particular log messages that contain the following strings:
 
@@ -93,7 +93,7 @@ The **[!UICONTROL Post Deploy Log Detail]** frame shows the post-deploy log deta
 
 ## [!UICONTROL Cloud Log Detail]
 
-![Cloud Log Detail](../../assets/tools/deploy-tab-5.jpg)
+![Cloud Log Detail](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
 The **[!UICONTROL Cloud Log Detail]** frame shows the cloud log details that occurred across the selected timeframe. The following strings are parsed and returned with the ‘AS’ label below:
 
@@ -150,13 +150,13 @@ used as asearch engine.%') as'es_not_used'
 
 ## [!UICONTROL Count of modules imported during deploy]
 
-![Count of modules imported during deploy](../../assets/tools/deploy-tab-6.jpg)
+![Count of modules imported during deploy](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
 The **[!UICONTROL Count of modules imported during deploy]** frame shows the number of modules imported during deployment across the selected timeframe. 
 
 ## [!UICONTROL Deployed module list]
 
-![Deployed module list](../../assets/tools/deploy-tab-7.jpg)
+![Deployed module list](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
 The **[!UICONTROL Deployed module list]** frame shows deployed modules across the selected timeframe.
 

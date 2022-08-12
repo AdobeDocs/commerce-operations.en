@@ -6,37 +6,37 @@ description: Learn about the [!UICONTROL MySQL] tab of [!DNL Observation for Ado
 
 ## [!UICONTROL MySQL% free storage by node]
 
-![MySQL% free storage by node](../../assets/tools/mysql-tab-1.jpg)
+![MySQL% free storage by node](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
 Many problems are caused by MySQL running out of storage in the storage assigned to MySQL (`datadir` MySQL configuration setting, default is `/data/mysql`) or the `tmpdir` running out of space. The default `tmpdir` (MySQL setting) is `/tmp`. This frame looks at the `/, /tmp` (if defined as a separate mount) and the `/data/mysql` % of free storage. Starting in MySQL version 5.7 (MariaDB version 10.2), uncompressed tmp tables are written to a tmp tablespace in the `/data/mysql` directory in the file (ibtmp1). This file auto expands without limit by default. As it is a tablespace, it will not decrease in size and will reset to 12MB when MySQL restarts.
 
 ## [!UICONTROL MySQL Connections by Node]
 
-![MySQL Connections by Node](../../assets/tools/mysql-tab-2.jpg)
+![MySQL Connections by Node](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
 
 The **[!UICONTROL MySQL Connections by Node]** frame indicates periods of database node outages or high volumes of connections.
 
 ## [!UICONTROL MySQL Node Summary]
 
-![MySQL Node Summary](../../assets/tools/mysql-tab-3.jpg)
+![MySQL Node Summary](../../assets/tools/observation-for-adobe-commerce/mysql-tab-3.jpg)
 
 The **[!UICONTROL MySQL Node Summary]** table shows database node details such as software version and instance type (size). 
 
 ## [!UICONTROL Galera Number of Nodes in cluster]
 
-![Galera Number of Nodes in cluster](../../assets/tools/mysql-tab-4.jpg)
+![Galera Number of Nodes in cluster](../../assets/tools/observation-for-adobe-commerce/mysql-tab-4.jpg)
 
 The **[!UICONTROL Galera Number of Nodes in cluster]** frame displays information from the MySQL logs. As nodes join and leave a cluster, only the messages for the selected timeframe will be shown. If a node leaves the cluster before the timeframe, no message will exist during that timeframe. If you suspect that the database may be running short of a node, expand the timeframe to a larger period to see if you can see additional information. If there is information during the time period that indicates less than all nodes in the [!DNL Galera] cluster, expand the timeframe to see if you can determine when the node left the cluster.
 
 ## [!UICONTROL MySQL shutdowns and starts]
 
-![MySQL shutdowns and starts](../../assets/tools/mysql-tab-5.jpg)
+![MySQL shutdowns and starts](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
 The **[!UICONTROL MySQL shutdowns and starts]** frame detects when there is a shutdown of a node. [!DNL Galera] nodes will be evicted and will self-evict from the [!DNL Galera] node. This will typically result in a restart of the MySQL service.
 
 ## [!UICONTROL Galera log]
 
-![Galera log](../../assets/tools/mysql-tab-6.jpg)
+![Galera log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
 The **[!UICONTROL Galera log]** frame shows counts of particular signals from the MySQL logs concerning [!DNL Galera] nodes, their states, and the state changes of the [!DNL Galera] cluster.
 
@@ -62,13 +62,13 @@ The **[!UICONTROL Galera log]** frame shows counts of particular signals from th
 
 ## [!UICONTROL Galera Log by Host]
 
-![Galera Log by Host](../../assets/tools/mysql-tab-7.jpg)
+![Galera Log by Host](../../assets/tools/observation-for-adobe-commerce/mysql-tab-7.jpg)
 
 The **[!UICONTROL Galera Log by Host]** frame is the same as the **[!UICONTROL Galera log]** frame, except that it is broken out by node to help with troubleshooting. 
 
 ## [!UICONTROL Database performance]
 
-![Database performance](../../assets/tools/mysql-tab-8.jpg)
+![Database performance](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
 The **[!UICONTROL Database performance]** frame shows database performance during specific requests. You can see each metric by clicking on them in the colored icons below the graph. Many of the metrics called out in [Monitoring MySQL Database Performance with New Relic](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) are found in this frame.
 
@@ -82,19 +82,19 @@ The **[!UICONTROL Database performance]** frame shows database performance durin
 
 ## [!UICONTROL Transaction Database Call Count]
 
-![Transaction Database Call Count](../../assets/tools/mysql-tab-9.jpg)
+![Transaction Database Call Count](../../assets/tools/observation-for-adobe-commerce/mysql-tab-9.jpg)
 
 The **[!UICONTROL Transaction Database Call Count]** frame shows the number of database calls made by each transaction facet. This seems to be row-focused and not statements.
 
 ## [!UICONTROL Cron_schedule table updates]
 
-![Cron_schedule table updates](../../assets/tools/mysql-tab-10.jpg)
+![Cron_schedule table updates](../../assets/tools/observation-for-adobe-commerce/mysql-tab-10.jpg)
 
 The **[!UICONTROL Cron_schedule table updates]** frame displays the maximum duration of database updates to the cron_schedule table for the selected time period.
 
 ## [!UICONTROL Slow Query Traces]
 
-![Slow Query Traces](../../assets/tools/mysql-tab-11.jpg)
+![Slow Query Traces](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
 The **[!UICONTROL Slow Query Traces]** frame displays the table and request type where slow query traces exist. A slow query trace is created for query transactions that take longer than 5 seconds. Of importance for this frame are the update queries. If a table is being updated by `UPDATE`, `DELETE`, and `INSERT` statements, they may lock tables for a period of time.
 
@@ -102,17 +102,17 @@ Even `SELECT` statements may lock rows if used with FOR UPDATE.
 
 ## [!UICONTROL Datastore Operations tables]
 
-![Datastore Operations tables](../../assets/tools/mysql-tab-12.jpg)
+![Datastore Operations tables](../../assets/tools/observation-for-adobe-commerce/mysql-tab-12.jpg)
 
 ## [!UICONTROL Cron table change]
 
-![Cron table change](../../assets/tools/mysql-tab-13.jpg)
+![Cron table change](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
 The **[!UICONTROL Cron table change]** frame is looking for "could not acquire lock for cron job:" error messages, along with a specific PHP memory error and locks involving the `cron_schedule` table. If the `cron_schedule` table is locked (for example, by a `DELETE` query being run against it), it will block other crons from running.
 
 ## [!UICONTROL Deadlocks]
 
-![Deadlocks](../../assets/tools/mysql-tab-14.jpg)
+![Deadlocks](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
 The **[!UICONTROL Deadlocks]** frame is looking at the following strings parsed from the MySQL logs.
 
@@ -153,7 +153,7 @@ The **[!UICONTROL Deadlocks]** frame is looking at the following strings parsed 
 * '% lock for cron job: ddg_automation_importer%') as 'lock_ddg_automation_importer' 
 * '% lock for cron job: ddg_automation_reviews_and_wishlist%') as 'lock_ddg_automation_reviews_and_wishlist'
 * '% lock for cron job: captcha_delete_old_attempts%') as 'lock_captcha_delete_old_attempts'
-* '% lock for cron job: catalog_product_outdated_price_values_cleanup%') as 'lock_catalog_product_outdated_price_values_cleanup' 
+* '% lock for cron job: catalog_product_outdated_price_values_cleanup%') as 'lock_catalog_product_outdated_price_values_cleanup'
 * '% lock for cron job: consumers_runner%') as 'lock_consumers_runner' 
 * '% lock for cron job: ddg_automation_customer_subscriber_guest_sync%') as 'lock_ddg_automation_customer_subscriber_guest_sync'
 * '% lock for cron job: get_amazon_capture_updates%') as 'lock_get_amazon_capture_updates' 
@@ -180,17 +180,17 @@ The **[!UICONTROL Deadlocks]** frame is looking at the following strings parsed 
 
 ## [!UICONTROL DB Statistics]
 
-![DB Statistics](../../assets/tools/mysql-tab-15.jpg)
+![DB Statistics](../../assets/tools/observation-for-adobe-commerce/mysql-tab-15.jpg)
 
 The **[!UICONTROL DB Statistics]** frame displays deletes, writes, rows read, updates, and slow queries per second.
 
 ## [!UICONTROL Request frequency]
 
-![Request frequency](../../assets/tools/mysql-tab-16.jpg)
+![Request frequency](../../assets/tools/observation-for-adobe-commerce/mysql-tab-16.jpg)
 
 ## [!UICONTROL Database Errors]
 
-![Database Errors](../../assets/tools/mysql-tab-17.jpg)
+![Database Errors](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
 The **[!UICONTROL Database Errors]** frame shows a variety of database [warnings and errors](https://mariadb.com/kb/en/mariadb-error-codes/).
 
@@ -235,43 +235,43 @@ The **[!UICONTROL Database Errors]** frame shows a variety of database [warnings
 
 ## [!UICONTROL DB Error Table]
 
-![DB Error Table](../../assets/tools/mysql-tab-18.jpg)
+![DB Error Table](../../assets/tools/observation-for-adobe-commerce/mysql-tab-18.jpg)
 
 The **[!UICONTROL DB Error Table]** frame shows the same information as the **[!UICONTROL Database Errors]** frame, but you can see it by node and in a table format. See [MariaDB Error Codes](https://mariadb.com/kb/en/mariadb-error-codes/) for more information.
 
 ## [!UICONTROL Database Traces]
 
-![Database Traces](../../assets/tools/mysql-tab-19.jpg)
+![Database Traces](../../assets/tools/observation-for-adobe-commerce/mysql-tab-19.jpg)
 
 The **[!UICONTROL Database Traces]** frame shows the database traces by type across the selected timeline. 
 
 ## [!UICONTROL Database processes]
 
-![Database processes](../../assets/tools/mysql-tab-20.jpg)
+![Database processes](../../assets/tools/observation-for-adobe-commerce/mysql-tab-20.jpg)
 
 The **[!UICONTROL Database processes]** frame shows the database processes, environments, and node identifiers.
 
 ## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![MySQL Non-Sleeping Threads by Node](../../assets/tools/mysql-tab-21.jpg)
+![MySQL Non-Sleeping Threads by Node](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
 
 The **[!UICONTROL MySQL Non-Sleeping Threads by Node]** frame shows the connection threads to the database. This frame shows the active threads.
 
 ## [!UICONTROL MySQL Running and Sleeping Threads by environment]
 
-![MySQL Running and Sleeping Threads by environment](../../assets/tools/mysql-tab-22.jpg)
+![MySQL Running and Sleeping Threads by environment](../../assets/tools/observation-for-adobe-commerce/mysql-tab-22.jpg)
 
 The **[!UICONTROL MySQL Running and Sleeping Threads by environment]** frame shows both active and sleeping connections to the database. If there are connections to the database where slow queries have gone to sleep, there will be sleeping connections. Sleeping connections can be database queries that are blocked by locked rows or tables. These sleeping connections are also holding PHP worker connections.
 
 ## [!UICONTROL MySQL mem used by node]
 
-![MySQL mem used by node](../../assets/tools/mysql-tab-23.jpg)
+![MySQL mem used by node](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg)
 
 The **[!UICONTROL MySQL mem used by node]** frame shows the node usage of memory by MySQL. On larger sites, this frame may be continuous bars with GBs worth of memory used. 
 
 ## [!UICONTROL Database mysql-slow.log]
 
-![Database mysql-slow.log](../../assets/tools/mysql-tab-24.jpg)
+![Database mysql-slow.log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
 
 The **[!UICONTROL Database mysql-slow.log]** frame shows the query statement types that were in the `mysql-slow.log` file across the selected timeframe.
 

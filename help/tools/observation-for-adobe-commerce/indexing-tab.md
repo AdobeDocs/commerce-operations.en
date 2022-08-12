@@ -8,7 +8,7 @@ The **[!UICONTROL Indexing]** tab attempts to explain issues with indexing and i
 
 ## [!UICONTROL Core index invalidated]
 
-![Core index invalidated](../../assets/tools/indexing-tab-1.jpg)
+![Core index invalidated](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
 The **[!UICONTROL Core index invalidated]** frame looks at indexing invalidation across a selected timeframe. If indexing is happening at the same time as other resource-intensive crons, it will place a heavy load on the site resources.
 
@@ -28,7 +28,7 @@ The **[!UICONTROL Core index invalidated]** frame looks at indexing invalidation
 
 ## [!UICONTROL Core index rebuilds]
 
-![Core index rebuilds](../../assets/tools/indexing-tab-2.jpg)
+![Core index rebuilds](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
 This frame looks at core index rebuilds across a selected timeframe. Here are the strings that are parsed from the logs to indicate index rebuild completion.
 
@@ -49,12 +49,12 @@ This frame looks at core index rebuilds across a selected timeframe. Here are th
 
 ## [!UICONTROL catalogsearch index table(s)]
 
-![catalogsearch index table(s)](../../assets/tools/indexing-tab-3.jpg)
+![catalogsearch index table(s)](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
 This frame looks at catalogsearch index tables across a selected timeframe. This query is looking at the duration of any datastore operations against tables with ‘%catalogsearch%’ in the table name.
 
 ## [!UICONTROL product index table(s)]
 
-![product index table(s)](../../assets/tools/indexing-tab-4.jpg)
+![product index table(s)](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
 This frame looks at product index tables across a selected timeframe. This query is looking at the duration of any datastore operations against tables with ‘%product%’ in the table name.
