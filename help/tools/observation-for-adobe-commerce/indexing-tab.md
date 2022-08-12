@@ -30,7 +30,7 @@ The **[!UICONTROL Core index invalidated]** frame looks at indexing invalidation
 
 ![Core index rebuilds](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
-This frame looks at core index rebuilds across a selected timeframe. Here are the strings that are parsed from the logs to indicate index rebuild completion.
+The **[!UICONTROL Core index rebuilds]** frame looks at core index rebuilds across a selected timeframe. Here are the strings that are parsed from the logs to indicate index rebuild completion.
 
 * '%Catalog Product Rule index has been rebuilt%') as 'catalog_product_rule_idx'
 * '%Catalog Rule Product index has been rebuilt%') as 'catalog_rule_product_idx'
