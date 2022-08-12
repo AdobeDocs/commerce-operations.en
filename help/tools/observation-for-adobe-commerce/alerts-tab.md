@@ -28,5 +28,5 @@ The **[!UICONTROL Critical Alert Details]** frame shows a count of the critical 
 
 ![Infrastructure Alert Details](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
 
-The [!UICONTROL Infrastructure Alert Details] frame shows applications, hosts, and other infrastructure events across the selected timeframe. 
+The **[!UICONTROL Infrastructure Alert Details]** frame shows applications, hosts, and other infrastructure events across the selected timeframe. 
 
