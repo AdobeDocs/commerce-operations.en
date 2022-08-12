@@ -16,7 +16,7 @@ The **[!UICONTROL Open Alert Details]** frame shows a count of the open critical
 
 ![Closed Critical Alerts](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
-The [!UICONTROL Closed Critical Alerts] frame shows a count of the closed critical alerts across the selected timeframe. The alerts will include Adobe-created alerts and any created by the partner or merchant.
+The **[!UICONTROL Closed Critical Alerts]** frame shows a count of the closed critical alerts across the selected timeframe. The alerts will include Adobe-created alerts and any created by the partner or merchant.
 
 ## [!UICONTROL Critical Alert Details]
 
