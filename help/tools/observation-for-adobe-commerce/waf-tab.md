@@ -4,7 +4,7 @@ description: Learn about the [!UICONTROL WAF] tab of [!DNL Observation for Adobe
 ---
 # The [!UICONTROL WAF] tab
 
-The [!UICONTROL WAF] tab shows traffic that is passed and blocked by the firewall.
+The **[!UICONTROL WAF]** tab shows traffic that is passed and blocked by the firewall.
 
 ## [!UICONTROL WAF traffic summary]
 
