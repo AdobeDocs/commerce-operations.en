@@ -58,4 +58,4 @@ The **[!UICONTROL cron_schedule table updates]** frame looks at the number of cr
 
 ![Datastore Operations Tables](../../assets/tools/observation-for-adobe-commerce/cron-tab-9.jpg)
 
-This frame looks at database table operations, including `SELECT`, `DELETE`, and `UPDATE` across a selected timeframe. This frame shows the database tables with the highest operation frequency against them.
+The **[!UICONTROL Datastore Operations Tables]** looks at database table operations, including `SELECT`, `DELETE`, and `UPDATE` across a selected timeframe. This frame shows the database tables with the highest operation frequency against them.
