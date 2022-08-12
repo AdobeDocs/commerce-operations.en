@@ -22,7 +22,7 @@ The **[!UICONTROL MySql Non-Sleeping Threads by Node]** frame shows the MySql No
 
 ![SQL Trace count by path](../../assets/tools/observation-for-adobe-commerce/cron-tab-3.jpg)
 
-This frame looks at MySql trace counts by path, which can help trace SQL statements across a selected timeframe.
+The **[!UICONTROL SQL Trace count by path]** frame looks at MySql trace counts by path, which can help trace SQL statements across a selected timeframe.
 
 ## [!UICONTROL Cron database call]
 
