@@ -38,8 +38,4 @@ Check environment resources states:
 * **[!UICONTROL PHP States and PHP Errors]** frames will show potential issues with PHP. The **[!UICONTROL PHP States]** frame will show PHP process terminations, starts, and when the service reaches the ready state by node. The **[!UICONTROL PHP Errors]** frame may help isolate where the issue is with PHP, such as memory size, workers, or the number of servers.
 * To see latency in transactions, the Transactions – Avg., Max, Min table can be sorted by column to show the longest-running transaction duration. An overloaded cluster will have latent durations in transactions, but it will also show anomalies that might pinpoint a problem with a method or cron.
 * The Cron error frame will show cron locks, SQL errors that may be associated with cron logs, and shared staging crons that may be running on production environments when there is a dedicated staging environment.
-* The [!UICONTROL ElasticSearch Errors] frame is a good canary to show errors that may indicate major problems with [!DNL Elasticsearch] queries, data, or indices.
-
-
-
-
+* The [!UICONTROL ElasticSearch Errors] frame shows errors that may indicate major problems with [!DNL Elasticsearch] queries, data, or indices.
