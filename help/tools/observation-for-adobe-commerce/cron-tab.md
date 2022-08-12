@@ -28,7 +28,7 @@ This frame looks at MySql trace counts by path, which can help trace SQL stateme
 
 ![Cron database call](../../assets/tools/observation-for-adobe-commerce/cron-tab-4.jpg)
 
-This frame looks at the number of crons calling to the database across a selected timeframe.
+The **[!UICONTROL Cron database call]** frame looks at the number of crons calling to the database across a selected timeframe.
 
 ## [!UICONTROL Cron schedule table locks]
 
