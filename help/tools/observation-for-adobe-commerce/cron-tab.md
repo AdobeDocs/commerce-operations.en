@@ -10,7 +10,7 @@ This tab is an attempt to quickly isolate issues and causes of cron problems.
 
 ![Cron transaction duration in seconds](../../assets/tools/observation-for-adobe-commerce/cron-tab-1.jpg)
 
-This frame displays crons transaction duration in seconds. This will display transactions that have long runtimes. A deeper dive into APM will show more details on what query the transaction/operation may be running.
+The **[!UICONTROL Cron transaction duration in seconds]** frame displays crons transaction duration in seconds. This will display transactions that have long runtimes. A deeper dive into APM will show more details on what query the transaction/operation may be running.
 
 ## [!UICONTROL MySql Non Sleeping Threads by Node]
 
