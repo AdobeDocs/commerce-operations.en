@@ -52,7 +52,7 @@ The **[!UICONTROL Cron schedule clean records details table]** table provides de
 
 ![cron_schedule table updates](../../assets/tools/observation-for-adobe-commerce/cron-tab-8.jpg)
 
-This frame looks at the number of cron scheduled table updates across a selected timeframe. High activity on the delete or updating of this table may indicate an issue with crons. Also, crons update this table when they run and complete, so if there is no activity on this table and there are crons configured, there could be a problem with crons.
+The **[!UICONTROL cron_schedule table updates]** frame looks at the number of cron scheduled table updates across a selected timeframe. High activity on the delete or updating of this table may indicate an issue with crons. Also, crons update this table when they run and complete, so if there is no activity on this table and there are crons configured, there could be a problem with crons.
 
 ## [!UICONTROL Datastore Operations Tables]
 
