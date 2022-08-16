@@ -5,7 +5,7 @@ description: Learn how to verify that a Commerce split database configuration is
 
 # Verify split database
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

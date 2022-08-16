@@ -5,7 +5,7 @@ description: See guidance on automatically configuring the split database soluti
 
 # Automatically configure master databases
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
