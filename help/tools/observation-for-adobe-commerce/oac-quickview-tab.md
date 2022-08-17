@@ -17,7 +17,7 @@ The **[!UICONTROL Alerts]** frame shows different alerts including disk space wa
 
 ![Upsize / Downsize by node](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
 
-The **[!UICONTROL Upsize / Downsize by node]** frame shows upsizes and downsize by node across a selected timeframe. This is used to evaluate whether there was a change in cluster size during the selected time period.
+The **[!UICONTROL Upsize / Downsize by node]** frame shows upsizes and downsizes by node across a selected timeframe. This is used to evaluate whether there was a change in cluster size during the selected time period.
 
 ## [!UICONTROL CPU Utilization]
 
