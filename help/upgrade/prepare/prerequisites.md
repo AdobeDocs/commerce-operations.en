@@ -170,7 +170,7 @@ To set the environment variable:
 1. Set the variable:
 
    ```bash
-   export DATA_CONVERTER_BATCH_SIZE 100000
+   export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
    >[!NOTE]
