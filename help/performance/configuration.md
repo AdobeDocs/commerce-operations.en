@@ -81,3 +81,13 @@ We recommend performing periodic database backups for your Staging and Productio
 For better performance, schedule your backups to run in succession, one at a time, at off-peak times. This method avoids I/O contention and reduces time to complete, especially for smaller instances, larger databases, and so on.
 
 For example, we recommend scheduling a backup of your Production database followed up by the Staging database when your stores encounter lower visits.
+
+## Limit number of products in grid
+
+To improve performance of product grid with a lot of products in catalog we recommend to limit number of products in grid collection from **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] > [!UICONTROL Limit Number of Products in Grid]**.
+
+This system configuration is disabled by default. By enabling this setting, you can limit your grid collection by records limit value. **[!UICONTROL Records Limit]** is a customizable setting which has default value of 20000.
+When **[!UICONTROL Limit Number of Products in Grid]** is enabled and the number of products in collection is greater than records limit, then the limited collection of 20000 items is returned. When the limit is reached, the total records found and pagination elements are hidden from grid header.
+
+If you do not want your product grid collection to be limited, we encourage you to use filters more precisely for the result collection to have fewer items than **[!UICONTROL Records Limit]**.
+
