@@ -86,7 +86,7 @@ For example, we recommend scheduling a backup of your Production database follow
 
 To improve product grid performance for large catalogs, we recommend limiting the number of products in the grid with the **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] > [!UICONTROL Limit Number of Products in Grid]** system configuration setting.
 
-This system configuration is disabled by default. By enabling this setting, you can limit your grid collection by records limit value. **[!UICONTROL Records Limit]** is a customizable setting which has default value of 20000.
+This system configuration setting is disabled by default. By enabling it, you can limit the number of products in the grid to a specific value. **[!UICONTROL Records Limit]** is a customizable setting that has a default value of `20000`.
 When **[!UICONTROL Limit Number of Products in Grid]** is enabled and the number of products in collection is greater than records limit, then the limited collection of 20000 items is returned. When the limit is reached, the total records found and pagination elements are hidden from grid header.
 
 If you do not want your product grid collection to be limited, we encourage you to use filters more precisely for the result collection to have fewer items than **[!UICONTROL Records Limit]**.
