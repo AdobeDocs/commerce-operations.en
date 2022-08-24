@@ -28,6 +28,6 @@ Merchants and partners who want to optimize their Adobe Commerce site performanc
 
 ## [!DNL Observation for Adobe Commerce] demo
 
-Watch this video to learn about the [!DNL Observation for Adobe Commerce]:
+Watch this video to learn about [!DNL Observation for Adobe Commerce]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/344444?quality=12)
