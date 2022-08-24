@@ -3,7 +3,7 @@ title: Migrate data
 description: Learn how to start migrating data from Magento 1 to Magento 2 with the Data Migration Tool.
 ---
 
-## Migrate data
+# Migrate data
 
 Before you start migration, stop all Magento 1 cron jobs.
 
