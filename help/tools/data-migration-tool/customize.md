@@ -65,8 +65,8 @@ The following shows an example of using both mapping rules and a handler. This e
 ```
 
 -  Do not migrate unnecessary data from the `great_blog_index` index table.
--  The table `great_blog_publication` was renamed to `great_blog_post` in Magento 2, so data will be migrated to the new table.
-  - The `summary` field was renamed to `title`, so data will be migrated to the new field.
+-  The table `great_blog_publication` was renamed to `great_blog_post` in Magento 2, so data is migrated to the new table.
+  - The `summary` field was renamed to `title`, so data is migrated to the new field.
   - The `priority` field was removed and no longer exists in Magento 2.
   - The data in the `body` field has changed format and should be processed by the custom handler: `\Migration\Handler\GreatBlog\NewFormat`.
 -  A new ratings feature was developed for the "GreatBlog" extension in Magento 2.
@@ -91,9 +91,9 @@ For major data format and structure changes, create a custom step.
 
 ### Create a custom step
 
-Using the same "GreatBlog" example, suppose the extension has one table in Magento 1, but was redesigned to have two tables in Magento 2.
+Using the same "GreatBlog" example, suppose that the extension has one table in Magento 1, but was redesigned to have two tables in Magento 2.
 
-In Magento 1 there was a single `greatblog_post` table:
+In Magento 1, there was a single `greatblog_post` table:
 
 | Field     | Type     |
 |-----------|----------|
@@ -103,7 +103,7 @@ In Magento 1 there was a single `greatblog_post` table:
 | author_id | SMALLINT |
 | tags      | TEXT     |
 
-In Magento 2 a new table for tags `greatblog_post_tags` was introduced:
+In Magento 2, a new table for tags `greatblog_post_tags` was introduced:
 
 | Field      | Type     |
 |------------|----------|
@@ -120,7 +120,7 @@ Magento 2 `greatblog_post` table now looks like this:
 | content   | TEXT     |
 | author_id | SMALLINT |
 
-To migrate all data from old tables structure to a new one you can create a custom step in the `config.xml` file. For example:
+To migrate all data from old tables structure to a new one, you can create a custom step in the `config.xml` file. For example:
 
 ```xml
 <steps mode="data">
@@ -140,7 +140,7 @@ To migrate all data from old tables structure to a new one you can create a cust
 </steps>
 ```
 
-The tool runs steps according to their position in the `config.xml` file; from top to bottom. In our example, the `GreatBlog Step` will run last.
+The tool runs steps according to their position in the `config.xml` file; from top to bottom. In our example, the `GreatBlog Step` runs last.
 
 Steps can include four types of classes:
 
@@ -151,10 +151,10 @@ Steps can include four types of classes:
 
 >[!NOTE]
 >
->Refer to [Configuration](technical-specification.md#configuration), [Step internals](technical-specification.md#step-internals), [Stages](technical-specification.md#step-stages) and [Running modes](technical-specification.md#running-modes) for more information.
+>Refer to [Configuration](technical-specification.md#configuration), [Step internals](technical-specification.md#step-internals), [Stages](technical-specification.md#step-stages), and [Running modes](technical-specification.md#running-modes) for more information.
 
 
-Complex SQL queries can be assembled inside these classes to fetch and migrate data. Also, note that these tables should be "ignored" in the [Map Step](technical-specification.md#map-step) because it scans all existing tables and tries to migrate the data unless it is in the `<ignore>` tag of the `map.xml` file.
+Complex SQL queries can be assembled inside these classes to fetch and migrate data. Also, these tables should be "ignored" in the [Map Step](technical-specification.md#map-step) because it scans all existing tables and tries to migrate the data unless it is in the `<ignore>` tag of the `map.xml` file.
 
 For Integrity checking, define an additional map file in  the `config.xml` file to verify that tables structure is as we expect.
 
@@ -235,7 +235,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-Next you will need to create a class for processing and saving data to Magento 2 database `Vendor\Migration\Step\GreatBlog\Data`:
+Next, you must create a class for processing and saving data to the Magento 2 database `Vendor\Migration\Step\GreatBlog\Data`:
 
 ```php
 class Data implements \Migration\App\Step\StageInterface
@@ -342,8 +342,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 }
 ```
 
-To add delta migration functionality, add a new group to the `deltalog.xml` file.
-In `group`, specify the name of tables that will be checked for changes:
+To add delta migration functionality, add a new group to the `deltalog.xml` file. In `group`, specify the name of the tables that must be checked for changes:
 
 ```xml
 <groups>
@@ -388,15 +387,14 @@ class Delta extends \Migration\App\Step\AbstractDelta
             $this->destination->saveRecords('greatblog_post_tags', $tags);
         }
 
-        //parent class will take care of greatblog_post records automatically
+        //parent class takes care of greatblog_post records automatically
         return parent::perform();
     }
 }
 ```
 
-After the custom step implementation provided in the examples, the system will take data from the single Magento 1 table,
-process it using `Vendor\Migration\Step\GreatBlog\Data` class and store the data in two Magento 2 tables. New and changed
-records will be delivered on delta migration using the `Vendor\Migration\Step\GreatBlog\Delta` class.
+After the custom step implementation provided in the examples, the system takes data from the single Magento 1 table,
+process it using `Vendor\Migration\Step\GreatBlog\Data` class and store the data in two Magento 2 tables. New and changed records are delivered on delta migration using the `Vendor\Migration\Step\GreatBlog\Delta` class.
 
 ## Prohibited extension methods
 

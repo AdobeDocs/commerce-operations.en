@@ -30,7 +30,7 @@ If you plan to run the [!DNL Data Migration Tool] locally only, you can edit fil
 
 Before you migrate any data, you must create a Magento 2 module.
 
-1. Create a new Magento 2 module.
+1. Create a Magento 2 module.
 
    *  `<your Magento 2 install dir>/app/code/Vendor/Migration/composer.json`
 
@@ -207,7 +207,7 @@ To use the mapping files:
 
 The `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` and `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` directories contain the following configuration files:
 
-Even though you will be working with `map.xml.dist` file most of the time, the following table discusses each mapping and other files.
+Even though you are working with the `map.xml.dist` file most of the time, the following table discusses each mapping and other files.
 
 | Mapping file name | Description |
 | --- | --- |
@@ -220,7 +220,7 @@ Even though you will be working with `map.xml.dist` file most of the time, the f
 | `eav-document-groups.xml.dist` | Contains list of tables that are used in Eav Step. |
 | `log-document-groups.xml.dist` | Contains list of tables that are used in Log Step. |
 | `map-eav.xml.dist` | Map file that is used in EAV Step. |
-| `map-log.xml.dist` | Log mapping file. |
+| `map-log.xml.dist` | Log-mapping file. |
 | *Adobe Commerce only*. `map-sales.xml.dist` | Map file that is used in SalesOrder Step. |
 | `map.xml.dist` | Mapping file required for the map step. |
 | `settings.xml.dist` | Setting migration configuration file that specifies rules required for migrating the `core_config_data` table. |
@@ -228,7 +228,7 @@ Even though you will be working with `map.xml.dist` file most of the time, the f
 | `customer-document-groups.xml.dist` | Contains list of tables that are used in Customer Attributes Step. |
 | `map-customer.xml.dist` | Map file that is used in Customer Attributes Step. |
 | `order-grids-document-groups.xml.dist` | Contains list of tables that are used in OrderGrids Step. |
-| `map-document-groups.xml.dist` | Defines what fields will be updated when duplications occurs on data insert |
+| `map-document-groups.xml.dist` | Defines what fields are updated when duplications occur on data insert |
 | `map-stores.xml.dist` | Map file that is used in Stores Step. |
 | `map-tier-price.xml.dist` | Map file that is used in Tier Price Step. |
 | *Adobe Commerce only*. `visual_merchandiser_map.xml.dist` | Map file that is used in VisualMerchandiser Step. |

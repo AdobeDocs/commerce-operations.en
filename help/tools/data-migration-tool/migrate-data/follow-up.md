@@ -5,7 +5,7 @@ description: Learn how to validate that your Magento 1 to Magento 2 data migrati
 
 # Data migration follow-up
 
-Some behavior and logic of Magento 1 has been implemented differently in Magento 2. The [!DNL Data Migration Tool] takes care of it. Although, there are some migration aspects you should know about, and sometimes you must take minor steps for some functionalities to work smoothly after migration.
+Some behavior and logic of Magento 1 has been implemented differently in Magento 2. The [!DNL Data Migration Tool] takes care of it. There are some migration aspects you should know about, and sometimes you must take minor steps for some functionalities to work smoothly after migration.
 
 ## Information
 
@@ -19,7 +19,7 @@ All Group Prices are automatically converted to Tier Prices during migration.
 
 ### New numbering for sales entities
 
-Reference numbers for Orders, Invoices, Shipments, Credit Memos, and RMA migrate as is. But after migration, the new Magento 2 number assignment rules will apply. Thus, the numeration for the new sales entities will be different.
+Reference numbers for Orders, Invoices, Shipments, Credit Memos, and RMA migrate as is. After migration, the new Magento 2 number assignment rules apply. The numeration for the new sales entities is different.
 
 ## Steps
 

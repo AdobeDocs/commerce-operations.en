@@ -24,23 +24,23 @@ The [!DNL Data Migration Tool] splits the migration process into three phases or
 1. **Data Mode**: migrates database assets in bulk.
 1. **Delta Mode**: migrates incremental changes (changes since the last run), such as new customers and orders.
 
-![Migration Modes]
+![Migration Modes](../../assets/data-migration/MigrationModes2.png)
 
 ## Steps
 
-The [!DNL Data Migration Tool] uses a list of *steps* within each mode to migrate a particular type of data. For example, in the Settings mode, there are two steps used to migrate all the settings data: the Stores step and the Settings step. Details about the specific data that is migrated in each of these steps (as well as for steps in the other modes), can be found in the [[!DNL Data Migration Tool] Technical Specification](technical-specification.md).
+The [!DNL Data Migration Tool] uses a list of *steps* within each mode to migrate a particular type of data. For example, in the Settings mode, there are two steps used to migrate all the settings data: the Stores step and the Settings step. Details about the specific data that is migrated in each of these steps (and for steps in the other modes), can be found in the [[!DNL Data Migration Tool] Technical Specification](technical-specification.md).
 
-![Migration Overview]
+![Migration Overview](../../assets/data-migration/MigrationOverview2.png)
 
 ## Stages
 
-Within each step are three *stages* that are always executed in this order to ensure the data gets properly migrated:
+Within each step are three *stages* that are always executed in this order to ensure that the data gets properly migrated:
 
 1. **Integrity Check**: Compares the table field names, types, and other info to verify compatibility between Magento 1 and 2 data structures.
 1. **Data Transfer**: Transfers the data table by table from Magento 1 and 2.
 1. **Volume Check**: Compares the number of records between tables to verify that the transfer was successful.
 
-![Migration Steps]
+![Migration stages](../../assets/data-migration/MigrationSteps2.png)
 
 ## Map files
 
@@ -73,7 +73,7 @@ Magento 2 migration involves four components: data, extensions and custom code, 
 
 ### Data
 
-We have developed the **Magento 2 [!DNL Data Migration Tool]** to help you efficiently move all of your products, customers, and order data, store configurations, promotions and more to Magento 2. This guide provides information on the tool and best practices for using it to migrate your data.
+We have developed the **Magento 2 [!DNL Data Migration Tool]** to help you efficiently move all of your products, customers, and order data, store configurations, promotions, and more to Magento 2. This guide provides information on the tool and best practices for using it to migrate your data.
 
 ### Extensions and custom code
 
@@ -83,7 +83,7 @@ More information on developing extensions for Magento 2 is available in the [PHP
 
 ### Themes and customizations
 
-Magento 2 uses new approaches and technologies that give merchants an unmatched ability to create innovative shopping experiences and scale to new levels. To take advantage of these advances, developers will need to make changes to their themes and customizations. Documentation is available online for creating Magento 2 [themes](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [layouts](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), and [customizations](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/).
+Magento 2 uses new approaches and technologies that give merchants an unmatched ability to create innovative shopping experiences and scale to new levels. To take advantage of these advances, developers must make changes to their themes and customizations. Documentation is available online for creating Magento 2 [themes](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [layouts](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), and [customizations](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/).
 
 ## Migration efforts
 

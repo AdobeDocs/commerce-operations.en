@@ -9,7 +9,7 @@ Before you start migration, stop all Magento 1 cron jobs.
 
 During the migration process, **do not:**
 
-1. Make any changes in the Magento 1 [Admin](https://glossary.magento.com/admin) except for order management (shipping, creating invoice, credit memos, etc.)
+1. Make any changes in the Magento 1 [Admin](https://glossary.magento.com/admin) except for order management (shipping, creating invoice, and credit memos)
 
 1. Alter any code
 
@@ -17,7 +17,7 @@ During the migration process, **do not:**
 
 >[!TIP]
 >
->All operations in Magento 1 storefront are allowed at this time.
+>All operations in Magento 1 storefront are allowed now.
 
 ## Run the [!DNL Data Migration Tool]
 
@@ -65,7 +65,7 @@ Below is a typical command example:
 bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-where:
+Where:
 
 -  `<mode>` may be: [`settings`](settings.md), [`data`](data.md), or [`delta`](delta.md)
 -  `[-r|--reset]` is an optional argument that starts migration from the beginning. You can use this argument for testing migration.
@@ -85,4 +85,4 @@ When we created the [!DNL Data Migration Tool], we assumed the following data tr
 1. [Data](data.md)
 1. [Changes](delta.md)
 
-That's why we strongly recommend to keep this order to migrate quickly and with no issues.
+That's why we strongly keeping this order to migrate quickly and with no issues.

@@ -76,7 +76,7 @@ To install the [!DNL Data Migration Tool], you must update `composer.json` in th
    composer require magento/data-migration-tool:<version>
    ```
 
-   where `<version>` must match the version of the Magento 2 codebase.
+   Where `<version>` must match the version of the Magento 2 codebase.
 
    For example, for version 2.2.0, enter:
 

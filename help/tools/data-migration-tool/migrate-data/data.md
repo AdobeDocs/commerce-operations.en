@@ -20,7 +20,7 @@ To start migrating data, run:
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-where:
+Where:
 
 *  `[-a|--auto]` is an optional argument that prevents migration from stopping when it encounters integrity check errors.
 
@@ -28,9 +28,9 @@ where:
 
 *  `{<path to config.xml>}` is the absolute file system path to `config.xml`; this argument is required
 
-Within this step, the [!DNL Data Migration Tool] creates additional tables and triggers for the migration tables in the Magento 1 database. They will be used in the [incremental/delta](delta.md) migration step. Additional tables contain information about changed records after the final migration execution. Database triggers are used to populate these extra tables, so if a new operation is being performed on the particular table (a record is added/modified/removed), these database trigger save information about this operation to the extra table. When we run a delta migration process, the [!DNL Data Migration Tool] checks these tables for the unprocessed records and migrates the necessary content into the Magento 2 database.
+Within this step, the [!DNL Data Migration Tool] creates additional tables and triggers for the migration tables in the Magento 1 database. They are used in the [incremental/delta](delta.md) migration step. Additional tables contain information about changed records after the final migration execution. Database triggers are used to populate these extra tables, so if a new operation is being performed on the particular table (a record is added/modified/removed), these database trigger save information about this operation to the extra table. When we run a delta migration process, the [!DNL Data Migration Tool] checks these tables for the unprocessed records and migrates the necessary content into the Magento 2 database.
 
-Each new table will have:
+Each new table contains:
 
 *  `m2_cl` prefix
 *  `INSERT`, `UPDATE`, `DELETE` event triggers.

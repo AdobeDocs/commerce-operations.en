@@ -5,7 +5,7 @@ description: Learn how to upgrade the [!DNL Data Migration Tool] to transfer dat
 
 # Upgrade the [!DNL Data Migration Tool]
 
-To make sure the versions of your current Magento 2 installation and the [!DNL Data Migration Tool] match exactly, you may need to upgrade the Tool.
+To make sure the versions of your current Magento 2 installation and the [!DNL Data Migration Tool] match exactly, you may need to upgrade the tool.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ Before upgrading the [!DNL Data Migration Tool], you must:
 
 *  Back up the `vendor/magento/data-migration-tool` directory
 
-*  Make sure the [!DNL Data Migration Tool] version matches the Magento application version
+*  Make sure that the [!DNL Data Migration Tool] version matches the Magento application version
 
 ### Upgrade your Magento software
 

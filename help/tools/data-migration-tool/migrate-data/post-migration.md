@@ -15,4 +15,4 @@ After you have completed your migration and thoroughly tested your new Magento 2
 
 *  [Reindex all Magento 2 indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#reindex)
 
-*  Change DNS, load balancers, etc. to point to Magento 2 production hardware
+*  Change DNS and load balancers to point to the Magento 2 production hardware

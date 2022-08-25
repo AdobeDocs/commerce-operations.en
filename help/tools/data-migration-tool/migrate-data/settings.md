@@ -5,8 +5,7 @@ description: Learn how to start migrating settings from Magento 1 to Magento 2 w
 
 # Data migration settings
 
-The `Settings` mode migrates stores, websites, and system configuration like shipping, payment, tax settings, etc.
-According to our data migration [order](overview.md#migration-order), you should migrate settings first.
+The `Settings` mode migrates stores, websites, and system configuration like shipping, payment, and tax settings. According to our data migration [order](overview.md#migration-order), you should migrate settings first.
 
 Before you start, take the following steps to prepare:
 
@@ -29,7 +28,7 @@ To start migrating settings, run:
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-where:
+Where:
 
 *  `[-r|--reset]` is an optional argument that starts migration from the beginning. You can use this argument for testing migration
 
@@ -46,7 +45,7 @@ The `Migration completed` message is displayed after the settings are transferre
 
 ## Configure custom migration rules
 
-You may ignore, rename or change the system configurations when migrating settings. For this, specify your custom rules in the `settings.xml` file.
+You may ignore, rename, or change the system configurations when migrating settings. For this, specify your custom rules in the `settings.xml` file.
 
 1. Log in to the server with your Magento 2 instance as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 
@@ -56,7 +55,7 @@ You may ignore, rename or change the system configurations when migrating settin
    cd <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   For example, if Magento 2 is installed in `/var/www/html`, you will find `settings.xml.dist` in one of the following directories:
+   For example, if Magento 2 is installed in `/var/www/html`, the `settings.xml.dist` file is in one of the following directories:
 
    *  `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 

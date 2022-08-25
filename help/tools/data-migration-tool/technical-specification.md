@@ -5,7 +5,7 @@ description: Learn about the implementation details of the [!DNL Data Migration 
 
 # [!DNL Data Migration Tool] technical specification
 
-This section describes an implementation details of [!DNL Data Migration Tool] and how to extend its functionality.
+This section describes [!DNL Data Migration Tool] implementation details and how to extend its functionality.
 
 ## Repositories
 
@@ -164,7 +164,7 @@ Configuration data is accessible via \Migration\Config class.
 
 |Document|Field|
 |---|---|
-|`step`|Second level node inside the Steps node. Description of the relevant step must be specified in the `title` attribute.|
+|`step`|Second-level node inside the Steps node. Description of the relevant step must be specified in the `title` attribute.|
 |`integrity`|Specifies the PHP class responsible for the integrity check. Compares the table field names, types, and other info to verify compatibility between Magento 1 and 2 data structures.|
 |`data`|Specifies the PHP class responsible for the data check. Transfers the data, table by table from Magento 1 to Magento 2.|
 |`volume`|Specifies the PHP class responsible for the volume check. Compares the number of records between tables to verify that the transfer was successful.|
@@ -219,7 +219,7 @@ For example:
 
 The migration process consists of steps.
 
-Step is a unit that provides functionality required for migration some separated data. Step can consist of one or more stages e.g. integrity check, data, volume check, delta.
+Step is a unit that provides functionality required for migration some separated data. Step can consist of one or more stages (integrity check, data, volume check, and delta).
 
 By default, there are several steps ([Map](#map-step), [EAV](#eav), [URL Rewrites](#url-rewrite-step), and so on). You can optionally add your own steps as well.
 
@@ -273,15 +273,15 @@ $this->progress->finish();
 
 ### Integrity check
 
-Each step has to check that the structure of data source (Magento 1 by default) and the structure of data destination (Magento 2) are compatible. If not - an error will be shown with entities that are not compatible. In case when fields have different datatypes (e.g. the same field has decimal datatype in Magento 1 and integer in Magento 2), a warning message will be shown (except when it was covered in Map file).
+Each step has to check that the structure of data source (Magento 1 by default) and the structure of data destination (Magento 2) are compatible. If not - an error displays with entities that are not compatible. In case when fields have different datatypes (the same field has decimal datatype in Magento 1 and integer in Magento 2), a warning message displays (except when it was covered in Map file).
 
 ### Data Transfer
 
-In case integrity check passed, transferring data is running. If some error appears then rollback will run to revert to previous state of Magento 2. If a step class implements RollbackInterface then "rollback" method will be executed in case of error.
+In case integrity check passed, transferring data is running. If errors appear, then rollback runs to revert to the previous state of Magento 2. If a step class implements the `RollbackInterface` interface, then the rollback method executes when there is an error.
 
 ### Volume check
 
-After data has been migrated Volume Check provides additional check that all data was transferred correctly.
+After data has been migrated, Volume Check provides additional check that all data was transferred correctly.
 
 ### Delta delivery
 
@@ -327,17 +327,17 @@ All store configuration keeps its data in core_config_data table in database. se
 </settings>
 ```
 
-Under node <code>&lt;key&gt;</code> there are rules that work with 'path' column of core_config_data table. <code>&lt;ignore&gt;</code> rules make the tool not to transfer some setting. Wildcards can be used in this node. All other settings not listed in <code>&lt;ignore&gt;</code> node, will be migrated. If path of some setting is changed in Magento 2, it should be added to //key/rename node, where old path indicates in //key/rename/path node and new path indicates in //key/rename/to node.
+Under the node `<key>` there are rules that work with the 'path' column in the `core_config_data` table. `<ignore>` rules prevent the tool from transferring some settings. Wildcards can be used in this node. All other settings not listed in the `<ignore>` node are migrated. If the path to a setting changed in Magento 2, it should be added to //key/rename node, where the old path indicates in //key/rename/path node and new path indicates in //key/rename/to node.
 
-Under node <code>&lt;value&gt;</code> there are rules that work with 'value' column of core_config_data table. These rules aim to transform value of settings by handlers (classes that implement Migration\Handler\HandlerInterface) and adapt it for Magento 2.
+Under the node `<value>`, there are rules that work with the 'value' column in the `core_config_data` table. These rules aim to transform value of settings by handlers (classes that implement Migration\Handler\HandlerInterface) and adapt it for Magento 2.
 
 ### Data migration mode
 
-In this mode most of the data will be migrated. Before data migration the integrity check stages run for each step. If the integrity check passes, the [!DNL Data Migration Tool] installs deltalog tables (with prefix `m2_cl_*`) and corresponding triggers to the Magento 1 database and runs data migration stage of steps. When migration is completed without errors, the volume check checks data consistency. It can show a warning message if you migrate the live store. Do not worry, delta migration will take care of this incremental data. The most valuable migration steps are Map, URL Rewrite, and EAV.
+In this mode, most of the data is migrated. Before data migration the integrity check stages run for each step. If the integrity check passes, the [!DNL Data Migration Tool] installs deltalog tables (with prefix `m2_cl_*`) and corresponding triggers to the Magento 1 database and runs data migration stage of steps. When migration is completed without errors, the volume check checks data consistency. It can show a warning message if you migrate the live store. Do not worry, delta migration takes care of this incremental data. The most valuable migration steps are Map, URL Rewrite, and EAV.
 
 #### Map Step
 
-Map step is responsible for transferring most of data from Magento 1 to Magento 2. This step reads instructions from map.xml file (located in etc dir). The file describes differences between data structures of source (Magento 1) and destination (Magento 2). In case Magento 1 contains tables or fields that belong to some [extension](https://glossary.magento.com/extension) that does not exist in Magento 2, then these entities can be placed here to ignore them by Map Step. Otherwise it will show an error message.
+Map step is responsible for transferring most of data from Magento 1 to Magento 2. This step reads instructions from map.xml file (located in the `etc/` directory). The file describes differences between data structures of source (Magento 1) and destination (Magento 2). In case Magento 1 contains tables or fields that belong to some [extension](https://glossary.magento.com/extension) that does not exist in Magento 2, then these entities can be placed here to ignore them by Map Step. Otherwise, it displays an error message.
 
 Map file has the next format:
 
@@ -401,15 +401,15 @@ Areas:
 
 Options:
 
-*  *ignore* - document, field or datatype marked with this option will be ignored
+*  *ignore* - document, field or datatype marked with this option is ignored
 
-*  *rename* - describes name relations between documents with the different name. In a case when destination document name is not the same with the source document - you can use rename option to set source document name similar to destination table name
+*  *rename* - describes name relations between documents with the different name. In a case when destination document name is not the same with the source document, you can use rename option to set source document name similar to destination table name
 
 *  *move* - sets rule to move specified field from source document to destination document. NOTE: destination document name should be the same with the source document name. If source and destination document names are different - you need to use rename option for document that contains moved field
 
 *  *transform* - is an option that allows user to migrate fields according to behavior described in handlers
 
-*  *handler* - describes transformation behavior for fields. To call the handler you need to specify a handler class name in a `<handler>` tag. Use the `<param>` tag with the parameter name and value data to pass it to handler
+*  *handler* - describes transformation behavior for fields. To call the handler, you need to specify a handler class name in a `<handler>` tag. Use the `<param>` tag with the parameter name and value data to pass it to handler
 
 **Source** available operations:
 
@@ -425,32 +425,31 @@ Options:
 
 #### Wildcards
 
-To ignore documents with similar parts (e.g. document_name_1, document_name_2 e.t.c), you can use wildcard functionality. Just put `*` symbol instead of repeating part (e.g. `document_name_*`) and this mask will cover all source or destination documents that meet this mask.
+To ignore documents with similar parts (`document_name_1`, `document_name_2`), you can use wildcard functionality. Put `*` symbol instead of repeating part (`document_name_*`) and this mask covers all source or destination documents that meet this mask.
 
 #### URL rewrite step
 
-This step is quite complex because there are many different algorithms developed in Magento 1 which are not compatible with Magento 2. For different versions of Magento 1 there can be different algorithms. Thus under Step/UrlRewrite folder there are classes that were developed for some of particular versions of Magento and Migration\Step\UrlRewrite\Version191to2000 is one of them. It can transfer URL Rewrites data from Magento 1.9.1 to Magento 2.
+This step is complex because there are many different algorithms developed in Magento 1 which are not compatible with Magento 2. For different versions of Magento 1, there can be different algorithms. Thus under Step/UrlRewrite folder there are classes that were developed for some of particular versions of Magento and Migration\Step\UrlRewrite\Version191to2000 is one of them. It can transfer URL Rewrites data from Magento 1.9.1 to Magento 2.
 
 #### EAV step
 
-This step transfers all attributes (e.g. product, customer, RMA) from Magento 1 to Magento 2. It uses map-eav.xml file that contains rules similar to the ones in map.xml file for specific cases of processing data.
+This step transfers all attributes (product, customer, RMA) from Magento 1 to Magento 2. It uses map-eav.xml file that contains rules similar to the ones in map.xml file for specific cases of processing data.
 
 Some of the tables that are processed in the step:
 
-*  eav_attribute
-*  eav_attribute_group
-*  eav_attribute_set
-*  eav_entity_attribute
-*  catalog_eav_attribute
-*  customer_eav_attribute
-*  eav_entity_type
-*  ...
+*  `eav_attribute`
+*  `eav_attribute_group`
+*  `eav_attribute_set`
+*  `eav_entity_attribute`
+*  `catalog_eav_attribute`
+*  `customer_eav_attribute`
+*  `eav_entity_type`
 
 ### Delta migration mode
 
 After main migration, additional data could have been added to the Magento 1 database (for example, by customers on storefront). To track this data, the Tool sets up the database triggers for tables in the beginning of migration process. For more information, see [Migrate data created by third-party extensions](migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
 
-## Data Sources
+## Data sources
 
 To reach to the data sources of Magento 1 and Magento 2 and operate with its data (select, update, insert, delete) there are many classes in Resource folder. Migration\ResourceModel\Source and Migration\ResourceModel\Destination are main classes. All migration steps use it to operate with data. This data is contained in classes like Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure etc.
 
@@ -460,7 +459,7 @@ Here is a class diagram of these classes:
 
 ## Logging
 
-In order to implement output of migration process and control all possible levels PSR logger, which is used in Magento, is applied. \Migration\Logger\Logger class was implemented to provide logging functionality. To use the logger you should inject it via constructor [dependency injection](https://glossary.magento.com/dependency-injection).
+In order to implement output of migration process and control all possible levels PSR logger, which is used in Magento, is applied. \Migration\Logger\Logger class was implemented to provide logging functionality. To use the logger, you should inject it via constructor [dependency injection](https://glossary.magento.com/dependency-injection).
 
 ```php
 class SomeClass
@@ -499,7 +498,7 @@ Also it is possible to implement any additional handler. There is a set of handl
 $this->logger->pushHandler($this->consoleHandler);
 ```
 
-To set additional data for logger (e.g. current mode, table name e.t.c) you can use logger processors. There is one existing processor (MessageProcessor). It's created to add "extra" data for logging messages and will be called each time when log method is executed. MessageProcessor has protected $extra var, which contain empty values for 'mode', 'stage', 'step' and 'table'. Extra data can be passed to processor as a second parameter (context) for log method. Currently additional data sets to processor in AbstractStep->runStage (pass current mode, stage and step to processor) method and data classes where used logger->debug method (pass migrating table name). Example of adding processors to logger:
+To set additional data for logger (current mode, table name) you can use logger processors. There is one existing processor (MessageProcessor). It's created to add "extra" data for logging messages and are called each time when log method is executed. MessageProcessor has protected $extra var, which contain empty values for 'mode', 'stage', 'step' and 'table'. Extra data can be passed to processor as a second parameter (context) for log method. Currently additional data sets to processor in AbstractStep->runStage (pass current mode, stage, and step to processor) method and data classes where used logger->debug method (pass migrating table name). Example of adding processors to logger:
 
 ```php
 // $this->processoris the object of Migration\Logger\messageProcessor class
@@ -508,15 +507,27 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 // As a second array value you need to pass method that should be executed when processor called
 ```
 
-There is a possibility to set the level of verbosity. As for now there are 3 levels: ERROR(writes only errors to the log), INFO(only important information is written to the log, default value), DEBUG(everything is written). Verbosity log level can be set for each handler separately by calling setLevel() method. If you want to set verbosity level via command line parameter, you should change 'verbose' option at application launch.
+There is a possibility to set the level of verbosity. As for now there are three levels:
 
-There is a possibility to format log messages via monolog formatter. To make formatter functionality work it needs to be set to specified log handler using setFormatter() method. Currently we have one formatter class (MessageFormatter) that sets certain format (depends on verbosity level) during message handling (via format() method executed from handler).
+*  `ERROR` (writes only errors to the log)
+*  `INFO` (only important information is written to the log, default value)
+*  `DEBUG` (everything is written)
 
-As for now manipulation with logger, adding handler(s), processor(s) to it and processing verbose mode is performed in process() method of Migration\Logger\Manager class. Mentioned method is called during application start.
+Verbosity log level can be set for each handler separately by calling setLevel() method. If you want to set verbosity level via command-line parameter, you should change 'verbose' option at application launch.
+
+You can format log messages with the monolog formatter. To make formatter functionality work, you must specify the log handler using the `setFormatter()` method. Currently, we have one formatter class (`MessageFormatter`) that sets certain format (depends on verbosity level) during message handling (through the `format()` method executed from the handler).
+
+Manipulating the logger (adding handlers and processors) and processing in verbose mode is performed in the `process()` method of the `Migration\Logger\Manager` class. The method is called when the application starts.
 
 ## Automatic tests
 
-There are 3 types of tests in [!DNL Data Migration Tool]: static, unit and integration tests. They all are located in tests/ directory of the tool and they are located in folders, which are the same as the type of the test (e.g. unit tests are located in tests/unit folder). To launch the test you should have phpunit installed. In such case you should change current folder to the folder of test and launch phpunit. See the example below.
+There are three types of tests in the [!DNL Data Migration Tool]: 
+
+*  Static
+*  Unit
+*  Integration
+
+They are located in the tool's `tests/` directory, which is the same as the type of test (unit tests are located in the `tests/unit` directory). To launch the test, you should have phpunit installed. Change the current directory to the test directory and launch phpunit. For example:
 
 ```bash
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]

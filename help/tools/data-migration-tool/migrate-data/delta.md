@@ -7,13 +7,13 @@ description: Learn how to migrate only data that has changed since your last Mag
 
 The incremental migration tool installs deltalog tables (with prefix `m2_cl_*`) and triggers (for tracking changes) in the Magento 1 database during the [migration of data](data.md). These deltalog tables and triggers are essential to ensuring that you migrate only the changes made in Magento 1 since the last time you migrated data. These changes are:
 
-*  Data that customers added via [storefront](https://glossary.magento.com/storefront) (created orders, reviews, changes in customer profiles, etc.)
+*  Data that customers added via [storefront](https://glossary.magento.com/storefront) (created orders, reviews, and changes in customer profiles)
 
 *  All operations with orders, products, and categories in the [Admin](https://glossary.magento.com/magento-admin) panel
 
 >[!NOTE]
 >
->All other new or updated entities entered through the Admin, such as attributes or CMS pages, are not included in the incremental migration and will not be migrated.
+>All other new or updated entities entered through the Admin, such as attributes or CMS pages, are not included in the incremental migration and are not migrated.
 
 
 Before you start, take the following steps to prepare:
@@ -31,7 +31,7 @@ To start migrating incremental changes, run:
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-where
+Where:
 
 *  `[-r|--reset]` is an optional argument that starts migration from the beginning. You can use this argument for testing migration.
 
