@@ -27,7 +27,7 @@ Migration is a perfect moment to make serious changes and get your site ready fo
 
 *  Install Magento 2.x (with all modules of this release) and the Data Migration Tool on a system that meets the [Magento system requirements]
 
-*  Make your custom adjustments to the Data Migration Tool code in case you do not need to migrate some data (like CMS Pages, Sales Rules, etc.) or want to convert your Magento customization during migration. Read the Data Migration Tool's [Technical Specification] to better understand how migration works from inside
+*  Make your custom adjustments to the Data Migration Tool code in case you do not need to migrate some data (like CMS Pages, Sales Rules, etc.) or want to convert your Magento customization during migration. Read the Data Migration Tool's [Technical Specification](technical-specification.md) to better understand how migration works from inside
 
 ## Step 3: Dry run
 
@@ -108,5 +108,4 @@ Now that your Magento 2 site is up-to-date with Magento 1 and is functioning nor
 <!-- LINK ADDRESSES -->
 [Magento system requirements]: https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html
 [Commerce Marketplace]: https://marketplace.magento.com
-[Technical Specification]: technical-specification.md
 [Configuration guide]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html

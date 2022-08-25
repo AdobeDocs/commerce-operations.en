@@ -40,18 +40,18 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [The Security tab](observation-for-adobe-commerce/security-tab.md) 
   - [The Infra tab](observation-for-adobe-commerce/oac-infra.md)
   - [How to use Observation for Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
-- Data Migration Tool {#data-migration-tool}
+- Data Migration Tool {#data-migration}
   - [How migration works](data-migration-tool/how-migration-works.md)
   - [Best practices](data-migration-tool/best-practices.md)
   - [Supported versions](data-migration-tool/supported-versions.md)
   - Basics {#basics}
     - [Create a plan](data-migration-tool/create-plan.md)
-    - [Prerequisites](tool/prerequisites.md)
+    - [Prerequisites](data-migration-tool/prerequisites.md)
     - [Install](data-migration-tool/install.md)
     - [Upgrade](data-migration-tool/upgrade.md)
     - [Configure](data-migration-tool/configure.md)
     - [Customize](data-migration-tool/customize.md)
-    - [Technical specification](tool/technical-specification.md)
+    - [Technical specification](data-migration-tool/technical-specification.md)
   - Migrate data {#migrate-data}
     - [Overview](data-migration-tool/migrate-data/overview.md)
     - [Settings](data-migration-tool/migrate-data/settings.md)
