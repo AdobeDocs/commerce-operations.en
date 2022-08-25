@@ -1,11 +1,13 @@
 ---
 title: How data migration works
-description: Learn about the data migration process between MAgento 1 and Magento 2, including terminology, workflow diagrams, and steps.
+description: Learn about the data migration process between Magento 1 and Magento 2, including terminology, workflow diagrams, and steps.
 ---
 
 # How data migration works
 
 This topic provides a high-level overview of how data is migrated from Magento 1 to Magento 2 using the Data Migration Tool.
+
+The Data Migration Tool is a command-line interface (CLI) tool used for transferring data from Magento 1 to Magento 2. The Tool verifies consistency between Magento 1 and 2 database structures (tables and fields), tracks the data transfer progress, creates logs, and runs data verification tests.
 
 ## Terminology
 
@@ -55,10 +57,35 @@ Mapping files are discussed in more detail in [Data Migration Tool Technical Spe
 ![Migration Flow](../../assets/data-migration/migration_flow.png)
 
 <!-- Link definitions -->
-[Data Migration Tool Technical Specification]: ../tool/technical-specification.md
+[Data Migration Tool Technical Specification]: technical-specification.md
 
 [Migration Modes]: ../../assets/data-migration/MigrationModes2.png
 
 [Migration Overview]: ../../assets/data-migration/MigrationOverview2.png
 
 [Migration Steps]: ../../assets/data-migration/MigrationSteps2.png
+
+We are pleased you are considering moving from the world's #1 commerce platform --- Magento 1.x --- to the platform of the future, Magento 2. We are excited to share the details about this process, which we refer to as migration.
+
+## Migration components
+
+Magento 2 migration involves four components: data, extensions and custom code, themes, and customizations.
+
+### Data
+
+We have developed the **Magento 2 Data Migration Tool** to help you efficiently move all of your products, customers, and order data, store configurations, promotions and more to Magento 2. This guide provides information on the tool and best practices for using it to migrate your data.
+
+### Extensions and custom code
+
+We have been working hard with the development community to help you use your Magento 1 extensions in Magento 2. Now we are proud to present the [Commerce Marketplace](https://marketplace.magento.com/), where you can download or purchase the latest versions of your favorite extensions.
+
+More information on developing extensions for Magento 2 is available in the [PHP Developer Guide](https://developer.adobe.com/commerce/php/development/).
+
+### Themes and customizations
+
+Magento 2 uses new approaches and technologies that give merchants an unmatched ability to create innovative shopping experiences and scale to new levels. To take advantage of these advances, developers will need to make changes to their themes and customizations. Documentation is available online for creating Magento 2 [themes](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [layouts](https://developer.adobe.com/commerce/frontend-core/guide/layouts/), and [customizations](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage/).
+
+## Migration efforts
+
+Just like an upgrade between 1.x versions (for example, from v1.12 to v1.14), the level of effort to migrate from Magento 1 to Magento 2 depends upon how you have built your site and its level of customization.
+However, we are constantly improving the Data Migration Tool (see the [Changelog](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) for more details); so the migration efforts are continuously decreasing.

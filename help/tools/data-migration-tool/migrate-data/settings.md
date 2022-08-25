@@ -35,7 +35,7 @@ where:
 
 *  `[-a|--auto]` is an optional argument that prevents migration from stopping when it encounters integrity check errors.
 
-*  `{<path to config.xml>}` is the absolute file system path to the migration tool's [`config.xml`](../tool/configure.md#configure-migration-in-vendor-folder) file; this argument is required.
+*  `{<path to config.xml>}` is the absolute file system path to the migration tool's [`config.xml`](../configure.md#configure-migration-in-vendor-folder) file; this argument is required.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ You may ignore, rename or change the system configurations when migrating settin
 
 1. To specify the new name of the settings file for mapping, change the `<settings_map_file>` tag in the `path/to/config.xml` file.
 
-For more details, see the [Settings migration mode](../tool/technical-specification.md#settings-migration-mode) section of the Tool's [specification](../tool/technical-specification.md).
+For more details, see the [Settings migration mode](../technical-specification.md#settings-migration-mode) section of the Tool's [specification](../technical-specification.md).
 
 ## Next migration step
 

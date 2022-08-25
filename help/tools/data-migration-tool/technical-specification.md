@@ -448,7 +448,7 @@ Some of the tables that are processed in the step:
 
 ### Delta migration mode
 
-After main migration, additional data could have been added to the Magento 1 database (for example, by customers on storefront). To track this data, the Tool sets up the database triggers for tables in the beginning of migration process. For more information, see [Migrate data created by third-party extensions](../migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
+After main migration, additional data could have been added to the Magento 1 database (for example, by customers on storefront). To track this data, the Tool sets up the database triggers for tables in the beginning of migration process. For more information, see [Migrate data created by third-party extensions](migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
 
 ## Data Sources
 
