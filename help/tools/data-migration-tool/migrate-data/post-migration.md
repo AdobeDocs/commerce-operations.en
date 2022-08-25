@@ -1,6 +1,6 @@
 ---
 title: Post-data migration steps
-description: Learn what steps to take after using the Data Migration Tool to migrate data from Magento 1 to Magento 2.
+description: Learn what steps to take after using the [!DNL Data Migration Tool] to migrate data from Magento 1 to Magento 2.
 ---
 
 # Post-data migration steps

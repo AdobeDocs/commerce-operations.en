@@ -1,16 +1,16 @@
 ---
-title: Install the Data Migration Tool
-description: Learn how to install the Data Migration Tool to transfer data between Magento 1 and Magento 2.
+title: Install the [!DNL Data Migration Tool]
+description: Learn how to install the [!DNL Data Migration Tool] to transfer data between Magento 1 and Magento 2.
 ---
 
-# Install the Data Migration Tool
+# Install the [!DNL Data Migration Tool]
 
 >[!INFO]
 >
->Versions of Magento and Data Migration Tool must match.
+>Versions of Magento and [!DNL Data Migration Tool] must match.
 
 
-Make sure you are using *the same released version* of both Magento 2 and the Data Migration Tool. For example, for Magento version 2.2.0, you must also use the Data Migration Tool version 2.2.0.
+Make sure you are using *the same released version* of both Magento 2 and the [!DNL Data Migration Tool]. For example, for Magento version 2.2.0, you must also use the [!DNL Data Migration Tool] version 2.2.0.
 
 ## Check your version
 
@@ -44,13 +44,13 @@ If you're currently in the `develop` branch, you must change to a <a href="https
 If you haven't installed the Magento software yet, [install it now](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
 If you're cloning the GitHub repository, make sure you check out a release tag as discussed in [(Contributor) Clone the Magento repository](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/dev_install.html).
 
-## Find released versions of Data Migration Tool
+## Find released versions of [!DNL Data Migration Tool]
 
-Go to the [Releases](https://github.com/magento/data-migration-tool/releases) page of the Data Migration Tool GitHub repository to find available released versions.
+Go to the [Releases](https://github.com/magento/data-migration-tool/releases) page of the [!DNL Data Migration Tool] GitHub repository to find available released versions.
 
-## Install the Data Migration Tool
+## Install the [!DNL Data Migration Tool]
 
-You may install the Data Migration Tool from:
+You may install the [!DNL Data Migration Tool] from:
 
 - [`repo.magento.com`](#install-from-repomagentocom)
 - [GitHub](#install-from-github)
@@ -62,7 +62,7 @@ Before installing, make sure you have:
 
 ### Install from `repo.magento.com`
 
-To install the Data Migration Tool, you must update `composer.json` in the Magento root installation directory to provide the location of the Data Migration Tool package.
+To install the [!DNL Data Migration Tool], you must update `composer.json` in the Magento root installation directory to provide the location of the [!DNL Data Migration Tool] package.
 
 1. Log in to your Magento server as, or switch to, <a href="https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html">the file system owner</a>.
 1. Change to Magento 2 root directory.
@@ -92,7 +92,7 @@ To install the Data Migration Tool, you must update `composer.json` in the Magen
 
 ### Install from GitHub
 
-If you've cloned Magento 2 from the GitHub repository, follow the steps below to install the Data Migration Tool.
+If you've cloned Magento 2 from the GitHub repository, follow the steps below to install the [!DNL Data Migration Tool].
 
 1. Log in to your Magento server as, or switch to, <a href="https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html">the file system owner</a>.
 1. Change to Magento 2 root directory.
@@ -118,10 +118,10 @@ If you've cloned Magento 2 from the GitHub repository, follow the steps below to
    composer require magento/data-migration-tool:2.2.0
    ```
 
-### Check version of installed Data Migration Tool
+### Check version of installed [!DNL Data Migration Tool]
 
-1. Change to your Data Migration Tool directory: `<vendor>/magento/data-migration-tool`.
+1. Change to your [!DNL Data Migration Tool] directory: `<vendor>/magento/data-migration-tool`.
 
 1. Open [`composer.json`](https://github.com/magento/data-migration-tool/blob/2.4/composer.json) in a text editor.
 
-1. The `version` entry in that file is the version of the Data Migration Tool.
+1. The `version` entry in that file is the version of the [!DNL Data Migration Tool].

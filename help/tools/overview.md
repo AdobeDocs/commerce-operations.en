@@ -15,3 +15,4 @@ This guide is designed for merchants, developers, and integrators to facilitate 
 *  [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
 *  [[!DNL Quality Patches Tool]](https://devdocs.magento.com/quality-patches/tool.html)
 *  [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
+*  [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)

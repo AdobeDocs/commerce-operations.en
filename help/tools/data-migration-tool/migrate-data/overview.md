@@ -1,6 +1,6 @@
 ---
 title: Migration overview
-description: Learn how to start migrating data from Magento 1 to Magento 2 with the Data Migration Tool.
+description: Learn how to start migrating data from Magento 1 to Magento 2 with the [!DNL Data Migration Tool].
 ---
 
 # Migration overview
@@ -19,9 +19,9 @@ During the migration process, **do not:**
 >
 >All operations in Magento 1 storefront are allowed at this time.
 
-## Run the Data Migration Tool
+## Run the [!DNL Data Migration Tool]
 
-This section shows how to run the Data Migration Tool to migrate settings, data, or incremental changes.
+This section shows how to run the [!DNL Data Migration Tool] to migrate settings, data, or incremental changes.
 
 ### First steps
 
@@ -79,7 +79,7 @@ where:
 
 ## Migration order
 
-When we created the Data Migration Tool, we assumed the following data transfer sequence:
+When we created the [!DNL Data Migration Tool], we assumed the following data transfer sequence:
 
 1. [Settings](settings.md)
 1. [Data](data.md)

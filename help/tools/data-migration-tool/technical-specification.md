@@ -1,15 +1,15 @@
 ---
-title: Data Migration Tool technical specification
-description: Learn about the implementation details of the Data Migration Tool and how to extend when transferring data between Magento 1 and Magento 2.
+title: [!DNL Data Migration Tool] technical specification
+description: Learn about the implementation details of the [!DNL Data Migration Tool] and how to extend when transferring data between Magento 1 and Magento 2.
 ---
 
-# Data Migration Tool technical specification
+# [!DNL Data Migration Tool] technical specification
 
-This section describes an implementation details of Data Migration Tool and how to extend its functionality.
+This section describes an implementation details of [!DNL Data Migration Tool] and how to extend its functionality.
 
 ## Repositories
 
-Data Migration Tool repository [migration-tool](https://github.com/magento/data-migration-tool)
+[!DNL Data Migration Tool] repository [migration-tool](https://github.com/magento/data-migration-tool)
 
 ## System requirements
 
@@ -19,7 +19,7 @@ Same as for [Magento2](https://devdocs.magento.com/guides/v2.4/install-gde/syste
 
 ### Directory structure
 
-The following diagram represents directory structure of Data Migration Tool:
+The following diagram represents directory structure of [!DNL Data Migration Tool]:
 
 ```terminal
 
@@ -333,7 +333,7 @@ Under node <code>&lt;value&gt;</code> there are rules that work with 'value' col
 
 ### Data migration mode
 
-In this mode most of the data will be migrated. Before data migration the integrity check stages run for each step. If the integrity check passes, the Data Migration Tool installs deltalog tables (with prefix `m2_cl_*`) and corresponding triggers to the Magento 1 database and runs data migration stage of steps. When migration is completed without errors, the volume check checks data consistency. It can show a warning message if you migrate the live store. Do not worry, delta migration will take care of this incremental data. The most valuable migration steps are Map, URL Rewrite, and EAV.
+In this mode most of the data will be migrated. Before data migration the integrity check stages run for each step. If the integrity check passes, the [!DNL Data Migration Tool] installs deltalog tables (with prefix `m2_cl_*`) and corresponding triggers to the Magento 1 database and runs data migration stage of steps. When migration is completed without errors, the volume check checks data consistency. It can show a warning message if you migrate the live store. Do not worry, delta migration will take care of this incremental data. The most valuable migration steps are Map, URL Rewrite, and EAV.
 
 #### Map Step
 
@@ -516,7 +516,7 @@ As for now manipulation with logger, adding handler(s), processor(s) to it and p
 
 ## Automatic tests
 
-There are 3 types of tests in Data Migration Tool: static, unit and integration tests. They all are located in tests/ directory of the tool and they are located in folders, which are the same as the type of the test (e.g. unit tests are located in tests/unit folder). To launch the test you should have phpunit installed. In such case you should change current folder to the folder of test and launch phpunit. See the example below.
+There are 3 types of tests in [!DNL Data Migration Tool]: static, unit and integration tests. They all are located in tests/ directory of the tool and they are located in folders, which are the same as the type of the test (e.g. unit tests are located in tests/unit folder). To launch the test you should have phpunit installed. In such case you should change current folder to the folder of test and launch phpunit. See the example below.
 
 ```bash
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]

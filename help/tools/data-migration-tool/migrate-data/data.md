@@ -1,6 +1,6 @@
 ---
 title: Migrate data
-description: Learn how to start migrating data from Magento 1 to Magento 2 with the Data Migration Tool.
+description: Learn how to start migrating data from Magento 1 to Magento 2 with the [!DNL Data Migration Tool].
 ---
 
 # Migrate data
@@ -28,14 +28,14 @@ where:
 
 *  `{<path to config.xml>}` is the absolute file system path to `config.xml`; this argument is required
 
-Within this step, the Data Migration Tool creates additional tables and triggers for the migration tables in the Magento 1 database. They will be used in the [incremental/delta](delta.md) migration step. Additional tables contain information about changed records after the final migration execution. Database triggers are used to populate these extra tables, so if a new operation is being performed on the particular table (a record is added/modified/removed), these database trigger save information about this operation to the extra table. When we run a delta migration process, the Data Migration Tool checks these tables for the unprocessed records and migrates the necessary content into the Magento 2 database.
+Within this step, the [!DNL Data Migration Tool] creates additional tables and triggers for the migration tables in the Magento 1 database. They will be used in the [incremental/delta](delta.md) migration step. Additional tables contain information about changed records after the final migration execution. Database triggers are used to populate these extra tables, so if a new operation is being performed on the particular table (a record is added/modified/removed), these database trigger save information about this operation to the extra table. When we run a delta migration process, the [!DNL Data Migration Tool] checks these tables for the unprocessed records and migrates the necessary content into the Magento 2 database.
 
 Each new table will have:
 
 *  `m2_cl` prefix
 *  `INSERT`, `UPDATE`, `DELETE` event triggers.
 
-For example, for the `sales_flat_order` the Data Migration Tool creates:
+For example, for the `sales_flat_order` the [!DNL Data Migration Tool] creates:
 
 *  `m2_cl_sales_flat_order` table:
 
@@ -78,12 +78,12 @@ For example, for the `sales_flat_order` the Data Migration Tool creates:
 
 >[!NOTE]
 >
->The Data Migration Tool saves its current progress as it runs. If errors or a user intervention stops it from running, the Tool resumes progress at the last known good state. To force the Data Migration Tool to run from the beginning, use the `--reset` argument. In that case, we recommend you restore your Magento 2 database dump to prevent duplicating previously migrated data.
+>The [!DNL Data Migration Tool] saves its current progress as it runs. If errors or a user intervention stops it from running, the Tool resumes progress at the last known good state. To force the [!DNL Data Migration Tool] to run from the beginning, use the `--reset` argument. In that case, we recommend you restore your Magento 2 database dump to prevent duplicating previously migrated data.
 
 
 ## Possible consistency errors
 
-While running, the Data Migration Tool may report inconsistencies between Magento 1 and Magento 2 databases, and display messages like the following:
+While running, the [!DNL Data Migration Tool] may report inconsistencies between Magento 1 and Magento 2 databases, and display messages like the following:
 
 *  `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 *  `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`

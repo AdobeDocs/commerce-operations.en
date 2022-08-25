@@ -5,9 +5,9 @@ description: Learn about the data migration process between Magento 1 and Magent
 
 # How data migration works
 
-This topic provides a high-level overview of how data is migrated from Magento 1 to Magento 2 using the Data Migration Tool.
+This topic provides a high-level overview of how data is migrated from Magento 1 to Magento 2 using the [!DNL Data Migration Tool].
 
-The Data Migration Tool is a command-line interface (CLI) tool used for transferring data from Magento 1 to Magento 2. The Tool verifies consistency between Magento 1 and 2 database structures (tables and fields), tracks the data transfer progress, creates logs, and runs data verification tests.
+The [!DNL Data Migration Tool] is a command-line interface (CLI) tool used for transferring data from Magento 1 to Magento 2. The Tool verifies consistency between Magento 1 and 2 database structures (tables and fields), tracks the data transfer progress, creates logs, and runs data verification tests.
 
 ## Terminology
 
@@ -18,7 +18,7 @@ The Data Migration Tool is a command-line interface (CLI) tool used for transfer
 
 ## Modes
 
-The Data Migration Tool splits the migration process into three phases or *modes* in order to transfer and adapt data from Magento 1.x to Magento 2.x. The three modes are listed here and must be run in this order:
+The [!DNL Data Migration Tool] splits the migration process into three phases or *modes* in order to transfer and adapt data from Magento 1.x to Magento 2.x. The three modes are listed here and must be run in this order:
 
 1. **Settings Mode**: migrates the system configuration and website-related settings.
 1. **Data Mode**: migrates database assets in bulk.
@@ -28,7 +28,7 @@ The Data Migration Tool splits the migration process into three phases or *modes
 
 ## Steps
 
-The Data Migration Tool uses a list of *steps* within each mode to migrate a particular type of data. For example, in the Settings mode, there are two steps used to migrate all the settings data: the Stores step and the Settings step. Details about the specific data that is migrated in each of these steps (as well as for steps in the other modes), can be found in the [Data Migration Tool Technical Specification](technical-specification.md).
+The [!DNL Data Migration Tool] uses a list of *steps* within each mode to migrate a particular type of data. For example, in the Settings mode, there are two steps used to migrate all the settings data: the Stores step and the Settings step. Details about the specific data that is migrated in each of these steps (as well as for steps in the other modes), can be found in the [[!DNL Data Migration Tool] Technical Specification](technical-specification.md).
 
 ![Migration Overview]
 
@@ -44,20 +44,20 @@ Within each step are three *stages* that are always executed in this order to en
 
 ## Map files
 
-At the lowest level of the migration processes are the XML *map files*. The Data Migration Tool uses map files within the stages of a step to transform different data structures between the Magento 1.x and 2.x tables.
+At the lowest level of the migration processes are the XML *map files*. The [!DNL Data Migration Tool] uses map files within the stages of a step to transform different data structures between the Magento 1.x and 2.x tables.
 
-For example, when you transform data from a Magento Open Source 1.8.0.0 database to Magento Open Source 2.x.x, the map file accounts for the fact that a table was renamed, and renames it accordingly in the destination database. If there are no differences in data structure or data format, the Data Migration Tool transfers it as-is, including data from tables created by extensions, to the Magento 2 database.
+For example, when you transform data from a Magento Open Source 1.8.0.0 database to Magento Open Source 2.x.x, the map file accounts for the fact that a table was renamed, and renames it accordingly in the destination database. If there are no differences in data structure or data format, the [!DNL Data Migration Tool] transfers it as-is, including data from tables created by extensions, to the Magento 2 database.
 
-When differences are not declared in map files, then the Data Migration Tool displays an error and does not start.
+When differences are not declared in map files, then the [!DNL Data Migration Tool] displays an error and does not start.
 
-Mapping files are discussed in more detail in [Data Migration Tool Technical Specification].
+Mapping files are discussed in more detail in [[!DNL Data Migration Tool] Technical Specification].
 
 ## Migration flow diagram
 
 ![Migration Flow](../../assets/data-migration/migration_flow.png)
 
 <!-- Link definitions -->
-[Data Migration Tool Technical Specification]: technical-specification.md
+[[!DNL Data Migration Tool] Technical Specification]: technical-specification.md
 
 [Migration Modes]: ../../assets/data-migration/MigrationModes2.png
 
@@ -73,7 +73,7 @@ Magento 2 migration involves four components: data, extensions and custom code, 
 
 ### Data
 
-We have developed the **Magento 2 Data Migration Tool** to help you efficiently move all of your products, customers, and order data, store configurations, promotions and more to Magento 2. This guide provides information on the tool and best practices for using it to migrate your data.
+We have developed the **Magento 2 [!DNL Data Migration Tool]** to help you efficiently move all of your products, customers, and order data, store configurations, promotions and more to Magento 2. This guide provides information on the tool and best practices for using it to migrate your data.
 
 ### Extensions and custom code
 
@@ -88,4 +88,4 @@ Magento 2 uses new approaches and technologies that give merchants an unmatched 
 ## Migration efforts
 
 Just like an upgrade between 1.x versions (for example, from v1.12 to v1.14), the level of effort to migrate from Magento 1 to Magento 2 depends upon how you have built your site and its level of customization.
-However, we are constantly improving the Data Migration Tool (see the [Changelog](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) for more details); so the migration efforts are continuously decreasing.
+However, we are constantly improving the [!DNL Data Migration Tool] (see the [Changelog](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) for more details); so the migration efforts are continuously decreasing.

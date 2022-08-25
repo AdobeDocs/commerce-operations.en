@@ -1,6 +1,6 @@
 ---
 title: Migrate changes
-description: Learn how to migrate only data that has changed since your last Magento 1 data migration with the Data Migration Tool.
+description: Learn how to migrate only data that has changed since your last Magento 1 data migration with the [!DNL Data Migration Tool].
 ---
 
 # Migrate changes
@@ -46,7 +46,7 @@ where
 
 ## Migrate data created by third-party extensions
 
-In the `Delta` mode, the Data Migration Tool migrates data created only by Magento's own modules and is not responsible for the code or extensions made by third-party developers. If these extensions created data in the storefront database and the merchant wants to have this data in Magento 2 --- config files of the Data Migration Tool should be created and modified accordingly.
+In the `Delta` mode, the [!DNL Data Migration Tool] migrates data created only by Magento's own modules and is not responsible for the code or extensions made by third-party developers. If these extensions created data in the storefront database and the merchant wants to have this data in Magento 2 --- config files of the [!DNL Data Migration Tool] should be created and modified accordingly.
 
 If an [extension](https://glossary.magento.com/extension) has its own tables, and you need to track their changes for delta migration, follow these steps:
 

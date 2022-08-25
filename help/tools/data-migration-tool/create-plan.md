@@ -25,9 +25,9 @@ Migration is a perfect moment to make serious changes and get your site ready fo
 
 *  Set up a Magento 2 hardware system using topology and design that at least matches your existing Magento 1 system
 
-*  Install Magento 2.x (with all modules of this release) and the Data Migration Tool on a system that meets the [Magento system requirements]
+*  Install Magento 2.x (with all modules of this release) and the [!DNL Data Migration Tool] on a system that meets the [Magento system requirements]
 
-*  Make your custom adjustments to the Data Migration Tool code in case you do not need to migrate some data (like CMS Pages, Sales Rules, etc.) or want to convert your Magento customization during migration. Read the Data Migration Tool's [Technical Specification](technical-specification.md) to better understand how migration works from inside
+*  Make your custom adjustments to the [!DNL Data Migration Tool] code in case you do not need to migrate some data (like CMS Pages, Sales Rules, etc.) or want to convert your Magento customization during migration. Read the [!DNL Data Migration Tool]'s [Technical Specification](technical-specification.md) to better understand how migration works from inside
 
 ## Step 3: Dry run
 
@@ -43,9 +43,9 @@ In such migration testing, follow these steps:
 
 ## Step 4: Start your migration
 
-1. Make sure that the Data Migration Tool has a network access to connect to Magento 1 and Magento 2 databases. Open the corresponding ports in your firewall.
+1. Make sure that the [!DNL Data Migration Tool] has a network access to connect to Magento 1 and Magento 2 databases. Open the corresponding ports in your firewall.
 
-1. Stop all activities in the Magento 1.x Admin Panel, except for order management, such as shipping, creating invoice, credit memos, etc (the list of allowed activities can be extended by adjusting settings of the Delta mode in the Data Migration Tool). **Note:** such activities must not be resumed until your Magento 2 store goes live.
+1. Stop all activities in the Magento 1.x Admin Panel, except for order management, such as shipping, creating invoice, credit memos, etc (the list of allowed activities can be extended by adjusting settings of the Delta mode in the [!DNL Data Migration Tool]). **Note:** such activities must not be resumed until your Magento 2 store goes live.
 
 1. We recommend to stop all Magento 1.x cron jobs.
 
@@ -53,15 +53,15 @@ In such migration testing, follow these steps:
 
    For example: the `enterprise_salesarchive_archive_orders` cron job moves old orders to archive. Running this job during migration is safe because the Delta mode takes the job into account and thus properly processes the archived orders.
 
-1. Use the Data Migration Tool to migrate settings and websites.
+1. Use the [!DNL Data Migration Tool] to migrate settings and websites.
 
 1. Copy your Magento 1.x media files to Magento 2.x.
 
    You must copy these files manually from the `magento1-root/media` directory to `magento2-root/pub/media`.
 
-1. Use the Data Migration Tool to bulk copy your data from Magento 1 database to Magento 2 database.
+1. Use the [!DNL Data Migration Tool] to bulk copy your data from Magento 1 database to Magento 2 database.
 
-   If some of your extensions have data you want to migrate, you might need to install these extensions adapted for Magento 2. In case the extensions have a different structure in Magento 2 database, use the mapping files provided with the Data Migration Tool.
+   If some of your extensions have data you want to migrate, you might need to install these extensions adapted for Magento 2. In case the extensions have a different structure in Magento 2 database, use the mapping files provided with the [!DNL Data Migration Tool].
 
 1. Reindex all Magento 2.x indexers. For details, see the [Configuration guide].
 
@@ -71,7 +71,7 @@ Sometimes you may want to have your Magento 2 store with different catalog struc
 
 It is important to practice caution while working through manual data changes. Mistakes will create errors in the incremental data migration step that follows.
 
-For example, a product deleted from Magento 2: the one that has been bought on your live Magento 1 store and which is not available anymore in your Magento 2 store. Transferring data about such purchase might cause an error while running the Data Migration Tool in Delta mode.
+For example, a product deleted from Magento 2: the one that has been bought on your live Magento 1 store and which is not available anymore in your Magento 2 store. Transferring data about such purchase might cause an error while running the [!DNL Data Migration Tool] in Delta mode.
 
 ## Step 6: Update incremental data
 
