@@ -89,5 +89,7 @@ To improve product grid performance for large catalogs, we recommend limiting th
 This system configuration setting is disabled by default. By enabling it, you can limit the number of products in the grid to a specific value. **[!UICONTROL Records Limit]** is a customizable setting that has a default minimum value of `20000`.
 When the **[!UICONTROL Limit Number of Products in Grid]** setting is enabled and the number of products in the grid is greater than the record limit, then the limited collection of records is returned. When the limit is reached, the total records found, number of selected records and pagination elements are hidden from the grid header.
 
+When total number of products in grid is limited, it does not affect product grid mass actions. For example, there is a limited number of `20000` products in grid, user clicks on **[!UICONTROL Select All]** items option, selects **[!UICONTROL Update attributes]** mass action and updates some attribute(s). As a result, all products will be updated, not the limited collection of `20000` records.
+
 If you do not want your product grid to be limited, we encourage you to use filters more precisely for the result collection to have fewer items than **[!UICONTROL Records Limit]**.
 
