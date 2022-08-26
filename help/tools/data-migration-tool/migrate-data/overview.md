@@ -7,17 +7,15 @@ description: Learn how to start migrating data from Magento 1 to Magento 2 with 
 
 Before you start migration, stop all Magento 1 cron jobs.
 
-During the migration process, **do not:**
+During the migration process, follow these general rules for a successful migration:
 
-1. Make any changes in the Magento 1 [Admin](https://glossary.magento.com/admin) except for order management (shipping, creating invoice, and credit memos)
-
-1. Alter any code
-
-1. Make changes in the Magento 2 Admin and [storefront](https://glossary.magento.com/storefront)
+1. **Do not** make changes in the Magento 1 Admin, except for order management (shipping, creating invoice, and credit memos)
+1. **Do not** alter any code
+1. **Do not** make changes in the Magento 2 Admin and [storefront](https://glossary.magento.com/storefront)
 
 >[!TIP]
 >
->All operations in Magento 1 storefront are allowed now.
+>All operations in the Magento 1 storefront are allowed.
 
 ## Run the [!DNL Data Migration Tool]
 
@@ -85,4 +83,4 @@ When we created the [!DNL Data Migration Tool], we assumed the following data tr
 1. [Data](data.md)
 1. [Changes](delta.md)
 
-That's why we strongly keeping this order to migrate quickly and with no issues.
+We strongly recommend migrating data in the same order.

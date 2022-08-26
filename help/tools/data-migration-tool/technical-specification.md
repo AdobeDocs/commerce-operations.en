@@ -9,11 +9,11 @@ This section describes [!DNL Data Migration Tool] implementation details and how
 
 ## Repositories
 
-[!DNL Data Migration Tool] repository [migration-tool](https://github.com/magento/data-migration-tool)
+To access the [!DNL Data Migration Tool] source code, see the GitHub [repository](https://github.com/magento/data-migration-tool).
 
 ## System requirements
 
-Same as for [Magento2](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+The [system requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) for the [!DNL Data Migration Tool] are the same as for Magento 2.
 
 ## Internal structure
 
@@ -97,15 +97,15 @@ The following diagram represents directory structure of [!DNL Data Migration Too
 
 ## Entry Point
 
-Script that runs migration process is located at magento-root/bin/magento
+The script that runs the migration process is located at: `magento-root/bin/magento`.
 
 ## Configuration
 
-The Schema for configuration file `config.xsd` is placed under `etc/directory`. Default configuration file `config.xml.dist` is created for each version of Magento 1.x. It is placed in separate directories under `etc/`.
+The schema for the configuration `config.xsd` file is located in the `etc/` directory. The default configuration file (`config.xml.dist`) is created for each version of Magento 1.x. It is located in a separate directory under `etc/`.
 
-Default configuration file can be replaced by custom one (see [command syntax](migrate-data/overview.md#command-syntax)).
+The default configuration file can be replaced by a custom one (see [command syntax](migrate-data/overview.md#command-syntax)).
 
-Configuration file has the following structure:
+The configuration file has the following structure:
 
 ```xml
 <config xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="config.xsd">
@@ -158,7 +158,7 @@ Configuration file has the following structure:
 
 Change prefix option in case Magento was installed with prefix in database tables. It can be set for Magento 1 and Magento 2 databases. Use the "source_prefix" and "dest_prefix" configuration options accordingly.
 
-Configuration data is accessible via \Migration\Config class.
+Configuration data is accessible with the `\Migration\Config` class.
 
 ## Steps available operations
 
@@ -257,7 +257,7 @@ class StageClass implements StageInterface
 }
 ```
 
-If the data stage supports rollback, it should implement the RollbackInterface interface.
+If the data stage supports rollback, it should implement the `RollbackInterface` interface.
 
 Visualization of the running step is provided by Symfony's ProgressBar component (see [Progress bar](http://symfony.com/doc/current/components/console/helpers/progressbar.html)). Access this component in a step as LogLevelProcessor.
 
@@ -327,9 +327,9 @@ All store configuration keeps its data in core_config_data table in database. se
 </settings>
 ```
 
-Under the node `<key>` there are rules that work with the 'path' column in the `core_config_data` table. `<ignore>` rules prevent the tool from transferring some settings. Wildcards can be used in this node. All other settings not listed in the `<ignore>` node are migrated. If the path to a setting changed in Magento 2, it should be added to //key/rename node, where the old path indicates in //key/rename/path node and new path indicates in //key/rename/to node.
+Under the node `<key>` there are rules that work with the 'path' column in the `core_config_data` table. `<ignore>` rules prevent the tool from transferring some settings. Wildcards can be used in this node. All other settings not listed in the `<ignore>` node are migrated. If the path to a setting changed in Magento 2, it should be added to `//key/rename` node, where the old path indicates in `//key/rename/path` node and new path indicates in `//key/rename/to` node.
 
-Under the node `<value>`, there are rules that work with the 'value' column in the `core_config_data` table. These rules aim to transform value of settings by handlers (classes that implement Migration\Handler\HandlerInterface) and adapt it for Magento 2.
+Under the node `<value>`, there are rules that work with the 'value' column in the `core_config_data` table. These rules aim to transform value of settings by handlers (classes that implement `Migration\Handler\HandlerInterface`) and adapt it for Magento 2.
 
 ### Data migration mode
 
@@ -459,7 +459,7 @@ Here is a class diagram of these classes:
 
 ## Logging
 
-In order to implement output of migration process and control all possible levels PSR logger, which is used in Magento, is applied. \Migration\Logger\Logger class was implemented to provide logging functionality. To use the logger, you should inject it via constructor [dependency injection](https://glossary.magento.com/dependency-injection).
+In order to implement output of migration process and control all possible levels PSR logger, which is used in Magento, is applied. `\Migration\Logger\Logger` class was implemented to provide logging functionality. To use the logger, you should inject it via constructor [dependency injection](https://glossary.magento.com/dependency-injection).
 
 ```php
 class SomeClass
@@ -484,7 +484,7 @@ $this->logger->error("Message about error operation");
 $this->logger->warning("Some warning message");
 ```
 
-There is a possibility to customize where log information should be written. You can do that by adding handler to logger using pushHandler() method of the logger. Each handler should implement \Monolog\Handler\HandlerInterface interface. As for now there are two handlers:
+There is a possibility to customize where log information should be written. You can do that by adding handler to logger using pushHandler() method of the logger. Each handler should implement `\Monolog\Handler\HandlerInterface` interface. As for now there are two handlers:
 
 *  ConsoleHandler: writes messages to console
 
@@ -513,7 +513,7 @@ There is a possibility to set the level of verbosity. As for now there are three
 *  `INFO` (only important information is written to the log, default value)
 *  `DEBUG` (everything is written)
 
-Verbosity log level can be set for each handler separately by calling setLevel() method. If you want to set verbosity level via command-line parameter, you should change 'verbose' option at application launch.
+Verbosity log level can be set for each handler separately by calling `setLevel()` method. If you want to set verbosity level via command-line parameter, you should change 'verbose' option at application launch.
 
 You can format log messages with the monolog formatter. To make formatter functionality work, you must specify the log handler using the `setFormatter()` method. Currently, we have one formatter class (`MessageFormatter`) that sets certain format (depends on verbosity level) during message handling (through the `format()` method executed from the handler).
 

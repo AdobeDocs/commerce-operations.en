@@ -64,7 +64,7 @@ Before installing, make sure you have:
 
 To install the [!DNL Data Migration Tool], you must update `composer.json` in the Magento root installation directory to provide the location of the [!DNL Data Migration Tool] package.
 
-1. Log in to your Magento server as, or switch to, <a href="https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html">the file system owner</a>.
+1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 1. Change to Magento 2 root directory.
 1. Enter the following commands:
 
@@ -88,13 +88,13 @@ To install the [!DNL Data Migration Tool], you must update `composer.json` in th
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. When prompted, enter your <a href="https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html">authentication keys</a>. Your public key is your username; your private key is your password.
+1. When prompted, enter your [authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html). Your public key is your username; your private key is your password.
 
 ### Install from GitHub
 
 If you've cloned Magento 2 from the GitHub repository, follow the steps below to install the [!DNL Data Migration Tool].
 
-1. Log in to your Magento server as, or switch to, <a href="https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html">the file system owner</a>.
+1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 1. Change to Magento 2 root directory.
 1. Enter the following commands:
 

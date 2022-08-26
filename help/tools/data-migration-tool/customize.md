@@ -11,7 +11,7 @@ During migration, the [Map Step](technical-specification.md#map-step) scans and 
 
 >[!NOTE]
 >
->Read the [Technical Specification](technical-specification.md) before attempting to extend the [!DNL Data Migration Tool]. Also review the [Migration Guide](../overview.md) for general information about using the migration tool.
+>Read the [Technical Specification](technical-specification.md) before attempting to extend the [!DNL Data Migration Tool]. Also, review the [Migration Guide](../overview.md) for general information about using the migration tool.
 
 
 ## Minor data format and structure changes
@@ -66,12 +66,12 @@ The following shows an example of using both mapping rules and a handler. This e
 
 -  Do not migrate unnecessary data from the `great_blog_index` index table.
 -  The table `great_blog_publication` was renamed to `great_blog_post` in Magento 2, so data is migrated to the new table.
-  - The `summary` field was renamed to `title`, so data is migrated to the new field.
-  - The `priority` field was removed and no longer exists in Magento 2.
-  - The data in the `body` field has changed format and should be processed by the custom handler: `\Migration\Handler\GreatBlog\NewFormat`.
+   -  The `summary` field was renamed to `title`, so data is migrated to the new field.
+   -  The `priority` field was removed and no longer exists in Magento 2.
+   -  The data in the `body` field has changed format and should be processed by the custom handler: `\Migration\Handler\GreatBlog\NewFormat`.
 -  A new ratings feature was developed for the "GreatBlog" extension in Magento 2.
-  - A new `great_blog_rating` table was created.
-  - A new `great_blog_post.rating` field was created.
+   -  A new `great_blog_rating` table was created.
+   -  A new `great_blog_post.rating` field was created.
 
 ### Extend mapping in other steps
 
@@ -95,6 +95,7 @@ Using the same "GreatBlog" example, suppose that the extension has one table in 
 
 In Magento 1, there was a single `greatblog_post` table:
 
+```text
 | Field     | Type     |
 |-----------|----------|
 | post_id   | INT      |
@@ -102,23 +103,28 @@ In Magento 1, there was a single `greatblog_post` table:
 | content   | TEXT     |
 | author_id | SMALLINT |
 | tags      | TEXT     |
+```
 
 In Magento 2, a new table for tags `greatblog_post_tags` was introduced:
 
+```text
 | Field      | Type     |
 |------------|----------|
 | post_id    | INT      |
 | tag        | VARCHAR  |
 | sort_order | SMALLINT |
+```
 
 Magento 2 `greatblog_post` table now looks like this:
 
+```text
 | Field     | Type     |
 |-----------|----------|
 | post_id   | INT      |
 | title     | VARCHAR  |
 | content   | TEXT     |
 | author_id | SMALLINT |
+```
 
 To migrate all data from old tables structure to a new one, you can create a custom step in the `config.xml` file. For example:
 

@@ -7,12 +7,12 @@ description: Learn about the two methods for configuring the [!DNL Data Migratio
 
 After you install the [!DNL Data Migration Tool], the following directory contains mapping and configuration files:
 
-* Magento Open Source:
-  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Configuration and scripts for migrating from Magento Open Source 1 to Magento Open Source 2
+*  Magento Open Source:
+   *  `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Configuration and scripts for migrating from Magento Open Source 1 to Magento Open Source 2
 
-* Adobe Commerce:
-  *  `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Configuration and scripts for migrating from Magento Open Source 1 to Adobe Commerce 2
-  *  `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: Configuration and scripts for migrating from Adobe Commerce 1 to Adobe Commerce 2
+*  Adobe Commerce:
+   *  `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Configuration and scripts for migrating from Magento Open Source 1 to Adobe Commerce 2
+   *  `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: Configuration and scripts for migrating from Adobe Commerce 1 to Adobe Commerce 2
 
 The preceding directories contain subdirectories for each supported version.
 
@@ -105,7 +105,7 @@ Before you migrate any data, you must create a Magento 2 module.
 
 Before you migrate any data, you must create a `config.xml` configuration file from the provided sample.
 
-There are two possible ways to configure the [!DNL Data Migration Tool] for migration:
+To configure the [!DNL Data Migration Tool] for migration:
 
 1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 

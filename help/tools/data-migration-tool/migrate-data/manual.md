@@ -23,7 +23,7 @@ This section discusses how to manually migrate media files.
 
 >[!WARNING]
 >
->The database media storage method is deprecated as of Magento 2.4.3.4
+>The database media storage method is deprecated as of Magento 2.4.3.
 
 
 This section applies to you *only* if you store media files in the Magento database. This step should be performed before [migration of data](data.md):

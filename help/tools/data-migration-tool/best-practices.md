@@ -13,7 +13,7 @@ This section provides best recommendations to accelerate and simplify your migra
 
   Such data may include logs, order quotes, recently viewed or compared products, visitors, event-specific categories, and promotional rules.
 
-*  **Follow the [general rules for successful migration](migrate-data/overview.md)**.
+*  **Follow the [general rules for successful migration](migrate-data/overview.md#migration-overview)**.
 
 *  To boost performance, **enable the `direct_document_copy` option** in your `config.xml` file:
 
