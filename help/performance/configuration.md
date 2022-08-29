@@ -81,3 +81,24 @@ We recommend performing periodic database backups for your Staging and Productio
 For better performance, schedule your backups to run in succession, one at a time, at off-peak times. This method avoids I/O contention and reduces time to complete, especially for smaller instances, larger databases, and so on.
 
 For example, we recommend scheduling a backup of your Production database followed up by the Staging database when your stores encounter lower visits.
+
+## Limit number of products in grid
+
+To improve product grid performance for large catalogs, we recommend limiting the number of products in the grid with the **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] > [!UICONTROL Limit Number of Products in Grid]** system configuration setting.
+
+This system configuration setting is disabled by default. By enabling it, you can limit the number of products in the grid to a specific value. **[!UICONTROL Records Limit]** is a customizable setting that has a default minimum value of `20000`.
+When the **[!UICONTROL Limit Number of Products in Grid]** setting is enabled and the number of products in the grid is greater than the record limit, then the limited collection of records is returned. When the limit is reached, the total records found, number of selected records, and pagination elements are hidden from the grid header.
+
+When the total number of products in the grid is limited, it does not affect product grid mass actions. It only affects the product grid presentation layer. For example, there is a limited number of `20000` products in the grid, the user clicks on **[!UICONTROL Select All]**, selects the **[!UICONTROL Update attributes]** mass action, and updates some attribute(s). As a result, all products are updated, not the limited collection of `20000` records.
+
+The product grid limitation only affects product collections that are used by UI components. As a result, not all product grids are affected by this limitation. Only those that are using `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
+You can limit product grid collections on the following pages only:
+
+* Catalog Product Grid
+* Add Related/Up-Sell/Cross-Sell Products Grid
+* Add Products to Bundle Product
+* Add Products to Group Product
+* Admin Create Order Page
+
+If you do not want your product grid to be limited, we encourage you to use filters more precisely for the result collection to have fewer items than **[!UICONTROL Records Limit]**.
+
