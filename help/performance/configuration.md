@@ -91,7 +91,7 @@ When the **[!UICONTROL Limit Number of Products in Grid]** setting is enabled an
 
 When the total number of products in the grid is limited, it does not affect product grid mass actions. It only affects the product grid presentation layer. For example, there is a limited number of `20000` products in the grid, the user clicks on **[!UICONTROL Select All]**, selects the **[!UICONTROL Update attributes]** mass action, and updates some attribute(s). As a result, all products are updated, not the limited collection of `20000` records.
 
-Product grid limitation only affects product collections that are used by UI components. As a result, not all product grids are affected by this limitation. Only those that are using `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
+The product grid limitation only affects product collections that are used by UI components. As a result, not all product grids are affected by this limitation. Only those that are using `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
 Thus, you can limit product grid collection only the following pages:
 
 * Catalog Product Grid
