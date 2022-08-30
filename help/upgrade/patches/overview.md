@@ -15,7 +15,7 @@ Patch (or diff) files are text files that note:
 - The line number to begin the change and the number of lines to be changed.
 - The new code to swap in.
 
-When the [patch](https://en.wikipedia.org/wiki/Patch_(Unix)) program is run, this file is read in and the specified changes are made to the file(s).
+When the patch program is run, this file is read in and the specified changes are made to the file(s).
 
 There are three types of patches:
 

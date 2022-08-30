@@ -38,7 +38,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
     See [Enable or disable maintenance mode](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) for additional options. Optionally, you can create a [custom maintenance mode page](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
 
-1. Starting the upgrade process while asynchronous processes such as message queue consumers are running may cause data corruption. To prevent data corruption, disable all cron jobs.
+1. Starting the upgrade process while asynchronous processes, such as message queue consumers, are running may cause data corruption. To prevent data corruption, disable all cron jobs.
 
    _Adobe Commerce on cloud infrastructure:_
 
@@ -52,7 +52,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
    bin/magento cron:remove
    ```
 
-1. Run a CLI command that starts all message queue consumers manually to ensure all messages are consumed.
+1. Start all message queue consumers manually to ensure all messages are consumed.
 
    ```bash
    bin/magento cron:run --group=consumers
