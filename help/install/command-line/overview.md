@@ -28,6 +28,15 @@ If you chose to enable SELinux, see [SELinux and iptables]({{ page.baseurl }}/in
 
 This topic discusses installing the Magento software using the CLI. For information about configuring Magento, see the [Configuration Guide]({{ page.baseurl }}/config-guide/bk-config-guide.html).
 
+The installer is designed to be run multiple times if necessary so you can:
+
+*  Provide different values
+
+   For example, after you configure your web server for Secure Sockets Layer (SSL), you can run the installer to set SSL options.
+
+*  Correct mistakes in previous installations
+*  Install Magento in a different database instance
+
 ## Before you start your installation {#instgde-install-cli-prereq}
 
 Before you begin, complete the following steps:
