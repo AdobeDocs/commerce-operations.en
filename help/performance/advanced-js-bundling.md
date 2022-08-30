@@ -82,7 +82,7 @@ The following steps require you to install and have familiarity with the followi
 
 -  [nodejs](https://nodejs.org/en/download/)
 -  [r.js](http://requirejs.org/docs/optimization.html#download)
--  [[!DNL PhantomJS]](http://phantomjs.org/) (optional)
+-  [[!DNL PhantomJS]](https://phantomjs.org/) (optional)
 
 ### Sample code
 

@@ -27,6 +27,12 @@ The following diagram shows the possible workflows when running the [!DNL Upgrad
 
 ![[!DNL Upgrade Compatibility Tool] Diagram](../../assets/upgrade-guide/uct-diagram-v5.png)
 
+## [!DNL Upgrade Compatibility Tool] demo
+
+Watch this video to learn about the [!DNL Upgrade Compatibility Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
+
 ## Help improve the [!DNL Upgrade Compatibility Tool]
 
 If you need information or have questions that are not covered in this guide, use the following resources:
@@ -44,4 +50,4 @@ See the following resources to help you understand Adobe Commerce upgrades:
 - The [upgrade guide](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) provides an overview of the typical Adobe Commerce or Magento Open Source upgrade journey and best practices to follow along that journey.
 - The [upcoming releases](https://devdocs.magento.com/release/) page provides the dates for scheduled and upcoming releases.
 - The [community resources](https://developer.adobe.com/commerce/contributor/community/) page is to place to start discussions, or finding more information.
-- Check the [related tools](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/related-tools.html) page for useful tools in your typical upgrade journey.
+- Check the [related tools](../upgrade-compatibility-tool/related-tools.md) page for useful tools in your typical upgrade journey.
