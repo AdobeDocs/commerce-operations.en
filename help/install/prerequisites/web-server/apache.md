@@ -1,14 +1,11 @@
 ---
 title: Apache
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
 
-## Apache versions supported {#apache-support}
+## Apache
 
-Magento supports Apache 2.4.x.
+Adobe Commerce supports Apache 2.4.x.
 
 ## Important: Apache required directives {#apache-required-directives}
 

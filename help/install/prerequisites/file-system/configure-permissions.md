@@ -1,9 +1,8 @@
 ---
-title: Set pre-installation ownership and permissions
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Configure file ownership and permissions
+description:
 ---
+
+# Configure file ownership and permissions
 
 {% include install/file-system-perms-before.md %}

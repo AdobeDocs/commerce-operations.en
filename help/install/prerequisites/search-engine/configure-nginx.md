@@ -1,13 +1,9 @@
 ---
-title: Configure nginx for your search engine
-redirect_from: 
-  - guides/v2.4/config-guide/elasticsearch/es-config-nginx.html
-functional_areas:
-  - Configuration
-  - Search
-  - System
-  - Setup
+title: Configure Nginx for your search engine
+description:
 ---
+
+# Configure Nginx for your search engine
 
 {% include config/es-webserver-overview.md %}
 

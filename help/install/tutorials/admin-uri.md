@@ -1,12 +1,12 @@
 ---
 title: Display or change the Admin URI
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
 
+# Display or change the Admin URI
+
 ## First steps {#instgde-cli-before}
+
 {% include install/first-steps-cli.md %}
 In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 

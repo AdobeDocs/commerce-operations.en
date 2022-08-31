@@ -1,10 +1,9 @@
 ---
-title: Uninstall themes Composer packages
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Uninstall themes
+description:
 ---
+
+# Uninstall themes
 
 ## Prerequisite {#instgde-install-uninst-theme-prereq}
 

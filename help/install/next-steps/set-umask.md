@@ -1,15 +1,8 @@
 ---
-subgroup: 05_umask
-title: Optionally set a umask
-menu_title: Optionally set a umask
-menu_node: parent
-menu_order: 5
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Set a umask (optional)
+description:
 ---
 
-## Optionally set `magento_umask` {#mage-owner-umask}
+# Set a umask (optional)
 
 {% include install/file-system-umask.md %}

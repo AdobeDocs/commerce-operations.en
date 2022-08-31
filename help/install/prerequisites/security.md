@@ -1,13 +1,9 @@
 ---
-subgroup: Prerequisites
-title: SELinux and iptables
-menu_title: SELinux and iptables
-menu_order: 200
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: On-premises installation security
+description:
 ---
+
+# On-premises installation security
 
 ## SELinux {#install-prereq-selinux}
 

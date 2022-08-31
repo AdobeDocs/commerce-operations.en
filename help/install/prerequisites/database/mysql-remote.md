@@ -1,10 +1,9 @@
 ---
 title: Set up a remote MySQL database connection
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
+
+# Set up a remote MySQL database connection
 
 There are times when you will want to host the database on a separate server, rather than running the database server and the web server on the same machine.
 

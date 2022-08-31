@@ -1,14 +1,11 @@
 ---
-title: RabbitMQ
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Message broker
+description:
 ---
 
-## RabbitMQ Overview {#overview}
+# Message broker
 
-RabbitMQ is an open source message broker that offers a reliable, highly available, scalable, and portable messaging system.
+Adobe Commerce uses the RabbitMQ open source message broker. It offers a reliable, highly available, scalable, and portable messaging system.
 
 Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other. Nor do they need to communicate with the message queue at the same time. When a sender places a messages onto a queue, it is stored until the recipient receives them.
 

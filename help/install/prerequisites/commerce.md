@@ -1,13 +1,9 @@
 ---
-title: Get the software
-landing-page: Installation Guide
-functional_areas:
-  - Install
-  - System
-  - Setup
-redirect_from:
-  - /guides/v2.4/install-gde/continue-to-install.html 
+title: Get the Adobe Commerce software
+description:
 ---
+
+# Get the Adobe Commerce software
 
 You are among the 240,000 merchants worldwide who put their trust in our eCommerce software. We have gathered some information to help you get started with Magento and with your Magento installation.
 

@@ -1,12 +1,9 @@
 ---
-title: Prerequisites
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: On-premises installation prerequisites
+description:
 ---
 
-## Before you begin {#instgde-prereq-overview}
+# On-premises installation prerequisites
 
 Before you install Magento, you must do all of the following:
 

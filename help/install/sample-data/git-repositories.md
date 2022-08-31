@@ -1,15 +1,9 @@
 ---
-group: installation-guide
-subgroup: T_SampleData
-title: Install by cloning repositories
-menu_title: Install by cloning repositories
-menu_node:
-menu_order: 4
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Clone Git repositories
+description:
 ---
+
+# Clone sample data Git repositories
 
 {% include install/sampledata/sample-data-clone-24.md %}
 

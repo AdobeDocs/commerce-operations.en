@@ -1,14 +1,9 @@
 ---
 title: Optional software
-functional_areas:
-  - Install
-  - System
-  - Setup
-redirect_from:
-  - guides/v2.3/install-gde/trouble/php/tshoot_phpini.html
+description:
 ---
 
-## Magento optional software {#install-optional-intro}
+# Optional software
 
 We strongly recommend you install NTP to ensure that cron-related tasks perform properly. (Server dates could be in the past or future, for example.)
 

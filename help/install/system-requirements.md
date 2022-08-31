@@ -1,14 +1,8 @@
 ---
 title: System requirements
-functional_areas:
-  - Install
-  - System
-  - Setup
-redirect_from:
-  - /guides/v2.4/install-gde/system-requirements-tech.html
-  - /guides/v2.4/architecture/tech-stack.html
-  - /system-requirements.html
 ---
+
+# System requirements
 
 This table shows versions of third-party software dependencies that Adobe has tested with specific {{ site.data.var.ee }} and {{ site.data.var.ce }} releases. Adobe only supports the combination of system requirements described in the following table.
 

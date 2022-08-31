@@ -1,10 +1,9 @@
 ---
-title: Uninstall or reinstall Commerce
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Uninstall or reinstall Adobe Commerce
+description:
 ---
+
+# Uninstall or reinstall Adobe Commerce
 
 ## First steps {#instgde-cli-before}
 

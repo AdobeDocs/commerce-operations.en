@@ -1,10 +1,9 @@
 ---
-title: Overview of ownership and permissions
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: File ownership and permissions
+description:
 ---
+
+# File ownership and permissions
 
 It is important to secure your Magento installation in a development environment to help prevent issues related to unauthorized people or processes accessing—and potentially harming—your system. Use the following file system ownership and permissions guidelines to protect your installation.
 

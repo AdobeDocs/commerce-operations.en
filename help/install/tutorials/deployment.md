@@ -1,11 +1,9 @@
 ---
 title: Create or update the deployment configuration
-functional_areas:
-  - Install
-  - System
-  - Setup
-  - Deploy
+description:
 ---
+
+# Create or update the deployment configuration
 
 ## First steps {#instgde-cli-before}
 

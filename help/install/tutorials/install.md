@@ -1,13 +1,9 @@
 ---
-subgroup: 05_Command-line installation
-title: Install the Magento software
-menu_title: Install the Magento software
-menu_order: 4
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Install Adobe Commerce
+description:
 ---
+
+# Install Adobe Commerce
 
 ## Before you start your installation {#instgde-install-cli-prereq}
 

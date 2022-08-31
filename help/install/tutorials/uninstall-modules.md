@@ -1,10 +1,9 @@
 ---
 title: Uninstall modules
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
+
+# Uninstall modules
 
 ## Prerequisites {#instgde-cli-uninst-prereq}
 

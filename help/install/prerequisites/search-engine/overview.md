@@ -1,11 +1,9 @@
 ---
-title: Search engine prerequisites
-functional_areas:
-  - Configuration
-  - Search
-  - System
-  - Setup
+title: Search engine overview
+description:
 ---
+
+# Search engine overview
 
 As of {{ site.data.var.ee }} and {{ site.data.var.ce }} 2.4, all installations must be configured to use [Elasticsearch][] or [OpenSearch][] as the [catalog](https://glossary.magento.com/catalog) search solution.
 

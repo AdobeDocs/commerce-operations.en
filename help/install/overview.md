@@ -1,11 +1,10 @@
 ---
-title: Installation flow
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: On-premises installation overview
+description:
 ---
 
-The following diagram provides a high-level overview of installing the Magento software:
+# On-premises installation overview
+
+The following diagram provides a high-level overview of _**on-premises**_ installations of Adobe Commerce:
 
 {% include install/flow-diagram.md %}

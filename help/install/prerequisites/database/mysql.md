@@ -1,8 +1,9 @@
 ---
 title: MySQL
+description:
 ---
 
-## General guidelines {#instgde-prereq-mysql-intro}
+## General MySQL guidelines {#instgde-prereq-mysql-intro}
 
 See [System Requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported versions of MySQL.
 

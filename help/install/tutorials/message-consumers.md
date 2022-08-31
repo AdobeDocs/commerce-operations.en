@@ -1,10 +1,9 @@
 ---
-title: Configure consumer behavior
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Configure message consumers
+description:
 ---
+
+# Configure message consumers
 
 Before you run this command, you must do all of the following *or* you must [install the Magento software]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html):
 

@@ -1,14 +1,9 @@
 ---
-subgroup: T_SampleData
-title: Install using Composer
-menu_title: Install using Composer
-menu_node:
-menu_order: 3
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Download Composer packages
+description:
 ---
+
+# Download sample data Composer packages
 
 {% include install/sampledata/sample-data-composer.md %}
 

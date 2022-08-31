@@ -1,12 +1,9 @@
 ---
-title: Quick start install
-functional_areas:
-  - Install
-  - System
-  - Setup
-redirect_from:
-  - guides/v2.4/install-gde/prereq/zip_install.html
+title: Quick start on-premises installation
+description:
 ---
+
+# Quick start on-premises installation
 
 {% include install/composer-overview.md %}
 

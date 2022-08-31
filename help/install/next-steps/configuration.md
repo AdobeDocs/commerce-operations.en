@@ -1,10 +1,9 @@
 ---
 title: Configure the application
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
+
+# Configure the application
 
 Now that you've finished installing the Magento application, you need to configure it. This topic provides some recommended configuration settings for Magento; the list is not complete so watch this space.
 

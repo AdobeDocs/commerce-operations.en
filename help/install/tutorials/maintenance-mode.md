@@ -1,14 +1,9 @@
 ---
-subgroup: 05_Command-line installation
 title: Enable or disable maintenance mode
-menu_title: Enable or disable maintenance mode
-menu_node:
-menu_order: 10
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
+
+# Enable or disable maintenance mode
 
 The following guide refers to a standard Magento maintenance mode page. If you need to use a custom maintenance page, see [Create the custom maintenance page](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) topic.
 

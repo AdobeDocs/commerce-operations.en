@@ -1,13 +1,14 @@
 ---
 title: Configure the store
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
 
+# Configure the store
+
 ## First steps {#instgde-cli-before}
+
 {% include install/first-steps-cli.md %}
+
 In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
 ## Prerequisites {#instgde-cli-subcommands-store-prereq}

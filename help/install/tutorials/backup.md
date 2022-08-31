@@ -1,12 +1,9 @@
 ---
-title: Back up and roll back the file system, media, and database
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Backup and rollback the file system, media, and database
+description:
 ---
 
-## Overview of backup {#instgde-cli-uninst-back-over}
+# Backup and rollback the file syste, media, and database
 
 This command enables you to back up:
 

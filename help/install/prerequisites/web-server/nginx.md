@@ -1,12 +1,11 @@
 ---
-title: nginx
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: Nginx
+description:
 ---
 
-Magento supports nginx 1.18 (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
+# Nginx
+
+Adobe Commerce supports nginx 1.18 (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
 
 Installation instructions vary based on which operating system you are using. See [PHP](php-settings.html) for information.
 

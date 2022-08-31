@@ -1,11 +1,9 @@
 ---
-subgroup: Prerequisites
 title: Get your authentication keys
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
+
+# Get your authentication keys
 
 {% include install/auth-tokens-get.md %}
 

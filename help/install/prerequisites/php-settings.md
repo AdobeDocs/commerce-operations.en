@@ -1,10 +1,9 @@
 ---
-title: Required PHP settings
-functional_areas:
-  - Install
-  - System
-  - Setup
+title: PHP settings
+description:
 ---
+
+# PHP settings
 
 This topic discusses how to set required [PHP](https://glossary.magento.com/php) options.
 

@@ -1,10 +1,9 @@
 ---
 title: Create the database schema
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
+
+# Create the database schema
 
 ## First steps {#instgde-cli-before}
 

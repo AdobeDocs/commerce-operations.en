@@ -1,7 +1,9 @@
 ---
-group: installation-guide
 title: Install an extension
+description:
 ---
+
+# Install an extension
 
 Code that extends or customizes {{site.data.var.ee}} and {{site.data.var.ce}} behavior is called an extension. You can optionally package and distribute extensions on the [Commerce Marketplace](https://marketplace.magento.com) or another extension distribution system.
 

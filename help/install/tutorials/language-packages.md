@@ -1,12 +1,9 @@
 ---
 title: Uninstall language packages
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
 
-## Overview of uninstalling language packages {#instgde-cli-uninst-lgpk-over}
+# Uninstall language packages
 
 This section discusses how to uninstall one or more language packages, optionally including the language packages' code from the file system. You can create backups first so you can restore the data at a later time.
 

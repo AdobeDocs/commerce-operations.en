@@ -1,20 +1,9 @@
 ---
-title: Advanced install
-functional_areas:
-  - Install
-  - System
-  - Setup
-redirect_from:
-  - /guides/v2.4/install-gde/install/web/install-web-configure-catalog-search.html
-  - /guides/v2.4/install-gde/install/web/install-web.html
-  - /guides/v2.4/install-gde/install/web/install-web_1-readiness.html
-  - /guides/v2.4/install-gde/install/web/install-web_2-db.html
-  - /guides/v2.4/install-gde/install/web/install-web_3-web-conf.html
-  - /guides/v2.4/install-gde/install/web/install-web_4-customize-store.html
-  - /guides/v2.4/install-gde/install/web/install-web_5-create-admin.html
-  - /guides/v2.4/install-gde/install/web/install-web_6-install.html
-  - /guides/v2.4/install-gde/install/cli/install-cli-install.html
+title: Advanced on-premises installation
+description:
 ---
+
+# Advanced on-premises installation
 
 {:.bs-callout-tip}
 Totally lost? Need a helping hand? Try our [Quick start install]({{ page.baseurl }}/install-gde/composer.html) or [Contributor install]({{ page.baseurl }}/install-gde/contrib-git.html) guides.

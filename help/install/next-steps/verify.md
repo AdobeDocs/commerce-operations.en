@@ -1,14 +1,9 @@
 ---
-subgroup: 01_Verify
 title: Verify the installation
-menu_title: Verify the installation
-menu_node: parent
-menu_order: 1
-functional_areas:
-  - Install
-  - System
-  - Setup
+description:
 ---
+
+# Verify the installation
 
 ## Verify the storefront (with optional sample data) {#instgde-verify-front-sample}
 

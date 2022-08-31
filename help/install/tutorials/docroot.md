@@ -1,6 +1,9 @@
 ---
 title: Modify docroot to improve security
+description:
 ---
+
+# Modify docroot to improve security
 
 In a standard installation with an Apache web server, Magento is installed to the default web root: `/var/www/html/magento2`.
 Within the `magento2` folder are:
