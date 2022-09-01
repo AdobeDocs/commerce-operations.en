@@ -165,7 +165,7 @@ Go to the [storefront](https://glossary.magento.com/storefront) in a web browser
 
    The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
 
-   ![Magento storefront which verifies a successful installation]({{ site.baseurl }}/common/images/install-success_store.png)
+   ![Magento storefront which verifies a successful installation](../../assets/installation/install-success_store.png)
 
    Refer to the [troubleshooting section](https://support.magento.com/hc/en-us/articles/360032994352) if the page displays a 404 (Not Found) or fails to load other assets like images, CSS, and JS.
 
@@ -173,4 +173,4 @@ Go to the [storefront](https://glossary.magento.com/storefront) in a web browser
 
    If you see a 404 or the "Access denied" message, you've successfully restricted access to the Magento file system.
 
-   ![Access denied]({{ site.baseurl }}/common/images/access-denied.png)
+   ![Access denied](../../assets/installation/access-denied.png)

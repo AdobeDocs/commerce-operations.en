@@ -11,7 +11,7 @@ Go to the [storefront](https://glossary.magento.com/storefront) in a web browser
 
 The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
 
-![Magento storefront with the Luma theme]({{ site.baseurl }}/common/images/install-success_store-luma.png)
+![Magento storefront with the Luma theme](../../assets/installation/install-success_store-luma.png)
 
 ## Verify the storefront (no sample data) {#instgde-verify-front}
 
@@ -19,7 +19,7 @@ Go to the storefront in a web browser. For example, if your Magento installation
 
 The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
 
-![Magento storefront which verifies a successful installation]({{ site.baseurl }}/common/images/install-success_store.png)
+![Magento storefront which verifies a successful installation](../../assets/installation/install-success_store.png)
 
 If the page displays a 404 (Not Found) or unconfigured (no styles, only text), see [After installing, images and stylesheets do not load; only text displays, no graphics](https://support.magento.com/hc/en-us/articles/360032994352).
 
@@ -33,7 +33,7 @@ When prompted, log in as a Administrator.
 
 The following figure shows a sample Admin page. If it displays as follows, your installation was a success!
 
-![Admin which verifies a successful installation]({{ site.baseurl }}/common/images/install_success_admin.png)
+![Admin which verifies a successful installation](../../assets/installation/install_success_admin.png)
 
 If the page displays unconfigured (no styles, only text), see [After installing, images and stylesheets do not load; only text displays, no graphics](https://support.magento.com/hc/en-us/articles/360032994352).
 
