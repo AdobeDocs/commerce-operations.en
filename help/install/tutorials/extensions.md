@@ -55,15 +55,15 @@ To get the extension's Composer name and version from the Commerce Marketplace:
 
 1. In the upper-right corner, click **Your name** > **My Profile**.
 
-   ![Access your Marketplace account]({{ site.baseurl }}/common/images/marketplace-my-profile.png){:width="200px"}
+   ![Access your Marketplace account]({{ site.baseurl }}/common/images/marketplace-my-profile.png)
 
 1. Click **My Purchases**.
 
-   ![Marketplace purchase history]({{ site.baseurl }}/common/images/marketplace-my-purchases.png){:width="650px"}
+   ![Marketplace purchase history]({{ site.baseurl }}/common/images/marketplace-my-purchases.png)
 
 1. Find the extension you want to install and click **Technical Details**.
 
-   ![Technical details shows the extension's Composer name]({{ site.baseurl }}/common/images/marketplace-extension-technical-details.png){:width="200px"}
+   ![Technical details shows the extension's Composer name]({{ site.baseurl }}/common/images/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
@@ -96,7 +96,6 @@ Add the extension's name and version to your `composer.json` file:
    Writing lock file
    Generating autoload files
    ```
-   {:.no-copy}
 
 ## Verify the extension
 

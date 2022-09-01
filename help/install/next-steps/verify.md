@@ -19,7 +19,7 @@ Go to the storefront in a web browser. For example, if your Magento installation
 
 The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
 
-![Magento storefront which verifies a successful installation]({{ site.baseurl }}/common/images/install-success_store.png){:width="450px"}
+![Magento storefront which verifies a successful installation]({{ site.baseurl }}/common/images/install-success_store.png)
 
 If the page displays a 404 (Not Found) or unconfigured (no styles, only text), see [After installing, images and stylesheets do not load; only text displays, no graphics](https://support.magento.com/hc/en-us/articles/360032994352).
 

@@ -158,7 +158,6 @@ In {{site.data.var.ee}} version 2.2.8 and later, you can create the Magento admi
 |`--lock-zookeeper-host`|Host and port to connect to Zookeeper cluster when you use `zookeeper` lock provider.<br><br>For example: `127.0.0.1:2181`|Yes, if you set `--lock-provider=zookeeper`|
 |`--lock-zookeeper-path`|The path where Zookeeper will save locks.<br><br>The default path is: `/magento/locks`|No|
 |`--lock-file-path`|The path where file locks will be saved.|Yes, if you set `--lock-provider=file`|
-{:style="table-layout:auto;"}
 
 **Consumers configuration options:**
 

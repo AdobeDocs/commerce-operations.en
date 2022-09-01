@@ -174,7 +174,6 @@ The following tables provide many but not all available install parameters. For 
 |`--lock-zookeeper-host`|Host and port to connect to Zookeeper cluster when you use `zookeeper` lock provider.<br><br>For example: `127.0.0.1:2181`|Yes, if you set `--lock-provider=zookeeper`|
 |`--lock-zookeeper-path`|The path where Zookeeper will save locks.<br><br>The default path is: `/magento/locks`|No|
 |`--lock-file-path`|The path where file locks will be saved.|Yes, if you set `--lock-provider=file`|
-{:style="table-layout:auto;"}
 
 **Consumers configuration options:**
 
