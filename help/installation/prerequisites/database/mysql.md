@@ -33,7 +33,7 @@ If you expect to import large numbers of products into Magento, you can increase
 
 >[!NOTE]
 >
->The default value applies to {{site.data.var.ece}} *and* on-premises projects. {{site.data.var.ece}} Pro customers must open a support ticket to increase the `max_allowed_packet` value. {{site.data.var.ece}} Starter customers can increase the value by updating the configuration in the `/etc/mysql/mysql.cnf` file.
+>The default value applies to Adobe Commerce on cloud infrastructure *and* on-premises projects. Adobe Commerce on cloud infrastructure Pro customers must open a support ticket to increase the `max_allowed_packet` value. Adobe Commerce on cloud infrastructure Starter customers can increase the value by updating the configuration in the `/etc/mysql/mysql.cnf` file.
 
 {% include install/mysql_max-allowed-packet-ubuntu.md %}
 

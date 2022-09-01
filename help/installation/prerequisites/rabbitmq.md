@@ -16,7 +16,7 @@ The message queue system must be established before you install Magento. The bas
 
 >[!NOTE]
 >
->You can use MySQL or RabbitMQ for message queue processing. For details on setting up the message queue system, see [Message queues overview]({{ page.baseurl }}/extension-dev-guide/message-queues/message-queues.html). If you are using the Bulk API with {{ site.data.var.ee }}, the message queue system configuration defaults to using RabbitMQ as the message broker.  See [Start message queue consumers]({{page.baseurl}}/config-guide/mq/manage-message-queues.html#start-message-queue-consumers) for more information.
+>You can use MySQL or RabbitMQ for message queue processing. For details on setting up the message queue system, see [Message queues overview]({{ page.baseurl }}/extension-dev-guide/message-queues/message-queues.html). If you are using the Bulk API with Adobe Commerce, the message queue system configuration defaults to using RabbitMQ as the message broker.  See [Start message queue consumers]({{page.baseurl}}/config-guide/mq/manage-message-queues.html#start-message-queue-consumers) for more information.
 
 ## Install RabbitMQ on Ubuntu {#ubuntu-install}
 
@@ -63,9 +63,9 @@ Review the official RabbitMQ documentation to configure and manage RabbitMQ. Pay
 *  Starting and stopping the broker
 *  System limits
 
-## Install Magento with RabbitMQ and connect to {{site.data.var.ce}} or {{site.data.var.ee}}
+## Install Magento with RabbitMQ and connect to Magento Open Source or Adobe Commerce
 
-If you installed Magento after you installed RabbitMQ, add the following command line parameters when you install {{site.data.var.ce}} or {{site.data.var.ee}}:
+If you installed Magento after you installed RabbitMQ, add the following command line parameters when you install Magento Open Source or Adobe Commerce:
 
 `--amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"`
 
@@ -80,7 +80,7 @@ where:
 |`--amqp-virtualhost`|The virtual host for connecting to RabbitMQ. The default is `/`.
 |`--amqp-ssl`|Indicates whether to connect to RabbitMQ. The default is `false`. If you set the value to true, see Configure SSL for more information.|
 
-## Connect RabbitMQ to {{site.data.var.ce}} or {{site.data.var.ee}}
+## Connect RabbitMQ to Magento Open Source or Adobe Commerce
 
 If you already had Magento installed and you want to connect it to RabbitMQ, add a `queue` section in the `<install_directory>/app/etc/env.php` file so that it is similar to the following:
 
@@ -132,4 +132,4 @@ To configure support for SSL, edit the `ssl` and `ssl_options` parameters in the
 
 ## Start the message queue consumers
 
-After you have connected {{site.data.var.ee}} and RabbitMQ, you must start the message queue consumers. See [Configure message queues]({{page.baseurl}}/config-guide/mq/manage-message-queues.html#start-message-queue-consumers) for details.
+After you have connected Adobe Commerce and RabbitMQ, you must start the message queue consumers. See [Configure message queues]({{page.baseurl}}/config-guide/mq/manage-message-queues.html#start-message-queue-consumers) for details.

@@ -29,15 +29,15 @@ To get the Magento metapackage:
 
 1. Log in to your Magento server as, or switch to, the [file system owner][].
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot.
-1. Create a new Composer project using the {{site.data.var.ce}} or {{site.data.var.ee}} metapackage.
+1. Create a new Composer project using the Magento Open Source or Adobe Commerce metapackage.
 
-    **{{site.data.var.ce}}**
+    **Magento Open Source**
 
     ```bash
     composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
     ```
 
-    **{{site.data.var.ee}}**
+    **Adobe Commerce**
 
     ```bash
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
@@ -45,7 +45,7 @@ To get the Magento metapackage:
 
     When prompted, enter your Magento authentication keys. Public and private keys are created and configured in your [Commerce Marketplace][].
 
-    If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure there are no typos in your command. If you still encounter errors, you may not be authorized to download {{site.data.var.ee}}. Contact [Magento support](https://magento.com/support) for help.
+    If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Magento support](https://magento.com/support) for help.
 
     See [Troubleshooting][] for help with more errors.
 
@@ -53,7 +53,7 @@ To get the Magento metapackage:
 
 ### Example - Minor release
 
-Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the {{site.data.var.ee}} 2.4.3 metapackage:
+Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the Adobe Commerce 2.4.3 metapackage:
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
@@ -61,7 +61,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ### Example - Quality patch
 
-Quality patches primarily contain functional _and_ security fixes. However, they can also sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the {{site.data.var.ee}} 2.4.3 metapackage:
+Quality patches primarily contain functional _and_ security fixes. However, they can also sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the Adobe Commerce 2.4.3 metapackage:
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
@@ -71,7 +71,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Security patches contain security fixes only. They are designed to make the upgrade process faster and easier.
 
-Security patches use the Composer naming convention `2.4.3-px`. Use Composer to specify a patch. For example, to download the {{site.data.var.ee}} 2.4.3-p1 metapackage:
+Security patches use the Composer naming convention `2.4.3-px`. Use Composer to specify a patch. For example, to download the Adobe Commerce 2.4.3-p1 metapackage:
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3-p1 <install-directory-name>

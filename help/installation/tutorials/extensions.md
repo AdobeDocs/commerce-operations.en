@@ -5,7 +5,7 @@ description:
 
 # Install an extension
 
-Code that extends or customizes {{site.data.var.ee}} and {{site.data.var.ce}} behavior is called an extension. You can optionally package and distribute extensions on the [Commerce Marketplace](https://marketplace.magento.com) or another extension distribution system.
+Code that extends or customizes Adobe Commerce and Magento Open Source behavior is called an extension. You can optionally package and distribute extensions on the [Commerce Marketplace](https://marketplace.magento.com) or another extension distribution system.
 
 Extensions include:
 
@@ -85,7 +85,7 @@ Add the extension's name and version to your `composer.json` file:
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Enter your [authentication keys]({{ site.baseurl }}/guides/v2.3/install-gde/prereq/connect-auth.html). Your public key is your username; your private key is your password.
+1. Enter your [authentication keys](../prerequisites/authentication-keys.md). Your public key is your username; your private key is your password.
 
 1. Wait for Composer to finish updating your project dependencies and make sure there aren't any errors:
 

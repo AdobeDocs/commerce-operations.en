@@ -5,7 +5,7 @@ description:
 
 # AWS OpenSearch
 
-{{ site.data.var.ee }} and {{ site.data.var.ce }} 2.4.3 supports using Amazon OpenSearch Service clusters. This service is the successor to Amazon Elasticsearch Service. This topic describes how to configure Commerce to use AWS OpenSearch, and how to migrate data from a local Elasticsearch or OpenSearch instance to an AWS OpenSearch cluster.
+Adobe Commerce and Magento Open Source 2.4.3 supports using Amazon OpenSearch Service clusters. This service is the successor to Amazon Elasticsearch Service. This topic describes how to configure Commerce to use AWS OpenSearch, and how to migrate data from a local Elasticsearch or OpenSearch instance to an AWS OpenSearch cluster.
 
 ## Create an AWS OpenSearch service domain
 

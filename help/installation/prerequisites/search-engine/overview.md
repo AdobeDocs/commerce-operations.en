@@ -5,7 +5,7 @@ description:
 
 # Search engine overview
 
-As of {{ site.data.var.ee }} and {{ site.data.var.ce }} 2.4, all installations must be configured to use [Elasticsearch][] or [OpenSearch][] as the [catalog](https://glossary.magento.com/catalog) search solution.
+As of Adobe Commerce and Magento Open Source 2.4, all installations must be configured to use [Elasticsearch][] or [OpenSearch][] as the [catalog](https://glossary.magento.com/catalog) search solution.
 
 >[!NOTE]
 >
@@ -13,7 +13,7 @@ As of {{ site.data.var.ee }} and {{ site.data.var.ce }} 2.4, all installations m
 
 ## Supported versions {#es-spt-versions}
 
-You must install and configure either Elasticsearch or OpenSearch before installing {{ site.data.var.ee }} or {{ site.data.var.ce }} 2.4.4.
+You must install and configure either Elasticsearch or OpenSearch before installing Adobe Commerce or Magento Open Source 2.4.4.
 
 Refer to the [System Requirements][] for specific version information.
 

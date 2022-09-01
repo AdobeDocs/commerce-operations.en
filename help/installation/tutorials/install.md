@@ -71,7 +71,7 @@ The following tables describe the installation option names and values, such as 
 
 The following options specify the user information and credentials for the Magento admin user.
 
-In {{site.data.var.ee}} version 2.2.8 and later, you can create the Magento admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#install-cli-example).
+In Adobe Commerce version 2.2.8 and later, you can create the Magento admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#install-cli-example).
 
 |Name|Value|Required?|
 |--- |--- |--- |
@@ -171,7 +171,7 @@ In {{site.data.var.ee}} version 2.2.8 and later, you can create the Magento admi
 
 ### Sample localhost installations {#install-cli-example}
 
-The following examples show the commands to complete install {{ site.data.var.ee }} locally with various options.
+The following examples show the commands to complete install Adobe Commerce locally with various options.
 
 #### Example 1—Basic installation with admin user account
 

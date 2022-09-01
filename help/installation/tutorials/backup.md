@@ -17,7 +17,7 @@ After backing up, you can [roll back](#instgde-cli-uninst-roll) at a later time.
 
 >[!TIP]
 >
->For {{site.data.var.ece}} projects, see [Snapshots and backup management]({{ site.baseurl }}/cloud/project/project-webint-snap.html) in the _Cloud guide_.
+>For Adobe Commerce on cloud infrastructure projects, see [Snapshots and backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html) in the _Cloud guide_.
 
 ## First steps {#instgde-cli-before}
 

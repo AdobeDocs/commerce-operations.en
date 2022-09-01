@@ -188,7 +188,7 @@ The following tables provide many but not all available install parameters. For 
 
 ### Sample localhost installations {#install-cli-example}
 
-The following examples show the commands to complete install {{ site.data.var.ee }} locally with various options.
+The following examples show the commands to complete install Adobe Commerce locally with various options.
 
 #### Example 1—Basic installation with admin user account
 

@@ -11,9 +11,9 @@ We have some resources here to help get you started using the eCommerce platform
 
 ## How to get the Magento software {#install-get-software}
 
-Check the availability of exciting new features and releases, and learn how you can obtain them, on our [Magento product availability page]({{ site.baseurl }}/release/availability.html).
+Check the availability of exciting new features and releases, and learn how you can obtain them, on our [Magento product availability page](https://devdocs.magento.com/release/availability.html).
 
-Consult the following table for getting started with installing {{site.data.var.ce}} or {{site.data.var.ee}}.
+Consult the following table for getting started with installing Magento Open Source or Adobe Commerce.
 
 <table>
     <tbody>
@@ -25,7 +25,7 @@ Consult the following table for getting started with installing {{site.data.var.
         </tr>
     <tr>
         <td><p>Integrator, packager</p></td>
-        <td><p>Wants full control over all components installed, has access to the Magento server, highly technical, might repackage {{site.data.var.ce}} with other components.</p>
+        <td><p>Wants full control over all components installed, has access to the Magento server, highly technical, might repackage Magento Open Source with other components.</p>
         </td>
         <td><ol><li>Creates a Composer <em>project</em> that contains the list of components to use.</li>
             <li>Uses Composer to update package dependencies; uses <code>composer create-project</code> to get the Magento metapackage.</li>

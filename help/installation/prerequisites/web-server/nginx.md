@@ -96,15 +96,15 @@ For this example, we'll install using Composer and the command line.
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Create a new Composer project using the {{site.data.var.ce}} or {{site.data.var.ee}} metapackage.
+1. Create a new Composer project using the Magento Open Source or Adobe Commerce metapackage.
 
-   **{{site.data.var.ce}}**
+   **Magento Open Source**
 
    ```bash
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **{{site.data.var.ee}}**
+   **Adobe Commerce**
 
    ```bash
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
@@ -376,15 +376,15 @@ For this example, we'll install using Composer and the command line.
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Create a new Composer project using the {{site.data.var.ce}} or {{site.data.var.ee}} metapackage.
+1. Create a new Composer project using the Magento Open Source or Adobe Commerce metapackage.
 
-   **{{site.data.var.ce}}**
+   **Magento Open Source**
 
    ```bash
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
-   **{{site.data.var.ee}}**
+   **Adobe Commerce**
 
    ```bash
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>

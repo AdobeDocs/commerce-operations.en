@@ -55,7 +55,7 @@ For more information, see one of the following:
 
 ### Set up iptables rules to enable various Magento services to communicate.
 
-Whether you have one server or many, you must open ports in the firewall to enable Magento services to communicate. For example, if you use the Solr search engine with {{site.data.var.ee}}, you must enable it to communicate with the web server. If you have multiple web nodes, you must enable them to communicate with each other.
+Whether you have one server or many, you must open ports in the firewall to enable Magento services to communicate. For example, if you use the Solr search engine with Adobe Commerce, you must enable it to communicate with the web server. If you have multiple web nodes, you must enable them to communicate with each other.
 
 More information:
 
@@ -86,12 +86,12 @@ Elasticsearch or OpenSearch is required for all installations as of 2.4.0.
 
 ### Set up an message queue
 
-Since 2.3.0 {{site.data.var.ce}} includes message queue functionality. In earlier versions it is available only for {{site.data.var.ee}}.
+Since 2.3.0 Magento Open Source includes message queue functionality. In earlier versions it is available only for Adobe Commerce.
 
 *  [RabbitMQ]({{page.baseurl}}/config-guide/mq/rabbitmq-overview.html)
 
-## Settings for {{site.data.var.ee}} only {#post-install-ee}
+## Settings for Adobe Commerce only {#post-install-ee}
 
-You can configure the following only if you use {{site.data.var.ee}}:
+You can configure the following only if you use Adobe Commerce:
 
 *  [Split databases for checkout, order management, and other Magento database tables]({{page.baseurl}}/config-guide/multi-master/multi-master.html)
