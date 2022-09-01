@@ -34,8 +34,9 @@ To install and configure `php-fpm`:
    apt-get -y install php7.2-fpm php7.2-cli
    ```
 
-   {:.bs-callout-info}
-   This command installs the latest available version of PHP 7.2.X. See [Magento 2.3.x technology stack requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported PHP versions.
+   >[!NOTE]
+   >
+   >This command installs the latest available version of PHP 7.2.X. See [Magento 2.3.x technology stack requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported PHP versions.
 
 1. Open the `php.ini` files in an editor:
 
@@ -55,8 +56,9 @@ To install and configure `php-fpm`:
    zlib.output_compression = On
    ```
 
-   {:.bs-callout-info}
-   We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings]({{page.baseurl }}/install-gde/prereq/php-settings.html) for more information.
+   >[!NOTE]
+   >
+   >We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings]({{page.baseurl }}/install-gde/prereq/php-settings.html) for more information.
 
 1. Save and exit the editor.
 
@@ -195,8 +197,9 @@ These instructions assume you're using the Ubuntu default location for the nginx
    }
    ```
 
-{:.bs-callout-info}
-The `include` directive must point to the sample nginx configuration file in your Magento installation directory.
+   >[!NOTE]
+   >
+   >The `include` directive must point to the sample nginx configuration file in your Magento installation directory.
 
 1. Replace `www.magento-dev.com` with your domain name. This must match the base URL you specified when installing Magento.
 
@@ -272,8 +275,9 @@ Magento requires several [PHP](php-settings.html) extensions to function properl
    zlib.output_compression = On
    ```
 
-{:.bs-callout-info}
-We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings]({{page.baseurl }}/install-gde/prereq/php-settings.html) for more information.
+   >[!NOTE]
+   >
+   >We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings]({{page.baseurl }}/install-gde/prereq/php-settings.html) for more information.
 
 1. Uncomment the session path directory and set the path:
 
@@ -469,8 +473,9 @@ These instructions assume you're using the CentOS default location for the nginx
    }
    ```
 
-{:.bs-callout-info}
-The `include` directive must point to the sample nginx configuration file in your Magento installation directory.
+   >[!NOTE]
+   >
+   >The `include` directive must point to the sample nginx configuration file in your Magento installation directory.
 
 1. Replace `www.magento-dev.com` with your domain name.
 
@@ -559,12 +564,3 @@ To configure SELinux and firewalld:
 ### Verify the installation
 
 Open a web browser and navigate to your site's base URL to [verify the installation.]({{page.baseurl }}/install-gde/install/verify.html)
-
-{:.ref-header}
-Related topics
-
-*  [PHP](php-settings.html)
-*  [MySQL]({{page.baseurl }}/install-gde/prereq/mysql.html)
-*  [Configuring security options]({{page.baseurl }}/install-gde/prereq/security.html)
-*  [Installing optional software]({{page.baseurl }}/install-gde/prereq/optional.html)
-*  [Determine your installation or upgrade path]({{ page.baseurl }}/install-gde/bk-install-guide.html)

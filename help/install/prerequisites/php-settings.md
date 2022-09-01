@@ -7,8 +7,9 @@ description:
 
 This topic discusses how to set required [PHP](https://glossary.magento.com/php) options.
 
-{:.bs-callout-info}
-See [system requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported versions of PHP.
+>[!NOTE]
+>
+>See [system requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported versions of PHP.
 
 ## Verify PHP is installed {#centos-verify-php}
 
@@ -39,7 +40,6 @@ Magento requires a set of extensions to be installed.
 
 {% include install/php-extensions-template.md %}
 
-{:.procedure}
 To verify installed extensions:
 
 1. List installed modules.
@@ -57,8 +57,10 @@ To verify installed extensions:
 
 ## Check PHP settings
 
-{:.bs-callout-warning}
-If you are using PHP 7.4.20, set `pcre.jit=0` in your `php.ini` file. This will get around a PHP [bug](https://bugs.php.net/bug.php?id=81101) that prevents CSS from loading.
+>[!WARNING]
+>
+>If you are using PHP 7.4.20, set `pcre.jit=0` in your `php.ini` file. This will get around a PHP [bug](https://bugs.php.net/bug.php?id=81101) that prevents CSS from loading.
+
 
 -  Set the system time zone for PHP; otherwise, errors like the following display during the installation and time-related operations like cron might not work:
 
@@ -89,8 +91,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
    Magento 2.1 and later use PHP code comments for code generation.
 
-{:.bs-callout-info}
-To avoid issues during installation and upgrade, we strongly recommend you apply the same PHP settings to both the PHP command-line configuration and the PHP web server plug-in configuration. For more information, see the next section.
+>[!NOTE]
+>
+>To avoid issues during installation and upgrade, we strongly recommend you apply the same PHP settings to both the PHP command-line configuration and the PHP web server plug-in configuration. For more information, see the next section.
 
 ## Step 1: Find PHP configuration files {#php-required-find}
 
@@ -108,8 +111,9 @@ To locate the PHP command-line configuration, enter
 php --ini | grep "Loaded Configuration File"
 ```
 
-{:.bs-callout-info}
-If you have only one `php.ini` file, make the changes in that file. If you have two `php.ini` files, make the changes in *all* files. Failure to do so might cause unpredictable performance.
+>[!NOTE]
+>
+>If you have only one `php.ini` file, make the changes in that file. If you have two `php.ini` files, make the changes in *all* files. Failure to do so might cause unpredictable performance.
 
 ### Find OPcache configuration settings
 

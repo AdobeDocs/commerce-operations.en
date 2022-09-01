@@ -54,12 +54,13 @@ However, in some situations (particularly, deploying Magento to production), you
 bin/magento setup:upgrade --keep-generated
 ```
 
-{:.bs-callout-warning}
-The optional `--keep-generated` option should be used _only_ in limited circumstances by experienced system integrators. This option should _never_ be used in a development environment. Improper use of this optional parameter can cause errors during code execution.
+>[!WARNING]
+>
+>The optional `--keep-generated` option should be used in limited circumstances by experienced system integrators *only*. This option should *never* be used in a development environment. Improper use of this optional parameter can cause errors during code execution.
 
-## Install the Magento software
+## Install the Commerce software
 
-*  [Install the Magento software using the command line][]
+*  [Install the Commerce software using the command line][]
 
 <!-- Link Definitions -->
 [Update the Magento application]: https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html

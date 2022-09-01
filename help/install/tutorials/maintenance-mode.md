@@ -47,8 +47,9 @@ bin/magento maintenance:status
 
 `--ip=<ip address>` is an IP address to exempt from maintenance mode (for example, developers doing the maintenance). To exempt more than one IP address in the same command, use the option multiple times.
 
-{:.bs-callout-info}
-Using `--ip=<ip address>` with `magento maintenance:disable` saves the list of IPs for later use. To clear the list of exempt IPs, use `magento maintenance:enable --ip=none` or see [Maintain the list of exempt IP addresses](#instgde-cli-maint-exempt).
+>[!NOTE]
+>
+>Using `--ip=<ip address>` with `magento maintenance:disable` saves the list of IPs for later use. To clear the list of exempt IPs, use `magento maintenance:enable --ip=none` or see [Maintain the list of exempt IP addresses](#instgde-cli-maint-exempt).
 
 `magento maintenance:status` displays the current status of maintenance mode.
 
@@ -122,5 +123,6 @@ To use the `skin` parameter:
 
    Ensure your paths point to your `errors` directory. The directory name must match the URL parameter indicated in the `RewriteRule`. In the previous example, the `sub` directory is used, which is specified as a parameter in the `RewriteRule` (`skin=sub`)
 
-{:.bs-callout-info}
-The [nginx]({{ page.baseurl }}/config-guide/multi-site/ms_nginx.html) setting must be added for multi-store setups.
+>[!NOTE]
+>
+>The [nginx]({{ page.baseurl }}/config-guide/multi-site/ms_nginx.html) setting must be added for multi-store setups.

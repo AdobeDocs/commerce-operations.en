@@ -14,11 +14,13 @@ Magento _strongly_ recommends you observe the following standard when you set up
 *  To enhance your database security posture, enable the [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL mode to prevent storing invalid data values, which might cause unwanted database interactions.
 *  If you use MySQL database replication, be aware that Magento does _not_ support MySQL statement-based replication. Make sure you use _only_ [row-based replication](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.htmll).
 
-{:.bs-callout-warning}
-Magento 2 currently utilizes `CREATE TEMPORARY TABLE` statements inside transactions, which are [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) with database implementations utilizing GTID-based replication, such as [Google Cloud SQL second-generation instances](https://cloud.google.com/sql/docs/features#differences). Consider MySQL for Cloud SQL 8.0 as an alternative.
+>[!WARNING]
+>
+>Magento 2 currently utilizes `CREATE TEMPORARY TABLE` statements inside transactions, which are [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) with database implementations utilizing GTID-based replication, such as [Google Cloud SQL second-generation instances](https://cloud.google.com/sql/docs/features#differences). Consider MySQL for Cloud SQL 8.0 as an alternative.
 
-{:.bs-callout-info}
-If your web server and database server are on different hosts, perform the tasks discussed in this topic on the database server host then see [Set up a remote MySQL database connection]({{page.baseurl }}/install-gde/prereq/mysql_remote.html).
+>[!NOTE]
+>
+>If your web server and database server are on different hosts, perform the tasks discussed in this topic on the database server host then see [Set up a remote MySQL database connection]({{page.baseurl }}/install-gde/prereq/mysql_remote.html).
 
 ## Installing MySQL on Ubuntu {#instgde-prereq-mysql-ubuntu}
 
@@ -29,10 +31,11 @@ Magento 2.4 requires a clean installation of MySQL 8.0. Follow the links below f
 
 If you expect to import large numbers of products into Magento, you can increase the value for [`max_allowed_packet`](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html) that is larger than the default, 16MB.
 
-{:.bs-callout-info}
-The default value applies to {{site.data.var.ece}} *and* on-premises projects. {{site.data.var.ece}} Pro customers must open a support ticket to increase the `max_allowed_packet` value. {{site.data.var.ece}} Starter customers can increase the value by updating the configuration in the `/etc/mysql/mysql.cnf` file.
+>[!NOTE]
+>
+>The default value applies to {{site.data.var.ece}} *and* on-premises projects. {{site.data.var.ece}} Pro customers must open a support ticket to increase the `max_allowed_packet` value. {{site.data.var.ece}} Starter customers can increase the value by updating the configuration in the `/etc/mysql/mysql.cnf` file.
 
-  {% include install/mysql_max-allowed-packet-ubuntu.md %}
+{% include install/mysql_max-allowed-packet-ubuntu.md %}
 
 Then, [Configure the Magento database instance](#instgde-prereq-mysql-config).
 
@@ -176,23 +179,15 @@ To configure a MySQL database instance:
 
    If this setting is not enabled, `bin/magento setup:db:status` will always report that the `Declarative Schema is not up to date`.
 
-{:.bs-callout-info}
-The `explicit_defaults_for_timestamp` setting is deprecated. This setting controls deprecated TIMESTAMP behaviors that will be removed in a future MySQL release. When those behaviors are removed, the `explicit_defaults_for_timestamp` setting will be removed as well.
+>[!NOTE]
+>
+>The `explicit_defaults_for_timestamp` setting is deprecated. This setting controls deprecated TIMESTAMP behaviors that will be removed in a future MySQL release. When those behaviors are removed, the `explicit_defaults_for_timestamp` setting will be removed as well.
 
-{:.bs-callout-warning}
-On Magento projects deployed on the Cloud platform, the `explicit_defaults_for_timestamp` setting for MySQL (MariaDB) defaults to *OFF*
+>[!WARNING]
+>
+>For Adobe Commerce on cloud infrastructure projects, the `explicit_defaults_for_timestamp` setting for MySQL (MariaDB) defaults to _OFF_.
 
 Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. To speed up reindexing, we recommend setting these MariaDB configuration parameters:
 
 *  optimizer_switch='rowid_filter=off'
 *  optimizer_use_condition_selectivity = 1
-
-{:.ref-header}
-Related topics
-
-*  [Set up a remote MySQL database connection]({{page.baseurl }}/install-gde/prereq/mysql_remote.html)
-*  [Installing optional software]({{page.baseurl }}/install-gde/prereq/optional.html)
-*  [Apache]({{page.baseurl }}/install-gde/prereq/apache.html)
-*  [PHP](php-settings.html)
-*  [Configuring security options]({{page.baseurl }}/install-gde/prereq/security.html)
-*  [How to get the Magento software]({{ page.baseurl }}/install-gde/bk-install-guide.html)

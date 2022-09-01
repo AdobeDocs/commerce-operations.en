@@ -15,8 +15,9 @@ This section discusses how to uninstall one or more modules. During uninstallati
 
 You should uninstall a module only if you're certain you won't use it. Instead of uninstalling a module, you can disable it as discussed in [Enable or disable modules]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html).
 
- {:.bs-callout-info}
-This command checks _only_ dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the Magento file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html) non-Composer modules.
+>[!NOTE]
+>
+>This command checks _only_ dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html) non-Composer modules.
 
 ## First steps {#instgde-cli-before}
 {% include install/first-steps-cli.md %}
@@ -61,8 +62,9 @@ The module uninstall command performs the following tasks:
 1. Removes the specified modules from the module list in the [deployment configuration]({{ page.baseurl }}/config-guide/config/config-php.html).
 1. Removes code from the codebase using `composer remove`.
 
-    {:.bs-callout-info}
-   Uninstalling a module _always_ runs `composer remove`. The `--remove-data` option removes database data and schema defined by the module's `Uninstall` class.
+   >[!NOTE]
+   >
+   >Uninstalling a module _always_ runs `composer remove`. The `--remove-data` option removes database data and schema defined by the module's `Uninstall` class.
 
 1. Cleans the [cache](https://glossary.magento.com/cache).
 1. Updates generated classes.
@@ -118,8 +120,9 @@ Alert: Generated static view files were not cleared. You can clear them using th
 Disabling maintenance mode
 ```
 
- {:.bs-callout-info}
-Errors display if you attempt to uninstall a module with a dependency on another module. In that case, you cannot uninstall one module; you must uninstall both.
+>[!NOTE]
+>
+>Errors display if you attempt to uninstall a module with a dependency on another module. In that case, you cannot uninstall one module; you must uninstall both.
 
 ## Roll back the file system, database, or media files {#instgde-cli-uninst-mod-roll}
 
@@ -131,11 +134,13 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
 where `<filename>` is the name of the backup file located in `<magento_root>/var/backups`. To display a list of backup files, enter `magento info:backups:list`
 
-{:.bs-callout-warning}
-This command deletes the specified files or the database before restoring them. (For example, the <code>--media-file</code> option deletes media assets under  `pub/media` before restoring from the specified rollback file.) Make sure you have made no changes to the file system or database that you want to keep before using this command.
+>[!WARNING]
+>
+>This command deletes the specified files or the database before restoring them. For example, the `--media-file` option deletes media assets under the `pub/media` directory before restoring from the specified rollback file. Make sure you have made no changes to the file system or database that you want to keep before using this command.
 
- {:.bs-callout-info}
-To display a list of available backup files, enter `magento info:backups:list`
+>[!NOTE]
+>
+>To display a list of available backup files, enter `magento info:backups:list`
 
 This command performs the following tasks:
 
@@ -190,5 +195,6 @@ For example, to restore a code (that is, file system) backup, enter the followin
    Disabling maintenance mode
    ```
 
- {:.bs-callout-info}
-To run the `magento` command again without changing directories, you might need to enter `cd pwd`.
+>[!NOTE]
+>
+>To run the `magento` command again without changing directories, you might need to enter `cd pwd`.

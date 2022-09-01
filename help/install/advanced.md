@@ -5,11 +5,15 @@ description:
 
 # Advanced on-premises installation
 
-{:.bs-callout-tip}
-Totally lost? Need a helping hand? Try our [Quick start install]({{ page.baseurl }}/install-gde/composer.html) or [Contributor install]({{ page.baseurl }}/install-gde/contrib-git.html) guides.
+>[!TIP]
+>
+>Totally lost? Need a helping hand? Try our [Quick start install]({{ page.baseurl }}/install-gde/composer.html) or [Contributor install]({{ page.baseurl }}/install-gde/contrib-git.html) guides.
 
-{:.bs-callout-info}
-If you chose to enable SELinux, see [SELinux and iptables]({{ page.baseurl }}/install-gde/prereq/security.html).
+
+>[!NOTE]
+>
+>If you chose to enable SELinux, see [SELinux and iptables]({{ page.baseurl }}/install-gde/prereq/security.html).
+
 
 ## Magento command-line interface (CLI)
 
@@ -40,8 +44,10 @@ Before you begin, complete the following steps:
 
 *  Review the [Get started with the command-line installation]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html) overview.
 
- {:.bs-callout-info}
-You must install Magento from its `bin` subdirectory.
+>[!NOTE]
+>
+>You must install Magento from its `bin` subdirectory.
+
 
 You can run the installer multiple times with different options to complete installation tasks like the following:
 
@@ -51,8 +57,10 @@ You can run the installer multiple times with different options to complete inst
 
 *  Install Magento in a different database instance.
 
- {:.bs-callout-info}
-By default, the installer does not overwrite the Magento database if you install the Magento software in the same database instance. You can use the optional `cleanup-database` parameter to change this behavior.
+>[!NOTE]
+>
+>By default, the installer does not overwrite the Magento database if you install the Magento software in the same database instance. You can use the optional `cleanup-database` parameter to change this behavior.
+
 
 See also [Update, reinstall, uninstall]({{ page.baseurl }}/install-gde/install/cli/install-cli-uninstall.html).
 
@@ -68,8 +76,10 @@ You can run the following commands to find values for some required arguments:
 | Currency           | bin/magento info:currency:list      |
 | Time zone          | bin/magento info:timezone:list      |
 
- {:.bs-callout-info}
-If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies]({{ page.baseurl }}/install-gde/install/prepare-install.html).
+>[!NOTE]
+>
+>If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies]({{ page.baseurl }}/install-gde/install/prepare-install.html).
+
 
 ## Install the Magento software from the command line {#instgde-install-cli-magento}
 
@@ -81,8 +91,10 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 The following tables describe the installation option names and values. For example installation commands. see [Sample localhost installations](#install-cli-example).
 
-{:.bs-callout-info}
-Any options that contain spaces or special characters must be enclosed in either single or double quotes.
+>[!NOTE]
+>
+>Any options that contain spaces or special characters must be enclosed in either single or double quotes.
+
 
 **Admin credentials:**
 
@@ -168,8 +180,10 @@ The following tables provide many but not all available install parameters. For 
 
 {% include config/consumers.md %}
 
-{:.bs-callout-info}
-To enable or disable modules after installing Magento, see [Enable and disable modules]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html).
+>[!NOTE]
+>
+>To enable or disable modules after installing Magento, see [Enable and disable modules]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html).
+
 
 {% include install/sens-data.md %}
 
@@ -285,8 +299,10 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --elasticsearch-port=9200
 ```
 
-{:.bs-callout-info}
-You must enter the command either on a single line or, as in the preceding example, with a `\` character at the end of each line.
+>[!NOTE]
+>
+>You must enter the command either on a single line or, as in the preceding example, with a `\` character at the end of each line.
+
 
 Messages like the following display if the installation is successful:
 
@@ -297,12 +313,3 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Magento installation complete.
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
-
-{:.ref-header}
-Related topics
-
-*  If you have one user account to access the Magento server, see [Optionally set a umask]({{ page.baseurl }}/install-gde/install/post-install-umask.html).
-
-   This type of setup is typical for shared hosting.
-
-*  [Verify the installation]({{ page.baseurl }}/install-gde/install/verify.html).

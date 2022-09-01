@@ -14,8 +14,10 @@ For example, 2.4.3 is fully tested with MariaDB 10.4. Adobe recommends that you 
 
 This section describes support and compatibility for all other types of required and optional software.
 
-{:.bs-callout-info}
-All of the following requirements apply to the latest patch release of Magento 2.4.
+>[!NOTE]
+>
+>All of the following requirements apply to the latest patch release of Magento 2.4.
+
 
 ### Mail server
 
@@ -28,8 +30,10 @@ Magento is not supported on Microsoft Windows and macOS.
 
 ### PHP extensions
 
-{:.bs-callout-info}
-The [PHP installation instructions][] include a step for installing these extensions.
+>[!NOTE]
+>
+>The [PHP installation instructions][] include a step for installing these extensions.
+
 
 {% include install/php-extensions-template.md %}
 
@@ -83,8 +87,10 @@ Magento requires the following system tools for some of its operations:
 
 [php_xdebug 2.5.x][] or later (development environments only; can have an adverse effect on performance)
 
-{:.bs-callout-info}
-There is a known issue with `xdebug` that can affect Magento installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug][].
+>[!NOTE]
+>
+>There is a known issue with `xdebug` that can affect Magento installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug][].
+
 
 <!-- Link Definitions -->
 [Known issue with xdebug]: https://support.magento.com/hc/en-us/articles/360034242212

@@ -13,8 +13,9 @@ Extensions include:
 -  Themes (change the look and feel of your [storefront](https://glossary.magento.com/storefront) and Admin)
 -  Language packages (localize the storefront and Admin)
 
-{:.bs-callout-tip}
-This topic explains how to use the command line to install extensions you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's [Composer](https://glossary.magento.com/composer) name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
+>[!TIP]
+>
+>This topic explains how to use the command line to install extensions you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's [Composer](https://glossary.magento.com/composer) name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
 
 Prior to installation, you may want to:
 
@@ -64,8 +65,9 @@ To get the extension's Composer name and version from the Commerce Marketplace:
 
    ![Technical details shows the extension's Composer name]({{ site.baseurl }}/common/images/marketplace-extension-technical-details.png){:width="200px"}
 
-{:.bs-callout-tip}
-Alternatively, you can find the Composer name and version of _any_ extension (whether you purchased it on Commerce Marketplace or somewhere else) in the extension's `composer.json` file.
+>[!TIP]
+>
+>Alternatively, you can find the Composer name and version of _any_ extension (whether you purchased it on Commerce Marketplace or somewhere else) in the extension's `composer.json` file.
 
 ## Update your `composer.json` file {#update-composer-json}
 
@@ -172,10 +174,9 @@ Some extensions won't work properly unless you clear Magento-generated static vi
 
 1. Configure the extension in Admin as needed.
 
-{:.bs-callout-tip}
-If you encounter errors when loading the storefront in a browser, use the following command to clear the cache:
-<br/>
-`bin/magento cache:flush`
+>[!TIP]
+>
+>If you encounter errors when loading the storefront in a browser, use the following command to clear the cache: `bin/magento cache:flush`.
 
 ## Upgrade an extension
 

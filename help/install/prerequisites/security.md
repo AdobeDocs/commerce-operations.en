@@ -9,8 +9,9 @@ description:
 
 [Security Enhanced Linux (SELinux)](https://selinuxproject.org/page/Main_Page) enables CentOS and Ubuntu administrators greater access control over their servers. If you are using SELinux *and* Apache must initiate a connection to another host, you must run the commands discussed in this section.
 
-{:.bs-callout-info}
-Magento has no recommendation about using SELinux; you can use it for enhanced security if you wish. If you use SELinux, you must configure it properly or the Magento application will function unpredictably. If you choose to use SELinux, consult a resource like [the CentOS wiki](https://wiki.centos.org/HowTos/SELinux) to set up rules to enable communication.
+>[!NOTE]
+>
+>Magento has no recommendation about using SELinux; you can use it for enhanced security if you wish. If you use SELinux, you must configure it properly or the Magento application will function unpredictably. If you choose to use SELinux, consult a resource like [the CentOS wiki](https://wiki.centos.org/HowTos/SELinux) to set up rules to enable communication.
 
 ### Suggestion for installing the Magento software with Apache
 
@@ -63,12 +64,3 @@ Depending on your security requirements, you might find it necessary to open por
 
 *  Ubuntu: [Ubuntu documentation page](https://help.ubuntu.com/community/IptablesHowTo)
 *  CentOS: [CentOS how-to](https://wiki.centos.org/HowTos/Network/IPTables).
-
-{:.ref-header}
-Related topics
-
-*  [Apache]({{ page.baseurl }}/install-gde/prereq/apache.html)
-*  [PHP]({{page.baseurl}}/install-gde/prereq/php-settings.html)
-*  [MySQL]({{ page.baseurl }}/install-gde/prereq/mysql.html)
-*  [Installing optional software]({{ page.baseurl }}/install-gde/prereq/optional.html)
-*  [How to get the Magento software]({{ page.baseurl }}/install-gde/bk-install-guide.html)

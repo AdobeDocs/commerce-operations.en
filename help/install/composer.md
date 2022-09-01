@@ -118,13 +118,18 @@ bin/magento setup:install \
 --elasticsearch-timeout=15
 ```
 
-{:.bs-callout-tip}
-You can customize the Admin URI with the `--backend-frontname` option. However, we recommend omitting this option and allowing the installation command to automatically generate a random URI. A random URI is harder for hackers or malicious software to exploit. The URI displays in your console when installation is complete.
+>[!TIP]
+>
+>You can customize the Admin URI with the `--backend-frontname` option. However, we recommend omitting this option and allowing the installation command to automatically generate a random URI. A random URI is harder for hackers or malicious software to exploit. The URI displays in your console when installation is complete.
 
-{:.bs-callout-tip}
-For a full description of the CLI install options, refer to [Install the Magento software from the command line][].
+
+>[!TIP]
+>
+>For a full description of the CLI install options, refer to [Install the Magento software from the command line][].
+
 
 ## Command summary {#instgde-cli-summary}
+
 {% include install/cli_help-commands.md %}
 
 The following table summarizes the available commands. Commands are shown in summary form only. For more information about a command, click the link in the Command column.
@@ -150,8 +155,10 @@ Database (simplest way is to use magento setup:upgrade)|
 
 {% include install/cli_common-commands.md %}
 
-{:.bs-callout-info}
-Hooray! You've completed the quick install. Need more advanced help? Check out our [Advanced install]({{ page.baseurl }}/install-gde/install/cli/install-cli.html) guide.
+>[!NOTE]
+>
+>Congratulations! You've completed the quick install. Need more advanced help? Check out our [Advanced install]({{ page.baseurl }}/install-gde/install/cli/install-cli.html) guide.
+
 
 <!-- Link Definitions -->
 [Commerce Marketplace]: https://marketplace.magento.com/customer/accessKeys/

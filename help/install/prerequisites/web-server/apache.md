@@ -24,12 +24,11 @@ This topic discusses how to enable Apache 2.4 rewrites and specify a setting for
 
 Magento uses server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all of the other sections in this topic as well.
 
-{% collapsible Click to show Apache 2.4 instructions %}
 {% include install/allowoverrides24.md %}
-{% endcollapsible %}
 
-{:.bs-callout-info}
-Failure to enable these settings typically results in styles not displaying on the storefront or Admin.
+>[!NOTE]
+>
+>Failure to enable these settings typically results in styles not displaying on the storefront or Admin.
 
 ## Apache required modules {#apache-required-modules}
 
@@ -58,8 +57,8 @@ Server built: Jul 22 2020 14:35:32
 ```
 
 *  If Apache is *not* installed, see:
-   *  [Installing or upgrading Apache on Ubuntu](#install-prereq-apache-ubuntu)
-   *  [Installing Apache on CentOS](#install-prereq-apache-centos)
+    *  [Installing or upgrading Apache on Ubuntu](#install-prereq-apache-ubuntu)
+    *  [Installing Apache on CentOS](#install-prereq-apache-centos)
 
 ## Installing or upgrading Apache on Ubuntu {#install-prereq-apache-ubuntu}
 
@@ -98,18 +97,7 @@ To install the default version of Apache:
 
 {% include install/allowoverrides24.md %}
 
-{:.ref-header}
-Next steps
-
-*  [Solving 403 (Forbidden) errors](#apache-error)
-*  Continue with the next prerequisite ([PHP Settings]({{ page.baseurl }}/install-gde/prereq/php-settings.html))
-*  [Determine your installation or upgrade path]({{ page.baseurl }}/install-gde/bk-install-guide.html)
-
-{% endcollapsible %}
-
 ### Upgrading Apache on Ubuntu {#install-prereq-apache-ubuntu-upgrade}
-
-{% collapsible Click to show/hide content %}
 
 To upgrade to Apache 2.4:
 
@@ -133,8 +121,10 @@ To upgrade to Apache 2.4:
    apt-get install -y apache2
    ```
 
-   {:.bs-callout-info}
-   If the 'apt-get install' command fails because of unmet dependencies, consult a resource like [http://askubuntu.com](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+   >[!NOTE]
+   >
+   >If the 'apt-get install' command fails because of unmet dependencies, consult a resource like [http://askubuntu.com](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+
 
 1. Verify the installation.
 
@@ -152,20 +142,11 @@ To upgrade to Apache 2.4:
 1. Continue with the next section.
 
 ### Enable rewrites and .htaccess for Apache 2.4 {#enable-rewr-apache24-upgr-ubuntu12}
+
 {% include install/allowoverrides24.md %}
-
-{:.ref-header}
-Next steps
-
-*  [Solving 403 (Forbidden) errors](#apache-error)
-*  Continue with the next prerequisite ([PHP Settings]({{ page.baseurl }}/install-gde/prereq/php-settings.html))
-*  [Determine your installation or upgrade path]({{ page.baseurl }}/install-gde/bk-install-guide.html)
-
-{% endcollapsible %}
 
 ## Installing Apache on CentOS {#install-prereq-apache-centos}
 
-{% collapsible Click to install Apache on CentOS %}
 Magento requires Apache use server rewrites. You must also specify the type of directives that can be used in `.htaccess`, which Magento uses to specify rewrite rules.
 
 Installing and configuring Apache is basically a three-step process: install the software, enable rewrites, and specify `.htaccess` directives.
@@ -193,8 +174,9 @@ Installing and configuring Apache is basically a three-step process: install the
 
 1. Continue with the next section.
 
-   {:.bs-callout-info}
-   Even if Apache 2.4 is provided by default with CentOS, see the following section to configure it.
+   >[!NOTE]
+   >
+   >Even if Apache 2.4 is provided by default with CentOS, see the following section to configure it.
 
 ### Enable rewrites and .htaccess for CentOS
 
@@ -223,8 +205,10 @@ Installing and configuring Apache is basically a three-step process: install the
    </Directory>
    ```
 
-   {:.bs-callout-info}
-   The preceding values for `Order` might not work in all cases. For more information, see the Apache documentation ([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
+   >[!NOTE]
+   >
+   >The preceding values for `Order` might not work in all cases. For more information, see the Apache documentation ([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
+
 
 1. Save the file and exit the text editor.
 
@@ -234,8 +218,9 @@ Installing and configuring Apache is basically a three-step process: install the
    service apache2 restart
    ```
 
-{:.bs-callout-info}
-Failure to enable these settings typically results in no styles displaying on your storefront or Admin.
+>[!NOTE]
+>
+>Failure to enable these settings typically results in no styles displaying on your storefront or Admin.
 
 ### Enable rewrites and .htaccess for Ubuntu
 
@@ -280,15 +265,6 @@ Failure to enable these settings typically results in no styles displaying on yo
    service apache2 restart
    ```
 
-{:.ref-header}
-Next steps
-
-*  [Solving 403 (Forbidden) errors](#apache-error)
-*  Continue with the next prerequisite ([PHP Settings]({{ page.baseurl }}/install-gde/prereq/php-settings.html))
-*  [Determine your installation or upgrade path]({{ page.baseurl }}/install-gde/bk-install-guide.html)
-
-{% endcollapsible %}
-
 ## Solving 403 (Forbidden) errors {#apache-error}
 
 {% collapsible Click to install solve 403 errors %}
@@ -309,15 +285,6 @@ For example:
 </Directory>
 ```
 
-{:.bs-callout-info}
-The preceding values for `Order` might not work in all cases. For more information, see the [Apache documentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
-{% endcollapsible %}
-
-{:.ref-header}
-Related topics
-
-*  [PHP]({{page.baseurl}}/install-gde/prereq/php-settings.html)
-*  [MySQL]({{page.baseurl}}/install-gde/prereq/mysql.html)
-*  [Configuring security options]({{page.baseurl }}/install-gde/prereq/security.html)
-*  [Installing optional software]({{page.baseurl }}/install-gde/prereq/optional.html)
-*  [Determine your installation or upgrade path]({{ page.baseurl }}/install-gde/bk-install-guide.html)
+>[!NOTE]
+>
+>The preceding values for `Order` might not work in all cases. For more information, see the [Apache documentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

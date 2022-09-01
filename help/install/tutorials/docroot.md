@@ -51,8 +51,9 @@ To complete this tutorial, you will need access to a working Magento installatio
 -  Elasticsearch (7.x) or OpenSearch (1.2)
 -  Magento (2.4+)
 
-{:.bs-callout-info}
-Refer to [Prerequisites]({{ page.baseurl }}/install-gde/prereq/prereq-overview.html) and the [Installation Guide]({{ page.baseurl }}/install-gde/bk-install-guide.html) for more information.
+>[!NOTE]
+>
+>Refer to [Prerequisites]({{ page.baseurl }}/install-gde/prereq/prereq-overview.html) and the [Installation Guide]({{ page.baseurl }}/install-gde/bk-install-guide.html) for more information.
 
 ## 1. Edit your server configuration
 
@@ -92,8 +93,9 @@ The name and location of your virtual host file depends on which version of Apac
 
 If you appended a directory name to your server's hostname or IP address to create the base URL when you installed Magento (for example `http://192.168.33.10/magento2`), you'll need to remove it.
 
- {:.bs-callout-info}
-Replace `192.168.33.10` with your server's hostname.
+>[!NOTE]
+>
+>Replace `192.168.33.10` with your server's hostname.
 
 1. Log in to the Magento database:
 

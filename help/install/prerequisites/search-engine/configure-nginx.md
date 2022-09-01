@@ -9,13 +9,15 @@ description:
 
 ## Set up a proxy {#es-nginx-proxy}
 
-{:.bs-callout-info}
-OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure Magento to use ElasticSearch 7 apply to OpenSearch. See [Migrate ElasticSearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) for more information.
+>[!NOTE]
+>
+>OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure Magento to use ElasticSearch 7 apply to OpenSearch. See [Migrate ElasticSearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) for more information.
 
 This section discusses how to configure nginx as an *unsecure* proxy so that {{ site.data.var.ee }} or {{ site.data.var.ce }} can use a search engine running on this server. This section does not discuss setting up HTTP Basic authentication; that is discussed in [Secure communication with nginx](#es-ws-secure-nginx).
 
- {:.bs-callout-info}
-The reason the proxy is not secured in this example is that it is easier to set up and verify. You can use TLS with this proxy if you want; to do so, make sure you add the proxy information to your secure server block configuration.
+>[!NOTE]
+>
+>The reason the proxy is not secured in this example is that it is easier to set up and verify. You can use TLS with this proxy if you want; to do so, make sure you add the proxy information to your secure server block configuration.
 
 See one of the following sections for more information:
 
@@ -123,8 +125,9 @@ To create a password:
    htpasswd -c /etc/nginx/passwd/.<filename> <username>
    ```
 
-   {:.bs-callout-warning}
-   For security reasons, `<filename>` should be hidden; that is, it must start with a period.
+   >[!WARNING]
+   >
+   >For security reasons, `<filename>` should be hidden; that is, it must start with a period.
 
 1. *(Optional).* To add another user to your password file, enter the same command without the `-c` (create) option:
 
@@ -138,8 +141,9 @@ To create a password:
 
 This section discusses how to specify who can access the nginx server.
 
-{:.bs-callout-warning}
-The example shown is for an *unsecure* proxy. To use a secure proxy, add the following contents (except the listen port) to your secure server block.
+>[!WARNING]
+>
+>The example shown is for an *unsecure* proxy. To use a secure proxy, add the following contents (except the listen port) to your secure server block.
 
 Use a text editor to modify either `/etc/nginx/conf.d/magento_es_auth.conf` (unsecure) or your secure server block with the following contents:
 
@@ -172,8 +176,9 @@ server {
 }
 ```
 
- {:.bs-callout-info}
-The search engine listen port shown in the preceding example are examples only. For security reasons, we recommend you use a non-default listen port.
+>[!NOTE]
+>
+>The search engine listen port shown in the preceding example are examples only. For security reasons, we recommend you use a non-default listen port.
 
 ### Step 4: Set up a restricted context for the search engine {#es-ws-secure-nginx-context}
 
@@ -207,8 +212,3 @@ This section discusses how to specify who can access the search engine server.
    ```
 
 {% include config/es-verify-proxy-24.md %}
-
-{:.ref-header}
-Related topic
-
-[Configure search stopwords]({{page.baseurl}}/config-guide/elasticsearch/es-config-stopwords.html)

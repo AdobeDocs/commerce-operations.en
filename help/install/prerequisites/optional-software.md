@@ -101,8 +101,10 @@ Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recomm
 
 [`phpinfo.php`](https://php.net/manual/en/function.phpinfo.php) displays a large amount of information about [PHP](https://glossary.magento.com/php) and its extensions.
 
-{:.bs-callout-info}
-Use `phpinfo.php` in a development system _only_. It can be a security issue in production.
+>[!NOTE]
+>
+>Use `phpinfo.php` in a development system _only_. It can be a security issue in production.
+
 
 Add the following code anywhere in your web server's docroot:
 
@@ -137,8 +139,10 @@ For more information about `phpmyadmin`, see the [phpmyadmin home page](https://
 
 For more detailed information about installation, see the [phpmyadmin installation documentation](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
-{:.bs-callout-info}
-Use phpmyadmin in a development system _only_. It can be a security issue in production.
+>[!NOTE]
+>
+>Use phpmyadmin in a development system _only_. It can be a security issue in production.
+
 
 1. To use phpmyadmin, enter the following command in your browser's address or location field:
 
@@ -147,12 +151,3 @@ Use phpmyadmin in a development system _only_. It can be a security issue in pro
    ```
 
 1. When prompted, log in using your MySQL database `root` or administrative user's username and password.
-
-{:.ref-header}
-Related topics
-
-*  [Apache]({{page.baseurl }}/install-gde/prereq/apache.html)
-*  [PHP]({{page.baseurl }}/install-gde/prereq/php-settings.html)
-*  [MySQL]({{page.baseurl }}/install-gde/prereq/mysql.html)
-*  [Configuring security options]({{page.baseurl }}/install-gde/prereq/security.html)
-*  [How to get the Magento software]({{ page.baseurl }}/install-gde/bk-install-guide.html)

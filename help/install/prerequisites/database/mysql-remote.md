@@ -25,8 +25,9 @@ The `db-host` value is the Aurora URL with the `https://` and trailing `:portnum
 
 ## Setting up a remote database connection
 
-{:.bs-callout-info}
-This is an advanced topic that should be used only by an experienced network administrator or database administrator. You must have `root` access to the file system and you must be able to log in to MySQL as `root`.
+>[!NOTE]
+>
+>This is an advanced topic that should be used only by an experienced network administrator or database administrator. You must have `root` access to the file system and you must be able to log in to MySQL as `root`.
 
 ### Prerequisites
 
@@ -68,8 +69,9 @@ To create a remote connection:
    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
    ```
 
-   {:.bs-callout-info}
-   On Ubuntu 16, the path is typically `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >[!NOTE]
+   >
+   >On Ubuntu 16, the path is typically `/etc/mysql/mysql.conf.d/mysqld.cnf`.
 
 1. Search the configuration file for `bind-address`.
 
@@ -90,8 +92,9 @@ To create a remote connection:
 
    *  Ubuntu: `service mysql restart`
 
-    {:.bs-callout-info}
-    If MySQL fails to start, look in syslog for the source of the issue. Resolve the issue using [MySQL documentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) or another authoritative source.
+   >[!NOTE]
+   >
+   >If MySQL fails to start, look in syslog for the source of the issue. Resolve the issue using [MySQL documentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) or another authoritative source.
 
 ## Grant access to a database user {#instgde-prereq-mysql-remote-access}
 
@@ -115,8 +118,9 @@ To grant access to a database user:
    GRANT ALL ON magento_remote.* TO dbuser@192.0.2.50 IDENTIFIED BY 'dbuserpassword';
    ```
 
-   {:.bs-callout-info}
-   If your web server is clustered, enter the same command on every web server. You must use the same username for every web server.
+   >[!NOTE]
+   >
+   >If your web server is clustered, enter the same command on every web server. You must use the same username for every web server.
 
 ## Verify database access {#instgde-prereq-mysql-remote-verify}
 
@@ -150,12 +154,3 @@ When you install the Magento software, you must specify the following:
 *  Database username is the *local web node* database user to which you gave access
 *  Database password is the local web node user's password
 *  Database name is the name of the database on the remote server
-
-{:.ref-header}
-Related topics
-
-*  [Installing optional software]({{page.baseurl}}/install-gde/prereq/optional.html)
-*  [Apache]({{page.baseurl}}/install-gde/prereq/apache.html)
-*  [PHP]({{page.baseurl}}/install-gde/prereq/php-settings.html)
-*  [Configuring security options]({{page.baseurl}}/install-gde/prereq/security.html)
-*  [How to get the Magento software]({{ page.baseurl}}/install-gde/bk-install-guide.html)

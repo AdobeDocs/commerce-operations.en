@@ -9,13 +9,15 @@ description:
 
 ## Set up a proxy {#es-apache-proxy}
 
-{:.bs-callout-info}
-OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure Magento to use ElasticSearch 7 apply to OpenSearch. See [Migrate ElasticSearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) for more information.
+>[!NOTE]
+>
+>OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure Magento to use ElasticSearch 7 apply to OpenSearch. See [Migrate ElasticSearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) for more information.
 
 This section discusses how to configure Apache as an *unsecure* proxy so that {{ site.data.var.ee }} or {{ site.data.var.ce }} can use a search engine running on this server. This section does not discuss setting up HTTP Basic authentication; that is discussed in [Secure communication with Apache](#es-ws-secure-apache).
 
-{:.bs-callout-info}
-The reason the proxy is not secured in this example is that it is easier to set up and verify. You can use TLS with this proxy. If you wish to do so, make sure you add the proxy information to your secure virtual host configuration.
+>[!NOTE]
+>
+>The reason the proxy is not secured in this example is that it is easier to set up and verify. You can use TLS with this proxy. If you wish to do so, make sure you add the proxy information to your secure virtual host configuration.
 
 ### Set up a proxy for Apache 2.4 {#es-apache-proxy-24}
 
@@ -125,8 +127,3 @@ This section discusses how to specify who can access the Apache server.
    *  Ubuntu: `service apache2 restart`
 
 {% include config/es-verify-proxy-24.md %}
-
-{:.ref-header}
-Related topic
-
-[Configure search stopwords]({{page.baseurl}}/config-guide/elasticsearch/es-config-stopwords.html)
