@@ -34,7 +34,7 @@ Adobe Commerce and Magento Open Source require Elasticsearch or OpenSearch to be
 
 You can use the command line or the Admin to determine your catalog search engine:
 
-- Enter the `bin/magento config:show catalog/search/engine` command. The command returns a value of `mysql`, `elasticsearch` (which indicates Elasticsearch 2 is configured), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`, or a custom value, indicating you have installed a third-party search engine. A value of `elasticsearch7` indicates that either Elasticsearch 7 or OpenSearch is installed.
+- Enter the `bin/magento config:show catalog/search/engine` command. The command returns a value of `mysql`, `elasticsearch` (which indicates Elasticsearch 2 is configured), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`, or a custom value, indicating you have installed a third-party search engine. For versions earlier than 2.4.6, use the `elasticsearch7` value for the Elasticsearch 7 or OpenSearch engine. For version 2.4.6 and later, use the `opensearch` value for the OpenSearch engine.
 
 - From the Admin, check the value of the **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** field.
 
@@ -44,10 +44,10 @@ The following sections describe what actions you must take before upgrading to 2
 
 As of 2.4, MySQL is no longer a supported catalog search engine. You must install and configure Elasticsearch or OpenSearch before upgrading. Use the following resources to help guide you through this process:
 
-- [Install and configure Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html)
+- [Install and configure Elasticsearch or OpenSearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html)
 - [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
 - Configure [nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html) or [Apache](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html) to work with your search engine
-- [Configure Commerce to use Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) and reindex
+- [Configure Commerce to use Elasticsearch or OpenSearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) and reindex
 
 Some third-party catalog search engines run on top of the Adobe Commerce search engine. Contact your vendor to determine whether you must update your extension.
 
@@ -65,6 +65,8 @@ Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Develop
 
 OpenSearch is an open source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce and Magento Open Source introduce support for OpenSearch:
 
+- 2.4.6 (OpenSearch has its own module and separate settings)
+- 2.4.5
 - 2.4.4
 - 2.4.3-p2
 - 2.3.7-p3
@@ -73,7 +75,7 @@ You can [migrate from Elasticsearch to OpenSearch](opensearch-migration.md) only
 
 OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) to check which version of JDK is installed.
 
-[Configure Magento to use Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) describes the tasks you must perform after changing search engines.
+[Search Engine Configuration](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) describes the tasks you must perform after changing search engines.
 
 ### Third-party extensions
 
