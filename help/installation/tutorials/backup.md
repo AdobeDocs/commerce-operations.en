@@ -11,7 +11,7 @@ This command enables you to back up:
 *  The `pub/media` directory
 *  The database
 
-Backups are stored in the `var/backups` directory and can be restored at any time using the [magento setup:rollback]({{ page.baseurl }}/install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll) command.
+Backups are stored in the `var/backups` directory and can be restored at any time using the [magento setup:rollback](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
 
 After backing up, you can [roll back](#instgde-cli-uninst-roll) at a later time.
 
@@ -22,8 +22,6 @@ After backing up, you can [roll back](#instgde-cli-uninst-roll) at a later time.
 ## First steps {#instgde-cli-before}
 
 {% include install/first-steps-cli.md %}
-
-In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
 ## Enable backups
 

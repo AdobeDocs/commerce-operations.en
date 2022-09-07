@@ -21,7 +21,7 @@ sudo apt -y install nginx
 
 You can also [build nginx from source](https://www.armanism.com/blog/install-nginx-on-ubuntu)
 
-After completing the following sections and [installing Magento]({{page.baseurl }}/install-gde/prereq/nginx.html#install-magento2-ubuntu), we will use a sample configuration file to [configure nginx]({{page.baseurl }}/install-gde/prereq/nginx.html#configure-nginx-ubuntu).
+After completing the following sections and installing the application, we will use a sample configuration file to [configure nginx](#configure-nginx).
 
 ### Install and configure php-fpm
 
@@ -37,7 +37,7 @@ To install and configure `php-fpm`:
 
    >[!NOTE]
    >
-   >This command installs the latest available version of PHP 7.2.X. See [system requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported PHP versions.
+   >This command installs the latest available version of PHP 7.2.X. See [system requirements](../../system-requirements.md) for supported PHP versions.
 
 1. Open the `php.ini` files in an editor:
 
@@ -59,7 +59,7 @@ To install and configure `php-fpm`:
 
    >[!NOTE]
    >
-   >We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings]({{page.baseurl }}/install-gde/prereq/php-settings.html) for more information.
+   >We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings](../php-settings.md) for more information.
 
 1. Save and exit the editor.
 
@@ -71,19 +71,19 @@ To install and configure `php-fpm`:
 
 ### Install and configure MySQL
 
-Refer to [MySQL]({{page.baseurl }}/install-gde/prereq/mysql.html) for more information.
+Refer to [MySQL](../database/mysql.md) for more information.
 
 ### Install and configure Magento2 {#install-magento2-ubuntu}
 
 There are several ways to download Adobe Commerce and Magento Open Source, including:
 
-*  [Get the Composer metapackage]({{ page.baseurl }}/install-gde/composer.html)
+*  [Get the Composer metapackage](../../composer.md)
 
-*  [Clone the git repository]({{ page.baseurl }}/install-gde/prereq/dev_install.html)
+*  [Clone the git repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 For this example, we'll install using Composer and the command line.
 
-1. As the [file system owner]({{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html), log in to your application server.
+1. As the [file system owner](../file-system/overview.md), log in to your application server.
 
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot. For this example, we're using the Ubuntu default `/var/www/html`.
 
@@ -111,7 +111,7 @@ For this example, we'll install using Composer and the command line.
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   When prompted, enter your [authentication keys]({{ page.baseurl }}/install-gde/prereq/connect-auth.html). Your _public key_ is your username; your _private key_ is your password.
+   When prompted, enter your [authentication keys](../authentication-keys.md). Your _public key_ is your username; your _private key_ is your password.
 
 1. Set read-write permissions for the web server group before you install the application. This is necessary so that the command line can write files to the file system.
 
@@ -135,7 +135,7 @@ For this example, we'll install using Composer and the command line.
    chmod u+x bin/magento
    ```
 
-1. Install from the [command line]({{ page.baseurl }}/install-gde/install/cli/install-cli.html). This example assumes that the install directory is named `magento2ee`, the `db-host` is on the same machine (`localhost`), and that the `db-name`, `db-user`, and `db-password` are all `magento`:
+1. Install from the [command line](../../advanced.md). This example assumes that the install directory is named `magento2ee`, the `db-host` is on the same machine (`localhost`), and that the `db-name`, `db-user`, and `db-password` are all `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -170,7 +170,7 @@ For this example, we'll install using Composer and the command line.
    ./magento deploy:mode:set developer
    ```
 
-### Configure nginx {#configure-nginx-ubuntu}
+### Configure nginx
 
 We recommend configuring nginx using the `nginx.conf.sample` configuration file provided in the installation directory and an nginx virtual host.
 
@@ -226,7 +226,7 @@ These instructions assume you're using the Ubuntu default location for the nginx
 
 ### Verify the installation
 
-Open a web browser and navigate to your site's base URL to [verify the installation.]({{page.baseurl }}/install-gde/install/verify.html)
+Open a web browser and navigate to your site's base URL to [verify the installation](../../next-steps/verify.md).
 
 ## CentOS 7
 
@@ -252,7 +252,7 @@ systemctl start nginx
 systemctl enable nginx
 ```
 
-After completing the following sections and [installing Magento]({{page.baseurl }}/install-gde/prereq/nginx.html#install-magento2-centos), we'll use a sample configuration file to [configure nginx]({{page.baseurl }}/install-gde/prereq/nginx.html#configure-nginx-centos).
+After completing the following sections and installing the application, we'll use a sample configuration file to configure nginx.
 
 ### Install and configure php-fpm
 
@@ -278,7 +278,7 @@ Adobe Commerce and Magento Open Source require several [PHP](php-settings.html) 
 
    >[!NOTE]
    >
-   >We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings]({{page.baseurl }}/install-gde/prereq/php-settings.html) for more information.
+   >We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings](../php-settings.md) for more information.
 
 1. Uncomment the session path directory and set the path:
 
@@ -351,19 +351,19 @@ Adobe Commerce and Magento Open Source require several [PHP](php-settings.html) 
 
 ### Install and configure MySQL
 
-Refer to [MySQL]({{page.baseurl }}/install-gde/prereq/mysql.html) for more information.
+Refer to [MySQL](..//database/mysql.md) for more information.
 
-### Install and configure Magento2 {#install-magento2-centos}
+### Install and configure
 
 There are several ways to download the Adobe Commerce and Magento Open Source, including:
 
-*  [Get the Composer metapackage]({{ page.baseurl }}/install-gde/composer.html)
+*  [Get the Composer metapackage](../../composer.md)
 
-*  [Clone the git repository]({{ page.baseurl }}/install-gde/prereq/dev_install.html)
+*  [Clone the git repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 For this example, we'll install using Composer and the command line.
 
-1. As the [file system owner]({{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html), log in to your application server.
+1. As the [file system owner](../file-system/overview.md), log in to your application server.
 
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot. For this example, we're using the Ubuntu default `/var/www/html`.
 
@@ -391,7 +391,7 @@ For this example, we'll install using Composer and the command line.
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   When prompted, enter your [authentication keys]({{ page.baseurl }}/install-gde/prereq/connect-auth.html). Your _public key_ is your username; your _private key_ is your password.
+   When prompted, enter your [authentication keys](../authentication-keys.md). Your _public key_ is your username; your _private key_ is your password.
 
 1. Set read-write permissions for the web server group before you install the application. This is necessary so that the and command line can write files to the file system.
 
@@ -415,7 +415,7 @@ For this example, we'll install using Composer and the command line.
    chmod u+x bin/magento
    ```
 
-1. Install from the [command line]({{ page.baseurl }}/install-gde/install/cli/install-cli.html). This example assumes that the install directory is named `magento2ee`, the `db-host` is on the same machine (`localhost`), and that the `db-name`, `db-user`, and `db-password` are all `magento`:
+1. Install from the [command line](../../advanced.md). This example assumes that the install directory is named `magento2ee`, the `db-host` is on the same machine (`localhost`), and that the `db-name`, `db-user`, and `db-password` are all `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -564,4 +564,4 @@ To configure SELinux and firewalld:
 
 ### Verify the installation
 
-Open a web browser and navigate to your site's base URL to [verify the installation.]({{page.baseurl }}/install-gde/install/verify.html)
+Open a web browser and navigate to your site's base URL to [verify the installation](../../next-steps/verify.md).

@@ -15,7 +15,7 @@ There are two types of file system owners:
 
 -  **Shared hosting with a single user**
 
-   Shared hosting providers enable you to log in to the application server as one user. As a single user, you can log in, transfer files using FTP, and run the web server. You have the option of setting a [`umask`](#restrict) to further restrict access, particularly in a production environment.
+   Shared hosting providers enable you to log in to the application server as one user. As a single user, you can log in, transfer files using FTP, and run the web server. You have the option of setting a [`umask`](#restrict-access-with-a-umask) to further restrict access, particularly in a production environment.
 
 -  **Private hosting with two users**
 
@@ -25,7 +25,7 @@ There are two types of file system owners:
 
     -  The _command-line user_ runs cron jobs and command-line utilities.
 
-   Both users require the same level of permissions to the file system, so it is best to use a [shared group][] and set a [`umask`](#restrict).
+   Both users require the same level of permissions to the file system, so it is best to use a [shared group](configure-permissions.md#set-ownership-and-permissions-for-two-users) and set a [`umask`](#restrict-access-with-a-umask).
 
 ### Restrict access with a umask {#restrict}
 
@@ -43,7 +43,7 @@ For example:
 
 -  **664 for files**—Writable by the user, writable by the group, and read-only for everyone else.
 
-For more information about creating a `magento_umask` file, see [Optionally set a umask]({{ page.baseurl }}/install-gde/install/post-install-umask.html).
+For more information about creating a `magento_umask` file, see [Optionally set a umask](../../next-steps/set-umask.md).
 
 ## Permissions, ownership, and application modes
 
@@ -53,16 +53,12 @@ We recommend different permissions and ownership when you use the different Adob
 - Developer
 - Production
 
-See [About modes][modes] in the _Configuration guide_.
+See [About modes](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) in the _Configuration guide_.
 
-We further discuss permissions recommendations in [File systems access permissions][config-file-access] in the _Configuration guide_.
+We further discuss permissions recommendations in [File systems access permissions](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) in the _Configuration guide_.
 
 >[!TIP]
 >
->Before you install Adobe Commerce or Magento Open Source, review [Set pre-installation ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-system-perms.html).
+>Before you install Adobe Commerce or Magento Open Source, review [Configure file ownership and permissions](configure-permissions.md).
 
-<!-- link definitions -->
-
-[config-file-access]: {{page.baseurl}}/config-guide/prod/prod_file-sys-perms.html
-[modes]: {{page.baseurl}}/config-guide/bootstrap/magento-modes.html
-[shared group]: {{page.baseurl}}/install-gde/prereq/file-system-perms.html#perms-private
+[shared group]

@@ -9,7 +9,7 @@ This topic discusses how to set required [PHP](https://glossary.magento.com/php)
 
 >[!NOTE]
 >
->See [system requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported versions of PHP.
+>See [system requirements](../system-requirements.md) for supported versions of PHP.
 
 ## Verify PHP is installed {#centos-verify-php}
 
@@ -101,7 +101,7 @@ This section discusses how you find the configuration files necessary to update 
 
 ### Find `php.ini` configuration file
 
-To find the web server configuration, run a [`phpinfo.php` file]({{page.baseurl}}/install-gde/prereq/optional.html#install-optional-phpinfo) in your web browser and look for the `Loaded Configuration File` as follows:
+To find the web server configuration, run a [`phpinfo.php` file](optional-software.md#create-phpinfophp) in your web browser and look for the `Loaded Configuration File` as follows:
 
 ![PHP info page](../../assets/installation/config_phpini-webserver.png)
 

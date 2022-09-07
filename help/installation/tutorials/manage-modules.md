@@ -9,8 +9,6 @@ description:
 
 {% include install/first-steps-cli.md %}
 
-In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
-
 ## Prerequisites {#instgde-cli-subcommands-enable-disable-prereq}
 
 This command has no prerequisites.
@@ -46,11 +44,11 @@ where
 *  `<module-list>` is a space-delimited list of modules to enable or disable. If any [module](https://glossary.magento.com/module) name contains special characters, enclose the name in either single or double quotes.
 *  `--all` to enable or disable all modules at the same time.
 *  `-f` or `--force` to force a module to be enabled or disabled despite dependencies. Before you use this option, see [About enabling and disabling modules](#instgde-cli-subcommands-enable-modules).
-*  `-c` or `--clear-static-content` cleans [generated static view files]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-static-view.html#config-cli-static-overview).
+*  `-c` or `--clear-static-content` cleans [generated static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
    Failure to clear static view files might result in issues if there are multiple files with the same name and you do not clear all of them.
 
-   In other words, because of the [static file fallback]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-static-view.html) rules, if you do not clear static files and there is more than one file named `logo.svg` that are different, fallback might cause the wrong file to display.
+   In other words, because of the [static file fallback](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html) rules, if you do not clear static files and there is more than one file named `logo.svg` that are different, fallback might cause the wrong file to display.
 
 For example, to disable the Weee module, enter:
 

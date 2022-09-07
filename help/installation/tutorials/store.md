@@ -9,14 +9,12 @@ description:
 
 {% include install/first-steps-cli.md %}
 
-In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
-
 ## Prerequisites {#instgde-cli-subcommands-store-prereq}
 
-Before you run this command, you must do all of the following *or* you must [install the application]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html):
+Before you run this command, you must do all of the following *or* you must [install the application](../advanced.md):
 
-*  [Create or update the deployment configuration]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-deployment.html)
-*  [Create the database schema]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-db.html)
+*  [Create or update the deployment configuration](deployment.md)
+*  [Create the database schema](database.md)
 
 {% include install/fully-secure.md %}
 

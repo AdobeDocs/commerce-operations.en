@@ -8,25 +8,24 @@ description:
 ## First steps {#instgde-cli-before}
 
 {% include install/first-steps-cli.md %}
-In addition to the command arguments discussed here, see [Common arguments][].
 
 ## Prerequisites {#instgde-install-magento-prereq}
 
-Before you use these commands, you must [install the application][].
+Before you use these commands, you must [install the application](../tutorials/install.md).
 
 ## Update the application {#instgde-install-magento-update}
 
 To update the application:
 
 *  If you installed the software from an archive or if you used 'composer-create-project', see the [Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
-*  If you are a contributing developer (that is, you used `git clone`), see [Update the application][].
+*  If you are a contributing developer (that is, you used `git clone`), see [Update the application](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html).
 
 ## Reinstall the application {#instgde-install-magento-reinstall}
 
 The way you reinstall the application from the command line depends on your role:
 
-*  If you installed the software from an archive or if you used 'composer-create-project', see [Reinstall the application][].
-*  If you're a contributing developer (that is, you started using `git clone`), see [Reinstall the application][].
+*  If you installed the software from an archive or if you used 'composer-create-project', see [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+*  If you're a contributing developer (that is, you started using `git clone`), see [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 
 ## Uninstall the application {#instgde-install-uninstall}
 
@@ -60,11 +59,4 @@ bin/magento setup:upgrade --keep-generated
 
 ## Install the application
 
-*  [Install using the command line][]
-
-<!-- Link Definitions -->
-[Update the application]: https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html
-[install the application]: {{ page.baseurl }}/install-gde/install/cli/install-cli-install.html
-[Common arguments]: {{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common
-[Reinstall the application]: {{ page.baseurl }}/install-gde/install/cli/dev_reinstall.html
-[Install using the command line]: {{ page.baseurl }}/install-gde/install/cli/install-cli.html
+*  [Install using the command line](../advanced.md)

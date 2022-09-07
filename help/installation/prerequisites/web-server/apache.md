@@ -7,7 +7,7 @@ description:
 
 Adobe Commerce supports Apache 2.4.x.
 
-## Important: Apache required directives {#apache-required-directives}
+## Important: Apache required directives
 
 1. Set `AllowEncodedSlashes` in the server config (globally) or in the virtual host configurations to avoid decoding the encoded slashes that may cause issues for URLs. For instance, when retrieving products with a slash in the SKU via the API, you will not want that converted. The sample block is not complete and other directives will be required.
 
@@ -18,7 +18,7 @@ Adobe Commerce supports Apache 2.4.x.
    </VirtualHost>
    ```
 
-## Important: Apache rewrites and .htaccess {#apache-help-rewrite}
+## Important: Apache rewrites and .htaccess
 
 This topic discusses how to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
@@ -30,7 +30,7 @@ Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to pr
 >
 >Failure to enable these settings typically results in styles not displaying on the storefront or Admin.
 
-## Apache required modules {#apache-required-modules}
+## Apache required modules
 
 Adobe Commerce and Magento Open Source require the following Apache modules to be installed:
 
@@ -41,7 +41,7 @@ Adobe Commerce and Magento Open Source require the following Apache modules to b
 *  [mod_security.c](https://modsecurity.org)
 *  [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
-## Verify the Apache version {#install-prereq-apache-verify}
+## Verify the Apache version
 
 To verify the Apache version you're currently running, enter:
 
@@ -57,17 +57,17 @@ Server built: Jul 22 2020 14:35:32
 ```
 
 *  If Apache is *not* installed, see:
-    *  [Installing or upgrading Apache on Ubuntu](#install-prereq-apache-ubuntu)
-    *  [Installing Apache on CentOS](#install-prereq-apache-centos)
+    *  [Installing or upgrading Apache on Ubuntu](#installing-apache-on-ubuntu)
+    *  [Installing Apache on CentOS](#installing-apache-on-centos)
 
-## Installing or upgrading Apache on Ubuntu {#install-prereq-apache-ubuntu}
+## Installing or upgrading Apache on Ubuntu
 
 The following sections discusses how to install or upgrade Apache:
 
 *  Install Apache
 *  Upgrade to Apache 2.4 on Ubuntu to use PHP 7.4.
 
-### Installing Apache on Ubuntu {#install-prereq-apache-ubuntu-install}
+### Installing Apache on Ubuntu
 
 {% collapsible Click to show/hide content %}
 To install the default version of Apache:
@@ -97,7 +97,7 @@ To install the default version of Apache:
 
 {% include install/allowoverrides24.md %}
 
-### Upgrading Apache on Ubuntu {#install-prereq-apache-ubuntu-upgrade}
+### Upgrading Apache on Ubuntu
 
 To upgrade to Apache 2.4:
 
@@ -141,17 +141,17 @@ To upgrade to Apache 2.4:
 
 1. Continue with the next section.
 
-### Enable rewrites and .htaccess for Apache 2.4 {#enable-rewr-apache24-upgr-ubuntu12}
+### Enable rewrites and .htaccess for Apache 2.4
 
 {% include install/allowoverrides24.md %}
 
-## Installing Apache on CentOS {#install-prereq-apache-centos}
+## Installing Apache on CentOS
 
 Adobe Commerce and Magento Open Source require Apache use server rewrites. You must also specify the type of directives that can be used in `.htaccess`, which the application uses to specify rewrite rules.
 
 Installing and configuring Apache is basically a three-step process: install the software, enable rewrites, and specify `.htaccess` directives.
 
-### Installing Apache {#apache-install-centos}
+### Installing Apache
 
 1. Install Apache 2.4 if you have not already done so.
 
@@ -265,11 +265,11 @@ Installing and configuring Apache is basically a three-step process: install the
    service apache2 restart
    ```
 
-## Solving 403 (Forbidden) errors {#apache-error}
+## Solving 403 (Forbidden) errors
 
 If you encounter 403 Forbidden errors when trying to access the site, you can update your Apache configuration or your virtual host configuration to enable visitors to the site as discussed in one of the following sections:
 
-### Solving 403 Forbidden errors for Apache 2.4 {#apache-error-2-4}
+### Solving 403 Forbidden errors for Apache 2.4
 
 To enable website visitors to access your site, use one of the [Require directives](https://httpd.apache.org/docs/2.4/howto/access.html).
 

@@ -9,7 +9,7 @@ We strongly recommend you install NTP to ensure that cron-related tasks perform 
 
 The other optional utilities discussed in this topic might assist you with your installation; however, they are not required to install or use Magento.
 
-## Installing and Configuring Network Time Protocol (NTP) {#install-optional-ntp}
+## Installing and Configuring Network Time Protocol (NTP)
 
 [NTP](https://www.ntp.org/) enables servers to synchronize their system clocks using [globally available pool servers](https://www.ntppool.org/en/). We recommend you use NTP servers you trust, whether they are dedicated hardware solutions your internal network or external, public servers.
 
@@ -21,7 +21,7 @@ See one of the following sections:
 *  [Install and configure NTP on CentOS](#install-optional-ntp-centos)
 *  [Use NTP pool servers](#install-optional-ntp-servers)
 
-### Install and configure NTP on Ubuntu {#install-optional-ntp-ubuntu}
+### Install and configure NTP on Ubuntu
 
 Enter the following command to install NTP:
 
@@ -57,7 +57,7 @@ To install and configure NTP:
 
 1. Continue with the next section.
 
-### Use NTP pool servers {#install-optional-ntp-servers}
+### Use NTP pool servers
 
 Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recommends you use [pool servers](https://www.ntppool.org/en/) that are close to your servers' time zone as discussed on the [NTP pool project help page](https://www.ntppool.org/en//use.html). If you have a private NTP server that is available to all hosts in your deployment, you can use that server instead.
 
@@ -97,7 +97,7 @@ Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recomm
 
    If all else fails, try rebooting the server.
 
-## Create phpinfo.php {#install-optional-phpinfo}
+## Create phpinfo.php
 
 [`phpinfo.php`](https://php.net/manual/en/function.phpinfo.php) displays a large amount of information about [PHP](https://glossary.magento.com/php) and its extensions.
 
@@ -131,7 +131,7 @@ If a 404 (Not Found) error displays, check the following:
 
    [Help for CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
 
-## phpmyadmin {#install-optional-phpmyadmin}
+## phpmyadmin
 
 `phpmyadmin` is an easy-to-use, free database administration utility. You can use it to check and manipulate the contents of your database. You must log in to `phpmyadmin` as the MySQL database administrative user.
 

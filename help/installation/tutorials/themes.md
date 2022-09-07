@@ -11,7 +11,7 @@ Before you use this command, you must know the relative path to your theme. Them
 
 For example, the path to the Luma [theme](https://glossary.magento.com/theme) provided with Adobe Commerce and Magento Open Source is `frontend/Magento/luma`.
 
-For more information about themes, see [theme structure]({{ page.baseurl }}/frontend-dev-guide/themes/theme-structure.html).
+For more information about themes, see [theme structure](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-structure.html).
 
 ## Overview of uninstalling themes {#instgde-install-uninst-theme-over}
 
@@ -22,13 +22,11 @@ This command uninstalls *only* themes that are specified in `composer.json`; in 
 *  Updating the `parent` node information in `theme.xml` to remove references to the theme.
 *  Removing theme code from the file system.
 
-   [More information about theme inheritance]({{ page.baseurl }}/frontend-dev-guide/themes/theme-inherit.html).
+   [More information about theme inheritance](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-inherit.html).
 
 ## First steps {#instgde-cli-before}
 
 {% include install/first-steps-cli.md %}
-
-In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
 ## Uninstall themes {#instgde-install-uninst-theme-uninst}
 
@@ -42,7 +40,7 @@ where
 
 *  `{theme path}` is the relative path to the theme, starting with the area name. For example, the path to the Blank theme supplied with Adobe Commerce and Magento Open Source is `frontend/Magento/blank`.
 *  `--backup-code` backs up the codebase as discussed in the paragraphs that follow.
-*  `--clear-static-content` cleans generated [static view files]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-static-view.html#config-cli-static-overview), which is necessary to cause static view files to display properly.
+*  `--clear-static-content` cleans generated [static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html), which is necessary to cause static view files to display properly.
 
 The command performs the following tasks:
 
@@ -59,13 +57,13 @@ The command performs the following tasks:
 
    The backup file name is `var/backups/<timestamp>_filesystem.tgz`
 
-   You can restore backups at any time using the [magento setup:rollback]({{ page.baseurl }}/install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll) command.
+   You can restore backups at any time using the [magento setup:rollback](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
 
 1. Removes themes from the `theme` database table.
 1. Remove themes from code base using `composer remove`.
 1. Cleans the [cache](https://glossary.magento.com/cache).
 1. Cleans generated classes
-1. If `--clear-static-content` is specified, cleans [generated static view files]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-static-view.html#config-cli-static-overview).
+1. If `--clear-static-content` is specified, cleans [generated static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 For example, if you attempt to uninstall a theme that another theme depends on, the following message displays:
 

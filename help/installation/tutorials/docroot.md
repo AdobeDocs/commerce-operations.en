@@ -21,7 +21,7 @@ This topic describes how to change the Apache docroot on an existing instance to
 
 ## A note about nginx
 
-If you are using [nginx]({{ page.baseurl }}/install-gde/prereq/nginx.html) and the [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) file included in the installation directory, you are probably already serving files from the `pub/` directory.
+If you are using [nginx](../prerequisites/web-server/nginx.md) and the [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) file included in the installation directory, you are probably already serving files from the `pub/` directory.
 
 When used in your server block that defines your site, the `nginx.conf.sample` configuration overrides your server's docroot settings to serve files from Magento's `pub/` directory. For example, see the last line in the following configuration:
 
@@ -54,7 +54,7 @@ To complete this tutorial, you will need access to a working installation runnin
 
 >[!NOTE]
 >
->Refer to [Prerequisites]({{ page.baseurl }}/install-gde/prereq/prereq-overview.html) and the [Installation Guide]({{ page.baseurl }}/install-gde/bk-install-guide.html) for more information.
+>Refer to [Prerequisites](../prerequisites/overview.md) and the [Installation Guide](../overview.md) for more information.
 
 ## 1. Edit your server configuration
 
@@ -126,11 +126,11 @@ The following node needs to be appended to the `env.php` file.
 ]
 ```
 
-Refer to the [env.php reference]({{ page.baseurl }}/config-guide/prod/config-reference-envphp.html) for more information.
+Refer to the [env.php reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) for more information.
 
 ## 4. Switch modes
 
-[Application modes]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html), which include `production` and `developer`, are designed to improve security and make development easier. As the names suggest, you should switch to `developer` mode when extending or customizing the application and switch to `production` mode when running in a live environment.
+[Application modes](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html), which include `production` and `developer`, are designed to improve security and make development easier. As the names suggest, you should switch to `developer` mode when extending or customizing the application and switch to `production` mode when running in a live environment.
 
 Switching between modes is an important step in verifying that your server configuration is working properly. You can switch between modes using the CLI tool:
 

@@ -9,11 +9,11 @@ This section discusses how to uninstall one or more language packages, optionall
 
 This command uninstalls *only* language packages that are specified in `composer.json`; in other words, language packages that are provided as [Composer](https://glossary.magento.com/composer) packages. If your [language package](https://glossary.magento.com/language-package) is not a Composer package, you must uninstall it manually by removing language package code from the file system.
 
-You can restore backups at any time using the [magento setup:rollback]({{ page.baseurl }}/install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll) command.
+You can restore backups at any time using the [magento setup:rollback](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
 
 ## First steps {#instgde-cli-before}
+
 {% include install/first-steps-cli.md %}
-In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
 ## Uninstall language packages {#instgde-cli-uninst-lgpk-uninst}
 

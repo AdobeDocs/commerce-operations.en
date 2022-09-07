@@ -108,5 +108,5 @@ Adobe Commerce and Magento Open Source require the following system tools for so
 [PHP OPcache]: https://php.net/manual/en/intro.opcache.php
 [PHP documentation]: prereq/php-settings.html
 [PHP OPcache documentation]: https://php.net/manual/en/opcache.setup.php
-[Required PHP settings]: {{ page.baseurl }}/install-gde/prereq/php-settings.html
+[Required PHP settings]: prerequisites/php-settings.md
 [security certificate]: https://glossary.magento.com/security-certificate

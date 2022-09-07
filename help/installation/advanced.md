@@ -7,19 +7,18 @@ description:
 
 >[!TIP]
 >
->Totally lost? Need a helping hand? Try our [Quick start install]({{ page.baseurl }}/install-gde/composer.html) or [Contributor install]({{ page.baseurl }}/install-gde/contrib-git.html) guides.
-
+>Totally lost? Need a helping hand? Try our [Quick start install](composer.md) or [Contributor install](https://developer.adobe.com/commerce/contributor/guides/install/) guides.
 
 >[!NOTE]
 >
->If you chose to enable SELinux, see [SELinux and iptables]({{ page.baseurl }}/install-gde/prereq/security.html).
+>If you chose to enable SELinux, see [SELinux and iptables](prerequisites/security.md).
 
 
 ## Command-line interface (CLI)
 
 {% include install/new-cli-intro.md %}
 
-This topic discusses installing the Adobe Commerce or Magento Open Source software using the CLI. For information about configuration, see the [Configuration Guide]({{ page.baseurl }}/config-guide/bk-config-guide.html).
+This topic discusses installing the Adobe Commerce or Magento Open Source software using the CLI. For information about configuration, see the [Configuration Guide](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html).
 
 The installer is designed to be run multiple times if necessary so you can:
 
@@ -34,15 +33,15 @@ The installer is designed to be run multiple times if necessary so you can:
 
 Before you begin, complete the following steps:
 
-*  Verify that your system meets the requirements discussed in [system requirements]({{ page.baseurl }}/install-gde/system-requirements.html).
+*  Verify that your system meets the requirements discussed in [system requirements](system-requirements.md).
 
-*  Complete all [prerequisite]({{ page.baseurl }}/install-gde/prereq/prereq-overview.html) tasks.
+*  Complete all [prerequisite](prerequisites/overview.md) tasks.
 
-*  Complete the first installation steps. See [Your install or upgrade path]({{ page.baseurl }}/install-gde/bk-install-guide.html).
+*  Complete the first installation steps. See [your install or upgrade path](overview.md).
 
-*  After you log in to the application server, [switch to the file system owner]({{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html).
+*  After you log in to the application server, [switch to the file system owner](prerequisites/file-system/overview.md).
 
-*  Review the [Get started with the command-line installation]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html) overview.
+*  Review the [installation quick start](composer.md) overview.
 
 >[!NOTE]
 >
@@ -62,7 +61,7 @@ You can run the installer multiple times with different options to complete inst
 >By default, the installer does not overwrite the database if you install the software in the same database instance. You can use the optional `cleanup-database` parameter to change this behavior.
 
 
-See also [Update, reinstall, uninstall]({{ page.baseurl }}/install-gde/install/cli/install-cli-uninstall.html).
+See also [Update, reinstall, uninstall](tutorials/uninstall.md).
 
 {% include install/fully-secure.md %}
 
@@ -78,7 +77,7 @@ You can run the following commands to find values for some required arguments:
 
 >[!NOTE]
 >
->If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies]({{ page.baseurl }}/install-gde/install/prepare-install.html).
+>If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 
 ## Install from the command line
 
@@ -179,7 +178,7 @@ The following tables provide many but not all available install parameters. For 
 
 >[!NOTE]
 >
->To enable or disable modules after installing Magento, see [Enable and disable modules]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html).
+>To enable or disable modules after installing Magento, see [Enable and disable modules](tutorials/manage-modules.md).
 
 
 {% include install/sens-data.md %}
@@ -256,7 +255,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 ```
 
 After installation you can create an admin user using the `admin:user:create` command:
-[Create or edit an administrator]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-admin.html#create-or-edit-an-administrator)
+[Create or edit an administrator](tutorials/admin.md#create-or-edit-an-administrator)
 
 #### Example 3—Install with additional options
 

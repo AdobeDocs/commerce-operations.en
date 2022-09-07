@@ -3,13 +3,13 @@ title: MySQL
 description:
 ---
 
-## General MySQL guidelines {#instgde-prereq-mysql-intro}
+## General MySQL guidelines
 
-See [System Requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported versions of MySQL.
+See [System Requirements](../../system-requirements.md) for supported versions of MySQL.
 
 Adobe _strongly_ recommends you observe the following standard when you set up your database:
 
-*  Adobe Commerce and Magento Open Source use [MySQL database triggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) to improve database access during reindexing. These get created when the indexer mode is set to [schedule]({{page.baseurl}}/config-guide/cli/config-cli-subcommands-index.html#configure-indexers-1). The application does not support any custom triggers in the database because custom triggers can introduce incompatibilities with future Adobe Commerce and Magento Open Source versions.
+*  Adobe Commerce and Magento Open Source use [MySQL database triggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) to improve database access during reindexing. These get created when the indexer mode is set to [schedule](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers). The application does not support any custom triggers in the database because custom triggers can introduce incompatibilities with future Adobe Commerce and Magento Open Source versions.
 *  Familiarize yourself with [these potential MySQL trigger limitations](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) before you continue.
 *  To enhance your database security posture, enable the [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL mode to prevent storing invalid data values, which might cause unwanted database interactions.
 *  If you use MySQL database replication, be aware that Adobe Commerce and Magento Open Source do _not_ support MySQL statement-based replication. Make sure you use _only_ [row-based replication](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.htmll).
@@ -20,9 +20,9 @@ Adobe _strongly_ recommends you observe the following standard when you set up y
 
 >[!NOTE]
 >
->If your web server and database server are on different hosts, perform the tasks discussed in this topic on the database server host then see [Set up a remote MySQL database connection]({{page.baseurl }}/install-gde/prereq/mysql_remote.html).
+>If your web server and database server are on different hosts, perform the tasks discussed in this topic on the database server host then see [Set up a remote MySQL database connection](mysql-remote.md).
 
-## Installing MySQL on Ubuntu {#instgde-prereq-mysql-ubuntu}
+## Installing MySQL on Ubuntu
 
 Adobe Commerce and Magento Open Source 2.4 require a clean installation of MySQL 8.0. Follow the links below for instructions on installing MySQL on your machine.
 
@@ -33,11 +33,11 @@ If you expect to import large numbers of products into Magento, you can increase
 
 >[!NOTE]
 >
->The default value applies to Adobe Commerce on cloud infrastructure *and* on-premises projects. Adobe Commerce on cloud infrastructure Pro customers must open a support ticket to increase the `max_allowed_packet` value. Adobe Commerce on cloud infrastructure Starter customers can increase the value by updating the configuration in the `/etc/mysql/mysql.cnf` file.
+>The default value applies to Adobe Commerce on cloud infrastructure _and_ on-premises projects. Adobe Commerce on cloud infrastructure Pro customers must open a support ticket to increase the `max_allowed_packet` value. Adobe Commerce on cloud infrastructure Starter customers can increase the value by updating the configuration in the `/etc/mysql/mysql.cnf` file.
 
 {% include install/mysql_max-allowed-packet-ubuntu.md %}
 
-Then, [Configure the database instance](#instgde-prereq-mysql-config).
+Then, [Configure the database instance](#configuring-the-database-instance).
 
 ## MySQL 8 changes
 
@@ -65,7 +65,7 @@ Describe admin_user at mysql 8.19
 | logdate | timestamp | YES | | NULL | |
 | lognum | smallint unsigned | NO | | 0 | |
 
-With the exception of *TINYINT(1)*, all integer padding (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) should be removed from the `db_schema.xml` file.
+With the exception of _TINYINT(1)_, all integer padding (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) should be removed from the `db_schema.xml` file.
 
 For more information, see [https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature](
 https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
@@ -119,7 +119,7 @@ To properly update MySQL from version 5.7 to version 8, you must follow these st
    bin/magento maintenance:disable
    ```
 
-## Configuring the database instance {#instgde-prereq-mysql-config}
+## Configuring the database instance
 
 This section discusses how to create a new database instance for Magento. Although a new database instance is recommended, you can optionally install Adobe Commerce or Magento Open Source with an existing database instance.
 
@@ -161,11 +161,11 @@ To configure a MySQL database instance:
 
    If the MySQL monitor displays, you created the database properly. If an error displays, repeat the preceding commands.
 
-1. If your web server and database server are on different hosts, perform the tasks discussed in this topic on the database server host then see [Set up a remote MySQL database connection]({{page.baseurl }}/install-gde/prereq/mysql_remote.html).
+1. If your web server and database server are on different hosts, perform the tasks discussed in this topic on the database server host then see [Set up a remote MySQL database connection](mysql-remote.md).
 
    We recommend you configure your database instance as appropriate for your business. When configuring your database, please keep the following in mind:
 
-   *  Indexers require higher `tmp_table_size` and `max_heap_table_size` values (e.g., 64M). If you configure the `batch_size` parameter, you can adjust that value along with the table size settings to improve indexer performance. Refer to the [Optimization Guide]({{page.baseurl }}/performance-best-practices/configuration.html) for more information.
+   *  Indexers require higher `tmp_table_size` and `max_heap_table_size` values (e.g., 64M). If you configure the `batch_size` parameter, you can adjust that value along with the table size settings to improve indexer performance. Refer to the [Optimization Guide](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html) for more information.
 
    *  For optimal performance, make sure all MySQL and Adobe Commerce or Magento Open Source index tables can be kept in memory (for example, configure `innodb_buffer_pool_size`).
 

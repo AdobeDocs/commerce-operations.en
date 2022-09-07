@@ -5,26 +5,26 @@ description:
 
 # Search engine overview
 
-As of Adobe Commerce and Magento Open Source 2.4, all installations must be configured to use [Elasticsearch][] or [OpenSearch][] as the [catalog](https://glossary.magento.com/catalog) search solution.
+As of Adobe Commerce and Magento Open Source 2.4, all installations must be configured to use [Elasticsearch](https://www.elastic.co) or [OpenSearch](https://opensearch.org/) as the [catalog](https://glossary.magento.com/catalog) search solution.
 
 >[!NOTE]
 >
->OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. [Migrate from Elasticsearch to OpenSearch][] provides guidance on switching to OpenSearch.
+>OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. [Migrate from Elasticsearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) provides guidance on switching to OpenSearch.
 
-## Supported versions {#es-spt-versions}
+## Supported versions
 
 You must install and configure either Elasticsearch or OpenSearch before installing Adobe Commerce or Magento Open Source 2.4.4.
 
-Refer to the [System Requirements][] for specific version information.
+Refer to the [System Requirements](../../system-requirements.md) for specific version information.
 
-## Recommended configuration {#es-arch}
+## Recommended configuration
 
 We recommend the following:
 
-*  [Configure nginx for your search engine][]
-*  [Configure Apache for your search engine][]
+*  [Configure nginx for your search engine](configure-nginx.md)
+*  [Configure Apache for your search engine](configure-apache.md)
 
-## Installation location {#es-host}
+## Installation location
 
 All of the following tasks we discuss assume you have configured your system this way.
 
@@ -34,7 +34,7 @@ The preceding diagram shows:
 
 *  The Commerce application and the search engine are installed on different hosts.
 
-   Running on separate hosts requires proxying to work. (Clustering the search engine is beyond the scope of this guide, but you can find more information in the [Elasticsearch clustering documentation][].)
+   Running on separate hosts requires proxying to work. (Clustering the search engine is beyond the scope of this guide, but you can find more information in the [Elasticsearch clustering documentation](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 *  Each host has its own web server; the web servers do not have to be the same.
 
@@ -58,22 +58,22 @@ Search requests are processed as follows:
 
 1. Communication returns along the same route, with the Elasticsearch web server acting as a secure reverse proxy.
 
-## Prerequisites {#es-prereq}
+## Prerequisites
 
 The tasks discussed in this section require the following:
 
 *  [Firewall and SELinux](#firewall-selinux)
 *  [Install the Java Software Development Kit (JDK)](#prereq-java)
-*  [Install Elasticsearch](#es-install-es7)
-*  [Upgrading Elasticsearch](#es-upgrade6)
+*  [Install the search engine](#install-the-search-engine)
+*  [Upgrading Elasticsearch](#upgrading-elasticsearch)
 
 {% include config/solr-elastic-selinux.md %}
 
 {% include config/install-java8.md %}
 
-### Install the search engine  {#es-install-es7}
+### Install the search engine
 
-Follow [Installing Elasticsearch][] or [Install and configure OpenSearch][] for your platform-specific steps.
+Follow [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) or [Install and configure OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) for your platform-specific steps.
 
 To verify that Elasticsearch is working, enter the following command on the server on which it is running:
 
@@ -98,37 +98,12 @@ curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
-## Upgrading Elasticsearch {#es-upgrade6}
+## Upgrading Elasticsearch
 
-Refer to [Upgrading Elasticsearch][] for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
+Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
 Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](#prereq-java) to check which version of JDK is installed.
 
-## Additional resources {#es-resources}
+## Additional resources
 
-For additional information, see [Elasticsearch documentation][]
-
-### Next
-
-*  [Configure nginx for your search engine][]
-*  [Configure nginx for your search engine][]
-
-<!-- Link Definitions -->
-[Configure nginx for your search engine]: {{page.baseurl}}/install-gde/prereq/es-config-nginx.html
-[Configure Apache for your search engine]: {{page.baseurl}}/install-gde/prereq/es-config-apache.html
-[Configure search stopwords]: {{page.baseurl}}/config-guide/elasticsearch/es-config-stopwords.html
-[Migrate from Elasticsearch to OpenSearch]: https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html
-[Elasticsearch]: https://www.elastic.co
-[OpenSearch]: https://opensearch.org/
-[Elasticsearch clustering documentation]: https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html
-[Elasticsearch Ubuntu documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
-[Configuring Elasticsearch]: https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html
-[Upgrading Elasticsearch]: https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html
-[Full cluster restart upgrade]: https://www.elastic.co/guide/en/elasticsearch/reference/current/restart-upgrade.html
-[Elasticsearch documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-[OpenSearch documentation]: https://opensearch.org/docs/latest/opensearch/index/
-[Installing Elasticsearch]: https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html
-[Installing OpenSearch]: https://opensearch.org/docs/latest/opensearch/install/index/
-[System Requirements]: {{page.baseurl}}/install-gde/system-requirements.html
-[OpenSearch]: https://opensearch.org/
-[Install and configure OpenSearch]: https://opensearch.org/docs/latest/opensearch/install/index/
+For additional information, see [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).

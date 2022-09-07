@@ -5,27 +5,19 @@ description:
 
 # Uninstall modules
 
-## Prerequisites {#instgde-cli-uninst-prereq}
-
-Before you use this command, you must [install the application]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html).
-
-## Overview of uninstalling modules {#instgde-cli-uninst-mod-over}
-
 This section discusses how to uninstall one or more modules. During uninstallation, you can optionally remove the modules' code, database schema, and database data. You can create backups first so you can recover the data at a later time.
 
-You should uninstall a module only if you're certain you won't use it. Instead of uninstalling a module, you can disable it as discussed in [Enable or disable modules]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html).
+You should uninstall a module only if you're certain you won't use it. Instead of uninstalling a module, you can disable it as discussed in [Enable or disable modules](manage-modules.md).
 
 >[!NOTE]
 >
->This command checks _only_ dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html) non-Composer modules.
+>This command checks _only_ dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable](manage-modules.md) non-Composer modules.
 
-## First steps {#instgde-cli-before}
+## First steps
 
 {% include install/first-steps-cli.md %}
 
-In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
-
-## Uninstall modules {#instgde-cli-uninst-mod-uninst}
+## Uninstall modules
 
 Command usage:
 
@@ -61,7 +53,7 @@ The module uninstall command performs the following tasks:
    For each specified module to uninstall, invokes the `uninstall` method in its `Uninstall` class. This class must inherit from [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
 1. Removes the specified modules from the `setup_module` database table.
-1. Removes the specified modules from the module list in the [deployment configuration]({{ page.baseurl }}/config-guide/config/config-php.html).
+1. Removes the specified modules from the module list in the [deployment configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html).
 1. Removes code from the codebase using `composer remove`.
 
    >[!NOTE]
@@ -70,7 +62,7 @@ The module uninstall command performs the following tasks:
 
 1. Cleans the [cache](https://glossary.magento.com/cache).
 1. Updates generated classes.
-1. If `--clear-static-content` is specified, cleans [generated static view files]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-static-view.html#config-cli-static-overview).
+1. If `--clear-static-content` is specified, cleans [generated static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 1. Takes the store out of maintenance mode.
 
 For example, if you attempt to uninstall a module that another module depends on, the following message displays:
@@ -126,7 +118,7 @@ Disabling maintenance mode
 >
 >Errors display if you attempt to uninstall a module with a dependency on another module. In that case, you cannot uninstall one module; you must uninstall both.
 
-## Roll back the file system, database, or media files {#instgde-cli-uninst-mod-roll}
+## Roll back the file system, database, or media files
 
 To restore the codebase to the state at which you backed it up, use the following command:
 

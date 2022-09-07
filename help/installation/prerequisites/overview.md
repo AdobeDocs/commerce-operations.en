@@ -7,7 +7,7 @@ description:
 
 Before you install Magento, you must do all of the following:
 
-*  Set up one or more hosts that meet the [system requirements]({{page.baseurl}}/install-gde/system-requirements.html).
+*  Set up one or more hosts that meet the [system requirements](../system-requirements.md).
 *  If you are setting up more than one web node with load balancing, set up and test that part of your system _before_ you install Magento.
 *  Make sure you can back up your entire system at various points during the installation so you can roll back in the [event](https://glossary.magento.com/event) of issues.
 
@@ -15,7 +15,7 @@ Before you install Magento, you must do all of the following:
 >
 >We assume you are installing the Adobe Commerce or Magento Open Source in a **development environment**, which means you have root user access to the machine **and** that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
 
-We strongly recommend you update and upgrade your operating system software. These upgrades can provide security and software fixes that might prevent future problems. Do not know what any of this means? Check out our [installation overview page]({{page.baseurl}}/install-gde/bk-install-guide.html).
+We strongly recommend you update and upgrade your operating system software. These upgrades can provide security and software fixes that might prevent future problems. Do not know what any of this means? Check out our [installation overview page](../overview.md).
 
 Enter the following commands as a user with `root` privileges:
 
@@ -56,11 +56,11 @@ Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
 
-To install or upgrade Apache, see [Apache]({{page.baseurl}}/install-gde/prereq/apache.html).
+To install or upgrade Apache, see [Apache](web-server/apache.md).
 
 ### PHP
 
-See [system requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported versions of PHP and [PHP] for PHP requirements.
+See [system requirements](../system-requirements.md) for supported versions of PHP and [PHP] for PHP requirements.
 
 ### MySQL
 
@@ -74,7 +74,7 @@ For example:
 mysql -u magento -p
 ```
 
-Check that you have the correct version of MySQL for the version of Adobe Commerce or Magento Open Source you are installing ([check here for supported versions]({{ page.baseurl }}/install-gde/system-requirements.html). The following result indicates the version you are running.)
+Check that you have the correct version of MySQL for the version of Adobe Commerce or Magento Open Source you are installing ([check here for supported versions](../system-requirements.md). The following result indicates the version you are running.)
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -92,7 +92,7 @@ Type `help` or `\h` for help. Type `\c` to clear the current input statement.
 
 Enter `exit` at the `mysql>` prompt to exit.
 
-To install or upgrade MySQL, see [MySQL]({{page.baseurl}}/install-gde/prereq/mysql.html).
+To install or upgrade MySQL, see [MySQL](database/mysql.md).
 
 ### Elasticsearch or OpenSearch
 

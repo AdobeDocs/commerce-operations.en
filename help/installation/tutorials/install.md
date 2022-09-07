@@ -9,15 +9,15 @@ description:
 
 Before you begin, complete the following steps:
 
-*  Verify that your system meets the requirements discussed in the [system requirements]({{ page.baseurl }}/install-gde/system-requirements.html).
+*  Verify that your system meets the requirements discussed in the [system requirements](../system-requirements.md).
 
-*  Complete all [prerequisite]({{ page.baseurl }}/install-gde/prereq/prereq-overview.html) tasks.
+*  Complete all [prerequisite](../prerequisites/overview.md) tasks.
 
-*  Complete the first installation steps. See [Your install or upgrade path]({{ page.baseurl }}/install-gde/bk-install-guide.html).
+*  Complete the first installation steps. See [Your install or upgrade path](../overview.md).
 
-*  After you log in to the application server, [switch to the file system owner]({{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html).
+*  After you log in to the application server, [switch to the file system owner](../prerequisites/file-system/overview.md).
 
-*  Review the [Get started with the command-line installation]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html) overview.
+*  Review the [Get started with the command-line installation](../composer.md) overview.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ You can run the installer multiple times with different options to complete inst
 >
 >By default, the installer does not overwrite the database if you install the Commerce software in the same database instance. You can use the optional `cleanup-database` parameter to change this behavior.
 
-See also [Update, reinstall, uninstall]({{ page.baseurl }}/install-gde/install/cli/install-cli-uninstall.html).
+See also [Update, reinstall, uninstall](uninstall.md).
 
 {% include install/fully-secure.md %}
 
@@ -51,7 +51,7 @@ You can run the following commands to find values for some required arguments:
 
 >[!NOTE]
 >
->If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies]({{ page.baseurl }}/install-gde/install/prepare-install.html).
+>If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 
 ## Install from the command line {#instgde-install-cli-magento}
 
@@ -111,7 +111,7 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 
 >[!TIP]
 >
->To enable remote storage services during installation, see [Configure Remote Storage]({{ page.baseurl }}/config-guide/remote-storage/config-remote-storage.html) in the _Configuration Guide_.
+>To enable remote storage services during installation, see [Configure Remote Storage](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage.html) in the _Configuration Guide_.
 
 **Search engine configuration options:**
 
@@ -165,7 +165,7 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 
 >[!NOTE]
 >
->To enable or disable modules after installing the application, see [Enable and disable modules]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html).
+>To enable or disable modules after installing the application, see [Enable and disable modules](manage-modules.md).
 
 {% include install/sens-data.md %}
 
@@ -241,7 +241,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 ```
 
 After installation you can create an admin user using the `admin:user:create` command:
-[Create or edit an administrator]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-admin.html#create-or-edit-an-administrator)
+[Create or edit an administrator](admin.md#create-or-edit-an-administrator)
 
 #### Example 3—Install with additional options
 
@@ -297,4 +297,4 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 >[!TIP]
 >
->If you have one user account to access the application server, see [Optionally set a umask]({{ page.baseurl }}/install-gde/install/post-install-umask.html). This type of setup is typical for shared hosting.
+>If you have one user account to access the application server, see [Optionally set a umask](../next-steps/set-umask.md). This type of setup is typical for shared hosting.

@@ -27,9 +27,9 @@ Consult the following table for getting started with installing Adobe Commerce o
         </td>
         <td><ol><li>Creates a Composer <em>project</em> that contains the list of components to use.</li>
             <li>Uses Composer to update package dependencies; uses <code>composer create-project</code> to get the Composer metapackage.</li>
-            <li>Installs the application using the <a href="{{ page.baseurl }}/install-gde/install/cli/install-cli.html">command line</a>.</li>
+            <li>Installs the application using the <a href="../advanced.md">command line</a>.</li>
         <li>Upgrades the application and extensions using the  <a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html">command line</a>.</li></ol></td>
-        <td><p><a href="{{ page.baseurl }}/install-gde/composer.html">Get the metapackage</a></p></td>
+        <td><p><a href="../composer.md">Get the metapackage</a></p></td>
     </tr>
     <tr>
         <td><p>Contributing developer</p></td>
@@ -38,10 +38,10 @@ Consult the following table for getting started with installing Adobe Commerce o
       <p>You must upgrade using <a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html">Composer and Git commands</a>.</p></td>
         <td><ol><li>Clones the GitHub repository.</li>
             <li>Uses Composer to update package dependencies.</li>
-            <li>Installs the application using <a href="{{ page.baseurl }}/install-gde/install/cli/install-cli.html">command line</a>.</li>
+            <li>Installs the application using <a href="../advanced.md">command line</a>.</li>
             <li>Upgrades the application using <a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html">Composer and Git commands</a>.</li>
             <li>Customizes code under the <code>app/code</code> directory.</li></ol></td>
-        <td><p><a href="{{ page.baseurl }}/install-gde/prereq/dev_install.html">Clone the GitHub repository</a></p></td>
+        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">Clone the GitHub repository</a></p></td>
     </tr>
     </tbody>
 </table>
@@ -56,8 +56,4 @@ UNIX systems require `root` privileges to install and configure software like a 
 
 You should *not* install the application in the web server docroot as the `root` user because the web server might not be able to interact with those files.
 
-You'll also need `root` privileges to create the [file system owner] and add that owner to the web server's group. You'll use the [file system owner](https://glossary.magento.com/magento-file-system-owner) to run any commands from the command line and to set up cron jobs, which schedules tasks for you.
-
-<!-- LINK DEFINITIONS -->
-
-[file system owner]: {{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html
+You'll also need `root` privileges to create the [file system owner](file-system/overview.md) and add that owner to the web server's group. You'll use the [file system owner](https://glossary.magento.com/magento-file-system-owner) to run any commands from the command line and to set up cron jobs, which schedules tasks for you.

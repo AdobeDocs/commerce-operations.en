@@ -15,30 +15,30 @@ You must install Adobe Commerce and Magento Open Source services in the *crontab
 
 {% include config/setup-cron_how-to.md %}
 
-For more information about cron, including how to remove a crontab and run cron from the command line, see [Configure and run cron]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-cron.html).
+For more information about cron, including how to remove a crontab and run cron from the command line, see [Configure and run cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
 
 ## Security settings and recommendations {#post-install-secy}
 
 After installation, we recommend the following:
 
 *  Make sure your file ownership and permissions are set properly
-*  We strongly recommend [changing the default Admin URL]({{page.baseurl}}/install-gde/install/cli/install-cli-adminurl.html) from `admin` to something else
-*  Make sure the [`X-Frame-Option` HTTP header]({{page.baseurl}}/config-guide/secy/secy-xframe.html) is set properly.
-*  Take precautions against cross-site scripting (XSS) by [securing your templates]({{page.baseurl}}/extension-dev-guide/xss-protection.html)
+*  We strongly recommend [changing the default Admin URI](../tutorials/admin-uri.md) from `admin` to something else
+*  Make sure the [`X-Frame-Option` HTTP header](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) is set properly.
+*  Take precautions against cross-site scripting (XSS) by [securing your templates](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
 
-If you installed by [cloning the GitHub repository]({{page.baseurl}}/install-gde/prereq/dev_install.html), make sure that when you deploy Magento, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
+If you installed by [cloning the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), make sure that when you deploy Magento, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
 
 ## Enable Apache server rewrites {#post-install-rewrites}
 
 If you use the Apache web server, you must enable server rewrites for pages to display properly. Otherwise, you'll see pages without styles and other issues.
 
-[Section on Apache server rewrites]({{page.baseurl}}/install-gde/prereq/apache.html#apache-help-rewrite)
+[Section on Apache server rewrites](../prerequisites/web-server/apache.md#important-apache-rewrites-and-htaccess)
 
 ## Caching in a multi-webnode environment {#config-redis}
 
 If you have multiple webnodes, you *cannot* use Magento's default file caching because there is no synchronization between webnodes. In other words, activity on one webnode is written to that webnode's file system only. Subsequent activity, if performed on another webnode, can result in unnecessary files being written or can result in errors.
 
-Instead, use [Redis]({{page.baseurl}}/config-guide/redis/config-redis.html) for both the default [cache](https://glossary.magento.com/cache) and the page cache.
+Instead, use [Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html) for both the default [cache](https://glossary.magento.com/cache) and the page cache.
 
 ## Server settings {#post-install-server}
 
@@ -83,16 +83,16 @@ Adobe Commerce and Magento Open Source require an e-mail server. We don't recomm
 
 Elasticsearch or OpenSearch is required for all installations as of 2.4.0.
 
-*  [Install and configure the search engine]({{page.baseurl}}/config-guide/elasticsearch/es-overview.html)
+*  [Install and configure the search engine](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/search/overview-search.html)
 
 ### Set up an message queue
 
 Since version 2.3.0, Adobe Commerce and Magento Open Source include message queue functionality. In earlier versions, it is available only for Adobe Commerce.
 
-*  [RabbitMQ]({{page.baseurl}}/config-guide/mq/rabbitmq-overview.html)
+*  [RabbitMQ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html)
 
 ## Settings for Adobe Commerce only {#post-install-ee}
 
 You can configure the following only if you use Adobe Commerce:
 
-*  [Split databases for checkout, order management, and other database tables]({{page.baseurl}}/config-guide/multi-master/multi-master.html)
+*  [Split databases for checkout, order management, and other database tables](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/split-db/multi-master.html)

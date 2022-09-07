@@ -11,23 +11,23 @@ description:
 
 Before you continue, you must do the following:
 
--  Complete all [prerequisite tasks][].
--  [Install Composer][].
--  Get [authentication keys][] to the Adobe Commerce and Magento Open Source Composer repository.
+-  Complete all [prerequisite tasks](system-requirements.md).
+-  [Install Composer](https://getcomposer.org/download/).
+-  Get [authentication keys](prerequisites/authentication-keys.md) to the Adobe Commerce and Magento Open Source Composer repository.
 
 ## Log in as file system owner {#instgde-cli-before}
 
-Learn about ownership, permissions, and the file system owner in our [Overview of ownership and permissions topic]({{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html).
+Learn about ownership, permissions, and the file system owner in our [Overview of ownership and permissions topic](prerequisites/file-system/overview.md).
 
 To switch to the file system owner:
+
 {% include install/first-steps-cli.md %}
-In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
 ## Get the metapackage
 
 To get the Adobe Commerce or Magento Open Source metapackage:
 
-1. Log in to your application server as, or switch to, the [file system owner][].
+1. Log in to your application server as, or switch to, the [file system owner](prerequisites/file-system/overview.md).
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot.
 1. Create a new Composer project using the Adobe Commerce or Magento Open Source metapackage.
 
@@ -43,11 +43,11 @@ To get the Adobe Commerce or Magento Open Source metapackage:
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
     ```
 
-    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace][].
+    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://marketplace.magento.com/customer/accessKeys/).
 
     If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://magento.com/support) for help.
 
-    See [Troubleshooting][] for help with more errors.
+    See [Troubleshooting](https://support.magento.com/hc/en-us/articles/360033818091) for help with more errors.
 
     {% include install/pre-release.md %}
 
@@ -125,7 +125,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->For a full description of the CLI install options, refer to [Install the application from the command line][].
+>For a full description of the CLI install options, see [Install the application from the command line](advanced.md).
 
 
 ## Command summary {#instgde-cli-summary}
@@ -157,16 +157,4 @@ Database (simplest way is to use magento setup:upgrade)|
 
 >[!NOTE]
 >
->Congratulations! You've completed the quick install. Need more advanced help? Check out our [Advanced install]({{ page.baseurl }}/install-gde/install/cli/install-cli.html) guide.
-
-
-<!-- Link Definitions -->
-[Commerce Marketplace]: https://marketplace.magento.com/customer/accessKeys/
-[Modify docroot for security]: {{page.baseurl}}/install-gde/tutorials/change-docroot-to-pub.html
-[Install the application from the command line]: {{page.baseurl}}/install-gde/install/cli/install-cli.html
-[troubleshooting]: https://support.magento.com/hc/en-us/articles/360033818091
-[file system owner]: {{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html
-[authentication keys]: {{page.baseurl}}/install-gde/prereq/connect-auth.html
-[Install Composer]: https://getcomposer.org/download/
-[system requirements]: {{ page.baseurl }}/install-gde/system-requirements.html
-[prerequisite tasks]: {{ page.baseurl }}/install-gde/prereq/prereq-overview.html
+>Congratulations! You've completed the quick install. Need more advanced help? Check out our [Advanced install](advanced.md) guide.

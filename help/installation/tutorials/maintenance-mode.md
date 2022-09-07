@@ -7,7 +7,7 @@ description:
 
 The following guide refers to a standard maintenance mode page. If you need to use a custom maintenance page, see [Create the custom maintenance page](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) topic.
 
-Adobe Commerce and Magento Open Source use [maintenance mode]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#maintenance-mode) to disable bootstrapping. Disabling bootstrapping is helpful while you are maintaining, upgrading, or reconfiguring your site.
+Adobe Commerce and Magento Open Source use [maintenance mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) to disable bootstrapping. Disabling bootstrapping is helpful while you are maintaining, upgrading, or reconfiguring your site.
 
 The application detects maintenance mode as follows:
 
@@ -21,11 +21,10 @@ The application detects maintenance mode as follows:
 To log in as the file system owner:
 
 {% include install/first-steps-cli.md %}
-In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
 ## Install the application {#instgde-cli-subcommands-maint-prereq}
 
-Before you use this command to enable or disable maintenance mode, you must [install the application]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html).
+Before you use this command to enable or disable maintenance mode, you must [install the application](../advanced.md).
 
 ## Enable or disable maintenance mode {#instgde-cli-maint}
 
@@ -125,4 +124,4 @@ To use the `skin` parameter:
 
 >[!NOTE]
 >
->The [nginx]({{ page.baseurl }}/config-guide/multi-site/ms_nginx.html) setting must be added for multi-store setups.
+>The [nginx](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-nginx.html) setting must be added for multi-store setups.

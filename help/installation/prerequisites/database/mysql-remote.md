@@ -33,8 +33,8 @@ The `db-host` value is the Aurora URL with the `https://` and trailing `:portnum
 
 Before you begin, you must:
 
-*  [Install MySQL server]({{page.baseurl }}/install-gde/prereq/mysql.html) on the database server
-*  [Create a database instance]({{page.baseurl }}/install-gde/prereq/mysql.html#instgde-prereq-mysql-config) on the database server
+*  [Install MySQL server](mysql.md) on the database server
+*  [Create a database instance](mysql.md#configuring-the-database-instance) on the database server
 *  Install the MySQL client on your Adobe Commerce or Magento Open Source web node. Consult MySQL documentation for details.
 
 ### High availability
