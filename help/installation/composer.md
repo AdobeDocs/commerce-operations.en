@@ -13,7 +13,7 @@ Before you continue, you must do the following:
 
 -  Complete all [prerequisite tasks][].
 -  [Install Composer][].
--  Get [authentication keys][] to the Magento Composer repository.
+-  Get [authentication keys][] to the Adobe Commerce and Magento Open Source Composer repository.
 
 ## Log in as file system owner {#instgde-cli-before}
 
@@ -25,11 +25,11 @@ In addition to the command arguments discussed here, see [Common arguments]({{ p
 
 ## Get the metapackage
 
-To get the Magento metapackage:
+To get the Adobe Commerce or Magento Open Source metapackage:
 
-1. Log in to your Magento server as, or switch to, the [file system owner][].
+1. Log in to your application server as, or switch to, the [file system owner][].
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot.
-1. Create a new Composer project using the Magento Open Source or Adobe Commerce metapackage.
+1. Create a new Composer project using the Adobe Commerce or Magento Open Source metapackage.
 
     **Magento Open Source**
 
@@ -43,9 +43,9 @@ To get the Magento metapackage:
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
     ```
 
-    When prompted, enter your Magento authentication keys. Public and private keys are created and configured in your [Commerce Marketplace][].
+    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace][].
 
-    If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Magento support](https://magento.com/support) for help.
+    If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://magento.com/support) for help.
 
     See [Troubleshooting][] for help with more errors.
 
@@ -79,7 +79,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## Set file permissions
 
-You must set read-write permissions for the web server group before you install the Magento software. This is necessary so that the command line can write files to the Magento file system.
+You must set read-write permissions for the web server group before you install Adobe Commerce or Magento Open Source. This is necessary so that the command line can write files to the file system.
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -89,11 +89,11 @@ chown -R :www-data . # Ubuntu
 chmod u+x bin/magento
 ```
 
-## Install Magento
+## Install the application
 
-You must use the command line to install Magento.
+You must use the command line to install Adobe Commerce or Magento Open Source.
 
-This example assumes that the Magento install directory is named `magento2ee`, the `db-host` is on the same machine (`localhost`), and that the `db-name`, `db-user`, and `db-password` are all `magento`:
+This example assumes that the install directory is named `magento2ee`, the `db-host` is on the same machine (`localhost`), and that the `db-name`, `db-user`, and `db-password` are all `magento`:
 
 ```bash
 bin/magento setup:install \
@@ -125,7 +125,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->For a full description of the CLI install options, refer to [Install the Magento software from the command line][].
+>For a full description of the CLI install options, refer to [Install the application from the command line][].
 
 
 ## Command summary {#instgde-cli-summary}
@@ -136,18 +136,18 @@ The following table summarizes the available commands. Commands are shown in sum
 
 |Command|Description|Prerequisites|
 |--- |--- |--- |
-|`magento setup:install`|Installs the Magento software|None|
-|`magento setup:uninstall`|Removes the Magento software.|Magento software installed|
-|`magento setup:upgrade`|Updates the Magento software.|Deployment configuration|
-|`magento maintenance:{enable/disable}`|Enables or disables maintenance mode (in maintenance mode, only exempt IP addresses can access the Admin or storefront).|Magento software installed|
+|`magento setup:install`|Installs the application|None|
+|`magento setup:uninstall`|Removes the application.|Application installed|
+|`magento setup:upgrade`|Updates the application.|Deployment configuration|
+|`magento maintenance:{enable/disable}`|Enables or disables maintenance mode (in maintenance mode, only exempt IP addresses can access the Admin or storefront).|Application installed|
 |`magento setup:config:set`|Creates or updates the deployment configuration.|None|
 |`magento module:{enable/disable}`|Enable or disable modules.|None|
 |`magento setup:store-config:set`|Sets storefront-related options, such as base URL, language, timezone, and so on.|Deployment configuration
 Database (simplest way is to use magento setup:upgrade)|
-|`magento setup:db-schema:upgrade`|Updates the Magento database schema.|Deployment configuration|
-|`magento setup:db-data:upgrade`|Updates the Magento database data.|Deployment configuration|
+|`magento setup:db-schema:upgrade`|Updates the database schema.|Deployment configuration|
+|`magento setup:db-data:upgrade`|Updates the database data.|Deployment configuration|
 |`magento setup:db:status`|Checks if the database is up-to-date with the code.|Deployment configuration|
-|`magento admin:user:create`|Creates a Magento administrator.|All of the following:<br><br>Deployment configuration<br><br>Enable at minimum the Magento_User and Magento_Authorization modules<br><br>Database (simplest way is to use magento setup:upgrade)|
+|`magento admin:user:create`|Creates an administrator user.|All of the following:<br><br>Deployment configuration<br><br>Enable at minimum the Magento_User and Magento_Authorization modules<br><br>Database (simplest way is to use magento setup:upgrade)|
 |`magento list`|Lists all available commands.|None|
 |`magento help`|Provides help for the specified command.|None|
 
@@ -163,7 +163,7 @@ Database (simplest way is to use magento setup:upgrade)|
 <!-- Link Definitions -->
 [Commerce Marketplace]: https://marketplace.magento.com/customer/accessKeys/
 [Modify docroot for security]: {{page.baseurl}}/install-gde/tutorials/change-docroot-to-pub.html
-[Install the Magento software from the command line]: {{page.baseurl}}/install-gde/install/cli/install-cli.html
+[Install the application from the command line]: {{page.baseurl}}/install-gde/install/cli/install-cli.html
 [troubleshooting]: https://support.magento.com/hc/en-us/articles/360033818091
 [file system owner]: {{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html
 [authentication keys]: {{page.baseurl}}/install-gde/prereq/connect-auth.html

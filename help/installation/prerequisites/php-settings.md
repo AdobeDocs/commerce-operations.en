@@ -29,14 +29,14 @@ Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache v7.1.6, Copyright (c) 1999-2018, by Zend Technologies
 ```
 
-Magento 2.4 is compatible with PHP 7.3, but we test with, and recommend using, PHP 7.4.
+Adobe Commerce and Magento Open Source 2.4 is compatible with PHP 7.3, but we test with, and recommend using, PHP 7.4.
 
 If PHP is not installed, or a version upgrade is needed, install it following instructions for your particular Linux flavor.
 On CentOS, [additional steps may be required][].
 
 ## Verify installed extensions
 
-Magento requires a set of extensions to be installed.
+Adobe Commerce and Magento Open Source requires a set of extensions to be installed.
 
 {% include install/php-extensions-template.md %}
 
@@ -72,9 +72,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
    Our detailed recommendations are:
 
-   -  Compiling code or deploying static assets, `1G`
-   -  Debugging, `2G`
-   -  Testing, `~3-4G`
+    -  Compiling code or deploying static assets, `1G`
+    -  Debugging, `2G`
+    -  Testing, `~3-4G`
 
 -  Increase the values for the PHP `realpath_cache_size` and `realpath_cache_ttl` to recommended settings:
 
@@ -85,11 +85,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
    These settings allow PHP processes to cache paths to files instead of looking them up each time a page loads. See [Performance Tuning](https://www.php.net/manual/en/ini.core.php) in the PHP documentation.
 
--  Enable [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), which is required for Magento 2.1 and later.
+-  Enable [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), which is required for Adobe Commerce and Magento Open Source 2.1 and later.
 
    We recommend you enable the [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) for performance reasons. The OPcache is enabled in many PHP distributions.
 
-   Magento 2.1 and later use PHP code comments for code generation.
+   Adobe Commerce and Magento Open Source 2.1 and later use PHP code comments for code generation.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ To set `opcache.ini` options:
 
 See the following Adobe Commerce Support articles for help troubleshooting PHP problems:
 
--  [PHP version error or 404 error when accessing Magento in browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+-  [PHP version error or 404 error when accessing Adobe Commerce in browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
 -  [PHP settings errors](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
 -  [PHP mcrypt extension not installed properly](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 -  [PHP version readiness check issues](https://support.magento.com/hc/en-us/articles/360033546411)

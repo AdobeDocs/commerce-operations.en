@@ -9,7 +9,7 @@ Code that extends or customizes Adobe Commerce and Magento Open Source behavior 
 
 Extensions include:
 
--  Modules (extend Magento capabilities)
+-  Modules (extend Adobe Commerce and Magento Open Source capabilities)
 -  Themes (change the look and feel of your [storefront](https://glossary.magento.com/storefront) and Admin)
 -  Language packages (localize the storefront and Admin)
 
@@ -41,7 +41,7 @@ To install an extension, you must:
     ```
 
 1. Get the extension's Composer name and version.
-1. Update the `composer.json` file in your Magento project with the name and version of the extension.
+1. Update the `composer.json` file in your project with the name and version of the extension.
 1. Verify that the extension installed properly.
 1. Enable and configure the extension.
 
@@ -73,7 +73,7 @@ To get the extension's Composer name and version from the Commerce Marketplace:
 
 Add the extension's name and version to your `composer.json` file:
 
-1. Navigate to your Magento project directory and update your `composer.json` file.
+1. Navigate to your project directory and update your `composer.json` file.
 
    ```bash
    composer require <component-name>:<version>
@@ -147,7 +147,7 @@ Some extensions won't work properly unless you clear Magento-generated static vi
    bin/magento setup:upgrade
    ```
 
-1. Recompile your Magento project: In Production mode, you may receive a message to "Please rerun Magento compile command". Magento does not prompt you to run the compile command in Developer mode.
+1. Recompile your project: In Production mode, you may receive a message to "Please rerun Magento compile command". The application does not prompt you to run the compile command in Developer mode.
 
    ```bash
    bin/magento setup:di:compile

@@ -22,11 +22,11 @@ The general installation flow is as follows:
 
 1. Get the Adobe Commerce or Magento Open Source software.
 
-   *  (Recommended) Get the Magento Open Source or Adobe Commerce [Composer metapackage]({{page.baseurl}}/install-gde/composer.html) to manage modules and their dependencies.
+   *  (Recommended) Get the [Composer metapackage]({{page.baseurl}}/install-gde/composer.html) to manage modules and their dependencies.
 
    *  If you want to contribute to the Magento Open Source codebase or customize the application, [clone]({{ page.baseurl }}/install-gde/prereq/dev_install.html) the GitHub repository. This method requires familiarity with both GitHub and Composer.
 
-1. Install the Commerce software using the command line.
+1. Install the application using the command line.
 
    If the step fails because prerequisite software isn't set up correctly, review the [prerequisites](prerequisites/overview.md).
 

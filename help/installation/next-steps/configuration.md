@@ -5,12 +5,13 @@ description:
 
 # Configure the application
 
-Now that you've finished installing the Magento application, you need to configure it. This topic provides some recommended configuration settings for Magento; the list is not complete so watch this space.
+Now that you've finished installing Adobe Commerce or Magento Open Source, you need to configure it. This topic provides some recommended configuration settings for Magento; the list is not complete so watch this space.
 
 ## Set up cron {#post-install-cron}
 
-cron---the UNIX task scheduler---is critical to Magento's day-to-day operations. It schedules things like reindexing, newsletters, e-mails, sitemaps, and so on. A *crontab* is a cron configuration.
-You must install Magento services in the *crontab*, or some core functionality (as well as some third-party extensions) will not function properly.
+cron---the UNIX task scheduler---is critical to the application's day-to-day operations. It schedules things like reindexing, newsletters, e-mails, and sitemaps. A *crontab* is a cron configuration.
+
+You must install Adobe Commerce and Magento Open Source services in the *crontab*, or some core functionality (as well as some third-party extensions) do not function properly.
 
 {% include config/setup-cron_how-to.md %}
 
@@ -25,7 +26,7 @@ After installation, we recommend the following:
 *  Make sure the [`X-Frame-Option` HTTP header]({{page.baseurl}}/config-guide/secy/secy-xframe.html) is set properly.
 *  Take precautions against cross-site scripting (XSS) by [securing your templates]({{page.baseurl}}/extension-dev-guide/xss-protection.html)
 
-If you installed by [cloning the Magento repository]({{page.baseurl}}/install-gde/prereq/dev_install.html), make sure that when you deploy Magento, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
+If you installed by [cloning the GitHub repository]({{page.baseurl}}/install-gde/prereq/dev_install.html), make sure that when you deploy Magento, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
 
 ## Enable Apache server rewrites {#post-install-rewrites}
 
@@ -41,7 +42,7 @@ Instead, use [Redis]({{page.baseurl}}/config-guide/redis/config-redis.html) for 
 
 ## Server settings {#post-install-server}
 
-This section briefly discusses settings we recommend you consider for the server on which Magento runs. Some of these settings are not directly related to Magento; these are provided as suggestions only.
+This section briefly discusses settings we recommend you consider for the server on which the application runs. Some of these settings are not directly related to Magento; these are provided as suggestions only.
 
 ### Log rotation
 
@@ -53,9 +54,9 @@ For more information, see one of the following:
 *  [stackexchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 *  [logrotate man page](https://linuxconfig.org/logrotate-8-manual-page)
 
-### Set up iptables rules to enable various Magento services to communicate.
+### Set up iptables rules to enable various services to communicate
 
-Whether you have one server or many, you must open ports in the firewall to enable Magento services to communicate. For example, if you use the Solr search engine with Adobe Commerce, you must enable it to communicate with the web server. If you have multiple web nodes, you must enable them to communicate with each other.
+Whether you have one server or many, you must open ports in the firewall to enable services to communicate. For example, if you use the Solr search engine with Adobe Commerce, you must enable it to communicate with the web server. If you have multiple web nodes, you must enable them to communicate with each other.
 
 More information:
 
@@ -64,7 +65,7 @@ More information:
 
 ### Security Enhanced Linux (SELinux) rules
 
-We don't recommend whether or not you use SELinux at all; however, if you use it, you must configure Magento services to communicate with each other similar to configuring iptables.
+We don't recommend whether or not you use SELinux at all; however, if you use it, you must configure services to communicate with each other similar to configuring iptables.
 
 More information:
 
@@ -73,7 +74,7 @@ More information:
 
 ### Set up an e-mail server
 
-Magento requires an e-mail server. We don't recommend a particular server but you can try any of the following:
+Adobe Commerce and Magento Open Source require an e-mail server. We don't recommend a particular server, but you can try any of the following:
 
 *  Postfix for CentOS ([digitalocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS documentation](https://www.centos.org))
 *  Postfix for Ubuntu ([digitalocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu documentation](https://help.ubuntu.com/community/MailServer))
@@ -86,7 +87,7 @@ Elasticsearch or OpenSearch is required for all installations as of 2.4.0.
 
 ### Set up an message queue
 
-Since 2.3.0 Magento Open Source includes message queue functionality. In earlier versions it is available only for Adobe Commerce.
+Since version 2.3.0, Adobe Commerce and Magento Open Source include message queue functionality. In earlier versions, it is available only for Adobe Commerce.
 
 *  [RabbitMQ]({{page.baseurl}}/config-guide/mq/rabbitmq-overview.html)
 
@@ -94,4 +95,4 @@ Since 2.3.0 Magento Open Source includes message queue functionality. In earlier
 
 You can configure the following only if you use Adobe Commerce:
 
-*  [Split databases for checkout, order management, and other Magento database tables]({{page.baseurl}}/config-guide/multi-master/multi-master.html)
+*  [Split databases for checkout, order management, and other database tables]({{page.baseurl}}/config-guide/multi-master/multi-master.html)

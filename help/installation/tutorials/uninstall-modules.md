@@ -7,7 +7,7 @@ description:
 
 ## Prerequisites {#instgde-cli-uninst-prereq}
 
-Before you use this command, you must [install the Magento software]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html).
+Before you use this command, you must [install the application]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html).
 
 ## Overview of uninstalling modules {#instgde-cli-uninst-mod-over}
 
@@ -20,7 +20,9 @@ You should uninstall a module only if you're certain you won't use it. Instead o
 >This command checks _only_ dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html) non-Composer modules.
 
 ## First steps {#instgde-cli-before}
+
 {% include install/first-steps-cli.md %}
+
 In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
 ## Uninstall modules {#instgde-cli-uninst-mod-uninst}
@@ -32,13 +34,13 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
   {ModuleName} ... {ModuleName}
 ```
 
-where `{ModuleName}` specifies the module name in `<VendorName>_<ModuleName>` format. For example, the Magento Customer module name is `Magento_Customer`. To get a list of module names, enter `magento module:status`
+Where `{ModuleName}` specifies the module name in `<VendorName>_<ModuleName>` format. For example, the Customer module name is `Magento_Customer`. To get a list of module names, enter `magento module:status`
 
 The module uninstall command performs the following tasks:
 
 1. Verifies that the specified modules exist in the code base and are packages installed by [Composer](https://glossary.magento.com/composer).
 
-   This command works *only* with modules defined as Composer packages.
+   This command works _only_ with modules defined as Composer packages.
 
 1. Checks for dependencies with other modules; if there are any, the command terminates..
 
@@ -50,9 +52,9 @@ The module uninstall command performs the following tasks:
 
     | Option           | Meaning                                                                          | Backup file name and location                |
     | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-    | `--backup-code`  | Backs up the Magento file system (excluding `var` and `pub/static` directories). | var/backups/<timestamp>_filesystem.tgz       |
+    | `--backup-code`  | Backs up the file system (excluding `var` and `pub/static` directories). | var/backups/<timestamp>_filesystem.tgz       |
     | `--backup-media` | Backs up the pub/media directory.                                                | var/backups/<timestamp>_filesystem_media.tgz |
-    | `--backup-db`    | Backs up the Magento 2 database.                                                 | var/backups/<timestamp>_db.gz                |
+    | `--backup-db`    | Backs up the database.                                                 | var/backups/<timestamp>_db.gz                |
 
 1. If `--remove-data` is specified, removes the database schema and data defined in the module's `Uninstall` classes.
 
@@ -79,7 +81,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-One alternative is to uninstall both modules after backing up the Magento module file system, `pub/media` files, and database tables but *not* removing the module's [database schema](https://glossary.magento.com/database-schema) or data:
+One alternative is to uninstall both modules after backing up the module file system, `pub/media` files, and database tables but _not_ removing the module's [database schema](https://glossary.magento.com/database-schema) or data:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
@@ -126,7 +128,7 @@ Disabling maintenance mode
 
 ## Roll back the file system, database, or media files {#instgde-cli-uninst-mod-roll}
 
-To restore the Magento codebase to the state at which you backed it up, use the following command:
+To restore the codebase to the state at which you backed it up, use the following command:
 
 ```bash
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
@@ -150,13 +152,13 @@ This command performs the following tasks:
 
    a. Verifies the rollback destination locations are writable (note that the `pub/static` and `var` folders are ignored).
 
-   b. Deletes all files and directories under your Magento 2 installation directory.
+   b. Deletes all files and directories under your application installation directory.
 
    c. Extracts the archive file to the destination locations.
 
 1. If you specify a database rollback file:
 
-   a. Drops the entire Magento database.
+   a. Drops the entire database.
 
    b. Restores the database using the database backup.
 

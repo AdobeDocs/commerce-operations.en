@@ -7,9 +7,9 @@ description:
 
 This command enables you to back up:
 
-*  The Magento file system (excluding `var` and `pub/static` directories)
+*  The file system (excluding `var` and `pub/static` directories)
 *  The `pub/media` directory
-*  The Magento 2 database
+*  The database
 
 Backups are stored in the `var/backups` directory and can be restored at any time using the [magento setup:rollback]({{ page.baseurl }}/install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll) command.
 
@@ -27,7 +27,7 @@ In addition to the command arguments discussed here, see [Common arguments]({{ p
 
 ## Enable backups
 
-The Magento backup feature is disabled by default. To enable, enter the following CLI command:
+The backup feature is disabled by default. To enable, enter the following CLI command:
 
 ```bash
 bin/magento config:set system/backup/functionality_enabled 1
@@ -36,9 +36,10 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Deprecation Notice:**
->Magento backup functionality is deprecated as of 2.1.16, 2.2.7, and 2.3.0. We recommend investigating additional backup technologies and binary backup tools (such as Percona XtraBackup).
+>Backup functionality is deprecated as of 2.1.16, 2.2.7, and 2.3.0. We recommend investigating additional backup technologies and binary backup tools (such as Percona XtraBackup).
 
 ## Set the open files limit {#instgde-cli-ulimit}
+
 {% include install/ulimit.md %}
 
 ## Backing up {#instgde-cli-uninst-back}
@@ -56,9 +57,9 @@ The command performs the following tasks:
 
     |Option|Meaning|Backup file name and location|
     |--- |--- |--- |
-    |`--code`|Backs up the Magento file system (excluding var and pub/static directories).|var/backups/<timestamp>\_filesystem.tgz|
+    |`--code`|Backs up the file system (excluding var and pub/static directories).|var/backups/<timestamp>\_filesystem.tgz|
     |`--media`|Back up the pub/media directory.|var/backups/<timestamp>\_filesystem_media.tgz|
-    |`--db`|Back up the Magento 2 database.|var/backups/<timestamp>\_db.sql|
+    |`--db`|Back up the database.|var/backups/<timestamp>\_db.sql|
 
 1. Takes the store out of maintenance mode.
 

@@ -22,7 +22,7 @@ Adobe Commerce supports Apache 2.4.x.
 
 This topic discusses how to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Magento uses server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all of the other sections in this topic as well.
+Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all of the other sections in this topic as well.
 
 {% include install/allowoverrides24.md %}
 
@@ -32,7 +32,7 @@ Magento uses server rewrites and `.htaccess` to provide directory-level instruct
 
 ## Apache required modules {#apache-required-modules}
 
-Magento requires the following Apache modules be installed:
+Adobe Commerce and Magento Open Source require the following Apache modules to be installed:
 
 *  [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
 *  [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
@@ -147,7 +147,7 @@ To upgrade to Apache 2.4:
 
 ## Installing Apache on CentOS {#install-prereq-apache-centos}
 
-Magento requires Apache use server rewrites. You must also specify the type of directives that can be used in `.htaccess`, which Magento uses to specify rewrite rules.
+Adobe Commerce and Magento Open Source require Apache use server rewrites. You must also specify the type of directives that can be used in `.htaccess`, which the application uses to specify rewrite rules.
 
 Installing and configuring Apache is basically a three-step process: install the software, enable rewrites, and specify `.htaccess` directives.
 
@@ -267,8 +267,7 @@ Installing and configuring Apache is basically a three-step process: install the
 
 ## Solving 403 (Forbidden) errors {#apache-error}
 
-{% collapsible Click to install solve 403 errors %}
-If you encounter 403 Forbidden errors when trying to access the Magento site, you can update your Apache configuration or your virtual host configuration to enable visitors to the site as discussed in one of the following sections:
+If you encounter 403 Forbidden errors when trying to access the site, you can update your Apache configuration or your virtual host configuration to enable visitors to the site as discussed in one of the following sections:
 
 ### Solving 403 Forbidden errors for Apache 2.4 {#apache-error-2-4}
 

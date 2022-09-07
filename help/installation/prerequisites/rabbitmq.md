@@ -49,7 +49,7 @@ Refer to the [RabbitMQ/Erlang version matrix](https://www.rabbitmq.com/which-erl
 
 The RabbitMQ server is included on CentOS, but the version is often old. RabbitMQ recommends installing the package from their website.
 
-Refer to the RabbitMQ install page to get the latest supported version. Magento 2.3 and 2.4 support RabbitMQ 3.8.x.
+Refer to the RabbitMQ install page to get the latest supported version. Adobe Commerce and Magento Open Source 2.3 and 2.4 support RabbitMQ 3.8.x.
 
 Refer to [Installing on RPM-based Linux](https://www.rabbitmq.com/install-rpm.html) for more information.
 
@@ -63,13 +63,15 @@ Review the official RabbitMQ documentation to configure and manage RabbitMQ. Pay
 *  Starting and stopping the broker
 *  System limits
 
-## Install Magento with RabbitMQ and connect to Magento Open Source or Adobe Commerce
+## Install with RabbitMQ and connect
 
-If you installed Magento after you installed RabbitMQ, add the following command line parameters when you install Magento Open Source or Adobe Commerce:
+If you install Adobe Commerce or Magento Open Source _after_ you install RabbitMQ, add the following command line parameters during installation:
 
-`--amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"`
+```bash
+--amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
+```
 
-where:
+Where:
 
 |Parameter|Description|
 |--- |--- |
@@ -80,9 +82,9 @@ where:
 |`--amqp-virtualhost`|The virtual host for connecting to RabbitMQ. The default is `/`.
 |`--amqp-ssl`|Indicates whether to connect to RabbitMQ. The default is `false`. If you set the value to true, see Configure SSL for more information.|
 
-## Connect RabbitMQ to Magento Open Source or Adobe Commerce
+## Connect RabbitMQ
 
-If you already had Magento installed and you want to connect it to RabbitMQ, add a `queue` section in the `<install_directory>/app/etc/env.php` file so that it is similar to the following:
+If you already had Adobe Commerce or Magento Open Source installed and you want to connect it to RabbitMQ, add a `queue` section in the `<install_directory>/app/etc/env.php` file so that it is similar to the following:
 
 ```php
 'queue' =>

@@ -30,7 +30,7 @@ See Amazon's [Migrating to Amazon OpenSearch Service][] instructions for more in
 
 ### Configure Commerce for OpenSearch
 
-Steps for configuring OpenSearch for a Magento instance  to use OpenSearch is covered in the [Advanced Install][] topic.
+Steps for configuring OpenSearch is covered in the [Advanced Install][] topic.
 
 To test that the new configuration is working, test the OpenSearch endpoint directly:
 

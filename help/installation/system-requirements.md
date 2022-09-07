@@ -16,7 +16,7 @@ This section describes support and compatibility for all other types of required
 
 >[!NOTE]
 >
->All of the following requirements apply to the latest patch release of Magento 2.4.
+>All of the following requirements apply to the latest patch release of Adobe Commerce and Magento Open Source 2.4.
 
 
 ### Mail server
@@ -25,8 +25,7 @@ Mail Transfer Agent (MTA) or an SMTP server
 
 ### Operating systems (Linux x86-64)
 
-Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar.
-Magento is not supported on Microsoft Windows and macOS.
+Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar. Microsoft Windows and macOS are not supported.
 
 ### PHP extensions
 
@@ -57,11 +56,11 @@ PHPUnit (as a command-line tool) 9.0.0
 
 ### RAM
 
-Upgrading the Magento applications and extensions you obtain from Commerce Marketplaces and other sources can require up to 2GB of RAM. If you are using a system with less than 2GB of RAM, we recommend you create a [swap file](https://support.magento.com/hc/en-us/articles/360032980432); otherwise, your upgrade might fail.
+Upgrading the applications and extensions you obtain from the Commerce Marketplace and other sources can require up to 2GB of RAM. If you are using a system with less than 2GB of RAM, we recommend you create a [swap file](https://support.magento.com/hc/en-us/articles/360032980432); otherwise, your upgrade might fail.
 
 ### System dependencies
 
-Magento requires the following system tools for some of its operations:
+Adobe Commerce and Magento Open Source require the following system tools for some operations:
 
 *  [bash][]
 *  [gzip][]
@@ -89,7 +88,7 @@ Magento requires the following system tools for some of its operations:
 
 >[!NOTE]
 >
->There is a known issue with `xdebug` that can affect Magento installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug][].
+>There is a known issue with `xdebug` that can affect Adobe Commerce or Magento Open Source installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug][].
 
 
 <!-- Link Definitions -->

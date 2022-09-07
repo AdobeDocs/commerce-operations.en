@@ -11,9 +11,9 @@ description:
 
 >[!NOTE]
 >
->Magento has no recommendation about using SELinux; you can use it for enhanced security if you wish. If you use SELinux, you must configure it properly or the Magento application will function unpredictably. If you choose to use SELinux, consult a resource like [the CentOS wiki](https://wiki.centos.org/HowTos/SELinux) to set up rules to enable communication.
+>Adobe has no recommendation about using SELinux; you can use it for enhanced security if you want. If you use SELinux, you must configure it properly or the Adobe Commerce and Magento Open Source can function unpredictably. If you choose to use SELinux, consult a resource like the [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) to set up rules to enable communication.
 
-### Suggestion for installing the Magento software with Apache
+### Suggestion for installing with Apache
 
 If you choose to enable SELinux, you might have issues running the installer unless you change the *security context* of some directories as follows:
 
@@ -60,7 +60,7 @@ To enable Apache to initiate a connection to another host with SELinux enabled:
 
 ## Opening Ports In Your Firewall {#install-iptables}
 
-Depending on your security requirements, you might find it necessary to open port 80 and other ports in your firewall. Because of the sensitive nature of networking security, Magento strongly recommends you consult with your IT department before proceeding. Following are some suggested references:
+Depending on your security requirements, you might find it necessary to open port 80 and other ports in your firewall. Because of the sensitive nature of networking security, Adobe strongly recommends that you consult with your IT department before proceeding. Following are some suggested references:
 
 *  Ubuntu: [Ubuntu documentation page](https://help.ubuntu.com/community/IptablesHowTo)
 *  CentOS: [CentOS how-to](https://wiki.centos.org/HowTos/Network/IPTables).

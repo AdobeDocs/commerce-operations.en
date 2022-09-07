@@ -9,9 +9,9 @@ description:
 
 Before you use this command, you must know the relative path to your theme. Themes are located in a subdirectory of `<magento_root>/app/design/<area name>`. You must specify the path to the theme starting with the area, which is either `frontend` (for storefront themes) or `adminhtml` (for [Admin](https://glossary.magento.com/magento-admin) themes).
 
-For example, the path to the Luma [theme](https://glossary.magento.com/theme) provided with Magento 2 is `frontend/Magento/luma`.
+For example, the path to the Luma [theme](https://glossary.magento.com/theme) provided with Adobe Commerce and Magento Open Source is `frontend/Magento/luma`.
 
-For more information about themes, see [Magento theme structure]({{ page.baseurl }}/frontend-dev-guide/themes/theme-structure.html).
+For more information about themes, see [theme structure]({{ page.baseurl }}/frontend-dev-guide/themes/theme-structure.html).
 
 ## Overview of uninstalling themes {#instgde-install-uninst-theme-over}
 
@@ -25,7 +25,9 @@ This command uninstalls *only* themes that are specified in `composer.json`; in 
    [More information about theme inheritance]({{ page.baseurl }}/frontend-dev-guide/themes/theme-inherit.html).
 
 ## First steps {#instgde-cli-before}
+
 {% include install/first-steps-cli.md %}
+
 In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
 ## Uninstall themes {#instgde-install-uninst-theme-uninst}
@@ -38,8 +40,8 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 where
 
-*  `{theme path}` is the relative path to the theme, starting with the area name. For example, the path to the Blank theme supplied with Magento 2 is `frontend/Magento/blank`.
-*  `--backup-code` backs up the Magento 2 codebase as discussed in the paragraphs that follow.
+*  `{theme path}` is the relative path to the theme, starting with the area name. For example, the path to the Blank theme supplied with Adobe Commerce and Magento Open Source is `frontend/Magento/blank`.
+*  `--backup-code` backs up the codebase as discussed in the paragraphs that follow.
 *  `--clear-static-content` cleans generated [static view files]({{ page.baseurl }}/config-guide/cli/config-cli-subcommands-static-view.html#config-cli-static-overview), which is necessary to cause static view files to display properly.
 
 The command performs the following tasks:
@@ -53,7 +55,7 @@ The command performs the following tasks:
 1. Verifies that the theme is not being used; if it is being used, the command terminates.
 1. Verifies that the theme is not the base of the virtual theme; if it is the base of a virtual theme, the command terminates.
 1. Puts the store in maintenance mode.
-1. If `--backup-code` is specified, backs up the Magento 2 codebase, excluding the `pub/static`, `pub/media`, and `var` directories.
+1. If `--backup-code` is specified, backs up the codebase, excluding the `pub/static`, `pub/media`, and `var` directories.
 
    The backup file name is `var/backups/<timestamp>_filesystem.tgz`
 
@@ -72,7 +74,7 @@ Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following pa
         ExampleCorp/sample-module-theme-depend
 ```
 
-One alternative is to uninstall both themes at the same time as follows after backing up the Magento codebase:
+One alternative is to uninstall both themes at the same time as follows after backing up the codebase:
 
 ```bash
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code

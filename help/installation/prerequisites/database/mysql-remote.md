@@ -5,15 +5,15 @@ description:
 
 # Set up a remote MySQL database connection
 
-There are times when you will want to host the database on a separate server, rather than running the database server and the web server on the same machine.
+There are times when you may want to host the database on a separate server instead of running the database server and the web server on the same machine.
 
-Magento has provided a way to connect to a MySQL server on a different machine. As of Magento 2.4.3, you can also configure Magento to use an Amazon Web Services (AWS) Aurora database with no code changes.
+Adobe has provided a way to connect to a MySQL server on a different machine. As of Adobe Commerce and Magento Open Source 2.4.3, you can also configure the application to use an Amazon Web Services (AWS) Aurora database with no code changes.
 
 Aurora is a high-performance, fully-compliant MySQL server hosted on AWS.
 
 ## Connecting to an AWS Aurora database
 
-Using Aurora as the database is as easy as specifying the database in the regular Magento setup configuration, using the default database connector.
+Using Aurora as the database is as easy as specifying the database in the regular Adobe Commerce and Magento Open Source setup configuration, using the default database connector.
 
 When running `bin/magento setup:install`, use the Aurora information in the `db-` fields:
 
@@ -35,14 +35,14 @@ Before you begin, you must:
 
 *  [Install MySQL server]({{page.baseurl }}/install-gde/prereq/mysql.html) on the database server
 *  [Create a database instance]({{page.baseurl }}/install-gde/prereq/mysql.html#instgde-prereq-mysql-config) on the database server
-*  Install the MySQL client on your Magento web node. Consult MySQL documentation for details.
+*  Install the MySQL client on your Adobe Commerce or Magento Open Source web node. Consult MySQL documentation for details.
 
 ### High availability
 
 Use the following guidelines to configure remote database connections if your web server or database server are clustered:
 
 *  You must configure a connection for each web server node
-*  Typically, you configure a database connection to the database load balancer; however, database clustering can be complex and configuring it is up to you. Magento makes no specific recommendations for database clustering.
+*  Typically, you configure a database connection to the database load balancer; however, database clustering can be complex and configuring it is up to you. Adobe makes no specific recommendations for database clustering.
 
    For more information, see [MySQL documentation](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
@@ -80,7 +80,7 @@ To create a remote connection:
    If it does not exist, add it to the `[mysqld]` section.
 
    ```conf
-   bind-address = <ip address of your Magento web node>
+   bind-address = <ip address of your web node>
    ```
 
    See [MySQL documentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), especially if you have a clustered web server.
@@ -130,7 +130,7 @@ On your web node host, enter the following command to verify the connection work
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-If the MySQL monitor displays as follows, the database is ready for the Magento software:
+If the MySQL monitor displays as follows, the database is ready for Adobe Commerce or Magento Open Source:
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -145,11 +145,11 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 If your web server is clustered, enter the command on each web server host.
 
-## Install the Magento software {#instgde-prereq-mysql-remote-install}
+## Install the Adobe Commerce or Magento Open Source
 
-When you install the Magento software, you must specify the following:
+When you install Adobe Commerce or Magento Open Source, you must specify the following:
 
-*  The Base [URL](https://glossary.magento.com/url) (also referred to as the *store address*) specifies the hostname or IP address of the *web node*
+*  The base [URL](https://glossary.magento.com/url) (also referred to as the *store address*) specifies the hostname or IP address of the *web node*
 *  Database host is the *remote database server* IP address (or load balancer if the database server is clustered)
 *  Database username is the *local web node* database user to which you gave access
 *  Database password is the local web node user's password

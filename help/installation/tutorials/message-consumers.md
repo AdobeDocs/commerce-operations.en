@@ -5,10 +5,10 @@ description:
 
 # Configure message consumers
 
-Before you run this command, you must do all of the following *or* you must [install the Magento software]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html):
+Before you run this command, you must do all of the following *or* you must [install the application]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html):
 
 *  [Create or update the deployment configuration]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-deployment.html)
-*  [Create the Magento database schema]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-db.html)
+*  [Create the database schema]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-db.html)
 
 ## Configure the consumers behavior {#instgde-cli-consumersconfig}
 

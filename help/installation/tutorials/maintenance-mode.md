@@ -5,13 +5,13 @@ description:
 
 # Enable or disable maintenance mode
 
-The following guide refers to a standard Magento maintenance mode page. If you need to use a custom maintenance page, see [Create the custom maintenance page](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) topic.
+The following guide refers to a standard maintenance mode page. If you need to use a custom maintenance page, see [Create the custom maintenance page](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) topic.
 
-Magento uses [maintenance mode]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#maintenance-mode) to disable bootstrapping. Disabling bootstrapping is helpful while you are maintaining, upgrading, or reconfiguring your site.
+Adobe Commerce and Magento Open Source use [maintenance mode]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html#maintenance-mode) to disable bootstrapping. Disabling bootstrapping is helpful while you are maintaining, upgrading, or reconfiguring your site.
 
-Magento detects maintenance mode as follows:
+The application detects maintenance mode as follows:
 
-*  If `var/.maintenance.flag` does not exist, maintenance mode is off and Magento operates normally.
+*  If `var/.maintenance.flag` does not exist, maintenance mode is off and the application operates normally.
 *  Otherwise, maintenance mode is on unless `var/.maintenance.ip` exists.
 
    `var/.maintenance.ip` can contain a list of IP addresses. If an entry point is accessed using HTTP and the client IP address corresponds to one of the entries in that list, then maintenance mode is off.
@@ -23,13 +23,13 @@ To log in as the file system owner:
 {% include install/first-steps-cli.md %}
 In addition to the command arguments discussed here, see [Common arguments]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common).
 
-## Install Magento {#instgde-cli-subcommands-maint-prereq}
+## Install the application {#instgde-cli-subcommands-maint-prereq}
 
-Before you use this command to enable or disable maintenance mode, you must [install the Magento software]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html).
+Before you use this command to enable or disable maintenance mode, you must [install the application]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html).
 
 ## Enable or disable maintenance mode {#instgde-cli-maint}
 
-Use the `magento maintenance` CLI command to enable or disable Magento maintenance mode.
+Use the `magento maintenance` CLI command to enable or disable maintenance mode.
 
 Command usage:
 
@@ -65,7 +65,7 @@ To enable maintenance mode for all clients except 192.0.2.10 and 192.0.2.11:
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 ```
 
-After you place Magento in maintenance mode, you must stop all message queue consumer processes.
+After you place the application in maintenance mode, you must stop all message queue consumer processes.
 One way to find these processes is to run the `ps -ef | grep queue:consumers:start` command, and then run the `kill <process_id>` command for each consumer. In a multiple node environment, repeat this task on each node.
 
 ## Maintain the list of exempt IP addresses {#instgde-cli-maint-exempt}

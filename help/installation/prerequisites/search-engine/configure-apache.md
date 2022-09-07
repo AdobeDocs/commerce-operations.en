@@ -11,7 +11,7 @@ description:
 
 >[!NOTE]
 >
->OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure Magento to use ElasticSearch 7 apply to OpenSearch. See [Migrate ElasticSearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) for more information.
+>OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. See [Migrate ElasticSearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) for more information.
 
 This section discusses how to configure Apache as an *unsecure* proxy so that Adobe Commerce or Magento Open Source can use a search engine running on this server. This section does not discuss setting up HTTP Basic authentication; that is discussed in [Secure communication with Apache](#es-ws-secure-apache).
 
@@ -93,7 +93,7 @@ See one of the following sections:
 
 ### Step 2: Secure communication with Apache {#es-ws-secure-finish}
 
-This section discusses how to set up [HTTP Basic authentication](https://httpd.apache.org/docs/2.2/howto/auth.html). Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or with your Magento server.
+This section discusses how to set up [HTTP Basic authentication](https://httpd.apache.org/docs/2.2/howto/auth.html). Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or with your application server.
 
 This section discusses how to specify who can access the Apache server.
 

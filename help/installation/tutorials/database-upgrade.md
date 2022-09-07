@@ -13,13 +13,13 @@ In addition to the command arguments discussed here, see [Common arguments]({{ p
 
 ## Prerequisites {#instgde-cli-subcommands-maint-prereq}
 
-Before you use this command, you must [install the Magento software]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html).
+Before you use this command, you must [install the application]({{ page.baseurl }}/install-gde/install/cli/install-cli-install.html).
 
-## Upgrade the Magento database schema and data {#instgde-cli-db-upgr}
+## Upgrade the database schema and data {#instgde-cli-db-upgr}
 
-Anytime you perform an action that causes the Magento [database schema](https://glossary.magento.com/database-schema) or data to change, you must update them by running the command discussed in this section. A partial list of reasons follows:
+Anytime you perform an action that causes the [database schema](https://glossary.magento.com/database-schema) or data to change, you must update them by running the command discussed in this section. A partial list of reasons follows:
 
-*  You upgraded the Magento software using the command line
+*  You upgraded the application using the command line
 *  You installed or updated a component using the command line
 *  You enabled or disabled a component using the command line
 

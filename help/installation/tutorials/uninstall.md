@@ -12,27 +12,27 @@ In addition to the command arguments discussed here, see [Common arguments][].
 
 ## Prerequisites {#instgde-install-magento-prereq}
 
-Before you use these commands, you must [install the Magento software][].
+Before you use these commands, you must [install the application][].
 
-## Update the Magento software {#instgde-install-magento-update}
+## Update the application {#instgde-install-magento-update}
 
-To update the Magento software:
+To update the application:
 
 *  If you installed the software from an archive or if you used 'composer-create-project', see the [Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
-*  If you are a contributing developer (that is, you used `git clone`), see [Update the Magento application][].
+*  If you are a contributing developer (that is, you used `git clone`), see [Update the application][].
 
-## Reinstall the Magento software {#instgde-install-magento-reinstall}
+## Reinstall the application {#instgde-install-magento-reinstall}
 
-The way you reinstall the Magento application from the command line depends on your role:
+The way you reinstall the application from the command line depends on your role:
 
-*  If you installed the software from an archive or if you used 'composer-create-project', see [Reinstall Magento Software][].
-*  If you're a contributing developer (that is, you started using `git clone`), see [Reinstall Magento Software][].
+*  If you installed the software from an archive or if you used 'composer-create-project', see [Reinstall the application][].
+*  If you're a contributing developer (that is, you started using `git clone`), see [Reinstall the application][].
 
-## Uninstall the Magento software {#instgde-install-uninstall}
+## Uninstall the application {#instgde-install-uninstall}
 
-Uninstalling the Magento software drops and restores the database, removes the deployment configuration, and clears directories under `var`.
+Uninstalling the application drops and restores the database, removes the deployment configuration, and clears directories under `var`.
 
-To uninstall the Magento software, enter the following command:
+To uninstall the application, enter the following command:
 
 ```bash
 bin/magento setup:uninstall
@@ -48,7 +48,7 @@ The following message displays to confirm a successful uninstallation:
 
 By default, `bin/magento setup:upgrade` clears compiled code and the cache. Typically, you use `bin/magento setup:upgrade` to update components and each component can require different compiled classes.
 
-However, in some situations (particularly, deploying Magento to production), you might wish to avoid clearing compiled code because it can take some time. (The [cache](https://glossary.magento.com/cache) is still cleared.) To update the Magento [database schema](https://glossary.magento.com/database-schema) and data *without* clearing compiled code, enter:
+However, in some situations (particularly, deploying to production), you might wish to avoid clearing compiled code because it can take some time. (The [cache](https://glossary.magento.com/cache) is still cleared.) To update the [database schema](https://glossary.magento.com/database-schema) and data *without* clearing compiled code, enter:
 
 ```bash
 bin/magento setup:upgrade --keep-generated
@@ -58,13 +58,13 @@ bin/magento setup:upgrade --keep-generated
 >
 >The optional `--keep-generated` option should be used in limited circumstances by experienced system integrators *only*. This option should *never* be used in a development environment. Improper use of this optional parameter can cause errors during code execution.
 
-## Install the Commerce software
+## Install the application
 
-*  [Install the Commerce software using the command line][]
+*  [Install using the command line][]
 
 <!-- Link Definitions -->
-[Update the Magento application]: https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html
-[install the Magento software]: {{ page.baseurl }}/install-gde/install/cli/install-cli-install.html
+[Update the application]: https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html
+[install the application]: {{ page.baseurl }}/install-gde/install/cli/install-cli-install.html
 [Common arguments]: {{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common
-[Reinstall Magento Software]: {{ page.baseurl }}/install-gde/install/cli/dev_reinstall.html
-[Install the Magento software using the command line]: {{ page.baseurl }}/install-gde/install/cli/install-cli.html
+[Reinstall the application]: {{ page.baseurl }}/install-gde/install/cli/dev_reinstall.html
+[Install using the command line]: {{ page.baseurl }}/install-gde/install/cli/install-cli.html

@@ -17,7 +17,7 @@ Before you can use this command, you must do all of the following:
 
 -  [Create the deployment configuration]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-deployment.html)
 -  [Enable at minimum the Magento_Authorization and Magento_User modules]({{ page.baseurl }}/install-gde/install/cli/install-cli-subcommands-enable.html)
--  Create the Magento [database schema](https://glossary.magento.com/database-schema)
+-  Create the [database schema](https://glossary.magento.com/database-schema)
 
 >[!NOTE]
 >
@@ -41,12 +41,12 @@ Where the following table defines parameters and values:
 
 |Name|Value|Required?|
 |--- |--- |--- |
-|`--admin-firstname`|Magento administrator user's first name.|Yes|
-|`--admin-lastname`|Magento administrator user's last name.|Yes|
-|`--admin-email`|Magento administrator user's e-mail address.|Yes|
-|`--admin-user`|Magento administrator username.|Yes|
-|`--admin-password`|Magento administrator user password. The password must be at least 7 characters in length and must include at least one alphabetic and at least one numeric character. <br><br>We recommend a longer, more complex password. If the password string contains special characters that require literal interpretation (such as backslashes or spaces), enclose the password in single quotations.|Yes|
-|`--magento-init-params`|Add to any command to customize Magento initialization parameters<br/><br/>For example: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`|No|
+|`--admin-firstname`|Administrator user's first name.|Yes|
+|`--admin-lastname`|Administrator user's last name.|Yes|
+|`--admin-email`|Administrator user's e-mail address.|Yes|
+|`--admin-user`|Administrator username.|Yes|
+|`--admin-password`|Administrator user password. The password must be at least 7 characters in length and must include at least one alphabetic and at least one numeric character. <br><br>We recommend a longer, more complex password. If the password string contains special characters that require literal interpretation (such as backslashes or spaces), enclose the password in single quotations.|Yes|
+|`--magento-init-params`|Add to any command to customize application initialization parameters<br/><br/>For example: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`|No|
 
 Example of usage:
 
@@ -58,7 +58,7 @@ bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admi
 Created Magento administrator user named j.doe
 ```
 
-If you do not specify any of required params Magento will ask about them in the CLI:
+If you do not specify any of the required params, the application asks about them in the CLI:
 
 ```bash
 bin/magento admin:user:create

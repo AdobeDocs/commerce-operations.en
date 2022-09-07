@@ -7,14 +7,13 @@ description:
 
 Before you install Magento, you must do all of the following:
 
-*  Set up one or more hosts that meet the [Magento system requirements]({{page.baseurl}}/install-gde/system-requirements.html).
+*  Set up one or more hosts that meet the [system requirements]({{page.baseurl}}/install-gde/system-requirements.html).
 *  If you are setting up more than one web node with load balancing, set up and test that part of your system _before_ you install Magento.
 *  Make sure you can back up your entire system at various points during the installation so you can roll back in the [event](https://glossary.magento.com/event) of issues.
 
 >[!NOTE]
 >
->We assume you are installing the Magento 2 software in a **development environment**, which means you have root user access to the machine **and** that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
-
+>We assume you are installing the Adobe Commerce or Magento Open Source in a **development environment**, which means you have root user access to the machine **and** that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
 
 We strongly recommend you update and upgrade your operating system software. These upgrades can provide security and software fixes that might prevent future problems. Do not know what any of this means? Check out our [installation overview page]({{page.baseurl}}/install-gde/bk-install-guide.html).
 
@@ -50,7 +49,7 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-Magento supports Apache version 2.4 as the following result indicates:
+Adobe Commerce and Magento Open Source support Apache version 2.4 as the following result indicates:
 
 ```terminal
 Server version: Apache/2.4.0 (Unix)
@@ -75,7 +74,7 @@ For example:
 mysql -u magento -p
 ```
 
-Check you have the correct version of MySQL for the version of Magento you are installing, [Check Here For Supported Versions]({{ page.baseurl }}/install-gde/system-requirements.html). The following result indicates the version you are running.
+Check that you have the correct version of MySQL for the version of Adobe Commerce or Magento Open Source you are installing ([check here for supported versions]({{ page.baseurl }}/install-gde/system-requirements.html). The following result indicates the version you are running.)
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.

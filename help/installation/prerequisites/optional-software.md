@@ -13,7 +13,7 @@ The other optional utilities discussed in this topic might assist you with your 
 
 [NTP](https://www.ntp.org/) enables servers to synchronize their system clocks using [globally available pool servers](https://www.ntppool.org/en/). We recommend you use NTP servers you trust, whether they are dedicated hardware solutions your internal network or external, public servers.
 
-If you are deploying Magento on multiple hosts, NTP is a simple way to guarantee their clocks are all synchronized, no matter what time zone the servers are in. Also, cron-related tasks (such as indexing and transactional e-mails) depend on the server clock being accurate.
+If you are deploying Adobe Commerce or Magento Open Source on multiple hosts, NTP is a simple way to guarantee their clocks are all synchronized, no matter what time zone the servers are in. Also, cron-related tasks (such as indexing and transactional e-mails) depend on the server clock being accurate.
 
 See one of the following sections:
 
@@ -59,7 +59,7 @@ To install and configure NTP:
 
 ### Use NTP pool servers {#install-optional-ntp-servers}
 
-Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recommends you use [pool servers](https://www.ntppool.org/en/) that are close to your servers' time zone as discussed on the [NTP pool project help page](https://www.ntppool.org/en//use.html). If you have a private NTP server that is available to all hosts in your Magento deployment, you can use that server instead.
+Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recommends you use [pool servers](https://www.ntppool.org/en/) that are close to your servers' time zone as discussed on the [NTP pool project help page](https://www.ntppool.org/en//use.html). If you have a private NTP server that is available to all hosts in your deployment, you can use that server instead.
 
 1. Open `/etc/ntp.conf` in a text editor.
 

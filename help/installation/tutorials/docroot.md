@@ -5,7 +5,8 @@ description:
 
 # Modify docroot to improve security
 
-In a standard installation with an Apache web server, Magento is installed to the default web root: `/var/www/html/magento2`.
+In a standard installation with an Apache web server, Adobe Commerce and Magento Open Source is installed to the default web root: `/var/www/html/magento2`.
+
 Within the `magento2` folder are:
 
 -  /pub/
@@ -13,14 +14,14 @@ Within the `magento2` folder are:
 -  /var/
 -  other folders
 
-The Magento app is served from `/var/www/html/magento2/pub`. The rest of the Magento file system is vulnerable because it is accessible from a browser.
-Setting the webroot to the `pub/` directory prevents site visitors from accessing sensitive areas of the Magento file system from a browser.
+The application is served from `/var/www/html/magento2/pub`. The rest of the file system is vulnerable because it is accessible from a browser.
+Setting the webroot to the `pub/` directory prevents site visitors from accessing sensitive areas of the file system from a browser.
 
-This topic describes how to change the Apache docroot on an existing Magento instance to serve files from the Magento `pub/` directory, which is more secure.
+This topic describes how to change the Apache docroot on an existing instance to serve files from the `pub/` directory, which is more secure.
 
 ## A note about nginx
 
-If you are using [nginx]({{ page.baseurl }}/install-gde/prereq/nginx.html) and the [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) file included in the Magento installation directory, you are probably already serving files from the `pub/` directory.
+If you are using [nginx]({{ page.baseurl }}/install-gde/prereq/nginx.html) and the [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) file included in the installation directory, you are probably already serving files from the `pub/` directory.
 
 When used in your server block that defines your site, the `nginx.conf.sample` configuration overrides your server's docroot settings to serve files from Magento's `pub/` directory. For example, see the last line in the following configuration:
 
@@ -42,14 +43,14 @@ When used in your server block that defines your site, the `nginx.conf.sample` c
 
 ## Before you begin
 
-To complete this tutorial, you will need access to a working Magento installation running on a [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack:
+To complete this tutorial, you will need access to a working installation running on a [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack:
 
 -  Linux
 -  Apache (2.4+)
 -  MySQL (5.7+)
 -  PHP (7.4)
 -  Elasticsearch (7.x) or OpenSearch (1.2)
--  Magento (2.4+)
+-  Adobe Commerce or Magento Open Source (2.4+)
 
 >[!NOTE]
 >
@@ -59,14 +60,14 @@ To complete this tutorial, you will need access to a working Magento installatio
 
 The name and location of your virtual host file depends on which version of Apache you are running. This example shows the name and location of the virtual host file on Apache v2.4.
 
-1. Log in to your Magento server.
+1. Log in to your application server.
 1. Edit your virtual host file:
 
    ```bash
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
-1. Add the path to your Magento `pub/` directory to the `DocumentRoot` directive:
+1. Add the path to your `pub/` directory to the `DocumentRoot` directive:
 
    ```conf
     <VirtualHost *:80>
@@ -91,19 +92,19 @@ The name and location of your virtual host file depends on which version of Apac
 
 ## 2. Update your base URL
 
-If you appended a directory name to your server's hostname or IP address to create the base URL when you installed Magento (for example `http://192.168.33.10/magento2`), you'll need to remove it.
+If you appended a directory name to your server's hostname or IP address to create the base URL when you installed the application (for example `http://192.168.33.10/magento2`), you'll need to remove it.
 
 >[!NOTE]
 >
 >Replace `192.168.33.10` with your server's hostname.
 
-1. Log in to the Magento database:
+1. Log in to the database:
 
    ```bash
    mysql -u <user> -p
    ```
 
-1. Specify the Magento database you created when you installed Magento:
+1. Specify the database you created when you installed the application:
 
    ```shell
    use <database-name>
@@ -129,11 +130,11 @@ Refer to the [env.php reference]({{ page.baseurl }}/config-guide/prod/config-ref
 
 ## 4. Switch modes
 
-[Magento modes]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html), which include `production` and `developer`, are designed to improve security and make development easier. As the names suggest, you should switch to `developer` mode when extending or customizing Magento and switch to `production` mode when running Magento in a live environment.
+[Application modes]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html), which include `production` and `developer`, are designed to improve security and make development easier. As the names suggest, you should switch to `developer` mode when extending or customizing the application and switch to `production` mode when running in a live environment.
 
-Switching between modes is an important step in verifying that your server configuration is working properly. You can switch between modes using the Magento CLI tool:
+Switching between modes is an important step in verifying that your server configuration is working properly. You can switch between modes using the CLI tool:
 
-1. Go to your Magento installation directory.
+1. Go to your installation directory.
 1. Switch to `production` mode.
 
    ```bash
@@ -165,12 +166,12 @@ Go to the [storefront](https://glossary.magento.com/storefront) in a web browser
 
    The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
 
-   ![Magento storefront which verifies a successful installation](../../assets/installation/install-success_store.png)
+   ![Storefront which verifies a successful installation](../../assets/installation/install-success_store.png)
 
    Refer to the [troubleshooting section](https://support.magento.com/hc/en-us/articles/360032994352) if the page displays a 404 (Not Found) or fails to load other assets like images, CSS, and JS.
 
-1. Try accessing a Magento directory from a browser. Append the directory name to your server's hostname or IP address in the address bar:
+1. Try accessing an application directory from a browser. Append the directory name to your server's hostname or IP address in the address bar:
 
-   If you see a 404 or the "Access denied" message, you've successfully restricted access to the Magento file system.
+   If you see a 404 or the "Access denied" message, you've successfully restricted access to the file system.
 
    ![Access denied](../../assets/installation/access-denied.png)

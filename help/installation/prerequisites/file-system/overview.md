@@ -5,27 +5,27 @@ description:
 
 # File ownership and permissions
 
-It is important to secure your Magento installation in a development environment to help prevent issues related to unauthorized people or processes accessing—and potentially harming—your system. Use the following file system ownership and permissions guidelines to protect your installation.
+It is important to secure your Adobe Commerce or Magento Open Source installation in a development environment to help prevent issues related to unauthorized people or processes accessing—and potentially harming—your system. Use the following file system ownership and permissions guidelines to protect your installation.
 
 ## File system owner
 
-The file system owner is a user that owns and holds write permissions to files in the Magento file system.
+The file system owner is a user that owns and holds write permissions to files in the file system.
 
 There are two types of file system owners:
 
 -  **Shared hosting with a single user**
 
-   Shared hosting providers enable you to log in to the Magento server as one user. As a single user, you can log in, transfer files using FTP, and run the web server. You have the option of setting a [`umask`](#restrict) to further restrict access, particularly in a production environment.
+   Shared hosting providers enable you to log in to the application server as one user. As a single user, you can log in, transfer files using FTP, and run the web server. You have the option of setting a [`umask`](#restrict) to further restrict access, particularly in a production environment.
 
 -  **Private hosting with two users**
 
-   Private hosting is useful if you manage a Magento server. Each user has a specific responsibility:
+   Private hosting is useful if you manage an application server. Each user has a specific responsibility:
 
-   -  The _web server user_ runs the Admin and storefront.
+    -  The _web server user_ runs the Admin and storefront.
 
-   -  The _command-line user_ runs the Magento cron jobs and command-line utilities.
+    -  The _command-line user_ runs cron jobs and command-line utilities.
 
-   Both users require the same level of permissions to the Magento file system, so it is best to use a [shared group][] and set a [`umask`](#restrict).
+   Both users require the same level of permissions to the file system, so it is best to use a [shared group][] and set a [`umask`](#restrict).
 
 ### Restrict access with a umask {#restrict}
 
@@ -35,7 +35,7 @@ To tighten security, particularly in a production environment on a shared hostin
 >
 >File system security is complex and extremely important. We strongly recommend that you consult an experienced system administrator or network administrator before you decide the level of permissions to set. We provide a mechanism for you to use, but creating a permissions strategy is your responsibility.
 
-Adobe Commerce uses a three-bit, default mask: `002`. Subtract the Magento default mask from the UNIX defaults of 666 for files and 777 for directories.
+Adobe Commerce and Magento Open Source use a three-bit, default mask: `002`. Subtract the default mask from the UNIX defaults of 666 for files and 777 for directories.
 
 For example:
 
@@ -45,15 +45,21 @@ For example:
 
 For more information about creating a `magento_umask` file, see [Optionally set a umask]({{ page.baseurl }}/install-gde/install/post-install-umask.html).
 
-## Permissions, ownership, and Magento modes
+## Permissions, ownership, and application modes
 
-We recommend different permissions and ownership when you use the different Magento modes: default mode, developer mode, and production mode. See [About Magento modes][modes] in the _Configuration guide_.
+We recommend different permissions and ownership when you use the different Adobe Commerce and Magento Open Source application modes:
+
+- Default
+- Developer
+- Production
+
+See [About modes][modes] in the _Configuration guide_.
 
 We further discuss permissions recommendations in [File systems access permissions][config-file-access] in the _Configuration guide_.
 
 >[!TIP]
 >
->Before you install the Magento software, review [Set pre-installation ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-system-perms.html).
+>Before you install Adobe Commerce or Magento Open Source, review [Set pre-installation ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-system-perms.html).
 
 <!-- link definitions -->
 

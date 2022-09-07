@@ -7,16 +7,16 @@ description:
 
 See [System Requirements]({{ page.baseurl }}/install-gde/system-requirements.html) for supported versions of MySQL.
 
-Magento _strongly_ recommends you observe the following standard when you set up your Magento database:
+Adobe _strongly_ recommends you observe the following standard when you set up your database:
 
-*  Magento uses [MySQL database triggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) to improve database access during reindexing. These get created when the indexer mode is set to [schedule]({{page.baseurl}}/config-guide/cli/config-cli-subcommands-index.html#configure-indexers-1). Magento does not support any custom triggers in the Magento database because custom triggers can introduce incompatibilities with future Magento versions.
+*  Adobe Commerce and Magento Open Source use [MySQL database triggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) to improve database access during reindexing. These get created when the indexer mode is set to [schedule]({{page.baseurl}}/config-guide/cli/config-cli-subcommands-index.html#configure-indexers-1). The application does not support any custom triggers in the database because custom triggers can introduce incompatibilities with future Adobe Commerce and Magento Open Source versions.
 *  Familiarize yourself with [these potential MySQL trigger limitations](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) before you continue.
 *  To enhance your database security posture, enable the [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL mode to prevent storing invalid data values, which might cause unwanted database interactions.
-*  If you use MySQL database replication, be aware that Magento does _not_ support MySQL statement-based replication. Make sure you use _only_ [row-based replication](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.htmll).
+*  If you use MySQL database replication, be aware that Adobe Commerce and Magento Open Source do _not_ support MySQL statement-based replication. Make sure you use _only_ [row-based replication](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.htmll).
 
 >[!WARNING]
 >
->Magento 2 currently utilizes `CREATE TEMPORARY TABLE` statements inside transactions, which are [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) with database implementations utilizing GTID-based replication, such as [Google Cloud SQL second-generation instances](https://cloud.google.com/sql/docs/features#differences). Consider MySQL for Cloud SQL 8.0 as an alternative.
+>Adobe Commerce and Magento Open Source currently use `CREATE TEMPORARY TABLE` statements inside transactions, which are [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) with database implementations utilizing GTID-based replication, such as [Google Cloud SQL second-generation instances](https://cloud.google.com/sql/docs/features#differences). Consider MySQL for Cloud SQL 8.0 as an alternative.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Magento _strongly_ recommends you observe the following standard when you set up
 
 ## Installing MySQL on Ubuntu {#instgde-prereq-mysql-ubuntu}
 
-Magento 2.4 requires a clean installation of MySQL 8.0. Follow the links below for instructions on installing MySQL on your machine.
+Adobe Commerce and Magento Open Source 2.4 require a clean installation of MySQL 8.0. Follow the links below for instructions on installing MySQL on your machine.
 
 *  [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
 *  [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
@@ -37,19 +37,18 @@ If you expect to import large numbers of products into Magento, you can increase
 
 {% include install/mysql_max-allowed-packet-ubuntu.md %}
 
-Then, [Configure the Magento database instance](#instgde-prereq-mysql-config).
+Then, [Configure the database instance](#instgde-prereq-mysql-config).
 
 ## MySQL 8 changes
 
-For Magento 2.4, we added support for MySQL 8.
-This section describes major changes to MySQL 8 that Magento developers should be aware of.
+For Adobe Commerce and Magento Open Source 2.4, we added support for MySQL 8.
+This section describes major changes to MySQL 8 that developers should be aware of.
 
-### Removed width for integer types (Padding)
+### Removed width for integer types (padding)
 
-The display width specification for integer data types (TINYINT, SMALLINT, MEDIUMINT, INT, BIGINT)
-have been deprecated in MySQL 8.0.17. Statements that include data-type definitions in their output no longer show the display width for integer types, with the exception of TINYINT(1). MySQL Connectors assume that TINYINT(1) columns originated as BOOLEAN columns. This exception enables them to continue to make that assumption.
+The display width specification for integer data types (TINYINT, SMALLINT, MEDIUMINT, INT, BIGINT) have been deprecated in MySQL 8.0.17. Statements that include data-type definitions in their output no longer show the display width for integer types, with the exception of TINYINT(1). MySQL Connectors assume that TINYINT(1) columns originated as BOOLEAN columns. This exception enables them to continue to make that assumption.
 
-#### Example:
+#### Example
 
 Describe admin_user at mysql 8.19
 
@@ -80,25 +79,26 @@ Always specify a sort order if your code depends on a specific sort.
 
 As of MySQL 8.0.13, the deprecated `ASC` or `DESC` qualifiers for `GROUP BY` clauses have been removed. Queries that previously relied on `GROUP BY` sorting may produce results that differ from previous MySQL versions. To produce a given sort order, provide an `ORDER BY` clause.
 
-## Magento and MySQL 8
+## Commerce and MySQL 8
 
-There have been some changes to Magento to properly support MySQL 8.
+There have been some changes to Adobe Commerce and Magento Open Source to properly support MySQL 8.
 
 ### Query and Insert Behavior
 
-Magento disabled the regular validation behavior by setting SET SQL_MODE='' in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. With validation disabled, it is possible that MySQL will truncate data. In MySQL, the Query behavior has changed: `Select * on my_table where IP='127.0.0.1'` will no longer return any results because the IP address is now properly seen as a string, rather than an integer.
+Adobe Commerce and Magento Open Source disabled the regular validation behavior by setting SET SQL_MODE='' in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. With validation disabled, it is possible that MySQL will truncate data. In MySQL, the Query behavior has changed: `Select * on my_table where IP='127.0.0.1'` will no longer return any results because the IP address is now properly seen as a string, rather than an integer.
 
 ## Upgrading from MySQL 5.7 to MySQL 8
 
 To properly update MySQL from version 5.7 to version 8, you must follow these steps in order:
 
-1. Upgrade Magento to 2.4.0.
+1. Upgrade Adobe Commerce or Magento Open Source to 2.4.0.
    Test everything and make sure your system works as expected.
 1. Enable maintenance mode:
 
    ```bash
    bin/magento maintenance:enable
    ```
+
 1. Make a database backup:
 
    ```bash
@@ -112,15 +112,16 @@ To properly update MySQL from version 5.7 to version 8, you must follow these st
    ```bash
    bin/magento cache:clean
    ```
+
 1. Disable maintenance mode:
 
    ```bash
    bin/magento maintenance:disable
    ```
 
-## Configuring the Magento database instance {#instgde-prereq-mysql-config}
+## Configuring the database instance {#instgde-prereq-mysql-config}
 
-This section discusses how to create a new database instance for Magento. Although a new database instance is recommended, you can optionally install Magento into an existing database instance.
+This section discusses how to create a new database instance for Magento. Although a new database instance is recommended, you can optionally install Adobe Commerce or Magento Open Source with an existing database instance.
 
 To configure a MySQL database instance:
 
@@ -164,9 +165,9 @@ To configure a MySQL database instance:
 
    We recommend you configure your database instance as appropriate for your business. When configuring your database, please keep the following in mind:
 
-   *  Indexers require higher `tmp_table_size` and `max_heap_table_size` values (e.g., 64M). If you configure the `batch_size` parameter, you can adjust that value along with the table size settings to improve indexer performance. Refer to the [Magento Optimization Guide]({{page.baseurl }}/performance-best-practices/configuration.html) for more information.
+   *  Indexers require higher `tmp_table_size` and `max_heap_table_size` values (e.g., 64M). If you configure the `batch_size` parameter, you can adjust that value along with the table size settings to improve indexer performance. Refer to the [Optimization Guide]({{page.baseurl }}/performance-best-practices/configuration.html) for more information.
 
-   *  For optimal performance, make sure all MySQL and Magento index tables can be kept in memory (e.g., configure `innodb_buffer_pool_size`).
+   *  For optimal performance, make sure all MySQL and Adobe Commerce or Magento Open Source index tables can be kept in memory (for example, configure `innodb_buffer_pool_size`).
 
    *  {% include install/maria-db.md %}
 
