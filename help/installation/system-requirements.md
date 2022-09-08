@@ -8,7 +8,7 @@ This table shows versions of third-party software dependencies that Adobe has te
 
 For example, 2.4.3 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.3.
 
-{{%include /help/system-requirements-table.html}}
+{{$include /help/_includes/system-requirements-table.md}}
 
 ## Miscellaneous
 
@@ -34,7 +34,7 @@ Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Deb
 >The [PHP installation instructions][] include a step for installing these extensions.
 
 
-{{%include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/php-extensions.md}}
 
 Refer to [official PHP documentation][] for installation details.
 
