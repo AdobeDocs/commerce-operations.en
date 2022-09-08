@@ -5,9 +5,9 @@ description:
 
 # Configure Nginx for your search engine
 
-{% include config/es-webserver-overview.md %}
+{{%include /help/_includes/web-server-communication.md}}
 
-## Set up a proxy {#es-nginx-proxy}
+## Set up a proxy
 
 >[!NOTE]
 >
@@ -21,10 +21,10 @@ This section discusses how to configure nginx as an *unsecure* proxy so that Ado
 
 See one of the following sections for more information:
 
-*  [Step 1: Specify additional configuration files in your global `nginx.conf`](#es-ws-secure-nginx-conf)
-*  [Step 2: Set up nginx as a proxy](#es-ws-secure-nginx-proxy)
+*  [Step 1: Specify additional configuration files in your global `nginx.conf`](#step-1-specify-additional-configuration-files-in-your-global-nginxconf)
+*  [Step 2: Set up nginx as a proxy](#step-2-set-up-nginx-as-a-proxy)
 
-### Step 1: Specify additional configuration files in your global `nginx.conf` {#es-ws-secure-nginx-conf}
+### Step 1: Specify additional configuration files in your global `nginx.conf`
 
 Make sure your global `/etc/nginx/nginx.conf` contains the following line so it loads the other configuration files discussed in the following sections:
 
@@ -32,7 +32,7 @@ Make sure your global `/etc/nginx/nginx.conf` contains the following line so it 
 include /etc/nginx/conf.d/*.conf;
 ```
 
-### Step 2: Set up nginx as a proxy {#es-ws-secure-nginx-proxy}
+### Step 2: Set up nginx as a proxy
 
 This section discusses how to specify who can access the [nginx](https://glossary.magento.com/nginx) server.
 
@@ -77,7 +77,7 @@ This section discusses how to specify who can access the [nginx](https://glossar
    {"cluster_name":"elasticsearch","status":"yellow","timed_out":false,"number_of_nodes":1,"number_of_data_nodes":1,"active_primary_shards":5,"active_shards":5,"relocating_shards":0,"initializing_shards":0,"unassigned_shards":5,"delayed_unassigned_shards":0,"number_of_pending_tasks":0,"number_of_in_flight_fetch":0,"task_max_waiting_in_queue_millis":0,"active_shards_percent_as_number":50.0}
    ```
 
-## Secure communication with nginx {#es-ws-secure-nginx}
+## Secure communication with nginx
 
 This section discusses how to set up [HTTP Basic authentication](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) with your secure proxy. Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or with your Adobe Commerce or Magento Open Source server.
 
@@ -91,12 +91,12 @@ Additional resources:
 
 See the following sections for more information:
 
-*  [Step 1: Create passwords](#es-ws-secure-nginx-pwd)
-*  [Step 2: Set up access to nginx](#es-ws-secure-nginx-access)
-*  [Step 3: Set up a restricted context for the search engine](#es-ws-secure-nginx-context)
-*  [Verify communication is secure](#es-ws-secure-verify)
+*  [Step 1: Create passwords](#step-1-create-a-password)
+*  [Step 2: Set up access to nginx](#step-3-set-up-access-to-nginx)
+*  [Step 3: Set up a restricted context for the search engine](#step-4-set-up-a-restricted-context-for-the-search-engine)
+*  [Verify communication is secure](#secure-communication-with-nginx)
 
-### Step 1: Create a password {#es-ws-secure-nginx-pwd}
+### Step 1: Create a password
 
 We recommend you use the Apache `htpasswd` command to encode passwords for a user with access to Elasticsearch or OpenSearch (named `magento_elasticsearch` in this example).
 
@@ -137,7 +137,7 @@ To create a password:
 
 1. Verify that the contents of `/etc/nginx/passwd` is correct.
 
-### Step 3: Set up access to nginx {#es-ws-secure-nginx-access}
+### Step 3: Set up access to nginx
 
 This section discusses how to specify who can access the nginx server.
 
@@ -180,7 +180,7 @@ server {
 >
 >The search engine listen port shown in the preceding example are examples only. For security reasons, we recommend you use a non-default listen port.
 
-### Step 4: Set up a restricted context for the search engine {#es-ws-secure-nginx-context}
+### Step 4: Set up a restricted context for the search engine
 
 This section discusses how to specify who can access the search engine server.
 
@@ -211,4 +211,6 @@ This section discusses how to specify who can access the search engine server.
    service nginx restart
    ```
 
-{% include config/es-verify-proxy-24.md %}
+#### Verify
+
+{{%include /help/_includes/verify-secure-communication.md}}

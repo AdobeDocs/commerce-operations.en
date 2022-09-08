@@ -5,7 +5,7 @@ description:
 
 # Install Adobe Commerce
 
-## Before you start your installation {#instgde-install-cli-prereq}
+## Before you start your installation
 
 Before you begin, complete the following steps:
 
@@ -37,9 +37,11 @@ You can run the installer multiple times with different options to complete inst
 
 See also [Update, reinstall, uninstall](uninstall.md).
 
-{% include install/fully-secure.md %}
+### Secure installation
 
-## Installer help commands {#instgde-cli-help-cmds}
+{{%include /help/_includes/secure-install.md}}
+
+## Installer help commands
 
 You can run the following commands to find values for some required arguments:
 
@@ -53,7 +55,7 @@ You can run the following commands to find values for some required arguments:
 >
 >If an error displays when you run these commands, verify that you updated installation dependencies as discussed in [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 
-## Install from the command line {#instgde-install-cli-magento}
+## Install from the command line
 
 The install command uses the following format:
 
@@ -161,15 +163,17 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 
 **Consumers configuration options:**
 
-{% include config/consumers.md %}
+{{%include /help/_includes/cli-consumers.md}}
 
 >[!NOTE]
 >
 >To enable or disable modules after installing the application, see [Enable and disable modules](manage-modules.md).
 
-{% include install/sens-data.md %}
+**Sensitive data:**
 
-### Sample localhost installations {#install-cli-example}
+{{%include /help/_includes/sensitive-data.md}}
+
+### Sample localhost installations
 
 The following examples show the commands to complete install Adobe Commerce locally with various options.
 

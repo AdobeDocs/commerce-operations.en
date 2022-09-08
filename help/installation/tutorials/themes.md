@@ -5,7 +5,7 @@ description:
 
 # Uninstall themes
 
-## Prerequisite {#instgde-install-uninst-theme-prereq}
+## Prerequisite
 
 Before you use this command, you must know the relative path to your theme. Themes are located in a subdirectory of `<magento_root>/app/design/<area name>`. You must specify the path to the theme starting with the area, which is either `frontend` (for storefront themes) or `adminhtml` (for [Admin](https://glossary.magento.com/magento-admin) themes).
 
@@ -13,7 +13,7 @@ For example, the path to the Luma [theme](https://glossary.magento.com/theme) pr
 
 For more information about themes, see [theme structure](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-structure.html).
 
-## Overview of uninstalling themes {#instgde-install-uninst-theme-over}
+## Overview of uninstalling themes
 
 This section discusses how to uninstall one or more themes, optionally including the themes' code from the file system. You can create backups first so you can restore the data at a later time.
 
@@ -24,11 +24,11 @@ This command uninstalls *only* themes that are specified in `composer.json`; in 
 
    [More information about theme inheritance](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-inherit.html).
 
-## First steps {#instgde-cli-before}
+## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
-## Uninstall themes {#instgde-install-uninst-theme-uninst}
+## Uninstall themes
 
 Command usage:
 

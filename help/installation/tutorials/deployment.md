@@ -7,13 +7,13 @@ description:
 
 ## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
 ## Prerequisites
 
 There are no prerequisites for using this command.
 
-## Create or update the deployment configuration {#instgde-cli-subcommands-configphp}
+## Create or update the deployment configuration
 
 [Deployment configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html) provides the information that the application needs to initialize and bootstrap.
 
@@ -61,4 +61,6 @@ The optional `[-n, --no-interaction]` flag allows the command to run without add
 
 For additional information, please, check the [Import data from configuration files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration.html)
 
-{% include install/sens-data.md %}
+### Sensitive data
+
+{{%include /help/_includes/sensitive-data.md}}

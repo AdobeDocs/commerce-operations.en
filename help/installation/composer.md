@@ -5,7 +5,17 @@ description:
 
 # Quick start on-premises installation
 
-{% include install/composer-overview.md %}
+We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source [metapackage](https://glossary.magento.com/metapackage) provides the following advantages:
+
+-  Reuse third-party libraries without bundling them with source code
+-  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
+-  Adhere to [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) standards
+-  Repackage {{site.data.var.ce}} with other components
+-  Use the Magento software in a production environment
+
+>[!NOTE]
+>
+>Developers contributing to Magento Open Source should use the [git-based](https://developer.adobe.com/commerce/contributor/guides/install/) installation method.
 
 ## Prerequisites
 
@@ -15,13 +25,13 @@ Before you continue, you must do the following:
 -  [Install Composer](https://getcomposer.org/download/).
 -  Get [authentication keys](prerequisites/authentication-keys.md) to the Adobe Commerce and Magento Open Source Composer repository.
 
-## Log in as file system owner {#instgde-cli-before}
+## Log in as file system owner
 
 Learn about ownership, permissions, and the file system owner in our [Overview of ownership and permissions topic](prerequisites/file-system/overview.md).
 
 To switch to the file system owner:
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
 ## Get the metapackage
 
@@ -49,7 +59,10 @@ To get the Adobe Commerce or Magento Open Source metapackage:
 
     See [Troubleshooting](https://support.magento.com/hc/en-us/articles/360033818091) for help with more errors.
 
-    {% include install/pre-release.md %}
+    >[!NOTE]
+    >
+    >Adobe Commerce customers can access 2.4.x and 2.3.x patches two weeks before the General Availability (GA) date. Pre-release packages are available through Composer only. You cannot access pre-releases on the Developer Portal or GitHub until GA. If you cannot find these packages in Composer, contact Adobe Commerce Support.
+
 
 ### Example - Minor release
 
@@ -128,9 +141,29 @@ bin/magento setup:install \
 >For a full description of the CLI install options, see [Install the application from the command line](advanced.md).
 
 
-## Command summary {#instgde-cli-summary}
+## Command summary
 
-{% include install/cli_help-commands.md %}
+To display a complete list of commands, enter:
+
+```bash
+bin/magento list
+```
+
+To get help for a particular command, enter:
+
+```bash
+bin/magento help <command>
+```
+
+For example:
+
+```bash
+bin/magento help setup:install
+```
+
+```bash
+bin/magento help cache:enable
+```
 
 The following table summarizes the available commands. Commands are shown in summary form only. For more information about a command, click the link in the Command column.
 
@@ -151,9 +184,19 @@ Database (simplest way is to use magento setup:upgrade)|
 |`magento list`|Lists all available commands.|None|
 |`magento help`|Provides help for the specified command.|None|
 
-### Common arguments {#instgde-cli-subcommands-common}
+### Common arguments
 
-{% include install/cli_common-commands.md %}
+The following arguments are common to all commands. These commands can be run either before or after the application is installed:
+
+|Long version|Short version|Meaning|
+|--- |--- |--- |
+|`--help`|`-h`|Get help for any command. For example, `./magento help setup:install` or `./magento help setup:config:set`.|
+|`--quiet`|`-q`|Quiet mode; no output.|
+|`--no-interaction`|`-n`|No interactive questions.|
+|`--verbose=1,2,3`|`-v, -vv, -vvv`|Verbosity level. For example, `--verbose=3` or `-vvv` displays debug verbosity, which is the most verbose output. Default is `--verbose=1` or `-v`.|
+|`--version`|`-V`|Display this application version|
+|`--ansi`|n/a|Force ANSI output|
+|`--no-ansi`|n/a|Disable ANSI output|
 
 >[!NOTE]
 >

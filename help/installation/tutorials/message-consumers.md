@@ -10,7 +10,7 @@ Before you run this command, you must do all of the following *or* you must [ins
 *  [Create or update the deployment configuration](deployment.md)
 *  [Create the database schema](database.md)
 
-## Configure the consumers behavior {#instgde-cli-consumersconfig}
+## Configure the consumers behavior
 
 Configuring consumer behavior is done by sending key/value pairs within the setup function:
 
@@ -20,4 +20,4 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 ### Parameter descriptions
 
-{% include config/consumers.md %}
+{{%include /help/_includes/cli-consumers.md}}

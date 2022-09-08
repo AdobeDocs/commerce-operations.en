@@ -27,7 +27,7 @@ There are two types of file system owners:
 
    Both users require the same level of permissions to the file system, so it is best to use a [shared group](configure-permissions.md#set-ownership-and-permissions-for-two-users) and set a [`umask`](#restrict-access-with-a-umask).
 
-### Restrict access with a umask {#restrict}
+### Restrict access with a umask
 
 To tighten security, particularly in a production environment on a shared hosting system, you can use `umask` to restrict access. A `umask`—also referred to as a _file system creation mask_—is a set of bits that controls how the file permissions are set for newly created files.
 

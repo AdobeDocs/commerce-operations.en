@@ -5,15 +5,15 @@ description:
 
 # Upgrade the database schema and data
 
-## First steps {#instgde-cli-before}
+## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
-## Prerequisites {#instgde-cli-subcommands-maint-prereq}
+## Prerequisites
 
 Before you use this command, you must [install the application](../advanced.md).
 
-## Upgrade the database schema and data {#instgde-cli-db-upgr}
+## Upgrade the database schema and data
 
 Anytime you perform an action that causes the [database schema](https://glossary.magento.com/database-schema) or data to change, you must update them by running the command discussed in this section. A partial list of reasons follows:
 

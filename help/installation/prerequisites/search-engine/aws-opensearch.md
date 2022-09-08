@@ -44,7 +44,7 @@ To test that the new configuration is working, test the OpenSearch endpoint dire
   To get products from index, append: `/magento2docker_product_1/_search?q=*` to the URL:
   `<AWS OS endpoint>/magento2docker_product_1/_search?q=testproduct1`
 
-## Additional resources {#es-resources}
+## Additional resources
 
 For additional information, see the [OpenSearch AWS documentation][].
 

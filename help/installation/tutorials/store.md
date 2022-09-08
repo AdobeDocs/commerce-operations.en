@@ -5,20 +5,22 @@ description:
 
 # Configure the store
 
-## First steps {#instgde-cli-before}
+## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
-## Prerequisites {#instgde-cli-subcommands-store-prereq}
+## Prerequisites
 
 Before you run this command, you must do all of the following *or* you must [install the application](../advanced.md):
 
 *  [Create or update the deployment configuration](deployment.md)
 *  [Create the database schema](database.md)
 
-{% include install/fully-secure.md %}
+### Secure installation
 
-## Configure the store {#instgde-cli-storeconfig}
+{{%include /help/_includes/secure-install.md}}
+
+## Configure the store
 
 Command usage:
 

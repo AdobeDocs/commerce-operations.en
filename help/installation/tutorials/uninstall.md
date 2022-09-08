@@ -5,29 +5,29 @@ description:
 
 # Uninstall or reinstall Adobe Commerce
 
-## First steps {#instgde-cli-before}
+## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
-## Prerequisites {#instgde-install-magento-prereq}
+## Prerequisites
 
 Before you use these commands, you must [install the application](../tutorials/install.md).
 
-## Update the application {#instgde-install-magento-update}
+## Update the application
 
 To update the application:
 
 *  If you installed the software from an archive or if you used 'composer-create-project', see the [Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
 *  If you are a contributing developer (that is, you used `git clone`), see [Update the application](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html).
 
-## Reinstall the application {#instgde-install-magento-reinstall}
+## Reinstall the application
 
 The way you reinstall the application from the command line depends on your role:
 
 *  If you installed the software from an archive or if you used 'composer-create-project', see [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 *  If you're a contributing developer (that is, you started using `git clone`), see [Update installation dependencies](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 
-## Uninstall the application {#instgde-install-uninstall}
+## Uninstall the application
 
 Uninstalling the application drops and restores the database, removes the deployment configuration, and clears directories under `var`.
 
@@ -43,7 +43,7 @@ The following message displays to confirm a successful uninstallation:
 [SUCCESS]: Magento uninstallation complete.
 ```
 
-## Optionally keeping generated files {#instgde-install-keep}
+## Optionally keeping generated files
 
 By default, `bin/magento setup:upgrade` clears compiled code and the cache. Typically, you use `bin/magento setup:upgrade` to update components and each component can require different compiled classes.
 

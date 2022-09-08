@@ -31,7 +31,7 @@ apt-get install ntp
 
 Continue with [Use NTP pool servers](#install-optional-ntp-servers).
 
-### Install and configure NTP on CentOS {#install-optional-ntp-centos}
+### Install and configure NTP on CentOS
 
 To install and configure NTP:
 

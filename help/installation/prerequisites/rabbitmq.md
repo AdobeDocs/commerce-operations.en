@@ -18,7 +18,7 @@ The message queue system must be established before you install Magento. The bas
 >
 >You can use MySQL or RabbitMQ for message queue processing. For details on setting up the message queue system, see [Message queues overview](https://developer.adobe.com/commerce/php/development/components/message-queues/). If you are using the Bulk API with Adobe Commerce, the message queue system configuration defaults to using RabbitMQ as the message broker. See [Start message queue consumers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/start-message-queues.html) for more information.
 
-## Install RabbitMQ on Ubuntu {#ubuntu-install}
+## Install RabbitMQ on Ubuntu
 
 To install RabbitMQ on Ubuntu 16 enter the following command:
 
@@ -35,7 +35,7 @@ If you have an older version of Ubuntu, RabbitMQ recommends installing the packa
 
 Refer to [Installing on Debian/Ubuntu](https://www.rabbitmq.com/install-debian.html) for more information.
 
-## Install RabbitMQ on CentOS {#centos-install}
+## Install RabbitMQ on CentOS
 
 ### Install Erlang
 
@@ -53,7 +53,7 @@ Refer to the RabbitMQ install page to get the latest supported version. Adobe Co
 
 Refer to [Installing on RPM-based Linux](https://www.rabbitmq.com/install-rpm.html) for more information.
 
-## Configure RabbitMQ {#config}
+## Configure RabbitMQ
 
 Review the official RabbitMQ documentation to configure and manage RabbitMQ. Pay attention to the following items:
 

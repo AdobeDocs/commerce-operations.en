@@ -5,15 +5,15 @@ description:
 
 # Enable or disable modules
 
-## First steps {#instgde-cli-before}
+## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
-## Prerequisites {#instgde-cli-subcommands-enable-disable-prereq}
+## Prerequisites
 
 This command has no prerequisites.
 
-## Module status {#instgde-cli-subcommands-status}
+## Module status
 
 Use the following command to list enabled and disabled modules:
 
@@ -27,7 +27,7 @@ where
 *  `--disabled` lists all disabled modules.
 *  `<module-list>` is a space-delimited list of modules to check the status. If any [module](https://glossary.magento.com/module) name contains special characters, enclose the name in either single or double quotes.
 
-## Module enable, disable {#instgde-cli-subcommands-enable-disable}
+## Module enable, disable
 
 To enable or disable available modules, use the following command:
 
@@ -58,7 +58,7 @@ bin/magento module:disable Magento_Weee
 
 For important information about enabling and disabling modules, see [About enabling and disabling modules](#instgde-cli-subcommands-enable-modules).
 
-## Update the database {#instgde-cli-subcommands-enable-update}
+## Update the database
 
 If you enabled one or more modules, run the following command to update the database:
 
@@ -72,5 +72,34 @@ Then clean the cache:
 bin/magento cache:clean
 ```
 
-## About enabling and disabling modules {#instgde-cli-subcommands-enable-modules}
-{% include install/enable-disable-modules.md %}
+## About enabling and disabling modules
+
+Adobe Commerce and Magento Open Source enable you to enable or disable currently available modules; in other words, any Adobe-provided module or any third-party module that is currently available.
+
+Certain modules have dependencies on other modules, in which case you might not be able to enable or disable a module because it has dependencies on other modules.
+
+In addition, there might be *conflicting* modules that cannot both be enabled at the same time.
+
+Examples:
+
+*  Module A depends on Module B. You cannot disable Module B unless you first disable Module A.
+
+*  Module A depends on Module B, both of which are disabled. You must enable module B before you can enable module A.
+
+*  Module A conflicts with Module B. You can disable Module A and Module B, or you can disable either module but you *cannot* enable Module A and Module B at the same time.
+
+*  Dependencies are declared in the `require` field in Magento's `composer.json` file for each module. Conflicts are declared in the `conflict` field in modules' `composer.json` files. We use that information to build a dependency graph: `A->B` means module A depends on module B.
+
+*  A *dependency chain* is the path from a module to another one. For example, if module A depends on module B and module B depends on module C, then the dependency chain is `A->B->C`.
+
+If you attempt to enable or disable a module that depends on other modules, the dependency graph displays in the error message.
+
+>[!NOTE]
+>
+>It's possible that module A's `composer.json` declares a conflict with module B but not vice versa.
+
+*Command line only:* To force a module to be enabled or disabled regardless of its dependencies, use the optional `--force` argument.
+
+>[!NOTE]
+>
+>Using `--force` can disable your store and cause problems accessing the Admin.

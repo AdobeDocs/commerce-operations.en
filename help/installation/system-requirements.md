@@ -8,7 +8,7 @@ This table shows versions of third-party software dependencies that Adobe has te
 
 For example, 2.4.3 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.3.
 
-{% include install/system-requirements-table.html %}
+{{%include /help/system-requirements-table.html}}
 
 ## Miscellaneous
 
@@ -34,7 +34,7 @@ Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Deb
 >The [PHP installation instructions][] include a step for installing these extensions.
 
 
-{% include install/php-extensions-template.md %}
+{{%include /help/_includes/php-extensions.md}}
 
 Refer to [official PHP documentation][] for installation details.
 
@@ -80,7 +80,15 @@ Adobe Commerce and Magento Open Source require the following system tools for so
 
 ### Supported browsers
 
-{% include browsers/supported-browsers-24.md %}
+Storefront and Admin:
+
+*  Microsoft Edge, latest and previous major version
+*  Firefox latest, latest and previous major version (any operating system)
+*  Chrome latest, latest and previous major version (any operating system)
+*  Safari latest, latest and previous major version (Mac OS only)
+*  Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
+*  Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
+*  Chrome for mobile, latest and previous major version (Android 4 or later) for mobile storefront
 
 ### Xdebug
 

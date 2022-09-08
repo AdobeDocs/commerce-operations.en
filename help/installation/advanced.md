@@ -16,7 +16,22 @@ description:
 
 ## Command-line interface (CLI)
 
-{% include install/new-cli-intro.md %}
+Adobe Commerce and Magento Open Source have one command-line interface that performs both installation and configuration tasks: `<magento_root>/bin/magento`. The interface performs multiple tasks, including:
+
+*  Installation (and related tasks such as creating or updating the database schema, creating the deployment configuration, and so on).
+*  Clearing the cache.
+*  Managing indexes, including reindexing.
+*  Creating translation dictionaries and translation packages.
+*  Generating non-existent classes such as factories and interceptors for plug-ins, generating the dependency injection configuration for the object manager.
+*  Deploying static view files.
+*  Creating CSS from Less.
+
+Other benefits:
+
+*  A single command (`<magento_root>/bin/magento list`) lists all available installation and configuration commands.
+*  Consistent user interface based on Symfony.
+*  The CLI is extensible so third party developers can "plug in" to it. This has the additional benefit of eliminating users' learning curve.
+*  Commands for disabled modules do not display.
 
 This topic discusses installing the Adobe Commerce or Magento Open Source software using the CLI. For information about configuration, see the [Configuration Guide](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html).
 
@@ -29,7 +44,7 @@ The installer is designed to be run multiple times if necessary so you can:
 *  Correct mistakes in previous installations
 *  Install Adobe Commerce or Magento Open Source in a different database instance
 
-## Before you start your installation {#instgde-install-cli-prereq}
+## Before you start your installation
 
 Before you begin, complete the following steps:
 
@@ -47,7 +62,6 @@ Before you begin, complete the following steps:
 >
 >You must install Adobe Commerce or Magento Open Source from the `bin` subdirectory.
 
-
 You can run the installer multiple times with different options to complete installation tasks like the following:
 
 *  Install in phases — For example, after you configure your web server for Secure Sockets Layer (SSL), you can run the installer again to set SSL options.
@@ -60,12 +74,13 @@ You can run the installer multiple times with different options to complete inst
 >
 >By default, the installer does not overwrite the database if you install the software in the same database instance. You can use the optional `cleanup-database` parameter to change this behavior.
 
-
 See also [Update, reinstall, uninstall](tutorials/uninstall.md).
 
-{% include install/fully-secure.md %}
+### Secure installation
 
-## Installer help commands {#instgde-cli-help-cmds}
+{{%include /help/_includes/secure-install.md}}
+
+## Installer help commands
 
 You can run the following commands to find values for some required arguments:
 
@@ -174,16 +189,17 @@ The following tables provide many but not all available install parameters. For 
 
 **Consumers configuration options:**
 
-{% include config/consumers.md %}
+{{%include /help/_includes/cli-consumers.md}}
 
 >[!NOTE]
 >
 >To enable or disable modules after installing Magento, see [Enable and disable modules](tutorials/manage-modules.md).
 
+**Sensitive data:**
 
-{% include install/sens-data.md %}
+{{%include /help/_includes/sensitive-data.md}}
 
-### Sample localhost installations {#install-cli-example}
+### Sample localhost installations
 
 The following examples show the commands to complete install Adobe Commerce locally with various options.
 

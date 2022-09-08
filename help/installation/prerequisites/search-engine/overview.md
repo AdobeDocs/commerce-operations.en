@@ -62,14 +62,66 @@ Search requests are processed as follows:
 
 The tasks discussed in this section require the following:
 
-*  [Firewall and SELinux](#firewall-selinux)
-*  [Install the Java Software Development Kit (JDK)](#prereq-java)
+*  [Firewall and SELinux](#firewall-and-selinux)
+*  [Install the Java Software Development Kit (JDK)](#install-the-java-software-development-kit-jdk)
 *  [Install the search engine](#install-the-search-engine)
 *  [Upgrading Elasticsearch](#upgrading-elasticsearch)
 
-{% include config/solr-elastic-selinux.md %}
+### Firewall and SELinux
 
-{% include config/install-java8.md %}
+Security-related software (iptables, SELinux, AppArmor) may be configured by default to block communication between subsystems. It may be a good idea to check them in case of problems.
+
+#### Set up rules for iptables and SELinux
+
+To set up rules to allow communication with the firewall or SELinux enabled, consult the following resources:
+
+*  [iptables how-to](https://help.ubuntu.com/community/IptablesHowTo)
+*  [How to edit iptables rules (fedora project)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
+*  [Introduction to SELinux (CentOS.org)](https://www.centos.org)
+*  [SELinux How-To Wiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+
+### Install the Java Software Development Kit (JDK)
+
+To determine if Java is already installed, enter the following command:
+
+```bash
+java -version
+```
+
+If the message `java: command not found` displays, you must install the Java SDK as discussed in the next section.
+
+See one of the following sections:
+
+*  [Install the latest JDK on CentOS](#install-the-jdk-on-centos)
+*  [Install the latest JDK on Ubuntu](#install-the-jdk-on-ubuntu)
+
+#### Install the JDK on CentOS
+
+See [this article on digitalocean](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+
+Be sure to install the JDK and *not* the JRE.
+
+```bash
+yum -y install java-1.8.0-openjdk
+```
+
+>[!NOTE]
+>
+>Java version 8 might not be available for all operating systems. For example, you can [search the list of available packages for Ubuntu](https://packages.ubuntu.com/).
+
+#### Install the JDK on Ubuntu
+
+To install JDK 1.8 on Ubuntu, enter the following commands as a user with `root` privileges:
+
+```bash
+apt-get -y update
+```
+
+```bash
+apt-get install -y openjdk-8-jdk
+```
+
+For other options, see [Oracle documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Install the search engine
 

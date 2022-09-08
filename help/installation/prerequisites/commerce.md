@@ -7,7 +7,7 @@ description:
 
 You are among the 240,000 merchants worldwide who put their trust in our eCommerce software. We have gathered some information to help you get started with your installation.
 
-## How to get the software {#install-get-software}
+## How to get the software
 
 Check the availability of exciting new features and releases and learn how you can get them on our [product availability page](https://devdocs.magento.com/release/availability.html).
 

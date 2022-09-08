@@ -69,7 +69,7 @@ To get the extension's Composer name and version from the Commerce Marketplace:
 >
 >Alternatively, you can find the Composer name and version of _any_ extension (whether you purchased it on Commerce Marketplace or somewhere else) in the extension's `composer.json` file.
 
-## Update your `composer.json` file {#update-composer-json}
+## Update your `composer.json` file
 
 Add the extension's name and version to your `composer.json` file:
 
@@ -179,4 +179,36 @@ Some extensions won't work properly unless you clear Magento-generated static vi
 
 ## Upgrade an extension
 
-{% include upgrade/module.md %}
+To update or upgrade a module or extension:
+
+1. Download the updated file from Marketplace or another extension developer. Take note of the module name and version.
+
+1. Export the contents to your application root directory.
+
+1. If a Composer package exists for the module, run one of the following.
+
+   Update per module name:
+
+   ```bash
+   composer update vendor/module-name
+   ```
+
+   Update per version:
+
+   ```bash
+   composer require vendor/module-name ^x.x.x
+   ```
+
+1. Run the following commands to upgrade, deploy, and clean the cache.
+
+   ```bash
+   bin/magento setup:upgrade --keep-generated
+   ```
+
+   ```bash
+   bin/magento setup:static-content:deploy
+   ```
+
+   ```bash
+   bin/magento cache:clean
+   ```

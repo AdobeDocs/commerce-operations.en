@@ -73,7 +73,7 @@ To install and configure `php-fpm`:
 
 Refer to [MySQL](../database/mysql.md) for more information.
 
-### Install and configure Magento2 {#install-magento2-ubuntu}
+### Install and configure
 
 There are several ways to download Adobe Commerce and Magento Open Source, including:
 
@@ -446,7 +446,7 @@ For this example, we'll install using Composer and the command line.
    ./magento deploy:mode:set developer
    ```
 
-### Configure nginx {#configure-nginx-centos}
+### Configure nginx
 
 We recommend configuring nginx using the `nginx.conf.sample` configuration file provided in the installation directory and an nginx virtual host.
 

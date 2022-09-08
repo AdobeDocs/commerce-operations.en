@@ -5,9 +5,9 @@ description:
 
 # Configure Apache for your search engine
 
-{% include config/es-webserver-overview.md %}
+{{%include /help/_includes/web-server-communication.md}}
 
-## Set up a proxy {#es-apache-proxy}
+## Set up a proxy
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ This section discusses how to configure Apache as an *unsecure* proxy so that Ad
 >
 >The reason the proxy is not secured in this example is that it is easier to set up and verify. You can use TLS with this proxy. If you wish to do so, make sure you add the proxy information to your secure virtual host configuration.
 
-### Set up a proxy for Apache 2.4 {#es-apache-proxy-24}
+### Set up a proxy for Apache 2.4
 
 This section discusses how to configure a proxy using a virtual host.
 
@@ -75,7 +75,7 @@ This section discusses how to configure a proxy using a virtual host.
    {"cluster_name":"elasticsearch","status":"yellow","timed_out":false,"number_of_nodes":1,"number_of_data_nodes":1,"active_primary_shards":5,"active_shards":5,"relocating_shards":0,"initializing_shards":0,"unassigned_shards":5,"delayed_unassigned_shards":0,"number_of_pending_tasks":0,"number_of_in_flight_fetch":0,"task_max_waiting_in_queue_millis":0,"active_shards_percent_as_number":50.0}
    ```
 
-## Secure communication with Apache {#es-ws-secure-apache}
+## Secure communication with Apache
 
 This section discusses how to secure communication between Apache and the search engine using [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) authentication with Apache. For more options, consult one of the following resources:
 
@@ -83,15 +83,89 @@ This section discusses how to secure communication between Apache and the search
 
 See one of the following sections:
 
-*  [Step 1: Create a password file](#es-ws-secure-apache-pwd)
-*  [Step 2: Configure your secure virtual host](#es-ws-secure-finish)
-*  [Verify communication is secure](#es-ws-secure-verify)
+*  [Step 1: Create a password file](#step-1-create-a-password)
+*  [Step 2: Configure your secure virtual host](#secure-communication-with-apache)
 
-### Step 1: Create a password {#es-ws-secure-apache-pwd}
+### Step 1: Create a password
 
-{% include config/secure-ws-apache_step1.md %}
+For security reasons, you can locate the password file anywhere except your web server docroot. In this example, we show how to store the password file in a new directory.
 
-### Step 2: Secure communication with Apache {#es-ws-secure-finish}
+#### Install htpasswd if necessary
+
+First, see if you have the Apache `htpasswd` utility is installed as follows:
+
+1. Enter the following command to determine if `htpasswd` is already installed:
+
+   ```bash
+   which htpasswd
+   ```
+
+   If a path displays, it is installed; if the command returns no output, `htpasswd` is not installed.
+
+1. If necessary, install `htpasswd`:
+
+   *  Ubuntu: `apt-get -y install apache2-utils`
+   *  CentOS: `yum -y install httpd-tools`
+
+#### Create a password file
+
+Enter the following commands as a user with `root` privileges:
+
+```bash
+mkdir -p /usr/local/apache/password
+```
+
+```bash
+htpasswd -c /usr/local/apache/password/.<password file name> <username>
+```
+
+where
+
+*  `<username>` can be:
+
+    *  Setting up cron: the web server user or another user.
+
+      In this example, we use the web server user, but the choice of user is up to you.
+
+    *  Setting up Elasticsearch: the user is named `magento_elasticsearch` in this example
+
+*  `<password file name>` must be a hidden file (starts with `.`) and should reflect the name of the user. See the examples later in this section for details.
+
+Follow the prompts on your screen to create a password for the user.
+
+#### Examples
+
+**Example 1: cron**
+You must set up authentication for only one user for cron; in this example, we use the web server user. To create a password file for the web server user, enter the following commands:
+
+```bash
+mkdir -p /usr/local/apache/password
+```
+
+```bash
+htpasswd -c /usr/local/apache/password/.htpasswd apache
+```
+
+**Example 2: Elasticsearch**
+You must set up authentication for two users: one with access to nginx and one with access to Elasticsearch. To create password files for these users, enter the following commands:
+
+```bash
+mkdir -p /usr/local/apache/password
+```
+
+```bash
+htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
+```
+
+#### Add additional users
+
+To add another user to your password file, enter the following command as a user with `root` privileges:
+
+```bash
+htpasswd /usr/local/apache/password/.htpasswd <username>
+```
+
+### Step 2: Secure communication with Apache
 
 This section discusses how to set up [HTTP Basic authentication](https://httpd.apache.org/docs/2.2/howto/auth.html). Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or with your application server.
 
@@ -126,4 +200,6 @@ This section discusses how to specify who can access the Apache server.
    *  CentOS: `service httpd restart`
    *  Ubuntu: `service apache2 restart`
 
-{% include config/es-verify-proxy-24.md %}
+#### Verify
+
+{{%include /help/_includes/verify-secure-communication.md}}

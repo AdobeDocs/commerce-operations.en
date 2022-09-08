@@ -5,7 +5,7 @@ description:
 
 # Verify the installation
 
-## Verify the storefront (with optional sample data) {#instgde-verify-front-sample}
+## Verify the storefront (with optional sample data)
 
 Go to the [storefront](https://glossary.magento.com/storefront) in a web browser. For example, if your installation base [URL](https://glossary.magento.com/url) is `http://www.example.com`, enter it in your browser's address or location bar.
 
@@ -13,7 +13,7 @@ The following figure shows a sample storefront page. If it displays as follows, 
 
 ![Storefront with the Luma theme](../../assets/installation/install-success_store-luma.png)
 
-## Verify the storefront (no sample data) {#instgde-verify-front}
+## Verify the storefront (no sample data)
 
 Go to the storefront in a web browser. For example, if your installation base URL is `http://www.example.com`, enter it in your browser's address or location bar.
 
@@ -23,7 +23,7 @@ The following figure shows a sample storefront page. If it displays as follows, 
 
 If the page displays a 404 (Not Found) or unconfigured (no styles, only text), see [After installing, images and stylesheets do not load; only text displays, no graphics](https://support.magento.com/hc/en-us/articles/360032994352).
 
-## Verify the Admin {#instgde-verify-admin}
+## Verify the Admin
 
 Go to the [Admin](https://glossary.magento.com/magento-admin) in a web browser. For example, if your installation base URL is `http://www.example.com`, and the Admin URI is `admin_au1nT`, enter `http://www.example.com/admin_au1nT` in your browser's address or location bar.
 

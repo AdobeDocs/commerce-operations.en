@@ -5,7 +5,7 @@ description:
 
 # On-premises installation security
 
-## SELinux {#install-prereq-selinux}
+## SELinux
 
 [Security Enhanced Linux (SELinux)](https://selinuxproject.org/page/Main_Page) enables CentOS and Ubuntu administrators greater access control over their servers. If you are using SELinux *and* Apache must initiate a connection to another host, you must run the commands discussed in this section.
 
@@ -58,7 +58,7 @@ To enable Apache to initiate a connection to another host with SELinux enabled:
    *  CentOS: `setsebool -P httpd_can_network_connect=1`
    *  Ubuntu: `setsebool -P apache2_can_network_connect=1`
 
-## Opening Ports In Your Firewall {#install-iptables}
+## Opening ports in your firewall
 
 Depending on your security requirements, you might find it necessary to open port 80 and other ports in your firewall. Because of the sensitive nature of networking security, Adobe strongly recommends that you consult with your IT department before proceeding. Following are some suggested references:
 

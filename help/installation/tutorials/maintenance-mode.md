@@ -16,17 +16,17 @@ The application detects maintenance mode as follows:
 
    `var/.maintenance.ip` can contain a list of IP addresses. If an entry point is accessed using HTTP and the client IP address corresponds to one of the entries in that list, then maintenance mode is off.
 
-## Log in as file system owner {#instgde-cli-before}
+## Log in as file system owner
 
 To log in as the file system owner:
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
-## Install the application {#instgde-cli-subcommands-maint-prereq}
+## Install the application
 
 Before you use this command to enable or disable maintenance mode, you must [install the application](../advanced.md).
 
-## Enable or disable maintenance mode {#instgde-cli-maint}
+## Enable or disable maintenance mode
 
 Use the `magento maintenance` CLI command to enable or disable maintenance mode.
 
@@ -67,7 +67,7 @@ bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 After you place the application in maintenance mode, you must stop all message queue consumer processes.
 One way to find these processes is to run the `ps -ef | grep queue:consumers:start` command, and then run the `kill <process_id>` command for each consumer. In a multiple node environment, repeat this task on each node.
 
-## Maintain the list of exempt IP addresses {#instgde-cli-maint-exempt}
+## Maintain the list of exempt IP addresses
 
 To maintain the list of exempt IP addresses, you can either use the `[--ip=<ip list>]` option in the preceding commands or you can use the following:
 

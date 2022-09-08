@@ -15,7 +15,7 @@ You should uninstall a module only if you're certain you won't use it. Instead o
 
 ## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
 ## Uninstall modules
 

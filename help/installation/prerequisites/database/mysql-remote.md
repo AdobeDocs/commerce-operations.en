@@ -50,7 +50,7 @@ Use the following guidelines to configure remote database connections if your we
 
 If you have issues connecting to either host, first ping the other host to make sure it is reachable. You also might need to allow connections from one host to another by modifying firewall and SELinux rules (if you use SELinux).
 
-## Create the remote connection {#instgde-prereq-mysql-remote-create}
+## Create the remote connection
 
 To create a remote connection:
 
@@ -96,7 +96,7 @@ To create a remote connection:
    >
    >If MySQL fails to start, look in syslog for the source of the issue. Resolve the issue using [MySQL documentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) or another authoritative source.
 
-## Grant access to a database user {#instgde-prereq-mysql-remote-access}
+## Grant access to a database user
 
 To enable your web node to connect to the database server, you must grant a web node database user access to the database on the remote server.
 
@@ -122,7 +122,7 @@ To grant access to a database user:
    >
    >If your web server is clustered, enter the same command on every web server. You must use the same username for every web server.
 
-## Verify database access {#instgde-prereq-mysql-remote-verify}
+## Verify database access
 
 On your web node host, enter the following command to verify the connection works:
 

@@ -5,20 +5,22 @@ description:
 
 # Configure the lock provider
 
-## First steps {#instgde-cli-before}
+## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
-## Prerequisites {#instgde-cli-subcommands-store-prereq}
+## Prerequisites
 
 Before you run this command, you must do all of the following *or* you must [install the application](../advanced.md):
 
 *  [Create or update the deployment configuration](deployment.md)
 *  [Create the database schema](database.md)
 
-{% include install/fully-secure.md %}
+### Secure installation
 
-## Configure the lock {#instgde-cli-lockconfig}
+{{%include /help/_includes/secure-install.md}}
+
+## Configure the lock
 
 Configure a lock provider to prevent the launch of duplicate cron jobs and cron groups. (Requires Adobe Commerce or Magento Open Source 2.2.x, 2.2.5 and later, and 2.3.3 and later.)
 

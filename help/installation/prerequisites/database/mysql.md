@@ -35,7 +35,13 @@ If you expect to import large numbers of products into Magento, you can increase
 >
 >The default value applies to Adobe Commerce on cloud infrastructure _and_ on-premises projects. Adobe Commerce on cloud infrastructure Pro customers must open a support ticket to increase the `max_allowed_packet` value. Adobe Commerce on cloud infrastructure Starter customers can increase the value by updating the configuration in the `/etc/mysql/mysql.cnf` file.
 
-{% include install/mysql_max-allowed-packet-ubuntu.md %}
+To increase the value, open the `/etc/mysql/mysql.cnf` file in a text editor and locate the value for `max_allowed_packet`. Save your changes to the `mysql.cnf` file, close the text editor, and restart MySQL (`service mysql restart`).
+
+To optionally verify the value you set, enter the following command at a `mysql>` prompt:
+
+```sql
+SHOW VARIABLES LIKE 'max_allowed_packet';
+```
 
 Then, [Configure the database instance](#configuring-the-database-instance).
 
@@ -169,7 +175,7 @@ To configure a MySQL database instance:
 
    *  For optimal performance, make sure all MySQL and Adobe Commerce or Magento Open Source index tables can be kept in memory (for example, configure `innodb_buffer_pool_size`).
 
-   *  {% include install/maria-db.md %}
+   *  Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers).
 
 1. In order for MySQL `TIMESTAMP` fields to follow the preferences and composition expected by Magento's declarative schema architecture, the system variable `explicit_defaults_for_timestamp` must be set to `on`.
 

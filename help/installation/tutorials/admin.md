@@ -7,7 +7,7 @@ description:
 
 ## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
 ## Prerequisites
 

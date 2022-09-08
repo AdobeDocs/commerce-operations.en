@@ -5,15 +5,15 @@ description:
 
 # Create the database schema
 
-## First steps {#instgde-cli-before}
+## First steps
 
-{% include install/first-steps-cli.md %}
+{{%include /help/_includes/cli-first-steps.md}}
 
-## Prerequisites {#instgde-cli-subcommands-db-prereq}
+## Prerequisites
 
 Before you run this command, you must [Create or update the deployment configuration](deployment.md).
 
-## Configure the database and add data {#instgde-cli-dbconfig}
+## Configure the database and add data
 
 Command usage:
 

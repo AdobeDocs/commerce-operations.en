@@ -11,7 +11,7 @@ This topic discusses how to set required [PHP](https://glossary.magento.com/php)
 >
 >See [system requirements](../system-requirements.md) for supported versions of PHP.
 
-## Verify PHP is installed {#centos-verify-php}
+## Verify PHP is installed
 
 Most flavors of Linux have PHP installed by default.
 This topic assumes that you have already installed PHP.
@@ -38,7 +38,7 @@ On CentOS, [additional steps may be required][].
 
 Adobe Commerce and Magento Open Source requires a set of extensions to be installed.
 
-{% include install/php-extensions-template.md %}
+{{%include /help/_includes/php-extensions.md}}
 
 To verify installed extensions:
 
@@ -95,7 +95,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 >
 >To avoid issues during installation and upgrade, we strongly recommend you apply the same PHP settings to both the PHP command-line configuration and the PHP web server plug-in configuration. For more information, see the next section.
 
-## Step 1: Find PHP configuration files {#php-required-find}
+## Step 1: Find PHP configuration files
 
 This section discusses how you find the configuration files necessary to update required settings.
 
@@ -137,7 +137,7 @@ Use the following guidelines to find it:
 
 If you have more than one `opcache.ini`, modify all of them.
 
-## Step 2: How to set PHP options {#php-required-set}
+## Step 2: How to set PHP options
 
 To set PHP options:
 
@@ -177,7 +177,7 @@ To set PHP options:
 
 1. Open the other `php.ini` (if they are different) and make the same changes in it.
 
-## Step 3: Set OPcache options {#php-required-opcache}
+## Step 3: Set OPcache options
 
 To set `opcache.ini` options:
 

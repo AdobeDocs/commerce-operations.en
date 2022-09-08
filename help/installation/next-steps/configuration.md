@@ -7,17 +7,15 @@ description:
 
 Now that you've finished installing Adobe Commerce or Magento Open Source, you need to configure it. This topic provides some recommended configuration settings for Magento; the list is not complete so watch this space.
 
-## Set up cron {#post-install-cron}
+## Set up cron
 
 cron---the UNIX task scheduler---is critical to the application's day-to-day operations. It schedules things like reindexing, newsletters, e-mails, and sitemaps. A *crontab* is a cron configuration.
 
 You must install Adobe Commerce and Magento Open Source services in the *crontab*, or some core functionality (as well as some third-party extensions) do not function properly.
 
-{% include config/setup-cron_how-to.md %}
-
 For more information about cron, including how to remove a crontab and run cron from the command line, see [Configure and run cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
 
-## Security settings and recommendations {#post-install-secy}
+## Security settings and recommendations
 
 After installation, we recommend the following:
 
@@ -26,21 +24,21 @@ After installation, we recommend the following:
 *  Make sure the [`X-Frame-Option` HTTP header](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) is set properly.
 *  Take precautions against cross-site scripting (XSS) by [securing your templates](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
 
-If you installed by [cloning the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), make sure that when you deploy Magento, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
+If you installed by [cloning the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), make sure that when you deploy the application, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
 
-## Enable Apache server rewrites {#post-install-rewrites}
+## Enable Apache server rewrites
 
 If you use the Apache web server, you must enable server rewrites for pages to display properly. Otherwise, you'll see pages without styles and other issues.
 
 [Section on Apache server rewrites](../prerequisites/web-server/apache.md#important-apache-rewrites-and-htaccess)
 
-## Caching in a multi-webnode environment {#config-redis}
+## Caching in a multi-webnode environment
 
 If you have multiple webnodes, you *cannot* use Magento's default file caching because there is no synchronization between webnodes. In other words, activity on one webnode is written to that webnode's file system only. Subsequent activity, if performed on another webnode, can result in unnecessary files being written or can result in errors.
 
 Instead, use [Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html) for both the default [cache](https://glossary.magento.com/cache) and the page cache.
 
-## Server settings {#post-install-server}
+## Server settings
 
 This section briefly discusses settings we recommend you consider for the server on which the application runs. Some of these settings are not directly related to Magento; these are provided as suggestions only.
 
@@ -91,7 +89,7 @@ Since version 2.3.0, Adobe Commerce and Magento Open Source include message queu
 
 *  [RabbitMQ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html)
 
-## Settings for Adobe Commerce only {#post-install-ee}
+## Settings for Adobe Commerce only
 
 You can configure the following only if you use Adobe Commerce:
 
