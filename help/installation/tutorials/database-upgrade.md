@@ -24,10 +24,10 @@ Anytime you perform an action that causes the [database schema](https://glossary
 1. Start the upgrade:
 
    ```bash
-    bin/magento setup:upgrade [--keep-generated]
-    ```
+   bin/magento setup:upgrade [--keep-generated]
+   ```
 
-    Where `--keep-generated` is an optional argument that does not update [static view files](../../configuration/cli/static-view-file-deployment.md). This optional argument is for use *only* in limited circumstances by experienced system integrators. It should be used *only* in [production mode](../../configuration/bootstrap/application-modes.md#production-mode). It should *not* be used in [developer mode](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Where `--keep-generated` is an optional argument that does not update [static view files](../../configuration/cli/static-view-file-deployment.md). This optional argument is for use *only* in limited circumstances by experienced system integrators. It should be used *only* in [production mode](../../configuration/bootstrap/application-modes.md#production-mode). It should *not* be used in [developer mode](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Clean the cache:
 

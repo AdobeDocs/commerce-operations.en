@@ -3,7 +3,7 @@ title: MySQL guidelines
 description:
 ---
 
-## General MySQL guidelines
+# General MySQL guidelines
 
 See [System Requirements](../../system-requirements.md) for supported versions of MySQL.
 

@@ -26,19 +26,19 @@ If you are using [nginx](../prerequisites/web-server/nginx.md) and the [`nginx.c
 When used in your server block that defines your site, the `nginx.conf.sample` configuration overrides your server's docroot settings to serve files from Magento's `pub/` directory. For example, see the last line in the following configuration:
 
 ```bash
-    # /etc/nginx/sites-available/magento
+# /etc/nginx/sites-available/magento
 
-    upstream fastcgi_backend {
-         server  unix:/run/php/php7.4-fpm.sock;
-     }
+upstream fastcgi_backend {
+   server  unix:/run/php/php7.4-fpm.sock;
+}
 
-     server {
+server {
 
-              listen 80;
-              server_name 192.168.33.10;
-              set $MAGE_ROOT /var/www/html/magento2ce;
-              include /var/www/html/magento2ce/nginx.conf.sample;
-    }
+         listen 80;
+         server_name 192.168.33.10;
+         set $MAGE_ROOT /var/www/html/magento2ce;
+         include /var/www/html/magento2ce/nginx.conf.sample;
+}
 ```
 
 ## Before you begin
@@ -70,7 +70,7 @@ The name and location of your virtual host file depends on which version of Apac
 1. Add the path to your `pub/` directory to the `DocumentRoot` directive:
 
    ```conf
-    <VirtualHost *:80>
+   <VirtualHost *:80>
 
             ServerAdmin webmaster@localhost
             DocumentRoot /var/www/html/magento2ce/pub
@@ -82,7 +82,7 @@ The name and location of your virtual host file depends on which version of Apac
                         AllowOverride all
             </Directory>
     </VirtualHost>
-    ```
+   ```
 
 1. Restart Apache:
 

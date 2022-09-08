@@ -203,8 +203,7 @@ The following table summarizes the available commands. Commands are shown in sum
 |`magento maintenance:{enable/disable}`|Enables or disables maintenance mode (in maintenance mode, only exempt IP addresses can access the Admin or storefront).|Application installed|
 |`magento setup:config:set`|Creates or updates the deployment configuration.|None|
 |`magento module:{enable/disable}`|Enable or disable modules.|None|
-|`magento setup:store-config:set`|Sets storefront-related options, such as base URL, language, timezone, and so on.|Deployment configuration
-Database (simplest way is to use magento setup:upgrade)|
+|`magento setup:store-config:set`|Sets storefront-related options, such as base URL, language, timezone, and so on.|Deployment configuration|
 |`magento setup:db-schema:upgrade`|Updates the database schema.|Deployment configuration|
 |`magento setup:db-data:upgrade`|Updates the database data.|Deployment configuration|
 |`magento setup:db:status`|Checks if the database is up-to-date with the code.|Deployment configuration|

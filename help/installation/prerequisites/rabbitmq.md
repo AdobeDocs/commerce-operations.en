@@ -79,7 +79,7 @@ Where:
 |`--amqp-port`|The port to use to connect to RabbitMQ. The default is `5672`.|
 |`--amqp-user`|The username for connecting to RabbitMQ. Do not use the default user `guest`.|
 |`--amqp-password`|The password for connecting to RabbitMQ. Do not use the default password `guest`.|
-|`--amqp-virtualhost`|The virtual host for connecting to RabbitMQ. The default is `/`.
+|`--amqp-virtualhost`|The virtual host for connecting to RabbitMQ. The default is `/`.|
 |`--amqp-ssl`|Indicates whether to connect to RabbitMQ. The default is `false`. If you set the value to true, see Configure SSL for more information.|
 
 ## Connect RabbitMQ

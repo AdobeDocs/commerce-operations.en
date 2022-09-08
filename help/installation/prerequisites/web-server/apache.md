@@ -3,7 +3,7 @@ title: Apache
 description:
 ---
 
-## Apache
+# Apache
 
 Adobe Commerce supports Apache 2.4.x.
 
