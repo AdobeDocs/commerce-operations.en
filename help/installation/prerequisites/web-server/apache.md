@@ -24,7 +24,48 @@ This topic discusses how to enable Apache 2.4 rewrites and specify a setting for
 
 Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all of the other sections in this topic as well.
 
-{{$include /help/_includes/apache-rewrites.md}}
+Use this section to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+
+Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to provide directory-level instructions for Apache.
+
+>[!NOTE]
+>
+>Failure to enable these settings typically results in no styles displaying on your storefront or Admin.
+
+1. Enable the Apache rewrite module:
+
+   ```bash
+   a2enmod rewrite
+   ```
+
+1. To enable the application to use the distributed `.htaccess` configuration file, see the guidelines in the [Apache 2.4 documentation](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+
+   >[!TIP]
+   >
+   >In Apache 2.4, the server's default site configuration file is `/etc/apache2/sites-available/000-default.conf`.
+
+   For example, you can add the following to the end of `000-default.conf`:
+
+   ```terminal
+   <Directory "/var/www/html">
+       AllowOverride All
+   </Directory>
+   ```
+
+   >[!NOTE]
+   >
+   >In some cases, additional parameters might be required. For more information, see the [Apache 2.4 documentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+
+1. If you changed Apache settings, restart Apache:
+
+   ```bash
+   service apache2 restart
+   ```
+
+   >[!NOTE]
+   >
+   >-  If you upgraded from an earlier Apache version, first look for `<Directory "/var/www/html">` or `<Directory "/var/www">` in `000-default.conf`.
+   >-  You must change the value of `AllowOverride` in the directive for the directory to which you expect to install the Magento software. For example, to install in the web server docroot, edit the directive in `<Directory /var/www>`.
 
 >[!NOTE]
 >
@@ -90,11 +131,7 @@ To install the default version of Apache:
    Server built: 2020-04-15T18:00:57
    ```
 
-1. Enable rewrites and `.htaccess` as discussed in the following sections.
-
-### Enable rewrites and .htaccess for Apache 2.4
-
-{{$include /help/_includes/apache-rewrites.md}}
+1. Enable [rewrites and `.htaccess`](#important-apache-rewrites-and-htaccess).
 
 ### Upgrading Apache on Ubuntu
 
@@ -138,11 +175,7 @@ To upgrade to Apache 2.4:
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. Continue with the next section.
-
-### Enable rewrites and .htaccess for Apache 2.4
-
-{{$include /help/_includes/apache-rewrites.md}}
+1. Enable [rewrites and `.htaccess`](#important-apache-rewrites-and-htaccess).
 
 ## Installing Apache on CentOS
 

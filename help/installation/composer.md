@@ -10,7 +10,7 @@ We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento
 -  Reuse third-party libraries without bundling them with source code
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
 -  Adhere to [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) standards
--  Repackage {{site.data.var.ce}} with other components
+-  Repackage Magento Open Source with other components
 -  Use the Magento software in a production environment
 
 >[!NOTE]
