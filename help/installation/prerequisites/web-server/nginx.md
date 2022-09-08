@@ -7,7 +7,7 @@ description: Follow these steps to install and configure the Nginx web server fo
 
 Adobe Commerce supports nginx 1.18 (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
 
-Installation instructions vary based on which operating system you are using. See [PHP](php-settings.html) for information.
+Installation instructions vary based on which operating system you are using. See [PHP](../php-settings.md) for information.
 
 ## Ubuntu
 
@@ -25,7 +25,7 @@ After completing the following sections and installing the application, we will 
 
 ### Install and configure php-fpm
 
-Adobe Commerce and Magento Open Source require several [PHP extensions](php-settings.html) to function properly. In addition to these extensions, you must also install and configure the `php-fpm` extension if you are using nginx.
+Adobe Commerce and Magento Open Source require several [PHP extensions](../php-settings.md) to function properly. In addition to these extensions, you must also install and configure the `php-fpm` extension if you are using nginx.
 
 To install and configure `php-fpm`:
 
@@ -256,7 +256,7 @@ After completing the following sections and installing the application, we'll us
 
 ### Install and configure php-fpm
 
-Adobe Commerce and Magento Open Source require several [PHP](php-settings.html) extensions to function properly. In addition to these extensions, you must also install and configure the `php-fpm` extension if you're using nginx.
+Adobe Commerce and Magento Open Source require several [PHP](../php-settings.md) extensions to function properly. In addition to these extensions, you must also install and configure the `php-fpm` extension if you're using nginx.
 
 1. Install `php-fpm`:
 

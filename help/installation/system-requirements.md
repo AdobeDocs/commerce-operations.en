@@ -63,33 +63,33 @@ Upgrading the applications and extensions you obtain from the Commerce Marketpla
 
 Adobe Commerce and Magento Open Source require the following system tools for some operations:
 
-*  [bash][]
-*  [gzip][]
-*  [lsof][]
-*  [mysql][]
-*  [mysqldump][]
-*  [nice][]
-*  [php][]
-*  [sed][]
-*  [tar][]
+-  [bash][]
+-  [gzip][]
+-  [lsof][]
+-  [mysql][]
+-  [mysqldump][]
+-  [nice][]
+-  [php][]
+-  [sed][]
+-  [tar][]
 
 ### SSL
 
-*  A valid [security certificate][] is required for HTTPS.
-*  Self-signed SSL certificates are not supported.
-*  Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
+-  A valid [security certificate][] is required for HTTPS.
+-  Self-signed SSL certificates are not supported.
+-  Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
 
 ### Supported browsers
 
 Storefront and Admin:
 
-*  Microsoft Edge, latest and previous major version
-*  Firefox latest, latest and previous major version (any operating system)
-*  Chrome latest, latest and previous major version (any operating system)
-*  Safari latest, latest and previous major version (Mac OS only)
-*  Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
-*  Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
-*  Chrome for mobile, latest and previous major version (Android 4 or later) for mobile storefront
+-  Microsoft Edge, latest and previous major version
+-  Firefox latest, latest and previous major version (any operating system)
+-  Chrome latest, latest and previous major version (any operating system)
+-  Safari latest, latest and previous major version (Mac OS only)
+-  Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
+-  Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
+-  Chrome for mobile, latest and previous major version (Android 4 or later) for mobile storefront
 
 ### Xdebug
 
@@ -112,10 +112,10 @@ Storefront and Admin:
 [php]: https://www.php.net/
 [sed]: https://www.gnu.org/software/sed/manual/sed.html
 [tar]: https://linux.die.net/man/1/tar
-[PHP installation instructions]: prereq/php-settings.html
+[PHP installation instructions]: prerequisites/php-settings.md
 [official PHP documentation]: https://php.net/manual/en/extensions.php
 [PHP OPcache]: https://php.net/manual/en/intro.opcache.php
-[PHP documentation]: prereq/php-settings.html
+[PHP documentation]: prerequisites/php-settings.md
 [PHP OPcache documentation]: https://php.net/manual/en/opcache.setup.php
 [Required PHP settings]: prerequisites/php-settings.md
 [security certificate]: https://glossary.magento.com/security-certificate
