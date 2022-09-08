@@ -102,7 +102,7 @@ The install command uses the following format:
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-The following tables describe the installation option names and values. For example installation commands. see [Sample localhost installations](#install-cli-example).
+The following tables describe the installation option names and values. For example installation commands. see [Sample localhost installations](#sample-localhost-installations).
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ The following tables describe the installation option names and values. For exam
 
 The following options specify the user information and credentials for the Admin user.
 
-You can create the Admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#install-cli-example).
+You can create the Admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#sample-localhost-installations).
 
 The following tables provide many but not all available install parameters. For a complete list, see the [Command-line Tools Reference](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html).
 

@@ -47,7 +47,7 @@ To install an extension, you must:
 
 ## Get the extension's Composer name and version
 
-If you already know the extension's Composer name and version, skip this step and continue with [Update your `composer.json` file](#update-composer-json).
+If you already know the extension's Composer name and version, skip this step and continue with [Update your `composer.json` file](#update-your-composerjson-file).
 
 To get the extension's Composer name and version from the Commerce Marketplace:
 

@@ -63,7 +63,7 @@ The install command uses the following format:
 magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
-The following tables describe the installation option names and values, such as installation commands. See [Sample localhost installations](#install-cli-example).
+The following tables describe the installation option names and values, such as installation commands. See [Sample localhost installations](#sample-localhost-installations).
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ The following tables describe the installation option names and values, such as 
 
 The following options specify the user information and credentials for the admin user.
 
-In Adobe Commerce version 2.2.8 and later, you can create the admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#install-cli-example).
+In Adobe Commerce version 2.2.8 and later, you can create the admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#sample-localhost-installations).
 
 |Name|Value|Required?|
 |--- |--- |--- |

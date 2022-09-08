@@ -1,5 +1,5 @@
 ---
-title: Clone Git repositories
+title: Clone sample data Git repositories
 description:
 ---
 

@@ -42,7 +42,7 @@ bin/magento maintenance:status
 
 >[!NOTE]
 >
->Using `--ip=<ip address>` with `magento maintenance:disable` saves the list of IPs for later use. To clear the list of exempt IPs, use `magento maintenance:enable --ip=none` or see [Maintain the list of exempt IP addresses](#instgde-cli-maint-exempt).
+>Using `--ip=<ip address>` with `magento maintenance:disable` saves the list of IPs for later use. To clear the list of exempt IPs, use `magento maintenance:enable --ip=none` or see [Maintain the list of exempt IP addresses](#maintain-the-list-of-exempt-ip-addressest).
 
 `magento maintenance:status` displays the current status of maintenance mode.
 

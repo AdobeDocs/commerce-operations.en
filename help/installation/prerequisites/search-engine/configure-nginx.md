@@ -13,7 +13,7 @@ description:
 >
 >OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. See [Migrate ElasticSearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) for more information.
 
-This section discusses how to configure nginx as an *unsecure* proxy so that Adobe Commerce or Magento Open Source can use a search engine running on this server. This section does not discuss setting up HTTP Basic authentication; that is discussed in [Secure communication with nginx](#es-ws-secure-nginx).
+This section discusses how to configure nginx as an *unsecure* proxy so that Adobe Commerce or Magento Open Source can use a search engine running on this server. This section does not discuss setting up HTTP Basic authentication; that is discussed in [Secure communication with nginx](#secure-communication-with-nginx).
 
 >[!NOTE]
 >

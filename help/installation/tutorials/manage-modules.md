@@ -39,7 +39,7 @@ where
 
 *  `<module-list>` is a space-delimited list of modules to enable or disable. If any [module](https://glossary.magento.com/module) name contains special characters, enclose the name in either single or double quotes.
 *  `--all` to enable or disable all modules at the same time.
-*  `-f` or `--force` to force a module to be enabled or disabled despite dependencies. Before you use this option, see [About enabling and disabling modules](#instgde-cli-subcommands-enable-modules).
+*  `-f` or `--force` to force a module to be enabled or disabled despite dependencies. Before you use this option, see [About enabling and disabling modules](#about-enabling-and-disabling-modules).
 *  `-c` or `--clear-static-content` cleans [generated static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
    Failure to clear static view files might result in issues if there are multiple files with the same name and you do not clear all of them.
@@ -52,7 +52,7 @@ For example, to disable the Weee module, enter:
 bin/magento module:disable Magento_Weee
 ```
 
-For important information about enabling and disabling modules, see [About enabling and disabling modules](#instgde-cli-subcommands-enable-modules).
+For important information about enabling and disabling modules, see [About enabling and disabling modules](#about-enabling-and-disabling-modules).
 
 ## Update the database
 

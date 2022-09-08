@@ -15,12 +15,6 @@ The other optional utilities discussed in this topic might assist you with your 
 
 If you are deploying Adobe Commerce or Magento Open Source on multiple hosts, NTP is a simple way to guarantee their clocks are all synchronized, no matter what time zone the servers are in. Also, cron-related tasks (such as indexing and transactional e-mails) depend on the server clock being accurate.
 
-See one of the following sections:
-
-*  [Install and configure NTP on Ubuntu](#install-optional-ntp-ubuntu)
-*  [Install and configure NTP on CentOS](#install-optional-ntp-centos)
-*  [Use NTP pool servers](#install-optional-ntp-servers)
-
 ### Install and configure NTP on Ubuntu
 
 Enter the following command to install NTP:
@@ -29,7 +23,7 @@ Enter the following command to install NTP:
 apt-get install ntp
 ```
 
-Continue with [Use NTP pool servers](#install-optional-ntp-servers).
+Continue with [Use NTP pool servers](#use-ntp-pool-servers).
 
 ### Install and configure NTP on CentOS
 

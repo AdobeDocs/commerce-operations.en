@@ -1,5 +1,5 @@
 ---
-title: MySQL
+title: MySQL guidelines
 description:
 ---
 
