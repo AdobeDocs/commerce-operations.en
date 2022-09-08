@@ -1,6 +1,6 @@
 ---
 title: Search engine prerequisites
-description:
+description: Follow these steps to install and configure supported search engine software for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # Search engine prerequisites

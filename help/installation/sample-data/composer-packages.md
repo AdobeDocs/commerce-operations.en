@@ -1,6 +1,6 @@
 ---
 title: Download sample data Composer packages
-description:
+description: Follow these steps to install Adobe Commerce and Magento Open Source sample data using the Composer PHP package manager.
 ---
 
 # Download sample data Composer packages

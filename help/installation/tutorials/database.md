@@ -1,6 +1,6 @@
 ---
 title: Create the database schema
-description:
+description: Follow these steps to create a database for your Adobe Commerce or Magento Open Source.
 ---
 
 # Create the database schema

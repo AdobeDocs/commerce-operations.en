@@ -1,6 +1,6 @@
 ---
 title: Create, edit, or unlock an administrator account
-description:
+description: Follow these steps to manage the administrator account of your Adobe Commerce or Magento Open Source Admin application.
 ---
 
 # Create, edit, or unloack an administrator account

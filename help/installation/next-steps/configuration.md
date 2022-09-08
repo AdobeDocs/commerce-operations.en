@@ -1,6 +1,6 @@
 ---
 title: Configure the application
-description:
+description: Learn about the post-install configuration required for Adobe Commerce and Magento Open Source on-premises deployments.
 ---
 
 # Configure the application

@@ -1,6 +1,6 @@
 ---
 title: Verify the installation
-description:
+description: Follow these steps to confirm that your on-premises Adobe Commerce or Magento Open Source installation was successful.
 ---
 
 # Verify the installation

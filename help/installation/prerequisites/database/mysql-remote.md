@@ -1,6 +1,6 @@
 ---
 title: Set up a remote MySQL database connection
-description:
+description: Follow these steps to configure a remote database connection for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # Set up a remote MySQL database connection

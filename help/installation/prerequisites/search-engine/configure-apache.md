@@ -1,6 +1,6 @@
 ---
 title: Configure Apache for your search engine
-description:
+description: Follow these steps to configure a search engine with the Apache web server for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # Configure Apache for your search engine

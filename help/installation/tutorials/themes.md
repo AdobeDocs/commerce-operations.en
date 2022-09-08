@@ -1,6 +1,6 @@
 ---
 title: Uninstall themes
-description:
+description: Follow these steps to uninstall an Adobe Commerce or Magento Open Source theme.
 ---
 
 # Uninstall themes

@@ -1,6 +1,6 @@
 ---
 title: Modify docroot to improve security
-description:
+description: Prevent unauthorized browser-based access to Adobe Commerce or Magento Open Source on-premises file system.
 ---
 
 # Modify docroot to improve security

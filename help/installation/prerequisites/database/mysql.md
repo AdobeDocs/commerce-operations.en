@@ -1,6 +1,6 @@
 ---
 title: MySQL guidelines
-description:
+description: Follow these steps to install and configure MySQL and MariaDB for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # General MySQL guidelines

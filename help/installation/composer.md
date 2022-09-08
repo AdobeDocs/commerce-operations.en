@@ -1,6 +1,6 @@
 ---
 title: Quick start on-premises installation
-description:
+description: Follow these steps to install Adobe Commerce or Magento Open Source on infrastructure that you own.
 ---
 
 # Quick start on-premises installation

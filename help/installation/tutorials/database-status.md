@@ -1,6 +1,6 @@
 ---
 title: Check the database status
-description:
+description: Follow these steps to check your Adobe Commerce or Magento Open Source database status.
 ---
 
 # Check the database status

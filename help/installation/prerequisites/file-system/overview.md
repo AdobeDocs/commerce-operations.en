@@ -1,6 +1,6 @@
 ---
 title: File ownership and permissions
-description:
+description: Learn about the importance of file system permissions when working with on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # File ownership and permissions

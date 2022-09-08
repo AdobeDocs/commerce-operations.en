@@ -1,6 +1,6 @@
 ---
 title: Configure file ownership and permissions
-description:
+description: Follow these steps to configure file system permissions for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # Configure file ownership and permissions

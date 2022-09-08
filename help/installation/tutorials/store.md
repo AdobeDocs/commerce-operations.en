@@ -1,6 +1,6 @@
 ---
 title: Configure the store
-description:
+description: Follow these steps to configure your Adobe Commerce or Magento Open Source store.
 ---
 
 # Configure the store

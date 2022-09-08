@@ -1,6 +1,6 @@
 ---
 title: Enable or disable maintenance mode
-description:
+description: Follow these steps to customize what customers see when your Adobe Commerce or Magento Open Source deployment is down for maintenance.
 ---
 
 # Enable or disable maintenance mode

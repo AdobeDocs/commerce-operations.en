@@ -1,6 +1,6 @@
 ---
 title: Configure message consumers
-description:
+description: Follow these steps to configure the bahavior of Adobe Commerce or Magento Open Source message queue consumers.
 ---
 
 # Configure message consumers

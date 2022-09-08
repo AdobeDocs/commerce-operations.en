@@ -1,6 +1,6 @@
 ---
 title: Enable or disable modules
-description:
+description: Follow these steps to manage Adobe Commerce or Magento Open Source modules.
 ---
 
 # Enable or disable modules

@@ -1,6 +1,6 @@
 ---
 title: Install an extension
-description:
+description: Follow these steps to install an Adobe Commerce or Magento Open Source extension.
 ---
 
 # Install an extension

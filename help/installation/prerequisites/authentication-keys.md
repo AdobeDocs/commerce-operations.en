@@ -1,6 +1,6 @@
 ---
 title: Get your authentication keys
-description:
+description: Follow these steps to retrieve credentials to access Adobe Commerce and Magento Open Source Composer packages on repo.magento.com.
 ---
 
 # Get your authentication keys

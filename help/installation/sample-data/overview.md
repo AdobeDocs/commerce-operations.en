@@ -1,6 +1,6 @@
 ---
 title: Sample data overview
-description:
+description: Learn about using sample data for Adobe Commerce and Magento Open Source projects.
 ---
 
 # Sample data overview

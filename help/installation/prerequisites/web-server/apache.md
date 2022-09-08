@@ -1,6 +1,6 @@
 ---
 title: Apache
-description:
+description: Follow these steps to install and configure the Apache web server for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # Apache

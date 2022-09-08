@@ -1,5 +1,6 @@
 ---
 title: System requirements
+description: Use this reference to identify required software dependencies that have been tested with Adobe Commerce and Magento Open Source releases.
 ---
 
 # System requirements

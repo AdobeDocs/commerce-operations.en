@@ -1,6 +1,6 @@
 ---
 title: On-premises installation prerequisites
-description:
+description: Learn more about the software dependencies required for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # On-premises installation prerequisites

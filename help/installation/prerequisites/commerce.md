@@ -1,6 +1,6 @@
 ---
 title: Get the Adobe Commerce software
-description:
+description: Learn how to download the Adobe Commerce and Magento Open Source software.
 ---
 
 # Get the Adobe Commerce software

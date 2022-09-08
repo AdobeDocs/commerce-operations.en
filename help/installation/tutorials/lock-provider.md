@@ -1,6 +1,6 @@
 ---
 title: Configure the lock provider
-description:
+description: Follow these steps to prevent the duplicate cron jobs and cron groups from running on you Adobe Commerce or Magento Open Source deployment.
 ---
 
 # Configure the lock provider

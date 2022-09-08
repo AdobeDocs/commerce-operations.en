@@ -1,11 +1,11 @@
 ---
 title: Set a umask (optional)
-description:
+description: Improve the security posture of your Adobe Commerce or Magento Open Source on-premises installation by restricting file system permissions.
 ---
 
 # Set a umask (optional)
 
-The web server group must have write permissions to certain directories in the Magento file system; however, you might want tighter security, especially in production. We provide the flexibility for you to further restrict those permissions using a [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
+The web server group must have write permissions to certain directories in the file system; however, you might want tighter security, especially in production. We provide the flexibility for you to further restrict those permissions using a [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
 Our solution is to enable you to optionally create a file named `magento_umask` in your application root directory that restricts permissions for the web server group and everyone else.
 

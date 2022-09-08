@@ -1,6 +1,6 @@
 ---
 title: On-premises installation overview
-description:
+description: Learn about the installation process for on-premises deployments of Adobe Commerce and Magento Open Source.
 ---
 
 # On-premises installation overview

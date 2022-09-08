@@ -1,6 +1,6 @@
 ---
 title: Optional software
-description:
+description: Learn more about optional software that you can install to support on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # Optional software

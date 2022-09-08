@@ -1,6 +1,6 @@
 ---
 title: Uninstall or reinstall Adobe Commerce
-description:
+description: Follow these steps to uninstall and reinstall on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # Uninstall or reinstall Adobe Commerce

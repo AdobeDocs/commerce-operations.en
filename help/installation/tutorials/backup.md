@@ -1,6 +1,6 @@
 ---
 title: Backup and rollback the file system, media, and database
-description:
+description: Follow these steps to backup and restore your Adobe Commerce or Magento Open Source application.
 ---
 
 # Backup and rollback the file syste, media, and database

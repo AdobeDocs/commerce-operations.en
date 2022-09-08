@@ -1,6 +1,6 @@
 ---
 title: AWS OpenSearch
-description:
+description: Follow these steps to configure the AWS OpenSearch web service for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # AWS OpenSearch

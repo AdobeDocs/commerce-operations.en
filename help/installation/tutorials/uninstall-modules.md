@@ -1,6 +1,6 @@
 ---
 title: Uninstall modules
-description:
+description: Follow these steps to uninstall an Adobe Commerce or Magento Open Source module.
 ---
 
 # Uninstall modules

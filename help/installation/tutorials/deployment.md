@@ -1,6 +1,6 @@
 ---
 title: Create or update the deployment configuration
-description:
+description: Follow these steps to manage your Adobe Commerce or Magento Open Source deployment configuration.
 ---
 
 # Create or update the deployment configuration

@@ -1,6 +1,6 @@
 ---
 title: Display or change the Admin URI
-description:
+description: Follow these steps to view and modify the URI of your Adobe Commerce or Magento Open Source Admin application.
 ---
 
 # Display or change the Admin URI

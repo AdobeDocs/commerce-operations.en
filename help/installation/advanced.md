@@ -1,6 +1,6 @@
 ---
 title: Advanced on-premises installation
-description:
+description: Learn about advanced installation scenarios for Adobe Commerce or Magento Open Source on infrastructure that you own.
 ---
 
 # Advanced on-premises installation

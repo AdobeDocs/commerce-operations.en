@@ -1,6 +1,6 @@
 ---
 title: Upgrade the database schema and data
-description:
+description: Follow these steps to upgrade your Adobe Commerce or Magento Open source database schema.
 ---
 
 # Upgrade the database schema and data
