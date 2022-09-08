@@ -13,7 +13,7 @@
    bin/magento maintenance:enable
    ```
 
-   For additional options, such as the ability to set an IP address whitelist, see [`magento maintenance:enable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+   For additional options, such as the ability to set an IP address whitelist, see [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
 1. Stop any running queue workers by setting `cron_run` to `false` in `app/etc/env.php` as follows:
 

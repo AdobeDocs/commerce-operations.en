@@ -33,7 +33,7 @@ Other benefits:
 *  The CLI is extensible so third party developers can "plug in" to it. This has the additional benefit of eliminating users' learning curve.
 *  Commands for disabled modules do not display.
 
-This topic discusses installing the Adobe Commerce or Magento Open Source software using the CLI. For information about configuration, see the [Configuration Guide](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html).
+This topic discusses installing the Adobe Commerce or Magento Open Source software using the CLI. For information about configuration, see the [Configuration Guide](../configuration/overview.md).
 
 The installer is designed to be run multiple times if necessary so you can:
 
@@ -78,7 +78,7 @@ See also [Update, reinstall, uninstall](tutorials/uninstall.md).
 
 ### Secure installation
 
-{{%include /help/_includes/secure-install.md}}
+{{$include /help/_includes/secure-install.md}}
 
 ## Installer help commands
 
@@ -189,7 +189,7 @@ The following tables provide many but not all available install parameters. For 
 
 **Consumers configuration options:**
 
-{{%include /help/_includes/cli-consumers.md}}
+{{$include /help/_includes/cli-consumers.md}}
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ The following tables provide many but not all available install parameters. For 
 
 **Sensitive data:**
 
-{{%include /help/_includes/sensitive-data.md}}
+{{$include /help/_includes/sensitive-data.md}}
 
 ### Sample localhost installations
 

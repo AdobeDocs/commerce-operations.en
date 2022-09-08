@@ -61,7 +61,7 @@ Connection: keep-alive
 
 ## Configure HTTP Basic authentication in the Admin
 
-Perform the same tasks as discussed in [Search engine configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/search/configure-search-engine.html) *except* click **[!UICONTROL Yes]** from the **[!UICONTROL Enable Elasticsearch HTTP Auth]** list and enter your username and password in the provided fields.
+Perform the same tasks as discussed in [Search engine configuration](../configuration/search/configure-search-engine.md) *except* click **[!UICONTROL Yes]** from the **[!UICONTROL Enable Elasticsearch HTTP Auth]** list and enter your username and password in the provided fields.
 
 Click **[!UICONTROL Test Connection]** to make sure it works and then click **[!UICONTROL Save Config]**.
 

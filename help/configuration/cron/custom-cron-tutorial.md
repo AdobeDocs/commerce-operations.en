@@ -15,7 +15,7 @@ In this tutorial, we assume the following:
 
 - The Commerce application is installed in `/var/www/html/magento2`
 - Your Commerce database username and password are both `magento`
-- You perform all actions as the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)
+- You perform all actions as the [file system owner](../../installation/prerequisites/file-system/overview.md)
 
 ## Step 1: Get a sample module
 
@@ -25,7 +25,7 @@ If you already have a sample module, you can use it; skip this step and the next
 
 **To get a sample module**:
 
-1. Log in to your Commerce server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Change to a directory that is not in your Commerce application root (for example, your home directory).
 1. Clone the [`magento2-samples` repository][samples].
 

@@ -13,8 +13,8 @@ Before you use these commands, you must [install the application](../tutorials/i
 
 To update the application:
 
-*  If you installed the software from an archive or if you used 'composer-create-project', see the [Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
-*  If you are a contributing developer (that is, you used `git clone`), see [Update the application](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html).
+*  If you installed the software from an archive or if you used 'composer-create-project', see the [Upgrade Guide](../../upgrade/overview.md).
+*  If you are a contributing developer (that is, you used `git clone`), see [Update the application](../../upgrade/developer/git-installs.md).
 
 ## Reinstall the application
 

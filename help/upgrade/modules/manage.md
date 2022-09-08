@@ -9,10 +9,10 @@ You must use the command line to manage Adobe Commerce and Magento Open Source m
 
 ## Enable or disable a module
 
-To enable or disable a module, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+To enable or disable a module, see [Enable or disable modules](../../installation/tutorials/manage-modules.md).
 
 ## Uninstall a module
 
-To uninstall a module, see [Uninstall modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+To uninstall a module, see [Uninstall modules](../../installation/tutorials/uninstall-modules.md).
 
-To uninstall a theme, use the [`theme:uninstall`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-theme-uninstall.html) command.
+To uninstall a theme, use the [`theme:uninstall`](../../installation/tutorials/themes.md) command.

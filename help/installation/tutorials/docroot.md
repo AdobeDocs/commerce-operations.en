@@ -126,11 +126,11 @@ The following node needs to be appended to the `env.php` file.
 ]
 ```
 
-Refer to the [env.php reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) for more information.
+Refer to the [env.php reference](../../configuration/reference/config-reference-envphp.md) for more information.
 
 ## 4. Switch modes
 
-[Application modes](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html), which include `production` and `developer`, are designed to improve security and make development easier. As the names suggest, you should switch to `developer` mode when extending or customizing the application and switch to `production` mode when running in a live environment.
+[Application modes](../../configuration/bootstrap/application-modes.md), which include `production` and `developer`, are designed to improve security and make development easier. As the names suggest, you should switch to `developer` mode when extending or customizing the application and switch to `production` mode when running in a live environment.
 
 Switching between modes is an important step in verifying that your server configuration is working properly. You can switch between modes using the CLI tool:
 

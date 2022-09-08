@@ -21,7 +21,7 @@ This topic discusses how to get started with the split database solution by:
 
 ## Install the Adobe Commerce software
 
-You can enable split databases at any time after you install the Adobe Commerce software; in other words, you can add split databases to an Adobe Commerce system that already has checkout and order data. Use the instructions in the Adobe Commerce README or the [installation guide](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) to install the Adobe Commerce software using a single master database.
+You can enable split databases at any time after you install the Adobe Commerce software; in other words, you can add split databases to an Adobe Commerce system that already has checkout and order data. Use the instructions in the Adobe Commerce README or the [installation guide](../../installation/overview.md) to install the Adobe Commerce software using a single master database.
 
 ## Set up additional master databases
 

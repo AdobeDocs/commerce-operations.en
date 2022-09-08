@@ -24,7 +24,7 @@ This topic discusses how to enable Apache 2.4 rewrites and specify a setting for
 
 Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all of the other sections in this topic as well.
 
-{{%include /help/_includes/apache-rewrites.md}}
+{{$include /help/_includes/apache-rewrites.md}}
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ To install the default version of Apache:
 
 ### Enable rewrites and .htaccess for Apache 2.4
 
-{{%include /help/_includes/apache-rewrites.md}}
+{{$include /help/_includes/apache-rewrites.md}}
 
 ### Upgrading Apache on Ubuntu
 
@@ -142,7 +142,7 @@ To upgrade to Apache 2.4:
 
 ### Enable rewrites and .htaccess for Apache 2.4
 
-{{%include /help/_includes/apache-rewrites.md}}
+{{$include /help/_includes/apache-rewrites.md}}
 
 ## Installing Apache on CentOS
 

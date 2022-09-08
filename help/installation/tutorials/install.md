@@ -39,7 +39,7 @@ See also [Update, reinstall, uninstall](uninstall.md).
 
 ### Secure installation
 
-{{%include /help/_includes/secure-install.md}}
+{{$include /help/_includes/secure-install.md}}
 
 ## Installer help commands
 
@@ -113,7 +113,7 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 
 >[!TIP]
 >
->To enable remote storage services during installation, see [Configure Remote Storage](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage.html) in the _Configuration Guide_.
+>To enable remote storage services during installation, see [Configure Remote Storage](../../configuration/remote-storage/remote-storage.md) in the _Configuration Guide_.
 
 **Search engine configuration options:**
 
@@ -163,7 +163,7 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 
 **Consumers configuration options:**
 
-{{%include /help/_includes/cli-consumers.md}}
+{{$include /help/_includes/cli-consumers.md}}
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 
 **Sensitive data:**
 
-{{%include /help/_includes/sensitive-data.md}}
+{{$include /help/_includes/sensitive-data.md}}
 
 ### Sample localhost installations
 

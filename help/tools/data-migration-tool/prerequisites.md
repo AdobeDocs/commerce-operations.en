@@ -9,11 +9,11 @@ Before starting migration, make sure that the following requirements are met.
 
 ## Magento 2 system
 
-*  Set up your Magento 2 system so that it meets the [system requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+*  Set up your Magento 2 system so that it meets the [system requirements](../../installation/system-requirements.md).
 
    Use a topology and design that at least matches your existing Magento 1 system.
 
-*  [Install Magento 2](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
+*  [Install Magento 2](../../installation/overview.md).
 
 ## Cron
 

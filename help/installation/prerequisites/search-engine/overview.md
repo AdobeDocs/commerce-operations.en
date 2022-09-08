@@ -9,7 +9,7 @@ As of Adobe Commerce and Magento Open Source 2.4, all installations must be conf
 
 >[!NOTE]
 >
->OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. [Migrate from Elasticsearch to OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) provides guidance on switching to OpenSearch.
+>OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. [Migrate from Elasticsearch to OpenSearch](../../../upgrade/prepare/opensearch-migration.md) provides guidance on switching to OpenSearch.
 
 ## Supported versions
 

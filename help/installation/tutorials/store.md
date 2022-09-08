@@ -14,7 +14,7 @@ Before you run this command, you must do all of the following *or* you must [ins
 
 ### Secure installation
 
-{{%include /help/_includes/secure-install.md}}
+{{$include /help/_includes/secure-install.md}}
 
 ## Configure the store
 

@@ -58,7 +58,7 @@ In this example, we log in to all three databases, which are installed on the sa
 
 ## Verify your work
 
-To verify that your single database implementation is working properly, perform the following tasks and verify that data is added to the `magento_main` database tables using a database tool like [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+To verify that your single database implementation is working properly, perform the following tasks and verify that data is added to the `magento_main` database tables using a database tool like [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Verify that foreign keys have been restored. For example, the `QUOTE_STORE_ID_STORE_STORE_ID` key in the `quote` database table.
 1. Verify that customers can place orders from the storefront.

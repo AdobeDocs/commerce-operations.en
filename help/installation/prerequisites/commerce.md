@@ -28,18 +28,18 @@ Consult the following table for getting started with installing Adobe Commerce o
         <td><ol><li>Creates a Composer <em>project</em> that contains the list of components to use.</li>
             <li>Uses Composer to update package dependencies; uses <code>composer create-project</code> to get the Composer metapackage.</li>
             <li>Installs the application using the <a href="../advanced.md">command line</a>.</li>
-        <li>Upgrades the application and extensions using the  <a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html">command line</a>.</li></ol></td>
+        <li>Upgrades the application and extensions using the  <a href="../../upgrade/implementation/perform-upgrade.md">command line</a>.</li></ol></td>
         <td><p><a href="../composer.md">Get the metapackage</a></p></td>
     </tr>
     <tr>
         <td><p>Contributing developer</p></td>
         <td><p>Contributes to the Magento Open Source codebase, files bugs, and customizes the application. Highly technical, has their own development server, understands Composer and GitHub.</p>
             <p>You <em>cannot</em> use the application in a production environment.</p>
-      <p>You must upgrade using <a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html">Composer and Git commands</a>.</p></td>
+      <p>You must upgrade using <a href="../../upgrade/developer/git-installs.md">Composer and Git commands</a>.</p></td>
         <td><ol><li>Clones the GitHub repository.</li>
             <li>Uses Composer to update package dependencies.</li>
             <li>Installs the application using <a href="../advanced.md">command line</a>.</li>
-            <li>Upgrades the application using <a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/developer/git-installs.html">Composer and Git commands</a>.</li>
+            <li>Upgrades the application using <a href="../../upgrade/developer/git-installs.md">Composer and Git commands</a>.</li>
             <li>Customizes code under the <code>app/code</code> directory.</li></ol></td>
         <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">Clone the GitHub repository</a></p></td>
     </tr>

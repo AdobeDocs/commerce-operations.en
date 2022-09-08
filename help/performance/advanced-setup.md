@@ -30,7 +30,7 @@ For example, if you are running a profile similar to B2B Medium, you can overrid
 
 A large number of product SKUs, websites, customer groups, or shared catalogs will impact the running time of the Product Price and Catalog Rule indexers. This is because by default, all websites are assigned to all customer groups (shared catalogs).
 
-To decrease indexation time, you can [exclude certain websites from customer groups (shared catalogs)](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+To decrease indexation time, you can [exclude certain websites from customer groups (shared catalogs)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Set up Redis
 
@@ -50,7 +50,7 @@ Magento Open Source and Adobe [!DNL Commerce] support message queues implemented
 
 >[!WARNING]
 >
->The split database feature was [deprecated](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in version 2.4.2 of Adobe Commerce. See [Revert from a split database to a single database](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>The split database feature was [deprecated](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in version 2.4.2 of Adobe Commerce. See [Revert from a split database to a single database](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce allows you to configure scalable database storage to meet the needs of a growing business. You can set up three separate master databases that serve specific domains:
 
@@ -89,7 +89,7 @@ This command performs configuration changes but does not configure replication i
 After splitting your master database and setting slave databases, [!DNL Commerce] automatically regulates connections to a specific database, making decisions based on the type of request (POST, PUT, GET, etc) and data resource. If [!DNL Commerce] or its extensions performs write operations on a GET request, the system automatically switches the connection from slave to master database. It works the same way with master databases: as soon as you work with a checkout-related table, the system redirects all the queries to a specific database. Meanwhile, all catalog-related queries will go to the main database.
 
 For more details on the configuration and the benefits of multiple master/slave configuration, see
-[Split database performance solution](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[Split database performance solution](../configuration/storage/multi-master.md).
 
 ## Serve media content
 
@@ -101,4 +101,4 @@ For medium- and high-load environments, we recommend using Content Delivery Netw
 
 ## Configure log storage
 
-The storage of logs and their influence on other disk operations affects the availability of your web nodes, especially in high-load situations. We recommend that you minimize logging if you don’t need it. You can also configure logging so that it writes on a separate storage system that has high-access speeds. Note that any bottleneck on accessing log storage can directly affect the processing of incoming requests that log write or read operations as part of their flow.
+The storage of logs and their influence on other disk operations affects the availability of your web nodes, especially in high-load situations. We recommend that you minimize logging if you don't need it. You can also configure logging so that it writes on a separate storage system that has high-access speeds. Note that any bottleneck on accessing log storage can directly affect the processing of incoming requests that log write or read operations as part of their flow.

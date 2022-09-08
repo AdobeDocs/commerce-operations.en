@@ -11,7 +11,7 @@ Before you use this command, you must know the relative path to your theme. Them
 
 For example, the path to the Luma [theme](https://glossary.magento.com/theme) provided with Adobe Commerce and Magento Open Source is `frontend/Magento/luma`.
 
-For more information about themes, see [theme structure](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-structure.html).
+For more information about themes, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
 ## Overview of uninstalling themes
 
@@ -22,7 +22,7 @@ This command uninstalls *only* themes that are specified in `composer.json`; in 
 *  Updating the `parent` node information in `theme.xml` to remove references to the theme.
 *  Removing theme code from the file system.
 
-   [More information about theme inheritance](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-inherit.html).
+   [More information about theme inheritance](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## Uninstall themes
 
@@ -36,7 +36,7 @@ where
 
 *  `{theme path}` is the relative path to the theme, starting with the area name. For example, the path to the Blank theme supplied with Adobe Commerce and Magento Open Source is `frontend/Magento/blank`.
 *  `--backup-code` backs up the codebase as discussed in the paragraphs that follow.
-*  `--clear-static-content` cleans generated [static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html), which is necessary to cause static view files to display properly.
+*  `--clear-static-content` cleans generated [static view files](../../configuration/cli/static-view-file-deployment.md), which is necessary to cause static view files to display properly.
 
 The command performs the following tasks:
 
@@ -59,7 +59,7 @@ The command performs the following tasks:
 1. Remove themes from code base using `composer remove`.
 1. Cleans the [cache](https://glossary.magento.com/cache).
 1. Cleans generated classes
-1. If `--clear-static-content` is specified, cleans [generated static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+1. If `--clear-static-content` is specified, cleans [generated static view files](../../configuration/cli/static-view-file-deployment.md).
 
 For example, if you attempt to uninstall a theme that another theme depends on, the following message displays:
 

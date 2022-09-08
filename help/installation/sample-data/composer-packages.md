@@ -25,7 +25,7 @@ If you're a contributing developer, refer to [Install by cloning repositories](g
 
 >[!WARNING]
 >
->Do not install sample data if your application is set for [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode). Switch to [developer mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#developer-mode) first. Installing sample data in production mode [fails](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
+>Do not install sample data if your application is set for [production mode](../../configuration/bootstrap/application-modes.md#production-mode). Switch to [developer mode](../../configuration/bootstrap/application-modes.md#developer-mode) first. Installing sample data in production mode [fails](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
 
 To install sample data using the command line, enter the following command as the file system owner in the `<app_root>` directory:
 
@@ -57,4 +57,4 @@ If the error displays, change to your application installation directory and run
 
 ## Complete the sample data installation
 
-{{%include /help/_includes/sample-data-complete.md}}
+{{$include /help/_includes/sample-data-complete.md}}

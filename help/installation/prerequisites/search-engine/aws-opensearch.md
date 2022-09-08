@@ -51,8 +51,6 @@ For additional information, see the [OpenSearch AWS documentation][].
 <!-- Link Definitions -->
 
 [Creating and managing Amazon OpenSearch Service domains]: https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html
-[Elasticdump]: https://www.npmjs.com/package/elasticdump
-[Elasticsearch documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
 [Migrating to Amazon OpenSearch Service]: https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html
 [OpenSearch AWS documentation]: https://docs.aws.amazon.com/opensearch-service/index.html
 [Advanced Install]: ../../advanced.md

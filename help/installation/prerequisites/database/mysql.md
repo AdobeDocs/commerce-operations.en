@@ -9,7 +9,7 @@ See [System Requirements](../../system-requirements.md) for supported versions o
 
 Adobe _strongly_ recommends you observe the following standard when you set up your database:
 
-*  Adobe Commerce and Magento Open Source use [MySQL database triggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) to improve database access during reindexing. These get created when the indexer mode is set to [schedule](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers). The application does not support any custom triggers in the database because custom triggers can introduce incompatibilities with future Adobe Commerce and Magento Open Source versions.
+*  Adobe Commerce and Magento Open Source use [MySQL database triggers](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) to improve database access during reindexing. These get created when the indexer mode is set to [schedule](../../../configuration/cli/manage-indexers.md#configure-indexers). The application does not support any custom triggers in the database because custom triggers can introduce incompatibilities with future Adobe Commerce and Magento Open Source versions.
 *  Familiarize yourself with [these potential MySQL trigger limitations](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) before you continue.
 *  To enhance your database security posture, enable the [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL mode to prevent storing invalid data values, which might cause unwanted database interactions.
 *  If you use MySQL database replication, be aware that Adobe Commerce and Magento Open Source do _not_ support MySQL statement-based replication. Make sure you use _only_ [row-based replication](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.htmll).
@@ -171,11 +171,11 @@ To configure a MySQL database instance:
 
    We recommend you configure your database instance as appropriate for your business. When configuring your database, please keep the following in mind:
 
-   *  Indexers require higher `tmp_table_size` and `max_heap_table_size` values (e.g., 64M). If you configure the `batch_size` parameter, you can adjust that value along with the table size settings to improve indexer performance. Refer to the [Optimization Guide](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html) for more information.
+   *  Indexers require higher `tmp_table_size` and `max_heap_table_size` values (e.g., 64M). If you configure the `batch_size` parameter, you can adjust that value along with the table size settings to improve indexer performance. Refer to the [Optimization Guide](../../../performance/configuration.md) for more information.
 
    *  For optimal performance, make sure all MySQL and Adobe Commerce or Magento Open Source index tables can be kept in memory (for example, configure `innodb_buffer_pool_size`).
 
-   *  Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#indexers).
+   *  Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Configuration best practices](../../../performance/configuration.md#indexers).
 
 1. In order for MySQL `TIMESTAMP` fields to follow the preferences and composition expected by Magento's declarative schema architecture, the system variable `explicit_defaults_for_timestamp` must be set to `on`.
 

@@ -16,7 +16,7 @@ The message queue system must be established before you install Magento. The bas
 
 >[!NOTE]
 >
->You can use MySQL or RabbitMQ for message queue processing. For details on setting up the message queue system, see [Message queues overview](https://developer.adobe.com/commerce/php/development/components/message-queues/). If you are using the Bulk API with Adobe Commerce, the message queue system configuration defaults to using RabbitMQ as the message broker. See [Start message queue consumers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/start-message-queues.html) for more information.
+>You can use MySQL or RabbitMQ for message queue processing. For details on setting up the message queue system, see [Message queues overview](https://developer.adobe.com/commerce/php/development/components/message-queues/). If you are using the Bulk API with Adobe Commerce, the message queue system configuration defaults to using RabbitMQ as the message broker. See [Start message queue consumers](../../configuration/cli/start-message-queues.md) for more information.
 
 ## Install RabbitMQ on Ubuntu
 
@@ -134,4 +134,4 @@ To configure support for SSL, edit the `ssl` and `ssl_options` parameters in the
 
 ## Start the message queue consumers
 
-After you have connected Adobe Commerce and RabbitMQ, you must start the message queue consumers. See [Configure message queues](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/start-message-queues.html) for details.
+After you have connected Adobe Commerce and RabbitMQ, you must start the message queue consumers. See [Configure message queues](../../configuration/cli/start-message-queues.md) for details.

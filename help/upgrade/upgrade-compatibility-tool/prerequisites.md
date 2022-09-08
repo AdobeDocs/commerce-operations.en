@@ -7,7 +7,7 @@ description: Verify that your system meets the necessary requirements to run the
 
 {{commerce-only}}
 
-You must have [Adobe Commerce access keys](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
+You must have [Adobe Commerce access keys](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
 
 >[!NOTE]
 >

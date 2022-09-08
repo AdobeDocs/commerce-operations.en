@@ -38,7 +38,7 @@ On CentOS, [additional steps may be required][].
 
 Adobe Commerce and Magento Open Source requires a set of extensions to be installed.
 
-{{%include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/php-extensions.md}}
 
 To verify installed extensions:
 

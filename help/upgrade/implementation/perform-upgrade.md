@@ -14,7 +14,7 @@ You can upgrade your Adobe Commerce or Magento Open Source application from the 
 >
 >Do not use this method to upgrade if you cloned the GitHub repository. Instead, see [Upgrade a git-based installation](../developer/git-installs.md) for upgrade instructions.
 
-The following instructions show you how to upgrade using Composer. Adobe Commerce 2.4.2 introduced support for Composer 2. If you are attempting to upgrade from <2.4.1, you must first upgrade to a version that is compatible with Composer 2 (for example, 2.4.2) using Composer 1 _before_ upgrading to Composer 2 for >2.4.2 upgrades. In addition, you must be running a [supported version](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) of PHP.
+The following instructions show you how to upgrade using Composer. Adobe Commerce 2.4.2 introduced support for Composer 2. If you are attempting to upgrade from <2.4.1, you must first upgrade to a version that is compatible with Composer 2 (for example, 2.4.2) using Composer 1 _before_ upgrading to Composer 2 for >2.4.2 upgrades. In addition, you must be running a [supported version](../../installation/system-requirements.md) of PHP.
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
     bin/magento maintenance:enable
     ```
 
-    See [Enable or disable maintenance mode](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) for additional options. Optionally, you can create a [custom maintenance mode page](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+    See [Enable or disable maintenance mode](../../installation/tutorials/maintenance-mode.md) for additional options. Optionally, you can create a [custom maintenance mode page](../troubleshooting/maintenance-mode-options.md).
 
 1. Starting the upgrade process while asynchronous processes, such as message queue consumers, are running may cause data corruption. To prevent data corruption, disable all cron jobs.
 
@@ -249,7 +249,7 @@ Open your storefront URL in a web browser to check whether the upgrade was succe
 
 If the application fails with a  `We're sorry, an error has occurred while generating this email.` error:
 
-1. Reset [file system ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html) as a user with `root` privileges.
+1. Reset [file system ownership and permissions](../../installation/prerequisites/file-system/configure-permissions.md) as a user with `root` privileges.
 1. Clear the following directories:
    -  `var/cache/`
    -  `var/page_cache/`

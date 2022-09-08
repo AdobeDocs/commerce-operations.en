@@ -20,4 +20,4 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 ### Parameter descriptions
 
-{{%include /help/_includes/cli-consumers.md}}
+{{$include /help/_includes/cli-consumers.md}}

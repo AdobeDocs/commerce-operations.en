@@ -11,7 +11,7 @@ There are no prerequisites for using this command.
 
 ## Create or update the deployment configuration
 
-[Deployment configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html) provides the information that the application needs to initialize and bootstrap.
+[Deployment configuration](../../configuration/reference/deployment-files.md) provides the information that the application needs to initialize and bootstrap.
 
 You can use this command if:
 
@@ -35,7 +35,7 @@ The following table discusses the meanings of installation parameters and values
 |`--db-user`|Username of the database instance owner.<br><br>Default is `root`.|No|
 |`--db-password`|Database instance owner's password.|No|
 |`--db-prefix`|Use only if you're installing the database tables in a database instance that has Adobe Commerce and Magento Open Source tables in it already.<br><br>In that case, use a prefix to identify the tables for this installation. Some customers have more than one Adobe Commerce or Magento Open Source instance running on a server with all tables in the same database.<br><br>The prefix can be a maximum of five characters in length. It must begin with a letter and can include only letters, numbers, and underscore characters.<br><br>This option enables those customers to share the database server with more than one Adobe Commerce or Magento Open Source installation.|No|
-|`--session-save`|Use any of the following:<br><br>- `db` to store session data in the [database](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/partial-caching/database-caching.html). Choose database storage if you have a clustered database; otherwise, there might not be much benefit over file-based storage.<br><br>- `files` to store session data in the file system. File-based session storage is appropriate unless the file system access is slow, you have a clustered database, or you want to store session data in Redis.<br><br>- `redis` to store session data in [Use Redis for session storage](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html>Redis. If you will be using Redis for default or page caching, Redis must be already installed. |No|
+|`--session-save`|Use any of the following:<br><br>- `db` to store session data in the [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Choose database storage if you have a clustered database; otherwise, there might not be much benefit over file-based storage.<br><br>- `files` to store session data in the file system. File-based session storage is appropriate unless the file system access is slow, you have a clustered database, or you want to store session data in Redis.<br><br>- `redis` to store session data in [Use Redis for session storage](../../configuration/cache/config-redis.md). If you will be using Redis for default or page caching, Redis must be already installed. |No|
 |`--key`|If you have one, specify a key to encrypt [sensitive data](#sensitive-data) in the database. If you don't have one, the application generates one for you.|No|
 |`--db-init-statements`|Advanced MySQL configuration parameter. Uses database initialization statements to run when connecting to the MySQL database.<br><br>Default is `SET NAMES utf8;`.<br><br>Consult a reference similar to [this one](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) before you set any values.|No|
 |`--http-cache-hosts`|Comma-separated list of HTTP cache gateway hosts to which to send purge requests. (For example, Varnish servers.) Use this parameter to specify the host or hosts to purge in the same request. (It doesn't matter if you have only one host or many hosts.)<br><br>Format must be `<hostname or ip>:<listen port>`, where you can omit `<listen port>` if it's port 80. For example, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Do not separate hosts with a space character.|No|
@@ -55,8 +55,8 @@ bin/magento app:config:import [-n, --no-interaction]
 
 The optional `[-n, --no-interaction]` flag allows the command to run without additional confirmations.
 
-For additional information, please, check the [Import data from configuration files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration.html)
+For additional information, please, check the [Import data from configuration files](../../configuration/cli/import-configuration.md)
 
 ### Sensitive data
 
-{{%include /help/_includes/sensitive-data.md}}
+{{$include /help/_includes/sensitive-data.md}}

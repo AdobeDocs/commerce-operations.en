@@ -28,7 +28,7 @@ The default lifetime for stopwords file [cache](https://glossary.magento.com/cac
 
 **To edit stopwords**:
 
-1. Log in to your Commerce server, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Use a text editor to open a stopword file in the `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
    CSV files use the naming convention `stopwords_<locale_code>.csv`. For example, the German stopword file is named `stopwords_de_DE.csv`.
@@ -54,7 +54,7 @@ The default lifetime for stopwords file [cache](https://glossary.magento.com/cac
 
 **To add stopwords for a locale**:
 
-1. Log in to your Commerce server, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 
 1. Use a text editor to create a stopword file named `stopwords_<locale_code>.csv` in the `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory.
 
@@ -119,7 +119,7 @@ The location depends on how you installed the Commerce software. If you cloned t
 
 ## To change the directory from your module
 
-1. [Create a module](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html)
+1. [Create a module](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. In your module `etc/di.xml` add instructions:
 
    ```xml

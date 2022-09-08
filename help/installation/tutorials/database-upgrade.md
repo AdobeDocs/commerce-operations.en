@@ -27,7 +27,7 @@ Anytime you perform an action that causes the [database schema](https://glossary
     bin/magento setup:upgrade [--keep-generated]
     ```
 
-    Where `--keep-generated` is an optional argument that does not update [static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html). This optional argument is for use *only* in limited circumstances by experienced system integrators. It should be used *only* in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode). It should *not* be used in [developer mode](hhttps://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#developer-mode).
+    Where `--keep-generated` is an optional argument that does not update [static view files](../../configuration/cli/static-view-file-deployment.md). This optional argument is for use *only* in limited circumstances by experienced system integrators. It should be used *only* in [production mode](../../configuration/bootstrap/application-modes.md#production-mode). It should *not* be used in [developer mode](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Clean the cache:
 

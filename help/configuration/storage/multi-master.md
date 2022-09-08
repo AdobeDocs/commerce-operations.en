@@ -63,7 +63,7 @@ This also means you can either:
 
   >[!WARNING]
   >
-  >You must back up the two additional database instances manually. Commerce backs up only the main database instance. The [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) command and Admin options do not back up the additional tables.
+  >You must back up the two additional database instances manually. Commerce backs up only the main database instance. The [`magento setup:backup --db`](../../installation/tutorials/backup.md) command and Admin options do not back up the additional tables.
 
 ## Prerequisites
 

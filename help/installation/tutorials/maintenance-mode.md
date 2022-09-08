@@ -5,9 +5,9 @@ description:
 
 # Enable or disable maintenance mode
 
-The following guide refers to a standard maintenance mode page. If you need to use a custom maintenance page, see [Create the custom maintenance page](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) topic.
+The following guide refers to a standard maintenance mode page. If you need to use a custom maintenance page, see [Create the custom maintenance page](../../upgrade/troubleshooting/maintenance-mode-options.md) topic.
 
-Adobe Commerce and Magento Open Source use [maintenance mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) to disable bootstrapping. Disabling bootstrapping is helpful while you are maintaining, upgrading, or reconfiguring your site.
+Adobe Commerce and Magento Open Source use [maintenance mode](../../configuration/bootstrap/application-modes.md#maintenance-mode) to disable bootstrapping. Disabling bootstrapping is helpful while you are maintaining, upgrading, or reconfiguring your site.
 
 The application detects maintenance mode as follows:
 
@@ -118,4 +118,4 @@ To use the `skin` parameter:
 
 >[!NOTE]
 >
->The [nginx](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-nginx.html) setting must be added for multi-store setups.
+>The [nginx](../../configuration/multi-sites/ms-nginx.md) setting must be added for multi-store setups.

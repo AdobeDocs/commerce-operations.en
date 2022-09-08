@@ -49,7 +49,7 @@ The module uninstall command performs the following tasks:
    For each specified module to uninstall, invokes the `uninstall` method in its `Uninstall` class. This class must inherit from [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
 1. Removes the specified modules from the `setup_module` database table.
-1. Removes the specified modules from the module list in the [deployment configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html).
+1. Removes the specified modules from the module list in the [deployment configuration](../../configuration/reference/deployment-files.md).
 1. Removes code from the codebase using `composer remove`.
 
    >[!NOTE]
@@ -58,7 +58,7 @@ The module uninstall command performs the following tasks:
 
 1. Cleans the [cache](https://glossary.magento.com/cache).
 1. Updates generated classes.
-1. If `--clear-static-content` is specified, cleans [generated static view files](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+1. If `--clear-static-content` is specified, cleans [generated static view files](../../configuration/cli/static-view-file-deployment.md).
 1. Takes the store out of maintenance mode.
 
 For example, if you attempt to uninstall a module that another module depends on, the following message displays:

@@ -53,9 +53,9 @@ We recommend different permissions and ownership when you use the different Adob
 - Developer
 - Production
 
-See [About modes](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) in the _Configuration guide_.
+See [About modes](../../../configuration/bootstrap/application-modes.md) in the _Configuration guide_.
 
-We further discuss permissions recommendations in [File systems access permissions](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) in the _Configuration guide_.
+We further discuss permissions recommendations in [File systems access permissions](../../../configuration/deployment/file-system-permissions.md) in the _Configuration guide_.
 
 >[!TIP]
 >

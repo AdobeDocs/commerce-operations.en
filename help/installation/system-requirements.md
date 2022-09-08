@@ -8,7 +8,7 @@ This table shows versions of third-party software dependencies that Adobe has te
 
 For example, 2.4.3 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.3.
 
-{{$include /help/_includes/system-requirements-table.md}}
+{{$include /help_includes/system-requirements-table.md}}
 
 ## Miscellaneous
 

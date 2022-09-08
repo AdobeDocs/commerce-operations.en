@@ -192,4 +192,4 @@ To set file system permissions and ownership on the sample data repository:
 
 ## Complete the sample data installation
 
-{{%include /help/_includes/sample-data-complete.md}}
+{{$include /help/_includes/sample-data-complete.md}}

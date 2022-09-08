@@ -13,7 +13,7 @@ cron---the UNIX task scheduler---is critical to the application's day-to-day ope
 
 You must install Adobe Commerce and Magento Open Source services in the *crontab*, or some core functionality (as well as some third-party extensions) do not function properly.
 
-For more information about cron, including how to remove a crontab and run cron from the command line, see [Configure and run cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+For more information about cron, including how to remove a crontab and run cron from the command line, see [Configure and run cron](../../configuration/cli/configure-cron-jobs.md).
 
 ## Security settings and recommendations
 
@@ -21,7 +21,7 @@ After installation, we recommend the following:
 
 *  Make sure your file ownership and permissions are set properly
 *  We strongly recommend [changing the default Admin URI](../tutorials/admin-uri.md) from `admin` to something else
-*  Make sure the [`X-Frame-Option` HTTP header](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html) is set properly.
+*  Make sure the [`X-Frame-Option` HTTP header](../../configuration/security/xframe-options.md) is set properly.
 *  Take precautions against cross-site scripting (XSS) by [securing your templates](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
 
 If you installed by [cloning the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), make sure that when you deploy the application, you only include files and folders that are required for the production environment. Files and folders that are not required can potentially expose security risks.
@@ -36,7 +36,7 @@ If you use the Apache web server, you must enable server rewrites for pages to d
 
 If you have multiple webnodes, you *cannot* use Magento's default file caching because there is no synchronization between webnodes. In other words, activity on one webnode is written to that webnode's file system only. Subsequent activity, if performed on another webnode, can result in unnecessary files being written or can result in errors.
 
-Instead, use [Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html) for both the default [cache](https://glossary.magento.com/cache) and the page cache.
+Instead, use [Redis](../../configuration/cache/config-redis.md) for both the default [cache](https://glossary.magento.com/cache) and the page cache.
 
 ## Server settings
 
@@ -81,16 +81,16 @@ Adobe Commerce and Magento Open Source require an e-mail server. We don't recomm
 
 Elasticsearch or OpenSearch is required for all installations as of 2.4.0.
 
-*  [Install and configure the search engine](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/search/overview-search.html)
+*  [Install and configure the search engine](../../configuration/search/overview-search.md)
 
 ### Set up an message queue
 
 Since version 2.3.0, Adobe Commerce and Magento Open Source include message queue functionality. In earlier versions, it is available only for Adobe Commerce.
 
-*  [RabbitMQ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html)
+*  [RabbitMQ](../../configuration/queues/message-queue-framework.md)
 
 ## Settings for Adobe Commerce only
 
 You can configure the following only if you use Adobe Commerce:
 
-*  [Split databases for checkout, order management, and other database tables](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/split-db/multi-master.html)
+*  [Split databases for checkout, order management, and other database tables](../../configuration/storage/multi-master.md)

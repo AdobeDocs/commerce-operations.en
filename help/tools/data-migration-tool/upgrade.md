@@ -19,7 +19,7 @@ Before upgrading the [!DNL Data Migration Tool], you must:
 
 ### Upgrade your Magento software
 
-If you haven't already done so, [upgrade the Magento software](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+If you haven't already done so, [upgrade the Magento software](../../upgrade/overview.md).
 
 ### Back up the `vendor/magento/data-migration-tool` directory
 
@@ -50,8 +50,8 @@ See the [Install [!DNL Data Migration Tool]](install.md) topic to know how to:
 
 ## Upgrade the [!DNL Data Migration Tool]
 
-1. Log in to your Magento server as, or switch to, [the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Change to Magento 2 root directory.
+1. Log in to your application server as, or switch to, [the file system owner](../../installation/prerequisites/file-system/overview.md).
+1. Change to the application root directory.
 1. Enter the following command:
 
    ```bash
