@@ -53,6 +53,7 @@ user-guide-description: Learn how to install Adobe Commerce and Magento Open Sou
     - [Enable or disable maintenance mode](tutorials/maintenance-mode.md)
     - [Enable or disable modules](tutorials/manage-modules.md)
     - [Install an extension](tutorials/extensions.md)
+    - [Install Commerce](tutorials/install.md)
     - [Modify docroot to improve security](tutorials/docroot.md)
     - [Uninstall language packages](tutorials/language-packages.md)
     - [Uninstall modules](tutorials/uninstall-modules.md)
