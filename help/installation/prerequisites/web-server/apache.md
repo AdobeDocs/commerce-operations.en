@@ -75,12 +75,12 @@ Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to pr
 
 Adobe Commerce and Magento Open Source require the following Apache modules to be installed:
 
-*  [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
-*  [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
-*  [mod_headers.c](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
-*  [mod_rewrite.c](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
-*  [mod_security.c](https://modsecurity.org)
-*  [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
+-  [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
+-  [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
+-  [mod_headers.c](https://httpd.apache.org/docs/2.4/mod/mod_headers.html)
+-  [mod_rewrite.c](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
+-  [mod_security.c](https://modsecurity.org)
+-  [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
 ## Verify the Apache version
 
@@ -97,16 +97,16 @@ Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-*  If Apache is *not* installed, see:
-    *  [Installing or upgrading Apache on Ubuntu](#installing-apache-on-ubuntu)
-    *  [Installing Apache on CentOS](#installing-apache-on-centos)
+-  If Apache is *not* installed, see:
+    -  [Installing or upgrading Apache on Ubuntu](#installing-apache-on-ubuntu)
+    -  [Installing Apache on CentOS](#installing-apache-on-centos)
 
 ## Installing or upgrading Apache on Ubuntu
 
 The following sections discusses how to install or upgrade Apache:
 
-*  Install Apache
-*  Upgrade to Apache 2.4 on Ubuntu to use PHP 7.4.
+-  Install Apache
+-  Upgrade to Apache 2.4 on Ubuntu to use PHP 7.4.
 
 ### Installing Apache on Ubuntu
 
