@@ -1,6 +1,6 @@
 ---
 title: Remove or update sample data modules
-description:
+description: Follow these steps to manage Adobe Commerce and Magento Open Source sample data modules.
 ---
 
 # Remove or update sample data modules

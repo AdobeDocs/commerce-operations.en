@@ -1,6 +1,6 @@
 ---
 title: PHP settings
-description:
+description: Follow these steps to install required PHP extensions and configure required PHP settings for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # PHP settings

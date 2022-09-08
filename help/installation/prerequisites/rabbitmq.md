@@ -1,6 +1,6 @@
 ---
 title: Message broker
-description:
+description: Follow these steps to install and configure required message broker software (such as RabbitMQ) for on-premises installations of Adobe Commerce and Magento Open Source.
 ---
 
 # Message broker
