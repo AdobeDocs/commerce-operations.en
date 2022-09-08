@@ -19,10 +19,6 @@ After backing up, you can [roll back](#roll-back) at a later time.
 >
 >For Adobe Commerce on cloud infrastructure projects, see [Snapshots and backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html) in the _Cloud guide_.
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Enable backups
 
 The backup feature is disabled by default. To enable, enter the following CLI command:

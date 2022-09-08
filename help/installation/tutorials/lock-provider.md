@@ -5,10 +5,6 @@ description:
 
 # Configure the lock provider
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Prerequisites
 
 Before you run this command, you must do all of the following *or* you must [install the application](../advanced.md):

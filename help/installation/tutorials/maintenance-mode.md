@@ -16,12 +16,6 @@ The application detects maintenance mode as follows:
 
    `var/.maintenance.ip` can contain a list of IP addresses. If an entry point is accessed using HTTP and the client IP address corresponds to one of the entries in that list, then maintenance mode is off.
 
-## Log in as file system owner
-
-To log in as the file system owner:
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Install the application
 
 Before you use this command to enable or disable maintenance mode, you must [install the application](../advanced.md).

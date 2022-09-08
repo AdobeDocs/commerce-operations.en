@@ -5,10 +5,6 @@ description:
 
 # Upgrade the database schema and data
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Prerequisites
 
 Before you use this command, you must [install the application](../advanced.md).

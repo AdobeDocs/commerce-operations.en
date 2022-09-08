@@ -5,10 +5,6 @@ description:
 
 # Create or update the deployment configuration
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Prerequisites
 
 There are no prerequisites for using this command.

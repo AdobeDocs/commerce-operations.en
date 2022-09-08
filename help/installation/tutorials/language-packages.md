@@ -11,10 +11,6 @@ This command uninstalls *only* language packages that are specified in `composer
 
 You can restore backups at any time using the [magento setup:rollback](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Uninstall language packages
 
 Command usage:

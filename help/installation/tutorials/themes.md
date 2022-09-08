@@ -24,10 +24,6 @@ This command uninstalls *only* themes that are specified in `composer.json`; in 
 
    [More information about theme inheritance](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-inherit.html).
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Uninstall themes
 
 Command usage:

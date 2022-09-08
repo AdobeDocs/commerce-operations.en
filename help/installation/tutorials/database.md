@@ -5,10 +5,6 @@ description:
 
 # Create the database schema
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Prerequisites
 
 Before you run this command, you must [Create or update the deployment configuration](deployment.md).

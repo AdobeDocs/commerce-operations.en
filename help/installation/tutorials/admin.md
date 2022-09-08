@@ -5,10 +5,6 @@ description:
 
 # Create, edit, or unloack an administrator account
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Prerequisites
 
 Before you can use this command, you must do all of the following:

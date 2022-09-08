@@ -5,10 +5,6 @@ description:
 
 # Enable or disable modules
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Prerequisites
 
 This command has no prerequisites.

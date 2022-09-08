@@ -11,10 +11,6 @@ This topic discusses how to:
 
 *  [Prepare to update sample data](#prepare-to-update-sample-data) (for example, before updating the Magento application).
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Remove sample data modules
 
 Enter the following command:

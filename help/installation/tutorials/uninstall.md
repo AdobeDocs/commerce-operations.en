@@ -5,10 +5,6 @@ description:
 
 # Uninstall or reinstall Adobe Commerce
 
-## First steps
-
-{{%include /help/_includes/cli-first-steps.md}}
-
 ## Prerequisites
 
 Before you use these commands, you must [install the application](../tutorials/install.md).
