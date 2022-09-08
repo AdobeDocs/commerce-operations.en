@@ -19,7 +19,7 @@ user-guide-description: Learn how to install Adobe Commerce and Magento Open Sou
         - [MySQL](prerequisites/database/mysql.md)
         - [Remote connections](prerequisites/database/mysql-remote.md)
     - Search engine {#search-engine}
-        - [Overview](prereqxuisites/search-engine/overview.md)
+        - [Overview](prerequisites/search-engine/overview.md)
         - [AWS OpenSearch](prerequisites/search-engine/aws-opensearch.md)
         - [Configure Nginx](prerequisites/search-engine/configure-nginx.md)
         - [Configure Apache](prerequisites/search-engine/configure-apache.md)
@@ -49,7 +49,7 @@ user-guide-description: Learn how to install Adobe Commerce and Magento Open Sou
     - [Create, edit, or unlock admin accounts](tutorials/admin.md)
     - [Create or update the deployment configuration](tutorials/deployment.md)
     - [Create the database schema](tutorials/database.md)
-    - [Display or change the Admin URI](tutorials/admin-url.md)
+    - [Display or change the Admin URI](tutorials/admin-uri.md)
     - [Enable or disable maintenance mode](tutorials/maintenance-mode.md)
     - [Enable or disable modules](tutorials/manage-modules.md)
     - [Install an extension](tutorials/extensions.md)
