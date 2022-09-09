@@ -50,7 +50,7 @@ You will see output similar to the following:
 
 Magento 2 Enterprise Edition, version 2.3.5.0
 
-The status table contains the following types of information:
+The status table includes:
 
 -  **Type**:
    -  `Optional`—All patches from the [!DNL Quality Patches Tool] and the [Cloud Patches](https://devdocs.magento.com/cloud/project/project-patch.html) package are optional for Adobe Commerce and Magento Open Source installations.
