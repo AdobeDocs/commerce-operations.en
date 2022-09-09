@@ -26,7 +26,7 @@ We recommend the following:
 
 ## Installation location
 
-All of the following tasks we discuss assume you have configured your system this way.
+The following tasks assume that you have configured your system according to the following diagram:
 
 ![Search Engine diagram](../../../assets/installation/search-engine-config.svg)
 
@@ -52,7 +52,7 @@ Search requests are processed as follows:
 
 1. The search engine web server (listening on port 443) proxies the request to the search engine server (by default, it listens on port 9200).
 
-1. Access to the search engine is further protected by HTTP Basic authentication. For any request to reach the search engine, it must travel over SSL *and* provide a valid username and password.
+1. Access to the search engine is further protected by HTTP Basic authentication. For a request to reach the search engine, it must travel over SSL *and* provide a valid username and password.
 
 1. The search engine processes the request.
 
@@ -69,7 +69,7 @@ The tasks discussed in this section require the following:
 
 ### Firewall and SELinux
 
-Security-related software (iptables, SELinux, AppArmor) may be configured by default to block communication between subsystems. It may be a good idea to check them in case of problems.
+Security-related software (iptables, SELinux, AppArmor) may be configured by default to block communication between subsystems. It may be a good idea to check them if there are problems.
 
 #### Set up rules for iptables and SELinux
 
@@ -97,7 +97,7 @@ See one of the following sections:
 
 #### Install the JDK on CentOS
 
-See [this article on digitalocean](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+See this [Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
 
 Be sure to install the JDK and *not* the JRE.
 

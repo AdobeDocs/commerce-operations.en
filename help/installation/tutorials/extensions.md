@@ -17,7 +17,7 @@ Extensions include:
 >
 >This topic explains how to use the command line to install extensions you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's [Composer](https://glossary.magento.com/composer) name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
 
-Prior to installation, you may want to:
+Before installation, you may want to:
 
 1. Back up your database.
 1. Enable maintenance mode:
@@ -61,7 +61,7 @@ To get the extension's Composer name and version from the Commerce Marketplace:
 
    ![Marketplace purchase history](../../assets/installation//marketplace-my-purchases.png)
 
-1. Find the extension you want to install and click **Technical Details**.
+1. Find the extension that you want to install and click **Technical Details**.
 
    ![Technical details shows the extension's Composer name](../../assets/installation/marketplace-extension-technical-details.png)
 
@@ -87,7 +87,7 @@ Add the extension's name and version to your `composer.json` file:
 
 1. Enter your [authentication keys](../prerequisites/authentication-keys.md). Your public key is your username; your private key is your password.
 
-1. Wait for Composer to finish updating your project dependencies and make sure there aren't any errors:
+1. Wait for Composer to finish updating your project dependencies and make sure that there aren't any errors:
 
    ```terminal
    Updating dependencies (including require-dev)
@@ -117,11 +117,11 @@ The extension name is in the format `<VendorName>_<ComponentName>`; this is a di
 bin/magento module:status
 ```
 
-and look for the extension under "List of disabled modules".
+And look for the extension under "List of disabled modules".
 
 ## Enable the extension
 
-Some extensions won't work properly unless you clear Magento-generated static view files first. Use the `--clear-static-content` option to clear static view files when you're enabling an extension.
+Some extensions don't work properly unless you clear generated static view files first. Use the `--clear-static-content` option to clear static view files when you're enabling an extension.
 
 1. Enable the extension and clear static view files:
 

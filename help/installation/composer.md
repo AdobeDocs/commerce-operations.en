@@ -11,7 +11,7 @@ We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
 -  Adhere to [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) standards
 -  Repackage Magento Open Source with other components
--  Use the Magento software in a production environment
+-  Use the Adobe Commerce or Magento Open Source software in a production environment
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ To get the Adobe Commerce or Magento Open Source metapackage:
 
 1. Log in to your application server as, or switch to, the [file system owner](prerequisites/file-system/overview.md).
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot.
-1. Create a new Composer project using the Adobe Commerce or Magento Open Source metapackage.
+1. Create Composer project using the Adobe Commerce or Magento Open Source metapackage.
 
     **Magento Open Source**
 
@@ -81,9 +81,9 @@ To get the Adobe Commerce or Magento Open Source metapackage:
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
     ```
 
-    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://marketplace.magento.com/customer/accessKeys/).
+    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
 
-    If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://magento.com/support) for help.
+    If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure that there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://support.magento.com/hc/en-us) for help.
 
     See [Troubleshooting](https://support.magento.com/hc/en-us/articles/360033818091) for help with more errors.
 
@@ -203,11 +203,11 @@ The following table summarizes the available commands. Commands are shown in sum
 |`magento maintenance:{enable/disable}`|Enables or disables maintenance mode (in maintenance mode, only exempt IP addresses can access the Admin or storefront).|Application installed|
 |`magento setup:config:set`|Creates or updates the deployment configuration.|None|
 |`magento module:{enable/disable}`|Enable or disable modules.|None|
-|`magento setup:store-config:set`|Sets storefront-related options, such as base URL, language, timezone, and so on.|Deployment configuration|
+|`magento setup:store-config:set`|Sets storefront-related options, such as base URL, language, timezone.|Deployment configuration|
 |`magento setup:db-schema:upgrade`|Updates the database schema.|Deployment configuration|
 |`magento setup:db-data:upgrade`|Updates the database data.|Deployment configuration|
-|`magento setup:db:status`|Checks if the database is up-to-date with the code.|Deployment configuration|
-|`magento admin:user:create`|Creates an administrator user.|All of the following:<br><br>Deployment configuration<br><br>Enable at minimum the Magento_User and Magento_Authorization modules<br><br>Database (simplest way is to use magento setup:upgrade)|
+|`magento setup:db:status`|Checks if the database is up to date with the code.|Deployment configuration|
+|`magento admin:user:create`|Creates an administrator user.|You can create users for the following:<br><br>Deployment configuration<br><br>Enable at minimum the `Magento_User` and `Magento_Authorization` modules<br><br>Database (simplest way is to use `bin/magento setup:upgrade`)|
 |`magento list`|Lists all available commands.|None|
 |`magento help`|Provides help for the specified command.|None|
 

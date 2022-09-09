@@ -21,7 +21,7 @@ The following figure shows a sample storefront page. If it displays as follows, 
 
 ![Storefront which verifies a successful installation](../../assets/installation/install-success_store.png)
 
-If the page displays a 404 (Not Found) or unconfigured (no styles, only text), see [After installing, images and stylesheets do not load; only text displays, no graphics](https://support.magento.com/hc/en-us/articles/360032994352).
+If the page displays a `404 (Not Found)` error or doesn't display styles, see [troubleshootings](https://support.magento.com/hc/en-us/articles/360032994352).
 
 ## Verify the Admin
 
@@ -29,13 +29,13 @@ Go to the [Admin](https://glossary.magento.com/magento-admin) in a web browser. 
 
 (The [Admin](https://glossary.magento.com/admin) URI is specified by the value of the `backend-frontname` installation parameter.)
 
-When prompted, log in as a Administrator.
+When prompted, log in as an administrator.
 
 The following figure shows a sample Admin page. If it displays as follows, your installation was a success!
 
 ![Admin which verifies a successful installation](../../assets/installation/install_success_admin.png)
 
-If the page displays unconfigured (no styles, only text), see [After installing, images and stylesheets do not load; only text displays, no graphics](https://support.magento.com/hc/en-us/articles/360032994352).
+If the page does not display styles, see [troubleshooting](https://support.magento.com/hc/en-us/articles/360032994352).
 
 If you get a 404 (Not Found) error similar to the following, see [PHP version error or 404 when accessing Adobe Commerce in browser](https://support.magento.com/hc/en-us/articles/360033117152).
 

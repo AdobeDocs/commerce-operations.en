@@ -5,15 +5,15 @@ description: Learn more about the software dependencies required for on-premises
 
 # On-premises installation prerequisites
 
-Before you install Magento, you must do all of the following:
+Before you install Adobe Commerce or Magento Open Source, you must do the following:
 
 *  Set up one or more hosts that meet the [system requirements](../system-requirements.md).
-*  If you are setting up more than one web node with load balancing, set up and test that part of your system _before_ you install Magento.
-*  Make sure you can back up your entire system at various points during the installation so you can roll back in the [event](https://glossary.magento.com/event) of issues.
+*  If you are setting up more than one web node with load balancing, set up and test that part of your system _before_ you install the application.
+*  Make sure you can back up your entire system at various points during the installation so that you can roll it back if there are issues.
 
 >[!NOTE]
 >
->We assume you are installing the Adobe Commerce or Magento Open Source in a **development environment**, which means you have root user access to the machine **and** that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
+>We assume you are installing the Adobe Commerce or Magento Open Source in a **development environment**, that you have root user access to the machine, **and** that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
 
 We strongly recommend you update and upgrade your operating system software. These upgrades can provide security and software fixes that might prevent future problems. Do not know what any of this means? Check out our [installation overview page](../overview.md).
 
@@ -74,7 +74,7 @@ For example:
 mysql -u magento -p
 ```
 
-Check that you have the correct version of MySQL for the version of Adobe Commerce or Magento Open Source you are installing ([check here for supported versions](../system-requirements.md). The following result indicates the version you are running.)
+Check that you have the correct version of MySQL for the version of Adobe Commerce or Magento Open Source you are installing ([check here for supported versions](../system-requirements.md). The following result indicates the version that you are running.)
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.

@@ -36,7 +36,7 @@ include /etc/nginx/conf.d/*.conf;
 
 This section discusses how to specify who can access the [nginx](https://glossary.magento.com/nginx) server.
 
-1. Use a text editor to create a new file `/etc/nginx/conf.d/magento_es_auth.conf` with the following contents:
+1. Use a text editor to create a file `/etc/nginx/conf.d/magento_es_auth.conf` with the following contents:
 
    ```conf
    server {
@@ -85,7 +85,7 @@ Because nginx natively supports HTTP Basic authentication, we recommend it over,
 
 Additional resources:
 
-*  [How To Set Up Password Authentication with Nginx on Ubuntu 14.04 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+*  [How To Set Up Password Authentication with Nginx on Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 *  [Basic HTTP Authentication With Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 *  [Example Nginx Configurations for Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
@@ -94,7 +94,7 @@ See the following sections for more information:
 *  [Step 1: Create passwords](#step-1-create-a-password)
 *  [Step 2: Set up access to nginx](#step-3-set-up-access-to-nginx)
 *  [Step 3: Set up a restricted context for the search engine](#step-4-set-up-a-restricted-context-for-the-search-engine)
-*  [Verify communication is secure](#secure-communication-with-nginx)
+*  [Verify that communication is secure](#secure-communication-with-nginx)
 
 ### Step 1: Create a password
 
@@ -184,13 +184,13 @@ server {
 
 This section discusses how to specify who can access the search engine server.
 
-1. Enter the following command to create a new directory to store the authentication configuration:
+1. Enter the following command to create a directory to store the authentication configuration:
 
    ```bash
    mkdir /etc/nginx/auth/
    ```
 
-1. Use a text editor to create a new file `/etc/nginx/auth/magento_elasticsearch.conf` with the following contents:
+1. Use a text editor to create a file `/etc/nginx/auth/magento_elasticsearch.conf` with the following contents:
 
    ```conf
    location /elasticsearch {

@@ -13,9 +13,7 @@ This topic discusses how to set required [PHP](https://glossary.magento.com/php)
 
 ## Verify PHP is installed
 
-Most flavors of Linux have PHP installed by default.
-This topic assumes that you have already installed PHP.
-To verify if PHP is installed already, in the command line, type:
+Most flavors of Linux have PHP installed by default. This topic assumes that you have already installed PHP. To verify if PHP is installed already, in the command line, type:
 
 ```bash
 php -v
@@ -59,8 +57,7 @@ To verify installed extensions:
 
 >[!WARNING]
 >
->If you are using PHP 7.4.20, set `pcre.jit=0` in your `php.ini` file. This will get around a PHP [bug](https://bugs.php.net/bug.php?id=81101) that prevents CSS from loading.
-
+>If you are using PHP 7.4.20, set `pcre.jit=0` in your `php.ini` file. This gets around a PHP [bug](https://bugs.php.net/bug.php?id=81101) that prevents CSS from loading.
 
 -  Set the system time zone for PHP; otherwise, errors like the following display during the installation and time-related operations like cron might not work:
 
@@ -123,7 +120,7 @@ Use the following guidelines to find it:
 
 -  Apache web server:
 
-   For Ubuntu with Apache, OPcache settings are typically located in `php.ini`.
+   For Ubuntu with Apache, OPcache settings are typically located in the `php.ini` file.
 
    For CentOS with Apache or nginx, OPcache settings are typically located in `/etc/php.d/opcache.ini`
 
@@ -142,14 +139,14 @@ If you have more than one `opcache.ini`, modify all of them.
 To set PHP options:
 
 1. Open a `php.ini` in a text editor.
-1. Locate your server's time zone in the available [time zone settings](https://php.net/manual/en/timezones.php)
+1. Locate your server's time zone in the available [time zone settings](https://www.php.net/manual/en/timezones.php)
 1. Locate the following setting and uncomment it if necessary:
 
    ```conf
    date.timezone =
    ```
 
-1. Add the time zone setting you found in step 2.
+1. Add the time zone setting that you found in step 2.
 
 1. Change the value of `memory_limit` to one of the values recommended at the beginning of this section.
 
@@ -188,7 +185,7 @@ To set `opcache.ini` options:
    -  `/etc/php/7.2/fpm/php.ini` (nginx web server (CentOS or Ubuntu))
 
 1. Locate `opcache.save_comments` and uncomment it if necessary.
-1. Make sure its value is set to `1`.
+1. Make sure that its value is set to `1`.
 1. Save your changes and exit the text editor.
 1. Restart your web server:
 
@@ -198,7 +195,7 @@ To set `opcache.ini` options:
 
 ## Troubleshooting
 
-See the following Adobe Commerce Support articles for help troubleshooting PHP problems:
+See the following Adobe Commerce Support articles for help with troubleshooting PHP problems:
 
 -  [PHP version error or 404 error when accessing Adobe Commerce in browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
 -  [PHP settings errors](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)

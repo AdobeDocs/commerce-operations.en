@@ -9,10 +9,10 @@ This topic discusses how to clone and add sample data if you cloned the Magento 
 
 If you're not a contributing developer, choose one of the other options displayed in the table of contents on the left side of the page.
 
-Contributing developers can use this method of installing sample data *only* if all of the following are true:
+Contributing developers can use this method of installing sample data *only* if the following is true:
 
 *  You use Magento Open Source
-*  You [cloned the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+*  You [cloned the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
@@ -20,7 +20,7 @@ Contributing developers can use this method of installing sample data *only* if 
 
 ## Clone the sample data repository
 
-This section discusses how to install Magento sample data by cloning the sample data repository. You can clone the sample data repository in any of the following ways:
+This section discusses how to install sample data by cloning the sample data repository. You can clone the sample data repository in any of the following ways:
 
 *  Clone with the [SSH protocol](#clone-with-ssh)
 *  Clone with the [HTTPS protocol](#clone-with-https)
@@ -53,7 +53,7 @@ To clone the sample data GitHub repository using the SSH protocol:
 
    >[!NOTE]
    >
-   >If the following error displays, make sure you [shared your SSH key](https://help.github.com/articles/generating-ssh-keys/) with GitHub:<br>
+   >If the following error displays, make sure you [shared your SSH key](https://docs.github.com/articles/generating-ssh-keys/) with GitHub:<br>
 
    ```terminal
    Cloning into 'magento2'...
@@ -61,13 +61,13 @@ To clone the sample data GitHub repository using the SSH protocol:
    fatal: The remote end hung up unexpectedly
    ```
 
-1. Ensure you checkout the branch of the sample data repository that corresponds with the branch you used from the main `magento2` repository.
+1. Ensure you check out the branch of the sample data repository that corresponds with the branch you used from the main `magento2` repository.
 
    For example:
 
-   If you used the `2.4-develop` branch of the Magento 2 repository, the Sample Data branch should be `2.4-develop`.
+   If you used the `2.4-develop` branch of the Magento Open Source GitHub repository, the Sample Data branch should be `2.4-develop`.
 
-   If you used the `2.4.3` branch of the Magento 2 repository, the Sample Data branch should be `2.4.3`.
+   If you used the `2.4.3` branch of the Magento Open Source GitHub repository, the Sample Data branch should be `2.4.3`.
 
    To checkout the correct branch, run the following command from the sample data repository's root directory (assuming you need the `2.4.3` branch):
 
@@ -76,7 +76,7 @@ To clone the sample data GitHub repository using the SSH protocol:
    ```
 
 1. Change to `<app_root>`.
-1. Enter the following command to create symbolic links between the files you just cloned so sample data works properly:
+1. Enter the following command to create symbolic links between the files that you cloned so sample data works properly:
 
    ```bash
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
@@ -96,7 +96,7 @@ To clone the sample data GitHub repository using the SSH protocol:
 
 To clone the sample data GitHub repository using the HTTPS protocol:
 
-1. In a web browser, go to [the Magento sample data repository](https://github.com/magento/magento2-sample-data).
+1. In a web browser, go to the [sample data repository](https://github.com/magento/magento2-sample-data).
 1. On the right side of the page, under the **clone URL** field, click **HTTPS**.
 1. Click **Copy to clipboard**.
 
@@ -117,13 +117,13 @@ To clone the sample data GitHub repository using the HTTPS protocol:
    ```
 
 1. Wait for the repository to clone on your server.
-1. Ensure you checkout the branch of the sample data repository that corresponds with the branch you used from the main `magento2` repository.
+1. Ensure you check out the branch of the sample data repository that corresponds with the branch you used from the main `magento2` repository.
 
    For example:
 
-   If you used the `2.4-develop` branch of the Magento 2 repository, the Sample Data branch should be `2.4-develop`.
+   If you used the `2.4-develop` branch of the Magento Open Source GitHub repository, the Sample Data branch should be `2.4-develop`.
 
-   If you used the `2.4.3` branch of the Magento 2 repository, the Sample Data branch should be `2.4.3`.
+   If you used the `2.4.3` branch of the Magento Open Source GitHub repository, the Sample Data branch should be `2.4.3`.
 
    To checkout the correct branch, run the following command from the sample data repository's root directory (assuming you need the `2.4.3` branch):
 
@@ -132,7 +132,7 @@ To clone the sample data GitHub repository using the HTTPS protocol:
    ```
 
 1. Change to `<magento_root>`.
-1. Enter the following command to create symbolic links between the files you just cloned so sample data works properly:
+1. Enter the following command to create symbolic links between the files that you cloned so sample data works properly:
 
    ```bash
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
@@ -149,7 +149,7 @@ To clone the sample data GitHub repository using the HTTPS protocol:
 
 >[!WARNING]
 >
->If you're installing sample data *after* installing Magento, you must also run the following command to update the database and schema:
+>If you're installing sample data *after* installing Adobe Commerce or Magento Open Source, you must also run the following command to update the database and schema:
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade

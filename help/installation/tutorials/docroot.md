@@ -7,12 +7,11 @@ description: Prevent unauthorized browser-based access to Adobe Commerce or Mage
 
 In a standard installation with an Apache web server, Adobe Commerce and Magento Open Source is installed to the default web root: `/var/www/html/magento2`.
 
-Within the `magento2` folder are:
+The `magento2/` directory contains the following:
 
--  /pub/
--  /setup/
--  /var/
--  other folders
+-  `pub/`
+-  `setup/`
+-  `var/`
 
 The application is served from `/var/www/html/magento2/pub`. The rest of the file system is vulnerable because it is accessible from a browser.
 Setting the webroot to the `pub/` directory prevents site visitors from accessing sensitive areas of the file system from a browser.
@@ -23,9 +22,9 @@ This topic describes how to change the Apache docroot on an existing instance to
 
 If you are using [nginx](../prerequisites/web-server/nginx.md) and the [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) file included in the installation directory, you are probably already serving files from the `pub/` directory.
 
-When used in your server block that defines your site, the `nginx.conf.sample` configuration overrides your server's docroot settings to serve files from Magento's `pub/` directory. For example, see the last line in the following configuration:
+When used in your server block that defines your site, the `nginx.conf.sample` configuration overrides your server's docroot settings to serve files from the `pub/` directory. For example, see the last line in the following configuration:
 
-```bash
+```conf
 # /etc/nginx/sites-available/magento
 
 upstream fastcgi_backend {
@@ -43,7 +42,7 @@ server {
 
 ## Before you begin
 
-To complete this tutorial, you will need access to a working installation running on a [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack:
+To complete this tutorial, you need access to a working installation running on a [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack:
 
 -  Linux
 -  Apache (2.4+)
@@ -58,7 +57,7 @@ To complete this tutorial, you will need access to a working installation runnin
 
 ## 1. Edit your server configuration
 
-The name and location of your virtual host file depends on which version of Apache you are running. This example shows the name and location of the virtual host file on Apache v2.4.
+The name and location of your virtual host file depends on which version of Apache that you are running. This example shows the name and location of the virtual host file on Apache v2.4.
 
 1. Log in to your application server.
 1. Edit your virtual host file:
@@ -92,7 +91,7 @@ The name and location of your virtual host file depends on which version of Apac
 
 ## 2. Update your base URL
 
-If you appended a directory name to your server's hostname or IP address to create the base URL when you installed the application (for example `http://192.168.33.10/magento2`), you'll need to remove it.
+If you appended a directory name to your server's hostname or IP address to create the base URL when you installed the application (for example `http://192.168.33.10/magento2`), you need to remove it.
 
 >[!NOTE]
 >
@@ -104,7 +103,7 @@ If you appended a directory name to your server's hostname or IP address to crea
    mysql -u <user> -p
    ```
 
-1. Specify the database you created when you installed the application:
+1. Specify the database that you created when you installed the application:
 
    ```shell
    use <database-name>
@@ -118,7 +117,7 @@ If you appended a directory name to your server's hostname or IP address to crea
 
 ## 3. Update the env.php file
 
-The following node needs to be appended to the `env.php` file.
+Append the following node to the `env.php` file.
 
 ```conf
 'directories' => [

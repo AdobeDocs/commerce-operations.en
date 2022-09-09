@@ -5,11 +5,11 @@ description: Follow these steps to configure a remote database connection for on
 
 # Set up a remote MySQL database connection
 
-There are times when you may want to host the database on a separate server instead of running the database server and the web server on the same machine.
+Sometimes you may want to host the database on a separate server instead of running the database server and the web server on the same machine.
 
 Adobe has provided a way to connect to a MySQL server on a different machine. As of Adobe Commerce and Magento Open Source 2.4.3, you can also configure the application to use an Amazon Web Services (AWS) Aurora database with no code changes.
 
-Aurora is a high-performance, fully-compliant MySQL server hosted on AWS.
+Aurora is a high-performance, fully compliant MySQL server hosted on AWS.
 
 ## Connecting to an AWS Aurora database
 
@@ -48,7 +48,7 @@ Use the following guidelines to configure remote database connections if your we
 
 ### Resolving connection issues
 
-If you have issues connecting to either host, first ping the other host to make sure it is reachable. You also might need to allow connections from one host to another by modifying firewall and SELinux rules (if you use SELinux).
+If you have issues connecting to either host, first ping the other host to make sure it is reachable. You might need to allow connections from one host to another by modifying firewall and SELinux rules (if you use SELinux).
 
 ## Create the remote connection
 

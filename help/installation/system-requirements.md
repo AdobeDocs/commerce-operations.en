@@ -17,7 +17,7 @@ This section describes support and compatibility for all other types of required
 
 >[!NOTE]
 >
->All of the following requirements apply to the latest patch release of Adobe Commerce and Magento Open Source 2.4.
+>The following requirements apply to the latest 2.4.x patch release of Adobe Commerce and Magento Open Source.
 
 
 ### Mail server
@@ -47,7 +47,7 @@ If you must install it separately, see the [PHP OPcache documentation][].
 
 ### PHP settings
 
-We recommend particular PHP configuration settings, such as `memory_limit`, that can avoid common problems when using Magento.
+We recommend particular PHP configuration settings, such as `memory_limit`, that can avoid common problems when using Adobe Commerce and Magento Open Source.
 
 For more information, see [Required PHP settings][].
 
@@ -57,7 +57,7 @@ PHPUnit (as a command-line tool) 9.0.0
 
 ### RAM
 
-Upgrading the applications and extensions you obtain from the Commerce Marketplace and other sources can require up to 2GB of RAM. If you are using a system with less than 2GB of RAM, we recommend you create a [swap file](https://support.magento.com/hc/en-us/articles/360032980432); otherwise, your upgrade might fail.
+Upgrading the applications and extensions you obtain from the Commerce Marketplace and other sources can require up to 2 GB of RAM. If you are using a system with less than 2 GB of RAM, we recommend you create a [swap file](https://support.magento.com/hc/en-us/articles/360032980432); otherwise, your upgrade might fail.
 
 ### System dependencies
 
@@ -83,13 +83,13 @@ Adobe Commerce and Magento Open Source require the following system tools for so
 
 Storefront and Admin:
 
--  Microsoft Edge, latest and previous major version
--  Firefox latest, latest and previous major version (any operating system)
--  Chrome latest, latest and previous major version (any operating system)
--  Safari latest, latest and previous major version (Mac OS only)
+-  Microsoft Edge (latest and previous major version)
+-  Firefox (latest and previous major version; any operating system)
+-  Chrome (latest and previous major version; any operating system)
+-  Safari (latest and previous major version; macOS only)
 -  Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
 -  Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
--  Chrome for mobile, latest and previous major version (Android 4 or later) for mobile storefront
+-  Chrome for mobile (latest and previous major version [Android 4 or later] for mobile storefront)
 
 ### Xdebug
 

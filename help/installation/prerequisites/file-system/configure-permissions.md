@@ -7,7 +7,7 @@ description: Follow these steps to configure file system permissions for on-prem
 
 ## Set pre-installation file system ownership and permissions
 
-This topic discusses how to set read-write permissions for the web server group before you install the Magento software. This is necessary so the command line can write files to the Magento file system.
+This topic discusses how to set read-write permissions for the web server group before you install Adobe Commerce or Magento Open Source. This is necessary so the command line can write files to the file system.
 
 The procedure you use is different, depending on whether you use [shared hosting](#set-permissions-for-shared-hosting-one-user) and have one user or if you use a [private server](#set-ownership-and-permissions-for-two-users) and have two users.
 
@@ -18,7 +18,7 @@ This section discusses how to set pre-installation permissions if you log in to 
 To set permissions before you install the application:
 
 1. Log in to your application server.
-1. Use a file manager application provided by your shared hosting provider to verify write permissions are set on the following directories:
+1. Use a file manager application provided by your shared hosting provider to verify that write permissions are set on the following directories:
 
    *  `vendor` (Composer or compressed archive installation)
    *  `app/etc`
@@ -51,7 +51,7 @@ To optionally enter all commands on one line, enter the following assuming the a
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
 ```
 
-1. If you have not done so already, get the application in one of the following ways:
+1. If you have not already done so, get the application in one of the following ways:
 
    *  [Composer metapackage](../../composer.md)
    *  [Clone the repository (contributing developers only)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
@@ -81,7 +81,7 @@ Complete the following tasks in the order shown:
 
 To enable the web server to write files and directories in the file system but to also maintain *ownership* by the file system owner, both users must be in the same group. This is necessary so both users can share access to files (including files created using the Admin or other web-based utilities).
 
-This section discusses how to create a new file system owner and put that user in the web server's group. You can use an existing user account if you wish; we recommend the user have a strong password for security reasons.
+This section discusses how to create a file system owner and put that user in the web server's group. You can use an existing user account if you wish; we recommend that the user have a strong password for security reasons.
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Follow the prompts on your screen to create a password for the user.
 
 >[!WARNING]
 >
->If you don't have `root` privileges on your application server, you can use another local user account. Make sure the user has a strong password and continue with [Put the file system owner in the web server group](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>If you don't have `root` privileges on your application server, you can use another local user account. Make sure that the user has a strong password and continue with [Put the file system owner in the web server group](#step-3-put-the-file-system-owner-in-the-web-servers-group).
 
 For example, to create a user named `magento_user` and give the user a password, enter:
 
@@ -141,7 +141,7 @@ To find the web server user's group:
 
 Typically, the user and group name are both `apache`.
 
-*  Ubuntu: `ps aux | grep apache` to find the apache user, then `groups <apache user>` to find the group.
+*  Ubuntu: `ps aux | grep apache` to find the Apache user, then `groups <apache user>` to find the group.
 
 Typically, the username and the group name are both `www-data`.
 
@@ -162,7 +162,7 @@ For example, to add the user `magento_user` to the `apache` primary group on Cen
 sudo usermod -a -G apache magento_user
 ```
 
-To confirm your user is a member of the web server group, enter the following command:
+To confirm that your user is a member of the web server group, enter the following command:
 
 ```bash
 groups magento_user
@@ -185,7 +185,7 @@ To complete the task, restart the web server:
 
 ### Step 4: Get the software
 
-If you have not done so already, get the software in one of the following ways:
+If you have not already done so, get the software in one of the following ways:
 
 *  [Composer metapackage](../../composer.md)
 *  [Clone the repository (contributing developers only)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)

@@ -5,14 +5,14 @@ description: Follow these steps to install and configure required message broker
 
 # Message broker
 
-Adobe Commerce uses the RabbitMQ open source message broker. It offers a reliable, highly available, scalable, and portable messaging system.
+Adobe Commerce uses the RabbitMQ open-source message broker. It offers a reliable, highly available, scalable, and portable messaging system.
 
-Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other. Nor do they need to communicate with the message queue at the same time. When a sender places a messages onto a queue, it is stored until the recipient receives them.
+Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other. Nor do they need to communicate with the message queue at the same time. When a sender places a message in a queue, it is stored until the recipient receives them.
 
-The message queue system must be established before you install Magento. The basic sequence is
+The message queue system must be established before you install Adobe Commerce or Magento Open Source. The basic sequence is:
 
 1. Install RabbitMQ and any prerequisites.
-1. Connect RabbitMQ and Magento.
+1. Connect RabbitMQ to Adobe Commerce or Magento Open Source.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ The message queue system must be established before you install Magento. The bas
 
 ## Install RabbitMQ on Ubuntu
 
-To install RabbitMQ on Ubuntu 16 enter the following command:
+To install RabbitMQ on Ubuntu 16, enter the following command:
 
 ```bash
 sudo apt install -y rabbitmq-server
@@ -41,7 +41,7 @@ Refer to [Installing on Debian/Ubuntu](https://www.rabbitmq.com/install-debian.h
 
 RabbitMQ was written using the Erlang programming language, which must be installed on the same system as RabbitMQ.
 
-See [Manual installation](https://www.erlang-solutions.com/resources/download.html) for more information.
+See [Manual installation](https://www.erlang-solutions.com/downloads/) for more information.
 
 Refer to the [RabbitMQ/Erlang version matrix](https://www.rabbitmq.com/which-erlang.html) to install the correct version.
 
@@ -65,7 +65,7 @@ Review the official RabbitMQ documentation to configure and manage RabbitMQ. Pay
 
 ## Install with RabbitMQ and connect
 
-If you install Adobe Commerce or Magento Open Source _after_ you install RabbitMQ, add the following command line parameters during installation:
+If you install Adobe Commerce or Magento Open Source _after_ you install RabbitMQ, add the following command-line parameters during installation:
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"

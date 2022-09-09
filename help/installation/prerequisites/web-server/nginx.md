@@ -7,7 +7,7 @@ description: Follow these steps to install and configure the Nginx web server fo
 
 Adobe Commerce supports nginx 1.18 (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
 
-Installation instructions vary based on which operating system you are using. See [PHP](../php-settings.md) for information.
+Installation instructions vary based on which operating system that you are using. See [PHP](../php-settings.md) for information.
 
 ## Ubuntu
 
@@ -59,7 +59,7 @@ To install and configure `php-fpm`:
 
    >[!NOTE]
    >
-   >We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings](../php-settings.md) for more information.
+   >We recommend setting the memory limit to 2 G when testing Adobe Commerce and Magento Open Source. Refer to [Required PHP settings](../php-settings.md) for more information.
 
 1. Save and exit the editor.
 
@@ -81,7 +81,7 @@ There are several ways to download Adobe Commerce and Magento Open Source, inclu
 
 *  [Clone the git repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-For this example, we'll install using Composer and the command line.
+This example shows a Composer-based installation using the command line.
 
 1. As the [file system owner](../file-system/overview.md), log in to your application server.
 
@@ -91,13 +91,13 @@ For this example, we'll install using Composer and the command line.
    cd /var/www/html
    ```
 
-1. Install Composer globally. You'll need Composer to update dependencies before installing Magento:
+1. Install Composer globally. Composer is required to update dependencies before installing Adobe Commerce or Magento Open Source:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Create a new Composer project using the Magento Open Source or Adobe Commerce metapackage.
+1. Create a Composer project using the Magento Open Source or Adobe Commerce metapackage.
 
    **Magento Open Source**
 
@@ -172,9 +172,9 @@ For this example, we'll install using Composer and the command line.
 
 ### Configure nginx
 
-We recommend configuring nginx using the `nginx.conf.sample` configuration file provided in the installation directory and an nginx virtual host.
+We recommend configuring nginx using the `nginx.conf.sample` configuration file provided in the installation directory and nginx virtual host.
 
-These instructions assume you're using the Ubuntu default location for the nginx virtual host (e.g., `/etc/nginx/sites-available`) and Ubuntu default docroot (e.g., `/var/www/html`), however, you can change these locations to suit your environment.
+These instructions assume you're using the Ubuntu default location for the nginx virtual host (for example, `/etc/nginx/sites-available`) and Ubuntu default docroot (for example, `/var/www/html`), however, you can change these locations to suit your environment.
 
 1. Create a new virtual host for your site:
 
@@ -202,7 +202,7 @@ These instructions assume you're using the Ubuntu default location for the nginx
    >
    >The `include` directive must point to the sample nginx configuration file in your installation directory.
 
-1. Replace `www.magento-dev.com` with your domain name. This must match the base URL you specified when installing Magento.
+1. Replace `www.magento-dev.com` with your domain name. This must match the base URL you specified when installing Adobe Commerce or Magento Open Source.
 
 1. Save and exit the editor.
 
@@ -278,7 +278,7 @@ Adobe Commerce and Magento Open Source require several [PHP](../php-settings.md)
 
    >[!NOTE]
    >
-   >We recommend setting the memory limit to 2G when testing Magento. Refer to [Required PHP settings](../php-settings.md) for more information.
+   >We recommend setting the memory limit to 2 G when testing Adobe Commerce or Magento Open Source. Refer to [Required PHP settings](../php-settings.md) for more information.
 
 1. Uncomment the session path directory and set the path:
 
@@ -313,7 +313,7 @@ Adobe Commerce and Magento Open Source require several [PHP](../php-settings.md)
 
 1. Save and exit the editor.
 
-1. Create a new directory for the PHP session path and change the owner to the `apache` user and group:
+1. Create a directory for the PHP session path and change the owner to the `apache` user and group:
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -323,7 +323,7 @@ Adobe Commerce and Magento Open Source require several [PHP](../php-settings.md)
    chown -R apache:apache /var/lib/php/
    ```
 
-1. Create a new directory for the PHP session path and change the owner to the `apache` user and group:
+1. Create a directory for the PHP session path and change the owner to the `apache` user and group:
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -361,7 +361,7 @@ There are several ways to download the Adobe Commerce and Magento Open Source, i
 
 *  [Clone the git repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-For this example, we'll install using Composer and the command line.
+This example shows a Composer-based installation using the command line.
 
 1. As the [file system owner](../file-system/overview.md), log in to your application server.
 
@@ -371,13 +371,13 @@ For this example, we'll install using Composer and the command line.
    cd /var/www/html
    ```
 
-1. Install Composer globally. You'll need Composer to update dependencies before installing Magento:
+1. Install Composer globally. Composer is required to update dependencies before installing Adobe Commerce or Magento Open Source:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Create a new Composer project using the Magento Open Source or Adobe Commerce metapackage.
+1. Create a Composer project using the Magento Open Source or Adobe Commerce metapackage.
 
    **Magento Open Source**
 
@@ -393,7 +393,7 @@ For this example, we'll install using Composer and the command line.
 
    When prompted, enter your [authentication keys](../authentication-keys.md). Your _public key_ is your username; your _private key_ is your password.
 
-1. Set read-write permissions for the web server group before you install the application. This is necessary so that the and command line can write files to the file system.
+1. Set read-write permissions for the web server group before you install the application. This is necessary so that the command line can write files to the file system.
 
    ```bash
    cd /var/www/html/<magento install directory>
@@ -448,9 +448,9 @@ For this example, we'll install using Composer and the command line.
 
 ### Configure nginx
 
-We recommend configuring nginx using the `nginx.conf.sample` configuration file provided in the installation directory and an nginx virtual host.
+We recommend configuring nginx using the `nginx.conf.sample` configuration file provided in the installation directory and nginx virtual host.
 
-These instructions assume you're using the CentOS default location for the nginx virtual host (e.g., `/etc/nginx/conf.d`) and default docroot (e.g., `/usr/share/nginx/html`), however, you can change these locations to suit your environment.
+These instructions assume you're using the CentOS default location for the nginx virtual host (for example, `/etc/nginx/conf.d`) and default docroot (for example, `/usr/share/nginx/html`), however, you can change these locations to suit your environment.
 
 1. Create a new virtual host for your site:
 

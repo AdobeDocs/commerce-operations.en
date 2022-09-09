@@ -11,7 +11,7 @@ You can install sample data either before or after installing the Commerce softw
 
 >[!WARNING]
 >
->There is currently no way to uninstall sample data. We recommend you use sample data only to learn about how Adobe Commerce and Magento Open Source works. Avoid doing any development in a system in which you installed sample data.
+>You cannot uninstall sample data. We recommend you use sample data only to learn about how Adobe Commerce and Magento Open Source work. Avoid doing any development in a system in which you installed sample data.
 
 You can install optional sample data in any of the following ways:
 

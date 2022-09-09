@@ -1,11 +1,11 @@
 ---
 title: Configure message consumers
-description: Follow these steps to configure the bahavior of Adobe Commerce or Magento Open Source message queue consumers.
+description: Follow these steps to configure the behavior of Adobe Commerce or Magento Open Source message queue consumers.
 ---
 
 # Configure message consumers
 
-Before you run this command, you must do all of the following *or* you must [install the application](../advanced.md):
+Before you run this command, you must do the following *or* you must [install the application](../advanced.md):
 
 *  [Create or update the deployment configuration](deployment.md)
 *  [Create the database schema](database.md)

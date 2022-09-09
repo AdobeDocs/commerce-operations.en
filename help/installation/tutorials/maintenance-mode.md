@@ -38,13 +38,13 @@ bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=
 bin/magento maintenance:status
 ```
 
-`--ip=<ip address>` is an IP address to exempt from maintenance mode (for example, developers doing the maintenance). To exempt more than one IP address in the same command, use the option multiple times.
+The `--ip=<ip address>` option is an IP address to exempt from maintenance mode (for example, developers doing the maintenance). To exempt more than one IP address in the same command, use the option multiple times.
 
 >[!NOTE]
 >
 >Using `--ip=<ip address>` with `magento maintenance:disable` saves the list of IPs for later use. To clear the list of exempt IPs, use `magento maintenance:enable --ip=none` or see [Maintain the list of exempt IP addresses](#maintain-the-list-of-exempt-ip-addressest).
 
-`magento maintenance:status` displays the current status of maintenance mode.
+The `bin/magento maintenance:status` command displays the status of maintenance mode.
 
 For example, to enable maintenance mode with no IP address exemptions:
 
@@ -69,9 +69,9 @@ To maintain the list of exempt IP addresses, you can either use the `[--ip=<ip l
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 
-`<ip address> .. <ip address>` is an optional space-delimited list of IP addresses to exempt.
+The `<ip address> .. <ip address>` syntax is an optional space-delimited list of IP addresses to exempt.
 
-`--none` clears the list.
+The `--none` option clears the list.
 
 ## Multi-store setups
 
@@ -89,7 +89,7 @@ if (isset($_GET['skin'])) {
 }
 ```
 
-This can also be added to a rewrite rule in the `.htaccess` file that will append a `skin` parameter to the URL.
+This can also be added to a rewrite rule in the `.htaccess` file that appends a `skin` parameter to the URL.
 
 ### $_GET['skin'] parameter
 

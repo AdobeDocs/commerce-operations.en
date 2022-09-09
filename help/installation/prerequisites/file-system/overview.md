@@ -25,7 +25,7 @@ There are two types of file system owners:
 
     -  The _command-line user_ runs cron jobs and command-line utilities.
 
-   Both users require the same level of permissions to the file system, so it is best to use a [shared group](configure-permissions.md#set-ownership-and-permissions-for-two-users) and set a [`umask`](#restrict-access-with-a-umask).
+   Both users require the same permissions to the file system, so it is best to use a [shared group](configure-permissions.md#set-ownership-and-permissions-for-two-users) and set a [`umask`](#restrict-access-with-a-umask).
 
 ### Restrict access with a umask
 
@@ -33,7 +33,7 @@ To tighten security, particularly in a production environment on a shared hostin
 
 >[!WARNING]
 >
->File system security is complex and extremely important. We strongly recommend that you consult an experienced system administrator or network administrator before you decide the level of permissions to set. We provide a mechanism for you to use, but creating a permissions strategy is your responsibility.
+>File system security is complex and important. We strongly recommend that you consult an experienced system administrator or network administrator before you decide the level of permissions to set. We provide a mechanism for you to use, but creating a permissions strategy is your responsibility.
 
 Adobe Commerce and Magento Open Source use a three-bit, default mask: `002`. Subtract the default mask from the UNIX defaults of 666 for files and 777 for directories.
 
@@ -43,7 +43,7 @@ For example:
 
 -  **664 for files**—Writable by the user, writable by the group, and read-only for everyone else.
 
-For more information about creating a `magento_umask` file, see [Optionally set a umask](../../next-steps/set-umask.md).
+For more information about creating a `magento_umask` file, see [Set a umask](../../next-steps/set-umask.md).
 
 ## Permissions, ownership, and application modes
 
@@ -60,5 +60,3 @@ We further discuss permissions recommendations in [File systems access permissio
 >[!TIP]
 >
 >Before you install Adobe Commerce or Magento Open Source, review [Configure file ownership and permissions](configure-permissions.md).
-
-[shared group]

@@ -9,12 +9,12 @@ The `repo.magento.com` repository is where Adobe Commerce and Magento Open Sourc
 
 >[!NOTE]
 >
->For access entitlement to Adobe Commerce and Magento Open Source packages, you must use keys associated with a MAGEID that has been granted access to those packages. The MAGEID is typically the **Billing Contact** on the Adobe Commerce account and may not always be the **Project Owner** of the Adobe Commerce on cloud infrastructure project. If you encounter [errors](https://support.magento.com/hc/en-us/articles/360040296392), you may not have authorization to access the package or the access entitlement has expired due to an outstanding invoice on the account. Contact [Adobe Commerce Support](https://magento.com/support) for assistance with your MAGEID.
+>For access entitlement to Adobe Commerce and Magento Open Source packages, you must use keys associated with a MAGEID that has been granted access to those packages. The MAGEID is typically the **Billing Contact** on the Adobe Commerce account and may not always be the **Project Owner** of the Adobe Commerce on cloud infrastructure project. If you encounter [errors](https://support.magento.com/hc/en-us/articles/360040296392), you may not have authorization to access the package or the access entitlement has expired due to an outstanding invoice on the account. Contact [Adobe Commerce Support](https://support.magento.com/hc/en-us) for assistance with your MAGEID.
 
 To create authentication keys:
 
 1. Log in to the [Commerce Marketplace](https://marketplace.magento.com). If you don't have an account, click **Register**.
-1. Click your account name in the top-right of the page and select **My Profile**.
+1. Click your account name in the top right of the page and select **My Profile**.
 
 1. Click **Access Keys** in the Marketplace tab.
 
@@ -36,15 +36,15 @@ You can also disable or delete authentication keys. For example, you can disable
 
 To download Adobe Commerce releases using SSH, you must generate a Downloads Access Token. To generate a token:
 
-1. Log in to your [magento.com account](https://www.magentocommerce.com/products/customer/account/login).
+1. Log in to your [magento.com account](https://account.magento.com/customer/account/login).
 1. Click **My Account** at the top of the page.
 1. Click **Account Settings** > **Downloads Access Token**.
 
-   ![Access your keys]({{ site.baseurl }}/common/images/connect_keys1.png){:width="200px"}
+   ![Access your keys](../../assets/installation/connect_keys1.png)
 
 1. Click **Generate new token** to replace and disable an existing token.
 
-You must use your MAGEID plus your token to download a release. Your MAGEID is displayed at the top-left of your account page.
+You must use your MAGEID plus your token to download a release. Your MAGEID is displayed at the top left of your account page.
 
 For example:
 

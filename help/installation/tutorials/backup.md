@@ -1,9 +1,9 @@
 ---
 title: Backup and rollback the file system, media, and database
-description: Follow these steps to backup and restore your Adobe Commerce or Magento Open Source application.
+description: Follow these steps to back up and restore your Adobe Commerce or Magento Open Source application.
 ---
 
-# Backup and rollback the file syste, media, and database
+# Backup and rollback the file system, media, and database
 
 This command enables you to back up:
 
@@ -11,9 +11,9 @@ This command enables you to back up:
 *  The `pub/media` directory
 *  The database
 
-Backups are stored in the `var/backups` directory and can be restored at any time using the [magento setup:rollback](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
+Backups are stored in the `var/backups` directory and can be restored at any time using the [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
 
-After backing up, you can [roll back](#roll-back) at a later time.
+After backing up, you can [rollback](#rollback) later.
 
 >[!TIP]
 >
@@ -36,15 +36,15 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 Rolling back to a previous backup can silently fail, resulting in incomplete data being written to the file system or database using the [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
 
-In some cases, a very long query string causes the user's allocated memory space to run out of memory because of too many recursive calls.
+Sometimes, a long query string causes the user's allocated memory space to run out of memory because of too many recursive calls.
 
-## How to set open files ulimit
+## How to set open files `ulimit`
 
 We recommend setting the open files [`ulimit`](https://ss64.com/bash/ulimit.html) for the file system user to a value of `65536` or more.
 
 You can do this either on the command line or you can make it a permanent setting for the user by editing their shell script.
 
-Before you continue, if you haven't done so already, switch to the [file system owner](../prerequisites/file-system/overview.md).
+Before you continue, if you haven't already done so, switch to the [file system owner](../prerequisites/file-system/overview.md).
 
 Command:
 
@@ -56,11 +56,11 @@ You can change this to a larger value if needed.
 
 >[!NOTE]
 >
->The syntax for open files `ulimit` depends on the UNIX shell you use. The preceding setting should work with CentOS and Ubuntu with the Bash shell. However, for Mac OS, the correct setting is `ulimit -S 65532`. Consult a man page or operating system reference for more information.
+>The syntax for open files `ulimit` depends on the UNIX shell you use. The preceding setting should work with CentOS and Ubuntu with the Bash shell. However, for macOS, the correct setting is `ulimit -S 65532`. Consult a man page or operating system reference for more information.
 
 To optionally set the value in the user's Bash shell:
 
-1. If you haven't done so already, switch to the [file system owner](../prerequisites/file-system/overview.md).
+1. If you haven't already done so, switch to the [file system owner](../prerequisites/file-system/overview.md).
 1. Open `/home/<username>/.bashrc` in a text editor.
 1. Add the following line:
 
@@ -72,7 +72,7 @@ To optionally set the value in the user's Bash shell:
 
 >[!WARNING]
 >
->We recommend that you avoid setting a value for [`pcre.recursion_limit`](https://php.net/manual/en/pcre.configuration.php) in the `php.ini` file because it can result in incomplete rollbacks with no failure notice.
+>We recommend that you avoid setting a value for [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) in the `php.ini` file because it can result in incomplete rollbacks with no failure notice.
 
 ## Backing up
 
@@ -116,7 +116,7 @@ DB backup path: /var/www/html/magento2/var/backups/1434133011_db.sql
 Disabling maintenance mode
 ```
 
-## Roll back
+## Rollback
 
 This section discusses how to roll back to a backup you made previously. You must know the file name of the backup file to restore.
 

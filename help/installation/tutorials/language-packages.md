@@ -5,11 +5,11 @@ description: Follow these steps to uninstall an Adobe Commerce or Magento Open S
 
 # Uninstall language packages
 
-This section discusses how to uninstall one or more language packages, optionally including the language packages' code from the file system. You can create backups first so you can restore the data at a later time.
+This section discusses how to uninstall one or more language packages, optionally including the language packages' code from the file system. You can create backups first so you can restore the data later.
 
 This command uninstalls *only* language packages that are specified in `composer.json`; in other words, language packages that are provided as [Composer](https://glossary.magento.com/composer) packages. If your [language package](https://glossary.magento.com/language-package) is not a Composer package, you must uninstall it manually by removing language package code from the file system.
 
-You can restore backups at any time using the [magento setup:rollback](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
+You can restore backups at any time using the [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
 
 ## Uninstall language packages
 
@@ -23,9 +23,9 @@ The language package uninstall command performs the following tasks:
 
 1. Checks for dependencies; if so, the command terminates.
 
-   To work around this, you can either uninstall all dependent language packages at the same time or you can uninstall the depending language packages first.
+   To work around this, you can either uninstall all dependent language packages at the same time or you can uninstall the dependent language packages first.
 
-1. If `--backup code` is specified, backs up the file system (excluding `var` and `pub/static` directories) to `var/backups/<timestamp>_filesystem.tgz`
+1. If `--backup code` is specified, back up the file system (excluding `var` and `pub/static` directories) to `var/backups/<timestamp>_filesystem.tgz`
 1. Removes language packages files from the codebase using `composer remove`.
 1. Cleans the [cache](https://glossary.magento.com/cache).
 

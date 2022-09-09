@@ -16,7 +16,7 @@ Read [Creating and managing Amazon OpenSearch Service domains][] for detailed in
 
 Once everything is prepared on AWS, it is time to populate it with data.
 
-For smaller installations, we recommended that you create new indices directly on the AWS instance for the following reasons:
+For smaller installations, we recommended that you create indices directly on the AWS instance for the following reasons:
 
 *  Recreating the indices is a quick operation.
 *  There may be version incompatibilities between the old instance and the AWS instance, and these can be avoided by building directly on the AWS instance.
@@ -30,7 +30,7 @@ See Amazon's [Migrating to Amazon OpenSearch Service][] instructions for more in
 
 ### Configure Commerce for OpenSearch
 
-Steps for configuring OpenSearch is covered in the [Advanced Install][] topic.
+Steps for configuring OpenSearch are covered in the [Advanced Install][] topic.
 
 To test that the new configuration is working, test the OpenSearch endpoint directly:
 

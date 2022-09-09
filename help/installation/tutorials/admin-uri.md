@@ -36,4 +36,4 @@ You can also view the Admin URI in `<magento_root>/app/etc/env.php`. A snippet f
 
 ## Change the Admin URL
 
-To change the Admin URI, use the [magento setup:config:set](deployment.md) command.
+To change the Admin URI, use the [`magento setup:config:set`](deployment.md) command.

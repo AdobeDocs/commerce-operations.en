@@ -40,7 +40,7 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 The preceding commands work only with the Apache web server. Because of the variety of configurations and security requirements, we do not guarantee these commands work in all situations. For more information, see:
 
 *  [man page](https://linux.die.net/man/8/httpd_selinux)
-*  [serverlab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
+*  [Server Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
 ### Enable inter-server communication
 

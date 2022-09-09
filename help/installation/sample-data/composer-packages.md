@@ -1,15 +1,15 @@
 ---
 title: Download sample data Composer packages
-description: Follow these steps to install Adobe Commerce and Magento Open Source sample data using the Composer PHP package manager.
+description: Follow these steps to install Adobe Commerce and Magento Open Source sample data using the Composer PHP Package Manager.
 ---
 
 # Download sample data Composer packages
 
 This section discusses how to install sample data if you got the Adobe Commerce or Magento Open Source software in any of the following ways:
 
-*  Downloaded a compressed archive from [Magento](https://magento.com/tech-resources/download).
+*  Downloaded a compressed archive from `https://magento.com/tech-resources/download`.
 
-  If you downloaded an archive from GitHub, this method won't work because the `composer.json` file doesn't contain the `repo.magento.com` URL.
+   If you downloaded an archive from GitHub, this method doesn't work because the `composer.json` file doesn't contain the `repo.magento.com` URL.
 
 *  Used `composer create-project`
 
@@ -17,7 +17,7 @@ You can use this method of getting sample data for both Adobe Commerce and Magen
 
 >[!NOTE]
 >
->If you encounter errors, such as `Could not find package...` or `...no matching package found...`, make sure there aren't any typos in your command. If you still encounter errors, you may not have access to the right Composer repositories, especially if your using Adobe Commerce. Contact [Adobe Commerce Support](https://magento.com/support) for help.
+>If you encounter errors, such as `Could not find package...` or `...no matching package found...`, make sure that there aren't any typos in your command. If you still encounter errors, you may not have access to the right Composer repositories, especially if your using Adobe Commerce. Contact [Adobe Commerce Support](https://support.magento.com/hc/en-us) for help.
 
 You can use Composer to install sample data either before or after installing the application; however, there might be [additional tasks](remove-or-update.md).
 
@@ -53,7 +53,7 @@ The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
 ```
 
-If the error displays, change to your application installation directory and run `composer update`, which will prompt you for your [authentication keys](../prerequisites/authentication-keys.md).
+If the error displays, change to your application installation directory and run `composer update`, which prompts you for your [authentication keys](../prerequisites/authentication-keys.md).
 
 ## Complete the sample data installation
 

@@ -3,11 +3,11 @@ title: Create, edit, or unlock an administrator account
 description: Follow these steps to manage the administrator account of your Adobe Commerce or Magento Open Source Admin application.
 ---
 
-# Create, edit, or unloack an administrator account
+# Create, edit, or unlock an administrator account
 
 ## Prerequisites
 
-Before you can use this command, you must do all of the following:
+Before you can use this command, you must do the following:
 
 -  [Create the deployment configuration](deployment.md)
 -  [Enable at minimum the Magento_Authorization and Magento_User modules](manage-modules.md)
@@ -19,7 +19,7 @@ Before you can use this command, you must do all of the following:
 
 ## Create or edit an administrator
 
-Use this command to create a new administrator or to edit an existing administrator.
+Use this command to create an administrator or to edit an existing administrator.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ If the account is either not unlocked or if there was a problem, the following m
 The user account "admin" was not locked or could not be unlocked
 ```
 
-Verify the user is an administrator, the user is active, and that the account is currently locked. To view the list of locked users in the Admin, log in as an administrator and click **System** > **Permissions** > **Locked Users**.
+Verify that the user is an administrator, the user is active, and that the account is locked. To view the list of locked users in the Admin, log in as an administrator and click **System** > **Permissions** > **Locked Users**.
 
 If the account doesn't exist, the following message displays:
 

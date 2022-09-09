@@ -119,7 +119,7 @@ mkdir -p /usr/local/apache/password
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
-where
+Where
 
 *  `<username>` can be:
 

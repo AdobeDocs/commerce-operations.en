@@ -7,7 +7,7 @@ description: Learn more about optional software that you can install to support 
 
 We strongly recommend you install NTP to ensure that cron-related tasks perform properly. (Server dates could be in the past or future, for example.)
 
-The other optional utilities discussed in this topic might assist you with your installation; however, they are not required to install or use Magento.
+The other optional utilities discussed in this topic might assist you with your installation; however, they are not required to install or use Adobe Commerce or Magento Open Source.
 
 ## Installing and Configuring Network Time Protocol (NTP)
 
@@ -53,7 +53,7 @@ To install and configure NTP:
 
 ### Use NTP pool servers
 
-Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recommends you use [pool servers](https://www.ntppool.org/en/) that are close to your servers' time zone as discussed on the [NTP pool project help page](https://www.ntppool.org/en//use.html). If you have a private NTP server that is available to all hosts in your deployment, you can use that server instead.
+Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recommends you use [pool servers](https://www.ntppool.org/en/) that are close to your servers' time zone as discussed on the [NTP pool project page](https://www.ntppool.org/en/use.html). If you have a private NTP server that is available to all hosts in your deployment, you can use that server instead.
 
 1. Open `/etc/ntp.conf` in a text editor.
 
@@ -93,7 +93,7 @@ Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recomm
 
 ## Create phpinfo.php
 
-[`phpinfo.php`](https://php.net/manual/en/function.phpinfo.php) displays a large amount of information about [PHP](https://glossary.magento.com/php) and its extensions.
+The [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) file displays a large amount of information about [PHP](https://glossary.magento.com/php) and its extensions.
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Add the following code anywhere in your web server's docroot:
 phpinfo();
 ```
 
-For more information, see the [phpinfo manual page](https://php.net/manual/en/function.phpinfo.php).
+For more information, see the [phpinfo manual page](https://www.php.net/manual/en/function.phpinfo.php).
 
 To view the results, enter the following [URL](https://glossary.magento.com/url) in your browser's location or address field:
 
@@ -119,26 +119,26 @@ http://<web server host or IP>/phpinfo.php
 If a 404 (Not Found) error displays, check the following:
 
 *  Start the web server if necessary.
-*  Make sure your firewall allows traffic on port 80.
+*  Make sure that your firewall allows traffic on port 80.
 
    [Help for Ubuntu](https://help.ubuntu.com/community/UFW)
 
    [Help for CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
 
-## phpmyadmin
+## phpMyAdmin
 
-`phpmyadmin` is an easy-to-use, free database administration utility. You can use it to check and manipulate the contents of your database. You must log in to `phpmyadmin` as the MySQL database administrative user.
+The phpMyAdmin application is an easy to use, free database administration utility. You can use it to check and manipulate the contents of your database. You must log in to phpMyAdmin as the MySQL database administrative user.
 
-For more information about `phpmyadmin`, see the [phpmyadmin home page](https://www.phpmyadmin.net/).
+For more information about phpMyAdmin`, see the [phpMyAdmin home page](https://www.phpmyadmin.net/).
 
-For more detailed information about installation, see the [phpmyadmin installation documentation](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
+For more detailed information about installation, see the [phpMyAdmin installation documentation](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
 >[!NOTE]
 >
->Use phpmyadmin in a development system _only_. It can be a security issue in production.
+>Use phpMyAdmin in a development system _only_. It can be a security issue in production.
 
 
-1. To use phpmyadmin, enter the following command in your browser's address or location field:
+1. To use phpMyAdmin, enter the following command in your browser's address or location field:
 
    ```http
    http://<web server host or IP>/phpmyadmin

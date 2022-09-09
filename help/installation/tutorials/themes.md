@@ -15,7 +15,7 @@ For more information about themes, see [theme structure](https://developer.adobe
 
 ## Overview of uninstalling themes
 
-This section discusses how to uninstall one or more themes, optionally including the themes' code from the file system. You can create backups first so you can restore the data at a later time.
+This section discusses how to uninstall one or more themes, optionally including the themes' code from the file system. You can create backups first so you can restore the data later.
 
 This command uninstalls *only* themes that are specified in `composer.json`; in other words, themes that are provided as [Composer](https://glossary.magento.com/composer) packages. If your theme is not a Composer package, you must uninstall it manually by:
 
@@ -32,7 +32,7 @@ Command usage:
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
 ```
 
-where
+Where
 
 *  `{theme path}` is the relative path to the theme, starting with the area name. For example, the path to the Blank theme supplied with Adobe Commerce and Magento Open Source is `frontend/Magento/blank`.
 *  `--backup-code` backs up the codebase as discussed in the paragraphs that follow.
@@ -42,18 +42,18 @@ The command performs the following tasks:
 
 1. Verifies that the specified theme paths exist; if not, the command terminates.
 1. Verifies that the theme is a Composer package; if not, the command terminates.
-1. Checks for dependencies; if there are any, the command terminates.
+1. Checks for dependencies and terminates the command if there are any unmet dependencies.
 
-   To work around this, you can either uninstall all themes at the same time or you can uninstall the depending theme first.
+   To work around this, you can either uninstall all themes at the same time or you can uninstall the depending on theme first.
 
 1. Verifies that the theme is not being used; if it is being used, the command terminates.
 1. Verifies that the theme is not the base of the virtual theme; if it is the base of a virtual theme, the command terminates.
 1. Puts the store in maintenance mode.
-1. If `--backup-code` is specified, backs up the codebase, excluding the `pub/static`, `pub/media`, and `var` directories.
+1. If `--backup-code` is specified, back up the codebase, excluding the `pub/static`, `pub/media`, and `var` directories.
 
    The backup file name is `var/backups/<timestamp>_filesystem.tgz`
 
-   You can restore backups at any time using the [magento setup:rollback](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
+   You can restore backups at any time using the [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) command.
 
 1. Removes themes from the `theme` database table.
 1. Remove themes from code base using `composer remove`.
@@ -68,7 +68,7 @@ Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following pa
         ExampleCorp/sample-module-theme-depend
 ```
 
-One alternative is to uninstall both themes at the same time as follows after backing up the codebase:
+One alternative is to uninstall both themes at the same time as follows backing up the codebase:
 
 ```bash
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code

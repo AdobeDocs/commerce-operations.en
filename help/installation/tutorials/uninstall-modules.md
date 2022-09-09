@@ -5,13 +5,13 @@ description: Follow these steps to uninstall an Adobe Commerce or Magento Open S
 
 # Uninstall modules
 
-This section discusses how to uninstall one or more modules. During uninstallation, you can optionally remove the modules' code, database schema, and database data. You can create backups first so you can recover the data at a later time.
+This section discusses how to uninstall one or more modules. During uninstallation, you can optionally remove the modules' code, database schema, and database data. You can create backups first so you can recover the data later.
 
 You should uninstall a module only if you're certain you won't use it. Instead of uninstalling a module, you can disable it as discussed in [Enable or disable modules](manage-modules.md).
 
 >[!NOTE]
 >
->This command checks _only_ dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable](manage-modules.md) non-Composer modules.
+>This command checks that only dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable](manage-modules.md) non-Composer modules.
 
 ## Uninstall modules
 
@@ -30,9 +30,9 @@ The module uninstall command performs the following tasks:
 
    This command works _only_ with modules defined as Composer packages.
 
-1. Checks for dependencies with other modules; if there are any, the command terminates..
+1. Checks for dependencies with other modules and terminates the command if there are any unmet dependencies.
 
-   To work around this, you can either uninstall all modules at the same time or you can uninstall the depending modules first.
+   To work around this, you can either uninstall all modules at the same time or you can uninstall the dependent modules first.
 
 1. Requests confirmation to proceed.
 1. Puts the store in maintenance mode.
@@ -44,7 +44,7 @@ The module uninstall command performs the following tasks:
     | `--backup-media` | Backs up the pub/media directory.                                                | `var/backups/<timestamp>_filesystem_media.tgz` |
     | `--backup-db`    | Backs up the database.                                                 | `var/backups/<timestamp>_db.gz`                |
 
-1. If `--remove-data` is specified, removes the database schema and data defined in the module's `Uninstall` classes.
+1. If `--remove-data` is specified, remove the database schema and data defined in the module's `Uninstall` classes.
 
    For each specified module to uninstall, invokes the `uninstall` method in its `Uninstall` class. This class must inherit from [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
@@ -122,11 +122,11 @@ To restore the codebase to the state at which you backed it up, use the followin
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
-where `<filename>` is the name of the backup file located in `<magento_root>/var/backups`. To display a list of backup files, enter `magento info:backups:list`
+Where `<filename>` is the name of the backup file in the `<app_root>/var/backups` directory. To display a list of backup files, enter `magento info:backups:list`
 
 >[!WARNING]
 >
->This command deletes the specified files or the database before restoring them. For example, the `--media-file` option deletes media assets under the `pub/media` directory before restoring from the specified rollback file. Make sure you have made no changes to the file system or database that you want to keep before using this command.
+>This command deletes the specified files or the database before restoring them. For example, the `--media-file` option deletes media assets under the `pub/media` directory before restoring from the specified rollback file. Make sure you have not changed the file system or database that you want to keep before using this command.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ This command performs the following tasks:
 1. Verifies the backup file name.
 1. If you specify a code rollback file:
 
-   a. Verifies the rollback destination locations are writable (note that the `pub/static` and `var` folders are ignored).
+   a. Verifies that the rollback destination locations are writable (note that the `pub/static` and `var` folders are ignored).
 
    b. Deletes all files and directories under your application installation directory.
 
@@ -152,7 +152,7 @@ This command performs the following tasks:
 
 1. If you specify a media rollback file:
 
-   a. Verifies the rollback destination locations are writable.
+   a. Verifies that the rollback destination locations are writable.
 
    b. Deletes all files and directories under `pub/media`
 

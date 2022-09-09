@@ -26,7 +26,7 @@ A common suggestion is to use a value of `022` in the `magento_umask` file, whic
 
 To set `magento_umask`:
 
-1. In a command line terminal, log in to your application server as a [file system owner](../prerequisites/file-system/overview.md).
+1. In a command-line terminal, log in to your application server as a [file system owner](../prerequisites/file-system/overview.md).
 1. Navigate to the application installation directory:
 
    ```bash

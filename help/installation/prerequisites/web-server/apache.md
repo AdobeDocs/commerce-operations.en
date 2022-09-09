@@ -9,7 +9,7 @@ Adobe Commerce supports Apache 2.4.x.
 
 ## Important: Apache required directives
 
-1. Set `AllowEncodedSlashes` in the server config (globally) or in the virtual host configurations to avoid decoding the encoded slashes that may cause issues for URLs. For instance, when retrieving products with a slash in the SKU via the API, you will not want that converted. The sample block is not complete and other directives will be required.
+1. Set `AllowEncodedSlashes` in the server config (globally) or in the virtual host configurations to avoid decoding the encoded slashes that may cause issues for URLs. For instance, when retrieving products with a slash in the SKU via the API, you do not want that converted. The sample block is not complete and other directives are required.
 
    ```conf
    <VirtualHost *:443>
@@ -22,7 +22,7 @@ Adobe Commerce supports Apache 2.4.x.
 
 This topic discusses how to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all of the other sections in this topic as well.
+Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all other sections in this topic as well.
 
 Use this section to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
@@ -54,7 +54,7 @@ Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to pr
 
    >[!NOTE]
    >
-   >In some cases, additional parameters might be required. For more information, see the [Apache 2.4 documentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >Sometimes, additional parameters might be required. For more information, see the [Apache 2.4 documentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
 1. If you changed Apache settings, restart Apache:
 
@@ -65,7 +65,7 @@ Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to pr
    >[!NOTE]
    >
    >-  If you upgraded from an earlier Apache version, first look for `<Directory "/var/www/html">` or `<Directory "/var/www">` in `000-default.conf`.
-   >-  You must change the value of `AllowOverride` in the directive for the directory to which you expect to install the Magento software. For example, to install in the web server docroot, edit the directive in `<Directory /var/www>`.
+   >-  You must change the value of `AllowOverride` in the directive for the directory to which you expect to install the Adobe Commerce or Magento Open Source software. For example, to install in the web server docroot, edit the directive in `<Directory /var/www>`.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Adobe Commerce and Magento Open Source require the following Apache modules to b
 
 ## Verify the Apache version
 
-To verify the Apache version you're currently running, enter:
+To verify the Apache version that you're currently running, enter:
 
 ```bash
 apache2 -v
@@ -103,7 +103,7 @@ Server built: Jul 22 2020 14:35:32
 
 ## Installing or upgrading Apache on Ubuntu
 
-The following sections discusses how to install or upgrade Apache:
+The following sections discuss how to install or upgrade Apache:
 
 -  Install Apache
 -  Upgrade to Apache 2.4 on Ubuntu to use PHP 7.4.
@@ -159,7 +159,7 @@ To upgrade to Apache 2.4:
 
    >[!NOTE]
    >
-   >If the 'apt-get install' command fails because of unmet dependencies, consult a resource like [http://askubuntu.com](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+   >If the 'apt-get install' command fails because of unmet dependencies, consult a resource like [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
 
 
 1. Verify the installation.
@@ -197,7 +197,7 @@ Installing and configuring Apache is basically a three-step process: install the
    httpd -v
    ```
 
-   Messages similar to the following display to confirm the installation was successful:
+   Messages similar to the following display to confirm that the installation was successful:
 
    ```terminal
    Server version: Apache/2.4.40 (Unix)
@@ -299,7 +299,7 @@ Installing and configuring Apache is basically a three-step process: install the
 
 ## Solving 403 (Forbidden) errors
 
-If you encounter 403 Forbidden errors when trying to access the site, you can update your Apache configuration or your virtual host configuration to enable visitors to the site as discussed in one of the following sections:
+If you encounter 403 Forbidden errors when trying to access the site, you can update your Apache configuration or your virtual host configuration to enable visitors to the site:
 
 ### Solving 403 Forbidden errors for Apache 2.4
 
