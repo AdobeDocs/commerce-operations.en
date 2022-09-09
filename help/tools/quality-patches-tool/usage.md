@@ -1,6 +1,6 @@
 ---
 title: Usage
-description: Learn how to use the [!DNL Quality Patches Tool]
+description: Learn how to use the [!DNL Quality Patches Tool].
 ---
 # Usage
 
