@@ -102,7 +102,7 @@ You must clean the cache after applying patches to see changes in the Adobe Comm
 
 >[!WARNING]
 >
->We strongly recommend testing all patches in a staging or development environment before deploying to production. We also strongly recommend backing up your data before applying a patch. See [Back up and roll back the file system](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>It is a best practice to test all patches in a staging or development environment before deploying to production. It is also recommended to back up your data before applying a patch. See [Back up and roll back the file system](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
 
 To revert a single patch, run the following command where `MAGETWO-XXXX` is the patch ID specified in the status table:
 
