@@ -13,7 +13,7 @@ The [!DNL Quality Patches Tool] delivers individual patches developed by Adobe a
 
 >[!WARNING]
 >
->We do not recommend using the [!DNL Quality Patches Tool] to apply large numbers of patches because it increases the complexity of your code, which makes upgrading to a new version of Adobe Commerce or Magento Open Source more difficult.
+>It is not recommended to use the [!DNL Quality Patches Tool] to apply large numbers of patches because it increases the complexity of your code and makes upgrading to a new version more difficult.
 
 ## Install 
 
