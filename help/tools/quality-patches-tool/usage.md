@@ -82,7 +82,7 @@ To apply a single patch, run the following command where `MAGETWO-XXXX` is the p
 ./vendor/bin/magento-patches apply MAGETWO-XXXX
 ```
 
-Also, you can apply several patches at the same time by separating each additional patch ID with a space:
+You can also apply several patches at the same time by separating each additional patch ID with a space:
 
 ```bash
 ./vendor/bin/magento-patches apply MAGETWO-XXXX MAGETWO-YYYY
