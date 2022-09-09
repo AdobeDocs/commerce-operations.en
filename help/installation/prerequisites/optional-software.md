@@ -129,7 +129,7 @@ If a 404 (Not Found) error displays, check the following:
 
 The phpMyAdmin application is an easy to use, free database administration utility. You can use it to check and manipulate the contents of your database. You must log in to phpMyAdmin as the MySQL database administrative user.
 
-For more information about phpMyAdmin`, see the [phpMyAdmin home page](https://www.phpmyadmin.net/).
+For more information about phpMyAdmin, see the [phpMyAdmin home page](https://www.phpmyadmin.net/).
 
 For more detailed information about installation, see the [phpMyAdmin installation documentation](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
