@@ -63,9 +63,9 @@ The status table includes:
    -  `N/A` — The status of the patch cannot be defined due to conflicts.
 
 -  **Details**:
-   -  `Affected components`— The list of affected modules.
+   -  `Affected components` — The list of affected modules.
    -  `Required patches` — The list of patches that must be applied for an indicated patch to work properly (dependencies).
-   -  `Recommended replacement`— The patch that is a recommended replacement for a deprecated patch.
+   -  `Recommended replacement` — The patch that is a recommended replacement for a deprecated patch.
 
 >[!INFO]
 > 
