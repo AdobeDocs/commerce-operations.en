@@ -11,7 +11,7 @@ description: Learn about ways to improve the security posture of your Adobe Comm
 >
 >Adobe has no recommendation about using SELinux; you can use it for enhanced security if you want. If you use SELinux, you must configure it properly or the Adobe Commerce and Magento Open Source can function unpredictably. If you choose to use SELinux, consult a resource like the [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) to set up rules to enable communication.
 
-### Suggestion for installing with Apache
+## Suggestion for installing with Apache
 
 If you choose to enable SELinux, you might have issues running the installer unless you change the *security context* of some directories as follows:
 
@@ -40,7 +40,7 @@ The preceding commands work only with the Apache web server. Because of the vari
 *  [man page](https://linux.die.net/man/8/httpd_selinux)
 *  [Server Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
-### Enable inter-server communication
+## Enable inter-server communication
 
 If Apache and the database server are on the same host, use the following command if you plan to use integrations that use `curl` (ex. Paypal and USPS).
 To enable Apache to initiate a connection to another host with SELinux enabled:

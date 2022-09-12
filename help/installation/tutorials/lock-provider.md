@@ -10,7 +10,7 @@ Before you run this command, you must do the following *or* you must [install th
 *  [Create or update the deployment configuration](deployment.md)
 *  [Create the database schema](database.md)
 
-### Secure installation
+## Secure installation
 
 {{$include /help/_includes/secure-install.md}}
 

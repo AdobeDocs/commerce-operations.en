@@ -35,7 +35,7 @@ You can run the installer multiple times with different options to complete inst
 
 See also [Update, reinstall, uninstall](uninstall.md).
 
-### Secure installation
+## Secure installation
 
 {{$include /help/_includes/secure-install.md}}
 
@@ -220,7 +220,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
 
-#### Example 2— Basic install without admin user account
+#### Example 2—Basic install without admin user account
 
 You can install the application without creating the administrator user as shown in the following example.
 
