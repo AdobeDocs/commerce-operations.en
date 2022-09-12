@@ -8,7 +8,7 @@ user-guide-description: Learn about the operational aspects of maintaining your 
 - [Home](home.md)
 - [Release Information](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
 - [Installation](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html)
-- [Configuration](https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html)
+- [Configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [Migration](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html)
 - [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=en)
 - [Performance Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)

@@ -30,6 +30,7 @@ Available commands for the [!DNL Upgrade Compatibility Tool] in a command-line i
 | **Command** | **Description** |
 |----------------|-----------------|
 | `upgrade:check` |This command runs the [!DNL Upgrade Compatibility Tool] by analyzing all modules installed in it. |
+| `dbschema:diff` |This command displays all the differences of database schema between two specified Adobe Commerce versions. |
 | `core:code:changes` | This command compares your current Adobe Commerce installation with a clean vanilla installation. |
 | `refactor` | This command automatically fixes a reduced set of issues. |
 | `graphql:compare` | This command provides the option to introspect two GraphQL endpoints and compare their schemas. |
@@ -82,6 +83,41 @@ There are some limitations when running the `--coming-version`:
 - It is a requirement to provide this one explicitly; providing only the value of it does not work.
 - Provide the tag version without any quotation marks (neither single nor double): ~~'2.4.1-develop'~~.
 - You should NOT provide older versions than the one you have currently installed, nor older than 2.3, which is the oldest one supported at the moment.
+
+## Use the `dbschema:diff` command
+
+You can retrieve the difference between the database schema of two Adobe Commerce versions.
+
+```bash
+bin/uct dbschema:diff <current-version> <target-version>
+```
+
+Where arguments are as follows:
+
+- `<current-version>`: any Adobe Commerce version for comparison.
+- `<target-version>`: also any Adobe Commerce version for comparison.
+
+Example of execution:
+
+```bash
+bin/uct dbschema:diff 2.4.3 2.4.3-p3
+
+DB schema differences between versions 2.4.3 and 2.4.3-p3:
+
+Table klarna_payments_quote constraint QUOTE_ID_KLARNA_PAYMENTS_QUOTE_QUOTE_ID_QUOTE_ENTITY_ID is present only in version 2.4.3-p3
+Table klarna_payments_quote index KLARNA_PAYMENTS_QUOTE_SESSION_ID is present only in version 2.4.3-p3
+Table customer_entity column session_cutoff is present only in version 2.4.3-p3
+Table customer_visitor column session_id length value is different. 2.4.3: "64", 2.4.3-p3: "1"
+Table customer_visitor column session_id comment value is different. 2.4.3: "Session ID", 2.4.3-p3: "Deprecated: Session ID value no longer used"
+Table customer_visitor column created_at is present only in version 2.4.3-p3
+Table oauth_consumer column secret length value is different. 2.4.3: "32", 2.4.3-p3: "128"
+Table oauth_token column secret length value is different. 2.4.3: "32", 2.4.3-p3: "128"
+Table admin_user_session column session_id nullable value is different. 2.4.3: "false", 2.4.3-p3: "true"
+Table admin_user_session column session_id length value is different. 2.4.3: "128", 2.4.3-p3: "1"
+Table admin_user_session column session_id comment value is different. 2.4.3: "Session ID value", 2.4.3-p3: "Deprecated: Session ID value no longer used"
+
+Total detected differences between version 2.4.3 and 2.4.3-p3: 11
+```
 
 ## Use the `core:code:changes` command
 
@@ -176,7 +212,6 @@ bin/uct --help
 That returns a list with all available `help` options for the [!DNL Upgrade Compatibility Tool] in a command-line interface:
 
 ```terminal
-- -m, --module-path[=MODULE-PATH]: Path of the modules to be analysed
 - -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
 - -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
 - --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
@@ -218,13 +253,3 @@ The [!DNL Upgrade Compatibility Tool] provides a report containing results with 
 - Use the option `--ignore-current-version-compatibility-issues` when you only want to get new issues that are introduced with the update from your current version to the targeted version in your [!DNL Upgrade Compatibility Tool] report.
 - Adding the `--min-issue-level` option, this setting allows to set the minimum issue level, to help prioritize only the most important issues with your upgrade.
 - The [!DNL Upgrade Compatibility Tool] requires at least 2GB RAM to run. This setting is recommended to avoid issues due to a low memory limitation. The [!DNL Upgrade Compatibility Tool] displays a question if you run the `upgrade:check` command with a low `memory_limit` setting.
-- If you want to analyze only a certain vendor, module, or even directory, you can specify the path as an option as well. Run the `bin` command with the added option `-m`. This allows the [!DNL Upgrade Compatibility Tool] to analyze a specific module independently, and helps with memory issues that can occur when executing the [!DNL Upgrade Compatibility Tool]. Specify the `-m` option to run the tool against a specific module:
-
-   ```bash
-   bin/uct upgrade:check <dir> -m[=MODULE-PATH]
-   ```
-
-Where arguments are as follows:
-
-- `<dir>`: Adobe Commerce installation directory.
-- `[=MODULE-PATH]`: Specific module path directory.

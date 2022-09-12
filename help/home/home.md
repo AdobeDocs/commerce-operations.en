@@ -27,11 +27,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
       <img alt="Configuration" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html"><strong>Configuration</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>Configuration</strong></a>
     </div>
   </td>
   <td valign="top">

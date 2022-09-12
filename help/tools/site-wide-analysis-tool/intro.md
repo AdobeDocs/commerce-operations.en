@@ -39,3 +39,9 @@ View all of the important insights about your site in one place. [!DNL Site-Wide
 ## Who is this guide for?
 
 Merchants and partners who want to have greater visibility into their Adobe Commerce websites. It empowers merchants to improve their customers’ experience and have closer alignment on the best practices recommendations and foundational issues.
+
+## [!DNL Site-Wide Analysis Tool] demo
+
+Watch this video to learn about the [!DNL Site-Wide Analysis Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)

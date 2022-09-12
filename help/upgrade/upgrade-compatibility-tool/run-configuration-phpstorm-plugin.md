@@ -11,4 +11,8 @@ Check the [Installation](https://devdocs.magento.com/guides/v2.4/ext-best-practi
 
 You can run the [!DNL Upgrade Compatibility Tool] with a run configuration via the [!DNL Magento PHPStorm plugin]. See the [[!DNL Upgrade Compatibility Tool] Run Configuration](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) topic for more information.
 
-See this [video tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) to learn how to use the [!DNL Upgrade Compatibility Tool] with the [!DNL Magento PHPStorm plugin].
+## [!DNL Magento PHPStorm plugin] demo
+
+Watch this video to learn about the [!DNL Magento PHPStorm plugin]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/340150?quality=12)

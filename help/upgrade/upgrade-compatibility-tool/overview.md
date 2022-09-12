@@ -27,6 +27,12 @@ The following diagram shows the possible workflows when running the [!DNL Upgrad
 
 ![[!DNL Upgrade Compatibility Tool] Diagram](../../assets/upgrade-guide/uct-diagram-v5.png)
 
+## [!DNL Upgrade Compatibility Tool] demo
+
+Watch this video to learn about the [!DNL Upgrade Compatibility Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
+
 ## Help improve the [!DNL Upgrade Compatibility Tool]
 
 If you need information or have questions that are not covered in this guide, use the following resources:
