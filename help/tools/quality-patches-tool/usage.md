@@ -54,8 +54,8 @@ Magento 2 Enterprise Edition, version 2.3.5.0
 The status table includes:
 
 -  **Type**:
-   -  `Optional`—All patches from the [!DNL Quality Patches Tool] and the [Cloud Patches](https://devdocs.magento.com/cloud/project/project-patch.html) package are optional for Adobe Commerce and Magento Open Source installations.
-   -  `Deprecated`—Adobe has deprecated the individual patch. If you have applied the patch, we recommend that you revert it. The revert operation also removes the patch from the status table.
+   -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Cloud Patches](https://devdocs.magento.com/cloud/project/project-patch.html) package are optional for Adobe Commerce and Magento Open Source installations.
+   -  `Deprecated` — Adobe has deprecated the individual patch. If you have applied the patch, we recommend that you revert it. The revert operation also removes the patch from the status table.
 
 -  **Status**:
    -  `Applied`—The patch has been applied.
