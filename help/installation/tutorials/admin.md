@@ -5,8 +5,6 @@ description: Follow these steps to manage the administrator account of your Adob
 
 # Create, edit, or unlock an administrator account
 
-## Prerequisites
-
 Before you can use this command, you must do the following:
 
 -  [Create the deployment configuration](deployment.md)

@@ -13,8 +13,6 @@ You should uninstall a module only if you're certain you won't use it. Instead o
 >
 >This command checks that only dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable](manage-modules.md) non-Composer modules.
 
-## Uninstall modules
-
 Command usage:
 
 ```bash

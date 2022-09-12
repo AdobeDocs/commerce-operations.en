@@ -5,8 +5,6 @@ description: Follow these steps to check your Adobe Commerce or Magento Open Sou
 
 # Check the database status
 
-## Prerequisites
-
 Before you run this command, you must [Create or update the deployment configuration](deployment.md).
 
 ## Command usage

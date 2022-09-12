@@ -42,7 +42,7 @@ The `--ip=<ip address>` option is an IP address to exempt from maintenance mode 
 
 >[!NOTE]
 >
->Using `--ip=<ip address>` with `magento maintenance:disable` saves the list of IPs for later use. To clear the list of exempt IPs, use `magento maintenance:enable --ip=none` or see [Maintain the list of exempt IP addresses](#maintain-the-list-of-exempt-ip-addressest).
+>Using `--ip=<ip address>` with `magento maintenance:disable` saves the list of IPs for later use. To clear the list of exempt IPs, use `magento maintenance:enable --ip=none` or see [Maintain the list of exempt IP addresses](#maintain-the-list-of-exempt-ip-addresses).
 
 The `bin/magento maintenance:status` command displays the status of maintenance mode.
 

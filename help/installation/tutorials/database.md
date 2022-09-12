@@ -5,8 +5,6 @@ description: Follow these steps to create a database for your Adobe Commerce or 
 
 # Create the database schema
 
-## Prerequisites
-
 Before you run this command, you must [Create or update the deployment configuration](deployment.md).
 
 ## Configure the database and add data

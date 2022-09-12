@@ -5,8 +5,6 @@ description: Follow these steps to upgrade your Adobe Commerce or Magento Open S
 
 # Upgrade the database schema and data
 
-## Prerequisites
-
 Before you use this command, you must [install the application](../advanced.md).
 
 ## Upgrade the database schema and data

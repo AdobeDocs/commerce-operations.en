@@ -83,10 +83,10 @@ This section discusses how to secure communication between Apache and the search
 
 See one of the following sections:
 
-*  [Step 1: Create a password file](#step-1-create-a-password)
-*  [Step 2: Configure your secure virtual host](#secure-communication-with-apache)
+*  [Create a password file](#create-a-password)
+*  [Configure your secure virtual host](#secure-communication-with-apache)
 
-### Step 1: Create a password
+### Create a password
 
 For security reasons, you can locate the password file anywhere except your web server docroot. In this example, we show how to store the password file in a new directory.
 
@@ -165,7 +165,7 @@ To add another user to your password file, enter the following command as a user
 htpasswd /usr/local/apache/password/.htpasswd <username>
 ```
 
-### Step 2: Secure communication with Apache
+### Secure communication with Apache
 
 This section discusses how to set up [HTTP Basic authentication](https://httpd.apache.org/docs/2.2/howto/auth.html). Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or with your application server.
 

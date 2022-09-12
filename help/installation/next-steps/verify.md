@@ -5,8 +5,6 @@ description: Follow these steps to confirm that your on-premises Adobe Commerce 
 
 # Verify the installation
 
-## Verify the storefront (with optional sample data)
-
 Go to the [storefront](https://glossary.magento.com/storefront) in a web browser. For example, if your installation base [URL](https://glossary.magento.com/url) is `http://www.example.com`, enter it in your browser's address or location bar.
 
 The following figure shows a sample storefront page. If it displays as follows, your installation was a success!

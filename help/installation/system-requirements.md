@@ -19,7 +19,6 @@ This section describes support and compatibility for all other types of required
 >
 >The following requirements apply to the latest 2.4.x patch release of Adobe Commerce and Magento Open Source.
 
-
 ### Mail server
 
 Mail Transfer Agent (MTA) or an SMTP server
@@ -32,24 +31,23 @@ Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Deb
 
 >[!NOTE]
 >
->The [PHP installation instructions][] include a step for installing these extensions.
-
+>The [PHP installation instructions](prerequisites/php-settings.md) include a step for installing these extensions.
 
 {{$include /help/_includes/php-extensions.md}}
 
-Refer to [official PHP documentation][] for installation details.
+Refer to [official PHP documentation](https://php.net/manual/en/extensions.php) for installation details.
 
 ### PHP OPcache
 
-We strongly recommend you verify that [PHP OPcache][] is enabled for performance reasons. The OPcache is enabled in many PHP distributions. To verify if it is installed, see our [PHP documentation][].
+We strongly recommend you verify that [PHP OPcache](https://php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. To verify if it is installed, see our [PHP documentation](prerequisites/php-settings.md).
 
-If you must install it separately, see the [PHP OPcache documentation][].
+If you must install it separately, see the [PHP OPcache documentation](https://php.net/manual/en/opcache.setup.php).
 
 ### PHP settings
 
 We recommend particular PHP configuration settings, such as `memory_limit`, that can avoid common problems when using Adobe Commerce and Magento Open Source.
 
-For more information, see [Required PHP settings][].
+For more information, see [Required PHP settings](prerequisites/php-settings.md).
 
 ### PHPUnit
 
@@ -63,19 +61,19 @@ Upgrading the applications and extensions you obtain from the Commerce Marketpla
 
 Adobe Commerce and Magento Open Source require the following system tools for some operations:
 
--  [bash][]
--  [gzip][]
--  [lsof][]
--  [mysql][]
--  [mysqldump][]
--  [nice][]
--  [php][]
--  [sed][]
--  [tar][]
+-  [bash](https://www.gnu.org/software/bash/)
+-  [gzip](https://www.gzip.org/)
+-  [lsof](https://linux.die.net/man/8/lsof)
+-  [mysql](https://www.mysql.com/)
+-  [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
+-  [nice](https://linux.die.net/man/1/nice)
+-  [php](https://www.php.net/)
+-  [sed](https://www.gnu.org/software/sed/manual/sed.html)
+-  [tar](https://linux.die.net/man/1/tar)
 
 ### SSL
 
--  A valid [security certificate][] is required for HTTPS.
+-  A valid [security certificate](https://glossary.magento.com/security-certificate) is required for HTTPS.
 -  Self-signed SSL certificates are not supported.
 -  Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
 
@@ -93,29 +91,8 @@ Storefront and Admin:
 
 ### Xdebug
 
-[php_xdebug 2.5.x][] or later (development environments only; can have an adverse effect on performance)
+[php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance)
 
 >[!NOTE]
 >
->There is a known issue with `xdebug` that can affect Adobe Commerce or Magento Open Source installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug][].
-
-
-<!-- Link Definitions -->
-[Known issue with xdebug]: https://support.magento.com/hc/en-us/articles/360034242212
-[php_xdebug 2.5.x]: https://xdebug.org/download
-[bash]: https://www.gnu.org/software/bash/
-[gzip]: https://www.gzip.org/
-[lsof]: https://linux.die.net/man/8/lsof
-[mysql]: https://www.mysql.com/
-[mysqldump]: https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html
-[nice]: https://linux.die.net/man/1/nice
-[php]: https://www.php.net/
-[sed]: https://www.gnu.org/software/sed/manual/sed.html
-[tar]: https://linux.die.net/man/1/tar
-[PHP installation instructions]: prerequisites/php-settings.md
-[official PHP documentation]: https://php.net/manual/en/extensions.php
-[PHP OPcache]: https://php.net/manual/en/intro.opcache.php
-[PHP documentation]: prerequisites/php-settings.md
-[PHP OPcache documentation]: https://php.net/manual/en/opcache.setup.php
-[Required PHP settings]: prerequisites/php-settings.md
-[security certificate]: https://glossary.magento.com/security-certificate
+>There is a known issue with `xdebug` that can affect Adobe Commerce or Magento Open Source installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug](https://support.magento.com/hc/en-us/articles/360034242212).

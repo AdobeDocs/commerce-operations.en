@@ -91,7 +91,6 @@ To get the Adobe Commerce or Magento Open Source metapackage:
     >
     >Adobe Commerce customers can access 2.4.x and 2.3.x patches two weeks before the General Availability (GA) date. Pre-release packages are available through Composer only. You cannot access pre-releases on the Developer Portal or GitHub until GA. If you cannot find these packages in Composer, contact Adobe Commerce Support.
 
-
 ### Example - Minor release
 
 Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the Adobe Commerce 2.4.3 metapackage:
@@ -163,11 +162,9 @@ bin/magento setup:install \
 >
 >You can customize the Admin URI with the `--backend-frontname` option. However, we recommend omitting this option and allowing the installation command to automatically generate a random URI. A random URI is harder for hackers or malicious software to exploit. The URI displays in your console when installation is complete.
 
-
 >[!TIP]
 >
 >For a full description of the CLI install options, see [Install the application from the command line](advanced.md).
-
 
 ## Command summary
 

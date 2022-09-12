@@ -41,7 +41,7 @@ To clone the sample data GitHub repository using the SSH protocol:
 
    Typically, for Ubuntu, it's `/var/www` and for CentOS it's `/var/www/html`.
 
-1. Enter `git clone` and paste the value you obtained from step 1.
+1. Enter `git clone` and paste the value you obtained previously.
 
    An example follows:
 
@@ -108,7 +108,7 @@ To clone the sample data GitHub repository using the HTTPS protocol:
 
    Typically, for Ubuntu, it's `/var/www` and for CentOS it's `/var/www/html`.
 
-1. Enter `git clone` and paste the value you obtained from step 1.
+1. Enter `git clone` and paste the value you obtained previously.
 
    An example follows:
 

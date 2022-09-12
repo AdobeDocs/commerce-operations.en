@@ -13,7 +13,6 @@ description: Learn about advanced installation scenarios for Adobe Commerce or M
 >
 >If you chose to enable SELinux, see [SELinux and iptables](prerequisites/security.md).
 
-
 ## Command-line interface (CLI)
 
 Adobe Commerce and Magento Open Source have a single command-line interface for installation and configuration tasks: `<magento_root>/bin/magento`. The interface performs multiple tasks, including:
@@ -314,7 +313,6 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 >[!NOTE]
 >
 >You must enter the command either on a single line or, as in the preceding example, with a `\` character at the end of each line.
-
 
 Messages like the following display if the installation is successful:
 

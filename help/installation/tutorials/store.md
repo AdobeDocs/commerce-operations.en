@@ -5,8 +5,6 @@ description: Follow these steps to configure your Adobe Commerce or Magento Open
 
 # Configure the store
 
-## Prerequisites
-
 Before you run this command, you must do the following *or* you must [install the application](../advanced.md):
 
 *  [Create or update the deployment configuration](deployment.md)

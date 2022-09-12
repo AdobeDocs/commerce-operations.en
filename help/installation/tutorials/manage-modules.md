@@ -5,8 +5,6 @@ description: Follow these steps to manage Adobe Commerce or Magento Open Source 
 
 # Enable or disable modules
 
-## Prerequisites
-
 This command has no prerequisites.
 
 ## Module status

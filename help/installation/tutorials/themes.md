@@ -5,8 +5,6 @@ description: Follow these steps to uninstall an Adobe Commerce or Magento Open S
 
 # Uninstall themes
 
-## Prerequisite
-
 Before you use this command, you must know the relative path to your theme. Themes are located in a subdirectory of `<magento_root>/app/design/<area name>`. You must specify the path to the theme starting with the area, which is either `frontend` (for storefront themes) or `adminhtml` (for [Admin](https://glossary.magento.com/magento-admin) themes).
 
 For example, the path to the Luma [theme](https://glossary.magento.com/theme) provided with Adobe Commerce and Magento Open Source is `frontend/Magento/luma`.

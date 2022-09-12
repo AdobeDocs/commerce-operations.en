@@ -161,7 +161,6 @@ To upgrade to Apache 2.4:
    >
    >If the 'apt-get install' command fails because of unmet dependencies, consult a resource like [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
 
-
 1. Verify the installation.
 
    ```bash
@@ -240,7 +239,6 @@ Installing and configuring Apache is basically a three-step process: install the
    >[!NOTE]
    >
    >The preceding values for `Order` might not work in all cases. For more information, see the Apache documentation ([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
-
 
 1. Save the file and exit the text editor.
 

@@ -5,8 +5,6 @@ description: Follow these steps to view and modify the URI of your Adobe Commerc
 
 # Display or change the Admin URI
 
-## Prerequisites
-
 Before you run this command, you must [Create or update the deployment configuration](deployment.md).
 
 ## Display the Admin URI

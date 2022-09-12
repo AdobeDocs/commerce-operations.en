@@ -5,8 +5,6 @@ description: Follow these steps to uninstall and reinstall on-premises installat
 
 # Uninstall or reinstall Adobe Commerce
 
-## Prerequisites
-
 Before you use these commands, you must [install the application](../tutorials/install.md).
 
 ## Update the application

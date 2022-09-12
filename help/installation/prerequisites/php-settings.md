@@ -30,7 +30,7 @@ Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache 
 Adobe Commerce and Magento Open Source 2.4 is compatible with PHP 7.3, but we test with, and recommend using, PHP 7.4.
 
 If PHP is not installed, or a version upgrade is needed, install it following instructions for your particular Linux flavor.
-On CentOS, [additional steps may be required][].
+On CentOS, [additional steps may be required](https://wiki.centos.org/HowTos/php7).
 
 ## Verify installed extensions
 
@@ -92,7 +92,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 >
 >To avoid issues during installation and upgrade, we strongly recommend you apply the same PHP settings to both the PHP command-line configuration and the PHP web server plug-in configuration. For more information, see the next section.
 
-## Step 1: Find PHP configuration files
+## Find PHP configuration files
 
 This section discusses how you find the configuration files necessary to update required settings.
 
@@ -134,7 +134,7 @@ Use the following guidelines to find it:
 
 If you have more than one `opcache.ini`, modify all of them.
 
-## Step 2: How to set PHP options
+## How to set PHP options
 
 To set PHP options:
 
@@ -174,7 +174,7 @@ To set PHP options:
 
 1. Open the other `php.ini` (if they are different) and make the same changes in it.
 
-## Step 3: Set OPcache options
+## Set OPcache options
 
 To set `opcache.ini` options:
 
@@ -202,7 +202,3 @@ See the following Adobe Commerce Support articles for help with troubleshooting 
 -  [PHP mcrypt extension not installed properly](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 -  [PHP version readiness check issues](https://support.magento.com/hc/en-us/articles/360033546411)
 -  [Common PHP Fatal Errors and solutions](https://support.magento.com/hc/en-us/articles/360030568432)
-
-<!-- Link Definitions -->
-
-[additional steps may be required]: https://wiki.centos.org/HowTos/php7

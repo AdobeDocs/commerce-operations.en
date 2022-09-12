@@ -5,8 +5,6 @@ description: Follow these steps to manage your Adobe Commerce or Magento Open So
 
 # Create or update the deployment configuration
 
-## Prerequisites
-
 There are no prerequisites for using this command.
 
 ## Create or update the deployment configuration

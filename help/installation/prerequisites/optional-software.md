@@ -99,7 +99,6 @@ The [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) file dis
 >
 >Use `phpinfo.php` in a development system _only_. It can be a security issue in production.
 
-
 Add the following code anywhere in your web server's docroot:
 
 ```php
@@ -136,7 +135,6 @@ For more detailed information about installation, see the [phpMyAdmin installati
 >[!NOTE]
 >
 >Use phpMyAdmin in a development system _only_. It can be a security issue in production.
-
 
 1. To use phpMyAdmin, enter the following command in your browser's address or location field:
 

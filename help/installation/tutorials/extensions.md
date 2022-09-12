@@ -45,7 +45,7 @@ To install an extension, you must:
 1. Verify that the extension installed properly.
 1. Enable and configure the extension.
 
-## Get the extension's Composer name and version
+## Get the extension Composer name and version
 
 If you already know the extension's Composer name and version, skip this step and continue with [Update your `composer.json` file](#update-your-composerjson-file).
 

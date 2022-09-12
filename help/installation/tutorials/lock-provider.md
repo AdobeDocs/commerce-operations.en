@@ -5,8 +5,6 @@ description: Follow these steps to prevent the duplicate cron jobs and cron grou
 
 # Configure the lock provider
 
-## Prerequisites
-
 Before you run this command, you must do the following *or* you must [install the application](../advanced.md):
 
 *  [Create or update the deployment configuration](deployment.md)
@@ -24,13 +22,13 @@ Adobe Commerce and Magento Open Source use the database to save locks by default
 
 If you are running Adobe Commerce on cloud infrastructure, you do not need to configure lock provider settings. The application configures the file lock provider for Pro projects during the provisioning process. See [Cloud variables](https://devdocs.magento.com/cloud/env/variables-cloud.html).
 
-> Command usage
+### Command usage
 
 ```bash
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 ```
 
-> Parameter descriptions
+### Parameter descriptions
 
 |Name|Value|Required?|
 |--- |--- |--- |

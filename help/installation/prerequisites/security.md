@@ -5,8 +5,6 @@ description: Learn about ways to improve the security posture of your Adobe Comm
 
 # On-premises installation security
 
-## SELinux
-
 [Security Enhanced Linux (SELinux)](https://selinuxproject.org/page/Main_Page) enables CentOS and Ubuntu administrators greater access control over their servers. If you are using SELinux *and* Apache must initiate a connection to another host, you must run the commands discussed in this section.
 
 >[!NOTE]

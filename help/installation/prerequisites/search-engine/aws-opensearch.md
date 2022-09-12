@@ -10,7 +10,7 @@ Adobe Commerce and Magento Open Source 2.4.3 supports using Amazon OpenSearch Se
 ## Create an AWS OpenSearch service domain
 
 You must first establish an OpenSearch instance in AWS.
-Read [Creating and managing Amazon OpenSearch Service domains][] for detailed instructions.
+Read [Creating and managing Amazon OpenSearch Service domains](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) for detailed instructions.
 
 ## Get data to AWS OpenSearch
 
@@ -26,11 +26,11 @@ Larger installations may want to consider migrating their data indices from the 
 There is no need to migrate indexes, as these can be easily recreated on the AWS instance.
 However, when migrating data indices, ensure that the versions of ElasticSearch/OpenSearch are compatible.
 
-See Amazon's [Migrating to Amazon OpenSearch Service][] instructions for more information.
+See Amazon's [Migrating to Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) instructions for more information.
 
 ### Configure Commerce for OpenSearch
 
-Steps for configuring OpenSearch are covered in the [Advanced Install][] topic.
+Steps for configuring OpenSearch are covered in the [Advanced Install](../../advanced.md) topic.
 
 To test that the new configuration is working, test the OpenSearch endpoint directly:
 
@@ -46,11 +46,4 @@ To test that the new configuration is working, test the OpenSearch endpoint dire
 
 ## Additional resources
 
-For additional information, see the [OpenSearch AWS documentation][].
-
-<!-- Link Definitions -->
-
-[Creating and managing Amazon OpenSearch Service domains]: https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html
-[Migrating to Amazon OpenSearch Service]: https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html
-[OpenSearch AWS documentation]: https://docs.aws.amazon.com/opensearch-service/index.html
-[Advanced Install]: ../../advanced.md
+For additional information, see the [OpenSearch AWS documentation](https://docs.aws.amazon.com/opensearch-service/index.html).

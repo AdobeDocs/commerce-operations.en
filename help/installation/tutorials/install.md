@@ -5,8 +5,6 @@ description: Follow these steps to install Adobe Commerce or Magento Open Source
 
 # Install Adobe Commerce
 
-## Before you start your installation
-
 Before you begin, complete the following steps:
 
 *  Verify that your system meets the requirements discussed in the [system requirements](../system-requirements.md).

@@ -5,8 +5,6 @@ description: Follow these steps to configure file system permissions for on-prem
 
 # Configure file ownership and permissions
 
-## Set pre-installation file system ownership and permissions
-
 This topic discusses how to set read-write permissions for the web server group before you install Adobe Commerce or Magento Open Source. This is necessary so the command line can write files to the file system.
 
 The procedure you use is different, depending on whether you use [shared hosting](#set-permissions-for-shared-hosting-one-user) and have one user or if you use a [private server](#set-ownership-and-permissions-for-two-users) and have two users.
@@ -45,11 +43,11 @@ To set permissions before you install the application:
    chmod u+x bin/magento
    ```
 
-To optionally enter all commands on one line, enter the following assuming the application is installed in `/var/www/html/magento2`:
+   To optionally enter all commands on one line, enter the following assuming the application is installed in `/var/www/html/magento2`:
 
-```bash
-cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
-```
+   ```bash
+   cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
+   ```
 
 1. If you have not already done so, get the application in one of the following ways:
 
@@ -71,11 +69,11 @@ To set ownership and permissions for a two-user system:
 Complete the following tasks in the order shown:
 
 *  [About the shared group](#about-the-shared-group)
-*  [Step 1: Create the file system owner and give the user a strong password](#step-1-create-the-file-system-owner-and-give-the-user-a-strong-password)
-*  [Step 2: Find the web server user's group](#step-2-find-the-web-server-users-group)
-*  [Step 3: Put the file system owner in the web server's group](#step-3-put-the-file-system-owner-in-the-web-servers-group)
-*  [Step 4: Get the software](#step-4-get-the-software)
-*  [Step 5: Set ownership and permissions for the shared group](#step-5-set-ownership-and-permissions-for-the-shared-group)
+*  [Create the file system owner and give the user a strong password](#create-the-file-system-owner-and-give-the-user-a-strong-password)
+*  [Find the web server user's group](#find-the-web-server-user-group)
+*  [Put the file system owner in the web server group](#put-the-file-system-owner-in-the-web-server-group)
+*  [Get the software](#get-the-software)
+*  [Set ownership and permissions for the shared group](#set-ownership-and-permissions-for-the-shared-group)
 
 ### About the shared group
 
@@ -85,9 +83,9 @@ This section discusses how to create a file system owner and put that user in th
 
 >[!NOTE]
 >
->Skip to [step 2](#step-2-find-the-web-server-users-group) if you plan on using an existing user account.
+>Skip to [Find the web server user group](#find-the-web-server-user-group) if you plan on using an existing user account.
 
-### Step 1: Create the file system owner and give the user a strong password
+### Create the file system owner and give the user a strong password
 
 This section discusses how to create the file system owner. (file system owner is another term for the *command-line user*.)
 
@@ -123,7 +121,7 @@ sudo passwd magento_user
 >
 >Because the point of creating this user is to provide added security, make sure you create a [strong password](https://en.wikipedia.org/wiki/Password_strength).
 
-### Step 2: Find the web server user's group
+### Find the web server user group
 
 To find the web server user's group:
 
@@ -145,7 +143,7 @@ Typically, the user and group name are both `apache`.
 
 Typically, the username and the group name are both `www-data`.
 
-### Step 3: Put the file system owner in the web server's group
+### Put the file system owner in the web server group
 
 To put the file system owner in the web server's primary group (assuming the typical Apache group name for CentOS and Ubuntu), enter the following command as a user with `root` privileges:
 
@@ -183,14 +181,14 @@ To complete the task, restart the web server:
 *  Ubuntu: `service apache2 restart`
 *  CentOS: `service httpd restart`
 
-### Step 4: Get the software
+### Get the software
 
 If you have not already done so, get the software in one of the following ways:
 
 *  [Composer metapackage](../../composer.md)
 *  [Clone the repository (contributing developers only)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-### Step 5: Set ownership and permissions for the shared group
+### Set ownership and permissions for the shared group
 
 To set ownership and permissions before you install the application:
 

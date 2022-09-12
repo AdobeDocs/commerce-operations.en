@@ -9,7 +9,6 @@ description: Learn about the installation process for on-premises deployments of
 >
 >The following diagram provides a high-level overview of _**on-premises**_ installations of Adobe Commerce and Magento Open Source:
 
-
 ![How installation works](../assets/installation/install-diagram-24.svg)
 
 The general installation flow is as follows:

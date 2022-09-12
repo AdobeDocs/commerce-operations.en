@@ -1,6 +1,7 @@
 # CLI options for message queue consumers
 
 | Name | Description | Value | Required |
+|------|-------------|-------|----------|
 | `--consumers-wait-for-messages` | Determines if consumers will wait for a message from the queue. | 1 - Yes, 0 - No | No |
 
 *  `0`: Consumers process available messages in the queue, close the TCP connection, and terminate. Consumers do not wait for additional messages to enter the queue, even if the number of processed messages is less than the `--max_messages` value specified during starting consumers.

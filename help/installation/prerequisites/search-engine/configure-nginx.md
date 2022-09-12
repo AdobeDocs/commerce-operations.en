@@ -21,10 +21,10 @@ This section discusses how to configure nginx as an *unsecure* proxy so that Ado
 
 See one of the following sections for more information:
 
-*  [Step 1: Specify additional configuration files in your global `nginx.conf`](#step-1-specify-additional-configuration-files-in-your-global-nginxconf)
-*  [Step 2: Set up nginx as a proxy](#step-2-set-up-nginx-as-a-proxy)
+*  [Specify additional configuration files in your global `nginx.conf`](#step-1-specify-additional-configuration-files-in-your-global-nginxconf)
+*  [Set up nginx as a proxy](#set-up-nginx-as-a-proxy)
 
-### Step 1: Specify additional configuration files in your global `nginx.conf`
+### Specify additional configuration files in your global `nginx.conf`
 
 Make sure your global `/etc/nginx/nginx.conf` contains the following line so it loads the other configuration files discussed in the following sections:
 
@@ -32,7 +32,7 @@ Make sure your global `/etc/nginx/nginx.conf` contains the following line so it 
 include /etc/nginx/conf.d/*.conf;
 ```
 
-### Step 2: Set up nginx as a proxy
+### Set up nginx as a proxy
 
 This section discusses how to specify who can access the [nginx](https://glossary.magento.com/nginx) server.
 
@@ -91,12 +91,12 @@ Additional resources:
 
 See the following sections for more information:
 
-*  [Step 1: Create passwords](#step-1-create-a-password)
-*  [Step 2: Set up access to nginx](#step-3-set-up-access-to-nginx)
-*  [Step 3: Set up a restricted context for the search engine](#step-4-set-up-a-restricted-context-for-the-search-engine)
+*  [Create passwords](#create-a-password)
+*  [Set up access to nginx](#set-up-access-to-nginx)
+*  [Set up a restricted context for the search engine](#set-up-a-restricted-context-for-the-search-engine)
 *  [Verify that communication is secure](#secure-communication-with-nginx)
 
-### Step 1: Create a password
+### Create a password
 
 We recommend you use the Apache `htpasswd` command to encode passwords for a user with access to Elasticsearch or OpenSearch (named `magento_elasticsearch` in this example).
 
@@ -137,7 +137,7 @@ To create a password:
 
 1. Verify that the contents of `/etc/nginx/passwd` is correct.
 
-### Step 3: Set up access to nginx
+### Set up access to nginx
 
 This section discusses how to specify who can access the nginx server.
 
@@ -180,7 +180,7 @@ server {
 >
 >The search engine listen port shown in the preceding example are examples only. For security reasons, we recommend you use a non-default listen port.
 
-### Step 4: Set up a restricted context for the search engine
+### Set up a restricted context for the search engine
 
 This section discusses how to specify who can access the search engine server.
 
