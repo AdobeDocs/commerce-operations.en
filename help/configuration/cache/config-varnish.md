@@ -142,7 +142,7 @@ If the content changes on the server, the client downloads the static asset with
 
 <!-- Link Definitions -->
 
-[database]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/partial-caching/database-caching.html
+[database]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [The Big Varnish Picture]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Varnish Cache]: https://varnish-cache.org
 [Varnish startup options]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

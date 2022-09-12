@@ -19,27 +19,27 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+    <a href="../installation/overview.md">
       <img alt="Installation" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>Installation</strong></a>
+      <a href="../installation/overview.md"><strong>Installation</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
+    <a href="../configuration/overview.md">
       <img alt="Configuration" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>Configuration</strong></a>
+      <a href="../configuration/overview.md"><strong>Configuration</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
+    <a href="../tools/data-migration-tool/how-migration-works.md">
       <img alt="Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>Migration</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migration</strong></a>
     </div>
   </td>
 </tr>
@@ -69,11 +69,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
+    <a href="../tools/overview.md">
        <img alt="Tools" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Tools</strong></a>
+      <a href="../tools/overview.md"><strong>Tools</strong></a>
     </div>
   </td>
 </tr>

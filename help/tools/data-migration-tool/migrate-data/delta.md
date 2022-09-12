@@ -18,8 +18,8 @@ The incremental migration tool installs deltalog tables (with prefix `m2_cl_*`) 
 
 Before you start, take the following steps to prepare:
 
-1. Log in to Magento server as [the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Change to the Magento `/bin` directory or make sure it is added to your system PATH.
+1. Log in to the application server as [the file system owner](../../../installation/prerequisites/file-system/overview.md).
+1. Change to the `/bin` directory or make sure it is added to your system `PATH`.
 
 See the [first steps](overview.md#first-steps) section for more details.
 

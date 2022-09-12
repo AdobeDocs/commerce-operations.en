@@ -26,9 +26,9 @@ You can use one of the following approaches for logging into a custom file:
 
 ## Set up a custom log file in the `di.xml`
 
-This example shows how to use [virtual types](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) to log `debug` messages into a custom log file instead of a standard `/var/log/debug.log`.
+This example shows how to use [virtual types](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) to log `debug` messages into a custom log file instead of a standard `/var/log/debug.log`.
 
-1. In the `di.xml` file of your module, define a custom log file as a [virtual type](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types).
+1. In the `di.xml` file of your module, define a custom log file as a [virtual type](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -40,7 +40,7 @@ This example shows how to use [virtual types](https://devdocs.magento.com/guides
 
    The `name` value of `Magento\Payment\Model\Method\MyCustomDebug` must be unique.
 
-1. Define the handler in another [virtual type](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) with a unique `name`:
+1. Define the handler in another [virtual type](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) with a unique `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -52,7 +52,7 @@ This example shows how to use [virtual types](https://devdocs.magento.com/guides
    </virtualType>
    ```
 
-1. Inject the `MyCustomLogger` [virtual type](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) in the `Magento\Payment\Model\Method\Logger` object:
+1. Inject the `MyCustomLogger` [virtual type](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in the `Magento\Payment\Model\Method\Logger` object:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -111,7 +111,7 @@ This example shows how to use a custom logger handler class to log `error` messa
    }
    ```
 
-1. Define the handler for this class as a [virtual type](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) in the module's `di.xml` file.
+1. Define the handler for this class as a [virtual type](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in the module's `di.xml` file.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

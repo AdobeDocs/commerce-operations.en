@@ -16,11 +16,11 @@ Adobe Commerce and Magento Open Source releases may contain backward-incompatibl
 
 ## Third-party extensions
 
-Adobe Commerce Marketplace’s new compatibility policy ensures that _all_ listed extensions are compatible with the latest released version within 30 days of the GA date. For this reason, it is important to get your third-party extensions, whenever possible, through the Marketplace.
+Adobe Commerce Marketplace's new compatibility policy ensures that _all_ listed extensions are compatible with the latest released version within 30 days of the GA date. For this reason, it is important to get your third-party extensions, whenever possible, through the Marketplace.
 
 ## Custom Modules
 
-All custom modules should be checked against the target version you are looking to upgrade to. This is the most time- and resource-intensive process of an upgrade. When evaluating your custom modules, you must look for backward-incompatible changes and be aware of new practices, such as controller decomposition. You can learn more about this in the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Also, ensure that you're following [best practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) for module development.
+All custom modules should be checked against the target version you are looking to upgrade to. This is the most time- and resource-intensive process of an upgrade. When evaluating your custom modules, you must look for backward-incompatible changes and be aware of new practices, such as controller decomposition. You can learn more about this in the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Also, ensure that you're following [best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) for module development.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -101,7 +101,7 @@ All issues that the tool identified are listed in the report with specific error
 
 Use the report to estimate the amount of effort it will take to update your code for the upgrade. Based on your experience, you can estimate the required effort to upgrade based on the total number of issues identified and the severity of the issues. Since this is a command-line tool, you can incorporate this into automated testing and code check suites and use the JSON output to generate your reports.  
 
-We recommend saving the results from each upgrade project so that you can compare future upgrade results with previous results. With continued use, you’ll start to develop a good sense of the level of effort it takes to upgrade to the next version just from the summary report provided by the tool. 
+We recommend saving the results from each upgrade project so that you can compare future upgrade results with previous results. With continued use, you'll start to develop a good sense of the level of effort it takes to upgrade to the next version just from the summary report provided by the tool. 
 
 We also recommend that you run the tool regularly while working on the upgrade to have visibility into your progress. The number of issues should decrease as you fix them. This also helps your team decide on the best approach to distribute work.
 

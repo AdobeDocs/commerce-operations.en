@@ -22,15 +22,15 @@ Additional benefits include:
 - The CLI is extensible so third-party developers can "plug in" to it. This has the additional benefit of eliminating users' learning curve.
 - Commands for disabled modules do not display.
 
-This topic discusses configuring the Adobe Commerce and Magento Open Source software using the CLI. For information about installing Commerce, see [Installation flow](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) in the _Installation guide_.
+This topic discusses configuring the Adobe Commerce and Magento Open Source software using the CLI. For information about installing Commerce, see [Installation flow](../../installation/overview.md) in the _Installation guide_.
 
 ## Prerequisites
 
 Before you begin using the CLI, make sure that:
 
-1. Your system meets the requirements discussed in [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in the _Installation guide_.
-1. You completed all prerequisite tasks discussed in [Prerequisites](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) in the _Installation guide_.
-1. After you log in to the Commerce server, switch to a user that has permissions to write to the Commerce file system. See [switch to the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) in the _Installation guide_.
+1. Your system meets the requirements discussed in [System Requirements](../../installation/system-requirements.md) in the _Installation guide_.
+1. You completed all prerequisite tasks discussed in [Prerequisites](../../installation/prerequisites/overview.md) in the _Installation guide_.
+1. After you log in to the Commerce server, switch to a user that has permissions to write to the Commerce file system. See [switch to the file system owner](../../installation/prerequisites/file-system/overview.md) in the _Installation guide_.
 
 ## Running commands
 

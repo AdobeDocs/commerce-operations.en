@@ -63,7 +63,7 @@ To apply a custom patch using Composer:
 To apply patches from the command line:
 
 1. Upload the local file into the `<Magento_root>` directory on the server using FTP, SFTP, SSH, or your normal transport method.
-1. Log into the server as the [admin user](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) and verify that the file is in the correct directory.
+1. Log into the server as the [admin user](../../configuration/cli/config-cli.md#prerequisites) and verify that the file is in the correct directory.
 1. In the command-line interface, run the following commands according to the patch extension:
 
    ```bash

@@ -45,7 +45,7 @@ Adobe strongly recommends that you back up your current database and file system
 
 **To back up your system**:
 
-1. Log in to your Commerce server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Enter the following commands:
 
    ```bash
@@ -470,7 +470,7 @@ The final step in manually splitting databases is to add connection and resource
 
 To update the deployment configuration:
 
-1. Log in to your Commerce server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Back up your deployment configuration:
 
    ```bash

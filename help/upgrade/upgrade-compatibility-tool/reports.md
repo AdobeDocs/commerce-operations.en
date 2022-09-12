@@ -121,7 +121,7 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 
 Where arguments are as follows:
 
-- `<dir>`: {{site.data.var.ee}} installation directory.
+- `<dir>`: Adobe Commerce installation directory.
 - `[=HTML-OUTPUT-PATH]`: Path directory to export the `.html` output file.
 
 >[!NOTE]

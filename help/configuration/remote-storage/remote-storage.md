@@ -86,6 +86,5 @@ After you enable remote storage for a specific adapter, you can use the CLI to m
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[nginx-module]: http://nginx.org/en/docs/http/ngx_http_image_filter_module.html
 [Magento Coding Standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp
+[setup]: ../../installation/tutorials/deployment.md

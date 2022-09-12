@@ -25,7 +25,7 @@ Scenarios and expected PHP memory requirements:
 
 *  Webnode serving only storefront pages: 256 MB
 *  Webnode serving admin pages with a large catalog: 1 GB
-*  [!DNL Commerce] cron indexing a site with a large catalog: >256 MB (See [advanced-setup](https://devdocs.magento.com/guides/v2.4/performance-best-practices/advanced-setup.html) to tune for optimal performance.)
+*  [!DNL Commerce] cron indexing a site with a large catalog: >256 MB (See [advanced-setup](../performance/advanced-setup.md) to tune for optimal performance.)
 *  [!DNL Commerce] compile and deploy of static assets: 756 MB
 *  [!DNL Commerce] performance toolkit profile generation: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE & MAX_HEAP_TABLE_SIZE settings
 
