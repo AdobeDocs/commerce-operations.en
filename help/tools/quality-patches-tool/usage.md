@@ -49,7 +49,7 @@ You will see output similar to the following:
 | MC-3  | Fixes issue 3  | Optional  | Not applied | Required patches:<br> - MC-2 <br>Affected components: <br>- magento/module-cms |  
 |  MC-3-V2   | Updated fix for issue 3, replaces MC-3 patch  | Optional | N/A  | Affected components:  <br>- magento/module-cms  |  
 
-Magento 2 Enterprise Edition, version 2.3.5.0
+Adobe Commerce 2.3.5.
 
 The status table includes:
 
