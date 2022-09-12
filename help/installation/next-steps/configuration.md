@@ -30,7 +30,7 @@ If you installed by [cloning the GitHub repository](https://developer.adobe.com/
 
 If you use the Apache web server, you must enable server rewrites for pages to display properly. Otherwise, you see pages without styles and other issues.
 
-[Section on Apache server rewrites](../prerequisites/web-server/apache.md#important-apache-rewrites-and-htaccess)
+[Section on Apache server rewrites](../prerequisites/web-server/apache.md#apache-rewrites-and-htaccess)
 
 ## Caching in a multi-webnode environment
 

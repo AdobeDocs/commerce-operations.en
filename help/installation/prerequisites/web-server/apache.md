@@ -7,7 +7,7 @@ description: Follow these steps to install and configure the Apache web server f
 
 Adobe Commerce supports Apache 2.4.x.
 
-## Important: Apache required directives
+## Apache required directives
 
 1. Set `AllowEncodedSlashes` in the server config (globally) or in the virtual host configurations to avoid decoding the encoded slashes that may cause issues for URLs. For instance, when retrieving products with a slash in the SKU via the API, you do not want that converted. The sample block is not complete and other directives are required.
 
@@ -18,7 +18,7 @@ Adobe Commerce supports Apache 2.4.x.
    </VirtualHost>
    ```
 
-## Important: Apache rewrites and .htaccess
+## Apache rewrites and htaccess
 
 This topic discusses how to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
@@ -131,7 +131,7 @@ To install the default version of Apache:
    Server built: 2020-04-15T18:00:57
    ```
 
-1. Enable [rewrites and `.htaccess`](#important-apache-rewrites-and-htaccess).
+1. Enable [rewrites and `.htaccess`](#apache-rewrites-and-htaccess).
 
 ### Upgrading Apache on Ubuntu
 
@@ -174,7 +174,7 @@ To upgrade to Apache 2.4:
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. Enable [rewrites and `.htaccess`](#important-apache-rewrites-and-htaccess).
+1. Enable [rewrites and `.htaccess`](#apache-rewrites-and-htaccess).
 
 ## Installing Apache on CentOS
 

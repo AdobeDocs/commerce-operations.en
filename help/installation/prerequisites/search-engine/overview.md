@@ -63,7 +63,7 @@ Search requests are processed as follows:
 The tasks discussed in this section require the following:
 
 *  [Firewall and SELinux](#firewall-and-selinux)
-*  [Install the Java Software Development Kit (JDK)](#install-the-java-software-development-kit-jdk)
+*  [Install the Java Software Development Kit (JDK)](#install-the-java-software-development-kit)
 *  [Install the search engine](#install-the-search-engine)
 *  [Upgrading Elasticsearch](#upgrading-elasticsearch)
 
@@ -80,7 +80,7 @@ To set up rules to allow communication with the firewall or SELinux enabled, con
 *  [Introduction to SELinux (CentOS.org)](https://www.centos.org)
 *  [SELinux How-To Wiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
-### Install the Java Software Development Kit (JDK)
+### Install the Java Software Development Kit
 
 To determine if Java is already installed, enter the following command:
 
@@ -154,7 +154,7 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
-Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit](#install-the-java-software-development-kit) to check which version of JDK is installed.
 
 ## Additional resources
 

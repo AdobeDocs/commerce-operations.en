@@ -33,15 +33,15 @@ The `db-host` value is the Aurora URL with the `https://` and trailing `:portnum
 
 Before you begin, you must:
 
-*  [Install MySQL server](mysql.md) on the database server
-*  [Create a database instance](mysql.md#configuring-the-database-instance) on the database server
+*  [Install MySQL server](mysql.md) on the database server.
+*  [Create a database instance](mysql.md#configuring-the-database-instance) on the database server.
 *  Install the MySQL client on your Adobe Commerce or Magento Open Source web node. Consult MySQL documentation for details.
 
 ### High availability
 
 Use the following guidelines to configure remote database connections if your web server or database server are clustered:
 
-*  You must configure a connection for each web server node
+*  You must configure a connection for each web server node.
 *  Typically, you configure a database connection to the database load balancer; however, database clustering can be complex and configuring it is up to you. Adobe makes no specific recommendations for database clustering.
 
    For more information, see [MySQL documentation](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).

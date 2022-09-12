@@ -7,9 +7,9 @@ description: Follow these steps to configure file system permissions for on-prem
 
 This topic discusses how to set read-write permissions for the web server group before you install Adobe Commerce or Magento Open Source. This is necessary so the command line can write files to the file system.
 
-The procedure you use is different, depending on whether you use [shared hosting](#set-permissions-for-shared-hosting-one-user) and have one user or if you use a [private server](#set-ownership-and-permissions-for-two-users) and have two users.
+The procedure you use is different, depending on whether you use [shared hosting](#set-permissions-for-one-user-on-shared-hosting) and have one user or if you use a [private server](#set-ownership-and-permissions-for-two-users) and have two users.
 
-## Set permissions for shared hosting (one user)
+## Set permissions for one user on shared hosting
 
 This section discusses how to set pre-installation permissions if you log in to the application server as the same user that also runs the web server. This type of setup is common in shared hosting environments.
 
