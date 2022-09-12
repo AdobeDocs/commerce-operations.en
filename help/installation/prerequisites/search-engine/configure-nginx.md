@@ -19,12 +19,7 @@ This section discusses how to configure nginx as an *unsecure* proxy so that Ado
 >
 >The reason the proxy is not secured in this example is that it is easier to set up and verify. You can use TLS with this proxy if you want; to do so, make sure you add the proxy information to your secure server block configuration.
 
-See one of the following sections for more information:
-
-*  [Specify additional configuration files in your global `nginx.conf`](#step-1-specify-additional-configuration-files-in-your-global-nginxconf)
-*  [Set up nginx as a proxy](#set-up-nginx-as-a-proxy)
-
-### Specify additional configuration files in your global `nginx.conf`
+### Specify additional configuration files in your global configuration
 
 Make sure your global `/etc/nginx/nginx.conf` contains the following line so it loads the other configuration files discussed in the following sections:
 
