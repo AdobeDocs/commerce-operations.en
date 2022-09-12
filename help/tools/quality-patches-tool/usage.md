@@ -19,9 +19,7 @@ The [Quality Patches Tool](https://github.com/magento/quality-patches) delivers 
 
 >[!INFO]
 > 
->If it is not already installed, you must install [Git](https://github.com/git-guides/install-git) or [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) before installing the [!DNL Quality Patches Tool].
-
-Add the `magento/quality-patches` Composer package to your `composer.json` file:
+>If it is not already installed, you must install [Git](https://github.com/git-guides/install-git) or [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) before installing the [!DNL Quality Patches Tool]. Add the `magento/quality-patches` Composer package to your `composer.json` file:
 
 ```bash
 composer require magento/quality-patches
