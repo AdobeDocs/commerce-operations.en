@@ -36,10 +36,10 @@ Get practical information about concepts, processes, tools, and best practices t
   </td>
   <td valign="top">
     <a href="../tools/data-migration-tool/how-migration-works.md">
-      <img alt="Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
+      <img alt="Data Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migration</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Data Migration</strong></a>
     </div>
   </td>
 </tr>
@@ -111,6 +111,5 @@ Learn about new documentation and significant updates to existing documentation.
 
 | Change                                                                                                                                 | Type         |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Added [information](../upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool. | Major update |
-| Removed outdated Upgrade Compatibility Tool [error codes](../upgrade/upgrade-compatibility-tool/error-messages.md).                    | Technical    |
-| Moved [Site-Wide Analysis Tool guide](../tools/site-wide-analysis-tool/intro.md) from [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) to Experience League. | New |
+| Moved the [On-premises Installation Guide](../installation/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) to Experience League. | New |
+| Moved the [Data Migration Guide](../tools/data-migration-tool/how-migration-works.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) to Experience League. | New |
