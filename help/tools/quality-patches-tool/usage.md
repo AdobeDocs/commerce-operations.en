@@ -99,8 +99,7 @@ You must clean the cache after applying patches to see changes in the Adobe Comm
 >
 >Consider keeping a list of applied patches in a separate location. You might need to re-apply some of them after upgrading to a new version of Adobe Commerce or Magento Open Source. See [Re-apply patches after an upgrade](#re-apply-patches-after-an-upgrade).
 
-## Revert 
-dual patches
+## Revert individual patches
 
 >[!WARNING]
 >
