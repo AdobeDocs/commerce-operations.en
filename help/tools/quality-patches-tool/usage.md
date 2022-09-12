@@ -19,7 +19,7 @@ The [!DNL Quality Patches Tool] delivers individual patches developed by Adobe a
 
 >[!INFO]
 > 
->If it is not already installed, you must install [Git](https://github.com/git-guides/install-git) or [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) before installing the [!DNL Quality Patches Tool].<br>
+>If it is not already installed, you must install [Git](https://github.com/git-guides/install-git) or [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) before installing the [!DNL Quality Patches Tool].
 
 Add the `magento/quality-patches` Composer package to your `composer.json` file:
 
