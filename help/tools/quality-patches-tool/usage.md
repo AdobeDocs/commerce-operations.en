@@ -9,7 +9,7 @@ The [Quality Patches Tool](https://github.com/magento/quality-patches) delivers 
 
 >[!INFO]
 > 
->See [Apply patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in the Software Update Guide to review a full list of released patches.
+>See [Apply patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) to review a full list of released patches.
 
 >[!WARNING]
 >
