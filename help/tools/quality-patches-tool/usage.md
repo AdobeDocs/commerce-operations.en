@@ -9,7 +9,7 @@ The [!DNL Quality Patches Tool] delivers individual patches developed by Adobe a
 
 >[!INFO]
 > 
->See [Apply patches](apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in the Software Update Guide to review a full list of released patches.
+>See [Apply patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in the Software Update Guide to review a full list of released patches.
 
 >[!WARNING]
 >
@@ -99,7 +99,8 @@ You must clean the cache after applying patches to see changes in the Adobe Comm
 >
 >Consider keeping a list of applied patches in a separate location. You might need to re-apply some of them after upgrading to a new version of Adobe Commerce or Magento Open Source. See [Re-apply patches after an upgrade](#re-apply-patches-after-an-upgrade).
 
-## Revert individual patches
+## Revert 
+dual patches
 
 >[!WARNING]
 >
