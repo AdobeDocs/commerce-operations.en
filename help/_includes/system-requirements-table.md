@@ -637,4 +637,4 @@
 
 >[!NOTE]
 >
->Elasticsearch version support and compatibility for Adobe Commerce on cloud infrastructure is determined by service versions deployed on the Cloud infrastructure, and in rare cases may differ from the versions supported by Adobe Commerce on-premises deployments.
+>Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For details on supported software and services deployed on Adobe Commerce on cloud infrastructure, see [Supported software and services](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software).
