@@ -635,7 +635,7 @@
   </tbody>
 </table>
 
-{style="table-layout:auto"}
+<table style="table-layout:auto">
 
 
 >[!NOTE]
