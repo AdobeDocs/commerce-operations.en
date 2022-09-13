@@ -4,7 +4,7 @@ description: Learn how to use the [!DNL Quality Patches Tool].
 ---
 # Usage
 
-The [Quality Patches Tool](https://github.com/magento/quality-patches) delivers individual patches developed by Adobe and the Magento Open Source community. It allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce or Magento Open Source. You can apply patches to Adobe Commerce and Magento Open Source projects regardless of who developed the patch. For example, you can apply a patch developed by the community to Adobe Commerce projects.
+The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) delivers individual patches developed by Adobe and the Magento Open Source community. It allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce or Magento Open Source. You can apply patches to Adobe Commerce and Magento Open Source projects regardless of who developed the patch. For example, you can apply a patch developed by the community to Adobe Commerce projects.
 
 
 >[!INFO]
@@ -19,7 +19,7 @@ The [Quality Patches Tool](https://github.com/magento/quality-patches) delivers 
 
 >[!INFO]
 > 
->If it is not already installed, you must install [Git](https://github.com/git-guides/install-git) or [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) before installing the [!DNL Quality Patches Tool]. Add the `magento/quality-patches` Composer package to your `composer.json` file:
+>If it is not already installed, you must install [[!DNL Git]](https://github.com/git-guides/install-git) or [[!DNL Patch]](https://man7.org/linux/man-pages/man1/patch.1.html) before installing the [!DNL Quality Patches Tool]. Add the `magento/quality-patches` Composer package to your `composer.json` file:
 
 ```bash
 composer require magento/quality-patches
@@ -52,18 +52,18 @@ Adobe Commerce 2.3.5.
 The status table includes:
 
 -  **Type**:
-   -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Cloud Patches](https://devdocs.magento.com/cloud/project/project-patch.html) package are optional for Adobe Commerce and Magento Open Source installations.
-   -  `Deprecated` — Adobe has deprecated the individual patch. If you have applied the patch, we recommend that you revert it. The revert operation also removes the patch from the status table.
+    -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Cloud Patches](https://devdocs.magento.com/cloud/project/project-patch.html) package are optional for Adobe Commerce and Magento Open Source installations.
+    -  `Deprecated` — Adobe has deprecated the individual patch. If you have applied the patch, we recommend that you revert it. The revert operation also removes the patch from the status table.
 
 -  **Status**:
-   -  `Applied` — The patch has been applied.
-   -  `Not applied` — The patch has not been applied.
-   -  `N/A` — The status of the patch cannot be defined due to conflicts.
+    -  `Applied` — The patch has been applied.
+    -  `Not applied` — The patch has not been applied.
+    -  `N/A` — The status of the patch cannot be defined due to conflicts.
 
 -  **Details**:
-   -  `Affected components` — The list of affected modules.
-   -  `Required patches` — The list of patches that must be applied for an indicated patch to work properly (dependencies).
-   -  `Recommended replacement` — The patch that is a recommended replacement for a deprecated patch.
+    -  `Affected components` — The list of affected modules.
+    -  `Required patches` — The list of patches that must be applied for an indicated patch to work properly (dependencies).
+    -  `Recommended replacement` — The patch that is a recommended replacement for a deprecated patch.
 
 >[!INFO]
 > 
