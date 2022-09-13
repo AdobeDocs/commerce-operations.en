@@ -1,6 +1,6 @@
 # System requirements
 
-<table>
+<table style="table-layout:auto">
   <thead>
     <tr>
       <th>
@@ -634,9 +634,6 @@
     </tr>
   </tbody>
 </table>
-
-<table style="table-layout:auto">
-
 
 >[!NOTE]
 >
