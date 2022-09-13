@@ -51,3 +51,23 @@ In the public repository, automated labels are assigned to pull requests to help
 
 * **Change sent to author**: The author has been notified of the pending pull request.
 * **ready-to-merge**: Ready for review by our pull request review team.
+
+## Templates
+
+The `_jekyll` directory contains templated topics and required assets.
+The templates that use Liquid as templated language reside in the `_jekyll` directory as HTML files.
+The `_jekyll/_data` directory contains files with data to render the templates.
+
+To render the templates, run:
+
+```
+_scripts/render
+```
+
+NOTE: The script must be run from the `_jekyll` directory.
+NOTE: You need Ruby to run this script.
+
+The script runs rendering, writes rendered files to the `_jekyll/_rendered` directory as HTML files and copies them to the `help/_includes` directory as `.md` files.
+
+
+See Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles, [Liquid filters](https://jekyllrb.com/docs/liquid/filters/) and other features.
