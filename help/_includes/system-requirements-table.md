@@ -6,8 +6,12 @@
       <th>
         Software dependencies
       </th>
+      <th>2.4.5-p1</th>
       <th>2.4.5</th>
+      <th>2.4.4-p2</th>
+      <th>2.4.4-p1</th>
       <th>2.4.4</th>
+      <th>2.4.3-p3</th>
       <th>2.4.3-p2</th>
       <th>2.4.3</th>
       <th>2.4.2</th>
@@ -22,7 +26,19 @@
             2.2
       </td>
       <td>
+            2.2
+      </td>
+      <td>
             2.1
+      </td>
+      <td>
+            2.1
+      </td>
+      <td>
+            2.1
+      </td>
+      <td>
+            1
       </td>
       <td>
             1
@@ -46,6 +62,18 @@
             7.17
       </td>
       <td>
+            7.17
+      </td>
+      <td>
+            7.16
+      </td>
+      <td>
+            7.16
+      </td>
+      <td>
+            7.16
+      </td>
+      <td>
             7.16
       </td>
       <td>
@@ -66,6 +94,18 @@
     </tr>
     <tr>
       <td>OpenSearch</td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
       <td>
             1.2
       </td>
@@ -109,11 +149,35 @@
             10.4
       </td>
       <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
             10.2, 10.3, 10.4
       </td>
     </tr>
     <tr>
       <td>MySQL</td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
       <td>
             8.0
       </td>
@@ -145,6 +209,18 @@
             8.1
       </td>
       <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            7.4
+      </td>
+      <td>
             7.4
       </td>
       <td>
@@ -167,6 +243,18 @@
       </td>
       <td>
             3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
+            3.8
       </td>
       <td>
             3.8
@@ -193,6 +281,18 @@
             6.2
       </td>
       <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.0
+      </td>
+      <td>
             6.0
       </td>
       <td>
@@ -217,6 +317,18 @@
             7.0
       </td>
       <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            6.5
+      </td>
+      <td>
             6.5
       </td>
       <td>
@@ -234,6 +346,18 @@
     </tr>
     <tr>
       <td>Apache</td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
       <td>
             2.4
       </td>
@@ -279,11 +403,35 @@
       <td>
             1.18
       </td>
+      <td>
+            1.18
+      </td>
+      <td>
+            1.18
+      </td>
+      <td>
+            1.18
+      </td>
+      <td>
+            1.18
+      </td>
     </tr>
     <tr>
       <td>AWS Aurora (MySQL)</td>
       <td>
             8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            5.7
+      </td>
+      <td>
+            5.7
+      </td>
+      <td>
+            5.7
       </td>
       <td>
             5.7
@@ -322,6 +470,18 @@
             ✔️
       </td>
       <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -332,6 +492,18 @@
       <td>AWS MQ</td>
       <td>
             3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.8.11
+      </td>
+      <td>
+            3.8.11
+      </td>
+      <td>
+            3.8.11
       </td>
       <td>
             3.8.11
@@ -354,6 +526,18 @@
     </tr>
     <tr>
       <td>AWS ElastiCache</td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
       <td>
             Redis 6
       </td>
@@ -391,6 +575,18 @@
             7.9
       </td>
       <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -404,6 +600,18 @@
       <td>AWS OpenSearch</td>
       <td>
             1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
       </td>
       <td>
           --
@@ -427,7 +635,6 @@
   </tbody>
 </table>
 
->[!INFO]
->
->Elasticsearch version support and compatibility for Adobe Commerce on cloud infrastructure is determined by service versions deployed on the Cloud infrastructure, and in rare cases may differ from the versions supported by Adobe Commerce on-premises deployments.
-
+<p class="bs-callout-info">
+  Elasticsearch version support and compatibility for Adobe Commerce on cloud infrastructure is determined by service versions deployed on the Cloud infrastructure, and in rare cases may differ from the versions supported by Adobe Commerce on-premises deployments.
+</p>
