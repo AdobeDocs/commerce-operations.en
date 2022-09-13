@@ -635,6 +635,9 @@
   </tbody>
 </table>
 
-<p class="bs-callout-info">
-  Elasticsearch version support and compatibility for Adobe Commerce on cloud infrastructure is determined by service versions deployed on the Cloud infrastructure, and in rare cases may differ from the versions supported by Adobe Commerce on-premises deployments.
-</p>
+{style="table-layout:auto"}
+
+
+>[!NOTE]
+>
+>Elasticsearch version support and compatibility for Adobe Commerce on cloud infrastructure is determined by service versions deployed on the Cloud infrastructure, and in rare cases may differ from the versions supported by Adobe Commerce on-premises deployments.
