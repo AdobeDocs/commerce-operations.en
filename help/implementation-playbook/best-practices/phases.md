@@ -18,7 +18,7 @@ These best practices are organized by implementation phases to help you find the
     <div>
     <a href="planning.md"><strong>Planning</strong></a>
     </div>
-    Requirements gathering, architectual design, project scoping, account provisioning, user access, and extension purchasing
+    Requirements gathering, architectual design, catalog design, project scoping, account provisioning, user access, extension purchasing
     <br>
   </td>
   <td>
@@ -38,7 +38,7 @@ These best practices are organized by implementation phases to help you find the
     <div>
     <a href="launch.md"><strong>Launch</strong></a>
     </div>
-    Final pre- and post-launch checklist reviews, production deployment, security configuration, service verification, and performance testing  
+    Final pre- and post-launch checklist reviews, production deployment, security configuration, service verification, and performance monitoring  
     <br>
   </td>
   <td>
@@ -48,7 +48,7 @@ These best practices are organized by implementation phases to help you find the
     <div>
     <a href="maintenance.md"><strong>Maintenance</strong></a>
     </div>
-    Site monitoring, continuous feature enhancements, bug fixing, roles and responsibilites, managed services   
+    Site monitoring, catalog management, indexing, feature enhancements, bug fixing, managed services, upgrades   
     <br>
   </td>
 </tr>
