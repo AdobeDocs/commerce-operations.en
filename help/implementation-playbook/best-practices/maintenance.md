@@ -18,8 +18,8 @@ The maintenance phase includes the following activities:
 ## Best practices
 
 - [Adobe Commerce best practice: enable asynchronous orders processing​](https://support.magento.com/hc/en-us/articles/360048545492%E2%80%8B)
-- [Catalog Image Resizing]https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=MAGPS&title=Catalog+Image+Resizing)
-- [Reindexing - the safe way](https://wiki.corp.adobe.com/display/MAGPS/Reindexing+-+the+safe+way)
+- Catalog Image Resizing (wiki)
+- Reindexing - the safe way (wiki)
 - [Product Catalog Management](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
 - [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Indexers "Update On Schedule" optimizes Adobe Commerce performance​](https://support.magento.com/hc/en-us/articles/360040227191%E2%80%8B)
