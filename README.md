@@ -58,7 +58,13 @@ The `_jekyll` directory contains templated topics and required assets.
 The templates that use the Liquid templating language reside in the `_jekyll` directory as HTML files.
 The `_jekyll/_data` directory contains files with the data that is used to render the templates.
 
-To render the templates, run:
+To render all templates:
+
+1. Navigate to the `_jekyll` directory.
+
+   cd _jekyll
+
+1. Run the rendering script.
 
 ```
 _scripts/render
