@@ -12,8 +12,8 @@ This can be a successful approach. However, one recommendation that mitigates ri
 
 ## Typical timeline example
 
-![Typical commerce implementation timeline example](../assets/playbooks/timeline-example.svg)
+![Typical commerce implementation timeline example](../../assets/playbooks/timeline-example.svg)
 
 ## Sample timeline activities
 
-![Sample commerce implementation timeline activities](../assets/playbooks/timeline-activities-example.svg)
+![Sample commerce implementation timeline activities](../../assets/playbooks/timeline-activities-example.svg)
