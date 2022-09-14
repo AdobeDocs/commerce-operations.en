@@ -30,7 +30,7 @@ The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage ser
 
 ## Configure Nginx
 
-Nginx requires an additional configuration to perform Authentication with the `proxy_pass` directive. Add the following proxy information to the `nginx.conf` file:
+Nginx requires additional configuration to perform Authentication with the `proxy_pass` directive. Add the following proxy information to the `nginx.conf` file:
 
 >nginx.conf
 
@@ -61,11 +61,10 @@ The S3 integration relies on the ability to generate and store cached images on 
 
 ### File Operations
 
-It is highly recommended that you use [!DNL Commerce] file adapter methods in your coding or extension development, regardless of the file storage type. When using S3 for storage, do not use native PHP file I/O operations, such as `copy`, `rename` or `file_put_contents`, because S3 files are not located within the file system. See [DriverInterface.php][] for code examples.
+It is highly recommended that you use [!DNL Commerce] file adapter methods in your coding or extension development, regardless of the file storage type. When using S3 for storage, do not use native PHP file I/O operations, such as `copy`, `rename` or `file_put_contents`, because S3 files are not located within the file system. See [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) for code examples.
 
 <!-- link definitions -->
 
 [AWS S3]: https://aws.amazon.com/s3
 [AWS IAM]: https://aws.amazon.com/iam/
 [ngx repo]: https://github.com/anomalizer/ngx_aws_auth
-[DriverInterface.php]: https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18

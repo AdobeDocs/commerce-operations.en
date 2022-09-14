@@ -4,11 +4,11 @@ description: Learn how to configure the Remote Storage module for the on-premise
 ---
 # Configure Remote Storage
 
-The Remote Storage module provides the option to store media files and schedule imports/exports in a persistent, remote storage container using a storage service, such as AWS S3. By default, the [!DNL Commerce] application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
+The Remote Storage module provides the option to store media files and schedule imports and exports in a persistent, remote storage container using a storage service, such as AWS S3. By default, the [!DNL Commerce] application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
 
 >[!INFO]
 >
->Remote storage is available in version 2.4.2 and later only. See the [2.4.2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>Remote storage is available for Commerce version 2.4.2 and later only. See the [2.4.2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
@@ -18,7 +18,7 @@ The Remote Storage module provides the option to store media files and schedule 
 
 ## Remote storage options
 
-You can configure remote storage using the `remote-storage` option with the [`setup` CLI command][setup]. The `remote-storage` option uses the following syntax:
+You can configure remote storage using the `remote-storage` option with the [`setup` CLI command](../../installation/tutorials/deployment.md). The `remote-storage` option uses the following syntax:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -69,7 +69,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 Enabling remote storage might affect your established development experience. For example, certain PHP file functions might not work as expected. The usage of Commerce Framework for file operations must be enforced.
 
-The list of prohibited PHP native functions is available in [Magento Coding Standard][] repository.
+The list of prohibited PHP native functions is available in [Coding Standard][] repository.
 
 ## Migrate content
 
@@ -87,4 +87,3 @@ After you enable remote storage for a specific adapter, you can use the CLI to m
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
 [Magento Coding Standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: ../../installation/tutorials/deployment.md
