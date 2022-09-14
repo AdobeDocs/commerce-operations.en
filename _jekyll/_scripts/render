@@ -5,7 +5,7 @@ set -e
 # Verify Jekyll installation
 gem query --silent --installed --exact jekyll || gem install jekyll
 
-# Render the temnplates with data and write results to '_jekyll/_rendered'
+# Render the templates with data and write results to '_jekyll/_rendered'
 jekyll build --disable-disk-cache --destination _rendered
 
 # Copy the rendered files from '_jekyll/_rendered' to 'help/_includes'
