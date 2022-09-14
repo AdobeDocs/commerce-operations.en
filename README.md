@@ -55,7 +55,7 @@ In the public repository, automated labels are assigned to pull requests to help
 ## Templates
 
 The `_jekyll` directory contains templated topics and required assets.
-The templates that use Liquid as templated language reside in the `_jekyll` directory as HTML files.
+The templates that use the Liquid templating language reside in the `_jekyll` directory as HTML files.
 The `_jekyll/_data` directory contains files with data to render the templates.
 
 To render the templates, run:
