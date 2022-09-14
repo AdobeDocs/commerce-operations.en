@@ -12,7 +12,7 @@ The development phase includes the following activities:
 - Ticket execution
 - Troubleshooting
 - Code review, merge, and test
-- Sprint review
+- Sprint review and acceptance testing
 - Customer sign-off
 
 See the following list for development best practices:

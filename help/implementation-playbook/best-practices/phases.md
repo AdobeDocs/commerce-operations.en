@@ -18,7 +18,7 @@ These best practices are organized by implementation phases to help you find the
     <div>
     <a href="planning.md"><strong>Planning</strong></a>
     </div>
-    <em>Lorem ipsum dolor sit amet.</em>
+    <em>Activities in this phase include requirements gathering, architectual design, project scoping, account provisioning, and purchasing extensions.</em>
     <br>
   </td>
   <td>
@@ -28,7 +28,7 @@ These best practices are organized by implementation phases to help you find the
     <div>
     <a href="development.md"><strong>Development</strong></a>
     </div>
-    <em>Lorem ipsum dolor site amet.</em>
+    <em>Activities in this phase include local and staging environment setup, sprint planning, ticket execution, troubleshooting, code management, sprint review, acceptance testing, and customer sign-off.</em>
     <br>
   </td>
   <td>
@@ -38,7 +38,7 @@ These best practices are organized by implementation phases to help you find the
     <div>
     <a href="launch.md"><strong>Launch</strong></a>
     </div>
-    <em>Lorom ipsum dolor sit amet.</em>
+    <em>Activities in this phase include reviewing checklists and deploying to production.</em>
     <br>
   </td>
   <td>
@@ -48,7 +48,7 @@ These best practices are organized by implementation phases to help you find the
     <div>
     <a href="support.md"><strong>Support</strong></a>
     </div>
-    <em>Lorom ipsum dolor sit amet.</em>
+    <em>Activities in this phase include monitoring and bug fixing.</em>
     <br>
   </td>
 </tr>

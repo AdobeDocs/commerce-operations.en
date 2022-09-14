@@ -10,5 +10,5 @@ The planning phase includes the following activities:
 - Requirements gathering
 - Architectural design
 - Project scoping
-- Account provissioning
+- Account provisioning
 - Purchasing extensions

@@ -7,5 +7,5 @@ description: Learn about implementation best practices for the launch phase of A
 
 The launch phase includes the following activities:
 
-- Reviiewing checklists
+- Reviewing checklists
 - Deploying to production
