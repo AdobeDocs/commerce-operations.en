@@ -71,7 +71,7 @@ _scripts/render
 ```
 
 > **NOTE:** You must run the script from the `_jekyll` directory.
-NOTE: You need Ruby to run this script.
+> **NOTE:** You must have Ruby installed to run this script.
 
 The script runs rendering, writes rendered files to the `_jekyll/_rendered` directory as HTML files, and copies them to the `help/_includes` directory as `.md` files.
 
