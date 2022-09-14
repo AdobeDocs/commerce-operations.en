@@ -1,6 +1,6 @@
 ---
 title: Remote storage for Cloud
-description: Read about guidance on how to set up remote storage for Commerce on cloud infrastructure.
+description: See guidance on how to set up remote storage for Commerce on cloud infrastructure.
 ---
 
 # Configure remote storage for Commerce on Cloud infrastructure
