@@ -43,7 +43,7 @@ These best practices are organized by implementation phases to help you find the
   </td>
   <td>
     <a href="maintenance.md">
-      <img alt="Maintenance" src="../../assets/icons/info-outline.svg" width="80" height="80">
+      <img alt="Maintenance" src="../../assets/icons/gauge.svg" width="80" height="80">
     </a>
     <div>
     <a href="maintenance.md"><strong>Maintenance</strong></a>
