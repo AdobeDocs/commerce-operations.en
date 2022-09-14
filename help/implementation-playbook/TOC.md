@@ -64,7 +64,7 @@ mini-toc-levels: 3
   - [Metrics](maintenance/metrics.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Best practices {#best-practices}
-  - [Phases overview](best-practices/phases.md)
+  - [Overview](best-practices/phases.md)
   - [Planning](best-practices/planning.md)
   - [Development](best-practices/development.md)
   - [Launch](best-practices/launch.md)
