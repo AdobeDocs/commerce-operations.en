@@ -3,7 +3,7 @@
 set -e
 
 # Verify Jekyll installation
-gem query --silent --installed --exact jekyll || gem install jekyll
+gem list --silent --installed --exact jekyll || gem install jekyll
 
 # Render the templates with data and write results to '_jekyll/_rendered'
 jekyll build --disable-disk-cache --destination _rendered
