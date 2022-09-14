@@ -126,5 +126,5 @@ Lorem ipsum dolor sit amet.
 - [Realpath cache size best practice​](https://support.magento.com/hc/en-us/articles/360045176771%E2%80%8B)
 - [Static content deploy best practices in Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360031624091%E2%80%8B)
 - [New Relic - Configure notification channels](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
-- [PWA Production Environment (wiki)
+- PWA Production Environment (wiki)
 - CTAG post-launch deck (Sharepoint)
