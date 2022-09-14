@@ -68,4 +68,4 @@ mini-toc-levels: 3
   - [Planning](best-practices/planning.md)
   - [Development](best-practices/development.md)
   - [Launch](best-practices/launch.md)
-  - [Support](best-practices/support.md)
+  - [Maintenance](best-practices/maintenance.md)

@@ -13,42 +13,42 @@ These best practices are organized by implementation phases to help you find the
 <tr>
   <td>
     <a href="planning.md">
-    <img alt="Planning" src="../../assets/icons/enterprise.svg" width="40" height="40"/>
+    <img alt="Planning" src="../../assets/icons/enterprise.svg" width="80" height="80"/>
     </a>
     <div>
     <a href="planning.md"><strong>Planning</strong></a>
     </div>
-    <em>Activities in this phase include requirements gathering, architectual design, project scoping, account provisioning, and purchasing extensions.</em>
+    Requirements gathering, architectual design, project scoping, account provisioning, user access, and extension purchasing
     <br>
   </td>
   <td>
     <a href="development.md">
-      <img alt="Development" src="../../assets/icons/page-rule.svg" width="40" height="40">
+      <img alt="Development" src="../../assets/icons/page-rule.svg" width="80" height="80">
     </a>
     <div>
     <a href="development.md"><strong>Development</strong></a>
     </div>
-    <em>Activities in this phase include local and staging environment setup, sprint planning, ticket execution, troubleshooting, code management, sprint review, acceptance testing, and customer sign-off.</em>
+    Local and staging environment setup, troubleshooting, code management, sprint planning, sprint review, acceptance testing, and customer sign-off
     <br>
   </td>
   <td>
     <a href="launch.md">
-      <img alt="Launch" src="../../assets/icons/launch.svg" width="40" height="40">
+      <img alt="Launch" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
     <a href="launch.md"><strong>Launch</strong></a>
     </div>
-    <em>Activities in this phase include reviewing checklists and deploying to production.</em>
+    Final pre- and post-launch checklist reviews, production deployment, security configuration, service verification, and performance testing  
     <br>
   </td>
   <td>
-    <a href="support.md">
-      <img alt="Launch" src="../../assets/icons/info-outline.svg" width="40" height="40">
+    <a href="maintenance.md">
+      <img alt="Maintenance" src="../../assets/icons/info-outline.svg" width="80" height="80">
     </a>
     <div>
-    <a href="support.md"><strong>Support</strong></a>
+    <a href="maintenance.md"><strong>Maintenance</strong></a>
     </div>
-    <em>Activities in this phase include monitoring and bug fixing.</em>
+    Site monitoring, continuous feature enhancements, bug fixing, roles and responsibilites, managed services   
     <br>
   </td>
 </tr>
