@@ -45,8 +45,13 @@ Lorem ipsum dolor sit amet.
     </td>
     <td>
       <ul><!--Configuration-->
+<<<<<<< HEAD
         <li><a href="https://experienceleague-review.corp.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development.html#product-and-catalog-management">Product and Catalog  Management</a>
         <li><a href="https://experienceleague-review.corp.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development.html#cache-management">Cache Management</a>
+=======
+        <li><a href="https://experienceleague-review.corp.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development.html#cache-management">Product and Catalog  Management</a>
+        <li><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Full page caching</li>
+>>>>>>> 07161ddeac1934bf431cc57501bbafbf4ee8c000
         <li><a href="">Data Management</a></li>
         <li><a href="https://support.magento.com/hc/en-us/articles/360044482152%E2%80%8B">Optimize CSS and JS</li>
         <li><a href="https://support.magento.com/hc/en-us/articles/360048754931%E2%80%8B">robots.txt</li>
@@ -54,14 +59,23 @@ Lorem ipsum dolor sit amet.
       </ul>
     </td>
     <td><!--Customization--></td>
+<<<<<<< HEAD
        <ul>
        <li><a href="https://wiki.corp.adobe.com/x/qz4ykw">Best practices for theme development</a></li>
        </ul>
+=======
+>>>>>>> 07161ddeac1934bf431cc57501bbafbf4ee8c000
     <td><!--Code Management-->
        <ul>
        <li><a href="https://wiki.corp.adobe.com/x/qT4ykw">Code Review</a>
        <li><a href="https://wiki.corp.adobe.com/x/nz4ykw">Exception Handling</a></li>
        <li><a href="https://wiki.corp.adobe.com/x/nz4ykw">Debugging</a></li>
+<<<<<<< HEAD
+=======
+
+       </ul>Style Guidelines</br>Development Guidelines</br>Version control<br>Exception Handling<br></
+       br>Custom modules</br></td>
+>>>>>>> 07161ddeac1934bf431cc57501bbafbf4ee8c000
   </tr>
   <tr>
    <tr>
@@ -69,6 +83,10 @@ Lorem ipsum dolor sit amet.
     <th>Monitoring</th>
     <th>Maintenance</th>
     <th>Upgrades</th>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 07161ddeac1934bf431cc57501bbafbf4ee8c000
   </tr>
     <td>
       <ul>
@@ -84,6 +102,7 @@ Lorem ipsum dolor sit amet.
     </td>
   </tr>
  
+<<<<<<< HEAD
 </tbody>
 </table>
 
@@ -143,9 +162,16 @@ Indexing ....
 </table>
 
 ### Content management and security
+=======
+</tbody>
+</table>
+
+### Product and Catalog management (Merchandising?)
+>>>>>>> 07161ddeac1934bf431cc57501bbafbf4ee8c000
 
 Fastly
 
+<<<<<<< HEAD
 Alternate heading would be "Integrated services" with New Relic, Fastly, MBI, and MariaDB instead of having separate section for each
 
 
@@ -159,10 +185,58 @@ SWAT (?)
 
 
 ### Reporting
+=======
+- [Product and Catalog Management-video](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
+- [Best practices for Adobe Commerce product options​](https://support.magento.com/hc/en-us/articles/360048723372​)
+- [Product limits best practice](https://support.magento.com/hc/en-us/articles/360045066791​)
+- [Best practice Adobe Commerce product attributes​](https://support.magento.com/hc/en-us/articles/360048256612​)
+- [Catalog image resizing](https://wiki.corp.adobe.com/display/MAGPS/Catalog+Image+Resizing)
+### Cache management
+
+- [Full page caching](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
+- [Optimize CSS and JS](https://support.magento.com/hc/en-us/articles/360044482152%E2%80%8B)
+- [robots.txt](https://support.magento.com/hc/en-us/articles/360048754931%E2%80%8B)
+
+
+### Data management
+
+Indexing 
+
+
+## Platform and services
+>>>>>>> 07161ddeac1934bf431cc57501bbafbf4ee8c000
+
+<table style="table-layout:auto">
+<thead>
+  <tr>
+    <th>Configuration</th>
+    <th>Monitoring</th>
+    <th>Maintenance</th>
+    <th>Upgrades</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Article 1</br></br>Article 2<br></br>Article 3</td>
+    </td>
+    <td>Article 1</br></br>Article 2<br></br>Article 3</td>
+    <td>Article 1</br></br>Article 2<br></br>Article 3</td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <th>Security</th>
+    <th>Monitoring</th>
+    <th>Maintenance</th>
+    <th>Upgrades</th></td>
+  </tr>
+</tbody>
+</table>
 
 Lorem ipsum dolor sit amet.
 
 
+<<<<<<< HEAD
 ### Cloud infrastructure
 
 Sizing and Scaling
@@ -170,6 +244,8 @@ Platform choice (AWS, Azure, GCP (?)
 
 
 ### Application services
+=======
+>>>>>>> 07161ddeac1934bf431cc57501bbafbf4ee8c000
 
 - [Static content deployment](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html)
 
