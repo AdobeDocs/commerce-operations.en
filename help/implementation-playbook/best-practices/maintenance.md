@@ -10,6 +10,7 @@ The maintenance phase includes the following activities:
 - Site monitoring
 - Catalog management
 - Indexing
+- Configuration
 - Feature enhancements
 - Bug fixing
 - Managed services

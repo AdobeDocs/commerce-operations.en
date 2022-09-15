@@ -3,7 +3,7 @@ title: Implementation phases
 description: Learn about best practices for the implementation phases of Adobe Commerce projects.
 ---
 
-# Implementation phases
+# Implementation best practices
 
 There are many ways to implement an Adobe Commerce project. The best practices provided in this section describe the way Adobe expects customers and partners to implement specific use cases. These recommendations are designed to help prevent common problems and potential issues related to upgrades.
 
@@ -48,7 +48,7 @@ These best practices are organized by implementation phases to help you find the
     <div>
     <a href="maintenance.md"><strong>Maintenance</strong></a>
     </div>
-    Site monitoring, catalog management, indexing, feature enhancements, bug fixing, managed services, upgrades   
+    Site monitoring, catalog management, indexing, configuration, feature enhancements, bug fixing, managed services, upgrades   
     <br>
   </td>
 </tr>
