@@ -53,7 +53,7 @@ Available options for the `upgrade:check` command:
 
 | **Command** | **Available options** |
 |----------------|-----------------|
-| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--current-version: Current Adobe Commerce version. This parameter is required and have to be always used.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or -i): If you do not want to include critical issues, errors and warnings from the current version in your report.</li><li>--coming-version (or -c): Target an specific Adobe Commerce version. Latest available will be used if ommited.</li></ul> |
+| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--current-version: Current Adobe Commerce version. This parameter is required and must always be used.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or -i): If you do not want to include critical issues, errors, and warnings from the current version in your report.</li><li>--coming-version (or -c): Target a specific Adobe Commerce version. Latest available will be used if omitted.</li></ul> |
 
 The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option. Use this option when you only want to get new issues that are introduced with the update from your current version to the targeted version in your [!DNL Upgrade Compatibility Tool] report:
 
@@ -223,7 +223,7 @@ That returns a list with all available `help` options for the [!DNL Upgrade Comp
 - -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 ```
 
-It is possible to run `--help` as an option when running a specific command. This will return specific `--help` options for that specific command.
+It is possible to run `--help` as an option when running a specific command. It returns `--help` options for the specified command.
 
 Example of the `upgrade:check` command with `--help` option:
 
