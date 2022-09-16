@@ -18,6 +18,7 @@ The maintenance phase includes the following activities:
 
 
 The following sections include best practice information for the maintenance phase.
+
 ## Site Monitoring
 
 - [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)
@@ -50,9 +51,9 @@ The following sections include best practice information for the maintenance pha
 
 ## Feature enhancements
 
-  - [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)
-  - [E-Commerce Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
-  - [AI Automation](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)
+- [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)
+- [E-Commerce Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
+- [AI Automation](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)
 
 ### Upgrades
 
