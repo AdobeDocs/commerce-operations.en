@@ -13,8 +13,17 @@ The launch phase includes the following activities:
 - Service verification
 - Performance monitoring
 
-## Best practices
+The following sections include best practice information for the launch phase.
+
+## Security configuration
 
 - [Adobe Security Notification Service​](https://support.magento.com/hc/en-us/articles/4488969507341%E2%80%8B)
 - [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html)
 - [Best practices for Adobe Commerce robots.txt​](https://support.magento.com/hc/en-us/articles/360048754931)
+- [Install the latest security patches](https://helpx.adobe.com/security/products/magento/apsb22-12.html) - CTAG deck
+- [Verify security configuration on cloud infrastructure projects](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#security-configuration) - CTAG deck
+
+## Performance Monitoring
+
+- New Relic
+- [Use SWAT tool to ensure security and operability of Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) – CTAG deck
