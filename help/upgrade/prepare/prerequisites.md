@@ -81,7 +81,7 @@ We recommend that you contact your search engine vendor to determine whether you
 
 ## Set the open files limit
 
-Setting the open files limit (ulimit) can help avoid failure from multiple recursive calls of long query strings or issues with using the `bin/magento setup:rollback` command. This command is different for different UNIX shells. Consult your individual flavor for specifics about the `ulimit` command.  
+Setting the open files limit (ulimit) can help avoid failure from multiple recursive calls of long query strings or issues with using the `bin/magento setup:rollback` command. This command is different for different UNIX shells. Consult your individual flavor for specifics about the `ulimit` command.
 
 Adobe recommends setting the open files [ulimit](https://ss64.com/bash/ulimit.html) to a value of `65536` or more, but you can use a larger value if necessary. You can set the ulimit on the command line or you can make it a permanent setting for the user's shell.
 
@@ -91,12 +91,8 @@ To set the ulimit from the command line:
 1. Set the ulimit to `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > The syntax for open files ulimit depends on the UNIX shell you use. The preceding setting should work with CentOS and Ubuntu with the Bash shell. However, for Mac OS, the correct setting is ulimit -S 65532. Consult a man page or operating system reference for more information.
 
 To set the value in your Bash shell:
 
@@ -105,7 +101,7 @@ To set the value in your Bash shell:
 1. Add the following line:
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. Save your changes to the `.bashrc` file and exit the text editor.
