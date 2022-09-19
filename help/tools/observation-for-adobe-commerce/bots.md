@@ -4,11 +4,11 @@ description: Learn about the [!UICONTROL bots] tab of [!DNL Observation for Adob
 ---
 # The [!UICONTROL bots] tab
 
-This tab has information that is focused on identifying if and what [!DNL bots] are causing site problems.
+This tab has information that explains how to identify if and what [!DNL bots] are causing site problems.
 
 ## High level overview of [!DNL bots]:
 
-* A [!DNL bot] is a piece of software that runs repetitive automated tasks. With the evolution of artificial intelligence and machine learning, the tasks, methods, and interactions of [!DNL bots] are changing. There are *good* [!DNL bots] that benefit sites by crawling and adding them to internet search engines. This results in internet users being guided to the site through search engine results. A *good* [!DNL bot] typically respects boundaries placed on the [!DNL bot] by a `robots.txt` file or settings in a search engine console. Boundaries can restrict access to the site or parts of the site.
+* A [!DNL bot] is a piece of software that runs repetitive automated tasks. With artificial intelligence and machine learning evolution, the tasks, methods, and interactions of [!DNL bots] are changing. There are *good* [!DNL bots] that benefit sites by crawling and adding them to internet search engines. This results in internet users being guided to the site through search engine results. A *good* [!DNL bot] typically respects boundaries placed on the [!DNL bot] by a `robots.txt` file or settings in a search engine console. Boundaries can restrict access to the site or parts of the site.
 * Malicious [!DNL bots] ignore the `robots.txt` file or they may spoof a good [!DNL bot] through the request user agent field of the HTTP request data. Some things that malicious [!DNL bots] do:
     * Add load to a site to deny legitimate users access to the site.
     * Scrape and reuse content without permission.
