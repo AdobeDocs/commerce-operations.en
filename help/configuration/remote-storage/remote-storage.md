@@ -4,7 +4,7 @@ description: Learn how to configure the Remote Storage module for the on-premise
 ---
 # Configure Remote Storage
 
-The Remote Storage module provides the option to store media files and schedule imports and exports in a persistent, remote storage container using a storage service, such as AWS S3. By default, the [!DNL Commerce] application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
+The Remote Storage module provides the option to store media files and schedule imports and exports in a persistent, remote storage container using a storage service, such as AWS S3. By default, the Adobe Commerce application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
 
 >[!INFO]
 >
@@ -12,7 +12,7 @@ The Remote Storage module provides the option to store media files and schedule 
 
 >[!INFO]
 >
->The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service.
+>The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service. See [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md) for guidance implementing remote storage for cloud projects.
 
 ![schema image](../../assets/configuration/remote-storage-schema.png)
 
@@ -43,7 +43,7 @@ The default storage location is in the local filesystem. A _storage adapter_ ena
 
 ## Enable remote storage
 
-You can install remote storage during a new [!DNL Commerce] installation or add it to an existing Commerce instance using `remote-storage` parameter name-and-value pairs with `setup` CLI commands. Minimally, you must supply the storage `driver`, `bucket`, and `region`.
+You can install remote storage during a new Adobe Commerce installation or add it to an existing Commerce instance using `remote-storage` parameter name-and-value pairs with `setup` CLI commands. Minimally, you must supply the storage `driver`, `bucket`, and `region`. For Adobe Commerce on cloud infrastructure, see [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md).
 
 The following examples enable the remote storage with an AWS S3 storage adapter in the US:
 
