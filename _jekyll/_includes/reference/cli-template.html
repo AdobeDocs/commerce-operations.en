@@ -14,8 +14,9 @@ The initial list is auto generated using the `{{ tool }} list` command at the {{
 
 {{- intro }}
 
-{:.bs-callout-info}
-This reference is generated from the Magento codebase. To change the content, you can update the source code for the corresponding command implementation in [Magento codebase](https://github.com/magento) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Magento Code Contributions]({{ site.baseurl] }}/contributor-guide/contributing.html).
+>[!NOTE]
+>
+>This reference is generated from the application codebase. To change the content, you can update the source code for the corresponding command implementation in the [codebase](https://github.com/magento) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 {%- for command in commands %}
   {%- assign arguments = command.definition.arguments %}
@@ -77,10 +78,10 @@ This reference is generated from the Magento codebase. To change the content, yo
 {% if opt.shortcut contains '-' %}
 
 ### `{{ opt.name }}`, `{{ opt.shortcut }}`
-{: .no_toc }
+
 {% else %}
 ### `{{ opt.name }}`
-{: .no_toc }
+
 {%- endif %}
 
 {{ opt.description | replace: '|', '\|'}}
