@@ -1,11 +1,11 @@
 ---
-title: Remote storage for Cloud
-description: See guidance on how to set up remote storage for Commerce on cloud infrastructure.
+title: Remote storage for Commerce on cloud infrastructure
+description: See guidance on how to set up remote storage for Adobe Commerce on cloud infrastructure.
 ---
 
 # Configure remote storage for Commerce on Cloud infrastructure
 
-If you have a Commerce on cloud infrastructure project and you choose to use AWS S3 remote storage solution, there are certain steps to follow to so that Fastly Image Optimization works with AWS S3. Adobe recommends following the [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) guidance in the _Fastly_ documentation.
+If you have an Adobe Commerce on cloud infrastructure project and you choose to use the AWS S3 remote storage solution, use the [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) guidance in the _Fastly_ documentation to ensure that Fastly Image Optimization works with AWS S3.
 
 Be prepared with your [Fastly credentials](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds). On Pro projects, use SSH to connect to your server and get the Fastly credentials from the `/mnt/shared/fastly_tokens.txt` file. Staging and Production environments have unique credentials. You must get the credentials for each environment.
 

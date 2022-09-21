@@ -69,7 +69,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 Enabling remote storage might affect your established development experience. For example, certain PHP file functions might not work as expected. The usage of Commerce Framework for file operations must be enforced.
 
-The list of prohibited PHP native functions is available in [Coding Standard][] repository.
+The list of prohibited PHP native functions is available in [Magento Coding Standard][] repository.
 
 ## Migrate content
 
