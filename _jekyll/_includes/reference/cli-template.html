@@ -84,7 +84,7 @@ The initial list is auto generated using the `{{ tool }} list` command at the {{
 
 {%- endif %}
 
-{{ opt.description | replace: '|', '\|'}}
+{{ opt.description | replace: '|', '\|' | xml_escape }}
 
    {%- unless opt.default == nil %}
    {%- if opt.default == false or opt.default == empty and opt.default != '' %}
