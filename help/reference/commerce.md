@@ -5,4 +5,4 @@ description: Learn about all available commands, arguments, and options for Adob
 
 # magento-cloud (Adobe Commerce on cloud infrastructure)
 
-{{$include /help/_includes/reference/cli/commerce.md}}
+{{$include /help/_includes/templated/reference/cli/commerce.md}}
