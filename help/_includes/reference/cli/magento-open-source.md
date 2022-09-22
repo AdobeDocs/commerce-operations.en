@@ -3,8 +3,7 @@
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 2.4.5
-{:style="color:gray; font-size: 120%"} <!-- app.version -->
+**Version**: 2.4.5 <!-- app.version -->
 
 This reference contains 111 commands available through the `bin/magento` command-line tool.
 The initial list is auto generated using the `bin/magento list` command at the  edition.

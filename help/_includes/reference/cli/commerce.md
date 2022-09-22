@@ -3,8 +3,7 @@
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 1.38.1
-{:style="color:gray; font-size: 120%"} <!-- app.version -->
+**Version**: 1.38.1 <!-- app.version -->
 
 This reference contains 127 commands available through the `magento-cloud` command-line tool.
 The initial list is auto generated using the `magento-cloud list` command at the  edition.
