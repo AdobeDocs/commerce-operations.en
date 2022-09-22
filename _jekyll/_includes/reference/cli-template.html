@@ -24,7 +24,7 @@ The initial list is auto generated using the `{{ tool }} list` command at the {{
 
 ## `{{ command.name }}`
 
-{{ command.description }}
+{{ command.description | xml_escape }}
 
 {%- for usage in command.usage %}
 {%- if app.name contains 'Cloud' %}
@@ -48,7 +48,7 @@ The initial list is auto generated using the `{{ tool }} list` command at the {{
 
 ### `{{ item.name }}`
 
-{{ item.description }}
+{{ item.description | xml_escape }}
 
    {%- unless item.default == nil %}
    {%- if item.default == false or (item.default == empty and item.default != '') %}

@@ -40,7 +40,7 @@ Generate BASH code that sets up completion for this application.
 
 
 
-Program name that should trigger completion <comment>(defaults to the absolute application path)</comment>.
+Program name that should trigger completion &lt;comment&gt;(defaults to the absolute application path)&lt;/comment&gt;.
 -  Requires a value
 
 
@@ -130,7 +130,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -140,7 +140,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -213,7 +213,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -223,7 +223,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -299,7 +299,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -309,7 +309,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -391,7 +391,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -401,7 +401,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -482,7 +482,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -492,7 +492,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -560,7 +560,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -570,7 +570,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -697,7 +697,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -707,7 +707,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -805,7 +805,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -815,7 +815,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -876,7 +876,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -886,7 +886,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -947,7 +947,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -957,7 +957,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -1063,7 +1063,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -1073,7 +1073,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -1127,7 +1127,7 @@ Filter by result (when selecting a default activity): success or failure
 
 
 
-Include only incomplete activities (when selecting a default activity). This is a shorthand for <info>--state=in_progress,pending</info>
+Include only incomplete activities (when selecting a default activity). This is a shorthand for &lt;info&gt;--state=in_progress,pending&lt;/info&gt;
 -  Default: `false`
 -  Does not accept a value
 
@@ -1168,7 +1168,7 @@ The environment ID
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -1239,7 +1239,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -1249,7 +1249,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -1331,7 +1331,7 @@ List activities on all environments
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -1426,7 +1426,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -1436,7 +1436,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -1498,7 +1498,7 @@ Filter by result (when selecting a default activity): success or failure
 
 
 
-Include only incomplete activities (when selecting a default activity). This is a shorthand for <info>--state=in_progress,pending</info>
+Include only incomplete activities (when selecting a default activity). This is a shorthand for &lt;info&gt;--state=in_progress,pending&lt;/info&gt;
 -  Default: `false`
 -  Does not accept a value
 
@@ -1589,7 +1589,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -1599,7 +1599,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -1727,7 +1727,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -1737,7 +1737,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -1856,7 +1856,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -1866,7 +1866,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -1921,7 +1921,7 @@ The environment ID
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -1985,7 +1985,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -1995,7 +1995,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2056,7 +2056,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2066,7 +2066,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2156,7 +2156,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2166,7 +2166,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2205,7 +2205,7 @@ Whether to refresh the cache
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -2269,7 +2269,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2279,7 +2279,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2363,7 +2363,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2373,13 +2373,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `auth:password-login`
 
-<fg=white;bg=red>[ DEPRECATED ]</> Log in to Magento Cloud using a username and password
+&lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Log in to Magento Cloud using a username and password
 
 ```bash
 magento-cloud auth:password-login
@@ -2440,7 +2440,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2450,7 +2450,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2511,7 +2511,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2521,7 +2521,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2626,7 +2626,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2636,7 +2636,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2748,7 +2748,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2758,7 +2758,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2857,7 +2857,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2867,7 +2867,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -2965,7 +2965,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -2975,7 +2975,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -3072,7 +3072,7 @@ The date format (as a PHP date format string)
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -3151,7 +3151,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -3161,7 +3161,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -3177,7 +3177,7 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 
 ### `commit`
 
-The commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
+The commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
 -  Default: `HEAD`
     <!-- argument --> <!-- arguments --> <!-- arguments.size -->
 
@@ -3288,7 +3288,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -3298,7 +3298,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -3320,7 +3320,7 @@ commits
 
 ### `commit`
 
-The starting Git commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
+The starting Git commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
     <!-- argument --> <!-- arguments --> <!-- arguments.size -->
 
 
@@ -3358,7 +3358,7 @@ The environment ID
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -3429,7 +3429,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -3439,7 +3439,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -3469,7 +3469,7 @@ environment:sql-dump
 
 ### `--schema`
 
-The schema to dump. Omit to use the default schema (usually "main").
+The schema to dump. Omit to use the default schema (usually &quot;main&quot;).
 -  Requires a value
 
 
@@ -3644,7 +3644,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -3654,7 +3654,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -3734,7 +3734,7 @@ The service relationship to use
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -3807,7 +3807,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -3817,7 +3817,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -3859,7 +3859,7 @@ Produce raw, non-tabular output
 
 ### `--schema`
 
-The schema to use. Omit to use the default schema (usually "main"). Pass an empty string to not use any schema.
+The schema to use. Omit to use the default schema (usually &quot;main&quot;). Pass an empty string to not use any schema.
 -  Requires a value
 
 
@@ -3959,7 +3959,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -3969,7 +3969,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -4087,7 +4087,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -4097,7 +4097,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -4196,7 +4196,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -4206,7 +4206,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -4238,7 +4238,7 @@ The domain property to view
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -4324,7 +4324,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -4334,7 +4334,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -4358,7 +4358,7 @@ domains
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -4437,7 +4437,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -4447,7 +4447,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -4565,7 +4565,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -4575,7 +4575,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -4691,7 +4691,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -4701,7 +4701,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -4848,7 +4848,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -4858,7 +4858,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -4880,7 +4880,7 @@ checkout
 
 ### `id`
 
-The ID of the environment to check out. For example: "sprint2"
+The ID of the environment to check out. For example: &quot;sprint2&quot;
     <!-- argument --> <!-- arguments --> <!-- arguments.size -->
 
 
@@ -4939,7 +4939,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -4949,7 +4949,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -5100,7 +5100,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -5110,7 +5110,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -5134,14 +5134,14 @@ httpaccess
 
 ### `--access`
 
-Access restriction in the format "permission:address". Use 0 to clear all addresses.
+Access restriction in the format &quot;permission:address&quot;. Use 0 to clear all addresses.
 -  Default: `[]`
 -  Requires a value
 
 
 ### `--auth`
 
-HTTP Basic auth credentials in the format "username:password". Use 0 to clear all credentials.
+HTTP Basic auth credentials in the format &quot;username:password&quot;. Use 0 to clear all credentials.
 -  Default: `[]`
 -  Requires a value
 
@@ -5238,7 +5238,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -5248,7 +5248,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -5296,7 +5296,7 @@ The date format (as a PHP date format string)
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -5401,7 +5401,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -5411,7 +5411,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -5525,7 +5525,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -5535,7 +5535,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -5603,7 +5603,7 @@ Sort in reverse (descending) order
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -5682,7 +5682,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -5692,7 +5692,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -5720,7 +5720,7 @@ logs
 
 ### `type`
 
-The log type, e.g. "access" or "error"
+The log type, e.g. &quot;access&quot; or &quot;error&quot;
     <!-- argument --> <!-- arguments --> <!-- arguments.size -->
 
 
@@ -5823,7 +5823,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -5833,7 +5833,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -5946,7 +5946,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -5956,7 +5956,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -6132,7 +6132,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -6142,7 +6142,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -6250,7 +6250,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -6260,7 +6260,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -6390,7 +6390,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -6400,7 +6400,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -6533,7 +6533,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -6543,7 +6543,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -6615,7 +6615,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -6625,7 +6625,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -6762,7 +6762,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -6772,7 +6772,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -6794,7 +6794,7 @@ sync
 
 ### `synchronize`
 
-What to synchronize: "code", "data" or both
+What to synchronize: &quot;code&quot;, &quot;data&quot; or both
 
 -  Default: `[]`
    
@@ -6895,7 +6895,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -6905,7 +6905,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -7019,7 +7019,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -7029,7 +7029,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -7151,7 +7151,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -7161,7 +7161,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -7222,7 +7222,7 @@ The project's API hostname
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -7293,7 +7293,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -7303,7 +7303,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -7370,7 +7370,7 @@ Filter activities by result
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -7465,7 +7465,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -7475,7 +7475,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -7587,7 +7587,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -7597,7 +7597,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -7885,7 +7885,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -7895,7 +7895,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -7993,7 +7993,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -8003,7 +8003,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -8035,7 +8035,7 @@ The integration property to view
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -8114,7 +8114,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -8124,7 +8124,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -8148,7 +8148,7 @@ integrations
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -8227,7 +8227,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -8237,7 +8237,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -8530,7 +8530,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -8540,7 +8540,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -8621,7 +8621,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -8631,7 +8631,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -8821,7 +8821,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -8831,7 +8831,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -8918,7 +8918,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -8928,7 +8928,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -9000,7 +9000,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -9010,7 +9010,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -9179,7 +9179,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -9189,7 +9189,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -9227,7 +9227,7 @@ Whether to refresh the cache
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -9330,7 +9330,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -9340,7 +9340,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -9375,7 +9375,7 @@ Refresh the cache
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -9487,7 +9487,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -9497,7 +9497,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -9649,7 +9649,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -9659,7 +9659,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -9735,7 +9735,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -9745,7 +9745,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -9888,7 +9888,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -9898,7 +9898,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -10021,7 +10021,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -10031,7 +10031,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -10079,7 +10079,7 @@ The date format (as a PHP date format string)
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -10175,7 +10175,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -10185,7 +10185,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -10262,7 +10262,7 @@ Sort in reverse (descending) order
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -10326,7 +10326,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -10336,7 +10336,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -10402,7 +10402,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -10412,13 +10412,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `project:variable:delete`
 
-<fg=white;bg=red>[ DEPRECATED ]</> Delete a variable from a project
+&lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Delete a variable from a project
 
 ```bash
 magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
@@ -10511,7 +10511,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -10521,13 +10521,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `project:variable:get`
 
-<fg=white;bg=red>[ DEPRECATED ]</> View variable(s) for a project
+&lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; View variable(s) for a project
 
 ```bash
 magento-cloud project:variable:get [--pipe] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<name>]
@@ -10562,14 +10562,14 @@ The name of the variable
 
 ### `--pipe`
 
-Output the full variable value only (a "name" must be specified)
+Output the full variable value only (a &quot;name&quot; must be specified)
 -  Default: `false`
 -  Does not accept a value
 
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -10648,7 +10648,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -10658,13 +10658,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `project:variable:set`
 
-<fg=white;bg=red>[ DEPRECATED ]</> Set a variable for a project
+&lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Set a variable for a project
 
 ```bash
 magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name> <value>
@@ -10790,7 +10790,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -10800,7 +10800,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -10827,7 +10827,7 @@ The path to the file
 
 
 
-The commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
+The commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
 -  Requires a value
 
 
@@ -10900,7 +10900,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -10910,7 +10910,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -10953,7 +10953,7 @@ Show files only
 
 ### `--git-style`
 
-Style output similar to "git ls-tree"
+Style output similar to &quot;git ls-tree&quot;
 -  Default: `false`
 -  Does not accept a value
 
@@ -10963,7 +10963,7 @@ Style output similar to "git ls-tree"
 
 
 
-The commit SHA. This can also accept "HEAD", and caret (^) or tilde (~) suffixes for parent commits.
+The commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
 -  Requires a value
 
 
@@ -11036,7 +11036,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -11046,7 +11046,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -11193,7 +11193,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -11203,7 +11203,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -11245,7 +11245,7 @@ Bypass the cache of routes
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -11333,7 +11333,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -11343,7 +11343,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -11416,7 +11416,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -11426,7 +11426,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -11464,7 +11464,7 @@ Results per page (max: 100)
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -11535,7 +11535,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -11545,7 +11545,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -11651,7 +11651,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -11661,7 +11661,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -11716,7 +11716,7 @@ The environment ID
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -11780,7 +11780,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -11790,7 +11790,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -11937,7 +11937,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -11947,7 +11947,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -11987,7 +11987,7 @@ Export data as a single JSON array
 
 ### `--type`
 
-The export type, e.g. "csv"
+The export type, e.g. &quot;csv&quot;
 -  Requires a value
 
 
@@ -12097,7 +12097,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -12107,7 +12107,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -12234,7 +12234,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -12244,7 +12244,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -12368,7 +12368,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -12378,7 +12378,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -12501,7 +12501,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -12511,13 +12511,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `session:switch`
 
-<fg=white;bg=red>[ BETA ]</> Switch between sessions
+&lt;fg=white;bg=red&gt;[ BETA ]&lt;/&gt; Switch between sessions
 
 ```bash
 magento-cloud session:switch [<id>]
@@ -12577,7 +12577,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -12587,7 +12587,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -12719,7 +12719,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -12729,7 +12729,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -12778,7 +12778,7 @@ Only snapshots created before this date will be listed
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -12873,7 +12873,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -12883,7 +12883,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13014,7 +13014,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13024,13 +13024,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `source-operation:run`
 
-<fg=white;bg=red>[ BETA ]</> Run a source operation
+&lt;fg=white;bg=red&gt;[ BETA ]&lt;/&gt; Run a source operation
 
 ```bash
 magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
@@ -13048,7 +13048,7 @@ The operation name
 
 ### `--variable`
 
-A variable to set during the operation, in the format <info>type:name=value</info>
+A variable to set during the operation, in the format &lt;info&gt;type:name=value&lt;/info&gt;
 -  Default: `[]`
 -  Requires a value
 
@@ -13139,7 +13139,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13149,7 +13149,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13233,7 +13233,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13243,7 +13243,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13325,7 +13325,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13335,7 +13335,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13407,7 +13407,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13417,7 +13417,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13483,7 +13483,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13493,7 +13493,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13517,7 +13517,7 @@ ssh-keys
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -13581,7 +13581,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13591,7 +13591,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13635,7 +13635,7 @@ The date format (as a PHP date format string)
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -13714,7 +13714,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13724,7 +13724,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13828,7 +13828,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13838,7 +13838,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -13908,7 +13908,7 @@ The remote application name
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -13972,7 +13972,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -13982,7 +13982,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -14049,7 +14049,7 @@ The remote application name
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -14113,7 +14113,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -14123,7 +14123,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -14236,7 +14236,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -14246,7 +14246,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -14374,7 +14374,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -14384,7 +14384,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -14492,7 +14492,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -14502,7 +14502,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -14601,7 +14601,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -14611,7 +14611,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -14749,7 +14749,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -14759,7 +14759,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -14783,7 +14783,7 @@ users
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -14862,7 +14862,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -14872,7 +14872,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -14980,7 +14980,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -14990,7 +14990,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -15167,7 +15167,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -15177,7 +15177,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -15294,7 +15294,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -15304,13 +15304,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `variable:disable`
 
-<fg=white;bg=red>[ DEPRECATED ]</> Disable an enabled environment-level variable
+&lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Disable an enabled environment-level variable
 
 ```bash
 magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
@@ -15412,7 +15412,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -15422,13 +15422,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `variable:enable`
 
-<fg=white;bg=red>[ DEPRECATED ]</> Enable a disabled environment-level variable
+&lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Enable a disabled environment-level variable
 
 ```bash
 magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
@@ -15530,7 +15530,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -15540,7 +15540,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -15587,7 +15587,7 @@ The variable level ('project', 'environment', 'p' or 'e')
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -15682,7 +15682,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -15692,7 +15692,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -15731,7 +15731,7 @@ The variable level ('project', 'environment', 'p' or 'e')
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -15819,7 +15819,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -15829,13 +15829,13 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
 ## `variable:set`
 
-<fg=white;bg=red>[ DEPRECATED ]</> Set a variable for an environment
+&lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Set a variable for an environment
 
 ```bash
 magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
@@ -15963,7 +15963,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -15973,7 +15973,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -16138,7 +16138,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -16148,7 +16148,7 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
@@ -16203,7 +16203,7 @@ The environment ID
 
 ### `--format`
 
-The output format ("table", "csv", "tsv", or "plain")
+The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
 -  Default: `table`
 -  Requires a value
 
@@ -16267,7 +16267,7 @@ Display this application version
 
 
 
-Answer "yes" to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value
 
@@ -16277,6 +16277,6 @@ Answer "yes" to any yes/no questions; disable interaction
 
 
 
-Answer "no" to any yes/no questions; disable interaction
+Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size --> <!-- commands --> <!-- file -->
