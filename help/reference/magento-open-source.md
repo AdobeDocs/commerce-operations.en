@@ -1,6 +1,6 @@
 ---
 title: bin/magento (Magento Open Source)
-description:
+description: Learn about all available commands, arguments, and options for the Magento Open Source bin/magento command-line tool.
 ---
 
 # bin/magento (Magento Open Source)

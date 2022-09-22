@@ -1,6 +1,6 @@
 ---
 title: magento-cloud (Adobe Commerce on cloud infrastructure)
-description:
+description: Learn about all available commands, arguments, and options for Adobe Commerce magento-cloud command-line tool.
 ---
 
 # magento-cloud (Adobe Commerce on cloud infrastructure)

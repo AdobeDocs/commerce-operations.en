@@ -1,6 +1,6 @@
 ---
 title: bin/magento (Adobe Commerce on-premises)
-description:
+description: Learn about all available commands, arguments, and options for the Adobe Commerce bin/magento command-line tool.
 ---
 
 # bin/magento (Adobe Commerce on-premises)
