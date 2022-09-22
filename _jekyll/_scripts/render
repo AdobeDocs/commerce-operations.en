@@ -16,4 +16,4 @@ for file in $files; do
     mv "$file" "${file%.html}.md"
 done
 
-mv _site/templated ../help/_includes/
+cp -r _site/templated/* ../help/_includes/templated/
