@@ -1,6 +1,6 @@
 ---
 title: Release notes
-description: Learn how to use the [!DNL Quality Patches Tool].
+description: Learn about the patches available for Adobe Commerce and the issues they resolve.
 ---
 # Release notes
 
@@ -151,7 +151,7 @@ The [!DNL Quality Patches Tool](https://github.com/magento/quality-patches) deli
 * **MDVA-40488** (*for Adobe Commerce and Magento Open Source `>=2.4.2 <2.4.4`*) - Fixes the issue where configurable products with out-of-stock child products are not shown in their correct price range.
 * **MDVA-42507** (*for Adobe Commerce and Magento Open Source `>=2.4.3 <2.4.5`*) - Fixes the issue where the full-page cache is cleaned after applying staging update for the cart rule.
 * **MDVA-39163** (*for Adobe Commerce and Magento Open Source `>=2.3.5 <2.4.5`*) - Fixes the issue where shipping methods are not available when a new user is registered and products in the cart are from the guest session.
-* **MDVA-38626** (*for Adobe Commerce and Magento Open Source `>=2.3.3 <2.4.5`*) - Fixes the issue where the admin user is not able to place an order on the backend using the PayPal Payflow Pro payment.
+* **MDVA-38626** (*for Adobe Commerce and Magento Open Source `>=2.3.3 <2.4.5`*) - Fixes the issue where the admin user is not able to place an order on the backend using the [!DNL PayPal Payflow Pro] payment.
 * **MDVA-38666** (*for Adobe Commerce and Magento Open Source `>=2.3.2 <2.3.6`*) - Fixes the issue where the admin user is not able to change the configurable product options in the customer's cart.
 * **MDVA-38526** (*for Adobe Commerce and Magento Open Source `>=2.4.1 <2.4.4`*) - Fixes the issue where the admin user is not able to access the [!DNL Site-Wide Analysis tool].
 * Updated patches: MDVA-40101.
@@ -203,7 +203,7 @@ The [!DNL Quality Patches Tool](https://github.com/magento/quality-patches) deli
 ## v1.1.4 {#v1-1-4}
 
 * **MDVA-40399** (*for Adobe Commerce and Magento Open Source `>=2.4.2 <2.4.4`*) - Fixes the issue where partial invoices for the same order cannot be created simultaneously via REST API.
-* **MDVA-40101** (*for Adobe Commerce and Magento Open Source `>=2.3.2 <2.4.0`*) - Fixes the issue where items are not removed from the mini cart after a successful order placement using PayPal Express Checkout.
+* **MDVA-40101** (*for Adobe Commerce and Magento Open Source `>=2.3.2 <2.4.0`*) - Fixes the issue where items are not removed from the mini cart after a successful order placement using [!DNL PayPal Express] Checkout.
 * **MDVA-40401** (*for Adobe Commerce and Magento Open Source `>=2.3.6 <=2.3.7-p2 || >=2.4.1 <2.4.4`*) - Fixes the issue where coupon usage value changes even if placing an order fails.
 * **MDVA-40537** (*for Adobe Commerce and Magento Open Source `>=2.3.4 <=2.4.0-p1`*) - Fixes the issue where users get an error when creating a store view if several CMS pages with the same URL key exist.
 * **MDVA-37725** (*for Adobe Commerce and Magento Open Source `>=2.3.0 <=2.4.3-p1`*) - Fixes the issue where asynchronous order emails sent from non-default websites contain logo URLs from the default website.
@@ -385,7 +385,7 @@ The [!DNL Quality Patches Tool](https://github.com/magento/quality-patches) deli
 
 * **MDVA-31969** (*for Adobe Commerce `>=2.3.3 <2.3.5, >=2.4.0 <2.4.2`*) - Fixes the issue with duplicated images after product import from a *.csv* file.
 * **MDVA-33382** (*for Adobe Commerce `>=2.3.0 <2.4.2`*) - Fixes the issues with indexers invalidation after products removal from a category.
-* **MDVA-28511** (*for Adobe Commerce `>=2.3.5 <2.3.6`*) - Fixes the issue where it is not possible to complete [!DNL PayPal] checkout, if the Name field contains certain characters (like accented capital letters).
+* **MDVA-28511** (*for Adobe Commerce `>=2.3.5 <2.3.6`*) - Fixes the issue where it is not possible to complete [!DNL PayPal] checkout if the Name field contains certain characters (like accented capital letters).
 * **MDVA-31519** (*for Adobe Commerce `>=2.3.5 <2.3.6`*) - Fixes the issue with wait timeouts in guest checkout when a site-wide sales rule is in use.
 * **MDVA-33281** (*for Adobe Commerce `>=2.3.4 <2.3.6`*) - Fixes the issue where there is a fatal error in `inventory:reservation:list-inconsistencies` because of wrong SKU parameter type.
 * **MDVA-24201** (*for Adobe Commerce `>=2.3.0 <2.3.5`*) - Fixes the issue where prices do not reflect the scheduled cart price rule until manually re-indexed.
@@ -448,7 +448,7 @@ Minor fixes for patch versions
 * **MDVA-31150** (*for Adobe Commerce `>=2.3.0 <2.4.2`*) - Fixes the issue where the store credit and gift card balances are not returned by the GET Invoice Rest API call, when the invoice was posted by Rest API call and the order was partially paid by store credit and gift card accounts.
 * **MDVA-30963** (*for Adobe Commerce `>=2.3.2 <2.4.2`*) - Fixes the issue where products filtering results set to only contain values specified for *All store views* scope in Admin, include products with values overridden on the store view level.
 * **MDVA-29954** (*for Adobe Commerce `>=2.3.0 <2.3.6 || 2.4.0 || 2.4.2` with B2B extension*) - Fixes the issue where the *New Company Registration Request* and *You've been linked to a company* emails are sent from the wrong address.
-* **MDVA-28357** (*for Adobe Commerce `>=2.3.2 <2.3.6 || >=2.4.0 <2.4.1`*) - Replaces the standard analyzer with a custom analyzer with keyword tokenizer for the SKU field in the ElasticSearch index to make wildcard search queries work with SKUs containing a hyphen ("-").
+* **MDVA-28357** (*for Adobe Commerce `>=2.3.2 <2.3.6 || >=2.4.0 <2.4.1`*) - Replaces the standard analyzer with a custom analyzer with keyword tokenizer for the SKU field in the [!DNL ElasticSearch] index to make wildcard search queries work with SKUs containing a hyphen ("-").
 
 ## v1.0.7 {#v1-0-7}
 
