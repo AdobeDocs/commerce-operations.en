@@ -6,7 +6,7 @@ description: Learn how to start using the [!DNL Observation for Adobe Commerce] 
 
 When clicking on the [!UICONTROL Observation for Adobe Commerce] icon, the [!DNL Observation for Adobe Commerce] nerdlet will open.
 
-1. Click on the **Select an account** dropdown. If you do not see the **Select an account** dropdown, you may not have access. Request it [here](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx):
+1. Click on the **Select an account** dropdown. If you do not see the **Select an account** dropdown, you may not have access. Click [here](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) to request access.
 
     ![Select an account](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 
