@@ -55,7 +55,7 @@ In the public repository, automated labels are assigned to pull requests to help
 ## Templates
 
 The `_jekyll` directory contains templated topics and required assets.
-The templates that use the Liquid templating language reside in the `_jekyll` directory as HTML files.
+The templates that use the Liquid templating language reside in the `_jekyll/templated` directory as HTML files.
 The `_jekyll/_data` directory contains files with the data that is used to render the templates.
 
 To render all templates:
@@ -73,7 +73,6 @@ _scripts/render
 > **NOTE:** You must run the script from the `_jekyll` directory.
 > **NOTE:** You must have Ruby installed to run this script.
 
-The script runs rendering, writes rendered files to the `_jekyll/_rendered` directory as HTML files, and copies them to the `help/_includes` directory as `.md` files.
-
+The script runs rendering and writes rendered templates to the `help/_includes/templated` directory.
 
 See the Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles, [Liquid filters](https://jekyllrb.com/docs/liquid/filters/), and other features.

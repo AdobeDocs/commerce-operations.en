@@ -5,4 +5,4 @@ description: Learn about all available commands, arguments, and options for the 
 
 # bin/magento (Adobe Commerce on-premises)
 
-{{$include /help/_includes/reference/cli/commerce-on-premises.md}}
+{{$include /help/_includes/templated/reference/cli/commerce-on-premises.md}}

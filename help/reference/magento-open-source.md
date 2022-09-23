@@ -5,4 +5,4 @@ description: Learn about all available commands, arguments, and options for the 
 
 # bin/magento (Magento Open Source)
 
-{{$include /help/_includes/reference/cli/magento-open-source.md}}
+{{$include /help/_includes/templated/reference/cli/magento-open-source.md}}
