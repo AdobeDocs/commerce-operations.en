@@ -17,17 +17,17 @@ The [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce] is intende
 
 ### Types of transactions:
 
-**Web:** Transactions are initiated with an HTTP request. For most organizations, these represent customer-centric interactions and thus are the most important transactions to monitor.
+**Web:** Web transactions are initiated with an HTTP request. For most organizations, these represent customer-centric interactions and thus are the most important transactions to monitor.
 
 **Non-web:** Non-web transactions are not initiated with a web request. They can include non-web worker processes, background processes, scripts, message queue activity, and other tasks.
 
-Looking at the **[!UICONTROL Transaction Overview]** frame, there were almost 53,000 transactions with an average APDEX score of .76, and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter timeframe may show deviation from that current average if there is an APDEX hit during a short timeframe.
+If you look at the **[!UICONTROL Transaction Overview]** frame above, there were almost 53,000 transactions with an average APDEX score of .76, and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter timeframe may show deviation from that current average if there is an APDEX hit during a short timeframe.
 
 ## [!UICONTROL 404 page errors frame]
 
 ![404 page errors frame](../../assets/tools/404-page-errors.jpg)
 
-The **[!UICONTROL 404 page errors]** frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) and the count of 404 page errors during the selected timeframe.
+The **[!UICONTROL 404 page errors]** frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) and the count of 404 page errors for a selected timeframe.
 
 ## [!UICONTROL % of Storage Free frame]
 
