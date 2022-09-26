@@ -164,7 +164,7 @@ The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access
 
 ![galera log](../../assets/tools/galera-log.jpg)
 
-[Galera](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the [!UICONTROL Galera] cluster. The signals focus on nodes entering and exiting the cluster, which is a normal behavior to maintain a database data integrity. The nodes are kept synchronized as the [!UICONTROL Galera] cluster state changes.
+[Galera](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the [!UICONTROL Galera] cluster. The signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the [!UICONTROL Galera] cluster state changes.
 
 **List of [!UICONTROL Galera] state changes:**
 
@@ -250,9 +250,9 @@ The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in th
 
 ![redis synchronization from log](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[Redis](https://redis.io/docs/about/) is an open source (BSD licensed) in-memory data structure store used as a database, cache, and message broker. It can do database and session caching if configured. The **[!UICONTROL Redis synchronization from Log]** frame focuses on [Redis synchronization](https://redis.io/docs/manual/replication/). The larger the [!DNL Redis] dataset, the more likely that there will be problems with synchronization (more data to keep synchronized).
+[Redis](https://redis.io/docs/about/) is an open source (BSD licensed) in-memory data structure store used as a database, cache, and message broker. It can do database and session caching if configured. The **[!UICONTROL Redis synchronization from Log]** frame focuses on [Redis synchronization](https://redis.io/docs/manual/replication/). The larger the [!DNL Redis] dataset, the more likely that there will be problems with the synchronization (more data to keep synchronized).
 
-**[!DNL Redis] errors and messages**
+**[!DNL Redis] errors and messages:**
 
 * '%SLAVE synchronization: No space left on device%') as 'space'
 * '%Server started, Redis version%') as 'serv_start'
