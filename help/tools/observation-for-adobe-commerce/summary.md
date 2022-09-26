@@ -99,7 +99,7 @@ The **[!UICONTROL Deployment Log Entries]** frame displays a count of deployment
 
 ![deployment state](../../assets/tools/deployment-state.jpg)
 
-The **[!UICONTROL Deployment State]** frame facets particular deployment phrases from the deploy logs. Here are examples of phrases counted in the log and the facet name: 
+The **[!UICONTROL Deployment State]** frame facets particular deployment phrases from the deploy logs. Here are some examples of phrases counted in the log and the facet name: 
 
 **Deployment Log Phrases:**
 
@@ -122,7 +122,7 @@ The **[!UICONTROL IP Frequency]** frame counts the ('MISS' and 'PASS') statuses 
 
 ![ip response – top 20 urls in duration](../../assets/tools/ip-response-top-20-urls.jpg)
 
-This frame displays the URLs with the longest duration in response. It may indicate large image files or pages, API or pages with the longest response duration.
+The **[!UICONTROL IP Response – top 20 URLs in duration]** frame displays the URLs with the longest duration in response. It may indicate large image files or pages, API or pages with the longest response duration.
 
 ## [!UICONTROL API Calls by IP]
 
@@ -158,7 +158,7 @@ The **[!UICONTROL Transaction Errors]** frame displays the count of transaction 
 
 ![nginx access by node](../../assets/tools/nginx-access-by-node.jpg)
 
-The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access.log` by node. It is helpful to see if the load is evenly distributed. It often shows when a node drops. This will also show load across the site.
+The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access.log` by node. It is helpful to see if the load is evenly distributed. It often shows when a node drops. The frame also shows the load across the site.
 
 ## [!UICONTROL Galera Log]
 
