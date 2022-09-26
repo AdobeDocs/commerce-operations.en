@@ -81,7 +81,7 @@ The **[!UICONTROL cron_schedule]** table is written at the start and finish of c
 
 ![response code](../../assets/tools/response-code.jpg)
 
-The **[!UICONTROL Response Code]** frame is a good indication of web traffic and the response code of requests. It is [!DNL New Relic] transaction data, and it is faceted by the `httpResponseCode` returned.
+The **[!UICONTROL Response Code]** frame is a good indication of web traffic and the response code of requests. It is [!DNL New Relic's] transaction data, and it is faceted by the `httpResponseCode` returned.
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
