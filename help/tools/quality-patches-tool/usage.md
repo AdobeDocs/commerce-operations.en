@@ -9,7 +9,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 Watch this technical video and learn how to use the Quality Patch Tool for Adobe Commerce and Magento Open Source.
 
-[!VIDEO](https://video.tv.adobe.com/v/344000?quality=12&learn=on)
+[!VIDEO](https://video.tv.adobe.com/v/344000)
 
 
 >[!INFO]
