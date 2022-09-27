@@ -2,21 +2,16 @@
 ---
 # Roadmap
 
-{% assign roadmap = site.data.release.roadmap %}
-{% if include.roadmap %} 
-{% assign roadmap = include.data.release.roadmap | where: "name", include.roadmap %}
-{% endif %}
-
 ![Extension icon]({{ site.baseurl }}/common/images/Smock_Extension_18_N.svg) — Indicates extensions available on the Commerce Marketplace.
 
 <table class="roadmap-table">
   <tr class="roadmap-header">
-    {% for roadmap in roadmap %}
-    <th>{{roadmap.name}}</th>
+    {% for roadmap in site.data.release.roadmap.roadmap %}
+    <th>{{roadmap.status}}</th>
     {% endfor %}
   </tr>
   <tr>
-    {% for roadmap in roadmap %}
+    {% for roadmap in site.data.release.roadmap.roadmap %}
     <td class="table-container">
       <table class="inner-table">
         {% for roadmapFeature in roadmap.features %}

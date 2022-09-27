@@ -1,20 +1,51 @@
 # Roadmap
 
-
-
-
 ![Extension icon](/common/images/Smock_Extension_18_N.svg) — Indicates extensions available on the Commerce Marketplace.
 
 <table class="roadmap-table">
   <tr class="roadmap-header">
     
-    <th></th>
+    <th>In Progress</th>
+    
+    <th>Planned</th>
     
   </tr>
   <tr>
     
     <td class="table-container">
       <table class="inner-table">
+        
+        <tr class="inner-row"><td class="inner-cell">Accessibility improvements for storefront/admin<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Composer 2.2 support<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Elasticsearch 7.17 support<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Mobile layout optimization<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Column grid layouts (viewports)<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Security and quality improvements<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Replace Froogaloop library with player.js<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">TinyMCE 5.10 support<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Latest Vimeo API support<span class="icon "></span></td></tr>
+        
+      </table>
+    </td>
+    
+    <td class="table-container">
+      <table class="inner-table">
+        
+        <tr class="inner-row"><td class="inner-cell">OpenSearch as independent search engine<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Remove jquery-migrate<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Remove PHP 7.4 compatibility<span class="icon "></span></td></tr>
+        
+        <tr class="inner-row"><td class="inner-cell">Symfony dependency updates<span class="icon "></span></td></tr>
         
       </table>
     </td>

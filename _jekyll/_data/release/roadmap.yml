@@ -1,5 +1,5 @@
 roadmap:
-  - name: In Progress
+  - status: In Progress
     features:
       - name: Accessibility improvements for storefront/admin
         status: inProgress
@@ -19,7 +19,7 @@ roadmap:
         status: inProgress
       - name: Latest Vimeo API support
         status: inProgress
-  - name: Planned
+  - status: Planned
     features:
       - name: OpenSearch as independent search engine
         status: Planned
