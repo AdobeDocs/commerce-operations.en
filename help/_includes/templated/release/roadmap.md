@@ -1,9 +1,5 @@
 # Roadmap
 
-
-
-
-
 ![Extension icon](/common/images/Smock_Extension_18_N.svg) — Indicates extensions available on the Commerce Marketplace.
 
 <table>
