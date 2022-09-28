@@ -42,7 +42,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-45143** (*for Adobe Commerce and Magento Open Source `>=2.4.0 <2.4.5`*) - Fixes the issue where the `setShippingAddressesOnCart` mutation doesn't allow setting numeric region code as *region*.
 * **ACSD-44591** (*for Adobe Commerce and Magento Open Source `>=2.4.3 <2.4.6`*) - Fixes the error that occurs when an order is placed without CAPTCHA confirmation.
 * **ACSD-45520** (*for Adobe Commerce and Magento Open Source `>=2.3.0 <2.4.6`*) - Fixes the issue where swatch options are not pre-selected on the product detail page when a user edits configurable products from the shopping cart.
-* **ACSD-45169** (*for Adobe Commerce and Magento Open Source `>=2.4.1 <2.4.6`*) - Fixes the issue where Visual Merchandiser doesn't display the correct stock and price for a configurable product after a staging update is applied.
+* **ACSD-45169** (*for Adobe Commerce and Magento Open Source `>=2.4.1 <2.4.6`*) - Fixes the issue where [!DNL Visual Merchandiser] doesn't display the correct stock and price for a configurable product after a staging update is applied.
 * **ACSD-45424** (*for Adobe Commerce and Magento Open Source `>=2.3.4 <2.4.6`*) - Fixes the issue where an incorrect reservation compensation is created after a partial refund (credit memo).
 * **MDVA-42807** (*for Adobe Commerce and Magento Open Source `>=2.3.1 <2.4.6`*) - Fixes the issue where the custom currency sign is not displayed on the store front.
 * Updated patches: MDVA-42689, AC-3022.
