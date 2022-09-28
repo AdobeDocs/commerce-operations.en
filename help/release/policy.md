@@ -29,11 +29,11 @@ The following guidelines apply to minor releases:
 
 ## PATCH release
 
-Patch releases are primarily focused on delivering security, performance, compliance and high-priority quality fixes to help you keep your sites performing at their peak.
+Patch releases are primarily focused on delivering security, performance, compliance, and high-priority quality fixes to help you keep your sites performing at their peak.
 
 The following guidelines apply to patch releases:
 
--  The latest-supported minor release will receive full functional quality fixes and enhancements.
+-  The latest-supported minor release receives full functional quality fixes and enhancements.
 -  Changes that could break extensions or code compatibility are avoided. For example, code written for version 2.2.0 should still work on version 2.2.7.
 -  On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these are mostly PATCH-level changes; sometimes MINOR-level changes.
 
@@ -45,7 +45,7 @@ The following guidelines apply to patch releases:
 
 With security patch releases, you can keep your site more secure without applying additional quality fixes and enhancements that are contained within a full quarterly patch release. Security patch releases are appended with '-pN', where N is the incremental patch version beginning with 1 (for example, 2.3.5-p1). Security patch releases can also include hotfixes required to address critical issues that affect the Adobe Commerce application.
 
-Each security patch release is based on the prior full patch release, hence it contains quality and security fixes from prior patch release and security fixes created between the prior full patch release and the security patch release.
+Each security patch release is based on the prior full patch release. It contains quality and security fixes from prior patch release and security fixes created between the prior full patch release and the security patch release.
 
 With the announcement of our [new release strategy and updated lifecycle policy](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy) (9/16/2021), our security patch releases are differentiated based on whether they are applicable to the latest-supported minor release or a part of a still-supported previous minor release line:
 
@@ -63,7 +63,7 @@ With the announcement of our [new release strategy and updated lifecycle pol
 
    -  The security patch release for a previous minor release that is still supported (currently Adobe Commerce 2.3) includes:
 
-      -  Security bug fixes that have been created since the previous patch or security patch release, as well as new security enhancements.
+      -  Security bug fixes that have been created since the previous patch or security patch release, and new security enhancements.
 
       -  These security patch releases can also include hotfixes required to address critical issues that affect the Adobe Commerce application.
 
@@ -72,7 +72,7 @@ With the announcement of our [new release strategy and updated lifecycle pol
       | Security patch releases for the latest-supported minor release (currently 2.4) | X            |                      |
       | Security patch releases for previous, supported minor releases (currently 2.3) | X            | X                    |
 
-For general information about security releases, see [Introducing the New Security-only Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches, see [Quick start install](../installation/composer.md).
+For general information about security releases, see [Introducing the New Security-only Patch Release](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches, see [Quick start install](../installation/composer.md).
 
 ## Feature release
 
@@ -80,7 +80,7 @@ Feature releases contain new features and feature updates that are delivered as 
 
 ## Hotfix
 
-Hotfixes are patches that contain high-impact security or quality fixes, such as fixes to zero-day vulnerabilities, that affect a large number of merchants. Adobe releases hotfixes for Adobe Commerce versions that are still supported and affected by critical security or quality issues, as needed. Hotfixes are published to the [Known Issues section](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) of our Knowledge Base. These fixes will also be included in the next planned patch release.
+Hotfixes are patches that contain high-impact security or quality fixes, such as fixes to zero-day vulnerabilities, that affect many merchants. Adobe releases hotfixes for Adobe Commerce versions that are still supported and affected by critical security or quality issues, as needed. Hotfixes are published to the [Known Issues section](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) of our Knowledge Base. These fixes are included in the next planned patch release.
 
 >[!NOTE]
 >

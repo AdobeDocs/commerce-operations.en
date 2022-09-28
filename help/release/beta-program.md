@@ -12,17 +12,17 @@ To sign up for the Beta program, read and follow the steps outlined below.
 
 ## Why participate
 
-1. The earlier you see the code we are developing the sooner you can prepare your technology and merchants for the upcoming upgrade.
+1. The earlier you see the code that we are developing the sooner you can prepare your technology and merchants for the upcoming upgrade.
    
-   Yes, things may change, but you will get an understanding where in the codebase changes are happening and start your preparations sooner than the General Availability release date.
+   Yes, things may change, but you get an understanding where in the codebase changes are happening and start your preparations sooner than the General Availability release date.
 
-1. If you are a [Solution Partner](https://developer.adobe.com/commerce/contributor/community/contribution-programs/) or Technology Partner with Adobe, you can provide valuable feedback to Adobe developers and help us find and correct issues sooner.
+1. If you are a [Solution Partner](https://developer.adobe.com/commerce/contributor/community/contribution-programs/) or Technology Partner with Adobe, you can provide valuable feedback to Adobe Developers and help us find and correct issues sooner.
 
 Ready to participate? Follow the steps below.
 
 ## Sign the Beta Program Agreement
 
-First, we need your company to sign our [Beta Program Agreement](https://experiencecloudpanel.adobe.com/c/r/mbeta).
+First, we need your company to sign our [Beta Program Agreement](https://experiencecloudpanel.adobe.com/c/a/6hxAOc9DD1vCx2tg1jBKGB).
 
 To verify the authenticity of the signature, we ask you to have the Adobe relationship owner, typically the owner of the _primary_ MageID associated with your company, read and sign the document linked above.
 ​
@@ -40,14 +40,14 @@ If you are already in the Adobe Partner Program, we will give the GitHub users a
 If you are not already in the Adobe Partner Program, you must do the following:
 
 1. Make sure all of your contributors have an active GitHub account with two-factor authentication enabled.
-1. Provide a maintainer GitHub username. We will provide that user the ability to add additional users associated with the parent company who signed the Beta Program Agreement (`github.com/accountname`).
+1. Provide a maintainer GitHub username. We provide that user the ability to add additional users associated with the parent company who signed the Beta Program Agreement (`github.com/accountname`).
 1. Contact <commercebeta@adobe.com> from the official partner's company email with the maintainer and ask to join.
 
-If you are not a partner, you won't be able to provide feedback for the 2.4.4 beta. We are working to change this for the next beta release.
+If you are not a partner, you cannot provide feedback for the 2.4.4 beta. We are working to change this for the next beta release.
 
 ## Get the Code
 
-Third, the pre-production code will be released as a Composer metapackage on <https://repo.magento.com>.
+Third, the pre-production code is released as a Composer metapackage on `https://repo.magento.com`.
 
 See our [release schedule](schedule.md) for the latest information about our upcoming Beta release.
 
@@ -56,6 +56,6 @@ See our [release schedule](schedule.md) for the latest information about our upc
 -  Use the MageID associated with the Adobe Commerce license or Partner license (same MageID used to sign the Beta Program Agreement).
    For more information on how to install with Composer, refer to [Quick start install](../installation/composer.md).
    For troubleshooting access to Beta code, see [Cannot access the latest Beta version](https://support.magento.com/hc/en-us/articles/360048169471).
--  Lastly, we ask partners to provide feedback and comments through the private Beta Github repository after installing and using the code.
+-  Lastly, we ask partners to provide feedback and comments through the private Beta GitHub repository after installing and using the code.
 
 For more information about this program, refer to our [FAQ](https://fieldreadiness-adobe.highspot.com/items/5e5e6b8fc714332f32a7cd96?lfrm=rhp.0). For additional questions, email us at <commercebeta@adobe.com>.

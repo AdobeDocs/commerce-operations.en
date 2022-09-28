@@ -11,7 +11,7 @@ For Adobe Commerce 2.4 and subsequent releases:
 
 -  Adobe provides security fixes only through the latest patch or security patch release, even if a customer's version is still eligible for quality support. Unlike quality fixes, security fixes cannot be backported to previous minor releases nor to previous patch releases within supported minor releases.
 
--  For critical security issues, such as zero-day vulnerabilities, Adobe provides [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) for all customers on a supported version, even if they are not on the latest patch or security patch release. It is important to note that a hotfix is not a catch-all and will not address all the security issues that would be fixed by upgrading to the latest release.
+-  For critical security issues, such as zero-day vulnerabilities, Adobe provides [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) for all customers on a supported version, even if they are not on the latest patch or security patch release. It is important to note that a hotfix is not a catch-all and does not address all the security issues that would be fixed by upgrading to the latest release.
 
 ## End of Software Support
 
@@ -23,7 +23,7 @@ For Adobe Commerce 2.4 and subsequent releases:
 
 <sup>1 End of Software Support includes both end of quality fixes and end of security fixes.</sup><br>
 <sup>2 The End of Software Support date for 2.3 has been extended to September 8, 2022 to allow more time for customers to upgrade to the 2.4.4 release that will be generally available on March 8, 2022.</sup><br>
-<sup>3 2.3.0-2.3.6 are dependent on PHP 7.3; 2.3.7 is dependent on PHP 7.4.</sup>
+<sup>3 2.3.0-2.3.6 depend on PHP 7.3; 2.3.7 depends on PHP 7.4.</sup>
 
 >[!NOTE]
 >

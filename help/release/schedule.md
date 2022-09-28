@@ -25,7 +25,7 @@ The following table provides the dates for scheduled releases (dates are subject
 
 >[!TIP]
 >
->Patch and Security Patch Releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant. Feature Releases occur every other month. Feature Releases are independent of the core codebase and are available through external module or extension. Any updates to existing independent features will also be released during Feature Release periods and will happen automatically if the feature is already implemented.
+>Patch and Security Patch Releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant. Feature Releases occur every other month. Feature Releases are independent of the core codebase and are available through external module or extension. Any updates to existing independent features are released during Feature Release periods and do not happen automatically if the feature is already implemented.
 
 >[!NOTE]
 >

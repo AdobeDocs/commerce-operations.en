@@ -23,7 +23,7 @@ The following table describes the status of Adobe Commerce software availability
 
 ## Compatibility
 
-Adobe Commerce modules that have been built to be decoupled from the Adobe Commerce core release process; this allows us to release iterations of these modules faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
+Use this section to learn about Adobe Commerce modules that have been decoupled from the core release process. This allows Adobe to release iterations of these modules faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
 
 The following table shows the release status of extension versions relative to Adobe Commerce.
 
