@@ -29,63 +29,50 @@ For Adobe Commerce 2.4 and subsequent releases:
 >
 >See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
-.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-  sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-  sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-bs27{background-color:#67ac68;text-align:left;vertical-align:top}
-.tg .tg-pmnn{background-color:#cd3c3c;text-align:left;vertical-align:top}
-.tg .tg-0pky{text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:center;vertical-align:top;font-weight:bold}
-.tg .tg-ka61{background-color:#67ac68;border-color:#c0c0c0;text-align:left;vertical-align:top}
-</style>
-
-<table class="tg">
-<thead style="text-align:center;">
+<table>
+<thead>
   <tr>
-    <th class="tg-0pky" colspan="2"></th>
-    <th class="tg-0lax" colspan="4">2022</th>
-    <th class="tg-0lax" colspan="4">2023</th>
-    <th class="tg-0lax" colspan="4">2024</th>
+    <th colspan="2"></th>
+    <th colspan="4">2022</th>
+    <th colspan="4">2023</th>
+    <th colspan="4">2024</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky" style="font-weight:bold">Commerce</td>
-    <td class="tg-0lax">PHP</td>
-    <td class="tg-0lax">Q1</td>
-    <td class="tg-0lax">Q2</td>
-    <td class="tg-0lax">Q3</td>
-    <td class="tg-0lax">Q4</td>
-    <td class="tg-0lax">Q1</td>
-    <td class="tg-0lax">Q2</td>
-    <td class="tg-0lax">Q3</td>
-    <td class="tg-0lax">Q4</td>
-    <td class="tg-0lax">Q1</td>
-    <td class="tg-0lax">Q2</td>
-    <td class="tg-0lax">Q3</td>
-    <td class="tg-0lax">Q4</td>
+    <td>Commerce</td>
+    <td>PHP</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
-    <td class="tg-0pky">2.4.0 - 2.4.3</td>
+    <td>2.4.0 - 2.4.3</td>
     <td style="text-align:center">7.4</td>
-    <td class="tg-bs27" colspan="3"></td>
-    <td class="tg-pmnn">Nov</td>
-    <td class="tg-0lax" colspan="8"></td>
+    <td colspan="3" style="background-color:#67ac68;"></td>
+    <td style="background-color:#cd3c3c;">Nov</td>
+    <td colspan="8" ></td>
   </tr>
   <tr>
-    <td class="tg-0pky">2.4.4</td>
+    <td>2.4.4</td>
     <td rowspan="2" style="text-align:center">8.1</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-bs27" colspan="10">Mar</td>
-    <td class="tg-pmnn" rowspan="2">Nov</td>
+    <td></td>
+    <td colspan="10" style="background-color:#67ac68;">Mar</td>
+    <td rowspan="2" style="background-color:#cd3c3c;">Nov</td>
   </tr>
   <tr>
-    <td class="tg-0pky">2.4.5</td>
-    <td class="tg-0lax" colspan="2"></td>
-    <td class="tg-ka61" colspan="9">Aug</td>
+    <td>2.4.5</td>
+    <td colspan="2"></td>
+    <td colspan="9" style="background-color:#67ac68;">Aug</td>
   </tr>
 </tbody>
 </table>
