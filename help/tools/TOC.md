@@ -34,6 +34,7 @@ user-guide-description: Learn about the different tools you can use with Adobe C
   - [The Deploy tab](observation-for-adobe-commerce/deploy-tab.md)
   - [The Alerts tab](observation-for-adobe-commerce/alerts-tab.md)
   - [The WAF tab](observation-for-adobe-commerce/waf-tab.md)
+  - [The Bots tab](observation-for-adobe-commerce/bots.md)
   - [The CDN tab](observation-for-adobe-commerce/cdn-tab.md)
   - [The RabbitMQ tab](observation-for-adobe-commerce/rabbitmq-tab.md)
   - [The Cron tab](observation-for-adobe-commerce/cron-tab.md)
