@@ -26,7 +26,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 ## v1.1.18 {#v1-1-18}
 
 * **ACSD-45817** (*for Adobe Commerce and Magento Open Source `>=2.4.2 <2.4.4`*) - Fixes the issue where a GraphQL product mutation for a specific store returns all configurable variants, including those not assigned to the requested store.
-* **ACSD-46146** (*for Adobe Commerce and Magento Open Source `>=2.3.0 <2.4.6`*) - Fixes the issue where two order confirmation emails are sent after placing an order from Admin.
+* **ACSD-46146** (*for Adobe Commerce and Magento Open Source `>=2.3.0 <2.4.6`*) - Fixes the issue where two order confirmation emails are sent after placing an order from the Admin.
 * **ACSD-45255** (*for Adobe Commerce `>=2.4.3 <2.4.6`*) - Fixes an exception on the Low Stock Report page for a restricted admin user.
 * **ACSD-45488** (*for Adobe Commerce and Magento Open Source `>=2.4.2 <2.4.6`*) - Fixes the issue where a configurable product with multiple sources is not returned to In Stock automatically.
 * **ACSD-45754** (*for Adobe Commerce and Magento Open Source `>=2.3.1 <2.4.6`*) - Fixes the issue where Reward points are not added after applying a coupon to the cart.
