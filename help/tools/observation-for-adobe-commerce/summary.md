@@ -277,7 +277,7 @@ The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in th
 
 ![PHP process states](../../assets/tools/php-process-states.jpg)
 
-The way that PHP process(es) behave is dependent upon [configuration](https://www.php.net/manual/en/install.fpm.configuration.php). The configuration is complex, with many variables and options. The **[!UICONTROL PHP process states]** frame helps to understand when PHP processes are terminated and restarted.
+The way PHP process(es) behave depends on the [configuration](https://www.php.net/manual/en/install.fpm.configuration.php). The configuration is complex, with many variables and options. The **[!UICONTROL PHP process states]** frame helps you to understand when PHP processes are terminated and restarted.
 
 ### [!UICONTROL PHP errors]
 
