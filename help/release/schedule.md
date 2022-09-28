@@ -1,6 +1,6 @@
 ---
 title: Release schedule
-description: 
+description: Learn when specific versions of Adobe Commerce are scheduled for beta, pre-release, and general availability.
 ---
 
 # Release schedule

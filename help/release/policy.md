@@ -1,6 +1,6 @@
 ---
 title: Release policy
-description: 
+description: Learn about the different types of Adobe Commerce releases, including minor, patch, security patch, feature, hotfix, individual patch, and custom patch.
 ---
 
 # Adobe Commerce release policy

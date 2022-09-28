@@ -1,9 +1,9 @@
 ---
-title: Availability
-description: 
+title: Product availability
+description: Learn about what Adobe Commerce features are currently available, how to access them, and check their compatibility with specific Adobe Commerce releases.
 ---
 
-# Availability
+# Product availability
 
 The following table describes the status of Adobe Commerce software availability and where to get it, particularly for software that is available outside the conventional Adobe Commerce Composer package.
 

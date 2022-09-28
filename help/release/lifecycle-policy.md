@@ -1,6 +1,6 @@
 ---
-title: Lifecycle policy
-description: 
+title: Software lifecycle policy
+description: Learn about key dates for end of software support for Adobe Commerce releases.
 ---
 
 # Adobe Commerce lifecycle policy

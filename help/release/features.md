@@ -1,6 +1,6 @@
 ---
-title: Features
-description: 
+title: Product features
+description: Learn what Adobe Commerce features are available by specific release version.
 ---
 
 # Adobe Commerce features

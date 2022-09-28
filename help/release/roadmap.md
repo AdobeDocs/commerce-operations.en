@@ -1,9 +1,9 @@
 ---
-title: Roadmap
-description: See what we have planned for Adobe Commerce and Magento Open Source.
+title: Product roadmap
+description: Learn what about the status of planned features for Adobe Commerce.
 ---
 
-# Commerce roadmap
+# Commerce product roadmap
 
 The following table contains the status of items on the Magento Open Source roadmap (items are subject to change):
 

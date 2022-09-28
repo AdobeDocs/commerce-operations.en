@@ -1,6 +1,6 @@
 ---
 title: Released versions
-description: 
+description: Learn when specific versions of Adobe Commerce were released.
 ---
 
 # Released versions

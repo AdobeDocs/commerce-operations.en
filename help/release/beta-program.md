@@ -1,6 +1,6 @@
 ---
 title: Beta program
-description: 
+description: Learn about the Adobe Commerce beta program and how to participate.
 ---
 
 # Adobe Commerce beta program
