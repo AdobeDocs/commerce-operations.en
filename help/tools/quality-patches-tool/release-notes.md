@@ -50,7 +50,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 ## v1.1.16 {#v1-1-16}
 
 * **MDVA-44703** (*for Adobe Commerce and Magento Open Source `>=2.4.3 <2.4.4`*) - Fixes the issue where order totals in the Orders report are miscalculated for the restricted admin user.
-* **MDVA-44940** (*for Adobe Commerce and Magento Open Source `>=2.4.3 <2.4.4`*) - Fixes the SQL error that occurs while saving the category from Admin.
+* **MDVA-44940** (*for Adobe Commerce and Magento Open Source `>=2.4.3 <2.4.4`*) - Fixes the SQL error that occurs while saving the category from the Admin.
 * **MDVA-44562** (*for Adobe Commerce and Magento Open Source `>=2.4.0 <2.4.2-p2`*) - Fixes the issue where the non-default store id for quote items is overridden by the default store id, despite the GraphQL request originating from the non-default store view.
 * **MDVA-43167** (*for Adobe Commerce and Magento Open Source `>=2.4.2 <2.4.4`*) - Fixes the issue where admin order grid mass action doesn't apply for multi-page when admin user selects all orders.
 * **MDVA-44044** (*for Adobe Commerce and Magento Open Source `>=2.3.0 <2.4.2-p2`*) - Fixes the issue where a product is not displayed on the category page after it is assigned to a new website.
