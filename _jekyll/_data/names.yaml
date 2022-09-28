@@ -1,0 +1,14 @@
+# Here's a reference of old-to-new Magento product names for future reference:
+
+# Community Edition (CE)          ---> Open Source
+# Enterprise Edition (EE)         ---> Commerce
+# Enterprise Cloud Edition (ECE)  ---> Commerce Cloud
+# Enterprise Edition for B2B      ---> Commerce for B2B
+
+#NOTE: The new product name variables use the old product name abbreviations (e.g., ce, ee, ece, b2b).
+
+# Product Name variables
+
+open-source: Magento Open Source
+commerce: Adobe Commerce
+commerce-b2b: B2B for Adobe Commerce

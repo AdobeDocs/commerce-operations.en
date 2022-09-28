@@ -1,5 +1,5 @@
 ---
-title: Configure Varnish for Commerce or Magento
+title: Configure Varnish for Commerce
 description: Learn to update and manage your Varnish configuration file for the Commerce application.
 ---
 
