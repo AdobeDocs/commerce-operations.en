@@ -315,19 +315,19 @@ Secondary processes can impact site response. The **[!UICONTROL Secondary proces
 
 ![traffic vs week ago](../../assets/tools/traffic-vs-week-ago.jpg)
 
-The **[!UICONTROL Traffic vs Week Ago]** frame looks at the website traffic (requests) from the [!DNL Fastly] logs with ('MISS', 'PASS') cache statuses. These requests add load to the origin servers. This frame displays the web request volume versus one week ago during the same timeframe.
+The **[!UICONTROL Traffic vs Week Ago]** frame looks at the website traffic (requests) from the [!DNL Fastly] logs with ('MISS', 'PASS') cache statuses. These requests add load to the origin servers. This frame displays the comparative web request volume of the current week and the past week ago during the same timeframe.
 
 ## [!UICONTROL Fastly Cache]
 
 ![fastly Cache](../../assets/tools/fastly-cache.jpg)
 
-The **[!UICONTROL Fastly Cache]** frame shows an aggregate view of the cache status of requests from the Fastly logs. If you click on ERROR, it will show the % of errors in the requests. This will typically increase when the origin server is not responding quickly enough to page requests.
+The **[!UICONTROL Fastly Cache]** frame shows an aggregate view of the cache status of requests from the Fastly logs. If you click on ERROR, it will show the percent of errors in the requests. This will typically increase when the origin server is not responding quickly enough to page requests.
 
 ## [!UICONTROL Page Rendering]
 
 ![page rendering](../../assets/tools/page-rendering.jpg)
 
-The **[!UICONTROL Page Rendering]** frame displays the average page rendering duration from the page view source of [!DNL New Relic] as compared to the same time period the prior week.
+The **[!UICONTROL Page Rendering]** frame displays the current week's average page rendering duration from the page view source of [!DNL New Relic] compared to the prior week during the same time period.
 
 ## [!UICONTROL Page loading detail]
 
@@ -353,7 +353,7 @@ The **[!UICONTROL Admin Activities]** frame identifies transactions with an admi
 
 ![Order transactions default](../../assets/tools/order-transactions-default.jpg)
 
-The **[!UICONTROL Order transactions (default?)]** frame looks for transactions `request.headers.host` from transactions where the name = 'WebTransaction/Action/checkout/onepage/success'. If the order success URL is different, this frame will not have data.
+The **[!UICONTROL Order transactions (default?)]** frame looks for transactions `request.headers.host` from transactions, where the name = `WebTransaction/Action/checkout/onepage/success`. If the order success URL is different, this frame will not have data.
 
 ## [!UICONTROL Elasticsearch Index information]
 
