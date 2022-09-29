@@ -56,7 +56,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **MDVA-44044** (*for Adobe Commerce and Magento Open Source `>=2.3.0 <2.4.2-p2`*) - Fixes the issue where a product is not displayed on the category page after it is assigned to a new website.
 * **MDVA-42509** (*for Adobe Commerce and Magento Open Source `>=2.3.3 <2.4.4`*) - Fixes the issue where a CSV could not be uploaded for a quick order resulting in an *Unable to send the cookie* error.
 * Updated patches: MDVA-41061, MDVA-42584.
-* The prefix for the new [!DNL Quality Patches Tool] patches will be changed from "MDVA" to "ACSD" due to internal process changes.
+* The prefix for the new [!DNL Quality Patches Tool] patches will be changed from *MDVA* to *ACSD* due to internal process changes.
 
 ## v1.1.15 {#v1-1-15}
 
