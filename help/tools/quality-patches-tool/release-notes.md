@@ -14,7 +14,6 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
-
 ## v1.1.20 {#v1-1-20}
 
 * **ACSD-46520** (*for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.5*) - Fixes the issue where a user gets an incorrect order status when refunded using the store credit.
