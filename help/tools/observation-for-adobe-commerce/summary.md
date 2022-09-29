@@ -285,7 +285,7 @@ The way PHP process(es) behave depends on the [configuration](https://www.php.ne
 
 The **[!UICONTROL PHP errors]** frame shows the number of PHP errors with workers across the selected timeframe. For more information, refer to [Adobe Commerce PHP settings](../../installation/prerequisites/php-settings.md).
 
-**PHP errors and messages**
+**PHP errors and messages:**
 
 * '%worker_connections are not enough%') as 'worker'
 * '%PHP Fatal error: Allowed memory size!%') as 'mem_size'
@@ -303,13 +303,13 @@ The **[!UICONTROL PHP errors]** frame shows the number of PHP errors with worker
 
 ![php processes](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] used by [!DNL Nginx]. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](../../installation/system-requirements.md). The **[!UICONTROL PHP processes]** frame shows the number of PHP processes running at a particular time in the selected timeline.
+[PHP-FPM](https://php-fpm.org/) is a [!UICONTROL FastCGI Process Manager] used by [!DNL Nginx]. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](../../installation/system-requirements.md). The **[!UICONTROL PHP processes]** frame shows the number of PHP processes running at a particular time in the selected timeline.
 
 ## [!UICONTROL Secondary processes]
 
 ![secondary processes](../../assets/tools/secondary-processes.jpg)
 
-Secondary processes can impact site response. The **[!UICONTROL Secondary processes]** frame can indicate a process or processes that may be adding load to the site. The database primarily has the most secondary processes running.
+Secondary processes can impact site response. The **[!UICONTROL Secondary processes]** frame indicates a process or processes that may be adding load to the site. The database primarily has the most secondary processes running.
 
 ## [!UICONTROL Traffic vs Week Ago]
 
