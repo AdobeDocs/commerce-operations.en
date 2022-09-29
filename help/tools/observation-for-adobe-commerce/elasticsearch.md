@@ -9,17 +9,17 @@ description: Learn about the [!UICONTROL Elasticsearch] tab of [!DNL Observation
 
 ![Cluster Status Summary](../../assets/tools/cluster-status-summary.jpg)
 
-Over the selected timeframe, the **[!UICONTROL Cluster Status Summary]** frame shows the color statuses that the [!DNL Elasticsearch] cluster has gone through. In this example, during the selected timeframe, the cluster was in a Green status once and in a Yellow status once during the selected timeframe.
+Over the selected timeframe, the **[!UICONTROL Cluster Status Summary]** frame shows the color statuses that the [!DNL Elasticsearch] cluster has gone through. In this example, during the selected timeframe, the cluster was in Green status once and in Yellow status once during the selected timeframe.
 
 ## [!UICONTROL Active Primary Shards]
 
 ![Active Primary Shards](../../assets/tools/active-primary-shards.jpg)
 
-The **[!UICONTROL Active Primary Shards]** frame will show differing numbers depending on the number of active primary shards for the selected account’s [!DNL Elasticsearch] service.
+The **[!UICONTROL Active Primary Shards]** frame shows the differing numbers depending on the number of active primary shards for the selected account's [!DNL Elasticsearch] service.
 
 From [!DNL Elasticsearch]: The definitive Guide [2.x]:
 
-“In [Dynamically Updatable Indices](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), we explained that a shard is a Lucene index and that an [!DNL Elasticsearch] index is a collection of shards. Your application talks to an index, and [!DNL Elasticsearch] routes your requests to the appropriate shards. A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be more than sufficient for your needs — a single shard can hold a lot of data — but it limits your ability to scale.”
+"In [Dynamically Updatable Indices](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/dynamic-indices.html), we explained that a shard is a Lucene index and that an [!DNL Elasticsearch] index is a collection of shards. Your application talks to an index, and [!DNL Elasticsearch] routes your requests to the appropriate shards. A shard is the unit of scale. The smallest index you can have is one with a single shard. This may be more than sufficient for your needs — a single shard can hold a lot of data — but it limits your ability to scale."
 
 When an index is created, there are several shards created with that index. By default, five primary shards are allotted to each new index, meaning that an index can be spread across five nodes (one shard per node). There are also replica shards. These are primarily for failover. Replica shards can serve read requests.
 
@@ -27,7 +27,7 @@ When an index is created, there are several shards created with that index. By d
 
 ![Active Shards in Cluster](../../assets/tools/active-shards-in-cluster.jpg)
 
-**[!UICONTROL Active Shards in Cluster]** - ALL primary and replica shards in an [!DNL Elasticsearch] cluster.
+**[!UICONTROL Active Shards in Cluster]** frome shows the total number of primary and replica shards in an [!DNL Elasticsearch] cluster.
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
