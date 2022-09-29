@@ -15,6 +15,18 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >For information about quality patches created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
 
+## v1.1.20 {#v1-1-20}
+
+* **ACSD-46520** (*for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.5*) - Fixes the issue where a user gets an incorrect order status when refunded using the store credit.
+* **ACSD-46703** (*for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6*) - Fixes the issue where it is not possible to drag and drop custom options on a product edit page.
+* **ACSD-44851** (*for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6*) - Fixes the issue where a category with subcategories is unable to open or expand.
+* **ACSD-46815** (*for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6*) - Fixes the issue where category tree request is limited to 20 categories.
+* **ACSD-45675** (*for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6*) - Fixes the issue where the product export uses category names from the *Default Store View* scope.
+* **ACSD-46869** (*for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6*) - Fixes the issue where a configurable product in a cart is not updated via a *PUT REST API* request without changing the product quantity.
+* **MDVA-42768-V2** (*for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.3*) - Fixes the issue where Configurable product displays regular price as *0* when *Display Out-of-Stock* is *Yes*.
+* Updated patches: MDVA-44562, ACSD-46213, MDVA-41305, MDVA-38346, MDVA-13203.
+* Deprecated patch: MDVA-42768.
+
 ## v1.1.19 {#v1-1-19}
 
 * **ACSD-46213** (*for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.3*) - Fixes the issue where category tree request is limited to 20 categories.
