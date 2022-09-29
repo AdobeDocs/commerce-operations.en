@@ -46,10 +46,10 @@ Before 2.4, MySQL was the default catalog search engine, but MySQL is no longer 
 
 Use the following resources to help guide you through this process:
 
-- [Install and configure Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html)
+- [Install and configure Elasticsearch](../../configuration/search/overview-search.md)
 - [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configure Elasticsearch to work with [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) or [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
-- [Configure Magento to use Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
+- Configure Elasticsearch to work with [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) or [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
+- [Configure Elasticsearch](../../configuration/search/configure-search-engine.md)
 
 After you configure the search engine and reindex, you are ready to upgrade to 2.4.
 
@@ -63,8 +63,8 @@ You must perform the following tasks before upgrading to 2.4:
 
    >[!NOTE]
    >
-   >Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) to check which version of JDK is installed.
+   >Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
 
-1. [Configure Magento to use Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html) and reindex.
+1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md) and reindex.
 
 After you configure the search engine and reindex, you are ready to upgrade to 2.4.

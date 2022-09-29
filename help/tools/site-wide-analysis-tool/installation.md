@@ -70,7 +70,7 @@ bin/magento module:status Magento_ServicesConnector
 
 If you have installed the extension and configured it using an existing API key for a different service, you **MUST regenerate the API key** and update it in the Adobe Commerce Admin for the agent.
 
-1. Put your website into [maintenance mode](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+1. Put your website into [maintenance mode](../../installation/tutorials/maintenance-mode.md).
 
 1. Log into [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 
@@ -312,7 +312,7 @@ Run the following commands to uninstall the service from your system and remove 
    systemctl disable scheduler
    ```
 
-1. Remove the scheduler service’s `systemd` unit file.
+1. Remove the scheduler service's `systemd` unit file.
 
    ```bash
    rm /etc/systemd/system/scheduler.service

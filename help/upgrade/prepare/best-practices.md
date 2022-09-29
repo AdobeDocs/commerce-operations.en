@@ -35,8 +35,8 @@ If your project is live, we suggest you run an audit to determine its quality, a
 
 From the moment you start working on a project, you should consider how future upgrades will be impacted by your current work. Always follow Adobe Commerce development best practices as described here:
 
-- [Development best practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [Coding standards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [Development best practices](https://developer.adobe.com/commerce/php/best-practices/)
+- [Coding standards](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Begin adopting the Adobe Commerce Extensibility platform, if you have not done so already. The platform allows you to efficiently customize processes, integrate systems, and deploy new capabilities while maintaining SaaS-like upgradeability. Its features include:
 
@@ -74,7 +74,7 @@ Assess the work to be done for upgrading:
 
 ### Post-upgrade testing
 
-Testing is the phase of an upgrade that requires the most time. As a result, this process should be as automated as possible. You can benefit from using the core testing tools. The [Application Testing Guide](https://devdocs.magento.com/guides/v2.4/test/testing.html) provides details.
+Testing is the phase of an upgrade that requires the most time. As a result, this process should be as automated as possible. You can benefit from using the core testing tools. The [Application Testing Guide](https://developer.adobe.com/commerce/testing/guide/) provides details.
 
 Use a staging environment to test and validate your upgrade before moving to production.
 

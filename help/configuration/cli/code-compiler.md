@@ -40,7 +40,7 @@ In some cases, you might want to compile code before you install the Commerce ap
 
    Use the `[-c|--clear-static-content]` option to clear [static content](https://glossary.magento.com/static-content). This is necessary if you previously enabled or disabled modules and you must clear the static content previously generated for them.
 
-   See [Enable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+   See [Enable modules](../../installation/tutorials/manage-modules.md).
 
 1. Compile the code.
 

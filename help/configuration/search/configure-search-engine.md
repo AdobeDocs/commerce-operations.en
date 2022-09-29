@@ -35,8 +35,8 @@ To configure your system to use Elasticsearch or OpenSearch:
 
    Continue with:
 
-   - [Configure Apache for your search engine](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html)
-   - [Configure nginx for your search engine](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html)
+   - [Configure Apache for your search engine](../../installation/prerequisites/search-engine/configure-apache.md)
+   - [Configure nginx for your search engine](../../installation/prerequisites/search-engine/configure-nginx.md)
 
    or you see:
 
@@ -47,7 +47,7 @@ If so, try the following:
 - Make sure the search engine server is running.
 - If the server is on a different host from Commerce, log in to the Commerce server and ping the search engine host. Resolve network connectivity issues and test the connection again.
 - Examine the command window in which you started Elasticsearch or OpenSearch for stack traces and exceptions. You must resolve those before you continue. In particular, make sure you started your search engine as a user with `root` privileges.
-- Make sure that [UNIX firewall and SELinux](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#firewall-selinux) are both disabled, or set up rules to enable your search engine and Commerce to communicate with each other.
+- Make sure that [UNIX firewall and SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) are both disabled, or set up rules to enable your search engine and Commerce to communicate with each other.
 - Verify the value of the **Elasticsearch Server Hostname** field. Make sure that the server is available. You can try the server's IP address instead.
 - Use the `netstat -an | grep <listen-port>` command to verify that the port specified in the **Elasticsearch Server Port** field is not being used by another process.
 
@@ -79,7 +79,7 @@ To clean the cache using the command line: [`bin/magento cache:clean`](../cli/ma
 
 To reindex using the command line:
 
-1. Log in to your Commerce server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your Commerce server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Enter any of the following commands:
 
    Enter the following command to reindex the catalog search index only:

@@ -51,4 +51,4 @@ You can then purge Varnish hosts when you refresh the Commerce cache (also refer
 
 To refresh the cache using the Admin, click **[!UICONTROL SYSTEM]** > Tools > **Cache Management**, then click **Flush Magento Cache** at the top of the page. (You can also refresh individual cache types.)
 
-To refresh the cache using the command line, you typically use the [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) command as the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+To refresh the cache using the command line, you typically use the [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) command as the [file system owner](../../installation/prerequisites/file-system/overview.md).

@@ -278,7 +278,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    ```php
    <?php
    /**
-    * Copyright © Magento, Inc. All rights reserved.
+    * Copyright &copy; Magento, Inc. All rights reserved.
     * See COPYING.txt for license details.
     */
 
@@ -296,7 +296,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    ```xml
    <?xml version="1.0"?>
    /**
-   * Copyright © Magento, Inc. All rights reserved.
+   * Copyright &copy; Magento, Inc. All rights reserved.
    * See COPYING.txt for license details.
    */
 
@@ -309,16 +309,14 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
 
 <!-- link definitions -->
 
-[Translate theme strings]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translate_theory.html
-[Translations overview]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html
-[Community Engineering contributions]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#translations-project
-[translation dictionary]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-dictionaries
+[Translations overview]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
+[translation dictionary]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
 [configures the translations]: https://docs.magento.com/user-guide/stores/store-language-add.html?Highlight=translation
-[Learn more about language packages]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack
+[Learn more about language packages]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[registers]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html
+[registers]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [`de_de`]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[`composer.json`]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html
-[`registration.php`]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html
+[`composer.json`]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
+[`registration.php`]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

@@ -34,7 +34,7 @@ bin/magento setup:di:compile
 
 ## Update the autoloader
 
-After compilation completes, confirm that [APCu is enabled](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) and update the autoloader:
+After compilation completes, confirm that [APCu is enabled](../performance/software.md#php-settings) and update the autoloader:
 
 To update the autoloader:
 
@@ -76,7 +76,7 @@ Deploying static content causes [!DNL Commerce] to perform the following actions
 
 If your static content is not deployed, [!DNL Commerce] performs all listed operation on the fly, leading to a significant increase in response time.
 
-You can use a variety of options to customize deployment operations based on store size and fulfillment needs. The most common is the compact deploy strategy. See [Static files deployment strategies](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+You can use a variety of options to customize deployment operations based on store size and fulfillment needs. The most common is the compact deploy strategy. See [Static files deployment strategies](../configuration/cli/static-view-file-strategy.md)
 
 To deploy static content:
 

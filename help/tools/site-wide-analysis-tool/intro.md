@@ -32,10 +32,16 @@ View all of the important insights about your site in one place. [!DNL Site-Wide
 
 - [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Provides Adobe Commerce and Magento Open-Source customers with real-time insights into the security status of their store by proactively detecting malware and notifying them if their store is compromised.
 
-- [**[!DNL Upgrade Compatability Tool]**](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) - Runs Adobe Commerce's customized instance against the target upgrade version and returns a summary of critical issues, errors, and warnings that must be addressed, making the upgrade analysis process easier, faster, and cheaper.
+- [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - Runs Adobe Commerce's customized instance against the target upgrade version and returns a summary of critical issues, errors, and warnings that must be addressed, making the upgrade analysis process easier, faster, and cheaper.
 
 - [**[!DNL Managed Alerts]**](https://support.magento.com/hc/en-us/sections/360010758472-Managed-alerts-for-Adobe-Commerce) - Monitor multiple metrics to proactively track the platform's performance and provide specific instructions on how to troubleshoot issues so that merchants can avoid critical downtime and stay informed about their CPU, application performance, disk, memory, and database.
 
 ## Who is this guide for?
 
-Merchants and partners who want to have greater visibility into their Adobe Commerce websites. It empowers merchants to improve their customers’ experience and have closer alignment on the best practices recommendations and foundational issues.
+Merchants and partners who want to have greater visibility into their Adobe Commerce websites. It empowers merchants to improve their customers' experience and have closer alignment on the best practices recommendations and foundational issues.
+
+## [!DNL Site-Wide Analysis Tool] demo
+
+Watch this video to learn about the [!DNL Site-Wide Analysis Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)

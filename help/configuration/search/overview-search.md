@@ -19,10 +19,9 @@ After you install and integrate your search engine with Adobe Commerce, you must
 
 <!-- Link Definitions -->
 
-[Search engine prerequisites]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html
-[Configure nginx for your search engine]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html
-[Configure Apache for your search engine]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html
+[Search engine prerequisites]: ../../installation/prerequisites/search-engine/overview.md
+[Configure nginx for your search engine]: ../../installation/prerequisites/search-engine/configure-nginx.md
+[Configure Apache for your search engine]: ../../installation/prerequisites/search-engine/configure-apache.md
 [Elasticsearch]: https://www.elastic.co
-[Elasticsearch documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-[Install the Commerce software]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-install.html
+[Install the Commerce software]: ../../installation/composer.md
 [OpenSearch]: https://opensearch.org/docs/latest/opensearch/install/index/

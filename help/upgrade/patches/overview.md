@@ -7,7 +7,7 @@ description: Learn about the different types of patches for Adobe Commerce and M
 
 >[!WARNING]
 >
->We strongly recommend testing all patches in a staging or development environment before deploying to production. We also strongly recommend backing up your data before applying a patch. See [Back up and roll back the file system](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>We strongly recommend testing all patches in a staging or development environment before deploying to production. We also strongly recommend backing up your data before applying a patch. See [Back up and roll back the file system](../../installation/tutorials/backup.md).
 
 Patch (or diff) files are text files that note:
 
