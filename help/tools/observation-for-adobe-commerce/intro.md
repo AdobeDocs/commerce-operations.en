@@ -12,7 +12,7 @@ This guide provides a holistic overview of [!DNL Observation for Adobe Commerce]
 
 When issues arise, it can be time-consuming to pinpoint where the issue is rooted and have the knowledge to fix it. The Adobe support organization has accumulated tribal knowledge built on years of looking at logs and command line outputs while troubleshooting issues. The tool leverages such knowledge to identify important signals against a common timeline. The timeline can be expanded or contracted, allowing you to visualize your log data to help with performance management and issue resolution.
 
-Using [!DNL Observation], you can analyze complex problems encountered by support to help identify root causes. Instead of tracking disparate data, you can spend your time correlating events and errors to gain deep insights into the causes of performance bottlenecks. The tool is intended to give a clearer view of some of the problems experienced by sites to help you identify potential root causes of problems and keep sites performing optimally.
+Using [!DNL Observation], you can analyze complex problems encountered by support to help identify root causes. Instead of tracking disparate data, you can spend your time correlating events and errors to gain deep insights into the causes of performance bottlenecks. The tool is intended to give a clearer view of some of the problems experienced by sites to help you identify potential root causes of problems and keep sites performing optimally. This includes identifying if and what [!DNL bots] are causing site problems.
 
 ## Who is this guide for?
 
