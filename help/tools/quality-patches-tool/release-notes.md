@@ -113,7 +113,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **MDVA-42689** (*for Adobe Commerce and Magento Open Source `>=2.3.0 <2.4.4`*) - Fixes the issue where Adobe Commerce throws an *Integrity Constraint Violation* error while updating product categories during import.
 * **MDVA-41229** (*for Adobe Commerce and Magento Open Source `>=2.3.0 <2.4.5`*) - Fixes the issue where images available on the backend do not display on the frontend after configurable products import.
 * **MDVA-43731** (*for Adobe Commerce and Magento Open Source `>=2.4.3 <2.4.4`*) - Fixes the issue where *Search Synonyms* no longer work when value is added in *Minimum Terms to Match*.
-* **MDVA-43232** (*for Adobe Commerce and Magento Open Source `>=2.3.4 <2.4.5`*) - Fixes the issue where sorting products in visual merchandiser by Special Price To Bottom/Top causes an error while saving the category.
+* **MDVA-43232** (*for Adobe Commerce and Magento Open Source `>=2.3.4 <2.4.5`*) - Fixes the issue where sorting products in [!DNL Visual Merchandiser] by Special Price To Bottom/Top causes an error while saving the category.
 * **MDVA-43726** (*for Adobe Commerce and Magento Open Source `>=2.3.3 <2.4.3`*) - Fixes the issue where the Catalog price rule based on store-level attribute match fails to apply after partial reindex.
 * Updated patches: MDVA-36464, MDVA-37478, MDVA-38608.
 * Added patches metadata for the [!DNL Site-Wide Analysis Tool].
