@@ -33,25 +33,25 @@ When an index is created, there are several shards created with that index. By d
 
 ![Index health](../../assets/tools/index-health.jpg)
 
-This frame will show the index name and the index color status count. Scrolling down the table, you will see the same index name with Yellow and Red color statuses. The number that follows the 27 index name is the count of the status color. If it is zero, there were no instances of the index being in that color status during these selected timeframes.
+This frame shows the index name and the index color status count. Scrolling down the table, you will see the same index name with Yellow and Red color statuses. The number that follows the 27 index name is the count of the status color. If it is zero, there were no instances of the index being in that color status during the selected timeframes.
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
 ![Elasticsearch Status](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-The **[!UICONTROL Elasticsearch Status by node information]** frame shows the [!DNL Elasticsearch] cluster status by color, by node. This will help indicate which node in the [!DNL Elasticsearch] cluster is returning what status during the selected timeframe.
+The **[!UICONTROL Elasticsearch Status by node information]** frame shows the [!DNL Elasticsearch] cluster status by color and by node. This helps indicate which node in the [!DNL Elasticsearch] cluster is returning what status during the selected timeframe.
 
 ## [!UICONTROL Elasticsearch index information]
 
 ![Elasticsearch index information](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-This **[!UICONTROL Elasticsearch index information]** table shows the index name, what node it is on, the number of indexed documents, the index health, and the index size in MB at a particular time.
+The **[!UICONTROL Elasticsearch index information]** table shows the index name, what node it is on, the number of indexed documents, the index health, and the index size in MB at a particular time.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
 ![Elasticsearch process CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-The **[!UICONTROL Elasticsearch process CPU %]** frame shows the process CPU% by the [!DNL Elasticsearch] process over the selected timeframe.
+The **[!UICONTROL Elasticsearch process CPU %]** frame shows the process CPU percent by the [!DNL Elasticsearch] process over the selected timeframe.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
@@ -75,7 +75,7 @@ The **[!UICONTROL Elasticsearch Index Size]** frame indicates the index name and
 
 ![Elasticsearch Errors](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
-The **[!UICONTROL Elasticsearch Errors]** frame will display errors with [!DNL Elasticsearch] like running out of space, switching from Yellow to Red status, when all shards fail, when there are parameter issues with searches, version errors and when all nodes are unavailable.
+The **[!UICONTROL Elasticsearch Errors]** frame displays errors with [!DNL Elasticsearch] like running out of space, switching from Yellow to Red status, when all shards fail, when there are parameter issues with searches, version errors and when all nodes are unavailable.
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 
