@@ -76,7 +76,7 @@ Generally, the trade-off with lock waiting is acceptable from the performance si
 
 Stale cache only works with a L2 cache. With a stale cache, you could send an outdated cache, while a new one is generating in a parallel process. To enable stale cache, add `'use_stale_cache' => true` to top config of the L2 cache.
 
-We recommend enabling the `use_stale_cache` option only for cache types that benefit from it the most, including:
+Adobe recommends enabling the `use_stale_cache` option only for cache types that benefit from it the most, including:
 
 -  `block_html`
 -  `config_integration_api`
