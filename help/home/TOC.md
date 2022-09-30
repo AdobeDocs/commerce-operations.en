@@ -6,7 +6,7 @@ user-guide-description: Learn about the operational aspects of maintaining your 
 # Adobe Commerce Operational Guides {#operational-guides}
 
 - [Home](home.md)
-- [Release Information](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
+- [Release Information](https://experienceleague.adobe.com/docs/commerce-operations/release/roadmap.html)
 - [Installation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
 - [Configuration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [Data Migration](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)
