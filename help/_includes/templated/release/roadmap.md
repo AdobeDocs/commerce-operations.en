@@ -1,6 +1,6 @@
 # Roadmap
 
-<table>
+<table style="table-layout:auto">
   <tr>
     <th>In progress</th>
     <th>Planned</th>

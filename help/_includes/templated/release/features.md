@@ -1,14 +1,14 @@
 # Commerce features
 
-<table>
+<table style="table-layout:auto">
   <tbody>
-    <tr>
-      <th>Maximizing conversion & sales</th>
-      <th>2.0</th>
-      <th>2.1</th>
-      <th>2.2</th>
-      <th>2.3</th>
-      <th>2.4</th>
+    <tr style="background:lightgray;">
+      <th style="border-style:none;">Maximizing conversion & sales</th>
+      <th style="border-style:none;">2.0</th>
+      <th style="border-style:none;">2.1</th>
+      <th style="border-style:none;">2.2</th>
+      <th style="border-style:none;">2.3</th>
+      <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
       <td>Seller Assisted Shopping</td>
@@ -100,13 +100,13 @@
     </tr>
   </tbody>
   <tbody>
-    <tr>
-      <th>Smarter, faster operations</th>
-      <th>2.0</th>
-      <th>2.1</th>
-      <th>2.2</th>
-      <th>2.3</th>
-      <th>2.4</th>
+    <tr style="background:lightgray;">
+      <th style="border-style:none;">Smarter, faster operations</th>
+      <th style="border-style:none;">2.0</th>
+      <th style="border-style:none;">2.1</th>
+      <th style="border-style:none;">2.2</th>
+      <th style="border-style:none;">2.3</th>
+      <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
       <td>Enhanced Media Gallery & Asset Management</td>
@@ -174,13 +174,13 @@
     </tr>
   </tbody>
   <tbody>
-    <tr>
-      <th>Platform, performance, and security enhancements</th>
-      <th>2.0</th>
-      <th>2.1</th>
-      <th>2.2</th>
-      <th>2.3</th>
-      <th>2.4</th>
+    <tr style="background:lightgray;">
+      <th style="border-style:none;">Platform, performance, and security enhancements</th>
+      <th style="border-style:none;">2.0</th>
+      <th style="border-style:none;">2.1</th>
+      <th style="border-style:none;">2.2</th>
+      <th style="border-style:none;">2.3</th>
+      <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
       <td>Site-wide Analysis Tool</td>

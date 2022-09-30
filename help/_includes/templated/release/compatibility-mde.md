@@ -6,7 +6,7 @@
 
 **Not supported** - version that is not compatible with a Commerce or Magento release.
 
-<table>
+<table style="table-layout:auto">
   <thead>
     <tr>
       <th>&nbsp;</th>
