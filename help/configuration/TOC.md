@@ -38,7 +38,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
     - [Varnish overview](cache/config-varnish.md)
     - [Install Varnish](cache/config-varnish-install.md)
     - [Web server](cache/config-varnish-server.md)
-    - [Configure Commerce application](cache/config-varnish-magento.md)
+    - [Configure Commerce application](cache/configure-varnish-commerce.md)
     - [Advanced Varnish configuration](cache/config-varnish-advanced.md)
     - [Cache clearing](cache/use-varnish-cache.md)
     - [Cache clearing multiple Varnish instances](cache/use-multiple-varnish-cache.md)
