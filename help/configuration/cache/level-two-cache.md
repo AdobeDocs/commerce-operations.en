@@ -70,8 +70,81 @@ Adobe recommends the use of the [`cache preload`](redis-pg-cache.md#redis-preloa
 
 ## Stale cache options
 
-Starting with [!DNL Commerce] 2.4, the `stale_cache` option can improve performance in some specific cases.
+Starting with [!DNL Commerce] 2.4, the `use_stale_cache` option can improve performance in some specific cases.
 
 Generally, the trade-off with lock waiting is acceptable from the performance side, but the larger the number of Blocks or Cache the merchant has, the more time is spent waiting for locks. In some scenarios, you can wait a **numbers of keys** \* **lookup timeout** amount of time for the process. In some rare cases, the merchant can have hundreds of keys in the `Block/Config` cache, so even small lookup timeout for lock may cost seconds.
 
 Stale cache only works with a L2 cache. With a stale cache, you could send an outdated cache, while a new one is generating in a parallel process. To enable stale cache, add `'use_stale_cache' => true` to top config of the L2 cache.
+
+Adobe recommends enabling the `use_stale_cache` option only for cache types that benefit from it the most, including:
+
+-  `block_html`
+-  `config_integration_api`
+-  `config_integration`
+-  `full_page`
+-  `layout`
+-  `reflection`
+-  `translate`
+
+The following code shows an example configuration:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => false,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ],
+         'stale_cache_enabled' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => true,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ]
+    ],
+    'type' => [
+        'default' => ['frontend' => 'default'],
+        'layout' => ['frontend' => 'stale_cache_enabled'],
+        'block_html' => ['frontend' => 'stale_cache_enabled'],
+        'reflection' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+        'full_page' => ['frontend' => 'stale_cache_enabled'],
+        'translate' => ['frontend' => 'stale_cache_enabled']
+    ],
+],
+```
