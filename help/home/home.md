@@ -53,11 +53,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
        <img alt="Command-line tools reference" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>Command-Line Tools Reference</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Command-Line Tools Reference</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -111,5 +111,6 @@ Learn about new documentation and significant updates to existing documentation.
 
 | Change                                                                                                                                 | Type         |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Moved the [On-premises Installation Guide](../installation/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) to Experience League. | New |
-| Moved the [Data Migration Guide](../tools/data-migration-tool/how-migration-works.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) to Experience League. | New |
+| Moved the [Command-line Tools Reference](../reference/commerce.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | New |
+| Moved the [On-premises Installation Guide](../installation/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | New |
+| Moved the [Data Migration Guide](../tools/data-migration-tool/how-migration-works.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | New |

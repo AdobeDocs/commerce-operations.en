@@ -13,7 +13,7 @@ user-guide-description: Learn about the operational aspects of maintaining your 
 - [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
 - [Performance Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
 - [Tools](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [Command-Line Tools](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html)
+- [Command-Line Tools](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
 - [Implementation Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [Operational Playbook](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [Commerce at Scale](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
