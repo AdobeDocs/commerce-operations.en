@@ -1,6 +1,6 @@
 ---
 title: "The [!UICONTROL PHP] tab"
-description: Learn about the [!UICONTROL PHP] tab of [!DNS Observation for Adobe Commerce].
+description: Learn about the [!UICONTROL PHP] tab of [!DNL Observation for Adobe Commerce].
 ---
 
 # The [!UICONTROL PHP] tab
@@ -17,7 +17,7 @@ The **[!UICONTROL PHP active process details]** frame shows the PHP processes, i
 
 ![PHP process load](../../assets/tools/php-process-load.jpg)
 
-This frame shows the CPU load from PHP-FPM processes across the selected timeframe.
+The **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** frame shows the CPU load from PHP-FPM processes across the selected timeframe.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -29,7 +29,7 @@ The **[!UICONTROL PHP Memory detail]** frame shows the memory usage of PHP proce
 
 ![PHP CPU Utilization](../../assets/tools/php-cpu-utilization.jpg)
 
-The **[!UICONTROL PHP CPU Utilization]** frame shows the CPU % utilization of PHP processes across the selected timeframe.
+The **[!UICONTROL PHP CPU Utilization]** frame shows the CPU percentage utilization of PHP processes across the selected timeframe.
 
 ## [!UICONTROL PHP Process states]
 
@@ -100,7 +100,7 @@ The **[!UICONTROL Database Errors]** frame shows database errors across the sele
 * '%1062 \[ERROR\] InnoDB:%') as 'sql_1062_e'
 * '%[Note] WSREP: Flushing memory map to disk...%') as 'mem_map_flush'
 * '%Internal MariaDB error code: 1146%') as 'sql_1146'
-* '%Internal MariaDB error code: 1062%') as 'sql_1062' • '%1062 [Warning] InnoDB:%') as 'sql_1062_w'
+* '%Internal MariaDB error code: 1062%') as 'sql_1062' * '%1062 [Warning] InnoDB:%') as 'sql_1062_w'
 * '%Internal MariaDB error code: 1064%') as 'sql_1064'
 * '%InnoDB: Assertion failure in file%') as 'assertion_err'
 * '%mysqld_safe Number of processes running now: 0%') as 'mysql_oom'
