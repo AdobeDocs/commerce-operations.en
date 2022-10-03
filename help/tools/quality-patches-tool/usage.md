@@ -8,17 +8,17 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 
 >[!INFO]
-> 
->See [Apply individual patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) to review a full list of released patches.
+>
+>See [Apply individual patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) to review a full list of released patches.
 
 >[!WARNING]
 >
 >It is not recommended to use the [!DNL Quality Patches Tool] to apply large numbers of patches because it increases the complexity of your code and makes upgrading to a new version more difficult.
 
-## Install 
+## Install
 
 >[!INFO]
-> 
+>
 >If it is not already installed, you must install [[!DNL Git]](https://github.com/git-guides/install-git) or [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) before installing the [!DNL Quality Patches Tool]. Add the `magento/quality-patches` Composer package to your `composer.json` file:
 
 ```bash
@@ -41,8 +41,8 @@ You will see output similar to the following:
 | MCLOUD-5650 | Hold deployment config after reading from file | Optional | Not applied | Affected components:<br> - magento/framework |
 | MCLOUD-5684 | Pagination Not working - product_list_limit=all | Optional | Not applied | Affected components: - magento/module-elasticsearch |
 | MCLOUD-5837  | Fix load balancer issue | Deprecated | Applied |Recommended replacement: MC-1 <br> Affected components: - magento/framework |
-| BUNDLE-2554  | Set Payment info bug | Optional |  Not applied|  Affected components: <br>- amzn/amazon-pay-module | 
-| MC-1    | Fixes issue 1 | Optional | Applied |  Affected components: <br> - magento/module-cms | 
+| BUNDLE-2554  | Set Payment info bug | Optional |  Not applied|  Affected components: <br>- amzn/amazon-pay-module |
+| MC-1    | Fixes issue 1 | Optional | Applied |  Affected components: <br> - magento/module-cms |
 | MC-2  | Fixes issue 2  | Optional | Not applied |  Affected components: <br> - magento/module-cms |
 | MC-3  | Fixes issue 3  | Optional  | Not applied | Required patches:<br> - MC-2 <br>Affected components: <br>- magento/module-cms |  
 |  MC-3-V2   | Updated fix for issue 3, replaces MC-3 patch  | Optional | N/A  | Affected components:  <br>- magento/module-cms  |  
@@ -66,7 +66,7 @@ The status table includes:
     -  `Recommended replacement` — The patch that is a recommended replacement for a deprecated patch.
 
 >[!INFO]
-> 
+>
 >After upgrading to a new version of Adobe Commerce or Magento Open Source, you must re-apply patches if the patches are not included in the new version. See [Re-apply patches after an upgrade](#re-apply-patches-after-an-upgrade).
 
 ## Apply individual patches {#apply-individual-patches}
