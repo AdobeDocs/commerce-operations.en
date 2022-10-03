@@ -192,7 +192,7 @@ The **[!UICONTROL DB Statistics]** frame displays deletes, writes, rows read, up
 
 ![Database Errors](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-The **[!UICONTROL Database Errors]** frame shows a variety of database [warnings and errors](https://mariadb.com/kb/en/mariadb-error-codes/).
+The **[!UICONTROL Database Errors]** frame shows a variety of database [warnings and errors](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * '%Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size%' as 'temp_tbl_buff_pool'
 * '%\[ERROR\] WSREP: rbr write fail%') as 'rbr_write_fail'
