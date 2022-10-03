@@ -38,7 +38,7 @@ The **[!UICONTROL MySQL shutdowns and starts]** frame detects when there is a sh
 
 ![Galera log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
-The **[!UICONTROL Galera log]** frame shows counts of particular signals from the MySQL logs concerning [!DNL Galera] nodes, their states, and the state changes of the [!DNL Galera] cluster.
+The **[!UICONTROL Galera log]** frame shows the counts of particular signals from the MySQL logs concerning [!DNL Galera] nodes, their states, and the state changes of the [!DNL Galera] cluster.
 
 * '%1047 WSREP has not yet prepared node for application use%') as 'node_not_prep_for_use'
 * '%\[ERROR\] WSREP: Failed to read from: wsrep_sst_xtrabackup-v2%') as 'xtrabackup_read_fail'
@@ -96,7 +96,7 @@ The **[!UICONTROL Cron_schedule table updates]** frame displays the maximum dura
 
 ![Slow Query Traces](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
-The **[!UICONTROL Slow Query Traces]** frame displays the table and request type where slow query traces exist. A slow query trace is created for query transactions that take longer than 5 seconds. Of importance for this frame are the update queries. If a table is being updated by `UPDATE`, `DELETE`, and `INSERT` statements, they may lock tables for a period of time.
+The **[!UICONTROL Slow Query Traces]** frame displays the table and request type where slow query traces exist. A slow query trace is created for query transactions that take longer than five seconds. Of importance for this frame are the update queries. If a table is being updated by `UPDATE`, `DELETE`, and `INSERT` statements, they may lock tables for a period of time.
 
 Even `SELECT` statements may lock rows if used with FOR UPDATE.
 
@@ -108,7 +108,7 @@ Even `SELECT` statements may lock rows if used with FOR UPDATE.
 
 ![Cron table change](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-The **[!UICONTROL Cron table change]** frame is looking for "could not acquire lock for cron job:" error messages, along with a specific PHP memory error and locks involving the `cron_schedule` table. If the `cron_schedule` table is locked (for example, by a `DELETE` query being run against it), it will block other crons from running.
+The **[!UICONTROL Cron table change]** frame looks for "could not acquire lock for cron job:" error messages, along with a specific PHP memory error and locks involving the `cron_schedule` table. If the `cron_schedule` table is locked (for example, by a `DELETE` query being run against it), it will block other crons from running.
 
 ## [!UICONTROL Deadlocks]
 
