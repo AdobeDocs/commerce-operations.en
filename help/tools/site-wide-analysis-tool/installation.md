@@ -58,7 +58,7 @@ Your on-premises infrastructure must meet the following requirements before inst
 
   - `nice`
 
-  - `grep`
+  - `egrep`
 
 ## [!DNL Commerce Services Connector]
 
@@ -181,7 +181,7 @@ If you do not want to use our [shell script](https://github.com/magento-swat/ins
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. Inpack the launcher archive.
+   1. Unpack the launcher archive.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
