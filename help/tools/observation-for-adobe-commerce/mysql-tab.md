@@ -114,7 +114,7 @@ The **[!UICONTROL Cron table change]** frame looks for "could not acquire lock f
 
 ![Deadlocks](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
-The **[!UICONTROL Deadlocks]** frame is looking at the following strings parsed from the MySQL logs.
+The **[!UICONTROL Deadlocks]** frame looks at the following strings parsed from the MySQL logs:
 
 * '%PHP Fatal error: Allowed memory size of%') as php_mem_error
 * '%get lock; try restarting transaction, query was: DELETE FROM \`cron_schedule%') as cron_sched_lock_del
