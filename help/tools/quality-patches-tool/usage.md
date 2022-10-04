@@ -11,7 +11,7 @@ Watch this [technical video](https://experienceleague.adobe.com/docs/commerce-le
 
 >[!INFO]
 >
->See [Apply individual patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) to review a full list of released patches.
+>See [Apply individual patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) to review a full list of released patches.
 
 >[!WARNING]
 >
