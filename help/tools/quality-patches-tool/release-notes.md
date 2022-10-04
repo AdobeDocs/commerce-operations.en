@@ -8,7 +8,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 >[!INFO]
 >
->See [Apply patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in the Software Update Guide to review a full list of released patches.
+>See [Apply patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the Software Update Guide to review a full list of released patches.
 
 >[!INFO]
 >
@@ -536,4 +536,3 @@ Minor fixes for patch versions
 * **MDVA-30052** (*for Adobe Commerce >=2.3.2-p2 <2.3.5*) - Fixes the issue with private content (local storage) not being populated correctly, which resulted in performance problems.
 * **MDVA-30131** (*for Adobe Commerce >=2.3.4 <2.3.6 || 2.4.0*) - Fixes the issue with layered navigation, where the *No* value for boolean type product attributes was not included in layered navigation if [!DNL Elasticsearch] was used as a search engine.
 * **MDVA-35514** (*for Adobe Commerce >=2.4.0 <2.4.1*) - Fixes the issue with creating a shipping label and adding ordered products to a package in the Create Packages modal window.
-
