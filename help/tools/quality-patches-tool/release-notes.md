@@ -14,6 +14,21 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.21 {#v1-1-21}
+
+* **ACSD-46809** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where a user gets an error when assigning a large number of product sources.
+* **ACSD-46856** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Improves performance updating tier prices via System > Configuration > Import > Advanced Pricing.
+* **ACSD-46541** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.4) - Fixes the issue where an admin user cannot create a credit memo if an order item is deleted.
+* **ACSD-46581** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the estimated tax total is not updated after selecting a country in the shopping cart.
+* **ACSD-46618** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the product list widget shows incorrect cached prices for a logged-in customer.
+* **ACSD-46674** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where custom options of an image type are displayed as HTML in customer emails.
+* **ACSD-46988** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where the GraphQL 'currency' API Request returns NULL values for a custom currency.
+* **ACSD-47076** (for Adobe Commerce and Magento Open Source >=2.4.1 <2.4.5) -  Fixes the issue where Vimeo videos cannot be played on the storefront.
+* **ACSD-45071** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.4) - Fixes the issue where the default source is added to the product during import.
+* **AC-3023** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Update DHL scheme to latest version 10.0.
+* Updated patches: MDVA-42584.
+* Replaced patches: MDVA-36572, ACSD-45241.
+
 ## v1.1.20 {#v1-1-20}
 
 * **ACSD-46520** (*for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.5*) - Fixes the issue where a user gets an incorrect order status when refunded using the store credit.
