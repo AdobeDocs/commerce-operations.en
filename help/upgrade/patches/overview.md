@@ -37,7 +37,7 @@ You can find hotfixes in the [Security Center](https://magento.com/security/patc
 
 Individual patches contain low-impact quality fixes for a specific issue. These fixes are applied to the most recently supported minor version (for example, 2.4.x), but could be missing from the previous supported minor version (for example, 2.3.x). Adobe releases individual patches as needed.
 
-Use the [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} to apply individual patches.
+Use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} to apply individual patches.
 
 >[!NOTE]
 >
