@@ -54,31 +54,31 @@ Magento 1 stores customer information in the `customer_entity` and `customer_add
 
 The following columns in the `customer_entity`table contain customer information:
 
-Column | Data type
---- | ---
-`email` | varchar(255)
+| Column | Data type |
+| --- | --- |
+| `email` | varchar(255) |
 
 These tables reference `customer_entity` and can contain custom customer attributes:
 
-Table | Column | Data type
---- | --- | ---
-`customer_entity_datetime` | `value` | datetime
-`customer_entity_decimal` | `value` | decimal(12,4)
-`customer_entity_int` | `value` | int(11)
-`customer_entity_text` | `value` | text
-`customer_entity_varchar` | `value` | varchar(255)
+| Table | Column | Data type |
+| --- | --- | --- |
+| `customer_entity_datetime` | `value` | datetime |
+| `customer_entity_decimal` | `value` | decimal(12,4) |
+| `customer_entity_int` | `value` | int(11) |
+| `customer_entity_text` | `value` | text |
+| `customer_entity_varchar` | `value` | varchar(255) |
 
 #### `customer_address_entity` and reference tables
 
 The following tables reference `customer_address_entity` and can contain custom customer attributes:
 
-Table | Column | Data type
---- | --- | ---
-`customer_address_entity_datetime` | `value` | datetime
-`customer_address_entity_decimal` | `value` | decimal(12,4)
-`customer_address_entity_int` | `value` | int(11)
-`customer_address_entity_text` | `value` | text
-`customer_address_entity_varchar` | `value` | varchar(255)
+| Table | Column | Data type |
+| --- | --- | --- |
+| `customer_address_entity_datetime` | `value` | datetime |
+| `customer_address_entity_decimal` | `value` | decimal(12,4) |
+| `customer_address_entity_int` | `value` | int(11) |
+| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_varchar` | `value` | varchar(255) |
 
 ### Order data
 
@@ -88,66 +88,66 @@ The `sales_flat_order` and related tables contain the customer's name, billing a
 
 The following columns in the `sales_order` table contain customer information:
 
-Column | Data type
---- | ---
-`customer_id` | int(10)
-`customer_email` | varchar(128)
-`customer_firstname` | varchar(128)
-`customer_gender` | int(11)
-`customer_lastname` | varchar(128)
-`customer_middlename` | varchar(128)
-`customer_prefix` | varchar(32)
-`customer_suffix` | varchar(32)
-`customer_taxvat` | varchar(32)
-`remote_ip` | varchar(32)
+| Column | Data type |
+| --- | --- |
+| `customer_id` | int(10) |
+| `customer_email` | varchar(128) |
+| `customer_firstname` | varchar(128) |
+| `customer_gender` | int(11) |
+| `customer_lastname` | varchar(128) |
+| `customer_middlename` | varchar(128) |
+| `customer_prefix` | varchar(32) |
+| `customer_suffix` | varchar(32) |
+| `customer_taxvat` | varchar(32) |
+| `remote_ip` | varchar(32) |
 
 #### `sales_flat_order_address` table
 
 The `sales_flat_order_address` table contains the customer's address.
 
-Column | Data type
---- | ---
-`customer_id` | int(10)
-`fax` | varchar(255)
-`region` | varchar(255)
-`postcode` | varchar(255)
-`lastname` | varchar(255)
-`street` | varchar(255)
-`city` | varchar(255)
-`email` | varchar(255)
-`telephone` | varchar(255)
-`firstname` | varchar(255)
-`prefix` | varchar(255)
-`suffix` | varchar(255)
-`middlename` | varchar(255)
-`company` | varchar(255)
-`vat_id`| text
+| Column | Data type |
+| --- | --- |
+| `customer_id` | int(10) |
+| `fax` | varchar(255) |
+| `region` | varchar(255) |
+| `postcode` | varchar(255) |
+| `lastname` | varchar(255) |
+| `street` | varchar(255) |
+| `city` | varchar(255) |
+| `email` | varchar(255) |
+| `telephone` | varchar(255) |
+| `firstname` | varchar(255) |
+| `prefix` | varchar(255) |
+| `suffix` | varchar(255) |
+| `middlename` | varchar(255) |
+| `company` | varchar(255) |
+| `vat_id`| text |
 
 #### `sales_flat_order_grid` table
 
 The following columns in the `sales_flat_order_grid` table contain customer information:
 
-Column | Data type
---- | ---
-`customer_id` | int(10)
-`shipping_name` | varchar(255)
-`billing_name` | varchar(255)
+| Column | Data type |
+| --- | --- |
+| `customer_id` | int(10) |
+| `shipping_name` | varchar(255) |
+| `billing_name` | varchar(255) |
 
 #### `sales_flat_order_payment` table
 
 The following columns in the `sales_flat_order_payment` table contain customer information:
 
-Column | Data type
---- | ---
-`cc_exp_month` | varchar(255)
-`cc_ss_start_year` | varchar(255)
-`echeck_bank_name` | varchar(128)
-`echeck_type` | varchar(255)
-`cc_ss_start_month` | varchar(255)
-`cc_owner` | varchar(255)
-`cc_exp_year` | varchar(255)
-`echeck_routing_number` | varchar(255)
-`echeck_account_name` | varchar(255)
+| Column | Data type |
+| --- | --- |
+| `cc_exp_month` | varchar(255) |
+| `cc_ss_start_year` | varchar(255) |
+| `echeck_bank_name` | varchar(128) |
+| `echeck_type` | varchar(255) |
+| `cc_ss_start_month` | varchar(255) |
+| `cc_owner` | varchar(255) |
+| `cc_exp_year` | varchar(255) |
+| `echeck_routing_number` | varchar(255) |
+| `echeck_account_name` | varchar(255) |
 
 ### Quote data
 
@@ -157,121 +157,121 @@ Quotes contain a customer's name, email, address, and related information.
 
 The following columns in the `sales_flat_quote` table contain customer information:
 
-Column | Data type
---- | ---
-`customer_id` | int(10)
-`customer_tax_class_id` | int(10)
-`customer_group_id` | int(10)
-`customer_email` | varchar(255)
-`customer_prefix` | varchar(40)
-`customer_firstname` | varchar(255)
-`customer_middlename` | varchar(40)
-`customer_lastname` | varchar(255)
-`customer_suffix` | varchar(40)
-`customer_dob` | datetime
-`customer_note` | varchar(255)
-`remote_ip` | varchar(255)
-`customer_gender` | varchar(255)
+| Column | Data type |
+| --- | --- |
+| `customer_id` | int(10) |
+| `customer_tax_class_id` | int(10) |
+| `customer_group_id` | int(10) |
+| `customer_email` | varchar(255) |
+| `customer_prefix` | varchar(40) |
+| `customer_firstname` | varchar(255) |
+| `customer_middlename` | varchar(40) |
+| `customer_lastname` | varchar(255) |
+| `customer_suffix` | varchar(40) |
+| `customer_dob` | datetime |
+| `customer_note` | varchar(255) |
+| `remote_ip` | varchar(255) |
+| `customer_gender` | varchar(255) |
 
 #### `sales_flat_quote_address` table
 
 The following columns in the `sales_flat_quote_address` table contain customer information:
 
-Column | Data type
---- | ---
-`email` | varchar(255)
-`prefix` | varchar(40)
-`firstname` | varchar(255)
-`middlename` | varchar(40)
-`lastname` | varchar(255)
-`suffix` | varchar(40)
-`company` | varchar(255)
-`street` | varchar(255)
-`city` | varchar(255)
-`region` | varchar(255)
-`postcode` | varchar(255)
-`fax` | varchar(255)
+| Column | Data type |
+| --- | --- |
+| `email` | varchar(255) |
+| `prefix` | varchar(40) |
+| `firstname` | varchar(255) |
+| `middlename` | varchar(40) |
+| `lastname` | varchar(255) |
+| `suffix` | varchar(40) |
+| `company` | varchar(255) |
+| `street` | varchar(255) |
+| `city` | varchar(255) |
+| `region` | varchar(255) |
+| `postcode` | varchar(255) |
+| `fax` | varchar(255) |
 
 #### `sales_flat_quote_payment` table
 
 The `sales_flat_quote_payment` table includes credit card information and other transactional information.
 
-Column | Data type
---- | ---
-`cc_last_4` | varchar(255)
-`cc_owner` | varchar(255)
-`cc_exp_month` | smallint(5)
-`cc_exp_year` | smallint(5)
-`cc_ss_owner` | varchar(255)
-`cc_ss_start_month` | smallint(5)
-`cc_ss_start_year` | smallint(5)
+| Column | Data type |
+| --- | --- |
+| `cc_last_4` | varchar(255) |
+| `cc_owner` | varchar(255) |
+| `cc_exp_month` | smallint(5) |
+| `cc_exp_year` | smallint(5) |
+| `cc_ss_owner` | varchar(255) |
+| `cc_ss_start_month` | smallint(5) |
+| `cc_ss_start_year` | smallint(5) |
 
 ### Archive data
 
 The following tables and columns contain customer information:
 
-Table | Column | Data type
---- | --- | ---
-`enterprise_sales_creditmemo_grid_archive` | `billing_name` | varchar(255)
-`enterprise_sales_invoice_grid_archive` | `billing_name` | varchar(255)
-`enterprise_sales_order_grid_archive` | `billing_name` | varchar(255)
-`enterprise_sales_order_grid_archive` | `customer_id` | int(10)
-`enterprise_sales_order_grid_archive` | `shipping_name` | varchar(255)
-`enterprise_sales_shipment_grid_archive` | `shipping_name` | varchar(255)
+| Table | Column | Data type |
+| --- | --- | --- |
+| `enterprise_sales_creditmemo_grid_archive` | `billing_name` | varchar(255) |
+| `enterprise_sales_invoice_grid_archive` | `billing_name` | varchar(255) |
+| `enterprise_sales_order_grid_archive` | `billing_name` | varchar(255) |
+| `enterprise_sales_order_grid_archive` | `customer_id` | int(10) |
+| `enterprise_sales_order_grid_archive` | `shipping_name` | varchar(255) |
+| `enterprise_sales_shipment_grid_archive` | `shipping_name` | varchar(255) |
 
 ### Sales data
 
 The following tables and columns contain customer information:
 
-Table | Column | Data type
---- | --- | ---
-`sales_flat_creditmemo_grid` | `billing_name` | varchar(255)
-`sales_flat_invoice_grid` | `billing_name` | varchar(255)
+| Table | Column | Data type |
+| --- | --- | --- |
+| `sales_flat_creditmemo_grid` | `billing_name` | varchar(255) |
+| `sales_flat_invoice_grid` | `billing_name` | varchar(255) |
 
 ### RMA data
 
 The following RMA tables and columns contain customer information:
 
-Table | Column | Data type
---- | --- | ---
-`enterprise_rma` | `customer_custom_email` | varchar(255)
-`enterprise_rma_grid` | `customer_id` | int(10)
-`enterprise_rma_grid` | `customer_name` | varchar(255)
+| Table | Column | Data type |
+| --- | --- | --- |
+| `enterprise_rma` | `customer_custom_email` | varchar(255) |
+| `enterprise_rma_grid` | `customer_id` | int(10) |
+| `enterprise_rma_grid` | `customer_name` | varchar(255) |
 
 ### Miscellaneous data
 
 The following tables and columns contain customer information:
 
-Table | Column | Data type
---- | --- | ---
-`core_email_queue_recipients` | `recipient_email` | varchar(128)
-`core_email_queue_recipients` | `recipient_name` | varchar(255)
-`customer_flowpassword` | `email` | varchar(255)
-`customer_flowpassword` | `ip` | varchar(50)
-`enterprise_giftregistry_person` | `email` | varchar(150)
-`enterprise_giftregistry_person` | `firstname` | varchar(100)
-`enterprise_giftregistry_person` | `lastname` | varchar(100)
-`enterprise_giftregistry_person` | `middlename` | text
-`enterprise_invitation` | `customer_id` | int(10)
-`enterprise_invitation` | `email` | varchar(255)
-`enterprise_invitation` | `referral_id` | int(10)
-`enterprise_reminder_rule_coupon` | `customer_id` | int(10)
-`enterprise_reminder_rule_coupon` | `emails_failed` | smallint(5)
-`enterprise_scheduled_operations` | `email_receiver` | varchar(150)
-`enterprise_scheduled_operations` | `email_sender` | varchar(150)
-`gift_message` | `customer_id` | int(10)
-`gift_message` | `recipient` | varchar(255)
-`gift_message` | `sender` | varchar(255)
-`newsletter_subscriber` | `customer_id` | int(10)
-`newsletter_subscriber` | `subscriber_email` | varchar(150)
-`persistent_session` | `customer_id` | int(10)
-`persistent_session` | `info` | text
-`poll_vote` | `customer_id` | int(10)
-`poll_vote` | `ip_address` | varbinary(16)
-`rating_option_vote` | `customer_id` | int(10)
-`rating_option_vote` | `remote_ip` | varchar(50)
-`rating_option_vote` | `remote_ip_long` | varbinary(516)
-`send_friend_log` | `ip` | varbinary(16)
+| Table | Column | Data type |
+| --- | --- | --- |
+| `core_email_queue_recipients` | `recipient_email` | varchar(128) |
+| `core_email_queue_recipients` | `recipient_name` | varchar(255) |
+| `customer_flowpassword` | `email` | varchar(255) |
+| `customer_flowpassword` | `ip` | varchar(50) |
+| `enterprise_giftregistry_person` | `email` | varchar(150) |
+| `enterprise_giftregistry_person` | `firstname` | varchar(100) |
+| `enterprise_giftregistry_person` | `lastname` | varchar(100) |
+| `enterprise_giftregistry_person` | `middlename` | text |
+| `enterprise_invitation` | `customer_id` | int(10) |
+| `enterprise_invitation` | `email` | varchar(255) |
+| `enterprise_invitation` | `referral_id` | int(10) |
+| `enterprise_reminder_rule_coupon` | `customer_id` | int(10) |
+| `enterprise_reminder_rule_coupon` | `emails_failed` | smallint(5) |
+| `enterprise_scheduled_operations` | `email_receiver` | varchar(150) |
+| `enterprise_scheduled_operations` | `email_sender` | varchar(150) |
+| `gift_message` | `customer_id` | int(10) |
+| `gift_message` | `recipient` | varchar(255) |
+| `gift_message` | `sender` | varchar(255) |
+| `newsletter_subscriber` | `customer_id` | int(10) |
+| `newsletter_subscriber` | `subscriber_email` | varchar(150) |
+| `persistent_session` | `customer_id` | int(10) |
+| `persistent_session` | `info` | text |
+| `poll_vote` | `customer_id` | int(10) |
+| `poll_vote` | `ip_address` | varbinary(16) |
+| `rating_option_vote` | `customer_id` | int(10) |
+| `rating_option_vote` | `remote_ip` | varchar(50) |
+| `rating_option_vote` | `remote_ip_long` | varbinary(516) |
+| `send_friend_log` | `ip` | varbinary(16) |
 
 Other tables that reference Customer:
 
