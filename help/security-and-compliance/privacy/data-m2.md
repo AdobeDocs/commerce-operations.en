@@ -28,7 +28,7 @@ A user can enter customer, address, and payment information when registering for
 
 Adobe Commerce and Magento Open Source load customer information when the customer logs in and views several different pages, or checks out.
 
-![Frontend data access points](frontend-data-access-points.svg)
+![Frontend data access points](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### Backend data entry points
 

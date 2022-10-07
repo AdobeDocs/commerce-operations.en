@@ -40,7 +40,7 @@ A merchant can enter customer, address, and payment information from the Admin t
 
 Commerce loads customer information when a merchant views several types of grids, clicks on a grid to see detailed information, and performs various other tasks.
 
-![Backend data access points](backend-data-access-points.svg)
+![Backend data access points](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Database entities
 
