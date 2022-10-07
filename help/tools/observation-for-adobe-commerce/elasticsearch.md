@@ -27,7 +27,7 @@ When an index is created, there are several shards created with that index. By d
 
 ![Active Shards in Cluster](../../assets/tools/active-shards-in-cluster.jpg)
 
-**[!UICONTROL Active Shards in Cluster]** frome shows the total number of primary and replica shards in an [!DNL Elasticsearch] cluster.
+The **[!UICONTROL Active Shards in Cluster]** frame shows the total number of primary and replica shards in an [!DNL Elasticsearch] cluster.
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
