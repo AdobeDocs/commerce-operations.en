@@ -5,7 +5,7 @@ description: Learn about the [!UICONTROL PHP] tab of [!DNL Observation for Adobe
 
 # The [!UICONTROL PHP] tab
 
-The **PHP** tab shows PHP process issues to provide deeper analysis into PHP problems.
+The **PHP** tab shows PHP process issues to provide a deeper analysis into PHP problems.
 
 ## [!UICONTROL PHP active process details]
 
@@ -35,7 +35,7 @@ The **[!UICONTROL PHP CPU Utilization]** frame shows the CPU percentage utilizat
 
 ![PHP Process states](../../assets/tools/php-process-states-image-1.jpg)
 
-The **[!UICONTROL PHP Process states]** frame shows the PHP process states across the selected timeframe. It will display when PHP processes terminate and restart. Beware of terminated PHP processes that do not show restarts.
+The **[!UICONTROL PHP Process states]** frame shows the PHP process states across the selected timeframe. It displays when PHP processes terminate and restart. Beware of terminated PHP processes that do not show restarts.
 
 * '%NOTICE: Terminating ...%') as 'php_term'
 * '% NOTICE: exiting, bye-bye!%') as 'php_exit'
