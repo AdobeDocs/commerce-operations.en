@@ -6,7 +6,7 @@ user-guide-description: Learn how Adobe Commerce and Magento Open Source merchan
 # Security and Compliance {#security-and-compliance}
 
 - [Overview](overview.md)
-  - [Content security policy](content-security-policy.md)
+- [Content security policy](content-security-policy.md)
 - Privacy regulations {#privacy}
   - [CCPA](privacy/ccpa.md)
   - [GDPR](privacy/gdpr.md)
