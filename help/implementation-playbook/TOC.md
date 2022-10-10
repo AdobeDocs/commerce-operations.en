@@ -71,5 +71,6 @@ mini-toc-levels: 3
     - [Overview](best-practices/development/overview.md)
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
+    - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
   - Maintenance {#maintenance}
     - [Overview](best-practices/maintenance/overview.md)
