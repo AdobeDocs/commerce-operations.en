@@ -3,6 +3,8 @@ title: XXX best practices
 description: Learn how to ...
 role: Developer
 feature: Best Practices
+hide: yes
+hidetoc: yes
 ---
 
 <!--Metadata values configured in ExL
@@ -11,7 +13,9 @@ Info on writing descriptions and titles: https://experienceleague.adobe.com/docs
 
 Available roles: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/role.yml
 
-Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml -->
+Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml 
+
+Hide values are set to yes for the template so it is not included in ExL. You can remove those tags for best practices topics you add. -->
 
 # xxx best practices
 
