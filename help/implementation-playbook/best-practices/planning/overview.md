@@ -54,7 +54,7 @@ The following sections include best practice information for the planning phase.
 
 ## Project scoping
 
-- [Partner escalation checklist​](https://support.magento.com/hc/en-us/articles/4412743064205%E2%80%8B)
+- [Partner escalations](partner-escalation.md)
 
 ## Purchase extensions
 

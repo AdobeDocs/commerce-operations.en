@@ -1,7 +1,7 @@
 ---
 title: Adobe Security Notification Service
 description: Learn how to get the latest security updates about Adobe products.
-role: Developer
+role: User
 feature: Best Practices
 ---
 

@@ -67,6 +67,7 @@ mini-toc-levels: 3
   - [Overview](best-practices/phases.md)
   - Planning {#planning}
     - [Overview](best-practices/planning/overview.md)
+    - [Partner escalations](best-practices/planning/partner-escalation.md)
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
   - Launch {#launch}
