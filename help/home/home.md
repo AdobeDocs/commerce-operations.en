@@ -11,11 +11,11 @@ Get practical information about concepts, processes, tools, and best practices t
 <table>
 <tr>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
       <img alt="Release Information" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>Release Information</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Release Information</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -111,6 +111,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 | Change                                                                                                                                 | Type         |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Moved the [Release Information Guide](../release/roadmap.md) from [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | New |
 | Moved the [Command-line Tools Reference](../reference/commerce.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | New |
 | Moved the [On-premises Installation Guide](../installation/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | New |
 | Moved the [Data Migration Guide](../tools/data-migration-tool/how-migration-works.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | New |

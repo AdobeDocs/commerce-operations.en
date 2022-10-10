@@ -33,7 +33,7 @@ Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Deb
 >
 >The [PHP installation instructions](prerequisites/php-settings.md) include a step for installing these extensions.
 
-{{$include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/templated/php-extensions.md}}
 
 Refer to [official PHP documentation](https://php.net/manual/en/extensions.php) for installation details.
 

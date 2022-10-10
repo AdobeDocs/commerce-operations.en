@@ -1,0 +1,34 @@
+---
+---
+# Roadmap
+
+{%- assign features = site.data.release.roadmap.features %}
+{%- assign plannedFeatures = features | where: "status", "Planned" | sort: "name" %}
+{%- assign inProgressFeatures = features | where: "status", "inProgress" | sort: "name" %}
+
+<table style="table-layout:auto">
+  <tr>
+    <th>In progress</th>
+    <th>Planned</th>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        {%- for feature in inProgressFeatures %}
+        <tr>
+          <td>{{ feature.name }}</td>
+        </tr>
+        {%- endfor %}
+      </table>
+    </td>
+    <td>
+      <table>
+        {%- for feature in plannedFeatures %}
+        <tr>
+          <td>{{ feature.name }}</td>
+        </tr>
+        {%- endfor %}
+      </table>
+    </td>
+  </tr>
+</table>

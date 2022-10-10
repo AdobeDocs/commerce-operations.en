@@ -86,7 +86,7 @@ Varnish caching works with Commerce using:
 
 - [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) from the Magento 2 GitHub repository
 - `.htaccess` distributed configuration file for Apache provided with Commerce
-- `default.vcl` configuration for Varnish generated using the [Admin](../cache/config-varnish-magento.md)
+- `default.vcl` configuration for Varnish generated using the [Admin](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
