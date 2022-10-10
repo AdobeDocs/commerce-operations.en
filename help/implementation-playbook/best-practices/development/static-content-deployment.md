@@ -3,6 +3,7 @@ title: Static content deployment best practices
 description: Learn how to avoid issues with static content not appearing on your Adobe Commerce or Magento Open Source storefront.
 role: Developer
 feature: Best Practices
+feature-set: Commerce
 ---
 
 # Static content deployment best practices
@@ -26,7 +27,7 @@ To avoid an issue with static content not being available on your website, follo
     * For Adobe Commerce on cloud infrastructure (all versions), see [Cloud deployment process](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html) and [Static content deployment strategies](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html) in our developer documentation.
 
 1. For Adobe Commerce on cloud infrastructure (all versions), ensure that ece-tools is on the newest release. See: [Update ece-tools version](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) in our developer documentation.
-1. For Adobe Commerce on cloud infrastructure (all versions), make sure that static content is deployed during the build phase rather than the deployment phase. See: [Configuration management for store settings - Static content deployment performance](hhttps://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over) in our developer documentation.
+1. For Adobe Commerce on cloud infrastructure (all versions), make sure that static content is deployed during the build phase rather than the deployment phase. See: [Configuration management for store settings - Static content deployment performance](https://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over) in our developer documentation.
 1. Make sure that you do not have long-running cron jobs and kill any long-running cron processes. Long-running cron jobs can take up CPU resources and potentially greatly increase deployment time.
 1. For Adobe Commerce on-premises and Magento Open Source (all versions), check that the `php` process in CLI has access to the `pub/static` directory. Otherwise, you could face an issue where a static content deploy will be unable to write files to that directory. For more information: [File systems access permissions](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) in our developer documentation.
 1. Ensure the `generated` directory is not a shared directory across builds; otherwise, builds could fail randomly. For more information:

@@ -3,6 +3,7 @@ title: Adobe Security Notification Service
 description: Learn how to get the latest security updates about Adobe products.
 role: User
 feature: Best Practices
+feature-set: Commerce
 ---
 
 # Security notification best practices

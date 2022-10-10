@@ -3,6 +3,7 @@ title: Upgrade checklist best practices
 description: Learn how to ...
 role: Leader
 feature: Best Practices
+feature-set: Commerce
 ---
 
 # Upgrade checklist best practices

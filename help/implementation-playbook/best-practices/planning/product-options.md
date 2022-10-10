@@ -3,6 +3,7 @@ title: Product options best practices
 description: Learn how to mitigate Adobe Commerce performance issues by limiting the number of product options.
 role: Admin
 feature: Best Practices
+feature-set: Commerce
 ---
 
 # Product options best practices

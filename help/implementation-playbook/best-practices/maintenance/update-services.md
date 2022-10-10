@@ -3,6 +3,7 @@ title: Update services best practices
 description: Learn how to keep your Adobe Commerce on cloud infrastructure technology stack updated.
 role: Developer
 feature: Best Practices
+feature-set: Commerce
 ---
 
 # Update services best practices
