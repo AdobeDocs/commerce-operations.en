@@ -65,7 +65,11 @@ mini-toc-levels: 3
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Best practices {#best-practices}
   - [Overview](best-practices/phases.md)
-  - [Planning](best-practices/planning/overview.md)
-  - [Development](best-practices/development/overview.md)
-  - [Launch](best-practices/launch/overview.md)
-  - [Maintenance](best-practices/maintenance/overview.md)
+  - Planning {#planning}
+    - [Overview](best-practices/planning/overview.md)
+  - Development {#development}
+    - [Overview](best-practices/development/overview.md)
+  - Launch {#launch}
+    - [Overview](best-practices/launch/overview.md)
+  - Maintenance {#maintenance}
+    - [Overview](best-practices/maintenance/overview.md)
