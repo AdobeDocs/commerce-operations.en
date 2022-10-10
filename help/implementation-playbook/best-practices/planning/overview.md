@@ -58,4 +58,4 @@ The following sections include best practice information for the planning phase.
 
 ## Purchase extensions
 
-- [Best Practices for using third-party extensions in Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360042361152%E2%80%8B)
+- [Best Practices for using third-party extensions in Adobe Commerce​](extensions.md)
