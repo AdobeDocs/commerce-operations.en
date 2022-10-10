@@ -58,5 +58,4 @@ The following sections include best practice information for the maintenance pha
 ### Upgrades
 
 - [Update services and components to latest version​](https://support.magento.com/hc/en-us/articles/360048603692%E2%80%8B)
-- [Upgrade checklist for Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360057968951%E2%80%8B)
-
+- [Upgrade checklist for Adobe Commerce​](upgrade-checklist.md)

@@ -17,7 +17,7 @@ We understand that each situation is unique, and may not be applicable to some o
 
 ## Affected products and versions
 
-[All supported versions](../../release/versions.html) of:
+[All supported versions](../../../release/versions.html) of:
 
 * Adobe Commerce on cloud infrastructure
 * Adobe Commerce on-premises

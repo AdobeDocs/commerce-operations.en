@@ -19,7 +19,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ## Affected products and versions
 
-[All supported versions](../../release/versions.html) of:
+[All supported versions](../../../release/versions.html) of:
 
 * Adobe Commerce on cloud infrastructure
 * Adobe Commerce on-premises 
@@ -40,7 +40,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ## Budget & Timing
 
-▢ Use the Adobe Commerce [release schedule](https://devdocs.magento.com/release/) to plan your next upgrade and prepare ahead of time.
+▢ Use the Adobe Commerce [release schedule](../../../release/schedule.md) to plan your next upgrade and prepare ahead of time.
 
 ▢ Discuss which version you think you'll adopt (full or security-only) based on anticipated needs.
 
