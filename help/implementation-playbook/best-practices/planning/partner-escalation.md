@@ -12,7 +12,7 @@ Below are ideas to help you prepare for a Partner escalation with a CSM or to av
 
 ## Affected products and versions
 
-[All supported versions](../../../release/versions.html) of:
+[All supported versions](../../../release/versions.md) of:
 
 * Adobe Commerce on cloud infrastructure
 * Adobe Commerce on-premises

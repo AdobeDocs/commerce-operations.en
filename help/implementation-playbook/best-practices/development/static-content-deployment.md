@@ -12,7 +12,7 @@ This article talks about static content deploy (SCD) best practices in Adobe Com
 
 ## Affected products and versions
 
-[All supported versions](../../release/versions.html) of:
+[All supported versions](../../../release/versions.md) of:
 
 * Adobe Commerce on cloud infrastructure
 * Adobe Commerce on-premises
