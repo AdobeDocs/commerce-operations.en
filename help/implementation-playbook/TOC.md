@@ -76,4 +76,5 @@ mini-toc-levels: 3
     - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
   - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)
+    - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
