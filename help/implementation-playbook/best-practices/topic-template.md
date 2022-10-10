@@ -1,11 +1,14 @@
 ---
-title: Database configuration best practices
-description: Learn how to configure your database for Adobe Commerce on cloud infrastructure
+title: XXX best practices
+description: Learn how to ...
 role: Developer
 feature: Best Practices
 ---
 
 <!--Metadata values configured in ExL
+
+Info on writing descriptions and titles: https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/features/metadata.html
+
 Available roles: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/role.yml
 
 Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml -->
