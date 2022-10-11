@@ -13,9 +13,21 @@ Support for the 2.4.4-2.4.6 release line ends on November&nbsp;25, 2024.
   </thead>
   <tbody>
     <tr>
+        <td>2.4.5-p1</td>
+        <td>October&nbsp;11, 2022</td>
+          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-5-p1.html">Release Notes</a><br>
+          </td>
+    </tr>
+    <tr>
         <td>2.4.5</td>
         <td>August&nbsp; 9, 2022</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-5.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-5.html">Magento Open Source Release Notes</a><br>
+          </td>
+    </tr>
+    <tr>
+        <td>2.4.4-p2</td>
+        <td>October&nbsp;11, 2022</td>
+          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p2.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
