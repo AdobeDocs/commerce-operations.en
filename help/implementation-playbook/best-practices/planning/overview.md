@@ -48,14 +48,14 @@ The following sections include best practice information for the planning phase.
 ## Catalog design
 
 - [Product limits best practice​](https://support.magento.com/hc/en-us/articles/360045066791%E2%80%8B)
-- [Best practices for Adobe Commerce product options​](https://support.magento.com/hc/en-us/articles/360048723372%E2%80%8B)
+- [Best practices for Adobe Commerce product options​](product-options.md)
 - [Best practice for number of products in cart in Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360048550332%E2%80%8B)
 - [Best practice Adobe Commerce product attributes​](https://support.magento.com/hc/en-us/articles/360048256612%E2%80%8B)
 
 ## Project scoping
 
-- [Partner escalation checklist​](https://support.magento.com/hc/en-us/articles/4412743064205%E2%80%8B)
+- [Partner escalations](partner-escalation.md)
 
 ## Purchase extensions
 
-- [Best Practices for using third-party extensions in Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360042361152%E2%80%8B)
+- [Best Practices for using third-party extensions in Adobe Commerce​](extensions.md)

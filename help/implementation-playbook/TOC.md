@@ -67,9 +67,17 @@ mini-toc-levels: 3
   - [Overview](best-practices/phases.md)
   - Planning {#planning}
     - [Overview](best-practices/planning/overview.md)
+    - [Extensions](best-practices/planning/extensions.md)
+    - [Partner escalations](best-practices/planning/partner-escalation.md)
+    - [Product options](best-practices/planning/product-options.md)
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
+    - [Development](best-practices/development/troubleshooting.md)
+    - [Static content deployment](best-practices/development/static-content-deployment.md)
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
-  - Maintenance {#maintenance}
+    - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
+  - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)
+    - [Update services](best-practices/maintenance/update-services.md)
+    - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
