@@ -33,6 +33,7 @@ user-guide-description: Learn about the different tools you can use with Adobe C
     - [The Redis tab](observation-for-adobe-commerce/redis-tab.md) 
     - [The MySQL tab](observation-for-adobe-commerce/mysql-tab.md)
     - [The PHP tab](observation-for-adobe-commerce/php-tab.md)
+    - [The Bots tab](observation-for-adobe-commerce/bots.md)
     - [The Deploy tab](observation-for-adobe-commerce/deploy-tab.md)
     - [The Alerts tab](observation-for-adobe-commerce/alerts-tab.md)
     - [The WAF tab](observation-for-adobe-commerce/waf-tab.md)
