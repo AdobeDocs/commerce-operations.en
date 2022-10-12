@@ -9,13 +9,13 @@ Adobe Commerce 2.4.0 introduces support for PHP 7.4, Elasticsearch 7.6.x, and My
 
 >[!NOTE]
 >
->**Braintree payment integration**: Prior to Magento 2.4.0, it was recommended that merchants install and configure the official Braintree payment integration extension from the Commerce Marketplace to replace the core integration. With this release (Magento 2.4.0), the extension is now included in the Magento release. Merchants must follow additional steps to ensure that Braintree works properly in a Magento 2.4.0 deployment. See [Braintree]({{ site.user_guide_url }}/payment/braintree.html) for more information on how to migrate to Magento 2.4.0.
+>**Braintree payment integration**: Prior to Magento 2.4.0, it was recommended that merchants install and configure the official Braintree payment integration extension from the Commerce Marketplace to replace the core integration. With this release (Magento 2.4.0), the extension is now included in the Magento release. Merchants must follow additional steps to ensure that Braintree works properly in a Magento 2.4.0 deployment. See [Braintree](https://docs.magento.com/user-guide/payment/braintree.html) for more information on how to migrate to Magento 2.4.0.
 
 This release includes all the improvements to core quality that were included in Magento 2.3.5-p1, over 100 new fixes to core code, and 30 security enhancements. It includes the resolution of 226 GitHub issues by our community members. These community contributions range from minor clean-up of core code to significant enhancements in Inventory Management and GraphQL.
 
 >[!NOTE]
 >
->Minor releases bring substantial code enhancements. Before upgrading to Magento 2.4.0, confirm that your environment meets the minimal [technical stack requirements]({{ page.baseurl }}/install-gde/system-requirements.html).
+>Minor releases bring substantial code enhancements. Before upgrading to Magento 2.4.0, confirm that your environment meets the minimal [technical stack requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
 
 {{bics}}
 
@@ -31,7 +31,7 @@ DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in S
 
 Merchants can now install time-sensitive security fixes without applying the hundreds of functional fixes and enhancements that a full quarterly release (for example, Magento 2.3.5-p2) provides. Patch 2.3.5.2 (Composer package 2.3.5-p2) is a security patch that provides fixes for vulnerabilities that have been identified in our previous quarterly release, Magento 2.3.5-p1. All hot fixes that were applied to the 2.3.5 release are included in this security patch. (A *hot fix* provides a fix to a released version of Magento that addresses a specific problem or bug.)
 
-For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287).For instructions on downloading and applying security patches (including patch 2.3.5-p2), see [Install Magento using Composer]({{page.baseurl}}/install-gde/composer.html). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
+For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287).For instructions on downloading and applying security patches (including patch 2.3.5-p2), see [Install Magento using Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
 
 ## Other release information
 
@@ -47,17 +47,17 @@ This release includes over 30 security fixes and platform security improvements.
 
 #### Over 30 security enhancements that help close remote code execution (RCE) and cross-site scripting (XSS) vulnerabilities
 
-No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP allowlisting, [two-factor authentication]({{page.baseurl}}/security/two-factor-authentication.html), use of a VPN, the use of a unique location rather than `/admin`, and good password hygiene. See [Security Updates Available for Magento](https://helpx.adobe.com/security/products/magento/apsb20-47.html) for a discussion of these fixed issues.
+No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP allowlisting, [two-factor authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html), use of a VPN, the use of a unique location rather than `/admin`, and good password hygiene. See [Security Updates Available for Magento](https://helpx.adobe.com/security/products/magento/apsb20-47.html) for a discussion of these fixed issues.
 
 #### Additional security enhancements
 
 *  **Implementation of 2FA for Admin accounts, Magento.com user accounts, and Cloud SSH access**
 
-   *  **Securing your Admin account**. Two-factor authentication (2FA) is now required for the Admin. Admin users must first configure their 2FA before logging into the Admin through either the UI or a web API. 2FA is enabled by default. We strongly recommend against disabling the 2FA module.  This extra step of authentication makes it harder for malicious users to log in to the Admin without authorization. See [Two-factor Authentication (2FA)]({{page.baseurl}}/security/two-factor-authentication.html). <!--- MC-22631-->
+   *  **Securing your Admin account**. Two-factor authentication (2FA) is now required for the Admin. Admin users must first configure their 2FA before logging into the Admin through either the UI or a web API. 2FA is enabled by default. We strongly recommend against disabling the 2FA module.  This extra step of authentication makes it harder for malicious users to log in to the Admin without authorization. See [Two-factor Authentication (2FA)](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html). <!--- MC-22631-->
 
-   *  **Securing your Magento account**. Two-factor Authentication (2FA) provides an added, optional  layer of security to better protect your Magento.com account from unauthorized users who might want to use your account in ways you do not want. See [Securing Your Account]({{ site.user_guide_url }}/magento/magento-account-secure.html).
+   *  **Securing your Magento account**. Two-factor Authentication (2FA) provides an added, optional  layer of security to better protect your Magento.com account from unauthorized users who might want to use your account in ways you do not want. See [Securing Your Account](https://docs.magento.com/user-guide/magento/magento-account-secure.html).
 
-   *  **Securing Cloud SSH access**. Adobe on cloud infrastructure provides multi-factor authentication (MFA) enforcement to manage authentication requirements for SSH access to Cloud environments. Multi-factor authentication for 2FA is not enabled by default on a project.  Magento highly recommends enabling this feature. Contact Support for assistance. See [Enable multi-factor authentication for SSH access]({{ site.baseurl }}/cloud/project/project-enable-mfa-enforcement.html).
+   *  **Securing Cloud SSH access**. Adobe on cloud infrastructure provides multi-factor authentication (MFA) enforcement to manage authentication requirements for SSH access to Cloud environments. Multi-factor authentication for 2FA is not enabled by default on a project.  Magento highly recommends enabling this feature. Contact Support for assistance. See [Enable multi-factor authentication for SSH access](https://devdocs.magento.com/cloud/project/project-enable-mfa-enforcement.html).
 
 *  **Template filter strict mode is now enabled by default**. Magento components (including CMS pages and blocks) that use the template filter in legacy mode can be vulnerable to remote code execution (RCE). Enabling strict mode by default ensures that RCE attacks cannot be deliberately enabled. <!--- MC-22982-->
 
@@ -73,15 +73,15 @@ No confirmed attacks related to these issues have occurred to date. However, cer
 
 ### Platform upgrades
 
-The following platform upgrades help enhance website security and performance. Supported versions of PHP and PHPUnit, Elasticsearch, MySQL, and other dependencies are listed in [Magento 2.4 technology stack requirements]({{page.baseurl}}/install-gde/system-requirements.html).
+The following platform upgrades help enhance website security and performance. Supported versions of PHP and PHPUnit, Elasticsearch, MySQL, and other dependencies are listed in [Magento 2.4 technology stack requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
 
 *  **PHP 7.4 support introduced and PHP 7.1 and 7.2 deprecated**. Magento 2.4.0 introduces support for PHP 7.4.
 
 *  **Support for PHPUnit 9.x and deprecation of PHPUnit 6.5**. PHP 7.4 requires the use of the latest PHPUnit testing framework, which is PHPUnit 9.x. Commerce Marketplace extension vendors must confirm that all new extension versions are compatible with PHP 7.4 and that all  unit and integration tests have been configured to be run with PHPUnit 9.
 
-*  **Elasticsearch 7.6.x support**. Elasticsearch 7.6.x is now the default catalog search engine for Adobe Commerce and Adobe Commerce. You cannot install or upgrade to version 2.4.0 without also installing Elasticsearch 7.6.x. Elasticsearch version 2.x code has been removed. Elasticsearch versions 5.x and 6.x have been deprecated and are no longer supported. See [Search engine prerequisites]({{page.baseurl}}/install-gde/prereq/elasticsearch.html).
+*  **Elasticsearch 7.6.x support**. Elasticsearch 7.6.x is now the default catalog search engine for Adobe Commerce and Adobe Commerce. You cannot install or upgrade to version 2.4.0 without also installing Elasticsearch 7.6.x. Elasticsearch version 2.x code has been removed. Elasticsearch versions 5.x and 6.x have been deprecated and are no longer supported. See [Search engine prerequisites](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html).
 
-*  **MySQL 8.0 support**. Magento 2.4.x supports MySQL 8.x. (Magento 2.4.0 was tested with MySQL 8.0.20.) Merchants are encouraged to migrate their deployments to MySQL 8.x to take advantage of its improved performance, security, and reliability. Although MySQL 5.7 is still supported for Magento 2.4.x, MySQL 5.6 is no longer supported. You cannot host Magento 2.4.x with a MySQL 5.6 database. See [MySQL]({{page.baseurl}}/install-gde/prereq/mysql.html).
+*  **MySQL 8.0 support**. Magento 2.4.x supports MySQL 8.x. (Magento 2.4.0 was tested with MySQL 8.0.20.) Merchants are encouraged to migrate their deployments to MySQL 8.x to take advantage of its improved performance, security, and reliability. Although MySQL 5.7 is still supported for Magento 2.4.x, MySQL 5.6 is no longer supported. You cannot host Magento 2.4.x with a MySQL 5.6 database. See [MySQL](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html).
 
 *  **MariaDB 10.4 support**. Support for MySQL 8.0 provides the opportunity for merchants to deploy MariaDB 10.4 with Magento. Although merchants can still use MariaDB 10.2 with Magento 2.4.0, we recommend upgrading to MariaDB 10.4 for improved performance and reliability. MariaDB 10.0 and 10.1 are no longer supported (as a result of removing support for MySQL 5.6 in this release).
 *  **Removal of the MySQL catalog search engine**. The MySQL search engine has been removed from Magento 2.4.0 and replaced as the default search engine with Elasticsearch. Elasticsearch provides superior search capabilities as well as catalog performance optimizations.  All merchants must have Elasticsearch to install and deploy Magento 2.4.0. See [Verify Elasticsearch is installed](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/prerequisites.html).
@@ -106,11 +106,11 @@ This release contains enhancements to core quality, which improve the quality of
 
 *  **PayPal JavaScript SDK upgrade**. We've migrated the PayPal Express Checkout integration to the latest PayPal JavaScript SDK, an SDK that  automatically collects and passes needed risk parameters to PayPal. The behavior of the PayPal Express Checkout payment method remains unchanged. However, upgrading this SDK to the latest version let merchants access the latest features and security enhancements. <!--- MC-30962-->
 
-*  **Deprecation and removal of the Web Set Up Wizard**. You must use the command line to install or upgrade Magento 2.4.0. See [Install Magento]({{ page.baseurl }}/install-gde/install/cli/install-cli.html).
+*  **Deprecation and removal of the Web Set Up Wizard**. You must use the command line to install or upgrade Magento 2.4.0. See [Install Magento](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
 
 *  **Composer update plugin**. Composer plugin streamlines the  upgrade process by resolving changes that must be made to the root project `composer.json` file before updating to a new Magento product requirement. This plug-in protects against overwriting customizations. See [Upgrade using the Magento composer root plugin](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
 
-*  **Seller-assisted shopping**. This feature allows merchants to view the storefront on behalf of their customers. Customers opt to allow storefront access to their accounts. This community-developed feature includes an original extension developed by [MAGEFAN](https://magefan.com/). See [Seller Assisted Shopping]({{ site.user_guide_url }}/configuration/customers/login-as-customer.html). Features include:
+*  **Seller-assisted shopping**. This feature allows merchants to view the storefront on behalf of their customers. Customers opt to allow storefront access to their accounts. This community-developed feature includes an original extension developed by [MAGEFAN](https://magefan.com/). See [Seller Assisted Shopping](https://docs.magento.com/user-guide/configuration/customers/login-as-customer.html). Features include:
 
    *  ACL to control which administrators can log in to customer accounts can be configured on a per-website basis
    *  Compatibility with multiple websites and customer account scopes
@@ -119,7 +119,7 @@ This release contains enhancements to core quality, which improve the quality of
 
 ### Performance improvements
 
-*  **Improvements to customer data section invalidation logic**. This release introduces a new way of invalidating all customer sections data that avoids a known issue with local storage when custom `sections.xml` invalidations are active.  (Previously, private content (local storage) was not correctly populated when you had a custom *etc/frontend/sections.xml* with action invalidations.) See [Private content]({{page.baseurl}}/extension-dev-guide/cache/page-caching/private-content.html).
+*  **Improvements to customer data section invalidation logic**. This release introduces a new way of invalidating all customer sections data that avoids a known issue with local storage when custom `sections.xml` invalidations are active.  (Previously, private content (local storage) was not correctly populated when you had a custom *etc/frontend/sections.xml* with action invalidations.) See [Private content](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/page-caching/private-content.html).
 
 *  **Multiple optimizations to Redis performance**. The enhancements minimize the number of queries to Redis that are performed on each Magento request. These optimizations include:
 
@@ -129,7 +129,7 @@ This release contains enhancements to core quality, which improve the quality of
 
    *  Reduction in race conditions on Redis write operations
 
-   See [Use Redis for the Magento page and default cache]({{page.baseurl}}/config-guide/redis/redis-pg-cache.html) and [Configure caching]({{page.baseurl}}/config-guide/cache.html).
+   See [Use Redis for the Magento page and default cache](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html) and [Configure caching](https://devdocs.magento.com/guides/v2.4/config-guide/cache.html).
 
 *  **Improved caching of results of SQL queries to inventory tables**. These enhancements include:
 
@@ -155,7 +155,7 @@ Page Builder now supports PHP 7.4.
 
 ### Inventory Management
 
-Inventory Management enhancements for this release include support for in-store pickup and bundle product support. See [Inventory Management release notes]({{page.baseurl}}/inventory/release-notes.html) for a more detailed discussion of recent Inventory Management bug fixes.
+Inventory Management enhancements for this release include support for in-store pickup and bundle product support. See [Inventory Management release notes](https://devdocs.magento.com/guides/v2.4/inventory/release-notes.html) for a more detailed discussion of recent Inventory Management bug fixes.
 
 ### GraphQL
 
@@ -165,7 +165,7 @@ GraphQL enhancements include:
 *  `categories` query returns a list of categories that match a specified filter. This query differs from the `categoryList` query in that it supports pagination.
 *  `reorderItems` mutation allows a logged-in user to add all the products from a previous order into their cart.
 
-See  the [GraphQL Developer Guide]({{page.baseurl}}/graphql/) for details on this and other enhancements. See [Release notes]({{page.baseurl}}/graphql/release-notes.html) for a detailed discussion of recent GraphQL bug fixes.
+See  the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/) for details on this and other enhancements. See [Release notes](https://devdocs.magento.com/guides/v2.4/graphql/release-notes.html) for a detailed discussion of recent GraphQL bug fixes.
 
 ### PWA Studio
 
@@ -173,7 +173,7 @@ See [Magento compatibility](https://developer.adobe.com/commerce/pwa-studio/inte
 
 ### B2B
 
-**Order Approval Workflow feature for B2B**. Order Approvals allows managers of buying organizations to configure approval rules for their buyers. See [Approval Rules]({{ site.user_guide_url }}/customers/account-dashboard-approval-rules.html
+**Order Approval Workflow feature for B2B**. Order Approvals allows managers of buying organizations to configure approval rules for their buyers. See [Approval Rules](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html
 ). Features include:
 
 *  Self-service configuration of unique approval rules for each Company account
@@ -183,7 +183,7 @@ See [Magento compatibility](https://developer.adobe.com/commerce/pwa-studio/inte
 *  Full history log of actions that have been performed on each Purchase Order
 *  Email notification for relevant parties  during all steps in the approval process.
 
-This release also includes multiple bug fixes. See [B2B Release Notes]({{page.baseurl}}/release-notes/b2b-release-notes.html).
+This release also includes multiple bug fixes. See [B2B Release Notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html).
 
 ### Magento Functional Testing Framework (MFTF)
 
@@ -214,7 +214,7 @@ This release includes these enhancements:
 *  Logging output from the Client class has been improved and is now consistent across all methods in the API wrapper.
 *  Configurable products now have a stock figure that is the sum of their child products.
 *  A new plugin detects stock updates that are performed by third-party code (outside the Admin).
-*  [Data mapping]({{ site.user_guide_url }}/configuration/dotdigital/data-mapping.html) and [transactional email]({{ site.user_guide_url }}/configuration/dotdigital/transactional-emails.html) configuration information has been updated.
+*  [Data mapping](https://docs.magento.com/user-guide/configuration/dotdigital/data-mapping.html) and [transactional email](https://docs.magento.com/user-guide/configuration/dotdigital/transactional-emails.html) configuration information has been updated.
 
 #### Amazon Pay
 
@@ -236,7 +236,7 @@ This release includes new on-site messaging options to help shoppers understand 
 *  API efficiency
 *  cookies and unit tests
 *  discounts
-*  configuration settings now contain On-Site Messaging section for the control of the storefront display of Klarna promotional messaging. See [Setting Up Klarna]({{ site.user_guide_url }}/payment/klarna-setup.html).
+*  configuration settings now contain On-Site Messaging section for the control of the storefront display of Klarna promotional messaging. See [Setting Up Klarna](https://docs.magento.com/user-guide/payment/klarna-setup.html).
 
 #### Vertex
 
@@ -1497,7 +1497,7 @@ We have fixed hundreds of issues in the Magento 2.4.0 core code.
 
 <!--- MC-31499-->
 
-*  Customer data section invalidation logic has been improved. This release introduces a new way of invalidating all customer sections data that avoids a known issue with local storage when custom `sections.xml` invalidations are active. (Previously, private content (local storage) was not correctly populated when you had a custom *etc/frontend/sections.xml* with action invalidations.) See [Private content](https://{{page.baseurl}}/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html#invalidate-private-content).
+*  Customer data section invalidation logic has been improved. This release introduces a new way of invalidating all customer sections data that avoids a known issue with local storage when custom `sections.xml` invalidations are active. (Previously, private content (local storage) was not correctly populated when you had a custom *etc/frontend/sections.xml* with action invalidations.) See [Private content](https://https://devdocs.magento.com/guides/v2.4/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html#invalidate-private-content).
 
 <!--- MC-31449-->
 
@@ -1679,7 +1679,7 @@ We have fixed hundreds of issues in the Magento 2.4.0 core code.
 
 ### Search
 
-*  Elasticsearch 7.6.x is now the default catalog search engine for Adobe Commerce and Adobe Commerce. You cannot install or upgrade to version 2.4.0 without also installing Elasticsearch 7.6.x. Elasticsearch version 2.x code has been removed. Elasticsearch versions 5.x and 6.x have been deprecated and are no longer supported. See [Search engine prerequisites]({{page.baseurl}}/install-gde/prereq/elasticsearch.html).
+*  Elasticsearch 7.6.x is now the default catalog search engine for Adobe Commerce and Adobe Commerce. You cannot install or upgrade to version 2.4.0 without also installing Elasticsearch 7.6.x. Elasticsearch version 2.x code has been removed. Elasticsearch versions 5.x and 6.x have been deprecated and are no longer supported. See [Search engine prerequisites](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html).
 
 <!--- MC-23753-->
 
@@ -1841,7 +1841,7 @@ We have fixed hundreds of issues in the Magento 2.4.0 core code.
 
 >[!NOTE]
 >
->**MFTF now uses Google Authenticator to execute tests with 2FA enabled. MFTF will not work with Magento 2.4.0 without additional configuration steps to enable Google Authenticator**. See [Configuring MFTF for Two-Factor Authentication (2FA)]({{ page.baseurl }}/security/two-factor-authentication.html#magento-functional-testing-framework).
+>**MFTF now uses Google Authenticator to execute tests with 2FA enabled. MFTF will not work with Magento 2.4.0 without additional configuration steps to enable Google Authenticator**. See [Configuring MFTF for Two-Factor Authentication (2FA)](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html#magento-functional-testing-framework).
 
 <!-- ENGCOM-6585-->
 
@@ -2299,7 +2299,7 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements]({{page.baseurl}}/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
 
 ### Installation and upgrade instructions
 
@@ -2307,6 +2307,6 @@ You can install Adobe Commerce 2.4.0 using Composer.
 
 ## Migration tool kits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool]({{page.baseurl}}/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

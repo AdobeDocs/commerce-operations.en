@@ -54,7 +54,7 @@ This release includes one security fix and platform security improvements. This 
 No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts:
 
 *  IP allowlisting
-*  [two-factor authentication]({{page.baseurl}}/security/two-factor-authentication.html)
+*  [two-factor authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html)
 *  use of a VPN
 *  use of a unique location rather than `/admin`
 *  good password hygiene
@@ -67,7 +67,7 @@ Security improvements for this release improve compliance with the latest securi
 
 *  Email variable usage was deprecated back in 2.3.4 as part of a security risk mitigation in favor of a more strict variable syntax. This legacy behavior has been fully removed in this release as a continuation of that security risk mitigation.
 
-   As a result, email or newsletter templates that worked in previous versions of Adobe Commerce may not work correctly after upgrading to Adobe Commerce 2.4.4 or Magento Open Source 2.4.4. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) to fix deprecated usages. See [Migrating custom email templates]({{page.baseurl}}/frontend-dev-guide/templates/template-email-migration.html) for information about potential effects and guidelines for migrating affected templates.
+   As a result, email or newsletter templates that worked in previous versions of Adobe Commerce may not work correctly after upgrading to Adobe Commerce 2.4.4 or Magento Open Source 2.4.4. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) to fix deprecated usages. See [Migrating custom email templates](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/templates/template-email-migration.html) for information about potential effects and guidelines for migrating affected templates.
 
 *  Integration tokens can no longer be used for API Bearer token authentication. Previously, an integration token could be used as a standalone key for token-based authentication. However, this behavior has been disabled by default due to the security implications of a never-expiring access token. The previous behavior can be enabled through the command line or Admin. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html). <!--- AC-1619--->
 
@@ -145,17 +145,17 @@ This release includes these GraphQL enhancements:
 
 #### New mutations
 
-*  [`assignCustomerToGuestCart`]({{page.baseurl}}/graphql/mutations/assign-customer-to-guest-cart.html) mutation
+*  [`assignCustomerToGuestCart`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/assign-customer-to-guest-cart.html) mutation
 
-*  [`placeNegotiableQuoteOrder`]({{page.baseurl}}/graphql/mutations/place-negotiable-quote-order.html) mutation
+*  [`placeNegotiableQuoteOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/place-negotiable-quote-order.html) mutation
 
-*  [`setNegotiableQuoteBillingAddress`]({{page.baseurl}}/graphql/mutations/set-negotiable-quote-billing-address.html) mutation
+*  [`setNegotiableQuoteBillingAddress`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-negotiable-quote-billing-address.html) mutation
 
-*  [`setNegotiableQuotePaymentMethod`]({{page.baseurl}}/graphql/mutations/set-negotiable-quote-payment-method.html) mutation<!--- PWA-2114-->
+*  [`setNegotiableQuotePaymentMethod`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-negotiable-quote-payment-method.html) mutation<!--- PWA-2114-->
 
-*  [`setNegotiableQuoteShippingMethods`]({{page.baseurl}}/graphql/mutations/set-negotiable-quote-shipping-methods.html) mutation
+*  [`setNegotiableQuoteShippingMethods`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-negotiable-quote-shipping-methods.html) mutation
 
-*  [`setNegotiableQuoteShippingAddress`]({{page.baseurl}}/graphql/mutations/set-negotiable-quote-shipping-address.html) mutation
+*  [`setNegotiableQuoteShippingAddress`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-negotiable-quote-shipping-address.html) mutation
 
 *  **Performance improvements**:
 
@@ -171,11 +171,11 @@ This release includes these GraphQL enhancements:
 
 *  GraphQL now provides New Relic with descriptive transaction names, which can be helpful for debugging. [GitHub-30915](https://github.com/magento/magento2/issues/30915) <!--- PWA-1311-->
 
-See the [GraphQL Developer Guide]({{page.baseurl}}/graphql/) for details on these enhancements.
+See the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/) for details on these enhancements.
 
 ### B2B
 
-This release includes multiple bug fixes. See [B2B Release Notes]({{page.baseurl}}/release-notes/b2b-release-notes.html)
+This release includes multiple bug fixes. See [B2B Release Notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html)
 
 ### Vendor-Bundled Extensions
 
@@ -1930,14 +1930,14 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements]({{page.baseurl}}/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
 
 ### Installation and upgrade instructions
 
-You can install Adobe Commerce 2.4.4 using [Composer]({{ page.baseurl }}/install-gde/composer.html).
+You can install Adobe Commerce 2.4.4 using [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
 
 ## Migration tool kits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool]({{page.baseurl}}/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento-commerce/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

@@ -24,7 +24,7 @@ This release includes 20 security fix and platform security improvements. This s
 No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts:
 
 *  IP allowlisting
-*  [two-factor authentication]({{page.baseurl}}/security/two-factor-authentication.html)
+*  [two-factor authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html)
 *  use of a VPN
 *  use of a unique location rather than `/admin`
 *  good password hygiene
@@ -133,13 +133,13 @@ GraphQL performance enhancements include:
 
 *  Added capability to consume the expiration date/time of the authorization token through the use of JSON Web Tokens (JWT) in the GraphQL API.
 
-*  The `bin/magento config:set graphql/session/disable 1` command allows merchants to completely disable the creation of session cookies for all GraphQL operations. By default, Magento Open Source creates these cookies and relies on them for authorization, which affects performance. Going forward, we recommend using tokens as the only form of authorization for GraphQL requests. We do not recommend using session cookies alone or in conjunction with authorization tokens. See [GraphQL Authorization]({{page.baseurl}}/graphql/authorization-tokens.html). <!--- B2B-2204--->
+*  The `bin/magento config:set graphql/session/disable 1` command allows merchants to completely disable the creation of session cookies for all GraphQL operations. By default, Magento Open Source creates these cookies and relies on them for authorization, which affects performance. Going forward, we recommend using tokens as the only form of authorization for GraphQL requests. We do not recommend using session cookies alone or in conjunction with authorization tokens. See [GraphQL Authorization](https://devdocs.magento.com/guides/v2.4/graphql/authorization-tokens.html). <!--- B2B-2204--->
 
 *  Session cookies are now launched in GraphQL operations using class proxies only when needed. <!--- B2B-2217--->
 
 *  Session usage has been removed from `http` header processors in GraphQL such as store, customer, or currency. <!--- B2B-2224--->
 
-See the [GraphQL Developer Guide]({{page.baseurl}}/graphql/) for details on these enhancements.
+See the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/) for details on these enhancements.
 
 ### Inventory
 
@@ -1234,8 +1234,8 @@ The following table identifies contributions from our community members. This ta
 
 ## System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements]({{site.baseurl}}/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/system-requirements.html).
 
 ## Installation and upgrade instructions
 
-You can install Magento Open Source 2.4.5 using [Composer]({{ page.baseurl }}/install-gde/composer.html).
+You can install Magento Open Source 2.4.5 using [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).

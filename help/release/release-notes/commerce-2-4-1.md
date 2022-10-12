@@ -19,7 +19,7 @@ DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in t
 
 Merchants can now install time-sensitive security fixes without applying the hundreds of functional fixes and enhancements that a full quarterly release (for example, Magento 2.4.0-p1) provides. Patch 2.4.0.1 (Composer package 2.4.0-p1) is a security patch that provides fixes for vulnerabilities that have been identified in our previous quarterly release, Magento 2.4.0. All hot fixes that were applied to the 2.4.0 release are included in this security patch. (A *hot fix* provides a fix to a released version of Magento that addresses a specific problem or bug.)
 
-For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches (including patch 2.3.5-p2), see [Install Magento using Composer]({{page.baseurl}}/install-gde/composer.html). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
+For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches (including patch 2.3.5-p2), see [Install Magento using Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
 
 ## Other release information
 
@@ -35,7 +35,7 @@ This release includes over 15 security fixes and platform security improvements.
 
 #### Over 15 security enhancements that help close remote code execution (RCE) and cross-site scripting (XSS) vulnerabilities
 
-No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP allowlisting, [two-factor authentication]({{page.baseurl}}/security/two-factor-authentication.html), use of a VPN, the use of a unique location rather than `/admin`, and good password hygiene. See [Security Updates Available for Magento](https://helpx.adobe.com/security/products/magento/apsb20-59.html) for a discussion of these fixed issues.
+No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP allowlisting, [two-factor authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html), use of a VPN, the use of a unique location rather than `/admin`, and good password hygiene. See [Security Updates Available for Magento](https://helpx.adobe.com/security/products/magento/apsb20-59.html) for a discussion of these fixed issues.
 
 #### Additional security enhancements
 
@@ -46,7 +46,7 @@ Security improvements for this release include:
    *  Place Order storefront page and REST and GraphQL endpoints <!--- MC-36067-->
    *  Payment-related REST and GraphQL endpoints.<!--- MC-36064-->
 
-   CAPTCHA protection for these additional pages is disabled by default. It can be enabled on the Admin in the same way that other pages covered by CAPTCHA are. This protection has been added as an anti-brute force mechanism to protect stores against carding attacks. See [CAPTCHA]({{ site.user_guide_url }}/stores/security-captcha.html).
+   CAPTCHA protection for these additional pages is disabled by default. It can be enabled on the Admin in the same way that other pages covered by CAPTCHA are. This protection has been added as an anti-brute force mechanism to protect stores against carding attacks. See [CAPTCHA](https://docs.magento.com/user-guide/stores/security-captcha.html).
 
 *  **Support for the SameSite attribute for cookies**. To support the Google Chrome enforcement of the new cookie classification system, Magento classes that handle cookies have been updated to support the `SameSite` cookie attribute. This attribute is set to `Lax` by default but can be explicitly overridden. <!--- MC-35389-->
 
@@ -58,13 +58,13 @@ Security improvements for this release include:
 
 This release contains enhancements to core quality, which improve the quality of the Framework and these functional areas: Customer Account, Catalog, CMS, OMS, Import/Export, Promotions and Targeting, Cart and Checkout, B2B, and Staging and Preview.
 
-*  **Site-Wide Analysis Tool integration with Admin**. The [tool]({{ site.user_guide_url }}/reports/site-wide-analysis-tool.html) provides system insights and instrumentation for Adobe on cloud infrastructure installations with 24/7 real-time performance monitoring, reports, and self-service recommendations. Merchants can use the new Admin [role resource]({{ site.user_guide_url }}/system/permissions-role-resources.html) to securely access their Customer Detail pages through the Admin. See the [FAQ](https://support.magento.com/hc/en-us/articles/360048646671) for an overview. <!--- SWAT-807-->
+*  **Site-Wide Analysis Tool integration with Admin**. The [tool](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) provides system insights and instrumentation for Adobe on cloud infrastructure installations with 24/7 real-time performance monitoring, reports, and self-service recommendations. Merchants can use the new Admin [role resource](https://docs.magento.com/user-guide/system/permissions-role-resources.html) to securely access their Customer Detail pages through the Admin. See the [FAQ](https://support.magento.com/hc/en-us/articles/360048646671) for an overview. <!--- SWAT-807-->
 
 ### Performance improvements
 
 *  **Reduction in the size of network transfers between Redis and Magento**. Plugin list configuration is now generated during the execution of the `bin/magento di:compile` command. This configuration information is written to generated metadata folders based on scope. Previously, this information was stored in cache. Resulting performance improvements include a decrease in network cache size and execution time for many scenarios.<!--- MC-31617-->
 
-*  **Enhanced message queue consumer performance**. Three new configuration settings support a decrease in consumer queue CPU consumption. These optional parameters provide increased control over consumers and save server resources. See [Configure message queues]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
+*  **Enhanced message queue consumer performance**. Three new configuration settings support a decrease in consumer queue CPU consumption. These optional parameters provide increased control over consumers and save server resources. See [Configure message queues](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
 
 *  **Improved execution time** for `bin/magento` commands.
 
@@ -86,37 +86,37 @@ The New Media Gallery is now enabled by default in the Admin. Merchants can now
 
 ### Page Builder
 
-Page Builder now supports full screen mode, which supports easier editing of content and provides a consistent experience editing content across the Admin. See [Workspace]({{ site.user_guide_url }}/cms/page-builder-workspace.html). <!--- PB-543-->
+Page Builder now supports full screen mode, which supports easier editing of content and provides a consistent experience editing content across the Admin. See [Workspace](https://docs.magento.com/user-guide/cms/page-builder-workspace.html). <!--- PB-543-->
 
 ### GraphQL
 
 This release adds GraphQL coverage for the following features:
 
-*  **Product reviews**. Customers and guests can write product reviews. Customers can retrieve their product review histories. See [Create a product review]({{page.baseurl}}/graphql/mutations/create-product-review.html) and [productReviewRatingsMetadata query]({{page.baseurl}}/graphql/queries/product-review-ratings-metadata.html) for information on retrieving information about the reviews infrastructure.<!--- MC-32349-->
+*  **Product reviews**. Customers and guests can write product reviews. Customers can retrieve their product review histories. See [Create a product review](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-product-review.html) and [productReviewRatingsMetadata query](https://devdocs.magento.com/guides/v2.4/graphql/queries/product-review-ratings-metadata.html) for information on retrieving information about the reviews infrastructure.<!--- MC-32349-->
 
-*  **Gift options**. All customers and guests can add a gift message to their order. On Adobe Commerce installations, they can also add gift wrapping, gift receipts, and printed cards to the order. See [`setGiftOptionsOnCart` mutation]({{page.baseurl}}/graphql/mutations/set-gift-options.html) and [`updateCartItems` mutation]({{page.baseurl}}/graphql/mutations/update-cart-items.html) <!--- MC-32345-->
+*  **Gift options**. All customers and guests can add a gift message to their order. On Adobe Commerce installations, they can also add gift wrapping, gift receipts, and printed cards to the order. See [`setGiftOptionsOnCart` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-gift-options.html) and [`updateCartItems` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-cart-items.html) <!--- MC-32345-->
 
-*  **Reward points**. Customers can apply or remove reward points to their carts. They can also view their reward point history. See [`applyRewardPointsToCart`]({{page.baseurl}}/graphql/mutations/apply-reward-points.html) and [`removeRewardPointsFromCart`]({{page.baseurl}}/graphql/mutations/remove-reward-points.html) for a discussion of managing reward points within a cart.<!--- MC-23366-->
+*  **Reward points**. Customers can apply or remove reward points to their carts. They can also view their reward point history. See [`applyRewardPointsToCart`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/apply-reward-points.html) and [`removeRewardPointsFromCart`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/remove-reward-points.html) for a discussion of managing reward points within a cart.<!--- MC-23366-->
 
 *  **Order history**. All customers can view details about their order histories, including invoices, shipping, and refunds.<!--- MC-20635-->
 
-*  **Add to cart**. The [`addProductsToCart` mutation]({{page.baseurl}}/graphql/mutations/add-products-to-cart.html) allows you to add any type of product to the active cart. We recommend using this mutation instead of single-purpose mutations such as `addSimpleProductsToCart`. _Fix submitted by Yaroslav Rogoza in pull request [27914](https://github.com/magento/magento2/pull/27914)_. [GitHub-28524](https://github.com/magento/magento2/issues/28524)  <!--- MC-21513-->
+*  **Add to cart**. The [`addProductsToCart` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-products-to-cart.html) allows you to add any type of product to the active cart. We recommend using this mutation instead of single-purpose mutations such as `addSimpleProductsToCart`. _Fix submitted by Yaroslav Rogoza in pull request [27914](https://github.com/magento/magento2/pull/27914)_. [GitHub-28524](https://github.com/magento/magento2/issues/28524)  <!--- MC-21513-->
 
 *  **Stored payment methods**. Logged-in customers can now store payment details (including Braintree credit card and Braintree with PayPal) in My Account. <!--- MC-32348 35945 35946-->
 
-*  **Support for wish lists in Magento Open Source**.  You can [add items]({{page.baseurl}}/graphql/mutations/add-products-to-wishlist.html) to, [update items]({{page.baseurl}}/graphql/mutations/update-products-in-wishlist.html) in, and [remove items]({{page.baseurl}}/graphql/mutations/remove-products-from-wishlist.html) from a wish list.
+*  **Support for wish lists in Magento Open Source**.  You can [add items](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-products-to-wishlist.html) to, [update items](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-products-in-wishlist.html) in, and [remove items](https://devdocs.magento.com/guides/v2.4/graphql/mutations/remove-products-from-wishlist.html) from a wish list.
 
-*  **Improved management of customer accounts**. We have added the [`createCustomerV2`]({{page.baseurl}}/graphql/mutations/create-customer-v2.html) and [`updateCustomerV2`]({{page.baseurl}}/graphql/mutations/update-customer-v2.html) mutations to manage customer accounts. These new mutations require different input objects than the `createCustomer` and `updateCustomer` mutations. To change a customer's email address, use the new [`updateCustomerEmail`]({{page.baseurl}}/graphql/mutations/update-customer-email.html) mutation.
+*  **Improved management of customer accounts**. We have added the [`createCustomerV2`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-customer-v2.html) and [`updateCustomerV2`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-customer-v2.html) mutations to manage customer accounts. These new mutations require different input objects than the `createCustomer` and `updateCustomer` mutations. To change a customer's email address, use the new [`updateCustomerEmail`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-customer-email.html) mutation.
 
-*  **Support for Payflow Pro Vault**. Added GraphQL Vault support for the [Payflow Pro Vault]({{page.baseurl}}/graphql/payment-methods/payflow-pro-vault.html) payment method. _Fix submitted by Oleh Usik in pull request [28821](https://github.com/magento/magento2/pull/28821)_. [GitHub-28520](https://github.com/magento/magento2/issues/28520)
+*  **Support for Payflow Pro Vault**. Added GraphQL Vault support for the [Payflow Pro Vault](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/payflow-pro-vault.html) payment method. _Fix submitted by Oleh Usik in pull request [28821](https://github.com/magento/magento2/pull/28821)_. [GitHub-28520](https://github.com/magento/magento2/issues/28520)
 
-*  Updated the GraphQL [`storeConfig` query]({{page.baseurl}}/graphql/queries/store-config.html) to include new customer configuration settings. _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
+*  Updated the GraphQL [`storeConfig` query](https://devdocs.magento.com/guides/v2.4/graphql/queries/store-config.html) to include new customer configuration settings. _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
 
-*  Added the [`requestPasswordResetEmail` mutation]({{page.baseurl}}/graphql/mutations/request-password-reset-email.html), which triggers the password reset email for the provided email address. _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
+*  Added the [`requestPasswordResetEmail` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/request-password-reset-email.html), which triggers the password reset email for the provided email address. _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
 
-*  **Klarna GraphQL**. Added or updated topics on Klarna GraphQL in [Klarna's payment method]({{page.baseurl}}/graphql/payment-methods/klarna.html) and [`createKlarnaPaymentsSession`]({{page.baseurl}}/graphql/mutations/create-klarna-payments-session.html)
+*  **Klarna GraphQL**. Added or updated topics on Klarna GraphQL in [Klarna's payment method](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/klarna.html) and [`createKlarnaPaymentsSession`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-klarna-payments-session.html)
 
-See the [GraphQL Developer Guide]({{page.baseurl}}/graphql/) for details on these enhancements.
+See the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/) for details on these enhancements.
 
 ### PWA Studio
 
@@ -151,7 +151,7 @@ Improvements to order approval and rejection include the following:
 
 *  Examples of how to configure Order Approval rules are provided on the Rule Configuration page. <!--- BUNDLE-103 -->
 
-See [Approval rules]({{ site.user_guide_url }}/customers/account-dashboard-approval-rules.html)
+See [Approval rules](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html)
 
 #### B2B shipping methods enhancements
 
@@ -174,18 +174,18 @@ B2B merchants can now control shipping methods that are offered to each Company.
 *  Merchants can now filter the Customers Now Online grid by Company. <!--- BUNDLE-137 -->
 *  Admins can now filter customers in the Admin by Sales Rep. <!--- BUNDLE-110 -->
 
-See [B2B Features]({{ site.user_guide_url }}/configuration/general/b2b-features.html).
+See [B2B Features](https://docs.magento.com/user-guide/configuration/general/b2b-features.html).
 
 #### Enhanced security on storefront
 
-To reduce creation of fraudulent or spam accounts, merchants can now enable Google reCAPTCHA on the New Company Request form on the storefront. See [reCAPTCHA]({{ site.user_guide_url }}/configuration/security/google-recaptcha-storefront.html).<!--- BUNDLE-154 -->
+To reduce creation of fraudulent or spam accounts, merchants can now enable Google reCAPTCHA on the New Company Request form on the storefront. See [reCAPTCHA](https://docs.magento.com/user-guide/configuration/security/google-recaptcha-storefront.html).<!--- BUNDLE-154 -->
 
 #### Expanded logging of Admin actions
 
 Admin actions taken in the Company modules are now logged in the Admin Actions Log. Actions are logged from all relevant company modules: `Company`, `NegotiableQuote`, `CompanyCredit`, `SharedCatalog`.
 <!--- BUNDLE-180 181 182 183 -->
 
-This release also includes multiple bug fixes. See [B2B Release Notes]({{page.baseurl}}/release-notes/b2b-release-notes.html).
+This release also includes multiple bug fixes. See [B2B Release Notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html).
 
 ### Magento Functional Testing Framework (MFTF)
 
@@ -195,17 +195,17 @@ MFTF 3.1.0 is now available. See [Magento Functional Testing Framework Changelog
 
 See the following articles for updates on features and changes for this release:
 
-*  [Amazon Pay]({{ site.user_guide_url }}/payment/amazon-pay.html)
+*  [Amazon Pay](https://docs.magento.com/user-guide/payment/amazon-pay.html)
 
-*  [Braintree]({{ site.user_guide_url }}/payment/braintree.html)
+*  [Braintree](https://docs.magento.com/user-guide/payment/braintree.html)
 
-*  [dotdigital Engagement Cloud]({{ site.user_guide_url }}/marketing/dotdigital/engagement-cloud.html)
+*  [dotdigital Engagement Cloud](https://docs.magento.com/user-guide/marketing/dotdigital/engagement-cloud.html)
 
-*  [Klarna]({{ site.user_guide_url }}/payment/klarna.html)
+*  [Klarna](https://docs.magento.com/user-guide/payment/klarna.html)
 
-*  [Vertex Cloud]({{ site.user_guide_url }}/tax/vertex.html)
+*  [Vertex Cloud](https://docs.magento.com/user-guide/tax/vertex.html)
 
-*  [Yotpo Product Reviews]({{ site.user_guide_url }}/marketing/yotpo-reviews-intro.html)
+*  [Yotpo Product Reviews](https://docs.magento.com/user-guide/marketing/yotpo-reviews-intro.html)
 
 ## Fixed issues
 
@@ -247,7 +247,7 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 <!--- ENGCOM-7219-->
 
-*  You can now use `bin/magento sampledata:deploy` to deploy sample data as expected after installing Magento using Composer. Previously, Magento threw this error: `Git installations must deploy sample data from GitHub; see {{ site.baseurl }}/guides/v2.3/install-gde/install/sample-data-after-clone.html for more information`. _Fix submitted by Andrii Beziazychnyi in pull request [27481](https://github.com/magento/magento2/pull/27481)_. [GitHub-19481](https://github.com/magento/magento2/issues/19481)
+*  You can now use `bin/magento sampledata:deploy` to deploy sample data as expected after installing Magento using Composer. Previously, Magento threw this error: `Git installations must deploy sample data from GitHub; see https://devdocs.magento.com/guides/v2.3/install-gde/install/sample-data-after-clone.html for more information`. _Fix submitted by Andrii Beziazychnyi in pull request [27481](https://github.com/magento/magento2/pull/27481)_. [GitHub-19481](https://github.com/magento/magento2/issues/19481)
 
 <!--- ENGCOM-7459-->
 
@@ -653,7 +653,7 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 <!--- MC-35884-->
 
-*  Message queue consumer configuration has been extended with new parameters that help control consumers and save server resources and that potentially decrease consumer queue CPU consumption. See [Configure message queues]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
+*  Message queue consumer configuration has been extended with new parameters that help control consumers and save server resources and that potentially decrease consumer queue CPU consumption. See [Configure message queues](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
 
 <!--- ENGCOM-7863-->
 
@@ -989,19 +989,19 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 <!-- ENGCOM-7661 7662 7559 MC-35646 32345-->
 
-*  Shoppers can select gift message and wrapping options during checkout. GraphQL now covers gift message options for different types of cart items. See [`setGiftOptionsOnCart` mutation]({{page.baseurl}}/graphql/mutations/set-gift-options.html) and [`updateCartItems` mutation]({{page.baseurl}}/graphql/mutations/update-cart-items.html). _Fix submitted by Oleh Usik in pull requests [28519](https://github.com/magento/magento2/pull/28105), [27956](https://github.com/magento/magento2/pull/27956), [28072](https://github.com/magento/magento2/pull/28072), [28072](https://github.com/magento/magento2/pull/28072), and 246 in private repo partners-magento2ee_. [GitHub-253](https://github.com/magento/magento2/issues/28519)
+*  Shoppers can select gift message and wrapping options during checkout. GraphQL now covers gift message options for different types of cart items. See [`setGiftOptionsOnCart` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-gift-options.html) and [`updateCartItems` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-cart-items.html). _Fix submitted by Oleh Usik in pull requests [28519](https://github.com/magento/magento2/pull/28105), [27956](https://github.com/magento/magento2/pull/27956), [28072](https://github.com/magento/magento2/pull/28072), [28072](https://github.com/magento/magento2/pull/28072), and 246 in private repo partners-magento2ee_. [GitHub-253](https://github.com/magento/magento2/issues/28519)
 
 <!-- ENGCOM-7508 -->
 
-*  Customers and guests can write product reviews. Customers can also retrieve their product review histories. See [Create a product review]({{page.baseurl}}/graphql/mutations/create-product-review.html) and [productReviewRatingsMetadata query]({{page.baseurl}}/graphql/queries/product-review-ratings-metadata.html) for information on retrieving information about the reviews infrastructure. _Fix submitted by Eduard Chitoraga in pull request [27882](https://github.com/magento/magento2/pull/27882)_. [GitHub-28523](https://github.com/magento/magento2/issues/28523)
+*  Customers and guests can write product reviews. Customers can also retrieve their product review histories. See [Create a product review](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-product-review.html) and [productReviewRatingsMetadata query](https://devdocs.magento.com/guides/v2.4/graphql/queries/product-review-ratings-metadata.html) for information on retrieving information about the reviews infrastructure. _Fix submitted by Eduard Chitoraga in pull request [27882](https://github.com/magento/magento2/pull/27882)_. [GitHub-28523](https://github.com/magento/magento2/issues/28523)
 
 <!-- ENGCOM-7800 7841-->
 
-*  Customers can apply or remove reward points to their carts. They can also view their reward point history. See [`applyRewardPointsToCart`]({{page.baseurl}}/graphql/mutations/apply-reward-points.html) and [`removeRewardPointsFromCart`]({{page.baseurl}}/graphql/mutations/remove-reward-points.html) for a discussion of managing reward points within a cart. _Fix submitted by Petkovski Marjan in pull request 285 in private repo partners-magento2ee and Dmitriy Gallyamov in pull requests 284 and 281 in private repo partners-magento2ee_. [GitHub-28835](https://github.com/magento/magento2/issues/28835), [GitHub-28833](https://github.com/magento/magento2/issues/28833)
+*  Customers can apply or remove reward points to their carts. They can also view their reward point history. See [`applyRewardPointsToCart`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/apply-reward-points.html) and [`removeRewardPointsFromCart`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/remove-reward-points.html) for a discussion of managing reward points within a cart. _Fix submitted by Petkovski Marjan in pull request 285 in private repo partners-magento2ee and Dmitriy Gallyamov in pull requests 284 and 281 in private repo partners-magento2ee_. [GitHub-28835](https://github.com/magento/magento2/issues/28835), [GitHub-28833](https://github.com/magento/magento2/issues/28833)
 
 <!-- ENGCOM-7968 -->
 
-*  The [`addProductsToCart` mutation]({{page.baseurl}}/graphql/mutations/add-products-to-cart.html) allows you to add any type of product to the active cart. We recommend using this mutation instead of single-purpose mutations such as `addSimpleProductsToCart`. _Fix submitted by Yaroslav Rogoza in pull request [27914](https://github.com/magento/magento2/pull/27914)_. [GitHub-28524](https://github.com/magento/magento2/issues/28524)
+*  The [`addProductsToCart` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-products-to-cart.html) allows you to add any type of product to the active cart. We recommend using this mutation instead of single-purpose mutations such as `addSimpleProductsToCart`. _Fix submitted by Yaroslav Rogoza in pull request [27914](https://github.com/magento/magento2/pull/27914)_. [GitHub-28524](https://github.com/magento/magento2/issues/28524)
 
 <!-- ENGCOM-7801 7816-->
 
@@ -1009,7 +1009,7 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 <!--- MC-34187-->
 
-*  The new `availableStores` query returns a list of configuration attributes for multiple stores available under the same website (based on the current store). It does not expose the list of websites. See [`availableStores` query]({{page.baseurl}}/graphql/queries/available-stores.html). _Fix submitted by Dmitriy Gallyamov in pull request [28794](https://github.com/magento/magento2/pull/28794)_. [GitHub-28569](https://github.com/magento/magento2/issues/28569)
+*  The new `availableStores` query returns a list of configuration attributes for multiple stores available under the same website (based on the current store). It does not expose the list of websites. See [`availableStores` query](https://devdocs.magento.com/guides/v2.4/graphql/queries/available-stores.html). _Fix submitted by Dmitriy Gallyamov in pull request [28794](https://github.com/magento/magento2/pull/28794)_. [GitHub-28569](https://github.com/magento/magento2/issues/28569)
 
 <!-- ENGCOM-7512 -->
 
@@ -1017,7 +1017,7 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 <!-- ENGCOM-7839 32949-->
 
-*  We have added the [`createCustomerV2`]({{page.baseurl}}/graphql/mutations/create-customer-v2.html) and [`updateCustomerV2`]({{page.baseurl}}/graphql/mutations/update-customer-v2.html) mutations to manage customer accounts. These new mutations require different input objects than the `createCustomer` and `updateCustomer` mutations. To change a customer's email address, use the new [`updateCustomerEmail`]({{page.baseurl}}/graphql/mutations/update-customer-email.html) mutation. _Fix submitted by Michał Derlatka in pull request [28888](https://github.com/magento/magento2/pull/28888)_. [GitHub-28570](https://github.com/magento/magento2/issues/28570)
+*  We have added the [`createCustomerV2`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-customer-v2.html) and [`updateCustomerV2`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-customer-v2.html) mutations to manage customer accounts. These new mutations require different input objects than the `createCustomer` and `updateCustomer` mutations. To change a customer's email address, use the new [`updateCustomerEmail`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-customer-email.html) mutation. _Fix submitted by Michał Derlatka in pull request [28888](https://github.com/magento/magento2/pull/28888)_. [GitHub-28570](https://github.com/magento/magento2/issues/28570)
 
 <!-- ENGCOM-7750 -->
 
@@ -1025,7 +1025,7 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 <!-- ENGCOM-7663 -->
 
-*  You can use the `subscribeEmailToNewsletter` mutation to subscribe customers to a newsletter. See [`subscribeEmailToNewsletter` mutation]({{page.baseurl}}/graphql/mutations/subscribe-email-to-newsletter.html). _Fix submitted by Alexander Taranovsky in pull request [27586](https://github.com/magento/magento2/pull/27586)_. [GitHub-27337](https://github.com/magento/magento2/issues/27337)
+*  You can use the `subscribeEmailToNewsletter` mutation to subscribe customers to a newsletter. See [`subscribeEmailToNewsletter` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/subscribe-email-to-newsletter.html). _Fix submitted by Alexander Taranovsky in pull request [27586](https://github.com/magento/magento2/pull/27586)_. [GitHub-27337](https://github.com/magento/magento2/issues/27337)
 
 <!-- ENGCOM-7216 -->
 
@@ -1061,19 +1061,19 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 *  The default GraphQL `Category` method now sorts by category position as expected. _Fix submitted by Derrik Nyomo in pull request [29301](https://github.com/magento/magento2/pull/29301)_. [GitHub-104](https://github.com/magento/catalog-storefront/issues/104)
 
-*  Added support for  wish lists in Magento Open Source. You can [add items]({{page.baseurl}}/graphql/mutations/add-products-to-wishlist.html) to, [update items]({{page.baseurl}}/graphql/mutations/update-products-in-wishlist.html) in, and [remove items]({{page.baseurl}}/graphql/mutations/remove-products-from-wishlist.html) from a wish list. _Fix submitted by Eduard Chitoraga in pull requests [28205](https://github.com/magento/magento2/pull/28205) and 264 in private repo partners-magento2ee_. [GitHub-28551](https://github.com/magento/magento2/issues/28551)
+*  Added support for  wish lists in Magento Open Source. You can [add items](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-products-to-wishlist.html) to, [update items](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-products-in-wishlist.html) in, and [remove items](https://devdocs.magento.com/guides/v2.4/graphql/mutations/remove-products-from-wishlist.html) from a wish list. _Fix submitted by Eduard Chitoraga in pull requests [28205](https://github.com/magento/magento2/pull/28205) and 264 in private repo partners-magento2ee_. [GitHub-28551](https://github.com/magento/magento2/issues/28551)
 
-*  The [`addProductsToCart` mutation]({{page.baseurl}}/graphql/mutations/add-products-to-cart.html) allows you to add any type of product to the active cart. We recommend using this mutation instead of single-purpose mutations such as `addSimpleProductsToCart`. _Fix submitted by Yaroslav Rogoza in pull request [27914](https://github.com/magento/magento2/pull/27914)_. [GitHub-28524](https://github.com/magento/magento2/issues/28524)
+*  The [`addProductsToCart` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-products-to-cart.html) allows you to add any type of product to the active cart. We recommend using this mutation instead of single-purpose mutations such as `addSimpleProductsToCart`. _Fix submitted by Yaroslav Rogoza in pull request [27914](https://github.com/magento/magento2/pull/27914)_. [GitHub-28524](https://github.com/magento/magento2/issues/28524)
 
-*  Added GraphQL Vault support for the [Payflow Pro Vault]({{page.baseurl}}/graphql/payment-methods/payflow-pro-vault.html) payment method. _Fix submitted by Oleh Usik in pull request [28821](https://github.com/magento/magento2/pull/28821)_. [GitHub-28520](https://github.com/magento/magento2/issues/28520)
+*  Added GraphQL Vault support for the [Payflow Pro Vault](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/payflow-pro-vault.html) payment method. _Fix submitted by Oleh Usik in pull request [28821](https://github.com/magento/magento2/pull/28821)_. [GitHub-28520](https://github.com/magento/magento2/issues/28520)
 
-*  Updated the GraphQL [`storeConfig` query]({{page.baseurl}}/graphql/queries/store-config.html) to include new customer configuration settings. _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
+*  Updated the GraphQL [`storeConfig` query](https://devdocs.magento.com/guides/v2.4/graphql/queries/store-config.html) to include new customer configuration settings. _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
 
-*  Added the [`resetPassword` mutation]({{page.baseurl}}/graphql/mutations/reset-password.html). _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
+*  Added the [`resetPassword` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/reset-password.html). _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
 
-*  Added the [`requestPasswordResetEmail` mutation]({{page.baseurl}}/graphql/mutations/request-password-reset-email.html), which triggers the password reset email for the provided email address. _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
+*  Added the [`requestPasswordResetEmail` mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/request-password-reset-email.html), which triggers the password reset email for the provided email address. _Fix submitted by Oleh Usik in pull request [27876](https://github.com/magento/magento2/pull/27876)_. [GitHub-28521](https://github.com/magento/magento2/issues/28521)
 
-*  Added discussion about Klarna GraphQL in [Klarna's payment method]({{page.baseurl}}/graphql/payment-methods/klarna.html) and[`createKlarnaPaymentsSession`]({{page.baseurl}}/graphql/mutations/create-klarna-payments-session.html)
+*  Added discussion about Klarna GraphQL in [Klarna's payment method](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/klarna.html) and[`createKlarnaPaymentsSession`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-klarna-payments-session.html)
 
 ### Images
 
@@ -1389,7 +1389,7 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 ### Performance
 
-*  Three new configuration settings support a decrease in consumer queue CPU consumption. These optional parameters provide increased control over consumers and save server resources. See [Configure message queues]({{page.baseurl}}/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
+*  Three new configuration settings support a decrease in consumer queue CPU consumption. These optional parameters provide increased control over consumers and save server resources. See [Configure message queues](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
 
 <!--- MC-31617-->
 
@@ -1943,7 +1943,7 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements]({{page.baseurl}}/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
 
 ### Installation and upgrade instructions
 
@@ -1951,6 +1951,6 @@ You can install Adobe Commerce 2.4.1 using Composer.
 
 ## Migration tool kits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool]({{page.baseurl}}/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento-commerce/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

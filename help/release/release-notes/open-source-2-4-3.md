@@ -11,7 +11,7 @@ This release includes over 370 new fixes to core code and 33 security enhancemen
 
 {{bics}}
 
-See [Adobe Commerce 2.4.2-p2 release notes]({{page.baseurl}}/release-notes/2-4-2-p2.html) for information about Adobe Commerce 2.4.2-p2.
+See [Adobe Commerce 2.4.2-p2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/2-4-2-p2.html) for information about Adobe Commerce 2.4.2-p2.
 
 ## Other release information
 
@@ -45,7 +45,7 @@ This release includes 33 security fixes and platform security improvements. Many
 
 #### Thirty-three security enhancements that help close remote code execution (RCE) and cross-site scripting (XSS) vulnerabilities
 
-No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP allowlisting, [two-factor authentication]({{page.baseurl}}/security/two-factor-authentication.html), use of a VPN, the use of a unique location rather than `/admin`, and good password hygiene. See [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb21-64.html) for a discussion of these fixed issues.
+No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP allowlisting, [two-factor authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html), use of a VPN, the use of a unique location rather than `/admin`, and good password hygiene. See [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb21-64.html) for a discussion of these fixed issues.
 
 #### Additional security enhancements
 
@@ -53,7 +53,7 @@ Security improvements for this release improve compliance with the latest securi
 
 *  A **new Composer plugin** helps prevent dependency confusion and identifies malicious packages with the same names as internal packages on the public package repository. See the [Adobe Releases New Composer Plugin with Magento 2.4.3 Release](https://magento.com/blog/best-practices/adobe-releases-new-composer-plugin-magento-243-release) blog post.
 
-*  **Rate limiting is now built in to Magento APIs** to prevent denial-of-service (DoS) attacks. Web APIs now impose restrictions on the size or number of resources (the default maximum is set to 20 and can be configured to a different value based on business need) that can be requested by a client. See [Rate limiting]({{page.baseurl}}/get-started/api-security.html) for information about configuring these restrictions. <!--- MC-35358-->
+*  **Rate limiting is now built in to Magento APIs** to prevent denial-of-service (DoS) attacks. Web APIs now impose restrictions on the size or number of resources (the default maximum is set to 20 and can be configured to a different value based on business need) that can be requested by a client. See [Rate limiting](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html) for information about configuring these restrictions. <!--- MC-35358-->
 
 *  **ReCAPTCHA  coverage has been extended** to include:
 
@@ -87,7 +87,7 @@ This release contains enhancements that improve the quality of the framework and
 
 **PayPal Pay Later is now supported** in deployments that include PayPal. This feature allows shoppers to pay for an order in bi-weekly installments instead of paying the full amount at time of purchase. <!--- MC-40556-->
 
-**New `use_application_lock` indexing mode**. The `use_application_lock` mode lets you enable re-indexing through either the use of environment variables or by configuring the `app/etc/env.php` file. You no longer need to manually reset the indexer after failure with this mode enabled.  See [Using application lock mode for reindex processes]({{page.baseurl}}/extension-dev-guide/indexing.html#using-application-lock-mode-for-reindex-processes).
+**New `use_application_lock` indexing mode**. The `use_application_lock` mode lets you enable re-indexing through either the use of environment variables or by configuring the `app/etc/env.php` file. You no longer need to manually reset the indexer after failure with this mode enabled.  See [Using application lock mode for reindex processes](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing.html#using-application-lock-mode-for-reindex-processes).
 
 ### Platform enhancements
 
@@ -113,9 +113,9 @@ This release includes Adobe Stock Integration v2.1.1.
 
 ### GraphQL
 
-This release adds GraphQL coverage for shared routes. The [route query]({{ page.baseurl }}/graphql/queries/route.html) and [RoutableInterface]({{ page.baseurl }}/graphql/interfaces/routable-interface.html) support routing requests on product, category, and CMS pages. The `urlResolver` query has been deprecated, and its functionality has been superseded by the `route` query.
+This release adds GraphQL coverage for shared routes. The [route query](https://devdocs.magento.com/guides/v2.4/graphql/queries/route.html) and [RoutableInterface](https://devdocs.magento.com/guides/v2.4/graphql/interfaces/routable-interface.html) support routing requests on product, category, and CMS pages. The `urlResolver` query has been deprecated, and its functionality has been superseded by the `route` query.
 
-See the [GraphQL Developer Guide]({{page.baseurl}}/graphql/) for details on these enhancements.
+See the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/) for details on these enhancements.
 
 ### Page Builder
 
@@ -142,17 +142,17 @@ The scope of the [Upgrade Compatibility Tool](https://experienceleague.adobe.com
 
 See the following articles for updates on features and changes for this release:
 
-*  [Amazon Pay]({{ site.user_guide_url }}/payment/amazon-pay.html)
+*  [Amazon Pay](https://docs.magento.com/user-guide/payment/amazon-pay.html)
 
-*  [Braintree]({{ site.user_guide_url }}/payment/braintree.html)
+*  [Braintree](https://docs.magento.com/user-guide/payment/braintree.html)
 
-*  [dotdigital Engagement Cloud]({{ site.baseurl }}/extensions/vendor/dotdigital/release-notes.html)
+*  [dotdigital Engagement Cloud](https://devdocs.magento.com/extensions/vendor/dotdigital/release-notes.html)
 
-*  [Klarna]({{ site.user_guide_url }}/payment/klarna.html)
+*  [Klarna](https://docs.magento.com/user-guide/payment/klarna.html)
 
-*  [Vertex Cloud]({{ site.user_guide_url }}/tax/vertex.html)
+*  [Vertex Cloud](https://docs.magento.com/user-guide/tax/vertex.html)
 
-*  [Yotpo Product Reviews]({{ site.baseurl }}/extensions/vendor/yotpo/release-notes.html)
+*  [Yotpo Product Reviews](https://devdocs.magento.com/extensions/vendor/yotpo/release-notes.html)
 
 ## Fixed issues
 
@@ -874,7 +874,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!---  magento/partners-magento2ee#421-->
 
-*  The [`dynamicBlocks` query]({{page.baseurl}}/graphql/queries/dynamic-blocks.html) returns the contents of dynamic blocks that match the specified filters.
+*  The [`dynamicBlocks` query](https://devdocs.magento.com/guides/v2.4/graphql/queries/dynamic-blocks.html) returns the contents of dynamic blocks that match the specified filters.
 
 <!--- ENGCOM-8603-->
 
@@ -1006,7 +1006,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-41445-->
 
-*  The Magento dependency `pelago/emogrifier` has been updated from version 3.1.0 to 5.0.0. This update resulted in the introduction of backwards-incompatible changes to the `Magento\Email\Model\Template\Filter` class. The changed code is executed during Magento email templates rendering. See [BIC reference]({{page.baseurl}}/release-notes/backward-incompatible-changes/reference.html).
+*  The Magento dependency `pelago/emogrifier` has been updated from version 3.1.0 to 5.0.0. This update resulted in the introduction of backwards-incompatible changes to the `Magento\Email\Model\Template\Filter` class. The changed code is executed during Magento email templates rendering. See [BIC reference](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html).
 
 <!--- MC-42212-->
 
@@ -1338,7 +1338,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 *  Numeric values in `WHERE IN` expressions are now cast as number, not as string, which improves query performance in some versions of MariaDB. [GitHub-31135](https://github.com/magento/magento2/issues/31135)
 
-*  The `use_application_lock` mode lets you enable re-indexing through either the use of environment variables or by configuring the `app/etc/env.php` file. You no longer need to manually reset the indexer after failure with this mode enabled. When this mode is not enabled, you must manually reset the indexer after failure. See [Using application lock mode for reindex processes]({{page.baseurl}}/extension-dev-guide/indexing.html#using-application-lock-mode-for-reindex-processes)
+*  The `use_application_lock` mode lets you enable re-indexing through either the use of environment variables or by configuring the `app/etc/env.php` file. You no longer need to manually reset the indexer after failure with this mode enabled. When this mode is not enabled, you must manually reset the indexer after failure. See [Using application lock mode for reindex processes](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing.html#using-application-lock-mode-for-reindex-processes)
 
 ### Pricing
 
@@ -1908,14 +1908,14 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements]({{page.baseurl}}/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
 
 ### Installation and upgrade instructions
 
-You can install Magento Open Source 2.4.3 using [Composer]({{ page.baseurl }}/install-gde/composer.html).
+You can install Magento Open Source 2.4.3 using [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
 
 ## Migration toolkits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool]({{page.baseurl}}/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento-commerce/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

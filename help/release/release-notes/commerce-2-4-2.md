@@ -19,7 +19,7 @@ DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in t
 
 Merchants can now install time-sensitive security fixes without applying the hundreds of functional fixes and enhancements that a full quarterly release provides (for example, Magento 2.4.1-p1). Patch 2.4.0.12 (Composer package 2.4.1-p1) is a security patch that provides fixes for vulnerabilities that have been identified in our previous quarterly release, Magento 2.4.1. All hot fixes that were applied to the 2.4.1 release are included in this security patch. (A *hot fix* provides a fix to a released version of Magento that addresses a specific problem or bug.)
 
-For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches (including patch 2.4.1-p1), see [Install Magento using Composer]({{ page.baseurl }}/install-gde/composer.html). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
+For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches (including patch 2.4.1-p1), see [Install Magento using Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
 
 ## Other release information
 
@@ -35,7 +35,7 @@ This release includes over 35 security fixes and platform security improvements.
 
 #### Over 35 security enhancements that help close remote code execution (RCE) and cross-site scripting (XSS) vulnerabilities
 
-No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP allowlisting, [two-factor authentication]({{page.baseurl}}/security/two-factor-authentication.html), use of a VPN, the use of a unique location rather than `/admin`, and good password hygiene. See [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb21-08.html) for a discussion of these fixed issues.
+No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts: IP allowlisting, [two-factor authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html), use of a VPN, the use of a unique location rather than `/admin`, and good password hygiene. See [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb21-08.html) for a discussion of these fixed issues.
 
 #### Additional security enhancements
 
@@ -57,15 +57,15 @@ This release contains enhancements to core quality, which improve the quality of
 
 ### Platform enhancements
 
-*  [**Elasticsearch 7.9.x is now supported**]({{ page.baseurl }}/install-gde/system-requirements.html). Although we recommend running Elasticsearch 7.9.x, Magento 2.4.x remains compatible with Elasticsearch 7.4.x. <!--- MC-36867-->
+*  [**Elasticsearch 7.9.x is now supported**](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). Although we recommend running Elasticsearch 7.9.x, Magento 2.4.x remains compatible with Elasticsearch 7.4.x. <!--- MC-36867-->
 
-*  Magento 2.4.2 has been tested with [Varnish 6.4]({{ page.baseurl }}/install-gde/system-requirements.html). Magento 2.4.x remains compatible with Varnish 6.x.
+*  Magento 2.4.2 has been tested with [Varnish 6.4](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). Magento 2.4.x remains compatible with Varnish 6.x.
 
-*  [**Redis 6.x is now supported**]({{ page.baseurl }}/install-gde/system-requirements.html). Magento 2.4.x remains compatible with Redis 5.x. <!--- MC-34853-->
+*  [**Redis 6.x is now supported**](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). Magento 2.4.x remains compatible with Redis 5.x. <!--- MC-34853-->
 
 *  Magento 2.4.2 is now compatible with **Composer 2.x**. We recommend that merchants migrate to Composer 2.x. Although you can install this release using Composer 1.x, Composer 1.x will soon reach end-of-life. For an overview of Composer 2.x features, see [Composer 2.0 is now available!](https://blog.packagist.com/composer-2-0-is-now-available/)
 
-The ability to configure a Magento installation to use a split database has been deprecated in this release. Merchants who currently use split database should start planning to revert to or migrate to a single database or use an alternative approach. See the [Deprecation of split database functionality in Magento Commerce](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) DevBlog post for an overview of this issue.  See [Revert from a split database to a single database]({{ page.baseurl }}/config-guide/revert-split-database.html) for migration instructions.
+The ability to configure a Magento installation to use a split database has been deprecated in this release. Merchants who currently use split database should start planning to revert to or migrate to a single database or use an alternative approach. See the [Deprecation of split database functionality in Magento Commerce](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) DevBlog post for an overview of this issue.  See [Revert from a split database to a single database](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html) for migration instructions.
 
 ### Performance enhancements
 
@@ -75,20 +75,20 @@ This release includes code enhancements that boost API performance and Admin res
 
 This release adds GraphQL coverage for the following features:
 
-*  Added support for multiple wishlists. You can use GraphQL to [create]({{ page.baseurl }}/graphql/mutations/create-wishlist.html), [delete]({{ page.baseurl }}/graphql/mutations/delete-wishlist.html), and [rename]({{ page.baseurl }}/graphql/mutations/update-wishlist.html) wishlists as well as [move]({{ page.baseurl }}/graphql/mutations/move-products-between-wishlists.html) or [copy]({{ page.baseurl }}/graphql/mutations/copy-products-between-wishlists.html) items between them. <!--- MC-32356-->
+*  Added support for multiple wishlists. You can use GraphQL to [create](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-wishlist.html), [delete](https://devdocs.magento.com/guides/v2.4/graphql/mutations/delete-wishlist.html), and [rename](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-wishlist.html) wishlists as well as [move](https://devdocs.magento.com/guides/v2.4/graphql/mutations/move-products-between-wishlists.html) or [copy](https://devdocs.magento.com/guides/v2.4/graphql/mutations/copy-products-between-wishlists.html) items between them. <!--- MC-32356-->
 
-*  Added support for returned merchandise authorizations (RMA). Shoppers can [request a return]({{page.baseurl}}/graphql/mutations/request-return.html). If the merchant accepts the request, the shopper can perform tasks such as [adding a comment]({{page.baseurl}}/graphql/mutations/add-return-comment.html) and [add tracking information]({{page.baseurl}}/graphql/mutations/add-return-tracking.html). <!--- MC-34596-->
+*  Added support for returned merchandise authorizations (RMA). Shoppers can [request a return](https://devdocs.magento.com/guides/v2.4/graphql/mutations/request-return.html). If the merchant accepts the request, the shopper can perform tasks such as [adding a comment](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-return-comment.html) and [add tracking information](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-return-tracking.html). <!--- MC-34596-->
 
 *  Added support for the following B2B features:
-   *  Companies. You can add company [administrators]({{page.baseurl}}/graphql/mutations/create-company.html), [users]({{page.baseurl}}/graphql/mutations/create-company-user.html), [roles]({{page.baseurl}}/graphql/mutations/create-company-role.html), and [teams]({{page.baseurl}}/graphql/mutations/create-company-team.html). <!--- MC-33861-->
-   *  Company credit. The [company query]({{page.baseurl}}/graphql/queries/company.html) includes details about the company's credit history. <!--- MC-33862-->
-   *  Requisition lists. You can [create]({{page.baseurl}}/graphql/mutations/create-requisition-list.html), [delete]({{ page.baseurl }}/graphql/mutations/delete-requisition-list.html), and [update]({{page.baseurl}}/graphql/mutations/update-requisition-list.html) requisition lists. Support also includes the ability to [add]({{page.baseurl}}/graphql/mutations/add-products-to-requisition-list.html), [update]({{page.baseurl}}/graphql/mutations/update-products-in-wishlist.html), [delete]({{page.baseurl}}/graphql/mutations/delete-requisition-list-items.html), [copy]({{page.baseurl}}/graphql/mutations/copy-items-between-requisition-lists.html), and [move]({{page.baseurl}}/graphql/mutations/move-items-between-requisition-lists.html) items within a requisition list as well as add requisition list items [into the cart]({{page.baseurl}}/graphql/mutations/add-requisition-list-items-to-cart.html). <!--- MC-34312-->
+   *  Companies. You can add company [administrators](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-company.html), [users](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-company-user.html), [roles](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-company-role.html), and [teams](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-company-team.html). <!--- MC-33861-->
+   *  Company credit. The [company query](https://devdocs.magento.com/guides/v2.4/graphql/queries/company.html) includes details about the company's credit history. <!--- MC-33862-->
+   *  Requisition lists. You can [create](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-requisition-list.html), [delete](https://devdocs.magento.com/guides/v2.4/graphql/mutations/delete-requisition-list.html), and [update](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-requisition-list.html) requisition lists. Support also includes the ability to [add](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-products-to-requisition-list.html), [update](https://devdocs.magento.com/guides/v2.4/graphql/mutations/update-products-in-wishlist.html), [delete](https://devdocs.magento.com/guides/v2.4/graphql/mutations/delete-requisition-list-items.html), [copy](https://devdocs.magento.com/guides/v2.4/graphql/mutations/copy-items-between-requisition-lists.html), and [move](https://devdocs.magento.com/guides/v2.4/graphql/mutations/move-items-between-requisition-lists.html) items within a requisition list as well as add requisition list items [into the cart](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-requisition-list-items-to-cart.html). <!--- MC-34312-->
 
 *  Added support for unions in Magento GraphQL. [GitHub-29425](https://github.com/magento/magento2/issues/29425) <!-- ENGCOM-8291 -->
 
-*  Added support for [comparison lists]({{ page.baseurl }}/graphql/queries/compare-list.html). Shoppers can [create]({{ page.baseurl }}/graphql/mutations/create-compare-list.html) and [delete]({{ page.baseurl }}/graphql/mutations/delete-compare-list.html) comparison lists, and [add]({{ page.baseurl }}/graphql/mutations/add-products-to-compare-list.html) and [remove]({{ page.baseurl }}/graphql/mutations/remove-products-from-compare-list.html) items to the comparison lists. In addition, shoppers that create a compare list as a guest can log in as a customer and [retain]({{ page.baseurl }}/graphql/mutations/assign-compare-list-to-customer.html) their comparison lists.
+*  Added support for [comparison lists](https://devdocs.magento.com/guides/v2.4/graphql/queries/compare-list.html). Shoppers can [create](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-compare-list.html) and [delete](https://devdocs.magento.com/guides/v2.4/graphql/mutations/delete-compare-list.html) comparison lists, and [add](https://devdocs.magento.com/guides/v2.4/graphql/mutations/add-products-to-compare-list.html) and [remove](https://devdocs.magento.com/guides/v2.4/graphql/mutations/remove-products-from-compare-list.html) items to the comparison lists. In addition, shoppers that create a compare list as a guest can log in as a customer and [retain](https://devdocs.magento.com/guides/v2.4/graphql/mutations/assign-compare-list-to-customer.html) their comparison lists.
 
-*  Added the [`generateCustomerTokenAsAdmin`]({{ page.baseurl }}/graphql/mutations/generate-customer-token-as-admin.html) mutation and updated the `Customer` object to support remote purchasing assistance.
+*  Added the [`generateCustomerTokenAsAdmin`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token-as-admin.html) mutation and updated the `Customer` object to support remote purchasing assistance.
 
 *  Added localization support across stores to support tasks such as changing languages, carts, and currencies. <!--- MC-37801-->
 
@@ -96,15 +96,15 @@ This release adds GraphQL coverage for the following features:
 
 *  Integer type object IDs have been deprecated in favor of `uid` attributes of type ID. <!--- MC-36346-->
 
-*  Added the `staging` attribute to the [`ProductInterface`]({{ page.baseurl }}/graphql/interfaces/product-interface.html) and [`CategoryInterface`]({{ page.baseurl }}/graphql/interfaces/category-interface.html) to determine if a product is staged and to view its associated campaign information. <!--- MC-33897-->
+*  Added the `staging` attribute to the [`ProductInterface`](https://devdocs.magento.com/guides/v2.4/graphql/interfaces/product-interface.html) and [`CategoryInterface`](https://devdocs.magento.com/guides/v2.4/graphql/interfaces/category-interface.html) to determine if a product is staged and to view its associated campaign information. <!--- MC-33897-->
 
-See the [GraphQL Developer Guide]({{page.baseurl}}/graphql/) for details on these enhancements.
+See the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/) for details on these enhancements.
 
 ### B2B
 
 Magento 2.4.2 introduces B2B v1.3.1. This release includes support for online payments for purchase orders as well as multiple bug fixes.
 
-**Purchase orders can now be completed using online payment methods**. B2B buyers are prompted to select their preferred payment method for each [purchase order]({{ site.user_guide_url }}/stores/b2b-purchase-order-flow.html) during the initial checkout. After the purchase order has been approved, buyers are prompted to enter payment details to convert the purchase order to a final order.
+**Purchase orders can now be completed using online payment methods**. B2B buyers are prompted to select their preferred payment method for each [purchase order](https://docs.magento.com/user-guide/stores/b2b-purchase-order-flow.html) during the initial checkout. After the purchase order has been approved, buyers are prompted to enter payment details to convert the purchase order to a final order.
 
 To support a complete workflow for accepting online payments, this feature also:
 
@@ -122,7 +122,7 @@ To support a complete workflow for accepting online payments, this feature also:
 
 *  Allows buyers to change the payment method during the final payment step to maintain flexibility and increase conversion.
 
-This release also includes multiple bug fixes. See [B2B Release Notes]({{page.baseurl}}/release-notes/b2b-release-notes.html).
+This release also includes multiple bug fixes. See [B2B Release Notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html).
 
 ### PWA Studio
 
@@ -146,11 +146,11 @@ This release includes enhancements to Page Builder content migration and Page Bu
 
 *  Content migrated to Page Builder is no longer padded with default inline styling.
 
-*  Page Builder no longer requires all content types to be placed within a row. The [Page Builder stage]({{ site.user_guide_url }}/cms/page-builder-workspace.html#stage) is now initially blank and supports adding the following content types directly to the stage: Rows, Columns, Tabs, HTML Code, Blocks, Dynamic Blocks.
+*  Page Builder no longer requires all content types to be placed within a row. The [Page Builder stage](https://docs.magento.com/user-guide/cms/page-builder-workspace.html#stage) is now initially blank and supports adding the following content types directly to the stage: Rows, Columns, Tabs, HTML Code, Blocks, Dynamic Blocks.
 
 *  Predefined margins and paddings are no longer required for content types.
 
-*  The new mobile [viewport switcher]({{ site.user_guide_url }}/cms/page-builder-workspace.html#viewports) and viewport scope for form field values lets users and developers perform these actions:
+*  The new mobile [viewport switcher](https://docs.magento.com/user-guide/cms/page-builder-workspace.html#viewports) and viewport scope for form field values lets users and developers perform these actions:
 
    *  View content on different view ports when authoring.
 
@@ -160,7 +160,7 @@ This release includes enhancements to Page Builder content migration and Page Bu
 
 ### Interactive In-Product Guidance
 
-Interactive In-Product Guidance provides merchants with usage tips and information from within the Admin on new feature announcements, walk-through guides, on-boarding information, and tool tips.  **Administrators must opt-in from the Admin to receive in-product guidance if this feature is not enabled**. See [Usage Data Collection]({{ site.user_guide_url }}/stores/admin.html) and [Admin Usage]({{ site.user_guide_url }}/configuration/advanced/admin.html#admin-usage).
+Interactive In-Product Guidance provides merchants with usage tips and information from within the Admin on new feature announcements, walk-through guides, on-boarding information, and tool tips.  **Administrators must opt-in from the Admin to receive in-product guidance if this feature is not enabled**. See [Usage Data Collection](https://docs.magento.com/user-guide/stores/admin.html) and [Admin Usage](https://docs.magento.com/user-guide/configuration/advanced/admin.html#admin-usage).
 
 ### Adobe Stock Integration
 
@@ -180,7 +180,7 @@ This release includes Adobe Stock Integration v2.1.1.
 
 *  Manage folder structure.
 
-**Web-optimized images in content**. Merchants can now use [web-optimized image rendition]({{ site.user_guide_url }}/cms/media-gallery-image-optimization.html) in content instead of high resolution images. The original image remains unmodified in the Media Gallery, and the image rendition is dynamically generated when the image is inserted in the content.
+**Web-optimized images in content**. Merchants can now use [web-optimized image rendition](https://docs.magento.com/user-guide/cms/media-gallery-image-optimization.html) in content instead of high resolution images. The original image remains unmodified in the Media Gallery, and the image rendition is dynamically generated when the image is inserted in the content.
 
 ### AWS S3 support enhancements
 
@@ -188,7 +188,7 @@ Amazon Simple Storage Service (AWS S3) support has been enhanced to include supp
 
 *  Object storage and future extensibility
 
-*  [Storing media files]({{ page.baseurl }}/config-guide/remote-storage/config-remote-storage.html) on AWS S3
+*  [Storing media files](https://devdocs.magento.com/guides/v2.4/config-guide/remote-storage/config-remote-storage.html) on AWS S3
 
 Support for AWS S3 has been added to all modules including B2B, PageBuilder, and Adobe Stock Integration.
 
@@ -204,17 +204,17 @@ The MCOM Connector is fully compatible with Magento 2.4.2. Bug fixes and enhance
 
 See the following articles for updates on features and changes for this release:
 
-*  [Amazon Pay]({{ site.user_guide_url }}/payment/amazon-pay.html). Amazon Pay has been deprecated in this release and will be removed in Magento 2.5.0. Magento 2.4.3 and higher will contain only updates for compatibility and fixes for major bugs.
+*  [Amazon Pay](https://docs.magento.com/user-guide/payment/amazon-pay.html). Amazon Pay has been deprecated in this release and will be removed in Magento 2.5.0. Magento 2.4.3 and higher will contain only updates for compatibility and fixes for major bugs.
 
-*  [Braintree]({{ site.user_guide_url }}/payment/braintree.html)
+*  [Braintree](https://docs.magento.com/user-guide/payment/braintree.html)
 
-*  [dotdigital Engagement Cloud]({{ site.user_guide_url }}/marketing/dotdigital/engagement-cloud.html)
+*  [dotdigital Engagement Cloud](https://docs.magento.com/user-guide/marketing/dotdigital/engagement-cloud.html)
 
-*  [Klarna]({{ site.user_guide_url }}/payment/klarna.html)
+*  [Klarna](https://docs.magento.com/user-guide/payment/klarna.html)
 
-*  [Vertex Cloud]({{ site.user_guide_url }}/tax/vertex.html)
+*  [Vertex Cloud](https://docs.magento.com/user-guide/tax/vertex.html)
 
-*  [Yotpo Product Reviews]({{ site.baseurl }}/extensions/vendor/yotpo/release-notes.html)
+*  [Yotpo Product Reviews](https://devdocs.magento.com/extensions/vendor/yotpo/release-notes.html)
 
 ## Fixed issues
 
@@ -2442,14 +2442,14 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements]({{page.baseurl}}/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
 
 ### Installation and upgrade instructions
 
-You can install Adobe Commerce 2.4.2 using [Composer]({{ page.baseurl }}/install-gde/composer.html).
+You can install Adobe Commerce 2.4.2 using [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
 
 ## Migration tool kits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool]({{page.baseurl}}/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento-commerce/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

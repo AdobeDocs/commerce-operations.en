@@ -11,7 +11,7 @@ Lorem ipsum
 
 The `ece-tools` package is a scalable deployment tool that simplifies the Adobe on cloud infrastructure upgrade process by providing commands to backup the database, apply custom patches, verify environment packages, and more. The package also contains scripts and Adobe on cloud infrastructure commands to help manage your code and automate the project build and deploy process.
 
-See [Release Notes for ece-tools]({{ site.baseurl }}/cloud/release-notes/cloud-tools.html) for the latest updates and improvements to the ece-tools package as well as information about Adobe on cloud infrastructure upgrades and patches.
+See [Release Notes for ece-tools](https://devdocs.magento.com/cloud/release-notes/cloud-tools.html) for the latest updates and improvements to the ece-tools package as well as information about Adobe on cloud infrastructure upgrades and patches.
 
 >[!NOTE]
 >
