@@ -17,6 +17,7 @@ Adobe Commerce on cloud infrastructure
 ## Convert all MyISAM tables to InnoDb
 
 Adobe recommends using the InnoDb database engine. In a default Adobe Commerce installation, all tables in the database are stored using the InnoDb engine. However, some third-party modules (extensions) can introduce tables in the MyISAM format. After you install a third-party module, check the database to identify any tables in MyISAM format and convert them to InnoDb.
+
 ### Determine if a module includes MyISAM tables
 
 You can analyze the third-party module code before installing it, to determine if it uses MyISAM tables.
@@ -99,6 +100,7 @@ See [Enable archiving](https://docs.magento.com/user-guide/sales/order-archive.h
 
 ## Additional information
 
-- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](upgrade-compact-to-dynamic-tables.md)
-- [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)
+* [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](upgrade-compact-to-dynamic-tables.md)
+* [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)
+
 

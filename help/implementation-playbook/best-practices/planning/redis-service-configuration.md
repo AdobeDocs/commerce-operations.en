@@ -60,3 +60,4 @@ For Adobe Commerce on-premises deployments, configure the new Redis cache implem
 
 * [Adobe Commerce Release v2.3.5 - Performance boosts](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#performance-boosts)
 * [Redis Page Cache](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-pg-cache.html)
+
