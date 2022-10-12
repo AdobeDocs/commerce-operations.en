@@ -20,7 +20,7 @@ This library provides a unified set of functions for creating privacy-data reque
 Use one of the following methods to download the library file:
 
 -  npm: `npm install @adobe/adobe-privacy`
--  GitHub: <https://github.com/Adobe-Marketing-Cloud/adobe-privacy>
+-  GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
 After you have the file, you will need to add it to a custom module or theme installed in your Adobe Commerce and Magento Open Source instance. Follow the instructions described in the [Use custom JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) topic to accomplish this task.
 

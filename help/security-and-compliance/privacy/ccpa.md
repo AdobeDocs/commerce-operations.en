@@ -20,7 +20,7 @@ The CCPA grants the following new rights to consumers:
 
 ## CCPA Compliance Guide
 
-Developing and implementing a CCPA compliance plan requires a coordinated effort. We encourage merchants to assemble a cross-functional team, and follow the roadmap outlined in [CCPA Compliance Guide](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) to bring their company into compliance with the regulation. As a developer, you might be invited to participate as a stakeholder with an emphasis on steps 2 - 5 of the process. See the [CCPA Compliance Guide](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) for more information.
+Developing and implementing a CCPA compliance plan requires a coordinated effort. We encourage merchants to assemble a cross-functional team, and follow the roadmap outlined in [CCPA Compliance Guide](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) to bring their company into compliance with the regulation. As a developer, you might be invited to participate as a stakeholder with an emphasis on steps 2 through 5 of the process. See the [CCPA Compliance Guide](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) for more information.
 
 1. Assemble a cross-functional team to address CCPA compliance.
 
