@@ -27,6 +27,11 @@ The following sections include best practice information for the maintenance pha
  - Logs
  - Disk space
 
+## Database management
+
+- [Best practices for resolving database performance issues​](resolve-database-performance-issues.md)
+- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](2.3.5-upgrade-prerequisites-MariaDB.md)
+
 ## Catalog management
 
 - [Catalog Image Resizing](https://wiki.corp.adobe.com/x/oj4ykw) (wiki)
