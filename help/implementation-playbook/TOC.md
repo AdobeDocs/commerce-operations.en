@@ -85,4 +85,4 @@ mini-toc-levels: 3
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
     - [Resolve database performance issues​](best-practices/maintenance/resolve-database-performance-issues.md)
-    - [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](best-practices/maintenance/2.3.5-upgrade-prerequisites-MariaDB.md)
+    - [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](best-practices/maintenance/commerce-235-upgrade-prerequisites-MariaDB.md)
