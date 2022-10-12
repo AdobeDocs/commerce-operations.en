@@ -1933,13 +1933,13 @@ We are grateful to the wider Magento community and would like to acknowledge the
 
 The following table highlights contributions made by Partners. This table lists the Partner who contributed the pull request, the external pull request, and the GitHub issue number associated with it (if available).
 
-{% include release-notes/engcomm-2-4-1-partner.md %}
+{{$include /help/_includes/release-notes/engcomm-2-4-1-partner.md}}
 
 ### Individual contributor contributions
 
 The following table identifies contributions from our community members. This table lists the external pull requests, the GitHub issue number associated with it (if available), and the community member who contributed the pull request.
 
-{% include release-notes/engcomm-2-4-1-issues.md %}
+{{$include /help/_includes/release-notes/engcomm-2-4-1-issues.md}}
 
 ### System requirements
 
