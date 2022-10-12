@@ -103,11 +103,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="../security-and-compliance/overview.html">
+    <a href="../security-and-compliance/overview.md">
        <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.html"><strong>Security and Compliance</strong></a>
+      <a href="../security-and-compliance/overview.md"><strong>Security and Compliance</strong></a>
     </div>
   </td>
 </tr>
