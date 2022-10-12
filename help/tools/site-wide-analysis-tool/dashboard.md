@@ -5,7 +5,7 @@ description: Learn about the [!DNL Dashboard] tab in the [!DNL Site-Wide Analysi
 # [!UICONTROL Dashboard]
 
 The [!UICONTROL Dashboard] page shows at-a-glance [!DNL widgets] that provide a "single pane of glass view" of the health and current status of your Adobe Commerce website. These [!DNL widgets] each contain an access link to each feature’s page, to each tool itself, or to reports (depending on the [!DNL widget]).
-There is also a list of [!UICONTROL External Resources] links for Adobe Commerce, including the [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html#patch-grid), [Security Center](https://magento.com/security), and [Observation for Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+There is also a list of [!UICONTROL External Resources] links for Adobe Commerce, including the [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [Security Center](https://magento.com/security), and [Observation for Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
 
 ## Elements
 
@@ -23,8 +23,8 @@ The [!UICONTROL Upgrade Compatibility Tool] allows you to identify when core cod
 
 * **[!UICONTROL Non-recommended software in use]**: Displays the non-recommended software that your Adobe Commerce instance is currently using, based on your Adobe Commerce version. The non-recommended software is listed by [!UICONTROL Name], [!UICONTROL Installed Version], and [!UICONTROL Recommended Version].
 
-* **[!UICONTROL Recommended Patches]**: Displays a short list of any recommended patches based on both patches that you may have already installed and your Adobe Commerce version. The full list of recommended patches is found on the **[!UICONTROL Patches]** feature tab, which is also within the [!DNL Site-Wide Analysis Tool]. The patches are provided by the [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html). All patches listed are compatible with your current Adobe Commerce instance. 
-If there are no recommended patches to display for your Adobe Commerce instance, this [!DNL widget] will display, **[!UICONTROL No Recommended Patches]**. 
+* **[!UICONTROL Recommended Patches]**: Displays a short list of any recommended patches based on both patches that you may have already installed and your Adobe Commerce version. The full list of recommended patches is found on the **[!UICONTROL Patches]** feature tab, which is also within the [!DNL Site-Wide Analysis Tool]. The patches are provided by the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. All patches listed are compatible with your current Adobe Commerce instance.
+If there are no recommended patches to display for your Adobe Commerce instance, this [!DNL widget] will display, **[!UICONTROL No Recommended Patches]**.
 
 ## When to use
 
@@ -36,7 +36,7 @@ The **[!UICONTROL Dashboard]** page is your at-a-glance command center in the [!
 
 * [!DNL New Relic Alerts] are listed with the most recent alert on top, including a short description and how long ago the alert occurred.
 
-* The [!UICONTROL Recommendations] and [!UICONTROL Extensions] [!DNL widgets] have access to the full page of data for each feature by clicking **[!UICONTROL View All]**. 
+* The [!UICONTROL Recommendations] and [!UICONTROL Extensions] [!DNL widgets] have access to the full page of data for each feature by clicking **[!UICONTROL View All]**.
 
 * The [!UICONTROL Security Scan Tool] has a **[!UICONTROL View Report]** link in the [!DNL widget] window that takes you to the [!UICONTROL Recommendations] page.
 
@@ -48,4 +48,4 @@ The **[!UICONTROL Dashboard]** page is your at-a-glance command center in the [!
 
 * Go to the [!UICONTROL Security Scan Tool] [!DNL widget] and click [!UICONTROL View Report] to view a [!UICONTROL Recommendations] report for your site.
 
-* Use the [!DNL External Resources] links to either learn more information, keep up-to-date on security patches, updates, and best practices, or take advantage of the insight of the [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html#patch-grid), [Security Center](https://helpx.adobe.com/security.html), and [Observation for Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+* Use the [!DNL External Resources] links to either learn more information, keep up-to-date on security patches, updates, and best practices, or take advantage of the insight of the [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [Security Center](https://helpx.adobe.com/security.html), and [Observation for Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
