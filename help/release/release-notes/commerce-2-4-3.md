@@ -3,31 +3,31 @@ group: release-notes
 title: Adobe Commerce 2.4.3 Release Notes
 ---
 
-{{ site.data.var.ee }} 2.4.3 introduces enhancements to performance and security plus significant platform improvements. Security enhancements include expansion of reCAPTCHA coverage and inclusion of built-in rate limiting. Core composer dependencies and third-party libraries have been upgraded to the latest versions that are compatible with PHP 8.x.
+Adobe Commerce 2.4.3 introduces enhancements to performance and security plus significant platform improvements. Security enhancements include expansion of reCAPTCHA coverage and inclusion of built-in rate limiting. Core composer dependencies and third-party libraries have been upgraded to the latest versions that are compatible with PHP 8.x.
 
-This release includes over 370 new fixes to core code and 33 security enhancements. All known issues identified in the {{ site.data.var.ee }} 2.4.2 release notes have been fixed in this release.
+This release includes over 370 new fixes to core code and 33 security enhancements. All known issues identified in the Adobe Commerce 2.4.2 release notes have been fixed in this release.
 
-{:.bs-callout-info}
-Quarterly releases may contain backward-incompatible changes (BIC). {{ site.data.var.ee }} 2.4.3 contains minor backward-incompatible changes. To review minor backward-incompatible changes, see [BIC reference]({{page.baseurl}}/release-notes/backward-incompatible-changes/reference.html). (Major backward-incompatible issues are described in [BIC highlights]({{page.baseurl}}/release-notes/backward-incompatible-changes/index.html). Not all releases introduce major BICs.)
+{{bics}}
 
-See [{{site.data.var.ee}} 2.4.2-p2 release notes]({{page.baseurl}}/release-notes/2-4-2-p2.html) for information about {{ site.data.var.ee }} 2.4.2-p2.
+See [Adobe Commerce 2.4.2-p2 release notes]({{page.baseurl}}/release-notes/2-4-2-p2.html) for information about Adobe Commerce 2.4.2-p2.
+
 ## Other release information
 
 Although code for these features is bundled with quarterly releases of the Magento core code, several of these projects (for example, B2B, Page Builder, and Progressive Web Applications (PWA) Studio) are also released independently. Bug fixes for these projects are documented in the separate, project-specific release information that is available in the documentation for each project.
 
 ## Apply MC-43048__set_rate_limits__2.4.3.patch to address issue with API rate limiting
 
-This hotfix provides a solution for the issue where Web APIs cannot process requests that contain more than 20 items in an array. This issue affects deployments running {{ site.data.var.ce }} 2.4.3, {{ site.data.var.ee }} 2.4.3, or Magento 2.3.7-p1. Built-in rate limiting was added to these releases to prevent denial-of-service (DoS) attacks, and the default maximum was set to 20. This patch reverts the default limit to a higher value. If you suspect that your store is experiencing a DoS attack, Adobe recommends lowering the default input limits to a lower value to restrict the number of resources that can be requested. See the [Web API unable to process requests with more than 20 items in array](https://support.magento.com/hc/en-us/articles/4406893342093) Knowledge Base article.
+This hotfix provides a solution for the issue where Web APIs cannot process requests that contain more than 20 items in an array. This issue affects deployments running Magento Open Source 2.4.3, Adobe Commerce 2.4.3, or Magento 2.3.7-p1. Built-in rate limiting was added to these releases to prevent denial-of-service (DoS) attacks, and the default maximum was set to 20. This patch reverts the default limit to a higher value. If you suspect that your store is experiencing a DoS attack, Adobe recommends lowering the default input limits to a lower value to restrict the number of resources that can be requested. See the [Web API unable to process requests with more than 20 items in array](https://support.magento.com/hc/en-us/articles/4406893342093) Knowledge Base article.
 
 ## Apply AC-384__Fix_Incompatible_PHP_Method__2.4.3_ce.patch to address PHP fatal error on upgrade
 
-The following fatal error can occur during upgrade to {{ site.data.var.ee }} 2.4.3:
+The following fatal error can occur during upgrade to Adobe Commerce 2.4.3:
 
 ```terminal
 PHP Fatal error: Uncaught Error: Call to undefined function Magento\Framework\Filesystem\Directory\str_contains() in [...]/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74
 ```
 
-This error results from the use of the `str_contains` function, which is an PHP 8.x function. {{ site.data.var.ee }} 2.4.3 does not support PHP 8.x. This hotfix replaces this function with a supported PHP 7.x function. See the [{{site.data.var.ee}} upgrade 2.4.3, 2.3.7-p1 PHP Fatal error Hotfix](https://support.magento.com/hc/en-us/articles/4408021533069-Adobe-Commerce-upgrade-2-4-3-2-3-7-p1-PHP-Fatal-error-Hotfix) Knowledge Base article.
+This error results from the use of the `str_contains` function, which is an PHP 8.x function. Adobe Commerce 2.4.3 does not support PHP 8.x. This hotfix replaces this function with a supported PHP 7.x function. See the [Adobe Commerce upgrade 2.4.3, 2.3.7-p1 PHP Fatal error Hotfix](https://support.magento.com/hc/en-us/articles/4408021533069-Adobe-Commerce-upgrade-2-4-3-2-3-7-p1-PHP-Fatal-error-Hotfix) Knowledge Base article.
 
 ## Apply `AC-3022.patch` to continue offering DHL as a shipping carrier
 
@@ -59,8 +59,7 @@ Security improvements for this release improve compliance with the latest securi
 
    *  The Place Order storefront page and payment-related web APIs. ReCAPTCHA protection for these pages is disabled by default and can be enabled from the Admin. This coverage adds an anti-brute force mechanism to protect stores from carding attacks.
 
-{:.bs-callout-info}
-Starting with the release of {{site.data.var.ee}} 2.3.2, we will assign and publish indexed Common Vulnerabilities and Exposures (CVE) numbers with each security bug reported to us by external parties. This allows users to more easily identify unaddressed vulnerabilities in their deployment. You can learn more about CVE identifiers at [CVE](https://cve.mitre.org/).
+{{cve-notice}}
 
 ### Infrastructure improvements
 
@@ -96,11 +95,11 @@ Magento 2.4.3 is not yet compatible with PHP 8.x, but the following platform upg
 
 *  The KnockoutJS library has been upgraded to v3.5.1 (the latest version). <!--- MC-40694-->
 
-*  The deprecated TinyMCE v3 library has been removed. The `Magento_Tinymce3Banner` module and MFTF tests related to TinyMCE v3.x have been removed from {{site.data.var.ee}}. <!--- MC-42199 42170 -->
+*  The deprecated TinyMCE v3 library has been removed. The `Magento_Tinymce3Banner` module and MFTF tests related to TinyMCE v3.x have been removed from Adobe Commerce. <!--- MC-42199 42170 -->
 
 *  Magento 2.4.3 has been tested and confirmed to be compatible with Redis 6.0.12. (Magento 2.4.x remains compatible with Redis 5.x.)
 
-*  Laminas library dependencies have been upgraded to PHP 8.x-compatible versions. Some redundant dependencies have been removed from the `composer.json` file. **{{site.data.var.ee}} 2.4.3 uses Laminas 3.4.0**. <!--- MC-39513-->
+*  Laminas library dependencies have been upgraded to PHP 8.x-compatible versions. Some redundant dependencies have been removed from the `composer.json` file. **Adobe Commerce 2.4.3 uses Laminas 3.4.0**. <!--- MC-39513-->
 
 ### Performance enhancements
 
@@ -160,7 +159,7 @@ Magento 2.4.3 introduces B2B v1.3.2. This release includes multiple bug fixes. S
 
 ### Page Builder
 
-Page Builder is now available as a bundled extension in {{site.data.var.ce}}. It is now the default content editing tool for {{ site.data.var.ee }} 2.4.3 and {{ site.data.var.ce }} 2.4.3. It can replace the WYSIWG editor with any third-party module.
+Page Builder is now available as a bundled extension in Magento Open Source. It is now the default content editing tool for Adobe Commerce 2.4.3 and Magento Open Source 2.4.3. It can replace the WYSIWG editor with any third-party module.
 
 Page Builder replaces the TinyMCE editor in the following Admin areas:
 
@@ -180,7 +179,7 @@ For information about enhancements and bug fixes, see [PWA Studio releases](http
 The scope of the [Upgrade Compatibility Tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) has been expanded based on feedback from the community. Join our [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F) Slack channel to get support from the Adobe product team and the community, as well as to help guide the future direction of the tool.
 ### Cloud managed services updates
 
-This release includes enhancements to our support for Amazon Simple Storage Service (AWS S3)  and Amazon Aurora cloud managed services. It provides certified support for AWS ElastiCache, AWS ElasticSearch, and AWS Managed Queues (Rabbit MQ). (We have tested the functionality, performance, and integration of these services with {{site.data.var.ee}}.)
+This release includes enhancements to our support for Amazon Simple Storage Service (AWS S3)  and Amazon Aurora cloud managed services. It provides certified support for AWS ElastiCache, AWS ElasticSearch, and AWS Managed Queues (Rabbit MQ). (We have tested the functionality, performance, and integration of these services with Adobe Commerce.)
 
 ### Adobe Stock Integration
 
@@ -218,11 +217,11 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-37596-->
 
-*  Magento no longer throws an exception when you run `bin/magento setup:upgrade` to upgrade from a {{site.data.var.ce}} deployment with Redis to {{site.data.var.ee}}.
+*  Magento no longer throws an exception when you run `bin/magento setup:upgrade` to upgrade from a Magento Open Source deployment with Redis to Adobe Commerce.
 
 <!--- MC-34453-->
 
-*  Previously created cart price rules are now displayed on the Content Staging dashboard page after a deployment is upgraded from {{site.data.var.ce}} to {{site.data.var.ee}}.
+*  Previously created cart price rules are now displayed on the Content Staging dashboard page after a deployment is upgraded from Magento Open Source to Adobe Commerce.
 
 <!--- ENGCOM-8508 -->
 
@@ -286,7 +285,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-41177 magento/magento2#32594-->
 
-*  A bundle item’s price can now be set to 0.00. Previously, when you returned to the edit page after setting the price to 0.00, the price returned to its default value. [GitHub-32383](https://github.com/magento/magento2/issues/32383)
+*  A bundle item's price can now be set to 0.00. Previously, when you returned to the edit page after setting the price to 0.00, the price returned to its default value. [GitHub-32383](https://github.com/magento/magento2/issues/32383)
 
 <!--- MC-40603-->
 
@@ -298,7 +297,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-39276-->
 
-*  An administrator can now change the value for a bundle product’s `Shipment Type` attribute after it has been moved to a different attribute group. Previously, this attribute was always saved with a `Together` value if it were moved to an attribute group other than the default group in the attribute set.
+*  An administrator can now change the value for a bundle product's `Shipment Type` attribute after it has been moved to a different attribute group. Previously, this attribute was always saved with a `Together` value if it were moved to an attribute group other than the default group in the attribute set.
 
 <!--- MC-38900-->
 
@@ -322,7 +321,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-30317 ENGCOM-7141-->
 
-*  Merchants can now assign a unique price for a bundle product on each store view of a multistore deployment. Website-specific prices are saved in the `catalog_product_bundle_selection_price` table. Previously, Magento did not base a bundle product’s price on website scope even when  **Stores** > **Configuration** > **Catalog** > **Catalog** > **Price** > **Catalog Price Scope** was set to `Website`. No website-specific prices were saved in `catalog_product_bundle_selection_price`. [GitHub-12584](https://github.com/magento/magento2/issues/12584)
+*  Merchants can now assign a unique price for a bundle product on each store view of a multistore deployment. Website-specific prices are saved in the `catalog_product_bundle_selection_price` table. Previously, Magento did not base a bundle product's price on website scope even when  **Stores** > **Configuration** > **Catalog** > **Catalog** > **Price** > **Catalog Price Scope** was set to `Website`. No website-specific prices were saved in `catalog_product_bundle_selection_price`. [GitHub-12584](https://github.com/magento/magento2/issues/12584)
 
 <!--- ENGCOM-8705 MC-38953-->
 
@@ -350,7 +349,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-41572-->
 
-*  CAPTCHA now correctly validates data provided by a shopper, and CAPTCHA fields are now displayed as expected after a shopper’s multiple unsuccessful attempts to check out with PayPal Payflow Pro.
+*  CAPTCHA now correctly validates data provided by a shopper, and CAPTCHA fields are now displayed as expected after a shopper's multiple unsuccessful attempts to check out with PayPal Payflow Pro.
 
 <!--- MC-41281-->
 
@@ -620,7 +619,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-40719-->
 
-*  Magento no longer duplicates product thumbnails in a product’s image gallery when you click on a product’s configurable options.
+*  Magento no longer duplicates product thumbnails in a product's image gallery when you click on a product's configurable options.
 
 <!--- MC-37418-->
 
@@ -652,7 +651,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- ENGCOM-8571-->
 
-*  `cron` jobs now complete as expected and no longer throw this serialization error:  `[Magento\Framework\DB\Adapter\DeadlockException]SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction, query was: DELETE FROM cron_schedule WHERE (status = 'missed') AND (job_code in ('indexer_reindex_all_invalid', 'indexer_update_all_views', 'indexer_clean_all_changelogs')) AND (created_at < '2018-09-28 18:32:28’)`. [GitHub-18409](https://github.com/magento/magento2/issues/18409)
+*  `cron` jobs now complete as expected and no longer throw this serialization error:  `[Magento\Framework\DB\Adapter\DeadlockException]SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction, query was: DELETE FROM cron_schedule WHERE (status = 'missed') AND (job_code in ('indexer_reindex_all_invalid', 'indexer_update_all_views', 'indexer_clean_all_changelogs')) AND (created_at < '2018-09-28 18:32:28')`. [GitHub-18409](https://github.com/magento/magento2/issues/18409)
 
 <!--- ENGCOM-8571-->
 
@@ -1064,7 +1063,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-40867 magento/partners-magento2ee#532--->
 
-*  The `applyRewardPointsToCart` mutation now updates a cart’s grand total to accurately reflect the value of the reward points deducted. [GitHub-486](https://github.com/magento/partners-magento2ee/issues/486)
+*  The `applyRewardPointsToCart` mutation now updates a cart's grand total to accurately reflect the value of the reward points deducted. [GitHub-486](https://github.com/magento/partners-magento2ee/issues/486)
 
 <!--- MC-40379-->
 
@@ -1072,7 +1071,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-40262-->
 
-*  Merchants can now use the GraphQL `setShippingAddressesOnCart` method to set billing and shipping addresses for a shopper’s cart when guest checkout is disabled.
+*  Merchants can now use the GraphQL `setShippingAddressesOnCart` method to set billing and shipping addresses for a shopper's cart when guest checkout is disabled.
 
 <!--- MC-39508-->
 
@@ -1120,7 +1119,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- ENGCOM-8477-->
 
-*  The `products` query no longer exposes a product’s special price when the special price period is set for a future date. [GitHub-30210](https://github.com/magento/magento2/issues/30210), [GitHub-29631](https://github.com/magento/magento2/issues/29631)
+*  The `products` query no longer exposes a product's special price when the special price period is set for a future date. [GitHub-30210](https://github.com/magento/magento2/issues/30210), [GitHub-29631](https://github.com/magento/magento2/issues/29631)
 
 <!--- magento-engcom/magento2ee#576-->
 
@@ -1164,7 +1163,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-40898-->
 
-*  Administrators can now successfully change the `name` of a bundle product’s `bundle_values` from the Admin. Previously, Magento displayed the product as out-of-stock on the storefront after you changed the name from the Admin. Products were also merged with the same SKU into a single bundle-option section.
+*  Administrators can now successfully change the `name` of a bundle product's `bundle_values` from the Admin. Previously, Magento displayed the product as out-of-stock on the storefront after you changed the name from the Admin. Products were also merged with the same SKU into a single bundle-option section.
 
 <!--- MC-40333-->
 
@@ -1236,11 +1235,11 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-42199-->
 
-*  The deprecated TinyMCE v3 library has been removed. The `Magento_Tinymce3Banner` module and MFTF tests related to TinyMCE v3.x have been removed from {{site.data.var.ee}}.
+*  The deprecated TinyMCE v3 library has been removed. The `Magento_Tinymce3Banner` module and MFTF tests related to TinyMCE v3.x have been removed from Adobe Commerce.
 
 <!--- MC-41497-->
 
-*  Magento no longer throws an `Invalid header value detected` error on the Contact us form when a shopper enters an email address that contains French diacritic marks (such as "é", “è”). Magento now converts UTF-8 letters in the user name to ASCII encoding. Previously, UTF-8 letters were not converted to ASCII encoding in the unique section of the email address.
+*  Magento no longer throws an `Invalid header value detected` error on the Contact us form when a shopper enters an email address that contains French diacritic marks (such as "é", "è"). Magento now converts UTF-8 letters in the user name to ASCII encoding. Previously, UTF-8 letters were not converted to ASCII encoding in the unique section of the email address.
 
 <!--- MC-39947-->
 
@@ -1529,7 +1528,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- MC-37820-->
 
-*  The payment methods list is now updated as expected when a guest shopper changes an order’s shipping address to a different country during checkout. Previously, changing billing address did not trigger an update of the possible payment methods.
+*  The payment methods list is now updated as expected when a guest shopper changes an order's shipping address to a different country during checkout. Previously, changing billing address did not trigger an update of the possible payment methods.
 
 #### PayPal
 
@@ -1573,7 +1572,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- MC-36811-->
 
-*  Scheduled price updates are now applied to products already in a shopper’s cart. [GitHub-356](https://github.com/magento/partners-magento2ee/issues/356)
+*  Scheduled price updates are now applied to products already in a shopper's cart. [GitHub-356](https://github.com/magento/partners-magento2ee/issues/356)
 
 <!--- MC-24693-->
 
@@ -2001,7 +2000,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- MC-30798 ENGCOM-8717-->
 
-*  Order emails sent from the Admin now use the store locale not the locale that is associated with the administrator’s account. [GitHub-26521](https://github.com/magento/magento2/issues/26521)
+*  Order emails sent from the Admin now use the store locale not the locale that is associated with the administrator's account. [GitHub-26521](https://github.com/magento/magento2/issues/26521)
 
 ### UI
 
@@ -2123,7 +2122,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- MC-38442-->
 
-*  Magento now uses the correct custom email template when generating email for new administrators. Previously, Magento used the old default template, which omitted the administrator’s first and last names.
+*  Magento now uses the correct custom email template when generating email for new administrators. Previously, Magento used the old default template, which omitted the administrator's first and last names.
 
 <!--- MC-38122-->
 
@@ -2175,7 +2174,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- MC-39128-->
 
-*  An administrator can now delete all of a widget’s layout updates. Previously, when a widget had multiple layout updates, an administrator could delete only the first.
+*  An administrator can now delete all of a widget's layout updates. Previously, when a widget had multiple layout updates, an administrator could delete only the first.
 
 <!--- MC-39107-->
 
@@ -2189,7 +2188,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- MC-40651 ENGCOM-8769-->
 
-*  Magento no longer resets a configurable product’s configuration settings when you click the **Edit item** button for the product from a wish list. [GitHub-32119](https://github.com/magento/magento2/issues/32119)
+*  Magento no longer resets a configurable product's configuration settings when you click the **Edit item** button for the product from a wish list. [GitHub-32119](https://github.com/magento/magento2/issues/32119)
 
 <!--- MC-40417-->
 
@@ -2213,11 +2212,11 @@ Repetitive actions have been replaced with action groups in these tests:
 
 **Issue**: _Content Security Policy error_. The storefront displays the following error in the console log: `The Content-Security-Policy directive frame-ancestors does not support the source expression unsafe-inline`. Storefront performance is not affected. <!--- MC-42613-->
 
-**Issue**: _Anomalies with PayPal Credit display of gift card amounts_. When PayPal Credit is enabled and multiple gift card amounts are configured, if a shopper changes the amount for the value of a gift card, the storefront does not update the amount for installment payments. A fix for this issue will be included in {{ site.data.var.ee }} 2.4.4 and {{ site.data.var.ce }} 2.4.4.<!--- MC-42499 AC-344-->
+**Issue**: _Anomalies with PayPal Credit display of gift card amounts_. When PayPal Credit is enabled and multiple gift card amounts are configured, if a shopper changes the amount for the value of a gift card, the storefront does not update the amount for installment payments. A fix for this issue will be included in Adobe Commerce 2.4.4 and Magento Open Source 2.4.4.<!--- MC-42499 AC-344-->
 
 **Issue**:  _The **Add to order** button does not work for products added to the cart by SKU_.  Magento displays this error message when you click on the **Add to order** button after adding products to the order by SKU: `An error has happened during application run`. Products are not added to the cart. **Workaround**: Use the Add Products feature. <!--- AC-345-->
 
-**Issue**: The GraphQL `category` and `categoryList` queries ignore Category permissions that determine whether categories in a shared catalog are hidden or exposed. The storefront currently displays all categories that have been assigned or unassigned to the shared catalog. This affects {{site.data.var.ee}} 2.4.3 deployments that implement a PWA storefront for which B2B shared catalogs have been enabled. <!--- MC-42528-->
+**Issue**: The GraphQL `category` and `categoryList` queries ignore Category permissions that determine whether categories in a shared catalog are hidden or exposed. The storefront currently displays all categories that have been assigned or unassigned to the shared catalog. This affects Adobe Commerce 2.4.3 deployments that implement a PWA storefront for which B2B shared catalogs have been enabled. <!--- MC-42528-->
 
 ## Community contributions
 
@@ -2243,7 +2242,7 @@ Our technology stack is built on PHP and MySQL. For more information, see [Syste
 
 ### Installation and upgrade instructions
 
-You can install {{site.data.var.ee}} 2.4.3 using [Composer]({{ page.baseurl }}/install-gde/composer.html).
+You can install Adobe Commerce 2.4.3 using [Composer]({{ page.baseurl }}/install-gde/composer.html).
 
 ## Migration tool kits
 

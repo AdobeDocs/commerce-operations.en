@@ -3,24 +3,23 @@ group: release-notes
 title: Magento Open Source 2.4.5 Release Notes
 ---
 
-{{ site.data.var.ce }} introduces improvements to platform quality, payment methods, GraphQL caching performance, and accessibility. It includes updates to integrated Google modules.
+Magento Open Source introduces improvements to platform quality, payment methods, GraphQL caching performance, and accessibility. It includes updates to integrated Google modules.
 
 This release includes over 290 quality fixes and enhancements.
 
-{:.bs-callout-info}
-Releases may contain backward-incompatible changes (BIC). {{ site.data.var.ce }} 2.4.5 contains backward-incompatible changes. To review these backward-incompatible changes, see [BIC reference]({{page.baseurl}}/release-notes/backward-incompatible-changes/reference.html). (Major backward-incompatible issues are described in [BIC highlights]({{page.baseurl}}/release-notes/backward-incompatible-changes/index.html). Not all releases introduce major BICs.)
+{{bics}}
 
 ## Other release information
 
-Although code for these features is bundled with quarterly releases of the {{ site.data.var.ce }} core code, several of these projects are also released independently. Bug fixes for these projects are documented in the separate, project-specific release information that is available in the documentation for each project.
+Although code for these features is bundled with quarterly releases of the Magento Open Source core code, several of these projects are also released independently. Bug fixes for these projects are documented in the separate, project-specific release information that is available in the documentation for each project.
 
-## {{ site.data.var.ce }} 2.4.5 highlights
+## Magento Open Source 2.4.5 highlights
 
 Look for the following highlights in this release.
 
 ### Security enhancements
 
-This release includes 20 security fix and platform security improvements. This security fix has been backported to {{ site.data.var.ce }} 2.4.4-p1 and {{ site.data.var.ce }} 2.3.7-p4.
+This release includes 20 security fix and platform security improvements. This security fix has been backported to Magento Open Source 2.4.4-p1 and Magento Open Source 2.3.7-p4.
 
 No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts:
 
@@ -45,7 +44,7 @@ Security improvements for this release improve compliance with the latest securi
 
 ### Platform enhancements
 
-{{ site.data.var.ce }} 2.4.5 now supports
+Magento Open Source 2.4.5 now supports
 
 *  Composer 2.2  <!--- AC-2033-->
 
@@ -134,7 +133,7 @@ GraphQL performance enhancements include:
 
 *  Added capability to consume the expiration date/time of the authorization token through the use of JSON Web Tokens (JWT) in the GraphQL API.
 
-*  The `bin/magento config:set graphql/session/disable 1` command allows merchants to completely disable the creation of session cookies for all GraphQL operations. By default, {{ site.data.var.ce }} creates these cookies and relies on them for authorization, which affects performance. Going forward, we recommend using tokens as the only form of authorization for GraphQL requests. We do not recommend using session cookies alone or in conjunction with authorization tokens. See [GraphQL Authorization]({{page.baseurl}}/graphql/authorization-tokens.html). <!--- B2B-2204--->
+*  The `bin/magento config:set graphql/session/disable 1` command allows merchants to completely disable the creation of session cookies for all GraphQL operations. By default, Magento Open Source creates these cookies and relies on them for authorization, which affects performance. Going forward, we recommend using tokens as the only form of authorization for GraphQL requests. We do not recommend using session cookies alone or in conjunction with authorization tokens. See [GraphQL Authorization]({{page.baseurl}}/graphql/authorization-tokens.html). <!--- B2B-2204--->
 
 *  Session cookies are now launched in GraphQL operations using class proxies only when needed. <!--- B2B-2217--->
 
@@ -148,7 +147,7 @@ Inventory template security has been enhanced.
 
 ### Page Builder
 
-Page Builder v.1.7.2 is compatible with {{ site.data.var.ce }} 2.4.5.
+Page Builder v.1.7.2 is compatible with Magento Open Source 2.4.5.
 
 Page Builder column layout includes these enhancements: <!--- PB-547-->
 
@@ -168,13 +167,13 @@ Apple Pay is now available to all merchants running deployments with Payment Ser
 
 #### Braintree
 
-*  Braintree has discontinued the KOUNT fraud protection integration. It has been removed from the {{ site.data.var.ce }} codebase.
+*  Braintree has discontinued the KOUNT fraud protection integration. It has been removed from the Magento Open Source codebase.
 
 *  The **Always request 3DS** option has been added to the Admin.
 
 ### PWA Studio
 
-PWA Studio v.12.5.x is compatible with {{ site.data.var.ce }} 2.4.5.
+PWA Studio v.12.5.x is compatible with Magento Open Source 2.4.5.
 
 New features for this release include:
 
@@ -182,29 +181,29 @@ New features for this release include:
 
 *  Merchants can now select a service to deploy from the Admin (Google Tag Manager).
 
-For information about enhancements and bug fixes, see [PWA Studio releases](https://github.com/magento/pwa-studio/releases). See [Version compatibility](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/version-compatibility/) for a list of PWA Studio versions and their compatible {{ site.data.var.ce }} core versions.
+For information about enhancements and bug fixes, see [PWA Studio releases](https://github.com/magento/pwa-studio/releases). See [Version compatibility](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/version-compatibility/) for a list of PWA Studio versions and their compatible Magento Open Source core versions.
 
 ## Fixed issues
 
-We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
+We have fixed hundreds of issues in the Magento Open Source 2.4.5 core code.
 
 ### Installation, upgrade, deployment
 
 <!--- ACP2E-49-->
 
-*  You can now rename a data patch and add the old class name as an alias in the `patch_list` database table. {{ site.data.var.Ce }} now checks whether data patch aliases already existed in the database before applying the patch. Previously, {{ site.data.var.ce }} threw an error under these conditions.
+*  You can now rename a data patch and add the old class name as an alias in the `patch_list` database table. {{ site.data.var.Ce }} now checks whether data patch aliases already existed in the database before applying the patch. Previously, Magento Open Source threw an error under these conditions.
 
 <!--- AC-3036-->
 
-*  {{ site.data.var.ce }} no longer throws an exception when you try to change the Admin URL to a custom URL from the Admin. Previously, after changing the Admin URL, you could not log in. [GitHub-35416](https://github.com/magento/magento2/issues/35416)
+*  Magento Open Source no longer throws an exception when you try to change the Admin URL to a custom URL from the Admin. Previously, after changing the Admin URL, you could not log in. [GitHub-35416](https://github.com/magento/magento2/issues/35416)
 
 <!--- AC-1480-->
 
-*  Merchants can now successfully upgrade from an {{ site.data.var.ce }} 2.4.2 deployment with Klarna to {{ site.data.var.ce }} 2.4.3. [GitHub-33760](https://github.com/magento/magento2/issues/33760)
+*  Merchants can now successfully upgrade from an Magento Open Source 2.4.2 deployment with Klarna to Magento Open Source 2.4.3. [GitHub-33760](https://github.com/magento/magento2/issues/33760)
 
 <!--- AC-2905-->
 
-*  The path to {{ site.data.var.ce }} Analytics is no longer hardcoded. Previously, this hardcoded path resulted in conflicts when multiple {{ site.data.var.ce }} instances were installed on one server. [GitHub-29373](https://github.com/magento/magento2/issues/29373)
+*  The path to Magento Open Source Analytics is no longer hardcoded. Previously, this hardcoded path resulted in conflicts when multiple Magento Open Source instances were installed on one server. [GitHub-29373](https://github.com/magento/magento2/issues/29373)
 
 ### Accessibility
 
@@ -226,7 +225,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-2499-->
 
-*  Screen readers announce the word “Venia” only once when navigating to Venia headers and footers. Previously, the same word was announced twice consecutively.
+*  Screen readers announce the word "Venia" only once when navigating to Venia headers and footers. Previously, the same word was announced twice consecutively.
 
 <!--- AC-2585-->
 
@@ -250,13 +249,13 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-780-->
 
-*  {{ site.data.var.ce }} now correctly calculates the cart total for a bundle product when the Product Subselect rule is applied.
+*  Magento Open Source now correctly calculates the cart total for a bundle product when the Product Subselect rule is applied.
 
 ### Cache
 
 <!--- ACP2E-684-->
 
-*  Full page cache is no longer shown as disabled in the Admin when the {{ site.data.var.ce }} cache is flushed and `use_stale_cache` is enabled.
+*  Full page cache is no longer shown as disabled in the Admin when the Magento Open Source cache is flushed and `use_stale_cache` is enabled.
 
 <!--- AC-2410-->
 
@@ -274,7 +273,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-245-->
 
-*  Permission exceptions are now handled for restricted products that are added by SKU. Shoppers are now given an appropriate message on the storefront, and the quantity field in the error table is disabled. Previously, {{ site.data.var.ce }} threw an exception like this: `There has been an error processing your request`.
+*  Permission exceptions are now handled for restricted products that are added by SKU. Shoppers are now given an appropriate message on the storefront, and the quantity field in the error table is disabled. Previously, Magento Open Source threw an exception like this: `There has been an error processing your request`.
 
 <!--- ACP2E-148-->
 
@@ -290,7 +289,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-42-->
 
-*  The `cart` query no longer return null responses when a product is out of stock. A new `errors` element containing the error message was introduced to the response. Previously, when you ran a query with an out-of-stock product, {{ site.data.var.ce }} displayed a `null` value under the `items` section in the response. See [cart query](https://devdocs.magento.com/guides/v2.4/graphql/queries/cart.html).
+*  The `cart` query no longer return null responses when a product is out of stock. A new `errors` element containing the error message was introduced to the response. Previously, when you ran a query with an out-of-stock product, Magento Open Source displayed a `null` value under the `items` section in the response. See [cart query](https://devdocs.magento.com/guides/v2.4/graphql/queries/cart.html).
 
 <!--- ACP2E-38-->
 
@@ -346,7 +345,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-657-->
 
-*  You can now successfully switch between list and grid views of multi-page product lists. Previously, when you navigated to the last page of a multi-page product list view before switching to the grid view, {{ site.data.var.ce }} displayed this error: `Unfortunately there are no products in this category on our website currently`.
+*  You can now successfully switch between list and grid views of multi-page product lists. Previously, when you navigated to the last page of a multi-page product list view before switching to the grid view, Magento Open Source displayed this error: `Unfortunately there are no products in this category on our website currently`.
 
 <!--- ACP2E-635-->
 
@@ -374,7 +373,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-345-->
 
-*  {{ site.data.var.ce }} now provides validation error messages when you try to add a product URL key with a trailing hyphen. Informative tooltip text is also available.
+*  Magento Open Source now provides validation error messages when you try to add a product URL key with a trailing hyphen. Informative tooltip text is also available.
 
 <!--- ACP2E-267-->
 
@@ -386,11 +385,11 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-39-->
 
-*  When the `Synchronize widget products with backend storage` setting is enabled, {{ site.data.var.ce }} adds recently view product data into the `catalog_product_frontend_action` database table. It includes the customer or visitor ID when adding records. The `recently_viewed_product` section in the response is now empty if customer ID and visitor ID are null. As a result, when the `customer/section/load` Ajax request is sent, {{ site.data.var.ce }} can correctly filter recently viewed products based on customer or visitor ID. Previously, the response included all the data available in the `catalog_product_frontend_action` database table because there was no check for an empty customer or visitor ID.
+*  When the `Synchronize widget products with backend storage` setting is enabled, Magento Open Source adds recently view product data into the `catalog_product_frontend_action` database table. It includes the customer or visitor ID when adding records. The `recently_viewed_product` section in the response is now empty if customer ID and visitor ID are null. As a result, when the `customer/section/load` Ajax request is sent, Magento Open Source can correctly filter recently viewed products based on customer or visitor ID. Previously, the response included all the data available in the `catalog_product_frontend_action` database table because there was no check for an empty customer or visitor ID.
 
 <!--- ACP2E-13-->
 
-*  Administrators can now change configurable product options in a shopper’s cart from the Admin slide panel. Previously, the slide panel did not work correctly.
+*  Administrators can now change configurable product options in a shopper's cart from the Admin slide panel. Previously, the slide panel did not work correctly.
 
 <!--- AC-1705-->
 
@@ -398,7 +397,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-711-->
 
-*  Product lists are now rendered correctly in the Admin. Previously, the product list did not render, and {{ site.data.var.ce }} displayed this error:  `Item (Magento\Catalog\Model\Product\Interceptor) with the same ID "<ID>" already exists`. [GitHub-33145](https://github.com/magento/magento2/issues/33145)
+*  Product lists are now rendered correctly in the Admin. Previously, the product list did not render, and Magento Open Source displayed this error:  `Item (Magento\Catalog\Model\Product\Interceptor) with the same ID "<ID>" already exists`. [GitHub-33145](https://github.com/magento/magento2/issues/33145)
 
 <!--- AC-1214-->
 
@@ -410,7 +409,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-711-->
 
-*  You can now change the per-page product limit displayed within a category when **Remember Category Pagination**  is enabled. Previously, the cookie `form_key` and UI `form_key` differed, and {{ site.data.var.ce }} displayed this error:  `Invalid Form Key. Please refresh the page`.
+*  You can now change the per-page product limit displayed within a category when **Remember Category Pagination**  is enabled. Previously, the cookie `form_key` and UI `form_key` differed, and Magento Open Source displayed this error:  `Invalid Form Key. Please refresh the page`.
 
 <!--- ACP2E-807-->
 
@@ -422,7 +421,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-1205-->
 
-*  {{ site.data.var.ce }} now displays an error message as expected when you try to create an attribute from the product page without completing the Admin field. [GitHub-33099](https://github.com/magento/magento2/issues/33099)
+*  Magento Open Source now displays an error message as expected when you try to create an attribute from the product page without completing the Admin field. [GitHub-33099](https://github.com/magento/magento2/issues/33099)
 
 *  Product ratings are now correct on all catalog product lists when the home page contains multiple catalog lists. [GitHub-33867](https://github.com/magento/magento2/issues/33867)
 
@@ -430,7 +429,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-687-->
 
-*  {{ site.data.var.ce }} now displays the correct product price for a configurable product with a selected option after changing its quantity on product details page. Previously, the price was reset to the initial value after the quantity changed.
+*  Magento Open Source now displays the correct product price for a configurable product with a selected option after changing its quantity on product details page. Previously, the price was reset to the initial value after the quantity changed.
 
 <!--- ACP2E-461-->
 
@@ -442,15 +441,15 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-360-->
 
-*  Multi-select attributes are now saved correctly during product edit. Previously, {{ site.data.var.ce }} saved the default option for non-selected attributes as well as selected attributes when saving a product.
+*  Multi-select attributes are now saved correctly during product edit. Previously, Magento Open Source saved the default option for non-selected attributes as well as selected attributes when saving a product.
 
 <!--- ACP2E-55-->
 
-*  {{ site.data.var.ce }} now displays configurable attributes as expected during the creation of global `select` attributes via a patch script. Previously, eligible global attributes were hidden.
+*  Magento Open Source now displays configurable attributes as expected during the creation of global `select` attributes via a patch script. Previously, eligible global attributes were hidden.
 
 <!--- AC-2521-->
 
-*  The `addConfigurableProductsToCart` mutation can now be used to add configurable products with custom options. Previously, {{ site.data.var.ce }} threw this error: `Magento 2.3.4 graphql Notice: Undefined index: option_value in /var/www/html/mg234/vendor/magento/module-configurable-product-graph-ql/Model/Resolver/ConfigurableCartItemOptions.php on line 62`. [GitHub-28860](https://github.com/magento/magento2/issues/28860)
+*  The `addConfigurableProductsToCart` mutation can now be used to add configurable products with custom options. Previously, Magento Open Source threw this error: `Magento 2.3.4 graphql Notice: Undefined index: option_value in /var/www/html/mg234/vendor/magento/module-configurable-product-graph-ql/Model/Resolver/ConfigurableCartItemOptions.php on line 62`. [GitHub-28860](https://github.com/magento/magento2/issues/28860)
 
 *  You can now re-order configurable products with optional custom options. Previously, re-order attempts failed, and meant displayed this error: `Some of the selected options are not currently available`. [GitHub-35409](https://github.com/magento/magento2/issues/35409)
 
@@ -462,7 +461,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-390-->
 
-*  {{ site.data.var.ce }} now displays predefined EAV system attributes correctly according to the website setting on the storefront. Previously, website-level customer attributes that were enabled for one website and disabled for another were displayed as enabled for both websites.
+*  Magento Open Source now displays predefined EAV system attributes correctly according to the website setting on the storefront. Previously, website-level customer attributes that were enabled for one website and disabled for another were displayed as enabled for both websites.
 
 ### Downloadable
 
@@ -482,7 +481,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-776-->
 
-*  {{ site.data.var.ce }} now displays an error message on the Shipping page when a shopper enters an invalid email format after the shopper clicks **Place Order**. Previously, the error message was displayed on the Payment page. [GitHub-33590](https://github.com/magento/magento2/issues/33590
+*  Magento Open Source now displays an error message on the Shipping page when a shopper enters an invalid email format after the shopper clicks **Place Order**. Previously, the error message was displayed on the Payment page. [GitHub-33590](https://github.com/magento/magento2/issues/33590
 
 ### Frameworks
 
@@ -500,7 +499,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-2896-->
 
-*  {{ site.data.var.ce }} no longer throws an SQL error after assigning a new source to a product and changing its quantity. [GitHub-35262](https://github.com/magento/magento2/issues/35262)
+*  Magento Open Source no longer throws an SQL error after assigning a new source to a product and changing its quantity. [GitHub-35262](https://github.com/magento/magento2/issues/35262)
 
 <!--- AC-401-->
 
@@ -508,7 +507,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-1716-->
 
-*  The `updateCartCurrency` function now sets string instead of an object inside the cart object. Previously, {{ site.data.var.ce }} did not load a quote using `getQuote` because the `updateCartCurrency` function set an object instead of a string inside the cart object. [GitHub-34199](https://github.com/magento/magento2/issues/34199)
+*  The `updateCartCurrency` function now sets string instead of an object inside the cart object. Previously, Magento Open Source did not load a quote using `getQuote` because the `updateCartCurrency` function set an object instead of a string inside the cart object. [GitHub-34199](https://github.com/magento/magento2/issues/34199)
 
 <!--- AC-2428-->
 
@@ -516,7 +515,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-2893-->
 
-*  {{ site.data.var.ce }} no longer displays a `preg_replace()` error on the Admin. The third argument (`$subject`) is now of type `array|string` instead of `bool`.
+*  Magento Open Source no longer displays a `preg_replace()` error on the Admin. The third argument (`$subject`) is now of type `array|string` instead of `bool`.
 
 <!--- AC-2583-->
 
@@ -524,15 +523,15 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-2855-->
 
-*  {{ site.data.var.ce }} no longer throws the following error when you create a plugin for any method of class `vendor/magento/module-backend/Model/Menu.php`: `Error: Call to undefined method ReflectionUnionType::getName()`. [GitHub-35292](https://github.com/magento/magento2/issues/35292)
+*  Magento Open Source no longer throws the following error when you create a plugin for any method of class `vendor/magento/module-backend/Model/Menu.php`: `Error: Call to undefined method ReflectionUnionType::getName()`. [GitHub-35292](https://github.com/magento/magento2/issues/35292)
 
 <!--- AC-1518-->
 
-*  {{ site.data.var.ce }} now returns a 404 error instead of a 500 error when you navigate to `/checkout/sidebar/updateItemQty/?item_qty=error` on the storefront. Previously, this error was thrown:  `Warning: A non-numeric value encountered in /vendor/magento/module-checkout/Controller/Sidebar/UpdateItemQty.php on line 69`. [GitHub-34380](https://github.com/magento/magento2/issues/34380)
+*  Magento Open Source now returns a 404 error instead of a 500 error when you navigate to `/checkout/sidebar/updateItemQty/?item_qty=error` on the storefront. Previously, this error was thrown:  `Warning: A non-numeric value encountered in /vendor/magento/module-checkout/Controller/Sidebar/UpdateItemQty.php on line 69`. [GitHub-34380](https://github.com/magento/magento2/issues/34380)
 
 <!--- ACP2E-847-->
 
-*  {{ site.data.var.ce }} no longer triggers a `trim(): Passing null to parameter #1 ($string) of type string is deprecated` error when the AMPQ connection is configured without SSL configuration.
+*  Magento Open Source no longer triggers a `trim(): Passing null to parameter #1 ($string) of type string is deprecated` error when the AMPQ connection is configured without SSL configuration.
 
 <!--- AC-2414-->
 
@@ -582,11 +581,11 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-448-->
 
-*  {{ site.data.var.ce }} no longer throws an exception when you add a bundle product through Page Builder.
+*  Magento Open Source no longer throws an exception when you add a bundle product through Page Builder.
 
 <!--- ACP2E-381-->
 
-*  You can now create a customer account on an iOS device with the inclined apostrophe (’) in the first, middle, or last name. Previously, only the straight apostrophe was allowed, and using iOS 11+ default inclined apostrophe resulted in a `Name is not valid!` error.
+*  You can now create a customer account on an iOS device with the inclined apostrophe (') in the first, middle, or last name. Previously, only the straight apostrophe was allowed, and using iOS 11+ default inclined apostrophe resulted in a `Name is not valid!` error.
 
 <!--- ACP2E-378-->
 
@@ -610,11 +609,11 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-2441-->
 
-*  {{ site.data.var.ce }} now displays an error message when you set an invalid cookie domain (**Store**  > **Configurations**  >  **Web**  >  **Default Cookie Settings Cookie Domain**). Previously, the website crashed. [GitHub-35048](https://github.com/magento/magento2/issues/35048)
+*  Magento Open Source now displays an error message when you set an invalid cookie domain (**Store**  > **Configurations**  >  **Web**  >  **Default Cookie Settings Cookie Domain**). Previously, the website crashed. [GitHub-35048](https://github.com/magento/magento2/issues/35048)
 
 <!--- AC-2765-->
 
-*  {{ site.data.var.ce }} no longer throws an error when an administrator with roles scoped to a single website adds product to Content Elements using PageBuilder. Previously, {{ site.data.var.ce }} threw an SQL error.
+*  Magento Open Source no longer throws an error when an administrator with roles scoped to a single website adds product to Content Elements using PageBuilder. Previously, Magento Open Source threw an SQL error.
 
 <!--- AC-197-->
 
@@ -622,11 +621,11 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-798-->
 
-*  {{ site.data.var.ce }} no longer throws the following error during the creation of a catalog rule in the Admin after upgrade: `A technical problem with the server created an error. Try again to continue what you were doing. If the problem persists, try again later`.
+*  Magento Open Source no longer throws the following error during the creation of a catalog rule in the Admin after upgrade: `A technical problem with the server created an error. Try again to continue what you were doing. If the problem persists, try again later`.
 
 <!--- AC-2445-->
 
-*  {{ site.data.var.ce }} no longer throws an error when you activate the  **Check here to link an RSS feed to your Wish List** checkbox before clicking on **Share Wish list**. [GitHub-34998](https://github.com/magento/magento2/issues/34998)
+*  Magento Open Source no longer throws an error when you activate the  **Check here to link an RSS feed to your Wish List** checkbox before clicking on **Share Wish list**. [GitHub-34998](https://github.com/magento/magento2/issues/34998)
 
 <!--- AC-2019-->
 
@@ -660,7 +659,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-2364 1456-->
 
-*  The `categories` query no longer throws an exception when fetching a list of categories one of which contains an image that cannot be found on the filesystem. Previously, {{ site.data.var.ce }} threw this exception: `Category image not found`. [GitHub-34266](https://github.com/magento/magento2/issues/34266)
+*  The `categories` query no longer throws an exception when fetching a list of categories one of which contains an image that cannot be found on the filesystem. Previously, Magento Open Source threw this exception: `Category image not found`. [GitHub-34266](https://github.com/magento/magento2/issues/34266)
 
 <!--- AC-2368-->
 
@@ -680,7 +679,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- AC-1668-->
 
-*  {{ site.data.var.ce }} sessions no longer end after a GraphQL request is made. Previously, the `ClearCustomerSessionAfterRequest` plugin logged out the shopper. [GitHub-34550](https://github.com/magento/magento2/issues/34550)
+*  Magento Open Source sessions no longer end after a GraphQL request is made. Previously, the `ClearCustomerSessionAfterRequest` plugin logged out the shopper. [GitHub-34550](https://github.com/magento/magento2/issues/34550)
 
 <!--- ACP2E-634-->
 
@@ -692,7 +691,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-499-->
 
-*  `setShippingAddressesOnCart` requests now successfully validate region IDs. Previously, {{ site.data.var.ce }} threw an error when you used region ID instead of region code.
+*  `setShippingAddressesOnCart` requests now successfully validate region IDs. Previously, Magento Open Source threw an error when you used region ID instead of region code.
 
 <!--- ACP2E-470-->
 
@@ -770,11 +769,11 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-632-->
 
-*  {{ site.data.var.ce }} now checks for a custom view before filtering columns when exporting reports. Previously, exported reports did not take into account custom views, and exported columns were incorrect.
+*  Magento Open Source now checks for a custom view before filtering columns when exporting reports. Previously, exported reports did not take into account custom views, and exported columns were incorrect.
 
 <!--- ACP2E-502-->
 
-*  {{ site.data.var.ce }} now successfully imports images with long file names. Previously, {{ site.data.var.ce }} did not import the image and threw this error: `Imported resource (image) could not be downloaded from external resource due to timeout or access permissions in row(s):`.
+*  Magento Open Source now successfully imports images with long file names. Previously, Magento Open Source did not import the image and threw this error: `Imported resource (image) could not be downloaded from external resource due to timeout or access permissions in row(s):`.
 
 <!--- ACP2E-294-->
 
@@ -786,7 +785,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-766-->
 
-*  Added validation for category names during import. Previously, {{ site.data.var.ce }} did not validate category names, which lead to errors when category names exceeded 255 characters.
+*  Added validation for category names during import. Previously, Magento Open Source did not validate category names, which lead to errors when category names exceeded 255 characters.
 
 <!--- AC-2096-->
 
@@ -828,7 +827,7 @@ We have fixed hundreds of issues in the {{ site.data.var.ce }} 2.4.5 core code.
 
 <!--- ACP2E-203-->
 
-*  Customer, customer address, and order actions are now logged correctly in the Admin action report. Previously, {{ site.data.var.ce }} did not log actions if the `postDispatch` handler had not been specified in configuration settings.
+*  Customer, customer address, and order actions are now logged correctly in the Admin action report. Previously, Magento Open Source did not log actions if the `postDispatch` handler had not been specified in configuration settings.
 
 ### MFTF
 #### Action groups
@@ -878,19 +877,19 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- AC-1536-->
 
-*  {{ site.data.var.ce }} no longer changes custom email addresses that are assigned to orders when you change the main email address assigned to the customer on the Admin account edit page. Previously, when you edited the main email address for a customer, the new email address was assigned to every order created for that customer. [GitHub-34397](https://github.com/magento/magento2/issues/34397)
+*  Magento Open Source no longer changes custom email addresses that are assigned to orders when you change the main email address assigned to the customer on the Admin account edit page. Previously, when you edited the main email address for a customer, the new email address was assigned to every order created for that customer. [GitHub-34397](https://github.com/magento/magento2/issues/34397)
 
 <!--- AC-2664-->
 
-*  {{ site.data.var.ce }} now displays records from the requested store on the credit memos grid page in deployments running PHP 7.4. Previously, {{ site.data.var.ce }} threw the following error after you created a credit memo and tried to view it: `The store that was requested wasn't found. Verify the store and try again`.
+*  Magento Open Source now displays records from the requested store on the credit memos grid page in deployments running PHP 7.4. Previously, Magento Open Source threw the following error after you created a credit memo and tried to view it: `The store that was requested wasn't found. Verify the store and try again`.
 
 <!--- AC-2442-->
 
-*  {{ site.data.var.ce }} now displays credit memos on the credit memo grid page for orders created from store views whose name is prepended with numbers. Previously, {{ site.data.var.ce }} displayed the error: `The store that was requested wasn't found. Verify the store and try again. Exception in /var/www/html/vendor/magento/module-store/Model/StoreRepository.php:75`. [GitHub-35122](https://github.com/magento/magento2/issues/35122)
+*  Magento Open Source now displays credit memos on the credit memo grid page for orders created from store views whose name is prepended with numbers. Previously, Magento Open Source displayed the error: `The store that was requested wasn't found. Verify the store and try again. Exception in /var/www/html/vendor/magento/module-store/Model/StoreRepository.php:75`. [GitHub-35122](https://github.com/magento/magento2/issues/35122)
 
 <!--- ACP2E-31-->
 
-*  {{ site.data.var.ce }} now displays the free shipping cost (0) on the Admin and storefront invoice page totals. Previously, when shipping was zero for an order, {{ site.data.var.ce }} did not display the shipping amount in total on the invoice page shipping total.
+*  Magento Open Source now displays the free shipping cost (0) on the Admin and storefront invoice page totals. Previously, when shipping was zero for an order, Magento Open Source did not display the shipping amount in total on the invoice page shipping total.
 
 <!--- AC-1778-->
 
@@ -900,7 +899,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- ACP2E-25-->
 
-*  Administrators can now place an order on the Admin using the PayPal PayflowPro payment method. Previously, {{ site.data.var.ce }} displayed this error: `No such entity with cartId = 0`.
+*  Administrators can now place an order on the Admin using the PayPal PayflowPro payment method. Previously, Magento Open Source displayed this error: `No such entity with cartId = 0`.
 
 <!--- AC-2093-->
 
@@ -914,13 +913,13 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- BUNDLE-3088-->
 
-*  Merchants can now submit a partial refund for orders paid with Apple Pay through Braintree. This was a known issue in {{ site.data.var.ce }} 2.4.4.
+*  Merchants can now submit a partial refund for orders paid with Apple Pay through Braintree. This was a known issue in Magento Open Source 2.4.4.
 
 #### PayPal
 
 <!--- ACP2E-296-->
 
-*  {{ site.data.var.ce }} now shows the correct customer name in a guest order paid for with PayPal. Previously, the customer name was displayed as Guest.
+*  Magento Open Source now shows the correct customer name in a guest order paid for with PayPal. Previously, the customer name was displayed as Guest.
 
 <!--- AC-2606-->
 
@@ -930,7 +929,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- ACP2E-52-->
 
-*  Redis cache management has been improved by the addition of TTL (expiration date) for configurable products’ associated product data caches. Previously, these caches were not evicted due to missing TTL values if Redis key eviction policy was configured to a volatile eviction policy.
+*  Redis cache management has been improved by the addition of TTL (expiration date) for configurable products' associated product data caches. Previously, these caches were not evicted due to missing TTL values if Redis key eviction policy was configured to a volatile eviction policy.
 
 <!--- ACP2E-464-->
 
@@ -960,7 +959,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 ### Roles
 
-*  The **Store** >  **Configuration** > **Services** page now displays {{ site.data.var.ce }} Web API information as expected when Resource Access is set to  **Custom** on the Role Resources tab. [GitHub-35506](https://github.com/magento/magento2/issues/35506)
+*  The **Store** >  **Configuration** > **Services** page now displays Magento Open Source Web API information as expected when Resource Access is set to  **Custom** on the Role Resources tab. [GitHub-35506](https://github.com/magento/magento2/issues/35506)
 
 ### Search
 
@@ -970,7 +969,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- ACP2E-615-->
 
-*  Elasticsearch queries now work as expected when `int` is configured as a searchable backend `type` attribute. Previously, {{ site.data.var.ce }} threw an `Elasticsearch\Common\Exceptions\BadRequest400Exception` exception.
+*  Elasticsearch queries now work as expected when `int` is configured as a searchable backend `type` attribute. Previously, Magento Open Source threw an `Elasticsearch\Common\Exceptions\BadRequest400Exception` exception.
 
 <!--- ACP2E-99-->
 
@@ -978,7 +977,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- ACP2E-72-->
 
-*  {{ site.data.var.ce }} now displays an accurate search results suggestion count on the storefront in deployments where Search Suggestions and the **Show Results Count for Each Suggestion** setting are enabled. Previously, the count displayed next to the keywords was zero.
+*  Magento Open Source now displays an accurate search results suggestion count on the storefront in deployments where Search Suggestions and the **Show Results Count for Each Suggestion** setting are enabled. Previously, the count displayed next to the keywords was zero.
 
 <!--- AC-700-->
 
@@ -990,13 +989,13 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- AC-2051-->
 
-*  Fixed PHP errors on the `catalogsearch/advanced/result` and  `catalogsearch/advanced/index` pages.  Previously,  {{ site.data.var.ce }} displayed this error  when an array was passed in any  advanced search string :  `Warning: trim() expects parameter 1 to be string, array given | magento/module-catalog-search`. [GitHub-33586](https://github.com/magento/magento2/issues/33586)
+*  Fixed PHP errors on the `catalogsearch/advanced/result` and  `catalogsearch/advanced/index` pages.  Previously,  Magento Open Source displayed this error  when an array was passed in any  advanced search string :  `Warning: trim() expects parameter 1 to be string, array given | magento/module-catalog-search`. [GitHub-33586](https://github.com/magento/magento2/issues/33586)
 
 ### Shipping
 
 <!--- AC-2052-->
 
-*  {{ site.data.var.ce }} no longer throws an error when loading UPS shipping rates if no allowed shipping methods are selected. Previously, when a shopper entered a shipping address in the checkout workflow under these conditions, no other shipping methods were displayed, and {{ site.data.var.ce }} displayed an error on the storefront. [GitHub-34411](https://github.com/magento/magento2/issues/34411)
+*  Magento Open Source no longer throws an error when loading UPS shipping rates if no allowed shipping methods are selected. Previously, when a shopper entered a shipping address in the checkout workflow under these conditions, no other shipping methods were displayed, and Magento Open Source displayed an error on the storefront. [GitHub-34411](https://github.com/magento/magento2/issues/34411)
 
 <!--- AC-2621-->
 
@@ -1018,7 +1017,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- ACP2E-291-->
 
-*  {{ site.data.var.ce }} now updates the Excluding Tax tier price for a simple product on the product page as expected after the quantity of the simple product has changed.
+*  Magento Open Source now updates the Excluding Tax tier price for a simple product on the product page as expected after the quantity of the simple product has changed.
 
 <!--- ACP2E-182-->
 
@@ -1102,7 +1101,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- AC-2750-->
 
-*  You can now create a customer from the Admin when `Magento_LoginAsCustomerAdminUi` is enabled and **Store View To Login To** is set to manual selection. Previously, {{ site.data.var.ce }} threw this error: `(Magento\Framework\Exception\LocalizedException): Unable to get Customer ID`. [GitHub-33096](https://github.com/magento/magento2/issues/33096)
+*  You can now create a customer from the Admin when `Magento_LoginAsCustomerAdminUi` is enabled and **Store View To Login To** is set to manual selection. Previously, Magento Open Source threw this error: `(Magento\Framework\Exception\LocalizedException): Unable to get Customer ID`. [GitHub-33096](https://github.com/magento/magento2/issues/33096)
 
 <!--- AC-2076-->
 
@@ -1122,11 +1121,11 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- AC-2851-->
 
-*  Administrators can now set the current user’s expiration date higher than 2038 and save the user successfully. Previously, the user whose expiration date was changed could not log back in after logging out.
+*  Administrators can now set the current user's expiration date higher than 2038 and save the user successfully. Previously, the user whose expiration date was changed could not log back in after logging out.
 
 <!--- AC-751-->
 
-*  {{ site.data.var.ce }} now displays an informative error message when an administrator tries to save an address with excessive street lines in Admin **Store** > **Attributes**  > **Customer Address**.  The administrator can now delete the extra address information and successfully save the address. Previously, {{ site.data.var.ce }} committed the extra lines but did not save the data.
+*  Magento Open Source now displays an informative error message when an administrator tries to save an address with excessive street lines in Admin **Store** > **Attributes**  > **Customer Address**.  The administrator can now delete the extra address information and successfully save the address. Previously, Magento Open Source committed the extra lines but did not save the data.
 
 <!--- ACP2E-546-->
 
@@ -1138,7 +1137,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- AC-2042-->
 
-*  The favicon icon upload form now supports `.ico` file types. Previously, when you tried to upload a favicon file with this extension type in the Admin, {{ site.data.var.ce }} displayed this error: `Warning: imagecreatefromstring(): one parameter to a memory allocation multiplication is negative or zero, failing operation gracefully in /var/www/html/vendor/magento/module-media-storage/Model/File/Validator/Image.php on line 64`. [GitHub-34858](https://github.com/magento/magento2/issues/34858)
+*  The favicon icon upload form now supports `.ico` file types. Previously, when you tried to upload a favicon file with this extension type in the Admin, Magento Open Source displayed this error: `Warning: imagecreatefromstring(): one parameter to a memory allocation multiplication is negative or zero, failing operation gracefully in /var/www/html/vendor/magento/module-media-storage/Model/File/Validator/Image.php on line 64`. [GitHub-34858](https://github.com/magento/magento2/issues/34858)
 
 <!--- AC-3122-->
 
@@ -1162,7 +1161,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- AC-2251-->
 
-*  You can now set a Vimeo video to run in the background in a `banner` element when CSP is set to `restrict mode`. Previously, {{ site.data.var.ce }} threw a JavaScript error.
+*  You can now set a Vimeo video to run in the background in a `banner` element when CSP is set to `restrict mode`. Previously, Magento Open Source threw a JavaScript error.
 
 ### Web API framework
 
@@ -1210,11 +1209,11 @@ Repetitive actions have been replaced with action groups in these tests:
 
 <!--- ACP2E-459-->
 
-*  Updating an item quantity from the wish list page now updates the quantity on the product detail page as expected. {{ site.data.var.ce }} now picks up the updated value from the product URL and populates the `qty` field of product detail page from the wishlist itself.
+*  Updating an item quantity from the wish list page now updates the quantity on the product detail page as expected. Magento Open Source now picks up the updated value from the product URL and populates the `qty` field of product detail page from the wishlist itself.
 
 ## Known issue
 
-**Issue**: Admin users cannot create an order or re-order for customers from the Admin when Braintree is enabled. When the Admin user clicks either **Order** or **Reorder**, {{ site.data.var.ee }} does not submit the order, and the  `system.log` displays this error: `report.CRITICAL: Error: Call to a member function getMethodInstance() on null in /app/vendor/paypal/module-braintree-core/Block/Form.php:174`.  **Workaround**:  `BUNDLE-3137-composer.patch` is now available. See the [Admin can't create order/reorder when Braintree payment enabled](https://support.magento.com/hc/en-us/articles/8322266352525) Knowledge Base article for a discussion of this issue and access to the patch. A fix will also be included in {{ site.data.var.ee }} 2.4.5-p1. <!--- AC-6222-->
+**Issue**: Admin users cannot create an order or re-order for customers from the Admin when Braintree is enabled. When the Admin user clicks either **Order** or **Reorder**, Adobe Commerce does not submit the order, and the  `system.log` displays this error: `report.CRITICAL: Error: Call to a member function getMethodInstance() on null in /app/vendor/paypal/module-braintree-core/Block/Form.php:174`.  **Workaround**:  `BUNDLE-3137-composer.patch` is now available. See the [Admin can't create order/reorder when Braintree payment enabled](https://support.magento.com/hc/en-us/articles/8322266352525) Knowledge Base article for a discussion of this issue and access to the patch. A fix will also be included in Adobe Commerce 2.4.5-p1. <!--- AC-6222-->
 ## Community contributions
 
 We are grateful to the wider Magento community and would like to acknowledge their contributions to this release.
@@ -1239,4 +1238,4 @@ Our technology stack is built on PHP and MySQL. For more information, see [Syste
 
 ## Installation and upgrade instructions
 
-You can install {{site.data.var.ce}} 2.4.5 using [Composer]({{ page.baseurl }}/install-gde/composer.html).
+You can install Magento Open Source 2.4.5 using [Composer]({{ page.baseurl }}/install-gde/composer.html).
