@@ -37,7 +37,7 @@ You can find hotfixes in the [Security Center](https://magento.com/security/patc
 
 Individual patches contain low-impact quality fixes for a specific issue. These fixes are applied to the most recently supported minor version (for example, 2.4.x), but could be missing from the previous supported minor version (for example, 2.3.x). Adobe releases individual patches as needed.
 
-Use the [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html) to apply individual patches.
+Use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} to apply individual patches.
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ index c8a6fef58d31..7d01c195791e 100644
              clearTimeout: function () {
                  clearTimeout(this.timeoutId);
 +                this.fail();
- 
+
                  return this;
              },
 ```
@@ -84,7 +84,7 @@ index c8a6fef58d31..7d01c195791e 100644
 
 You can apply patches using any of the following methods:
 
--  [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html)
+-  [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 -  [Command line](/help/upgrade/patches/apply.md#command-line)
 -  [Composer](/help/upgrade/patches/apply.md#composer)
 
