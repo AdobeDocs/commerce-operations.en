@@ -34,7 +34,7 @@ The following sections include best practice information for the planning phase.
 - Services configuration
   - Enable CDN, WAF, and Image Optimization: [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
   - [New Relic - Configure notification channels](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
-  - [Best practices for Redis service configuration​](redis-servic-configuration.md)
+  - [Best practices for Redis service configuration​](redis-service-configuration.md)
   - [Best practice for OPcache memory size in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044740812​)
   - [Realpath cache size best practice](https://support.magento.com/hc/en-us/articles/360045176771​)
 

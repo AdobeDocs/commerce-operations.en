@@ -38,7 +38,7 @@ The declarative scheme was introduced in Adobe Commerce on cloud infrastructure 
 
 Related reading:
 
-* [What are the main differences between INNODB and MYISAM](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [What are the main differences between INNODB and MYISAM](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
 
 ## Configure the recommended search engine for native MySQL search
 
@@ -46,9 +46,9 @@ Adobe recommends that you always set up Elasticsearch or OpenSearch for your Ado
 
 The search engine you use depends on the Adobe Commerce on cloud version installed:
 
-* For Adobe Commerce 2.4.4 and later, use the OpenSearch service for native MySQL search.
+- For Adobe Commerce 2.4.4 and later, use the OpenSearch service for native MySQL search.
 
-* For earlier Adobe Commerce versions, use Elasticsearch.
+- For earlier Adobe Commerce versions, use Elasticsearch.
 
 To determine which search engine is currently in use, run the following command:
 
@@ -58,9 +58,9 @@ To determine which search engine is currently in use, run the following command:
 
 For configuration instructions, see the Developer Guide for Adobe Commerce on cloud:
 
-* [Set up the OpenSearch service](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [Set up the OpenSearch service](https://devdocs.magento.com/cloud/project/services-opensearch.html)
 
-* [Set up the Elasticsearch service](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Set up the Elasticsearch service](https://devdocs.magento.com/cloud/project/services-elastic.html)
 
 
 
@@ -70,10 +70,10 @@ Avoid using custom triggers if possible.
 
 Triggers are used to log changes into audit tables. Adobe recommends configuring the application to write directly to the audit tables instead of using the trigger functionality for these reasons:
 
-* Triggers are interpreted as code and MySQL does not precompile them. Hooking onto your query's transaction space, they add the overhead to a parser and interpreter for each query performed with the table.
-* The triggers share the same transaction space as the original queries, and while those queries compete for locks on the table, the triggers independently compete on locks on another table.
+- Triggers are interpreted as code and MySQL does not precompile them. Hooking onto your query's transaction space, they add the overhead to a parser and interpreter for each query performed with the table.
+- The triggers share the same transaction space as the original queries, and while those queries compete for locks on the table, the triggers independently compete on locks on another table.
 
-To learn about alternatives to using custom triggers, see  [Bestriggers usage](database-trigger-usage.md) in our support knowledge base.
+To learn about alternatives to using custom triggers, see  [Use MySQL triggers effectively](mysql-trigger-usage.md) in our support knowledge base.
 
 ## Upgrade ECE-Tools to version 2002.0.21 or higher {#ece-tools-version}
 
@@ -100,7 +100,7 @@ See [Enable archiving](https://docs.magento.com/user-guide/sales/order-archive.h
 
 ## Additional information
 
-* [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](upgrade-compact-to-dynamic-tables.md)
-* [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)
+- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](commerce-235-upgrade-prerequisites-mariadb.md)
+- [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)
 
 

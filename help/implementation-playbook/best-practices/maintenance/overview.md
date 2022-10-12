@@ -30,7 +30,7 @@ The following sections include best practice information for the maintenance pha
 ## Database management
 
 - [Best practices for resolving database performance issues​](resolve-database-performance-issues.md)
-- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-MariaDB.md)
+- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md)
 
 ## Catalog management
 
