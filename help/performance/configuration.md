@@ -74,6 +74,18 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 *  Activating the HTTP2 protocol can be a good alternative to using JS bundling. The protocol provides pretty much the same benefits.
 *  We do not recommend using deprecated settings like merging JS and CSS files, as they were designed only for synchronously-loaded JS in the HEAD section of the page. Using this technique can cause bundling and requireJS logic to work incorrectly.
 
+## Customer segments validation
+
+Merchants with large number of customer segments may experience a significant performance degradation with customer actions like customer logic, adding product to cart etc.
+
+It happens because customer actions trigger validation process of customer segments. By default, Adobe Commerce validates each segment in a real-time to define which customer segments are matched and which are not.
+
+To fix customer segments performance you can set a new system configuration option **[!UICONTROL Real-time Check if Customer is Matched by Segment]** to **No** to validate customer segments by a single combined condition SQL query.
+
+To enable this optimization, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] > [!UICONTROL Real-time Check if Customer is Matched by Segment]**
+
+It improves performance of segments validation if there are many customer segments in the system. But it does not work with split database and when there are no registered customers.
+
 ## Database maintenance schedule {#database}
 
 We recommend performing periodic database backups for your Staging and Production instances. Due to the I/O intensive nature of backup operations, you may encounter slower backups and potential issues. Running database processes for multiple environments at the same time may potentially run slower due to contention for available resources.
