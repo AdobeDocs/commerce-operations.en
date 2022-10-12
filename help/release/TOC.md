@@ -13,3 +13,32 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 - [Lifecycle policy](lifecycle-policy.md)
 - [Availability](availability.md)
 - [Commerce features](features.md)
+- Adobe Commerce release notes {#notes}
+  - [Overview](release-notes/overview.md)
+  - Minor releases {#minor}
+    - [2.4.0 - Adobe Commerce](release-notes/commerce-2-4-0.md)
+    - [2.4.0 - Magento Open Source](release-notes/open-source-2-4-0.md)
+  - Patch releases {#patches}
+    - [2.4.5 - Adobe Commerce](release-notes/commerce-2-4-5.md)
+    - [2.4.4 - Adobe Commerce](release-notes/commerce-2-4-4.md)
+    - [2.4.3 - Adobe Commerce](release-notes/commerce-2-4-3.md)
+    - [2.4.2 - Adobe Commerce](release-notes/commerce-2-4-2.md)
+    - [2.4.1 - Adobe Commerce](release-notes/commerce-2-4-1.md)
+    - [2.4.5 - Magento Open Source](release-notes/open-source-2-4-5.md)
+    - [2.4.4 - Magento Open Source](release-notes/open-source-2-4-4.md)
+    - [2.4.3 - Magento Open Source](release-notes/open-source-2-4-3.md)
+    - [2.4.2 - Magento Open Source](release-notes/open-source-2-4-2.md)
+    - [2.4.1 - Magento Open Source](release-notes/open-source-2-4-1.md)
+  - Security patch releases {#security-patches}
+    - [2.4.5-p1 - Adobe Commerce](release-notes/2.4.5-p1.md)
+    - [2.4.4-p2 - Adobe Commerce](release-notes/2.4.4-p2.md)
+    - [2.4.4-p1 - Adobe Commerce](release-notes/2.4.4-p1.md)
+    - [2.4.3-p3 - Adobe Commerce](release-notes/2.4.3-p3.md)
+    - [2.4.3-p2 - Adobe Commerce](release-notes/2.4.3-p2.md)
+    - [2.4.3-p1 - Adobe Commerce](release-notes/2.4.3-p1.md)
+    - [2.4.2-p2 - Adobe Commerce](release-notes/2.4.2-p2.md)
+  - [Backward-incompatible changes](backward-incompatible-changes.md)
+  - Packages {#packages}
+    - [Adobe Commerce](packages/adobe-commerce.md)
+    - [Cloud packages for Adobe Commerce](packages/cloud.md)
+    - [Magento Open Source](packages/magento-open-source.md)
