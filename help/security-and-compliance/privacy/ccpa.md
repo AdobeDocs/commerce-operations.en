@@ -18,7 +18,7 @@ The CCPA grants the following new rights to consumers:
 -  **Right to opt out** of the sale of their personal information.
 -  **Right to non-discrimination** in terms of price or service for having exercised a privacy right under CCPA.
 
-## CCPA Compliance Guide
+## CCPA compliance
 
 Developing and implementing a CCPA compliance plan requires a coordinated effort. We encourage merchants to assemble a cross-functional team, and follow the roadmap outlined in [CCPA Compliance Guide](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) to bring their company into compliance with the regulation. As a developer, you might be invited to participate as a stakeholder with an emphasis on steps 2 through 5 of the process. See the [CCPA Compliance Guide](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) for more information.
 
@@ -38,9 +38,9 @@ Developing and implementing a CCPA compliance plan requires a coordinated effort
 
 1. Document all CCPA-related procedures and maintain records.
 
-## Personal Information Reference
+## Personal information reference
 
-For technical information, see the data flow diagrams and database entity mappings in the Personal Information Reference that applies to each version of Adobe Commerce or Magento Open Source that you support.
+For technical information, see the dataflow diagrams and database entity mappings in the Personal Information Reference that applies to each version of Adobe Commerce or Magento Open Source that you support.
 
--  [Personal Information Reference (version 2.x)](data-m2.md)
--  [Personal Information Reference (version 1.x)](data-m1.md)
+-  [Customer personal information reference (version 2.x)](data-m2.md)
+-  [Customer personal information reference (version) 1.x)](data-m1.md)
