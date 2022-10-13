@@ -1,6 +1,6 @@
 ---
 title: Release notes
-description:
+description: Learn where to find information for specific Adobe Commerce and Magento Open Source releases.
 ---
 
 ## Adobe Commerce and Magento Open Source release notes
