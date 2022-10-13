@@ -62,8 +62,6 @@ For configuration instructions, see the Developer Guide for Adobe Commerce on cl
 
 - [Set up the Elasticsearch service](https://devdocs.magento.com/cloud/project/services-elastic.html)
 
-
-
 ## Avoid custom triggers
 
 Avoid using custom triggers if possible.
