@@ -78,7 +78,7 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 Merchants that have a large number of [customer segments](https://docs.magento.com/user-guide/marketing/customer-segments.html) may experience significant performance degradation with customer actions, such as customer logic and adding products to the cart.
 
-It happens because customer actions trigger validation process of customer segments. By default, Adobe Commerce validates each segment in a real-time to define which customer segments are matched and which are not.
+Customer actions trigger a validation process for customer segments, which is what can cause performance degradation. By default, Adobe Commerce validates each segment in real-time to define which customer segments are matched and which are not.
 
 To fix customer segments performance you can set a new system configuration option **[!UICONTROL Real-time Check if Customer is Matched by Segment]** to **No** to validate customer segments by a single combined condition SQL query.
 
