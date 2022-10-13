@@ -1,3 +1,5 @@
+# Community contributions
+
 | Contributing community member | Pull Requests | Related GitHub Issues |
 | ------- | ------- | ------- |
 | hostep | [magento/magento2#34873](https://github.com/magento/magento2/pull/34873) |  [magento/magento-beta#47](https://github.com/magento/magento-beta/issues/47) |

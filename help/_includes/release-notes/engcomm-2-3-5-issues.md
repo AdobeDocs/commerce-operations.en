@@ -1,3 +1,5 @@
+# Community contributions
+
 | Contributing community member | Pull Requests | Related GitHub Issues |
 | ------- | ------- | ------- |
 | Torben Höhn | [#25419](https://github.com/magento/magento2/pull/25419) | [6682](https://github.com/magento/magento2/issues/6682) |

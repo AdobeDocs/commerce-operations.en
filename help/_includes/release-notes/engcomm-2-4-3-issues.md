@@ -1,3 +1,5 @@
+# Community contributions
+
 | Contributing community member | Pull Requests | Related GitHub Issues |
 | ------- | ------- | ------- |
 | [dhaecker](https://github.com/dhaecker) | [#31045](https://github.com/magento/magento2/pull/31045) |  |

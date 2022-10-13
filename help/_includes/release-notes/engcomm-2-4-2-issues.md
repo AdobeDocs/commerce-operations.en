@@ -1,3 +1,5 @@
+# Community contributions
+
 | Contributing community member | Pull Requests | Related GitHub Issues |
 | ------- | ------- | ------- |
 | Nazar Klovanych | [#29576](https://github.com/magento/magento2/pull/29576) | [1449](https://github.com/magento/magento2/issues/1449) |

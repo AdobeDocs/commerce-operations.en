@@ -1,3 +1,5 @@
+# Community contributions
+
 | Partner | Pull Requests | Related GitHub Issues |
 | ------- | ------- | ------- |
 |  Fisheye |  [magento/magento2#35504](https://github.com/magento/magento2/pull/35504)  [magento/magento2#35356](https://github.com/magento/magento2/pull/35356)  [magento/magento2#35355](https://github.com/magento/magento2/pull/35355)  |  [magento/magento2#35505](https://github.com/magento/magento2/issues/35505)  [magento/magento2#35587](https://github.com/magento/magento2/issues/35587)  |

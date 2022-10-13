@@ -1,3 +1,5 @@
+# Community contributions
+
 | Contributing community member | Related GitHub Issues | Pull Requests |
 | ------- | ------- | ------- |
 | Vitaliy Boyko | [#533](https://github.com/magento/magento2/issues/533) | [magento/graphql-ce#578](https://github.com/magento/graphql-ce/pull/578) |

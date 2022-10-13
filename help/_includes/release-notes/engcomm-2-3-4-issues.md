@@ -1,3 +1,5 @@
+# Community contributions
+
 | Contributing community member | Pull Requests | Related GitHub Issues |
 | ------- | ------- | ------- |
 | Jacob Brown | [23428](https://github.com/magento/magento2/pull/23428) |   |
