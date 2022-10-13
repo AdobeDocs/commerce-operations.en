@@ -37,5 +37,5 @@ To prevent performance issues when using triggers, follow these best practices:
 
 ## Additional information
 
-[MySQL prerequisites](../../../installation/prerequisites/database/mysql.md) in the Installation Guide
-[Database best practices for Adobe Commerce on cloud infrastructure](database-on-cloud.md)
+- [MySQL prerequisites](../../../installation/prerequisites/database/mysql.md)
+- [Database best practices for Adobe Commerce on cloud infrastructure](database-on-cloud.md)
