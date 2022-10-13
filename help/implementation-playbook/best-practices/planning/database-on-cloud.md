@@ -1,16 +1,11 @@
 ---
-<<<<<<< HEAD
-title: Database configuration for cloud deployments
-description: Learn how to set up the database for Adobe Commerce on cloud projects
-=======
-title: Database best practices for Adobe Commerce on Cloud
-description: Learn how to set up the database for Adobe Commerce on cloud projects.
->>>>>>> 3fa4ea62fd19b1fb01e437c3b6b3a080f55e8932
+title: Database configuration best practices for cloud deployments
+description: Learn how to configure database and application settings to maximize performance when deploying Adobe Commerce on cloud infrastructure.
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
 ---
-# Database best practices for Adobe Commerce on cloud infrastructure
+# Best practices for database configuration
 
 Learn about best practices to improve database performance and work efficiently with the database for Adobe Commerce on cloud projects.
 

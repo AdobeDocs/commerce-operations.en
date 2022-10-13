@@ -27,9 +27,9 @@ The following sections include best practice information for the planning phase.
   - [robots.txt](https://support.magento.com/hc/en-us/articles/360048754931%E2%80%8B)
 
 - Database configuration
-  - [Database best practices for Adobe Commerce on cloud infrastructure​](database-on-cloud.md)
-  - [Configure the MySQL slave connection​](configure-mysql-slave-connection-on-cloud.md)
-  - [Use MySQL triggers effectively](mysql-triggers-usage.md)
+  - [Database configuration best practices for cloud deployments​](database-on-cloud.md)
+  - [MySQL slave connection configuration​](configure-mysql-slave-connection-on-cloud.md)
+  - [MySQL triggers usage](mysql-triggers-usage.md)
 
 - Services configuration
   - Enable CDN, WAF, and Image Optimization: [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)

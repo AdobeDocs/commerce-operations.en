@@ -1,12 +1,12 @@
 ---
-title: Best practices for configuring Redis for caching
+title: Best practices for Redis service configuration
 description: Learn how to improve caching performance by using the extended Redis cache implementation for Adobe Commerce 2.3.5.
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
 ---
 
-# Best practices for configuring Redis for caching
+# Best practices for Redis service configuration
 
 - For Adobe Commerce 2.3.3 and later deployed on cloud infrastructure, upgrade to Redis version 5.0.
 
