@@ -26,7 +26,7 @@ Before the Adobe Commerce Support team begins the upgrade upgrade process, you m
 
 - Complete the conversion work during a low traffic period on your site.
 
-- Switch your site to [maintenance mode](../../../commerce-operations/installation-guide/tutorials/maintenance-mode.html) before running the <code>ALTER</code> commands.
+- Switch your site to [maintenance mode](../../../commerce-operations/installation-guide/tutorials/maintenance-mode.md) before running the <code>ALTER</code> commands.
 
 
 ### Convert database tables

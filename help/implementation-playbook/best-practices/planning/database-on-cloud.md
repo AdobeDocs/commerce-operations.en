@@ -73,7 +73,7 @@ Triggers are used to log changes into audit tables. Adobe recommends configuring
 - Triggers are interpreted as code and MySQL does not precompile them. Hooking onto your query's transaction space, they add the overhead to a parser and interpreter for each query performed with the table.
 - The triggers share the same transaction space as the original queries, and while those queries compete for locks on the table, the triggers independently compete on locks on another table.
 
-To learn about alternatives to using custom triggers, see  [Use MySQL triggers effectively](mysql-trigger-usage.md) in our support knowledge base.
+To learn about alternatives to using custom triggers, see [Use MySQL triggers effectively](mysql-triggers-usage.md) in our support knowledge base.
 
 ## Upgrade ECE-Tools to version 2002.0.21 or higher {#ece-tools-version}
 
@@ -100,7 +100,7 @@ See [Enable archiving](https://docs.magento.com/user-guide/sales/order-archive.h
 
 ## Additional information
 
-- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](commerce-235-upgrade-prerequisites-mariadb.md)
+- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)
 
 
