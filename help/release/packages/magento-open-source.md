@@ -5,4 +5,4 @@ description: Learn about all dependencies and third-party licenses used in Magen
 
 # Adobe Commerce packages
 
-{{$include /help/_includes/templated/release/packages/magento-open-source.md}}
+{{$include /help/_includes/templated/release/packages/open-source.md}}
