@@ -80,7 +80,7 @@ Merchants that have a large number of [customer segments](https://docs.magento.c
 
 Customer actions trigger a validation process for customer segments, which is what can cause performance degradation. By default, Adobe Commerce validates each segment in real-time to define which customer segments are matched and which are not.
 
-To fix customer segments performance you can set a new system configuration option **[!UICONTROL Real-time Check if Customer is Matched by Segment]** to **No** to validate customer segments by a single combined condition SQL query.
+To avoid performance degradation, you can set the **[!UICONTROL Real-time Check if Customer is Matched by Segment]** system configuration option to **No** to validate customer segments by a single combined condition SQL query.
 
 To enable this optimization, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] > [!UICONTROL Real-time Check if Customer is Matched by Segment]**
 
