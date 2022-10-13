@@ -9,9 +9,7 @@ feature: Best Practices
 # Best practices for Redis service configuration
 
 - For Adobe Commerce 2.3.3 and later deployed on cloud infrastructure, upgrade to Redis version 5.0.
-
 - For Adobe Commerce version 2.3.5 or higher, use the extended Redis cache implementation. This implementation includes the following optimizations to minimize the number of Redis queries that are performed on each request from Adobe Commerce:
-
     - Diminish the size of network data transfers between Redis and Adobe Commerce
     - Lower Redis consumption of CPU cycles by improving the adapter's ability to automatically determine what needs to be loaded
     - Reduce race conditions on Redis write operations
@@ -19,7 +17,6 @@ feature: Best Practices
 ## Affected products and versions
 
 Adobe Commerce on cloud infrastructure with version 2.3.3 or later.
-
 Adobe Commerce (all deployment methods), version 2.3.5 and later
 
 ## Update Redis version for cloud deployments
@@ -49,11 +46,9 @@ For details, see [Deploy variables > `REDIS_BACKEND`](https://devdocs.magento.co
 >
 > Check the ece-tools version installed in your local Cloud environment from the command line using the `composer show magento/ece-tools` command. If necessary, [update the ece-tools version](https://devdocs.magento.com/cloud/project/ece-tools-update.html). 
 
-
 ### Configuration for on-premises deployments
 
 For Adobe Commerce on-premises deployments, configure the new Redis cache implementation using the Magento command line interface `bin/magento:setup` commands. For instructions, see [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
-
 
 ## Additional information
 

@@ -89,4 +89,5 @@ DROP INDEX
 
 ## Additional information
 
-[Database best practices for Adobe Commerce on cloud infrastructure](../planning/database-on-cloud.md)
+[Database configuration best practices for cloud deployments](../planning/database-on-cloud.md)
+

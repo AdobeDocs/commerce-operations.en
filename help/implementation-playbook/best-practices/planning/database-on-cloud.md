@@ -1,27 +1,27 @@
 ---
 title: Database configuration best practices for cloud deployments
-description: Learn how to configure database and application settings to maximize performance when deploying Adobe Commerce on cloud infrastructure.
+description: Learn how to configure database and application settings to improve performance when deploying Adobe Commerce on cloud infrastructure.
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
 ---
 # Best practices for database configuration
 
-Learn about best practices to improve database performance and work efficiently with the database for Adobe Commerce on cloud projects.
+Learn about best practices to improve database performance and work efficiently with the database when deploying Adobe Commerce on cloud infrastructure.
 
 ## Affected products
 
 Adobe Commerce on cloud infrastructure
 
-## Convert all MyISAM tables to InnoDb
+## Convert all MyISAM tables to InnoDB
 
-Adobe recommends using the `InnoDb` database engine. In a default Adobe Commerce installation, all tables in the database are stored using the `InnoDb` engine. However, some third-party modules (extensions) can introduce tables in the `MyISAM` format. After you install a third-party module, check the database to identify any tables in `MyISAM` format and convert them to `InnoDb`.
+Adobe recommends using the InnoDB database engine. In a default Adobe Commerce installation, all tables in the database are stored using the InnoDB engine. However, some third-party modules (extensions) can introduce tables in the MyISAM format. After you install a third-party module, check the database to identify any tables in `myisam` format and convert them to `innodb` format.
 
-### Determine if a module includes `MyISAM` tables
+### Determine if a module includes MyISAM tables
 
-You can analyze the third-party module code before installing it, to determine if it uses `MyISAM` tables.
+You can analyze the third-party module code before installing it, to determine if it uses MyISAM tables.
 
-If you have already installed an extension, run the following query to determine whether the database has any `MyISAM` tables:
+If you have already installed an extension, run the following query to determine whether the database has any MyISAM tables:
 
 ```sql
 SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
@@ -29,15 +29,11 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
     NOT IN ('mysql', 'information_schema', 'performance_schema', 'sys');
 ```
 
-### Change the storage engine to InnoDb
+### Change the storage engine to InnoDB
 
 In the `db_schema.xml` file declaring the table, set the `engine` attribute value for the corresponding `table` node to `innodb`. For reference, see [Configure declarative schema > table node](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in our developer documentation.
 
 The declarative scheme was introduced in Adobe Commerce on cloud infrastructure version 2.3.
-
-## Additional information
-
-- [What are the main differences between `INNODB` and `MYISAM`](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
 
 ## Configure the recommended search engine for native MySQL search
 
@@ -89,13 +85,14 @@ Avoid running DDL statements in the Production environment to prevent conflicts 
 
 If you need to run a DDL statement, put the website in maintenance mode and disable cron (see the instructions for switching indexes safely in the previous section).
 
-### Enable order archiving
+## Enable order archiving
 
-Enable order archiving to reduce the space required for Sales tables as your order data grows. Archiving saves MySQL disk space and improves checkout performance.
+Enable order archiving from the Admin to reduce the space required for Sales tables as your order data grows. Archiving saves MySQL disk space and improves checkout performance.
 
 See [Enable archiving](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving) in the Adobe Commerce Merchant documentation.
 
 ## Additional information
 
+- [What are the main differences between InnoDB and MYISAM](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
 - [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)

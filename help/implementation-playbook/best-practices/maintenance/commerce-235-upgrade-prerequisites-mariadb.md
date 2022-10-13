@@ -18,7 +18,9 @@ Adobe Commerce on cloud infrastructure with Adobe Commerce version 2.3.4 or earl
 
 ## Prepare your database for the upgrade
 
-Before the Adobe Commerce Support team begins the upgrade upgrade process, you must prepare your database by converting all tables from `COMPACT` format to `DYNAMIC`. You also need to convert the storage engine type from `MyISAM` to `InnoDB`.
+Before the Adobe Commerce Support team begins the upgrade process, you must prepare your database by converting the format for all tables from `COMPACT` to `DYNAMIC`. You must also convert the storage engine type from `MyISAM` to `InnoDB`.
+
+Keep the following guidelines in mind when you create the plan and schedule to convert the database.
 
 - Converting from `COMPACT` to `DYNAMIC` tables can take several hours with a large database.
 
@@ -34,43 +36,47 @@ You can convert tables on one node in your cluster. The changes will replicate t
 
 1. From your Adobe Commerce on cloud infrastructure environment, use SSH to connect to node 1.
 
-1. Log in to MariaDB
+1. Log in to MariaDB.
 
-1. Identify tables to be converted from compact to dynamic format.
+1. Convert the table format.
 
-   ```mysql
-   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
-   ```
+   - Identify tables to be converted from compact to dynamic format.
 
-1. Determine the table sizes so you can schedule the conversion work.
+     ```mysql
+     SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+     ```
 
-   ```mysql
-   SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
-   ```
+   - Determine the table sizes so you can schedule the conversion work.
 
-   Larger tables take longer to convert. You should plan accordingly when taking your site in and out of maintenance mode which batches of tables to convert in which order, so as to plan the timings of the maintenance windows needed
+     ```mysql
+     SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
+     ```
 
-1. Convert all tables to dynamic format one at a time.
+     Larger tables take longer to convert. You should plan accordingly when taking your site in and out of maintenance mode which batches of tables to convert in which order, so as to plan the timings of the maintenance windows needed
 
-   ```mysql
-   ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
-   ```
+   - Convert all tables to dynamic format one at a time.
 
-1. Identify tables that use `MyISAM` storage.
+     ```mysql
+     ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
+     ```
 
-   ```mysql
-   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
-   ```
+1. Update the table storage engine.
 
-1. Convert tables that use `MyISAM` storage to `InnoDB` storage.
+   - Identify tables that use `MyISAM` storage.
 
-    ```mysql
-    ALTER TABLE [ table name here ] ENGINE=InnoDB;
-    ```
+     ```mysql
+     SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+     ```
+
+   - Convert tables that use `MyISAM` storage to `InnoDB` storage.
+
+     ```mysql
+     ALTER TABLE [ table name here ] ENGINE=InnoDB;
+     ```
 
 1. Verify the conversion.
 
-   This step is required because code deployments made since the conversion might cause some tables to be reverted to their original configuration.
+   This step is required because code deployments made after you completed the conversion might cause some tables to be reverted to their original configuration.
 
    - The day before the scheduled upgrade to MariaDB version 10.2, login to your database and run the queries to check the format and storage engine.
 
