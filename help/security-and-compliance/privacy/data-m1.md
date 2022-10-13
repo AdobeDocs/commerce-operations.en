@@ -1,6 +1,6 @@
 ---
 title: Customer personal information reference (version 1.x)
-description: Learn about data flow and database entity mappings for customer personal information in Magento 1.x.
+description: Learn about dataflow and database entity mappings for customer personal information in Magento 1.x.
 ---
 
 # Customer personal information reference (version 1.x)
@@ -9,14 +9,14 @@ description: Learn about data flow and database entity mappings for customer per
 >
 >This is one in a series of topics to help Adobe Commerce and Magento Open Source merchants and developers prepare for compliance with privacy regulations. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
 
-Use the following data flow diagrams and database entity mappings for reference when developing compliance programs for privacy regulations such as:
+Use the following dataflow diagrams and database entity mappings for reference when developing compliance programs for privacy regulations such as:
 
 -  [GDPR](gdpr.md)
 -  [CCPA](ccpa.md)
 
 ## Dataflow diagrams
 
-The data flow diagrams show the types of data that customers and administrators can enter and retrieve on the storefront and Admin.
+The dataflow diagrams show the types of data that customers and administrators can enter and retrieve on the storefront and Admin.
 
 ### Frontend data entry points
 
