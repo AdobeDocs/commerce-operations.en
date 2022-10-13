@@ -27,7 +27,7 @@ This additional overhead can negatively impact site performance on the site if m
 
 >![WARNING]
 >
->Adobe Commerce does not support any custom triggers in the Adobe Commerce database because custom triggers can introduce incompatibilities with future Adobe Commerce versions. For best practices, see [General MySQL Guidelines](../../../installation/prerequisites/database-server/mysql.md) in the Adobe Commerce documentation.
+>Adobe Commerce does not support any custom triggers in the Adobe Commerce database because custom triggers can introduce incompatibilities with future Adobe Commerce versions. For best practices, see [General MySQL Guidelines](help/installation/prerequisites/database-server/mysql.md) in the Adobe Commerce documentation.
 
 To prevent performance issues when using triggers, follow these best practices:
 
@@ -37,5 +37,5 @@ To prevent performance issues when using triggers, follow these best practices:
 
 ## Additional information
 
-- [MySQL prerequisites](../../../installation/prerequisites/database-server/mysql.md) in the Installation Guide
+- [MySQL prerequisites](help/installation/prerequisites/database-server/mysql.md) in the Installation Guide
 - [Database best practices for Adobe Commerce on cloud infrastructure](database-on-cloud.md)
