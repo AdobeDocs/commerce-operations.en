@@ -1,6 +1,6 @@
 ---
 title: Database best practices for Adobe Commerce on Cloud
-description: Learn how to set up the database for Adobe Commerce on cloud projects
+description: Learn how to set up the database for Adobe Commerce on cloud projects.
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
@@ -16,13 +16,13 @@ Adobe Commerce on cloud infrastructure
 
 ## Convert all MyISAM tables to InnoDb
 
-Adobe recommends using the InnoDb database engine. In a default Adobe Commerce installation, all tables in the database are stored using the InnoDb engine. However, some third-party modules (extensions) can introduce tables in the MyISAM format. After you install a third-party module, check the database to identify any tables in MyISAM format and convert them to InnoDb.
+Adobe recommends using the `InnoDb` database engine. In a default Adobe Commerce installation, all tables in the database are stored using the `InnoDb` engine. However, some third-party modules (extensions) can introduce tables in the `MyISAM` format. After you install a third-party module, check the database to identify any tables in `MyISAM` format and convert them to `InnoDb`.
 
-### Determine if a module includes MyISAM tables
+### Determine if a module includes `MyISAM` tables
 
-You can analyze the third-party module code before installing it, to determine if it uses MyISAM tables.
+You can analyze the third-party module code before installing it, to determine if it uses `MyISAM` tables.
 
-If you have already installed an extension, run the following query to determine whether the database has any MyISAM tables:
+If you have already installed an extension, run the following query to determine whether the database has any `MyISAM` tables:
 
 ```sql
 SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
@@ -38,7 +38,7 @@ The declarative scheme was introduced in Adobe Commerce on cloud infrastructure 
 
 Related reading:
 
-- [What are the main differences between INNODB and MYISAM](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [What are the main differences between `INNODB` and `MYISAM`](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
 
 ## Configure the recommended search engine for native MySQL search
 
@@ -73,20 +73,20 @@ Triggers are used to log changes into audit tables. Adobe recommends configuring
 
 To learn about alternatives to using custom triggers, see [Use MySQL triggers effectively](mysql-triggers-usage.md) in our support knowledge base.
 
-## Upgrade ECE-Tools to version 2002.0.21 or higher {#ece-tools-version}
+## Upgrade [!DNL ECE-Tools] to version 2002.0.21 or higher {#ece-tools-version}
 
-To avoid potential issues with cron deadlocks, upgrade ECE-Tools to version 2002.0.21 or higher. For instructions, see [Update ece-tools version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) in our developer documentation.
+To avoid potential issues with cron deadlocks, upgrade ECE-Tools to version 2002.0.21 or higher. For instructions, see [Update `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) in our developer documentation.
 
 ## Switch indexer mode safely
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-Switching indexers generates DDL statements to create triggers which can cause database locks. You can prevent this issue by putting your website in maintenance mode and disabling cron jobs before changing the configuration.
+Switching indexers generates [!DNL data definition language] (DDL) statements to create triggers which can cause database locks. You can prevent this issue by putting your website in maintenance mode and disabling cron jobs before changing the configuration.
 For instructions, see [Configure indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) in the *Adobe Commerce Configuration Guide*.
 
 ## Do not run DDL statements in Production
 
-Avoid running DDL (Data Definition Language) statements in the Production environment to prevent conflicts (like table modifications and creations). The `setup:upgrade` process is an exception.
+Avoid running DDL statements in the Production environment to prevent conflicts (like table modifications and creations). The `setup:upgrade` process is an exception.
 
 If you need to run a DDL statement, put the website in maintenance mode and disable cron (see the instructions for switching indexes safely in the previous section).
 

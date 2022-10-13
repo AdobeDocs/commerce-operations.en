@@ -1,6 +1,6 @@
 ---
 title: Best practice to configure the MySQL slave connection
-description: Learn how to configure the MySQL slave connection for Adobe Commerce sites deployed on cloud infrastructure
+description: Learn how to configure the MySQL slave connection for Adobe Commerce sites deployed on cloud infrastructure.
 role: Developer
 feature-set: Commerce
 feature: Best Practices
@@ -22,7 +22,7 @@ The configuration for the MYSQL slave connection is set by the [MYSQL_SLAVE_CONN
 
 To enable the MySQL slave connection:
 
-1. Edit your `.magento.env.yaml` file and verify that the MYSQL_USE_SLAVE_CONNECTION is enabled.  
+1. Edit your `.magento.env.yaml` file and verify that `MYSQL_USE_SLAVE_CONNECTION` is enabled.  
 
    ```
    stage:

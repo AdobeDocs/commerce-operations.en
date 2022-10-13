@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB
-description: Learn how to prepare your Adobe Commerce database to upgrade from Adobe Commerce 2.3.5 
+description: Learn how to prepare your Adobe Commerce database to upgrade from Adobe Commerce 2.3.5.
 role: Developer
 feature-set: Commerce
 feature: Best Practices
@@ -18,15 +18,15 @@ Adobe Commerce on cloud infrastructure with Adobe Commerce version 2.3.4 or earl
 
 ## Prepare your database for the upgrade
 
-Before the Adobe Commerce Support team begins the upgrade upgrade process, you must prepare your database by converting all tables from <code>COMPACT</code> format to <code>DYNAMIC</code>. You also need to convert the storage engine type from MyISAM to InnoDB.
+Before the Adobe Commerce Support team begins the upgrade upgrade process, you must prepare your database by converting all tables from `COMPACT` format to `DYNAMIC`. You also need to convert the storage engine type from `MyISAM` to `InnoDB`.
 
-- Converting from <code>COMPACT</code> to <code>DYNAMIC</code> tables can take several hours with a large database.
+- Converting from `COMPACT` to `DYNAMIC` tables can take several hours with a large database.
 
 - To prevent data corruption, do not perform the conversion when your site is live.
 
 - Complete the conversion work during a low traffic period on your site.
 
-- Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the <code>ALTER</code> commands.
+- Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the `ALTER` commands.
 
 
 ### Convert database tables
@@ -57,13 +57,13 @@ You can convert tables on one node in your cluster. The changes will replicate t
    ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
    ```
 
-1. Identify tables that use MyISAM storage.
+1. Identify tables that use `MyISAM` storage.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. Convert tables that use MyISAM storage to InnoDB storage.
+1. Convert tables that use `MyISAM` storage to `InnoDB` storage.
 
     ```mysql
     ALTER TABLE [ table name here ] ENGINE=InnoDB;
