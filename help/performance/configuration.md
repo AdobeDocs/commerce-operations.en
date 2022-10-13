@@ -84,7 +84,7 @@ To avoid performance degradation, you can set the **[!UICONTROL Real-time Check 
 
 To enable this optimization, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] > [!UICONTROL Real-time Check if Customer is Matched by Segment]**.
 
-It improves performance of segments validation if there are many customer segments in the system. But it does not work with split database and when there are no registered customers.
+This setting improves the performance of customer segment validation if there are many customer segments in the system. However, it does not work with [split database](../configuration/storage/multi-master.md) implementations or when there are no registered customers.
 
 ## Database maintenance schedule {#database}
 
