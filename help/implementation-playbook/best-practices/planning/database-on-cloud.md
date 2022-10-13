@@ -1,11 +1,10 @@
 ---
-title: Database best practices for Adobe Commerce on Cloud
+title: Database configuration for cloud deployments
 description: Learn how to set up the database for Adobe Commerce on cloud projects
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
 ---
-
 # Database best practices for Adobe Commerce on cloud infrastructure
 
 Learn about best practices to improve database performance and work efficiently with the database for Adobe Commerce on cloud projects.
@@ -36,7 +35,7 @@ In the `db_schema.xml` file declaring the table, set the `engine` attribute valu
 
 The declarative scheme was introduced in Adobe Commerce on cloud infrastructure version 2.3.
 
-Related reading:
+## Additional information
 
 - [What are the main differences between INNODB and MYISAM](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
 
@@ -61,8 +60,6 @@ For configuration instructions, see the Developer Guide for Adobe Commerce on cl
 - [Set up the OpenSearch service](https://devdocs.magento.com/cloud/project/services-opensearch.html)
 
 - [Set up the Elasticsearch service](https://devdocs.magento.com/cloud/project/services-elastic.html)
-
-
 
 ## Avoid custom triggers
 
@@ -102,5 +99,3 @@ See [Enable archiving](https://docs.magento.com/user-guide/sales/order-archive.h
 
 - [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)
-
-

@@ -23,13 +23,13 @@ The following sections include best practice information for the maintenance pha
 
 - [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Use SWAT tool to ensure security and operability of Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) – CTAG deck
- - New Relic
- - Logs
- - Disk space
+- New Relic
+- Logs
+- Disk space
 
 ## Database management
 
-- [Best practices for resolving database performance issues​](resolve-database-performance-issues.md)
+- [Resolve database performance issues​](resolve-database-performance-issues.md)
 - [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md)
 
 ## Catalog management

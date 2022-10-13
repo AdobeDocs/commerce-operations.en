@@ -1,5 +1,5 @@
 ---
-title: Best practice to configure the MySQL slave connection
+title: MySQL slave connection configuration
 description: Learn how to configure the MySQL slave connection for Adobe Commerce sites deployed on cloud infrastructure
 role: Developer
 feature-set: Commerce

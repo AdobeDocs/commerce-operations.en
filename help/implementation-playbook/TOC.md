@@ -67,9 +67,9 @@ mini-toc-levels: 3
   - [Overview](best-practices/phases.md)
   - Planning {#planning}
     - [Overview](best-practices/planning/overview.md)
-    - [Database best practices for cloud deployments​](best-practices/planning/database-on-cloud.md)
-    - [Configure MySQL slave connection​](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
-    - [Use MySQL triggers effectively](best-practices/planning/mysql-triggers-usage.md)
+    - [Database configuration for cloud deployments​](best-practices/planning/database-on-cloud.md)
+    - [MySQL slave connection configuration​](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
+    - [MySQL triggers usage](best-practices/planning/mysql-triggers-usage.md)
     - [Redis service configuration](best-practices/planning/redis-service-configuration.md)
     - [Extensions](best-practices/planning/extensions.md)
     - [Partner escalations](best-practices/planning/partner-escalation.md)

@@ -50,7 +50,7 @@ Prevent these issues by defining a primary key for any tables that don't have on
 1. Identify tables without a primary key using the following SQL query:
 
     ```sql
-    SELECT table_catalog, table_schema, table_name, engine        FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN        (SELECT table_catalog, table_schema, table_name        FROM information_schema.table_constraints        WHERE constraint_type = 'PRIMARY KEY')        AND table_schema NOT IN ('information_schema', 'pg_catalog');    
+    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
     ```
 
 1. For any table missing a primary key, add a primary key by updating the `db_schema.xml` (the declarative schema) with a node similar to the following:
