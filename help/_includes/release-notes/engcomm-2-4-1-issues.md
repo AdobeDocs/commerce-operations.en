@@ -79,7 +79,7 @@
 | Oleh Usik | [#27549](https://github.com/magento/magento2/pull/27549) | [28755](https://github.com/magento/magento2/issues/28755) |
 | Oleksandr Melnyk | [#28666](https://github.com/magento/magento2/pull/28666) |  |
 | Petkovski Marjan | [#28714](https://github.com/magento/magento2/pull/28714) |  |
-| [Dmitriy Gallyamov | [#28647](https://github.com/magento/magento2/pull/28647) | [28568](https://github.com/magento/magento2/issues/28568), [28572](https://github.com/magento/magento2/issues/28572) |
+| Dmitriy Gallyamov | [#28647](https://github.com/magento/magento2/pull/28647) | [28568](https://github.com/magento/magento2/issues/28568), [28572](https://github.com/magento/magento2/issues/28572) |
 | Dmitry Tsymbal | [#28641](https://github.com/magento/magento2/pull/28641) | [28720](https://github.com/magento/magento2/issues/28720) |
 | Dmitry Tsymbal | [#28632](https://github.com/magento/magento2/pull/28632) | [28721](https://github.com/magento/magento2/issues/28721) |
 | Dmitry Tsymbal | [#28635](https://github.com/magento/magento2/pull/28635) | [28744](https://github.com/magento/magento2/issues/28744) |
