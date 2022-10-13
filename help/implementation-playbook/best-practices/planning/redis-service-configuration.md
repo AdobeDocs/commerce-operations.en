@@ -13,8 +13,7 @@ feature: Best Practices
 - For Adobe Commerce version 2.3.5 or higher, use the extended Redis cache implementation. This implementation includes the following optimizations to minimize the number of Redis queries that are performed on each request from Adobe Commerce:
 
     - Diminish the size of network data transfers between Redis and Adobe Commerce
-
-    -  Lower Redis consumption of CPU cycles by improving the adapter's ability to automatically determine what needs to be loaded
+    - Lower Redis consumption of CPU cycles by improving the adapter's ability to automatically determine what needs to be loaded
     - Reduce race conditions on Redis write operations
 
 ## Affected products and versions
@@ -36,7 +35,7 @@ For Adobe Commerce 2.3.5 and higher, update your configuration to use the extend
 
 ### Configuration for cloud deployments
 
-With ece-tools 2002.1.1 or higher, configure enhanced Redis cache by setting the `REDIS_BACKEND` deployment variable in the environment configuration file, `.magento.env.yaml`
+With `ece-tools` 2002.1.1 or higher, configure enhanced Redis cache by setting the `REDIS_BACKEND` deployment variable in the environment configuration file, `.magento.env.yaml`
 
 ```yaml
 stage:
@@ -44,7 +43,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\Redis'
 ```
 
-For details, see [Deploy variables > REDIS_BACKEND](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) in the documentation for Adobe Commerce on cloud infrastructure.
+For details, see [Deploy variables > `REDIS_BACKEND`](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) in the documentation for Adobe Commerce on cloud infrastructure.
 
 >[!NOTE]
 >
@@ -53,12 +52,12 @@ For details, see [Deploy variables > REDIS_BACKEND](https://devdocs.magento.com/
 
 ### Configuration for on-premises deployments
 
-For Adobe Commerce on-premises deployments, configure the new Redis cache implementation using the Magento command line interface `bin/magento:setup` commands. For instructions, see [Use Redis for default cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html?lang=en#configure-redis-page-caching).
+For Adobe Commerce on-premises deployments, configure the new Redis cache implementation using the Magento command line interface `bin/magento:setup` commands. For instructions, see [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
 
 
 ## Additional information
 
 - [Adobe Commerce Release v2.3.5 - Performance boosts](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#performance-boosts)
-- [Redis Page Cache](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-pg-cache.html)
+- [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
 
 

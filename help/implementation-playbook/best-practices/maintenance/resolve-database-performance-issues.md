@@ -1,6 +1,6 @@
 ---
 title: Best practices to resolve database performance issues
-description: Learn how to fix database issues that slow performance on Adobe Commerce sites deployed on cloud infrastructure
+description: Learn how to fix database issues that slow performance on Adobe Commerce sites deployed on cloud infrastructure.
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
@@ -24,16 +24,16 @@ Determine whether you have any slow running MySQL queries. Depending on your Ado
 
 You can use MySQL to identify and resolve long running queries on any Adobe Commerce on cloud infrastructure project.
 
-1. Run the [SHOW \[FULL\] PROCESSLIST](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) statement.
-1. If you see long running queries, run [MySQL EXPLAIN and EXPLAIN ANALYZE](https://mysqlserverteam.com/mysql-explain-analyze/) for each of them, to find out what makes the query run for a long time.
+1. Run the [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) statement.
+1. If you see long running queries, run [MySQL `EXPLAIN` and `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) for each of them, to find out what makes the query run for a long time.
 1.  Based on the issues found, take steps to fix the query so it runs more quickly.
 
 ### Analyze queries using the Percona Toolkit (for Pro architecture only)
 
-If your Adobe Commerce project is deployed on PRO architecture, you can use the Percona Toolkit to analyze queries.
+If your Adobe Commerce project is deployed on Pro architecture, you can use the Percona Toolkit to analyze queries.
 
 1. Run the `pt-query-digest --type=slowlog` command against MySQL slow query logs.
-    * To find the location of the slow query logs, see [Log locations > Service Logs](https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) in our developer documentation.
+    * To find the location of the slow query logs, see **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) in our developer documentation.
     * See the [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentation.
 1. Based on the issues found, take steps to fix the query so it runs more quickly.
 
