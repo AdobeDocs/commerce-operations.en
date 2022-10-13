@@ -26,7 +26,7 @@ Before the Adobe Commerce Support team begins the upgrade upgrade process, you m
 
 - Complete the conversion work during a low traffic period on your site.
 
-- Switch your site to [maintenance mode][maintmode] before running the <code>ALTER</code> commands.
+- Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the <code>ALTER</code> commands.
 
 
 ### Convert database tables
@@ -89,6 +89,3 @@ You can convert tables on one node in your cluster. The changes will replicate t
 ## Additional information
 
 [Database best practices for Adobe Commerce on cloud infrastructure](../planning/database-on-cloud.md)
-
-
-[maintmode]: ../../../installation/tutorials/maintenance-mode.md
