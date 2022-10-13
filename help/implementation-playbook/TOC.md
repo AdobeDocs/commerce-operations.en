@@ -67,6 +67,10 @@ mini-toc-levels: 3
   - [Overview](best-practices/phases.md)
   - Planning {#planning}
     - [Overview](best-practices/planning/overview.md)
+    - [Database configuration for cloud deployments​](best-practices/planning/database-on-cloud.md)
+    - [MySQL slave connection configuration​](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
+    - [MySQL triggers usage](best-practices/planning/mysql-triggers-usage.md)
+    - [Redis service configuration](best-practices/planning/redis-service-configuration.md)
     - [Extensions](best-practices/planning/extensions.md)
     - [Partner escalations](best-practices/planning/partner-escalation.md)
     - [Product options](best-practices/planning/product-options.md)
@@ -81,3 +85,5 @@ mini-toc-levels: 3
     - [Overview](best-practices/maintenance/overview.md)
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
+    - [Resolve database performance issues​](best-practices/maintenance/resolve-database-performance-issues.md)
+    - [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
