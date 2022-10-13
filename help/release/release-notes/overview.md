@@ -15,7 +15,7 @@ See [Release Notes for ece-tools](https://devdocs.magento.com/cloud/release-note
 
 >[!NOTE]
 >
->We recommend installing full Adobe on cloud infrastructure upgrades for important security updates. Full upgrades include all associated patches and hotfixes.
+>We recommend installing full Adobe Commerce on cloud infrastructure upgrades for important security updates. Full upgrades include all associated patches and hotfixes.
 
 ## Third-party license agreements
 

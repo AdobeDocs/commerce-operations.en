@@ -40,7 +40,7 @@
 >
 >Adobe Commerce and Magento Open Source releases may contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Not all releases introduce major BICs.
 
-## CVE notice {cve-notice}
+## CVE notice {#cve-notice}
 
 >[!NOTE]
 >
