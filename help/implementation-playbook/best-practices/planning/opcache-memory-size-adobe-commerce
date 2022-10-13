@@ -1,0 +1,47 @@
+---
+title: Best Practice for OPcache memory size in Adobe Commerce
+description: Describes how to avoid performance degradation by specific settings of OPcache memory consumption
+role: Developer
+feature: Best Practices
+hide: yes
+hidetoc: yes
+---
+
+<!--Metadata values configured in ExL
+
+Info on writing descriptions and titles: https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/features/metadata.html
+
+Available roles: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/role.yml
+
+Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml 
+
+Hide values are set to yes for the template so it is not included in ExL. You can remove those tags for best practices topics you add. -->
+
+# Best practice for OPcache memory size in Adobe Commerce
+<!--Add one or two sentences to summarize the overall contents of this best practice topic--> For Adobe Commerce on cloud infrastructure Pro plan architecture 2.3.x, it is recommended to set `opcache.memory_consumption` to at least 2GB, to avoid performance degradation.
+
+
+## Affected products and versions
+* Adobe Commerce on cloud infrastructure Pro plan architecture 2.3.x
+* PHP 7.0 and later
+
+<!--Add details for the product and versions where the best practice info is relevant. Below are examples, adjust as needed. If info applies specifically to B2B or B2C, include that information -->
+
+Adobe Commerce on-premises, [all supported versions](../../release/versions.html) <!--If content applies only to specific versions, indicate that instead of [all supported versions]>
+Adobe Commerce on cloud infrastructure
+<!-- Business type: B2C and B2B -- specify only if needed?)-->
+
+## Call to Action
+
+Allocate at least **2GB** of memory for the [OPcache PHP module](https://www.php.net/manual/en/book.opcache.php). The OPcache module is configured in the `php.ini` file. To allocate 2048MB of memory, set `opcache.memory_consumption = 2048`. 
+
+
+## Related Articles
+For more details see 
+* [Performance Best Practices - PHP Settings](https://devdocs.magento.com/guides/v2.3/performance-best-practices/software.html#php-settings) 
+* [Configure PHP options](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings) in our developer documentation.
+
+ Best Practices for improving Adobe Commerce on cloud infrastructure site performance in our support knowledge base:
+* [Database best practices for Adobe Commerce on cloud infrastructure`(https://support.magento.com/hc/en-us/articles/360041997312-Database-best-practices-for-Magento-Commerce-Cloud)
+* [Most common database issues in Adobe Commerce on cloud infrastructure](https://support.magento.com/hc/en-us/articles/360041739651-Most-common-database-issues-in-Magento-Commerce-Cloud)
+* [Indexers "Update On Schedule" optimizes Adobe Commerce performance](https://support.magento.com/hc/en-us/articles/360040227191-Indexers-Update-On-Schedule-optimizes-Magento-performance)
