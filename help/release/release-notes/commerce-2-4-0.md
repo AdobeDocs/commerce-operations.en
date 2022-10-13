@@ -15,7 +15,7 @@ This release includes all the improvements to core quality that were included in
 
 >[!NOTE]
 >
->Minor releases bring substantial code enhancements. Before upgrading to Magento 2.4.0, confirm that your environment meets the minimal [technical stack requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+>Minor releases bring substantial code enhancements. Before upgrading to Magento 2.4.0, confirm that your environment meets the minimal [technical stack requirements](../../installation/system-requirements.md).
 
 {{bics}}
 
@@ -31,7 +31,7 @@ DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in S
 
 Merchants can now install time-sensitive security fixes without applying the hundreds of functional fixes and enhancements that a full quarterly release (for example, Magento 2.3.5-p2) provides. Patch 2.3.5.2 (Composer package 2.3.5-p2) is a security patch that provides fixes for vulnerabilities that have been identified in our previous quarterly release, Magento 2.3.5-p1. All hot fixes that were applied to the 2.3.5 release are included in this security patch. (A *hot fix* provides a fix to a released version of Magento that addresses a specific problem or bug.)
 
-For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287).For instructions on downloading and applying security patches (including patch 2.3.5-p2), see [Install Magento using Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
+For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287).For instructions on downloading and applying security patches (including patch 2.3.5-p2), see [Install Magento using Composer](../../installation/composer.md). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
 
 ## Other release information
 
@@ -73,15 +73,15 @@ No confirmed attacks related to these issues have occurred to date. However, cer
 
 ### Platform upgrades
 
-The following platform upgrades help enhance website security and performance. Supported versions of PHP and PHPUnit, Elasticsearch, MySQL, and other dependencies are listed in [Magento 2.4 technology stack requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+The following platform upgrades help enhance website security and performance. Supported versions of PHP and PHPUnit, Elasticsearch, MySQL, and other dependencies are listed in [Magento 2.4 technology stack requirements](../../installation/system-requirements.md).
 
 *  **PHP 7.4 support introduced and PHP 7.1 and 7.2 deprecated**. Magento 2.4.0 introduces support for PHP 7.4.
 
 *  **Support for PHPUnit 9.x and deprecation of PHPUnit 6.5**. PHP 7.4 requires the use of the latest PHPUnit testing framework, which is PHPUnit 9.x. Commerce Marketplace extension vendors must confirm that all new extension versions are compatible with PHP 7.4 and that all  unit and integration tests have been configured to be run with PHPUnit 9.
 
-*  **Elasticsearch 7.6.x support**. Elasticsearch 7.6.x is now the default catalog search engine for Adobe Commerce and Adobe Commerce. You cannot install or upgrade to version 2.4.0 without also installing Elasticsearch 7.6.x. Elasticsearch version 2.x code has been removed. Elasticsearch versions 5.x and 6.x have been deprecated and are no longer supported. See [Search engine prerequisites](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html).
+*  **Elasticsearch 7.6.x support**. Elasticsearch 7.6.x is now the default catalog search engine for Adobe Commerce and Adobe Commerce. You cannot install or upgrade to version 2.4.0 without also installing Elasticsearch 7.6.x. Elasticsearch version 2.x code has been removed. Elasticsearch versions 5.x and 6.x have been deprecated and are no longer supported. See [Search engine prerequisites](../../installation/prerequisites/search-engine/overview.md).
 
-*  **MySQL 8.0 support**. Magento 2.4.x supports MySQL 8.x. (Magento 2.4.0 was tested with MySQL 8.0.20.) Merchants are encouraged to migrate their deployments to MySQL 8.x to take advantage of its improved performance, security, and reliability. Although MySQL 5.7 is still supported for Magento 2.4.x, MySQL 5.6 is no longer supported. You cannot host Magento 2.4.x with a MySQL 5.6 database. See [MySQL](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html).
+*  **MySQL 8.0 support**. Magento 2.4.x supports MySQL 8.x. (Magento 2.4.0 was tested with MySQL 8.0.20.) Merchants are encouraged to migrate their deployments to MySQL 8.x to take advantage of its improved performance, security, and reliability. Although MySQL 5.7 is still supported for Magento 2.4.x, MySQL 5.6 is no longer supported. You cannot host Magento 2.4.x with a MySQL 5.6 database. See [MySQL](../../installation/prerequisites/database/mysql.md).
 
 *  **MariaDB 10.4 support**. Support for MySQL 8.0 provides the opportunity for merchants to deploy MariaDB 10.4 with Magento. Although merchants can still use MariaDB 10.2 with Magento 2.4.0, we recommend upgrading to MariaDB 10.4 for improved performance and reliability. MariaDB 10.0 and 10.1 are no longer supported (as a result of removing support for MySQL 5.6 in this release).
 *  **Removal of the MySQL catalog search engine**. The MySQL search engine has been removed from Magento 2.4.0 and replaced as the default search engine with Elasticsearch. Elasticsearch provides superior search capabilities as well as catalog performance optimizations.  All merchants must have Elasticsearch to install and deploy Magento 2.4.0. See [Verify Elasticsearch is installed](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/prerequisites.html).
@@ -106,7 +106,7 @@ This release contains enhancements to core quality, which improve the quality of
 
 *  **PayPal JavaScript SDK upgrade**. We've migrated the PayPal Express Checkout integration to the latest PayPal JavaScript SDK, an SDK that  automatically collects and passes needed risk parameters to PayPal. The behavior of the PayPal Express Checkout payment method remains unchanged. However, upgrading this SDK to the latest version let merchants access the latest features and security enhancements. <!--- MC-30962-->
 
-*  **Deprecation and removal of the Web Set Up Wizard**. You must use the command line to install or upgrade Magento 2.4.0. See [Install Magento](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
+*  **Deprecation and removal of the Web Set Up Wizard**. You must use the command line to install or upgrade Magento 2.4.0. See [Install Magento](../../installation/advanced.md).
 
 *  **Composer update plugin**. Composer plugin streamlines the  upgrade process by resolving changes that must be made to the root project `composer.json` file before updating to a new Magento product requirement. This plug-in protects against overwriting customizations. See [Upgrade using the Magento composer root plugin](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
 
@@ -119,7 +119,7 @@ This release contains enhancements to core quality, which improve the quality of
 
 ### Performance improvements
 
-*  **Improvements to customer data section invalidation logic**. This release introduces a new way of invalidating all customer sections data that avoids a known issue with local storage when custom `sections.xml` invalidations are active.  (Previously, private content (local storage) was not correctly populated when you had a custom *etc/frontend/sections.xml* with action invalidations.) See [Private content](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/page-caching/private-content.html).
+*  **Improvements to customer data section invalidation logic**. This release introduces a new way of invalidating all customer sections data that avoids a known issue with local storage when custom `sections.xml` invalidations are active.  (Previously, private content (local storage) was not correctly populated when you had a custom *etc/frontend/sections.xml* with action invalidations.) See [Private content](https://developer.adobe.com/commerce/php/development/cache/page/private-content/).
 
 *  **Multiple optimizations to Redis performance**. The enhancements minimize the number of queries to Redis that are performed on each Magento request. These optimizations include:
 
@@ -129,7 +129,7 @@ This release contains enhancements to core quality, which improve the quality of
 
    *  Reduction in race conditions on Redis write operations
 
-   See [Use Redis for the Magento page and default cache](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html) and [Configure caching](https://devdocs.magento.com/guides/v2.4/config-guide/cache.html).
+   See [Use Redis for the Magento page and default cache](../../configuration/cache/redis-pg-cache.md) and [Configure caching](../../configuration/cache/caching-overview.md).
 
 *  **Improved caching of results of SQL queries to inventory tables**. These enhancements include:
 
@@ -155,7 +155,7 @@ Page Builder now supports PHP 7.4.
 
 ### Inventory Management
 
-Inventory Management enhancements for this release include support for in-store pickup and bundle product support. See [Inventory Management release notes](https://devdocs.magento.com/guides/v2.4/inventory/release-notes.html) for a more detailed discussion of recent Inventory Management bug fixes.
+Inventory Management enhancements for this release include support for in-store pickup and bundle product support. See [Inventory Management release notes](https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html) for a more detailed discussion of recent Inventory Management bug fixes.
 
 ### GraphQL
 
@@ -183,7 +183,7 @@ See [Magento compatibility](https://developer.adobe.com/commerce/pwa-studio/inte
 *  Full history log of actions that have been performed on each Purchase Order
 *  Email notification for relevant parties  during all steps in the approval process.
 
-This release also includes multiple bug fixes. See [B2B Release Notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html).
+This release also includes multiple bug fixes. See [B2B Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).
 
 ### Magento Functional Testing Framework (MFTF)
 
@@ -1497,7 +1497,7 @@ We have fixed hundreds of issues in the Magento 2.4.0 core code.
 
 <!--- MC-31499-->
 
-*  Customer data section invalidation logic has been improved. This release introduces a new way of invalidating all customer sections data that avoids a known issue with local storage when custom `sections.xml` invalidations are active. (Previously, private content (local storage) was not correctly populated when you had a custom *etc/frontend/sections.xml* with action invalidations.) See [Private content](https://https://devdocs.magento.com/guides/v2.4/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html#invalidate-private-content).
+*  Customer data section invalidation logic has been improved. This release introduces a new way of invalidating all customer sections data that avoids a known issue with local storage when custom `sections.xml` invalidations are active. (Previously, private content (local storage) was not correctly populated when you had a custom *etc/frontend/sections.xml* with action invalidations.) See [Private content](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content).
 
 <!--- MC-31449-->
 
@@ -1679,7 +1679,7 @@ We have fixed hundreds of issues in the Magento 2.4.0 core code.
 
 ### Search
 
-*  Elasticsearch 7.6.x is now the default catalog search engine for Adobe Commerce and Adobe Commerce. You cannot install or upgrade to version 2.4.0 without also installing Elasticsearch 7.6.x. Elasticsearch version 2.x code has been removed. Elasticsearch versions 5.x and 6.x have been deprecated and are no longer supported. See [Search engine prerequisites](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html).
+*  Elasticsearch 7.6.x is now the default catalog search engine for Adobe Commerce and Adobe Commerce. You cannot install or upgrade to version 2.4.0 without also installing Elasticsearch 7.6.x. Elasticsearch version 2.x code has been removed. Elasticsearch versions 5.x and 6.x have been deprecated and are no longer supported. See [Search engine prerequisites](../../installation/prerequisites/search-engine/overview.md).
 
 <!--- MC-23753-->
 
@@ -2299,7 +2299,7 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](../../installation/system-requirements.md).
 
 ### Installation and upgrade instructions
 
@@ -2307,6 +2307,6 @@ You can install Adobe Commerce 2.4.0 using Composer.
 
 ## Migration tool kits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/basics/install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

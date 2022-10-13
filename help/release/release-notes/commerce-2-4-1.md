@@ -19,7 +19,7 @@ DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in t
 
 Merchants can now install time-sensitive security fixes without applying the hundreds of functional fixes and enhancements that a full quarterly release (for example, Magento 2.4.0-p1) provides. Patch 2.4.0.1 (Composer package 2.4.0-p1) is a security patch that provides fixes for vulnerabilities that have been identified in our previous quarterly release, Magento 2.4.0. All hot fixes that were applied to the 2.4.0 release are included in this security patch. (A *hot fix* provides a fix to a released version of Magento that addresses a specific problem or bug.)
 
-For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches (including patch 2.3.5-p2), see [Install Magento using Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
+For general information about security patches, see [Introducing the New Security Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches (including patch 2.3.5-p2), see [Install Magento using Composer](../../installation/composer.md). Security patches include security bug fixes only, not the additional security enhancements that are included in the full patch.
 
 ## Other release information
 
@@ -64,7 +64,7 @@ This release contains enhancements to core quality, which improve the quality of
 
 *  **Reduction in the size of network transfers between Redis and Magento**. Plugin list configuration is now generated during the execution of the `bin/magento di:compile` command. This configuration information is written to generated metadata folders based on scope. Previously, this information was stored in cache. Resulting performance improvements include a decrease in network cache size and execution time for many scenarios.<!--- MC-31617-->
 
-*  **Enhanced message queue consumer performance**. Three new configuration settings support a decrease in consumer queue CPU consumption. These optional parameters provide increased control over consumers and save server resources. See [Configure message queues](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
+*  **Enhanced message queue consumer performance**. Three new configuration settings support a decrease in consumer queue CPU consumption. These optional parameters provide increased control over consumers and save server resources. See [Configure message queues](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
 
 *  **Improved execution time** for `bin/magento` commands.
 
@@ -185,7 +185,7 @@ To reduce creation of fraudulent or spam accounts, merchants can now enable Goog
 Admin actions taken in the Company modules are now logged in the Admin Actions Log. Actions are logged from all relevant company modules: `Company`, `NegotiableQuote`, `CompanyCredit`, `SharedCatalog`.
 <!--- BUNDLE-180 181 182 183 -->
 
-This release also includes multiple bug fixes. See [B2B Release Notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html).
+This release also includes multiple bug fixes. See [B2B Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).
 
 ### Magento Functional Testing Framework (MFTF)
 
@@ -653,7 +653,7 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 <!--- MC-35884-->
 
-*  Message queue consumer configuration has been extended with new parameters that help control consumers and save server resources and that potentially decrease consumer queue CPU consumption. See [Configure message queues](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
+*  Message queue consumer configuration has been extended with new parameters that help control consumers and save server resources and that potentially decrease consumer queue CPU consumption. See [Configure message queues](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
 
 <!--- ENGCOM-7863-->
 
@@ -1389,7 +1389,7 @@ We have fixed hundreds of issues in the Magento 2.4.1 core code.
 
 ### Performance
 
-*  Three new configuration settings support a decrease in consumer queue CPU consumption. These optional parameters provide increased control over consumers and save server resources. See [Configure message queues](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/message-queues/config-mq.html) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
+*  Three new configuration settings support a decrease in consumer queue CPU consumption. These optional parameters provide increased control over consumers and save server resources. See [Configure message queues](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/) for a description of the `maxIdleTime`, `sleep`, and `onlySpawnWhenMessageAvailable` parameters.
 
 <!--- MC-31617-->
 
@@ -1943,7 +1943,7 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](../../installation/system-requirements.md).
 
 ### Installation and upgrade instructions
 
@@ -1951,6 +1951,6 @@ You can install Adobe Commerce 2.4.1 using Composer.
 
 ## Migration tool kits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](../../tools/data-migration-tool/install.md). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento-commerce/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

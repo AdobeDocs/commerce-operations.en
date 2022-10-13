@@ -9,7 +9,7 @@ This release includes over 370 new fixes to core code and 33 security enhancemen
 
 {{bics}}
 
-See [Adobe Commerce 2.4.2-p2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/2-4-2-p2.html) for information about Adobe Commerce 2.4.2-p2.
+See [Adobe Commerce 2.4.2-p2 release notes](2-4-2-p2.md) for information about Adobe Commerce 2.4.2-p2.
 
 ## Other release information
 
@@ -51,7 +51,7 @@ Security improvements for this release improve compliance with the latest securi
 
 *  A **new Composer plugin** helps prevent dependency confusion and identifies malicious packages with the same names as internal packages on the public package repository. See the [Adobe Releases New Composer Plugin with Magento 2.4.3 Release](https://magento.com/blog/best-practices/adobe-releases-new-composer-plugin-magento-243-release) blog post.
 
-*  **Rate limiting is now built in to Magento APIs** to prevent denial-of-service (DoS) attacks. Web APIs now impose restrictions on the size or number of resources (the default maximum is set to 20 and can be configured to a different value based on business need) that can be requested by a client. See [Rate limiting](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html) for information about configuring these restrictions. <!--- MC-35358-->
+*  **Rate limiting is now built in to Magento APIs** to prevent denial-of-service (DoS) attacks. Web APIs now impose restrictions on the size or number of resources (the default maximum is set to 20 and can be configured to a different value based on business need) that can be requested by a client. See [Rate limiting](https://developer.adobe.com/commerce/webapi/get-started/api-security/) for information about configuring these restrictions. <!--- MC-35358-->
 
 *  **ReCAPTCHA  coverage has been extended** to include:
 
@@ -85,7 +85,7 @@ This release contains enhancements that improve the quality of the framework and
 
 **PayPal Pay Later is now supported** in deployments that include PayPal. This feature allows shoppers to pay for an order in bi-weekly installments instead of paying the full amount at time of purchase. <!--- MC-40556-->
 
-**New `use_application_lock` indexing mode**. The `use_application_lock` mode lets you enable re-indexing through either the use of environment variables or by configuring the `app/etc/env.php` file. You no longer need to manually reset the indexer after failure with this mode enabled. See [Using application lock mode for reindex processes](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing.html#using-application-lock-mode-for-reindex-processes).
+**New `use_application_lock` indexing mode**. The `use_application_lock` mode lets you enable re-indexing through either the use of environment variables or by configuring the `app/etc/env.php` file. You no longer need to manually reset the indexer after failure with this mode enabled. See [Using application lock mode for reindex processes](https://developer.adobe.com/commerce/php/development/components/indexing/#using-application-lock-mode-for-reindex-processes).
 
 ### Platform enhancements
 
@@ -107,7 +107,7 @@ This release includes enhancements that decrease indexation time for Product Pri
 
 ### Live Search
 
-[Live Search](https://docs.magento.com/user-guide/live-search/overview.html) powered by [Adobe Sensei](https://www.adobe.com/sensei.html) delivers an intuitive search experience by using artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. See [Live Search Release Notes](https://devdocs.magento.com/live-search/release-notes.html).
+[Live Search](https://docs.magento.com/user-guide/live-search/overview.html) powered by [Adobe Sensei](https://www.adobe.com/sensei.html) delivers an intuitive search experience by using artificial intelligence and machine-learning algorithms to perform a deep analysis of aggregated visitor data. See [Live Search Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html).
 
 ### GraphQL
 
@@ -155,7 +155,7 @@ See the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphq
 
 ### B2B
 
-Magento 2.4.3 introduces B2B v1.3.2. This release includes multiple bug fixes. See [B2B Release Notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html).
+Magento 2.4.3 introduces B2B v1.3.2. This release includes multiple bug fixes. See [B2B Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).
 
 ### Page Builder
 
@@ -193,13 +193,13 @@ See the following topics for updates on features and changes for this release:
 
 *  [Braintree](https://docs.magento.com/user-guide/payment/braintree.html)
 
-*  [dotdigital Engagement Cloud](https://devdocs.magento.com/extensions/vendor/dotdigital/release-notes.html)
+*  [dotdigital Engagement Cloud](../../upgrade/modules/upgrade.md)
 
 *  [Klarna](https://docs.magento.com/user-guide/payment/klarna.html)
 
 *  [Vertex Cloud](https://docs.magento.com/user-guide/tax/vertex.html)
 
-*  [Yotpo Product Reviews](https://devdocs.magento.com/extensions/vendor/yotpo/release-notes.html)
+*  [Yotpo Product Reviews](../../upgrade/modules/upgrade.md)
 
 ## Fixed issues
 
@@ -1227,7 +1227,7 @@ We have fixed hundreds of issues in the Magento 2.4.3 core code.
 
 <!--- MC-41445-->
 
-*  The Magento dependency `pelago/emogrifier` has been updated from version 3.1.0 to 5.0.0. This update resulted in the introduction of backwards-incompatible changes to the `Magento\Email\Model\Template\Filter` class. The changed code is executed during Magento email templates rendering. See [BIC reference](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html).
+*  The Magento dependency `pelago/emogrifier` has been updated from version 3.1.0 to 5.0.0. This update resulted in the introduction of backwards-incompatible changes to the `Magento\Email\Model\Template\Filter` class. The changed code is executed during Magento email templates rendering. See [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/).
 
 <!--- MC-42212-->
 
@@ -1558,7 +1558,7 @@ Repetitive actions have been replaced with action groups in these tests:
 
 *  Numeric values in `WHERE IN` expressions are now cast as number, not as string, which improves query performance in some versions of MariaDB. [GitHub-31135](https://github.com/magento/magento2/issues/31135)
 
-*  The `use_application_lock` mode lets you enable re-indexing through either the use of environment variables or by configuring the `app/etc/env.php` file. You no longer need to manually reset the indexer after failure with this mode enabled. When this mode is not enabled, you must manually reset the indexer after failure. See [Using application lock mode for reindex processes](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexing.html#using-application-lock-mode-for-reindex-processes)
+*  The `use_application_lock` mode lets you enable re-indexing through either the use of environment variables or by configuring the `app/etc/env.php` file. You no longer need to manually reset the indexer after failure with this mode enabled. When this mode is not enabled, you must manually reset the indexer after failure. See [Using application lock mode for reindex processes](https://developer.adobe.com/commerce/php/development/components/indexing/#using-application-lock-mode-for-reindex-processes).
 
 ### Pricing
 
@@ -2238,14 +2238,14 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](../../installation/system-requirements.md).
 
 ### Installation and upgrade instructions
 
-You can install Adobe Commerce 2.4.3 using [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+You can install Adobe Commerce 2.4.3 using [Composer](../../installation/composer.md).
 
 ## Migration tool kits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](../../tools/data-migration-tool/install.md). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento-commerce/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

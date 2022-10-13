@@ -67,9 +67,9 @@ Security improvements for this release improve compliance with the latest securi
 
 *  Email variable usage was deprecated back in 2.3.4 as part of a security risk mitigation in favor of a more strict variable syntax. This legacy behavior has been fully removed in this release as a continuation of that security risk mitigation.
 
-   As a result, email or newsletter templates that worked in previous versions of Adobe Commerce may not work correctly after upgrading to Adobe Commerce 2.4.4 or Magento Open Source 2.4.4. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) to fix deprecated usages. See [Migrating custom email templates](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/templates/template-email-migration.html) for information about potential effects and guidelines for migrating affected templates.
+   As a result, email or newsletter templates that worked in previous versions of Adobe Commerce may not work correctly after upgrading to Adobe Commerce 2.4.4 or Magento Open Source 2.4.4. Affected templates include admin overrides, themes, child themes, and templates from custom modules or third-party extensions. Your deployment may still be affected even after using the [Upgrade compatibility tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) to fix deprecated usages. See [Migrating custom email templates](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) for information about potential effects and guidelines for migrating affected templates.
 
-*  Integration tokens can no longer be used for API Bearer token authentication. Previously, an integration token could be used as a standalone key for token-based authentication. However, this behavior has been disabled by default due to the security implications of a never-expiring access token. The previous behavior can be enabled through the command line or Admin. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html). <!--- AC-1619--->
+*  Integration tokens can no longer be used for API Bearer token authentication. Previously, an integration token could be used as a standalone key for token-based authentication. However, this behavior has been disabled by default due to the security implications of a never-expiring access token. The previous behavior can be enabled through the command line or Admin. See [Token-based authentication](https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token/). <!--- AC-1619--->
 
 *  Session IDs are no longer stored in the database. <!--- AC-522-->
 
@@ -85,9 +85,9 @@ Security improvements for this release improve compliance with the latest securi
 
 *  The dependency confusion plugin is now required for all Adobe Commerce installations. Previously, this plugin was required for Composer-based installations only. It now permits trusted versions. Merchants can bypass the constraints set in this plugin that prohibit certain combinations of Composer installations. The constraints can be bypassed for trusted versions, and Adobe Commerce now displays a warning before proceeding with installation.  <!--- AC-501 970-->
 
-*  Developers can now configure the limit on the size of arrays accepted by Adobe Commerce RESTful endpoints on a per-endpoint basis. See [API security](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html). <!--- AC-465-->
+*  Developers can now configure the limit on the size of arrays accepted by Adobe Commerce RESTful endpoints on a per-endpoint basis. See [API security](https://developer.adobe.com/commerce/webapi/get-started/api-security/). <!--- AC-465-->
 
-*  Added mechanisms for limiting the size and number of resources that a user can request through a web API on a system-wide basis, and for overriding the defaults on individual modules. This resolves the issue addressed by `MC-43048__set_rate_limits__2.4.3.patch`. See [API security](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html). <!--- AC-1120-->
+*  Added mechanisms for limiting the size and number of resources that a user can request through a web API on a system-wide basis, and for overriding the defaults on individual modules. This resolves the issue addressed by `MC-43048__set_rate_limits__2.4.3.patch`. See [API security](https://developer.adobe.com/commerce/webapi/get-started/api-security/). <!--- AC-1120-->
 
 ### Platform enhancements
 
@@ -135,7 +135,7 @@ Performance enhancements in this release:
 
 *  Improvements to the validation process for orders affected by a cart price rule during asynchronous order placement. <!--- MCP-304-->
 
-See [High-throughput Order Processing](https://devdocs.magento.com/guides/v2.4/performance-best-practices/high-throughput-order-processing.html).
+See [High-throughput Order Processing](../../performance/high-throughput-order-processing.md).
 
 ### GraphQL
 
@@ -175,7 +175,7 @@ See the [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphq
 
 ### B2B
 
-This release includes multiple bug fixes. See [B2B Release Notes](https://devdocs.magento.com/guides/v2.4/release-notes/b2b-release-notes.html)
+This release includes multiple bug fixes. See [B2B Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).
 
 ### Vendor-Bundled Extensions
 
@@ -1930,14 +1930,14 @@ The following table identifies contributions from our community members. This ta
 
 ### System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](../../installation/system-requirements.md).
 
 ### Installation and upgrade instructions
 
-You can install Adobe Commerce 2.4.4 using [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+You can install Adobe Commerce 2.4.4 using [Composer](../../installation/composer.md).
 
 ## Migration tool kits
 
-The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](https://devdocs.magento.com/guides/v2.4/migration/migration-tool-install.html). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
+The Data Migration Tool helps transfer existing Magento 1.x store data to Magento 2.x. This command-line interface includes verification, progress tracking, logging, and testing functions. For installation instructions, see [Install the Data Migration Tool](../../tools/data-migration-tool/install.md). Consider exploring or contributing to the [Magento Data Migration repository](https://github.com/magento/data-migration-tool).
 
 The [Code Migration Toolkit](https://github.com/magento-commerce/code-migration) helps transfer existing Magento 1.x store extensions and customizations to Magento 2.x. The command-line interface includes scripts for converting Magento 1.x modules and layouts.

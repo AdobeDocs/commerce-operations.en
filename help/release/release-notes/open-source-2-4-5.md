@@ -1234,8 +1234,8 @@ The following table identifies contributions from our community members. This ta
 
 ## System requirements
 
-Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](https://devdocs.magento.com/system-requirements.html).
+Our technology stack is built on PHP and MySQL. For more information, see [System Requirements](../../installation/system-requirements.md).
 
 ## Installation and upgrade instructions
 
-You can install Magento Open Source 2.4.5 using [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+You can install Magento Open Source 2.4.5 using [Composer](../../installation/composer.md).
