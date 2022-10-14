@@ -16,6 +16,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 - Release notes {#notes}
   - [Overview](release-notes/overview.md)
   - Adobe Commerce {#adobe-commerce}
+    - [Overview](release-notes/commerce/overview.md)
     - [2.4.5](release-notes/commerce/2-4-5.md)
     - [2.4.4](release-notes/commerce/2-4-4.md)
     - [2.4.3](release-notes/commerce/2-4-3.md)
@@ -23,6 +24,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.1](release-notes/commerce/2-4-1.md)
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
+    - [Overview](release-notes/open-source/overview.md)
     - [2.4.5](release-notes/open-source/2-4-5.md)
     - [2.4.4](release-notes/open-source/2-4-4.md)
     - [2.4.3](release-notes/open-source/2-4-3.md)
@@ -30,6 +32,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.1](release-notes/open-source/2-4-1.md)
     - [2.4.0](release-notes/open-source/2-4-0.md) 
   - Security patch releases {#security-patches}
+    - [Overview](release-notes/security/overview.md)
     - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
     - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
     - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
