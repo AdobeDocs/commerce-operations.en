@@ -11,14 +11,14 @@ description: Learn about General Data Protection Regulation (GDPR), which is leg
 
 The European Union (EU) enacted [General Data Protection Regulation](https://ec.europa.eu/info/law/law-topic/data-protection_en) (GDPR) to give its citizens more control over their personal data. GDPR applies to any organization operating within the EU. It also applies to organizations outside of the EU that offer goods or services to customers or businesses in the EU.
 
-System integrators can use the data flow diagrams and database information in the Personal Information Reference to build scripts to resolve use cases similar to the following:
+System integrators can use the dataflow diagrams and database information in the Personal Information Reference to build scripts to resolve use cases similar to the following:
 
 -  A shopper asks for a copy of the data that the merchant has stored about them
 -  A shopper requests to delete their information
 
-## Personal Information Reference
+## Personal information reference
 
-For technical information, see the data flow diagrams and database entity mappings in the Personal Information Reference that applies to each version of Adobe Commerce or Magento Open Source that you support.
+For technical information, see the dataflow diagrams and database entity mappings in the Personal Information Reference that applies to each version of Adobe Commerce or Magento Open Source that you support.
 
 -  [Customer personal information reference (version 2.x)](data-m2.md)
 -  [Customer personal information reference (version) 1.x)](data-m1.md)
