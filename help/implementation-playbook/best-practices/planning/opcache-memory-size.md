@@ -17,8 +17,8 @@ For Adobe Commerce on cloud infrastructure Pro plan architecture 2.3.x, it is re
 
 [All supported versions](../../release/versions.html) of:
 
-* Adobe Commerce on-premises
 * Adobe Commerce on cloud infrastructure
+* Adobe Commerce on-premises
 
 ## Configure memory
 
@@ -34,6 +34,6 @@ For more details see:
 
 Best Practices for improving Adobe Commerce on cloud infrastructure site performance:
 
-* [Database best practices for Adobe Commerce on cloud infrastructure](https://support.magento.com/hc/en-us/articles/360041997312-Database-best-practices-for-Magento-Commerce-Cloud)
-* [Most common database issues in Adobe Commerce on cloud infrastructure](../maintenance/)
+* [Database best practices for Adobe Commerce on cloud infrastructure](database-on-cloud.md)
+* [Most common database issues in Adobe Commerce on cloud infrastructure](../maintenance/resolve-database-performance-issues.md)
 * [Indexers "Update On Schedule" optimizes Adobe Commerce performance](https://support.magento.com/hc/en-us/articles/360040227191-Indexers-Update-On-Schedule-optimizes-Magento-performance)
