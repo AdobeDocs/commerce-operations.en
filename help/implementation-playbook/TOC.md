@@ -79,6 +79,7 @@ mini-toc-levels: 3
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
     - [Development](best-practices/development/troubleshooting.md)
+    - [Optimize CSS and JS files](best-practices/development/optimize-css-js-files.md)
     - [Static content deployment](best-practices/development/static-content-deployment.md)
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
