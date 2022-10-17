@@ -70,6 +70,7 @@ mini-toc-levels: 3
     - [Database configuration for cloud deployments​](best-practices/planning/database-on-cloud.md)
     - [MySQL slave connection configuration​](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
     - [MySQL triggers usage](best-practices/planning/mysql-triggers-usage.md)
+    - [Realpath cache size](best-practices/planning/realpath-cache-size.md)
     - [Redis service configuration](best-practices/planning/redis-service-configuration.md)
     - [Extensions](best-practices/planning/extensions.md)
     - [Partner escalations](best-practices/planning/partner-escalation.md)
