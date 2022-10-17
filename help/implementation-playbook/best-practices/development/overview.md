@@ -27,8 +27,9 @@ Lorem ipsum dolor sit amet.
   - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
+  - [Optimize CSS and JS files](optimize-css-js-files.md)
 
-- Add Custom code
+- Add custom code
   - [Best practices for extension developers](https://developer.adobe.com/commerce/php/best-practices/)
   - [Best practices for theme development](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=MAGPS&title=Best+Practices+for+Theme+Development)
   - [Module basis](https://wiki.corp.adobe.com/x/kz4ykw) (wiki) — Develop custom modules
