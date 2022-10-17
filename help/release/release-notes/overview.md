@@ -52,15 +52,6 @@ Use the following table to find release notes and important information related 
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Store Fulfillment</a></li>
           </ul>
         </td>
-      <td><strong>Storefront Experience</strong>
-        <p>Learn about the latest improvements to storefront technology that you can use to build unique experiences for your customers.</p>
-          <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
-            <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
-          </ul>
-      </td>
-    </tr>
-    <tr>
       <td><strong>Tools</strong>
         <p>Learn about the latest improvements to tools designed to make it easier for you to find and use Adobe Commerce and Magento Open Source software.</p>
           <ul>
@@ -68,6 +59,15 @@ Use the following table to find release notes and important information related 
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Quality Patches Tool</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Site-Wide Analysis Tool</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Upgrade Compatibility Tool</a></li>
+          </ul>
+      </td>
+    </tr>
+    <tr>
+       <td><strong>Storefront Experience</strong>
+        <p>Learn about the latest improvements to storefront technology that you can use to build unique experiences for your customers.</p>
+          <ul>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
+            <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>
       <td></td>
