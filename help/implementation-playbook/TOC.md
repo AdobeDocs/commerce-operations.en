@@ -70,6 +70,7 @@ mini-toc-levels: 3
     - [Extensions](best-practices/planning/extensions.md)
     - [Partner escalations](best-practices/planning/partner-escalation.md)
     - [Product options](best-practices/planning/product-options.md)
+    - [OPcache memory size](best-practices/planning/opcache-memory-size.md)
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
     - [Development](best-practices/development/troubleshooting.md)

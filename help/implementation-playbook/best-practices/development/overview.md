@@ -17,7 +17,6 @@ The development phase includes the following activities:
 
 The following sections include best practice information for the development phase.
 
-
 ## Application development
 
 Lorem ipsum dolor sit amet.
