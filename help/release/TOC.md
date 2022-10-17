@@ -5,14 +5,17 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 
 # Release Information {#release}
 
-- [Roadmap](roadmap.md)
-- [Schedule](schedule.md)
+- [Availability](availability.md)
+- [Backward-incompatible changes](backward-incompatible-changes.md)
 - [Beta program](beta-program.md)
+- [Commerce features](features.md)
+- [Lifecycle policy](lifecycle-policy.md)
+- Packages {#packages}
+  - [Adobe Commerce](packages/adobe-commerce.md)
+  - [Cloud packages for Adobe Commerce](packages/cloud.md)
+  - [Magento Open Source](packages/magento-open-source.md)
 - [Released versions](versions.md)
 - [Release policy](policy.md)
-- [Lifecycle policy](lifecycle-policy.md)
-- [Availability](availability.md)
-- [Commerce features](features.md)
 - Release notes {#notes}
   - [Overview](release-notes/overview.md)
   - Adobe Commerce {#adobe-commerce}
@@ -40,8 +43,5 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
     - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
     - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
-- [Backward-incompatible changes](backward-incompatible-changes.md)
-- Packages {#packages}
-  - [Adobe Commerce](packages/adobe-commerce.md)
-  - [Cloud packages for Adobe Commerce](packages/cloud.md)
-  - [Magento Open Source](packages/magento-open-source.md)
+- [Roadmap](roadmap.md)
+- [Schedule](schedule.md)
