@@ -57,5 +57,5 @@ Lorem ipsum dolor sit amet.
 ## Code, merge, test
 
 - [Best practices for builds and deployment](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) – CTAG Deck
-- [Static content deployment - Cloud](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html)
-- [Troubleshooting Best Practices for Adobe Commerce on cloud infrastructure​](https://support.magento.com/hc/en-us/articles/360034340372%E2%80%8B)
+- [Static content deployment - Cloud](static-content-deployment.md)
+- [Troubleshooting Best Practices for Adobe Commerce on cloud infrastructure​](troubleshooting.md)

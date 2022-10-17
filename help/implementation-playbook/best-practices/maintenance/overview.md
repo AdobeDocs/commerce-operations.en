@@ -23,9 +23,14 @@ The following sections include best practice information for the maintenance pha
 
 - [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Use SWAT tool to ensure security and operability of Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) – CTAG deck
- - New Relic
- - Logs
- - Disk space
+- New Relic
+- Logs
+- Disk space
+
+## Database management
+
+- [Resolve database performance issues​](resolve-database-performance-issues.md)
+- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md)
 
 ## Catalog management
 
@@ -57,6 +62,5 @@ The following sections include best practice information for the maintenance pha
 
 ### Upgrades
 
-- [Update services and components to latest version​](https://support.magento.com/hc/en-us/articles/360048603692%E2%80%8B)
-- [Upgrade plan checklist for Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360057968951%E2%80%8B)
-
+- [Update services and components to latest version​](update-services.md)
+- [Upgrade checklist for Adobe Commerce​](upgrade-checklist.md)

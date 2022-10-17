@@ -27,17 +27,14 @@ The following sections include best practice information for the planning phase.
   - [robots.txt](https://support.magento.com/hc/en-us/articles/360048754931%E2%80%8B)
 
 - Database configuration
-  - [Database best practices for Adobe Commerce on cloud infrastructure​](https://support.magento.com/hc/en-us/articles/360041997312%E2%80%8B)
-  - [Adobe Commerce on cloud infrastructure best practice for MySQL slave connection​](https://support.magento.com/hc/en-us/articles/360049045351%E2%80%8B)
-  - [Adobe Commerce 2.3.5 upgrade: compact to dynamic tables​](https://support.magento.com/hc/en-us/articles/360048389631%E2%80%8B)
-  - [Best practices for triggers usage](https://support.magento.com/hc/en-us/articles/360048050352%E2%80%8B)
-  - [Most common database issues in Adobe Commerce on cloud infrastructure​](https://support.magento.com/hc/en-us/articles/360041739651%E2%80%8B)
+  - [Database configuration best practices for cloud deployments​](database-on-cloud.md)
+  - [MySQL slave connection configuration​](configure-mysql-slave-connection-on-cloud.md)
+  - [MySQL triggers usage](mysql-triggers-usage.md)
 
 - Services configuration
   - Enable CDN, WAF, and Image Optimization: [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
   - [New Relic - Configure notification channels](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
-  - [Install Redis 5 Adobe Commerce on cloud infrastructure 2.3.3 or later​](https://support.magento.com/hc/en-us/articles/360046108412%E2%80%8B)
-  - [Extended Redis cache implementation Adobe Commerce 2.3.5+](https://support.magento.com/hc/en-us/articles/360049292532%E2%80%8B)
+  - [Best practices for Redis service configuration​](redis-service-configuration.md)
   - [Best practice for OPcache memory size in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044740812​)
   - [Realpath cache size best practice](https://support.magento.com/hc/en-us/articles/360045176771​)
 
@@ -48,14 +45,14 @@ The following sections include best practice information for the planning phase.
 ## Catalog design
 
 - [Product limits best practice​](https://support.magento.com/hc/en-us/articles/360045066791%E2%80%8B)
-- [Best practices for Adobe Commerce product options​](https://support.magento.com/hc/en-us/articles/360048723372%E2%80%8B)
+- [Best practices for Adobe Commerce product options​](product-options.md)
 - [Best practice for number of products in cart in Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360048550332%E2%80%8B)
 - [Best practice Adobe Commerce product attributes​](https://support.magento.com/hc/en-us/articles/360048256612%E2%80%8B)
 
 ## Project scoping
 
-- [Partner escalation checklist​](https://support.magento.com/hc/en-us/articles/4412743064205%E2%80%8B)
+- [Partner escalations](partner-escalation.md)
 
 ## Purchase extensions
 
-- [Best Practices for using third-party extensions in Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360042361152%E2%80%8B)
+- [Best Practices for using third-party extensions in Adobe Commerce​](extensions.md)
