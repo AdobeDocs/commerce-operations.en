@@ -36,12 +36,12 @@ Lorem ipsum dolor sit amet.
   - [Custom code copyrights](https://wiki.corp.adobe.com/x/lj4ykw)
 
 - Source control and package management - wiki articles
-    - [Code management - Git vs. Composer](https://wiki.corp.adobe.com/x/pz4ykw)
-    - [Git branching strategy](https://wiki.corp.adobe.com/display/MAGPS/Git+Branching+Strategy)
-    - [Composer development](https://wiki.corp.adobe.com/x/mD4ykw)
-    - [Composer patching](https://wiki.corp.adobe.com/x/mj4ykw)
-    - [Composer project structure](https://wiki.corp.adobe.com/x/mT4ykw)
-    - [Composer tips and tricks](https://wiki.corp.adobe.com/x/lz4ykw)
+  - [Code management - Git vs. Composer](https://wiki.corp.adobe.com/x/pz4ykw)
+  - [Git branching strategy](https://wiki.corp.adobe.com/display/MAGPS/Git+Branching+Strategy)
+  - [Composer development](https://wiki.corp.adobe.com/x/mD4ykw)
+  - [Composer patching](https://wiki.corp.adobe.com/x/mj4ykw)
+  - [Composer project structure](https://wiki.corp.adobe.com/x/mT4ykw)
+  - [Composer tips and tricks](https://wiki.corp.adobe.com/x/lz4ykw)
 
 
 ## Platform and services
@@ -51,7 +51,6 @@ Lorem ipsum dolor sit amet.
 ### Local and staging environment setup
 
 - [Development workflow on Cloud infrastructure](https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html) - added from Cloud Guide
-
 
 ## Code, merge, test
 
