@@ -5,7 +5,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 
 # Release Information {#release}
 
-- Supported releases {#supported}
+- Reference {#reference}
   - [Released versions](versions.md)
   - [Features by version](features.md)
   - [Product availability](product-availability.md)

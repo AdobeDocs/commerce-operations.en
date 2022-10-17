@@ -5,7 +5,7 @@ description: Learn when specific versions of Adobe Commerce are scheduled for be
 
 # Release schedule
 
-Adobe continually strives to find the right balance between making product upgrades simple and predictable and delivering improvements and new features to early adopters faster. Over the last year, we have refined how we deliver software to support this balance. For additional information, refer to our [release policy](policy.md).
+Adobe continually strives to find the right balance between making product upgrades simple and predictable and delivering improvements and new features to early adopters faster. Over the last year, we have refined how we deliver software to support this balance. For additional information, refer to our [versioning policy](versioning-policy.md).
 
 Adobe releases security and functional patches for each supported release line of Adobe Commerce and Magento Open Source.
 
