@@ -1,4 +1,4 @@
-Adobe Commerce and Magento Open Source use Composer to manage PHP packages.
+{{ edition }} uses Composer to manage PHP packages.
 
 The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of Adobe Commerce or Magento Open Source.
 
@@ -14,12 +14,12 @@ The following reference documentation is generated from the `composer.lock` file
 {%- endfor %}
 ```
 
-{% assign packages_by_license = packages | group_by:"license" | sort: 'name' %}
+{%- assign packages_by_license = packages | group_by:"license" | sort: 'name' %}
 
 ## Third-party licenses
 
-{% for group in packages_by_license %}
-{% unless group.name == "" %}
+{%- for group in packages_by_license %}
+{%- unless group.name == "" %}
 
 ### {{ group.name | remove: '[' | remove: '"' | remove: ']'}}
 
@@ -32,22 +32,22 @@ The following reference documentation is generated from the `composer.lock` file
     </tr>
   </thead>
   <tbody>
-  {% for package in group.items %}
-    {% unless package.name contains 'magento/' %}
+  {%- for package in group.items %}
+    {%- unless package.name contains 'magento/' %}
   <tr>
     <td>
-    {% if package.source.url contains '://'%}
+    {%- if package.source.url contains '://'%}
       <a href="{{ package.source.url }}">{{ package.name }}</a>
-    {% else %}
+    {%- else %}
       {{ package.name }}
-    {% endif %}
+    {%- endif %}
     </td>
     <td>{{ package.type }}</td>
     <td>{{ package.description }}</td>
   </tr>
-    {%endunless%}
-  {% endfor %}
+    {%- endunless %}
+  {%- endfor %}
   </tbody>
 </table>
-{% endunless %}
-{% endfor %}
+{%- endunless %}
+{%- endfor %}
