@@ -29,7 +29,7 @@ Hide values are set to yes for the template so it is not included in ExL. You ca
 
 <!--Add details for the product and versions where the best practice info is relevant. Below are examples, adjust as needed. If info applies specifically to B2B or B2C, include that information -->
 
-Adobe Commerce on-premises, [all supported versions](../../release/versions.html) <!--If content applies only to specific versions, indicate that instead of [all supported versions]>
+Adobe Commerce on-premises, [all supported versions](../../release/versions.md) <!--If content applies only to specific versions, indicate that instead of [all supported versions]>
 Adobe Commerce on cloud infrastructure
 <!-- Business type: B2C and B2B -- specify only if needed?)-->
 

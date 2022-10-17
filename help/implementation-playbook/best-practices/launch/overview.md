@@ -19,7 +19,7 @@ The following sections include best practice information for the launch phase.
 
 - [Adobe Security Notification Service​](security-notification-service.md)
 - [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html)
-- [Best practices for Adobe Commerce robots.txt​](https://support.magento.com/hc/en-us/articles/360048754931)
+- [Best practices for Adobe Commerce robots.txt​](robots-txt.md)
 - [Install the latest security patches](https://helpx.adobe.com/security/products/magento/apsb22-12.html) - CTAG deck
 - [Verify security configuration on cloud infrastructure projects](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#security-configuration) - CTAG deck
 

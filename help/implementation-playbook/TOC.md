@@ -84,6 +84,7 @@ mini-toc-levels: 3
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
     - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
+    - [Configure the robots.txt file](best-practices/launch/robots-txt.md)
   - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)
     - [Update services](best-practices/maintenance/update-services.md)
