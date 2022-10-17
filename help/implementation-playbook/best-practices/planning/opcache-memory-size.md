@@ -15,11 +15,6 @@ For Adobe Commerce on cloud infrastructure Pro plan architecture 2.3.x, it is re
 * Adobe Commerce on cloud infrastructure Pro plan architecture 2.3.x
 * PHP 7.0 and later
 
-[All supported versions](../../release/versions.html) of:
-
-* Adobe Commerce on cloud infrastructure
-* Adobe Commerce on-premises
-
 ## Configure memory
 
 Allocate at least **2GB** of memory for the [OPcache PHP module](https://www.php.net/manual/en/book.opcache.php). The OPcache module is configured in the `php.ini` file. To allocate 2048 MB of memory, set `opcache.memory_consumption = 2048`. 
