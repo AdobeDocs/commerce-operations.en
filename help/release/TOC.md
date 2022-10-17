@@ -5,21 +5,20 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 
 # Release Information {#release}
 
-- [Availability](availability.md)
-- [Backward-incompatible changes](backward-incompatible-changes.md)
-- [Beta program](beta-program.md)
-- [Commerce features](features.md)
-- [Lifecycle policy](lifecycle-policy.md)
-- Packages {#packages}
-  - [Adobe Commerce](packages/adobe-commerce.md)
-  - [Cloud packages for Adobe Commerce](packages/cloud.md)
-  - [Magento Open Source](packages/magento-open-source.md)
-- [Released versions](versions.md)
-- [Release policy](policy.md)
+- Supported releases {#supported}
+  - [Released versions](versions.md)
+  - [Features by version](features.md)
+  - [Product availability](product-availability.md)
+- Planning and policies {#planning}
+  - [Beta program](beta-program.md)
+  - [Lifecycle policy](lifecycle-policy.md)
+  - [Versioning policy](versioning-policy.md)
+  - [Feature roadmap](feature-roadmap.md)
+  - [Release schedule](schedule.md)
 - Release notes {#notes}
   - [Overview](release-notes/overview.md)
+  - [Backward-incompatible changes](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
-    - [Overview](release-notes/commerce/overview.md)
     - [2.4.5](release-notes/commerce/2-4-5.md)
     - [2.4.4](release-notes/commerce/2-4-4.md)
     - [2.4.3](release-notes/commerce/2-4-3.md)
@@ -27,7 +26,6 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.1](release-notes/commerce/2-4-1.md)
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
-    - [Overview](release-notes/open-source/overview.md)
     - [2.4.5](release-notes/open-source/2-4-5.md)
     - [2.4.4](release-notes/open-source/2-4-4.md)
     - [2.4.3](release-notes/open-source/2-4-3.md)
@@ -35,7 +33,6 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.1](release-notes/open-source/2-4-1.md)
     - [2.4.0](release-notes/open-source/2-4-0.md) 
   - Security patch releases {#security-patches}
-    - [Overview](release-notes/security/overview.md)
     - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
     - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
     - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
@@ -43,5 +40,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
     - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
     - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
-- [Roadmap](roadmap.md)
-- [Schedule](schedule.md)
+- Packages {#packages}
+  - [Adobe Commerce](packages/adobe-commerce.md)
+  - [Cloud packages for Adobe Commerce](packages/cloud.md)
+  - [Magento Open Source](packages/magento-open-source.md)
