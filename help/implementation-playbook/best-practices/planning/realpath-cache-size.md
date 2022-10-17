@@ -24,6 +24,6 @@ Refer to [PHP settings](https://devdocs.magento.com/guides/v2.3/performance-best
 
 Best practices to improve Adobe Commerce on cloud infrastructure site performance in our Support Knowledge Base:
 
-* [Database best practices for Magento Commerce Cloud](https://support.magento.com/hc/en-us/articles/360041997312-Database-best-practices-for-Magento-Commerce-Cloud)
-* [Most common database issues in Magento Commerce Cloud](https://support.magento.com/hc/en-us/articles/360041739651-Most-common-database-issues-in-Magento-Commerce-Cloud)
+* [Database best practices for Magento Commerce Cloud](database-on-cloud.md)
+* [Most common database issues in Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
 * [Indexers "Update On Schedule" optimizes Magento performance](https://support.magento.com/hc/en-us/articles/360040227191-Indexers-Update-On-Schedule-optimizes-Magento-performance-)
