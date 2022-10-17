@@ -3,6 +3,7 @@ title: Realpath cache size
 description: Learn how to properly set realpath cache size for Adobe Commerce. 
 role: Developer
 feature: Best Practices
+feature-set: Commerce
 ---
 
 # Realpath cache size best practices
