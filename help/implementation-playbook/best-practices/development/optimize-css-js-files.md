@@ -6,6 +6,8 @@ feature: Best Practices
 feature-set: Commerce
 ---
 
+# Optimize CSS and JS files
+
 This article provides best practices for CSS and Javascript (JS) file optimization in Adobe Commerce.
 
 ## Affected products and versions
