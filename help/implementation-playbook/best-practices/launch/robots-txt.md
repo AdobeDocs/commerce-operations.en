@@ -12,7 +12,7 @@ This article provides best practices for using the `robots.txt` file in Adobe Co
 
 ## Affected products and versions
 
-[All supported versions](../../release/versions.html) of:
+[All supported versions](../../../release/versions.md) of:
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
