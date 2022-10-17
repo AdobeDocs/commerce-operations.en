@@ -32,5 +32,5 @@ If you need help, [submit an Adobe Commerce Support ticket](https://support.mage
 
 ## Additional information
 
-- [How to block malicious traffic for Adobe Commerce on Fastly level](https://support.magento.com/hc/en-us/articles/360039447892)
+- [Use Fastly to block malicious traffic for your Adobe Commerce sites](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
 - [robots.txt gives a 404 error in Adobe Commerce on cloud infrastructure 2.3.x](https://support.magento.com/hc/en-us/articles/360040594911)
