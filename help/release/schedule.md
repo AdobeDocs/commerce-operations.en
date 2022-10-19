@@ -29,10 +29,6 @@ The following table provides the dates for scheduled releases (dates are subject
 >
 >Patch and Security Patch Releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant. Feature Releases occur every other month. Feature Releases are independent of the core codebase and are available through external module or extension. Any updates to existing independent features are released during Feature Release periods and do not happen automatically if the feature is already implemented.
 
->[!NOTE]
->
->We have introduced a [new policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) that applies to our supported release lines. To learn more about the new strategy behind our 2022 release calendar and lifecycle policy, visit our [blog](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy).
-
 ## Early access
 
 Pre-release is General Availability code that is available to Adobe Commerce merchants and all partners two weeks before General Availability. It allows for quicker deployment of code before General Availability.
