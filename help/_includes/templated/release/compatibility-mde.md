@@ -813,6 +813,73 @@
   </tbody>
   <tbody>
     <tr>
+      <th colspan="15">Channel Manager</th>
+    </tr>
+    <tr>
+      <td>Channel Manager 1.1.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Channel Manager 1.0.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
       <th colspan="15">Inventory Management</th>
     </tr>
     <tr>
