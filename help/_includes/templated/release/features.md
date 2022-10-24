@@ -67,6 +67,14 @@
       <td>+</td>
     </tr>
     <tr>
+      <td>Channel Manager (Walmart Marketplace)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
       <td>B2B-ready functionality and APIs (check B2B's infosheet for more info)</td>
       <td></td>
       <td></td>
@@ -118,6 +126,14 @@
     </tr>
     <tr>
       <td>Buy Online Pickup In-Store (BOPIS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Store Fulfillment (Advanced omnichannel fulfillment)</td>
       <td></td>
       <td></td>
       <td></td>
