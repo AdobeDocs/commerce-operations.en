@@ -43,7 +43,7 @@ Use the following table to find release notes and important information related 
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channels</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Catalog Service</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/overview.html">Channel Manager (Walmart Marketplace sales)</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Channel Manager (Walmart Marketplace sales)</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Live Search</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Payment Services</a></li>
