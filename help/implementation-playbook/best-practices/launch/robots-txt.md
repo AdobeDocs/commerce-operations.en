@@ -40,9 +40,9 @@ Follow these best practices when configuring the `robots.txt` and `sitemap.xml` 
 
   >[!IMPORTANT]
   >
-  >Due to the read-only file system on Adobe Commerce on cloud infrastructure projects, you must specify the `/media/` path before generating the file.
+  >Due to the read-only file system on Adobe Commerce on cloud infrastructure projects, you must specify the `pub/media` path before generating the file.
 
-- Use a custom Fastly VCL snippet to redirect from the root of your site to the `/media/` location for both files:
+- Use a custom Fastly VCL snippet to redirect from the root of your site to the `pub/media/` location for both files:
 
    ```vcl
    {
@@ -50,7 +50,7 @@ Follow these best practices when configuring the `robots.txt` and `sitemap.xml` 
      "dynamic": "0",
      "type": "recv",
      "priority": "90",
-     "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"/media/robots.txt\";}"
+     "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
    }
    ```
 
@@ -71,7 +71,7 @@ The same best practices for configuring the `robots.txt` and `sitemap.xml` files
   - `domainone_sitemap.xml`
   - `domaintwo_sitemap.xml`
 
-- Use a slightly modified custom Fastly VCL snippet to redirect from the root of your sites to the `/media/` location for both files across your sites:
+- Use a slightly modified custom Fastly VCL snippet to redirect from the root of your sites to the `pub/media` location for both files across your sites:
 
    ```vcl
    {
@@ -79,13 +79,17 @@ The same best practices for configuring the `robots.txt` and `sitemap.xml` files
      "dynamic": "0",
      "type": "recv",
      "priority": "90",
-     "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"/media/\" re.group.1 \"_sitemap.xml\"; }}"
+     "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
    }
    ```
 
 ## Adobe Commerce on-premises
 
 Use the Admin application to configure the `robots.txt` and `sitemap.xml` files to prevent bots from scanning and indexing unnecessary content (see [Search Engine Robots](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)).
+
+>[!TIP]
+>
+>For on-premises deployments, where you write the files depends on how you installed Adobe Commerce. Write the files to `/path/to/commerce/pub/media/` or `/path/to/commerce/media`, whichever is right for your installation.
 
 ## Security
 
