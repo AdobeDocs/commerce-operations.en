@@ -1,8 +1,11 @@
 # Compatibility
 
+<!--This include content is automatically generated using the compatibility-mde.html template and the "_data/release/mde.yml" data file. To update the content, add new information to the data file. Then, run the rendering script (_scripts/render) to generate the new compatibility table as described in the README instructions.-->
+
 **Supported** – version that has been fully tested by Adobe and is supported.
 
-**Compatible** – version that is confirmed to be compatible with  or , but is not supported.
+**Compatible** – version that is confirmed to be compatible with  or , but is
+not supported.
 
 **Not supported** - version that is not compatible with a Commerce or Magento release.
 
