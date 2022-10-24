@@ -4,7 +4,7 @@ description: Configure your Commerce project to use the AWS S3 storage service f
 ---
 # Configure AWS S3 bucket for remote storage
 
-The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage service that offers industry-leading scalability, data availability, security, and performance. The AWS S3 service uses buckets, or containers, for data storage. This configuration requires you to create a _private_ bucket.
+The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage service that offers industry-leading scalability, data availability, security, and performance. The AWS S3 service uses buckets, or containers, for data storage. This configuration requires you to create a _private_ bucket. For Adobe Commerce on cloud infrastructure, see [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md).
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage ser
 
 ## Configure Nginx
 
-Nginx requires an additional configuration to perform Authentication with the `proxy_pass` directive. Add the following proxy information to the `nginx.conf` file:
+Nginx requires additional configuration to perform Authentication with the `proxy_pass` directive. Add the following proxy information to the `nginx.conf` file:
 
 >nginx.conf
 
@@ -57,15 +57,14 @@ If you use access and secret keys instead of [AWS IAM][] roles, you must include
 
 ### Permissions
 
-The S3 integration relies on the ability to generate and store cached images on the local file system; therefore, folder permissions for `pub/media` and similar directories are the same for S3 as they are when using local storage.
+The S3 integration relies on the ability to generate and store cached images on the local file system. Therefore, folder permissions for `pub/media` and similar directories are the same for S3 as they are when using local storage.
 
 ### File Operations
 
-It is highly recommended that you use [!DNL Commerce] file adapter methods in your coding or extension development, regardless of the file storage type. When using S3 for storage, do not use native PHP file I/O operations, such as `copy`, `rename` or `file_put_contents`, because S3 files are not located within the file system. See [DriverInterface.php][] for code examples.
+It is highly recommended that you use [!DNL Commerce] file adapter methods in your coding or extension development, regardless of the file storage type. When using S3 for storage, do not use native PHP file I/O operations, such as `copy`, `rename`, or `file_put_contents`, because S3 files are not located within the file system. See [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) for code examples.
 
 <!-- link definitions -->
 
 [AWS S3]: https://aws.amazon.com/s3
 [AWS IAM]: https://aws.amazon.com/iam/
 [ngx repo]: https://github.com/anomalizer/ngx_aws_auth
-[DriverInterface.php]: https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18

@@ -40,7 +40,7 @@ The Commerce application uses cron tasks that can run with different configurati
 
 >[!WARNING]
 >
->- To avoid issues during installation and upgrade, we strongly recommend you apply the same PHP settings to both the PHP command-line configuration and to the PHP web server plug-in's configuration. For more information, see [Required PHP settings](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- To avoid issues during installation and upgrade, we strongly recommend you apply the same PHP settings to both the PHP command-line configuration and to the PHP web server plug-in's configuration. For more information, see [Required PHP settings](../../installation/prerequisites/php-settings.md).
 >- In a multi-node system, crontab can run on only one node. This applies to you only if you set up more than one webnode for reasons related to performance or scalability.
 
 ### Create the Commerce crontab
@@ -51,7 +51,7 @@ The Commerce crontab is inside `#~ MAGENTO START` and `#~ MAGENTO END` comments 
 
 To create the Commerce crontab:
 
-1. Log in as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Change to your Commerce installation directory.
 1. Enter the following command:
 
@@ -92,7 +92,7 @@ You should remove the Commerce crontab only before uninstalling the Commerce app
 
 To remove the Commerce crontab:
 
-1. Log in as or switch to the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in as or switch to the [file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Change to the Commerce installation directory.
 1. Enter the following command:
 

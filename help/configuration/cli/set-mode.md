@@ -38,7 +38,7 @@ Exceptions:
 
 ## Display the current mode
 
-The easiest way to do that is to run this command as the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). If you have shared hosting, this is the user your provider gives you to log in to the server. If you have a private server, it is typically a local user account on the Commerce server.
+The easiest way to do that is to run this command as the [file system owner](../../installation/prerequisites/file-system/overview.md). If you have shared hosting, this is the user your provider gives you to log in to the server. If you have a private server, it is typically a local user account on the Commerce server.
 
 Command usage:
 

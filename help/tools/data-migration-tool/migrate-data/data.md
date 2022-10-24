@@ -7,7 +7,7 @@ description: Learn how to start migrating data from Magento 1 to Magento 2 with 
 
 Before you start, take the following steps to prepare:
 
-1. Log in to your application server as [the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your application server as [the file system owner](../../../installation/prerequisites/file-system/overview.md).
 1. Change to the application installation directory or make sure it is added to your system `PATH`.
 
 See the [first steps](overview.md#first-steps) section for more details.

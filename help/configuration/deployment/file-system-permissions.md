@@ -5,9 +5,9 @@ description: See how to set up the owner or owners of the Commerce application f
 
 # File systems access permissions
 
-This section discusses how to set up the owner or owners of the Commerce file system for a development and production system. Before you continue, review the concepts discussed in [Overview of file system ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+This section discusses how to set up the owner or owners of the Commerce file system for a development and production system. Before you continue, review the concepts discussed in [Overview of file system ownership and permissions](../../installation/prerequisites/file-system/overview.md).
 
-This topic focuses on Commerce development and production systems. If you are installing Commerce, see [Set pre-installation ownership and permissions](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+This topic focuses on Commerce development and production systems. If you are installing Commerce, see [Set pre-installation ownership and permissions](../../installation/prerequisites/file-system/configure-permissions.md).
 
 The sections that follow discuss requirements for one or two file system owners. That means:
 
@@ -97,7 +97,7 @@ To make files and directories writable so you can update components and upgrade 
 
 ### Optionally set `magento_umask`
 
-See [Optionally set a umask](https://devdocs.magento.com/guides/v2.4/install-gde/install/post-install-umask.html) in the _Installation guide_.
+See [Optionally set a umask](../../installation/next-steps/set-umask.md) in the _Installation guide_.
 
 ## Production file system ownership for private hosting (two users)
 
@@ -115,7 +115,7 @@ If you use your own server (including a hosting provider's private server setup)
   >
   >The command-line user is also referred to as the _file system owner_.
 
-Because these users require access to the same files, we recommend you create a [shared group](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html#mage-owner-about-group) to which they both belong. The following procedures assume you have already done this.
+Because these users require access to the same files, we recommend you create a [shared group](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) to which they both belong. The following procedures assume you have already done this.
 
 See one of the following sections:
 

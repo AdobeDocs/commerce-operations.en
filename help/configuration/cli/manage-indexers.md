@@ -102,7 +102,7 @@ Catalog Search index has been rebuilt successfully in <time>
 
 ### Reindexing in parallel mode
 
-Indexers are scoped and multi-threaded to support reindexing in parallel mode. It parallelizes by the indexer’s dimension and executes across multiple threads, reducing processing time.
+Indexers are scoped and multi-threaded to support reindexing in parallel mode. It parallelizes by the indexer's dimension and executes across multiple threads, reducing processing time.
 
 In this context, `dimension` is the scope of the reindexing, for instance a `website` or just a specific `customer_group`.
 
@@ -214,7 +214,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Before switching indexer modes, we recommend putting your website to [maintenance](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) mode and [disable cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). This ensures you do not suffer database locks.
+>Before switching indexer modes, we recommend putting your website to [maintenance](../../installation/tutorials/maintenance-mode.md) mode and [disable cron jobs](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). This ensures you do not suffer database locks.
 
 To specify the indexer configuration:
 

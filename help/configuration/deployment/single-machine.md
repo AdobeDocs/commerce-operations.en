@@ -85,6 +85,6 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
 <!-- link definitions -->
 
-[install]: https://devdocs.magento.com/guides/v2.4/install-gde/install/prepare-install.html
-[composer]: https://devdocs.magento.com/guides/v2.4/install-gde/composer.html
-[file-owner]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html#magento-file-system-owner
+[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
+[composer]: ../../installation/composer.md
+[file-owner]: ../../installation/prerequisites/file-system/overview.md

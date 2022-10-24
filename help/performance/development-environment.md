@@ -41,5 +41,5 @@ If you develop on a VM and it takes longer than 2 seconds to load a Magento page
 
 <!-- Link definitions -->
 
-[clean the caches]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[disable the caches]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en
+[clean the caches]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
+[disable the caches]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

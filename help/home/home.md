@@ -11,35 +11,35 @@ Get practical information about concepts, processes, tools, and best practices t
 <table>
 <tr>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
       <img alt="Release Information" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>Release Information</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Release Information</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+    <a href="../installation/overview.md">
       <img alt="Installation" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>Installation</strong></a>
+      <a href="../installation/overview.md"><strong>Installation</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
+    <a href="../configuration/overview.md">
       <img alt="Configuration" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>Configuration</strong></a>
+      <a href="../configuration/overview.md"><strong>Configuration</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
-      <img alt="Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
+    <a href="../tools/data-migration-tool/how-migration-works.md">
+      <img alt="Data Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>Migration</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Data Migration</strong></a>
     </div>
   </td>
 </tr>
@@ -53,11 +53,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
        <img alt="Command-line tools reference" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>Command-Line Tools Reference</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Command-Line Tools Reference</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -69,11 +69,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
+    <a href="../tools/overview.md">
        <img alt="Tools" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Tools</strong></a>
+      <a href="../tools/overview.md"><strong>Tools</strong></a>
     </div>
   </td>
 </tr>
@@ -102,6 +102,14 @@ Get practical information about concepts, processes, tools, and best practices t
       <a href="../commerce-at-scale/overview.md"><strong>Commerce at Scale</strong></a>
     </div>
   </td>
+  <td valign="top">
+    <a href="../security-and-compliance/overview.md">
+       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="../security-and-compliance/overview.md"><strong>Security and Compliance</strong></a>
+    </div>
+  </td>
 </tr>
 </table>
 
@@ -109,8 +117,7 @@ Get practical information about concepts, processes, tools, and best practices t
 
 Learn about new documentation and significant updates to existing documentation. 
 
-| Change                                                                                                                                 | Type         |
-|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Added [information](../upgrade/upgrade-compatibility-tool/overview.md) about how rules are defined for the Upgrade Compatibility Tool. | Major update |
-| Removed outdated Upgrade Compatibility Tool [error codes](../upgrade/upgrade-compatibility-tool/error-messages.md).                    | Technical    |
-| Moved [Site-Wide Analysis Tool guide](../tools/site-wide-analysis-tool/intro.md) from [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) to Experience League. | New |
+| Change                                                                                                                                                                             | Type |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| Moved the [Security and Compliance Guide](../security-and-compliance/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html).                                        | New  |
+| Moved the [Release Information Guide](../release/release-notes/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html).                                        | New  |

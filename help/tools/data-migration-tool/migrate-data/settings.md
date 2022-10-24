@@ -9,9 +9,9 @@ The `Settings` mode migrates stores, websites, and system configuration like shi
 
 Before you start, take the following steps to prepare:
 
-1. Log in to the server with your Magento 2 instance as [the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to the application server as the [file system owner](../../../installation/prerequisites/file-system/overview.md).
 
-1. Change to the Magento 2 `/bin` directory or make sure it is added to your system PATH.
+1. Change to the `/bin` directory or make sure it is added to your system `PATH`.
 
 >[!NOTE]
 >
@@ -47,15 +47,15 @@ The `Migration completed` message is displayed after the settings are transferre
 
 You may ignore, rename, or change the system configurations when migrating settings. For this, specify your custom rules in the `settings.xml` file.
 
-1. Log in to the server with your Magento 2 instance as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to the application server as, or switch to, the [file system owner](../../../installation/prerequisites/file-system/overview.md).
 
 1. Change to the following directory:
 
    ```bash
-   cd <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
+   cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   For example, if Magento 2 is installed in `/var/www/html`, the `settings.xml.dist` file is in one of the following directories:
+   For example, if the application is installed in `/var/www/html`, the `settings.xml.dist` file is in one of the following directories:
 
    *  `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 

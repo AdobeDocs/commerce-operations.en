@@ -13,7 +13,7 @@ The [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce] is intende
 
 ### [What is a transaction?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
-“At [!DNL New Relic], a transaction is defined as one logical unit of work in a software application. Specifically, it refers to the function calls and method calls that make up that unit of work. It often refers to a web transaction, which represents an activity that happens from when the application receives a web request to when the response is sent.”
+"At [!DNL New Relic], a transaction is defined as one logical unit of work in a software application. Specifically, it refers to the function calls and method calls that make up that unit of work. It often refers to a web transaction, which represents an activity that happens from when the application receives a web request to when the response is sent."
 
 ### Types of transactions:
 
@@ -103,7 +103,7 @@ The **[!UICONTROL Deployment State]** frame facets particular deployment phrases
 
 **Deployment Log Phrases:**
 
-* ‘%Starting generate command%') as 'start_gen'
+* '%Starting generate command%') as 'start_gen'
 * '%git apply /app/vendor/magento/ece-tools/patches%') as 'apply_patches'
 * '%Set flag: .static_content_deploy%') as 'SCD'
 * '%NOTICE: Generate command completed%') as 'gen_compl'
@@ -116,7 +116,7 @@ The **[!UICONTROL Deployment State]** frame facets particular deployment phrases
 
 ![IP frequency](../../assets/tools/ip-frequency.jpg)
 
-The **[!UICONTROL IP Frequency]** frame counts the (‘MISS’ and ‘PASS’) statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
+The **[!UICONTROL IP Frequency]** frame counts the ('MISS' and 'PASS') statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -146,7 +146,7 @@ Sometimes it is hard to tell which IP address has the most requests on the other
 
 ![potential bots](../../assets/tools/potential-bots.jpg)
 
-The **[!UICONTROL Potential Bots]** frame looks at requests with a request_user_agent name like NULL or ‘%bot%’. Typically, the ‘%bot%’ request_user_agent will follow the policy setup in `robots.txt` file.
+The **[!UICONTROL Potential Bots]** frame looks at requests with a request_user_agent name like NULL or '%bot%'. Typically, the '%bot%' request_user_agent will follow the policy setup in `robots.txt` file.
 
 ## [!UICONTROL Transaction Errors]
 
@@ -175,7 +175,7 @@ The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access
 * '%self-leave%') as 'susp_node'
 * '%members = 3/3 (joined/total)%') as '3of3'
 * '%members = 2/3 (joined/total)%') as '2of3'
-* '%members = 2/2%') as '2of2' • '%members = 1/2%') as '1of2' • '%members = 1/3%') as '1of3'
+* '%members = 2/2%') as '2of2' * '%members = 1/2%') as '1of2' * '%members = 1/3%') as '1of3'
 * '%members = 1/1%') as '1of1'
 * '%\[Note\] /usr/sbin/mysqld (mysqld 10.%') as 'sql_restart'
 * '%Quorum: No node with complete state:%') as 'no_node_count'
@@ -184,7 +184,7 @@ The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access
 * '%WSREP: Member 2%') as 'mem2'
 * '%WSREP: Synchronized with group, ready for connections%') as 'ready'
 * '%/usr/sbin/mysqld, Version:%') as 'mysql_restart_mysql.slow'
-* ‘%\[Note\] WSREP: New cluster view: global state:%') as 'galera_cluster_view_chng'
+* '%\[Note\] WSREP: New cluster view: global state:%') as 'galera_cluster_view_chng'
 
 These signals may indicate storage, memory, or query issues if the state changes frequently.
 
@@ -222,7 +222,7 @@ These signals may indicate storage, memory, or query issues if the state changes
 * '%1062 \[\ERROR\] InnoDB:%') as 'sql_1062_e'
 * '%\[Note\] WSREP: Flushing memory map to disk...%') as 'mem_map_flush'
 * '%Internal MariaDB error code: 1146%') as 'sql_1146'
-* '%Internal MariaDB error code: 1062%') as 'sql_1062' • '%1062 \[Warning\] InnoDB:%') as 'sql_1062_w'
+* '%Internal MariaDB error code: 1062%') as 'sql_1062' * '%1062 \[Warning\] InnoDB:%') as 'sql_1062_w'
 * '%Internal MariaDB error code: 1064%') as 'sql_1064'
 * '%InnoDB: Assertion failure in file%') as 'assertion_err'
 * '%mysqld_safe Number of processes running now: 0%') as 'mysql_oom'
@@ -230,7 +230,7 @@ These signals may indicate storage, memory, or query issues if the state changes
 * '%1452 Cannot add%') as 'sql_1452'
 * '%ERROR 1698%') as 'sql_1698'
 * '%SQLSTATE\[HY000\]: General error: 3%') as 'cnt_wrt_tmp'
-* '%General error: 1 %') as 'sql_syntax’
+* '%General error: 1 %') as 'sql_syntax'
 * '%42S22%') as 'sql_42S22'
 * '%InnoDB: Error (Duplicate key)%') as 'innodb_dup_key'
 
@@ -283,7 +283,7 @@ The way that PHP process(es) behave is dependent upon [configuration](https://ww
 
 ![php errors](../../assets/tools/php-errors.jpg)
 
-The **[!UICONTROL PHP errors]** frame shows the number of PHP errors with workers across the selected timeframe. For more information, refer to [Adobe Commerce PHP settings](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+The **[!UICONTROL PHP errors]** frame shows the number of PHP errors with workers across the selected timeframe. For more information, refer to [Adobe Commerce PHP settings](../../installation/prerequisites/php-settings.md).
 
 **PHP errors and messages**
 
@@ -303,7 +303,7 @@ The **[!UICONTROL PHP errors]** frame shows the number of PHP errors with worker
 
 ![php processes](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] used by [!DNL Nginx]. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). The **[!UICONTROL PHP processes]** frame shows the number of PHP processes running at a particular time in the selected timeline.
+[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] used by [!DNL Nginx]. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](../../installation/system-requirements.md). The **[!UICONTROL PHP processes]** frame shows the number of PHP processes running at a particular time in the selected timeline.
 
 ## [!UICONTROL Secondary processes]
 
@@ -315,7 +315,7 @@ Secondary processes can impact site response. The **[!UICONTROL Secondary proces
 
 ![traffic vs week ago](../../assets/tools/traffic-vs-week-ago.jpg)
 
-The **[!UICONTROL Traffic vs Week Ago]** frame looks at the website traffic (requests) from the [!DNL Fastly] logs with (‘MISS’, ‘PASS’) cache statuses. These requests add load to the origin servers. This frame displays the web request volume versus one week ago during the same timeframe.
+The **[!UICONTROL Traffic vs Week Ago]** frame looks at the website traffic (requests) from the [!DNL Fastly] logs with ('MISS', 'PASS') cache statuses. These requests add load to the origin servers. This frame displays the web request volume versus one week ago during the same timeframe.
 
 ## [!UICONTROL Fastly Cache]
 
@@ -353,7 +353,7 @@ The **[!UICONTROL Admin Activities]** frame identifies transactions with an admi
 
 ![Order transactions default](../../assets/tools/order-transactions-default.jpg)
 
-The **[!UICONTROL Order transactions (default?)]** frame looks for transactions `request.headers.host` from transactions where the name = 'WebTransaction/Action/checkout/onepage/success’. If the order success URL is different, this frame will not have data.
+The **[!UICONTROL Order transactions (default?)]** frame looks for transactions `request.headers.host` from transactions where the name = 'WebTransaction/Action/checkout/onepage/success'. If the order success URL is different, this frame will not have data.
 
 ## [!UICONTROL Elasticsearch Index information]
 
@@ -371,7 +371,7 @@ The **[!UICONTROL Order transactions (default?)]** frame looks for transactions 
 
 **[!DNL Elasticsearch] errors:**
 
-* '%all shards failed%' as 'all_shards_failed’
+* '%all shards failed%' as 'all_shards_failed'
 * '%NoNodesAvailableException%' as 'no_alive_nodes'
 * '%PHP Fatal error: Uncaught Error: Wrong parameters for Elasticsearch%' as 'wrong_param'
 * '%You can fix this issue by upgrading the Elasticsearch service on your Magento Cloud infrastructure to version%' as 'ver_err'
@@ -396,7 +396,7 @@ The **[!UICONTROL Cron view]** frame looks at the cron log for balance between t
 * '%Could not acquire lock for cron job%' as 'cron_lock'
 * '%General error: 2006 MySQL server has gone away%' as 'mysql_has_gone_away'
 * '%error%' as 'error'
-* '%General error: 1205 Lock wait timeout exceeded%’ as sql_1205_cron
+* '%General error: 1205 Lock wait timeout exceeded%' as sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 

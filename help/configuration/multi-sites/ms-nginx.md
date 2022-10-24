@@ -53,7 +53,7 @@ By using just one [nginx virtual host file](#step-2-create-nginx-virtual-hosts),
 
 **To create one virtual host** (simplified):
 
-This configuration expands upon [Nginx Configuration](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html).
+This configuration expands upon [nginx configuration](../../installation/prerequisites/web-server/nginx.md).
 
 1. Open a text editor and add the following contents to a new file named `/etc/nginx/sites-available/magento`:
 

@@ -11,7 +11,7 @@ There are tools related to the [!DNL Upgrade Compatibility Tool], which can be u
 
 - **[!DNL Security scanner]**: Provides Adobe Commerce and Magento Open Source customers with real-time insights into the security status of their store by proactively detecting malware and notifying them if their store is compromised. See the [[!DNL Security scan] user guide](https://docs.magento.com/user-guide/magento/security-scan.html) for more information.
 
-- **[!DNL Site-Wide Analysis Tool]**: A proactive self-service tool and central repository that includes detailed system insights and recommendations to ensure the security and operability of your Adobe Commerce installation. It provides 24/7 real-time performance monitoring, reports, and advice to identify potential issues and provide better visibility into site health, safety, and application configurations. See the [[!DNL Site-Wide Analysis Tool] guide](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en) for more information.
+- **[!DNL Site-Wide Analysis Tool]**: A proactive self-service tool and central repository that includes detailed system insights and recommendations to ensure the security and operability of your Adobe Commerce installation. It provides 24/7 real-time performance monitoring, reports, and advice to identify potential issues and provide better visibility into site health, safety, and application configurations. See the [[!DNL Site-Wide Analysis Tool] guide](../../tools/site-wide-analysis-tool/intro.md) for more information.
 
 - **[!DNL AmpersandHQ]**: Looks for files which have been modified as part of the upgrade and attempts to see if you have any overrides in your site. This allows you to focus in on the things that have changed and are specific to your site. See the [[!DNL AmpersandHQ] repository guide](https://github.com/AmpersandHQ) for more information.
 
@@ -19,4 +19,4 @@ There are tools related to the [!DNL Upgrade Compatibility Tool], which can be u
    >
    >[!DNL AmpersandHQ] is not an Adobe official tool.
 
-- **[!DNL Quality Patches Tool]**: A command-line tool that delivers quality patches for Adobe Commerce and Magento Open Source. See the [[!DNL Quality patches tool] user guide](https://devdocs.magento.com/quality-patches/tool.html) for more information.
+- **[!DNL Quality Patches Tool]**: A command-line tool that delivers quality patches for Adobe Commerce and Magento Open Source. See the [[!DNL Quality patches tool] user guide](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} for more information.

@@ -34,7 +34,7 @@ To set up a production machine:
 
    Create `auth.json` in that directory.
 
-   `auth.json` must contain your [authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+   `auth.json` must contain your [authentication keys](../../installation/prerequisites/authentication-keys.md).
 
    A sample follows:
 

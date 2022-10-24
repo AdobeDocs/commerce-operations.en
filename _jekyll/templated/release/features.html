@@ -1,0 +1,30 @@
+---
+---
+# Commerce features
+
+{%- assign areas = site.data.release.features.areas %}
+
+<table style="table-layout:auto">
+  {%- for area in areas %}
+  <tbody>
+    <tr style="background:lightgray;">
+      <th style="border-style:none;">{{ area.name }}</th>
+      <th style="border-style:none;">2.0</th>
+      <th style="border-style:none;">2.1</th>
+      <th style="border-style:none;">2.2</th>
+      <th style="border-style:none;">2.3</th>
+      <th style="border-style:none;">2.4</th>
+    </tr>
+    {%- for feature in area.features %}
+    <tr>
+      <td>{{ feature.name }}</td>
+      <td>{% if feature.versions contains 2.0 %}+{% endif %}</td>
+      <td>{% if feature.versions contains 2.1 %}+{% endif %}</td>
+      <td>{% if feature.versions contains 2.2 %}+{% endif %}</td>
+      <td>{% if feature.versions contains 2.3 %}+{% endif %}</td>
+      <td>{% if feature.versions contains 2.4 %}+{% endif %}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+  {%- endfor %}
+</table>

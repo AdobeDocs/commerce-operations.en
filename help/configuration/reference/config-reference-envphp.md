@@ -293,7 +293,6 @@ Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: https://devdocs.magento.com/guides/v2.4/install-gde/tutorials/change-docroot-to-pub.html
-[encryption-key]: https://docs.magento.com/user-guide/system/encryption-key.html
-[lock-provider-config]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-lock.html
+[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
+[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/

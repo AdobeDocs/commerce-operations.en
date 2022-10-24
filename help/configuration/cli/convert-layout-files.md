@@ -9,8 +9,8 @@ description: Convert XML layout files.
 
 Use this command to update your layout XML files if you update the corresponding Extensible Stylesheet Language Transformations (XSLT) stylesheet.
 
--  [Layout instructions](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-instructions.html)
--  [Layout file types](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html)
+-  [Layout instructions](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+-  [Layout file types](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 Command options:
 

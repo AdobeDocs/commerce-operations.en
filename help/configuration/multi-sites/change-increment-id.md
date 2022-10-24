@@ -11,7 +11,7 @@ This article discusses how to change the increment ID for a Commerce database (D
 
 - Adobe Commerce (on premises): 2.x.x
 - Adobe Commerce on cloud infrastructure: 2.x.x
-- MySQL: [any supported version][]
+- MySQL: [any supported version](../../installation/prerequisites/database/mysql.md)
 
 ## When would you need to change increment ID
 
@@ -70,4 +70,4 @@ Before executing the `ALTER TABLE` query on a production environment of Adobe Co
 
 [PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [Create a DB backup]: https://support.magento.com/hc/en-us/articles/360003254334
-[any supported version]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html
+[any supported version]
