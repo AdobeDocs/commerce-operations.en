@@ -120,4 +120,4 @@ Learn about new documentation and significant updates to existing documentation.
 | Change                                                                                                                                                                             | Type |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | Moved the [Security and Compliance Guide](../security-and-compliance/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html).                                        | New  |
-| Moved the [Release Information Guide](../release/roadmap.md) from [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html).                                        | New  |
+| Moved the [Release Information Guide](../release/release-notes/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html).                                        | New  |
