@@ -54,6 +54,8 @@ Follow these best practices when configuring the `robots.txt` and `sitemap.xml` 
    }
    ```
 
+- Test the files by viewing them in a web browser. For example, `<domain.your.project>/robots.txt` and `<domain.your.project>/sitemap.xml`. Make sure you are using the root path that you configured the redirect for and not a different path.
+
 >[!INFO]
 >
 >See [Add site map and search engine robots](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) for detailed instructions.
