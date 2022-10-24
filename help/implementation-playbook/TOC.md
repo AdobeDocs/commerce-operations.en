@@ -59,7 +59,4 @@ mini-toc-levels: 3
   - [Post-launch steps](launch/post-launch-steps.md)
 - Maintenance and support {#maintenance}
   - [Overview](maintenance/overview.md)
-  - [Models](maintenance/models.md)
-  - [Service levels](maintenance/service-level-agreements.md)
-  - [Metrics](maintenance/metrics.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
