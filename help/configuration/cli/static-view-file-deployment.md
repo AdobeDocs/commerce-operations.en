@@ -25,11 +25,11 @@ You must write static view files to the Commerce file system manually using the 
 
 >[!WARNING]
 >
->_Developer mode only_: When you install or enable a new module, it might load new JavaScript, CSS, layouts, and so on. To avoid issues with static files, you must clean the old files to make sure you get all the changes for the new module. You can clean generated static view files in several ways. Refer to [Clean static files cache topic for details](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) for more information.
+>_Developer mode only_: When you install or enable a new module, it might load new JavaScript, CSS, layouts, and so on. To avoid issues with static files, you must clean the old files to make sure you get all the changes for the new module. You can clean generated static view files in several ways. Refer to [Clean static files cache topic for details](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) for more information.
 
 **To deploy static view files**:
 
-1. Log in to the Commerce server as, or [switch to the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to the Commerce server as, or [switch to the file system owner](../../installation/prerequisites/file-system/overview.md).
 1. Delete the contents of `<magento_root>/pub/static`, except for the `.htaccess` file. Do not delete this file.
 1. Run the static view files deployment tool `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -50,7 +50,7 @@ The following table explains this command's parameters and values.
 | `<languages>` | Space-separated list of [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) language codes for which to output static view files. (Default is `en_US`.)<br>Find the list by running: `bin/magento info:language:list` | No |
 | `--language (-l)` | Generate files only for the specified languages. The default, with no option specified, is to generate files for all ISO-639 language codes. You can specify the name of one language code at a time. Default value is **all**.<br>For example: `--language en_US --language es_ES` | No |
 | `--exclude-language`| Generate files for the specified language codes. The default, with no option specified, is to exclude nothing. You can specify the name of one language code or a comma-separated list of language codes. Default value is **none**. | No |
-| `--theme <theme>`| hemes for which to deploy static content. Default value is **all**.<br>For example: `--theme Magento/blank --theme Magento/luma` | No |
+| `--theme <theme>`| Themes for which to deploy static content. Default value is **all**.<br>For example: `--theme Magento/blank --theme Magento/luma` | No |
 | `--exclude-theme <theme>`| Themes to exclude when deploying static content. Default value is **none**.<br>For example, `--exclude-theme Magento/blank` | No |
 | `--area (-a)`| Generate files only for the specified areas. The default, with no option specified, is to generate files for all areas. Valid values are `adminhtml` and `frontend`. Default value is **all**.<br>For example: `--area adminhtml` | No |
 | `--exclude-area` | Do not generate files for the specified areas. The default, with no option specified, is to exclude nothing. Default value is **none**. | No |
@@ -152,7 +152,7 @@ To do this, take the following steps:
 
 ## Troubleshooting the static view files deployment tool
 
-[Install the Commerce software first](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); otherwise, you cannot run the static view files deployment tool.
+[Install the Commerce software first](../../installation/overview.md); otherwise, you cannot run the static view files deployment tool.
 
 **Symptom**: The following error is displayed when you run the static view files deployment tool:
 
@@ -164,9 +164,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Use the following steps:
 
-1. Install the Commerce software using the [command line](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Log in to the Commerce server as, or [switch to](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), the file system owner.
-1. Delete the contents of `<magento_root>/pub/static` directory, except for the `.htaccess` file. Do not delete this file.
+1. Install the Commerce software using the [command line](../../installation/composer.md).
+1. Log in to the application server as, or [switch to](../../installation/prerequisites/file-system/overview.md), the file system owner.
+1. Delete the contents of `<app_root>/pub/static` directory, except for the `.htaccess` file. Do not delete this file.
 1. Deploy static view files: `bin/magento setup:static-content:deploy`
 
 ## Tip for developers customizing the static content deployment tool

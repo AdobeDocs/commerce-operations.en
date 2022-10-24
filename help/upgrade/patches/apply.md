@@ -7,7 +7,7 @@ description: Learn about the methods for applying patches to an Adobe Commerce o
 
 You can apply patches using any of the following methods:
 
--  [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html)
+-  [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 -  [Command line](../patches/apply.md#command-line)
 -  [Composer](../patches/apply.md#composer)
 
@@ -15,7 +15,7 @@ You can apply patches using any of the following methods:
 
 >[!IMPORTANT]
 >
->To apply official quality patches, use the [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html). Always perform comprehensive testing before deploying any custom patch.
+>To apply official quality patches, use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Always perform comprehensive testing before deploying any custom patch.
 
 To apply a custom patch using Composer:
 
@@ -63,7 +63,7 @@ To apply a custom patch using Composer:
 To apply patches from the command line:
 
 1. Upload the local file into the `<Magento_root>` directory on the server using FTP, SFTP, SSH, or your normal transport method.
-1. Log into the server as the [admin user](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) and verify that the file is in the correct directory.
+1. Log into the server as the [admin user](../../configuration/cli/config-cli.md#prerequisites) and verify that the file is in the correct directory.
 1. In the command-line interface, run the following commands according to the patch extension:
 
    ```bash

@@ -38,10 +38,10 @@ Commands are shown in summary form only; for more information about a command, c
 |[`magento dev:tests:run`](../cli/unit-tests.md)|Runs automated tests|
 |[`magento dev:xml:convert`](../cli/convert-layout-files.md)|Update your layout XML files to match the new Extensible Stylesheet Language Transformations (XSLT) stylesheet|
 |[`magento setup:perf:generate-fixtures`](../cli/generate-data.md)|Generate data to use for performance testing.|
-|[`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html)|Installs optional sample data after you install the Commerce application.<br><br>For more details about sample data, see [Optional sample data](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html).|
+|[`magento sampledata:install`](../../installation/sample-data/overview.md)|Installs optional sample data after you install the Commerce application.<br><br>For more details about sample data, see [Optional sample data](../../installation/sample-data/overview.md).|
 |[`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md)|Manages backend configurations|
-|[`magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html)| Creates/edits/unlocks admin users.|
-|[`magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html)|Enables/disables developer template hints.|
+|[`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account)| Creates/edits/unlocks admin users.|
+|[`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/)|Enables/disables developer template hints.|
 
 ## Common arguments
 

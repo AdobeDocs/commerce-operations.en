@@ -33,3 +33,15 @@
 >The split database feature was [deprecated](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) in version 2.4.2 of Adobe Commerce. See [Revert from a split database to a single database](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
+
+## Backward-incompatible changes {#bics}
+
+>[!NOTE]
+>
+>Adobe Commerce and Magento Open Source releases may contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Not all releases introduce major BICs.
+
+## CVE notice {#cve-notice}
+
+>[!NOTE]
+>
+>Starting with the 2.3.2 release, we will assign and publish indexed Common Vulnerabilities and Exposures (CVE) numbers with each security bug reported to us by external parties. This allows users to more easily identify unaddressed vulnerabilities in their deployment. You can learn more about CVE identifiers at [CVE](https://cve.mitre.org/).

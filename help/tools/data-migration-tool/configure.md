@@ -107,7 +107,7 @@ Before you migrate any data, you must create a `config.xml` configuration file f
 
 To configure the [!DNL Data Migration Tool] for migration:
 
-1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to your application server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 
 1. Change to the following directory:
 

@@ -39,10 +39,10 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-If you're currently in the `develop` branch, you must change to a <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/dev_downgrade.html">released branch</a> before you continue.
+If you're currently in the `develop` branch, you must change to a [released branch](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) before you continue.
 
-If you haven't installed the Magento software yet, [install it now](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
-If you're cloning the GitHub repository, make sure you check out a release tag as discussed in [(Contributor) Clone the Magento repository](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/dev_install.html).
+If you haven't installed the Adobe Commerce or Magento Open Source software yet, [install it now](../../installation/prerequisites/commerce.md).
+If you're cloning the GitHub repository, make sure you check out a release tag as discussed in [(Contributor) Clone the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Find released versions of [!DNL Data Migration Tool]
 
@@ -64,8 +64,8 @@ Before installing, make sure you have:
 
 To install the [!DNL Data Migration Tool], you must update `composer.json` in the Magento root installation directory to provide the location of the [!DNL Data Migration Tool] package.
 
-1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Change to Magento 2 root directory.
+1. Log in to your application server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
+1. Change to the application root directory.
 1. Enter the following commands:
 
    ```bash
@@ -88,14 +88,14 @@ To install the [!DNL Data Migration Tool], you must update `composer.json` in th
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. When prompted, enter your [authentication keys](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html). Your public key is your username; your private key is your password.
+1. When prompted, enter your [authentication keys](../../installation/prerequisites/authentication-keys.md). Your public key is your username; your private key is your password.
 
 ### Install from GitHub
 
-If you've cloned Magento 2 from the GitHub repository, follow the steps below to install the [!DNL Data Migration Tool].
+If you've cloned the GitHub repository, follow the steps below to install the [!DNL Data Migration Tool].
 
-1. Log in to your Magento server as, or switch to, the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Change to Magento 2 root directory.
+1. Log in to your application server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
+1. Change to the application root directory.
 1. Enter the following commands:
 
    ```bash

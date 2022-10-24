@@ -13,7 +13,7 @@ To access the [!DNL Data Migration Tool] source code, see the GitHub [repository
 
 ## System requirements
 
-The [system requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) for the [!DNL Data Migration Tool] are the same as for Magento 2.
+The [system requirements](../../installation/system-requirements.md) for the [!DNL Data Migration Tool] are the same as for Magento 2.
 
 ## Internal structure
 

@@ -11,8 +11,8 @@ After you have completed your migration and thoroughly tested your new Magento 2
 
 *  Start Magento 2 cron jobs
 
-*  [Flush all Magento 2 cache types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html#clean-and-flush-cache-types)
+*  [Flush all Magento 2 cache types](../../../configuration/cli/manage-cache.md#clean-and-flush-cache-types)
 
-*  [Reindex all Magento 2 indexers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#reindex)
+*  [Reindex all Magento 2 indexers](../../../configuration/cli/manage-indexers.md#reindex)
 
 *  Change DNS and load balancers to point to the Magento 2 production hardware

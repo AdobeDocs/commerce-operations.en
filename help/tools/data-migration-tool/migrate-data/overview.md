@@ -23,7 +23,7 @@ This section shows how to run the [!DNL Data Migration Tool] to migrate settings
 
 ### First steps
 
-1. Log in to the application server as, or switch to, a user with permissions to write to the file system. See [switch to the file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Log in to the application server as, or switch to, a user with permissions to write to the file system. See [switch to the file system owner](../../../installation/prerequisites/file-system/overview.md).
 
    If you use the bash shell, you can use the following syntax to switch to the file system owner and enter the command at the same time:
 
@@ -52,8 +52,6 @@ This section shows how to run the [!DNL Data Migration Tool] to migrate settings
    -  `cd <magento_root>/bin` and run them as `./magento <command name>`
    -  `<magento_root>/bin/magento <command name>`
    -  `<magento_root>` is a subdirectory of your web server docroot.
-
-In addition to the command arguments mentioned here, see [Common arguments](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common)
 
 ### Command syntax
 

@@ -4,21 +4,21 @@ description: Learn how to configure the Remote Storage module for the on-premise
 ---
 # Configure Remote Storage
 
-The Remote Storage module provides the option to store media files and schedule imports/exports in a persistent, remote storage container using a storage service, such as AWS S3. By default, the [!DNL Commerce] application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
+The Remote Storage module provides the option to store media files and schedule imports and exports in a persistent, remote storage container using a storage service, such as AWS S3. By default, the Adobe Commerce application stores media files in the same filesystem that contains the application. This is inefficient for complex, multi-server configurations, and can result in degraded performance when sharing resources. With the Remote Storage module, you can store media files in the `pub/media` directory and import/export files in the `var` directory of the remote object storage to take advantage of server-side image resizing.
 
 >[!INFO]
 >
->Remote storage is available in version 2.4.2 and later only. See the [2.4.2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>Remote storage is available for Commerce version 2.4.2 and later only. See the [2.4.2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
->The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service.
+>The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service. See [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md) for guidance implementing remote storage for cloud projects.
 
 ![schema image](../../assets/configuration/remote-storage-schema.png)
 
 ## Remote storage options
 
-You can configure remote storage using the `remote-storage` option with the [`setup` CLI command][setup]. The `remote-storage` option uses the following syntax:
+You can configure remote storage using the `remote-storage` option with the [`setup` CLI command](../../installation/tutorials/deployment.md). The `remote-storage` option uses the following syntax:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -43,21 +43,23 @@ The default storage location is in the local filesystem. A _storage adapter_ ena
 
 ## Enable remote storage
 
-You can install remote storage during a new [!DNL Commerce] installation or add it to an existing Commerce instance using `remote-storage` parameter name-and-value pairs with `setup` CLI commands. Minimally, you must supply the storage `driver`, `bucket`, and `region`.
+You can install remote storage during an Adobe Commerce installation or add remote storage to an existing Commerce instance. The following examples demonstrate each method using a set of `remote-storage` parameters with Commerce `setup` CLI commands. Minimally, you must supply the storage `driver`, `bucket`, and `region`.
 
-The following examples enable the remote storage with an AWS S3 storage adapter in the US:
-
-- Install new [!DNL Commerce] with remote storage
+- Example: Install Commerce with remote storage
 
   ```bash
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
-- Enable remote storage on existing [!DNL Commerce]
+- Example: Enable remote storage on existing Commerce
 
   ```bash
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
+
+>[!TIP]
+>
+>For Adobe Commerce on cloud infrastructure, see [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md).
 
 ## Limitations
 
@@ -69,7 +71,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 Enabling remote storage might affect your established development experience. For example, certain PHP file functions might not work as expected. The usage of Commerce Framework for file operations must be enforced.
 
-The list of prohibited PHP native functions is available in [Magento Coding Standard][] repository.
+The list of prohibited PHP native functions is available in [magento-coding-standard repository][code-standard].
 
 ## Migrate content
 
@@ -86,6 +88,4 @@ After you enable remote storage for a specific adapter, you can use the CLI to m
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[nginx-module]: http://nginx.org/en/docs/http/ngx_http_image_filter_module.html
-[Magento Coding Standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp
+[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php

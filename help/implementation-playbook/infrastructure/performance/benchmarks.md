@@ -5,10 +5,10 @@ exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 ---
 # Benchmarks
 
-Adobe Commerce on cloud infrastructure without additional customizations and CDN cache has the following benchmark figures:
+Adobe Commerce 2.4.5 on cloud infrastructure without additional customizations and CDN cache has the following benchmark figures:
 
-- 200M effective SKUs
+- 242M effective SKUs
 - 300ms average API response time
-- 1,700 orders per hour
+- 208K orders per hour
 - <2s average storefront response time
-- 500k hourly page views
+- 2M page views per hour

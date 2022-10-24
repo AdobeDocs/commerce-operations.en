@@ -7,18 +7,18 @@ description: Review a list of recommended software related to optimal performanc
 
 We require the following software for production instances of [!DNL Commerce]:
 
-*  [PHP](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
+*  [PHP](../installation/system-requirements.md)
 *  Nginx and [PHP-FPM](https://php-fpm.org/)
-*  [[!DNL MySQL]](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html)
-*  [[!DNL Elasticsearch] or OpenSearch](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html)
+*  [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
+*  [[!DNL Elasticsearch] or OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
 For multi-server deployments, or for merchants planning on scaling their business, we recommend the following:
 
-*  [[!DNL Varnish] cache](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html)
-*  [Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-session.html) for sessions (from 2.0.6+)
-*  A separate Redis instance as your [default cache](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html) (do not use this instance for page cache)
+*  [[!DNL Varnish] cache](../configuration/cache/config-varnish.md)
+*  [Redis](../configuration/cache/redis-session.md) for sessions (from 2.0.6+)
+*  A separate Redis instance as your [default cache](../configuration/cache/redis-pg-cache.md) (do not use this instance for page cache)
 
-See [system requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) for information about supported versions of each type of software.
+See [system requirements](../installation/system-requirements.md) for information about supported versions of each type of software.
 
 ## Operating system
 
@@ -140,7 +140,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-When you fine-tune the memory allocation for opcache, take into account the size of Magento’s code base and all your extensions. Magento’s performance team uses the values in the preceding example for testing because it provides enough space in opcache for the average number of installed extensions.
+When you fine-tune the memory allocation for opcache, take into account the size of Magento's code base and all your extensions. Magento's performance team uses the values in the preceding example for testing because it provides enough space in opcache for the average number of installed extensions.
 
 If you have a low-memory machine and you do not have many extensions or customizations installed, use the following settings to get a similar result:
 
@@ -151,7 +151,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-We recommend enabling the [PHP APCu extension](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) and [configuring `composer` to support it](https://devdocs.magento.com/guides/v2.4/performance-best-practices/deployment-flow.html#preprocess-dependency-injection-instructions) to optimize for maximum performance. This extension caches file locations for opened files, which increases performance for [!DNL Commerce] server calls including pages, Ajax calls, and endpoints.
+We recommend enabling the [PHP APCu extension](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) and [configuring `composer` to support it](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) to optimize for maximum performance. This extension caches file locations for opened files, which increases performance for [!DNL Commerce] server calls including pages, Ajax calls, and endpoints.
 
 Edit your `apcu.ini` file to include the following:
 
@@ -199,10 +199,10 @@ Install [!DNL Varnish] on a separate server in front of the web tier. It should 
 [!DNL Commerce] distributes a sample configuration file for [!DNL Varnish] (versions 4 and 5) that contains all recommended settings for performance. Among them the most critical in terms of performance are:
 
 *  **Backend health check** polls the [!DNL Commerce] server to determine whether it is responding in a timely manner.
-*  **Grace mode** allows you to instruct [!DNL Varnish] to keep an object in cache beyond its Time to Live (TTL) period and serve this stale content if [!DNL Commerce] is not healthy or if fresh content hasn’t been fetched yet.
+*  **Grace mode** allows you to instruct [!DNL Varnish] to keep an object in cache beyond its Time to Live (TTL) period and serve this stale content if [!DNL Commerce] is not healthy or if fresh content hasn't been fetched yet.
 *  **Saint mode** blacklists unhealthy [!DNL Commerce] servers for a configurable amount of time. As a result, unhealthy backends cannot serve traffic when using [!DNL Varnish] as a load balancer.
 
-See [Advanced [!DNL Varnish] configuration](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish-advanced.html) for more information about implementing these features.
+See [Advanced [!DNL Varnish] configuration](../configuration/cache/config-varnish-advanced.md) for more information about implementing these features.
 
 ### Optimize asset performance
 

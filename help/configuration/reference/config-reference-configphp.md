@@ -118,6 +118,6 @@ Learn more about [Themes][].
 
 <!-- link definitions -->
 
-[Modules]: https://devdocs.magento.com/videos/fundamentals/create-a-new-module/
-[scopes]: https://docs.magento.com/user-guide/configuration/scope.html
-[Themes]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-create.html
+[Modules]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
+[Themes]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

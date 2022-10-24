@@ -21,13 +21,13 @@ The following are items that you may want to include in a thorough analysis:
 
 - **Scope of target release**—Documentation on [Commerce DevDocs](https://devdocs.magento.com) and information from partner release webinars provide all the details you must know about your target upgrade.
 
-- **[!DNL Upgrade Compatibility Tool] results**—This tool makes any upgrade faster and easier by comparing your current code to the target version’s code and producing a report of all the issues that need to be addressed. See the [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Key details from the report include:
+- **[!DNL Upgrade Compatibility Tool] results**—This tool makes any upgrade faster and easier by comparing your current code to the target version's code and producing a report of all the issues that need to be addressed. See the [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Key details from the report include:
 
-  - Current installed version
-  - Upgrade target version
-  - Number and details of critical errors found
+    - Current installed version
+    - Upgrade target version
+    - Number and details of critical errors found
 
-- Upgrading services to support target version. Use the following table template to map out which services you must upgrade. Use the [system requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) to determine what to add to the _Upgrade to_ column.
+- Upgrading services to support target version. Use the following table template to map out which services you must upgrade. Use the [system requirements](../../installation/system-requirements.md) to determine what to add to the _Upgrade to_ column.
 
   
   | Service         | Current version | Upgrade to | Notes                                                    |
@@ -58,7 +58,7 @@ In addition, partners can participate in the [Adobe Commerce Beta Program](https
 
 ## Development & QA
 
-Testing is the phase of an upgrade that requires the most time. As a result, this process should be as automated as possible. The _[Application Testing Guide](https://devdocs.magento.com/guides/v2.4/test/testing.html)_ provides details on how to set up and use platform and system testing tools for faster QA. Use a staging environment to test and validate your upgrade before moving to production.
+Testing is the phase of an upgrade that requires the most time. As a result, this process should be as automated as possible. The _[Application Testing Guide](https://developer.adobe.com/commerce/testing/guide/)_ provides details on how to set up and use platform and system testing tools for faster QA. Use a staging environment to test and validate your upgrade before moving to production.
 
 ## UAT & preparing to launch
 

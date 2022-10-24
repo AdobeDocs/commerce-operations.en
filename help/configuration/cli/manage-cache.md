@@ -24,7 +24,7 @@ Commerce 2 has the following cache types:
 |Reflection|reflection|Removes a dependency between the Webapi module and the Customer module.|
 |Translations|translate|After merging translations from all modules, the merger cache will be cleaned.|
 |Integration configuration|config_integration|Compiled integrations. Clean or flush this cache after changing or adding integrations.|
-|Integration API configuration|config_integration_api|Compiled integration APIs configuration of the Store’s Integrations.|
+|Integration API configuration|config_integration_api|Compiled integration APIs configuration of the Store's Integrations.|
 |Web services configuration|config_webservice|Caching the Web API Structure.|
 |Customer Notification|customer_notification|Temporary notifications that appear in the user interface.|
 
@@ -65,7 +65,7 @@ This command enables you to enable or disable all cache types or only the ones y
 
 >[!INFO]
 >
->Starting in version 2.2, you can only enable or disable cache types using the command line while running Commerce in production mode. If running Commerce in developer mode, you can enable or disable cache types using the command line or manually. Before doing so, you must manually make `<magento_root>/app/etc/env.php` writeable by the [file system owner](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>Starting in version 2.2, you can only enable or disable cache types using the command line while running Commerce in production mode. If running Commerce in developer mode, you can enable or disable cache types using the command line or manually. Before doing so, you must manually make `<magento_root>/app/etc/env.php` writeable by the [file system owner](../../installation/prerequisites/file-system/overview.md).
 
 You can clean (also referred to as _flush_ or _refresh_) cache types using either the command line or the Admin.
 
