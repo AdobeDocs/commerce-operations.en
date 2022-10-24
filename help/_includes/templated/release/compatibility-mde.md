@@ -8,8 +8,7 @@ the updated content: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en
 **Supported** – version that has been fully tested by Adobe and is supported.
 
 **Compatible** – version that is confirmed to be compatible with Adobe Commerce or
-Magento Open Source, but is
-not supported.
+Magento Open Source, but is not supported.
 
 **Not supported** - version that is not compatible with an Adobe Commerce or Magento Open Source release.
 
