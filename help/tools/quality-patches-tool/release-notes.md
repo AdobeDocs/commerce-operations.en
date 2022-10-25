@@ -20,7 +20,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-47332** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where cron fails with an error that is only reported when running between 00:00 and 00:59 UTC.
 * **ACSD-47280** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where disabling the shared catalog feature on a specific scope does not work correctly.
 * **ACSD-47106** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where a value cannot be saved in a new custom attribute on a company creation page.
-* Updated patches: ACSD-45143.
+* Updated patch: ACSD-45143.
 
 ## v1.1.21 {#v1-1-21}
 
