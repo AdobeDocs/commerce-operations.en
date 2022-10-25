@@ -16,7 +16,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.22 {#v1-1-22}
 
-* **ACSD-47444** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.3) - Fixes the "Trying to access array offset on value of type bool" error when accessing certain non-existing category paths for known products on PHP 7.4.
+* **ACSD-47444** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.3) - Fixes the _Trying to access array offset on value of type bool_ error when accessing certain non-existing category paths for known products on PHP 7.4.
 * **ACSD-47332** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where cron fails with an error that is only reported when running between 00:00 and 00:59 UTC.
 * **ACSD-47280** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where disabling the shared catalog feature on a specific scope does not work correctly.
 * **ACSD-47106** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where a value cannot be saved in a new custom attribute on a company creation page.
