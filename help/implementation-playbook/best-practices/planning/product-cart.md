@@ -23,7 +23,6 @@ The expected performance based on cart item limits is:
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
 
-
 ## Reduce number of cart items
 
 Use the following strategies to manage the number of cart items 

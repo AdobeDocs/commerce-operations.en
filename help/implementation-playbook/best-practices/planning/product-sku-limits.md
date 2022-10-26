@@ -1,18 +1,18 @@
 ---
 title: Product limits best practices
 description: Learn best practices for configuring product Stock Keeping Units (SKUs) to maximize performance
-role: User
+role: Admin
 feature: Best Practices
 feature-set: Commerce
 ---
 
 # Best practices for product SKU configuration
 
-To maximize performance, configure a maximum of 10 million product Stocking Keeping Units (SKUs). This effective product maximum which is calculated as:
+To maximize performance, the recommended maximum for effective product Stocking Keeping Units (SKUs) is 10 million. This effective product maximum is calculated as:
 
 `Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
 
-Having more than the recommended maximum slows down product data retrieval and increases the time to complete Admin operations.
+Having more than the maximum number of effective SKUs slows down product data retrieval and increases the time to complete Admin operations.
 
 ## Affected products and versions
 
