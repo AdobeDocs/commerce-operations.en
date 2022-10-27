@@ -36,9 +36,9 @@ The process to enable asynchronous order processing depends on the deployment mo
 >
 >Warning: always test configuration changes in the Staging environment before updating the Production environment.
 
-
 ## Additional information
 
 - [Configuration best practices](../../../performance/configuration.md)
 - [General and advanced configuration paths reference](../../../configuration/reference/config-reference-general.md)
+- [High-throughput order processing](../../../performance/high-throughput-order-processing.md)
 

@@ -23,9 +23,9 @@ The following sections include best practice information for the planning phase.
   - [How to prevent—and fix—the five most common configuration issues for Adobe Commerce sites](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
   - [Best practices for Caching](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
   - [Full page caching](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
-  - [Optimize CSS and JS](https://support.magento.com/hc/en-us/articles/360044482152%E2%80%8B)
   - [OPcache memory size](opcache-memory-size.md)
-  - [robots.txt](https://support.magento.com/hc/en-us/articles/360048754931%E2%80%8B)
+  - [Reporting configuration](reporting-configuration.md)
+
 
 - Database configuration
   - [Database configuration best practices for cloud deployments​](database-on-cloud.md)

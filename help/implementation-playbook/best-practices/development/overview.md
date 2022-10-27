@@ -47,7 +47,7 @@ Lorem ipsum dolor sit amet.
 
 ## Platform and services
 
-Lorem ipsum dolor sit amet.
+- [Use Fastly for Image Optimization](image-optimization.md)
 
 ### Local and staging environment setup
 
@@ -57,4 +57,6 @@ Lorem ipsum dolor sit amet.
 
 - [Best practices for builds and deployment](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) – CTAG Deck
 - [Static content deployment - Cloud](static-content-deployment.md)
+- [Optimize CSS and JS files](optimize-css-js-files.md)
+- [Optimize images for a more responsive site](image-optimization.md)
 - [Troubleshooting Best Practices for Adobe Commerce on cloud infrastructure​](troubleshooting.md)
