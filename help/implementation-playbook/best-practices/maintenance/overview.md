@@ -16,7 +16,6 @@ The maintenance phase includes the following activities:
 - Managed services
 - Upgrades
 
-
 The following sections include best practice information for the maintenance phase.
 
 ## Site Monitoring
@@ -41,12 +40,14 @@ The following sections include best practice information for the maintenance pha
 
 - [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
 - [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
-- [Indexers "Update On Schedule" optimizes Adobe Commerce performance​](https://support.magento.com/hc/en-us/articles/360040227191%E2%80%8B)
+- [Configuration best practices for indexers​](indexer-configuration.md)
 - [Configuration best practices for order processing](configuration-for-order-processing.md)
 – CTAG deck
 - Plan upsizing for planned traffic increases during promotions or holidays – CTAG deck content 
 
 ## Configuration
+
+- [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md)
 
 - Planning for peak season and promotional periods (upsizing) – CTAG deck content 
 
