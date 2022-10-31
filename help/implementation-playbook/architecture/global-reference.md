@@ -5,6 +5,8 @@ exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
 ---
 # Global Reference Architecture (GRA)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3410528/?quality=12&learn=on)
+
 When running businesses that have multiple sites for multiple brands in multiple local markets (with localized currencies, languages, media, shared catalogues, and unique carts) and who want to avoid unnecessary costs for implementing same feature and integrations—Global Reference Architecture (GRA) is always a good option.
 
 ![Table explaining the cost of divergence in architecture](../../assets/playbooks/divergent-architecture.svg)
@@ -19,7 +21,7 @@ GRA is:
 
 GRA is not:
 
-- A product “feature”
+- A product "feature"
 - Unique to any commerce platform
 - Only for global business use cases
 
