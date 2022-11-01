@@ -7,7 +7,7 @@ description: Learn about key dates for end of software support for Adobe Commerc
 
 For Adobe Commerce 2.4 and subsequent releases:
 
--  To better streamline our lifecycle policy, Adobe provides quality fixes to the 2.4 release line until the end of support date of the PHP version upon which it is based. A customer can access quality fixes by contacting [Adobe Commerce Support](https://developer.adobe.com/commerce/contributor/community/support/) or through the self-serve [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html) if their version is still eligible for quality support. Refer to the table below for the End of Software Support dates for Adobe Commerce release lines.
+-  To better streamline our lifecycle policy, Adobe provides quality fixes to the 2.4 release line until the end of support date of the PHP version upon which it is based. A customer can access quality fixes by contacting [Adobe Commerce Support](https://developer.adobe.com/commerce/contributor/community/support/) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} if their version is still eligible for quality support. Refer to the table below for the End of Software Support dates for Adobe Commerce release lines.
 
 -  Adobe provides security fixes only through the latest patch or security patch release, even if a customer's version is still eligible for quality support. Unlike quality fixes, security fixes cannot be backported to previous minor releases nor to previous patch releases within supported minor releases.
 

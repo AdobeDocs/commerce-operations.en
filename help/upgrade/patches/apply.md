@@ -7,7 +7,7 @@ description: Learn about the methods for applying patches to an Adobe Commerce o
 
 You can apply patches using any of the following methods:
 
--  [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html)
+-  [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 -  [Command line](../patches/apply.md#command-line)
 -  [Composer](../patches/apply.md#composer)
 
@@ -15,7 +15,7 @@ You can apply patches using any of the following methods:
 
 >[!IMPORTANT]
 >
->To apply official quality patches, use the [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html). Always perform comprehensive testing before deploying any custom patch.
+>To apply official quality patches, use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Always perform comprehensive testing before deploying any custom patch.
 
 To apply a custom patch using Composer:
 

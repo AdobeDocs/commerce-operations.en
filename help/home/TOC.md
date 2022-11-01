@@ -17,3 +17,4 @@ user-guide-description: Learn about the operational aspects of maintaining your 
 - [Implementation Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [Operational Playbook](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [Commerce at Scale](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
+- [Security and Compliance](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)
