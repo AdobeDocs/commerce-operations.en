@@ -1,5 +1,7 @@
 # Commerce features
 
+<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Then, run the rendering script (_scripts/render) to generate the new compatibility table as described in the README instructions.-->
+
 <table style="table-layout:auto">
   <tbody>
     <tr style="background:lightgray;">
@@ -67,6 +69,14 @@
       <td>+</td>
     </tr>
     <tr>
+      <td>Channel Manager (Walmart Marketplace)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
       <td>B2B-ready functionality and APIs (check B2B's infosheet for more info)</td>
       <td></td>
       <td></td>
@@ -118,6 +128,14 @@
     </tr>
     <tr>
       <td>Buy Online Pickup In-Store (BOPIS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Store Fulfillment (Advanced omnichannel fulfillment)</td>
       <td></td>
       <td></td>
       <td></td>

@@ -5,9 +5,9 @@ exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 ---
 # Maintenance and support overview
 
-Consumers already have more options than ever before at their fingertips. With no shortage of brands vying for attention, you can’t give consumers any reason to look at your competitors. As we’ve seen, loyalty and patience with consumers is thin. It doesn’t take much for them to give up on your brand and having a poor ecommerce experience is an easy way for them to give up. 
+Consumers already have more options than ever before at their fingertips. With no shortage of brands vying for attention, you can't give consumers any reason to look at your competitors. As we've seen, loyalty and patience with consumers is thin. It doesn't take much for them to give up on your brand and having a poor ecommerce experience is an easy way for them to give up. 
 
-This leads to two complementary points. The first is that the launch of a new ecommerce site does not mean you then get to move on. The rate of change in marketing and with consumers’ needs is too great that brands must constantly evolve to keep up. Which brings us to point two. If your ecommerce support is only there to fix something when it breaks, then it will be impossible to meet consumers’ rising expectations. In short, ecommerce support shouldn’t just keep your site working, it should move your brand forward. This section will help you begin to move your brand forward after the launch of your site.
+This leads to two complementary points. The first is that the launch of a new ecommerce site does not mean you then get to move on. The rate of change in marketing and with consumers' needs is too great that brands must constantly evolve to keep up. Which brings us to point two. If your ecommerce support is only there to fix something when it breaks, then it will be impossible to meet consumers' rising expectations. In short, ecommerce support shouldn't just keep your site working, it should move your brand forward. This section will help you begin to move your brand forward after the launch of your site.
 
 ## Transition phase
 
@@ -23,4 +23,8 @@ The following diagram shows the phases and activities that would be included in 
 >
 > It is important to put together a transition checklist that helps project managers complete the tasks that are required to successfully set up the post-production support team. This transition should be part of the overall project plan and the tasks have to be included in the schedule.
 
-Identifying the right support model for your business to continue enhancing and optimizing your platform—and commerce practice as a whole—is a critical step to maintaining all of the hard work that was done during the implementation process. With a comprehensive ongoing support plan in place, your commerce site can keep up with your customers’ expectations and you can keep reaching your goals.
+Identifying the right support model for your business to continue enhancing and optimizing your platform—and commerce practice as a whole—is a critical step to maintaining all of the hard work that was done during the implementation process. With a comprehensive ongoing support plan in place, your commerce site can keep up with your customers' expectations and you can keep reaching your goals.
+
+When deploying Adobe Commerce, it is critical to think about what to include in your maintenance and support strategy. 
+Expert support is included in an Adobe Commerce license. For more information on Expert support and Adobe Support Plans, please refer to [Adobe Support Plans](https://business.adobe.com/customers/consulting-services/premier-support.html). 
+In addition to Adobe Support plans there are legacy Magento support terms. To understand what support services are applicable to you, please reference your contract to see what support agreement you have or talk to your Customer Success Manager (CSM). 
