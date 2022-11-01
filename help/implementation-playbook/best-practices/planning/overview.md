@@ -20,7 +20,7 @@ The following sections include best practice information for the planning phase.
 ## Requirements gathering
 
 - **Application configuration**
-  - [Best practices for configuring sites, stores, and store views (cloud infrastructure)](sites-stores-views.md)
+  - [Best practices for configuring sites, stores, and store views (cloud infrastructure)](sites-stores-store-views.md)
   - [How to prevent—and fix—the five most common configuration issues for Adobe Commerce sites](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
   - [Best practices for Caching](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
   - [Full page caching](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
@@ -50,7 +50,7 @@ The following topics describe performance optimization best practices for config
 - [Product configuration​](product-sku-limits.md)
 - [Product variation configuration](product-variations.md)
 - [Product options configuration](product-options.md)
-- [Product attribute, attribute options, and attribute set configuration​](product-attributes.md)
+- [Product attribute, attribute options, and attribute set configuration​](product-attributes-and-options.md)
 - [Pagination configuration for product listings](product-listing-pagination.md)(product-listing-pagination.md)
 
 ## **Sales and Marketing**

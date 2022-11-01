@@ -40,5 +40,5 @@ Use the following strategies to reduce the number of products (SKUs):
 - [Create a product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 - [Product assignments](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
 - Cloud infrastructure: [Setup multiple websites and stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) 
-- On-premises [Multiple websites or stores](../../../configuration/configuration/multi-sites/ms-overview.html)
+- On-premises [Multiple websites or stores](../../../configuration/multi-sites/ms-overview.md)
 - [Adobe Commerce on cloud infrastructure: Best Practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html) in our developer documentation
