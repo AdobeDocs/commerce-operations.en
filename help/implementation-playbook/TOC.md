@@ -67,8 +67,8 @@ mini-toc-levels: 3
   - [Overview](best-practices/phases.md)
   - Planning {#planning}
     - [Overview](best-practices/planning/overview.md)
-    - [Sites, stores, and store view configuration](sites-stores-store-views.md)
-    - [Reporting configuration](best-practices/planning/reporting-configuration.mdreporting-configuration.md)
+    - [Sites, stores, and store view configuration](best-practices/planning/sites-stores-store-views.md)
+    - [Reporting configuration](best-practices/planning/reporting-configuration.md)
     - [Database configuration for cloud deployments​](best-practices/planning/database-on-cloud.md)
     - [MySQL slave connection configuration​](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
     - [MySQL triggers usage](best-practices/planning/mysql-triggers-usage.md)
