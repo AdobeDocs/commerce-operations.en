@@ -22,7 +22,7 @@ These tools use a variety of metrics to provide powerful insights and recommenda
 
 To check the frontend performance of your website store:
 
-1. C frontend audits using web performance tools such as:
+1. Audit frontend performance using web performance tools such as:
 
 - [Google Lighthouse](https://web.dev/measure/) (There are also [additional options to run Lighthouse](https://developers.google.com/web/tools/lighthouse/).) Lighthouse has audits for performance, accessibility, progressive web apps, SEO, and more.
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) Pagespeed Insights can quickly give you a detailed report of what is slowing a web page, complete with recommendations on how to fix it.

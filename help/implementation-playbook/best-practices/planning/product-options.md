@@ -1,6 +1,6 @@
 ---
-title: Product options best practices
-description: Learn how to mitigate Adobe Commerce performance issues by limiting the number of product options.
+title: Product options configuration best practices
+description: Learn how to optimize Adobe Commerce performance by limiting the number of product options.
 role: Admin
 feature: Best Practices
 feature-set: Commerce
@@ -8,38 +8,39 @@ feature-set: Commerce
 
 # Product options best practices
 
-This article provides best practices for product options in Adobe Commerce. Our recommendation is to have not more than 100 options per product, as performance can be affected.
-
+For best performance, configure a maximum of 100 product options per product. 
 ## Affected products and versions
 
 [All supported versions](../../../release/versions.md) of:
 
-* Adobe Commerce on cloud infrastructure
-* Adobe Commerce on-premises
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises
 
-## Reduce options
+## Reduce product options
+
+For best site performance, use the following strategies to reduce the number of product options:
+
+- Configure different product variations: complex products, custom options as a source of product variations.
+- Use attribute sets to build specific product templates with targeted attributes and options to avoid global product templates and option containers that apply to all products
+- Manage product information through an external Product Management System (PMS).
+
+## Potential performance impact
 
 Many product options leads to an increase in data retrieved for each product on all read and write operations resulting in:
 
-* Increase in SQL queries traffic and heavier `JOIN` operations affecting database throughput.
-* Increase of Adobe Commerce indexes size and full-text search index.
+- Increase in SQL queries traffic and heavier `JOIN` operations affecting database throughput.
+- Increase of Adobe Commerce indexes size and full-text search index.
 
 The increases listed above can cause these potential site impacts:
 
-* Response time will be increased for most storefront scenarios related to products containing a large number of options in attributes.
-* Product management operations in Admin will significantly slow down and can lead to timeouts, especially on scenarios related to attributes list and trees retrieval (including promo rules management).
-* Product mass actions functionality can be blocked.
-
-Reduce the number of product options by:
-
-* Leveraging different variation mechanisms: complex products, custom options as a source of product variations.
-* Building specific product templates with targeting attributes and options, avoiding generalized product templates and option containers.
-* Managing products info through external Product Management System (PMS).
+- Longer response time for most storefront scenarios related to products containing a large number of options in attributes
+- Significantly more time to complete Product management operations in Admin that can lead to timeouts, especially for scenarios related to attributes list and tree retrieval including promotion rules management.
+- Can block bulk action operations to complete asynchronous mass operations like import and export and assigning custom prices to multiple products in a shared catalog
 
 ## Additional information
 
-* [Configurable product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
-* [Product attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)
-* [Attribute sets](https://support.magento.com/hc/en-us/articles/360045041092)
-* [Product attributes best practices](https://support.magento.com/hc/en-us/articles/360048256612)
-* [Inventory mass actions](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory/)
+- [Create a product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
+- [Best practices for product attribute configuration](product-attributes-and-options.md)
+- [Bulk Actions log](https://docs.magento.com/user-guide/system/action-log-bulk-actions.html)
+- [Inventory mass actions API](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory/)
+- [Training: Manage Catalogs and Products using Adobe Commerce](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)

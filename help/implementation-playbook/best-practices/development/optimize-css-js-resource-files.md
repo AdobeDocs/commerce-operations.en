@@ -1,12 +1,20 @@
 ---
-title: Optimize CSS and JS files
+title: Optimize  CSS and JS resource files
 description: Learn how to merge and minify CSS and JS files for Adobe Commerce projects using the Admin or command line.
 role: Developer
 feature: Best Practices
 feature-set: Commerce
 ---
 
-# Optimize CSS and JS files
+
+# Optimize resource files
+
+For a more responsive Commerce site, optimize resource files, eliminate render-blocking resources, and 
+
+- **Optimize CSS and JS files**—Reduce the time required to load CSS and Javascript (JS) files by configuring Adobe Commerce to merge, minify, and bundle separate files into a single file.
+- **Eliminate render-blocking resources**—Consider delivering critical JS and CSS features inline and deferring all non-critical JS/CSS styles. For guidance, see [web.dev Eliminate render-blocking resources](https://web.dev/render-blocking-resources/).
+
+## Optimize CSS and JS files
 
 For a more responsive Commerce site, reduce the time required to load CSS and Javascript (JS) files by configuring Adobe Commerce to merge, minify, and bundle separate files into a single file.
 
@@ -81,5 +89,6 @@ To enable JS minification in Adobe Commerce on cloud infrastructure:
 
 ## Additional information
 
-* To learn more about optimizing resource files, refer to [Optimizing Resource Files](https://docs.magento.com/user-guide/system/file-optimization.html) in our user guide.
-* To learn to enable CSS file optimization, refer to [Frontend Developer Guide > Cascading style sheets (CSS) > CSS merging](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/css-topics/css-overview.html#css-merging-minification-and-performance), minification and performance in our developer documentation.
+- [Client side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
+- [User Guide: Optimizing resource files](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [Frontend Developer Guide: CSS merging, minification, and site performance](https://developer.adobe.com/commerce/frontend-core/guide/css//#css-merging-minification-and-performance), minification and performance in our developer documentation.

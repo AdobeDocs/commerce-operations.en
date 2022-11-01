@@ -1,6 +1,6 @@
 ---
 title: Product limits best practices
-description: Learn best practices for configuring product Stock Keeping Units (SKUs) to maximize performance
+description: Learn best practices for configuring product Stock Keeping Units (SKUs) to maximize site performance
 role: Admin
 feature: Best Practices
 feature-set: Commerce
@@ -21,7 +21,6 @@ Having more than the maximum number of effective SKUs slows down product data re
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
 
-
 ## Reduce the number of products
 
 Use the following strategies to reduce the number of products (SKUs):
@@ -32,8 +31,12 @@ Use the following strategies to reduce the number of products (SKUs):
 - Restructure the catalog to minimize store numbers—Decrease the number of effective SKUs by decreasing the number of stores, websites, and customer groups or number of products.
 - Deactivate or remove unused system components like modules. (See  [Uninstall modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
 - Provide more product variations through custom options rather than through unique products.
-- Managing products in external Platform Management System (PMS).
+- Manage products in an external Platform Management System (PMS).
 
 ## Additional information
 
-[Adobe Commerce on cloud infrastructure: Best Practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html) in our developer documentation
+- [Create a product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
+- [Product assignments](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
+- Cloud infrastructure: [Setup multiple websites and stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) 
+- On-premises [Multiple websites or stores](../../../configuration/configuration/multi-sites/ms-overview.html)
+- [Adobe Commerce on cloud infrastructure: Best Practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html) in our developer documentation

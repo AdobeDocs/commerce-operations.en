@@ -28,6 +28,7 @@ Lorem ipsum dolor sit amet.
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
   - [Optimize CSS and JS files](optimize-css-js-files.md)
+  - [Best practices for private content blocks](private-content-block-configuration.md)
 
 - Add custom code
   - [Best practices for extension developers](https://developer.adobe.com/commerce/php/best-practices/)

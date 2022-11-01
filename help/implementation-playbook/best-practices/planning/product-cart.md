@@ -1,16 +1,19 @@
 ---
 title: Product cart best practices
-description: Learn how to mitigate Adobe Commerce performance issues by limiting the number of products in a cart.
+description: Learn how to optimize Adobe Commerce performance by limiting the number of products in a cart.
 role: User
 feature: Best Practices
 feature-set: Commerce
 ---
-
 # Best practices for product cart management
 
-In Adobe Commerce and Magento Open Source, we recommend that a cart contain a maximum of 100 products.
+For best performance, use the following guidelines to manage cart limits for Adobe Commerce and Magento Open Source
 
-The expected performance based on cart item limits is:
+- For versions 2.3.x - 2.4.2, only allow a maximum of 100 products in a cart
+- For versions 2.4.3 and later, enhancement to sales rules capabilities increase the cart maximum to 750
+
+
+For versions 2.3.x - 2.4.2, the expected performance based on cart item limits is:
 
 - Up to **100** products in a cart—the product works, meeting performance targets for response time.
 - Up to **300** products in a cart—the product works, but response time increases above targets.
@@ -30,7 +33,16 @@ Use the following strategies to manage the number of cart items
 - Split orders into several smaller orders with a smaller number of rows by leveraging the [!UICONTROL Add Item by SKU] feature.
 - Only add the custom logic and cart customization required to load a list of items.
 
+## Potential performance impacts
+
+If a cart contains more than the recommended maximum number of products, site performance can be impacted in the following ways:
+
+- Increased response time for data retrieval operations, validation of cart items, checks for applying price rules, and tax and total calculations
+- Increased response time for mini-cart rendering including rendering of cart views, checkout flow and execution
+- Increased time loading time for all site pages where the mini-cart is present
+
+
 ## Additional information
 
-- [Configuring Product Options](https://docs.magento.com/user-guide/catalog/inventory-product-stock-options.html) in our user guide.<br>
-- [Shopping Assistance > Managing a Shopping Cart](https://docs.magento.com/user-guide/sales/shopping-assisted-cart-manage.html#method-2-add-item-by-sku) in our user guide.
+- [Configure Product Options](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-options.html)
+- [Manage a shopping cart](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage.html) in our user guide.
