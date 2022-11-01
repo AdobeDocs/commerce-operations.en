@@ -1,6 +1,6 @@
 ---
 title: Best practice for Report Configuration
-description: Cponf
+description: Optimize site performance by removing the reporting module if you are not using it.
 role: Admin
 feature: Best Practices
 feature-set: Commerce

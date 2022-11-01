@@ -36,7 +36,6 @@ The following sections include best practice information for the planning phase.
   - [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
   - [New Relic - Configure notification channels](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
   - [Best practices for Redis service configuration​](redis-service-configuration.md)
-  - [Best practice for OPcache memory size in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044740812​)
   - [Realpath cache size best practice](realpath-cache-size.md)
 
 ## **Architectural design**
