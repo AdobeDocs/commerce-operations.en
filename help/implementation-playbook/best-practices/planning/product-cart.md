@@ -5,12 +5,13 @@ role: User
 feature: Best Practices
 feature-set: Commerce
 ---
+
 # Best practices for product cart management
 
-For best performance, use the following guidelines to manage cart limits for Adobe Commerce and Magento Open Source
+For best performance, use the following guidelines to manage cart limits for Adobe Commerce and Magento Open Source:
 
-- For versions 2.3.x - 2.4.2, only allow a maximum of 100 products in a cart
-- For versions 2.4.3 and later, enhancement to sales rules capabilities increase the cart maximum to 750
+- For versions 2.3.x - 2.4.2, only allow a maximum of 100 products in a cart.
+- For versions 2.4.3 and later, enhancement to sales rules capabilities increased the cart maximum to 750.
 
 
 For versions 2.3.x - 2.4.2, the expected performance based on cart item limits is:
@@ -35,12 +36,11 @@ Use the following strategies to manage the number of cart items
 
 ## Potential performance impacts
 
-If a cart contains more than the recommended maximum number of products, site performance can be impacted in the following ways:
+Having more than the recommended maximum number of products in the cart can have the following impacts on site performance: 
 
-- Increased response time for data retrieval operations, validation of cart items, checks for applying price rules, and tax and total calculations
-- Increased response time for mini-cart rendering including rendering of cart views, checkout flow and execution
-- Increased time loading time for all site pages where the mini-cart is present
-
+- Increased response time for data retrieval operations, validation of cart items, checks for applying price rules, and tax and total calculations.
+- Increased response time for mini-cart rendering including rendering of cart views, checkout flow and execution.
+- Increased time loading time for all site pages where the mini-cart is present.
 
 ## Additional information
 

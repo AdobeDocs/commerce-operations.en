@@ -6,7 +6,7 @@ feature: Best Practices
 feature-set: Commerce
 ---
 
-# Product options best practices
+# Best practices for configuring Product variations
 
 For best performance, configure a maximum of 50 variations per product. 
 
@@ -21,9 +21,9 @@ For best performance, configure a maximum of 50 variations per product.
 
 For best site performance, use the following strategies to reduce the number of product variations:
 
-- Restructure the catalog by distributing the number of variations between different products.
-- Remove configurable attribute options that are not in stock
-- Manage variations through alternative features like custom options, categories, related,grouped, and bundle products.
+- Restructure the catalog by distributing the number of variations across different products.
+- Remove configurable attribute options that are not in stock.
+- Manage variations through alternative features like custom options, categories, related, grouped, and bundle products.
 
 ## Potential performance impact
 

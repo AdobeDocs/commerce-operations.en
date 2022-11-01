@@ -25,12 +25,14 @@ Having more than the maximum number of effective SKUs slows down product data re
 
 Use the following strategies to reduce the number of products (SKUs):
 
-- Minimize multipliers—Moving stores or websites reduces the multiplier. If you have 50,000 SKUs, ten Websites, and ten Customer Groups, the Effective Number of SKUs is 5 million. Removing five Customer Groups reduces the Effective SKUs to 2.5 million.
-- Restructure the catalog by reducing the number of products assigned to categories.
-- Use alternative product features for custom pricing (replacement of shared catalog and customer groups multipliers).
-- Restructure the catalog to minimize store numbers—Decrease the number of effective SKUs by decreasing the number of stores, websites, and customer groups or number of products.
+- Minimize multipliers—
+  - Moving stores or websites reduces the multiplier. If you have 50,000 SKUs, ten Websites, and ten Customer Groups, the Effective Number of SKUs is 5 million. Removing five Customer Groups reduces the Effective SKUs to 2.5 million.
+ - Use alternative product features for custom pricing to replace shared catalog and customer groups multipliers.
+- Restructure the catalog—
+  - Reduce the number of products assigned to categories.
+  - Decrease the number of SKUs by decreasing the number of stores, websites, customer groups, or number of products.
+- Provide more product variations by using custom options instead of creating separate products.
 - Deactivate or remove unused system components like modules. (See  [Uninstall modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
-- Provide more product variations through custom options rather than through unique products.
 - Manage products in an external Platform Management System (PMS).
 
 ## Additional information

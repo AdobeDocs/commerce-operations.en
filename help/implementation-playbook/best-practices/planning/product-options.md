@@ -1,6 +1,6 @@
 ---
 title: Product options configuration best practices
-description: Learn how to optimize Adobe Commerce performance by limiting the number of product options.
+description: Optimize Adobe Commerce performance by limiting the number of product options.
 role: Admin
 feature: Best Practices
 feature-set: Commerce
@@ -8,7 +8,8 @@ feature-set: Commerce
 
 # Product options best practices
 
-For best performance, configure a maximum of 100 product options per product. 
+For best performance, configure a maximum of 100 product options per product.
+
 ## Affected products and versions
 
 [All supported versions](../../../release/versions.md) of:
@@ -20,22 +21,22 @@ For best performance, configure a maximum of 100 product options per product.
 
 For best site performance, use the following strategies to reduce the number of product options:
 
-- Configure different product variations: complex products, custom options as a source of product variations.
-- Use attribute sets to build specific product templates with targeted attributes and options to avoid global product templates and option containers that apply to all products
+- Configure complex products and custom options as a source of product variations.
+- Use attribute sets to build specific product templates with targeted attributes and options to avoid global product templates and option containers that apply to all products.
 - Manage product information through an external Product Management System (PMS).
 
 ## Potential performance impact
 
 Many product options leads to an increase in data retrieved for each product on all read and write operations resulting in:
 
-- Increase in SQL queries traffic and heavier `JOIN` operations affecting database throughput.
-- Increase of Adobe Commerce indexes size and full-text search index.
+- Increased SQL query traffic and heavier `JOIN` operations affect database throughput.
+- Increased size for Adobe Commerce indexes and the full-text search index.
 
-The increases listed above can cause these potential site impacts:
+The increases listed above can potentially impact site performance in the following ways:
 
-- Longer response time for most storefront scenarios related to products containing a large number of options in attributes
+- Longer response time for most storefront scenarios related to products containing a large number of options in attributes.
 - Significantly more time to complete Product management operations in Admin that can lead to timeouts, especially for scenarios related to attributes list and tree retrieval including promotion rules management.
-- Can block bulk action operations to complete asynchronous mass operations like import and export and assigning custom prices to multiple products in a shared catalog
+- Can block bulk action operations to complete asynchronous mass operations like import and export and assigning custom prices to multiple products in a shared catalog.
 
 ## Additional information
 
@@ -44,3 +45,4 @@ The increases listed above can cause these potential site impacts:
 - [Bulk Actions log](https://docs.magento.com/user-guide/system/action-log-bulk-actions.html)
 - [Inventory mass actions API](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory/)
 - [Training: Manage Catalogs and Products using Adobe Commerce](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)
+

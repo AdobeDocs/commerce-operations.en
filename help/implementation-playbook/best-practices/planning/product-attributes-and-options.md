@@ -1,6 +1,6 @@
 ---
 title: Product attributes configuration best practices
-description: Learn how to mitigate Adobe Commerce performance issues by limiting the number of product attributes.
+description: Learn how to optimize Adobe Commerce performance by limiting the number of product attributes, attribute options, and attribute sets
 role: User, Admin
 feature: Best Practices
 feature-set: Commerce
@@ -41,16 +41,16 @@ For best performance when managing products from the Admin and retrieving produc
 
 For best performance when managing products from the Admin and retrieving product data in the storefront:
 
-- Using different variation mechanisms: complex products, custom options as a source of product variations.
-- Building specific product templates with targeting attributes and options to avoid generalized product templates and option containers
-- Maintaining a list of actual attribute options
-- Managing product information through an external Product Management System (PMS)
+- Use different variation mechanisms to create products: complex products, custom options as a source of product variations.
+- Build specific product templates with targeting attributes and options to avoid generalized product templates and option containers.
+- Maintain a list of actual attribute options.
+- Manage product information through an external Product Management System (PMS).
 
 ## Reduce number of product attribute sets
 
-Remove unused product attribute sets using MySQL. Y
+Remove unused product attribute sets using MySQL.
 
-Check the number of attribute sets:
+### Review attribute set configuration
 
 1. [Connect to the site database](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
 
@@ -62,7 +62,6 @@ Check the number of attribute sets:
 
 1. Remove any unused attribute sets.
 
-
 ## Potential performance impacts
 
 Configuring many **product attributes** increases the product template size for each product (EAV structure) and the amount of data that must be retrieved. This increase affects operations in the following ways:
@@ -71,7 +70,7 @@ Configuring many **product attributes** increases the product template size for 
 - Significant increase in the size of Adobe Commerce indexes and the full-text search index
 - Reaching hard MySQL limits when building a FLAT index for oversized product templates and inability to use it
 
-Increases in product data and index sizes can impact site performance in the following ways:
+Increases in product data and index sizes can have the following impacts on site performance: 
 
 - Increased response time for most storefront scenarios related to catalog browsing, search (quick and advanced), and layered navigation.
 - Product management operations in the Admin slow significantly which can lead to timeouts.
@@ -85,12 +84,10 @@ Configuring many **attribute options** can have the following performance impact
 - Increase in Product Edit form rendering time.
 - Slow checkout.
 
-
 ## Additional information
 
 - [Product Attributes Overview](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)
 - [Attribute sets](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-sets.html)
-
-
-- [Create products > Configurable Product](https://docs.magento.com/user-guide/catalog/product-create-configurable.html) in our user guide.
+- [Create a product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 - [Customization tutorials > Customize product creation form](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)
+

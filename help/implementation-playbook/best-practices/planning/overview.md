@@ -33,7 +33,7 @@ The following sections include best practice information for the planning phase.
   - [MySQL triggers usage](mysql-triggers-usage.md)
 
 - **Services configuration**
-  - Enable CDN, WAF, and Image Optimization: [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+  - [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
   - [New Relic - Configure notification channels](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
   - [Best practices for Redis service configuration​](redis-service-configuration.md)
   - [Best practice for OPcache memory size in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044740812​)
@@ -45,18 +45,18 @@ The following sections include best practice information for the planning phase.
 
 ## **Catalog design**
 
-The following topics describe performance optimization best practices for configuring your Adobe Commerce catalog including recommended maximums for the number of categories, product effective SKUs, product variations, product attributes and options, and more
+The following topics describe performance optimization best practices for configuring your Adobe Commerce catalog including recommended maximums for the number of categories, product effective SKUs, product variations, product attributes and options, and more.
 
-- [Category limits](category-limits.md)
-- [Product limits​](product-sku-limits.md)
-- [Product variations](product-variations.md)
-- [Product options​](product-options.md)
+- [Category configuration](category-limits.md)
+- [Product configuration​](product-sku-limits.md)
+- [Product variation configuration](product-variations.md)
+- [Product options configuration](product-options.md)
 - [Product attribute, attribute options, and attribute set configuration​](product-attributes.md)
 - [Pagination configuration for product listings](product-listing-pagination.md)(paginating-product-listings.md)
 
 ## **Sales and Marketing**
 
-- [Best practice for number of products in cart in Adobe Commerce​](product-cart.md)
+- [Best practices for product cart limit​](product-cart.md)
 - [Best practices for configuring promotions](product-cart-promotions.md)
 
 ## **Project scoping**

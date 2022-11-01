@@ -1,5 +1,5 @@
 ---
-title: Category limits configuration best practices
+title: Category configuration best practices
 description: Learn best practices to maximize site performance by limiting the number of  categories in the catalog.
 role: Admin
 feature: Best Practices
@@ -30,7 +30,7 @@ Use the following strategies to reduce the number of categories:
 
 ## Potential performance impacts
 
-If a site has more than the recommended maximum number of categories, site performance can be impacted in the following ways:
+If a site has more than the recommended maximum number of categories, site performance can have the following impacts on site performance: 
 
 - Tangible increase in response time for non-cached catalog pages
 - Long execution and timeouts while managing categories from the Admin
@@ -42,5 +42,4 @@ If a site has more than the recommended maximum number of categories, site perfo
 
 - [Categories overview](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html)
 - [Product assignments](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
-
 - [Adobe Commerce on cloud infrastructure: Best Practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html) in our developer documentation

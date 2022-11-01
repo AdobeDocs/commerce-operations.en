@@ -8,7 +8,7 @@ feature-set: Commerce
 
 # Update services best practices
 
-This article provides recommendations to keep your Adobe Commerce on cloud infrastructure technology stack updated with links to helpful resources. 
+This article provides recommendations to keep your Adobe Commerce on cloud infrastructure technology stack updated and provides links to helpful resources. 
 
 ## Affected products and versions
 

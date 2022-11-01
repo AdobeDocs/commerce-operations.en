@@ -11,12 +11,12 @@ feature-set: Commerce
 For best performance, follow these best practices to configure sales and promotions for items in a shopping cart:
 
 - **Sales rules (cart price rules)**–Configure no more than 1000 cart price rules for all websites
-    - Manage and remove unused rules
-    - Add strict rule conditions (like attribute or category filter) for the most efficient matching
+  - Manage and remove unused rules.
+  - Add strict rule conditions (like attribute or category filter) for the most efficient matching.
 - **Coupons**—
-    - Verify that the total number of coupons in the database is less than 250,000.
-    - Remove unused and expired coupons
-    - Generate only the number of coupons needed to meet campaign requirements
+  - Verify that the total number of coupons in the database is less than 250,000.
+  - Remove unused and expired coupons.
+  - Generate only the number of coupons needed to meet campaign requirements.
 
 ## Affected products and versions
 
@@ -27,13 +27,13 @@ For best performance, follow these best practices to configure sales and promoti
 
 ## Potential performance impacts
 
-If your site has more than the recommended maximum number of cart price rules and coupons, the site can be impacted in the following ways and might not meet Adobe Commerce and Magento Open Source performance targets: 
+Having more than the recommended maximum number of cart price rules or coupons can have the following impacts on site performance:
 
-- Increased response time when products are added to the cart 
-- Increased time to load and render the mini-cart
-- Increased time to render the cart page
-- Increased time to render the **Totals** block on the Checkout page
-- Applying coupons can take more than 2 seconds
+- Increased response time when products are added to the cart. 
+- Increased time to load and render the mini-cart.
+- Increased time to render the cart page.
+- Increased time to render the **Totals** block on the Checkout page.
+- Applying coupons can take more than 2 seconds.
 
 ## Additional information
 
