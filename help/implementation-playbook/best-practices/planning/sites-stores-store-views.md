@@ -23,7 +23,7 @@ For best site performance, configure a maximum of 50 sites, 50 stores, and 50 st
 
 ## Strategies to improve performance
 
-If your project requires a a large number of sites, stores, or store views, you can use the following strategies to improve performance:
+If your project requires many sites, stores, or store views, you can use the following strategies to improve performance:
 
 - Restructure catalog by shifting logic to categories
 - Separate price lists from catalog data by using external price and a Price Management System (PMS).
@@ -31,15 +31,15 @@ If your project requires a a large number of sites, stores, or store views, you 
 
 ## Potential performance impacts
 
-Websites and stores are multipliers for catalog data, so having a large number of websites and stores has the following impacts which negatively impact site performance:
+Websites and stores are multipliers for catalog data, so having many websites and stores can negatively affect site performance in the following ways:
 
-- Larger index tables increase time required to complete indexing operations [Price index]
-- Increased time to retrieve application configuration degrades storefront response time for non-cached catalog pages 
-- Significant increase in response time for Admin save operations as data is saved separately for each website
+- Larger index tables increase time required to complete indexing operations [Price index].
+- Increased time to retrieve application configuration degrades storefront response time for non-cached catalog pages. 
+- Increased response time to complete Save operations in the Admin since the data is saved separately for each website.
 
 
 ## Additional information
 
 - [Understanding websites, stores, and store views](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-* [Set up multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
+- [Set up multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
 

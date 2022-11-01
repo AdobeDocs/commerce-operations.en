@@ -27,10 +27,10 @@ For best performance, follow these best practices to configure sales and promoti
 
 ## Potential performance impacts
 
-Having more than the recommended maximum number of cart price rules or coupons can have the following impacts on site performance:
+Having more than the recommended maximum number of cart price rules or coupons can affect site performance in the following ways:
 
 - Increased response time when products are added to the cart. 
-- Increased time to load and render the mini-cart.
+- Increased time to load and render the minicart.
 - Increased time to render the cart page.
 - Increased time to render the **Totals** block on the Checkout page.
 - Applying coupons can take more than 2 seconds.

@@ -27,15 +27,15 @@ For best site performance, use the following strategies to reduce the number of 
 
 ## Potential performance impact
 
-Many product options leads to an increase in data retrieved for each product on all read and write operations resulting in:
+Many product options increases the amount of data retrieved for each product on all read and write operations resulting in:
 
 - Increased SQL query traffic and heavier `JOIN` operations affect database throughput.
 - Increased size for Adobe Commerce indexes and the full-text search index.
 
 The increases listed above can potentially impact site performance in the following ways:
 
-- Longer response time for most storefront scenarios related to products containing a large number of options in attributes.
-- Significantly more time to complete Product management operations in Admin that can lead to timeouts, especially for scenarios related to attributes list and tree retrieval including promotion rules management.
+- Longer response time for most storefront scenarios related to products containing many options in attributes.
+- Significant increases in the time required to complete Product management operations in Admin that can lead to timeouts, especially for scenarios related to attributes list and tree retrieval including promotion rules management.
 - Can block bulk action operations to complete asynchronous mass operations like import and export and assigning custom prices to multiple products in a shared catalog.
 
 ## Additional information

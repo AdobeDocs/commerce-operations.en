@@ -27,13 +27,11 @@ For best site performance, use the following strategies to reduce the number of 
 
 ## Potential performance impact
 
-Exceeding the recommended number of product variations can have the following impacts on site performance: 
-
-Potential site impacts can include:
+Exceeding the recommended number of product variations can affect site performance in the following ways:
 
 - Long request and rendering times on product details and category pages containing complex products.
-- Admin product save operations response time increases above optimal performance targets.
-- Increase in Product Edit form rendering time.
+- Increased response time to complete Save operations in the Admin.
+- Increased time to render the Product Edit form.
 - Slow checkout.
 
 ## Additional information

@@ -9,7 +9,7 @@ feature-set: Commerce
 
 For a more responsive Commerce site, optimize CSS and JavaScript (JS) resource files and eliminate render-blocking resources.
 
-- **Optimize CSS and JS files**—Reduce the time required to load CSS and Javascript (JS) files by configuring Adobe Commerce to merge, minify, and bundle separate files into a single file.
+- **Optimize CSS and JS files**—Reduce the time required to load CSS and JavaScript (JS) files by configuring Adobe Commerce to merge, minify, and bundle separate files into a single file.
 - **Eliminate render-blocking resources**—Consider delivering critical JS and CSS features inline and deferring all non-critical JS/CSS styles. For guidance, see [web.dev Eliminate render-blocking resources](https://web.dev/render-blocking-resources/).
 
 ## Affected products and versions
@@ -22,11 +22,11 @@ For a more responsive Commerce site, optimize CSS and JavaScript (JS) resource f
 
 ## Merge or minify CSS files
 
-The time it takes to load CSS and Javascript (JS) files can be reduced by merging, minifying, and bundling separate files into a single file.
+The time it takes to load CSS and JavaScript (JS) files can be reduced by merging, minifying, and bundling separate files into a single file.
 
 >[!IMPORTANT] 
 >
->Adobe Commerce on cloud infrastructure always runs on Production mode and it is not possible to set it otherwise, therefore you must use the command line method to enable merging, minifying, and bundling.
+>Adobe Commerce on cloud infrastructure always runs on Production mode and it is not possible to set it otherwise, therefore you must use the command-line method to enable merging, minifying, and bundling.
 
 ### Using Admin
 
@@ -74,8 +74,9 @@ To enable JS minification in Adobe Commerce on cloud infrastructure:
 
 ## Merge and bundle JS files
 
-* You can turn on merging or bundling in the Commerce Admin (merging and bundling cannot be enabled at the same time): [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
-* You can also enable Adobe Commerce built-in bundling (basic bundling) from the command line:
+You can turn on merging or bundling in the Commerce Admin (merging and bundling cannot be enabled at the same time): [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
+
+You can also enable Adobe Commerce built-in bundling (basic bundling) from the command line:
 
    ```bash
    php -f bin/magento config:set dev/js/enable_js_bundling 1
@@ -83,6 +84,6 @@ To enable JS minification in Adobe Commerce on cloud infrastructure:
 
 ## Additional information
 
-- [Client side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
+- [Client-side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
 - [User Guide: Optimizing resource files](https://docs.magento.com/user-guide/system/file-optimization.html)
-- [Frontend Developer Guide: CSS merging, minification, and site performance](https://developer.adobe.com/commerce/frontend-core/guide/css//#css-merging-minification-and-performance), minification and performance in our developer documentation.
+- [Frontend Developer Guide: CSS merging, minification, and site performance](https://developer.adobe.com/commerce/frontend-core/guide/css//#css-merging-minification-and-performance), minification, and performance in our developer documentation.

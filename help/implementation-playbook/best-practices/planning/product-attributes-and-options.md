@@ -70,14 +70,14 @@ Configuring many **product attributes** increases the product template size for 
 - Significant increase in the size of Adobe Commerce indexes and the full-text search index
 - Reaching hard MySQL limits when building a FLAT index for oversized product templates and inability to use it
 
-Increases in product data and index sizes can have the following impacts on site performance: 
+Increases in product data and index sizes can affect site performance in the following ways:
 
 - Increased response time for most storefront scenarios related to catalog browsing, search (quick and advanced), and layered navigation.
 - Product management operations in the Admin slow significantly which can lead to timeouts.
 - Product Mass Actions functionality can be blocked.
 - Index re-build time for mid- and large-sized catalogs cannot be performed on a daily basis due to long execution times.
 
-Configuring many **attribute options** can have the following performance impacts:
+Configuring many **attribute options** can affect site performance in the following ways:
 
 - Long request and rendering times on product detail (PDP) and category pages containing complex products.
 - Admin product save operations response time increases above optimal performance targets.

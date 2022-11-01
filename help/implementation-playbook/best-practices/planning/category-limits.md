@@ -30,7 +30,7 @@ Use the following strategies to reduce the number of categories:
 
 ## Potential performance impacts
 
-If a site has more than the recommended maximum number of categories, site performance can have the following impacts on site performance: 
+If a site has more than the recommended maximum number of categories, can affect site performance in the following ways: 
 
 - Tangible increase in response time for non-cached catalog pages
 - Long execution and timeouts while managing categories from the Admin
