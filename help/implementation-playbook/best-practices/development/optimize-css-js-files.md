@@ -10,7 +10,7 @@ feature-set: Commerce
 For a more responsive Commerce site, optimize CSS and JavaScript (JS) resource files and eliminate render-blocking resources.
 
 - **Optimize CSS and JS files**—Reduce the time required to load CSS and JavaScript (JS) files by configuring Adobe Commerce to merge, minify, and bundle separate files into a single file.
-- **Eliminate render-blocking resources**—Consider delivering critical JS and CSS features inline and deferring all non-critical JS/CSS styles. For guidance, see [web.dev Eliminate render-blocking resources](https://web.dev/render-blocking-resources/).
+- **Eliminate render-blocking resources**—Consider delivering critical JS and CSS features inline and deferring all non-critical JS/CSS styles. For guidance, see [Eliminate render-blocking resources](https://web.dev/render-blocking-resources/).
 
 ## Affected products and versions
 
@@ -86,4 +86,4 @@ You can also enable Adobe Commerce built-in bundling (basic bundling) from the c
 
 - [Client-side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
 - [User Guide: Optimizing resource files](https://docs.magento.com/user-guide/system/file-optimization.html)
-- [Frontend Developer Guide: CSS merging, minification, and site performance](https://developer.adobe.com/commerce/frontend-core/guide/css//#css-merging-minification-and-performance), minification, and performance in our developer documentation.
+- [Frontend Developer Guide: CSS merging, minification, and site performance](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
