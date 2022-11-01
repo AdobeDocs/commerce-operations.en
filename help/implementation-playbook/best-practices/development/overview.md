@@ -19,8 +19,6 @@ The following sections include best practice information for the development pha
 
 ## Application development
 
-Lorem ipsum dolor sit amet.
-
 ### Code review, merge, and test
 
 - Guidelines and standards (wiki content)

@@ -1,30 +1,24 @@
 ---
-title: Optimize  CSS and JS resource files
+title: Optimize CSS and JS resource files
 description: Learn how to merge and minify CSS and JS files for Adobe Commerce projects using the Admin or command line.
 role: Developer
 feature: Best Practices
 feature-set: Commerce
 ---
-
-
 # Optimize resource files
 
-For a more responsive Commerce site, optimize resource files, eliminate render-blocking resources, and 
+For a more responsive Commerce site, optimize CSS and JS resource files and eliminate render-blocking resources.
 
 - **Optimize CSS and JS files**—Reduce the time required to load CSS and Javascript (JS) files by configuring Adobe Commerce to merge, minify, and bundle separate files into a single file.
 - **Eliminate render-blocking resources**—Consider delivering critical JS and CSS features inline and deferring all non-critical JS/CSS styles. For guidance, see [web.dev Eliminate render-blocking resources](https://web.dev/render-blocking-resources/).
-
-## Optimize CSS and JS files
-
-For a more responsive Commerce site, reduce the time required to load CSS and Javascript (JS) files by configuring Adobe Commerce to merge, minify, and bundle separate files into a single file.
 
 ## Affected products and versions
 
 [All supported versions, 2.3 and later](../../../release/versions.md) of:
 
-* Adobe Commerce on cloud infrastructure
-* Adobe Commerce on-premises
-* Magento Open Source
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises
+- Magento Open Source
 
 ## Merge or minify CSS files
 

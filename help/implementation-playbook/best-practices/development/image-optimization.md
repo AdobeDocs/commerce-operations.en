@@ -14,13 +14,13 @@ For Adobe Commerce on cloud infrastructure deployments, improve site response ti
 
 Before uploading images to your Commerce sites, optimize and compress them to balance performance with viewing quality. This helps increase space and reduce page load times.
 
-- PNGs give smaller sizes for images with large areas of solid color.
+- PNG format delivers smaller sized images for images with large areas of solid color.
   
-- JPEGs give smaller sizes for everything else. Use the highest compression (without noticeable degradation). This is usually 60-80%.
+- JPEG format delivers smaller sized images for all other image types. Use the highest compression (without noticeable degradation). This is usually 60 to 80 percent.
 
 ## Enable and configure Fastly image optimization
 
-After you set up the Fastly service for your Adobe Commerce Cloud project, see [Fastly image optimization](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) for instructions to enable and configure the image optimization settings.
+After you set up the Fastly service for your Adobe Commerce Cloud project, see [Fastly image optimization](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) for instructions to enable and configure image optimization.
 
 ## Additional information
 
