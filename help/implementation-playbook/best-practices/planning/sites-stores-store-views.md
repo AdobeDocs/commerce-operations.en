@@ -35,7 +35,7 @@ Websites and stores are multipliers for catalog data, so having many websites an
 
 - Larger index tables increase time required to complete indexing operations [Price index].
 - Increased time to retrieve application configuration degrades storefront response time for non-cached catalog pages. 
-- Increased response time to complete Save operations in the Admin since the data is saved separately for each website.
+- Significant increases in the time required to complete Save operations in the Admin since the data is saved separately for each website.
 
 
 ## Additional information
