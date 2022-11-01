@@ -51,7 +51,7 @@ The following topics describe performance optimization best practices for config
 - [Product variation configuration](product-variations.md)
 - [Product options configuration](product-options.md)
 - [Product attribute, attribute options, and attribute set configuration​](product-attributes.md)
-- [Pagination configuration for product listings](product-listing-pagination.md)(paginating-product-listings.md)
+- [Pagination configuration for product listings](product-listing-pagination.md)(product-listing-pagination.md)
 
 ## **Sales and Marketing**
 
