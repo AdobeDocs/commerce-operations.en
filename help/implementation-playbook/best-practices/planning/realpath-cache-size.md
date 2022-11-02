@@ -28,8 +28,8 @@ If the Realpath cache configuration values are too low or too high, it adds addi
 
 ## Additional information
 
-- [On-premises: PHP settings](../../../performance/software.mdperformance-best-practices/software.html#php-settings)
-- [On cloud infrastructure:
+- [On-premises: PHP settings](../../../performance/software.md#php-settings)
+- On cloud infrastructure:
   - [Database best practices](database-on-cloud.md)
   - [Most common database issues in Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
 - [Indexers "Update On Schedule" optimizes Magento performance](../maintenance/indexer-configuration.md)

@@ -15,7 +15,7 @@ Adobe Commerce third-party extensions (modules) have the potential to cause vari
 - If you cannot keep your third-party extensions updated, consider using different extensions.
 - When planning an upgrade to a new version of Adobe Commerce, verify that installed third-party extensions are compatible with the new version, and upgrade the extensions if required.
 
-> [!NOTE]
+>[!NOTE]
 >
 > All extensions available in the Adobe Commerce Marketplace are required to maintain compatibility with new Commerce releases. See [Release compatibility](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
 

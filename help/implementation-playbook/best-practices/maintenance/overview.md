@@ -42,7 +42,7 @@ The following sections include best practice information for the maintenance pha
 - [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
 - [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Configuration best practices for indexers​](indexer-configuration.md)
-- [Configuration best practices for order processing](configuration-for-order-processing.md)
+- [Configuration best practices for order processing](order-processing-configuration.md)
 – CTAG deck
 - Plan upsizing for planned traffic increases during promotions or holidays – CTAG deck content 
 

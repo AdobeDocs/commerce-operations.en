@@ -97,7 +97,7 @@ mini-toc-levels: 3
     - [Overview](best-practices/maintenance/overview.md)
     - [Frontend performance](best-practices/maintenance/frontend-performance.md)
     - [Indexer configuration](best-practices/maintenance/indexer-configuration.md)
-    - [Order processing](best-practices/maintenance/configuration-for-order-processing.md)
+    - [Order processing](best-practices/maintenance/order-processing-configuration.md)
     - [Scheduling Admin updates on production sites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
