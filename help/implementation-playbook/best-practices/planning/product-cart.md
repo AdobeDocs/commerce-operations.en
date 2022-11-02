@@ -45,4 +45,4 @@ Having more than the recommended maximum number of products in the cart can affe
 ## Additional information
 
 - [Configure Product Options](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-options.html)
-- [Manage a shopping cart](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage.html) in our user guide.
+- [Manage a shopping cart](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage.html)

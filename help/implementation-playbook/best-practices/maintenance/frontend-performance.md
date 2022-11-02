@@ -24,8 +24,8 @@ To check the frontend performance of your website store:
 
 1. Audit frontend performance using web performance tools such as:
 
-   - **[Google Lighthouse](https://web.dev/measure/)**—Lighthouse has audits for performance, accessibility, progressive web apps, SEO, and more. For details on different ways to run lighthouse, see the[Lighthouse overview](https://developer.chrome.com/docs/lighthouse/overview).) 
-   - **[Google PageSpeed Insights](https://pagespeed.web.dev/)**—Page speed Insights can quickly give you a detailed report of what is slowing a web page, complete with recommendations on how to fix it.
+   - **[Google Lighthouse](https://web.dev/measure/)**—Lighthouse has audits for performance, accessibility, progressive web apps, SEO, and more. For details on different ways to run lighthouse, see the [Lighthouse overview](https://developer.chrome.com/docs/lighthouse/overview).) 
+   - **[Google PageSpeed Insights](https://pagespeed.web.dev/)**—PageSpeed Insights quickly delivers a detailed report about the causes of slow web page performance along with recommendations on how to fix it.
 
 1. Review the audit reports and implement the recommendations provided to improve store performance.
 

@@ -7,13 +7,20 @@ feature-set: Commerce
 ---
 # Best practices for private content blocks
 
-When a private content block contains the `_isScopePrivate` variable, the block is not cacheable. As a result, each request to Adobe Commerce can trigger additional [AJAX requests](https://support.magento.com/hc/en-us/articles/360039286472-High-throughput-AJAX-requests-cause-poor-performance) for the non-cacheable blocks.
+When a private content block contains the `_isScopePrivate` variable, the block is not cacheable. Because the private block is not cached, Adobe Commerce must retrieve the same data for each customer request which increases server load.
 
 Instead of using the `_isScopePrivate` variable for private content, create a block and a template to display user-agnostic data. This data is replaced with user-specific data by the Adobe Commerce [UI component](https://glossary.magento.com/ui-component/), which handles pre-rendering data more efficiently. For instructions, see [Private Content](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in the _[!DNL Commerce PHP Extensions Guide]_.
 
+## Affected products and versions
+
+[All supported versions](../../../release/versions.md) of:
+
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises
+
 ## Potential performance impact
 
-Sites that have private content blocks containing the `_isScopePrivate` variables can trigger AJAX requests to retrieve the same data for each customer request. This increases response time and uses additional resources that could be used to handle more business-critical storefront operations such as customer registration, shopping cart updates, order submission, and payment transactions.
+Sites that have private content blocks containing the `_isScopePrivate` variables trigger AJAX requests to retrieve the same data for each customer request. This increases response time and uses additional resources that could be used to handle more business-critical storefront operations such as customer registration, shopping cart updates, order submission, and payment transactions.
 
 ## Additional information
 

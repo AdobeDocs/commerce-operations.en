@@ -20,21 +20,23 @@ As the order volume increases on your Commerce sites, you can optimize checkout 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
 
-### Enable asynchronous order processing
+## Enable asynchronous order processing
 
 The steps to enable asynchronous order processing depend on the deployment mode:
 
-- For Adobe Commerce on cloud infrastructure and on-premises sites in PRODUCTION mode, use the following Magento CLI command to enable asynchronous indexing: `php bin/magento config:set dev/grid/async_indexing 1`
+- For Adobe Commerce on cloud infrastructure and on-premises sites in Production mode, use the following Magento CLI command to enable asynchronous indexing:
+  
+  ```php bin/magento config:set dev/grid/async_indexing 1
+  ```
 
-- For Adobe Commerce on-premises sites in DEFAULT or DEVELOPER mode, enable asynchronous indexing by updating the Grid Settings configuration in the Admin. See [Enable scheduled grid updates and reindexing](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html#enable-scheduled-grid-updates-and-reindexing)
+- For Adobe Commerce on-premises sites in [!UICONTROL Default] or [!UICONTTROL Production] mode, enable asynchronous indexing by updating the [!UICONTROL Grid Settings] configuration in the Admin. See [Enable scheduled grid updates and reindexing](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html#enable-scheduled-grid-updates-and-reindexing)
 
->[!WARNING]
->
->Always test configuration changes in the Staging environment before updating the Production environment.
+  >[!WARNING]
+  >
+  >Always test configuration changes in the Staging environment before updating the Production environment.
 
 ## Additional information
 
 - [Configuration best practices](../../../performance/configuration.md)
 - [General and advanced configuration paths reference](../../../configuration/reference/config-reference-general.md)
 - [High-throughput order processing](../../../performance/high-throughput-order-processing.md)
-

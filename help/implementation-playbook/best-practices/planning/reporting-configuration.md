@@ -17,7 +17,7 @@ If your business does not require reporting or dynamic customer segments functio
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
 
-### Disable reporting
+## Disable reporting
 
 If you do not use the Reports or dynamic customer segments, disable the Reports functionality.
 

@@ -39,4 +39,4 @@ Exceeding the recommended number of product variations can affect site performan
 - [Create configurable products](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
 - [Create a product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 
-- [Training: Manage Catalogs and Products using Adobe Commerce](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)
+- Training—[Manage Catalogs and Products using Adobe Commerce](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)

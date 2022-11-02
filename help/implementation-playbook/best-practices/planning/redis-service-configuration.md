@@ -48,7 +48,7 @@ For details, see [Deploy variables > `REDIS_BACKEND`](https://devdocs.magento.co
 
 ### Configuration for on-premises deployments
 
-For Adobe Commerce on-premises deployments, configure the new Redis cache implementation using the Magento command line interface `bin/magento:setup` commands. For instructions, see [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
+For Adobe Commerce on-premises deployments, configure the new Redis cache implementation using the `bin/magento:setup` commands. For instructions, see [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
 
 ## Additional information
 

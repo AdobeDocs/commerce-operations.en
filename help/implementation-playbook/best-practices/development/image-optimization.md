@@ -10,6 +10,14 @@ feature-set: Commerce
 
 For Adobe Commerce on cloud infrastructure deployments, improve site response time by optimizing images before uploading them. Then, use Fastly image optimization to speed up image delivery and simplify maintenance of image source sets.
 
+## Affected products and versions
+
+[All supported versions](../../../release/versions.md) of:
+
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises
+- Magento Open Source
+
 ## Optimize and compress images
 
 Before uploading images to your Commerce sites, optimize and compress them to balance performance with viewing quality. This helps increase space and reduce page load times.

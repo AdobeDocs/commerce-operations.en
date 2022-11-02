@@ -14,7 +14,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 * eCommerce Manager
 * Solution Partner / Consultant
 
->![NOTE]
+>[!NOTE]
 >
 >For a detailed description of the technical steps to upgrade successfully, refer to [Complete upgrade prerequisites](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/prerequisites.html) in our user documentation.
 

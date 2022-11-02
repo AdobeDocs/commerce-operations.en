@@ -8,7 +8,7 @@ feature-set: Commerce
 
 # Best practices for product attribute configuration
 
-- For best performance, do not configure more than the maximum recommended number of product attributes or product attribute options:
+- For best performance, do not configure more than the maximum recommended number of product attributes or product attribute options.
 
 - **Product attributes**—
   - For Adobe Commerce version 2.3.x and 2.4.0 to 2.4.1-p1, configure no more than 500 attributes
@@ -27,17 +27,17 @@ _
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
 
-## Reduce the number of product attributes
+## Reduce number of product attributes
 
 For best performance when managing products from the Admin and retrieving product data in the storefront:
 
-- Using different Product templates (attribute sets) for different products
-- Leveraging custom options and complex products for variations management
-- Minimizing the number of searchable attributes
-- Removing product properties that are not used
-- Storing and managing non-commerce related attributes in external product management systems (PMS)
+- Use different Product templates (attribute sets) for different products.
+- Leverage custom options and complex products for variations management
+- Minimize the number of searchable attributes.
+- Remove product properties that are not used.
+- Store and manage non-commerce related attributes in external product management systems (PMS).
 
-### Reduce the number of product attribute options
+## Reduce number product attribute options
 
 For best performance when managing products from the Admin and retrieving product data in the storefront:
 

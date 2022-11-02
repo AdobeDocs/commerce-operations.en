@@ -26,11 +26,11 @@ Use the following strategies to reduce the number of categories:
 
 - Manage unique product features through attributes and custom options
 - Remove inactive categories
-- Optimizing catalog depth
+- Optimize catalog depth in the navigation
 
 ## Potential performance impacts
 
-If a site has more than the recommended maximum number of categories, can affect site performance in the following ways: 
+Having more than the recommended maximum number of categories can affect site performance in the following ways: 
 
 - Tangible increase in response time for non-cached catalog pages
 - Long execution and timeouts while managing categories from the Admin
@@ -41,5 +41,6 @@ If a site has more than the recommended maximum number of categories, can affect
 ## Additional information
 
 - [Categories overview](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html)
+- [Navigation overview](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html)
 - [Product assignments](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
-- [Adobe Commerce on cloud infrastructure: Best Practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html) in our developer documentation
+- [Adobe Commerce on cloud infrastructure: Best Practices for store configuration](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

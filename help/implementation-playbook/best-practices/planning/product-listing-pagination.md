@@ -19,7 +19,7 @@ You can configure Adobe Commerce to allow shoppers to view all category products
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
 
-## Update product listing configuration
+## Update the product listing configuration
 
 If you have more than 48 products in any category, update the storefront catalog configuration to disable the option to **Allow All Products per page**.
 
