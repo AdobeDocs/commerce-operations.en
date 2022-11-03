@@ -10,9 +10,9 @@ feature-set: Commerce
 
 Use this checklist during your annual and quarterly conversations with your eCommerce team. Many companies work from annual budgets and roadmaps. It is imperative, during these annual discussions, that you talk about your platform's health, direction, and upgrade strategy for the year, along with how it fits into the overall goals and KPIs of the business. During quarterly conversations, make sure the annual plan you created is still aligned with your current situation or pivot if not. The goal of this Upgrade Plan Checklist is to help you plan and schedule Adobe Commerce upgrades to ensure a successful upgrade process during the year. This checklist is meant to be used by the following audiences for annual planning and quarterly review:
 
-* Director / Manager IT
-* eCommerce Manager
-* Solution Partner / Consultant
+- Director / Manager IT
+- eCommerce Manager
+- Solution Partner / Consultant
 
 >[!NOTE]
 >
@@ -22,8 +22,8 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 [All supported versions](../../../release/versions.md) of:
 
-* Adobe Commerce on cloud infrastructure
-* Adobe Commerce on-premises 
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises 
 
 ## Goals
 
