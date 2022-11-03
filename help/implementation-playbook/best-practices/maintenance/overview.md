@@ -70,3 +70,4 @@ The following sections include best practice information for the maintenance pha
 
 - [Update services and components to latest version​](update-services.md)
 - [Upgrade checklist for Adobe Commerce​](upgrade-checklist.md)
+
