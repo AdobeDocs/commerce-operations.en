@@ -37,7 +37,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ## Team
 
-▢ Ensure you have the right team in place with the proper Adobe Commerce certifications and skillset.
+▢ Ensure you have the right team in place with the proper Adobe Commerce certifications and skill sets.
 
 ## Budget & Timing
 
@@ -60,7 +60,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ▢ Agree on budget, timeline, scope.
 
-▢ Run the [Upgrade Compatibility Tool](../../../upgrade/upgrade-compatibility-tool/overview.md) to identify potential issues before upgrading.
+▢ Run the [Upgrade Compatibility Tool](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
 ▢ Consider using the upgrade to address issues identified by the [Site Wide Analysis Tool](../../../tools/site-wide-analysis-tool/intro.md).
 

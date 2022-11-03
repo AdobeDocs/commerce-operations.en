@@ -22,14 +22,14 @@ The following sections include best practice information for the development pha
 ### Code review, merge, and test
 
 - Guidelines and standards
-  - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
-
 <!--Assets not yet integrated
+  - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
+-->
   - [Optimize CSS and JS files](optimize-css-js-files.md)
   - [Best practices for private content blocks](private-content-block-configuration.md)
--->
+
 - Add custom code
   - [Best practices for extension developers](https://developer.adobe.com/commerce/php/best-practices/)
   
@@ -58,7 +58,7 @@ The following sections include best practice information for the development pha
 
 ## Code, merge, test
 
-- [Best practices for builds and deployment](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) – CTAG Deck
+- [Best practices for builds and deployment](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices)
 - [Static content deployment - Cloud](static-content-deployment.md)
 - [Optimize CSS and JS files](optimize-css-js-files.md)
 - [Optimize images for a more responsive site](image-optimization.md)
