@@ -20,7 +20,7 @@ The following sections include best practice information for the maintenance pha
 
 ## Site Monitoring
 
-- [Use web performance tools to audit Adobe Commerce frontend operations](frontend-performance.md)
+- [Audit frontend performance](frontend-performance.md)
 - [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Use SWAT tool to ensure security and operability of Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) – CTAG deck
 - New Relic

@@ -95,7 +95,7 @@ mini-toc-levels: 3
     - [Configure the robots.txt file](best-practices/launch/robots-txt.md)
   - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)
-    - [Frontend performance](best-practices/maintenance/frontend-performance.md)
+    - [Audit frontend performance](best-practices/maintenance/frontend-performance.md)
     - [Indexer configuration](best-practices/maintenance/indexer-configuration.md)
     - [Order processing](best-practices/maintenance/order-processing-configuration.md)
     - [Scheduling Admin updates on production sites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
