@@ -16,7 +16,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 >[!NOTE]
 >
->For a detailed description of the technical steps to upgrade successfully, refer to [Complete upgrade prerequisites](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/prerequisites.html) in our user documentation.
+>For a detailed description of the technical steps to upgrade successfully, refer to [Complete upgrade prerequisites](../../../upgrade/prepare/upgrade/prepare.md) in our user documentation.
 
 ## Affected products and versions
 
@@ -53,10 +53,10 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ## Scope & Deployment Planning
 
-▢ Early access activities:
+▢ Early access activities
 
-* Partner participates in [Beta](../../../release/beta-program.md)  
-* Review Beta release notes
+  - Partner participates in [Beta](../../../release/beta-program.md)
+  - Beta release note review. 
 
 ▢ Agree on budget, timeline, scope.
 
@@ -72,7 +72,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ▢ Plan maintenance window if downtime is anticipated.
 
-▢ Review and approve the testing strategy; consider using the Adobe Commerce [test framework](ç) or a third-party automation suite.
+▢ Review and approve the testing strategy; consider using the Adobe Commerce [test framework](https://developer.adobe.com/commerce/testing/) or a third-party automation suite.
 
 ▢ Confirm that all extensions and customizations are compatible.
 
