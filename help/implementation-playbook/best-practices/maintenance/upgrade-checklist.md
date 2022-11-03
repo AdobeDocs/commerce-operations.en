@@ -60,7 +60,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ▢ Agree on budget, timeline, scope.
 
-▢ Run the [Upgrade Compatibility Tool](../../../upgrade/upgrade-compatibility-tool/overview.html) to identify potential issues before upgrading.
+▢ Run the [Upgrade Compatibility Tool](../../../upgrade/upgrade-compatibility-tool/overview.md) to identify potential issues before upgrading.
 
 ▢ Consider using the upgrade to address issues identified by the [Site Wide Analysis Tool](../../../tools/site-wide-analysis-tool/intro.md).
 

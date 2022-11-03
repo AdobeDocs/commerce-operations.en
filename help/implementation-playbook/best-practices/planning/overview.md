@@ -40,7 +40,10 @@ The following sections include best practice information for the planning phase.
 
 ## **Architectural design**
 
+<!--Asset not yet integrated
 - [GRA Architecture examples](https://wiki.corp.adobe.com/x/kD4ykw)
+-->
+- [Understanding Global Reference Architecture](../../../implementation-playbook/architecture/global-reference.md)
 
 ## **Catalog design**
 
