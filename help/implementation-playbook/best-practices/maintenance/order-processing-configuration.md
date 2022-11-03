@@ -28,7 +28,6 @@ The steps to enable asynchronous order processing depend on the deployment mode:
   
   ```php
   php bin/magento config:set dev/grid/async_indexing 1
-
   ```
 
 - For Adobe Commerce on-premises sites in Default or Production mode, enable asynchronous indexing by updating the Grid Settings configuration in the Admin.

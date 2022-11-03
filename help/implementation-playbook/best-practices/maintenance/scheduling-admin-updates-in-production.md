@@ -1,6 +1,6 @@
 ---
 title: Scheduling Admin updates on production sites
-description: Maintain and optimize site performance by following best practices for configure indexers
+description: Maintain and optimize site performance by following best practices for configuring indexers
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce

@@ -56,7 +56,7 @@ Remove unused product attribute sets using MySQL.
 
 1. Find the number of attribute sets using MySQL
 
-   ```
+   ```sql
    SELECT COUNT(*) AS 'attribute_set' FROM *${TABLE_PREFIX}*eav_attribute_set;
    ```
 

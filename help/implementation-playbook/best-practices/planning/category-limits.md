@@ -1,6 +1,6 @@
 ---
 title: Category configuration best practices
-description: Learn best practices to maximize site performance by limiting the number of  categories in the catalog.
+description: Learn best practices to maximize site performance by limiting the number of categories in the catalog.
 role: Admin
 feature: Best Practices
 feature-set: Commerce
