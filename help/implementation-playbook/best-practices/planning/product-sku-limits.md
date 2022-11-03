@@ -32,7 +32,7 @@ Use the following strategies to reduce the number of products (SKUs):
   - Reduce the number of products assigned to categories.
   - Decrease the number of SKUs by decreasing the number of stores, websites, customer groups, or number of products.
 - Provide more product variations by using custom options instead of creating separate products.
-- Deactivate or remove unused system components like modules. (See  [Uninstall modules](../../../installation-guide/tutorials/uninstall-modules.md).)
+- Deactivate or remove unused system components like modules. (See  [Uninstall modules](../../../installation/tutorials/uninstall-modules.md).)
 - Manage products in an external Platform Management System (PMS).
 
 ## Additional information
