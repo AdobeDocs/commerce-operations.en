@@ -14,9 +14,8 @@ For Adobe Commerce on cloud infrastructure deployments, improve site response ti
 
 [All supported versions](../../../release/versions.md) of:
 
-- Adobe Commerce on cloud infrastructure
-- Adobe Commerce on-premises
-- Magento Open Source
+Adobe Commerce on cloud infrastructure
+
 
 ## Optimize and compress images
 
