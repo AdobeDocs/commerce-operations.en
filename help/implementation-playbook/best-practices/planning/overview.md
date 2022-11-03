@@ -1,6 +1,9 @@
 ---
 title: Implementation planning phase
 description: Learn about implementation best practices for the planning phase of Adobe Commerce projects.
+role: Developer, Admin, User
+feature: Best Practices
+feature-set: Commerce
 ---
 
 # Planning phase

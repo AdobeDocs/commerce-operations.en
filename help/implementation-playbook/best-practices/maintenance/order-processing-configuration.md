@@ -1,6 +1,6 @@
 ---
 title: Configuration best practices for order processing
-description: Learn configuration best practices to improve checkout and order processing performance
+description: Learn configuration best practices to improve checkout and order processing performance.
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce

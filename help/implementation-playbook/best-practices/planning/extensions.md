@@ -1,6 +1,6 @@
 ---
 title: Extensions best practices
-description: Learn how to avoid performance issues caused by thrid-party Adobe Commerce extensions. 
+description: Learn how to avoid performance issues caused by third-party Adobe Commerce extensions. 
 role: Admin
 feature: Best Practices
 feature-set: Commerce

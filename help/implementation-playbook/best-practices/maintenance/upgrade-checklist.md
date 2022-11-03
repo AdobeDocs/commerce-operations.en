@@ -1,6 +1,6 @@
 ---
 title: Upgrade checklist best practices
-description: Learn how to ...
+description: Learn how to create and use an upgrade checklist to plan your Adobe Commerce and Magento Open Source upgrade strategy.
 role: Leader
 feature: Best Practices
 feature-set: Commerce

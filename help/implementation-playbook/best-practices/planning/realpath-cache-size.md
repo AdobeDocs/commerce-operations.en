@@ -1,6 +1,6 @@
 ---
 title: Realpath cache size
-description: Learn how to properly set realpath cache size for Adobe Commerce. 
+description: Learn how to optimize Adobe Commerce performance by updating the PHP readlpath cache configuration to use recommended settings.
 role: Developer
 feature: Best Practices
 feature-set: Commerce

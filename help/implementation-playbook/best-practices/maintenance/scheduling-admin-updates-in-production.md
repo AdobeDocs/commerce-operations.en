@@ -1,6 +1,6 @@
 ---
 title: Scheduling Admin updates on production sites
-description: Maintain and optimize site performance by following best practices for configuring indexers
+description: Learn best practices for scheduling critical updates to Adobe Commerce to prevent slow performance and outages.
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce

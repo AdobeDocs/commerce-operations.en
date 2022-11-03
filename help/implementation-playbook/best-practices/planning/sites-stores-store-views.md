@@ -1,6 +1,6 @@
 ---
 title: Best practices for configuring sites, stores, and store views
-description: Learn best practices for configuring sites, stores, and store view to maximize site performance
+description: Learn best practices for configuring sites, stores, and store view to maximize site performance.
 role: Admin
 feature: Best Practices
 feature-set: Commerce

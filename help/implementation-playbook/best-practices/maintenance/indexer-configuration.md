@@ -1,6 +1,6 @@
 ---
 title: Configuration best practices for indexers
-description: Maintain and optimize site performance by following best practices for indexer configuration
+description: Maintain and optimize site performance by following best practices for indexer configuration.
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce

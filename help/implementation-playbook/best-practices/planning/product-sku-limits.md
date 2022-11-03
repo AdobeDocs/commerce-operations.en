@@ -1,6 +1,6 @@
 ---
 title: Product limits best practices
-description: Learn best practices for configuring product Stock Keeping Units (SKUs) to maximize site performance
+description: Learn best practices for configuring product Stock Keeping Units (SKUs) to maximize site performance.
 role: Admin
 feature: Best Practices
 feature-set: Commerce
