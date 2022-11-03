@@ -1,0 +1,19 @@
+---
+##### Aggregate Commerce PRs into one Project #####
+
+name: Add pull requests
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add to Commerce project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v0.3.0
+        with:
+          project-url: https://github.com/orgs/AdobeDocs/projects/5 # The organizational project for pull requests
+          github-token: ${{ secrets.GITHUB_TOKEN }}
