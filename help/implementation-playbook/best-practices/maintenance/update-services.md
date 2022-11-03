@@ -8,11 +8,11 @@ feature-set: Commerce
 
 # Update services best practices
 
-This article provides recommendations to keep your Adobe Commerce on cloud infrastructure technology stack updated and links to helpful resources. 
+This article provides recommendations to keep your Adobe Commerce on cloud infrastructure technology stack updated and provides links to helpful resources. 
 
 ## Affected products and versions
 
-Adobe Commerce on cloud infrastructure 2.4.
+Adobe Commerce on cloud infrastructure 2.4.x and later
 
 ## Update services
 
@@ -20,7 +20,7 @@ Upgrade the services and components used by Adobe Commerce before they reach or 
 
 Customers on Starter plans can self-serve on services upgrades. Refer to [Change service version](https://devdocs.magento.com/cloud/project/services.html#change-service-version) for details on how to do this.  
 
-Customers on Pro plans can only self-serve on services upgrades in their [Integration environment](https://support.magento.com/hc/en-us/articles/360043032152-Integration-Environment-enhancement-request-Pro-and-Starter). For services upgrades on Production, you must [submit a support ticket](https://support.magento.com/hc/en-us/articles/360000913794-Magento-Help-Center-User-Guide#submit-ticket) requesting the upgrade.
+Customers on Pro plans can only self-serve on services upgrades in their [Integration environment](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md). For services upgrades on Production, you must [submit a support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the upgrade.
 
 >[!WARNING]
 >

@@ -37,7 +37,7 @@ To prevent performance issues when using triggers, follow these guidelines:
 
 - If you have custom triggers that write some data when the trigger is executed, move this logic to write directly to the audit tables instead. For example, by adding an additional query in the application code, after the query you aimed to create the trigger for.
 - Review existing custom triggers and consider removing them and writing directly to the tables from the application side. Check for existing triggers in your database by using the [`SHOW TRIGGERS` SQL Statement](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- For additional assistance, questions, or concerns, [submit an Adobe Commerce Support ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+- For additional assistance, questions, or concerns, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
 
 ## Additional information
 

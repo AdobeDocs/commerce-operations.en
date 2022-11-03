@@ -1,28 +1,32 @@
 ---
-title: Optimize CSS and JS files
-description: Learn how to merge and minify CSS and JS files for Adobe Commerce projects using the Admin or command line.
+title: Optimize CSS and JS resource files
+description: Learn how to merge and minify CSS and JavaScript (JS) files for Adobe Commerce projects from the Admin or from the command line.
 role: Developer
 feature: Best Practices
 feature-set: Commerce
 ---
+# Optimize resource files
 
-# Optimize CSS and JS files
+For a more responsive Commerce site, optimize CSS and JavaScript (JS) resource files and eliminate render-blocking resources.
 
-This article provides best practices for CSS and Javascript (JS) file optimization in Adobe Commerce.
+- **Optimize CSS and JS files**—Reduce the time required to load CSS and JavaScript (JS) files by configuring Adobe Commerce to merge, minify, and bundle separate files into a single file.
+- **Eliminate render-blocking resources**—Consider delivering critical JS and CSS features inline and deferring all non-critical JS/CSS styles. For guidance, see [Eliminate render-blocking resources](https://web.dev/render-blocking-resources/).
 
 ## Affected products and versions
 
-The time it takes to load CSS and Javascript (JS) files can be reduced by merging, minifying, and bundling separate files into a single file:
+[All supported versions, 2.3 and later](../../../release/versions.md) of:
 
-* JS merging is available for all versions of Adobe Commerce on-premises and Adobe Commerce on cloud infrastructure, including the currently supported version 2.3 (as of July 2020).
-* JS bundling is available for all versions of Adobe Commerce on-premises and Adobe Commerce on cloud infrastructure, including the currently supported version 2.3 (as of July 2020).
-* CSS merging and minification are available for all versions of Adobe Commerce on-premises and Adobe Commerce on cloud infrastructure, including the currently supported version 2.3 (as of July 2020).
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises
+- Magento Open Source
 
 ## Merge or minify CSS files
 
+The time it takes to load CSS and JavaScript (JS) files can be reduced by merging, minifying, and bundling separate files into a single file.
+
 >[!IMPORTANT] 
 >
->Adobe Commerce on cloud infrastructure always runs on Production mode and it is not possible to set it otherwise, therefore you must use the command line method to enable merging, minifying, and bundling.
+>Adobe Commerce on cloud infrastructure always runs on Production mode and it is not possible to set it otherwise, therefore you must use the command-line method to enable merging, minifying, and bundling.
 
 ### Using Admin
 
@@ -70,8 +74,9 @@ To enable JS minification in Adobe Commerce on cloud infrastructure:
 
 ## Merge and bundle JS files
 
-* You can turn on merging or bundling in the Commerce Admin (merging and bundling cannot be enabled at the same time): [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
-* You can also enable Adobe Commerce built-in bundling (basic bundling) from the command line:
+You can turn on merging or bundling in the Commerce Admin (merging and bundling cannot be enabled at the same time): [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
+
+You can also enable Adobe Commerce built-in bundling (basic bundling) from the command line:
 
    ```bash
    php -f bin/magento config:set dev/js/enable_js_bundling 1
@@ -79,5 +84,6 @@ To enable JS minification in Adobe Commerce on cloud infrastructure:
 
 ## Additional information
 
-* To learn more about optimizing resource files, refer to [Optimizing Resource Files](https://docs.magento.com/user-guide/system/file-optimization.html) in our user guide.
-* To learn to enable CSS file optimization, refer to [Frontend Developer Guide > Cascading style sheets (CSS) > CSS merging](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/css-topics/css-overview.html#css-merging-minification-and-performance), minification and performance in our developer documentation.
+- [Client-side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
+- [User Guide: Optimizing resource files](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [Frontend Developer Guide: CSS merging, minification, and site performance](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)

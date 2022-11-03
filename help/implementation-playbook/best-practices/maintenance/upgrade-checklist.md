@@ -1,6 +1,6 @@
 ---
 title: Upgrade checklist best practices
-description: Learn how to ...
+description: Learn how to create and use an upgrade checklist to plan your Adobe Commerce and Magento Open Source upgrade strategy.
 role: Leader
 feature: Best Practices
 feature-set: Commerce
@@ -10,20 +10,20 @@ feature-set: Commerce
 
 Use this checklist during your annual and quarterly conversations with your eCommerce team. Many companies work from annual budgets and roadmaps. It is imperative, during these annual discussions, that you talk about your platform's health, direction, and upgrade strategy for the year, along with how it fits into the overall goals and KPIs of the business. During quarterly conversations, make sure the annual plan you created is still aligned with your current situation or pivot if not. The goal of this Upgrade Plan Checklist is to help you plan and schedule Adobe Commerce upgrades to ensure a successful upgrade process during the year. This checklist is meant to be used by the following audiences for annual planning and quarterly review:
 
-* Director / Manager IT
-* eCommerce Manager
-* Solution Partner / Consultant
+- Director / Manager IT
+- eCommerce Manager
+- Solution Partner / Consultant
 
->![NOTE]
+>[!NOTE]
 >
->For a detailed description of the technical steps to upgrade successfully, refer to [Complete upgrade prerequisites](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/prerequisites.html) in our user documentation.
+>For a detailed description of the technical steps to upgrade successfully, refer to [Complete upgrade prerequisites](../../../upgrade/prepare/prerequisites.md) in our user documentation.
 
 ## Affected products and versions
 
 [All supported versions](../../../release/versions.md) of:
 
-* Adobe Commerce on cloud infrastructure
-* Adobe Commerce on-premises 
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises 
 
 ## Goals
 
@@ -37,7 +37,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ## Team
 
-▢ Ensure you have the right team in place with the proper Adobe Commerce certifications and skillset.
+▢ Ensure you have the right team in place with the proper Adobe Commerce certifications and skill sets.
 
 ## Budget & Timing
 
@@ -53,16 +53,16 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ## Scope & Deployment Planning
 
-▢ Early access activities:
+▢ Early access activities
 
-* Partner participates in [Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program)  
-* Review Beta release notes
+- Partner participates in [Beta](../../../release/beta-program.md)
+- Beta release note review. 
 
 ▢ Agree on budget, timeline, scope.
 
-▢ Run the [Upgrade Compatibility Tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) to identify potential issues before upgrading.
+▢ Run the [Upgrade Compatibility Tool](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ Consider using the upgrade to address issues identified by the [Site Wide Analysis Tool](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html).
+▢ Consider using the upgrade to address issues identified by the [Site Wide Analysis Tool](../../../tools/site-wide-analysis-tool/intro.md).
 
 ▢ Document dependencies and any technical stack changes required, such as PHP or Elastic Search versions.
 
@@ -72,7 +72,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ▢ Plan maintenance window if downtime is anticipated.
 
-▢ Review and approve the testing strategy; consider using the Adobe Commerce [test framework](https://devdocs.magento.com/mftf/v2/docs/introduction.html) or a third-party automation suite.
+▢ Review and approve the testing strategy; consider using the Adobe Commerce [test framework](https://developer.adobe.com/commerce/testing/) or a third-party automation suite.
 
 ▢ Confirm that all extensions and customizations are compatible.
 

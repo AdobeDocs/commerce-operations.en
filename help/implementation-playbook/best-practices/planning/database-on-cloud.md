@@ -89,7 +89,7 @@ If you need to run a DDL statement, put the website in maintenance mode and disa
 
 Enable order archiving from the Admin to reduce the space required for Sales tables as your order data grows. Archiving saves MySQL disk space and improves checkout performance.
 
-See [Enable archiving](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving) in the Adobe Commerce Merchant documentation.
+See [Enable archiving](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) in the Adobe Commerce Merchant documentation.
 
 ## Additional information
 

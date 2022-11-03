@@ -26,4 +26,4 @@ The following sections include best practice information for the launch phase.
 ## Performance Monitoring
 
 - New Relic
-- [Use SWAT tool to ensure security and operability of Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) – CTAG deck
+- [Use SWAT tool to ensure security and operability of Adobe Commerce](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)

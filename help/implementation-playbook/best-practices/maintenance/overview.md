@@ -16,11 +16,11 @@ The maintenance phase includes the following activities:
 - Managed services
 - Upgrades
 
-
 The following sections include best practice information for the maintenance phase.
 
 ## Site Monitoring
 
+- [Audit frontend performance](frontend-performance.md)
 - [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Use SWAT tool to ensure security and operability of Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) – CTAG deck
 - New Relic
@@ -34,19 +34,25 @@ The following sections include best practice information for the maintenance pha
 
 ## Catalog management
 
+<!-- Asset not yet integrated
 - [Catalog Image Resizing](https://wiki.corp.adobe.com/x/oj4ykw) (wiki)
+-->
 - [Product Catalog Management](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
 
 ## Indexing
 
+<!-- Asset not yet integrated
 - [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
+-->
 - [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
-- [Indexers "Update On Schedule" optimizes Adobe Commerce performance​](https://support.magento.com/hc/en-us/articles/360040227191%E2%80%8B)
-- [Adobe Commerce best practice: enable asynchronous orders processing​](https://support.magento.com/hc/en-us/articles/360048545492%E2%80%8B)
-- [Archive orders on a regular basis](https://docs.magento.com/user-guide/sales/order-archive.html) – CTAG deck
+- [Configuration best practices for indexers​](indexer-configuration.md)
+- [Configuration best practices for order processing](order-processing-configuration.md)
+– CTAG deck
 - Plan upsizing for planned traffic increases during promotions or holidays – CTAG deck content 
 
 ## Configuration
+
+- [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md)
 
 - Planning for peak season and promotional periods (upsizing) – CTAG deck content 
 

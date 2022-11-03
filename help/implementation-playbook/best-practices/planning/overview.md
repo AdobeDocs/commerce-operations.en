@@ -1,6 +1,9 @@
 ---
 title: Implementation planning phase
 description: Learn about implementation best practices for the planning phase of Adobe Commerce projects.
+role: Developer, Admin, User
+feature: Best Practices
+feature-set: Commerce
 ---
 
 # Planning phase
@@ -19,41 +22,52 @@ The following sections include best practice information for the planning phase.
 
 ## Requirements gathering
 
-- Application configuration
+- **Application configuration**
+  - [Best practices for configuring sites, stores, and store views (cloud infrastructure)](sites-stores-store-views.md)
   - [How to prevent—and fix—the five most common configuration issues for Adobe Commerce sites](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
   - [Best practices for Caching](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
   - [Full page caching](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
-  - [Optimize CSS and JS](https://support.magento.com/hc/en-us/articles/360044482152%E2%80%8B)
   - [OPcache memory size](opcache-memory-size.md)
-  - [robots.txt](https://support.magento.com/hc/en-us/articles/360048754931%E2%80%8B)
+  - [Reporting configuration](reporting-configuration.md)
 
-- Database configuration
+- **Database configuration**
   - [Database configuration best practices for cloud deployments​](database-on-cloud.md)
   - [MySQL slave connection configuration​](configure-mysql-slave-connection-on-cloud.md)
   - [MySQL triggers usage](mysql-triggers-usage.md)
 
-- Services configuration
-  - Enable CDN, WAF, and Image Optimization: [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- **Services configuration**
+  - [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
   - [New Relic - Configure notification channels](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
   - [Best practices for Redis service configuration​](redis-service-configuration.md)
-  - [Best practice for OPcache memory size in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360044740812​)
   - [Realpath cache size best practice](realpath-cache-size.md)
 
-## Architectural design
+## **Architectural design**
 
+<!--Asset not yet integrated
 - [GRA Architecture examples](https://wiki.corp.adobe.com/x/kD4ykw)
+-->
+- [Understanding Global Reference Architecture](../../../implementation-playbook/architecture/global-reference.md)
 
-## Catalog design
+## **Catalog design**
 
-- [Product limits best practice​](https://support.magento.com/hc/en-us/articles/360045066791%E2%80%8B)
-- [Best practices for Adobe Commerce product options​](product-options.md)
-- [Best practice for number of products in cart in Adobe Commerce​](https://support.magento.com/hc/en-us/articles/360048550332%E2%80%8B)
-- [Best practice Adobe Commerce product attributes​](https://support.magento.com/hc/en-us/articles/360048256612%E2%80%8B)
+The following topics describe performance optimization best practices for configuring your Adobe Commerce catalog including recommended maximums for the number of categories, product effective SKUs, product variations, product attributes and options, and more.
 
-## Project scoping
+- [Category configuration](category-limits.md)
+- [Product configuration​](product-sku-limits.md)
+- [Product variation configuration](product-variations.md)
+- [Product options configuration](product-options.md)
+- [Product attributes configuration​](product-attributes-and-options.md)
+- [Pagination configuration for product listings](product-listing-pagination.md)
+
+## **Sales and Marketing**
+
+- [Best practices for product cart limit​](product-cart.md)
+- [Best practices for configuring promotions](product-cart-promotions.md)
+
+## **Project scoping**
 
 - [Partner escalations](partner-escalation.md)
 
-## Purchase extensions
+## **Purchase extensions**
 
 - [Best Practices for using third-party extensions in Adobe Commerce​](extensions.md)

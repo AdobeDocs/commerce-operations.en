@@ -8,7 +8,7 @@ feature-set: Commerce
 
 # Partner escalation best practices
 
-Below are ideas to help you prepare for a Partner escalation with a CSM or to avoid the escalation entirely.
+Below are ideas to help you prepare for a Partner escalation with an Adobe Customer Success Manager (CSM) or to avoid the escalation entirely.
 
 ## Affected products and versions
 

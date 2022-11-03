@@ -37,7 +37,7 @@ To enable the MySQL slave connection:
 ## Additional information
 
 - [Environment variables](https://devdocs.magento.com/cloud/env/variables-intro.html)
-- [MySQL high-load bottleneck in Adobe Commerce on cloud infrastructure](https://support.magento.com/hc/en-us/articles/360037391972)
+- [MySQL high-load bottleneck in Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
 - [Database best practices for Adobe Commerce on cloud infrastructure](database-on-cloud.md)
 
 >![NOTE]
