@@ -65,4 +65,3 @@ The following topics describe performance optimization best practices for config
 ## **Purchase extensions**
 
 - [Best Practices for using third-party extensions in Adobe Commerce​](extensions.md)
-

@@ -21,20 +21,24 @@ The following sections include best practice information for the development pha
 
 ### Code review, merge, and test
 
-- Guidelines and standards (wiki content)
+- Guidelines and standards
   - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
+
+<!--Assets not yet integrated
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
   - [Optimize CSS and JS files](optimize-css-js-files.md)
   - [Best practices for private content blocks](private-content-block-configuration.md)
-
+-->
 - Add custom code
   - [Best practices for extension developers](https://developer.adobe.com/commerce/php/best-practices/)
+  
+<!--Assets not yet integrated
+
   - [Best practices for theme development](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=MAGPS&title=Best+Practices+for+Theme+Development)
   - [Module basis](https://wiki.corp.adobe.com/x/kz4ykw) (wiki) — Develop custom modules
   - [Exception Handling](https://wiki.corp.adobe.com/x/nz4ykw)
   - [Custom code copyrights](https://wiki.corp.adobe.com/x/lj4ykw)
-
 - Source control and package management - wiki articles
   - [Code management - Git vs. Composer](https://wiki.corp.adobe.com/x/pz4ykw)
   - [Git branching strategy](https://wiki.corp.adobe.com/display/MAGPS/Git+Branching+Strategy)
@@ -42,7 +46,7 @@ The following sections include best practice information for the development pha
   - [Composer patching](https://wiki.corp.adobe.com/x/mj4ykw)
   - [Composer project structure](https://wiki.corp.adobe.com/x/mT4ykw)
   - [Composer tips and tricks](https://wiki.corp.adobe.com/x/lz4ykw)
-
+-->
 
 ## Platform and services
 

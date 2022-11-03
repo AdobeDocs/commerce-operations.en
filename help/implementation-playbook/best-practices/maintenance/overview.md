@@ -34,12 +34,16 @@ The following sections include best practice information for the maintenance pha
 
 ## Catalog management
 
+<!-- Asset not yet integrated
 - [Catalog Image Resizing](https://wiki.corp.adobe.com/x/oj4ykw) (wiki)
+-->
 - [Product Catalog Management](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
 
 ## Indexing
 
+<!-- Asset not yet integrated
 - [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
+-->
 - [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Configuration best practices for indexers​](indexer-configuration.md)
 - [Configuration best practices for order processing](order-processing-configuration.md)

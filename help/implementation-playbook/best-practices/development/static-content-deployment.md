@@ -49,6 +49,3 @@ In our developer documentation:
 * [Zero downtime deployment](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
 * [Optimize cloud deployment](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)
 
-In our support knowledge base:
-
-* [Error running \`setup:static-content:deploy\` manually (deployed\_version.txt is not writable)](https://support.magento.com/hc/en-us/articles/360000338413)

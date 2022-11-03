@@ -55,14 +55,14 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ▢ Early access activities:
 
-* Partner participates in [Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program)  
+* Partner participates in [Beta](../../../release/beta-program.md)  
 * Review Beta release notes
 
 ▢ Agree on budget, timeline, scope.
 
-▢ Run the [Upgrade Compatibility Tool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) to identify potential issues before upgrading.
+▢ Run the [Upgrade Compatibility Tool](../../../upgrade/upgrade-compatibility-tool/overview.html) to identify potential issues before upgrading.
 
-▢ Consider using the upgrade to address issues identified by the [Site Wide Analysis Tool](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html).
+▢ Consider using the upgrade to address issues identified by the [Site Wide Analysis Tool](../../../tools/site-wide-analysis-tool/intro.md).
 
 ▢ Document dependencies and any technical stack changes required, such as PHP or Elastic Search versions.
 
@@ -72,7 +72,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ▢ Plan maintenance window if downtime is anticipated.
 
-▢ Review and approve the testing strategy; consider using the Adobe Commerce [test framework](https://devdocs.magento.com/mftf/v2/docs/introduction.html) or a third-party automation suite.
+▢ Review and approve the testing strategy; consider using the Adobe Commerce [test framework](ç) or a third-party automation suite.
 
 ▢ Confirm that all extensions and customizations are compatible.
 
