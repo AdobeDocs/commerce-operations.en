@@ -15,7 +15,7 @@ To improve Commerce performance, use the following recommended settings to confi
 - Set the cache size to 10 MB (`realpath cache_size=10M`)
 - Set time to live (ttl) to 7200 seconds (`realpath_cache_ttl=7200`) 
 
-For configuration instructions, see [How to set PHP options](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html#how-to-set-php-options).
+For configuration instructions, see [How to set PHP options](../../../installation/prerequisites/php-settings.html#how-to-set-php-options).
 
 ## Affected products and versions
 
