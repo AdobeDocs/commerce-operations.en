@@ -16,7 +16,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 >[!NOTE]
 >
->For a detailed description of the technical steps to upgrade successfully, refer to [Complete upgrade prerequisites](../../../upgrade/prepare/upgrade/prepare.md) in our user documentation.
+>For a detailed description of the technical steps to upgrade successfully, refer to [Complete upgrade prerequisites](../../../upgrade/prepare/prerequisites.md) in our user documentation.
 
 ## Affected products and versions
 
