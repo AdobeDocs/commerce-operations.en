@@ -14,6 +14,18 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where an admin with restricted access to a specific scope cannot delete product reviews.
+* **ACSD-47107** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.5) - Fixes the issue where the Catalog Price Rule discount is applied to custom product options.
+* **ACSD-47232** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where coupons with total weight conditions cannot be applied in the Admin.
+* **ACSD-46519** (for Adobe Commerce and Magento Open Source >=2.4.1 <2.4.6) - Fixes the issue where the GraphQL categoryList request returns an incorrect product_count for an anchor category.
+* **ACSD-47027** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes a slow updateCompanyRole GraphQL request.
+* **ACSD-47666** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the filter function does not work in the Admin > System > Permissions > User roles > a role > Role Users grid.
+* **ACSD-47497** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the Services tab is not visible in the Configuration under the Admin.
+* Updated patch: ACSD-47743.
+* Replaced patches: MDVA-42807.
+
 ## v1.1.22 {#v1-1-22}
 
 * **ACSD-47444** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.3) - Fixes the _Trying to access array offset on value of type bool_ error when accessing certain non-existing category paths for known products on PHP 7.4.
