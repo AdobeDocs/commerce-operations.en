@@ -1,6 +1,6 @@
 ---
-title: Best practices when deciding when its appropriate to modify a database table that is a commerce core table or a 3rd party module
-description: Providing reasoning behind leaving core and 3rd party database tables alone.  How to leverage some out of the box features and other methods when saving custom data is needed.
+title: Best practices on modifying database tables
+description: Learning to recognize when and how to modify database tables, especially those that are not your own.
 role: Developer, Architect
 feature: Best Practices
 feature-set: Commerce
@@ -19,11 +19,11 @@ TODO needs more
 
 
 
-If the final conclusion is to adjust a commerce core database or 3rd party module's table consider the following guidlines to ensure you have the least amount of impact
+If the final conclusion is to adjust a commerce core database or 3rd party module's table consider the following guidelines to ensure you have the least amount of impact
 
 * Only add a new column
 * never modify an existing column type to fit your needs
-* Be sure you are aware of the size of the table you are adjusting.  If the table is large, it will impact the deployment time and can cause minutes to hours of delay executing the changes
+* Be sure you are aware of the size of the table you are adjusting. If the table is large, it will impact the deployment which can cause minutes to hours of delay executing the changes.
 
 
 ## Why it is not recommended
@@ -35,8 +35,6 @@ If the final conclusion is to adjust a commerce core database or 3rd party modul
 ## Ways to avoid modifying core tables
 
 *   Use extension attributes
-Consider using native features like attributes
-
 *   There are core tables have a column "additional_data" that holds json encoded data so it's possible to use that.  This is very helpful to avoid a new table for small simple data elements that you do not need to search for, but just need available for future retrieval.  This is typically only available at the item level, not for the entire quote or order.
 Here are a few examples 
 
