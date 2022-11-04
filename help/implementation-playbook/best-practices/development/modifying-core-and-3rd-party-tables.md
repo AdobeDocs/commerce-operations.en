@@ -31,8 +31,8 @@ If your final conclusion is to adjust a core Adobe Commerce or third-party modul
 ## Why it is not recommended
 
 * Upgrades could be more complicated 
-* Will impact a deployment if the table being modified is large
-* Migrations to a new platform would be more complicated
+* Deployments are impacted if the table being modified is large
+* Migrations to a new platform could be more complicated
 
 ## Ways to avoid modifying core tables
 
