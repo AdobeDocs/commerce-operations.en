@@ -104,7 +104,7 @@ If the extension is not installed, use the following instructions to install it:
    bin/magento setup:upgrade
    ```
 
-1. [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-servicessaas.html) to connect the extension to your system.
+1. [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) to connect the extension to your system.
 
 ## Install the agent
 
