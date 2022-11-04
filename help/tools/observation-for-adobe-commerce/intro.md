@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Observation for Adobe Commerce]"
-description: Learn about [!DNL Observation for Adobe Commerce], its uses, when to use, and how to access it.
+description: Learn about [!DNL Observation for Adobe Commerce], its uses, when to use, and how to get access.
 ---
 # [!DNL Observation for Adobe Commerce]
 
