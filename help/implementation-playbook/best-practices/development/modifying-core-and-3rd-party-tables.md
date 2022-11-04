@@ -34,11 +34,12 @@ If the final conclusion is to adjust a commerce core database or 3rd party modul
 
 ## Ways to avoid modifying core tables
 
-* Use extension attributes
+*   Use extension attributes
 Consider using native features like attributes
 
-* There are core tables have a column "additional_data" that holds json encoded data so it's possible to use that.  This is very helpful to avoid a new table for small simple data elements that you do not need to search for, but just need available for future retrieval.  This is typically only available at the item level, not for the entire quote or order.
+*   There are core tables have a column "additional_data" that holds json encoded data so it's possible to use that.  This is very helpful to avoid a new table for small simple data elements that you do not need to search for, but just need available for future retrieval.  This is typically only available at the item level, not for the entire quote or order.
 Here are a few examples 
+
 ```mysql
 MariaDB [main]> DESCRIBE quote_item additional_data;
 +-----------------+------+------+-----+---------+-------+
