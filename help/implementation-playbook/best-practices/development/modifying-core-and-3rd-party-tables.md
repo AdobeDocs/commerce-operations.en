@@ -6,11 +6,13 @@ feature: Best Practices
 feature-set: Commerce
 last-substantial-update: 2022-11-04
 ---
-# Best practices for modifying database tables that are created by Adobe Commerce or 3rd party modules
+# Knowing when and how to modify existing database tables 
 
-When dealing with an migration from Magento 1, migrating from another e-commerce platform or working with modules from the marketplace there are often times when extra data needs to be added and saved.   Often the first thought to simply add a new column or adjust an existing column in a database table to facilitate this need.  However, modifying a core commerce table or other tables created by 3rd party vendors should be only done in limited situations.
+This tutorial will discuss best practices for modifying database tables that are created by Adobe Commerce or 3rd party modules.  Knowing when its appropriate and ensuring they are done in the most effective manner will ensure a long and stable commerce platform.
 
-First, question whether this data needs to be saved.  If you are moving data from a legacy system, anything that can be removed will save you time and effort during the migration.  There are ways to archive data if it needs to be accessed later however is outside the scope for this tutorial.  To remain a good steward of the application and performance, it is acceptable to challenge a request to save extra data.  The goal is to ensure this is a requirement to fulfil a business need that cannot be filled in another way.
+Migrating from Magento 1 and other e-commerce platforms or working with modules from the Adobe Commerce Marketplace often requires adding and saving extra data. Usually, your first thought might be to simply add a new column or adjust an existing column in a database table.  However, modifying a core Adobe Commerce table or other tables created by third-party vendors should only be done in limited situations..
+
+First, question whether you need to save this data.  If you are moving data from a legacy system, anything that you can remove is going to save you time and effort during the migration. There are ways to archive data if it needs to be accessed later, however it is outside the scope of this topic. To remain a good steward of the application and performance, it is acceptable to challenge a request to save extra data. The goal is to ensure this is a requirement to fulfill a business need that cannot be filled in another way.
 
 When your project has legacy data consider other alternative such as an external search of the old database.  If the business needs access to the data only for reference occasionally, keeping it out of the new commerce database will speed up the migration and allow the development team to focus on the new site rather than troubleshooting data migration issues.
 
@@ -19,10 +21,10 @@ TODO needs more
 
 
 
-If the final conclusion is to adjust a commerce core database or 3rd party module's table consider the following guidelines to ensure you have the least amount of impact
+If your final conclusion is to adjust a core Adobe Commerce or third-party module's database table, consider the following guidelines to ensure the least amount of impact.
 
-* Only add a new column
-* never modify an existing column type to fit your needs
+* Only add new columns
+* Never modify an existing column type to fit your needs
 * Be sure you are aware of the size of the table you are adjusting. If the table is large, it will impact the deployment which can cause minutes to hours of delay executing the changes.
 
 
@@ -39,21 +41,21 @@ If the final conclusion is to adjust a commerce core database or 3rd party modul
 Here are a few examples 
 
 ```mysql
-MariaDB [main]> DESCRIBE quote_item additional_data;
-+-----------------+------+------+-----+---------+-------+
-| Field           | Type | Null | Key | Default | Extra |
-+-----------------+------+------+-----+---------+-------+
-| additional_data | text | YES  |     | NULL    |       |
-+-----------------+------+------+-----+---------+-------+
-1 row in set (0.001 sec)
+    MariaDB [main]> DESCRIBE quote_item additional_data;
+    +-----------------+------+------+-----+---------+-------+
+    | Field           | Type | Null | Key | Default | Extra |
+    +-----------------+------+------+-----+---------+-------+
+    | additional_data | text | YES  |     | NULL    |       |
+    +-----------------+------+------+-----+---------+-------+
+    1 row in set (0.001 sec)
 
 
-MariaDB [main]> DESCRIBE sales_order_item additional_data;
-+-----------------+------+------+-----+---------+-------+
-| Field           | Type | Null | Key | Default | Extra |
-+-----------------+------+------+-----+---------+-------+
-| additional_data | text | YES  |     | NULL    |       |
-+-----------------+------+------+-----+---------+-------+
-1 row in set (0.001 sec)
+    MariaDB [main]> DESCRIBE sales_order_item additional_data;
+    +-----------------+------+------+-----+---------+-------+
+    | Field           | Type | Null | Key | Default | Extra |
+    +-----------------+------+------+-----+---------+-------+
+    | additional_data | text | YES  |     | NULL    |       |
+    +-----------------+------+------+-----+---------+-------+
+    1 row in set (0.001 sec)
  ```
 
