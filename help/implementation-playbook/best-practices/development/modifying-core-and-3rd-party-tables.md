@@ -14,7 +14,7 @@ Migrating from Magento 1 and other e-commerce platforms or working with modules 
 
 First, question whether you need to save this data.  If you are moving data from a legacy system, anything that you can remove is going to save you time and effort during the migration. There are ways to archive data if it needs to be accessed later, however it is outside the scope of this topic. To remain a good steward of the application and performance, it is acceptable to challenge a request to save extra data. The goal is to ensure this is a requirement to fulfill a business need that cannot be filled in another way.
 
-When your project has legacy data consider other alternative such as an external search of the old database.  If the business needs access to the data only for reference occasionally, keeping it out of the new commerce database will speed up the migration and allow the development team to focus on the new site rather than troubleshooting data migration issues.
+If your project contains legacy data, such as old orders, or customer records consider other alternative method of lookup.  Instead of just migrating the old data over, consider an external search of the old database hosted outside the commerce platform. If the business needs access to the data for occasional reference only, keeping it out of the new database will speed up the migration. This will allow the development team to focus on the new site rather than troubleshooting data migration issues.
 
 Should the data need to be migrated or new data need to be saved, the recommended choice is using Extension Attributes. 
 TODO needs more 
@@ -41,20 +41,20 @@ If your final conclusion is to adjust a core Adobe Commerce or third-party modul
 Here are a few examples 
 
 ```mysql
-    MariaDB [main]> DESCRIBE quote_item additional_data;
-    +-----------------+------+------+-----+---------+-------+
-    | Field           | Type | Null | Key | Default | Extra |
-    +-----------------+------+------+-----+---------+-------+
-    | additional_data | text | YES  |     | NULL    |       |
-    +-----------------+------+------+-----+---------+-------+
-    1 row in set (0.001 sec)
+MariaDB [main]> DESCRIBE quote_item additional_data;
++-----------------+------+------+-----+---------+-------+
+| Field           | Type | Null | Key | Default | Extra |
++-----------------+------+------+-----+---------+-------+
+| additional_data | text | YES  |     | NULL    |       |
++-----------------+------+------+-----+---------+-------+
+1 row in set (0.001 sec)
 
 
-    MariaDB [main]> DESCRIBE sales_order_item additional_data;
-    +-----------------+------+------+-----+---------+-------+
-    | Field           | Type | Null | Key | Default | Extra |
-    +-----------------+------+------+-----+---------+-------+
-    | additional_data | text | YES  |     | NULL    |       |
-    +-----------------+------+------+-----+---------+-------+
-    1 row in set (0.001 sec)
+MariaDB [main]> DESCRIBE sales_order_item additional_data;
++-----------------+------+------+-----+---------+-------+
+| Field           | Type | Null | Key | Default | Extra |
++-----------------+------+------+-----+---------+-------+
+| additional_data | text | YES  |     | NULL    |       |
++-----------------+------+------+-----+---------+-------+
+1 row in set (0.001 sec)
 ```
