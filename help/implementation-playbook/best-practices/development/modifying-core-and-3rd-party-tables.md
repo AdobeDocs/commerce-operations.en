@@ -37,7 +37,7 @@ If your final conclusion is to adjust a core Adobe Commerce or third-party modul
 ## Ways to avoid modifying core tables
 
 *   Use extension attributes
-*   There are core tables have a column "additional_data" that holds json encoded data so it's possible to use that.  This is very helpful to avoid a new table for small simple data elements that you do not need to search for, but just need available for future retrieval.  This is typically only available at the item level, not for the entire quote or order.
+*   Use JSON-encoded data. Some core tables have an `additional_data` column that holds JSON-encoded data, so it's possible to use that. This is very helpful to avoid a new table for small, simple data elements that you do not need to search the contents but need the information available for future retrieval.  This is typically only available at the item level, not for the entire quote or order.
 Here are a few examples 
 
 ```mysql
