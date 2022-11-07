@@ -3,9 +3,9 @@
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 1.38.1 <!-- app.version -->
+**Version**: 1.40.0 <!-- app.version -->
 
-This reference contains 127 commands available through the `magento-cloud` command-line tool.
+This reference contains 129 commands available through the `magento-cloud` command-line tool.
 The initial list is auto generated using the `magento-cloud list` command at the  edition.
 
 >[!NOTE]
@@ -965,7 +965,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Cancel an activity
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
  <!-- app.name --> <!-- command.usage -->
@@ -979,7 +979,15 @@ The activity ID. Defaults to the most recent cancellable activity.
 
 ### `--type`
 
-Filter by type (when selecting a default activity)
+Filter by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
+-  Requires a value
+
+
+### `--exclude-type`
+
+Exclude by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
 -  Requires a value
 
 
@@ -1081,7 +1089,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View detailed information on a single activity
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
  <!-- app.name --> <!-- command.usage -->
@@ -1104,13 +1112,21 @@ The property to view
 
 ### `--type`
 
-Filter by type (when selecting a default activity)
+Filter by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
+-  Requires a value
+
+
+### `--exclude-type`
+
+Exclude by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
 -  Requires a value
 
 
 ### `--state`
 
-Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled
+Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a single value is specified, it will be split by commas or whitespace.
 -  Default: `[]`
 -  Requires a value
 
@@ -1257,7 +1273,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of activities for an environment or project
 
 ```bash
-magento-cloud activity:list [--type TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
 ```
 
  <!-- app.name -->
@@ -1276,9 +1292,23 @@ act
 
 
 
-### `--type`
 
-Filter activities by type
+### `--type`, `-t`
+
+
+
+Filter activities by type If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
+-  Requires a value
+
+
+
+### `--exclude-type`, `-x`
+
+
+
+Exclude activities by type. If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
 -  Requires a value
 
 
@@ -1297,7 +1327,7 @@ Only activities created before this date will be listed
 
 ### `--state`
 
-Filter activities by state: in_progress, pending, complete, or cancelled
+Filter activities by state: in_progress, pending, complete, or cancelled. If a single value is specified, it will be split by commas or whitespace.
 -  Default: `[]`
 -  Requires a value
 
@@ -1444,7 +1474,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Display the log for an activity
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
  <!-- app.name --> <!-- command.usage -->
@@ -1475,13 +1505,21 @@ Display a timestamp next to each message
 
 ### `--type`
 
-Filter by type (when selecting a default activity)
+Filter by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
+-  Requires a value
+
+
+### `--exclude-type`
+
+Exclude by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
 -  Requires a value
 
 
 ### `--state`
 
-Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled
+Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a single value is specified, it will be split by commas or whitespace.
 -  Default: `[]`
 -  Requires a value
 
@@ -1607,7 +1645,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Run an authenticated cURL request on the Magento Cloud API
 
 ```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-H|--header HEADER] [--] [<path>]
+magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
 ```
 
  <!-- app.name --> <!-- command.usage -->
@@ -1667,6 +1705,16 @@ Do not use the curl --compressed flag
 ### `--enable-glob`
 
 Enable curl globbing (remove the --globoff flag)
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--fail`, `-f`
+
+
+
+Fail with no output on an error response
 -  Default: `false`
 -  Does not accept a value
 
@@ -2174,7 +2222,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Display your account information
 
 ```bash
-magento-cloud auth:info [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
  <!-- app.name --> <!-- command.usage -->
@@ -2184,6 +2232,13 @@ magento-cloud auth:info [-P|--property PROPERTY] [--refresh] [--format FORMAT] [
 The account property to view
     <!-- argument --> <!-- arguments --> <!-- arguments.size -->
 
+
+
+### `--no-auto-login`
+
+Skips auto login. Nothing will be output if not logged in, and the exit code will be 0, assuming no other errors.
+-  Default: `false`
+-  Does not accept a value
 
 
 
@@ -4709,7 +4764,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Branch an environment
 
 ```bash
-magento-cloud branch [--title TITLE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
  <!-- app.name -->
@@ -4735,6 +4790,12 @@ The parent of the new environment
 ### `--title`
 
 The title of the new environment
+-  Requires a value
+
+
+### `--type`
+
+The type of the new environment
 -  Requires a value
 
 
@@ -4952,12 +5013,184 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 -  Default: `false`
 -  Does not accept a value <!-- options --> <!-- options.size -->
 
+## `environment:curl`
+
+Run an authenticated cURL request on an environment's API
+
+```bash
+magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+```
+
+ <!-- app.name --> <!-- command.usage -->
+
+### `path`
+
+The API path
+    <!-- argument --> <!-- arguments --> <!-- arguments.size -->
+
+
+
+
+### `--request`, `-X`
+
+
+
+The request method to use
+-  Requires a value
+
+
+
+### `--data`, `-d`
+
+
+
+Data to send
+-  Requires a value
+
+
+
+### `--include`, `-i`
+
+
+
+Include headers in the output
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--head`, `-I`
+
+
+
+Fetch headers only
+-  Default: `false`
+-  Does not accept a value
+
+
+### `--disable-compression`
+
+Do not use the curl --compressed flag
+-  Default: `false`
+-  Does not accept a value
+
+
+### `--enable-glob`
+
+Enable curl globbing (remove the --globoff flag)
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--fail`, `-f`
+
+
+
+Fail with no output on an error response
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--header`, `-H`
+
+
+
+Extra header(s)
+-  Default: `[]`
+-  Requires a value
+
+
+
+### `--project`, `-p`
+
+
+
+The project ID or URL
+-  Requires a value
+
+
+### `--host`
+
+The project's API hostname
+-  Requires a value
+
+
+
+### `--environment`, `-e`
+
+
+
+The environment ID
+-  Requires a value
+
+
+
+### `--help`, `-h`
+
+
+
+Display this help message
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--quiet`, `-q`
+
+
+
+Do not output any message
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--verbose`, `-v|-vv|-vvv`
+
+
+
+Increase the verbosity of messages
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--version`, `-V`
+
+
+
+Display this application version
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--yes`, `-y`
+
+
+
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--no`, `-n`
+
+
+
+Answer &quot;no&quot; to any yes/no questions; disable interaction
+-  Default: `false`
+-  Does not accept a value <!-- options --> <!-- options.size -->
+
 ## `environment:delete`
 
 Delete an environment
 
 ```bash
-magento-cloud environment:deactivate [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--exclude EXCLUDE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--type TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
  <!-- app.name -->
@@ -4970,7 +5203,7 @@ environment:deactivate
 
 ### `environment`
 
-The environment(s) to delete
+The environment(s) to delete. The % character may be used as a wildcard. If a single value is specified, it will be split by commas or whitespace.
 
 -  Default: `[]`
    
@@ -4980,7 +5213,7 @@ The environment(s) to delete
 
 ### `--delete-branch`
 
-Delete the remote Git branch(es) too
+Delete the remote Git branch(es)
 -  Default: `false`
 -  Does not accept a value
 
@@ -5006,9 +5239,23 @@ Delete all merged environments
 -  Does not accept a value
 
 
+### `--type`
+
+Environment type(s) of which to delete If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
+-  Requires a value
+
+
 ### `--exclude`
 
-Environments not to delete
+Environment(s) not to delete. The % character may be used as a wildcard. If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
+-  Requires a value
+
+
+### `--exclude-type`
+
+Environment type(s) of which not to delete If a single value is specified, it will be split by commas or whitespace.
 -  Default: `[]`
 -  Requires a value
 
@@ -5543,7 +5790,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of environments
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
 ```
 
  <!-- app.name -->
@@ -5598,6 +5845,13 @@ A property to sort by
 Sort in reverse (descending) order
 -  Default: `false`
 -  Does not accept a value
+
+
+### `--type`
+
+Filter the list by environment type(s). If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
+-  Requires a value
 
 
 ### `--format`
@@ -5964,7 +6218,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Push code to an environment
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
  <!-- app.name -->
@@ -6032,8 +6286,21 @@ DEPRECATED: alias of --activate
 
 ### `--parent`
 
-Set a new environment parent (only used with --activate or --branch)
+Set the new environment parent (only used with --activate)
 -  Requires a value
+
+
+### `--type`
+
+Set the environment type (only used with --activate )
+-  Requires a value
+
+
+### `--no-clone-parent`
+
+Do not clone the parent branch's data (only used with --activate)
+-  Default: `false`
+-  Does not accept a value
 
 
 
@@ -7311,7 +7578,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of activities for an integration
 
 ```bash
-magento-cloud i:act [--type TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
  <!-- app.name -->
@@ -7337,7 +7604,18 @@ An integration ID. Leave blank to choose from a list.
 
 ### `--type`
 
-Filter activities by type
+Filter activities by type. If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
+-  Requires a value
+
+
+
+### `--exclude-type`, `-x`
+
+
+
+Exclude activities by type. If a single value is specified, it will be split by commas or whitespace.
+-  Default: `[]`
 -  Requires a value
 
 
@@ -7356,7 +7634,7 @@ Only activities created before this date will be listed
 
 ### `--state`
 
-Filter activities by state
+Filter activities by state. If a single value is specified, it will be split by commas or whitespace.
 -  Default: `[]`
 -  Requires a value
 
@@ -7605,7 +7883,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Add an integration to the project
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--room ROOM] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
 ```
 
  <!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
@@ -7614,7 +7892,7 @@ magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username US
 
 ### `--type`
 
-The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'hipchat', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script')
+The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script')
 -  Requires a value
 
 
@@ -7727,12 +8005,6 @@ Fetch all branches from the remote (as inactive environments)
 
 Delete branches that do not exist on the remote
 -  Default: `true`
--  Requires a value
-
-
-### `--room`
-
-HipChat room ID
 -  Requires a value
 
 
@@ -8245,7 +8517,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Update an integration
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--room ROOM] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
  <!-- app.name --> <!-- command.usage -->
@@ -8259,7 +8531,7 @@ The ID of the integration to update
 
 ### `--type`
 
-The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'hipchat', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script')
+The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script')
 -  Requires a value
 
 
@@ -8372,12 +8644,6 @@ Fetch all branches from the remote (as inactive environments)
 
 Delete branches that do not exist on the remote
 -  Default: `true`
--  Requires a value
-
-
-### `--room`
-
-HipChat room ID
 -  Requires a value
 
 
@@ -9753,7 +10019,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Run an authenticated cURL request on a project's API
 
 ```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
+magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
 ```
 
  <!-- app.name --> <!-- command.usage -->
@@ -9813,6 +10079,16 @@ Do not use the curl --compressed flag
 ### `--enable-glob`
 
 Enable curl globbing (remove the --globoff flag)
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--fail`, `-f`
+
+
+
+Fail with no output on an error response
 -  Default: `false`
 -  Does not accept a value
 
@@ -10193,7 +10469,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of all active projects
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
  <!-- app.name -->
@@ -10214,7 +10490,7 @@ pro
 
 ### `--pipe`
 
-Output a simple list of project IDs
+Output a simple list of project IDs. This disables pagination.
 -  Default: `false`
 -  Does not accept a value
 
@@ -10259,6 +10535,19 @@ Sort in reverse (descending) order
 -  Does not accept a value
 
 
+### `--page`
+
+Page number (starting from 1)
+-  Default: `1`
+-  Requires a value
+
+
+### `--count`
+
+The number of projects to display per page. The default is based on the terminal height. Use 0 to disable pagination.
+-  Requires a value
+
+
 ### `--format`
 
 The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
@@ -10278,6 +10567,13 @@ Columns to display (comma-separated list, or multiple values)
 Do not output the table header
 -  Default: `false`
 -  Does not accept a value
+
+
+### `--date-fmt`
+
+The date format (as a PHP date format string)
+-  Default: `c`
+-  Requires a value
 
 
 
@@ -10955,6 +11251,121 @@ Show files only
 Style output similar to &quot;git ls-tree&quot;
 -  Default: `false`
 -  Does not accept a value
+
+
+
+### `--commit`, `-c`
+
+
+
+The commit SHA. This can also accept &quot;HEAD&quot;, and caret (^) or tilde (~) suffixes for parent commits.
+-  Requires a value
+
+
+
+### `--project`, `-p`
+
+
+
+The project ID or URL
+-  Requires a value
+
+
+### `--host`
+
+The project's API hostname
+-  Requires a value
+
+
+
+### `--environment`, `-e`
+
+
+
+The environment ID
+-  Requires a value
+
+
+
+### `--help`, `-h`
+
+
+
+Display this help message
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--quiet`, `-q`
+
+
+
+Do not output any message
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--verbose`, `-v|-vv|-vvv`
+
+
+
+Increase the verbosity of messages
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--version`, `-V`
+
+
+
+Display this application version
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--yes`, `-y`
+
+
+
+Answer &quot;yes&quot; to any yes/no questions; disable interaction
+-  Default: `false`
+-  Does not accept a value
+
+
+
+### `--no`, `-n`
+
+
+
+Answer &quot;no&quot; to any yes/no questions; disable interaction
+-  Default: `false`
+-  Does not accept a value <!-- options --> <!-- options.size -->
+
+## `repo:read`
+
+Read a directory or file in the project repository
+
+```bash
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+```
+
+ <!-- app.name -->
+
+```bash
+read
+```
+
+ <!-- app.name --> <!-- command.usage -->
+
+### `path`
+
+The path to the directory or file
+    <!-- argument --> <!-- arguments --> <!-- arguments.size -->
+
 
 
 
@@ -12765,13 +13176,12 @@ backup:list
 ### `--limit`
 
 Limit the number of snapshots to list
--  Default: `10`
 -  Requires a value
 
 
 ### `--start`
 
-Only snapshots created before this date will be listed
+[Deprecated] - this option is unused
 -  Requires a value
 
 
@@ -12903,7 +13313,7 @@ environment:restore
  <!-- app.name -->
 
 ```bash
-snapshot:restore
+backup:restore
 ```
 
  <!-- app.name --> <!-- command.usage -->
@@ -14409,7 +14819,7 @@ The user's email address
 
 
 
-The user's project role ('admin' or 'viewer') or environment-specific role (e.g. 'master:contributor' or 'stage:viewer'). The character % can be used as a wildcard in the environment ID e.g. '%:viewer'. The role can be abbreviated, e.g. 'master:c'.
+The user's project role ('admin' or 'viewer') or environment type role (e.g. 'staging:contributor' or 'production:viewer'). To remove a user from an environment type, set the role as 'none'. The % character can be used as a wildcard for the environment type, e.g. '%:viewer' to give the user the 'viewer' role on all types. The role can be abbreviated, e.g. 'production:v'.
 -  Default: `[]`
 -  Requires a value
 
@@ -14897,7 +15307,7 @@ The user's email address
 
 
 
-The user's project role ('admin' or 'viewer') or environment-specific role (e.g. 'master:contributor' or 'stage:viewer'). The character % can be used as a wildcard in the environment ID e.g. '%:viewer'. The role can be abbreviated, e.g. 'master:c'.
+The user's project role ('admin' or 'viewer') or environment type role (e.g. 'staging:contributor' or 'production:viewer'). To remove a user from an environment type, set the role as 'none'. The % character can be used as a wildcard for the environment type, e.g. '%:viewer' to give the user the 'viewer' role on all types. The role can be abbreviated, e.g. 'production:v'.
 -  Default: `[]`
 -  Requires a value
 
@@ -15069,7 +15479,6 @@ Whether the variable is inheritable by child environments
 ### `--visible-build`
 
 Whether the variable should be visible at build time
--  Default: `true`
 -  Requires a value
 
 
@@ -16040,7 +16449,6 @@ Whether the variable is inheritable by child environments
 ### `--visible-build`
 
 Whether the variable should be visible at build time
--  Default: `true`
 -  Requires a value
 
 
