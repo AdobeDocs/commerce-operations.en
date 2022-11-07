@@ -38,6 +38,10 @@ If your final conclusion is to adjust a core Adobe Commerce or third-party modul
 
 *   Use extension attributes
 *   Use JSON-encoded data. Some core tables have an `additional_data` column that holds JSON-encoded data, so it's possible to use that. This is very helpful to avoid a new table for small, simple data elements that you do not need to search the contents but need the information available for future retrieval.  This is typically only available at the item level, not for the entire quote or order.
+It would be better to say that some entities in Magento have a native way of mapping additional data in one field.  A full list of these entities is useful information for developers itself. And add pluses and minuses of this solution (bellow is what is in my head now).
+Pros: no additional fields needed, so that keeps number of columns minimal, which is very actual for sales flow where we already have lots of them. An elegant way to store data that exists for some entities but not for all.
+Cons: These fields should be clearly declared in the code, so a developer can easily find them. Mostly it's good for storing data for read purpose, since we need to unserialize it to modify and build object to add dependencies or relations. It's almost not possible to use db operations and search for these fields. We need be very careful with serialization/unserialization to avoid broken Json or Other issues, which can happen for example with some native PHP functions if we do not use Magento wrapper.
+
 Here are a few examples 
 
 ```mysql
@@ -57,4 +61,26 @@ MariaDB [main]> DESCRIBE sales_order_item additional_data;
 | additional_data | text | YES  |     | NULL    |       |
 +-----------------+------+------+-----+---------+-------+
 1 row in set (0.001 sec)
+
+```
+
+In version 2.4.4 these were all the tables that had the column additional_data
+
+```mysql
+MariaDB [magento]> SELECT DISTINCT TABLE_NAME      FROM INFORMATION_SCHEMA.COLUMNS     WHERE COLUMN_NAME IN ('additional_data')         AND TABLE_SCHEMA='magento';
++------------------------+
+| TABLE_NAME             |
++------------------------+
+| sales_shipment_item    |
+| sales_creditmemo_item  |
+| sales_invoice_item     |
+| catalog_eav_attribute  |
+| sales_order_payment    |
+| quote_address_item     |
+| quote_payment          |
+| quote_item             |
+| magento_reward_history |
+| sales_order_item       |
++------------------------+
+10 rows in set (0.020 sec)
 ```
