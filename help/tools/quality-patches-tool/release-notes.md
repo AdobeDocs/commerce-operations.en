@@ -8,11 +8,46 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 >[!INFO]
 >
->See [Apply patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in the Software Update Guide to review a full list of released patches.
+>See [Apply patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the Software Update Guide to review a full list of released patches.
 
 >[!INFO]
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where an admin with restricted access to a specific scope cannot delete product reviews.
+* **ACSD-47107** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.5) - Fixes the issue where the Catalog Price Rule discount is applied to custom product options.
+* **ACSD-47232** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where coupons with total weight conditions cannot be applied in the Admin.
+* **ACSD-46519** (for Adobe Commerce and Magento Open Source >=2.4.1 <2.4.6) - Fixes the issue where the GraphQL categoryList request returns an incorrect product_count for an anchor category.
+* **ACSD-47027** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes a slow updateCompanyRole GraphQL request.
+* **ACSD-47666** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the filter function does not work in the Admin > System > Permissions > User roles > a role > Role Users grid.
+* **ACSD-47497** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the Services tab is not visible in the Configuration under the Admin.
+* Updated patch: ACSD-47743.
+* Replaced patches: MDVA-42807.
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.3) - Fixes the _Trying to access array offset on value of type bool_ error when accessing certain non-existing category paths for known products on PHP 7.4.
+* **ACSD-47332** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where cron fails with an error that is only reported when running between 00:00 and 00:59 UTC.
+* **ACSD-47280** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where disabling the shared catalog feature on a specific scope does not work correctly.
+* **ACSD-47106** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where a value cannot be saved in a new custom attribute on a company creation page.
+* Updated patch: ACSD-45143.
+
+## v1.1.21 {#v1-1-21}
+
+* **ACSD-46809** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where a user gets an error when assigning a large number of product sources.
+* **ACSD-46856** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Improves performance updating tier prices via System > Configuration > Import > Advanced Pricing.
+* **ACSD-46541** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.4) - Fixes the issue where an admin user cannot create a credit memo if an order item is deleted.
+* **ACSD-46581** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the estimated tax total is not updated after selecting a country in the shopping cart.
+* **ACSD-46618** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the product list widget shows incorrect cached prices for a logged-in customer.
+* **ACSD-46674** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where custom options of an image type are displayed as HTML in customer emails.
+* **ACSD-46988** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where the GraphQL 'currency' API Request returns NULL values for a custom currency.
+* **ACSD-47076** (for Adobe Commerce and Magento Open Source >=2.4.1 <2.4.5) -  Fixes the issue where Vimeo videos cannot be played on the storefront.
+* **ACSD-45071** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.4) - Fixes the issue where the default source is added to the product during import.
+* **AC-3023** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Update DHL scheme to latest version 10.0.
+* Updated patches: MDVA-42584.
+* Replaced patches: MDVA-36572, ACSD-45241.
 
 ## v1.1.20 {#v1-1-20}
 
@@ -536,4 +571,3 @@ Minor fixes for patch versions
 * **MDVA-30052** (*for Adobe Commerce >=2.3.2-p2 <2.3.5*) - Fixes the issue with private content (local storage) not being populated correctly, which resulted in performance problems.
 * **MDVA-30131** (*for Adobe Commerce >=2.3.4 <2.3.6 || 2.4.0*) - Fixes the issue with layered navigation, where the *No* value for boolean type product attributes was not included in layered navigation if [!DNL Elasticsearch] was used as a search engine.
 * **MDVA-35514** (*for Adobe Commerce >=2.4.0 <2.4.1*) - Fixes the issue with creating a shipping label and adding ordered products to a package in the Create Packages modal window.
-

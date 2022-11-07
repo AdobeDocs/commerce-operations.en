@@ -4,15 +4,19 @@ description: Optimize disk resources by configuring server-side image resizing.
 ---
 # Configure image resizing for remote storage
 
-By default, [!DNL Commerce] supports image resizing on the application side. However, by enabling the Remote Storage module, you can use Nginx to offload image resizing to the server side, where you can save disk resources and optimize disk usage.
+By default, Adobe Commerce supports image resizing on the application side. However, by enabling the Remote Storage module, you can use Nginx to offload image resizing to the server side, where you can save disk resources and optimize disk usage.
 
 The following diagram shows how Nginx retrieves, resizes, and stores images in the cache. Resizing is determined by the parameters included in the URL, such as height and width.
 
 ![image resize](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
-## Configure URL format in [!DNL Commerce]
+>[!TIP]
+>
+>For Adobe Commerce on cloud infrastructure projects, see [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md)
 
-To resize images on the server side, you must configure Commerce to provide arguments for the height, width, and location (URL) of the image.
+## Configure URL format in Adobe Commerce
+
+To resize images on the server side, you must configure Adobe Commerce to provide arguments for the height, width, and location (URL) of the image.
 
 **To configure Commerce for server-side image resizing**:
 
