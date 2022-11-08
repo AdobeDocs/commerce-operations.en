@@ -1,5 +1,5 @@
 ---
-title: Best practices on modifying database tables
+title: Best practices for modifying database tables
 description: Learning to recognize when and how to modify database tables, especially those that are not your own.
 role: Developer, Architect
 feature: Best Practices
