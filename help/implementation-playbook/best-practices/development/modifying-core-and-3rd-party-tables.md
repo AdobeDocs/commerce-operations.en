@@ -43,7 +43,7 @@ Ensure that you create a file called `db_schema.xml` in the `etc` folder. Make t
     * Pros: no additional fields needed, so that keeps number of columns minimal, which is very actual for sales flow where we already have lots of them. An elegant way to store data that exists for some entities but not for all.
     * Cons: These fields should be clearly declared in the code, so a developer can easily find them. Mostly it's good for storing data for read purposes only.  The reason is our code would need to un-serialize it to modify and build object to add dependencies or relations. It is  nearly impossible to use db operations and search for these fields and are very slow. Extra care would need to be taken due to serialization/un-serialization that could break causing invalid Json or errors reading during runtime. There are other issues, which can happen for example with some native PHP functions if we do not use Adobe Commerce wrapper methods provided by the core application.
 
-Here are a few examples of tables with the column and the structure for the column `additional_data` 
+Here are a few examples of tables that have the column and structure for the `additional_data` column.
 
 ```mysql
 MariaDB [main]> DESCRIBE quote_item additional_data;
