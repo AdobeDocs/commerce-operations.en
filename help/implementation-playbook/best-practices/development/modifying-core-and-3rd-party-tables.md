@@ -21,7 +21,7 @@ If you determine that legacy data requires migration, or new data needs to be sa
 If your final conclusion is to adjust a core Adobe Commerce or third-party module's database table, consider the following guidelines to ensure the least amount of impact.
 
 * Only add new columns
-* Never modify an existing columns' type
+* Never modify the type of an existing column
 * Avoid any new columns to any EAV attribute tables, they are already overloaded with logic and responsibility
 * Be sure you are aware of the size of the table you are adjusting. If the table is large, it will impact the deployment which can cause minutes to hours of delay executing the changes.
 
