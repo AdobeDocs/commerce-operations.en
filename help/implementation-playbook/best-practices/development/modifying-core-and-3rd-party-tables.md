@@ -18,7 +18,7 @@ If your project contains legacy data, such as old orders, or customer records co
 
 If you determine that legacy data requires migration, or new data needs to be saved in Adobe Commerce, we recommend choice using Extension Attributes.  [See Extension Attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}.  Using this method, ensures that you have complete control over the data being stored.  You also have complete control on the database structure to ensure that the data is stored with the correct column type and proper indexes.  Most entities in Adobe Commerce and Magento Open Source have this feature.  
 
-If your final conclusion is to adjust a core Adobe Commerce or third-party module's database table, consider the following guidelines to ensure the least amount of impact.
+If you decide to store data by modifying a core Adobe Commerce or third-party module database table, use the following guidelines to minimize impact on stability and performance.
 
 * Only add new columns
 * Never modify the type of an existing column
