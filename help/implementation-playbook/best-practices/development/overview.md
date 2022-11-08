@@ -63,4 +63,4 @@ The following sections include best practice information for the development pha
 - [Optimize CSS and JS files](optimize-css-js-files.md)
 - [Optimize images for a more responsive site](image-optimization.md)
 - [Troubleshooting Best Practices for Adobe Commerce on cloud infrastructure​](troubleshooting.md)
-- [Know when and how to modify database tables​](troubleshooting.md)
+- [Know when and how to modify database tables​](best-practices/development/modifying-core-and-3rd-party-tables.md)
