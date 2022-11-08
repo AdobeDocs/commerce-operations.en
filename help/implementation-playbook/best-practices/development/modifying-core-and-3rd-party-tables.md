@@ -10,7 +10,7 @@ last-substantial-update: 2022-11-08
 
 This tutorial demonstrates best practices for modifying database tables that are created by Adobe Commerce or third-party modules.  Understanding when it's appropriate to modify tables and how to modify them effectively helps ensure the long term viability and stability of your commerce platform.
 
-Migrating from Magento 1 and other e-commerce platforms or working with modules from the Adobe Commerce Marketplace often requires adding and saving extra data. Usually, your first thought might be to simply add a new column or adjust an existing column in a database table.  However, modifying a core Adobe Commerce table or other tables created by third-party vendors should only be done in limited situations..
+Migrating from Magento 1 and other e-commerce platforms or working with modules from the Adobe Commerce Marketplace often requires adding and saving extra data. Usually, your first thought might be to simply add a new column or adjust an existing column in a database table.  However, modifying a core Adobe Commerce table or other tables created by third-party vendors should only be done in limited situations.
 
 First, question whether you need to save this data.  If you are moving data from a legacy system, anything that you can remove saves you time and effort during the migration. There are ways to archive data if it needs to be accessed later, however it is outside the scope of this topic. To remain a good steward of the application and performance, it is acceptable to challenge a request to save extra data. The goal is to ensure this is a requirement to fulfill a business need that cannot be filled in another way.
 
