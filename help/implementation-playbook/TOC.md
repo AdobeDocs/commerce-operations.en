@@ -89,6 +89,7 @@ mini-toc-levels: 3
     - [Optimize CSS and JS files](best-practices/development/optimize-css-js-files.md)
     - [Private content blocks](best-practices/development/private-content-block-configuration.md)
     - [Static content deployment](best-practices/development/static-content-deployment.md)
+    - [Modifying database tables](best-practices/development/modifying-core-and-3rd-party-tables.md)   
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
     - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
