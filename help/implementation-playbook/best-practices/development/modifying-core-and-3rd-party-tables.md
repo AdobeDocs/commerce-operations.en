@@ -8,7 +8,7 @@ last-substantial-update: 2022-11-08
 ---
 # Knowing when and how to modify existing database tables 
 
-This tutorial will discuss best practices for modifying database tables that are created by Adobe Commerce or 3rd party modules.  Knowing when its appropriate and ensuring they are done in the most effective manner will ensure a long and stable commerce platform.
+This tutorial demonstrates best practices for modifying database tables that are created by Adobe Commerce or third-party modules.  Understanding when it's appropriate to modify tables and how to modify them effectively helps ensure the long term viability and stability of your commerce platform.
 
 Migrating from Magento 1 and other e-commerce platforms or working with modules from the Adobe Commerce Marketplace often requires adding and saving extra data. Usually, your first thought might be to simply add a new column or adjust an existing column in a database table.  However, modifying a core Adobe Commerce table or other tables created by third-party vendors should only be done in limited situations..
 
