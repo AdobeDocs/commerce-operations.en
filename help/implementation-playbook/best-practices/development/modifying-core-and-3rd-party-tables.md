@@ -22,7 +22,7 @@ If your final conclusion is to adjust a core Adobe Commerce or third-party modul
 
 * Only add new columns
 * Never modify the type of an existing column
-* Avoid any new columns to any EAV attribute tables, they are already overloaded with logic and responsibility
+* Avoid adding columns to any EAV attribute tables. These tables are already overloaded with logic and responsibility
 * Be sure you are aware of the size of the table you are adjusting. If the table is large, it will impact the deployment which can cause minutes to hours of delay executing the changes.
 
 The recommended best practice for adding a column to a database table that does not belong to your project, is to create a module with a name in your namespace that represents what you are updating.  For example app/code/YourCompany/Customer.  Create the appropriate files for this module to be enabled. [See create a module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}
