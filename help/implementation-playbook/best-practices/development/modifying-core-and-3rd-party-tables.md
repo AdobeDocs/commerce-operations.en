@@ -65,7 +65,7 @@ MariaDB [main]> DESCRIBE sales_order_item additional_data;
 
 ```
 
-In versions 2.4.3 and 2.4.4 and 2.4.5 there are 10 tables that had the column `additional_data`
+In versions 2.4.3 and 2.4.4 and 2.4.5 there are 10 tables that have the column `additional_data`
 
 ```mysql
 MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE COLUMN_NAME IN ('additional_data') AND TABLE_SCHEMA='main';
