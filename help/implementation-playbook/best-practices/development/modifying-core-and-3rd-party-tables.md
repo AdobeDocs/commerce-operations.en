@@ -30,7 +30,7 @@ If you decide to store data by modifying a core Adobe Commerce or third-party mo
 The recommended best practice to add a column to a database table that does not belong to your project, is to create a module with a name in your namespace that represents what you are updating.  For example `app/code/YourCompany/Customer`.  Create the appropriate files for this module to be enabled. See [Create a module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 Ensure that you create a file called `db_schema.xml` in the `etc` folder. Make the appropriate changes. If applicable, generate a `db_schema_whitelist.json` file. See [Declarative Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}
 
-## Why it is not recommended
+## Potential impacts
 
 * Upgrades could be more complicated 
 * Deployments are impacted if the table being modified is large
