@@ -40,7 +40,7 @@ Ensure that you create a file called `db_schema.xml` in the `etc` folder. Make t
 
 * Use extension attributes
 * Use JSON-encoded data. Some core tables have an `additional_data` column that holds JSON-encoded data. This column offers a native way of mapping additional data in one field. This method avoids adding a new table for small, simple data elements that store information for data retrieval without a search requirement. The `additional_data` column is typically available only at the item level, not for the entire quote or order.
-    * Pros: no additional fields needed, so that keeps number of columns minimal.  In particular the sales flow where there are many tables already involved.  It is best not to add any more complexity to this already complicated process. This does satisfy many uses cases, but not all.  However, this solution will not work for all situations.
+    * Pros: no additional fields needed, so that keeps number of columns minimal.  In particular the sales flow where there are many tables already involved.  It is best not to add any more complexity to this already complicated process. This does satisfy many uses cases, but not all.
     * Cons: 
         * It's only good for storing data for read purposes only.  The reason is our code would need to un-serialize it to modify and build object to add dependencies or relations. 
         * It is  nearly impossible to use db operations and search for these fields and are searching using this method is very slow. 
