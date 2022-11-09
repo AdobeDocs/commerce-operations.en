@@ -16,18 +16,18 @@ First, question whether you need to save this data.  If you are moving data from
 
 If your project contains legacy data, such as old orders, or customer records consider an alternative lookup method.  For example, if the business requires access to the data for occasional reference only, consider implementing an external search of the old database hosted outside the commerce platform instead of migrating the old data to Adobe Commerce. Keeping this data out of the new database speeds up the migration by allowing the development team to focus on the new site rather than troubleshooting data migration issues.
 
-If you determine that legacy data requires migration, or new data needs to be saved in Adobe Commerce, we recommend choice using Extension Attributes.  [See Extension Attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}.  Using this method, ensures that you have complete control over the data being stored.  You also have complete control on the database structure to ensure that the data is stored with the correct column type and proper indexes.  Most entities in Adobe Commerce and Magento Open Source have this feature.  
+If you determine that legacy data requires migration or that new data needs to be saved in Adobe Commerce, we recommend using Extension Attributes. [See Extension Attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}.  Using this method, ensures that you have complete control over the data being stored.  You also have complete control of the database structure to ensure that the data is stored with the correct column type and proper indexes.  Most entities in Adobe Commerce and Magento Open Source have this feature.  
 
 If you decide to store data by modifying a core Adobe Commerce or third-party module database table, use the following guidelines to minimize impact on stability and performance.
 
 * Only add new columns
 * Never modify the type of an existing column
-* Avoid adding columns to any EAV attribute tables. These tables are already overloaded with logic and responsibility
+* Avoid adding columns to EAV attribute tables. These tables are already overloaded with logic and responsibility
 * Before adjusting a table, check its size. Changing large tables impacts the deployment which can cause minutes or hours of delay when changes are applied.
 
 ## Best practices for modifying a database table
 
-The recommended best practice to add a column to a database table that does not belong to your project, is to create a module with a name in your namespace that represents what you are updating.  For example `app/code/YourCompany/Customer`.  Create the appropriate files for this module to be enabled. See [Create a module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
+When you add a column to a database table that does not belong to your project, create a module with a name in your namespace that represents what you are updating.  For example `app/code/YourCompany/Customer`. Then, create the appropriate files to enable  the module. See [Create a module](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 Ensure that you create a file called `db_schema.xml` in the `etc` folder. Make the appropriate changes. If applicable, generate a `db_schema_whitelist.json` file. See [Declarative Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}
 
 ## Potential impacts
