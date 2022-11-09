@@ -20,10 +20,10 @@ If you determine that legacy data requires migration, or that new data needs to 
 
 If you decide to store data by modifying a core [!DNL Adobe Commerce] or third-party module database table, use the following guidelines to minimize impact on stability and performance.
 
-* Add only new columns.
-* Never modify the _type_ value of an existing column.
+* Add new column only.
+* Never modify the _type_ value of an existing column.  For example, do not change an integer to a varchar just to satisfy your use case.
 * Avoid adding columns to EAV attribute tables. These tables are already overloaded with logic and responsibility.
-* Before adjusting a table, determine its size. Changing large tables impacts the deployment, which can cause minutes or hours of delay when changes are applied
+* Before adjusting a table, determine its size. Changing large tables impacts the deployment, which can cause minutes or hours of delay when changes are applied.
 
 ## Best practices for modifying an external database table
 
@@ -86,7 +86,7 @@ MariaDB [main]> DESCRIBE sales_order_item additional_data;
 
 ```
 
-In versions 2.4.3, 2.4.4, and 2.4.5 there are ten tables that have the column `additional_data`
+In versions 2.4.3, 2.4.4, and 2.4.5 there are ten tables that have the column `additional_data`.
 
 ```mysql
 MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE COLUMN_NAME IN ('additional_data') AND TABLE_SCHEMA='main';
