@@ -116,7 +116,7 @@ The **[!UICONTROL Deployment State]** frame facets particular deployment phases 
 
 ![IP frequency](../../assets/tools/ip-frequency.jpg)
 
-The **[!UICONTROL IP Frequency]** frame counts the ('MISS' and 'PASS') statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
+The **[!UICONTROL IP Frequency]** frame counts the ('MISS' and 'PASS') statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -146,7 +146,7 @@ Sometimes it is hard to tell which IP address has the most requests on the other
 
 ![potential bots](../../assets/tools/potential-bots.jpg)
 
-The **[!UICONTROL Potential Bots]** frame looks at requests with a request_user_agent name like NULL or '%bot%'. Typically, the '%bot%' request_user_agent will follow the policy setup in `robots.txt` file.
+The **[!UICONTROL Potential Bots]** frame looks at requests with a request_user_agent name like NULL or '%bot%'. Typically, the '%bot%' request_user_agent follows the policy setup in `robots.txt` file.
 
 ## [!UICONTROL Transaction Errors]
 
