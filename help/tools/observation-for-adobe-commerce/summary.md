@@ -164,7 +164,7 @@ The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access
 
 ![galera log](../../assets/tools/galera-log.jpg)
 
-[Galera](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the [!UICONTROL Galera] cluster. The signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the [!UICONTROL Galera] cluster state changes.
+[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the [!UICONTROL Galera] cluster. The signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the [!UICONTROL Galera] cluster state changes.
 
 **List of [!UICONTROL Galera] state changes:**
 
