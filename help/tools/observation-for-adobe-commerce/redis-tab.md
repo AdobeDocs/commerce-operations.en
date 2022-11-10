@@ -8,7 +8,7 @@ description: Learn about the [!UICONTROL Redis] tab of [!DNL Observation for Ado
 
 ![Redis Node summary](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-The **[!UICONTROL Redis Node summary]** is inclusive of all nodes in an environment. This example includes the nodes for shared staging. There is one primary and two secondaries on production and also a primary and two secondaries on staging.
+The **[!UICONTROL Redis Node summary]** is inclusive of all nodes in an environment. The above example includes the nodes for shared staging. There is one primary and two secondaries on production and also a primary and two secondaries on staging.
 
 ## [!UICONTROL Redis node detail]
 
@@ -38,7 +38,7 @@ The **[!UICONTROL Commands per second by node]** frame shows the [!DNL Redis] co
 
 ![Redis % of memory used](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
 
-The **[!UICONTROL Redis % of memory used]** frame shows the % of max memory used by the [!DNL Redis] servers.
+The **[!UICONTROL Redis % of memory used]** frame shows the percentage of maximum memory used by the [!DNL Redis] servers.
 
 ## [!UICONTROL Redis used memory]
 
@@ -50,10 +50,10 @@ The **[!UICONTROL Redis used memory]** frame shows the node usage of memory in G
 
 ![Redis changes since last db save](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] is a memory resident and saves the information to storage. The **[!UICONTROL Redis changes since last db save]** frame indicates the number of changes to memory that have occurred since the last database was saved to storage. [This information](https://redis.io/docs/manual/persistence/) explains [!DNL Redis's] persistence.
+[!DNL Redis] is a memory resident and saves the information to storage. The **[!UICONTROL Redis changes since last db save]** frame indicates the number of changes to memory that have occurred since the last database was saved to storage. Refer to [Redis persistence](https://redis.io/docs/manual/persistence/) for more explaintion on [!DNL Redis's] persistence.
 
 ## [!UICONTROL Redis synchronization from Log]
 
 ![Redis synchronization from Log](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-The **[!UICONTROL Redis synchronization from Log]** frame focuses on the errors encountered during [!DNL Redis] synchronization or errors that happen due to synchronization problems. See [Redis Documentation](https://redis.io/docs/).
+The **[!UICONTROL Redis synchronization from Log]** frame focuses on the errors encountered during [!DNL Redis] synchronization or errors that happen due to synchronization problems. For more information on [!DNL Redis], refer to [[!DNL Redis] Documentation](https://redis.io/docs/).
