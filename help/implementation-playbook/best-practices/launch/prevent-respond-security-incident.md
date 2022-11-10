@@ -1,7 +1,7 @@
 ---
 title: Prevent and respond to a security incident
 description: Learn about best practices for avoiding and responding to security incidents in your Adobe Commerce on cloud infrastructure project. 
-role: Admin, Developer, Leader, User, 
+role: Admin, Developer, Leader, User
 feature-set: Commerce
 feature: Best Practices
 ---
