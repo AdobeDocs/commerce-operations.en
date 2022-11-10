@@ -57,7 +57,7 @@ The aggregate of all environments and nodes is displayed in the **[!UICONTROL CP
 
 ![alerts during timeframe](../../assets/tools/alerts-during-timeframe.jpg)
 
-The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the [!UICONTROL Managed Alerts] added by Adobe Commerce Support.
+The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the [!UICONTROL Managed Alerts] added by Adobe Commerce support.
 
 ## [!UICONTROL CPU Usage]
 
@@ -333,7 +333,7 @@ The **[!UICONTROL Page Rendering]** frame displays the current week's average pa
 
 ![page loading detail](../../assets/tools/page-loading-detail.png)
 
-The **[!UICONTROL Page loading detail]** frame describes the page loading events. It details the meanings of these facets. Here is the query that is being run for this frame:
+The **[!UICONTROL Page loading detail]** frame describes the page loading events. It details the meanings of these facets. Here is the query that is run for this frame:
 
 `SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint', percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES`
 
