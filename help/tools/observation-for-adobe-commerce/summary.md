@@ -51,7 +51,7 @@ The **[!UICONTROL Swap memory free in bytes]** frame displays, by node, the amou
 
 ![CPU percent by host](../../assets/tools/cpu-percent-by-host.jpg)
 
-The aggregate of all environments and nodes is displayed in the **[!UICONTROL CPU % by host]** frame. You should deselect the non-production environments. Also note any instances where all nodes for the production environment are not present. For more tips on high CPU utilization, refer to [Troubleshoot performance using New Relic on Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
+The aggregate of all environments and nodes is displayed in the **[!UICONTROL CPU % by host]** frame. You should deselect the non-production environments. Also note any instances where all nodes for the production environment are not present. For more tips on high CPU utilization, refer to [Troubleshoot performance using New Relic on Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
