@@ -14,7 +14,7 @@ Migrating from [!DNL Magento 1] and other e-commerce platforms, or working with 
 
 Adobe recommends that you first determine whether you need to save this data. If you are moving data from a legacy system, any data that you can remove saves you time and effort during the migration. (There are ways to archive data if it needs to be accessed later.) To be good steward of the application and performance, it's okay to challenge a request to save extra data. Your goal is to ensure this is a requirement to fulfill a business need that cannot be filled another way.
 
-If your project contains legacy data, such as old orders or customer records, consider an alternative lookup method. For example, if the business requires access to the data only for occasional reference, consider implementing an external search of the old database hosted outside the commerce platform instead of migrating old data to [!DNL Adobe Commerce]. This situation would require the database to be migrated to a server, offering either a web interface to read the data, or perhaps training in the use of Mysql Workbench or similar tools. By excluding this data from the new database expedites the migration by allowing the development team to focus on the new site rather than troubleshooting data migration issues.
+If your project contains legacy data, such as old orders or customer records, consider an alternative lookup method. For example, if the business requires access to the data only for occasional reference, consider implementing an external search of the old database hosted outside the commerce platform instead of migrating old data to [!DNL Adobe Commerce]. This situation would require the database to be migrated to a server, offering either a web interface to read the data, or perhaps training in the use of Mysql Workbench or similar tools. Excluding this data from the new database expedites the migration by allowing the development team to focus on the new site rather than troubleshooting data migration issues.
 
 If you determine that legacy data requires migration, or that new data needs to be saved in [!DNL Adobe Commerce], Adobe recommends using [[!UICONTROL extension attributes]](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. [!UICONTROL Extension attributes] ensure that you can control the data being stored. You also have control over the database structure, which ensures that the data is stored with the correct column type and proper indexes. Most entities in [!DNL Adobe Commerce] and [!DNL Magento Open Source] offer the use of extension attributes.  
 
@@ -39,7 +39,9 @@ Adobe recommends following these steps when you add a column to a database table
 
     If applicable, generate a `db_schema_whitelist.json` file. See [Declarative Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} for more information.
 
-## Potential impacts
+### Potential impacts
+
+Adding a column to an external database can impact your Adobe Commerce project in the following ways:
 
 * Upgrades could be more complicated.
 * Deployments are impacted if the table being modified is large.
@@ -58,7 +60,7 @@ Adobe recommends following these steps when you add a column to a database table
     
     Cons: 
 
-      * This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and the build object to add dependencies or database relations.
+      * This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and  build the object to add dependencies or database relations.
       * It is difficult to use database operations to search for these fields. Searching with this method is slow. 
       * Extra care must be taken due to serialization/un-serialization that could break the code. This issue can cause an invalid JSON, or read errors during runtime. 
       * These fields should be clearly declared in the code, so a developer can easily find them.
