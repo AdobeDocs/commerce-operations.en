@@ -22,7 +22,9 @@ There are many considerations as you respond to a security incident. If you susp
 
 More recommendations are detailed below. They can help prevent unauthorized access and begin the process for further incident analysis.
 
-## Prevention recommendations
+## How to prevent security incidents
+
+Follow these security best practices to proactively prevent security incidents that impact your Adobe Commerce sites and storefronts:
 
 - [Enable 2FA for admin access](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html).
     Two-factor authentication is widely used, and it is common to generate access codes for different websites on the same app. This ensures that only you can log in to your user account. If you lose your password or a bot guesses it, two-factor authentication adds a layer of protection.
