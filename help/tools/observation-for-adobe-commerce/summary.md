@@ -99,7 +99,7 @@ The **[!UICONTROL Deployment Log Entries]** frame displays a count of deployment
 
 ![deployment state](../../assets/tools/deployment-state.jpg)
 
-The **[!UICONTROL Deployment State]** frame facets particular deployment phrases from the deploy logs. Here are some examples of phrases counted in the log and the facet name: 
+The **[!UICONTROL Deployment State]** frame facets particular deployment phases from the deploy logs. Here are some examples of phases counted in the log and the facet name: 
 
 **Deployment Log Phrases:**
 
