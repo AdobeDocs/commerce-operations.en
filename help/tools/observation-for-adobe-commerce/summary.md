@@ -101,7 +101,7 @@ The **[!UICONTROL Deployment Log Entries]** frame displays a count of deployment
 
 The **[!UICONTROL Deployment State]** frame facets particular deployment phases from the deploy logs. Here are some examples of phases counted in the log and the facet name: 
 
-**Deployment Log Phrases:**
+**Deployment Log Phases:**
 
 * '%Starting generate command%') as 'start_gen'
 * '%git apply /app/vendor/magento/ece-tools/patches%') as 'apply_patches'
