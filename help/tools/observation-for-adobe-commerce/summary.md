@@ -321,7 +321,7 @@ The **[!UICONTROL Traffic vs Week Ago]** frame looks at the website traffic (req
 
 ![fastly Cache](../../assets/tools/fastly-cache.jpg)
 
-The **[!UICONTROL Fastly Cache]** frame shows an aggregate view of the cache status of requests from the Fastly logs. If you click on ERROR, it will show the percent of errors in the requests. This will typically increase when the origin server is not responding quickly enough to page requests.
+The **[!UICONTROL Fastly Cache]** frame shows an aggregate view of the cache status of requests from the Fastly logs. If you select ERROR, it will show the percent of errors in the requests. This typically increases when the origin server does not respond quickly enough to page requests.
 
 ## [!UICONTROL Page Rendering]
 
