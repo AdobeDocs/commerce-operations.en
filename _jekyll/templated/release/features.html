@@ -1,0 +1,33 @@
+---
+---
+# Commerce features
+
+<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content: 
+https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
+
+{%- assign areas = site.data.release.features.areas %}
+
+<table style="table-layout:auto">
+  {%- for area in areas %}
+  <tbody>
+    <tr style="background:lightgray;">
+      <th style="border-style:none;">{{ area.name }}</th>
+      <th style="border-style:none;">2.0</th>
+      <th style="border-style:none;">2.1</th>
+      <th style="border-style:none;">2.2</th>
+      <th style="border-style:none;">2.3</th>
+      <th style="border-style:none;">2.4</th>
+    </tr>
+    {%- for feature in area.features %}
+    <tr>
+      <td>{{ feature.name }}</td>
+      <td>{% if feature.versions contains 2.0 %}+{% endif %}</td>
+      <td>{% if feature.versions contains 2.1 %}+{% endif %}</td>
+      <td>{% if feature.versions contains 2.2 %}+{% endif %}</td>
+      <td>{% if feature.versions contains 2.3 %}+{% endif %}</td>
+      <td>{% if feature.versions contains 2.4 %}+{% endif %}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+  {%- endfor %}
+</table>
