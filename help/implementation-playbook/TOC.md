@@ -93,6 +93,7 @@ mini-toc-levels: 3
     - [Overview](best-practices/launch/overview.md)
     - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
     - [Configure the robots.txt file](best-practices/launch/robots-txt.md)
+    - [Prevent and respond to security incidents](best-practices/launch/prevent-respond-security-incident.md)
   - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)
     - [Audit frontend performance](best-practices/maintenance/frontend-performance.md)

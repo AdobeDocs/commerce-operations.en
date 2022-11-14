@@ -67,12 +67,10 @@ To clone the sample data GitHub repository using the SSH protocol:
 
    If you used the `2.4-develop` branch of the Magento Open Source GitHub repository, the Sample Data branch should be `2.4-develop`.
 
-   If you used the `2.4.3` branch of the Magento Open Source GitHub repository, the Sample Data branch should be `2.4.3`.
-
-   To checkout the correct branch, run the following command from the sample data repository's root directory (assuming you need the `2.4.3` branch):
+   To checkout the correct branch, run the following command from the sample data repository's root directory (assuming you need the `2.4-develop` branch):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Change to `<app_root>`.
@@ -123,12 +121,10 @@ To clone the sample data GitHub repository using the HTTPS protocol:
 
    If you used the `2.4-develop` branch of the Magento Open Source GitHub repository, the Sample Data branch should be `2.4-develop`.
 
-   If you used the `2.4.3` branch of the Magento Open Source GitHub repository, the Sample Data branch should be `2.4.3`.
-
-   To checkout the correct branch, run the following command from the sample data repository's root directory (assuming you need the `2.4.3` branch):
+   To checkout the correct branch, run the following command from the sample data repository's root directory (assuming you need the `2.4-develop` branch):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Change to `<magento_root>`.

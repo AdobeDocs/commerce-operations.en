@@ -7,7 +7,7 @@
 {%- if app.version %}
 **Version**: {{ app.version }}
 
-{%- endif %} <!-- app.version -->
+{%- endif %}
 
 This reference contains {{ commands | size }} commands available through the `{{ tool }}` command-line tool.
 The initial list is auto generated using the `{{ tool }} list` command at the {{ edition }} edition.
@@ -27,20 +27,16 @@ The initial list is auto generated using the `{{ tool }} list` command at the {{
 {{ command.description | xml_escape }}
 
 {%- for usage in command.usage %}
-{%- if app.name contains 'Cloud' %}
-
+{% if app.name contains 'Cloud' %}
 ```bash
 {{ usage }}
 ```
-
 {% else %}
-
 ```bash
 {{ tool }} {{ usage }}
 ```
-
-{% endif %} <!-- app.name -->
-{%- endfor %} <!-- command.usage -->
+{% endif %}
+{%- endfor %}
 {%- unless arguments.size == 0 %}
 {%- for argument in arguments %}
   {%- for item in argument %}
@@ -49,44 +45,35 @@ The initial list is auto generated using the `{{ tool }} list` command at the {{
 ### `{{ item.name }}`
 
 {{ item.description | xml_escape }}
-
-   {%- unless item.default == nil %}
+   {% unless item.default == nil %}
    {%- if item.default == false or (item.default == empty and item.default != '') %}
-
 -  Default: `{{ item.default | inspect }}`
-   {%- else %}
+   {% else %}
 -  Default: `{{ item.default }}`
-   {%- endif %}
+   {% endif %}
    {%- endunless %}
    {%- if item.is_required %}
 -  Required
    {%- endif %}
-   {% if item.is_array %}
+   {%- if item.is_array %}
 -  Array
    {%- endif %}
    {%- endif %}
-
-  {%- endfor %} <!-- argument -->
-{%- endfor %} <!-- arguments -->
-
-{%- endunless %} <!-- arguments.size -->
-{% unless options.size == 0 %}
-
+  {%- endfor %}
+{%- endfor %}
+{% endunless %}
+{%- unless options.size == 0 %}
  {%- for option in options %}
  {%- assign opt = option[1] %}
-
-{% if opt.shortcut contains '-' %}
-
+{%- if opt.shortcut contains '-' %}
 ### `{{ opt.name }}`, `{{ opt.shortcut }}`
-
-{% else %}
+{%- else %}
 ### `{{ opt.name }}`
 
 {%- endif %}
 
 {{ opt.description | replace: '|', '\|' | xml_escape }}
-
-   {%- unless opt.default == nil %}
+   {% unless opt.default == nil %}
    {%- if opt.default == false or opt.default == empty and opt.default != '' %}
 -  Default: `{{ opt.default | inspect }}`
    {%- else %}
@@ -102,14 +89,11 @@ The initial list is auto generated using the `{{ tool }} list` command at the {{
    {%- else %}
 -  Does not accept a value
    {%- endif %}
-
-{%- endfor %} <!-- options -->
-
-{%- endunless %} <!-- options.size -->
-{%- endfor %} <!-- commands -->
-
-{%- else %} <!-- file -->
+{% endfor %}
+{%- endunless %}
+{%- endfor %}
+{%- else %}
 
 There is no data available for this reference at the moment.
 
-{%- endif %} <!-- file -->
+{%- endif %}
