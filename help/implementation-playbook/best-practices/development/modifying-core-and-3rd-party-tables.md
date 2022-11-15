@@ -4,24 +4,46 @@ description: Learn how and when to modify Adobe Commerce and third-party databas
 role: Developer, Architect
 feature: Best Practices
 feature-set: Commerce
-last-substantial-update: 2022-11-09
+last-substantial-update: 2022-11-15
 ---
 # Best practices for modifying database tables 
 
 This article provides best practices for modifying database tables that are created by [!DNL Adobe Commerce] or third-party modules. Understanding when and how to effectively modify tables helps ensure the long-term viability and stability of your commerce platform.
 
-Migrating from [!DNL Magento 1] and other e-commerce platforms, or working with modules from the [!DNL Adobe Commerce] Marketplace, can require adding and saving extra data. Your first instinct might be to add a column or adjust an existing one in a database table. However, modifying a core [!DNL Adobe Commerce] table (or third-party vendor table) should be done only in limited situations.  One of the main reasons behind this stance stems from some of the underlying logic of Adobe commerce where there are raw SQL queries.  Changes to the structure of the table can lead to unpredictable side-affects that may be hard to track down.  There are also potential DDL (Data Definition Language) operations that can lead to unpredictable performance impacts.  Finally, there are always opportunities that the core development team or 3rd party developers might change the structure for their database tables.  For example there are a few core database tables that have a column called `additional_data`.  This has always been a `text` column type. However for performance reasons the core team may change to `longtext`. This type of column is an alias for JSON. By converting to this column type there are performance gains and searchability added to that column that does not exist as a `text` type. You can read more on this topic [JSON data type](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
+Migrating from [!DNL Magento 1] and other e-commerce platforms, or working with modules from the [!DNL Adobe Commerce] Marketplace, can require adding and saving extra data. Your first instinct might be to add a column or adjust an existing one in a database table. However, modifying a core [!DNL Adobe Commerce] table (or third-party vendor table) should be done only in limited situations. One of the main reasons behind this stance stems from some of the underlying logic of Adobe commerce where there are raw SQL queries. Changes to the structure of the table can lead to unpredictable side-affects that may be hard to track down. There are also potential DDL (Data Definition Language) operations that can lead to unpredictable performance impacts. Finally, there are always opportunities that the core development team or third-party developers might take to change the structure for their database tables. 
 
-Adobe recommends that you first determine whether you need to save this data. If you are moving data from a legacy system, any data that you can remove saves you time and effort during the migration. (There are ways to archive data if it needs to be accessed later.) To be good steward of the application and performance, it's okay to challenge a request to save extra data. Your goal is to ensure this is a requirement to fulfill a business need that cannot be filled another way.
+For example there are a few core database tables that have a column called `additional_data`. This has always been a `text` column type. However, for performance reasons, the core team may change the column to `longtext`. This type of column is an alias for JSON. By converting to this column type, there are performance gains and searchability added to that column, which does not exist as a `text` type. You can read more on this topic in [JSON data type](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
-If your project contains legacy data, such as old orders or customer records, consider an alternative lookup method. For example, if the business requires access to the data only for occasional reference, consider implementing an external search of the old database hosted outside the commerce platform instead of migrating old data to [!DNL Adobe Commerce]. This situation would require the database to be migrated to a server, offering either a web interface to read the data, or perhaps training in the use of Mysql Workbench or similar tools. Excluding this data from the new database expedites the migration by allowing the development team to focus on the new site rather than troubleshooting data migration issues.  Another related option for keeping the data external to commerce but allowing you to use it in real time would be leveraging other tools such as GraphQL mesh.  This option can combine different data sources and return them as a single response.  For example you can `stitch` together old orders form an external database, perhaps the old Magento 1 site that is decommissioned.  Then using GraphQL mesh, show them as part of the customers order history.  These old orders can be combined with the orders from your current Adobe Commerce environment.   More on API mesh can be read in [What is API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank" and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+## When to save or remove data
 
-If you determine that legacy data requires migration, or that new data needs to be saved in [!DNL Adobe Commerce], Adobe recommends using [[!UICONTROL extension attributes]](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. [!UICONTROL Extension attributes] ensure that you can control the data being persisted. You also have control over the database structure, which ensures that the data is saved with the correct column type and proper indexes. Most entities in [!DNL Adobe Commerce] and [!DNL Magento Open Source] offer the use of extension attributes.  Remember, extension attributes are a storage agnostic mechanism.  You have the flexibility to save the data in location that optimally works in your project.  Two examples of storage locations are database table and Redis.  The key things to consider are the extra complexity as well as any performance impact this may introduce. It is vital to always consider leveraging tools outside of your Adobe Commerce environment such as GraphQL mesh and Adobe's app builder.  These tools can help you retain access to the data yet has no impact to the core commerce application or its underlying database tables. More on graphql mesh can be found by reading [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.  For more information on Adobe's App builder can be found on [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
+Adobe recommends that you first determine whether you need to save this data. If you are moving data from a legacy system, any data that you can remove saves you time and effort during the migration. (There are ways to archive data if it needs to be accessed later.) To be good steward of the application and performance, it's okay to challenge a request to save extra data. Your goal is to ensure that this is a requirement to fulfill a business need that cannot be filled another way.
+
+### Legacy data
+
+If your project contains legacy data, such as old orders or customer records, consider an alternative lookup method. For example, if the business requires access to the data only for occasional reference, consider implementing an external search of the old database hosted outside the commerce platform instead of migrating old data to [!DNL Adobe Commerce]. 
+
+This situation would require the database to be migrated to a server, offering either a web interface to read the data, or perhaps training in the use of MySQL Workbench or similar tools. Excluding this data from the new database expedites the migration by allowing the development team to focus on the new site rather than troubleshooting data migration issues. 
+
+Another related option for keeping the data external to commerce but allowing you to use it in real time would be leveraging other tools, such as GraphQL mesh. This option combines different data sources and returns them as a single response. 
+
+For example, you can `stitch` together old orders form an external database, perhaps the old Magento 1 site that is decommissioned.  Then using GraphQL mesh, show them as part of the customers order history. These old orders can be combined with the orders from your current [!DNL Adobe Commerce] environment. 
+
+More on API mesh can be read in [What is API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+
+## Migrate legacy data with extension attributes
+
+If you determine that legacy data requires migration, or that new data needs to be saved in [!DNL Adobe Commerce], Adobe recommends using [extension attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Extension attributes ensure that you can control the data being persisted. 
+
+You also have control over the database structure, which ensures that the data is saved with the correct column type and proper indexes. Most entities in [!DNL Adobe Commerce] and [!DNL Magento Open Source] offer the use of extension attributes. Remember, extension attributes are a storage agnostic mechanism. You have the flexibility to save the data in location that optimally works in your project. 
+
+Two examples of storage locations are database table and [!DNL Redis]. The key things to consider are the extra complexity as well as any performance impact this may introduce. It is vital to always consider leveraging tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe's App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables.
+
+More on graphql mesh can be found by reading [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For more information on Adobe's App builder can be found on [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 If you decide to store data by modifying a core [!DNL Adobe Commerce] or third-party module database table, use the following guidelines to minimize impact on stability and performance.
 
-* Add new column only.
-* Never modify the _type_ value of an existing column.  For example, do not change an `integer` to a `varchar` in order to satisfy your unique use case.
+* Add new columns only.
+* Never modify the _type_ value of an existing column. For example, do not change an `integer` to a `varchar` in order to satisfy your unique use case.
 * Avoid adding columns to EAV attribute tables. These tables are already overloaded with logic and responsibility.
 * Before adjusting a table, determine its size. Changing large tables impacts the deployment, which can cause minutes or hours of delay when changes are applied.
 
@@ -60,9 +82,9 @@ Adding a column to an external database can impact your Adobe Commerce project i
     
     Cons: 
 
-      * This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and  build the object to add dependencies or database relations.
+      * This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and build the object to add dependencies or database relations.
       * It is difficult to use database operations to search for these fields. Searching with this method is slow. 
-      * Extra care must be taken due to serialization/un-serialization that could break the code. This issue can cause an invalid JSON, or read errors during runtime. 
+      * Extra care must be taken due to serialization/un-serialization that could break the code. This issue can cause an invalid JSON or read errors during runtime. 
       * These fields should be clearly declared in the code, so a developer can easily find them.
       * Other issues that can occur, for example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application. 
 
