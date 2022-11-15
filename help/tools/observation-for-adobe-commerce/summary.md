@@ -357,7 +357,7 @@ The **[!UICONTROL Order transactions (default?)]** frame looks for transactions 
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![elasticsearch index information](../../assets/tools/elasticsearch-Index-information.jpg)
+![elasticsearch index information](../../assets/tools/elasticsearch-index-information.jpg)
 
 **[Elasticsearch statuses:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
