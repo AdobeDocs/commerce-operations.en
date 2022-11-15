@@ -11,7 +11,6 @@ As the order volume increases on your Commerce sites, you can optimize checkout 
 
 - **[!UICONTROL Asynchronous indexing]**—Enable this option to prevent database locks and slowed processing that can occur when large numbers of orders are placed simultaneously. 
 - **[!UICONTROL Asynchronous email notifications]**—Enable this option to speed up checkout performance by sending checkout and order processing email notifications at designated intervals instead of sending them immediately.
-- **[!UICONTROL Enable Archiving]**—Enable this option to archive orders and free up database disk space for faster order processing. See [Enable archiving](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## Affected products and versions
 
