@@ -93,7 +93,7 @@ Some core tables have an `additional_data` column that holds JSON-encoded data. 
 
   - No additional fields are needed, which keeps the number of columns minimal. This is particularly helpful in the sales flow, where there are many tables already involved. It is best not to add more complexity to this already complicated process. This method satisfies many uses cases, but not all.
     
-  - Disadvantages
+- Disadvantages
 
   - This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and build the object to add dependencies or database relations.
 
