@@ -20,7 +20,7 @@ Another reason to avoid changing the database table structure is that your chang
 
 ## When to save or remove data
 
-Adobe recommends that you first determine whether you need to save this data. If you are moving data from a legacy system, any data that you can remove saves you time and effort during the migration. (There are ways to archive data if it needs to be accessed later.) To be good steward of the application and performance, it's okay to challenge a request to save extra data. Your goal is to ensure that this is a requirement to fulfill a business need that cannot be filled another way.
+Adobe recommends that you first determine whether you need to save this data. If you are moving data from a legacy system, any data that you can remove saves you time and effort during the migration. (There are ways to archive data if it needs to be accessed later.) To be a good steward of the application and performance, it's okay to challenge a request to save extra data. Your goal is to ensure that saving the data is a requirement to fulfill a business need that cannot be filled another way.
 
 ### Legacy data
 
