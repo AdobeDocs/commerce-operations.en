@@ -28,7 +28,7 @@ Another related option for keeping the data external to commerce but allowing yo
 
 For example, you can `stitch` together old orders from an external database, perhaps the old Magento 1 site that is decommissioned.  Then using GraphQL mesh, show them as part of the customers order history. These old orders can be combined with the orders from your current [!DNL Adobe Commerce] environment. 
 
-More on API mesh can be read in [What is API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+For more information about using API mesh with GraphQL, see [What is API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migrate legacy data with extension attributes
 
