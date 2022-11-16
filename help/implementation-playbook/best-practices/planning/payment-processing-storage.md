@@ -16,8 +16,10 @@ We recommend following the best practices below to help ensure you are properly 
 
 ## Affected products and versions
 
-Adobe Commerce on-premises, [all supported versions](../../release/versions.md)
-Adobe Commerce on cloud infrastructure
+[All supported versions](../../../release/versions.md) of:
+
+* Adobe Commerce on cloud infrastructure
+* Adobe Commerce on-premises
 
 ## Protecting cardholder data
 
