@@ -16,9 +16,9 @@ Migrating from [!DNL Magento 1] and other e-commerce platforms, or working with 
 
 The primary reason to avoid modifying core tables is that Adobe Commerce includes underlying logic that contains raw SQL queries. Changes to the structure of the table can cause unexpected side effects which are difficult to troubleshoot. The change can also affect DDL (Data Definition Language) operations causing unexpected and unpredictable impacts to performance.
 
-Another reason to avoid changing the database table structure is that your changes can cause issues if the core development team or third-party developers change the structure of their database tables. For example there are a few core database tables that have a column called `additional_data`. This has always been a `text` column type. However, for performance reasons, the core team might change the column to `longtext`. This type of column is an alias for JSON. By converting to this column type, there are performance gains and searchability added to that column, which does not exist as a `text` type. You can read more on this topic in [JSON data type](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
+Another reason to avoid changing the database table structure is that your changes can cause issues if the core development team or third-party developers change the structure of their database tables. For example, there are a few core database tables that have a column called `additional_data`. This has always been a `text` column type. However, for performance reasons, the core team might change the column to `longtext`. This type of column is an alias for JSON. By converting to this column type, there are performance gains and searchability added to that column, which does not exist as a `text` type. You can read more on this topic in [JSON data type](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
-## When to save or remove data
+## Know when to save or remove data
 
 Adobe recommends that you first determine whether you need to save this data. If you are moving data from a legacy system, any data that you can remove saves you time and effort during the migration. (There are ways to archive data if it needs to be accessed later.) To be a good steward of the application and performance, it's okay to challenge a request to save extra data. Your goal is to ensure that saving the data is a requirement to fulfill a business need that cannot be filled another way.
 
@@ -46,7 +46,7 @@ Two examples of storage locations are database tables and [!DNL Redis]. The key 
 
 ### Consider other alternatives
 
-As a developer, it is vital to always consider leveraging tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables. With this approach you expose your data through an API. Then, you add a data source to your App Builder configuration. Using GraphQL Mesh, you can combine those data sources and produce a single response as mentioned in [legacy data](#legacy-data).
+As a developer, it is vital to always consider using tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables. With this approach, you expose your data through an API. Then, you add a data source to your App Builder configuration. Using GraphQL Mesh, you can combine those data sources and produce a single response as mentioned in [legacy data](#legacy-data).
 
 For additional details on GraphQL mesh, see [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
@@ -91,7 +91,7 @@ Some core tables have an `additional_data` column that holds JSON-encoded data. 
 
 - Advantages of using the `additional_data` field
 
-  - No additional fields are needed, which keeps the number of columns minimal. This is particularly helpful in the sales flow, where there are many tables already involved. It is best not to add more complexity to this already complicated process. This method satisfies many uses cases, but not all.
+  - No additional fields are needed, which keeps the number of columns minimal. This is helpful in the sales flow, where there are many tables already involved. It is best not to add more complexity to this already complicated process. This method satisfies many uses cases, but not all.
     
 - Disadvantages
 
@@ -103,7 +103,7 @@ Some core tables have an `additional_data` column that holds JSON-encoded data. 
    
   - These fields must be clearly declared in the code, so a developer can easily find them.
   
-  - Other issues that can occur that can be very hard to diagnose. For example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application the end result of the transformed data can be different than the expected format. You should always use the wrapper functions to ensure consistency and predictability of the data being saved or retrieved. 
+  - Other issues that can occur that can be very hard to diagnose. For example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application the end result of the transformed data can be different from the expected format. Always use the wrapper functions to ensure consistency and predictability of the data being saved or retrieved. 
 
 Here are examples of tables that have the column and structure for the `additional_data` column.
 
