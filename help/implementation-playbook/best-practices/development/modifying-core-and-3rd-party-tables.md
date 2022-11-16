@@ -42,7 +42,7 @@ If you determine that legacy data requires migration, or that new data needs to 
 - Most entities in [!DNL Adobe Commerce] and [!DNL Magento Open Source] support the use of extension attributes.
 - Extension attributes are a storage agnostic mechanism which provides the flexibility to save the data in the optimal location for your project. 
 
-Two examples of storage locations are database tables and [!DNL Redis]. The key things to consider are the extra complexity as well as any performance impact this may introduce. 
+Two examples of storage locations are database tables and [!DNL Redis]. The key things to consider when choosing a location are whether location introduces extra complexity or impacts performance.
 
 ### Consider other alternatives
 
