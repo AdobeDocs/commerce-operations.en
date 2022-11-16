@@ -83,7 +83,7 @@ Adding a column to an external database can impact your Adobe Commerce project i
 
 ## Ways to avoid modifying core tables
 
-You can avoid modifying Adobe Commerce database tables by using [extension attributes](#migrate-legacy-data-with-extension-attributes).  Another alternative that involves a special column found on a few core tables and saving your data as JSON-encoded.   
+You can avoid modifying Adobe Commerce database tables by using [extension attributes](#migrate-legacy-data-with-extension-attributes).  Another alternative is to use a special column (`additional_data`)  found on a few core tables to store data and save it in JSON-encoded format.
     
 ### Save data in a JSON-encoded data column
 
