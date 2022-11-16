@@ -61,13 +61,14 @@ The following topics describe performance optimization best practices for config
 
 ## **Sales and Marketing**
 
-- [Best practices for product cart limit​](product-cart.md)
+- [Best practices for product cart limit](product-cart.md)
 - [Best practices for configuring promotions](product-cart-promotions.md)
 
 ## **Project scoping**
 
 - [Partner escalations](partner-escalation.md)
+- [Payments storage processing](help/implementation-playbook/best-practices/launch/payment-processing-storing)
 
 ## **Purchase extensions**
 
-- [Best Practices for using third-party extensions in Adobe Commerce​](extensions.md)
+- [Best Practices for using third-party extensions in Adobe Commerce](extensions.md)
