@@ -56,7 +56,7 @@ Safeguarding data during transmission is key to protecting payment information, 
 * Restrict access to cardholder data
 * Access to sensitive information should be restricted on a need-to-know basis and given only to those authorized personnel with a business need
 
-The recommended method on handling cardholder data is to not store the primary account number (PAN) but to tokenize the card with a specific payment processing provider and store the token, card type, and encrypted expiration date. You can use the token as a credential on file for future use as it is unique for each merchant only. Since the token is unique, if there is a security issue, the token will be rendered useless helping to prevent fraudulent activity
+The recommended method to handle cardholder data is to not store the primary account number (PAN) but to tokenize the card with a specific payment processing provider and store the token, card type, and encrypted expiration date. You can use the token as a credential on file for future use as it is unique for each merchant only. Since the token is unique, if there is a security issue, the token in invalidated which helps to prevent fraudulent activity
 
 
 ## Additional information
