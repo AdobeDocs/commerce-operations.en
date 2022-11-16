@@ -87,7 +87,7 @@ Elasticsearch or OpenSearch is required for all installations as of 2.4.0.
 
 Since version 2.3.0, Adobe Commerce and Magento Open Source include message queue functionality. In earlier versions, it is available only for Adobe Commerce.
 
-*  [RabbitMQ](../../configuration/queues/message-queue-framework.md)
+*  [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
 ## Settings for Adobe Commerce only
 
