@@ -34,9 +34,11 @@ For more information about using API mesh with GraphQL, see [What is API Mesh](h
 
 ## Migrate legacy data with extension attributes
 
-If you determine that legacy data requires migration, or that new data needs to be saved in [!DNL Adobe Commerce], Adobe recommends using [extension attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Extension attributes ensure that you can control the data being persisted. 
+If you determine that legacy data requires migration, or that new data needs to be saved in [!DNL Adobe Commerce], Adobe recommends using [extension attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Using extension attributes to save additional data offers the following advantages:
 
-You also have control over the database structure, which ensures that the data is saved with the correct column type and proper indexes. Most entities in [!DNL Adobe Commerce] and [!DNL Magento Open Source] offer the use of extension attributes. Remember, extension attributes are a storage agnostic mechanism. You have the flexibility to save the data in location that optimally works in your project. 
+-  You can control the data being persisted and the database structure, which ensures that the data is saved with the correct column type and proper indexes.
+- Most entities in [!DNL Adobe Commerce] and [!DNL Magento Open Source] support the use of extension attributes.
+- Extension attributes are a storage agnostic mechanism which provides the flexibility to save the data in the optimal location for your project. 
 
 Two examples of storage locations are database table and [!DNL Redis]. The key things to consider are the extra complexity as well as any performance impact this may introduce. It is vital to always consider leveraging tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe's App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables.
 
