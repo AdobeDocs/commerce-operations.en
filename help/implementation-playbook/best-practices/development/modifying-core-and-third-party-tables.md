@@ -30,7 +30,7 @@ This situation would require the database to be migrated to a server, offering e
 
 Another related option for keeping the data external to commerce but allowing you to use it in real time would be leveraging other tools, such as GraphQL mesh. This option combines different data sources and returns them as a single response. 
 
-For example, you can `stitch` together old orders from an external database, perhaps the old Magento 1 site that is decommissioned.  Then using GraphQL mesh, show them as part of the customers order history. These old orders can be combined with the orders from your current [!DNL Adobe Commerce] environment. 
+For example, you can `stitch` together old orders from an external database, perhaps the old Magento 1 site that is decommissioned. Then using GraphQL mesh, show them as part of the customers order history. These old orders can be combined with the orders from your current [!DNL Adobe Commerce] environment. 
 
 For more information about using API mesh with GraphQL, see [What is API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
@@ -46,7 +46,7 @@ Two examples of storage locations are database tables and [!DNL Redis]. The key 
 
 ### Consider other alternatives
 
-As a developer, it is vital to always consider leveraging tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables.  With this approach you expose your data through an API. Then, you add a data source to your App Builder configuration.  Using GraphQL Mesh, you can combine those data sources and produce a single response as mentioned in [legacy data](#legacy-data).
+As a developer, it is vital to always consider leveraging tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables. With this approach you expose your data through an API. Then, you add a data source to your App Builder configuration. Using GraphQL Mesh, you can combine those data sources and produce a single response as mentioned in [legacy data](#legacy-data).
 
 For additional details on GraphQL mesh, see [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
@@ -83,7 +83,7 @@ Adding a column to an external database can impact your Adobe Commerce project i
 
 ## Ways to avoid modifying core tables
 
-You can avoid modifying Adobe Commerce database tables by using [extension attributes](#migrate-legacy-data-with-extension-attributes).  Another alternative is to use a special column (`additional_data`)  found on a few core tables to store data and save it in JSON-encoded format.
+You can avoid modifying Adobe Commerce database tables by using [extension attributes](#migrate-legacy-data-with-extension-attributes). Another alternative is to use a special column (`additional_data`)  found on a few core tables to store data and save it in JSON-encoded format.
     
 ### Save data in a JSON-encoded data column
 
@@ -103,7 +103,7 @@ Some core tables have an `additional_data` column that holds JSON-encoded data. 
    
   - These fields must be clearly declared in the code, so a developer can easily find them.
   
-  - Other issues that can occur that can be very hard to diagnose. For example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application the end result of the transformed data can be different than the expected format.  You should always use the wrapper functions to ensure consistency and predictability of the data being saved or retrieved. 
+  - Other issues that can occur that can be very hard to diagnose. For example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application the end result of the transformed data can be different than the expected format. You should always use the wrapper functions to ensure consistency and predictability of the data being saved or retrieved. 
 
 Here are examples of tables that have the column and structure for the `additional_data` column.
 
