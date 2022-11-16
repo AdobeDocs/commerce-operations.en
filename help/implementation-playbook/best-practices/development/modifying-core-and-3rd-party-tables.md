@@ -101,7 +101,7 @@ Some core tables have an `additional_data` column that holds JSON-encoded data. 
   
   - Extra care must be taken when storing data in the `additional_data` column to avoid triggering serialization or un-serialization operations that could break the code by creating  invalid JSON or causing read errors during runtime.
    
-  - These fields should be clearly declared in the code, so a developer can easily find them.
+  - These fields must be clearly declared in the code, so a developer can easily find them.
   
   - Other issues that can occur, for example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application. 
 
