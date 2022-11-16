@@ -103,7 +103,7 @@ Some core tables have an `additional_data` column that holds JSON-encoded data. 
    
   - These fields must be clearly declared in the code, so a developer can easily find them.
   
-  - Other issues that can occur that can be very hard to dianose. For example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application the end result of the transformed data can be different than the expected format.  You should always use the wrapper functions to ensure consistancy and predictability of the data being saved or retrieved. 
+  - Other issues that can occur that can be very hard to diagnose. For example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application the end result of the transformed data can be different than the expected format.  You should always use the wrapper functions to ensure consistency and predictability of the data being saved or retrieved. 
 
 Here are examples of tables that have the column and structure for the `additional_data` column.
 
