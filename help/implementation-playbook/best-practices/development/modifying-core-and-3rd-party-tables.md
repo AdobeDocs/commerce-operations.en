@@ -87,7 +87,7 @@ You can avoid modifying Adobe Commerce database tables by using [extension attri
     
 ### Save data in a JSON-encoded data column
 
-Some core tables have an `additional_data` column that holds JSON-encoded data. This column offers a native way of mapping additional data in one field. This method avoids adding a table for small, simple data elements that store information for data retrieval without a search requirement. The `additional_data` column is typically available only at the item level, not for the entire quote or order.
+Some core tables have an `additional_data` column that holds JSON-encoded data. This column offers a native way of mapping additional data in one field. Using this method avoids adding a table for small, simple data elements that store information for data retrieval without a search requirement. The `additional_data` column is typically available only at the item level, not for the entire quote or order.
 
 - Advantages of using the `additional_data` field
 
