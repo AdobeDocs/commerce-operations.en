@@ -6,8 +6,7 @@ feature-set: Commerce
 feature: Best Practices
 ---
 
-
-# Best Practices for Payment Processing and Storag
+# Best Practices for Payment Processing and Storage
 
 One of the key principles in maintaining [PCI compliance](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) is having a strategy to properly process and store credit card payments.
 
@@ -17,9 +16,7 @@ We recommend following the best practices below to help ensure you are properly 
 
 ## Affected products and versions
 
-
-
-Adobe Commerce on-premises, [all supported versions](../../release/versions.md) <!--If content applies only to specific versions, indicate that instead of [all supported versions]>
+Adobe Commerce on-premises, [all supported versions](../../release/versions.md)
 Adobe Commerce on cloud infrastructure
 
 ## Protecting cardholder data
@@ -46,7 +43,6 @@ Transmit cardholder data using secure transmission protocols and practices inclu
 * Access to sensitive information should be restricted on a need-to-know basis and given only to those authorized personnel with a business need
 
 The recommended method to handle cardholder data is to not store the primary account number (PAN) but to tokenize the card with a specific payment processing provider and store the token, card type, and encrypted expiration date. You can use the token as a credential on file for future use as it is unique for each merchant only. Since the token is unique, if there is a security issue, the token in invalidated which helps to prevent fraudulent activity
-
 
 ## Additional information
 
