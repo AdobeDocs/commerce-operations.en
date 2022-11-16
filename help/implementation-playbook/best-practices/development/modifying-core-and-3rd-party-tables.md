@@ -77,19 +77,25 @@ Adding a column to an external database can impact your Adobe Commerce project i
 
 You can avoid modifying Adobe Commerce database tables by using [extension attributes](#migrate-legacy-data-with-extension-attributes) or JSON-encoded data.
     
-    Some core tables have an `additional_data` column that holds JSON-encoded data. This column offers a native way of mapping additional data in one field. This method avoids adding a table for small, simple data elements that store information for data retrieval without a search requirement. The `additional_data` column is typically available only at the item level, not for the entire quote or order.
-    
-    Pros: 
-    
-      * No additional fields are needed, which keeps the number of columns minimal. This is particularly helpful in the sales flow, where there are many tables already involved. It is best not to add more complexity to this already complicated process. This method satisfies many uses cases, but not all.
-    
-    Cons: 
+### Save data in a JSON-encoded data column
 
-      * This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and build the object to add dependencies or database relations.
-      * It is difficult to use database operations to search for these fields. Searching with this method is slow. 
-      * Extra care must be taken due to serialization/un-serialization that could break the code. This issue can cause an invalid JSON or read errors during runtime. 
-      * These fields should be clearly declared in the code, so a developer can easily find them.
-      * Other issues that can occur, for example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application. 
+Some core tables have an `additional_data` column that holds JSON-encoded data. This column offers a native way of mapping additional data in one field. This method avoids adding a table for small, simple data elements that store information for data retrieval without a search requirement. The `additional_data` column is typically available only at the item level, not for the entire quote or order.
+
+* Advantages of using the `additional_data` field
+
+  * No additional fields are needed, which keeps the number of columns minimal. This is particularly helpful in the sales flow, where there are many tables already involved. It is best not to add more complexity to this already complicated process. This method satisfies many uses cases, but not all.
+    
+* Disadvantages
+
+  * This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and build the object to add dependencies or database relations.
+
+  * It is difficult to use database operations to search for these fields. Searching with this method is slow.
+  
+   * Extra care must be taken due to serialization/un-serialization that could break the code. This issue can cause an invalid JSON or read errors during runtime.
+   
+  * These fields should be clearly declared in the code, so a developer can easily find them.
+  
+  * Other issues that can occur, for example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application. 
 
 Here are examples of tables that have the column and structure for the `additional_data` column.
 
