@@ -61,7 +61,7 @@ If you decide to store data by modifying a core [!DNL Adobe Commerce] or third-p
 
 ## Best practices for modifying an external database table
 
-Adobe recommends following these steps when you add a column to a core database table or third-party table:
+Adobe recommends following these steps when you add a column to a core database table or a third-party table:
 
 1. Create a module with a name in your namespace that represents what you are updating. 
 
