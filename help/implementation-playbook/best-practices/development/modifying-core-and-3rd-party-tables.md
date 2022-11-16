@@ -14,7 +14,7 @@ Migrating from [!DNL Magento 1] and other e-commerce platforms, or working with 
 
 The primary reason to avoid modifying core tables is that Adobe Commerce includes underlying logic that contains raw SQL queries. Changes to the structure of the table can cause unexpected side effects which are difficult to troubleshoot. The change can also affect DDL (Data Definition Language) operations causing unexpected and unpredictable impacts to performance.
 
-For example there are a few core database tables that have a column called `additional_data`. This has always been a `text` column type. However, for performance reasons, the core team may change the column to `longtext`. This type of column is an alias for JSON. By converting to this column type, there are performance gains and searchability added to that column, which does not exist as a `text` type. You can read more on this topic in [JSON data type](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
+Another reason to avoid changing the database table structure is that your changes can cause issues if the core development team or third-party developers change the structure of their database tables. For example there are a few core database tables that have a column called `additional_data`. This has always been a `text` column type. However, for performance reasons, the core team might change the column to `longtext`. This type of column is an alias for JSON. By converting to this column type, there are performance gains and searchability added to that column, which does not exist as a `text` type. You can read more on this topic in [JSON data type](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
 ## When to save or remove data
 
