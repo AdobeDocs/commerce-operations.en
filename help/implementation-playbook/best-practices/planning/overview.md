@@ -67,7 +67,7 @@ The following topics describe performance optimization best practices for config
 ## **Project scoping**
 
 - [Partner escalations](partner-escalation.md)
-- [Payments storage processing](help/implementation-playbook/best-practices/launch/payment-processing-storing)
+- [Payments storage processing](payment-processing-storage.md)
 
 ## **Purchase extensions**
 
