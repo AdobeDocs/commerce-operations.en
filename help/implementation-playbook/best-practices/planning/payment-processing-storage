@@ -6,20 +6,9 @@ feature-set: Commerce
 feature: Best Practices
 ---
 
-<!--
-
-Remove hide settings for best practices topics. These values are to hide this template from the TOC and search indexing.
-
-Metadata values configured in ExL:
-Available roles: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/role.yml
-
-Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml 
-
-Hide values are set to yes for the template so it is not included in ExL. You can remove those tags for best practices topics you add. -->
 
 # Best Practices for Payment Processing and Storag
 
-<!--Add one or two sentences to summarize the overall contents of this best practice topic-->
 One of the key principles in maintaining [PCI compliance](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) is having a strategy to properly process and store credit card payments.
 
 Storing cardholder data in Adobe Commerce is strictly prohibited and doing so could be a violation of your obligations as a merchant under the Payment Card Industry Data Security Standard (PCI-DSS). More information about our shared responsibility model and guidelines for merchant obligations can be found in our [shared responsibility guide for Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) on the Adobe Trust Center.
@@ -28,13 +17,10 @@ We recommend following the best practices below to help ensure you are properly 
 
 ## Affected products and versions
 
-<!-- When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.-->
 
-<!--Add details for the product and versions where the best practice info is relevant. Below are examples, adjust as needed. If info applies specifically to B2B or B2C, include that information -->
 
 Adobe Commerce on-premises, [all supported versions](../../release/versions.md) <!--If content applies only to specific versions, indicate that instead of [all supported versions]>
 Adobe Commerce on cloud infrastructure
-<!-- Business type: B2C and B2B -- specify only if needed?)-->
 
 ## Protecting cardholder data
 
@@ -63,6 +49,5 @@ The recommended method to handle cardholder data is to not store the primary acc
 
 
 ## Additional information
-
 
 If you are looking for recommended payment solutions by Adobe, please consider [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
