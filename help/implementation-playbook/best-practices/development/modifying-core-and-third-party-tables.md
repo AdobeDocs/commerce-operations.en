@@ -99,7 +99,7 @@ Some core tables have an `additional_data` column that holds JSON-encoded data. 
 
   - It is difficult to use database operations to search for these fields. Searching with this method is slow.
   
-  - Extra care must be taken when storing data in the `additional_data` column to avoid triggering serialization or un-serialization operations that could break the code by creating  invalid JSON or causing read errors during runtime.
+  - Extra care must be taken when storing data in the `additional_data` column to avoid triggering serialization or un-serialization operations that could break the code by creating invalid JSON or causing read errors during runtime.
    
   - These fields must be clearly declared in the code, so a developer can easily find them.
   
