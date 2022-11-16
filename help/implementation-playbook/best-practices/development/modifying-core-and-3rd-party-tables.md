@@ -38,7 +38,7 @@ You also have control over the database structure, which ensures that the data i
 
 Two examples of storage locations are database table and [!DNL Redis]. The key things to consider are the extra complexity as well as any performance impact this may introduce. It is vital to always consider leveraging tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe's App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables.
 
-More on graphql mesh can be found by reading [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For more information on Adobe's App builder can be found on [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
+For additional details on GraphQL mesh, see [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 If you decide to store data by modifying a core [!DNL Adobe Commerce] or third-party module database table, use the following guidelines to minimize impact on stability and performance.
 
