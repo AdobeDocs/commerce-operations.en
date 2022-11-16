@@ -61,6 +61,5 @@ The recommended method on handling cardholder data is to not store the primary a
 
 ## Additional information
 
-<!-- If applicable, add links to additional, more detailed documentation that provides more context about this best practices content.-->
 
 If you are looking for recommended payment solutions by Adobe, please consider [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
