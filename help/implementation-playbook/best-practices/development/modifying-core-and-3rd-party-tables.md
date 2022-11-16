@@ -26,7 +26,7 @@ This situation would require the database to be migrated to a server, offering e
 
 Another related option for keeping the data external to commerce but allowing you to use it in real time would be leveraging other tools, such as GraphQL mesh. This option combines different data sources and returns them as a single response. 
 
-For example, you can `stitch` together old orders form an external database, perhaps the old Magento 1 site that is decommissioned.  Then using GraphQL mesh, show them as part of the customers order history. These old orders can be combined with the orders from your current [!DNL Adobe Commerce] environment. 
+For example, you can `stitch` together old orders from an external database, perhaps the old Magento 1 site that is decommissioned.  Then using GraphQL mesh, show them as part of the customers order history. These old orders can be combined with the orders from your current [!DNL Adobe Commerce] environment. 
 
 More on API mesh can be read in [What is API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
