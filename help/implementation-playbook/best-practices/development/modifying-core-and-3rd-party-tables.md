@@ -12,6 +12,8 @@ This article provides best practices for modifying database tables that are crea
 
 Migrating from [!DNL Magento 1] and other e-commerce platforms, or working with modules from the [!DNL Adobe Commerce] Marketplace, can require adding and saving extra data. Your first instinct might be to add a column to a database table, or to adjust an existing one. However, you should only modify a core [!DNL Adobe Commerce] table (or third-party vendor table) in limited situations.
 
+## Why Adobe recommends avoiding modifications
+
 The primary reason to avoid modifying core tables is that Adobe Commerce includes underlying logic that contains raw SQL queries. Changes to the structure of the table can cause unexpected side effects which are difficult to troubleshoot. The change can also affect DDL (Data Definition Language) operations causing unexpected and unpredictable impacts to performance.
 
 Another reason to avoid changing the database table structure is that your changes can cause issues if the core development team or third-party developers change the structure of their database tables. For example there are a few core database tables that have a column called `additional_data`. This has always been a `text` column type. However, for performance reasons, the core team might change the column to `longtext`. This type of column is an alias for JSON. By converting to this column type, there are performance gains and searchability added to that column, which does not exist as a `text` type. You can read more on this topic in [JSON data type](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
@@ -36,20 +38,26 @@ For more information about using API mesh with GraphQL, see [What is API Mesh](h
 
 If you determine that legacy data requires migration, or that new data needs to be saved in [!DNL Adobe Commerce], Adobe recommends using [extension attributes](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Using extension attributes to save additional data offers the following advantages:
 
--  You can control the data being persisted and the database structure, which ensures that the data is saved with the correct column type and proper indexes.
+- You can control the data being persisted and the database structure, which ensures that the data is saved with the correct column type and proper indexes.
 - Most entities in [!DNL Adobe Commerce] and [!DNL Magento Open Source] support the use of extension attributes.
 - Extension attributes are a storage agnostic mechanism which provides the flexibility to save the data in the optimal location for your project. 
 
-Two examples of storage locations are database table and [!DNL Redis]. The key things to consider are the extra complexity as well as any performance impact this may introduce. It is vital to always consider leveraging tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe's App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables.
+Two examples of storage locations are database tables and [!DNL Redis]. The key things to consider are the extra complexity as well as any performance impact this may introduce. 
+
+### Consider other alternatives
+
+As a developer, it is vital to always consider leveraging tools outside of your [!DNL Adobe Commerce] environment, such as GraphQL mesh and Adobe's App Builder. These tools can help you retain access to the data but have no impact to the core commerce application or its underlying database tables.  In this approach you expose your data through an API.  Then you a data source to your App builder configuration.  Using GraphQL Mesh, you can combine those data sources and produce a single response as mentioned above in [legacy data](#legacy-data).
 
 For additional details on GraphQL mesh, see [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
+## Modifying a core table or third-party table
+
 If you decide to store data by modifying a core [!DNL Adobe Commerce] or third-party module database table, use the following guidelines to minimize impact on stability and performance.
 
-* Add new columns only.
-* Never modify the _type_ value of an existing column. For example, do not change an `integer` to a `varchar` in order to satisfy your unique use case.
-* Avoid adding columns to EAV attribute tables. These tables are already overloaded with logic and responsibility.
-* Before adjusting a table, determine its size. Changing large tables impacts the deployment, which can cause minutes or hours of delay when changes are applied.
+- Add new columns only.
+- Never modify the _type_ value of an existing column. For example, do not change an `integer` to a `varchar` in order to satisfy your unique use case.
+- Avoid adding columns to EAV attribute tables. These tables are already overloaded with logic and responsibility.
+- Before adjusting a table, determine its size. Changing large tables impacts the deployment, which can cause minutes or hours of delay when changes are applied.
 
 ## Best practices for modifying an external database table
 
@@ -69,33 +77,33 @@ Adobe recommends following these steps when you add a column to a database table
 
 Adding a column to an external database can impact your Adobe Commerce project in the following ways:
 
-* Upgrades could be more complicated.
-* Deployments are impacted if the table being modified is large.
-* Migrations to a new platform could be more complicated.
+- Upgrades could be more complicated.
+- Deployments are impacted if the table being modified is large.
+- Migrations to a new platform could be more complicated.
 
 ## Ways to avoid modifying core tables
 
-You can avoid modifying Adobe Commerce database tables by using [extension attributes](#migrate-legacy-data-with-extension-attributes) or JSON-encoded data.
+You can avoid modifying Adobe Commerce database tables by using [extension attributes](#migrate-legacy-data-with-extension-attributes).  Another alternative that involves a special column found on a few core tables and saving your data as JSON-encoded.   
     
 ### Save data in a JSON-encoded data column
 
 Some core tables have an `additional_data` column that holds JSON-encoded data. This column offers a native way of mapping additional data in one field. This method avoids adding a table for small, simple data elements that store information for data retrieval without a search requirement. The `additional_data` column is typically available only at the item level, not for the entire quote or order.
 
-* Advantages of using the `additional_data` field
+- Advantages of using the `additional_data` field
 
-  * No additional fields are needed, which keeps the number of columns minimal. This is particularly helpful in the sales flow, where there are many tables already involved. It is best not to add more complexity to this already complicated process. This method satisfies many uses cases, but not all.
+  - No additional fields are needed, which keeps the number of columns minimal. This is particularly helpful in the sales flow, where there are many tables already involved. It is best not to add more complexity to this already complicated process. This method satisfies many uses cases, but not all.
     
-* Disadvantages
+  - Disadvantages
 
-  * This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and build the object to add dependencies or database relations.
+  - This method is ideal only for storing read-only data. This issue occurs because our code would need to be un-serialized to modify and build the object to add dependencies or database relations.
 
-  * It is difficult to use database operations to search for these fields. Searching with this method is slow.
+  - It is difficult to use database operations to search for these fields. Searching with this method is slow.
   
-   * Extra care must be taken due to serialization/un-serialization that could break the code. This issue can cause an invalid JSON or read errors during runtime.
+  - Extra care must be taken due to serialization/un-serialization that could break the code. This issue can cause an invalid JSON or read errors during runtime.
    
-  * These fields should be clearly declared in the code, so a developer can easily find them.
+  - These fields should be clearly declared in the code, so a developer can easily find them.
   
-  * Other issues that can occur, for example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application. 
+  - Other issues that can occur, for example, with some native PHP functions if you do not use [!DNL Adobe Commerce] wrapper methods provided by the core application. 
 
 Here are examples of tables that have the column and structure for the `additional_data` column.
 
