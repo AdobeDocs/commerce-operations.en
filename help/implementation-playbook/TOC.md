@@ -82,6 +82,7 @@ mini-toc-levels: 3
     - [Promotions](best-practices/planning/product-cart-promotions.md)
     - [Extensions](best-practices/planning/extensions.md)
     - [Partner escalations](best-practices/planning/partner-escalation.md)
+    - [Payments storage processing](help/implementation-playbook/best-practices/launch/payment-processing-storing)
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
     - [Image optimization](best-practices/development/image-optimization.md)
