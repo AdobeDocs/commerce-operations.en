@@ -33,7 +33,7 @@ Finally, a primary account number (PAN) must be unreadable during storage (e.g.,
 
 Safeguarding data during transmission is key to protecting payment information, like cardholder data. When this information is transmitted over open networks, it can become more vulnerable to security issues.
 
-## Use secure transmission protocols
+### Use secure transmission protocols
 
 Transmit cardholder data using secure transmission protocols and practices including:
 
