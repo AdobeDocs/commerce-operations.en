@@ -59,20 +59,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-The default configuration for `InventoryCatalog` does not publish messages to RabbitMQ; the default behavior is to perform the action in the same user thread. To tell `InventoryCatalog` to publish messages, enable `cataloginventory/bulk_operations/async`. From the admin, go to **Stores** > Configuration > **Catalog** > **Inventory** > Admin bulk operations and set  `Run asynchronously`to **Yes**.
+The default configuration for `InventoryCatalog` does not publish messages to [!DNL RabbitMQ]; the default behavior is to perform the action in the same user thread. To tell `InventoryCatalog` to publish messages, enable `cataloginventory/bulk_operations/async`. From the admin, go to **Stores** > Configuration > **Catalog** > **Inventory** > Admin bulk operations and set  `Run asynchronously`to **Yes**.
 
 ## Testing the message queue
 
-To test message sending from Commerce to RabbitMQ:
+To test message sending from Commerce to [!DNL RabbitMQ]:
 
-1. Log in to the RabbitMQ web console in AWS to monitor queues.
+1. Log in to the [!DNL RabbitMQ] web console in AWS to monitor queues.
 1. In the Admin, create a product.
 1. Create an Inventory source.
 1. Enable **Stores** > Configuration > **Catalog** > **Inventory** > Admin bulk operations > Run asynchronously.
 1. Go to **Catalog** > Products. From the grid, select the product created above and click **Assign Inventory Source**.
 1. Click **Save & Close** to complete the process.
 
-   You should now see messages appear in the RabbitMQ web console.
+   You should now see messages appear in the [!DNL RabbitMQ] web console.
 
 1. Start the `async.operations.all` message queue consumer.
 
@@ -80,5 +80,5 @@ To test message sending from Commerce to RabbitMQ:
    bin/magento queue:consumers:start async.operations.all
    ```
 
-You should now see the queued message get processed in the RabbitMQ web console.
+You should now see the queued message get processed in the [!DNL RabbitMQ] web console.
 Verify that inventory sources have changed on the product in the Admin.

@@ -17,29 +17,29 @@ The [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce] is intende
 
 ### Types of transactions:
 
-**Web:** Transactions are initiated with an HTTP request. For most organizations, these represent customer-centric interactions and thus are the most important transactions to monitor.
+**Web:** Web transactions are initiated with an HTTP request. For most organizations, these represent customer-centric interactions and thus are the most important transactions to monitor.
 
 **Non-web:** Non-web transactions are not initiated with a web request. They can include non-web worker processes, background processes, scripts, message queue activity, and other tasks.
 
-Looking at the **[!UICONTROL Transaction Overview]** frame, there were almost 53,000 transactions with an average APDEX score of .76, and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter timeframe may show deviation from that current average if there is an APDEX hit during a short timeframe.
+If you look at the **[!UICONTROL Transaction Overview]** frame above, there were almost 53,000 transactions with an average APDEX score of .76, and 95% of those transactions happened in under 2.313 seconds. This would be a frame where a tighter timeframe may show deviation from that current average if there is an APDEX hit during a short timeframe.
 
 ## [!UICONTROL 404 page errors frame]
 
 ![404 page errors frame](../../assets/tools/404-page-errors.jpg)
 
-The **[!UICONTROL 404 page errors]** frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) and the count of 404 page errors during the selected timeframe.
+The **[!UICONTROL 404 page errors]** frame lists the [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) and the count of 404 page errors for a selected timeframe.
 
 ## [!UICONTROL % of Storage Free frame]
 
 ![percent of Storage Free frame](../../assets/tools/percent-of-storage-free.jpg)
 
-The **[!UICONTROL % of Storage Free]** frame displays the average % free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, this will show the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
+The **[!UICONTROL % of Storage Free]** frame displays the average percent free of the storage mounts across all the nodes of your cluster. For example, if you have a three node cluster, the frame shows the \<mount point\>, \<environment name\>. This frame can be deceptive if there is a variance across three nodes. An example of a variance would be if the `/data/mysql` mount point free was a different value across the three node cluster. There is a frame under the [!UICONTROL MySQL] tab that facets the mount points by node name to see more accurately what the `/data/mysql` storage free on each node actually is.
 
 ## [!UICONTROL % of system memory that is free frame]
 
 ![percent of system memory that is free frame](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-This frame displays, by node, the amount of system memory that is free on each node.
+The **% of system memory that is free** frame displays, by node, the amount of system memory that is free on each node.
 
 ## [!UICONTROL Swap memory free in bytes]
 
@@ -51,19 +51,19 @@ The **[!UICONTROL Swap memory free in bytes]** frame displays, by node, the amou
 
 ![CPU percent by host](../../assets/tools/cpu-percent-by-host.jpg)
 
-The aggregate of all environments and nodes is displayed in the **[!UICONTROL CPU % by host]** frame. You should deselect the non-production environments. You should note any instances where all nodes for the production environment are not present. This article gives tips on high CPU utilization: [Troubleshoot performance using New Relic on Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
+The aggregate of all environments and nodes is displayed in the **[!UICONTROL CPU % by host]** frame. You should deselect the non-production environments. Also note any instances where all nodes for the production environment are not present. For more tips on high CPU utilization, refer to [Troubleshoot performance using New Relic on Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
 ![alerts during timeframe](../../assets/tools/alerts-during-timeframe.jpg)
 
-The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the [!UICONTROL Managed Alerts] added by Adobe Commerce Support.
+The **[!UICONTROL Alerts during timeframe]** displays all alerts, including the [!UICONTROL Managed Alerts] added by Adobe Commerce support.
 
 ## [!UICONTROL CPU Usage]
 
 ![CPU usage](../../assets/tools/cpu-usage.jpg)
 
-If the **[!UICONTROL CPU Usage]** frame is blank, it is an indicator that the infrastructure application of [!DNL New Relic] is not enabled. If your site is on Starter, you will not see this information. If your site is on Pro, please open a support ticket to have [!DNL New Relic Infrastructure] enabled for your site.
+If the **[!UICONTROL CPU Usage]** frame is blank, it is an indication that the infrastructure application of [!DNL New Relic] is not enabled. If your site is on Starter, you do not see this information. If your site is on Pro, open a [support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) to have [!DNL New Relic Infrastructure] enabled for your site.
 
 ## [!UICONTROL Average Response Time]
 
@@ -81,13 +81,13 @@ The **[!UICONTROL cron_schedule]** table is written at the start and finish of c
 
 ![response code](../../assets/tools/response-code.jpg)
 
-The **[!UICONTROL Response Code]** frame is a good indication of web traffic and the response code of requests. It is [!DNL New Relic] transaction data, and it is faceted by the `httpResponseCode` returned.
+The **[!UICONTROL Response Code]** frame is a good indication of web traffic and the response code of requests. It is [!DNL New Relic's] transaction data, and it is faceted by the `httpResponseCode` returned.
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
 ![web traffic volume compared with one week ago](../../assets/tools/web-traffic-volume-compared.jpg)
 
-This frame displays the web traffic volume of one week ago compared to the current volume.
+This frame displays the comparative web traffic volume of the past one week and the current week.
 
 ## [!UICONTROL Deployment Log Entries]
 
@@ -99,9 +99,9 @@ The **[!UICONTROL Deployment Log Entries]** frame displays a count of deployment
 
 ![deployment state](../../assets/tools/deployment-state.jpg)
 
-The **[!UICONTROL Deployment State]** frame facets particular deployment phrases from the deploy logs. Here are examples of phrases counted in the log and the facet name: 
+The **[!UICONTROL Deployment State]** frame facets particular deployment phases from the deploy logs. Here are some examples of phases counted in the log and the facet name: 
 
-**Deployment Log Phrases:**
+**Deployment Log Phases:**
 
 * '%Starting generate command%') as 'start_gen'
 * '%git apply /app/vendor/magento/ece-tools/patches%') as 'apply_patches'
@@ -116,13 +116,13 @@ The **[!UICONTROL Deployment State]** frame facets particular deployment phrases
 
 ![IP frequency](../../assets/tools/ip-frequency.jpg)
 
-The **[!UICONTROL IP Frequency]** frame counts the ('MISS' and 'PASS') statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
+The **[!UICONTROL IP Frequency]** frame counts the ('MISS' and 'PASS') statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
 ![ip response – top 20 urls in duration](../../assets/tools/ip-response-top-20-urls.jpg)
 
-This frame displays the URLs with the longest duration in response. It may indicate large image files or pages, API or pages with the longest response duration.
+The **[!UICONTROL IP Response – top 20 URLs in duration]** frame displays the URLs with the longest duration in response. It may indicate large image files or pages, API or pages with the longest response duration.
 
 ## [!UICONTROL API Calls by IP]
 
@@ -146,7 +146,7 @@ Sometimes it is hard to tell which IP address has the most requests on the other
 
 ![potential bots](../../assets/tools/potential-bots.jpg)
 
-The **[!UICONTROL Potential Bots]** frame looks at requests with a request_user_agent name like NULL or '%bot%'. Typically, the '%bot%' request_user_agent will follow the policy setup in `robots.txt` file.
+The **[!UICONTROL Potential Bots]** frame looks at requests with a request_user_agent name like NULL or '%bot%'. Typically, the '%bot%' request_user_agent follows the policy setup in `robots.txt` file.
 
 ## [!UICONTROL Transaction Errors]
 
@@ -158,13 +158,13 @@ The **[!UICONTROL Transaction Errors]** frame displays the count of transaction 
 
 ![nginx access by node](../../assets/tools/nginx-access-by-node.jpg)
 
-The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access.log` by node. It is helpful to see if the load is evenly distributed. It often shows when a node drops. This will also show load across the site.
+The **[!UICONTROL Nginx access by node]** frame looks at counts from the `access.log` by node. It is helpful to see if the load is evenly distributed. It often shows when a node drops. The frame also shows the load across the site.
 
 ## [!UICONTROL Galera Log]
 
 ![galera log](../../assets/tools/galera-log.jpg)
 
-[Galera](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the [!UICONTROL Galera] cluster. These signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the [!UICONTROL Galera] cluster state changes.
+[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) is used for the database cluster. This frame is focused on particular signals from the [!UICONTROL Galera] cluster. The signals focus on nodes entering and exiting the cluster, which is normal behavior to maintain database data integrity. The nodes are kept synchronized as the [!UICONTROL Galera] cluster state changes.
 
 **List of [!UICONTROL Galera] state changes:**
 
@@ -250,9 +250,9 @@ The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in th
 
 ![redis synchronization from log](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[Redis](https://redis.io/docs/about/) is an open source (BSD licensed) in-memory data structure store used as a database, cache, and message broker. It can do database and session caching if configured. The **[!UICONTROL Redis synchronization from Log]** frame focuses on [Redis synchronization](https://redis.io/docs/manual/replication/). The larger the [!DNL Redis] dataset, the more likely that there will be problems with synchronization (more data to keep synchronized).
+[[!DNL Redis]](https://redis.io/docs/about/) is an open source (BSD licensed) in-memory data structure store used as a database, cache, and message broker. It can do database and session caching if configured. The **[!UICONTROL Redis synchronization from Log]** frame focuses on [[!DNL Redis] synchronization](https://redis.io/docs/manual/replication/). The larger the [!DNL Redis] dataset, the more likely that there will be problems with the synchronization (more data to keep synchronized).
 
-**[!DNL Redis] errors and messages**
+**[!DNL Redis] errors and messages:**
 
 * '%SLAVE synchronization: No space left on device%') as 'space'
 * '%Server started, Redis version%') as 'serv_start'
@@ -277,7 +277,7 @@ The **[!UICONTROL Database mysql-slow.log]** frame does a count of entries in th
 
 ![PHP process states](../../assets/tools/php-process-states.jpg)
 
-The way that PHP process(es) behave is dependent upon [configuration](https://www.php.net/manual/en/install.fpm.configuration.php). The configuration is complex, with many variables and options. The **[!UICONTROL PHP process states]** frame helps to understand when PHP processes are terminated and restarted.
+The way PHP process(es) behave depends on the [configuration](https://www.php.net/manual/en/install.fpm.configuration.php). The configuration is complex, with many variables and options. The **[!UICONTROL PHP process states]** frame helps you to understand when PHP processes are terminated and restarted.
 
 ### [!UICONTROL PHP errors]
 
@@ -285,7 +285,7 @@ The way that PHP process(es) behave is dependent upon [configuration](https://ww
 
 The **[!UICONTROL PHP errors]** frame shows the number of PHP errors with workers across the selected timeframe. For more information, refer to [Adobe Commerce PHP settings](../../installation/prerequisites/php-settings.md).
 
-**PHP errors and messages**
+**PHP errors and messages:**
 
 * '%worker_connections are not enough%') as 'worker'
 * '%PHP Fatal error: Allowed memory size!%') as 'mem_size'
@@ -303,37 +303,37 @@ The **[!UICONTROL PHP errors]** frame shows the number of PHP errors with worker
 
 ![php processes](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] used by [!DNL Nginx]. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](../../installation/system-requirements.md). The **[!UICONTROL PHP processes]** frame shows the number of PHP processes running at a particular time in the selected timeline.
+[PHP-FPM](https://php-fpm.org/) is a [!UICONTROL FastCGI Process Manager] used by [!DNL Nginx]. To learn about system requirements, refer to [PHP version requirements mapped to Adobe Commerce versions](../../installation/system-requirements.md). The **[!UICONTROL PHP processes]** frame shows the number of PHP processes running at a particular time in the selected timeline.
 
 ## [!UICONTROL Secondary processes]
 
 ![secondary processes](../../assets/tools/secondary-processes.jpg)
 
-Secondary processes can impact site response. The **[!UICONTROL Secondary processes]** frame can indicate a process or processes that may be adding load to the site. The database primarily has the most secondary processes running.
+Secondary processes can impact site response. The **[!UICONTROL Secondary processes]** frame indicates a process or processes that may be adding load to the site. The database primarily has the most secondary processes running.
 
 ## [!UICONTROL Traffic vs Week Ago]
 
 ![traffic vs week ago](../../assets/tools/traffic-vs-week-ago.jpg)
 
-The **[!UICONTROL Traffic vs Week Ago]** frame looks at the website traffic (requests) from the [!DNL Fastly] logs with ('MISS', 'PASS') cache statuses. These requests add load to the origin servers. This frame displays the web request volume versus one week ago during the same timeframe.
+The **[!UICONTROL Traffic vs Week Ago]** frame looks at the website traffic (requests) from the [!DNL Fastly] logs with ('MISS', 'PASS') cache statuses. These requests add load to the origin servers. This frame displays the comparative web request volume of the current week and the past week ago during the same timeframe.
 
 ## [!UICONTROL Fastly Cache]
 
 ![fastly Cache](../../assets/tools/fastly-cache.jpg)
 
-The **[!UICONTROL Fastly Cache]** frame shows an aggregate view of the cache status of requests from the Fastly logs. If you click on ERROR, it will show the % of errors in the requests. This will typically increase when the origin server is not responding quickly enough to page requests.
+The **[!UICONTROL Fastly Cache]** frame shows an aggregate view of the cache status of requests from the [!DNL Fastly] logs. If you select ERROR, it will show the percent of errors in the requests. This typically increases when the origin server does not respond quickly enough to page requests.
 
 ## [!UICONTROL Page Rendering]
 
 ![page rendering](../../assets/tools/page-rendering.jpg)
 
-The **[!UICONTROL Page Rendering]** frame displays the average page rendering duration from the page view source of [!DNL New Relic] as compared to the same time period the prior week.
+The **[!UICONTROL Page Rendering]** frame displays the current week's average page rendering duration from the page view source of [!DNL New Relic] compared to the prior week during the same time period.
 
 ## [!UICONTROL Page loading detail]
 
 ![page loading detail](../../assets/tools/page-loading-detail.png)
 
-The **[!UICONTROL Page loading detail]** frame describes the page loading events. It details the meanings of these facets. Here is the query that is being run for this frame:
+The **[!UICONTROL Page loading detail]** frame describes the page loading events. It details the meanings of these facets. Here is the query that is run for this frame:
 
 `SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint', percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES`
 
@@ -353,11 +353,11 @@ The **[!UICONTROL Admin Activities]** frame identifies transactions with an admi
 
 ![Order transactions default](../../assets/tools/order-transactions-default.jpg)
 
-The **[!UICONTROL Order transactions (default?)]** frame looks for transactions `request.headers.host` from transactions where the name = 'WebTransaction/Action/checkout/onepage/success'. If the order success URL is different, this frame will not have data.
+The **[!UICONTROL Order transactions (default?)]** frame looks for transactions `request.headers.host` from transactions, where the name = `WebTransaction/Action/checkout/onepage/success`. If the order success URL is different, this frame will not have data.
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![elasticsearch index information](../../assets/tools/elasticsearch-Index-information.jpg)
+![elasticsearch index information](../../assets/tools/elasticsearch-index-information.jpg)
 
 **[Elasticsearch statuses:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 

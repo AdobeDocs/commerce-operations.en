@@ -82,6 +82,7 @@ mini-toc-levels: 3
     - [Promotions](best-practices/planning/product-cart-promotions.md)
     - [Extensions](best-practices/planning/extensions.md)
     - [Partner escalations](best-practices/planning/partner-escalation.md)
+    - [Payments storage processing](best-practices/planning/payment-processing-storage.md)
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
     - [Image optimization](best-practices/development/image-optimization.md)
@@ -94,6 +95,7 @@ mini-toc-levels: 3
     - [Overview](best-practices/launch/overview.md)
     - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
     - [Configure the robots.txt file](best-practices/launch/robots-txt.md)
+    - [Prevent and respond to security incidents](best-practices/launch/prevent-respond-security-incident.md)
   - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)
     - [Audit frontend performance](best-practices/maintenance/frontend-performance.md)

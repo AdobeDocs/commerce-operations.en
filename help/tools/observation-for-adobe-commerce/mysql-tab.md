@@ -8,7 +8,7 @@ description: Learn about the [!UICONTROL MySQL] tab of [!DNL Observation for Ado
 
 ![MySQL% free storage by node](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-Many problems are caused by MySQL running out of storage in the storage assigned to MySQL (`datadir` MySQL configuration setting, default is `/data/mysql`) or the `tmpdir` running out of space. The default `tmpdir` (MySQL setting) is `/tmp`. This frame looks at the `/, /tmp` (if defined as a separate mount) and the `/data/mysql` % of free storage. Starting in MySQL version 5.7 (MariaDB version 10.2), uncompressed tmp tables are written to a tmp tablespace in the `/data/mysql` directory in the file (ibtmp1). This file auto expands without limit by default. As it is a tablespace, it will not decrease in size and will reset to 12MB when MySQL restarts.
+Many problems are caused by MySQL running out of storage in the storage assigned to MySQL (`datadir` MySQL configuration setting, default is `/data/mysql`) or the `tmpdir` running out of space. The default `tmpdir` (MySQL setting) is `/tmp`. The **[!UICONTROL MySQL% free storage by node]** frame looks at the `/, /tmp` (if defined as a separate mount) and the `/data/mysql` percentage of free storage. Starting in MySQL version 5.7 (MariaDB version 10.2), uncompressed `tmp` tables are written to a `tmp` tablespace in the `/data/mysql` directory in the file (ibtmp1). This file automatically expands without limit by default. As it is a tablespace, it will not decrease in size and will reset to 12MB when MySQL restarts.
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -20,7 +20,7 @@ The **[!UICONTROL MySQL Connections by Node]** frame indicates periods of databa
 
 ![MySQL Node Summary](../../assets/tools/observation-for-adobe-commerce/mysql-tab-3.jpg)
 
-The **[!UICONTROL MySQL Node Summary]** table shows database node details such as software version and instance type (size). 
+The **[!UICONTROL MySQL Node Summary]** table shows database node details such as software version and instance type (size).
 
 ## [!UICONTROL Galera Number of Nodes in cluster]
 
@@ -32,13 +32,13 @@ The **[!UICONTROL Galera Number of Nodes in cluster]** frame displays informatio
 
 ![MySQL shutdowns and starts](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
-The **[!UICONTROL MySQL shutdowns and starts]** frame detects when there is a shutdown of a node. [!DNL Galera] nodes will be evicted and will self-evict from the [!DNL Galera] node. This will typically result in a restart of the MySQL service.
+The **[!UICONTROL MySQL shutdowns and starts]** frame detects when there is a shutdown of a node. The [!DNL Galera] nodes will be evicted and will self-evict from the [!DNL Galera] node. This will typically result in a restart of the MySQL service.
 
 ## [!UICONTROL Galera log]
 
 ![Galera log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
-The **[!UICONTROL Galera log]** frame shows counts of particular signals from the MySQL logs concerning [!DNL Galera] nodes, their states, and the state changes of the [!DNL Galera] cluster.
+The **[!UICONTROL Galera log]** frame shows the counts of particular signals from the MySQL logs concerning [!DNL Galera] nodes, their states, and the state changes of the [!DNL Galera] cluster.
 
 * '%1047 WSREP has not yet prepared node for application use%') as 'node_not_prep_for_use'
 * '%\[ERROR\] WSREP: Failed to read from: wsrep_sst_xtrabackup-v2%') as 'xtrabackup_read_fail'
@@ -49,8 +49,8 @@ The **[!UICONTROL Galera log]** frame shows counts of particular signals from th
 * '%members = 2/3 (joined/total)%') as'2of3'
 * '%members = 2/2%') as '2of2'
 * '%members = 1/2%') as '1of2'
-* ‘%members = 1/3%') as '1of3'
-* ‘%members = 1/1%') as '1of1'
+* '%members = 1/3%') as '1of3'
+* '%members = 1/1%') as '1of1'
 * '%\[Note\] /usr/sbin/mysqld (mysqld 10.%') as'sql_restart'
 * '%Quorum: No node with complete state:%') as 'no_node_count'
 * '%WSREP: Member 0%') as 'mem_0'
@@ -96,7 +96,7 @@ The **[!UICONTROL Cron_schedule table updates]** frame displays the maximum dura
 
 ![Slow Query Traces](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
-The **[!UICONTROL Slow Query Traces]** frame displays the table and request type where slow query traces exist. A slow query trace is created for query transactions that take longer than 5 seconds. Of importance for this frame are the update queries. If a table is being updated by `UPDATE`, `DELETE`, and `INSERT` statements, they may lock tables for a period of time.
+The **[!UICONTROL Slow Query Traces]** frame displays the table and request type where slow query traces exist. A slow query trace is created for query transactions that take longer than five seconds. Of importance for this frame are the update queries. If a table is being updated by `UPDATE`, `DELETE`, and `INSERT` statements, they may lock tables for a period of time.
 
 Even `SELECT` statements may lock rows if used with FOR UPDATE.
 
@@ -108,13 +108,13 @@ Even `SELECT` statements may lock rows if used with FOR UPDATE.
 
 ![Cron table change](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-The **[!UICONTROL Cron table change]** frame is looking for "could not acquire lock for cron job:" error messages, along with a specific PHP memory error and locks involving the `cron_schedule` table. If the `cron_schedule` table is locked (for example, by a `DELETE` query being run against it), it will block other crons from running.
+The **[!UICONTROL Cron table change]** frame looks for "could not acquire lock for cron job:" error messages, along with a specific PHP memory error and locks involving the `cron_schedule` table. If the `cron_schedule` table is locked (for example, by a `DELETE` query being run against it), it will block other crons from running.
 
 ## [!UICONTROL Deadlocks]
 
 ![Deadlocks](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
-The **[!UICONTROL Deadlocks]** frame is looking at the following strings parsed from the MySQL logs.
+The **[!UICONTROL Deadlocks]** frame looks at the following strings parsed from the MySQL logs:
 
 * '%PHP Fatal error: Allowed memory size of%') as php_mem_error
 * '%get lock; try restarting transaction, query was: DELETE FROM \`cron_schedule%') as cron_sched_lock_del
@@ -192,7 +192,7 @@ The **[!UICONTROL DB Statistics]** frame displays deletes, writes, rows read, up
 
 ![Database Errors](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-The **[!UICONTROL Database Errors]** frame shows a variety of database [warnings and errors](https://mariadb.com/kb/en/mariadb-error-codes/).
+The **[!UICONTROL Database Errors]** frame shows a variety of database [warnings and errors](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * '%Memory size allocated for the temporary table is more than 20% of innodb_buffer_pool_size%' as 'temp_tbl_buff_pool'
 * '%\[ERROR\] WSREP: rbr write fail%') as 'rbr_write_fail'
@@ -219,9 +219,9 @@ The **[!UICONTROL Database Errors]** frame shows a variety of database [warnings
 * '%SQLSTATE[HY000]: General error: 2014%') as 'sql_2014'
 * '%1927 Connection was killed%') as 'sql_1927'
 * '%1062 \[ERROR\] InnoDB:%') as 'sql_1062_e'
-* ‘'%[Note] WSREP: Flushing memory map to disk...%') as 'mem_map_flush'
+* ''%[Note] WSREP: Flushing memory map to disk...%') as 'mem_map_flush'
 * '%Internal MariaDB error code: 1146%') as 'sql_1146'
-* '%Internal MariaDB error code: 1062%') as 'sql_1062' • '%1062 [Warning] InnoDB:%') as 'sql_1062_w'
+* '%Internal MariaDB error code: 1062%') as 'sql_1062' * '%1062 [Warning] InnoDB:%') as 'sql_1062_w'
 * '%Internal MariaDB error code: 1064%') as 'sql_1064'
 * '%InnoDB: Assertion failure in file%') as 'assertion_err'
 * '%mysqld_safe Number of processes running now: 0%') as 'mysql_oom'

@@ -34,7 +34,7 @@ The **[!UICONTROL Deploy State]** frame shows the deploy events that occurred ac
 
 The **[!UICONTROL Deploy Log Detail]** frame shows the deploy log message summary details that occurred across the selected timeframe. The frame is parsing for the following strings in the deployment logs:
 
-* ‘%NOTICE: Starting deploy.%') as 'start_dply'
+* '%NOTICE: Starting deploy.%') as 'start_dply'
 * '%INFO: Starting scenario(s): scenario/deploy.xml%') as 'start_scenario'
 * '%NOTICE: Starting pre-deploy%') as 'strt_predply'
 * '% INFO: Restoring patch log file%') as 'rstr_ptch_log'
@@ -95,7 +95,7 @@ The **[!UICONTROL Post Deploy Log Detail]** frame shows the post-deploy log deta
 
 ![Cloud Log Detail](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-The **[!UICONTROL Cloud Log Detail]** frame shows the cloud log details that occurred across the selected timeframe. The following strings are parsed and returned with the ‘AS’ label below:
+The **[!UICONTROL Cloud Log Detail]** frame shows the cloud log details that occurred across the selected timeframe. The following strings are parsed and returned with the 'AS' label below:
 
 * '%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%') as 'start_update'
 * '%Schema creation/updates:%') as 'schema_updates'
