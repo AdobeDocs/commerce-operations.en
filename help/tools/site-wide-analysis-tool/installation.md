@@ -52,13 +52,17 @@ Your on-premises infrastructure must meet the following requirements before inst
 
 - Bash/shell utilities
 
-  - `grep`
+  - `php`
   
+  - `wget`
+
   - `awk`
 
   - `nice`
 
-  - `egrep`
+  - `grep`
+
+  - `openssl`
 
 ## [!DNL Commerce Services Connector]
 
