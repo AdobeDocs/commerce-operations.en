@@ -1,10 +1,16 @@
 # Compatibility
 
+<!--This include content is automatically generated using the compatibility-mde.html
+template and the "_data/release/mde.yml" data file. To update the content,
+add new information to the data file. Follow the instructions in the README instructions to generate
+the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
+
 **Supported** – version that has been fully tested by Adobe and is supported.
 
-**Compatible** – version that is confirmed to be compatible with  or , but is not supported.
+**Compatible** – version that is confirmed to be compatible with Adobe Commerce or
+Magento Open Source, but is not supported.
 
-**Not supported** - version that is not compatible with a Commerce or Magento release.
+**Not supported** - version that is not compatible with an Adobe Commerce or Magento Open Source release.
 
 <table style="table-layout:auto">
   <thead>
@@ -808,6 +814,73 @@
       <td>Compatible</span>
       </td>
       <td>Supported</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="15">Channel Manager</th>
+    </tr>
+    <tr>
+      <td>Channel Manager 1.1.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Channel Manager 1.0.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
       </td>
     </tr>
   </tbody>

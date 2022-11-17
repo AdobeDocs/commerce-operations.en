@@ -28,7 +28,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Upgrade Compatibility Tool PhpStorm plugin</a> (video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Upgrade Compatibility Tool</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack channel</a></li>
-            <li><a href="https://devdocs.magento.com/quality-patches/usage.html">Quality Patches Tool</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html">Quality Patches Tool</a></li>
           </ul>
       </td>
     </tr>

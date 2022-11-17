@@ -164,16 +164,16 @@ The following tables provide many but not all available install parameters. For 
 `--elasticsearch-username` | The user ID to authenticate the search engine | No, unless authentication is enabled
 `--elasticsearch-password` | The password to authenticate the search engine | No, unless authentication is enabled
 
-**RabbitMQ configuration options:**
+**[!DNL RabbitMQ] configuration options:**
 
 |Name|Value|Required?|
 |--- |--- |--- |
-|`--amqp-host`|Do not use the `--amqp` options unless you have already set up an installation of RabbitMQ. See RabbitMQ installation for more information about installing and configuring RabbitMQ.<br><br>The hostname where RabbitMQ is installed.|No|
-|`--amqp-port`|The port to use to connect to RabbitMQ. The default is 5672.|No|
-|`--amqp-user`|The username for connecting to RabbitMQ. Do not use the default user `guest`.|No|
-|`--amqp-password`|The password for connecting to RabbitMQ. Do not use the default password `guest`.|No|
-|`--amqp-virtualhost`|The virtual host for connecting to RabbitMQ. The default is `/`.|No|
-|`--amqp-ssl`|Indicates whether to connect to RabbitMQ. The default is `false`. See RabbitMQ for information about setting up SSL for RabbitMQ.|No|
+|`--amqp-host`|Do not use the `--amqp` options unless you have already set up an installation of [!DNL RabbitMQ]. See [!DNL RabbitMQ] installation for more information about installing and configuring [!DNL RabbitMQ].<br><br>The hostname where [!DNL RabbitMQ] is installed.|No|
+|`--amqp-port`|The port to use to connect to [!DNL RabbitMQ]. The default is 5672.|No|
+|`--amqp-user`|The username for connecting to [!DNL RabbitMQ]. Do not use the default user `guest`.|No|
+|`--amqp-password`|The password for connecting to [!DNL RabbitMQ]. Do not use the default password `guest`.|No|
+|`--amqp-virtualhost`|The virtual host for connecting to [!DNL RabbitMQ]. The default is `/`.|No|
+|`--amqp-ssl`|Indicates whether to connect to [!DNL RabbitMQ]. The default is `false`. See [!DNL RabbitMQ] for information about setting up SSL for [!DNL RabbitMQ].|No|
 |`--consumers-wait-for-messages`|Should consumers wait for a message from the queue? 1 - Yes, 0 - No|No|
 
 **Lock configuration options:**

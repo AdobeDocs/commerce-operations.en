@@ -62,7 +62,7 @@ Your on-premises infrastructure must meet the following requirements before inst
 
 ## [!DNL Commerce Services Connector]
 
-The agent requires the [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) extension to be installed on your system and [configured](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) with API keys. To verify that the extension is installed, run the following command:
+The agent requires the [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) extension to be installed on your system and [configured](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) with API keys. To verify that the extension is installed, run the following command:
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -78,7 +78,7 @@ If you have installed the extension and configured it using an existing API key 
 
 1. Click **[!UICONTROL Delete]** next to the existing API Key.
 
-1. [Configure](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) a new API key.
+1. [Configure](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) a new API key.
 
 >[!IMPORTANT]
 >
@@ -104,7 +104,7 @@ If the extension is not installed, use the following instructions to install it:
    bin/magento setup:upgrade
    ```
 
-1. [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) to connect the extension to your system.
+1. [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) to connect the extension to your system.
 
 ## Install the agent
 
