@@ -3,7 +3,7 @@
 <!--This include content is automatically generated using the compatibility-mde.html
 template and the "_data/release/mde.yml" data file. To update the content,
 add new information to the data file. Follow the instructions in the README instructions to generate
-the updated content: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates-->
+the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
 
 **Supported** – version that has been fully tested by Adobe and is supported.
 
