@@ -14,6 +14,22 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.24 {#v1-1-24}
+
+* **ACSD-45168** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where SEO-friendly URLs are not generated for products that have "url_key" attributes overridden on the store-view level.
+* **ACSD-46865** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where the Shipment and Credit Memo grid is not populated when asynchronous indexing is enabled.
+* **ACSD-47004** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where VAT is not applied to a billing address without a VAT ID.
+* **ACSD-47803** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where out-of-stock configurable product swatches are displayed as available.
+* **ACSD-47137** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Improves the loading speed of the image gallery when the pub/media folder is very big.
+* **ACSD-46770** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where admin order emails are sent even when the "Email order confirmation" is unchecked.
+* **ACSD-47955** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where GraphQL does not display the cart discount correctly.
+* **ACSD-46617** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the "Continue to Checkout" button is greyed out even if the subtotal is greater than the configured "Minimum Order Amount".
+* **ACSD-47079** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where composite products (bundle, grouped, and configurable) stock status are not updated when sub-product stock status changes via REST API POST /rest/V1/inventory/source-items.
+* **ACSD-47336** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes "Something went wrong." error when dismissing notifications in the Commerce Admin.
+* **ACSD-47559** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the Preview Email Template area is not fully visible.
+* **ACSD-47920** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where orders can be placed via Rest API as a guest user even when the "Allow Guest Checkout" is turned off.
+* Replaced patches: MDVA-39305, MDVA-42855.
+
 ## v1.1.23 {#v1-1-23}
 
 * **ACSD-47179** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where an admin with restricted access to a specific scope cannot delete product reviews.
@@ -459,7 +475,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **MDVA-31236** (*for Adobe Commerce >=2.4.0 <2.4.2*) - Fixes the issue where the Admins with custom resource access are not able to set up 2FA or log in.
 * **MDVA-30845** (*for Adobe Commerce >=2.3.5 <2.3.7*) - Fixes the issue where the *Sorry, no quotes are available for this order at this time* error is displayed when failing to connect to UPS XML/USPS/DHL, and no other shipping method is available.
 * **MDVA-32133** (*for Adobe Commerce >=2.4.0 <2.4.1*) - Fixes the issue where media gallery is not loading from Page Builder in certain cases.
-* **MDVA-12304** (*for Adobe Commerce >=2.3.0 <2.4.2*) - Increases the maximum number of cookies from 50 to 200.
+* **MDVA-12304** (*for Adobe Commerce >=2.3.0*) - Increases the maximum number of cookies from 50 to 200.
 * **MDVA-32632** (*for Adobe Commerce >=2.3.2 <2.3.5*) - Fixes the issue where orders appear in the payment system, but not in Adobe Commerce.
 * **MDVA-32449** (*for Adobe Commerce >=2.3.0 <2.3.6 || 2.4.0 || >=2.4.1 <2.4.2 with B2B extension*) - Fixes the issue where the order history loads very slowly or does not load at all.
 * **MDVA-32739** (*for Adobe Commerce >=2.3.0 <2.4.2*) - Fixes the issue where enabling Asynchronous Email Notifications sends out old sales emails.
