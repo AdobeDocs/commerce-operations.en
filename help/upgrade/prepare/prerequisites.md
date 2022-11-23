@@ -11,6 +11,7 @@ After reviewing system requirements, you must complete the following prerequisit
 
 - Update all software
 - Verify that a supported search engine is installed
+- Convert database table format
 - Set the open files limit
 - Verify that cron jobs are running
 - Set `DATA_CONVERTER_BATCH_SIZE`
@@ -23,6 +24,10 @@ After reviewing system requirements, you must complete the following prerequisit
 The [system requirements](../../installation/system-requirements.md) describe exactly which versions of third-party software have been tested with Adobe Commerce and Magento Open Source releases.
 
 Ensure that you updated all system requirements and dependencies in your environment. See PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), and [required PHP settings](../../installation/prerequisites/php-settings.md#php-settings).
+
+>[!NOTE]
+>
+>For Adobe Commerce on cloud infrastructure Pro projects, you must create a [Support](https://support.magento.com/hc/en-us) ticket to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Verify a supported search engine is installed
 
@@ -78,6 +83,10 @@ OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Developmen
 ### Third-party extensions
 
 We recommend that you contact your search engine vendor to determine whether your extension is fully compatible with 2.4.
+
+## Convert database table format
+
+You must convert the format of all database tables from `COMPACT` to `DYNAMIC`. You must also convert the storage engine type from `MyISAM` to `InnoDB`. See [best practices](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## Set the open files limit
 
