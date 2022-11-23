@@ -16,18 +16,18 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.24 {#v1-1-24}
 
-* **ACSD-45168** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where SEO-friendly URLs are not generated for products that have "url_key" attributes overridden on the store-view level.
+* **ACSD-45168** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where SEO-friendly URLs are not generated for products that have *url_key* attributes overridden on the store-view level.
 * **ACSD-46865** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where the Shipment and Credit Memo grid is not populated when asynchronous indexing is enabled.
 * **ACSD-47004** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where VAT is not applied to a billing address without a VAT ID.
 * **ACSD-47803** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where out-of-stock configurable product swatches are displayed as available.
 * **ACSD-47137** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Improves the loading speed of the image gallery when the pub/media folder is very big.
-* **ACSD-46770** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where admin order emails are sent even when the "Email order confirmation" is unchecked.
+* **ACSD-46770** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where admin order emails are sent even when the *Email order confirmation* is unchecked.
 * **ACSD-47955** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where GraphQL does not display the cart discount correctly.
-* **ACSD-46617** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the "Continue to Checkout" button is greyed out even if the subtotal is greater than the configured "Minimum Order Amount".
+* **ACSD-46617** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the *Continue to Checkout* button is greyed out even if the subtotal is greater than the configured *Minimum Order Amount*.
 * **ACSD-47079** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where composite products (bundle, grouped, and configurable) stock status are not updated when sub-product stock status changes via REST API POST /rest/V1/inventory/source-items.
-* **ACSD-47336** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes "Something went wrong." error when dismissing notifications in the Commerce Admin.
+* **ACSD-47336** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes *Something went wrong.* error when dismissing notifications in the Commerce Admin.
 * **ACSD-47559** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where the Preview Email Template area is not fully visible.
-* **ACSD-47920** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where orders can be placed via Rest API as a guest user even when the "Allow Guest Checkout" is turned off.
+* **ACSD-47920** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where orders can be placed via Rest API as a guest user even when the *Allow Guest Checkout* is turned off.
 * Replaced patches: MDVA-39305, MDVA-42855.
 
 ## v1.1.23 {#v1-1-23}
