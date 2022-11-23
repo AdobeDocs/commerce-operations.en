@@ -102,7 +102,7 @@ user-guide-description: Configure your Adobe Commerce or Magento Open Source app
     + [Message queue framework](queues/message-queue-framework.md)
     + [Manage message queues](queues/manage-message-queues.md)
     + [Set up Amazon MQ](queues/aws-mq.md)
-    + [Consumers](queue/consumers.md)
+    + [Consumers](queues/consumers.md)
 + Multiple sites {#multi-sites}
     + [Multiple sites and views](multi-sites/ms-overview.md)
     + [Database entity Increment ID](multi-sites/change-increment-id.md)
