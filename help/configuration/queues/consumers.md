@@ -5,7 +5,7 @@ description: Learn about Adobe Commerce and Magento Open Source message queue co
 
 # Message queue consumers
 
-Lorem ipsum
+The following table identifies all message queue consumers, describes what they do, and identifies the Admin system configuration settings associated with them:
 
 ## Adobe Commerce
 
