@@ -43,6 +43,6 @@ Let’s also take a look at the software that makes Adobe Commerce’s benefits 
 
 - Git is your code in repositories. It allows local branching, convenient staging areas, and multiple workflows with automatic build and deploy for efficient rapid development and continuous deployment.
 
-- Platform-as-a-Service (PaaS) provides a pre-provisioned infrastructure that includes PHP, MySQL, Redis, RabbitMQ, and Elasticsearch technologies.
+- Platform-as-a-Service (PaaS) provides a pre-provisioned infrastructure that includes PHP, MySQL, Redis, [!DNL RabbitMQ], and Elasticsearch technologies.
 
 - AWS or Azure’s cloud hosting powers the underlying Infrastructure-as-a-Service (IaaS), which offers a scalable and secure environment for online sales and retailing.

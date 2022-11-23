@@ -19,7 +19,7 @@ The following table includes solutions that we recommend and can be used within 
 | Web server                               | Nginx, Apache           |
 | Caching services                         | Redis, Varnish          |
 | Search services                          | Elasticsearch           |
-| Message queue services                   | RabbitMQ                |
+| Message queue services                   | [!DNL RabbitMQ]                |
 | Security scan tool                       | SonarQube, ZAP          |
 
 ## Database
@@ -55,7 +55,7 @@ For Adobe Commerce version 2.4 and later, all installations must be configured t
 
 ## Message queue services
 
-Message queues provide an asynchronous communication mechanism in which the sender and the receiver of a message do not contact each other. RabbitMQ is an open-source message broker that offers a reliable, highly available, scalable, and portable messaging system.
+Message queues provide an asynchronous communication mechanism in which the sender and the receiver of a message do not contact each other. [!DNL RabbitMQ] is an open-source message broker that offers a reliable, highly available, scalable, and portable messaging system.
 
 ## Security tools
 
