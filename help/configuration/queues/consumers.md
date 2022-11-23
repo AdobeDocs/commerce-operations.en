@@ -1,0 +1,118 @@
+---
+title: Message queue consumers
+description: Learn about Adobe Commerce and Magento Open Source message queue consumers, including the features and system configuration settings associated with them.
+---
+
+# Message queue consumers
+
+Lorem ipsum
+
+## Adobe Commerce
+
+product_action_attribute.update
+product_action_attribute.website.update
+exportProcessor
+codegeneratorProcessor
+sales.rule.update.coupon.usage
+media.storage.catalog.image.resize
+matchCustomerSegmentProcessor
+product_alert
+inventory.source.items.cleanup
+inventory.mass.update
+inventory.reservations.cleanup
+inventory.reservations.update
+inventory.reservations.updateSalabilityStatus
+inventory.indexer.sourceItem
+inventory.indexer.stock
+media.content.synchronization
+media.gallery.renditions.update
+media.gallery.synchronization
+placeOrderProcessor
+quoteItemCleaner
+inventoryQtyCounter
+async.operations.all
+
+## Adobe Commerce (B2B)
+
+product_action_attribute.update
+product_action_attribute.website.update
+exportProcessor
+media.storage.catalog.image.resize
+matchCustomerSegmentProcessor
+codegeneratorProcessor
+sales.rule.update.coupon.usage
+negotiableQuotePriceUpdate
+product_alert
+sharedCatalogUpdatePrice
+sharedCatalogUpdateCategoryPermissions
+inventory.source.items.cleanup
+inventory.mass.update
+inventory.reservations.cleanup
+inventory.reservations.update
+inventory.reservations.updateSalabilityStatus
+inventory.indexer.sourceItem
+inventory.indexer.stock
+media.content.synchronization
+media.gallery.renditions.update
+media.gallery.synchronization
+placeOrderProcessor
+purchaseorder.toorder
+purchaseorder.transactional.email
+purchaseorder.validation
+quoteItemCleaner
+inventoryQtyCounter
+async.operations.all
+
+## Magento Open Source
+
+product_action_attribute.update
+product_action_attribute.website.update
+media.storage.catalog.image.resize
+exportProcessor
+inventory.source.items.cleanup
+inventory.mass.update
+inventory.reservations.cleanup
+inventory.reservations.update
+inventory.reservations.updateSalabilityStatus
+inventory.indexer.sourceItem
+inventory.indexer.stock
+media.content.synchronization
+media.gallery.renditions.update
+media.gallery.synchronization
+codegeneratorProcessor
+sales.rule.update.coupon.usage
+product_alert
+async.operations.all
+
+## Draft
+
+| Consumer                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `product_action_attribute.update`               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `product_action_attribute.website.update`       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `exportProcessor`                               | Prevents connection timeouts during the [export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) of large data sets (for example 200,000 products).                                                                                                                                                                                                                                                                                                                               |
+| `media.storage.catalog.image.resize`            | Asynchronously [resizes](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images) catalog images.                                                                                                                                                                                                                                                                                                                                                                                       |
+| `matchCustomerSegmentProcessor`                 | Creates a temporary database table, moves each [customer segment](https://docs.magento.com/user-guide/marketing/customer-segments.html) into it, deletes all segments that match the segment ID, and copies them to the customer segments using the segment ID as the indicator. This is all done in a transaction so that if something fails, it will roll back the transaction to what it was before this executed. After a transaction, the consumer drops the temporary table.                                               |
+| `codegeneratorProcessor`                        | Asynchronously generates coupons in the background. Required to use the [batch coupon generation](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons) feature.                                                                                                                                                                                                                                                          |
+| `sales.rule.update.coupon.usage`                | Prevents the [issue](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) where single-use coupons can be used multiple times.                                                                                                                                                                                                                                                                                                  |
+| `product_alert`                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| `media.content.synchronization`                 | Ensures that links to assigned media for products, categories, CMS blocks, and CMS pages are correctly assigned to the asset. Removes old assets that are no longer used.                                                                                                                                                                                                                                                                                                                                                        |
+| `media.gallery.renditions.update`               | Generates and validates media asset paths. The absolute path to an asset is determined by where it sits on the server from inside the media directory. Images are resized (if necessary) and copied to the media directory inside the generated path.                                                                                                                                                                                                                                                                            |
+| `media.gallery.synchronization`                 | Imports image files to the `media_gallery_asset` database table.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `placeOrderProcessor`                           | Asynchronously [processes orders](https://developer.adobe.com/commerce/php/module-reference/module-async-order/), which marks orders as received, places them in the message queue, and processes them in a first-in-first-out basis. Considered a [best practice](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) for improving the amount of orders that can be processed because customers do not need to wait for backend processes to complete before seeing a success message. |
+| `inventory.source.items.cleanup`                | Asynchronously deletes source items by product SKU when a product is removed. Required when the [**Synchronize with Catalog**]({{ site.user_guide_url }}/configuration/catalog/inventory.html) stock option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                               |
+| `inventory.mass.update`                         | Asynchronously processes legacy stock items, updates legacy stock items, updates default source items, and reindexes inventory for specific product SKUs. Required when the [**Run asynchronously**]({{ site.user_guide_url }}/configuration/catalog/inventory.html#admin-bulk-operations) bulk operation is enabled in the Admin system configuration settings.                                                                                                                                                                 |
+| `inventory.reservations.cleanup`                | Asynchronously deletes reservations by product SKU after a product is removed. Required when the [**Synchronize with Catalog**]({{ site.user_guide_url }}/configuration/catalog/inventory.html) stock option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                              |
+| `inventory.reservations.update`                 | Asynchronously updates reservations by product SKU after a product is removed. Required when the [**Synchronize with Catalog**]({{ site.user_guide_url }}/configuration/catalog/inventory.html) stock option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                              |
+| `inventory.reservations.updateSalabilityStatus` | Asynchronously updates the salable quantity of each product assigned to a stock. This consumer should be up and running at all times if you are using {{ site.data.var.im }}.                                                                                                                                                                                                                                                                                                                                                    |
+| `inventory.indexer.sourceItem`                  | Asynchronously reindexes source items. Required when the [**Stock/Source reindex strategy**]({{ site.user_guide_url }}/configuration/catalog/inventory.html#inventory-indexer-settings) is set to "aynschronous" in the Admin system configuration settings.                                                                                                                                                                                                                                                                     |
+| `inventory.indexer.stock`                       | Asynchronously reindexes stock. Required when the [**Stock/Source reindex strategy**]({{ site.user_guide_url }}/configuration/catalog/inventory.html#inventory-indexer-settings) is set to "aynschronous" in the Admin system configuration settings.                                                                                                                                                                                                                                                                            |
+| `sharedCatalogUpdatePrice`                      | Updates price for each product in a shared catalog. Required when the [**Shared Catalogs**]({{ site.user_guide_url }}/catalog/catalog-shared.html) option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                                                                                 |
+| `sharedCatalogUpdateCategoryPermissions`        | Updates categories assigned to a shared catalog category. Required when the [**Shared Catalogs**]({{ site.user_guide_url }}/catalog/catalog-shared.html) option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                                                                           |
+| `negotiableQuotePriceUpdate`                    | Updates prices for negotiable quotes. Required when the [**Quotes**]({{ site.user_guide_url }}/sales/quotes.html) option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                                                                                                                  |
+| `purchaseorder.toorder`                         | Converts purchase order to [order]({{ site.user_guide_url }}/stores/b2b-purchase-order-flow.html#approval-rules). Required when the [**Purchase Order**]({{ site.user_guide_url }}/payments/purchase-order.html) option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                   |
+| `purchaseorder.transactional.email`             | Send purchase order emails. Required when the [**Purchase Order**]({{ site.user_guide_url }}/payments/purchase-order.html) option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                                                                                                         |
+| `purchaseorder.validation`                      | Validates purchase order against relevant [approval rules]({{ site.user_guide_url }}/customers/account-dashboard-approval-rules.html). Required when the [**Purchase Order**]({{ site.user_guide_url }}/payments/purchase-order.html) option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                              |
+| `quoteItemCleaner`                              | Deletes invalid or inactive price quotes when a product is deleted from the catalog or removed from the cart. Required when the [**Quotes**]({{ site.user_guide_url }}/sales/quotes.html) option is enabled in the Admin system configuration settings.                                                                                                                                                                                                                                                                          |
+| `inventoryQtyCounter`                           | Asynchronously corrects the stock index after an order is placed or a product is removed. Required when the [**Use deferred stock update**]({{ site.user_guide_url }}/configuration/catalog/inventory.html#product-stock-options) option is enabled in the Admin configuration settings. See [Performance Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#deferred-stock-update).                                                                      |
+| `async.operations.all`                          | Creates messages for each individual task of a [bulk operation](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/), such as importing or exporting items, changing prices on a mass scale, and assigning products to a warehouse. Required when the [**Admin bulk operations**]({{ site.user_guide_url }}/configuration/catalog/inventory.html?#admin-bulk-operations) option is set to **Run asynchronously** in the Admin system configuration settings.                         |
