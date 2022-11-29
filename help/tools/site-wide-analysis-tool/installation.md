@@ -1,6 +1,6 @@
 ---
 title: Install Guide
-description: Use this guide to install [!DNL Site-Wide Analysis Tool] for your website
+description: "Use this guide to install [!DNL Site-Wide Analysis Tool] for your website"
 ---
 # Install Guide
 
