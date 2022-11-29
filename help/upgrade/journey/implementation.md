@@ -34,7 +34,7 @@ The following are items that you may want to include in a thorough analysis:
   |-----------------|-----------------|------------|----------------------------------------------------------|
   | PHP             | 7.2.33          | 8.1        |                                                          |
   | Redis           | 5.05            | 6.0        |                                                          |
-  | RabbitMQ        | 3.7             | 3.8        | Not currently being used but we should consider using it |
+  | [!DNL RabbitMQ]        | 3.7             | 3.8        | Not currently being used but we should consider using it |
   | MariaDB (Cloud) | 10.2.33         | 10.4       |                                                          |
   | MySQL           | 8.0             |            |                                                          |
   | Composer        | 1.9.2           | 2.0        |                                                          |

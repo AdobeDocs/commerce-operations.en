@@ -1,172 +1,142 @@
 areas:
-  -
-    name: Maximizing conversion & sales
+  - name: Maximizing conversion & sales
     features:
-      -
-        name: Seller Assisted Shopping
+      - name: Seller Assisted Shopping
         versions:
           - 2.4
-      -
-        name: Live Search powered by Adobe Sensei
+      - name: Live Search powered by Adobe Sensei
         versions:
           - 2.4
-      -
-        name: Product Recommendations powered by Adobe Sensei
+      - name: Product Recommendations powered by Adobe Sensei
         versions:
           - 2.3
           - 2.4
-      -
-        name: Page Builder drag and drop content management
+      - name: Page Builder drag and drop content management
         versions:
           - 2.3
           - 2.4
-      -
-        name: PWA Studio
+      - name: PWA Studio
         versions:
           - 2.3
           - 2.4
-      -
-        name: Payment Services flexible payment options
+      - name: Payment Services flexible payment options
         versions:
           - 2.4
-      -
-        name: Amazon Sales Channel
+      - name: Amazon Sales Channel
         versions:
           - 2.2
           - 2.3
           - 2.4
-      -
-        name: B2B-ready functionality and APIs (check B2B's infosheet for more info)
+      - name: Channel Manager (Walmart Marketplace)
+        versions:
+          - 2.4
+      - name: B2B-ready functionality and APIs (check B2B's infosheet for more info)
         versions:
           - 2.2
           - 2.3
           - 2.4
-      -
-        name: Instant Purchase
+      - name: Instant Purchase
         versions:
           - 2.2
           - 2.3
           - 2.4
-      -
-        name: Integrated Braintree for payments
+      - name: Integrated Braintree for payments
         versions:
           - 2.2
           - 2.3
           - 2.4
-      -
-        name: PayPal in-context checkout
+      - name: PayPal in-context checkout
         versions:
           - 2.1
           - 2.2
           - 2.3
           - 2.4
-  -
-    name: Smarter, faster operations
+  - name: Smarter, faster operations
     features:
-      -
-        name: Enhanced Media Gallery & Asset Management
+      - name: Enhanced Media Gallery & Asset Management
         versions:
           - 2.4
-      -
-        name: Buy Online Pickup In-Store (BOPIS)
+      - name: Buy Online Pickup In-Store (BOPIS)
         versions:
           - 2.4
-      -
-        name: B2B Order Approval Workflows
+      - name: Store Fulfillment (Advanced omnichannel fulfillment)
         versions:
           - 2.4
-      -
-        name: Adobe Stock Integration
+      - name: B2B Order Approval Workflows
         versions:
-          - 2.3
           - 2.4
-      -
-        name: Multi-Source Inventory management
+      - name: Adobe Stock Integration
         versions:
           - 2.3
           - 2.4
-      -
-        name: Adobe Commerce Reporting
+      - name: Multi-Source Inventory management
+        versions:
+          - 2.3
+          - 2.4
+      - name: Adobe Commerce Reporting
         versions:
           - 2.1
           - 2.2
           - 2.3
           - 2.4
-      -
-        name: Content staging & preview
+      - name: Content staging & preview
         versions:
           - 2.1
           - 2.2
           - 2.3
           - 2.4
-      -
-        name: Payment Services reporting and reconciliation dashboard
+      - name: Payment Services reporting and reconciliation dashboard
         versions:
           - 2.4
-  -
-    name: Platform, performance, and security enhancements
+  - name: Platform, performance, and security enhancements
     features:
-      -
-        name: Site-wide Analysis Tool
+      - name: Site-wide Analysis Tool
         versions:
           - 2.4
-      -
-        name: Composer Update Plugin
+      - name: Composer Update Plugin
         versions:
           - 2.4
-      -
-        name: Upgrade Compatibility Tool
+      - name: Upgrade Compatibility Tool
         versions:
           - 2.4
-      -
-        name: In-Product Guidance
+      - name: In-Product Guidance
         versions:
           - 2.4
-      -
-        name: PHP 8.1
+      - name: PHP 8.1
         versions:
           - 2.4
-      -
-        name: PHP 7.4
+      - name: PHP 7.4
         versions:
           - 2.4
-      -
-        name: PHP 7.3
+      - name: PHP 7.3
         versions:
           - 2.3
           - 2.4
-      -
-        name: Continued tech stack updates
+      - name: Continued tech stack updates
         versions:
           - 2.3
           - 2.4
-      -
-        name: Ongoing performance, quality, and security improvements
+      - name: Ongoing performance, quality, and security improvements
         versions:
           - 2.3
           - 2.4
-      -
-        name: Asynchronous & Bulk APIs
+      - name: Asynchronous & Bulk APIs
         versions:
           - 2.3
           - 2.4
-      -
-        name: GraphQL
+      - name: GraphQL
         versions:
           - 2.3
           - 2.4
-      -
-        name: Declarative Schema for easier installations and upgrades
+      - name: Declarative Schema for easier installations and upgrades
         versions:
           - 2.3
           - 2.4
-      -
-        name: Security Tools:/ 2FA, ReCAPTCHA, ACL, WAF
+      - name: Security Tools:/ 2FA, ReCAPTCHA, ACL, WAF
         versions:
           - 2.3
           - 2.4
-      -
-        name: Commerce-optimized cloud
+      - name: Commerce-optimized cloud
         versions:
           - 2.1
           - 2.2
