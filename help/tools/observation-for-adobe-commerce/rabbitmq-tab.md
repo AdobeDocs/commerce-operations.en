@@ -1,16 +1,16 @@
 ---
-title: "The [!UICONTROL RabbitMQ] tab"
-description: Learn about the [!UICONTROL RabbitMQ] tab of [!DNL Observation for Adobe Commerce].
+title: "The [!UICONTROL [!DNL RabbitMQ]] tab"
+description: Learn about the [!UICONTROL [!DNL RabbitMQ]] tab of [!DNL Observation for Adobe Commerce].
 ---
-# The [!UICONTROL RabbitMQ] tab
+# The [!UICONTROL [!DNL RabbitMQ]] tab
 
-The **[!UICONTROL RabbitMQ]** tab has information that is focused on [!DNL RabbitMQ] signals.
+The **[!UICONTROL [!DNL RabbitMQ]]** tab has information that is focused on [!DNL RabbitMQ] signals.
 
-## [!UICONTROL RabbitMQ Infrastructure events]
+## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![RabbitMQ Infrastructure events](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+![[!DNL RabbitMQ] Infrastructure events](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-The **[!UICONTROL RabbitMQ Infrastructure events]** frame shows Infrastructure events that involve [!DNL RabbitMQ] that occurred across the selected timeframe:
+The **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** frame shows Infrastructure events that involve [!DNL RabbitMQ] that occurred across the selected timeframe:
 
 * %Response [error] for node [rabbit@host1]: unexpected http response from%') as 'unexpected_resp_node1'
 * '%Response [error] for node [rabbit@host2]: unexpected http response from%') as 'unexpected_resp_node2'
@@ -34,18 +34,18 @@ as 'node3_timeout_exceeded'
 * '%Entity modified: version/management%') as 'rmq_entity_modified_ver_mgt'
 * '%Entity modified: version/management%') as 'rmq_entity_modified_ver_mgt'
 
-## [!UICONTROL RabbitMQ service start/stop signals]
+## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![RabbitMQ service start/stop signals](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] service start/stop signals](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
 This frame shows [!DNL RabbitMQ] service start/stop signals that occurred during the selected timeframe:
 
-* '%RabbitMQ is asked to stop...%') as 'rabbitmq_stop'
-* '%Starting RabbitMQ%') as 'rabbitmq_start'
+* '%[!DNL RabbitMQ] is asked to stop...%') as 'rabbitmq_stop'
+* '%Starting [!DNL RabbitMQ]%') as 'rabbitmq_start'
 
-## [!UICONTROL RabbitMQ errors]
+## [!UICONTROL [!DNL RabbitMQ] errors]
 
-![RabbitMQ errors](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
+![[!DNL RabbitMQ] errors](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
 
 This frame shows [!DNL RabbitMQ] errors that occurred during the selected timeframe:
 
@@ -55,9 +55,9 @@ This frame shows [!DNL RabbitMQ] errors that occurred during the selected timefr
 * '%Connection attempt from disallowed node%') as 'disallowed_node'
 * '%closing AMQP connection%') as 'rmq_err_amqp_conn'
 
-## [!UICONTROL RabbitMQ node status]
+## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![RabbitMQ node status](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] node status](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
 * '%rabbit on node rabbit@host1 down%') as 'rmq_node1_down'
 * '%rabbit on node rabbit@host2 down%') as 'rmq_node2_down'
@@ -66,47 +66,47 @@ This frame shows [!DNL RabbitMQ] errors that occurred during the selected timefr
 * '%rabbit on node rabbit@host2 up%') as 'rmq_node2_up'
 * '%rabbit on node rabbit@host3 up%') as 'rmq_node3_up'
 
-## [!UICONTROL RabbitMQ Message High-Level Summary status by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-![RabbitMQ Message High-Level Summary status by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
+![[!DNL RabbitMQ] Message High-Level Summary status by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-The **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** graph shows the number of published messages by the [!DNL RabbitMQ] queue for the selected timeframe.
+The **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** graph shows the number of published messages by the [!DNL RabbitMQ] queue for the selected timeframe.
 
-## [!UICONTROL RabbitMQ Message Detail Summary]
+## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-![RabbitMQ Message Detail Summary](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
+![[!DNL RabbitMQ] Message Detail Summary](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
 * '%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%') as 'queue_err'
 * '%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%') as 'queue_err'
 * '%authenticated and granted access to vhost%') as 'auth'
 * '%closing AMQP connection%') as 'close_conn'
 
-## [!UICONTROL RabbitMQ Queue Consumption MB]
+## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
-![RabbitMQ Queue Consumption MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
+![[!DNL RabbitMQ] Queue Consumption MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-The **[!UICONTROL RabbitMQ Queue Consumption MB]** graph shows the number of bytes consumed by each [!DNL RabbitMQ] queue over the selected timeframe.
+The **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** graph shows the number of bytes consumed by each [!DNL RabbitMQ] queue over the selected timeframe.
 
-## [!UICONTROL RabbitMQ Published Messages by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-![RabbitMQ Published Messages by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
+![[!DNL RabbitMQ] Published Messages by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-The **[!UICONTROL RabbitMQ Published Messages by Queue]** graph shows the number of bytes consumed by each [!DNL RabbitMQ] queue over the selected timeframe.
+The **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** graph shows the number of bytes consumed by each [!DNL RabbitMQ] queue over the selected timeframe.
 
-## [!UICONTROL RabbitMQ Published Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-![RabbitMQ Published Message Throughput by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
+![[!DNL RabbitMQ] Published Message Throughput by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-The **[!UICONTROL RabbitMQ Published Message Throughput by Queue]** graph shows the average number of published messages per second by each [!DNL RabbitMQ] queue over the selected timeframe.
+The **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** graph shows the average number of published messages per second by each [!DNL RabbitMQ] queue over the selected timeframe.
 
-## [!UICONTROL RabbitMQ Total Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-![RabbitMQ Total Message Throughput by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
+![[!DNL RabbitMQ] Total Message Throughput by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-The **[!UICONTROL RabbitMQ Total Message Throughput by Queue]** graph shows the average total number of messages per second by each [!DNL RabbitMQ] queue over the selected timeframe.
+The **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** graph shows the average total number of messages per second by each [!DNL RabbitMQ] queue over the selected timeframe.
 
-## [!UICONTROL RabbitMQ Consumers by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![RabbitMQ Consumers by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] Consumers by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-The **[!UICONTROL RabbitMQ Consumers by Queue]** graph shows the average total number of consumers by each [!DNL RabbitMQ] queue over the selected timeframe.
+The **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** graph shows the average total number of consumers by each [!DNL RabbitMQ] queue over the selected timeframe.

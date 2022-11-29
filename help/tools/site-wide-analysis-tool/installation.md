@@ -1,6 +1,6 @@
 ---
 title: Install Guide
-description: Use this guide to install [!DNL Site-Wide Analysis Tool] for your website
+description: "Use this guide to install [!DNL Site-Wide Analysis Tool] for your website"
 ---
 # Install Guide
 
@@ -52,17 +52,21 @@ Your on-premises infrastructure must meet the following requirements before inst
 
 - Bash/shell utilities
 
-  - `grep`
+  - `php`
   
+  - `wget`
+
   - `awk`
 
   - `nice`
 
   - `grep`
 
+  - `openssl`
+
 ## [!DNL Commerce Services Connector]
 
-The agent requires the [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) extension to be installed on your system and [configured](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) with API keys. To verify that the extension is installed, run the following command:
+The agent requires the [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) extension to be installed on your system and [configured](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) with API keys. To verify that the extension is installed, run the following command:
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -78,7 +82,7 @@ If you have installed the extension and configured it using an existing API key 
 
 1. Click **[!UICONTROL Delete]** next to the existing API Key.
 
-1. [Configure](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) a new API key.
+1. [Configure](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) a new API key.
 
 >[!IMPORTANT]
 >
@@ -104,7 +108,7 @@ If the extension is not installed, use the following instructions to install it:
    bin/magento setup:upgrade
    ```
 
-1. [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) to connect the extension to your system.
+1. [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) to connect the extension to your system.
 
 ## Install the agent
 
@@ -181,7 +185,7 @@ If you do not want to use our [shell script](https://github.com/magento-swat/ins
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. Inpack the launcher archive.
+   1. Unpack the launcher archive.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz

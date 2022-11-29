@@ -41,4 +41,4 @@ Adobe Commerce provides three flexible integration options:
 
 ![Adobe Commerce integration options](../../assets/playbooks/integration-options.svg)
 
-Even though real-time integrations are usually desired, it’s not necessary for some scenarios. Adobe Commerce natively supports RabbitMQ as the message bus to enable asynchronous processes, which is recommended for some data that is not necessary to exchange in real time, but rather to update with batch-file exchange or REST batch data process API to process asynchronously.
+Even though real-time integrations are usually desired, it’s not necessary for some scenarios. Adobe Commerce natively supports [!DNL RabbitMQ] as the message bus to enable asynchronous processes, which is recommended for some data that is not necessary to exchange in real time, but rather to update with batch-file exchange or REST batch data process API to process asynchronously.
