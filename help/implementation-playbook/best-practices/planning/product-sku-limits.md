@@ -10,7 +10,9 @@ feature-set: Commerce
 
 To maximize performance, the recommended maximum for effective product Stocking Keeping Units (SKUs) is 242 million. This effective product maximum is calculated as:
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 Having more than the maximum number of effective SKUs slows down product data retrieval and increases the time to complete Admin operations.
 
