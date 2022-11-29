@@ -38,7 +38,7 @@ user-guide-description: Learn about the different tools you can use with Adobe C
     - [The Alerts tab](observation-for-adobe-commerce/alerts-tab.md)
     - [The WAF tab](observation-for-adobe-commerce/waf-tab.md)
     - [The CDN tab](observation-for-adobe-commerce/cdn-tab.md)
-    - [The RabbitMQ tab](observation-for-adobe-commerce/rabbitmq-tab.md)
+    - [The [!DNL RabbitMQ] tab](observation-for-adobe-commerce/rabbitmq-tab.md)
     - [The Cron tab](observation-for-adobe-commerce/cron-tab.md)
     - [The Indexing tab](observation-for-adobe-commerce/indexing-tab.md)
     - [The QuickView tab](observation-for-adobe-commerce/oac-quickview-tab.md)

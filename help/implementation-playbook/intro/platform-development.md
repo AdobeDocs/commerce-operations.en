@@ -26,6 +26,6 @@ Adobe Commerce on cloud infrastructure is a managed, automated hosting platform 
 
 ![Adobe Commerce component infographics](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce on cloud infrastructure provides a pre-provisioned infrastructure that includes PHP, MySQL, Redis, RabbitMQ, and OpenSearch/Elasticsearch technologies; a Git-based workflow with automatic build and deploy operations for efficient rapid development and continuous deployment every time code changes are pushed in a Platform as a Service (PaaS) environment; highly customizable environment-configuration files and tools; and AWS hosting that offers a scalable and secure environment for online sales and retailing.
+Adobe Commerce on cloud infrastructure provides a pre-provisioned infrastructure that includes PHP, MySQL, Redis, [!DNL RabbitMQ], and Elasticsearch technologies; a Git-based workflow with automatic build and deploy operations for efficient rapid development and continuous deployment every time code changes are pushed in a Platform as a Service (PaaS) environment; highly customizable environment-configuration files and tools; and AWS hosting that offers a scalable and secure environment for online sales and retailing.
 
 ![Adobe Commerce component infographics](../../assets/playbooks/cloud-tech-stack.svg)

@@ -89,7 +89,7 @@ While Varnish full page cache memory invalidation is effective, we recommend all
 
 ### Message queues
 
-The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the consumers that receive the messages asynchronously. Adobe Commerce supports RabbitMQ as the messaging broker, which provides a scalable platform for sending and receiving messages.
+The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the consumers that receive the messages asynchronously. Adobe Commerce supports [!DNL RabbitMQ] as the messaging broker, which provides a scalable platform for sending and receiving messages.
 
 ### Performance testing and monitoring
 

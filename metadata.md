@@ -1,10 +1,14 @@
 ---
-mini-toc-levels: 2
+product: magento
+description: Adobe Commerce Operational Guides
 git-repo: https://github.com/AdobeDocs/commerce-operations.en
 index: yes
-solution: Commerce
-product: magento
+mini-toc-levels: 2
+feature-set: Commerce
 type: Documentation
+cloud: Experience Cloud
+solution-title: Commerce
+solution: Commerce
 ---
 
 # Metadata for internal use
