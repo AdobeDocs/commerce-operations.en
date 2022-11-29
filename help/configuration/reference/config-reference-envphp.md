@@ -179,7 +179,7 @@ For example, if `queue/default_connection` is `amqp` in `env.php` but a `db` con
 
 ## directories
 
-Optional directory mapping options that need to be set when the web server is configured to serve Commerce app from the `/pub` directory for [improved security][change-docroot-to-pub].
+Optional directory mapping options that need to be set when the web server is configured to serve Commerce app from the `/pub` directory for [improved security](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -213,7 +213,7 @@ The installation date of Commerce application.
 
 Lock provider settings are configured using the `lock` node.
 
-Learn more about [Lock Provider Configuration][lock-provider-config].
+Learn more about [Lock Provider Configuration](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -293,6 +293,4 @@ Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
-[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/

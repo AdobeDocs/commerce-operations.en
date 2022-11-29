@@ -1,6 +1,6 @@
 ---
 title: Install Guide
-description: Use this guide to install [!DNL Site-Wide Analysis Tool] for your website
+description: "Use this guide to install [!DNL Site-Wide Analysis Tool] for your website"
 ---
 # Install Guide
 
@@ -52,13 +52,17 @@ Your on-premises infrastructure must meet the following requirements before inst
 
 - Bash/shell utilities
 
-  - `grep`
+  - `php`
   
+  - `wget`
+
   - `awk`
 
   - `nice`
 
   - `grep`
+
+  - `openssl`
 
 ## [!DNL Commerce Services Connector]
 
@@ -181,7 +185,7 @@ If you do not want to use our [shell script](https://github.com/magento-swat/ins
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. Inpack the launcher archive.
+   1. Unpack the launcher archive.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
