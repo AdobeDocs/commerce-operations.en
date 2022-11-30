@@ -34,18 +34,8 @@ Keep the following guidelines in mind when you create the plan and schedule to c
 
 >[!WARNING]
 >
-> [!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. Do the following:
-1. Rename the existing table:
-     
-      ```mysql
-        RENAME TABLE <existing_table> <table_old>;
-      ```
-1. Create a new table from the data in the existing table:
-
-     ```mysql
-       CREATE TABLE <existing_table> SELECT * from <table_old>;
-     ```
-
+>[!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. Run the following command: `RENAME TABLE <existing_table> <table_old>;` Then create a new table from the data in the existing table by running this command: `CREATE TABLE <existing_table> SELECT * from <table_old>;`
+  
 You can convert tables on one node in your cluster. The changes will replicate to the other core nodes in your cluster.
 
 1. From your Adobe Commerce on cloud infrastructure environment, use SSH to connect to node 1.
