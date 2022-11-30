@@ -31,10 +31,6 @@ Keep the following guidelines in mind when you create the plan and schedule to c
 - Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the `ALTER` commands.
 
 ### Convert database tables
-
->[!WARNING]
->
->[!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. Run the following command: `RENAME TABLE <existing_table> <table_old>;` Then create a new table from the data in the existing table by running this command: `CREATE TABLE <existing_table> SELECT * from <table_old>;` This command creates a new [!DNL InnoDb] table, copied from the old data. 
   
 You can convert tables on one node in your cluster. The changes will replicate to the other core nodes in your cluster.
 
@@ -42,7 +38,7 @@ You can convert tables on one node in your cluster. The changes will replicate t
 
 1. Log in to MariaDB.
 
-1. Convert the table format.
+1. Convert the table format. (Note: [!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. Run the following command: `RENAME TABLE <existing_table> <table_old>;` Then create a new table from the data in the existing table by running this command: `CREATE TABLE <existing_table> SELECT * from <table_old>;` This command creates a new [!DNL InnoDb] table, copied from the old data.)
 
    - Identify tables to be converted from compact to dynamic format.
 
