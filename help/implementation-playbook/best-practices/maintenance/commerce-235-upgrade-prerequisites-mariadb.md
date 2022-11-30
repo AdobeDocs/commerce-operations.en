@@ -45,16 +45,16 @@ You can convert tables on one node in your cluster. The changes will replicate t
     [!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. 
 
       1. Run the following command: 
-          ```mysql 
+            ```mysql 
             RENAME TABLE <existing_table> <table_old>;
             ```
 
       1. Then create a new table from the data in the existing table by running this command: 
-          ```mysql 
-             CREATE TABLE <existing_table> SELECT * from <table_old>;
+            ```mysql 
+            CREATE TABLE <existing_table> SELECT * from <table_old>;
              ```
 
-          This command creates a new [!DNL InnoDb] table, copied from the old data.)
+      This command creates a new [!DNL InnoDb] table, copied from the old data.)
 
    **Non Pro:**
 
