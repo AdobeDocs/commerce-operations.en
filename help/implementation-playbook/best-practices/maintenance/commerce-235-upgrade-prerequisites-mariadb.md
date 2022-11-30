@@ -38,55 +38,73 @@ You can convert tables on one node in your cluster. The changes will replicate t
 
 1. Log in to MariaDB.
 
-1. Convert the table format. (Note: [!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. Run the following command: `RENAME TABLE <existing_table> <table_old>;` Then create a new table from the data in the existing table by running this command: `CREATE TABLE <existing_table> SELECT * from <table_old>;` This command creates a new [!DNL InnoDb] table, copied from the old data.)
+1. Convert the table format:
 
-   - Identify tables to be converted from compact to dynamic format.
+    **Pro:**
 
-     ```mysql
-     SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
-     ```
+    [!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. 
 
-   - Determine the table sizes so you can schedule the conversion work.
+      1. Run the following command: 
+          ```mysql 
+            RENAME TABLE <existing_table> <table_old>;
+            ```
 
-     ```mysql
-     SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
-     ```
+      1. Then create a new table from the data in the existing table by running this command: 
+          ```mysql 
+             CREATE TABLE <existing_table> SELECT * from <table_old>;
+             ```
+
+          This command creates a new [!DNL InnoDb] table, copied from the old data.)
+
+   **Non Pro:**
+
+    1. Identify tables to be converted from compact to dynamic format.
+
+        ```mysql
+            SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+             ```
+
+    1. Determine the table sizes so you can schedule the conversion work.
+
+        ```mysql
+            SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM      information_schema.TABLES ORDER BY (data_length + index_length) DESC;
+        ```
 
      Larger tables take longer to convert. You should plan accordingly when taking your site in and out of maintenance mode which batches of tables to convert in which order, so as to plan the timings of the maintenance windows needed
 
-   - Convert all tables to dynamic format one at a time.
+    1. Convert all tables to dynamic format one at a time.
 
-     ```mysql
-     ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
-     ```
+        ```mysql
+        ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
+        ```
 
-1. Update the table storage engine.
+     1. Update the table storage engine.
 
-   - Identify tables that use `MyISAM` storage.
+     1. Identify tables that use `MyISAM` storage.
+  
+        ```mysql
+        SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+        ```
 
-     ```mysql
-     SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
-     ```
+      1. Convert tables that use `MyISAM` storage to `InnoDB` storage.
 
-   - Convert tables that use `MyISAM` storage to `InnoDB` storage.
+        ```mysql
+        ALTER TABLE [ table name here ] ENGINE=InnoDB;
+        ```
 
-     ```mysql
-     ALTER TABLE [ table name here ] ENGINE=InnoDB;
-     ```
-
-1. Verify the conversion.
+      1. Verify the conversion.
 
    This step is required because code deployments made after you completed the conversion might cause some tables to be reverted to their original configuration.
 
    - The day before the scheduled upgrade to MariaDB version 10.2, login to your database and run the queries to check the format and storage engine.
 
-     ```mysql
-     SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
-     ```
+      ```mysql
+      SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
+      ```
 
-     ```mysql
-     SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
-     ```
+      ```mysql
+      SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+      ```
 
    - If any tables have been reverted, repeat the steps to change the table format and storage engine.
 
