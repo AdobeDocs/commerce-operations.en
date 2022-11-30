@@ -34,7 +34,7 @@ Keep the following guidelines in mind when you create the plan and schedule to c
 
 >[!WARNING]
 >
->[!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. Run the following command: `RENAME TABLE <existing_table> <table_old>;` Then create a new table from the data in the existing table by running this command: `CREATE TABLE <existing_table> SELECT * from <table_old>;`
+>[!DNL MyISAM] tables should not be converted to [!DNL InnoDB] with `ALTER TABLE` on Pro clusters, as they will still lack replication. Recreate the tables as [!DNL InnoDB] tables by renaming and copying the data to ensure they replicate. Run the following command: `RENAME TABLE <existing_table> <table_old>;` Then create a new table from the data in the existing table by running this command: `CREATE TABLE <existing_table> SELECT * from <table_old>;` This command creates a new [!DNL InnoDb] table, copied from the old data. 
   
 You can convert tables on one node in your cluster. The changes will replicate to the other core nodes in your cluster.
 
