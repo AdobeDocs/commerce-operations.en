@@ -44,7 +44,7 @@ Keep the following guidelines in mind when you create the plan and schedule to c
 
      ```mysql
        CREATE TABLE <existing_table> SELECT * from <table_old>;
-      ```
+     ```
 
 You can convert tables on one node in your cluster. The changes will replicate to the other core nodes in your cluster.
 
