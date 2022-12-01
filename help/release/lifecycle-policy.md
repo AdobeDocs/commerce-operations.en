@@ -28,7 +28,7 @@ For Adobe Commerce 2.4 and subsequent releases:
 >
 >See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
-<table>
+<table style="table-layout:auto">
 <thead>
   <tr>
     <th colspan="2"></th>
@@ -93,11 +93,9 @@ For Adobe Commerce 2.4 and subsequent releases:
 </tbody>
 </table>
 
-<table style="table-layout:auto">
-
 ## Key
 
-<table>
+<table style="table-layout:auto">
   <thead>
    <tr>
     <th></th>
