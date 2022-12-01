@@ -27,7 +27,7 @@ Ensure that you updated all system requirements and dependencies in your environ
 
 >[!NOTE]
 >
->For Adobe Commerce on cloud infrastructure Pro projects, you must create a [Support](https://support.magento.com/hc/en-us) ticket to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+>For Adobe Commerce on cloud infrastructure Pro projects, you must create a [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ticket to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Verify that a supported search engine is installed
 
