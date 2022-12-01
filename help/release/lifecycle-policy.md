@@ -22,6 +22,7 @@ For Adobe Commerce 2.4 and subsequent releases:
 | Adobe Commerce 2.4.6       | January 25, 2025 for PHP 8.1 deployments<br>January 25, 2026 for PHP 8.2 deployments | PHP 8.1<br>PHP 8.2    |
 
 {style="table-layout:auto"}
+
 <sup>1 End of Software Support includes both end of quality fixes and end of security fixes.</sup><br>
 
 >[!NOTE]
@@ -113,5 +114,3 @@ For Adobe Commerce 2.4 and subsequent releases:
   </tr>
  </tbody>
 </table>
-
-<table style="table-layout:auto">

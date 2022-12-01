@@ -11,7 +11,7 @@ Adobe releases security and functional patches for each supported release line o
 
 The following table provides the dates for scheduled releases (dates are subject to change):
 
-| Release                                                       | Versions                                        | Adobe Commerce Pre-release | Adobe Commerce & Magento Open Source<br>General Availability |
+| Release                                                       | Versions                                        | Adobe Commerce Pre-release | Adobe Commerce & Magento Open Source General Availability    |
 |---------------------------------------------------------------|-------------------------------------------------|----------------------------|--------------------------------------------------------------|
 | January 2023 Feature release                                  | \-\-                                            | \-\-                       | January 17, 2023                                             |
 | March 2023 Feature + patch release + security patch release   | 2.4.6<sup>1</sup><br>2.4.5-p2<br>2.4.4-p3       | February 28, 2023          | March 14, 2023                                               |
@@ -21,6 +21,7 @@ The following table provides the dates for scheduled releases (dates are subject
 | October 2023 Feature + patch release + security patch release | 2.4.7-beta3<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | September 26, 2023         | October 10, 2023                                             |
 
 {style="table-layout:auto"}
+
 <sup>\-\- Indicates items that are not applicable to this release.</sup><br>
 <sup>1 Beta scheduled for January 2023</sup>
 
