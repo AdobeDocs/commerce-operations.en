@@ -50,7 +50,7 @@ The **[!UICONTROL Error Percentage]** box displays the value of the ERROR percen
 
 ![Fastly Cache Average Response for selected time period in seconds](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
-This frame shows the duration in seconds of the cacheable requests, meaning that if a `cache_response` is a MISS, it displays the average for missed cached responses for the selected time.
+This frame shows the duration in seconds of the cacheable requests, meaning that if a `cache_response` is a [!UICONTROL MISS], it displays the average for missed cached responses for the selected time.
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
@@ -64,7 +64,7 @@ This frame shows the duration in seconds of the cacheable requests, meaning that
 
 ![Requests – Since selected time frame compared with one week ago](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
-This frame is similar to the summary box for Total Requests at the top but shows the prior weeks requests counts. These are all requests, not just cacheable requests (where `is_cacheable` is true).
+This frame is similar to the summary box for [!UICONTROL Total Requests] at the top, but shows the prior weeks' requests counts. These are all requests, not just cacheable requests (where `is_cacheable` is true).
 
 ## [!UICONTROL Response Count]
 
@@ -78,7 +78,7 @@ This frame is similar to the summary box for Total Requests at the top but shows
 
 ![Top 5 URLs (5xx or 3xx status codes)](../../assets/tools/observation-for-adobe-commerce/cdn-tab-15.gif)
 
-The **[!UICONTROL Top 5 URLs]** view shows the top 5 URLs that are experiencing 5xx or 3xx error responses. Due to the space constraint, you’ll need to mouse over the URL to see the specific error code associated with that URL. (example in the red box of the figure above).
+The **[!UICONTROL Top 5 URLs]** view shows the top 5 URLs that are experiencing 5xx or 3xx error responses. Due to the space constraint, you'll need to mouse over the URL to see the specific error code associated with that URL. (example in the red box of the figure above).
 
 ## [!UICONTROL Top 25 URLs (200 status)]
 
@@ -108,7 +108,7 @@ The **[!UICONTROL Duration by Response Status, top 25 non-200 status]** graph is
 
 ![Error Count by POP timeline](../../assets/tools/observation-for-adobe-commerce/cdn-tab-20.png)
 
-The **[!UICONTROL Error Count by POP timeline]** graph displays the error statuses’ count along the selected timeframe timeline, faceted by the error code.
+The **[!UICONTROL Error Count by POP timeline]** graph displays the error statuses' count along the selected timeframe timeline, faceted by the error code.
 
 ## [!UICONTROL Duration by Response status, top 25 client IP, non-200 status]
 
@@ -120,4 +120,4 @@ The **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]
 
 ![IP Frequency](../../assets/tools/observation-for-adobe-commerce/cdn-tab-22.jpeg)
 
-The **[!UICONTROL IP Frequency]** frame counts the (‘MISS’ and ‘PASS’) statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website. This graph is also present on the summary tab and is placed here for easy comparison to more details on the [!DNL Fastly] log information displayed on this tab.
+The **[!UICONTROL IP Frequency]** frame counts the ('MISS' and 'PASS') statuses for each IP from the [!DNL Fastly] logs. Web requests with these statuses will reach the origin server and will add load to the server. It shows the top twenty addresses in frequency. This frame can be used to detect IP attacks or sources of heavy load on a website. This graph is also present on the summary tab and is placed here for easy comparison to more details on the [!DNL Fastly] log information displayed on this tab.
