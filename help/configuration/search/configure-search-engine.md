@@ -7,7 +7,7 @@ description: Configure a search engine with Adobe Commerce and Magento Open Sour
 
 This section discusses the minimum settings that you must choose to test Elasticsearch or OpenSearch with Adobe Commerce and Magento Open Source. As of versions 2.4.4 and 2.4.3-p2, all fields labeled **Elasticsearch** also apply to OpenSearch.
 
-For additional details about configuring your search engine, see the [User Guide](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html).
+For additional details about configuring your search engine, see the [User Guide](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configure your search engine from the Admin
 
