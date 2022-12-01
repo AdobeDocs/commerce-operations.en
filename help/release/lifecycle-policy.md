@@ -7,7 +7,7 @@ description: Learn about key dates for end of software support for Adobe Commerc
 
 For Adobe Commerce 2.4 and subsequent releases:
 
--  To better streamline our lifecycle policy, Adobe provides quality fixes to the 2.4 release line until the end of support date of the PHP version upon which it is based. A customer can access quality fixes by contacting [Adobe Commerce Support](https://developer.adobe.com/commerce/contributor/community/support/) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} if their version is still eligible for quality support. Refer to the table below for the End of Software Support dates for Adobe Commerce release lines.
+-  To better streamline our lifecycle policy, Adobe provides quality fixes to the 2.4 release line until the end of support date of the [PHP version](https://www.php.net/supported-versions.php) upon which it is based. A customer can access quality fixes by contacting [Adobe Commerce Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} if their version is still eligible for quality support. Refer to the table below for the End of Software Support dates for Adobe Commerce release lines.
 
 -  Adobe provides security fixes only through the latest patch or security patch release, even if a customer's version is still eligible for quality support. Unlike quality fixes, security fixes cannot be backported to previous minor releases nor to previous patch releases within supported minor releases.
 
@@ -15,15 +15,15 @@ For Adobe Commerce 2.4 and subsequent releases:
 
 ## End of Software Support
 
-| Release                          | Release Date      | End of Software Support<sup>1</sup> | Dependent PHP Version       |
-| -------------------------------- | ----------------- | ----------------------------------- | --------------------------- |
-| Adobe Commerce 2.3         | November 28, 2018 | September 8, 2022<sup>2</sup>       | PHP 7.3 and 7.4<sup>3</sup> |
-| Adobe Commerce 2.4.0-2.4.3 | July 28, 2020     | November 28, 2022                   | PHP 7.4                     |
-| Adobe Commerce 2.4.4-2.4.6 | April 12, 2022    | November 25, 2024                   | PHP 8.1                     |
+| Release                    | End of Software Support<sup>1</sup>                                                  | Dependent PHP Version |
+|----------------------------|--------------------------------------------------------------------------------------|-----------------------|
+| Adobe Commerce 2.4.0-2.4.3 | November 28, 2022                                                                    | PHP 7.4               |
+| Adobe Commerce 2.4.4-2.4.5 | January 25, 2025                                                                     | PHP 8.1               |
+| Adobe Commerce 2.4.6       | January 25, 2025 for PHP 8.1 deployments<br>January 25, 2026 for PHP 8.2 deployments | PHP 8.1<br>PHP 8.2    |
+
+{style="table-layout:auto"}
 
 <sup>1 End of Software Support includes both end of quality fixes and end of security fixes.</sup><br>
-<sup>2 The End of Software Support date for 2.3 has been extended to September 8, 2022 to allow more time for customers to upgrade to the 2.4.4 release that will be generally available on March 8, 2022.</sup><br>
-<sup>3 2.3.0-2.3.6 depend on PHP 7.3; 2.3.7 depends on PHP 7.4.</sup>
 
 >[!NOTE]
 >
@@ -36,6 +36,8 @@ For Adobe Commerce 2.4 and subsequent releases:
     <th colspan="4">2022</th>
     <th colspan="4">2023</th>
     <th colspan="4">2024</th>
+    <th colspan="4">2025</th>
+    <th colspan="4">2026</th>
   </tr>
 </thead>
 <tbody>
@@ -54,25 +56,40 @@ For Adobe Commerce 2.4 and subsequent releases:
     <td>Q2</td>
     <td>Q3</td>
     <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
     <td>2.4.0 - 2.4.3</td>
     <td style="text-align:center">7.4</td>
     <td colspan="3" style="background-color:#67ac68;"></td>
     <td style="background-color:#cd3c3c;">Nov</td>
-    <td colspan="8" ></td>
+    <td colspan="16"></td>
   </tr>
   <tr>
-    <td>2.4.4</td>
-    <td rowspan="2" style="text-align:center">8.1</td>
-    <td></td>
-    <td colspan="10" style="background-color:#67ac68;">Mar</td>
-    <td rowspan="2" style="background-color:#cd3c3c;">Nov</td>
+    <td>2.4.4 - 2.4.5</td>
+    <td style="text-align:center">8.1</td>
+    <td colspan="12" style="background-color:#67ac68;"></td>
+    <td rowspan="2" style="background-color:#cd3c3c;">Jan</td>
+    <td colspan="7"></td>
   </tr>
   <tr>
-    <td>2.4.5</td>
-    <td colspan="2"></td>
-    <td colspan="9" style="background-color:#67ac68;">Aug</td>
+    <td rowspan="2">2.4.6</td>
+    <td style="text-align:center">8.1</td>
+    <td colspan="12" style="background-color:#67ac68;"></td>
+    <td colspan="7"></td>
+  </tr>
+  <tr>
+    <td style="text-align:center">8.2</td>
+    <td colspan="16" style="background-color:#67ac68;"></td>
+    <td style="background-color:#cd3c3c;">Jan</td>
+    <td colspan="3"></td>
   </tr>
 </tbody>
 </table>
