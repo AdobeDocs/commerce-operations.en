@@ -10,7 +10,7 @@ feature: Best Practices
 
 This article explains how to prepare your database when upgrading to Adobe Commerce 2.3.5 from version 2.3.4 or earlier.
 
-This upgrade requires the support team to upgrade MariaDB on the cloud infrastructure from MariaDB 10.0 to 10.2 to meet requirements for Adobe Commerce . Adobe Commerce version 2.3.5 and later.
+This upgrade requires the support team to upgrade MariaDB on the cloud infrastructure from MariaDB 10.0 to 10.2 to meet requirements for Adobe Commerce version 2.3.5 and later.
 
 ## Affected product and versions
 
@@ -33,9 +33,9 @@ Keep the following considerations in mind when you plan and schedule the convers
 
 - Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the commands to convert database tables.
 
-### Convert database row format
+### Convert database table row format
 
-You can convert tables on one node in your cluster. The changes replicate automatically to the other core nodes.
+You can convert tables on one node in your cluster. The changes replicate automatically to the other service nodes.
 
 1. From your Adobe Commerce on cloud infrastructure environment, use SSH to connect to node 1.
 
@@ -61,9 +61,9 @@ You can convert tables on one node in your cluster. The changes replicate automa
    ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
    ```
 
-### Convert database storage format
+### Convert database table storage format
 
-You can convert tables on one node in your cluster. The changes replicate automatically to the other core nodes.
+You can convert tables on one node in your cluster. The changes replicate automatically to the other service nodes.
 
 The process to convert the storage format is different for Adobe Commerce Starter and Adobe Commerce Pro projects.
 
