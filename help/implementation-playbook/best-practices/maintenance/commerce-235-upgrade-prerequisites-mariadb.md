@@ -31,7 +31,7 @@ Keep the following considerations in mind when you plan and schedule the convers
 
 - Complete the conversion work during a low traffic period on your site.
 
-- Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the commands to convert database tables from `MyISAM` to `InnoDB` commands.
+- Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the commands to convert database tables.
 
 ### Convert database row format
 
