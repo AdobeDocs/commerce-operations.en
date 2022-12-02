@@ -15,7 +15,7 @@ Commerce stores the hashed data version in Redis, with the suffix ':hash' append
 
 >[!INFO]
 >
->For Adobe Commerce on cloud infrastructure, you can use [deploy variables](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) for L2 cache configuration.
+>For Adobe Commerce on cloud infrastructure, you can use [deploy variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) for L2 cache configuration.
 
 ## Configuration example
 
