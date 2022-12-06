@@ -76,7 +76,11 @@ If you have installed the extension and configured it using an existing API key 
 
 1. Put your website into [maintenance mode](../../installation/tutorials/maintenance-mode.md).
 
-1. Log into [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+1. Log into [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+
+   >[!NOTE]
+   >
+   > If you have trouble accessing your account, see [Unable to log in to Adobe Commerce support or cloud account](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) for troubleshooting help.
 
 1. Click **[!UICONTROL API Portal]**.
 
