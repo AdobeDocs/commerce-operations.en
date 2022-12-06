@@ -14,11 +14,8 @@ The **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** frame shows Infrastru
 
 * `%Response [error] for node [rabbit@host1]: unexpected http response from%`) as `unexpected_resp_node1`
 * `%Response [error] for node [rabbit@host2]: unexpected http response from%`) as `unexpected_resp_node2`
-* `%Response [error] for node [rabbit@host3]: unexpected http response from%`) as 
-`unexpected_resp_node3`
-* `%Response [error] for node [rabbit@host3]: Get 
-"http://localhost:15672/api/healthchecks/node/rabbit@host3": context deadline exceeded%`) 
-as `node3_timeout_exceeded`
+* `%Response [error] for node [rabbit@host3]: unexpected http response from%`) as `unexpected_resp_node3`
+* `%Response [error] for node [rabbit@host3]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host3": context deadline exceeded%`) as `node3_timeout_exceeded`
 * `%Response [error] for node [rabbit@host1]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host1": context deadline exceeded%`) as `node1_timeout_exceeded`
 * `%Response [error] for node [rabbit@host2]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host2": context deadline exceeded%`) as `node2_timeout_exceeded`
 * `%401 Unauthorized%`) as `401_unauth`
@@ -49,7 +46,7 @@ This frame shows [!DNL RabbitMQ] service start/stop signals that occurred during
 
 This frame shows [!DNL RabbitMQ] errors that occurred during the selected timeframe:
 
-* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%`} as `exit_timeout`
+* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%}` as `exit_timeout`
 * `%client unexpectedly closed TCP connection%`) as `client_closed_tcp_conn`
 * `%at undefined exit with reason shutdown in context shutdown_error%`) as `undef_exit`
 * `%Connection attempt from disallowed node%`) as `disallowed_node`
