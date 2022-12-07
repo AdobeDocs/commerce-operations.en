@@ -10,7 +10,7 @@ The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitorin
 >
 >Learn [how to enable](../site-wide-analysis-tool/access.md) the [!DNL Site-Wide Analysis Tool] and generate reports.
 
-If you have an on-premises installation of Adobe Commerce, you must install an agent on your infrastructure to use the tool. You do not need to install the agent on Adobe Commerce on cloud infrastructure projects.
+If you have an on-premises installation of Adobe Commerce, install an agent on your infrastructure to use the tool. You do not need to install the agent on Adobe Commerce on cloud infrastructure projects.
 
 ## Agent
 
@@ -30,7 +30,7 @@ Installing the agent requires the following steps:
 
 >[!INFO] 
 >
->The agent supports multi-node Adobe Commerce installations. You must install and configure the agent on each node.
+>The agent supports multi-node Adobe Commerce installations. Install and configure the agent on each node.
 
 ## System requirements
 
@@ -38,7 +38,7 @@ Your on-premises infrastructure must meet the following requirements before inst
 
 - Operating systems
 
-  - [!DNL Linux x86-64] distributions, such as [!DNL RedHat Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], and similar
+  - [!DNL Linux x86-64] distributions, such as [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], and similar
 
   >[!IMPORTANT]
   >
@@ -90,7 +90,7 @@ If you have installed the extension and configured it using an existing API key 
 
 >[!IMPORTANT]
 >
-> If you generate new keys in the API Portal, immediately update the API keys in the [!DNL Admin configuration]. If you generate new keys and do not update them in the [!DNL Admin], your SaaS extensions will no longer work and you will lose valuable data.
+> If you generate new keys in the API Portal, immediately update the API keys in the [!DNL Admin configuration]. If you generate new keys and do not update the keys in the [!DNL Admin], your SaaS extensions will no longer work and you will lose valuable data.
 
 If the extension is not installed, use the following instructions to install it:
 
@@ -145,7 +145,7 @@ We have created a [shell script](https://github.com/magento-swat/install-agent-h
    Success exit.
    ```
 
-1. After downloading and installing the agent, you must [configure it to run](#run-the-agent) using one of the following methods:
+1. After downloading and installing the agent, [configure it to run](#run-the-agent) using one of the following methods:
 
    - [Service](#service) (preferred if you have root access)
    
@@ -256,7 +256,7 @@ We recommend configuring the agent to run as a service. If you have limited acce
 
 ### Service {#service}
 
-1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the Unix user that owns the directory where the agent and the Adobe Commerce software is installed). If you downloaded the agent as the root user, change the directory and nested files owner.
+1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the UNIX® user that owns the directory where the agent and the Adobe Commerce software are installed). If you downloaded the agent as the root user, change the directory and nested files owner.
 
    ```config
    [Unit]
