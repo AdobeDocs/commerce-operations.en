@@ -20,7 +20,7 @@ jobs:
           github-token: ${{ secrets.COMMERCE_PROJECT_AUTOMATION }}
 
      - name: Add to Commerce Issue project
-        if: github.event == 'issues'
+        if: github.event_name == 'issues'
         uses: actions/add-to-project@v0.3.0
         with:
           project-url: https://github.com/orgs/AdobeDocs/projects/6 # The organizational project for issues
