@@ -1,9 +1,9 @@
 ---
-title: "The [!UICONTROL QuickView] tab"
-description: The QuickView tab explains the different alert types you may see including those on low disk pace and server usage.
+title: "The [!DNL QuickView] tab"
+description: The [!DNL QuickView] tab explains the different alert types you may see including those on low disk pace and server usage.
 ---
 
-# The [!UICONTROL QuickView] tab
+# The [!DNL QuickView] tab
 
 The **[!UICONTROL QuickView]** tab explains the different alert types you may see including those on low disk pace and server usage. Further the frames of the tab are described.
 
