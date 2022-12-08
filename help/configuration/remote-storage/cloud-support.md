@@ -33,6 +33,7 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 ```
 
 Running this command will create a new environment variable called REMOTE_STORAGE with the specified JSON configuration. Alternatively, you could use the web interface to add the variable to the appropriate environment.
+During the deployment you should see the following line in your deployment logs `INFO: Remote storage driver set to: "aws-s3"`.
 
 ### Optional authentication
 
