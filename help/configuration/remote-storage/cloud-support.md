@@ -42,7 +42,7 @@ The `key` and `secret` are optional. During the creation of the variable, it is 
 ## Syncing the remote-storage
 
 After enabling the remote store module make sure to synchronize the current media files to the remote store location. 
-To start the syncronisation run the command below on the enviroment where you enabled the remote storage.
+To start the synchronization run the command below on the environment where you enabled the remote storage.
 
 ```bash
 bin/magento remote-storage:sync 
