@@ -13,7 +13,7 @@ With `ece-tools` 2002.1.5 and later, you can use the `REMOTE_STORAGE` variable t
 
 The `REMOTE_STORAGE` variable takes a JSON string to configure remote storage. Below is an example JSON configuration.
 
-```
+```json
 {
   "driver": "aws-s3",
   "prefix": "uat",
@@ -28,16 +28,23 @@ The `REMOTE_STORAGE` variable takes a JSON string to configure remote storage. B
 
 To add the new environment variable for remote storage using the `magento-cloud` cli use the following command
 
-```
+```bash
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
 Running this command will create a new environment variable called REMOTE_STORAGE with the specified JSON configuration. Alternatively, you could use the web interface to add the variable to the appropriate environment.
 
-
 ### Optional authentication
 
 The `key` and `secret` are optional. During the creation of the variable, it is possible to set it to `sensitive` so that the value is not visible in the web interface hiding the `key` and `secret`. If you choose not to use the `key` and `secret` authentication method, you need to ensure the server is authorized to the S3 bucket by other means. In that case, the `key` and `secret` should be omitted from the JSON. 
+
+## Syncing the remote-storage
+After enabling the remote store module make sure to syncronize the current media files to the remote store location. 
+To start the syncronisation run the command below on the enviroment where you enabled the remote storage.
+
+```bash
+bin/magento remote-storage:sync 
+```
 
 ## Fastly configuration
 
