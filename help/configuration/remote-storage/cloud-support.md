@@ -5,13 +5,43 @@ description: See guidance on how to set up remote storage for Adobe Commerce on 
 
 # Configure remote storage for Commerce on Cloud infrastructure
 
-## Enabling remote storage
+Beginning with the `ece-tools` package 2002.1.5, you can use an environment variable to enable the Remote Storage module; however, the Remote Storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service.
 
-With `ece-tools` 2002.1.5 and later, you can use the `REMOTE_STORAGE` variable to enable the remote storage module during deployment. It is recommended to set this to an environment-level variable so that each environment has its remote storage configuration. This ensures that files are not shared between production, staging, and integration environments. Setting the variables on an environment level also gives the flexibility of only using remote storage on select environments, such as excluding the integration environment for remote storage.
+## Environment variable
 
-### Setting the `REMOTE_STORAGE` variable
+The `REMOTE_STORAGE` variable is used during the [deploy phase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) of a cloud infrastructure project. The variable definition is as follows:
 
-The `REMOTE_STORAGE` variable takes a JSON string to configure remote storage. Below is an example JSON configuration.
+### `REMOTE_STORAGE`
+
+- **Default**—_Not set_
+- **Version**—Commerce 2.4.2 and later
+
+Configure a _storage adapter_ to store media files in a persistent, remote storage container using a storage service, such as AWS S3. Enable the Remote Storage module to improve performance on Cloud projects with complex, multi-server configurations that must share resources. The following is an example of remote storage configuration using the `.magento.env.yaml` file:
+
+```yaml
+stage:
+  deploy:
+    REMOTE_STORAGE:
+      driver: aws-s3 # Required
+      prefix: cloud # Optional
+      config:
+        bucket: my-bucket # Required
+        region: my-region # Required
+        key: my-key # Optional
+        secret: my-secret-key # Optional
+```
+
+### Set variable with Cloud CLI
+
+Set the `REMOTE_STORAGE` variable as an [environmenet-level variable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) so that files are not shared between Production, Staging, and Integration environments. Setting the variables on an environment level gives the flexibility of only using remote storage on select environments, such as excluding the integration environment use of remote storage.
+
+**To add the remote storage variable using the Cloud CLI**:
+
+```bash
+magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
+```
+
+This creates a `REMOTE_STORAGE` variable with the specified JSON configuration. The `REMOTE_STORAGE` variable takes a JSON string to configure remote storage. Below is an example JSON configuration.
 
 ```json
 {
@@ -26,27 +56,47 @@ The `REMOTE_STORAGE` variable takes a JSON string to configure remote storage. B
 }
 ```
 
-To add the new environment variable for remote storage using the `magento-cloud` cli use the following command
+During the deployment you should see the following line in your deployment logs: `INFO: Remote storage driver set to: "aws-s3"`
 
-```bash
-magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
-```
+### Set variable with Project Web Interface
 
-Running this command will create a new environment variable called `REMOTE_STORAGE` with the specified JSON configuration. Alternatively, you could use the web interface to add the variable to the appropriate environment.
-During the deployment you should see the following line in your deployment logs `INFO: Remote storage driver set to: "aws-s3"`.
+Alternatively, you could use the Project Web Interface to add the variable to the appropriate environment.
 
-### Optional authentication
+**To add the remote storage variable using the Project Web Interface**:
 
-The `key` and `secret` are optional. During the creation of the variable, it is possible to set it to `sensitive` so that the value is not visible in the web interface hiding the `key` and `secret`. If you choose not to use the `key` and `secret` authentication method, you need to ensure the server is authorized to the S3 bucket by other means. In that case, the `key` and `secret` should be omitted from the JSON. 
+1. In the _Project Web Interface_, select the environment from the left.
 
-## Syncing the remote-storage
+1. Click the **Configure environment** icon.
 
-After enabling the remote store module make sure to synchronize the current media files to the remote store location. 
-To start the synchronization run the command below on the environment where you enabled the remote storage.
+1. In the _Configure Environment_ view, click the **Variables** tab.
 
-```bash
-bin/magento remote-storage:sync 
-```
+1. Click **Add Variable**.
+
+1. In the _Name_ field, enter `env:REMOTE_STORAGE`
+
+1. In the _Value_ field, add the JSON configuration.
+
+1. Select **JSON value** and **Sensitive**; deselect **Inheritable by child environments**.
+
+1. Click **Add Variable**.
+
+### Use optional authentication
+
+The `key` and `secret` are optional. During the creation of the variable, it is possible to set it to `sensitive` so that the value is not visible in the web interface hiding the `key` and `secret`. If you choose not to use the `key` and `secret` authentication method, you need to ensure that the server is authorized to the S3 bucket by other means. In that case, the `key` and `secret` should be omitted from the JSON configuration. See [Variable visibility](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) in the _Commerce on Cloud Infrastructure guide_.
+
+### Sync the remote storage
+
+After enabling the Remote Storage module, make sure to synchronize the current media files to the remote store location.
+
+**To start the synchronization**:
+
+1. Use SSH to log in to the remote environment with remote storage configured.
+
+1. Start the sync.
+
+  ```bash
+  bin/magento remote-storage:sync 
+  ```
 
 ## Fastly configuration
 
