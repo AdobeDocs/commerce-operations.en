@@ -117,6 +117,7 @@ If the extension is not installed, use the following instructions to install it:
    ```bash
    bin/magento cache:clean
    ```
+   
 1. [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) to connect the extension to your system.
 
 ## Install the agent
