@@ -9,7 +9,7 @@ Beginning with the `ece-tools` package 2002.1.5, you can use an environment vari
 
 ## Environment variable
 
-The `REMOTE_STORAGE` variable is used during the [deploy phase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) of a cloud infrastructure project. The variable definition is as follows:
+The `REMOTE_STORAGE` variable is used during the [deploy phase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) of a cloud infrastructure project.
 
 ### `REMOTE_STORAGE`
 
@@ -33,7 +33,7 @@ stage:
 
 ### Set variable with Cloud CLI
 
-Set the `REMOTE_STORAGE` variable as an [environmenet-level variable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) so that files are not shared between Production, Staging, and Integration environments. Setting the variables on an environment level gives the flexibility of only using remote storage on select environments, such as excluding the integration environment use of remote storage.
+Set the `REMOTE_STORAGE` variable as an [environmenet-level variable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) so that files are not shared between Production, Staging, and Integration environments. Setting the variables at the environment level gives the flexibility of only using remote storage on select environments, such as excluding the integration environment use of remote storage.
 
 **To add the remote storage variable using the Cloud CLI**:
 
@@ -56,11 +56,11 @@ This creates a `REMOTE_STORAGE` variable with the specified JSON configuration. 
 }
 ```
 
-During the deployment you should see the following line in your deployment logs: `INFO: Remote storage driver set to: "aws-s3"`
+After you create the configuration and deploy, the deployment logs should include information about the remote storage configuration, for example `INFO: Remote storage driver set to: "aws-s3"`
 
 ### Set variable with Project Web Interface
 
-Alternatively, you could use the Project Web Interface to add the variable to the appropriate environment.
+Alternatively, you can use the Project Web Interface to add the variable to the appropriate environment.
 
 **To add the remote storage variable using the Project Web Interface**:
 
@@ -82,11 +82,13 @@ Alternatively, you could use the Project Web Interface to add the variable to th
 
 ### Use optional authentication
 
-The `key` and `secret` are optional. During the creation of the variable, it is possible to set it to `sensitive` so that the value is not visible in the web interface hiding the `key` and `secret`. If you choose not to use the `key` and `secret` authentication method, you need to ensure that the server is authorized to the S3 bucket by other means. In that case, the `key` and `secret` should be omitted from the JSON configuration. See [Variable visibility](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) in the _Commerce on Cloud Infrastructure guide_.
+The `key` and `secret` are optional. When you create the variable, you can hide the `key` and `secret` by selecting the `sensitive` option. With this setting, the values are not visible in the web interface. See [Variable visibility](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) in the _Commerce on Cloud Infrastructure guide_.
+
+If you want to use an a different authentication method, omit the `key` and `secret` from the JSON configuration,. Configure the alternative authentication method, and verify that the server is authorized to the S3 bucket.
 
 ### Sync the remote storage
 
-After enabling the Remote Storage module, make sure to synchronize the current media files to the remote store location.
+After enabling the Remote Storage module, synchronize the current media files to the remote store location.
 
 **To start the synchronization**:
 
