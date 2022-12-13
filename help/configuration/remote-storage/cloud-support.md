@@ -41,7 +41,7 @@ Set the `REMOTE_STORAGE` variable as an [environmenet-level variable](https://ex
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-This creates a `REMOTE_STORAGE` variable with the specified JSON configuration. The `REMOTE_STORAGE` variable takes a JSON string to configure remote storage. Below is an example JSON configuration.
+This creates a `REMOTE_STORAGE` variable with the specified JSON configuration. The `REMOTE_STORAGE` variable takes a JSON string to configure remote storage. The following is an example JSON configuration:
 
 ```json
 {
