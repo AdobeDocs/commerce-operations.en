@@ -28,7 +28,7 @@ You can submit the following types of requests:
 
 If there is not enough information provided in a request, the team requests additional information from the requestor. If the requestor does not respond within X number of days, the team closes the request.
 
-**Create or update content**–Content creation work is completed following the process documented in the [Adobe Experience League Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). Depending on the request, work can include converting new content to markdown, creating a new topic, or updating an existing topic.
+**Create or update content**–Content creation work is completed following the process documented in the [Adobe Experience League Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). Depending on the request, work can include converting new content to markdown, creating a topic, or updating an existing topic.
 
 **Content review, approval, and publication**–Content is reviewed and edited during topic creation or update using [GitHub pull requests](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). All content must go through editorial review. Technical review is optional and depends on the content. If no technical review is necessary, the process continues with an editorial review only. This process can take several iterations until the content is approved.
 
@@ -38,6 +38,6 @@ After an article is approved, the pull request can be merged to the production b
 
 ## Backlog & Kanban Board
 
-To avoid duplication, requests that have been created and prioritized will be visible in the jira backlog of the COMDOX project. Internal stakeholders are encouraged to engage with the voting system in Jira to upvote requests they consider necessary or relevant. Voting also helps the Best Practices project team understand the type of content that stakeholders expect and value. Requests pending prioritization and review will be shown in the backlog until they are moved to the active lanes in the Kanban board. 
+To avoid duplication, requests that have been created and prioritized will be visible in the jira backlog of the COMDOX project. Internal stakeholders are encouraged to engage with the voting system in Jira to upvote requests they consider necessary or relevant. Voting also helps the Best Practices project team understand the type of content that stakeholders expect and value. Requests that are pending prioritization and review are shown in the backlog until they are moved to the active lanes in the Kanban board. 
 
 The Kanban board can be accessed by internal users to view (and/or monitor) what content is being worked on, and the progress made. Only active requests will be displayed on this board.
