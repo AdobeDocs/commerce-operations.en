@@ -3,27 +3,27 @@
 This document's purpose is to detail the workflow users must follow to request Best Practices content.
 
 **Who can create a request?**
-There are two groups of stakeholders who can put in a request, who include but are not limited to: 
+There are two groups of stakeholders who can put in a request, including, but not limited to: 
 -	External: Partners
 -	Internal: CTAG (Customer Technical Advisory Group), Customer Support, Customer Success, Engineering teams
 
 **How do I create a request?**
-Requests are made through JIRA, where users will find 3 different options
+Internal stakeholders must make requests by opening a Jira issue in the COMDOX project. External stakeholders must make requests by opening a GitHub issue in this repository. Stakeholders can make the following requests:
 -	Request new content to be added 
--	Request content edits for content that is already published
+-	Request edits for content that is already published
 -	Share their own content to be published
 
 **What is the overall process?**
-A Jira ticket needs to be created in the Commerce Documentation [COMDOX] project. Users will need to fill in a template, providing details to complete their request. These details will help us prioritize the content that we work on, and what we publish. 
-Once the request is in, the team  will evaluate the details to determine what is the best course of action for it. We will use the details in the ticket to prioritize the request and evaluate if the Implementation Playbook is the best place for this request, or if the content already exists, and we need to migrate it to Experience League.  The team could also determine that instead of having a new article created for the requested content, adding it to existing product docs that have already been published on Experience League or the Devsite is a better solution. 
-If there is not enough information provided in the ticket, we will request the user to complete all corresponding fields. In case there is no follow up within X number of days, the request will be closed. 
-Once the data is validated and the request is prioritized, the next step is to create the article . This can mean either adapting content to .md format or creating the article from scratch. 
+Internal stakeholders must open a Jira ticket in the Commerce Documentation (COMDOX) project and provide complete details, including completing a template. These details help the team prioritize the content requests. 
+The team regularly monitors requests in the backlog to determine priority and whether the Implementation Playbook is the best place for the request. The team may determine that instead of creating a new topic, the requested content should be added to existing product documentation on Experience League or the Adobe Developer site. 
+If there is not enough information provided in a request, the team will ask the requestor to complete all corresponding fields. If the requestor does not respond within X number of days, the team closes the request. 
+After the team validates and prioritizes the request, the next step is to create the topic. This can mean either adapting content to .md format or creating the article from scratch. 
 
-As the article is finished, the content will be reviewed or edited, accordingly. The review process happens through GitHub PRs. The articles will go through both a Tech review and an Editorial review, in case it is needed. If there is no Tech involvement the process goes through with an Editorial review only. This process can take several iterations until the content is approved. 
-When the article is approved, the next step is merging the content. The merging should be done by the author. The article can be published straight away or wait for the next publication job to run and publish all approved (and merged) articles. 
+Content is reviewed and edited during topic creation. The review process happens through GitHub pull requests. All content must go through editorial review. Technical review is optional and depends on the content. If no technical review is necessary, the process continues with an editorial review only. This process can take several iterations until the content is approved. 
+After an article is approved, the next step is merging it with the production branch. Merging should be done by the author. The topic can be published immediately or wait for the next publication job to run, which publishes all approved and merged topics. 
 We will display a new section on the Best Practices homepage (within ExL (experience league)) to help users stay up to date with recently published articles, so they do not need to navigate through different pages and portals to find relevant information of interest. We will also recur to using existing channels, such as marketing and internal comms. 
 
-**Backlog	 & Kanban Board**
-To avoid duplication, requests that have been created and prioritized should be visible in the backlog. Users should be encouraged to engage with JIRA’s voting system  to upvote requests they consider necessary or relevant. This will also be a good indicator for us of what type of content is expected from the actual stakeholders. Requests pending prioritization and review will be shown in the backlog until they are moved to the active lanes in the Kanban board. 
+## Backlog & Kanban Board
+To avoid duplication, requests that have been created and prioritized should be visible in the backlog. Users are encouraged to engage with the voting system in Jira to upvote requests they consider necessary or relevant. This will also be a good indicator for the team of what type of content is expected from stakeholders. Requests pending prioritization and review will be shown in the backlog until they are moved to the active lanes in the Kanban board. 
 The Kanban board can be accessed by internal users to view (and/or monitor) what content is being worked on, and the progress made. Only active requests will be displayed on this board.  
 
