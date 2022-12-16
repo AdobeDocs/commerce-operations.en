@@ -11,7 +11,7 @@ Adobe accepts requests from both internal and external stakeholders including, b
 
 ## How do I create a request?
 
-**Internal stakeholders** can submit requests by opening a Jira issue in the COMDOX project. **External stakeholders** can make requests by opening a [GitHub issue ](https://github.com/AdobeDocs/commerce-operations.en/blob/main/help/implementation-playbook/overview.md)/issues) in this repository.
+**Internal stakeholders** can submit requests by opening a Jira issue in the COMDOX project. **External stakeholders** can submit requests by opening a [GitHub issue](https://github.com/AdobeDocs/commerce-operations.en/blob/main/help/implementation-playbook/overview.md)/issues) in this repository.
 
 You can submit the following types of requests:
 
@@ -22,8 +22,7 @@ You can submit the following types of requests:
 ## What is the overall process?
 
 
-**Create a jira ticket or issue**—Internal stakeholders create a jira ticket in the COMDOX project. External stakeholders submit a GitHub issue. Include complete details in the jira ticket or GitHub issue to help the team understand the context and prioritize the request.
-
+**Create a jira ticket or issue**—Internal stakeholders create a jira ticket in the COMDOX project. External stakeholders submit a GitHub issue. Include complete details in the jira ticket or  [GitHub issue](https://github.com/AdobeDocs/commerce-operations.en/blob/main/help/implementation-playbook/overview.md)/issues) to help the team understand the context and prioritize the request.
 
 **Adobe project team evaluates and prioritizes the request**—The team regularly monitors requests to determine priority and evaluate the requested changes for inclusion in the Implementation Playbook Best Practices. For example, the team might determine that instead of creating a new Best Practices topic, the requested content should be added to existing product documentation on Experience League or the Adobe Developer site.
 
@@ -35,10 +34,10 @@ If there is not enough information provided in a request, the team requests addi
 
 After an article is approved, the pull request can be merged to the production branch. Merging should be done by the author. After a topic is merged, it can be published to production immediately using a manual process, or automatically the next time the publishing job runs. Publishing jobs typically run every two hours.
 
-**New content notification**–We will provide a *What's New* section on the [Best Practices overview](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) topic to keep users informed about recently published or updated topics. Adobe will also promote new Best Practices content using existing channels, such as marketing and internal communications.
+**New content notification**–Adobe will provide a *What's New* section on the [Best Practices overview](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) topic to keep users informed about recently published or updated topics. Adobe will also promote new Best Practices content using existing channels, such as marketing and internal communications.
 
 ## Backlog & Kanban Board
 
-To avoid duplication, requests that have been created and prioritized will be visible in the jira backlog of the COMDOX project. Users are encouraged to engage with the voting system in Jira to upvote requests they consider necessary or relevant. Voting also helps the Best Practices project team understand the type of content that stakeholders expect and value. Requests pending prioritization and review will be shown in the backlog until they are moved to the active lanes in the Kanban board. 
+To avoid duplication, requests that have been created and prioritized will be visible in the jira backlog of the COMDOX project. Internal stakeholders are encouraged to engage with the voting system in Jira to upvote requests they consider necessary or relevant. Voting also helps the Best Practices project team understand the type of content that stakeholders expect and value. Requests pending prioritization and review will be shown in the backlog until they are moved to the active lanes in the Kanban board. 
 
 The Kanban board can be accessed by internal users to view (and/or monitor) what content is being worked on, and the progress made. Only active requests will be displayed on this board.
