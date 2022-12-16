@@ -1,39 +1,44 @@
 # Best Practices: Content Creation Workflow
  
-This document's purpose is to detail the workflow users must follow to request Best Practices content.
+This document describes the user workflow to request changes or additions to the *[Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* content in the *Adobe Commerce Implementation Playbook*.
 
 ## Who can create a request?
 
-There are two groups of stakeholders who can put in a request, including, but not limited to: 
+Adobe accepts requests from both internal and external stakeholders including, but not limited to individuals in the following groups:
 
--  External: Partners
--  Internal: CTAG (Customer Technical Advisory Group), Customer Support, Customer Success, Engineering teams
+-  Adobe Partners
+-  Adobe CTAG (Customer Technical Advisory Group), Customer Support, Customer Success, Engineering teams
 
 ## How do I create a request?
 
-Internal stakeholders must make requests by opening a Jira issue in the COMDOX project. External stakeholders must make requests by opening a GitHub issue in this repository. Stakeholders can make the following requests:
+**Internal stakeholders** can submit requests by opening a Jira issue in the COMDOX project. **External stakeholders** can make requests by opening a [GitHub issue ](https://github.com/AdobeDocs/commerce-operations.en/blob/main/help/implementation-playbook/overview.md)/issues) in this repository.
 
--  Request new content to be added 
--  Request edits for content that is already published
--  Share their own content to be published
+You can submit the following types of requests:
+
+-  Ideas for new content
+-  Updates to content that is already published
+-  Publish new content provided by the stakeholder or community
 
 ## What is the overall process?
 
-Internal stakeholders must open a Jira ticket in the Commerce Documentation (COMDOX) project and provide complete details, including completing a template. These details help the team prioritize the content requests.
 
-The team regularly monitors requests in the backlog to determine priority and whether the Implementation Playbook is the best place for the request. The team may determine that instead of creating a new topic, the requested content should be added to existing product documentation on Experience League or the Adobe Developer site.
+**Create a jira ticket or issue**—Internal stakeholders create a jira ticket in the COMDOX project. External stakeholders submit a GitHub issue. Include complete details in the jira ticket or GitHub issue to help the team understand the context and prioritize the request.
 
-If there is not enough information provided in a request, the team will ask the requestor to complete all corresponding fields. If the requestor does not respond within X number of days, the team closes the request. 
-After the team validates and prioritizes the request, the next step is to create the topic. This can mean either adapting content to .md format or creating the article from scratch. 
 
-Content is reviewed and edited during topic creation. The review process happens through GitHub pull requests. All content must go through editorial review. Technical review is optional and depends on the content. If no technical review is necessary, the process continues with an editorial review only. This process can take several iterations until the content is approved.
+**Adobe project team evaluates and prioritizes the request**—The team regularly monitors requests to determine priority and evaluate the requested changes for inclusion in the Implementation Playbook Best Practices. For example, the team might determine that instead of creating a new Best Practices topic, the requested content should be added to existing product documentation on Experience League or the Adobe Developer site.
 
-After an article is approved, the next step is merging it with the production branch. Merging should be done by the author. The topic can be published immediately or wait for the next publication job to run, which publishes all approved and merged topics.
+If there is not enough information provided in a request, the team requests additional information from the requestor. If the requestor does not respond within X number of days, the team closes the request.
 
-We will display a new section on the Best Practices home page on Experience League to help users stay up to date with recently published topics, so they do not need to navigate through different pages and portals to find relevant information of interest. We will also promote content in existing channels, such as marketing and internal communications.
+**Create or update content**–Content creation work is completed following the process documented in the [Adobe Experience League Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). Depending on the request, work can include converting new content to markdown, creating a new topic, or updating an existing topic.
+
+**Content review, approval, and publication**–Content is reviewed and edited during topic creation or update using [GitHub pull requests](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). All content must go through editorial review. Technical review is optional and depends on the content. If no technical review is necessary, the process continues with an editorial review only. This process can take several iterations until the content is approved.
+
+After an article is approved, the pull request can be merged to the production branch. Merging should be done by the author. After a topic is merged, it can be published to production immediately using a manual process, or automatically the next time the publishing job runs. Publishing jobs typically run every two hours.
+
+**New content notification**–We will provide a *What's New* section on the [Best Practices overview](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) topic to keep users informed about recently published or updated topics. Adobe will also promote new Best Practices content using existing channels, such as marketing and internal communications.
 
 ## Backlog & Kanban Board
 
-To avoid duplication, requests that have been created and prioritized should be visible in the backlog. Users are encouraged to engage with the voting system in Jira to upvote requests they consider necessary or relevant. This will also be a good indicator for the team of what type of content is expected from stakeholders. Requests pending prioritization and review will be shown in the backlog until they are moved to the active lanes in the Kanban board. 
+To avoid duplication, requests that have been created and prioritized will be visible in the jira backlog of the COMDOX project. Users are encouraged to engage with the voting system in Jira to upvote requests they consider necessary or relevant. Voting also helps the Best Practices project team understand the type of content that stakeholders expect and value. Requests pending prioritization and review will be shown in the backlog until they are moved to the active lanes in the Kanban board. 
 
 The Kanban board can be accessed by internal users to view (and/or monitor) what content is being worked on, and the progress made. Only active requests will be displayed on this board.
