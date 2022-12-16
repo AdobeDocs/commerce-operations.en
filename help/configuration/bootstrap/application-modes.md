@@ -16,7 +16,7 @@ You can run the Commerce application in any of the following _modes_:
 
 >[!INFO]
 >
->[Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/bk-cloud.html) supports only the production and maintenance modes.
+>[Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) supports only the production and maintenance modes.
 
 ## Default mode
 
@@ -65,4 +65,4 @@ Run the Commerce application in maintenance mode to take your site offline while
 
 You can create a [custom maintenance page](../../upgrade/troubleshooting/maintenance-mode-options.md), manually enable and disable maintenance mode, and configure maintenance mode to allow visitors from authorized IP addresses to view the store normally. See [enable and disable maintenance mode](../../installation/tutorials/maintenance-mode.md).
 
-If you are using Commerce on cloud infrastructure, the Commerce application runs in maintenance mode during the deploy phase. When the deployment completes successfully, the Commerce application returns to running in production mode. See [Deployment hooks](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) in the _Commerce Cloud guide_.
+If you are using Commerce on cloud infrastructure, the Commerce application runs in maintenance mode during the deploy phase. When the deployment completes successfully, the Commerce application returns to running in production mode. See [Deployment hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) in the _Commerce on Cloud Infrastructure guide_.

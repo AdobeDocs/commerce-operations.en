@@ -27,24 +27,24 @@ The **[!UICONTROL Create Account access]** frame shows the number of new account
 
 ## [!UICONTROL POST activities]
 
-The **[!UICONTROL POST activities]** frame shows the POST activities for the site, faceted on client_ip from the [!DNL Fastly] logs. It also shows the URL that is accessed by the IP address.
+The **[!UICONTROL POST activities]** frame shows the `POST` activities for the site, faceted on `client_ip` from the [!DNL Fastly] logs. It also shows the URL that is accessed by the IP address.
 
 ![POST-activities](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-The **POST activities summary table** frame shows the summarized POST activities for the site, faceted on client_ip from the [!DNL Fastly] logs. It also shows the count for the URL that is accessed by the IP address. The count is for the selected timeframe.
+The **[!UICONTROL POST activities summary table]** frame shows the summarized `POST` activities for the site, faceted on `client_ip` from the [!DNL Fastly] logs. It also shows the count for the URL that is accessed by the IP address. The count is for the selected timeframe.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-The **[!UICONTROL POST activities details table]** frame shows the POST activities for the site from the [!DNL Fastly] logs. It also shows all the details from the [!DNL Fastly] log for these requests. It is limited to the last 2000 requests.
+The **[!UICONTROL POST activities details table]** frame shows the `POST` activities for the site from the [!DNL Fastly] logs. It also shows all the details from the [!DNL Fastly] log for these requests. It is limited to the last 2000 requests.
 ![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
-The **[!UICONTROL Guest Carts activities]** frame shows the number of guest cart activities across a selected timeframe, faceted by IP address and URL accessed. Guest carts may be used in a carding attack. This frame shows the total number of requests where the guest-carts URLs are accessed.
+The **[!UICONTROL Guest Carts activities]** frame shows the number of guest cart activities across a selected timeframe, faceted by IP address and URL accessed. Guest carts may be used in a carding attack. This frame shows the total number of requests where the guest-carts' URLs are accessed.
 
 ![guest-carts-activities](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 

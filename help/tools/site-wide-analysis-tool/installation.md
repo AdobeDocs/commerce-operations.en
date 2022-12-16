@@ -1,6 +1,6 @@
 ---
 title: Install Guide
-description: Use this guide to install [!DNL Site-Wide Analysis Tool] for your website
+description: "Use this guide to install [!DNL Site-Wide Analysis Tool] for your website"
 ---
 # Install Guide
 
@@ -10,7 +10,7 @@ The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitorin
 >
 >Learn [how to enable](../site-wide-analysis-tool/access.md) the [!DNL Site-Wide Analysis Tool] and generate reports.
 
-If you have an on-premises installation of Adobe Commerce, you must install an agent on your infrastructure to use the tool. You do not need to install the agent on Adobe Commerce on cloud infrastructure projects.
+If you have an on-premises installation of Adobe Commerce, install an agent on your infrastructure to use the tool. You do not need to install the agent on Adobe Commerce on cloud infrastructure projects.
 
 ## Agent
 
@@ -30,7 +30,7 @@ Installing the agent requires the following steps:
 
 >[!INFO] 
 >
->The agent supports multi-node Adobe Commerce installations. You must install and configure the agent on each node.
+>The agent supports multi-node Adobe Commerce installations. Install and configure the agent on each node.
 
 ## System requirements
 
@@ -38,7 +38,7 @@ Your on-premises infrastructure must meet the following requirements before inst
 
 - Operating systems
 
-  - [!DNL Linux x86-64] distributions, such as [!DNL RedHat Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], and similar
+  - [!DNL Linux x86-64] distributions, such as [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], and similar
 
   >[!IMPORTANT]
   >
@@ -69,14 +69,18 @@ Your on-premises infrastructure must meet the following requirements before inst
 The agent requires the [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) extension to be installed on your system and [configured](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) with API keys. To verify that the extension is installed, run the following command:
 
 ```bash
-bin/magento module:status Magento_ServicesConnector
+bin/magento module:status Magento_ServicesId
 ```
 
 If you have installed the extension and configured it using an existing API key for a different service, you **MUST regenerate the API key** and update it in the Adobe Commerce Admin for the agent.
 
 1. Put your website into [maintenance mode](../../installation/tutorials/maintenance-mode.md).
 
-1. Log into [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+1. Log into [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+
+   >[!NOTE]
+   >
+   > If you have trouble accessing your account, see [Unable to log in to Adobe Commerce support or cloud account](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) for troubleshooting help.
 
 1. Click **[!UICONTROL API Portal]**.
 
@@ -86,20 +90,20 @@ If you have installed the extension and configured it using an existing API key 
 
 >[!IMPORTANT]
 >
-> If you generate new keys in the API Portal, immediately update the API keys in the [!DNL Admin configuration]. If you generate new keys and do not update them in the [!DNL Admin], your SaaS extensions will no longer work and you will lose valuable data.
+> If you generate new keys in the API Portal, immediately update the API keys in the [!DNL Admin configuration]. If you generate new keys and do not update the keys in the [!DNL Admin], your SaaS extensions will no longer work and you will lose valuable data.
 
 If the extension is not installed, use the following instructions to install it:
 
 1. Add the extension to your `composer.json` file and install it.
 
    ```bash
-   composer require magento/services-connector:1.*
+   composer require magento/services-id
    ```
 
 1. Enable the extension.
 
    ```bash
-   bin/magento module:enable Magento_ServicesConnector
+   bin/magento module:enable Magento_ServicesId
    ```
 
 1. Update the database schema.
@@ -107,7 +111,13 @@ If the extension is not installed, use the following instructions to install it:
    ```bash
    bin/magento setup:upgrade
    ```
+   
+1. Clear the cache.
 
+   ```bash
+   bin/magento cache:clean
+   ```
+   
 1. [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) to connect the extension to your system.
 
 ## Install the agent
@@ -141,7 +151,7 @@ We have created a [shell script](https://github.com/magento-swat/install-agent-h
    Success exit.
    ```
 
-1. After downloading and installing the agent, you must [configure it to run](#run-the-agent) using one of the following methods:
+1. After downloading and installing the agent, [configure it to run](#run-the-agent) using one of the following methods:
 
    - [Service](#service) (preferred if you have root access)
    
@@ -252,7 +262,7 @@ We recommend configuring the agent to run as a service. If you have limited acce
 
 ### Service {#service}
 
-1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the Unix user that owns the directory where the agent and the Adobe Commerce software is installed). If you downloaded the agent as the root user, change the directory and nested files owner.
+1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the UNIX® user that owns the directory where the agent and the Adobe Commerce software are installed). If you downloaded the agent as the root user, change the directory and nested files owner.
 
    ```config
    [Unit]
