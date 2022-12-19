@@ -12,7 +12,7 @@ This section discusses the minimum settings that you must choose to test Elastic
 >In versions 2.4.4 and 2.4.3-p2, all fields labeled **Elasticsearch** also apply to OpenSearch.
 >When support for Elasticsearch 8.x was introduced in version 2.4.6, new labels were created to distinguish between Elasticsearch and OpenSearch configurations.
 
-For additional details about configuring your search engine, see the [User Guide](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html).
+For additional details about configuring your search engine, see the [User Guide](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configure your search engine from the Admin
 
