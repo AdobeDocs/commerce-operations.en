@@ -65,7 +65,7 @@ Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch
 
 Support for Elasticsearch 8.x was instroduced in Adobe Commerce and Magento Open Source 2.4.6. The following instructions show an example of upgrading Elasitcsearch from 7.x to 8.x:
 
-1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that is is up and running.
+1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies:
 
    ```bash
