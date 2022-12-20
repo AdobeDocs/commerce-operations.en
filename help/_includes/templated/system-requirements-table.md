@@ -6,8 +6,11 @@
       <th>
         Software dependencies
       </th>
+      <th>2.4.6</th>
+      <th>2.4.5-p2</th>
       <th>2.4.5-p1</th>
       <th>2.4.5</th>
+      <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
       <th>2.4.4-p1</th>
       <th>2.4.4</th>
@@ -22,6 +25,15 @@
   <tbody>
     <tr>
       <td>Composer</td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
       <td>
             2.2
       </td>
@@ -59,6 +71,15 @@
     <tr>
       <td>Elasticsearch</td>
       <td>
+            8.4
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
             7.17
       </td>
       <td>
@@ -95,6 +116,15 @@
     <tr>
       <td>OpenSearch</td>
       <td>
+            2.3
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
             1.2
       </td>
       <td>
@@ -130,6 +160,15 @@
     </tr>
     <tr>
       <td>MariaDB</td>
+      <td>
+            10.6
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
       <td>
             10.4
       </td>
@@ -197,11 +236,29 @@
             8.0
       </td>
       <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
             5.7, 8.0
       </td>
     </tr>
     <tr>
       <td>PHP</td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
       <td>
             8.1
       </td>
@@ -237,7 +294,16 @@
       </td>
     </tr>
     <tr>
-      <td>[!DNL RabbitMQ]</td>
+      <td>RabbitMQ</td>
+      <td>
+            3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
+            3.9
+      </td>
       <td>
             3.9
       </td>
@@ -275,6 +341,15 @@
     <tr>
       <td>Redis</td>
       <td>
+            7.0
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
             6.2
       </td>
       <td>
@@ -311,10 +386,19 @@
     <tr>
       <td>Varnish</td>
       <td>
+            7.1
+      </td>
+      <td>
+            7.1
+      </td>
+      <td>
             7.0
       </td>
       <td>
             7.0
+      </td>
+      <td>
+            7.1
       </td>
       <td>
             7.0
@@ -346,6 +430,15 @@
     </tr>
     <tr>
       <td>Apache</td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
       <td>
             2.4
       </td>
@@ -415,9 +508,27 @@
       <td>
             1.18
       </td>
+      <td>
+            1.18
+      </td>
+      <td>
+            1.18
+      </td>
+      <td>
+            1.18
+      </td>
     </tr>
     <tr>
       <td>AWS Aurora (MySQL)</td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
       <td>
             8.0
       </td>
@@ -482,6 +593,15 @@
             ✔️
       </td>
       <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -490,6 +610,15 @@
     </tr>
     <tr>
       <td>AWS MQ</td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
       <td>
             3.9.13
       </td>
@@ -527,6 +656,15 @@
     <tr>
       <td>AWS ElastiCache</td>
       <td>
+            Redis 6.2
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
             Redis 6
       </td>
       <td>
@@ -563,10 +701,19 @@
     <tr>
       <td>AWS Elasticsearch</td>
       <td>
+            
+      </td>
+      <td>
+            
+      </td>
+      <td>
             7.9
       </td>
       <td>
             7.9
+      </td>
+      <td>
+            
       </td>
       <td>
             7.9
@@ -598,6 +745,15 @@
     </tr>
     <tr>
       <td>AWS OpenSearch</td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
       <td>
             1.2
       </td>
