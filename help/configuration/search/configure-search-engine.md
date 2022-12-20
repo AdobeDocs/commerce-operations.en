@@ -18,7 +18,7 @@ For additional details about configuring your search engine, see the [User Guide
 
 >[!TIP]
 >
->For instructions on upgrading to a new search engine version, see [upgrade prereqquisites](../../upgrade/prepare/prerequisites.md).
+>For instructions on upgrading to a new search engine version, see [upgrade prerequisites](../../upgrade/prepare/prerequisites.md).
 
 To configure your system to use Elasticsearch or OpenSearch:
 
