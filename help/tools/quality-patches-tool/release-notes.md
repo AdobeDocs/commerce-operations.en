@@ -14,6 +14,21 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.25 {#v1-1-25}
+
+* **ACSD-48058** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where product price reindex is not working if the bundle product is not assigned to any website.
+* **ACSD-48262** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where products are not visible on the frontend when "Allow All Products Per Page" setting is set to Yes.
+* **ACSD-48293** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4) - Fixes the issue where the composite products go out of stock when the child products that were sold out are returned to stock.
+* **ACSD-47520** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where customers lose reward points when a credit memo is created.
+* **ACSD-48044** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.4) - Fixes the issue where applying multiple gift cards to a single order with multi-shipping prevents orders from being placed.
+* **ACSD-48300** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Fixes the issue where a return cannot be created if the configurable product is removed.
+* **ACSD-47910** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue of missing orders, invoices, shipments, and credit memos in respective entity grids.
+* **ACSD-47292** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where out-of-stock bundled products are not available in the GraphQL response if the "show out-of-stock products" is set to Yes.
+* **ACSD-48234** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where the catalog search result shows an incorrect category item count when the "show out of stock" option is enabled.
+* **ACSD-48313** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.5) - Fixes the issue where the "configurable_variations" column is not parsed if the attribute value contains a comma. The same parsing algorithm is used for "additional_attributes.
+* **ACSD-48627** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where the out-of-stock configurable product causes an error when sending a GraphQL request to get cart details.
+* Updated patch: MDVA-39384.
+
 ## v1.1.24 {#v1-1-24}
 
 * **ACSD-45168** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where SEO-friendly URLs are not generated for products that have *url_key* attributes overridden on the store-view level.
