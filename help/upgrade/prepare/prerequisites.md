@@ -53,7 +53,7 @@ Some third-party catalog search engines run on top of the Adobe Commerce search 
 
 ### Elasticsearch
 
-You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 1.2 before upgrading to 2.4.0. Adobe no longer supports Elasticsearch 2.x, 5.x, and 6.x. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md) describes the tasks you must perform after upgrading Elasticsearch to a supported version.
+You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 1.2 before upgrading to 2.4.0. Adobe no longer supports Elasticsearch 2.x, 5.x, and 6.x. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md) in the _Configuration Guide_ describes the tasks you must perform after upgrading Elasticsearch to a supported version.
 
 Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
@@ -65,8 +65,8 @@ Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch
 
 Support for Elasticsearch 8.x was instroduced in Adobe Commerce and Magento Open Source 2.4.6. The following instructions show an example of upgrading Elasitcsearch from 7.x to 8.x:
 
-1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that it is up and running.
-1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies.
+1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that is is up and running.
+1. In your the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies:
 
    ```bash
    composer update elasticsearch/elasticsearch
