@@ -88,7 +88,7 @@ Support for Elasticsearch 8.x was instroduced in Adobe Commerce and Magento Open
 
 #### Downgrade Elasticsearch
 
-If you inadvertently upgrade Elasticsearch:
+If you inadvertently upgrade Elasticsearch or determine that you need to downgrade for any other reason:
 
 1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies. For example, to downgrade from Elasticsearch 8.x to 7.x:
 
