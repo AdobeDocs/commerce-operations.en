@@ -34,7 +34,7 @@ To configure your system to use Elasticsearch or OpenSearch:
    |**[!UICONTROL Server Port]**|Enter the web server proxy port. The default is 9200<br>Adobe Commerce on cloud infrastructure: Get this value from your integration system.|
    |**[!UICONTROL Index Prefix]**|Enter the search engine index prefix. If you use a single instance for more than one Commerce installation (Staging and Production environments), you must specify a unique prefix for each installation. Otherwise, you can use the default prefix magento2.|
    |**[!UICONTROL Enable HTTP Auth]**|Click **[!UICONTROL Yes]** only if you enabled authentication for your search engine server. If so, provide a username and password in the provided fields.|
-   |**[!UICONTROL Server Timeout]**]|Enter the amount of time (in milliseconds) to wait when attempting to establish a connection to the Elasticsearch or OpenSearch server.|
+   |**[!UICONTROL Server Timeout]**|Enter the amount of time (in milliseconds) to wait when attempting to establish a connection to the Elasticsearch or OpenSearch server.|
 
 1. Click **[!UICONTROL Test Connection]**.
 
