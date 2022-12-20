@@ -82,13 +82,13 @@ Support for Elasticsearch 8.x was instroduced in Adobe Commerce and Magento Open
 
    >[!INFO]
    >
-   >To support Elasticsearch 8.x, Adobe Commerce and Magento Open Source 2.4.6 disallows the `indices.id_field_data` property by default and uses the `_id` field in `docvalue_fields`.
+   >To support Elasticsearch 8.x, Adobe Commerce and Magento Open Source 2.4.6 disallows the `indices.id_field_data` property by default and uses the `_id` field in the `docvalue_fields` property.
 
 1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) to complete the upgrade.
 
 #### Downgrade Elasticsearch
 
-If you inadvertently upgrade Elasticsearch or determine that you need to downgrade for any other reason:
+If you inadvertently upgrade the version of Elasticsearch on your server or determine that you need to downgrade for any other reason, you must also update your Adobe Commerce or Magento Open Source project dependencies.
 
 1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies. For example, to downgrade from Elasticsearch 8.x to 7.x:
 
