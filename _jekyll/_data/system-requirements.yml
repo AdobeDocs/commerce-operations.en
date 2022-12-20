@@ -15,7 +15,6 @@
   AWS S3: ✔️
   AWS MQ: '3.9.16'
   AWS ElastiCache: Redis 6.2
-  AWS Elasticsearch: ''
   AWS OpenSearch: '1.2'
 2.4.5-p2:
   Composer: '2.2'
@@ -33,7 +32,6 @@
   AWS S3: ✔️
   AWS MQ: '3.9.13'
   AWS ElastiCache: Redis 6
-  AWS Elasticsearch: ''
   AWS OpenSearch: '1.2'
 2.4.5-p1:
   Composer: '2.2'
@@ -87,7 +85,6 @@
   AWS S3: ✔️
   AWS MQ: '3.9.13'
   AWS ElastiCache: Redis 6
-  AWS Elasticsearch: ''
   AWS OpenSearch: '1.2'
 2.4.4-p2:
   Composer: '2.1'

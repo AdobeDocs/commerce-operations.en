@@ -701,19 +701,19 @@
     <tr>
       <td>AWS Elasticsearch</td>
       <td>
-            
+          --
       </td>
       <td>
-            
-      </td>
-      <td>
-            7.9
+          --
       </td>
       <td>
             7.9
       </td>
       <td>
-            
+            7.9
+      </td>
+      <td>
+          --
       </td>
       <td>
             7.9
