@@ -53,13 +53,50 @@ Some third-party catalog search engines run on top of the Adobe Commerce search 
 
 ### Elasticsearch
 
-You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 1.2 before upgrading to 2.4.0. Adobe no longer supports Elasticsearch 2.x, 5.x, and 6.x.
+You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 1.2 before upgrading to 2.4.0. Adobe no longer supports Elasticsearch 2.x, 5.x, and 6.x. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md) in the _Configuration Guide_ describes the tasks you must perform after upgrading Elasticsearch to a supported version.
 
 Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
-Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+>[!INFO]
+>
+>Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
 
-[Configure Elasticsearch](../../configuration/search/configure-search-engine.md) describes the tasks you must perform after updating Elasticsearch 2 to a supported version.
+#### Upgrade Elasticsearch
+
+Support for Elasticsearch 8.x was introduced in Adobe Commerce and Magento Open Source 2.4.6. The following instructions show an example of upgrading Elasticsearch from 7.x to 8.x:
+
+1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies:
+
+   ```bash
+   composer update elasticsearch/elasticsearch
+   ```
+
+1. Enable the `id_field_data` field by adding the following configuration to your `elasticsearch.yml` file and restarting the Elasticsearch 8.x service. 
+
+   ```yaml
+   indices:
+     id_field_data:
+       enabled: true
+   ```
+
+   >[!INFO]
+   >
+   >To support Elasticsearch 8.x, Adobe Commerce and Magento Open Source 2.4.6 disallows the `indices.id_field_data` property by default and uses the `_id` field in the `docvalue_fields` property.
+
+1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) to complete the upgrade.
+
+#### Downgrade Elasticsearch
+
+If you inadvertently upgrade the version of Elasticsearch on your server or determine that you need to downgrade for any other reason, you must also update your Adobe Commerce or Magento Open Source project dependencies.
+
+1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies. For example, to downgrade from Elasticsearch 8.x to 7.x:
+
+   ```bash
+   composer update elasticsearch/elasticsearch:^7
+   ```
+
+1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) to complete the downgrade.
 
 ### OpenSearch
 
