@@ -44,6 +44,10 @@ In times of intensive sales, [!DNL Commerce] can defer stock updates related to 
 >
 >This option is available only if **[!UICONTROL Backorder with any mode]** is activated.
 
+>[!INFO]
+>
+>This option also works with [Asynchronous order placement](high-throughput-order-processing.md#asynchronous-order-placement) in combination with [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
+
 ## Client side optimization settings
 
 To improve the storefront responsiveness of your [!DNL Commerce] instance, go to the Admin in Default or Developer mode and change the following settings:
