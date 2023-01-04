@@ -262,7 +262,7 @@ We recommend configuring the agent to run as a service. If you have limited acce
 
 ### Service {#service}
 
-1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the UNIX&reg; user that owns the directory where the agent and the Adobe Commerce software are installed). If you downloaded the agent as the root user, change the directory and nested files owner.
+1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the UNIX&reg; user that owns the directory where the agent and the Adobe Commerce software are installed). If you downloaded the agent as a root user, change the directory and nested files owner.
 
    ```config
    [Unit]
