@@ -378,7 +378,7 @@ If you configured the agent to run with cron instead, use the following instruct
 
 ## Troubleshooting
 
-###  Access keys not parsed properly
+### Access keys not parsed properly
 
 You may see the following error if your access keys are not parsed properly:
 
