@@ -382,7 +382,7 @@ If you configured the agent to run with cron instead, use the following instruct
 You might see next error if keys was not parsed properly:
 ```
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-1` 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
 ```
 This indicates that access keys was not parsed properly from Magento. In order to fix thes please:
 1. Try to use scripted install and save it's output. Check if output contains any errors.
