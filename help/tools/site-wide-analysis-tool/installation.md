@@ -388,7 +388,7 @@ This indicates that access keys was not parsed properly from Magento. In order t
 1. Try to use scripted install and save it's output. Check if output contains any errors.
 2. Check generated config.yaml file. Check if path to magento instance and php is correct. 
 3. Make sure user which is running scheduler is in magento fileowner unix group or same user as magento fileowner.
-4. Check if Magento Connector keys installed correctly and try to update them from as per guid to [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) to connect the extension to your system.
+4. Check if Magento Connector keys installed correctly and try to update them from as per guide to [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) to connect the extension to your system.
 5. Uninstall an agent after updating keys and use scripted install to install it again.
 6. Run scheduler and check if you still receive the same error,
 7. If it did not help increase logging level in config.yaml to debug and open a support ticket.
