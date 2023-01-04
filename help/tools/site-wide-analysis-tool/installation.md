@@ -38,7 +38,7 @@ Your on-premises infrastructure must meet the following requirements before inst
 
 - Operating systems
 
-  - [!DNL Linux x86-64] distributions, such as [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], and similar
+  - [!DNL Linux x86-64] distributions, such as [!DNL Red Hat&reg; Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], and similar
 
   >[!IMPORTANT]
   >
@@ -262,7 +262,7 @@ We recommend configuring the agent to run as a service. If you have limited acce
 
 ### Service {#service}
 
-1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the UNIX® user that owns the directory where the agent and the Adobe Commerce software are installed). If you downloaded the agent as the root user, change the directory and nested files owner.
+1. Create a systemd unit file `(/etc/systemd/system/scheduler.service)` with the following configuration (replace `<filesystemowner>` with the UNIX&reg; user that owns the directory where the agent and the Adobe Commerce software are installed). If you downloaded the agent as the root user, change the directory and nested files owner.
 
    ```config
    [Unit]
@@ -378,20 +378,24 @@ If you configured the agent to run with cron instead, use the following instruct
 
 ## Troubleshooting
 
-#### Can not parse access keys from Magento.
-You might see next error if keys was not parsed properly:
-```
+### Can not parse access keys
+
+You may see the following error if your access keys are not parsed properly:
+
+```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
 FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
 ```
-This indicates that access keys was not parsed properly from Magento. In order to fix thes please:
-1. Try to use scripted install and save it's output. Check if output contains any errors.
-2. Check generated config.yaml file. Check if path to magento instance and php is correct. 
-3. Make sure user which is running scheduler is in magento fileowner unix group or same user as magento fileowner.
-4. Check if Magento Connector keys installed correctly and try to update them from as per guide to [Configure API Keys](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) to connect the extension to your system.
-5. Uninstall an agent after updating keys and use scripted install to install it again.
-6. Run scheduler and check if you still receive the same error,
-7. If it did not help increase logging level in config.yaml to debug and open a support ticket.
+
+To resolve this error, try the following steps:
+
+1. Do a [scripted install](#scripted), save the output, and review the output for errors.
+1. Review the generated `config.yaml` file and verify that the path to your Commerce instance and PHP is correct.
+1. Make sure that the user that is running the scheduler is in the [file system owner](../../installation/prerequisites/file-system/overview.md) Unix group or is the same user as the file system owner.
+1. Make sure that the [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) keys are installed correctly and try updating them to connect the extension to your system.
+1. [Uninstall](#uninstall) the agent after updating the keys and reinstall using the [install script](#scripted).
+1. Run the scheduler and see if you still receive the same error.
+1. If you still receive the same error, increase the log level in the `config.yaml` to debug and open a Support ticket.
 
 
 >[!INFO]
