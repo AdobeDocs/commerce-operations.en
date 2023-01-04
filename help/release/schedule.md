@@ -33,8 +33,6 @@ The following table provides the dates for scheduled releases (dates are subject
 
 Pre-release is General Availability code that is available to Adobe Commerce merchants and all partners two weeks before General Availability. It allows for quicker deployment of code before General Availability.
 
-Beta is non-General Availability code that is available to all partners. It allows for extra time to review code and affected components.
-
 For more information, refer to the [Beta program](beta-program.md).
 
 ## Release types
@@ -45,5 +43,6 @@ For more information, refer to the [Beta program](beta-program.md).
    >
    >Adobe will be releasing beta version patch releases ("Beta Releases"), which are pre-general availability releases of Adobe Commerce features made publicly available to all Adobe Commerce customers and Adobe partners. Beta Releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify or otherwise support (via Adobe Support Services or otherwise) the Beta Releases. Customer is advised to use caution and not to rely in any way on the correct functioning or performance of the Beta Releases and/or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at Customer's own risk. 
    
+-  **Beta version patch releases**—Non-General Availability code updates to the core Adobe Commerce application that include security, compliance, performance, and high-priority quality fixes. It allows for extra time to review code and affected components.
 -  **Security patch releases**—Security-only updates to the Adobe Commerce application released to keep merchants secure and compliant.
 -  **Feature releases**—New features and feature updates that are delivered as independent services, separate from the patch releases. Examples include services like Product Recommendations and Live Search, independent modules like PWA Studio and Inventory Management (MSI), and updates to our cloud services and infrastructure.
