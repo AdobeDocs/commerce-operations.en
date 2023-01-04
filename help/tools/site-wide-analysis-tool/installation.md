@@ -376,7 +376,7 @@ If you configured the agent to run with cron instead, use the following instruct
    rm -rf swat-agent
    ```
 
-## Troubleshouting
+## Troubleshooting
 
 #### Can not parse access keys from Magento.
 You might see next error if keys was not parsed properly:
