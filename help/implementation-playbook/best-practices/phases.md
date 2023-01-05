@@ -53,3 +53,7 @@ These best practices are organized by implementation phase so you can find the r
   </td>
 </tr>
 </table>
+
+## What's new
+
+{{$include /help/_includes/templated/whats-new-bp.md}}
