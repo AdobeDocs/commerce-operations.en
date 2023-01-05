@@ -47,7 +47,7 @@ The following table explains this command's parameters and values.
 
 | Option | Description | Required? |
 | ------ | ----------- | --------- |
-| `<languages>` | Space-separated list of [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) language codes for which to output static view files. (Default is `en_US`.)<br>Find the list by running: `bin/magento info:language:list` | No |
+| `<languages>` | Space-separated list of [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) language codes for which to output static view files. (Default is `en_US`.)<br>Find the list by running: `bin/magento info:language:list` | No |
 | `--language (-l)` | Generate files only for the specified languages. The default, with no option specified, is to generate files for all ISO-639 language codes. You can specify the name of one language code at a time. Default value is **all**.<br>For example: `--language en_US --language es_ES` | No |
 | `--exclude-language`| Generate files for the specified language codes. The default, with no option specified, is to exclude nothing. You can specify the name of one language code or a comma-separated list of language codes. Default value is **none**. | No |
 | `--theme <theme>`| Themes for which to deploy static content. Default value is **all**.<br>For example: `--theme Magento/blank --theme Magento/luma` | No |
