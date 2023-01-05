@@ -93,6 +93,6 @@ See [Enable archiving](https://experienceleague.adobe.com/docs/commerce-admin/st
 
 ## Additional information
 
-- [What are the main differences between InnoDB and MYISAM](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [MySQL Storage Engines](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)
