@@ -36,3 +36,8 @@ task :whatsnew_bp do
   abort report if report.include? 'MISSING whatsnew'
   puts report
 end
+
+desc 'Render the templated files'
+task :render do
+  sh '_scripts/render'
+end
