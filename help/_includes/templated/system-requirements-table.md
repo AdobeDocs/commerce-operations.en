@@ -237,7 +237,7 @@
       </td>
     </tr>
     <tr>
-      <td>[!DNL RabbitMQ]</td>
+      <td>RabbitMQ</td>
       <td>
             3.9
       </td>
