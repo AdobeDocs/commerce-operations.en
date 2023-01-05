@@ -25,7 +25,7 @@ The following example shows the `crontab` configuration for running consumers:
 
 >[!INFO]
 >
->How often you check message queues depends on your business logic and available system resources. In general, you may want to check for new customers and send welcome emails more frequently than a more resource-intensive process, such as updating your catalog. You should define `cron` schedules according to your business needs.
+>How often you check message queues can depend on your business logic and available system resources. In general, you may want to check for new customers and send welcome emails more frequently than a more resource-intensive process, such as updating your catalog. You should define `cron` schedules according to your business needs.
 >
 >It can be configured in the Admin Stores > Settings > Configuration > Advanced > System > Cron configuration options for group: consumers.
 >
