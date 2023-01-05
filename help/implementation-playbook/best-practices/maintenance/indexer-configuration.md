@@ -34,8 +34,8 @@ To maximize site performance, follow these best practices for indexing:
 - Follow [performance best practices](../../../performance/configuration.md) for managing indexes.
 
 >[!IMPORTANT]
-   >
-   >Customer Grid can only be reindexed using `Update on Save`. This index does **_not_** support `Update by Schedule`.
+>
+>The [!DNL Customer Grid] can only be reindexed using the [!UICONTROL Update on Save] option. This index does not support the `Update by Schedule` option.
 
 ## Additional information
 
