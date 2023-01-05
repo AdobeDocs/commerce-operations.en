@@ -259,7 +259,7 @@ class StageClass implements StageInterface
 
 If the data stage supports rollback, it should implement the `RollbackInterface` interface.
 
-Visualization of the running step is provided by Symfony's ProgressBar component (see [Progress bar]()). Access this component in a step as LogLevelProcessor.
+Visualization of the running step is provided by Symfony's ProgressBar component (see [Progress bar](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). Access this component in a step as LogLevelProcessor.
 
 Main methods for use are:
 
