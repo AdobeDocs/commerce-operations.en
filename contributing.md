@@ -12,7 +12,7 @@ you are expected to uphold this code. Please report unacceptable behavior to
 
 ## Contributor Guide Documentation
 
-See the [Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+See the [Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Have A Question?
 
