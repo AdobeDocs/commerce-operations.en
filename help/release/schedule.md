@@ -11,14 +11,14 @@ Adobe releases security and functional patches for each supported release line o
 
 The following table provides the dates for scheduled releases (dates are subject to change):
 
-| Release                                                       | Versions                                        | Pre-release        | General Availability |
-|---------------------------------------------------------------|-------------------------------------------------|--------------------|----------------------|
-| January 2023 Feature release                                  | \-\-                                            | \-\-               | January 17, 2023     |
-| March 2023 Feature + patch release + security patch release   | 2.4.6<sup>1</sup><br>2.4.5-p2<br>2.4.4-p3       | February 28, 2023  | March 14, 2023       |
-| April 2023 Feature release                                    | \-\-                                            | \-\-               | April 25, 2023       |
-| June 2023 Feature + patch release + security patch release    | 2.4.7-beta1<br>2.4.6-p1<br>2.4.5-p3<br>2.4.4-p4 | May 30, 2023       | June 13, 2023        |
-| August 2023 Feature                                           | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5                | July 25, 2023      | August 8, 2023       |
-| October 2023 Feature + patch release + security patch release | 2.4.7-beta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | September 26, 2023 | October 10, 2023     |
+| Release                                                            | Versions                                        | Pre-release        | General Availability |
+|--------------------------------------------------------------------|-------------------------------------------------|--------------------|----------------------|
+| January 2023 Feature release                                       | \-\-                                            | \-\-               | January 17, 2023     |
+| March 2023 Feature + patch release + security patch release        | 2.4.6<sup>1</sup><br>2.4.5-p2<br>2.4.4-p3       | February 28, 2023  | March 14, 2023       |
+| April 2023 Feature release                                         | \-\-                                            | \-\-               | April 25, 2023       |
+| June 2023 Feature + beta patch release + security patch release    | 2.4.7-beta1<br>2.4.6-p1<br>2.4.5-p3<br>2.4.4-p4 | May 30, 2023       | June 13, 2023        |
+| August 2023 Feature + security patch release                       | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5                | July 25, 2023      | August 8, 2023       |
+| October 2023 Feature + beta patch release + security patch release | 2.4.7-beta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | September 26, 2023 | October 10, 2023     |
 
 {style="table-layout:auto"}
 
