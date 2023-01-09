@@ -25,7 +25,7 @@ The following example shows the `crontab` configuration for running consumers:
 
 >[!INFO]
 >
->How often you check message queues depends on your business logic and available system resources. In general, you may want to check for new customers and send welcome emails more frequently than a more resource-intensive process, such as updating your catalog. You should define `cron` schedules according to your business needs.
+>How often you check message queues can depend on your business logic and available system resources. In general, you may want to check for new customers and send welcome emails more frequently than a more resource-intensive process, such as updating your catalog. You should define `cron` schedules according to your business needs.
 >
 >It can be configured in the Admin Stores > Settings > Configuration > Advanced > System > Cron configuration options for group: consumers.
 >
@@ -43,7 +43,7 @@ You can also use a process manager such as [Supervisor](http://supervisord.org/i
 
 >[!INFO]
 >
->If your Adobe Commerce store is hosted on the Cloud platform, use the [`CRON_CONSUMERS_RUNNER`](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) to configure the `consumers_runner` cron job.
+>If your Adobe Commerce store is hosted on the Cloud platform, use the [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) to configure the `consumers_runner` cron job.
 
 ### Specific configuration
 
@@ -76,6 +76,6 @@ Edit the `/app/etc/env.php` file to configure the cron job `consumers_runner`.
 
    >[!INFO]
    >
-   >If your Adobe Commerce store is hosted on the Cloud platform, use the [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) to configure how consumers process messages from the message queue.
+   >If your Adobe Commerce store is hosted on the Cloud platform, use the [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) to configure how consumers process messages from the message queue.
 
 See [Start message queue consumers](../cli/start-message-queues.md).

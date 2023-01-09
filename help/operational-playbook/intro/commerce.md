@@ -20,7 +20,7 @@ Adobe Commerce can be hosted on-premises. So you host and develop locally on you
 Adobe Commerce is a full-featured ecommerce solution that comes with the following additional features:
 
 - B2B functionality, like quoting, custom catalogs, and manage buyer roles and permissions
-- Magento BI dashboards with visualization and custom report builder
+- Adobe Commerce Reporting dashboards with visualization and custom report builder
 - Magento Chat (powered by dotdigital)
 - Advanced marketing tools
 - [!DNL Product Recommendations] powered by Adobe Sensei
