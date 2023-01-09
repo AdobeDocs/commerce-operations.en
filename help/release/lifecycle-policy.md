@@ -5,21 +5,21 @@ description: Learn about key dates for end of software support for Adobe Commerc
 
 # Adobe Commerce lifecycle policy
 
-For Adobe Commerce 2.4 and subsequent releases:
+For Adobe Commerce 2.4.4 and subsequent releases:
 
--  To better streamline our lifecycle policy, Adobe provides quality fixes to the 2.4 release line until the end of support date of the [PHP version](https://www.php.net/supported-versions.php) upon which it is based. A customer can access quality fixes by contacting [Adobe Commerce Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} if their version is still eligible for quality support. Refer to the table below for the End of Software Support dates for Adobe Commerce release lines.
+-  To better streamline our lifecycle policy and to support the mission-critical needs of Adobe Commerce customers, we are expanding our support window to three years from the date of General Availability (GA) date for Adobe Commerce 2.4.4 and later. Adobe provides quality fixes to the 2.4.4 and later releases for a three-year support period. Customers can access quality fixes by contacting [Adobe Commerce Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) or through the self-serve [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) if their version is still eligible for quality support. Refer to the table below for the End of Software Support dates for Adobe Commerce release lines.
 
--  Adobe provides security fixes only through the latest patch or security patch release, even if a customer's version is still eligible for quality support. Unlike quality fixes, security fixes cannot be backported to previous minor releases nor to previous patch releases within supported minor releases.
+-  Adobe provides security fixes through security patch release for the three-year support period.
 
 -  For critical security issues, such as zero-day vulnerabilities, Adobe provides [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) for all customers on a supported version, even if they are not on the latest patch or security patch release. It is important to note that a hotfix is not a catch-all and does not address all the security issues that would be fixed by upgrading to the latest release.
 
 ## End of Software Support
 
-| Release                    | End of Software Support<sup>1</sup>                                                  | Dependent PHP Version |
-|----------------------------|--------------------------------------------------------------------------------------|-----------------------|
-| Adobe Commerce 2.4.0-2.4.3 | November 28, 2022                                                                    | PHP 7.4               |
-| Adobe Commerce 2.4.4-2.4.5 | January 25, 2025                                                                     | PHP 8.1               |
-| Adobe Commerce 2.4.6       | January 25, 2025 for PHP 8.1 deployments<br>January 25, 2026 for PHP 8.2 deployments | PHP 8.1<br>PHP 8.2    |
+| Release                    | General Availability | End of Software Support<sup>1</sup> | Dependent PHP Version |
+|----------------------------|----------------------|-------------------------------------|-----------------------|
+| Adobe Commerce 2.4.4       | April 12, 2022       | April 24, 2025                      | PHP 7.4               |
+| Adobe Commerce 2.4.5       | August 9, 2022       | August 9, 2025                      | PHP 8.1               |
+| Adobe Commerce 2.4.6       | March 14, 2023       | March 14, 2026                      | PHP 8.1 and PHP 8.2   |
 
 {style="table-layout:auto"}
 
