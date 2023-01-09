@@ -9,10 +9,11 @@ Adobe Commerce and Magento Open Source use [semantic versioning](https://semver.
 
 -  **MAJOR release**—2
 -  **MINOR release**—2.4
--  **PATCH release**—2.4.1
-   -  **SECURITY patch release**—2.4.1-p1
+-  **PATCH release**—2.4.5
+   -  **SECURITY patch release**—2.4.5-p1
       -  Security bug fix
       -  Security enhancement
+-  **BETA patch release**—2.4.7-beta1
 -  **Feature release**
 -  **Hotfix**
 -  **Individual patch**
@@ -37,7 +38,7 @@ The following guidelines apply to patch releases:
 -  Changes that could break extensions or code compatibility are avoided. For example, code written for version 2.2.0 should still work on version 2.2.7.
 -  On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these are mostly PATCH-level changes; sometimes MINOR-level changes.
 
-## SECURITY patch release
+### SECURITY patch release
 
 **Security Bug Fix**: A software code change that resolves an identified security issue and delivers expected results in an affected product area. These fixes are generally backward compatible.
 
@@ -73,6 +74,12 @@ With the announcement of our [new release strategy and updated lifecycle pol
       | Security patch releases for previous, supported minor releases (currently 2.3) | X            | X                    |
 
 For general information about security releases, see [Introducing the New Security-only Patch Release](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches, see [Quick start install](../installation/composer.md).
+
+## BETA patch release
+
+Pre-general availability releases of Adobe Commerce features made publicly available to all Adobe Commerce customers and Adobe partners. It allows for extra time before General Availability to review code and affected components.
+
+Beta Releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) the Beta Releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the Beta Releases and/or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at Customer's own risk.
 
 ## Feature release
 
