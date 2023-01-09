@@ -11,6 +11,7 @@ After reviewing system requirements, you must complete the following prerequisit
 
 - Update all software
 - Verify that a supported search engine is installed
+- Convert database table format
 - Set the open files limit
 - Verify that cron jobs are running
 - Set `DATA_CONVERTER_BATCH_SIZE`
@@ -24,7 +25,11 @@ The [system requirements](../../installation/system-requirements.md) describe ex
 
 Ensure that you updated all system requirements and dependencies in your environment. See PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), and [required PHP settings](../../installation/prerequisites/php-settings.md#php-settings).
 
-## Verify a supported search engine is installed
+>[!NOTE]
+>
+>For Adobe Commerce on cloud infrastructure Pro projects, you must create a [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ticket to install or update services in Staging and Production environments. Indicate the service changes needed and include your updated `.magento.app.yaml` and `services.yaml` files and PHP version in the ticket. It can take up to 48 hours for the Cloud infrastructure team to update your project. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+
+## Verify that a supported search engine is installed
 
 Adobe Commerce and Magento Open Source require Elasticsearch or OpenSearch to be installed in order to use the software.
 
@@ -38,7 +43,7 @@ You can use the command line or the Admin to determine your catalog search engin
 
 - From the Admin, check the value of the **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** field.
 
-The following sections describe what actions you must take before upgrading to 2.4.0.
+The following sections describe what actions that you must take before upgrading to 2.4.0.
 
 ### MySQL
 
@@ -57,13 +62,13 @@ You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 
 
 Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
-Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+Elasticsearch requires Java Development Kit (JDK) 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
 
 [Configure Elasticsearch](../../configuration/search/configure-search-engine.md) describes the tasks you must perform after updating Elasticsearch 2 to a supported version.
 
 ### OpenSearch
 
-OpenSearch is an open source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce and Magento Open Source introduce support for OpenSearch:
+OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce and Magento Open Source introduce support for OpenSearch:
 
 - 2.4.4
 - 2.4.3-p2
@@ -73,11 +78,15 @@ You can [migrate from Elasticsearch to OpenSearch](opensearch-migration.md) only
 
 OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
 
-[Configure Magento to use Elasticsearch](../../configuration/search/configure-search-engine.md) describes the tasks you must perform after changing search engines.
+[Search engine configuration](../../configuration/search/configure-search-engine.md) describes the tasks that you must perform after changing search engines.
 
 ### Third-party extensions
 
 We recommend that you contact your search engine vendor to determine whether your extension is fully compatible with 2.4.
+
+## Convert database table format
+
+You must convert the format of all database tables from `COMPACT` to `DYNAMIC`. You must also convert the storage engine type from `MyISAM` to `InnoDB`. See [best practices](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## Set the open files limit
 
@@ -110,9 +119,9 @@ To set the value in your Bash shell:
 >
 >We recommend that you avoid setting a value for the `pcre.recursion_limit` property in the `php.ini` file because it can result in incomplete rollbacks with no failure notice.
 
-## Verify cron jobs are running
+## Verify that cron jobs are running
 
-The UNIX task scheduler `cron` is critical to day-to-day Adobe Commerce and Magento Open Source operations. It schedules things like reindexing, newsletters, e-mails, sitemaps, and so on. Several features require at least one cron job running as the file system owner.
+The UNIX task scheduler `cron` is critical to day-to-day Adobe Commerce and Magento Open Source operations. It schedules things like reindexing, newsletters, e-mails, and sitemaps. Several features require at least one cron job running as the file system owner.
 
 To verify that your cron job is set up properly, check the crontab by entering the following command as the file system owner:
 
@@ -140,7 +149,7 @@ To see the error, click **System Messages** at the top of the window as follows:
 
 ![](../../assets/upgrade-guide/system-messages.png)
 
-See [Configure and run cron](../../configuration/cli/configure-cron-jobs.md) for more infromation.
+See [Configure and run cron](../../configuration/cli/configure-cron-jobs.md) for more information.
 
 ## Set DATA_CONVERTER_BATCH_SIZE
 
@@ -171,7 +180,7 @@ To set the environment variable:
 
    >[!NOTE]
    >
-   > `DATA_CONVERTER_BATCH_SIZE` requires memory; avoid setting it to a large value (approximately 1GB) without testing it first.
+   > `DATA_CONVERTER_BATCH_SIZE` requires memory; avoid setting it to a large value (approximately 1 GB) without testing it first.
 
 1. After your upgrade is complete, you can unset the variable:
 
@@ -185,7 +194,7 @@ For security reasons, Adobe Commerce and Magento Open Source require certain per
 
 Directories in the file system must be writable by the [file system owner's](../../installation/prerequisites/file-system/overview.md) group.
 
-To verify that your file system permissions are set properly, either log in to the application server or use your hosting provider's file manager application.
+To verify that your file system permissions are set properly, either log into the application server or use your hosting provider's file manager application.
 
 For example, enter the following command if the application is installed in `/var/www/html/magento2`:
 

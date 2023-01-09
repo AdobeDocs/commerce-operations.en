@@ -7,7 +7,7 @@ description: Learn how to start a message queue consumer.
 
 {{file-system-owner}}
 
-You must start a message queue consumer to enable asynchronous operations such as Inventory Management mass actions and REST bulk and asynchronous endpoints. To enable B2B functionality, you must start multiple consumers. Third-party modules might also require that you start a custom consumer.
+You must start a [message queue consumer](../queues/consumers.md) to enable asynchronous operations such as Inventory Management mass actions and REST bulk and asynchronous endpoints. To enable B2B functionality, you must start multiple consumers. Third-party modules might also require that you start a custom consumer.
 
 To view a list of all consumers:
 
