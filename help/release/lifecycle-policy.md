@@ -114,7 +114,7 @@ For Adobe Commerce 2.4.4 and subsequent releases:
  <tbody>
   <tr>
    <td style="background-color:#67ac68;">Supported</td>
-   <td>Security and quality patches for Adpobe Commerce and PHP.</td>
+   <td>Security and quality patches for Adobe Commerce and PHP.</td>
   </tr>
   <tr>
    <td style="background-color:#ffd966;">Extended support</td>
