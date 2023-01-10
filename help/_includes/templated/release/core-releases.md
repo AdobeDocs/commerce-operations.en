@@ -23,7 +23,7 @@ Support for the 2.4.6 release line ends on March&nbsp;14, 2026.
 
 ## 2.4.5
 
-Support for the 2.4.5 release line ends on September&nbsp; 9, 2025.
+Support for the 2.4.5 release line ends on August&nbsp; 9, 2025.
 
 <table>
   <thead>
