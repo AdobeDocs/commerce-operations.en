@@ -44,36 +44,11 @@ The following guidelines apply to patch releases:
 
 **Security Enhancement**: A software improvement or configuration change to proactively improve security within the application. These security enhancements help address security risks that impact the security posture of the Adobe Commerce application but may be backward incompatible.
 
-With security patch releases, you can keep your site more secure without applying additional quality fixes and enhancements that are contained within a full quarterly patch release. Security patch releases are appended with '-pN', where N is the incremental patch version beginning with 1 (for example, 2.3.5-p1). Security patch releases can also include hotfixes required to address critical issues that affect the Adobe Commerce application.
+With security patch releases, you can keep your site more secure without applying additional quality fixes and enhancements that are contained within a full patch release. Security patch releases are appended with '-pN', where N is the incremental patch version beginning with 1 (for example, 2.3.5-p1). Security patch releases can also include hotfixes required to address critical issues that affect the Adobe Commerce application.
 
 Each security patch release is based on the prior full patch release. It contains quality and security fixes from prior patch release and security fixes created between the prior full patch release and the security patch release.
 
-With the announcement of our [new release strategy and updated lifecycle policy](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy) (9/16/2021), our security patch releases are differentiated based on whether they are applicable to the latest-supported minor release or a part of a still-supported previous minor release line:
-
--  **Security patch releases for the latest-supported minor release**:
-
-   -  The security patch release for the latest-supported minor release (currently Adobe Commerce 2.4) includes:
-
-      -  Security bug fixes that have been created since the previous full patch release.
-
-      -  These security patch releases can also include hotfixes required to address critical issues that may affect the Adobe Commerce application.
-
-   -  The security patch release for the latest-supported minor release (currently Adobe Commerce 2.4) does not typically include security enhancements. Instead, these are included in the full comprehensive patch release for the latest-supported minor release.
-
--  **Security patch releases for supported previous minor releases**:
-
-   -  The security patch release for a previous minor release that is still supported (currently Adobe Commerce 2.3) includes:
-
-      -  Security bug fixes that have been created since the previous patch or security patch release, and new security enhancements.
-
-      -  These security patch releases can also include hotfixes required to address critical issues that affect the Adobe Commerce application.
-
-      |                                                                                | Security Bug | Security Enhancement |
-      |--------------------------------------------------------------------------------|--------------|----------------------|
-      | Security patch releases for the latest-supported minor release (currently 2.4) | X            |                      |
-      | Security patch releases for previous, supported minor releases (currently 2.3) | X            | X                    |
-
-For general information about security releases, see [Introducing the New Security-only Patch Release](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches, see [Quick start install](../installation/composer.md).
+For instructions on downloading and applying security patches, see [Quick start install](../installation/composer.md#example---security-patch).
 
 ## BETA patch release
 
@@ -107,7 +82,6 @@ Created by non-Adobe personnel to fix an issue or modify the Adobe Commerce code
 
 ## Related topics
 
--  [Planning and Budgeting for Commerce Upgrade Cycles](https://magento.com/sites/default/files8/2019-08/Magento-Release-Cycle-Infosheet_Aug_2019.pdf)
 -  [Versioning](https://developer.adobe.com/commerce/php/development/versioning/)
 -  [Upcoming releases](schedule.md)
 -  [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
