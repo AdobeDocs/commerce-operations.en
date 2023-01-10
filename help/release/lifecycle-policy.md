@@ -17,7 +17,7 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 
 | Release                    | General Availability | End of software support<sup>1</sup> | Dependent PHP version |
 |----------------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.4       | April 12, 2022       | April 24, 2025                      | PHP 7.4               |
+| Adobe Commerce 2.4.4       | April 12, 2022       | April 24, 2025                      | PHP 8.1               |
 | Adobe Commerce 2.4.5       | August 9, 2022       | August 9, 2025                      | PHP 8.1               |
 | Adobe Commerce 2.4.6       | March 14, 2023       | March 14, 2026                      | PHP 8.1 and PHP 8.2   |
 
@@ -66,34 +66,20 @@ For Adobe Commerce 2.4.4 and subsequent releases:
     <td>Q4</td>
   </tr>
   <tr>
-    <td style="background-color:#cd3c3c;">2.3.7</td>
-    <td>7.4</td>
-    <td colspan="2" style="background-color:#67ac68;"></td>
-    <td colspan="5" style="background-color:#ffd966;"></td>
-    <td colspan="13"></td>
-  </tr>
-  <tr>
-    <td style="background-color:#cd3c3c;">2.4.0 - 2.4.3</td>
-    <td>7.4</td>
-    <td colspan="3" style="background-color:#67ac68;"></td>
-    <td colspan="5" style="background-color:#ffd966;"></td>
-    <td colspan="12"></td>
-  </tr>
-  <tr>
-    <td style="background-color:#67ac68;">2.4.4</td>
+    <td>2.4.4</td>
     <td>8.1</td>
     <td colspan="14" style="background-color:#67ac68;"></td>
     <td colspan="6"></td>
   </tr>
   <tr>
-    <td style="background-color:#67ac68;">2.4.5</td>
+    <td>2.4.5</td>
     <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="5"></td>
   </tr>
   <tr>
-    <td rowspan="2" style="background-color:#67ac68;">2.4.6</td>
+    <td rowspan="2">2.4.6</td>
     <td>8.1</td>
     <td colspan="5"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
@@ -108,7 +94,7 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 </tbody>
 </table>
 
-## Key
+**Key**
 
 <table style="table-layout:auto">
  <tbody>
@@ -116,13 +102,9 @@ For Adobe Commerce 2.4.4 and subsequent releases:
    <td style="background-color:#67ac68;">Supported</td>
    <td>Security and quality patches for Adobe Commerce and PHP.</td>
   </tr>
-  <tr>
-   <td style="background-color:#ffd966;">Extended support</td>
-   <td>Expanded support window to three years from the date of General Availability (GA) for Adobe Commerce 2.4.4 and later.</td>
-  </tr>
-  <tr>
+  <!-- <tr>
    <td style="background-color:#cd3c3c;">End of software support</td>
    <td>Version that has reached end of software support.</td>
   </tr>
- </tbody>
+ </tbody> -->
 </table>

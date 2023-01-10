@@ -44,11 +44,11 @@ The following guidelines apply to patch releases:
 
 **Security Enhancement**: A software improvement or configuration change to proactively improve security within the application. These security enhancements help address security risks that impact the security posture of the Adobe Commerce application but may be backward incompatible.
 
-With security patch releases, you can keep your site more secure without applying additional quality fixes and enhancements that are contained within a full quarterly patch release. Security patch releases are appended with '-pN', where N is the incremental patch version beginning with 1 (for example, 2.3.5-p1). Security patch releases can also include hotfixes required to address critical issues that affect the Adobe Commerce application.
+With security patch releases, you can keep your site more secure without applying additional quality fixes and enhancements that are contained within a full patch release. Security patch releases are appended with '-pN', where N is the incremental patch version beginning with 1 (for example, 2.3.5-p1). Security patch releases can also include hotfixes required to address critical issues that affect the Adobe Commerce application.
 
 Each security patch release is based on the prior full patch release. It contains quality and security fixes from prior patch release and security fixes created between the prior full patch release and the security patch release.
 
-For general information about security releases, see [Introducing the New Security-only Patch Release](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). For instructions on downloading and applying security patches, see [Quick start install](../installation/composer.md).
+For instructions on downloading and applying security patches, see [Quick start install](../installation/composer.md#example---security-patch).
 
 ## BETA patch release
 
