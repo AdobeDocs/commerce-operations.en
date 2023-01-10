@@ -1,5 +1,18 @@
 {
-    "2.4.4-2.4.6": {
+    "2.4.6": {
+        "releases": [
+            {
+                "publishedAt":"2023-03-14T12:05:25Z",
+                "tagName":"2.4.6",
+                "releaseNotes": {
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html"
+                }
+
+            }
+        ],
+        "end-of-support": "2026-03-14"
+    },
+    "2.4.5": {
         "releases": [
             {
                 "publishedAt": "2022-10-11T11:50:56Z",
@@ -16,7 +29,12 @@
                     "opensource": "https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-5.html"
                 }
 
-            },
+            }
+        ],
+        "end-of-support": "2025-09-09"
+    },
+    "2.4.4": {
+        "releases": [
             {
                 "publishedAt": "2022-10-11T11:51:33Z",
                 "tagName": "2.4.4-p2",
@@ -40,7 +58,7 @@
                 }
             }
         ],
-        "end-of-support": "2024-11-25"
+        "end-of-support": "2025-04-12"
     },
     "2.4.0-2.4.3": {
         "releases": [
