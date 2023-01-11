@@ -52,7 +52,7 @@ For instructions on downloading and applying security patches, see [Quick star
 
 ## BETA patch release
 
-Pre-general availability releases of Adobe Commerce features made publicly available to all Adobe Commerce customers and Adobe partners. It allows for extra time before General Availability to review code and affected components.
+Pre-general availability releases of Adobe Commerce features are made publicly available to all Adobe Commerce customers and Adobe partners. It allows for extra time before General Availability to review code and affected components.
 
 Beta Releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) the Beta Releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the Beta Releases and/or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at Customer's own risk.
 
