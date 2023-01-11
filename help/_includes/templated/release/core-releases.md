@@ -114,7 +114,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     <tr>
         <td>2.4.3</td>
         <td>August&nbsp;10, 2021</td>
-          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/commerce-2-4-3.html">Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/commerce-2-4-3.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -201,7 +201,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.7</td>
         <td>May&nbsp;11, 2021</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -213,7 +213,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.6</td>
         <td>October&nbsp;15, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -237,7 +237,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.5</td>
         <td>April&nbsp;28, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -249,7 +249,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.4</td>
         <td>January&nbsp;28, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -261,25 +261,25 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.3</td>
         <td>October&nbsp; 8, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.2</td>
         <td>June&nbsp;25, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.1</td>
         <td>March&nbsp;26, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.0</td>
         <td>November&nbsp;28, 2018</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr><!-- patch_releases -->
   </tbody>
@@ -293,81 +293,57 @@ Support for the 2.2 release line ended on December&nbsp; 1, 2019.
   <thead>
     <tr>
       <th>Patch version</th>
-      <th>Release date</th><th>Release notes</th>
+      <th>Release date</th>
     </tr>
   </thead>
   <tbody>
     <tr>
         <td>2.2.11</td>
         <td>January&nbsp;28, 2020</td>
-          <td>
-          </td>
     </tr>
     <tr>
         <td>2.2.10</td>
         <td>October&nbsp; 8, 2019</td>
-          <td>
-          </td>
     </tr>
     <tr>
         <td>2.2.9</td>
         <td>June&nbsp;25, 2019</td>
-          <td>
-          </td>
     </tr>
     <tr>
         <td>2.2.8</td>
         <td>March&nbsp;26, 2019</td>
-          <td>
-          </td>
     </tr>
     <tr>
         <td>2.2.7</td>
         <td>November&nbsp;28, 2018</td>
-          <td><a href="http://magento.github.io/devdocs/guides/v2.2/release-notes/ReleaseNotes2.2.7EE.html">Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.6</td>
         <td>September&nbsp;18, 2018</td>
-          <td><a href="http://magento.github.io/devdocs/guides/v2.2/release-notes/ReleaseNotes2.2.6EE.html">Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.5</td>
         <td>June&nbsp;27, 2018</td>
-          <td><a href="http://magento.github.io/devdocs/guides/v2.2/release-notes/ReleaseNotes2.2.5EE.html">Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.4</td>
         <td>May&nbsp; 2, 2018</td>
-          <td><a href="http://magento.github.io/devdocs/guides/v2.2/release-notes/ReleaseNotes2.2.4EE.html">Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.3</td>
         <td>February&nbsp;27, 2018</td>
-          <td><a href="http://magento.github.io/devdocs/guides/v2.2/release-notes/ReleaseNotes2.2.3EE.html">Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.2</td>
         <td>December&nbsp;12, 2017</td>
-          <td><a href="http://magento.github.io/devdocs/guides/v2.2/release-notes/ReleaseNotes2.2.2EE.html">Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.1</td>
         <td>November&nbsp; 7, 2017</td>
-          <td><a href="http://magento.github.io/devdocs/guides/v2.2/release-notes/ReleaseNotes2.2.1EE.html">Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.0</td>
         <td>September&nbsp;26, 2017</td>
-          <td><a href="http://magento.github.io/devdocs/guides/v2.2/release-notes/ReleaseNotes2.2.0EE.html">Release Notes</a><br>
-          </td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
