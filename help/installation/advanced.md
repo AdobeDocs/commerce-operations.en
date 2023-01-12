@@ -155,14 +155,21 @@ The following tables provide many but not all available install parameters. For 
 
 |Name|Value|Required?|
 |--- |--- |--- |
-`--search-engine` | The version of Elasticsearch or OpenSearch to use as the search engine. Possible values are `elasticsearch7`, `elasticsearch6`, and `elasticsearch5`. The default is `elasticsearch7`. To use OpenSearch, specify `elasticsearch7`. Elasticsearch 5 has been deprecated and is not recommended. | No
-`--elasticsearch-host` | The host name or IP address where search engine is running. The default is `localhost`. | No
-`--elasticsearch-port` | The port for incoming HTTP requests. The default is `9200`. | No
-`--elasticsearch-index-prefix` | A prefix that identifies the search engine index. The default is `magento2`. | No
-`--elasticsearch-timeout` | The number of seconds before the system times out. The default is `15`. | No
-`--elasticsearch-enable-auth` | Enables authentication on the search engine server. The default is `false`. | No
-`--elasticsearch-username` | The user ID to authenticate the search engine | No, unless authentication is enabled
-`--elasticsearch-password` | The password to authenticate the search engine | No, unless authentication is enabled
+|`--search-engine` | The version of Elasticsearch or OpenSearch to use as the search engine. The default is `elasticsearch7`. Elasticsearch 5 has been deprecated and is not recommended. | No |
+|`--elasticsearch-host` | The host name or IP address where Elasticsearch is running. The default is `localhost`. | No |
+|`--elasticsearch-port` | The Elasticsearch port for incoming HTTP requests. The default is `9200`. | No |
+|`--elasticsearch-index-prefix` | A prefix that identifies the Elasticsearch search index. The default is `magento2`. | No |
+|`--elasticsearch-timeout` | The number of seconds before the system times out. The default is `15`. | No |
+|`--elasticsearch-enable-auth` | Enables authentication on the Elasticsearch server. The default is `false`. | No |
+|`--elasticsearch-username` | The user ID to authenticate to the Elasticsearch server. | No, unless authentication is enabled |
+|`--elasticsearch-password` | The password to authenticate to the Elasticsearchserver. | No, unless authentication is enabled |
+|`--opensearch-host` | The host name or IP address where OpenSearch is running. The default is `localhost`. | No |
+|`--opensearch-port` | The OpenSearch port for incoming HTTP requests. The default is `9200`. | No |
+|`--opensearch-index-prefix` | A prefix that identifies the OpenSearch search index. The default is `magento2`. | No |
+|`--opensearch-timeout` | The number of seconds before the system times out. The default is `15`. | No |
+|`--opensearch-enable-auth` | Enables authentication on the OpenSearch server. The default is `false`. | No |
+|`--opensearch-username` | The user ID to authenticate to the OpenSearch server. | No, unless authentication is enabled |
+|`--opensearch-password` | The password to authenticate to the OpenSearch server. | No, unless authentication is enabled |
 
 **[!DNL RabbitMQ] configuration options:**
 
