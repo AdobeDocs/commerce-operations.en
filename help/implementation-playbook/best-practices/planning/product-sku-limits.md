@@ -28,7 +28,7 @@ Having more than the maximum number of effective SKUs slows down product data re
 Use the following strategies to reduce the number of products (SKUs):
 
 - Minimize multipliers—
-  - Moving stores or websites reduces the multiplier. If you have 50,000 SKUs, ten Websites, and ten Customer Groups, the Effective Number of SKUs is 5 million. Removing five Customer Groups reduces the Effective SKUs to 2.5 million.
+  - Consolidating websites reduces the multiplier. If you have 50,000 SKUs, ten Websites, and ten Customer Groups, the Effective Number of SKUs is 5 million. Removing five Customer Groups reduces the Effective SKUs to 2.5 million.
   - Use alternative product features for custom pricing to replace shared catalog and customer groups multipliers.
   - Both customer groups and shared catalog function as multipliers for the number of effective SKUs in a store.
 - Restructure the catalog—
