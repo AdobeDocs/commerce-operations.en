@@ -21,7 +21,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>Composer</td>
+      <td>>[!DNL Composer]</td>
       <td>
             2.2
       </td>
