@@ -309,7 +309,7 @@
       </td>
     </tr>
     <tr>
-      <td>Varnish</td>
+      <td>[!DNL Varnish]</td>
       <td>
             7.0
       </td>
@@ -561,7 +561,7 @@
       </td>
     </tr>
     <tr>
-      <td>AWS Elasticsearch</td>
+      <td>[!DNL AWS Elasticsearch]</td>
       <td>
             7.9
       </td>
@@ -597,7 +597,7 @@
       </td>
     </tr>
     <tr>
-      <td>AWS OpenSearch</td>
+      <td>[!DNL AWS OpenSearch]</td>
       <td>
             1.2
       </td>
