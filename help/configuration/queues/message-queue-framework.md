@@ -5,7 +5,7 @@ description: Read about the message queue framework and how it works with the Ad
 
 # Message queues overview
 
-The Message Queue Framework (MQF) is a system that allows a [module](https://glossary.magento.com/module) to publish messages to queues. It also defines the consumers that will receive the messages asynchronously. The MQF uses [[!DNL RabbitMQ]](https://www.rabbitmq.com) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
+The Message Queue Framework (MQF) is a system that allows a [module](https://glossary.magento.com/module) to publish messages to queues. It also defines the [consumers](consumers.md) that will receive the messages asynchronously. The MQF uses [[!DNL RabbitMQ]](https://www.rabbitmq.com) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.
 
 The following diagram illustrates the Message Queue Framework:
 

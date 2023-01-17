@@ -10,7 +10,7 @@ feature: Best Practices
 
 This article explains how to prepare your database when upgrading to Adobe Commerce 2.3.5 from version 2.3.4 or earlier.
 
-This upgrade requires the support team to upgrade MariaDB on the cloud infrastructure from MariaDB 10.0 to 10.2 to meet requirements for Adobe Commerce . Adobe Commerce version 2.3.5 and later.
+This upgrade requires the support team to upgrade MariaDB on the cloud infrastructure from MariaDB 10.0 to 10.2 to meet requirements for Adobe Commerce version 2.3.5 and later.
 
 ## Affected product and versions
 
@@ -18,77 +18,118 @@ Adobe Commerce on cloud infrastructure with Adobe Commerce version 2.3.4 or earl
 
 ## Prepare your database for the upgrade
 
-Before the Adobe Commerce Support team begins the upgrade process, you must prepare your database by converting the format for all tables from `COMPACT` to `DYNAMIC`. You must also convert the storage engine type from `MyISAM` to `InnoDB`.
+Before the Adobe Commerce Support team begins the upgrade process, prepare your database by converting your database tables:
 
-Keep the following guidelines in mind when you create the plan and schedule to convert the database.
+- Convert the row format from `COMPACT` to `DYNAMIC`
+- Convert the storage engine from `MyISAM` to `InnoDB`
+
+Keep the following considerations in mind when you plan and schedule the conversion:
 
 - Converting from `COMPACT` to `DYNAMIC` tables can take several hours with a large database.
 
-- To prevent data corruption, do not perform the conversion when your site is live.
+- To prevent data corruption, do not complete conversion work on a live site.
 
 - Complete the conversion work during a low traffic period on your site.
 
-- Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the `ALTER` commands.
+- Switch your site to [maintenance mode](../../../installation/tutorials/maintenance-mode.md) before running the commands to convert database tables.
 
-### Convert database tables
+### Convert database table row format
 
-You can convert tables on one node in your cluster. The changes will replicate to the other core nodes in your cluster. 
+You can convert tables on one node in your cluster. The changes replicate automatically to the other service nodes.
 
 1. From your Adobe Commerce on cloud infrastructure environment, use SSH to connect to node 1.
 
 1. Log in to MariaDB.
 
-1. Convert the table format.
+1. Identify tables to be converted from compact to dynamic format.
 
-   - Identify tables to be converted from compact to dynamic format.
+   ```mysql
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   ```
 
-     ```mysql
-     SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
-     ```
+1. Determine the table sizes so you can schedule the conversion work.
 
-   - Determine the table sizes so you can schedule the conversion work.
+   ```mysql
+   SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
+   ```
 
-     ```mysql
-     SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
-     ```
+   Larger tables take longer to convert. Review the tables and batch the conversion work by priority and table size to help plan the required maintenance windows.
 
-     Larger tables take longer to convert. You should plan accordingly when taking your site in and out of maintenance mode which batches of tables to convert in which order, so as to plan the timings of the maintenance windows needed
+1. Convert all tables to dynamic format one at a time.
 
-   - Convert all tables to dynamic format one at a time.
+   ```mysql
+   ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
+   ```
 
-     ```mysql
-     ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
-     ```
+### Convert database table storage format
 
-1. Update the table storage engine.
+You can convert tables on one node in your cluster. The changes replicate automatically to the other service nodes.
 
-   - Identify tables that use `MyISAM` storage.
+The process to convert the storage format is different for Adobe Commerce Starter and Adobe Commerce Pro projects.
 
-     ```mysql
-     SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
-     ```
+- For Starter architecture, use the MySQL `ALTER` command to convert the format.
+- On Pro architecture, use the MySQL `CREATE` and `SELECT` commands to create a database table with `InnoDB` storage and copy the data from the existing table into the new table. This method insures that the changes are replicated to all nodes in your cluster.
 
-   - Convert tables that use `MyISAM` storage to `InnoDB` storage.
+**Convert table storage format for Adobe Commerce Pro projects**
 
-     ```mysql
-     ALTER TABLE [ table name here ] ENGINE=InnoDB;
-     ```
+1. Identify tables that use `MyISAM` storage.
 
-1. Verify the conversion.
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
 
-   This step is required because code deployments made after you completed the conversion might cause some tables to be reverted to their original configuration.
+1. Convert all tables to `InnoDB` storage format one at a time.
 
-   - The day before the scheduled upgrade to MariaDB version 10.2, login to your database and run the queries to check the format and storage engine.
-
-     ```mysql
-     SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
-     ```
+   - Rename the existing table to prevent name conflicts.
 
      ```mysql
-     SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+     RENAME TABLE <existing_table> <table_old>;
      ```
 
-   - If any tables have been reverted, repeat the steps to change the table format and storage engine.
+   - Create a table that uses `InnoDB` storage using the data from the existing table.
+
+     ```mysql
+     CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+     ```
+
+   - Verify that the new table has all required data.
+
+   - Delete the original table that you renamed.
+
+
+**Convert table storage format for Adobe Commerce Starter projects**
+
+1. Identify tables that use `MyISAM` storage.
+
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
+
+1. Convert tables that use `MyISAM` storage to `InnoDB` storage.
+
+   ```mysql
+   ALTER TABLE [ table name here ] ENGINE=InnoDB;
+   ```
+
+### Verify the database conversion
+
+The day before the scheduled upgrade to MariaDB version 10.2, verify that all tables have the correct row format and storage engine. Verification is required because code deployments made after you complete the conversion might cause some tables to be reverted to their original configuration.
+
+1. Log in to your database.
+
+1. Check for any tables that still have the `COMPACT` row format.
+
+   ```mysql
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
+   ```
+
+1. Check for any tables that still use the `MyISAM` storage format
+
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
+
+1. If any tables have been reverted, repeat the steps to change the table row format and storage engine.
 
 ## Additional information
 

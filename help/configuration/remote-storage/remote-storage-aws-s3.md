@@ -28,6 +28,12 @@ The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage ser
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
+1. Synchronize media files with remote storage.
+
+   ```bash
+   bin/magento remote-storage:sync
+   ```
+
 ## Configure Nginx
 
 Nginx requires additional configuration to perform Authentication with the `proxy_pass` directive. Add the following proxy information to the `nginx.conf` file:
