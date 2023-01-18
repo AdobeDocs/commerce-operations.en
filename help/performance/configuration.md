@@ -36,6 +36,27 @@ There can be times when intensive sales on a storefront occur at the same time t
 >
 >The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
 
+## Asynchronous Configuration save
+In instances when large number of stores are configured, admin configuration save results in cache clean up for each configured store which can cause potential timeouts on configuration save requests. This feature enables saving of admin configuration in a message queue that is processed by a consumer running as a cron job. This allows the admin user to save the configuration faster and also defers the underlying overhead of the save request to a background task running as a cron job.   
+
+You can enable Async Config save using this command-line interface:
+
+  ```bash
+  bin/magento setup:config:set --config-async 1
+  ```
+The `set` command writes the following to the `app/etc/env.php` file:
+
+```conf
+...
+   'config' => [
+       'async' => 1
+   ]
+```
+The messages in the queue are processed on a first-in-first-out basis using a Consumer that can be run using this command: 
+
+```bash
+    bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+```
 ## Deferred stock update
 
 In times of intensive sales, [!DNL Commerce] can defer stock updates related to orders. This minimizes the number of operations and speeds up the order placement process. However, this option is risky and can only be used when Backorders are activated in the store, because this option can lead to negative stock quantities. This option can bring significant performance improvement on Checkout flows for stores that can easily re-fill their stock on demand. To activate deferred stock updates on your site, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]**. See [Managing Inventory](https://docs.magento.com/user-guide/catalog/inventory.html) in the _Adobe Commerce User Guide_ for more information.
