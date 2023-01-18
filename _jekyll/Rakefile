@@ -26,6 +26,7 @@ task :whatsnew do
 
   # Merge generated tmp/whats-new.yml with existing src/_data/whats-new.yml
   generated_data = YAML.load_file generated_file
+  current_data['entries'] = [] if current_data['entries'].nil?
   current_data['updated'] = generated_data['updated']
   current_data['entries'].prepend(generated_data['entries']).flatten!
   current_data['entries'].uniq! { |entry| entry['link'] }
@@ -61,6 +62,7 @@ task :whatsnew_bp do
   # Merge generated tmp/whats-new.yml with existing src/_data/whats-new.yml
   generated_data = YAML.load_file generated_file
   current_data['updated'] = generated_data['updated']
+  current_data['entries'] = [] if current_data['entries'].nil?
   current_data['entries'].prepend(generated_data['entries']).flatten!
   current_data['entries'].uniq! { |entry| entry['link'] }
 
