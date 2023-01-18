@@ -1,15 +1,20 @@
 # Parameters for a GitHub search query
-base_branch: test
+base_branch: main
+
+enterprise: git.corp.adobe.com
 
 # The list of repositories to scan for pull requests
 repos:
   - AdobeDocs/commerce-operations.en
-  - magento-devdocs/commerce-operations.en # Delete after testing
+  - enterprise:AdobeDocs/commerce-operations.en
 
 # Labels also will be used as a 'type' value in the output file
 labels:
   required:
-    - best-practices
+    - new-topic
+    - major-update
+  optional:
+    - technical
 
 # Format of output file
 output_format:
