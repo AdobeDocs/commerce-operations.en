@@ -19,7 +19,7 @@ Adobe Commerce requires:
 -  ext-pdo_mysql
 -  ext-simplexml
 -  ext-soap
--  [!DNL ext-sockets]
+-  ext-sockets
 -  ext-sodium
 -  ext-spl
 -  ext-tokenizer
@@ -48,7 +48,7 @@ B2B for Adobe Commerce requires:
 -  ext-pdo_mysql
 -  ext-simplexml
 -  ext-soap
--  [!DNL ext-sockets]
+-  ext-sockets
 -  ext-sodium
 -  ext-spl
 -  ext-tokenizer
@@ -77,7 +77,7 @@ Magento Open Source requires:
 -  ext-pdo_mysql
 -  ext-simplexml
 -  ext-soap
--  [!DNL ext-sockets]
+-  ext-sockets
 -  ext-sodium
 -  ext-tokenizer
 -  ext-xmlwriter
