@@ -9,11 +9,11 @@ As of Adobe Commerce and Magento Open Source 2.4, all installations must be conf
 
 >[!NOTE]
 >
->OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. [Migrate from Elasticsearch to OpenSearch](../../../upgrade/prepare/opensearch-migration.md) provides guidance on switching to OpenSearch.
+>OpenSearch support was added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. [Migrate from Elasticsearch to OpenSearch](../../../upgrade/prepare/opensearch-migration.md) provides guidance on switching to OpenSearch.
 
 ## Supported versions
 
-You must install and configure either Elasticsearch or OpenSearch before installing Adobe Commerce or Magento Open Source 2.4.4.
+You must install and configure either Elasticsearch or OpenSearch before installing Adobe Commerce 2.4.4 and later.
 
 Refer to the [System Requirements](../../system-requirements.md) for specific version information.
 
@@ -158,4 +158,4 @@ Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Develop
 
 ## Additional resources
 
-For additional information, see [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+For additional information, see [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) adn [OpenSearch](https://opensearch.org/docs/latest/).

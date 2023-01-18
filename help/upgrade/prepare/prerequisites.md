@@ -51,15 +51,31 @@ As of 2.4, MySQL is no longer a supported catalog search engine. You must instal
 
 Some third-party catalog search engines run on top of the Adobe Commerce search engine. Contact your vendor to determine whether you must update your extension.
 
-### Elasticsearch
+### Search engine
 
-You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 1.2 before upgrading to 2.4.0. Adobe no longer supports Elasticsearch 2.x, 5.x, and 6.x. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md) in the _Configuration Guide_ describes the tasks you must perform after upgrading Elasticsearch to a supported version.
+You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 1.2 before upgrading to 2.4.0. Adobe no longer supports Elasticsearch 2.x, 5.x, and 6.x. [Search engine configuration](../../configuration/search/configure-search-engine.md) in the _Configuration Guide_ describes the tasks you must perform after upgrading Elasticsearch to a supported version.
 
 Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. Depending on your current version of Elasticsearch, a full cluster restart may or may not be required.
 
 >[!INFO]
 >
 >Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+
+#### OpenSearch
+
+OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce introduce support for OpenSearch:
+
+- 2.4.6 (OpenSearch has its own module and separate settings)
+- 2.4.5
+- 2.4.4
+- 2.4.3-p2
+- 2.3.7-p3
+
+You can [migrate from Elasticsearch to OpenSearch](opensearch-migration.md) only if you are upgrading to a version of Adobe Commerce listed above (or higher).
+
+OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
+
+[Search engine configuration](../../configuration/search/configure-search-engine.md) describes the tasks you must perform after changing search engines.
 
 #### Upgrade Elasticsearch
 
@@ -88,7 +104,7 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce and Magento Open 
 
 #### Downgrade Elasticsearch
 
-If you inadvertently upgrade the version of Elasticsearch on your server or determine that you need to downgrade for any other reason, you must also update your Adobe Commerce or Magento Open Source project dependencies.
+If you inadvertently upgrade the version of Elasticsearch on your server or determine that you need to downgrade for any other reason, you must also update your Adobe Commerce project dependencies.
 
 1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies. For example, to downgrade from Elasticsearch 8.x to 7.x:
 
@@ -97,22 +113,6 @@ If you inadvertently upgrade the version of Elasticsearch on your server or dete
    ```
 
 1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) to complete the downgrade.
-
-### OpenSearch
-
-OpenSearch is an open source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce and Magento Open Source introduce support for OpenSearch:
-
-- 2.4.6 (OpenSearch has its own module and separate settings)
-- 2.4.5
-- 2.4.4
-- 2.4.3-p2
-- 2.3.7-p3
-
-You can [migrate from Elasticsearch to OpenSearch](opensearch-migration.md) only if you are upgrading to a version of Adobe Commerce or Magento Open Source listed above (or higher).
-
-OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) to check which version of JDK is installed.
-
-[Configure Magento to use Elasticsearch](../../configuration/search/configure-search-engine.md) describes the tasks you must perform after changing search engines.
 
 ### Third-party extensions
 

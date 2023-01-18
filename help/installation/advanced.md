@@ -232,7 +232,7 @@ The following example installs Adobe Commerce or Magento Open Source with the fo
 *  Default language is `en_US` (U.S. English)
 *  Default currency is U.S. dollars
 *  Default time zone is U.S. Central (America/Chicago)
-*  OpenSearch 1.2 is installed on `es-host.example.com` and connects on port 9200
+*  OpenSearch 1.2 is installed on `os-host.example.com` and connects on port 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -240,8 +240,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 Messages similar to the following display to indicate a successful installation:
@@ -262,8 +262,8 @@ You can install Adobe Commerce or Magento Open Source without creating the admin
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 Messages like the following display if the installation is successful:
@@ -304,7 +304,7 @@ The following example installs Adobe Commerce or Magento Open Source with the fo
 *  You can use the sales order increment prefix `ORD$` (since it contains a special character [`$`], the value must be enclosed in double quotes)
 *  Session data is saved in the database
 *  Uses server rewrites
-*  Elasticsearch 7 is installed on `es-host.example.com` and connects on port 9200
+*  OpenSearch is installed on `os-host.example.com` and connects on port 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -313,8 +313,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --cleanup-database \
 --sales-order-increment-prefix="ORD$" --session-save=db --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 >[!NOTE]
