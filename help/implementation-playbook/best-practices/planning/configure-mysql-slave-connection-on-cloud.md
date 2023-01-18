@@ -6,6 +6,10 @@ feature-set: Commerce
 feature: Best Practices
 ---
 
+>![NOTE]
+>
+>We are aware that this article may still contain industry-standard software terms that some may find racist, sexist, or oppressive and which may make the reader feel hurt, traumatized, or unwelcome. Adobe is working to remove these terms from our code, documentation, and user experiences.
+
 # Best practice to configure the MySQL slave connection
 
 For Adobe Commerce sites deployed on cloud infrastructure Pro architecture, Adobe recommends enabling the MYSQL slave connection for the database by default.
@@ -18,7 +22,7 @@ Adobe Commerce on cloud infrastructure, Pro architecture
 
 ## Configure MySQL slave connection
 
-The configuration for the MYSQL slave connection is set by the [MYSQL_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) deploy variable in the Adobe Commerce on cloud infrastructure environment configuration file, `.magento.env.yaml`. Set this variable to `true` to enable the connection.
+The configuration for the MYSQL slave connection is set by the [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) deploy variable in the Adobe Commerce on cloud infrastructure environment configuration file, `.magento.env.yaml`. Set this variable to `true` to enable the connection.
 
 To enable the MySQL slave connection:
 
@@ -39,7 +43,3 @@ To enable the MySQL slave connection:
 - [Environment variables](https://devdocs.magento.com/cloud/env/variables-intro.html)
 - [MySQL high-load bottleneck in Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
 - [Database best practices for Adobe Commerce on cloud infrastructure](database-on-cloud.md)
-
->![NOTE]
->
->We are aware that this article may still contain industry-standard software terms that some may find racist, sexist, or oppressive and which may make the reader feel hurt, traumatized, or unwelcome. Adobe is working to remove these terms from our code, documentation, and user experiences.
