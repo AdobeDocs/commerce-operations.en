@@ -6,11 +6,11 @@ feature-set: Commerce
 feature: Best Practices
 ---
 
+# Best practice to configure the MySQL slave connection
+
 >![NOTE]
 >
 >We are aware that this article may still contain industry-standard software terms that some may find racist, sexist, or oppressive and which may make the reader feel hurt, traumatized, or unwelcome. Adobe is working to remove these terms from our code, documentation, and user experiences.
-
-# Best practice to configure the MySQL slave connection
 
 For Adobe Commerce sites deployed on cloud infrastructure Pro architecture, Adobe recommends enabling the MYSQL slave connection for the database by default.
 
