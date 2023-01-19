@@ -42,9 +42,9 @@ For projects with a large number of store-level configurations, saving a store c
 
 You can enable AsyncConfig using the command-line interface:
 
-  ```bash
-  bin/magento setup:config:set --config-async 1
-  ```
+```bash
+bin/magento setup:config:set --config-async 1
+```
 
 The `set` command writes the following to the `app/etc/env.php` file:
 
