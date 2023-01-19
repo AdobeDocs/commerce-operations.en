@@ -30,6 +30,7 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 >See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
+<table>
 <thead>
   <tr>
     <th colspan="2"></th>
@@ -68,7 +69,8 @@ For Adobe Commerce 2.4.4 and subsequent releases:
   <tr>
     <td>2.4.4</td>
     <td>8.1</td>
-    <td colspan="14" style="background-color:#67ac68;"></td>
+    <td></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="6"></td>
   </tr>
   <tr>
