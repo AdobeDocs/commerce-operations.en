@@ -36,11 +36,11 @@ There can be times when intensive sales on a storefront occur at the same time t
 >
 >The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
 
-## Asynchronous Configuration save
+## Asynchronous configuration save
 
-In instances when large number of stores are configured, admin configuration save results in cache clean up for each configured store which can cause potential timeouts on configuration save requests. This feature enables saving of admin configuration in a message queue that is processed by a consumer running as a cron job. This allows the admin user to save the configuration faster and also defers the underlying overhead of the save request to a background task running as a cron job.   
+For projects with a large number of store-level configurations, saving a store configuration can take an inordinate amount of time or result in a timeout. The _Async Config_ module enables asynchronous configuration saves by running a cron job that uses a consumer to process the save in a message queue. AsyncConfig is **disabled** by default.
 
-You can enable Async Config save using this command-line interface:
+You can enable AsyncConfig using the command-line interface:
 
   ```bash
   bin/magento setup:config:set --config-async 1
@@ -55,10 +55,10 @@ The `set` command writes the following to the `app/etc/env.php` file:
    ]
 ```
 
-The messages in the queue are processed on a first-in-first-out basis using a Consumer that can be run using this command: 
+Start the following Consumer to begin processing the messages in the queue on a first-in-first-out basis: 
 
 ```bash
-    bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 ```
 
 ## Deferred stock update
