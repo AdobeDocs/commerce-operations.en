@@ -74,7 +74,7 @@ This section discusses how to specify who can access the [nginx](https://glossar
 
 ## Secure communication with nginx
 
-This section discusses how to set up [HTTP Basic authentication](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) with your secure proxy. Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch/OpenSearch or with your Adobe Commerce or Magento Open Source server.
+This section discusses how to set up [HTTP Basic authentication](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) with your secure proxy. Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or OpenSearch or with your application server.
 
 Because nginx natively supports HTTP Basic authentication, we recommend it over, for example, [Digest authentication](https://www.nginx.com/resources/wiki/modules/auth_digest/), which isn't recommended in production.
 

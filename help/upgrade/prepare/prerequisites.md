@@ -63,9 +63,9 @@ Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch
 
 #### OpenSearch
 
-OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce introduce support for OpenSearch:
+OpenSearch is an open-source fork of Elasticsearch 7.10.2, following the Elasticsearch licensing change. The following releases of Adobe Commerce introduce support for OpenSearch:
 
-- 2.4.6 (OpenSearch has its own module and separate settings)
+- 2.4.6 (OpenSearch has a separate module and settings)
 - 2.4.5
 - 2.4.4
 - 2.4.3-p2

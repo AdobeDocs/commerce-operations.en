@@ -167,7 +167,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Secure communication with Apache
 
-This section discusses how to set up [HTTP Basic authentication](https://httpd.apache.org/docs/2.2/howto/auth.html). Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch/OpenSearch or with your application server.
+This section discusses how to set up [HTTP Basic authentication](https://httpd.apache.org/docs/2.2/howto/auth.html). Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or OpenSearch or with your application server.
 
 This section discusses how to specify who can access the Apache server.
 
