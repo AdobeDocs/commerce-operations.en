@@ -22,7 +22,7 @@ Use the following command to check the current search engine:
 bin/magento config:show catalog/search/engine
 ```
 
-The error occurs if the returned value is `mysql` or `elasticsearch`.
+The error occurs if the returned value is `mysql`, `elasticsearch`, or `elasticsearch6`.
 
 >[!WARNING]
 >
@@ -46,14 +46,14 @@ Before 2.4, MySQL was the default catalog search engine, but MySQL is no longer 
 
 Use the following resources to help guide you through this process:
 
-- [Install and configure Elasticsearch](../../configuration/search/overview-search.md)
-- [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configure Elasticsearch to work with [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) or [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
-- [Configure Elasticsearch](../../configuration/search/configure-search-engine.md)
+- [Install and configure the search egnine](../../configuration/search/overview-search.md)
+- [Search engine configuration](../../configuration/search/configure-search-engine.md)
 
 After you configure the search engine and reindex, you are ready to upgrade to 2.4.
 
 ## If your search engine is `elasticsearch`
+
+Elasticsearch 6 and earlier are no longer supported.
 
 A value of `elasticsearch` indicates your down-level version of Adobe Commerce or Magento Open Source is configured to use Elasticsearch 2.x. This version of Elasticsearch is no longer supported.
 
