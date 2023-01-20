@@ -44,3 +44,4 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Cloud packages for Adobe Commerce](packages/cloud.md)
   - [Magento Open Source](packages/magento-open-source.md)
+- [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
