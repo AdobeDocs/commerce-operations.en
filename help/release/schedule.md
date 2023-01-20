@@ -25,11 +25,9 @@ The following table provides the dates for scheduled releases (dates are subject
 <sup>\-\- Indicates items that are not applicable to this release.</sup><br>
 <sup>1 Beta scheduled for January 2023</sup><br>
 
-Patch and Security Patch Releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant. Feature Releases occur every other month. Feature Releases are independent of the core codebase and are available through external module or extension. Any updates to existing independent features are released during Feature Release periods and do not happen automatically if the feature is already implemented.
-
 >[!TIP]
 >
->For information about Magento Open Source releases, see the [schedule](https://developer.adobe.com/open/magento/releases) on the Adobe Developer site.
+>Patch and Security Patch Releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant. Feature Releases occur every other month. Feature Releases are independent of the core codebase and are available through external module or extension. Any updates to existing independent features are released during Feature Release periods and do not happen automatically if the feature is already implemented.
 
 ## Early access
 
