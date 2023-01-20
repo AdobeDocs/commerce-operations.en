@@ -162,7 +162,7 @@ The procedures that follows show how to set the application mode in an Apache vi
 
 <!-- link definitions -->
 
-[Apache version 2.2]: http://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
-[Apache version 2.4]: http://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
+[Apache version 2.2]: https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
+[Apache version 2.4]: https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
 [Nginx sample configuration]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
 [unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

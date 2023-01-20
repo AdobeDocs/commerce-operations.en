@@ -57,8 +57,8 @@ If so, try the following:
 - If the server is on a different host from Commerce, log in to the Commerce server and ping the search engine host. Resolve network connectivity issues and test the connection again.
 - Examine the command window in which you started Elasticsearch or OpenSearch for stack traces and exceptions. You must resolve those before you continue. In particular, make sure you started your search engine as a user with `root` privileges.
 - Make sure that [UNIX firewall and SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) are both disabled, or set up rules to enable your search engine and Commerce to communicate with each other.
-- Verify the value of the **Elasticsearch Server Hostname** field. Make sure that the server is available. You can try the server's IP address instead.
-- Use the `netstat -an | grep <listen-port>` command to verify that the port specified in the **Elasticsearch Server Port** field is not being used by another process.
+- Verify the value of the **[!UICONTROL Server Hostname]** field. Make sure that the server is available. You can try the server's IP address instead.
+- Use the `netstat -an | grep <listen-port>` command to verify that the port specified in the **[!UICONTROL Server Port]** field is not being used by another process.
 
   For example, to see if your search engine is running on its default port, use the following command:
 

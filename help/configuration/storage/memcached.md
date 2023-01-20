@@ -7,7 +7,7 @@ description: Learn about using memcached for Commerce session storage.
 
 Memcached is a general-purpose, distributed memory caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source (such as a database or API) must be read.
 
-Memcached provides a large hash table that can be distributed across multiple machines. When the table is full, subsequent inserts cause older data to be purged in least recently used (LRU) order. The size of this hash table is often very large. (Source: [memcached.org](http://memcached.org/))
+Memcached provides a large hash table that can be distributed across multiple machines. When the table is full, subsequent inserts cause older data to be purged in least recently used (LRU) order. The size of this hash table is often very large. (Source: [memcached.org](https://www.memcached.org/))
 
 Commerce uses memcached for session storage but not for page caching. For page caching, we recommend [Redis](../cache/redis-pg-cache.md) or [Varnish](../cache/config-varnish.md).
 
@@ -33,7 +33,7 @@ Commerce uses memcached for session storage but not for page caching. For page c
    ),
    ```
 
-   memcached has optional startup parameters that are beyond the scope of this guide. You can find more information about them in the [memcached](https://php.net/manual/en/memcached.sessions.php) documentation, source code, and changelogs.
+   memcached has optional startup parameters that are beyond the scope of this guide. You can find more information about them in the [memcached](https://www.php.net/manual/en/memcached.sessions.php) documentation, source code, and changelogs.
 
 1. Continue with the next section.
 
@@ -74,5 +74,5 @@ Commerce uses memcached for session storage but not for page caching. For page c
    STAT items:3:outofmemory 0
    STAT items:3:tailrepairs 0
 
-   [Look at the keys in more detail](http://www.darkcoding.net/software/memcached-list-all-keys/)
+   [Look at the keys in more detail](https://darkcoding.net/software/memcached-list-all-keys/)
    ```

@@ -151,11 +151,11 @@ bin/magento setup:install \
 --currency=USD \
 --timezone=America/Chicago \
 --use-rewrites=1 \
---search-engine=elasticsearch7 \
---elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200 \
---elasticsearch-index-prefix=magento2 \
---elasticsearch-timeout=15
+--search-engine=opensearch \
+--opensearch-host=os-host.example.com \
+--opensearch-port=9200 \
+--opensearch-index-prefix=magento2 \
+--opensearch-timeout=15
 ```
 
 >[!TIP]
