@@ -117,7 +117,8 @@ Get practical information about concepts, processes, tools, and best practices t
 
 Learn about new documentation and significant updates to existing documentation. 
 
-| Change                                                                                                                                                                             | Type |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| Moved the [Security and Compliance Guide](../security-and-compliance/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html).                                        | New  |
-| Moved the [Release Information Guide](../release/release-notes/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html).                                        | New  |
+| Change                                                                                                                                                                                                                          | Type    |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Added a new topic describing all [message queue consumers](../configuration/queues/consumers.md).                                                                                                                               | New     |
+| Added [instructions](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) for converting database table storage format for Adobe Commerce on cloud infrastructure Pro projects. | Updated |
+| Added [instructions](../configuration/remote-storage/cloud-support.md) for enabling remote storage for Adobe Commerce on cloud infrastructure projects.                                                                                                                             | Updated |

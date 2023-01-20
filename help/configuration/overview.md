@@ -23,4 +23,4 @@ There are corresponding topics in the [Commerce User Guide](https://docs.magento
 
 ## Cloud configuration
 
-[!DNL Commerce on cloud infrastructure] uses a [set of configuration files](https://devdocs.magento.com/cloud/env/environments.html) to update the [!DNL Commerce] application features and services in the hosted environments. Because of the unique nature of Adobe's cloud-hosted environments, you should always review the [Cloud guide](https://devdocs.magento.com/cloud/bk-cloud.html) for additional configuration requirements.
+[!DNL Commerce on cloud infrastructure] uses a [set of configuration files](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) to update the Commerce application features and services in the hosted environments. Because of the unique nature of the Adobe cloud-hosted environments, you should always review the [Cloud guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) for additional configuration requirements.

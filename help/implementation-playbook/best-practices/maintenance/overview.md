@@ -23,9 +23,7 @@ The following sections include best practice information for the maintenance pha
 - [Audit frontend performance](frontend-performance.md)
 - [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Use SWAT tool to ensure security and operability of Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) – CTAG deck
-- New Relic
-- Logs
-- Disk space
+- [Use New Relic and Health notifications to monitor performance, disk space, and logs for Adobe Commerce sites deployed on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## Database management
 
@@ -47,14 +45,14 @@ The following sections include best practice information for the maintenance pha
 - [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Configuration best practices for indexers​](indexer-configuration.md)
 - [Configuration best practices for order processing](order-processing-configuration.md)
-– CTAG deck
-- Plan upsizing for planned traffic increases during promotions or holidays – CTAG deck content 
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## Configuration
 
 - [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md)
 
-- Planning for peak season and promotional periods (upsizing) – CTAG deck content 
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)--> 
 
 ## Bug fixes
 

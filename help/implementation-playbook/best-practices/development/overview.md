@@ -21,18 +21,16 @@ The following sections include best practice information for the development pha
 
 ### Code review, merge, and test
 
-- Guidelines and standards
 <!--Assets not yet integrated
+- Guidelines and standards
   - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
 -->
 - [Optimize CSS and JS files](optimize-css-js-files.md)
 - [Best practices for private content blocks](private-content-block-configuration.md)
+- [Best practices for extension developers](https://developer.adobe.com/commerce/php/best-practices/)
 
-- Add custom code
-  - [Best practices for extension developers](https://developer.adobe.com/commerce/php/best-practices/)
-  
 <!--Assets not yet integrated
 
   - [Best practices for theme development](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=MAGPS&title=Best+Practices+for+Theme+Development)
@@ -54,13 +52,13 @@ The following sections include best practice information for the development pha
 
 ### Local and staging environment setup
 
-- [Development workflow on Cloud infrastructure](https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html) - added from Cloud Guide
+- [Development workflow on Cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## Code, merge, test
 
-- [Best practices for builds and deployment](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices)
+- [Best practices for builds and deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [Static content deployment - Cloud](static-content-deployment.md)
 - [Optimize CSS and JS files](optimize-css-js-files.md)
 - [Optimize images for a more responsive site](image-optimization.md)
-- [Troubleshooting Best Practices for Adobe Commerce on cloud infrastructure​](troubleshooting.md)
-- [Know when and how to modify database tables​](modifying-core-and-third-party-tables.md)
+- [Troubleshooting Best Practices for Adobe Commerce on cloud infrastructure](troubleshooting.md)
+- [Know when and how to modify database tables](modifying-core-and-third-party-tables.md)
