@@ -1,0 +1,29 @@
+---
+title: Whats New
+description: This page contains recent changes that we think you'd like to know about.
+  We exclude from this list proofreading, spelling checks, and all minor updates.
+updated: Wed Jan 18 14:29:26 2023
+entries:
+- description: 'MISSING whatsnew in the new-topic PR #391: "Adobe Commerce 2.4.6-beta1
+    release notes" assigned to frontain (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/391)'
+  versions: 2.4.6
+  type: new-topic
+  date: January 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/391
+  merge_commit: 108fe16a62c51c53d1850583cfd33938e39c7a6c
+  contributor: frontain
+  membership: false
+  labels:
+  - new-topic
+  - 2.4.6
+- description: 'MISSING whatsnew in the major-update PR #392: "[COMDOX-394] Add Catalog
+    Service to the compatibility table" assigned to dobooth (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/392)'
+  versions: ''
+  type: major-update
+  date: January 9, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/392
+  merge_commit: 0ffc4e9c9b0bb4fe629d0f0fb46bfbb287d5fdcc
+  contributor: dobooth
+  membership: true
+  labels:
+  - major-update
