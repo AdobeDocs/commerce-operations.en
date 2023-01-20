@@ -199,7 +199,7 @@ Are there existing APIs that can be used?
 
 - Which order management system will be integrated with Adobe Commerce? (Examples: Microsoft Dynamics, SAP, Retail Pro)
 
-- Which product inventory management system will be integrated with Adobe Commerce? (Examples: Akeneo, InRiver, Bluestone)
+- Which product information management system will be integrated with Adobe Commerce? (Examples: Akeneo, InRiver, Bluestone)
 
 - Which customer relationship management system will be integrated with Adobe Commerce? (Examples: Hubspot, Salesforce, Klaviyo)
 
