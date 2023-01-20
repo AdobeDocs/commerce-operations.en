@@ -1,11 +1,11 @@
 ---
- title: "The [!UICONTROL Infra] tab"
- description: The [!UICONTROL Infra] tab isolates issues and causes of infrastructure problems.
+ title: "The [!DNL Infra] tab"
+ description: The [!DNL Infra] tab isolates issues and causes of infrastructure problems.
 ---
 
-# The [!UICONTROL Infra] tab
+# The [!DNL Infra] tab
 
-The **[!UICONTROL Infra]** tab isolates issues and causes of infrastructure problems. Further are described the frames you can see on the tab.
+The **[!DNL Infra]** tab isolates issues and causes of infrastructure problems. Further are described the frames you can see on the tab.
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -17,7 +17,7 @@ The **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]*
 
 ![Inode usage by mount](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-The **[!UICONTROL Inode usage by mount]** frame shows inode usage by mount across the selected timeframe. Even though there may be plenty of storage free, if a node runs out of inodes, it will show a lack of available storage. Removing files (especially small ones) will free up both space and make inodes available.
+The **[!UICONTROL Inode usage by mount]** frame shows [!DNL inode] usage by mount across the selected timeframe. Even though there may be plenty of storage free, if a node runs out of [!DNL inodes], it will show a lack of available storage. Removing files (especially small ones) will free up both space and make [!DNL inodes] available.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 

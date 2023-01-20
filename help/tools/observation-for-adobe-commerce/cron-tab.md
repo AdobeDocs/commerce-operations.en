@@ -1,46 +1,46 @@
 ---
-title: "The [!UICONTROL Cron] tab"
-description: Learn about the [!UICONTROL Cron] tab of [!DNL Observation for Adobe Commerce].
+title: "The [!DNL Cron] tab"
+description: Learn about the [!DNL Cron] tab of [!DNL Observation for Adobe Commerce].
 ---
-# The [!UICONTROL Cron] tab
+# The [!DNL Cron] tab
 
-This tab is an attempt to quickly isolate issues and causes of cron problems.
+This tab is an attempt to quickly isolate issues and causes of [!DNL cron] problems.
 
 ## [!UICONTROL Cron transaction duration in seconds]
 
 ![Cron transaction duration in seconds](../../assets/tools/observation-for-adobe-commerce/cron-tab-1.jpg)
 
-The **[!UICONTROL Cron transaction duration in seconds]** frame displays crons transaction duration in seconds. This will display transactions that have long runtimes. A deeper dive into APM will show more details on what query the transaction/operation may be running.
+The **[!UICONTROL Cron transaction duration in seconds]** frame displays [!DNL crons] transaction duration in seconds. This will display transactions that have long runtimes. A deeper dive into APM will show more details on what query the transaction/operation may be running.
 
-## [!UICONTROL MySql Non-Sleeping Threads by Node]
+## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![MySql Non Sleeping Threads by Node](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
+![MySQL Non Sleeping Threads by Node](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
 
-The **[!UICONTROL MySql Non-Sleeping Threads by Node]** frame shows the MySql Non-Sleeping threads by node across the selected timeframe.
+The **[!UICONTROL MySQL Non-Sleeping Threads by Node]** frame shows the MySQL Non-Sleeping threads by node across the selected timeframe.
 
 ## [!UICONTROL SQL Trace count by path]
 
 ![SQL Trace count by path](../../assets/tools/observation-for-adobe-commerce/cron-tab-3.jpg)
 
-The **[!UICONTROL SQL Trace count by path]** frame looks at MySql trace counts by path, which can help trace SQL statements across a selected timeframe.
+The **[!UICONTROL SQL Trace count by path]** frame looks at MySQL trace counts by path, which can help trace SQL statements across a selected timeframe.
 
 ## [!UICONTROL Cron database call]
 
 ![Cron database call](../../assets/tools/observation-for-adobe-commerce/cron-tab-4.jpg)
 
-The **[!UICONTROL Cron database call]** frame looks at the number of crons calling to the database across a selected timeframe.
+The **[!UICONTROL Cron database call]** frame looks at the number of [!DNL crons] calling to the database across a selected timeframe.
 
 ## [!UICONTROL Cron schedule table locks]
 
 ![Cron schedule table locks](../../assets/tools/observation-for-adobe-commerce/cron-tab-5.jpg)
 
-The **[!UICONTROL Cron schedule table locks]** frame looks at cron schedule table locks across a selected timeframe.
+The **[!UICONTROL Cron schedule table locks]** frame looks at [!DNL cron] schedule table locks across a selected timeframe.
 
 ## [!UICONTROL Cron schedule clean cron fired]
 
 ![Cron schedule table locks](../../assets/tools/observation-for-adobe-commerce/cron-tab-6.jpg)
 
-The **[!UICONTROL Cron schedule clean cron fired]** frame looks at the number of crons cleaned up across a selected timeframe. If no data is displayed in this frame, it could indicate a problem with crons running correctly. If the cron job schedule is not cleaned, crons will not run optimally and may take longer to run.
+The **[!UICONTROL Cron schedule clean cron fired]** frame looks at the number of [!DNL crons] cleaned up across a selected timeframe. If no data is displayed in this frame, it could indicate a problem with [!DNL crons] running correctly. If the [!DNL cron] job schedule is not cleaned, [!DNL crons] will not run optimally and may take longer to run.
 
 ## [!UICONTROL Cron schedule clean records details table]
 
@@ -52,7 +52,7 @@ The **[!UICONTROL Cron schedule clean records details table]** table provides de
 
 ![cron_schedule table updates](../../assets/tools/observation-for-adobe-commerce/cron-tab-8.jpg)
 
-The **[!UICONTROL cron_schedule table updates]** frame looks at the number of cron scheduled table updates across a selected timeframe. High activity on the delete or updating of this table may indicate an issue with crons. Also, crons update this table when they run and complete, so if there is no activity on this table and there are crons configured, there could be a problem with crons.
+The **[!UICONTROL cron_schedule table updates]** frame looks at the number of [!DNL cron] scheduled table updates across a selected timeframe. High activity on the delete or updating of this table may indicate an issue with [!DNL crons]. Also, [!DNL crons] update this table when they run and complete, so if there is no activity on this table and there are [!DNL crons] configured, there could be a problem with [!DNL crons].
 
 ## [!UICONTROL Datastore Operations Tables]
 

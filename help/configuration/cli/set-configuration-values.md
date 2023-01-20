@@ -127,8 +127,8 @@ The following table describes the `set` command parameters:
 | --- | --- |
 | `--scope` | The scope of the configuration. The possible values are `default`, `website`, or `store`. The default is `default`. |
 | `--scope-code` | The scope code of configuration (website code or store view code) |
-| `-le or --lock-env` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file. |
-| `-lc or --lock-config` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/config.php` file. The `--lock-config` option overwrites `--lock-env` if you specify both options. |
+| `-e or --lock-env` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file. |
+| `-c or --lock-config` | Either locks the value so it cannot be edited in the Admin or changes a setting that is already locked in the Admin. The command writes the value to the `<Commerce base dir>/app/etc/config.php` file. The `--lock-config` option overwrites `--lock-env` if you specify both options. |
 | `path` | _Required_. The configuration path |
 | `value` | _Required_. The value of the configuration |
 
