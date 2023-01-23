@@ -87,5 +87,5 @@ You can also enable Adobe Commerce built-in bundling (basic bundling) from the c
 - [Client-side optimization settings](../../../performance/configuration.md#client-side-optimization-settings)
 - [User Guide: Optimizing resource files](https://docs.magento.com/user-guide/system/file-optimization.html)
 - [Frontend Developer Guide: CSS merging, minification, and site performance](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
--  [Advanced JavaScript bundling](../../../performance/advanced-js-bundling.md)
+- [Advanced JavaScript bundling](../../../performance/advanced-js-bundling.md)
 
