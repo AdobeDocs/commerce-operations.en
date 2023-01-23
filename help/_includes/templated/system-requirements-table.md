@@ -21,7 +21,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>Composer</td>
+      <td><span class="uicontrol">Composer</span></td>
       <td>
             2.2
       </td>
@@ -57,7 +57,7 @@
       </td>
     </tr>
     <tr>
-      <td>Elasticsearch</td>
+      <td><span class="uicontrol">Elasticsearch</span></td>
       <td>
             7.17
       </td>
@@ -93,7 +93,7 @@
       </td>
     </tr>
     <tr>
-      <td>OpenSearch</td>
+      <td><span class="uicontrol">OpenSearch</span></td>
       <td>
             1.2
       </td>
@@ -129,7 +129,7 @@
       </td>
     </tr>
     <tr>
-      <td>MariaDB</td>
+      <td><span class="uicontrol">MariaDB</span></td>
       <td>
             10.4
       </td>
@@ -165,7 +165,7 @@
       </td>
     </tr>
     <tr>
-      <td>MySQL</td>
+      <td><span class="uicontrol">MySQL</span></td>
       <td>
             8.0
       </td>
@@ -201,7 +201,7 @@
       </td>
     </tr>
     <tr>
-      <td>PHP</td>
+      <td><span class="uicontrol">PHP</span></td>
       <td>
             8.1
       </td>
@@ -237,7 +237,7 @@
       </td>
     </tr>
     <tr>
-      <td>[!DNL RabbitMQ]</td>
+      <td><span class="uicontrol">RabbitMQ</span></td>
       <td>
             3.9
       </td>
@@ -273,7 +273,7 @@
       </td>
     </tr>
     <tr>
-      <td>Redis</td>
+      <td><span class="uicontrol">Redis</span></td>
       <td>
             6.2
       </td>
@@ -309,7 +309,7 @@
       </td>
     </tr>
     <tr>
-      <td>Varnish</td>
+      <td><span class="uicontrol">Varnish</span></td>
       <td>
             7.0
       </td>
@@ -345,7 +345,7 @@
       </td>
     </tr>
     <tr>
-      <td>Apache</td>
+      <td><span class="uicontrol">Apache</span></td>
       <td>
             2.4
       </td>
@@ -381,7 +381,7 @@
       </td>
     </tr>
     <tr>
-      <td>nginx</td>
+      <td><span class="uicontrol">nginx</span></td>
       <td>
             1.18
       </td>
@@ -417,7 +417,7 @@
       </td>
     </tr>
     <tr>
-      <td>AWS Aurora (MySQL)</td>
+      <td><span class="uicontrol">AWS Aurora (MySQL)</span></td>
       <td>
             8.0
       </td>
@@ -453,7 +453,7 @@
       </td>
     </tr>
     <tr>
-      <td>AWS S3</td>
+      <td><span class="uicontrol">AWS S3</span></td>
       <td>
             ✔️
       </td>
@@ -489,7 +489,7 @@
       </td>
     </tr>
     <tr>
-      <td>AWS MQ</td>
+      <td><span class="uicontrol">AWS MQ</span></td>
       <td>
             3.9.13
       </td>
@@ -525,7 +525,7 @@
       </td>
     </tr>
     <tr>
-      <td>AWS ElastiCache</td>
+      <td><span class="uicontrol">AWS ElastiCache</span></td>
       <td>
             Redis 6
       </td>
@@ -561,7 +561,7 @@
       </td>
     </tr>
     <tr>
-      <td>AWS Elasticsearch</td>
+      <td><span class="uicontrol">AWS Elasticsearch</span></td>
       <td>
             7.9
       </td>
@@ -597,7 +597,7 @@
       </td>
     </tr>
     <tr>
-      <td>AWS OpenSearch</td>
+      <td><span class="uicontrol">AWS OpenSearch</span></td>
       <td>
             1.2
       </td>
