@@ -2,11 +2,8 @@
 
 set -e
 
-# Verify Jekyll installation
-gem list --silent --installed --exact jekyll || gem install jekyll
-
 # Render the templates from the 'templates' directory and write results to '_jekyll/rendered-templates'
-jekyll build --disable-disk-cache
+bundle exec jekyll build --disable-disk-cache
 
 # Copy the rendered files from '_jekyll/_rendered' to 'help/_includes'
 # and replace file extensions from .html to .md

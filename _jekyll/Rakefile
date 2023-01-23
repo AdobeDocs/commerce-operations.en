@@ -1,0 +1,79 @@
+# frozen_string_literal: true
+
+require 'yaml'
+require 'colorator'
+
+desc 'Generate data for a news digest.
+      Default timeframe is since last update.
+      For other period, use "since" argument, such as, rake whatsnew since="jul 4"'
+task :whatsnew do
+  since = ENV['since']
+  current_file = '_data/whats-new.yml'
+  generated_file = 'tmp/whats-new.yml'
+  current_data = YAML.load_file current_file
+  last_update = current_data['updated']
+  print 'Generating data for the What\'s New digest: $ '.magenta
+
+  # Generate tmp/whats-new.yml
+  report =
+    if since.nil? || since.empty?
+      `bundle exec whatsup_github since '#{last_update}'`
+    elsif since.is_a? String
+      `bundle exec whatsup_github since '#{since}'`
+    else
+      abort 'The "since" argument must be a string. Example: "jul 4"'
+    end
+
+  # Merge generated tmp/whats-new.yml with existing src/_data/whats-new.yml
+  generated_data = YAML.load_file generated_file
+  current_data['entries'] = [] if current_data['entries'].nil?
+  current_data['updated'] = generated_data['updated']
+  current_data['entries'].prepend(generated_data['entries']).flatten!
+  current_data['entries'].uniq! { |entry| entry['link'] }
+
+  puts "Writing updates to #{current_file}"
+  File.write current_file, current_data.to_yaml
+
+  abort report if report.include? 'MISSING whatsnew'
+  puts report
+end
+
+desc 'Generate data for a news digest at Best Practices.
+      Default timeframe is since last update.
+      For other period, use "since" argument, such as, rake whatsnew since="jul 4"'
+task :whatsnew_bp do
+  since = ENV['since']
+  current_file = '_data/whats-new-bp.yml'
+  generated_file = 'tmp/whats-new.yml'
+  current_data = YAML.load_file current_file
+  last_update = current_data['updated']
+  print 'Generating data for the What\'s New digest: $ '.magenta
+
+  # Generate tmp/whats-new.yml
+  report =
+    if since.nil? || since.empty?
+      `bundle exec whatsup_github since '#{last_update}' --config .whatsup-bp.yml`
+    elsif since.is_a? String
+      `bundle exec whatsup_github since '#{since}' --config .whatsup-bp.yml`
+    else
+      abort 'The "since" argument must be a string. Example: "jul 4"'
+    end
+
+  # Merge generated tmp/whats-new.yml with existing src/_data/whats-new.yml
+  generated_data = YAML.load_file generated_file
+  current_data['updated'] = generated_data['updated']
+  current_data['entries'] = [] if current_data['entries'].nil?
+  current_data['entries'].prepend(generated_data['entries']).flatten!
+  current_data['entries'].uniq! { |entry| entry['link'] }
+
+  puts "Writing updates to #{current_file}"
+  File.write current_file, current_data.to_yaml
+
+  abort report if report.include? 'MISSING whatsnew'
+  puts report
+end
+
+desc 'Render the templated files'
+task :render do
+  sh '_scripts/render'
+end
