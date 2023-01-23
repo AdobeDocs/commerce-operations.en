@@ -15,3 +15,4 @@ user-guide-description: Learn how Adobe Commerce and Magento Open Source merchan
 - Reference {#reference}
   - [Customer personal information (version 2.x)](privacy/data-m2.md)
   - [Customer personal information (version 1.x)](privacy/data-m1.md)
+- [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

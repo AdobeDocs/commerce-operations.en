@@ -47,7 +47,7 @@ Support for the 2.4.4-2.4.6 release line ends on November&nbsp;25, 2024.
 
 ## 2.4.0-2.4.3
 
-Support for the 2.4.0-2.4.3 release line ends on November&nbsp;28, 2022.
+Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
 
 <table>
   <thead>
