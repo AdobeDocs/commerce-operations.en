@@ -1,8 +1,29 @@
 # Released versions
 
-## 2.4.4-2.4.6
+## 2.4.6
 
-Support for the 2.4.4-2.4.6 release line ends on November&nbsp;25, 2024.
+Support for the 2.4.6 release line ends on March&nbsp;14, 2026.
+
+<table>
+  <thead>
+    <tr>
+      <th>Patch version</th>
+      <th>Release date</th><th>Release notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>2.4.6</td>
+        <td>March&nbsp;14, 2023</td>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Release Notes</a><br>
+          </td>
+    </tr><!-- patch_releases -->
+  </tbody>
+</table>
+
+## 2.4.5
+
+Support for the 2.4.5 release line ends on August&nbsp; 9, 2025.
 
 <table>
   <thead>
@@ -15,31 +36,46 @@ Support for the 2.4.4-2.4.6 release line ends on November&nbsp;25, 2024.
     <tr>
         <td>2.4.5-p1</td>
         <td>October&nbsp;11, 2022</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-5-p1.html">Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p1.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.5</td>
         <td>August&nbsp; 9, 2022</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-5.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-5.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Release Notes</a><br>
           </td>
+    </tr><!-- patch_releases -->
+  </tbody>
+</table>
+
+## 2.4.4
+
+Support for the 2.4.4 release line ends on April&nbsp;12, 2025.
+
+<table>
+  <thead>
+    <tr>
+      <th>Patch version</th>
+      <th>Release date</th><th>Release notes</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
         <td>2.4.4-p2</td>
         <td>October&nbsp;11, 2022</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p2.html">Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p2.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.4-p1</td>
         <td>August&nbsp; 9, 2022</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p1.html">Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p1.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.4</td>
         <td>April&nbsp;12, 2022</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-4.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-4.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html">Release Notes</a><br>
           </td>
     </tr><!-- patch_releases -->
   </tbody>
@@ -60,31 +96,31 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     <tr>
         <td>2.4.3-p3</td>
         <td>August&nbsp; 9, 2022</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p3.html">Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p3.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.3-p2</td>
         <td>April&nbsp;12, 2022</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p2.html">Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p2.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.3-p1</td>
         <td>October&nbsp;12, 2021</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p1.html">Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p1.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.3</td>
         <td>August&nbsp;10, 2021</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-3.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-3.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/commerce-2-4-3.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.4.2-p2</td>
         <td>August&nbsp;10, 2021</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/2-4-2-p2.html">Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-2-p2.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -96,7 +132,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     <tr>
         <td>2.4.2</td>
         <td>February&nbsp; 9, 2021</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-2.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-2.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -108,7 +144,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     <tr>
         <td>2.4.1</td>
         <td>October&nbsp;15, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-1.html">Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -120,7 +156,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     <tr>
         <td>2.4.0</td>
         <td>July&nbsp;28, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/release-notes-2-4-0-commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/release-notes-2-4-0-open-source.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-0.html">Release Notes</a><br>
           </td>
     </tr><!-- patch_releases -->
   </tbody>
@@ -165,7 +201,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.7</td>
         <td>May&nbsp;11, 2021</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-7.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -177,7 +213,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.6</td>
         <td>October&nbsp;15, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -201,7 +237,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.5</td>
         <td>April&nbsp;28, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-open-source.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -213,7 +249,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.4</td>
         <td>January&nbsp;28, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-open-source.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
@@ -225,25 +261,25 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     <tr>
         <td>2.3.3</td>
         <td>October&nbsp; 8, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-open-source.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.2</td>
         <td>June&nbsp;25, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2OpenSource.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.1</td>
         <td>March&nbsp;26, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1OpenSource.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
         <td>2.3.0</td>
         <td>November&nbsp;28, 2018</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0OpenSource.html">Magento Open Source Release Notes</a><br>
+          <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr><!-- patch_releases -->
   </tbody>
@@ -257,81 +293,57 @@ Support for the 2.2 release line ended on December&nbsp; 1, 2019.
   <thead>
     <tr>
       <th>Patch version</th>
-      <th>Release date</th><th>Release notes</th>
+      <th>Release date</th>
     </tr>
   </thead>
   <tbody>
     <tr>
         <td>2.2.11</td>
         <td>January&nbsp;28, 2020</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-11-commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-11-open-source.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.10</td>
         <td>October&nbsp; 8, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-10-commerce.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-10-open-source.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.9</td>
         <td>June&nbsp;25, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.9EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.9CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.8</td>
         <td>March&nbsp;26, 2019</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.8EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.8CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.7</td>
         <td>November&nbsp;28, 2018</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.6</td>
         <td>September&nbsp;18, 2018</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.6EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.6CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.5</td>
         <td>June&nbsp;27, 2018</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.4</td>
         <td>May&nbsp; 2, 2018</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.4EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.4CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.3</td>
         <td>February&nbsp;27, 2018</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.3EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.3CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.2</td>
         <td>December&nbsp;12, 2017</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.1</td>
         <td>November&nbsp; 7, 2017</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr>
     <tr>
         <td>2.2.0</td>
         <td>September&nbsp;26, 2017</td>
-          <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.0EE.html">Adobe Commerce Release Notes</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.0CE.html">Magento Open Source Release Notes</a><br>
-          </td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
