@@ -1,0 +1,50 @@
+---
+---
+
+# What's new template
+
+{%- assign whatsnew = site.data.whats-new %}
+
+## {{ whatsnew.title }}
+
+{{ whatsnew.description }}
+
+{%- assign entries = whatsnew.entries %}
+{%- assign grouped_by_year = entries | group_by_exp: "entry", "entry.date | date: '%Y'" %}
+{%- for year_group in grouped_by_year limit:2 %}
+{%- assign grouped_by_month = year_group.items | group_by_exp: "entry", "entry.date | date: '%B'" %}
+{%- for month_group in grouped_by_month limit:1 %}
+{%- assign grouped_by_date = month_group.items | group_by: "date" %}
+{%- for date_group in grouped_by_date %}
+
+### {{ date_group.name }}
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%- for item in date_group.items %}
+    <tr>
+      <td>
+      {{- item.description | markdownify }}
+      {%- if item.membership == false and item.link contains "github.com" -%}
+      <p><i>Community contribution by {{ item.contributor }}</i></p>
+      {%- endif -%}</td>
+      <td>{{ item.type }}</td>
+      {%- if item.link contains "git.corp" %}
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/{{ item.merge_commit }}">{{ item.merge_commit | slice: 0, 6 }}</a> (commit)</td>
+      {%- else %}
+      <td><a href="{{ item.link }}">{{ item.link | split: "/" | last }}</a> (pull request)</td>
+      {%- endif %}
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>
+{%- endfor %}<!-- date_group -->
+{%- endfor %}<!-- month_group -->
+{%- endfor %}<!-- year_group -->

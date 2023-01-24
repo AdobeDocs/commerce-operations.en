@@ -1,11 +1,23 @@
 ---
-title: Whats New
-description: This page contains recent changes that we think you'd like to know about.
-  We exclude from this list proofreading, spelling checks, and all minor updates.
-updated: Wed Jan 18 14:29:26 2023
+title: What's New
+description: Learn about new documentation and significant updates to existing documentation.
+updated: Fri Jan 20 16:52:10 2023
 entries:
-- description: 'MISSING whatsnew in the new-topic PR #391: "Adobe Commerce 2.4.6-beta1
-    release notes" assigned to frontain (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/391)'
+- description: Fixed a SQL query syntax error in the [upgrade prerequisites](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+    best practices topic.
+  versions: ''
+  type: technical
+  date: January 19, 2023
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/77
+  merge_commit: 9df3a5f8e085743f90811432fcb902e08caa1e7d
+  contributor: Zifius
+  membership: false
+  labels:
+  - internal
+  - technical
+  - best-practices
+- description: Added [release notes](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html)
+    for the Adobe Commerce 2.4.6-beta1 release.
   versions: 2.4.6
   type: new-topic
   date: January 10, 2023
@@ -16,8 +28,7 @@ entries:
   labels:
   - new-topic
   - 2.4.6
-- description: 'MISSING whatsnew in the major-update PR #392: "[COMDOX-394] Add Catalog
-    Service to the compatibility table" assigned to dobooth (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/392)'
+- description: Added Catalog Service to the [compatibility table](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
   versions: ''
   type: major-update
   date: January 9, 2023
@@ -26,4 +37,407 @@ entries:
   contributor: dobooth
   membership: true
   labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.25 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: December 20, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/381
+  merge_commit: fb34939dcfb754175148538faf83033f165e7d11
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added a [reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html)
+    describing the function of all message queue consumers.
+  versions: ''
+  type: new-topic
+  date: December 16, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/351
+  merge_commit: d5683e80746bf346048e36627f9901bc359ddd81
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+- description: Added [instructions](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html<br/>)
+    for converting the database table storage format for Adobe Commerce Pro projects.
+  versions: ''
+  type: major-update
+  date: December 2, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/358
+  merge_commit: e023c47548a8dac6a4c3ed2dcfc7557af27a25a2
+  contributor: barnato
+  membership: false
+  labels:
+  - major-update
+  - best-practices
+- description: Added a [note](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+    about contacting Support to request service upgrades on cloud infrastructure.
+  versions: ''
+  type: major-update
+  date: December 1, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/350
+  merge_commit: 396274c0b22534977cf6efeb222634e470b39f6f
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.24 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: November 29, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/349
+  merge_commit: 7b9103e870abba581c5c813ce8b64dfd10b2341e
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
+- description: Added a new [best practice](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables.html)
+    topic about modifying database tables.
+  versions: ''
+  type: new-topic
+  date: November 17, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/326
+  merge_commit: af6097223754463baaed444194d434ca043fd830
+  contributor: ralbin
+  membership: true
+  labels:
+  - new-topic
+  - best-practices
+- description: Added a new [best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage.html)
+    topic about storing and managing payment details.
+  versions: ''
+  type: new-topic
+  date: November 16, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/332
+  merge_commit: e9687a2424679e5ad1386cfe9ed0d22273883f79
+  contributor: gbatiston
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
+- description: Added a new [best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/prevent-respond-security-incident.html)
+    topic about preventing and responding to security incidents.
+  versions: ''
+  type: new-topic
+  date: November 10, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/329
+  merge_commit: 940a0f24f00f9d7b55d23634f0fe583e14e8a25b
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
+- description: Updated the [`magento-cloud`](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
+    command-line reference to version 1.40.0.
+  versions: ''
+  type: major-update
+  date: November 8, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/327
+  merge_commit: 92a57fe2a779fd172b9a4ce8c18a3bf01251e203
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+- description: "<br/>Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.23 Quality Patches Tool (QPT) package release."
+  versions: ''
+  type: major-update
+  date: November 4, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/318
+  merge_commit: 7637dd09a4efa18bd61ddd70b495d96dd3acb717
+  contributor: poltorat
+  membership: false
+  labels:
+  - major-update
+- description: Added a [best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html)
+    section to the _Implementation Playbook_.
+  versions: ''
+  type: new-topic
+  date: November 3, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/320
+  merge_commit: bc0ec2917ac9368c3e69f54506e6f3cf9b6dff62
+  contributor: meker
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.22 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: October 25, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/312
+  merge_commit: cbd92999c6491263c46cb3061342857d7b79405d
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added Channel Manager to the [compatibility table](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+  versions: ''
+  type: major-update
+  date: October 24, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/304
+  merge_commit: 83d8f64d7df3fbe793913733300c716aa6905c2f
+  contributor: meker
+  membership: false
+  labels:
+  - major-update
+- description: Added the January and March 2023 releases to the Commerce [release
+    schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html).
+  versions: ''
+  type: major-update
+  date: October 19, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/303
+  merge_commit: 78c3950ad1efd824053d1bb17395e415d76a4a13
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added the January and March 2023 releases to the Commerce [release
+    schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html).
+  versions: 2.4.6
+  type: major-update
+  date: October 11, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/287
+  merge_commit: '098683d36037076884b80f5db74d1af42736ab70'
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.21 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: October 6, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/273
+  merge_commit: 03ed1bc8fabb22bcef791050251141ab890cfb42
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
+- description: Added information about the [`--current-version`](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html)
+    parameter for the Upgrade Compatibility Tool, which became required in version
+    3.0.0.
+  versions: ''
+  type: major-update
+  date: September 16, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/242
+  merge_commit: 30cc3f1efe67746afd46f1f177beba539736d7c4
+  contributor: del
+  membership: false
+  labels:
+  - major-update
+- description: Added 2..4.x security patches to the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    table.
+  versions: ''
+  type: major-update
+  date: September 13, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/232
+  merge_commit: 87f6cf525dc39f0ecb60a4eab4d1b8822fadf07d
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added more information about service level agreements (SLAs), service
+    level targets (SLTs), and roles and responsibilities to the [Adobe Managed Services](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/maintenance/adobe-managed-services.html)
+    page.
+  versions: ''
+  type: major-update
+  date: August 12, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/206
+  merge_commit: a44d19efea911859b0b7907976065d68f1036f0c
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added a new topic about checking [extensions](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/extensions.html)
+    that you have installed on your Adobe Commerce instance with the Site-Wide Analysis
+    Tool.
+  versions: ''
+  type: new-topic
+  date: June 1, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/152
+  merge_commit: 62e84bf117165bc77c5a20b58ef8a0e889b6b94b
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Added links to [marketplace listings](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html)
+    for vendor bundled extensions that were removed from Magento Open Source and Adobe
+    Commerce in the 2.4.4 release.
+  versions: ''
+  type: major-update
+  date: May 9, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/142
+  merge_commit: 87afb80ac10ef77eabb6aef7f60c070117feb5ee
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added a new [Tools](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
+    guide, including the initial [!DNL [Site-Wide Analysis Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)]
+    guide.
+  versions: ''
+  type: new-topic
+  date: April 12, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/132
+  merge_commit: 04d0613bc1d398df458ab16002bdce522c7cbd79
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Add a new topic for [integrating](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/integrate-analysis-tool.html)
+    the Upgrade Compatibility Tool with the Site-Wide Analysis Tool.
+  versions: ''
+  type: new-topic
+  date: April 11, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/116
+  merge_commit: 272dee06470f95973ee2f7b12308d28d953f3d76
+  contributor: sivashch
+  membership: false
+  labels:
+  - new-topic
+- description: Added descriptions to each category on the [recommended reading](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html?lang=en)
+    page.
+  versions: ''
+  type: major-update
+  date: March 28, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/92
+  merge_commit: 7c33561060a3bf0529469e2e4d27f54381bb13d9
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added a [new page](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/home.html)
+    indexing several different upgrade and release-related resources
+  versions: ''
+  type: major-update
+  date: March 16, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/83
+  merge_commit: f9282b5c6e5709845c0f63a309a83e6521e3b59d
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Updated the images in the [recommended upgrade paths](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en)
+    topic.
+  versions: ''
+  type: major-update
+  date: March 9, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/79
+  merge_commit: 7d0a43f3940fb6dab17a6cf8d3cf75a6bfa4073b
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added a new [home page](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=en)
+    for all Adobe Commerce and Magento Open Source operational guides.
+  versions: ''
+  type: new-topic
+  date: March 7, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/77
+  merge_commit: 831ee65fb9d543a2a980ef4ea2a2449e4e16e7af
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+- description: 'MISSING whatsnew in the major-update PR #296: "COMDOX-299: Migrate
+    Release Notes from magento-devdocs" assigned to jmatthew (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/296)'
+  versions: ''
+  type: major-update
+  date: October 24, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/296
+  merge_commit: 402a3cc9d60daa1edb466da15bdd5a7c72b556c5
+  contributor: jmatthew
+  membership: false
+  labels:
+  - migration
+  - major-update
+- description: 'MISSING whatsnew in the major-update PR #276: "COMDOX-325: Migrate
+    Security and Compliance from magento-devdocs" assigned to jmatthew (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/276)'
+  versions: ''
+  type: major-update
+  date: October 12, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/276
+  merge_commit: 0ce152b5d7f3d3dd2c8600cd08f146b1afa76db9
+  contributor: jmatthew
+  membership: false
+  labels:
+  - migration
+  - major-update
+- description: 'MISSING whatsnew in the major-update PR #263: "COMDOX-300: Release
+    Information from magento/devdocs " assigned to jmatthew (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/263)'
+  versions: ''
+  type: major-update
+  date: September 30, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/263
+  merge_commit: aa4ca12975f2d444e25da1d9e2b8b8f646003bdb
+  contributor: jmatthew
+  membership: false
+  labels:
+  - migration
+  - major-update
+- description: 'MISSING whatsnew in the major-update PR #252: "COMDOX-301: Migrate
+    CLI Tools Reference from magento/devdocs" assigned to jmatthew (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/252)'
+  versions: ''
+  type: major-update
+  date: September 22, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/252
+  merge_commit: cf7696623ae1927986684f5d957c055fcce70af9
+  contributor: jmatthew
+  membership: false
+  labels:
+  - migration
+  - major-update
+- description: 'MISSING whatsnew in the major-update PR #230: "COMDOX-298: Migrate
+    Installation Guide from magento/devdocs" assigned to jmatthew (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/230)'
+  versions: ''
+  type: major-update
+  date: September 12, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/230
+  merge_commit: 5506e19576f051082c4b75d994d8b9e78eec841e
+  contributor: jmatthew
+  membership: false
+  labels:
+  - migration
+  - major-update
+- description: 'MISSING whatsnew in the new-topic PR #228: "qpt-usage" assigned to
+    barnato (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/228)'
+  versions: ''
+  type: new-topic
+  date: September 12, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/228
+  merge_commit: bd8f29d80749170879f985ba0ffd92a94d8a29e5
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
+- description: 'MISSING whatsnew in the major-update PR #208: "Port 2.4.5 changes
+    to Config Guide" assigned to jmatthew (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/208)'
+  versions: 2.4.5
+  type: major-update
+  date: August 9, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/208
+  merge_commit: c9776534acc8127343a17a76dcd96c47d9f3d7cd
+  contributor: keharper
+  membership: true
+  labels:
+  - major-update
+  - 2.4.5
+- description: 'MISSING whatsnew in the major-update PR #154: "AC-495: Updates menu
+    and reoganizes TOC for the Upgrade Compatibility Tool section" assigned to del
+    (https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/154)'
+  versions: ''
+  type: major-update
+  date: June 2, 2022
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/154
+  merge_commit: 9dd11cf3787e9f80582689d97bb297ea776891df
+  contributor: del
+  membership: false
+  labels:
+  - documentation
   - major-update
