@@ -114,7 +114,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     <tr>
         <td>2.4.3</td>
         <td>August&nbsp;10, 2021</td>
-          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/commerce-2-4-3.html">Adobe Commerce Release Notes</a><br>
+          <td><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-3.html">Adobe Commerce Release Notes</a><br>
           </td>
     </tr>
     <tr>
