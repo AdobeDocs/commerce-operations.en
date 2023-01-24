@@ -8,13 +8,18 @@ feature-set: Commerce
 
 # Best practices for product SKU configuration
 
-To maximize performance, the recommended maximum for effective product Stocking Keeping Units (SKUs) is 242 million. This effective product maximum is calculated as:
+To maximize performance, the recommended maximum for effective product Stocking Keeping Units (SKUs) is 242 million. This effective product SKU maximum is calculated as:
 
 ```text
-Effective SKU = [Websites] * [CustomerGroups|SharedCatalogs] * ([SimpleProducts] + [ConfigurableProducts] + [ConfigurableProduct]) * [ConfigurableProductOptions]
+Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
 ```
 
-Having more than the maximum number of effective SKUs slows down product data retrieval and increases the time to complete Admin operations.
+Where:
+
+- N stands as the number of items for that category
+- Customer groups include shared catalogs, as it creates an additional customer group.
+
+Having more than the maximum number of effective SKUs slows down product data retrieval and increases the time to complete Admin panel operations or indexations.
 
 ## Affected products and versions
 
@@ -35,6 +40,7 @@ Use the following strategies to reduce the number of products (SKUs):
   - Reduce the number of products assigned to categories.
   - Decrease the number of SKUs by decreasing the number of websites, customer groups, shared catalogs, number of products, or number of configurable product options
 - Provide more product variations by using custom options instead of creating separate products.
+- Taking into account that an Effective SKU could include a number of potential permutation of prices, because prices can be specified differently per each store or customer group.
 - Deactivate or remove unused system components like modules. (See  [Uninstall modules](../../../installation/tutorials/uninstall-modules.md).)
 - Manage products in an external Platform Management System (PMS).
 
