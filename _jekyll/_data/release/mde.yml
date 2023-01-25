@@ -1,5 +1,6 @@
 ---
 versions:
+  - 2.4.6
   - 2.4.5
   - 2.4.4
   - 2.4.3
@@ -12,6 +13,7 @@ extensions:
     versions:
       - name: 4.4.3
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -21,6 +23,7 @@ extensions:
           2.3.7: compatible
       - name: 4.4.2
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -30,6 +33,7 @@ extensions:
           2.3.7: compatible
       - name: 4.4.1
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -39,6 +43,7 @@ extensions:
           2.3.7: compatible
       - name: 4.4.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -48,6 +53,7 @@ extensions:
           2.3.7: compatible
       - name: 4.3.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -57,6 +63,7 @@ extensions:
           2.3.7: compatible
       - name: 4.2.0
         support:
+          2.4.6: supported
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -66,6 +73,7 @@ extensions:
           2.3.7: compatible
       - name: 4.1.0
         support:
+          2.4.6: supported
           2.4.5: not supported
           2.4.4: not supported
           2.4.3: not supported
@@ -75,8 +83,19 @@ extensions:
           2.3.7: compatible
   - name: B2B
     versions:
+      - name: 1.3.5
+        support:
+          2.4.6: supported
+          2.4.5: compatible
+          2.4.4: compatible
+          2.4.3: compatible
+          2.4.2: compatible
+          2.4.1: compatible
+          2.4.0: compatible
+          2.3.7: compatible
       - name: 1.3.4
         support:
+          2.4.6: compatible
           2.4.5: supported
           2.4.4: compatible
           2.4.3: compatible
@@ -86,6 +105,7 @@ extensions:
           2.3.7: compatible
       - name: 1.3.3
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: supported
           2.4.3: compatible
@@ -95,6 +115,7 @@ extensions:
           2.3.7: compatible
       - name: 1.3.2
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: supported
@@ -104,6 +125,7 @@ extensions:
           2.3.7: compatible
       - name: 1.3.1
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -113,6 +135,7 @@ extensions:
           2.3.7: compatible
       - name: 1.3.0
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -122,6 +145,7 @@ extensions:
           2.3.7: compatible
       - name: 1.2.0
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -131,6 +155,7 @@ extensions:
           2.3.7: compatible
       - name: 1.1.7
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -142,6 +167,7 @@ extensions:
     versions:
       - name: 1.1
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -151,6 +177,7 @@ extensions:
           2.3.7: not supported
       - name: 1.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -162,6 +189,7 @@ extensions:
     versions:
       - name: 1.1.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -171,6 +199,7 @@ extensions:
           2.3.7: not supported
       - name: 1.0.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -180,8 +209,19 @@ extensions:
           2.3.7: not supported
   - name: Inventory Management
     versions:
+      - name: 1.2.6
+        support:
+          2.4.6: supported
+          2.4.5: compatible
+          2.4.4: compatible
+          2.4.3: compatible
+          2.4.2: compatible
+          2.4.1: compatible
+          2.4.0: compatible
+          2.3.7: compatible
       - name: 1.2.5
         support:
+          2.4.6: compatible
           2.4.5: supported
           2.4.4: compatible
           2.4.3: compatible
@@ -191,6 +231,7 @@ extensions:
           2.3.7: compatible
       - name: 1.2.4
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: supported
           2.4.3: compatible
@@ -200,6 +241,7 @@ extensions:
           2.3.7: compatible
       - name: 1.2.3
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: supported
@@ -209,6 +251,7 @@ extensions:
           2.3.7: compatible
       - name: 1.2.2
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -218,6 +261,7 @@ extensions:
           2.3.7: compatible
       - name: 1.2.1
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -227,6 +271,7 @@ extensions:
           2.3.7: compatible
       - name: 1.2.0
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -236,6 +281,7 @@ extensions:
           2.3.7: compatible
       - name: 1.1.7
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -247,6 +293,7 @@ extensions:
     versions:
       - name: 2.0.3
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -256,6 +303,7 @@ extensions:
           2.3.7: not supported
       - name: 2.0.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -265,6 +313,7 @@ extensions:
           2.3.7: not supported
       - name: 1.3.0
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -274,6 +323,7 @@ extensions:
           2.3.7: not supported
       - name: 1.2.0
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -283,6 +333,7 @@ extensions:
           2.3.7: not supported
       - name: 1.1.0
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -292,8 +343,19 @@ extensions:
           2.3.7: not supported
   - name: Page Builder
     versions:
+      - name: 1.7.3
+        support:
+          2.4.6: supported
+          2.4.5: not supported
+          2.4.4: not supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
       - name: 1.7.2
         support:
+          2.4.6: not supported
           2.4.5: supported
           2.4.4: not supported
           2.4.3: not supported
@@ -303,6 +365,7 @@ extensions:
           2.3.7: not supported
       - name: 1.7.1
         support:
+          2.4.6: not supported
           2.4.5: not supported
           2.4.4: supported
           2.4.3: not supported
@@ -312,6 +375,7 @@ extensions:
           2.3.7: not supported
       - name: 1.7.0
         support:
+          2.4.6: not supported
           2.4.5: not supported
           2.4.4: not supported
           2.4.3: supported
@@ -321,6 +385,7 @@ extensions:
           2.3.7: not supported
       - name: 1.6.0
         support:
+          2.4.6: not supported
           2.4.5: not supported
           2.4.4: not supported
           2.4.3: not supported
@@ -330,6 +395,7 @@ extensions:
           2.3.7: not supported
       - name: 1.5.0
         support:
+          2.4.6: not supported
           2.4.5: not supported
           2.4.4: not supported
           2.4.3: not supported
@@ -339,6 +405,7 @@ extensions:
           2.3.7: not supported
       - name: 1.4.0
         support:
+          2.4.6: not supported
           2.4.5: not supported
           2.4.4: not supported
           2.4.3: not supported
@@ -348,6 +415,7 @@ extensions:
           2.3.7: not supported
       - name: 1.3.6
         support:
+          2.4.6: not supported
           2.4.5: not supported
           2.4.4: not supported
           2.4.3: not supported
@@ -359,6 +427,7 @@ extensions:
     versions:
       - name: 1.3.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -368,6 +437,7 @@ extensions:
           2.3.7: not supported
       - name: 1.1.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -377,6 +447,7 @@ extensions:
           2.3.7: not supported
       - name: 1.0.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -388,6 +459,7 @@ extensions:
     versions:
       - name: 1.2.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -397,6 +469,7 @@ extensions:
           2.3.7: not supported
       - name: 1.1.0
         support:
+          2.4.6: supported
           2.4.5: compatible
           2.4.4: supported
           2.4.3: supported
@@ -406,6 +479,7 @@ extensions:
           2.3.7: not supported
       - name: 1.0.0
         support:
+          2.4.6: supported
           2.4.5: compatible
           2.4.4: supported
           2.4.3: supported
@@ -417,6 +491,7 @@ extensions:
     versions:
       - name: 1.0.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -428,6 +503,7 @@ extensions:
     versions:
       - name: 4.0.0
         support:
+          2.4.6: supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -437,6 +513,7 @@ extensions:
           2.3.7: supported
       - name: 3.3.7
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -446,6 +523,7 @@ extensions:
           2.3.7: compatible
       - name: 3.3.6
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -455,6 +533,7 @@ extensions:
           2.3.7: compatible
       - name: 3.3.5
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -464,6 +543,7 @@ extensions:
           2.3.7: compatible
       - name: 3.3.3
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -473,6 +553,7 @@ extensions:
           2.3.7: compatible
       - name: 3.3.2
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
@@ -482,6 +563,7 @@ extensions:
           2.3.7: compatible
       - name: 3.3.1
         support:
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible
