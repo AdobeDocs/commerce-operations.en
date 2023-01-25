@@ -50,7 +50,7 @@ For details, see [Deploy variables > `REDIS_BACKEND`](https://devdocs.magento.co
 
 >[!WARNING]
 >
->For scaled architecture (split architecture), Redis slave connections **SHOULD NOT** be enabled. You can check if you are on scaled architecture by going to your project URL, e.g. https:&#8203;//us.magento.cloud/projects/&lt;project ID&gt;/environments/production. Click on the Access site. If there are more than three nodes shown under SSH access, you are on scaled architecture. If you enable Redis Slave Reads on scaled architecture, the customer will receive errors on Redis connections not being able to connect. This has to do with how the clusters are configured to process Redis connections. Redis Slaves are still active but will not be used for Redis Reads. We recommend for scaled architecture to use Adobe Commerce 2.3.5 or later and implement new Redis back-end configuration and implement L2 caching for Redis.
+Do _not_ configure a Redis slave connection for cloud infrastructure projects with a [scaled architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). This causes Redis connection errors. See [the Redis configuration guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
 
 
 ### Configuration for on-premises deployments
