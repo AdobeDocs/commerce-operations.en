@@ -46,6 +46,13 @@ For details, see [Deploy variables > `REDIS_BACKEND`](https://devdocs.magento.co
 >
 > Check the ece-tools version installed in your local Cloud environment from the command line using the `composer show magento/ece-tools` command. If necessary, [update the ece-tools version](https://devdocs.magento.com/cloud/project/ece-tools-update.html). 
 
+</br>
+
+>[!WARNING]
+>
+>For scaled architecture (split architecture), Redis slave connections **SHOULD NOT** be enabled. You can check if you are on scaled architecture by going to your project URL, e.g. https:&#8203;//us.magento.cloud/projects/&lt;project ID&gt;/environments/production. Click on the Access site. If there are more than three nodes shown under SSH access, you are on scaled architecture. If you enable Redis Slave Reads on scaled architecture, the customer will receive errors on Redis connections not being able to connect. This has to do with how the clusters are configured to process Redis connections. Redis Slaves are still active but will not be used for Redis Reads. We recommend for scaled architecture to use Adobe Commerce 2.3.5 or later and implement new Redis back-end configuration and implement L2 caching for Redis.
+
+
 ### Configuration for on-premises deployments
 
 For Adobe Commerce on-premises deployments, configure the new Redis cache implementation using the `bin/magento:setup` commands. For instructions, see [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
