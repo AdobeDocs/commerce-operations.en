@@ -120,7 +120,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Store Fulfillment for Adbe Commerce by Walmart Technologies</td>
+      <td>Store Fulfillment for Adobe Commerce by Walmart Technologies</td>
       <td></td>
       <td></td>
       <td></td>
