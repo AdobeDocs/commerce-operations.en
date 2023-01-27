@@ -2179,7 +2179,7 @@ Magento Open Source, but is not supported.
       <td>Not supported</span>
       </td>
     </tr>
-     <tr>
+    <tr>
       <td>Payment Services 1.3.0</td>
       <td>Supported</span>
       </td>
@@ -2210,7 +2210,7 @@ Magento Open Source, but is not supported.
       <td>Not supported</span>
       </td>
     </tr>
-     <tr>
+    <tr>
       <td>Payment Services 1.2.0</td>
       <td>Supported</span>
       </td>
