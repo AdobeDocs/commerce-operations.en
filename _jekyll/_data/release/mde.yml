@@ -1127,7 +1127,7 @@ extensions:
           2.3.2: not supported
           2.3.1: not supported
           2.3.0: not supported
-      - name: 1.1.0
+      - name: 1.2.0
         support:
           2.4.5: supported
           2.4.4: supported
