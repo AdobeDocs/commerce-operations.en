@@ -1963,6 +1963,37 @@ Magento Open Source, but is not supported.
       <th colspan="15">Payment Services</th>
     </tr>
     <tr>
+      <td>Payment Services 1.5.4</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Payment Services 1.5.3</td>
       <td>Supported</span>
       </td>
