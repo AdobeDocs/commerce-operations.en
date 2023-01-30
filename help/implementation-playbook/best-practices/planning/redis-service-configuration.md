@@ -48,7 +48,7 @@ For details, see [Deploy variables > `REDIS_BACKEND`](https://devdocs.magento.co
 
 >[!WARNING]
 >
-Do _not_ configure a Redis slave connection for cloud infrastructure projects with a [scaled architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). This causes Redis connection errors. See [the Redis configuration guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
+>Do _not_ configure a Redis slave connection for cloud infrastructure projects with a [scaled architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). This causes Redis connection errors. See [the Redis configuration guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
 
 
 ### Configuration for on-premises deployments
