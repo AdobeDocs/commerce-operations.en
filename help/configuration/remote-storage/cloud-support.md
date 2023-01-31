@@ -72,7 +72,7 @@ Alternatively, you can use the Project Web Interface to add the variable to the 
 
 1. Click **Add Variable**.
 
-1. In the _Name_ field, enter `env:REMOTE_STORAGE`
+1. In the _Name_ field, enter `REMOTE_STORAGE`
 
 1. In the _Value_ field, add the JSON configuration.
 
