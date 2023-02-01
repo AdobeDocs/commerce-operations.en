@@ -1,7 +1,7 @@
 ---
 title: Configure the database profiler
 description: See an example of how to configure output for the database profiler.
-badge: label="Contributed by Atish Goswami" type="Informative" url="http://atishgoswami.com" tooltip="Atish Goswami"
+badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 ---
 
 # Configure the database profiler
