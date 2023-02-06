@@ -56,6 +56,10 @@ As of 2.4, MySQL is no longer a supported catalog search engine. You must instal
 
 Some third-party catalog search engines run on top of the Adobe Commerce search engine. Contact your vendor to determine whether you must update your extension.
 
+#### MariaDB
+
+{{$include /help/_includes/maria-db-config.md}}
+
 ### Search engine
 
 You must install and configure either Elasticsearch 7.6 or higher or OpenSearch 1.2 before upgrading to 2.4.0. Adobe no longer supports Elasticsearch 2.x, 5.x, and 6.x. [Search engine configuration](../../configuration/search/configure-search-engine.md) in the _Configuration Guide_ describes the tasks you must perform after upgrading Elasticsearch to a supported version.
