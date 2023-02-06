@@ -6,7 +6,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### January 27, 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -26,7 +26,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### January 24, 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -46,7 +46,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### January 23, 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -66,7 +66,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### January 19, 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -86,7 +86,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### January 10, 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -106,7 +106,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### January 9, 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -126,7 +126,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### December 20, 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -146,7 +146,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### December 16, 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -166,7 +166,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### December 2, 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
@@ -186,7 +186,7 @@ Learn about new documentation and significant updates to existing documentation.
 
 ### December 1, 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
