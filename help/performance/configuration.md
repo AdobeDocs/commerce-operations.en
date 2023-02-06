@@ -17,7 +17,7 @@ An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Up
 
 >[!TIP]
 >
->Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or [!DNL MySQL] versions. We suggest modifying the default MariaDB configuration setting, which is described in the [installation prerequisites](../installation/prerequisites/database/mysql.md).
+>Reindexing on MariaDB 10.4 and 10.6 takes more time compared to other MariaDB or [!DNL MySQL] versions. We suggest modifying the default MariaDB configuration setting, which is described in the [installation prerequisites](../installation/prerequisites/database/mysql.md).
 
 ## Caches
 
