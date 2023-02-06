@@ -4,6 +4,66 @@
 
 Learn about new documentation and significant updates to existing documentation.
 
+### January 27, 2023
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.26 Quality Patches Tool (QPT) package release.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08210f356354d20adf7360d18e2ddba9fe9a565a">08210f</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### January 24, 2023
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">release schedule</a> and <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">software lifecycle policy</a> topics for 2023.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/979a6d481021eb26121e79974b2ce6e9280d51c3">979a6d</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### January 23, 2023
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added release notes for Adobe Commerce 2.4.6 beta 2. See <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Adobe Commerce 2.4.6 release notes</a>.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/af347fea185d2a3c02180216feb2fd13f5868081">af347f</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### January 19, 2023
 
 <table>
