@@ -9,15 +9,15 @@ It is important to understand what is necessary to run Adobe Commerce or Magento
 
 After reviewing system requirements, you must complete the following prerequisites before upgrading your system:
 
-- Update all software
-- Verify that a supported search engine is installed
-- Convert database table format
-- Set the open files limit
-- Verify that cron jobs are running
-- Set `DATA_CONVERTER_BATCH_SIZE`
-- Verify file system permissions
-- Set the `pub/` directory root
-- Install the Composer update plugin
+* Update all software
+* Verify that a supported search engine is installed
+* Convert database table format
+* Set the open files limit
+* Verify that cron jobs are running
+* Set `DATA_CONVERTER_BATCH_SIZE`
+* Verify file system permissions
+* Set the `pub/` directory root
+* Install the Composer update plugin
 
 ## Update all software
 
@@ -39,9 +39,9 @@ Adobe Commerce and Magento Open Source require Elasticsearch or OpenSearch to be
 
 You can use the command line or the Admin to determine your catalog search engine:
 
-- Enter the `bin/magento config:show catalog/search/engine` command. The command returns a value of `mysql`, `elasticsearch` (which indicates Elasticsearch 2 is configured), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`, or a custom value, indicating you have installed a third-party search engine. For versions earlier than 2.4.6, use the `elasticsearch7` value for the Elasticsearch 7 or OpenSearch engine. For version 2.4.6 and later, use the `opensearch` value for the OpenSearch engine.
+* Enter the `bin/magento config:show catalog/search/engine` command. The command returns a value of `mysql`, `elasticsearch` (which indicates Elasticsearch 2 is configured), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`, or a custom value, indicating you have installed a third-party search engine. For versions earlier than 2.4.6, use the `elasticsearch7` value for the Elasticsearch 7 or OpenSearch engine. For version 2.4.6 and later, use the `opensearch` value for the OpenSearch engine.
 
-- From the Admin, check the value of the **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** field.
+* From the Admin, check the value of the **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** field.
 
 The following sections describe what actions that you must take before upgrading to 2.4.0.
 
@@ -49,10 +49,10 @@ The following sections describe what actions that you must take before upgrading
 
 As of 2.4, MySQL is no longer a supported catalog search engine. You must install and configure Elasticsearch or OpenSearch before upgrading. Use the following resources to help guide you through this process:
 
-- [Install and configure Elasticsearch](../../configuration/search/overview-search.md)
-- [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configure [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) or [Apache](../../installation/prerequisites/search-engine/configure-apache.md) to work with your search engine
-- [Configure Commerce to use Elasticsearch](../../configuration/search/configure-search-engine.md) and reindex
+* [Install and configure Elasticsearch](../../configuration/search/overview-search.md)
+* [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* Configure [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) or [Apache](../../installation/prerequisites/search-engine/configure-apache.md) to work with your search engine
+* [Configure Commerce to use Elasticsearch](../../configuration/search/configure-search-engine.md) and reindex
 
 Some third-party catalog search engines run on top of the Adobe Commerce search engine. Contact your vendor to determine whether you must update your extension.
 
@@ -72,11 +72,11 @@ Elasticsearch requires Java Development Kit (JDK) 1.8 or higher. See [Install th
 
 OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce and Magento Open Source introduce support for OpenSearch:
 
-- 2.4.6 (OpenSearch has a separate module and settings)
-- 2.4.5
-- 2.4.4
-- 2.4.3-p2
-- 2.3.7-p3
+* 2.4.6 (OpenSearch has a separate module and settings)
+* 2.4.5
+* 2.4.4
+* 2.4.3-p2
+* 2.3.7-p3
 
 You can [migrate from Elasticsearch to OpenSearch](opensearch-migration.md) only if you are upgrading to a version of Adobe Commerce listed above (or higher).
 
@@ -198,15 +198,15 @@ Adobe Commerce 2.4 includes security enhancements that require some data to be c
 
 The following tables are affected the most:
 
-- `catalogrule`
-- `core_config_data`
-- `magento_reward_history`
-- `quote_payment`
-- `quote`
-- `sales_order_payment`
-- `sales_order`
-- `salesrule`
-- `url_rewrite`
+* `catalogrule`
+* `core_config_data`
+* `magento_reward_history`
+* `quote_payment`
+* `quote`
+* `sales_order_payment`
+* `sales_order`
+* `salesrule`
+* `url_rewrite`
 
 If you have a large amount of data, you can improve performance by setting the value of an environment variable, `DATA_CONVERTER_BATCH_SIZE`. By default, the value is set to `50,000`.
 
@@ -281,10 +281,10 @@ drwxrws---. 29 magento_user apache   4096 Jun  7 07:53 vendor
 
 See the following for an explanation of the sample output:
 
-- Most of the files are `-rw-rw----`, which is `660`
-- `drwxrwx---` = `770`
-- `-rw-rw-rw-` = `666`
-- The file system owner is `magento_user`
+* Most of the files are `-rw-rw----`, which is `660`
+* `drwxrwx---` = `770`
+* `-rw-rw-rw-` = `666`
+* The file system owner is `magento_user`
 
 To get more detailed information, you can enter the following command:
 
