@@ -45,5 +45,5 @@ user-guide-description: Learn why upgrading your Adobe Commerce application is s
   - [Maintenance mode options for upgrade](troubleshooting/maintenance-mode-options.md)
 - Resources {#resources}
   - [Recommended reading](resources/recommended-reading.md)
-  - [Modernizing your platform with Adobe Commerce](resources/recommended-upgrade-paths-2022.md)
+  - [Modernizing your platform with Adobe Commerce](resources/recommended-upgrade-paths.md)
   - [Upgrade plan checklist](https://support.magento.com/hc/en-us/articles/360057968951)
