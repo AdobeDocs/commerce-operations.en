@@ -59,7 +59,6 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
         <p>Keep your storefront secure and operating efficiently. Prepare for your Adobe Commerce or Magento Open Source upgrade by reviewing Adobe's extensive technical documentation.</p>
           <ul>
             <li><a href="recommended-upgrade-paths-2022.md">2022 Recommended Upgrade Paths</a></li>
-            <li><a href="../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf">2.4 Upgrade Guide</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Technical Upgrade Workshop recording</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">Accessing pre-releases</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">Beta Program overview</a></li>
