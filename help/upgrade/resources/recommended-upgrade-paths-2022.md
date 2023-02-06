@@ -1,11 +1,11 @@
 ---
-title: Modernizing your platform with Adobe Commerce 2.4.4+
-description: Review recommendations for planning your Adobe Commerce or Magento Open Source upgrade in 2022.
+title: Modernizing your platform with Adobe Commerce
+description: Review recommendations for planning your Adobe Commerce upgrade.
 ---
 
-# Recommended upgrade paths for 2022
+# Recommended upgrade paths
 
-An eCommerce implementation is an evolution—it’s never truly finished. Your business must remain one step ahead of trends by introducing the latest capabilities and functionality that keeps your customers engaged. Upgrading to Adobe Commerce 2.4.4 or higher enables you to stay ahead of the pack with best-in-class innovations and future-proof your business with:
+An eCommerce implementation is an evolution—it's never truly finished. Your business must remain one step ahead of trends by introducing the latest capabilities and functionality that keeps your customers engaged. Upgrading to the latest Adobe Commerce version enables you to stay ahead of the pack with best-in-class innovations and future-proof your business with:
 
 - Faster access to innovative features delivered as SaaS services
 - Easier and more cost-effective maintenance and upgrades
@@ -14,9 +14,9 @@ An eCommerce implementation is an evolution—it’s never truly finished. Your 
 - Better developer experience and tooling
 - Ability to more deeply integrate with other Adobe Experience Cloud applications
 
-To provide our merchants with more flexibility when planning their upgrade to 2.4.4 or higher, we recently updated our [2022 release schedule](https://devdocs.magento.com/release/), extended the 2.3 End of Support (EOS) date, and announced new extended support options for select versions of our software. For more information on these updates, please refer to our blog.
+To provide our merchants with more flexibility when planning upgrades, we recently updated the Adobe Commerce [release schedule](../../release/schedule.md), extended the 2.3 End of Support (EOS) date, and announced new extended support options for select versions of our software. For more information on these updates, see [Expanded support for Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
 
-The following are Adobe Commerce-recommended paths to 2.4.4 or later to keep your site secure and performant while upgrading to one of the latest verions.
+The following are Adobe Commerce-recommended upgrade paths to keep your site secure and performant while upgrading to one of the latest versions.
 
 ## Upgrading from versions 2.3.6 and lower
 
