@@ -2,7 +2,7 @@
 
 ## What's new in implementation best practices
 
-This page contains recent changes that we think you'd like to know about. We exclude all minor updates, such as copy editing, from this list.
+This page contains recent changes that we think you'd like to see. We exclude all minor updates, such as copy editing, from this list.
 
 ### January 30, 2023
 
