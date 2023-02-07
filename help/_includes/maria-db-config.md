@@ -9,6 +9,10 @@ If you experience performance degradation not related to indexation after upgrad
 
 In addition to these recommendations, you should consult with your database administrator on configuring the following parameters:
 
+>[!NOTE]
+>
+>These settings are available for on-premises deployments only. Adobe Commerce on cloud infrastructure customers do not have access to these settings.
+
 *  [`--query-cache-limit`](https://mariadb.com/kb/en/server-system-variables/#query_cache_limit)
 *  [`--query-cache-size`](https://mariadb.com/kb/en/server-system-variables/#query_cache_size)
 *  [`--join-buffer-size`](https://mariadb.com/kb/en/server-system-variables/#join_buffer_size)
