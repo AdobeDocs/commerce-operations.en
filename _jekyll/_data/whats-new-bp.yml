@@ -1,8 +1,8 @@
 ---
-title: Whats new in implementation best practices
+title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to know about.
-  We exclude  all minor updates, such as copy editing, from this list.
-updated: Mon Feb 6 10:35:33 2023
+  We exclude all minor updates, such as copy editing, from this list.
+updated: Tue Feb 7 12:13:43 2023
 entries:
 - description: Added a [warning](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
     about Redis configuration differences between Adobe Commerce Pro and Starter plans.
