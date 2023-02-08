@@ -18,10 +18,6 @@ To provide our merchants with more flexibility when planning upgrades, we recent
 
 The following are Adobe Commerce-recommended upgrade paths to keep your site secure and performant while upgrading to one of the latest versions.
 
-## Upgrading from versions 2.3.6 and lower
-
-![](../../assets/upgrade-guide/2.3.6.png)
-
 ## Upgrading from 2.3.7
 
 ![](../../assets/upgrade-guide/2.3.7.png)
