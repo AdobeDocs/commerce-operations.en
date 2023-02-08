@@ -17,7 +17,7 @@ This page contains recent changes that we think you'd like to see. We exclude al
   </thead>
   <tbody>
     <tr>
-      <td><p>Added a <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">warning</a> about Redis configuration differences between Adobe Commerce Pro and Starter plans.</p>
+      <td><p>Added a <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">warning</a> about Redis configuration differences between Adobe Commerce Pro and Starter projects.</p>
 
       <p><i>Community contribution by asrar7787</i></p></td>
       <td></td>

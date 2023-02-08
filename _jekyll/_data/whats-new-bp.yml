@@ -2,10 +2,10 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Tue Feb 7 12:31:31 2023
+updated: Wed Feb 8 09:12:01 2023
 entries:
 - description: Added a [warning](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
-    about Redis configuration differences between Adobe Commerce Pro and Starter plans.
+    about Redis configuration differences between Adobe Commerce Pro and Starter projects.
   versions: ''
   type: best-practices
   date: January 30, 2023
