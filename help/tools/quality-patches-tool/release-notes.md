@@ -18,9 +18,8 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 * **ACSD-48362** (for Adobe Commerce >=2.4.1 <2.4.7) - Fixes the issue where the default shipping address is used instead of a new one when placing an order using a negotiable quote.
 * **ACSD-48059** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where merchants cannot save the "Match product by rule" in the category.
-* **ACSD-48813** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where the search is not showing relevant results based on the search weight of the attributes.
-* **ACSD-48216** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where AUTO_INCREMENT of the inventory_source_item table increases on the UPDATE operation.
-* **ACSD-47908** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the error "A value less than or equal to 0 is expected" when selecting the source and qty on the shipping step during checkout.
+* **ACSD-48216** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.3.8 || >=2.4.0 <2.4.7) - Fixes the issue where AUTO_INCREMENT of the inventory_source_item table increases on the UPDATE operation.
+* **ACSD-47908** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.3.8 || >=2.4.0 <2.4.7) - Fixes the error "A value less than or equal to 0 is expected" when selecting the source and qty on the shipping step during checkout.
 * **ACSD-49497** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where an order remains in the processing state after shipment and a partial refund is applied.
 * **ACSD-48694** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.3.8 || >=2.4.1 <2.4.7) - Fixes the issue where the error "Invalid state change requested" prevents a customer from placing an order.
 * **ACSD-49013** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where email confirmation is not translated to the website locale when creating customers using bulk API.
