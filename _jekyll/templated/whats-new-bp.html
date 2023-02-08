@@ -23,7 +23,6 @@
   <thead>
     <tr>
       <th>Description</th>
-      <th>Versions</th>
       <th>Type</th>
       <th>Source</th>
     </tr>
@@ -33,16 +32,14 @@
     <tr>
       <td>
       {{- item.description | markdownify }}
-      {%- if item.membership == false %}
+      {%- if item.membership == false and item.link contains "github.com" -%}
       <p><i>Community contribution by {{ item.contributor }}</i></p>
-      {%- endif -%}
-      </td>
-      <td>{{ item.versions }}</td>
+      {%- endif -%}</td>
       <td>{{ item.type }}</td>
-      {%- if item.link contains "-commerce" %}
-      <td><a href="https://github.com/magento/devdocs/commit/{{ item.merge_commit }}">{{ item.merge_commit | slice: 0, 6 }}</a></td>
+      {%- if item.link contains "git.corp" %}
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/{{ item.merge_commit }}">{{ item.merge_commit | slice: 0, 6 }}</a> (commit)</td>
       {%- else %}
-      <td><a href="{{ item.link }}">{{ item.link | split: "/" | last }}</a></td>
+      <td><a href="{{ item.link }}">{{ item.link | split: "/" | last }}</a> (pull request)</td>
       {%- endif %}
     </tr>
   {%- endfor %}
