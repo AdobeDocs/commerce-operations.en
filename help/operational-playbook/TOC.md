@@ -66,3 +66,4 @@ user-guide-description: Learn how to get your businesses operationally ready to 
   - [Click and collect](product/click-collect.md)
   - [PWA](product/progressive-web-app.md)
 - [Checklists and templates](checklists-templates/home.md)
+- [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

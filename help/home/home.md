@@ -113,12 +113,4 @@ Get practical information about concepts, processes, tools, and best practices t
 </tr>
 </table>
 
-## What's New
-
-Learn about new documentation and significant updates to existing documentation. 
-
-| Change                                                                                                                                                                                                                          | Type    |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Added a new topic describing all [message queue consumers](../configuration/queues/consumers.md).                                                                                                                               | New     |
-| Added [instructions](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) for converting database table storage format for Adobe Commerce on cloud infrastructure Pro projects. | Updated |
-| Added [instructions](../configuration/remote-storage/cloud-support.md) for enabling remote storage for Adobe Commerce on cloud infrastructure projects.                                                                                                                             | Updated |
+{{$include /help/_includes/templated/whats-new.md}}

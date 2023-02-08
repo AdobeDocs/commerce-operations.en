@@ -8,7 +8,7 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
 ## Assumptions
 
-- You installed Commerce using [Composer][].
+- You installed Commerce using [Composer](../../installation/composer.md).
 - You are directly applying updates to the server.
 
 >[!WARNING]
@@ -18,7 +18,7 @@ This topic provides instructions for deploying updates to Commerce on a producti
 
 ## Deployment steps
 
-1. Log in to your production server as, or switch to, the [file system owner][file-owner].
+1. Log in to your production server as, or switch to, the [file system owner](../../installation/prerequisites/file-system/overview.md).
 
 1. Change directory to the Commerce base directory:
 
@@ -86,5 +86,3 @@ This topic provides instructions for deploying updates to Commerce on a producti
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md
