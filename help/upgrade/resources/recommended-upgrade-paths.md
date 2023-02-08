@@ -20,11 +20,11 @@ The following are Adobe Commerce-recommended upgrade paths to keep your site sec
 
 ## Upgrading from 2.3.7
 
-![](../../assets/upgrade-guide/2.3.7.png)
+![Upgrade path from 2.3.7](../../assets/upgrade-guide/2.3.7.png)
 
 ## Upgrading from 2.4.0-2.4.3
 
-![](../../assets/upgrade-guide/2.4.0-2.4.3.png)
+![Upgrade path from 2.4.0 through 2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
 
 ## Upgrading from 2.4.3 (or newly upgraded)
 
