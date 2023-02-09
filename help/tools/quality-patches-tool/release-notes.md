@@ -25,7 +25,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-49013** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where email confirmation is not translated to the website locale when creating customers using bulk API.
 * **ACSD-48164** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where a restricted admin cannot save a website-level value.
 * **ACSD-48404** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.4) - Fixes the issue where "Remember Category Pagination = Yes" causes an error when pressing the browser's back button.
-* **ACSD-48634** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes JS errors on a staging update page when "Google Analytics Content Experiments" is enabled.
+* **ACSD-48634** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes JS errors on a staging update page when "[!UICONTROL Google Analytics Content Experiments]" is enabled.
 * **ACSD-49042** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where a product with infinite backorder cannot be ordered from the Storefront.
 * Updated patches: ACSD-48366, ACSD-48661.
 
