@@ -46,4 +46,4 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
 - Resources {#resources}
   - [Recommended reading](resources/recommended-reading.md)
   - [Modernizing your platform with Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
-  - [Upgrade plan checklist](https://support.magento.com/hc/en-us/articles/360057968951)
+- [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
