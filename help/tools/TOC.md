@@ -68,3 +68,4 @@ user-guide-description: Learn about the different tools you can use with Adobe C
     - Resources {#resources}
         - [Troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
         - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
+- [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
