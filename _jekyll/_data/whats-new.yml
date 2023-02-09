@@ -1,8 +1,43 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Fri Jan 20 16:52:10 2023
+updated: Mon Feb 6 10:17:17 2023
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.26 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: January 27, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/417
+  merge_commit: '08210f356354d20adf7360d18e2ddba9fe9a565a'
+  contributor: poltorat
+  membership: false
+  labels:
+  - major-update
+- description: Updated the [release schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)
+    and [software lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)
+    topics for 2023.
+  versions: ''
+  type: major-update
+  date: January 24, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/359
+  merge_commit: 979a6d481021eb26121e79974b2ce6e9280d51c3
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added release notes for Adobe Commerce 2.4.6 beta 2. See [Adobe Commerce
+    2.4.6 release notes](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html).
+  versions: 2.4.6
+  type: major-update
+  date: January 23, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/415
+  merge_commit: af347fea185d2a3c02180216feb2fd13f5868081
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
 - description: Fixed a SQL query syntax error in the [upgrade prerequisites](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
     best practices topic.
   versions: ''

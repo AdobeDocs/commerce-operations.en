@@ -1,6 +1,32 @@
 ---
-title: Whats new in implementation best practices
-description: This page contains recent changes that we think you'd like to know about.
-  We exclude  all minor updates, such as copy editing, from this list.
-updated: Wed Jan 18 14:27:35 2023
-entries: []
+title: What's new in implementation best practices
+description: This page contains recent changes that we think you'd like to see. We
+  exclude all minor updates, such as copy editing, from this list.
+updated: Wed Feb 8 09:12:01 2023
+entries:
+- description: Added a [warning](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+    about Redis configuration differences between Adobe Commerce Pro and Starter projects.
+  versions: ''
+  type: best-practices
+  date: January 30, 2023
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/78
+  merge_commit: 549096a7d3860ac3594800bb064579225bf9e859
+  contributor: asrar7787
+  membership: false
+  labels:
+  - internal
+  - major update
+  - best-practices
+- description: Fixed a SQL query syntax error in the [upgrade prerequisites](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+    best practices topic.
+  versions: ''
+  type: best-practices
+  date: January 19, 2023
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/77
+  merge_commit: 9df3a5f8e085743f90811432fcb902e08caa1e7d
+  contributor: Zifius
+  membership: false
+  labels:
+  - internal
+  - technical
+  - best-practices

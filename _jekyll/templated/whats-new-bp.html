@@ -5,6 +5,8 @@
 
 {%- assign whatsnew = site.data.whats-new-bp %}
 
+## {{ whatsnew.title }}
+
 {{ whatsnew.description }}
 
 {%- assign entries = whatsnew.entries %}
@@ -17,7 +19,7 @@
 
 ### {{ date_group.name }}
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
