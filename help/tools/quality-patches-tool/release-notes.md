@@ -14,6 +14,32 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.27 {#v1-1-27}
+
+* **ACSD-48362** (for Adobe Commerce >=2.4.1 <2.4.7) - Fixes the issue where the default shipping address is used instead of a new one when placing an order using a negotiable quote.
+* **ACSD-48059** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where merchants cannot save the "[!UICONTROL Match product by rule]" in the category.
+* **ACSD-48216** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.3.8 || >=2.4.0 <2.4.7) - Fixes the issue where [!UICONTROL AUTO_INCREMENT] of the [!UICONTROL inventory_source_item] table increases on the [!UICONTROL UPDATE] operation.
+* **ACSD-47908** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.3.8 || >=2.4.0 <2.4.7) - Fixes the error "A value less than or equal to 0 is expected" when selecting the source and qty on the shipping step during checkout.
+* **ACSD-49497** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where an order remains in the processing state after shipment and a partial refund is applied.
+* **ACSD-48694** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.3.8 || >=2.4.1 <2.4.7) - Fixes the issue where the error "Invalid state change requested" prevents a customer from placing an order.
+* **ACSD-49013** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where email confirmation is not translated to the website locale when creating customers using bulk API.
+* **ACSD-48164** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where a restricted admin cannot save a website-level value.
+* **ACSD-48404** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.4) - Fixes the issue where "Remember Category Pagination = Yes" causes an error when pressing the browser's back button.
+* **ACSD-48634** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes JS errors on a staging update page when "[!UICONTROL Google Analytics Content Experiments]" is enabled.
+* **ACSD-49042** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where a product with infinite backorder cannot be ordered from the Storefront.
+* Updated patches: ACSD-48366, ACSD-48661.
+
+## v1.1.26 {#v1-1-26}
+
+* **ACSD-47937** (for Adobe Commerce and Magento Open Source 2.4.4 || >=2.4.5 <2.4.6) - Fixes the issue where price drop notifications are not always sent due to application-level caching.
+* **ACSD-48661** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where if the company's credit limit is larger than 999, the comma separator prevents the saving of the company due to a validation error.
+* **ACSD-48773** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the reward points email template is taken from the wrong store.
+* **ACSD-48587** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where HTML special characters in the products widget matching rules prevent them from displaying matching products.
+* **ACSD-48212** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where product import assigns the product to the wrong source.
+* **ACSD-47988** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where product export trims HTML tags from the page builder product description.
+* **ACSD-48366** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where the product image is not displayed on the Back to Stock email template.
+* **ACSD-48417** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where an SQL error appears after creating a schedule change for a product and saving another product.
+
 ## v1.1.25 {#v1-1-25}
 
 * **ACSD-48058** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where product price reindex is not working if the bundle product is not assigned to any website.

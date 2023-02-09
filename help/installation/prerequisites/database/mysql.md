@@ -16,7 +16,7 @@ Adobe _strongly_ recommends you observe the following standard when you set up y
 
 >[!WARNING]
 >
->Adobe Commerce and Magento Open Source currently use `CREATE TEMPORARY TABLE` statements inside transactions, which are [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) with database implementations use GTID-based replication, such as [Google Cloud SQL second-generation instances](https://cloud.google.com/sql/docs/features#differences). Consider MySQL for Cloud SQL 8.0 as an alternative.
+>Adobe Commerce currently uses `CREATE TEMPORARY TABLE` statements inside transactions, which are [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) with database implementations use GTID-based replication, such as [Google Cloud SQL second-generation instances](https://cloud.google.com/sql/docs/features#differences). Consider MySQL for Cloud SQL 8.0 as an alternative.
 
 >[!NOTE]
 >
@@ -194,7 +194,4 @@ To configure a MySQL database instance:
 >
 >For Adobe Commerce on cloud infrastructure projects, the `explicit_defaults_for_timestamp` setting for MySQL (MariaDB) defaults to _OFF_.
 
-Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. To speed up reindexing, we recommend setting these MariaDB configuration parameters:
-
-*  optimizer_switch='rowid_filter=off'
-*  optimizer_use_condition_selectivity = 1
+{{$include /help/_includes/maria-db-config.md}}

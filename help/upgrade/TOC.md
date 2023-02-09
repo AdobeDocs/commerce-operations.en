@@ -46,4 +46,4 @@ user-guide-description: Learn why upgrading your Adobe Commerce application is s
 - Resources {#resources}
   - [Recommended reading](resources/recommended-reading.md)
   - [Modernizing your platform with Adobe Commerce](resources/recommended-upgrade-paths.md)
-  - [Upgrade plan checklist](https://support.magento.com/hc/en-us/articles/360057968951)
+- [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

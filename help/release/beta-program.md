@@ -7,8 +7,11 @@ description: Learn about the Adobe Commerce beta program and how to participate.
 
 Welcome to the Adobe Commerce Beta Program and thank you for your interest in participating.
 
-This program is available to all Adobe Commerce partners and customers.
-To sign up for the Beta program, read and follow the steps outlined below.
+This program is available to all Adobe Commerce partners and customers. To sign up for the Beta program, read and follow the steps outlined below.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce 2.4.6 is the last release that this program supports. Beginning in June 2023 and going forward, Adobe will release public betas for Adobe Commerce and Magento Open Source. See the [release schedule](schedule.md) for a list of public beta release dates.
 
 ## Why participate
 
