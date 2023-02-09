@@ -60,3 +60,4 @@ user-guide-description: Learn how to install Adobe Commerce and Magento Open Sou
     - [Uninstall or reinstall Commerce](tutorials/uninstall.md)
     - [Uninstall themes](tutorials/themes.md)
     - [Upgrade the database schema](tutorials/database-upgrade.md)
+- [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
