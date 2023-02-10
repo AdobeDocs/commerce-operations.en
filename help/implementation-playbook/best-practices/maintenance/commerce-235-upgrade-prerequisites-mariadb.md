@@ -6,11 +6,11 @@ feature-set: Commerce
 feature: Best Practices
 ---
 
-# Adobe Commerce 2.3.5 upgrade prerequisites
+# Upgrade prerequisites for MariaDB
 
-This article explains how to prepare your Adobe Commerce database. If you are upgrading from version 2.3.4 (or earlier) to any newer version, you will likely have to perform these changes.
+Upgrading from Adobe Commerce 2.3.4 or earlier to any newer version requires upgrading the MariaDB service on the cloud infrastructure from version 10.0 or 10.2 to version 10.3 or 10.4. MariaDB version 10.3 and later require the database to use the dynamic table row format and Adobe Commerce requires using the InnoDB storage engine for tables. This article explains how to update your database to comply with these MariaDB requirements.
 
-This upgrade requires to upgrade MariaDB on the cloud infrastructure from MariaDB 10.0 to 10.2 to meet requirements for Adobe Commerce version 2.3.5 and later.
+After you prepare the database, submit an Adobe Commerce support ticket to update the MariaDB service version on your cloud infrastructure before proceeding with the Adobe Commerce upgrade process.
 
 ## Affected product and versions
 
