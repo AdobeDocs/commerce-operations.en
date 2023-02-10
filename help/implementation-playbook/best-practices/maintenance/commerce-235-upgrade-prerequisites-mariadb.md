@@ -138,4 +138,4 @@ See [Convert MyISAM tables to InnoDB](../planning/database-on-cloud.md).
 ## Additional information
 
 [Database best practices for Adobe Commerce on cloud infrastructure](../planning/database-on-cloud.md)
-[Updating MariaDB from 10.0 to 12.0 for Adobe Commerce on Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html?lang=en)
+[Updating MariaDB from 10.0 to 12.0 for Adobe Commerce on Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)
