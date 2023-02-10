@@ -133,7 +133,7 @@ The day before the scheduled upgrade to MariaDB version 10.2, verify that all ta
 
 ## Change the storage engine
 
-See [Change MyISAM tables to InnoDB](../planning/database-on-cloud.md).
+See [Convert MyISAM tables to InnoDB](../planning/database-on-cloud.md).
 
 ## Additional information
 
