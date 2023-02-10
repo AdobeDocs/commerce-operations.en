@@ -34,7 +34,6 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 - [Released versions](versions.md)
 - [Features by version](features.md)
 - [Product availability](product-availability.md)
-- [Product roadmap](product-roadmap.md)
 - [Beta program](beta-program.md)
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
