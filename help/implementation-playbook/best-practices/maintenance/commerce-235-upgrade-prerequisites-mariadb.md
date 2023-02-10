@@ -21,7 +21,7 @@ Adobe Commerce on cloud infrastructure with Adobe Commerce version 2.3.4 or earl
 Before the Adobe Commerce Support team begins the upgrade process, prepare your database by converting your database tables:
 
 - Convert the row format from `COMPACT` to `DYNAMIC`
-- Convert the storage engine from `MyISAM` to `InnoDB`
+- Change the storage engine from `MyISAM` to `InnoDB`
 
 Keep the following considerations in mind when you plan and schedule the conversion:
 
@@ -130,6 +130,10 @@ The day before the scheduled upgrade to MariaDB version 10.2, verify that all ta
    ```
 
 1. If any tables have been reverted, repeat the steps to change the table row format and storage engine.
+
+## Change the storage engine
+
+See [Change MyISAM tables to InnoDB](../planning/database-on-cloud.md).
 
 ## Additional information
 
