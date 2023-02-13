@@ -1,11 +1,11 @@
 ---
 title: Complete Prerequisites
-description: Prepare your Adobe Commerce or Magento Open Source project for an upgrade by completing these prerequisite steps.
+description: Prepare your Adobe Commerce project for an upgrade by completing these prerequisite steps.
 ---
 
 # Complete upgrade prerequisites
 
-It is important to understand what is necessary to run Adobe Commerce or Magento Open Source. You must first review the [system requirements](../../installation/system-requirements.md) for the version you are planning to upgrade to.
+It is important to understand what is necessary to run Adobe Commerce. You must first review the [system requirements](../../installation/system-requirements.md) for the version you are planning to upgrade to.
 
 After reviewing system requirements, you must complete the following prerequisites before upgrading your system:
 
@@ -21,7 +21,7 @@ After reviewing system requirements, you must complete the following prerequisit
 
 ## Update all software
 
-The [system requirements](../../installation/system-requirements.md) describe exactly which versions of third-party software have been tested with Adobe Commerce and Magento Open Source releases.
+The [system requirements](../../installation/system-requirements.md) describe exactly which versions of third-party software have been tested with Adobe Commerce releases.
 
 Ensure that you updated all system requirements and dependencies in your environment. See PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), and [required PHP settings](../../installation/prerequisites/php-settings.md#php-settings).
 
@@ -31,7 +31,7 @@ Ensure that you updated all system requirements and dependencies in your environ
 
 ## Verify that a supported search engine is installed
 
-Adobe Commerce and Magento Open Source require Elasticsearch or OpenSearch to be installed in order to use the software.
+Adobe Commerce requires Elasticsearch or OpenSearch to be installed in order to use the software.
 
 **If you are upgrading from 2.3.x to 2.4**, you must check whether you are using MySQL, Elasticsearch, or a third-party extension as your catalog search engine in your 2.3.x instance. The result determines what you must do _before_ upgrading to 2.4.
 
@@ -70,7 +70,7 @@ Elasticsearch requires Java Development Kit (JDK) 1.8 or higher. See [Install th
 
 #### OpenSearch
 
-OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce and Magento Open Source introduce support for OpenSearch:
+OpenSearch is an open-source fork of Elasticsearch 7.10.2, following Elasticsearch's licensing change. The following releases of Adobe Commerce introduces support for OpenSearch:
 
 * 2.4.6 (OpenSearch has a separate module and settings)
 * 2.4.5
@@ -86,14 +86,9 @@ OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Developmen
 
 #### Upgrade Elasticsearch
 
-Support for Elasticsearch 8.x was introduced in Adobe Commerce and Magento Open Source 2.4.6. The following instructions show an example of upgrading Elasticsearch from 7.x to 8.x:
+Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The following instructions show an example of upgrading Elasticsearch from 7.x to 8.x:
 
 1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
-1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies:
-
-   ```bash
-   composer update elasticsearch/elasticsearch
-   ```
 
 1. Enable the `id_field_data` field by adding the following configuration to your `elasticsearch.yml` file and restarting the Elasticsearch 8.x service. 
 
@@ -105,25 +100,69 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce and Magento Open 
 
    >[!INFO]
    >
-   >To support Elasticsearch 8.x, Adobe Commerce and Magento Open Source 2.4.6 disallows the `indices.id_field_data` property by default and uses the `_id` field in the `docvalue_fields` property.
+   >To support Elasticsearch 8.x, Adobe Commerce 2.4.6 disallows the `indices.id_field_data` property by default and uses the `_id` field in the `docvalue_fields` property.
 
-1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) to complete the upgrade.
+1. In the root directory of your Adobe Commerce project, update your Composer dependencies to remove the `Magento_Elasticsearch7` module and install the `Magento_Elasticsearch8` module.
+
+   ```bash
+   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   ```
+
+1. Update your project components.
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in the [!DNL Admin].
+
+1. Reindex the catalog index.
+
+   ```bash
+   bin/magento indexer:reindex catalogsearch_fulltext
+   ```
+
+1. Delete all items from the enabled cache types.
+
+   ```bash
+   bin/magento cache:clean
+   ```
 
 #### Downgrade Elasticsearch
 
-If you inadvertently upgrade the version of Elasticsearch on your server or determine that you need to downgrade for any other reason, you must also update your Adobe Commerce project dependencies.
+If you inadvertently upgrade the version of Elasticsearch on your server or determine that you need to downgrade for any other reason, you must also update your Adobe Commerce project dependencies. For example, to downgrade from Elasticsearch 8.x to 7.x
 
-1. In the root directory of your Adobe Commerce or Magento Open Source project, update your Composer dependencies. For example, to downgrade from Elasticsearch 8.x to 7.x:
+1. Downgrade the Elasticsearch 8.x server to 7.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. In the root directory of your Adobe Commerce project, update your Composer dependencies to remove the `Magento_Elasticsearch8` module and its Composer dependencies and install the `Magento_Elasticsearch7` module.
 
    ```bash
-   composer update elasticsearch/elasticsearch:^7
+   composer remove magento/module-elasticsearch-8
    ```
 
-1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) to complete the downgrade.
+1. Update your project components.
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [Configure Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) in the [!DNL Admin].
+
+1. Reindex the catalog index.
+
+   ```bash
+   bin/magento indexer:reindex catalogsearch_fulltext
+   ```
+
+1. Delete all items from the enabled cache types.
+
+   ```bash
+   bin/magento cache:clean
+   ```
 
 ### Third-party extensions
 
-We recommend that you contact your search engine vendor to determine whether your extension is fully compatible with 2.4.
+We recommend that you contact your search engine vendor to determine whether your extension is fully compatible with an Adobe Commerce release.
 
 ## Convert database table format
 
@@ -162,7 +201,7 @@ To set the value in your Bash shell:
 
 ## Verify that cron jobs are running
 
-The UNIX task scheduler `cron` is critical to day-to-day Adobe Commerce and Magento Open Source operations. It schedules things like reindexing, newsletters, e-mails, and sitemaps. Several features require at least one cron job running as the file system owner.
+The UNIX task scheduler `cron` is critical to day-to-day Adobe Commerce operations. It schedules things like reindexing, newsletters, e-mails, and sitemaps. Several features require at least one cron job running as the file system owner.
 
 To verify that your cron job is set up properly, check the crontab by entering the following command as the file system owner:
 
@@ -231,7 +270,7 @@ To set the environment variable:
 
 ## Verify file system permissions
 
-For security reasons, Adobe Commerce and Magento Open Source require certain permissions on the file system. Permissions are different from _[ownership](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Ownership determines who can perform actions on the file system; permissions determine what the user can do.
+For security reasons, Adobe Commerce requires certain permissions on the file system. Permissions are different from _[ownership](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Ownership determines who can perform actions on the file system; permissions determine what the user can do.
 
 Directories in the file system must be writable by the [file system owner's](../../installation/prerequisites/file-system/overview.md) group.
 
@@ -292,7 +331,7 @@ To get more detailed information, you can enter the following command:
 ls -la /var/www/html/magento2/pub
 ```
 
-Because Adobe Commerce and Magento Open Source deploy static file assets to subdirectories of `pub`, it's a good idea to verify permissions and ownership there as well.
+Because Adobe Commerce deploys static file assets to subdirectories of `pub`, it's a good idea to verify permissions and ownership there as well.
 
 For more information, see [File system permissions and ownership](../../installation/prerequisites/file-system/overview.md).
 
