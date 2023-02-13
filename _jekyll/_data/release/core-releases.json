@@ -1,46 +1,62 @@
 {
-    "2.4.4-2.4.6": {
+    "2.4.6": {
+        "releases": [
+            {
+                "publishedAt":"2023-03-14T12:05:25Z",
+                "tagName":"2.4.6",
+                "releaseNotes": {
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html"
+                }
+
+            }
+        ],
+        "end-of-support": "2026-03-14"
+    },
+    "2.4.5": {
         "releases": [
             {
                 "publishedAt": "2022-10-11T11:50:56Z",
                 "tagName": "2.4.5-p1",
                 "releaseNotes": {
-                    "common": "https://devdocs.magento.com/guides/v2.4/release-notes/2-4-5-p1.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p1.html"
                 }
             },
             {
                 "publishedAt":"2022-08-09T12:05:25Z",
                 "tagName":"2.4.5",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-5.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-5.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html"
                 }
 
-            },
+            }
+        ],
+        "end-of-support": "2025-08-09"
+    },
+    "2.4.4": {
+        "releases": [
             {
                 "publishedAt": "2022-10-11T11:51:33Z",
                 "tagName": "2.4.4-p2",
                 "releaseNotes": {
-                    "common": "https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p2.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p2.html"
                 }
             },
             {
                 "publishedAt":"2022-08-09T12:06:03Z",
                 "tagName":"2.4.4-p1",
                 "releaseNotes": {
-                    "common": "https://devdocs.magento.com/guides/v2.4/release-notes/2-4-4-p1.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p1.html"
                 }
             },
             {
                 "publishedAt": "2022-04-12T14:09:01Z",
                 "tagName": "2.4.4",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-4.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-4.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html"
                 }
             }
         ],
-        "end-of-support": "2024-11-25"
+        "end-of-support": "2025-04-12"
     },
     "2.4.0-2.4.3": {
         "releases": [
@@ -48,36 +64,34 @@
                 "publishedAt":"2022-08-09T12:06:46Z",
                 "tagName":"2.4.3-p3",
                 "releaseNotes": {
-                    "common": "https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p3.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p3.html"
                 }
             },
             {
                 "publishedAt": "2022-04-12T14:08:56Z",
                 "tagName": "2.4.3-p2",
                 "releaseNotes": {
-                    "common": "https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p2.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p2.html"
                 }
             },
             {
                 "publishedAt": "2021-10-12T14:41:27Z",
                 "tagName": "2.4.3-p1",
                 "releaseNotes": {
-                    "common": "https://devdocs.magento.com/guides/v2.4/release-notes/2-4-3-p1.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p1.html"
                 }
             },
             {
                 "publishedAt": "2021-08-10T16:44:14Z",
                 "tagName": "2.4.3",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-3.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-3.html"
-                }
+                    "commerce": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-3.html"                }
             },
             {
                 "publishedAt": "2021-08-10T16:44:09Z",
                 "tagName": "2.4.2-p2",
                 "releaseNotes": {
-                    "common": "https://devdocs.magento.com/guides/v2.4/release-notes/2-4-2-p2.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-2-p2.html"
                 }
             },
             {
@@ -88,8 +102,7 @@
                 "publishedAt":"2021-02-09T18:05:14Z",
                 "tagName":"2.4.2",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-2.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-2.html"
                 }
             },
             {
@@ -100,8 +113,7 @@
                 "publishedAt":"2020-10-15T14:21:36Z",
                 "tagName":"2.4.1",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-1.html"
                 }
             },
             {
@@ -112,8 +124,7 @@
                 "publishedAt":"2020-07-28T14:40:42Z",
                 "tagName":"2.4.0",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.4/release-notes/release-notes-2-4-0-commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.4/release-notes/release-notes-2-4-0-open-source.html"
+                    "common": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-0.html"
                 }
             }
         ],
@@ -153,9 +164,7 @@
                 "publishedAt":"2021-05-11T15:16:04Z",
                 "tagName":"2.3.7",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-7.html"
-                }
+                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html"                }
             },
             {
                 "publishedAt":"2021-02-09T18:05:03Z",
@@ -165,8 +174,7 @@
                 "publishedAt":"2020-10-15T14:20:33Z",
                 "tagName":"2.3.6",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html"
+                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html"
                 }
             },
             {
@@ -185,8 +193,7 @@
                 "publishedAt":"2020-04-28T14:36:19Z",
                 "tagName":"2.3.5",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-open-source.html"
+                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html"
                 }
             },
             {
@@ -197,8 +204,7 @@
                 "publishedAt":"2020-01-28T16:34:02Z",
                 "tagName":"2.3.4",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-open-source.html"
+                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html"
                 }
             },
             {
@@ -209,32 +215,29 @@
                 "publishedAt":"2019-10-08T14:19:13Z",
                 "tagName":"2.3.3",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-open-source.html"
+                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html"
+
                 }
             },
             {
                 "publishedAt":"2019-06-25T14:13:00Z",
                 "tagName":"2.3.2",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2OpenSource.html"
+                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html"
                 }
             },
             {
                 "publishedAt":"2019-03-26T14:43:59Z",
                 "tagName":"2.3.1",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1OpenSource.html"
+                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html"
                 }
             },
             {
                 "publishedAt":"2018-11-28T17:55:38Z",
                 "tagName":"2.3.0",
                 "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0OpenSource.html"
+                    "commerce": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html"
                 }
             }
         ],
@@ -244,99 +247,51 @@
         "releases": [
             {
                 "publishedAt":"2020-01-28T15:20:55Z",
-                "tagName":"2.2.11",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-11-commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-11-open-source.html"
-                }
+                "tagName":"2.2.11"
             },
             {
                 "publishedAt":"2019-10-08T14:14:32Z",
-                "tagName":"2.2.10",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-10-commerce.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/release-notes-2-2-10-open-source.html"
-                }
+                "tagName":"2.2.10"
             },
             {
                 "publishedAt":"2019-06-25T14:06:46Z",
-                "tagName":"2.2.9",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.9EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.9CE.html"
-                }
+                "tagName":"2.2.9"
             },
             {
                 "publishedAt":"2019-03-26T14:05:48Z",
-                "tagName":"2.2.8",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.8EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.8CE.html"
-                }
+                "tagName":"2.2.8"
             },
             {
                 "publishedAt":"2018-11-28T15:58:45Z",
-                "tagName":"2.2.7",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.7CE.html"
-                }
+                "tagName":"2.2.7"
             },
             {
                 "publishedAt":"2018-09-18T13:52:51Z",
-                "tagName":"2.2.6",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.6EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.6CE.html"
-                }
+                "tagName":"2.2.6"
             },
             {
                 "publishedAt":"2018-06-27T14:12:48Z",
-                "tagName":"2.2.5",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5CE.html"
-                }
+                "tagName":"2.2.5"
             },
             {
                 "publishedAt":"2018-05-02T14:07:21Z",
-                "tagName":"2.2.4",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.4EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.4CE.html"
-                }
+                "tagName":"2.2.4"
             },
             {
                 "publishedAt":"2018-02-27T15:04:42Z",
-                "tagName":"2.2.3",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.3EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.3CE.html"
-                }
+                "tagName":"2.2.3"
             },
             {
                 "publishedAt":"2017-12-12T19:18:33Z",
-                "tagName":"2.2.2",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2CE.html"
-                }
+                "tagName":"2.2.2"
             },
             {
                 "publishedAt":"2017-11-07T15:14:24Z",
-                "tagName":"2.2.1",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1CE.html"
-                }
+                "tagName":"2.2.1"
             },
             {
                 "publishedAt":"2017-09-26T19:29:17Z",
-                "tagName":"2.2.0",
-                "releaseNotes": {
-                    "commerce": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.0EE.html",
-                    "opensource": "https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.0CE.html"
-                }
+                "tagName":"2.2.0"
             }
         ],
         "end-of-support": "2019-12-01"
