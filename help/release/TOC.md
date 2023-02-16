@@ -1,6 +1,6 @@
 ---
 user-guide-title: Release information
-user-guide-description: Access all release inforation for Adobe Commerce patches and services in one place.
+user-guide-description: Access all release information for Adobe Commerce patches and services in one place.
 ---
 
 # Release Information {#release}

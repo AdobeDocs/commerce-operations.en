@@ -37,13 +37,13 @@ See the [release schedule](schedule.md) for the list of upcoming public beta rel
 
 ## Benefits of participating
 
-The earlier you see the code that Adobe is developing the sooner you can prepare your technology and merchants for the upcoming upgrade.
+The earlier you see the code that Adobe is developing, the sooner you can prepare your technology and merchants for the upcoming upgrade.
 
 Yes, things may change, but you can start understanding where in the codebase changes are happening and begin preparing sooner than the GA release date.
 
 ## Beta release access
 
-Adobe Commerce beta releases are publicly available and distributed in the same way as any other Adobe Commerce patch release; as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
+Adobe Commerce beta releases are publicly available and distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
 
 See [Composer installation quick start](../installation/composer.md) for more details.
 
@@ -51,6 +51,6 @@ See [Composer installation quick start](../installation/composer.md) for more de
 
 Adobe does not provide the standard Adobe Support Service for beta releases.
 
-To submit feedback related to Adobe commerce beta releases, follow the [issue reporting workflow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2). 
+To submit feedback related to Adobe Commerce beta releases, follow the [issue reporting workflow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2). 
 
 Our internal teams monitor all critical issues reported against the latest beta release and prioritize them so that they can be resolved prior to the GA release date.
