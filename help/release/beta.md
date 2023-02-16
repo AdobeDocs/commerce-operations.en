@@ -1,64 +1,56 @@
 ---
-title: Beta program
-description: Learn about the Adobe Commerce beta program and how to participate.
+title: Beta releases
+description: Learn about the Adobe Commerce beta releases and how to participate.
 ---
 
-# Adobe Commerce beta program
+# Adobe Commerce beta releases
 
-Welcome to the Adobe Commerce Beta Program and thank you for your interest in participating.
-
-This program is available to all Adobe Commerce partners and customers. To sign up for the Beta program, read and follow the steps outlined below.
+Beginning in June 2023 and going forward, Adobe will release public betas for patch releases ("beta releases"). Beta releases are available to all Adobe Commerce customers and Adobe partners prior to general availability (GA) and include security, compliance, performance, and high-priority quality fixes. See the [release schedule](schedule.md) for a list of public beta release dates.
 
 >[!IMPORTANT]
 >
->Adobe Commerce 2.4.6 is the last release that this program supports. Beginning in June 2023 and going forward, Adobe will release public betas for Adobe Commerce and Magento Open Source. See the [release schedule](schedule.md) for a list of public beta release dates.
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify or otherwise support (via Adobe Support Services or otherwise) the beta releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the beta releases and/or any accompanying documentation or materials. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
 
-## Why participate
+## Release contents
 
-1. The earlier you see the code that we are developing the sooner you can prepare your technology and merchants for the upcoming upgrade.
-   
-   Yes, things may change, but you get an understanding where in the codebase changes are happening and start your preparations sooner than the General Availability release date.
+Each Adobe Commerce beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
-1. If you are a [Solution Partner](https://developer.adobe.com/commerce/contributor/community/contribution-programs/) or Technology Partner with Adobe, you can provide valuable feedback to Adobe Developers and help us find and correct issues sooner.
+-  Latest security fixes  
+-  Performance improvements  
+-  GraphQL improvements 
+-  General quality bug fixes  
+-  Community contributions  
+-  Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
-Ready to participate? Follow the steps below.
+## Naming convention and schedule
 
-## Sign the Beta Program Agreement
+Adobe will release beta patches twice a year. The first beta patch is usually released a year prior to the GA release date.
 
-First, we need your company to sign our [Beta Program Agreement](https://experiencecloudpanel.adobe.com/c/a/6hxAOc9DD1vCx2tg1jBKGB).
+Beta release packages have a `-betaX` suffix.
 
-To verify the authenticity of the signature, we ask you to have the Adobe relationship owner, typically the owner of the _primary_ MageID associated with your company, read and sign the document linked above.
-​
-Further instructions while filling out the form:
+For example, the Adobe Commerce 2.4.7 beta release packages use the following naming convention:
 
--  Make sure to use the email associated with the primary MageID.
--  For _Adobe Contact Email_, use `commercebeta@adobe.com` - _We may not receive your request if you do not use this email!_.
+-  `2.4.7-beta1`
+-  `2.4.7-beta2`
 
-## Developer access to GitHub
+See the [release schedule](schedule.md) for the list of upcoming public beta release dates.
 
-Second, for partners to provide feedback and receive important updates about the Beta, we must grant users access to our private GitHub repository.
+## Benefits of participating
 
-If you are already in the Adobe Partner Program, we will give the GitHub users access to our private repository after the Beta Program Agreement is signed. No need to do anything else.
+The earlier you see the code that Adobe is developing the sooner you can prepare your technology and merchants for the upcoming upgrade.
 
-If you are not already in the Adobe Partner Program, you must do the following:
+Yes, things may change, but you can start understanding where in the codebase changes are happening and begin preparing sooner than the GA release date.
 
-1. Make sure all of your contributors have an active GitHub account with two-factor authentication enabled.
-1. Provide a maintainer GitHub username. We provide that user the ability to add additional users associated with the parent company who signed the Beta Program Agreement (`github.com/accountname`).
-1. Contact <commercebeta@adobe.com> from the official partner's company email with the maintainer and ask to join.
+## Beta release access
 
-If you are not a partner, you cannot provide feedback for the 2.4.4 beta. We are working to change this for the next beta release.
+Adobe Commerce beta releases are publicly available and distributed in the same way as any other Adobe Commerce patch release; as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
 
-## Get the Code
+See [Composer installation quick start](../installation/composer.md) for more details.
 
-Third, the pre-production code is released as a Composer metapackage on `https://repo.magento.com`.
+## Issue reporting
 
-See our [release schedule](schedule.md) for the latest information about our upcoming Beta release.
+Adobe does not provide the standard Adobe Support Service for beta releases.
 
-### Instructions to successfully download the Beta code
+To submit feedback related to Adobe commerce beta releases, follow the [issue reporting workflow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2). 
 
--  Use the MageID associated with the Adobe Commerce license or Partner license (same MageID used to sign the Beta Program Agreement).
-   For more information on how to install with Composer, refer to [Quick start install](../installation/composer.md).
-   For troubleshooting access to Beta code, see [Cannot access the latest Beta version](https://support.magento.com/hc/en-us/articles/360048169471).
--  Lastly, we ask partners to provide feedback and comments through the private Beta GitHub repository after installing and using the code.
-
-For more information about this program, refer to our [FAQ](https://fieldreadiness-adobe.highspot.com/items/5e5e6b8fc714332f32a7cd96?lfrm=rhp.0). For additional questions, email us at <commercebeta@adobe.com>.
+Our internal teams monitor all critical issues reported against the latest beta release and prioritize them so that they can be resolved prior to the GA release date.
