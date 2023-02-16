@@ -54,7 +54,7 @@ The following are items that you may want to include in a thorough analysis:
 
 - **Composer packages and dependencies in composer.json that require an update.** 
 
-In addition, partners can participate in the [Adobe Commerce Beta Program](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html) and use pre-release opportunities to get early access to the code for an upcoming release. Getting access to the code early helps developers prepare with enough time to complete the upgrade by the General Availability (GA) date. Beta code is typically released five weeks before the GA date and pre-releases are released two weeks in advance.
+In addition, partners can participate in [Adobe Commerce beta releases](../../release/beta.md) and use pre-release opportunities to get early access to the code for an upcoming release. Getting access to the code early helps developers prepare with enough time to complete the upgrade by the General Availability (GA) date. Beta code is typically released five weeks before the GA date and pre-releases are released two weeks in advance.
 
 ## Development & QA
 
