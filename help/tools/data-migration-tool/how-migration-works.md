@@ -56,14 +56,7 @@ Mapping files are discussed in more detail in [[!DNL Data Migration Tool] Techni
 
 ![Migration Flow](../../assets/data-migration/migration_flow.png)
 
-<!-- Link definitions -->
-[[!DNL Data Migration Tool] Technical Specification]: technical-specification.md
-
-[Migration Modes]: ../../assets/data-migration/MigrationModes2.png
-
-[Migration Overview]: ../../assets/data-migration/MigrationOverview2.png
-
-[Migration Steps]: ../../assets/data-migration/MigrationSteps2.png
+[[!DNL Data Migration Tool] Technical Specification](technical-specification.md)
 
 We are pleased you are considering moving from the world's #1 commerce platform --- Magento 1.x --- to the platform of the future, Magento 2. We are excited to share the details about this process, which we refer to as migration.
 
