@@ -1,8 +1,7 @@
 ---
 title: Varnish ESI block
 description: Learn about Edge Side Includes and how you can use them to embed web pages.
-contributor_name: Goivvy LLC
-contributor_link: https://www.goivvy.com/magento-optimization-service
+badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 ---
 
 # Varnish ESI block

@@ -1,8 +1,7 @@
 ---
 title: Write to custom log file
 description: Learn to set up custom log files.
-contributor_name: Atwix
-contributor_link: https://www.atwix.com/
+badge: label="Contributed by Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 ---
 
 # Write to a custom log file
