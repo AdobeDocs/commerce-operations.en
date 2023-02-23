@@ -1,8 +1,20 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Thu Feb 23 09:48:11 2023
+updated: Thu Feb 23 12:19:04 2023
 entries:
+- description: Updated the [Product Compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+    table with the latest releases from [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=en).
+  versions: 2.4.5
+  type: major-update
+  date: February 23, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/448
+  merge_commit: 6358853d1bbd2b021b755750b1719cf270d98b39
+  contributor: dobooth
+  membership: false
+  labels:
+  - major-update
+  - 2.4.5
 - description: Added [badges metadata](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/use-varnish-esi.html)
     to recognize topics submitted by external contributors.
   versions: ''

@@ -4,6 +4,26 @@
 
 Learn about new documentation and significant updates to existing documentation.
 
+### February 23, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">Product Compatibility</a> table with the latest releases from <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=en">Commerce Services</a>.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6358853d1bbd2b021b755750b1719cf270d98b39">635885</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### February 17, 2023
 
 <table style="table-layout:auto;">
