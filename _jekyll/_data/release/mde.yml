@@ -421,14 +421,46 @@ extensions:
           2.3.0: supported
   - name: Catalog Service
     versions:
+      - name: 1.4
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
+      - name: 1.3
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
       - name: 1.1
         support:
           2.4.5: supported
           2.4.4: supported
-          2.4.3: supported
-          2.4.2: supported
-          2.4.1: supported
-          2.4.0: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
           2.3.7: not supported
           2.3.6: not supported
           2.3.5-p1: not supported
@@ -441,10 +473,10 @@ extensions:
         support:
           2.4.5: supported
           2.4.4: supported
-          2.4.3: supported
-          2.4.2: supported
-          2.4.1: supported
-          2.4.0: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
           2.3.7: not supported
           2.3.6: not supported
           2.3.5-p1: not supported
@@ -715,14 +747,46 @@ extensions:
           2.3.0: supported
   - name: Live Search
     versions:
+      - name: 2.0.5
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
+      - name: 2.0.4
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
       - name: 2.0.3
         support:
           2.4.5: supported
           2.4.4: supported
-          2.4.3: supported
-          2.4.2: supported
-          2.4.1: supported
-          2.4.0: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
           2.3.7: not supported
           2.3.6: not supported
           2.3.5-p1: not supported
@@ -735,10 +799,10 @@ extensions:
         support:
           2.4.5: supported
           2.4.4: supported
-          2.4.3: supported
-          2.4.2: supported
-          2.4.1: supported
-          2.4.0: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
           2.3.7: not supported
           2.3.6: not supported
           2.3.5-p1: not supported
@@ -1217,14 +1281,94 @@ extensions:
           2.3.0: not supported
   - name: Quick Checkout
     versions:
+      - name: 1.7.0
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: compatible
+          2.4.2: compatible
+          2.4.1: compatible
+          2.4.0: compatible
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
+      - name: 1.6.0
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: compatible
+          2.4.2: compatible
+          2.4.1: compatible
+          2.4.0: compatible
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
+      - name: 1.5.0
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: compatible
+          2.4.2: compatible
+          2.4.1: compatible
+          2.4.0: compatible
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
+      - name: 1.4.0
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: compatible
+          2.4.2: compatible
+          2.4.1: compatible
+          2.4.0: compatible
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
+      - name: 1.3.0
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: compatible
+          2.4.2: compatible
+          2.4.1: compatible
+          2.4.0: compatible
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
       - name: 1.2.0
         support:
           2.4.5: supported
           2.4.4: supported
-          2.4.3: supported
-          2.4.2: supported
-          2.4.1: supported
-          2.4.0: not supported
+          2.4.3: compatible
+          2.4.2: compatible
+          2.4.1: compatible
+          2.4.0: compatible
           2.3.7: not supported
           2.3.6: not supported
           2.3.5-p1: not supported
@@ -1285,22 +1429,38 @@ extensions:
           2.3.0: not supported
   - name: Product Recommendations
     versions:
+      - name: 4.0.1
+        support:
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
       - name: 4.0.0
         support:
           2.4.5: supported
           2.4.4: supported
-          2.4.3: supported
-          2.4.2: supported
-          2.4.1: supported
-          2.4.0: supported
-          2.3.7: supported
-          2.3.6: supported
-          2.3.5-p1: supported
-          2.3.4: supported
-          2.3.3: supported
-          2.3.2: supported
-          2.3.1: supported
-          2.3.0: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+          2.3.6: not supported
+          2.3.5-p1: not supported
+          2.3.4: not supported
+          2.3.3: not supported
+          2.3.2: not supported
+          2.3.1: not supported
+          2.3.0: not supported
       - name: 3.3.7
         support:
           2.4.5: compatible
