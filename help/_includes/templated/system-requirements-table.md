@@ -116,7 +116,7 @@
     <tr>
       <td><span class="uicontrol">OpenSearch</span></td>
       <td>
-            2.3
+            2.5
       </td>
       <td>
             1.2

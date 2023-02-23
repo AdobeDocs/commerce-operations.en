@@ -2,7 +2,7 @@
 2.4.6:
   Composer: '2.4'
   Elasticsearch: '8.4'
-  OpenSearch: '2.3'
+  OpenSearch: '2.5'
   MariaDB: '10.6'
   MySQL: '8.0'
   PHP: '8.1'
