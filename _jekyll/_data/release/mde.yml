@@ -763,7 +763,7 @@ extensions:
           2.3.2: not supported
           2.3.1: not supported
           2.3.0: not supported
-       - name: 2.0.4
+      - name: 2.0.4
         support:
           2.4.5: supported
           2.4.4: supported
@@ -779,7 +779,7 @@ extensions:
           2.3.2: not supported
           2.3.1: not supported
           2.3.0: not supported
-       - name: 2.0.3
+      - name: 2.0.3
         support:
           2.4.5: supported
           2.4.4: supported
