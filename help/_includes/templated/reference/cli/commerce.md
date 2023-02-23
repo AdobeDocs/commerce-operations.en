@@ -1044,7 +1044,7 @@ The activity ID. Defaults to the most recent cancellable activity.
 
 ### `--type`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. &apos;%var%&apos; to select variable-related activities.
+Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
@@ -1167,7 +1167,7 @@ The property to view
 
 ### `--type`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. &apos;%var%&apos; to select variable-related activities.
+Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
@@ -1336,7 +1336,7 @@ act
 
 ### `--type`, `-t`
 
-Filter activities by type If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. &apos;%var%&apos; to select variable-related activities.
+Filter activities by type If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
@@ -1528,7 +1528,7 @@ Display a timestamp next to each message
 
 ### `--type`
 
-Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. &apos;%var%&apos; to select variable-related activities.
+Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
@@ -2784,7 +2784,7 @@ magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--
 
 ### `--routing-percentage`
 
-Set the latest version&apos;s routing percentage
+Set the latest version's routing percentage
    
 -  Default: `100`
 -  Requires a value
@@ -2881,7 +2881,7 @@ magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p
 
 ### `--routing-percentage`, `-%`
 
-Set the latest version&apos;s routing percentage
+Set the latest version's routing percentage
    
 -  Default: `100`
 -  Requires a value
@@ -4958,7 +4958,7 @@ Create the new environment even if the branch cannot be checked out locally
 
 ### `--no-clone-parent`
 
-Do not clone the parent branch&apos;s data
+Do not clone the parent branch's data
    
 -  Default: `false`
 -  Does not accept a value
@@ -5156,7 +5156,7 @@ Do not output any message
 
 ## `environment:curl`
 
-Run an authenticated cURL request on an environment&apos;s API
+Run an authenticated cURL request on an environment's API
 
 ```bash
 magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
@@ -6044,7 +6044,7 @@ Do not output any message
 
 ## `environment:logs`
 
-Read an environment&apos;s logs
+Read an environment's logs
 
 ```bash
 magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
@@ -6371,7 +6371,7 @@ Set the environment type (only used with --activate )
 
 ### `--no-clone-parent`
 
-Do not clone the parent branch&apos;s data (only used with --activate)
+Do not clone the parent branch's data (only used with --activate)
    
 -  Default: `false`
 -  Does not accept a value
@@ -6589,7 +6589,7 @@ Do not output any message
 
 ## `environment:relationships`
 
-Show an environment&apos;s relationships
+Show an environment's relationships
 
 ```bash
 magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
@@ -7076,7 +7076,7 @@ Do not output any message
 
 ## `environment:synchronize`
 
-Synchronize an environment&apos;s code and/or data from its parent
+Synchronize an environment's code and/or data from its parent
 
 ```bash
 magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
@@ -7881,7 +7881,7 @@ magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username US
 
 ### `--type`
 
-The integration type (&apos;bitbucket&apos;, &apos;bitbucket_server&apos;, &apos;github&apos;, &apos;gitlab&apos;, &apos;webhook&apos;, &apos;health.email&apos;, &apos;health.pagerduty&apos;, &apos;health.slack&apos;, &apos;health.webhook&apos;, &apos;script&apos;, &apos;newrelic&apos;, &apos;splunk&apos;, &apos;sumologic&apos;, &apos;syslog&apos;)
+The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script', 'newrelic', 'splunk', 'sumologic', 'syslog')
    
 -  Requires a value
 
@@ -7923,13 +7923,13 @@ The New Relic Logs license key
 
 ### `--server-project`
 
-The project (e.g. &apos;namespace/repo&apos;)
+The project (e.g. 'namespace/repo')
    
 -  Requires a value
 
 ### `--repository`
 
-The repository to track (e.g. &apos;owner/repository&apos;)
+The repository to track (e.g. 'owner/repository')
    
 -  Requires a value
 
@@ -7977,7 +7977,7 @@ GitLab: clone data for merge requests
 
 ### `--pull-requests-clone-parent-data`
 
-Clone the parent environment&apos;s data for pull requests
+Clone the parent environment's data for pull requests
    
 -  Default: `true`
 -  Requires a value
@@ -8094,7 +8094,7 @@ The Splunk event source type
 
 ### `--protocol`
 
-Syslog transport protocol (&apos;tcp&apos;, &apos;udp&apos;, &apos;tls&apos;)
+Syslog transport protocol ('tcp', 'udp', 'tls')
    
 -  Default: `tls`
 -  Requires a value
@@ -8120,14 +8120,14 @@ Syslog facility
 
 ### `--message-format`
 
-Syslog message format (&apos;rfc3164&apos; or &apos;rfc5424&apos;)
+Syslog message format ('rfc3164' or 'rfc5424')
    
 -  Default: `rfc5424`
 -  Requires a value
 
 ### `--auth-mode`
 
-Authentication mode (&apos;prefix&apos; or &apos;structured_data&apos;)
+Authentication mode ('prefix' or 'structured_data')
    
 -  Default: `prefix`
 -  Requires a value
@@ -8582,7 +8582,7 @@ The ID of the integration to update
 
 ### `--type`
 
-The integration type (&apos;bitbucket&apos;, &apos;bitbucket_server&apos;, &apos;github&apos;, &apos;gitlab&apos;, &apos;webhook&apos;, &apos;health.email&apos;, &apos;health.pagerduty&apos;, &apos;health.slack&apos;, &apos;health.webhook&apos;, &apos;script&apos;, &apos;newrelic&apos;, &apos;splunk&apos;, &apos;sumologic&apos;, &apos;syslog&apos;)
+The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script', 'newrelic', 'splunk', 'sumologic', 'syslog')
    
 -  Requires a value
 
@@ -8624,13 +8624,13 @@ The New Relic Logs license key
 
 ### `--server-project`
 
-The project (e.g. &apos;namespace/repo&apos;)
+The project (e.g. 'namespace/repo')
    
 -  Requires a value
 
 ### `--repository`
 
-The repository to track (e.g. &apos;owner/repository&apos;)
+The repository to track (e.g. 'owner/repository')
    
 -  Requires a value
 
@@ -8678,7 +8678,7 @@ GitLab: clone data for merge requests
 
 ### `--pull-requests-clone-parent-data`
 
-Clone the parent environment&apos;s data for pull requests
+Clone the parent environment's data for pull requests
    
 -  Default: `true`
 -  Requires a value
@@ -8795,7 +8795,7 @@ The Splunk event source type
 
 ### `--protocol`
 
-Syslog transport protocol (&apos;tcp&apos;, &apos;udp&apos;, &apos;tls&apos;)
+Syslog transport protocol ('tcp', 'udp', 'tls')
    
 -  Default: `tls`
 -  Requires a value
@@ -8821,14 +8821,14 @@ Syslog facility
 
 ### `--message-format`
 
-Syslog message format (&apos;rfc3164&apos; or &apos;rfc5424&apos;)
+Syslog message format ('rfc3164' or 'rfc5424')
    
 -  Default: `rfc5424`
 -  Requires a value
 
 ### `--auth-mode`
 
-Authentication mode (&apos;prefix&apos; or &apos;structured_data&apos;)
+Authentication mode ('prefix' or 'structured_data')
    
 -  Default: `prefix`
 -  Requires a value
@@ -9328,7 +9328,7 @@ dir
 
 ### `subdir`
 
-The subdirectory to find (&apos;local&apos;, &apos;web&apos; or &apos;shared&apos;)
+The subdirectory to find ('local', 'web' or 'shared')
    
 
 ### `--help`, `-h`
@@ -9591,7 +9591,7 @@ The directory to which files will be downloaded. If --all is used, the mount pat
 
 ### `--source-path`
 
-Use the mount&apos;s source path (rather than the mount path) as a subdirectory of the target, when --all is used
+Use the mount's source path (rather than the mount path) as a subdirectory of the target, when --all is used
    
 -  Default: `false`
 -  Does not accept a value
@@ -10183,7 +10183,7 @@ Do not output any message
 
 ## `project:clear-build-cache`
 
-Clear a project&apos;s build cache
+Clear a project's build cache
 
 ```bash
 magento-cloud project:clear-build-cache [-p|--project PROJECT]
@@ -10267,7 +10267,7 @@ Do not output any message
 
 ## `project:curl`
 
-Run an authenticated cURL request on a project&apos;s API
+Run an authenticated cURL request on a project's API
 
 ```bash
 magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
@@ -11655,7 +11655,7 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `route`
 
-The route&apos;s original URL
+The route's original URL
    
 
 ### `--id`
@@ -13371,7 +13371,7 @@ The name of the snapshot. Defaults to the most recent one
 
 ### `--target`
 
-The environment to restore to. Defaults to the snapshot&apos;s current environment
+The environment to restore to. Defaults to the snapshot's current environment
    
 -  Requires a value
 
@@ -14533,7 +14533,7 @@ Do not output any message
 
 ## `tunnel:open`
 
-Open SSH tunnels to an app&apos;s relationships
+Open SSH tunnels to an app's relationships
 
 ```bash
 magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
@@ -14772,12 +14772,12 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [-
 
 ### `email`
 
-The user&apos;s email address
+The user's email address
    
 
 ### `--role`, `-r`
 
-The user&apos;s project role (&apos;admin&apos; or &apos;viewer&apos;) or environment type role (e.g. &apos;staging:contributor&apos; or &apos;production:viewer&apos;). To remove a user from an environment type, set the role as &apos;none&apos;. The % character can be used as a wildcard for the environment type, e.g. &apos;%:viewer&apos; to give the user the &apos;viewer&apos; role on all types. The role can be abbreviated, e.g. &apos;production:v&apos;.
+The user's project role ('admin' or 'viewer') or environment type role (e.g. 'staging:contributor' or 'production:viewer'). To remove a user from an environment type, set the role as 'none'. The % character can be used as a wildcard for the environment type, e.g. '%:viewer' to give the user the 'viewer' role on all types. The role can be abbreviated, e.g. 'production:v'.
    
 -  Default: `[]`
 -  Requires a value
@@ -14883,7 +14883,7 @@ magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <e
 
 ### `email`
 
-The user&apos;s email address
+The user's email address
    
 -  Required
 
@@ -14979,7 +14979,7 @@ Do not output any message
 
 ## `user:get`
 
-View a user&apos;s role(s)
+View a user's role(s)
 
 ```bash
 magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
@@ -14993,12 +14993,12 @@ user:role
 
 ### `email`
 
-The user&apos;s email address
+The user's email address
    
 
 ### `--level`, `-l`
 
-The role level (&apos;project&apos; or &apos;environment&apos;)
+The role level ('project' or 'environment')
    
 -  Requires a value
 
@@ -15043,7 +15043,7 @@ Wait for the operation to complete (default)
 
 ### `--role`, `-r`
 
-[Deprecated: use user:update to change a user&apos;s role(s)]
+[Deprecated: use user:update to change a user's role(s)]
    
 -  Requires a value
 
@@ -15232,12 +15232,12 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait]
 
 ### `email`
 
-The user&apos;s email address
+The user's email address
    
 
 ### `--role`, `-r`
 
-The user&apos;s project role (&apos;admin&apos; or &apos;viewer&apos;) or environment type role (e.g. &apos;staging:contributor&apos; or &apos;production:viewer&apos;). To remove a user from an environment type, set the role as &apos;none&apos;. The % character can be used as a wildcard for the environment type, e.g. &apos;%:viewer&apos; to give the user the &apos;viewer&apos; role on all types. The role can be abbreviated, e.g. &apos;production:v&apos;.
+The user's project role ('admin' or 'viewer') or environment type role (e.g. 'staging:contributor' or 'production:viewer'). To remove a user from an environment type, set the role as 'none'. The % character can be used as a wildcard for the environment type, e.g. '%:viewer' to give the user the 'viewer' role on all types. The role can be abbreviated, e.g. 'production:v'.
    
 -  Default: `[]`
 -  Requires a value
@@ -15348,7 +15348,7 @@ The variable name
 
 ### `--level`, `-l`
 
-The level at which to set the variable (&apos;project&apos; or &apos;environment&apos;)
+The level at which to set the variable ('project' or 'environment')
    
 -  Requires a value
 
@@ -15360,7 +15360,7 @@ The variable name
 
 ### `--value`
 
-The variable&apos;s value
+The variable's value
    
 -  Requires a value
 
@@ -15380,7 +15380,7 @@ Whether the variable is sensitive
 
 ### `--prefix`
 
-The variable name&apos;s prefix (e.g. &apos;none&apos; or &apos;env:&apos;)
+The variable name's prefix (e.g. 'none' or 'env:')
    
 -  Default: `none`
 -  Requires a value
@@ -15525,7 +15525,7 @@ The variable name
 
 ### `--level`, `-l`
 
-The variable level (&apos;project&apos;, &apos;environment&apos;, &apos;p&apos; or &apos;e&apos;)
+The variable level ('project', 'environment', 'p' or 'e')
    
 -  Requires a value
 
@@ -15874,7 +15874,7 @@ View a single variable property
 
 ### `--level`, `-l`
 
-The variable level (&apos;project&apos;, &apos;environment&apos;, &apos;p&apos; or &apos;e&apos;)
+The variable level ('project', 'environment', 'p' or 'e')
    
 -  Requires a value
 
@@ -16008,7 +16008,7 @@ var
 
 ### `--level`, `-l`
 
-The variable level (&apos;project&apos;, &apos;environment&apos;, &apos;p&apos; or &apos;e&apos;)
+The variable level ('project', 'environment', 'p' or 'e')
    
 -  Requires a value
 
@@ -16268,13 +16268,13 @@ The variable name
 
 ### `--level`, `-l`
 
-The variable level (&apos;project&apos;, &apos;environment&apos;, &apos;p&apos; or &apos;e&apos;)
+The variable level ('project', 'environment', 'p' or 'e')
    
 -  Requires a value
 
 ### `--value`
 
-The variable&apos;s value
+The variable's value
    
 -  Requires a value
 
