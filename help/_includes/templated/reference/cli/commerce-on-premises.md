@@ -1386,7 +1386,7 @@ Enable interactive mode to set all sensitive variables
 
 ### `--scope`
 
-Scope for configuration, if not set use 'default'
+Scope for configuration, if not set use &apos;default&apos;
    
 -  Default: `default`
 -  Accepts a value
@@ -1478,7 +1478,7 @@ Configuration scope (default, website, or store)
 
 ### `--scope-code`
 
-Scope code (required only if scope is not 'default')
+Scope code (required only if scope is not &apos;default&apos;)
    
 -  Requires a value
 
@@ -1569,7 +1569,7 @@ Configuration path, for example section_id/group_id/field_id
 
 ### `--scope`
 
-Scope for configuration, if not specified, then 'default' scope will be used
+Scope for configuration, if not specified, then &apos;default&apos; scope will be used
    
 -  Default: `default`
 -  Accepts a value
@@ -1833,7 +1833,7 @@ Do not ask any interactive question
 
 ## `customer:hash:upgrade`
 
-Upgrade customer's hash according to the latest algorithm
+Upgrade customer&apos;s hash according to the latest algorithm
 
 ```bash
 bin/magento customer:hash:upgrade
@@ -2746,7 +2746,7 @@ Type of test to run. Available types: all, unit, integration, integration-all, s
 
 ### `--arguments`, `-c`
 
-Additional arguments for PHPUnit. Example: &quot;-c'--filter=MyTest'&quot; (no spaces)
+Additional arguments for PHPUnit. Example: &quot;-c&apos;--filter=MyTest&apos;&quot; (no spaces)
    
 -  Default: ``
 -  Requires a value
@@ -4782,7 +4782,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--ip`
 
-Allowed IP addresses (use 'none' to clear allowed IP list)
+Allowed IP addresses (use &apos;none&apos; to clear allowed IP list)
    
 -  Default: `[]`
 -  Requires a value
@@ -4853,7 +4853,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--ip`
 
-Allowed IP addresses (use 'none' to clear allowed IP list)
+Allowed IP addresses (use &apos;none&apos; to clear allowed IP list)
    
 -  Default: `[]`
 -  Requires a value
@@ -5096,7 +5096,7 @@ Do not ask any interactive question
 
 ## `module:config:status`
 
-Checks the modules configuration in the 'app/etc/config.php' file and reports if they are up to date or not
+Checks the modules configuration in the &apos;app/etc/config.php&apos; file and reports if they are up to date or not
 
 ```bash
 bin/magento module:config:status
@@ -6572,7 +6572,7 @@ Should consumers wait for a message from the queue? 1 - Yes, 0 - No
 
 ### `--queue-default-connection`
 
-Message queues default connection. Can be 'db', 'amqp' or a custom queue system.The queue system must be installed and configured, otherwise messages won't be processed correctly.
+Message queues default connection. Can be &apos;db&apos;, &apos;amqp&apos; or a custom queue system.The queue system must be installed and configured, otherwise messages won&apos;t be processed correctly.
    
 -  Requires a value
 
@@ -7873,7 +7873,7 @@ Should consumers wait for a message from the queue? 1 - Yes, 0 - No
 
 ### `--queue-default-connection`
 
-Message queues default connection. Can be 'db', 'amqp' or a custom queue system.The queue system must be installed and configured, otherwise messages won't be processed correctly.
+Message queues default connection. Can be &apos;db&apos;, &apos;amqp&apos; or a custom queue system.The queue system must be installed and configured, otherwise messages won&apos;t be processed correctly.
    
 -  Requires a value
 
