@@ -1,8 +1,77 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Feb 6 10:17:17 2023
+updated: Thu Feb 23 12:19:04 2023
 entries:
+- description: Updated the [Product Compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+    table with the latest releases from [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=en).
+  versions: 2.4.5
+  type: major-update
+  date: February 23, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/448
+  merge_commit: 6358853d1bbd2b021b755750b1719cf270d98b39
+  contributor: dobooth
+  membership: false
+  labels:
+  - major-update
+  - 2.4.5
+- description: Added [badges metadata](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/use-varnish-esi.html)
+    to recognize topics submitted by external contributors.
+  versions: ''
+  type: major-update
+  date: February 17, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/422
+  merge_commit: 93fcef7b8c3dd152362978412929b9f1912eb3a9
+  contributor: jmatthew
+  membership: false
+  labels:
+  - enhancement
+  - major-update
+- description: Updated the [compatibility table](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html#compatibility)
+    for the Payment Services 1.6.0 release.
+  versions: ''
+  type: major-update
+  date: February 17, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/444
+  merge_commit: b0ccab209113308c2be79197247a43805d85e269
+  contributor: spangler
+  membership: false
+  labels:
+  - major-update
+- description: Updated the [magento-cloud CLI reference](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
+    documentation after the v1.42.0 release.
+  versions: ''
+  type: major-update
+  date: February 15, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/439
+  merge_commit: bd61e9766656df422ba9222283b04e700e8a762b
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+- description: Updated Adobe Commerce 2.4.6 release notes for beta 6. See [Adobe Commerce
+    2.4.6 Release Notes](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html)
+  versions: 2.4.6
+  type: major-update
+  date: February 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/438
+  merge_commit: 8e0007088fecc1bb59272508ad19ce782f4b741d
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.27 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: February 9, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/431
+  merge_commit: 64cb70ebc9f2bd6533581a302e15aa6301ae4869
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.26 Quality Patches Tool (QPT) package release.
   versions: ''
