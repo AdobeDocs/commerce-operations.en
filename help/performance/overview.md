@@ -16,5 +16,5 @@ Performance depends upon
 
 ## Assumptions
 
-*  You installed Adobe Commerce or Magento Open Source using [Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+*  You installed Adobe Commerce or Magento Open Source using [Composer](../installation/composer.md).
 *  You use this installation to run a live production instance of Adobe Commerce or Magento Open Source.

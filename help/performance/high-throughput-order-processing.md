@@ -68,11 +68,11 @@ The `set` command writes the following to the `app/etc/env.php` file:
 
 AsyncOrder supports a limited set of [!DNL Commerce] features.
 
-|Category         | Supported Feature|
-|---------------- | -----------------------|
-|Checkout types   | OnePage Checkout<br>Standard Checkout<br>B2B Negotiable Quote|
-|Payment methods  | Check/Money Order<br>Cash on Delivery<br>Braintree<br>PayPal PayFlow Pro|
-|Shipping methods | All shipping methods are supported.|
+| Category         | Supported Feature                                                        |
+|------------------|--------------------------------------------------------------------------|
+| Checkout types   | OnePage Checkout<br>Standard Checkout<br>B2B Negotiable Quote            |
+| Payment methods  | Check/Money Order<br>Cash on Delivery<br>Braintree<br>PayPal PayFlow Pro |
+| Shipping methods | All shipping methods are supported.                                      |
 
 The following features are **not** supported by AsyncOrder, but continue to work synchronously:
 
@@ -161,15 +161,25 @@ When disabled, inventory check does not occur when adding a product to the shopp
 
 **Enable Inventory Check On Cart Load** is enabled (set to Yes) by default. To disable the inventory check when loading the cart, set **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` in the Admin UI **Stores** > **Configuration** > **Catalog** > **Inventory** > **Stock Options** section. See [Configure Global Options][global] and [Catalog Inventory][inventory] in the _User Guide_.
 
+## Load balancing
+
+You can help balance the load across different nodes by enabling secondary connections for the MySQL database and Redis instance.
+
+Adobe Commerce can read multiple databases or Redis instances asynchronously. If you are using Commerce on cloud infrastructure, you can configure the secondary connections by editing the [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) and [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) values in the `.magento.env.yaml` file. Only one node needs to handle read-write traffic, so setting the variables to `true` results in creating a secondary connection for read-only traffic. Set the values to `false` to remove any existing read-only connection array from the `env.php` file.
+
+Example of the `.magento.env.yaml` file:
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
+
 <!-- link definitions -->
 
-[Apply patches]: https://devdocs.magento.com/cloud/project/project-patch.html
-[global]: https://docs.magento.com/user-guide/catalog/inventory-options-global.html
-[inventory]: https://docs.magento.com/user-guide/configuration/catalog/inventory.html
-[Install extensions]: https://devdocs.magento.com/extensions/install/
-[cloud-extensions]: https://devdocs.magento.com/cloud/howtos/install-components.html
-
-[mrg]: https://devdocs.magento.com/guides/v2.4//mrg/intro.html
-[AsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-async-order.html
-[DeferredTotalCalculating]: https://devdocs.magento.com/guides/v2.4/mrg/module-deferred-total-calculating.html
-[NegotiableQuoteAsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-negotiable-quote-async-order.html
+[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
+[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
+[mrg]: https://developer.adobe.com/commerce/php/module-reference/
+[AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
+[DeferredTotalCalculating]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

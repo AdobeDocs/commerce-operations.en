@@ -8,13 +8,13 @@ This project has adopted the [Adobe Open Source Code of Conduct](code-of-conduct
 
 ## About your contributions to Adobe content
 
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html). 
+See the [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). 
 
 How you contribute depends on who you are and the sort of changes you'd like to contribute:
 
 ### Minor changes
 
-If you are contributing minor updates out of the goodness of your heart, visit the article and click the **Edit** link in the article that goes to the GitHub source for the article. Then, just use the GitHub UI to make your updates. See the general [Adobe Docs contributor guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) for more information.
+If you are contributing minor updates out of the goodness of your heart, visit the article and click the **Edit** link in the article that goes to the GitHub source for the article. Then, just use the GitHub UI to make your updates. See the general [Adobe Docs contributor guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) for more information.
 
 Minor corrections or clarifications you submit for documentation and code examples in this repo are covered by the Adobe terms of use.
 
@@ -36,7 +36,7 @@ If you are a technical writer, program manager, or developer from the product te
 
 Community contributors can use the GitHub UI for basic editing or fork the repo to make major contributions.
 
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) for details.
+See the [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) for details.
 
 ## How to use markdown to format your topic
 
@@ -51,3 +51,28 @@ In the public repository, automated labels are assigned to pull requests to help
 
 * **Change sent to author**: The author has been notified of the pending pull request.
 * **ready-to-merge**: Ready for review by our pull request review team.
+
+## Templates
+
+The `_jekyll` directory contains templated topics and required assets.
+The templates that use the Liquid templating language reside in the `_jekyll/templated` directory as HTML files.
+The `_jekyll/_data` directory contains files with the data that is used to render the templates.
+
+To render all templates:
+
+1. Navigate to the `_jekyll` directory.
+
+   cd _jekyll
+
+1. Run the rendering script.
+
+```
+_scripts/render
+```
+
+> **NOTE:** You must run the script from the `_jekyll` directory.
+> **NOTE:** You must have Ruby installed to run this script.
+
+The script runs rendering and writes rendered templates to the `help/_includes/templated` directory.
+
+See the Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles, [Liquid filters](https://jekyllrb.com/docs/liquid/filters/), and other features.

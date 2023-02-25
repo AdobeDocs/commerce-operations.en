@@ -33,6 +33,7 @@ This report also includes a detailed summary that shows:
 - *Total critical errors*: the number of critical errors found.
 - *Total errors*: the number of errors found.
 - *Total warnings*: the number of warnings found.
+- *Memory peak usage*: the maximum amount of memory the [!DNL Upgrade Compatibility Tool] has reached during execution.
 
 See the following command-line interface example:
 
@@ -120,7 +121,7 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 
 Where arguments are as follows:
 
-- `<dir>`: {{site.data.var.ee}} installation directory.
+- `<dir>`: Adobe Commerce installation directory.
 - `[=HTML-OUTPUT-PATH]`: Path directory to export the `.html` output file.
 
 >[!NOTE]

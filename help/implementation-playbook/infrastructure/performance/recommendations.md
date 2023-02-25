@@ -89,7 +89,7 @@ While Varnish full page cache memory invalidation is effective, we recommend all
 
 ### Message queues
 
-The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the consumers that receive the messages asynchronously. Adobe Commerce supports RabbitMQ as the messaging broker, which provides a scalable platform for sending and receiving messages.
+The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the consumers that receive the messages asynchronously. Adobe Commerce supports [!DNL RabbitMQ] as the messaging broker, which provides a scalable platform for sending and receiving messages.
 
 ### Performance testing and monitoring
 
@@ -99,7 +99,7 @@ Performance testing before each production release is always recommend to get an
 >
 > Adobe Commerce on cloud infrastructure already applies all of the above infrastructure and architecture optimizations, except for the DNS lookup because it's out of scope.
 
-### Search
+### Search {#search-heading}
 
 Elasticsearch is required as of Adobe Commerce version 2.4, but it’s also a best practice to enable it for versions prior to 2.4.
 

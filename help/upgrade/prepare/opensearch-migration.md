@@ -13,14 +13,14 @@ As of 2.4.4, 2.4.3-p2, and 2.3.7-p3, Adobe Commerce and Magento Open Source supp
 
 The steps to migrate to OpenSearch are simple and largely follow the steps for Elasticsearch configuration. These steps assume that Adobe Commerce is the only application using the search engine. In cases where multiple applications use the search engine, follow the official migration guide [Moving from open source Elasticsearch to OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
 
-1. Ensure that your installation meets the [search engine prerequisites](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html).
+1. Ensure that your installation meets the [search engine prerequisites](../../installation/prerequisites/search-engine/overview.md).
 
-1. Place the site in [Maintenance Mode](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+1. Place the site in [Maintenance Mode](../../installation/tutorials/maintenance-mode.md).
 
 1. Optionally uninstall Elasticsearch.
 
 1. [Install OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/).
 
-1. [Configure the search engine](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) and perform related tasks, such as flushing the cache and reindexing the catalog search index.
+1. [Configure the search engine](../../configuration/search/configure-search-engine.md) and perform related tasks, such as flushing the cache and reindexing the catalog search index.
 
 No further configuration value changes are necessary.

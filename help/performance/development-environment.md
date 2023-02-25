@@ -9,9 +9,9 @@ This page provides recommendations for Commerce development environments.
 
 ## Clean the caches instead of disabling
 
-Many developers tend to disable all caches on their developer instances. We recommend only cleaning caches, without disabling all caches. [!DNL Commerce] runs more efficiently when you [clean the caches][] instead of disabling them completely. Most types of caches are rarely invalidated during development.
+Many developers tend to disable all caches on their developer instances. We recommend only cleaning caches, without disabling all caches. [!DNL Commerce] runs more efficiently when you [clean the caches](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) instead of disabling them completely. Most types of caches are rarely invalidated during development.
 
-If you [disable the caches][], we recommend only disabling Page and Block caches in development instances. Remember to enable all caches during testing.
+If you [disable the caches](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), we recommend only disabling Page and Block caches in development instances. Remember to enable all caches during testing.
 
 ## Commands to avoid in the development mode
 
@@ -38,8 +38,3 @@ In the development mode, do not run commands for compilation, code generation an
 ## Normal page load time on a virtual machine
 
 If you develop on a VM and it takes longer than 2 seconds to load a Magento page, review your environment settings.
-
-<!-- Link definitions -->
-
-[clean the caches]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[disable the caches]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en

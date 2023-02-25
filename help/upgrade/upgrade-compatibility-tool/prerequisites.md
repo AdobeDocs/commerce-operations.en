@@ -7,7 +7,7 @@ description: Verify that your system meets the necessary requirements to run the
 
 {{commerce-only}}
 
-You must have [Adobe Commerce access keys](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
+You must have [Adobe Commerce access keys](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) to download and use the [!DNL Upgrade Compatibility Tool]. Add your Adobe Commerce access keys to your `auth.json` file, which is located at `~/.composer` by default.
 
 >[!NOTE]
 >
@@ -40,8 +40,33 @@ The minimum requirements to use the [!DNL Upgrade Compatibility Tool] in a comma
 |----------------|-----------------|
 | PHP version| >= 7.3 |
 | Composer | no known requirement. |
-| Node.js | Node.js versions `^12.22.0`, `^14.17.0`, or `>=16.0.0` (see [Install Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
+| Node.js | Node.js versions `^12.22.0`, `^14.17.0`, or `>=16.0.0` (see [Install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
 | Memory limitations | At least 2GB RAM. |
+
+[!DNL Upgrade Compatibility Tool] requires [PCNTL](https://www.php.net/manual/en/book.pcntl.php) and other PHP extensions for the execution. Check the required PHP extensions using `composer check-platform-reqs` command:
+
+```bash
+# Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
+
+$ composer check-platform-reqs
+Checking platform requirements for packages in the vendor dir
+ext-ctype     *         success provided by symfony/polyfill-ctype
+ext-dom       20031129  success
+ext-filter    7.4.30    success
+ext-json      7.4.30    success
+ext-libxml    7.4.30    success
+ext-mbstring  *         success provided by symfony/polyfill-mbstring
+ext-openssl   7.4.30    success
+ext-pcntl     7.4.30    success
+ext-pcre      7.4.30    success
+ext-phar      7.4.30    success
+ext-simplexml 7.4.30    success
+ext-tokenizer 7.4.30    success
+ext-xml       7.4.30    success
+ext-xmlwriter 7.4.30    success
+ext-zip       1.15.6    success
+php           7.4.30    success
+```
 
 Adobe Commerce is only supported on Linux operating systems. You can run the [!DNL Upgrade Compatibility Tool] in a Linux OS. You do not have to run the [!DNL Upgrade Compatibility Tool] where your Adobe Commerce instance is located.
 

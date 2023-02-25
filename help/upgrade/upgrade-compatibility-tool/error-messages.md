@@ -61,6 +61,17 @@ Critical errors are raised when the custom code is referencing entities that are
 
 {style="table-layout:auto"}
 
+### DB Schema
+
+DB Schema critical issues are reported if removed core tables or columns are referenced by custom constraints.
+
+| Error code | Error description | Suggested action |
+| --- | --- | --- |
+| 7009 | Custom constraint is referencing a core table that was removed in the target version | Remove the constraint or update referenceTable and referenceColumn attributes |
+| 7010 | Custom constraint is referencing a core column that was removed in the target version | Remove the constraint or update the referenceColumn attribute |
+
+{style="table-layout:auto"}
+
 ### GraphQL Schema
 
 GraphQL Schema critical issues are raised if the schema items are not present in the target version.
@@ -193,6 +204,23 @@ Custom code errors are raised when custom code is using the Adobe Commerce entry
 | 6009 | `jQuery.isArray()` is deprecated | Use the native Array.isArray method instead. |
 | 6009 | `jQuery.parseJSON()` is deprecated | To parse JSON strings, use the native JSON.parse method instead. |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) is deprecated | Use jQuery.expr.pseudos instead. |
+
+{style="table-layout:auto"}
+
+### DB Schema
+
+DB Schema errors are raised if the database tables, columns, indexes or constraints, added or removed in the target Adobe Commerce version, may result into conflicts with custom database schema.
+
+| Error code | Error description | Suggested action |
+| --- | --- | --- |
+| 7001 | The target core version introduces a table with the same name as a table declared by a custom module | Use the new core table (if suitable) or rename the custom table |
+| 7002 | The core table that is extended by a custom module was removed in the target version | All removed core table references should be removed from the codebase |
+| 7003 | The target core version introduces a column with the same name as a column declared by a custom module | Use the new core column (if suitable) or rename the custom column |
+| 7004 | The core column that is extended by a custom module was removed in the target version | All removed core column references should be removed from the codebase |
+| 7005 | The target core version introduces an index with the same referenceId as an index declared by a custom module | Remove (if duplicate to the introduced core index) or rename the custom index |
+| 7006 | The core index that is extended by a custom module was removed in the target version | All removed core index references should be removed from the codebase |
+| 7007 | The target core version introduces a constraint with the same name as a constraint declared by a custom module | Remove (if duplicate to the introduced core constraint) or rename the custom constraint |
+| 7008 | The core constraint that is extended by a custom module was removed in the target version | Use the new core constraint (if suitable) or rename the custom constraint |
 
 {style="table-layout:auto"}
 

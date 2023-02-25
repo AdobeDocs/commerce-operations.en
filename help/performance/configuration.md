@@ -9,7 +9,7 @@ Commerce provides many settings and tools that you can use to improve response t
 
 ## Cron Jobs
 
-All asynchronous operations in [!DNL Commerce] are performed using the Linux `cron` command. See [Configure and run cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) to configure it correctly.
+All asynchronous operations in [!DNL Commerce] are performed using the Linux `cron` command. See [Configure and run cron](../configuration/cli/configure-cron-jobs.md) to configure it correctly.
 
 ## Indexers
 
@@ -26,7 +26,7 @@ When you launch your store in production, activate all the caches from the **[!U
 
 ## Asynchronous email notifications
 
-Enabling the “Asynchronous email notifications” setting moves processes that handle checkout and order processing email notifications to the background. To enable this feature, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] > [!UICONTROL Asynchronous Sending]**. See [Sales Emails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in the _Magento Open Source User Guide_ for more information.
+Enabling the "Asynchronous email notifications" setting moves processes that handle checkout and order processing email notifications to the background. To enable this feature, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] > [!UICONTROL Asynchronous Sending]**. See [Sales Emails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in the _Magento Open Source User Guide_ for more information.
 
 ## Asynchronous order data processing
 
@@ -34,7 +34,7 @@ There can be times when intensive sales on a storefront occur at the same time t
 
 >[!WARNING]
 >
->The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
+>The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
 
 ## Deferred stock update
 
@@ -60,7 +60,7 @@ To improve the storefront responsiveness of your [!DNL Commerce] instance, go to
 
 >[!INFO]
 >
->The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe [!DNL Commerce] on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
+>The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
 
 When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option, you allow Commerce to merge all JS resources into one or a set of bundles that are loaded in storefront pages. Bundling JS results in fewer requests to the server, which improves page performance. It also helps the browser cache JS resources on the first call and reuse them for all further browsing. This option also brings lazy evaluation, as all JS is loaded as text. It initiates analysis and evaluation of code only after specific actions are triggered on the page. However, this setting is not recommended for stores where the first page load time is extremely critical, because all JS content will be loaded on the first call.
 
@@ -70,7 +70,7 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 ### Bundling tips
 
-*  We recommend that you use third-party tools for minification and bundling (like [r.js](http://requirejs.org/)). [!DNL Commerce] built-in mechanisms are not optimal and are shipped as fallback alternatives.
+*  We recommend that you use third-party tools for minification and bundling (like [r.js](https://requirejs.org/)). [!DNL Commerce] built-in mechanisms are not optimal and are shipped as fallback alternatives.
 *  Activating the HTTP2 protocol can be a good alternative to using JS bundling. The protocol provides pretty much the same benefits.
 *  We do not recommend using deprecated settings like merging JS and CSS files, as they were designed only for synchronously-loaded JS in the HEAD section of the page. Using this technique can cause bundling and requireJS logic to work incorrectly.
 

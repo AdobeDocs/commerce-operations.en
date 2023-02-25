@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+# Render the templates from the 'templates' directory and write results to '_jekyll/rendered-templates'
+bundle exec jekyll build --disable-disk-cache
+
+# Copy the rendered files from '_jekyll/_rendered' to 'help/_includes'
+# and replace file extensions from .html to .md
+
+files=$(find _site -depth -type f)
+for file in $files; do
+    mv "$file" "${file%.html}.md"
+done
+
+cp -r _site/templated/* ../help/_includes/templated/
