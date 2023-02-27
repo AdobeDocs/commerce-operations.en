@@ -26,7 +26,7 @@
     <tr>
       <td><span class="uicontrol">Composer</span></td>
       <td>
-            2.4
+            2.2
       </td>
       <td>
             2.2
