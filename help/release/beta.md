@@ -39,7 +39,7 @@ See the [release schedule](schedule.md) for the list of upcoming public beta rel
 
 The earlier you see the code that Adobe is developing, the sooner you can prepare your technology and merchants for the upcoming upgrade.
 
-Yes, things may change, but you can start understanding where in the codebase changes are happening and begin preparing sooner than the GA release date.
+While things may change, engaging with the beta releases will enable you to start understanding where in the codebase changes are happening and begin preparing in advance of the GA release date.
 
 ## Beta release access
 
