@@ -47,7 +47,7 @@ The following sections provide recommendations and considerations for each secti
 *  Consider using a slave DB to enable quick recovery and for data backups
 *  Low-traffic sites can store images in the DB
 
-### Search
+### Search {#search-heading}
 
 *  Tune the number of instances based on search traffic
 

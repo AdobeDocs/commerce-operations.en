@@ -2,8 +2,20 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Wed Feb 8 09:12:01 2023
+updated: Thu Feb 23 09:48:36 2023
 entries:
+- description: Updated the description of minimum requirements to perform a [database
+    upgrade](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+    and added an additional related resource about updating MariaDB.
+  versions: ''
+  type: best-practices
+  date: February 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/435
+  merge_commit: 0efeef6f3d5276f42e4a67fe55f6108a399f45fb
+  contributor: gbatiston
+  membership: false
+  labels:
+  - best-practices
 - description: Added a [warning](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
     about Redis configuration differences between Adobe Commerce Pro and Starter projects.
   versions: ''
