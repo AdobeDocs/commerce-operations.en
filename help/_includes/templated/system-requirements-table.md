@@ -797,4 +797,4 @@
 
 >[!NOTE]
 >
-><sup>*</sup>Adobe Commerce 2.4.5 and earlier supports MySQL 8.0.28 and earlier only.
+><sup>*</sup>Adobe Commerce 2.4.5 and earlier support MySQL 8.0.28 and earlier only.
