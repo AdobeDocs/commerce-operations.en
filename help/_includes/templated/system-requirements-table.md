@@ -26,7 +26,7 @@
     <tr>
       <td><span class="uicontrol">Composer</span></td>
       <td>
-            2.4
+            2.2
       </td>
       <td>
             2.2
@@ -209,40 +209,40 @@
             8.0
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
-            8.0
+            8.0*
       </td>
       <td>
             5.7, 8.0
@@ -794,3 +794,7 @@
 >[!IMPORTANT]
 >
 >Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [Supported software and services](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software) in the _Cloud guide_.
+
+>[!NOTE]
+>
+><sup>*</sup>Adobe Commerce 2.4.5 and earlier supports MySQL 8.0.28 and earlier only.
