@@ -2,7 +2,7 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Thu Feb 23 09:48:36 2023
+updated: Wed Mar 1 10:40:35 2023
 entries:
 - description: Updated the description of minimum requirements to perform a [database
     upgrade](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)

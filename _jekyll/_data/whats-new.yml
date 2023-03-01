@@ -1,8 +1,21 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Thu Feb 23 12:19:04 2023
+updated: Wed Mar 1 10:40:28 2023
 entries:
+- description: Added information about community contributions to the Adobe Commerce
+    and Magento Open Source 2.4.6 pre-release release notes. See [Release notes for
+    Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+  versions: 2.4.6
+  type: major-update
+  date: March 1, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/457
+  merge_commit: 710bfc501d63a7e0c3b41bd2a56d8d1d5cd27d53
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
 - description: Updated the [Product Compatibility](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
     table with the latest releases from [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=en).
   versions: 2.4.5
