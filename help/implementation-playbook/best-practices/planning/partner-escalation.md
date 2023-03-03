@@ -1,6 +1,6 @@
 ---
 title: Partner escalation best practices
-description: Learn how to prepare for escalating a partner issue with an Adobe Customer Success Manager or how to avoid an escalation.
+description: Learn how to prepare for escalating a partner issue with an Adobe Adobe Account Team or how to avoid an escalation.
 role: User
 feature: Best Practices
 feature-set: Commerce
@@ -8,7 +8,7 @@ feature-set: Commerce
 
 # Partner escalation best practices
 
-Below are ideas to help you prepare for a Partner escalation with an Adobe Customer Success Manager (CSM) or to avoid the escalation entirely.
+Below are ideas to help you prepare for a Partner escalation with an Adobe Adobe Account Team (CSM) or to avoid the escalation entirely.
 
 ## Affected products and versions
 
