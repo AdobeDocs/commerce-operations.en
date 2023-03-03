@@ -60,7 +60,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
             <li><a href="recommended-upgrade-paths.md">Recommended upgrade paths</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Technical Upgrade Workshop recording</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Accessing pre-releases</a></li>
-            <li><a href="../../release/beta-program.md">Beta Program overview</a></li>
+            <li><a href="../../release/beta.md">Beta releases overview</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Backward incompatible development</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">Backward incompatible changes</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Upgrade Plan Checklist</a></li>

@@ -7,7 +7,7 @@ description: Get familiar with the major platform changes in a release as you pr
 
 Learn more about the technical platform changes in [release notes](../../release/release-notes/overview.md) and the [system requirements](../../installation/system-requirements.md).
 
-Adobe Commerce customers and partners can also sign up for the [Adobe Commerce Beta Program](../../release/beta-program.md) to get early access to code before General Availability (GA).
+Adobe Commerce customers and partners can also access [Adobe Commerce beta releases](../../release/beta.md) to get early access to code before General Availability (GA).
 
 >[!NOTE]
 >
