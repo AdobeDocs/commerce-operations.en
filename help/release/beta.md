@@ -5,7 +5,7 @@ description: Learn about the Adobe Commerce beta releases and how to participate
 
 # Adobe Commerce beta releases
 
-Beginning in June 2023 and going forward, Adobe will release public betas for patch releases ("beta releases"). Beta releases are available to all Adobe Commerce customers and Adobe partners prior to general availability (GA) and include security, compliance, performance, and high-priority quality fixes. See the [release schedule](schedule.md) for a list of public beta release dates.
+Beginning in June 2023 and going forward, Adobe will release public betas for patch releases ("beta releases"). Beta releases are available to all Adobe Commerce customers and partners prior to general availability (GA) and include security, compliance, performance, and high-priority quality fixes.
 
 >[!IMPORTANT]
 >
@@ -24,11 +24,9 @@ Each Adobe Commerce beta release includes all the changes delivered to Adobe Com
 
 ## Naming convention and schedule
 
-Adobe will release beta patches twice a year. The first beta patch is usually released a year prior to the GA release date.
+Adobe will release beta patches twice a year. The first beta patch is typically released three months after general availability of a new core application patch release.
 
-Beta release packages have a `-betaX` suffix.
-
-For example, the Adobe Commerce 2.4.7 beta release packages use the following naming convention:
+Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.4.7 beta release packages use the following naming convention:
 
 -  `2.4.7-beta1`
 -  `2.4.7-beta2`
@@ -37,13 +35,13 @@ See the [release schedule](schedule.md) for the list of upcoming public beta rel
 
 ## Benefits of participating
 
-The earlier you see the code that Adobe is developing, the sooner you can prepare your technology and merchants for the upcoming upgrade.
+The earlier you see the code that we are developing, the sooner you can prepare your technology and merchants for the upcoming upgrade.
 
 While things may change, engaging with the beta releases will enable you to start understanding where in the codebase changes are happening and begin preparing in advance of the GA release date.
 
 ## Beta release access
 
-Adobe Commerce beta releases are publicly available and distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
+Adobe Commerce beta releases are distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
 
 See [Composer installation quick start](../installation/composer.md) for more details.
 
@@ -51,6 +49,6 @@ See [Composer installation quick start](../installation/composer.md) for more de
 
 Adobe does not provide the standard Adobe Support Service for beta releases.
 
-To submit feedback related to Adobe Commerce beta releases, follow the [issue reporting workflow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2). 
+To submit feedback related to beta releases, follow our [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2). 
 
-Our internal teams monitor all critical issues reported against the latest beta release and prioritize them so that they can be resolved prior to the GA release date.
+Our internal teams will monitor all critical issues reported against the latest beta release and prioritize them to be resolved prior to the GA release date.
