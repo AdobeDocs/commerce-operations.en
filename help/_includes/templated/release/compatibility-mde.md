@@ -327,7 +327,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Catalog Service 1.4</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -346,7 +346,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Catalog Service 1.3</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -608,7 +608,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Live Search 2.0.5</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -627,7 +627,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Live Search 2.0.4</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -903,7 +903,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.6.0</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -922,7 +922,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.4</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -941,7 +941,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.3</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -960,7 +960,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.2</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -979,7 +979,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.1</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -998,7 +998,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.0</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1017,7 +1017,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.4.1</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1053,101 +1053,6 @@ Magento Open Source, but is not supported.
       <td>Not supported</span>
       </td>
     </tr>
-    <tr>
-      <td>Payment Services 1.3.1</td>
-      <td></span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Payment Services 1.3.0</td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Payment Services 1.2.0</td>
-      <td></span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Payment Services 1.1.0</td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Payment Services 1.0.0</td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
   </tbody>
   <tbody>
     <tr>
@@ -1155,7 +1060,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.7.0</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1174,7 +1079,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.6.0</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1193,7 +1098,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.5.0</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1212,7 +1117,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.4.0</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1231,7 +1136,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.3.0</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
