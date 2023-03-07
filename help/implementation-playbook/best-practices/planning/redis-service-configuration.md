@@ -45,7 +45,7 @@ For Adobe Commerce on-premises deployments, configure the new Redis cache implem
 
 ## Separate cache and session instances
 
-Separating the Redis cache from the Redis session helps prevent issues that affect the cache from also affecting sessions. Keeping sessions is often a business requirement, but flushing it kicks out all users and can impact revenue. If necessary, you can easily regenerate the cache. Since each Redis instance runs on its own core, it also provides a performance improvement. 
+Separating the Redis cache from Redis session allows you to manage the cache and sessions independently to prevent cache issues from affecting sessions.
 
 1. Update the `.magento/services.yaml` configuration file.
 
