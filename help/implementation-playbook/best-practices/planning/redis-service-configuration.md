@@ -80,7 +80,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) to change the Redis service configuration on Pro Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
+1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the Redis service configuration on Pro Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
 1. Verify that the new instance is running and make a note of the port number.
 
@@ -113,7 +113,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=en#build-and-deploy-logs):
+During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
 ```terminal
 W:   - Downloading colinmollenhour/credis (1.11.1)
