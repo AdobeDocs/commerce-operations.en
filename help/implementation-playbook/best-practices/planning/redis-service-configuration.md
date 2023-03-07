@@ -29,7 +29,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\Redis'
 ```
 
-For details, see [Deploy variables > `REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend).
+For details, see the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) variable description in the _Commerce on Cloud Infrastructure Guide_.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ For Adobe Commerce on-premises deployments, configure the new Redis cache implem
 
 Separating the Redis cache from the Redis session helps prevent issues that affect the cache from also affecting sessions. Keeping sessions is often a business requirement, but flushing it kicks out all users and can impact revenue. If necessary, you can easily regenerate the cache. Since each Redis instance runs on its own core, it also provides a performance improvement. 
 
-1. Update the `.magento/services.yaml` configuration file:
+1. Update the `.magento/services.yaml` configuration file.
 
    ```yaml
    mysql:
@@ -69,7 +69,7 @@ Separating the Redis cache from the Redis session helps prevent issues that affe
       disk: 2048
    ```
 
-1. Update the `.magento.app.yaml` confirugation file:
+1. Update the `.magento.app.yaml` configuration file.
 
    ```yaml
    relationships:
