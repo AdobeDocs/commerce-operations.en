@@ -113,7 +113,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-During deployment, you should see the following lines in the logs:
+During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=en#build-and-deploy-logs):
 
 ```terminal
 W:   - Downloading colinmollenhour/credis (1.11.1)
