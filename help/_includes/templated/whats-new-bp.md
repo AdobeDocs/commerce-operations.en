@@ -4,13 +4,32 @@
 
 This page contains recent changes that we think you'd like to see. We exclude all minor updates, such as copy editing, from this list.
 
+### February 10, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the description of minimum requirements to perform a <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">database upgrade</a> and added an additional related resource about updating MariaDB.</p>
+</td>
+      <td>best-practices</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0efeef6f3d5276f42e4a67fe55f6108a399f45fb">0efeef</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
+
 ### January 30, 2023
 
 <table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Description</th>
-      <th>Versions</th>
       <th>Type</th>
       <th>Source</th>
     </tr>
@@ -18,11 +37,9 @@ This page contains recent changes that we think you'd like to see. We exclude al
   <tbody>
     <tr>
       <td><p>Added a <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">warning</a> about Redis configuration differences between Adobe Commerce Pro and Starter projects.</p>
-
-      <p><i>Community contribution by asrar7787</i></p></td>
-      <td></td>
+<p><i>Community contribution by asrar7787</i></p></td>
       <td>best-practices</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/78">78</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/78">78</a> (pull request)</td>
     </tr>
   </tbody>
 </table>
@@ -33,7 +50,6 @@ This page contains recent changes that we think you'd like to see. We exclude al
   <thead>
     <tr>
       <th>Description</th>
-      <th>Versions</th>
       <th>Type</th>
       <th>Source</th>
     </tr>
@@ -41,11 +57,9 @@ This page contains recent changes that we think you'd like to see. We exclude al
   <tbody>
     <tr>
       <td><p>Fixed a SQL query syntax error in the <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">upgrade prerequisites</a> best practices topic.</p>
-
-      <p><i>Community contribution by Zifius</i></p></td>
-      <td></td>
+<p><i>Community contribution by Zifius</i></p></td>
       <td>best-practices</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/77">77</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/77">77</a> (pull request)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
