@@ -80,9 +80,9 @@ Separating the Redis cache from Redis session allows you to manage the cache and
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Send the `.magento/services.yaml` and `.magento.app.yaml` configuration files to the platform team and ask them to provision a new Redis instance for sessions.
+1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) to change the Redis service configuration on Pro Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
-1. After the new instance is running, check the port port number.
+1. Verify that the new instance is running and make a note of the port port number.
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
