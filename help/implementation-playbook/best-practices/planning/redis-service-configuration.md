@@ -82,7 +82,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
 
 1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) to change the Redis service configuration on Pro Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
 
-1. Verify that the new instance is running and make a note of the port port number.
+1. Verify that the new instance is running and make a note of the port number.
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
