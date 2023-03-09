@@ -14,6 +14,22 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.28 {#v1-1-28}
+
+* **ACSD-48204** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.3) - Fixes the issue where a catalog price rule created based on the Yes/No attribute does not consider the selected scope.
+* **ACSD-47704** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the bundled product shows the price of in stock products only.
+* **ACSD-49370** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the *Date Time* product attribute has a *FilterMatchTypeInput* type in GraphQL schema.
+* **ACSD-48807** (for Adobe Commerce and Magento Open Source >=2.4.1 <2.4.7) - Fixes the issue where customer Product Reviews are not filtered by storeview via GraphQL.
+* **ACSD-49433** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where the default amount is shown as subtotal in the cart for gift card with an open amount.
+* **ACSD-48866** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where an error occurs when requesting RSS feed for categories.
+* **ACSD-48784** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the customer segment prices are incorrectly cached between customer groups.
+* **ACSD-48857** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where a user is unable to save changes after editing with Page Builder.
+* **ACSD-49065** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where quote items are not visible in the Admin if only assigned to the custom stock.
+* **ACSD-49179** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the Orders Report shows incorrect amounts in case of different currencies for different stores.
+* **ACSD-49286** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where a product is added twice to a cart when multiple product widgets are present on the page.
+* **ACSD-49574** (for Adobe Commerce >=2.4.4 <2.4.7) - Adds functionality to support Gift Card product updates in a cart via GraphQL.
+* Updated patch: ACSD-48694.
+
 ## v1.1.27 {#v1-1-27}
 
 * **ACSD-48362** (for Adobe Commerce >=2.4.1 <2.4.7) - Fixes the issue where the default shipping address is used instead of a new one when placing an order using a negotiable quote.
