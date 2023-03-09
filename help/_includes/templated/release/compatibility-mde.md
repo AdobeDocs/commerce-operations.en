@@ -1036,7 +1036,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.4.0</td>
-      <td></span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
