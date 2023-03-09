@@ -107,7 +107,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
        min_lifetime: 60
    ```
 
-1. Remove sessions from `db 0` from the Redis cache instance.
+1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Redis cache instance.
 
    ```bash
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
