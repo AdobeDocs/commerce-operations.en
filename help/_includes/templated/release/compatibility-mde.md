@@ -408,7 +408,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Channel Manager 1.1.0</td>
-      <td>Supported</span>
+      <td>Not supported</span>
       </td>
       <td>Supported</span>
       </td>
@@ -903,7 +903,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.6.0</td>
-      <td>Supported</span>
+      <td>Not supported</span>
       </td>
       <td>Supported</span>
       </td>
