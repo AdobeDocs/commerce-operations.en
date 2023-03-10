@@ -25,7 +25,7 @@ user-guide-description: Access all release information for Adobe Commerce patche
     - [2.4.1](release-notes/open-source/2-4-1.md)
     - [2.4.0](release-notes/open-source/2-4-0.md) 
   - Security patch releases {#security-patches}
-  -   [2.4.5-p2](release-notes/security/2-4-5-p2.md)
+    - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
     - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
     - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
     - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
