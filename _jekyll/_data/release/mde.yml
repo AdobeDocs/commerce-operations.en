@@ -209,7 +209,7 @@ extensions:
     versions:
       - name: 1.1.0
         support:
-          2.4.6: supported
+          2.4.6: not supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: supported
@@ -467,7 +467,7 @@ extensions:
     versions:
       - name: 1.6.0
         support:
-          2.4.6: supported
+          2.4.6: not supported
           2.4.5: supported
           2.4.4: supported
           2.4.3: compatible
