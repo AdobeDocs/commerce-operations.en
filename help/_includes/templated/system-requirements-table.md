@@ -24,7 +24,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="uicontrol">Composer</span></td>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
             2.2
       </td>
@@ -69,7 +69,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Elasticsearch</span></td>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
             8.4
       </td>
@@ -114,7 +114,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">OpenSearch</span></td>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
             2.5
       </td>
@@ -159,7 +159,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">MariaDB</span></td>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
             10.6
       </td>
@@ -204,7 +204,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">MySQL</span></td>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
             8.0
       </td>
@@ -249,7 +249,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">PHP</span></td>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
             8.1
       </td>
@@ -294,7 +294,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">RabbitMQ</span></td>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
             3.9
       </td>
@@ -339,7 +339,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Redis</span></td>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
             7.0
       </td>
@@ -384,7 +384,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Varnish</span></td>
+      <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
             7.1
       </td>
@@ -429,7 +429,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Apache</span></td>
+      <td><span class="uicontrol">[!DNL Apache]</span></td>
       <td>
             2.4
       </td>
@@ -474,7 +474,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">nginx</span></td>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
             1.18
       </td>
@@ -519,7 +519,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS Aurora (MySQL)</span></td>
+      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
             8.0
       </td>
@@ -564,7 +564,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS S3</span></td>
+      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
             ✔️
       </td>
@@ -609,7 +609,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS MQ</span></td>
+      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
             3.9.16
       </td>
@@ -654,7 +654,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS ElastiCache</span></td>
+      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
             Redis 6.2
       </td>
@@ -699,7 +699,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS Elasticsearch</span></td>
+      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
       <td>
           --
       </td>
@@ -744,7 +744,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS OpenSearch</span></td>
+      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
             1.2
       </td>
