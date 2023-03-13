@@ -1293,9 +1293,9 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Experience Platform Connector 1.0.0</td>
-      <td>Not supported</span>
+      <td>Supported</span>
       </td>
-      <td>Not supported</span>
+      <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
