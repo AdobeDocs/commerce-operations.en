@@ -31,6 +31,25 @@ Magento Open Source, but is not supported.
       <th colspan="9">Amazon Sales Channel</th>
     </tr>
     <tr>
+      <td>Amazon Sales Channel 4.4.4</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
       <td>Amazon Sales Channel 4.4.3</td>
       <td>Supported</span>
       </td>
@@ -407,6 +426,25 @@ Magento Open Source, but is not supported.
       <th colspan="9">Channel Manager</th>
     </tr>
     <tr>
+      <td>Channel Manager 1.4.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Channel Manager 1.1.0</td>
       <td>Not supported</span>
       </td>
@@ -605,6 +643,25 @@ Magento Open Source, but is not supported.
   <tbody>
     <tr>
       <th colspan="9">Live Search</th>
+    </tr>
+    <tr>
+      <td>Live Search 3.0.1</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
     </tr>
     <tr>
       <td>Live Search 2.0.5</td>
@@ -900,6 +957,25 @@ Magento Open Source, but is not supported.
   <tbody>
     <tr>
       <th colspan="9">Payment Services</th>
+    </tr>
+    <tr>
+      <td>Payment Services 2.0.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not compatible</span>
+      </td>
+      <td>Not compatible</span>
+      </td>
+      <td>Not compatible</span>
+      </td>
+      <td>Not compatible</span>
+      </td>
+      <td></span>
+      </td>
     </tr>
     <tr>
       <td>Payment Services 1.6.0</td>
