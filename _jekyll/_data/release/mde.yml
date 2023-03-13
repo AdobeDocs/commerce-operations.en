@@ -670,8 +670,8 @@ extensions:
     versions:
       - name: 1.0.0
         support:
-          2.4.6: not supported
-          2.4.5: not supported
+          2.4.6: supported
+          2.4.5: supported
           2.4.4: supported
           2.4.3: supported
           2.4.2: not supported
