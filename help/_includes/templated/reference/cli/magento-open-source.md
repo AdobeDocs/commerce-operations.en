@@ -3,7 +3,7 @@
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 2.4.6-beta2
+**Version**: 2.4.6
 
 This reference contains 114 commands available through the `bin/magento` command-line tool.
 The initial list is auto generated using the `bin/magento list` command at the  edition.
