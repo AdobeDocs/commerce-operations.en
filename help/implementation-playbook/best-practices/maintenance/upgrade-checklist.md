@@ -55,7 +55,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ▢ Early access activities
 
-- Partner participates in [Beta](../../../release/beta-program.md)
+- Partner participates in [Beta](../../../release/beta.md)
 - Beta release note review. 
 
 ▢ Agree on budget, timeline, scope.

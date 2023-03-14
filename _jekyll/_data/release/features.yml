@@ -1,17 +1,20 @@
 areas:
   - name: Maximizing conversion & sales
     features:
+      - name: Live Search powered by Adobe Sensei (B2C & B2B)
+        versions:
+          - 2.4
       - name: Seller Assisted Shopping
         versions:
           - 2.4
-      - name: Live Search powered by Adobe Sensei
+      - name: Channel Manager for Adobe Commerce
         versions:
           - 2.4
-      - name: Product Recommendations powered by Adobe Sensei
+      - name: Product Recommendations powered by Adobe Sensei (B2C & B2B)
         versions:
           - 2.3
           - 2.4
-      - name: Page Builder drag and drop content management
+      - name: Page Builder drag-and-drop content management
         versions:
           - 2.3
           - 2.4
@@ -19,16 +22,10 @@ areas:
         versions:
           - 2.3
           - 2.4
-      - name: Payment Services flexible payment options
-        versions:
-          - 2.4
       - name: Amazon Sales Channel
         versions:
           - 2.2
           - 2.3
-          - 2.4
-      - name: Channel Manager (Walmart Marketplace)
-        versions:
           - 2.4
       - name: B2B-ready functionality and APIs (check B2B's infosheet for more info)
         versions:
@@ -36,11 +33,6 @@ areas:
           - 2.3
           - 2.4
       - name: Instant Purchase
-        versions:
-          - 2.2
-          - 2.3
-          - 2.4
-      - name: Integrated Braintree for payments
         versions:
           - 2.2
           - 2.3
@@ -53,13 +45,16 @@ areas:
           - 2.4
   - name: Smarter, faster operations
     features:
+      - name: Payment Services
+        versions:
+          - 2.4
       - name: Enhanced Media Gallery & Asset Management
         versions:
           - 2.4
-      - name: Buy Online Pickup In-Store (BOPIS)
+      - name: Store Fulfillment for Adobe Commerce by Walmart Technologies
         versions:
           - 2.4
-      - name: Store Fulfillment (Advanced omnichannel fulfillment)
+      - name: Buy Online Pickup In-Store (BOPIS)
         versions:
           - 2.4
       - name: B2B Order Approval Workflows
@@ -73,11 +68,14 @@ areas:
         versions:
           - 2.3
           - 2.4
-      - name: Adobe Commerce Reporting
+      - name: Business Intelligence
         versions:
           - 2.1
           - 2.2
           - 2.3
+          - 2.4
+      - name: Catalog Service for Adobe Commerce
+        versions:
           - 2.4
       - name: Content staging & preview
         versions:
@@ -85,12 +83,9 @@ areas:
           - 2.2
           - 2.3
           - 2.4
-      - name: Payment Services reporting and reconciliation dashboard
-        versions:
-          - 2.4
   - name: Platform, performance, and security enhancements
     features:
-      - name: Site-wide Analysis Tool
+      - name: Site-Wide Analysis Tool
         versions:
           - 2.4
       - name: Composer Update Plugin
@@ -101,16 +96,13 @@ areas:
           - 2.4
       - name: In-Product Guidance
         versions:
-          - 2.4
-      - name: PHP 8.1
-        versions:
-          - 2.4
-      - name: PHP 7.4
-        versions:
-          - 2.4
-      - name: PHP 7.3
-        versions:
           - 2.3
+          - 2.4
+      - name: Asynchronous Order Processing
+        versions:
+          - 2.4
+      - name: PHP 8.1 (2.4.4+)
+        versions:
           - 2.4
       - name: Continued tech stack updates
         versions:
@@ -128,15 +120,23 @@ areas:
         versions:
           - 2.3
           - 2.4
-      - name: Declarative Schema for easier installations and upgrades
-        versions:
-          - 2.3
-          - 2.4
       - name: Security Tools:/ 2FA, ReCAPTCHA, ACL, WAF
         versions:
           - 2.3
           - 2.4
-      - name: Commerce-optimized cloud
+      - name: Adobe I/O Events for Adobe Commerce
+        versions:
+          - 2.4
+      - name: Adobe Developer App Builder for Adobe Commerce
+        versions:
+          - 2.4
+      - name: Adobe Commerce optimized cloud
+        versions:
+          - 2.1
+          - 2.2
+          - 2.3
+          - 2.4
+      - name: Observation for Adobe Commerce on cloud infrastructure
         versions:
           - 2.1
           - 2.2

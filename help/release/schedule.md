@@ -33,7 +33,7 @@ The following table provides the dates for scheduled releases (dates are subject
 
 Pre-release is General Availability code that is available to Adobe Commerce merchants and all partners two weeks before General Availability. It allows for quicker deployment of code before General Availability.
 
-For more information, refer to the [Beta program](beta-program.md).
+For more information, refer to [beta releases](beta.md).
 
 ## Release types
 

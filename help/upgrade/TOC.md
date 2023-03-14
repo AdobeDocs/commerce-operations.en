@@ -1,6 +1,6 @@
 ---
 user-guide-title: Upgrade Guide
-user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open Source application is so important and how to successfully plan and execute an upgrade.
+user-guide-description: Learn why upgrading your Adobe Commerce application is so important and how to successfully plan and execute an upgrade.
 ---
 
 # Upgrade Guide {#upgrade-guide}
@@ -45,5 +45,5 @@ user-guide-description: Learn why upgrading your Adobe Commerce or Magento Open 
   - [Maintenance mode options for upgrade](troubleshooting/maintenance-mode-options.md)
 - Resources {#resources}
   - [Recommended reading](resources/recommended-reading.md)
-  - [Modernizing your platform with Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
+  - [Modernizing your platform with Adobe Commerce](resources/recommended-upgrade-paths.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

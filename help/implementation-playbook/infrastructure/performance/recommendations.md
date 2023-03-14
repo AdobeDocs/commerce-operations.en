@@ -101,7 +101,7 @@ Performance testing before each production release is always recommend to get an
 
 ### Search {#search-heading}
 
-Elasticsearch is required as of Adobe Commerce version 2.4, but it’s also a best practice to enable it for versions prior to 2.4.
+Elasticsearch (or OpenSearch) is required as of Adobe Commerce version 2.4, but it’s also a best practice to enable it for versions prior to 2.4.
 
 ## Operating models
 

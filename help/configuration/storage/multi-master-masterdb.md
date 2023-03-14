@@ -121,6 +121,10 @@ For example,
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
 ```
 
+```bash
+bin/magento setup:upgrade
+```
+
 The following message displays to confirm a successful setup:
 
 ```terminal

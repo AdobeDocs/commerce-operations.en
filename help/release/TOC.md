@@ -1,6 +1,6 @@
 ---
 user-guide-title: Release information
-user-guide-description: Learn about Adobe Commerce and Magento Open Source releases.
+user-guide-description: Access all release information for Adobe Commerce patches and services in one place.
 ---
 
 # Release Information {#release}
@@ -37,8 +37,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 - [Released versions](versions.md)
 - [Features by version](features.md)
 - [Product availability](product-availability.md)
-- [Product roadmap](product-roadmap.md)
-- [Beta program](beta-program.md)
+- [Beta releases](beta.md)
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
   - [Versioning policy](versioning-policy.md)
