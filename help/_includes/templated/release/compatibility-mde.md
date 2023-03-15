@@ -1135,6 +1135,25 @@ Magento Open Source, but is not supported.
       <th colspan="9">Quick Checkout</th>
     </tr>
     <tr>
+      <td>Quick Checkout 1.8.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Quick Checkout 1.7.0</td>
       <td>Supported</span>
       </td>
