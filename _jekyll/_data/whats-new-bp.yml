@@ -2,8 +2,20 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Wed Mar 1 10:40:35 2023
+updated: Wed Mar 15 09:49:33 2023
 entries:
+- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+    with information about separating the cache from the session and using compression.
+  versions: ''
+  type: best-practices
+  date: March 9, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/462
+  merge_commit: f9d46893a25569b9cb00b45ab285758b3b74b410
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - best-practices
 - description: Updated the description of minimum requirements to perform a [database
     upgrade](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
     and added an additional related resource about updating MariaDB.
