@@ -16,6 +16,12 @@ Learn about new documentation and significant updates to existing documentation.
   </thead>
   <tbody>
     <tr>
+      <td><p>More 2.4.6 release updates:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations_en/reference/commerce-on-premises.html">bin/magento</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce.html">Adobe Commerce packages</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud.html">Cloud packages for Adobe Commerce</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/59c0cefdd63d2774ac0cfdee52d9f6fc916e7f88">59c0ce</a> (commit)</td>
+    </tr>
+    <tr>
       <td><p>Adds release notes for Adobe Commerce 2.4.6, Magento Open Source 2.4.6, Adobe Commerce 2.4.5-p2, and Adobe Commerce 2.4.4-p3.  See <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Release notes for Adobe Commerce and Magento Open Source</a>.</p>
 </td>
       <td>major-update</td>
@@ -38,12 +44,6 @@ Learn about new documentation and significant updates to existing documentation.
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0bce6b659a8334339dc929513a631262deccf7a">c0bce6</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Ported <a href="https://github.com/magento/devdocs/compare/master...2.4.6-develop">changes</a> from the <code class="language-plaintext highlighter-rouge">2.4.6-develop</code> integration branch in the <a href="https://github.com/magento/devdocs"><code class="language-plaintext highlighter-rouge">magento/devdocs</code></a> repo to the 2.4.6 release branch in Experience League.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c7a40176743ad62dcffec0008fdf2d9591b5f84b">c7a401</a> (commit)</td>
     </tr>
     <tr>
       <td><p>Added command-line <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/advanced.html">configuration options</a> for the OpenSearch search engine.</p>
@@ -80,6 +80,58 @@ Learn about new documentation and significant updates to existing documentation.
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5b3f2153504d89d2f3b0196bf99a9c08633e84b2">5b3f21</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### March 9, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">Redis configuration best practices</a> with information about separating the cache from the session and using compression.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9d46893a25569b9cb00b45ab285758b3b74b410">f9d468</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### March 6, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.28 Quality Patches Tool (QPT) package release.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0d65d40935b3efe09147e60252cf334b86052126">0d65d4</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Added the <code class="language-plaintext highlighter-rouge">sales.rule.quote.trigger.recollect</code> message queue consumer to the <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">reference documentation</a>.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b005eb39a8807147979f177a9460e45b75b7853e">b005eb</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Added a description of a known issue to the <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Adobe Commerce 2.4.6 release notes</a>.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e42c1b78451020654f9a8c366f53f6a42e79a6e3">e42c1b</a> (commit)</td>
     </tr>
   </tbody>
 </table>

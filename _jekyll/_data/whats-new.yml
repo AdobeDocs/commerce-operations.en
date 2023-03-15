@@ -1,8 +1,80 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Wed Mar 15 09:58:27 2023
+updated: Wed Mar 15 10:26:31 2023
 entries:
+- description: More 2.4.6 release updates:<br/>- [bin/magento](https://experienceleague.adobe.com/docs/commerce-operations_en/reference/commerce-on-premises.html)<br/>-
+    [Adobe Commerce packages](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce.html)<br/>-
+    [Cloud packages for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud.html)
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/482
+  merge_commit: 59c0cefdd63d2774ac0cfdee52d9f6fc916e7f88
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+    with information about separating the cache from the session and using compression.
+  versions: ''
+  type: major-update
+  date: March 9, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/462
+  merge_commit: f9d46893a25569b9cb00b45ab285758b3b74b410
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - best-practices
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.28 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: March 6, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/463
+  merge_commit: 0d65d40935b3efe09147e60252cf334b86052126
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added the `sales.rule.quote.trigger.recollect` message queue consumer
+    to the [reference documentation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html).
+  versions: ''
+  type: major-update
+  date: March 6, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/464
+  merge_commit: b005eb39a8807147979f177a9460e45b75b7853e
+  contributor: soumah
+  membership: false
+  labels:
+  - major-update
+- description: Added a description of a known issue to the [Adobe Commerce 2.4.6 release
+    notes](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html).
+  versions: 2.4.6
+  type: major-update
+  date: March 6, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/465
+  merge_commit: e42c1b78451020654f9a8c366f53f6a42e79a6e3
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Added information about community contributions to the Adobe Commerce
+    and Magento Open Source 2.4.6 pre-release release notes. See [Release notes for
+    Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+  versions: 2.4.6
+  type: major-update
+  date: March 1, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/457
+  merge_commit: 710bfc501d63a7e0c3b41bd2a56d8d1d5cd27d53
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
 - description: Adds release notes for Adobe Commerce 2.4.6, Magento Open Source 2.4.6,
     Adobe Commerce 2.4.5-p2, and Adobe Commerce 2.4.4-p3.  See [Release notes for
     Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
@@ -127,19 +199,6 @@ entries:
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/224
   merge_commit: 5b3f2153504d89d2f3b0196bf99a9c08633e84b2
   contributor: poperech
-  membership: false
-  labels:
-  - major-update
-  - 2.4.6
-- description: Added information about community contributions to the Adobe Commerce
-    and Magento Open Source 2.4.6 pre-release release notes. See [Release notes for
-    Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
-  versions: 2.4.6
-  type: major-update
-  date: March 1, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/457
-  merge_commit: 710bfc501d63a7e0c3b41bd2a56d8d1d5cd27d53
-  contributor: frontain
   membership: false
   labels:
   - major-update
