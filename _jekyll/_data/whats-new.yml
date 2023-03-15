@@ -1,8 +1,67 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Wed Mar 1 10:40:28 2023
+updated: Wed Mar 15 10:26:31 2023
 entries:
+- description: More 2.4.6 release updates:<br/>- [bin/magento](https://experienceleague.adobe.com/docs/commerce-operations_en/reference/commerce-on-premises.html)<br/>-
+    [Adobe Commerce packages](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce.html)<br/>-
+    [Cloud packages for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud.html)
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/482
+  merge_commit: 59c0cefdd63d2774ac0cfdee52d9f6fc916e7f88
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+    with information about separating the cache from the session and using compression.
+  versions: ''
+  type: major-update
+  date: March 9, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/462
+  merge_commit: f9d46893a25569b9cb00b45ab285758b3b74b410
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - best-practices
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.28 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: March 6, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/463
+  merge_commit: 0d65d40935b3efe09147e60252cf334b86052126
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added the `sales.rule.quote.trigger.recollect` message queue consumer
+    to the [reference documentation](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html).
+  versions: ''
+  type: major-update
+  date: March 6, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/464
+  merge_commit: b005eb39a8807147979f177a9460e45b75b7853e
+  contributor: soumah
+  membership: false
+  labels:
+  - major-update
+- description: Added a description of a known issue to the [Adobe Commerce 2.4.6 release
+    notes](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html).
+  versions: 2.4.6
+  type: major-update
+  date: March 6, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/465
+  merge_commit: e42c1b78451020654f9a8c366f53f6a42e79a6e3
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
 - description: Added information about community contributions to the Adobe Commerce
     and Magento Open Source 2.4.6 pre-release release notes. See [Release notes for
     Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
@@ -12,6 +71,133 @@ entries:
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/457
   merge_commit: 710bfc501d63a7e0c3b41bd2a56d8d1d5cd27d53
   contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Adds release notes for Adobe Commerce 2.4.6, Magento Open Source 2.4.6,
+    Adobe Commerce 2.4.5-p2, and Adobe Commerce 2.4.4-p3.  See [Release notes for
+    Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+  versions: 2.4.6, 2.4.5-p2, 2.4.4-p3
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/468
+  merge_commit: 944999e0a935faacd5d1ac812d8dc8af566f9396
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+  - 2.4.5-p2
+  - 2.4.4-p3
+- description: Updated details about the Adobe Commerce [beta release process](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html).
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/442
+  merge_commit: 873c08d75c8bd95490eca29b088ef48aa133acbf
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Added information about resolving performance degradation after [installing](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
+    or [upgrading](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/prerequisites.html)
+    MariaDB to 10.4 or 10.6.
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/427
+  merge_commit: a6138555bbe87700be0a74d03c921b4beb741cf2
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Updated the following product pages for the March 2023 release:<br/>-
+    [Product availability](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)<br/>-
+    [Product features](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)<br/>-
+    [Release notes overview](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/416
+  merge_commit: c0bce6b659a8334339dc929513a631262deccf7a
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Added command-line [configuration options](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/advanced.html)
+    for the OpenSearch search engine.
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/398
+  merge_commit: 022c2ea7384b91f863435c77f753b1a2faeb6560
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Added [information](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/search/configure-search-engine.html)
+    about Elasticsearch 8.x support in 2.4.6 and [upgrade instructions](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/prerequisites.html).
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/382
+  merge_commit: 33acb41735d5669008ae6ddf6c971062a0dbf158
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Updated the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    for the 2.4.5, 2.4.5-p2, and 2.4.4-p3 Adobe Commerce releases.
+  versions: 2.4.6, 2.4.5-p2, 2.4.4-p3
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/383
+  merge_commit: e2dd2e7e57ec0ef25356b2ad3bebfa2ce187c863
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+  - 2.4.5-p2
+  - 2.4.4-p3
+- description: Added information about a new performance optimization [system configuration](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#customer-segments-validation).
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/291
+  merge_commit: a211392b4254b29a7981794f8c6632c2db127039
+  contributor: poperech
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Added information about OpenSearch support in 2.4.6 to the [Implementation
+    Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
+    and [Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/197
+  merge_commit: 932c4e580349b95270ba30c01ce523bd1e462875
+  contributor: atw74540
+  membership: false
+  labels:
+  - major-update
+  - 2.4.6
+- description: Added a new section about the new 2.4.6 configuration setting to [limit
+    the number of products in a grid](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#limit-number-of-products-in-grid).
+  versions: 2.4.6
+  type: major-update
+  date: March 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/224
+  merge_commit: 5b3f2153504d89d2f3b0196bf99a9c08633e84b2
+  contributor: poperech
   membership: false
   labels:
   - major-update
