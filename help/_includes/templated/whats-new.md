@@ -40,7 +40,7 @@ Learn about new documentation and significant updates to existing documentation.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6138555bbe87700be0a74d03c921b4beb741cf2">a61385</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Updated the following product pages for the March 2023 release:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">Product availability</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/features.html">Product features</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-roadmap.html">Product roadmap</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Release notes overview</a></p>
+      <td><p>Updated the following product pages for the March 2023 release:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">Product availability</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/features.html">Product features</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Release notes overview</a></p>
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0bce6b659a8334339dc929513a631262deccf7a">c0bce6</a> (commit)</td>

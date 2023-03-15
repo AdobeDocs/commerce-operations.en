@@ -117,7 +117,6 @@ entries:
 - description: Updated the following product pages for the March 2023 release:<br/>-
     [Product availability](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)<br/>-
     [Product features](https://experienceleague.adobe.com/docs/commerce-operations/release/features.html)<br/>-
-    [Product roadmap](https://experienceleague.adobe.com/docs/commerce-operations/release/product-roadmap.html)<br/>-
     [Release notes overview](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)
   versions: 2.4.6
   type: major-update
