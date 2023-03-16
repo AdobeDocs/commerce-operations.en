@@ -38,25 +38,23 @@ Support for the {{ minor_release_version }} release line ends on {{ end_of_suppo
     <tr>
       <th>Patch version</th>
       <th>Release date</th>
-      {%- if release_notes %}<th>Release notes</th>{% endif %}
     </tr>
   </thead>
   <tbody>
   {%- for patch_release in patch_releases %}
     <tr>
-        <td>{{ patch_release.tagName }}</td>
+        <td>
+          {%- if release_notes %}
+          <a href="{{ patch_release.releaseNotes}}">{{ patch_release.tagName }}</a>
+          {%- else %}
+          {{ patch_release.tagName }}
+          {%- endif %}
+        </td>
         <td>{{ patch_release.publishedAt | date: "%B&nbsp;%e, %Y" }}</td>
-        {%- if release_notes %}
-          <td>
-              {%- if patch_release.releaseNotes.commerce %}<a href="{{ patch_release.releaseNotes.commerce}}">Adobe Commerce Release Notes</a><br>{% endif %}
-              {%- if patch_release.releaseNotes.opensource %}<a href="{{ patch_release.releaseNotes.opensource}}">Magento Open Source Release Notes</a><br>{% endif %}
-              {%- if patch_release.releaseNotes.common %}<a href="{{ patch_release.releaseNotes.common}}">Release Notes</a><br>{% endif %}
-          </td>
-        {%- endif %}
     </tr>
     {%- else %}
     <tr>
-        <td colspan="2" align="center">See in <a href="{{ site.baseurl }}/release/">Upcoming releases</a></td>
+        <td colspan="2" align="center">See in <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">Release schedule</a></td>
     </tr>
   {%- endfor %}<!-- patch_releases -->
   </tbody>
