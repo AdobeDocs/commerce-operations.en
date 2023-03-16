@@ -48,7 +48,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> The `<dir>` argument is the directory where your code base is stored. The `-c` option compares your code base with the specified version (for example, 2.4.4).
+> The `<dir>` argument is the directory where your code base is stored. The `-c` option compares your code base with the specified version.
 
 To identify the most critical issues for your team to address:  
 

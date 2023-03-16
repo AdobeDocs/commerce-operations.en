@@ -3,9 +3,9 @@
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 1.40.0
+**Version**: 1.42.0
 
-This reference contains 129 commands available through the `magento-cloud` command-line tool.
+This reference contains 134 commands available through the `magento-cloud` command-line tool.
 The initial list is auto generated using the `magento-cloud list` command at the  edition.
 
 >[!NOTE]
@@ -76,13 +76,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -99,14 +92,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -137,13 +158,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -160,14 +174,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -201,13 +243,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -224,14 +259,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -274,13 +337,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -297,14 +353,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -315,7 +399,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Displays help for a command
 
 ```bash
-help [--format FORMAT] [--raw] [--] [<command_name>]
+magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 
@@ -347,13 +431,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -370,14 +447,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -405,13 +510,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -428,14 +526,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -446,9 +572,15 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Lists commands
 
 ```bash
-list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
+magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 ```
 
+
+### `command`
+
+The command to execute
+   
+-  Required
 
 ### `namespace`
 
@@ -469,13 +601,83 @@ The output format (txt, xml, json, or md)
 -  Default: `txt`
 -  Requires a value
 
+### `--all`
+
+Show all commands, including hidden ones
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no`, `-n`
+
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
 
 ## `multi`
 
 Execute a command on multiple projects
 
 ```bash
-magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd>
+magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
 ```
 
 
@@ -483,7 +685,10 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 The command to execute
    
+-  Default: `[]`
+   
 -  Required
+-  Array
 
 ### `--projects`, `-p`
 
@@ -519,13 +724,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -542,14 +740,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -560,7 +786,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Open the Web UI
 
 ```bash
-magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--browser`
@@ -584,7 +810,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -597,13 +823,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -624,14 +843,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -652,13 +899,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -675,14 +915,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -703,13 +971,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -726,14 +987,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -744,7 +1033,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Cancel an activity
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -755,14 +1044,14 @@ The activity ID. Defaults to the most recent cancellable activity.
 
 ### `--type`
 
-Filter by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`
 
-Exclude by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -782,7 +1071,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -795,13 +1084,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -822,14 +1104,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -840,7 +1150,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View detailed information on a single activity
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 
@@ -857,21 +1167,21 @@ The property to view
 
 ### `--type`
 
-Filter by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`
 
-Exclude by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--state`
 
-Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a single value is specified, it will be split by commas or whitespace.
+Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -904,7 +1214,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -916,14 +1226,14 @@ The environment ID
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -949,13 +1259,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -972,14 +1275,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -990,7 +1321,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of activities for an environment or project
 
 ```bash
-magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -1005,14 +1336,14 @@ act
 
 ### `--type`, `-t`
 
-Filter activities by type If a single value is specified, it will be split by commas or whitespace.
+Filter activities by type If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`, `-x`
 
-Exclude activities by type. If a single value is specified, it will be split by commas or whitespace.
+Exclude activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -1032,7 +1363,7 @@ Only activities created before this date will be listed
 
 ### `--state`
 
-Filter activities by state: in_progress, pending, complete, or cancelled. If a single value is specified, it will be split by commas or whitespace.
+Filter activities by state: in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1059,14 +1390,14 @@ List activities on all environments
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: id*, created*, description*, progress*, state*, result*, completed, environments, type (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1093,7 +1424,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -1106,13 +1437,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1133,14 +1457,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1151,7 +1503,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Display the log for an activity
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -1176,21 +1528,21 @@ Display a timestamp next to each message
 
 ### `--type`
 
-Filter by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+Filter by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard for the type, e.g. '%var%' to select variable-related activities.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`
 
-Exclude by type (when selecting a default activity). If a single value is specified, it will be split by commas or whitespace.
+Exclude by type (when selecting a default activity). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--state`
 
-Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a single value is specified, it will be split by commas or whitespace.
+Filter by state (when selecting a default activity): in_progress, pending, complete, or cancelled. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1230,7 +1582,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -1243,13 +1595,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1270,14 +1615,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1288,7 +1661,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Run an authenticated cURL request on the Magento Cloud API
 
 ```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
+magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
 ```
 
 
@@ -1306,6 +1679,12 @@ The request method to use
 ### `--data`, `-d`
 
 Data to send
+   
+-  Requires a value
+
+### `--json`
+
+JSON data to send
    
 -  Requires a value
 
@@ -1358,13 +1737,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -1381,14 +1753,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1399,7 +1799,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View the configuration of an app
 
 ```bash
-magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--property`, `-P`
@@ -1423,7 +1823,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -1452,13 +1852,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -1475,14 +1868,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1493,7 +1914,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List apps in the project
 
 ```bash
-magento-cloud apps [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud apps [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -1516,7 +1937,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -1528,14 +1949,14 @@ The environment ID
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: name*, type*, disk, path, size (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1550,13 +1971,6 @@ Do not output the table header
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1577,14 +1991,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1605,13 +2047,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -1628,14 +2063,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1681,13 +2144,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -1704,14 +2160,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1722,7 +2206,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Display your account information
 
 ```bash
-magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
 
@@ -1753,14 +2237,14 @@ Whether to refresh the cache
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -1775,13 +2259,6 @@ Do not output the table header
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1802,14 +2279,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1849,13 +2354,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -1872,14 +2370,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1905,13 +2431,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -1928,14 +2447,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1946,19 +2493,26 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Obtain an OAuth 2 access token for requests to Magento Cloud APIs
 
 ```bash
-magento-cloud auth:token
+magento-cloud auth:token [-H|--header] [-W|--no-warn]
 ```
 
-### `--help`, `-h`
+### `--header`, `-H`
 
-Display this help message
+Prefix the token with &quot;Authorization: Bearer &quot; to make an RFC 6750 header
    
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
+### `--no-warn`, `-W`
 
-Do not output any message
+Suppress the warning that is printed by default to stderr. This option is preferred over redirecting stderr, as that would hide other potentially useful messages.
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1979,14 +2533,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -1997,7 +2579,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Setup Blackfire.io integration for the project
 
 ```bash
-magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--server_id`
@@ -2020,7 +2602,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -2045,9 +2627,92 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no`, `-n`
+
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
 ### `--quiet`, `-q`
 
 Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `blue-green:conclude`
+
+&lt;fg=white;bg=red&gt;[ ALPHA ]&lt;/&gt; Conclude a blue/green deployment
+
+```bash
+magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--host`
+
+Deprecated option, no longer used
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID
+   
+-  Requires a value
+
+### `--help`, `-h`
+
+Display this help message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2068,14 +2733,236 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `blue-green:deploy`
+
+&lt;fg=white;bg=red&gt;[ ALPHA ]&lt;/&gt; Perform a blue/green deployment
+
+```bash
+magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`
+
+Set the latest version's routing percentage
+   
+-  Default: `100`
+-  Requires a value
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--host`
+
+Deprecated option, no longer used
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID
+   
+-  Requires a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no`, `-n`
+
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `blue-green:enable`
+
+&lt;fg=white;bg=red&gt;[ ALPHA ]&lt;/&gt; Enable blue/green deployments
+
+```bash
+magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`, `-%`
+
+Set the latest version's routing percentage
+   
+-  Default: `100`
+-  Requires a value
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--host`
+
+Deprecated option, no longer used
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID
+   
+-  Requires a value
+
+### `--help`, `-h`
+
+Display this help message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no`, `-n`
+
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2086,7 +2973,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Add an SSL certificate to the project
 
 ```bash
-magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--cert`
@@ -2116,7 +3003,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -2141,13 +3028,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -2164,14 +3044,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2182,7 +3090,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Delete a certificate from the project
 
 ```bash
-magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <id>
+magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
 ```
 
 
@@ -2200,7 +3108,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -2225,13 +3133,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -2248,14 +3149,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2266,7 +3195,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View a certificate
 
 ```bash
-magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] <id>
+magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
 ```
 
 
@@ -2297,20 +3226,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2331,14 +3253,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2349,7 +3299,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List project certificates
 
 ```bash
-magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -2431,14 +3381,14 @@ The date format (as a PHP date format string)
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: created, domains, expires, id, issuer. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2458,20 +3408,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2492,14 +3435,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2510,7 +3481,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Show commit details
 
 ```bash
-magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<commit>]
+magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2535,7 +3506,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -2579,13 +3550,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -2602,14 +3566,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2620,7 +3612,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List commits
 
 ```bash
-magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2649,7 +3641,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -2661,14 +3653,14 @@ The environment ID
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: author, date, sha, summary. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2694,13 +3686,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -2717,14 +3702,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2735,7 +3748,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Create a local dump of the remote database
 
 ```bash
-magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -2822,7 +3835,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -2857,13 +3870,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -2880,14 +3886,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -2898,7 +3932,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Estimate the disk usage of a database
 
 ```bash
-magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--bytes`, `-B`
@@ -2923,7 +3957,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -2947,14 +3981,14 @@ The service relationship to use
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: max, percent_used, used. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -2979,13 +4013,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -3002,14 +4029,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3020,7 +4075,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Run SQL on the remote database
 
 ```bash
-magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 
@@ -3060,7 +4115,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -3095,13 +4150,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -3118,14 +4166,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3136,7 +4212,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Add a new domain to the project
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3173,7 +4249,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -3198,13 +4274,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -3221,14 +4290,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3239,7 +4336,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Delete a domain from the project
 
 ```bash
-magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3257,7 +4354,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -3282,13 +4379,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -3305,14 +4395,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3323,7 +4441,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Show detailed information for a domain
 
 ```bash
-magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -3340,14 +4458,14 @@ The domain property to view
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -3374,20 +4492,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3408,14 +4519,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3426,7 +4565,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of all domains
 
 ```bash
-magento-cloud domains [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -3436,14 +4575,14 @@ domains
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: name*, ssl*, created_at*, updated_at (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -3463,20 +4602,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3497,14 +4629,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3515,7 +4675,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Update a domain
 
 ```bash
-magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3552,7 +4712,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -3577,13 +4737,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -3600,14 +4753,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3618,7 +4799,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Activate an environment
 
 ```bash
-magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -3644,7 +4825,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -3675,13 +4856,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -3698,14 +4872,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3716,7 +4918,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Branch an environment
 
 ```bash
-magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
 
@@ -3769,7 +4971,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -3806,13 +5008,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -3829,14 +5024,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3874,13 +5097,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -3897,14 +5113,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -3915,7 +5159,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Run an authenticated cURL request on an environment's API
 
 ```bash
-magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -3933,6 +5177,12 @@ The request method to use
 ### `--data`, `-d`
 
 Data to send
+   
+-  Requires a value
+
+### `--json`
+
+JSON data to send
    
 -  Requires a value
 
@@ -3986,7 +5236,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -3999,13 +5249,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4026,14 +5269,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4041,10 +5312,10 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 
 ## `environment:delete`
 
-Delete an environment
+Delete one or more environments
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--type TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -4055,7 +5326,7 @@ environment:deactivate
 
 ### `environment`
 
-The environment(s) to delete. The % character may be used as a wildcard. If a single value is specified, it will be split by commas or whitespace.
+The environment(s) to delete. The % character may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
    
@@ -4063,52 +5334,59 @@ The environment(s) to delete. The % character may be used as a wildcard. If a si
 
 ### `--delete-branch`
 
-Delete the remote Git branch(es)
+Delete Git branch(es) (inactive environments)
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no-delete-branch`
 
-Do not delete the remote Git branch(es)
-   
--  Default: `false`
--  Does not accept a value
-
-### `--inactive`
-
-Delete all inactive environments
-   
--  Default: `false`
--  Does not accept a value
-
-### `--merged`
-
-Delete all merged environments
+Do not delete Git branch(es) (inactive environments)
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--type`
 
-Environment type(s) of which to delete If a single value is specified, it will be split by commas or whitespace.
+Delete all environments of a type (adding to any others selected) If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+   
+-  Default: `[]`
+-  Requires a value
+
+### `--only-type`, `-t`
+
+Only delete environment(s) of a specific type If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude`
 
-Environment(s) not to delete. The % character may be used as a wildcard. If a single value is specified, it will be split by commas or whitespace.
+Environment(s) not to delete. The % character may be used as a wildcard. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`
 
-Environment type(s) of which not to delete If a single value is specified, it will be split by commas or whitespace.
+Environment type(s) of which not to delete If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
+
+### `--inactive`
+
+Delete all inactive environments (adding to any others selected
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--merged`
+
+Delete all merged environments (adding to any others selected)
+   
+-  Default: `false`
+-  Does not accept a value
 
 ### `--project`, `-p`
 
@@ -4118,7 +5396,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -4149,13 +5427,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -4172,14 +5443,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4190,7 +5489,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Update HTTP access settings for an environment
 
 ```bash
-magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -4226,7 +5525,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -4257,13 +5556,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -4280,14 +5572,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4298,7 +5618,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Read or set properties for an environment
 
 ```bash
-magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -4333,14 +5653,14 @@ The date format (as a PHP date format string)
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -4360,7 +5680,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -4391,13 +5711,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -4414,14 +5727,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4432,7 +5773,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Initialize an environment from a public Git repository
 
 ```bash
-magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
+magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
 ```
 
 
@@ -4456,7 +5797,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -4487,13 +5828,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -4510,14 +5844,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4528,7 +5890,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of environments
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -4578,21 +5940,21 @@ Sort in reverse (descending) order
 
 ### `--type`
 
-Filter the list by environment type(s). If a single value is specified, it will be split by commas or whitespace.
+Filter the list by environment type(s). If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: id*, title*, status*, type*, created, machine_name, updated (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -4612,20 +5974,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4646,14 +6001,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4664,7 +6047,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Read an environment's logs
 
 ```bash
-magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--] [<type>]
+magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 
@@ -4705,7 +6088,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -4727,16 +6110,15 @@ A worker name
    
 -  Requires a value
 
+### `--instance`, `-I`
+
+An instance ID
+   
+-  Requires a value
+
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4757,14 +6139,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4775,7 +6185,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Merge an environment
 
 ```bash
-magento-cloud merge [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -4797,7 +6207,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -4828,13 +6238,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -4851,14 +6254,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -4869,7 +6300,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Push code to an environment
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 
@@ -4967,7 +6398,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -4990,13 +6421,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -5013,14 +6437,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5031,7 +6483,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Redeploy an environment
 
 ```bash
-magento-cloud redeploy [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -5047,7 +6499,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -5078,13 +6530,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -5101,14 +6546,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5119,7 +6592,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Show an environment's relationships
 
 ```bash
-magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 
@@ -5154,7 +6627,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -5183,13 +6656,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -5206,14 +6672,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5224,7 +6718,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Copy files to and from current environment using scp
 
 ```bash
-magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 
@@ -5256,7 +6750,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -5278,6 +6772,12 @@ A worker name
    
 -  Requires a value
 
+### `--instance`, `-I`
+
+An instance ID
+   
+-  Requires a value
+
 ### `--identity-file`, `-i`
 
 An SSH identity (private key) to use
@@ -5287,13 +6787,6 @@ An SSH identity (private key) to use
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5314,14 +6807,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5354,13 +6875,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -5377,14 +6891,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5395,7 +6937,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 SSH to the current environment
 
 ```bash
-magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 
@@ -5434,7 +6976,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -5456,6 +6998,12 @@ A worker name
    
 -  Requires a value
 
+### `--instance`, `-I`
+
+An instance ID
+   
+-  Requires a value
+
 ### `--identity-file`, `-i`
 
 An SSH identity (private key) to use
@@ -5465,13 +7013,6 @@ An SSH identity (private key) to use
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5492,14 +7033,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5510,7 +7079,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Synchronize an environment's code and/or data from its parent
 
 ```bash
-magento-cloud sync [--rebase] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
+magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 
@@ -5542,7 +7111,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -5573,13 +7142,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -5596,14 +7158,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5614,7 +7204,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get the public URLs of an environment
 
 ```bash
-magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -5650,7 +7240,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -5663,13 +7253,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5690,14 +7273,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5708,7 +7319,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Open a tunnel to Xdebug on the environment
 
 ```bash
-magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -5731,7 +7342,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -5753,6 +7364,12 @@ A worker name
    
 -  Requires a value
 
+### `--instance`, `-I`
+
+An instance ID
+   
+-  Requires a value
+
 ### `--identity-file`, `-i`
 
 An SSH identity (private key) to use
@@ -5762,13 +7379,6 @@ An SSH identity (private key) to use
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5789,14 +7399,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5807,7 +7445,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View detailed information on a single integration activity
 
 ```bash
-magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -5835,7 +7473,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -5847,14 +7485,14 @@ The project's API hostname
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -5880,13 +7518,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -5903,14 +7534,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -5921,7 +7580,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of activities for an integration
 
 ```bash
-magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -5942,14 +7601,14 @@ An integration ID. Leave blank to choose from a list.
 
 ### `--type`
 
-Filter activities by type. If a single value is specified, it will be split by commas or whitespace.
+Filter activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--exclude-type`, `-x`
 
-Exclude activities by type. If a single value is specified, it will be split by commas or whitespace.
+Exclude activities by type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace. The % character can be used as a wildcard to exclude types.
    
 -  Default: `[]`
 -  Requires a value
@@ -5969,7 +7628,7 @@ Only activities created before this date will be listed
 
 ### `--state`
 
-Filter activities by state. If a single value is specified, it will be split by commas or whitespace.
+Filter activities by state. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -5980,16 +7639,23 @@ Filter activities by result
    
 -  Requires a value
 
+### `--incomplete`, `-i`
+
+Only list incomplete activities
+   
+-  Default: `false`
+-  Does not accept a value
+
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: id*, created*, description*, type*, state*, result*, completed (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6016,7 +7682,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -6029,13 +7695,6 @@ The project's API hostname
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6056,14 +7715,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6074,7 +7761,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Display the log for an integration activity
 
 ```bash
-magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -6110,7 +7797,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -6127,13 +7814,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -6150,14 +7830,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6168,12 +7876,12 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Add an integration to the project
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--type`
 
-The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script')
+The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script', 'newrelic', 'splunk', 'sumologic', 'syslog')
    
 -  Requires a value
 
@@ -6191,7 +7899,7 @@ The Bitbucket Server username
 
 ### `--token`
 
-An access token for the integration
+An authentication or access token for the integration
    
 -  Requires a value
 
@@ -6204,6 +7912,12 @@ A Bitbucket OAuth consumer key
 ### `--secret`
 
 A Bitbucket OAuth consumer secret
+   
+-  Requires a value
+
+### `--license-key`
+
+The New Relic Logs license key
    
 -  Requires a value
 
@@ -6291,7 +8005,7 @@ Delete branches that do not exist on the remote
 
 ### `--url`
 
-Webhook: a URL to receive JSON data
+The URL or API endpoint for the integration
    
 -  Requires a value
 
@@ -6360,6 +8074,77 @@ The PagerDuty routing key
    
 -  Requires a value
 
+### `--category`
+
+The Sumo Logic category, used for filtering
+   
+-  Requires a value
+
+### `--index`
+
+The Splunk index
+   
+-  Requires a value
+
+### `--sourcetype`
+
+The Splunk event source type
+   
+-  Requires a value
+
+### `--protocol`
+
+Syslog transport protocol ('tcp', 'udp', 'tls')
+   
+-  Default: `tls`
+-  Requires a value
+
+### `--syslog-host`
+
+Syslog relay/collector host
+   
+-  Requires a value
+
+### `--syslog-port`
+
+Syslog relay/collector port
+   
+-  Requires a value
+
+### `--facility`
+
+Syslog facility
+   
+-  Default: `1`
+-  Requires a value
+
+### `--message-format`
+
+Syslog message format ('rfc3164' or 'rfc5424')
+   
+-  Default: `rfc5424`
+-  Requires a value
+
+### `--auth-mode`
+
+Authentication mode ('prefix' or 'structured_data')
+   
+-  Default: `prefix`
+-  Requires a value
+
+### `--auth-token`
+
+Authentication token
+   
+-  Requires a value
+
+### `--verify-tls`
+
+Whether HTTPS certificate verification should be enabled (recommended)
+   
+-  Default: `true`
+-  Requires a value
+
 ### `--project`, `-p`
 
 The project ID or URL
@@ -6368,7 +8153,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -6393,13 +8178,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -6416,14 +8194,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6434,7 +8240,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Delete an integration from a project
 
 ```bash
-magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6451,7 +8257,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -6476,13 +8282,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -6499,14 +8298,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6517,7 +8344,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View details of an integration
 
 ```bash
-magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6534,14 +8361,14 @@ The integration property to view
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6561,20 +8388,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6595,14 +8415,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6613,7 +8461,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View a list of project integration(s)
 
 ```bash
-magento-cloud integrations [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -6623,14 +8471,14 @@ integrations
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: id, summary, type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -6650,20 +8498,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6684,14 +8525,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6702,7 +8571,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Update an integration
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6713,7 +8582,7 @@ The ID of the integration to update
 
 ### `--type`
 
-The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script')
+The integration type ('bitbucket', 'bitbucket_server', 'github', 'gitlab', 'webhook', 'health.email', 'health.pagerduty', 'health.slack', 'health.webhook', 'script', 'newrelic', 'splunk', 'sumologic', 'syslog')
    
 -  Requires a value
 
@@ -6731,7 +8600,7 @@ The Bitbucket Server username
 
 ### `--token`
 
-An access token for the integration
+An authentication or access token for the integration
    
 -  Requires a value
 
@@ -6744,6 +8613,12 @@ A Bitbucket OAuth consumer key
 ### `--secret`
 
 A Bitbucket OAuth consumer secret
+   
+-  Requires a value
+
+### `--license-key`
+
+The New Relic Logs license key
    
 -  Requires a value
 
@@ -6831,7 +8706,7 @@ Delete branches that do not exist on the remote
 
 ### `--url`
 
-Webhook: a URL to receive JSON data
+The URL or API endpoint for the integration
    
 -  Requires a value
 
@@ -6900,6 +8775,77 @@ The PagerDuty routing key
    
 -  Requires a value
 
+### `--category`
+
+The Sumo Logic category, used for filtering
+   
+-  Requires a value
+
+### `--index`
+
+The Splunk index
+   
+-  Requires a value
+
+### `--sourcetype`
+
+The Splunk event source type
+   
+-  Requires a value
+
+### `--protocol`
+
+Syslog transport protocol ('tcp', 'udp', 'tls')
+   
+-  Default: `tls`
+-  Requires a value
+
+### `--syslog-host`
+
+Syslog relay/collector host
+   
+-  Requires a value
+
+### `--syslog-port`
+
+Syslog relay/collector port
+   
+-  Requires a value
+
+### `--facility`
+
+Syslog facility
+   
+-  Default: `1`
+-  Requires a value
+
+### `--message-format`
+
+Syslog message format ('rfc3164' or 'rfc5424')
+   
+-  Default: `rfc5424`
+-  Requires a value
+
+### `--auth-mode`
+
+Authentication mode ('prefix' or 'structured_data')
+   
+-  Default: `prefix`
+-  Requires a value
+
+### `--auth-token`
+
+Authentication token
+   
+-  Requires a value
+
+### `--verify-tls`
+
+Whether HTTPS certificate verification should be enabled (recommended)
+   
+-  Default: `true`
+-  Requires a value
+
 ### `--project`, `-p`
 
 The project ID or URL
@@ -6908,7 +8854,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -6933,13 +8879,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -6956,14 +8895,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -6974,7 +8941,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Validate an existing integration
 
 ```bash
-magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6991,20 +8958,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7025,14 +8985,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7170,13 +9158,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -7193,14 +9174,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7246,13 +9255,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -7269,14 +9271,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7308,9 +9338,169 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no`, `-n`
+
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
 ### `--quiet`, `-q`
 
 Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `metrics:disk-usage`
+
+Show disk usage on a service
+
+```bash
+magento-cloud disk [-s|--service SERVICE] [--type TYPE] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-B|--bytes] [-1|--latest] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+
+```bash
+disk
+```
+
+### `--service`, `-s`
+
+The service name
+   
+-  Requires a value
+
+### `--type`
+
+The service type (if the service name is not provided), e.g. mysql, pgsql, mongodb, etc. The type version is not required.
+   
+-  Requires a value
+
+### `--range`, `-r`
+
+The time range. Metrics will be loaded for this duration until the end time (--to). You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;5m&lt;/comment&gt;, maximum &lt;comment&gt;8h&lt;/comment&gt; or more (depending on the project), default &lt;comment&gt;10m&lt;/comment&gt;.
+   
+-  Requires a value
+
+### `--interval`, `-i`
+
+The time interval. Defaults to a division of the range. You can specify units: hours (h), minutes (m), or seconds (s). Minimum &lt;comment&gt;1m&lt;/comment&gt;, maximum &lt;comment&gt;1h&lt;/comment&gt;.
+   
+-  Requires a value
+
+### `--to`
+
+The end time. Defaults to now.
+   
+-  Requires a value
+
+### `--bytes`, `-B`
+
+Show sizes in bytes
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--latest`, `-1`
+
+Show only the latest single data point
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--host`
+
+Deprecated option, no longer used
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID
+   
+-  Requires a value
+
+### `--format`
+
+The output format: table, csv, tsv, or plain
+   
+-  Default: `table`
+-  Requires a value
+
+### `--columns`, `-c`
+
+Columns to display. Available columns: timestamp*, used*, limit*, percent*, ipercent*, ilimit, interval, iused (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+   
+-  Default: `[]`
+-  Requires a value
+
+### `--no-header`
+
+Do not output the table header
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--date-fmt`
+
+The date format (as a PHP date format string)
+   
+-  Default: `c`
+-  Requires a value
+
+### `--help`, `-h`
+
+Display this help message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7331,14 +9521,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7349,7 +9567,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Download files from a mount, using rsync
 
 ```bash
-magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--all`, `-a`
@@ -7414,7 +9632,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -7436,6 +9654,12 @@ A worker name
    
 -  Requires a value
 
+### `--instance`, `-I`
+
+An instance ID
+   
+-  Requires a value
+
 ### `--identity-file`, `-i`
 
 An SSH identity (private key) to use
@@ -7445,13 +9669,6 @@ An SSH identity (private key) to use
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7472,14 +9689,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7490,7 +9735,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of mounts
 
 ```bash
-magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 
@@ -7514,14 +9759,14 @@ Whether to refresh the cache
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: definition, path. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7541,7 +9786,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -7563,16 +9808,15 @@ A worker name
    
 -  Requires a value
 
+### `--instance`, `-I`
+
+An instance ID
+   
+-  Requires a value
+
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7593,14 +9837,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7611,7 +9883,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Check the disk usage of mounts
 
 ```bash
-magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 ### `--bytes`, `-B`
@@ -7630,14 +9902,14 @@ Refresh the cache
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: available, max, mounts, percent_used, sizes, used. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -7663,7 +9935,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -7685,16 +9957,15 @@ A worker name
    
 -  Requires a value
 
+### `--instance`, `-I`
+
+An instance ID
+   
+-  Requires a value
+
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7715,14 +9986,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7733,7 +10032,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Upload files to a mount, using rsync
 
 ```bash
-magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--source`
@@ -7784,7 +10083,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -7806,6 +10105,12 @@ A worker name
    
 -  Requires a value
 
+### `--instance`, `-I`
+
+An instance ID
+   
+-  Requires a value
+
 ### `--identity-file`, `-i`
 
 An SSH identity (private key) to use
@@ -7819,13 +10124,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -7842,14 +10140,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7860,7 +10186,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Clear a project's build cache
 
 ```bash
-magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
+magento-cloud project:clear-build-cache [-p|--project PROJECT]
 ```
 
 ### `--project`, `-p`
@@ -7871,20 +10197,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7905,14 +10224,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -7923,7 +10270,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Run an authenticated cURL request on a project's API
 
 ```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
+magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
 ```
 
 
@@ -7941,6 +10288,12 @@ The request method to use
 ### `--data`, `-d`
 
 Data to send
+   
+-  Requires a value
+
+### `--json`
+
+JSON data to send
    
 -  Requires a value
 
@@ -7994,20 +10347,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8028,14 +10374,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8046,7 +10420,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Clone a project locally
 
 ```bash
-magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [--host HOST] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 
@@ -8092,7 +10466,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -8105,13 +10479,6 @@ An SSH identity (private key) to use
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8132,14 +10499,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8150,7 +10545,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Read or set properties for a project
 
 ```bash
-magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -8185,14 +10580,14 @@ The date format (as a PHP date format string)
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8212,7 +10607,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -8237,13 +10632,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -8260,14 +10648,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8278,7 +10694,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of all active projects
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 
@@ -8293,7 +10709,7 @@ pro
 
 ### `--pipe`
 
-Output a simple list of project IDs. This disables pagination.
+Output a simple list of project IDs. Disables pagination.
    
 -  Default: `false`
 -  Does not accept a value
@@ -8340,27 +10756,26 @@ Sort in reverse (descending) order
 
 ### `--page`
 
-Page number (starting from 1)
+Page number. This enables pagination, despite configuration or --count. Ignored if --pipe is specified.
    
--  Default: `1`
 -  Requires a value
 
-### `--count`
+### `--count`, `-c`
 
-The number of projects to display per page. The default is based on the terminal height. Use 0 to disable pagination.
+The number of projects to display per page. Use 0 to disable pagination. Ignored if --page is specified.
    
 -  Requires a value
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
 ### `--columns`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8386,13 +10801,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -8409,14 +10817,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8443,13 +10879,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -8466,14 +10895,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8484,7 +10941,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 &lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Delete a variable from a project
 
 ```bash
-magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -8502,7 +10959,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -8527,13 +10984,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -8550,14 +11000,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8568,7 +11046,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 &lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; View variable(s) for a project
 
 ```bash
-magento-cloud project:variable:get [--pipe] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -8601,14 +11079,14 @@ Output the full variable value only (a &quot;name&quot; must be specified)
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -8628,20 +11106,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8662,14 +11133,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8680,7 +11179,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 &lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Set a variable for a project
 
 ```bash
-magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -8730,7 +11229,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -8755,13 +11254,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -8778,14 +11270,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8796,7 +11316,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Read a file in the project repository
 
 ```bash
-magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] <path>
+magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
 ```
 
 
@@ -8820,7 +11340,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -8833,13 +11353,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8860,14 +11373,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8878,7 +11419,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List files in the project repository
 
 ```bash
-magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -8922,7 +11463,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -8935,13 +11476,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8962,14 +11496,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -8980,7 +11542,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Read a directory or file in the project repository
 
 ```bash
-magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -9008,7 +11570,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -9021,13 +11583,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9048,14 +11603,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9066,7 +11649,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View detailed information about a route
 
 ```bash
-magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
+magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
 ```
 
 
@@ -9116,7 +11699,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -9145,13 +11728,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -9168,14 +11744,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9186,7 +11790,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List all routes for an environment
 
 ```bash
-magento-cloud routes [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<environment>]
+magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 
@@ -9214,14 +11818,14 @@ Bypass the cache of routes
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: route*, type*, to*, url (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9241,7 +11845,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -9254,13 +11858,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9281,14 +11878,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9320,13 +11945,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -9343,14 +11961,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9380,14 +12026,14 @@ Results per page (max: 100)
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
 ### `--columns`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: asset, date, downloads, release. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9413,13 +12059,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -9436,14 +12075,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9507,13 +12174,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -9530,14 +12190,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9548,7 +12236,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List services in the project
 
 ```bash
-magento-cloud services [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud services [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -9571,7 +12259,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -9583,14 +12271,14 @@ The environment ID
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: disk, name, size, type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -9605,13 +12293,6 @@ Do not output the table header
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9632,14 +12313,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9650,7 +12359,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Create a binary archive dump of data from MongoDB
 
 ```bash
-magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9698,7 +12407,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -9721,13 +12430,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -9744,14 +12446,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9762,7 +12492,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Export data from MongoDB
 
 ```bash
-magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9816,7 +12546,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -9839,13 +12569,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -9862,14 +12585,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9880,7 +12631,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Restore a binary archive dump of data into MongoDB
 
 ```bash
-magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9914,7 +12665,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -9937,13 +12688,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -9960,14 +12704,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -9978,7 +12750,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Use the MongoDB shell
 
 ```bash
-magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -10012,7 +12784,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -10035,13 +12807,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10058,14 +12823,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10076,7 +12869,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Access the Redis CLI
 
 ```bash
-magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 
@@ -10110,7 +12903,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -10133,13 +12926,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10156,14 +12942,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10190,13 +13004,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10213,14 +13020,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10231,7 +13066,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Make a snapshot of an environment
 
 ```bash
-magento-cloud backup [--live] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -10270,7 +13105,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -10294,16 +13129,16 @@ Wait for the operation to complete (default)
 -  Default: `false`
 -  Does not accept a value
 
-### `--help`, `-h`
+### `--unsafe`
 
-Display this help message
+Deprecated option: use --live instead
    
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
+### `--help`, `-h`
 
-Do not output any message
+Display this help message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10324,14 +13159,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10342,7 +13205,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List available snapshots of an environment
 
 ```bash
-magento-cloud snapshots [--limit LIMIT] [--start START] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -10362,7 +13225,7 @@ backup:list
 
 ### `--limit`
 
-Limit the number of snapshots to list
+[Deprecated] - this option is unused
    
 -  Requires a value
 
@@ -10374,14 +13237,14 @@ Limit the number of snapshots to list
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10408,7 +13271,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -10421,13 +13284,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10448,14 +13304,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10466,7 +13350,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Restore an environment snapshot
 
 ```bash
-magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
+magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
 
@@ -10505,7 +13389,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -10536,13 +13420,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10559,14 +13436,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10577,7 +13482,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 &lt;fg=white;bg=red&gt;[ BETA ]&lt;/&gt; Run a source operation
 
 ```bash
-magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
+magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
 ```
 
 
@@ -10602,7 +13507,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -10633,13 +13538,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10656,14 +13554,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10704,13 +13630,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10727,14 +13646,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10776,13 +13723,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10799,14 +13739,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10839,13 +13807,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10862,14 +13823,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10896,13 +13885,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10919,14 +13901,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -10937,7 +13947,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of SSH keys in your account
 
 ```bash
-magento-cloud ssh-keys [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -10947,14 +13957,14 @@ ssh-keys
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: id*, title*, path*, fingerprint (* = default columns). The character &quot;+&quot; can be used as a placeholder for the default columns. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -10973,13 +13983,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -10996,14 +13999,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11014,7 +14045,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Read or modify subscription properties
 
 ```bash
-magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<property>] [<value>]
+magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<property>] [<value>]
 ```
 
 
@@ -11043,14 +14074,14 @@ The date format (as a PHP date format string)
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -11070,20 +14101,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11104,14 +14128,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11122,7 +14174,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Close SSH tunnels
 
 ```bash
-magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--all`, `-a`
@@ -11140,7 +14192,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -11163,13 +14215,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -11186,14 +14231,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11204,7 +14277,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View relationship info for SSH tunnels
 
 ```bash
-magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
 ### `--property`, `-P`
@@ -11228,7 +14301,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -11246,14 +14319,14 @@ The remote application name
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
 ### `--columns`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -11268,13 +14341,6 @@ Do not output the table header
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11295,14 +14361,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11313,7 +14407,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List SSH tunnels
 
 ```bash
-magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -11336,7 +14430,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -11354,14 +14448,14 @@ The remote application name
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -11376,13 +14470,6 @@ Do not output the table header
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11403,14 +14490,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11421,7 +14536,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Open SSH tunnels to an app's relationships
 
 ```bash
-magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--gateway-ports`, `-g`
@@ -11439,7 +14554,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -11468,13 +14583,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -11491,14 +14599,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11509,7 +14645,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Open a single SSH tunnel to an app relationship
 
 ```bash
-magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--port`
@@ -11533,7 +14669,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -11568,13 +14704,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -11591,14 +14720,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11609,7 +14766,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Add a user to the project
 
 ```bash
-magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -11633,7 +14790,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -11658,13 +14815,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -11681,14 +14831,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11699,7 +14877,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Delete a user from the project
 
 ```bash
-magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <email>
+magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
 ```
 
 
@@ -11717,7 +14895,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -11742,13 +14920,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -11765,14 +14936,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11783,7 +14982,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View a user's role(s)
 
 ```bash
-magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
+magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
 ```
 
 
@@ -11818,7 +15017,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -11855,13 +15054,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -11878,14 +15070,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11896,7 +15116,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List project users
 
 ```bash
-magento-cloud users [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -11906,14 +15126,14 @@ users
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: email, id, name, role. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -11933,20 +15153,13 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11967,14 +15180,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -11985,7 +15226,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Update user role(s) on a project
 
 ```bash
-magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -12009,7 +15250,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12034,13 +15275,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -12057,14 +15291,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12075,7 +15337,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Create a variable
 
 ```bash
-magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
+magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
 
@@ -12158,7 +15420,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12189,13 +15451,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -12212,14 +15467,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12230,7 +15513,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Delete a variable
 
 ```bash
-magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12254,7 +15537,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12285,13 +15568,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -12308,14 +15584,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12326,7 +15630,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 &lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Disable an enabled environment-level variable
 
 ```bash
-magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12344,7 +15648,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12375,13 +15679,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -12398,14 +15695,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12416,7 +15741,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 &lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Enable a disabled environment-level variable
 
 ```bash
-magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12434,7 +15759,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12465,13 +15790,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -12488,14 +15806,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12506,7 +15852,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 View a variable
 
 ```bash
-magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
+magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 
@@ -12534,14 +15880,14 @@ The variable level ('project', 'environment', 'p' or 'e')
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -12561,7 +15907,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12585,13 +15931,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -12608,14 +15947,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12626,7 +15993,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 List variables
 
 ```bash
-magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -12647,14 +16014,14 @@ The variable level ('project', 'environment', 'p' or 'e')
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: is_enabled, level, name, value. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -12674,7 +16041,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12687,13 +16054,6 @@ The environment ID
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12714,14 +16074,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12732,7 +16120,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 &lt;fg=white;bg=red&gt;[ DEPRECATED ]&lt;/&gt; Set a variable for an environment
 
 ```bash
-magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -12775,7 +16163,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12806,13 +16194,6 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
-### `--quiet`, `-q`
-
-Do not output any message
-   
--  Default: `false`
--  Does not accept a value
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Increase the verbosity of messages
@@ -12829,14 +16210,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12847,7 +16256,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Update a variable
 
 ```bash
-magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12918,7 +16327,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -12949,9 +16358,118 @@ Display this help message
 -  Default: `false`
 -  Does not accept a value
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--yes`, `-y`
+
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no`, `-n`
+
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
 ### `--quiet`, `-q`
 
 Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `version:list`
+
+&lt;fg=white;bg=red&gt;[ ALPHA ]&lt;/&gt; List environment versions
+
+```bash
+magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+
+```bash
+versions
+```
+
+### `--project`, `-p`
+
+The project ID or URL
+   
+-  Requires a value
+
+### `--host`
+
+Deprecated option, no longer used
+   
+-  Requires a value
+
+### `--environment`, `-e`
+
+The environment ID
+   
+-  Requires a value
+
+### `--format`
+
+The output format: table, csv, tsv, or plain
+   
+-  Default: `table`
+-  Requires a value
+
+### `--columns`, `-c`
+
+Columns to display. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
+   
+-  Default: `[]`
+-  Requires a value
+
+### `--no-header`
+
+Do not output the table header
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--help`, `-h`
+
+Display this help message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12972,14 +16490,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -12990,7 +16536,7 @@ Answer &quot;no&quot; to any yes/no questions; disable interaction
 Get a list of all deployed workers
 
 ```bash
-magento-cloud workers [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud workers [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -13013,7 +16559,7 @@ The project ID or URL
 
 ### `--host`
 
-The project's API hostname
+Deprecated option, no longer used
    
 -  Requires a value
 
@@ -13025,14 +16571,14 @@ The environment ID
 
 ### `--format`
 
-The output format (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;, or &quot;plain&quot;)
+The output format: table, csv, tsv, or plain
    
 -  Default: `table`
 -  Requires a value
 
-### `--columns`
+### `--columns`, `-c`
 
-Columns to display (comma-separated list, or multiple values)
+Columns to display. Available columns: commands, name, type. If a list is given as a single value (e.g. &quot;a,b,c&quot;) it will be split by commas and/or whitespace.
    
 -  Default: `[]`
 -  Requires a value
@@ -13047,13 +16593,6 @@ Do not output the table header
 ### `--help`, `-h`
 
 Display this help message
-   
--  Default: `false`
--  Does not accept a value
-
-### `--quiet`, `-q`
-
-Do not output any message
    
 -  Default: `false`
 -  Does not accept a value
@@ -13074,14 +16613,42 @@ Display this application version
 
 ### `--yes`, `-y`
 
-Answer &quot;yes&quot; to any yes/no questions; disable interaction
+Answer &quot;yes&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`
+
+Do not ask any interactive questions; accept default values. Equivalent to using the environment variable: &lt;comment&gt;MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment&gt;
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force ANSI output
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-ansi`
+
+Disable ANSI output
    
 -  Default: `false`
 -  Does not accept a value
 
 ### `--no`, `-n`
 
-Answer &quot;no&quot; to any yes/no questions; disable interaction
+Answer &quot;no&quot; to confirmation questions; accept the default value for other questions; disable interaction
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
    
 -  Default: `false`
 -  Does not accept a value

@@ -1,8 +1,0 @@
----
-features:
-  - name: Mobile layout optimization
-    status: inProgress
-  - name: Column grid layouts (viewports)
-    status: inProgress
-  - name: Security and quality improvements
-    status: inProgress

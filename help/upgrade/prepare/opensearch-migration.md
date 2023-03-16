@@ -7,8 +7,7 @@ description: Learn about replacing the search engine used for on-premises instal
 
 OpenSearch is an open source fork of Elasticsearch 7.10.2 that was created after Elasticsearch's licensing change.
 
-As of 2.4.4, 2.4.3-p2, and 2.3.7-p3, Adobe Commerce and Magento Open Source support OpenSearch. On-premises installations continue to support Elasticsearch, although it is no longer supported for Adobe Commerce on cloud infrastructure.
-Starting with version 2.4.6 OpenSearch Engine has its own module and fields in the settings.
+As of 2.4.4, 2.4.3-p2, and 2.3.7-p3, Adobe Commerce and Magento Open Source support OpenSearch. On-premises installations continue to support Elasticsearch, although it is no longer supported for Adobe Commerce on cloud infrastructure. Starting with version 2.4.6 OpenSearch has its own module and fields in the Admin configuration settings.
 
 ## Migration path
 
