@@ -137,7 +137,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     </tr>
     <tr>
         <td>
-          <a href="">2.4.2-p1</a>
+          2.4.2-p1
         </td>
         <td>May&nbsp;11, 2021</td>
     </tr>
@@ -149,7 +149,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     </tr>
     <tr>
         <td>
-          <a href="">2.4.1-p1</a>
+          2.4.1-p1
         </td>
         <td>February&nbsp; 9, 2021</td>
     </tr>
@@ -161,7 +161,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
     </tr>
     <tr>
         <td>
-          <a href="">2.4.0-p1</a>
+          2.4.0-p1
         </td>
         <td>October&nbsp;15, 2020</td>
     </tr>
@@ -218,7 +218,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     </tr>
     <tr>
         <td>
-          <a href="">2.3.6-p1</a>
+          2.3.6-p1
         </td>
         <td>February&nbsp; 9, 2021</td>
     </tr>
@@ -230,19 +230,19 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     </tr>
     <tr>
         <td>
-          <a href="">2.3.5-p2</a>
+          2.3.5-p2
         </td>
         <td>July&nbsp;28, 2020</td>
     </tr>
     <tr>
         <td>
-          <a href="">2.3.5-p1</a>
+          2.3.5-p1
         </td>
         <td>April&nbsp;28, 2020</td>
     </tr>
     <tr>
         <td>
-          <a href="">2.3.4-p2</a>
+          2.3.4-p2
         </td>
         <td>April&nbsp;28, 2020</td>
     </tr>
@@ -254,7 +254,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     </tr>
     <tr>
         <td>
-          <a href="">2.3.3-p1</a>
+          2.3.3-p1
         </td>
         <td>January&nbsp;28, 2020</td>
     </tr>
@@ -266,7 +266,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
     </tr>
     <tr>
         <td>
-          <a href="">2.3.2-p2</a>
+          2.3.2-p2
         </td>
         <td>October&nbsp; 9, 2019</td>
     </tr>

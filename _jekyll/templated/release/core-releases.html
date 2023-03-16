@@ -12,13 +12,7 @@
 {%- assign end_of_support_array = end_of_support | split: '-' %}
 
 ## {{ minor_release_version }}
-{% assign release_notes = false %}
-{%- for patch_release in patch_releases %}
-{%- if patch_release.releaseNotes %}
-{%- assign release_notes = true %}
-{%- endif %}
-{%- endfor %}
-{%- if end_of_support_array[0] contains '?' %}
+{% if end_of_support_array[0] contains '?' %}
 The date when support of the {{ minor_release_version }} release line ends has not been set yet.
 {%- elsif end_of_support_array[1] contains '?' %}
 Support for the {{ minor_release_version }} release line ends in {{ end_of_support | replace: '??', '01' | date: "%Y" }}.
@@ -44,7 +38,7 @@ Support for the {{ minor_release_version }} release line ends on {{ end_of_suppo
   {%- for patch_release in patch_releases %}
     <tr>
         <td>
-          {%- if release_notes %}
+          {%- if patch_release.releaseNotes %}
           <a href="{{ patch_release.releaseNotes}}">{{ patch_release.tagName }}</a>
           {%- else %}
           {{ patch_release.tagName }}
