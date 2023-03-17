@@ -18,7 +18,7 @@ The following instructions show you how to upgrade using Composer. Adobe Commerc
 
 >[!WARNING]
 >
->The procedure for upgrading Adobe Commerce and Magento Open Source has changed. You must install a new version of the `magento/composer-root-update-plugin` package (see [prerequisites](../prepare/prerequisites.md)). In addition, the commands for upgrading have changed from `composer require magento/<package_name>` to `composer require-commerce magento/<package_name>`.
+>The procedure for upgrading Adobe Commerce and Magento Open Source has changed. You must install a new version of the `magento/composer-root-update-plugin` package (see [prerequisites](../prepare/prerequisites.md)). In addition, the commands for upgrading have changed from `composer require magento/<package_name>` to `composer require magento/<package_name>`.
 
 ## Before you begin
 
@@ -93,10 +93,10 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
         composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
         ```
 
-1. Upgrade your instance using the following `composer require-commerce` command syntax:
+1. Upgrade your instance using the following `composer require` command syntax:
 
    ```bash
-   composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
+   composer require magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
    ```
 
    Command options include:
@@ -144,13 +144,13 @@ Minor releases contain new features, quality fixes, and security fixes. Use Comp
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
+composer require magento/product-community-edition 2.4.0 --no-update
 ```
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
+composer require magento/product-enterprise-edition 2.4.0 --no-update
 ```
 
 ### Example - Quality patch
@@ -158,19 +158,19 @@ composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
 Quality patches primarily contain functional _and_ security fixes. However, they can sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the Magento Open Source 2.4.1 metapackage:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require magento/product-community-edition 2.4.3 --no-update
 ```
 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require magento/product-community-edition 2.4.3 --no-update
 ```
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require magento/product-enterprise-edition 2.4.3 --no-update
 ```
 
 ### Example - Security patch
@@ -182,13 +182,13 @@ Security patches use the Composer naming convention `2.4.x-px`. Use Composer to 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
+composer require magento/product-community-edition 2.4.3-p1 --no-update
 ```
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require magento/product-enterprise-edition 2.4.3-p1 --no-update
 ```
 
 ## Update metadata
