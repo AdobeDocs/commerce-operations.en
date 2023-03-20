@@ -1,11 +1,11 @@
 ---
 2.4.6:
   Composer: '2.2'
-  Elasticsearch: '8.4'
+  Elasticsearch: '8.4, 7.17'
   OpenSearch: '2.5'
   MariaDB: '10.6'
   MySQL: '8.0'
-  PHP: '8.1'
+  PHP: '8.1, 8.2'
   RabbitMQ: '3.9'
   Redis: '7.0'
   Varnish: '7.1'
