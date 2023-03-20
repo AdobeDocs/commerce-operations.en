@@ -345,6 +345,25 @@ Magento Open Source, but is not supported.
       <th colspan="9">Catalog Service</th>
     </tr>
     <tr>
+      <td>Catalog Service 1.5</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Catalog Service 1.4</td>
       <td>Supported</span>
       </td>
@@ -1333,6 +1352,25 @@ Magento Open Source, but is not supported.
   <tbody>
     <tr>
       <th colspan="9">Product Recommendations</th>
+    </tr>
+    <tr>
+      <td>Product Recommendations 5.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
     </tr>
     <tr>
       <td>Product Recommendations 4.0.1</td>
