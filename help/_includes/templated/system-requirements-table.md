@@ -71,7 +71,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.4
+            8.4, 7.17
       </td>
       <td>
             7.17
@@ -251,7 +251,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.1
+            8.1, 8.2
       </td>
       <td>
             8.1
