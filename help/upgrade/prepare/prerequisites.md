@@ -105,7 +105,7 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
 1. In the root directory of your Adobe Commerce project, update your Composer dependencies to remove the `Magento_Elasticsearch7` module and install the `Magento_Elasticsearch8` module.
 
    ```bash
-   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
 1. Update your project components.
