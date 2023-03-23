@@ -136,7 +136,7 @@ stage:
   deploy:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
     CACHE_CONFIGURATION:
-    _merge: true;
+      _merge: true;
       frontend:
         default:
           backend_options:
