@@ -18,7 +18,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 * **ACSD-49389** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where a ready-to-pick-up email is sent by API when the order is not ready for pickup.
 * **ACSD-49822** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where updates in the [!UICONTROL Requisition List] page are not reflected on the [!UICONTROL Print Requisition List].
-* **ACSD-48771** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue with upgrading the column-block content type from older Page Builder versions.
+* **ACSD-48771** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue with upgrading the column-block content type from older [!DNL Page Builder] versions.
 * **ACSD-49464** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where invoices, shipments, and credit memos are not moved back from the archive when the orderId is different.
 * **ACSD-49773** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where product export fails when AWS S3 is used as remote storage.
 * **ACSD-49748** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where invitations cannot be sent.
