@@ -27,7 +27,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-49706** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the default value is saved for a visual swatch attribute when no value is selected.
 * **ACSD-49835** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where the Use default checkbox value is not saved correctly on a store level for a multi-select attribute.
 * **ACSD-49898** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where the products grid throws an exception when a bundled product has a special price that exceeds 1000.
-* **ACSD-50234** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.5) - Fixes the issue with the wrong customer name in the confirmation email if placing an order with PayPal.
+* **ACSD-50234** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.5) - Fixes the issue with the wrong customer name in the confirmation email if placing an order with [!DNL PayPal].
 * **ACSD-49960** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where filtering by date does not work for the customer order grid.
 * **ACSD-49849** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where customer email was replaced with PayPal email when placing an order with PayPal Express via GraphQL.
 * **ACSD-49839** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where Shared Catalog Pricing and structure throws an error in Admin when products have single or double quotes in SKU.
