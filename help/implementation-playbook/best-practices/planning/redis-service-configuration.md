@@ -97,7 +97,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
    ```yaml
    SESSION_CONFIGURATION:
      _merge: true
-    redis:
+     redis:
        port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
        timeout: 5
        disable_locking: 1
@@ -139,11 +139,11 @@ stage:
     _merge: true;
       frontend:
         default:
-            backend_options:
-              compress_data: 4              # 0-9
-              compress_tags: 4              # 0-9
-              compress_threshold: 20480     # don't compress files smaller than this value
-              compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
+          backend_options:
+            compress_data: 4              # 0-9
+            compress_tags: 4              # 0-9
+            compress_threshold: 20480     # don't compress files smaller than this value
+            compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
 
 ## Additional information
