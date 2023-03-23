@@ -31,7 +31,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-49960** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where filtering by date does not work for the customer order grid.
 * **ACSD-49849** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where customer email was replaced with PayPal email when placing an order with PayPal Express via GraphQL.
 * **ACSD-49839** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where Shared Catalog Pricing and structure throws an error in Admin when products have single or double quotes in SKU.
-* **ACSD-49970** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes incorrect handling of GraphQL errors when New Relic reporting is turned on.
+* **ACSD-49970** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes incorrect handling of GraphQL errors when [!DNL New Relic] reporting is turned on.
 * **ACSD-50260** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where GraphQL product search results are limited to 10,000 results only.
 * **ACSD-48813** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where the search is not showing relevant results based on the search weight of the attributes.
 
