@@ -1,0 +1,11 @@
+---
+---
+# Glossary
+{% assign glossary = site.data.glossary | sort %}
+{%- assign terms_grouped_by_letter = glossary | group_by_exp: "term", "term[0] | slice: 0" %}
+{%- for term_group in terms_grouped_by_letter %}
+## {{ term_group.name | capitalize }}
+{% for term in term_group.items %}
+__{{ term[1].title }}__: {{ term[1].definition }}
+{%- endfor %}
+{%- endfor -%}
