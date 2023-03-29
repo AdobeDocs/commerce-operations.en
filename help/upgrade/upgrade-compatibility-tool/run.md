@@ -201,7 +201,7 @@ To return a list of the [!DNL Upgrade Compatibility Tool] available commands, ru
 bin/uct list
 ```
 
-## Use the `--help` command
+## Use the `help` command
 
 To see the [!DNL Upgrade Compatibility Tool] command general options and help, run:
 
@@ -254,6 +254,7 @@ This returns specific options that can be run for the `upgrade:check` command:
 - Avoid having two modules with the same name. 
 - Follow Adobe Commerce [coding standards](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Upgrade guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) best practices.
+- Run the [!DNL Upgrade Compatibility Tool] from the [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) for [Adobe Commerce on Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} projects.
 
 ## Optimize your results
 
