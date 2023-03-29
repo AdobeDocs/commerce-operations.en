@@ -6,6 +6,16 @@
 {%- for term_group in terms_grouped_by_letter %}
 ## {{ term_group.name | capitalize }}
 {% for term in term_group.items %}
-__{{ term[1].title }}__: {{ term[1].definition }}
-{%- endfor %}
+__{{ term[1].title }}__: {{ term[1].definition | rstrip }}
+
+_Term attributes:_
+* _{{ term[1].wordClasses | join: ", "}}_
+* _Field: {{ term[1].tags | join: ", " | replace: "-", " "}}_
+{%- unless term[1].synonyms == empty %}
+* _Synonyms: {{ term[1].synonyms | join: ", "}}_
+{%- endunless %}
+{%- unless term[1].relatedTerms == empty %}
+* _Related terms: {{ term[1].relatedTerms | join: ", " | replace: "-", " " }}_
+{%- endunless %}
+{% endfor %}
 {%- endfor -%}

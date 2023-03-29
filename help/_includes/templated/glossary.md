@@ -8,17 +8,35 @@ When designing your layout, use flexible formats to best display the highest pri
 With mobile and tablets, the area of above the fold greatly differs, especially on the size and dimensions of the screen and orientation when viewing (portrait vs landscape).
 Using responsive themes and testing can help find the right mix of content and layout.
 
+_Term attributes:_
+* _adjective_
+* _Field: design_
+
 __active branch__: An active branch or environment is one that is connected to a deployed or running instance with access to services.
 When you deactivate, the connection to the services and to the running instance is removed, but the code is preserved.
 It becomes an ordinary git branch.
 
+_Term attributes:_
+* _noun_
+* _Field: cloud_
+
 __adapter__: A class that enables two otherwise incompatible systems to work together without modifying the systems' source code.
 Examples include database adapters, cache adapters, filesystem adapters, post-processor libraries adapters and other types of computing adapters.
+
+_Term attributes:_
+* _noun_
+* _Field: programming_
 
 __admin__: In software, a user role with full administrator privileges to manage all functionality.
 In Magento, admin users have full permissions and access to all features, options, and capabilities in the Admin. They can also create users and roles.
 
 Learn more: [Adding Users](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Synonyms: administrator, super user_
+* _Related terms: magento admin_
 
 __Admin area__: The password-protected back office of your store where orders, catalog, content, and configurations are managed.
 Users access the Admin area to manage the store, including products, orders, shipments, CMS content, design of the storefront, customer information, etc.
@@ -26,13 +44,28 @@ Admin users have an associated role with permissions that controls access to fea
 
 Learn more: [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Synonyms: Admin, Admin Panel, backend, Administration Interface, Admin UI_
+* _Related terms: admin_
+
 __ADMIN variables__: ADMIN variables are project environment variables to override the configuration settings for the Admin user account to access the Admin UI.
 
 Learn more: [ADMIN variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
 
+_Term attributes:_
+* _noun_
+* _Field: admin_
+
 __adminhtml__: The internal area name assigned to the Admin.
 
 Learn more: [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: area, magento admin_
 
 __area__: Area is an abstract term for a Magento application scope.
 Areas are logical components that organize code for optimized request processing.
@@ -45,6 +78,11 @@ Magento areas include:
 * Storefront
 * Web API REST (webapi_rest)
 
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: magento component, storefront_
+
 __attribute__: A characteristic or property of a product that describes some aspect of the product.
 Adobe Commerce or Magento Open Source users can create custom attributes to add to the default attribute set or a custom attribute set.
 Create these attributes through the Admin or programmatically.
@@ -56,13 +94,33 @@ For integrations like Google Shopping ads Channel and Amazon Sales Channel, you 
 
 Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Synonyms: product attribute, custom attribute_
+* _Related terms: extension attribute_
+
 __attribute group__: A logical grouping of attributes within an attribute set.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: attribute_
 
 __attribute set__: A collection of attribute groups, customized for a specific product.
 Example: A T-shirt attribute set might include color, size, gender, and brand.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: attribute_
+
 __average inventory cost__: Product price, less coupons or discounts, plus freight and applicable taxes.
 The average is determined by adding the beginning cost of inventory each month, plus the ending cost of inventory for the last month of the period.
+
+_Term attributes:_
+* _noun_
+* _Field: product, pricing, inventory_
 
 ## B
 
@@ -74,9 +132,23 @@ You can customize the currency symbols as needed, and also set the display of th
 
 Learn more: [Currency](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
 
+_Term attributes:_
+* _noun_
+* _Field: pricing_
+
 __batch processing__: To perform a task or make a change to multiple items all at once, without manual repetition.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Synonyms: bulk-operations_
+
 __blacklist__: A method of filtering data that excludes the data specified on a list and includes everything else.
+
+_Term attributes:_
+* _noun, verb_
+* _Field: magento software_
+* _Related terms: whitelist_
 
 __block__: A unit of page output that renders some distinctive content - a piece of information, a user interface element - anything visually tangible for the end-user.
 [Blocks](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) are implemented and provided by modules.
@@ -87,6 +159,12 @@ Examples of blocks include a category list, a mini cart, product tags, and produ
 
 Page Builder expands on the interactivity and creation of [blocks](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) and [dynamic blocks](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
 
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Synonyms: Dynamic Blocks_
+* _Related terms: cms block, static block, container, layout_
+
 __brand__: A unique identity that defines a particular product or group of products by the manufacturer or designer.
 These include name brands for clothing, appliances, luxury items, etc.
 Your company may also be the brand, selling products under multiple brands based on the business unit, target audience, etc.
@@ -95,19 +173,36 @@ Use custom attributes to save brand information for products.
 
 Some extensions and integrations may use or require brand for your products, such as Google Shopping ads Channel and Amazon Sales Channel.
 
+_Term attributes:_
+* _noun, verb_
+* _Field: business_
+
 __brick-and-mortar__: A retail business with a permanent physical location, as opposed to businesses that function virtually or solely through the internet.
 
 For [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) and [Magento Order Management](https://omsdocs.magento.com/getting-started/terminology/), this store is a source for tracking product quantities, shipping orders, and supporting in-store pickup.
+
+_Term attributes:_
+* _adjective_
+* _Field: business, inventory_
 
 __bulk operations__: Bulk operations are actions that are performed on a large scale.
 Example bulk operations tasks include importing or exporting items, changing prices on a mass scale, and assigning products to a warehouse.
 
 Learn more: [DevDocs Bulk Operations](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+
 __bundle product__: Lets customers assemble a "build your own" customizable product from a variety of options and configurations.
 Each item in the bundle is either a separate simple or virtual product.
 
 Learn more: [Configurable Products](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
+
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: simple product, virtual product, product types_
 
 ## C
 
@@ -115,7 +210,17 @@ __cache backend__: Stores cache records into a two-level backend system within Z
 A first-level cache is fast — for example, an APC or Memcached backend — but it is limited and does not support tagging and grouping of cache entries.
 A second-level cache — for example, a file system or a Redis backend — is slower but supports tagging and grouping.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Related terms: backend_
+
 __cache frontend__: Specifies what kind of data is stored in the cache backend.
+
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Related terms: frontend_
 
 __cache type__: A cache stores data so that future calls for that data can be loaded quicker.
 
@@ -125,15 +230,34 @@ Also, Magento Commerce includes these additional types: Target Rule, Google Prod
 
 Other types can be created and defined.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Related terms: _
+
 __capture__: The process of converting an authorized order amount into a billable transaction.
 Transactions cannot be captured until authorized, and authorizations cannot be captured until the goods or services have been shipped.
 
+_Term attributes:_
+* _verb_
+* _Field: business_
+* _Related terms: authorization, order status_
+
 __cardholder__: A person who is authorized by a financial institution to make purchases on a credit card account.
+
+_Term attributes:_
+* _noun_
+* _Field: business, order_
 
 __cart rules__: Price rules which are applied to the shopping cart, and trigger an action in response to a set of conditions.
 Used to create promotions.
 
-__Catalog__: For merchants, the catalog represents their product inventory.
+_Term attributes:_
+* _noun_
+* _Field: magento software, pricing, product_
+* _Related terms: catalog rules, shopping cart_
+
+__catalog__: For merchants, the catalog represents their product inventory.
 Within Magento's architecture, the catalog consists of categories, products, and product attributes.
 
 Each Magento store has only one product catalog, which is shared by all store views.
@@ -143,10 +267,24 @@ The current store catalog is determined by the default root category, visible to
 
 You can create as many root categories as you want, but only one (the default) can be used at a time.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, pricing, product_
+* _Related terms: shared catalog, catalog rule_
+
 __catalog rules__: Price rules which are applied to specific product(s), and trigger an action in response to a set of conditions.
 Used to create promotions.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, pricing, product_
+* _Related terms: cart rules, catalog_
+
 __category__: A group of products that have something in common. The main menu of the store is organized into categories and subcategories of products.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
 
 __checkout__: The process of gathering the payment and shipping information that is necessary to complete the purchase of items in the shopping cart.
 After the customer reviews the information and submits the order, an email confirmation is sent to the customer.
@@ -154,15 +292,40 @@ After the customer reviews the information and submits the order, an email confi
 Checkout has many options and configuration out-of-the-box and through extension.
 
 Learn more: [Checkout Tutorial](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
+
+_Term attributes:_
+* _noun_
+* _Field: business, design, order, product, programming_
+
 __cloud variables__: Cloud variables are environment variables specific to Adobe Commerce on cloud infrastructure and use the **`MAGENTO_CLOUD`** prefix.
 
 Learn more: [Cloud variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
+_Term attributes:_
+* _noun_
+* _Field: cloud_
+* _Synonyms: _
+
 __CMS block__: A special variant of [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) that can only be created in the Admin and cannot be referenced through layout files.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: block, static block_
 
 __complex data__: Data that is associated with multiple product options.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+
 __Magento component__: Used to refer to a module, theme, or language package in Magento.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Synonyms: component_
+* _Related terms: ui component_
 
 __configurable product__: A configurable product looks like a single product with drop-down lists of options for each variation.
 Each option is actually a separate simple product with a unique SKU, which makes it possible to track inventory for each product variation.
@@ -176,23 +339,59 @@ Example: T-shirts that can be bought with two colors and three sizes.
 Six variants need to be created as individual products (each with its own SKU).
 Then, all variants are added to a configurable product where customers can choose the size and color, and then add it to their cart.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: product types_
+
 __conversion rate__: The percentage of visitors who are converted into buyers.
 
+_Term attributes:_
+* _noun_
+* _Field: business, order_
+
 __core tier scaling__: Core tier scaling consists of 3 nodes for data storage, cache and services, such as OpenSearch, Elasticsearch, MariaDB, Redis and more.
+
+_Term attributes:_
+* _noun_
+* _Field: cloud_
 
 __credit memo__: A document issued by the merchant to a customer to write off an outstanding balance because of overcharge, rebate, or return of goods.
 The memo restores funds to the customer's account.
 
+_Term attributes:_
+* _noun_
+* _Field: business, order_
+
 __credit memo comment__: Details why a credit memo amount was credited to the customer.
 
+_Term attributes:_
+* _noun_
+* _Field: business, order_
+
 __credit memo item__: An invoiced item for which a merchant creates a credit memo.
+
+_Term attributes:_
+* _noun_
+* _Field: business, order_
 
 __cross-sell__: A product that appears next to the shopping cart.
 When a customer navigates to the shopping cart page, these products are displayed as cross-sells to the items already in the shopping cart.
 They are similar to impulse buys, like magazines and candy at the cash registers in grocery stores.
 
+_Term attributes:_
+* _noun, adjective, verb_
+* _Field: business, product_
+* _Related terms: upsell_
+
 __CVM__: An abbreviation for "Cardholder Verification Method".
 A way to verify the identity of the customer by confirming a 3-digit or 4-digit credit card security code with the payment processor.
+
+_Term attributes:_
+* _noun_
+* _Field: business, order_
+* _Synonyms: Cardholder Verification Method_
+* _Related terms: security code_
 
 ## D
 
@@ -200,16 +399,34 @@ __database schema__: The structure of data in a database.
 Defines how data is organized and how data relationships are governed, including all constraints applied to the data.
 A module can contain fragments of the database schema if that module has data that needs to be stored in the database.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Synonyms: schema_
+
 __dependency injection__: A software design pattern that allows a class to specify its dependencies without having to construct them.
 This class delegates the responsibility of injecting the dependency to the calling class.
 Used to make testing easier.
 To define dependencies for classes, edit the di.xml configuration file.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+
 __deploy key__: A deploy key is your project SSH public key and enables read-only or read-write (if enabled) access to a Git repository.
 
 Learn more: [Enable SSH keys](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html)
 
+_Term attributes:_
+* _noun_
+* _Field: cloud_
+* _Synonyms: _
+
 __double opt-in__: An email verification process that requires potential subscribers to complete a second step that confirms their intention to subscribe.
+
+_Term attributes:_
+* _noun, verb_
+* _Field: business_
 
 __downloadable product__: A digitally downloadable product that consists of one or more files that are downloaded, such as an eBook, music, video, software application, or an update.
 You can offer an album for sale and sell each song individually.
@@ -217,8 +434,18 @@ A downloadable product can deliver an electronic version of your product catalog
 
 Downloadable files can reside on your server or be provided as URLs to any other server or content delivery network.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: product types_
+
 __dynamic content__: Content that is generated by code rather than read from a static template.
 After dynamic content is initially rendered when a user visits a page, in some cases the content can be cached and reused without requiring another dynamic call upon a revisit.
+
+_Term attributes:_
+* _noun_
+* _Field: design_
+* _Related terms: php_
 
 __dynamic media URL__: A URL address that is generated dynamically by the system to reference an image or other media.
 The address links directly to assets stored on a server or a content delivery network.
@@ -229,15 +456,29 @@ Using dynamic media URLs can affect catalog search's performance.
 
 Code format: media url="path/to/image.jpg"
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Related terms: content delivery network, url_
+
 ## E
 
 __ece-tools package__: A set of scripts and tools to help you manage and deploy many Adobe Commerce on cloud infrastructure processes, including deploying to a Docker environment, managing crons, verifying project configuration, and applying Adobe patches and hotfixes.
 
 Learn more: [ece-tools package](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
+_Term attributes:_
+* _noun_
+* _Field: cli, cloud, deploy_
+
 __entity__: A unique unit or object in programming.
 Contains attributes or parameters that can be modified.
 Examples include staging — where an update can change entities such as price rules, products or categories — and database records — where service contracts include data structures that are sent and received.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: attribute, cart rules, catalog rules_
 
 __entity attribute value__: For database entities, a data model that efficiently encodes entities.
 Stores the entity id, attribute name, and value as a triple, which allows new entity attribute names to be created at any time.
@@ -246,20 +487,44 @@ This data model is very flexible, but can be slow.
 
 Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Synonyms: eav_
+
 __evergreen content__: Content that has a long shelf life, or that can be reused.
+
+_Term attributes:_
+* _noun_
+* _Field: business_
 
 __extension__: Code that extends or customizes Magento behavior.
 You can optionally package and distribute an extension on Magento Marketplace or another extension distribution system.
 A Magento extension can include modules, themes, and language packs.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: magento component, module, package_
+
 __extension attribute__: Extend functionality and often use more complex data types than custom attributes. These attributes do not appear on the GUI.
 
 Learn more: [Adding extension attributes to entity](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: attribute, entity attribute value_
 
 ## F
 
 __freight on board__: In international shipping, this term means that the receiving party is responsible for the shipping charges.
 FOB can be based on the place of origin or destination, and be designated as either freight collect or freight prepaid.
+
+_Term attributes:_
+* _noun_
+* _Field: business, order, pricing_
+* _Synonyms: fob_
 
 __frontend__: In a client-server application, there is the backend and frontend.
 The frontend component, or client, is an interface that enables users to manipulate or interact with the underlying backend code.
@@ -269,9 +534,23 @@ A user interacts with the storefront, which in turn uses code running on the Mag
 
 Note: In the past, the storefront has been referred to as the "frontend", and the Admin has been referred to as the "backend". This usage is no longer supported.
 
+_Term attributes:_
+* _adjective_
+* _Field: design, programming_
+* _Synonyms: client side_
+* _Related terms: backend, storefront, cache frontend_
+
 __frontend properties__: Properties that determine the presentation and behavior of an attribute from the standpoint of the customer in your store.
 
+_Term attributes:_
+* _noun_
+* _Field: design, programming_
+
 __fulfillment__: The process of managing customer shipments.
+
+_Term attributes:_
+* _noun_
+* _Field: business_
 
 ## G
 
@@ -290,7 +569,16 @@ A gift card can also be redeemed by the store administrator on customer request 
 Gift cards also help promotions, as store administrators can manually create the gift card accounts in the backend and send the gift card codes to the specific customer segment.
 Gift cards can serve as a loyalty program targeted at the most active customers who make a lot of purchases from the web store or a specific promotional campaign during the holidays.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: product types_
+
 __gross margin__: The difference between the cost and price of a product.
+
+_Term attributes:_
+* _noun_
+* _Field: business_
 
 __grouped product__: A product type with several similar, standalone products grouped on a single page.
 Can be offered with variations of a single product or by grouping them by season or theme to create a coordinated set.
@@ -298,6 +586,11 @@ Each product can be purchased separately, or as part of the group.
 
 For example, for a knife that's available in four sizes, all four knives can be displayed within a grouped product page.
 Customers can select the sizes they want and add them to the cart from this page.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: simple product, product types_
 
 ## H
 
@@ -307,7 +600,16 @@ For page handles, the handle name is derived from the URL, then used to locate a
 For example, in the Magento Customer module, there is a layout file called "view/frontend/layout/checkout_cart_index.xml".
 Here "frontend" is the area name and "checkout_cart_index" is the handle name, both of which are derived from the URL.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Synonyms: page handle_
+
 __horizontal scaling__: Horizontal scaling (also known as scaling out) is the process of adding additional nodes or machines to your infrastructure in order to meet growing demand.
+
+_Term attributes:_
+* _noun_
+* _Field: cloud_
 
 ## I
 
@@ -317,6 +619,11 @@ To intercept a function, a plug-in implements the additional code to be invoked.
 Plug-ins are associated with interception points by the dependency injection configuration file (di.xml).
 If multiple plug-ins are defined on the same function, the dependency injection configuration defines the order in which the plug-ins are invoked, allowing multiple plug-ins to be used without conflict.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Related terms: plug in_
+
 ## L
 
 __layout__: In the construction of a Magento page, a layout is a series of blocks assembled in a hierarchy, representing the structure of the page.
@@ -324,15 +631,34 @@ __layout__: In the construction of a Magento page, a layout is a series of block
 Page layout files focus on the highest level of page structure (header, footer, main content area, left sidebar, etc.).
 Layout files then assemble content (blocks) into these different areas on the page.
 
+_Term attributes:_
+* _noun_
+* _Field: design, magento software_
+* _Related terms: layout instructions, block_
+
 __layout instructions__: Markup in a layout file that describes changes to be applied to a structured element tree of blocks, containers, and UI components.
 A single layout file can contain multiple layout instructions.
 Layout instructions are encoded in XML in layout files.
 
+_Term attributes:_
+* _noun_
+* _Field: design, programming_
+* _Related terms: layout, block, container, ui component_
+
 __layout update__: Used for snippets of code that that are added to modify the XML layout or to import the layout instructions from another file.
+
+_Term attributes:_
+* _noun_
+* _Field: design, magento software_
+* _Related terms: _
 
 __License Owner__: The License Owner (also known as Account Owner) is the designated person in a business organization that manages payments and other business-related issues for the Adobe Commerce on cloud infrastructure account.
 This person serves as the point of contact with Adobe.
 After a business purchases an Adobe Commerce on cloud infrastructure subscription, initial project and code access is available only to the person designated as the License Owner.
+
+_Term attributes:_
+* _noun_
+* _Field: magento_
 
 ## M
 
@@ -341,8 +667,18 @@ For access entitlement to Adobe Commerce and Adobe Commerce on cloud infrastruct
 
 Learn more: [Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
 
+_Term attributes:_
+* _noun_
+* _Field: magento_
+
 __Magento Bundled Extension__: Magento-produced code that extends or customizes Magento behavior is considered a Magento Bundled Extension (MBE).
 MBEs can include modules, themes, and language packs.
+
+_Term attributes:_
+* _noun_
+* _Field: magento extension, magento bundled extension, extension, MBE_
+* _Synonyms: extension, MBE_
+* _Related terms: extension, vendor bundled extension_
 
 __markup__: In marketing and retail, a percentage added to the cost of an item to determine the retail price.
 [Configure the markup](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), or markdown, of a product through product customizable options.
@@ -350,12 +686,31 @@ __markup__: In marketing and retail, a percentage added to the cost of an item t
 In development, a computer language that controls the processing, presentation, and formatting of text.
 Also, markup tags are snippets of code that add functionality or content to a CMS page or block.
 
+_Term attributes:_
+* _noun_
+* _Field: business, programming_
+* _Synonyms: Markdown_
+
 __master environment__: On Adobe Commerce on cloud infrastructure Pro plan projects, the Master environment branch provides an active Platform as a Service (PaaS) environment with your Production environment and includes a database and a web server.
+
+_Term attributes:_
+* _noun_
+* _Field: _
+
 __merchant account__: An account with a bank or financial institution that makes it possible to accept credit card transactions.
+
+_Term attributes:_
+* _noun_
+* _Field: business_
 
 __MFTF__: MFTF stands for [Magento Functional Testing Framework](https://devdocs.magento.com/mftf/docs/introduction.html).
 It provides a testing framework for Magento developers and software engineers, such as QA specialists, PHP developers, and system integrators.
 Developers and QA can write tests to attempt user interactions with web applications, verify functionality, and automate regression testing.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software, programming_
+* _Related terms: cms block, static block, container, layout_
 
 __module__: Code that changes or extends features provided by the Magento application.
 A module is contained in a directory structure that contains PHP and XML files (configuration, blocks, controllers, helpers, models, and so on) related to a specific functionality to deliver a distinct collection of product features.
@@ -366,6 +721,11 @@ A module can also implement widgets, which are page elements that can be customi
 
 Modules can be disabled or removed without breaking the consistency of the Magento application.
 One exception: When the module depends on other modules, which requires disabling or removing the dependant modules.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: php, xml, block_
 
 ## O
 
@@ -383,9 +743,20 @@ OMS capabilities include:
 
 Learn more: [Getting Started with OMS](https://omsdocs.magento.com/en/getting-started/), [OMS Docs site](https://omsdocs.magento.com/en/)
 
+_Term attributes:_
+* _noun_
+* _Field: feature, magento software, order management_
+* _Synonyms: order management, MOM, order management system, Magento Order Management_
+* _Related terms: mom, order management_
+
 __origin cloaking__: Origin cloaking is a security feature that allows Adobe Commerce on cloud infrastructure to block any non-Fastly traffic to prevent DDoS attacks, going to the cloud infrastructure (origin).
 
 Learn more: [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+
+_Term attributes:_
+* _noun_
+* _Field: security_
+* _Related terms: web application firewall_
 
 ## P
 
@@ -396,16 +767,35 @@ Extension support is provided for developers to extend Page Builder.
 
 Learn more: [Page Builder User Guide](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [Page Builder DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, design_
+* _Synonyms: Admin, Admin Panel, backend, Administration Interface, Admin UI_
+* _Related terms: admin_
+
 __payment gateway__: A payment gateway is a third-party service that seamlessly processes credit card transactions without the customer leaving the merchant's site.
+
+_Term attributes:_
+* _noun_
+* _Field: business, order, programming_
 
 ## R
 
 __related product__: A selection of products that is presented as an incentive to purchase additional items.
 For example, if the customer is viewing the product page for a camera, the related products might include other comparable cameras, a camera case, and tripod.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+
 ## S
 
 __sales rules__: Includes cart and catalog rules, which used to price a product for promotions.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: cart rules, catalog rules_
 
 __scope__: In Magento, scope describes the extent of your store hierarchy that a setting can affect.
 Scope can apply to the following:
@@ -417,11 +807,24 @@ Scope can apply to the following:
 
 Within the hierarchy, settings applied at a lower level can override some higher-level settings.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+
 __service contract__: A set of PHP interfaces that are defined for a module.
 A service contract includes data interfaces, which preserve data integrity, and service interfaces, which hide business logic details from service requestors such as controllers, web services, and other modules.
 Web APIs can be bound to service contracts via configuration files.
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Related terms: php, web api_
+
 __settlement__: Settlement occurs when the acquiring bank and the issuer exchange funds and the proceeds are deposited into the merchant account.
+
+_Term attributes:_
+* _noun_
+* _Field: business_
 
 __Shared Catalog__: A feature that allows merchants to create a catalog that can serve as their entire catalog or a subset of it, and then assign custom prices for one or more products.
 Merchants can then assign this catalog to one or more companies.
@@ -434,59 +837,138 @@ Using the shared catalog feature, the merchant has:
 * Customer 2 catalog (could be the entire catalog with 10% off)
 * Customer 3 catalog (a few dozen products with discounts off the main catalog ranging from 5% - 60%).
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: catalog, b2b_
+
 __shipment__: A shipment contains products to be delivered and generates a record of the products in an order that have been shipped.
 More than one shipment can be associated with a single order.
 
+_Term attributes:_
+* _noun_
+* _Field: business, order_
+
 __shipment document__: A document that accompanies a shipment. The document lists the products and their quantities in the delivery package.
+
+_Term attributes:_
+* _noun_
+* _Field: business, order_
 
 __shipping carrier__: A company that transports packages. Common carriers include UPS, FedEx, DHL, and USPS.
 
+_Term attributes:_
+* _noun_
+* _Field: business, order_
+
 __shopping cart__: The set of products that a customer has selected to purchase, but has not yet purchased.
 Also refers to an area of an ecommerce site where these products can be found in order to review and checkout.
+
+_Term attributes:_
+* _noun_
+* _Field: business, design, product, programming_
+* _Synonyms: cart, basket_
+* _Related terms: cart rules_
 
 __simple product__: This is the most basic product type, a physical item with a single SKU.
 Simple products have a variety of pricing and of input controls which makes it possible to sell variations of the product.
 Simple products can be used in association with grouped, bundle, and configurable products.
 A simple product with custom options is sometimes referred to as a composite product.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: product types_
+
 __SKU__: Abbreviation for Stock Keeping Unit.
 A number or code assigned to a product to identify the product, options, price, and manufacturer.
 
+_Term attributes:_
+* _noun_
+* _Field: business, pricing, product, programming_
+* _Related terms: shared catalog_
+
 __splash page__: A promotional page with a product or advertisement; normally displayed before the home page.
+
+_Term attributes:_
+* _noun_
+* _Field: design_
 
 __static block__: A modular unit of content that can be placed by a user in the CMS on a page to display text and images, or execute snippets of code.
 Static blocks contain editable content and can act as landing pages for product categories.
 Widgets can be added to static blocks to provide additional functionality.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: cms block, block_
+
 __static content__: User-generated content, not generated by code, that does not change frequently.
 
+_Term attributes:_
+* _noun_
+* _Field: design_
+* _Related terms: dynamic content_
+
 __static files__: The collection of assets, such as CSS, fonts, images, and JavaScript that is used by a theme.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: css, javascript_
 
 __store__: The Magento scope level of "store" is the second level of your website's hierarchy, which goes as follows: websites(s) > store(s) > store view(s).
 Stores can be organized into one or many. Each store, potentially, has its own root category, and all share the same catalog and customer data.
 
 Each store can have multiple store views, which are typically used to present the storefront in a different locale and language.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: store view, website_
+
 __store view__: The Magento scope level of "store view" refers to third level in the hierarchy of website(s), store(s) and store view(s). 
 Store views typically present the storefront in a different locale and language.
 Use the store chooser in the header to change store views.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: store, website_
+
 __storefront__: The online store that customers experience when they visit your Magento site.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
 
 ## T
 
 __tax rule__: A combination of a product tax class, customer tax class, and tax rate. This rule defines which tax calculation is applied.
+
+_Term attributes:_
+* _noun_
+* _Field: business_
 
 __template__: Short for HTML template or PHTML template.
 A PHTML file contains a mixture of HTML markup and PHP code to inject dynamic content into the HTML.
 Most blocks have at least one PHTML (template) file that contains the static HTML generated by the block.
 In the Admin, email and newsletter templates combine text, images, and variables with HTML markup to produce personalized content that is sent by the system.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software_
+* _Related terms: block_
+
 __theme__: Contains graphics and appearance information.
 Customizes the look and feel of the store.
 Magento can ship themes in (Composer) packages.
 But themes can be placed under app / design, which are not shipped in a package.
 Packages are the unit of download for Composer, and — via Magento Marketplace — Magento users can download CE or EE as a series of packages, where packages contain modules, themes, or language packs.
+
+_Term attributes:_
+* _noun_
+* _Field: magento software_
 
 ## U
 
@@ -502,6 +984,11 @@ The goals of the UI component system include the following:
 
 Learn more: [UI Components guide](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Related terms: javascript, layout, magento component, page builder_
+
 __UPWARD__: [PWA Studio](https://github.com/magento/pwa-studio) uses [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) in development.
 UPWARD is an acronym for Unified Progressive Web App Response Definition.
 An UPWARD definition file describes how a web server delivers and supports a Progressive Web Application.
@@ -514,6 +1001,12 @@ It describes how the server should handle a request and build the response for i
 
 A PWA project can include an UPWARD definition file to specify its service dependencies.
 
+_Term attributes:_
+* _noun_
+* _Field: design, magento software, programming_
+* _Synonyms: PWA Studio, Unified Progressive Web App Response Definition_
+* _Related terms: pwa_
+
 ## V
 
 __Vendor Bundled Extension__: Vendor-produced code that extends or customizes Magento behavior and operates as a third-party extension is considered a Vendor Bundled Extension (VBE).
@@ -522,7 +1015,17 @@ A VBE can include modules, themes, and language packs.
 
 Learn more in our [Vendor Bundled Extension topic](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
 
+_Term attributes:_
+* _noun_
+* _Field: magento extension, vendor bundled extension, extension, VBE_
+* _Synonyms: extension, VBE_
+* _Related terms: extension, magento bundled extension_
+
 __vertical scaling__: Vertical scaling (scaling up) refers to increasing the processing power of a single server or cluster by adding disk or network I/O, CPUs, or RAM.
+
+_Term attributes:_
+* _noun_
+* _Field: magento_
 
 __virtual product__: Represents a non-physical product that can be sold, such as a membership, service, warranty, or subscription.
 Virtual products can be sold individually, or included as part of the following product types: grouped product and bundle product.
@@ -531,9 +1034,19 @@ Does not require shipping or inventory.
 The process of creating a virtual product and a simple product is nearly the same.
 However, because a virtual product is not shipped, there is no Weight field or option to include a gift card.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, product_
+* _Related terms: product types_
+
 __virtual type__: Virtual types are a way to inject different dependencies into existing PHP classes without affecting other classes and without having to create a new class file.
 Virtual types can only be referenced in by argument overrides in a `<type>` element within di.xml files, never in source code.
 They can't be extended and they can't be references as dependencies in a classes constructor.
+
+_Term attributes:_
+* _noun_
+* _Field: programming_
+* _Related terms: php_
 
 ## W
 
@@ -541,6 +1054,16 @@ __website__: In Magento software, the highest level of a website hierarchy, abov
 You can have multiple websites, and each website can have a different domain name.
 Websites can be set up to share customer data, or to not share data.
 
+_Term attributes:_
+* _noun_
+* _Field: magento software, design, product_
+* _Related terms: store, store view_
+
 __widget__: A [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) is a prepared snippet of code that can be used to place blocks, links, and dynamic content at specific locations on store pages.
 You can use widgets to create landing pages for marketing campaigns, display promotional content at specific locations throughout the store.
 Widgets can also be used to add interactive elements and action blocks for external review systems, video chats, voting, and subscription forms, or to provide navigation elements for tag clouds and image sliders.
+
+_Term attributes:_
+* _noun_
+* _Field: business, magento software, design_
+* _Related terms: block_
