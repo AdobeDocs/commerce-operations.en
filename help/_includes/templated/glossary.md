@@ -183,7 +183,7 @@ To perform a task or make a change to multiple items all at once, without manual
 
 _Term attributes:_
 * _Field: programming_
-* _Synonyms: bulk-operations_
+* _Synonyms: bulk operations_
 
 ### blacklist
 
