@@ -18,9 +18,9 @@ Use the following table to find release notes and important information related 
         <p>Learn about the latest improvements in Adobe Commerce and Magento Open Source, including enhancements, security, bug fixes, and known issues.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Backward-incompatible changes</a></li>
-            <li><a href="commerce/2-4-5.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-5.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-5-p1.md">Security patches</a></li>
+            <li><a href="commerce/2-4-6.md">Adobe Commerce</a></li>
+            <li><a href="open-source/2-4-6.md">Magento Open Source</a></li>
+            <li><a href="security/2-4-5-p2.md">Security patches</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B for Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory Management</a></li>
