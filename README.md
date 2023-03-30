@@ -1,4 +1,4 @@
-# Adobe Commerce user documentation
+# Adobe Commerce technical documentation
 
 We welcome contributions from our community as well as from Adobe employees from outside the documentation teams.
 
@@ -26,7 +26,7 @@ If you're part of the Adobe community and you want to create a new article or su
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Major changes from Adobe Employees
+### Major changes from Adobe employees
 
 If you are a technical writer, program manager, or developer from the product team for an Adobe Experience Cloud solution and it's your job to contribute to or author technical articles, you should use the private repository at `https://git.corp.adobe.com/AdobeDocs`. 
 
@@ -44,13 +44,6 @@ All the articles in this repository use GitHub flavored markdown. If you are not
 
 * [Markdown basics](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Printable markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Labels
-
-In the public repository, automated labels are assigned to pull requests to help us manage the pull request workflow and to help let you know what's going on with your pull request:
-
-* **Change sent to author**: The author has been notified of the pending pull request.
-* **ready-to-merge**: Ready for review by our pull request review team.
 
 ## Templates
 
