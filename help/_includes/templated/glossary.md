@@ -1,4 +1,4 @@
-# Glossary
+# Adobe Commerce Glossary
 
 ## A
 
