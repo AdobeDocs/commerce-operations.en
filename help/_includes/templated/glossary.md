@@ -302,7 +302,6 @@ Other types can be created and defined.
 
 _Term attributes:_
 * _Field: programming_
-* _Related terms: _
 
 ### capture
 
@@ -854,7 +853,6 @@ Used for snippets of code that that are added to modify the XML layout or to imp
 
 _Term attributes:_
 * _Field: design, magento software_
-* _Related terms: _
 
 ### License Owner
 

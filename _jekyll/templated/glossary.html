@@ -17,7 +17,7 @@ _Term attributes:_
 {%- unless term[1].synonyms == empty %}
 * _Synonyms: {{ term[1].synonyms | join: ", " | replace: "-", " " }}_
 {%- endunless %}
-{%- unless term[1].relatedTerms == empty %}
+{%- unless term[1].relatedTerms == nil or term[1].relatedTerms == empty %}
 * _Related terms: {{ term[1].relatedTerms | join: ", " | replace: "-", " " }}_
 {%- endunless %}
 {% endfor %}
