@@ -13,8 +13,9 @@ _{{ term[1].wordClasses | join: ", "}}_
 {{ term[1].definition | rstrip }}
 
 _Term attributes:_
+
 * _Field: {{ term[1].tags | join: ", " | replace: "-", " "}}_
-{%- unless term[1].synonyms == empty %}
+{%- unless term[1].synonyms == nil or term[1].synonyms == empty %}
 * _Synonyms: {{ term[1].synonyms | join: ", " | replace: "-", " " }}_
 {%- endunless %}
 {%- unless term[1].relatedTerms == nil or term[1].relatedTerms == empty %}

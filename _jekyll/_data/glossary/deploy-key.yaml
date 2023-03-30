@@ -4,8 +4,7 @@ wordClasses:
   - "noun"
 tags:
   - "cloud"
-synonyms:
-  - ""
+synonyms: []
 relatedTerms: []
 definition: |
   A deploy key is your project SSH public key and enables read-only or read-write (if enabled) access to a Git repository.
