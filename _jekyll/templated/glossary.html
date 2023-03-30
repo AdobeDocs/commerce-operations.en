@@ -1,6 +1,6 @@
 ---
 ---
-# Glossary
+# Adobe Commerce Glossary
 {% assign glossary = site.data.glossary | sort %}
 {%- assign terms_grouped_by_letter = glossary | group_by_exp: "term", "term[0] | slice: 0" %}
 {%- for term_group in terms_grouped_by_letter %}
