@@ -10,4 +10,4 @@ relatedTerms:
   - "cart-rules"
   - "catalog-rules"
 definition: |
-  Includes cart and catalog rules, which used to price a product for promotions.
+  Includes cart and catalog rules, which are used to price a product for promotions.

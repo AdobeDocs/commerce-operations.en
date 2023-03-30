@@ -6,7 +6,7 @@ tags:
   - "programming"
 synonyms: []
 definition: |
-  A cache stores data so that future calls for that data can be loaded quicker.
+  A cache stores data so that future calls for that data load faster.
 
   Magento Open Source includes these types: Configuration, Layouts, Block HTML output, Collections Data, Reflection Data, Database DDL operations, Compiled Config, EAV types and attributes, Customer Notification, Integrations Configuration, Integrations API Configuration, Page Cache (the most well-known), Web Services Configuration, Translations.
 
