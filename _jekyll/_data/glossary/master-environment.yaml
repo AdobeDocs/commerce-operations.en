@@ -3,8 +3,9 @@ title: "master environment"
 wordClasses:
   - "noun"
 tags:
-  - ""
+  - "cloud"
 synonyms: []
 relatedTerms: []
 definition: |
-  On Adobe Commerce on cloud infrastructure Pro plan projects, the Master environment branch provides an active Platform as a Service (PaaS) environment with your Production environment and includes a database and a web server.
+ On Adobe Commerce on cloud infrastructure, Pro projects use an active Platform as a Service (PaaS) environment called master that includes a copy of your Production environment database and web server.
+ 
