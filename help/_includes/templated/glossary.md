@@ -81,7 +81,7 @@ Learn more: [ADMIN variables](https://experienceleague.adobe.com/docs/commerce-c
 
 _Term attributes:_
 
-* _Field: admin_
+* _Field: admin, cloud_
 
 ### adminhtml
 
@@ -515,7 +515,7 @@ _Term attributes:_
 
 _noun_
 
-Core tier scaling consists of three nodes for data storage, cache and services, such as OpenSearch, Elasticsearch, MariaDB, Redis and more.
+Core tier scaling consists of three service nodes for data storage, cache and services, such as OpenSearch, Elasticsearch, MariaDB, Redis.
 
 _Term attributes:_
 
@@ -612,7 +612,7 @@ _noun_
 
 A deploy key is your project SSH public key and enables read-only or read-write (if enabled) access to a Git repository.
 
-Learn more: [Enable SSH keys](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html)
+Learn more: [Secure connections](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
 
 _Term attributes:_
 
@@ -679,8 +679,7 @@ _Term attributes:_
 
 _noun_
 
-A set of scripts and tools to help you manage and deploy many Adobe Commerce on cloud infrastructure processes.
-This includes deploying to a Docker environment, managing crons, verifying project configuration, and applying Adobe patches and hotfixes.
+A set of scripts and tools designed to manage and deploy the Commerce application. This package simplifies many Adobe Commerce on cloud infrastructure processes, including deploying to a Docker environment, managing crons, verifying project configuration, and applying Adobe patches.
 
 Learn more: [ece-tools package](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
@@ -986,11 +985,11 @@ _Term attributes:_
 
 _noun_
 
-On Adobe Commerce on cloud infrastructure Pro plan projects, the Master environment branch provides an active Platform as a Service (PaaS) environment with your Production environment and includes a database and a web server.
+On Adobe Commerce on cloud infrastructure, Pro projects use an active Platform as a Service (PaaS) environment called master that includes a copy of your Production environment database and web server.
 
 _Term attributes:_
 
-* _Field: _
+* _Field: cloud_
 
 ### merchant account
 
