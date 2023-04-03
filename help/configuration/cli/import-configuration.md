@@ -60,7 +60,7 @@ The following sections discuss in detail what data we import.
 
 Commerce directly uses values in the `system` array in the `config.php` or `env.php` files instead of importing them into the database because they require some pre- and post-processing actions.
 
-For example, the value of the configuration path `web/secure/base_url` must be validated with [backend](https://glossary.magento.com/backend) models.
+For example, the value of the configuration path `web/secure/base_url` must be validated with backend models.
 
 #### Backend models
 
@@ -88,7 +88,7 @@ The preceding configurations can be imported in the following modes:
 
 >[!INFO]
 >
->We do not import the root [category](https://glossary.magento.com/category) associated with stores. You must associate a root category with a store using the Commerce [Admin](https://glossary.magento.com/admin).
+>We do not import the root category associated with stores. You must associate a root category with a store using the Commerce Admin.
 
 ### Theme configuration
 
@@ -99,7 +99,7 @@ Theme configuration includes all themes registered in your Commerce system; the 
 The key of array is full theme path: `area` + `theme path`
 
 For example, `frontend/Magento/luma`.
-`frontend` is area and `Magento/luma` is [theme](https://glossary.magento.com/theme) path.
+`frontend` is area and `Magento/luma` is theme path.
 
 The value of array is data about theme: code, title, path, parent id
 

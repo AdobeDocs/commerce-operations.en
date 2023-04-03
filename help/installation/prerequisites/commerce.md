@@ -56,4 +56,4 @@ UNIX systems require `root` privileges to install and configure software like a 
 
 Do *not* install the application in the web server docroot as the `root` user because the web server might not be able to interact with those files.
 
-You need `root` privileges to create the [file system owner](file-system/overview.md) and add that owner to the web server's group. You use the [file system owner](https://glossary.magento.com/magento-file-system-owner) to run `bin/magento` commands from the command line and to set up cron jobs, which schedule tasks for you.
+You need `root` privileges to create the [file system owner](file-system/overview.md) and add that owner to the web server's group. You use the file system owner to run `bin/magento` commands from the command line and to set up cron jobs, which schedule tasks for you.

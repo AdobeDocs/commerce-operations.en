@@ -197,7 +197,7 @@ Mapping files for supported Magento versions are located in subdirectories of `<
 
 To use the mapping files:
 
-1. Copy them from `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` to `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` and remove the `.dist` [extension](https://glossary.magento.com/extension).
+1. Copy them from `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` to `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` and remove the `.dist` extension.
 
 1. Update the path to the newly copied file in the `<options>` node of `config.xml`. The updated path should be one of the following:
 

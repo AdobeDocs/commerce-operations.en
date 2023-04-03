@@ -24,7 +24,7 @@ You can set values at the following times:
 
 - Before you install Commerce, you can set configuration values for the default scope only, because it is the only valid scope.
 
-- After you install Commerce, you can set configuration values for any website or [store view](https://glossary.magento.com/store-view) scope.
+- After you install Commerce, you can set configuration values for any website or store view scope.
 
 Use the following commands:
 

@@ -38,7 +38,7 @@ Where:
 
 >[!NOTE]
 >
->This command does not migrate all configuration settings. Verify all settings in the Magento 2 [Admin](https://glossary.magento.com/admin) before proceeding.
+>This command does not migrate all configuration settings. Verify all settings in the Magento 2 Admin before proceeding.
 
 
 The `Migration completed` message is displayed after the settings are transferred successfully.

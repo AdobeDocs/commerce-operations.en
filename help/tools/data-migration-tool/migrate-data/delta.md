@@ -7,9 +7,9 @@ description: Learn how to migrate only data that has changed since your last Mag
 
 The incremental migration tool installs deltalog tables (with prefix `m2_cl_*`) and triggers (for tracking changes) in the Magento 1 database during the [migration of data](data.md). These deltalog tables and triggers are essential to ensuring that you migrate only the changes made in Magento 1 since the last time you migrated data. These changes are:
 
-*  Data that customers added via [storefront](https://glossary.magento.com/storefront) (created orders, reviews, and changes in customer profiles)
+*  Data that customers added via storefront (created orders, reviews, and changes in customer profiles)
 
-*  All operations with orders, products, and categories in the [Admin](https://glossary.magento.com/magento-admin) panel
+*  All operations with orders, products, and categories in the Admin panel
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Where:
 
 In the `Delta` mode, the [!DNL Data Migration Tool] migrates data created only by Magento's own modules and is not responsible for the code or extensions made by third-party developers. If these extensions created data in the storefront database and the merchant wants to have this data in Magento 2 --- config files of the [!DNL Data Migration Tool] should be created and modified accordingly.
 
-If an [extension](https://glossary.magento.com/extension) has its own tables, and you need to track their changes for delta migration, follow these steps:
+If an extension has its own tables, and you need to track their changes for delta migration, follow these steps:
 
 1. Add the tables to be tracked to the `deltalog.xml` file
 1. Create an additional delta class which extends the `Migration\App\Step\AbstractDelta`

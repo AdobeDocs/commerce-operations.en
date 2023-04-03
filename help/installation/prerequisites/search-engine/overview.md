@@ -5,7 +5,7 @@ description: Follow these steps to install and configure supported search engine
 
 # Search engine prerequisites
 
-As of Adobe Commerce and Magento Open Source 2.4, all installations must be configured to use [Elasticsearch](https://www.elastic.co) or [OpenSearch](https://opensearch.org/) as the [catalog](https://glossary.magento.com/catalog) search solution.
+As of Adobe Commerce and Magento Open Source 2.4, all installations must be configured to use [Elasticsearch](https://www.elastic.co) or [OpenSearch](https://opensearch.org/) as the catalog search solution.
 
 >[!NOTE]
 >
