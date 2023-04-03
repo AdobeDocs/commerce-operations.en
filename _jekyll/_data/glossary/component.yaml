@@ -1,12 +1,12 @@
 ---
-title: "Magento component"
+title: "component"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
 synonyms:
   - "component"
 relatedTerms:
   - "ui-component"
 definition: |
-  Used to refer to a module, theme, or language package in Magento.
+  Used to refer to a module, theme, or language package in Adobe Commerce.

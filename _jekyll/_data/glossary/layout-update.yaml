@@ -4,7 +4,7 @@ wordClasses:
   - "noun"
 tags:
   - "design"
-  - "magento-software"
+  - "commerce-software"
 synonyms: []
 definition: |
   Used for snippets of code that are added to modify the XML layout or to import the layout instructions from another file.

@@ -3,7 +3,7 @@ title: "Shared Catalog"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
   - "product"
 synonyms: []
 relatedTerms:
@@ -13,7 +13,7 @@ definition: |
   A feature that allows merchants to create a catalog that can serve as their entire catalog or a subset of it, and then assign custom prices for one or more products.
   Merchants can then assign this catalog to one or more companies.
 
-  For example, a B2B merchant has three customers who have negotiated specific rates for his electronics distribution site.
+  For example, a B2B merchant has three customers who have negotiated specific rates for the merchant's electronics distribution site.
   Using the shared catalog feature, the merchant has:
 
   * A main catalog

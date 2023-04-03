@@ -3,11 +3,11 @@ title: "scope"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
 synonyms: []
 relatedTerms: []
 definition: |
-  In Magento, scope describes the extent of your store hierarchy that a setting can affect.
+  In Adobe Commerce, scope describes the extent of your store hierarchy that a setting can affect.
   Scope can apply to the following:
 
   * Global — all websites, stores, and store views

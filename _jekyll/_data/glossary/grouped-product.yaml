@@ -3,7 +3,7 @@ title: "grouped product"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
   - "product"
 synonyms: []
 relatedTerms:
@@ -14,5 +14,5 @@ definition: |
   Can be offered with variations of a single product or by grouping them by season or theme to create a coordinated set.
   Each product can be purchased separately, or as part of the group.
 
-  For example, for a knife that's available in four sizes, all four knives can be displayed within a grouped product page.
+  For example, for a knife that is available in four sizes, all four knives can be displayed within a grouped product page.
   Customers can select the sizes they want and add them to the cart from this page.

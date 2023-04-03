@@ -3,11 +3,11 @@ title: "adminhtml"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
 synonyms: []
 relatedTerms:
   - "area"
-  - "magento-admin"
+  - "commerce-admin"
 definition: |
   The internal area name assigned to the Admin.
 

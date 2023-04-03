@@ -3,13 +3,13 @@ title: "store view"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
   - "product"
 synonyms: []
 relatedTerms:
   - "store"
   - "website"
 definition: |
-  The Magento scope level of "store view" refers to the third level in the hierarchy of website(s), store(s) and store view(s).
+  The Commerce scope level of "store view" refers to the third level in the hierarchy of websites, stores and store views.
   Store views typically present the storefront in a different locale and language.
-  Use the store chooser in the header to change store views.
+  To change store views, use the store chooser in the header.

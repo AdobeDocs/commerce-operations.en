@@ -3,7 +3,7 @@ title: "Page Builder"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
   - "design"
 synonyms:
   - "Admin"
@@ -14,8 +14,8 @@ synonyms:
 relatedTerms:
   - "admin"
 definition: |
-  Page Builder is a Magento extension for creating content-rich pages by dragging and dropping pre-built controls to define custom layouts.
-  We call these controls "content types".
+  Page Builder is a Commerce extension for creating content-rich pages by dragging and dropping pre-built controls to define custom layouts.
+  These controls are also known as "content types".
   Merchants can design layouts and pages without coding experience.
   Extension support is provided for developers to extend Page Builder.
 

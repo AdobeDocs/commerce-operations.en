@@ -3,7 +3,7 @@ title: "bundle product"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
   - "product"
 synonyms: []
 relatedTerms:
@@ -11,7 +11,7 @@ relatedTerms:
   - "virtual-product"
   - "product-types"
 definition: |
-  Lets customers assemble a "build your own" customizable product from a variety of options and configurations.
+  Lets customers assemble a "build your own" customizable product from various options and configurations.
   Each item in the bundle is either a separate simple or virtual product.
 
   Learn more: [Configurable Products](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)

@@ -3,7 +3,7 @@ title: "catalog rules"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
   - "pricing"
   - "product"
 synonyms: []
@@ -11,5 +11,5 @@ relatedTerms:
   - "cart-rules"
   - "catalog"
 definition: |
-  Price rules that are applied to specific product(s) and trigger an action in response to a set of conditions.
+  Price rules that are applied to specific products and trigger an action in response to a set of conditions.
   Used to create promotions.

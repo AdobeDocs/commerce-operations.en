@@ -3,10 +3,8 @@ title: "static files"
 wordClasses:
   - "noun"
 tags:
-  - "magento-software"
+  - "commerce-software"
 synonyms: []
-relatedTerms:
-  - "css"
-  - "javascript"
+relatedTerms: []
 definition: |
   The collection of assets, such as CSS, fonts, images, and JavaScript that is used by a theme.
