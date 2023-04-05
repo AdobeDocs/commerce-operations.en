@@ -1,0 +1,21 @@
+---
+title: "Vendor Bundled Extension"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-extension"
+  - "vendor-bundled-extension"
+  - "extension"
+  - "VBE"
+synonyms:
+  - "extension"
+  - "VBE"
+relatedTerms:
+  - "extension"
+  - "bundled-extension"
+definition: |
+  Vendor-produced code that extends or customizes Commerce behavior and operates as a third-party extension is considered a Vendor Bundled Extension (VBE).
+  VBEs are thoroughly tested and included with each supported version of Magento Open Source and Adobe Commerce.
+  A VBE can include modules, themes, and language packs.
+
+  Learn more in the [Vendor Bundled Extension topic](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).

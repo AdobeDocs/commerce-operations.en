@@ -33,7 +33,7 @@ On the top level of this array are _configuration segments_. A segment has arbit
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) merely provides access to these sections but does not allow you to extend them.
 
-On the next hierarchy level, items in each segment are ordered according to the [module](https://glossary.magento.com/module) sequence definition, which is obtained by merging all modules' configuration files, except for disabled modules.
+On the next hierarchy level, items in each segment are ordered according to the module sequence definition, which is obtained by merging all modules' configuration files, except for disabled modules.
 
 The following sections discuss the structure and contents of the deployment configuration:
 
@@ -72,6 +72,6 @@ return array (
 
 The value `1` or `0` indicates whether a module is enabled or disabled.
 
-Disabled modules are not recognized by the Commerce application; in other words, they do not participate in merging configuration, in dependency injection, events, plug-ins, and so on. Disabled modules do not modify the [storefront](https://glossary.magento.com/storefront) or [Admin](https://glossary.magento.com/admin) and do not affect routing.
+Disabled modules are not recognized by the Commerce application; in other words, they do not participate in merging configuration, in dependency injection, events, plug-ins, and so on. Disabled modules do not modify the storefront or Admin and do not affect routing.
 
 The only practical difference of a disabled module and an absent module in the code base is that a disabled module is found by the autoloader, and its classes and constants are available for reuse in other code.

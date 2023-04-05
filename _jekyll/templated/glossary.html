@@ -1,0 +1,25 @@
+---
+---
+# Adobe Commerce Glossary
+{% assign glossary = site.data.glossary | sort %}
+{%- assign terms_grouped_by_letter = glossary | group_by_exp: "term", "term[0] | slice: 0" %}
+{%- for term_group in terms_grouped_by_letter %}
+## {{ term_group.name | capitalize }}
+{% for term in term_group.items %}
+### {{ term[1].title }}
+
+_{{ term[1].wordClasses | join: ", "}}_
+
+{{ term[1].definition | rstrip }}
+
+_Term attributes:_
+
+* _Field: {{ term[1].tags | join: ", " | replace: "-", " "}}_
+{%- unless term[1].synonyms == nil or term[1].synonyms == empty %}
+* _Synonyms: {{ term[1].synonyms | join: ", " | replace: "-", " " }}_
+{%- endunless %}
+{%- unless term[1].relatedTerms == nil or term[1].relatedTerms == empty %}
+* _Related terms: {{ term[1].relatedTerms | join: ", " | replace: "-", " " }}_
+{%- endunless %}
+{% endfor %}
+{%- endfor -%}

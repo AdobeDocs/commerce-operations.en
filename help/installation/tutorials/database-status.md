@@ -29,4 +29,4 @@ The command returns one of the following exit codes:
 |--------------|--------------|---------------|
 | 0 | Normal | None |
 | 1 | Some modules use code versions newer or older than the database | Run [`magento setup:upgrade`](database-upgrade.md) to update the database schema and run `composer update` from the application root directory to update component dependencies |
-| 2 | `magento setup:upgrade` is required | [`magento setup:upgrade`](database-upgrade.md) to update the [database schema](https://glossary.magento.com/database-schema) |
+| 2 | `magento setup:upgrade` is required | [`magento setup:upgrade`](database-upgrade.md) to update the database schema |

@@ -1,0 +1,16 @@
+---
+title: "store"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+  - "product"
+synonyms: []
+relatedTerms:
+  - "store-view"
+  - "website"
+definition: |
+  The Commerce scope level of "store" is the second level of your website's hierarchy, which goes as follows: website > store > store view.
+  Stores can be organized into one or many. Each store, potentially, has its own root category, and all share catalog and customer data.
+
+  Each store can have multiple store views, which are typically used to present the storefront in a different locale and language.

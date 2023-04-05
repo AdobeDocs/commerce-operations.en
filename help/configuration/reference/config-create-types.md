@@ -7,7 +7,7 @@ description: Create or extend configuration types.
 
 ## Extend configuration types
 
-To extend an existing configuration type, you need only create a configuration file in your [module](https://glossary.magento.com/module).
+To extend an existing configuration type, you need only create a configuration file in your module.
 
 For example, to add an event observer, you create `app/code/{VendorName}/{ModuleName}/etc/events.xml` and declare a new observer.
 
@@ -23,7 +23,7 @@ To create a configuration type, you must add at minimum:
 - XSD validation schema
 - XML configuration files
 
-For example, to introduce an [adapter](https://glossary.magento.com/adapter) for a new search server that enables extensions to configure how its entities are indexed in that server, create:
+For example, to introduce an adapter for a new search server that enables extensions to configure how its entities are indexed in that server, create:
 
 - A loader
 - An XSD schema file
