@@ -28,7 +28,7 @@ This tab has information that explains how to identify if and what [!DNL bots] a
 
 ![Total Bot traffic by bot name during selected time period:](../../assets/tools/observation-for-adobe-commerce/total-bot-traffic-bot-name.png)
 
-* The **[!UICONTROL Total Bot traffic by bot name during selected time period]:** table contains the aggregated count of non-cached requests where the [!UICONTROL request_user_agent] field has a string of [!DNL bots] in the value. This may or may not be the named [!DNL bot] as the [!UICONTROL request_user_agent] field value can be spoofed. The value under the [!UICONTROL Count] column is the most important.
+* The **[!UICONTROL Total Bot traffic by bot name during selected time period]** table contains the aggregated count of non-cached requests where the [!UICONTROL request_user_agent] field has a string of [!DNL bots] in the value. This may or may not be the named [!DNL bot] as the [!UICONTROL request_user_agent] field value can be spoofed. The value under the [!UICONTROL Count] column is the most important.
 
 ## [!UICONTROL Total Bot Traffic by Bot name/IP address]
 
