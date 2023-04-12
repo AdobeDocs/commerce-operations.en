@@ -21,4 +21,4 @@ The following sections provide details about the different AWS and Azure regions
 
 >[!NOTE]
 >
-> Only on-premises in China and Russia.
+> Only on-premises in China and Russia. All merchants that require Integration envrionments must use US regions.
