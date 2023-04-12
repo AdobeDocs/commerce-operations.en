@@ -30,9 +30,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-50527** (for Adobe Commerce >=2.3.7 <2.4.7*) - Fixes the error that occurs when saving a page with an empty dynamic block.
 * **ACSD-49973** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5*) - Improves performance of fetching bundled products through GraphQL.
 * **BB2B-2598** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7*) - Add caching capability to the availableStores, countries, country, currency, and storeConfig GraphQL queries.
-* Updated versions for: MDVA-42806.
-* Added new versions for the ACSD-48627 patch (ACSD-50591 and ACSD-48419), and for the ACSD-46815 patch (ACSD-50410).
-* Updated visibility for MDVA-29344, MDVA-22469, MDVA-32133, MDVA-19391, MDVA-33453, MDVA-33614, MDVA-36424, MDVA-41528, MDVA-36832, MDVA-39043.
+* Added new versions for MDVA-42806, ACSD-48627, ACSD-46815.
 * Updated patches metadata for ACSD-49773, ACSD-47179, ACSD-48300.
 
 ## v1.1.29 {#v1-1-29}
