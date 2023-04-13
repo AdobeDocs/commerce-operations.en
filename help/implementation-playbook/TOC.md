@@ -41,11 +41,11 @@ mini-toc-levels: 3
 - Infrastructure and deployment {#infrastructure}
   - [Overview](infrastructure/overview.md)
   - Self Hosting {#self-hosting}
-    - [Overview](self-hosting/overview.md)
-    - [On-premises infrastructure](infrastructure/on-premises.md)    
-    - [Security concepts](self-hosting/security-concepts.md)
-    - [Monitoring telemetry and tools](self-hosting/monitoring-tools.md)
-    - [Disaster recovery ideas](self-hosting/disaster-recovery-ideas.md)
+    - [Overview](infrastructure/self-hosting/overview.md)
+    - [On-premises infrastructure](infrastructure/self-hosting/on-premises.md)    
+    - [Security concepts](infrastructure/self-hosting/security-concepts.md)
+    - [Monitoring telemetry and tools](infrastructure/self-hosting/monitoring-tools.md)
+    - [Disaster recovery ideas](infrastructure/self-hosting/disaster-recovery-ideas.md)
     - [Performance tips](self-hosting/performance-tips.md)
   - Cloud infrastructure {#cloud}
     - [Overview](infrastructure/cloud/overview.md)
