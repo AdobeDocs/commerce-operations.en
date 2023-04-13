@@ -1,6 +1,7 @@
 ---
 title: On-premises Infrastructure
 description: Learn about Adobe Commerce on-premises infrastructure and third-party cloud services.
+last-substantial-update: 2023-04-13
 exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
 ---
 # Adobe Commerce on-premises infrastructure
@@ -11,7 +12,7 @@ The following diagram shows the reference architecture for deploying Adobe Comme
 
 ![Diagram showing self-hosted Adobe Commerce infrastructure on third-party cloud services](../../assets/playbooks/on-premises-infrastructure.svg)
 
-Let’s dive deeper into the roles and functions of each aspect of the infrastructure shown above:
+Let's dive deeper into the roles and functions of each aspect of the infrastructure shown above:
 
 1. Amazon Route 53 provides DNS configuration.
 
@@ -48,3 +49,5 @@ The value proposition for migrating Adobe Commerce to AWS is further enhanced by
 Adobe Commerce setup to AWS can replace specific application dependencies with fully managed alternatives available in the cloud. For example, rather than directly hosting a relational database on EC2 instances, the database for many applications can be easily replaced by Amazon Relational Database Service (AmazonRDS). The benefit to this strategy is that the operating responsibility of undifferentiated components can be offloaded to AWS without requiring significant changes to the core application.
 
 There are several deployment options available for running Adobe Commerce (both Magento Open Source and Adobe Commerce versions) on AWS. The most appropriate choice depends on your requirements for cost, scale, availability, and flexibility, as well as the AWS and Adobe Commerce skills of your organization.
+
+{{$include /help/_includes/hosting-related-links.md}}

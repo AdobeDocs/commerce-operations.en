@@ -40,7 +40,13 @@ mini-toc-levels: 3
     - [Headless architecture](architecture/headless/adobe-commerce.md)
 - Infrastructure and deployment {#infrastructure}
   - [Overview](infrastructure/overview.md)
-  - [On-premises infrastructure](infrastructure/on-premises.md)
+  - Self Hosting {#self-hosting}
+    - [Overview](../self-hosting/overview.md)
+    - [On-premises infrastructure](infrastructure/on-premises.md)    
+    - [Security concepts](self-hosting/security-concepts.md)
+    - [Monitoring telemetry and tools](self-hosting/monitoring-tools.md)
+    - [Disaster recovery ideas](self-hosting/disaster-recovery-ideas.md)
+    - [Performance tips](self-hosting/performance-tips.md)
   - Cloud infrastructure {#cloud}
     - [Overview](infrastructure/cloud/overview.md)
     - [Regions](infrastructure/cloud/regions.md)
