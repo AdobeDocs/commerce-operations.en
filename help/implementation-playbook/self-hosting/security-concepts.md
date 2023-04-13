@@ -1,12 +1,12 @@
 ---
-title: Self-hosted Adobe Commerce security concepts
-description: Learn about self-hosted security ideas and concepts and best practices to consider.
+title: Self-hosting Adobe Commerce security concepts
+description: Learn about self-hosting security ideas and concepts and best practices to consider. Learn concepts such as read only file system, malware scanning, and many other topics for consideration when hosting adobe commerce.
 landing-page-description: Learn some security concepts and things to consider when hosting Adobe Commerce on your own.
 short-description: Learn strategies and security concepts for hosting Adobe Commerce yourself.
 kt: 11420
 doc-type: tutorial
 audience: all
-last-substantial-update: 2023-04-11
+last-substantial-update: 2023-04-13
 
 ---
 
@@ -16,7 +16,7 @@ Security should always be a strong consideration for anything related to an e-co
 
 ## Read-only file system
 
-Read-only file system concept was borrowed from [Adobe Commerce Cloud](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. This completely removes one major area used by a bad actor. Many exploits have taken advantage of altering a file that is expected to be in the commerce application, to avoid detection. Instead of creating a one, the bad actor changes the contents of the file to perform an unexpected action. By making most the files read-only, this attack vector is reduced significantly.
+Read-only file system concept was borrowed from [Adobe Commerce on loud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. This completely removes one major area used by a bad actor. Many exploits have taken advantage of altering a file that is expected to be in the commerce application, to avoid detection. Instead of creating a one, the bad actor changes the contents of the file to perform an unexpected action. By making most the files read-only, this attack vector is reduced significantly.
 
 ## Use TWO Factor authentication and password managers
 

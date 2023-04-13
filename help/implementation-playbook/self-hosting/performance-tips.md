@@ -1,12 +1,12 @@
 ---
-title: Self-hosted Adobe Commerce performance tips
-description: Learn about self-hosted performance tips ideas and concepts and best practices to consider.
+title: Self-hosting Adobe Commerce performance tips
+description: Learn about self-hosting performance tips ideas and concepts and best practices to consider.
 landing-page-description: Learn some performance tips concepts and things to consider when hosting Adobe Commerce on your own.
 short-description: Learn strategies and performance tips concepts for hosting Adobe Commerce yourself.
 kt: 11420
 doc-type: tutorial
 audience: all
-last-substantial-update: 2023-04-11
+last-substantial-update: 2023-04-13
 
 ---
 
