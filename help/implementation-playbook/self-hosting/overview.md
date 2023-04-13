@@ -1,5 +1,5 @@
 ---
-title: Self-hosting overview.
+title: Self-hosting overview
 description: Learn about self-hosting best practices to consider. The topics range from security elements, to disaster recover many more. These topics can be considered independent of each other however ensuring you have considered all of the areas ensure your project has had deep thought and consideration to providing the most stable, secure, and resilient hosting options.
 landing-page-description: Learn some concepts and things to consider when hosting Adobe Commerce on your own.
 short-description: Learn strategies and concepts for hosting Adobe Commerce yourself.
