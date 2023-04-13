@@ -11,7 +11,7 @@ You should uninstall a module only if you're certain you won't use it. Instead o
 
 >[!NOTE]
 >
->This command checks that only dependencies declared in the `composer.json` file. If you uninstall a [module](https://glossary.magento.com/module) that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable](manage-modules.md) non-Composer modules.
+>This command checks that only dependencies declared in the `composer.json` file. If you uninstall a module that is _not_ defined in the `composer.json` file, this command uninstalls the module without checking for dependencies. This command does _not_, however, remove the module's code from the file system. You must use file system tools to remove the module's code (for example, `rm -rf <path to module>`). As an alternative, you can [disable](manage-modules.md) non-Composer modules.
 
 Command usage:
 
@@ -24,7 +24,7 @@ Where `{ModuleName}` specifies the module name in `<VendorName>_<ModuleName>` fo
 
 The module uninstall command performs the following tasks:
 
-1. Verifies that the specified modules exist in the code base and are packages installed by [Composer](https://glossary.magento.com/composer).
+1. Verifies that the specified modules exist in the code base and are packages installed by Composer.
 
    This command works _only_ with modules defined as Composer packages.
 
@@ -54,7 +54,7 @@ The module uninstall command performs the following tasks:
    >
    >Uninstalling a module _always_ runs `composer remove`. The `--remove-data` option removes database data and schema defined by the module's `Uninstall` class.
 
-1. Cleans the [cache](https://glossary.magento.com/cache).
+1. Cleans the cache.
 1. Updates generated classes.
 1. If `--clear-static-content` is specified, cleans [generated static view files](../../configuration/cli/static-view-file-deployment.md).
 1. Takes the store out of maintenance mode.
@@ -67,7 +67,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-One alternative is to uninstall both modules after backing up the module file system, `pub/media` files, and database tables but _not_ removing the module's [database schema](https://glossary.magento.com/database-schema) or data:
+One alternative is to uninstall both modules after backing up the module file system, `pub/media` files, and database tables but _not_ removing the module's database schema or data:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db

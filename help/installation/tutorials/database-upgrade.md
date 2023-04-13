@@ -9,7 +9,7 @@ Before you use this command, you must [install the application](../advanced.md).
 
 ## Upgrade the database schema and data
 
-Anytime you perform an action that causes the [database schema](https://glossary.magento.com/database-schema) or data to change, you must update them by running the command discussed in this section. A partial list of reasons follows:
+Anytime you perform an action that causes the database schema or data to change, you must update them by running the command discussed in this section. A partial list of reasons follows:
 
 *  You upgraded the application using the command line
 *  You installed or updated a component using the command line

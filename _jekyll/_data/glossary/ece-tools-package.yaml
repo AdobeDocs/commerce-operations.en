@@ -1,0 +1,14 @@
+---
+title: "ece-tools package"
+wordClasses:
+    - "noun"
+tags:
+    - "cli"
+    - "cloud"
+    - "deploy"
+synonyms: []
+relatedTerms: []
+definition: |
+    A set of scripts and tools designed to manage and deploy the Commerce application. This package simplifies many Adobe Commerce on cloud infrastructure processes, including deploying to a Docker environment, managing crons, verifying project configuration, and applying Adobe patches.
+
+    Learn more: [ece-tools package](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)

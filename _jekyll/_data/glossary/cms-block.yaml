@@ -1,0 +1,12 @@
+---
+title: "CMS block"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+synonyms: []
+relatedTerms:
+  - "block"
+  - "static-block"
+definition: |
+  A special variant of [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) that can only be created in the Admin and cannot be referenced through layout files.

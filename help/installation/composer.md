@@ -5,7 +5,7 @@ description: Follow these steps to install Adobe Commerce or Magento Open Source
 
 # Quick start on-premises installation
 
-We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source [metapackage](https://glossary.magento.com/metapackage) provides the following advantages:
+We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source metapackage provides the following advantages:
 
 -  Reuse third-party libraries without bundling them with source code
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management

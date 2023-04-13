@@ -1,0 +1,13 @@
+---
+title: "ADMIN variables"
+wordClasses:
+  - "noun"
+tags:
+  - "admin"
+  - "cloud"
+synonyms: []
+relatedTerms: []
+definition: |
+  ADMIN variables are project environment variables to override the configuration settings for the Admin user account to access the Admin UI.
+
+  Learn more: [ADMIN variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)

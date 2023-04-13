@@ -7,7 +7,7 @@ description: Learn to write static files to the Commerce file system during prod
 
 {{file-system-owner}}
 
-The static view files deployment command enables you to write [static files](https://glossary.magento.com/static-files) to the Commerce file system when the Commerce software is set for [production mode](../bootstrap/application-modes.md#production-mode).
+The static view files deployment command enables you to write static files to the Commerce file system when the Commerce software is set for [production mode](../bootstrap/application-modes.md#production-mode).
 
 The term _static view file_ refers to the following:
 

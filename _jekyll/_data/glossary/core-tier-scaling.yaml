@@ -1,0 +1,10 @@
+---
+title: "core tier scaling"
+wordClasses:
+  - "noun"
+tags:
+  - "cloud"
+synonyms: []
+relatedTerms: []
+definition: |
+  Core tier scaling consists of three service nodes for data storage, cache and services, such as OpenSearch, Elasticsearch, MariaDB, Redis.

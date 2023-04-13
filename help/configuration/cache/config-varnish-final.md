@@ -33,7 +33,7 @@ X-Magento-Cache-Debug: MISS
 
 ## Check page load times
 
-If Varnish is working, any Commerce page with cacheable blocks should load in less than 150 ms. Examples of such pages are the front door and [storefront](https://glossary.magento.com/storefront) [category](https://glossary.magento.com/category) pages.
+If Varnish is working, any Commerce page with cacheable blocks should load in less than 150 ms. Examples of such pages are the front door and storefront category pages.
 
 Use a browser inspector to measure page load times.
 
@@ -60,7 +60,7 @@ For example, to use the Chrome inspector:
 
 Make sure the `<magento_root>/var/page_cache` directory is empty:
 
-1. Log in to your Commerce server, or switch to, the [file system owner](https://glossary.magento.com/magento-file-system-owner).
+1. Log in to your Commerce server, or switch to, the file system owner.
 1. Enter the following command:
 
    ```bash

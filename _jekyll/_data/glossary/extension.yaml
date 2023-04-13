@@ -1,0 +1,15 @@
+---
+title: "extension"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+synonyms: []
+relatedTerms:
+  - "component"
+  - "module"
+  - "package"
+definition: |
+  Code that extends or customizes Adobe Commerce behavior.
+  You can optionally package and distribute an extension on Commerce Marketplace or another extension distribution system.
+  A Commerce extension can include modules, themes, and language packs.

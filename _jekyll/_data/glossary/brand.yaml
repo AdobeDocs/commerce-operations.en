@@ -1,0 +1,17 @@
+---
+title: "brand"
+wordClasses:
+  - "noun"
+  - "verb"
+tags:
+  - "business"
+synonyms: []
+relatedTerms: [] 
+definition: |
+  A unique identity that defines a particular product or group of products by the manufacturer or Designer.
+  These include name brands for clothing, appliances, luxury items, and so on.
+  Your company may also be the brand, selling products under multiple brands based on the business unit, target audience, and so on.
+
+  Use custom attributes to save brand information for products.
+
+  Some extensions and integrations may use or require a brand for your products, such as Google Shopping ads Channel and Amazon Sales Channel.
