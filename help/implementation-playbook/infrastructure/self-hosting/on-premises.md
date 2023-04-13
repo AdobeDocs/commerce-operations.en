@@ -10,7 +10,7 @@ The motivations for starting a new Adobe Commerce implementation or moving an ex
 
 The following diagram shows the reference architecture for deploying Adobe Commerce on-premises on AWS infrastructure. Other cloud providers like Azure, Google Cloud, and Alibaba Cloud share a similar infrastructure design and homologous services.
 
-![Diagram showing self-hosted Adobe Commerce infrastructure on third-party cloud services](../../assets/playbooks/on-premises-infrastructure.svg)
+![Diagram showing self-hosted Adobe Commerce infrastructure on third-party cloud services](/help/assets/playbooks/on-premises-infrastructure.svg)
 
 Let's dive deeper into the roles and functions of each aspect of the infrastructure shown above:
 
