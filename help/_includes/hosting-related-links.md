@@ -6,9 +6,9 @@ description: Links to related pages in self-hosting section
 
 ## Useful Self-Hosting resources
 
-* [Overview](../implementation-playbook/self-hosting/overview.md)
-* [On-premises infrastructure](../implementation-playbook/infrastructure/on-premises.md)
-* [Security concepts](../implementation-playbook/self-hosting/security-concepts.md)
-* [Monitoring telemetry and tools](../implementation-playbook/self-hosting/monitoring-tools.md)
-* [Disaster recovery ideas](../implementation-playbook/self-hosting/disaster-recovery-ideas.md)
-* [Performance tips](../implementation-playbook/self-hosting/performance-tips.md)
+* [Overview](/help/implementation-playbook/self-hosting/overview.md)
+* [On-premises infrastructure](/help/implementation-playbook/infrastructure/on-premises.md)
+* [Security concepts](/help/implementation-playbook/self-hosting/security-concepts.md)
+* [Monitoring telemetry and tools](/help/implementation-playbook/self-hosting/monitoring-tools.md)
+* [Disaster recovery ideas](/help/implementation-playbook/self-hosting/disaster-recovery-ideas.md)
+* [Performance tips](/help/implementation-playbook/self-hosting/performance-tips.md)
