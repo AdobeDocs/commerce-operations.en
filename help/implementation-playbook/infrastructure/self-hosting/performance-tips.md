@@ -12,13 +12,13 @@ last-substantial-update: 2023-04-13
 
 # Self-hosting Adobe Commerce Performance Tips
 
-Using a flexible and powerful e-commerce platform shouldn't mean you have to sacrifice performance. There have been numerous improvements to the core application since Adobe Commerces' inception. In version 2.5.4 the Adobe Commerce engineering team performed a set test to benchmark the application. This helped bolster the fact that Adobe Commerce is capable at handling a large catalog of over 240 million SKUs, API request times are exceptional averaging 300 ms and the number of page views and orders placed per hour are phenomenal coming in at 2 million page views and 208,000 orders per hour. 
+Using a flexible and powerful e-commerce platform does not mean that you have to sacrifice performance. There have been numerous improvements to the core application since Adobe Commerce's inception. In version 2.5.4, the Adobe Commerce engineering team performed a set test to benchmark the application. The test results demonstrated that Adobe Commerce is capable at handling a large catalog of over 240 million SKUs, API request times are exceptional averaging 300 ms, and the number of page views and orders placed per hour are phenomenal coming in at 2 million page views and 208,000 orders per hour.
 
-You can read the latest benchmark results by heading over to [Experience League - Adobe Commerce - Implementation Playbook - Benchmarks](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html){target="_blank"}
+See the latest benchmark results by heading over to [Experience League - Adobe Commerce - Implementation Playbook - Benchmarks](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html){target="_blank"}.
 
-To keep things as optimal as possible, having a set of tools and tips to follow will encourage a site owner to keep these standards in place when adding customizations and additional complexity to their project.
+To keep things as optimal as possible, follow these standards when adding customizations and additional complexity to your project.
 
-In the following sections we cover some topics to consider using and when possible some advice for how to optimize.
+The following sections cover topics to consider and advice for how to optimize your self-hosting implementation.
 
 ## Varnish
 
@@ -30,19 +30,19 @@ By choosing a good solution for your project regarding Varnish, you are setting 
 
 ## CDN
 
-Along with Varnish being a valuable asset to your Adobe Commerce project, next in line is a CDN. Along with your Varnish a CDN can provide cached instances for your CSS, page assets like images to help reduce bandwidth coming to your Adobe Commerce application. It can cache GraphQL responses furthering the benefits of a headless Adobe Commerce site. Some CDNs also provide image optimization, provide a web application firewall, and many other features. 
+Along with Varnish being a valuable asset to your Adobe Commerce project, next in line is a CDN. Along with your Varnish a CDN can provide cached instances for your CSS, page assets such as images to help reduce bandwidth coming to your Adobe Commerce application. It can cache GraphQL responses furthering the benefits of a headless Adobe Commerce site. Some CDNs provide image optimization, a web application firewall, and other features. 
 
-Adobe Commerce on cloud chose to use Fastly for its Varnish cache but also as its CDN. This single solution provides a myriad of features to provide a great experience for the Adobe Commerce on cloud customers. You can read the Fastly CDN user guide in Experience League [Fastly services overview](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html){target="_blank"}
+Adobe Commerce on cloud chose to use Fastly for its Varnish cache but also as its CDN. This single solution provides a myriad of features to provide a great experience for the Adobe Commerce on cloud customers. You can read the Fastly services overview in Experience League [Fastly services overview](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html){target="_blank"}
 
 A CDN provides optimized and secure delivery content for the Adobe Commerce project. Where this may not be a required component to your project, it should be considered as your site matures and the amount of visitors increase. By providing a CDN, you can delay adding additional hardware to the infrastructure or scaling the existing infrastructure because of the load removed from each request. 
 
 ## Disable Modules
 
-Disabling a module that is unused should be considered, but not taken lightly. This technique does reduce some overhead and processing time for some requests, but there are side effects that should be considered. There are often times, when a developer makes an assumption that a module will be available when creating functionality. This often is safe, unless they chose to use some classes found in a module that was disabled. 
+Disabling a module that is unused should be considered, but not taken lightly. This technique does reduce some overhead and processing time for some requests, but there are side effects that should be considered. There are often times, when a developer makes an assumption that a module is available when creating functionality. This often is safe, unless they chose to use some classes found in a module that was disabled. 
 
 Disabling a module such as the native "newsletter" is a fairly common event. This is true especially when the store owner has a third-party company that manages their newsletter. Where this can be an issue is when a third-party module is installed and for some reason they decided to use a class from the newsletter. This accidental dependency will likely get caught during some initial installation and testing, but then you are forced to decide if you want to keep this third-party module, enable newsletter and then regression test the site looking for any odd behavior that is introduced. Or do you find a replacement for that third-party module. Both decisions come with risk, time and possibly bugs. 
 
-So before you start to disable as many unused modules as your possible can, make sure that you don't have any tests such as unit, [MFTF](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/){target="_blank"}, [Codeception testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/){targe="_blank"} load tests, or API requests that may be affected.
+Before you disable unused modules, make sure that you do not have any tests such as unit, [MFTF](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/){target="_blank"}, [Codeception testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/){targe="_blank"} load tests, or API requests that may be affected.
 
 ## Require Adobe Commerce and PHP coding standards to be followed for every pull request
 
