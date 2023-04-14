@@ -10,7 +10,7 @@ last-substantial-update: 2023-04-13
 
 ---
 
-# Self-hosted Adobe Commerce Disaster Recovery ideas
+# Self-hosting Adobe Commerce Disaster Recovery ideas
 
 Disaster recovery for this article encompasses a failed deployment. Although the entire process may not be the same, similar principles apply. A disaster may be due to a failed production deployment, server becoming non-responsive, discovery of an exploit and many other scenarios. Where the recovery process for a failed deployment may only require two simple steps, a recovery from an exploit may be much more challenging. Due to the complexity of environments, hosting variations, and other complexities this article provides ideas and concepts but you are required to continue the investigation on your own. This way you can make sure you design a strategy that suits your business needs.
 

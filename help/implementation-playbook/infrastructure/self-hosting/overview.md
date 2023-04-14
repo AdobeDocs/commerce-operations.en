@@ -10,13 +10,13 @@ last-substantial-update: 2023-04-13
 
 ---
 
-# Self-hosted Adobe Commerce Overview
+# Self-hosting Adobe Commerce Overview
 
 When considering the move to an e-commerce platform such as Adobe Commerce, you have the luxury of options. However, with these options come additional costs, risk, and liabilities to consider. Hosting a Commerce site can be done using a packaged solution, such as [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}, where the infrastructure, servers, email, SSL certificates and many more are pre-configured and ready for use. Finding a good hosting solution such as Adobe Commerce on cloud infrastructure makes the entire process easier, there are compelling reasons for self-hosting your Commerce site. Within the accompanying pages, there are many topics that provide insight and guidance about the services, techniques, and concepts that self hosting provides. The information here is not exhaustive, and it is not expected that you should implement every suggestion. However, these articles can help you understand the ideas and concepts that can make the Adobe Commerce self hosting as stable and secure as possible.
 
-When you are not going with Adobe Commerce on cloud infrastructure, the terms used are self-hosted or on-premise, or on-prem for short. On-premises does not only mean in a data center in a building that a company owns. This term represents anything that is not managed support by Adobe Commerce. There are hosting companies that cater to Adobe Commerce, they are also considered as self-hosted or on-prem. 
+When you are not going with Adobe Commerce on cloud infrastructure, the terms used are self-hosting or on-premise, or on-prem for short. On-premises does not only mean in a data center in a building that a company owns. This term represents anything that is not managed support by Adobe Commerce. There are hosting companies that cater to Adobe Commerce, they are also considered as self-hosting or on-prem. 
 
-Regarding Adobe Commerce and Magento Open-source, most of the advice and tips provided works for either version. Even though it may not directly state so, the expectation is that it is applicable for both. Within this topic of self-hosted options for Adobe Commerce, both versions are considered. And finally, most topics are relevant for [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} is selected as the hosting provider.
+Regarding Adobe Commerce and Magento Open-source, most of the advice and tips provided works for either version. Even though it may not directly state so, the expectation is that it is applicable for both. Within this topic of self-hosting options for Adobe Commerce, both versions are considered. And finally, most topics are relevant for [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} is selected as the hosting provider.
 
 ## Terminology level set
 
