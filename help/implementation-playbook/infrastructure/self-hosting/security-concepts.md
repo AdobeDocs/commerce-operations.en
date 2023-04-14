@@ -205,7 +205,7 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 ## Use Environment Variables
 
-[!BADGE Adobe Commerce Cloud only]{type=Informative}
+[!BADGE Adobe Commerce on cloud only]{type=Informative}
 
 Using environment variables helps by allowing you the ability to set certain values that can and should be changed for each environment. For example, you may want to have different admin URL for every environment. By setting this value as an Environment Variable, you are able to configure this and also reference this value quickly from the Cloud UI when necessary.
 
@@ -227,6 +227,6 @@ The WAF examines web and admin traffic to identify any suspicious activity. It e
 
 As a cloud-based service, the WAF requires no hardware or software to install or maintain. Fastly, an existing technology partner, provides the software and expertise. Their high performance, always-on WAF resides in each cache node across Fastly's global delivery network.
 
-For more information on the WAF on the Adobe Commerce Cloud provide by Fastly, read the [Adobe Commerce Knowledge Base FAQ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}. 
+For more information on the WAF on the Adobe Commerce on cloud provide by Fastly, read the [Adobe Commerce Knowledge Base FAQ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}. 
 
 {{$include /help/_includes/hosting-related-links.md}}
