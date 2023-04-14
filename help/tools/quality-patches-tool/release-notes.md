@@ -14,6 +14,25 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.30 {#v1-1-30}
+
+* **ACSD-50336** (for Adobe Commerce and Magento Open Source >=2.4.4-p1 <2.4.4-p3) - Fixes the issue where product alert emails are not sent when a product is back in stock or the price is changed.
+* **ACSD-50367** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where customer address export does not work when a multi-select customer address attribute without values is created.
+* **ACSD-49877** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where video autoplay does not work on mobile [!DNL Safari] when the video is linked directly to a remote video file and not a streaming service.
+* **ACSD-50165** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the error *The file can't be deleted. Warning!unlink: No such file or directory* when flushing JS/CSS cache from the Admin.
+* **ACSD-49737** (for Adobe Commerce and Magento Open Source >=2.4.1-p1 <2.4.7) - Fixes the issue where a coupon is incorrectly marked as used after a failed card payment.
+* **ACSD-50814** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where an admin user is not able to create a credit memo.
+* **ACSD-50116** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where an admin user cannot create a URL rewrite for subcategories level 3 or lower.
+* **ACSD-49513** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.5) - Fixes the issue where remote storage synchronization fails because of 0-byte files.
+* **ACSD-46683** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the shipping price shows *Not yet calculated*.
+* **ACSD-49129** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where the *[!UICONTROL content]* attribute (base64 image code) is not returned in `rest/V1/products/sku/media` product media API responses.
+* **ACSD-50276** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where the customer registration form doesn't work on the storefront if a multi-select customer attribute is created.
+* **ACSD-50527** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the error that occurs when saving a page with an empty dynamic block.
+* **ACSD-49973** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Improves performance of fetching bundled products through GraphQL.
+* **BB2B-2598** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Add caching capability to the [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], and [!UICONTROL storeConfig] GraphQL queries.
+* Added new versions for MDVA-42806, ACSD-48627, ACSD-46815.
+* Updated patches metadata for ACSD-49773, ACSD-47179, ACSD-48300.
+
 ## v1.1.29 {#v1-1-29}
 
 * **ACSD-49389** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where a ready-to-pick-up email is sent by API when the order is not ready for pickup.
