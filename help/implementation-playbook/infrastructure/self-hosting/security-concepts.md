@@ -16,7 +16,7 @@ Security should always be a strong consideration for anything related to an e-co
 
 ## Read-only file system
 
-Read-only file system concept was borrowed from [Adobe Commerce on loud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. This completely removes one major area used by a bad actor. Many exploits have taken advantage of altering a file that is expected to be in the commerce application, to avoid detection. Instead of creating a one, the bad actor changes the contents of the file to perform an unexpected action. By making most the files read-only, this attack vector is reduced significantly.
+The Read-only file system concept was borrowed from [Adobe Commerce on loud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. This completely removes one major area used by a bad actor. Many exploits have taken advantage of altering a file that is expected to be in the Commerce application to avoid detection. Instead of creating one, the bad actor changes the contents of an existing file to perform an unexpected action. Making the file system read-only reduces this attack vector significantly.
 
 ## Use TWO Factor authentication and password managers
 
