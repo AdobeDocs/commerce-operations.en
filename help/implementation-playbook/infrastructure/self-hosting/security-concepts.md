@@ -12,7 +12,9 @@ last-substantial-update: 2023-04-13
 
 # Security Concepts
 
-Security should always be a strong consideration for anything related to an e-commerce project. Without a strong security stance, the surface area that can be attacked is exponentially larger. The concepts and ideas presented provide methods that are proven to reduce the common vulnerabilities that are typically exploited. The following are not in any particular order. They are meant to provide some ideas and concepts to consider. Many are free or would require minimal setup and configuration and subsequent monitoring. Research these topics outside of this tutorial to ensure you have a deep enough understanding of the concepts presented here.
+Security should always be a strong consideration for anything related to an e-commerce project. Without a strong security stance, the surface area that can be attacked is exponentially larger. The concepts and ideas presented provide methods that are proven to reduce the common vulnerabilities typically exploited.
+
+The following concepts are not in any particular order. They are meant to provide some ideas and concepts to consider. Many are free or would require minimal setup and configuration and subsequent monitoring. Research these topics outside of this tutorial to ensure you have a deep enough understanding of the concepts presented here.
 
 ## Read-only file system
 
