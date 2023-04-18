@@ -29,6 +29,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-50276** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where the customer registration form doesn't work on the storefront if a multi-select customer attribute is created.
 * **ACSD-50527** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the error that occurs when saving a page with an empty dynamic block.
 * **ACSD-49973** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Improves performance of fetching bundled products through GraphQL.
+* **ACSD-51114** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where a random product disappears from large catalogs when asynchronous indexing is enabled. Improves performance of asynchronous reindexing for large catalogs.
 * **BB2B-2598** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Add caching capability to the [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], and [!UICONTROL storeConfig] GraphQL queries.
 * Added new versions for MDVA-42806, ACSD-48627, ACSD-46815.
 * Updated patches metadata for ACSD-49773, ACSD-47179, ACSD-48300.
