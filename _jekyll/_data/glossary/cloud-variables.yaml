@@ -1,0 +1,12 @@
+---
+title: "cloud variables"
+wordClasses:
+  - "noun"
+tags:
+  - "cloud"
+synonyms: []
+relatedTerms: []
+definition: |
+  Cloud variables are environment variables specific to Adobe Commerce on cloud infrastructure and use the **`MAGENTO_CLOUD`** prefix.
+
+  Learn more: [Cloud variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)

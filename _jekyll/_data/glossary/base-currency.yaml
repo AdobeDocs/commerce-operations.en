@@ -1,0 +1,16 @@
+---
+title: "base currency"
+wordClasses:
+  - "noun"
+tags:
+  - "pricing"
+synonyms: []
+relatedTerms: [] 
+definition: |
+  The primary currency that is used per store view for all online payments.
+  Stores can accept currencies from more than 200 countries around the world.
+  The store front provides a currency selector for multiple accepted currencies for a specific country or locale.
+  Currency symbols appear in product prices and sales documents such as orders and invoices.
+  You can customize the currency symbols as needed and set the display of the price separately for each store or view.
+
+  Learn more: [Currency](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)

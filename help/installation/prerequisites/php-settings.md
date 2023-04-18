@@ -5,7 +5,7 @@ description: Follow these steps to install required PHP extensions and configure
 
 # PHP settings
 
-This topic discusses how to set required [PHP](https://glossary.magento.com/php) options.
+This topic discusses how to set required PHP options.
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ Most flavors of Linux have PHP installed by default. This topic assumes that you
 php -v
 ```
 
-If [PHP](https://glossary.magento.com/php) is installed, a message similar to the following displays:
+If PHP is installed, a message similar to the following displays:
 
 ```terminal
 PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )

@@ -9,9 +9,9 @@ There are four kinds of data that need to be migrated manually:
 
 *  Media
 
-*  [Storefront](https://glossary.magento.com/storefront) design
+*  Storefront design
 
-*  [Admin](https://glossary.magento.com/admin) user accounts
+*  Admin user accounts
 
 *  Access Control Lists (ACLs)
 
@@ -34,7 +34,7 @@ This section applies to you *only* if you store media files in the Magento datab
 
 1. In the right pane, scroll to **Storage Configuration for Media**.
 
-1. From the **Select Media Database** list, click the name of your [media storage](https://glossary.magento.com/media-storage) database.
+1. From the **Select Media Database** list, click the name of your media storage database.
 
 1. Click **Synchronize**.
 
@@ -42,15 +42,15 @@ Then, repeat the same steps in your Magento 2 Admin panel.
 
 ### Media files in the file system
 
-All media files (images for products, categories, the [WYSIWYG](https://glossary.magento.com/wysiwyg) editor, and so on) should be copied manually from `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
+All media files (images for products, categories, the WYSIWYG editor, and so on) should be copied manually from `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
 
 However, do *not* copy the `.htaccess` files located in the Magento 1 `media` folder. Magento 2 has its own `.htaccess` that should be preserved.
 
 ## Storefront design
 
-*  Design in files (CSS, JS, templates, [XML](https://glossary.magento.com/xml) layouts) changed its location and format
+*  Design in files (CSS, JS, templates, XML layouts) changed its location and format
 
-*  [Layout](https://glossary.magento.com/layout) Updates stored in database. Placed through Magento 1 Admin in [CMS](https://glossary.magento.com/cms) Pages, CMS Widgets, [Category](https://glossary.magento.com/category) Pages and Product Pages
+*  Layout Updates stored in database. Placed through Magento 1 Admin in CMS Pages, CMS Widgets, Category Pages and Product Pages
 
 ## Access Control Lists (ACLs)
 

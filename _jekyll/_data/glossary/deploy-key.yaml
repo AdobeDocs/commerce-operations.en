@@ -1,0 +1,12 @@
+---
+title: "deploy key"
+wordClasses:
+  - "noun"
+tags:
+  - "cloud"
+synonyms: []
+relatedTerms: []
+definition: |
+  A deploy key is your project SSH public key and enables read-only or read-write (if enabled) access to a Git repository.
+
+  Learn more: [Secure connections](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)

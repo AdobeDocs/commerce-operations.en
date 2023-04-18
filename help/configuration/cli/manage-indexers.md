@@ -115,6 +115,10 @@ You can run the following indexes in parallel mode:
 -  `Catalog Price` can be paralleled by website and customer groups.
 -  `Catalog Permissions` can be paralleled by customer groups.
 
+>[!INFO]
+>
+>Parallelization for Catalog Search Fulltext and Category Product is enabled by default.
+
 To use parallelization, set one of the available dimensions modes for the product price indexer:
 
 -  `none` (default)

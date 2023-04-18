@@ -1,0 +1,22 @@
+---
+title: "block"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+synonyms:
+  - "Dynamic Blocks"
+relatedTerms:
+  - "cms-block"
+  - "static-block"
+  - "container"
+  - "layout"
+definition: |
+  A unit of page output that renders some distinctive content - a piece of information, a user interface element - anything visually tangible for the end-user.
+  [Blocks](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) are implemented and provided by modules.
+  Blocks use templates to generate HTML.
+  Examples of blocks include a category list, a mini cart, product tags, and product listing.
+
+  [Dynamic blocks](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) provide content based on logic, such as price rules.
+
+  Page Builder expands on the interactivity and creation of [blocks](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) and [dynamic blocks](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).

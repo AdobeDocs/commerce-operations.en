@@ -149,7 +149,7 @@ If your web server is clustered, enter the command on each web server host.
 
 When you install Adobe Commerce or Magento Open Source, you must specify the following:
 
-*  The base [URL](https://glossary.magento.com/url) (also referred to as the *store address*) specifies the hostname or IP address of the *web node*
+*  The base URL (also referred to as the *store address*) specifies the hostname or IP address of the *web node*
 *  Database host is the *remote database server* IP address (or load balancer if the database server is clustered)
 *  Database username is the *local web node* database user to which you gave access
 *  Database password is the local web node user's password

@@ -1,0 +1,15 @@
+---
+title: "store view"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+  - "product"
+synonyms: []
+relatedTerms:
+  - "store"
+  - "website"
+definition: |
+  The Commerce scope level of "store view" refers to the third level in the hierarchy of websites, stores and store views.
+  Store views typically present the storefront in a different locale and language.
+  To change store views, use the store chooser in the header.
