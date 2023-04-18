@@ -137,7 +137,7 @@ This tab has information that explains how to identify if and what [!DNL bots] a
 
 ![Top 5 with non-200 status codes showing cache_status:](../../assets/tools/observation-for-adobe-commerce/top-5-non-200-status-code-status.png)
 
-* The **[!UICONTROL Top 5 with non-200 status codes showing cache_status:]** table is showing at an IP / status level the counts of each with the [!UICONTROL cache_status] value.
+* The **[!UICONTROL Top 5 with non-200 status codes showing cache_status]** table is showing at an IP / status level the counts of each with the [!UICONTROL cache_status] value.
 
 ## [!UICONTROL Pageview Latency will show as spikes]
 
