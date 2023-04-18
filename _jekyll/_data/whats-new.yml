@@ -1,8 +1,31 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Mar 27 10:26:53 2023
+updated: Mon Apr 10 10:34:48 2023
 entries:
+- description: Added [Glossary](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html).
+    Migrated from https://glossary.magento.com.
+  versions: ''
+  type: new-topic
+  date: April 5, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/499
+  merge_commit: d9b7659e5d4c3770956f0c2a96e5c97a3dc2af19
+  contributor: shevtsov
+  membership: false
+  labels:
+  - migration
+  - new-topic
+- description: Added `catalog/seo/generate_category_product_rewrites` to the [catalog
+    configuration path reference](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-catalog.html).
+  versions: ''
+  type: technical
+  date: March 28, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/497
+  merge_commit: 2a93d4cdbf6ad59f1bf1bd0e4f89bdefb84652a8
+  contributor: jmatthew
+  membership: false
+  labels:
+  - technical
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.29 Quality Patches Tool (QPT) package release.
   versions: ''

@@ -93,7 +93,7 @@ Selecting pool servers is up to you. If you use NTP pool servers, ntp.org recomm
 
 ## Create phpinfo.php
 
-The [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) file displays a large amount of information about [PHP](https://glossary.magento.com/php) and its extensions.
+The [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) file displays a large amount of information about PHP and its extensions.
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ phpinfo();
 
 For more information, see the [phpinfo manual page](https://www.php.net/manual/en/function.phpinfo.php).
 
-To view the results, enter the following [URL](https://glossary.magento.com/url) in your browser's location or address field:
+To view the results, enter the following URL in your browser's location or address field:
 
 ```http
 http://<web server host or IP>/phpinfo.php

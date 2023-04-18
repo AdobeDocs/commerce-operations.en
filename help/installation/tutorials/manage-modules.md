@@ -19,7 +19,7 @@ Where
 
 *  `--enabled` lists all enabled modules.
 *  `--disabled` lists all disabled modules.
-*  `<module-list>` is a space-delimited list of modules to check the status. If any [module](https://glossary.magento.com/module) name contains special characters, enclose the name in either single or double quotes.
+*  `<module-list>` is a space-delimited list of modules to check the status. If any module name contains special characters, enclose the name in either single or double quotes.
 
 ## Module enable, disable
 
@@ -35,7 +35,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 Where
 
-*  `<module-list>` is a space-delimited list of modules to enable or disable. If any [module](https://glossary.magento.com/module) name contains special characters, enclose the name in either single or double quotes.
+*  `<module-list>` is a space-delimited list of modules to enable or disable. If any module name contains special characters, enclose the name in either single or double quotes.
 *  `--all` to enable or disable all modules at the same time.
 *  `-f` or `--force` to force a module to be enabled or disabled despite dependencies. Before you use this option, see [About enabling and disabling modules](#about-enabling-and-disabling-modules).
 *  `-c` or `--clear-static-content` cleans [generated static view files](../../configuration/cli/static-view-file-deployment.md).

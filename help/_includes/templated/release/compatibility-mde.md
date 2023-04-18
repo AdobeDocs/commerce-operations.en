@@ -345,6 +345,44 @@ Magento Open Source, but is not supported.
       <th colspan="9">Catalog Service</th>
     </tr>
     <tr>
+      <td>Catalog Service 1.7</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Catalog Service 1.6</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Catalog Service 1.5</td>
       <td>Supported</span>
       </td>

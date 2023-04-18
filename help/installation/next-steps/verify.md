@@ -5,7 +5,7 @@ description: Follow these steps to confirm that your on-premises Adobe Commerce 
 
 # Verify the installation
 
-Go to the [storefront](https://glossary.magento.com/storefront) in a web browser. For example, if your installation base [URL](https://glossary.magento.com/url) is `http://www.example.com`, enter it in your browser's address or location bar.
+Go to the storefront in a web browser. For example, if your installation base URL is `http://www.example.com`, enter it in your browser's address or location bar.
 
 The following figure shows a sample storefront page. If it displays as follows, your installation was a success!
 
@@ -23,9 +23,9 @@ If the page displays a `404 (Not Found)` error or doesn't display styles, see [t
 
 ## Verify the Admin
 
-Go to the [Admin](https://glossary.magento.com/magento-admin) in a web browser. For example, if your installation base URL is `http://www.example.com`, and the Admin URI is `admin_au1nT`, enter `http://www.example.com/admin_au1nT` in your browser's address or location bar.
+Go to the Admin in a web browser. For example, if your installation base URL is `http://www.example.com`, and the Admin URI is `admin_au1nT`, enter `http://www.example.com/admin_au1nT` in your browser's address or location bar.
 
-(The [Admin](https://glossary.magento.com/admin) URI is specified by the value of the `backend-frontname` installation parameter.)
+(The Admin URI is specified by the value of the `backend-frontname` installation parameter.)
 
 When prompted, log in as an administrator.
 
