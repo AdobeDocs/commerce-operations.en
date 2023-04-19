@@ -9,8 +9,9 @@ There is also a list of [!UICONTROL External Resources] links for Adobe Commerce
 
 ## Elements
 
-* **[!UICONTROL Security Center Dashboard]**: Displays security insights for your site.
-The security information shown includes [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).
+* **[!UICONTROL Security Center Widget]**: Displays security insights for your site.
+The security information shown includes [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).<br>
+The [[!UICONTROL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) monitors Adobe Commerce sites for security risks. It can proactively and efficiently detect malware on merchant stores and notify merchants if there are any security risks, malware, or threats, and can identify missing Adobe Commerce patches and updates.
 
 * **[!UICONTROL Recommendations]**: Displays best practice recommendations for your site. Recommendations (issues found and recommendations to fix) are sorted by priority—P0 (Critical) to P4 (Notification).
 Recommendations include Description, Recommendation, Site Impact, Root Cause, Scenarios/Preconditions, and Tools Used.
@@ -18,7 +19,7 @@ Recommendations include Description, Recommendation, Site Impact, Root Cause, Sc
 * **[!UICONTROL Upgrade Compatibility Tool]**: Checks an Adobe Commerce customized instance against a specific version by analyzing all modules and core code installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce. It also identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
 The [!UICONTROL Upgrade Compatibility Tool] allows you to identify when core code changes have been made to customized features.
 
-* **[!UICONTROL Security Scan Tool]**: Monitors Adobe Commerce sites for security risks. It can proactively and efficiently detect malware on merchant stores and notify merchants if there are any security risks, malware, or threats, and can identify missing Adobe Commerce patches and updates.
+* The **[!UICONTROL Security Scan Tool]** monitors Adobe Commerce sites for security risks. It can proactively and efficiently detect malware on merchant stores and notify merchants if there are any security risks, malware, or threats, and can identify missing Adobe Commerce patches and updates.
 
 * **[!UICONTROL Extensions]**: Displays the extensions currently installed on your Adobe Commerce instance. [Adobe Commerce Marketplace](https://marketplace.magento.com/extensions.html) information is provided, where available, for extensions listed there.
 
@@ -35,7 +36,7 @@ The **[!UICONTROL Dashboard]** page is your at-a-glance command center in the [!
 
 ## Benefits
 
-* The [!DNL widgets] for [!UICONTROL Security Center Dashboard], [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan] all use easy-to-read color-coded interactive circular graphs with graph legends to the side and count totals in the center to denote how many [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan Tool] items each feature has. [!UICONTROL Recommendations] and [!UICONTROL Security Scan Tool] graphs are separated by severity. [!UICONTROL Extensions] are separated into four classifications: current version, old version, disabled, and unknown.
+* The [!DNL widgets] for [!UICONTROL Security Center], [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan] all use easy-to-read color-coded interactive circular graphs with graph legends to the side and count totals in the center to denote how many [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan Tool] items each feature has. [!UICONTROL Recommendations] and [!UICONTROL Security Scan Tool] graphs are separated by severity. [!UICONTROL Extensions] are separated into four classifications: current version, old version, disabled, and unknown.
 
 * [!DNL New Relic Alerts] are listed with the most recent alert on top, including a short description and how long ago the alert occurred.
 
