@@ -14,8 +14,15 @@ See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to le
 
 ## Tool Overview
 
-- **Dashboard** - Shows the overall health of your system with notifications of detected issues and specific recommendations by priority. It also includes a historical chart to track how your website's health changes over time.
-
+- **Dashboard**
+    - Shows the overall health of your system with notifications of detected issues and specific recommendations by priority.<br>
+    It also includes a historical chart to track how your website's health changes over time.
+    - Shows the **[!UICONTROL Security Center Dashboard]** that lets you access:
+        - [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+        - [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html)
+        - [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)
+        - [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)
+        
 - **Information** - Provides customer contact information and a summary of current tickets, with detailed information about each installed Adobe Commerce product.
 
 - **Recommendations** - Lists recommendations based on best practices to address issues detected on your site.

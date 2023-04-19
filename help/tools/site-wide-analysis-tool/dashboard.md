@@ -4,10 +4,13 @@ description: Learn about the [!DNL Dashboard] tab in the [!DNL Site-Wide Analysi
 ---
 # [!UICONTROL Dashboard]
 
-The [!UICONTROL Dashboard] page shows at-a-glance [!DNL widgets] that provide a "single pane of glass view" of the health and current status of your Adobe Commerce website. These [!DNL widgets] each contain an access link to each feature’s page, to each tool itself, or to reports (depending on the [!DNL widget]).
+The [!UICONTROL Dashboard] page shows at-a-glance [!DNL widgets] that provide a "single pane of glass view" of the health and current status of your Adobe Commerce website. These [!DNL widgets] each contain an access link to each feature's page, to each tool itself, or to reports (depending on the [!DNL widget]).
 There is also a list of [!UICONTROL External Resources] links for Adobe Commerce, including the [Adobe Commerce Help Center Support Knowledge Base (Help Center)](https://support.magento.com/), [Adobe Commerce Developer Documentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [Security Center](https://magento.com/security), and [Observation for Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
 
 ## Elements
+
+* **[!UICONTROL Security Center Dashboard]**: Displays security insights for your site.
+The security information shown includes [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).
 
 * **[!UICONTROL Recommendations]**: Displays best practice recommendations for your site. Recommendations (issues found and recommendations to fix) are sorted by priority—P0 (Critical) to P4 (Notification).
 Recommendations include Description, Recommendation, Site Impact, Root Cause, Scenarios/Preconditions, and Tools Used.
@@ -28,11 +31,11 @@ If there are no recommended patches to display for your Adobe Commerce instance,
 
 ## When to use
 
-The **[!UICONTROL Dashboard]** page is your at-a-glance command center in the [!DNL Site-Wide Analysis Tool] to not only easily view the “big picture” of your site’s health as a whole, but you can also see and access specific tools, recommendations, and reports for your Adobe Commerce website through each [!DNL widget].
+The **[!UICONTROL Dashboard]** page is your at-a-glance command center in the [!DNL Site-Wide Analysis Tool] to not only easily view the "big picture" of your site's health as a whole, but you can also see and access specific tools, recommendations, and reports for your Adobe Commerce website through each [!DNL widget].
 
 ## Benefits
 
-* The [!DNL widgets] for [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan] all use easy-to-read color-coded interactive circular graphs with graph legends to the side and count totals in the center to denote how many [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan Tool] items each feature has. [!UICONTROL Recommendations] and [!UICONTROL Security Scan Tool] graphs are separated by severity. [!UICONTROL Extensions] are separated into four classifications: current version, old version, disabled, and unknown.
+* The [!DNL widgets] for [!UICONTROL Security Center Dashboard], [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan] all use easy-to-read color-coded interactive circular graphs with graph legends to the side and count totals in the center to denote how many [!UICONTROL Recommendations], [!UICONTROL Extensions], and [!UICONTROL Security Scan Tool] items each feature has. [!UICONTROL Recommendations] and [!UICONTROL Security Scan Tool] graphs are separated by severity. [!UICONTROL Extensions] are separated into four classifications: current version, old version, disabled, and unknown.
 
 * [!DNL New Relic Alerts] are listed with the most recent alert on top, including a short description and how long ago the alert occurred.
 
@@ -44,7 +47,7 @@ The **[!UICONTROL Dashboard]** page is your at-a-glance command center in the [!
 
 ## Best practices for using the [!UICONTROL Dashboard]
 
-* Click on each [!DNL widget] to access the detailed data it provides to gain both insight and understanding of your website’s health, recommendations, and best practices to improve it.
+* Click on each [!DNL widget] to access the detailed data it provides to gain both insight and understanding of your website's security, health, recommendations, and best practices to improve it.
 
 * Go to the [!UICONTROL Security Scan Tool] [!DNL widget] and click [!UICONTROL View Report] to view a [!UICONTROL Recommendations] report for your site.
 
