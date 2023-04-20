@@ -1,8 +1,54 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Apr 10 10:34:48 2023
+updated: Thu Apr 20 09:33:05 2023
 entries:
+- description: Added information about a newly released patch for a 2.4.6 known issue.
+    See [Release notes for Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+  versions: 2.4.6
+  type: technical
+  date: April 19, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/515
+  merge_commit: fdbb0959b615689eba3068bc93c4c9876c7a7972
+  contributor: frontain
+  membership: false
+  labels:
+  - technical
+  - 2.4.6
+- description: Added information about the [Security Center Widget](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard.html)
+    in the Site-Wide Assessment Tool dashboard.
+  versions: ''
+  type: major-update
+  date: April 19, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/514
+  merge_commit: 1e84ee6db07ec9080971de22a24fe8a7d8705916
+  contributor: jmenn
+  membership: false
+  labels:
+  - major-update
+- description: Added a [new section](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/self-hosting/overview.html)
+    about self-hosting concepts, including performance, security, monitoring, and
+    disaster recovery.
+  versions: ''
+  type: new-topic
+  date: April 17, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/509
+  merge_commit: 699c512de9c6d28ba354f02b4db76975eb5410a9
+  contributor: ralbin
+  membership: false
+  labels:
+  - new-topic
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.30 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: April 12, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/507
+  merge_commit: 84ed7dd2c24eef437d6719d9758da43423347eeb
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
 - description: Added [Glossary](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html).
     Migrated from https://glossary.magento.com.
   versions: ''
