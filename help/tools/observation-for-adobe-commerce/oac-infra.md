@@ -1,6 +1,6 @@
 ---
- title: "The [!DNL Infra] tab"
- description: The [!DNL Infra] tab isolates issues and causes of infrastructure problems.
+title: "The [!DNL Infra] tab"
+description: The [!DNL Infra] tab isolates issues and causes of infrastructure problems.
 ---
 
 # The [!DNL Infra] tab

@@ -1,6 +1,6 @@
 ---
- title: "The [!UICONTROL Security] tab"
- description: Learn about the [!UICONTROL Security] tab of [!DNL Observation for Adobe Commerce].
+title: "The [!UICONTROL Security] tab"
+description: Learn about the [!UICONTROL Security] tab of [!DNL Observation for Adobe Commerce].
 ---
 
 # The [!UICONTROL Security] tab
