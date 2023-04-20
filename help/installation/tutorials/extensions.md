@@ -10,12 +10,12 @@ Code that extends or customizes Adobe Commerce and Magento Open Source behavior 
 Extensions include:
 
 -  Modules (extend Adobe Commerce and Magento Open Source capabilities)
--  Themes (change the look and feel of your [storefront](https://glossary.magento.com/storefront) and Admin)
+-  Themes (change the look and feel of your storefront and Admin)
 -  Language packages (localize the storefront and Admin)
 
 >[!TIP]
 >
->This topic explains how to use the command line to install extensions you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's [Composer](https://glossary.magento.com/composer) name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
+>This topic explains how to use the command line to install extensions you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's Composer name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
 
 Before installation, you may want to:
 

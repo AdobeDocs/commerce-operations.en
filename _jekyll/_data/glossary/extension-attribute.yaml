@@ -1,0 +1,14 @@
+---
+title: "extension attribute"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+synonyms: []
+relatedTerms:
+  - "attribute"
+  - "entity-attribute-value"
+definition: |
+  Extend functionality and often use more complex data types than custom attributes. These attributes do not appear on the GUI.
+
+  Learn more: [Adding extension attributes to entity](https://developer.adobe.com/commerce/php/development/components/add-attributes/)

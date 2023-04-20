@@ -73,7 +73,7 @@ Adobe Commerce and Magento Open Source require the following system tools for so
 
 ### SSL
 
--  A valid [security certificate](https://glossary.magento.com/security-certificate) is required for HTTPS.
+-  A valid security certificate is required for HTTPS.
 -  Self-signed SSL certificates are not supported.
 -  Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
 

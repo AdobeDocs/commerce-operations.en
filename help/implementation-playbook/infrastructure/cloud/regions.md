@@ -9,7 +9,7 @@ The following sections provide details about the different AWS and Azure regions
 
 ## AWS regions
 
-![Diagram showing AWS regions](../../../assets/playbooks/aws-regions.svg)
+![Diagram showing AWS regions](../../../assets/playbooks/aws-regions.png)
 
 >[!NOTE]
 >
@@ -17,8 +17,8 @@ The following sections provide details about the different AWS and Azure regions
 
 ## Azure regions
 
-![Diagram showing Azure regions](../../../assets/playbooks/azure-regions.svg)
+![Diagram showing Azure regions](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >
-> Only on-premises in China and Russia.
+> Only on-premises in China and Russia. All merchants that require Integration envrionments must use US regions.

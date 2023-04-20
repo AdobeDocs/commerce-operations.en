@@ -5,9 +5,9 @@ description: Follow these steps to uninstall an Adobe Commerce or Magento Open S
 
 # Uninstall themes
 
-Before you use this command, you must know the relative path to your theme. Themes are located in a subdirectory of `<magento_root>/app/design/<area name>`. You must specify the path to the theme starting with the area, which is either `frontend` (for storefront themes) or `adminhtml` (for [Admin](https://glossary.magento.com/magento-admin) themes).
+Before you use this command, you must know the relative path to your theme. Themes are located in a subdirectory of `<magento_root>/app/design/<area name>`. You must specify the path to the theme starting with the area, which is either `frontend` (for storefront themes) or `adminhtml` (for Admin themes).
 
-For example, the path to the Luma [theme](https://glossary.magento.com/theme) provided with Adobe Commerce and Magento Open Source is `frontend/Magento/luma`.
+For example, the path to the Luma theme provided with Adobe Commerce and Magento Open Source is `frontend/Magento/luma`.
 
 For more information about themes, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -15,7 +15,7 @@ For more information about themes, see [theme structure](https://developer.adobe
 
 This section discusses how to uninstall one or more themes, optionally including the themes' code from the file system. You can create backups first so you can restore the data later.
 
-This command uninstalls *only* themes that are specified in `composer.json`; in other words, themes that are provided as [Composer](https://glossary.magento.com/composer) packages. If your theme is not a Composer package, you must uninstall it manually by:
+This command uninstalls *only* themes that are specified in `composer.json`; in other words, themes that are provided as Composer packages. If your theme is not a Composer package, you must uninstall it manually by:
 
 *  Updating the `parent` node information in `theme.xml` to remove references to the theme.
 *  Removing theme code from the file system.
@@ -55,7 +55,7 @@ The command performs the following tasks:
 
 1. Removes themes from the `theme` database table.
 1. Remove themes from code base using `composer remove`.
-1. Cleans the [cache](https://glossary.magento.com/cache).
+1. Cleans the cache.
 1. Cleans generated classes
 1. If `--clear-static-content` is specified, cleans [generated static view files](../../configuration/cli/static-view-file-deployment.md).
 
@@ -96,4 +96,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->To uninstall an [Admin](https://glossary.magento.com/admin) theme, you must also remove it from your component's [dependency injection](https://glossary.magento.com/dependency-injection) configuration, `<component root directory>/etc/di.xml`.
+>To uninstall an Admin theme, you must also remove it from your component's dependency injection configuration, `<component root directory>/etc/di.xml`.

@@ -1,0 +1,13 @@
+---
+title: "bulk operations"
+wordClasses:
+  - "noun"
+tags:
+  - "programming"
+synonyms: []
+relatedTerms: []
+definition: |
+  Bulk operations are actions that are performed on a large scale.
+  Example bulk operations tasks include importing or exporting items, changing prices on a mass scale, and assigning products to a warehouse.
+
+  Learn more: [DevDocs Bulk Operations](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)

@@ -1,0 +1,22 @@
+---
+title: "configurable product"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+  - "product"
+synonyms: []
+relatedTerms:
+  - "product-types"
+definition: |
+  A configurable product looks like a single product with drop-down lists of options for each variation.
+  Each option is actually a separate simple product with a unique SKU, which makes it possible to track inventory for each product variation.
+  To achieve a similar effect, a simple product can be used with custom options, but without the ability to track inventory for each variation.
+  Products with multiple options are sometimes referred to as composite products.
+
+  Although a configurable product uses more SKUs, and may initially take a little longer to set up, it can save you time in the end.
+  If you plan to grow your business, the configurable product type might be a better choice for a product with multiple options.
+
+  Example: T-shirts that are available in two colors and three sizes.
+  Six variants must be created as individual products (each with its own SKU).
+  Then, all variants are added to a configurable product where customers can choose the size and color, and then add it to their cart.

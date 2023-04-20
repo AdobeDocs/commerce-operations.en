@@ -16,7 +16,7 @@ See [Translations overview][].
 
 ## Generate a translation dictionary
 
-You can generate a [translation dictionary][] to customize existing strings, translate words and phrases in a custom module, localize a theme, or create [language packages](https://glossary.magento.com/language-package).
+You can generate a [translation dictionary][] to customize existing strings, translate words and phrases in a custom module, localize a theme, or create language packages.
 
 To begin translating, use a command to generate a dictionary CSV file with a collected list of all existing phrases and words.
 
@@ -133,7 +133,7 @@ To create these files:
 
 When declaring a language package in the `language.xml` configuration file, you must specify the sequence of the language inheritance for this package.
 
-Language inheritance enables you to create a translation called a _child_ based on an existing translation called a _parent_. The child translations override the parent. However, if the child translation fails to upload or display or is missing a phrase or word, Commerce uses the parent [locale](https://glossary.magento.com/locale). [Examples of language package inheritance](#example-of-language-inheritance).
+Language inheritance enables you to create a translation called a _child_ based on an existing translation called a _parent_. The child translations override the parent. However, if the child translation fails to upload or display or is missing a phrase or word, Commerce uses the parent locale. [Examples of language package inheritance](#example-of-language-inheritance).
 
 To declare a package, specify the following information:
 
