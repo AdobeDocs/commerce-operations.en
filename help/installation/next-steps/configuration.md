@@ -36,7 +36,7 @@ If you use the Apache web server, you must enable server rewrites for pages to d
 
 If you have multiple web nodes, you *cannot* use the application's default file caching because there is no synchronization between web nodes. In other words, the activity on one web node is written to that web node's file system only. Subsequent activity, if performed on another web node, can result in unnecessary files being written or can result in errors.
 
-Instead, use [Redis](../../configuration/cache/config-redis.md) for both the default [cache](https://glossary.magento.com/cache) and the page cache.
+Instead, use [Redis](../../configuration/cache/config-redis.md) for both the default cache and the page cache.
 
 ## Server settings
 

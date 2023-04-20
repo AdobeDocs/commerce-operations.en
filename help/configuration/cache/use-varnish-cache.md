@@ -9,13 +9,13 @@ This topic discusses the basics of using Varnish as a web-caching accelerator fo
 
 ## Varnish purging
 
-According to [Varnish documentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), "A *purge* is what happens when you pick out an object from the [cache](https://glossary.magento.com/cache) and discard it along with its variants." A Varnish purge is similar to a cache clean command (or clicking **Flush Magento Cache** in the Admin).
+According to [Varnish documentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), "A *purge* is what happens when you pick out an object from the cache and discard it along with its variants." A Varnish purge is similar to a cache clean command (or clicking **Flush Magento Cache** in the Admin).
 
 In fact, when you clean, flush, or refresh the Commerce cache, Varnish purges as well.
 
 After you have installed and configured Varnish to work with Commerce, the following actions can result in a Varnish purge:
 
-- Maintaining a [website](https://glossary.magento.com/website).
+- Maintaining a website.
 
    For example, anything you do in the Admin in:
 

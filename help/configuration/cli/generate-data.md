@@ -94,7 +94,7 @@ Generating simple products...  done in <time>
 
 ### Admin users
 
-Generates [admin](https://glossary.magento.com/admin) users. [XML](https://glossary.magento.com/xml) profile node:
+Generates admin users. XML profile node:
 
 ```xml
 <!-- Number of admin users -->
@@ -118,7 +118,7 @@ Generates attribute sets with specified configuration. XML profile node:
 
 ### Bundle products
 
-Generates bundle products. Generated bundle selections are not displayed individually in the [catalog](https://glossary.magento.com/catalog). Products are uniformly distributed per categories and websites. If  `assign_entities_to_all_websites` from the profile is set to `1`. Products are assigned to all websites.
+Generates bundle products. Generated bundle selections are not displayed individually in the catalog. Products are uniformly distributed per categories and websites. If  `assign_entities_to_all_websites` from the profile is set to `1`. Products are assigned to all websites.
 
 XML profile node:
 
@@ -156,7 +156,7 @@ Generates catalog price rules. XML profile node:
 
 ### Categories
 
-Generates categories. If `assign_entities_to_all_websites` is set to `0`, all categories are uniformly distributed per root categories; otherwise, all categories are assigned to one root [category](https://glossary.magento.com/category).
+Generates categories. If `assign_entities_to_all_websites` is set to `0`, all categories are uniformly distributed per root categories; otherwise, all categories are assigned to one root category.
 
 XML profile node:
 
@@ -225,7 +225,7 @@ The following XML node formats are supported:
     </configurable_products>
     ```
 
-- Generate products based on a dynamically created [attribute set](https://glossary.magento.com/attribute-set) with a specified number of attributes and options:
+- Generate products based on a dynamically created attribute set with a specified number of attributes and options:
 
     ```xml
     <configurable_products>

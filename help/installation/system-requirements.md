@@ -61,19 +61,19 @@ Upgrading the applications and extensions you obtain from the Commerce Marketpla
 
 Adobe Commerce and Magento Open Source require the following system tools for some operations:
 
--  [bash](https://www.gnu.org/software/bash/)
--  [gzip](https://www.gzip.org/)
--  [lsof](https://linux.die.net/man/8/lsof)
--  [mysql](https://www.mysql.com/)
--  [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
--  [nice](https://linux.die.net/man/1/nice)
--  [php](https://www.php.net/)
--  [sed](https://www.gnu.org/software/sed/manual/sed.html)
--  [tar](https://linux.die.net/man/1/tar)
+-  [[!DNL bash]](https://www.gnu.org/software/bash/)
+-  [[!DNL gzip]](https://www.gzip.org/)
+-  [[!DNL lsof]](https://linux.die.net/man/8/lsof)
+-  [[!DNL mysql]](https://www.mysql.com/)
+-  [[!DNL mysqldump]](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
+-  [[!DNL nice]](https://linux.die.net/man/1/nice)
+-  [[!DNL php]](https://www.php.net/)
+-  [[!DNL sed]](https://www.gnu.org/software/sed/manual/sed.html)
+-  [[!DNL tar]](https://linux.die.net/man/1/tar)
 
 ### SSL
 
--  A valid [security certificate](https://glossary.magento.com/security-certificate) is required for HTTPS.
+-  A valid security certificate is required for HTTPS.
 -  Self-signed SSL certificates are not supported.
 -  Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
 

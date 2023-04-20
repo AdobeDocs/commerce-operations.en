@@ -1,8 +1,7 @@
 ---
 title: Security.txt
 description: Learn how to provide information to help security researchers report vulnerabilities.
-contributor_name: Kalpesh Mehta from Corra
-contributor_link: https://partners.magento.com/portal/details/partner/id/70/
+badge: label="Contributed by Kalpesh Mehta from Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
 ---
 
 # Security TXT file

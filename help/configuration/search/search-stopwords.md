@@ -22,7 +22,7 @@ For more information about how Elasticsearch and OpenSearch uses stopwords, see 
 
 Stopwords are located in the `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce and Magento Open Source ships with one CSV file containing stopwords for the default locales and an additional file, `stopwords.csv`, which has stopwords for any locale that is not represented by another CSV file.
 
-The default lifetime for stopwords file [cache](https://glossary.magento.com/cache) is 15 minutes.
+The default lifetime for stopwords file cache is 15 minutes.
 
 ### Edit stopwords for an existing locale
 
@@ -48,7 +48,7 @@ The default lifetime for stopwords file [cache](https://glossary.magento.com/cac
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. Check the results by searching for terms on your [storefront](https://glossary.magento.com/storefront).
+1. Check the results by searching for terms on your storefront.
 
 ### Create stopwords for a new locale
 

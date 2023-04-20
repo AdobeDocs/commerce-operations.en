@@ -7,7 +7,7 @@ description: Learn what steps to take after using the [!DNL Data Migration Tool]
 
 After you have completed your migration and thoroughly tested your new Magento 2 site, perform the following tasks:
 
-*  Put Magento 1 in maintenance mode and permanently stop all [Admin](https://glossary.magento.com/admin) activities
+*  Put Magento 1 in maintenance mode and permanently stop all Admin activities
 
 *  Start Magento 2 cron jobs
 

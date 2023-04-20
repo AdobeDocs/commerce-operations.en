@@ -7,6 +7,7 @@ Adobe Commerce requires:
 -  `ext-curl`
 -  `ext-dom`
 -  `ext-fileinfo`
+-  `ext-filter`
 -  `ext-gd`
 -  `ext-hash`
 -  `ext-iconv`
@@ -26,8 +27,8 @@ Adobe Commerce requires:
 -  `ext-xmlwriter`
 -  `ext-xsl`
 -  `ext-zip`
+-  `ext-zlib`
 -  `lib-libxml`
--  `lib-openssl`
 
 B2B for Adobe Commerce requires:
 
@@ -36,6 +37,7 @@ B2B for Adobe Commerce requires:
 -  `ext-curl`
 -  `ext-dom`
 -  `ext-fileinfo`
+-  `ext-filter`
 -  `ext-gd`
 -  `ext-hash`
 -  `ext-iconv`
@@ -55,8 +57,8 @@ B2B for Adobe Commerce requires:
 -  `ext-xmlwriter`
 -  `ext-xsl`
 -  `ext-zip`
+-  `ext-zlib`
 -  `lib-libxml`
--  `lib-openssl`
 
 Magento Open Source requires:
 
@@ -65,6 +67,7 @@ Magento Open Source requires:
 -  `ext-curl`
 -  `ext-dom`
 -  `ext-fileinfo`
+-  `ext-filter`
 -  `ext-gd`
 -  `ext-hash`
 -  `ext-iconv`
@@ -83,5 +86,5 @@ Magento Open Source requires:
 -  `ext-xmlwriter`
 -  `ext-xsl`
 -  `ext-zip`
+-  `ext-zlib`
 -  `lib-libxml`
--  `lib-openssl`

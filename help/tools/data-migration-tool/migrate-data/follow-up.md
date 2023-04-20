@@ -25,7 +25,7 @@ Reference numbers for Orders, Invoices, Shipments, Credit Memos, and RMA migrate
 
 ### Resave Customer Segments [Adobe Commerce only]
 
-After migration, Customer Segments must be resaved from the [Admin](https://glossary.magento.com/admin) Panel to get them up and running.
+After migration, Customer Segments must be resaved from the Admin Panel to get them up and running.
 
 ### Configure time zone
 

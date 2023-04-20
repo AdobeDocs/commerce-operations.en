@@ -66,6 +66,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Search Recommendations Count | `catalog/search/search_recommendations_count` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Show Results Count for Each Recommendation | `catalog/search/search_recommendations_count_results_enabled` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Minimum Terms to Match | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Generate "category/product" URL Rewrites | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Popular Search Terms | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Product URL Suffix | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Category URL Suffix | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

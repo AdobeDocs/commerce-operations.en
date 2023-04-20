@@ -1,0 +1,14 @@
+---
+title: "adminhtml"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+synonyms: []
+relatedTerms:
+  - "area"
+  - "commerce-admin"
+definition: |
+  The internal area name assigned to the Admin.
+
+  Learn more: [Adobe Commerce User Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)

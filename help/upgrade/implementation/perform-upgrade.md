@@ -7,7 +7,7 @@ description: Follow these steps to upgrade an Adobe Commerce or Magento Open Sou
 
 You can upgrade your Adobe Commerce or Magento Open Source application from the command line if you installed the software by:
 
--  Downloading the [metapackage](https://glossary.magento.com/metapackage) using the `composer create-project` command.
+-  Downloading the metapackage using the `composer create-project` command.
 -  Installing the compressed archive.
 
 >[!NOTE]

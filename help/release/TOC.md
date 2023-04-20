@@ -1,6 +1,6 @@
 ---
 user-guide-title: Release information
-user-guide-description: Learn about Adobe Commerce and Magento Open Source releases.
+user-guide-description: Access all release information for Adobe Commerce patches and services in one place.
 ---
 
 # Release Information {#release}
@@ -17,6 +17,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.1](release-notes/commerce/2-4-1.md)
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
+    - [2.4.6](release-notes/open-source/2-4-6.md)
     - [2.4.5](release-notes/open-source/2-4-5.md)
     - [2.4.4](release-notes/open-source/2-4-4.md)
     - [2.4.3](release-notes/open-source/2-4-3.md)
@@ -24,7 +25,9 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.1](release-notes/open-source/2-4-1.md)
     - [2.4.0](release-notes/open-source/2-4-0.md) 
   - Security patch releases {#security-patches}
+    - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
     - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+    - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
     - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
     - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
     - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
@@ -34,8 +37,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 - [Released versions](versions.md)
 - [Features by version](features.md)
 - [Product availability](product-availability.md)
-- [Product roadmap](product-roadmap.md)
-- [Beta program](beta-program.md)
+- [Beta releases](beta.md)
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
   - [Versioning policy](versioning-policy.md)

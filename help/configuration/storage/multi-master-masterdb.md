@@ -12,7 +12,7 @@ description: See guidance on automatically configuring the split database soluti
 This topic discusses how to get started with the split database solution by:
 
 1. Installing Adobe Commerce with a single master database (named `magento`)
-1. Creating two additional master databases for [checkout](https://glossary.magento.com/checkout) and OMS (named `magento_quote` and `magento_sales`)
+1. Creating two additional master databases for checkout and OMS (named `magento_quote` and `magento_sales`)
 1. Configuring Adobe Commerce to use the checkout and sales databases
 
 >[!INFO]
@@ -119,6 +119,10 @@ For example,
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
+```
+
+```bash
+bin/magento setup:upgrade
 ```
 
 The following message displays to confirm a successful setup:
