@@ -32,6 +32,9 @@ catalogsearch_fulltext                   Catalog Search
 salesrule_rule                           Sales Rule
 ```
 
+>[!NOTE]
+> Adobe Commerce merchants using Live Search, Catalog Service, or Product Recommendations have the option to use a [SaaS-based price indexer](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/index.html).
+
 ## View indexer status
 
 Use this command to view the status of all indexers or specific indexers. For example, find out if an indexer needs to be reindexed.
