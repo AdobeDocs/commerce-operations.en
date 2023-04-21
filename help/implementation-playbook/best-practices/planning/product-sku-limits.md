@@ -4,8 +4,8 @@ description: Learn best practices for configuring product Stock Keeping Units (S
 role: Admin
 feature: Best Practices
 feature-set: Commerce
+exl-id: 37af7b92-05ac-4a4f-9009-11e8d9f95c2f
 ---
-
 # Best practices for product SKU configuration
 
 To maximize performance, the recommended maximum for effective product Stocking Keeping Units (SKUs) is 242 million. This effective product SKU maximum is calculated as:

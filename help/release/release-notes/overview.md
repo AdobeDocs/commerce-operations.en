@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce and Magento Open Source Release notes
 description: Learn where to find information for specific Adobe Commerce and Magento Open Source releases.
+exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 ---
-
 # Release notes for Adobe Commerce and Magento Open Source
 
 Use the following table to find release notes and important information related to specific releases of all Adobe Commerce products, services, and tools.

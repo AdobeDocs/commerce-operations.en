@@ -1,8 +1,8 @@
 ---
 title: Generate data for performance testing
 description: Learn how to generate a large amount of data to use for performance testing.
+exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
 ---
-
 # Performance testing data
 
 To use the [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) or another tool for performance testing, you must generate a large amount of data, such as stores, categories, and products.

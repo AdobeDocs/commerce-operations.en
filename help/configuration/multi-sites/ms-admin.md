@@ -1,8 +1,8 @@
 ---
 title: Set up multiple websites, stores, and store views in the Admin
 description: Configure additional websites, stores, and store views in the Commerce Admin.
+exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 ---
-
 # Set up multiple views in the Admin
 
 This task requires you to create a root category (and additional categories, if desired) for each store. The tasks discussed in this topic provide one way to set up multiple stores. For additional information, see the following resources in the Commerce User Guide:

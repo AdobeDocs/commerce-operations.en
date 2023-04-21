@@ -1,8 +1,8 @@
 ---
 title: PHP settings
 description: Follow these steps to install required PHP extensions and configure required PHP settings for on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
 ---
-
 # PHP settings
 
 This topic discusses how to set required PHP options.

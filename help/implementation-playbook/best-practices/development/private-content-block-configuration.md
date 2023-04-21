@@ -4,6 +4,7 @@ description: Learn best practices for configuring private content blocks to opti
 role: Developer
 feature: Best Practices
 feature-set: Commerce
+exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
 ---
 # Best practices for private content blocks
 
@@ -26,5 +27,3 @@ Sites that have private content blocks containing the `_isScopePrivate` variable
 
 - [Private Content](../../../performance/configuration.md#client-side-optimization-settings)
 - [High throughput AJAX requests cause poor performance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
-
-

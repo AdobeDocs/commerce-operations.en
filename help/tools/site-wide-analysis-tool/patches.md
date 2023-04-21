@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Patches]"
+title: '[!DNL Patches]'
 description: Learn about the [!UICONTROL Patches] tab in the [!DNL Site-Wide Analysis Tool], when to use it, and its benefits.
+exl-id: 40bc9b38-2a70-40ec-8278-231c78193248
 ---
 # [!DNL Patches]
 
@@ -19,4 +20,3 @@ Use the [!UICONTROL Patches] tab to see the available patches for your Adobe Com
 * Get all relevant information regarding patches in one place.
 
 * Fix issues using the patches available in the [!UICONTROL Patches] tab.
-

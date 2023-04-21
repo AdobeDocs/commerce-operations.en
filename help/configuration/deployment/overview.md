@@ -1,8 +1,8 @@
 ---
 title: Deployment overview
 description: Read about deployment strategies for the Commerce application.
+exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
 ---
-
 # Deployment overview
 
 These topics discuss the process of deploying the Commerce application to a production site for Adobe Commerce version 2.2 and later. Adobe recommends this deployment method for anyone with a large site who does not want to experience downtime during deployment.

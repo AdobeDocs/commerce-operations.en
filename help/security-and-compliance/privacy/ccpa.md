@@ -1,8 +1,8 @@
 ---
 title: California Consumer Privacy Act (CCPA)
 description: Learn about the California Consumer Privacy Act (CCPA), which expands the rights of consumers in California for determining how their personal information is collected, stored, and used.
+exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
 ---
-
 # California Consumer Privacy Act (CCPA)
 
 >[!NOTE]

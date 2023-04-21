@@ -2,8 +2,8 @@
 keywords: Adobe Commerce;home;popular topics
 title: Home
 description: Browse an index of Adobe Commerce operational product documentation.
+exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 ---
-
 # Adobe Commerce Operational Guides
 
 Get practical information about concepts, processes, tools, and best practices to develop, deploy, and maintain commerce projects deployed on Adobe Commerce and Magento Open Source platforms.

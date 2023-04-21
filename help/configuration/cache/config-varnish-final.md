@@ -1,8 +1,8 @@
 ---
 title: Final verification
 description: Verify that your Varnish configuration is set up properly to work with the Adobe Commerce application.
+exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 ---
-
 # Final verification of Varnish configuration
 
 Now that you are using the `default.vcl` generated for you by Commerce, you can perform some final verifications to make sure that Varnish is working.

@@ -1,8 +1,8 @@
 ---
 title: Custom cron job and cron group reference
 description: Learn to customize crons using cron groups.
+exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 ---
-
 # Customizing crons reference
 
 This topic helps you set up crontabs and optionally cron groups for custom modules. If your custom module needs to schedule tasks periodically, you must set up a crontab for that module. A _crontab_ is a cron job configuration.

@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Extensions]"
+title: '[!DNL Extensions]'
 description: Learn about the [!DNL Extensions] tab in the [!DNL Site-Wide Analysis Tool], when to use it, its benefits, and best practices.
+exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
 ---
 # [!DNL Extensions]
 
@@ -24,5 +25,4 @@ The [!DNL Extensions] tab in the [!DNL Site-Wide Analysis Tool] provides informa
 
 * If you cannot keep your third-party [!DNL extensions] up-to-date to their latest versions, consider using different [!DNL extensions].
 
-* To avoid potential issues, download/purchase third-party [!DNL extensions] from a trusted source, like [Commerce Marketplace](https://marketplace.magento.com/extensions.html). 
-
+* To avoid potential issues, download/purchase third-party [!DNL extensions] from a trusted source, like [Commerce Marketplace](https://marketplace.magento.com/extensions.html).

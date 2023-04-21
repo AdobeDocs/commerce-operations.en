@@ -2,8 +2,8 @@
 title: Write to custom log file
 description: Learn to set up custom log files.
 badge: label="Contributed by Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
+exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 ---
-
 # Write to a custom log file
 
 The `Magento\Framework\Logger` module contains the following handler classes:

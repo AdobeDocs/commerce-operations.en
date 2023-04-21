@@ -1,8 +1,8 @@
 ---
 title: Data migration follow-up
 description: Learn how to validate that your Magento 1 to Magento 2 data migration was successful and that all functionality is working as expected.
+exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 ---
-
 # Data migration follow-up
 
 Some behavior and logic of Magento 1 has been implemented differently in Magento 2. The [!DNL Data Migration Tool] takes care of it. There are some migration aspects you should know about, and sometimes you must take minor steps for some functionalities to work smoothly after migration.

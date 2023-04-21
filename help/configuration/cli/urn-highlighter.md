@@ -1,8 +1,8 @@
 ---
 title: URN highlighter
 description: Learn how to set up URN highlighting in your IDE.
+exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
 ---
-
 # Overview of URN highlighter
 
 {{file-system-owner}}

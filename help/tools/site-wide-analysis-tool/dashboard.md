@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Dashboard]"
+title: '[!DNL Dashboard]'
 description: Learn about the [!DNL Dashboard] tab in the [!DNL Site-Wide Analysis Tool], elements, when to use, benefits, and best practices.
+exl-id: 37d848ff-2cff-48b1-8391-520531300bbc
 ---
 # [!UICONTROL Dashboard]
 

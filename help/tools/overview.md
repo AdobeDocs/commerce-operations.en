@@ -1,6 +1,7 @@
 ---
-title: Tools 
+title: Tools
 description: Optimize your Adobe Commerce store with these tools.
+exl-id: e2770019-d879-4685-bcbe-791550f49cf0
 ---
 # Tools
 

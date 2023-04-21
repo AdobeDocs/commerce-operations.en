@@ -1,8 +1,8 @@
 ---
 title: Data that requires manual migration
-description: Learn about data that must be manually migrated during a Magento 1 to Magento 2 data migration and how to do it. 
+description: Learn about data that must be manually migrated during a Magento 1 to Magento 2 data migration and how to do it.
+exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 ---
-
 # Data that requires manual migration
 
 There are four kinds of data that need to be migrated manually:

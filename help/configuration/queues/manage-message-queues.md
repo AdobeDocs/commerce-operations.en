@@ -1,8 +1,8 @@
 ---
 title: Manage message queues
 description: Learn how you can manage message queues from the command line for Adobe Commerce.
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
 ---
-
 # Manage message queues
 
 You can manage message queues from the command line using cron jobs or an external process manager to ensure that consumers are retrieving messages.

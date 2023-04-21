@@ -1,11 +1,11 @@
 ---
 title: Extensions best practices
-description: Learn how to avoid performance issues caused by third-party Adobe Commerce extensions. 
+description: Learn how to avoid performance issues caused by third-party Adobe Commerce extensions.
 role: Admin
 feature: Best Practices
 feature-set: Commerce
+exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
 ---
-
 # Extensions best practices
 
 Adobe Commerce third-party extensions (modules) have the potential to cause various issues that can negatively impact storefront performance. You can avoid these issues by following these best practices:

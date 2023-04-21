@@ -1,8 +1,8 @@
 ---
 title: Configuration types
 description: Create or extend configuration types.
+exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
 ---
-
 # Configuration types
 
 ## Extend configuration types

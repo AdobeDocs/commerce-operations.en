@@ -1,6 +1,7 @@
 ---
 title: Status attributes
 description: Learn about the different status information in the [!DNL Site-Wide Analysis Tool].
+exl-id: 3135f5f2-ce09-4118-bfff-30801cc86ec8
 ---
 # Status attributes
 

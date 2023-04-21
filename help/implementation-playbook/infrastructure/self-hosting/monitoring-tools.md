@@ -7,9 +7,8 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13
-
+exl-id: 728e9439-63d0-4481-b014-7ba2ce97b9d0
 ---
-
 # Self-hosting Adobe Commerce Monitoring telemetry and tools
 
 Using monitoring tools allows for opportunities to detect changes without having to pay someone to watch everything all the time. With most tools, you can add alerts and notifications if a threshold is met, such as a hard drive running out of space. Some tools provide output that should be tracked and calculated, such as load test results. No matter the tool, every tool has a purpose and when used consistently, they can help you to manage your application. There are free options to every tool, but remember paying for a service often ensures a faster more reliable support and may be worth the investment. New Relic is an example of a tool that offers a free tier and a paid version that unlocks much more power and capabilities. There are others such as DataDog or Dynatrace. Find a good option for you and use it consistently.

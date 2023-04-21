@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Recommendations]"
+title: '[!DNL Recommendations]'
 description: Learn about the [!UICONTROL Recommendations] tab in the [!DNL Site-Wide Analysis Tool], when to use it, its benefits, and best practices.
+exl-id: 17ff57e2-5b51-4afb-b505-09e46f490509
 ---
 # [!DNL Recommendations]
 
@@ -19,5 +20,3 @@ Use the [!UICONTROL Recommendations] page to see and implement recommendations t
 ## Best practices
 
 The [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] page lists recommendations with priority P0 to P4. P0 is critical, P1 is urgent, P2 is high, P3 is medium, and P4 is low. Monitor this page to see these recommendations and implement them based on priority to ensure optimum site performance.
-
-

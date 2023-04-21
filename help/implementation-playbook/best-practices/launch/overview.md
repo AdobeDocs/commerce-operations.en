@@ -1,8 +1,8 @@
 ---
 title: Implementation launch phase
 description: Learn about implementation best practices for the launch phase of Adobe Commerce projects.
+exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 ---
-
 # Launch phase
 
 The launch phase includes the following activities:

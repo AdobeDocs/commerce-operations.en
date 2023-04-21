@@ -1,8 +1,8 @@
 ---
 title: Set up memcached on CentOS
 description: Install and configure memcached on CentOS.
+exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
 ---
-
 # Set up memcached on CentOS
 
 This section provides instructions to install memcached on CentOS. For additional information, consult the [memcached wiki](https://github.com/memcached/old-wiki).

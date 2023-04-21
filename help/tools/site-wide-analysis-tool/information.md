@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Information]"
+title: '[!DNL Information]'
 description: Learn about the [!UICONTROL Information] tab in the [!DNL Site-Wide Analysis Tool], when to use it, its benefits, and best practices.
+exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
 ---
 # [!DNL Information]
 

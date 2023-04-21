@@ -2,8 +2,8 @@
 title: system.xml reference
 description: Learn how the system XML file manages the Commerce application configuration.
 badge: label="Contributed by David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 ---
-
 # system.xml reference
 
 The `system.xml` file allows you to manage the Commerce system configuration. Use this topic as a general reference for the `system.xml` file. The `system.xml` file is located under `etc/adminhtml/system.xml` in a given Commerce 2 extension.

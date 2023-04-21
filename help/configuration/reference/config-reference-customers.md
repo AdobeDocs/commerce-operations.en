@@ -1,8 +1,8 @@
 ---
 title: Customers configuration paths reference
 description: See a list of customers configuration values.
+exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
 ---
-
 # Customers configuration paths reference
 
 This section lists variable names and config paths available for options in the Admin under **Stores** > Settings > **Configuration** > **Customers**.

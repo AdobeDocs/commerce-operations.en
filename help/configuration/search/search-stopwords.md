@@ -1,8 +1,8 @@
 ---
 title: Configure search stopwords
 description: Learn how to manage stopwords for Adobe Commerce using CSV files.
+exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
 ---
-
 # Configure search stopwords
 
 In general, _stopwords_ are common words that search engines filter out after processing text. Originally, when disk space and memory were extremely limited, every kilobyte saved meant a significant improvement in performance. Therefore, search engines achieved performance gains by ignoring certain words and keeping the index small.

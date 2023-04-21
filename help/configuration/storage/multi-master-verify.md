@@ -1,8 +1,8 @@
 ---
 title: Verify split database
 description: Learn how to verify that a Commerce split database configuration is working properly.
+exl-id: 36295240-6521-4f3e-9ea3-f35b73de672d
 ---
-
 # Verify split database
 
 {{ee-only}}

@@ -1,8 +1,8 @@
 ---
 title: Use Redis for session storage
 description: Learn how to configure Redis for session storage.
+exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 ---
-
 # Use Redis for session storage
 
 >[!IMPORTANT]
@@ -127,4 +127,3 @@ If both commands succeeded, Redis is set up properly.
 ### Inspecting compressed data
 
 To inspect compressed Session data and Page Cache, the [RESP.app](https://flathub.org/apps/details/app.resp.RESP) supports the automatic decompression of Commerce 2 Session and Page cache and displays PHP session data in a human-readable form.
-

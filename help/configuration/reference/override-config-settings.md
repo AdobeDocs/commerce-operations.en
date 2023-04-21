@@ -1,8 +1,8 @@
 ---
 title: Override configuration settings
 description: Learn how to use environment variables to override configuration settings.
+exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
 ---
-
 # Override configuration settings
 
 This topic discusses how to derive an environment variable name knowing a configuration path. You can override Adobe Commerce configuration settings using environment variables. For example, you can override the value of a payment processor's live URL on your production system.

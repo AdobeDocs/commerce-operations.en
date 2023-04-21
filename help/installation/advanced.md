@@ -1,8 +1,8 @@
 ---
 title: Advanced on-premises installation
 description: Learn about advanced installation scenarios for Adobe Commerce or Magento Open Source on infrastructure that you own.
+exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
 ---
-
 # Advanced on-premises installation
 
 >[!TIP]

@@ -1,6 +1,7 @@
 ---
 title: Features tabs
 description: Learn about the different features tabs in the [!DNL Site-Wide Analysis Tool]
+exl-id: 23fc0311-82aa-430b-b11b-e287bea23d7b
 ---
 # Features tabs
 

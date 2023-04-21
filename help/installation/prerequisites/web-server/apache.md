@@ -1,8 +1,8 @@
 ---
 title: Apache
 description: Follow these steps to install and configure the Apache web server for on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 ---
-
 # Apache
 
 Adobe Commerce supports Apache 2.4.x.

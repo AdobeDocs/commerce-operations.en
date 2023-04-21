@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Data Migration Tool] prerequisites"
-description: "Learn what you need to do before you start using the [!DNL Data Migration Tool] to transfer data between Magento 1 and Magento 2."
+title: '[!DNL Data Migration Tool] prerequisites'
+description: Learn what you need to do before you start using the [!DNL Data Migration Tool] to transfer data between Magento 1 and Magento 2.
+exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
 ---
-
 # [!DNL Data Migration Tool] prerequisites
 
 Before starting migration, make sure that the following requirements are met.

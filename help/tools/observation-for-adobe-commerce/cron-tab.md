@@ -1,6 +1,7 @@
 ---
-title: "The [!DNL Cron] tab"
+title: The [!DNL Cron] tab
 description: Learn about the [!DNL Cron] tab of [!DNL Observation for Adobe Commerce].
+exl-id: 66f5ffd6-4118-4534-b2d6-09c7a30e5e13
 ---
 # The [!DNL Cron] tab
 

@@ -1,8 +1,8 @@
 ---
 title: Automatically configure master databases
 description: See guidance on automatically configuring the split database solution.
+exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
 ---
-
 # Automatically configure master databases
 
 {{ee-only}}

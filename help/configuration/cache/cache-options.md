@@ -1,6 +1,7 @@
 ---
 title: Cache options
 description: Configure access to low-level cache storage.
+exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
 ---
 # Low-level cache options
 

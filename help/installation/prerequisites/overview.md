@@ -1,8 +1,8 @@
 ---
 title: On-premises installation prerequisites
 description: Learn more about the software dependencies required for on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 ---
-
 # On-premises installation prerequisites
 
 Before you install Adobe Commerce or Magento Open Source, you must do the following:

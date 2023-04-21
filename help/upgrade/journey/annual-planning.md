@@ -1,8 +1,8 @@
 ---
 title: Annual Planning for Upgrades
 description: Review tips for creating an annual upgrade plan for your Adobe Commerce or Magento Open Source project.
+exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
 ---
-
 # Annual planning for upgrades
 
 Many companies work from annual budgets and roadmaps. It is imperative during these annual discussions that you talk about your platform health, direction, and upgrade strategy for the year, along with how it fits into the overall goals and key performance indicators (KPIs) of the business.

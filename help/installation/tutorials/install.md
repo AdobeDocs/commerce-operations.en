@@ -1,8 +1,8 @@
 ---
 title: Install Adobe Commerce
 description: Follow these steps to install Adobe Commerce or Magento Open Source on infrastructure that you own.
+exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 ---
-
 # Install Adobe Commerce
 
 Before you begin, complete the following steps:

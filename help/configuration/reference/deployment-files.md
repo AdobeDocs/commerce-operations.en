@@ -1,8 +1,8 @@
 ---
 title: Configuration files for deployment
 description: Understand how the configuration files work for installing the Commerce application.
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
 ---
-
 # Configuration files for deployment
 
 Adobe Commerce provides configuration files that enable you to easily customize a component and create configuration types to extend default functionality. The process of deployment configuration consists of the shared and system-specific configuration for your installation. Commerce's deployment configuration is divided between [`app/etc/config.php`](../reference/config-reference-configphp.md) and [`app/etc/env.php`](../reference/config-reference-envphp.md).

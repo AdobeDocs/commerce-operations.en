@@ -1,8 +1,8 @@
 ---
 title: config.php reference
 description: See a list of values in the config.php file.
+exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 ---
-
 # config.php reference
 
 The `config.php` file contains the following sections:
