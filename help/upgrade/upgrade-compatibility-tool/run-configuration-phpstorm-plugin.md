@@ -1,8 +1,8 @@
 ---
-title: "Run configuration within the [!DNL Magento PHPStorm plugin]"
+title: Run configuration within the [!DNL Magento PHPStorm plugin]
 description: Follow this guide to use the [!DNL Upgrade Compatibility Tool] within the [!DNL Magento PHPStorm plugin].
+exl-id: 8d5a0666-83c0-4249-8601-7d081acb9009
 ---
-
 # [!DNL Magento PHPStorm plugin]
 
 The [!DNL Magento PHPStorm plugin] is a tool created by the community to optimize routine coding operations and improve the Adobe Commerce development experience. The plugin is compatible with the IntelliJ IDEA Ultimate and PhpStorm IDEs. The functionality includes Adobe Commerce specific code generation shortcuts, code inspections, autocomplete functionality for configuration files, MFTF tests, and RequireJS.

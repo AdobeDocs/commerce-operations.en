@@ -1,8 +1,8 @@
 ---
 title: Remote storage for Commerce on cloud infrastructure
 description: See guidance on how to set up remote storage for Adobe Commerce on cloud infrastructure.
+exl-id: da352466-13f2-42e4-a589-3b0a89728467
 ---
-
 # Configure remote storage for Commerce on Cloud infrastructure
 
 Beginning with the `ece-tools` package 2002.1.5, you can use an environment variable to enable the Remote Storage module; however, the Remote Storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service.

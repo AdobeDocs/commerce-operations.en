@@ -1,8 +1,8 @@
 ---
 title: MySQL guidelines
 description: Follow these steps to install and configure MySQL and MariaDB for on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
 ---
-
 # General MySQL guidelines
 
 See [System Requirements](../../system-requirements.md) for supported versions of MySQL.

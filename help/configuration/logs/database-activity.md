@@ -1,8 +1,8 @@
 ---
 title: Log database activity
 description: Configure Commerce to log database activity using the Logger interface.
+exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
 ---
-
 # Log database activity
 
 The following example shows how to log database activity using the [`Magento\Framework\DB\LoggerInterface`][interface], which has two implementations:

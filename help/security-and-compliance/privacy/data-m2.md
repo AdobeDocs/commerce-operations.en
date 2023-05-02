@@ -1,8 +1,8 @@
 ---
 title: Customer personal information reference (version 2.x)
 description: Learn about dataflow diagrams and database entity mappings for customer personal information in Adobe Commerce and Magento Open Source 2.x.
+exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
 ---
-
 # Customer personal information reference (version 2.x)
 
 >[!NOTE]

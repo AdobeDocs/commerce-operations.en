@@ -1,8 +1,8 @@
 ---
 title: Disable module output
 description: Learn how to disable module output.
+exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
 ---
-
 # Disable module output
 
 By default, all modules are configured so that module output can be written to a view. Turning off output offers a way to essentially disable a module that cannot be disabled due to hard dependencies.

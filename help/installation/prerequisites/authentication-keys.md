@@ -1,8 +1,8 @@
 ---
 title: Get your authentication keys
 description: Follow these steps to retrieve credentials to access Adobe Commerce and Magento Open Source Composer packages on repo.magento.com.
+exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
 ---
-
 # Get your authentication keys
 
 The `repo.magento.com` repository is where Adobe Commerce and Magento Open Source and third-party Composer packages are stored and requires authentication. Use your Commerce Marketplace account to generate a pair of 32-character *authentication keys* to access the repository.

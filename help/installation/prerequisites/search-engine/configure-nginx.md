@@ -1,8 +1,8 @@
 ---
 title: Configure Nginx for your search engine
 description: Follow these steps to configure a search engine with the Nginx web server for on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
 ---
-
 # Configure Nginx for your search engine
 
 {{$include /help/_includes/web-server-communication.md}}

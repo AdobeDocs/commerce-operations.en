@@ -1,8 +1,8 @@
 ---
- title: "The [!UICONTROL Security] tab"
- description: Learn about the [!UICONTROL Security] tab of [!DNL Observation for Adobe Commerce].
+title: The [!UICONTROL Security] tab
+description: Learn about the [!UICONTROL Security] tab of [!DNL Observation for Adobe Commerce].
+exl-id: b567e4a4-534e-4151-b6f6-bf59b1bd4028
 ---
-
 # The [!UICONTROL Security] tab
 
 The **[!UICONTROL Security]** tab explains security issues and isolates their potential causes. Further, the frames of the tab are described.

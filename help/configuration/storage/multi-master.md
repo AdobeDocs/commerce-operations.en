@@ -1,8 +1,8 @@
 ---
 title: Split database performance solution
 description: Read about the split database solution for Adobe Commerce and Magento Open Source.
+exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
 ---
-
 # Overview of the split database solution
 
 {{ee-only}}

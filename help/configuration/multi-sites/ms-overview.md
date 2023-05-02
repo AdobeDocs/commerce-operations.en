@@ -1,8 +1,8 @@
 ---
 title: Multiple websites or stores
 description: Learn how you can start multiple websites or implement store views with different options, domains, and content.
+exl-id: 724d75d9-13fc-40f9-951a-69aa407adb6f
 ---
-
 # Multiple websites or stores
 
 A single instance of the Adobe Commerce software enables you to start multiple websites or store views that use different attributes and content, such as:

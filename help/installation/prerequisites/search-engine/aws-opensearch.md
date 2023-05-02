@@ -1,8 +1,8 @@
 ---
 title: AWS OpenSearch
 description: Follow these steps to configure the AWS OpenSearch web service for on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: 39ca7fd0-e21f-4f14-bda6-ff00a61a1a4d
 ---
-
 # AWS OpenSearch
 
 Adobe Commerce and Magento Open Source 2.4.5 supports using Amazon OpenSearch Service clusters. This service is the successor to Amazon Elasticsearch Service. This topic describes how to configure Commerce to use AWS OpenSearch, and how to migrate data from a local Elasticsearch or OpenSearch instance to an AWS OpenSearch cluster.

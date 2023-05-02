@@ -1,8 +1,8 @@
 ---
 title: Verify the installation
 description: Follow these steps to confirm that your on-premises Adobe Commerce or Magento Open Source installation was successful.
+exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
 ---
-
 # Verify the installation
 
 Go to the storefront in a web browser. For example, if your installation base URL is `http://www.example.com`, enter it in your browser's address or location bar.

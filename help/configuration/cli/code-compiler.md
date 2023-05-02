@@ -1,8 +1,8 @@
 ---
 title: Code compiler
 description: Learn how to run the code compiler from the command line.
+exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 ---
-
 # Code compiler
 
 {{file-system-owner}}

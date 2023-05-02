@@ -4,8 +4,8 @@ description: Learn how to optimize Adobe Commerce performance by limiting the nu
 role: User, Admin
 feature: Best Practices
 feature-set: Commerce
+exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
 ---
-
 # Best practices for product attribute configuration
 
 - For best performance, do not configure more than the maximum recommended number of product attributes or product attribute options.
@@ -90,4 +90,3 @@ Configuring many **attribute options** can affect site performance in the follow
 - [Attribute sets](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-sets.html)
 - [Create a product](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 - [Customization tutorials > Customize product creation form](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)
-

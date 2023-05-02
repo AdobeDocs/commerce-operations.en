@@ -1,8 +1,8 @@
 ---
 title: Recommended reading for upgrades
 description: Review recommended reading for planning your Adobe Commerce upgrade.
+exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
 ---
-
 # Recommended reading for upgrade planning
 
 Continue learning about Adobe Commerce and Magento Open Source upgrades by using the resources on this page.

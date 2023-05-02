@@ -1,8 +1,8 @@
 ---
 title: Enable logging
 description: Learn how to enable and disable types of logging.
+exl-id: 78b0416a-5bad-42a9-a918-603600e98928
 ---
-
 # Enable logging
 
 {{file-system-owner}}

@@ -1,8 +1,8 @@
 ---
 title: Application modes
 description: The Commerce application can operate in different modes depending on your needs. View a detailed list of the application modes available.
+exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
 ---
-
 # Application modes
 
 You can run the Commerce application in any of the following _modes_:

@@ -7,9 +7,8 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13
-
+exl-id: c4912f02-0411-466f-8c77-d610de9eb35d
 ---
-
 # Security Concepts
 
 Security should always be a strong consideration for anything related to an e-commerce project. Without a strong security stance, the surface area that can be attacked is exponentially larger. The concepts and ideas presented provide methods that are proven to reduce the common vulnerabilities typically exploited.

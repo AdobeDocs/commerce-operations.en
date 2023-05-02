@@ -1,8 +1,8 @@
 ---
 title: Check the database status
 description: Follow these steps to check your Adobe Commerce or Magento Open Source database status.
+exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
 ---
-
 # Check the database status
 
 Before you run this command, you must [Create or update the deployment configuration](deployment.md).

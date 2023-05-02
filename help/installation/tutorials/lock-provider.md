@@ -1,8 +1,8 @@
 ---
 title: Configure the lock provider
 description: Follow these steps to prevent the duplicate cron jobs and cron groups from running on your Adobe Commerce or Magento Open Source deployment.
+exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
 ---
-
 # Configure the lock provider
 
 Before you run this command, you must do the following *or* you must [install the application](../advanced.md):

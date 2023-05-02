@@ -1,6 +1,7 @@
 ---
 title: Cache types
 description: Associate cache frontends with cache types.
+exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 ---
 # Cache types
 

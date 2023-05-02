@@ -4,8 +4,8 @@ description: Learn best practices for configuring sales rules and coupon codes t
 role: User
 feature: Best Practices
 feature-set: Commerce
+exl-id: 6e177836-b8da-4e55-842c-e12ff54ffaf5
 ---
-
 # Best practices for configuring promotions
 
 For best performance, follow these best practices to configure sales and promotions for items in a shopping cart:

@@ -1,8 +1,8 @@
 ---
 title: Advanced Varnish configuration
 description: Configure advanced Varnish features, including health check, grace, and saint modes.
+exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
 ---
-
 # Advanced Varnish configuration
 
 Varnish provides several features that prevent customers from experiencing long delays and timeouts when the Commerce server is not functioning properly. These features can be configured in the `default.vcl` file. This topic describes the additions that Commerce provides in the VCL (Varnish Configuration Language) file you download from the Admin.

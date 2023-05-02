@@ -1,8 +1,8 @@
 ---
 title: Project Launch
 description: Set the right expectations for the upgrade process with your Adobe Commerce or Magento Open Source project stakeholders.
+exl-id: 8a5d9af2-e0e5-441c-976c-958a229ab933
 ---
-
 # Project launch
 
 Maintaining a healthy eCommerce site is just as critical to the success of your business as your initial launch, and a key aspect of that is proactively planning and preparing for upgrades that help your site operate as smoothly as possible.

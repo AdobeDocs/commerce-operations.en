@@ -1,8 +1,8 @@
 ---
 title: General Data Protection Regulation (GDPR)
 description: Learn about General Data Protection Regulation (GDPR), which is legislation that regulates data protection and privacy for all individuals in the European Union and the European Economic Area.
+exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
 ---
-
 # General Data Protection Regulation (GDPR)
 
 >[!NOTE]

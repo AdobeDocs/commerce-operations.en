@@ -1,8 +1,8 @@
 ---
 title: Configuration guide overview
 description: Learn about all the configurable features and services for your Adobe Commerce or Magento Open Source application.
+exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 ---
-
 # Configuration guide
 
 The _Configuration_ guide provides reference material and limited guidance for managing the configurable Commerce application features and services. Technical users who are responsible for configuring the Commerce application can find guidance for the following areas:

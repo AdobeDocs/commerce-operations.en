@@ -1,8 +1,8 @@
 ---
 title: Product availability
 description: Learn about what Adobe Commerce features are currently available, how to access them, and check their compatibility with specific Adobe Commerce releases.
+exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 ---
-
 # Product availability
 
 The following table describes the status of Adobe Commerce software availability and where to get it, particularly for software that is available outside the conventional Adobe Commerce Composer package.

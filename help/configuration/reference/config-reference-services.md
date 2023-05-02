@@ -1,8 +1,8 @@
 ---
 title: Services configuration paths reference
 description: See a list of services configuration values.
+exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
 ---
-
 # Services configuration paths reference
 
 This section lists variable names and config paths available for options in the Admin under **Stores** > Settings > **Configuration** > **Services**.

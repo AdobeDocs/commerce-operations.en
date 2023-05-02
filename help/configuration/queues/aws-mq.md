@@ -1,8 +1,8 @@
 ---
 title: Set up Amazon Message Queue
 description: Learn how to configure Commerce to use the AWS MQ service.
+exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
 ---
-
 # Set up Amazon Message Queue
 
 As of Commerce 2.4.3, Amazon Message Queue (MQ) is available as a cloud-ready replacement for on-premises message queue instances.

@@ -1,8 +1,8 @@
 ---
 title: General configuration paths reference
 description: See a list of general and advanced configuration values.
+exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 ---
-
 # General and advanced configuration paths reference
 
 This topic lists general and advanced configuration paths and _not_ [sensitive and system-specific values](config-reference-sens.md). The [`magento app:config:dump` command](../cli/export-configuration.md) writes these values to the shared configuration file, `app/etc/config.php`, which should be in source control.

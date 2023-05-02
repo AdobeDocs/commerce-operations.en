@@ -1,8 +1,8 @@
 ---
 title: Import data from configuration files
 description: Import Adobe Commerce configuration settings from configuration files.
+exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
 ---
-
 # Import configuration settings
 
 {{file-system-owner}}

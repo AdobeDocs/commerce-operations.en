@@ -1,8 +1,8 @@
 ---
 title: Technical details
 description: Read about the technical details of pipeline deployment, types of configurations, and recommended workflows.
+exl-id: a396d241-f895-4414-92af-3abf3511e62a
 ---
-
 # Technical details
 
 This topic discusses technical implementation details about pipeline deployment in Commerce 2.2 and later. Improvements can be divided into the following areas:

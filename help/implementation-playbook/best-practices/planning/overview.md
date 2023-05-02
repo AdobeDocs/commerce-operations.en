@@ -4,8 +4,8 @@ description: Learn about implementation best practices for the planning phase of
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
+exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
 ---
-
 # Planning phase
 
 The planning phase includes the following activities:

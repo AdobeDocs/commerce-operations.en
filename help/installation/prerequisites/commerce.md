@@ -1,8 +1,8 @@
 ---
 title: Get the Adobe Commerce software
 description: Learn how to download the Adobe Commerce and Magento Open Source software.
+exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
 ---
-
 # Get the Adobe Commerce software
 
 You are among the 240,000 merchants worldwide who put their trust in our eCommerce software. We have gathered some information to help you get started with your installation.
