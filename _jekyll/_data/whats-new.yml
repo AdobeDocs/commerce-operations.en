@@ -1,8 +1,21 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Thu Apr 20 09:33:05 2023
+updated: Thu May 4 09:56:54 2023
 entries:
+- description: Added the `commerce.eventing.event.publish` message queue consumer
+    to the [reference table](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html).
+  versions: 2.4.6
+  type: technical
+  date: April 20, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/441
+  merge_commit: 2f9bfcf9a8232cbe659062a9b1bc88eda3d9158c
+  contributor: keharper
+  membership: false
+  labels:
+  - technical
+  - 2.4.6
+  - internal
 - description: Added information about a newly released patch for a 2.4.6 known issue.
     See [Release notes for Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
   versions: 2.4.6
