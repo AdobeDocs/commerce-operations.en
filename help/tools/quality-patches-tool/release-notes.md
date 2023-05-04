@@ -15,6 +15,16 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.31 {#v1-1-31}
+
+* **ACSD-50345** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4 || >=2.4.4-p1 <2.4.6) - Fixes the issue where Recaptcha V2 does not reload after submitting a failed payment.
+* **ACSD-50817** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Optimizes Cron job sales_clean_quotes to run faster.
+* **ACSD-49392** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >= 2.4.1 <2.4.7) - Fixes the issue where the order status changes to closed after a partial refund for a bundled product.
+* **ACSD-51036** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where race conditions during concurrent REST API calls result in an overwrite of shipping status information in the Items Ordered table.
+* **ACSD-50858** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Improves performance for loading banners contents.
+* Added new versions for MDVA-39305-V2, ACSD-45169.
+* Updated patches ACSD-50260-V2.
+
 ## v1.1.30 {#v1-1-30}
 
 * **ACSD-50336** (for Adobe Commerce and Magento Open Source >=2.4.4-p1 <2.4.4-p3) - Fixes the issue where product alert emails are not sent when a product is back in stock or the price is changed.
