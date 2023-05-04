@@ -23,7 +23,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51036** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where race conditions during concurrent REST API calls result in an overwrite of shipping status information in the [!UICONTROL Items Ordered] table.
 * **ACSD-50858** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Improves performance for loading banners contents.
 * Added new versions for MDVA-39305-v2, ACSD-45169.
-* Updated patches ACSD-50260-V2.
+* Updated patches ACSD-50260-v2.
 
 ## v1.1.30 {#v1-1-30}
 
