@@ -3,8 +3,11 @@ title: Performance Benchmarks
 description: Review performance benchmarks for Adobe Commerce implementations hosted on Adobe cloud infrastructure.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 ---
+
 # Benchmark Summary 
+
 ## Key Performance Metrics - Adobe Commerce 2.4.5
+
 |Products|Websites|Categories|Customer Groups|Cart Pricing Rules|<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">effective SKUs</a>|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |250,000|5|6,000|50|20|242M|
@@ -19,6 +22,7 @@ Here is a summary of the benchmark:
 - System scaled to support 500 concurrent admin users while maintaining response times of less than 2 seconds for the 99th percentile.
 
 ## Test Environment
+
 Results of the performance benchmark were obtained by testing against an Adobe Commerce 2.4.5 on Cloud Pro <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html">Scaled/Split Architecture</a> instance, with <a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html">Multi-Source Inventory</a> and <a href="https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html">Adobe Stock</a> enabled. There were no additional customizations. 
 
 The <a href="https://github.com/magento/magento2/tree/2.4/setup/performance-toolkit">Performance Toolkit</a> was used to <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">generate the testing data</a> for the testing profile.
@@ -38,11 +42,16 @@ All performance measurements are based on simulated day-to-day store activities 
   - Set to 0% CDN cache hit rate
 
 ## Test Environment Specifications
+
 Load tests experiments run through JMeter using profiles against the Adobe Commerce on Cloud Pro environment. 3 web nodes and 3 database nodes were used during the test. The following image details the entry point of JMeter and Production infrastructure.
 <img width="1345" alt="Adobe-Commerce-Benchmark" src="https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495">
+
 ### Application
+
 - <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce 2.4.5</a> on Cloud
+
 ### Infrastructure
+
 Per web node:
 |vCPU|Memory|Network bandwidth|EBS bandwidth|
 |:-:|:-:|:-:|:-:|
