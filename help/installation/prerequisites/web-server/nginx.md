@@ -5,7 +5,7 @@ description: Follow these steps to install and configure the Nginx web server fo
 
 # Nginx
 
-Adobe Commerce supports nginx 1.18 (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
+Adobe Commerce supports nginx 1.x (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
 
 Installation instructions vary based on which operating system that you are using. See [PHP](../php-settings.md) for information.
 
