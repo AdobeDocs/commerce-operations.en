@@ -1,6 +1,7 @@
 ---
 title: Final verification
 description: Verify that your Varnish configuration is set up properly to work with the Adobe Commerce application.
+feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 ---
 # Final verification of Varnish configuration
@@ -76,4 +77,4 @@ Make sure the `<magento_root>/var/page_cache` directory is empty:
 
 >[!TIP]
 >
->If you encounter 503 (Backend Fetch Failed) errors, see [Troubleshooting 503 (Service Unavailable) errors](https://support.magento.com/hc/en-us/articles/360034631211) in the _Adobe Commerce Help Center_.
+>If you encounter 503 (Backend Fetch Failed) errors, see [Troubleshooting 503 (Service Unavailable) errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in the _Adobe Commerce Help Center_.

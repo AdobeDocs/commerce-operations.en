@@ -1,6 +1,7 @@
 ---
 title: Install Varnish
 description: See advice about installing Varnish.
+feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
 ---
 # Install Varnish

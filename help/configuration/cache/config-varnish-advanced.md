@@ -1,6 +1,7 @@
 ---
 title: Advanced Varnish configuration
 description: Configure advanced Varnish features, including health check, grace, and saint modes.
+feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
 ---
 # Advanced Varnish configuration
