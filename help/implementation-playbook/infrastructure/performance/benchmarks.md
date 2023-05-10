@@ -48,7 +48,7 @@ Load tests experiments run through JMeter using profiles against the Adobe Comme
 
 ### Application
 
-- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce 2.4.5</a> on Cloud
+- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce 2.4.5</a> deployed on cloud infrastructure with Pro architecture.
 
 ### Infrastructure
 
