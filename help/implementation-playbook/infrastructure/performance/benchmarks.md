@@ -36,7 +36,7 @@ Performance measurements are based on simulated day-to-day store activities for 
 - GraphQL API
   - 250 Concurrent Threads
   - Set to 0% CDN cache hit rate.
-    - Response times will significantly improve with a caching layer in front of GraphQL.
+    - Response times significantly improve with a caching layer in front of GraphQL.
 - Admin Web
   - 500 Concurrent users
   - Set to 0% CDN cache hit rate
