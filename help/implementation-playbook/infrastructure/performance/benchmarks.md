@@ -17,7 +17,7 @@ Based on testing criteria that aim to mimic an enterprise B2C organization, the 
 Here is a summary of the benchmark:
 - 3,481 orders per minute while maintaining response times of less than 2 seconds for the 99th percentile (99% of the requests were serviced with a response time of less than 2 seconds).
 - Over 2 million page views per hour while maintaining response times of less than 2 seconds for the 99th percentile.
-- During the benchmark the customer profile had 242 million different price variations (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKUs</a>) for 250,000 products.
+- During the benchmark, the customer profile had 242 million different price variations (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKUs</a>) for 250,000 products.
 - System scaled to 10,500 GraphQL un-cached requests per minute while maintaining response times of less than 2 seconds for the 99th percentile.
 - System scaled to support 500 concurrent admin users while maintaining response times of less than 2 seconds for the 99th percentile.
 
