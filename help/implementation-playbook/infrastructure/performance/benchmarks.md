@@ -25,7 +25,7 @@ Here is a summary of the benchmark:
 
 Results of the performance benchmark were obtained by testing against an Adobe Commerce 2.4.5 on Cloud Pro <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html">Scaled/Split Architecture</a> instance, with <a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html">Multi-Source Inventory</a> and <a href="https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html">Adobe Stock</a> enabled. There were no additional customizations. 
 
-The <a href="https://github.com/magento/magento2/tree/2.4/setup/performance-toolkit">Performance Toolkit</a> was used to <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">generate the testing data</a> for the testing profile.
+Performance testing data for the test profile was generated using the <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a>.
 
 All performance measurements are based on simulated day-to-day store activities for customers and business users. The values also reflect a close to maximum throughput for each case, but do not reflect unique business models, like private sales or flash sales.
 
