@@ -27,7 +27,7 @@ Performance benchmark results were obtained by testing against an instance with 
 
 Performance testing data for the test profile was generated using the <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a>.
 
-All performance measurements are based on simulated day-to-day store activities for customers and business users. The values also reflect a close to maximum throughput for each case, but do not reflect unique business models, like private sales or flash sales.
+Performance measurements are based on simulated day-to-day store activities for customers and business users. The values reflect a close to maximum throughput for each case, but do not reflect unique business models like private sales or flash sales.
 
 - LUMA Storefront
   - 3000 Concurrent Users on Storefront
