@@ -12,7 +12,7 @@ exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |250,000|5|6,000|50|20|242M|
 
-Based on testing criteria that aim to mimic an enterprise B2C organization, the system is capable of handling requested traffic and order numbers during peak times and at a standard load flow. 
+Based on testing criteria that mimic an enterprise B2C organization, the system can handle requested traffic and order numbers during peak times, at a standard load flow. 
 
 Here is a summary of the benchmark:
 - 3,481 orders per minute while maintaining response times of less than 2 seconds for the 99th percentile (99% of the requests were serviced with a response time of less than 2 seconds).
