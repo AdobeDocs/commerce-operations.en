@@ -43,7 +43,7 @@ Performance measurements are based on simulated day-to-day store activities for 
 
 ## Test Environment Specifications
 
-Load tests experiments run through JMeter using profiles against the Adobe Commerce on Cloud Pro environment. 3 web nodes and 3 database nodes were used during the test. The following image details the entry point of JMeter and Production infrastructure.
+Load testing was completed using JMeter load profiles run against the Adobe Commerce instance. Three web nodes and three database nodes were used during the test. The following image details the entry point of JMeter and Production infrastructure.
 <img width="1345" alt="Adobe-Commerce-Benchmark" src="https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495">
 
 ### Application
