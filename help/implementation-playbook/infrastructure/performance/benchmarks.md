@@ -23,7 +23,7 @@ Here is a summary of the benchmark:
 
 ## Test Environment
 
-Results of the performance benchmark were obtained by testing against an Adobe Commerce 2.4.5 on Cloud Pro <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html">Scaled/Split Architecture</a> instance, with <a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html">Multi-Source Inventory</a> and <a href="https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html">Adobe Stock</a> enabled. There were no additional customizations. 
+Performance benchmark results were obtained by testing against an instance with Adobe Commerce 2.4.5 deployed on cloud infrastructure with Pro <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html">Scaled/Split Architecture</a>, <a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html">Multi-Source Inventory</a>, and <a href="https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html">Adobe Stock</a> enabled. There were no additional customizations. 
 
 Performance testing data for the test profile was generated using the <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a>.
 
