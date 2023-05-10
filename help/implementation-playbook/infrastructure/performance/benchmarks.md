@@ -32,7 +32,7 @@ Performance measurements are based on simulated day-to-day store activities for 
 - LUMA Storefront
   - 3000 Concurrent Users on Storefront
   - Set to 30% CDN cache hit rate.
-    - Effective usage of the cache layer will increase the page views number per hour.
+    - Effective usage of the cache layer increases the page views number per hour.
 - GraphQL API
   - 250 Concurrent Threads
   - Set to 0% CDN cache hit rate.
