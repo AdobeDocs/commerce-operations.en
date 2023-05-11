@@ -30,15 +30,15 @@ Performance testing data for the test profile was generated using the <a href="h
 
 Performance measurements are based on simulated day-to-day store activities for customers and business users. The values reflect a close to maximum throughput for each case, but do not reflect unique business models like private sales or flash sales.
 
-- LUMA Storefront
+- **LUMA Storefront**
   - 3000 Concurrent Users on Storefront
   - Set to 30% CDN cache hit rate.
     - Effective usage of the cache layer increases the page views number per hour.
-- GraphQL API
+- **GraphQL API**
   - 250 Concurrent Threads
   - Set to 0% CDN cache hit rate.
     - Response times significantly improve with a caching layer in front of GraphQL.
-- Admin Web
+- **Admin Web**
   - 500 Concurrent users
   - Set to 0% CDN cache hit rate
 
