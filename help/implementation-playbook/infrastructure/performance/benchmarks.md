@@ -11,16 +11,14 @@ Adobe performance benchmarks are intended to help e-commerce managers and techni
 
 ## Key Performance Metrics - Adobe Commerce 2.4.5
 
-|Products|Websites|Categories|Customer Groups|Cart Pricing Rules|<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">effective SKUs</a>|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|250,000|5|6,000|50|20|242M|
+![Performance Benchmark JMeter and Production Infrastructure](https://git.corp.adobe.com/storage/user/43354/files/6e855cf8-d86d-4d26-8bcf-18199ed439fd){width="700" zoomable="yes"}
 
 Based on testing criteria that mimic an enterprise B2C organization, the system can handle requested traffic and order numbers during peak times, at a standard load flow. 
 
 Here is a summary of the benchmark:
 - 3,481 orders per minute while maintaining response times of less than 2 seconds for the 99th percentile (99% of the requests were serviced with a response time of less than 2 seconds).
 - Over 2 million page views per hour while maintaining response times of less than 2 seconds for the 99th percentile.
-- During the benchmark, the customer profile had 242 million different price variations (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKUs</a>) for 250,000 products.
+- During the benchmark, the customer profile had 242 million different price variations (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">effective SKUs</a>) for 250,000 products.
 - System scaled to 10,500 GraphQL un-cached requests per minute while maintaining response times of less than 2 seconds for the 99th percentile.
 - System scaled to support 500 concurrent admin users while maintaining response times of less than 2 seconds for the 99th percentile.
 
@@ -47,7 +45,7 @@ Performance measurements are based on simulated day-to-day store activities for 
 ## Test Environment Specifications
 
 Load testing was completed using JMeter load profiles run against the Adobe Commerce instance. Three web nodes and three database nodes were used during the test. The following image details the entry point of JMeter and Production infrastructure.
-<img width="1345" alt="Adobe-Commerce-Benchmark" src="https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495">
+![Performance Benchmark JMeter and Production Infrastructure](https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495){width="700" zoomable="yes"}
 
 ### Application
 
@@ -55,23 +53,16 @@ Load testing was completed using JMeter load profiles run against the Adobe Comm
 
 ### Infrastructure
 
-Per web node:
-|vCPU|Memory|Network bandwidth|EBS bandwidth|
-|:-:|:-:|:-:|:-:|
-|72|144GiB|256Gbps|19000Mbps|
+- Web 
+  - vCPU 216 (72 x 3 nodes)
+  - Memory 432 GiB (144 x 3 nodes)
+  - Network bandwidth 768 Gbps (256 x 3 nodes)
+  - EBS bandwidth 57000 Mbps (19000 x 3 nodes)
+  - Provisioned storage 1100 GB 
 
-Per db node:
-|vCPU|Memory|Network bandwidth|EBS bandwidth|
-|:-:|:-:|:-:|:-:|
-|64|256GiB|20Gbps|13600Mbps|
-
-Total vCPU:
-|web|db|
-|:-:|:-:|
-|216 vCPU|192 vCPU|
-
-Total provisioned storage:
-|web|db|
-|:-:|:-:|
-|1100GB|100GB|
-
+- Database
+  - vCPU 192 (64 x 3 nodes)
+  - Memory 768 GiB (256 x 3 nodes)
+  - Network bandwidth 60 Gbps (20 x 3 nodes)
+  - EBS bandwidth 40800 Mbps (13600 x 3 nodes)
+  - Provisioned storage 100 GB
