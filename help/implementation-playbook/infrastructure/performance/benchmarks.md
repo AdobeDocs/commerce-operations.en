@@ -3,7 +3,6 @@ title: Performance Benchmarks
 description: Review performance benchmarks for Adobe Commerce implementations hosted on Adobe cloud infrastructure.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 ---
-
 # Benchmark Summary 
 
 Adobe Commerce 2.4.5 performance benchmark results reflect performance as measured on an Adobe Commerce 2.4.5 instance deployed on cloud infrastructure with Pro Scaled/Split Architecture, Multi-Source Inventory, and Adobe Stock enabled. The following information summarizes the results and provides information about the environment and data used during testing.
