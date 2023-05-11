@@ -11,7 +11,7 @@ Adobe performance benchmarks are intended to help e-commerce managers and techni
 
 ## Key Performance Metrics - Adobe Commerce 2.4.5
 
-![Performance Benchmark JMeter and Production Infrastructure](https://git.corp.adobe.com/storage/user/43354/files/6e855cf8-d86d-4d26-8bcf-18199ed439fd){width="700" zoomable="yes"}
+![Performance Benchmark JMeter and Production Infrastructure](./assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
 
 Based on testing criteria that mimic an enterprise B2C organization, the system can handle requested traffic and order numbers during peak times, at a standard load flow. 
 
@@ -45,7 +45,7 @@ Performance measurements are based on simulated day-to-day store activities for 
 ## Test Environment Specifications
 
 Load testing was completed using JMeter load profiles run against the Adobe Commerce instance. Three web nodes and three database nodes were used during the test. The following image details the entry point of JMeter and Production infrastructure.
-![Performance Benchmark JMeter and Production Infrastructure](https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495){width="700" zoomable="yes"}
+![Performance Benchmark JMeter and Production Infrastructure](./assets/performance/images/performance-benchmark-infrastructure-diagram-245-cloud.png){width="700" zoomable="yes"}
 
 ### Application
 
