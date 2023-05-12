@@ -476,28 +476,28 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
             1.18

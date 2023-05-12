@@ -345,6 +345,44 @@ Magento Open Source, but is not supported.
       <th colspan="9">Catalog Service</th>
     </tr>
     <tr>
+      <td>Catalog Service 1.7</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Catalog Service 1.6</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Catalog Service 1.5</td>
       <td>Supported</span>
       </td>
@@ -445,7 +483,7 @@ Magento Open Source, but is not supported.
       <th colspan="9">Channel Manager</th>
     </tr>
     <tr>
-      <td>Channel Manager 1.4.0</td>
+      <td>Channel Manager 2.0.0</td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1320,6 +1358,106 @@ Magento Open Source, but is not supported.
       <td>Supported</span>
       </td>
       <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="9">Store Fulfillment for Adobe Commerce</th>
+    </tr>
+    <tr>
+      <td>Store Fulfillment for Adobe Commerce 1.4.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Store Fulfillment for Adobe Commerce 1.3.0</td>
+      <td>Not supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Store Fulfillment for Adobe Commerce 1.2.0</td>
+      <td>Not supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Store Fulfillment for Adobe Commerce 1.1.0</td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Store Fulfillment for Adobe Commerce 1.1.0</td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
       </td>
       <td>Not supported</span>
       </td>

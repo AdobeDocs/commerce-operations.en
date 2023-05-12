@@ -1,8 +1,8 @@
 ---
 title: Sensitive and system-specific paths
 description: See a list of system-specific and sensitive configuration values.
+exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
 ---
-
 # Sensitive and system-specific settings
 
 This topic lists configuration paths for system-specific and sensitive settings:

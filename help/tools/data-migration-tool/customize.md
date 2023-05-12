@@ -1,8 +1,8 @@
 ---
 title: Customize the [!DNL Data Migration Tool]
 description: Learn how to customize the [!DNL Data Migration Tool] to transfer data created by extensions between Magento 1 and Magento 2.
+exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 ---
-
 # Configure the [!DNL Data Migration Tool]
 
 Sometimes the data format and structure created by [extensions](https://marketplace.magento.com/extensions.html) or custom code is different between Magento 1 and Magento 2. Use extension points within the [!DNL Data Migration Tool] to migrate this data. If the data format and structure are the same, the tool can automatically migrate the data without user intervention.

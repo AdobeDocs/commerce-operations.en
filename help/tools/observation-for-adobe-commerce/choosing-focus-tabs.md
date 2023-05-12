@@ -1,6 +1,7 @@
 ---
-title: "Choosing the [!UICONTROL focus] tabs"
+title: Choosing the [!UICONTROL focus] tabs
 description: Learn how to select the [!UICONTROL focus] tabs to observe areas causing issues.
+exl-id: 6c0a7d81-09cf-49ce-888a-9ecaaad2b7ae
 ---
 # Choosing the [!UICONTROL focus] tabs
 

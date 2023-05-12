@@ -1,8 +1,8 @@
 ---
 title: env.php reference
 description: See a list of values for the env.php file.
+exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
 ---
-
 # env.php reference
 
 The `env.php` file contains the following sections:

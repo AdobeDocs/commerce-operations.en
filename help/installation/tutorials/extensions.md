@@ -1,8 +1,8 @@
 ---
 title: Install an extension
 description: Follow these steps to install an Adobe Commerce or Magento Open Source extension.
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
 ---
-
 # Install an extension
 
 Code that extends or customizes Adobe Commerce and Magento Open Source behavior is called an extension. You can optionally package and distribute extensions on the [Commerce Marketplace](https://marketplace.magento.com) or another extension distribution system.

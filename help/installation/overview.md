@@ -1,8 +1,8 @@
 ---
 title: On-premises installation overview
 description: Learn about the installation process for on-premises deployments of Adobe Commerce and Magento Open Source.
+exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 ---
-
 # On-premises installation overview
 
 >[!NOTE]
@@ -30,4 +30,3 @@ The general installation flow is as follows:
    If the step fails because prerequisite software isn't set up correctly, review the [prerequisites](prerequisites/overview.md).
 
 1. [Verify](next-steps/verify.md) the installation by viewing your storefront and the Admin.
-

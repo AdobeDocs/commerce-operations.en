@@ -1,8 +1,8 @@
 ---
 title: Set the operation mode
 description: Read about setting the Adobe Commerce operation modes.
+exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
 ---
-
 # Set the operation mode
 
 {{file-system-owner}}

@@ -1,8 +1,8 @@
 ---
 title: Complete Prerequisites
 description: Prepare your Adobe Commerce project for an upgrade by completing these prerequisite steps.
+exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
 ---
-
 # Complete upgrade prerequisites
 
 It is important to understand what is necessary to run Adobe Commerce. You must first review the [system requirements](../../installation/system-requirements.md) for the version you are planning to upgrade to.

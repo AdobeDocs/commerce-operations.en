@@ -1,8 +1,8 @@
 ---
 title: Prevent cache poisoning
 description: Learn how to prevent page cache poisoning for your Commerce storefront.
+exl-id: 947024dd-d59d-480d-bb6c-8e0065054bb6
 ---
-
 # Prevent cache poisoning
 
 This topic discusses how to prevent cache poisoning if you use the Microsoft Internet Information Server (IIS) web server. _Cache poisoning_ is a method of changing cache contents to include different pages from the same site. For example, it is possible to inject an HTTP 404 (Not Found) error page in place of some benign page (for example, the storefront home page), which can lead to a potential denial-of-service (DoS). The malicious page URLs are cached by Varnish or Redis, hence the name _page cache poisoning_.

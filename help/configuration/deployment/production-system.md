@@ -1,8 +1,8 @@
 ---
 title: Production system setup
 description: Learn how to set up a production system for the Commerce application.
+exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
 ---
-
 # Production system setup
 
 You can have one production system. All of the following must be true:

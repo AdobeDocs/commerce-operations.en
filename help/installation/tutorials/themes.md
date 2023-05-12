@@ -1,8 +1,8 @@
 ---
 title: Uninstall themes
 description: Follow these steps to uninstall an Adobe Commerce or Magento Open Source theme.
+exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
 ---
-
 # Uninstall themes
 
 Before you use this command, you must know the relative path to your theme. Themes are located in a subdirectory of `<magento_root>/app/design/<area name>`. You must specify the path to the theme starting with the area, which is either `frontend` (for storefront themes) or `adminhtml` (for Admin themes).

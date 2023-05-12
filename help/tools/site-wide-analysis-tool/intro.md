@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Site-Wide Analysis Tool]"
+title: '[!DNL Site-Wide Analysis Tool]'
 description: Learn about the [!DNL Site-Wide Analysis] Tool, its uses, the installation process, and how to get access
+exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
 ---
 # [!DNL Site-Wide Analysis Tool]
 
@@ -14,8 +15,15 @@ See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to le
 
 ## Tool Overview
 
-- **Dashboard** - Shows the overall health of your system with notifications of detected issues and specific recommendations by priority. It also includes a historical chart to track how your website's health changes over time.
-
+- **Dashboard**
+    - Shows the overall health of your system with notifications of detected issues and specific recommendations by priority.<br>
+    It also includes a historical chart to track how your website's health changes over time.
+    - Shows the **[!UICONTROL Security Center Widget]** that lets you access:
+        - [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+        - [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html)
+        - [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)
+        - [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)
+        
 - **Information** - Provides customer contact information and a summary of current tickets, with detailed information about each installed Adobe Commerce product.
 
 - **Recommendations** - Lists recommendations based on best practices to address issues detected on your site.
@@ -28,9 +36,11 @@ See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to le
 
 ## Integrations with other Adobe Commerce Support Tools
 
-View all of the important insights about your site in one place. [!DNL Site-Wide Analysis Tool] allows you to get direct access to and information from the [!DNL Security Scan Tool], [!DNL Upgrade Compatability Tool], and [!DNL Managed Alerts].
+View all of the important insights about your site in one place. [!DNL Site-Wide Analysis Tool] allows you to get direct access to and information from the [!UICONTROL Security Center Widget], [!DNL Upgrade Compatability Tool], and [!DNL Managed Alerts].
 
-- [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Provides Adobe Commerce and Magento Open-Source customers with real-time insights into the security status of their store by proactively detecting malware and notifying them if their store is compromised.
+- [**[!UICONTROL Security Center Widget]**] - Displays security insights for your site.<br>
+The security information shown includes [Tech [!DNL Stack] Version Compliance with [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).<br>
+The [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) provides Adobe Commerce and Magento Open-Source customers with real-time insights into the security status of their store by proactively detecting malware and notifying them if their store is compromised.
 
 - [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - Runs Adobe Commerce's customized instance against the target upgrade version and returns a summary of critical issues, errors, and warnings that must be addressed, making the upgrade analysis process easier, faster, and cheaper.
 

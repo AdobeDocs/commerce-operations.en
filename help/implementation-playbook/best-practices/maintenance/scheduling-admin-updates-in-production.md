@@ -4,8 +4,8 @@ description: Learn best practices for scheduling critical updates to Adobe Comme
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
+exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
 ---
-
 # Best practices for scheduling Admin updates on production sites
 
 Schedule critical updates and operations on your Adobe Commerce sites during off-peak hours to prevent slow performance and outages on production sites.
@@ -30,4 +30,3 @@ Critical actions lead to cache invalidation and reindexing operations which sign
 - [Private content: Invalidate private content](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware recommendations: Caches](../../../performance/hardware.md#caches)
 - [Advanced setup: Set up Redis](../../../performance/advanced-setup.md#set-up-redis)
-

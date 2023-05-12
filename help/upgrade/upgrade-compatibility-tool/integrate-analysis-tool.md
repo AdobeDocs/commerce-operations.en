@@ -1,8 +1,8 @@
 ---
-title: "Integrate the [!DNL Site-Wide Analysis Tool]"
+title: Integrate the [!DNL Site-Wide Analysis Tool]
 description: Follow these steps to retrieve the [!DNL Upgrade Compatibility Tool] report from the [!DNL Site-Wide Analysis Tool] dashboard on your Adobe Commerce project.
+exl-id: 1ef37294-a837-47a4-841c-4027087acf12
 ---
-
 # Integrate the [!DNL Site-Wide Analysis Tool]
 
 The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability for Adobe Commerce instances.

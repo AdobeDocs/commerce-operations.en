@@ -4,8 +4,8 @@ description: Learn how to get the latest security updates about Adobe products.
 role: User
 feature: Best Practices
 feature-set: Commerce
+exl-id: 9d9521c3-d429-455a-ae28-f49a486eafe0
 ---
-
 # Security notification best practices
 
 Security is one of our highest priorities and Adobe understands that security is important to our customers as well.

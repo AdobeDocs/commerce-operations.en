@@ -1,8 +1,8 @@
 ---
 title: Configuration Best Practices
 description: Optimize the response time of your Adobe Commerce or Magento Open Source deployment using these best practices.
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
 ---
-
 # Configuration best practices
 
 Commerce provides many settings and tools that you can use to improve response time on the pages as well as provide higher throughput.
@@ -116,4 +116,3 @@ You can limit product grid collections on the following pages only:
 * Admin Create Order Page
 
 If you do not want your product grid to be limited, we encourage you to use filters more precisely for the result collection to have fewer items than **[!UICONTROL Records Limit]**.
-

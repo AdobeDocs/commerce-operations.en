@@ -1,8 +1,8 @@
 ---
 title: Message Queues Overview
 description: Read about the message queue framework and how it works with the Adobe Commerce and Magento Open Source application.
+exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
 ---
-
 # Message queues overview
 
 The Message Queue Framework (MQF) is a system that allows a module to publish messages to queues. It also defines the [consumers](consumers.md) that will receive the messages asynchronously. The MQF uses [[!DNL RabbitMQ]](https://www.rabbitmq.com) as the messaging broker, which provides a scalable platform for sending and receiving messages. It also includes a mechanism for storing undelivered messages. [!DNL RabbitMQ] is based on the Advanced Message Queuing Protocol (AMQP) 0.9.1 specification.

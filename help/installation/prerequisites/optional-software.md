@@ -1,8 +1,8 @@
 ---
 title: Optional software
 description: Learn more about optional software that you can install to support on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
 ---
-
 # Optional software
 
 We strongly recommend you install NTP to ensure that cron-related tasks perform properly. (Server dates could be in the past or future, for example.)

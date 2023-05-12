@@ -1,11 +1,11 @@
 ---
 title: Prevent and respond to a security incident
-description: Learn about best practices for avoiding and responding to security incidents in your Adobe Commerce on cloud infrastructure project. 
+description: Learn about best practices for avoiding and responding to security incidents in your Adobe Commerce on cloud infrastructure project.
 role: Admin, Developer, Leader, User
 feature-set: Commerce
 feature: Best Practices
+exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 ---
-
 # Best practices to help prevent and respond to a security incident
 
 Adobe Commerce security operates under a [Shared Responsibility](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) model. It is key to understand what Adobe and your technical teams are responsible for. Below we summarize [Security Best Practices](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) for ensuring your project has the best security controls in place and how best to respond to a security incident.

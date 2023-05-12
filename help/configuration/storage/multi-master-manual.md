@@ -1,8 +1,8 @@
 ---
 title: Manually configure master databases
 description: See guidance on manually configuring the split database solution.
+exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
 ---
-
 # Manually configure master databases
 
 {{ee-only}}

@@ -1,8 +1,8 @@
 ---
 title: Migrate changes
 description: Learn how to migrate only data that has changed since your last Magento 1 data migration with the [!DNL Data Migration Tool].
+exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 ---
-
 # Migrate changes
 
 The incremental migration tool installs deltalog tables (with prefix `m2_cl_*`) and triggers (for tracking changes) in the Magento 1 database during the [migration of data](data.md). These deltalog tables and triggers are essential to ensuring that you migrate only the changes made in Magento 1 since the last time you migrated data. These changes are:

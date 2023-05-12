@@ -1,8 +1,8 @@
 ---
 title: Payment configuration paths reference
 description: See a list of configurable payment method values.
+exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
 ---
-
 # Payment configuration paths reference
 
 These configuration values are available in the Admin in **Stores** > Settings > **Configuration** > **Sales** > **Payment Methods**.

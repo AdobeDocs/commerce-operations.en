@@ -1,8 +1,8 @@
 ---
 title: Start message queue consumers
 description: Learn how to start a message queue consumer.
+exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
 ---
-
 # Start message queue consumers
 
 {{file-system-owner}}

@@ -1,8 +1,8 @@
 ---
 title: Sales configuration paths reference
 description: See a list of sales configuration values.
+exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
 ---
-
 # Sales configuration paths reference
 
 This section lists variable names and config paths available for options in the Admin under **Stores** > Settings > **Configuration** > **Sales**.

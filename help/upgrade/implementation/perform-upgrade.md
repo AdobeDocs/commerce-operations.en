@@ -1,8 +1,8 @@
 ---
 title: Perform an Upgrade
 description: Follow these steps to upgrade an Adobe Commerce or Magento Open Source project.
+exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
 ---
-
 # Perform an upgrade
 
 You can upgrade your Adobe Commerce or Magento Open Source application from the command line if you installed the software by:

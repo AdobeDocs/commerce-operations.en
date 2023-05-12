@@ -1,6 +1,7 @@
 ---
-title: "The [!UICONTROL Redis] tab"
+title: The [!UICONTROL Redis] tab
 description: Learn about the [!UICONTROL Redis] tab of [!DNL Observation for Adobe Commerce].
+exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 ---
 # The [!DNL Redis] tab
 

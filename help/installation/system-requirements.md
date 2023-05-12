@@ -1,8 +1,8 @@
 ---
 title: System requirements
 description: Use this reference to identify required software dependencies that have been tested with Adobe Commerce and Magento Open Source releases.
+exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
-
 # System requirements
 
 This table shows versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases. Adobe only supports the combination of system requirements described in the following table.

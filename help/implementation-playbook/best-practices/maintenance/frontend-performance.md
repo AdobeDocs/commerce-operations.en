@@ -4,8 +4,8 @@ description: Identify and address issues that negatively impact site performance
 role: Admin, User, Developer
 feature: Best Practices
 feature-set: Commerce
+exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 ---
-
 # Best practices for frontend performance
 
 Use web performance tools to check the frontend performance of your Adobe Commerce stores.
@@ -34,5 +34,3 @@ To check the frontend performance of your website store:
 - [Index Management for Admin users](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [Index Management using the CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Indexing overview for developers](https://developer.adobe.com/commerce/php/development/components/indexing/)
-
-

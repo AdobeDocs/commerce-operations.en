@@ -1,8 +1,8 @@
 ---
 title: B2B Extension configuration paths reference
 description: See a list of B2B-related configuration values.
+exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 ---
-
 # B2B Extension configuration paths reference
 
 _This is available for instances with B2B for Adobe Commerce installed._

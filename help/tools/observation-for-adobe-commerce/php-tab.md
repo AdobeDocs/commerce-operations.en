@@ -1,8 +1,8 @@
 ---
-title: "The [!UICONTROL PHP] tab"
+title: The [!UICONTROL PHP] tab
 description: Learn about the [!UICONTROL PHP] tab of [!DNL Observation for Adobe Commerce].
+exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 ---
-
 # The [!UICONTROL PHP] tab
 
 The **PHP** tab shows PHP process issues to provide a deeper analysis into PHP problems.
