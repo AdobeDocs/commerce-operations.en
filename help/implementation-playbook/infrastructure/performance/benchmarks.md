@@ -29,17 +29,17 @@ Performance benchmark results were obtained by testing against an Adobe Commerce
 
 Performance testing data for the test profile was generated using the <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a>.
 
-Performance measurements are based on simulated day-to-day store activities for customers and business users. The values reflect a close to maximum throughput for each case, but do not reflect unique business models like private sales or flash sales.
+Performance measurements are based on simulated day-to-day store activities for customers and business users. The values reflect a close-to-maximum throughput for each case, but do not reflect unique business models, such as private sales or flash sales.
 
 - **LUMA Storefront**
   - 3000 concurrent users on storefront
-  - Set to 30% CDN cache hit rate.
+  - Set to 30% CDN cache hit rate
 
     Effective usage of the cache layer increases the page views number per hour.
 
 - **GraphQL API**
   - 250 concurrent threads
-  - Set to 0% CDN cache hit rate.
+  - Set to 0% CDN cache hit rate
 
     Response times significantly improve with a caching layer in front of GraphQL.
 
@@ -67,7 +67,7 @@ For the performance benchmark, Adobe Commerce 2.4.5 was deployed on a [scalable 
   - Network bandwidth 768 Gbps (256 x 3 nodes)
   - Provisioned storage 1100 GB
 
-- **Database node specifications**
+- **Service node specifications**
   - vCPU 192 (64 x 3 nodes)
   - Memory 768 GiB (256 x 3 nodes)
   - Network bandwidth 60 Gbps (20 x 3 nodes)
