@@ -87,10 +87,10 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.4
+            8.5
       </td>
       <td>
-            8.4, 7.17
+            8.5, 7.17
       </td>
       <td>
             8.4, 7.17
