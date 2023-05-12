@@ -5,7 +5,15 @@ exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 ---
 # Benchmark Summary
 
-Adobe Commerce 2.4.5 performance benchmark results reflect performance as measured on an Adobe Commerce instance deployed in a Pro cloud environment with scalable architecture, Multi-Source Inventory, and Adobe Stock enabled. The following information summarizes the results and provides information about the environment and data used during testing.
+Adobe Commerce 2.4.5 performance benchmark results reflect performance as measured on an Adobe Commerce instance deployed with the following infrastructure and additional components.
+- [Pro cloud environment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html] with [scaled architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
+- [B2B for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
+- [Adobe Commerce Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html]
+- [Adobe Stock](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html)
+
+There are no additional customizations.
+
+The following information summarizes the benchmark results and provides information about the environment and data used during testing.
 
 ## Key Performance Metrics
 
@@ -25,7 +33,7 @@ Based on testing criteria that mimic an enterprise B2C organization, the system 
 
 ## Test environment
 
-Performance benchmark results were obtained by testing against an Adobe Commerce 2.4.5 instance deployed in a Pro cloud environment with <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html">scalable infrastructure</a>, <a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html">Multi-Source Inventory</a>, and <a href="https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html">Adobe Stock</a> enabled. There were no additional customizations.
+Performance benchmark results were obtained by testing against an Adobe Commerce 2.4.5 instance deployed in a Pro cloud environment with scaled architecture. The instance also had the Adobe Commerce B2B, Inventory Management, and Adobe Stock Integration modules installed, configured, and enabled.
 
 Performance testing data for the test profile was generated using the <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a>.
 
@@ -65,11 +73,11 @@ For the performance benchmark, Adobe Commerce 2.4.5 was deployed on a [scalable 
   - vCPU 216 (72 x 3 nodes)
   - Memory 432 GiB (144 x 3 nodes)
   - Network bandwidth 768 Gbps (256 x 3 nodes)
-  - Provisioned storage 1100 GB
+  - Provisioned storage 100 GB
 
 - **Service node specifications**
   - vCPU 192 (64 x 3 nodes)
   - Memory 768 GiB (256 x 3 nodes)
   - Network bandwidth 60 Gbps (20 x 3 nodes)
   - EBS bandwidth 40800 Mbps (13600 x 3 nodes)
-  - Provisioned storage 100 GB
+  - Provisioned storage 1100 GB
