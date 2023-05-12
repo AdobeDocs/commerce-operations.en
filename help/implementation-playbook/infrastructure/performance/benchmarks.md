@@ -6,9 +6,9 @@ exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 # Benchmark Summary
 
 Adobe Commerce 2.4.5 performance benchmark results reflect performance as measured on an Adobe Commerce instance deployed with the following infrastructure and additional components.
-- [Pro cloud environment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html] with [scaled architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
+- [Pro cloud environment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) with [scaled architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
 - [B2B for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
-- [Adobe Commerce Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html]
+- [Adobe Commerce Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html)
 - [Adobe Stock](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html)
 
 There are no additional customizations.
