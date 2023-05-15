@@ -73,7 +73,7 @@ For the performance benchmark, Adobe Commerce 2.4.5 was deployed on a [scalable 
   - vCPU 216 (72 x 3 nodes)
   - Memory 432 GiB (144 x 3 nodes)
   - Network bandwidth 768 Gbps (256 x 3 nodes)
-  - EBS bandwidth 57000 Mbps (19000 x 
+  - EBS bandwidth 57000 Mbps (19000 x 3 nodes)
   - Provisioned storage 100 GB
 
 - **Service node specifications**
