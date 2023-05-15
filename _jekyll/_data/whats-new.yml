@@ -1,8 +1,29 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Thu May 4 09:56:54 2023
+updated: Mon May 15 13:25:52 2023
 entries:
+- description: Added infrastructure details to the [performance benchmarks](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html).
+  versions: ''
+  type: major-update
+  date: May 12, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/527
+  merge_commit: 762bc2b9bdd19d92707525044a4178b6e89e4a3d
+  contributor: reedwach
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.31 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: May 4, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/526
+  merge_commit: 7f30857b612d027dfce26fac1f947006f28ecfa6
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
 - description: Added the `commerce.eventing.event.publish` message queue consumer
     to the [reference table](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html).
   versions: 2.4.6
