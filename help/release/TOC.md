@@ -9,7 +9,7 @@ user-guide-description: Access all release information for Adobe Commerce patche
   - [Overview](release-notes/overview.md)
   - [Backward-incompatible changes](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
-  -   [2.4.7](release-notes/commerce/2-4-7.md)
+    - [2.4.7](release-notes/commerce/2-4-7.md)
     - [2.4.6](release-notes/commerce/2-4-6.md)
     - [2.4.5](release-notes/commerce/2-4-5.md)
     - [2.4.4](release-notes/commerce/2-4-4.md)
