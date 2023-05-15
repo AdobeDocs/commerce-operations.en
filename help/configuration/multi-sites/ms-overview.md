@@ -1,8 +1,8 @@
 ---
 title: Multiple websites or stores
 description: Learn how you can start multiple websites or implement store views with different options, domains, and content.
+exl-id: 724d75d9-13fc-40f9-951a-69aa407adb6f
 ---
-
 # Multiple websites or stores
 
 A single instance of the Adobe Commerce software enables you to start multiple websites or store views that use different attributes and content, such as:
@@ -13,11 +13,11 @@ A single instance of the Adobe Commerce software enables you to start multiple w
 - Products
 - Currencies
 
-This flexible solution enables one Commerce codebase and [Admin](https://glossary.magento.com/magento-admin) to administer and display different stores. You configure the websites, stores, and store views in the Admin. Use certain variables in virtual hosts to start the Commerce application using these websites or store views.
+This flexible solution enables one Commerce codebase and Admin to administer and display different stores. You configure the websites, stores, and store views in the Admin. Use certain variables in virtual hosts to start the Commerce application using these websites or store views.
 
 A typical use is to set up stores with different options in different domains. For example, you could have one set of categories and products on one domain and another set of categories and products on a separate domain in a different language.
 
-You configure the websites, stores, and store views in the Commerce [Admin](https://glossary.magento.com/admin). Use the `MAGE_RUN_TYPE` and `MAGE_RUN_CODE` variables in virtual hosts to start the Commerce application using these websites or store views.
+You configure the websites, stores, and store views in the Commerce Admin. Use the `MAGE_RUN_TYPE` and `MAGE_RUN_CODE` variables in virtual hosts to start the Commerce application using these websites or store views.
 
 Consider the following terms:
 

@@ -1,8 +1,8 @@
 ---
 title: Run the support utilities
 description: Troubleshoot your Commerce project using the built-in support utility.
+exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 ---
-
 # Run the support utilities
 
 {{ee-only}}

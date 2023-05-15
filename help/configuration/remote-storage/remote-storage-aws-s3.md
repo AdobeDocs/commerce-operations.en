@@ -1,6 +1,7 @@
 ---
 title: Configure AWS S3 bucket for remote storage
 description: Configure your Commerce project to use the AWS S3 storage service for remote storage.
+exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
 ---
 # Configure AWS S3 bucket for remote storage
 

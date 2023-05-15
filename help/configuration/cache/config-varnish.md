@@ -1,8 +1,8 @@
 ---
 title: Configure and use Varnish
 description: Understand how Varnish stores files and improves HTTP traffic.
+exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 ---
-
 # Configure Varnish
 
 [Varnish Cache][] is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like Apache and nginx, Varnish was designed for use exclusively with the HTTP protocol.
@@ -30,7 +30,7 @@ In the preceding figure, users' HTTP requests over the internet result in numero
 
 As the web server returns assets, cacheable assets are stored in Varnish. Any subsequent requests for those assets are fulfilled by Varnish (meaning, the requests do not reach the web server). Varnish returns cached content extremely quickly. The results are faster response times to return the content to users and a reduced number of requests that must be fulfilled by Commerce.
 
-Assets cached by Varnish expire at a configurable interval or are replaced by newer versions of the same assets. You can also clear the cache manually either using the [Admin](https://glossary.magento.com/magento-admin) or the [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) command.
+Assets cached by Varnish expire at a configurable interval or are replaced by newer versions of the same assets. You can also clear the cache manually either using the Admin or the [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) command.
 
 ## Process overview
 
@@ -94,7 +94,7 @@ Varnish caching works with Commerce using:
 
 On the first browser request, cacheable assets are delivered to the client browser from Varnish and cached on the browser.
 
-In addition, Varnish uses an [Entity](https://glossary.magento.com/entity) Tag (ETag) for static assets. The ETag provides a way to determine when [static files](https://glossary.magento.com/static-files) change on the server. As a result, static assets are sent to the client when they change on the server---either on a new request from a browser or when the client refreshes the browser cache, typically by pressing F5 or Control+F5.
+In addition, Varnish uses an Entity Tag (ETag) for static assets. The ETag provides a way to determine when static files change on the server. As a result, static assets are sent to the client when they change on the server---either on a new request from a browser or when the client refreshes the browser cache, typically by pressing F5 or Control+F5.
 
 More detail is provided in the sections that follow.
 

@@ -1,11 +1,11 @@
 ---
 title: Quick start on-premises installation
 description: Follow these steps to install Adobe Commerce or Magento Open Source on infrastructure that you own.
+exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 ---
-
 # Quick start on-premises installation
 
-We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source [metapackage](https://glossary.magento.com/metapackage) provides the following advantages:
+We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source metapackage provides the following advantages:
 
 -  Reuse third-party libraries without bundling them with source code
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management

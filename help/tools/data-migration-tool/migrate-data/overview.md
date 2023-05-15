@@ -1,8 +1,8 @@
 ---
 title: Migration overview
 description: Learn how to start migrating data from Magento 1 to Magento 2 with the [!DNL Data Migration Tool].
+exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 ---
-
 # Migration overview
 
 Before you start migration, stop all Magento 1 cron jobs.
@@ -11,7 +11,7 @@ During the migration process, follow these general rules for a successful migrat
 
 1. **Do not** make changes in the Magento 1 Admin, except for order management (shipping, creating invoice, and credit memos)
 1. **Do not** alter any code
-1. **Do not** make changes in the Magento 2 Admin and [storefront](https://glossary.magento.com/storefront)
+1. **Do not** make changes in the Magento 2 Admin and storefront
 
 >[!TIP]
 >

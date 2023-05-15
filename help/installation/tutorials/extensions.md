@@ -1,8 +1,8 @@
 ---
 title: Install an extension
 description: Follow these steps to install an Adobe Commerce or Magento Open Source extension.
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
 ---
-
 # Install an extension
 
 Code that extends or customizes Adobe Commerce and Magento Open Source behavior is called an extension. You can optionally package and distribute extensions on the [Commerce Marketplace](https://marketplace.magento.com) or another extension distribution system.
@@ -10,12 +10,12 @@ Code that extends or customizes Adobe Commerce and Magento Open Source behavior 
 Extensions include:
 
 -  Modules (extend Adobe Commerce and Magento Open Source capabilities)
--  Themes (change the look and feel of your [storefront](https://glossary.magento.com/storefront) and Admin)
+-  Themes (change the look and feel of your storefront and Admin)
 -  Language packages (localize the storefront and Admin)
 
 >[!TIP]
 >
->This topic explains how to use the command line to install extensions you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's [Composer](https://glossary.magento.com/composer) name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
+>This topic explains how to use the command line to install extensions you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's Composer name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
 
 Before installation, you may want to:
 

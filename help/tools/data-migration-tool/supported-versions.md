@@ -1,8 +1,8 @@
 ---
 title: Supported versions for data migration
 description: Learn about what versions of Magento 1 and Magento 2 that the [!DNL Data Migration Tool] supports.
+exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
 ---
-
 # Supported versions for data migration
 
 The [!DNL Data Migration Tool] supports migration _from_ the following versions:

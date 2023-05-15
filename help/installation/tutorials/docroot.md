@@ -1,8 +1,8 @@
 ---
 title: Modify docroot to improve security
 description: Prevent unauthorized browser-based access to Adobe Commerce or Magento Open Source on-premises file system.
+exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
 ---
-
 # Modify docroot to improve security
 
 In a standard installation with an Apache web server, Adobe Commerce and Magento Open Source is installed to the default web root: `/var/www/html/magento2`.
@@ -159,7 +159,7 @@ Switching between modes is an important step in verifying that your server confi
 
 ## 5. Verify the storefront
 
-Go to the [storefront](https://glossary.magento.com/storefront) in a web browser to verify that everything is working.
+Go to the storefront in a web browser to verify that everything is working.
 
 1. Open a web browser and enter your server's hostname or IP address in the address bar. For example, `http://192.168.33.10`.
 

@@ -1,8 +1,8 @@
 ---
 title: Upgrade a Git-Based Installation
 description: Upgrade an Adobe Commerce or Magento Open Source installation that you cloned from a git repository.
+exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
 ---
-
 # Upgrade a git-based installation
 
 This topic discusses how a contributing developer can update Adobe Commerce or Magento Open Source without reinstalling it. If you are not a contributing developer, see [Perform an upgrade](../implementation/perform-upgrade.md).

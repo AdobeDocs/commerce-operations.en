@@ -1,8 +1,8 @@
 ---
 title: Cron jobs
 description: Learn about cron groups and creating a custom cron job.
+exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
 ---
-
 # Cron jobs
 
 These topics discuss how to set up a custom cron job and optionally a custom cron group. If your Commerce extension requires scheduled tasks to run periodically, you can use these topics to set up a cron _job_ (the scheduled task) and optionally a cron _group_, which runs custom tasks at the same time.

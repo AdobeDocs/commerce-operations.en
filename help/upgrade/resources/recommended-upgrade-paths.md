@@ -1,8 +1,8 @@
 ---
 title: Modernizing your platform with Adobe Commerce
 description: Review recommendations for planning your Adobe Commerce upgrade.
+exl-id: f776b000-0085-4b77-860f-623837c3c902
 ---
-
 # Recommended upgrade paths
 
 An eCommerce implementation is an evolution—it's never truly finished. Your business must remain one step ahead of trends by introducing the latest capabilities and functionality that keeps your customers engaged. Upgrading to the latest Adobe Commerce version enables you to stay ahead of the pack with best-in-class innovations and future-proof your business with:

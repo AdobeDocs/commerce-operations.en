@@ -1,8 +1,8 @@
 ---
 title: Production system setup
 description: Learn how to set up a production system for the Commerce application.
+exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
 ---
-
 # Production system setup
 
 You can have one production system. All of the following must be true:
@@ -23,7 +23,7 @@ You can have one production system. All of the following must be true:
 
 To set up a production machine:
 
-1. After installing Commerce or pulling it from source control, log in to the production server as, or switch to, the [file system owner](https://glossary.magento.com/magento-file-system-owner).
+1. After installing Commerce or pulling it from source control, log in to the production server as, or switch to, the file system owner.
 1. Create `~/.ssh/.composer/auth.json` if you have not already done so.
 
    Create the directory:

@@ -1,8 +1,8 @@
 ---
 title: Complete Prerequisites
 description: Prepare your Adobe Commerce project for an upgrade by completing these prerequisite steps.
+exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
 ---
-
 # Complete upgrade prerequisites
 
 It is important to understand what is necessary to run Adobe Commerce. You must first review the [system requirements](../../installation/system-requirements.md) for the version you are planning to upgrade to.
@@ -105,7 +105,7 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
 1. In the root directory of your Adobe Commerce project, update your Composer dependencies to remove the `Magento_Elasticsearch7` module and install the `Magento_Elasticsearch8` module.
 
    ```bash
-   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
 1. Update your project components.

@@ -1,15 +1,15 @@
 ---
 title: Upgrade the database schema and data
 description: Follow these steps to upgrade your Adobe Commerce or Magento Open Source database schema.
+exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
 ---
-
 # Upgrade the database schema and data
 
 Before you use this command, you must [install the application](../advanced.md).
 
 ## Upgrade the database schema and data
 
-Anytime you perform an action that causes the [database schema](https://glossary.magento.com/database-schema) or data to change, you must update them by running the command discussed in this section. A partial list of reasons follows:
+Anytime you perform an action that causes the database schema or data to change, you must update them by running the command discussed in this section. A partial list of reasons follows:
 
 *  You upgraded the application using the command line
 *  You installed or updated a component using the command line

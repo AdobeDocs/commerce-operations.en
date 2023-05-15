@@ -1,15 +1,15 @@
 ---
 title: Prerequisites for deployment
 description: See a list of prerequisites for deploying Commerce into a development, build, or production system.
+exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
 ---
-
 # Prerequisites for development, build, and production systems
 
 File permissions and ownership must be consistent across development, build, and production systems. To make this work, you must either:
 
 - All of the following:
 
-  - Set up the same [file system owner](https://glossary.magento.com/magento-file-system-owner) username on all systems
+  - Set up the same file system owner username on all systems
   - Make sure the web server runs as the same user on all systems
   - Make sure that the file system owner is in the web server group on all systems
 

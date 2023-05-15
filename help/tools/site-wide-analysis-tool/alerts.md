@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Alerts]"
+title: '[!DNL Alerts]'
 description: Learn about the [!UICONTROL Alerts] tab in the [!DNL Site-Wide Analysis Tool], when to use it, and its benefits.
+exl-id: 0d7dacfe-f66a-440b-89cc-bce5eda2a230
 ---
 # [!DNL Alerts]
 
@@ -13,4 +14,3 @@ The [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] page displays Adobe Com
 ## Benefits
 
 Improve your site performance by staying updated on [!DNL Alerts] and updating the site as needed.
-

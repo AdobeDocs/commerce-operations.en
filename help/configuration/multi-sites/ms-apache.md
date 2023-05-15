@@ -1,13 +1,13 @@
 ---
 title: Set up multiple websites with Apache
 description: Follow this tutorial to set up multiple websites with Apache.
+exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
 ---
-
 # Set up multiple websites with Apache
 
 We assume that:
 
-If necessary, copy the existing `index.php` entry point script for your website or [store view](https://glossary.magento.com/store-view) and add to it the following:
+If necessary, copy the existing `index.php` entry point script for your website or store view and add to it the following:
 
 - You are working on a development machine (laptop, virtual machine, and so on)
 

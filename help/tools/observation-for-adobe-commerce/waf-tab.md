@@ -1,6 +1,7 @@
 ---
-title: "The [!DNL WAF] tab"
+title: The [!DNL WAF] tab
 description: Learn about the [!DNL WAF] tab of [!DNL Observation for Adobe Commerce].
+exl-id: e36986d7-d903-4154-bb09-6962b99ae35f
 ---
 # The [!DNL WAF] tab
 

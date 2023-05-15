@@ -1,8 +1,8 @@
 ---
 title: X-Frame-Options header
 description: Use X-Frame-Options to control page renderings.
+exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
 ---
-
 # X-Frame-Options header
 
 To help prevent [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) exploits, we added an option to use the [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP request header in requests to your storefront.

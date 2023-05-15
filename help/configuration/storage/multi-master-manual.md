@@ -1,8 +1,8 @@
 ---
 title: Manually configure master databases
 description: See guidance on manually configuring the split database solution.
+exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
 ---
-
 # Manually configure master databases
 
 {{ee-only}}
@@ -13,7 +13,7 @@ If the Commerce application is already in production or if you have already inst
 
 Manually splitting databases involves:
 
-- Create the [checkout](https://glossary.magento.com/checkout) and order management system (OMS) databases
+- Create the checkout and order management system (OMS) databases
 - Run a series of SQL scripts that:
 
   - Drop foreign keys
@@ -56,7 +56,7 @@ Adobe strongly recommends that you back up your current database and file system
 
 ## Set up additional master databases
 
-This section discusses how to create database instances for sales and [quote](https://glossary.magento.com/quote) tables.
+This section discusses how to create database instances for sales and quote tables.
 
 **To create sales and OMS quote databases**:
 
@@ -543,7 +543,7 @@ Locate the block starting with `'resource'` and add `'checkout'` and `'sales'` s
 
 ## Reference scripts
 
-This section provides scripts that you can run that print a complete list of affected tables without performing any actions on them. You can use them to see what tables are affected before you manually split databases, which can be useful if you use extensions that customize the [database schema](https://glossary.magento.com/database-schema).
+This section provides scripts that you can run that print a complete list of affected tables without performing any actions on them. You can use them to see what tables are affected before you manually split databases, which can be useful if you use extensions that customize the database schema.
 
 To use these scripts:
 

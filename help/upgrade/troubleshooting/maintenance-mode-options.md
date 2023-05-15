@@ -1,8 +1,8 @@
 ---
 title: Maintenance Mode Options for Upgrade
-description: Create a custom maintenance mode page that your customers see on your Adobe Commerce or Magento Open Source storefront while you execute an upgrade. 
+description: Create a custom maintenance mode page that your customers see on your Adobe Commerce or Magento Open Source storefront while you execute an upgrade.
+exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 ---
-
 # Maintenance mode options for upgrade
 
 This topic discusses how you can create a custom maintenance page to display to users while your Magento application is being upgraded. Creating a custom page is optional but recommended because your site is accessible during part of the upgrade.
@@ -98,7 +98,7 @@ This section discusses how to create a custom maintenance page and how to redire
 
 To redirect traffic to a custom maintenance page:
 
-1. Use a text editor to open the [nginx](https://glossary.magento.com/nginx) configuration file that contains your server block.
+1. Use a text editor to open the nginx configuration file that contains your server block.
 1. Add the following to the server block (`server` is shown for clarity only; don't add a second server block).
 
    The following allowlists IP address 192.0.2.110 and 192.0.2.115 on a system where Magento is installed in `/var/www/html/magento2`:

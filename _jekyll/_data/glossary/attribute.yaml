@@ -1,0 +1,23 @@
+---
+title: "attribute"
+wordClasses:
+  - "noun"
+tags:
+  - "commerce-software"
+  - "product"
+synonyms:
+  - "product attribute"
+  - "custom attribute"
+relatedTerms:
+  - "extension-attribute"
+definition: |
+  A characteristic or property of a product that describes some aspect of the product.
+  Adobe Commerce or Magento Open Source users can create custom attributes to add to the default attribute set or a custom attribute set.
+  Create these attributes through the Admin or programmatically.
+  Examples: color, size, weight, price, age, gender, and so on.
+
+  Custom attributes are a type of Entity-Attribute-Value (EAV) attribute.
+
+  For integrations like Google Shopping ads Channel and Amazon Sales Channel, you map Commerce attributes to attributes in the third-party to properly display and sell products, display ads.
+
+  Learn more: [EAV and extension extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)

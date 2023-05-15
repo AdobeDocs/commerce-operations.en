@@ -1,8 +1,8 @@
 ---
 title: Install the [!DNL Data Migration Tool]
 description: Learn how to install the [!DNL Data Migration Tool] to transfer data between Magento 1 and Magento 2.
+exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 ---
-
 # Install the [!DNL Data Migration Tool]
 
 >[!INFO]
@@ -21,7 +21,7 @@ USe on of the following methods to verify your version of Magento:
 
 ### Composer metapackage
 
-If you downloaded the Magento software using a [Composer](https://glossary.magento.com/composer) metapackage, enter the following command:
+If you downloaded the Magento software using a Composer metapackage, enter the following command:
 
 ```bash
 php <magento_root>/bin/magento --version

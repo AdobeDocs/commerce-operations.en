@@ -1,8 +1,8 @@
 ---
 title: System requirements
 description: Use this reference to identify required software dependencies that have been tested with Adobe Commerce and Magento Open Source releases.
+exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
-
 # System requirements
 
 This table shows versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases. Adobe only supports the combination of system requirements described in the following table.
@@ -73,7 +73,7 @@ Adobe Commerce and Magento Open Source require the following system tools for so
 
 ### SSL
 
--  A valid [security certificate](https://glossary.magento.com/security-certificate) is required for HTTPS.
+-  A valid security certificate is required for HTTPS.
 -  Self-signed SSL certificates are not supported.
 -  Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
 

@@ -1,11 +1,11 @@
 ---
 title: Custom cron job and cron group reference
 description: Learn to customize crons using cron groups.
+exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 ---
-
 # Customizing crons reference
 
-This topic helps you set up crontabs and optionally cron groups for custom modules. If your custom [module](https://glossary.magento.com/module) needs to schedule tasks periodically, you must set up a crontab for that module. A _crontab_ is a cron job configuration.
+This topic helps you set up crontabs and optionally cron groups for custom modules. If your custom module needs to schedule tasks periodically, you must set up a crontab for that module. A _crontab_ is a cron job configuration.
 
 Optionally, you can set up a custom group, which among other things enables you to run cron jobs defined in that group independently of other cron jobs.
 
@@ -80,7 +80,7 @@ As an example, see [Magento_Customer crontab.xml](https://github.com/magento/mag
 
 ### Specifying Cron group options
 
-You may declare a new group and specify its configuration options (all of which run in [store view](https://glossary.magento.com/store-view) scope) via the `cron_groups.xml` file, located in:
+You may declare a new group and specify its configuration options (all of which run in store view scope) via the `cron_groups.xml` file, located in:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml

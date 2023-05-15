@@ -1,8 +1,8 @@
 ---
 title: Configure a custom cron job and cron group (tutorial)
 description: Use this step-by-step tutorial to create a custom cron job.
+exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
 ---
-
 # Configure a custom cron job
 
 This step-by-step tutorial shows how to create a custom cron job and optionally a cron group in a sample module. You can use a module you already have or you can use a sample module from our [`magento2-samples` repository][samples].

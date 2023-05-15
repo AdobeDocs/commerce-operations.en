@@ -1,8 +1,8 @@
 ---
 title: Customize base directory paths
 description: Use the MAGE_DIRS variable to set an array of absolute paths.
+exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
 ---
-
 # Base directory paths
 
 The `MAGE_DIRS` environment variable enables you to specify custom base directory paths and fragments of base URLs that are used by the Commerce application to build absolute paths to various files or for generating URLs.

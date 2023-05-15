@@ -1,8 +1,8 @@
 ---
 title: Command-line tool
 description: Use the Commerce command-line tool to run installation and configuration tasks.
+exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
 ---
-
 # Command-line tool
 
 Commerce has one command-line interface (CLI)—`<magento_root>/bin/magento`—that runs installation and configuration tasks, including:

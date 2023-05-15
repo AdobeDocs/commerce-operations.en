@@ -1,8 +1,8 @@
 ---
 title: Upgrade Implementation
 description: Learn about the different phases of upgrade implementation for Adobe Commerce projects.
+exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
 ---
-
 # Upgrade implementation
 
 Upgrade implementation consists of five phases:

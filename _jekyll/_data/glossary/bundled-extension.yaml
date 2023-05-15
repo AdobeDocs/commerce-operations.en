@@ -1,0 +1,15 @@
+---
+title: "bundled extension"
+wordClasses:
+  - "noun"
+tags:
+  - "bundled-extension"
+  - "extension"
+synonyms:
+  - "extension"
+relatedTerms:
+  - "extension"
+  - "vendor-bundled-extension"
+definition: |
+  The code that extends or customizes Adobe Commerce behavior is considered a Bundled Extension.
+  It can include modules, themes, and language packs.

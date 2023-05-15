@@ -1,8 +1,8 @@
 ---
 title: Split database performance solution
 description: Read about the split database solution for Adobe Commerce and Magento Open Source.
+exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
 ---
-
 # Overview of the split database solution
 
 {{ee-only}}
@@ -40,7 +40,7 @@ Adobe Commerce uses three master databases and a configurable number of slave da
 Because of the way the split database performance solution is designed, your custom code and installed components _cannot_ do any of the following:
 
 - Write directly to the database (instead, you must use the Adobe Commerce database interface)
-- Use JOINs that affect the sales or [quote](https://glossary.magento.com/quote) databases
+- Use JOINs that affect the sales or quote databases
 - Use foreign keys to tables in the checkout, sales, or main databases
 
 >[!WARNING]
@@ -69,7 +69,7 @@ This also means you can either:
 
 The split database requires you to set up three MySQL master databases on any host (all three on the Commerce server, each database on a separate server, and so on). These are the _master_ databases and they are used as follows:
 
-- One master database for [checkout](https://glossary.magento.com/checkout) tables
+- One master database for checkout tables
 - One master database for sales tables (also referred to as _Order Management System_, or _OMS_, tables)
 - One master database for the remainder of the Commerce 2 application tables
 

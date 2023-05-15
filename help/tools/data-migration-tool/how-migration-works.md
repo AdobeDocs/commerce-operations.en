@@ -1,8 +1,8 @@
 ---
 title: How data migration works
 description: Learn about the data migration process between Magento 1 and Magento 2, including terminology, workflow diagrams, and steps.
+exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 ---
-
 # How data migration works
 
 This topic provides a high-level overview of how data is migrated from Magento 1 to Magento 2 using the [!DNL Data Migration Tool].

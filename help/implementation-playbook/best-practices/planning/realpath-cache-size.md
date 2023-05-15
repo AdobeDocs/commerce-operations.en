@@ -4,8 +4,8 @@ description: Learn how to optimize Adobe Commerce performance by updating the PH
 role: Developer
 feature: Best Practices
 feature-set: Commerce
+exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
 ---
-
 # Realpath cache configuration best practices
 
 Realpath cache caches the real file system paths of filenames referenced instead of looking them up each time. Every time various file functions are performed or require a file and use a relative path, PHP has to look up where that file really exists.
@@ -33,4 +33,3 @@ If the Realpath cache configuration values are too low or too high, it adds addi
   - [Database best practices](database-on-cloud.md)
   - [Most common database issues in Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
 - [Indexers "Update On Schedule" optimizes Magento performance](../maintenance/indexer-configuration.md)
-

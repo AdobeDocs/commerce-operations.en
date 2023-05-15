@@ -1,0 +1,25 @@
+---
+title: "UPWARD"
+wordClasses:
+  - "noun"
+tags:
+  - "design"
+  - "commerce-software"
+  - "programming"
+synonyms:
+  - "PWA Studio"
+  - "Unified Progressive Web App Response Definition"
+relatedTerms:
+  - "pwa"
+definition: |
+  [PWA Studio](https://github.com/magento/pwa-studio) uses [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) in development.
+  UPWARD is an acronym for Unified Progressive Web App Response Definition.
+  An UPWARD definition file describes how a web server delivers and supports a Progressive Web Application.
+
+  UPWARD definition files provide details about server behavior using platform-independent, declarative language.
+  This allows a Progressive Web Application to run on top of an UPWARD-compliant server in any language on any tech stack because the application is only concerned about the HTTP endpoint behavior from the UPWARD server.
+
+  An UPWARD server uses a definition file to determine the appropriate process or service for a request from an application shell.
+  It describes how the server should handle a request and build the response for it.
+
+  A PWA project can include an UPWARD definition file to specify its service dependencies.

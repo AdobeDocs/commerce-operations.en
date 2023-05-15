@@ -1,6 +1,7 @@
 ---
-title: "The [!UICONTROL CDN] tab"
+title: The [!UICONTROL CDN] tab
 description: Learn about the [!UICONTROL CDN] tab of [!DNL Observation for Adobe Commerce].
+exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 ---
 # The [!UICONTROL CDN] tab
 

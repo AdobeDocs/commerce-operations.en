@@ -1,8 +1,8 @@
 ---
 title: Set up memcached on Ubuntu
 description: Install and configure memcached on Ubuntu.
+exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
 ---
-
 # Set up memcached on Ubuntu
 
 This section provides instructions to install memcached on Ubuntu.
@@ -88,7 +88,7 @@ To verify that memcached is recognized by the web server:
 
 ### Verify memcached can cache data
 
-This test uses a PHP script to verify that memcached can store and retrieve [cache](https://glossary.magento.com/cache) data.
+This test uses a PHP script to verify that memcached can store and retrieve cache data.
 
 For more information about this test, see [How To Install and Use Memcache on Ubuntu tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 

@@ -1,10 +1,11 @@
 ---
 title: Cache options
 description: Configure access to low-level cache storage.
+exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
 ---
 # Low-level cache options
 
-The Commerce application uses a low-level [cache](https://glossary.magento.com/cache) [frontend](https://glossary.magento.com/frontend) and [backend](https://glossary.magento.com/backend) to provide access to the cache storage.
+The Commerce application uses a low-level cache frontend and backend to provide access to the cache storage.
 
 ## Low-level frontend cache
 

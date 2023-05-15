@@ -1,6 +1,7 @@
 ---
 title: How to access [!DNL Site-Wide Analysis Tool]
 description: Learn how to access the [!DNL Site-Wide Analysis Tool]
+exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
 ---
 # How to Access the [!DNL Site-Wide Analysis Tool]
 

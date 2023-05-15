@@ -1,8 +1,8 @@
 ---
 title: Set up multiple websites, stores, and store views in the Admin
 description: Configure additional websites, stores, and store views in the Commerce Admin.
+exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 ---
-
 # Set up multiple views in the Admin
 
 This task requires you to create a root category (and additional categories, if desired) for each store. The tasks discussed in this topic provide one way to set up multiple stores. For additional information, see the following resources in the Commerce User Guide:
@@ -18,7 +18,7 @@ This task requires you to create a root category (and additional categories, if 
 
 ## Step 1: Create root categories
 
-Creating a root category is optional, but we show how to do it in this tutorial in the [event](https://glossary.magento.com/event) you want each website to have a unique root category. You can create additional categories if you choose.
+Creating a root category is optional, but we show how to do it in this tutorial in the event you want each website to have a unique root category. You can create additional categories if you choose.
 
 To create a root category:
 
