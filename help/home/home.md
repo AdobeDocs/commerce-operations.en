@@ -16,6 +16,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Release Information</strong></a>
+      <p>Access all release information for Adobe Commerce patches and services in one place.</p>
     </div>
   </td>
   <td valign="top">
@@ -24,6 +25,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../installation/overview.md"><strong>Installation</strong></a>
+      <p>Learn how to install Adobe Commerce and Magento Open Source for on-premises deployments.</p>
     </div>
   </td>
   <td valign="top">
@@ -32,6 +34,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../configuration/overview.md"><strong>Configuration</strong></a>
+      <p>Configure your Adobe Commerce or Magento Open Source application features and services.</p>
     </div>
   </td>
   <td valign="top">
@@ -40,6 +43,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Data Migration</strong></a>
+      <p>Learn about the data migration process between Magento 1 and Magento 2, including terminology, workflow diagrams, and steps.</p>
     </div>
   </td>
 </tr>
@@ -50,6 +54,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
+      <p>Learn about how upgrading your Adobe Commerce project helps keep your storefront secure and operating efficiently.</p>
     </div>
   </td>
   <td valign="top">
@@ -58,6 +63,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Command-Line Tools Reference</strong></a>
+      <p>Learn about all available commands, arguments, and options for the Adobe Commerce magento-cloud and bin/magento command-line tools.</p>
     </div>
   </td>
   <td valign="top">
@@ -66,6 +72,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
+      <p>Optimize the performance of your Adobe Commerce or Magento Open Source production deployment using our recommendations.</p>
     </div>
   </td>
   <td valign="top">
@@ -74,6 +81,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../tools/overview.md"><strong>Tools</strong></a>
+      <p>Learn about the different tools you can use with Adobe Commerce, their uses, the installation process, and how to get access.</p>
     </div>
   </td>
 </tr>
@@ -84,6 +92,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
+      <p>Learn about strategies for planning and implementing a successful Adobe Commerce site.</p>
     </div>
   </td>
   <td valign="top">
@@ -92,6 +101,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Operational Playbook</strong></a>
+      <p>Learn how to get your businesses operationally ready to run a successful ecommerce site.</p>
     </div>
   </td>
   <td valign="top">
@@ -100,6 +110,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>Commerce at Scale</strong></a>
+      <p>Learn how to deliver experiences at scale using Adobe Commerce with Adobe Experience Manager.</p>
     </div>
   </td>
   <td valign="top">
@@ -108,6 +119,7 @@ Get practical information about concepts, processes, tools, and best practices t
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>Security and Compliance</strong></a>
+      <p>Learn how Adobe Commerce and Magento Open Source merchants are responsible for maintaining a secure environment and meeting the legal requirements and best practices for online merchants in their jurisdiction.</p>
     </div>
   </td>
 </tr>
