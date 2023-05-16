@@ -1,6 +1,7 @@
 ---
 title: Configure the database profiler
 description: See an example of how to configure output for the database profiler.
+feature: Configuration, Storage
 badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 ---

@@ -1,6 +1,7 @@
 ---
 title: Configure image resizing for remote storage
 description: Optimize disk resources by configuring server-side image resizing.
+feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 ---
 # Configure image resizing for remote storage

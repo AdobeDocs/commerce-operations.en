@@ -1,6 +1,7 @@
 ---
 title: Remote storage for Commerce on cloud infrastructure
 description: See guidance on how to set up remote storage for Adobe Commerce on cloud infrastructure.
+feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
 ---
 # Configure remote storage for Commerce on Cloud infrastructure
