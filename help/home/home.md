@@ -6,7 +6,7 @@ exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 ---
 # Adobe Commerce Operational Guides
 
-Get practical information about concepts, processes, tools, and best practices to develop, deploy, and maintain projects Adobe Commerce projects.
+Get practical information about concepts, processes, tools, and best practices to develop, deploy, and maintain Adobe Commerce projects.
 
 <table>
 <tr>
