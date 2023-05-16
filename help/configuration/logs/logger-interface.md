@@ -1,6 +1,7 @@
 ---
 title: Logger interface
 description: Get started with the logger interface.
+feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
 ---
 # Logger interface
