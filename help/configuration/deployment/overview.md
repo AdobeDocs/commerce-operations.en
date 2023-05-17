@@ -1,6 +1,7 @@
 ---
 title: Deployment overview
 description: Read about deployment strategies for the Commerce application.
+feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
 ---
 # Deployment overview

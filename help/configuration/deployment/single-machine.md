@@ -1,6 +1,7 @@
 ---
 title: Single machine deployment
 description: Learn how to deploy updates to Commerce on a production server using the command line.
+feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 ---
 # Single-machine deployment

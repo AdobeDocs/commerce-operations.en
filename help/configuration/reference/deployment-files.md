@@ -1,6 +1,7 @@
 ---
 title: Configuration files for deployment
 description: Understand how the configuration files work for installing the Commerce application.
+feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
 ---
 # Configuration files for deployment
