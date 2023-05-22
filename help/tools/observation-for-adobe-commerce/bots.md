@@ -163,4 +163,4 @@ The **[!UICONTROL Top 5 with non-200 status codes showing cache_status]** table 
 
 ![Pageview Latency will show as spikes on this graph:](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
-The **[!UICONTROL Pageview Latency will show as spikes on this graph:]** frame shows page load / API response latency that may be in line with the [!DNL bot] traffic.
+The **[!UICONTROL Pageview Latency will show as spikes on this graph:]** frame shows page load/API response latency that may be in line with the [!DNL bot] traffic.
