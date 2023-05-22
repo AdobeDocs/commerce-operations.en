@@ -16,6 +16,7 @@ Magento Open Source, but is not supported.
   <thead>
     <tr>
       <th>&nbsp;</th>
+      <th>Version 2.4.7-beta1</th>
       <th>Version 2.4.6</th>
       <th>Version 2.4.5</th>
       <th>Version 2.4.4</th>
@@ -28,10 +29,12 @@ Magento Open Source, but is not supported.
   </thead>
   <tbody>
     <tr>
-      <th colspan="9">Amazon Sales Channel</th>
+      <th colspan="10">Amazon Sales Channel</th>
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.4.4</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -51,6 +54,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.4.3</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -70,6 +75,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.4.2</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -89,6 +96,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.4.1</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -108,6 +117,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.4.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -127,6 +138,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.3.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -146,6 +159,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.2.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -165,6 +180,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Amazon Sales Channel 4.1.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Not supported</span>
@@ -185,10 +202,33 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">B2B</th>
+      <th colspan="10">B2B</th>
+    </tr>
+    <tr>
+      <td>B2B 1.3.6-beta1</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
     </tr>
     <tr>
       <td>B2B 1.3.5</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -210,6 +250,8 @@ Magento Open Source, but is not supported.
       <td>B2B 1.3.4</td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -227,6 +269,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>B2B 1.3.3</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -252,6 +296,8 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -265,6 +311,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>B2B 1.3.1</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -294,6 +342,8 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -303,6 +353,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>B2B 1.2.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -336,16 +388,20 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Catalog Service</th>
+      <th colspan="10">Catalog Service</th>
     </tr>
     <tr>
       <td>Catalog Service 1.7</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -365,6 +421,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Catalog Service 1.6</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -384,6 +442,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Catalog Service 1.5</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -403,6 +463,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Catalog Service 1.4</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -422,6 +484,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Catalog Service 1.3</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -441,6 +505,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Catalog Service 1.1</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -460,6 +526,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Catalog Service 1.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -480,10 +548,12 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Channel Manager</th>
+      <th colspan="10">Channel Manager</th>
     </tr>
     <tr>
       <td>Channel Manager 2.0.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -503,6 +573,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Channel Manager 1.1.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Not supported</span>
       </td>
       <td>Supported</span>
@@ -522,6 +594,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Channel Manager 1.0.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -542,10 +616,33 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Inventory Management</th>
+      <th colspan="10">Inventory Management</th>
+    </tr>
+    <tr>
+      <td>Inventory Management 1.2.7-beta1</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Inventory Management 1.2.6</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -567,6 +664,8 @@ Magento Open Source, but is not supported.
       <td>Inventory Management 1.2.5</td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -584,6 +683,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Inventory Management 1.2.4</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -609,6 +710,8 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -622,6 +725,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Inventory Management 1.2.2</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -651,6 +756,8 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -660,6 +767,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Inventory Management 1.2.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -693,16 +802,20 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Live Search</th>
+      <th colspan="10">Live Search</th>
     </tr>
     <tr>
       <td>Live Search 3.0.1</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -722,6 +835,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Live Search 2.0.5</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -741,6 +856,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Live Search 2.0.4</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -760,6 +877,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Live Search 2.0.3</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -779,6 +898,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Live Search 2.0.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -812,11 +933,15 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Not supported</span>
       </td>
     </tr>
     <tr>
       <td>Live Search 1.2.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -850,16 +975,41 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Not supported</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Page Builder</th>
+      <th colspan="10">Page Builder</th>
+    </tr>
+    <tr>
+      <td>Page Builder 1.7.4-beta1</td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
     </tr>
     <tr>
       <td>Page Builder 1.7.3</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Not supported</span>
@@ -881,6 +1031,8 @@ Magento Open Source, but is not supported.
       <td>Page Builder 1.7.2</td>
       <td>Not supported</span>
       </td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Not supported</span>
@@ -898,6 +1050,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Page Builder 1.7.1</td>
+      <td>Not supported</span>
+      </td>
       <td>Not supported</span>
       </td>
       <td>Not supported</span>
@@ -923,6 +1077,8 @@ Magento Open Source, but is not supported.
       </td>
       <td>Not supported</span>
       </td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Not supported</span>
@@ -936,6 +1092,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Page Builder 1.6.0</td>
+      <td>Not supported</span>
+      </td>
       <td>Not supported</span>
       </td>
       <td>Not supported</span>
@@ -965,6 +1123,8 @@ Magento Open Source, but is not supported.
       </td>
       <td>Not supported</span>
       </td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Not supported</span>
@@ -974,6 +1134,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Page Builder 1.4.0</td>
+      <td>Not supported</span>
+      </td>
       <td>Not supported</span>
       </td>
       <td>Not supported</span>
@@ -1009,21 +1171,23 @@ Magento Open Source, but is not supported.
       </td>
       <td>Not supported</span>
       </td>
+      <td>Not supported</span>
+      </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Payment Services</th>
+      <th colspan="10">Payment Services</th>
     </tr>
     <tr>
       <td>Payment Services 2.0.0</td>
-      <td>Supported</span>
+      <td>Not supported</span>
       </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
       </td>
-      <td>Not compatible</span>
+      <td>Supported</span>
       </td>
       <td>Not compatible</span>
       </td>
@@ -1031,11 +1195,15 @@ Magento Open Source, but is not supported.
       </td>
       <td>Not compatible</span>
       </td>
-      <td></span>
+      <td>Not compatible</span>
+      </td>
+      <td>Not supported</span>
       </td>
     </tr>
     <tr>
       <td>Payment Services 1.6.0</td>
+      <td>Not supported</span>
+      </td>
       <td>Not supported</span>
       </td>
       <td>Supported</span>
@@ -1055,6 +1223,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.4</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1074,6 +1244,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.3</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1093,6 +1265,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.2</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1112,6 +1286,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.1</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1131,6 +1307,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.0</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1150,6 +1328,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.4.1</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1169,6 +1349,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.4.0</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1189,10 +1371,12 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Quick Checkout</th>
+      <th colspan="10">Quick Checkout</th>
     </tr>
     <tr>
       <td>Quick Checkout 1.8.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1212,6 +1396,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.7.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1231,6 +1417,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.6.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1250,6 +1438,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.5.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1269,6 +1459,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.4.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1288,6 +1480,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.3.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1307,6 +1501,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.2.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1326,6 +1522,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.1.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -1345,6 +1543,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Quick Checkout 1.0.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Compatible</span>
@@ -1365,10 +1565,12 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Store Fulfillment for Adobe Commerce</th>
+      <th colspan="10">Store Fulfillment for Adobe Commerce</th>
     </tr>
     <tr>
       <td>Store Fulfillment for Adobe Commerce 1.4.0</td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1390,6 +1592,8 @@ Magento Open Source, but is not supported.
       <td>Store Fulfillment for Adobe Commerce 1.3.0</td>
       <td>Not supported</span>
       </td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1409,6 +1613,8 @@ Magento Open Source, but is not supported.
       <td>Store Fulfillment for Adobe Commerce 1.2.0</td>
       <td>Not supported</span>
       </td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1430,6 +1636,8 @@ Magento Open Source, but is not supported.
       </td>
       <td>Not supported</span>
       </td>
+      <td>Not supported</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1445,6 +1653,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Store Fulfillment for Adobe Commerce 1.1.0</td>
+      <td>Not supported</span>
+      </td>
       <td>Not supported</span>
       </td>
       <td>Not supported</span>
@@ -1465,10 +1675,12 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Experience Platform Connector</th>
+      <th colspan="10">Experience Platform Connector</th>
     </tr>
     <tr>
       <td>Experience Platform Connector 1.0.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1489,10 +1701,12 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Product Recommendations</th>
+      <th colspan="10">Product Recommendations</th>
     </tr>
     <tr>
       <td>Product Recommendations 5.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1512,6 +1726,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Product Recommendations 4.0.1</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1531,6 +1747,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Product Recommendations 4.0.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1566,9 +1784,13 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.6</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -1604,9 +1826,13 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.3</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -1642,9 +1868,13 @@ Magento Open Source, but is not supported.
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.1</td>
+      <td>Compatible</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
