@@ -1,6 +1,7 @@
 ---
 title: Configure search stopwords
 description: Learn how to manage stopwords for Adobe Commerce using CSV files.
+feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
 ---
 # Configure search stopwords

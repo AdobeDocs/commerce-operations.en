@@ -1,6 +1,7 @@
 ---
 title: Security.txt
 description: Learn how to provide information to help security researchers report vulnerabilities.
+feature: Configuration, Security
 badge: label="Contributed by Kalpesh Mehta from Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
 ---

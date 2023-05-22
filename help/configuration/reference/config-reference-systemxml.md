@@ -1,6 +1,7 @@
 ---
 title: system.xml reference
 description: Learn how the system XML file manages the Commerce application configuration.
+feature: Configuration, System
 badge: label="Contributed by David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 ---

@@ -1,6 +1,7 @@
 ---
 title: Search engine overview
 description: Overview of search engine options for Adobe Commerce and Magento Open Source.
+feature: Configuration, Search
 exl-id: 0ea78ca2-0bca-4d61-980a-02fb7da04553
 ---
 # Search engine overview

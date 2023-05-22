@@ -1,6 +1,7 @@
 ---
 title: General configuration paths reference
 description: See a list of general and advanced configuration values.
+feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 ---
 # General and advanced configuration paths reference

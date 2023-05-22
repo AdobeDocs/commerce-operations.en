@@ -1,6 +1,7 @@
 ---
 title: Database replication
 description: See the benefits of configuring database replication.
+recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 ---
 # Database replication
