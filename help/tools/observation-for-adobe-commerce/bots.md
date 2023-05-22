@@ -27,11 +27,15 @@ This tab has information that explains how to identify if and what [!DNL bots] a
 
 ## [!UICONTROL Experimental Potential Malicious Bots frame]:
 
+![Experimental Potential Malicious Bots frame](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame-new.jpg)
+
 This **[!UICONTROL Experimental Potential Malicious Bots frame]** frame runs over twelve separate, complex queries. It  detects malicious IP request signatures and then aggregates the results, sums and sorts them by count in a descending order. The queries contain a multitude of data signatures of CVE exploits and other malicious requests. Even when the exploits are blocked by security fixes/patches and are a non-threat to the site, the request still has to be handled by the website. The volume of requests can become quite significant in a short period of time. This frame does not show total requests from the IP address but rather requests that have signals that indicate that the request had suspicious intent. 
 
 Make sure to verify that the traffic is suspicious and it does not originate from a [!DNL Content Distributed Network] (CDN) address which may also be delivering valid requests. If the requests are determined to be from a CDN IP address, please contact that service supplier to help with blocking the suspicious traffic through their network. If you need to block the address or request URL, refer to [Block malicious traffic for Adobe Commerce on [!DNL Fastly] level](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) in Adobe Commerce Support Knowledge Base.
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
+
+![Rate of HTTP request per second (top 25) during requested time period](../../assets/tools/observation-for-adobe-commerce/rate-of-http-request-per-second.jpg)
 
 The **[!UICONTROL Rate of HTTP request per second (top 25) during requested time period]** frame shows the highest requests per second IP addresses during the selected time frame. If these addresses are also in the table above, ensure that they are not CDN addresses and malicious and block them via [!DNL Fastly].
 
