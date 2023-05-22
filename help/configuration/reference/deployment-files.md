@@ -12,9 +12,6 @@ Adobe Commerce provides configuration files that enable you to easily customize 
 
   Check in this file to source control and use it in your development, staging, and production systems.
 
-  As of the 2.2 release, the `app/etc/config.php` file is no longer an entry in the `.gitignore` file.
-  This was done to facilitate [pipeline deployment](../deployment/technical-details.md).
-
 - `app/etc/env.php` contains settings that are specific to the installation environment.
 
 Together, `config.php` and `env.php` are referred to as the Commerce _deployment configuration_ because the files are created during installation and are required to start the Commerce application.
