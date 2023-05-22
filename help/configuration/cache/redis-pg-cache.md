@@ -1,6 +1,7 @@
 ---
 title: Use Redis for default cache
 description: Learn to configure Redis as the default cache for Adobe Commerce and Magento Open Source.
+feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
 ---
 # Use Redis for default cache

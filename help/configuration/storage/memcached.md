@@ -1,6 +1,7 @@
 ---
 title: Use memcached for session storage
 description: Learn about using memcached for Commerce session storage.
+feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
 ---
 # Use memcached for session storage

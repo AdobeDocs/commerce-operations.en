@@ -1,6 +1,7 @@
 ---
 title: Overview of security
 description: Read a brief overview of the security settings for the Adobe Commerce and Magento Open Source application.
+feature: Configuration, Security
 exl-id: e596d03f-8428-4ad7-a563-8b7f371ed5b4
 ---
 # Security overview

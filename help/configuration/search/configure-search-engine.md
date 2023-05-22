@@ -1,6 +1,7 @@
 ---
 title: Search engine configuration
 description: Configure a search engine for on-premises deployments of Adobe Commerce and Magento Open Source.
+feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
 ---
 # Search engine configuration

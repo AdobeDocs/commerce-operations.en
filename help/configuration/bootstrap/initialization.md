@@ -1,6 +1,7 @@
 ---
 title: Application initialization and bootstrap
 description: Read about initialization and bootstrap logic for the Commerce application.
+feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
 ---
 # Overview of initialization and bootstrap

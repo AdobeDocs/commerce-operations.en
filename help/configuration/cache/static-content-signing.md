@@ -1,6 +1,7 @@
 ---
 title: Static content cache
 description: Gain an understanding of static content signing and how to enable or disable the feature.
+feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
 ---
 # Static content cache

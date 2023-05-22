@@ -1,6 +1,7 @@
 ---
 title: Password hashing
 description: Read about password hashing strategies and implementation.
+feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
 ---
 # Password hashing
