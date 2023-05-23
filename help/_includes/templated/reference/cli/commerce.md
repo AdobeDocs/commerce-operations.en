@@ -6,7 +6,7 @@
 **Version**: 1.42.0
 
 This reference contains 134 commands available through the `magento-cloud` command-line tool.
-The initial list is auto generated using the `magento-cloud list` command at the  edition.
+The initial list is auto generated using the `magento-cloud list` command at Adobe Commerce on cloud infrastructure.
 
 >[!NOTE]
 >
