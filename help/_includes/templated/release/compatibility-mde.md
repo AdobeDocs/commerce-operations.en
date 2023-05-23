@@ -205,7 +205,7 @@ Magento Open Source, but is not supported.
       <th colspan="10">B2B</th>
     </tr>
     <tr>
-      <td>B2B 1.3.6-beta1</td>
+      <td>B2B 1.4.0-beta1</td>
       <td>Compatible</span>
       </td>
       <td>Supported</span>
