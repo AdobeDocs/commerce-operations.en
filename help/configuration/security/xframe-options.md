@@ -1,6 +1,7 @@
 ---
 title: X-Frame-Options header
 description: Use X-Frame-Options to control page renderings.
+feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
 ---
 # X-Frame-Options header
