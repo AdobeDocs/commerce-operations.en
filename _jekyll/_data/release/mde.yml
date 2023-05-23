@@ -776,7 +776,7 @@ extensions:
         support:
           2.4.6: supported
           2.4.5: supported
-          2.4.4: compatible
+          2.4.4: supported
           2.4.3: compatible
           2.4.2: compatible
           2.4.1: compatible
@@ -786,7 +786,7 @@ extensions:
         support:
           2.4.6: supported
           2.4.5: supported
-          2.4.4: compatible
+          2.4.4: supported
           2.4.3: compatible
           2.4.2: compatible
           2.4.1: compatible
@@ -796,7 +796,7 @@ extensions:
         support:
           2.4.6: supported
           2.4.5: supported
-          2.4.4: compatible
+          2.4.4: supported
           2.4.3: compatible
           2.4.2: compatible
           2.4.1: compatible
