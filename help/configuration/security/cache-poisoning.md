@@ -1,6 +1,7 @@
 ---
 title: Prevent cache poisoning
 description: Learn how to prevent page cache poisoning for your Commerce storefront.
+feature: Configuration, Cache, Security
 exl-id: 947024dd-d59d-480d-bb6c-8e0065054bb6
 ---
 # Prevent cache poisoning

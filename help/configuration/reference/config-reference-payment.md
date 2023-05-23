@@ -1,6 +1,7 @@
 ---
 title: Payment configuration paths reference
 description: See a list of configurable payment method values.
+feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
 ---
 # Payment configuration paths reference

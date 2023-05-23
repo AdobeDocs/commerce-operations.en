@@ -1,6 +1,7 @@
 ---
 title: Configure Remote Storage
 description: Learn how to configure the Remote Storage module for the on-premises Commerce application.
+feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
 ---
 # Configure Remote Storage
