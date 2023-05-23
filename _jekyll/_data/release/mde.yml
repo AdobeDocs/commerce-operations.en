@@ -760,6 +760,78 @@ extensions:
           2.3.7: not supported
   - name: Experience Platform Connector
     versions:
+      - name: 2.2.0
+        support:
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+      - name: 2.1.1
+        support:
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+      - name: 2.1.0
+        support:
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+      - name: 2.0.1
+        support:
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+      - name: 2.0.0
+        support:
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+      - name: 1.0.0
+        support:
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
+  - name: Audience Activation
+    versions:
+      - name: 1.0.1
+        support:
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
       - name: 1.0.0
         support:
           2.4.6: supported
