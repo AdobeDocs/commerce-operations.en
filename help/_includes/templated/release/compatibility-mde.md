@@ -1468,7 +1468,145 @@ Magento Open Source, but is not supported.
       <th colspan="9">Experience Platform Connector</th>
     </tr>
     <tr>
+      <td>Experience Platform Connector 2.2.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.1.1</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.1.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.0.1</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.0.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Experience Platform Connector 1.0.0</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="9">Audience Activation</th>
+    </tr>
+    <tr>
+      <td>Audience Activation 1.0.1</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Audience Activation 1.0.0</td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
