@@ -2,8 +2,7 @@
 
 >[!IMPORTANT]
 >
->Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premise deployments. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) in the _Cloud guide_.
->For example, Elasticsearch 7.17 is supported on 2.4.4 for on-premise deployments but Open Search 1.2 is supported on the Cloud infrastructure.
+>Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) in the _Cloud guide_. For example, Elasticsearch 7.17 is supported on 2.4.4 for on-premise deployments but Open Search 1.2 is supported on the Cloud infrastructure.
 
 >[!NOTE]
 >
