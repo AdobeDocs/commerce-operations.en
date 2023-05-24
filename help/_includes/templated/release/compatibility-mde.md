@@ -663,6 +663,137 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
+      <th colspan="10">Experience Platform Connector</th>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.2.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.1.1</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.1.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.0.1</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.0.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 1.0.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
       <th colspan="10">Inventory Management</th>
     </tr>
     <tr>
@@ -1418,6 +1549,200 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
+      <th colspan="10">Product Recommendations</th>
+    </tr>
+    <tr>
+      <td>Product Recommendations 5.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Product Recommendations 4.0.1</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Product Recommendations 4.0.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Product Recommendations 3.3.7</td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Product Recommendations 3.3.6</td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Product Recommendations 3.3.5</td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Product Recommendations 3.3.3</td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Product Recommendations 3.3.2</td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Product Recommendations 3.3.1</td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
       <th colspan="10">Quick Checkout</th>
     </tr>
     <tr>
@@ -1717,331 +2042,6 @@ Magento Open Source, but is not supported.
       <td>Supported</span>
       </td>
       <td>Not supported</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="10">Experience Platform Connector</th>
-    </tr>
-    <tr>
-      <td>Experience Platform Connector 2.2.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platform Connector 2.1.1</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platform Connector 2.1.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platform Connector 2.0.1</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platform Connector 2.0.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Experience Platform Connector 1.0.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="10">Product Recommendations</th>
-    </tr>
-    <tr>
-      <td>Product Recommendations 5.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 4.0.1</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 4.0.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.3.7</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.3.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.3.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.3.3</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.3.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.3.1</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
     </tr>
   </tbody>
