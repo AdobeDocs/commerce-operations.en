@@ -59,7 +59,7 @@ Use the following table to find release notes and important information related 
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh for Adobe APP Builder Developer</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events for Adobe Commerce</a></li>
-            <li><a href="https://developer.adobe.com/commerce/extensibility/backoffice-sdk/release-notes/">Backoffice UI SDK</a></li>
+            <li><a href="https://developer.adobe.com/commerce/extensibility/backoffice/">Backoffice UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Quality Patches Tool</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Site-Wide Analysis Tool</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Upgrade Compatibility Tool</a></li>
