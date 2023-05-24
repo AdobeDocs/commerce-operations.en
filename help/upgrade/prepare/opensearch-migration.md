@@ -1,8 +1,8 @@
 ---
 title: Migrate from Elasticsearch to OpenSearch
 description: Learn about replacing the search engine used for on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
 ---
-
 # Migrating to OpenSearch
 
 OpenSearch is an open source fork of Elasticsearch 7.10.2 that was created after Elasticsearch's licensing change.

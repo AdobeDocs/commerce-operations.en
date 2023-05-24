@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Site-Wide Analysis Tool]"
+title: '[!DNL Site-Wide Analysis Tool]'
 description: Learn about the [!DNL Site-Wide Analysis] Tool, its uses, the installation process, and how to get access
+exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
 ---
 # [!DNL Site-Wide Analysis Tool]
 

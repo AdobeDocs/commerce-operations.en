@@ -1,8 +1,8 @@
 ---
 title: Maintenance Mode Options for Upgrade
-description: Create a custom maintenance mode page that your customers see on your Adobe Commerce or Magento Open Source storefront while you execute an upgrade. 
+description: Create a custom maintenance mode page that your customers see on your Adobe Commerce or Magento Open Source storefront while you execute an upgrade.
+exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 ---
-
 # Maintenance mode options for upgrade
 
 This topic discusses how you can create a custom maintenance page to display to users while your Magento application is being upgraded. Creating a custom page is optional but recommended because your site is accessible during part of the upgrade.

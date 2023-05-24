@@ -4,8 +4,8 @@ description: Learn how to optimize Adobe Commerce performance by managing the nu
 role: User, Admin
 feature: Best Practices
 feature-set: Commerce
+exl-id: 473f23a9-53fb-41a6-9b3a-af7bd1208be0
 ---
-
 # Best practices for product listing pagination 
 
 For best performance, display a maximum of 48 products per page.

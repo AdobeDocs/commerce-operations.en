@@ -1,8 +1,8 @@
 ---
 title: Overview of the upgrade process
 description: Learn about how upgrading your Adobe Commerce project helps keep your storefront secure and operating efficiently.
+exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 ---
-
 # Overview of the upgrade process
 
 Upgrading your Adobe Commerce project is critical to ensuring that your store stays secure, PCI-compliant, and operating at peak efficiency. This guide walks you through key considerations when preparing for an upgrade.

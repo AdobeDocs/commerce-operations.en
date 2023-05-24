@@ -1,6 +1,8 @@
 ---
 title: Configure caching
 description: Learn about caching and how to configure cache mechanisms for the Adobe Commerce and Magento Open Source application.
+feature: Configuration, Cache
+exl-id: 6effa069-c043-411a-b161-01210be17391
 ---
 # Configure caching
 

@@ -1,8 +1,9 @@
 ---
 title: Search engine configuration
 description: Configure a search engine for on-premises deployments of Adobe Commerce and Magento Open Source.
+feature: Configuration, Search
+exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
 ---
-
 # Search engine configuration
 
 This section discusses the minimum settings that you must choose to test Elasticsearch or OpenSearch with on-premises deployments of Adobe Commerce and Magento Open Source.
@@ -108,4 +109,3 @@ To reindex using the command line:
    >[!INFO]
    >
    >Unlike the cache, indexers are updated by a cron job. Make sure [cron is enabled](../cli/configure-cron-jobs.md) before you start using your search engine.
-

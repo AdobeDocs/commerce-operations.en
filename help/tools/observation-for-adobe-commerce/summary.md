@@ -1,8 +1,8 @@
 ---
-title: "The [!UICONTROL Summary] tab"
+title: The [!UICONTROL Summary] tab
 description: Learn about the [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce].
+exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 ---
-
 # The [!UICONTROL Summary] tab
 
 The [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce] is intended to quickly see some of the problems experienced by sites to help you auto-resolve or identify potential root causes of site problems. The additional tabs provide deeper level information on component services, database, infrastructure, and process states.

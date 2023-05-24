@@ -7,9 +7,8 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13
-
+exl-id: 95ff0c79-21d0-4514-991c-d88f616db68f
 ---
-
 # Self-hosting Adobe Commerce Performance Tips
 
 Using a flexible and powerful e-commerce platform does not mean that you have to sacrifice performance. There have been numerous improvements to the core application since Adobe Commerce's inception. In version 2.5.4, the Adobe Commerce engineering team performed a set test to benchmark the application. The test results demonstrated that Adobe Commerce is capable at handling a large catalog of over 240 million SKUs, API request times are exceptional averaging 300 ms, and the number of page views and orders placed per hour are phenomenal coming in at 2 million page views and 208,000 orders per hour.

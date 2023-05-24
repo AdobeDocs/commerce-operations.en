@@ -1,8 +1,8 @@
 ---
 title: Review platform changes
 description: Get familiar with the major platform changes in a release as you prepare to upgrade your Adobe Commerce project.
+exl-id: 08af5786-8d16-46da-90d4-5cc201288b1f
 ---
-
 # Review platform changes before upgrading
 
 Learn more about the technical platform changes in [release notes](../../release/release-notes/overview.md) and the [system requirements](../../installation/system-requirements.md).

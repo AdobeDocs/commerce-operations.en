@@ -1,8 +1,8 @@
 ---
 title: Remove or update sample data modules
 description: Follow these steps to manage Adobe Commerce and Magento Open Source sample data modules.
+exl-id: d23f999f-18bf-449b-be23-bdf392dda539
 ---
-
 # Remove or update sample data modules
 
 This topic discusses how to:

@@ -1,9 +1,10 @@
 ---
 title: Security.txt
 description: Learn how to provide information to help security researchers report vulnerabilities.
+feature: Configuration, Security
 badge: label="Contributed by Kalpesh Mehta from Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
+exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
 ---
-
 # Security TXT file
 
 When security vulnerabilities are discovered by researchers, proper reporting channels are often lacking. As a result, some vulnerabilities are not reported. The purpose of the `security.txt` [file format](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) file is to provide security researchers the information they can use to report their findings.

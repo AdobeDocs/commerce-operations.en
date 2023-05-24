@@ -1,8 +1,8 @@
 ---
 title: Upgrade Modules and Extensions
 description: Use the command-line interface and Composer to upgrade Adobe Commerce and Magento Open Source modules and extensions.
+exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
 ---
-
 # Upgrade modules and extensions
 
 To update or upgrade a module or extension:
@@ -52,4 +52,3 @@ See the following Adobe Commerce Marketplace listings for more information:
 - [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
 - [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
 - [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)
-

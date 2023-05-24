@@ -4,6 +4,7 @@ description: Learn how to configure database and application settings to improve
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
+exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
 ---
 # Best practices for database configuration
 

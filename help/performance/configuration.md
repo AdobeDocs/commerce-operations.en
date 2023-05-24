@@ -1,8 +1,8 @@
 ---
 title: Configuration Best Practices
 description: Optimize the response time of your Adobe Commerce or Magento Open Source deployment using these best practices.
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
 ---
-
 # Configuration best practices
 
 Commerce provides many settings and tools that you can use to improve response time on the pages as well as provide higher throughput.
@@ -34,6 +34,31 @@ There can be times when intensive sales on a storefront occur at the same time t
 >[!WARNING]
 >
 >The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
+
+## Asynchronous configuration save
+
+For projects with a large number of store-level configurations, saving a store configuration can take an inordinate amount of time or result in a timeout. The _Async Config_ module enables asynchronous configuration saves by running a cron job that uses a consumer to process the save in a message queue. AsyncConfig is **disabled** by default.
+
+You can enable AsyncConfig using the command-line interface:
+
+```bash
+bin/magento setup:config:set --config-async 1
+```
+
+The `set` command writes the following to the `app/etc/env.php` file:
+
+```conf
+...
+   'config' => [
+       'async' => 1
+   ]
+```
+
+Start the following Consumer to begin processing the messages in the queue on a first-in-first-out basis: 
+
+```bash
+bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+```
 
 ## Deferred stock update
 
@@ -116,4 +141,3 @@ You can limit product grid collections on the following pages only:
 * Admin Create Order Page
 
 If you do not want your product grid to be limited, we encourage you to use filters more precisely for the result collection to have fewer items than **[!UICONTROL Records Limit]**.
-

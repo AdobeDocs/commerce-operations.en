@@ -1,8 +1,8 @@
 ---
 title: Current Search Engine Not Supported
 description: Troubleshoot your Adobe Commerce or Magento Open Source upgrade after encountering an error about an unsupported search engine.
+exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
 ---
-
 # Current search engine not supported
 
 The following error message indicates that the Adobe Commerce or Magento Open Source version you are upgrading from is configured to use a catalog search engine that is not supported in the version you are upgrading to:

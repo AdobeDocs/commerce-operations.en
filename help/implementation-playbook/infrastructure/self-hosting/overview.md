@@ -7,9 +7,8 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13
-
+exl-id: 63f552f3-836c-4a07-96c3-c0e00614fe39
 ---
-
 # Self-hosting Adobe Commerce Overview
 
 When considering the move to an e-commerce platform such as Adobe Commerce, you have the luxury of options. However, with these options come additional costs, risk, and liabilities to consider. Hosting a Commerce site can be done using a packaged solution, such as [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}, where the infrastructure, servers, email, SSL certificates and many more are pre-configured and ready for use. Finding a good hosting solution such as Adobe Commerce on cloud infrastructure makes the entire process easier, there are compelling reasons for self-hosting your Commerce site. Within the accompanying pages, there are many topics that provide insight and guidance about the services, techniques, and concepts that self hosting provides. The information here is not exhaustive, and it is not expected that you should implement every suggestion. However, these articles can help you understand the ideas and concepts that can make the Adobe Commerce self hosting as stable and secure as possible.

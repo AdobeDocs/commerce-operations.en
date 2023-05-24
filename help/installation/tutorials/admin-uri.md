@@ -1,8 +1,8 @@
 ---
 title: Display or change the Admin URI
 description: Follow these steps to view and modify the URI of your Adobe Commerce or Magento Open Source Admin application.
+exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
 ---
-
 # Display or change the Admin URI
 
 Before you run this command, you must [Create or update the deployment configuration](deployment.md).

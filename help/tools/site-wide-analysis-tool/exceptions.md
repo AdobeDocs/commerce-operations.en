@@ -1,6 +1,7 @@
 ---
-title: "[!DNL Exceptions]"
+title: '[!DNL Exceptions]'
 description: Learn about the [!UICONTROL Exceptions] tab in the [!DNL Site-Wide Analysis Tool], when to use it, its benefits, and best practices.
+exl-id: bd793536-b95c-47db-9372-33c00be8e144
 ---
 # [!DNL Exceptions]
 

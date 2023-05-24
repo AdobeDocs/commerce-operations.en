@@ -4,8 +4,8 @@ description: Learn best practices for configuring sites, stores, and store view 
 role: Admin
 feature: Best Practices
 feature-set: Commerce
+exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 ---
-
 # Best practice for configuring sites, stores, and store view
 
 For best site performance, configure a maximum of 50 sites, 50 stores, and 50 store views for Adobe Commerce on cloud infrastructure projects.
@@ -42,4 +42,3 @@ Websites and stores are multipliers for catalog data, so having many websites an
 
 - [Understanding websites, stores, and store views](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Set up multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
-

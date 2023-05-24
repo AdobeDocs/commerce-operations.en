@@ -1,8 +1,9 @@
 ---
 title: Password hashing
 description: Read about password hashing strategies and implementation.
+feature: Configuration, Security
+exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
 ---
-
 # Password hashing
 
 Currently, Commerce uses its own strategy for password hashing, based on different native PHP hashing algorithms. Commerce supports multiple algorithms like `MD5`, `SHA256`, or `Argon 2ID13`. If the Sodium extension is installed (installed by default in PHP 7.3), then `Argon 2ID13` is chosen as the default hashing algorithm. Otherwise, `SHA256` is the default. Commerce can use the native PHP `password_hash` function with Argon 2i algorithm support.

@@ -1,6 +1,7 @@
 ---
-title: "How to use the [!DNL Observation for Adobe Commerce] nerdlet"
+title: How to use the [!DNL Observation for Adobe Commerce] nerdlet
 description: Learn how to use the [!DNL Observation for Adobe Commerce] nerdlet.
+exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
 ---
 # How to use the [!DNL Observation for Adobe Commerce] nerdlet
 

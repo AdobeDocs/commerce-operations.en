@@ -1,8 +1,8 @@
 ---
 title: Uninstall modules
 description: Follow these steps to uninstall an Adobe Commerce or Magento Open Source module.
+exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
 ---
-
 # Uninstall modules
 
 This section discusses how to uninstall one or more modules. During uninstallation, you can optionally remove the modules' code, database schema, and database data. You can create backups first so you can recover the data later.

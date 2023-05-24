@@ -1,8 +1,9 @@
 ---
 title: Catalog configuration paths reference
 description: See a list of catalog configuration values.
+feature: Configuration, Catalogs
+exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 ---
-
 # Catalog configuration paths reference
 
 This section lists variable names and config paths available for options in the Admin under **Stores** > Settings > **Configuration** > **Catalog**.

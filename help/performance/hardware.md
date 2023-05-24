@@ -1,8 +1,8 @@
 ---
 title: Hardware Recommendations
 description: Review a list of recommended hardware related to optimal performance of Adobe Commerce and Magento Open Source deployments.
+exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
 ---
-
 # Hardware recommendations
 
 ## CPUs

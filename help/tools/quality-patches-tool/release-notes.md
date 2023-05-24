@@ -1,6 +1,7 @@
 ---
 title: Release notes
 description: Learn about the patches available for Adobe Commerce and the issues they resolve.
+exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 ---
 # Release notes
 
@@ -8,11 +9,21 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 >[!INFO]
 >
->See [Apply patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the Software Update Guide to review a full list of released patches.
+>See [Apply patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the Software Update Guide to review a full list of released patches.
 
 >[!INFO]
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.31 {#v1-1-31}
+
+* **ACSD-50345** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4 || >=2.4.4-p1 <2.4.6) - Fixes the issue where Recaptcha v2 does not reload after submitting a failed payment.
+* **ACSD-50817** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Optimizes Cron job `sales_clean_quotes` to run faster.
+* **ACSD-49392** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >= 2.4.1 <2.4.7) - Fixes the issue where the order status changes to closed after a partial refund for a bundled product.
+* **ACSD-51036** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where race conditions during concurrent REST API calls result in an overwrite of shipping status information in the [!UICONTROL Items Ordered] table.
+* **ACSD-50858** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Improves performance for loading banners contents.
+* Added new versions for MDVA-39305-v2, ACSD-45169.
+* Updated patches ACSD-50260-v2.
 
 ## v1.1.30 {#v1-1-30}
 

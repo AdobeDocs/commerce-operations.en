@@ -1,8 +1,8 @@
 ---
 title: Create symlinks to LESS files
 description: Learn how to create symlinks to LESS files.
+exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
 ---
-
 # Create symlinks to LESS files
 
 {{file-system-owner}}

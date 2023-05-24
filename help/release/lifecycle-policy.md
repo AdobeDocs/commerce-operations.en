@@ -1,8 +1,8 @@
 ---
 title: Software lifecycle policy
 description: Learn about key dates for end of software support for Adobe Commerce releases.
+exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 ---
-
 # Adobe Commerce lifecycle policy
 
 For Adobe Commerce 2.4.4 and subsequent releases:

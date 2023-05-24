@@ -1,8 +1,8 @@
 ---
 title: Beta releases
 description: Learn about the Adobe Commerce beta releases and how to participate.
+exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 ---
-
 # Adobe Commerce beta releases
 
 Beginning in June 2023 and going forward, Adobe will release public betas for patch releases ("beta releases"). Beta releases are available to all Adobe Commerce customers and partners prior to general availability (GA) and include security, compliance, performance, and high-priority quality fixes.

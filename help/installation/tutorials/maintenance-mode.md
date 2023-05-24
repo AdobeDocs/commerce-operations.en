@@ -1,8 +1,8 @@
 ---
 title: Enable or disable maintenance mode
 description: Follow these steps to customize what customers see when your Adobe Commerce or Magento Open Source deployment is down for maintenance.
+exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 ---
-
 # Enable or disable maintenance mode
 
 The following guide refers to a standard maintenance mode page. If you need to use a custom maintenance page, see [Create the custom maintenance page](../../upgrade/troubleshooting/maintenance-mode-options.md) topic.

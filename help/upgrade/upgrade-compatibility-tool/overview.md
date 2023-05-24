@@ -1,8 +1,8 @@
 ---
-title: "Overview of the [!DNL Upgrade Compatibility Tool]"
+title: Overview of the [!DNL Upgrade Compatibility Tool]
 description: Learn about the [!DNL Upgrade Compatibility Tool] and how it can help you with your Adobe Commerce project.
+exl-id: 9493406a-1690-462b-b119-1b685b026c0b
 ---
-
 # Guide overview
 
 {{commerce-only}}

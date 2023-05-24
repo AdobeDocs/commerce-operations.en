@@ -1,8 +1,9 @@
 ---
 title: Customers configuration paths reference
 description: See a list of customers configuration values.
+feature: Configuration, Customers
+exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
 ---
-
 # Customers configuration paths reference
 
 This section lists variable names and config paths available for options in the Admin under **Stores** > Settings > **Configuration** > **Customers**.
@@ -70,7 +71,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | Show Middle Name (initial) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Show Suffix | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Suffix Dropdown Options | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Show Date of Birth | `customer/address/dob_show`<br>In keeping with current security and privacy best practices, be sure you are aware of any potential legal and security risks associated with the storage of customers’ full date of birth (month, day, year) along with other personal identifiers, such as full name, before collecting or processing such data. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Show Date of Birth | `customer/address/dob_show`<br>In keeping with current security and privacy best practices, be sure you are aware of any potential legal and security risks associated with the storage of customers' full date of birth (month, day, year) along with other personal identifiers, such as full name, before collecting or processing such data. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Show Tax/VAT Number | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Show Gender | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Enable Store Credit Functionality | `customer/magento_customerbalance/is_enabled` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |

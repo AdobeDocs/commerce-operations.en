@@ -1,6 +1,7 @@
 ---
-title: "The [!UICONTROL Alerts] tab"
+title: The [!UICONTROL Alerts] tab
 description: Learn about the [!UICONTROL Alerts] tab of [!DNL Observation for Adobe Commerce].
+exl-id: e9305576-6ed2-48f3-baec-36e081b0d04b
 ---
 # The [!UICONTROL Alerts] tab
 
@@ -28,5 +29,4 @@ The **[!UICONTROL Critical Alert Details]** frame shows a count of the critical 
 
 ![Infrastructure Alert Details](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
 
-The **[!UICONTROL Infrastructure Alert Details]** frame shows applications, hosts, and other infrastructure events across the selected timeframe. 
-
+The **[!UICONTROL Infrastructure Alert Details]** frame shows applications, hosts, and other infrastructure events across the selected timeframe.

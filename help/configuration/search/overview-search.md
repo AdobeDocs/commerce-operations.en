@@ -1,8 +1,9 @@
 ---
 title: Search engine overview
 description: Overview of search engine options for Adobe Commerce and Magento Open Source.
+feature: Configuration, Search
+exl-id: 0ea78ca2-0bca-4d61-980a-02fb7da04553
 ---
-
 # Search engine overview
 
 As of version 2.4.4, Adobe Commerce and Magento Open Source requires either [Elasticsearch][] or [OpenSearch][] to be the catalog search engine. Previous versions of 2.4.x required Elasticsearch. Refer to the following topics for details about installing a search engine and initial configuration:

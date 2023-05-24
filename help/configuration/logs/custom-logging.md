@@ -1,8 +1,9 @@
 ---
 title: Custom logging
 description: Learn how to investigate errors using custom logging.
+feature: Configuration, Logs
+exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
 ---
-
 # Custom logging overview
 
 Logs provide visibility into system processes; for example, debugging information that assists you with understanding when an error occurred or what lead to the error.

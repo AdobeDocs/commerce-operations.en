@@ -1,8 +1,8 @@
 ---
 title: Module configuration files
 description: Learn how to customize a module using configuration types.
+exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
 ---
-
 # Overview of module configuration files
 
 The responsibilities of the `config.xml` configuration file used in earlier versions of Commerce is now divided between several files, located in various module directories. Commerce's multiple configuration files load on demand only when a module requests a specific configuration type.

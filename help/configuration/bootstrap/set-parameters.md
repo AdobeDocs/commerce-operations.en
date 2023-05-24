@@ -1,8 +1,8 @@
 ---
 title: Set the value of bootstrap parameters
 description: Learn how to set bootstrap parameters for the Commerce application.
+exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
 ---
-
 # Bootstrap parameters
 
 This topic demonstrates how to set the values of Commerce application bootstrap parameters. See [Overview of application initialization and bootstrapping](initialization.md).

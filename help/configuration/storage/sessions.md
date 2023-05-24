@@ -1,8 +1,9 @@
 ---
 title: Session storage location
 description: Learn where the session files are stored.
+feature: Configuration, Storage
+exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
 ---
-
 # Session storage location
 
 This topic discusses how to locate where your session files are stored. The system uses the following logic to store session files:

@@ -1,8 +1,9 @@
 ---
 title: Deployment strategies for static view files
 description: Read about deployment strategies for the Commerce application.
+feature: Configuration, Deploy, Extensions
+exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 ---
-
 # Deployment strategies for static view files
 
 When deploying static view files, you can choose one of the three available strategies. Each of them provides optimal deployment results for different use cases:

@@ -1,8 +1,8 @@
 ---
 title: Manage the cache
 description: Manage cache types and view cache status.
+exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
 ---
-
 # Manage the cache
 
 {{file-system-owner}}
