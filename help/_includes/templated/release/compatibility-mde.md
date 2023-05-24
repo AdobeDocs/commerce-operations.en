@@ -202,6 +202,53 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
+      <th colspan="10">Audience Activation</th>
+    </tr>
+    <tr>
+      <td>Audience Activation 1.0.1</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Audience Activation 1.0.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
       <th colspan="10">B2B</th>
     </tr>
     <tr>
@@ -573,7 +620,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Channel Manager 1.1.0</td>
-      <td>Compatible</span>
+      <td>Not supported</span>
       </td>
       <td>Not supported</span>
       </td>
@@ -1181,7 +1228,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 2.0.0</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1223,7 +1270,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.4</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1244,7 +1291,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.3</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1265,7 +1312,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.2</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1286,7 +1333,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.1</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1307,7 +1354,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.5.0</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1328,7 +1375,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.4.1</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1349,7 +1396,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Payment Services 1.4.0</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1569,7 +1616,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Store Fulfillment for Adobe Commerce 1.4.0</td>
-      <td>Not supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
@@ -1679,6 +1726,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Experience Platform Connector 2.2.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1698,6 +1747,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Experience Platform Connector 2.1.1</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1717,6 +1768,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Experience Platform Connector 2.1.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1736,6 +1789,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Experience Platform Connector 2.0.1</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1755,6 +1810,8 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Experience Platform Connector 2.0.0</td>
+      <td>Compatible</span>
+      </td>
       <td>Supported</span>
       </td>
       <td>Supported</span>
@@ -1796,50 +1853,7 @@ Magento Open Source, but is not supported.
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Audience Activation</th>
-    </tr>
-    <tr>
-      <td>Audience Activation 1.0.1</td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Audience Activation 1.0.0</td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-      <td>Not supported</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="9">Product Recommendations</th>
+      <th colspan="10">Product Recommendations</th>
     </tr>
     <tr>
       <td>Product Recommendations 5.0</td>
