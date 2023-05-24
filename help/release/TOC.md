@@ -11,6 +11,7 @@ recommendations: noDisplay, noCatalog
   - [Overview](release-notes/overview.md)
   - [Backward-incompatible changes](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
+    - [2.4.7-beta1](release-notes/commerce/2-4-7.md)
     - [2.4.6](release-notes/commerce/2-4-6.md)
     - [2.4.5](release-notes/commerce/2-4-5.md)
     - [2.4.4](release-notes/commerce/2-4-4.md)
@@ -19,6 +20,7 @@ recommendations: noDisplay, noCatalog
     - [2.4.1](release-notes/commerce/2-4-1.md)
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
+    - [2.4.7-beta1](release-notes/open-source/2-4-7.md)
     - [2.4.6](release-notes/open-source/2-4-6.md)
     - [2.4.5](release-notes/open-source/2-4-5.md)
     - [2.4.4](release-notes/open-source/2-4-4.md)
@@ -27,8 +29,11 @@ recommendations: noDisplay, noCatalog
     - [2.4.1](release-notes/open-source/2-4-1.md)
     - [2.4.0](release-notes/open-source/2-4-0.md) 
   - Security patch releases {#security-patches}
+    - [2.4.6-p1](release-notes/security/2-4-6-p1.md)
+    - [2.4.5-p3](release-notes/security/2-4-5-p3.md)
     - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
     - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+    - [2.4.4-p4](release-notes/security/2-4-4-p4.md)
     - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
     - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
     - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
