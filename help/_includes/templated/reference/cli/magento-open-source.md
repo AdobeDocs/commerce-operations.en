@@ -6,7 +6,7 @@
 **Version**: 2.4.6
 
 This reference contains 114 commands available through the `bin/magento` command-line tool.
-The initial list is auto generated using the `bin/magento list` command at the  edition.
+The initial list is auto generated using the `bin/magento list` command at Magento Open Source.
 Use the ["Add CLI commands"](https://developer.adobe.com/commerce/php/development/cli-commands/) guide to add a custom CLI command.
 
 >[!NOTE]
