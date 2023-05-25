@@ -8,4 +8,5 @@ user-guide-description: Learn about all available commands, arguments, and optio
 - [Adobe Commerce on cloud infrastructure](commerce.md)
 - [Adobe Commerce (on-premises)](commerce-on-premises.md)
 - [Magento Open Source](magento-open-source.md)
+- [Upgrade Compatibility Tool](uct.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
