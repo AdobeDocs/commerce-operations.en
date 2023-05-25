@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB
-description: Learn how to prepare your Adobe Commerce database to upgrade from Adobe Commerce 2.3.5.
+title: Adobe Commerce Upgrade prerequisites for MariaDB
+description: Learn how to prepare your Adobe Commerce database to upgrade MariaDB from a previous version.
 role: Developer
 feature-set: Commerce
 feature: Best Practices
@@ -8,13 +8,13 @@ exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
 ---
 # Upgrade prerequisites for MariaDB
 
-Upgrading from Adobe Commerce 2.3.4 or earlier to any newer version requires upgrading the MariaDB service on the cloud infrastructure from version 10.0 or 10.2 to version 10.3 or 10.4. MariaDB version 10.3 and later require the database to use the dynamic table row format and Adobe Commerce requires using the InnoDB storage engine for tables. This article explains how to update your database to comply with these MariaDB requirements.
+Upgrading the MariaDB service on the cloud infrastructure from version 10.0 or 10.2 to version 10.3, 10.4, or 10.5. MariaDB version 10.3 and later require the database to use the dynamic table row format and Adobe Commerce requires using the InnoDB storage engine for tables. This article explains how to update your database to comply with these MariaDB requirements.
 
 After you prepare the database, submit an Adobe Commerce support ticket to update the MariaDB service version on your cloud infrastructure before proceeding with the Adobe Commerce upgrade process.
 
 ## Affected product and versions
 
-Adobe Commerce on cloud infrastructure with Adobe Commerce version 2.3.4 or earlier and MariaDB version 10.0 or earlier.
+Adobe Commerce on cloud infrastructure with  MariaDB version 10.3 or earlier.
 
 ## Prepare your database for the upgrade
 
@@ -113,7 +113,7 @@ The process to convert the storage format is different for Adobe Commerce Starte
 
 ### Verify the database conversion
 
-The day before the scheduled upgrade to MariaDB version 10.2, verify that all tables have the correct row format and storage engine. Verification is required because code deployments made after you complete the conversion might cause some tables to be reverted to their original configuration.
+The day before the scheduled upgrade to MariaDB version 10.3, 10.4, or 10.6, verify that all tables have the correct row format and storage engine. Verification is required because code deployments made after you complete the conversion might cause some tables to be reverted to their original configuration.
 
 1. Log in to your database.
 
