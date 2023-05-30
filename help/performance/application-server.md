@@ -5,7 +5,7 @@ badgeCoreBeta: label="2.4.7-beta1" type="informative"
 ---
 # Application Server for GraphQL APIs
 
-The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state between Commerce GraphQL API requests and decreases the bootstrapping time of each request. By sharing application state among processes, API requests become significantly more efficient. 
+The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state between Commerce GraphQL API requests and decreases the bootstrapping time for each request. By sharing application state among processes, API requests become significantly more efficient. 
 
   This beta version of Application Server is available for on-premises deployments only. It does not support Cloud-based deployments. It does not yet support B2B GraphQL functionality. GraphQL requests may not work as expected in on-premises deployments when this version of the PHP application server is configured.
 
@@ -22,6 +22,8 @@ The `ApplicationServer` module (xxx) enables Application Server for GraphQL APIs
 Enabling Application Server requires installation of the Open Swoole extension and a minor change to your deployment's Nginx configuration file to run this application server locally.
 
 ### Before you begin
+
+Complete these two tasks before enabling the `ApplicationServer` module: 
 
 *  Configure Nginx
 
@@ -46,10 +48,6 @@ location /graphql {
 ### Install and configure Open Swoole
 
 You must install the Open Swoole v22 extension to run Application Server locally. There are multiple methods to install this extension, including Docker-based deployments. See Example: Install the Open Swoole extension on PHP 8.2 for OSX-based systems in a Docker-based environment.
-
-## Enable Application Server
-
-You can enable Application Server using a CLI command.
 
 ## Run Application Server
 
@@ -85,7 +83,7 @@ Run `php -m | grep openswoole` to confirm that the extension has been successful
 
 ### Resolve errors with the Open Swoole installation
 
-If errors occur during Open Swoole installation, they typically occur during the `pecl` installation phase. Most common errors include missing `openssl.h` and `pcre2.h` files. To resolve these errors, ensure that these two packages are installed in your local system. 
+Any errors that occur during Open Swoole installation typically occur during the `pecl` installation phase. Typical errors include missing `openssl.h` and `pcre2.h` files. To resolve these errors, ensure that these two packages are installed in your local system. 
 
 *  Check location of `openssl` by running  `openssl version -d`. This command shows the path where `openssl` is installed.
 
