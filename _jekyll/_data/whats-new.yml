@@ -1,8 +1,18 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon May 15 13:25:52 2023
+updated: Wed May 31 08:50:57 2023
 entries:
+- description: Added the [`bin/uct` CLI reference](https://experienceleague.adobe.com/docs/commerce-operations/reference/uct.html).
+  versions: ''
+  type: new-topic
+  date: May 25, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/545
+  merge_commit: d00e8cb4ebce9cbda0218ef75f44d2ff0ec45bad
+  contributor: shevtsov
+  membership: false
+  labels:
+  - new-topic
 - description: Added infrastructure details to the [performance benchmarks](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html).
   versions: ''
   type: major-update
