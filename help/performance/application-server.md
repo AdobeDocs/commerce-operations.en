@@ -82,17 +82,17 @@ Any errors that occur during Open Swoole installation typically occur during the
 
 *  Check location of `openssl` by running:
 
-```bash
-openssl version -d
-```
+  ```bash
+  openssl version -d
+  ```
 
 This command shows the path where `openssl` is installed.
 
 *  Check location of `pcre2` by running:
 
-```bash
-pcre2-config --prefix 
-```
+  ```bash
+  pcre2-config --prefix 
+  ```
 
 Use Homebrew to install the missing packages if command output indicates that files are missing: 
 
