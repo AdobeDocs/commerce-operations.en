@@ -17,9 +17,9 @@ Application Server is currently available for on-premises Commerce deployments o
 
 ## Enable Application Server for GraphQL APIs
 
-The `ApplicationServer` module (xxx) enables Application Server for GraphQL APIs. 
+The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs.
 
-Enabling Application Server requires installation of the Open Swoole extension and a minor change to your deployment's Nginx configuration file to run this application server locally.
+Running Application Server requires installation of the Open Swoole extension and a minor change to your deployment's Nginx configuration file to run this application server locally.
 
 ### Before you begin
 
@@ -47,27 +47,19 @@ location /graphql {
 
 ### Install and configure Open Swoole
 
-You must install the Open Swoole v22 extension to run Application Server locally. There are multiple methods to install this extension, including Docker-based deployments. See Example: Install the Open Swoole extension on PHP 8.2 for OSX-based systems in a Docker-based environment.
+You must install the Open Swoole v22 extension to run Application Server locally. There are multiple ways to install this extension.
 
 ## Run Application Server
 
-Enter `bin/magento server:run`to start Application Server. This command starts an HTTP port on 9501. Once Application Server launches, all GraphQL queries are proxied to this web server.
+Enter `bin/magento server:run`to start Application Server. 
 
-## Disable Application Server
-
-
-## Extend Application Server 
-
-Extension developers can interact with the `ApplicationServer` module. Extensions can be designed to intercept and change the behavior of a public method by creating a plugin. Dependency injection provides a mechanism in the `di.xml` file to declare a plugin in your module for a class object. See [Plugins][https://developer.adobe.com/commerce/php/development/components/plugins/) for information about using plugins, or interceptors, to 
-
-
-## Override Application Server 
-
-Commerce dependency injection provides a mechanism for overriding the functionality of the `ApplicationServer` module. Dependency injection is a design pattern that allows an object to declare its dependencies to an external object that supplies those dependencies. See [Dependency injection](https://developer.adobe.com/commerce/php/development/components/dependency-injection/)
+This command starts an HTTP port on 9501. Once Application Server launches, all GraphQL queries are proxied to this web server.
 
 ## Example: Install the Open Swoole extension on PHP 8.2 for OSX-based systems in a Docker-based environment
 
-This tutorial describes how to install the OpenSwoole extension on PHP 8.2 for OSX-based systems. You can install both the Open Swoole extension for PHP (v22) and the Composer packages that this extension requires with one command.
+This procedure illustrates how to install the OpenSwoole extension on PHP 8.2 for OSX-based systems. It is one of several ways of installing the Open Swoole extension.
+
+You can install both the Open Swoole extension for PHP (v22) and the Composer packages that this extension requires with one command.
 
 ### Install Open Swoole 
 
@@ -75,13 +67,12 @@ Enter `pecl install openswoole-22.0.0 | composer require openswoole/core:22.1.1`
 
 During installation, Adobe Commerce displays prompts to enable support for `openssl`, `mysqlnd`, `sockets`, `http2`, and `postgres`. Enter `yes` for all options except `postgres`.
 
-
 ### Confirm installation of Open Swoole
 
 Run `php -m | grep openswoole` to confirm that the extension has been successfully enabled.
 
 
-### Resolve errors with the Open Swoole installation
+### Common errors with the Open Swoole installation
 
 Any errors that occur during Open Swoole installation typically occur during the `pecl` installation phase. Typical errors include missing `openssl.h` and `pcre2.h` files. To resolve these errors, ensure that these two packages are installed in your local system. 
 
