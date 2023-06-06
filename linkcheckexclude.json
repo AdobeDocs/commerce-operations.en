@@ -5,6 +5,15 @@
         },
         {
             "pattern": "^.*example-end.com"
-        }          
+        },
+        {
+            "pattern": "https://github.com/magento-commerce/code-migration^"
+        },
+        {
+            "pattern": "https://github.com/magento/magento-functional-tests-migration^"
+        },
+        {
+            "pattern": "https://github.com/magento/partners-magento2ee^"
+        }
     ]
 }
