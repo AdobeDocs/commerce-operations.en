@@ -7,7 +7,7 @@ exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
 
 There are two ways you can access the [!DNL Site-Wide Analysis Tool Dashboard].
 
-You can access the [!DNL dashboard] from either the [[!DNL Site-Wide Analysis Tool] Website](https://supportinsights.adobe.com/commerce) directly and log in with your Adobe ID, or access the [!DNL dashboard] from your store's [!DNL Admin Panel].  
+You can access the [!DNL dashboard] from either the [[!DNL Site-Wide Analysis Tool] Website](https://supportinsights.adobe.com/commerce) directly **(for Adobe Commerce on cloud infrastructure only)** and log in with your Adobe ID, or access via the [!DNL dashboard] from your store's [!DNL Admin Panel].  
 
 The [!DNL Site-Wide Analysis Tool] service is available in [production mode](https://docs.magento.com/user-guide/magento/installation-modes.html) for [!DNL Admin] users with permission to access user [role resources](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
 
@@ -18,7 +18,7 @@ The [!DNL Site-Wide Analysis Tool] service is available in [production mode](htt
 ![Site-Wide Analysis Dashboard](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool] Dashboard*
 
-## Option 1: Logging in to your [!DNL Site-Wide Analysis Tool Dashboard] directly from the [!DNL Site-Wide Analysis Tool] domain
+## Option 1: Logging in to your [!DNL Site-Wide Analysis Tool Dashboard] directly from the [!DNL Site-Wide Analysis Tool] domain (for Adobe Commerce on cloud infrastructure only)
 
 An **[!DNL Adobe ID] is required** to access a [!DNL Commerce] account.
 If you already have a [!DNL Commerce] account, but you do not have an [!DNL Adobe ID], you can create one during the sign-in process. 
