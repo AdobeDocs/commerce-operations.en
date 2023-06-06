@@ -402,7 +402,8 @@ To resolve this error, try the following steps:
 ### SIGFAULT Error
 If you see a `SIGFAULT` error when running binary, you probably do not run this as the file owner of Adobe Commerce and Agent files. 
 To resolve, please check if all the files inside the agent directory that have the same user as the fileowner that Adobe Commerce files have, and binary should be run under that user as well.
-You can use chown command to change owner of files and switch to appropriate user. Make sure your daemonization mechanism (Cron or System.d) runs process under appropriate user.
+You can use the `chown` command to change the files owner and switch to the appropriate user. 
+Make sure that your daemonization mechanism (Cron or System.d) runs the process under the appropriate user.
 
 >[!INFO]
 >
