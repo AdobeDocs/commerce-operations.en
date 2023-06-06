@@ -179,7 +179,7 @@ If you do not want to use our [shell script](https://github.com/magento-swat/ins
    1. Download the launcher archive.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
    1. Unpack the launcher archive.
@@ -193,7 +193,7 @@ If you do not want to use our [shell script](https://github.com/magento-swat/ins
    1. Download the launcher archive.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
    1. Unpack the launcher archive.
@@ -385,7 +385,7 @@ You may see the following error if your access keys are not parsed properly:
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
 To resolve this error, try the following steps:
@@ -398,6 +398,11 @@ To resolve this error, try the following steps:
 1. Run the scheduler and see if you still receive the same error.
 1. If you still receive the same error, increase the log level in the `config.yaml` to debug and open a Support ticket.
 
+
+### SIGFAULT Error
+If you see SIGFAULT error when running binary, you probably do not run as file owner of Adobe Commerce and Agent files. 
+To resolve please check if all files inside agent directory have same user as fileowner that Adobe Commerce files have, and binary should be run under that user as well.
+You can use chown command to change owner of files and switch to appropriate user. Make sure your daemonization mechanism (Cron or System.d) runs process under appropriate user.
 
 >[!INFO]
 >
