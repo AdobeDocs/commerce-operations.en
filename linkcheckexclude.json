@@ -10,6 +10,9 @@
             "pattern": "https://github.com/magento-commerce/code-migration^"
         },
         {
+            "pattern": "https://github.com/magento-commerce/magento-functional-tests-migration^"
+        },
+        {
             "pattern": "https://github.com/magento/magento-functional-tests-migration^"
         },
         {
