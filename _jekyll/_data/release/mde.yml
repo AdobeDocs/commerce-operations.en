@@ -308,7 +308,7 @@ extensions:
     versions:
       - name: 2.0.0
         support:
-          2.4.7-beta1: supported
+          2.4.7-beta1: compatible
           2.4.6: supported
           2.4.5: supported
           2.4.4: supported
