@@ -7,16 +7,16 @@
             "pattern": "^.*example-end.com"
         },
         {
-            "pattern": "^.*github.com/magento-commerce/code-migration*"
+            "pattern": "^.*github.com/magento-commerce/code-migration"
         },
         {
-            "pattern": "^.*github.com/magento-commerce/magento-functional-tests-migration*"
+            "pattern": "^.*github.com/magento-commerce/magento-functional-tests-migration"
         },
         {
-            "pattern": "^.*github.com/magento/magento-functional-tests-migration*"
+            "pattern": "^.*github.com/magento/magento-functional-tests-migration"
         },
         {
-            "pattern": "^.*github.com/magento/partners-magento2ee*"
+            "pattern": "^.*github.com/magento/partners-magento2ee"
         },
         {
             "pattern": "^.*magento.biterg.io/app/kibana"
