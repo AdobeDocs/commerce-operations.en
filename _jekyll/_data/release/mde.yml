@@ -126,7 +126,7 @@ extensions:
           2.3.7: not supported
   - name: B2B
     versions:
-      - name: 1.4.0-beta1
+      - name: 1.4.0
         support:
           2.4.7-beta1: compatible
           2.4.6: supported
@@ -139,7 +139,7 @@ extensions:
           2.3.7: compatible
       - name: 1.3.5
         support:
-          2.4.7-beta1: compatible
+          2.4.7-beta1: supported
           2.4.6: supported
           2.4.5: compatible
           2.4.4: compatible
