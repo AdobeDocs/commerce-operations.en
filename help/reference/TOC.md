@@ -5,7 +5,6 @@ user-guide-description: Learn about all available commands, arguments, and optio
 
 # Command-Line Tools Reference {#reference}
 
-- [Adobe Commerce on cloud infrastructure](commerce.md)
 - [Adobe Commerce (on-premises)](commerce-on-premises.md)
 - [Magento Open Source](magento-open-source.md)
 - [Upgrade Compatibility Tool](uct.md)

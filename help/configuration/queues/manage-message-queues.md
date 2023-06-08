@@ -31,7 +31,7 @@ The following example shows the `crontab` configuration for running consumers:
 >
 >See [Configure and run cron](../cli/configure-cron-jobs.md) for more information about using `cron` with Commerce.
 
-You can also use a process manager such as [Supervisor](http://supervisord.org/index.html) to monitor the status of processes. The manager can use the command line to restart the processes as needed.
+You can also use a process manager such as [Supervisor](https://supervisord.readthedocs.io/en/latest/) to monitor the status of processes. The manager can use the command line to restart the processes as needed.
 
 ## Configuration
 
