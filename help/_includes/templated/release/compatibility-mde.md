@@ -599,7 +599,7 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>Channel Manager 2.0.0</td>
-      <td>Supported</span>
+      <td>Compatible</span>
       </td>
       <td>Supported</span>
       </td>
