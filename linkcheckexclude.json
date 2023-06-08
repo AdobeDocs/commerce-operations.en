@@ -16,6 +16,9 @@
             "pattern": "^.*github.com/magento/magento-functional-tests-migration"
         },
         {
+            "pattern": "^.*github.com/magento/partners-magento2b2b"
+        },
+        {
             "pattern": "^.*github.com/magento/partners-magento2ee"
         },
         {
