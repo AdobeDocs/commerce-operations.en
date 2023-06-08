@@ -7,7 +7,7 @@
             "pattern": "^.*example-end.com"
         },
         {
-            "pattern": "^.*github.com/magento-commerce/code-migration*"
+            "pattern": "^.*github.com/magento-commerce/code-migration"
         },
         {
             "pattern": "^.*github.com/magento-commerce/magento-functional-tests-migration"
