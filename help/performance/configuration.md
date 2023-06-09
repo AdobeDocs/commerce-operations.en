@@ -1,6 +1,7 @@
 ---
 title: Configuration Best Practices
 description: Optimize the response time of your Adobe Commerce or Magento Open Source deployment using these best practices.
+feature: Best Practices, configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
 ---
 # Configuration best practices

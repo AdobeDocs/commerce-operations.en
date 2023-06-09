@@ -1,6 +1,7 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] Related Tools'
 description: Learn more about related tools to the [!DNL Upgrade Compatibility Tool] on your Adobe Commerce project.
+feature: Upgrade, tools
 exl-id: a8cebb74-fba9-42ce-914b-b8fb6c7f53bf
 ---
 # [!DNL Upgrade Compatibility Tool] related tools

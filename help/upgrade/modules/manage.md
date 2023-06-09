@@ -1,6 +1,7 @@
 ---
 title: Manage Modules and Extensions
 description: Use the command-line interface to enable, disable, and uninstall Adobe Commerce and Magento Open Source modules and extensions.
+feature: Upgrade, modules
 exl-id: a71de7c6-395a-4734-b3ad-b2879809be0b
 ---
 # Manage modules and extensions

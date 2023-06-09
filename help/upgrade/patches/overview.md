@@ -1,6 +1,7 @@
 ---
 title: How Patches Work
 description: Learn about the different types of patches for Adobe Commerce and Magento Open Source and how they work.
+feature: Upgrade, patch
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
 ---
 # How patches work
