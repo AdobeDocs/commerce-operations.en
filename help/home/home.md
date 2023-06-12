@@ -58,11 +58,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
        <img alt="Command-line tools reference" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Command-Line Tools Reference</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>Command-Line Tools Reference</strong></a>
       <p>Learn about commands, arguments, and options for the Adobe Commerce command-line tools.</p>
     </div>
   </td>
