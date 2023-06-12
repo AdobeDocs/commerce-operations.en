@@ -2,7 +2,7 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Wed May 31 08:51:03 2023
+updated: Mon Jun 12 17:19:15 2023
 entries:
 - description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
     with information about separating the cache from the session and using compression.
