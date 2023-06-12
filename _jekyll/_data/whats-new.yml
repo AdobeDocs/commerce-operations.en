@@ -1,8 +1,122 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Wed May 31 08:50:57 2023
+updated: Mon Jun 12 17:20:06 2023
 entries:
+- description: Added the following docs for Beta:<br/>- [Adobe Commerce CLI (on-premises,
+    Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html)<br/>-
+    [Magento Open Source CLI (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html)<br/>-
+    [Adobe Commerce packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html)<br/>-
+    [Cloud packages for Adobe Commerce (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud-beta.html)<br/>-
+    [Magento Open Source packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html)
+  versions: 2.4.7
+  type: new-topic
+  date: June 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/570
+  merge_commit: 165a7f99fa173b17e436c07dc1fbcf9323478762
+  contributor: shevtsov
+  membership: false
+  labels:
+  - new-topic
+  - 2.4.7
+- description: Added basic configuration information for the beta version of the [Application
+    Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html).
+  versions: 2.4.7
+  type: new-topic
+  date: June 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/556
+  merge_commit: 6fe8d69933b7b2260a33b55bb2b12609addd3c90
+  contributor: frontain
+  membership: false
+  labels:
+  - new-topic
+  - 2.4.7
+- description: Updated the [product availability and compatibility tables](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+    and [release notes overview](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)
+    for the June 2023 release.
+  versions: 2.4.7
+  type: major-update
+  date: June 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/540
+  merge_commit: 95032071bca59ad1466aed16033a871d820c40b3
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Published release notes for the following patches:<br/>- [2.4.7-beta1](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html)<br/>-
+    [2.4.6-p1](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p1.html)<br/>-
+    [2.4.5-p3](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p3.html)<br/>-
+    [2.4.4-p4](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html)
+  versions: 2.4.7
+  type: major-update
+  date: June 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/546
+  merge_commit: 14ab6c2495ffb2ddd6321cd0fbb317df6fd866b3
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Updated the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    for patches that were released in June 2023.
+  versions: 2.4.7
+  type: major-update
+  date: June 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/523
+  merge_commit: 84a82a6806e43a928be7e6743457d8fc9288338e
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Added information about the new `saveConfigProcessor` [consumer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html)
+    that was added to support the [`AsyncConfig`](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#asynchronous-configuration-save)
+    module.
+  versions: 2.4.7
+  type: major-update
+  date: June 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/410
+  merge_commit: 702b7f73d1bd315528c332418ed3a5f2666c3efc
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Added information about how the new [AsyncConfig module](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#asynchronous-configuration-save)
+    can help improve performance.
+  versions: 2.4.7
+  type: major-update
+  date: June 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/404
+  merge_commit: 146231fb1b559e6043b8610da02c2015b2f77d6c
+  contributor: aakashk
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.32 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: June 12, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/569
+  merge_commit: 96f6107732880601f3788ae73bebef3039aa85c3
+  contributor: poltorat
+  membership: false
+  labels:
+  - major-update
+- description: Added a [instructions](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html)
+    for accessing the Site-Wide Analysis Tool from the tool's domain (`https://supportinsights.adobe.com/commerce`).
+  versions: ''
+  type: major-update
+  date: June 7, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/559
+  merge_commit: 051fe7707cef593027bcff93ae39adfc5cf1af3c
+  contributor: jmenn
+  membership: true
+  labels:
+  - major-update
 - description: Added the [`bin/uct` CLI reference](https://experienceleague.adobe.com/docs/commerce-operations/reference/uct.html).
   versions: ''
   type: new-topic
