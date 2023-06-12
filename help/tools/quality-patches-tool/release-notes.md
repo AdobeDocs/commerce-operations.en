@@ -15,6 +15,25 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.32 {#v1-1-32}
+
+* **ACSD-49628** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the [!UICONTROL Page Builder's] multiple errors prevent admin from saving a product without content permissions.
+* **ACSD-51305** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where out-of-stock configurable child products are not available in the GraphQL response.
+* **ACSD-50621** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where [!UICONTROL Tier Prices] for different websites in the shared catalog are not visible when trying to edit them in a multi-website environment.
+* **ACSD-51041** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >=2.4.1 <2.4.6) - Improves performance of price indexer.
+* **ACSD-51379** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where changes made to page text content via [!UICONTROL Page Builder] are not saved.
+* **ACSD-49480** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where only one cart price rule is applied to the cart.
+* **ACSD-51230** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where the gift card account is deleted when a partial refund of a simple product is processed from an order.
+* **ACSD-51238** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the inventory source is removed when updating configurable products and editing the price.
+* **ACSD-50794** (for Adobe Commerce >=2.4.1 <2.4.7) - Fixes the issue where the gift message or gift wrapping details are not updated in the database when removing it through GraphQL.
+* **ACSD-51528** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where the *x_forwarded_for* column has null values in the *sales_order* table.
+* **ACSD-50849** (for Adobe Commerce >=2.4.4 <2.4.6) - Fixes the issue where adding a new product to the category after clearing the cache results in a mismatch of positions and selections of the  existing products.
+* **ACSD-51294** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where GTM/GA price, quantity, tax, shipping, and revenue are sent as a string to [!DNL Google Analytics] and GTM.
+* **ACSD-51204** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where a fully sold product doesn't return back in stock after creating a credit memo.
+* **ACSD-51291** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.4-p4 || >=2.4.5 <2.4.5-p3) - Fixes the issue where restricted admin with access to one website can add images/videos to the product assigned to multiple websites.
+* Added new versions for ACSD-50336.
+* Replaced patches ACSD-49970.
+
 ## v1.1.31 {#v1-1-31}
 
 * **ACSD-50345** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4 || >=2.4.4-p1 <2.4.6) - Fixes the issue where Recaptcha v2 does not reload after submitting a failed payment.
