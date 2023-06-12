@@ -21,7 +21,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51305** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where out-of-stock configurable child products are not available in the GraphQL response.
 * **ACSD-50621** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where [!UICONTROL Tier Prices] for different websites in the shared catalog are not visible when trying to edit them in a multi-website environment.
 * **ACSD-51041** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >=2.4.1 <2.4.6) - Improves performance of price indexer.
-* **ACSD-51379** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where changes made to page text content via Page Builder are not saved.
+* **ACSD-51379** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where changes made to page text content via [!UICONTROL Page Builder] are not saved.
 * **ACSD-49480** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where only one cart price rule is applied to the cart.
 * **ACSD-51230** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where the gift card account is deleted when a partial refund of a simple product is processed from an order.
 * **ACSD-51238** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the inventory source is removed when updating configurable products and editing the price.
