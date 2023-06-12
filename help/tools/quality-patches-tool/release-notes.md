@@ -17,7 +17,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.32 {#v1-1-32}
 
-* **ACSD-49628** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.5) - Fixes the issue where the Page Builder's multiple errors prevent admin from saving a product without content permissions.
+* **ACSD-49628** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the [!UICONTROL Page Builder's] multiple errors prevent admin from saving a product without content permissions.
 * **ACSD-51305** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where out-of-stock configurable child products are not available in the GraphQL response.
 * **ACSD-50621** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where Tier Prices for different websites in the shared catalog are not visible when trying to edit them in a multi-website environment.
 * **ACSD-51041** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >=2.4.1 <2.4.6) - Improves performance of price indexer.
