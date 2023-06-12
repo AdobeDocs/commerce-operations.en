@@ -1,9 +1,9 @@
 # Cloud packages for Adobe Commerce
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock.json' file
+<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock_beta.json' file
  -->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock.json' file
+<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock_beta.json' file
  -->
 
 <!-- The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
@@ -16,17 +16,17 @@ Adobe Commerce on cloud infrastructure uses Composer to manage PHP packages.
 
 The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of Adobe Commerce or Magento Open Source.
 
-The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure 2.4.6.
+The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure 2.4.7.
 
 ## Dependencies
 
-`magento/magento-cloud-metapackage 2.4.6` has the following dependencies:
+`magento/magento-cloud-metapackage 2.4.7` has the following dependencies:
 
 ```config
 fastly/magento2: ^1.2.34
 magento/ece-tools: ^2002.1.0
 magento/module-paypal-on-boarding: ~100.5.0
-magento/product-enterprise-edition: >=2.4.6 <2.4.7
+magento/product-enterprise-edition: >=2.4.7 <2.4.8
 ```
 
 ## Third-party licenses
@@ -821,6 +821,13 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-fig/clock.git">psr/clock</a>
+    </td>
+    <td>library</td>
+    <td>Common interface for reading the clock.</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/php-fig/container.git">psr/container</a>
     </td>
     <td>library</td>
@@ -1101,6 +1108,13 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/polyfill-php83.git">symfony/polyfill-php83</a>
+    </td>
+    <td>library</td>
+    <td>Symfony polyfill backporting some PHP 8.3+ features to lower PHP versions</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/process.git">symfony/process</a>
     </td>
     <td>library</td>
@@ -1211,6 +1225,27 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
     </tr>
   </thead>
   <tbody>
+  <tr>
+    <td>
+      paypal/module-braintree-customer-balance
+    </td>
+    <td>magento2-module</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-gift-card-account
+    </td>
+    <td>magento2-module</td>
+    <td>N/A</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-gift-wrapping
+    </td>
+    <td>magento2-module</td>
+    <td>N/A</td>
+  </tr>
   <tr>
     <td>
       paypal/module-braintree-graph-ql
