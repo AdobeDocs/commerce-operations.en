@@ -1,12 +1,46 @@
 ---
+2.4.7-beta1:
+  Composer: '2.5'
+  Elasticsearch: '8.5'
+  OpenSearch: '2.5'
+  MariaDB: '10.6'
+  MySQL: '8.0'
+  PHP: '8.2, 8.1'
+  RabbitMQ: '3.11'
+  Redis: '7.0'
+  Varnish: '7.3'
+  Apache: '2.4'
+  nginx: '1.22'
+  AWS Aurora (MySQL): '8.0'
+  AWS S3: ✔️
+  AWS MQ: '3.10.10'
+  AWS ElastiCache: Redis 7.0
+  AWS OpenSearch: '2.3'
+2.4.6-p1:
+  Composer: '2.2'
+  Elasticsearch: '8.5, 7.17'
+  OpenSearch: '2.5'
+  MariaDB: '10.6'
+  MySQL: '8.0'
+  PHP: '8.2, 8.1'
+  RabbitMQ: '3.11, 3.9'
+  Redis: '7.0'
+  Varnish: '7.3'
+  Apache: '2.4'
+  nginx: '1.22'
+  AWS Aurora (MySQL): '8.0'
+  AWS S3: ✔️
+  AWS MQ: '3.9.16'
+  AWS ElastiCache: Redis 6.2
+  AWS OpenSearch: '1.2'
 2.4.6:
   Composer: '2.2'
   Elasticsearch: '8.4, 7.17'
   OpenSearch: '2.5'
   MariaDB: '10.6'
   MySQL: '8.0'
-  PHP: '8.1, 8.2'
-  RabbitMQ: '3.9'
+  PHP: '8.2, 8.1'
+  RabbitMQ: '3.11, 3.9'
   Redis: '7.0'
   Varnish: '7.1'
   Apache: '2.4'
@@ -15,6 +49,23 @@
   AWS S3: ✔️
   AWS MQ: '3.9.16'
   AWS ElastiCache: Redis 6.2
+  AWS OpenSearch: '1.2'
+2.4.5-p3:
+  Composer: '2.2'
+  Elasticsearch: '7.17'
+  OpenSearch: '1.2'
+  MariaDB: '10.4'
+  MySQL: '8.0'
+  PHP: '8.1'
+  RabbitMQ: '3.11, 3.9'
+  Redis: '6.2'
+  Varnish: '7.3'
+  Apache: '2.4'
+  nginx: '1.22'
+  AWS Aurora (MySQL): '8.0'
+  AWS S3: ✔️
+  AWS MQ: '3.9.13'
+  AWS ElastiCache: Redis 6
   AWS OpenSearch: '1.2'
 2.4.5-p2:
   Composer: '2.2'
@@ -68,6 +119,23 @@
   AWS MQ: '3.9.13'
   AWS ElastiCache: Redis 6
   AWS Elasticsearch: '7.9'
+  AWS OpenSearch: '1.2'
+2.4.4-p4:
+  Composer: '2.2'
+  Elasticsearch: '7.17'
+  OpenSearch: '1.2'
+  MariaDB: '10.4'
+  MySQL: '8.0'
+  PHP: '8.1'
+  RabbitMQ: '3.9'
+  Redis: '6.2'
+  Varnish: '7.3'
+  Apache: '2.4'
+  nginx: '1.22'
+  AWS Aurora (MySQL): '8.0'
+  AWS S3: ✔️
+  AWS MQ: '3.9.13'
+  AWS ElastiCache: Redis 6
   AWS OpenSearch: '1.2'
 2.4.4-p3:
   Composer: '2.2'
