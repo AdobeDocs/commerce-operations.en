@@ -3,8 +3,6 @@
 >[!NOTE]
 >
 ><sup>*</sup>Adobe Commerce 2.4.5 and earlier support MySQL 8.0.28 and earlier only.
->
-><sup>^</sup>Adobe Commerce 2.4.4 and later on Cloud infrastructure support OpenSearch. The last supported version of Elasticsearch is 7.17 with Commerce 2.4.4.
 
 <table style="table-layout:auto">
   <thead>
@@ -117,7 +115,7 @@
             7.17
       </td>
       <td>
-            7.17^
+            7.17
       </td>
       <td>
             7.16
@@ -174,7 +172,7 @@
             1.2
       </td>
       <td>
-            1.2^
+            1.2
       </td>
       <td>
             1.2
