@@ -5,13 +5,9 @@ exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
 # System requirements
 
-This table shows versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases. Adobe only supports the combination of system requirements described in the following table.
+The following summarizes software dependencies and services tested for Adobe Commerce and Magento Open Source.
 
-For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
-
-{{$include /help/_includes/templated/system-requirements-table.md}}
-
-## Cloud infrastructure dependencies
+## Cloud dependencies
 
 Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1.2 is supported for Commerce 2.4.4 on Cloud infrastructure.
 
@@ -32,19 +28,25 @@ opensearch:
 
 See [Configure services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) in the _Commerce on Cloud Infrastructure_ guide.
 
+## System requirements table
+
+The following table shows versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases.
+
+Adobe only supports the combination of system requirements described in the following table. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
+
+{{$include /help/_includes/templated/system-requirements-table.md}}
+
 ## PHP settings
 
-We recommend particular PHP configuration settings, such as `memory_limit`, that can avoid common problems when using Adobe Commerce and Magento Open Source.
-
-For more information, see [Required PHP settings](prerequisites/php-settings.md).
+There are particular PHP configuration settings, such as the `memory_limit` setting, which can help you to avoid common problems when using Adobe Commerce and Magento Open Source. See [Required PHP settings](prerequisites/php-settings.md).
 
 For Cloud configuration guidance, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in the _Commerce on Cloud Infrastructure_ guide.
 
 ### PHP OPcache
 
-We strongly recommend you verify that [PHP OPcache](https://php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. To verify if it is installed, see our [PHP documentation](prerequisites/php-settings.md).
+It is strongly recommended that you verify that [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. To verify if it is installed, see the [PHP documentation](prerequisites/php-settings.md).
 
-If you must install it separately, see the [PHP OPcache documentation](https://php.net/manual/en/opcache.setup.php).
+If you must install it separately, see the [PHP OPcache documentation](https://www.php.net/manual/en/opcache.setup.php).
 
 ### PHPUnit
 
@@ -60,7 +62,7 @@ The [PHP installation instructions](prerequisites/php-settings.md) include a ste
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-Refer to [official PHP documentation](https://php.net/manual/en/extensions.php) for installation details.
+Refer to [official PHP documentation](https://www.php.net/manual/en/extensions.php) for installation details.
 
 ## Miscellaneous
 
@@ -80,7 +82,7 @@ Storefront and Admin:
 -  Safari (latest and previous major version; macOS only)
 -  Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
 -  Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
--  Chrome for mobile (latest and previous major version [Android 4 or later] for mobile storefront)
+-  Chrome for mobile (latest and previous major version [Android&trade; 4 or later] for mobile storefront)
 
 ### Mail server
 
@@ -88,7 +90,7 @@ Mail Transfer Agent (MTA) or an SMTP server
 
 ### Memory
 
-Upgrading the applications and extensions you obtain from the Commerce Marketplace and other sources can require up to 2 GB of RAM. If you are using a system with less than 2 GB of RAM, we recommend you create a [swap file](https://support.magento.com/hc/en-us/articles/360032980432); otherwise, your upgrade might fail.
+Upgrading the applications and extensions you obtain from the Commerce Marketplace and other sources can require up to 2 GB of RAM. If you are using a system with less than 2 GB of RAM, create a [swap file](https://support.magento.com/hc/en-us/articles/360032980432); otherwise, your upgrade might fail.
 
 ### Operating systems (Linux x86-64)
 
@@ -114,8 +116,8 @@ Adobe Commerce and Magento Open Source require the following system tools for so
 
 ### Xdebug
 
-[php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance)
+Use [php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance).
 
 >[!NOTE]
 >
->There is a known issue with `xdebug` that can affect Adobe Commerce or Magento Open Source installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html).
+>There is a known issue with `xdebug` that can affect Adobe Commerce or Magento Open Source installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in the _Commerce Support Knowledge Base_.
