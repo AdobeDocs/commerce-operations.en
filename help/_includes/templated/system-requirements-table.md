@@ -1,12 +1,10 @@
 # System requirements
 
->[!IMPORTANT]
->
->Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) in the _Cloud guide_. For example, Elasticsearch 7.17 is supported on 2.4.4 for on-premise deployments but Open Search 1.2 is supported on the Cloud infrastructure.
-
 >[!NOTE]
 >
 ><sup>*</sup>Adobe Commerce 2.4.5 and earlier support MySQL 8.0.28 and earlier only.
+>
+><sup>^</sup>Adobe Commerce 2.4.4 and later on Cloud infrastructure support OpenSearch. The last supported version of Elasticsearch is 7.17 with Commerce 2.4.4.
 
 <table style="table-layout:auto">
   <thead>
@@ -119,7 +117,7 @@
             7.17
       </td>
       <td>
-            7.17
+            7.17^
       </td>
       <td>
             7.16
@@ -176,7 +174,7 @@
             1.2
       </td>
       <td>
-            1.2
+            1.2^
       </td>
       <td>
             1.2

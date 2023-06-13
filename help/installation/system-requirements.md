@@ -11,6 +11,57 @@ For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you 
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
+## Cloud infrastructure dependencies
+
+Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1.2 is supported for Commerce 2.4.4 on Cloud infrastructure.
+
+The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provides a default configuration for services compatible with a specific Commerce version. The services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following is the default service configuration for Commerce 2.4.6 on Cloud infrastructure:
+
+```yaml
+mysql:
+    type: mysql:10.6
+    disk: 5120
+
+redis:
+    type: redis:7.0
+
+opensearch:
+    type: opensearch:2
+    disk: 1024
+```
+
+See [Configure services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) in the _Commerce on Cloud Infrastructure_ guide.
+
+## PHP settings
+
+We recommend particular PHP configuration settings, such as `memory_limit`, that can avoid common problems when using Adobe Commerce and Magento Open Source.
+
+For more information, see [Required PHP settings](prerequisites/php-settings.md).
+
+For Cloud configuration guidance, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in the _Commerce on Cloud Infrastructure_ guide.
+
+### PHP OPcache
+
+We strongly recommend you verify that [PHP OPcache](https://php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. To verify if it is installed, see our [PHP documentation](prerequisites/php-settings.md).
+
+If you must install it separately, see the [PHP OPcache documentation](https://php.net/manual/en/opcache.setup.php).
+
+### PHPUnit
+
+PHPUnit (as a command-line tool) 9.0.0
+
+### PHP extensions
+
+The [PHP installation instructions](prerequisites/php-settings.md) include a step for installing these extensions.
+
+>[!TIP]
+>
+>For PHP extensions in the Cloud infrastructure, see [Enable PHP extensions](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) in the _Commerce on Cloud Infrastructure_ guide.
+
+{{$include /help/_includes/templated/php-extensions.md}}
+
+Refer to [official PHP documentation](https://php.net/manual/en/extensions.php) for installation details.
+
 ## Miscellaneous
 
 This section describes support and compatibility for all other types of required and optional software.
@@ -19,45 +70,29 @@ This section describes support and compatibility for all other types of required
 >
 >The following requirements apply to the latest 2.4.x patch release of Adobe Commerce and Magento Open Source.
 
+### Browsers
+
+Storefront and Admin:
+
+-  Microsoft Edge (latest and previous major version)
+-  Firefox (latest and previous major version; any operating system)
+-  Chrome (latest and previous major version; any operating system)
+-  Safari (latest and previous major version; macOS only)
+-  Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
+-  Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
+-  Chrome for mobile (latest and previous major version [Android 4 or later] for mobile storefront)
+
 ### Mail server
 
 Mail Transfer Agent (MTA) or an SMTP server
 
-### Operating systems (Linux x86-64)
-
-Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar. Microsoft Windows and macOS are not supported.
-
-### PHP extensions
-
->[!NOTE]
->
->The [PHP installation instructions](prerequisites/php-settings.md) include a step for installing these extensions.
-
-{{$include /help/_includes/templated/php-extensions.md}}
-
-Refer to [official PHP documentation](https://php.net/manual/en/extensions.php) for installation details.
-
-### PHP OPcache
-
-We strongly recommend you verify that [PHP OPcache](https://php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. To verify if it is installed, see our [PHP documentation](prerequisites/php-settings.md).
-
-If you must install it separately, see the [PHP OPcache documentation](https://php.net/manual/en/opcache.setup.php).
-
-### PHP settings
-
-We recommend particular PHP configuration settings, such as `memory_limit`, that can avoid common problems when using Adobe Commerce and Magento Open Source.
-
-For more information, see [Required PHP settings](prerequisites/php-settings.md).
-
-### PHPUnit
-
-PHPUnit (as a command-line tool) 9.0.0
-
-### RAM
+### Memory
 
 Upgrading the applications and extensions you obtain from the Commerce Marketplace and other sources can require up to 2 GB of RAM. If you are using a system with less than 2 GB of RAM, we recommend you create a [swap file](https://support.magento.com/hc/en-us/articles/360032980432); otherwise, your upgrade might fail.
 
-### System dependencies
+### Operating systems (Linux x86-64)
+
+Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar. Microsoft Windows and macOS are not supported.
 
 Adobe Commerce and Magento Open Source require the following system tools for some operations:
 
@@ -77,22 +112,10 @@ Adobe Commerce and Magento Open Source require the following system tools for so
 -  Self-signed SSL certificates are not supported.
 -  Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
 
-### Supported browsers
-
-Storefront and Admin:
-
--  Microsoft Edge (latest and previous major version)
--  Firefox (latest and previous major version; any operating system)
--  Chrome (latest and previous major version; any operating system)
--  Safari (latest and previous major version; macOS only)
--  Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
--  Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
--  Chrome for mobile (latest and previous major version [Android 4 or later] for mobile storefront)
-
 ### Xdebug
 
 [php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance)
 
 >[!NOTE]
 >
->There is a known issue with `xdebug` that can affect Adobe Commerce or Magento Open Source installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug](https://support.magento.com/hc/en-us/articles/360034242212).
+>There is a known issue with `xdebug` that can affect Adobe Commerce or Magento Open Source installations or access to the storefront or Admin after installation. For details, see [Known issue with xdebug](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html).
