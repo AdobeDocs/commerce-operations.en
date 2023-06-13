@@ -34,7 +34,17 @@ The following table shows versions of third-party software dependencies that Ado
 
 Adobe only supports the combination of system requirements described in the following table. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
 
+>[!BEGINTABS]
+
+>[!TAB Cloud]
+
 {{$include /help/_includes/templated/system-requirements-table.md}}
+
+>[!TAB On-premises]
+
+{{$include /help/_includes/templated/system-requirements-table.md}}
+
+>[!ENDTABS]
 
 ## PHP settings
 
