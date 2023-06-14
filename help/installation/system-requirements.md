@@ -7,9 +7,17 @@ exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 
 The following summarizes software dependencies and services tested for Adobe Commerce and Magento Open Source.
 
-## Cloud dependencies
+There are some differences in the dependencies for Commerce on Cloud infrastructure. Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1.2 is supported for Commerce 2.4.4 on Cloud infrastructure.
 
-Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1.2 is supported for Commerce 2.4.4 on Cloud infrastructure.
+The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases.
+
+Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
+
+>[!BEGINTABS]
+
+>[!TAB Commerce on Cloud]
+
+{{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provides a default configuration for services compatible with a specific Commerce version. The services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following is the default service configuration for Commerce 2.4.6 on Cloud infrastructure:
 
@@ -28,19 +36,7 @@ opensearch:
 
 See [Configure services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) in the _Commerce on Cloud Infrastructure_ guide.
 
-## System requirements table
-
-The following table shows versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases.
-
-Adobe only supports the combination of system requirements described in the following table. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
-
->[!BEGINTABS]
-
->[!TAB Cloud]
-
-{{$include /help/_includes/templated/cloud-requirements-table.md}}
-
->[!TAB On-premises]
+>[!TAB Commerce On-premises]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
@@ -54,9 +50,11 @@ For Cloud configuration guidance, see [PHP settings](https://experienceleague.ad
 
 ### PHP OPcache
 
-It is strongly recommended that you verify that [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. To verify if it is installed, see the [PHP documentation](prerequisites/php-settings.md).
+It is strongly recommended that you verify that [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. The `opcache` extension is installed by default in the Commerce on Cloud infrastructure.
 
-If you must install it separately, see the [PHP OPcache documentation](https://www.php.net/manual/en/opcache.setup.php).
+For on-premesis, verify that PHP OPcache it is installed, see [PHP settings](prerequisites/php-settings.md). Or for specific guidance on performance settings, see the software recommendations for [PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in the _Performance Best Practices_ guide.
+
+If you must install OPcache separately, see the [PHP OPcache documentation](https://www.php.net/manual/en/opcache.setup.php).
 
 ### PHPUnit
 
@@ -80,7 +78,7 @@ This section describes support and compatibility for all other types of required
 
 >[!NOTE]
 >
->The following requirements apply to the latest 2.4.x patch release of Adobe Commerce and Magento Open Source.
+>The following requirements apply to the latest 2.4.x patch release of Adobe Commerce and Magento Open Source. When relevant, Commerce on Cloud infrastructure guidance is provided.
 
 ### Browsers
 
@@ -96,7 +94,7 @@ Storefront and Admin:
 
 ### Mail server
 
-Mail Transfer Agent (MTA) or an SMTP server
+Mail Transfer Agent (MTA) or an SMTP server. Commerce on Cloud infrastructure uses the [SendGrid email service](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
 
 ### Memory
 
@@ -124,9 +122,13 @@ Adobe Commerce and Magento Open Source require the following system tools for so
 -  Self-signed SSL certificates are not supported.
 -  Transport Layer Security (TLS) requirement - PayPal and `repo.magento.com` both require TLS 1.2 or later.
 
+For Commerce on Cloud infrastructure, see [Fastly configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) in the _Commerce on Cloud Infrastructure_ guide.
+
 ### Xdebug
 
-Use [php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance).
+For Adobe Commerce and Magento Open Source, use [php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance).
+
+For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) in the _Commerce on Cloud Infrastructure_ guide.
 
 >[!NOTE]
 >
