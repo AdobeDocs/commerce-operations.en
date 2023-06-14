@@ -17,8 +17,6 @@ Adobe only supports the combination of system requirements described in the foll
 
 >[!TAB Commerce on Cloud]
 
-{{$include /help/_includes/templated/cloud-requirements-table.md}}
-
 The [Commerce on Cloud template](https://github.com/magento/magento-cloud) provides a default configuration for services compatible with a specific Commerce version. The services and versions are defined in [the `services.yaml` file](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). The following is the default service configuration for Commerce 2.4.6 on Cloud infrastructure:
 
 ```yaml
@@ -35,6 +33,8 @@ opensearch:
 ```
 
 See [Configure services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) in the _Commerce on Cloud Infrastructure_ guide.
+
+{{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 >[!TAB Commerce On-premises]
 
@@ -68,9 +68,23 @@ The [PHP installation instructions](prerequisites/php-settings.md) include a ste
 >
 >For PHP extensions in the Cloud infrastructure, see [Enable PHP extensions](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) in the _Commerce on Cloud Infrastructure_ guide.
 
+>[!BEGINTABS]
+
+>[!TAB Commerce on Cloud]
+
+The following table shows the supported PHP extensions when deploying Adobe Commerce on the Cloud platform.
+
+| Default extensions | Installed extensions<br>that cannot be uninstalled | Extensions that can be installed<br>and uninstalled as needed |
+| ------------------ | --------------------- | --------------------- |
+| `bcmath`<br>`bz2`<br>`calendar`<br>`exif`<br>`gd`<br>`gettext`<br> `intl`<br> `mysqli`<br> `pcntl`<br> `pdo_mysql`<br> `soap`<br> `sockets`<br>  `sysvmsg`<br> `sysvsem`<br> `sysvshm`<br> `opcache`<br> `zip` | `ctype`<br> `curl`<br>`date`<br> `dom`<br> `fileinfo`<br> `filter`<br> `ftp`<br> `hash`<br> `iconv`<br> `json`<br> `mbstring`<br> `mysqlnd`<br> `openssl`<br> `pcre`<br> `pdo`<br> `pdo_sqlite`<br> `phar`<br>`posix`<br> `readline`<br> `session`<br> `sqlite3`<br> `tokenizer`<br> `xml`<br> `xmlreader`<br> `xmlwriter`<br> |`geoip`<br>`gmp`<br> `igbinary`<br> `imagick`<br> `imap`<br> `ioncube` <br>`ldap`<br> `mailparse`<br> `mcrypt`<br> `msgpack`<br> `mysqli`<br> `oauth`<br> `pdo_mysql`<br> `propro`<br> `pspell`<br> `raphf`<br> `recode`<br> `redis`<br> `shmop` `sockets`<br> `sodium`<br> `ssh2`<br>`tidy`<br> `xdebug`<br> `xmlrpc`<br> `xsl`<br> `yaml` |
+
+>[!TAB Commerce On-premises]
+
 {{$include /help/_includes/templated/php-extensions.md}}
 
 Refer to [official PHP documentation](https://www.php.net/manual/en/extensions.php) for installation details.
+
+>[!ENDTABS]
 
 ## Miscellaneous
 
