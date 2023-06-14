@@ -38,7 +38,7 @@ Adobe only supports the combination of system requirements described in the foll
 
 >[!TAB Cloud]
 
-Test Cloud
+{{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 >[!TAB On-premises]
 
