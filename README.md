@@ -68,4 +68,4 @@ _scripts/render
 
 The script runs rendering and writes rendered templates to the `help/_includes/templated` directory.
 
-See the Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles, [Liquid filters](https://jekyllrb.com/docs/liquid/filters/), and other features.
+See the Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles), [Liquid filters](https://jekyllrb.com/docs/liquid/filters/), and other features.
