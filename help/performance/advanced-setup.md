@@ -1,7 +1,6 @@
 ---
 title: Advanced Setup
 description: Review best practices and recommendations for large enterprise systems designed to process large volumes of data.
-feature: Best Practices, setup, database
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
 ---
 # Advanced setup

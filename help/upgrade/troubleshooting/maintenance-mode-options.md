@@ -1,7 +1,6 @@
 ---
 title: Maintenance Mode Options for Upgrade
 description: Create a custom maintenance mode page that your customers see on your Adobe Commerce or Magento Open Source storefront while you execute an upgrade.
-feature: Upgrade, maintenance mode
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 ---
 # Maintenance mode options for upgrade

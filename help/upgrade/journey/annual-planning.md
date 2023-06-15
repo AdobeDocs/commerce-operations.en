@@ -1,7 +1,6 @@
 ---
 title: Annual Planning for Upgrades
 description: Review tips for creating an annual upgrade plan for your Adobe Commerce or Magento Open Source project.
-feature: Upgrade, schedule
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
 ---
 # Annual planning for upgrades

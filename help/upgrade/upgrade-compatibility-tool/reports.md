@@ -1,7 +1,6 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] reports'
 description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] on your Adobe Commerce project.
-feature: Upgrade, reports
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 ---
 # Reports

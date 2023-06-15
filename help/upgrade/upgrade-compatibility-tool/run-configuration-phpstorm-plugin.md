@@ -1,7 +1,6 @@
 ---
 title: Run configuration within the [!DNL Magento PHPStorm plugin]
 description: Follow this guide to use the [!DNL Upgrade Compatibility Tool] within the [!DNL Magento PHPStorm plugin].
-feature: Upgrade, PhpStorm
 exl-id: 8d5a0666-83c0-4249-8601-7d081acb9009
 ---
 # [!DNL Magento PHPStorm plugin]
