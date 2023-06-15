@@ -102,6 +102,17 @@ extensions:
           2.3.7: compatible
   - name: Audience Activation
     versions:
+      - name: 1.1.0
+        support:
+          2.4.7-beta1: compatible
+          2.4.6: compatible
+          2.4.5: compatible
+          2.4.4: compatible
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
       - name: 1.0.1
         support:
           2.4.7-beta1: compatible
@@ -227,6 +238,17 @@ extensions:
           2.3.7: supported
   - name: Catalog Service
     versions:
+      - name: 1.9
+        support:
+          2.4.7-beta1: compatible
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: not supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
       - name: 1.7
         support:
           2.4.7-beta1: compatible
@@ -341,6 +363,17 @@ extensions:
           2.3.7: not supported
   - name: Experience Platform Connector
     versions:
+      - name: 3.0.0-beta1
+        support:
+          2.4.7-beta1: supported
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: supported
+          2.4.2: not supported
+          2.4.1: not supported
+          2.4.0: not supported
+          2.3.7: not supported
       - name: 2.2.0
         support:
           2.4.7-beta1: compatible
@@ -701,6 +734,17 @@ extensions:
           2.3.7: not supported
   - name: Payment Services
     versions:
+      - name: 2.1.0
+        support:
+          2.4.7-beta1: compatible
+          2.4.6: supported
+          2.4.5: supported
+          2.4.4: supported
+          2.4.3: not compatible
+          2.4.2: not compatible
+          2.4.1: not compatible
+          2.4.0: not compatible
+          2.3.7: not supported
       - name: 2.0.0
         support:
           2.4.7-beta1: compatible
