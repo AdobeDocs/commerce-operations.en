@@ -15,4 +15,4 @@ During planning, you may want to ask yourself:
 - Am I checking that these customizations and extensions are not provided natively by Adobe and are not in an upcoming release? If they are, I might be able to save my company both install time and money.
 - Do I have any third-party integrations that may need maintenance during the upcoming year?
 
-To ensure that your team is on the right track, plan for an upgrade checkpoint midway through the year to review your plans, budget, timeline, and the team’s capacity.
+To ensure that your team is on the right track, plan for an upgrade checkpoint midway through the year to review your plans, budget, timeline, and the team's capacity.
