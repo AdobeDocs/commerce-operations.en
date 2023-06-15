@@ -17,4 +17,5 @@ feature: Best Practices
 - Advanced concepts {#performance-best-practices}
   - [Advanced setup](advanced-setup.md)
   - [Advanced [!DNL JavaScript] bundling](advanced-js-bundling.md)
+  - [Application Server for GraphQL APIs](application-server.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

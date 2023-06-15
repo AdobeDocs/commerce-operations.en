@@ -2,8 +2,8 @@
 title: bin/magento (Adobe Commerce on-premises)
 description: Learn about all available commands, arguments, and options for the Adobe Commerce bin/magento command-line tool.
 mini-toc-levels: 1
-exl-id: 06cd615b-94be-49d4-9bce-0a33ec9bfd5a
+badgeCoreBeta: label="2.4.7-beta1" type="informative" url="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html"
 ---
 # bin/magento (Adobe Commerce on-premises)
 
-{{$include /help/_includes/templated/reference/cli/commerce-on-premises.md}}
+{{$include /help/_includes/templated/reference/cli/commerce-on-premises-beta.md}}
