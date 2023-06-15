@@ -15,6 +15,29 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.33 {#v1-1-33}
+
+* **ACSD-50478** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.5) - Fixes the database rollback command for a case when the DB dump contains triggers and a *delimiter* SQL command.
+* **ACSD-50512** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the *Error: The downloadable link isn't related to the product. Verify the link and try again.* error that happens when updating the start date for a downloadable product staging update.
+* **ACSD-50949** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the price filter in Advanced search doesn't return proper results when used along the SKU filter.
+* **ACSD-51645** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the error thrown when saving a new Cart Price Rule if the extension Magento_OfflineShipping is disabled.
+* **ACSD-50895** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where Google Analytics 3 GTM tags are not fired if Google Analytics 4 GTM is not configured.
+* **ACSD-51102** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where a catalog rule that is applied to a large number of products is not correctly indexed when the rule is enabled by a scheduled update.
+* **ACSD-50368** (for Adobe Commerce and Magento Open Source >= 2.4.3 <2.4.5) - Fixes an issue where the customer's group_id is ignored when a customer is created via Async REST API or Async Bulk REST API.
+* **ACSD-51497** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >= 2.4.1 <2.4.7) - Fixes the issue where a customer can't sort a catalog page by Custom Attribute of the dropdown type.
+* **ACSD-51408** (for Adobe Commerce and Magento Open Source >=2.3.7 < 2.4.7) - Fixes the issue where the order item status is incorrectly set to Backordered.
+* **ACSD-51735** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where the order item status is incorrectly set to Ordered when the product stock is 0.
+* **ACSD-51792** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where a page does not have the impression event when Google Tag Manager 4 is enabled.
+* **ACSD-51471** (for Adobe Commerce >=2.4.3 <2.4.7) - Fixes the issue where an admin user cannot save a scheduled update for a bundled product that uses a simple product that itself has a scheduled update.
+* **ACSD-51700** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the error that happens when switching store views on a downloadable product edit page in the admin.
+* **ACSD-51120** (for Adobe Commerce >=2.3.7 <2.4.3) - Fixes the issue where GraphQL GET requests cache is not cleared for CMS pages that contain CMS blocks that are updated via a staging update.
+* **ACSD-51240** (for Adobe Commerce >=2.4.4 <2.4.6) - Fixes the issue where the uploaded file is missing if the registration is done via the company registration form.
+* **ACSD-51907** (for Adobe Commerce >=2.4.2 <2.4.3) - Fixes the issue where a restricted admin user cannot create a credit memo with an offline refund.
+* **ACSD-52148** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.4) - Fixes the issue where Google V3 reCAPTCHA Admin login fails occasionally.
+* **ACSD-51431** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where an indexer status is *working* even if there are no new entries in the changelog.
+* **ACSD-51431** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the performance issue where config files load multiple times during deployment.
+* Deprecated ACSD-51114.
+
 ## v1.1.32 {#v1-1-32}
 
 * **ACSD-49628** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the [!UICONTROL Page Builder's] multiple errors prevent admin from saving a product without content permissions.
