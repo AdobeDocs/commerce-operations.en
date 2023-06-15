@@ -1,6 +1,7 @@
 ---
 user-guide-title: Performance Best Practices
 user-guide-description: Optimize the performance of your Adobe Commerce or Magento Open Source production deployment using our recommendations.
+feature: Best Practices
 ---
 
 # Performance Best Practices {#performance-best-practices}

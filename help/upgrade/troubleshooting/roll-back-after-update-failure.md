@@ -1,6 +1,7 @@
 ---
 title: Roll back after module update failure
 description: Troubleshoot your Adobe Commerce or Magento Open Source upgrade after encountering a module update error.
+feature: Upgrade
 exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
 ---
 # Roll back after module update failure
