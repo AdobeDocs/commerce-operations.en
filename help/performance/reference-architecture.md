@@ -1,6 +1,7 @@
 ---
 title: Reference Architecture
 description: Review diagrams of the recommended reference architecture for Adobe Commerce and Magento Open Source deployments.
+feature: Best Practices, architecture
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 ---
 # Reference architecture

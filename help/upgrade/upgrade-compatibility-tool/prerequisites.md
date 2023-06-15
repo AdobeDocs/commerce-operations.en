@@ -1,7 +1,6 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] requirements'
 description: Verify that your system meets the necessary requirements to run the [!DNL Upgrade Compatibility Tool] in a command-line interface for your Adobe Commerce project.
-feature: Upgrade
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
 ---
 # Adobe Commerce access keys

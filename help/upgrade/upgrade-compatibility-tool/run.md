@@ -1,6 +1,7 @@
 ---
 title: Run the [!DNL Upgrade Compatibility Tool]
 description: Follow these steps to run the [!DNL Upgrade Compatibility Tool] in a command-line interface for your Adobe Commerce project.
+feature: Upgrade, Compatibiity Tool
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
 ---
 # Download the [!DNL Upgrade Compatibility Tool]
