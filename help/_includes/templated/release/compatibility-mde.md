@@ -205,6 +205,27 @@ Magento Open Source, but is not supported.
       <th colspan="10">Audience Activation</th>
     </tr>
     <tr>
+      <td>Audience Activation 1.1.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Audience Activation 1.0.1</td>
       <td>Compatible</span>
       </td>
@@ -446,6 +467,27 @@ Magento Open Source, but is not supported.
       <th colspan="10">Catalog Service</th>
     </tr>
     <tr>
+      <td>Catalog Service 1.9</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+    </tr>
+    <tr>
       <td>Catalog Service 1.7</td>
       <td>Compatible</span>
       </td>
@@ -664,6 +706,27 @@ Magento Open Source, but is not supported.
   <tbody>
     <tr>
       <th colspan="10">Experience Platform Connector</th>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 3.0.0-beta1</td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
+      <td>Not supported</span>
+      </td>
     </tr>
     <tr>
       <td>Experience Platform Connector 2.2.0</td>
@@ -1356,6 +1419,27 @@ Magento Open Source, but is not supported.
   <tbody>
     <tr>
       <th colspan="10">Payment Services</th>
+    </tr>
+    <tr>
+      <td>Payment Services 2.1.0</td>
+      <td>Compatible</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Supported</span>
+      </td>
+      <td>Not compatible</span>
+      </td>
+      <td>Not compatible</span>
+      </td>
+      <td>Not compatible</span>
+      </td>
+      <td>Not compatible</span>
+      </td>
+      <td>Not supported</span>
+      </td>
     </tr>
     <tr>
       <td>Payment Services 2.0.0</td>
