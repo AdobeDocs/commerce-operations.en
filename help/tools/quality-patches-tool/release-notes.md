@@ -27,7 +27,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51497** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >= 2.4.1 <2.4.7) - Fixes the issue where a customer can't sort a catalog page by Custom Attribute of the dropdown type.
 * **ACSD-51408** (for Adobe Commerce and Magento Open Source >=2.3.7 < 2.4.7) - Fixes the issue where the order item status is incorrectly set to *[!UICONTROL Backordered]*.
 * **ACSD-51735** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where the order item status is incorrectly set to *[!UICONTROL Ordered]* when the product stock is *0*.
-* **ACSD-51792** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where a page does not have the impression event when Google Tag Manager 4 is enabled.
+* **ACSD-51792** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where a page does not have the impression event when [!DNL Google Tag Manager] 4 is enabled.
 * **ACSD-51471** (for Adobe Commerce >=2.4.3 <2.4.7) - Fixes the issue where an admin user cannot save a scheduled update for a bundled product that uses a simple product that itself has a scheduled update.
 * **ACSD-51700** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the error that happens when switching store views on a downloadable product edit page in the admin.
 * **ACSD-51120** (for Adobe Commerce >=2.3.7 <2.4.3) - Fixes the issue where GraphQL GET requests cache is not cleared for CMS pages that contain CMS blocks that are updated via a staging update.
