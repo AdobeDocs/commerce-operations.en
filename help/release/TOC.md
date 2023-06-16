@@ -52,8 +52,6 @@ recommendations: noDisplay, noCatalog
 - Packages {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Adobe Commerce (Beta)](packages/adobe-commerce-beta.md)
-  - [Cloud packages for Adobe Commerce](packages/cloud.md)
-  - [Cloud packages for Adobe Commerce (Beta)](packages/cloud-beta.md)
   - [Magento Open Source](packages/magento-open-source.md)
   - [Magento Open Source (Beta)](packages/magento-open-source-beta.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
