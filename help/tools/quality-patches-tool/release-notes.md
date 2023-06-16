@@ -23,7 +23,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51645** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the error thrown when saving a new Cart Price Rule if the extension `Magento_OfflineShipping` is disabled.
 * **ACSD-50895** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where [!DNL Google Analytics] 3 GTM tags are not fired if [!DNL Google Analytics] 4 GTM is not configured.
 * **ACSD-51102** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where a catalog rule that is applied to a large number of products is not correctly indexed when the rule is enabled by a scheduled update.
-* **ACSD-50368** (for Adobe Commerce and Magento Open Source >= 2.4.3 <2.4.5) - Fixes an issue where the customer's group_id is ignored when a customer is created via Async REST API or Async Bulk REST API.
+* **ACSD-50368** (for Adobe Commerce and Magento Open Source >= 2.4.3 <2.4.5) - Fixes the issue where the customer's `group_id` is ignored when a customer is created via Async REST API or Async Bulk REST API.
 * **ACSD-51497** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >= 2.4.1 <2.4.7) - Fixes the issue where a customer can't sort a catalog page by Custom Attribute of the dropdown type.
 * **ACSD-51408** (for Adobe Commerce and Magento Open Source >=2.3.7 < 2.4.7) - Fixes the issue where the order item status is incorrectly set to Backordered.
 * **ACSD-51735** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where the order item status is incorrectly set to Ordered when the product stock is 0.
