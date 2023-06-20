@@ -24,7 +24,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### `--shell`, `-s`
 
-The shell type (&quot;bash&quot;)
+The shell type ("bash")
    
 -  Requires a value
 
@@ -37,7 +37,7 @@ An array of input tokens (e.g. COMP_WORDS or argv)
 
 ### `--current`, `-c`
 
-The index of the &quot;input&quot; array that the cursor is in (e.g. COMP_CWORD)
+The index of the "input" array that the cursor is in (e.g. COMP_CWORD)
    
 -  Requires a value
 
@@ -49,7 +49,7 @@ The version of the completion script
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -83,7 +83,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -107,7 +107,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-The shell type (e.g. &quot;bash&quot;), the value of the &quot;$SHELL&quot; env var will be used if this is not given
+The shell type (e.g. "bash"), the value of the "$SHELL" env var will be used if this is not given
    
 
 ### `--debug`
@@ -119,7 +119,7 @@ Tail the completion debug log
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -153,7 +153,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -198,7 +198,7 @@ To output raw command help
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -232,7 +232,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -282,7 +282,7 @@ To skip describing commands' arguments
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -316,7 +316,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -346,7 +346,7 @@ Path to resolve issues in.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -380,7 +380,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -421,7 +421,7 @@ Path of the file where the output will be exported (Json Format)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -455,7 +455,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -492,7 +492,7 @@ target version (e.g. 2.4.5).
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -526,7 +526,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -568,7 +568,7 @@ Path of the file where the output will be exported (JSON Format)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -602,7 +602,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -676,7 +676,7 @@ Execution context. This option is for integration purposes and does not affect t
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -710,7 +710,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
