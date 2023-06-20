@@ -53,7 +53,7 @@ The version of the completion script
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -123,7 +123,7 @@ Tail the completion debug log
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -202,7 +202,7 @@ To output raw command help
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -286,7 +286,7 @@ To skip describing commands' arguments
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -343,7 +343,7 @@ bin/magento admin:adobe-ims:disable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -424,7 +424,7 @@ Check if 2FA is enabled for Organization in Adobe Admin Console. Required when e
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -481,7 +481,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -538,7 +538,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -631,7 +631,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -695,7 +695,7 @@ The admin username to unlock
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -761,7 +761,7 @@ Space-separated list of config types or omit to dump all [scopes, system, themes
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -818,7 +818,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -875,7 +875,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -956,7 +956,7 @@ Password
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1028,7 +1028,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1100,7 +1100,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1172,7 +1172,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1244,7 +1244,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1307,7 +1307,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1378,7 +1378,7 @@ Do not process images marked as hidden from product page
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1435,7 +1435,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1499,7 +1499,7 @@ y\n
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1588,7 +1588,7 @@ Scope code for configuration, empty string by default
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1692,7 +1692,7 @@ Deprecated, use the --lock-env option instead.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1769,7 +1769,7 @@ Scope code (required only if scope is not `default`)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1840,7 +1840,7 @@ Install only the non-optional (default) tasks
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1897,7 +1897,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1973,7 +1973,7 @@ Add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2030,7 +2030,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2101,7 +2101,7 @@ Skips the clearing and regeneration of static content (generated code, preproces
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2158,7 +2158,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2222,7 +2222,7 @@ Class name
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2279,7 +2279,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2336,7 +2336,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2393,7 +2393,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2456,7 +2456,7 @@ Profiler type
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2513,7 +2513,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2591,7 +2591,7 @@ Include call stack. [true\|false]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2685,7 +2685,7 @@ Theme: [Vendor/theme]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2742,7 +2742,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2799,7 +2799,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2856,7 +2856,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2928,7 +2928,7 @@ Additional arguments for PHPUnit. Example: "-c'--filter=MyTest'" (no spaces)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2999,7 +2999,7 @@ Format in which catalog will be generated. Supported: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3076,7 +3076,7 @@ Overwrite XML file
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3142,7 +3142,7 @@ Domains name
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3208,7 +3208,7 @@ Domain names
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3265,7 +3265,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3322,7 +3322,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3396,7 +3396,7 @@ A description of your provider.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3453,7 +3453,7 @@ bin/magento events:generate:module
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3524,7 +3524,7 @@ The number of levels in the event payload to return
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3581,7 +3581,7 @@ bin/magento events:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3645,7 +3645,7 @@ Module name
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3702,7 +3702,7 @@ bin/magento events:metadata:populate
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3800,7 +3800,7 @@ Expedites the transmission of this event. Specify this option for events that ne
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3864,7 +3864,7 @@ Delete events metadata no longer required
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3928,7 +3928,7 @@ Event code to unsubscribe from
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4004,7 +4004,7 @@ Use the --magento parameter to parse the current Magento codebase. Omit the para
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4088,7 +4088,7 @@ Use the --allow-duplicates parameter to allow saving duplicates of translate. Ot
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4162,7 +4162,7 @@ Take code and configuration files backup (excluding temporary files)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4219,7 +4219,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4285,7 +4285,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4351,7 +4351,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4419,7 +4419,7 @@ Indexer dimension modes catalog_product_price          none,website,customer_gro
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4490,7 +4490,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4556,7 +4556,7 @@ Space-separated list of index types or omit to apply to all indexes (catalog_pro
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4622,7 +4622,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4688,7 +4688,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4745,7 +4745,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4802,7 +4802,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4859,7 +4859,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4923,7 +4923,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4987,7 +4987,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5051,7 +5051,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5108,7 +5108,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5165,7 +5165,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5223,7 +5223,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `compensations`
 
-List of compensation arguments in format "<ORDER_INCREMENT_ID>:<SKU>:<QUANTITY>:<STOCK-ID>"
+List of compensation arguments in format "\<ORDER_INCREMENT_ID>:\<SKU>:\<QUANTITY>:\<STOCK-ID>"
    
 -  Default: `[]`
    
@@ -5238,7 +5238,7 @@ Raw output
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5323,7 +5323,7 @@ Raw output
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5390,7 +5390,7 @@ List of country codes to import
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5476,7 +5476,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5546,7 +5546,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5616,7 +5616,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5679,7 +5679,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5736,7 +5736,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5793,7 +5793,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5850,7 +5850,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5943,7 +5943,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6036,7 +6036,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6122,7 +6122,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6237,7 +6237,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6317,7 +6317,7 @@ Revision
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6374,7 +6374,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6431,7 +6431,7 @@ bin/magento queue:consumers:restart
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6532,7 +6532,7 @@ The file path for saving PID (This option is deprecated, use --single-thread ins
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6589,7 +6589,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6666,7 +6666,7 @@ Force to cleanup feed indexer table before sync.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6730,7 +6730,7 @@ Update composer.json without executing composer update
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6794,7 +6794,7 @@ Update composer.json without executing composer update
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6851,7 +6851,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6908,7 +6908,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6965,7 +6965,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7035,7 +7035,7 @@ Secret
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7092,7 +7092,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7162,7 +7162,7 @@ Provider code
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7247,7 +7247,7 @@ magento bootstrap init params
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7331,7 +7331,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7975,7 +7975,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8038,7 +8038,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8122,7 +8122,7 @@ Find out what type of patch should be generated. Available values: `data`, `sche
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8186,7 +8186,7 @@ Name of the module where whitelist will be generated
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8296,7 +8296,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8397,7 +8397,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8498,7 +8498,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8568,7 +8568,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8631,7 +8631,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8688,7 +8688,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9571,7 +9571,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9642,7 +9642,7 @@ Skip reindex
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9723,7 +9723,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9949,7 +9949,7 @@ Do not compile parent themes. Supported only in quick and standard strategies.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10066,7 +10066,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10129,7 +10129,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10225,7 +10225,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10282,7 +10282,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10339,7 +10339,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10415,7 +10415,7 @@ Include logs
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10498,7 +10498,7 @@ Ignore sanitize
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10562,7 +10562,7 @@ Only check required console utilities
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10626,7 +10626,7 @@ Force
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10707,7 +10707,7 @@ Clear generated static view files.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10805,7 +10805,7 @@ Path to the file to write vcl
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the <info>list</info> command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
