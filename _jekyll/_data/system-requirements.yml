@@ -2,6 +2,7 @@
 2.4.7-beta1:
   Composer: '2.5'
   Elasticsearch: '8.5'
+  Elasticsearch Cloud: '8.6'
   OpenSearch: '2.5'
   MariaDB: '10.6'
   MySQL: '8.0'
