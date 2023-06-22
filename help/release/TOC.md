@@ -29,10 +29,13 @@ recommendations: noDisplay, noCatalog
     - [2.4.1](release-notes/open-source/2-4-1.md)
     - [2.4.0](release-notes/open-source/2-4-0.md) 
   - Security patch releases {#security-patches}
+    - [2.4.6-p2](release-notes/security/2-4-6-p2.md)
     - [2.4.6-p1](release-notes/security/2-4-6-p1.md)
+      [2.4.5-p4](release-notes/security/2-4-5-p4.md)
     - [2.4.5-p3](release-notes/security/2-4-5-p3.md)
     - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
     - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+    - [2.4.4-p5](release-notes/security/2-4-4-p5.md)
     - [2.4.4-p4](release-notes/security/2-4-4-p4.md)
     - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
     - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
