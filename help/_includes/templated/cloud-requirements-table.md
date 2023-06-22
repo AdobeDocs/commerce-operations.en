@@ -87,46 +87,46 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.6
+            n/a
       </td>
       <td>
-            8.5, 7.17
+            n/a
       </td>
       <td>
-            8.4, 7.17
+            n/a
       </td>
       <td>
-            7.17
+            n/a
       </td>
       <td>
-            7.17
+            n/a
       </td>
       <td>
-            7.17
+            n/a
       </td>
       <td>
-            7.17
+            n/a
       </td>
       <td>
-            7.17
+            n/a
       </td>
       <td>
-            7.17
+            n/a
       </td>
       <td>
-            7.16
+            n/a
       </td>
       <td>
-            7.16
+            n/a
       </td>
       <td>
-            7.16
+            n/a
       </td>
       <td>
-            7.16
+            n/a
       </td>
       <td>
-            7.16
+            n/a
       </td>
       <td>
             7.10
@@ -138,7 +138,7 @@
             7.7
       </td>
       <td>
-            7.6
+            7.6, 7.7
       </td>
     </tr>
     <tr>
