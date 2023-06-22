@@ -2,7 +2,7 @@
 2.4.7-beta1:
   Composer: '2.5'
   Elasticsearch: '8.5'
-  Elasticsearch Cloud: '8.6'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '2.5'
   MariaDB: '10.6'
   MySQL: '8.0'
@@ -20,6 +20,7 @@
 2.4.6-p1:
   Composer: '2.2'
   Elasticsearch: '8.5, 7.17'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '2.5'
   MariaDB: '10.6'
   MySQL: '8.0'
@@ -37,6 +38,7 @@
 2.4.6:
   Composer: '2.2'
   Elasticsearch: '8.4, 7.17'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '2.5'
   MariaDB: '10.6'
   MySQL: '8.0'
@@ -54,6 +56,7 @@
 2.4.5-p3:
   Composer: '2.2'
   Elasticsearch: '7.17'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0'
@@ -71,6 +74,7 @@
 2.4.5-p2:
   Composer: '2.2'
   Elasticsearch: '7.17'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -88,6 +92,7 @@
 2.4.5-p1:
   Composer: '2.2'
   Elasticsearch: '7.17'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -106,6 +111,7 @@
 2.4.5:
   Composer: '2.2'
   Elasticsearch: '7.17'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -124,6 +130,7 @@
 2.4.4-p4:
   Composer: '2.2'
   Elasticsearch: '7.17'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0'
@@ -141,6 +148,7 @@
 2.4.4-p3:
   Composer: '2.2'
   Elasticsearch: '7.17'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -158,6 +166,7 @@
 2.4.4-p2:
   Composer: '2.1'
   Elasticsearch: '7.16'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -175,6 +184,7 @@
 2.4.4-p1:
   Composer: '2.1'
   Elasticsearch: '7.16'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -192,6 +202,7 @@
 2.4.4:
   Composer: '2.1'
   Elasticsearch: '7.16'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -209,6 +220,7 @@
 2.4.3-p3:
   Composer: '1'
   Elasticsearch: '7.16'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -226,6 +238,7 @@
 2.4.3-p2:
   Composer: '1'
   Elasticsearch: '7.16'
+  Elasticsearch Cloud: 'n/a'
   OpenSearch: '1.2'
   MariaDB: '10.4'
   MySQL: '8.0*'
@@ -282,6 +295,7 @@
 2.4.0:
   Composer: '1'
   Elasticsearch: '7.6'
+  Elasticsearch Cloud: '7.6, 7.7'
   MariaDB: '10.2, 10.3, 10.4'
   MySQL: '5.7, 8.0'
   PHP: '7.3, 7.4'
