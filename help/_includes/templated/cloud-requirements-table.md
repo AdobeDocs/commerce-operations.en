@@ -87,46 +87,46 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
-            n/a
+          --
       </td>
       <td>
             7.10

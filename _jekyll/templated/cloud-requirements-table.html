@@ -32,8 +32,6 @@
         {%- for requirement in requirements %}
       <td>{%- if requirement[1]['Elasticsearch Cloud'] %}
             {{requirement[1]['Elasticsearch Cloud']}}
-          {%- elsif requirement[1]['Elasticsearch']%}
-            {{requirement[1]['Elasticsearch']}}
           {%- else %}
           --
           {%- endif %}
