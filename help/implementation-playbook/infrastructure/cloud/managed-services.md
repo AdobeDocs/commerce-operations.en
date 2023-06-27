@@ -2,7 +2,7 @@
 title: Managed Services
 description: Review the responsibilities of Adobe Managed Services, customers, and cloud service providers for your Adobe Commerce on cloud infrastructure implementation.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
-feature: Services
+feature: Cloud, Services
 ---
 # Managed services
 

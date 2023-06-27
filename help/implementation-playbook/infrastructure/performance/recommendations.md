@@ -3,6 +3,7 @@ title: Performance Optimization Recommendations
 description: Optimize the the performance of your Adobe Commerce implementation by following these recommendations.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
+topic: Performance
 ---
 # Performance optimization review
 
