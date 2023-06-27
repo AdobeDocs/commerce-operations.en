@@ -15,7 +15,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe Blog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Adobe Security Bulletin</a></li>
+            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe Security Bulletin</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Release notes</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Solutions Partner Portal</a></li>

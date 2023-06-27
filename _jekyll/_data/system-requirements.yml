@@ -242,6 +242,7 @@
 2.4.3:
   Composer: '1'
   Elasticsearch: '7.10'
+  Elasticsearch Cloud: '7.10'
   MariaDB: '10.4'
   MySQL: '8.0*'
   PHP: '7.4'
@@ -258,6 +259,7 @@
 2.4.2:
   Composer: '1'
   Elasticsearch: '7.9'
+  Elasticsearch Cloud: '7.9'
   MariaDB: '10.4'
   MySQL: '8.0*'
   PHP: '7.4'
@@ -270,6 +272,7 @@
 2.4.1:
   Composer: '1'
   Elasticsearch: '7.7'
+  Elasticsearch Cloud: '7.7'
   MariaDB: '10.4'
   MySQL: '8.0*'
   PHP: '7.4'
@@ -281,6 +284,7 @@
 2.4.0:
   Composer: '1'
   Elasticsearch: '7.6'
+  Elasticsearch Cloud: '7.6, 7.7'
   MariaDB: '10.2, 10.3, 10.4'
   MySQL: '5.7, 8.0'
   PHP: '7.3, 7.4'

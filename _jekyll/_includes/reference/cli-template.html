@@ -24,7 +24,7 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 
 ## `{{ command.name }}`
 
-{{ command.description | xml_escape }}
+{{ command.description | replace: '<', '\<' }}
 
 {%- for usage in command.usage %}
 {% if app.name contains 'Cloud' %}
@@ -44,7 +44,7 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 
 ### `{{ item.name }}`
 
-{{ item.description | xml_escape }}
+{{ item.description | replace: '<', '\<' }}
    {% unless item.default == nil %}
    {%- if item.default == false or (item.default == empty and item.default != '') %}
 -  Default: `{{ item.default | inspect }}`
@@ -72,7 +72,7 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 
 {%- endif %}
 
-{{ opt.description | replace: '|', '\|' | xml_escape }}
+{{ opt.description | replace: '<', '\<' | replace: '|', '\|' }}
    {% unless opt.default == nil %}
    {%- if opt.default == false or opt.default == empty and opt.default != '' %}
 -  Default: `{{ opt.default | inspect }}`
