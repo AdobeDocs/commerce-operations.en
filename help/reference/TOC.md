@@ -1,6 +1,7 @@
 ---
 user-guide-title: Command-line tools reference
 user-guide-description: Learn about all available commands, arguments, and options for Adobe Commerce and Magento Open Source command-line tools.
+feature: Configuration
 ---
 
 # Command-Line Tools Reference {#reference}

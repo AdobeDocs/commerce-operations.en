@@ -2,6 +2,7 @@
 title: Data migration settings
 description: Learn how to start migrating settings from Magento 1 to Magento 2 with the [!DNL Data Migration Tool].
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
+topic: Commerce, Migration
 ---
 # Data migration settings
 

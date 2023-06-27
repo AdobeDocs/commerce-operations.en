@@ -2,6 +2,7 @@
 title: Customize the [!DNL Data Migration Tool]
 description: Learn how to customize the [!DNL Data Migration Tool] to transfer data created by extensions between Magento 1 and Magento 2.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
+topic: Commerce, Migration
 ---
 # Configure the [!DNL Data Migration Tool]
 
