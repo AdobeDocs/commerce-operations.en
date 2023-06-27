@@ -1,6 +1,7 @@
 ---
 title: Uninstall themes
 description: Follow these steps to uninstall an Adobe Commerce or Magento Open Source theme.
+feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
 ---
 # Uninstall themes
