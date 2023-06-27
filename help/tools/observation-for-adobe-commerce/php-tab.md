@@ -2,6 +2,7 @@
 title: The [!UICONTROL PHP] tab
 description: Learn about the [!UICONTROL PHP] tab of [!DNL Observation for Adobe Commerce].
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
+feature: Configuration, Observability
 ---
 # The [!UICONTROL PHP] tab
 

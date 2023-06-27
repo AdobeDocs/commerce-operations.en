@@ -2,6 +2,7 @@
 title: Commerce Integrations
 description: Equip your team with the tools that they need to delight your customers and ensure seamless day-to-day operations.
 exl-id: 52bfa6c7-0687-45de-8889-c529cea7d01a
+feature: Best Practices, Integration
 ---
 # Third-party integrations
 

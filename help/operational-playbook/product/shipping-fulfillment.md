@@ -2,6 +2,7 @@
 title: Shipping and Fulfillment
 description: Determine shipping methods and cost before completing your ecommerce project.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
+feature: Best Practices, Shipping/Delivery
 ---
 # Shipping and fulfillment
 

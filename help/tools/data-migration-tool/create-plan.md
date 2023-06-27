@@ -2,6 +2,7 @@
 title: Create a data migration plan
 description: Follow these steps to create a data migration plan to ensure a successful upgrade from Magento 1 to Magento 2.
 exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
+topic: Commerce, Migration
 ---
 # Create a data migration plan
 

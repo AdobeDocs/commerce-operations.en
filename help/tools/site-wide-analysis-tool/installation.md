@@ -2,6 +2,7 @@
 title: Install Guide
 description: Use this guide to install [!DNL Site-Wide Analysis Tool] for your website
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
+feature: Configuration, Install
 ---
 # Install Guide
 

@@ -2,6 +2,7 @@
 title: Accessing the [!DNL Observation for Adobe Commerce] nerdlet
 description: Learn how to access the [!DNL Observation for Adobe Commerce] nerdlet.
 exl-id: 4b6f554e-685b-465d-8676-b70e790606c6
+feature: Configuration, Observability
 ---
 # Accessing the [!DNL Observation for Adobe Commerce] nerdlet
 

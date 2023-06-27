@@ -2,6 +2,7 @@
 title: Checkout Flows and Process
 description: Boost conversion rates by providing your customers with a seamless checkout experience.
 exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
+feature: Best Practices, Checkout
 ---
 # Checkout flows and process
 
