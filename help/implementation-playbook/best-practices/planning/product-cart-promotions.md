@@ -2,8 +2,7 @@
 title: Best practices for configuring promotions
 description: Learn best practices for configuring sales rules and coupon codes to optimize Commerce store performance.
 role: User
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Price Rules, Shopping Cart
 exl-id: 6e177836-b8da-4e55-842c-e12ff54ffaf5
 ---
 # Best practices for configuring promotions

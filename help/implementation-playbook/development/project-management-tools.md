@@ -2,6 +2,7 @@
 title: Project Management Tools
 description: Choose recommended project management tools for your Adobe Commerce implementation.
 exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
+feature: System
 ---
 # Project management tools
 
@@ -25,7 +26,7 @@ Jira Service Management empowers development and operations teams to collaborate
 
 ## Document Management
 
-Confluence is great tool to build, organize, and collaborate on work in one place from virtually anywhere. Confluence comes equipped with best-practice templates,so you don’t need to reinvent the wheel. Get started easily and maintain consistency across teams and projects.
+Confluence is great tool to build, organize, and collaborate on work in one place from virtually anywhere. Confluence comes equipped with best-practice templates,so you don't need to reinvent the wheel. Get started easily and maintain consistency across teams and projects.
 
 ## Ticket Management
 

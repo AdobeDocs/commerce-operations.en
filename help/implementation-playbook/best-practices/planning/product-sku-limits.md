@@ -2,8 +2,7 @@
 title: Product limits best practices
 description: Learn best practices for configuring product Stock Keeping Units (SKUs) to maximize site performance.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Catalogs
 exl-id: 37af7b92-05ac-4a4f-9009-11e8d9f95c2f
 ---
 # Best practices for product SKU configuration

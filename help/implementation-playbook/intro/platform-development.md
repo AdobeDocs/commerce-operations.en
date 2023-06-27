@@ -2,6 +2,7 @@
 title: Principles of Platform Development
 description: Understand fundamental platform development principles when working with Adobe Commerce.
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
+feature: Cloud
 ---
 # Principles of platform development
 

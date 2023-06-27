@@ -2,6 +2,7 @@
 title: Cloud Infrastructure Regions
 description: Review diagrams that show the AWS and Azure regions available for Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
+feature: Cloud
 ---
 # Cloud regions
 

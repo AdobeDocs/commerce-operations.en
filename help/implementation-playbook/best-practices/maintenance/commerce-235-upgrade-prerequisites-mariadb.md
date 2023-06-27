@@ -2,7 +2,6 @@
 title: Adobe Commerce Upgrade prerequisites for MariaDB
 description: Learn how to prepare your Adobe Commerce database to upgrade MariaDB from a previous version.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
 ---
