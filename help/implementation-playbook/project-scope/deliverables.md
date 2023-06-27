@@ -2,6 +2,7 @@
 title: Deliverables
 description: Learn about the different deliverables associated with an Adobe Commerce implementation.
 exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
+feature: Best Practices
 ---
 # Deliverables 
 
@@ -17,7 +18,7 @@ A systems diagram should show data (for example, orders, products, third-party i
 
 ## Technical specifications
 
-This document defines the technical implementation approach and applicable details about all third-party integrations and systems that need to be modified. This can include APIs that don’t currently exist and need to be developed.
+This document defines the technical implementation approach and applicable details about all third-party integrations and systems that need to be modified. This can include APIs that don't currently exist and need to be developed.
 
 ## Data mapping
 
@@ -33,7 +34,7 @@ This is a finalized list of named third-party vendors to be integrated into the 
 
 ## Product data
 
-A review of an organization’s existing products, pricing, and inventory data as well as a plan to map data attributes used to populate Adobe Commerce.
+A review of an organization's existing products, pricing, and inventory data as well as a plan to map data attributes used to populate Adobe Commerce.
 
 ## Project plan
 

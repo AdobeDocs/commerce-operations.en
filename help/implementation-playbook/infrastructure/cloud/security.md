@@ -2,6 +2,7 @@
 title: Cloud Infrastructure Security
 description: Learn about how we keep Adobe Commerce on cloud infrastructure secure.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
+feature: Cloud, Security
 ---
 # Security
 
@@ -9,7 +10,7 @@ The Adobe Commerce Pro plan architecture is designed to provide a highly secure 
 
 ## Web browsers
 
-The bulk of the traffic going in and out of the cloud environment comes from  consumers' web browsers. Consumer traffic can be secured using HTTPS for all pages on the website (using either a shared SSL certification or the customer’s own SSL certificate for an additional fee). Checkout and account pages are always served using HTTPS. The best practice is to serve all pages under HTTPS.
+The bulk of the traffic going in and out of the cloud environment comes from  consumers' web browsers. Consumer traffic can be secured using HTTPS for all pages on the website (using either a shared SSL certification or the customer's own SSL certificate for an additional fee). Checkout and account pages are always served using HTTPS. The best practice is to serve all pages under HTTPS.
 
 ## Content delivery network (CDN)
 
@@ -17,15 +18,15 @@ Fastly provides a CDN and distributed denial of service (DDoS) protection. The F
 
 ## Web application firewall (WAF)
 
-The Fastly Web Application Firewall (WAF) is used to provide additional protection. Fastly’s cloud-based WAF uses third-party rules from commercial and open-source sources such as the OWASP Core Ruleset. In addition, Adobe Commerce-specific rules are employed. Customers are protected from key application-layer attacks, including injection attacks and malicious inputs, cross site scripting, data exfiltration, HTTP protocol violations, and other OWASP Top 10 threats.
+The Fastly Web Application Firewall (WAF) is used to provide additional protection. Fastly's cloud-based WAF uses third-party rules from commercial and open-source sources such as the OWASP Core Ruleset. In addition, Adobe Commerce-specific rules are employed. Customers are protected from key application-layer attacks, including injection attacks and malicious inputs, cross site scripting, data exfiltration, HTTP protocol violations, and other OWASP Top 10 threats.
 
-The WAF rules are updated by Adobe Commerce should new vulnerabilities be detected allowing Managed Services to “virtually patch” security issues in advance of software patches. The Fastly WAF does not provide rate-limiting or bot-detection services. If desired, customers can license a third-party bot-detection service compatible with Fastly.
+The WAF rules are updated by Adobe Commerce should new vulnerabilities be detected allowing Managed Services to "virtually patch" security issues in advance of software patches. The Fastly WAF does not provide rate-limiting or bot-detection services. If desired, customers can license a third-party bot-detection service compatible with Fastly.
 
 ## Virtual Private Cloud (VPC)
 
 The Adobe Commerce Pro plan production environment is configured as a Virtual Private Cloud (VPC) so that production servers are isolated and have limited ability to connect into and out of the cloud environment. Only secure connections to the cloud servers are allowed. Secure protocols like SFTP or rsync can be used for file transfers.
 
-Customers can use SSH tunnels to secure communications with the application. Access to AWS PrivateLink can be provided for an additional fee. All connections to these servers are controlled using AWS Security Groups, a virtual firewall that limits connections to the environment. Customers’ technical resources may access these servers using SSH.
+Customers can use SSH tunnels to secure communications with the application. Access to AWS PrivateLink can be provided for an additional fee. All connections to these servers are controlled using AWS Security Groups, a virtual firewall that limits connections to the environment. Customers' technical resources may access these servers using SSH.
 
 ## Encryption
 
@@ -39,7 +40,7 @@ Managed Services conducts regular penetration tests of the Adobe Commerce cloud 
 
 ## Payment gateway
 
-Adobe Commerce requires payment gateway integrations where credit card data is passed directly from the consumer’s browser to the payment gateway. The card data is never available on any of the Adobe Commerce Pro plan Managed Services environments. Actions on the transactions by the ecommerce application are completed using a reference to the transaction from the gateway.
+Adobe Commerce requires payment gateway integrations where credit card data is passed directly from the consumer's browser to the payment gateway. The card data is never available on any of the Adobe Commerce Pro plan Managed Services environments. Actions on the transactions by the ecommerce application are completed using a reference to the transaction from the gateway.
 
 ## Adobe Commerce application
 
@@ -47,7 +48,7 @@ Adobe regularly tests the core application code for security vulnerabilities. Pa
 
 - Veracode Static and Dynamic Scanning
 - RIPS source code scanning
-- Trustwave’s and Alert Logic’s vulnerability scanning services
+- Trustwave's and Alert Logic's vulnerability scanning services
 - Burp Suite Pro
 - OWASPZAP
 - andSqlMap
@@ -86,7 +87,7 @@ GDPR is a legal framework that sets guidelines for the collection and processing
 
 Essentially, visitors must be notified of the data the site collects from them and explicitly consent to information gathering. Sites must notify visitors if personal data held by the site is breached.
 
-The merchant or company operating the site must also have a dedicated Data Protection Officer who oversees the site’s data security, and this individual (or website management team) should be available for contact should a visitor request that their data be erased.
+The merchant or company operating the site must also have a dedicated Data Protection Officer who oversees the site's data security, and this individual (or website management team) should be available for contact should a visitor request that their data be erased.
 
 GDPR also calls for any personally identifiable information (such as names, race, and date of birth) collected to be either anonymized or pseudonymized.
 

@@ -3,7 +3,6 @@ title: Configuration best practices for indexers
 description: Maintain and optimize site performance by following best practices for indexer configuration.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
 ---
 # Best practices for indexer configuration
