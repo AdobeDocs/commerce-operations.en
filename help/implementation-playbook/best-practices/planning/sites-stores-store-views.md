@@ -3,7 +3,6 @@ title: Best practices for configuring sites, stores, and store views
 description: Learn best practices for configuring sites, stores, and store view to maximize site performance.
 role: Admin
 feature: Best Practices
-feature-set: Commerce
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 ---
 # Best practice for configuring sites, stores, and store view

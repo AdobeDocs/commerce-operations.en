@@ -2,6 +2,7 @@
 title: Pre-Launch Steps
 description: Use our pre-launch checklists to ensure a smooth Adobe Commerce site implementation.
 exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
+feature: Deploy
 ---
 # Pre-launch steps
 

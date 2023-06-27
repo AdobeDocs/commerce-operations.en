@@ -2,6 +2,7 @@
 title: Implementation maintenance phase
 description: Learn about implementation best practices for the maintenance phase of Adobe Commerce projects.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
+feature: Best Practices
 ---
 # Maintenance phase
 

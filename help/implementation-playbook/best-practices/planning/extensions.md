@@ -2,8 +2,7 @@
 title: Extensions best practices
 description: Learn how to avoid performance issues caused by third-party Adobe Commerce extensions.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
 ---
 # Extensions best practices

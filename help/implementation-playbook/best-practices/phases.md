@@ -2,6 +2,7 @@
 title: Implementation phases
 description: Learn about best practices for the implementation phases of Adobe Commerce projects.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
+feature: Best Practices
 ---
 # Implementation best practices
 

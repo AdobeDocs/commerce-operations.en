@@ -2,6 +2,7 @@
 title: Project Implementation Methodology
 description: Get familiar with how Adobe Commerce software delivery works.
 exl-id: 579cd083-8b12-49ff-bc8a-8db1ca588d74
+feature: Build, Deploy
 ---
 # Project implementation methodology
 
