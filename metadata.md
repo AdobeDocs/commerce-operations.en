@@ -11,7 +11,7 @@ solution-title: Commerce
 solution: Commerce
 role: Admin, Developer
 level: Experienced
-topic: Administration, Commerce, Configuration, Development, Performance, Upgrade
+topic: Administration, Commerce, Development, Performance, Upgrade
 ---
 
 # Metadata for internal use
