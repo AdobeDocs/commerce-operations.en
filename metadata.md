@@ -1,17 +1,17 @@
 ---
-product: magento
+cloud: Experience Cloud
 description: Adobe Commerce Operational Guides
+feature-set: Commerce
 git-repo: https://github.com/AdobeDocs/commerce-operations.en
 index: yes
-mini-toc-levels: 2
-feature-set: Commerce
-type: Documentation
-cloud: Experience Cloud
-solution-title: Commerce
-solution: Commerce
-role: Admin, Developer
 level: Experienced
+mini-toc-levels: 2
+product: magento
+role: Admin, Developer
+solution: Commerce
+solution-title: Commerce
 topic: Administration, Commerce, Development
+type: Documentation
 ---
 
 # Metadata for internal use
