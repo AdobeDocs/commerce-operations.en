@@ -1,4 +1,10 @@
 ---
+#   To avoid any breaking changes in future for new services we can follow agreement & format if Cloud specific versions needed then use suffix Cloud
+# Something like:
+# <Commerce Version>
+#     <Service Name>: <Service Version>, <Service Version 2>
+#     <Service Name> Cloud: <Service Version>, <Service Version 2>
+
 2.4.7-beta1:
   Composer: '2.5'
   Elasticsearch: '8.5'
