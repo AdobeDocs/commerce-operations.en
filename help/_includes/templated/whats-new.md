@@ -4,6 +4,26 @@
 
 Learn about new documentation and significant updates to existing documentation.
 
+### June 23, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">System requirements</a> page in the <em>Installation Guide</em> with tabs to toggle between Cloud and On-premises dependencies.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3d56a01b91a71b1c615a28588e726f0b9e58abb0">3d56a0</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### June 13, 2023
 
 <table style="table-layout:auto;">
@@ -15,6 +35,12 @@ Learn about new documentation and significant updates to existing documentation.
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Add the June 2023 release to <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">Released versions</a>.</p>
+</td>
+      <td>technical</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8d7329c2496f4d322a83ec6bcf71ef956f4284c3">8d7329</a> (commit)</td>
+    </tr>
     <tr>
       <td><p>Added the following docs for Beta:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI (on-premises, Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Magento Open Source CLI (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Adobe Commerce packages (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud-beta.html">Cloud packages for Adobe Commerce (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Magento Open Source packages (Beta)</a></p>
 </td>

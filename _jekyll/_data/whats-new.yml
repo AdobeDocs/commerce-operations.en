@@ -1,8 +1,42 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Jun 12 17:20:06 2023
+updated: Wed Jun 28 09:08:01 2023
 entries:
+- description: Updated the [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    page in the _Installation Guide_ with tabs to toggle between Cloud and On-premises
+    dependencies.
+  versions: ''
+  type: major-update
+  date: June 23, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/580
+  merge_commit: 3d56a01b91a71b1c615a28588e726f0b9e58abb0
+  contributor: hguthrie
+  membership: false
+  labels:
+  - major-update
+- description: Add the June 2023 release to [Released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
+  versions: 2.4.7
+  type: technical
+  date: June 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/573
+  merge_commit: 8d7329c2496f4d322a83ec6bcf71ef956f4284c3
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.7
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.32 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: June 12, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/569
+  merge_commit: 96f6107732880601f3788ae73bebef3039aa85c3
+  contributor: poltorat
+  membership: false
+  labels:
+  - major-update
 - description: Added the following docs for Beta:<br/>- [Adobe Commerce CLI (on-premises,
     Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html)<br/>-
     [Magento Open Source CLI (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html)<br/>-
@@ -95,17 +129,6 @@ entries:
   labels:
   - major-update
   - 2.4.7
-- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
-    for the 1.1.32 Quality Patches Tool (QPT) package release.
-  versions: ''
-  type: major-update
-  date: June 12, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/569
-  merge_commit: 96f6107732880601f3788ae73bebef3039aa85c3
-  contributor: poltorat
-  membership: false
-  labels:
-  - major-update
 - description: Added a [instructions](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html)
     for accessing the Site-Wide Analysis Tool from the tool's domain (`https://supportinsights.adobe.com/commerce`).
   versions: ''
