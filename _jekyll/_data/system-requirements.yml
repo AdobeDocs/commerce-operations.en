@@ -1,4 +1,10 @@
 ---
+# To avoid introducing breaking changes in tools that use this file (e.g., SWAT recommendations), we must follow an agreed upon convention & format for new services. For example, if cloud-specific versions need to be added, then we must use the "Cloud" suffix.
+# Something like:
+# <Commerce Version>
+#     <Service Name>: <Service Version>, <Service Version 2>
+#     <Service Name> Cloud: <Service Version>, <Service Version 2>
+
 2.4.7-beta1:
   Composer: '2.5'
   Elasticsearch: '8.5'
