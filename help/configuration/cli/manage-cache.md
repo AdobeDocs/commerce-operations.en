@@ -115,7 +115,7 @@ Sample result:
 
 >[!NOTE]
 >
->Multiple pages cache can be invalidated **_automatically_**. For example, when the product is assigned to the category, or when the [!UICONTROL related product rule] is modified.
+>Multiple pages cache can be invalidated simultaneously and automatically **_without_** these entities editing. For example, when any product in the catalog is assigned to any category, or when any [!UICONTROL related product rule] is modified.
 
 To purge out-of-date items from the cache, you can _clean_ or _flush_ cache types:
 
