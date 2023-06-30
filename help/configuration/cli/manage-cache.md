@@ -113,6 +113,10 @@ Sample result:
 
 ## Clean and flush cache types
 
+>[!NOTE]
+>
+>Multiple pages cache can be invalidated **_automatically_**. For example, when the product is assigned to the category, or when the [!UICONTROL related product rule] is modified.
+
 To purge out-of-date items from the cache, you can _clean_ or _flush_ cache types:
 
 -  Cleaning a cache type deletes all items from enabled Commerce cache types only. In other words, this option does not affect other processes or applications because it cleans only the cache that Commerce uses.
