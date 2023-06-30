@@ -25,7 +25,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51636** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the company admin cannot add new users from the customer account section despite having all necessary roles and permissions.
 * **ACSD-51739** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where an error is returned when the `structure_id` is requested in a CompanyTeam GraphQL request.
 * **ACSD-51857** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the slow performance of the `aggregate_sales_report_bestsellers_data` cron report on large sales_order and `sales_order_item` database tables was due to the way the main data query was written.
-* **ACSD-48448** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where there is a race condition issue happening during the order cancellations, which cause duplicated entry in the `inventory_reservation` table.
+* **ACSD-48448** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where there is a race condition issue happening during the order cancellations, which causes a duplicated entry in the `inventory_reservation` table.
 * **ACSD-52689** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.6) - Fixes the issue where images cannot be uploaded to Amazon S3 storage using REST API.
 * **B2B-2674** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Add caching capability to the 1customAttributeMetadata1 GraphQL query.
 * Added new versions for ACSD-44938.
