@@ -2,7 +2,7 @@
 
 >[!NOTE]
 >
-><sup>*</sup>Versions 2.4.5 and earlier support MySQL 8.0.28 and earlier only.
+><sup>*</sup>Versions 2.4.4 and 2.4.5 support MySQL 8.0.0 through 8.0.28 only.
 
 <table style="table-layout:auto">
   <thead>
@@ -271,9 +271,6 @@
             8.0
       </td>
       <td>
-            8.0
-      </td>
-      <td>
             8.0*
       </td>
       <td>
@@ -283,7 +280,10 @@
             8.0*
       </td>
       <td>
-            8.0
+            8.0*
+      </td>
+      <td>
+            8.0*
       </td>
       <td>
             8.0*
