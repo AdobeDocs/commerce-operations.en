@@ -46,7 +46,7 @@ Your on-premises infrastructure must meet the following requirements before inst
   >
   >Adobe Commerce is not supported on [!DNL Microsoft Windows] or [!DNL macOS].
 
-- Adobe Commerce 2.4.1 or later
+- Adobe Commerce 2.4.5-p1 or later (due to the dependency of Service Connector)
 
 - [!DNL Commerce Services Connector extension]
 
