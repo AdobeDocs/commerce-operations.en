@@ -1,6 +1,8 @@
 ---
 user-guide-title: Performance Best Practices
 user-guide-description: Optimize the performance of your Adobe Commerce or Magento Open Source production deployment using our recommendations.
+feature: Best Practices
+topic: Administration, Commerce, Development, Performance
 ---
 
 # Performance Best Practices {#performance-best-practices}
@@ -16,4 +18,5 @@ user-guide-description: Optimize the performance of your Adobe Commerce or Magen
 - Advanced concepts {#performance-best-practices}
   - [Advanced setup](advanced-setup.md)
   - [Advanced [!DNL JavaScript] bundling](advanced-js-bundling.md)
+  - [Application Server for GraphQL APIs](application-server.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

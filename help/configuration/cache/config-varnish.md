@@ -1,6 +1,7 @@
 ---
 title: Configure and use Varnish
 description: Understand how Varnish stores files and improves HTTP traffic.
+feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 ---
 # Configure Varnish

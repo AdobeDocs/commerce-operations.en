@@ -2,6 +2,7 @@
 title: Pricing
 description: Learn about different electronic payment methods and the benefits of online payments in general.
 exl-id: d2dd1a6d-0a75-433e-88cd-74bffcc47594
+feature: Best Practices, Payments
 ---
 # Pricing
 

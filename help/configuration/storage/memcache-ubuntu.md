@@ -1,6 +1,7 @@
 ---
 title: Set up memcached on Ubuntu
 description: Install and configure memcached on Ubuntu.
+feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
 ---
 # Set up memcached on Ubuntu

@@ -2,6 +2,7 @@
 title: Content Strategy
 description: Leverage your content to build engaging campaigns that engage your customers.
 exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
+feature: Best Practices, Page Content
 ---
 # Content strategy
 

@@ -1,6 +1,7 @@
 ---
 title: Configuration Best Practices
 description: Optimize the response time of your Adobe Commerce or Magento Open Source deployment using these best practices.
+feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
 ---
 # Configuration best practices
@@ -34,6 +35,31 @@ There can be times when intensive sales on a storefront occur at the same time t
 >[!WARNING]
 >
 >The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
+
+## Asynchronous configuration save [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Available in 2.4.7-beta1 only"}
+
+For projects with a large number of store-level configurations, saving a store configuration can take an inordinate amount of time or result in a timeout. The _Async Config_ module enables asynchronous configuration saves by running a cron job that uses a consumer to process the save in a message queue. AsyncConfig is **disabled** by default.
+
+You can enable AsyncConfig using the command-line interface:
+
+```bash
+bin/magento setup:config:set --config-async 1
+```
+
+The `set` command writes the following to the `app/etc/env.php` file:
+
+```conf
+...
+   'config' => [
+       'async' => 1
+   ]
+```
+
+Start the following Consumer to begin processing the messages in the queue on a first-in-first-out basis: 
+
+```bash
+bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+```
 
 ## Deferred stock update
 

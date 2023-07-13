@@ -1,6 +1,7 @@
 ---
 title: Prerequisites for deployment
 description: See a list of prerequisites for deploying Commerce into a development, build, or production system.
+feature: Configuration, Deploy
 exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
 ---
 # Prerequisites for development, build, and production systems

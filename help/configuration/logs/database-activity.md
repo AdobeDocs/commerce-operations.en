@@ -1,6 +1,7 @@
 ---
 title: Log database activity
 description: Configure Commerce to log database activity using the Logger interface.
+feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
 ---
 # Log database activity

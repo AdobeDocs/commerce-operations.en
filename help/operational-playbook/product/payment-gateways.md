@@ -2,6 +2,7 @@
 title: Payment Gateways
 description: Choose a payment gateway provider for your ecommerce project based on the needs of your business.
 exl-id: eab50191-0744-41da-99ba-2e06ea61da27
+feature: Best Practices, Payments
 ---
 # Payment gateways
 
@@ -9,7 +10,7 @@ There was a time when cash was the main source of transactions, but the online w
 
 ![Payment gateway provider logos](../../assets/playbooks/payment-gateways.png)
 
-A payment gateway is a service provider that connects and processes payments for ecommerce websites. They play a vital role in the customer buying experience and conversion rates. Complicated payment systems tend to make customers abandon their carts. It’s important to provide customers with an easy, user-friendly payment system where even if one payment method fails they have an alternative method to motivate them to complete the purchase.
+A payment gateway is a service provider that connects and processes payments for ecommerce websites. They play a vital role in the customer buying experience and conversion rates. Complicated payment systems tend to make customers abandon their carts. It's important to provide customers with an easy, user-friendly payment system where even if one payment method fails they have an alternative method to motivate them to complete the purchase.
 
 ## Review requirements
 

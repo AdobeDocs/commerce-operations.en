@@ -1,6 +1,7 @@
 ---
 title: Configure web server
 description: Learn how to configure your web server to work with Varnish.
+feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 ---
 # Configure your web server

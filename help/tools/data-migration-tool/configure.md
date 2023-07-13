@@ -2,6 +2,7 @@
 title: Configure the [!DNL Data Migration Tool]
 description: Learn about the two methods for configuring the [!DNL Data Migration Tool] to transfer data between Magento 1 and Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
+topic: Commerce, Migration
 ---
 # Configure the [!DNL Data Migration Tool]
 

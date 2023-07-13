@@ -5,7 +5,7 @@ exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 ---
 # Nginx
 
-Adobe Commerce supports nginx 1.18 (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
+Adobe Commerce supports nginx 1.x (or the [latest mainline version](https://nginx.org/en/linux_packages.html#mainline)). You must also install the latest version of `php-fpm`.
 
 Installation instructions vary based on which operating system that you are using. See [PHP](../php-settings.md) for information.
 

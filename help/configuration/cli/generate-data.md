@@ -1,6 +1,7 @@
 ---
 title: Generate data for performance testing
 description: Learn how to generate a large amount of data to use for performance testing.
+feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
 ---
 # Performance testing data

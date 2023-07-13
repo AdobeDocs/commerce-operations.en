@@ -2,6 +2,7 @@
 title: Platform Tools
 description: Choose recommended platform tools for your Adobe Commerce implementation.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
+feature: Configuration
 ---
 # Platform tools
 

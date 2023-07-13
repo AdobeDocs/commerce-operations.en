@@ -2,6 +2,7 @@
 title: Quality Control
 description: Learn about Adobe Commerce quality control processes related to implementation projects.
 exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
+feature: Build
 ---
 # Quality control process and tools
 

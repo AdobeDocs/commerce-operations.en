@@ -3,7 +3,6 @@ title: Scheduling Admin updates on production sites
 description: Learn best practices for scheduling critical updates to Adobe Commerce to prevent slow performance and outages.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
 ---
 # Best practices for scheduling Admin updates on production sites

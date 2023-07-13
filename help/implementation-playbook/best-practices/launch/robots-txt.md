@@ -2,7 +2,6 @@
 title: Best practices for configuring `robots.txt` and `sitemap.xml` files
 description: Learn how to pass instructions about your Adobe Commerce site to web crawlers.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
 ---

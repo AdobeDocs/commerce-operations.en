@@ -2,6 +2,7 @@
 title: The [!UICONTROL Elasticsearch] tab
 description: Learn about the [!UICONTROL Elasticsearch] tab of [!DNL Observation for Adobe Commerce].
 exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
+feature: Configuration, Observability
 ---
 # The [!UICONTROL Elasticsearch] tab
 
