@@ -45,3 +45,9 @@
 >[!NOTE]
 >
 >Starting with the 2.3.2 release, we will assign and publish indexed Common Vulnerabilities and Exposures (CVE) numbers with each security bug reported to us by external parties. This allows users to more easily identify unaddressed vulnerabilities in their deployment. You can learn more about CVE identifiers at [CVE](https://cve.mitre.org/).
+
+## Other release information {#other-release-info}
+
+>[!NOTE]
+>
+>Although code for enhancements and bug fixes described in these release notes is bundled with the Adobe Commerce core code, several of these projects (for example, B2B, Page Builder, and Progressive Web Applications (PWA) Studio) are also released independently. Bug fixes for these projects are documented in the separate, project-specific release information that is available in the documentation for each project. See [product release overview](/help/release/release-notes/overview.md).
