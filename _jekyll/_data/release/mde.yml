@@ -139,8 +139,8 @@ extensions:
     versions:
       - name: 1.4.0
         support:
-          2.4.7-beta1: compatible
-          2.4.6: supported
+          2.4.7-beta1: supported
+          2.4.6: compatible
           2.4.5: compatible
           2.4.4: compatible
           2.4.3: compatible

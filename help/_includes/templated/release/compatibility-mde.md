@@ -274,9 +274,9 @@ Magento Open Source, but is not supported.
     </tr>
     <tr>
       <td>B2B 1.4.0</td>
-      <td>Compatible</span>
-      </td>
       <td>Supported</span>
+      </td>
+      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
