@@ -166,3 +166,7 @@ To change the default store view base URL:
    >If you are setting up a base URL for Adobe Commerce on cloud infrastructure, you must replace the first period with three dashes. For example, if your base URL is `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, enter `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. Click **Save Config**.
+
+>[!INFO]
+>
+>The website, store and store view code can include only letters (a-z or A-Z), numbers (0-9) and underscores (_). Also, the first character must be a letter. If uppercase or camelcase is used, internally the match will be as case-insensitive in order to accommodate override of configuration settings through environments variables. See [Use environment variables to override configuration settings](../reference/override-config-settings.md#environment-variables) for more information on finding it.

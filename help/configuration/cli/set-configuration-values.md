@@ -283,3 +283,8 @@ Result:
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>The scope code can include only letters (a-z or A-Z), numbers (0-9) and underscores (_). Also, the first character must be a letter. If uppercase or camelcase is used when creating a new website or store view, internally the match will be as case-insensitive in order to accommodate override of configuration settings through environments variables. See [Use environment variables to override configuration settings](../reference/override-config-settings.md#environment-variables) for more information on finding it.
+
