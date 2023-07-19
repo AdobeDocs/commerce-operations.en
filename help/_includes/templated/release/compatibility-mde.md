@@ -278,19 +278,19 @@ Magento Open Source, but is not supported.
       </td>
       <td>Supported</span>
       </td>
-      <td>Compatible</span>
+      <td>Not supported</span>
       </td>
-      <td>Compatible</span>
+      <td>Not supported</span>
       </td>
-      <td>Compatible</span>
+      <td>Not supported</span>
       </td>
-      <td>Compatible</span>
+      <td>Not supported</span>
       </td>
-      <td>Compatible</span>
+      <td>Not supported</span>
       </td>
-      <td>Compatible</span>
+      <td>Not supported</span>
       </td>
-      <td>Compatible</span>
+      <td>Not supported</span>
       </td>
     </tr>
     <tr>
