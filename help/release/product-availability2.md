@@ -41,7 +41,7 @@ These Adobe Commerce modules have been decoupled from the core release process. 
 | **Adobe I/O Events for Adobe Commerce** |1.2.2 |1.2.2|1.2.2|-|  [Release Notes](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
 | **B2B** |1.4.0 |1.3.4|1.3.3|1.3.2| [User Guide](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html) |
 | **Channel Manager** | 2.0.0|1.0.0+|1.0.0+|1.0.0+| [User Guide](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) |
-| **Amazon Sales Channel**  |4.1.0+|4.3.0+|4.3.0+|4.3.0+||  [User Guide](https://experienceleague.adobe.com/docs/commerce-channels/amazon/overview.html) |
+| **Amazon Sales Channel**  |4.1.0+|4.3.0+|4.3.0+|4.3.0+|  [User Guide](https://experienceleague.adobe.com/docs/commerce-channels/amazon/overview.html) |
 | **Experience Platform Connector**  |1.0.0+|1.0.0+|1.0.0+|1.0.0+| [User Guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=en) |
-| **Quick Checkout** |1.0.0+|1.2.0+|1.0.0+|1.0.0-1.1.0|| [User Guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) |
+| **Quick Checkout** |1.0.0+|1.2.0+|1.0.0+|1.0.0-1.1.0| [User Guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) |
 | **Store Fulfillment for Adobe Commerce** |1.4.0| 1.2.0+|1.2.0+|1.2.0+| [User Guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/introduction.html) |
