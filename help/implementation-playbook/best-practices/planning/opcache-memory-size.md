@@ -3,7 +3,6 @@ title: Best Practice for OPcache memory size
 description: Describes how to avoid performance degradation by specific settings of OPcache memory consumption on Adobe Commerce projects.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
 ---
 # Best practice for OPcache memory size in Adobe Commerce

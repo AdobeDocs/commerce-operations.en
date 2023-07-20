@@ -1,6 +1,7 @@
 ---
 title: Best Practices
 description: Use Adobe-recommended best practices to manage the upgrade process for your Adobe Commerce and Magento Open Source projects.
+feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 ---
 # Best practices for upgrading

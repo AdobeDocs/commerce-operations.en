@@ -2,6 +2,7 @@
 title: Migrate changes
 description: Learn how to migrate only data that has changed since your last Magento 1 data migration with the [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
+topic: Commerce, Migration
 ---
 # Migrate changes
 

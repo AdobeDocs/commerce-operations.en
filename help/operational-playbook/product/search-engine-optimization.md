@@ -2,6 +2,7 @@
 title: Search Engine Optimization (SEO)
 description: Learn about the key differences between B2B and B2C SEO campaigns.
 exl-id: 7b1348b5-d379-48c1-9e9d-71a8d02b2ca4
+feature: Best Practices, Search
 ---
 # Search engine optimization (SEO)
 

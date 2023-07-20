@@ -2,6 +2,7 @@
 title: Marketing
 description: Promote your products and attract customers through ecommerce marketing campaigns.
 exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
+feature: Best Practices, Promotions/Events
 ---
 # Email marketing
 

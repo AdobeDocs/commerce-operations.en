@@ -2,7 +2,6 @@
 title: Best practices to resolve database performance issues
 description: Learn how to fix database issues that slow performance on Adobe Commerce sites deployed on cloud infrastructure.
 role: Developer, Admin
-feature-set: Commerce
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
 ---

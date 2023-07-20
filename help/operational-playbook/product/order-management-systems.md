@@ -2,6 +2,7 @@
 title: Order Management Systems
 description: Complete your ecommerce project with a system for packaging, shipping, and returns.
 exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
+feature: Best Practices, Orders
 ---
 # Order management system (OMS)
 
@@ -56,7 +57,7 @@ Order management in B2B businesses is intricate compared to B2C business. B2B bu
 
 ## Process for B2B
 
-- The sales representative enters the customer’s order details into the OMS or the customer can also place an order online, which will send the order details to the OMS
+- The sales representative enters the customer's order details into the OMS or the customer can also place an order online, which will send the order details to the OMS
 
 - The customer receives the order confirmation
 

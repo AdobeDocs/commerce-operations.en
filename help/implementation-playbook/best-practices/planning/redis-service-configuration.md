@@ -2,8 +2,7 @@
 title: Best practices for Redis service configuration
 description: Learn how to improve caching performance by using the extended Redis cache implementation for Adobe Commerce.
 role: Developer, Admin
-feature-set: Commerce
-feature: Best Practices
+feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 ---
 # Best practices for Redis service configuration

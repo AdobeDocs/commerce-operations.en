@@ -1,6 +1,7 @@
 ---
 title: AWS OpenSearch
 description: Follow these steps to configure the AWS OpenSearch web service for on-premises installations of Adobe Commerce and Magento Open Source.
+feature: Install, Search
 exl-id: 39ca7fd0-e21f-4f14-bda6-ff00a61a1a4d
 ---
 # AWS OpenSearch

@@ -2,6 +2,7 @@
 title: Performance Benchmarks
 description: Review performance benchmark results for Adobe Commerce implementations hosted on Adobe cloud infrastructure.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
+feature: Cloud
 ---
 # Benchmark Summary
 

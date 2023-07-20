@@ -2,6 +2,7 @@
 title: The [!UICONTROL Indexing] tab
 description: Learn about the [!UICONTROL Indexing] tab of [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
+feature: Configuration, Observability
 ---
 # The [!UICONTROL Indexing] tab
 

@@ -8,6 +8,7 @@ doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13
 exl-id: 95ff0c79-21d0-4514-991c-d88f616db68f
+feature: Install
 ---
 # Self-hosting Adobe Commerce Performance Tips
 

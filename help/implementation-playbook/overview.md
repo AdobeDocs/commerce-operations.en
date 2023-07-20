@@ -2,6 +2,7 @@
 title: Implementation Playbook
 description: Objective of the Commerce implementation playbook
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
+feature: Best Practices, Cloud, Integration
 ---
 # Implementation playbook
 

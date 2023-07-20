@@ -2,6 +2,7 @@
 title: Requirement Checklists
 description: Use this list of comprehensive questions to help you prepare for an Adobe Commerce implementation.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
+feature: Best Practices
 ---
 # Requirement Checklists
 
@@ -279,7 +280,7 @@ Are there existing APIs that can be used?
 
 - Reward points
 
-- "Bill Me Later” – more commonly known as “Buy Now, Pay Later” as it's immediately billed but not paid yet
+- "Bill Me Later" – more commonly known as "Buy Now, Pay Later" as it's immediately billed but not paid yet
 
 - Will there be different product pricing on different websites?
 

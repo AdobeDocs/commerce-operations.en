@@ -2,6 +2,7 @@
 title: Infrastructure and Deployment Overview
 description: Get an overview of what we've taught you about the Adobe Commerce solution so far.
 exl-id: 8767bb83-9175-4a54-8c5c-c6af0931917c
+feature: Cloud, Deploy, Install
 ---
 # Overview
 

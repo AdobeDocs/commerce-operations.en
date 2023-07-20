@@ -2,6 +2,7 @@
 title: The [!UICONTROL bots] tab
 description: Learn about the [!UICONTROL bots] tab of [!DNL Observation for Adobe Commerce].
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
+feature: Configuration, Observability
 ---
 # The [!UICONTROL bots] tab
 

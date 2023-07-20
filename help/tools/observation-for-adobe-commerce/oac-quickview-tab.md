@@ -2,6 +2,7 @@
 title: The [!DNL QuickView] tab
 description: The [!DNL QuickView] tab explains the different alert types you may see including those on low disk pace and server usage.
 exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
+feature: Configuration, Observability
 ---
 # The [!DNL QuickView] tab
 
