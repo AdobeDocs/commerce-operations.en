@@ -35,7 +35,7 @@ It is recommended that merchants use the latest version of a service to ensure t
 
 | **Adobe Commerce Version** | 2.4.7-beta1| 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
 |-|-|-|-|-|-|-|
-| **Catalog Service for Adobe Commerce**  |-| 1.9  | 1.9 | 1.9 |-| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html)|
-| **Live Search**   |-| 3.01 | 3.01 | 3.01 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html)|
-| **Payment Services** |-| 2.10 | 2.10 | 2.10 |-|[Release Notes](https://commercemarketplace.adobe.com/magento-payment-services.html) |
-| **Product Recommendations**   |-| 5.0 | 5.0 | 5.0 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
+| **Catalog Service for Adobe Commerce**  | 1.9 | 1.9  | 1.9 | 1.9 |-| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html)|
+| **Live Search**   | 3.01 | 3.01 | 3.01 | 3.01 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html)|
+| **Payment Services** | 2.10 | 2.10 | 2.10 | 2.10 |-|[Release Notes](https://commercemarketplace.adobe.com/magento-payment-services.html) |
+| **Product Recommendations**   | 5.0 | 5.0 | 5.0 | 5.0 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
