@@ -14,15 +14,14 @@ Supported versions have been fully tested by Adobe. Supported versions are avail
 
 These Adobe Commerce modules have been decoupled from the core release process. This allows Adobe to release iterations of these modules faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
 
-| **Adobe Commerce Version** | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
+| **Adobe Commerce Version** | 2.4.7-beta1| 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
 |-|-|-|-|-|-|
-| **Adobe I/O Events for Adobe Commerce** |1.2.2 |1.2.2|1.2.2|-|  [Release Notes](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| **B2B** |1.4.0 |1.3.4|1.3.3|1.3.2| [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
-| **Channel Manager** | 2.0.0|1.0.0+|1.0.0+|1.0.0+| [Release Notes](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
-| **Amazon Sales Channel**  |4.1.0+|4.3.0+|4.3.0+|4.3.0+|  [Release Notes](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
-| **Experience Platform Connector**  |1.0.0+|1.0.0+|1.0.0+|1.0.0+| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
-| **Quick Checkout** |1.0.0+|1.2.0+|1.0.0+|1.0.0-1.1.0| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) |
-| **Store Fulfillment for Adobe Commerce** |1.4.0| 1.2.0+|1.2.0+|1.2.0+| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
+| **Adobe I/O Events for Adobe Commerce** |1.2.2 |1.2.2 |1.2.2|1.2.2|-|  [Release Notes](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
+| **B2B** |1.3.5 |1.4.0 |1.3.4|1.3.3|1.3.2| [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| **Channel Manager** |- | 2.0.0|1.0.0+|1.0.0+|1.0.0+| [Release Notes](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
+| **Amazon Sales Channel**  |-|4.1.0+|4.3.0+|4.3.0+|4.3.0+|  [Release Notes](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
+| **Experience Platform Connector**  |3.0.0-beta1 |1.0.0+|1.0.0+|1.0.0+|1.0.0+| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
+| **Store Fulfillment for Adobe Commerce** |-|1.4.0| 1.2.0+|1.2.0+|1.2.0+| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
 
 ## Commerce Services
 
@@ -34,9 +33,9 @@ It is recommended that merchants use the latest version of a service to ensure t
 * Services are considered compatible with earlier versions of Commerce 2.4.x but are not officially supported.
 * Services are not compatible with Commerce 2.3.x, except for Product Recommendations 3.3.7 and earlier.
 
-| **Adobe Commerce Version** | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
+| **Adobe Commerce Version** | 2.4.7-beta1| 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
 |-|-|-|-|-|-|
-| **Catalog Service for Adobe Commerce**  | 1.9  | 1.9 | 1.9 |-| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html)|
-| **Live Search**   | 3.01 | 3.01 | 3.01 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html)|
-| **Payment Services** | 2.10 | 2.10 | 2.10 |-|[Release Notes](https://commercemarketplace.adobe.com/magento-payment-services.html) |
-| **Product Recommendations**   | 5.0 | 5.0 | 5.0 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
+| **Catalog Service for Adobe Commerce**  |-| 1.9  | 1.9 | 1.9 |-| [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html)|
+| **Live Search**   |-| 3.01 | 3.01 | 3.01 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html)|
+| **Payment Services** |-| 2.10 | 2.10 | 2.10 |-|[Release Notes](https://commercemarketplace.adobe.com/magento-payment-services.html) |
+| **Product Recommendations**   |-| 5.0 | 5.0 | 5.0 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
