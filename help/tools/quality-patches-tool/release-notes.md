@@ -38,7 +38,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-50815** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where decimal quantity for a simple product cannot be used for a new Bundled product option.
 * Updated versions for ACSD-47803.
 * Updated title for ACSD-51892.
-* Updated ACSD-51379
+* Updated ACSD-51379.
 * Updated ACSD-49970-V2
 
 ## v1.1.34 {#v1-1-34}
