@@ -19,7 +19,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 * **ACSD-51899** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the default shipping address on the checkout shipping step is auto-populated with a previously selected in-store pickup address.
 * **ACSD-52041** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the error message: *[ERROR] [!DNL Page Builder] was rendering for 5 seconds without releasing locks.* appears in Chrome browser when saving content edited with [!DNL Page Builder].
-* **ACSD-52095** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where the "manage_stock" value was incorrectly set to 0 in the CSV file after product export.
+* **ACSD-52095** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where the `manage_stock` value was incorrectly set to 0 in the CSV file after product export.
 * **ACSD-51358** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where removing a scheduled update without an end date leads to removing other scheduled updates for the same entity.
 * **ACSD-48070** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where editing a scheduled update triggers an exception.
 * **ACSD-51890** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the Submit review button can be clicked multiple times without Google reCAPTCHA v3 validation.
