@@ -1,0 +1,74 @@
+---
+version: 2.4.6
+default:
+  - bcmath
+  - bz2
+  - calendar
+  - exif
+  - gd
+  - gettext
+  - intl
+  - mysqli
+  - pcntl
+  - pdo_mysql
+  - soap
+  - sockets
+  - sysvmsg
+  - sysvsem
+  - sysvshm
+  - opcache
+  - zip
+installed:
+  - ctype
+  - curl
+  - date
+  - dom
+  - fileinfo
+  - filter
+  - ftp
+  - hash
+  - iconv
+  - json
+  - mbstring
+  - mysqlnd
+  - openssl
+  - pcre
+  - pdo
+  - pdo_sqlite
+  - phar
+  - posix
+  - readline
+  - session
+  - sqlite3
+  - tokenizer
+  - xml
+  - xmlreader
+  - xmlwriter
+available:
+  - geoip
+  - gmp
+  - igbinary
+  - imagick
+  - imap
+  - ioncube
+  - ldap
+  - mailparse
+  - mcrypt
+  - msgpack
+  - mysqli
+  - oauth
+  - pdo_mysql
+  - propro
+  - pspell
+  - raphf
+  - recode
+  - redis
+  - shmop sockets
+  - sodium
+  - ssh2
+  - tidy
+  - xdebug
+  - xmlrpc
+  - xsl
+  - yaml
+  

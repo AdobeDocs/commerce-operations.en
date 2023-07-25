@@ -2,7 +2,6 @@
 title: MySQL triggers usage
 description: Learn how to use MySQL triggers effectively with Adobe Commerce.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: acac3e47-67c8-4eea-80e3-e26f2854391a
 ---

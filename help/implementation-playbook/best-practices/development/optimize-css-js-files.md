@@ -3,7 +3,6 @@ title: Optimize CSS and JS resource files
 description: Learn how to merge and minify CSS and JavaScript (JS) files for Adobe Commerce projects from the Admin or from the command line.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
 ---
 # Optimize resource files

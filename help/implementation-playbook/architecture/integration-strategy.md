@@ -2,10 +2,11 @@
 title: Adobe Commerce Integration Strategy
 description: Review integration strategies and options for your Adobe Commerce implementation.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
+feature: Integration
 ---
 # Adobe Commerce integration strategy
 
-The ability to integrate your platform is “non-negotiable.” Companies want their ecommerce platforms accessible from a variety of touchpoints and seamlessly integrated into their technology systems, especially their ERP. Customizability, global scalability, and affordability also play a role in final platform purchase.
+The ability to integrate your platform is "non-negotiable." Companies want their ecommerce platforms accessible from a variety of touchpoints and seamlessly integrated into their technology systems, especially their ERP. Customizability, global scalability, and affordability also play a role in final platform purchase.
 
 A holistic integration approach for both storefront and backend systems are supported by performant GraphQL APIs, comprehensive REST APIs, and batch-file import between Adobe Commerce and other systems or services.
 
@@ -41,4 +42,4 @@ Adobe Commerce provides three flexible integration options:
 
 ![Adobe Commerce integration options](../../assets/playbooks/integration-options.svg)
 
-Even though real-time integrations are usually desired, it’s not necessary for some scenarios. Adobe Commerce natively supports [!DNL RabbitMQ] as the message bus to enable asynchronous processes, which is recommended for some data that is not necessary to exchange in real time, but rather to update with batch-file exchange or REST batch data process API to process asynchronously.
+Even though real-time integrations are usually desired, it's not necessary for some scenarios. Adobe Commerce natively supports [!DNL RabbitMQ] as the message bus to enable asynchronous processes, which is recommended for some data that is not necessary to exchange in real time, but rather to update with batch-file exchange or REST batch data process API to process asynchronously.

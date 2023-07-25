@@ -1,0 +1,38 @@
+---
+---
+# PHP extensions for Cloud
+
+<table style="table-layout:auto">
+    <thead>
+      <tr>
+        <th>
+            Default extensions
+        </th>
+        <th>
+            Installed extensions that cannot be uninstalled
+        </th>
+        <th>
+            Extensions that can be installed and uninstalled as needed
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+            {%- for extension in site.data.cloud-php-extensions.default %}
+                {{ extension }}<br>
+            {%- endfor %}
+            </td>
+            <td>
+            {%- for extension in site.data.cloud-php-extensions.installed %}
+                {{ extension }}<br>
+            {%- endfor %}
+            </td>
+            <td>
+            {%- for extension in site.data.cloud-php-extensions.available %}
+                {{ extension }}<br>
+            {%- endfor %}
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -2,8 +2,7 @@
 title: Realpath cache size
 description: Learn how to optimize Adobe Commerce performance by updating the PHP readlpath cache configuration to use recommended settings.
 role: Developer
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Cache
 exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
 ---
 # Realpath cache configuration best practices

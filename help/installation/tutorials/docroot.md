@@ -1,6 +1,7 @@
 ---
 title: Modify docroot to improve security
 description: Prevent unauthorized browser-based access to Adobe Commerce or Magento Open Source on-premises file system.
+feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
 ---
 # Modify docroot to improve security

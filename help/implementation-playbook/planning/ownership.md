@@ -2,6 +2,7 @@
 title: Responsibility and Ownership
 description: Define project roles and responsibilities to ensure a successful Adobe Commerce implementation.
 exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
+feature: Best Practices
 ---
 # Responsibility and ownership
 

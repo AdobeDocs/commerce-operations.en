@@ -2,6 +2,7 @@
 title: The [!UICONTROL Alerts] tab
 description: Learn about the [!UICONTROL Alerts] tab of [!DNL Observation for Adobe Commerce].
 exl-id: e9305576-6ed2-48f3-baec-36e081b0d04b
+feature: Configuration, Observability
 ---
 # The [!UICONTROL Alerts] tab
 

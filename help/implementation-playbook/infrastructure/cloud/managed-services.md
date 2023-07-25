@@ -2,6 +2,7 @@
 title: Managed Services
 description: Review the responsibilities of Adobe Managed Services, customers, and cloud service providers for your Adobe Commerce on cloud infrastructure implementation.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
+feature: Cloud, Services
 ---
 # Managed services
 
@@ -59,4 +60,4 @@ The customer is primarily responsible for the security of their customized imple
 
 - The customer should perform penetration tests of their customized application. These responsibilities can be addressed by technical resources by the customer, implementation partners, or Adobe Commerce professional services.
 
-- Customers are responsible for the PCI requirements of their customized application and their own processes. The customer’s PCI compliance builds upon the PCI certifications of AWS and Adobe Commerce in order to minimize the areas that must be reviewed.
+- Customers are responsible for the PCI requirements of their customized application and their own processes. The customer's PCI compliance builds upon the PCI certifications of AWS and Adobe Commerce in order to minimize the areas that must be reviewed.

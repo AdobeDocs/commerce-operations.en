@@ -1,6 +1,7 @@
 ---
 user-guide-title: Operational Guides
 user-guide-description: Learn about the operational aspects of maintaining your Adobe Commerce or Magento Open Source application.
+feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 ---
 
 # Adobe Commerce Operational Guides {#operational-guides}
@@ -13,7 +14,7 @@ user-guide-description: Learn about the operational aspects of maintaining your 
 - [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
 - [Performance Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
 - [Tools](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [Command-Line Tools](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
+- [Command-Line Tools](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
 - [Implementation Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [Operational Playbook](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [Commerce at Scale](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)

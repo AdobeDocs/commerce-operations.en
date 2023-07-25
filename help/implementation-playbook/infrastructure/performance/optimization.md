@@ -2,6 +2,7 @@
 title: Performance Optimization
 description: Learn all about performance optimization and steps to take to review the performance of your Adobe Commerce implementation.
 exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
+feature: Cloud
 ---
 # Performance optimization
 
@@ -18,7 +19,7 @@ Performance is a big topic. When users experience a slow or unresponsive site, i
 
 The impact of a slow experience is usually defined by two indicators, and each factor can be caused for tons of reasons.
 
-High time-to-first-byte (TTFB) is usually regarded as an indicator that defines the server’s response speed. The time not only comes from source code execution for handling the request, but it can also be impacted by the following factors:
+High time-to-first-byte (TTFB) is usually regarded as an indicator that defines the server's response speed. The time not only comes from source code execution for handling the request, but it can also be impacted by the following factors:
 
 - DNS lookup
 - Slow queries from DB layer
