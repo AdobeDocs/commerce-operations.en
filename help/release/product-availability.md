@@ -12,7 +12,7 @@ Supported versions have been fully tested by Adobe. Supported versions are avail
 
 ## Adobe Authored Extensions
 
-These Adobe Commerce modules have been decoupled from the core release process. This allows Adobe to release iterations of these modules faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
+These Adobe Commerce modules have been decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these modules faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
 
 | **Adobe Commerce Version** | 2.4.7-beta1| 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
 |-|-|-|-|-|-|-|
