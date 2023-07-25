@@ -30,7 +30,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51683** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where a customizable option can't be added to the cart using GraphQL.
 * **ACSD-52133** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where a customer account cannot be saved after an upgrade.
 * **ACSD-52202** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where the salable qty of default stock wrongly changes to 0 when a non-default stock is changed to 0 qty on order fulfillment.
-* **ACSD-51265** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with catalog_product_price reindexing performance when there are too many bundled products in the system.
+* **ACSD-51265** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with `catalog_product_price` reindexing performance when there are too many bundled products in the system.
 * **ACSD-52831** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where customers cannot place negotiable quote orders when Google reCAPTCHA v3 Invisible is enabled.
 * **ACSD-51845** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where subsequent products with tier prices and different attribute sets cannot be updated via asynchronous bulk REST API.
 * **ACSD-52815** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the input for the quantity field of a non-default source supports only up to 6 digits, unlike 8 for a default stock.
