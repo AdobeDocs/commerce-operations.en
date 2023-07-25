@@ -2,6 +2,7 @@
 title: About Adobe Commerce
 description: Description of Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
+feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery 
 ---
 # About Adobe Commerce
 
@@ -9,7 +10,7 @@ Adobe Commerce gives merchants the power to create unique and engaging shopping 
 
 ## Delivering meaningful commerce experiences
 
-Marrying content with commerce to meet customer demands for flawless brand interactions, Adobe Commerce’s features are always evolving with the consumer in mind. Adobe Commerce allows brands to own the customer experience, craft personalized content and promotions, and deliver a smooth path to purchase through the following features:
+Marrying content with commerce to meet customer demands for flawless brand interactions, Adobe Commerce's features are always evolving with the consumer in mind. Adobe Commerce allows brands to own the customer experience, craft personalized content and promotions, and deliver a smooth path to purchase through the following features:
 
 - Page Builder
 - Product Recommendations
@@ -20,7 +21,7 @@ Marrying content with commerce to meet customer demands for flawless brand inter
 
 ## Conducting seamless shopping everywhere
 
-Commerce growth is fueled by serving your customers’ needs. Expand your reach and grow into new channels, geographies, and sell online to both businesses and consumers in one platform. Bring commerce to your customers wherever, whenever, and however they prefer to shop.
+Commerce growth is fueled by serving your customers' needs. Expand your reach and grow into new channels, geographies, and sell online to both businesses and consumers in one platform. Bring commerce to your customers wherever, whenever, and however they prefer to shop.
 
 - Mobile commerce
 - B2B ecommerce

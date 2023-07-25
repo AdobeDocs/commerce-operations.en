@@ -1,6 +1,7 @@
 ---
 user-guide-title: Tools
 user-guide-description: Learn about the different tools you can use with Adobe Commerce, their uses, the installation process, and how to get access.
+feature: Configuration
 ---
 
 # Tools {#tools}

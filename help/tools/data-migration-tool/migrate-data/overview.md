@@ -2,6 +2,7 @@
 title: Migration overview
 description: Learn how to start migrating data from Magento 1 to Magento 2 with the [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
+topic: Commerce, Migration
 ---
 # Migration overview
 

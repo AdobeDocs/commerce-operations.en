@@ -2,7 +2,6 @@
 title: Best practice to configure the MySQL slave connection
 description: Learn how to configure the MySQL slave connection for Adobe Commerce sites deployed on cloud infrastructure.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: d65bc80a-c4ec-4ea4-aff1-110592838201
 ---

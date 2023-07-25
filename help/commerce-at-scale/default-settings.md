@@ -2,6 +2,8 @@
 title: Adobe Commerce Performance Optimization
 description: Prepare your Adobe Commerce project to use Adobe Experience Manager as a CMS by changing some default settings.
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
+feature: Integration, Cache
+topic: Commerce, Performance
 ---
 # Adobe Commerce performance optimization
 

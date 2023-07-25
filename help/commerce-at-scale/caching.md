@@ -2,6 +2,7 @@
 title: Effective Cache Planning
 description: Refer to recommended benchmarks for caching to ensure the success of your site under load.
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
+feature: Integration, Cache
 ---
 # Planning effective caching for ecommerce success under load
 

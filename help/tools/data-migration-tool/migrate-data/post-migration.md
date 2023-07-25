@@ -2,6 +2,7 @@
 title: Post-data migration steps
 description: Learn what steps to take after using the [!DNL Data Migration Tool] to migrate data from Magento 1 to Magento 2.
 exl-id: 00171c41-ccea-4ebe-8958-becb9aa09973
+topic: Commerce, Migration
 ---
 # Post-data migration steps
 

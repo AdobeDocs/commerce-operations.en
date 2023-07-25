@@ -1,6 +1,7 @@
 ---
 user-guide-title: Operational Playbook
 user-guide-description: Learn how to get your businesses operationally ready to run a successful ecommerce site.
+feature: Best Practices
 ---
 
 # Operational Playbook {#operational-playbook}

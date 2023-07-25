@@ -2,6 +2,7 @@
 title: The [!UICONTROL Summary] tab
 description: Learn about the [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
+feature: Configuration, Observability
 ---
 # The [!UICONTROL Summary] tab
 

@@ -2,6 +2,7 @@
 title: Data migration follow-up
 description: Learn how to validate that your Magento 1 to Magento 2 data migration was successful and that all functionality is working as expected.
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
+topic: Commerce, Migration
 ---
 # Data migration follow-up
 

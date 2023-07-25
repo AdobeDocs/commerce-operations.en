@@ -3,7 +3,6 @@ title: Audit frontend performance
 description: Identify and address issues that negatively impact site performance by using web performance tools to audit Adobe Commerce storefront operations.
 role: Admin, User, Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 ---
 # Best practices for frontend performance

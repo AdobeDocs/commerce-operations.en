@@ -2,6 +2,7 @@
 title: The [!UICONTROL Security] tab
 description: Learn about the [!UICONTROL Security] tab of [!DNL Observation for Adobe Commerce].
 exl-id: b567e4a4-534e-4151-b6f6-bf59b1bd4028
+feature: Configuration, Observability
 ---
 # The [!UICONTROL Security] tab
 

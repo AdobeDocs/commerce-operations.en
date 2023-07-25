@@ -1,6 +1,7 @@
 ---
 title: Configure the application
 description: Learn about the post-install configuration required for Adobe Commerce and Magento Open Source on-premises deployments.
+feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 ---
 # Configure the application

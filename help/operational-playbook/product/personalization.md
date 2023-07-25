@@ -2,10 +2,11 @@
 title: Personalization
 description: Learn about the kind of experience personalization should provide your customers.
 exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
+feature: Best Practices, Personalization
 ---
 # Personalization
 
-The baseline of ecommerce business growth is customer loyalty. Keeping the customers happy is a combination of a lot of factors from products, content, checkout, customer, and service experience. Personalization depends on AI, which tracks customer information in real-time and delivers a unique, personalized experience. Personalization might not work for all types of businesses, but it’s an additional feature that can help drive traffic to your site.
+The baseline of ecommerce business growth is customer loyalty. Keeping the customers happy is a combination of a lot of factors from products, content, checkout, customer, and service experience. Personalization depends on AI, which tracks customer information in real-time and delivers a unique, personalized experience. Personalization might not work for all types of businesses, but it's an additional feature that can help drive traffic to your site.
 
 Personalization should include:
 
@@ -19,7 +20,7 @@ Personalization should include:
 
 Examples of personalization include:
 
-- **Customer interest**—Changing homepage and navigation based on customer profile. For example, if a user has visited the site previously and explored the women’s section, then next time when they enter the URL they're navigated to the women’s homepage.
+- **Customer interest**—Changing homepage and navigation based on customer profile. For example, if a user has visited the site previously and explored the women's section, then next time when they enter the URL they're navigated to the women's homepage.
 
 - **Recommended products**—Recommend products based on the customers browsing behavior.
 
