@@ -25,7 +25,7 @@ These Adobe Commerce modules have been decoupled from the core release process. 
 
 ## Commerce Services
 
-Commerce Services are a suite of features that are hosted on Adobe infrastructure and provides robust functionality and fast response times, in conjuction with your Commerce instance.
+Commerce Services are a suite of features that are hosted on Adobe infrastructure and provides robust functionality and fast response times, in conjunction with your Commerce instance.
 
 It is recommended that merchants use the most recent version of a service to ensure the highest stability and functionality. The documentation describes the currently released version.
 
