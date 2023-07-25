@@ -35,7 +35,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51845** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where subsequent products with tier prices and different attribute sets cannot be updated via asynchronous bulk REST API.
 * **ACSD-52815** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the input for the quantity field of a non-default source supports only up to 6 digits, unlike 8 for a default stock.
 * **ACSD-51149** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where Scheduled ImportExport with enabled Catalog Permissions invalidates indexers and then cache flushes by cron.
-* **ACSD-50815** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where decimal quantity for a simple product cannot be used for a new Bundle product option.
+* **ACSD-50815** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where decimal quantity for a simple product cannot be used for a new Bundled product option.
 * Updated versions for ACSD-47803.
 * Updated title for ACSD-51892.
 * Updated ACSD-51379
