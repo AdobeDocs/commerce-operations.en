@@ -1,6 +1,6 @@
 ---
 title: Supported Versions
-description: Learn about what Adobe Commerce features are currently available and check their compatibility with specific Adobe Commerce releases.
+description: Learn about what Adobe Commerce features are currently supported and check their compatibility with specific Adobe Commerce releases.
 ---
 # Supported Versions
 
@@ -27,7 +27,7 @@ These Adobe Commerce modules have been decoupled from the core release process. 
 
 Commerce Services are a suite of features that are hosted on Adobe infrastructure and provides robust functionality and fast response times, in conjuction with your Commerce instance.
 
-It is recommended that merchants use the latest version of a service to ensure the latest functionality. Documentation always describes the currently released version.
+It is recommended that merchants use the most recent version of a service to ensure the highest stability and functionality. The documentation describes the currently released version.
 
 * Adobe Commerce Services are currently compatible with Commerce 2.4.4 and higher. It is recommended that merchants use the latest version of the service.
 * Services are considered compatible with earlier versions of Commerce 2.4.x but are not officially supported.
@@ -39,3 +39,4 @@ It is recommended that merchants use the latest version of a service to ensure t
 | **Live Search**   | 3.01 | 3.01 | 3.01 | 3.01 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html)|
 | **Payment Services** | 2.10 | 2.10 | 2.10 | 2.10 |-|[Release Notes](https://commercemarketplace.adobe.com/magento-payment-services.html) |
 | **Product Recommendations**   | 5.0 | 5.0 | 5.0 | 5.0 |-|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
+| **Quick Checkout**   | - | 1.0.0+ | 1.2.0+ | 1.0.0+ |1.2.0+|[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
