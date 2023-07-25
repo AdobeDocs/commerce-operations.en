@@ -1,6 +1,6 @@
 ---
 title: Release schedule
-description: Learn when subtantial new features for Adobe Commerce are scheduled for release.
+description: Learn when Adobe plans to announce the release of subtantial new features for Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 ---
 # Release schedule
