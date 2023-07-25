@@ -23,7 +23,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51358** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where removing a scheduled update without an end date leads to removing other scheduled updates for the same entity.
 * **ACSD-48070** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where editing a scheduled update triggers an exception.
 * **ACSD-51890** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the [!UICONTROL Submit review] button can be clicked multiple times without [!DNL Google reCAPTCHA] v3 validation.
-* **ACSD-51984** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where unchecked "Use Default Value" and non-default product field values are not saved for the second website, store, and store view.
+* **ACSD-51984** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where unchecked *[!UICONTROL Use Default Value]* and *[!UICONTROL non-default product field]* values are not saved for the second website, store, and store view.
 * **ACSD-52398** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the error: The requested qty is not available, when trying to update the quantity of a bundled product in the cart on the storefront.
 * **ACSD-52786** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where a catalog rule condition "SKU is" applies to all products starting with the given SKU.
 * **ACSD-52921** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where an internal error occurs if requesting cart details from GraphQL when there is an out-of-stock configurable product in the cart.
