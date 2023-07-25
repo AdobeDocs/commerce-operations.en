@@ -30,4 +30,4 @@ Use this section to learn about Adobe Commerce modules that have been decoupled 
 
 The following table shows the release status of extension versions relative to Adobe Commerce.
 
-{{$include /help/_includes/templated/release/compatibility-mde-icons.md}}
+{{$include /help/_includes/templated/release/compatibility-mde.md}}
