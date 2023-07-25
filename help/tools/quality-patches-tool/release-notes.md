@@ -39,7 +39,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * Updated versions for ACSD-47803.
 * Updated title for ACSD-51892.
 * Updated ACSD-51379.
-* Updated ACSD-49970-V2
+* Updated ACSD-49970-v2.
 
 ## v1.1.34 {#v1-1-34}
 
