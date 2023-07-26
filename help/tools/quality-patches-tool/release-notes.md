@@ -15,6 +15,32 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.35 {#v1-1-35}
+
+* **ACSD-51899** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the default shipping address on the checkout shipping step is auto-populated with a previously selected in-store pickup address.
+* **ACSD-52041** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the error message: *[ERROR] [!DNL Page Builder] was rendering for 5 seconds without releasing locks.* appears in Chrome browser when saving content edited with [!DNL Page Builder].
+* **ACSD-52095** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where the `manage_stock` value was incorrectly set to 0 in the CSV file after product export.
+* **ACSD-51358** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where removing a scheduled update without an end date leads to removing other scheduled updates for the same entity.
+* **ACSD-48070** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where editing a scheduled update triggers an exception.
+* **ACSD-51890** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the [!UICONTROL Submit review] button can be clicked multiple times without [!DNL Google reCAPTCHA] v3 validation.
+* **ACSD-51984** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where unchecked *[!UICONTROL Use Default Value]* and *[!UICONTROL non-default product field]* values are not saved for the second website, store, and store view.
+* **ACSD-52398** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the error *The requested qty is not available* that occurs when trying to update the quantity of a bundled product in the cart on the storefront.
+* **ACSD-52786** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where a catalog rule condition *SKU is* applies to all products starting with the given SKU.
+* **ACSD-52921** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where an internal error occurs if requesting cart details from GraphQL when there is an out-of-stock configurable product in the cart.
+* **ACSD-51683** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where a customizable option can't be added to the cart using GraphQL.
+* **ACSD-52133** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where a customer account cannot be saved after an upgrade.
+* **ACSD-52202** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where the salable qty of default stock wrongly changes to 0 when a non-default stock is changed to 0 qty on order fulfillment.
+* **ACSD-51265** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with `catalog_product_price` reindexing performance when there are too many bundled products in the system.
+* **ACSD-52831** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where customers cannot place negotiable quote orders when [!DNL Google reCAPTCHA v3 Invisible] is enabled.
+* **ACSD-51845** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where subsequent products with tier prices and different attribute sets cannot be updated via asynchronous bulk REST API.
+* **ACSD-52815** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the input for the quantity field of a non-default source supports only up to 6 digits, unlike 8 for a default stock.
+* **ACSD-51149** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where Scheduled ImportExport with enabled Catalog Permissions invalidates indexers and then cache flushes by cron.
+* **ACSD-50815** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where decimal quantity for a simple product cannot be used for a new Bundled product option.
+* Updated versions for ACSD-47803.
+* Updated title for ACSD-51892.
+* Updated ACSD-51379.
+* Updated ACSD-49970-v2.
+
 ## v1.1.34 {#v1-1-34}
 
 * **ACSD-52277** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where an admin user is not redirected properly after selecting a store view when creating a new order in Admin.
