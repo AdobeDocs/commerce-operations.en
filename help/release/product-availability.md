@@ -13,7 +13,7 @@ Supported versions have been fully tested by Adobe. Supported versions are avail
 
 ## Adobe Authored Extensions
 
-These Adobe Commerce modules have been decoupled from the core release process. This allows Adobe to release iterations of these modules faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
+These Adobe Commerce modules have been decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these modules faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
 
 The following table shows the version support for each extension relative to the Adobe Commerce version.
 
@@ -28,11 +28,11 @@ The following table shows the version support for each extension relative to the
 
 ## Commerce Services
 
-Commerce Services are a suite of features that are hosted on Adobe infrastructure and provides robust functionality and fast response times, in conjuction with your Commerce instance.
+Commerce Services are a suite of features that are hosted on Adobe infrastructure and provides robust functionality and fast response times, in conjunction with your Commerce instance.
 
 It is recommended that merchants use the most recent version of a service to ensure the highest stability and functionality. The documentation describes the currently released version.
 
-* Adobe Commerce Services are currently compatible with Commerce 2.4.4 and higher. It is recommended that merchants use the latest version of the service.
+* Adobe Commerce Services are currently compatible with Commerce 2.4.4 and later. It is recommended that merchants use the latest version of the service.
 * Services are considered compatible with earlier versions of Commerce 2.4.x but are not officially supported.
 * Services are not compatible with Commerce 2.3.x, except for Product Recommendations 3.3.7 and earlier.
 
