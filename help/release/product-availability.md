@@ -17,10 +17,10 @@ These Adobe Commerce extensions have been decoupled from the core Adobe Commerce
 
 The following table shows the version support for each extension relative to the Adobe Commerce version.
 
-|**Adobe Commerce Versions** | 2.4.7-beta1| 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
+|**Adobe Commerce versions** | 2.4.7-beta1| 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
 |-|-|-|-|-|-|-|
 | _Adobe I/O Events for Adobe Commerce_ |1.2.2 |1.2.2 |1.2.2|1.2.2|-| [Composer](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[Release Notes](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| _B2B_ |1.3.5 |1.4.0 |1.3.4|1.3.3|1.3.2|[Composer](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| _B2B_ |1.3.5 |1.4.0 |1.3.4|1.3.3|1.3.2|[Composer](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
 | _Channel Manager_ |- | 2.0.0|1.0.0+|1.0.0+|1.0.0+| [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _Amazon Sales Channel_  |-|4.1.0+|4.3.0+|4.3.0+|4.3.0+| [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Experience Platform Connector_  |3.0.0-beta1 |1.0.0+|1.0.0+|1.0.0+|1.0.0+| [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
@@ -28,7 +28,7 @@ The following table shows the version support for each extension relative to the
 
 ## Commerce Services
 
-Commerce Services are a suite of Adobe-hosted features that provide robust functionality and fast response times, in conjunction with your Commerce instance.
+[Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) are a suite of Adobe-hosted features that provide robust functionality and fast response times, in conjunction with your Commerce instance.
 
 It is recommended that merchants use the most recent version of a service to ensure the highest stability and functionality. The documentation describes the currently released version.
 
