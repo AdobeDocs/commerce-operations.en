@@ -13,14 +13,14 @@ Supported versions have been fully tested by Adobe. Supported versions are avail
 
 ## Adobe Authored Extensions
 
-These Adobe Commerce modules have been decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these modules faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
+These Adobe Commerce extensions have been decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these extensions faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
 
 The following table shows the version support for each extension relative to the Adobe Commerce version.
 
 |**Adobe Commerce Versions** | 2.4.7-beta1| 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
 |-|-|-|-|-|-|-|
-| _Adobe I/O Events for Adobe Commerce_ |1.2.2 |1.2.2 |1.2.2|1.2.2|-| [Composer](https://developer.adobe.com/commerce/events/get-started/installation/)  <br/>[Release Notes](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| _B2B_ |1.3.5 |1.4.0 |1.3.4|1.3.3|1.3.2| [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| _Adobe I/O Events for Adobe Commerce_ |1.2.2 |1.2.2 |1.2.2|1.2.2|-| [Composer](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[Release Notes](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
+| _B2B_ |1.3.5 |1.4.0 |1.3.4|1.3.3|1.3.2|[Composer](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
 | _Channel Manager_ |- | 2.0.0|1.0.0+|1.0.0+|1.0.0+| [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _Amazon Sales Channel_  |-|4.1.0+|4.3.0+|4.3.0+|4.3.0+| [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Experience Platform Connector_  |3.0.0-beta1 |1.0.0+|1.0.0+|1.0.0+|1.0.0+| [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
@@ -28,7 +28,7 @@ The following table shows the version support for each extension relative to the
 
 ## Commerce Services
 
-Commerce Services are a suite of features that are hosted on Adobe infrastructure and provides robust functionality and fast response times, in conjunction with your Commerce instance.
+Commerce Services are a suite of Adobe-hosted features that provide robust functionality and fast response times, in conjunction with your Commerce instance.
 
 It is recommended that merchants use the most recent version of a service to ensure the highest stability and functionality. The documentation describes the currently released version.
 
@@ -43,5 +43,5 @@ The following table shows the version support for each service relative to the A
 | _Catalog Service for Adobe Commerce_  | 1.9 | 1.9  | 1.9 | 1.9 |-|[Overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html)|
 | _Live Search_  | 3.01 | 3.01 | 3.01 | 3.01 |-| [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html)|
 | _Payment Services_ | 2.10 | 2.10 | 2.10 | 2.10 |-|[Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [Release Notes](https://commercemarketplace.adobe.com/magento-payment-services.html) |
-| _Product Recommendations_   | 5.0 | 5.0 | 5.0 | 5.0 |-|[Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
-| _Quick Checkout_   | - | 1.0.0+ | 1.2.0+ | 1.0.0+ |1.2.0+|[Marketplace](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
+| _Product Recommendations_  | 5.0 | 5.0 | 5.0 | 5.0 |-|[Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
+| _Quick Checkout_  | - | 1.0.0+ | 1.2.0+ | 1.0.0+ |1.2.0+|[Marketplace](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)|
