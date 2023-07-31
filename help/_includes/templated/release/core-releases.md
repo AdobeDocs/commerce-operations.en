@@ -1,5 +1,26 @@
 # Released versions
 
+## 2.4.7
+
+The date when support of the 2.4.7 release line ends has not been set yet.
+
+<table>
+  <thead>
+    <tr>
+      <th>Patch version</th>
+      <th>Release date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta1</a>
+        </td>
+        <td>June&nbsp;13, 2023</td>
+    </tr><!-- patch_releases -->
+  </tbody>
+</table>
+
 ## 2.4.6
 
 Support for the 2.4.6 release line ends on March&nbsp;14, 2026.
@@ -12,6 +33,12 @@ Support for the 2.4.6 release line ends on March&nbsp;14, 2026.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p1.html">2.4.6-p1</a>
+        </td>
+        <td>June&nbsp;13, 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6</a>
@@ -33,6 +60,12 @@ Support for the 2.4.5 release line ends on August&nbsp; 9, 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p3.html">2.4.5-p3</a>
+        </td>
+        <td>June&nbsp;13, 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p2.html">2.4.5-p2</a>
@@ -66,6 +99,12 @@ Support for the 2.4.4 release line ends on April&nbsp;12, 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html">2.4.4-p4</a>
+        </td>
+        <td>June&nbsp;13, 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p3.html">2.4.4-p3</a>

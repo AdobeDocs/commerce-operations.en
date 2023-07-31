@@ -3,6 +3,7 @@ title: On-premises Infrastructure
 description: Learn about Adobe Commerce on-premises infrastructure and third-party cloud services.
 last-substantial-update: 2023-04-13
 exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
+feature: Install
 ---
 # Adobe Commerce on-premises infrastructure
 

@@ -2,6 +2,7 @@
 title: The [!UICONTROL MySQL] tab
 description: Learn about the [!UICONTROL MySQL] tab of [!DNL Observation for Adobe Commerce].
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
+feature: Configuration, Observability
 ---
 # The [!UICONTROL MySQL] tab
 

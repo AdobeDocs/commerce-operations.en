@@ -11,6 +11,7 @@ recommendations: noDisplay, noCatalog
   - [Overview](release-notes/overview.md)
   - [Backward-incompatible changes](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
+    - [Overview](release-notes/commerce/overview.md)
     - [2.4.7-beta1](release-notes/commerce/2-4-7.md)
     - [2.4.6](release-notes/commerce/2-4-6.md)
     - [2.4.5](release-notes/commerce/2-4-5.md)
@@ -20,6 +21,7 @@ recommendations: noDisplay, noCatalog
     - [2.4.1](release-notes/commerce/2-4-1.md)
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
+    - [Overview](release-notes/open-source/overview.md)
     - [2.4.7-beta1](release-notes/open-source/2-4-7.md)
     - [2.4.6](release-notes/open-source/2-4-6.md)
     - [2.4.5](release-notes/open-source/2-4-5.md)
@@ -29,9 +31,10 @@ recommendations: noDisplay, noCatalog
     - [2.4.1](release-notes/open-source/2-4-1.md)
     - [2.4.0](release-notes/open-source/2-4-0.md) 
   - Security patch releases {#security-patches}
+    - [Overview](release-notes/security/overview.md)
     - [2.4.6-p2](release-notes/security/2-4-6-p2.md)
     - [2.4.6-p1](release-notes/security/2-4-6-p1.md)
-      [2.4.5-p4](release-notes/security/2-4-5-p4.md)
+    - [2.4.5-p4](release-notes/security/2-4-5-p4.md)
     - [2.4.5-p3](release-notes/security/2-4-5-p3.md)
     - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
     - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
@@ -55,8 +58,6 @@ recommendations: noDisplay, noCatalog
 - Packages {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Adobe Commerce (Beta)](packages/adobe-commerce-beta.md)
-  - [Cloud packages for Adobe Commerce](packages/cloud.md)
-  - [Cloud packages for Adobe Commerce (Beta)](packages/cloud-beta.md)
   - [Magento Open Source](packages/magento-open-source.md)
   - [Magento Open Source (Beta)](packages/magento-open-source-beta.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

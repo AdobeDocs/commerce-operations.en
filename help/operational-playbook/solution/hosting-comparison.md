@@ -2,6 +2,7 @@
 title: Commerce Hosting Comparison
 description: Make the best decision about hosting for your ecommerce project by reviewing this comparison table.
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
+feature: Best Practices, Cloud, Paas
 ---
 # Cloud vs on-premises
 
@@ -100,7 +101,7 @@ The following table outlines the advantages and disadvantages of cloud versus on
         <tr>
             <td>IT Support</td>
             <td>Infrastructure and application expertise are readily available</td>
-            <td>Dedicated IT team is necessary, especially when applications are tailored to meet an organization’s unique requirements.</td>
+            <td>Dedicated IT team is necessary, especially when applications are tailored to meet an organization's unique requirements.</td>
             <td>The caution of scale inherent to cloud deployments mean that IT support can manage more with less time and effort.</td>
             <td>The learning curve for cloud is significant and adequately trained personnel are expensive</td>
         </tr>

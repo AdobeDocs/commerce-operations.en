@@ -3,7 +3,6 @@ title: Adobe Security Notification Service
 description: Learn how to get the latest security updates about Adobe products.
 role: User
 feature: Best Practices
-feature-set: Commerce
 exl-id: 9d9521c3-d429-455a-ae28-f49a486eafe0
 ---
 # Security notification best practices

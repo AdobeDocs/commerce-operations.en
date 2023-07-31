@@ -1,12 +1,8 @@
 # System requirements
 
->[!IMPORTANT]
->
->Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by versions deployed on the Cloud infrastructure, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. See [Supported software and services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) in the _Cloud guide_. For example, Elasticsearch 7.17 is supported on 2.4.4 for on-premise deployments but Open Search 1.2 is supported on the Cloud infrastructure.
-
 >[!NOTE]
 >
-><sup>*</sup>Adobe Commerce 2.4.5 and earlier support MySQL 8.0.28 and earlier only.
+><sup>*</sup>Versions 2.4.4 and 2.4.5 support MySQL 8.0.0 through 8.0.28 only.
 
 <table style="table-layout:auto">
   <thead>
@@ -15,12 +11,15 @@
         Software dependencies
       </th>
       <th>2.4.7-beta1</th>
+      <th>2.4.6-p2</th>
       <th>2.4.6-p1</th>
       <th>2.4.6</th>
+      <th>2.4.5-p4</th>
       <th>2.4.5-p3</th>
       <th>2.4.5-p2</th>
       <th>2.4.5-p1</th>
       <th>2.4.5</th>
+      <th>2.4.4-p5</th>
       <th>2.4.4-p4</th>
       <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
@@ -39,6 +38,15 @@
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
             2.5
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
       </td>
       <td>
             2.2
@@ -101,7 +109,16 @@
             8.5, 7.17
       </td>
       <td>
+            8.5, 7.17
+      </td>
+      <td>
             8.4, 7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
       </td>
       <td>
             7.17
@@ -161,6 +178,15 @@
             2.5
       </td>
       <td>
+            2.5
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
             1.2
       </td>
       <td>
@@ -216,6 +242,15 @@
       </td>
       <td>
             10.6
+      </td>
+      <td>
+            10.6
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
       </td>
       <td>
             10.4
@@ -287,7 +322,16 @@
             8.0*
       </td>
       <td>
-            8.0
+            8.0*
+      </td>
+      <td>
+            8.0*
+      </td>
+      <td>
+            8.0*
+      </td>
+      <td>
+            8.0*
       </td>
       <td>
             8.0*
@@ -330,6 +374,15 @@
       </td>
       <td>
             8.2, 8.1
+      </td>
+      <td>
+            8.2, 8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
       </td>
       <td>
             8.1
@@ -392,6 +445,15 @@
             3.11, 3.9
       </td>
       <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
             3.9
       </td>
       <td>
@@ -444,6 +506,15 @@
       </td>
       <td>
             7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
       </td>
       <td>
             6.2
@@ -500,7 +571,13 @@
             7.3
       </td>
       <td>
+            7.3
+      </td>
+      <td>
             7.1
+      </td>
+      <td>
+            7.3
       </td>
       <td>
             7.3
@@ -513,6 +590,9 @@
       </td>
       <td>
             7.0
+      </td>
+      <td>
+            7.3
       </td>
       <td>
             7.3
@@ -550,6 +630,15 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
       <td>
             2.4
       </td>
@@ -644,6 +733,15 @@
             1.22
       </td>
       <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
             1.18
       </td>
       <td>
@@ -664,6 +762,15 @@
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
       <td>
             8.0
       </td>
@@ -770,6 +877,15 @@
             ✔️
       </td>
       <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -786,6 +902,15 @@
       </td>
       <td>
             3.9.16
+      </td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
       </td>
       <td>
             3.9.13
@@ -843,6 +968,15 @@
       </td>
       <td>
             Redis 6.2
+      </td>
+      <td>
+            Redis 6.2
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
       </td>
       <td>
             Redis 6
@@ -908,10 +1042,19 @@
           --
       </td>
       <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
             7.9
       </td>
       <td>
             7.9
+      </td>
+      <td>
+          --
       </td>
       <td>
           --
@@ -951,6 +1094,15 @@
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
             2.3
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
       </td>
       <td>
             1.2

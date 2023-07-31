@@ -2,6 +2,7 @@
 title: Launch Steps
 description: Use our launch checklist to ensure a smooth Adobe Commerce site implementation.
 exl-id: d7807b2f-85c0-4e3e-a473-c65dbec44d28
+feature: Configuration, Deploy
 ---
 # Launch steps
 

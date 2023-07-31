@@ -2,6 +2,7 @@
 title: Evolution of Headless with Adobe Commerce
 description: Learn about the evolution of Adobe Commerce's headless architecture support.
 exl-id: 991f0530-c596-46c5-9eb0-fa109f848165
+feature: Integration
 ---
 # Evolution of Headless with Adobe Commerce
 

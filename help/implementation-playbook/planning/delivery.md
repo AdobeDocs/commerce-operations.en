@@ -2,12 +2,13 @@
 title: Delivery and Planning Approach
 description: Use our recommended approach for planning and delivering you Adobe Commerce implementation.
 exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
+feature: Best Practices
 ---
 # Delivery and planning approach
 
 Understanding the full scope of a project before beginning implementation is just as critical as having a plan for delivering a solution on time, on budget, and that meets your needs. This requires both identifying a foolproof blueprint for the design and implementation of the solution and executing that blueprint while measuring success.
 
-It is a commitment from the entire team that begins at the initial ideation and doesn’t end until after launch. And while this is a detail-oriented and sometimes tedious aspect of the process, the work that you put into the plan and governance makes obstacles much easier to navigate around and overcome.
+It is a commitment from the entire team that begins at the initial ideation and doesn't end until after launch. And while this is a detail-oriented and sometimes tedious aspect of the process, the work that you put into the plan and governance makes obstacles much easier to navigate around and overcome.
 
 Strategic commerce projects can be delivered with several approaches and different project management methodologies. However, we recommend a hybrid Agile approach for successful delivery and optimal execution.
 

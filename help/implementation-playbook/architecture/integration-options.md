@@ -2,6 +2,7 @@
 title: Adobe Commerce Integration Options
 description: Explore your options for integrating other systems with your Adobe Commerce implementation.
 exl-id: 10de70d2-ff3b-4f10-b370-01d805b745dc
+feature: Integration
 ---
 # Typical integration points and dataflows
 

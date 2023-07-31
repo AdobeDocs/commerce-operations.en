@@ -2,6 +2,7 @@
 title: Application Server for GraphQL APIs
 description: Follow these instructions for enabling the Application Server for GraphQL APIs in your Adobe Commerce deployment.
 badgeCoreBeta: label="2.4.7-beta1" type="informative"
+exl-id: 346cc722-131e-4ed0-bc8c-23c3a1e58258
 ---
 # Application Server for GraphQL APIs
 
@@ -124,5 +125,4 @@ pecl install openswoole-22.0.0
 
 #### Resolve issues with pcre2.h
 
-To resolve issues related to `pcre2.h`, symlink the `pcre2.h` path to your installed PHP extension directory. Your specific installed version of PHP and `pcr2.h` determines the particular version of the command that you should use. 
-
+To resolve issues related to `pcre2.h`, symlink the `pcre2.h` path to your installed PHP extension directory. Your specific installed version of PHP and `pcr2.h` determines the particular version of the command that you should use.

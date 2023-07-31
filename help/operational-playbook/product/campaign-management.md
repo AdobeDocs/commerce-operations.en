@@ -2,6 +2,7 @@
 title: Campaign Management
 description: Structure your ecommerce campaigns to suit your business requirements.
 exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
+feature: Best Practices, Promotions/Events
 ---
 # Campaign management
 

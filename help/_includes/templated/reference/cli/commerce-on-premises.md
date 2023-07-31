@@ -28,7 +28,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ### `--shell`, `-s`
 
-The shell type (&quot;bash&quot;)
+The shell type ("bash")
    
 -  Requires a value
 
@@ -41,7 +41,7 @@ An array of input tokens (e.g. COMP_WORDS or argv)
 
 ### `--current`, `-c`
 
-The index of the &quot;input&quot; array that the cursor is in (e.g. COMP_CWORD)
+The index of the "input" array that the cursor is in (e.g. COMP_CWORD)
    
 -  Requires a value
 
@@ -53,7 +53,7 @@ The version of the completion script
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -87,7 +87,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -111,7 +111,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-The shell type (e.g. &quot;bash&quot;), the value of the &quot;$SHELL&quot; env var will be used if this is not given
+The shell type (e.g. "bash"), the value of the "$SHELL" env var will be used if this is not given
    
 
 ### `--debug`
@@ -123,7 +123,7 @@ Tail the completion debug log
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -157,7 +157,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -202,7 +202,7 @@ To output raw command help
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -236,7 +236,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -286,7 +286,7 @@ To skip describing commands' arguments
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -320,7 +320,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -343,7 +343,7 @@ bin/magento admin:adobe-ims:disable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -377,7 +377,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -424,7 +424,7 @@ Check if 2FA is enabled for Organization in Adobe Admin Console. Required when e
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -458,7 +458,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -481,7 +481,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -515,7 +515,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -538,7 +538,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -572,7 +572,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -625,13 +625,13 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -665,7 +665,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -695,7 +695,7 @@ The admin username to unlock
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -729,7 +729,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -761,7 +761,7 @@ Space-separated list of config types or omit to dump all [scopes, system, themes
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -795,7 +795,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -818,7 +818,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -852,7 +852,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -875,7 +875,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -909,7 +909,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -956,7 +956,7 @@ Password
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -990,7 +990,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1028,7 +1028,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1062,7 +1062,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1100,7 +1100,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1134,7 +1134,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1172,7 +1172,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1206,7 +1206,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1244,7 +1244,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1278,7 +1278,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1307,7 +1307,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1341,7 +1341,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1378,7 +1378,7 @@ Do not process images marked as hidden from product page
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1412,7 +1412,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1435,7 +1435,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1469,7 +1469,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1499,7 +1499,7 @@ y\n
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1533,7 +1533,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1588,7 +1588,7 @@ Scope code for configuration, empty string by default
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1622,7 +1622,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1692,7 +1692,7 @@ Deprecated, use the --lock-env option instead.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1726,7 +1726,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1769,7 +1769,7 @@ Scope code (required only if scope is not `default`)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1803,7 +1803,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1840,7 +1840,7 @@ Install only the non-optional (default) tasks
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1874,7 +1874,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1897,7 +1897,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1931,7 +1931,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -1966,7 +1966,7 @@ Add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2000,7 +2000,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2023,7 +2023,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2057,7 +2057,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2081,7 +2081,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `mode`
 
-The application mode to set. Available options are &quot;developer&quot; or &quot;production&quot;
+The application mode to set. Available options are "developer" or "production"
    
 -  Required
 
@@ -2094,7 +2094,7 @@ Skips the clearing and regeneration of static content (generated code, preproces
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2128,7 +2128,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2151,7 +2151,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2185,7 +2185,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2215,7 +2215,7 @@ Class name
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2249,7 +2249,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2272,7 +2272,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2306,7 +2306,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2329,7 +2329,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2363,7 +2363,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2386,7 +2386,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2420,7 +2420,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2449,7 +2449,7 @@ Profiler type
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2483,7 +2483,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2506,7 +2506,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2540,7 +2540,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2584,7 +2584,7 @@ Include call stack. [true\|false]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2618,7 +2618,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2678,7 +2678,7 @@ Theme: [Vendor/theme]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2712,7 +2712,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2735,7 +2735,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2769,7 +2769,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2792,7 +2792,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2826,7 +2826,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2849,7 +2849,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2883,7 +2883,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2914,14 +2914,14 @@ Type of test to run. Available types: all, unit, integration, integration-all, s
 
 ### `--arguments`, `-c`
 
-Additional arguments for PHPUnit. Example: &quot;-c'--filter=MyTest'&quot; (no spaces)
+Additional arguments for PHPUnit. Example: "-c'--filter=MyTest'" (no spaces)
    
 -  Default: ``
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2955,7 +2955,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -2992,7 +2992,7 @@ Format in which catalog will be generated. Supported: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3026,7 +3026,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3069,7 +3069,7 @@ Overwrite XML file
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3103,7 +3103,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3135,7 +3135,7 @@ Domains name
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3169,7 +3169,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3201,7 +3201,7 @@ Domain names
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3235,7 +3235,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3258,7 +3258,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3292,7 +3292,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3315,7 +3315,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3349,7 +3349,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3389,7 +3389,7 @@ A description of your provider.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3423,7 +3423,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3446,7 +3446,7 @@ bin/magento events:generate:module
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3480,7 +3480,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3517,7 +3517,7 @@ The number of levels in the event payload to return
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3551,7 +3551,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3574,7 +3574,7 @@ bin/magento events:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3608,7 +3608,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3638,7 +3638,7 @@ Module name
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3672,7 +3672,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3695,7 +3695,7 @@ bin/magento events:metadata:populate
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3729,7 +3729,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3779,14 +3779,14 @@ The parent event code for an event subscription with rules.
 
 ### `--rules`
 
-The list of rules for the event subscription, where each rule is formatted as &quot;field\|operator\|value&quot;.
+The list of rules for the event subscription, where each rule is formatted as "field\|operator\|value".
    
 -  Default: `[]`
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3820,7 +3820,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3850,7 +3850,7 @@ Delete events metadata no longer required
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3884,7 +3884,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3914,7 +3914,7 @@ Event code to unsubscribe from
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3948,7 +3948,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -3990,7 +3990,7 @@ Use the --magento parameter to parse the current Magento codebase. Omit the para
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4024,7 +4024,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4054,13 +4054,13 @@ Path to source dictionary file with translations
 
 ### `locale`
 
-Target locale for dictionary, for example &quot;de_DE&quot;
+Target locale for dictionary, for example "de_DE"
    
 -  Required
 
 ### `--mode`, `-m`
 
-Save mode for dictionary - &quot;replace&quot; - replace language pack by new one - &quot;merge&quot; - merge language packages, by default &quot;replace&quot;
+Save mode for dictionary - "replace" - replace language pack by new one - "merge" - merge language packages, by default "replace"
    
 -  Default: `replace`
 -  Requires a value
@@ -4074,7 +4074,7 @@ Use the --allow-duplicates parameter to allow saving duplicates of translate. Ot
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4108,7 +4108,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4148,7 +4148,7 @@ Take code and configuration files backup (excluding temporary files)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4182,7 +4182,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4205,7 +4205,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4239,7 +4239,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4271,7 +4271,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4305,7 +4305,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4337,7 +4337,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4371,7 +4371,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4405,7 +4405,7 @@ Indexer dimension modes catalog_product_price          none,website,customer_gro
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4439,7 +4439,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4476,7 +4476,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4510,7 +4510,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4542,7 +4542,7 @@ Space-separated list of index types or omit to apply to all indexes (catalog_pro
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4576,7 +4576,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4608,7 +4608,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4642,7 +4642,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4674,7 +4674,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4708,7 +4708,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4731,7 +4731,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4765,7 +4765,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4788,7 +4788,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4822,7 +4822,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4845,7 +4845,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4879,7 +4879,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4909,7 +4909,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4943,7 +4943,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -4973,7 +4973,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5007,7 +5007,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5037,7 +5037,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5071,7 +5071,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5094,7 +5094,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5128,7 +5128,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5151,7 +5151,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5185,7 +5185,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5209,7 +5209,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `compensations`
 
-List of compensation arguments in format &quot;&lt;ORDER_INCREMENT_ID&gt;:&lt;SKU&gt;:&lt;QUANTITY&gt;:&lt;STOCK-ID&gt;&quot;
+List of compensation arguments in format "\<ORDER_INCREMENT_ID>:\<SKU>:\<QUANTITY>:\<STOCK-ID>"
    
 -  Default: `[]`
    
@@ -5224,7 +5224,7 @@ Raw output
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5258,7 +5258,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5309,7 +5309,7 @@ Raw output
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5343,7 +5343,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5376,7 +5376,7 @@ List of country codes to import
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5410,7 +5410,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5456,13 +5456,13 @@ Add the IP address to existing list
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5496,7 +5496,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5526,13 +5526,13 @@ Allowed IP addresses (use 'none' to clear allowed IP list)
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5566,7 +5566,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5596,13 +5596,13 @@ Allowed IP addresses (use 'none' to clear allowed IP list)
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5636,7 +5636,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5659,13 +5659,13 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5699,7 +5699,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5722,7 +5722,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5756,7 +5756,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5779,7 +5779,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5813,7 +5813,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5836,7 +5836,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5870,7 +5870,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -5923,13 +5923,13 @@ Clear generated static view files. Necessary, if the module(s) have static view 
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5963,7 +5963,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6016,13 +6016,13 @@ Clear generated static view files. Necessary, if the module(s) have static view 
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6056,7 +6056,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6102,13 +6102,13 @@ Print only disabled modules
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6142,7 +6142,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6217,13 +6217,13 @@ Clear generated static view files. Necessary, if the module(s) have static view 
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6257,7 +6257,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6303,7 +6303,7 @@ Revision
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6337,7 +6337,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6360,7 +6360,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6394,7 +6394,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6417,7 +6417,7 @@ bin/magento queue:consumers:restart
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6451,7 +6451,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6518,7 +6518,7 @@ The file path for saving PID (This option is deprecated, use --single-thread ins
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6552,7 +6552,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6575,7 +6575,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6609,7 +6609,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6639,7 +6639,7 @@ Update composer.json without executing composer update
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6673,7 +6673,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6703,7 +6703,7 @@ Update composer.json without executing composer update
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6737,7 +6737,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6760,7 +6760,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6794,7 +6794,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6817,7 +6817,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6851,7 +6851,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6874,7 +6874,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6908,7 +6908,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -6944,7 +6944,7 @@ Secret
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6978,7 +6978,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -7001,7 +7001,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7035,7 +7035,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -7071,7 +7071,7 @@ Provider code
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7105,7 +7105,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -7149,13 +7149,13 @@ Take complete database backup
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7189,7 +7189,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -7733,13 +7733,13 @@ Flag to show is Pub is on root, can be true or false only
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7773,7 +7773,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -7796,13 +7796,13 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7836,7 +7836,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -7886,7 +7886,7 @@ Find out what type of patch should be generated. Available values: `data`, `sche
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7920,7 +7920,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -7950,7 +7950,7 @@ Name of the module where whitelist will be generated
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7984,7 +7984,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -8054,13 +8054,13 @@ Max Allowed Lag Slave Connection (in seconds)
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8094,7 +8094,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -8155,13 +8155,13 @@ Checkout resource name
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8195,7 +8195,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -8256,13 +8256,13 @@ Sales resource name
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8296,7 +8296,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -8326,13 +8326,13 @@ Allows to convert old scripts (InstallSchema, UpgradeSchema) to db_schema.xml fo
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8366,7 +8366,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -8389,13 +8389,13 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8429,7 +8429,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -8452,7 +8452,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8486,7 +8486,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -9078,7 +9078,7 @@ Run admin interface with SSL. Deprecated, use config:set with path web/secure/us
 
 ### `--admin-use-security-key`
 
-Whether to use a &quot;security key&quot; feature in Magento Admin URLs and forms. Deprecated, use config:set with path admin/security/use_form_key
+Whether to use a "security key" feature in Magento Admin URLs and forms. Deprecated, use config:set with path admin/security/use_form_key
    
 -  Requires a value
 
@@ -9224,13 +9224,13 @@ Use sample data
 
 ### `--enable-modules`
 
-List of comma-separated module names. That must be included during installation. Available magic param &quot;all&quot;.
+List of comma-separated module names. That must be included during installation. Available magic param "all".
    
 -  Accepts a value
 
 ### `--disable-modules`
 
-List of comma-separated module names. That must be avoided during installation. Available magic param &quot;all&quot;.
+List of comma-separated module names. That must be avoided during installation. Available magic param "all".
    
 -  Accepts a value
 
@@ -9269,13 +9269,13 @@ Magento Installation will be run in dry-run mode
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9309,7 +9309,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -9346,7 +9346,7 @@ Skip reindex
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9380,7 +9380,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -9421,13 +9421,13 @@ Basename of the db backup file in var/backups
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9461,7 +9461,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -9653,7 +9653,7 @@ Do not compile parent themes. Supported only in quick and standard strategies.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9687,7 +9687,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -9758,19 +9758,19 @@ Run admin interface with SSL. Deprecated, use config:set with path web/secure/us
 
 ### `--admin-use-security-key`
 
-Whether to use a &quot;security key&quot; feature in Magento Admin URLs and forms. Deprecated, use config:set with path admin/security/use_form_key
+Whether to use a "security key" feature in Magento Admin URLs and forms. Deprecated, use config:set with path admin/security/use_form_key
    
 -  Requires a value
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9804,7 +9804,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -9827,13 +9827,13 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9867,7 +9867,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -9923,13 +9923,13 @@ Magento Installation will be run in dry-run mode
 
 ### `--magento-init-params`
 
-Add to any command to customize Magento initialization parameters For example: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Add to any command to customize Magento initialization parameters For example: "MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache"
    
 -  Requires a value
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9963,7 +9963,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -9986,7 +9986,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10020,7 +10020,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -10043,7 +10043,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10077,7 +10077,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -10119,7 +10119,7 @@ Include logs
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10153,7 +10153,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -10202,7 +10202,7 @@ Ignore sanitize
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10236,7 +10236,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -10266,7 +10266,7 @@ Only check required console utilities
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10300,7 +10300,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -10330,7 +10330,7 @@ Force
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10364,7 +10364,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -10411,7 +10411,7 @@ Clear generated static view files.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10445,7 +10445,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
@@ -10509,7 +10509,7 @@ Path to the file to write vcl
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the &lt;info&gt;list&lt;/info&gt; command
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
    
 -  Default: `false`
 -  Does not accept a value
@@ -10543,7 +10543,7 @@ Force (or disable --no-ansi) ANSI output
 
 ### `--no-ansi`
 
-Negate the &quot;--ansi&quot; option
+Negate the "--ansi" option
    
 -  Default: `false`
 -  Does not accept a value
