@@ -1,8 +1,9 @@
 ---
 title: Use memcached for session storage
 description: Learn about using memcached for Commerce session storage.
+feature: Configuration, Cache, Storage
+exl-id: 24077929-e732-4579-8d7d-717a4902fc64
 ---
-
 # Use memcached for session storage
 
 Memcached is a general-purpose, distributed memory caching system. It is often used to speed up dynamic database-driven websites by caching data and objects in RAM to reduce the number of times an external data source (such as a database or API) must be read.

@@ -1,8 +1,8 @@
 ---
 title: Set up multiple websites with Nginx
 description: Follow this tutorial to set up multiple websites with Nginx.
+exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
 ---
-
 # Set up multiple websites with Nginx
 
 We assume that:
@@ -47,7 +47,7 @@ See [Set up multiple websites, stores, and store views in the Admin](ms-admin.md
 
 ## Step 2: Create nginx virtual hosts
 
-This step discusses how to load websites on the [storefront](https://glossary.magento.com/storefront). You can use either websites or store views; if you use store views, you must adjust parameter values accordingly. You must complete the tasks in this section as a user with `sudo` privileges.
+This step discusses how to load websites on the storefront. You can use either websites or store views; if you use store views, you must adjust parameter values accordingly. You must complete the tasks in this section as a user with `sudo` privileges.
 
 By using just one [nginx virtual host file](#step-2-create-nginx-virtual-hosts), you can keep your nginx configuration simple and clean. By using several virtual host files, you can customize each store (to use a custom location for `french.mysite.mg` for instance).
 

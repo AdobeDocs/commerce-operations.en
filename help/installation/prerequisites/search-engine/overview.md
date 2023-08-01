@@ -1,19 +1,20 @@
 ---
 title: Search engine prerequisites
 description: Follow these steps to install and configure supported search engine software for on-premises installations of Adobe Commerce and Magento Open Source.
+feature: Install, Search
+exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
 ---
-
 # Search engine prerequisites
 
-As of Adobe Commerce and Magento Open Source 2.4, all installations must be configured to use [Elasticsearch](https://www.elastic.co) or [OpenSearch](https://opensearch.org/) as the [catalog](https://glossary.magento.com/catalog) search solution.
+As of Adobe Commerce and Magento Open Source 2.4, all installations must be configured to use [Elasticsearch](https://www.elastic.co) or [OpenSearch](https://opensearch.org/) as the catalog search solution.
 
 >[!NOTE]
 >
->OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. [Migrate from Elasticsearch to OpenSearch](../../../upgrade/prepare/opensearch-migration.md) provides guidance on switching to OpenSearch.
+>OpenSearch support was added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. [Migrate from Elasticsearch to OpenSearch](../../../upgrade/prepare/opensearch-migration.md) provides guidance on switching to OpenSearch.
 
 ## Supported versions
 
-You must install and configure either Elasticsearch or OpenSearch before installing Adobe Commerce or Magento Open Source 2.4.4.
+You must install and configure either Elasticsearch or OpenSearch before installing Adobe Commerce 2.4.4 and later.
 
 Refer to the [System Requirements](../../system-requirements.md) for specific version information.
 
@@ -158,4 +159,4 @@ Elasticsearch requires JDK 1.8 or higher. See [Install the Java Software Develop
 
 ## Additional resources
 
-For additional information, see [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+See the [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) or [OpenSearch](https://opensearch.org/docs/latest/) documentation.

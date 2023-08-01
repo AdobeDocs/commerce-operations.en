@@ -3,9 +3,8 @@ title: Static content deployment best practices
 description: Learn how to avoid issues with static content not appearing on your Adobe Commerce or Magento Open Source storefront.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
+exl-id: 9f521963-6fe4-4844-b2d1-fd457b706900
 ---
-
 # Static content deployment best practices
 
 This article talks about static content deploy (SCD) best practices in Adobe Commerce to help avoid issues where the static content would not be available on your website.
@@ -48,4 +47,3 @@ In our developer documentation:
 * [Deployment flow](../../../performance/deployment-flow.md)
 * [Zero downtime deployment](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
 * [Optimize cloud deployment](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)
-

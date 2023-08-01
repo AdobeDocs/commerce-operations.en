@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce and Magento Open Source Release notes
 description: Learn where to find information for specific Adobe Commerce and Magento Open Source releases.
+exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 ---
-
 # Release notes for Adobe Commerce and Magento Open Source
 
 Use the following table to find release notes and important information related to specific releases of all Adobe Commerce products, services, and tools.
@@ -18,9 +18,9 @@ Use the following table to find release notes and important information related 
         <p>Learn about the latest improvements in Adobe Commerce and Magento Open Source, including enhancements, security, bug fixes, and known issues.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Backward-incompatible changes</a></li>
-            <li><a href="commerce/2-4-5.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-5.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-5-p1.md">Security patches</a></li>
+            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
+            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
+            <li><a href="security/2-4-6-p1.md">Security patches</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B for Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory Management</a></li>
@@ -41,6 +41,7 @@ Use the following table to find release notes and important information related 
       <td><strong>Services for Adobe Commerce</strong>
         <p>Learn about the latest improvements to innovative Commerce services that are available as Adobe Commerce and Magento Open Source extensions.</p>
           <ul>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channels</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Catalog Service</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Channel Manager (Walmart Marketplace sales)</a></li>
@@ -57,6 +58,8 @@ Use the following table to find release notes and important information related 
         <p>Learn about the latest improvements to tools designed to make it easier for you to find and use Adobe Commerce and Magento Open Source software.</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh for Adobe APP Builder Developer</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events for Adobe Commerce</a></li>
+            <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Admin UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Quality Patches Tool</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Site-Wide Analysis Tool</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Upgrade Compatibility Tool</a></li>

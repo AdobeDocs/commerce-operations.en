@@ -1,8 +1,8 @@
 ---
 title: Backup and rollback the file system, media, and database
 description: Follow these steps to back up and restore your Adobe Commerce or Magento Open Source application.
+exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
 ---
-
 # Backup and rollback the file system, media, and database
 
 This command enables you to back up:

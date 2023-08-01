@@ -1,8 +1,8 @@
 ---
 title: Enable profiling
 description: Learn more about enabling the MAGE Profiler to use with your analytical tools.
+exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
 ---
-
 # Enable profiling
 
 With Commerce profiling, you can:

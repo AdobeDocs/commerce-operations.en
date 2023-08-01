@@ -3,9 +3,8 @@ title: Optimize images for a more responsive site
 description: Learn the steps to optimize images and use Fastly image optimization to optimize response time on your Adobe Commerce sites.
 role: Developer, Admin
 feature: Best Practices
-feature-set: Commerce
+exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
 ---
-
 # Optimize images for a more responsive site
 
 For Adobe Commerce on cloud infrastructure deployments, improve site response time by optimizing images before uploading them. Then, use Fastly image optimization to speed up image delivery and simplify maintenance of image source sets.

@@ -1,8 +1,9 @@
 ---
 title: Final verification
 description: Verify that your Varnish configuration is set up properly to work with the Adobe Commerce application.
+feature: Configuration, Cache
+exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 ---
-
 # Final verification of Varnish configuration
 
 Now that you are using the `default.vcl` generated for you by Commerce, you can perform some final verifications to make sure that Varnish is working.
@@ -33,7 +34,7 @@ X-Magento-Cache-Debug: MISS
 
 ## Check page load times
 
-If Varnish is working, any Commerce page with cacheable blocks should load in less than 150 ms. Examples of such pages are the front door and [storefront](https://glossary.magento.com/storefront) [category](https://glossary.magento.com/category) pages.
+If Varnish is working, any Commerce page with cacheable blocks should load in less than 150 ms. Examples of such pages are the front door and storefront category pages.
 
 Use a browser inspector to measure page load times.
 
@@ -60,7 +61,7 @@ For example, to use the Chrome inspector:
 
 Make sure the `<magento_root>/var/page_cache` directory is empty:
 
-1. Log in to your Commerce server, or switch to, the [file system owner](https://glossary.magento.com/magento-file-system-owner).
+1. Log in to your Commerce server, or switch to, the file system owner.
 1. Enter the following command:
 
    ```bash
@@ -76,4 +77,4 @@ Make sure the `<magento_root>/var/page_cache` directory is empty:
 
 >[!TIP]
 >
->If you encounter 503 (Backend Fetch Failed) errors, see [Troubleshooting 503 (Service Unavailable) errors](https://support.magento.com/hc/en-us/articles/360034631211) in the _Adobe Commerce Help Center_.
+>If you encounter 503 (Backend Fetch Failed) errors, see [Troubleshooting 503 (Service Unavailable) errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) in the _Adobe Commerce Help Center_.

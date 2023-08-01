@@ -1,6 +1,8 @@
 ---
 title: Install Guide
-description: "Use this guide to install [!DNL Site-Wide Analysis Tool] for your website"
+description: Use this guide to install [!DNL Site-Wide Analysis Tool] for your website
+exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
+feature: Configuration, Install
 ---
 # Install Guide
 
@@ -44,7 +46,7 @@ Your on-premises infrastructure must meet the following requirements before inst
   >
   >Adobe Commerce is not supported on [!DNL Microsoft Windows] or [!DNL macOS].
 
-- Adobe Commerce 2.4.1 or later
+- Adobe Commerce 2.4.5-p1 or later (due to the dependency of Service Connector)
 
 - [!DNL Commerce Services Connector extension]
 
@@ -178,7 +180,7 @@ If you do not want to use our [shell script](https://github.com/magento-swat/ins
    1. Download the launcher archive.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
    1. Unpack the launcher archive.
@@ -192,7 +194,7 @@ If you do not want to use our [shell script](https://github.com/magento-swat/ins
    1. Download the launcher archive.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
    1. Unpack the launcher archive.
@@ -384,7 +386,7 @@ You may see the following error if your access keys are not parsed properly:
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
 To resolve this error, try the following steps:
@@ -397,6 +399,12 @@ To resolve this error, try the following steps:
 1. Run the scheduler and see if you still receive the same error.
 1. If you still receive the same error, increase the log level in the `config.yaml` to debug and open a Support ticket.
 
+### *SIGFAULT* Error
+
+If you see a *SIGFAULT* error when running binary, you probably do not run this as the file owner of Adobe Commerce and Agent files. 
+To resolve, please check if all the files inside the agent directory that have the same user as the fileowner that Adobe Commerce files have, and binary should be run under that user as well.
+You can use the `chown` command to change the files owner and switch to the appropriate user. 
+Make sure that your daemonization mechanism (Cron or System.d) runs the process under the appropriate user.
 
 >[!INFO]
 >

@@ -1,8 +1,9 @@
 ---
 title: Build System Setup
 description: Learn how to deploy Commerce into a build system.
+feature: Configuration, Build, Deploy
+exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 ---
-
 # Build system setup
 
 You can have one build system that meets the following requirements:

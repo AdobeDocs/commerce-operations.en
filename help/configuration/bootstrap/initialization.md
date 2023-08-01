@@ -1,8 +1,9 @@
 ---
 title: Application initialization and bootstrap
 description: Read about initialization and bootstrap logic for the Commerce application.
+feature: Configuration, Install, Media
+exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
 ---
-
 # Overview of initialization and bootstrap
 
 To run the Commerce application, the following actions are implemented in [pub/index.php][index]:
@@ -98,7 +99,7 @@ When the request is redirected to the entry point, the Commerce application pars
 
 ### Media resource entry point
 
-[Magento\MediaStorage\App\Media][media] retrieves media resources (that is, any files uploaded to media storage) from the database. It is used whenever the database is configured as a [media storage](https://glossary.magento.com/media-storage).
+[Magento\MediaStorage\App\Media][media] retrieves media resources (that is, any files uploaded to media storage) from the database. It is used whenever the database is configured as a media storage.
 
 `\Magento\Core\App\Media` attempts to find the media file in the configured database storage and write it into the `pub/static` directory, then return its contents. On error, it returns an HTTP 404 (Not Found) status code in the header with no contents.
 

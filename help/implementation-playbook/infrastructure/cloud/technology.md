@@ -2,10 +2,11 @@
 title: Cloud Infrastructure Technologies
 description: Get a closer look at the collection of technology we use for Adobe Commerce on cloud infrastructure.
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
+feature: Cloud
 ---
 # Technologies
 
-As we’ve mentioned, Adobe Commerce leverages a number of software solutions to support the platform. Specifically, as it pertains to production, we have broken down some of the technical solutions and features included in Adobe Commerce on cloud infrastructure that help make the most of your production environment.
+As we've mentioned, Adobe Commerce leverages a number of software solutions to support the platform. Specifically, as it pertains to production, we have broken down some of the technical solutions and features included in Adobe Commerce on cloud infrastructure that help make the most of your production environment.
 
 ![Diagram showing the Adobe Commerce on cloud infrastructure technology](../../../assets/playbooks/infrastructure-technology.svg)
 
@@ -22,6 +23,8 @@ As we’ve mentioned, Adobe Commerce leverages a number of software solutions to
 - **Redis**—One server per VM with only one active and the other two as replicas.
 
 - **Elasticsearch**—Search for Adobe Commerce version 2.2.x and later.
+
+- **OpenSearch**—Search for Adobe Commerce version 2.4.6 and later.
 
 - **Galera**—Database cluster with one MariaDB MySQL database per node with an auto-increment setting of three for unique IDs across every database.
 

@@ -1,8 +1,9 @@
 ---
 title: Configure the application
 description: Learn about the post-install configuration required for Adobe Commerce and Magento Open Source on-premises deployments.
+feature: Install, Configuration
+exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 ---
-
 # Configure the application
 
 Now that you've finished installing Adobe Commerce or Magento Open Source, you need to configure it. This topic provides some recommended configuration settings.
@@ -36,7 +37,7 @@ If you use the Apache web server, you must enable server rewrites for pages to d
 
 If you have multiple web nodes, you *cannot* use the application's default file caching because there is no synchronization between web nodes. In other words, the activity on one web node is written to that web node's file system only. Subsequent activity, if performed on another web node, can result in unnecessary files being written or can result in errors.
 
-Instead, use [Redis](../../configuration/cache/config-redis.md) for both the default [cache](https://glossary.magento.com/cache) and the page cache.
+Instead, use [Redis](../../configuration/cache/config-redis.md) for both the default cache and the page cache.
 
 ## Server settings
 

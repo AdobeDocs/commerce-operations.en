@@ -3,7 +3,7 @@ title: Configuration best practices for order processing
 description: Learn configuration best practices to improve checkout and order processing performance.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
+exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
 ---
 # Configuration best practices for order processing
 

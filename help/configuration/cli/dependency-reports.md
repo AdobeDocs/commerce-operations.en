@@ -1,8 +1,8 @@
 ---
 title: Dependency reports
 description: Create reports that show the totals for module, circular, and framework dependencies.
+exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
 ---
-
 # Dependency reports
 
 {{file-system-owner}}

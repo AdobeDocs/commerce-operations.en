@@ -1,8 +1,9 @@
 ---
 title: Configure Apache for your search engine
 description: Follow these steps to configure a search engine with the Apache web server for on-premises installations of Adobe Commerce and Magento Open Source.
+feature: Install, Search
+exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
 ---
-
 # Configure Apache for your search engine
 
 {{$include /help/_includes/web-server-communication.md}}
@@ -11,9 +12,9 @@ description: Follow these steps to configure a search engine with the Apache web
 
 >[!NOTE]
 >
->OpenSearch support has been added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. All instructions to configure ElasticSearch 7 apply to OpenSearch. See [Migrate ElasticSearch to OpenSearch](../../../upgrade/prepare/opensearch-migration.md) for more information.
+>OpenSearch support was added in 2.4.4. OpenSearch is a compatible fork of ElasticSearch. See [Migrate ElasticSearch to OpenSearch](../../../upgrade/prepare/opensearch-migration.md) for more information.
 
-This section discusses how to configure Apache as an *unsecure* proxy so that Adobe Commerce or Magento Open Source can use a search engine running on this server. This section does not discuss setting up HTTP Basic authentication; that is discussed in [Secure communication with Apache](#secure-communication-with-apache).
+This section discusses how to configure Apache as an *unsecure* proxy so that Adobe Commerce can use a search engine running on this server. This section does not discuss setting up HTTP Basic authentication; that is discussed in [Secure communication with Apache](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -167,7 +168,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Secure communication with Apache
 
-This section discusses how to set up [HTTP Basic authentication](https://httpd.apache.org/docs/2.2/howto/auth.html). Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or with your application server.
+This section discusses how to set up [HTTP Basic authentication](https://httpd.apache.org/docs/2.2/howto/auth.html). Use of TLS and HTTP Basic authentication together prevents anyone from intercepting communication with Elasticsearch or OpenSearch or with your application server.
 
 This section discusses how to specify who can access the Apache server.
 
@@ -181,7 +182,7 @@ This section discusses how to specify who can access the Apache server.
        Allow from all
 
        AuthType Basic
-       AuthName "Elastic Server"
+       AuthName "Elasticsearch Server" # or OpenSearch Server
        AuthBasicProvider file
        AuthUserFile /usr/local/apache/password/.htpasswd_elasticsearch
        Require valid-user

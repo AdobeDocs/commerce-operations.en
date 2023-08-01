@@ -3,9 +3,8 @@ title: Upgrade checklist best practices
 description: Learn how to create and use an upgrade checklist to plan your Adobe Commerce and Magento Open Source upgrade strategy.
 role: Leader
 feature: Best Practices
-feature-set: Commerce
+exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
 ---
-
 # Upgrade checklist best practices
 
 Use this checklist during your annual and quarterly conversations with your eCommerce team. Many companies work from annual budgets and roadmaps. It is imperative, during these annual discussions, that you talk about your platform's health, direction, and upgrade strategy for the year, along with how it fits into the overall goals and KPIs of the business. During quarterly conversations, make sure the annual plan you created is still aligned with your current situation or pivot if not. The goal of this Upgrade Plan Checklist is to help you plan and schedule Adobe Commerce upgrades to ensure a successful upgrade process during the year. This checklist is meant to be used by the following audiences for annual planning and quarterly review:
@@ -55,7 +54,7 @@ Use this checklist during your annual and quarterly conversations with your eCom
 
 ▢ Early access activities
 
-- Partner participates in [Beta](../../../release/beta-program.md)
+- Partner participates in [Beta](../../../release/beta.md)
 - Beta release note review. 
 
 ▢ Agree on budget, timeline, scope.

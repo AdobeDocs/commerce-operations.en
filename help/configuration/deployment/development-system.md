@@ -1,8 +1,8 @@
 ---
 title: Development system setup
 description: Learn how to set up a development system for the Commerce application.
+exl-id: 242e9a38-2eb2-4090-8f59-3fd588f7ad3a
 ---
-
 # Development system setup
 
 You can have any number of development systems, provided the following is true of all of them:

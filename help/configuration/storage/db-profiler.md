@@ -1,10 +1,10 @@
 ---
 title: Configure the database profiler
 description: See an example of how to configure output for the database profiler.
-contributor_name: Atish Goswami
-contributor_link: http://atishgoswami.com
+feature: Configuration, Storage
+badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 ---
-
 # Configure the database profiler
 
 The Commerce database profiler displays all queries implemented on a page, including the time for each query and what parameters were applied.

@@ -1,8 +1,9 @@
 ---
-title: "The [!UICONTROL Summary] tab"
+title: The [!UICONTROL Summary] tab
 description: Learn about the [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce].
+exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
+feature: Configuration, Observability
 ---
-
 # The [!UICONTROL Summary] tab
 
 The [!UICONTROL Summary] tab of [!DNL Observation for Adobe Commerce] is intended to quickly see some of the problems experienced by sites to help you auto-resolve or identify potential root causes of site problems. The additional tabs provide deeper level information on component services, database, infrastructure, and process states.
@@ -357,7 +358,7 @@ The **[!UICONTROL Order transactions (default?)]** frame looks for transactions 
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![elasticsearch index information](../../assets/tools/elasticsearch-index-information.jpg)
+![elasticsearch index information](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[Elasticsearch statuses:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 

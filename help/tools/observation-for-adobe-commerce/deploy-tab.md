@@ -1,6 +1,8 @@
 ---
-title: "The [!UICONTROL Deploy] tab"
+title: The [!UICONTROL Deploy] tab
 description: Learn about the [!UICONTROL Deploy] tab of [!DNL Observation for Adobe Commerce].
+exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
+feature: Configuration, Observability
 ---
 # The [!UICONTROL Deploy] tab
 
@@ -152,4 +154,3 @@ The **[!UICONTROL Count of modules imported during deploy]** frame shows the num
 ![Deployed module list](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
 The **[!UICONTROL Deployed module list]** frame shows deployed modules across the selected timeframe.
-

@@ -2,6 +2,7 @@
 title: Cloud Infrastructure Overview
 description: Learn about Adobe Commerce on cloud infrastructure.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
+feature: Cloud
 ---
 # Overview
 
@@ -9,7 +10,7 @@ One of the most popular managed-hosting options for Adobe Commerce on AWS is off
 
 Adobe Commerce on cloud infrastructure is a platform-as-a-service (PaaS) offering that enables rapid deployment of fully customizable, secure, and scalable web storefronts combined with a leading hosting and managed services infrastructure. It offers two plans with different infrastructures. Adobe Commerce Starter is best suited for smaller stores with less complexity and smaller catalogs. Adobe Commerce Pro is built for larger stores with more complexity, larger product catalogs, or traffic that peaks. Adobe Commerce will determine the appropriate architecture with input from partners.
 
-Adobe Commerce is cloud-ready with a fully redundant multi-cloud hosting infrastructure that provides optimized performance, resilience, and elastic scalability. You can efficiently run your commerce platform on Fastly’s content delivery network (CDN), and with New Relic for monitoring and management you can keep your store environment running smoothly.
+Adobe Commerce is cloud-ready with a fully redundant multi-cloud hosting infrastructure that provides optimized performance, resilience, and elastic scalability. You can efficiently run your commerce platform on Fastly's content delivery network (CDN), and with New Relic for monitoring and management you can keep your store environment running smoothly.
 
 Adobe Commerce offers all the benefits of modern cloud computing that are most commonly associated with SaaS solutions: elastic scalability, high resilience and availability, PCI compliance, and global availability and automated patching, while still maintaining flexibility in software customization that our merchants require.
 
@@ -31,7 +32,7 @@ Other benefits of Adobe Commerce include:
 
 ## Third-party services
 
-Let’s also take a look at the software that makes Adobe Commerce’s benefits a reality.
+Let's also take a look at the software that makes Adobe Commerce's benefits a reality.
 
 ![Diagram showing Adobe Commerce on cloud infrastructure technology stack](../../../assets/playbooks/cloud-tech-stack.svg)
 
@@ -43,6 +44,6 @@ Let’s also take a look at the software that makes Adobe Commerce’s benefits 
 
 - Git is your code in repositories. It allows local branching, convenient staging areas, and multiple workflows with automatic build and deploy for efficient rapid development and continuous deployment.
 
-- Platform-as-a-Service (PaaS) provides a pre-provisioned infrastructure that includes PHP, MySQL, Redis, [!DNL RabbitMQ], and Elasticsearch technologies.
+- Platform-as-a-Service (PaaS) provides a pre-provisioned infrastructure that includes PHP, MySQL, Redis, [!DNL RabbitMQ], and OpenSearch or Elasticsearch technologies.
 
-- AWS or Azure’s cloud hosting powers the underlying Infrastructure-as-a-Service (IaaS), which offers a scalable and secure environment for online sales and retailing.
+- AWS or Azure's cloud hosting powers the underlying Infrastructure-as-a-Service (IaaS), which offers a scalable and secure environment for online sales and retailing.

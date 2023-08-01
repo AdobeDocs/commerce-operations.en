@@ -1,8 +1,9 @@
 ---
 title: On-premises installation security
 description: Learn about ways to improve the security posture of your Adobe Commerce or Magento Open Source on-premises installation.
+feature: Install, Security
+exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
 ---
-
 # On-premises installation security
 
 [Security Enhanced Linux (SELinux)](https://selinuxproject.org/page/Main_Page) enables CentOS and Ubuntu administrators greater access control over their servers. If you are using SELinux *and* Apache must initiate a connection to another host, you must run the commands discussed in this section.

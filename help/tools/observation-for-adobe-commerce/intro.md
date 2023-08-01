@@ -1,6 +1,8 @@
 ---
-title: "[!DNL Observation for Adobe Commerce]"
+title: '[!DNL Observation for Adobe Commerce]'
 description: Learn about [!DNL Observation for Adobe Commerce], its uses, when to use, and how to get access.
+exl-id: a787be0f-5dd8-4acc-adbf-5cedd96b08d6
+feature: Configuration, Observability
 ---
 # [!DNL Observation for Adobe Commerce]
 

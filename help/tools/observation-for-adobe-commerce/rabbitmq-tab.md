@@ -1,6 +1,8 @@
 ---
-title: "The [!UICONTROL [!DNL RabbitMQ]] tab"
+title: The [!UICONTROL [!DNL RabbitMQ]] tab
 description: Learn about the [!UICONTROL [!DNL RabbitMQ]] tab of [!DNL Observation for Adobe Commerce].
+exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
+feature: Configuration, Observability
 ---
 # The [!UICONTROL [!DNL RabbitMQ]] tab
 

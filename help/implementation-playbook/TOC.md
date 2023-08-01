@@ -40,7 +40,13 @@ mini-toc-levels: 3
     - [Headless architecture](architecture/headless/adobe-commerce.md)
 - Infrastructure and deployment {#infrastructure}
   - [Overview](infrastructure/overview.md)
-  - [On-premises infrastructure](infrastructure/on-premises.md)
+  - Self Hosting {#self-hosting}
+    - [Overview](infrastructure/self-hosting/overview.md)
+    - [On-premises infrastructure](infrastructure/self-hosting/on-premises.md)    
+    - [Security concepts](infrastructure/self-hosting/security-concepts.md)
+    - [Monitoring telemetry and tools](infrastructure/self-hosting/monitoring-tools.md)
+    - [Disaster recovery ideas](infrastructure/self-hosting/disaster-recovery-ideas.md)
+    - [Performance tips](infrastructure/self-hosting/performance-tips.md)
   - Cloud infrastructure {#cloud}
     - [Overview](infrastructure/cloud/overview.md)
     - [Regions](infrastructure/cloud/regions.md)
@@ -104,6 +110,6 @@ mini-toc-levels: 3
     - [Scheduling Admin updates on production sites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
-    - [Resolve database performance issues​](best-practices/maintenance/resolve-database-performance-issues.md)
-    - [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+    - [Resolve database performance issues](best-practices/maintenance/resolve-database-performance-issues.md)
+    - [Upgrade prerequisites for MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

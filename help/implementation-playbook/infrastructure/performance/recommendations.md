@@ -2,6 +2,8 @@
 title: Performance Optimization Recommendations
 description: Optimize the the performance of your Adobe Commerce implementation by following these recommendations.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
+feature: Cloud
+topic: Performance
 ---
 # Performance optimization review
 
@@ -75,7 +77,7 @@ innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
 
 ### Session caching
 
-Session caching is a good candidate to configure for a separate instance of Redis. Memory configuration for this cache type should consider the site’s cart abandonment strategy and how long a session should expect to remain in the cache.
+Session caching is a good candidate to configure for a separate instance of Redis. Memory configuration for this cache type should consider the site's cart abandonment strategy and how long a session should expect to remain in the cache.
 
 Redis should have enough memory allocated to hold all other caches in memory for optimal performance. Block cache will be the key factor in determining the amount of memory to configure. Block cache grows relative to number of pages on a site (number of SKU x number of store views).
 
@@ -99,9 +101,9 @@ Performance testing before each production release is always recommend to get an
 >
 > Adobe Commerce on cloud infrastructure already applies all of the above infrastructure and architecture optimizations, except for the DNS lookup because it's out of scope.
 
-### Search
+### Search {#search-heading}
 
-Elasticsearch is required as of Adobe Commerce version 2.4, but it’s also a best practice to enable it for versions prior to 2.4.
+Elasticsearch (or OpenSearch) is required as of Adobe Commerce version 2.4, but it's also a best practice to enable it for versions prior to 2.4.
 
 ## Operating models
 
@@ -121,7 +123,7 @@ For example, in 2020, Adobe released an optimization to the Redis layer, fixing 
 
 A lot of problems originate from data, including bad data models, data that is not structured properly, and data that is missing an index. 
 
-It looks fine if you're testing a few connections, but seen in production when the real traffic hits and this is where slowness comes in. It’s very important that systems integrators know how to design a data model (especially for product attributes), avoid adding unnecessary attributes, and keep mandatory attributes that affect business logic (such as pricing, stock availability, and search).
+It looks fine if you're testing a few connections, but seen in production when the real traffic hits and this is where slowness comes in. It's very important that systems integrators know how to design a data model (especially for product attributes), avoid adding unnecessary attributes, and keep mandatory attributes that affect business logic (such as pricing, stock availability, and search).
 
 For those attributes that do not affect business logic but still need to be present on the storefront, combine them into a few attributes (for example, JSON format).
 

@@ -1,6 +1,8 @@
 ---
 user-guide-title: Release information
-user-guide-description: Learn about Adobe Commerce and Magento Open Source releases.
+user-guide-description: Access all release information for Adobe Commerce patches and services in one place.
+feature: Release Notes
+recommendations: noDisplay, noCatalog
 ---
 
 # Release Information {#release}
@@ -9,6 +11,7 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
   - [Overview](release-notes/overview.md)
   - [Backward-incompatible changes](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
+    - [2.4.7-beta1](release-notes/commerce/2-4-7.md)
     - [2.4.6](release-notes/commerce/2-4-6.md)
     - [2.4.5](release-notes/commerce/2-4-5.md)
     - [2.4.4](release-notes/commerce/2-4-4.md)
@@ -17,6 +20,8 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.1](release-notes/commerce/2-4-1.md)
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
+    - [2.4.7-beta1](release-notes/open-source/2-4-7.md)
+    - [2.4.6](release-notes/open-source/2-4-6.md)
     - [2.4.5](release-notes/open-source/2-4-5.md)
     - [2.4.4](release-notes/open-source/2-4-4.md)
     - [2.4.3](release-notes/open-source/2-4-3.md)
@@ -24,7 +29,12 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
     - [2.4.1](release-notes/open-source/2-4-1.md)
     - [2.4.0](release-notes/open-source/2-4-0.md) 
   - Security patch releases {#security-patches}
+    - [2.4.6-p1](release-notes/security/2-4-6-p1.md)
+    - [2.4.5-p3](release-notes/security/2-4-5-p3.md)
+    - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
     - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+    - [2.4.4-p4](release-notes/security/2-4-4-p4.md)
+    - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
     - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
     - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
     - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
@@ -34,14 +44,14 @@ user-guide-description: Learn about Adobe Commerce and Magento Open Source relea
 - [Released versions](versions.md)
 - [Features by version](features.md)
 - [Product availability](product-availability.md)
-- [Product roadmap](product-roadmap.md)
-- [Beta program](beta-program.md)
+- [Beta releases](beta.md)
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
   - [Versioning policy](versioning-policy.md)
   - [Release schedule](schedule.md)
 - Packages {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
-  - [Cloud packages for Adobe Commerce](packages/cloud.md)
+  - [Adobe Commerce (Beta)](packages/adobe-commerce-beta.md)
   - [Magento Open Source](packages/magento-open-source.md)
+  - [Magento Open Source (Beta)](packages/magento-open-source-beta.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

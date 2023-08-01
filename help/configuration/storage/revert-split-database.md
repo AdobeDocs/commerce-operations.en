@@ -1,8 +1,9 @@
 ---
 title: Revert Split Database
 description: Revert from a deprecated split database implementation to a single database implementation.
+feature: Configuration, Storage
+exl-id: 2ece24e0-1f85-445a-8e22-fb10611403ff
 ---
-
 # Revert from Split Database
 
 {{ee-only}}

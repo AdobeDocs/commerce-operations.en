@@ -1,6 +1,7 @@
 ---
 user-guide-title: Operational Playbook
 user-guide-description: Learn how to get your businesses operationally ready to run a successful ecommerce site.
+feature: Best Practices
 ---
 
 # Operational Playbook {#operational-playbook}
@@ -66,4 +67,5 @@ user-guide-description: Learn how to get your businesses operationally ready to 
   - [Click and collect](product/click-collect.md)
   - [PWA](product/progressive-web-app.md)
 - [Checklists and templates](checklists-templates/home.md)
+- [Glossary](glossary.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

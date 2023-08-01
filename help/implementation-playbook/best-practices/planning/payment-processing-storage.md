@@ -2,10 +2,9 @@
 title: Best practices for Payment Processing and storage
 description: Learn how to securely process and store payment details
 role: Developer
-feature-set: Commerce
 feature: Best Practices
+exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
 ---
-
 # Best Practices for Payment Processing and Storage
 
 One of the key principles in maintaining [PCI compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) is having a strategy to properly process and store credit card payments.

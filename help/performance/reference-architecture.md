@@ -1,8 +1,8 @@
 ---
 title: Reference Architecture
 description: Review diagrams of the recommended reference architecture for Adobe Commerce and Magento Open Source deployments.
+exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 ---
-
 # Reference architecture
 
 This topic describes a generic recommended setup for Adobe Commerce and Magento Open Source instances using plain servers hosted physically in a data center (not virtualized) in which resources are not shared with other users. Your hosting provider, especially if it specializes in Commerce high performance hosting, might recommend a different setup that is equally or more effective for your requirements.
@@ -47,7 +47,7 @@ The following sections provide recommendations and considerations for each secti
 *  Consider using a slave DB to enable quick recovery and for data backups
 *  Low-traffic sites can store images in the DB
 
-### Search
+### Search {#search-heading}
 
 *  Tune the number of instances based on search traffic
 

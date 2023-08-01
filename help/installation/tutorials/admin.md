@@ -1,15 +1,16 @@
 ---
 title: Create, edit, or unlock an administrator account
 description: Follow these steps to manage the administrator account of your Adobe Commerce or Magento Open Source Admin application.
+feature: Install, User Account
+exl-id: d87871a1-717d-4662-b84d-98a018518286
 ---
-
 # Create, edit, or unlock an administrator account
 
 Before you can use this command, you must do the following:
 
 -  [Create the deployment configuration](deployment.md)
 -  [Enable at minimum the Magento_Authorization and Magento_User modules](manage-modules.md)
--  Create the [database schema](https://glossary.magento.com/database-schema)
+-  Create the database schema
 
 >[!NOTE]
 >

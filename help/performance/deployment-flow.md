@@ -1,8 +1,9 @@
 ---
 title: Deployment Flow
-description: Learn about the steps necessary for deploying Adobe Commerce or Magento Open Source in a production environment. 
+description: Learn about the steps necessary for deploying Adobe Commerce or Magento Open Source in a production environment.
+feature: Best Practices, Deploy
+exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
 ---
-
 # Deployment flow
 
 The [!DNL Commerce] production deployment flow helps a store reach maximum performance.

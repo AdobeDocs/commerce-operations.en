@@ -1,8 +1,8 @@
 ---
 title: Manage the cache
 description: Manage cache types and view cache status.
+exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
 ---
-
 # Manage the cache
 
 {{file-system-owner}}
@@ -112,6 +112,10 @@ Sample result:
 >As of version 2.3.4, Commerce caches all system EAV attributes as they are retrieved. Caching EAV attributes in this manner improves performance, because it decreases the amount of insert/select requests to the DB. However, it increases cache network size as well. Developers can cache custom EAV attributes by running the `bin/magento config:set dev/caching/cache_user_defined_attributes 1` command. This can also be done from the Admin while in [Developer mode](../bootstrap/application-modes.md) by setting **Stores** > Settings **Configuration** > **Advanced** > **Developer** > **Caching Settings** > **Cache User Defined Attributes** to **Yes**.
 
 ## Clean and flush cache types
+
+>[!NOTE]
+>
+>Multiple pages cache can be invalidated simultaneously and automatically **_without_** these entities editing. For example, when any product in the catalog is assigned to any category, or when any [!UICONTROL related product rule] is modified.
 
 To purge out-of-date items from the cache, you can _clean_ or _flush_ cache types:
 

@@ -1,8 +1,9 @@
 ---
 title: B2B Extension configuration paths reference
 description: See a list of B2B-related configuration values.
+feature: Configuration, B2B, Companies, Payments, Quotes
+exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 ---
-
 # B2B Extension configuration paths reference
 
 _This is available for instances with B2B for Adobe Commerce installed._

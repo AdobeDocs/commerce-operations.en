@@ -3,9 +3,8 @@ title: Category configuration best practices
 description: Learn best practices to maximize site performance by limiting the number of categories in the catalog.
 role: Admin
 feature: Best Practices
-feature-set: Commerce
+exl-id: c6834b32-9ee8-4a4a-932c-9726f3feee3f
 ---
-
 # Best practices for category configuration
 
 For best performance, do not configure more than the maximum recommended number of categories for Adobe Commerce sites.

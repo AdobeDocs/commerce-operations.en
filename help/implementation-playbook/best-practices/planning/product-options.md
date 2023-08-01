@@ -2,10 +2,9 @@
 title: Product options configuration best practices
 description: Optimize Adobe Commerce performance by limiting the number of product options.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Catalogs
+exl-id: 7571a163-798a-40be-b26f-4a184bceb809
 ---
-
 # Product options best practices
 
 For best performance, configure a maximum of 100 product options per product.
@@ -45,4 +44,3 @@ The increases listed above potentially affect site performance in the following 
 - [Bulk Actions log](https://docs.magento.com/user-guide/system/action-log-bulk-actions.html)
 - [Inventory mass actions API](https://developer.adobe.com/commerce/webapi/rest/inventory/bulk-inventory/)
 - [Training: Manage Catalogs and Products using Adobe Commerce](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)
-

@@ -1,8 +1,8 @@
 ---
 title: Apply Patches
 description: Learn about the methods for applying patches to an Adobe Commerce or Magento Open Source project.
+exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
 ---
-
 # Apply patches
 
 You can apply patches using any of the following methods:

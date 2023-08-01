@@ -1,6 +1,8 @@
 ---
 title: Usage
 description: Learn how to use the [!DNL Quality Patches Tool].
+exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
+feature: Configuration, Install
 ---
 # Usage
 
@@ -11,7 +13,7 @@ Watch this [technical video](https://experienceleague.adobe.com/docs/commerce-le
 
 >[!INFO]
 >
->See [Apply individual patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [Available Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) to review a full list of released patches.
+>See [Apply individual patches](#apply-individual-patches) for instructions on applying patches to your Adobe Commerce or Magento Open Source projects. See [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) to review a full list of released patches.
 
 >[!WARNING]
 >
@@ -54,7 +56,7 @@ Adobe Commerce 2.3.5.
 The status table includes:
 
 -  **Type**:
-    -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Cloud Patches](https://devdocs.magento.com/cloud/project/project-patch.html) package are optional for Adobe Commerce and Magento Open Source installations.
+    -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) package are optional for Adobe Commerce and Magento Open Source installations.
     -  `Deprecated` — Adobe has deprecated the individual patch. If you have applied the patch, we recommend that you revert it. The revert operation also removes the patch from the status table.
 
 -  **Status**:
@@ -75,7 +77,7 @@ The status table includes:
 
 >[!WARNING]
 >
->It is a best practice to test all patches in a staging or development environment before deploying to production. It is also recommended to back up your data before applying a patch. See [Back up and roll back the file system](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>It is a best practice to test all patches in a staging or development environment before deploying to production. It is also recommended to back up your data before applying a patch. See [Backup and rollback the file system, media, and database](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 To apply a single patch, run the following command where `MAGETWO-XXXX` is the patch ID specified in the status table:
 
@@ -103,7 +105,7 @@ You must clean the cache after applying patches to see changes in the Adobe Comm
 
 >[!WARNING]
 >
->It is a best practice to test all patches in a staging or development environment before deploying to production. It is also recommended to back up your data before applying a patch. See [Back up and roll back the file system](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>It is a best practice to test all patches in a staging or development environment before deploying to production. It is also recommended to back up your data before applying a patch. See [Backup and rollback the file system, media, and database](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 To revert a single patch, run the following command where `MAGETWO-XXXX` is the patch ID specified in the status table:
 

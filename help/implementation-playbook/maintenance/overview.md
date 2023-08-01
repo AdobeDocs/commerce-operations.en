@@ -2,6 +2,7 @@
 title: Maintenance and support overview
 description: Properly maintain and support your newly launched Adobe Commerce implementation.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
+feature: Deploy
 ---
 # Maintenance and support overview
 
@@ -27,4 +28,4 @@ Identifying the right support model for your business to continue enhancing and 
 
 When deploying Adobe Commerce, it is critical to think about what to include in your maintenance and support strategy. 
 Expert support is included in an Adobe Commerce license. For more information on Expert support and Adobe Support Plans, please refer to [Adobe Support Plans](https://business.adobe.com/customers/consulting-services/premier-support.html). 
-In addition to Adobe Support plans there are legacy Magento support terms. To understand what support services are applicable to you, please reference your contract to see what support agreement you have or talk to your Customer Success Manager (CSM). 
+In addition to Adobe Support plans there are legacy Magento support terms. To understand what support services are applicable to you, please reference your contract to see what support agreement you have or talk to your Adobe Account Team.

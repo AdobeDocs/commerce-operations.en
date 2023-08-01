@@ -1,8 +1,9 @@
 ---
 title: Upgrade the [!DNL Data Migration Tool]
 description: Learn how to upgrade the [!DNL Data Migration Tool] to transfer data between Magento 1 and Magento 2.
+exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
+topic: Commerce, Migration
 ---
-
 # Upgrade the [!DNL Data Migration Tool]
 
 To make sure the versions of your current Magento 2 installation and the [!DNL Data Migration Tool] match exactly, you may need to upgrade the tool.

@@ -1,8 +1,10 @@
 ---
 title: Data migration best practices
 description: Follow these data migration best practices to ensure a successful upgrade from Magento 1 to Magento 2.
+exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
+feature: Best Practices, Configuration
+topic: Commerce, Migration
 ---
-
 # Data migration best practices
 
 This section provides best recommendations to accelerate and simplify your migration and guidance about how much time it may take.

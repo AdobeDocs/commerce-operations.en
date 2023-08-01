@@ -1,8 +1,9 @@
 ---
 title: Configure search stopwords
 description: Learn how to manage stopwords for Adobe Commerce using CSV files.
+feature: Configuration, Search
+exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
 ---
-
 # Configure search stopwords
 
 In general, _stopwords_ are common words that search engines filter out after processing text. Originally, when disk space and memory were extremely limited, every kilobyte saved meant a significant improvement in performance. Therefore, search engines achieved performance gains by ignoring certain words and keeping the index small.
@@ -22,7 +23,7 @@ For more information about how Elasticsearch and OpenSearch uses stopwords, see 
 
 Stopwords are located in the `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce and Magento Open Source ships with one CSV file containing stopwords for the default locales and an additional file, `stopwords.csv`, which has stopwords for any locale that is not represented by another CSV file.
 
-The default lifetime for stopwords file [cache](https://glossary.magento.com/cache) is 15 minutes.
+The default lifetime for stopwords file cache is 15 minutes.
 
 ### Edit stopwords for an existing locale
 
@@ -48,7 +49,7 @@ The default lifetime for stopwords file [cache](https://glossary.magento.com/cac
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. Check the results by searching for terms on your [storefront](https://glossary.magento.com/storefront).
+1. Check the results by searching for terms on your storefront.
 
 ### Create stopwords for a new locale
 

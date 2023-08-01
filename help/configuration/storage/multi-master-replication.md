@@ -1,8 +1,9 @@
 ---
 title: Database replication
 description: See the benefits of configuring database replication.
+recommendations: noCatalog
+exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 ---
-
 # Database replication
 
 {{ee-only}}
@@ -115,7 +116,7 @@ The following is more advanced and is provided for your information only:
 
 ## Performance improvement
 
-To improve the performance of master-slave replication, you can filter some tables on slave instances. We recommend filtering all temporary tables with name pattern `search\_tmp\_%` that are used for [catalog](https://glossary.magento.com/catalog) search.
+To improve the performance of master-slave replication, you can filter some tables on slave instances. We recommend filtering all temporary tables with name pattern `search\_tmp\_%` that are used for catalog search.
 
 To do this, add the following line to your `my.cnf` file on your slave instances:
 

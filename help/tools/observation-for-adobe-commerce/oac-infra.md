@@ -1,8 +1,9 @@
 ---
- title: "The [!DNL Infra] tab"
- description: The [!DNL Infra] tab isolates issues and causes of infrastructure problems.
+title: The [!DNL Infra] tab
+description: The [!DNL Infra] tab isolates issues and causes of infrastructure problems.
+exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
+feature: Configuration, Observability
 ---
-
 # The [!DNL Infra] tab
 
 The **[!DNL Infra]** tab isolates issues and causes of infrastructure problems. Further are described the frames you can see on the tab.

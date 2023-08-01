@@ -1,8 +1,9 @@
 ---
 title: Sales configuration paths reference
 description: See a list of sales configuration values.
+feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
+exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
 ---
-
 # Sales configuration paths reference
 
 This section lists variable names and config paths available for options in the Admin under **Stores** > Settings > **Configuration** > **Sales**.
@@ -391,7 +392,7 @@ These configuration values are available in the Admin in **Stores** > Settings >
 | List property for the up-sell block | `google/analytics/upsell_block_list_value` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | List property for the related products block | `google/analytics/related_block_list_value` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | List property for the search results page | `google/analytics/search_page_list_value` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
-| ’Internal Promotions’ for promotions field “Label”. | `google/analytics/promotions_list_value` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
+| 'Internal Promotions' for promotions field "Label". | `google/analytics/promotions_list_value` | ![Commerce-only](/help/assets/configuration/cloud-ee.png) |
 | Enable | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Conversion ID | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Conversion Language | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

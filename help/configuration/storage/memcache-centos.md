@@ -1,8 +1,9 @@
 ---
 title: Set up memcached on CentOS
 description: Install and configure memcached on CentOS.
+feature: Configuration, Cache, Storage
+exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
 ---
-
 # Set up memcached on CentOS
 
 This section provides instructions to install memcached on CentOS. For additional information, consult the [memcached wiki](https://github.com/memcached/old-wiki).
@@ -107,7 +108,7 @@ To verify memcached is recognized by the web server:
 
 ### Create a memcache test consisting of a MySQL database and PHP script
 
-The test uses a MySQL database, table, and data to verify you can retrieve the database data and store it in memcache. A PHP script first searches the [cache](https://glossary.magento.com/cache). If the result does not exist, the script queries database. After the query has been fulfilled by the original database, the script stores the result in memcache, using the `set` command.
+The test uses a MySQL database, table, and data to verify you can retrieve the database data and store it in memcache. A PHP script first searches the cache. If the result does not exist, the script queries database. After the query has been fulfilled by the original database, the script stores the result in memcache, using the `set` command.
 
 [More details about this test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 

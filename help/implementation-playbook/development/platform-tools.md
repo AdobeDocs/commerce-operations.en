@@ -2,6 +2,7 @@
 title: Platform Tools
 description: Choose recommended platform tools for your Adobe Commerce implementation.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
+feature: Configuration
 ---
 # Platform tools
 
@@ -24,7 +25,7 @@ The following table includes solutions that we recommend and can be used within 
 
 ## Database
 
-There are three different tools that we use depending on the needs of the brand. MySQL is a great baseline solution as the Adobe Commerce database if you don’t expect your store to handle extreme loads.
+There are three different tools that we use depending on the needs of the brand. MySQL is a great baseline solution as the Adobe Commerce database if you don't expect your store to handle extreme loads.
 
 MariaDB is more community-focused and works better for users who care more about features than pure performance. MariaDB supports a large array of database engines, disk encryption, complex horizontal interconnectivity, and scaling features, which could be interesting for large Adobe Commerce stores.
 
@@ -51,7 +52,7 @@ We highly recommend using Varnish as the full-page cache server for your store. 
 
 ## Search services
 
-For Adobe Commerce version 2.4 and later, all installations must be configured to use Elasticsearch as the catalog search solution. Elasticsearch provides quick and advanced searches on products in the catalog. Elasticsearch is optional for releases prior to 2.4, but it’s recommended.
+For Adobe Commerce version 2.4 and later, all installations must be configured to use Elasticsearch or OpenSearch as the catalog search solution. Elasticsearch provides quick and advanced searches on products in the catalog. Elasticsearch is optional for releases prior to 2.4, but it's recommended.
 
 ## Message queue services
 
@@ -61,6 +62,6 @@ Message queues provide an asynchronous communication mechanism in which the send
 
 The [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html) enables you to regularly monitor your store websites and receive updates for known security risks, malware, and out-of-date software. Typically, you start using this tool when you begin user-acceptance testing (UAT). Besides the Adobe Commerce Security Scan tool, which is free and available for all implementations and versions of Adobe Commerce, there are other choices that can be used during the CI/CD process and before each release.
 
-SonarQube is an open-source quality management platform, designed to analyze and measure your code’s technical quality. SonarQube not only provides a complete report of code bugs, syntax errors, and vulnerabilities, but also offers suggestions and examples for fixing your code. SonarQube is perfect to use in a CI/CD environment as a tool capable of analyzing the code before it’s deployed.
+SonarQube is an open-source quality management platform, designed to analyze and measure your code's technical quality. SonarQube not only provides a complete report of code bugs, syntax errors, and vulnerabilities, but also offers suggestions and examples for fixing your code. SonarQube is perfect to use in a CI/CD environment as a tool capable of analyzing the code before it's deployed.
 
 Zed Attack Proxy (ZAP) is a free security testing tool used by thousands of pen-testers around the globe. ZAP is developed by OWASPand is one of the most preferred tools for manual security testing.

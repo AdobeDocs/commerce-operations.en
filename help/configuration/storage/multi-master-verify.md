@@ -1,8 +1,9 @@
 ---
 title: Verify split database
 description: Learn how to verify that a Commerce split database configuration is working properly.
+recommendations: noCatalog
+exl-id: 36295240-6521-4f3e-9ea3-f35b73de672d
 ---
-
 # Verify split database
 
 {{ee-only}}
@@ -12,7 +13,7 @@ description: Learn how to verify that a Commerce split database configuration is
 After configuration, the master databases are configured as follows:
 
 - Main Commerce database: 369 tables
-- Commerce [quote](https://glossary.magento.com/quote) database: 11 tables
+- Commerce quote database: 11 tables
 - Commerce sales database: 55 tables
 
 To verify that your split databases are working properly, perform the following tasks and verify that data is added to the database tables using a database tool like [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):

@@ -1,8 +1,8 @@
 ---
 title: On-premises installation prerequisites
 description: Learn more about the software dependencies required for on-premises installations of Adobe Commerce and Magento Open Source.
+exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 ---
-
 # On-premises installation prerequisites
 
 Before you install Adobe Commerce or Magento Open Source, you must do the following:
@@ -94,19 +94,27 @@ Enter `exit` at the `mysql>` prompt to exit.
 
 To install or upgrade MySQL, see [MySQL](database/mysql.md).
 
-### Elasticsearch or OpenSearch
+### Search engine
 
-``` bash
+To verify your OpenSearch installation:
+
+```bash
+curl -XGET '<opensearch-hostname>:<opensearch-port>'
+```
+
+To verify your Elasticsearch installation:
+
+```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
 For example:
 
-``` bash
+```bash
 curl -XGET 'localhost:9200'
 ```
 
-``` terminal
+```terminal
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

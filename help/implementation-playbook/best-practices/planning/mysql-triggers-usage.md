@@ -2,10 +2,9 @@
 title: MySQL triggers usage
 description: Learn how to use MySQL triggers effectively with Adobe Commerce.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
+exl-id: acac3e47-67c8-4eea-80e3-e26f2854391a
 ---
-
 # Best practices for MySQL triggers usage
 
 This article explains how to avoid performance issues when using MySQL triggers. Triggers are used to log changes into audit tables.

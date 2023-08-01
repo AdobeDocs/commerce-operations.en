@@ -1,6 +1,8 @@
 ---
-title: "Start using: Selecting the account and timeframe"
+title: 'Start using: Selecting the account and timeframe'
 description: Learn how to start using the [!DNL Observation for Adobe Commerce] nerdlet by selecting the account and timeframe.
+exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
+feature: Configuration, Observability
 ---
 # Selecting the account and timeframe:
 

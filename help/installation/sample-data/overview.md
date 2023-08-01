@@ -1,8 +1,8 @@
 ---
 title: Sample data overview
 description: Learn about using sample data for Adobe Commerce and Magento Open Source projects.
+exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
 ---
-
 # Sample data overview
 
 Sample data provides a storefront based on the Luma theme outfitted with products, categories, customer registration, and so on. It functions just like a Commerce storefront and you can manipulate prices, inventory, and promotional pricing rules using the Admin.

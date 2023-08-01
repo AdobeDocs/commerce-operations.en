@@ -1,6 +1,7 @@
 ---
 user-guide-title: Tools
 user-guide-description: Learn about the different tools you can use with Adobe Commerce, their uses, the installation process, and how to get access.
+feature: Configuration
 ---
 
 # Tools {#tools}
@@ -20,7 +21,7 @@ user-guide-description: Learn about the different tools you can use with Adobe C
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
 - Quality Patches Tool {#quality-patches-tool}
-    - [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+    - [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
     - [Usage](quality-patches-tool/usage.md)
     - [Release notes](quality-patches-tool/release-notes.md)
 - Observation for Adobe Commerce {#observation-for-adobe-commerce}

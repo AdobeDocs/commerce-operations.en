@@ -3,7 +3,7 @@ title: Optimize CSS and JS resource files
 description: Learn how to merge and minify CSS and JavaScript (JS) files for Adobe Commerce projects from the Admin or from the command line.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
+exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
 ---
 # Optimize resource files
 
@@ -88,4 +88,3 @@ You can also enable Adobe Commerce built-in bundling (basic bundling) from the c
 - [User Guide: Optimizing resource files](https://docs.magento.com/user-guide/system/file-optimization.html)
 - [Frontend Developer Guide: CSS merging, minification, and site performance](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Advanced JavaScript bundling](../../../performance/advanced-js-bundling.md)
-

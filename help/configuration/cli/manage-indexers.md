@@ -1,8 +1,8 @@
 ---
 title: Manage the indexers
 description: See examples of how to view and manage Commerce indexers.
+exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 ---
-
 # Manage the indexers
 
 {{file-system-owner}}
@@ -31,6 +31,9 @@ catalog_product_price                    Product Price
 catalogsearch_fulltext                   Catalog Search
 salesrule_rule                           Sales Rule
 ```
+
+>[!NOTE]
+> Adobe Commerce merchants using Live Search, Catalog Service, or Product Recommendations have the option to use [SaaS-based price indexing](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
 
 ## View indexer status
 
@@ -110,17 +113,21 @@ Index parallelization affects scoped indexers only, which means Commerce splits 
 
 You can run the following indexes in parallel mode:
 
--  `Catalog Search Fulltext` can be paralleled by store views.
--  `Category Product` can be paralleled by store views.
--  `Catalog Price` can be paralleled by website and customer groups.
--  `Catalog Permissions` can be paralleled by customer groups.
+- `Catalog Search Fulltext` can be paralleled by store views.
+- `Category Product` can be paralleled by store views.
+- `Catalog Price` can be paralleled by website and customer groups.
+- `Catalog Permissions` can be paralleled by customer groups.
+
+>[!INFO]
+>
+>Parallelization for Catalog Search Fulltext and Category Product is enabled by default.
 
 To use parallelization, set one of the available dimensions modes for the product price indexer:
 
--  `none` (default)
--  `website`
--  `customer_group`
--  `website_and_customer_group`
+- `none` (default)
+- `website`
+- `customer_group`
+- `website_and_customer_group`
 
 For example, to set the mode per website:
 
@@ -130,8 +137,8 @@ bin/magento indexer:set-dimensions-mode catalog_product_price website
 
 To use parallelization for Catalog permissions, set one of the available dimensions modes for the Catalog Permissions indexer:
 
--  `none` (default)
--  `customer_group`
+- `none` (default)
+- `customer_group`
 
 Or to check the current mode:
 
@@ -179,8 +186,8 @@ Catalog Search indexer has been invalidated.
 
 Use this command to set the following indexer options:
 
--  **Update on save (`realtime`)**: Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
--  **Update by schedule (`schedule`)**: Data is indexed according to the schedule set by your cron job.
+- **Update on save (`realtime`)**: Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
+- **Update by schedule (`schedule`)**: Data is indexed according to the schedule set by your cron job.
 
 [Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
@@ -224,9 +231,9 @@ bin/magento indexer:set-mode {realtime|schedule} [indexer]
 
 Where:
 
--  `realtime`—Sets the selected indexers to update on save.
--  `schedule`—Sets the specified indexers to save according to the cron schedule.
--  `indexer`—Is a space-separated list of indexers. Omit `indexer` to configure all indexers the same way.
+- `realtime`—Sets the selected indexers to update on save.
+- `schedule`—Sets the specified indexers to save according to the cron schedule.
+- `indexer`—Is a space-separated list of indexers. Omit `indexer` to configure all indexers the same way.
 
 For example, to change only the category products and product categories indexers to update on schedule, enter:
 

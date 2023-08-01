@@ -1,0 +1,11 @@
+---
+title: "credit memo comment"
+wordClasses:
+  - "noun"
+tags:
+  - "business"
+  - "order"
+synonyms: []
+relatedTerms: []
+definition: |
+  Details why a credit memo amount was credited to the customer.

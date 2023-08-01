@@ -1,6 +1,8 @@
 ---
 title: Static content cache
 description: Gain an understanding of static content signing and how to enable or disable the feature.
+feature: Configuration, Cache, SCD
+exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
 ---
 # Static content cache
 
@@ -9,12 +11,12 @@ Setting the `Expires` header on a static resource tells the browser to cache the
 This is a common [best practice](https://developer.yahoo.com/performance/rules.html#expires=) for caching static resources.
 
 When the browser caches a static resource and that resource changes on the server, you must clear the browser cache so it can download the new version.
-Manually clearing the browser cache works if you are a [website](https://glossary.magento.com/website) administrator, but this is not an appropriate request to make of your users when you want them to download new versions of a static resource.
+Manually clearing the browser cache works if you are a website administrator, but this is not an appropriate request to make of your users when you want them to download new versions of a static resource.
 
 ## Static content signing
 
-[Static content](https://glossary.magento.com/static-content) signing is a Commerce feature that allows you to invalidate the browser cache for static resources.
-Commerce accomplishes this by adding a deployment version to the URL of [static files](https://glossary.magento.com/static-files).
+Static content signing is a Commerce feature that allows you to invalidate the browser cache for static resources.
+Commerce accomplishes this by adding a deployment version to the URL of static files.
 
 The following is an example of a URL signed with a version:
 

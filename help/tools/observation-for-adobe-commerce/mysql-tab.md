@@ -1,6 +1,8 @@
 ---
-title: "The [!UICONTROL MySQL] tab"
+title: The [!UICONTROL MySQL] tab
 description: Learn about the [!UICONTROL MySQL] tab of [!DNL Observation for Adobe Commerce].
+exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
+feature: Configuration, Observability
 ---
 # The [!UICONTROL MySQL] tab
 
@@ -274,4 +276,3 @@ The **[!UICONTROL MySQL mem used by node]** frame shows the node usage of memory
 ![Database mysql-slow.log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
 
 The **[!UICONTROL Database mysql-slow.log]** frame shows the query statement types that were in the `mysql-slow.log` file across the selected timeframe.
-

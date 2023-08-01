@@ -1,8 +1,9 @@
 ---
 title: Implementation phases
 description: Learn about best practices for the implementation phases of Adobe Commerce projects.
+exl-id: c5272f79-7315-46dc-a191-a40004aaa812
+feature: Best Practices
 ---
-
 # Implementation best practices
 
 There are many ways to implement an Adobe Commerce project. The best practices provided in this section describe the way Adobe expects customers and partners to implement specific use cases. These recommendations are designed to help prevent common problems and potential issues related to site configuration and customization, deployment, operations, performance, and upgrades.
@@ -53,3 +54,5 @@ These best practices are organized by implementation phase so you can find the r
   </td>
 </tr>
 </table>
+
+{{$include /help/_includes/templated/whats-new-bp.md}}

@@ -14,6 +14,14 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
+      <td>Live Search powered by Adobe Sensei (B2C & B2B)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
       <td>Seller Assisted Shopping</td>
       <td></td>
       <td></td>
@@ -22,7 +30,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Live Search powered by Adobe Sensei</td>
+      <td>Channel Manager for Adobe Commerce</td>
       <td></td>
       <td></td>
       <td></td>
@@ -30,7 +38,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Product Recommendations powered by Adobe Sensei</td>
+      <td>Product Recommendations powered by Adobe Sensei (B2C & B2B)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -38,7 +46,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Page Builder drag and drop content management</td>
+      <td>Page Builder drag-and-drop content management</td>
       <td></td>
       <td></td>
       <td></td>
@@ -54,27 +62,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Payment Services flexible payment options</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>+</td>
-    </tr>
-    <tr>
       <td>Amazon Sales Channel</td>
       <td></td>
       <td></td>
       <td>+</td>
       <td>+</td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>Channel Manager (Walmart Marketplace)</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td>+</td>
     </tr>
     <tr>
@@ -87,14 +79,6 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
     </tr>
     <tr>
       <td>Instant Purchase</td>
-      <td></td>
-      <td></td>
-      <td>+</td>
-      <td>+</td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>Integrated Braintree for payments</td>
       <td></td>
       <td></td>
       <td>+</td>
@@ -120,6 +104,14 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
+      <td>Payment Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
       <td>Enhanced Media Gallery & Asset Management</td>
       <td></td>
       <td></td>
@@ -128,7 +120,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Buy Online Pickup In-Store (BOPIS)</td>
+      <td>Store Fulfillment for Adobe Commerce by Walmart Technologies</td>
       <td></td>
       <td></td>
       <td></td>
@@ -136,7 +128,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Store Fulfillment (Advanced omnichannel fulfillment)</td>
+      <td>Buy Online Pickup In-Store (BOPIS)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -168,11 +160,19 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Commerce Reporting</td>
+      <td>Business Intelligence</td>
       <td></td>
       <td>+</td>
       <td>+</td>
       <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Catalog Service for Adobe Commerce</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td>+</td>
     </tr>
     <tr>
@@ -181,14 +181,6 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
       <td>+</td>
       <td>+</td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>Payment Services reporting and reconciliation dashboard</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
       <td>+</td>
     </tr>
   </tbody>
@@ -202,7 +194,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <th style="border-style:none;">2.4</th>
     </tr>
     <tr>
-      <td>Site-wide Analysis Tool</td>
+      <td>Site-Wide Analysis Tool</td>
       <td></td>
       <td></td>
       <td></td>
@@ -230,19 +222,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
+      <td>+</td>
       <td>+</td>
     </tr>
     <tr>
-      <td>PHP 8.1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>+</td>
-    </tr>
-    <tr>
-      <td>PHP 7.4</td>
+      <td>Asynchronous Order Processing</td>
       <td></td>
       <td></td>
       <td></td>
@@ -250,11 +234,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>PHP 7.3</td>
+      <td>PHP 8.1 (2.4.4+)</td>
       <td></td>
       <td></td>
       <td></td>
-      <td>+</td>
+      <td></td>
       <td>+</td>
     </tr>
     <tr>
@@ -290,14 +274,6 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Declarative Schema for easier installations and upgrades</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>+</td>
-      <td>+</td>
-    </tr>
-    <tr>
       <td>Security Tools:/ 2FA, ReCAPTCHA, ACL, WAF</td>
       <td></td>
       <td></td>
@@ -306,7 +282,31 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Commerce-optimized cloud</td>
+      <td>Adobe I/O Events for Adobe Commerce</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Adobe Developer App Builder for Adobe Commerce</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce optimized cloud</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Observation for Adobe Commerce on cloud infrastructure</td>
       <td></td>
       <td>+</td>
       <td>+</td>

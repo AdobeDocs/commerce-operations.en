@@ -1,8 +1,8 @@
 ---
 title: Understand Upgrade Scope
 description: Learn about backward incompatible changes in a release that might impact Adobe Commerce or Magento Open Source custom modules or third-party extensions.
+exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
 ---
-
 # Understand the scope of upgrading
 
 Review the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) to understand the scope of a release, including enhancements, bug fixes, and known issues that might impact third-party and custom modules.
@@ -48,7 +48,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> The `<dir>` argument is the directory where your code base is stored. The `-c` option compares your code base with the specified version (for example, 2.4.4).
+> The `<dir>` argument is the directory where your code base is stored. The `-c` option compares your code base with the specified version.
 
 To identify the most critical issues for your team to address:  
 

@@ -1,8 +1,8 @@
 ---
 title: Example using a shared configuration
 description: See an example of how to change settings in a development system with a shared configuration file.
+exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
 ---
-
 # Example using a shared configuration
 
 This example shows how to change the following settings in your development system, update the shared configuration file, `config.php`, in your build system, and implement the same settings in your production system:

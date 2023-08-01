@@ -1,8 +1,8 @@
 ---
 title: Customer personal information reference (version 1.x)
 description: Learn about dataflow and database entity mappings for customer personal information in Magento 1.x.
+exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
 ---
-
 # Customer personal information reference (version 1.x)
 
 >[!NOTE]

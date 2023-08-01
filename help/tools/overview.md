@@ -1,6 +1,7 @@
 ---
-title: Tools 
+title: Tools
 description: Optimize your Adobe Commerce store with these tools.
+exl-id: e2770019-d879-4685-bcbe-791550f49cf0
 ---
 # Tools
 
@@ -13,6 +14,6 @@ This guide is designed for merchants, developers, and integrators to facilitate 
 ## What's in the guide?
 
 *  [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-*  [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+*  [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 *  [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
 *  [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)

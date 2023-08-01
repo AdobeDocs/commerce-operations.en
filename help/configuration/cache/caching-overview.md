@@ -1,12 +1,14 @@
 ---
 title: Configure caching
 description: Learn about caching and how to configure cache mechanisms for the Adobe Commerce and Magento Open Source application.
+feature: Configuration, Cache
+exl-id: 6effa069-c043-411a-b161-01210be17391
 ---
 # Configure caching
 
 [!DNL Commerce] enables you to configure alternatives to the default file system caching. This guide discusses some of those alternatives; namely,
 
-- Set up the following [cache](https://glossary.magento.com/cache) mechanisms in the [!DNL Commerce] configuration:
+- Set up the following cache mechanisms in the [!DNL Commerce] configuration:
 
   - [Database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
   - [Redis](config-redis.md)
@@ -31,7 +33,7 @@ description: Learn about caching and how to configure cache mechanisms for the A
 
 - Modifying the provided `default` cache frontend—
 
-   You modify only the `<magento_root>/app/etc/di.xml` file, the Commerce application's global [dependency injection](https://glossary.magento.com/dependency-injection) configuration.
+   You modify only the `<magento_root>/app/etc/di.xml` file, the Commerce application's global dependency injection configuration.
 
 - Configuring your own custom cache frontend—
 

@@ -1,8 +1,9 @@
 ---
-title: "[!DNL Data Migration Tool] technical specification"
-description: "Learn about the implementation details of the [!DNL Data Migration Tool] and how to extend when transferring data between Magento 1 and Magento 2."
+title: '[!DNL Data Migration Tool] technical specification'
+description: Learn about the implementation details of the [!DNL Data Migration Tool] and how to extend when transferring data between Magento 1 and Magento 2.
+exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
+topic: Commerce, Migration
 ---
-
 # [!DNL Data Migration Tool] technical specification
 
 This section describes [!DNL Data Migration Tool] implementation details and how to extend its functionality.
@@ -58,7 +59,7 @@ The following diagram represents directory structure of [!DNL Data Migration Too
 │       │   ├── Data.php
 │       │   ├── Delta.php
 │       │   └── Settings.php
-│       ├── ResourceModel                   --- contains [adapter](https://glossary.magento.com/adapter) for connection to data storage and classes to work with structured data
+│       ├── ResourceModel                   --- contains adapter for connection to data storage and classes to work with structured data
 │       │   ├── Adapter
 │       │   │   └── Mysql.php
 │       │   ├── AbstractCollection.php
@@ -70,7 +71,7 @@ The following diagram represents directory structure of [!DNL Data Migration Too
 │       │   ├── Source.php
 │       │   └── Structure.php
 │       ├── Config.php
-│       ├── [Exception](https://glossary.magento.com/exception).php
+│       ├── Exception.php
 │       └── Step                            --- functionality for migrating specific data
 │           ├── Eav
 │           │   ├── Data.php
@@ -337,7 +338,7 @@ In this mode, most of the data is migrated. Before data migration the integrity 
 
 #### Map Step
 
-Map step is responsible for transferring most of data from Magento 1 to Magento 2. This step reads instructions from map.xml file (located in the `etc/` directory). The file describes differences between data structures of source (Magento 1) and destination (Magento 2). In case Magento 1 contains tables or fields that belong to some [extension](https://glossary.magento.com/extension) that does not exist in Magento 2, then these entities can be placed here to ignore them by Map Step. Otherwise, it displays an error message.
+Map step is responsible for transferring most of data from Magento 1 to Magento 2. This step reads instructions from map.xml file (located in the `etc/` directory). The file describes differences between data structures of source (Magento 1) and destination (Magento 2). In case Magento 1 contains tables or fields that belong to some extension that does not exist in Magento 2, then these entities can be placed here to ignore them by Map Step. Otherwise, it displays an error message.
 
 Map file has the next format:
 
@@ -459,7 +460,7 @@ Here is a class diagram of these classes:
 
 ## Logging
 
-In order to implement output of migration process and control all possible levels PSR logger, which is used in Magento, is applied. `\Migration\Logger\Logger` class was implemented to provide logging functionality. To use the logger, you should inject it via constructor [dependency injection](https://glossary.magento.com/dependency-injection).
+In order to implement output of migration process and control all possible levels PSR logger, which is used in Magento, is applied. `\Migration\Logger\Logger` class was implemented to provide logging functionality. To use the logger, you should inject it via constructor dependency injection.
 
 ```php
 class SomeClass

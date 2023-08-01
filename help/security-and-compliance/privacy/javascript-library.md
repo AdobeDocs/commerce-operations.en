@@ -1,8 +1,8 @@
 ---
 title: Privacy JavaScript Library
 description: Learn how to use custom tools for accessing and deleting customer personal information collected by Adobe Commerce and Magento Open Source.
+exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
 ---
-
 <!-- TODO: Remove this topic and redirect to the adobe-privacy-javascript-library.md when the Adobe privacy library has been integrated with Commerce. -->
 
 # Privacy JavaScript Library

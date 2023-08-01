@@ -1,8 +1,8 @@
 ---
 title: Manage message queues
 description: Learn how you can manage message queues from the command line for Adobe Commerce.
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
 ---
-
 # Manage message queues
 
 You can manage message queues from the command line using cron jobs or an external process manager to ensure that consumers are retrieving messages.
@@ -31,7 +31,7 @@ The following example shows the `crontab` configuration for running consumers:
 >
 >See [Configure and run cron](../cli/configure-cron-jobs.md) for more information about using `cron` with Commerce.
 
-You can also use a process manager such as [Supervisor](http://supervisord.org/index.html) to monitor the status of processes. The manager can use the command line to restart the processes as needed.
+You can also use a process manager such as [Supervisor](https://supervisord.readthedocs.io/en/latest/) to monitor the status of processes. The manager can use the command line to restart the processes as needed.
 
 ## Configuration
 
@@ -68,7 +68,7 @@ Edit the `/app/etc/env.php` file to configure the cron job `consumers_runner`.
 - `cron_run` - A boolean value that enables or disables the `consumers_runner` cron job (default = `true`).
 - `max_messages` - The maximum number of messages each consumer must process before terminating (default = `10000`). Although we do not recommend it, you can use 0 to prevent the consumer from terminating. See [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) to configure how consumers process messages from the message queue.
 - `consumers` - An array of strings specifying which consumers to run. An empty array runs *all* consumers.
-- `multiple_processes` - An array of key-value pairs specifying which consumer to run in how many processes.
+- `multiple_processes` - An array of key-value pairs specifying which consumer to run in how many processes. Supported in Commerce 2.4.4 or greater.
 
    >[!INFO]
    >

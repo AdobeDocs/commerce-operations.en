@@ -1,8 +1,9 @@
 ---
 title: Configuration files for deployment
 description: Understand how the configuration files work for installing the Commerce application.
+feature: Configuration, Deploy
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
 ---
-
 # Configuration files for deployment
 
 Adobe Commerce provides configuration files that enable you to easily customize a component and create configuration types to extend default functionality. The process of deployment configuration consists of the shared and system-specific configuration for your installation. Commerce's deployment configuration is divided between [`app/etc/config.php`](../reference/config-reference-configphp.md) and [`app/etc/env.php`](../reference/config-reference-envphp.md).
@@ -11,9 +12,6 @@ Adobe Commerce provides configuration files that enable you to easily customize 
   This file contains the list of installed modules, themes, and language packages; and shared configuration settings.
 
   Check in this file to source control and use it in your development, staging, and production systems.
-
-  As of the 2.2 release, the `app/etc/config.php` file is no longer an entry in the `.gitignore` file.
-  This was done to facilitate [pipeline deployment](../deployment/technical-details.md).
 
 - `app/etc/env.php` contains settings that are specific to the installation environment.
 
@@ -33,7 +31,7 @@ On the top level of this array are _configuration segments_. A segment has arbit
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) merely provides access to these sections but does not allow you to extend them.
 
-On the next hierarchy level, items in each segment are ordered according to the [module](https://glossary.magento.com/module) sequence definition, which is obtained by merging all modules' configuration files, except for disabled modules.
+On the next hierarchy level, items in each segment are ordered according to the module sequence definition, which is obtained by merging all modules' configuration files, except for disabled modules.
 
 The following sections discuss the structure and contents of the deployment configuration:
 
@@ -72,6 +70,6 @@ return array (
 
 The value `1` or `0` indicates whether a module is enabled or disabled.
 
-Disabled modules are not recognized by the Commerce application; in other words, they do not participate in merging configuration, in dependency injection, events, plug-ins, and so on. Disabled modules do not modify the [storefront](https://glossary.magento.com/storefront) or [Admin](https://glossary.magento.com/admin) and do not affect routing.
+Disabled modules are not recognized by the Commerce application; in other words, they do not participate in merging configuration, in dependency injection, events, plug-ins, and so on. Disabled modules do not modify the storefront or Admin and do not affect routing.
 
 The only practical difference of a disabled module and an absent module in the code base is that a disabled module is found by the autoloader, and its classes and constants are available for reuse in other code.

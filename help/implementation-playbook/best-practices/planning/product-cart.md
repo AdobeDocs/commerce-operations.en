@@ -2,10 +2,9 @@
 title: Product cart best practices
 description: Learn how to optimize Adobe Commerce performance by limiting the number of products in a cart.
 role: User
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Shopping Cart
+exl-id: 7ea5acc2-f6b2-4244-8c07-c71fd54a18a0
 ---
-
 # Best practices for product cart management
 
 For best performance, use the following guidelines to manage cart limits for Adobe Commerce and Magento Open Source:

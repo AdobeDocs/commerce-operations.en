@@ -1,8 +1,9 @@
 ---
 title: Secure cron PHP
 description: Restrict who can run the cron.php file in a browser.
+feature: Configuration, Security
+exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 ---
-
 # Secure cron PHP
 
 This topic discusses securing `pub/cron.php` to prevent it from being used in a malicious exploit. If you do not secure cron, any user could potentially run cron to attack your Commerce application.
