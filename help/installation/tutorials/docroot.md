@@ -43,7 +43,7 @@ server {
 
 ## Before you begin
 
-To complete this tutorial, you need access to a working installation running on a [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack:
+To complete this tutorial, you need access to a working installation running on a LAMP stack:
 
 -  Linux
 -  Apache (2.4+)
