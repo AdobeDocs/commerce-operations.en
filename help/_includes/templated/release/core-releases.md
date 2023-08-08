@@ -37,7 +37,7 @@ Support for the 2.4.6 release line ends on March&nbsp;14, 2026.
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p2.html">2.4.6-p2</a>
         </td>
-        <td></td>
+        <td>August&nbsp; 8, 2023</td>
     </tr>
     <tr>
         <td>
@@ -70,7 +70,7 @@ Support for the 2.4.5 release line ends on August&nbsp; 9, 2025.
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p4.html">2.4.5-p4</a>
         </td>
-        <td></td>
+        <td>August&nbsp; 8, 2023</td>
     </tr>
     <tr>
         <td>
@@ -115,7 +115,7 @@ Support for the 2.4.4 release line ends on April&nbsp;12, 2025.
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p5.html">2.4.4-p5</a>
         </td>
-        <td></td>
+        <td>August&nbsp; 8, 2023</td>
     </tr>
     <tr>
         <td>
