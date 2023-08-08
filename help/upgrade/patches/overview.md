@@ -47,7 +47,7 @@ Use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/c
 
 Sometimes it takes a while for the Adobe Engineering Team to include a bug fix made on GitHub in an Adobe Commerce or Magento Open Source Composer release. In the meantime, you can create a patch from GitHub and use the [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) plugin to apply it to your Composer-based installation.
 
-Use the [command line][] or [Composer][] to apply custom patches.
+Use the [command line](apply.md#command-line] or [Composer](apply.md#composer) to apply custom patches.
 
 There are many ways to create custom patch files. The following example focuses on creating a patch from a known git commit.
 
@@ -90,4 +90,4 @@ You can apply patches using any of the following methods:
 
 >[!NOTE]
 >
->To apply a patch to an Adobe Commerce on cloud infrastructure project, see [Apply patches](https://devdocs.magento.com/cloud/project/project-patch.html) in the _Cloud guide_.
+>To apply a patch to an Adobe Commerce on cloud infrastructure project, see [Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the _Cloud guide_.
