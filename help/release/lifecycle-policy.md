@@ -17,7 +17,7 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 
 | Release              | General Availability | End of software support<sup>1</sup> | Dependent PHP version |
 |----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | April 19, 2024       | April 19, 2027                      | 8.2 and 8.3           |
+| Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                       | 8.2 and 8.3           |
 | Adobe Commerce 2.4.6 | March 14, 2023       | March 14, 2026                      | 8.1 and 8.2           |
 | Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                      | 8.1                   |
 | Adobe Commerce 2.4.4 | April 12, 2022       | April 24, 2025                      | 8.1                   |
