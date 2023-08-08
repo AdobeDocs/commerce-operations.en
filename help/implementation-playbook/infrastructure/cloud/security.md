@@ -34,6 +34,10 @@ Amazon Elastic Block Store (EBS) is used for storage. All EBS volumes are encryp
 
 The Adobe Commerce application does not support column- or row-level encryption or encryption when the data is not at rest or not in transit between servers. The customer can manage encryption keys from within the application. Keys used by the system are stored in AWS Key Management System and must be managed by Managed Services in order to provide parts of the service.
 
+## Endpoint detection and response
+
+[!DNL CrowdStrike Falcon], a light-weight, next-generation endpoint detection and response (EDR) agent that is installed on all endpoints (including servers) within Adobe, protects our data and our systems with real-time continuous monitoring and collection that enables us to quickly identify and respond to threats.
+
 ## Penetration testing
 
 Managed Services conducts regular penetration tests of the Adobe Commerce cloud system with the out-of-the-box application. Customers are responsible for any penetration testing of their customized application.
