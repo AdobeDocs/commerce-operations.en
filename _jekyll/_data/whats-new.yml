@@ -1,8 +1,48 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Jul 31 13:45:39 2023
+updated: Tue Aug 1 09:19:15 2023
 entries:
+- description: Added release notes for Adobe Commerce 2.4.6-p2, 2.4.5-p4, and 2.4.4-p5.
+    See [Release notes for Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+  versions: 2.4.4, 2.4.5, 2.4.6
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/600
+  merge_commit: ed1308771a799bcbaf71a8f82542c45d37f9c141
+  contributor: frontain
+  membership: false
+  labels:
+  - 2.4.4
+  - major-update
+  - 2.4.5
+  - 2.4.6
+- description: Added 2024 dates to the [release schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)
+    and [software lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html).
+  versions: ''
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/602
+  merge_commit: 19fbba535c047a8d877428afc071540d3fa12390
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added the August 2023 security patches (2.4.6-p2, 2.4.5-p4, and 2.4.4-p5)
+    to the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    table
+  versions: 2.4.4, 2.4.5, 2.4.6
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/601
+  merge_commit: 7373980a0648be5e0f7dc4a307074d934f646b24
+  contributor: jmatthew
+  membership: false
+  labels:
+  - 2.4.4
+  - major-update
+  - 2.4.5
+  - 2.4.6
 - description: Redesigned the [product availability](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
     page to improve layout and readability.
   versions: ''
