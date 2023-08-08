@@ -90,4 +90,4 @@ You can apply patches using any of the following methods:
 
 >[!NOTE]
 >
->To apply a patch to an Adobe Commerce on cloud infrastructure project, see [Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the _Cloud guide_.
+>To apply a patch to an Adobe Commerce on cloud infrastructure project, see [Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the _Commerce on Cloud guide_.
