@@ -26,6 +26,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-53176** (for Adobe Commerce >=2.3.7 <2.4.5) - Fixes the issue where *Related Product Rule* with *is one of* condition does not match products.
 * **ACSD-51666** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the error *The session has expired, please login again.* that happens after a customer tries to log in.
 * Added new versions for MDVA-39305-v2.
+* Updated requirements for ACSD-19640.
 
 ## v1.1.35 {#v1-1-35}
 
