@@ -21,7 +21,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-50887** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the product attribute property "Use in Search Results Layered Navigation" can be set to "Yes" without the "Use in search" option set to "Yes".
 * **ACSD-51846** (for Adobe Commerce and Magento Open Source >=2.4.3-p2 <2.4.6) - Fixes the *Internal Error* issue that happens because not all levels of REST API payload are validated.
 * **ACSD-52906** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where the X-Magento-Vary cookie is set incorrectly for logged-in customers that belong to the same customer segment causing improper caching for some pages.
-* **ACSD-52736** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where a Cart Price Rule that includes requirements for configurable product quantity does not work as expected.
+* **ACSD-52736** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where a *Cart Price Rule* that includes requirements for configurable product quantity does not work as expected.
 * **ACSD-47875** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where admin users are not able to add a product to a customer cart from the Admin for a particular store view scope with inventory management.
 * **ACSD-53176** (for Adobe Commerce >=2.3.7 <2.4.5) - Fixes the issue where Related Product Rule with "is one of" condition does not match products.
 * **ACSD-51666** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the error: The session has expired, please login again. that happens after a customer tries to log in.
