@@ -4,6 +4,26 @@
 
 Learn about new documentation and significant updates to existing documentation.
 
+### August 10, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.36 Quality Patches Tool (QPT) package release.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/778890d5840669df958e84381c2aade70a492454">778890</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### August 8, 2023
 
 <table style="table-layout:auto;">
@@ -15,6 +35,18 @@ Learn about new documentation and significant updates to existing documentation.
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">released versions</a> with the August 2023 security patches.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9abed3c6ca156cdc19e7231f97cf2a8bd8ab100">c9abed</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Added information about the Adobe Commerce August 8, 2023 security hotfix to the release notes for Adobe Commerce 2.4.4-p4, 2.4.4-p5, 2.4.5-p3, 2.4.5-p4, 2.4.6-p1, and 2.4.6-p2.  See <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Release notes for Adobe Commerce and Magento Open Source</a>.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/623ada901bad9f766451d9c9166e82f1cee85c0d">623ada</a> (commit)</td>
+    </tr>
     <tr>
       <td><p>Added release notes for Adobe Commerce 2.4.6-p2, 2.4.5-p4, and 2.4.4-p5. See <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Release notes for Adobe Commerce and Magento Open Source</a>.</p>
 </td>
@@ -32,6 +64,26 @@ Learn about new documentation and significant updates to existing documentation.
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7373980a0648be5e0f7dc4a307074d934f646b24">737398</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### August 7, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added information about <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/security.html">endpoint detection and response</a> on cloud infrastructure.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd3b93aaa79e84d356217b6adfe7181895e84f07">fd3b93</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
