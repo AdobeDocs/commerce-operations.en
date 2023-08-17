@@ -10,7 +10,10 @@ badge: label="Contributed by Anton Evers, Sr. Technical Architect, Adobe Consult
 
 If you manage multiple Adobe Commerce installations, [patching](../../../upgrade/patches/apply.md) can be a complex process. _Centralized patching_ is an essential part of [global reference architecture](../../architecture/global-reference.md) and a best practice for enterprises. It helps you apply the right patches on all your Adobe Commerce installations. This topic explains how to achieve centralized patch distribution for all types of Adobe Commerce [patches](../../../upgrade/patches/overview.md).
 
-The following content was originally published in the [Distributing Adobe Commerce Patches at Scale](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) post on the Adobe Tech Blog. It's been modified to focus on the steps and code samples for implementing a centralized patching strategy. See the original post for more details about the different types of patches described here.
+>[!NOTE]
+>
+>The following content was originally published in the [Distributing Adobe Commerce Patches at Scale](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) post on the Adobe Tech Blog. It's been modified to focus on the steps and code samples for implementing a centralized patching strategy. See the original post for more details about the different types of patches described here.
+
 
 ## Affected products and versions
 
@@ -104,6 +107,7 @@ The package must do two things:
    }
    ```
 
+   >![NOTE]
    >
    >The package copies your `/m2-hotfixes` directory to the root of the target project on `composer install`. Since the cloud deployment scripts apply `/m2-hotfixes` after `composer install`, they will find your patches from this package in the main project and install all of them.
 
