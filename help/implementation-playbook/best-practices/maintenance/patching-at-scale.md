@@ -305,7 +305,7 @@ class Patcher implements PluginInterface, EventSubscriberInterface
 }
 ```
 
->[!TIP]xe
+>[!TIP]
 >
 >You can see the two packages in action on an Adobe Commerce on cloud infrastructure context on GitHub. See [code-examples](#code-examples).
 
