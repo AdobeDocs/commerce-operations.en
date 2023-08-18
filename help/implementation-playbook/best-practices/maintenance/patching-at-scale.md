@@ -52,17 +52,25 @@ You must ensure that the `vendor/bin/magento-patches apply` command runs after t
 
 To summarize, this example requires two custom Composer packages:
 
-- `centralized-patcher`—Defines the list of quality patches and `m2-hotfixes` to apply.
-- `centralized-patcher-composer-plugin`—Defines a `Patcher` class that reads the quality patches list from the `centralized-patcher` package and installs them after `composer install` and `composer update`.
+- `centralized-patcher`
+
+   - Defines the list of quality patches and `m2-hotfixes` to apply
+   - Requires the `centralized-patcher-composer-plugin` package to run the `vendor/bin/magento-patches apply` command
+
+- `centralized-patcher-composer-plugin`
+
+   - Defines a `Patcher` class that reads the quality patches list from the `centralized-patcher` package
+   - Installs the list of quality patches after `composer install` and `composer update` operations
 
 #### `centralized-patcher`
 
 You can create a Composer package (`centralized-patcher`) to centrally manage all quality patches and `/m2-hotfixes` across all of your Adobe Commerce installations.
 
-The package must do two things:
+The package must do the following:
 
 - Copy the contents of the `/m2-hotfixes` directory into all your installations during deployment.
-- Run the `vendor/bin/magento-patches` CLI command to apply the same list of quality patches to all installations.
+- Define the list of quality patches to install.
+- Run the `vendor/bin/magento-patches` command to apply the same list of quality patches to all installations (using the `centralized-patcher-composer-plugin` package as a dependency).
 
 1. Create a `composer.json` file for your new `centralized-patcher` Composer package with the following contents:
 
@@ -136,7 +144,7 @@ For testing purposes, you can create an example patch (`/m2-hotfixes/EXAMPLE-PAT
 
 >[!NOTE]
 >
->You should place your own patches in this directory together with patches you receive directly from Adobe Commerce Support.å
+>You should place your own patches in this directory together with patches you receive directly from Adobe Commerce Support.
 
 ```diff
 diff --git a/vendor/magento/framework/Mview/View/Subscription.php b/vendor/magento/framework/Mview/View/Subscription.php
