@@ -316,9 +316,9 @@ class Patcher implements PluginInterface, EventSubscriberInterface
 
 ## What to do with project-specific patches
 
-So what if you must install 95% of all patches in all projects, but there are a couple of patches that only apply to a specific instance? No problem. The regular way of patching still works. You can use the project's `/m2-hotfixes` directory to store project-specific patches and you can install quality patches per project. Make sure that you do not commit`/m2-hotfixes` that have been copied into your project by the `centralized-patcher` package though, they stay in your project even if you remove them from the `centralized-patcher` package.
+So what if only 95% of the patches are required in all projects, and you have a few patches that apply only to a specific instance. No problem. The regular way to apply patching still works. You can keep project-specific patches in the `/m2-hotfixes` directory, and install quality patches per project. 
 
-One way of making sure that you do not accidentally commit centralized `/m2-hotfixes` in your local project is to add `/m2-hotfixes` to your `.gitignore` file. This does mean that you have to add project-specific `/m2-hotfixes` with `git add –force`.
+If you use this approach, make sure not to commit any patches in the `/m2-hotfixes` that have been copied into your project by the `centralized-patcher` package.  You can prevent accidental commits to your local project by adding `/m2-hotfixes` to your `.gitignore` file. After updating the `.gitignore` file, remember that any project-specific `/m2-hotfixes` must be added using `git add –force`.
 
 ## Running different Adobe Commerce versions
 
