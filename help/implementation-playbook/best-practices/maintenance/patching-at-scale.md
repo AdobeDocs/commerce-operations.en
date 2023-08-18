@@ -37,17 +37,17 @@ Currently, there is no single centralized solution for this problem, but Compose
 
 That covers **security patches**, **required patches**, and **Composer patches**, but what about quality patches and the contents of the `/m2-hotfixes` directory?
 
-## Apply quality patches and `/m2-hotfixes`
+## Apply quality patches and hotfixes
 
 You can install quality patches on both cloud infrastructure and on-premises installations using the `vendor/bin/magento-patches apply` command.
 
->![NOTE]
+>[!NOTE]
 >
 >On cloud infrastructure, you can also install quality patches by listing them in your project's `.magento.env.yaml` file. The example described here requires using the `vendor/bin/magento-patches apply` command.
 
 You must ensure that the `vendor/bin/magento-patches apply` command runs after `composer install` operations. You can add a list of patches to apply in the `composer.json` file of a custom Composer component package, then create a plugin package that runs the command after `composer install` operations.
 
-To summarize, this centralized patching example requires two custom Composer packages:
+To summarize, this centralized patching example requires you to create two custom Composer packages:
 
 - **Component package:** `centralized-patcher`
 
