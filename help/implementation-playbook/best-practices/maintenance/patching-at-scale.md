@@ -69,7 +69,9 @@ The component package must:
 - Define the list of quality patches to install.
 - Run the `vendor/bin/magento-patches` command to install the same list of quality patches across all installations (using the [`centralized-patcher-composer-plugin`](#centralized-patcher-composer-plugin) plugin package as a dependency).
 
-1. Create a `composer.json` file for your new `centralized-patcher` component package with the following contents:
+To create the `centralized-patcher` component package:
+
+1. Create a `composer.json` file with the following contents:
 
    >[!NOTE]
    >
@@ -112,7 +114,7 @@ The component package must:
    }
    ```
 
-   >![NOTE]
+   >[!NOTE]
    >
    >The package copies your `/m2-hotfixes` directory to the root of the target project on `composer install`. Since the cloud deployment scripts apply `/m2-hotfixes` after `composer install`, they will find your patches from this package in the main project and install all of them.
 
@@ -162,7 +164,9 @@ index 03a3bf9..681e0b0 100644
 
 Since this example uses the on-premises method to install quality patches, you must ensure that the `vendor/bin/magento-patches apply` command runs after `composer install` operations. This plugin is triggered after `composer install` operations, which runs the `vendor/bin/magento-patches apply` command.
 
-1. Create a `composer.json` file for your new `centralized-patcher-composer-plugin` plugin package with the following contents:
+To create the `centralized-patcher-compose-plugin` component package:
+
+1. Create a `composer.json` file with the following contents:
 
    ```json
    {
