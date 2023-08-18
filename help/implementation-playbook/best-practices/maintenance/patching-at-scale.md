@@ -3,7 +3,7 @@ title: Best practices for distributing patches at scale
 description: Learn how centralized patching for Adobe Commerce can help you manage enterprise projects.
 role: Developer
 feature: Best Practices
-badge: label="Contributed by Anton Evers, Sr. Technical Architect, Adobe Consulting Services" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contributed by Anton Evers"
+badge: label="Contributed by Anton Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contributed by Anton Evers"
 ---
 
 # Best practices for distributing Adobe Commerce patches at scale
@@ -39,24 +39,24 @@ That covers **security patches**, **required patches**, and **Composer patches**
 
 ## Apply quality patches and `/m2-hotfixes`
 
-You can install quality patches on both cloud infrastructure and on-premises installtions using the `vendor/bin/magento-patches apply` command.
+You can install quality patches on both cloud infrastructure and on-premises installations using the `vendor/bin/magento-patches apply` command.
 
 >![NOTE]
 >
->On cloud infrastructure, you can also install quality patches by listing them in your project's `.magento.env.yaml` file.
+>On cloud infrastructure, you can also install quality patches by listing them in your project's `.magento.env.yaml` file. The example described here requires using the `vendor/bin/magento-patches apply` command.
 
-You must ensure that the `vendor/bin/magento-patches apply` command runs after the `composer install` command. You can add a list of patches to apply in the `composer.json` file of a custom Composer component package, then create a plugin package that runs the command after `composer install` operations.
+You must ensure that the `vendor/bin/magento-patches apply` command runs after `composer install` operations. You can add a list of patches to apply in the `composer.json` file of a custom Composer component package, then create a plugin package that runs the command after `composer install` operations.
 
 To summarize, this centralized patching example requires two custom Composer packages:
 
-- **Component:** `centralized-patcher`
+- **Component package:** `centralized-patcher`
 
-   - Defines the list of quality patches and `m2-hotfixes` to apply
+   - Defines the list of quality patches and `m2-hotfixes` to install
    - Requires the `centralized-patcher-composer-plugin` package, which runs the `vendor/bin/magento-patches apply` command after `composer install` operations
 
-- **Plugin:** `centralized-patcher-composer-plugin`
+- **Plugin package:** `centralized-patcher-composer-plugin`
 
-   - Defines a `Patcher` class that reads the quality patches list from the `centralized-patcher` package
+   - Defines a `CentralizedPatcher` PHP class that reads the quality patches list from the `centralized-patcher` package
    - Runs the `vendor/bin/magento-patches apply` command to install the list of quality patches after `composer install` operations
 
 ### `centralized-patcher`
@@ -67,13 +67,13 @@ The component package must:
 
 - Copy the contents of the `/m2-hotfixes` directory into all your installations during deployment.
 - Define the list of quality patches to install.
-- Run the `vendor/bin/magento-patches` command to apply the same list of quality patches to all installations (using the [`centralized-patcher-composer-plugin`](#centralized-patcher-composer-plugin) plugin package as a dependency).
+- Run the `vendor/bin/magento-patches` command to install the same list of quality patches across all installations (using the [`centralized-patcher-composer-plugin`](#centralized-patcher-composer-plugin) plugin package as a dependency).
 
 1. Create a `composer.json` file for your new `centralized-patcher` component package with the following contents:
 
    >[!NOTE]
    >
-   >The `require` attribute in the following example shows a reference to the [plugin package](#centralized-patcher-composer-plugin) that you must create later this example.
+   >The `require` attribute in the following example shows a `require` dependency on the [plugin package](#centralized-patcher-composer-plugin) that you must create later this example.
 
    ```json
    {
@@ -116,7 +116,7 @@ The component package must:
    >
    >The package copies your `/m2-hotfixes` directory to the root of the target project on `composer install`. Since the cloud deployment scripts apply `/m2-hotfixes` after `composer install`, they will find your patches from this package in the main project and install all of them.
 
-1. List the quality patches to apply in the `quality-patches` attribute.
+1. Define the quality patches to install in the `quality-patches` attribute.
 
    ```json
    {
@@ -160,7 +160,7 @@ index 03a3bf9..681e0b0 100644
 
 ### `centralized-patcher-composer-plugin`
 
-Since this example uses the on-premises method to apply quality patches, you must ensure that the `vendor/bin/magento-patches apply` command runs after `composer install` operations. This plugin is triggered after `composer install` operations, which runs the `vendor/bin/magento-patches apply` command.
+Since this example uses the on-premises method to install quality patches, you must ensure that the `vendor/bin/magento-patches apply` command runs after `composer install` operations. This plugin is triggered after `composer install` operations, which runs the `vendor/bin/magento-patches apply` command.
 
 1. Create a `composer.json` file for your new `centralized-patcher-composer-plugin` plugin package with the following contents:
 
@@ -197,26 +197,24 @@ Since this example uses the on-premises method to apply quality patches, you mus
    }
    ```
 
-The `Patcher` class reads the quality patches list from the [`centralized-patcher`](#centralized-patcher) component package and installs them immediately after every `composer install` command.
+1. Create a PHP file and define a `CentralizedPatcher` class to read the quality patches list from the [`centralized-patcher`](#centralized-patcher) component package and install them immediately after every `composer install` operation.
 
-**Patcher class**
+   ```php
+   <?php
+   declare(strict_types=1);
 
-```php
-<?php
-declare(strict_types=1);
+   namespace MagentoServices\CentralizedPatcherComposerPlugin;
 
-namespace MagentoServices\CentralizedPatcherComposerPlugin;
+   use Composer\Composer;
+   use Composer\EventDispatcher\EventSubscriberInterface;
+   use Composer\IO\IOInterface;
+   use Composer\Plugin\PluginInterface;
+   use Composer\Script\ScriptEvents;
+   use Symfony\Component\Process\Exception\ProcessFailedException;
+   use Symfony\Component\Process\Process;
 
-use Composer\Composer;
-use Composer\EventDispatcher\EventSubscriberInterface;
-use Composer\IO\IOInterface;
-use Composer\Plugin\PluginInterface;
-use Composer\Script\ScriptEvents;
-use Symfony\Component\Process\Exception\ProcessFailedException;
-use Symfony\Component\Process\Process;
-
-class Patcher implements PluginInterface, EventSubscriberInterface
-{
+   class Patcher implements PluginInterface, EventSubscriberInterface
+   {
     /**
      * @var Composer $composer
      */
@@ -311,12 +309,12 @@ class Patcher implements PluginInterface, EventSubscriberInterface
             throw new \RuntimeException($error, $process->getExitCode());
         }
     }
-}
-```
+   }
+   ```
 
 >[!TIP]
 >
->You can see the two packages in action on an Adobe Commerce on cloud infrastructure context on GitHub. See [code-examples](#code-examples).
+>Refer to the [code-examples](#code-examples) to see the two packages described in this example in action.
 
 
 ## What to do with project-specific patches
