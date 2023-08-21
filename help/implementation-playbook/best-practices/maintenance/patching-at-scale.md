@@ -39,13 +39,13 @@ That covers **security patches**, **required patches**, and **Composer patches**
 
 ## Apply quality patches and hotfixes
 
-You can install quality patches on both cloud infrastructure and on-premises installations using the `vendor/bin/magento-patches apply` command.
+You can install quality patches on both cloud infrastructure and on-premises installations using the `vendor/bin/magento-patches apply` command. You must ensure that the `vendor/bin/magento-patches apply` command runs after `composer install` operations.
 
 >[!NOTE]
 >
 >On cloud infrastructure, you can also install quality patches by listing them in your project's `.magento.env.yaml` file. The example described here requires using the `vendor/bin/magento-patches apply` command.
 
-You must ensure that the `vendor/bin/magento-patches apply` command runs after `composer install` operations. You can add a list of patches to apply in the `composer.json` file of a custom Composer component package, then create a plugin package that runs the command after `composer install` operations.
+You can specify the patches to apply in the `composer.json` file of a custom Composer component package, then create a plugin package that runs the command after `composer install` operations.
 
 To summarize, this centralized patching example requires you to create two custom Composer packages:
 
@@ -99,7 +99,7 @@ To create the `centralized-patcher` component package:
    }
    ```
 
-1. Create an `/m2-hotfixes` directory inside your package and add it to the `map` attribute in your `composer.json` file. The `map` attribute contains files to copy from this package into the root of the target project that you want to patch. Patches in this directory are automatically installed during `composer install` operations.
+1. Create an `/m2-hotfixes` directory inside your package and add it to the `map` attribute in your `composer.json` file. The `map` attribute contains files to copy from this package into the root of the target project that you want to patch.
 
    ```json
    {
@@ -116,7 +116,7 @@ To create the `centralized-patcher` component package:
 
    >[!NOTE]
    >
-   >The package copies your `/m2-hotfixes` directory to the root of the target project on `composer install`. Since the cloud deployment scripts apply `/m2-hotfixes` after `composer install`, they will find your patches from this package in the main project and install all of them.
+   >The `centralized-patcher` package copies the contents of the `/m2-hotfixes` directory into the m2-hotfixes directory of the target project on `composer install`.  Since the cloud deployment scripts apply m2-hotfixes after `composer install`, all hotfixes are installed by the deployment mechanism.
 
 1. Define the quality patches to install in the `quality-patches` attribute.
 
@@ -137,13 +137,14 @@ To create the `centralized-patcher` component package:
    }
    ```
 
-The `quality-patches` attribute in the preceding code sample contains two patches from the [full patch list](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) as an example. Quality patches are installed in every project that requires this package. The contents of the `/m2-hotfixes` directory of this package will also be copied recursively into the `/m2-hotfixes` directory of any project that requires this package. During Adobe Commerce on cloud infrastructure deployments, those hotfixes are installed by the deployment scripts.
+
+The `quality-patches` attribute in the preceding code sample contains two patches from the [full patch list](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) as an example.  These  quality patches are installed on every project that requires the `centralized-patcher` package using the ./vendor/bin/magento-patches apply` command.
 
 For testing purposes, you can create an example patch (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
 >[!NOTE]
 >
->You should place your own patches in this directory together with patches you receive directly from Adobe Commerce Support.
+>You should place your own patches in the `m2-hotfixes` directory together with patches you receive directly from Adobe Commerce Support.
 
 ```diff
 diff --git a/vendor/magento/framework/Mview/View/Subscription.php b/vendor/magento/framework/Mview/View/Subscription.php
