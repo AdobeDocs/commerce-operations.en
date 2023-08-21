@@ -31,6 +31,10 @@ Since there are many different types of patches and many ways to apply them, how
 1. Selected **quality patches** included in the [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **Custom patches** and Adobe Commerce Support patches in the `/m2-hotfixes` directory in alphabetical order by patch name.
 
+   >[!IMPORTANT]
+   >
+   >The more patches you apply, the more complex your code becomes. Complex code can make upgrading to a new version of Adobe commerce more difficult and increase your total cost of ownership.
+
 If you are responsible for maintaining multiple installations of Adobe Commerce, ensuring that all instances have the same set of patches installed can be challenging. Each installation has its own git repository, `/m2-hotfixes` directory, and `composer.json` file. The only guarantee that you have is that the **security patches** and **required patches** for cloud users are all installed as part of your main Adobe Commerce version.
 
 Currently, there is no single centralized solution for this problem, but Composer offers a way to bridge the gap. The [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) package allows you to [apply patches from dependencies](https://github.com/cweagans/composer-patches#allowing-patches-to-be-applied-from-dependencies). You can create a Composer package that installs all your patches, then require that package in all of your projects.
@@ -362,3 +366,6 @@ This way you can centrally manage all your patches for all your installations an
 - [Centralized patches in Adobe Commerce on cloud infrastructure](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
 - [Centralized patcher Composer plugin](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [Centralized patcher component](https://github.com/AntonEvers/centralized-patcher)
+
+
+[def]: lt.
