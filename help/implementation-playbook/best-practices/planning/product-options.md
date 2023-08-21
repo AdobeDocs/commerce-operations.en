@@ -2,7 +2,7 @@
 title: Product options configuration best practices
 description: Optimize Adobe Commerce performance by limiting the number of product options.
 role: Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: 7571a163-798a-40be-b26f-4a184bceb809
 ---
 # Product options best practices

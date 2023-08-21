@@ -2,7 +2,7 @@
 title: Product variations configuration best practices
 description: Learn how to optimize Adobe Commerce performance by limiting the number of configured product variations.
 role: Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: a19dd8b4-23b8-498f-be51-a0adfcd12a11
 ---
 # Best practices for configuring Product variations

@@ -2,7 +2,7 @@
 title: Best practices for product listing pagination
 description: Learn how to optimize Adobe Commerce performance by managing the number of products that display on each page of the storefront catalog.
 role: User, Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: 473f23a9-53fb-41a6-9b3a-af7bd1208be0
 ---
 # Best practices for product listing pagination 
