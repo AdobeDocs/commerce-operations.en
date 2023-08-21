@@ -1,7 +1,7 @@
 ---
 title: Catalog configuration paths reference
 description: See a list of catalog configuration values.
-feature: Configuration, Catalogs
+feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 ---
 # Catalog configuration paths reference
