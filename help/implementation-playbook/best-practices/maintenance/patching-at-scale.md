@@ -138,7 +138,7 @@ To create the `centralized-patcher` component package:
    ```
 
 
-The `quality-patches` attribute in the preceding code sample contains two patches from the [full patch list](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) as an example.  These  quality patches are installed on every project that requires the `centralized-patcher` package using the ./vendor/bin/magento-patches apply` command.
+The `quality-patches` attribute in the preceding code sample contains two patches from the [full patch list](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) as an example.  These  quality patches are installed on every project that requires the `centralized-patcher` package using the `vendor/bin/magento-patches apply` command.
 
 For testing purposes, you can create an example patch (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
