@@ -26,7 +26,7 @@ If you manage multiple Adobe Commerce installations, [patching](../../../upgrade
 Since there are many different types of patches and many ways to apply them, how do you know which patch is applied first? The more patches you have, the greater the chance that they will apply to the same file or to the same line of code. Patches are applied in the following order:
 
 1. **Security patches** are part of the static code base of an Adobe Commerce release.
-1. **Composer patches** through `composer install` and `composer update` CLI commands.
+1. **Composer patches** through `composer install` and `composer update` plugins such as [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
 1. All **required patches** included in the [Cloud Patches for Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html) package.
 1. Selected **quality patches** included in the [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **Custom patches** and Adobe Commerce Support patches in the `/m2-hotfixes` directory in alphabetical order by patch name.
@@ -37,7 +37,7 @@ Since there are many different types of patches and many ways to apply them, how
 
 If you are responsible for maintaining multiple installations of Adobe Commerce, ensuring that all instances have the same set of patches installed can be challenging. Each installation has its own git repository, `/m2-hotfixes` directory, and `composer.json` file. The only guarantee that you have is that the **security patches** and **required patches** for cloud users are all installed as part of your main Adobe Commerce version.
 
-Currently, there is no single centralized solution for this problem, but Composer offers a way to bridge the gap. The [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) package allows you to [apply patches from dependencies](https://github.com/cweagans/composer-patches#allowing-patches-to-be-applied-from-dependencies). You can create a Composer package that installs all your patches, then require that package in all of your projects.
+Currently, there is no single centralized solution for this problem, but Composer offers a way to bridge the gap. The [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) package allows you to [apply patches from dependencies](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies). You can create a Composer package that installs all your patches, then require that package in all of your projects.
 
 That covers **security patches**, **required patches**, and **Composer patches**, but what about quality patches and the contents of the `/m2-hotfixes` directory?
 
@@ -149,6 +149,8 @@ For testing purposes, you can create an example patch (`/m2-hotfixes/EXAMPLE-PAT
 >[!NOTE]
 >
 >You should place your own patches in the `m2-hotfixes` directory together with patches you receive directly from Adobe Commerce Support.
+
+An example patch file (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`):
 
 ```diff
 diff --git a/vendor/magento/framework/Mview/View/Subscription.php b/vendor/magento/framework/Mview/View/Subscription.php
@@ -338,7 +340,7 @@ Make sure that you set the right dependency in the `centralized-patcher` compone
 
 ## Understanding the result
 
-Like with Adobe Commerce on cloud infrastructure, this topic assumes that your deployment process uses `composer install` commands and not `composer update` or `git pull` to deploy new code. The flow of centralized patch installation will then look as follows:
+Like with Adobe Commerce on cloud infrastructure, this article assumes that your deployment process uses the `composer install` command and not `composer update` or `git pull` to deploy new code to your servers. The flow of centralized patch installation will then look as follows:
 
 1. Composer install
 
