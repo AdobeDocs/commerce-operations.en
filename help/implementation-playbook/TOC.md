@@ -92,6 +92,7 @@ mini-toc-levels: 3
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
     - [General](best-practices/development/general.md)
+    - [Code review](best-practices/development/code-review.md)
     - [Image optimization](best-practices/development/image-optimization.md)
     - [Troubleshooting](best-practices/development/troubleshooting.md)
     - [Optimize CSS and JS files](best-practices/development/optimize-css-js-files.md)
