@@ -9,7 +9,7 @@ feature: Best Practices
 
 This article outlines best practices to optimize the backend performance of Adobe Commerce sites with a focus on database optimization and testing.
 
-These recommendations and examples are inspired by performance enhancement techniques that Objectsource uses in real-world client engagements to deliver high-performing Adobe Commerce sites.
+Recommendations and examples are inspired by performance enhancement techniques that Objectsource uses in real-world client engagements to deliver high-performing Adobe Commerce sites.
 
 
 ## Affected products and versions
@@ -37,7 +37,7 @@ As a precursor to stress testing, load testing is an essential practice for larg
 
 Use GTmetrix to simulate heavy traffic and analyze site performance to get a clear understanding of site capacity. This analysis helps identify and address bottlenecks and identify opportunities to optimize, ensuring that Commerce sites can operate effectively during performance peaks.
 
-## Identify and resolve performance issues
+### Identify and resolve performance issues
 
 Address performance issues by using various tools like New Relic and Observation for Adobe Commerce to detect bottlenecks and optimize Commerce sites effectively. Use these tools to analyze site performance and identify performance issues related to:
 
@@ -48,7 +48,7 @@ Address performance issues by using various tools like New Relic and Observation
 
 For example, you can closely examine transactions with a focus on product detail and category pages. Identify time-consuming processes that can be optimized to improve performance. In one client engagement, Objectsource noticed a performance issue on a product detail page and found an API call that was consuming 3.5% of the performance time. Based on this result, they examined the hierarchy of code execution to pinpoint and fix the issue causing the bottleneck.
 
-## Optimize MySQL performance
+### Optimize MySQL performance
 
 You can optimize MySQL performance by implementing database clustering and optimizing MySQL queries.
 
@@ -66,7 +66,7 @@ Addressing MySQL performance issues through clustering and query optimization is
 
 ## Manage cron jobs effectively: performance and timing
 
-Cron jobs play a vital role in processing site background tasks, such as report generation and product indexing. However, cron job optimization  requires careful consideration of their impact on overall performance. Developers must evaluate the scheduling frequency and determine the optimal timing based on specific requirements.
+Cron jobs play a vital role in processing site background tasks, such as report generation and product indexing. However, cron job optimization requires careful consideration of their impact on overall performance. Developers must evaluate the scheduling frequency and determine the optimal timing based on specific requirements.
 
 Balancing performance and convenience, it is often advisable to schedule cron jobs during low-traffic periods. However, dealing with clients in different time zones can present challenges, demanding a thoughtful approach to ensure a harmonious experience across multiple geographies.
 
