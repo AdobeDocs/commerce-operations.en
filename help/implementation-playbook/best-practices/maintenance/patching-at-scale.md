@@ -368,6 +368,3 @@ This way you can centrally manage all your patches for all your installations an
 - [Centralized patches in Adobe Commerce on cloud infrastructure](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
 - [Centralized patcher Composer plugin](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [Centralized patcher component](https://github.com/AntonEvers/centralized-patcher)
-
-
-[def]: lt.
