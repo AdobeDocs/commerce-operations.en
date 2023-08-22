@@ -3,6 +3,7 @@ title: Best practices for private content blocks
 description: Learn best practices for configuring private content blocks to optimize storefront performance.
 role: Developer
 feature: Best Practices
+hidefromtoc: yes
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
 ---
 # Best practices for private content blocks
