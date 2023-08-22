@@ -26,6 +26,13 @@ On average, code review shouldn't take more than 10 to 20% of development effort
 
 If code review takes longer, it can affect project budget and timeline. To address the issue, you'll first need to identify the root cause. In most cases, it's because either requirements are poorly translated into development tickets (due to communication issues, poor user stories) or it's a coaching issue. In the first case, the recommended mitigation is to make sure that tickets have enough information for team members to efficiently deliver the requirements. In the second case, you may need to adjust the team structure to include more senior engineers or get approval outside mentoring and coaching.
 
+## Affected products and versions
+
+[All supported versions](../../../release/versions.md) of:
+
+- Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises
+
 ## What to look for in code review
 
 ### Style and smell
