@@ -91,6 +91,7 @@ mini-toc-levels: 3
     - [Payments storage processing](best-practices/planning/payment-processing-storage.md)
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
+    - [General](best-practices/development/general.md)
     - [Image optimization](best-practices/development/image-optimization.md)
     - [Troubleshooting](best-practices/development/troubleshooting.md)
     - [Optimize CSS and JS files](best-practices/development/optimize-css-js-files.md)

@@ -16,6 +16,10 @@ The development phase includes the following activities:
 - Sprint review
 - Customer sign-off
 
+>[!TIP]
+>
+>See [general best practices](general.md) for high-level recommendations about overall management of the development process.
+
 The following sections include best practices information for the development phase.
 
 ## Code management
