@@ -27,7 +27,7 @@ The following sections include best practices information for the development ph
 | Best practice                                    | Description                                                                                                                          |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | [Code review](code-review.md)                    | Describes a process for validating that implemented functionality meets requirements                                                 |
-| [Composer vs Git](code-distribution.md)            | Helps you decide how to distribute custom code with consideration for release management, code complexity, and dependency management |
+| [Composer vs Git](code-management.md)            | Helps you decide how to distribute custom code with consideration for release management, code complexity, and dependency management |
 | [GRA examples](global-reference-architecture.md) | Provides common methods of organizing a [global reference architecture](../../architecture/global-reference.md) code base            |
 
 ## Composer

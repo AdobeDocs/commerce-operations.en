@@ -1,10 +1,11 @@
 ---
-title: Code distribution best practices
+title: Code review best practices
 description: Learn about code management best practices for the development phase of Adobe Commerce projects.
 feature: Best Practices
+hidefromtoc: yes
 ---
 
-# Code distribution best practices for Adobe Commerce projects
+# Code management best practices for Adobe Commerce
 
 This topic is designed to help you decide whether to use Git or Composer to distribute custom code, with consideration for release management, code complexity, and dependency management.
 
