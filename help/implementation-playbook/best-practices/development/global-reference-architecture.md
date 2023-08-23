@@ -26,7 +26,7 @@ See Composer project structure best practices for setting up this method.
 
 ![Diagram illustrating the separate packages option for global reference architecture](../../../assets/playbooks/gra-separate-packages.png)
 
-The most flexible way to manage GRA Composer packages is through metapackages. Metapackages contain a `composer.json` file only, which defines other package dependencies. You should create metapackages using [Private Packagist](https://packagist.com/) repositories.
+The most flexible way to manage GRA Composer packages is through metapackages. Metapackages contain a `composer.json` file only, which defines other package dependencies. Create metapackages using [Private Packagist](https://packagist.com/) repositories.
 
 ### Main project `composer.json`
 
@@ -81,7 +81,7 @@ The most flexible way to manage GRA Composer packages is through metapackages. M
 }
 ```
 
-Each module, language pack, theme, and library gets its own Git repository. Each Git repository synchronizes to the Private Packagist repository automatically and generates a package there as long as there is a `composer.json` file in the root of the Git repository.
+Each module, language pack, theme, and library has its own Git repository. Each Git repository synchronizes to the Private Packagist repository automatically and generates a package there as long as there is a `composer.json` file in the root of the Git repository.
 
 ## Options 2: Bulk packages
 
@@ -155,7 +155,7 @@ To set up this option:
    - `m2-region-x`/`m2-brand-x` (for example, `m2-emea`/`m2-adobe`)
    - `m2-release-region-x`/`m2-release-brand-x` (for example, `m2-release-emea`/`m2-release-adobe`)
 
-1. Create a `release/` directory and run the following in order to create a shared Git history for all repos.
+1. Create a `release/` directory and run the following to create a shared Git history for all repos.
 
    ```bash
    git init
@@ -219,9 +219,9 @@ To set up this option:
    git push
    ```
 
-1. You can remove the `.gitkeep` file at this time.
+1. You can remove the `.gitkeep` file now.
 
-1. Now, you can deploy the `release` repository to the production, test, QA and development servers. Upgrading `core`, `GRA`, and `brand` code is as easy running the following commands:
+1. Now, you can deploy the `release` repository to the production, test, QA, and development servers. Upgrading `core`, `GRA`, and `brand` code is as easy running the following commands:
 
    ```bash
    git fetch --all
@@ -233,7 +233,7 @@ To set up this option:
 
 This strategy closely mimics the way that the Magento Open Source Git repository works.
 
-All code is developed and QA'd in a single repository, while automation distills packages from this single repository, that can be installed on UAT and production using Composer.
+All code is developed and tested in a single repository. Automation distills packages from this single repository, which can be installed on UAT and production environments using Composer.
 
 ![Diagram illustrating the monorepo option for global reference architecture](../../../assets/playbooks/gra-monorepo1.png)
 
@@ -256,14 +256,14 @@ See the following resources for more information about this automation:
 
 It is not advisable to use a combined approach using Composer for GRA packages and the `app/` directory for brand or region packages.
 
-You will not only get all _advantages_ but also all _disadvantages_ of both methods. You should pick one or the other (Git or Composer), to work optimally.
+You not only get all _advantages_ but also all _disadvantages_ of both methods. You should pick one or the other (Git or Composer), to work optimally.
 
 ## Solutions to avoid
 
 - **Module naming conventions to signify GRA or brand**
 
-  Naming modules to signify GRA or brand will lead to lack of flexibility. Instead, use Composer metapackages to determine which group a module belongs to. For example, for customer VF, package `vf/meta-gra` contains references to all GRA packages and can be installed using the `composer require vf/meta-gra` command. Package `vf/meta-kipling` contains references to all Kipling specific packages and to the `vf/meta-gra` package. Modules are named `vf/module-sales` and `vf/module-sap` for example. This naming convention allows you to move packages between brand and GRA status, with low impact.
+  Naming modules to signify GRA or brand leads to lack of flexibility. Instead, use Composer metapackages to determine which group a module belongs to. For example, for customer VF, package `vf/meta-gra` contains references to all GRA packages and can be installed using the `composer require vf/meta-gra` command. Package `vf/meta-kipling` contains references to all Kipling specific packages and to the `vf/meta-gra` package. Modules are named `vf/module-sales` and `vf/module-sap` for example. This naming convention allows you to move packages between brand and GRA status, with low impact.
 
 - **Adobe Commerce core upgrades per instance**
 
-  Schedule Adobe Commerce core upgrades, including patch upgrades, for different brands or regions to be executed as close together as possible. Supporting multiple Adobe Commerce versions for shared modules leads to forking of modules due to compatibility constraints and generally more than doubles the maintenance effort. Prevent this by making sure all instances are running on the same Adobe Commerce version before continuing regular development.
+  Schedule Adobe Commerce core upgrades, including patch upgrades, for different brands or regions to be executed as close together as possible. Supporting multiple Adobe Commerce versions for shared modules leads to forking of modules due to compatibility constraints and more than doubles the maintenance effort. Prevent this increased effort by making sure that all instances are running on the same Adobe Commerce version before continuing regular development.

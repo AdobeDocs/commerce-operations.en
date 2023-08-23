@@ -1,6 +1,6 @@
 ---
 title: General development best practices
-description: Learn about general best practices to manage the development process for Adobe Commerce projects.
+description: Learn about general best practices developing Adobe Commerce projects.
 feature: Best Practices
 ---
 
@@ -12,11 +12,11 @@ This topic describes the baseline for a healthy Adobe Commerce development proce
 >
 >Adobe Technical Architects use these best practices as a reference during engagements involving development.
 
-These best practices have been developed based on years of experience developing and delivering Commerce projects. Adobe recommends that technical initiatives follow these best practices and that existing processes and code be improved to align with them.
+These best practices have been developed based on years of experience developing and delivering Commerce projects. Adobe recommends that technical initiatives follow these best practices and that you improve existing processes and code to align with them.
 
 ## Text conventions
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this topic are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this topic are to be interpreted as described in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
 ## Process
 
@@ -26,23 +26,23 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 1. Development SHOULD NOT start until at least a development and QA environment are available.
 1. Project-specific requirements that are mandatory for development to start MAY be documented in a _Definition of Ready_.
 1. Sign-off SHOULD be done by a client representative that is authorized to sign off on project deliverables.
-1. In Agile project methodologies, additional requirements MAY follow the sign-off. These SHOULD be treated as new requirements and SHOULD be captured, architected, and planned accordingly.
+1. In Agile project methodologies, additional requirements MAY follow the sign-off. These requirements SHOULD be treated as new requirements and SHOULD be captured, architected, and planned accordingly.
 1. All development MUST be functionally tested by the developer before submission.
 1. All development SHOULD pass automated tests before it is submitted for code review. This MAY be configured as an automated process following pull request creation.
 1. All development MUST pass manual code review by a Technical Architect or Lead Developer before it is submitted for quality assurance.
 1. All development MUST pass quality assurance before delivery to the client.
-1. Project specific requirements that are mandatory for delivery MAY be documented in a "Definition of Done".
+1. Project-specific requirements that are mandatory for delivery MAY be documented in a "Definition of Done".
 
 ## Environment
 
 1. All developers SHOULD use the same IDE. PhpStorm is the RECOMMENDED IDE for Adobe Commerce development.
 1. All developers SHOULD develop and test using the same technology stack as used on the (future) production servers. The versions of the software in this technology stack MUST match the major and minor version of the software installed on the production servers. See [system requirements](../../../installation/system-requirements.md) for details about the typical technology stack for Adobe Commerce.
-1. The System Administrator or Technical Architect MAY provide the team with a centrally maintained local development environment in order to assure and promote equal and up-to-date local environments.
+1. The System Administrator or Technical Architect MAY provide the team with a centrally maintained local development environment to assure and promote equal and up-to-date local environments.
 1. Developers and QA engineers MUST have access to the command line, the database, and the log files of the QA environment. This MAY require a VPN connection.
 
 ## Coding standards
 
-1. All code SHOULD follow conventions in architecture, methodology and coding standards. Creativity is desired in function, not form.
+1. All code SHOULD follow conventions in architecture, methodology, and coding standards. Creativity is desired in function, not form.
 1. All code SHOULD be in line with the [Adobe Commerce Architecture Guide](https://developer.adobe.com/commerce/php/architecture/){target="_blank}.
 1. All code SHOULD adhere to the [Adobe Commerce Coding Standards](https://developer.adobe.com/commerce/php/coding-standards/).
 1. All code SHOULD adhere to the [Adobe Commerce Technical Guidelines](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
@@ -55,7 +55,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 ## Versioning
 
 Module versions MUST adhere to the [Semantic Versioning 2.0.0 standard](https://semver.org/).
-Dependencies on the Magento 2 codebase SHOULD follow the [Module Version Dependencies guidelines](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
+Dependencies on the Adobe Commerce codebase SHOULD follow the [Module Version Dependencies guidelines](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
 ## REVISION CONTROL
 

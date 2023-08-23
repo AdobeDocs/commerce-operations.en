@@ -21,9 +21,9 @@ At a high level, the code review process should consist of the following steps:
 
 Code review is also a primary tool for communication and knowledge transfer within a team. Even if a pull request doesn't contain major issues and implements the required business logic, you can use it as an opportunity to suggest more improvements after it's been merged.
 
-On average, code review shouldn't take more than 10 to 20% of development effort. That's assuming that the development team consists of senior engineers that work well together.
+On average, code review shouldn't take more than 10% to 20% of development effort. That's assuming that the development team consists of senior engineers that work well together.
 
-If code review takes longer, it can affect project budget and timeline. To address the issue, you'll first need to identify the root cause. In most cases, it's because either requirements are poorly translated into development tickets (due to communication issues, poor user stories) or it's a coaching issue. In the first case, the recommended mitigation is to make sure that tickets have enough information for team members to efficiently deliver the requirements. In the second case, you may need to adjust the team structure to include more senior engineers or get approval outside mentoring and coaching.
+If code review takes longer, it can affect project budget and timeline. To address the issue, you first must identify the root cause. Usually, it's because either requirements are poorly translated into development tickets (due to communication issues, poor user stories) or it's a coaching issue. In the first case, the recommended mitigation is to make sure that tickets have enough information for team members to efficiently deliver the requirements. In the second case, you might need to adjust the team structure to include more senior engineers or get approval outside mentoring and coaching.
 
 ## Affected products and versions
 
@@ -36,7 +36,7 @@ If code review takes longer, it can affect project budget and timeline. To addre
 
 ### Style
 
-These can be tested automatically by running the PhpStorm inspection (see below).
+Style can be tested automatically by running the PhpStorm inspection (see below).
 
 Make sure to configure [PHPMD and PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) and to run the [Coding Standard](https://github.com/magento/magento-coding-standard) tool from the CLI (also below). There is some overlap, but both also have unique tests.
 
@@ -78,7 +78,7 @@ Reviews for security are done manually, which can be aided by text search. Part 
 - Are exceptions logged when needed? Are the right types of exceptions used?
 - Can `around` plugins be avoided?
 - Do plugins return the correct types of data?
-- Can you find any raw SQL queries, that should be built using the database abstraction layer?
+- Can you find any raw SQL queries that should be built using the database abstraction layer?
 - Is any new type of data exposed to any type of user, admin, or frontend? Is that exposure a security risk?
 - Is user-generated data validated? Everything that comes from the browser is considered user generated, including cookie values and server headers.
 
@@ -89,7 +89,7 @@ Reviews for privacy and [GDPR](../../../security-and-compliance/privacy/gdpr.md)
 - Does the code handle customer data or emails? Pay special attention.
 - If this code can be executed in a loop, can it leak customer data from one loop cycle to another?
 - Indicators of a risk are imports, cron jobs, transactional emails, and batch queue handlers.
-- Ensure the isolation of user data in loops. Advise using factories or repositories to create new models in the loop cycle. These are not accessible outside of the loop.
+- Ensure the isolation of user data in loops. Adobe advises using factories or repositories to create models in the loop cycle, which are not accessible outside of the loop.
 
 ### Mentoring
 
@@ -97,11 +97,11 @@ Reviews for mentoring are done manually.
 
 - Look for places to share knowledge with the goal of educating the team.
 - If your comment is purely educational, but not critical to meeting the standards, indicate that it's not mandatory for the author to resolve it.
-- If you see something nice, tell the developer, especially when they addressed one of your comments in a great way. Code reviews often just focus on mistakes, but they should offer encouragement and appreciation for good practices as well. It's sometimes even more valuable, in terms of mentoring, to tell a developer what they did right than to tell them what they did wrong.
+- If you see something nice, tell the developer, especially when they addressed one of your comments in a great way. Code reviews often focus on mistakes, but they should offer encouragement and appreciation for good practices as well. It's sometimes even more valuable, in terms of mentoring, to tell a developer what they did right than to tell them what they did wrong.
 
 ## Automation
 
-Developers can use automation to review DI compiliation, database schema, composer validation, and compliance with the coding standards:
+Developers can use automation to review DI compilation, database schema, composer validation, and compliance with the coding standards:
 
 - DI compilation—Run the following CLI commands to see if the code can be compiled without any issues.
 

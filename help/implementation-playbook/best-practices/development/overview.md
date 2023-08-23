@@ -25,34 +25,34 @@ The following sections include best practices information for the development ph
 
 ## Code management
 
-| Best practice                                    | Description                                                                                                                          |
-|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [Code review](code-review.md)                    | Recommended validation process to ensure that implemented functionality meets requirements                                                 |
+| Best practice                                    | Description                                                                                                                   |
+|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Code review](code-review.md)                    | Recommended validation process to ensure that implemented functionality meets requirements                                    |
 | [Composer vs Git](code-management.md)            | Determine how to distribute custom code with consideration for release management, code complexity, and dependency management |
-| [GRA examples](global-reference-architecture.md) | Understand common methods of organizing a [global reference architecture](../../architecture/global-reference.md) code base            |
+| [GRA examples](global-reference-architecture.md) | Understand common methods of organizing a [global reference architecture](../../architecture/global-reference.md) code base   |
 
 ## Composer
 
-| Best practice                                   | Description                                                                                 |
-|-------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Best practice                                   | Description                                                                |
+|-------------------------------------------------|----------------------------------------------------------------------------|
 | Development                                     | Develop Composer modules in-place in the `vendor/` directory               |
 | [Patching](../maintenance/patching-at-scale.md) | Implement a centralized patching strategy                                  |
 | Project structure                               | Set up and maintain the separate packages option described in GRA examples |
-| Tips and tricks                                 | Common tasks and guidance for quickly resolving issues                            |
+| Tips and tricks                                 | Common tasks and guidance for quickly resolving issues                     |
 
 ## Database
 
 | Best practice                                                  | Description                                                                     |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Table modification](modifying-core-and-third-party-tables.md) | Describes how and when to modify Adobe Commerce and third-party database tables |
+| [Table modification](modifying-core-and-third-party-tables.md) | Determine how and when to modify Adobe Commerce and third-party database tables |
 
 ## File optimization
 
-| Best practice                          | Description                                                                                                                    |
-|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Catalog image resizing                 | Provides guidance on image resizing before a store goes into production to ensure optimal performance                          |
-| [CSS and JS](optimize-css-js-files.md) | Describes how to merge and minify cascading stylesheet (CSS) and JavaScript (JS) files with the Admin or from the command line |
-| [Images](image-optimization.md)        | Describes how to optimize images and use Fastly to optimize response time                                                      |
+| Best practice                          | Description                                                                                                   |
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Catalog image resizing                 | Provides guidance on image resizing before a store goes into production to ensure optimal performance         |
+| [CSS and JS](optimize-css-js-files.md) | Merge and minify cascading style sheet (CSS) and JavaScript (JS) files with the Admin or from the command line |
+| [Images](image-optimization.md)        | Optimize images and use Fastly to optimize response time                                                      |
 
 ## Frontend development
 
@@ -62,9 +62,9 @@ The following sections include best practices information for the development ph
 
 ## Git
 
-| Best practice      | Description                                                           |
-|--------------------|-----------------------------------------------------------------------|
-| Branching strategy | Describes best practices for managing source code in git repositories |
+| Best practice      | Description                            |
+|--------------------|----------------------------------------|
+| Branching strategy | Manage source code in Git repositories |
 
 ## PHP development
 
@@ -72,13 +72,13 @@ The following sections include best practices information for the development ph
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exception handling                                                                      | Describes recommended methods for logging exceptions                                                                                              |
 | [Extensions](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Describes development patterns to help ensure compatibility between your extension, future version of Adobe Commerce, and other custom extensions |
-| [Private content blocks](private-content-block-configuration.md)                        | Describes how to configure private content blocks to optimize storefront performance                                                              |
+| [Private content blocks](private-content-block-configuration.md)                        | Configure private content blocks to optimize storefront performance                                                                               |
 
 ## Platform and services
 
 | Best practice                                                                                                                                          | Description                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | [Builds and deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Describes best practices for the build and deploy stages of Adobe Commerce on cloud infrastructure projects |
-| Debugging                                                                                                                                              | Describes how to systematically and effectively debug the Adobe Commerce framework                          |
-| [Static content deployment](static-content-deployment.md)                                                                                              | Describes how to avoid issues with static content not appearing on your storefront                          |
-| [Troubleshooting](troubleshooting.md)                                                                                                                  | Describes how to troubleshoot common Adobe Commerce implementation issues                                   |
+| Debugging                                                                                                                                              | Systematically and effectively debug the Adobe Commerce framework                                           |
+| [Static content deployment](static-content-deployment.md)                                                                                              | Avoid issues with static content not appearing on your storefront                                           |
+| [Troubleshooting](troubleshooting.md)                                                                                                                  | Troubleshoot common Adobe Commerce implementation issues                                                    |
