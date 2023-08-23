@@ -2,7 +2,6 @@
 title: Global reference architecture best practices
 description: Learn about global reference architecture best practices for managing Adobe Commerce code.
 feature: Best Practices
-hidefromtoc: yes
 ---
 
 # Global reference architecture best practices for Adobe Commerce
@@ -22,7 +21,7 @@ This topic describes common ways of organizing a [global reference architecture 
 
 ## Option 1: Separate packages
 
-See Composer project structure best practices for setting up this method.
+See [Composer project structure](composer-project-structure.md) best practices for setting up this method.
 
 ![Diagram illustrating the separate packages option for global reference architecture](../../../assets/playbooks/gra-separate-packages.png)
 
