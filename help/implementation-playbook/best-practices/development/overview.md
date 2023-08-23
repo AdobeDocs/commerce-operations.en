@@ -32,12 +32,12 @@ The following sections include best practices information for the development ph
 
 ## Composer
 
-| Best practice     | Description                                                                                 |
-|-------------------|---------------------------------------------------------------------------------------------|
-| Development       | Describes how to develop Composer modules in-place in the `vendor/` directory               |
-| Patching          | Describes how to implement a centralized patching strategy                                  |
-| Project structure | Describes how to set up and maintain the separate packages option described in GRA examples |
-| Tips and tricks   | Describes common tasks and guidance for quickly resolving issues                            |
+| Best practice                                   | Description                                                                                 |
+|-------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Development                                     | Describes how to develop Composer modules in-place in the `vendor/` directory               |
+| [Patching](../maintenance/patching-at-scale.md) | Describes how to implement a centralized patching strategy                                  |
+| Project structure                               | Describes how to set up and maintain the separate packages option described in GRA examples |
+| Tips and tricks                                 | Describes common tasks and guidance for quickly resolving issues                            |
 
 ## Database
 
