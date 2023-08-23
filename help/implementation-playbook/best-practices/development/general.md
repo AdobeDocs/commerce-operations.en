@@ -55,7 +55,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ## Versioning
 
-1. Module versions MUST adhere to the [Semantic Versioning 2.0.0 standard](ttps://semver.org/).
+1. Module versions MUST adhere to the [Semantic Versioning 2.0.0 standard](https://semver.org/).
 Dependencies on the Magento 2 codebase SHOULD follow the [Module Version Dependencies guidelines](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
 ## REVISION CONTROL
