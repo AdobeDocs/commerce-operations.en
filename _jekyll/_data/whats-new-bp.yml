@@ -2,8 +2,20 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Mon Aug 14 14:22:47 2023
+updated: Wed Aug 23 08:43:58 2023
 entries:
+- description: Added a [new topic](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html)
+    about implementing a centralized patching strategy for Adobe Commerce projects.
+  versions: ''
+  type: best-practices
+  date: August 23, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/637
+  merge_commit: 03cb50be0cb18b6079c5c69aafc74c6099610fb0
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
 - description: Updated [Redis configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
     with information about separating the cache from the session and using compression.
   versions: ''
