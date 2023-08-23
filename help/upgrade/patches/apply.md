@@ -11,6 +11,11 @@ You can apply patches using any of the following methods:
 -  [Command line](../patches/apply.md#command-line)
 -  [Composer](../patches/apply.md#composer)
 
+
+>[!TIP]
+>
+>See [best practices](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) for information about centralized patching for Adobe Commerce at enterprise scale.
+
 ## Composer
 
 >[!IMPORTANT]
