@@ -31,8 +31,7 @@ The following sections include best practice information for the planning phase.
 
 - **Database configuration**
   - [Database configuration best practices for cloud deployments​](database-on-cloud.md)
-  - [MySQL slave connection configuration​](configure-mysql-slave-connection-on-cloud.md)
-  - [MySQL triggers usage](mysql-triggers-usage.md)
+  - [MySQL configuration​](mysql-configuration.md)
 
 - **Services configuration**
   - [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
@@ -52,16 +51,16 @@ The following sections include best practice information for the planning phase.
 The following topics describe performance optimization best practices for configuring your Adobe Commerce catalog including recommended maximums for the number of categories, product effective SKUs, product variations, product attributes and options, and more.
 
 - [Category configuration](category-limits.md)
-- [Product configuration​](product-sku-limits.md)
-- [Product variation configuration](product-variations.md)
-- [Product options configuration](product-options.md)
-- [Product attributes configuration​](product-attributes-and-options.md)
-- [Pagination configuration for product listings](product-listing-pagination.md)
+- [Product configuration​](catalog-management.md#product-sku-limits)
+- [Product variation configuration](catalog-management.md#product-variations)
+- [Product options configuration](catalog-management.md#product-options)
+- [Product attributes configuration​](catalog-management.md#product-attributes)
+- [Pagination configuration for product listings](catalog-management.md#product-listing-pagination)
 
 ## **Sales and Marketing**
 
-- [Best practices for product cart limit](product-cart.md)
-- [Best practices for configuring promotions](product-cart-promotions.md)
+- [Best practices for product cart limit](catalog-management.md#cart-limits)
+- [Best practices for configuring promotions](catalog-management.md#promotions)
 
 ## **Project scoping**
 
