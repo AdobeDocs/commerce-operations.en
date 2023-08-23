@@ -5,7 +5,7 @@ feature: Best Practices
 hidefromtoc: yes
 ---
 
-## General best practices for developing Adobe Commerce projects
+# General best practices for developing Adobe Commerce projects
 
 This topic describes the baseline for a healthy Adobe Commerce development process. It lists the fundamental processes, coding principles and application design principles that should guide developers.
 
