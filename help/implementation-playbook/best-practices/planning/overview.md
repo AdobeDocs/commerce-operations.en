@@ -50,7 +50,7 @@ The following sections include best practice information for the planning phase.
 
 The following topics describe performance optimization best practices for configuring your Adobe Commerce catalog including recommended maximums for the number of categories, product effective SKUs, product variations, product attributes and options, and more.
 
-- [Category configuration](category-limits.md)
+- [Category configuration](catalog-management.md#category-limits)
 - [Product configuration​](catalog-management.md#product-sku-limits)
 - [Product variation configuration](catalog-management.md#product-variations)
 - [Product options configuration](catalog-management.md#product-options)

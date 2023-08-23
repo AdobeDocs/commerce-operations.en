@@ -1,6 +1,6 @@
 ---
 title: MySQL configuration best practices
-description: Learn about MySQL triggers and slave connections.
+description: Learn how MySQL triggers and slave connections affect Commerce site performance and how to use them effectively.
 role: Developer
 feature: Best Practices
 ---

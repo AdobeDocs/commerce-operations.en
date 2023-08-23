@@ -78,7 +78,6 @@ mini-toc-levels: 3
     - [Redis service configuration](best-practices/planning/redis-service-configuration.md)
     - [OPcache memory size](best-practices/planning/opcache-memory-size.md)
     - [Realpath cache size](best-practices/planning/realpath-cache-size.md)
-    - [Categories](best-practices/planning/category-limits.md)
     - [Extensions](best-practices/planning/extensions.md)
     - [Partner escalations](best-practices/planning/partner-escalation.md)
     - [Payments storage processing](best-practices/planning/payment-processing-storage.md)
