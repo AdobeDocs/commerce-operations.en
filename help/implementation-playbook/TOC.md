@@ -79,7 +79,6 @@ mini-toc-levels: 3
     - [OPcache memory size](best-practices/planning/opcache-memory-size.md)
     - [Realpath cache size](best-practices/planning/realpath-cache-size.md)
     - [Categories](best-practices/planning/category-limits.md)
-    - [Promotions](best-practices/planning/product-cart-promotions.md)
     - [Extensions](best-practices/planning/extensions.md)
     - [Partner escalations](best-practices/planning/partner-escalation.md)
     - [Payments storage processing](best-practices/planning/payment-processing-storage.md)
