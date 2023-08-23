@@ -1,8 +1,7 @@
 ---
-title: Code review best practices
+title: Code management best practices
 description: Learn about code management best practices for the development phase of Adobe Commerce projects.
 feature: Best Practices
-hidefromtoc: yes
 ---
 
 # Code management best practices for Adobe Commerce

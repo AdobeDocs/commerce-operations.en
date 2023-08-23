@@ -4,7 +4,6 @@ description: Learn how and when to modify Adobe Commerce and third-party databas
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15
-hidefromtoc: yes
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
 ---
 # Best practices for modifying database tables 

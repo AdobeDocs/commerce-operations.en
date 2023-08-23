@@ -5,7 +5,7 @@ feature: Best Practices
 hidefromtoc: yes
 ---
 
-# Global reference architecture best practices
+# Global reference architecture best practices for Adobe Commerce
 
 This topic describes common ways of organizing a [global reference architecture (GRA)](../../architecture/global-reference.md) code base. Although the [separate packages](#option-1-separate-packages) option is preferred, some situations require one of the other options described below.
 
