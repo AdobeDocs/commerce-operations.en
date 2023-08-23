@@ -7,9 +7,9 @@ feature: Best Practices
 ---
 # Best practices for optimizing backend performance
 
-This article outlines best practices to optimize the backend performance of Adobe Commerce sites with a focus on database optimization and testing.
+This topic outlines best practices to optimize the backend performance of Adobe Commerce sites with a focus on database optimization and testing.
 
-Recommendations and examples are inspired by performance enhancement techniques that Objectsource uses in real-world client engagements to deliver high-performing Adobe Commerce sites.
+Recommendations and examples are inspired by performance enhancement techniques that objectsource uses in real-world client engagements to deliver high-performing Adobe Commerce sites.
 
 
 ## Affected products and versions
@@ -19,21 +19,21 @@ Recommendations and examples are inspired by performance enhancement techniques 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
 
-## Optimizing the database for improved performance
+## Optimize the database for improved performance
 
 Database optimization is a sure-fire way to enhance the user experience and increase sales. When you optimize the database, the backbone of your Commerce site, you can prevent slow website performance and eliminate lengthy load times that create friction for your customers.
 
 ### Stress testing
 
-High traffic periods like Black Friday demand that your Commerce sites handle massive traffic volumes. In preparation for such events, stress testing is essential to determine if a Commerce site can handle the anticipated high volume of visitors.
+High-traffic periods such as Black Friday demand that your Commerce sites handle massive traffic volumes. In preparation for such events, stress testing is essential to determine if a Commerce site can handle the anticipated high volume of visitors.
 
-One tool you can use for stress testing is GTmetrix. Gauge the readiness of Commerce sites to handle high traffic volumes by configuring this tool to replicate and multiply normal visitor behavior and actions. Running these tests in advance helps identify and resolve issues that might affect performance or site availability during high traffic periods.
+One tool you can use for stress testing is GTmetrix. Gauge the readiness of Commerce sites to handle high-traffic periods by configuring this tool to replicate and multiply normal visitor behavior and actions. Running these tests in advance helps identify and resolve issues that might affect performance and site availability during major shopping events. 
 
 ### Load testing
 
 You can also use GTmetrix or a similar tool to load test Commerce projects to predict performance peaks.
 
-As a precursor to stress testing, load testing is an essential practice for large-scale, high traffic sites. Prevent unexpected site outages, frustrated customers, and financial losses by anticipating and mitigating issues that affect site performance under increased loads.
+As a precursor to stress testing, load testing is an essential practice for large-scale, high-traffic sites. Prevent unexpected site outages, frustrated customers, and financial losses by anticipating and mitigating issues that affect site performance under peak loads.
 
 Use GTmetrix to simulate heavy traffic and analyze site performance to get a clear understanding of site capacity. This analysis helps identify and address bottlenecks and identify opportunities to optimize, ensuring that Commerce sites can operate effectively during performance peaks.
 
@@ -46,7 +46,7 @@ Address performance issues by using various tools like New Relic and Observation
 - Third-party API calls
 - Cron scheduling
 
-For example, you can closely examine transactions with a focus on product detail and category pages. Identify time-consuming processes that can be optimized to improve performance. In one client engagement, Objectsource noticed a performance issue on a product detail page and found an API call that was consuming 3.5% of the performance time. Based on this result, they examined the hierarchy of code execution to pinpoint and fix the issue causing the bottleneck.
+For example, you can closely examine transactions with a focus on product detail and category pages. Identify time-consuming processes that can be optimized to improve performance. In one client engagement, objectsource noticed a performance issue on a product detail page and found an API call that was consuming 3.5% of the performance time. Based on this result, they examined the hierarchy of code execution to pinpoint and fix the issue causing the bottleneck.
 
 ### Optimize MySQL performance
 
@@ -54,7 +54,7 @@ You can optimize MySQL performance by implementing database clustering and optim
 
 High-traffic websites often face database bottlenecks, primarily caused by reliance on a single MySQL server. You can address these bottlenecks by implementing database clustering, a distributed architecture that improves performance and ensures high availability.
 
-Database clustering minimizes the impact of database-related issues during peak traffic period by enabling multiple web nodes to connect to multiple MySQL servers. Use tools like Galera Cluster to set up database clustering for Commerce sites. Galera Cluster is included with [Adobe Commerce projects deployed on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html).
+Database clustering minimizes the impact of database-related issues during peak traffic periods by enabling multiple web nodes to connect to multiple MySQL servers. Use tools like Galera Cluster to set up database clustering for Commerce sites. Galera Cluster is included with [Adobe Commerce projects deployed on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html).
 
 Typically, the infrastructure for most Adobe Commerce sites consists of multiple web nodes connected to a single MySQL server.
 
@@ -73,18 +73,3 @@ Balancing performance and convenience, it is often advisable to schedule cron jo
 If you are responsible for optimizing cron performance and timing, review the current cron configuration from the Commerce Admin, and learn about setting up and configuring cron jobs for Commerce projects.
 
 Also, you can use the Observation for Adobe Commerce tool to view cron-related performance indicators. This tool combines log data from multiple sources to help you better manage Adobe Commerce site performance and diagnose issues.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
