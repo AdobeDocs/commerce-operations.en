@@ -27,18 +27,18 @@ The following sections include best practices information for the development ph
 
 | Best practice                                    | Description                                                                                                                          |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [Code review](code-review.md)                    | Describes a process for validating that implemented functionality meets requirements                                                 |
-| [Composer vs Git](code-management.md)            | Helps you decide how to distribute custom code with consideration for release management, code complexity, and dependency management |
-| [GRA examples](global-reference-architecture.md) | Provides common methods of organizing a [global reference architecture](../../architecture/global-reference.md) code base            |
+| [Code review](code-review.md)                    | Recommended validation process to ensure that implemented functionality meets requirements                                                 |
+| [Composer vs Git](code-management.md)            | Determine how to distribute custom code with consideration for release management, code complexity, and dependency management |
+| [GRA examples](global-reference-architecture.md) | Understand common methods of organizing a [global reference architecture](../../architecture/global-reference.md) code base            |
 
 ## Composer
 
 | Best practice                                   | Description                                                                                 |
 |-------------------------------------------------|---------------------------------------------------------------------------------------------|
-| Development                                     | Describes how to develop Composer modules in-place in the `vendor/` directory               |
-| [Patching](../maintenance/patching-at-scale.md) | Describes how to implement a centralized patching strategy                                  |
-| Project structure                               | Describes how to set up and maintain the separate packages option described in GRA examples |
-| Tips and tricks                                 | Describes common tasks and guidance for quickly resolving issues                            |
+| Development                                     | Develop Composer modules in-place in the `vendor/` directory               |
+| [Patching](../maintenance/patching-at-scale.md) | Implement a centralized patching strategy                                  |
+| Project structure                               | Set up and maintain the separate packages option described in GRA examples |
+| Tips and tricks                                 | Common tasks and guidance for quickly resolving issues                            |
 
 ## Database
 

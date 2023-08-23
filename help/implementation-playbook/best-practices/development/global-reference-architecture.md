@@ -89,9 +89,9 @@ Each module, language pack, theme, and library gets its own Git repository. Each
 
 Below is an example of multiple modules inside a single Composer package.
 
-The limitation is that only packages of the same type can be bundled. So either Adobe Commerce modules, themes, language packs, or libraries. No combinations of those within a package.
+The limitation is that only packages of the same type can be bundled. So either Adobe Commerce modules, themes, language packs, or libraries. Do not include combinations of different types within a package.
 
-The file structure inside the vendor directory will then look like this (but look inside the zip file to see what should be in your git repo exactly):
+The file structure inside the vendor directory should look like the following example. However, check your project to see what should be included in your Git repository):
 
 ```tree
 .
@@ -235,13 +235,13 @@ To set up this option:
 
 This strategy closely mimics the way that the Magento Open Source Git repository works.
 
-All code is developed and QA'd in a single repository, while automation distills packages from this single repository, that can be installed on UAT and production through Composer.
+All code is developed and QA'd in a single repository, while automation distills packages from this single repository, that can be installed on UAT and production using Composer.
 
 ![Diagram illustrating the monorepo option for global reference architecture](../../../assets/playbooks/gra-monorepo1.png)
 
 The monorepo option offers you the ease of working in a single repository, while also providing the flexibility of composing instances with packages.
 
-Versioning and package distillation is done through automation, using GitHyb Actions or GitLab Actions.
+Versioning and package distillation is done through automation, using GitHub Actions or GitLab Actions.
 
 ![Diagram illustrating the monorepo option for global reference architecture](../../../assets/playbooks/gra-monorepo2.png)
 
@@ -264,7 +264,8 @@ You will not only get all _advantages_ but also all _disadvantages_ of both meth
 
 - **Module naming conventions to signify GRA or brand**
 
-  This will lead to lack of flexibility. Instead, use Composer metapackages to determine which group a module belongs to. For example, for customer VF, package `vf/meta-gra` contains references to all GRA packages and can be installed using the `composer require vf/meta-gra` command. Package `vf/meta-kipling` contains references to all Kipling specific packages and to the `vf/meta-gra` package. Modules are named `vf/module-sales` and `vf/module-sap` for example. This naming convention allows you to move packages between brand and GRA status, with low impact.
+  Naming modules to signify GRA or brand will lead to lack of flexibility. Instead, use Composer metapackages to determine which group a module belongs to. For example, for customer VF, package `vf/meta-gra` contains references to all GRA packages and can be installed using the `composer require vf/meta-gra` command. Package `vf/meta-kipling` contains references to all Kipling specific packages and to the `vf/meta-gra` package. Modules are named `vf/module-sales` and `vf/module-sap` for example. This naming convention allows you to move packages between brand and GRA status, with low impact.
+```Naming modules to si
 
 - **Adobe Commerce core upgrades per instance**
 

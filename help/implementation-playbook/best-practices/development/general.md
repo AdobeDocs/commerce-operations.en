@@ -1,19 +1,19 @@
 ---
 title: General development best practices
-description: Learn about general best practices for the development phase of Adobe Commerce projects.
+description: Learn about general best practices to manage the development process for Adobe Commerce projects.
 feature: Best Practices
 hidefromtoc: yes
 ---
 
 # General development best practices for Adobe Commerce projects
 
-This topic describes the baseline for a healthy Adobe Commerce development process. It lists the fundamental processes, coding principles and application design principles that should guide developers.
+This topic describes the baseline for a healthy Adobe Commerce development process. It describes fundamental processes, coding principles, and application design principles to guide developers.
 
 >[!NOTE]
 >
 >Adobe Technical Architects use these best practices as a reference during engagements involving development.
 
-Adobe identified these best practices over many years of experience. Adobe recommends that technical initiatives follow these best practices and that existing processes and code should be improved to align them.
+These best practices have been developed based on years of experience developing and delivering Commerce projects. Adobe recommends that technical initiatives follow these best practices and that existing processes and code be improved to align with them.
 
 ## Text conventions
 
@@ -25,7 +25,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 1. Development SHOULD NOT start until a branching strategy for the version control system is available to the development team.
 1. Development SHOULD NOT start until after sign-off on technical specifications, sign-off on user stories and use cases and, sign-off on test cases are available to the development team.
 1. Development SHOULD NOT start until at least a development and QA environment are available.
-1. Project-specific requirements that are mandatory for development to start MAY be documented in a "Definition of Ready".
+1. Project-specific requirements that are mandatory for development to start MAY be documented in a _Definition of Ready_.
 1. Sign-off SHOULD be done by a client representative that is authorized to sign off on project deliverables.
 1. In Agile project methodologies, additional requirements MAY follow the sign-off. These SHOULD be treated as new requirements and SHOULD be captured, architected, and planned accordingly.
 1. All development MUST be functionally tested by the developer before submission.
@@ -55,12 +55,12 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ## Versioning
 
-1. Module versions MUST adhere to the [Semantic Versioning 2.0.0 standard](https://semver.org/).
+Module versions MUST adhere to the [Semantic Versioning 2.0.0 standard](https://semver.org/).
 Dependencies on the Magento 2 codebase SHOULD follow the [Module Version Dependencies guidelines](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
 ## REVISION CONTROL
 
-1. Commits MUST be accompanied by meaningful commit messages.
+Commits MUST be accompanied by meaningful commit messages.
 
 ## Security
 
