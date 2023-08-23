@@ -3,7 +3,6 @@ title: Troubleshooting best practices
 description: Learn how to troubleshoot Adobe Commerce implementation issues.
 role: Developer
 feature: Best Practices
-hidefromtoc: yes
 exl-id: 6690eccf-d58d-4cbd-b278-90d020ee7c63
 ---
 # Troubleshooting best practices

@@ -3,7 +3,6 @@ title: Static content deployment best practices
 description: Learn how to avoid issues with static content not appearing on your Adobe Commerce or Magento Open Source storefront.
 role: Developer
 feature: Best Practices
-hidefromtoc: yes
 exl-id: 9f521963-6fe4-4844-b2d1-fd457b706900
 ---
 # Static content deployment best practices
