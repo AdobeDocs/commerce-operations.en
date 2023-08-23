@@ -7,7 +7,14 @@ feature: Best Practices, Catalog Management
 
 # Catalog management best practices
 
-blurb
+The catalog management best practices described here cover a range of issues, including (but not limited to):
+
+- Cart limits
+- Product attributes
+- Product listing pagination
+- Product options
+- Product variations
+- Promotions
 
 ## Cart limits
 
