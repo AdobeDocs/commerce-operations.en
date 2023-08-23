@@ -43,3 +43,7 @@ GRA impacts:
 - How new markets are enabled
 
   - Simplifies the release of multiple channels and markets that would otherwise cost considerably more time and money.
+
+>[!TIP]
+>
+>See [GRA best practices](../best-practices/development/global-reference-architecture.md) for more examples.
