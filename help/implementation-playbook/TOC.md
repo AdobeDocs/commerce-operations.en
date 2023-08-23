@@ -91,10 +91,11 @@ mini-toc-levels: 3
     - [Payments storage processing](best-practices/planning/payment-processing-storage.md)
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
-    - [General](best-practices/development/general.md)
-    - [Code management](best-practices/development/code-management.md)
-    - [Code review](best-practices/development/code-review.md)
-    - [Global reference architecture](best-practices/development/global-reference-architecture.md)
+      - Code management {#code-management}
+        - [General](best-practices/development/general.md)
+        - [Distribution](best-practices/development/code-distribution.md)
+        - [Review](best-practices/development/code-review.md)
+        - [Global reference architecture](best-practices/development/global-reference-architecture.md)
     - [Image optimization](best-practices/development/image-optimization.md)
     - [Troubleshooting](best-practices/development/troubleshooting.md)
     - [Optimize CSS and JS files](best-practices/development/optimize-css-js-files.md)

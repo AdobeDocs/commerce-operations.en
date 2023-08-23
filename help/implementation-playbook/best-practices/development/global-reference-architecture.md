@@ -2,7 +2,6 @@
 title: Global reference architecture best practices
 description: Learn about global reference architecture best practices for managing Adobe Commerce code.
 feature: Best Practices
-hidefromtoc: yes
 ---
 
 # Global reference architecture best practices

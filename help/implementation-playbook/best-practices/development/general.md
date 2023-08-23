@@ -2,7 +2,6 @@
 title: General development best practices
 description: Learn about general best practices for the development phase of Adobe Commerce projects.
 feature: Best Practices
-hidefromtoc: yes
 ---
 
 # General best practices for developing Adobe Commerce projects
