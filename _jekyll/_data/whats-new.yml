@@ -1,8 +1,20 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Aug 14 14:21:13 2023
+updated: Wed Aug 23 08:43:49 2023
 entries:
+- description: Added a [new topic](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html)
+    about implementing a centralized patching strategy for Adobe Commerce projects.
+  versions: ''
+  type: new-topic
+  date: August 23, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/637
+  merge_commit: 03cb50be0cb18b6079c5c69aafc74c6099610fb0
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.36 Quality Patches Tool (QPT) package release.
   versions: ''
