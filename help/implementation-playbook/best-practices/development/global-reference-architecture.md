@@ -26,9 +26,7 @@ See Composer project structure best practices for setting up this method.
 
 ![Diagram illustrating the separate packages option for global reference architecture](../../../assets/playbooks/gra-separate-packages.png)
 
-The most flexible way to manage GRA Composer packages is through metapackages. Metapackages contain a `composer.json` file only, which defines other package dependencies.
-
-You should do this in combination with [Private Packagist](https://packagist.com/) as a private Composer repository.
+The most flexible way to manage GRA Composer packages is through metapackages. Metapackages contain a `composer.json` file only, which defines other package dependencies. You should create metapackages using [Private Packagist](https://packagist.com/) repositories.
 
 ### Main project `composer.json`
 
@@ -265,7 +263,6 @@ You will not only get all _advantages_ but also all _disadvantages_ of both meth
 - **Module naming conventions to signify GRA or brand**
 
   Naming modules to signify GRA or brand will lead to lack of flexibility. Instead, use Composer metapackages to determine which group a module belongs to. For example, for customer VF, package `vf/meta-gra` contains references to all GRA packages and can be installed using the `composer require vf/meta-gra` command. Package `vf/meta-kipling` contains references to all Kipling specific packages and to the `vf/meta-gra` package. Modules are named `vf/module-sales` and `vf/module-sap` for example. This naming convention allows you to move packages between brand and GRA status, with low impact.
-```Naming modules to si
 
 - **Adobe Commerce core upgrades per instance**
 

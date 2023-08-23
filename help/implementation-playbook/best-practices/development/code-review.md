@@ -34,15 +34,15 @@ If code review takes longer, it can affect project budget and timeline. To addre
 
 ## What to look for in code review
 
-### Style and smell
+### Style
 
 These can be tested automatically by running the PhpStorm inspection (see below).
 
-Make sure to configure [PHPMD and PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) and to run the [Coding Standard](https://github.com/magento/magento-coding-standard)] tool from the CLI (also below). There is some overlap, but both also have unique tests.
+Make sure to configure [PHPMD and PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) and to run the [Coding Standard](https://github.com/magento/magento-coding-standard) tool from the CLI (also below). There is some overlap, but both also have unique tests.
 
 ### Convention and structure
 
-This is a manual review.
+Reviews for convention and structure are done manually.
 
 - Is class functionality limited to a single responsibility?
 - Does the directory structure make sense?
@@ -50,13 +50,13 @@ This is a manual review.
 - Is the versioning correct?
 - Does the code look unconventional or like it is trying to get around a problem in the wrong way?
 - Is the naming convention for the module name, package name, and repository name correctly applied?
-- Verify that CSS is not applied too globally.
+- Verify that global CSS styles are applied thoughtfully and are not overused.
 
 ### Completeness
 
-This is a manual review.
+Reviews for completeness are done manually.
 
-- Can the code be enabled/disabled by configuration and will all necessary code then really not be executed?
+- Can the code be enabled/disabled by configuration and does all necessary code behave as expected?
 - Is all configuration present that is mentioned in the ticket? Check scope, data type, validation, translation, and default values.
 - Is configuration always retrieved at the lowest possible level (store view level, website level, or global level)? Configuration retrieval must match the definition of scope in the `system.xml` file.
 - Are all paths in the flow chart of the technical specification covered? Are all other technical specifications covered?
@@ -66,14 +66,14 @@ This is a manual review.
 
 ### Performance
 
-This is a manual review, which can be aided by code execution when in doubt.
+Reviews for performance are done manually, which can be aided by code execution when in doubt.
 
 - Are queries executed in a loop? This loop can be outside of the edited files.
 - Can you spot any `cachable="false"` attributes? Are they applied correctly?
 
 ### Security
 
-This is a manual review, which can be aided by text search. Part of the security check is taken care of by automated tests.
+Reviews for security are done manually, which can be aided by text search. Part of the security check is taken care of by automated tests.
 
 - Are exceptions logged when needed? Are the right types of exceptions used?
 - Can `around` plugins be avoided?
@@ -84,7 +84,7 @@ This is a manual review, which can be aided by text search. Part of the security
 
 ### Privacy and GDPR
 
-This is a manual review.
+Reviews for privacy and [GDPR](../../../security-and-compliance/privacy/gdpr.md) are done manually.
 
 - Does the code handle customer data or emails? Pay special attention.
 - If this code can be executed in a loop, can it leak customer data from one loop cycle to another?
@@ -93,7 +93,7 @@ This is a manual review.
 
 ### Mentoring
 
-This is a manual review.
+Reviews for mentoring are done manually.
 
 - Look for places to share knowledge with the goal of educating the team.
 - If your comment is purely educational, but not critical to meeting the standards, indicate that it's not mandatory for the author to resolve it.
@@ -101,7 +101,7 @@ This is a manual review.
 
 ## Automation
 
-The following parts of a code review can be performed by using automation, which means that developers can and should test for this themselves too:
+Developers can use automation to review DI compiliation, database schema, composer validation, and compliance with the coding standards:
 
 - DI compilation—Run the following CLI commands to see if the code can be compiled without any issues.
 

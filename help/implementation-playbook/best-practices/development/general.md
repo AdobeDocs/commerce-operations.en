@@ -2,10 +2,9 @@
 title: General development best practices
 description: Learn about general best practices to manage the development process for Adobe Commerce projects.
 feature: Best Practices
-hidefromtoc: yes
 ---
 
-# General development best practices for Adobe Commerce projects
+# General development best practices for Adobe Commerce
 
 This topic describes the baseline for a healthy Adobe Commerce development process. It describes fundamental processes, coding principles, and application design principles to guide developers.
 
