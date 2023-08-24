@@ -1,7 +1,7 @@
 ---
 title: Optimize backend performance
 description: Learn best practices to optimize Commerce
-badge: label="Contributed by objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="Rebecca Jones"
+badge: label="Contributed by objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
 
