@@ -4,6 +4,26 @@
 
 This page contains recent changes that we think you'd like to see. We exclude all minor updates, such as copy editing, from this list.
 
+### August 23, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added a <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html">new topic</a> about implementing a centralized patching strategy for Adobe Commerce projects.</p>
+</td>
+      <td>best-practices</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
+
 ### March 9, 2023
 
 <table style="table-layout:auto;">
@@ -20,26 +40,6 @@ This page contains recent changes that we think you'd like to see. We exclude al
 </td>
       <td>best-practices</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9d46893a25569b9cb00b45ab285758b3b74b410">f9d468</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### February 10, 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Updated the description of minimum requirements to perform a <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">database upgrade</a> and added an additional related resource about updating MariaDB.</p>
-</td>
-      <td>best-practices</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0efeef6f3d5276f42e4a67fe55f6108a399f45fb">0efeef</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
