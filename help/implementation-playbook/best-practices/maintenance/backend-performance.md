@@ -110,4 +110,3 @@ Learn more about Adobe Commerce cron implemmentation:
 - [Configure and run crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (on-premises)
 - [Application configuration – crons property](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (cloud infrastructure)
 - [Observation for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) (See the [!UICONTROL Cron] and [!UICONTROL MySQL] tabs)
-
