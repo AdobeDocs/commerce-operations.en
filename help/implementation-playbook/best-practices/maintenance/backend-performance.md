@@ -1,6 +1,6 @@
 ---
 title: Optimize backend performance
-description: Learn best practices to optimize Commerce
+description: Learn about optimizing the backend performance of Adobe Commerce sites.
 badge: label="Contributed by objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
