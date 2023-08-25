@@ -103,7 +103,7 @@ If you are responsible for optimizing cron performance and timing, review the cu
 
 Also, you can use Observation for Adobe Commerce to view cron-related performance indicators. This tool combines log data from multiple sources to help you better manage Adobe Commerce site performance and diagnose issues.
 
-Learn more about Adobe Commerce cron implemmentation:
+Learn more about Adobe Commerce cron implementation:
 
 - [Cron (scheduled tasks)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) in the _Commerce Admin Systems User Guide_
 - [Application configuration – crons property](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (cloud infrastructure)
