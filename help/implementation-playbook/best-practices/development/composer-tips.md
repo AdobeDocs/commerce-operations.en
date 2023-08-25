@@ -124,7 +124,7 @@ If you require a private Composer repository, use [Private Packagist](https://pa
 
 ## Versioning packages
 
-Use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) as described mentioned in the Adobe Commerce [versioning schema](https://developer.adobe.com/commerce/php/development/versioning/). Do not reinvent the wheel.
+Use [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) as described in the Adobe Commerce [versioning schema](https://developer.adobe.com/commerce/php/development/versioning/). Do not reinvent the wheel.
 
 For Adobe Commerce module dependencies, follow the [module version dependencies](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) documentation.
 

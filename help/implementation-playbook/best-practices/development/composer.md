@@ -10,7 +10,7 @@ feature: Best Practices
 >
 >These best practices apply primarily to [global reference architecture (GRA)](global-reference-architecture.md) projects.
 
-The steps in this topic describe how to develop Composer modules in-place (as Git repositories in the `vendor/` directory) and how to add those modules to your main Git project.
+This topic describes the recommended approach for developing Composer modules in-place (as Git repositories in the `vendor/` directory) and adding those modules to your main Git project.
 
 ## Prepare a development branch
 
@@ -26,7 +26,7 @@ The steps in this topic describe how to develop Composer modules in-place (as Gi
    composer require client/module-example:dev-develop
    ```
 
-1. If another Composer package requires a specific version of a module (for example, `client/module-example 1.0.12`), you can install it with an alias:
+1. If another Composer package requires a specific version of a module (for example, `client/module-example 1.0.12`), install it with an alias:
 
    ```bash
    composer require 'client/module-example:dev-develop as 1.0.12'
@@ -36,7 +36,7 @@ The steps in this topic describe how to develop Composer modules in-place (as Gi
 
 ## Convert packages to Git repositories
 
-By default, packages do not contain a `.git/` directory. Composer can check out packages from Git instead of using Composer's pre-built packages. The advantage to this approach is that you can easily modify the packages during development.
+By default, packages do not contain a `.git/` directory. Composer can check out packages from Git instead of using the pre-built Composer packages. The advantage to this approach is that you can easily modify the packages during development.
 
 1. Remove the module from the `vendor/` directory.
 
@@ -57,7 +57,7 @@ By default, packages do not contain a `.git/` directory. Composer can check out 
    git remote -v
    ```
 
-1. To batch-convert multiple modules into Git repositories (for example "client" moduels):
+1. To batch-convert multiple modules into Git repositories (for example "client" modules):
 
    ```bash
    rm -rf vendor/client
@@ -74,7 +74,7 @@ By default, packages do not contain a `.git/` directory. Composer can check out 
    git checkout -b JIRA-1200
    ```
 
-1. After changing branches in a module, you might want to flush the Adobe Commerce cache and static content to see the changes.
+1. After changing branches in a module, see the changes by flushing the Adobe Commerce cache and static content.
 
    ```bash
    bin/magento cache:flush
@@ -83,7 +83,7 @@ By default, packages do not contain a `.git/` directory. Composer can check out 
 
 ## Update the main project with your development
 
-Update your main Git repository by modifying the `composer.lock` file and enabling your module (if it is new):
+Update your main Git repository by modifying the `composer.lock` file. If your module is new, enable it.
 
 ```bash
 # to update your packages and all dependencies of the package

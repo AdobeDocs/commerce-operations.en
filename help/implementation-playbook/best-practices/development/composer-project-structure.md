@@ -64,9 +64,9 @@ Add the following content to the `.gitignore` file:
 
 1. Add the `app/etc/config.xml` file to the Git repository.
 
-   You can use the module that you are going to create to install other region or brand-specific files, such as `.htaccess`, Google/Bing authentication text files, executables, or other static files that are not managed by Adobe Commerce modules.
+   You can use the module that you are going to create to install other region or brand-specific files, such as `.htaccess`, Google or Bing authentication text files, executables, or other static files that are not managed by Adobe Commerce modules.
    
-   Use `magento2-component` type packages to create a file mapping to copy files into the main Git repository accordingly during `composer install` and `composer update` operations.
+   Use `magento2-component` type packages to create a file mapping to copy files into the main Git repository during `composer install` and `composer update` operations.
 
 1. Create a Git repository that follows the naming convention `component-environment-<region/country/brand>`:
 
@@ -211,11 +211,11 @@ Functional packages (such as Adobe Commerce modules, themes, language packs, and
 
 >[!IMPORTANT]
 >
->D not require packages in the main project's `composer.json` file on the `main` or `release` branches.
+>Do not require packages in the main project's `composer.json` file on the `main` or `release` branches.
 
 ## Prepare for development
 
-For development, install all `develop` versions of all modules that you maintain.
+For development, install `develop` versions of all modules that you maintain.
 
 Depending on your branching strategy, you might have `develop`, `qa`, `uat`, and `main` branches. Each branch exists in Composer with a `dev-` prefix. So the `develop` branch can be required through Composer as version `dev-develop`.
 
@@ -265,4 +265,4 @@ Depending on your branching strategy, you might have `develop`, `qa`, `uat`, and
 
    >[!IMPORTANT]
    >
-   >**Do not merge** these `composer.json` file changes with your production branch. Install only stable versions of packages on `release` and `main` branches. You can define these dependencies for `qa` branches and other non-main branches.
+   >**Do not merge** these `composer.json` file changes to your production branch. Install only stable versions of packages on `release` and `main` branches. You can define these dependencies for `qa` branches and other non-main branches.
