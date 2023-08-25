@@ -45,7 +45,7 @@ Use GTmetrix to simulate heavy traffic and analyze site performance to get clear
 
 Learn more about testing Adobe Commerce projects:
 
-- [Testing guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html)  (Commerce on cloud infrastructure)
+- [Testing guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html)  (cloud infrastructure)
 - [Application testing](https://developer.adobe.com/commerce/testing/guide/)
 
 ### Identify and resolve performance issues
@@ -107,6 +107,5 @@ Learn more about Adobe Commerce cron implemmentation:
 
 - [Cron (scheduled tasks)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) in the _Commerce Admin Systems User Guide_
 - [Application configuration – crons property](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (cloud infrastructure)
-- [Configure and run crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (on-premises)
-- [Application configuration – crons property](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (cloud infrastructure)
-- [Observation for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) (See the [!UICONTROL Cron] and [!UICONTROL MySQL] tabs)
+- [Configure and run crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (on premises)
+- [Observation for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) (See the [!UICONTROL Cron] and [!UICONTROL MySQL] tabs.)
