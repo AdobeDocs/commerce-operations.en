@@ -33,12 +33,12 @@ The following sections include best practices information for the development ph
 
 ## Composer
 
-| Best practice                                   | Description                                                                |
-|-------------------------------------------------|----------------------------------------------------------------------------|
-| Development                                     | Develop Composer modules in-place in the `vendor/` directory               |
-| [Patching](../maintenance/patching-at-scale.md) | Implement a centralized patching strategy                                  |
-| Project structure                               | Set up and maintain the separate packages option described in GRA examples |
-| Tips and tricks                                 | Common tasks and guidance for quickly resolving issues                     |
+| Best practice                                      | Description                                                                                                                               |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| [Development](composer.md)                         | Develop Composer modules in-place in the `vendor/` directory                                                                              |
+| [Patching](../maintenance/patching-at-scale.md)    | Implement a centralized patching strategy                                                                                                 |
+| [Project structure](composer-project-structure.md) | Set up and maintain the [separate packages option](global-reference-architecture.md#option-1-separate-packages) described in GRA examples |
+| [Tips and tricks](composer-tips.md)                | Common tasks and guidance for quickly resolving issues                                                                                    |
 
 ## Database
 
