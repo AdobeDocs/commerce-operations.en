@@ -2,6 +2,7 @@
 title: Code review best practices
 description: Learn about code review best practices for the development phase of Adobe Commerce projects.
 feature: Best Practices
+role: Developer
 ---
 
 # Code review best practices for Adobe Commerce

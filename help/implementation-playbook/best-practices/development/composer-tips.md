@@ -2,6 +2,7 @@
 title: Composer tips and tricks
 description: Learn about common Composer development tasks and guidance for quickly resolving issues.
 feature: Best Practices
+role: Developer
 ---
 
 # Composer tips and tricks
