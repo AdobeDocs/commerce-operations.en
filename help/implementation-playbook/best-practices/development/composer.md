@@ -6,11 +6,12 @@ feature: Best Practices
 
 # Composer development best practices
 
+This topic describes the recommended approach for developing Composer modules in-place (as Git repositories in the `vendor/` directory) and adding those modules to your main Git project.
+
 >[!NOTE]
 >
 >These best practices apply primarily to [global reference architecture (GRA)](global-reference-architecture.md) projects.
 
-This topic describes the recommended approach for developing Composer modules in-place (as Git repositories in the `vendor/` directory) and adding those modules to your main Git project.
 
 ## Prepare a development branch
 
