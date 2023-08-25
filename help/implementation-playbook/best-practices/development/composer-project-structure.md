@@ -18,7 +18,7 @@ Before you begin, verify the following:
 
 ## Main Git project repository
 
-The main Git project repository should only contain a Composer project. You can manage everything else with Composer packages. The main project should never contain anything other than the following file structure because Composer installs all other packages through dependencies:
+The main Git project repository should contain only a Composer project. You can manage everything else with Composer packages. The main project should never contain anything other than the following file structure because Composer installs all other packages through dependencies:
 
 ```tree
 ./
