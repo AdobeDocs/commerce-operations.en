@@ -33,6 +33,10 @@ mini-toc-levels: 3
   - Global reference architecture {#global-reference-architecture}
     - [Overview](architecture/global-reference/overview.md)
     - [Examples](architecture/global-reference/examples.md)
+    - Composer development {#composer}
+      - [Overview](architecture/global-reference/composer/overview.md)
+      - [Project structure](architecture/global-reference/composer/project-structure.md)
+      - [Tips and tricks](architecture/global-reference/composer/tips-and-tricks.md)
   - Headless commerce {#headless}
     - [Benefits](architecture/headless/benefits.md)
     - [Journey to headless](architecture/headless/journey-to-headless.md)
@@ -88,9 +92,6 @@ mini-toc-levels: 3
     - [General best practices](best-practices/development/general.md)
     - [Code management](best-practices/development/code-management.md)
     - [Code review](best-practices/development/code-review.md)
-    - [Composer](best-practices/development/composer.md)
-    - [Composer project structure](best-practices/development/composer-project-structure.md)
-    - [Composer tips and tricks](best-practices/development/composer-tips.md)
     - [Debugging](best-practices/development/debugging.md)
     - [Exception handling](best-practices/development/exception-handling.md)
     - [Git branching](best-practices/development/git-branching.md)

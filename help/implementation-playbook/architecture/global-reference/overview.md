@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce Global Reference Architecture
+title: Global reference architecture
 description: Get the most our of your Adobe Commerce implementation by leveraging a global reference architecture.
 exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
 feature: Deploy

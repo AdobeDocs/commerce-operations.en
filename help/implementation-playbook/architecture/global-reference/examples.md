@@ -15,7 +15,7 @@ This topic describes common ways of organizing a [global reference architecture 
 
 ## Option 1: Separate packages
 
-See [Composer project structure](../../best-practices/development/composer-project-structure.md) best practices for setting up this method.
+See [Composer project structure](composer/project-structure.md) best practices for setting up this method.
 
 ![Diagram illustrating the separate packages option for global reference architecture](../../../assets/playbooks/gra-separate-packages.png)
 
