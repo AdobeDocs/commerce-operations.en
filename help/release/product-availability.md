@@ -13,7 +13,9 @@ Supported versions have been fully tested by Adobe. Supported versions are avail
 
 ## Adobe Authored Extensions
 
-These Adobe Commerce extensions have been decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these extensions faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
+These Adobe Commerce extensions are decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these extensions on a more flexible timeframe and provide customers earlier access to new features.
+
+This allows Adobe to release iterations of these extensions faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
 
 The following table shows the version support for each extension relative to the Adobe Commerce version.
 
@@ -22,7 +24,7 @@ The following table shows the version support for each extension relative to the
 | _Adobe I/O Events for Adobe Commerce_  | 1.2.2       | 1.2.2  | 1.2.2  | 1.2.2  | -      | [Composer](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[Release Notes](https://developer.adobe.com/commerce/events/get-started/release-notes/)                                                           |
 | _B2B_                                  | 1.4.0+      | 1.3.5+ | 1.3.4  | 1.3.3  | 1.3.2  | [Composer](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html)                                                 |
 | _Experience Platform Connector_        | 3.0.0-beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
-| _Page Builder_ | -           | -  | 1.7.2 | 1.7.1| - | [User Guide](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html)                |              |
+| _Page Builder_ | -           | -  | 1.7.2 | 1.7.1| - | [User Guide](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html)                |
 
 ## Commerce Services
 
@@ -45,4 +47,4 @@ The following table shows the version support for each service relative to the A
 | _Payment Services_                   | 2.2.0        | 2.2.0   | 2.2.0 (PHP 8.1)   | 2.2.0 (PHP 8.1)   | -      | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [Release Notes](https://commercemarketplace.adobe.com/magento-payment-services.html)                                                                   |
 | _Product Recommendations_            | 5.0         | 5.0    | 5.0    | 5.0    | -      | [Marketplace](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)                  |
 | _Quick Checkout_                     | -           | 1.0.0+ | 1.2.0+ | 1.0.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html)                           |
-| _Store Fulfillment for Adobe Commerce_ | -           | 1.5.0  | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html)      
+| _Store Fulfillment for Adobe Commerce_ | -           | 1.5.0  | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Release Notes](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html)                  |
