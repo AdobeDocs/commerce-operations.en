@@ -69,38 +69,38 @@ This approach resizes 100,000 images in less than 8 hours, whereas the CLI comma
 
 >[!BEGINTABS]
 
-   >[!TAB sed]
-   
-   ```bash
-   cd pub/
-   find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
-   ```
+>[!TAB sed]
 
-   >[!TAB siege]
+```bash
+cd pub/
+find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
+```
 
-   The disadvantage of `siege` is that it visits all URLs in the 10 times if concurrency is set to 10.
+>[!TAB siege]
 
-   ```bash
-   siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
-   ```
+The disadvantage of `siege` is that it visits all URLs in the 10 times if concurrency is set to 10.
 
-   >[!TAB curl]
+```bash
+siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
+```
 
-   ```bash
-   xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
-   ```
-   
-   The `-P` argument determines the number of threads.
+>[!TAB curl]
 
-   >[!TAB bash one-liner]
+```bash
+xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
+```
 
-   The one-liner for the `find/curl` example, in case you can run `curl` from the same machine the images are on:
+The `-P` argument determines the number of threads.
 
-   ```bash
-   find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
-   ```
+>[!TAB bash one-liner]
 
-   Again, replace `www.example.com` with your website's domain and set `-P` to the number of threads your server can handle without crashing.
+The one-liner for the `find/curl` example, in case you can run `curl` from the same machine the images are on:
+
+```bash
+find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
+```
+
+Again, replace `www.example.com` with your website's domain and set `-P` to the number of threads your server can handle without crashing.
 
 >[!ENDTABS]
 
