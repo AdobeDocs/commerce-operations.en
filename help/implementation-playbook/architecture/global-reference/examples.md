@@ -1,13 +1,13 @@
 ---
 title: Global reference architecture examples
-description: Learn examples patterns for managing code large-scale Adobe Commerce projects.
+description: See examples of managing code for large-scale Adobe Commerce projects.
 role: Developer, Architect
 level: Experienced
 ---
 
 # Global reference architecture examples
 
-This topic describes common ways of organizing a [global reference architecture (GRA)](../../architecture/global-reference.md) code base. Although the [separate packages](#option-1-separate-packages) option is preferred, some situations require one of the other options described below.
+This topic describes common ways of organizing a [global reference architecture (GRA)](../../architecture/global-reference/overview.md) code base. Although the [separate packages](#option-1-separate-packages) option is preferred, some situations require one of the other options described below.
 
 ## Definitions
 
@@ -15,7 +15,7 @@ This topic describes common ways of organizing a [global reference architecture 
 
 ## Option 1: Separate packages
 
-See [Composer project structure](composer-project-structure.md) best practices for setting up this method.
+See [Composer project structure](../../best-practices/development/composer-project-structure.md) best practices for setting up this method.
 
 ![Diagram illustrating the separate packages option for global reference architecture](../../../assets/playbooks/gra-separate-packages.png)
 
