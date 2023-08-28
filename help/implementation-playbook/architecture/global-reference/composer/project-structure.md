@@ -1,13 +1,13 @@
 ---
-title: Composer project structure best practices
+title: Composer project structure
 description: Learn how to set up and maintain the separate packages option described in the global reference architecture examples.
 feature: Best Practices
 role: Developer
 ---
 
-# Composer project structure best practices
+# Composer project structure
 
-This guide describes how to set up and maintain the [separate packages option](global-reference-architecture.md#option-1-separate-packages) described in the global reference architecture (GRA) examples.
+This guide describes how to set up and maintain the [separate packages option](../examples.md#option-1-separate-packages) described in the global reference architecture (GRA) examples.
 
 ## Prerequisites
 

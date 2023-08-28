@@ -30,7 +30,13 @@ mini-toc-levels: 3
   - [Integration strategy](architecture/integration-strategy.md)
   - [Extensibility strategy](architecture/extensibility-strategy.md)
   - [Integration options](architecture/integration-options.md)
-  - [Global reference architecture](architecture/global-reference.md)
+  - Global reference architecture {#global-reference-architecture}
+    - [Overview](architecture/global-reference/overview.md)
+    - [Examples](architecture/global-reference/examples.md)
+    - Composer development {#composer}
+      - [Overview](architecture/global-reference/composer/overview.md)
+      - [Project structure](architecture/global-reference/composer/project-structure.md)
+      - [Tips and tricks](architecture/global-reference/composer/tips-and-tricks.md)
   - Headless commerce {#headless}
     - [Benefits](architecture/headless/benefits.md)
     - [Journey to headless](architecture/headless/journey-to-headless.md)
@@ -86,10 +92,6 @@ mini-toc-levels: 3
     - [General best practices](best-practices/development/general.md)
     - [Code management](best-practices/development/code-management.md)
     - [Code review](best-practices/development/code-review.md)
-    - [Global reference architecture](best-practices/development/global-reference-architecture.md)
-    - [Composer](best-practices/development/composer.md)
-    - [Composer project structure](best-practices/development/composer-project-structure.md)
-    - [Composer tips and tricks](best-practices/development/composer-tips.md)
     - [Debugging](best-practices/development/debugging.md)
     - [Exception handling](best-practices/development/exception-handling.md)
     - [Git branching](best-practices/development/git-branching.md)

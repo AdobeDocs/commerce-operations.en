@@ -11,7 +11,7 @@ You may encounter issues when developing Adobe Commerce modules with Composer. T
 
 >[!NOTE]
 >
->These best practices apply primarily to [global reference architecture (GRA)](global-reference-architecture.md) projects.
+>These guidelines apply primarily to [global reference architecture (GRA)](../overview.md) projects.
 
 ## Speed up Composer
 
