@@ -67,7 +67,7 @@ This approach resizes 100,000 images in less than 8 hours, whereas the CLI comma
 1. Navigate to `pub/media/catalog/product` and make a note of one of the hashes (for example, 0047d83143a5a3a4683afdf1116df680).
 1. In the following examples, replace `www.example.com` with the domain of your store and replace the hash with the one you noted.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
    >[!TAB sed]
    
@@ -102,7 +102,7 @@ This approach resizes 100,000 images in less than 8 hours, whereas the CLI comma
 
    Again, replace `www.example.com` with your website's domain and set `-P` to the number of threads your server can handle without crashing.
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
    The output returns a list of all product images in the store. You can crawl the images (with `siege` or any other crawler) using all servers and processor cores available to you and generate the resize cache at significantly greater speed than other approaches.
    
