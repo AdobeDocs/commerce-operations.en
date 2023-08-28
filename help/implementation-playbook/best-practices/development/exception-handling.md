@@ -15,9 +15,7 @@ The following checklist provides examples to demonstrate correct exception handl
 
 ### ![correct](../../../assets/yes.svg) Write to the exception log
 
-Exceptions should always be logged in this way, regardless of further actions, unless there is a compelling reason not to.
-
-This approach automatically saves the `$e->getMessage` to the log message and the `$e` object to the context, following the [PSR-3 context standard](https://www.php-fig.org/psr/psr-3/#13-context). This is done in `\Magento\Framework\Logger\Monolog::addRecord`.
+Write to the exception log using the following pattern, regardless of further actions, unless there is a compelling reason not to.
 
 ```php
 try {
@@ -26,6 +24,8 @@ try {
     $this->logger->critical($e);
 }
 ```
+
+This approach automatically saves the `$e->getMessage` to the log message and the `$e` object to the context, following the [PSR-3 context standard](https://www.php-fig.org/psr/psr-3/#13-context). This is done in `\Magento\Framework\Logger\Monolog::addRecord`.
 
 ### ![correct](../../../assets/yes.svg) Mute signals
 
@@ -82,7 +82,7 @@ The following examples demonstrate incorrect exception handling.
 
 ### ![incorrect](../../../assets/no.svg) Logic before logging
 
-This can lead to another exception or fatal error, which prevents the exception from being logged and should be replaced by [correct example](#correct-logging-always-comes-first).
+Logic before logging can lead to another exception or fatal error, which prevents the exception from being logged and should be replaced by [correct example](#correct-logging-always-comes-first).
 
 ```php
 try {
@@ -95,7 +95,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Empty `catch`
 
-This can be a sign of unintended muting and should be replaced by the [correct example](#correct-mute-signals).
+Empty `catch` blocks can be a sign of unintended muting and should be replaced by the [correct example](#correct-mute-signals).
 
 ```php
 try {

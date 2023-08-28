@@ -107,3 +107,8 @@ Again, replace `www.example.com` with your website's domain and set `-P` to the 
    The output returns a list of all product images in the store. You can crawl the images (with `siege` or any other crawler) using all servers and processor cores available to you and generate the resize cache at significantly greater speed than other approaches.
    
    Visiting one image cache URL generates all image sizes in the background if they do not yet exist. Also, it skips files that have already resized.
+
+>[!NOTE]
+>
+>- Adobe Commerce on cloud infrastructure projects can offload product image resizing to the Fastly service. See [Deep image optimization](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) in the _Cloud Guide_.
+>- If you use the remote storage module, you can also try offloading image resizing to nginx. See [Configure image resizing for remote storage](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) in the _Configuration Guide_.
