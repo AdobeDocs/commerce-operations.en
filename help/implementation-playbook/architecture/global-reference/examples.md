@@ -197,7 +197,7 @@ To set up this option:
    
 1. Add code. Remove the `.gitignore` file, add and commit the code, add the remote, and push.
 
-1. In the `brand/region` repository. Do the same as in `GRA` repository and keep in mind that no files may overlap with the `GRA` repository.
+1. In the `brand/region` repository. Do the same as in `GRA` repository and keep in mind that files must be unique. You cannot include the same file in both this repository  and the `GRA` repository.
 
 1. In the `release` repository, apply the merge.
 
@@ -212,9 +212,9 @@ To set up this option:
    git push
    ```
 
-1. You can remove the `.gitkeep` file now.
+1. Remove the `.gitkeep` file.
 
-1. Now, you can deploy the `release` repository to the production, test, QA, and development servers. Upgrading `core`, `GRA`, and `brand` code is as easy running the following commands:
+1. Deploy the `release` repository to the production, test, QA, and development servers. Upgrading `core`, `GRA`, and `brand` code is as easy running the following commands:
 
    ```bash
    git fetch --all

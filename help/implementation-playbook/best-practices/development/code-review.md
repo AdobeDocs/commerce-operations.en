@@ -11,6 +11,8 @@ The main goal of code review is to validate that implemented functionality meets
 
 In addition, code review is intended to make sure code meets Adobe Commerce development best practices, is easy to understand and maintain, and follows coding standards. Most coding standards should be checked automatically by appropriate tools.
 
+## Recommended code review process
+
 At a high level, the code review process should consist of the following steps:
 
 1. Checkout feature branch on local development environment.
@@ -20,11 +22,13 @@ At a high level, the code review process should consist of the following steps:
 1. Do a thorough review to validate that the code implements all requirements. If there are any issues, add appropriate comments to the pull request and reopen the ticket.
 1. If everything looks good, merge the pull request (or pass it to next code review level if one has been established).
 
-Code review is also a primary tool for communication and knowledge transfer within a team. Even if a pull request doesn't contain major issues and implements the required business logic, you can use it as an opportunity to suggest more improvements after it's been merged.
+Also, consider the following points when when implementing code review processes:
 
-On average, code review shouldn't take more than 10% to 20% of development effort. That's assuming that the development team consists of senior engineers that work well together.
+- Code review is a primary tool for communication and knowledge transfer within a team. Even if a pull request doesn't contain major issues and implements the required business logic, you can use it as an opportunity to suggest more improvements after it's been merged.
 
-If code review takes longer, it can affect project budget and timeline. To address the issue, you first must identify the root cause. Usually, it's because either requirements are poorly translated into development tickets (due to communication issues, poor user stories) or it's a coaching issue. In the first case, the recommended mitigation is to make sure that tickets have enough information for team members to efficiently deliver the requirements. In the second case, you might need to adjust the team structure to include more senior engineers or get approval outside mentoring and coaching.
+- On average, code review shouldn't take more than 10% to 20% of development effort. That's assuming that the development team consists of senior engineers that work well together. If code review takes longer, it can affect project budget and timeline. 
+
+- Address issues with excessive effort required for code reviews by identifying the root cause. Usually, it's because either requirements are poorly translated into development tickets (due to communication issues, poor user stories) or it's a coaching issue. In the first case, the recommended mitigation is to make sure that tickets have enough information for team members to efficiently deliver the requirements. In the second case, you might need to adjust the team structure to include more senior engineers or get approval outside mentoring and coaching.
 
 ## Affected products and versions
 
@@ -57,7 +61,7 @@ Reviews for convention and structure are done manually.
 
 Reviews for completeness are done manually.
 
-- Can the code be enabled/disabled by configuration and does all necessary code behave as expected?
+- Can the code be enable or disabled by configuration and does all necessary code behave as expected?
 - Is all configuration present that is mentioned in the ticket? Check scope, data type, validation, translation, and default values.
 - Is configuration always retrieved at the lowest possible level (store view level, website level, or global level)? Configuration retrieval must match the definition of scope in the `system.xml` file.
 - Are all paths in the flow chart of the technical specification covered? Are all other technical specifications covered?

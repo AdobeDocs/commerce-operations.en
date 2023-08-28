@@ -36,7 +36,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ## Environment
 
-1. All developers SHOULD use the same IDE. PhpStorm is the RECOMMENDED IDE for Adobe Commerce development.
+1. All developers SHOULD use the same IDE. PhpStorm is the recommended IDE for Adobe Commerce development.
 1. All developers SHOULD develop and test using the same technology stack as used on the (future) production servers. The versions of the software in this technology stack MUST match the major and minor version of the software installed on the production servers. See [system requirements](../../../installation/system-requirements.md) for details about the typical technology stack for Adobe Commerce.
 1. The System Administrator or Technical Architect MAY provide the team with a centrally maintained local development environment to assure and promote equal and up-to-date local environments.
 1. Developers and QA engineers MUST have access to the command line, the database, and the log files of the QA environment. This MAY require a VPN connection.

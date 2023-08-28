@@ -44,7 +44,7 @@ The following sections include best practices information for the development ph
 | Best practice                                       | Description                                                                                                    |
 |-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [Catalog image resizing](catalog-image-resizing.md) | Provides guidance on image resizing before a store goes into production to ensure optimal performance          |
-| [CSS and JS](optimize-css-js-files.md)              | Merge and minify cascading style sheet (CSS) and JavaScript (JS) files with the Admin or from the command line |
+| [CSS and JS](optimize-css-js-files.md)              | Merge and minify cascading style sheet (CSS) and JavaScript (JS) files from the Admin or the command line |
 | [Images](image-optimization.md)                     | Optimize images and use Fastly to optimize response time                                                       |
 
 ## Frontend development
@@ -58,7 +58,7 @@ The following sections include best practices information for the development ph
 | Best practice                                                                           | Description                                                                                                                                       |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Exception handling](exception-handling.md)                                             | Describes recommended methods for logging exceptions                                                                                              |
-| [Extensions](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Describes development patterns to help ensure compatibility between your extension, future version of Adobe Commerce, and other custom extensions |
+| [Extensions](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Describes development patterns to help ensure compatibility between your extension, future versions of Adobe Commerce, and other custom extensions |
 | [Private content blocks](private-content-block-configuration.md)                        | Configure private content blocks to optimize storefront performance                                                                               |
 
 ## Platform and services

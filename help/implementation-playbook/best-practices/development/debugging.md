@@ -171,7 +171,7 @@ If you are looking at a problem for too long, it can be challenging to find a so
 
 ## Tools
 
-The n98 magerun CLI Tools ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2) provide useful capabilities to work with Adobe Commerce from the command line. Especially these commands:
+The n98 magerun CLI Tools ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) provide useful capabilities to work with Adobe Commerce from the command line. Especially these commands:
 
 ```bash
 n98-magerun2.phar dev:console
