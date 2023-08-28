@@ -128,6 +128,7 @@ try {
     $this->logger->debug($e->getTraceAsString());
 }
 ```
+
 This approach introduces line breaks in the message, which is not compliant with PSR-3. The exception, including stack trace, must be part of the message context to ensure that it is saved correctly with the message in New Relic or other PSR-3 monolog-compatible log storage.
 
 Fix this problem by replacing the code following the correct examples shown in [Write to the exception log](#correct-write-to-the-exception-log) or [Downgrade exceptions](#correct-downgrade-exceptions).
