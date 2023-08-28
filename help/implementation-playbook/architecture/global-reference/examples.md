@@ -80,7 +80,7 @@ Each module, language pack, theme, and library has its own Git repository. Each 
 
 Below is an example of multiple modules inside a single Composer package.
 
-The limitation is that only packages of the same type can be bundled. So either Adobe Commerce modules, themes, language packs, or libraries. Do not include combinations of different types within a package.
+A bulk package can only include packages of the same type. For example, if you have multiple packages for Adobe Commerce modules, themes, language packs, and libraries, you must create separate bulk packages for each type.
 
 The file structure inside the vendor directory should look like the following example. However, check your project to see what should be included in your Git repository):
 
