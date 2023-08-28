@@ -15,7 +15,6 @@ Supported versions have been fully tested by Adobe. Supported versions are avail
 
 These Adobe Commerce extensions are decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these extensions on a more flexible timeframe and provide customers earlier access to new features.
 
-This allows Adobe to release iterations of these extensions faster to merchants who are willing to accept a little risk in exchange for earlier access to new features.
 
 The following table shows the version support for each extension relative to the Adobe Commerce version.
 
