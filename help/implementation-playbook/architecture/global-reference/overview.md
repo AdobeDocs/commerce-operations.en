@@ -11,9 +11,9 @@ feature: Deploy
 
 When running businesses that have multiple sites for multiple brands in multiple local markets (with localized currencies, languages, media, shared catalogues, and unique carts) and who want to avoid unnecessary costs for implementing same feature and integrations—Global Reference Architecture (GRA) is always a good option.
 
-![Table explaining the cost of divergence in architecture](../../assets/playbooks/divergent-architecture.svg)
+![Table explaining the cost of divergence in architecture](../../../assets/playbooks/divergent-architecture.svg)
 
-![Table explaining the cost of consolidated in architecture](../../assets/playbooks/consolidated-architecture.svg)
+![Table explaining the cost of consolidated in architecture](../../../assets/playbooks/consolidated-architecture.svg)
 
 GRA is:
 
