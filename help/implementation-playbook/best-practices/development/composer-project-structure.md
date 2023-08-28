@@ -7,7 +7,7 @@ role: Developer
 
 # Composer project structure best practices
 
-This guide describes how to set up and maintain the [separate packages option](global-reference-architecture.md#option-1-separate-packages) described in the global reference architecture (GRA) examples.
+This guide describes how to set up and maintain the [separate packages option](../../architecture/global-reference/examples.md#option-1-separate-packages) described in the global reference architecture (GRA) examples.
 
 ## Prerequisites
 

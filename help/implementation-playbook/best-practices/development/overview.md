@@ -26,12 +26,12 @@ The following sections include best practices information for the development ph
 
 ## Code management
 
-| Best practice                                    | Description                                                                                                                   |
-|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [Code review](code-review.md)                    | Recommended validation process to ensure that implemented functionality meets requirements                                    |
-| [Composer vs Git](code-management.md)            | Determine how to distribute custom code with consideration for release management, code complexity, and dependency management |
-| [Branching strategy](git-branching.md)           | Manage source code in Git repositories                                                                                        |
-| [GRA examples](global-reference-architecture.md) | Understand common methods of organizing a [global reference architecture](../../architecture/global-reference.md) code base   |
+| Best practice                                                   | Description                                                                                                                   |
+|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| [Code review](code-review.md)                                   | Recommended validation process to ensure that implemented functionality meets requirements                                    |
+| [Composer vs Git](code-management.md)                           | Determine how to distribute custom code with consideration for release management, code complexity, and dependency management |
+| [Branching strategy](git-branching.md)                          | Manage source code in Git repositories                                                                                        |
+| [GRA examples](../../architecture/global-reference/examples.md) | Understand common methods of organizing a [global reference architecture](../../architecture/global-reference/overview.md) code base   |
 
 ## Composer
 
@@ -39,7 +39,7 @@ The following sections include best practices information for the development ph
 |----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [Development](composer.md)                         | Develop Composer modules in-place in the `vendor/` directory                                                                              |
 | [Patching](../maintenance/patching-at-scale.md)    | Implement a centralized patching strategy                                                                                                 |
-| [Project structure](composer-project-structure.md) | Set up and maintain the [separate packages option](global-reference-architecture.md#option-1-separate-packages) described in GRA examples |
+| [Project structure](composer-project-structure.md) | Set up and maintain the [separate packages option](../../architecture/global-reference/examples.md#option-1-separate-packages) described in GRA examples |
 | [Tips and tricks](composer-tips.md)                | Common tasks and guidance for quickly resolving issues                                                                                    |
 
 ## Database

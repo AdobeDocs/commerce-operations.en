@@ -4,6 +4,7 @@ description: Get the most our of your Adobe Commerce implementation by leveragin
 exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
 feature: Deploy
 ---
+
 # Global Reference Architecture (GRA)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410528/?quality=12&learn=on)
@@ -46,4 +47,4 @@ GRA impacts:
 
 >[!TIP]
 >
->See [GRA best practices](../best-practices/development/global-reference-architecture.md) for more examples.
+>See [GRA examples](examples.md).

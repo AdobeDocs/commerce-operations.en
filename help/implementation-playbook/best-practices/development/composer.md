@@ -11,7 +11,7 @@ This topic describes the recommended approach for developing Composer modules in
 
 >[!NOTE]
 >
->These best practices apply primarily to [global reference architecture (GRA)](global-reference-architecture.md) projects.
+>These best practices apply primarily to [global reference architecture (GRA)](../../architecture/global-reference-examples.md) projects.
 
 
 ## Prepare a development branch

@@ -1,21 +1,13 @@
 ---
-title: Global reference architecture best practices
-description: Learn about global reference architecture best practices for managing Adobe Commerce code.
-feature: Best Practices
+title: Global reference architecture examples
+description: Learn examples patterns for managing code large-scale Adobe Commerce projects.
 role: Developer, Architect
 level: Experienced
 ---
 
-# Global reference architecture best practices for Adobe Commerce
+# Global reference architecture examples
 
 This topic describes common ways of organizing a [global reference architecture (GRA)](../../architecture/global-reference.md) code base. Although the [separate packages](#option-1-separate-packages) option is preferred, some situations require one of the other options described below.
-
-## Affected products and versions
-
-[All supported versions](../../../release/versions.md) of:
-
-- Adobe Commerce on cloud infrastructure
-- Adobe Commerce on-premises
 
 ## Definitions
 

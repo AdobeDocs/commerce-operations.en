@@ -20,7 +20,7 @@ This topic is designed to help you decide whether to use Git or Composer to dist
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
 
-It covers both [global reference architecture (GRA)](../../architecture/global-reference.md) and single instance installations.
+It covers both [global reference architecture (GRA)](../../architecture/global-reference/overview.md) and single instance installations.
 
 ## Definitions
 
