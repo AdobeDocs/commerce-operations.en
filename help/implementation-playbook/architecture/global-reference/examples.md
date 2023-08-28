@@ -7,7 +7,7 @@ level: Experienced
 
 # Global reference architecture examples
 
-This topic describes common ways of organizing a [global reference architecture (GRA)](../../architecture/global-reference/overview.md) code base. Although the [separate packages](#option-1-separate-packages) option is preferred, some situations require one of the other options described below.
+This topic describes common ways of organizing a [global reference architecture (GRA)](overview.md) code base. Although the [separate packages](#option-1-separate-packages) option is preferred, some situations require one of the other options described below.
 
 ## Definitions
 
