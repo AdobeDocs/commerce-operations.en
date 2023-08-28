@@ -40,7 +40,11 @@ Each development phase should have a corresponding branch in Git to track code c
 
 There are several branching strategies that you can use. You should choose a strategy that works best for your development team.
 
-For more information, see the official Git documentation:
+For more information, see the following external resources:
 
 - [Branching workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 - [Distributed workflows](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
+- [Patterns for managing source code branches](https://martinfowler.com/articles/branching-patterns.html)
+- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [GitLab flow](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)
