@@ -7,11 +7,11 @@ role: Developer
 
 # Exception handling best practices
 
-Exceptions that are not written to the `exception.log` file with the exception model as context are not recognized and analyzed correctly in New Relic or other PSR-3 monolog-compatible log storage. Logging only a part of the exception (or logging it to the wrong file) leads to bugs in production when exceptions are overlooked.
+If an exception is not written to the `exception.log` file with the exception model as context, it is not recognized and analyzed correctly in New Relic or other PSR-3 monolog-compatible log storage. Logging only a part of the exception (or logging it to the wrong file) leads to bugs in production when exceptions are overlooked.
 
 ## Correct exception handling
 
-The following examples demonstrate correct exception handling.
+The following checklist provides examples to demonstrate correct exception handling.
 
 ### ![correct](../../../assets/yes.svg) Write to the exception log
 
@@ -29,7 +29,7 @@ try {
 
 ### ![correct](../../../assets/yes.svg) Mute signals
 
-Some exceptions should not be logged because the exception is part of the intended operational flow. No follow-up action is necessary when the exception is encountered and so does not need to be logged and analyzed when it occurs. Add a comment with the reason for muting signals and that it is intentional. Combine with `phpcs:ignore`.
+Mute signals by not logging exceptions that are part of the intended operations flow. No follow-up action is necessary when the exception is encountered, so it does not need to be logged and analyzed when it occurs. Add a comment indicating the reason for muting signals and that it is intentional. Combine with `phpcs:ignore`.
 
 ```php
 try {
@@ -41,7 +41,7 @@ try {
 
 ### ![correct](../../../assets/yes.svg) Downgrade exceptions
 
-This approach follows the [PSR-3 context standard](https://www.php-fig.org/psr/psr-3/#13-context).
+Downgrade exceptions by following the [PSR-3 context standard](https://www.php-fig.org/psr/psr-3/#13-context).
 
 ```php
 try {
@@ -53,7 +53,7 @@ try {
 
 ### ![correct](../../../assets/yes.svg) Logging always comes first
 
-This best practice prevents cases where another exception or fatal error is thrown before writing to the log.
+As a best practice logging always comes first in the code to prevent cases where another exception or fatal error is thrown before writing to the log.
 
 ```php
 try {
@@ -66,7 +66,7 @@ try {
 
 ### ![correct](../../../assets/yes.svg) Log messages and the entire exception trace
 
-This approach follows the [PSR-3 context standard](https://www.php-fig.org/psr/psr-3/#13-context).
+Log messages and the entire exception trace by following the [PSR-3 context standard](https://www.php-fig.org/psr/psr-3/#13-context).
 
 ```php
 try {
@@ -106,7 +106,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Double localization
 
-If the caught localized exception is not translated yet, the problem should be resolved at the place where it is thrown the first time.
+If the caught localized exception is not translated yet, resolve the problem at the place where the exception is thrown the first time.
 
 ```php
 try {
@@ -118,7 +118,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Log messages and trace to different log files
 
-Logging the trace as a string to a log file introduces line breaks in the message, which is not compliant with PSR-3. The exception, including stack trace, must be part of the message context so that it is correctly saved with the massage in New Relic or other PSR-3 monolog-compatible log storage. This should be replaced by correct examples shown in [Write to the exception log](#correct-write-to-the-exception-log) or [Downgrade exceptions](#correct-downgrade-exceptions).
+The following code incorrectly logs the stack trace for an exception as a string to a log file. 
 
 ```php
 try {
@@ -128,6 +128,9 @@ try {
     $this->logger->debug($e->getTraceAsString());
 }
 ```
+This approach introduces line breaks in the message, which is not compliant with PSR-3. The exception, including stack trace, must be part of the message context to ensure that it is saved correctly with the message in New Relic or other PSR-3 monolog-compatible log storage.
+
+Fix this problem by replacing the code following the correct examples shown in [Write to the exception log](#correct-write-to-the-exception-log) or [Downgrade exceptions](#correct-downgrade-exceptions).
 
 ### ![incorrect](../../../assets/no.svg) Downgrade exceptions without context
 

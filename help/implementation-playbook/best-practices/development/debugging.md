@@ -11,7 +11,7 @@ This topic explains ways to systematically and effectively debug the Adobe Comme
 
 ## Troubleshooting: Usual suspects
 
-This section describes the most common issues that you may encounter during development.
+This section describes the most common issues that you might encounter during development.
 
 ### Cache
 
@@ -66,11 +66,11 @@ sudo kill <process_id>
 
 ### Indexed data
 
-Reindex everything if the issue might be index-related. Debugging indexed data typically happens on non-production environments. On production environments, you might want to understand the origin of the index misalignment before you reindex. The characteristics of the faulty state can tell you something about the origin of the problem.
+Reindex everything if the issue might be index-related. Debugging indexed data typically happens on non-production environments. On production environments, you might want to investigate the origin of the index misalignment before you reindex. The characteristics of the faulty state can tell you something about the origin of the problem.
 
 ### Composer
 
-You might have outdated code due to a branch change or because of core files that you edited in a previous debugging effort. To eliminate potential issues, run the following commands:
+You might have outdated code due to a branch change or because of core files that were edited in a previous debugging effort. To eliminate potential issues, run the following commands:
 
 ```bash
 rm -rf vendor/*
@@ -80,7 +80,7 @@ composer install
 
 ### Generated content
 
-Before debugging JS, CSS, images, translations, and other frontend files, rebuild the frontend files:
+Rebuild frontend files before debugging the generated content in JS, CSS, images, translations, and other files.
 
 ```bash
 rm -rf generated/* var/cache/* var/page_cache/* var/session/* var/view_preprocessed/* pub/static/*
@@ -104,11 +104,11 @@ If you have created a module, check for the following issues:
 
   Check the `app/etc/config.php` file for your new module.
 
-- Is the file and directory structure nesting correct? Layout files are in the `view/layout/` directory instead of the `view/frontend/layout` directory. Templates are in the `view/frontend/template` directory instead of the `view/frontend/templates` directory.
+- Check the file and directory structure nesting. For example, are layout files in the `view/layout/` directory instead of the `view/frontend/layout` directory? Are templates in the `view/frontend/template` directory instead of the `view/frontend/templates` directory?
 
 ## Troubleshooting: Half-splitting
 
-If the usual suspects do not offer a solution to the problem, the fastest way to get to it is by half-splitting (or bisecting) the problem. With this method, you eliminate large chunks and divide what is left to locate the root cause instead of going through the code in a linear fashion.
+If the usual suspects do not offer a solution to the problem, the fastest way to proceed is by half-splitting (or bisecting) the problem. With this method, you eliminate large chunks and divide what is left to locate the root cause instead of going through the code in a linear fashion.
 
 See the following diagrams:
 
@@ -116,7 +116,7 @@ See the following diagrams:
 
 ![Bisect diagram](../../../assets/playbooks/bisect2.png)
 
-There are several ways to do bisecting, but Adobe recommends using the following order:
+There are several approaches to bisecting, but Adobe recommends following this order: 
 
 - Bisect by topic
 - Bisect by commits
@@ -135,7 +135,7 @@ If the problem might not be code-related, eliminate the large chunks first. Some
 
 ### Step 2: Bisect by commits
 
-If the problem started to occur between now and two months ago, roll the code back to two months ago. Verify whether the problem still exists. Go forward one month. Does the problem occur there? If not, go forward two weeks. Does it occur now? Go back one week. Still there? Go back four days. At some point, you have only one commit left that is likely to contain code related to the problem. Your root cause is now likely limited to the files edited in that commit.
+If the problem started between now and two months ago, roll the code back to two months ago. Verify whether the problem still exists. Go forward one month. Does the problem occur there? If not, go forward two weeks. Does it occur now? Go back one week. Still there? Go back four days. At some point, you have only one commit left that is likely to contain code related to the problem. Your root cause is now likely limited to the files edited in that commit.
 
 You can substitute weeks and days with commits. For example, roll back 100 commits, forward 50, forward 25, back 12.
 
@@ -147,7 +147,7 @@ You can substitute weeks and days with commits. For example, roll back 100 commi
 
 ## Time savers
 
-Apart from the troubleshooting techniques, there are a couple of general rules to save time during debugging.
+Apart from the troubleshooting techniques, this section provides some general rules that can help save time during debugging. 
 
 ### Limit data
 
@@ -155,11 +155,11 @@ Consider whether you need the full catalog or all store views to replicate the i
 
 ### Ask for more information
 
-Sometimes, an easy step to forget amidst all the code and technical work: ask for more information. Full-screen captures, a video, a video conference chat with the person that identified the issue, replication steps, questions about whether there are other seemingly unimportant things that happened around the problematic event. Ask what someone expected to happen. Is this really a bug or maybe just a misunderstanding of the way that the code works?
+Sometimes, an easy step to forget amidst all the code and technical work: ask for more information. Full-screen captures, a video, a video conference chat with the person that identified the issue, replication steps, questions about whether other seemingly unimportant things happened around the problematic event. Ask what someone expected to happen. Is this really a bug or maybe just a misunderstanding of the way that the code works?
 
 ### Language and interpretation
 
-Is the description of the problem clear? Are you sure that none of the terms or descriptions can be interpreted in multiple ways. If so, make sure that you are talking about the same thing.
+Is the description of the problem clear? Are you sure that no terms or descriptions can be interpreted in multiple ways. If so, make sure that you are talking about the same thing.
 
 ### Internet search
 
@@ -171,11 +171,7 @@ If you are looking at a problem for too long, it can be challenging to find a so
 
 ## Tools
 
-### `netz98 magerun` CLI tools
-
-[https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)
-
-Especially these commands:
+The n98 magerun CLI Tools ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2) provide useful capabilities to work with Adobe Commerce from the command line. Especially these commands:
 
 ```bash
 n98-magerun2.phar dev:console
@@ -187,7 +183,7 @@ n98-magerun2.phar index:trigger:recreate
 
 ## Code snippets
 
-To log or identify issues in the following topics:
+The following topics provide code snippets that can be used to log or identify issues in Commerce projects.
 
 ### Check if an XML file is used by Commerce
 
@@ -198,7 +194,7 @@ Add an obvious syntax error in an XML file to see if it is used. Open a tag and 
 <test
 ```
 
-If this file is used, it generates an error. If it is not, your module might not be used or not be enabled for instance, or the XML file might be in a wrong location.
+If this file is used, it generates an error. If it is not, your module might not be used or not be enabled for instance, or the XML file might be in the wrong location.
 
 ### Logging
 
