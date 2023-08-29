@@ -35,14 +35,6 @@ Use the following strategies to manage the number of cart items
 - Split orders into several smaller orders with a smaller number of rows by using the [!UICONTROL Add Item by SKU] feature.
 - Only add the custom logic and cart customization required to load a list of items.
 
-### Potential performance impact
-
-Having more than the recommended maximum number of products in the cart can affect site performance in the following ways:
-
-- Increased response time for data retrieval operations, validation of cart items, checks for applying price rules, and tax and total calculations.
-- Increased response time for minicart rendering including rendering of cart views, checkout flow, and execution.
-- Increased time loading time for all site pages where the minicart is present.
-
 ## Category limits
 
 Configuring a large number of categories can affect performance.
@@ -61,16 +53,6 @@ Use the following strategies to reduce the number of categories:
 - Manage unique product features through attributes and custom options
 - Remove inactive categories
 - Optimize catalog depth in the navigation
-
-### Potential performance impact
-
-Configuring too many categories can affect site performance in the following ways: 
-
-- Tangible increase in response time for non-cached catalog pages
-- Long execution and timeouts while managing categories from the Admin
-- Increase in size of corresponding database tables
-- Larger index tables increase time required to complete indexing operations for the `[category/product relation index\]`
-- Increased processing time to complete categories tree building, menu retrieval, and category rules management operations
 
 ## Product attributes
 
