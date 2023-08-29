@@ -177,7 +177,7 @@ After you disable this option, Adobe Commerce uses the product listing storefron
 
 ## Product SKU limits
 
-Configuring too many product SKUs can affect performance by slowing down product data retrieval and increasing the time to complete Admin panel operations or indexations.
+Configuring too many product SKUs can affect performance by slowing down product data retrieval and increasing the time to complete Admin operations or indexations.
 
 ### Affected products and versions
 
