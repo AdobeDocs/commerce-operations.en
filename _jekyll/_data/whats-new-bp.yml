@@ -2,8 +2,54 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Wed Aug 23 08:43:58 2023
+updated: Mon Aug 28 17:04:55 2023
 entries:
+- description: Added the following new topics:<br/>- [Catalog image resizing best
+    practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/catalog-image-resizing.html)<br/>-
+    [Code management best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-management.html)<br/>-
+    [Code review best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-review.html)<br/>-
+    [Debugging best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/debugging.html)<br/>-
+    [Exception handling best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/exception-handling.html)<br/>-
+    [General development best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/general.html)<br/>-
+    [Git branching best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/git-branching.html)<br/>-
+    [Global reference architecture (GRA) examples](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/examples.html)<br/>-
+    [Composer development for GRA](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/overview.html)<br/>-
+    [Composer project structure for GRA](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/project-structure.html)<br/>-
+    [Composer tips and tricks for GRA](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/tips-and-tricks.html)
+  versions: ''
+  type: best-practices
+  date: August 28, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/649
+  merge_commit: fd708ce4c1ab69f2d6e3a3b10dcd2387ae829368
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
+- description: Added a [new topic](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/backend-performance.html)
+    about optimizing the backend performance of Adobe Commerce sites.
+  versions: ''
+  type: best-practices
+  date: August 25, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/640
+  merge_commit: ecbb71ad8745e4589856c6cbf283212ed61a3664
+  contributor: meker
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
+- description: Consolidated all product-related best practices topics into a single
+    [catalog management](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/catalog-management.html)
+    topic and added relevant redirects.
+  versions: ''
+  type: best-practices
+  date: August 23, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/643
+  merge_commit: ec5a695002df98646c602f6f9ddb2cc11a79bad8
+  contributor: jmatthew
+  membership: false
+  labels:
+  - best-practices
 - description: Added a [new topic](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html)
     about implementing a centralized patching strategy for Adobe Commerce projects.
   versions: ''
