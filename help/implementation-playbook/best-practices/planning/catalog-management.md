@@ -19,16 +19,7 @@ The catalog management best practices described here cover a range of issues, in
 
 ## Cart limits
 
-For best performance, use the following guidelines to manage cart limits for Adobe Commerce and Magento Open Source:
-
-- For versions 2.3.x - 2.4.2, allow a maximum of 100 products in a cart.
-- For versions 2.4.3 and later, enhancement to sales rules capabilities increased the cart maximum to 750.
-
-For versions 2.3.x - 2.4.2, the expected performance based on cart item limits is:
-
-- Up to **100** products in a cart—the product works, meeting performance targets for response time.
-- Up to **300** products in a cart—the product works, but response time increases above targets.
-- Above **500** products in a cart—the cart and checkout flows are not guaranteed to work
+For best performance, use the following guidelines to manage cart limits for Adobe Commerce and Magento Open Source.
 
 ### Affected products and versions
 
@@ -44,20 +35,9 @@ Use the following strategies to manage the number of cart items
 - Split orders into several smaller orders with a smaller number of rows by using the [!UICONTROL Add Item by SKU] feature.
 - Only add the custom logic and cart customization required to load a list of items.
 
-### Potential performance impact
-
-Having more than the recommended maximum number of products in the cart can affect site performance in the following ways:
-
-- Increased response time for data retrieval operations, validation of cart items, checks for applying price rules, and tax and total calculations.
-- Increased response time for minicart rendering including rendering of cart views, checkout flow, and execution.
-- Increased time loading time for all site pages where the minicart is present.
-
 ## Category limits
 
-For best performance, do not configure more than the maximum recommended number of categories for Adobe Commerce sites.
-
-- For Adobe Commerce version 2.4.2 and later, configure a maximum of 6000 categories
-- For Adobe Commerce version 2.3.x and 2.4.0 to 2.4.1-p1, configure a maximum of 3000 categories
+Configuring a large number of categories can affect performance.
 
 ### Affected products and versions
 
@@ -74,25 +54,9 @@ Use the following strategies to reduce the number of categories:
 - Remove inactive categories
 - Optimize catalog depth in the navigation
 
-### Potential performance impact
-
-Having more than the recommended maximum number of categories can affect site performance in the following ways: 
-
-- Tangible increase in response time for non-cached catalog pages
-- Long execution and timeouts while managing categories from the Admin
-- Increase in size of corresponding database tables
-- Larger index tables increase time required to complete indexing operations for the `[category/product relation index\]`
-- Increased processing time to complete categories tree building, menu retrieval, and category rules management operations
-
 ## Product attributes
 
-- For best performance, do not configure more than the maximum recommended number of product attributes or product attribute options.
-
-- **Product attributes**—
-  - For Adobe Commerce version 2.3.x and 2.4.0 to 2.4.1-p1, configure no more than 500 attributes
-  - For Adobe Commerce version 2.4.2 and later, configure up to 1500 product attributes  
-- **Product attribute options**–Configure up to 100 attribute options for each attribute
-- **Product attribute sets**–Configure a maximum of 1000 attribute sets
+Configuring too many product attributes or product attribute options can affect performance.
 
 >[!NOTE]
 >
@@ -164,7 +128,7 @@ Configuring many **attribute options** can affect site performance in the follow
 
 ## Product options
 
-For best performance, configure a maximum of 100 product options per product.
+Configuring too many product options per product can affect performance.
 
 ### Affected products and versions
 
@@ -175,7 +139,7 @@ For best performance, configure a maximum of 100 product options per product.
 
 ### Reduce the number of options
 
-For best site performance, use the following strategies to reduce the number of product options:
+Use the following strategies to reduce the number of product options per product:
 
 - Configure complex products and custom options as a source of product variations.
 - Instead of creating global product templates and option containers that apply to all products, use attribute sets to build specific product templates with targeted attributes and options.
@@ -196,9 +160,7 @@ The increases listed above potentially affect site performance in the following 
 
 ## Product listing pagination
 
-For best performance, display a maximum of 48 products per page.
-
-You can configure Adobe Commerce to allow shoppers to view all category products on a single page. If the number of category products significantly exceeds 48 products, update the Catalog configuration for storefront pagination controls.
+Displaying too many products per page can affect performance.
 
 ### Affected products and versions
 
@@ -209,24 +171,13 @@ You can configure Adobe Commerce to allow shoppers to view all category products
 
 ### Update the product listing configuration
 
-If you have more than 48 products in any category, update the storefront catalog configuration to disable the option to **Allow All Products per page**.
+If you have too many products in a category, update the storefront catalog configuration to disable the option to **Allow All Products per page**.
 
 After you disable this option, Adobe Commerce uses the product listing storefront pagination controls to manage the number of products that display in storefront components. For instructions, see [Configure pagination controls](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Product SKU limits
 
-To maximize performance, the recommended maximum for effective product Stocking Keeping Units (SKUs) is 242 million. This effective product SKU maximum is calculated as:
-
-```text
-Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
-```
-
-Where:
-
-- N stands as the number of items for that category
-- Customer groups include shared catalogs, as it creates an additional customer group.
-
-Having more than the maximum number of effective SKUs slows down product data retrieval and increases the time to complete Admin panel operations or indexations.
+Configuring too many product SKUs can affect performance by slowing down product data retrieval and increasing the time to complete Admin operations or indexations.
 
 ### Affected products and versions
 
@@ -240,7 +191,7 @@ Having more than the maximum number of effective SKUs slows down product data re
 Use the following strategies to reduce the number of products (SKUs):
 
 - Minimize multipliers—
-  - Consolidating websites reduces the multiplier. If you have 50,000 SKUs, ten Websites, and ten Customer Groups, the Effective Number of SKUs is 5 million. Removing five Customer Groups reduces the Effective SKUs to 2.5 million.
+  - Consolidating websites reduces the multiplier.
   - Use alternative product features for custom pricing to replace shared catalog and customer groups multipliers.
   - Both customer groups and shared catalog function as multipliers for the number of effective SKUs in a store.
 - Restructure the catalog—
@@ -253,7 +204,7 @@ Use the following strategies to reduce the number of products (SKUs):
 
 ## Product variations
 
-For best performance, configure a maximum of 50 variations per product. 
+Configuring too many variations per product can affect performance.
 
 ### Affected products and versions
 
@@ -281,13 +232,12 @@ Exceeding the recommended number of product variations can affect site performan
 
 ## Promotions
 
-For best performance, follow these best practices to configure sales and promotions for items in a shopping cart:
+Follow these best practices to configure sales and promotions for items in a shopping cart:
 
-- **Sales rules (cart price rules)**–Configure no more than 1000 cart price rules for all websites
+- **Sales rules (cart price rules)**
   - Manage and remove unused rules.
   - Add strict rule conditions (like attribute or category filter) for the most efficient matching.
-- **Coupons**—
-  - Verify that the total number of coupons in the database is less than 250,000.
+- **Coupons**
   - Remove unused and expired coupons.
   - Generate only the number of coupons needed to meet campaign requirements.
 
@@ -306,4 +256,4 @@ Having more than the recommended maximum number of cart price rules or coupons c
 - Increased time to load and render the minicart.
 - Increased time to render the cart page.
 - Increased time to render the **Totals** block on the Checkout page.
-- Applying coupons can take more than 2 seconds.
+

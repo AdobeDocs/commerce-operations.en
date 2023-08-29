@@ -7,11 +7,7 @@ exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 ---
 # Best practice for configuring sites, stores, and store view
 
-For best site performance, configure a maximum of 50 sites, 50 stores, and 50 store views for Adobe Commerce on cloud infrastructure projects.
-
->[!NOTE]
->
->For Adobe Commerce on cloud infrastructure, the best practices apply specifically to the Production environment (and possibly Staging on Pro architecture, subject to resource constraints) which would have more resources than the integration and development environments. For integration (Pro and Starter) and Staging environments (Starter), reduce the number of store views to less than 5 or 10 (subject to technical review).
+For Adobe Commerce on cloud infrastructure, the best practices apply specifically to the Production environment (and possibly Staging on Pro architecture, subject to resource constraints) which would have more resources than the integration and development environments.
 
 ## Affected products and versions
 
