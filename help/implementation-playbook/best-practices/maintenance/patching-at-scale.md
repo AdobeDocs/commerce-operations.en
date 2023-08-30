@@ -8,7 +8,7 @@ badge: label="Contributed by Anton Evers, Sr. Technical Architect, Adobe" type="
 
 # Best practices for distributing Adobe Commerce patches at scale
 
-If you manage multiple Adobe Commerce installations, [patching](../../../upgrade/patches/apply.md) can be a complex process. _Centralized patching_ is an essential part of [global reference architecture](../../architecture/global-reference.md) and a best practice for enterprises. It helps you apply the right patches on all your Adobe Commerce installations. This topic explains how to achieve centralized patch distribution for all types of Adobe Commerce [patches](../../../upgrade/patches/overview.md).
+If you manage multiple Adobe Commerce installations, [patching](../../../upgrade/patches/apply.md) can be a complex process. _Centralized patching_ is an essential part of [global reference architecture](../../architecture/global-reference/overview.md) and a best practice for enterprises. It helps you apply the right patches on all your Adobe Commerce installations. This topic explains how to achieve centralized patch distribution for all types of Adobe Commerce [patches](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
