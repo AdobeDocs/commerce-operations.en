@@ -50,7 +50,7 @@ Learn more about testing Adobe Commerce projects:
 
 ### Identify and resolve performance issues
 
-Address performance issues by using various tools like New Relic and Observation for Adobe Commerce to detect bottlenecks and optimize Commerce sites effectively. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) is included with Adobe Commerce on cloud infrastructure, and [Observation for Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) is included for both cloud and on-premises deployments.
+Address performance issues by using various tools like New Relic and Observation for Adobe Commerce to detect bottlenecks and optimize Commerce sites effectively. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic-service.html) is included with Adobe Commerce on cloud infrastructure, and [Observation for Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) is included for both cloud and on-premises deployments.
 
 Use these tools to analyze site performance and identify performance issues related to:
 
