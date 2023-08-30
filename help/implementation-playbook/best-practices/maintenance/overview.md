@@ -13,7 +13,7 @@ The maintenance phase includes the following activities:
 - Configuration
 - Feature enhancements
 - Indexing
-- Managed services
+- Managed Services
 - Site monitoring
 - Upgrades
 
@@ -35,14 +35,14 @@ The following sections include best practice information for the maintenance pha
 
 | Best practice                                                                             | Description                                                                        |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md) | Manage critical updates to Adobe Commerce to prevent slow performance and outages. |
+| [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md) | Manage critical Adobe Commerce updates to prevent slow performance and outages.    |
 
 ## Database management
 
 | Best practice                                                                                            | Description                                                                                         |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Resolve database performance issues​](resolve-database-performance-issues.md)                            | Fix database issues that slow performance on Adobe Commerce sites deployed on cloud infrastructure. |
-| [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md)  | Prepare your Adobe Commerce database to upgrade MariaDB from a previous version.                    |
+| [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md)  | Prepare your MariaDB database for an upgrade.                                                       |
 
 ## Feature enhancements
 
@@ -50,13 +50,13 @@ The following sections include best practice information for the maintenance pha
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)   | Commerce & Coffee recording that describes personalization strategies.                                               |
 | [E-Commerce Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Commerce & Coffee recording that describes ecommerce trends.                                                         |
-| [AI Automation](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)     | Commerce & Coffee recording that describes personalization possibilities with artifical intelligence and automation. |
+| [AI Automation](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)     | Commerce & Coffee recording that describes personalization possibilities with artificial intelligence and automation. |
 
 ## Indexing
 
 | Best practice                                                                                              | Description                                                                      |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Use cron jobs or the CLI tool to index.                                          |
+| [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Use cron jobs or the CLI tool to run reindexing.                                 |
 | [Configure indexers​](indexer-configuration.md)                                                             | Optimize site performance by following best practices for indexer configuration. |
 | [Order processing](order-processing-configuration.md)                                                      | Improve checkout and order processing performance.                               |
 
@@ -64,7 +64,6 @@ The following sections include best practice information for the maintenance pha
 
 | Best practice                                                                                                                                   | Description                                                                                               |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)                                      | Use cron jobs or the CLI tool to index.                                                                   |
 | [Audit frontend performance](frontend-performance.md)                                                                                           | Identify and address issues that negatively impact site performance by using web performance tools.       |
 | [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)                                                               | Tips for maintaining your Adobe Commerce sites to maximize business value and uptime.                     |
 | [Use the [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)  | View important insights about your Adobe Commerce site in one place.                                      |

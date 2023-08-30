@@ -83,7 +83,7 @@ The following sections include best practice information for the planning phase.
   </tr>
   <tr>
     <td><a href="realpath-cache-size.md">Realpath cache size</a></td>
-    <td>Optimize performance by updating the PHP `readlpath` cache configuration to use recommended settings.</td>
+    <td>Optimize performance by updating the PHP `readlpath` cache configuration to use the recommended settings.</td>
   </tr>
 </tbody>
 </table>
@@ -115,7 +115,7 @@ The following sections include best practice information for the planning phase.
 
 | Best practice                                                | Description                                                                                                  |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [Partner escalations](partner-escalation.md)                 | Prepare for escalating a partner issue with an Adobe Adobe Account Team or learn how to avoid an escalation. |
+| [Partner escalations](partner-escalation.md)                 | Prepare for escalating a partner issue with an Adobe Account Team or learn how to avoid an escalation. |
 | [Payments storage processing](payment-processing-storage.md) | Securely process and store payment details.                                                                  |
 
 ## Sales and marketing
