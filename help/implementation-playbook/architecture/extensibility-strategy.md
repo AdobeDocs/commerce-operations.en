@@ -6,13 +6,13 @@ feature: Extensibility
 ---
 # Extensibility strategy
 
-Adobe Commerce's extensibility platform allows brands to efficiently customize processes, integrate systems, and deploy new capabilities while maintaining SaaS-like upgradeability.
+Adobe Commerce's extensibility platform allows brands to efficiently customize processes, integrate systems, and deploy new capabilities while maintaining upgradeability.
 
 ## Overview of Commerce extension strategies
 
 Extending the capabilities of the Commerce platform includes the following high-level approaches:
 
-*   Extending the native capabilities of the Commerce platform. For example, merchants can install out-of-the box Marketplace applications that extend and refine the platform's native shipping capabilities. 
+*   Extending the native capabilities of the Commerce platform. For example, merchants can install Marketplace applications (often built by third parties) that extend and refine the platform's native capabilities -- for example, an extension that can validate shipping addresses during checkout and facilitate quick integration with UPS carrier address APIs.
 
 *   Integrating third-party apps/extensions with the Commerce platform. Developers can use Commerce's existing, comprehensive REST and GraphQL APIs to directly integrate Commerce with third-party solutions. 
 
@@ -22,7 +22,7 @@ However, platform architecture determines the best strategies for extending a pl
 
 *   [API Mesh for Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) allows developers to combine multiple data sources into a single API endpoint. This supports the integration of private and third-party APIs and other software interfaces with Adobe Commerce APIs and other Adobe products using Adobe I/O.
 
-*   [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/) makes transactional data available to applications that are developed with App Builder, supporting the creation of event-driven applications. 
+*   [Adobe I/O Events for Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/) makes transactional data available to applications that are developed with App Builder and third-party web hooks, supporting the creation of event-driven applications. 
 
 These tools provide access to the Adobe Developer Console and Adobe developer tools to create APIs and integrate custom plugins and integrations.
 
