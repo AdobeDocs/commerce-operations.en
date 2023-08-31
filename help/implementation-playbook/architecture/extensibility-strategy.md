@@ -26,6 +26,4 @@ However, platform architecture determines the best strategies for extending a pl
 
 These tools provide access to the Adobe Developer Console and Adobe developer tools to create APIs and integrate custom plugins and integrations.
 
-![Adobe Commerce extensibility strategy diagram](../../assets/playbooks/extensibility-strategy-1.svg)
-
-![Adobe Commerce extensibility strategy diagram](../../assets/playbooks/extensibility-strategy-2.svg)
+![Adobe Commerce extensibility strategy diagram](../../assets/playbooks/extensibility-strategy-overview.svg)
