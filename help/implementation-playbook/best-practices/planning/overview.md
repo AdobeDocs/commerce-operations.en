@@ -60,7 +60,7 @@ The following sections include best practice information for the planning phase.
   </tr>
   <tr>
     <td><a href="database-on-cloud.md">Configure database for cloud deployments</a></td>
-    <td>configure database and application settings to improve performance when deploying Adobe Commerce on cloud infrastructure.</td>
+    <td>Configure database and application settings to improve performance when deploying Adobe Commerce on cloud infrastructure projects.</td>
   </tr>
   <tr>
     <td><a href="mysql-configuration.md">Configure MySQL</a></td>
