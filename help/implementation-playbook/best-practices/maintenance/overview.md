@@ -8,65 +8,71 @@ feature: Best Practices
 
 The maintenance phase includes the following activities:
 
-- Site monitoring
+- Bug fixing
 - Catalog management
-- Indexing
 - Configuration
 - Feature enhancements
-- Bug fixing
-- Managed services
+- Indexing
+- Managed Services
+- Site monitoring
 - Upgrades
 
 The following sections include best practice information for the maintenance phase.
 
-## Site Monitoring
+## Bug fixes
 
-- [Audit frontend performance](frontend-performance.md)
-- [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)
-- [Use SWAT tool to ensure security and operability of Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) – CTAG deck
-- [Use New Relic and Health notifications to monitor performance, disk space, and logs for Adobe Commerce sites deployed on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
-
-## Database management
-
-- [Resolve database performance issues​](resolve-database-performance-issues.md)
-- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md)
+| Best practice                                                                     | Description                                                                   |
+|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| [[!DNL Quality Patches Tool] usage](../../../tools/quality-patches-tool/usage.md) | Apply, revert, and view general information about all Adobe Commerce patches. |
 
 ## Catalog management
 
-<!-- Asset not yet integrated
-- [Catalog Image Resizing](https://wiki.corp.adobe.com/x/oj4ykw) (wiki)
--->
-- [Product Catalog Management](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
-
-## Indexing
-
-<!-- Asset not yet integrated
-- [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
--->
-- [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
-- [Configuration best practices for indexers​](indexer-configuration.md)
-- [Configuration best practices for order processing](order-processing-configuration.md)
-<!-- Asset not yet integrated from CTAG deck:
-- Plan upsizing for planned traffic increases during promotions or holidays -->
+| Best practice                                                                                                                                                    | Description                                                                          |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [Product Catalog Management](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL) | Commerce & Coffee recording that describes strategies for managing product catalogs. |
 
 ## Configuration
 
-- [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md)
+| Best practice                                                                             | Description                                                                        |
+|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md) | Manage critical Adobe Commerce updates to prevent slow performance and outages.    |
 
-<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)--> 
+## Database management
 
-## Bug fixes
-
-- [Quality Patches Tool usage](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+| Best practice                                                                                            | Description                                                                                         |
+|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| [Resolve database performance issues​](resolve-database-performance-issues.md)                            | Fix database issues that slow performance on Adobe Commerce sites deployed on cloud infrastructure. |
+| [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md)  | Prepare your MariaDB database for an upgrade.                                                       |
 
 ## Feature enhancements
 
-- [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)
-- [E-Commerce Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
-- [AI Automation](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)
+| Best practice                                                                                                                                           | Description                                                                                                          |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)   | Commerce & Coffee recording that describes personalization strategies.                                               |
+| [E-Commerce Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Commerce & Coffee recording that describes ecommerce trends.                                                         |
+| [AI Automation](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)     | Commerce & Coffee recording that describes personalization possibilities with artificial intelligence and automation. |
+
+## Indexing
+
+| Best practice                                                                                              | Description                                                                      |
+|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Use cron jobs or the CLI tool to run reindexing.                                 |
+| [Configure indexers​](indexer-configuration.md)                                                             | Optimize site performance by following best practices for indexer configuration. |
+| [Order processing](order-processing-configuration.md)                                                      | Improve checkout and order processing performance.                               |
+
+## Site Monitoring
+
+| Best practice                                                                                                                                   | Description                                                                                               |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [Audit frontend performance](frontend-performance.md)                                                                                           | Identify and address issues that negatively impact site performance by using web performance tools.       |
+| [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)                                                               | Tips for maintaining your Adobe Commerce sites to maximize business value and uptime.                     |
+| [Use the [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)  | View important insights about your Adobe Commerce site in one place.                                      |
+| [Monitor performance, disk space, and logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Use New Relic to monitor key performance insights about your Adobe Commerce on cloud infrastructure site. |
 
 ### Upgrades
 
-- [Patching at scale](patching-at-scale.md)
-- [Update services and components to latest version​](update-services.md)
-- [Upgrade checklist for Adobe Commerce​](upgrade-checklist.md)
+| Best practice                                                           | Description                                                                                |
+|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [Patching at scale](patching-at-scale.md)                               | Learn how centralized patching for Adobe Commerce can help you manage enterprise projects. |
+| [Update services and components to latest version​](update-services.md) | keep your Adobe Commerce on cloud infrastructure technology stack updated.                 |
+| [Upgrade checklist for Adobe Commerce​](upgrade-checklist.md)           | Create and use an upgrade checklist to plan your Adobe Commerce upgrade strategy.          |
