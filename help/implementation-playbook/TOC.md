@@ -57,8 +57,6 @@ mini-toc-levels: 3
     - [Overview](infrastructure/cloud/overview.md)
     - [Regions](infrastructure/cloud/regions.md)
     - [Technologies](infrastructure/cloud/technology.md)
-    - [Environments](infrastructure/cloud/environments.md)
-    - [Managed services](infrastructure/cloud/managed-services.md)
     - [Security and compliance](infrastructure/cloud/security.md)
   - Performance optimization {#performance}
     - [Typical issues](infrastructure/performance/optimization.md)
