@@ -84,7 +84,7 @@ See [View and manage logs](https://experienceleague.adobe.com/docs/commerce-clou
 
 ## Sensitive data
 
-Sensitive data can cover either personal information from consumers or confidential data from Managed Services customers. Protection of sensitive customer and consumer data is a critical obligation for Adobe Commerce Managed Services. Both Managed Services and ADobe customers have legal obligations around personally identifiable information. In addition to the security features of the architecture, there are other controls to limit the distribution and access to sensitive data.
+Sensitive data can cover either personal information from consumers or confidential data from Managed Services customers. Protection of sensitive customer and consumer data is a critical obligation for Adobe Commerce Managed Services. Both Managed Services and Adobe customers have legal obligations around personally identifiable information. In addition to the security features of the architecture, there are other controls to limit the distribution and access to sensitive data.
 
 Customers own their data and have control over where that data is located. The customer specifies the location where their production and development instances reside. They also specify which location is used for the Adobe Commerce Reporting environment with Commerce, and if that Adobe Commerce Reporting application has access to personally identifiable information or not. Production instances can be in most AWS regions, while development and Adobe Commerce Reporting environments can be found in either the United States or in the European Union currently.
 
@@ -108,15 +108,7 @@ GDPR calls for any personally identifiable information (such as names, race, and
 
 ## Backups
 
-Backups are performed every hour for the last 24 hours of operation. After the 24-hour period, backups are retained on the following schedule, using the AWS EBS Snapshot service:
-
-| Time period         | Backup retention policy |
-|---------------------|-------------------------|
-| Days 1 through 3    | Each backup             |
-| Days 4 through 6    | One backup per day      |
-| Weeks 2 through 6   | One backup per week     |
-| Weeks 8 through 12  | One biweekly backup     |
-| Weeks 12 through 22 | One backup per month    |
+Backups are performed every hour for the last 24 hours of operation. After the 24-hour period, backups are retained on a schedule using the AWS EBS Snapshot service. See [Retention policy](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) in the _Cloud Guide_.
 
 The service creates an independent backup on redundant storage. Because the EBS volumes are encrypted, the backups are also encrypted. Also, Managed Services performs on-demand backups on a customer-requested basis.
 
