@@ -28,4 +28,4 @@ These tools provide access to the Adobe Developer Console and Adobe developer to
 
 The following diagram highlights the main components of the Commerce exentisibility strategy.
 
-![Adobe Commerce extensibility strategy diagram](../../assets/playbooks/extensibility-strategy-overview.svg)
+![Adobe Commerce extensibility strategy diagram](../../assets/playbooks/extensibility-strategy-overview.png)
