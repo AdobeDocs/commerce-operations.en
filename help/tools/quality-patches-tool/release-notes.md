@@ -27,7 +27,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-53979** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the JS issue that occurs on the homepage if the welcome message contains a single quote.
 * **ACSD-52085** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where a configurable product with a special price is not visible in the product's carousel.
 * **ACSD-53795** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with invalid data type in `indexer_update_all_views` cron job.
-* **ACSD-52143** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixed the issue where custom options are removed after product import.
+* **ACSD-52143** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where custom options are removed after product import.
 * **ACSD-53750** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the "Broken pipe or closed connection" error during multi-threaded catalog_product_price reindex.
 * **ACSD-49843** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >=2.4.1 <2.4.7) - Fixes the issue where the link on product download is not available after the ordered item is auto invoiced by online payment method with the Payment Action = Sale setting enabled.
 * **ACSD-47054** (for Adobe Commerce >=2.4.2 <2.4.6) - Fixes the issue where preview reindex runs reindex for all stores, causing slowness.
