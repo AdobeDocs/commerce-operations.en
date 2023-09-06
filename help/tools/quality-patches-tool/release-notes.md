@@ -30,7 +30,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-52143** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where custom options are removed after product import.
 * **ACSD-53750** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the *Broken pipe or closed connection* error during multi-threaded `catalog_product_price` reindex.
 * **ACSD-49843** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >=2.4.1 <2.4.7) - Fixes the issue where the link on product download is not available after the ordered item is auto-invoiced by online payment method with the **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** setting enabled.
-* **ACSD-47054** (for Adobe Commerce >=2.4.2 <2.4.6) - Fixes the issue where preview reindex runs reindex for all stores, causing slowness.
+* **ACSD-47054** (for Adobe Commerce >=2.4.2 <2.4.6) - Fixes the issue where the preview reindex runs reindex for all stores, causing slowness.
 * Added new versions for ACSD-46541, ACSD-47079.
 * ACSD-49970-v3 replaced with ACSD-54095.
 
