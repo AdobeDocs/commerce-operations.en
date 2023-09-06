@@ -17,7 +17,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.37 {#v1-1-37}
 
-* **ACSD-52613** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where caches and indexes are refreshed even when no updates are made to Inventory_source items by rest API.
+* **ACSD-52613** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where caches and indexes are refreshed even when no updates are made to `Inventory_source` items by REST API.
 * **ACSD-51884** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the product image cache path becomes incorrect after running the resize command.
 * **ACSD-53628** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the CSV sales order report shows incorrect special characters.
 * **ACSD-53148** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where two parallel requests in GraphQL for adding the same configurable product to the cart resulted in two separate items on the cart with the same product SKU.
