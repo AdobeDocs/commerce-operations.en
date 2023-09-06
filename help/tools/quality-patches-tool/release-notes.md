@@ -21,7 +21,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51884** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the product image cache path becomes incorrect after running the resize command.
 * **ACSD-53628** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the CSV sales order report shows incorrect special characters.
 * **ACSD-53148** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where two parallel requests in GraphQL for adding the same configurable product to the cart resulted in two separate items on the cart with the same product SKU.
-* **ACSD-52606** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the error message "Your order is not ready for pickup" is displayed when the user clicks "Notify Order is Ready for Pickup".
+* **ACSD-52606** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the error message *Your order is not ready for pickup* is displayed when the user clicks **[!UICONTROL Notify Order is Ready for Pickup]**.
 * **ACSD-51574** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the image is not updated on the frontend after replacing it with another image with the same name.
 * **ACSD-53728** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the product EAV indexer is taking longer to complete.
 * **ACSD-53979** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the JS issue that occurs on the homepage if the welcome message contains a single quote.
