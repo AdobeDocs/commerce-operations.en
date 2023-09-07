@@ -47,7 +47,6 @@ A `<tab>`-Tag can have the following attributes:
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id`        | Defines the identifier that is used referencing the section.                                                                             | `typeId` | required |
 | `translate` | Defines the field that should be translatable. Provide `label` to make the label translatable.                                           | `string` | optional |
-| `type`      | Defines the input type of the rendered HTML element—defaults to `text`.                                                                  | `string` | optional |
 | `sortOrder` | Defines the sort order of the section. High numbers push the section to the bottom of the page; low numbers push the section to the top. | `float`  | optional |
 | `class`     | Adds a defined CSS class to the rendered tab HTML element.                                                                               | `string` | optional |
 
