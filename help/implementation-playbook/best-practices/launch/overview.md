@@ -18,13 +18,16 @@ The following sections include best practice information for the launch phase.
 
 ## Security configuration
 
-- [Adobe Security Notification Service​](security-notification-service.md)
-- [Prevent and respond to security incidents](prevent-respond-security-incident.md)
-- [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html)
-- [Best practices for Adobe Commerce robots.txt​](robots-txt.md)
-<!-- - [Install the latest security patches](https://helpx.adobe.com/security/products/magento/apsb22-12.html) - CTAG deck -->
-- [Verify security configuration on cloud infrastructure projects](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#security-configuration)
+| Best practice                                                                                                                      | Description                                                                                                   |
+|------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| [Adobe Security Notification Service​](https://www.adobe.com/subscription/adbeSecurityNotifications.html)                           | Subscribe to Adobe security notifications.                                                                    |
+| [Prevent and respond to security incidents](prevent-respond-security-incident.md)                                                  | Avoid and respond to security incidents for your Adobe Commerce on cloud infrastructure projects.             |
+| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Configure Google reCAPTCHA for Admin access and various storefront actions initiated by registered customers. |
+| [Configure the `robots.txt​` file](robots-txt.md)                                                                                   | Pass instructions about your Adobe Commerce site to web crawlers.                                             |
+| [Verify security configuration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)   | Review checklist items before launching an Adobe Commerce on cloud infrastructure site.                       |
 
 ## Performance Monitoring
 
-- [Use SWAT tool to ensure security and operability of Adobe Commerce](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)
+| Best practice                                                                                                                                  | Description                                                          |
+|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [Use the [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | View important insights about your Adobe Commerce site in one place. |

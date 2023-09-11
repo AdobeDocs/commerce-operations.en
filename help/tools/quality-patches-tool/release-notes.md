@@ -15,6 +15,25 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.37 {#v1-1-37}
+
+* **ACSD-52613** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where caches and indexes are refreshed even when no updates are made to `Inventory_source` items by REST API.
+* **ACSD-51884** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the product image cache path becomes incorrect after running the resize command.
+* **ACSD-53628** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the CSV sales order report shows incorrect special characters.
+* **ACSD-53148** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where two parallel requests in GraphQL for adding the same configurable product to the cart resulted in two separate items on the cart with the same product SKU.
+* **ACSD-52606** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the error message *Your order is not ready for pickup* is displayed when the user clicks **[!UICONTROL Notify Order is Ready for Pickup]**.
+* **ACSD-51574** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the image is not updated on the frontend after replacing it with another image with the same name.
+* **ACSD-53728** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the product EAV indexer is taking longer to complete.
+* **ACSD-53979** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the JS issue that occurs on the homepage if the welcome message contains a single quote.
+* **ACSD-52085** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where a configurable product with a special price is not visible in the product's carousel.
+* **ACSD-53795** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with invalid data type in `indexer_update_all_views` cron job.
+* **ACSD-52143** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where custom options are removed after product import.
+* **ACSD-53750** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the *Broken pipe or closed connection* error during multi-threaded `catalog_product_price` reindex.
+* **ACSD-49843** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >=2.4.1 <2.4.7) - Fixes the issue where the link on product download is not available after the ordered item is auto-invoiced by online payment method with the **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** setting enabled.
+* **ACSD-47054** (for Adobe Commerce >=2.4.2 <2.4.6) - Fixes the issue where the preview reindex runs reindex for all stores, causing slowness.
+* Added new versions for ACSD-46541, ACSD-47079.
+* ACSD-49970-v3 replaced with ACSD-54095.
+
 ## v1.1.36 {#v1-1-36}
 
 * **ACSD-53239** (for Adobe Commerce and Magento Open Source >=2.4.3 < 2.4.6) - Fixes the issue where the inventory indexer cleans all caches in the Update on Schedule mode.

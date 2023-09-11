@@ -9,65 +9,118 @@ exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
 
 The planning phase includes the following activities:
 
-- Requirements gathering
 - Architectural design
 - Catalog design
-- Project scoping
-- Account provisioning
-- User access
 - Extension purchasing
+- Project scoping
+- Requirements gathering
+- Sales and marketing
 
 The following sections include best practice information for the planning phase.
 
 ## Requirements gathering
 
-- **Application configuration**
-  - [Best practices for configuring sites, stores, and store views (cloud infrastructure)](sites-stores-store-views.md)
-  - [How to prevent—and fix—the five most common configuration issues for Adobe Commerce sites](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
-  - [Best practices for Caching](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-  - [Full page caching](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
-  - [OPcache memory size](opcache-memory-size.md)
-  - [Reporting configuration](reporting-configuration.md)
+<table>
+<thead>
+  <tr>
+    <th>Best practice</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan="2"><em>Application configuration</em></td>
+  </tr>
+  <tr>
+    <td><a href="sites-stores-store-views.md">Configure sites, stores, and store views</a></td>
+    <td>Configure sites, stores, and store views to maximize site performance.</td>
+  </tr>
+  <tr>
+    <td><a href="https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales">Common configuration issues</a></td>
+    <td>Fix and prevent the five most common configuration issues for Adobe Commerce sites.</td>
+  </tr>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Caching</a></td>
+    <td>Use the cache management tools to improve the performance of your site.</td>
+  </tr>
+  <tr>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Full-page caching</a></td>
+    <td>Learn how to work with public data when implementing caching in your Adobe Commerce or Magento Open Source extension.</td>
+  </tr>
+  <tr>
+    <td><a href="opcache-memory-size.md">OPcache memory size</a></td>
+    <td>Avoid performance degradation with specific settings of OPcache memory consumption.</td>
+  </tr>
+  <tr>
+    <td><a href="reporting-configuration.md">Configure reporting</a></td>
+    <td>Optimize site performance by removing the reporting module if you are not using it.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><em>Database configuration</em></td>
+  </tr>
+  <tr>
+    <td><a href="database-on-cloud.md">Configure database for cloud deployments</a></td>
+    <td>Configure database and application settings to improve performance when deploying Adobe Commerce on cloud infrastructure projects.</td>
+  </tr>
+  <tr>
+    <td><a href="mysql-configuration.md">Configure MySQL</a></td>
+    <td>Learn how MySQL triggers and slave connections affect site performance and how to use them effectively.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><em>Services configuration</em></td>
+  </tr>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">Set up Fastly</a></td>
+    <td>Configure Fastly services for your Adobe Commerce on cloud infrastructure project.</td>
+  </tr>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">Configure notification channels for New Relic</a></td>
+    <td>Access your New Relic dashboard and analyze data from your Adobe Commerce on cloud infrastructure project.</td>
+  </tr>
+  <tr>
+    <td><a href="redis-service-configuration.md">Configure Redis</a></td>
+    <td>Improve caching performance by using the extended Redis cache implementation for Adobe Commerce.</td>
+  </tr>
+  <tr>
+    <td><a href="realpath-cache-size.md">Realpath cache size</a></td>
+    <td>Optimize performance by updating the PHP `readlpath` cache configuration to use the recommended settings.</td>
+  </tr>
+</tbody>
+</table>
 
-- **Database configuration**
-  - [Database configuration best practices for cloud deployments​](database-on-cloud.md)
-  - [MySQL slave connection configuration​](configure-mysql-slave-connection-on-cloud.md)
-  - [MySQL triggers usage](mysql-triggers-usage.md)
+## Architectural design
 
-- **Services configuration**
-  - [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-  - [New Relic - Configure notification channels](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
-  - [Best practices for Redis service configuration​](redis-service-configuration.md)
-  - [Realpath cache size best practice](realpath-cache-size.md)
+| Best practice                                                                          | Description                                              |
+|----------------------------------------------------------------------------------------|----------------------------------------------------------|
+| [Global reference architecture (GRA)](../../architecture/global-reference/examples.md) | Understand common methods of organizing a GRA code base. |
 
-## **Architectural design**
+## Catalog design
 
-<!--Asset not yet integrated
-- [GRA Architecture examples](https://wiki.corp.adobe.com/x/kD4ykw)
--->
-- [Understanding Global Reference Architecture](../../../implementation-playbook/architecture/global-reference.md)
+| Best practice                                                                                     | Description                                                   |
+|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| [Category configuration](catalog-management.md#category-limits)                                   | Configure product categories for optimal performance.         |
+| [Product configuration​](catalog-management.md#product-sku-limits)                                 | Configure product SKUs for optimal performance.               |
+| [Product variation configuration](catalog-management.md#product-variations)                       | Configure product variations for optimal performance.         |
+| [Product options configuration](catalog-management.md#product-options)                            | Configure product options for optimal performance.            |
+| [Product attributes configuration​](catalog-management.md#product-attributes)                      | Configure product attributes for optimal performance.         |
+| [Pagination configuration for product listings](catalog-management.md#product-listing-pagination) | Configure product listing pagination for optimal performance. |
 
-## **Catalog design**
+## Extensions
 
-The following topics describe performance optimization best practices for configuring your Adobe Commerce catalog including recommended maximums for the number of categories, product effective SKUs, product variations, product attributes and options, and more.
+| Best practice                                                   | Description                                                                            |
+|-----------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Using third-party extensions in Adobe Commerce](extensions.md) | Learn how to avoid performance issues caused by third-party Adobe Commerce extensions. |
 
-- [Category configuration](category-limits.md)
-- [Product configuration​](product-sku-limits.md)
-- [Product variation configuration](product-variations.md)
-- [Product options configuration](product-options.md)
-- [Product attributes configuration​](product-attributes-and-options.md)
-- [Pagination configuration for product listings](product-listing-pagination.md)
+## Project scoping
 
-## **Sales and Marketing**
+| Best practice                                                | Description                                                                                                  |
+|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| [Partner escalations](partner-escalation.md)                 | Prepare for escalating a partner issue with an Adobe Account Team or learn how to avoid an escalation. |
+| [Payments storage processing](payment-processing-storage.md) | Securely process and store payment details.                                                                  |
 
-- [Best practices for product cart limit](product-cart.md)
-- [Best practices for configuring promotions](product-cart-promotions.md)
+## Sales and marketing
 
-## **Project scoping**
-
-- [Partner escalations](partner-escalation.md)
-- [Payments storage processing](payment-processing-storage.md)
-
-## **Purchase extensions**
-
-- [Best Practices for using third-party extensions in Adobe Commerce](extensions.md)
+| Best practice                                              | Description                                                  |
+|------------------------------------------------------------|--------------------------------------------------------------|
+| [Product cart limits](catalog-management.md#cart-limits)   | Manage cart limits for optimal performance.                  |
+| [Configuring promotions](catalog-management.md#promotions) | Configure sales and promotions for items in a shopping cart. |
