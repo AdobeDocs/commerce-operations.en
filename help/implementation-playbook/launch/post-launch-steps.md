@@ -13,7 +13,7 @@ Once the website is live, these activities would be performed as soon as possibl
 - Tag the cluster as live and create a support ticket to activate High SLA monitoring
 - The CSE (Customer Success Engineer) and TAM (Technical Account Manager) perform the following tasks as soon as cutover is complete: 
   - Tag the cluster as High SLA for Adobe Commerce client and create a support ticket to activate it
-  - Activate the Pingdom checks for domain names
+  - Activate the **internal** Pingdom checks for domain names (public access to Pingdom is not available)
   - Review monitoring state and ensure all items are in green
   - Keep the stakeholders informed of the warranty duration and parameters by email on go-live day
 
