@@ -39,7 +39,7 @@ You can also disable or delete authentication keys. For example, you can disable
 
 ### Manage SSH access token
 
-To download Adobe Commerce releases using SSH, you must generate a Downloads Access Token. To generate a token:
+To download Adobe Commerce and Magento Open Source releases using SSH, you must generate a Downloads Access Token. To generate a token:
 
 1. Log in to your [magento.com account](https://account.magento.com/customer/account/login).
 1. Click **My Account** at the top of the page.
