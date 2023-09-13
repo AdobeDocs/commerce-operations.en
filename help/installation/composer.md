@@ -29,7 +29,7 @@ Before you continue, you must do the following:
 
 ## Log in as file system owner
 
-Learn about ownership, permissions, and the file system owner in our [Overview of ownership and permissions topic](prerequisites/file-system/overview.md).
+Learn about ownership, permissions, and the file system owner in the [Overview of ownership and permissions topic](prerequisites/file-system/overview.md).
 
 To switch to the file system owner:
 
@@ -49,7 +49,7 @@ To switch to the file system owner:
 
 1. To run CLI commands from any directory, add `<app_root>/bin` to your system `PATH`.
 
-   Because shells have differing syntax, consult a reference like [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Because shells have differing syntaxes, consult a reference like [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Sample bash shell for CentOS:
 
@@ -69,7 +69,7 @@ To get the Adobe Commerce or Magento Open Source metapackage:
 
 1. Log in to your application server as, or switch to, the [file system owner](prerequisites/file-system/overview.md).
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot.
-1. Create Composer project using the Adobe Commerce or Magento Open Source metapackage.
+1. Create a Composer project using the Adobe Commerce or Magento Open Source metapackage.
 
     **Magento Open Source**
 
@@ -83,7 +83,7 @@ To get the Adobe Commerce or Magento Open Source metapackage:
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
     ```
 
-    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
+    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
     If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure that there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://support.magento.com/hc/en-us) for help.
 
@@ -158,7 +158,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->You can customize the Admin URI with the `--backend-frontname` option. However, we recommend omitting this option and allowing the installation command to automatically generate a random URI. A random URI is harder for hackers or malicious software to exploit. The URI displays in your console when installation is complete.
+>You can customize the Admin URI with the `--backend-frontname` option. However, Adobe recommends omitting this option and allowing the installation command to automatically generate a random URI. A random URI is harder for hackers or malicious software to exploit. The URI displays in your console when installation is complete.
 
 >[!TIP]
 >
@@ -222,4 +222,4 @@ The following arguments are common to all commands. These commands can be run ei
 
 >[!NOTE]
 >
->Congratulations! You've completed the quick install. Need more advanced help? Check out our [Advanced install](advanced.md) guide.
+>Congratulations! You've completed the quick install. Need more advanced help? Check out the [Advanced install](advanced.md) guide.

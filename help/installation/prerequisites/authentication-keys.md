@@ -18,7 +18,8 @@ For access entitlement to Adobe Commerce and Magento Open Source packages, you m
 
 To create authentication keys:
 
-1. Log in to the [Commerce Marketplace](https://marketplace.magento.com). If you don't have an account, click **Register**.
+1. Log in to the [Commerce Marketplace](https://commercemarketplace.adobe.com/). If you don't have an account, click **Register**.
+
 1. Click your account name in the top right of the page and select **My Profile**.
 
 1. Click **Access Keys** in the Marketplace tab.
