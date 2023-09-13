@@ -5,7 +5,9 @@ exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 ---
 # Quick start on-premises installation
 
-We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source metapackage provides the following advantages:
+The instructions on this page describe how to install Adobe Commerce and Magento Open Source on [self-hosted](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructure. For guidance on upgrading an existing installation, see the [_Upgrade Guide_](../upgrade/overview.md).
+
+Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source metapackage provides the following advantages:
 
 -  Reuse third-party libraries without bundling them with source code
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
@@ -87,34 +89,30 @@ To get the Adobe Commerce or Magento Open Source metapackage:
 
     See [Troubleshooting](https://support.magento.com/hc/en-us/articles/360033818091) for help with more errors.
 
-    >[!NOTE]
-    >
-    >Adobe Commerce customers can access patches two weeks before the General Availability (GA) date. Pre-release packages are available through Composer only. You cannot access pre-releases on the Developer Portal or GitHub until GA. If you cannot find these packages in Composer, contact Adobe Commerce Support.
-
 ### Example - Minor release
 
-Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the Adobe Commerce 2.4.5 metapackage:
+Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the Adobe Commerce 2.4.6 metapackage:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Example - Quality patch
 
-Quality patches primarily contain functional _and_ security fixes. However, they can also sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the Adobe Commerce 2.4.5 metapackage:
+Quality patches primarily contain functional _and_ security fixes. However, they can also sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the Adobe Commerce 2.4.6 metapackage:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Example - Security patch
 
 Security patches contain security fixes only. They are designed to make the upgrade process faster and easier.
 
-Security patches use the Composer naming convention `2.4.5-px`. Use Composer to specify a patch. For example, to download the Adobe Commerce 2.4.5-p1 metapackage:
+Security patches use the Composer naming convention `2.4.6-px`. Use Composer to specify a patch. For example, to download the Adobe Commerce 2.4.6-p1 metapackage:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
 ## Set file permissions
