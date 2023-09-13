@@ -30,9 +30,9 @@ Complete these two tasks before enabling the `ApplicationServer` module:
 
 ### Configure Nginx
 
-Your specific Commerce deployment determines how to configure Nginx. In general, the Nginx configuration file is by default named `nginx.conf` and is placed in one of these directories: `/usr/local/nginx/conf`, `/etc/nginx`, or `/usr/local/etc/nginx`. See [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html) for more information on configuring Nginx.
+Your specific Commerce deployment determines how to configure Nginx. In general, the Nginx configuration file is by default named `nginx.conf` and is placed in one of these directories: `/usr/local/nginx/conf`, `/etc/nginx`, or `/usr/local/etc/nginx`. See [Beginner's Guide](https://nginx.org/en/docs/beginners_guide.html) for more information on configuring Nginx.
 
-Sample Nginx configuration: 
+Sample Nginx configuration:
 
 ```conf
 location /graphql {
