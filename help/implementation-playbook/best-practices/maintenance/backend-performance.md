@@ -33,7 +33,7 @@ One tool you can use for stress testing is GTmetrix. Gauge site readiness for lo
 
 Learn more about preparing Commerce projects for high-traffic periods:
 
-- [Holiday Readiness](https://experienceleague.adobe.com/docs/events/mbi-webinars-recordings/2021/holiday-readiness.html)
+- [Holiday Readiness](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [Holiday Shopping Analysis](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
 - [Surge Capacity Increase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
