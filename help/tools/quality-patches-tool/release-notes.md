@@ -17,7 +17,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.38 {#v1-1-38}
 
-* **ACSD-53098** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4) - Fixes the issue where products assigned to a shared catalog are not appearing on the storefront when a partial index is executed.
+* **ACSD-53098** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4) - Fixes the issue where products assigned to a shared catalog do not appear on the storefront when a partial index is executed.
 * **ACSD-54018** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the performance issues with the Product List Widget that uses a non-global attribute in the widget condition.
 * **ACSD-54111** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where the product thumbnail images are not displayed on the storefront when the aspect ratio of the watermark image does not match the product image.
 * **ACSD-47669** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes "Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails" error when importing products CSV.
