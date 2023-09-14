@@ -1,8 +1,30 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Aug 28 17:04:47 2023
+updated: Thu Sep 14 09:19:51 2023
 entries:
+- description: Updated the [extensibility strategy](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html)
+    with information about App Builder, API Mesh, and Adobe I/O Events.
+  versions: ''
+  type: major-update
+  date: September 11, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/639
+  merge_commit: f4f420cee5f9241f56107c4218793af394ba1193
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.37 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: September 6, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/656
+  merge_commit: 3290e58436259a7af81ed81b691a3ad032c812a5
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
 - description: Added the following new topics:<br/>- [Catalog image resizing best
     practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/catalog-image-resizing.html)<br/>-
     [Code management best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-management.html)<br/>-
