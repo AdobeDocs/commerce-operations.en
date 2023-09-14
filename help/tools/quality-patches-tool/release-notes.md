@@ -24,7 +24,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-53347** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the price indexer takes too much time to execute.
 * **ACSD-52287** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue with incorrect order status in the archived order grid when asynchronous grid indexing is enabled.
 * **ACSD-52929** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue with redundant requests to reindex default source items when the inventory indexer is configured in async mode.
-* **ACSD-53824** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where UpdateMultiselectAttributesBackendTypes migration data patch exceeds database transaction size limit during setup:upgrade.
+* **ACSD-53824** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where `UpdateMultiselectAttributesBackendTypes` migration data patch exceeds database transaction size limit during `setup:upgrade`.
 
 ## v1.1.37 {#v1-1-37}
 
