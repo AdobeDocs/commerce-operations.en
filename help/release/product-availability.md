@@ -11,6 +11,10 @@ Services and extensions are tested on the latest released version of Commerce at
 
 Supported versions have been fully tested by Adobe. Assistance for supported versions is available from Adobe Customer Support. Older versions may work properly but are not officially supported.
 
+>[!NOTE]
+>
+>Support for Adobe Commerce versions also includes support for [available security patches](versions.md).
+
 ## Adobe Authored Extensions
 
 These Adobe Commerce extensions are decoupled from the core Adobe Commerce codebase. This allows Adobe to release iterations of these extensions on a more flexible timeframe and provide customers earlier access to new features.
