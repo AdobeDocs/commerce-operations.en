@@ -20,7 +20,7 @@ To configure Commerce to use Varnish:
    | Backend host | Enter the fully qualified hostname or IP address and listen port of the Varnish _backend_ or _origin server_; that is, the server providing the content Varnish accelerates. Typically, this is your web server. See [Varnish cache Backend servers](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Backend port | Origin server's listen port. |
    | Grace period | Determines how long Varnish serves stale content if the backend is not responsive. The default value is 300 seconds. |
-   | Handles params size | Specifies the maximum number of [layout handles](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) to process on the [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP endpoint for full-page caching. Restricting the size can improve security and performance. The default is 100. |
+   | Handles params size  [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Available in 2.4.7-beta only"} | Specifies the maximum number of [layout handles](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) to process on the [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP endpoint for full-page caching. Restricting the size can improve security and performance. The default is 100. |
 
 1. Click **Save Config**.
 
