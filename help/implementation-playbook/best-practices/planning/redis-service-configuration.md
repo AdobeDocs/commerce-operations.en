@@ -6,45 +6,102 @@ feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 ---
 # Best practices for Redis service configuration
-
-- Use the extended Redis cache implementation, which includes the following optimizations to minimize the number of Redis queries that are performed on each request from Adobe Commerce:
-  - Diminishes the size of network data transfers between Redis and Adobe Commerce
-  - Lowers Redis consumption of CPU cycles by improving the adapter's ability to automatically determine what needs to be loaded
-  - Reduces race conditions on Redis write operations
+- Enable Redis L2 cache implementation
+- Enable Redis slave connection
+- Pre-load keys
+- Enable stale cache
 - Separate the Redis cache from the Redis session
-- Compress the Redis cache and use `gzip` to improve performance
+- Compress the Redis cache and use `gzip` for higher compression
 
-## Extended Redis cache implementation
+## Redis L2 cache implementation
 
-Update your configuration to use the extended Redis cache implementation `\Magento\Framework\Cache\Backend\Redis`.
+Update your configuration to use Redis L2 cache implementation `'\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'`.
 
-### Configure cloud deployments
-
-Configure enhanced Redis cache by setting the `REDIS_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
+Configure Redis L2 cache by setting the `REDIS_BACKEND` deployment variable in the `.magento.env.yaml` configuration file.
 
 ```yaml
 stage:
   deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\Redis'
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For details, see the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) variable description in the _Commerce on Cloud Infrastructure Guide_.
+For details, see the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) guide.
+
+For on-premises, follow the [instructions here.](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)
 
 >[!NOTE]
->
-> Check the `ece-tools` version installed in your local environment from the command line using the `composer show magento/ece-tools` command. If necessary, [update to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). 
+> Make sure `ece-tools` is [update to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). 
 
+## Enable Redis slave connection
+Enable Redis slave connection in `.magento.env.yaml` configuration file to allow only one node to handle read-write traffic while the other nodes handle the reading
+
+```yaml
+stage:
+  deploy:
+    REDIS_USE_SLAVE_CONNECTION: true
+```
+More details on [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)
 >[!WARNING]
 >
->Do _not_ configure a Redis slave connection for cloud infrastructure projects with a [scaled architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). This causes Redis connection errors. See [the Redis configuration guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
+>Do _not_ configure a Redis slave connection for cloud infrastructure projects with a [scaled/split architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). This causes Redis connection errors. See [the Redis configuration guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
 
-### Configure on-premises deployments
+## Pre-load keys
+Preload data that is reused between pages by listing the keys you want to be preloaded in `.magento.env.yaml`, example:
 
-For Adobe Commerce on-premises deployments, configure the new Redis cache implementation using the `bin/magento:setup` commands. For instructions, see [Use Redis for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_'                       # Prefix for keys to be preloaded
+          backend_options:
+            preload_keys:                         # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash'
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
+For on-premises, follow the [instructions here.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html#redis-preload-feature)
 
-## Separate cache and session instances
+## Enable stale cache
+Enhance performance by reducing lock waiting times, especially when dealing with numerous Blocks or Cache keys. It allows serving outdated cache while generating a new one in parallel. All you need is to define the cache type you want to enable stale cache in your `.magento.env.yaml`, example:
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      default:
+        backend_options:
+          use_stale_cache: false
+      stale_cache_enabled:
+        backend_options:
+          use_stale_cache: true
+      type:
+        default:
+          frontend: "default"
+        layout:
+          frontend: "stale_cache_enabled"
+        block_html:
+          frontend: "stale_cache_enabled"
+        reflection:
+          frontend: "stale_cache_enabled"
+        config_integration:
+          frontend: "stale_cache_enabled"
+        config_integration_api:
+          frontend: "stale_cache_enabled"
+        full_page:
+          frontend: "stale_cache_enabled"
+        translate:
+          frontend: "stale_cache_enabled"
+```
+For more details and how to configure on-premises, follow the [instructions here.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#stale-cache-options)
+## Separate Redis cache and session instances
 
-Separating the Redis cache from Redis session allows you to manage the cache and sessions independently to prevent cache issues from affecting sessions.
+Separating the Redis cache from Redis session allows you to manage the cache and sessions independently. It prevents cache issues from affecting sessions, which could have impact on revenue. Each Redis instance will run on its own core, which also brings performance improvement.
 
 1. Update the `.magento/services.yaml` configuration file.
 
@@ -79,7 +136,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to change the Redis service configuration on Pro Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files.
+1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) requesting the provision of a new Redis instance dedicated to sessions on Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files. This won't cause any downtime, but requires a deployment to activate the new service.
 
 1. Verify that the new instance is running and make a note of the port number.
 
@@ -128,7 +185,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Cache compression
 
-Use cache compression, but be aware that there is a trade-off with client-side performance. If you have spare CPUs, enable it. See [Use Redis for session storage](../../../configuration/cache/redis-session.md).
+If you are using over 6gb of Redis maxmemory, you can use cache compression to reduce the space consumed by the keys, but be aware that there is a trade-off with client-side performance. If you have spare CPUs, enable it. See [Use Redis for session storage](../../../configuration/cache/redis-session.md).
 
 ```yaml
 stage:
