@@ -35,7 +35,7 @@ Customers can use SSH tunnels to secure communications with the application. Acc
 
 ## Encryption
 
-Amazon Elastic Block Store (EBS) is used for storage. All EBS volumes are encrypted using the AES-265 algorithm, which means that the data is encrypted at rest. The system also encrypts data in transit between the CDN and the origin, and between the origin servers. Customer passwords are stored as hashes. Sensitive credentials, including payment gateway credentials, are encrypted using the SHA-256 algorithm.
+Amazon Elastic Block Store (EBS) is used for storage. All EBS volumes are encrypted using the AES-256 algorithm, which means that the data is encrypted at rest. The system also encrypts data in transit between the CDN and the origin, and between the origin servers. Customer passwords are stored as hashes. Sensitive credentials, including payment gateway credentials, are encrypted using the SHA-256 algorithm.
 
 The Adobe Commerce application does not support column- or row-level encryption or encryption when the data is not at rest or not in transit between servers. The customer can manage encryption keys from within the application. Keys used by the system are stored in the AWS Key Management System and must be managed by Managed Services to provide parts of the service.
 
