@@ -15,6 +15,17 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.38 {#v1-1-38}
+
+* **ACSD-53098** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4) - Fixes the issue where products assigned to a shared catalog do not appear on the storefront when a partial index is executed.
+* **ACSD-54018** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the performance issues with the [!UICONTROL Product List] widget that uses a non-global attribute in the widget condition.
+* **ACSD-54111** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where the product thumbnail images are not displayed on the storefront when the aspect ratio of the watermark image does not match the product image.
+* **ACSD-47669** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes *Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails* error when importing products CSV.
+* **ACSD-53347** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the price indexer takes too much time to execute.
+* **ACSD-52287** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue with incorrect order status in the archived order grid when asynchronous grid indexing is enabled.
+* **ACSD-52929** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue with redundant requests to reindex default source items when the inventory indexer is configured in async mode.
+* **ACSD-53824** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where `UpdateMultiselectAttributesBackendTypes` migration data patch exceeds database transaction size limit during `setup:upgrade`.
+
 ## v1.1.37 {#v1-1-37}
 
 * **ACSD-52613** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where caches and indexes are refreshed even when no updates are made to `Inventory_source` items by REST API.
