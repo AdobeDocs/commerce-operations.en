@@ -15,6 +15,49 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.38 {#v1-1-38}
+
+* **ACSD-53098** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4) - Fixes the issue where products assigned to a shared catalog do not appear on the storefront when a partial index is executed.
+* **ACSD-54018** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the performance issues with the [!UICONTROL Product List] widget that uses a non-global attribute in the widget condition.
+* **ACSD-54111** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where the product thumbnail images are not displayed on the storefront when the aspect ratio of the watermark image does not match the product image.
+* **ACSD-47669** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes *Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails* error when importing products CSV.
+* **ACSD-53347** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the price indexer takes too much time to execute.
+* **ACSD-52287** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue with incorrect order status in the archived order grid when asynchronous grid indexing is enabled.
+* **ACSD-52929** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue with redundant requests to reindex default source items when the inventory indexer is configured in async mode.
+* **ACSD-53824** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where `UpdateMultiselectAttributesBackendTypes` migration data patch exceeds database transaction size limit during `setup:upgrade`.
+
+## v1.1.37 {#v1-1-37}
+
+* **ACSD-52613** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where caches and indexes are refreshed even when no updates are made to `Inventory_source` items by REST API.
+* **ACSD-51884** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the product image cache path becomes incorrect after running the resize command.
+* **ACSD-53628** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the CSV sales order report shows incorrect special characters.
+* **ACSD-53148** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where two parallel requests in GraphQL for adding the same configurable product to the cart resulted in two separate items on the cart with the same product SKU.
+* **ACSD-52606** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the error message *Your order is not ready for pickup* is displayed when the user clicks **[!UICONTROL Notify Order is Ready for Pickup]**.
+* **ACSD-51574** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the image is not updated on the frontend after replacing it with another image with the same name.
+* **ACSD-53728** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where the product EAV indexer is taking longer to complete.
+* **ACSD-53979** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the JS issue that occurs on the homepage if the welcome message contains a single quote.
+* **ACSD-52085** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where a configurable product with a special price is not visible in the product's carousel.
+* **ACSD-53795** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with invalid data type in `indexer_update_all_views` cron job.
+* **ACSD-52143** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where custom options are removed after product import.
+* **ACSD-53750** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the *Broken pipe or closed connection* error during multi-threaded `catalog_product_price` reindex.
+* **ACSD-49843** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.0 || >=2.4.1 <2.4.7) - Fixes the issue where the link on product download is not available after the ordered item is auto-invoiced by online payment method with the **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** setting enabled.
+* **ACSD-47054** (for Adobe Commerce >=2.4.2 <2.4.6) - Fixes the issue where the preview reindex runs reindex for all stores, causing slowness.
+* Added new versions for ACSD-46541, ACSD-47079.
+* ACSD-49970-v3 replaced with ACSD-54095.
+
+## v1.1.36 {#v1-1-36}
+
+* **ACSD-53239** (for Adobe Commerce and Magento Open Source >=2.4.3 < 2.4.6) - Fixes the issue where the inventory indexer cleans all caches in the Update on Schedule mode.
+* **ACSD-50887** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the product attribute property *[!UICONTROL Use in Search Results Layered Navigation]* can be set to *Yes* without the *[!UICONTROL Use in search]* option set to *Yes*.
+* **ACSD-51846** (for Adobe Commerce and Magento Open Source >=2.4.3-p2 <2.4.6) - Fixes the *Internal Error* issue that happens because not all levels of REST API payload are validated.
+* **ACSD-52906** (for Adobe Commerce >=2.3.7 <2.4.7) - Fixes the issue where the X-Magento-Vary cookie is set incorrectly for logged-in customers that belong to the same customer segment causing improper caching for some pages.
+* **ACSD-52736** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.6) - Fixes the issue where a *Cart Price Rule* that includes requirements for configurable product quantity does not work as expected.
+* **ACSD-47875** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the issue where admin users are not able to add a product to a customer cart from the Admin for a particular store view scope with inventory management.
+* **ACSD-53176** (for Adobe Commerce >=2.3.7 <2.4.5) - Fixes the issue where *Related Product Rule* with *is one of* condition does not match products.
+* **ACSD-51666** (for Adobe Commerce and Magento Open Source >=2.3.7 <2.4.7) - Fixes the error *The session has expired, please login again.* that happens after a customer tries to log in.
+* Added new versions for MDVA-39305-v2.
+* Updated requirements for ACSD-19640.
+
 ## v1.1.35 {#v1-1-35}
 
 * **ACSD-51899** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the default shipping address on the checkout shipping step is auto-populated with a previously selected in-store pickup address.

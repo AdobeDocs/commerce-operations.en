@@ -1,8 +1,125 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Aug 1 09:19:15 2023
+updated: Thu Sep 14 09:19:51 2023
 entries:
+- description: Updated the [extensibility strategy](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html)
+    with information about App Builder, API Mesh, and Adobe I/O Events.
+  versions: ''
+  type: major-update
+  date: September 11, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/639
+  merge_commit: f4f420cee5f9241f56107c4218793af394ba1193
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.37 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: September 6, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/656
+  merge_commit: 3290e58436259a7af81ed81b691a3ad032c812a5
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added the following new topics:<br/>- [Catalog image resizing best
+    practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/catalog-image-resizing.html)<br/>-
+    [Code management best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-management.html)<br/>-
+    [Code review best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-review.html)<br/>-
+    [Debugging best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/debugging.html)<br/>-
+    [Exception handling best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/exception-handling.html)<br/>-
+    [General development best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/general.html)<br/>-
+    [Git branching best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/git-branching.html)<br/>-
+    [Global reference architecture (GRA) examples](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/examples.html)<br/>-
+    [Composer development for GRA](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/overview.html)<br/>-
+    [Composer project structure for GRA](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/project-structure.html)<br/>-
+    [Composer tips and tricks for GRA](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/tips-and-tricks.html)
+  versions: ''
+  type: new-topic
+  date: August 28, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/649
+  merge_commit: fd708ce4c1ab69f2d6e3a3b10dcd2387ae829368
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
+- description: Added a [new topic](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/backend-performance.html)
+    about optimizing the backend performance of Adobe Commerce sites.
+  versions: ''
+  type: new-topic
+  date: August 25, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/640
+  merge_commit: ecbb71ad8745e4589856c6cbf283212ed61a3664
+  contributor: meker
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
+- description: Added a [new topic](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html)
+    about implementing a centralized patching strategy for Adobe Commerce projects.
+  versions: ''
+  type: new-topic
+  date: August 23, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/637
+  merge_commit: 03cb50be0cb18b6079c5c69aafc74c6099610fb0
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.36 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: August 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/634
+  merge_commit: 778890d5840669df958e84381c2aade70a492454
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
+- description: Updated [released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
+    with the August 2023 security patches.
+  versions: ''
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/628
+  merge_commit: c9abed3c6ca156cdc19e7231f97cf2a8bd8ab100
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added information about the Adobe Commerce August 8, 2023 security
+    hotfix to the release notes for Adobe Commerce 2.4.4-p4, 2.4.4-p5, 2.4.5-p3, 2.4.5-p4,
+    2.4.6-p1, and 2.4.6-p2.  See [Release notes for Adobe Commerce and Magento Open
+    Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+  versions: 2.4.4, 2.4.5, 2.4.6
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/632
+  merge_commit: 623ada901bad9f766451d9c9166e82f1cee85c0d
+  contributor: frontain
+  membership: false
+  labels:
+  - 2.4.4
+  - major-update
+  - 2.4.5
+  - 2.4.6
+- description: Added information about [endpoint detection and response](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/security.html)
+    on cloud infrastructure.
+  versions: ''
+  type: major-update
+  date: August 7, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/429
+  merge_commit: fd3b93aaa79e84d356217b6adfe7181895e84f07
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
 - description: Added release notes for Adobe Commerce 2.4.6-p2, 2.4.5-p4, and 2.4.4-p5.
     See [Release notes for Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
   versions: 2.4.4, 2.4.5, 2.4.6

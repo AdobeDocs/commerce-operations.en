@@ -47,7 +47,6 @@ A `<tab>`-Tag can have the following attributes:
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id`        | Defines the identifier that is used referencing the section.                                                                             | `typeId` | required |
 | `translate` | Defines the field that should be translatable. Provide `label` to make the label translatable.                                           | `string` | optional |
-| `type`      | Defines the input type of the rendered HTML element—defaults to `text`.                                                                  | `string` | optional |
 | `sortOrder` | Defines the sort order of the section. High numbers push the section to the bottom of the page; low numbers push the section to the top. | `float`  | optional |
 | `class`     | Adds a defined CSS class to the rendered tab HTML element.                                                                               | `string` | optional |
 
@@ -292,7 +291,6 @@ A `<field>`-Tag can have the following children:
 | `more_url`                  | Not extensible. See below.                                                                                                                                                                | `typeUrl`        |
 | `demo_url`                  | Not extensible. See below.                                                                                                                                                                | `typeUrl`        |
 | `hide_in_single_store_mode` | Whether the group should be visible in single store mode. `1` hides the group; `0` shows the group.                                                                                       | `int`            |
-| `source_service`            | Service used to populate select options.                                                                                                                                                  | `complexType`    |
 | `options`                   | Not used. Potentially deprecated.                                                                                                                                                         | `complexType`    |
 | `depends`                   | Can be used to declare dependencies to other fields. Is used to only show specific fields/groups when a given field has a value of `1`. This node expects a `section/group/field`-string. | `complexType`    |
 | `attribute`                 | Custom attributes can be used by frontend models. Usually used to make a given frontend model more dynamic.                                                                               | `complexType`    |
