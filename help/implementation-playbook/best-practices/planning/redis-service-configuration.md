@@ -24,17 +24,17 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For details, see the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) in the _Commerce on Cloud Infrastructure Guide_.
+For environment configuration on Cloud infrastructure, see the [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) in the _Commerce on Cloud Infrastructure Guide_.
 
 For on-premises installations, see [Configure Redis page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
 
 >[!NOTE]
 >
->Make sure that you're using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command. 
+>Verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command. 
 
 ## Enable Redis slave connection
 
-Enable a Redis slave connection in the `.magento.env.yaml` configuration file to allow only one node to handle read-write traffic while the other nodes handle the reading.
+Enable a Redis slave connection in the `.magento.env.yaml` configuration file to allow only one node to handle read-write traffic while the other nodes handle the read-only traffic.
 
 ```yaml
 stage:
@@ -52,7 +52,7 @@ For Adobe Commerce on-premises installations, configure the new Redis cache impl
 
 ## Pre-load keys
 
-To reuse data between pages, preload it by listing the keys you want to be preloaded in the `.magento.env.yaml` configuration file.
+To reuse data between pages, list the keys for preload in the `.magento.env.yaml` configuration file.
 
 ```yaml
 stage:
@@ -75,7 +75,7 @@ For on-premises installations, see [Redis preload feature](../../../configuratio
 
 ## Enable stale cache
 
-Enhance performance by reducing lock waiting times, especially when dealing with numerous Blocks and Cache keys. It allows serving an outdated cache while generating a new one in parallel. Define the cache type where you want to enable stale cache in the `.magento.env.yaml` configuration file.
+Reduce lock waiting times and enhance performance—especially when dealing with numerous Blocks and Cache keys—by using an outdated cache while generating a new cache in parallel. Enable stale cache and define cache types in the `.magento.env.yaml` configuration file:
 
 ```yaml
 stage:
@@ -108,7 +108,7 @@ stage:
           frontend: "stale_cache_enabled"
 ```
 
-For more details and instructions for configuring on-premises installations, see [Stale cache options](../../../configuration/cache/level-two-cache.md#stale-cache-options) in the _Configuration Guide_.
+For configuring on-premises installations, see [Stale cache options](../../../configuration/cache/level-two-cache.md#stale-cache-options) in the _Configuration Guide_.
 
 ## Separate Redis cache and session instances
 
