@@ -1,8 +1,19 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Thu Sep 14 09:19:51 2023
+updated: Wed Sep 27 09:10:58 2023
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.38 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: September 14, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/664
+  merge_commit: 1d1fac956ceb8f869b60accfe0180c593d659ec1
+  contributor: poltorat
+  membership: false
+  labels:
+  - major-update
 - description: Updated the [extensibility strategy](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html)
     with information about App Builder, API Mesh, and Adobe I/O Events.
   versions: ''
