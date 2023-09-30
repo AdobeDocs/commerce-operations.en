@@ -3,8 +3,8 @@ title: Catalog management best practices
 description: Learn about recommendations for configuring cart limits and product attributes, listing pagination, options, promotions, and variations.
 role: Developer
 feature: Best Practices, Catalog Management
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
 ---
-
 # Catalog management best practices
 
 The catalog management best practices described here cover a range of issues, including (but not limited to):
@@ -256,4 +256,3 @@ Having more than the recommended maximum number of cart price rules or coupons c
 - Increased time to load and render the minicart.
 - Increased time to render the cart page.
 - Increased time to render the **Totals** block on the Checkout page.
-
