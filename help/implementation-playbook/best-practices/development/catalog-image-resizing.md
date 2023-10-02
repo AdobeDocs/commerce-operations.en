@@ -3,8 +3,8 @@ title: Catalog image resizing best practices
 description: Learn how to prevent performance degradation before a production launch of your Adobe Commerce site.
 feature: Best Practices
 role: Developer
+exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
 ---
-
 # Catalog image resizing best practices
 
 All catalog images should be resized before a store goes into production. Failing to resize images before production forces image resizing during page load, which significantly reduces site speed and increases server load in the first days to weeks after launch.
