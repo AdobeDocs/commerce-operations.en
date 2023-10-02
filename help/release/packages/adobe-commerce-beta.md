@@ -2,7 +2,7 @@
 title: Adobe Commerce packages
 description: Learn about all dependencies and third-party licenses used in Adobe Commerce.
 badgeCoreBeta: label="2.4.7-beta1" type="informative"
-exl-id: aa06f601-3ca8-4337-95fa-21f71fa9ec22
+exl-id: bfbc0ea6-8026-41aa-91d9-483598b2dd98
 ---
 # Adobe Commerce packages
 

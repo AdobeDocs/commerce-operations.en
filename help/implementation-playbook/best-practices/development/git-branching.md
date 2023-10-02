@@ -3,8 +3,8 @@ title: Git branching best practices
 description: Learn about different branching strategies for source code management.
 feature: Best Practices
 role: Developer
+exl-id: 7d7736e8-7023-4315-9965-71866b0be5c3
 ---
-
 # Git branching best practices
 
 Source code goes through multiple stability phases during the development process:

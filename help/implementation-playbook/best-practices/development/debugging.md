@@ -3,8 +3,8 @@ title: Debugging best practices
 description: Learn techniques for resolving common Adobe Commerce development issues.
 feature: Best Practices
 role: Developer
+exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
 ---
-
 # Debugging best practices for Adobe Commerce
 
 This topic explains ways to systematically and effectively debug the Adobe Commerce framework. The goal is to help you get to the root of a problem quickly and minimize investigation time.
