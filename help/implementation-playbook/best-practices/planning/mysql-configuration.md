@@ -3,8 +3,8 @@ title: MySQL configuration best practices
 description: Learn how MySQL triggers and slave connections affect Commerce site performance and how to use them effectively.
 role: Developer
 feature: Best Practices
+exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
 ---
-
 # MySQL configuration best practices
 
 >[!NOTE]

@@ -3,8 +3,8 @@ title: Composer development
 description: Learn about developing Composer modules in-place in the `vendor/` directory.
 feature: Best Practices
 role: Developer
+exl-id: 7664ffb5-2e46-49c3-b2e6-c133c35d2f6b
 ---
-
 # Composer development
 
 This topic describes the recommended approach for developing Composer modules in-place (as Git repositories in the `vendor/` directory) and adding those modules to your main Git project.
