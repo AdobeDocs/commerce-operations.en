@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13
-exl-id: 63f552f3-836c-4a07-96c3-c0e00614fe39
+exl-id: 1c63d082-c6fb-4795-81cd-75d097c03e6b
 feature: Install
 ---
 # Self-hosting Adobe Commerce Overview

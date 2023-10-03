@@ -3,8 +3,8 @@ title: Code review best practices
 description: Learn about code review best practices for the development phase of Adobe Commerce projects.
 feature: Best Practices
 role: Developer
+exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
 ---
-
 # Code review best practices for Adobe Commerce
 
 The main goal of code review is to validate that implemented functionality meets the requirements in an optimal way from performance, architectural, and security perspectives.

@@ -3,8 +3,8 @@ title: Exception handling best practices
 description: Learn the recommended methods for logging exceptions when developing Adobe Commerce projects.
 feature: Best Practices
 role: Developer
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
 ---
-
 # Exception handling best practices
 
 If an exception is not written to the `exception.log` file with the exception model as context, it is not recognized and analyzed correctly in New Relic or other PSR-3 monolog-compatible log storage. Logging only a part of the exception (or logging it to the wrong file) leads to bugs in production when exceptions are overlooked.
