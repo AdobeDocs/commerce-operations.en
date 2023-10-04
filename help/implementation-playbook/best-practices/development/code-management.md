@@ -3,8 +3,8 @@ title: Code management best practices
 description: Learn about code management best practices for the development phase of Adobe Commerce projects.
 feature: Best Practices
 role: Developer
+exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
 ---
-
 # Code management best practices for Adobe Commerce
 
 This topic is designed to help you decide whether to use Git or Composer to distribute custom code, with consideration for release management, code complexity, and dependency management.
