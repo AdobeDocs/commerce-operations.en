@@ -19,7 +19,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 * **ACSD-53704** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where reward points balance history is miscalculated after reward points expiration.
 * **ACSD-53583** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Improves partial reindex performance for *Category Products* and *Product Categories* indexers.
-* **ACSD-54026** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes an incorrect error message for an updateCompanyRole GraphQL request for a non-authorized user.
+* **ACSD-54026** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes an incorrect error message for an `updateCompanyRole` GraphQL request for a non-authorized user.
 * **ACSD-54106** (for Adobe Commerce and Magento Open Source >=2.4.1 <2.4.5) - Fixes the issue where category product sorting by name for Turkish accented characters is incorrect.
 * **ACSD-52219** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where Admin grids saved filters don't work as expected when frequently switching between bookmark views.
 * **ACSD-54342** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes an incorrect error message *Error in data structure: values are mixed* when importing a CSV file without valid data.
