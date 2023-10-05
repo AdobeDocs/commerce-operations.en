@@ -15,6 +15,21 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.39 {#v1-1-39}
+
+* **ACSD-53704** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where reward points balance history is miscalculated after reward points expiration.
+* **ACSD-53583** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Improves partial reindex performance for "Category Products" and "Product Categories" indexers.
+* **ACSD-54026** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes an incorrect error message for an updateCompanyRole GraphQL request for a non-authorized user.
+* **ACSD-54106** (for Adobe Commerce and Magento Open Source >=2.4.1 <2.4.5) - Fixes the issue where category product sorting by name for Turkish accented characters is incorrect.
+* **ACSD-52219** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where Admin grids saved filters don't work as expected when frequently switching between bookmark views.
+* **ACSD-54342** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes an incorrect error message *Error in data structure: values are mixed* when importing a CSV file without valid data.
+* **ACSD-54660** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Added a new input attribute 'sort' to sort customer orders in GraphQL by 'sort_field' and 'sort_direction'.
+* **ACSD-54776** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where unchecked "Use Default Value" and non-default product field values are not saved for the second website, store, and store view.
+* **ACSD-53998** (for Adobe Commerce and Magento Open Source >=2.4.4-p2 <2.4.5 || >=2.4.5-p1 <2.4.7) - Fixes the issue where a **[!UICONTROL Dynamic Block]** based on a **[!UICONTROL Customer Segment]** doesn't work correctly after logging out from a customer account.
+* **ACSD-53204** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes *The product can't be saved.* error when making concurrent requests to add images to the product gallery using the `rest/V1/products/<sku>/media` endpoint.
+* **ACSD-47657** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Added a caching mechanism for AWS credentials. A credentials provider now uses the Magento cache to cache credentials retrieved from AWS for EC2 configuration.
+* Updated patches: ACSD-51984, ACSD-51574.
+
 ## v1.1.38 {#v1-1-38}
 
 * **ACSD-53098** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.4) - Fixes the issue where products assigned to a shared catalog do not appear on the storefront when a partial index is executed.
