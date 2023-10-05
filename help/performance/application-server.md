@@ -241,7 +241,7 @@ To confirm that the Application Server is running in your deployment, execute th
 ps aux | grep php
 ```
 
-Additional ways of confirming that Application Server is running include:
+Additional ways to confirm that Application Server is running include:
 
 * Check the `/var/log/magento-server.log` file for entries that are related to processed GraphQL requests.
 * Try to connect to the HTTP port that Application Server runs on. For example: `curl -g 'http://localhost:9501/graph`.
@@ -254,7 +254,7 @@ Application Server adds the `X-Backend` response header with the value `graphql_
 
 ### Confirm extension and customization compatibility with Application Server
 
-Extension developers and merchants should first verify that their extension and customization code adheres to the technical guidelines described in [Technical guidelines](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/). 
+Extension developers and merchants should first verify that their extension and customization code adhere to the technical guidelines described in [Technical guidelines](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/). 
 
 Consider these guidelines during code evaluation:
 
