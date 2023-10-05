@@ -228,8 +228,6 @@ pecl install openswoole-22.0.0
 
 To resolve issues related to `pcre2.h`, symlink the `pcre2.h` path to your installed PHP extension directory. Your specific installed version of PHP and `pcr2.h` determines the particular version of the command that you should use.
 
-
-
 ## Working with Application Server 
 
 
@@ -240,6 +238,11 @@ To confirm that the Application Server is running in your deployment, execute th
 ```bash
 ps aux | grep php
 ```
+
+Successful command execution results in output similar to the following sample:
+
+![Sample grep output](../../assets/performance/code-samples/ssh.png)
+
 
 Additional ways to confirm that Application Server is running include:
 
