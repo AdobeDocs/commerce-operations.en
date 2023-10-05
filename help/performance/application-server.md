@@ -6,31 +6,33 @@ exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 ---
 # Application Server for GraphQL APIs
 
-The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state among Commerce GraphQL API requests. The Application Server, which is built on the Swoole extension, operates as a process with child workers that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, Application Server enhances request handling and overall product performance. API requests become significantly more efficient.
+The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state among Commerce GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, Application Server enhances request handling and overall product performance. API requests become significantly more efficient.
+
+Application Server is supported on on-premises and Cloud Starter deployments only. It is not available for Cloud Pro instances during Beta. It is not available for Magento Open Source deployments.
 
 ## Application Server architectural overview
 
 Application Server maintains state between Commerce GraphQL API requests and eliminates the need for bootstrapping. By sharing application state across processes, GraphQL requests become significantly more efficient, decreasing response times by up to 30%. 
 
-The share-nothing PHP execution model provides a challenge from the perspective of latency because each request requires that the framework be bootstrapped. This bootstrapping process includes time-consuming tasks such as reading configuration files, setting up the bootstrap process, and creating service classes. 
+The share-nothing PHP execution model provides a challenge from the perspective of latency because each request requires the bootstrapping of the framework. This bootstrapping process includes time-consuming tasks such as reading configuration, setting up the bootstrap process, and creating service class objects. 
 
 Transitioning request handling logic to an application-level event loop appears to address the challenge of streamlining request processing at an enterprise level. This approach eliminates the need for bootstrapping during the request execution lifecycle.
 
 ## Advantages of using Application Server
 
-Application Server allows Adobe Commerce to sustain state between consecutive Commerce GraphQL API requests.  Sharing application state across processes enhances API request efficiency by minimizing processing overhead and optimizing request handling. As a result, GraphQL request response time can be reduced up to 30%.
+Application Server allows Adobe Commerce to sustain state between consecutive Commerce GraphQL API requests.  Sharing application state across requests enhances API request efficiency by minimizing processing overhead and optimizing request handling. As a result, GraphQL request response time can be reduced up to 30%.
 
 ## System requirements
 
 Running Application Server requires the following:
 
 * PHP 8.2 or higher
-* Openswoole PHP extension v22+ installed
+* Open Swoole PHP extension v22+ installed
 * Adequate RAM and CPU based on the expected load
 
 ## Enable Application Server for Cloud deployments
 
-The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs.
+The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs. Application Server is supported on on-premises and Cloud Starter deployments only. It is not available for Cloud Pro instances during Beta.
 
 ### Before you begin
 
@@ -39,10 +41,8 @@ Complete the following tasks before deploying Application Server:
 1. Confirm that Adobe Commerce is installed.
 1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
 1. Clone your Cloud project.
-1. Add the `swoole.so` or `openswoole.so` PHP extension file to your project root. 
-1. Enable the `swoole.so` or `openswoole.so` PHP extension by adding the following line in the `php.ini` file:
-
-  `extension=${MAGENTO_CLOUD_APP_DIR}/swoole.so`
+1. Add the `openswoole.so` PHP extension file to your project root. 
+1. Enable the `openswoole.so` PHP extension by adding the following line in the `php.ini` file:
 
   `extension=${MAGENTO_CLOUD_APP_DIR}/openswoole.so`
 
@@ -67,10 +67,10 @@ Complete the following tasks before deploying Application Server:
 
 ```
 
-1. Add the updated files to GitHub using this command:
+1. Add the updated files to the next commit using this command:
 
 ```bash
-git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml swoole.so 
+git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml openswoole.so 
 ```
 
 1. Commit your changes using this command:
@@ -84,7 +84,7 @@ git commit -m "AppServer Enabled"
 After performing the prerequisite tasks, deploy Application Server using this command:
 
 ```bash
-git force push
+git push
 ```
 
 ### Verify Application Server enablement on Cloud
@@ -98,7 +98,7 @@ git force push
 ps aux|grep php
 ```
 
-1. Perform a GraphQL query or mutation against your instance. For example:
+1. Perform a GraphQL query or mutation against your instance to confirm that the GraphQL endpoint is accessible. For example:
 
 ```
 mutation {  createEmptyCart}
@@ -161,14 +161,15 @@ This command starts an HTTP port on 9501. Once Application Server launches, port
 
 This procedure illustrates how to install the Open Swoole extension on PHP 8.2 for OSX-based systems. It is one of several ways of installing the Open Swoole extension.
 
-You can install both the Open Swoole extension for PHP (v22) and the Composer packages that this extension requires with one command.
+Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, Microsoft Windows, and macOS are not supported. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 
 ### Install Open Swoole 
 
 Enter:
 
 ```bash
-pecl install openswoole-22.0.0 | composer require openswoole/core:22.1.1
+pecl install openswoole-22.0.0
+composer require openswoole/core:22.1.1
 ```
 
 During installation, Adobe Commerce displays prompts to enable support for `openssl`, `mysqlnd`, `sockets`, `http2`, and `postgres`. Enter `yes` for all options except `postgres`.
@@ -240,14 +241,18 @@ To confirm that the Application Server is running in your deployment, execute th
 ps aux | grep php
 ```
 
-You can also check the `/var/log/magento-server.log` file for entries that are related to processed GraphQL requests.
+Additional ways of confirming that Application Server is running include:
+
+* Check the `/var/log/magento-server.log` file for entries that are related to processed GraphQL requests.
+* Try to connect to the HTTP port that Application Server runs on. For example: `curl -g 'http://localhost:9501/graph`.
+
  
 ### Confirm that GraphQL requests are being processed by Application Server
  
 Application Server adds the `X-Backend` response header with the value `graphql_server` to each request it processes. To check if a request has been handled by Application Server, check for this response header.
 
 
-### Confirm extension and customization compatibility with App Server
+### Confirm extension and customization compatibility with Application Server
 
 Extension developers and merchants should first verify that their extension and customization code adheres to the technical guidelines described in [Technical guidelines](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/). 
 
@@ -277,15 +282,15 @@ git commit -m "AppServer Disabled"
 1. Deploy these changes using this command:
 
 ```bash
-git force push
+git push
 ```
 
-### Disable Application Server on Cloud in an on-premises deployment
+### Disable Application Server in an on-premises deployment
 
+1. Comment out the `/graphql` section of `nginx.conf` file that you added when enabling Application Server.
+1. Restart nginx.
 
-
-
-
+This method of disabling Application Server can be useful to quickly test or compare performance. 
 
 
 ### Confirm that Application Server is disabled
