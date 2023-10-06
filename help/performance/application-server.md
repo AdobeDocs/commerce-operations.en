@@ -96,7 +96,7 @@ Run `php -m | grep openswoole` to confirm that the extension has been successful
 
 Any errors that occur during Open Swoole installation typically occur during the `pecl` installation phase. Typical errors include missing `openssl.h` and `pcre2.h` files. To resolve these errors, ensure that these two packages are installed in your local system. 
 
-* Check location of `openssl` by running:
+* Check the location of `openssl` by running:
 
 ```bash
   openssl version -d
@@ -104,7 +104,7 @@ Any errors that occur during Open Swoole installation typically occur during the
 
 This command shows the path where `openssl` is installed.
 
-* Check location of `pcre2` by running:
+* Check the location of `pcre2` by running:
 
 ```bash
   pcre2-config --prefix 
@@ -142,9 +142,6 @@ pecl install openswoole-22.0.0
 
 To resolve issues related to `pcre2.h`, symlink the `pcre2.h` path to your installed PHP extension directory. Your specific installed version of PHP and `pcr2.h` determines the particular version of the command that you should use.
 
-## Working with Application Server 
-
-
 ### Confirm that application server is running
 
 To confirm that the Application Server is running in your deployment, execute this command:
@@ -170,7 +167,7 @@ Extension developers and merchants should first verify that their extension and 
 Consider these guidelines during code evaluation:
 
 * Service classes (that is, classes that provide behavior but not data, such as `EventManager`) should not have mutable state.
-* Temporal coupling must be avoided.
+* Avoid temporal coupling.
 
 ### Disable Application Server
 
