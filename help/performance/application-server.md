@@ -8,7 +8,7 @@ exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 
 The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state among Commerce GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, Application Server enhances request handling and overall product performance. API requests become significantly more efficient.
 
-Application Server is supported on on-premises and Cloud Starter deployments only. It is not available for Cloud Pro instances during Beta. It is not available for Magento Open Source deployments.
+Application Server is supported on on-premises deployments only. It is not available on either Cloud or Magento Open Source deployments.
 
 ## Application Server architectural overview
 
@@ -20,7 +20,7 @@ Transitioning request handling logic to an application-level event loop appears 
 
 ## Advantages of using Application Server
 
-Application Server allows Adobe Commerce to sustain state between consecutive Commerce GraphQL API requests.  Sharing application state across requests enhances API request efficiency by minimizing processing overhead and optimizing request handling. As a result, GraphQL request response time can be reduced up to 30%.
+Application Server allows Adobe Commerce to sustain state between consecutive Commerce GraphQL API requests. Sharing application state across requests enhances API request efficiency by minimizing processing overhead and optimizing request handling. As a result, GraphQL request response time can be reduced up to 30%.
 
 ## System requirements
 
@@ -30,91 +30,7 @@ Running Application Server requires the following:
 * Open Swoole PHP extension v22+ installed
 * Adequate RAM and CPU based on the expected load
 
-## Enable Application Server for Cloud deployments
-
-The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs. Application Server is supported on on-premises and Cloud Starter deployments only. It is not available for Cloud Pro instances during Beta.
-
-### Before you begin
-
-Complete the following tasks before deploying Application Server: 
-
-1. Confirm that Adobe Commerce is installed.
-1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
-1. Clone your Cloud project.
-1. Add the `openswoole.so` PHP extension file to your project root. 
-1. Enable the `openswoole.so` PHP extension by adding the following line in the `php.ini` file:
-
-  `extension=${MAGENTO_CLOUD_APP_DIR}/openswoole.so`
-
-1. Create a new folder named `graphql` in your project root.
-1. Add a `.magento.app.yaml` file to the `root/graphql` folder.
-1. Edit the `routes.yaml` file to include these directives:
-
-```
-# The routes of the project.
-#
-# Each route describes how an incoming URL is going to be processed.
-
-```
-
-"http://{default}/":
-    type: upstream
-    upstream: "mymagento:http"
- 
-"http://{default}/graphql":
-    type: upstream
-    upstream: "graphql:http"
-
-```
-
-1. Add the updated files to the next commit using this command:
-
-```bash
-git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml openswoole.so 
-```
-
-1. Commit your changes using this command:
-
-```bash
-git commit -m "AppServer Enabled"
-```
-
-### Deploy Application Server on Cloud
-
-After performing the prerequisite tasks, deploy Application Server using this command:
-
-```bash
-git push
-```
-
-### Verify Application Server enablement on Cloud
-
-
-1. Open your Cloud project user interface. You should see an additional SSH access point for the `graphql` application.
-
-1. Use SSH to access your Cloud instance using the graphql application access point, then execute the following command:
-
-```bash
-ps aux|grep php
-```
-
-1. Perform a GraphQL query or mutation against your instance to confirm that the GraphQL endpoint is accessible. For example:
-
-```
-mutation {  createEmptyCart}
-```
-
-The expected response should resemble the following response:
-
-```
-{    "data": {        "createEmptyCart": "HLATPzcLw5ylDf76IC92nxdO2hXSXOrv"    }}
-```
-
-1. Use SSH to access your Cloud instance through the GraphQL application access point.  The `root/var/log/magento-server.log` should contain a new log record for every GraphQL request. 
-
-
-
-## Enable Application Server for on-premises deployments
+## Enable Application Server
 
 The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs.
 
@@ -160,8 +76,6 @@ This command starts an HTTP port on 9501. Once Application Server launches, port
 ## Example: Install Open Swoole (OSX)
 
 This procedure illustrates how to install the Open Swoole extension on PHP 8.2 for OSX-based systems. It is one of several ways of installing the Open Swoole extension.
-
-Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, Microsoft Windows, and macOS are not supported. See [System requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 
 ### Install Open Swoole 
 
@@ -264,37 +178,12 @@ Consider these guidelines during code evaluation:
 * Service classes (that is, classes that provide behavior but not data, such as `EventManager`) should not have mutable state.
 * Temporal coupling must be avoided.
 
-### Using ResetAfterRequestInterface
-
-Service classes that require in-memory local caching to enhance performance can inadvertently create forward and backward compatibility issues.  To address these potential compatibility issues, service classes can use the `Magento\Framework\ObjectManager\ResetAfterRequestInterface` interface and define a `_resetState()` method, which is then invoked after each request. 
-
-## Disable Application Server
-
-Procedures for disabling Application Server vary depending upon whether the server is running in an on-premises or Cloud deployment. 
-
-### Disable Application Server on Cloud
-
-1. Remove any new files and any other code changes that were included in the `AppServer Enabled` commit during your preparations for deployment. 
-
-1. Commit your changes using this command:
-
-```bash
-git commit -m "AppServer Disabled"
-``` 
-
-1. Deploy these changes using this command:
-
-```bash
-git push
-```
-
-### Disable Application Server in an on-premises deployment
+### Disable Application Server
 
 1. Comment out the `/graphql` section of `nginx.conf` file that you added when enabling Application Server.
 1. Restart nginx.
 
 This method of disabling Application Server can be useful to quickly test or compare performance. 
-
 
 ### Confirm that Application Server is disabled
 
@@ -308,7 +197,6 @@ After Application Server has been disabled:
 
 * `bin/magento server:run` is inactive. 
 * `var/log/magento-server.log` contains no entries after GraphQL requests. 
-
 
 ## Integration and functional tests for PHP Application Server
 
@@ -334,11 +222,9 @@ Run `GraphQlStateTest` by executing:
 vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php
 ```
 
-
 ### ResetAfterRequestTest
 
 `ResetAfterRequestTest` looks for all classes that implement `ResetAfterRequestInterface` and verifies that the `_resetState()` method returns an object's state to the same state it held after being constructed by `ObjectManager`.  This test creates a service object with `ObjectManager`, then clones that object, calls `_resetState()`, and then compares both objects. The test does not call any methods between object instantiation and `_resetState()`, so it does not confirm resetting any mutable state It does find problems where a bug or typo in `_resetState()` may set the state to something different than what it was originally. 
-
 
 #### ResetAfterRequestTest failures and potential remediation
 
@@ -352,8 +238,6 @@ Run `ResetAfterRequestTest` by executing:
 vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php
 ```
 
-
 ### Functional Testing
 
 Extension developers should execute WebAPI functional tests for GraphQL, as well as any custom automated or manual functional tests for GraphQL, while deploying the Application Server. These functional tests help developers identify potential errors or compatibility issues.
- 
