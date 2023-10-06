@@ -163,11 +163,10 @@ Additional ways to confirm that Application Server is running include:
 * Check the `/var/log/magento-server.log` file for entries that are related to processed GraphQL requests.
 * Try to connect to the HTTP port that Application Server runs on. For example: `curl -g 'http://localhost:9501/graph`.
 
- 
-### Confirm that GraphQL requests are being processed by Application Server
- 
-Application Server adds the `X-Backend` response header with the value `graphql_server` to each request it processes. To check if a request has been handled by Application Server, check for this response header.
 
+### Confirm that GraphQL requests are being processed by Application Server
+
+Application Server adds the `X-Backend` response header with the value `graphql_server` to each request it processes. To check if a request has been handled by Application Server, check for this response header.
 
 ### Confirm extension and customization compatibility with Application Server
 
