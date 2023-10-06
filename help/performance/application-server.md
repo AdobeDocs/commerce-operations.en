@@ -8,7 +8,7 @@ exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 
 The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state among Commerce GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, Application Server enhances request handling and overall product performance. API requests become significantly more efficient.
 
-Application Server is supported on on-premises deployments only. It is not available on either Cloud or Magento Open Source deployments.
+Application Server is supported on Cloud Starter and on-premises deployments only. It is not available for Cloud Pro instances during Beta. It is not available for Magento Open Source deployments.
 
 ## Application Server architectural overview
 
@@ -30,7 +30,93 @@ Running Application Server requires the following:
 * Open Swoole PHP extension v22+ installed
 * Adequate RAM and CPU based on the expected load
 
-## Enable Application Server
+## Enable Application Server for Cloud deployments
+
+The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs. Application Server is supported on on-premises and Cloud Starter deployments only. It is not available for Cloud Pro instances during Beta.
+
+### Before you begin
+
+Complete the following tasks before deploying Application Server: 
+
+1. Confirm that Adobe Commerce is installed.
+1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
+1. Clone your Cloud project.
+1. Add the `openswoole.so` PHP extension file to your project root. 
+1. Enable the `openswoole.so` PHP extension by adding the following line in the `php.ini` file:
+
+  `extension=${MAGENTO_CLOUD_APP_DIR}/openswoole.so`
+
+1. Create a new folder named `graphql` in your project root.
+1. Add a `.magento.app.yaml` file to the `root/graphql` folder.
+1. Edit the `routes.yaml` file to include these directives:
+
+```
+# The routes of the project.
+#
+# Each route describes how an incoming URL is going to be processed.
+
+```
+
+"http://{default}/":
+    type: upstream
+    upstream: "mymagento:http"
+ 
+"http://{default}/graphql":
+    type: upstream
+    upstream: "graphql:http"
+
+```
+
+1. Add the updated files to the next commit using this command:
+
+```bash
+git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml openswoole.so 
+```
+
+1. Commit your changes using this command:
+
+```bash
+git commit -m "AppServer Enabled"
+```
+
+### Deploy Application Server on Cloud
+
+After performing the prerequisite tasks, deploy Application Server using this command:
+
+```bash
+git push
+```
+
+### Verify Application Server enablement on Cloud
+
+
+1. Open your Cloud project user interface. You should see an additional SSH access point for the `graphql` application.
+
+1. Use SSH to access your Cloud instance using the graphql application access point, then execute the following command:
+
+```bash
+ps aux|grep php
+```
+
+1. Perform a GraphQL query or mutation against your instance to confirm that the `graphql` endpoint is accessible. For example:
+
+```
+mutation {  createEmptyCart}
+```
+
+The expected response should resemble the following response:
+
+
+```json
+{    "data": {        "createEmptyCart": "HLATPzcLw5ylDf76IC92nxdO2hXSXOrv"    }}
+```
+
+1. Use SSH to access your Cloud instance through the GraphQL application access point.  The `root/var/log/magento-server.log` should contain a new log record for every GraphQL request. 
+
+
+
+
+## Enable Application Server on on-premises deployments
 
 The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs.
 
@@ -50,8 +136,8 @@ Your specific Commerce deployment determines how to configure Nginx. In general,
 
 Sample Nginx configuration:
 
-```conf
-location /graphql {
+```
+location /graphql  {
     proxy_set_header Host $http_host;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 
@@ -178,11 +264,8 @@ This method of disabling Application Server can be useful to quickly test or com
 
 ### Confirm that Application Server is disabled
 
-To confirm that GraphQL requests are being processed by `php-fpm` instead of Application Server, enter this command:
+To confirm that GraphQL requests are being processed by `php-fpm` instead of Application Server, enter this command: `ps aux | grep php`.`
 
-```bash
-ps aux | grep php
-```
 
 After Application Server has been disabled:
 
@@ -207,11 +290,7 @@ This test is designed to detect state changes in service objects that are produc
 
 * **Typed property $x must not be accessed before initialization message**. Failures with this type of message suggest that the specified property has not been initialized by the constructor. This is a form of temporal coupling that occurs because the object cannot be used after it is initially constructed. This coupling occurs even if the property is private because the Collector that retrieves the data from the properties is using the PHP reflection feature. In this case, try refactoring the class to avoid temporal coupling and to avoid mutable state. If that refactoring does not resolve the failure, you can change the property type to a nullable type so it can be initialized to null.  If the property is an array, try initializing the property as an empty array.
 
-Run `GraphQlStateTest` by executing:
-
-```bash
-vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php
-```
+Run `GraphQlStateTest` by executing `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`.`
 
 ### ResetAfterRequestTest
 
@@ -223,11 +302,7 @@ vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integra
 
 * **Typed property $x must not be accessed before initialization message**. This issue also occurs with `GraphQlStateTest`.
  
-Run `ResetAfterRequestTest` by executing:
-
-```bash
-vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php
-```
+Run `ResetAfterRequestTest` by executing: `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`.
 
 ### Functional Testing
 
