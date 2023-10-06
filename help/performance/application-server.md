@@ -153,11 +153,6 @@ To confirm that the Application Server is running in your deployment, execute th
 ps aux | grep php
 ```
 
-Successful command execution results in output similar to the following sample:
-
-![Sample grep output](../../assets/performance/code-samples/ssh.png)
-
-
 Additional ways to confirm that Application Server is running include:
 
 * Check the `/var/log/magento-server.log` file for entries that are related to processed GraphQL requests.
