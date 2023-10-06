@@ -30,7 +30,7 @@ Running Application Server requires the following:
 * Open Swoole PHP extension v22+ installed
 * Adequate RAM and CPU based on the expected load
 
-## Enable Application Server for Cloud deployments
+## Enable Application Server for Cloud Starter
 
 The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs. Application Server is supported on on-premises and Cloud Starter deployments only. It is not available for Cloud Pro instances during Beta.
 
@@ -41,45 +41,46 @@ Complete the following tasks before deploying Application Server:
 1. Confirm that Adobe Commerce is installed.
 1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
 1. Clone your Cloud project.
-1. Add the `openswoole.so` PHP extension file to your project root. 
-1. Enable the `openswoole.so` PHP extension by adding the following line in the `php.ini` file:
+1. Add the `openswoole.so` PHP extension file to your project by modifying the `project_root/.magento.app.yaml` file by adding the following line of code into the `build` section before the `composer install` command:
 
-  `extension=${MAGENTO_CLOUD_APP_DIR}/openswoole.so`
+```curl
+curl -fsS https://raw.githubusercontent.com/yaroslavGoncharuk/platformscript/main/install_swoole.sh | { bash /dev/fd/0 openswoole 22.0.0 ; } 3<&0
+```
 
-1. Create a new folder named `graphql` in your project root.
-1. Add a `.magento.app.yaml` file to the `root/graphql` folder.
-1. Edit the `routes.yaml` file to include these directives:
+1. Create a new `graphql` folder in your `project_root` folder.
+1. Add the additional custom `.magento.app.yaml` file included at the end of this topic into your `project_root/graphql` folder. 
+1. Edit the `project_root/.magento/routes.yaml` file to include these directives:
 
 ```
-# The routes of the project.
-#
-# Each route describes how an incoming URL is going to be processed.
 
-```
+The routes of the project.
+
+Each route describes how an incoming URL is going to be processed.
 
 "http://{default}/":
-    type: upstream
-    upstream: "mymagento:http"
- 
+    type: upstream
+    upstream: "mymagento:http"
+ 
 "http://{default}/graphql":
-    type: upstream
-    upstream: "graphql:http"
+    type: upstream
+    upstream: "graphql:http"
 
 ```
 
-1. Add the updated files to the next commit using this command:
+1. Add updated files to the git index with this command:
 
 ```bash
-git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml openswoole.so 
+git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml swoole.so
+
 ```
 
-1. Commit your changes using this command:
+1. Commit your changes with this command:
 
 ```bash
 git commit -m "AppServer Enabled"
 ```
 
-### Deploy Application Server on Cloud
+### Deploy Application Server on Cloud Starter
 
 After performing the prerequisite tasks, deploy Application Server using this command:
 
@@ -87,7 +88,14 @@ After performing the prerequisite tasks, deploy Application Server using this co
 git push
 ```
 
-### Verify Application Server enablement on Cloud
+When the deployment process is triggered:
+
+ * openswoole source code will be cloned from a corresponding GitHub repo
+    2    extension file will be compiled from the source code
+    3    extension file will be copied into project_root folder
+    4    and enabled in php.ini 
+
+### Verify Application Server enablement on Cloud Starter
 
 
 1. Open your Cloud project user interface. You should see an additional SSH access point for the `graphql` application.
@@ -113,6 +121,10 @@ The expected response should resemble the following response:
 
 1. Use SSH to access your Cloud instance through the GraphQL application access point.  The `root/var/log/magento-server.log` should contain a new log record for every GraphQL request. 
 
+
+If these verifciation steps are successful, you can proceed with test cycle execution.
+
+### Disable Application Server on CLoud Starter
 
 
 
@@ -255,6 +267,26 @@ Consider these guidelines during code evaluation:
 * Service classes (that is, classes that provide behavior but not data, such as `EventManager`) should not have mutable state.
 * Avoid temporal coupling.
 
+## Disable Application Server
+
+Procedures for disabling Application Server vary depending upon whether the server is running in an on-premises or Cloud deployment.
+
+### Disable Application Server on Cloud Starter
+
+1. Remove any new files and any other code changes that were included in the `AppServer Enabled` commit during your preparations for deployment. 
+
+1. Commit your changes using this command:
+
+```bash
+git commit -m "AppServer Disabled"
+``` 
+
+1. Deploy these changes using this command:
+
+```bash
+git push
+```
+
 ### Disable Application Server
 
 1. Comment out the `/graphql` section of `nginx.conf` file that you added when enabling Application Server.
@@ -264,7 +296,7 @@ This method of disabling Application Server can be useful to quickly test or com
 
 ### Confirm that Application Server is disabled
 
-To confirm that GraphQL requests are being processed by `php-fpm` instead of Application Server, enter this command: `ps aux | grep php`.`
+To confirm that GraphQL requests are being processed by `php-fpm` instead of Application Server, enter this command: `ps aux | grep php`.
 
 
 After Application Server has been disabled:
@@ -290,7 +322,7 @@ This test is designed to detect state changes in service objects that are produc
 
 * **Typed property $x must not be accessed before initialization message**. Failures with this type of message suggest that the specified property has not been initialized by the constructor. This is a form of temporal coupling that occurs because the object cannot be used after it is initially constructed. This coupling occurs even if the property is private because the Collector that retrieves the data from the properties is using the PHP reflection feature. In this case, try refactoring the class to avoid temporal coupling and to avoid mutable state. If that refactoring does not resolve the failure, you can change the property type to a nullable type so it can be initialized to null.  If the property is an array, try initializing the property as an empty array.
 
-Run `GraphQlStateTest` by executing `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`.`
+Run `GraphQlStateTest` by executing `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`.
 
 ### ResetAfterRequestTest
 
@@ -307,3 +339,77 @@ Run `ResetAfterRequestTest` by executing: `vendor/bin/phpunit -c $(pwd)/dev/test
 ### Functional Testing
 
 Extension developers should execute WebAPI functional tests for GraphQL, as well as any custom automated or manual functional tests for GraphQL, while deploying the Application Server. These functional tests help developers identify potential errors or compatibility issues.
+
+## magento.app.yaml file content
+
+See the Before you begin section for instructions on adding the following code to your the  `project_root/graphql` folder. 
+
+```
+name: graphql
+# The toolstack used to build the application.
+type: php:8.2
+build:
+    flavor: none
+ 
+source:
+    root: /
+dependencies:
+    php:
+        composer/composer: '2.5.5'
+ 
+# Enable extensions required by Magento 2
+runtime:
+    extensions:
+        - xsl
+        - sodium
+ 
+# The relationships of the application with services or other applications.
+# The left-hand side is the name of the relationship as it will be exposed
+# to the application in the environment variable. The right-hand
+# side is in the form `<service name>:<endpoint name>`.
+relationships:
+    database: "mysql:mysql"
+    redis: "redis:redis"
+    opensearch: "opensearch:opensearch"
+ 
+# The configuration of app when it is exposed to the web.
+web:
+    commands:
+        start: "php -dopcache.enable_cli=1 -dopcache.validate_timestamps=0 bin/magento server:run -vvv  --port=${PORT:-80} > ${MAGENTO_CLOUD_APP_DIR}/var/log/magento-server.log 2>&1"
+    upstream:
+        socket_family: tcp
+        protocol: http
+    locations:
+        '/':
+            root: "pub"
+            passthru: true
+ 
+# The size of the persistent disk of the application (in MB).
+disk: 5120
+ 
+# The mounts that will be performed when the package is deployed.
+mounts:
+    "var": "shared:files/var"
+    "app/etc": "shared:files/etc"
+    "pub/media": "shared:files/media"
+    "pub/static": "shared:files/static"
+ 
+hooks:
+    # We run build hooks before your application has been packaged.
+    build: |
+        set -e
+        composer install
+        php ./vendor/bin/ece-tools run scenario/build/generate.xml
+        php ./vendor/bin/ece-tools run scenario/build/transfer.xml
+    # We run deploy hook after your application has been deployed and started.
+    deploy: |
+        php ./vendor/bin/ece-tools run scenario/deploy.xml
+    # We run post deploy hook to clean and warm the cache. Available with ECE-Tools 2002.0.10.
+    post_deploy: |
+        php ./vendor/bin/ece-tools run scenario/post-deploy.xml
+```
+
+
+
+
+
