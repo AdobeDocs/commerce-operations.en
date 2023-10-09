@@ -90,12 +90,6 @@ After performing the prerequisite tasks, deploy Application Server using this co
 git push
 ```
 
-When the deployment process is triggered:
-
- * openswoole source code will be cloned from a corresponding GitHub repo
-    2    extension file will be compiled from the source code
-    3    extension file will be copied into project_root folder
-    4    and enabled in php.ini 
 
 ### Verify Application Server enablement on Cloud Starter
 
