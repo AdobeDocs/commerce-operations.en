@@ -43,42 +43,44 @@ Complete the following tasks before deploying Application Server:
 1. Clone your Cloud project.
 1. Add the `openswoole.so` PHP extension file to your project by modifying the `project_root/.magento.app.yaml` file by adding the following line of code into the `build` section before the `composer install` command:
 
-```curl
-curl -fsS https://raw.githubusercontent.com/yaroslavGoncharuk/platformscript/main/install_swoole.sh | { bash /dev/fd/0 openswoole 22.0.0 ; } 3<&0
-```
+   ```curl
+
+   curl -fsS <https://raw.githubusercontent.com/yaroslavGoncharuk/platformscript/main/install_swoole.sh> | { bash /dev/fd/0 openswoole 22.0.0 ; } 3<&0
+
+   ```
 
 1. Create a new `graphql` folder in your `project_root` folder.
 1. Add the additional custom `.magento.app.yaml` file included at the end of this topic into your `project_root/graphql` folder. 
 1. Edit the `project_root/.magento/routes.yaml` file to include these directives:
 
-```
+  ```
 
-The routes of the project.
+  The routes of the project.
 
-Each route describes how an incoming URL is going to be processed.
+  Each route describes how an incoming URL is going to be processed.
 
-"http://{default}/":
+  "http://{default}/":
     type: upstream
     upstream: "mymagento:http"
  
-"http://{default}/graphql":
+  "http://{default}/graphql":
     type: upstream
     upstream: "graphql:http"
 
-```
+  ```
 
 1. Add updated files to the git index with this command:
 
-```bash
-git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml swoole.so
+  ```bash
+  git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml swoole.so
 
-```
+  ```
 
 1. Commit your changes with this command:
 
-```bash
-git commit -m "AppServer Enabled"
-```
+  ```bash
+  git commit -m "AppServer Enabled"
+  ```
 
 ### Deploy Application Server on Cloud Starter
 
@@ -102,15 +104,15 @@ When the deployment process is triggered:
 
 1. Use SSH to access your Cloud instance using the graphql application access point, then execute the following command:
 
-```bash
-ps aux|grep php
-```
+  ```bash
+  ps aux|grep php
+  ```
 
 1. Perform a GraphQL query or mutation against your instance to confirm that the `graphql` endpoint is accessible. For example:
 
-```
-mutation {  createEmptyCart}
-```
+  ```
+  mutation {  createEmptyCart}
+  ```
 
 The expected response should resemble the following response:
 
@@ -124,7 +126,7 @@ The expected response should resemble the following response:
 
 If these verifciation steps are successful, you can proceed with test cycle execution.
 
-### Disable Application Server on CLoud Starter
+### Disable Application Server on Cloud Starter
 
 
 
@@ -277,15 +279,15 @@ Procedures for disabling Application Server vary depending upon whether the serv
 
 1. Commit your changes using this command:
 
-```bash
-git commit -m "AppServer Disabled"
-``` 
+  ```bash
+  git commit -m "AppServer Disabled"
+  ``` 
 
 1. Deploy these changes using this command:
 
-```bash
-git push
-```
+  ```bash
+  git push
+  ```
 
 ### Disable Application Server
 
