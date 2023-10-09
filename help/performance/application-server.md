@@ -34,7 +34,7 @@ Running Application Server requires the following:
 
 The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs. Application Server is supported on on-premises and Cloud Starter deployments only. It is not available for Cloud Pro instances during Beta.
 
-### Before you begin
+### Before you begin a Cloud Starter deployment
 
 Complete the following tasks before deploying Application Server: 
 
@@ -49,7 +49,7 @@ Complete the following tasks before deploying Application Server:
 
    ```
 
-1. Create a new `graphql` folder in your `project_root` folder.
+1. Create a `graphql` folder in your `project_root` folder.
 1. Add the additional custom `.magento.app.yaml` file included at the end of this topic into your `project_root/graphql` folder. 
 1. Edit the `project_root/.magento/routes.yaml` file to include these directives:
 
@@ -105,15 +105,15 @@ git push
    mutation {  createEmptyCart}
    ```
 
-   The expected response should resemble the following response:
+   The expected response should resemble this example:
 
-   ```json
+   ```terminal
    {    "data": {        "createEmptyCart": "HLATPzcLw5ylDf76IC92nxdO2hXSXOrv"    }}
    ```
 
 1. Use SSH to access your Cloud instance through the GraphQL application access point. The `root/var/log/magento-server.log` should contain a new log record for every GraphQL request.
 
-If these verifciation steps are successful, you can proceed with test cycle execution.
+If these verification steps are successful, you can proceed with test cycle execution.
 
 ### Disable Application Server on Cloud Starter
 
@@ -124,7 +124,7 @@ The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Applicatio
 
 Running Application Server requires installation of the Open Swoole extension and a minor change to your deployment's Nginx configuration file to run this application server locally.
 
-### Before you begin
+### Before you begin an on-premises deployment
 
 Complete these two tasks before enabling the `ApplicationServer` module:
 
@@ -245,7 +245,7 @@ Additional ways to confirm that Application Server is running include:
 
 ### Confirm that GraphQL requests are being processed by Application Server
 
-Application Server adds the `X-Backend` response header with the value `graphql_server` to each request it processes. To check if a request has been handled by Application Server, check for this response header.
+Application Server adds the `X-Backend` response header with the value `graphql_server` to each request that it processes. To check if a request has been handled by Application Server, check for this response header.
 
 ### Confirm extension and customization compatibility with Application Server
 
@@ -314,11 +314,11 @@ Run `GraphQlStateTest` by executing `vendor/bin/phpunit -c $(pwd)/dev/tests/inte
 
 ### ResetAfterRequestTest
 
-`ResetAfterRequestTest` looks for all classes that implement `ResetAfterRequestInterface` and verifies that the `_resetState()` method returns an object's state to the same state it held after being constructed by `ObjectManager`.  This test creates a service object with `ObjectManager`, then clones that object, calls `_resetState()`, and then compares both objects. The test does not call any methods between object instantiation and `_resetState()`, so it does not confirm resetting any mutable state It does find problems where a bug or typo in `_resetState()` may set the state to something different than what it was originally.
+`ResetAfterRequestTest` looks for all classes that implement `ResetAfterRequestInterface` and verifies that the `_resetState()` method returns an object's state to the same state it held after being constructed by `ObjectManager`.  This test creates a service object with `ObjectManager`, then clones that object, calls `_resetState()`, and then compares both objects. The test does not call any methods between object instantiation and `_resetState()`, so it does not confirm resetting any mutable state. It does find problems where a bug or typo in `_resetState()` may set the state to something different than what it was originally.
 
 #### ResetAfterRequestTest failures and potential remediation
 
-* **Class has inconcsistent property values**. If this test fails, check if a class has been changed with the result that the object after construction has different property values than it has after the `_resetState()` method is called. If the class that you are working on does not contain the `_resetState()` method itself, then check the class hierarchy for a superclass that implements it.
+* **Class has inconsistent property values**. If this test fails, check if a class has been changed with the result that the object after construction has different property values than it has after the `_resetState()` method is called. If the class that you are working on does not contain the `_resetState()` method itself, then check the class hierarchy for a superclass that implements it.
 
 * **Typed property $x must not be accessed before initialization message**. This issue also occurs with `GraphQlStateTest`.
  
@@ -330,7 +330,7 @@ Extension developers should execute WebAPI functional tests for GraphQL, as well
 
 ## magento.app.yaml file content
 
-See the Before you begin section for instructions on adding the following code to your the  `project_root/graphql` folder.
+See [Before you begin a Cloud Starter deployment](#Before-you-begin-a-Cloud-Starter-deployment) for instructions on adding the following code to your `project_root/graphql` folder.
 
 ```yaml
 name: graphql
