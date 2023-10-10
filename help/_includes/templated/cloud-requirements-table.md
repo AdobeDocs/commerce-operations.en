@@ -24,12 +24,6 @@
       <th>2.4.4-p2</th>
       <th>2.4.4-p1</th>
       <th>2.4.4</th>
-      <th>2.4.3-p3</th>
-      <th>2.4.3-p2</th>
-      <th>2.4.3</th>
-      <th>2.4.2</th>
-      <th>2.4.1</th>
-      <th>2.4.0</th>
     </tr>
   </thead>
   <tbody>
@@ -89,24 +83,6 @@
       <td>
             2.1
       </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
@@ -163,24 +139,6 @@
       </td>
       <td>
           --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-            7.10
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.7
-      </td>
-      <td>
-            7.6, 7.7
       </td>
     </tr>
     <tr>
@@ -239,24 +197,6 @@
       <td>
             1.2
       </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
@@ -313,24 +253,6 @@
       </td>
       <td>
             10.4
-      </td>
-      <td>
-            10.4
-      </td>
-      <td>
-            10.4
-      </td>
-      <td>
-            10.4
-      </td>
-      <td>
-            10.4
-      </td>
-      <td>
-            10.4
-      </td>
-      <td>
-            10.2, 10.3, 10.4
       </td>
     </tr>
     <tr>
@@ -389,24 +311,6 @@
       <td>
             8.1
       </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.3, 7.4
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
@@ -464,24 +368,6 @@
       <td>
             3.9
       </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
@@ -538,24 +424,6 @@
       </td>
       <td>
             6.2
-      </td>
-      <td>
-            6.0
-      </td>
-      <td>
-            6.0
-      </td>
-      <td>
-            6.0
-      </td>
-      <td>
-            6.0
-      </td>
-      <td>
-            5.0
-      </td>
-      <td>
-            5.0
       </td>
     </tr>
   </tbody>
