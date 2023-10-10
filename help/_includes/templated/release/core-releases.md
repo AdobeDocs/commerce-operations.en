@@ -131,7 +131,7 @@ Support for the 2.4.4 release line ends on April&nbsp;12, 2025.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p5.html">2.4.4-p6</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html">2.4.4-p6</a>
         </td>
         <td>October&nbsp;10, 2023</td>
     </tr>
