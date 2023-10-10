@@ -11,10 +11,7 @@ Adobe releases [patches](versioning-policy.md#patch-release) for each supported 
 
 >[!NOTE]
 >
->Beginning in 2024, Adobe no longer provides "pre-release" access to patches. Instead, for 2.4.7 and later, Adobe Commerce customers can use [beta releases](beta.md) to access pre-general availability code for testing and development purposes. Pre-release access is still scheduled for the following 2023 releases:
->
-> - August 8, 2023 pre-release access is July 25, 2023
-> - October 10, 2023 pre-release access is September 26, 2023
+>Beginning in 2024, Adobe no longer provides "pre-release" access to patches. Instead, for 2.4.7 and later, Adobe Commerce customers can use [beta releases](beta.md) to access pre-general availability code for testing and development purposes.
 
 The following table provides the dates for scheduled releases (dates are subject to change):
 
