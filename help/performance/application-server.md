@@ -1,7 +1,7 @@
 ---
 title: Application Server for GraphQL APIs
 description: Follow these instructions for enabling the Application Server for GraphQL APIs in your Adobe Commerce deployment.
-badgeCoreBeta: label="2.4.7-beta1" type="informative"
+badgeCoreBeta: label="2.4.7-beta" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 ---
 # Application Server for GraphQL APIs
@@ -38,26 +38,18 @@ The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Applicatio
 
 Complete the following tasks before deploying Application Server: 
 
-1. Confirm that Adobe Commerce is installed.
+1. Confirm that Adobe Commerce is installed on Commerce Cloud.
 1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
-1. Clone your Cloud project.
-1. Add the `openswoole.so` PHP extension file to your project by modifying the `project_root/.magento.app.yaml` file by adding the following line of code into the `build` section before the `composer install` command:
-
-   ```curl
-
-   curl -fsS <https://raw.githubusercontent.com/yaroslavGoncharuk/platformscript/main/install_swoole.sh> | { bash /dev/fd/0 openswoole 22.0.0 ; } 3<&0
-
-   ```
-
+1. Clone your Commerce Cloud project.
 1. Create a `graphql` folder in your `project_root` folder.
-1. Add the additional custom `.magento.app.yaml` file included at the end of this topic into your `project_root/graphql` folder. 
+1. Add the additional custom `.magento.app.yaml` file included in the [magento.app.yaml file content](#magento.app.yaml-file-content) topic into your `project_root/graphql` folder. 
 1. Edit the `project_root/.magento/routes.yaml` file to include these directives:
 
    ```yaml
 
-   The routes of the project.
-
-   Each route describes how an incoming URL is going to be processed.
+   # The routes of the project.
+   #
+   # Each route describes how an incoming URL is going to be processed.
 
    "http://{default}/":
      type: upstream
@@ -102,20 +94,24 @@ git push
 1. Perform a GraphQL query or mutation against your instance to confirm that the `graphql` endpoint is accessible. For example:
 
    ```
-   mutation {  createEmptyCart}
+   mutation {  
+    createEmptyCart
+   }
    ```
 
    The expected response should resemble this example:
 
    ```terminal
-   {    "data": {        "createEmptyCart": "HLATPzcLw5ylDf76IC92nxdO2hXSXOrv"    }}
+   {    
+    "data": {        
+        "createEmptyCart": "HLATPzcLw5ylDf76IC92nxdO2hXSXOrv"    
+        }
+    }
    ```
 
-1. Use SSH to access your Cloud instance through the GraphQL application access point. The `root/var/log/magento-server.log` should contain a new log record for every GraphQL request.
+1. Use SSH to access your Cloud instance through the GraphQL application access point. The `project_root/var/log/magento-server.log` should contain a new log record for every GraphQL request.
 
 If these verification steps are successful, you can proceed with test cycle execution.
-
-### Disable Application Server on Cloud Starter
 
 
 ## Enable Application Server on on-premises deployments
