@@ -1,8 +1,86 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Wed Sep 27 09:10:58 2023
+updated: Mon Oct 9 17:29:04 2023
 entries:
+- description: Updated the following topics for the 2.4.7-beta2 release:<br/>- [Adobe
+    Commerce CLI (on-premises, Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html)<br/>-
+    [Magento Open Source CLI (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html)<br/>-
+    [Adobe Commerce packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html)<br/>-
+    [Magento Open Source packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html)
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/686
+  merge_commit: 7a2e0f9fd2e74776107ac85de9b785aaf056413c
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Published release notes for the October 2023 Adobe Commerce patches:<br/>-
+    [2.4.7-beta2](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html)<br/>-
+    [2.4.6-p3](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p3.html)<br/>-
+    [2.4.5-p5](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p5.html)<br/>-
+    [2.4.4-p6](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html)
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/667
+  merge_commit: d1a37c01f56c12f4d4553bcd3ad883a321de9ac8
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Updated the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    for patches that were released in October 2023.
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/669
+  merge_commit: 93381f57ab687521e1503144cf5c5442da856310
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Added a description of the new [Handles params size](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/configure-varnish-commerce.html)
+    system configuration option for full-page caching.
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/671
+  merge_commit: 372a37d8c75aec195951114fa9bc2786fc450bf8
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Clarified requirements for using the [scope](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values.html),
+    [website, store, and store view](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html)
+    codes.
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/606
+  merge_commit: 21d8d1f26e44d48c84095c539e68b34066854fda
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.39 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: October 5, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/680
+  merge_commit: 6df49bc9d097bf883936b66176022251f9bf3b38
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.38 Quality Patches Tool (QPT) package release.
   versions: ''
@@ -93,17 +171,6 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Updated [released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
-    with the August 2023 security patches.
-  versions: ''
-  type: major-update
-  date: August 8, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/628
-  merge_commit: c9abed3c6ca156cdc19e7231f97cf2a8bd8ab100
-  contributor: jmatthew
-  membership: false
-  labels:
-  - major-update
 - description: Added information about the Adobe Commerce August 8, 2023 security
     hotfix to the release notes for Adobe Commerce 2.4.4-p4, 2.4.4-p5, 2.4.5-p3, 2.4.5-p4,
     2.4.6-p1, and 2.4.6-p2.  See [Release notes for Adobe Commerce and Magento Open
@@ -120,6 +187,17 @@ entries:
   - major-update
   - 2.4.5
   - 2.4.6
+- description: Updated [released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
+    with the August 2023 security patches.
+  versions: ''
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/628
+  merge_commit: c9abed3c6ca156cdc19e7231f97cf2a8bd8ab100
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
 - description: Added information about [endpoint detection and response](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/security.html)
     on cloud infrastructure.
   versions: ''
@@ -131,46 +209,6 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Added release notes for Adobe Commerce 2.4.6-p2, 2.4.5-p4, and 2.4.4-p5.
-    See [Release notes for Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
-  versions: 2.4.4, 2.4.5, 2.4.6
-  type: major-update
-  date: August 8, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/600
-  merge_commit: ed1308771a799bcbaf71a8f82542c45d37f9c141
-  contributor: frontain
-  membership: false
-  labels:
-  - 2.4.4
-  - major-update
-  - 2.4.5
-  - 2.4.6
-- description: Added 2024 dates to the [release schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)
-    and [software lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html).
-  versions: ''
-  type: major-update
-  date: August 8, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/602
-  merge_commit: 19fbba535c047a8d877428afc071540d3fa12390
-  contributor: jmatthew
-  membership: false
-  labels:
-  - major-update
-- description: Added the August 2023 security patches (2.4.6-p2, 2.4.5-p4, and 2.4.4-p5)
-    to the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
-    table
-  versions: 2.4.4, 2.4.5, 2.4.6
-  type: major-update
-  date: August 8, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/601
-  merge_commit: 7373980a0648be5e0f7dc4a307074d934f646b24
-  contributor: jmatthew
-  membership: false
-  labels:
-  - 2.4.4
-  - major-update
-  - 2.4.5
-  - 2.4.6
 - description: Redesigned the [product availability](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
     page to improve layout and readability.
   versions: ''
@@ -230,6 +268,17 @@ entries:
   membership: false
   labels:
   - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.33 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: June 16, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/584
+  merge_commit: 27ce99f5d615398ba8d20e7381d2cfe1c9c966cf
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
 - description: Add the June 2023 release to [Released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
   versions: 2.4.7
   type: technical
@@ -260,7 +309,7 @@ entries:
     [Magento Open Source packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html)
   versions: 2.4.7
   type: new-topic
-  date: June 13, 2023
+  date: June 12, 2023
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/570
   merge_commit: 165a7f99fa173b17e436c07dc1fbcf9323478762
   contributor: shevtsov
@@ -272,7 +321,7 @@ entries:
     Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html).
   versions: 2.4.7
   type: new-topic
-  date: June 13, 2023
+  date: June 1, 2023
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/556
   merge_commit: 6fe8d69933b7b2260a33b55bb2b12609addd3c90
   contributor: frontain
@@ -285,7 +334,7 @@ entries:
     for the June 2023 release.
   versions: 2.4.7
   type: major-update
-  date: June 13, 2023
+  date: May 24, 2023
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/540
   merge_commit: 95032071bca59ad1466aed16033a871d820c40b3
   contributor: jmatthew
@@ -299,7 +348,7 @@ entries:
     [2.4.4-p4](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html)
   versions: 2.4.7
   type: major-update
-  date: June 13, 2023
+  date: May 24, 2023
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/546
   merge_commit: 14ab6c2495ffb2ddd6321cd0fbb317df6fd866b3
   contributor: frontain
@@ -311,7 +360,7 @@ entries:
     for patches that were released in June 2023.
   versions: 2.4.7
   type: major-update
-  date: June 13, 2023
+  date: May 9, 2023
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/523
   merge_commit: 84a82a6806e43a928be7e6743457d8fc9288338e
   contributor: jmatthew
@@ -324,7 +373,7 @@ entries:
     module.
   versions: 2.4.7
   type: major-update
-  date: June 13, 2023
+  date: January 20, 2023
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/410
   merge_commit: 702b7f73d1bd315528c332418ed3a5f2666c3efc
   contributor: jmatthew
@@ -336,7 +385,7 @@ entries:
     can help improve performance.
   versions: 2.4.7
   type: major-update
-  date: June 13, 2023
+  date: January 19, 2023
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/404
   merge_commit: 146231fb1b559e6043b8610da02c2015b2f77d6c
   contributor: aakashk
@@ -344,6 +393,46 @@ entries:
   labels:
   - major-update
   - 2.4.7
+- description: Added release notes for Adobe Commerce 2.4.6-p2, 2.4.5-p4, and 2.4.4-p5.
+    See [Release notes for Adobe Commerce and Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
+  versions: 2.4.4, 2.4.5, 2.4.6
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/600
+  merge_commit: ed1308771a799bcbaf71a8f82542c45d37f9c141
+  contributor: frontain
+  membership: false
+  labels:
+  - 2.4.4
+  - major-update
+  - 2.4.5
+  - 2.4.6
+- description: Added 2024 dates to the [release schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)
+    and [software lifecycle policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html).
+  versions: ''
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/602
+  merge_commit: 19fbba535c047a8d877428afc071540d3fa12390
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added the August 2023 security patches (2.4.6-p2, 2.4.5-p4, and 2.4.4-p5)
+    to the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    table
+  versions: 2.4.4, 2.4.5, 2.4.6
+  type: major-update
+  date: August 8, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/601
+  merge_commit: 7373980a0648be5e0f7dc4a307074d934f646b24
+  contributor: jmatthew
+  membership: false
+  labels:
+  - 2.4.4
+  - major-update
+  - 2.4.5
+  - 2.4.6
 - description: Added a [instructions](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html)
     for accessing the Site-Wide Analysis Tool from the tool's domain (`https://supportinsights.adobe.com/commerce`).
   versions: ''
