@@ -13,7 +13,7 @@ Adobe Commerce and Magento Open Source use [semantic versioning](https://semver.
    -  **SECURITY patch release**—2.4.5-p1
       -  Security bug fix
       -  Security enhancement
--  **BETA patch release**—2.4.7-beta1
+-  **BETA patch release**—2.4.7-beta2
 -  **Extensibility, Infrastructure, and Services release**
 -  **Hotfix**
 -  **Individual patch**
