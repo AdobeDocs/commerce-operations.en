@@ -33,7 +33,6 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-55256** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where only the first image is successfully displayed in the image slider.
 * Updated patches: ACSD-52041, ACSD-54106
 
-
 ## v1.1.39 {#v1-1-39}
 
 * **ACSD-53704** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where reward points balance history is miscalculated after reward points expiration.
