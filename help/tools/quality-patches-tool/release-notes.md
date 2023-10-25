@@ -19,7 +19,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 * **ACSD-54680** (for Adobe Commerce >=2.4.0 <2.4.6) - Fixes the issue where it is not possible to process a B2B Quote submitted for a product with Multiple Assigned Sources.
 * **ACSD-54040** (for Adobe Commerce >=2.4.4-p5 <2.4.5 || >=2.4.5-p4 <2.4.6) - Fixes the issue where the *[!UICONTROL Created]* field is blank in order details when B2B modules are enabled.
-* **ACSD-54319** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where the product price shows zero in the "Product in Cart" report.
+* **ACSD-54319** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.6) - Fixes the issue where the product price shows zero in the *[!UICONTROL Product in Cart]* report.
 * **ACSD-53378** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Improves checkout page load time for customers who have large address books.
 * **ACSD-52657** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where the minicart is not updated on the secondary storeview, which uses a subdomain.
 * **ACSD-53414** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where a restricted admin user can see CMS pages outside of their permissions scope.
