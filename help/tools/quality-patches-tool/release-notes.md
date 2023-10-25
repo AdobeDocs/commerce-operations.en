@@ -23,7 +23,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-53378** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Improves checkout page load time for customers who have large address books.
 * **ACSD-52657** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where the minicart is not updated on the secondary storeview, which uses a subdomain.
 * **ACSD-53414** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where a restricted admin user can see CMS pages outside of their permissions scope.
-* **ACSD-54472** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where customers of a rejected company can still authenticate, and customers of a blocked and a rejected company can still place orders, added additional validation for GraphQL endpoints.
+* **ACSD-54472** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where customers of a rejected company can still authenticate, and customers of a blocked and a rejected company can still place orders. The patch adds additional validation for GraphQL endpoints.
 * **ACSD-52801** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Adds the option to do a partial match when searching for products in GraphQL.
 * **ACSD-55004** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the validator crashes while uploading an import file larger than the value configured in `php.ini`.
 * **ACSD-54989** (for Adobe Commerce >=2.4.4-p5 <2.4.5 || >=2.4.5-p4 <2.4.6 || >=2.4.6-p2 <2.4.7) - Fixes the issue where a company admin cannot place an order when *[!UICONTROL Enable Purchase Orders]* is set to *[!UICONTROL Yes]* and *[!UICONTROL Purchase Order]* is set to *[!UICONTROL No]*.
