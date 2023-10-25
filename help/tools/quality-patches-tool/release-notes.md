@@ -26,7 +26,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-54472** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where customers of a rejected company can still authenticate, and customers of a blocked and a rejected company can still place orders, added additional validation for GraphQL endpoints.
 * **ACSD-52801** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Adds the option to do a partial match when searching for products in GraphQL.
 * **ACSD-55004** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the validator crashes while uploading an import file larger than the value configured in `php.ini`.
-* **ACSD-54989** (for Adobe Commerce >=2.4.4-p5 <2.4.5 || >=2.4.5-p4 <2.4.6 || >=2.4.6-p2 <2.4.7) - Fixes the issue where a company admin cannot place an order when "Enable Purchase Orders" is set to "Yes" and "Purchase Order" is set to "No".
+* **ACSD-54989** (for Adobe Commerce >=2.4.4-p5 <2.4.5 || >=2.4.5-p4 <2.4.6 || >=2.4.6-p2 <2.4.7) - Fixes the issue where a company admin cannot place an order when *[!UICONTROL Enable Purchase Orders]* is set to *[!UICONTROL Yes]* and *[UICONTROL Purchase Order]* is set to *[!UICONTROL No]*.
 * **ACSD-54007** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the error "Undefined array key "_scope"" on importing customer data.
 * **ACSD-55031** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the 'Type "mixed" cannot be nullable' error during compilation.
 * **ACSD-54961** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where a restricted admin user cannot mass update Product Review status.
