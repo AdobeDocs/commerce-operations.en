@@ -44,7 +44,7 @@ Follow these security best practices to proactively prevent security incidents t
 - Audit [SSH keys](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html) for Adobe Commerce on cloud infrastructure.
     Review, delete, and rotate SSH keys.
 - Implement Access Control List (ACL) for Admin.
-    You can filter incoming requests and configure Admin access by IP address by implementing a Fastly Edge ACL list in combination with a custom [VCL code snippet](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl).
+    You can filter incoming requests and configure Admin access by IP address by implementing a Fastly Edge ACL list in combination with a custom [VCL code snippet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 ## Analyze an incident
 
