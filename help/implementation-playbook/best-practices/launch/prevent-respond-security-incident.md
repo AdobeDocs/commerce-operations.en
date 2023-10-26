@@ -7,7 +7,7 @@ exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 ---
 # Best practices to help prevent and respond to a security incident
 
-Adobe Commerce security operates under a [Shared Responsibility](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) model. It is key to understand what Adobe and your technical teams are responsible for. The following article summarizes security best practices to ensure that your project has the best security controls in place and that you can plan the best approach to respond to a security incident.
+Adobe Commerce security operates under a [Shared Responsibility](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) model. It is key to understand what Adobe and your technical teams are responsible for. The following article summarizes security best practices to ensure that your project has the best security controls in place, and that you can plan the best response to security incidents.
 
 ## Affected products and versions
 
@@ -37,14 +37,14 @@ Follow these security best practices to proactively prevent security incidents t
 - Setup and run the [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html).
     The enhanced security scan allows you to monitor each of your Adobe Commerce sites, including PWA, for known security risks and malware, and to receive patch updates and security notifications.
 - [Review and update Admin user access](https://docs.magento.com/user-guide/system/permissions-users-all.html) and [security settings](https://docs.magento.com/user-guide/stores/security-admin.html).
-  - Remove any old, unused, or suspicious accounts and rotating passwords for all Admin users.
+  - Remove any old, unused, or suspicious accounts and rotate passwords for all Admin users.
   - Review and update the Advance Security Settings< for your project. The Admin security configuration gives you the ability to add a secret key to URLs, require passwords to be case-sensitive, and to limit the length of Admin sessions, including the lifetime of passwords, and the number of login attempts permitted before the Admin user account is locked. For increased security, you can configure the length of keyboard inactivity before the current session expires, and require the username and password to be case-sensitive.
 - Audit Adobe Commerce on [cloud project users](https://devdocs.magento.com/cloud/project/user-admin.html).
-    Remove any old, unused, or suspicious accounts and requesting users to change their passwords.
+    Remove any old, unused, or suspicious accounts and request users to change their passwords.
 - Audit [SSH keys](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html) for Adobe Commerce on cloud infrastructure.
     Review, delete, and rotate SSH keys.
 - Implement Access Control List (ACL) for Admin.
-    You can filter incoming requests and configure Admin access by IP address by using a Fastly Edge ACL list in combination with a custom [VCL code snippet](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl).
+    You can filter incoming requests and configure Admin access by IP address by implementing a Fastly Edge ACL list in combination with a custom [VCL code snippet](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl).
 
 ## Analyze an incident
 
