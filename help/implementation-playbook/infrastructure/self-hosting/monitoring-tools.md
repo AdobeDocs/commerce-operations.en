@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13
-exl-id: 728e9439-63d0-4481-b014-7ba2ce97b9d0
+exl-id: 5aa03f91-1240-47f6-8d06-b06e64973266
 feature: Install, Logs, Observability
 ---
 # Self-hosting Adobe Commerce Monitoring telemetry and tools

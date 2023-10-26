@@ -3,8 +3,8 @@ title: Composer tips and tricks
 description: Learn about common Composer development tasks and guidance for quickly resolving issues.
 feature: Best Practices
 role: Developer
+exl-id: 5ead5fb1-3bb3-4e77-a4f1-8e10c4f91efb
 ---
-
 # Composer tips and tricks
 
 You may encounter issues when developing Adobe Commerce modules with Composer. These best practices describe some common tasks to make development easier and help you quickly resolve issues.

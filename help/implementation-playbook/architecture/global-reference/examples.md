@@ -3,8 +3,8 @@ title: Global reference architecture examples
 description: See examples of managing code for large-scale Adobe Commerce projects.
 role: Developer, Architect
 level: Experienced
+exl-id: 2a85b9bf-e547-4a2a-9234-210865f55609
 ---
-
 # Global reference architecture examples
 
 This topic describes common ways of organizing a [global reference architecture (GRA)](overview.md) code base. Although the [separate packages](#option-1-separate-packages) option is preferred, some situations require one of the other options described below.

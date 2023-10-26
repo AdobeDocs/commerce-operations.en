@@ -101,14 +101,14 @@ For Adobe Commerce 2.4.4 and subsequent releases:
   <tr>
     <td rowspan="2">2.4.7</td>
     <td>8.2</td>
-    <td colspan="5"></td>
-    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="9"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
   <tr>
     <td>8.3</td>
-    <td colspan="5"></td>
-    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="9"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
 </tbody>

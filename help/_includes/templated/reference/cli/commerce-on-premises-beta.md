@@ -4,9 +4,9 @@
 
 <!-- The template to render with above values -->
 
-**Version**: 2.4.7-beta1
+**Version**: 2.4.7-beta2
 
-This reference contains 132 commands available through the `bin/magento` command-line tool.
+This reference contains 134 commands available through the `bin/magento` command-line tool.
 The initial list is auto generated using the `bin/magento list` command at Adobe Commerce.
 Use the ["Add CLI commands"](https://developer.adobe.com/commerce/php/development/cli-commands/) guide to add a custom CLI command.
 
@@ -3749,6 +3749,120 @@ Do not ask any interactive question
 -  Does not accept a value
 
 
+## `events:provider:info`
+
+Returns details about the configured event provider
+
+```bash
+bin/magento events:provider:info
+```
+
+### `--help`, `-h`
+
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force (or disable --no-ansi) ANSI output
+   
+-  Does not accept a value
+
+### `--no-ansi`
+
+Negate the "--ansi" option
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`, `-n`
+
+Do not ask any interactive question
+   
+-  Default: `false`
+-  Does not accept a value
+
+
+## `events:registrations:list`
+
+Lists event registrations in your App Builder project
+
+```bash
+bin/magento events:registrations:list
+```
+
+### `--help`, `-h`
+
+Display help for the given command. When no command is given display help for the \<info>list\</info> command
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--quiet`, `-q`
+
+Do not output any message
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--version`, `-V`
+
+Display this application version
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--ansi`
+
+Force (or disable --no-ansi) ANSI output
+   
+-  Does not accept a value
+
+### `--no-ansi`
+
+Negate the "--ansi" option
+   
+-  Default: `false`
+-  Does not accept a value
+
+### `--no-interaction`, `-n`
+
+Do not ask any interactive question
+   
+-  Default: `false`
+-  Does not accept a value
+
+
 ## `events:subscribe`
 
 Subscribes to the event
@@ -7214,7 +7328,7 @@ Do not ask any interactive question
 Run application server
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
 ```
 
 ### `--port`, `-p`
@@ -7243,6 +7357,13 @@ application server area
 magento bootstrap init params
    
 -  Default: ``
+-  Accepts a value
+
+### `--maxWaitTime`, `-mwt`
+
+how long to wait for workers after reload (eg. config change) before killing them
+   
+-  Default: `3600`
 -  Accepts a value
 
 ### `--help`, `-h`
@@ -9410,7 +9531,7 @@ Admin last name
 
 ### `--search-engine`
 
-Search engine. Values: elasticsearch5, elasticsearch7, elasticsearch8, opensearch
+Search engine. Values: elasticsearch7, elasticsearch8, opensearch
    
 -  Requires a value
 
