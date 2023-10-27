@@ -5,7 +5,9 @@ role: Admin, Developer, Leader, User
 feature: Best Practices
 ---
 
-Establishing and maintaining a secure environment for Commerce is a responsibility that is shared between Adobe Commerce customers and solution partners and Adobe. The intent of this guide is to provide best practices for the customer's side of the equation.
+# Security Best Practices
+
+Establishing and maintaining a secure environment for Adobe Commerce projects deployed on Cloud infrastructure is a responsibility that is shared between Adobe Commerce customers and solution partners and Adobe. The intent of this guide is to provide best practices for the customer's side of the equation.
 
 Although you cannot eliminate all security risks, applying these best practices hardens the security posture of Commerce installations. A secure site and infrastructure makes a less attractive target for malicious attacks, ensures the security of the solution and customers' sensitive information, and helps minimize security-related incidents that can cause site disruptions and costly investigations.
 
@@ -16,7 +18,10 @@ Although you cannot eliminate all security risks, applying these best practices 
 [All supported versions](../../../release/versions.md) of:
 
 - Adobe Commerce on cloud infrastructure
-- Adobe Commerce on-premises
+
+>[!NOTE]
+>
+>Although these best practices are recommended specifically for Adobe Commerce on cloud infrastructure projects, the same configuration settings and recommendations are also applicable to Adobe Commerce on-premises projects.
 
 ## Priority recommendations
 
