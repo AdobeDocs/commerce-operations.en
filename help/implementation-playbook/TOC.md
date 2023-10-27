@@ -30,13 +30,7 @@ mini-toc-levels: 3
   - [Integration strategy](architecture/integration-strategy.md)
   - [Extensibility strategy](architecture/extensibility-strategy.md)
   - [Integration options](architecture/integration-options.md)
-  - Global reference architecture {#global-reference-architecture}
-    - [Overview](architecture/global-reference/overview.md)
-    - [Examples](architecture/global-reference/examples.md)
-    - Composer development {#composer}
-      - [Overview](architecture/global-reference/composer/overview.md)
-      - [Project structure](architecture/global-reference/composer/project-structure.md)
-      - [Tips and tricks](architecture/global-reference/composer/tips-and-tricks.md)
+  - [Global reference architecture](architecture/global-reference.md)
   - Headless commerce {#headless}
     - [Benefits](architecture/headless/benefits.md)
     - [Journey to headless](architecture/headless/journey-to-headless.md)
@@ -57,6 +51,8 @@ mini-toc-levels: 3
     - [Overview](infrastructure/cloud/overview.md)
     - [Regions](infrastructure/cloud/regions.md)
     - [Technologies](infrastructure/cloud/technology.md)
+    - [Environments](infrastructure/cloud/environments.md)
+    - [Managed services](infrastructure/cloud/managed-services.md)
     - [Security and compliance](infrastructure/cloud/security.md)
   - Performance optimization {#performance}
     - [Typical issues](infrastructure/performance/optimization.md)
@@ -87,13 +83,6 @@ mini-toc-levels: 3
     - [Payments storage processing](best-practices/planning/payment-processing-storage.md)
   - Development {#development}
     - [Overview](best-practices/development/overview.md)
-    - [General best practices](best-practices/development/general.md)
-    - [Code management](best-practices/development/code-management.md)
-    - [Code review](best-practices/development/code-review.md)
-    - [Debugging](best-practices/development/debugging.md)
-    - [Exception handling](best-practices/development/exception-handling.md)
-    - [Git branching](best-practices/development/git-branching.md)
-    - [Catalog image resizing](best-practices/development/catalog-image-resizing.md)
     - [Image optimization](best-practices/development/image-optimization.md)
     - [Troubleshooting](best-practices/development/troubleshooting.md)
     - [Optimize CSS and JS files](best-practices/development/optimize-css-js-files.md)
@@ -103,6 +92,7 @@ mini-toc-levels: 3
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
     - [Configure the robots.txt file](best-practices/launch/robots-txt.md)
+    - [Security best practices](best-practices/launch/security-best-practices.md)
     - [Prevent and respond to security incidents](best-practices/launch/prevent-respond-security-incident.md)
   - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)
