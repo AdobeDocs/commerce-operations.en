@@ -18,7 +18,9 @@ See [Set the operation mode](../cli/set-mode.md) to learn how to manually change
 
 ## Cloud support
 
-There is no need to manage the application modes for a cloud infrastructure project. Because of the read-only filesystem, you cannot change modes in the remote cloud environments. Adobe Commerce on cloud infrastructure automatically runs the application in _maintenance_ mode during a deployment, which takes your site offline until the deployment is complete. Otherwise, the application remains in _production_ mode. See [Deployment process](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in the _Commerce on Cloud Infrastructure guide_.
+There is no need to manage the application modes for a cloud infrastructure project. Because of the read-only filesystem, you cannot change modes in the remote cloud environments. Do not attempt to change modes by modifying the `app/etc/env.php` file because the `ece-tools` package overwrites the file based on multiple configuration sources.
+
+Adobe Commerce on cloud infrastructure automatically runs the application in _maintenance_ mode during a deployment, which takes your site offline until the deployment is complete. Otherwise, the application remains in _production_ mode. See [Deployment process](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in the _Commerce on Cloud Infrastructure guide_.
 
 If you use Cloud Docker for Commerce as a development tool, you can deploy your cloud infrastructure project in a Docker environment in _developer_ mode, but performance is slower because of additional file synchronization operations. See [Deploy the Docker environment](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) in the _Cloud Docker for Commerce guide_.
 
