@@ -4,6 +4,66 @@
 
 Learn about new documentation and significant updates to existing documentation.
 
+### October 25, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.40 Quality Patches Tool (QPT) package release.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9c02a9ca6341df46266b50dffaa6e5b961a6af98">9c02a9</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### October 13, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added information about enabling the PHP Application Server for GraphQL APIs in a Cloud Starter environment. See <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">Application Server for GraphQL APIs</a>.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1498d2e8cfaa0243f571a8fd9a0bb717bc3a86c4">1498d2</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### October 5, 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.39 Quality Patches Tool (QPT) package release.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6df49bc9d097bf883936b66176022251f9bf3b38">6df49b</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### October 10, 2023
 
 <table style="table-layout:auto;">
@@ -44,26 +104,6 @@ Learn about new documentation and significant updates to existing documentation.
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21d8d1f26e44d48c84095c539e68b34066854fda">21d8d1</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### October 5, 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.39 Quality Patches Tool (QPT) package release.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6df49bc9d097bf883936b66176022251f9bf3b38">6df49b</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
