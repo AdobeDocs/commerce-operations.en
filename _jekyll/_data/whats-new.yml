@@ -1,8 +1,42 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Oct 9 17:29:04 2023
+updated: Mon Oct 30 14:27:22 2023
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.40 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: October 25, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/694
+  merge_commit: 9c02a9ca6341df46266b50dffaa6e5b961a6af98
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added information about enabling the PHP Application Server for GraphQL
+    APIs in a Cloud Starter environment. See [Application Server for GraphQL APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html).
+  versions: 2.4.7
+  type: major-update
+  date: October 13, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/685
+  merge_commit: 1498d2e8cfaa0243f571a8fd9a0bb717bc3a86c4
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.39 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: October 5, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/680
+  merge_commit: 6df49bc9d097bf883936b66176022251f9bf3b38
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
 - description: Updated the following topics for the 2.4.7-beta2 release:<br/>- [Adobe
     Commerce CLI (on-premises, Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html)<br/>-
     [Magento Open Source CLI (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html)<br/>-
@@ -70,17 +104,6 @@ entries:
   labels:
   - major-update
   - 2.4.7
-- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
-    for the 1.1.39 Quality Patches Tool (QPT) package release.
-  versions: ''
-  type: major-update
-  date: October 5, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/680
-  merge_commit: 6df49bc9d097bf883936b66176022251f9bf3b38
-  contributor: muntianu
-  membership: false
-  labels:
-  - major-update
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.38 Quality Patches Tool (QPT) package release.
   versions: ''
