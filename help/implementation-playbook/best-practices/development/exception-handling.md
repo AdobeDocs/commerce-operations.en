@@ -82,7 +82,7 @@ The following examples demonstrate incorrect exception handling.
 
 ### ![incorrect](../../../assets/no.svg) Logic before logging
 
-Logic before logging can lead to another exception or fatal error, which prevents the exception from being logged and should be replaced by [correct example](#correct-logging-always-comes-first).
+Logic before logging can lead to another exception or fatal error, which prevents the exception from being logged and should be replaced by [correct example](#logging-always-comes-first).
 
 ```php
 try {
@@ -95,7 +95,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Empty `catch`
 
-Empty `catch` blocks can be a sign of unintended muting and should be replaced by the [correct example](#correct-mute-signals).
+Empty `catch` blocks can be a sign of unintended muting and should be replaced by the [correct example](#mute-signals).
 
 ```php
 try {
@@ -131,11 +131,11 @@ try {
 
 This approach introduces line breaks in the message, which is not compliant with PSR-3. The exception, including stack trace, must be part of the message context to ensure that it is saved correctly with the message in New Relic or other PSR-3 monolog-compatible log storage.
 
-Fix this problem by replacing the code following the correct examples shown in [Write to the exception log](#correct-write-to-the-exception-log) or [Downgrade exceptions](#correct-downgrade-exceptions).
+Fix this problem by replacing the code following the correct examples shown in [Write to the exception log](#write-to-the-exception-log) or [Downgrade exceptions](#downgrade-exceptions).
 
 ### ![incorrect](../../../assets/no.svg) Downgrade exceptions without context
 
-The exception is downgraded to an error, which does not allow an object to be passed, but only a string, hence the `getMessage()`. This causes the trace to be lost and should be replaced by the correct examples shown in [Write to the exception log](#correct-write-to-the-exception-log) or [Downgrade exceptions](#correct-downgrade-exceptions).
+The exception is downgraded to an error, which does not allow an object to be passed, but only a string, hence the `getMessage()`. This causes the trace to be lost and should be replaced by the correct examples shown in [Write to the exception log](#write-to-the-exception-log) or [Downgrade exceptions](#downgrade-exceptions).
 
 ```php
 try {
@@ -147,7 +147,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Log only the message to the exception log
 
-Instead of passing the object `$e`, only `$e->getMessage()` is passed. This causes the trace to be lost and should be replaced by the correct examples shown [Write to the exception log](#correct-write-to-the-exception-log) or [Downgrade exceptions](#correct-downgrade-exceptions).
+Instead of passing the object `$e`, only `$e->getMessage()` is passed. This causes the trace to be lost and should be replaced by the correct examples shown [Write to the exception log](#write-to-the-exception-log) or [Downgrade exceptions](#downgrade-exceptions).
 
 ```php
 try {
@@ -159,7 +159,7 @@ try {
 
 ### ![incorrect](../../../assets/no.svg) Missing `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Omitting the `phpcs:ignore` line triggers a warning in PHPCS and should not pass your CI. This should be replaced by the correct example shown in [Mute signals](#correct-mute-signals).
+Omitting the `phpcs:ignore` line triggers a warning in PHPCS and should not pass your CI. This should be replaced by the correct example shown in [Mute signals](#mute-signals).
 
 ```php
 try {
