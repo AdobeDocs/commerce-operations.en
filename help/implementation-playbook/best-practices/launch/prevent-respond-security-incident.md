@@ -75,13 +75,13 @@ Continue to closely monitor the site after the incident as many sites get compro
 
 ### Audit Admin user accounts
 
-  - [Review Admin user access](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)—Remove old, unused, or suspicious accounts and rotate passwords for all Admin users.
+- [Review Admin user access](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)—Remove old, unused, or suspicious accounts and rotate passwords for all Admin users.
 
-  - [Review Admin security settings](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—Verify that Admin security settings follow security best practices.
+- [Review Admin security settings](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—Verify that Admin security settings follow security best practices.
 
-  - [Review user accounts for Adobe Commerce on cloud infrastructure projects](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)—Remove old, unused, or suspicious accounts and rotate passwords for all cloud project Admin users. Ensure that account security settings are configured correctly.
+- [Review user accounts for Adobe Commerce on cloud infrastructure projects](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)—Remove old, unused, or suspicious accounts and rotate passwords for all cloud project Admin users. Ensure that account security settings are configured correctly.
 
-  - [Audit SSH keys](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) for Adobe Commerce on cloud infrastructure**—Review, delete, and rotate SSH keys.
+- [Audit SSH keys](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) for Adobe Commerce on cloud infrastructure**—Review, delete, and rotate SSH keys.
 
 ### Audit code
 
