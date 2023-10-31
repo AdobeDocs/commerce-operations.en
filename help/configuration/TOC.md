@@ -120,7 +120,7 @@ feature: Configuration
     + [Cache poisoning](security/cache-poisoning.md)
     + [Secure cron PHP](security/secure-cron-php.md)
     + [Security TXT](security/security-txt.md)
-    + [X-Frame-Options header](security/xframe-options.md)
+    + [Click jacking Exploits](security/xframe-options.md)
 + Storage {#storage}
     + [Database profiler](storage/db-profiler.md)
     + Remote storage {#remote-storage}

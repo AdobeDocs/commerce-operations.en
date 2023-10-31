@@ -189,9 +189,9 @@ Brute force password guessing attacks can result in unauthorized Admin access. P
     >
     >If you employ a remote workforce, ensure that the IP addresses of remote employees are included in the list of addresses with permission to access the Commerce site.
 
-### Prevent click jacking exploits
+### Prevent Clickjacking exploits
 
-Adobe safeguards your store from click jacking attacks by using an `X-Frame-Options` HTTP request header.
+Adobe safeguards your store from Clickjacking attacks by providing the `X-Frame-Options` HTTP request header that you can include in requests to your storefront. See [Prevent clickjacking exploits](../../../configuration/security/xframe-options.md) in the *Adobe Commerce Configuration Guide*.
 
 
 
