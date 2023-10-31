@@ -17,9 +17,9 @@ Adobe Commerce security operates under a [Shared Responsibility](https://www.ado
 
 ## Respond to an incident
 
-There are many considerations as you respond to a security incident. If you suspect that you have encountered a recent security incident for your Adobe Commerce on cloud infrastructure project, it is important to audit all admin user account access, enable advanced multi-factor authentication (MFA) controls, preserve critical logs, and review security upgrades for your version of Adobe Commerce.
+If you suspect that your Adobe Commerce on cloud infrastructure project is impacted by a security incident, it is important to audit all admin user account access, enable advanced multi-factor authentication (MFA) controls, preserve critical logs, and review security upgrades for your version of Adobe Commerce.
 
-More recommendations are detailed below. They can help prevent unauthorized access and begin the process for further incident analysis.
+More recommendations are detailed below. Following these recommendations can help prevent unauthorized access. It also helps you plan and prepare for the root cause analysis and remediation process in the event that a security incident does occur.
 
 ## How to prevent security incidents
 
@@ -39,11 +39,11 @@ In the unfortunate event of a site compromise, here are some key recommendations
 
 - Try to find the attack vector to determine when and how the site was compromised, by reviewing server log files and file changes.
 
-  - In certain circumstances, it may be advisable to wipe and reinstall everything or, in the case of virtual hosting, create a new instance. Malware could be hidden in an unsuspected location just waiting to restore itself.
+  - In certain circumstances, it may be advisable to wipe and reinstall everything or, in the case of virtual hosting, create a fresh instance. Malware could be hidden in an unsuspected location just waiting to restore itself.
 
-  - Remove all unnecessary files. Then reinstall all required files from a known, clean source, such as files from your own version control system or the original distribution files from Adobe.
+  - Remove all unnecessary files. Then, reinstall required files from a known, clean source. For example, you can reinstall using files from your version control system, or from the original distribution files from Adobe.
 
-  - Reset all credentials, including the database, file access, payment and shipping integrations, web services, and Admin login. Also reset all integration and API keys as well as accounts that might be used to attack the system.
+  - Reset all credentials, including the database, file access, payment and shipping integrations, web services, and Admin login. Also reset all integration and API keys and accounts that might be used to attack the system.
 
 ## Analyze an incident
 
@@ -91,7 +91,7 @@ Continue to closely monitor the site after the incident as many sites get compro
 
 - Quarantine any suspicious code.
 
-- Redeploy the codebase to the production environment to ensure nothing is left behind.
+- Ensure that there are no remnants of suspicious code by redeploying the codebase to the production environment.
 
 ### Audit database configuration and logs
 
@@ -111,12 +111,11 @@ If the site has been flagged by Google as containing malicious code, request a r
 
 ## Review malware results checklist
 
-If publicly available malware scanning tools confirm that the site has been impacted, investigate the incident and work with the solution integrator to clean the site and follow recommended site remediation steps.
+If publicly available malware scanning tools confirm a malware attack, investigate the incident. Work with the solution integrator to clean the site and follow recommended the remediation process.
 
 ## Conduct additional reviews
 
-When dealing with advanced attacks, the best course of action is to work with an experienced developer, third-party expert, or solution integrator to fully repair the site and review security practices. Working with a security professional helps ensure the deeper steps are taken to ensure the safety of your business and
-its customers.
+When dealing with sophisticated attacks, the best course of action is to work with an experienced developer, third-party expert, or solution integrator to fully repair the site and review security practices. Working with a security professional ensures that comprehensive and advanced measures are taken to ensure the safety of your business and its customers.
 
 ## Additional information
 
