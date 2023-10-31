@@ -1,6 +1,6 @@
 ---
 title: Security Best Practices
-description: Learn security best practices to configure and maintain Commerce store, Admin, and infrastructure, and data security.
+description: Maintain security of your Commerce store, Admin, and infrastructure, and data by implementing security best practices when setting up, configuring, and updating Adobe Commerce projects.
 role: Admin, Developer, Leader, User
 feature: Best Practices
 ---
@@ -9,7 +9,7 @@ feature: Best Practices
 
 Establishing and maintaining a secure environment for Adobe Commerce projects deployed on Cloud infrastructure is a responsibility that is shared between Adobe Commerce customers and solution partners and Adobe. The intent of this guide is to provide best practices for the customer's side of the equation.
 
-Although you can not eliminate all security risks, applying these best practices hardens the security posture of Commerce installations. A secure site and infrastructure makes a less attractive target for malicious attacks, ensures the security of the solution and customers' sensitive information, and helps minimize security-related incidents that can cause site disruptions and costly investigations.
+Although you cannot eliminate all security risks, applying these best practices hardens the security posture of Commerce installations. A secure site and infrastructure makes a less attractive target for malicious attacks, ensures the security of the solution and customers' sensitive information, and helps minimize security-related incidents that can cause site disruptions and costly investigations.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Use the [Commerce Security Scan service](https://experienceleague.adobe.com/docs
 
 When you extend Adobe Commerce by adding third-party extensions from the Adobe Commerce marketplace, or add custom code, ensure the security of these customizations by applying the following best practices:
 
-- **Choose a partner or solution integrator (SI) well-versed in security**
+- **Choose a partner or solution integrator (SI) well versed in security**
 
   Ensure secure integrations and secure delivery of custom code by selecting organizations that follow secure development practices and have a solid track record of preventing and addressing security issues.
 
@@ -92,11 +92,11 @@ See the following resources for information about available Adobe Commerce versi
 
 >[!TIP]
 >
->Maintain the security of the Adobe Commerce solution by subscribing to the [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) to get the latest security information and instructions to mitigate against known security issues.
+>Get the latest security information and instructions to mitigate against known security issues by subscribing to the [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
 
 ## Develop a disaster recovery plan
 
-Develop a comprehensive disaster recovery plan to control damage and restore normal business operations quickly if the security of Commerce sites and data is compromised.
+Control damage and restore normal business operations quickly if the security of Commerce sites and data is compromised by developing a comprehensive disaster recovery plan.
 
 If a customer requires restoration of Commerce instance due to a disaster, Adobe can provide the customer with backup files. The customer and solution integrator, if applicable, can perform the restore.
 
@@ -120,7 +120,7 @@ Learn more about planning for backup and disaster recovery:
 
   - [Backup and rollback the file system, media, and database](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html)
 
-## Manage and audit access to Commerce sites, Admin panel, and cloud infrastructure projects
+## Manage and audit access to Commerce sites, the Admin, and cloud infrastructure projects
 
 - **[Review Admin user access](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)**—Remove old, unused, or suspicious accounts and rotate passwords for all Admin users.
 
@@ -132,16 +132,17 @@ Learn more about planning for backup and disaster recovery:
 
 ## Maintain a secure site and infrastructure
 
-This section summarizes best practices for maintaining site and infrastructure security for an Adobe Commerce installation secure. Many of these best practice focus on securing the computer infrastructure in general, so some of the recommendations may already be implemented.
+This section summarizes best practices for maintaining site and infrastructure security for an Adobe Commerce installation secure. Many of these best practices focus on securing the computer infrastructure in general, so some of the recommendations might already be implemented.
 
-- **Use a VPN tunnel**—Block unauthorized access to the Commerce site and services by working with your hosting partner to set up the tunnel.
+- **Block unauthorized access**—Work with your hosting partner to set up a VPN tunnel to block unauthorized access to the Commerce site and customer data. Set up an SSH tunnel to protect unauthorized access to the Commerce application.
+
 - **Use a Web Application Firewall**—Analyze traffic and discover suspicious patterns, such as credit card information being sent to an unknown IP address by using a Web Application Firewall.
 
   Adobe Commerce installations deployed on cloud infrastructure can use built-in WAF services available with the [Fastly services integration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 
 - **Configure advanced password security settings**—Set up strong passwords and change them at least every 90 days, as recommended by the PCI Data Security Standard in section 8.2.4. See [Configure Admin security settings](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 
-- **Use HTTPS**—If the Commerce site is newly implemented, strongly consider launching the entire site using HTTPS. Not only does Google use HTTPS as a ranking factor, but also many users will not even consider purchasing from a site that is not secured with HTTPS.
+- **Use HTTPS**—If the Commerce site is newly implemented, launch the entire site using HTTPS. Not only does Google use HTTPS as a ranking factor, but many users do not even consider purchasing from a site unless it is secured with HTTPS.
 
 ## Protect against malware
 
@@ -149,9 +150,9 @@ Malware attacks targeting ecommerce sites are all too common, and threat actors 
 
 However, Adobe has found that most site compromises are not due to an innovative hacker. Rather, threat actors often take advantage of existing, unpatched vulnerabilities, poor passwords, and weak ownership and permission settings in the file system.
 
-In the most commonly experienced form of attack, malicious code is injected into the absolute header or absolute footer of a customer store. There, the code collects form data entered by the end user into the front end of the store, including customer login credentials and checkout form data, and sends it to another location for malicious purposes rather than to the Commerce backend. Additionally, depending on the method used to inject the malware into the Commerce site, the admin panel may be compromised as well, allowing the malware to replace the original payment form with an identical-looking fake form to override any protections set by the payment provider.
+In the most commonly experienced attacks, malicious code is injected into the absolute header or absolute footer of a customer store. There, the code collects form data that a customer enters in the storefront, including customer login credentials and checkout form data. Then, this data is sent to another location for malicious purposes rather than to the Commerce backend. Depending on the method used to inject the malware into the Commerce site, the Admin panel can also be compromised so that the malware can replace the original payment form with a fake form that overrides any protections set by the payment provider.
 
-Client-side credit card skimmers are a type of malware that is embedded into a merchant's website content and can execute in a user's browser. After certain actions occur, such as the user submits a form or a text box changes, the skimmer serializes the data and sends it to third-party endpoints, which are typically other compromised websites that act as a relay to send the data to its final destination.
+Client-side credit card skimmers are a type of malware that embeds code into merchant website content that can executed in a user's browser. After certain actions occur such as a user submitting a form or modifying a field value, the skimmer serializes the data and sends it to third-party endpoints. These endpoints are typically other compromised websites that act as a relay to send the data to its final destination.
 
 [Insert graphic -- check with Emily about getting original high-res image]
 
@@ -163,23 +164,23 @@ Below is a list of common categories of attacks that Adobe recommends all Commer
 
 - **Site defacing**— While access to the site and user accounts may be compromised, payment information often remains secure.
 
-- **Botnets**—The customer's Commerce server becomes part of a botnet that sends spam email. Although user data is not typically compromised, the customer's domain name may be blacklisted by spam filters, preventing delivery of any email from the domain. Alternatively, the customer's site becomes part of a botnet causing a distributed denial of service (DDOS) attack on another site/s. The botnet may block inbound IP traffic to the Commerce server, preventing customers from being able to shop.
+- **Botnets**—The customer's Commerce server becomes part of a botnet that sends spam email. Although user data is not typically compromised, the customer's domain name might be blocklisted by spam filters, preventing delivery of any email from the domain. Alternatively, the customer's site becomes part of a botnet causing a distributed denial of service (DDOS) attack on another site/s. The botnet may block inbound IP traffic to the Commerce server, preventing customers from being able to shop.
 
 - **Direct server attacks**—Data is compromised, backdoors and malware are installed, and site operations are affected. Payment information---provided that it is not stored on the server--- is less likely to be compromised through these attacks.
 
-- **Silent card capture**—In this most disastrous attack, intruders install hidden malware or card capture software, or worse, modify the checkout process to collect credit card data and redirect it to another site for sale on the dark web. Such attacks can go unnoticed for extended periods of time and can result in major compromise of customer accounts and financial information.
+- **Silent card capture**—In this most disastrous attack, intruders install hidden malware or card capture software, or worse, modify the checkout process to collect credit card data and send it to another site for sale on the dark web. Such attacks can go unnoticed for an extended time period and can result in major compromise of customer accounts and financial information.
 
-- **Silent keylogging**—The threat actor installs key logging code on the customer's server in order to gather admin user credentials and then perform other attacks in a non- suspicious way.
+- **Silent keylogging**—The threat actor installs key logging code on the customer server to gather Admin user credentials so they can log in and launch other attacks without being detected.
 
 ### Protect against password guessing attacks
 
-Brute force password guessing attacks can result in unauthorized Admin panel access. Follow these best practices to protect your site from these attacks:
+Brute force password guessing attacks can result in unauthorized Admin panel access. Protect your site from these attacks by following these best practices:
 
 1. Identify and protect all points where the Commerce installation can be accessed from the outside world.
 
    You can secure access to the Admin panel, which generally requires the most protection, by following Adobe's [priority recommendations](#priority-recommendations) when configuring your Commerce project.
 
-1. Only allow users coming from a specified IP address or network to access the Commerce site by setting up an access control list.
+1. Control access to the Commerce site by setting up an access control list that only allows access to users coming from a specified IP address or network.
 
    You can use a Fastly Edge ACL list with a custom VCL code snippet to filter incoming requests and allow access by IP address. See [Custom VCL for allowing requests](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
@@ -191,10 +192,6 @@ Brute force password guessing attacks can result in unauthorized Admin panel acc
 ### Prevent click jacking exploits
 
 Adobe safeguards your store from click jacking attacks by using an `X-Frame-Options` HTTP request header.
-
-
-
-
 
 
 
