@@ -102,7 +102,7 @@ mini-toc-levels: 3
     - [Modifying database tables](best-practices/development/modifying-core-and-third-party-tables.md)   
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
-    - [Configure the robots.txt file](best-practices/launch/robots-txt.md)
+    - [Configure web crawlers](best-practices/launch/robots-txt.md)
     - [Prevent and respond to security incidents](best-practices/launch/prevent-respond-security-incident.md)
   - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)

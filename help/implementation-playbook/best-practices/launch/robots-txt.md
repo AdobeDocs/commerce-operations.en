@@ -1,13 +1,14 @@
 ---
-title: Best practices for configuring `robots.txt` and `sitemap.xml` files
-description: Learn how to pass instructions about your Adobe Commerce site to web crawlers.
+title: Best practices for configuring web crawlers
+description: Learn how to pass instructions about your Adobe Commerce site to web crawlers using `robots.txt` and `sitemap.xml` files.
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
 ---
-# Best practices for configuring `robots.txt` and `sitemap.xml` files
 
-This article provides best practices for using `robots.txt` and `sitemap.xml` files in Adobe Commerce, including configuration and security. These files instruct web robots (typically search engine robots) how to crawl pages on a website. Configuring these files can improve site performance and search engine optimization.
+# Best practices for configuring web crawlers
+
+This article provides best practices for using `robots.txt` and `sitemap.xml` files in Adobe Commerce, including configuration and security. These files instruct web crawlers (typically search engine robots) how to crawl pages on a website. Configuring these files can improve site performance and search engine optimization.
 
 >[!NOTE]
 >
