@@ -93,7 +93,7 @@ mini-toc-levels: 3
     - [Overview](best-practices/launch/overview.md)
     - [Configure web crawlers](best-practices/launch/robots-txt.md)
     - [Security best practices](best-practices/launch/security-best-practices.md)
-    - [Respond to security incidents](best-practices/launch/prevent-respond-security-incident.md)
+    - [Prevent and respond to security incidents](best-practices/launch/prevent-respond-security-incident.md)
   - Maintenance {#maintenance} 
     - [Overview](best-practices/maintenance/overview.md)
     - [Audit frontend performance](best-practices/maintenance/frontend-performance.md)

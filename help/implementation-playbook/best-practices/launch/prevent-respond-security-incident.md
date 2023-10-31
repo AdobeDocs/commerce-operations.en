@@ -1,6 +1,6 @@
 ---
-title: Respond to a security incident
-description: Learn about best practices to respond to security incidents that affect Adobe Commerce sites
+title: Prevent and respond to a security incident
+description: Learn about best practices to prevent and respond to security incidents that affect Adobe Commerce sites
 role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
