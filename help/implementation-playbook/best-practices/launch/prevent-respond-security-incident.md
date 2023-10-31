@@ -7,7 +7,7 @@ exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 ---
 # Best practices to help prevent and respond to a security incident
 
-Adobe Commerce security operates under a [Shared Responsibility](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) model. It is key to understand what Adobe and your technical teams are responsible for. The following article summarizes security best practices to ensure that your project has the best security controls in place, and that you can plan the best response to security incidents.
+Adobe Commerce security operates under a [Shared Responsibility](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) model. It is key to understand what Adobe and your technical teams are responsible for. The following article summarizes best practices to ensure that your project has the best security controls in place, and that you can plan the best response to security incidents.
 
 ## Affected products and versions
 
@@ -17,13 +17,20 @@ Adobe Commerce security operates under a [Shared Responsibility](https://www.ado
 
 ## Respond to an incident
 
-If you suspect that your Adobe Commerce on cloud infrastructure project is impacted by a security incident, it is important to audit all admin user account access, enable advanced multi-factor authentication (MFA) controls, preserve critical logs, and review security upgrades for your version of Adobe Commerce.
+If you suspect that your Adobe Commerce on cloud infrastructure project is impacted by a security incident, critical first steps are:
 
-More recommendations are detailed below. Following these recommendations can help prevent unauthorized access. It also helps you plan and prepare for the root cause analysis and remediation process in the event that a security incident does occur.
+- Audit all admin user account access
+- Enable advanced multi-factor authentication (MFA) controls
+- Preserve critical logs
+- Review security upgrades for your version of Adobe Commerce.
 
-## How to prevent security incidents
+More recommendations are detailed below.
 
-Review and follow Adobe security best practices recommendations when setting up, configuring, updating, and patching Adobe Commerce installations. See [Security Best Practices](security-best-practices.md).
+Following these best practices can help prevent unauthorized access and malware attacks. If a security incident does occur, these best practices help you prepare for an immediate response, root cause analysis, and the remediation process to restore normal operatiopns.
+
+## Prevent security incidents
+
+Review and follow Adobe security best practices when setting up, configuring, and updating Adobe Commerce installations. See [Security Best Practices](security-best-practices.md).
 
 ## Take immediate action in the event of an attack
 
@@ -47,7 +54,7 @@ In the unfortunate event of a site compromise, here are some key recommendations
 
 ## Analyze an incident
 
-The first step of incident analysis is to gather as many facts as you can, as quickly as you can. Gathering information surrounding the incident can help you determine the potential cause of the incident. Adobe Commerce provides the tools below to assist with your incident analysis.
+The first step of incident analysis is to gather as many facts as possible, as quickly as you can. Gathering information surrounding the incident can help determine the potential cause of the incident. Adobe Commerce provides the tools below to assist with your incident analysis.
 
 - [Audit Admin Action Logs](https://docs.magento.com/user-guide/system/action-log-report.html).
 
@@ -69,7 +76,7 @@ The first step of incident analysis is to gather as many facts as you can, as qu
 
 ## Audit accounts, code, and database
 
-Review Commerce Admin and user accounts, application code, and database configuration and logs to identify and cleanup suspicious elements, remove obsolete accounts, reset passwords, check access control configuration, and redeploy code as needed.
+Review Commerce Admin and user accounts, application code, and database configuration and logs to identify and cleanup suspicious code, remove obsolete accounts, reset passwords, check access control configuration, and redeploy code as needed.
 
 Continue to closely monitor the site after the incident as many sites get compromised again within hours. Ensure ongoing log review and file integrity monitoring to quickly detect any signs of new compromise.
 
