@@ -58,17 +58,17 @@ Use the [Commerce Security Scan service](https://experienceleague.adobe.com/docs
 
 ## Ensure security of extensions and custom code
 
-When you extend Adobe Commerce by adding third-party extensions available from the Adobe Commerce marketplace, or add custom code developed in house or in collaboration with an Adobe partner or system integrator (SI), ensure the security of these customizations by applying the following best practices:
+When you extend Adobe Commerce by adding third-party extensions from the Adobe Commerce marketplace, or add custom code, ensure the security of these customizations by applying the following best practices:
 
 - **Choose a partner or solution integrator (SI) well-versed in security**
 
-  Select organizations with a solid track record of dealing with security issues, demonstrated adherence to secure development practices, and a history of delivering secure custom code.
+  Ensure secure integrations and secure delivery of custom code by selecting organizations that follow secure development practices and have a solid track record of preventing and addressing security issues.
 
-- **Use secure extensions**—Consult your solution integrator or developer to identify the most appropriate and secure extensions for Commerce deployments following [Adobe Extensions best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/extensions.html).
+- **Use secure extensions**—Identify the most appropriate and secure extensions for Commerce deployments by consulting with your solution integration or developer and following [Adobe Extensions best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/extensions.html).
 
   - Only source extensions from the Adobe Commerce Marketplace or through the solution integrator. If the extension is sourced through an integrator, ensure that ownership of the extension license is transferrable, in case the integrator changes.
 
-  - Limit the number of extensions and vendor to reduce risk exposure.
+  - Reduce risk exposure by limiting the number of extensions and vendors.
 
   - If possible, review extension code for security before integrating with the Commerce application.
 
@@ -86,21 +86,21 @@ See the following resources for information about available Adobe Commerce versi
 
 - [Released Versions](../../../release/versions.md)
 - [Product Availability](../../../release/product-availability.md) (Adobe Commerce services and Adobe-authored extensions)
-- [Adobe Commerce Lifecycle policy](../../../release/planning/lifecycle-policy.md)
+- [Adobe Commerce Lifecycle policy](../../../release/lifecycle-policy.md)
 - [Upgrade Guide](../../../upgrade/overview.md)
 - [How to apply patches](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/patches/overview.md)
 
 >[!TIP]
 >
->Subscribe to the [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) to get the latest security information and instructions to maintain the security of the Adobe Commerce solution.
+>Maintain the security of the Adobe Commerce solution by subscribing to the [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) to get the latest security information and instructions to mitigate against known security issues.
 
 ## Develop a disaster recovery plan
 
-Develop a comprehensive disaster recovery plan. Having a plan in place helps control damage and restore normal business operations quickly if the security of Commerce sites and data is compromised.
+Develop a comprehensive disaster recovery plan to control damage and restore normal business operations quickly if the security of Commerce sites and data is compromised.
 
 If a customer requires restoration of Commerce instance due to a disaster, Adobe can provide the customer with backup files. The customer and solution integrator, if applicable, can perform the restore.
 
-As part of a disaster recovery plan, Adobe highly recommends that customers [export their Adobe Commerce application configuration](../../../configuration/cli/export-configuration.mdconfiguration/) to ease redeployment if it is required for business continuity purposes. The primary reason to export the configuration to the file system is that the system configuration takes precedence over the database configuration. In a read-only file system, the application must be redeployed to change sensitive configuration settings, providing an extra layer of protection.
+As part of a disaster recovery plan, Adobe highly recommends that customers [export their Adobe Commerce application configuration](../../../configuration/cli/export-configuration.md) to ease redeployment if it is required for business continuity purposes. The primary reason to export the configuration to the file system is that the system configuration takes precedence over the database configuration. In a read-only file system, the application must be redeployed to change sensitive configuration settings, providing an extra layer of protection.
 
 Learn more about planning for backup and disaster recovery:
 
@@ -129,25 +129,6 @@ Learn more about planning for backup and disaster recovery:
 - **[Review user accounts for Adobe Commerce on cloud infrastructure projects](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)**—Remove old, unused, or suspicious accounts and rotate passwords for all cloud project Admin users. Ensure that account security settings are configured correctly.
 
 - **Audit [SSH keys](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) for Adobe Commerce on cloud infrastructure**—Review, delete, and rotate SSH keys.
-
-### Take immediate action in the event of an attack
-
-<!--This content overlaps with the content on prevent and respond to security incident. Need to combine with that topic and leave a general list here with links to the other topic.-->
-
-In the unfortunate event of a site compromise, here are some key recommendations customers may wish to follow:
-
-- Engage your system integrator and appropriate security personnel to conduct investigation and remediation efforts.
-
-- Determine the scope of the attack:
-  - Was credit card information accessed?
-  - What information was stolen?
-  - How much time has elapsed since the compromise?
-  - Was the information encrypted?
-
-- Try to find the attack vector to determine when and how the site was compromised, by reviewing server log files and file changes.
-  - In certain circumstances, it may be advisable to wipe and reinstall everything or, in the case of virtual hosting, create a new instance. Malware could be hidden in an unsuspected location just waiting to restore itself.
-  - Remove all unnecessary files. Then reinstall all required files from a known, clean source, such as files from your own version control system or the original distribution files from Adobe.
-  - Reset all credentials, including the database, file access, payment and shipping integrations, web services, and Admin login. Also reset all integration and API keys as well as accounts that might be used to attack the system.
 
 ## Maintain a secure site and infrastructure
 
@@ -190,7 +171,7 @@ Below is a list of common categories of attacks that Adobe recommends all Commer
 
 - **Silent keylogging**—The threat actor installs key logging code on the customer's server in order to gather admin user credentials and then perform other attacks in a non- suspicious way.
 
-### Protect against Password guessing attacks
+### Protect against password guessing attacks
 
 Brute force password guessing attacks can result in unauthorized Admin panel access. Follow these best practices to protect your site from these attacks:
 
@@ -207,9 +188,10 @@ Brute force password guessing attacks can result in unauthorized Admin panel acc
     >
     >If you employ a remote workforce, ensure that the IP addresses of remote employees are included in the list of addresses with permission to access the Commerce site.
 
-### Prevent Clickjacking Exploits
+### Prevent click jacking exploits
 
-Adobe safeguards your store from clickjacking attacks by using an `X-Frame-Options` HTTP request header.
+Adobe safeguards your store from click jacking attacks by using an `X-Frame-Options` HTTP request header.
+
 
 
 
