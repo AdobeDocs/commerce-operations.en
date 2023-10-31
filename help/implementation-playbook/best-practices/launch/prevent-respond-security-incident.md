@@ -1,6 +1,6 @@
 ---
 title: Prevent and respond to a security incident
-description: Learn about best practices to prevent and respond to security incidents that affect Adobe Commerce sites
+description: Prevent and respond to security incidents that affect Adobe Commerce sites by following best practices to secure site, infrastructure, and data and develop a plan to respond to and remediate security incidents if the occur.
 role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
@@ -26,7 +26,7 @@ If you suspect that your Adobe Commerce on cloud infrastructure project is impac
 
 More recommendations are detailed below.
 
-Following these best practices can help prevent unauthorized access and malware attacks. If a security incident does occur, these best practices help you prepare for an immediate response, root cause analysis, and the remediation process to restore normal operatiopns.
+Following these best practices can help prevent unauthorized access and malware attacks. If a security incident does occur, these best practices help you prepare for an immediate response, root cause analysis, and the remediation process to restore normal operations.
 
 ## Prevent security incidents
 
@@ -64,7 +64,7 @@ The first step of incident analysis is to gather as many facts as possible, as q
 
   The Observation for Adobe Commerce tool allows you to analyze complex problems to help identify root causes. Instead of tracking disparate data, you can spend your time correlating events and errors to gain deeper insights into the causes of performance bottlenecks.
 
-  Use the **Security** tab in the tool to get a clear view of potential security issues to help identify root causes and keep sites performing optimally.  **Security** tab.
+  Use the **Security** tab in the tool to get a clear view of potential security issues to help identify root causes and keep sites performing optimally.
 
 - Analyze logs with [New Relic Logs](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs)
 
@@ -76,7 +76,7 @@ The first step of incident analysis is to gather as many facts as possible, as q
 
 ## Audit accounts, code, and database
 
-Review Commerce Admin and user accounts, application code, and database configuration and logs to identify and cleanup suspicious code, remove obsolete accounts, reset passwords, check access control configuration, and redeploy code as needed.
+Review Commerce Admin and user accounts, application code, and database configuration and logs to identify and clean up suspicious code, remove obsolete accounts, reset passwords, check access control configuration, and redeploy code as needed.
 
 Continue to closely monitor the site after the incident as many sites get compromised again within hours. Ensure ongoing log review and file integrity monitoring to quickly detect any signs of new compromise.
 
@@ -92,7 +92,7 @@ Continue to closely monitor the site after the incident as many sites get compro
 
 ### Audit code
 
-- From the Admin, review the [HTML Header and Footer configuration](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) in all scope levels, including `website` and `store view`. Remove any unknown JavaScript code from the scripts and stylesheets, and miscellaneous HTML settings. Retain only recognized code such as tracking snippets.
+- From the Admin, review the [HTML Header and Footer configuration](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) in all scope levels, including `website` and `store view`. Remove any unknown JavaScript code from the scripts and style sheets, and miscellaneous HTML settings. Retain only recognized code such as tracking snippets.
 
 - Compare the current production code base to the code base stored in the Version Control System (VCS).
 
@@ -106,7 +106,7 @@ Continue to closely monitor the site after the incident as many sites get compro
 
 - Verify that the database is only accessible by the Commerce instance.
 
-- Verify the malware is no longer present by scanning the site with publicly available malware scanning tools.
+- Verify that malware is no longer present by scanning the site with publicly available malware scanning tools.
 
 - Secure the Admin panel by changing its name and verifying that the site `app/etc/local. xml` and `var` URLs are not publicly accessible.
 
@@ -118,11 +118,11 @@ If the site has been flagged by Google as containing malicious code, request a r
 
 ## Review malware results checklist
 
-If publicly available malware scanning tools confirm a malware attack, investigate the incident. Work with the solution integrator to clean the site and follow recommended the remediation process.
+If publicly available malware scanning tools confirm a malware attack, investigate the incident. Work with the solution integrator to clean the site and follow the recommended remediation process.
 
 ## Conduct additional reviews
 
-When dealing with sophisticated attacks, the best course of action is to work with an experienced developer, third-party expert, or solution integrator to fully repair the site and review security practices. Working with a security professional ensures that comprehensive and advanced measures are taken to ensure the safety of your business and its customers.
+When dealing with sophisticated attacks, the best course of action is to work with an experienced developer, third-party expert, or solution integrator to fully repair the site and review security practices. Working with experienced security professionals ensures that comprehensive, advanced measures are taken to ensure the safety of your business and its customers.
 
 ## Additional information
 

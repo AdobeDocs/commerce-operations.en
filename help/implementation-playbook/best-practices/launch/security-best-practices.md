@@ -24,7 +24,7 @@ Although you cannot eliminate all security risks, applying these best practices 
 
 Adobe considers the following recommendations to be of highest priority for all customers. Implement these key security best practices in all Commerce deployments:
 
-![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Enable two-factor authentication for your admin panel and all SSH connections**
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Enable two-factor authentication for your Admin and all SSH connections**
 
 - [Security for Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
@@ -92,7 +92,7 @@ See the following resources for information about available Adobe Commerce versi
 
 >[!TIP]
 >
->Get the latest security information and instructions to mitigate against known security issues by subscribing to the [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
+>Get the latest security information and mitigate against known security issues by subscribing to the [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
 
 ## Develop a disaster recovery plan
 
@@ -150,7 +150,7 @@ Malware attacks targeting ecommerce sites are all too common, and threat actors 
 
 However, Adobe has found that most site compromises are not due to an innovative hacker. Rather, threat actors often take advantage of existing, unpatched vulnerabilities, poor passwords, and weak ownership and permission settings in the file system.
 
-In the most commonly experienced attacks, malicious code is injected into the absolute header or absolute footer of a customer store. There, the code collects form data that a customer enters in the storefront, including customer login credentials and checkout form data. Then, this data is sent to another location for malicious purposes rather than to the Commerce backend. Depending on the method used to inject the malware into the Commerce site, the Admin panel can also be compromised so that the malware can replace the original payment form with a fake form that overrides any protections set by the payment provider.
+In the most commonly experienced attacks, malicious code is injected into the absolute header or absolute footer of a customer store. There, the code collects form data that a customer enters in the storefront, including customer login credentials and checkout form data. Then, this data is sent to another location for malicious purposes rather than to the Commerce backend. Also, malware can compromise the Admin to execute code that replaces the original payment form with a fake form that overrides any protections set by the payment provider.
 
 Client-side credit card skimmers are a type of malware that embeds code into merchant website content that can executed in a user's browser. After certain actions occur such as a user submitting a form or modifying a field value, the skimmer serializes the data and sends it to third-party endpoints. These endpoints are typically other compromised websites that act as a relay to send the data to its final destination.
 
@@ -166,19 +166,19 @@ Below is a list of common categories of attacks that Adobe recommends all Commer
 
 - **Botnets**—The customer's Commerce server becomes part of a botnet that sends spam email. Although user data is not typically compromised, the customer's domain name might be blocklisted by spam filters, preventing delivery of any email from the domain. Alternatively, the customer's site becomes part of a botnet causing a distributed denial of service (DDOS) attack on another site/s. The botnet may block inbound IP traffic to the Commerce server, preventing customers from being able to shop.
 
-- **Direct server attacks**—Data is compromised, backdoors and malware are installed, and site operations are affected. Payment information---provided that it is not stored on the server--- is less likely to be compromised through these attacks.
+- **Direct server attacks**—Data is compromised, backdoors and malware are installed, and site operations are affected. Payment information that is not stored on the server is less likely to be compromised through these attacks.
 
-- **Silent card capture**—In this most disastrous attack, intruders install hidden malware or card capture software, or worse, modify the checkout process to collect credit card data and send it to another site for sale on the dark web. Such attacks can go unnoticed for an extended time period and can result in major compromise of customer accounts and financial information.
+- **Silent card capture**—In this most disastrous attack, intruders install hidden malware or card capture software, or worse, modify the checkout process to collect credit card data. Then, the data is sent to another site for sale on the dark web. Such attacks can go unnoticed for an extended time period and can result in major compromise of customer accounts and financial information.
 
 - **Silent keylogging**—The threat actor installs key logging code on the customer server to gather Admin user credentials so they can log in and launch other attacks without being detected.
 
 ### Protect against password guessing attacks
 
-Brute force password guessing attacks can result in unauthorized Admin panel access. Protect your site from these attacks by following these best practices:
+Brute force password guessing attacks can result in unauthorized Admin access. Protect your site from these attacks by following these best practices:
 
 1. Identify and protect all points where the Commerce installation can be accessed from the outside world.
 
-   You can secure access to the Admin panel, which generally requires the most protection, by following Adobe's [priority recommendations](#priority-recommendations) when configuring your Commerce project.
+   You can secure access to the Admin, which generally requires the most protection, by following Adobe's [priority recommendations](#priority-recommendations) when configuring your Commerce project.
 
 1. Control access to the Commerce site by setting up an access control list that only allows access to users coming from a specified IP address or network.
 
