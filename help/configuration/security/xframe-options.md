@@ -1,6 +1,6 @@
 ---
 title: Prevent Clickjacking Exploits
-description: Prevent click jacking exploits by using the `X-Frame-Options` header to control page renderings.
+description: Prevent clickjacking exploits by using the `X-Frame-Options` header to control page renderings.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
 ---

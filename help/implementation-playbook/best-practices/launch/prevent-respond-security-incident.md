@@ -1,6 +1,6 @@
 ---
 title: Prevent and respond to a security incident
-description: Prevent and respond to security incidents that affect Adobe Commerce sites by following best practices to secure site, infrastructure, and data and develop a plan to respond to and remediate security incidents if the occur.
+description: Prevent and respond to security incidents by following best practices to secure Commerce installations and develop a plan to respond to and remediate security incidents if they occur.
 role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
