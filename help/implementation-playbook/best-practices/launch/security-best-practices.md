@@ -48,7 +48,7 @@ Keep your code updated by [upgrading your Commerce project to the latest release
 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Secure sensitive configuration values**
 
-Use [configuration management](../../../configuration/cli/configuration/set-configuration-values.md) to lock critical configuration values.
+Use [configuration management](../../../configuration/cli/set-configuration-values.md) to lock critical configuration values.
 
 The `lock config` and `lock env` CLI commands configure environment variables to prevent them from being updated from the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file. (For Commerce on cloud infrastructure projects, see [Store Configuration Management](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
 
@@ -100,19 +100,19 @@ If a customer requires restoration of a Commerce instance due to a disaster, Ado
 
 As part of a disaster recovery plan, Adobe highly recommends that customers [export their Adobe Commerce application configuration](../../../configuration/cli/export-configuration.md) to ease redeployment if it is required for business continuity purposes. The primary reason to export the configuration to the file system is that the system configuration takes precedence over the database configuration. In a read-only file system, the application must be redeployed to change sensitive configuration settings, providing an extra layer of protection.
 
-Learn more about planning for backup and disaster recovery:
+### Additional information
 
-- Adobe Commerce deployed on cloud infrastructure:
+**Adobe Commerce deployed on cloud infrastructure**
 
-  - [Backup and disaster recovery](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
+- [Backup and disaster recovery](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
 
-  - [Store configuration management for Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
+- [Store configuration management for Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
 
-- Adobe Commerce deployed on premises:
+**Adobe Commerce deployed on premises**
 
-  - [Disaster recovery ideas](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
+- [Disaster recovery ideas](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
 
-  - [Backup and recovery](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
+- [Backup and recovery](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
 
 - [Export configuration settings](../../../configuration/cli/export-configuration.md)
 
