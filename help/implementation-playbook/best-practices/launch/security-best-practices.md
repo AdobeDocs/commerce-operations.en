@@ -48,7 +48,7 @@ Keep your code updated by [upgrading your Commerce project to the latest release
 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Secure sensitive configuration values**
 
-Use [configuration management](../../../configuration/cli/configuration-management/set-configuration-values.md) to lock critical configuration values.
+Use [configuration management](../../../configuration/cli/configuration/set-configuration-values.md) to lock critical configuration values.
 
 The `lock config` and `lock env` CLI commands configure environment variables to prevent them from being updated from the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file. (For Commerce on cloud infrastructure projects, see [Store Configuration Management](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
 
