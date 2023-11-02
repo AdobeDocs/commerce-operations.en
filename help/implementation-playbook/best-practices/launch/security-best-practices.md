@@ -1,13 +1,13 @@
 ---
 title: Security Best Practices
-description: Maintain security of your Commerce store, Admin, and infrastructure, and data by implementing security best practices when setting up, configuring, and updating Adobe Commerce projects.
+description: Maintain security by implementing security best practices when setting up, configuring, and updating Adobe Commerce installations.
 role: Admin, Developer, Leader, User
 feature: Best Practices
 ---
 
 # Security Best Practices
 
-Establishing and maintaining a secure environment for Adobe Commerce projects deployed on Cloud infrastructure is a responsibility that is shared between Adobe Commerce customers and solution partners and Adobe. The intent of this guide is to provide best practices for the customer's side of the equation.
+Establishing and maintaining a secure environment for Adobe Commerce projects deployed on cloud infrastructure is a responsibility that is shared between Adobe Commerce customers, solution partners, and Adobe. The intent of this guide is to provide best practices for the customer's side of the equation.
 
 Although you cannot eliminate all security risks, applying these best practices hardens the security posture of Commerce installations. A secure site and infrastructure makes a less attractive target for malicious attacks, ensures the security of the solution and customers' sensitive information, and helps minimize security-related incidents that can cause site disruptions and costly investigations.
 
@@ -34,7 +34,7 @@ When MFA is enabled on a project, all Adobe Commerce on cloud infrastructure acc
 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Secure the Admin**
 
-- [Configure a non-default admin URL](https://docs.magento.com/user-guide/stores/store-urls-custom-admin.html) instead of using the default `admin` or a common term such as `backend`. This configuration reduces exposure to scripts that attempt to gain unauthorized access to your site.
+- [Configure a non-default admin URL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url) instead of using the default `admin` or a common term such as `backend`. This configuration reduces exposure to scripts that attempt to gain unauthorized access to your site.
 
 - [Configure Advanced security settings](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—Add a secret key to URLs, require passwords to be case-sensitive, and limit Admin session length, password lifetime interval, and the number of login attempts allowed before locking an Admin user account. For increased security, configure the length of keyboard inactivity before the current session expires, and require the username and password to be case-sensitive.
 
@@ -48,9 +48,9 @@ Keep your code updated by [upgrading your Commerce project to the latest release
 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Secure sensitive configuration values**
 
-Use [configuration management](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values.html) to lock critical configuration values.
+Use [configuration management](../../../configuration/cli/configuration-management/set-configuration-values.md) to lock critical configuration values.
 
-The `lock config` and `lock env` CLI commands configure environment variables to prevent them from being updated from the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file. (For Commerce on cloud infrastructure projects, see [Store Configuration Management](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=en#sensitive-data).)
+The `lock config` and `lock env` CLI commands configure environment variables to prevent them from being updated from the Admin. The command writes the value to the `<Commerce base dir>/app/etc/env.php` file. (For Commerce on cloud infrastructure projects, see [Store Configuration Management](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Run security scans**
 
@@ -58,27 +58,25 @@ Use the [Commerce Security Scan service](https://experienceleague.adobe.com/docs
 
 ## Ensure security of extensions and custom code
 
-When you extend Adobe Commerce by adding third-party extensions from the Adobe Commerce marketplace, or add custom code, ensure the security of these customizations by applying the following best practices:
+When you extend Adobe Commerce by adding third-party extensions from the Adobe Commerce Marketplace, or add custom code, ensure the security of these customizations by applying the following best practices:
 
-- **Choose a partner or solution integrator (SI) well versed in security**
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Choose a partner or solution integrator (SI) well versed in security**—Ensure secure integrations and secure delivery of custom code by selecting organizations that follow secure development practices and have a solid track record of preventing and addressing security issues.
 
-  Ensure secure integrations and secure delivery of custom code by selecting organizations that follow secure development practices and have a solid track record of preventing and addressing security issues.
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Use secure extensions**—Identify the most appropriate and secure extensions for Commerce deployments by consulting with your solution integrator or developer and following [Adobe Extensions best practices](../planning/extensions.md).
 
-- **Use secure extensions**—Identify the most appropriate and secure extensions for Commerce deployments by consulting with your solution integration or developer and following [Adobe Extensions best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/extensions.html).
+- Only source extensions from the Adobe Commerce Marketplace or through the solution integrator. If the extension is sourced through an integrator, ensure that ownership of the extension license is transferrable, in case the integrator changes.
 
-  - Only source extensions from the Adobe Commerce Marketplace or through the solution integrator. If the extension is sourced through an integrator, ensure that ownership of the extension license is transferrable, in case the integrator changes.
+- Reduce risk exposure by limiting the number of extensions and vendors.
 
-  - Reduce risk exposure by limiting the number of extensions and vendors.
+- If possible, review extension code for security before integrating with the Commerce application.
 
-  - If possible, review extension code for security before integrating with the Commerce application.
+- Ensure that PHP extension developers follow Adobe Commerce development guidelines, processes, and security best practices. Specifically, developers must avoid using PHP capabilities that can lead to remote code execution or weak cryptography. See [Security](https://developer.adobe.com/commerce/php/best-practices/security/) in the *Best Practices for Extension Developers Guide*.
 
-  - Ensure that PHP extension developers follow Adobe Commerce development guidelines, processes, and security best practices. Specifically, developers must avoid using PHP capabilities that can lead to remote code execution or weak cryptography. See [Security](https://developer.adobe.com/commerce/php/best-practices/security/) in the *Best Practices for Extension Developers Guide*.
-
-- **Audit code**—Review your server and source code repository for development leftovers. Ensure that there are no accessible log files, publicly visible .git directories, tunnels to execute SQL, database dumps, php info files, or any other unprotected files that are not required, and that might be used in an attack.
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Audit code**—Review your server and source code repository for development leftovers. Ensure that there are no accessible log files, publicly visible .git directories, tunnels to execute SQL statements, database dumps, php info files, or any other unprotected files that are not required, and that might be used in an attack.
 
 ## Upgrade to the latest release
 
-Adobe continually releases updated solution components to improve security and better protect customers against possible compromise. Upgrading to the latest version of the Adobe Commerce application, installed services, and extensions as well applying current patches is the first and best line of defense against security threats.
+Adobe continually releases updated solution components to improve security and better protect customers against possible compromise. Upgrading to the latest version of the Adobe Commerce application, installed services, and extensions and applying current patches is the first and best line of defense against security threats.
 
 Commerce typically releases security updates on a quarterly basis but reserves the right to release hotfixes for major security threats based on priority and other factors.
 
@@ -86,9 +84,9 @@ See the following resources for information about available Adobe Commerce versi
 
 - [Released Versions](../../../release/versions.md)
 - [Product Availability](../../../release/product-availability.md) (Adobe Commerce services and Adobe-authored extensions)
-- [Adobe Commerce Lifecycle policy](../../../release/lifecycle-policy.md)
+- [Adobe Commerce lifecycle policy](../../../release/lifecycle-policy.md)
 - [Upgrade Guide](../../../upgrade/overview.md)
-- [How to apply patches](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/patches/overview.md)
+- [How to apply patches](../../../upgrade/patches/overview.md)
 
 >[!TIP]
 >
@@ -96,9 +94,9 @@ See the following resources for information about available Adobe Commerce versi
 
 ## Develop a disaster recovery plan
 
-Control damage and restore normal business operations quickly if the security of Commerce sites and data is compromised by developing a comprehensive disaster recovery plan.
+If your Commerce site is compromised, control damage and restore normal business operations quickly by developing and implementing a comprehensive disaster recovery plan.
 
-If a customer requires restoration of Commerce instance due to a disaster, Adobe can provide the customer with backup files. The customer and solution integrator, if applicable, can perform the restore.
+If a customer requires restoration of a Commerce instance due to a disaster, Adobe can provide the customer with backup files. The customer and solution integrator, if applicable, can perform the restore.
 
 As part of a disaster recovery plan, Adobe highly recommends that customers [export their Adobe Commerce application configuration](../../../configuration/cli/export-configuration.md) to ease redeployment if it is required for business continuity purposes. The primary reason to export the configuration to the file system is that the system configuration takes precedence over the database configuration. In a read-only file system, the application must be redeployed to change sensitive configuration settings, providing an extra layer of protection.
 
@@ -112,37 +110,29 @@ Learn more about planning for backup and disaster recovery:
 
 - Adobe Commerce deployed on premises:
 
+  - [Disaster recovery ideas](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
+
   - [Backup and recovery](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
 
-  - [Export configuration settings](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration.html)
+- [Export configuration settings](../../../configuration/cli/export-configuration.md)
 
-  - [Import configuration settings](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration.html?lang=en)
+  - [Import configuration settings](../../../configuration/cli/import-configuration.md)
 
-  - [Backup and rollback the file system, media, and database](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html)
-
-## Manage and audit access to Commerce sites, the Admin, and cloud infrastructure projects
-
-- **[Review Admin user access](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)**—Remove old, unused, or suspicious accounts and rotate passwords for all Admin users.
-
-- **[Review Admin security settings](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)**—Verify that Admin security settings follow security best practices.
-
-- **[Review user accounts for Adobe Commerce on cloud infrastructure projects](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)**—Remove old, unused, or suspicious accounts and rotate passwords for all cloud project Admin users. Ensure that account security settings are configured correctly.
-
-- **Audit [SSH keys](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) for Adobe Commerce on cloud infrastructure**—Review, delete, and rotate SSH keys.
+  - [Backup and rollback the file system, media, and database](../../../installation/tutorials/backup.md)
 
 ## Maintain a secure site and infrastructure
 
-This section summarizes best practices for maintaining site and infrastructure security for an Adobe Commerce installation secure. Many of these best practices focus on securing the computer infrastructure in general, so some of the recommendations might already be implemented.
+This section summarizes best practices for maintaining site and infrastructure security for an Adobe Commerce installation. Many of these best practices focus on securing the computer infrastructure in general, so some of the recommendations might already be implemented.
 
-- **Block unauthorized access**—Work with your hosting partner to set up a VPN tunnel to block unauthorized access to the Commerce site and customer data. Set up an SSH tunnel to protect unauthorized access to the Commerce application.
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Block unauthorized access**—Work with your hosting partner to set up a VPN tunnel to block unauthorized access to the Commerce site and customer data. Set up an SSH tunnel to block unauthorized access to the Commerce application.
 
-- **Use a Web Application Firewall**—Analyze traffic and discover suspicious patterns, such as credit card information being sent to an unknown IP address by using a Web Application Firewall.
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Use a Web Application Firewall**—Analyze traffic and discover suspicious patterns, such as credit card information being sent to an unknown IP address by using a Web Application Firewall.
 
-  Adobe Commerce installations deployed on cloud infrastructure can use built-in WAF services available with the [Fastly services integration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+Adobe Commerce installations deployed on cloud infrastructure can use built-in WAF services available with the [Fastly services integration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 
-- **Configure advanced password security settings**—Set up strong passwords and change them at least every 90 days, as recommended by the PCI Data Security Standard in section 8.2.4. See [Configure Admin security settings](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configure advanced password security settings**—Set up strong passwords and change them at least every 90 days, as recommended by the PCI Data Security Standard in section 8.2.4. See [Configure Admin security settings](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 
-- **Use HTTPS**—If the Commerce site is newly implemented, launch the entire site using HTTPS. Not only does Google use HTTPS as a ranking factor, but many users do not even consider purchasing from a site unless it is secured with HTTPS.
+![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Use HTTPS**—If the Commerce site is newly implemented, launch the entire site using HTTPS. Not only does Google use HTTPS as a ranking factor, but many users do not even consider purchasing from a site unless it is secured with HTTPS.
 
 ## Protect against malware
 
@@ -162,9 +152,9 @@ If the Commerce site has been attacked, follow the Adobe Commerce best practices
 
 Below is a list of common categories of attacks that Adobe recommends all Commerce customers be aware of and take measures to protect against:
 
-- **Site defacing**— While access to the site and user accounts may be compromised, payment information often remains secure.
+- **Site defacing**—An attacker damages a website by changing the visual appearance of the site or adding their own messages. Although access to the site and user accounts has been compromised, payment information often remains secure.
 
-- **Botnets**—The customer's Commerce server becomes part of a botnet that sends spam email. Although user data is not typically compromised, the customer's domain name might be blocklisted by spam filters, preventing delivery of any email from the domain. Alternatively, the customer's site becomes part of a botnet causing a distributed denial of service (DDOS) attack on another site/s. The botnet may block inbound IP traffic to the Commerce server, preventing customers from being able to shop.
+- **Botnets**—The customer's Commerce server becomes part of a botnet that sends spam email. Although user data is not typically compromised, the customer's domain name might be blocklisted by spam filters, preventing delivery of any email from the domain. Alternatively, the customer's site becomes part of a botnet causing a distributed denial of service (DDoS) attack on another site/s. The botnet may block inbound IP traffic to the Commerce server, preventing customers from being able to shop.
 
 - **Direct server attacks**—Data is compromised, backdoors and malware are installed, and site operations are affected. Payment information that is not stored on the server is less likely to be compromised through these attacks.
 
@@ -176,35 +166,19 @@ Below is a list of common categories of attacks that Adobe recommends all Commer
 
 Brute force password guessing attacks can result in unauthorized Admin access. Protect your site from these attacks by following these best practices:
 
-1. Identify and protect all points where the Commerce installation can be accessed from the outside world.
+- Identify and protect all points where the Commerce installation can be accessed from the outside world.
 
-   You can secure access to the Admin, which generally requires the most protection, by following Adobe's [priority recommendations](#priority-recommendations) when configuring your Commerce project.
+  You can secure access to the Admin, which generally requires the most protection, by following Adobe's [priority recommendations](#priority-recommendations) when configuring your Commerce project.
 
-1. Control access to the Commerce site by setting up an access control list that only allows access to users coming from a specified IP address or network.
+- Control access to the Commerce site by setting up an access control list that only allows access to users coming from a specified IP address or network.
 
-   You can use a Fastly Edge ACL list with a custom VCL code snippet to filter incoming requests and allow access by IP address. See [Custom VCL for allowing requests](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
-
-
-    >[!TIP]
-    >
-    >If you employ a remote workforce, ensure that the IP addresses of remote employees are included in the list of addresses with permission to access the Commerce site.
-
-### Prevent Clickjacking exploits
-
-Adobe safeguards your store from Clickjacking attacks by providing the `X-Frame-Options` HTTP request header that you can include in requests to your storefront. See [Prevent clickjacking exploits](../../../configuration/security/xframe-options.md) in the *Adobe Commerce Configuration Guide*.
+  You can use a Fastly Edge ACL with a custom VCL code snippet to filter incoming requests and allow access by IP address. See [Custom VCL for allowing requests](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 
+  >[!TIP]
+  >
+  >If you employ a remote workforce, ensure that the IP addresses of remote employees are included in the list of addresses with permission to access the Commerce site.
 
+### Prevent clickjacking exploits
 
-
-
-
-
-
-
-
-
-
-
-
-
+Adobe safeguards your store from clickjacking attacks by providing the `X-Frame-Options` HTTP request header that you can include in requests to your storefront. See [Prevent clickjacking exploits](../../../configuration/security/xframe-options.md) in the *Adobe Commerce Configuration Guide*.
