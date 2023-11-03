@@ -146,7 +146,7 @@ Client-side credit card skimmers are a type of malware that embeds code into mer
 
 [Insert graphic -- check with Emily about getting original high-res image]
 
-If the Commerce site has been attacked, follow the Adobe Commerce best practices for [responding to a security incident](prevent-respond-security-incident.md).
+If the Commerce site has been attacked, follow the Adobe Commerce best practices for [responding to a security incident](respond-to-security-incident.md).
 
 ### Know the most common attacks
 

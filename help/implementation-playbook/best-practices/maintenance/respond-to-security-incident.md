@@ -1,19 +1,27 @@
 ---
-title: Prevent and respond to a security incident
-description: Prevent and respond to security incidents by following best practices to secure Commerce installations and develop a plan to respond to and remediate security incidents if they occur.
+title: Respond to a security incident
+description: Handle security incidents by following best practices to respond to and remediate security issues that affect site availability and performance.
 role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 ---
-# Best practices to help prevent and respond to a security incident
+# Best practices to respond to a security incident
 
-Adobe Commerce security operates under a [Shared Responsibility](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) model. It is key to understand what Adobe and your technical teams are responsible for. The following article summarizes best practices to ensure that your project has the best security controls in place, and that you can plan the best response to security incidents.
+The following article summarizes best practices to respond to a security incident and remediate issues that impact Adobe Commerce site availability, reliability, and performance.
+
+Following these best practices can help prevent unauthorized access and malware attacks. If a security incident does occur, these best practices help you prepare for an immediate response, conduct a root cause analysis, and manage the remediation process to restore normal operations.
+
+>[!TIP]
+>
+> Adobe has found that most security incidents occur when threat actors take advantage of existing, unpatched vulnerabilities, poor passwords, and weak ownership and permission settings in the Commerce application and infrastructure configuration. Minimize the occurrence of security incidents by reviewing and following Adobe security best practices when setting up, configuring, and updating Adobe Commerce installations. See [Security Best Practices](security-best-practices.md).
+
 
 ## Affected products and versions
 
 [All supported versions](../../../release/versions.md) of:
 
 - Adobe Commerce on cloud infrastructure
+- Adobe Commerce on-premises
 
 ## Respond to an incident
 
@@ -25,12 +33,6 @@ If you suspect that your Adobe Commerce on cloud infrastructure project is impac
 - Review security upgrades for your version of Adobe Commerce.
 
 More recommendations are detailed below.
-
-Following these best practices can help prevent unauthorized access and malware attacks. If a security incident does occur, these best practices help you prepare for an immediate response, root cause analysis, and the remediation process to restore normal operations.
-
-## Prevent security incidents
-
-Review and follow Adobe security best practices when setting up, configuring, and updating Adobe Commerce installations. See [Security Best Practices](security-best-practices.md).
 
 ## Take immediate action in the event of an attack
 
