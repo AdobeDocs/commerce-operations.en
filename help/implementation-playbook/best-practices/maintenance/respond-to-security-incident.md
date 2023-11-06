@@ -13,7 +13,7 @@ Following these best practices can help prevent unauthorized access and malware 
 
 >[!TIP]
 >
-> Adobe has found that most security incidents occur when threat actors take advantage of existing, unpatched vulnerabilities, poor passwords, and weak ownership and permission settings in the Commerce application and infrastructure configuration. Minimize the occurrence of security incidents by reviewing and following Adobe security best practices when setting up, configuring, and updating Adobe Commerce installations. See [Security Best Practices](security-best-practices.md).
+> Adobe has found that most security incidents occur when threat actors take advantage of existing, unpatched vulnerabilities, poor passwords, and weak ownership and permission settings in the Commerce application and infrastructure configuration. Minimize the occurrence of security incidents by reviewing and following Adobe security best practices when setting up, configuring, and updating Adobe Commerce installations. See [Security Best Practices](../launch/security-best-practices.md).
 
 
 ## Affected products and versions
