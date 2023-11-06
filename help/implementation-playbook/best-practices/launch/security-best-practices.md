@@ -144,7 +144,7 @@ In the most commonly experienced attacks, malicious code is injected into the ab
 
 Client-side credit card skimmers are a type of malware that embeds code into merchant website content that can executed in a user's browser. After certain actions occur such as a user submitting a form or modifying a field value, the skimmer serializes the data and sends it to third-party endpoints. These endpoints are typically other compromised websites that act as a relay to send the data to its final destination.
 
-[Insert graphic -- check with Emily about getting original high-res image]
+<!--Add graphic describing malware attack-->
 
 If the Commerce site has been attacked, follow the Adobe Commerce best practices for [responding to a security incident](respond-to-security-incident.md).
 

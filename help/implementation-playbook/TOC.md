@@ -112,7 +112,7 @@ mini-toc-levels: 3
     - [Patching at scale](best-practices/maintenance/patching-at-scale.md)
     - [Order processing](best-practices/maintenance/order-processing-configuration.md)
     - [Resolve database performance issues](best-practices/maintenance/resolve-database-performance-issues.md)
-    - [Respond to security incidents](best-practices/launch/respond-to-security-incident.md)
+    - [Respond to security incidents](best-practices/maintenance/respond-to-security-incident.md)
     - [Scheduling Admin updates on production sites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
