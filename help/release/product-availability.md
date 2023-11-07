@@ -22,7 +22,7 @@ These Adobe Commerce extensions are decoupled from the core Adobe Commerce codeb
 
 The following table shows the version support for each extension relative to the Adobe Commerce version.
 
-{{$include help/_includes/templated/product-availability-extensions.md}}
+{{$include /help/_includes/templated/product-availability-extensions.md}}
 
 ## Commerce Services
 
@@ -36,4 +36,4 @@ It is recommended that merchants use the most recent version of a service to ens
 
 The following table shows the version support for each service relative to the Adobe Commerce version.
 
-{{$include help/_includes/templated/product-availability-services.md}}
+{{$include /help/_includes/templated/product-availability-services.md}}
