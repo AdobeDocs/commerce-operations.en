@@ -1,4 +1,7 @@
 ---
+# This file is being used in SWAT automation. Follow existing format to avoid breaking changes.
+# If breaking changes cannot be omitted, communicate with the SWAT team prior to introducing them.
+
 extensions:
   Adobe I/O Events for Adobe Commerce:
     docs:
