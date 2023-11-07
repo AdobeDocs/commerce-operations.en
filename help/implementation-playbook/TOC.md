@@ -103,8 +103,8 @@ mini-toc-levels: 3
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
     - [Configure web crawlers](best-practices/launch/robots-txt.md)
-    - [Prevent and respond to security incidents](best-practices/launch/prevent-respond-security-incident.md)
-  - Maintenance {#maintenance} 
+    - [Secure your site and infrastructure](best-practices/launch/security-best-practices.md)
+  - Maintenance {#maintenance}
     - [Overview](best-practices/maintenance/overview.md)
     - [Audit frontend performance](best-practices/maintenance/frontend-performance.md)
     - [Optimize backend performance](best-practices/maintenance/backend-performance.md)
@@ -112,6 +112,7 @@ mini-toc-levels: 3
     - [Patching at scale](best-practices/maintenance/patching-at-scale.md)
     - [Order processing](best-practices/maintenance/order-processing-configuration.md)
     - [Resolve database performance issues](best-practices/maintenance/resolve-database-performance-issues.md)
+    - [Respond to security incidents](best-practices/maintenance/respond-to-security-incident.md)
     - [Scheduling Admin updates on production sites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
