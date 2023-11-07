@@ -78,7 +78,7 @@ The first step of incident analysis is to gather as many facts as possible, as q
 
 ## Audit accounts, code, and database
 
-Review Commerce Admin and user accounts, application code, and database configuration and logs to identify and clean up suspicious code, remove obsolete accounts, reset passwords, check access control configuration, and redeploy code as needed.
+Review Commerce Admin and user accounts, application code, and database configuration and logs to identify and clean up suspicious code and ensure the security of account, site, and database access. Then, redeploy as needed.
 
 Continue to closely monitor the site after the incident as many sites get compromised again within hours. Ensure ongoing log review and file integrity monitoring to quickly detect any signs of new compromise.
 
