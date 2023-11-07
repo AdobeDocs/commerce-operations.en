@@ -1,0 +1,26 @@
+<table>
+    <table style="table-layout:auto">
+        <thead>
+          <tr>
+            <th>Adobe Commerce versions</th>
+            {%- for core_version in core_versions %}
+            <th>{{core_version}}</th>
+          {%- endfor %}
+          </tr>
+        </thead>
+        <tbody>
+            {%- for item in items %}
+            <tr>
+                <td>{{item[0]}}</td>
+                {%- for item_version in item[1].support %}
+                <td>{{item_version | map: "version" }}</td>
+                {%- endfor %}
+                <td>
+                    {%- for item_doc in item[1].docs %}
+                    <a href="{{item_doc[1]}}">{{item_doc[0]}}</a><br/>
+                    {%- endfor %}
+                </td>
+            </tr>
+            {%- endfor %}
+        </tbody>
+</table>
