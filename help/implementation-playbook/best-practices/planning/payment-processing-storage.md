@@ -11,7 +11,7 @@ One of the key principles in maintaining [PCI compliance](https://experienceleag
 
 Storing cardholder data in Adobe Commerce is **strictly prohibited** and doing so could be a violation of your obligations as a merchant under the Payment Card Industry Data Security Standard (PCI-DSS). More information about the shared responsibility model and guidelines for merchant obligations is available in the [Adobe Commerce Shared Responsibility Model Guide](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) on the Adobe Trust Center.
 
-Follow the best practices below to ensure that you are properly processing payment information on your eCommerce site. Additional guidance on overall security best practices can be found in our [security best practices guide for Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) on the Adobe Trust Center
+Follow the best practices below to ensure that you are properly processing payment information on your eCommerce site. For additional guidance on security best practices, see [Secure your Commerce site and infrastructure](../launch/security-best-practices.md) on the Adobe Trust Center
 
 ## Affected products and versions
 

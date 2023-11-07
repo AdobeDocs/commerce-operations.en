@@ -103,7 +103,7 @@ mini-toc-levels: 3
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
     - [Configure web crawlers](best-practices/launch/robots-txt.md)
-    - [Security best practices](best-practices/launch/security-best-practices.md)
+    - [Secure your Commerce site and infrastructure](best-practices/launch/security-best-practices.md)
   - Maintenance {#maintenance}
     - [Overview](best-practices/maintenance/overview.md)
     - [Audit frontend performance](best-practices/maintenance/frontend-performance.md)

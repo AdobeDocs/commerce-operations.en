@@ -1,11 +1,11 @@
 ---
-title: Security Best Practices
+title: Secure your Commerce site and infrastructure
 description: Maintain security by implementing security best practices when setting up, configuring, and updating Adobe Commerce installations.
 role: Admin, Developer, Leader, User
 feature: Best Practices
 ---
 
-# Security Best Practices
+# Secure your Commerce site and infrastructure
 
 Establishing and maintaining a secure environment for Adobe Commerce projects deployed on cloud infrastructure is a responsibility that is shared between Adobe Commerce customers, solution partners, and Adobe. The intent of this guide is to provide best practices for the customer's side of the equation.
 
