@@ -1,7 +1,6 @@
 ---
 title: Secure your Commerce site and infrastructure
 description: Maintain security by implementing security best practices when setting up, configuring, and updating Adobe Commerce installations.
-role: Admin, Developer, Leader, User
 feature: Best Practices
 ---
 
