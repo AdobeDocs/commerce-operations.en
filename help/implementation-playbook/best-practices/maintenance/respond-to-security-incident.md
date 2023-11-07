@@ -1,7 +1,6 @@
 ---
 title: Respond to a security incident
 description: Handle security incidents by following best practices to respond to and remediate security issues that affect site availability and performance.
-role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 ---
@@ -58,11 +57,11 @@ In the unfortunate event of a site compromise, here are some key recommendations
 
 The first step of incident analysis is to gather as many facts as possible, as quickly as you can. Gathering information surrounding the incident can help determine the potential cause of the incident. Adobe Commerce provides the tools below to assist with your incident analysis.
 
-- [Audit Admin Action Logs](https://docs.magento.com/user-guide/system/action-log-report.html).
+- [Audit Admin Action Logs](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
 
   The Action Logs Report displays a detailed record of all admin actions that are enabled for logging. Each record is time stamped and registers the IP address and name of the user. The log detail includes admin user data and related changes that were made during the action.
 
-- Analyze events with the [Observation for Adobe Commerce tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=en).
+- Analyze events with the [Observation for Adobe Commerce tool](../../../tools/observation-for-adobe-commerce/intro.md).
 
   The Observation for Adobe Commerce tool allows you to analyze complex problems to help identify root causes. Instead of tracking disparate data, you can spend your time correlating events and errors to gain deeper insights into the causes of performance bottlenecks.
 
