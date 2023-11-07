@@ -142,7 +142,7 @@ However, Adobe has found that most site compromises are not due to an innovative
 In the most commonly experienced attacks, malicious code is injected into the absolute header or absolute footer of a customer store. There, the code collects form data that a customer enters in the storefront, including customer login credentials and checkout form data. Then, this data is sent to another location for malicious purposes rather than to the Commerce backend. Also, malware can compromise the Admin to execute code that replaces the original payment form with a fake form that overrides any protections set by the payment provider.
 
 Client-side credit card skimmers are a type of malware that embeds code into merchant website content that can executed in a user's browser as shown in the following figure.
- After certain actions occur such as a user submitting a form or modifying a field value, the skimmer serializes the data and sends it to third-party endpoints. These endpoints are typically other compromised websites that act as a relay to send the data to its final destination.
+After certain actions occur such as a user submitting a form or modifying a field value, the skimmer serializes the data and sends it to third-party endpoints. These endpoints are typically other compromised websites that act as a relay to send the data to its final destination.
 
 ![Data flow for malware attacks targeting ecommerce sites](../../../assets/playbooks/malware-data-flow.svg)
 
