@@ -47,25 +47,75 @@ All the articles in this repository use GitHub flavored markdown. If you are not
 
 ## Templates
 
-The `_jekyll` directory contains templated topics and required assets.
-The templates that use the Liquid templating language reside in the `_jekyll/templated` directory as HTML files.
-The `_jekyll/_data` directory contains files with the data that is used to render the templates.
+For some topics, we use data files and templates to generate published content. Use cases for this approach include:
 
-To render all templates:
+* Publishing large sets of programmatically generated content
+* Providing a single source of truth for customers across multiple systems that require machine-readable file formats, such as YAML, for integration (e.g., Site-Wide Analysis Tool)
+
+Examples of templated content include, but are not limited to, the following:
+
+* [CLI tools reference](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [Product availability tables](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [System requirements tables](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+
+### Generate templated content
+
+In general, most writers only need to add a release version to the product availability and system requirements tables. Maintenance for all other templated content is either automated or managed by a dedicated team member. These instructions are intended for "most" writers.
+
+>**NOTE:**
+>
+>* Generating templated content requires working on the command line in a terminal.
+>* You must have Ruby installed to run the rendering script. See [_jekyll/.ruby-version](_jekyll/.ruby-version) for the required version.
+
+See the following for a description of the file structure for templated content:
+
+* `_jekyll`—Contains templated topics and required assets
+* `_jekyll/_data`—Contains the machine-readable file formats used to render templates
+* `_jekyll/templated`—Contains HTML-based template files that use the Liquid templating language
+* `help/_includes/templated`—Contains the generated output for templated content in `.md` file format so it can be published in Experience League topics; the rendering script automatically writes generated output into this directory for you
+
+To update templated content:
+
+1. In your text editor, open a data file in the `/jekyll/_data` directory. For example:
+
+   * [Product availability tables](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [System requirements tables](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+
+1. Use the existing YAML structure to create entries.
+
+   For example, to add a version of Adobe Commerce to the product availability tables, add the following to each entry in the `extensions` and `services` sections of the `/jekyll/_data/product-availability.yml` file (modify version numbers as needed):
+
+   ```
+   support:
+      - core: 1.2.3
+        version: 4.5.6
+   ```
 
 1. Navigate to the `_jekyll` directory.
 
+   ```
    cd _jekyll
+   ```
 
-1. Run the rendering script.
+1. Generate templated content and write the output to the `help/_includes/templated` directory.
 
-```
-_scripts/render
-```
+   ```
+   rake render
+   ```
 
-> **NOTE:** You must run the script from the `_jekyll` directory.
-> **NOTE:** You must have Ruby installed to run this script.
+   >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command.
 
-The script runs rendering and writes rendered templates to the `help/_includes/templated` directory.
+1. Verify that the expected `help/_includes/templated` files were modified.
+
+   ```
+   git status
+   ```
+
+   You should see output similar to the following:
+
+   ```
+   modified:   _data/product-availability.yml
+   modified:   ../help/_includes/templated/product-availability-extensions.md
+   ```
 
 See the Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles), [Liquid filters](https://jekyllrb.com/docs/liquid/filters/), and other features.
