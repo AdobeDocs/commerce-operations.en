@@ -103,7 +103,7 @@ To update templated content:
    rake render
    ```
 
-   >**NOTE:** You must run the script from the `_jekyll` directory.
+   >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command.
 
 1. Verify that the expected `help/_includes/templated` files were modified.
 
