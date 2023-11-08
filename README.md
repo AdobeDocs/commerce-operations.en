@@ -50,7 +50,7 @@ All the articles in this repository use GitHub flavored markdown. If you are not
 For some topics, we use data files and templates to generate published content. Use cases for this approach include:
 
 * Publishing large sets of programmatically generated content
-* Providing a single source of truth for customers across multiple systems that require machine-readable file formats, such as YAML, for integration
+* Providing a single source of truth for customers across multiple systems that require machine-readable file formats, such as YAML, for integration (e.g., Site-Wide Analysis Tool)
 
 Examples of templated content include, but are not limited to, the following:
 
