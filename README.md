@@ -60,7 +60,7 @@ Examples of templated content include, but are not limited to, the following:
 
 ### Generate templated content
 
-In general, most writers only need to add a new release version to the product availability and system requirements tables. Maintenance for all other templated content is either automated or managed by a dedicated team member. These instructions are intended for "most" writers.
+In general, most writers only need to add a release version to the product availability and system requirements tables. Maintenance for all other templated content is either automated or managed by a dedicated team member. These instructions are intended for "most" writers.
 
 >**NOTE:**
 >
@@ -81,9 +81,9 @@ To update templated content:
    * [Product availability tables](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
    * [System requirements tables](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
-1. Use the existing YAML structure to create new entries.
+1. Use the existing YAML structure to create entries.
 
-   For example, to add a new version of Adobe Commerce to the product availability tables, add the following to each entry in the `extensions` and `services` sections of the `/jekyll/_data/product-availability.yml` file (modify version numbers as needed):
+   For example, to add a version of Adobe Commerce to the product availability tables, add the following to each entry in the `extensions` and `services` sections of the `/jekyll/_data/product-availability.yml` file (modify version numbers as needed):
 
    ```
    support:
@@ -97,7 +97,7 @@ To update templated content:
    cd _jekyll
    ```
 
-1. Run the rendering script to generate templated content and write it to the `help/_includes/templated` directory.
+1. Generate templated content and write the output to the `help/_includes/templated` directory.
 
    ```
    rake render
