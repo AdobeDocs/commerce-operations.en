@@ -9,6 +9,7 @@
             <th>2.4.6</th>
             <th>2.4.5</th>
             <th>2.4.4</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
