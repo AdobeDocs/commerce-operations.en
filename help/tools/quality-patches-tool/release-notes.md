@@ -15,6 +15,18 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.41 {#v1-1-41}
+
+* **ACSD-54376** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue that occurs in the shopping cart when a product is removed from the shared catalog after it has already been added to the cart.
+* **ACSD-53722** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where the bundled product options price changes to $0 when scheduled updates for different scopes become active.
+* **ACSD-53643** (for Adobe Commerce >=2.4.3 <2.4.7) - Fixes the issue where the order has an incorrect total when placing a purchase order with disabled or out-of-stock products. It is fixed by hiding the *[!UICONTROL Place Order]* button for such purchase orders.
+* **ACSD-54067** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where a product video doesn't play on a mobile device.
+* **ACSD-55414** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Improves performance when the MariaDB tries to cast the EAV entity_id from string to integer.
+* **ACSD-51819** (for Adobe Commerce >=2.4.4 <2.4.4-p4) - Fixes the issue where multiple orders can be placed with the same quote ID.
+* **ACSD-53118** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where the *[!UICONTROL Cart Price Rule]* is applied using coupon code while the product has an empty attribute.
+* **ACSD-54324** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the GraphQL requisition_lists request does not consider pagination settings and returns all results.
+* Updated patches: MDVA-42855-v2
+
 ## v1.1.40 {#v1-1-40}
 
 * **ACSD-54680** (for Adobe Commerce >=2.4.0 <2.4.6) - Fixes the issue where it is not possible to process a B2B Quote submitted for a product with Multiple Assigned Sources.
