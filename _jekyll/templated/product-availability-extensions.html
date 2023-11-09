@@ -1,0 +1,8 @@
+---
+---
+# Product availability of the Adobe Authored Extensions
+
+{%- assign items = site.data.product-availability.extensions %}
+{%- assign core_versions = items.first[1].support | map: "core" %}
+
+{% include release/product-availability.html -%}
