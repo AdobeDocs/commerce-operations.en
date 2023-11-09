@@ -25,7 +25,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-51819** (for Adobe Commerce >=2.4.4 <2.4.4-p4) - Fixes the issue where multiple orders can be placed with the same quote ID.
 * **ACSD-53118** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where the *[!UICONTROL Cart Price Rule]* is applied using coupon code while the product has an empty attribute.
 * **ACSD-54324** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the GraphQL requisition_lists request does not consider pagination settings and returns all results.
-* Updated patches: MDVA-42855-V2
+* Updated patches: MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
