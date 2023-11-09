@@ -19,7 +19,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 * **ACSD-54376** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue that occurs in the shopping cart when a product is removed from the shared catalog after it has already been added to the cart.
 * **ACSD-53722** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where the bundled product options price changes to $0 when scheduled updates for different scopes become active.
-* **ACSD-53643** (for Adobe Commerce >=2.4.3 <2.4.7) - Fixes the issue where the order has an incorrect total when placing a purchase order with disabled or out-of-stock products. It is fixed by hiding the "Place Order" button for such purchase orders.
+* **ACSD-53643** (for Adobe Commerce >=2.4.3 <2.4.7) - Fixes the issue where the order has an incorrect total when placing a purchase order with disabled or out-of-stock products. It is fixed by hiding the *[!UICONTROL Place Order]* button for such purchase orders.
 * **ACSD-54067** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where a product video doesn't play on a mobile device.
 * **ACSD-55414** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Improves performance when the MariaDB tries to cast the EAV entity_id from string to integer.
 * **ACSD-51819** (for Adobe Commerce >=2.4.4 <2.4.4-p4) - Fixes the issue where multiple orders can be placed with the same quote ID.
