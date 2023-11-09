@@ -5,4 +5,4 @@
 {%- assign items = site.data.product-availability.services %}
 {%- assign core_versions = items.first[1].support | map: "core" %}
 
-{% include release/product-availability.html%}
+{% include release/product-availability.html -%}

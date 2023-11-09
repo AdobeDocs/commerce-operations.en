@@ -58,4 +58,3 @@
             </tr>
         </tbody>
 </table>
-
