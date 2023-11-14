@@ -7,6 +7,7 @@ feature: Security
 # Security and Compliance {#security-and-compliance}
 
 - [Overview](overview.md)
+- [Shared responsibility](shared-responsibility.md)
 - [Content security policy](content-security-policy.md)
 - Privacy regulations {#privacy}
   - [CCPA](privacy/ccpa.md)
