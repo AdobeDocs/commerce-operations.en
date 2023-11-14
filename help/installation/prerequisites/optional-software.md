@@ -122,7 +122,7 @@ If a 404 (Not Found) error displays, check the following:
 
    [Help for Ubuntu](https://help.ubuntu.com/community/UFW)
 
-   [Help for CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
+   [Help for CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 
