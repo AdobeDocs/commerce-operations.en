@@ -60,7 +60,7 @@ Whether you have one server or many, you must open ports in the firewall to enab
 More information:
 
 *  Ubuntu: [Ubuntu documentation page](https://help.ubuntu.com/community/IptablesHowTo).
-*  CentOS: [CentOS how-to](https://wiki.centos.org/HowTos/Network/IPTables).
+*  CentOS: [CentOS how-to](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
 
 ### Security Enhanced Linux (SELinux) rules
 

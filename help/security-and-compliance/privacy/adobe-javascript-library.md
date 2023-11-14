@@ -9,7 +9,7 @@ exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-The [Adobe Privacy JavaScript Library](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) is a set of tools to help create a process for accessing and deleting private data.
+The [Adobe Privacy JavaScript Library](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) is a set of tools to help create a process for accessing and deleting private data.
 
 Adobe Commerce and Magento Open Source data tracking services can store private information applicable to privacy regulations such as the [General Data Protection Regulation (GDPR)](gdpr.md) and [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -37,7 +37,7 @@ The AdobePrivacy JS Library provides various functions to manage identity data s
 `retrieveThenRemoveIdentities()`
 : This function is similar to `removeIdentities()` in that it retrieves an array of identities and removes them from the browser.
 
-For more information and examples for using these functions, see the [official library documentation](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+For more information and examples for using these functions, see the [official library documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Initialization
 
@@ -48,4 +48,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 The constructor accepts a configuration object with parameters during instantiation.
-Refer to the [official library documentation](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) for a list of these configuration parameters.
+Refer to the [official library documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) for a list of these configuration parameters.
