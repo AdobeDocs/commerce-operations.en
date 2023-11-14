@@ -17,8 +17,7 @@ Merchants are responsible for maintaining secure custom code and integrations wi
 
 Adobe is responsible for the security and availability of the Adobe Commerce on cloud infrastructure environment and the core Adobe Commerce on cloud infrastructure solution code. In addition, Adobe is responsible for the necessary activities and mechanisms that maintain the security of the Adobe Commerce on cloud infrastructure solution, including:
 
-- Applying server-level security and patches for applications supported by Adobe Commerce
-on Cloud, such as cloud data storage and search capabilities
+- Applying server-level security and patches for applications supported by Adobe Commerce on cloud infrastructure, such as cloud data storage and search capabilities
 - Conducting penetration testing and scanning of the core Adobe Commerce on cloud infrastructure code
 - Conducting semi-annual reviews/audits of public cloud service providers' identity and access management (IAM) solution and permissions management (PCI compliance requirement)
 - Conducting semi-annual reviews/audits of authorized users, including Adobe employees and contractors (PCI compliance requirement)
