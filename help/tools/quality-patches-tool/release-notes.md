@@ -18,18 +18,18 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 ## v1.1.42 {#v1-1-42}
 
 * **ACSD-53658** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where *[!UICONTROL Recently Viewed]* product data is not updated properly in the store view.
-* **ACSD-54626** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where you can't create a new purchase order rule (createPurchaseOrderApprovalRule) with the "NUMBER_OF_SKUS" attribute via GraphQL.
-* **ACSD-53845** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the MySQL connection timeout issue when consumer max_messages = 0.
-* **ACSD-54890** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where aggregate_sales_report_bestsellers_data causes MySQL errors due to /tmp disk being out of space.
-* **ACSD-55112** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the *[!UICONTROL Submit review]* button can be clicked multiple times without Google reCAPTCHA v3 validation.
+* **ACSD-54626** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where you can't create a new purchase order rule (`createPurchaseOrderApprovalRule`) with the `NUMBER_OF_SKUS` attribute via [!DNL GraphQL].
+* **ACSD-53845** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the [!DNL MySQL] connection timeout issue when `consumer max_messages` = 0.
+* **ACSD-54890** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where `aggregate_sales_report_bestsellers_data` causes [!DNL MySQL] errors due to `/tmp` disk being out of space.
+* **ACSD-55112** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where the *[!UICONTROL Submit review]* button can be clicked multiple times without [!DNL Google reCAPTCHA v3] validation.
 * **ACSD-54264** (for Adobe Commerce >=2.4.4-p5 <2.4.5 || >=2.4.5-p4 <2.4.6 || >=2.4.6-p2 <2.4.7) - Fixes the issue where the error message *"You cannot update the requested attribute. Row ID: store_id"* appears when a customer tries to check out with a negotiable quote from another store view.
 * **ACSD-54418** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where a fixed amount of discount is incorrectly applied to each child product of the dynamically priced bundle.
 * **ACSD-55238** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes saving the empty product *[!UICONTROL Meta Description]*.
 * **ACSD-54966** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where a coupon code with a limited-use per customer can't be reused if the previous order failed.
 * **ACSD-54060** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where a restricted admin can't save a product if it's a child of another product assigned to a different scope.
 * **ACSD-48910** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixed the issue where a bundle product assigned to multiple sources goes out-of-stock after an order is invoiced and shipped, even if it still has a non-zero quantity.
-* **ACSD-55381** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes an internal server error when querying configurable_product_option_uid and configurable_product_option_value_uid fields from a B2B *[!UICONTROL Requisition list]* via GraphQL.
-* **ACSD-55628** (for Adobe Commerce >=2.4.4-p2 < 2.4.5 || >=2.4.5-p1 < 2.4.6) - Fixes uploading a file on the company registration form and replacing a file for a customer attribute on the Storefront.
+* **ACSD-55381** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes an internal server error when querying `configurable_product_option_uid` and `configurable_product_option_value_uid` fields from a [!DNL B2B] *[!UICONTROL Requisition list]* via [!DNL GraphQL].
+* **ACSD-55628** (for Adobe Commerce >=2.4.4-p2 < 2.4.5 || >=2.4.5-p1 < 2.4.6) - Fixes uploading a file on the company registration form and replacing a file for a customer attribute on the storefront.
 * Updated patches: ACSD-51240, ACSD-51890, ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
