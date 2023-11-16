@@ -3,6 +3,7 @@ title: Software lifecycle policy
 description: Learn about key dates for end of software support for Adobe Commerce releases.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 ---
+
 # Adobe Commerce lifecycle policy
 
 For Adobe Commerce 2.4.4 and subsequent releases:
@@ -12,6 +13,8 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 - Adobe provides security fixes through a security patch release for the three-year support period.
 
 - For critical security issues, such as zero-day vulnerabilities, Adobe provides [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) for all customers on a supported version, even if they are not on the latest patch or security patch release. It is important to note that a hotfix is not a catch-all and does not address all the security issues that would be fixed by upgrading to the latest release.
+
+- Adobe does not provide security and quality fixes for third-party services and software dependencies, such as PHP. It is your responsibility to maintain the security and compliance (for example, PCI, ISO, SOC) of third-party software dependencies. Adobe recommends updating your environments to use the latest version of PHP supported by Adobe Commerce as soon as possible. Do not to use a version of PHP that has reached end of support.
 
 ## End of software support
 
@@ -45,7 +48,6 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 <tbody>
   <tr>
     <td>Commerce</td>
-    <td>PHP</td>
     <td>Q1</td>
     <td>Q2</td>
     <td>Q3</td>
@@ -73,40 +75,24 @@ For Adobe Commerce 2.4.4 and subsequent releases:
   </tr>
   <tr>
     <td>2.4.4</td>
-    <td>8.1</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
-    <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="9"></td>
   </tr>
   <tr>
-    <td rowspan="2">2.4.6</td>
-    <td>8.1</td>
+    <td>2.4.6</td>
     <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="8"></td>
   </tr>
   <tr>
-    <td>8.2</td>
-    <td colspan="4"></td>
-    <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="8"></td>
-  </tr>
-  <tr>
-    <td rowspan="2">2.4.7</td>
-    <td>8.2</td>
-    <td colspan="9"></td>
-    <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <td>8.3</td>
+    <td>2.4.7</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
@@ -120,7 +106,7 @@ For Adobe Commerce 2.4.4 and subsequent releases:
  <tbody>
   <tr>
    <td style="background-color:#67ac68;">Supported</td>
-   <td>Security and quality patches for Adobe Commerce and PHP.</td>
+   <td>Security and quality patches for Adobe Commerce</td>
   </tr>
   <!-- <tr>
    <td style="background-color:#cd3c3c;">End of software support</td>
