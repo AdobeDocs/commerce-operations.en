@@ -331,9 +331,9 @@ I — Informed) to visually depict each party in the ecosystem's security respon
     <td></td>
   </tr>
   <tr>
-    <td>Configuring Nginx</td>
+    <td>Configuring Nginx<sup>3</sup></td>
     <td>R</td>
-    <td>R<sup>3</sup></td>
+    <td>R</td>
     <td></td>
     <td></td>
   </tr>
@@ -415,9 +415,9 @@ I — Informed) to visually depict each party in the ecosystem's security respon
     <td></td>
   </tr>
   <tr>
-    <td>Remediating AdobeCommerce on Cloud PCI scans</td>
+    <td>Remediating AdobeCommerce on Cloud PCI scans<sup>4</sup></td>
     <td>R</td>
-    <td>R<sup>4</sup></td>
+    <td>R</td>
     <td></td>
     <td></td>
   </tr>
@@ -494,11 +494,11 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 </tbody>
 <tfoot>
   <tr>
-    <td colspan="5"><strong>Footnotes</strong>:
+    <td colspan="5">
       <p><sup><strong>1</strong></sup> Only if the Adobe Commerce on cloud infrastructure repository is used as the main repository. Use of other external repositories is the sole responsibility of the merchant.</p>
       <p><sup><strong>2</strong></sup> Adobe provides Level 1 support for issues with CDN providers.</p>
       <p><sup><strong>3</strong></sup> Some Ngnix controls are configured by the merchant for their applications and are their responsibility.</p>
-      <p><sup><strong>4</strong></sup> For PCI, pen testing requirements are shared between Adobe and the merchant.</p>
+      <p><sup><strong>4</strong></sup> For PCI, penetration testing requirements are shared between Adobe and the merchant.</p>
     </td>
   </tr>
 </tfoot>
