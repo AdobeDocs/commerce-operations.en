@@ -492,9 +492,14 @@ I — Informed) to visually depict each party in the ecosystem's security respon
     <td></td>
   </tr>
 </tbody>
+<tfoot>
+  <tr>
+    <td colspan="5"><strong>Footnotes</strong>:
+      <p><sup><strong>1</strong></sup> Only if the Adobe Commerce on cloud infrastructure repository is used as the main repository. Use of other external repositories is the sole responsibility of the merchant.</p>
+      <p><sup><strong>2</strong></sup> Adobe provides Level 1 support for issues with CDN providers.</p>
+      <p><sup><strong>3</strong></sup> Some Ngnix controls are configured by the merchant for their applications and are their responsibility.</p>
+      <p><sup><strong>4</strong></sup> For PCI, pen testing requirements are shared between Adobe and the merchant.</p>
+    </td>
+  </tr>
+</tfoot>
 </table>
-
-<sup>1</sup>—Only if the Adobe Commerce on cloud infrastructure repository is used as the main repository. Use of other external repositories is the sole responsibility of the merchant.<br>
-<sup>2</sup>—Adobe provides Level 1 support for issues with CDN providers.<br>
-<sup>3</sup>—Some Ngnix controls are configured by the merchant for their applications and are their responsibility.<br>
-<sup>4</sup>—For PCI, pen testing requirements are shared between Adobe and the merchant.
