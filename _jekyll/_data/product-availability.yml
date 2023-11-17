@@ -1,0 +1,162 @@
+---
+# This file is being used in SWAT automation. Follow existing format to avoid breaking changes.
+# If breaking changes cannot be omitted, communicate with the SWAT team prior to introducing them.
+
+extensions:
+  Adobe I/O Events for Adobe Commerce:
+    docs:
+      Composer: https://developer.adobe.com/commerce/extensibility/events/installation/
+      Release Notes: https://developer.adobe.com/commerce/extensibility/events/release-notes/
+    support:
+      - core: 2.4.7-beta2
+        version: 1.3.0
+      - core: 2.4.6
+        version: 1.3.0
+      - core: 2.4.5
+        version: 1.3.0
+      - core: 2.4.4
+        version: 1.3.0  
+  B2B:
+    docs:
+      Composer: https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: 1.4.2
+      - core: 2.4.6
+        version: 1.3.5+
+      - core: 2.4.5
+        version: 1.3.4
+      - core: 2.4.4
+        version: 1.3.3
+  Experience Platform Connector: 
+    docs:
+      Marketplace: https://commercemarketplace.adobe.com/magento-experience-platform-connector.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: 3.0.0-beta1
+      - core: 2.4.6
+        version: 1.0.0+
+      - core: 2.4.5
+        version: 1.0.0+
+      - core: 2.4.4
+        version: 1.0.0+
+  Page Builder:
+    docs:
+      User Guide: https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: '-'
+      - core: 2.4.6
+        version: 1.7.3
+      - core: 2.4.5
+        version: 1.7.2
+      - core: 2.4.4
+        version: 1.7.1
+services:
+  Amazon Sales Channel:
+    docs:
+      Marketplace: https://commercemarketplace.adobe.com/magento-module-amazon.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: '-'
+      - core: 2.4.6
+        version: 4.4.0+
+      - core: 2.4.5
+        version: 4.3.0+
+      - core: 2.4.4
+        version: 4.3.0+
+  Catalog Service for Adobe Commerce:
+    docs:
+      Overview: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: 1.13
+      - core: 2.4.6
+        version: 1.13
+      - core: 2.4.5
+        version: 1.13
+      - core: 2.4.4
+        version: 1.13
+  Channel Manager:
+    docs:
+      Marketplace: https://commercemarketplace.adobe.com/magento-channel-manager.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: 2.1.0
+      - core: 2.4.6
+        version: 2.0.0
+      - core: 2.4.5
+        version: 1.0.0+
+      - core: 2.4.4
+        version: 1.0.0+
+  Live Search:
+    docs:
+      Marketplace: https://commercemarketplace.adobe.com/magento-live-search.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: 3.1.1
+      - core: 2.4.6
+        version: 3.1.1
+      - core: 2.4.5
+        version: 3.1.1
+      - core: 2.4.4
+        version: 3.1.1
+  Payment Services:
+    docs:
+      Marketplace: https://commercemarketplace.adobe.com/magento-payment-services.html
+      Release Notes: https://commercemarketplace.adobe.com/magento-payment-services.html#product.info.details.release_notes
+    support:
+      - core: 2.4.7-beta2
+        version: 2.2.0
+      - core: 2.4.6
+        version: 2.2.0
+      - core: 2.4.5
+        version: 2.2.0 (PHP 8.1)
+      - core: 2.4.4
+        version: 2.2.0 (PHP 8.1)
+  Product Recommendations:
+    docs:
+      Marketplace: https://commercemarketplace.adobe.com/magento-product-recommendations.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: 5.0.1
+      - core: 2.4.6
+        version: 5.0.1
+      - core: 2.4.5
+        version: 5.0.1
+      - core: 2.4.4
+        version: 5.0.1
+  Quick Checkout:
+    docs:
+      Marketplace: https://commercemarketplace.adobe.com/magento-quick-checkout.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: '-'
+      - core: 2.4.6
+        version: 1.0.0+
+      - core: 2.4.5
+        version: 1.2.0+
+      - core: 2.4.4
+        version: 1.0.0+
+  Store Fulfillment for Adobe Commerce:
+    docs:
+      Marketplace: https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html
+    support:
+      - core: 2.4.7-beta2
+        version: '-'
+      - core: 2.4.6
+        version: 1.5.0
+      - core: 2.4.5
+        version: 1.2.0+
+      - core: 2.4.4
+        version: 1.2.0+
