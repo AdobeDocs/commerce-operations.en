@@ -9,7 +9,7 @@ Adobe Commerce on cloud infrastructure is a platform-as-a-service (PaaS) offerin
 
 This approach enables merchants to design and implement a highly flexible, customizable, and scalable solution that best suits their business requirements while minimizing operational responsibilities and costs.
 
-In general, Adobe is responsible for developing and maintaining secure core application code, maintaining the security of the platform, ensuring the platform's SOC 2 and PCI compliance and its compatibility with PCI-compliant technology components (for example, PHP, Redis), and responding to security issues concerning the core platform. Adobe is also responsible for working with its cloud service provider and CDN partners to resolve issues that may arise.
+In general, Adobe is responsible for developing and maintaining secure core application code, maintaining the security of the platform, ensuring the platform's SOC 2 and PCI compliance and its compatibility with PCI-compliant technology components (for example, PHP, Redis), and responding to security issues concerning the core platform. Adobe is also responsible for working with cloud service providers and CDN partners to resolve issues that may arise.
 
 Merchants are responsible for maintaining secure custom code and integrations with third-party applications, ensuring secure application development, obtaining PCI certification if requested by the merchant's payment processor, and reacting and responding to security incidents.
 
@@ -49,7 +49,7 @@ The merchant is responsible for following security best practices for their spec
 - Adding the necessary Adobe Commerce on cloud infrastructure configuration files to the repository
 - Applying security and other patches to their custom Adobe Commerce on cloud infrastructure solution immediately following their release by Adobe
 - Applying security and other patches to all custom extensions and code, immediately following their release by the vendor
-- Creating, deploying, and testing custom Varnish VCLs
+- Creating, deploying, and testing custom Varnish VCL files
 - Designing, theming, installing, integrating, and securing the customized Adobe Commerce on cloud infrastructure solution, including all custom extensions and code
 - Granting and revoking user access to the merchant's instance of the Adobe Commerce on cloud infrastructure configuration, application, and platform
 - Handling security issues related to the merchant's internal network, servers, infrastructure, and any custom applications built on the Adobe Commerce on cloud infrastructure platform
