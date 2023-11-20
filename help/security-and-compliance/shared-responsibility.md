@@ -100,7 +100,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 </thead>
 <tbody>
   <tr>
-    <td>Applying AdobeCommerce on Cloud patches</td>
+    <td>Applying Adobe Commerce on cloud infrastructure patches</td>
     <td>C</td>
     <td>R</td>
     <td></td>
@@ -149,7 +149,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
     <td></td>
   </tr>
   <tr>
-    <td>Releasing AdobeCommerce on Cloud patches</td>
+    <td>Releasing Adobe Commerce on cloud infrastructure patches</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -177,14 +177,14 @@ I — Informed) to visually depict each party in the ecosystem's security respon
     <td></td>
   </tr>
   <tr>
-    <td>Installing AdobeCommerce on CloudCLI tool</td>
+    <td>Installing Adobe Commerce on cloud infrastructure CLI tool</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Adding AdobeCommerce on Cloud configuration files to repository</td>
+    <td>Adding Adobe Commerce on cloud infrastructure configuration files to repository</td>
     <td>C</td>
     <td>R</td>
     <td></td>
@@ -373,7 +373,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
     <td>C</td>
   </tr>
   <tr>
-    <td>Resolving AdobeCommerce on Cloud security issues</td>
+    <td>Resolving Adobe Commerce on cloud infrastructure security issues</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -415,7 +415,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
     <td></td>
   </tr>
   <tr>
-    <td>Remediating AdobeCommerce on Cloud PCI scans<sup>4</sup></td>
+    <td>Remediating Adobe Commerce on cloud infrastructure PCI scans<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -436,7 +436,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
     <td></td>
   </tr>
   <tr>
-    <td>Managing AdobeCommerce on Cloud encryption keys</td>
+    <td>Managing Adobe Commerce on cloud infrastructure encryption keys</td>
     <td></td>
     <td>R</td>
     <td></td>
