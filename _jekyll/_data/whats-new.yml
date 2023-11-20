@@ -1,8 +1,65 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Oct 30 14:27:22 2023
+updated: Mon Nov 20 11:26:11 2023
 entries:
+- description: Added a new topic that describes the [shared responsibility security
+    model](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/shared-responsibility.html)
+    for Adobe Commerce on cloud infrastructure projects.
+  versions: ''
+  type: new-topic
+  date: November 20, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/710
+  merge_commit: b1bf4ffa950bf426c9e769904f5587cad93add15
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+- description: Clarified the [support policy](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)
+    for third-party services and software dependencies.
+  versions: ''
+  type: major-update
+  date: November 16, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/714
+  merge_commit: 010c625d2a00fda022b9e56098e74bb7b690479f
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.42 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: November 15, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/713
+  merge_commit: e89fcf5fb2aa750c34bcc9152be9ae53e673bb5c
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.41 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: November 9, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/705
+  merge_commit: fbc090e5fbd70ee4d594b8a813691abdddce9e20
+  contributor: poltorat
+  membership: false
+  labels:
+  - major-update
+- description: Added a [security best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html)
+    topic to the _Implementation Playbook_.
+  versions: ''
+  type: new-topic
+  date: November 7, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/698
+  merge_commit: 2ffda8afd118184f314e8e329a678605ac241007
+  contributor: meker
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.40 Quality Patches Tool (QPT) package release.
   versions: ''
