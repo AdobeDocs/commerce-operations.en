@@ -2,8 +2,20 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Mon Oct 30 14:27:29 2023
+updated: Mon Nov 20 11:26:01 2023
 entries:
+- description: Added a [security best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html)
+    topic to the _Implementation Playbook_.
+  versions: ''
+  type: best-practices
+  date: November 7, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/698
+  merge_commit: 2ffda8afd118184f314e8e329a678605ac241007
+  contributor: meker
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
 - description: Added the following new topics:<br/>- [Catalog image resizing best
     practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/catalog-image-resizing.html)<br/>-
     [Code management best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-management.html)<br/>-
