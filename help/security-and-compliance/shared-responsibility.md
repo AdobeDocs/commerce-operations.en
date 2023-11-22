@@ -1,8 +1,8 @@
 ---
 title: Shared responsibility
 description: Learn about the security responsibilities of each party involved in your Adobe Commerce on cloud infrastructure project.
+exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
 ---
-
 # Shared responsibility security model
 
 Adobe Commerce on cloud infrastructure is a platform-as-a-service (PaaS) offering that relies on a shared responsibility security model. Adobe, the merchant, the cloud service provider, and the content delivery network (CDN) provider each bear distinct responsibility for maintaining the security of the Adobe Commerce on cloud infrastructure application and merchant-specific code and extensions.
