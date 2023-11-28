@@ -33,23 +33,23 @@ The following sections include best practice information for the maintenance pha
 
 ## Configuration
 
-| Best practice                                                                             | Description                                                                        |
-|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md) | Manage critical Adobe Commerce updates to prevent slow performance and outages.    |
+| Best practice                                                                             | Description                                                                     |
+|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [Scheduling Admin updates on production sites](scheduling-admin-updates-in-production.md) | Manage critical Adobe Commerce updates to prevent slow performance and outages. |
 
 ## Database management
 
-| Best practice                                                                                            | Description                                                                                         |
-|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Resolve database performance issues​](resolve-database-performance-issues.md)                            | Fix database issues that slow performance on Adobe Commerce sites deployed on cloud infrastructure. |
-| [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md)  | Prepare your MariaDB database for an upgrade.                                                       |
+| Best practice                                                                                          | Description                                                                                         |
+|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| [Resolve database performance issues​](resolve-database-performance-issues.md)                           | Fix database issues that slow performance on Adobe Commerce sites deployed on cloud infrastructure. |
+| [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md) | Prepare your MariaDB database for an upgrade.                                                       |
 
 ## Feature enhancements
 
-| Best practice                                                                                                                                           | Description                                                                                                          |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)   | Commerce & Coffee recording that describes personalization strategies.                                               |
-| [E-Commerce Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Commerce & Coffee recording that describes ecommerce trends.                                                         |
+| Best practice                                                                                                                                           | Description                                                                                                           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)   | Commerce & Coffee recording that describes personalization strategies.                                                |
+| [E-Commerce Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Commerce & Coffee recording that describes ecommerce trends.                                                          |
 | [AI Automation](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)     | Commerce & Coffee recording that describes personalization possibilities with artificial intelligence and automation. |
 
 ## Indexing
@@ -57,10 +57,10 @@ The following sections include best practice information for the maintenance pha
 | Best practice                                                                                              | Description                                                                      |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | [How to reindex](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Use cron jobs or the CLI tool to run reindexing.                                 |
-| [Configure indexers​](indexer-configuration.md)                                                             | Optimize site performance by following best practices for indexer configuration. |
+| [Configure indexers​](indexer-configuration.md)                                                              | Optimize site performance by following best practices for indexer configuration. |
 | [Order processing](order-processing-configuration.md)                                                      | Improve checkout and order processing performance.                               |
 
-## Site Monitoring
+## Site Monitoring and Security
 
 | Best practice                                                                                                                                   | Description                                                                                               |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -68,11 +68,12 @@ The following sections include best practice information for the maintenance pha
 | [Ready, Set, Maintain](https://business.adobe.com/blog/basics/ready-set-maintain)                                                               | Tips for maintaining your Adobe Commerce sites to maximize business value and uptime.                     |
 | [Use the [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)  | View important insights about your Adobe Commerce site in one place.                                      |
 | [Monitor performance, disk space, and logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Use New Relic to monitor key performance insights about your Adobe Commerce on cloud infrastructure site. |
+| [Respond to security incidents](respond-to-security-incident.md)                                                                                | Use New Relic to monitor key performance insights about your Adobe Commerce on cloud infrastructure site. |
 
 ### Upgrades
 
-| Best practice                                                           | Description                                                                                |
-|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [Patching at scale](patching-at-scale.md)                               | Learn how centralized patching for Adobe Commerce can help you manage enterprise projects. |
+| Best practice                                                         | Description                                                                                |
+|-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [Patching at scale](patching-at-scale.md)                             | Learn how centralized patching for Adobe Commerce can help you manage enterprise projects. |
 | [Update services and components to latest version​](update-services.md) | keep your Adobe Commerce on cloud infrastructure technology stack updated.                 |
 | [Upgrade checklist for Adobe Commerce​](upgrade-checklist.md)           | Create and use an upgrade checklist to plan your Adobe Commerce upgrade strategy.          |

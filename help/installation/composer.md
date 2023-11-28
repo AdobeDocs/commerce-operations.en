@@ -85,6 +85,10 @@ To get the Adobe Commerce or Magento Open Source metapackage:
 
     When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
+   >[!NOTE]
+   >
+   > When using a Composer `auth.json` file or environment variable, you will not be prompted to enter your authentication keys.
+
     If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure that there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://support.magento.com/hc/en-us) for help.
 
     See [Troubleshooting](https://support.magento.com/hc/en-us/articles/360033818091) for help with more errors.
