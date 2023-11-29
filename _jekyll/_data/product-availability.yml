@@ -111,7 +111,7 @@ services:
   Payment Services:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-payment-services.html
-      Release Notes: https://commercemarketplace.adobe.com/magento-payment-services.html#product.info.details.release_notes
+      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html
     support:
       - core: 2.4.7-beta2
         version: 2.3.0
