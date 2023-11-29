@@ -29,7 +29,9 @@ This changes the URL of the static files and forces the browser to load the new 
 
 Commerce enables this feature by default, and Adobe recommends keeping this feature enabled to prevent issues related to browsers serving up old static resources.
 
-You can find the configuration for this feature in [**[!UICONTROL Stores]** > Settings > Configuration > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+_**On-Premises only**_: If your site is not in [Production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=en#production-mode), you can find the configuration for this feature in [**[!UICONTROL Stores]** > Settings > Configuration > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+
+_**Cloud**_: This configuration is hidden because [Production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=en#production-mode) is strictly enforced, so you must use the command line as shown below.
 
 ![Static Files Settings](../../assets/configuration/static-files-settings.png)
 
