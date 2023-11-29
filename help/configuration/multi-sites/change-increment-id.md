@@ -22,7 +22,7 @@ You might need to change the increment ID for new DB entities in these cases:
 
 >[!INFO]
 >
->You may also fix the payment gateway issue for PayPal by allowing multiple payments per invoice ID in PayPal's Payment Receiving Preferences. See [PayPal gateway rejected request - duplicate invoice issue][] in the _Knowledge Base_.
+>You may also fix the payment gateway issue for PayPal by allowing multiple payments per invoice ID in PayPal's Payment Receiving Preferences. See [PayPal gateway rejected request - duplicate invoice issue](https://support.magento.com/hc/en-us/articles/115002457473) in the _Knowledge Base_.
 
 ## Prerequisite steps
 
