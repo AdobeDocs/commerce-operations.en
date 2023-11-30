@@ -14,7 +14,7 @@ How you contribute depends on who you are and the sort of changes you'd like to 
 
 ### Minor changes
 
-If you are contributing minor updates out of the goodness of your heart, visit the article and click the **Edit** link in the article that goes to the GitHub source for the article. Then, just use the GitHub UI to make your updates. See the general [Adobe Docs contributor guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) for more information.
+If you are contributing minor updates out of the goodness of your heart, visit the article and click in the feedback area that appears at the bottom of the article, click **Detailed feedback** options, and then click **Suggest an edit** to go to the markdown source file on GitHub. Then, just use the GitHub UI to make your updates. See the general [Adobe Docs contributor guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) for more information.
 
 Minor corrections or clarifications you submit for documentation and code examples in this repo are covered by the Adobe terms of use.
 
