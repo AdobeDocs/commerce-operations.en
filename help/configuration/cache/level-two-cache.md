@@ -41,8 +41,7 @@ Use the following example to modify or replace the existing cache section in the
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
@@ -63,8 +62,7 @@ Where:
   - `remote_backend_options` is the remote cache configuration.
   - `local_backend` is the local cache implementation: `Cm_Cache_Backend_File`
   - `local_backend_options` is the local cache configuration.
-    - `cache_dir` is a file cache-specific option for the directory where the local cache is stored.
-  - `use_stale_cache` is a flag that enables or disables the use of stale cache.
+  - `cache_dir` is a file cache-specific option for the directory where the local cache is stored.
 
 Adobe recommends using Redis for remote caching (`\Magento\Framework\Cache\Backend\Redis`) and `Cm_Cache_Backend_File` for the local caching of data in shared memory, using: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
@@ -88,6 +86,8 @@ Adobe recommends enabling the `use_stale_cache` option only for cache types that
 -  `reflection`
 -  `translate`
 
+Adobe does not recommend enabling the `use_stale_cache` option for the `default` cache type.
+
 The following code shows an example configuration:
 
 ```php
@@ -108,8 +108,7 @@ The following code shows an example configuration:
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
