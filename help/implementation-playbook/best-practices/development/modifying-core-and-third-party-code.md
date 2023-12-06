@@ -11,11 +11,11 @@ This document describes best practices when the need arises to modify the functi
 
 Methods of Modifying Code
 
-When modifying code, it is important to consider the scope of your changes. The "scope" of the changes refers to how far-reaching the effects of the code changes are. As a best practice, make your decision for how the modification will be developed to be based on the option that will have the smallest footprint and the least resource usage. The more wide-reaching our code overrides are, the more we deviate from the core Adobe Commerce functionality and this increases the likelihood of bugs and greater effort to maintain the codebase in the future.
+When modifying code, it is important to consider the scope of your changes. The "scope" of the changes refers to how far-reaching the effects of the code changes are. As a best practice, base the decision for how the eventual implementation is completed based on the option that will have the smallest footprint and the least resource usage. The more wide-reaching the code overrides are, the more a development team deviates from the core Adobe Commerce functionality and this increases the likelihood of bugs and greater effort to maintain the codebase in the future.
 
 ## Patch
 
-A patch is a file that contains instructions to directly change code within a file that we do not own or control. This is an option that should usually be considered as a last resort when no other options exist. Patches are intended to be a temporary solution. If you must create a patch, as a general best practice, remove the patch in favor of a more permanent solution within the following 2-4 weeks. 
+A patch is a file that contains instructions to directly change code within a file that is not under the direct control of the development team. This is an option that should usually be considered as a last resort when no other options exist. Patches are intended to be a temporary solution. If you must create a patch, as a general best practice, remove the patch in favor of a more permanent solution within the following 2-4 weeks. 
 
 Patches break easily. If the files that the patch targets are updated, this causes the patch to stop working in many cases. That's because a patch file contains line numbers and column numbers that specifically indicate what is to be changed by the patch. If anything doesn't match what the patch was expecting, it ceases to apply and is now broken.
 
