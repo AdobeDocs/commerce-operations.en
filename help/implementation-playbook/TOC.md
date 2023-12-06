@@ -99,7 +99,8 @@ mini-toc-levels: 3
     - [Optimize CSS and JS files](best-practices/development/optimize-css-js-files.md)
     - [Private content blocks](best-practices/development/private-content-block-configuration.md)
     - [Static content deployment](best-practices/development/static-content-deployment.md)
-    - [Modifying database tables](best-practices/development/modifying-core-and-third-party-tables.md)   
+    - [Modifying database tables](best-practices/development/modifying-core-and-third-party-tables.md)
+    - [Modifying core and third party code](best-practices/development/modifying-core-and-third-party-code.md)   
   - Launch {#launch}
     - [Overview](best-practices/launch/overview.md)
     - [Configure web crawlers](best-practices/launch/robots-txt.md)
