@@ -40,6 +40,10 @@ Adobe Commerce and Magento Open Source require certain PHP extensions. The follo
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
+### PHP Process Control
+
+{{php-process-control}}
+
 To verify installed extensions:
 
 1. List installed modules.

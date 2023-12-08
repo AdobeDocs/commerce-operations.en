@@ -58,6 +58,10 @@ For on-premesis, verify that PHP OPcache it is installed, see [PHP settings](pre
 
 If you must install OPcache separately, see the [PHP OPcache documentation](https://www.php.net/manual/en/opcache.setup.php).
 
+### PHP Process Control
+
+{{php-process-control}}
+
 ### PHPUnit
 
 PHPUnit (as a command-line tool) 9.0.0
