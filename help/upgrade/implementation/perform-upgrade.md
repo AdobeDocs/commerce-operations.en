@@ -52,7 +52,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
    bin/magento cron:remove
    ```
 
-1. Start all message queue consumers manually to ensure all messages are consumed.
+1. Start all message queue consumers manually to ensure that all messages are consumed.
 
    ```bash
    bin/magento cron:run --group=consumers
@@ -103,13 +103,13 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
     - `<product>` —(Required) The package to upgrade. For on-premises installations, this value must be either `product-community-edition` or `product-enterprise-edition`.
 
-    - `<version>` —(Required) The version of Adobe Commerce or Magento Open Source you are upgrading to. For example, `2.4.3`.
+    - `<version>` —(Required) The version of Adobe Commerce or Magento Open Source that you are upgrading to. For example, `2.4.3`.
 
     - `--no-update` —(Required) Disables the automatic update of the dependencies.
 
     - `--interactive-root-conflicts` —(Optional) Allows you to interactively view and update any out-of-date values from previous versions, or any customized values that do not match the version you are upgrading to.
 
-    - `--force-root-updates` —(Optional) Overrides all conflicting custom values with the expected Magento values.
+    - `--force-root-updates` —(Optional) Overrides all conflicting custom values with the expected Commerce values.
 
     - `--help` —(Optional) Provides usage details about the plugin.
 
@@ -245,7 +245,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## Check your work
 
-Open your storefront URL in a web browser to check whether the upgrade was successful. If your upgrade was unsuccessful, your storefront will not load properly.
+To check whether the upgrade was successful, open your storefront URL in a web browser. If your upgrade was unsuccessful, your storefront does not load properly.
 
 If the application fails with a  `We're sorry, an error has occurred while generating this email.` error:
 
