@@ -7,14 +7,14 @@ exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
 
 You can upgrade your Adobe Commerce or Magento Open Source application from the command line if you installed the software by:
 
--  Downloading the metapackage using the `composer create-project` command.
--  Installing the compressed archive.
+- Downloading the Composer metapackage using the `composer create-project` command.
+- Installing the compressed archive.
 
 >[!NOTE]
 >
 >Do not use this method to upgrade if you cloned the GitHub repository. Instead, see [Upgrade a git-based installation](../developer/git-installs.md) for upgrade instructions.
 
-The following instructions show you how to upgrade using Composer. Adobe Commerce 2.4.2 introduced support for Composer 2. If you are attempting to upgrade from <2.4.1, you must first upgrade to a version that is compatible with Composer 2 (for example, 2.4.2) using Composer 1 _before_ upgrading to Composer 2 for >2.4.2 upgrades. In addition, you must be running a [supported version](../../installation/system-requirements.md) of PHP.
+The following instructions show you how to upgrade using the Composer package manager. Adobe Commerce 2.4.2 introduced support for Composer 2. If you are attempting to upgrade from <2.4.1, you must first upgrade to a version that is compatible with Composer 2 (for example, 2.4.2) using Composer 1 _before_ upgrading to Composer 2 for >2.4.2 upgrades. In addition, you must be running a [supported version](../../installation/system-requirements.md) of PHP.
 
 >[!WARNING]
 >
@@ -28,7 +28,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
 >[!NOTE]
 >
->See the examples at the end of this section for help with specifying different release levels. For example, minor release, quality patch, and security patch. Adobe Commerce customers can access patches two weeks before the General Availability (GA) date. Pre-release packages are available through Composer only. You cannot find them on the Downloads Portal or GitHub until GA. If you cannot find these packages in Composer, contact Adobe Commerce Support.
+>See the examples at the end of this section for help with specifying different release levels. For example, quality patches and security patches. If you cannot find these packages in Composer, contact Adobe Commerce Support.
 
 1. Switch to maintenance mode to prevent access to your store during the upgrade process.
 
@@ -137,58 +137,36 @@ _Adobe Commerce_:
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
-### Example - Minor release
-
-Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the Magento Open Source 2.4.3 metapackage:
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
-```
-
 ### Example - Quality patch
 
-Quality patches primarily contain functional _and_ security fixes. However, they can sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the Magento Open Source 2.4.1 metapackage:
+Quality patches primarily contain functional _and_ security fixes. However, they can sometimes contain new, backward-compatible features. Use Composer to download a quality patch.
+
+_Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### Example - Security patch
 
-Security patches contain security fixes only. They are designed to make the upgrade process faster and easier.
-
-Security patches use the Composer naming convention `2.4.x-px`. Use Composer to specify a patch.
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
-```
+Security patches contain security fixes only. They are designed to make the upgrade process faster and easier. Security patches use the Composer naming convention `2.4.x-px`.
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
+```
+
+_Magento Open Source_:
+
+```bash
+composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## Update metadata
