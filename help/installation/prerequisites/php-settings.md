@@ -15,6 +15,10 @@ This topic discusses how to set required PHP options.
 
 For Cloud configuration guidance, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in the _Commerce on Cloud Infrastructure_ guide.
 
+## PHP Process Control
+
+{{php-process-control}}
+
 ## Verify PHP is installed
 
 PHP is installed by default on most Linux distributions. This topic assumes that you have already installed PHP. To verify if PHP is installed, enter the following on the command line:
