@@ -1,18 +1,20 @@
 ---
-title: Perform an Upgrade
-description: Follow these steps to upgrade an Adobe Commerce or Magento Open Source project.
+title: Perform an upgrade
+description: Follow these steps to upgrade on-premises deployments of Adobe Commerce.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
 ---
+
 # Perform an upgrade
 
-You can upgrade your Adobe Commerce or Magento Open Source application from the command line if you installed the software by:
+You can upgrade _on-premises_ deployments of the Adobe Commerce or Magento Open Source application from the command line if you installed the software by:
 
 - Downloading the Composer metapackage using the `composer create-project` command.
 - Installing the compressed archive.
 
 >[!NOTE]
 >
->Do not use this method to upgrade if you cloned the GitHub repository. Instead, see [Upgrade a git-based installation](../developer/git-installs.md) for upgrade instructions.
+>- For Adobe Commerce on cloud infrastructure projects, see [Upgrade Commerce version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) in the Cloud Guide.
+>- Do not use this method to upgrade if you cloned the GitHub repository. See [Upgrade a git-based installation](../developer/git-installs.md).
 
 The following instructions show you how to upgrade using the Composer package manager. Adobe Commerce 2.4.2 introduced support for Composer 2. If you are attempting to upgrade from <2.4.1, you must first upgrade to a version that is compatible with Composer 2 (for example, 2.4.2) using Composer 1 _before_ upgrading to Composer 2 for >2.4.2 upgrades. In addition, you must be running a [supported version](../../installation/system-requirements.md) of PHP.
 
