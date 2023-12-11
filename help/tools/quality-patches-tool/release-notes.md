@@ -19,7 +19,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 * **ACSD-54972** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the canonical category URL doesn't update after changing the category URL.
 * **ACSD-53636** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.5) - Fixes the issue where the regular price is not displayed on product listing pages for configurable products that have child products with special prices.
-* **ACSD-54885** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with the multiple address checkout when the admin user is using the "Login as Customer" functionality.
+* **ACSD-54885** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with the multiple address checkout when the admin user is using the *Login as Customer* functionality.
 * **ACSD-55610** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where a partially canceled order has an incorrect discount amount.
 * **ACSD-55334** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes translations for labels through Translation dictionaries in GraphQL response.
 * **ACSD-54739** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where product stock status condition is not applied for related product rules.
