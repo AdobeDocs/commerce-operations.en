@@ -23,7 +23,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-55610** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where a partially canceled order has an incorrect discount amount.
 * **ACSD-55334** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes translations for labels through Translation dictionaries in GraphQL response.
 * **ACSD-54739** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the product stock status condition is not applied for related product rules.
-* **ACSD-53925** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the admin is unable to save CMS block with Product Carousel when catalog_product_price dimensions-mode is set to website.
+* **ACSD-53925** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the admin is unable to save CMS block with product carousel when `catalog_product_price` dimensions-mode is set to *website*.
 * **ACSD-52714** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the date filter is not working in the admin grid when the date format is set as "Y-m-d".
 * **ACSD-55055** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Improves performance of loading product attributes in cart price rules in the shopping cart.
 * **ACSD-53790** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where Multiple RMAs for a single product can be created via REST API.
