@@ -4,6 +4,7 @@ description: Learn how and when to modify core Adobe Commerce and third-party PH
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2023-12-8
+exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
 ---
 # Best practices for modifying or overriding core and third-party PHP code
 
