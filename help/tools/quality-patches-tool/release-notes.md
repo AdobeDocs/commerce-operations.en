@@ -29,7 +29,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-53790** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where Multiple RMAs for a single product can be created via REST API.
 * **ACSD-56090** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.5) - Fixes the issue where the GraphQL request is responding with all stores data rather than the specifically requested store data.
 * **ACSD-54983** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where getting the company user UID with GraphQL request is not possible when the user status is set to inactive.
-* **ACSD-53309** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where tax is not fully applied in the "Regular Price" label when the customizable option is selected.
+* **ACSD-53309** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where tax is not fully applied in the *[!UICONTROL Regular Price]* label when the customizable option is selected.
 * **ACSD-55305** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where the "edit company user" popup on the myAccount > Company Structure page freezes with a loader on the screen.
 * Updated patches: ACSD-49013
 
