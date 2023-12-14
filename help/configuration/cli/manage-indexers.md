@@ -225,6 +225,8 @@ Catalog Search:                                    Update on Save
 >
 >Be sure to set the [!DNL Customer Grid] with `realtime` instead of `schedule`. The [!DNL Customer Grid] can only be reindexed using the [!UICONTROL Update on Save] option. This index does not support the `Update by Schedule` option.
 >More on this topic can be found at [Configuration best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
+>
+>The command line needed to set this indexer to update on save: `php bin/magento indexer:set-mode realtime customer_grid`
 
 >[!INFO]
 >
