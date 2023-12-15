@@ -52,6 +52,7 @@ It is important to adjust the L2 cache memory maximum usage based on project req
 >The configurable option `cleanup_percentage` was introduced in Magento 2.4.4
 
 `.magento.env.yaml`
+
 ```yaml
 stage:
   deploy:
@@ -63,7 +64,6 @@ stage:
           backend_options:
             cleanup_percentage: 90
 ```
-
 
 The cache requirements can vary based on the project configuration and custom/third-party code, the scope of the L2 cache memory sizing will be to allow L2 cache to operate without too many threshold hits. 
 Ideally the L2 cache memory usage should stabilize at certain level below the threshold, just to avoid frequent storage clearing.
