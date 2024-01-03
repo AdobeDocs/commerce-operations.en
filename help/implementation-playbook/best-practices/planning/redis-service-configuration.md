@@ -32,6 +32,49 @@ For on-premises installations, see [Configure Redis page caching](../../../confi
 >
 >Verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command. 
 
+
+### L2 cache memory sizing (Adobe Commerce Cloud)
+
+L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) as a storage mechanism. Compared with specialized key-value database systems, a temporary file system doesn't have a key eviction policy to control memory usage. 
+
+The lack of memory usage control can cause the L2 cache memory usage to grow over time by accumulating the stale cache.
+
+To avoid memory exhaustion of L2 cache implementations, Adobe Commerce clears the storage when a certain threshold is reached. The default threshold value is 95%.
+
+It is important to adjust the L2 cache memory maximum usage based on project requirements for cache storage. Use one of the following methods to configure memory cache sizing:
+
+- Create a support ticket to request size changes of the `/dev/shm` mount.
+- Adjust the `cleanup_percentage` property at the application level to cap the maximum filling percentage of the storage. The remaining free memory can be used by other services.
+   You can adjust the configuration in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>The `cleanup_percentage` configurable option was introduced in Adobe Commerce 2.4.4.
+
+The following code shows an example configuration in the `.magento.env.yaml` file:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+Cache requirements can vary based on project configuration and custom third-party code. The scope of the L2 cache memory sizing allows the L2 cache to operate without too many threshold hits. 
+Ideally, L2 cache memory usage should stabilize at a certain level below the threshold, just to avoid frequent storage clearing.
+
+You can check L2 cache storage memory usage on each node of the cluster using the following CLI command and looking for the `/dev/shm` line. 
+The usage could vary across different nodes, but it should converge to the same value.
+
+```bash
+df -h
+```
+
 ## Enable Redis slave connection
 
 Enable a Redis slave connection in the `.magento.env.yaml` configuration file to allow only one node to handle read-write traffic while the other nodes handle the read-only traffic.
