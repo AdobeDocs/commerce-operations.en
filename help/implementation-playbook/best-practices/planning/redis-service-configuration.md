@@ -37,7 +37,7 @@ For on-premises installations, see [Configure Redis page caching](../../../confi
 
 L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) as a storage mechanism. Compared with specialized key-value database systems, a temporary file system doesn't have a key eviction policy to control memory usage. 
 
-This could be the reason why L2 cache memory usage is growing over time, by accumulating the stale cache.
+The lack of memory usage control can cause the L2 cache memory usage to grow over time by accumulating the stale cache.
 
 To avoid memory exhaustion L2 cache implementation in Magento will clear the storage when certain threshold is reached. The default threshold value is 95%.
 
