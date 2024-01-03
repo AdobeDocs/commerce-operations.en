@@ -51,7 +51,7 @@ It is important to adjust the L2 cache memory maximum usage based on project req
 >
 >The `cleanup_percentage` configurable option was introduced in Adobe Commerce 2.4.4.
 
-`.magento.env.yaml`
+The following code shows an example configuration in the `.magento.env.yaml` file:
 
 ```yaml
 stage:
