@@ -39,7 +39,7 @@ L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) as 
 
 The lack of memory usage control can cause the L2 cache memory usage to grow over time by accumulating the stale cache.
 
-To avoid memory exhaustion L2 cache implementation in Magento will clear the storage when certain threshold is reached. The default threshold value is 95%.
+To avoid memory exhaustion of L2 cache implementations, Adobe Commerce clears the storage when a certain threshold is reached. The default threshold value is 95%.
 
 It is important to adjust the L2 cache memory maximum usage based on project requirements for cache storage by either of the two options:
 
