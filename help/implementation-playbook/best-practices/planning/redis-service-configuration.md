@@ -35,7 +35,7 @@ For on-premises installations, see [Configure Redis page caching](../../../confi
 
 ### L2 cache memory sizing (Adobe Commerce Cloud)
 
-L2 cache is using [Temporary File System](https://en.wikipedia.org/wiki/Tmpfs) as storage system, which comparing with specialised key-value database systems, doesn't have a key eviction policy to keep the memory usage under control. 
+L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) as a storage mechanism. Compared with specialized key-value database systems, a temporary file system doesn't have a key eviction policy to control memory usage. 
 
 This could be the reason why L2 cache memory usage is growing over time, by accumulating the stale cache.
 
