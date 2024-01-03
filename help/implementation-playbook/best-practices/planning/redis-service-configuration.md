@@ -65,7 +65,7 @@ stage:
             cleanup_percentage: 90
 ```
 
-The cache requirements can vary based on the project configuration and custom/third-party code, the scope of the L2 cache memory sizing will be to allow L2 cache to operate without too many threshold hits. 
+Cache requirements can vary based on project configuration and custom third-party code. The scope of the L2 cache memory sizing allows the L2 cache to operate without too many threshold hits. 
 Ideally the L2 cache memory usage should stabilize at certain level below the threshold, just to avoid frequent storage clearing.
 
 The memory usage of L2 cache storage could be checked on each node of the cluster by the following command, looking for /dev/shm line. 
