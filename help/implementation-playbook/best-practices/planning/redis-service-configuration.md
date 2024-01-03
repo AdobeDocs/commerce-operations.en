@@ -68,7 +68,7 @@ stage:
 Cache requirements can vary based on project configuration and custom third-party code. The scope of the L2 cache memory sizing allows the L2 cache to operate without too many threshold hits. 
 Ideally the L2 cache memory usage should stabilize at certain level below the threshold, just to avoid frequent storage clearing.
 
-The memory usage of L2 cache storage could be checked on each node of the cluster by the following command, looking for /dev/shm line. 
+You can check L2 cache storage memory usage on each node of the cluster using the following CLI command and looking for the `/dev/shm` line. 
 The usage could vary across different nodes, but it should converge to the same value.
 
 ```bash
