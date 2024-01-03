@@ -45,7 +45,7 @@ It is important to adjust the L2 cache memory maximum usage based on project req
 
 1. Create a support ticket to request size change of the /dev/shm mount
 1. Adjust the `cleanup_percentage` at the application level to cap the maximum filling percentage of the storage. In this way the remaining free memory can be used by other services.
-   The configuration can be adjusted in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`
+   You can adjust the configuration in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`.
 
 >[!NOTE]
 >
