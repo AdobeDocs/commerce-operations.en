@@ -15,6 +15,24 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.43 {#v1-1-43}
+
+* **ACSD-54972** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the canonical category URL doesn't update after changing the category URL.
+* **ACSD-53636** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.5) - Fixes the issue where the regular price is not displayed on product listing pages for configurable products that have child products with special prices.
+* **ACSD-54885** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue with the multiple address checkout when the admin user is using the *Login as Customer* functionality.
+* **ACSD-55610** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where a partially canceled order has an incorrect discount amount.
+* **ACSD-55334** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes translations for labels through Translation dictionaries in GraphQL response.
+* **ACSD-54739** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the product stock status condition is not applied for related product rules.
+* **ACSD-53925** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the admin is unable to save CMS block with product carousel when `catalog_product_price` dimensions-mode is set to *website*.
+* **ACSD-52714** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the date filter is not working in the admin grid when the date format is set as *Y-m-d*.
+* **ACSD-55055** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Improves performance of loading product attributes in cart price rules in the shopping cart.
+* **ACSD-53790** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where Multiple RMAs for a single product can be created via REST API.
+* **ACSD-56090** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.5) - Fixes the issue where the GraphQL request is responding with all stores' data rather than the specifically requested store data.
+* **ACSD-54983** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where getting the company user UID with GraphQL request is not possible when the user status is set to *[!UICONTROL Inactive]*.
+* **ACSD-53309** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where tax is not fully applied in the *[!UICONTROL Regular Price]* label when the customizable option is selected.
+* **ACSD-55305** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where the *[!UICONTROL Edit Company User]* popup on the **[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]** page freezes with a loader on the screen.
+* Updated patches: ACSD-49013
+
 ## v1.1.42 {#v1-1-42}
 
 * **ACSD-53658** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where *[!UICONTROL Recently Viewed]* product data is not updated properly in the store view.

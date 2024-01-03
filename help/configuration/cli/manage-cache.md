@@ -28,6 +28,7 @@ Commerce 2 has the following cache types:
 |Web services configuration|config_webservice|Caching the Web API Structure.|
 |Customer Notification|customer_notification|Temporary notifications that appear in the user interface.|
 |Admin UI SDK Cache|admin_ui_sdk|Caches Admin customizations that were added with the [Adobe Commerce Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/).|
+|Webhooks Response Cache|webhooks_response|Caches responses to [webhook requests](https://developer.adobe.com/commerce/extensibility/webhooks/).|
 
 ## View the cache status
 

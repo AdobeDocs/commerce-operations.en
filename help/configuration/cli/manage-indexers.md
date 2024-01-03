@@ -105,6 +105,8 @@ Catalog Search index has been rebuilt successfully in <time>
 
 ### Reindexing in parallel mode
 
+{{php-process-control}}
+
 Indexers are scoped and multi-threaded to support reindexing in parallel mode. It parallelizes by the indexer's dimension and executes across multiple threads, reducing processing time.
 
 In this context, `dimension` is the scope of the reindexing, for instance a `website` or just a specific `customer_group`.
@@ -217,11 +219,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### Configure indexers
+### Set the indexer mode
+
+>[!IMPORTANT]
+>
+>Be sure to set the [!DNL Customer Grid] with `realtime` instead of `schedule`. The [!DNL Customer Grid] can only be reindexed using the [!UICONTROL Update on Save] option. This index does not support the `Update by Schedule` option. Use the following command line to set this indexer to update on save: `php bin/magento indexer:set-mode realtime customer_grid`
+>
+>See [Best practices for indexer configuration](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) in the _Implementation Playbook_.
 
 >[!INFO]
 >
->Before switching indexer modes, we recommend putting your website to [maintenance](../../installation/tutorials/maintenance-mode.md) mode and [disable cron jobs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). This ensures you do not suffer database locks.
+>Before switching indexer modes, set your website to [maintenance](../../installation/tutorials/maintenance-mode.md) mode and [disable cron jobs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). This ensures you do not suffer database locks.
 
 To specify the indexer configuration:
 

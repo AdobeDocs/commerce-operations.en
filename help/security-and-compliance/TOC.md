@@ -1,12 +1,13 @@
 ---
 user-guide-title: Security and compliance
-user-guide-description: Learn how Adobe Commerce and Magento Open Source merchants are responsible for maintaining a secure environment and meeting the legal requirements and best practices for online merchants in their jurisdiction.
+user-guide-description: Learn about regulatory compliance and merchant responsibilities for maintaining a secure Adobe Commerce project.
 feature: Security
 ---
 
 # Security and Compliance {#security-and-compliance}
 
 - [Overview](overview.md)
+- [Shared responsibility](shared-responsibility.md)
 - [Content security policy](content-security-policy.md)
 - Privacy regulations {#privacy}
   - [CCPA](privacy/ccpa.md)
