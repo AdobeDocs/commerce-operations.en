@@ -1,8 +1,43 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Nov 20 11:26:11 2023
+updated: Wed Jan 3 08:50:56 2024
 entries:
+- description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+    for Adobe Commerce on cloud infrastructure.
+  versions: ''
+  type: major-update
+  date: January 3, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/728
+  merge_commit: 21da4c22744dbb3b27b0dbe184b946788748a52e
+  contributor: gbabarus
+  membership: false
+  labels:
+  - major-update
+  - best-practices
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.43 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: December 11, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/725
+  merge_commit: 90447e9b8c00c4901d0d62c9de36f21df55385dc
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added a new best practices topic about [modifying core and third-party
+    PHP code](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-code.html).
+  versions: ''
+  type: new-topic
+  date: December 7, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/722
+  merge_commit: 21c0b6faab093bf9db860ce2f4d56072c4cc6e49
+  contributor: ralbin
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
 - description: Added a new topic that describes the [shared responsibility security
     model](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/shared-responsibility.html)
     for Adobe Commerce on cloud infrastructure projects.

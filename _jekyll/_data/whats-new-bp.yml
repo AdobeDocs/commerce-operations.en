@@ -2,8 +2,32 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Mon Nov 20 11:26:01 2023
+updated: Wed Jan 3 08:51:06 2024
 entries:
+- description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
+    for Adobe Commerce on cloud infrastructure.
+  versions: ''
+  type: best-practices
+  date: January 3, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/728
+  merge_commit: 21da4c22744dbb3b27b0dbe184b946788748a52e
+  contributor: gbabarus
+  membership: false
+  labels:
+  - major-update
+  - best-practices
+- description: Added a new best practices topic about [modifying core and third-party
+    PHP code](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-code.html).
+  versions: ''
+  type: best-practices
+  date: December 7, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/722
+  merge_commit: 21c0b6faab093bf9db860ce2f4d56072c4cc6e49
+  contributor: ralbin
+  membership: false
+  labels:
+  - new-topic
+  - best-practices
 - description: Added a [security best practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html)
     topic to the _Implementation Playbook_.
   versions: ''
