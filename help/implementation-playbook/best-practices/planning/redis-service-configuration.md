@@ -71,7 +71,7 @@ Ideally the L2 cache memory usage should stabilize at certain level below the th
 The memory usage of L2 cache storage could be checked on each node of the cluster by the following command, looking for /dev/shm line. 
 The usage could vary across different nodes, but it should converge to the same value.
 
-```terminal
+```bash
 df -h
 ```
 
