@@ -41,10 +41,10 @@ The lack of memory usage control can cause the L2 cache memory usage to grow ove
 
 To avoid memory exhaustion of L2 cache implementations, Adobe Commerce clears the storage when a certain threshold is reached. The default threshold value is 95%.
 
-It is important to adjust the L2 cache memory maximum usage based on project requirements for cache storage by either of the two options:
+It is important to adjust the L2 cache memory maximum usage based on project requirements for cache storage. Use one of the following methods to configure memory cache sizing:
 
-1. Create a support ticket to request size change of the /dev/shm mount
-1. Adjust the `cleanup_percentage` at the application level to cap the maximum filling percentage of the storage. In this way the remaining free memory can be used by other services.
+- Create a support ticket to request size changes of the `/dev/shm` mount.
+- Adjust the `cleanup_percentage` property at the application level to cap the maximum filling percentage of the storage. The remaining free memory can be used by other services.
    You can adjust the configuration in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`.
 
 >[!NOTE]
