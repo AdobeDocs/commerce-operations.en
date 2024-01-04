@@ -1,7 +1,7 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Thu Jan 4 10:01:17 2024
+updated: Wed Jan 3 08:50:56 2024
 entries:
 - description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
     for Adobe Commerce on cloud infrastructure.
@@ -15,73 +15,6 @@ entries:
   labels:
   - major-update
   - best-practices
-- description: Updated the following topics for the 2.4.7-beta2 release:<br/>- [Adobe
-    Commerce CLI (on-premises, Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html)<br/>-
-    [Magento Open Source CLI (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html)<br/>-
-    [Adobe Commerce packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html)<br/>-
-    [Magento Open Source packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html)
-  versions: 2.4.7
-  type: major-update
-  date: October 9, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/686
-  merge_commit: 7a2e0f9fd2e74776107ac85de9b785aaf056413c
-  contributor: shevtsov
-  membership: false
-  labels:
-  - major-update
-  - 2.4.7
-- description: Published release notes for the October 2023 Adobe Commerce patches:<br/>-
-    [2.4.7-beta2](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html)<br/>-
-    [2.4.6-p3](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p3.html)<br/>-
-    [2.4.5-p5](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p5.html)<br/>-
-    [2.4.4-p6](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html)
-  versions: 2.4.7
-  type: major-update
-  date: September 21, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/667
-  merge_commit: d1a37c01f56c12f4d4553bcd3ad883a321de9ac8
-  contributor: frontain
-  membership: false
-  labels:
-  - major-update
-  - 2.4.7
-- description: Updated the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
-    for patches that were released in October 2023.
-  versions: 2.4.7
-  type: major-update
-  date: September 19, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/669
-  merge_commit: 93381f57ab687521e1503144cf5c5442da856310
-  contributor: jmatthew
-  membership: false
-  labels:
-  - major-update
-  - 2.4.7
-- description: Added a description of the new [Handles params size](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/configure-varnish-commerce.html)
-    system configuration option for full-page caching
-  versions: 2.4.7
-  type: major-update
-  date: September 19, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/671
-  merge_commit: 372a37d8c75aec195951114fa9bc2786fc450bf8
-  contributor: jmatthew
-  membership: false
-  labels:
-  - major-update
-  - 2.4.7
-- description: Clarified requirements for using the [scope](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values.html),
-    [website, store, and store view](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html)
-    codes.
-  versions: 2.4.7
-  type: major-update
-  date: August 8, 2023
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/606
-  merge_commit: 21d8d1f26e44d48c84095c539e68b34066854fda
-  contributor: jmatthew
-  membership: false
-  labels:
-  - major-update
-  - 2.4.7
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.43 Quality Patches Tool (QPT) package release.
   versions: ''
@@ -196,6 +129,73 @@ entries:
   membership: false
   labels:
   - major-update
+- description: Updated the following topics for the 2.4.7-beta2 release:<br/>- [Adobe
+    Commerce CLI (on-premises, Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html)<br/>-
+    [Magento Open Source CLI (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html)<br/>-
+    [Adobe Commerce packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html)<br/>-
+    [Magento Open Source packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html)
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/686
+  merge_commit: 7a2e0f9fd2e74776107ac85de9b785aaf056413c
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Published release notes for the October 2023 Adobe Commerce patches:<br/>-
+    [2.4.7-beta2](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html)<br/>-
+    [2.4.6-p3](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p3.html)<br/>-
+    [2.4.5-p5](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p5.html)<br/>-
+    [2.4.4-p6](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html)
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/667
+  merge_commit: d1a37c01f56c12f4d4553bcd3ad883a321de9ac8
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Updated the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+    for patches that were released in October 2023.
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/669
+  merge_commit: 93381f57ab687521e1503144cf5c5442da856310
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Added a description of the new [Handles params size](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/configure-varnish-commerce.html)
+    system configuration option for full-page caching.
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/671
+  merge_commit: 372a37d8c75aec195951114fa9bc2786fc450bf8
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Clarified requirements for using the [scope](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values.html),
+    [website, store, and store view](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-admin.html)
+    codes.
+  versions: 2.4.7
+  type: major-update
+  date: October 10, 2023
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/606
+  merge_commit: 21d8d1f26e44d48c84095c539e68b34066854fda
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.38 Quality Patches Tool (QPT) package release.
   versions: ''
