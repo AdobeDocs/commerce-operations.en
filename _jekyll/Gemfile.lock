@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/commerce-docs/whatsup_github
-  revision: c691334f24d84c0de5cc29402a3a5137664e2d24
-  branch: develop
+  revision: d21e902360deda9efbef9f7783b8b73f19fc7fa9
+  branch: main
   specs:
     whatsup_github (1.1.0)
       netrc (~> 0.11)
