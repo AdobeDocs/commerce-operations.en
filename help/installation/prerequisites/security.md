@@ -62,4 +62,4 @@ To enable Apache to initiate a connection to another host with SELinux enabled:
 Depending on your security requirements, you might find it necessary to open port 80 and other ports in your firewall. Because of the sensitive nature of networking security, Adobe strongly recommends that you consult with your IT department before proceeding. Following are some suggested references:
 
 *  Ubuntu: [Ubuntu documentation page](https://help.ubuntu.com/community/IptablesHowTo)
-*  CentOS: [CentOS how-to](https://wiki.centos.org/HowTos/Network/IPTables).
+*  CentOS: [CentOS how-to](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).

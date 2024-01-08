@@ -5,7 +5,9 @@ exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 ---
 # Quick start on-premises installation
 
-We use [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source metapackage provides the following advantages:
+The instructions on this page describe how to install Adobe Commerce and Magento Open Source on [self-hosted](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructure. For guidance on upgrading an existing installation, see the [_Upgrade Guide_](../upgrade/overview.md).
+
+Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source metapackage provides the following advantages:
 
 -  Reuse third-party libraries without bundling them with source code
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
@@ -27,7 +29,7 @@ Before you continue, you must do the following:
 
 ## Log in as file system owner
 
-Learn about ownership, permissions, and the file system owner in our [Overview of ownership and permissions topic](prerequisites/file-system/overview.md).
+Learn about ownership, permissions, and the file system owner in the [Overview of ownership and permissions topic](prerequisites/file-system/overview.md).
 
 To switch to the file system owner:
 
@@ -47,7 +49,7 @@ To switch to the file system owner:
 
 1. To run CLI commands from any directory, add `<app_root>/bin` to your system `PATH`.
 
-   Because shells have differing syntax, consult a reference like [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Because shells have differing syntaxes, consult a reference like [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Sample bash shell for CentOS:
 
@@ -67,7 +69,7 @@ To get the Adobe Commerce or Magento Open Source metapackage:
 
 1. Log in to your application server as, or switch to, the [file system owner](prerequisites/file-system/overview.md).
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot.
-1. Create Composer project using the Adobe Commerce or Magento Open Source metapackage.
+1. Create a Composer project using the Adobe Commerce or Magento Open Source metapackage.
 
     **Magento Open Source**
 
@@ -81,40 +83,40 @@ To get the Adobe Commerce or Magento Open Source metapackage:
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
     ```
 
-    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
+    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+
+   >[!NOTE]
+   >
+   > When using a Composer `auth.json` file or environment variable, you will not be prompted to enter your authentication keys.
 
     If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure that there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://support.magento.com/hc/en-us) for help.
 
     See [Troubleshooting](https://support.magento.com/hc/en-us/articles/360033818091) for help with more errors.
 
-    >[!NOTE]
-    >
-    >Adobe Commerce customers can access patches two weeks before the General Availability (GA) date. Pre-release packages are available through Composer only. You cannot access pre-releases on the Developer Portal or GitHub until GA. If you cannot find these packages in Composer, contact Adobe Commerce Support.
-
 ### Example - Minor release
 
-Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the Adobe Commerce 2.4.5 metapackage:
+Minor releases contain new features, quality fixes, and security fixes. Use Composer to specify a minor release. For example, to specify the Adobe Commerce 2.4.6 metapackage:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Example - Quality patch
 
-Quality patches primarily contain functional _and_ security fixes. However, they can also sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the Adobe Commerce 2.4.5 metapackage:
+Quality patches primarily contain functional _and_ security fixes. However, they can also sometimes contain new, backward-compatible features. Use Composer to download a quality patch. For example, to specify the Adobe Commerce 2.4.6 metapackage:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Example - Security patch
 
 Security patches contain security fixes only. They are designed to make the upgrade process faster and easier.
 
-Security patches use the Composer naming convention `2.4.5-px`. Use Composer to specify a patch. For example, to download the Adobe Commerce 2.4.5-p1 metapackage:
+Security patches use the Composer naming convention `2.4.6-px`. Use Composer to specify a patch. For example, to download the Adobe Commerce 2.4.6-p1 metapackage:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
 ## Set file permissions
@@ -160,7 +162,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->You can customize the Admin URI with the `--backend-frontname` option. However, we recommend omitting this option and allowing the installation command to automatically generate a random URI. A random URI is harder for hackers or malicious software to exploit. The URI displays in your console when installation is complete.
+>You can customize the Admin URI with the `--backend-frontname` option. However, Adobe recommends omitting this option and allowing the installation command to automatically generate a random URI. A random URI is harder for hackers or malicious software to exploit. The URI displays in your console when installation is complete.
 
 >[!TIP]
 >
@@ -224,4 +226,4 @@ The following arguments are common to all commands. These commands can be run ei
 
 >[!NOTE]
 >
->Congratulations! You've completed the quick install. Need more advanced help? Check out our [Advanced install](advanced.md) guide.
+>Congratulations! You've completed the quick install. Need more advanced help? Check out the [Advanced install](advanced.md) guide.

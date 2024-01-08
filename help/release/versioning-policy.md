@@ -13,8 +13,8 @@ Adobe Commerce and Magento Open Source use [semantic versioning](https://semver.
    -  **SECURITY patch release**—2.4.5-p1
       -  Security bug fix
       -  Security enhancement
--  **BETA patch release**—2.4.7-beta1
--  **Feature release**
+-  **BETA patch release**—2.4.7-beta2
+-  **Extensibility, Infrastructure, and Services release**
 -  **Hotfix**
 -  **Individual patch**
 -  **Custom patch**
@@ -56,9 +56,9 @@ Pre-general availability releases of Adobe Commerce features are made publicly a
 
 Beta Releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) the Beta Releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the Beta Releases and/or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at Customer's own risk.
 
-## Feature release
+## Extensibility, Infrastructure, and Services release
 
-Feature releases contain new features and feature updates that are delivered as independent services, separate from the patch releases. Examples include services like Product Recommendations and Live Search, independent modules like PWA Studio and Inventory Management (MSI), and updates to our cloud services and infrastructure.
+Feature releases that contain new features and feature updates that are delivered as independent services, separate from patch releases. Examples include extensibility technology like API Mesh and Eventing, SaaS products like Product Recommendations and Live Search, independent modules like B2B and PWA Studio, and updates to our cloud hosting services and infrastructure.
 
 ## Hotfix
 

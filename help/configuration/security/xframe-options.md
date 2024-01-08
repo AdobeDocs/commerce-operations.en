@@ -1,14 +1,14 @@
 ---
-title: X-Frame-Options header
-description: Use X-Frame-Options to control page renderings.
+title: Prevent Clickjacking Exploits
+description: Prevent clickjacking exploits by using the `X-Frame-Options` header to control page renderings.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
 ---
-# X-Frame-Options header
+# Prevent Clickjacking Exploits
 
-To help prevent [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) exploits, we added an option to use the [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP request header in requests to your storefront.
+Prevent [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) exploits by including the [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP request header in requests to your storefront.
 
-The `X-Frame-Options` header enables you to specify if a browser should be allowed to render a page in a `<frame>`, `<iframe>`, or `<object>` as follows:
+The `X-Frame-Options` header enables you to specify whether a browser is allowed to render a page in a `<frame>`, `<iframe>`, or `<object>` as follows:
 
 - `DENY`: Page cannot be displayed in a frame.
 - `SAMEORIGIN`: (default) Page can be displayed only in a frame on the same origin as the page itself.

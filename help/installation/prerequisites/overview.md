@@ -60,9 +60,11 @@ To install or upgrade Apache, see [Apache](web-server/apache.md).
 
 ### PHP
 
-See [system requirements](../system-requirements.md) for supported versions of PHP and [PHP] for PHP requirements.
+See [system requirements](../system-requirements.md) for supported versions of PHP and [PHP](../system-requirements.md#php-settings) for PHP requirements.
 
 ### MySQL
+
+Check that you have a compatible version of MySQL for the version of Adobe Commerce or Magento Open Source you are installing. See [System requirements](../system-requirements.md) for supported versions.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -74,7 +76,7 @@ For example:
 mysql -u magento -p
 ```
 
-Check that you have the correct version of MySQL for the version of Adobe Commerce or Magento Open Source you are installing ([check here for supported versions](../system-requirements.md). The following result indicates the version that you are running.)
+The following result indicates the version that you are running.
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.

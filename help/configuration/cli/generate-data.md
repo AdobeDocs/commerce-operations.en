@@ -45,6 +45,8 @@ The following table provides details about the data generator profiles: small, m
 >[!WARNING]
 >
 >Before running the data generator, disable all cron jobs running on the server. Disabling cron jobs prevents the data generator from performing actions that conflict with active cron jobs and avoids unnecessary errors.
+>
+>If you intend to implement eventing with [!DNL Adobe I/O Events for Adobe Commerce] while testing performance, run this command before subscribing [events](https://developer.adobe.com/commerce/extensibility/events/). Subscribing events first can cause errors.
 
 Run the command as discussed in this section. After the command runs, you must [reindex all indexers](../cli/manage-indexers.md).
 

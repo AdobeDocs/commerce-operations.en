@@ -4,7 +4,7 @@
 
 This page contains recent changes that we think you'd like to see. We exclude all minor updates, such as copy editing, from this list.
 
-### March 9, 2023
+### January 3, 2024
 
 <table style="table-layout:auto;">
   <thead>
@@ -16,15 +16,15 @@ This page contains recent changes that we think you'd like to see. We exclude al
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">Redis configuration best practices</a> with information about separating the cache from the session and using compression.</p>
+      <td><p>Added details about the <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">L2 cache memory sizing configuration options</a> for Adobe Commerce on cloud infrastructure.</p>
 </td>
       <td>best-practices</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9d46893a25569b9cb00b45ab285758b3b74b410">f9d468</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (commit)</td>
     </tr>
   </tbody>
-</table><!-- date_group -->
+</table><!-- date_group --><!-- month_group -->
 
-### February 10, 2023
+### December 7, 2023
 
 <table style="table-layout:auto;">
   <thead>
@@ -36,10 +36,10 @@ This page contains recent changes that we think you'd like to see. We exclude al
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated the description of minimum requirements to perform a <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">database upgrade</a> and added an additional related resource about updating MariaDB.</p>
+      <td><p>Added a new best practices topic about <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-code.html">modifying core and third-party PHP code</a>.</p>
 </td>
       <td>best-practices</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0efeef6f3d5276f42e4a67fe55f6108a399f45fb">0efeef</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21c0b6faab093bf9db860ce2f4d56072c4cc6e49">21c0b6</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

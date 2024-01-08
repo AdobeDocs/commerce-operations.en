@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13
-exl-id: cab6213b-da44-498f-b5c1-e7f89e95038e
+exl-id: cd546571-0241-4619-8696-3c5ebead9939
 feature: Install
 ---
 # Self-hosting Adobe Commerce Disaster Recovery ideas

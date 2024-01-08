@@ -36,7 +36,7 @@ There can be times when intensive sales on a storefront occur at the same time t
 >
 >The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
 
-## Asynchronous configuration save [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Available in 2.4.7-beta1 only"}
+## Asynchronous configuration save [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Available in 2.4.7-beta only"}
 
 For projects with a large number of store-level configurations, saving a store configuration can take an inordinate amount of time or result in a timeout. The _Async Config_ module enables asynchronous configuration saves by running a cron job that uses a consumer to process the save in a message queue. AsyncConfig is **disabled** by default.
 
@@ -99,9 +99,9 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 ### Bundling tips
 
-*  We recommend that you use third-party tools for minification and bundling (like [r.js](https://requirejs.org/)). [!DNL Commerce] built-in mechanisms are not optimal and are shipped as fallback alternatives.
-*  Activating the HTTP2 protocol can be a good alternative to using JS bundling. The protocol provides pretty much the same benefits.
-*  We do not recommend using deprecated settings like merging JS and CSS files, as they were designed only for synchronously-loaded JS in the HEAD section of the page. Using this technique can cause bundling and requireJS logic to work incorrectly.
+* We recommend that you use third-party tools for minification and bundling (like [r.js](https://requirejs.org/)). [!DNL Commerce] built-in mechanisms are not optimal and are shipped as fallback alternatives.
+* Activating the HTTP/2 protocol can be a good alternative to using JS bundling. The protocol provides pretty much the same benefits.
+* We do not recommend using deprecated settings like merging JS and CSS files, as they were designed only for synchronously-loaded JS in the HEAD section of the page. Using this technique can cause bundling and requireJS logic to work incorrectly.
 
 ## Customer segments validation
 
