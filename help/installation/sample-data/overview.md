@@ -9,7 +9,7 @@ Sample data provides a storefront based on the Luma theme outfitted with product
 
 >[!NOTE]
 >
->To review and analyze database and various features, consider using real data instead of Sample Data. Sample Data is designed as a pre-generated store simulation, to demonstrate Theme design and basic Storefront behavior. All Sample Data entities are written directly into the database tables, while Sample Data is installed.
+>To review and analyze database and various features, consider using real data instead of sample data. Sample data is designed as a pre-generated store simulation, to demonstrate theme design and basic storefront behavior. All sample data entities are written directly into the database tables, while sample data is installed.
 
 You can install sample data either before or after installing the Commerce software. When you're done with the sample data, you can either remove it or you can install it fresh as discussed in [Remove sample data modules or update sample data](remove-or-update.md).
 
