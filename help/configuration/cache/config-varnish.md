@@ -8,12 +8,11 @@ exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 
 [Varnish Cache][] is an open-source web application accelerator (also referred to as an _HTTP accelerator_ or _caching HTTP reverse proxy_). Varnish stores (or caches) files or fragments of files in memory, which enables Varnish to reduce the response time and network bandwidth consumption on future, equivalent requests. Unlike web servers like Apache and nginx, Varnish was designed for use exclusively with the HTTP protocol.
 
-Commerce 2.4.2 is tested with Varnish 6.4.
-Commerce 2.4.x is compatible with Varnish 6.x
+[System requirements](../../installation/system-requirements.md) lists the supported versions of Varnish.
 
 >[!WARNING]
 >
->We _strongly recommend_ you use Varnish in production. The built-in full-page caching—to either the file system or [database][]—is much slower than Varnish, and Varnish is designed to accelerate HTTP traffic.
+>We _strongly recommend_ you use Varnish in production. The built-in full-page caching—to either the file system or [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)—is much slower than Varnish, and Varnish is designed to accelerate HTTP traffic.
 
 For more information about Varnish, see:
 
@@ -143,7 +142,6 @@ If the content changes on the server, the client downloads the static asset with
 
 <!-- Link Definitions -->
 
-[database]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [The Big Varnish Picture]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Varnish Cache]: https://varnish-cache.org
 [Varnish startup options]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
