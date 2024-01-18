@@ -101,6 +101,7 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 * We recommend that you use third-party tools for minification and bundling (like [r.js](https://requirejs.org/)). [!DNL Commerce] built-in mechanisms are not optimal and are shipped as fallback alternatives.
 * Activating the HTTP/2 protocol can be a good alternative to using JS bundling. The protocol provides pretty much the same benefits.
+>[!NOTE] This is already enabled by default in the Adobe Commerce Cloud environment.
 * We do not recommend using deprecated settings like merging JS and CSS files, as they were designed only for synchronously-loaded JS in the HEAD section of the page. Using this technique can cause bundling and requireJS logic to work incorrectly.
 
 ## Customer segments validation
