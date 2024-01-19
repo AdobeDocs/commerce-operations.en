@@ -17,7 +17,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.44 {#v1-1-44}
 
-* **ACSD-56790** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where a user is redirected to the Admin Dashboard when sorting category products using the "Move out of Stock to bottom" option and the `Invalid security or form key. Please refresh the page` error appears on top of the screen.
+* **ACSD-56790** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where a user is redirected to the Admin Dashboard when sorting category products using the **Move out of Stock to bottom** option and the `Invalid security or form key. Please refresh the page` error appears on top of the screen.
 * **ACSD-56280** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where ordering items from the gift registry leads to an exception.
 * **ACSD-56246** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where data is removed from the custom multi-select attribute when a scheduled update for a product becomes active.
 * **ACSD-56193** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.4) - Fixes the issue where the Varnish/Fastly cache is not updated when a scheduled block is used in the category description using Page Builder.
