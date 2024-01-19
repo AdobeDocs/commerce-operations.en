@@ -23,7 +23,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-56193** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.4) - Fixes the issue where the Varnish/Fastly cache is not updated when a scheduled block is used in the category description using Page Builder.
 * **ACSD-56158** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where the "cart" query returns the total tax value for each tax rule.
 * **ACSD-56023** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where widget content is not updating on the CMS page when cache is enabled.
-* **ACSD-55427** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the admin user cannot unassign a product from a shared catalog from the product page in the backend.
+* **ACSD-55427** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the admin user cannot unassign a product from a shared catalog from the product page in the Admin.
 * **ACSD-55352** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where after creating a partial credit memo with customer reward points, the order status changes to `closed` and credit memo options disappear from the admin order page.
 * **ACSD-55231** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where you cannot add products to a cart using the quick order functionality.
 * **ACSD-54283** (for Adobe Commerce >=2.4.3 <2.4.4) - Fixes the issue where Products/Categories not assigned to the Shared Catalog for the Default (General Group) are still included in the XML Sitemap.
