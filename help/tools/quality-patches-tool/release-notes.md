@@ -15,6 +15,20 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.44 {#v1-1-44}
+
+* **ACSD-56790** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where a user is redirected to the Admin Dashboard when sorting category products using the "Move out of Stock to bottom" option and the `Invalid security or form key. Please refresh the page` error appears on top of the screen.
+* **ACSD-56280** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where ordering items from the gift registry leads to an exception.
+* **ACSD-56246** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where data is removed from the custom multi-select attribute when a scheduled update for a product becomes active.
+* **ACSD-56193** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.4) - Fixes the issue where the Varnish/Fastly cache is not updated when a scheduled block is used in the category description using Page Builder.
+* **ACSD-56158** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where the "cart" query returns the total tax value for each tax rule.
+* **ACSD-56023** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where widget content is not updating on the CMS page when cache is enabled.
+* **ACSD-55427** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the admin user cannot unassign a product from a shared catalog from the product page in the backend.
+* **ACSD-55352** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where after creating a partial credit memo with customer reward points, the order status changes to `closed` and credit memo options disappear from the admin order page.
+* **ACSD-55231** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where you cannot add products to a cart using the quick order functionality.
+* **ACSD-54283** (for Adobe Commerce >=2.4.3 <2.4.4) - Fixes the issue where Products/Categories not assigned to the Shared Catalog for the Default (General Group) are still included in the XML Sitemap.
+* Updated patches: ACSD-52041, ACSD-54040, ACSD-51819
+
 ## v1.1.43 {#v1-1-43}
 
 * **ACSD-54972** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the canonical category URL doesn't update after changing the category URL.
