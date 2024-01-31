@@ -24,7 +24,7 @@
   AWS OpenSearch: '2.5'
 2.4.6-p4:
   Composer: '2.2'
-  Elasticsearch: '8.5, 7.17'
+  Elasticsearch: '8.11, 7.17'
   OpenSearch: '2.5'
   MariaDB: '10.6'
   MySQL: '8.0'
