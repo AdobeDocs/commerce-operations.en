@@ -54,7 +54,7 @@ The following table explains this command's parameters and values.
 | `--exclude-theme <theme>`| Themes to exclude when deploying static content. Default value is **none**.<br>For example, `--exclude-theme Magento/blank` | No |
 | `--area (-a)`| Generate files only for the specified areas. The default, with no option specified, is to generate files for all areas. Valid values are `adminhtml` and `frontend`. Default value is **all**.<br>For example: `--area adminhtml` | No |
 | `--exclude-area` | Do not generate files for the specified areas. The default, with no option specified, is to exclude nothing. Default value is **none**. | No |
-| `--jobs (-j)` | Enable parallel processing using the specified number of jobs. The default is 0 (do not run in parallel processes). Default value is **0**. | No |
+| `--jobs (-j)` | Enable [parallel processing](manage-indexers.md#reindexing-in-parallel-mode) using the specified number of jobs. The default is 0 (do not run in parallel processes). Default value is **0**. | No |
 | `--symlink-locale` | Create symlinks for the files of those locales, which are passed for deployment, but have no customizations. | No |
 | `--content-version=CONTENT-VERSION` | Custom version of static content can be used if running deployment on multiple nodes to ensure that static content version is identical and caching works properly. | No |
 | `--no-javascript` | Do not deploy JavaScript files | No |

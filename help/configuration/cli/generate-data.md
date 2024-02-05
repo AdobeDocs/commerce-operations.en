@@ -6,10 +6,6 @@ exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
 ---
 # Performance testing data
 
-To use the [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) or another tool for performance testing, you must generate a large amount of data, such as stores, categories, and products.
-
-{{file-system-owner}}
-
 ## Profiles
 
 You can adjust the amount of data you create using _profiles_ (small, medium, large, and extra large). Profiles are located in the `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` directory.
@@ -42,9 +38,13 @@ The following table provides details about the data generator profiles: small, m
 
 ### Run the data generator
 
+{{file-system-owner}}
+
 >[!WARNING]
 >
 >Before running the data generator, disable all cron jobs running on the server. Disabling cron jobs prevents the data generator from performing actions that conflict with active cron jobs and avoids unnecessary errors.
+>
+>If you intend to implement eventing with [!DNL Adobe I/O Events for Adobe Commerce] while testing performance, run this command before subscribing [events](https://developer.adobe.com/commerce/extensibility/events/). Subscribing events first can cause errors.
 
 Run the command as discussed in this section. After the command runs, you must [reindex all indexers](../cli/manage-indexers.md).
 
