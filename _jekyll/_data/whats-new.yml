@@ -1,8 +1,41 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Wed Jan 3 08:50:56 2024
+updated: Mon Feb 5 09:07:38 2024
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.45 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: January 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/741
+  merge_commit: ada0b7f8aaa727aebf86dca8b569eb71d41e5ded
+  contributor: poltorat
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.44 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: January 19, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/739
+  merge_commit: 6fdce049c64ff7e93bf4de497d7e61ad36b0064b
+  contributor: poltorat
+  membership: false
+  labels:
+  - major-update
+- description: Added [clarification](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/overview.html)
+    that sample data should not be used for database testing.
+  versions: ''
+  type: major-update
+  date: January 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/732
+  merge_commit: b75884de62f0f4a9000f422a4b68870c5b30d803
+  contributor: vkolesny
+  membership: false
+  labels:
+  - major-update
 - description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
     for Adobe Commerce on cloud infrastructure.
   versions: ''
