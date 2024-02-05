@@ -4,5 +4,5 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'rake'
-gem 'whatsup_github'
+gem 'whatsup_github', git: 'https://github.com/commerce-docs/whatsup_github', branch: 'main'
 gem 'faraday-retry'
