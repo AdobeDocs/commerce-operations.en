@@ -10,7 +10,7 @@ The discovery process identifies specific Adobe Commerce implementation delivera
 
 ## Business requirements
 
-This document captures business requirement approvals for functional specifications and the usability of the customer experience. It is used to drive the user experience, visual design, and detailed testing plans.
+A business requirements document captures approvals for functional specifications and the usability of the customer experience. It is used to drive the user experience, visual design, and detailed testing plans.
 
 ## System diagram
 
@@ -18,7 +18,7 @@ A systems diagram should show data (for example, orders, products, third-party i
 
 ## Technical specifications
 
-This document defines the technical implementation approach and applicable details about all third-party integrations and systems that need to be modified. This can include APIs that don't currently exist and need to be developed.
+Technical specifications define the implementation approach and applicable details about all third-party integrations and systems that need to be modified. This can include APIs that don't currently exist and need to be developed.
 
 ## Data mapping
 
