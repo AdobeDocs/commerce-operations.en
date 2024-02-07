@@ -26,12 +26,4 @@ Open a terminal and enter the following command to display the version of Varnis
 varnishd -V
 ```
 
-A sample follows:
-
-```terminal
-varnishd (varnish-6.3.2 revision 199de9b)
-Copyright (c) 2006 Verdens Gang AS
-Copyright (c) 2006-2019 Varnish Software AS
-```
-
-Make sure that the version is 6.x before continuing. If you are running version lower than 6.x, you must upgrade to a supported version. Consult the Varnish installation documentation for more information.
+Make sure that [Adobe Commerce and Magento Open Source supports](../../installation/system-requirements.md) the installed version of Varnish before continuing. If you are running an unsupported version, you must upgrade to a supported version. Consult the Varnish installation documentation for more information.
