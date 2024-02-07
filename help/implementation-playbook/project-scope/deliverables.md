@@ -6,7 +6,7 @@ feature: Best Practices
 ---
 # Deliverables 
 
-The discovery process identifies specific Adobe Commerce implementation deliverables. Review the following sections to learn more.
+The discovery process identifies specific Adobe Commerce implementation deliverables. To learn more, review the following sections.
 
 ## Business requirements
 
@@ -18,11 +18,11 @@ A systems diagram should show data (for example, orders, products, third-party i
 
 ## Technical specifications
 
-Technical specifications define the implementation approach and applicable details about all third-party integrations and systems that need to be modified. This can include APIs that don't currently exist and need to be developed.
+Technical specifications define the implementation approach and applicable details about all third-party integrations and systems that must be modified. This can include APIs that don't currently exist and must be developed.
 
 ## Data mapping
 
-A data mapping document covers categories, products, recommendations, pricing data, and inventory and includes the necessary attributes to map the current products and categories to your Adobe Commerce product catalog.
+A data-mapping document covers categories, products, recommendations, pricing data, and inventory and includes the necessary attributes to map the current products and categories to your Adobe Commerce product catalog.
 
 ## Flow diagram
 
@@ -30,11 +30,11 @@ Shows the user flows for critical and/or unique processes, especially when custo
 
 ## Scope and vendors
 
-This is a finalized list of named third-party vendors to be integrated into the Adobe Commerce solution.
+A scope and vendors document should contain a comprehensive list of named third-party vendors to be integrated into the Adobe Commerce solution.
 
 ## Product data
 
-A review of an organization's existing products, pricing, and inventory data as well as a plan to map data attributes used to populate Adobe Commerce.
+A review of an organization's existing products, pricing, and inventory data and a plan to map data attributes used to populate Adobe Commerce.
 
 ## Project plan
 
