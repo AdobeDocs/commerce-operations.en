@@ -22,7 +22,7 @@ Adobe Commerce has two types of indexer modes: [!UICONTROL Update on Save] (defa
 
 - **[!UICONTROL Update on Save]** mode updates indexes immediately whenever your catalog or other data changes. For example, if an Admin user adds new products to a category, the category products index is reindexed immediately when the update is saved.
 
-- **[!UICONTROL Update on Schedule]** mode stores information about data updates, and reindexing operations and index updates are managed by a cron job that runs in the background at scheduled intervals. NOTE: the cron will not necessarily perform a reindex every time it runs - a  reindex only occurs when there are new entries in the indexer changelogs, i.e., there is a backlog on the indexers.
+- **[!UICONTROL Update on Schedule]** mode stores information about data updates, and reindexing operations and index updates are managed by a cron job that runs in the background at scheduled intervals. The cron job does not always perform a reindex every time it runs. It reindexes only when there are new entries in the indexer change logs (for example, there is a backlog on the indexers).
 
 Having a large store with multiple Admins working in the backend or having many imports and exports triggers frequent index updates. If your site index configuration is set to [!UICONTROL Update on Save] mode, frequent reindexing degrades database performance which slows site performance and causes long delays in the reindexing process, especially for large stores.
 
