@@ -15,6 +15,31 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where a configurable product becomes out of stock when one of two child products is disabled by a scheduled update.
+* **ACSD-56616** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where bundled products display as in stock on the storefront when their simple products are out of stock.
+* **ACSD-56515** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where admin with website level permissions cannot add or edit a dynamic block.
+* **ACSD-56447** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where adding the same product to the cart via parallel REST web API requests results in two separate items in the cart.
+* **ACSD-56415** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where the performance of the partial price indexing is slowed down due to a `DELETE` query when the database has a lot of partial price data to index.
+* **ACSD-54965** (for Adobe Commerce >=2.4.5 <2.4.6) - Fixes the issue where the Visual Merchandising grid does not display the correct stock when a product is assigned to custom stock only.
+* **ACSD-52824** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where PayPal Express, Google Pay, and Apple Pay buttons are displayed for company customers when such payment methods are disabled in company settings.
+* Updated patches: ACSD-56193
+
+## v1.1.44 {#v1-1-44}
+
+* **ACSD-56790** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where a user is redirected to the Admin Dashboard when sorting category products using the **Move out of Stock to bottom** option and the `Invalid security or form key. Please refresh the page` error appears on top of the screen.
+* **ACSD-56280** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where ordering items from a gift registry leads to an exception.
+* **ACSD-56246** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where data is removed from the custom multi-select attribute when a scheduled update for a product becomes active.
+* **ACSD-56193** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.4) - Fixes the issue where the Varnish/Fastly cache is not updated when a scheduled block is used in the category description using Page Builder.
+* **ACSD-56158** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where the "cart" query returns the total tax value for each tax rule.
+* **ACSD-56023** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where widget content is not updating on the CMS page when cache is enabled.
+* **ACSD-55427** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the admin user cannot unassign a product from a shared catalog from the product page in the Admin.
+* **ACSD-55352** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where after creating a partial credit memo with customer reward points, the order status changes to Closed and credit memo options disappear from the Admin order page.
+* **ACSD-55231** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where you cannot add products to a cart using the quick order functionality.
+* **ACSD-54283** (for Adobe Commerce >=2.4.3 <2.4.4) - Fixes the issue where Products/Categories not assigned to the Shared Catalog for the Default (General Group) are still included in the XML Sitemap.
+* Updated patches: ACSD-52041, ACSD-54040, ACSD-51819
+
 ## v1.1.43 {#v1-1-43}
 
 * **ACSD-54972** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the canonical category URL doesn't update after changing the category URL.
