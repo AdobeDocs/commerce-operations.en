@@ -11,8 +11,8 @@ Before upgrading Adobe Commerce on cloud infrastructure projects, you may also n
 
 For example:
 
-- Adobe Commerce 2.4.6 with MariaDB version 10.5.1 or higher
-- Adobe Commerce 2.3.5 with MariaDB version 10.3 or earlier
+*  Adobe Commerce 2.4.6 with MariaDB version 10.5.1 or higher
+*  Adobe Commerce 2.3.5 with MariaDB version 10.3 or earlier
 
 In addition to these recommendations, you should consult with your database administrator on configuring the following parameters:
 
