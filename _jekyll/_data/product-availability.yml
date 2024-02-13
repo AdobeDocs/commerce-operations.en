@@ -75,13 +75,13 @@ services:
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html
     support:
       - core: 2.4.7-beta2
-        version: 1.13
+        version: 1.16
       - core: 2.4.6
-        version: 1.13
+        version: 1.16
       - core: 2.4.5
-        version: 1.13
+        version: 1.16
       - core: 2.4.4
-        version: 1.13
+        version: 1.16
   Channel Manager:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-channel-manager.html
