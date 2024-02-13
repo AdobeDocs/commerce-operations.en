@@ -258,7 +258,7 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 
 The indexers-related database triggers are added when the indexer mode is set to `schedule` and removed when the indexer mode is set to `realtime`. If the triggers are missing from your database while the indexers are set to `schedule`, change the indexers to `realtime` and then change them back to `schedule`. This resets the triggers.
 
-### Set indexer status
+### Set indexer status [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Available in 2.4.7-beta only"}
 
 This command allows administrators to modify the operational status of one or more indexers, optimizing system performance during extensive operations like data imports, updates, or maintenance.
 
