@@ -42,7 +42,7 @@ The following sections include best practice information for the maintenance pha
 | Best practice                                                                                          | Description                                                                                         |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Resolve database performance issues​](resolve-database-performance-issues.md)                           | Fix database issues that slow performance on Adobe Commerce sites deployed on cloud infrastructure. |
-| [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB​](commerce-235-upgrade-prerequisites-mariadb.md) | Prepare your MariaDB database for an upgrade.                                                       |
+| [Adobe Commerce upgrade prerequisites for MariaDB​](mariadb-upgrade.md) | Prepare your MariaDB database for an upgrade.                                                       |
 
 ## Feature enhancements
 

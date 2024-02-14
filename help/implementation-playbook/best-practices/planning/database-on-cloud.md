@@ -94,5 +94,5 @@ See [Enable archiving](https://experienceleague.adobe.com/docs/commerce-admin/st
 ## Additional information
 
 - [MySQL Storage Engines](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
-- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+- [Adobe Commerce 2.3.5 upgrade prerequisites for MariaDB](../maintenance/mariadb-upgrade.md)
 - [Best practices to resolve database performance issues](../maintenance/resolve-database-performance-issues.md)
