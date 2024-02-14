@@ -183,7 +183,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2.12
+            2.11
       </td>
       <td>
             2.5

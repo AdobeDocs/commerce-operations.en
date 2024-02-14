@@ -8,7 +8,7 @@
 2.4.7-beta3:
   Composer: '2.6'
   Elasticsearch: '8.11'
-  OpenSearch: '2.12'
+  OpenSearch: '2.11'
   MariaDB: '10.6'
   MySQL: '8.0'
   PHP: '8.3, 8.2'
