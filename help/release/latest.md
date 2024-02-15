@@ -7,7 +7,7 @@ description: Learn about the latest composable development tools and AI-powered 
 
 To help businesses continue to grow their ecommerce channels Adobe Commerce has released new capabilities that empower them to move faster and accelerate sales with an experience-led platform that combines a high-performance storefront and AI-powered personalization with simplified composable development.
 
-![Adobe Commerce February 2024 release summary graphic]()
+![Adobe Commerce February 2024 release summary graphic](../assets/release/summary.png)
 
 ## Simplified composable development with App Builder [!BADGE Available now]{type=Informative tooltip="Available now"}
 
@@ -20,7 +20,7 @@ Building composable applications requires highly extensible technology and the a
 - [Admin UI](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) extensibility
 - Over 700 [Events](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events.html)
 
-![Comprehensive extensibility graphic]()
+![Comprehensive extensibility graphic](../assets/release/comprehensive-extensibility.png)
 
 [Adobe Developer App Builder](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder.html) for Adobe Commerce is a cloud-native extensibility platform to build custom capabilities and integrate with 3rd party solutions. It includes API orchestration with [API Mesh](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh.html), scalable event-based data routing using [Adobe I/O Events](https://developer.adobe.com/events/docs/), and a [serverless runtime](https://developer.adobe.com/runtime/docs/guides/overview/howitworks/). With App Builder, developers can easily build apps and integrations while Adobe handles provisioning, scaling, and security of the App Builder infrastructure.
 
@@ -67,7 +67,7 @@ Built on Adobe's App Builder framework, the [Zuora extension](https://commercema
 
 Consumers are becoming more comfortable purchasing healthcare products and services online. In fact, according to Insider Intelligence, retail ecommerce sales for health and personal care products will be the fastest growing ecommerce segment in 2024 growing at 17.5% to reach $153 billion in ecommerce sales in the US.
 
-![A graph of sales and prices]()
+![A graph of sales and prices](../assets/release/hipaa-sales-chart.png)
 
 When purchasing healthcare products and services, consumers expect their sensitive medical records and personal information to be highly protected. This is why Adobe Commerce has released a [HIPPA-ready](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/hipaa-ready-service.html) version of its cloud offering for healthcare and life sciences industries. Adobe Commerce now joins the [Adobe Experience Cloud for Healthcare](https://business.adobe.com/solutions/industries/healthcare.html) suite of solutions, allowing customers to deliver secure and exceptional patient experiences while honoring consumer preferences.
 
@@ -75,11 +75,11 @@ When purchasing healthcare products and services, consumers expect their sensiti
 
 [Adobe Commerce Data Connection](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html) automatically collects, maps, and shares a range of Commerce data from storefront clicks to back-office order status and order history data. In the first half of this year, we will share even more data, including [Commerce customer profiles](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/manage/update-account.html), mobile app behavior, and custom attributes for back-office events to personalize campaigns and experiences at scale. For example, customers will be able to use real-time customer registrations to trigger welcome email campaigns in [Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html).
 
-![A diagram of a person]()
+![A diagram of a person](../assets/release/aec-integration.png)
 
 Another way we are deepening our integrations to Adobe Experience Platform is a new Use Case Playbook. [Use Case Playbooks](https://business.adobe.com/blog/the-latest/unlock-value-faster-with-use-case-playbooks-for-adobe-real-time-cdp-and-journey-optimizer) are a library of ready-to-use implementation assets designed to help customers achieve faster time-to-value. The initial Adobe Commerce playbook — coming in the first half of 2024 — will enable customers to easily launch abandoned cart campaigns by guiding them through the data setup process. Once connected, customers can launch abandoned cart campaigns, saving them time and helping lift sales. We are also adding Commerce-specific dashboards in Adobe Experience Platform to help marketers analyze their Commerce data and identify opportunities for personalization.
 
-![A screenshot of a cell phone]()
+![A screenshot of a cell phone](../assets/release/use-case-playbook.png)
 
 Rich Commerce data can also personalize the Commerce experience itself. [Adobe Real-Time CDP](https://business.adobe.com/products/real-time-customer-data-platform/rtcdp.html) combines Commerce data with other sources to build detailed customer profiles and audience segments for targeting content and promotional offers in Adobe Commerce. In the first half of the year, we are expanding these [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) capabilities to allow marketers and merchandisers the ability to use Audiences defined in Adobe's Real-Time CDP in more places within the Adobe Commerce admin including [related products](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html), [promotions](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html), and [content blocks](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html). Adobe Commerce will also release support for tracking of user behavior on native mobile app deployments of Adobe Commerce in addition to web channels.
 
@@ -97,7 +97,7 @@ Payment services also offers right for you pricing options including Interchange
 
 By July of this year, Adobe Commerce expects to release support for Google Pay, a leading digital wallet. According to Insider Intelligence, Google Pay is expected to reach [36 million consumers](https://forecasts-na1.emarketer.com/591373e4aeb8830e3829e400/5efc402eac4d4d07841472f9?_gl=1*qmtm8x*_ga*OTEwMjg4NjExLjE3MDY2MzQ2MTk.*_ga_XXYLHB9SXG*MTcwNjk3NjkzNS44LjAuMTcwNjk3NjkzNS42MC4wLjA.*_gcl_au*MTkwNzgzOTY5OS4xNzA2NjM0NjE5LjQ3MzE4MjY5LjE3MDY3MTcyMjUuMTcwNjcxNzIyNQ..) in 2024.The addition of Google Pay rounds out support for popular digital wallets including Apple Pay and PayPal.
 
-![A graph of blue and purple bars]()
+![A graph of blue and purple bars](../assets/release/google-pay-chart.png)
 
 ## AI-Powered personalization with Live Search [!BADGE Available now]{type=Informative tooltip="Available now"}
 
@@ -107,7 +107,7 @@ Companies are seeking to personalize every part of the buying journey, from help
 
 Our latest release of Live Search focuses on making these features easy to use and empowers you to fully customize the search experience to fit your unique needs. You can now apply [AI re-ranking rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html) to cover all queries, not just specific searches. This new default search rule allows you to set targeted rules for your most popular searches. For example, a merchandiser can set a rule that any search query containing the phrase "dress" should be sorted by trending items algorithm. That same merchandiser can then use the most purchased algorithm for all other search queries. With this update, brands can set one rule to cover the long-tail of less searched-for queries, simplifying personalized merchandising.
 
-![A screenshot of a search engine]()
+![A screenshot of a search engine](![A diagram of Core web vitals](../assets/release/default-search-rule.png)
 
 We've also introduced new customization options for Live Search. You can design the Live Search UI features including color swatches, product detail page layout options, add to cart buttons, price sliders, and more using low code configuration tools. We provide full flexibility through our open code repository which serves as a best-practice reference implementation.
 
@@ -115,7 +115,7 @@ We've also introduced new customization options for Live Search. You can design 
 
 B2B ecommerce is another area of significant growth in online spending. In 2024, US B2B ecommerce sales are forecasted to reach [$2.048 trillion](https://www.insiderintelligence.com/content/us-b2b-ecommerce-forecast-2022-2026) — growing at 10.3% year over year.
 
-![A screenshot of a graph]()
+![A screenshot of a graph](../assets/release/b2b-sales.png)
 
 Adobe Commerce has delivered mission critical B2B ecommerce features for years including company accounts, purchase approval rules, quote management, and customer price books. That's why B2B ecommerce leaders like [Watsco](https://business.adobe.com/content/dam/dx/us/en/resources/ebooks/building-better-experiences/building-better-experiences-and-bigger-profits.pdf), [SealedAir](https://business.adobe.com/customer-success-stories/sealed-air-case-study.html), [Sunbelt Rentals](https://business.adobe.com/customer-success-stories/sunbelt-rentals-case-study.html), [Transcat](https://business.adobe.com/customer-success-stories/transcat-case-study.html), [FoodServiceDirect.com](https://business.adobe.com/customer-success-stories/foodservicedirect-case-study.html), and [Univar Solutions](https://business.adobe.com/summit/2023/sessions/debunking-top-b2b-commerce-myths-s517.html) power their global B2B ecommerce channels on Adobe Commerce.  
 
@@ -139,11 +139,14 @@ To offer a truly powerful and complete commerce experience, this new storefront,
 
 This new high-performance storefront has already been successfully piloted by several Adobe Commerce merchants  such as [Maidenform](https://business.adobe.com/blog/perspectives/how-hanesbrands-and-adobe-built-one-of-the-fastest-ecommerce-websites-in-the-world), a property of HanesBrands. The results speak for themselves. Maidenform pages consistently deliver Google Lighthouse scores of 100 and [Core Web Vitals results](https://www.rumvision.com/tools/core-web-vitals-history/www.maidenform.com/?path=/) far above the industry average.
 
-![A diagram of Core web vitals]()
+![Site speed results](../assets/release/maidenform-site.png)
+![Core Web Vitals chart](../assets/release/maidenform-site-stats.png)
 
 _"It's a dream come true to be as responsive to the business as we have been. We're saying, 'Hey, you wanted something faster? Well, we may possibly have the fastest ecommerce site in the world.'"_
 
 Leo Griffin, Vice President and Global Head of Consumer Technology, HanesBrands, Inc
+
+![Animated image of an ecommerce website product page](../assets/release/maidenform-example.gif)
 
 You can catch the [official announcement](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.format=1643049381306001SAYb&search=masterclass&search.track=1601680652403006TXuG) of Edge Delivery Services in Adobe Commerce at Adobe Summit, and learn about our Limited Availability program in 2024. Additionally, we will also host a hands-on [lab session](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.format=1643049381306001SAYb&search=%5BL445%5D&search.track=1601680652403006TXuG&search.track=option_1636755664165) to go more in-depth into the inner workings and configuration of this new storefront offering.
 
