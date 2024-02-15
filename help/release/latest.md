@@ -7,7 +7,7 @@ role: Admin, User, Developer
 
 # February 2024 release summary
 
-To help businesses continue to grow their ecommerce channels Adobe Commerce has new capabilities that empower them to move faster and accelerate sales with an experience-led platform that combines a high-performance storefront and AI-powered personalization with simplified composable development.
+To help businesses continue to grow their ecommerce channels, Adobe Commerce has new capabilities that empower them to move faster and accelerate sales with an experience-led platform that combines a high-performance storefront and AI-powered personalization with simplified composable development.
 
 [placeholder for video]
 
@@ -31,7 +31,7 @@ Join as at these various in-person and virtual events to learn more about Adobe 
 
 Adobe Commerce is a composable ecommerce platform designed to launch ecommerce features faster, easily share data between third-party systems, and lower the cost of ownership for integrations and customizations.
 
-Building composable applications requires highly extensible technology and the ability to orchestrate APIs, Events, & Data instead of building point to point integrations. Adobe Commerce provides:
+Building composable applications requires highly extensible technology and the ability to orchestrate APIs, Events, & Data instead of building point-to-point integrations. Adobe Commerce provides:
 
 - Comprehensive [API](https://developer.adobe.com/commerce/webapi/) coverage
 - [Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/) to customize native commerce processes
@@ -46,7 +46,7 @@ Building composable applications requires highly extensible technology and the a
 
 [!BADGE Available now]{type=Informative tooltip="Available now"}
 
-With our latest release we continue to lead the way in simplifying composable development for ecommerce businesses. [Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/) can now be configured through the Admin UI making it even simpler to extend native commerce processes like checkout, add to cart, and more. Webhooks can also now be triggered conditionally. For example, you can trigger a shipping calculation webhook for the checkout process only for specific ZIP codes.
+With the latest release, Adobe continues to lead the way in simplifying composable development for ecommerce businesses. [Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/) can now be configured through the Admin UI making it even simpler to extend native commerce processes like checkout, add to cart, and more. Webhooks can also now be triggered conditionally. For example, you can trigger a shipping calculation webhook for the checkout process only for specific ZIP codes.
 
 Also, developers now have more [granular control](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/) to extend the Admin UI including adding additional columns, buttons, and mass actions to existing Admin panels.
 
@@ -137,7 +137,7 @@ Our latest release of Live Search focuses on making these features easy to use a
 
 ![A screenshot of a search engine](../assets/release/default-search-rule.png)
 
-We've also introduced new customization options for Live Search. Using Live Search's [PLP Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html?lang=en) and [Popover Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/storefront-popover.html?lang=en), you can design the Live Search UI features including color swatches, product detail page layout options, add to cart buttons, price sliders, and more using low code configuration tools. We provide full flexibility through our [open code repository](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/technical-overview.html?lang=en#widget-code-repository) which serves as a best-practice reference implementation.
+We've also introduced new customization options for Live Search. Using Live Search's [PLP Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html) and [Popover Widget](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/storefront-popover.html), you can design the Live Search UI features including color swatches, product detail page layout options, add to cart buttons, price sliders, and more using low code configuration tools. We provide full flexibility through our [open code repository](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/technical-overview.html?lang=en#widget-code-repository) which serves as a best-practice reference implementation.
 
 ## B2B commerce
 
