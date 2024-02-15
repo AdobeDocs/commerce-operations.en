@@ -23,7 +23,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-56621** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where the updated first name and last name are not reflected in the greetings header section for the company admin user.
 * **ACSD-56842** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the deferred proxies and the deferred proxy factories are missing after running `setup:di:compile`.
 * **ACSD-57003** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the order status is changed to *[!UICONTROL Complete]* instead of being changed to *[!UICONTROL Processing]* when an order is partially refunded and partially shipped.
-* Updated patches: ACSD-50260-V2, ACSD-54966
+* Updated patches: ACSD-50260-v2, ACSD-54966
 
 ## v1.1.45 {#v1-1-45}
 
