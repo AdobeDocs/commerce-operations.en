@@ -18,7 +18,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 ## v1.1.46 {#v1-1-46}
 
 * **ACSD-46767** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where the category page caches invalidate when the stock quantity changes, even if the product is still in stock.
-* **ACSD-54656** (for Adobe Commerce >=2.4.5 <2.4.6) - Fixes the issue where the invisible Recaptcha fails during checkout, which prevents an order from being placed.
+* **ACSD-54656** (for Adobe Commerce >=2.4.5 <2.4.6) - Fixes the issue where the invisible Recaptcha fails during checkout, preventing an order from being placed.
 * **ACSD-55100** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where GraphQL does not return more than 10k products in the search results.
 * **ACSD-56621** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where the updated first name and last name are not reflected in the greetings header section for the company admin user.
 * **ACSD-56842** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the deferred proxies and the deferred proxy factories are missing after running `setup:di:compile`.
