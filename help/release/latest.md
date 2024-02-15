@@ -1,6 +1,8 @@
 ---
 title: February 2024 release summary
 description: Learn about the latest composable development tools and AI-powered personalization capabilities in Adobe Commerce.
+level: Beginner, Intermediate, Advanced
+role: Admin, User, Developer
 ---
 
 # February 2024 release summary
@@ -107,7 +109,7 @@ Companies are seeking to personalize every part of the buying journey, from help
 
 Our latest release of Live Search focuses on making these features easy to use and empowers you to fully customize the search experience to fit your unique needs. You can now apply [AI re-ranking rules](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html) to cover all queries, not just specific searches. This new default search rule allows you to set targeted rules for your most popular searches. For example, a merchandiser can set a rule that any search query containing the phrase "dress" should be sorted by trending items algorithm. That same merchandiser can then use the most purchased algorithm for all other search queries. With this update, brands can set one rule to cover the long-tail of less searched-for queries, simplifying personalized merchandising.
 
-![A screenshot of a search engine](![A diagram of Core web vitals](../assets/release/default-search-rule.png)
+![A screenshot of a search engine](../assets/release/default-search-rule.png)
 
 We've also introduced new customization options for Live Search. You can design the Live Search UI features including color swatches, product detail page layout options, add to cart buttons, price sliders, and more using low code configuration tools. We provide full flexibility through our open code repository which serves as a best-practice reference implementation.
 
