@@ -1,7 +1,7 @@
 ---
 title: February 2024 release summary
 description: Learn about the latest composable development tools and AI-powered personalization capabilities in Adobe Commerce.
-level: Beginner, Intermediate, Advanced
+level: Beginner, Intermediate, Experienced
 role: Admin, User, Developer
 ---
 
@@ -77,7 +77,7 @@ When purchasing healthcare products and services, consumers expect their sensiti
 
 [Adobe Commerce Data Connection](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html) automatically collects, maps, and shares a range of Commerce data from storefront clicks to back-office order status and order history data. In the first half of this year, we will share even more data, including [Commerce customer profiles](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/manage/update-account.html), mobile app behavior, and custom attributes for back-office events to personalize campaigns and experiences at scale. For example, customers will be able to use real-time customer registrations to trigger welcome email campaigns in [Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html).
 
-![A diagram of a person](../assets/release/aec-integration.png)
+![A diagram of a person](../assets/release/data-connection.png)
 
 Another way we are deepening our integrations to Adobe Experience Platform is a new Use Case Playbook. [Use Case Playbooks](https://business.adobe.com/blog/the-latest/unlock-value-faster-with-use-case-playbooks-for-adobe-real-time-cdp-and-journey-optimizer) are a library of ready-to-use implementation assets designed to help customers achieve faster time-to-value. The initial Adobe Commerce playbook — coming in the first half of 2024 — will enable customers to easily launch abandoned cart campaigns by guiding them through the data setup process. Once connected, customers can launch abandoned cart campaigns, saving them time and helping lift sales. We are also adding Commerce-specific dashboards in Adobe Experience Platform to help marketers analyze their Commerce data and identify opportunities for personalization.
 
