@@ -117,5 +117,5 @@ mini-toc-levels: 3
     - [Scheduling Admin updates on production sites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
-    - [Upgrade prerequisites for MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+    - [Upgrade prerequisites for MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
