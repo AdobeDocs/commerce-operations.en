@@ -192,8 +192,6 @@ _"It's a dream come true to be as responsive to the business as we have 
 
 Leo Griffin, Vice President and Global Head of Consumer Technology, HanesBrands, Inc
 
-![Animated image of an ecommerce website product page](../assets/release/maidenform-example.gif){align="center"}
-
 You can catch the [official announcement](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.format=1643049381306001SAYb&search=masterclass&search.track=1601680652403006TXuG) of Edge Delivery Services in Adobe Commerce at Adobe Summit, and learn about our Limited Availability program in 2024. Additionally, we will also host a hands-on [lab session](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.format=1643049381306001SAYb&search=%5BL445%5D&search.track=1601680652403006TXuG&search.track=option_1636755664165) to go more in-depth into the inner workings and configuration of this new storefront offering.
 
 ## Adobe Experience Manager Assets Integration
