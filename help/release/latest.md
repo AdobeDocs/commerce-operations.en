@@ -184,13 +184,12 @@ To offer a truly powerful and complete commerce experience, this new storefront,
 This new high-performance storefront has already been successfully piloted by several Adobe Commerce merchants, such as [Maidenform](https://business.adobe.com/blog/perspectives/how-hanesbrands-and-adobe-built-one-of-the-fastest-ecommerce-websites-in-the-world), a property of HanesBrands. The results speak for themselves. Maidenform pages consistently deliver Google Lighthouse scores of 100 and [Core Web Vitals results](https://www.rumvision.com/tools/core-web-vitals-history/www.maidenform.com/?path=/) far above the industry average.
 
 ![Site speed results](../assets/release/maidenform-site.png){width="50%" align=center}
+
 ![Core Web Vitals chart](../assets/release/maidenform-site-stats.png)
 
 Source: [https://treo.sh/sitespeed/www.maidenform.com](https://treo.sh/sitespeed/www.maidenform.com)
 
-_"It's a dream come true to be as responsive to the business as we have been. We're saying, 'Hey, you wanted something faster? Well, we may possibly have the fastest ecommerce site in the world.'"_
-
-Leo Griffin, Vice President and Global Head of Consumer Technology, HanesBrands, Inc
+_"It's a dream come true to be as responsive to the business as we have been. We're saying, 'Hey, you wanted something faster? Well, we may possibly have the fastest ecommerce site in the world.'"_ - Leo Griffin, Vice President and Global Head of Consumer Technology, HanesBrands, Inc
 
 You can catch the [official announcement](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.format=1643049381306001SAYb&search=masterclass&search.track=1601680652403006TXuG) of Edge Delivery Services in Adobe Commerce at Adobe Summit, and learn about our Limited Availability program in 2024. Additionally, we will also host a hands-on [lab session](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.format=1643049381306001SAYb&search=%5BL445%5D&search.track=1601680652403006TXuG&search.track=option_1636755664165) to go more in-depth into the inner workings and configuration of this new storefront offering.
 
