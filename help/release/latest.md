@@ -9,7 +9,7 @@ role: Admin, User, Developer
 
 To help businesses continue to grow their ecommerce channels, Adobe Commerce has new capabilities that empower them to move faster and accelerate sales with an experience-led platform that combines a high-performance storefront and AI-powered personalization with simplified composable development.
 
-[placeholder for video]
+>[!VIDEO](https://video.tv.adobe.com/v/3427364?learn=on)
 
 ## Adobe Commerce events
 
@@ -73,7 +73,7 @@ To get started building for Adobe Commerce, visit our [Learning Path](https://de
 
 According to financial services firm UBS, the subscription economy is on track to reach $1.5 trillion, up from $650 billion in 2021. Consumers and businesses alike are becoming more comfortable purchasing subscription products and services due to their convenience and value.
 
-[placeholder for Zuora video]
+>[!VIDEO](https://video.tv.adobe.com/v/3427363?learn=on)
 
 To empower companies to add subscription revenue streams to their business and support existing recurring revenue business models, Adobe Commerce has partnered with Zuora — the industry leading subscription management platform — to launch the [Zuora Subscription Management for Adobe Commerce](https://commercemarketplace.adobe.com/zuora-revenue-management-with-subcriptions.html) extension.
 
@@ -153,7 +153,7 @@ We're excited to share that in April, we will deliver new quoting and company ma
 
 Company management features will allow businesses to configure any buyer company structure they need to support B2B2X, conglomerates, or buying team structures using Adobe's new parent/child account structures.
 
-[add b2b commerce video] 
+>[!VIDEO](https://video.tv.adobe.com/v/3427362?learn=on) 
 
 Building on our strong built-in quoting tool, B2B sellers can capture more revenue faster with new request for quote (RFQ) tools including draft quotes, duplicate quotes, split quotes, quote templates, and multi-admin access to quotes.
 
