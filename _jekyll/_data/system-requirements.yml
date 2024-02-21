@@ -12,7 +12,7 @@
   MariaDB: '10.6'
   MySQL: '8.0'
   PHP: '8.3, 8.2'
-  RabbitMQ: '3.13'
+  RabbitMQ: '3.12'
   Redis: '7.2'
   Varnish: '7.4'
   Apache: '2.4'
