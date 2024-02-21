@@ -6,7 +6,7 @@
       <th>
         Software dependencies
       </th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7-beta3</th>
       <th>2.4.6-p4</th>
       <th>2.4.6-p3</th>
       <th>2.4.6-p2</th>
@@ -35,7 +35,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2.5
+            2.6
       </td>
       <td>
             2.2
@@ -179,7 +179,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2.5
+            2.11
       </td>
       <td>
             2.5
@@ -323,7 +323,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.2, 8.1
+            8.3, 8.2
       </td>
       <td>
             8.2, 8.1
@@ -395,7 +395,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.11
+            3.12
       </td>
       <td>
             3.11, 3.9
@@ -467,7 +467,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.0
+            7.2
       </td>
       <td>
             7.0
