@@ -395,7 +395,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.13
+            3.12
       </td>
       <td>
             3.11, 3.9
