@@ -14,6 +14,7 @@ topic: Administration, Commerce, Development, Performance
 - [Development environment recommendations](development-environment.md)
 - [Configuration best practices](configuration.md)
 - [Deployment flow](deployment-flow.md)
+- [Capacity Planning](capacity-planning.md)
 - [High-throughput order processing](high-throughput-order-processing.md)
 - Advanced concepts {#performance-best-practices}
   - [Advanced setup](advanced-setup.md)
