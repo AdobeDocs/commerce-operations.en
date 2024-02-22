@@ -15,6 +15,16 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.46 {#v1-1-46}
+
+* **ACSD-46767** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue where the category page caches invalidate when the stock quantity changes, even if the product is still in stock.
+* **ACSD-54656** (for Adobe Commerce >=2.4.5 <2.4.6) - Fixes the issue where the invisible Recaptcha fails during checkout, preventing an order from being placed.
+* **ACSD-55100** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where GraphQL does not return more than 10k products in the search results.
+* **ACSD-56621** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where the updated first name and last name are not reflected in the greetings header section for the company admin user.
+* **ACSD-56842** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where the deferred proxies and the deferred proxy factories are missing after running `setup:di:compile`.
+* **ACSD-57003** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the order status is changed to *[!UICONTROL Complete]* instead of being changed to *[!UICONTROL Processing]* when an order is partially refunded and partially shipped.
+* Updated patches: ACSD-50260-v2, ACSD-54966
+
 ## v1.1.45 {#v1-1-45}
 
 * **ACSD-56886** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where a configurable product becomes out of stock when one of two child products is disabled by a scheduled update.

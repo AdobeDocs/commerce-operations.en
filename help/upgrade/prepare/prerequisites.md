@@ -166,7 +166,7 @@ We recommend that you contact your search engine vendor to determine whether you
 
 ## Convert database table format
 
-You must convert the format of all database tables from `COMPACT` to `DYNAMIC`. You must also convert the storage engine type from `MyISAM` to `InnoDB`. See [best practices](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
+You must convert the format of all database tables from `COMPACT` to `DYNAMIC`. You must also convert the storage engine type from `MyISAM` to `InnoDB`. See [best practices](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
 ## Set the open files limit
 
