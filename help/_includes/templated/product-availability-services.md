@@ -26,10 +26,10 @@
       </tr>
       <tr>
           <td>Catalog Service for Adobe Commerce</td>
-          <td>1.16</td>
-          <td>1.16</td>
-          <td>1.16</td>
-          <td>1.16</td>
+          <td>1.17</td>
+          <td>1.17</td>
+          <td>1.17</td>
+          <td>1.17</td>
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Overview</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Release Notes</a><br/>
