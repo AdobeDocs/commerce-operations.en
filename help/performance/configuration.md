@@ -14,7 +14,7 @@ All asynchronous operations in [!DNL Commerce] are performed using the Linux `cr
 
 ## Indexers
 
-An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Update on Schedule]** mode. The **[!UICONTROL Update on Save]** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. We recommend using **Update on Schedule** mode in production, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each [!DNL Commerce] indexer separately on the  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuration page.
+An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Update on Schedule]** mode. The **[!UICONTROL Update on Save]** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. We recommend using **Update on Schedule** for performance purposes, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each [!DNL Commerce] indexer separately on the  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuration page. Note: the Customer Grid index must always be set to the **[!UICONTROL Update on Save]** mode.
 
 >[!TIP]
 >
