@@ -17,10 +17,10 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.47 {#v1-1-47}
 
-* **ACSD-55241** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where "Used" and "Times Used" attributes display incorrect values for generated coupons when used during checkout with multiple addresses.
-* **ACSD-56760** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where an admin user restricted to a specific website cannot sort or add new products inside a category in case the webstore has its own Root Category.
+* **ACSD-55241** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where *[!UICONTROL Used]* and *[!UICONTROL Times Used]* attributes display incorrect values for generated coupons when used during checkout with multiple addresses.
+* **ACSD-56760** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where an admin user restricted to a specific website cannot sort or add new products inside a category in case the webstore has its own root category.
 * **ACSD-56858** (for Adobe Commerce >=2.4.2 <2.4.7) - Fixes the issue where B2B company role permissions are displayed incorrectly for a restricted company admin.
-* **ACSD-57074** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the Yes/No custom attribute with attrbute_code starting with "price_" does not work properly with indexing, and products with such attributes are not available on the front end.
+* **ACSD-57074** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the *Yes/No* custom attribute with `attrbute_code` starting with `price_` does not work properly with indexing, and products with such attributes are not available on the front end.
 * Updated patches: ACSD-53378, ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
