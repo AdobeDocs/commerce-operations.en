@@ -26,7 +26,11 @@ See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to le
         
 - **Information** - Provides customer contact information and a summary of current tickets, with detailed information about each installed Adobe Commerce product.
 
-- **Recommendations** - Lists recommendations based on best practices to address issues detected on your site.
+- **Recommendations** - Lists recommendations based on best practices to address issues detected on your site:
+if it's something that requires an Infrastructure update, you will have to submit a request to perform the update 
+if it's something that requires an application update, you will have to make the changes
+if any steps that are needed to implement the recommendations require manual intervention:
+if it's something that requires a [code deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow), that would have to be performed by your developers
 
 - **Exceptions** - Lists errors thrown by the application caused by abnormal conditions without an error handler.
 
