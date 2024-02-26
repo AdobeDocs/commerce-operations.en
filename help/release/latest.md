@@ -124,11 +124,11 @@ Last year, Adobe Commerce released [Data Connection](https://experienceleague.ad
 
 In the first half of this year, Adobe will share even more data, including [Commerce customer profiles](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/manage/update-account.html), mobile app behavior, and custom attributes for back-office events to personalize campaigns and experiences at scale., mobile app behavior, and custom attributes for back-office events to personalize campaigns and experiences at scale. 
 
-For example, customers will be able to use real-time customer registrations to trigger welcome email campaigns in [Adobe Journey Optimizer](https://experienceleague-review.corp.adobe.com/docs/journey-optimizer/using/get-started/get-started.html).
+For example, customers will be able to use real-time customer registrations to trigger welcome email campaigns in [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html).
 
 ![A diagram of connected data sources](../assets/release/data-connection.png){align="center" zoomable="yes"}
 
-Informed by hundreds of implementations of Adobe Commerce alongside other Adobe Experience Cloud solutions, Adobe is launching [Use Case Playbooks](https://experienceleague-review.corp.adobe.com/docs/journey-optimizer/using/get-started/playbooks.html), which are ready-to-use implementation assets that allow customers to experience immediate time-to-value.  
+Informed by hundreds of implementations of Adobe Commerce alongside other Adobe Experience Cloud solutions, Adobe is launching [Use Case Playbooks](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/playbooks.html), which are ready-to-use implementation assets that allow customers to experience immediate time-to-value.  
 
 The initial Adobe Commerce playbook (coming in the first half of 2024) enables customers to easily launch abandoned cart campaigns by guiding them through the data setup process. Once connected, customers can launch abandoned cart campaigns, saving them time and helping lift sales. One global retailer achieved 1.9x conversion-on-click, 1,000 more people re-engaged per week, and a double-digit revenue lift from launching abandonment campaigns with Adobe Commerce and Adobe Journey Optimizer. 
 
@@ -136,13 +136,16 @@ Adobe is also adding Commerce-specific dashboards in Adobe Experience Platform t
 
 ![A diagram of an abandoned cart campaign](../assets/release/use-case-playbook.png){zoomable="yes"}
 
-Last year, Adobe Commerce also launched [Audience Activation](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/customers/audience-activation.html), which leverages unified customer profiles and audiences from Real-Time CDP to personalize shopper journeys. Specifically, [Adobe Real-Time CDP](https://experienceleague-review.corp.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started.html) combines Commerce data with other sources to build detailed customer profiles and audience segments for targeting content and promotional offers in Adobe Commerce. stitches Commerce data with other data from other sources to build detailed customer profiles and audience segments for targeting content and promotional offers in Adobe Commerce.
+Last year, Adobe Commerce also launched [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html), which leverages unified customer profiles and audiences from Real-Time CDP to personalize shopper journeys. Specifically, [Adobe Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started.html) combines Commerce data with other sources to build detailed customer profiles and audience segments for targeting content and promotional offers in Adobe Commerce. stitches Commerce data with other data from other sources to build detailed customer profiles and audience segments for targeting content and promotional offers in Adobe Commerce.
 
-In the first half of the year, Adobe is expanding these [Audience Activation](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/customers/audience-activation.html) capabilities to allow marketers and merchandisers to use Audiences defined in Adobe's Real-Time CDP in more places within the Adobe Commerce Admin, including [related products](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html), [promotions](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html), and [content blocks](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html). Adobe will also release support for tracking user behavior on native mobile app deployments of Adobe Commerce in addition to web channels.
+In the first half of the year, Adobe is expanding these [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) capabilities to allow marketers and merchandisers to use Audiences defined in Adobe's Real-Time CDP in more places within the Adobe Commerce Admin, including [related products](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html), [promotions](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html), and [content blocks](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html). Adobe will also release support for tracking user behavior on native mobile app deployments of Adobe Commerce in addition to web channels.
 
 >[!TIP]
 >
->To learn how to get started with Adobe Commerce Data Connection, read our [documentation](https://experienceleague-review.corp.adobe.com/docs/commerce-merchant-services/data-connection/overview.html).
+>To learn how to get started with Adobe Commerce Data Connection, read our documentation:
+>
+>- [User Guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
+>- [Developer Guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/mobile-sdk-epc.html)
 
 ## Payment Services for Adobe Commerce
 
@@ -198,7 +201,10 @@ Adobe has also introduced new customization options for Live Search. Using Live 
 
 >[!TIP]
 >
->To learn how to get started with Live Search, read our [documentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html).
+>To learn how to get started with Live Search, read our documentation:
+>
+>- [User Guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
+>- [Developer Guide](https://developer.adobe.com/commerce/services/graphql/live-search/)
 
 ## B2B commerce
 
@@ -264,9 +270,9 @@ A beta version of the New Rules Engine Service is expected to be released by Jun
 
 [!BADGE Available April 2024]{type=Informative tooltip="Available April 2024"}
 
-Creating the most effective commerce experience is not only about merchandising, personalization, and fast storefronts. It's also reliant on the core platform that handles your product catalog, promotions, order processing, inventory availability, and more.
+Creating the most effective commerce experience is not only about merchandising, personalization, and fast storefronts. It's also reliant on the core application that handles your product catalog, promotions, order processing, inventory availability, and more.
 
-Adobe's commitment to performance continues with the upcoming release of the core PHP application in April. This new core release supports several key performance improvements, including support for 100,000 active promotions, 10 million active coupons, the ability for multiple promotions to be redeemed against a single order, and GraphQL API response caching. Adobe Commerce has released a [beta version](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html) of the core PHP application for developers to build and test against.
+Adobe's commitment to performance continues with the upcoming release of the core application in April. This new core release supports several key performance improvements, including support for 100,000 active promotions, 10 million active coupons, the ability for multiple promotions to be redeemed against a single order, and GraphQL API response caching. Adobe Commerce has released a [beta version](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html) of the core application for developers to build and test against.
 
 >[!TIP]
 >
@@ -278,5 +284,4 @@ As we move further into 2023, it is critical for ecommerce leaders to deliver ex
 
 Other ways to engage with Adobe Commerce:
 
-- [Learn more about Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) or join us live at [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) in Las Vegas March 25-28
-- Read the Adobe Commerce February 2024 [release blog post](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)
+- [Learn more about Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html)- Join us live at [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) in Las Vegas March 25-28
