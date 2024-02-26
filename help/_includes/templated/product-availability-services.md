@@ -26,10 +26,10 @@
       </tr>
       <tr>
           <td>Catalog Service for Adobe Commerce</td>
-          <td>1.16</td>
-          <td>1.16</td>
-          <td>1.16</td>
-          <td>1.16</td>
+          <td>1.17</td>
+          <td>1.17</td>
+          <td>1.17</td>
+          <td>1.17</td>
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Overview</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Release Notes</a><br/>
@@ -48,10 +48,10 @@
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4.0.0</td>
-          <td>4.0.0</td>
-          <td>4.0.0</td>
-          <td>4.0.0</td>
+          <td>4.1.0</td>
+          <td>4.1.0</td>
+          <td>4.1.0</td>
+          <td>4.1.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Release Notes</a><br/>
@@ -70,10 +70,10 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>5.0.1</td>
-          <td>5.0.1</td>
-          <td>5.0.1</td>
-          <td>5.0.1</td>
+          <td>6.0.0</td>
+          <td>6.0.0</td>
+          <td>6.0.0</td>
+          <td>6.0.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Release Notes</a><br/>

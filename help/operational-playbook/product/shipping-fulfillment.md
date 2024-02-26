@@ -54,7 +54,7 @@ The following table describes the differences between B2B and B2C shipping and f
 | B2B                                                                                          | B2C                                                  |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | Fulfillment and shipping takes longer to complete due to the costs involved and the quantity | Can be same day shipping and/or free shipping        |
-| Requires one on one connection between the business and the client                           | Usually, shot term relationships                     |
+| Requires one on one connection between the business and the client                           | Usually, short term relationships                     |
 | Usually, long term relationships                                                             | Business provides loyalty cards to retain customers  |
 | Process can be long and complex                                                              | Promotions and campaigns offer provides to customers |
 | Strong rules need to be applied                                                              | Basic rules can be applied                           |
