@@ -21,6 +21,8 @@ Where
 *  `--disabled` lists all disabled modules.
 *  `<module-list>` is a space-delimited list of modules to check the status. If any module name contains special characters, enclose the name in either single or double quotes.
 
+[!NOTE]> Enabling/disabling of modules cannot be done directly on the Adobe Commerce Cloud infrastructure. You will have to run these commands locally and then push the app/etc/config.php file to the environment. Refer to the [Pro project workflow: Deployment workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow) for more information on this process.
+
 ## Module enable, disable
 
 To enable or disable available modules, use the following command:
