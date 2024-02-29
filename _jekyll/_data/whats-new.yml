@@ -1,8 +1,20 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Feb 13 09:42:37 2024
+updated: Mon Feb 26 16:45:06 2024
 entries:
+- description: Added best practice for [upgrading MariaDB](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html)
+    to 10.5.1 and later.
+  versions: ''
+  type: major-update
+  date: February 14, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/753
+  merge_commit: 7199e74f82cef6dd682f5e240ee2b6fc56da18c8
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - best-practices
 - description: Added February 2024 security patches to the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
   versions: ''
   type: major-update
