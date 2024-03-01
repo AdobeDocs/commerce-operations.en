@@ -6,7 +6,7 @@ role: Admin, User, Developer
 mini-toc-levels: 1
 ---
 
-# Adobe Commerce February product announcments
+# Adobe Commerce February product announcements
 
 Adobe Commerce has been working closely with customers to develop new experience-led commerce capabilities that empower them to move faster and accelerate sales. Customers like Hanesbrands are already benefiting from faster sites, higher conversion rates, and better-performing campaigns using these new capabilities. And Nestle Purina is simplifying composable development with our unified developer experience. Learn about these new capabilities and how to get started in this February product announcement overview.
 
