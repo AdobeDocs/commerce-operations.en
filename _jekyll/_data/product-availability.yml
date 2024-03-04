@@ -3,19 +3,32 @@
 # If breaking changes cannot be omitted, communicate with the SWAT team prior to introducing them.
 
 extensions:
+  Adobe Commerce Webhooks
+    docs:
+      Composer: https://developer.adobe.com/commerce/extensibility/webhooks/installation/
+      Release Notes: https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/
+    support:
+      - core: 2.4.7-beta3
+        version: 1.2+
+      - core: 2.4.6
+        version: 1.2+
+      - core: 2.4.5
+        version: 1.2+
+      - core: 2.4.4
+        version: 1.2+     
   Adobe I/O Events for Adobe Commerce:
     docs:
       Composer: https://developer.adobe.com/commerce/extensibility/events/installation/
       Release Notes: https://developer.adobe.com/commerce/extensibility/events/release-notes/
     support:
       - core: 2.4.7-beta3
-        version: 1.3.0
+        version: 1.5+
       - core: 2.4.6
-        version: 1.3.0
+        version: 1.5+
       - core: 2.4.5
-        version: 1.3.0
+        version: 1.5+
       - core: 2.4.4
-        version: 1.3.0  
+        version: 1.5+
   B2B:
     docs:
       Composer: https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html
