@@ -14,7 +14,7 @@
   </thead>
   <tbody>
       <tr>
-        <td>Adobe I/O Events for Adobe Commerce</td>
+          <td>Adobe I/O Events for Adobe Commerce</td>
           <td>1.3.0</td>
           <td>1.3.0</td>
           <td>1.3.0</td>
@@ -37,7 +37,6 @@
       </tr>
       <tr>
           <td>Experience Platform Connector</td>
-        <td></td>
           <td>3.0.0-beta1</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
