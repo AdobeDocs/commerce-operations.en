@@ -6,7 +6,7 @@ role: Admin, User, Developer
 mini-toc-levels: 1
 ---
 
-# Adobe Commerce February product announcments
+# Adobe Commerce February product announcements
 
 Adobe Commerce has been working closely with customers to develop new experience-led commerce capabilities that empower them to move faster and accelerate sales. Customers like Hanesbrands are already benefiting from faster sites, higher conversion rates, and better-performing campaigns using these new capabilities. And Nestle Purina is simplifying composable development with our unified developer experience. Learn about these new capabilities and how to get started in this February product announcement overview.
 
@@ -112,7 +112,7 @@ Additionally, we are also hosting a hands-on [lab session](https://reg.adobe.com
 
 Adobe has extensive experience deploying HIPAA-Ready Services with healthcare customers of all sizes. From payors to providers to pharmaceutical and med tech vendors, Adobe sets the standard for responsible consumer data management. This expertise is now extending to the rapidly growing healthcare digital commerce market with a HIPPA-ready version of the Adobe Commerce cloud platform.  
 
-The HIPAA-Ready offering is available to Adobe Commerce Managed Services customers. It includes additional security and privacy controls to ensure the protection of electronic personal health information (ePHI) so healthcare and life sciences organizations can more easily fulfill their compliance obligations. The solution supports a range of use cases, including fast and convenient online sales of healthcare coverage, prescriptions, prescribed medical devices, and medical supplies. Adobe Commerce now joins the [Adobe Experience Cloud for Healthcare](https://business.adobe.com/solutions/industries/healthcare.html) suite of solutions, allowing customers to deliver secure and exceptional patient experiences while honoring consumer preferences.
+The HIPAA-Ready offering is available to Adobe Commerce cloud and Managed Service customers. It includes additional security and privacy controls to ensure the protection of electronic personal health information (ePHI) so healthcare and life sciences organizations can more easily fulfill their compliance obligations. The solution supports a range of use cases, including fast and convenient online sales of healthcare coverage, prescriptions, prescribed medical devices, and medical supplies. Adobe Commerce now joins the [Adobe Experience Cloud for Healthcare](https://business.adobe.com/solutions/industries/healthcare.html) suite of solutions, allowing customers to deliver secure and exceptional patient experiences while honoring consumer preferences.
 
 >[!TIP]
 >
