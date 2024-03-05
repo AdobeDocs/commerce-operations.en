@@ -14,7 +14,7 @@ All asynchronous operations in [!DNL Commerce] are performed using the Linux `cr
 
 ## Indexers
 
-An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Update on Schedule]** mode. The **[!UICONTROL Update on Save]** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. We recommend using **Update on Schedule** mode in production, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each [!DNL Commerce] indexer separately on the  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuration page.
+An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Update on Schedule]** mode. The **[!UICONTROL Update on Save]** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. We recommend using **Update on Schedule** for performance purposes, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each [!DNL Commerce] indexer separately on the  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuration page. The [!UICONTROL Customer Grid] index must always be set to the **[!UICONTROL Update on Save]** mode.
 
 >[!TIP]
 >
@@ -99,9 +99,9 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 ### Bundling tips
 
-*  We recommend that you use third-party tools for minification and bundling (like [r.js](https://requirejs.org/)). [!DNL Commerce] built-in mechanisms are not optimal and are shipped as fallback alternatives.
-*  Activating the HTTP2 protocol can be a good alternative to using JS bundling. The protocol provides pretty much the same benefits.
-*  We do not recommend using deprecated settings like merging JS and CSS files, as they were designed only for synchronously-loaded JS in the HEAD section of the page. Using this technique can cause bundling and requireJS logic to work incorrectly.
+* We recommend that you use third-party tools for minification and bundling (like [r.js](https://requirejs.org/)). [!DNL Commerce] built-in mechanisms are not optimal and are shipped as fallback alternatives.
+* Activating the HTTP/2 protocol can be a good alternative to using JS bundling. The protocol provides many of the same benefits. It is enabled by default in Adobe Commerce on cloud infrastructure projects.
+* We do not recommend using deprecated settings like merging JS and CSS files, as they were designed only for synchronously-loaded JS in the HEAD section of the page. Using this technique can cause bundling and requireJS logic to work incorrectly.
 
 ## Customer segments validation
 

@@ -36,7 +36,7 @@ The following sections include best practice information for the planning phase.
     <td>Configure sites, stores, and store views to maximize site performance.</td>
   </tr>
   <tr>
-    <td><a href="https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales">Common configuration issues</a></td>
+    <td><a href="https://business.adobe.com/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">Common configuration issues</a></td>
     <td>Fix and prevent the five most common configuration issues for Adobe Commerce sites.</td>
   </tr>
   <tr>

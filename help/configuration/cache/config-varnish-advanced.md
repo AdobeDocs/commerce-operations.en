@@ -8,7 +8,7 @@ exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
 
 Varnish provides several features that prevent customers from experiencing long delays and timeouts when the Commerce server is not functioning properly. These features can be configured in the `default.vcl` file. This topic describes the additions that Commerce provides in the VCL (Varnish Configuration Language) file you download from the Admin.
 
-See the [Varnish Reference Manual](https://varnish-cache.org/docs/6.3/reference/index.html) for details about using the Varnish Configuration Language.
+See the [Varnish Reference Manual](https://varnish-cache.org/docs/index.html) for details about using the Varnish Configuration Language.
 
 ## Health check
 
@@ -30,7 +30,7 @@ Every 5 seconds, this health check calls the `pub/health_check.php` script. This
 
 The `health_check.php` script is located in the `pub` directory. If your Commerce root directory is `pub`, then be sure to change the path in the `url` parameter from `/pub/health_check.php` to `health_check.php`.
 
-For more information, see the [Varnish health checks](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentation.
+For more information, see the [Varnish health checks](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentation.
 
 ## Grace mode
 
@@ -79,10 +79,7 @@ bin/magento cache:flush
 
 ### Installation
 
-Saint mode is not part of the main Varnish package. It is a separately versioned `vmod` that must be downloaded and installed. As a result, you should recompile Varnish from source, as described in the following articles:
-
-- [Installing Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Installing Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+Saint mode is not part of the main Varnish package. It is a separately versioned `vmod` that must be downloaded and installed. As a result, you must recompile Varnish from source, as described in the [installation instructions](https://varnish-cache.org/docs/index.html) for your version of Varnish.
 
 After you recompile, you can install the Saint mode module. In general, follow these steps:
 

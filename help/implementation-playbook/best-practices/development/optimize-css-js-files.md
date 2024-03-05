@@ -28,6 +28,8 @@ The time it takes to load CSS and JavaScript (JS) files can be reduced by mergin
 >
 >Adobe Commerce on cloud infrastructure always runs on Production mode and it is not possible to set it otherwise, therefore you must use the command-line method to enable merging, minifying, and bundling.
 
+Do not merge or bundle files if your deployment uses HTTP/2. HTTP/2 downloads static files asynchronously. Browsers must download an entire merged file before processing the file contents.
+
 ### Using Admin
 
 To enable CSS merging or minification, go into the [!UICONTROL **Admin** > **Stores** > **Setting** > **Configuration** > **Advanced** > **Developer** > **CSS Settings**].

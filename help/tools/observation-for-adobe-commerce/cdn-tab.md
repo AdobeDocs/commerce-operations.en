@@ -58,6 +58,8 @@ This frame shows the duration in seconds of the cacheable requests, meaning that
 
 ![Fastly Cache Average Response for selected time period in seconds faceted by POP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-10.png)
 
+*POP* in this context refers to a Point of Presence (POP) that is configured to function as a pool for cache storage. See [Points of presence](https://developer.fastly.com/learning/concepts/pop/).
+
 ## [!UICONTROL Total Bandwidth (All POPs) during the selected timeframe, compared with 1 week ago (% increase/decrease)]
 
 ![Total Bandwidth (All POPs) during the selected time frame, compared with 1 week ago (% increase/decrease)](../../assets/tools/observation-for-adobe-commerce/cdn-tab-11.png)

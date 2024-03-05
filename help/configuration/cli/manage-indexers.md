@@ -105,6 +105,8 @@ Catalog Search index has been rebuilt successfully in <time>
 
 ### Reindexing in parallel mode
 
+{{php-process-control}}
+
 Indexers are scoped and multi-threaded to support reindexing in parallel mode. It parallelizes by the indexer's dimension and executes across multiple threads, reducing processing time.
 
 In this context, `dimension` is the scope of the reindexing, for instance a `website` or just a specific `customer_group`.
@@ -217,11 +219,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### Configure indexers
+### Set the indexer mode
+
+>[!IMPORTANT]
+>
+>Be sure to set the [!DNL Customer Grid] with `realtime` instead of `schedule`. The [!DNL Customer Grid] can only be reindexed using the [!UICONTROL Update on Save] option. This index does not support the `Update by Schedule` option. Use the following command line to set this indexer to update on save: `php bin/magento indexer:set-mode realtime customer_grid`
+>
+>See [Best practices for indexer configuration](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) in the _Implementation Playbook_.
 
 >[!INFO]
 >
->Before switching indexer modes, we recommend putting your website to [maintenance](../../installation/tutorials/maintenance-mode.md) mode and [disable cron jobs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). This ensures you do not suffer database locks.
+>Before switching indexer modes, set your website to [maintenance](../../installation/tutorials/maintenance-mode.md) mode and [disable cron jobs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). This ensures you do not suffer database locks.
 
 To specify the indexer configuration:
 
@@ -249,3 +257,51 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 ```
 
 The indexers-related database triggers are added when the indexer mode is set to `schedule` and removed when the indexer mode is set to `realtime`. If the triggers are missing from your database while the indexers are set to `schedule`, change the indexers to `realtime` and then change them back to `schedule`. This resets the triggers.
+
+### Set indexer status [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Available in 2.4.7-beta only"}
+
+This command allows administrators to modify the operational status of one or more indexers, optimizing system performance during extensive operations like data imports, updates, or maintenance.
+
+Command syntax:
+
+```bash
+bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
+```
+
+Where:
+
+- `invalid`—Marks indexers as out-of-date, prompting reindexing on the next cron run unless they are suspended.
+- `suspended`—Temporarily stops automatic cron-triggered updates for indexers. This status applies to both real-time and schedule modes, ensuring that automatic updates are paused during intensive operations.
+- `valid`—Indicates that indexer data is up-to-date, with no need for reindexing.
+- `indexer`—Is a space-separated list of indexers. Omit `indexer` to configure all indexers the same way.
+
+For example, to suspend specific indexers, enter:
+
+```bash
+bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
+```
+
+Sample result:
+
+```terminal
+Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
+Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
+```
+
+#### Managing suspended indexer status
+
+When an indexer is set to a `suspended` status, it primarily affects automatic reindexing and materialized view updates. Here's a brief overview:
+
+**Reindexing Skipped**: Automatic reindexing is bypassed for `suspended` indexers and any indexers sharing the same `shared_index`. This ensures system resources are conserved by not reindexing data related to suspended processes.
+
+**Materialized View Updates Skipped**: Similar to reindexing, updates to materialized views related to `suspended` indexers or their shared indexes are also paused. This action further reduces system load during suspension periods.
+
+>[!INFO]
+>
+>The `indexer:reindex` command reindexes all indexers, including those marked as `suspended`, making it useful for manual updates when automatic ones are paused.
+
+>[!IMPORTANT]
+>
+>Changing an indexer's status to `valid` from `suspended` or `invalid` requires caution. This action can lead to performance degradation if there's accumulated unindexed data.
+>
+>It's crucial to ensure that all data is accurately indexed before manually updating the status to `valid` to maintain system performance and data integrity.
