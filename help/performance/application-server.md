@@ -6,7 +6,7 @@ exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 ---
 # Application Server for GraphQL APIs
 
-The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state among Commerce GraphQL API requests. The Application Server, which is built on the Open Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, Application Server enhances request handling and overall product performance. API requests become significantly more efficient.
+The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state among Commerce GraphQL API requests. The Application Server, which is built on the Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, Application Server enhances request handling and overall product performance. API requests become significantly more efficient.
 
 Application Server is supported on Cloud Starter and on-premises deployments only. It is not available for Cloud Pro instances during Beta. It is not available for Magento Open Source deployments.
 
@@ -26,48 +26,80 @@ Application Server allows Adobe Commerce to sustain state between consecutive Co
 
 Running Application Server requires the following:
 
-* PHP 8.2 or higher
-* Open Swoole PHP extension v22+ installed
+* PHP 8.2 or higher 
+* Swoole PHP extension v5+ installed
 * Adequate RAM and CPU based on the expected load
 
-## Enable Application Server for Cloud Starter
+## Enable Application Server
 
-The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs. Application Server is supported on on-premises and Cloud Starter deployments only. It is not available for Cloud Pro instances during Beta.
+The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs. Application Server is supported on on-premises and Cloud deployments.
+
+## Enable Application Server on Cloud Pro
+
+Complete the following tasks before deploying Application Server on Cloud Pro:
+
+1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
+2. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
+3. Clone your Commerce Cloud project. 
+4. Adjust settings in the 'application-server/nginx.conf.sample' file if necessary. 
+5. Comment out active 'web' section in `project_root/.magento.app.yaml` file entirely. 
+6. Uncomment following 'web' section configuration in `project_root/.magento.app.yaml` file that includes the Application Server start command.
+
+   ```yaml
+   web:
+       upstream:
+           socket_family: tcp
+           protocol: http
+       commands:
+           start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
+
+   ```
+
+8. Add updated files to the git index with this command:
+
+   ```bash
+   git add -f .magento/routes.yaml application-server/.magento/*
+   ```
+
+9. Commit your changes with this command:
+
+   ```bash
+   git commit -m "AppServer Enabled"
+   ```
+
+### Deploy Application Server on Cloud Pro
+
+After performing the prerequisite tasks, deploy Application Server using this command:
+
+```bash
+git push
+```
 
 ### Before you begin a Cloud Starter deployment
 
-Complete the following tasks before deploying Application Server: 
+Complete the following tasks before deploying Application Server on Starter: 
 
-1. Confirm that Adobe Commerce is installed on Commerce Cloud.
-1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
-1. Clone your Commerce Cloud project.
-1. Create a `graphql` folder in your `project_root` folder.
-1. Add the additional custom `.magento.app.yaml` file included in the [magento.app.yaml file content](#magento.app.yaml-file-content) topic into your `project_root/graphql` folder. 
-1. Edit the `project_root/.magento/routes.yaml` file to include these directives:
+1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
+2. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
+3. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
+4. Clone your Commerce Cloud project.
+5. Rename 'application-server/.magento/.magento.app.yaml.sample' to 'application-server/.magento/.magento.app.yaml' and adjust settings in .magento.app.yaml if needed.
+7. Uncomment the following route's configuration in `project_root/.magento/routes.yaml` file to redirect /graphql traffic to the Application Server.
 
    ```yaml
-
-   # The routes of the project.
-   #
-   # Each route describes how an incoming URL is going to be processed.
-
-   "http://{default}/":
-     type: upstream
-     upstream: "mymagento:http"
-
-   "http://{default}/graphql":
-     type: upstream
-     upstream: "graphql:http"
+   "http://{all}/graphql":
+       type: upstream
+       upstream: "application-server:http"
 
    ```
 
-1. Add updated files to the git index with this command:
+8. Add updated files to the git index with this command:
 
    ```bash
-   git add -f php.ini graphql/.magento.app.yaml .magento/routes.yaml swoole.so
+   git add -f .magento/routes.yaml application-server/.magento/*
    ```
 
-1. Commit your changes with this command:
+9. Commit your changes with this command:
 
    ```bash
    git commit -m "AppServer Enabled"
@@ -82,14 +114,6 @@ git push
 ```
 
 ### Verify Application Server enablement on Cloud Starter
-
-1. Open your Cloud project user interface. You should see an additional SSH access point for the `graphql` application.
-
-1. Use SSH to access your Cloud instance using the graphql application access point, then execute the following command:
-
-   ```bash
-   ps aux|grep php
-   ```
 
 1. Perform a GraphQL query or mutation against your instance to confirm that the `graphql` endpoint is accessible. For example:
 
@@ -109,16 +133,23 @@ git push
     }
    ```
 
-1. Use SSH to access your Cloud instance through the GraphQL application access point. The `project_root/var/log/magento-server.log` should contain a new log record for every GraphQL request.
+2. Use SSH to access your Cloud instance. The `project_root/var/log/application-server.log` should contain a new log record for every GraphQL request.
 
-If these verification steps are successful, you can proceed with test cycle execution.
+3. You can also check if Application Server is running by executing the following command:
+
+   ```bash
+   ps aux|grep php
+   ```
+   You should see a bin/magento server:run process with multiple threads.
+
+If these verification steps are successful, Application Server is running and serving /graphql requests.
 
 
 ## Enable Application Server on on-premises deployments
 
 The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs.
 
-Running Application Server requires installation of the Open Swoole extension and a minor change to your deployment's Nginx configuration file to run this application server locally.
+Running Application Server requires installation of the Swoole extension and a minor change to your deployment's Nginx configuration file to run this application server locally.
 
 ### Before you begin an on-premises deployment
 
@@ -126,7 +157,7 @@ Complete these two tasks before enabling the `ApplicationServer` module:
 
 * Configure Nginx
 
-* Install and configure the Open Swoole v22 extension
+* Install and configure the Swoole v5+ extension
 
 ### Configure Nginx
 
@@ -143,9 +174,9 @@ location /graphql {
 }
 ```
 
-### Install and configure Open Swoole
+### Install and configure Swoole
 
-To run the Application Server locally, install the Open Swoole v22 extension. There are multiple ways to install this extension.
+To run the Application Server locally, install the Swoole v5+ extension. There are multiple ways to install this extension.
 
 ## Run Application Server
 
@@ -157,28 +188,27 @@ bin/magento server:run
 
 This command starts an HTTP port on 9501. Once Application Server launches, port 9501 becomes an HTTP proxy server for all GraphQL queries.
 
-## Example: Install Open Swoole (OSX)
+## Example: Install Swoole (OSX)
 
-This procedure illustrates how to install the Open Swoole extension on PHP 8.2 for OSX-based systems. It is one of several ways of installing the Open Swoole extension.
+This procedure illustrates how to install the Swoole extension on PHP 8.2 for OSX-based systems. It is one of several ways of installing the Swoole extension.
 
-### Install Open Swoole 
+### Install Swoole 
 
 Enter:
 
 ```bash
-pecl install openswoole-22.0.0
-composer require openswoole/core:22.1.1
+pecl install swoole
 ```
 
 During installation, Adobe Commerce displays prompts to enable support for `openssl`, `mysqlnd`, `sockets`, `http2`, and `postgres`. Enter `yes` for all options except `postgres`.
 
-### Confirm installation of Open Swoole
+### Confirm installation of Swoole
 
-Run `php -m | grep openswoole` to confirm that the extension has been successfully enabled.
+Run `php -m | grep swoole` to confirm that the extension has been successfully enabled.
 
-### Common errors with the Open Swoole installation
+### Common errors with the Swoole installation
 
-Any errors that occur during Open Swoole installation typically occur during the `pecl` installation phase. Typical errors include missing `openssl.h` and `pcre2.h` files. To resolve these errors, ensure that these two packages are installed in your local system. 
+Any errors that occur during Swoole installation typically occur during the `pecl` installation phase. Typical errors include missing `openssl.h` and `pcre2.h` files. To resolve these errors, ensure that these two packages are installed in your local system. 
 
 * Check the location of `openssl` by running:
 
@@ -219,7 +249,7 @@ Confirm that you are using the path from your local `dev` environment.
 You can run the following command again to check if openssl-related issues have been resolved:
 
 ```bash
-pecl install openswoole-22.0.0
+pecl install swoole
 ```
 
 #### Resolve issues with pcre2.h
@@ -236,7 +266,7 @@ ps aux | grep php
 
 Additional ways to confirm that Application Server is running include:
 
-* Check the `/var/log/magento-server.log` file for entries that are related to processed GraphQL requests.
+* Check the `/var/log/application-server.log` file for entries that are related to processed GraphQL requests.
 * Try to connect to the HTTP port that Application Server runs on. For example: `curl -g 'http://localhost:9501/graph`.
 
 ### Confirm that GraphQL requests are being processed by Application Server
@@ -286,7 +316,7 @@ To confirm that GraphQL requests are being processed by `php-fpm` instead of App
 After Application Server has been disabled:
 
 * `bin/magento server:run` is inactive.
-* `var/log/magento-server.log` contains no entries after GraphQL requests.
+* `var/log/application-server.log` contains no entries after GraphQL requests.
 
 ## Integration and functional tests for PHP Application Server
 
@@ -323,72 +353,3 @@ Run `ResetAfterRequestTest` by executing: `vendor/bin/phpunit -c $(pwd)/dev/test
 ### Functional Testing
 
 Extension developers should execute WebAPI functional tests for GraphQL, as well as any custom automated or manual functional tests for GraphQL, while deploying the Application Server. These functional tests help developers identify potential errors or compatibility issues.
-
-## magento.app.yaml file content
-
-See [Before you begin a Cloud Starter deployment](#Before-you-begin-a-Cloud-Starter-deployment) for instructions on adding the following code to your `project_root/graphql` folder.
-
-```yaml
-name: graphql
-# The toolstack used to build the application.
-type: php:8.2
-build:
-    flavor: none
- 
-source:
-    root: /
-dependencies:
-    php:
-        composer/composer: '2.5.5'
- 
-# Enable extensions required by Magento 2
-runtime:
-    extensions:
-        - xsl
-        - sodium
- 
-# The relationships of the application with services or other applications.
-# The left-hand side is the name of the relationship as it will be exposed
-# to the application in the environment variable. The right-hand
-# side is in the form `<service name>:<endpoint name>`.
-relationships:
-    database: "mysql:mysql"
-    redis: "redis:redis"
-    opensearch: "opensearch:opensearch"
- 
-# The configuration of app when it is exposed to the web.
-web:
-    commands:
-        start: "php -dopcache.enable_cli=1 -dopcache.validate_timestamps=0 bin/magento server:run -vvv  --port=${PORT:-80} > ${MAGENTO_CLOUD_APP_DIR}/var/log/magento-server.log 2>&1"
-    upstream:
-        socket_family: tcp
-        protocol: http
-    locations:
-        '/':
-            root: "pub"
-            passthru: true
- 
-# The size of the persistent disk of the application (in MB).
-disk: 5120
- 
-# The mounts that will be performed when the package is deployed.
-mounts:
-    "var": "shared:files/var"
-    "app/etc": "shared:files/etc"
-    "pub/media": "shared:files/media"
-    "pub/static": "shared:files/static"
- 
-hooks:
-    # We run build hooks before your application has been packaged.
-    build: |
-        set -e
-        composer install
-        php ./vendor/bin/ece-tools run scenario/build/generate.xml
-        php ./vendor/bin/ece-tools run scenario/build/transfer.xml
-    # We run deploy hook after your application has been deployed and started.
-    deploy: |
-        php ./vendor/bin/ece-tools run scenario/deploy.xml
-    # We run post deploy hook to clean and warm the cache. Available with ECE-Tools 2002.0.10.
-    post_deploy: |
-        php ./vendor/bin/ece-tools run scenario/post-deploy.xml
-```
