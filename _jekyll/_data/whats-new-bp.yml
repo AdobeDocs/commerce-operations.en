@@ -2,8 +2,20 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Mon Feb 5 09:07:44 2024
+updated: Mon Feb 26 16:44:55 2024
 entries:
+- description: Added best practice for [upgrading MariaDB](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html)
+    to 10.5.1 and later.
+  versions: ''
+  type: best-practices
+  date: February 14, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/753
+  merge_commit: 7199e74f82cef6dd682f5e240ee2b6fc56da18c8
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - best-practices
 - description: Added details about the [L2 cache memory sizing configuration options](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
     for Adobe Commerce on cloud infrastructure.
   versions: ''
