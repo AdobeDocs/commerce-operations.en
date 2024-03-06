@@ -26,7 +26,7 @@ Application Server allows Adobe Commerce to sustain state between consecutive Co
 
 Running Application Server requires the following:
 
-* PHP 8.2 or higher 
+* PHP 8.2 or higher
 * Swoole PHP extension v5+ installed
 * Adequate RAM and CPU based on the expected load
 
@@ -40,9 +40,9 @@ Complete the following tasks before deploying Application Server on Cloud Pro:
 
 1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
 2. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
-3. Clone your Commerce Cloud project. 
-4. Adjust settings in the 'application-server/nginx.conf.sample' file if necessary. 
-5. Comment out active 'web' section in `project_root/.magento.app.yaml` file entirely. 
+3. Clone your Commerce Cloud project.
+4. Adjust settings in the 'application-server/nginx.conf.sample' file if necessary.
+5. Comment out active 'web' section in `project_root/.magento.app.yaml` file entirely.
 6. Uncomment following 'web' section configuration in `project_root/.magento.app.yaml` file that includes the Application Server start command.
 
    ```yaml
@@ -55,13 +55,13 @@ Complete the following tasks before deploying Application Server on Cloud Pro:
 
    ```
 
-8. Add updated files to the git index with this command:
+7. Add updated files to the git index with this command:
 
    ```bash
    git add -f .magento/routes.yaml application-server/.magento/*
    ```
 
-9. Commit your changes with this command:
+8. Commit your changes with this command:
 
    ```bash
    git commit -m "AppServer Enabled"
@@ -77,14 +77,14 @@ git push
 
 ### Before you begin a Cloud Starter deployment
 
-Complete the following tasks before deploying Application Server on Starter: 
+Complete the following tasks before deploying Application Server on Starter:
 
 1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
 2. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
 3. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
 4. Clone your Commerce Cloud project.
 5. Rename 'application-server/.magento/.magento.app.yaml.sample' to 'application-server/.magento/.magento.app.yaml' and adjust settings in .magento.app.yaml if needed.
-7. Uncomment the following route's configuration in `project_root/.magento/routes.yaml` file to redirect /graphql traffic to the Application Server.
+6. Uncomment the following route's configuration in `project_root/.magento/routes.yaml` file to redirect /graphql traffic to the Application Server.
 
    ```yaml
    "http://{all}/graphql":
@@ -93,13 +93,13 @@ Complete the following tasks before deploying Application Server on Starter:
 
    ```
 
-8. Add updated files to the git index with this command:
+7. Add updated files to the git index with this command:
 
    ```bash
    git add -f .magento/routes.yaml application-server/.magento/*
    ```
 
-9. Commit your changes with this command:
+8. Commit your changes with this command:
 
    ```bash
    git commit -m "AppServer Enabled"
@@ -140,6 +140,7 @@ git push
    ```bash
    ps aux|grep php
    ```
+
    You should see a bin/magento server:run process with multiple threads.
 
 If these verification steps are successful, Application Server is running and serving /graphql requests.
@@ -192,7 +193,7 @@ This command starts an HTTP port on 9501. Once Application Server launches, port
 
 This procedure illustrates how to install the Swoole extension on PHP 8.2 for OSX-based systems. It is one of several ways of installing the Swoole extension.
 
-### Install Swoole 
+### Install Swoole
 
 Enter:
 
@@ -208,7 +209,7 @@ Run `php -m | grep swoole` to confirm that the extension has been successfully e
 
 ### Common errors with the Swoole installation
 
-Any errors that occur during Swoole installation typically occur during the `pecl` installation phase. Typical errors include missing `openssl.h` and `pcre2.h` files. To resolve these errors, ensure that these two packages are installed in your local system. 
+Any errors that occur during Swoole installation typically occur during the `pecl` installation phase. Typical errors include missing `openssl.h` and `pcre2.h` files. To resolve these errors, ensure that these two packages are installed in your local system.
 
 * Check the location of `openssl` by running:
 
@@ -242,10 +243,10 @@ To resolve issues related to `openssl`, run:
 export LDFLAGS="-L/opt/homebrew/etc/openssl@3/lib" export CPPFLAGS="-I/opt/homebrew/etc/openssl@3/include"
 ```
 
-Confirm that you are using the path from your local `dev` environment. 
+Confirm that you are using the path from your local `dev` environment.
 
 #### Confirm resolution of openssl-related issues
- 
+
 You can run the following command again to check if openssl-related issues have been resolved:
 
 ```bash
@@ -326,7 +327,7 @@ Extension developers can run two integration tests to verify extension compatibi
 
 `GraphQlStateTest` detects state in shared objects that should not be reused for multiple requests.
 
-This test is designed to detect state changes in service objects that are produced by the `ObjectManager`. The test executes identical GraphQL queries twice and compares service object state before and after the second query. 
+This test is designed to detect state changes in service objects that are produced by the `ObjectManager`. The test executes identical GraphQL queries twice and compares service object state before and after the second query.
 
 #### GraphQlStateTest failures and potential remediation
 
@@ -347,8 +348,8 @@ Run `GraphQlStateTest` by executing `vendor/bin/phpunit -c $(pwd)/dev/tests/inte
 * **Class has inconsistent property values**. If this test fails, check if a class has been changed with the result that the object after construction has different property values than it has after the `_resetState()` method is called. If the class that you are working on does not contain the `_resetState()` method itself, then check the class hierarchy for a superclass that implements it.
 
 * **Typed property $x must not be accessed before initialization message**. This issue also occurs with `GraphQlStateTest`.
- 
-Run `ResetAfterRequestTest` by executing: `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`.
+
+  Run `ResetAfterRequestTest` by executing: `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`.
 
 ### Functional Testing
 
