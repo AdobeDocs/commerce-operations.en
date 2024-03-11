@@ -8,7 +8,7 @@ exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 
 The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maintain state among Commerce GraphQL API requests. The Application Server, which is built on the Swoole extension, operates as a process with worker threads that handle request processing. By preserving a bootstrapped application state among GraphQL API requests, Application Server enhances request handling and overall product performance. API requests become significantly more efficient.
 
-Application Server is supported on Cloud Starter and on-premises deployments only. It is not available for Cloud Pro instances during Beta. It is not available for Magento Open Source deployments.
+Application Server is supported on Adobe Commerce on cloud infrastructure Starter and Pro project only. It is not available for Magento Open Source projects. Adobe does not provide support for on-premises deployments of Application Server.
 
 ## Application Server architectural overview
 
