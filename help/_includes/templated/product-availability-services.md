@@ -5,7 +5,7 @@
   <thead>
     <tr>
       <th>Adobe Commerce versions</th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7-beta3</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
       <th>2.4.4</th>

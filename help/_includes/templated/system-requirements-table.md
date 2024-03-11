@@ -10,7 +10,7 @@
       <th>
         Software dependencies
       </th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7-beta3</th>
       <th>2.4.6-p4</th>
       <th>2.4.6-p3</th>
       <th>2.4.6-p2</th>
@@ -39,7 +39,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2.5
+            2.6
       </td>
       <td>
             2.2
@@ -111,7 +111,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.7
+            8.11
       </td>
       <td>
             8.11, 7.17
@@ -183,7 +183,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2.5
+            2.11
       </td>
       <td>
             2.5
@@ -399,7 +399,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.2, 8.1
+            8.3, 8.2
       </td>
       <td>
             8.2, 8.1
@@ -471,7 +471,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.11
+            3.12
       </td>
       <td>
             3.11, 3.9
@@ -543,7 +543,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.0
+            7.2
       </td>
       <td>
             7.0
@@ -615,7 +615,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-            7.3
+            7.4
       </td>
       <td>
             7.3
@@ -975,7 +975,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.10.20
+            3.11.20
       </td>
       <td>
             3.9.16
@@ -1191,7 +1191,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
-            2.5
+            2.11
       </td>
       <td>
             1.2
