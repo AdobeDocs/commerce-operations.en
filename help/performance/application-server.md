@@ -39,7 +39,7 @@ The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Applicatio
 Complete the following tasks before deploying Application Server on Cloud Pro:
 
 1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
-1. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
+1. Ensure that all your Commerce customizations and extensions are [compatible](https://developer.adobe.com/commerce/development/components/app-server/) with Application Server.
 1. Clone your Commerce Cloud project.
 1. Adjust settings in the 'application-server/nginx.conf.sample' file if necessary.
 1. Comment out the active 'web' section in `project_root/.magento.app.yaml` file entirely.
