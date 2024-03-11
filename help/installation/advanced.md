@@ -85,9 +85,9 @@ You can run the following commands to find values for some required arguments:
 
 | Installer argument | Command                         |
 | ------------------ | ------------------------------- |
-| Language           | bin/magento info:language:list      |
-| Currency           | bin/magento info:currency:list      |
-| Time zone          | bin/magento info:timezone:list      |
+| Language           | `bin/magento info:language:list`      |
+| Currency           | `bin/magento info:currency:list`      |
+| Time zone          | `bin/magento info:timezone:list`      |
 
 >[!NOTE]
 >

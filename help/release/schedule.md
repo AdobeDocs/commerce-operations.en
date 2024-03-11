@@ -25,7 +25,7 @@ The following table provides the dates for scheduled releases (dates are subject
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>Legend</strong>:
+      <td colspan="3"><strong>Legend</strong>
          <ul>
             <li><strong><img alt="B2B feature icon" src="../assets/icons/enterprise.svg"></img> B2B</strong>—New features, enhancements, and bug fixes for the B2B extension for Adobe Commerce.</li>
             <li><strong><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> Extensibility</strong>—New developer tools and services for out-of-process extensibility that are delivered independently from patch releases. For example, Admin UI SDK, Adobe I/O Events for Commerce, and API Mesh.</li>
