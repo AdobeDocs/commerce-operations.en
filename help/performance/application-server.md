@@ -39,11 +39,11 @@ The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Applicatio
 Complete the following tasks before deploying Application Server on Cloud Pro:
 
 1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
-2. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
-3. Clone your Commerce Cloud project.
-4. Adjust settings in the 'application-server/nginx.conf.sample' file if necessary.
-5. Comment out active 'web' section in `project_root/.magento.app.yaml` file entirely.
-6. Uncomment following 'web' section configuration in `project_root/.magento.app.yaml` file that includes the Application Server start command.
+1. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
+1. Clone your Commerce Cloud project.
+1. Adjust settings in the 'application-server/nginx.conf.sample' file if necessary.
+1. Comment out the active 'web' section in `project_root/.magento.app.yaml` file entirely.
+1. Uncomment the following 'web' section configuration in the `project_root/.magento.app.yaml` file that includes the Application Server start command.
 
    ```yaml
    web:
@@ -55,13 +55,13 @@ Complete the following tasks before deploying Application Server on Cloud Pro:
 
    ```
 
-7. Add updated files to the git index with this command:
+1. Add updated files to the git index with this command:
 
    ```bash
    git add -f .magento/routes.yaml application-server/.magento/*
    ```
 
-8. Commit your changes with this command:
+1. Commit your changes with this command:
 
    ```bash
    git commit -m "AppServer Enabled"
@@ -77,14 +77,14 @@ git push
 
 ### Before you begin a Cloud Starter deployment
 
-Complete the following tasks before deploying Application Server on Starter:
+Complete the following tasks before deploying Application Server on Cloud Starter:
 
 1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
-2. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
-3. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
-4. Clone your Commerce Cloud project.
-5. Rename 'application-server/.magento/.magento.app.yaml.sample' to 'application-server/.magento/.magento.app.yaml' and adjust settings in .magento.app.yaml if needed.
-6. Uncomment the following route's configuration in `project_root/.magento/routes.yaml` file to redirect /graphql traffic to the Application Server.
+1. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
+1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
+1. Clone your Commerce Cloud project.
+1. Rename 'application-server/.magento/.magento.app.yaml.sample' to 'application-server/.magento/.magento.app.yaml' and adjust settings in .magento.app.yaml if needed.
+1. Uncomment the following route's configuration in the `project_root/.magento/routes.yaml` file to redirect `/graphql` traffic to the Application Server.
 
    ```yaml
    "http://{all}/graphql":
@@ -93,13 +93,13 @@ Complete the following tasks before deploying Application Server on Starter:
 
    ```
 
-7. Add updated files to the git index with this command:
+1. Add updated files to the git index with the following command:
 
    ```bash
    git add -f .magento/routes.yaml application-server/.magento/*
    ```
 
-8. Commit your changes with this command:
+1. Commit your changes with this command:
 
    ```bash
    git commit -m "AppServer Enabled"
@@ -107,7 +107,7 @@ Complete the following tasks before deploying Application Server on Starter:
 
 ### Deploy Application Server on Cloud Starter
 
-After performing the prerequisite tasks, deploy Application Server using this command:
+After completing the [prerequisites](#before-you-begin-a-cloud-starter-deployment), deploy Application Server using this command:
 
 ```bash
 git push
@@ -133,24 +133,24 @@ git push
     }
    ```
 
-2. Use SSH to access your Cloud instance. The `project_root/var/log/application-server.log` should contain a new log record for every GraphQL request.
+1. Use SSH to access your Cloud instance. The `project_root/var/log/application-server.log` should contain a new log record for every GraphQL request.
 
-3. You can also check if Application Server is running by executing the following command:
+1. You can also check if Application Server is running by executing the following command:
 
    ```bash
    ps aux|grep php
    ```
 
-   You should see a bin/magento server:run process with multiple threads.
+   You should see a `bin/magento server:run` process with multiple threads.
 
-If these verification steps are successful, Application Server is running and serving /graphql requests.
+If these verification steps are successful, the application server is running and serving `/graphql` requests.
 
 
 ## Enable Application Server on on-premises deployments
 
 The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Application Server for GraphQL APIs.
 
-Running Application Server requires installation of the Swoole extension and a minor change to your deployment's Nginx configuration file to run this application server locally.
+Running Application Server locally requires installation of the Swoole extension and a minor change to your deployment's NGINX configuration file.
 
 ### Before you begin an on-premises deployment
 
@@ -177,7 +177,7 @@ location /graphql {
 
 ### Install and configure Swoole
 
-To run the Application Server locally, install the Swoole v5+ extension. There are multiple ways to install this extension.
+To run the Application Server locally, install the Swoole extension (v5.0 or higher). There are multiple ways to install this extension.
 
 ## Run Application Server
 
