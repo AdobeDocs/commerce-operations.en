@@ -4,8 +4,8 @@ description: Learn about the latest composable development tools and AI-powered 
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
 ---
-
 # Adobe Commerce February product announcements
 
 Adobe Commerce has been working closely with customers to develop new experience-led commerce capabilities that empower them to move faster and accelerate sales. Customers like Hanesbrands are already benefiting from faster sites, higher conversion rates, and better-performing campaigns using these new capabilities. And Nestle Purina is simplifying composable development with our unified developer experience. Learn about these new capabilities and how to get started in this February product announcement overview.
@@ -16,7 +16,7 @@ Adobe Commerce has been working closely with customers to develop new experience
 
 Join us at these in-person and virtual events to learn more about Adobe Commerce from ecommerce leaders and practitioners:
 
-- **March 15, 2024**: Adobe Commerce: Building the Experience-led Commerce Platform, 10am PDT / 6pm GMT. [Register for the live webinar](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **March 14, 2024**: Adobe Commerce: Building the Experience-led Commerce Platform, 10am PDT / 5pm GMT. [Register for the live webinar](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **March 26 to 28, 2024**: Join thousands of ecommerce leaders and practitioners live at Adobe Summit in Las Vegas. Find out more about [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) and the [Commerce Track](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&search.track=1601680652403006TXuG) with speakers from [Hanesbrands](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&search=S435), [Coca-Cola](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&search=S434), [Unilever](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&search=s430), and [Nestle Purina](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&search=S437).
 
@@ -110,7 +110,7 @@ Additionally, we are also hosting a hands-on [lab session](https://reg.adobe.com
 
 [!BADGE Available now]{type=Informative tooltip="Available now"}
 
-Adobe has extensive experience deploying HIPAA-Ready Services with healthcare customers of all sizes. From payors to providers to pharmaceutical and med tech vendors, Adobe sets the standard for responsible consumer data management. This expertise is now extending to the rapidly growing healthcare digital commerce market with a HIPPA-ready version of the Adobe Commerce cloud platform.  
+Adobe has extensive experience deploying HIPAA-Ready Services with healthcare customers of all sizes. From payors to providers to pharmaceutical and med tech vendors, Adobe sets the standard for responsible consumer data management. This expertise is now extending to the rapidly growing healthcare digital commerce market with a HIPAA-ready version of the Adobe Commerce cloud platform.  
 
 The HIPAA-Ready offering is available to Adobe Commerce cloud and Managed Service customers. It includes additional security and privacy controls to ensure the protection of electronic personal health information (ePHI) so healthcare and life sciences organizations can more easily fulfill their compliance obligations. The solution supports a range of use cases, including fast and convenient online sales of healthcare coverage, prescriptions, prescribed medical devices, and medical supplies. Adobe Commerce now joins the [Adobe Experience Cloud for Healthcare](https://business.adobe.com/solutions/industries/healthcare.html) suite of solutions, allowing customers to deliver secure and exceptional patient experiences while honoring consumer preferences.
 
