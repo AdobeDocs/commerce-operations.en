@@ -5,7 +5,7 @@
   <thead>
     <tr>
       <th>Adobe Commerce versions</th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7-beta3</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
       <th>2.4.4</th>
@@ -15,13 +15,35 @@
   <tbody>
       <tr>
           <td>Adobe I/O Events for Adobe Commerce</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Composer</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Release Notes</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Adobe Commerce Admin UI SDK</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>-</td>
+          <td>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Composer</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Release Notes</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Adobe Commerce Webhooks</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Composer</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
@@ -36,14 +58,14 @@
           </td>
       </tr>
       <tr>
-          <td>Experience Platform Connector</td>
-          <td>3.0.0-beta1</td>
-          <td>1.0.0+</td>
+          <td>Data Connection</td>
+          <td>3.2.0-beta3</td>
+          <td>2.1.1+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
