@@ -43,7 +43,7 @@ The following table provides the dates for scheduled releases (dates are subject
     <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.6-p4, 2.4.5-p6, 2.4.4-p7</td>
   </tr>
   <tr>
-    <td>March 19, 2024</td>
+    <td>March 12, 2024</td>
     <td>--</td>
     <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2.4.7-beta3</td>
   </tr>
