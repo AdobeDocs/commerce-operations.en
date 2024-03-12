@@ -5,23 +5,23 @@
 #     <Service Name>: <Service Version>, <Service Version 2>
 #     <Service Name> Cloud: <Service Version>, <Service Version 2>
 
-2.4.7-beta2:
-  Composer: '2.5'
-  Elasticsearch: '8.7'
-  OpenSearch: '2.5'
+2.4.7-beta3:
+  Composer: '2.6'
+  Elasticsearch: '8.11'
+  OpenSearch: '2.11'
   MariaDB: '10.6'
   MySQL: '8.0'
-  PHP: '8.2, 8.1'
-  RabbitMQ: '3.11'
-  Redis: '7.0'
-  Varnish: '7.3'
+  PHP: '8.3, 8.2'
+  RabbitMQ: '3.12'
+  Redis: '7.2'
+  Varnish: '7.4'
   Apache: '2.4'
   nginx: '1.24'
   AWS Aurora (MySQL): '8.0'
   AWS S3: ✔️
-  AWS MQ: '3.10.20'
+  AWS MQ: '3.11.20'
   AWS ElastiCache: Redis 7.0
-  AWS OpenSearch: '2.5'
+  AWS OpenSearch: '2.11'
 2.4.6-p4:
   Composer: '2.2'
   Elasticsearch: '8.11, 7.17'
