@@ -10,9 +10,9 @@ The goal is to take what we've learned working with large enterprise customers a
 
 The expected outcome is to convince customers and partners of the value of Adobe solutions and to adopt our new innovations to support their business goals.
 
-![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture.svg)
+![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture.svg){zoomable="yes"}
 
-![Legend for architectural diagram](../../assets/playbooks/commerce-architecture-legend.svg){width="50%"}
+![Legend for architectural diagram](../../assets/playbooks/commerce-architecture-legend.svg){width="50%" zoomable="yes"}
 
 ## Cloud foundation
 
@@ -29,17 +29,15 @@ Traditional composable applications are built using point-to-point integrations 
 - [Admin UI](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) extensibility
 - Over 700 [events](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events.html)
 
-These features simplify how developers add new services or replace existing services in their composable stack.
-
 ## SaaS features
 
-Adobe provides a collection of merchandising and data services to help customers support key components of their business:
+Adobe provides a collection of merchandising and data services to help you support key components of your business:
 
 - [Data Connection](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)—Unlock insights about your shoppers' buying behavior and create personalized shopping experiences across all channels with other Adobe Digital Experience products.
-- [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)—Implement this AI-powered search tool that delivers smarter, faster and relevant results for shoppers.
+- [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
 - [Product Recommentations](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
 - [Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
-- [Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)—Drive customer satisfaction by easily offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
+- [Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
 ## Storefront technology
 
