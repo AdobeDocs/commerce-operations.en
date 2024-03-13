@@ -27,7 +27,6 @@ mini-toc-levels: 3
   - [Project governance](planning/governance.md)
 - Architecture and integrations {#architecture}
   - [Integration strategy](architecture/integration-strategy.md)
-  - [Integration options](architecture/integration-options.md)
   - Global reference architecture {#global-reference-architecture}
     - [Overview](architecture/global-reference/overview.md)
     - [Examples](architecture/global-reference/examples.md)
