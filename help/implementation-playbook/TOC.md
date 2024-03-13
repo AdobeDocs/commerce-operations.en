@@ -26,7 +26,6 @@ mini-toc-levels: 3
   - [Responsibility and ownership](planning/ownership.md)
   - [Project governance](planning/governance.md)
 - Architecture and integrations {#architecture}
-  - [Capabilities](architecture/capabilities.md)
   - [Integration strategy](architecture/integration-strategy.md)
   - [Extensibility strategy](architecture/extensibility-strategy.md)
   - [Integration options](architecture/integration-options.md)
