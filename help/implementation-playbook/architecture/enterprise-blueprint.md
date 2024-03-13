@@ -42,3 +42,11 @@ Adobe provides a collection of merchandising and data services to help you suppo
 ## Storefront technology
 
 To offer a truly powerful and complete commerce experience, Adobe offers a [new storefront](https://experienceleague.adobe.com/developer/commerce/dropins/) that not only includes the same benefits and capabilities delivered by [Edge Delivery Services](https://aem.live) with document-based authoring, a performance-first architecture, and out-of-the-box native experimentation; but also leverages the scale and performance of Adobe Commerce SaaS products and the flexibility and convenience of drop-in components that deliver commerce capabilities required to transact online.
+
+## Architecture (.png)
+
+_**Editorial note:** Will remove after confirming .svg version renders as expected on staging._
+
+![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture.png)
+
+![Legend for architectural diagram](../../assets/playbooks/commerce-architecture-legend.png)
