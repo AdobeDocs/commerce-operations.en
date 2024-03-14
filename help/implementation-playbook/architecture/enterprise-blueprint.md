@@ -6,9 +6,9 @@ feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 
 # Adobe Commerce enterprise architecture blueprint
 
-The goal is to take what we've learned working with large enterprise customers and scale our GTM efforts to show CIOs and technical evaluators how Commerce connects to all Experience Cloud solutions. 
+Adobe Commerce is the experience-led platform that uniquely pairs technical flexibility with ease of use, all in service of creating exceptional experiences that drive business results.
 
-The expected outcome is to convince customers and partners of the value of Adobe solutions and to adopt our new innovations to support their business goals.
+Commerce has evolved to meet enterprise requirements for performance, scale, and security. Adopting a modern implementation approach that leverages Adobe's composable solutions is critical to the success of enterprise businesses. This page describes the modern Commerce implementation approach, including technical details to help you achieve your business goals.
 
 ![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture.png){zoomable="yes"}
 
