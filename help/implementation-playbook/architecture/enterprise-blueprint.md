@@ -18,7 +18,7 @@ The expected outcome is to convince customers and partners of the value of Adobe
 
 [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) provides an automated hosting platform with a self-service approach to building, deploying, monitoring, and managing your Commerce application in a cloud-native environment.
 
-## Composability
+## Integrations and customizations
 
 Adobe Commerce is a composable ecommerce platform designed to launch ecommerce features faster, easily share data between third-party systems, and lower the cost of ownership for integrations and customizations.
 
@@ -31,7 +31,7 @@ Traditional composable applications are built using point-to-point integrations 
 
 ## SaaS features
 
-Adobe provides a collection of merchandising and data services to help you support key components of your business:
+Adobe offers a rich set of intelligent, composable services built to deliver personalized commerce experiences at scale to help you support key goals of your business:
 
 - [Data Connection](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)—Unlock insights about your shoppers' buying behavior and create personalized shopping experiences across all channels with other Adobe Digital Experience products.
 - [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
@@ -41,4 +41,4 @@ Adobe provides a collection of merchandising and data services to help you suppo
 
 ## Storefront technology
 
-To offer a truly powerful and complete commerce experience, Adobe offers a [new storefront](https://experienceleague.adobe.com/developer/commerce/dropins/) that not only includes the same benefits and capabilities delivered by [Edge Delivery Services](https://aem.live) with document-based authoring, a performance-first architecture, and out-of-the-box native experimentation; but also leverages the scale and performance of Adobe Commerce SaaS products and the flexibility and convenience of drop-in components that deliver commerce capabilities required to transact online.
+Adobe offers [storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) technology that not only includes the same benefits and capabilities delivered by [Edge Delivery Services](https://aem.live) with document-based authoring, a performance-first architecture, and out-of-the-box native experimentation; but also leverages the scale and performance of Adobe Commerce SaaS products and the flexibility and convenience of drop-in components that deliver commerce capabilities required to transact online.
