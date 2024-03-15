@@ -5,7 +5,7 @@ exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
 ---
 # [!DNL Site-Wide Analysis Tool]
 
->[!Important]
+>[!IMPORTANT]
 >
 >Effective April 23, 2024, the [!DNL Site-Wide Analysis Tool] will be decommissioned for all Adobe Commerce on-premises customers.
 
