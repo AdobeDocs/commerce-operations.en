@@ -1,6 +1,6 @@
 ---
 title: Enterprise reference architecture
-description: Learn how to implement Adobe Commerce using Adobe's latest compasable commerce technology.
+description: Learn how to implement Adobe Commerce using Adobe's latest composable commerce technology.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 ---
 
@@ -20,8 +20,8 @@ Commerce has evolved to meet enterprise requirements for performance, scale, and
 
 See the following cloud foundation technical details:
 
-- [**Scaled architecture**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)—Automatically adjusted capacity to maintain steady, predeictable performance
-- [**Multiple environments**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)—Pre-previsioned with PHP, MySQL (MariaDB), Redis, RabbitMQ, and supported search engine technologies to develope, test, and deploy your site
+- [**Scaled architecture**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)—Automatically adjusted capacity to maintain steady, predictable performance
+- [**Multiple environments**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)—Pre-previsioned with PHP, MySQL (MariaDB), Redis, RabbitMQ, and supported search engine technologies to develop, test, and deploy your site
 - [**Configuration management**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/overview)—Customizable environment configuration files and command-line interface (CLI) to manage application settings, routes, build and deploy actions, and notifications.
 - [**Git-based workflow**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow)—Automatically build and deploy after pushing code changes for rapid development and continuous deployment
 - [**Built-in observability**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance)—Tools that combine log data from multiple sources to help you manage your site's performance and diagnose issues
@@ -31,7 +31,7 @@ See the following cloud foundation technical details:
 
 Adobe provides developers with comprehensive extension points and tools to integrate Commerce with third-party systems (such as CRMs, ERPS, and PIMS) and build applications that extend core Commerce capabilities. These tools reduce your total cost of ownership of the platform in the following ways:
 
-- **Scalability**—Applications can be scaled separately from the core software, allowing for greater efficiency and simplfied upgrades.
+- **Scalability**—Applications can be scaled separately from the core software, allowing for greater efficiency and simplified upgrades.
 - **Isolation**–An isolated environment means that developers can upgrade or modify their extensions at their discretion without relying on a core release.
 - **Technological independence**–Developers can choose whichever technology stacks and coding languages that fit their needs.
 
@@ -47,7 +47,7 @@ Adobe provides the following developer tools for building integrations and custo
 
 Adobe provides a rich set of intelligent, composable services built to deliver personalized commerce experiences at scale to help you support your key business goals.
 
-Somethign about performance benefits of using SaaS APIs vs core
+Something about performance benefits of using SaaS APIs vs core
 
 Something about data modeling/catalog mgmt
 
@@ -59,6 +59,6 @@ Something about data modeling/catalog mgmt
 
 ## Headless storefront
 
-Headless commerce is API-first commerce. Adobe Commerce is fully headless with a decoupled architecture that provides all commerce services and data through a GraphQL API layer. This architecture allows frontend teams to develop their frontends independently from the core applicatino, providing the agility to quickly build and test new touchpoints with emerging technologies.
+Headless commerce is API-first commerce. Adobe Commerce is fully headless with a decoupled architecture that provides all commerce services and data through a GraphQL API layer. This architecture allows frontend teams to develop their frontends independently from the core application, providing the agility to quickly build and test new touchpoints with emerging technologies.
 
-Adobe provides a modern headless storefront technology that includes the same benefits and capabilities delivered by [Edge Delivery Services](https://www.aem.live/home) with document-based authoring, a performance-first architecture, and out-of-the-box native experimentation. It leverages the scale and performance of Adobe Commerce SaaS microservices and the flexibility and convenience of [drop in components](https://experienceleague.adobe.com/developer/commerce/storefront/) to deliver commerce capabilities.
+Adobe provides a modern headless storefront technology that includes the same benefits and capabilities delivered by [Edge Delivery Services](https://www.aem.live/home) with document-based authoring, a performance-first architecture, and out-of-the-box native experimentation. It leverages the scale and performance of Adobe Commerce SaaS microservices and the flexibility and convenience of [drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/) to deliver commerce capabilities.
