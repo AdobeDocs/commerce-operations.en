@@ -26,7 +26,7 @@ mini-toc-levels: 3
   - [Responsibility and ownership](planning/ownership.md)
   - [Project governance](planning/governance.md)
 - Architecture and integrations {#architecture}
-  - [Enterprise blueprint](architecture/enterprise-blueprint.md)
+  - [Enterprise reference](architecture/enterprise-blueprint.md)
   - Global reference architecture {#global-reference-architecture}
     - [Overview](architecture/global-reference/overview.md)
     - [Examples](architecture/global-reference/examples.md)
@@ -34,13 +34,6 @@ mini-toc-levels: 3
       - [Overview](architecture/global-reference/composer/overview.md)
       - [Project structure](architecture/global-reference/composer/project-structure.md)
       - [Tips and tricks](architecture/global-reference/composer/tips-and-tricks.md)
-  - Headless commerce {#headless}
-    - [Benefits](architecture/headless/benefits.md)
-    - [Journey to headless](architecture/headless/journey-to-headless.md)
-    - [Microservices](architecture/headless/microservices.md)
-    - [Evolution of headless](architecture/headless/evolution.md)
-    - [Coupled storefront architecture](architecture/headless/legacy-storefront.md)
-    - [Headless architecture](architecture/headless/adobe-commerce.md)
 - Infrastructure and deployment {#infrastructure}
   - [Overview](infrastructure/overview.md)
   - Self Hosting {#self-hosting}
