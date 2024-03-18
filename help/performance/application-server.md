@@ -107,8 +107,8 @@ Complete the following tasks before deploying Application Server on Cloud Starte
 
 >[!NOTE]
 >
-> Ensure that all custom settings you may have in root `.magento.app.yaml` appropriately migrated to `application-server/.magento/.magento.app.yaml`. Once `application-server/.magento/.magento.app.yaml` file added to your project you should maintain it in addition to the root one.
-> For example, in case you need to [configure rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) you should add same configuration to `application-server/.magento/.magento.app.yaml` as well.
+> Ensure that all custom settings that you have in the root `.magento.app.yaml` file are appropriately migrated to the `application-server/.magento/.magento.app.yaml` file. Once the `application-server/.magento/.magento.app.yaml` file is added to your project, you should maintain it in addition to the root `.magento.app.yaml` file.
+> For example, if you need to [configure rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) you should add the same configuration to `application-server/.magento/.magento.app.yaml` as well.
 
 ### Deploy Application Server on Cloud Starter
 
