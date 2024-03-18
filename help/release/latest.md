@@ -1,6 +1,6 @@
 ---
 title: February Product announcements
-description: Learn about the latest composable development tools and AI-powered personalization capabilities in Adobe Commerce.
+description: Learn about the latest composable development tools and AI-powered personalization capabilities in Adobe Commerce. Change some metadata.
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
