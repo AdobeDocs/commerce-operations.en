@@ -90,7 +90,7 @@ Complete the following tasks before deploying Application Server on Cloud Starte
 > Ensure that all custom settings you may have in root `.magento.app.yaml` appropriately migrated to `application-server/.magento/.magento.app.yaml`. Once `application-server/.magento/.magento.app.yaml` file added to your project you should maintain it in addition to the root one.
 > For example, in case you need to [configure rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) you should add same configuration to `application-server/.magento/.magento.app.yaml` as well. 
 
-7. Uncomment the following route's configuration in the `project_root/.magento/routes.yaml` file to redirect `/graphql` traffic to the Application Server.
+6. Uncomment the following route's configuration in the `project_root/.magento/routes.yaml` file to redirect `/graphql` traffic to the Application Server.
 
    ```yaml
    "http://{all}/graphql":
@@ -99,13 +99,13 @@ Complete the following tasks before deploying Application Server on Cloud Starte
 
    ```
 
-8. Add updated files to the git index with the following command:
+7. Add updated files to the git index with the following command:
 
    ```bash
    git add -f .magento/routes.yaml application-server/.magento/*
    ```
 
-9. Commit your changes with this command:
+8. Commit your changes with this command:
 
    ```bash
    git commit -m "AppServer Enabled"
