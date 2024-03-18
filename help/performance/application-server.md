@@ -80,11 +80,17 @@ git push
 Complete the following tasks before deploying Application Server on Cloud Starter:
 
 1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
-1. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
-1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
-1. Clone your Commerce Cloud project.
-1. Rename 'application-server/.magento/.magento.app.yaml.sample' to 'application-server/.magento/.magento.app.yaml' and adjust settings in .magento.app.yaml if needed.
-1. Uncomment the following route's configuration in the `project_root/.magento/routes.yaml` file to redirect `/graphql` traffic to the Application Server.
+2. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
+3. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
+4. Clone your Commerce Cloud project.
+5. Rename `application-server/.magento/.magento.app.yaml.sample` to `application-server/.magento/.magento.app.yaml` and adjust settings in .magento.app.yaml if needed.
+
+>[!NOTE]
+>
+> Ensure that all custom settings you may have in root `.magento.app.yaml` appropriately migrated to `application-server/.magento/.magento.app.yaml`. Once `application-server/.magento/.magento.app.yaml` file added to your project you should maintain it in addition to the root one.
+> For example, in case you need to [configure rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) you should add same configuration to `application-server/.magento/.magento.app.yaml` as well. 
+
+7. Uncomment the following route's configuration in the `project_root/.magento/routes.yaml` file to redirect `/graphql` traffic to the Application Server.
 
    ```yaml
    "http://{all}/graphql":
@@ -93,13 +99,13 @@ Complete the following tasks before deploying Application Server on Cloud Starte
 
    ```
 
-1. Add updated files to the git index with the following command:
+8. Add updated files to the git index with the following command:
 
    ```bash
    git add -f .magento/routes.yaml application-server/.magento/*
    ```
 
-1. Commit your changes with this command:
+9. Commit your changes with this command:
 
    ```bash
    git commit -m "AppServer Enabled"
