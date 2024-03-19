@@ -10,9 +10,15 @@ Adobe Commerce is the experience-led platform that uniquely pairs technical flex
 
 Commerce has evolved to meet enterprise requirements for performance, scale, and security. Adopting a modern implementation approach that uses Adobe's latest composable commerce solutions is critical to the success of enterprise businesses. This page describes the modern Commerce implementation approach in technical detail.
 
+The following architecture diagram illustrates the data flow between Adobe Commerce and all Adobe Experience Cloud solutions.
+
 ![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture.png){zoomable="yes"}
 
 ![Legend for architectural diagram](../../assets/playbooks/commerce-architecture-legend.png){width="50%" zoomable="yes"}
+
+>[!NOTE]
+>
+>The data flows shown in the diagram are consistent across most enterprise implementations. The key component that can make implementations unique is product catalog modeling/data architecture (especially for B2B).
 
 ## Cloud foundation
 
@@ -27,7 +33,16 @@ See the following cloud foundation technical details:
 - [**Built-in observability**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance)—Tools that combine log data from multiple sources to help you manage your site's performance and diagnose issues
 - [**Comprehensive API coverage**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) and [REST](https://developer.adobe.com/commerce/webapi/rest) APIs for integrating the core Commerce application with third-party systems and extending Commerce capabilities
 
-## Integrations and customizations
+## Integration with Experience Cloud
+
+Adobe Commerce integrates with all Experience Cloud solutions to deliver personalized commerce experiences at scale. Primarily, [Data Connection](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products.
+
+>[!NOTE]
+>
+>See [Digital Experience blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) for more information.
+
+
+## Integration with third-party systems
 
 Adobe provides developers with comprehensive extension points and tools to integrate Commerce with third-party systems (such as CRMs, ERPS, and PIMS) and build applications that extend core Commerce capabilities. These tools reduce your total cost of ownership of the platform in the following ways:
 
@@ -43,15 +58,10 @@ Adobe provides the following developer tools for building integrations and custo
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Use webhooks to automatically trigger interactions between Commerce and third-party systems.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Customize and enhance the Commerce Admin with new pages and features for your merchants.
 
-## SaaS microservices
+## Storefront services
 
-Adobe provides a rich set of intelligent, composable services built to deliver personalized commerce experiences at scale to help you support your key business goals.
+Adobe provides a rich set of intelligent, composable merchandizing services to help you support your key business goals. These services also provide APIs that are critical to optmizing performance at scale.
 
-Something about performance benefits of using SaaS APIs vs core
-
-Something about data modeling/catalog mgmt
-
-- [Data Connection](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)—Unlock insights about your shoppers' buying behavior and create personalized shopping experiences across all channels with other Adobe Digital Experience products.
 - [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
 - [Product Recommentations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
 - [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
@@ -59,6 +69,6 @@ Something about data modeling/catalog mgmt
 
 ## Headless storefront
 
-Headless commerce is API-first commerce. Adobe Commerce is fully headless with a decoupled architecture that provides all commerce services and data through a GraphQL API layer. This architecture allows frontend teams to develop their frontends independently from the core application, providing the agility to quickly build and test new touchpoints with emerging technologies.
+Headless commerce is API-first commerce. Adobe Commerce is fully headless with a decoupled architecture that provides all commerce services and data through a GraphQL API layer. This architecture allows teams to develop their frontends independently from the core application, providing the agility to quickly build and test new touchpoints with emerging technologies.
 
-Adobe provides a modern headless storefront technology that includes the same benefits and capabilities delivered by [Edge Delivery Services](https://www.aem.live/home) with document-based authoring, a performance-first architecture, and out-of-the-box native experimentation. It leverages the scale and performance of Adobe Commerce SaaS microservices and the flexibility and convenience of [drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/) to deliver commerce capabilities.
+Adobe provides a modern headless storefront technology that includes the same benefits and capabilities delivered by [Edge Delivery Services](https://www.aem.live/home) with document-based authoring, a performance-first architecture, and out-of-the-box native experimentation. It leverages the scale and performance of Adobe Commerce [storefront services](#storefront-services) and the flexibility and convenience of [drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/) to deliver commerce capabilities.
