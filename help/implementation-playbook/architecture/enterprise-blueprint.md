@@ -35,11 +35,13 @@ See the following cloud foundation technical details:
 
 ## Integration with Experience Cloud
 
-Adobe Commerce integrates with all Experience Cloud solutions to deliver personalized commerce experiences at scale. Primarily, [Data Connection](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products.
+Adobe Commerce integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+
+[Data Connection](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products.
 
 >[!NOTE]
 >
->See [Digital Experience blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) for more information.
+>See [Digital Experience blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) for more technical detail.
 
 
 ## Integration with third-party systems
