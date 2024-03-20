@@ -59,8 +59,8 @@
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>2.4.0 (PHP 8.3)</td>
-          <td>2.4.0 (PHP 8.2)</td>
+          <td>2.3.0</td>
+          <td>2.2.0</td>
           <td>2.2.0 (PHP 8.1)</td>
           <td>2.2.0 (PHP 8.1)</td>
           <td>
