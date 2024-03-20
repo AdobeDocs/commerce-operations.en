@@ -18,7 +18,7 @@ The following architecture diagram illustrates the data flow between Adobe Comme
 
 >[!NOTE]
 >
->The data flows shown in the diagram are consistent across most enterprise implementations. The key component that can make implementations unique is product catalog modeling/data architecture (especially for B2B).
+>The data flows shown in the diagram are consistent across most enterprise implementations. The key component that can make implementations unique is the way you build your catalog (especially for B2B). You should carefully map your catalog architecture to the [Commerce web APIs](https://developer.adobe.com/commerce/webapi/get-started/) to avoid complications.
 
 ## Cloud foundation
 
