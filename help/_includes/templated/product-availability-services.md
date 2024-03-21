@@ -59,10 +59,10 @@
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>2.3.0</td>
-          <td>2.2.0</td>
-          <td>2.2.0 (PHP 8.1)</td>
-          <td>2.2.0 (PHP 8.1)</td>
+          <td>2.4.0 (PHP 8.3)</td>
+          <td>2.4.0 (PHP 8.2)</td>
+          <td>2.4.0 (PHP 8.1)</td>
+          <td>2.4.0 (PHP 8.1)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Release Notes</a><br/>
