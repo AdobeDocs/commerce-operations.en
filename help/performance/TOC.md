@@ -15,7 +15,7 @@ topic: Administration, Commerce, Development, Performance
 - [Configuration best practices](configuration.md)
 - [Deployment flow](deployment-flow.md)
 - [High-throughput order processing](high-throughput-order-processing.md)
-- Advanced concepts {#advanced}
+- Advanced concepts {#concepts}
   - [Advanced setup](advanced-setup.md)
   - [Advanced [!DNL JavaScript] bundling](advanced-js-bundling.md)
   - [Application Server for GraphQL APIs](application-server.md)
