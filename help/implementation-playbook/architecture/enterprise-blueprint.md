@@ -44,7 +44,7 @@ Adobe Commerce integrates with all Experience Cloud solutions to deliver [person
 
 ## Integration with third-party systems
 
-Adobe provides developers with comprehensive extension points and tools to integrate Commerce with third-party systems (such as CRMs, ERPS, and PIMS) and build applications that extend core Commerce capabilities. These tools reduce your total cost of ownership of the platform in the following ways:
+Adobe provides developers with comprehensive extension points and tools to build applications that extend core Commerce capabilities and integrate Commerce with third-party systems (such as CRMs, ERPS, and PIMS). These tools reduce your total cost of ownership of the platform in the following ways:
 
 - **Scalability**—Applications can be scaled separately from the core software, allowing for greater efficiency and simplified upgrades.
 - **Isolation**–An isolated environment means that developers can upgrade or modify their extensions at their discretion without relying on a core release.
