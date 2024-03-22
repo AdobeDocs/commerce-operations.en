@@ -24,7 +24,7 @@ The following architecture diagram illustrates the data flow between Adobe Comme
 
 ## New SVG
 
-![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture.svg){zoomable="yes"}
+![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture-v2.svg){zoomable="yes"}
 
 ## Cloud foundation
 
