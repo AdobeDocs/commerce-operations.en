@@ -12,19 +12,11 @@ Commerce has evolved to meet enterprise requirements for performance, scale, and
 
 The following architecture diagram illustrates the data flow between Adobe Commerce and all Adobe Experience Cloud solutions.
 
-## Original PNG
-
-![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture.png){zoomable="yes"}
-
-![Legend for architectural diagram](../../assets/playbooks/commerce-architecture-legend.png){width="50%" zoomable="yes"}
+![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture-v2.svg){zoomable="yes"}
 
 >[!NOTE]
 >
 >The high-level data flows shown in the diagram are consistent across most enterprise implementations. The key component that can make implementations unique is the way you build your catalog (especially for B2B). You should carefully map your catalog architecture to the [Commerce web APIs](https://developer.adobe.com/commerce/webapi/get-started/).
-
-## New SVG
-
-![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture-v2.svg){zoomable="yes"}
 
 ## Cloud foundation
 
