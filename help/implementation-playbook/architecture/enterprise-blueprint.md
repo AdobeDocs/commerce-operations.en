@@ -60,10 +60,10 @@ Adobe provides the following developer tools for building integrations and custo
 
 ## Storefront services
 
-Adobe provides a rich set of intelligent, composable merchandizing services to help you support your key business goals. These services also provide APIs that are critical to optmizing performance at scale.
+Adobe provides a rich set of intelligent, composable merchandizing services to help you support your key business goals. These services also provide APIs that are critical to optimizing performance at scale.
 
 - [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)—Deliver smarter, faster and relevant results for shoppers with this AI-powered search tool.
-- [Product Recommentations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
+- [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview)—Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.
 - [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview)—Give your customers an optimized product experience while boosting performance, improving scalability, and increasing conversions.
 - [Payment Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview)—Drive customer satisfaction by offering various payment methods, including interest-free payment installments, and a single view into payment processing, orders, and invoices.
 
