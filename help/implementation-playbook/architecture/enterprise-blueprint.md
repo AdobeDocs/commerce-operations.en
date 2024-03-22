@@ -25,7 +25,7 @@ The following architecture diagram illustrates the data flow between Adobe Comme
 See the following cloud foundation technical details:
 
 - [**Scaled architecture**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)—Automatically adjusted capacity to maintain steady, predictable performance
-- [**Multiple environments**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)—Pre-previsioned with PHP, MySQL (MariaDB), Redis, RabbitMQ, and supported search engine technologies to develop, test, and deploy your site
+- [**Multiple environments**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)—Pre-provisioned with PHP, MySQL (MariaDB), Redis, RabbitMQ, and supported search engine technologies to develop, test, and deploy your site
 - [**Configuration management**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/overview)—Customizable environment configuration files and command-line interface (CLI) to manage application settings, routes, build and deploy actions, and notifications.
 - [**Git-based workflow**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow)—Automatically build and deploy after pushing code changes for rapid development and continuous deployment
 - [**Built-in observability**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance)—Tools that combine log data from multiple sources to help you manage your site's performance and diagnose issues
