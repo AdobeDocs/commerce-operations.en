@@ -2,8 +2,8 @@
 title: Enterprise reference architecture
 description: Learn how to implement Adobe Commerce using Adobe's latest composable commerce technology.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
+exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
 ---
-
 # Adobe Commerce enterprise reference architecture
 
 Adobe Commerce is the experience-led platform that uniquely pairs technical flexibility with ease of use, all in service of creating exceptional experiences that drive business results.
