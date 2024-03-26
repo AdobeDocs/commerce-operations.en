@@ -116,7 +116,7 @@ Apart from the previously mentioned common infrastructure optimization recommend
 
 ### Headless architecture
 
-There is a separate section dedicated to [headless](../../architecture/headless/adobe-commerce.md). In summary, it separates the storefront layer from the platform itself. It is still the same backend, but Adobe Commerce no longer processes requests directly and instead only supports custom storefronts through the GraphQL API.
+There is a separate section dedicated to [headless](../../architecture/enterprise-blueprint.md#headless-storefront). In summary, it separates the storefront layer from the platform itself. It is still the same backend, but Adobe Commerce no longer processes requests directly and instead only supports custom storefronts through the GraphQL API.
 
 ### Keep Adobe Commerce updated
 
