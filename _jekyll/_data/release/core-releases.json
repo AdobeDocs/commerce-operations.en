@@ -12,7 +12,7 @@
                 "releaseNotes": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html"
             }
         ],
-        "end-of-support": "2027-04-19"
+        "end-of-support": "2027-04-09"
     },
     "2.4.6": {
         "releases": [
@@ -128,7 +128,7 @@
                 "releaseNotes": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html"
             }
         ],
-        "end-of-support": "2025-04-12"
+        "end-of-support": "2025-04-24"
     },
     "2.4.0-2.4.3": {
         "releases": [

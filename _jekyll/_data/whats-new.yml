@@ -1,8 +1,52 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Feb 26 16:45:06 2024
+updated: Mon Mar 12 13:19:39 2024
 entries:
+- description: Updated the set up instructions for the [Application Server for GraphQL
+    APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html)
+    feature.
+  versions: ''
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/775
+  merge_commit: a4f907a793b4384cb7c162c032a153fafbbc6ff3
+  contributor: adimov
+  membership: false
+  labels:
+  - major-update
+- description: Published release notes for [Adobe Commerce 2.4.7-beta3](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html).
+  versions: 2.4.7
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/771
+  merge_commit: d5bd6e1e9af78b24c687554261a50d4dce9483d6
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Added 2.4.7-beta3 to the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+  versions: ''
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/759
+  merge_commit: 4c622c47862c61fc9e6587ff95b3ac45142c2318
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added information about the new [`indexer:set-status`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+    CLI command.
+  versions: ''
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/755
+  merge_commit: acacc285f8b977b33bb27af76c971bc4015a2b45
+  contributor: poperech
+  membership: false
+  labels:
+  - major-update
 - description: Added best practice for [upgrading MariaDB](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html)
     to 10.5.1 and later.
   versions: ''
