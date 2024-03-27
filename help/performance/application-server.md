@@ -1,7 +1,6 @@
 ---
 title: Application Server for GraphQL APIs
 description: Follow these instructions for enabling the Application Server for GraphQL APIs in your Adobe Commerce deployment.
-badgeCoreBeta: label="2.4.7-beta" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
 ---
 # Application Server for GraphQL APIs
