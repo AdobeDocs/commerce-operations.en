@@ -106,9 +106,8 @@ Storefront and Admin:
 - Firefox (latest and previous major version; any operating system)
 - Chrome (latest and previous major version; any operating system)
 - Safari (latest and previous major version; macOS only)
-- Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
-- Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
-- Chrome for mobile (latest and previous major version [Android&trade; 4 or later] for mobile storefront)
+- Safari for iOS (latest and previous major version, for storefront)
+- Chrome for Android (latest and previous major version, for storefront)
 
 ### Mail server
 

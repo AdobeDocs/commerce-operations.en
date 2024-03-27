@@ -7,12 +7,13 @@ recommendations: noDisplay, noCatalog
 
 # Release Information {#release}
 
+- [Latest release](latest.md)
 - Release notes {#notes}
   - [Overview](release-notes/overview.md)
   - [Backward-incompatible changes](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
     - [Overview](release-notes/commerce/overview.md)
-    - [2.4.7-beta](release-notes/commerce/2-4-7.md)
+    - [2.4.7](release-notes/commerce/2-4-7.md)
     - [2.4.6](release-notes/commerce/2-4-6.md)
     - [2.4.5](release-notes/commerce/2-4-5.md)
     - [2.4.4](release-notes/commerce/2-4-4.md)
@@ -22,7 +23,7 @@ recommendations: noDisplay, noCatalog
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
     - [Overview](release-notes/open-source/overview.md)
-    - [2.4.7-beta](release-notes/open-source/2-4-7.md)
+    - [2.4.7](release-notes/open-source/2-4-7.md)
     - [2.4.6](release-notes/open-source/2-4-6.md)
     - [2.4.5](release-notes/open-source/2-4-5.md)
     - [2.4.4](release-notes/open-source/2-4-4.md)
@@ -63,7 +64,5 @@ recommendations: noDisplay, noCatalog
   - [Release schedule](schedule.md)
 - Packages {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
-  - [Adobe Commerce (Beta)](packages/adobe-commerce-beta.md)
   - [Magento Open Source](packages/magento-open-source.md)
-  - [Magento Open Source (Beta)](packages/magento-open-source-beta.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -14,7 +14,7 @@ All asynchronous operations in [!DNL Commerce] are performed using the Linux `cr
 
 ## Indexers
 
-An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Update on Schedule]** mode. The **[!UICONTROL Update on Save]** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. We recommend using **Update on Schedule** mode in production, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each [!DNL Commerce] indexer separately on the  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuration page.
+An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Update on Schedule]** mode. The **[!UICONTROL Update on Save]** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. We recommend using **Update on Schedule** for performance purposes, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each [!DNL Commerce] indexer separately on the  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuration page. The [!UICONTROL Customer Grid] index must always be set to the **[!UICONTROL Update on Save]** mode.
 
 >[!TIP]
 >
@@ -36,7 +36,7 @@ There can be times when intensive sales on a storefront occur at the same time t
 >
 >The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
 
-## Asynchronous configuration save [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Available in 2.4.7-beta only"}
+## Asynchronous configuration save
 
 For projects with a large number of store-level configurations, saving a store configuration can take an inordinate amount of time or result in a timeout. The _Async Config_ module enables asynchronous configuration saves by running a cron job that uses a consumer to process the save in a message queue. AsyncConfig is **disabled** by default.
 
