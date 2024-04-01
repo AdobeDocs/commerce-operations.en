@@ -2,6 +2,11 @@
     "2.4.7": {
         "releases": [
             {
+                "publishedAt":"2024-03-12T13:48:36Z",
+                "tagName":"2.4.7-beta3",
+                "releaseNotes": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html"
+            },
+            {
                 "publishedAt":"2023-10-10T14:16:30Z",
                 "tagName":"2.4.7-beta2",
                 "releaseNotes": "https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html"
