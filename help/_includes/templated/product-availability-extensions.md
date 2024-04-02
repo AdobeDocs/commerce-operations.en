@@ -59,7 +59,7 @@
       </tr>
       <tr>
           <td>Data Connection</td>
-          <td>3.2.0</td>
+          <td>3.1.1+</td>
           <td>2.1.1+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
