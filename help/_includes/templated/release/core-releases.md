@@ -14,6 +14,12 @@ Support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta3</a>
+        </td>
+        <td>March&nbsp;12, 2024</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta2</a>
         </td>
         <td>October&nbsp;10, 2023</td>
