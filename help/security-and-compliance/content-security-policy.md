@@ -29,5 +29,3 @@ Because CSP is configured from the server, rather than from the Admin, most merc
 By default, CSP sends errors to the browser console, but can be configured to collect error logs by HTTP request. In addition, there are several third-party services that you can use to monitor, collect, and report CSP violations. CSP violations can be reported to an endpoint for collection by adding the URI from the Admin, or from the `config.xml` file for a custom module.  See [Report URI configuration](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#report-uri-configuration) in the _Commerce PHP Extensions Developer Guide_.
 
 [Report URI](https://report-uri.io/) is a service that monitors CSP violations and displays the results in a dashboard. Both merchants and developers can use the service to receive reports whenever CSP violations occur.
-
-CSP violations can be reported to an endpoint for collection.
