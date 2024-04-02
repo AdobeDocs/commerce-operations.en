@@ -5,7 +5,7 @@
   <thead>
     <tr>
       <th>Adobe Commerce versions</th>
-      <th>2.4.7-beta3</th>
+      <th>2.4.7</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
       <th>2.4.4</th>
@@ -59,7 +59,7 @@
       </tr>
       <tr>
           <td>Data Connection</td>
-          <td>3.2.0-beta3</td>
+          <td>3.2.0</td>
           <td>2.1.1+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
