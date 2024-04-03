@@ -4,6 +4,26 @@
 
 Learn about new documentation and significant updates to existing documentation.
 
+### March 24, 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added an <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html">architectural blueprint</a> for enterprise implementations of Commerce.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d33294d02b4431d4aa473aa5d0ab42e297cfed14">d33294</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### March 12, 2024
 
 <table style="table-layout:auto;">
@@ -15,6 +35,12 @@ Learn about new documentation and significant updates to existing documentation.
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Updated the following topics for the 2.4.7-beta3 release:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI (on-premises, Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Magento Open Source CLI (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Adobe Commerce packages (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Magento Open Source packages (Beta)</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/28029603b0a23eb161480363b5106142beda4180">280296</a> (commit)</td>
+    </tr>
     <tr>
       <td><p>Updated the set up instructions for the <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">Application Server for GraphQL APIs</a> feature.</p>
 </td>
