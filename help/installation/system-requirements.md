@@ -64,7 +64,7 @@ If you must install OPcache separately, see the [PHP OPcache documentation](http
 
 ### PHPUnit
 
-PHPUnit (as a command-line tool) 9.0.0
+PHPUnit v9 (as a command-line tool).
 
 ### PHP extensions
 
