@@ -9,6 +9,10 @@ The Commerce Application Server for GraphQL APIs enables Adobe Commerce to maint
 
 Application Server is supported on Adobe Commerce on cloud infrastructure Starter and Pro project only. It is not available for Magento Open Source projects. Adobe does not provide support for on-premises deployments of Application Server.
 
+>[!NOTE]
+>
+>Application Server is currently not compatible with [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Adobe Commerce on cloud infrastructure customers currently using [!DNL AWS S3] for [remote storage](../configuration/remote-storage/cloud-support.md) cannot use the Application Server until Adobe releases a hotfix later in 2024.
+
 ## Application Server architectural overview
 
 Application Server maintains state between Commerce GraphQL API requests and eliminates the need for bootstrapping. By sharing application state across processes, GraphQL requests become significantly more efficient, decreasing response times by up to 30%.

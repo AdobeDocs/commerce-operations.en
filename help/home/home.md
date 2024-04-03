@@ -11,7 +11,7 @@ Get practical information about concepts, processes, tools, and best practices t
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
       <img alt="Release Information" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
