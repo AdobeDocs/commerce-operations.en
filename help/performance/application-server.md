@@ -37,7 +37,7 @@ The `ApplicationServer` module (`Magento/ApplicationServer/`) enables Applicatio
 
 Complete the following tasks before deploying Application Server on Cloud Pro:
 
-1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
+1. Deploy Adobe Commerce on Commerce Cloud using Cloud Template from [2.4.7-appserver branch](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Ensure that all your Commerce customizations and extensions are [compatible](https://developer.adobe.com/commerce/php/development/components/app-server/) with Application Server.
 1. Clone your Commerce Cloud project.
 1. Adjust settings in the 'application-server/nginx.conf.sample' file if necessary.
@@ -78,7 +78,7 @@ git push
 
 Complete the following tasks before deploying Application Server on Cloud Starter:
 
-1. Confirm that Adobe Commerce is installed on Commerce Cloud using Cloud Template version 2.4.7 or higher.
+1. Deploy Adobe Commerce on Commerce Cloud using Cloud Template from [2.4.7-appserver branch](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Ensure that all your Commerce customizations and extensions are compatible with Application Server.
 1. Confirm that the `CRYPT_KEY` environment variable is set for your instance. You can check the status of this variable on the Cloud Project Portal (Onboarding UI).
 1. Clone your Commerce Cloud project.
