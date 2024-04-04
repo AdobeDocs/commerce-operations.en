@@ -19,7 +19,7 @@ You can use the Adobe Commerce cache management system to improve the performanc
 
 ## View the cache status
 
-From the command line of the Commerce application server, view the status of the cache using the cache:status Commerce CLI command.
+From the command line of the Commerce application server, view the status of the cache using the `cache:status` Commerce CLI command.
 
 ```bash
    bin/magento cache:status
