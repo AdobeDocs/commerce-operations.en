@@ -26,17 +26,18 @@
                 intl<br>
                 libxml<br>
                 mysqli<br>
+                opcache<br>
+                openswoole<br>
                 pcntl<br>
                 pdo_mysql<br>
                 Reflection<br>
-                SPL<br>
-                standard<br>
                 soap<br>
                 sockets<br>
+                SPL<br>
+                standard<br>
                 sysvmsg<br>
                 sysvsem<br>
                 sysvshm<br>
-                opcache<br>
                 zip<br>
                 zlib<br>
             </td>
