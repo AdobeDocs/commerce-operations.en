@@ -1,5 +1,5 @@
 ---
-version: 2.4.6
+version: 2.4.7
 default:
   - bcmath
   - bz2
@@ -8,9 +8,14 @@ default:
   - gd
   - gettext
   - intl
+  - libxml
   - mysqli
+  - openswoole
   - pcntl
   - pdo_mysql
+  - Reflection
+  - SPL
+  - standard
   - soap
   - sockets
   - sysvmsg
@@ -18,10 +23,12 @@ default:
   - sysvshm
   - opcache
   - zip
+  - zlib
 installed:
   - ctype
   - curl
   - date
+  - dba
   - dom
   - fileinfo
   - filter
@@ -50,7 +57,6 @@ available:
   - igbinary
   - imagick
   - imap
-  - ioncube
   - ldap
   - mailparse
   - mcrypt
