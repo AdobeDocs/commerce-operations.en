@@ -1,14 +1,14 @@
 {
   "application": {
     "name": "Magento CLI",
-    "version": "2.4.6"
+    "version": "2.4.7"
   },
   "commands": [
     {
       "name": "_complete",
       "description": "Internal command to provide shell completion suggestions",
       "usage": [
-        "_complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]"
+        "_complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]"
       ],
       "help": "Internal command to provide shell completion suggestions",
       "definition": {
@@ -20,7 +20,7 @@
             "accept_value": true,
             "is_value_required": true,
             "is_multiple": false,
-            "description": "The shell type (\"bash\")",
+            "description": "The shell type (\"bash\", \"fish\", \"zsh\")",
             "default": null
           },
           "input": {
@@ -41,13 +41,22 @@
             "description": "The index of the \"input\" array that the cursor is in (e.g. COMP_CWORD)",
             "default": null
           },
+          "api-version": {
+            "name": "--api-version",
+            "shortcut": "-a",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "The API version of the completion script",
+            "default": null
+          },
           "symfony": {
             "name": "--symfony",
             "shortcut": "-S",
             "accept_value": true,
             "is_value_required": true,
             "is_multiple": false,
-            "description": "The version of the completion script",
+            "description": "deprecated",
             "default": null
           },
           "help": {
@@ -123,7 +132,7 @@
       "usage": [
         "completion [--debug] [--] [<shell>]"
       ],
-      "help": "The <info>completion</> command dumps the shell completion script required\nto use shell autocompletion (currently only bash completion is supported).\n\n<comment>Static installation\n-------------------</>\n\nDump the script to a global completion file and restart your shell:\n\n    <info>bin/magento completion bash | sudo tee /etc/bash_completion.d/magento</>\n\nOr dump the script to a local file and source it:\n\n    <info>bin/magento completion bash > completion.sh</>\n\n    <comment># source the file whenever you use the project</>\n    <info>source completion.sh</>\n\n    <comment># or add this line at the end of your \"~/.bashrc\" file:</>\n    <info>source /path/to/completion.sh</>\n\n<comment>Dynamic installation\n--------------------</>\n\nAdd this to the end of your shell configuration file (e.g. <info>\"~/.bashrc\"</>):\n\n    <info>eval \"$(/var/www/html/magento2/bin/magento completion bash)\"</>",
+      "help": "The <info>completion</> command dumps the shell completion script required\nto use shell autocompletion (currently, bash, fish, zsh completion are supported).\n\n<comment>Static installation\n-------------------</>\n\nDump the script to a global completion file and restart your shell:\n\n    <info>bin/magento completion  | sudo tee /etc/bash_completion.d/magento</>\n\nOr dump the script to a local file and source it:\n\n    <info>bin/magento completion  > completion.sh</>\n\n    <comment># source the file whenever you use the project</>\n    <info>source completion.sh</>\n\n    <comment># or add this line at the end of your \"~/.bashrc\" file:</>\n    <info>source /path/to/completion.sh</>\n\n<comment>Dynamic installation\n--------------------</>\n\nAdd this to the end of your shell configuration file (e.g. <info>\"~/.bashrc\"</>):\n\n    <info>eval \"$(/var/www/html/magento2/bin/magento completion )\"</>",
       "definition": {
         "arguments": {
           "shell": {
@@ -2592,7 +2601,7 @@
       "name": "cron:run",
       "description": "Runs jobs by schedule",
       "usage": [
-        "cron:run [--group GROUP] [--bootstrap BOOTSTRAP]"
+        "cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]"
       ],
       "help": "Runs jobs by schedule",
       "definition": {
@@ -2606,6 +2615,15 @@
             "is_multiple": false,
             "description": "Run jobs only from specified group",
             "default": null
+          },
+          "exclude-group": {
+            "name": "--exclude-group",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": true,
+            "description": "Exclude jobs from the specified group",
+            "default": []
           },
           "bootstrap": {
             "name": "--bootstrap",
@@ -4988,10 +5006,164 @@
       "hidden": false
     },
     {
+      "name": "events:provider:info",
+      "description": "Returns details about the configured event provider",
+      "usage": [
+        "events:provider:info"
+      ],
+      "help": "Returns details about the configured event provider",
+      "definition": {
+        "arguments": [],
+        "options": {
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
+      "name": "events:registrations:list",
+      "description": "Lists event registrations in your App Builder project",
+      "usage": [
+        "events:registrations:list"
+      ],
+      "help": "Lists event registrations in your App Builder project",
+      "definition": {
+        "arguments": [],
+        "options": {
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
       "name": "events:subscribe",
       "description": "Subscribes to the event",
       "usage": [
-        "events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [--] <event-code>"
+        "events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>"
       ],
       "help": "Subscribes to the event",
       "definition": {
@@ -5040,6 +5212,24 @@
             "is_multiple": true,
             "description": "The list of rules for the event subscription, where each rule is formatted as \"field|operator|value\".",
             "default": []
+          },
+          "priority": {
+            "name": "--priority",
+            "shortcut": "-p",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Expedites the transmission of this event. Specify this option for events that need to be delivered immediately. By default, events are sent by cron once per minute.",
+            "default": false
+          },
+          "destination": {
+            "name": "--destination",
+            "shortcut": "-d",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "The destination of this event. Specify this option for the events that should be delivered to the custom destination.",
+            "default": "default"
           },
           "help": {
             "name": "--help",
@@ -5939,6 +6129,98 @@
             "is_required": false,
             "is_array": false,
             "description": "Indexer mode type [realtime|schedule]",
+            "default": null
+          },
+          "index": {
+            "name": "index",
+            "is_required": false,
+            "is_array": true,
+            "description": "Space-separated list of index types or omit to apply to all indexes.",
+            "default": []
+          }
+        },
+        "options": {
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
+      "name": "indexer:set-status",
+      "description": "Sets the specified indexer status",
+      "usage": [
+        "indexer:set-status <status> [<index>...]"
+      ],
+      "help": "Sets the specified indexer status",
+      "definition": {
+        "arguments": {
+          "status": {
+            "name": "status",
+            "is_required": true,
+            "is_array": false,
+            "description": "Indexer status type [invalid|suspended|valid]",
             "default": null
           },
           "index": {
@@ -8805,6 +9087,146 @@
       "hidden": false
     },
     {
+      "name": "saas:resync",
+      "description": "Re-syncs feed data to SaaS service.",
+      "usage": [
+        "saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]"
+      ],
+      "help": "Re-syncs feed data to SaaS service.",
+      "definition": {
+        "arguments": [],
+        "options": {
+          "feed": {
+            "name": "--feed",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Feed name to fully re-sync to SaaS service. Available feeds: Payment Services Order Production, Payment Services Order Sandbox, Payment Services Order Status Production, Payment Services Order Status Sandbox, Payment Services Store Production, Payment Services Store Sandbox",
+            "default": null
+          },
+          "no-reindex": {
+            "name": "--no-reindex",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Run re-submission of feed data to SaaS service only. Does not re-index. (This option is not applicable to the products, productoverrides, prices feeds)",
+            "default": false
+          },
+          "cleanup-feed": {
+            "name": "--cleanup-feed",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force to cleanup feed indexer table before sync.",
+            "default": false
+          },
+          "dry-run": {
+            "name": "--dry-run",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Dry run. Data will not be exported. To save payload to log file var/log/saas-export.log run with env variable EXPORTER_EXTENDED_LOG=1.",
+            "default": false
+          },
+          "thread-count": {
+            "name": "--thread-count",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Set synchronization thread count.",
+            "default": null
+          },
+          "batch-size": {
+            "name": "--batch-size",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Set synchronization batch size",
+            "default": null
+          },
+          "continue-resync": {
+            "name": "--continue-resync",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Continue resync from the last stored position (This option is applicable to the products, productoverrides, prices feeds)",
+            "default": false
+          },
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
       "name": "sampledata:deploy",
       "description": "Deploy sample data modules for composer-based Magento installations",
       "usage": [
@@ -9469,6 +9891,241 @@
       "hidden": false
     },
     {
+      "name": "server:run",
+      "description": "Run application server",
+      "usage": [
+        "server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--workerNum [WORKERNUM]] [-dm|--dispatchMode [DISPATCHMODE]] [-mr|--maxRequests [MAXREQUESTS]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]] [--state-monitor]"
+      ],
+      "help": "Run application server",
+      "definition": {
+        "arguments": [],
+        "options": {
+          "port": {
+            "name": "--port",
+            "shortcut": "-p",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "port to serv on",
+            "default": 9501
+          },
+          "background": {
+            "name": "--background",
+            "shortcut": "-b",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "background mode flag",
+            "default": 0
+          },
+          "workerNum": {
+            "name": "--workerNum",
+            "shortcut": "-wn",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "number of worker processes to start",
+            "default": 4
+          },
+          "dispatchMode": {
+            "name": "--dispatchMode",
+            "shortcut": "-dm",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "mode of dispatching connections to the worker processes",
+            "default": 3
+          },
+          "maxRequests": {
+            "name": "--maxRequests",
+            "shortcut": "-mr",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "max requests before worker process would be restarted",
+            "default": 10000
+          },
+          "area": {
+            "name": "--area",
+            "shortcut": "-a",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "application server area",
+            "default": "graphql"
+          },
+          "magento-init-params": {
+            "name": "--magento-init-params",
+            "shortcut": "-mip",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "magento bootstrap init params",
+            "default": ""
+          },
+          "maxWaitTime": {
+            "name": "--maxWaitTime",
+            "shortcut": "-mwt",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "how long to wait for workers after reload (eg. config change) before killing them",
+            "default": 3600
+          },
+          "state-monitor": {
+            "name": "--state-monitor",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Enable state monitoring. Use this only for debugging state issues!",
+            "default": false
+          },
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
+      "name": "server:state-monitor:aggregate-output",
+      "description": "Aggregate output from state monitor of ApplicationServer",
+      "usage": [
+        "server:state-monitor:aggregate-output"
+      ],
+      "help": "Aggregate output from state monitor of ApplicationServer",
+      "definition": {
+        "arguments": [],
+        "options": {
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
       "name": "setup:backup",
       "description": "Takes backup of Magento Application code base, media and database",
       "usage": [
@@ -9585,21 +10242,12 @@
       "name": "setup:config:set",
       "description": "Creates or modifies the deployment configuration",
       "usage": [
-        "setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]"
+        "setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]"
       ],
       "help": "Creates or modifies the deployment configuration",
       "definition": {
         "arguments": [],
         "options": {
-          "backend-frontname": {
-            "name": "--backend-frontname",
-            "shortcut": "",
-            "accept_value": true,
-            "is_value_required": true,
-            "is_multiple": false,
-            "description": "Backend frontname (will be autogenerated if missing)",
-            "default": null
-          },
           "enable-debug-logging": {
             "name": "--enable-debug-logging",
             "shortcut": "",
@@ -9618,13 +10266,13 @@
             "description": "Enable syslog logging",
             "default": null
           },
-          "id_salt": {
-            "name": "--id_salt",
+          "backend-frontname": {
+            "name": "--backend-frontname",
             "shortcut": "",
             "accept_value": true,
             "is_value_required": true,
             "is_multiple": false,
-            "description": "GraphQl Salt",
+            "description": "Backend frontname (will be autogenerated if missing)",
             "default": null
           },
           "remote-storage-driver": {
@@ -9698,6 +10346,24 @@
             "is_multiple": false,
             "description": "Remote storage path style",
             "default": "0"
+          },
+          "id_salt": {
+            "name": "--id_salt",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "GraphQl Salt",
+            "default": null
+          },
+          "config-async": {
+            "name": "--config-async",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Enable async Admin Config Save? 1 - Yes, 0 - No",
+            "default": null
           },
           "checkout-async": {
             "name": "--checkout-async",
@@ -10203,6 +10869,15 @@
             "description": "Compression lib to use [snappy,lzf,l4z,zstd,gzip] (leave blank to determine automatically)",
             "default": null
           },
+          "cache-backend-redis-use-lua": {
+            "name": "--cache-backend-redis-use-lua",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Set to 1 to enable lua (default is 0, disabled)",
+            "default": null
+          },
           "cache-id-prefix": {
             "name": "--cache-id-prefix",
             "shortcut": "",
@@ -10345,6 +11020,87 @@
             "is_value_required": true,
             "is_multiple": false,
             "description": "Flag to show is Pub is on root, can be true or false only",
+            "default": null
+          },
+          "backpressure-logger": {
+            "name": "--backpressure-logger",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Backpressure logger handler",
+            "default": null
+          },
+          "backpressure-logger-redis-server": {
+            "name": "--backpressure-logger-redis-server",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server",
+            "default": null
+          },
+          "backpressure-logger-redis-port": {
+            "name": "--backpressure-logger-redis-port",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server listen port",
+            "default": null
+          },
+          "backpressure-logger-redis-timeout": {
+            "name": "--backpressure-logger-redis-timeout",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server timeout",
+            "default": null
+          },
+          "backpressure-logger-redis-persistent": {
+            "name": "--backpressure-logger-redis-persistent",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis persistent",
+            "default": null
+          },
+          "backpressure-logger-redis-db": {
+            "name": "--backpressure-logger-redis-db",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis db number",
+            "default": null
+          },
+          "backpressure-logger-redis-password": {
+            "name": "--backpressure-logger-redis-password",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server password",
+            "default": null
+          },
+          "backpressure-logger-redis-user": {
+            "name": "--backpressure-logger-redis-user",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server user",
+            "default": null
+          },
+          "backpressure-logger-id-prefix": {
+            "name": "--backpressure-logger-id-prefix",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "ID prefix for keys",
             "default": null
           },
           "magento-init-params": {
@@ -11396,21 +12152,12 @@
       "name": "setup:install",
       "description": "Installs the Magento application",
       "usage": [
-        "setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]"
+        "setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]"
       ],
       "help": "Installs the Magento application",
       "definition": {
         "arguments": [],
         "options": {
-          "backend-frontname": {
-            "name": "--backend-frontname",
-            "shortcut": "",
-            "accept_value": true,
-            "is_value_required": true,
-            "is_multiple": false,
-            "description": "Backend frontname (will be autogenerated if missing)",
-            "default": null
-          },
           "enable-debug-logging": {
             "name": "--enable-debug-logging",
             "shortcut": "",
@@ -11429,13 +12176,13 @@
             "description": "Enable syslog logging",
             "default": null
           },
-          "id_salt": {
-            "name": "--id_salt",
+          "backend-frontname": {
+            "name": "--backend-frontname",
             "shortcut": "",
             "accept_value": true,
             "is_value_required": true,
             "is_multiple": false,
-            "description": "GraphQl Salt",
+            "description": "Backend frontname (will be autogenerated if missing)",
             "default": null
           },
           "remote-storage-driver": {
@@ -11509,6 +12256,24 @@
             "is_multiple": false,
             "description": "Remote storage path style",
             "default": "0"
+          },
+          "id_salt": {
+            "name": "--id_salt",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "GraphQl Salt",
+            "default": null
+          },
+          "config-async": {
+            "name": "--config-async",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Enable async Admin Config Save? 1 - Yes, 0 - No",
+            "default": null
           },
           "checkout-async": {
             "name": "--checkout-async",
@@ -12014,6 +12779,15 @@
             "description": "Compression lib to use [snappy,lzf,l4z,zstd,gzip] (leave blank to determine automatically)",
             "default": null
           },
+          "cache-backend-redis-use-lua": {
+            "name": "--cache-backend-redis-use-lua",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Set to 1 to enable lua (default is 0, disabled)",
+            "default": null
+          },
           "cache-id-prefix": {
             "name": "--cache-id-prefix",
             "shortcut": "",
@@ -12158,6 +12932,87 @@
             "description": "Flag to show is Pub is on root, can be true or false only",
             "default": null
           },
+          "backpressure-logger": {
+            "name": "--backpressure-logger",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Backpressure logger handler",
+            "default": null
+          },
+          "backpressure-logger-redis-server": {
+            "name": "--backpressure-logger-redis-server",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server",
+            "default": null
+          },
+          "backpressure-logger-redis-port": {
+            "name": "--backpressure-logger-redis-port",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server listen port",
+            "default": null
+          },
+          "backpressure-logger-redis-timeout": {
+            "name": "--backpressure-logger-redis-timeout",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server timeout",
+            "default": null
+          },
+          "backpressure-logger-redis-persistent": {
+            "name": "--backpressure-logger-redis-persistent",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis persistent",
+            "default": null
+          },
+          "backpressure-logger-redis-db": {
+            "name": "--backpressure-logger-redis-db",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis db number",
+            "default": null
+          },
+          "backpressure-logger-redis-password": {
+            "name": "--backpressure-logger-redis-password",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server password",
+            "default": null
+          },
+          "backpressure-logger-redis-user": {
+            "name": "--backpressure-logger-redis-user",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Redis server user",
+            "default": null
+          },
+          "backpressure-logger-id-prefix": {
+            "name": "--backpressure-logger-id-prefix",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "ID prefix for keys",
+            "default": null
+          },
           "base-url": {
             "name": "--base-url",
             "shortcut": "",
@@ -12290,7 +13145,7 @@
             "accept_value": true,
             "is_value_required": true,
             "is_multiple": false,
-            "description": "Search engine. Values: elasticsearch5, elasticsearch7, elasticsearch8, opensearch",
+            "description": "Search engine. Values: elasticsearch7, elasticsearch8, opensearch",
             "default": null
           },
           "elasticsearch-host": {
@@ -14130,7 +14985,7 @@
       "name": "varnish:vcl:generate",
       "description": "Generates Varnish VCL and echos it to the command line",
       "usage": [
-        "varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--output-file OUTPUT-FILE]"
+        "varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]"
       ],
       "help": "Generates Varnish VCL and echos it to the command line",
       "definition": {
@@ -14172,7 +15027,7 @@
             "is_value_required": true,
             "is_multiple": false,
             "description": "The version of Varnish file",
-            "default": "4"
+            "default": "6"
           },
           "grace-period": {
             "name": "--grace-period",
@@ -14183,6 +15038,15 @@
             "description": "Grace period in seconds",
             "default": 300
           },
+          "input-file": {
+            "name": "--input-file",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": true,
+            "is_multiple": false,
+            "description": "Input file to generate vcl from",
+            "default": null
+          },
           "output-file": {
             "name": "--output-file",
             "shortcut": "",
@@ -14192,6 +15056,438 @@
             "description": "Path to the file to write vcl",
             "default": null
           },
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
+      "name": "webhooks:dev:run",
+      "description": "Runs a registered webhook for development purposes.",
+      "usage": [
+        "webhooks:dev:run <name> <payload>"
+      ],
+      "help": "Runs a registered webhook for development purposes.",
+      "definition": {
+        "arguments": {
+          "name": {
+            "name": "name",
+            "is_required": true,
+            "is_array": false,
+            "description": "Webhook name",
+            "default": null
+          },
+          "payload": {
+            "name": "payload",
+            "is_required": true,
+            "is_array": false,
+            "description": "The webhook payload in JSON format",
+            "default": null
+          }
+        },
+        "options": {
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
+      "name": "webhooks:generate:module",
+      "description": "Generate plugins based on webhook registrations",
+      "usage": [
+        "webhooks:generate:module"
+      ],
+      "help": "Generate plugins based on webhook registrations",
+      "definition": {
+        "arguments": [],
+        "options": {
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
+      "name": "webhooks:info",
+      "description": "Returns the payload of the specified webhook.",
+      "usage": [
+        "webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]"
+      ],
+      "help": "Returns the payload of the specified webhook.",
+      "definition": {
+        "arguments": {
+          "webhook-name": {
+            "name": "webhook-name",
+            "is_required": true,
+            "is_array": false,
+            "description": "Webhook method name",
+            "default": null
+          },
+          "webhook-type": {
+            "name": "webhook-type",
+            "is_required": false,
+            "is_array": false,
+            "description": "Webhook type (before, after)",
+            "default": "before"
+          }
+        },
+        "options": {
+          "depth": {
+            "name": "--depth",
+            "shortcut": "",
+            "accept_value": true,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "The number of levels in the webhook payload to return",
+            "default": 3
+          },
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
+      "name": "webhooks:list",
+      "description": "Shows list of subscribed webhooks",
+      "usage": [
+        "webhooks:list"
+      ],
+      "help": "Shows list of subscribed webhooks",
+      "definition": {
+        "arguments": [],
+        "options": {
+          "help": {
+            "name": "--help",
+            "shortcut": "-h",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display help for the given command. When no command is given display help for the <info>list</info> command",
+            "default": false
+          },
+          "quiet": {
+            "name": "--quiet",
+            "shortcut": "-q",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not output any message",
+            "default": false
+          },
+          "verbose": {
+            "name": "--verbose",
+            "shortcut": "-v|-vv|-vvv",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug",
+            "default": false
+          },
+          "version": {
+            "name": "--version",
+            "shortcut": "-V",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Display this application version",
+            "default": false
+          },
+          "ansi": {
+            "name": "--ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Force (or disable --no-ansi) ANSI output",
+            "default": null
+          },
+          "no-ansi": {
+            "name": "--no-ansi",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Negate the \"--ansi\" option",
+            "default": false
+          },
+          "no-interaction": {
+            "name": "--no-interaction",
+            "shortcut": "-n",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Do not ask any interactive question",
+            "default": false
+          }
+        }
+      },
+      "hidden": false
+    },
+    {
+      "name": "webhooks:list:all",
+      "description": "Returns a list of supported webhook method names for the specified module",
+      "usage": [
+        "webhooks:list:all <module_name>"
+      ],
+      "help": "Returns a list of supported webhook method names for the specified module",
+      "definition": {
+        "arguments": {
+          "module_name": {
+            "name": "module_name",
+            "is_required": true,
+            "is_array": false,
+            "description": "Module name",
+            "default": null
+          }
+        },
+        "options": {
           "help": {
             "name": "--help",
             "shortcut": "-h",
@@ -14390,6 +15686,8 @@
         "events:list:all",
         "events:metadata:populate",
         "events:provider:create ",
+        "events:provider:info",
+        "events:registrations:list",
         "events:subscribe",
         "events:sync-events-metadata",
         "events:unsubscribe"
@@ -14411,6 +15709,7 @@
         "indexer:reset",
         "indexer:set-dimensions-mode",
         "indexer:set-mode",
+        "indexer:set-status",
         "indexer:show-dimensions-mode",
         "indexer:show-mode",
         "indexer:status"
@@ -14494,6 +15793,12 @@
       ]
     },
     {
+      "id": "saas",
+      "commands": [
+        "saas:resync"
+      ]
+    },
+    {
       "id": "sampledata",
       "commands": [
         "sampledata:deploy",
@@ -14509,6 +15814,13 @@
         "security:tfa:google:set-secret",
         "security:tfa:providers",
         "security:tfa:reset"
+      ]
+    },
+    {
+      "id": "server",
+      "commands": [
+        "server:run",
+        "server:state-monitor:aggregate-output"
       ]
     },
     {
@@ -14560,6 +15872,16 @@
       "id": "varnish",
       "commands": [
         "varnish:vcl:generate"
+      ]
+    },
+    {
+      "id": "webhooks",
+      "commands": [
+        "webhooks:dev:run",
+        "webhooks:generate:module",
+        "webhooks:info",
+        "webhooks:list",
+        "webhooks:list:all"
       ]
     }
   ]
