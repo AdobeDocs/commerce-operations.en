@@ -10,6 +10,7 @@ default:
   - intl
   - libxml
   - mysqli
+  - openswoole
   - pcntl
   - pdo_mysql
   - Reflection
