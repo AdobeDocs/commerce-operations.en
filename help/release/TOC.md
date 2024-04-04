@@ -67,5 +67,6 @@ recommendations: noDisplay, noCatalog
   - [Release schedule](schedule.md)
 - Packages {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
+  - [B2B for Adobe Commerce](packages/adobe-commerce-b2b.md)
   - [Magento Open Source](packages/magento-open-source.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
