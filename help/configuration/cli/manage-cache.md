@@ -1,6 +1,6 @@
 ---
 title: Manage the cache
-description: Manage cache types and view cache status.
+description: Manage cache types and view cache status from the command line using the Commerce CLI
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
 ---
 # Manage the cache
@@ -9,29 +9,17 @@ exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
 
 ## Cache types
 
-Commerce has the following cache types:
+You can use the Adobe Commerce cache management system to improve the performance of your site. This topic explains how System administrators or developers with access to the Commerce application server can manage caches from the command line.
 
-| Cache type "friendly" name                                                                                                                                      | Cache type code name          | Description                                                                                                                                                                                                                                                                                                                                                                                                         |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configuration                                                                                                                                                   | config                        | Commerce collects configuration from all modules, merges it, and saves the merged result to the cache. This cache also contains store-specific settings stored in the file system and database. Clean or flush this cache type after modifying configuration files.                                                                                                                                                 |
-| Layout                                                                                                                                                          | layout                        | Compiled page layouts (that is, the layout components from all components). Clean or flush this cache type after modifying layout files.                                                                                                                                                                                                                                                                            |
-| Block HTML output                                                                                                                                               | block_html                    | HTML page fragments per block. Clean or flush this cache type after modifying the view layer.                                                                                                                                                                                                                                                                                                                       |
-| Collections data                                                                                                                                                | collections                   | Results of database queries. If necessary, Commerce cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type if your custom module uses logic that results in cache entries that Commerce cannot clean.                                                                                                                          |
-| DDL                                                                                                                                                             | db_ddl                        | Database schema. If necessary, Commerce cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type after you make custom changes to the database schema. (In other words, updates that Commerce does not make itself.) One way to update the database schema automatically is using the `magento setup:db-schema:upgrade` command. |
-| Compiled Config                                                                                                                                                 | compiled_config               | Compilation configuration                                                                                                                                                                                                                                                                                                                                                                                           |
-| Entity attribute value (EAV)                                                                                                                                    | eav                           | Metadata related to EAV attributes (for example, store labels, links to related PHP code, attribute rendering, search settings, and so on). You should not typically need to clean or flush this cache type.                                                                                                                                                                                                        |
-| Page cache                                                                                                                                                      | full_page                     | Generated HTML pages. If necessary, Commerce cleans up this cache automatically, but third-party developers can put any data in any segment of the cache. Clean or flush this cache type after modifying code level that affects HTML output. It is recommended to keep this cache enabled because caching HTML improves performance significantly.                                                                 |
-| Reflection                                                                                                                                                      | reflection                    | Removes a dependency between the Webapi module and the Customer module.                                                                                                                                                                                                                                                                                                                                             |
-| Translations                                                                                                                                                    | translate                     | After merging translations from all modules, the merger cache will be cleaned.                                                                                                                                                                                                                                                                                                                                      |
-| Integration configuration                                                                                                                                       | config_integration            | Compiled integrations. Clean or flush this cache after changing or adding integrations.                                                                                                                                                                                                                                                                                                                             |
-| Integration API configuration                                                                                                                                   | config_integration_api        | Compiled integration APIs configuration of the Store's Integrations.                                                                                                                                                                                                                                                                                                                                                |
-| GraphQL Query Resolver Results                                                                                                                                  | graphql_query_resolver_result | Caches the results from GraphQL query resolvers for customer, CMS page, CMS block, and product media gallery entities. Keep this cache enabled to improve GraphQL performance.                                                                                                                                                                                                                                      |
-| Web services configuration                                                                                                                                      | config_webservice             | Caching the Web API Structure.                                                                                                                                                                                                                                                                                                                                                                                      |
-| Customer Notification                                                                                                                                           | customer_notification         | Temporary notifications that appear in the user interface.                                                                                                                                                                                                                                                                                                                                                          |
+>[!NOTE]
+>
+>
+>Commece site administrators can manage the cache from the Admin using the Cache Management System tool. See [Cache Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in the _Admin Systems Guide_.
+
 
 ## View the cache status
 
-To view the status of the cache, enter
+From the command line of the Commerce application server, view the status of the cache using the `cache:status` Commerce CLI command.
 
 ```bash
    bin/magento cache:status
@@ -50,16 +38,23 @@ Current status:
                     reflection: 1
                         db_ddl: 1
                compiled_config: 1
+             webhooks_response: 1
                            eav: 1
          customer_notification: 1
-                     full_page: 1
+ graphql_query_resolver_result: 1
             config_integration: 1
         config_integration_api: 1
+                  admin_ui_sdk: 1
+                     full_page: 1
                    target_rule: 1
- graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
+
+>[!TIP]
+>
+>For a detailed description of the default cache types supported by Adobe Commerce, see [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) in the _Admin Systems Guide_.
+
 
 ## Enable or disable cache types
 
