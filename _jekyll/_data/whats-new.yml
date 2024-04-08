@@ -1,8 +1,34 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Mar 12 13:19:39 2024
+updated: Wed Apr 3 12:08:25 2024
 entries:
+- description: Added an [architectural blueprint](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html)
+    for enterprise implementations of Commerce.
+  versions: ''
+  type: new-topic
+  date: March 24, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/787
+  merge_commit: d33294d02b4431d4aa473aa5d0ab42e297cfed14
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+- description: Updated the following topics for the 2.4.7-beta3 release:<br/>- [Adobe
+    Commerce CLI (on-premises, Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html)<br/>-
+    [Magento Open Source CLI (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html)<br/>-
+    [Adobe Commerce packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html)<br/>-
+    [Magento Open Source packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html)
+  versions: 2.4.7
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/785
+  merge_commit: 28029603b0a23eb161480363b5106142beda4180
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
 - description: Updated the set up instructions for the [Application Server for GraphQL
     APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html)
     feature.

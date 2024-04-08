@@ -15,6 +15,20 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.48 {#v1-1-48}
+
+* **ACSD-55566** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where the `mergeCart` mutation fails with an "*Internal Server Error*" in the [!DNL GraphQL] response when merging source and destination carts that have the same bundle items. 
+* **ACSD-56546** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where configurable and bundle products display as **Out of Stock** on the storefront when the **display out of product configuration** is *Disabled*.
+* **ACSD-56635** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where the imported customer is duplicated with the same email address, when an import is used with **account sharing** set to *Global*.
+* **ACSD-56741** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the error message "*Trying to access array offset on value of type null*" that displays during `setup:upgrade` when the database contains a custom [!DNL MySQL] trigger not related to the indexation mechanism and [!DNL MView].
+* **ACSD-57315** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue when a new transaction is created in [!DNL PayPal Payflow Pro] each time the [!UICONTROL Fetch] button is clicked on the **[!UICONTROL View transaction]** screen in the Admin.
+* **ACSD-57337** (for Adobe Commerce >=2.4.4 <2.4.6) - Fixes the issue where an admin user with access restrictions to specific websites is able to see companies from all the websites in the **[!UICONTROL Companies]** grid.
+* **ACSD-57394** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue of incorrect product sorting by multiple sort fields in [!DNL GraphQL].
+* **ACSD-57565** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the **[!UICONTROL Order]** dashboard displays incorrect order information until the time period is updated. The dashboard now displays the correct order statistics on the first load.
+* **ACSD-57854** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue when product [!DNL GraphQL] requests returned disabled categories in the category aggregations.
+* **ACSD-58008** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where updating a scheduled update removed the previous version of a staged item, if no end date was specified.
+* Updated patches: MDVA-39305-V2, ACSD-48627, ACSD-54965
+
 ## v1.1.47 {#v1-1-47}
 
 * **ACSD-55241** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where *[!UICONTROL Used]* and *[!UICONTROL Times Used]* attributes display incorrect values for generated coupons when used during checkout with multiple addresses.

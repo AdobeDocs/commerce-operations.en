@@ -8,7 +8,7 @@ feature: Configuration, Install
 
 >[!IMPORTANT]
 >
->Effective April 23, 2024, the [!DNL Site-Wide Analysis Tool] will be decommissioned for all Adobe Commerce On-Premise customers.
+>Effective April 23, 2024, the [!DNL Site-Wide Analysis Tool] will be decommissioned for all Adobe Commerce on-premises customers.
 
 The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitoring, reports, and recommendations to ensure the security and operability of Adobe Commerce on cloud infrastructure installations. It also provides detailed information about available and installed patches, third-party extensions, and your Adobe Commerce installation.
 
