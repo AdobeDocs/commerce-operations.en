@@ -1,8 +1,70 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Wed Apr 3 12:08:25 2024
+updated: Tue Apr 9 14:35:35 2024
 entries:
+- description: Updated [Released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
+  versions: 2.4.7
+  type: technical
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/820
+  merge_commit: efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.7
+- description: "- Update the release packages topics for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source).<br/>-
+    Add a release packages topic for [B2B for Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b)."
+  versions: 2.4.7
+  type: major-update
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/812
+  merge_commit: aad4b904ba95142d1d848f934c9d3702cc37ec16
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Updated the _bin/magento_ CLI reference documentation for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source).
+  versions: 2.4.7
+  type: major-update
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/813
+  merge_commit: b81dc87a261f128cdb572a30ff5538dae2087c49
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Published 2.4.7 GA [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7).
+  versions: 2.4.7
+  type: major-update
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/795
+  merge_commit: 35b7caafbef5ced52ef6e4907e0634dfb2a61e4f
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Adds release notes for the April 2024 Adobe Commerce security releases
+    (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). See [Release notes for Adobe Commerce and Magento
+    Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)
+  versions: 2.4.4, 2.4.5, 2.4.6
+  type: major-update
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/770
+  merge_commit: 7acab1d8d3f7b11cc1387b5558521f282ba0873f
+  contributor: frontain
+  membership: false
+  labels:
+  - 2.4.4
+  - major-update
+  - 2.4.5
+  - 2.4.6
 - description: Added an [architectural blueprint](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html)
     for enterprise implementations of Commerce.
   versions: ''
