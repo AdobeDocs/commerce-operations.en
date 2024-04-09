@@ -28,7 +28,7 @@ entries:
   - major-update
   - 2.4.7
 - description: Updated the _bin/magento_ CLI reference documentation for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises)
-    and [Magento OpenSource](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source).
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source).
   versions: 2.4.7
   type: major-update
   date: April 9, 2024
