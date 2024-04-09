@@ -14,7 +14,7 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 
 - For critical security issues, such as zero-day vulnerabilities, Adobe provides [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) for all customers on a supported version, even if they are not on the latest patch or security patch release. It is important to note that a hotfix is not a catch-all and does not address all the security issues that would be fixed by upgrading to the latest release.
 
-- Adobe does not provide security and quality fixes for third-party services and software dependencies, such as PHP. It is your responsibility to maintain the security and compliance (for example, PCI, ISO, SOC) of third-party software dependencies. Adobe recommends updating your environments to use the latest version of PHP supported by Adobe Commerce as soon as possible. Do not use a version of PHP that has reached end of support.
+- Adobe does not provide security and quality fixes for third-party services and software dependencies (such as PHP and MySQL) that may reach end of life while customers are on the three-year support period for Adobe Commerce. See the [system requirements](../installation/system-requirements.md) for a full list of tested and supported third-party technologies.
 
 ## End of software support
 

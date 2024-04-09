@@ -1,32 +1,74 @@
-# Cloud packages for Adobe Commerce
+# Adobe Commerce with B2B packages
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/cloud/composer_lock_beta.json' file
+<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/b2b/composer_lock.json' file
  -->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/cloud/composer_lock_beta.json' file
+<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/b2b/composer_lock.json' file
  -->
 
-<!-- The 'product' variable contains data of the 'magento/magento-cloud-metapackage' package
+<!-- The 'product' variable contains data of the 'magento/product-enterprise-edition' package
  -->
 
-<!-- The edition variable contains `cloud` value from the _data/names.yml file
+<!-- The edition variable contains `commerce-b2b` value from the _data/names.yml file
  -->
 
-Adobe Commerce on cloud infrastructure uses Composer to manage PHP packages.
+B2B for Adobe Commerce uses Composer to manage PHP packages.
 
 The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of Adobe Commerce or Magento Open Source.
 
-The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in Adobe Commerce on cloud infrastructure 2.4.7.
+The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in B2B for Adobe Commerce 1.4.2.
 
 ## Dependencies
 
-`magento/magento-cloud-metapackage 2.4.7` has the following dependencies:
+`magento/extension-b2b 1.4.2` has the following dependencies:
 
 ```config
-fastly/magento2: ^1.2.34
-magento/ece-tools: ^2002.1.0
-magento/module-paypal-on-boarding: ~100.5.0
-magento/product-enterprise-edition: >=2.4.7 <2.4.8
+magento/framework: >=103.0.6 <=103.0.7
+magento/magento2-b2b-base: 1.4.2
+magento/module-b2b: 100.4.1
+magento/module-bundle-negotiable-quote: 100.4.0
+magento/module-bundle-requisition-list: 100.4.0
+magento/module-bundle-requisition-list-graph-ql: 1.4.0
+magento/module-bundle-shared-catalog: 100.4.0
+magento/module-checkout-address-search-negotiable-quote: 100.4.1
+magento/module-checkout-agreements-negotiable-quote: 100.4.0
+magento/module-checkout-agreements-purchase-order: 1.4.0
+magento/module-company: 101.2.1
+magento/module-company-credit: 100.4.0
+magento/module-company-credit-graph-ql: 1.4.0
+magento/module-company-graph-ql: 1.4.0
+magento/module-company-payment: 100.4.0
+magento/module-company-shipping: 1.4.0
+magento/module-configurable-negotiable-quote: 100.4.0
+magento/module-configurable-requisition-list: 100.4.1
+magento/module-configurable-requisition-list-graph-ql: 1.4.0
+magento/module-configurable-shared-catalog: 100.4.0
+magento/module-downloadable-requisition-list-graph-ql: 1.4.0
+magento/module-gift-card-negotiable-quote: 100.4.0
+magento/module-gift-card-requisition-list: 100.4.0
+magento/module-gift-card-requisition-list-graph-ql: 1.4.0
+magento/module-gift-card-shared-catalog: 100.4.0
+magento/module-grouped-requisition-list: 100.4.0
+magento/module-grouped-shared-catalog: 100.4.0
+magento/module-negotiable-quote: 100.4.2
+magento/module-negotiable-quote-async-order: 1.4.1
+magento/module-negotiable-quote-graph-ql: 1.4.0
+magento/module-negotiable-quote-shared-catalog: 100.4.1
+magento/module-negotiable-quote-weee: 100.4.1
+magento/module-order-history-search: 100.4.2
+magento/module-paypal-negotiable-quote: 1.4.1
+magento/module-paypal-purchase-order: 1.4.0
+magento/module-purchase-order: 100.4.1
+magento/module-purchase-order-graph-ql: 1.4.0
+magento/module-purchase-order-rule: 100.4.0
+magento/module-purchase-order-rule-graph-ql: 1.4.0
+magento/module-quick-order: 100.4.0
+magento/module-quick-order-graph-ql: 1.4.0
+magento/module-requisition-list: 100.4.1
+magento/module-requisition-list-graph-ql: 1.4.0
+magento/module-shared-catalog: 100.4.1
+magento/module-shared-catalog-graph-ql: 1.4.0
+magento/security-package-b2b: 1.0.4
 ```
 
 ## Third-party licenses
@@ -44,7 +86,7 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   <tbody>
   <tr>
     <td>
-      elasticsearch/elasticsearch
+      <a href="https://github.com/elastic/elasticsearch-php.git">elasticsearch/elasticsearch</a>
     </td>
     <td>library</td>
     <td>PHP Client for Elasticsearch</td>
@@ -128,13 +170,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/beberlei/assert.git">beberlei/assert</a>
-    </td>
-    <td>library</td>
-    <td>Thin assertion library for input validation in business models.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/DASPRiD/Enum.git">dasprid/enum</a>
     </td>
     <td>library</td>
@@ -174,13 +209,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>library</td>
     <td>A Redis-based session handler with optimistic locking</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/fastly/fastly-magento2.git">fastly/magento2</a>
-    </td>
-    <td>magento2-module</td>
-    <td>Fastly CDN Module for Magento 2.4.x</td>
   </tr>
   <tr>
     <td>
@@ -429,13 +457,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-zendframework-bridge.git">laminas/laminas-zendframework-bridge</a>
-    </td>
-    <td>library</td>
-    <td>Alias legacy ZF class names to Laminas Project equivalents.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/nikic/PHP-Parser.git">nikic/php-parser</a>
     </td>
     <td>library</td>
@@ -475,6 +496,27 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>magento-module</td>
     <td>Zend_Cache backend using Redis with full support for tags.</td>
+  </tr>
+  </tbody>
+</table>
+
+### ISC
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/paragonie/sodium_compat.git">paragonie/sodium_compat</a>
+    </td>
+    <td>library</td>
+    <td>Pure PHP implementation of libsodium; uses the PHP extension if it exists</td>
   </tr>
   </tbody>
 </table>
@@ -611,27 +653,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/doctrine/annotations.git">doctrine/annotations</a>
-    </td>
-    <td>library</td>
-    <td>Docblock Annotations Parser</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/doctrine/deprecations.git">doctrine/deprecations</a>
-    </td>
-    <td>library</td>
-    <td>A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/doctrine/lexer.git">doctrine/lexer</a>
-    </td>
-    <td>library</td>
-    <td>PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/endroid/qr-code.git">endroid/qr-code</a>
     </td>
     <td>library</td>
@@ -653,20 +674,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/FriendsOfPHP/proxy-manager-lts.git">friendsofphp/proxy-manager-lts</a>
-    </td>
-    <td>library</td>
-    <td>Adding support for a wider range of PHP versions to ocramius/proxy-manager</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/bzikarsky/gelf-php.git">graylog2/gelf-php</a>
-    </td>
-    <td>library</td>
-    <td>A php implementation to send log-messages to a GELF compatible backend like Graylog2.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/guzzle/guzzle.git">guzzlehttp/guzzle</a>
     </td>
     <td>library</td>
@@ -685,34 +692,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>library</td>
     <td>PSR-7 message implementation that also provides common utility methods</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/illuminate/collections.git">illuminate/collections</a>
-    </td>
-    <td>library</td>
-    <td>The Illuminate Collections package.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/illuminate/config.git">illuminate/config</a>
-    </td>
-    <td>library</td>
-    <td>The Illuminate Config package.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/illuminate/contracts.git">illuminate/contracts</a>
-    </td>
-    <td>library</td>
-    <td>The Illuminate Contracts package.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/illuminate/macroable.git">illuminate/macroable</a>
-    </td>
-    <td>library</td>
-    <td>The Illuminate Macroable package.</td>
   </tr>
   <tr>
     <td>
@@ -758,13 +737,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/briannesbitt/Carbon.git">nesbot/carbon</a>
-    </td>
-    <td>library</td>
-    <td>An API extension for DateTime that supports 281 different languages.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/paragonie/constant_time_encoding.git">paragonie/constant_time_encoding</a>
     </td>
     <td>library</td>
@@ -796,7 +768,14 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
       <a href="https://github.com/PhpGt/Dom.git">phpgt/dom</a>
     </td>
     <td>library</td>
-    <td>The modern DOM API for PHP projects.</td>
+    <td>Modern DOM API.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/PhpGt/PropFunc.git">phpgt/propfunc</a>
+    </td>
+    <td>library</td>
+    <td>Property accessor and mutator functions.</td>
   </tr>
   <tr>
     <td>
@@ -811,13 +790,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>library</td>
     <td>PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
-    </td>
-    <td>library</td>
-    <td>Common interface for caching libraries</td>
   </tr>
   <tr>
     <td>
@@ -870,13 +842,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/simple-cache.git">psr/simple-cache</a>
-    </td>
-    <td>library</td>
-    <td>Common interfaces for simple caching</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/ralouphie/getallheaders.git">ralouphie/getallheaders</a>
     </td>
     <td>library</td>
@@ -905,7 +870,7 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/sabberworm/PHP-CSS-Parser.git">sabberworm/php-css-parser</a>
+      <a href="https://github.com/MyIntervals/PHP-CSS-Parser.git">sabberworm/php-css-parser</a>
     </td>
     <td>library</td>
     <td>Parser for CSS Files written in PHP</td>
@@ -1024,6 +989,20 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/http-client.git">symfony/http-client</a>
+    </td>
+    <td>library</td>
+    <td>Provides powerful methods to fetch HTTP resources synchronously or asynchronously</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/http-client-contracts.git">symfony/http-client-contracts</a>
+    </td>
+    <td>library</td>
+    <td>Generic abstractions related to HTTP clients</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/http-foundation.git">symfony/http-foundation</a>
     </td>
     <td>library</td>
@@ -1041,7 +1020,7 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
       <a href="https://github.com/symfony/intl.git">symfony/intl</a>
     </td>
     <td>library</td>
-    <td>Provides a PHP replacement layer for the C intl extension that includes additional data from the ICU library</td>
+    <td>Provides access to the localization data of the ICU library</td>
   </tr>
   <tr>
     <td>
@@ -1122,20 +1101,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/proxy-manager-bridge.git">symfony/proxy-manager-bridge</a>
-    </td>
-    <td>symfony-bridge</td>
-    <td>Provides integration for ProxyManager with various Symfony components</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/serializer.git">symfony/serializer</a>
-    </td>
-    <td>library</td>
-    <td>Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/symfony/service-contracts.git">symfony/service-contracts</a>
     </td>
     <td>library</td>
@@ -1150,20 +1115,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/translation.git">symfony/translation</a>
-    </td>
-    <td>library</td>
-    <td>Provides tools to internationalize your application</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/translation-contracts.git">symfony/translation-contracts</a>
-    </td>
-    <td>library</td>
-    <td>Generic abstractions related to translation</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/symfony/var-dumper.git">symfony/var-dumper</a>
     </td>
     <td>library</td>
@@ -1171,17 +1122,10 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/yaml.git">symfony/yaml</a>
+      <a href="https://github.com/symfony/var-exporter.git">symfony/var-exporter</a>
     </td>
     <td>library</td>
-    <td>Loads and dumps YAML files</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/thecodingmachine/safe.git">thecodingmachine/safe</a>
-    </td>
-    <td>library</td>
-    <td>PHP core functions that throw exceptions instead of returning FALSE on error</td>
+    <td>Allows exporting any serializable PHP data structure to plain PHP code</td>
   </tr>
   <tr>
     <td>
@@ -1203,13 +1147,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </td>
     <td>library</td>
     <td>A PHP port of GraphQL reference implementation</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/zordius/lightncandy.git">zordius/lightncandy</a>
-    </td>
-    <td>library</td>
-    <td>An extremely fast PHP implementation of handlebars ( http://handlebarsjs.com/ ) and mustache ( http://mustache.github.io/ ).</td>
   </tr>
   </tbody>
 </table>
@@ -1253,13 +1190,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     <td>magento2-module</td>
     <td>N/A</td>
   </tr>
-  <tr>
-    <td>
-      temando/module-shipping-remover
-    </td>
-    <td>magento2-module</td>
-    <td>Removes Temando multi-carrier shipping extension from Magento 2</td>
-  </tr>
   </tbody>
 </table>
 
@@ -1274,13 +1204,6 @@ magento/product-enterprise-edition: >=2.4.7 <2.4.8
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>
-      temando/module-shipping
-    </td>
-    <td>metapackage</td>
-    <td>Temando multi-carrier shipping extension for Magento 2</td>
-  </tr>
   </tbody>
 </table>
 

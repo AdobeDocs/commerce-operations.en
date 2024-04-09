@@ -74,10 +74,10 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
         {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['RabbitMQ'] %}
-            {{requirement[1]['RabbitMQ']}}
+      <td>{%- if requirement[1]['RabbitMQ Cloud'] %}
+            {{requirement[1]['RabbitMQ Cloud']}}
           {%- else %}
-          --
+            {{requirement[1]['RabbitMQ']}}
           {%- endif %}
       </td>
         {%- endfor %}

@@ -24,21 +24,28 @@
                 gd<br>
                 gettext<br>
                 intl<br>
+                libxml<br>
                 mysqli<br>
+                opcache<br>
+                openswoole<br>
                 pcntl<br>
                 pdo_mysql<br>
+                Reflection<br>
                 soap<br>
                 sockets<br>
+                SPL<br>
+                standard<br>
                 sysvmsg<br>
                 sysvsem<br>
                 sysvshm<br>
-                opcache<br>
                 zip<br>
+                zlib<br>
             </td>
             <td>
                 ctype<br>
                 curl<br>
                 date<br>
+                dba<br>
                 dom<br>
                 fileinfo<br>
                 filter<br>
@@ -68,7 +75,6 @@
                 igbinary<br>
                 imagick<br>
                 imap<br>
-                ioncube<br>
                 ldap<br>
                 mailparse<br>
                 mcrypt<br>

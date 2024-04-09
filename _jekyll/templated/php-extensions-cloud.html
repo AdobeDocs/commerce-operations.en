@@ -19,16 +19,19 @@
     <tbody>
         <tr>
             <td>
-            {%- for extension in site.data.cloud-php-extensions.default %}
+            {%- assign default_extensions = site.data.cloud-php-extensions.default | sort_natural -%}
+            {%- for extension in default_extensions %}
                 {{ extension }}<br>
             {%- endfor %}
             </td>
             <td>
+            {%- assign default_extensions = site.data.cloud-php-extensions.installed | sort_natural -%}
             {%- for extension in site.data.cloud-php-extensions.installed %}
                 {{ extension }}<br>
             {%- endfor %}
             </td>
             <td>
+            {%- assign default_extensions = site.data.cloud-php-extensions.available | sort_natural -%}
             {%- for extension in site.data.cloud-php-extensions.available %}
                 {{ extension }}<br>
             {%- endfor %}
