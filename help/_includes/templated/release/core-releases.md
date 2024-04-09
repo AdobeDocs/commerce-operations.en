@@ -14,21 +14,9 @@ Support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta3</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7</a>
         </td>
-        <td>March&nbsp;12, 2024</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta2</a>
-        </td>
-        <td>October&nbsp;10, 2023</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta1</a>
-        </td>
-        <td>June&nbsp;13, 2023</td>
+        <td>April&nbsp; 9, 2024</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -45,6 +33,12 @@ Support for the 2.4.6 release line ends on March&nbsp;14, 2026.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p5.html">2.4.6-p5</a>
+        </td>
+        <td>April&nbsp; 9, 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p4.html">2.4.6-p4</a>
@@ -90,6 +84,12 @@ Support for the 2.4.5 release line ends on August&nbsp; 9, 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p7.html">2.4.5-p7</a>
+        </td>
+        <td>April&nbsp; 9, 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p6.html">2.4.5-p6</a>
@@ -147,6 +147,12 @@ Support for the 2.4.4 release line ends on April&nbsp;24, 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p8.html">2.4.4-p8</a>
+        </td>
+        <td>April&nbsp; 9, 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p7.html">2.4.4-p7</a>
