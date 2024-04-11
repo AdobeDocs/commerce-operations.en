@@ -371,7 +371,7 @@ These files can be inspected with whatever tool you would like to view XML or JS
 
 >[!NOTE]
 >
->Don't use the `--state-monitor` mode in production.  It is only designed to be use for development and testing.  It will create a lot of output files and run slower than normal mode.
+>Don't use the `--state-monitor` mode in production.  It is only designed to be used for development and testing.  It will create a lot of output files and run slower than normal mode.
 
 >[!NOTE]
 >
