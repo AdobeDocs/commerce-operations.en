@@ -357,6 +357,26 @@ Run `GraphQlStateTest` by executing `vendor/bin/phpunit -c $(pwd)/dev/tests/inte
 
 Extension developers should execute WebAPI functional tests for GraphQL, as well as any custom automated or manual functional tests for GraphQL, while deploying GraphQL Application Server. These functional tests help developers identify potential errors or compatibility issues.
 
+#### State Monitor Mode
+
+While running functional tests (or manual testing), The application server could be run with `--state-monitor` mode enabled in order to help find classes where state is being unintentionally reused. Start the Application Server normally, except add this `--state-monitor` parameter.  Here is example. `bin/magento server:run --state-monitor`  When run this way, after each request is processed, a new file will be added to the `tmp` directory.  These files will look like `var/tmp/StateMonitor-thread-output-50-6nmxiK`.  Once you are done testing, these files can be merged together with the `bin/magento server:state-monitor:aggregate-output` command.  These will created two merged files, one in XML format, the other in JSON format.
+Examples:
+
+```
+/var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
+/var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
+``` 
+
+These files can be inspected with whatever tool you would like to view XML or JSON.  It will show the modified properties of service objects just like GraphQlStateTest does.  It uses the same skip list and filter list as GraphQlStateTest.
+
+>[!NOTE]
+>
+>Don't use the `--state-monitor` mode in production.  It is only designed to be use for development and testing.  It will create a lot of output files and run slower than normal mode.
+
+>[!NOTE]
+>
+>Because of bug in PHP garbage collector in versions 8.3.0 - 8.3.4, `--state-monitor` mode is not compatible with these versions.  If using PHP 8.3, you must upgrade to 8.3.5 or newer in order to use this feature.
+
 ## Known Issues
 
 ### Requests getting lost in cases of worker thread ending.
