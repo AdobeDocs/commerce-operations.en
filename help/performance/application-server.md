@@ -375,7 +375,7 @@ These files can be inspected with whatever tool you would like to view XML or JS
 
 >[!NOTE]
 >
->Because of bug in PHP garbage collector in versions 8.3.0 - 8.3.4, `--state-monitor` mode is not compatible with these versions.  If using PHP 8.3, you must upgrade to 8.3.5 or newer in order to use this feature.
+>Because of a bug in the PHP garbage collector in versions 8.3.0 - 8.3.4, `--state-monitor` mode is not compatible with these versions.  If using PHP 8.3, you must upgrade to 8.3.5 or newer in order to use this feature.
 
 ## Known Issues
 
