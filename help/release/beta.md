@@ -18,9 +18,9 @@ Adobe Commerce beta programs are a way for merchants to get access to prerelease
 
 Getting early access to features we are developing, provides merchants and partners with the ability to provide feedback to shape the product as well as prepare to adopt new capabilities in advance of the general availability date.
 
-# Current Beta Programs 
+## Current Beta Programs 
 
-## IBM Sterling Order Management System Integration (Private Beta)
+### IBM Sterling Order Management System Integration (Private Beta)
 This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
 - Real-time visibility into inventory levels and accurate delivery dates for your customers.
 - Automated sourcing for orders based on configurable rules, so you can optimize your fulfillment network and inventory.
@@ -29,7 +29,8 @@ This integration accelerator for IBM Sterling Order Management enables Adobe Com
 
 To participate in this beta, email sbieber@adobe.com
 
-## Data Connection & Audience Activation (Public Beta)
+### Data Connection & Audience Activation (Public Beta)
+
 Expanded data sharing between Adobe Commerce & Adobe Experience Platform to drive more powerful personalized experiences. This capability enables merchants to: 
 - Share Commerce customer profiles
 - Create custom attributes
@@ -38,7 +39,8 @@ Expanded data sharing between Adobe Commerce & Adobe Experience Platform to driv
 
 To participate in this beta, email DataConnection@adobe.com 
 
-## Backoffice Integration Starter Kit (Private Beta)
+### Backoffice Integration Starter Kit (Private Beta)
+
 The backoffice integration starter kit provides developers with an accelerator to build event-driven integrations with systems like ERPs, CRMs, and OMSs. With the starter kit developers can reduce development costs by upto 50%. The starter kit also follows Adobe Commerce best practices that reduce the cost of maintenance significantly. Included in it are
 - Data synchronization for commonly used objects like product, order, customer, stock, and shippment
 - Architectural blueprints following best practices
@@ -46,7 +48,7 @@ The backoffice integration starter kit provides developers with an accelerator t
 
 To participate in this beta, please submit the [enrollment form](https://forms.office.com/r/YbYArqE3DT)
 
-## Adobe Commerce Foundation (Public Beta) 
+### Adobe Commerce Foundation (Public Beta) 
 
 Each Adobe Commerce Foundation beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
