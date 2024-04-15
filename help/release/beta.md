@@ -21,6 +21,7 @@ Getting early access to features that Adobe is developing provides customers and
 ## Current Beta Programs 
 
 See the following sections for a list of active beta programs.
+
 ### IBM Sterling Order Management System Integration (Private Beta)
 
 This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
