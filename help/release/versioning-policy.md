@@ -5,7 +5,7 @@ exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
 ---
 # Adobe Commerce release policy
 
-Adobe Commerce and Magento Open Source use [semantic versioning](https://semver.org/) on the individual module level (for example `magento/framework 101.1.1`), but not for the marketing version number. For example:
+Adobe Commerce uses [semantic versioning](https://semver.org/) on the individual module level (for example `magento/framework 101.1.1`), but not for the marketing version number. For example:
 
 -  **MAJOR release**—2
 -  **MINOR release**—2.4
