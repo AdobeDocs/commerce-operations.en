@@ -21,11 +21,12 @@ Getting early access to features we are developing, provides merchants and partn
 # Current Beta Programs 
 
 ## IBM Sterling Order Management System Integration (Private Beta)
-This pre-built integration with IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
+This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
 - Real-time visibility into inventory levels and accurate delivery dates for your customers.
 - Automated sourcing for orders based on configurable rules, so you can optimize your fulfillment network and inventory.
 - A universal view of orders across channels from a single dashboard so your support teams can deliver exceptional service and identify and handle exceptions quickly. 
 - A templated return management flow to simplify returns management.
+
 To participate in this beta, email sbieber@adobe.com
 
 ## Data Connection & Audience Activation (Public Beta)
@@ -34,6 +35,7 @@ Expanded data sharing between Adobe Commerce & Adobe Experience Platform to driv
 - Create custom attributes
 - Get Commerce insights in Real-Time CDP and Adobe Journey Optimizer
 - Support multiple datasets and datastreams
+
 To participate in this beta, email DataConnection@adobe.com 
 
 ## Backoffice Integration Starter Kit (Private Beta)
@@ -55,7 +57,7 @@ Each Adobe Commerce Foundation beta release includes all the changes delivered t
 -  Community contributions  
 -  Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
-## Naming convention and schedule
+### Naming convention and schedule
 
 Adobe will release beta patches twice a year. The first beta patch is typically released three months after general availability of a new core application patch release.
 
@@ -67,13 +69,13 @@ Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.
 See the [release schedule](schedule.md) for the list of upcoming public beta release dates.
 
 
-## Beta release access
+### Beta release access
 
 Adobe Commerce beta releases are distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
 
 See [Composer installation quick start](../installation/composer.md) for more details.
 
-## Issue reporting
+### Issue reporting
 
 Adobe does not provide the standard Adobe Support Service for beta releases.
 
