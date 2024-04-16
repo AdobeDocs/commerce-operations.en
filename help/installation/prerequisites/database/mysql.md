@@ -24,7 +24,7 @@ Adobe _strongly_ recommends you observe the following standard when you set up y
 
 ## Installing MySQL on Ubuntu
 
-Adobe Commerce 2.4 require a clean installation of MySQL 8.0. Follow the links below for instructions on installing MySQL on your machine.
+Adobe Commerce 2.4 requires a clean installation of MySQL 8.0. Follow the links below for instructions on installing MySQL on your machine.
 
 *  [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
 *  [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)

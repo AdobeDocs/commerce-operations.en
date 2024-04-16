@@ -38,7 +38,7 @@ Use the following table to find release notes and important information related 
     </tr>
     <tr>
       <td><strong>Services for Adobe Commerce</strong>
-        <p>Learn about the latest improvements to innovative Commerce merchandizing services.</p>
+        <p>Learn about the latest improvements to innovative Commerce merchandising services.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channels</a></li>

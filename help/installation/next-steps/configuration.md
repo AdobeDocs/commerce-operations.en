@@ -86,7 +86,7 @@ Elasticsearch or OpenSearch is required for all installations as of 2.4.0.
 
 ### Set up a message queue
 
-Since version 2.3.0, Adobe Commerce includes message queue functionality. In earlier versions, it is available only for Adobe Commerce.
+Since version 2.3.0, Adobe Commerce has included message queue functionality. In earlier versions, it is available only for Adobe Commerce.
 
 *  [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
