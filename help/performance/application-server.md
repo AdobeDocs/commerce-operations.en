@@ -386,4 +386,4 @@ If there is a problem with a worker thread that causes the worker thread to end,
 
 ### Application Server may use previous attributes configuration in certain conditions.
 
-There was a bug in CatalogGraphQl\Model\Config\AttributeReader in 2.4.7 that could in rare cases cause a GraphQL request to get a response using previous state of Attributes configuration.  The fix for this was delivered in 2.4-develop, but not in time for 2.4.7 release.
+The `CatalogGraphQl\Model\Config\AttributeReader` in `2.4.7` contains a rare bug that can cause a GraphQL request to get a response using previous state of Attributes configuration. A fix for this was delivered in `2.4-develop`, but not in time for `2.4.7` release.
