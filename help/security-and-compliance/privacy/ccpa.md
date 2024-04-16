@@ -7,7 +7,7 @@ exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
 
 >[!NOTE]
 >
->This is one in a series of topics to help Adobe Commerce and Magento Open Source merchants and developers understand the implications of the California Consumer Privacy Act (CCPA). The information is intended for informational purposes only and should not be construed as legal advice. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
+>This is one in a series of topics to help Adobe Commerce merchants and developers understand the implications of the California Consumer Privacy Act (CCPA). The information is intended for informational purposes only and should not be construed as legal advice. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
 
 The [CCPA](https://oag.ca.gov/privacy/ccpa) expands the rights of consumers in California to determine how their personal information is collected, stored, and used, with an emphasis on protecting consumers from the unauthorized sale or exchange or their personal information. The CCPA was enacted in 2018 and is effective as of January 1, 2020.
 

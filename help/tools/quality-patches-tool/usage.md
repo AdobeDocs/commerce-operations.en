@@ -6,10 +6,9 @@ feature: Configuration, Install
 ---
 # Usage
 
-The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) delivers individual patches developed by Adobe and the Magento Open Source community. It allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce or Magento Open Source. You can apply patches to Adobe Commerce and Magento Open Source projects regardless of who developed the patch. For example, you can apply a patch developed by the community to Adobe Commerce projects.
+The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) delivers individual patches developed by Adobe and the Magento Open Source community. It allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce or Magento Open Source. You can apply patches to Adobe Commerce projects regardless of who developed the patch. For example, you can apply a patch developed by the community to Adobe Commerce projects.
 
-
-Watch this [technical video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) and learn how to use the Quality Patches Tool for Adobe Commerce and Magento Open Source.
+Watch this [technical video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) and learn how to use the Quality Patches Tool for Adobe Commerce.
 
 >[!INFO]
 >
@@ -56,7 +55,7 @@ Adobe Commerce 2.3.5.
 The status table includes:
 
 -  **Type**:
-    -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) package are optional for Adobe Commerce and Magento Open Source installations.
+    -  `Optional` — All patches from the [!DNL Quality Patches Tool] and the [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) package are optional for Adobe Commerce installations.
     -  `Deprecated` — Adobe has deprecated the individual patch. If you have applied the patch, we recommend that you revert it. The revert operation also removes the patch from the status table.
 
 -  **Status**:

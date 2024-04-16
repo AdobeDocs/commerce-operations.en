@@ -20,7 +20,7 @@ The following instructions show you how to upgrade using the Composer package ma
 
 >[!WARNING]
 >
->The procedure for upgrading Adobe Commerce and Magento Open Source has changed. You must install a new version of the `magento/composer-root-update-plugin` package (see [prerequisites](../prepare/prerequisites.md)). In addition, the commands for upgrading have changed from `composer require magento/<package_name>` to `composer require-commerce magento/<package_name>`.
+>The procedure for upgrading Adobe Commerce has changed. You must install a new version of the `magento/composer-root-update-plugin` package (see [prerequisites](../prepare/prerequisites.md)). In addition, the commands for upgrading have changed from `composer require magento/<package_name>` to `composer require-commerce magento/<package_name>`.
 
 ## Before you begin
 

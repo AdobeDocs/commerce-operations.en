@@ -1,6 +1,6 @@
 ---
 title: On-premises installation prerequisites
-description: Learn more about the software dependencies required for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Learn more about the software dependencies required for on-premises installations of Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 ---
 # On-premises installation prerequisites
@@ -49,7 +49,7 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-Adobe Commerce and Magento Open Source support Apache version 2.4 as the following result indicates:
+Adobe Commerce supports Apache version 2.4 as the following result indicates:
 
 ```terminal
 Server version: Apache/2.4.0 (Unix)

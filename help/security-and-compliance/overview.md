@@ -16,7 +16,7 @@ This section contains information about security, privacy, and regulation compli
 
 Merchants are obligated to meet industry guidelines for maintaining a secure environment, legal requirements in their jurisdiction, and best practices for online commerce. To learn more from a business perspective, see the [Store Privacy Policy](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
 
-This compliance documentation provides the technical information to ensure that Adobe Commerce and Magento Open Source installations comply with the requirements of specific privacy legislation. Some of these requirements require merchants to complete additional development work to achieve compliance. See the following topics for details:
+This compliance documentation provides the technical information to ensure that Adobe Commerce installations comply with the requirements of specific privacy legislation. Some of these requirements require merchants to complete additional development work to achieve compliance. See the following topics for details:
 
 -  [California Consumer Privacy Act (CCPA)](privacy/ccpa.md)
 -  [General Data Protection Regulation (GDPR)](privacy/gdpr.md)

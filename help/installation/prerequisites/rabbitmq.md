@@ -1,6 +1,6 @@
 ---
 title: Message broker
-description: Follow these steps to install and configure required message broker software (such as [!DNL RabbitMQ]) for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Follow these steps to install and configure required message broker software (such as [!DNL RabbitMQ]) for on-premises installations of Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
 ---
 # Message broker
@@ -49,7 +49,7 @@ Refer to the [[!DNL RabbitMQ]/Erlang version matrix](https://www.rabbitmq.com/wh
 
 The [!DNL RabbitMQ] server is included on CentOS, but the version is often old. [!DNL RabbitMQ] recommends installing the package from their website.
 
-Refer to the [!DNL RabbitMQ] install page to get the latest supported version. Adobe Commerce and Magento Open Source 2.3 and 2.4 support [!DNL RabbitMQ] 3.8.x.
+Refer to the [!DNL RabbitMQ] install page to get the latest supported version. Adobe Commerce 2.3 and 2.4 support [!DNL RabbitMQ] 3.8.x.
 
 Refer to [Installing on RPM-based Linux](https://www.rabbitmq.com/install-rpm.html) for more information.
 

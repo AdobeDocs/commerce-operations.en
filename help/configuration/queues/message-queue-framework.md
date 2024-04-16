@@ -1,6 +1,6 @@
 ---
 title: Message Queues Overview
-description: Read about the message queue framework and how it works with the Adobe Commerce and Magento Open Source application.
+description: Read about the message queue framework and how it works with the Adobe Commerce application.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
 ---
 # Message queues overview

@@ -1,17 +1,17 @@
 ---
 title: Privacy JavaScript Library
-description: Learn how to use custom tools for accessing and deleting customer personal information collected by Adobe Commerce and Magento Open Source.
+description: Learn how to use custom tools for accessing and deleting customer personal information collected by Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
 ---
 <!-- TODO: Remove this topic and redirect to the adobe-privacy-javascript-library.md when the Adobe privacy library has been integrated with Commerce. -->
 
 # Privacy JavaScript Library
 
-The Privacy JavaScript Library is a set of tools to help create a process for accessing and deleting private data collected by Adobe Commerce and Magento Open Source.
+The Privacy JavaScript Library is a set of tools to help create a process for accessing and deleting private data collected by Adobe Commerce.
 
 Commerce data tracking services can store private information applicable to privacy regulations such as the [General Data Protection Regulation (GDPR)](gdpr.md) and [California Consumer Privacy Act (CCPA)](ccpa.md).
 
-This library provides a set of functions for creating privacy data requests and gathering their responses. Use this library to retrieve and remove the data stored in the browser by Adobe Commerce and Magento Open Source data tracking services.
+This library provides a set of functions for creating privacy data requests and gathering their responses. Use this library to retrieve and remove the data stored in the browser by Adobe Commerce data tracking services.
 
 >[!NOTE]
 >

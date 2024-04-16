@@ -1,6 +1,6 @@
 ---
 title: Nginx
-description: Follow these steps to install and configure the Nginx web server for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Follow these steps to install and configure the Nginx web server for on-premises installations of Adobe Commerce.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 ---
 # Nginx
@@ -11,7 +11,7 @@ Installation instructions vary based on which operating system that you are usin
 
 ## Ubuntu
 
-The following section describes how to install Adobe Commerce and Magento Open Source 2.x on Ubuntu using nginx, PHP, and MySQL.
+The following section describes how to install Adobe Commerce 2.x on Ubuntu using nginx, PHP, and MySQL.
 
 ### Install nginx
 
@@ -25,7 +25,7 @@ After completing the following sections and installing the application, we will 
 
 ### Install and configure php-fpm
 
-Adobe Commerce and Magento Open Source require several [PHP extensions](../php-settings.md) to function properly. In addition to these extensions, you must also install and configure the `php-fpm` extension if you are using nginx.
+Adobe Commerce requires several [PHP extensions](../php-settings.md) to function properly. In addition to these extensions, you must also install and configure the `php-fpm` extension if you are using nginx.
 
 To install and configure `php-fpm`:
 
@@ -59,7 +59,7 @@ To install and configure `php-fpm`:
 
    >[!NOTE]
    >
-   >We recommend setting the memory limit to 2 G when testing Adobe Commerce and Magento Open Source. Refer to [Required PHP settings](../php-settings.md) for more information.
+   >We recommend setting the memory limit to 2 G when testing Adobe Commerce. Refer to [Required PHP settings](../php-settings.md) for more information.
 
 1. Save and exit the editor.
 
@@ -75,7 +75,7 @@ Refer to [MySQL](../database/mysql.md) for more information.
 
 ### Install and configure
 
-There are several ways to download Adobe Commerce and Magento Open Source, including:
+There are several ways to download Adobe Commerce, including:
 
 *  [Get the Composer metapackage](../../composer.md)
 
@@ -230,7 +230,7 @@ Open a web browser and navigate to your site's base URL to [verify the installat
 
 ## CentOS 7
 
-The following section describes how to install Adobe Commerce and Magento Open Source 2.x on CentOS 7 using nginx, PHP, and MySQL.
+The following section describes how to install Adobe Commerce 2.x on CentOS 7 using nginx, PHP, and MySQL.
 
 ### Install nginx
 
@@ -256,7 +256,7 @@ After completing the following sections and installing the application, we'll us
 
 ### Install and configure php-fpm
 
-Adobe Commerce and Magento Open Source require several [PHP](../php-settings.md) extensions to function properly. In addition to these extensions, you must also install and configure the `php-fpm` extension if you're using nginx.
+Adobe Commerce requires several [PHP](../php-settings.md) extensions to function properly. In addition to these extensions, you must also install and configure the `php-fpm` extension if you're using nginx.
 
 1. Install `php-fpm`:
 
@@ -355,7 +355,7 @@ Refer to [MySQL](..//database/mysql.md) for more information.
 
 ### Install and configure
 
-There are several ways to download the Adobe Commerce and Magento Open Source, including:
+There are several ways to download the Adobe Commerce, including:
 
 *  [Get the Composer metapackage](../../composer.md)
 

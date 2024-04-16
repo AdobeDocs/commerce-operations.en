@@ -1,6 +1,6 @@
 ---
 title: Advanced on-premises installation
-description: Learn about advanced installation scenarios for Adobe Commerce or Magento Open Source on infrastructure that you own.
+description: Learn about advanced installation scenarios for Adobe Commerce on infrastructure that you own.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
 ---
 # Advanced on-premises installation
@@ -15,7 +15,7 @@ exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
 
 ## Command-line interface (CLI)
 
-Adobe Commerce and Magento Open Source have a single command-line interface for installation and configuration tasks: `<magento_root>/bin/magento`. The interface performs multiple tasks, including:
+Adobe Commerce has a single command-line interface for installation and configuration tasks: `<magento_root>/bin/magento`. The interface performs multiple tasks, including:
 
 *  Installation (and related tasks such as creating or updating the database schema, creating the deployment configuration).
 *  Clearing the cache.

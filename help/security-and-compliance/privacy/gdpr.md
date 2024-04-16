@@ -7,7 +7,7 @@ exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
 
 >[!NOTE]
 >
->This is one in a series of topics to help Adobe Commerce and Magento Open Source merchants and developers understand the implications of the General Data Protection Regulation (GDPR). The information is intended for informational purposes only and should not be construed as legal advice. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
+>This is one in a series of topics to help Adobe Commerce merchants and developers understand the implications of the General Data Protection Regulation (GDPR). The information is intended for informational purposes only and should not be construed as legal advice. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
 
 The European Union (EU) enacted [General Data Protection Regulation](https://ec.europa.eu/info/law/law-topic/data-protection_en) (GDPR) to give its citizens more control over their personal data. GDPR applies to any organization operating within the EU. It also applies to organizations outside of the EU that offer goods or services to customers or businesses in the EU.
 
@@ -23,7 +23,7 @@ For technical information, see the dataflow diagrams and database entity mapping
 -  [Customer personal information reference (version 2.x)](data-m2.md)
 -  [Customer personal information reference (version) 1.x)](data-m1.md)
 
-For more information about how Adobe Commerce and Magento Open Source help merchants comply with GDPR, see the following:
+For more information about how Adobe Commerce helps merchants comply with GDPR, see the following:
 
 -  [GDPR Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 -  [Adobe Commerce is Ready for GDPR](https://business.adobe.com/privacy/general-data-protection-regulation.html)

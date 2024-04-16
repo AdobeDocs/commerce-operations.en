@@ -5,9 +5,9 @@ exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 ---
 # Quick start on-premises installation
 
-The instructions on this page describe how to install Adobe Commerce and Magento Open Source on [self-hosted](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructure. For guidance on upgrading an existing installation, see the [_Upgrade Guide_](../upgrade/overview.md).
+The instructions on this page describe how to install Adobe Commerce on [self-hosted](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructure. For guidance on upgrading an existing installation, see the [_Upgrade Guide_](../upgrade/overview.md).
 
-Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce and Magento Open Source components and their dependencies. Using Composer to get the Adobe Commerce and Magento Open Source metapackage provides the following advantages:
+Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce components and their dependencies. Using Composer to get the Adobe Commerce metapackage provides the following advantages:
 
 -  Reuse third-party libraries without bundling them with source code
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
@@ -25,7 +25,7 @@ Before you continue, you must do the following:
 
 -  Complete all [prerequisite tasks](system-requirements.md).
 -  [Install Composer](https://getcomposer.org/download/).
--  Get [authentication keys](prerequisites/authentication-keys.md) to the Adobe Commerce and Magento Open Source Composer repository.
+-  Get [authentication keys](prerequisites/authentication-keys.md) to the Adobe Commerce Composer repository.
 
 ## Log in as file system owner
 

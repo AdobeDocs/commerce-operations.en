@@ -53,7 +53,7 @@ The `lock config` and `lock env` CLI commands configure environment variables to
 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Run security scans**
 
-Use the [Commerce Security Scan service](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) to monitor all Adobe Commerce and Magento Open Source sites for known security risks and malware, and sign up to receive patch updates and security notifications.
+Use the [Commerce Security Scan service](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) to monitor all Adobe Commerce sites for known security risks and malware, and sign up to receive patch updates and security notifications.
 
 ## Ensure security of extensions and custom code
 

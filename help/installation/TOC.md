@@ -1,6 +1,6 @@
 ---
 user-guide-title: Installation Guide
-user-guide-description: Learn how to install Adobe Commerce and Magento Open Source for on-premises deployments.
+user-guide-description: Learn how to install Adobe Commerce for on-premises deployments.
 feature: Install
 ---
 

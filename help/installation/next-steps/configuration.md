@@ -1,6 +1,6 @@
 ---
 title: Configure the application
-description: Learn about the post-install configuration required for Adobe Commerce and Magento Open Source on-premises deployments.
+description: Learn about the post-install configuration required for Adobe Commerce on-premises deployments.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 ---
@@ -12,7 +12,7 @@ Now that you've finished installing Adobe Commerce or Magento Open Source, you n
 
 The UNIX task scheduler, cron, is critical to the application's day-to-day operations. It schedules things like reindexing, newsletters, e-mails, and sitemaps. A *crontab* is a cron configuration.
 
-You must install Adobe Commerce and Magento Open Source services in the *crontab*, or some core functionality (and some third-party extensions) do not function properly.
+You must install Adobe Commerce services in the *crontab*, or some core functionality (and some third-party extensions) do not function properly.
 
 For more information about cron, including how to remove a crontab and run cron from the command line, see [Configure and run cron](../../configuration/cli/configure-cron-jobs.md).
 
@@ -73,7 +73,7 @@ More information:
 
 ### Set up an e-mail server
 
-Adobe Commerce and Magento Open Source require an e-mail server. We don't recommend a particular server, but you can try any of the following:
+Adobe Commerce requires an e-mail server. We don't recommend a particular server, but you can try any of the following:
 
 *  Postfix for CentOS ([Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS documentation](https://www.centos.org))
 *  Postfix for Ubuntu ([Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu documentation](https://help.ubuntu.com/community/MailServer))
@@ -86,7 +86,7 @@ Elasticsearch or OpenSearch is required for all installations as of 2.4.0.
 
 ### Set up a message queue
 
-Since version 2.3.0, Adobe Commerce and Magento Open Source include message queue functionality. In earlier versions, it is available only for Adobe Commerce.
+Since version 2.3.0, Adobe Commerce has included message queue functionality. In earlier versions, it is available only for Adobe Commerce.
 
 *  [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
