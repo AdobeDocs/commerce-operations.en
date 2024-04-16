@@ -1,6 +1,6 @@
 ---
 title: Optional software
-description: Learn more about optional software that you can install to support on-premises installations of Adobe Commerce and Magento Open Source.
+description: Learn more about optional software that you can install to support on-premises installations of Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
 ---
 # Optional software

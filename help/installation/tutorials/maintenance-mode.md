@@ -7,7 +7,7 @@ exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 
 The following guide refers to a standard maintenance mode page. If you need to use a custom maintenance page, see [Create the custom maintenance page](../../upgrade/troubleshooting/maintenance-mode-options.md) topic.
 
-Adobe Commerce and Magento Open Source use [maintenance mode](../../configuration/bootstrap/application-modes.md#maintenance-mode) to disable bootstrapping. Disabling bootstrapping is helpful while you are maintaining, upgrading, or reconfiguring your site.
+Adobe Commerce uses [maintenance mode](../../configuration/bootstrap/application-modes.md#maintenance-mode) to disable bootstrapping. Disabling bootstrapping is helpful while you are maintaining, upgrading, or reconfiguring your site.
 
 The application detects maintenance mode as follows:
 

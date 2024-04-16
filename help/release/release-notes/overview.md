@@ -1,9 +1,10 @@
 ---
-title: Adobe Commerce and Magento Open Source Release notes
-description: Learn where to find information for specific Adobe Commerce and Magento Open Source releases.
+title: Adobe Commerce release notes
+description: Learn where to find information for specific Adobe Commerce releases.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 ---
-# Release notes for Adobe Commerce and Magento Open Source
+
+# Release notes for Adobe Commerce
 
 Use the following table to find release notes and important information related to specific releases of all Adobe Commerce products, services, and tools.
 
@@ -14,16 +15,14 @@ Use the following table to find release notes and important information related 
 <table>
   <tbody>
     <tr>
-      <td><strong>Adobe Commerce and Magento Open Source</strong>
-        <p>Learn about the latest improvements in Adobe Commerce and Magento Open Source, including enhancements, security, bug fixes, and known issues.</p>
+      <td><strong>Adobe Commerce</strong>
+        <p>Learn about the latest improvements in Adobe Commerce, including enhancements, security, bug fixes, and known issues.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Backward-incompatible changes</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
-            <li><a href="open-source/overview.md">Magento Open Source</a></li>
             <li><a href="security/overview.md">Security patches</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Security Bulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B for Adobe Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory Management</a></li>
           </ul>
         </td>
       <td><strong>Adobe Commerce on cloud infrastructure</strong>
@@ -39,7 +38,7 @@ Use the following table to find release notes and important information related 
     </tr>
     <tr>
       <td><strong>Services for Adobe Commerce</strong>
-        <p>Learn about the latest improvements to innovative Commerce services that are available as Adobe Commerce and Magento Open Source extensions.</p>
+        <p>Learn about the latest improvements to innovative Commerce merchandising services.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channels</a></li>
@@ -55,7 +54,7 @@ Use the following table to find release notes and important information related 
           </ul>
         </td>
       <td><strong>Tools</strong>
-        <p>Learn about the latest improvements to tools designed to make it easier for you to find and use Adobe Commerce and Magento Open Source software.</p>
+        <p>Learn about the latest improvements to tools designed to make it easier for you to find and use Adobe Commerce software.</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh for Adobe APP Builder Developer</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events for Adobe Commerce</a></li>
@@ -70,6 +69,7 @@ Use the following table to find release notes and important information related 
        <td><strong>Storefront Experience</strong>
         <p>Learn about the latest improvements to storefront technology that you can use to build unique experiences for your customers.</p>
           <ul>
+            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>

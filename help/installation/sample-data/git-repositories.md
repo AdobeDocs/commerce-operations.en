@@ -1,6 +1,6 @@
 ---
 title: Clone sample data Git repositories
-description: Follow these steps to install Adobe Commerce and Magento Open Source sample data by cloning Git repositories.
+description: Follow these steps to install Adobe Commerce sample data by cloning Git repositories.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
 ---
 # Clone sample data Git repositories

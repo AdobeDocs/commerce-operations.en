@@ -1,6 +1,6 @@
 ---
 title: Upgrade Modules and Extensions
-description: Use the command-line interface and Composer to upgrade Adobe Commerce and Magento Open Source modules and extensions.
+description: Use the command-line interface and Composer to upgrade Adobe Commerce modules and extensions.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
 ---
 # Upgrade modules and extensions

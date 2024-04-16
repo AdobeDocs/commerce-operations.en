@@ -5,7 +5,7 @@ exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
 ---
 # Content security policy overview
 
-A Content Security Policy (CSP) can provide additional layers of defense for Adobe Commerce and Magento Open Source installations by helping to detect and mitigate Cross-Site Scripting (XSS) and related data injection attacks. This common attack vector works by injecting malicious content that falsely claims to originate from the website. After the malicious content is loaded and executed, it can initiate the unauthorized transfer of data.
+A Content Security Policy (CSP) can provide additional layers of defense for Adobe Commerce installations by helping to detect and mitigate Cross-Site Scripting (XSS) and related data injection attacks. This common attack vector works by injecting malicious content that falsely claims to originate from the website. After the malicious content is loaded and executed, it can initiate the unauthorized transfer of data.
 
 CSP provides a standardized set of directives that tells the browser which content resources can be trusted, and which should be blocked. Using carefully defined policies, CSP can restrict browser content to allow only whitelisted resources to appear.
 

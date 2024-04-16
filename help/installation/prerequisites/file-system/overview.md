@@ -1,6 +1,6 @@
 ---
 title: File ownership and permissions
-description: Learn about the importance of file system permissions when working with on-premises installations of Adobe Commerce and Magento Open Source.
+description: Learn about the importance of file system permissions when working with on-premises installations of Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 ---
 # File ownership and permissions
@@ -35,7 +35,7 @@ To tighten security, particularly in a production environment on a shared hostin
 >
 >File system security is complex and important. We strongly recommend that you consult an experienced system administrator or network administrator before you decide the level of permissions to set. We provide a mechanism for you to use, but creating a permissions strategy is your responsibility.
 
-Adobe Commerce and Magento Open Source use a three-bit, default mask: `002`. Subtract the default mask from the UNIX defaults of 666 for files and 777 for directories.
+Adobe Commerce uses a three-bit, default mask: `002`. Subtract the default mask from the UNIX defaults of 666 for files and 777 for directories.
 
 For example:
 
@@ -47,7 +47,7 @@ For more information about creating a `magento_umask` file, see [Set a umask](..
 
 ## Permissions, ownership, and application modes
 
-We recommend different permissions and ownership when you use the different Adobe Commerce and Magento Open Source application modes:
+We recommend different permissions and ownership when you use the different Adobe Commerce application modes:
 
 - Default
 - Developer

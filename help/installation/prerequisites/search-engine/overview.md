@@ -1,12 +1,12 @@
 ---
 title: Search engine prerequisites
-description: Follow these steps to install and configure supported search engine software for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Follow these steps to install and configure supported search engine software for on-premises installations of Adobe Commerce.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
 ---
 # Search engine prerequisites
 
-As of Adobe Commerce and Magento Open Source 2.4, all installations must be configured to use [Elasticsearch](https://www.elastic.co) or [OpenSearch](https://opensearch.org/) as the catalog search solution.
+As of Adobe Commerce 2.4, all installations must be configured to use [Elasticsearch](https://www.elastic.co) or [OpenSearch](https://opensearch.org/) as the catalog search solution.
 
 >[!NOTE]
 >
