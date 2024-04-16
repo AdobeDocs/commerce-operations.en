@@ -21,7 +21,7 @@ For more information about how Elasticsearch and OpenSearch uses stopwords, see 
 
 ## Configure stopwords
 
-Stopwords are located in the `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce and Magento Open Source ships with one CSV file containing stopwords for the default locales and an additional file, `stopwords.csv`, which has stopwords for any locale that is not represented by another CSV file.
+Stopwords are located in the `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directory. Adobe Commerce ships with one CSV file containing stopwords for the default locales and an additional file, `stopwords.csv`, which has stopwords for any locale that is not represented by another CSV file.
 
 The default lifetime for stopwords file cache is 15 minutes.
 

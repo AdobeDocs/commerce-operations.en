@@ -8,7 +8,7 @@ exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
 
 Before you use this command, you must know the relative path to your theme. Themes are located in a subdirectory of `<magento_root>/app/design/<area name>`. You must specify the path to the theme starting with the area, which is either `frontend` (for storefront themes) or `adminhtml` (for Admin themes).
 
-For example, the path to the Luma theme provided with Adobe Commerce and Magento Open Source is `frontend/Magento/luma`.
+For example, the path to the Luma theme provided with Adobe Commerce is `frontend/Magento/luma`.
 
 For more information about themes, see [theme structure](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -33,7 +33,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 Where
 
-*  `{theme path}` is the relative path to the theme, starting with the area name. For example, the path to the Blank theme supplied with Adobe Commerce and Magento Open Source is `frontend/Magento/blank`.
+*  `{theme path}` is the relative path to the theme, starting with the area name. For example, the path to the Blank theme supplied with Adobe Commerce is `frontend/Magento/blank`.
 *  `--backup-code` backs up the codebase as discussed in the paragraphs that follow.
 *  `--clear-static-content` cleans generated [static view files](../../configuration/cli/static-view-file-deployment.md), which is necessary to cause static view files to display properly.
 

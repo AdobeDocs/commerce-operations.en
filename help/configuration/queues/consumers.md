@@ -1,6 +1,6 @@
 ---
 title: Message queue consumers
-description: Learn about Adobe Commerce and Magento Open Source message queue consumers, including the features and system configuration settings associated with them.
+description: Learn about Adobe Commerce message queue consumers, including the features and system configuration settings associated with them.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
 ---
 # Message queue consumers

@@ -5,13 +5,13 @@ exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
 ---
 # Recommended reading for upgrade planning
 
-Continue learning about Adobe Commerce and Magento Open Source upgrades by using the resources on this page.
+Continue learning about Adobe Commerce upgrades by using the resources on this page.
 
 <table>
   <tbody>
     <tr>
       <td><strong>Release Notes and Announcements</strong>
-        <p>Learn about the latest developments in Adobe Commerce and Magento Open Source, including product strategy, security, bug fixes, and known issues.</p>
+        <p>Learn about the latest developments in Adobe Commerce, including product strategy, security, bug fixes, and known issues.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe Blog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
@@ -22,7 +22,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
           </ul>
         </td>
       <td><strong>Tools</strong>
-        <p>Browse tools designed to make it easier for you to find and use Adobe Commerce and Magento Open Source software.</p>
+        <p>Browse tools designed to make it easier for you to find and use Adobe Commerce software.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Upgrade Compatibility Tool PhpStorm plugin</a> (video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Upgrade Compatibility Tool</a></li>
@@ -33,7 +33,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
     </tr>
     <tr>
       <td><strong>Calendars and Policy</strong>
-        <p>Review details about Adobe Commerce and Magento Open Source releases and policies.</p>
+        <p>Review details about Adobe Commerce releases and policies.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce Software End of Support FAQ</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace policy</a></li>
@@ -44,7 +44,7 @@ Continue learning about Adobe Commerce and Magento Open Source upgrades by using
           </ul>
         </td>
       <td><strong>Features and Independent Services</strong>
-        <p>Explore innovative Commerce services that are available as Adobe Commerce and Magento Open Source extensions and where to get them.</p>
+        <p>Explore innovative Commerce services that are available as Adobe Commerce extensions and where to get them.</p>
           <ul>
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>

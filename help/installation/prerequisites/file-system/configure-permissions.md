@@ -1,6 +1,6 @@
 ---
 title: Configure file ownership and permissions
-description: Follow these steps to configure file system permissions for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Follow these steps to configure file system permissions for on-premises installations of Adobe Commerce.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
 ---
 # Configure file ownership and permissions

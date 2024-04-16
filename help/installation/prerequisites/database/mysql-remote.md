@@ -1,19 +1,19 @@
 ---
 title: Set up a remote MySQL database connection
-description: Follow these steps to configure a remote database connection for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Follow these steps to configure a remote database connection for on-premises installations of Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
 ---
 # Set up a remote MySQL database connection
 
 Sometimes you may want to host the database on a separate server instead of running the database server and the web server on the same machine.
 
-Adobe has provided a way to connect to a MySQL server on a different machine. As of Adobe Commerce and Magento Open Source 2.4.3, you can also configure the application to use an Amazon Web Services (AWS) Aurora database with no code changes.
+Adobe has provided a way to connect to a MySQL server on a different machine. As of Adobe Commerce 2.4.3, you can also configure the application to use an Amazon Web Services (AWS) Aurora database with no code changes.
 
 Aurora is a high-performance, fully compliant MySQL server hosted on AWS.
 
 ## Connecting to an AWS Aurora database
 
-Using Aurora as the database is as easy as specifying the database in the regular Adobe Commerce and Magento Open Source setup configuration, using the default database connector.
+Using Aurora as the database is as easy as specifying the database in the regular Adobe Commerce setup configuration, using the default database connector.
 
 When running `bin/magento setup:install`, use the Aurora information in the `db-` fields:
 

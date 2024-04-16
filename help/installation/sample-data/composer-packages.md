@@ -1,6 +1,6 @@
 ---
 title: Download sample data Composer packages
-description: Follow these steps to install Adobe Commerce and Magento Open Source sample data using the Composer PHP Package Manager.
+description: Follow these steps to install Adobe Commerce sample data using the Composer PHP Package Manager.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
 ---
@@ -14,7 +14,7 @@ This section discusses how to install sample data if you got the Adobe Commerce 
 
 *  Used `composer create-project`
 
-You can use this method of getting sample data for both Adobe Commerce and Magento Open Source, but you must use the same [authentication keys](../prerequisites/authentication-keys.md) that you used to install the application.
+You can use this method of getting sample data for Adobe Commerce, but you must use the same [authentication keys](../prerequisites/authentication-keys.md) that you used to install the application.
 
 >[!NOTE]
 >

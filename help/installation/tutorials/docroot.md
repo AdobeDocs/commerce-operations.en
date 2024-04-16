@@ -6,7 +6,7 @@ exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
 ---
 # Modify docroot to improve security
 
-In a standard installation with an Apache web server, Adobe Commerce and Magento Open Source is installed to the default web root: `/var/www/html/magento2`.
+In a standard installation with an Apache web server, Adobe Commerce is installed to the default web root: `/var/www/html/magento2`.
 
 The `magento2/` directory contains the following:
 

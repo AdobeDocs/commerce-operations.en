@@ -19,7 +19,7 @@ The catalog management best practices described here cover a range of issues, in
 
 ## Cart limits
 
-For best performance, use the following guidelines to manage cart limits for Adobe Commerce and Magento Open Source.
+For best performance, use the following guidelines to manage cart limits for Adobe Commerce.
 
 ### Affected products and versions
 

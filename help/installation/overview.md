@@ -1,13 +1,13 @@
 ---
 title: On-premises installation overview
-description: Learn about the installation process for on-premises deployments of Adobe Commerce and Magento Open Source.
+description: Learn about the installation process for on-premises deployments of Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 ---
 # On-premises installation overview
 
 >[!NOTE]
 >
->The following diagram provides a high-level overview of _**on-premises**_ installations of Adobe Commerce and Magento Open Source:
+>The following diagram provides a high-level overview of _**on-premises**_ installations of Adobe Commerce:
 
 ![How installation works](../assets/installation/install-diagram-24.svg)
 
