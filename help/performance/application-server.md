@@ -359,7 +359,13 @@ Extension developers should execute WebAPI functional tests for GraphQL, as well
 
 #### State Monitor Mode
 
-While running functional tests (or manual testing), the application server could be run with `--state-monitor` mode enabled in order to help find classes where state is being unintentionally reused. Start the Application Server normally, except add the `--state-monitor` parameter.  Here is an example: `bin/magento server:run --state-monitor`  When run this way, after each request is processed, a new file will be added to the `tmp` directory.  These files will look like `var/tmp/StateMonitor-thread-output-50-6nmxiK`.  Once you are done testing, these files can be merged together with the `bin/magento server:state-monitor:aggregate-output` command.  These will create two merged files, one in XML format, the other in JSON format.
+While running functional tests (or manual testing), the application server can run with `--state-monitor mode` enabled to help find classes where state is being unintentionally reused. Start the Application Server normally, except add the `--state-monitor` parameter.
+
+```
+bin/magento server:run --state-monitor
+```
+
+After each request is processed, a new file is added to the `tmp` directory, for example: `var/tmp/StateMonitor-thread-output-50-6nmxiK`. Once you are done testing, these files can be merged with the `bin/magento server:state-monitor:aggregate-output` command, which creates two merged files, one in `XML` and one in `JSON`.
 
 Examples:
 
