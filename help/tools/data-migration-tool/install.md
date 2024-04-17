@@ -43,7 +43,7 @@ git branch
 
 If you're currently in the `develop` branch, you must change to a [released branch](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) before you continue.
 
-If you haven't installed the Adobe Commerce or Magento Open Source software yet, [install it now](../../installation/prerequisites/commerce.md).
+If you haven't installed the Adobe Commerce software yet, [install it now](../../installation/prerequisites/commerce.md).
 If you're cloning the GitHub repository, make sure you check out a release tag as discussed in [(Contributor) Clone the GitHub repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Find released versions of [!DNL Data Migration Tool]

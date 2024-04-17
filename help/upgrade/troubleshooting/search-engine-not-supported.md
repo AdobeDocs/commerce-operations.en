@@ -1,18 +1,18 @@
 ---
 title: Current Search Engine Not Supported
-description: Troubleshoot your Adobe Commerce or Magento Open Source upgrade after encountering an error about an unsupported search engine.
+description: Troubleshoot your Adobe Commerce upgrade after encountering an error about an unsupported search engine.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
 ---
 # Current search engine not supported
 
-The following error message indicates that the Adobe Commerce or Magento Open Source version you are upgrading from is configured to use a catalog search engine that is not supported in the version you are upgrading to:
+The following error message indicates that the Adobe Commerce version you are upgrading from is configured to use a catalog search engine that is not supported in the version you are upgrading to:
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
-This error means one of the following conditions is true on the down-level version of Adobe Commerce or Magento Open Source:
+This error means one of the following conditions is true on the down-level version of Adobe Commerce:
 
 - The search engine is set to MySQL.
 - The search engine is set to a version of Elasticsearch that is no longer supported.
@@ -56,7 +56,7 @@ After you configure the search engine and reindex, you are ready to upgrade to 2
 
 Elasticsearch 6 and earlier are no longer supported.
 
-A value of `elasticsearch` indicates your down-level version of Adobe Commerce or Magento Open Source is configured to use Elasticsearch 2.x. This version of Elasticsearch is no longer supported.
+A value of `elasticsearch` indicates your down-level version of Adobe Commerce is configured to use Elasticsearch 2.x. This version of Elasticsearch is no longer supported.
 
 You must perform the following tasks before upgrading to 2.4:
 

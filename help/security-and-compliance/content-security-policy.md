@@ -1,6 +1,6 @@
 ---
 title: Content security policy overview
-description: Learn how to improve the security posture of your Adobe Commerce or Magento Open Source store using a content security policy.
+description: Learn how to improve the security posture of your Adobe Commerce store using a content security policy.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
 ---
 # Content security policy overview

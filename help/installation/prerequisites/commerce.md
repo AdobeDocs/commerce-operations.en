@@ -11,7 +11,7 @@ You are among the 240,000 merchants worldwide who put their trust in our eCommer
 
 Check the availability of exciting new features and releases and learn how you can get them on our [product availability page](https://devdocs.magento.com/release/availability.html).
 
-Consult the following table for getting started with installing Adobe Commerce or Magento Open Source.
+Consult the following table for getting started with installing Adobe Commerce.
 
 <table>
     <tbody>

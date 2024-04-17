@@ -1,6 +1,6 @@
 ---
 title: Configure the store
-description: Follow these steps to configure your Adobe Commerce or Magento Open Source store.
+description: Follow these steps to configure your Adobe Commerce store.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
 ---
 # Configure the store

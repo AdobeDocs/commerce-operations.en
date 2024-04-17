@@ -122,7 +122,7 @@ To purge out-of-date items from the cache, you can _clean_ or _flush_ cache type
 
    >[!TIP]
    >
-   >Always clean the cache after upgrading versions of Magento Open Source or Adobe Commerce, upgrading from Magento Open Source to Adobe Commerce, or installing B2B for Adobe Commerce or any module.
+   >Always clean the cache after upgrading versions of Adobe Commerce, upgrading from Magento Open Source to Adobe Commerce, or installing B2B for Adobe Commerce or any module.
 
 -  Flushing a cache type purges the cache storage, which might affect other processes applications that are using the same storage.
 

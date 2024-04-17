@@ -1,6 +1,6 @@
 ---
 title: Quick start on-premises installation
-description: Follow these steps to install Adobe Commerce or Magento Open Source on infrastructure that you own.
+description: Follow these steps to install Adobe Commerce on infrastructure that you own.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 ---
 # Quick start on-premises installation
@@ -13,7 +13,7 @@ Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce compone
 -  Reduce extension conflicts and compatibility issues by using a component-based architecture with robust dependency management
 -  Adhere to [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) standards
 -  Repackage Magento Open Source with other components
--  Use the Adobe Commerce or Magento Open Source software in a production environment
+-  Use the Adobe Commerce software in a production environment
 
 >[!NOTE]
 >
@@ -65,11 +65,11 @@ To switch to the file system owner:
 
 ## Get the metapackage
 
-To get the Adobe Commerce or Magento Open Source metapackage:
+To get the Adobe Commerce metapackage:
 
 1. Log in to your application server as, or switch to, the [file system owner](prerequisites/file-system/overview.md).
 1. Change to the web server docroot directory or a directory that you have configured as a virtual host docroot.
-1. Create a Composer project using the Adobe Commerce or Magento Open Source metapackage.
+1. Create a Composer project using a Commerce metapackage.
 
     **Magento Open Source**
 
@@ -121,7 +121,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## Set file permissions
 
-You must set read-write permissions for the web server group before you install Adobe Commerce or Magento Open Source. This is necessary so that the command line can write files to the file system.
+You must set read-write permissions for the web server group before you install Adobe Commerce. This is necessary so that the command line can write files to the file system.
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -133,7 +133,7 @@ chmod u+x bin/magento
 
 ## Install the application
 
-You must use the command line to install Adobe Commerce or Magento Open Source.
+You must use the command line to install Adobe Commerce.
 
 This example assumes that the install directory is named `magento2ee`, the `db-host` is on the same machine (`localhost`), and that the `db-name`, `db-user`, and `db-password` are all `magento`:
 
