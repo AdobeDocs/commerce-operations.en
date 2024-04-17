@@ -374,7 +374,7 @@ Examples:
 /var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
 ``` 
 
-These files can be inspected with any tool you use to view XML or JSON, which will show the modified properties of service objects like GraphQlStateTest does. It uses the same skip list and filter list as GraphQlStateTest.
+These files can be inspected with any tool you use to view XML or JSON, which will show the modified properties of service objects like GraphQlStateTest does. The `--state-monitor` mode uses the same skip list and filter list as GraphQlStateTest.
 
 >[!NOTE]
 >
