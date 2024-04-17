@@ -536,5 +536,3 @@ I — Informed) to visually depict each party in the ecosystem's security respon
   </tr>
 </tfoot>
 </table>
-
-For more information, review [Operations resposibility chart](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/people/roles-responsibilities){target="_blank"}
