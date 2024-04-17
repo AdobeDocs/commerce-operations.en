@@ -1,9 +1,9 @@
 ---
-title: Shared responsibility
+title: Shared responsibility security and operation model
 description: Learn about the security responsibilities of each party involved in your Adobe Commerce on cloud infrastructure project.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
 ---
-# Shared responsibility security model
+# Shared responsibility security and operational model
 
 Adobe Commerce on cloud infrastructure is a platform-as-a-service (PaaS) offering that relies on a shared responsibility security model. Adobe, the merchant, the cloud service provider, and the content delivery network (CDN) provider each bear distinct responsibility for maintaining the security of the Adobe Commerce on cloud infrastructure application and merchant-specific code and extensions.
 
@@ -86,7 +86,7 @@ The Adobe Commerce on cloud infrastructure solution uses CDN providers to speed 
 ## Security responsibilities chart
 
 The following chart uses the RACI model (R — Responsible, A — Accountable, C — Consulted,
-I — Informed) to visually depict each party in the ecosystem's security responsibilities concerning the Adobe Commerce on cloud infrastructure shared responsibility model:
+I — Informed) to visually depict each party in the ecosystem's security responsibilities concerning the Adobe Commerce on cloud infrastructure shared responsibility security and operational model:
 
 <table>
 <thead>
@@ -503,3 +503,38 @@ I — Informed) to visually depict each party in the ecosystem's security respon
   </tr>
 </tfoot>
 </table>
+
+## Operations Responsibility chart
+
+<table>
+<thead>
+  <tr>
+    <th>Task</th>
+    <th>Adobe</th>
+    <th>Merchant</th>
+    <th>Cloud service provider</th>
+    <th>CDN provider</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Applying Adobe Commerce on cloud infrastructure patches</td>
+    <td>C</td>
+    <td>R</td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan="5">
+      <p><sup><strong>1</strong></sup> Only if the Adobe Commerce on cloud infrastructure repository is used as the main repository. Use of other external repositories is the sole responsibility of the merchant.</p>
+      <p><sup><strong>2</strong></sup> Adobe provides Level 1 support for issues with CDN providers.</p>
+      <p><sup><strong>3</strong></sup> Some Ngnix controls are configured by the merchant for their applications and are their responsibility.</p>
+      <p><sup><strong>4</strong></sup> For PCI, penetration testing requirements are shared between Adobe and the merchant.</p>
+    </td>
+  </tr>
+</tfoot>
+</table>
+
+For more information, review [Operations resposibility chart](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/people/roles-responsibilities){target="_blank"}
