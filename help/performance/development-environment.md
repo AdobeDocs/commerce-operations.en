@@ -1,6 +1,6 @@
 ---
 title: Development Environment Recommendations
-description: Learn about performance recommendations for setting up your local Adobe Commerce or Magento Open Source development environment.
+description: Learn about performance recommendations for setting up your local Adobe Commerce development environment.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
 ---
 # Development environment recommendations

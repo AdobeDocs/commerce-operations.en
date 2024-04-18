@@ -1,6 +1,6 @@
 ---
 title: Enable or disable modules
-description: Follow these steps to manage Adobe Commerce or Magento Open Source modules.
+description: Follow these steps to manage Adobe Commerce modules.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
 ---
 # Enable or disable modules

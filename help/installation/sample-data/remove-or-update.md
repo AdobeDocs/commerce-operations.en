@@ -7,7 +7,7 @@ exl-id: d23f999f-18bf-449b-be23-bdf392dda539
 
 This topic discusses how to:
 
-*  [Remove sample data modules](#remove-sample-data-modules) from an Adobe Commerce or Magento Open Source installation `composer.json`. This option does *not* remove sample data from the database.
+*  [Remove sample data modules](#remove-sample-data-modules) from an Adobe Commerce installation `composer.json`. This option does *not* remove sample data from the database.
 
 *  [Prepare to update sample data](#prepare-to-update-sample-data) (for example, before updating the Magento application).
 
@@ -45,7 +45,7 @@ The complete list of sample data modules follows:
 
 ## Prepare to update sample data
 
-This command enables you to update sample data before you update Adobe Commerce or Magento Open Source.
+This command enables you to update sample data before you update Adobe Commerce.
 
 To prepare sample data for updating, enter the following command:
 

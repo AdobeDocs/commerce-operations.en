@@ -1,6 +1,6 @@
 ---
 title: Install an extension
-description: Follow these steps to install an Adobe Commerce or Magento Open Source extension.
+description: Follow these steps to install an Adobe Commerce extension.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
 ---
 # Install an extension

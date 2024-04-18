@@ -65,7 +65,7 @@ Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level i
    >[!NOTE]
    >
    >-  If you upgraded from an earlier Apache version, first look for `<Directory "/var/www/html">` or `<Directory "/var/www">` in `000-default.conf`.
-   >-  You must change the value of `AllowOverride` in the directive for the directory to which you expect to install the Adobe Commerce or Magento Open Source software. For example, to install in the web server docroot, edit the directive in `<Directory /var/www>`.
+   >-  You must change the value of `AllowOverride` in the directive for the directory to which you expect to install the Adobe Commerce software. For example, to install in the web server docroot, edit the directive in `<Directory /var/www>`.
 
 >[!NOTE]
 >

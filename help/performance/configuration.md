@@ -1,6 +1,6 @@
 ---
 title: Configuration Best Practices
-description: Optimize the response time of your Adobe Commerce or Magento Open Source deployment using these best practices.
+description: Optimize the response time of your Adobe Commerce deployment using these best practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
 ---
@@ -26,11 +26,11 @@ When you launch your store in production, activate all the caches from the **[!U
 
 ## Asynchronous email notifications
 
-Enabling the "Asynchronous email notifications" setting moves processes that handle checkout and order processing email notifications to the background. To enable this feature, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] > [!UICONTROL Asynchronous Sending]**. See [Sales Emails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in the _Magento Open Source User Guide_ for more information.
+Enabling the "Asynchronous email notifications" setting moves processes that handle checkout and order processing email notifications to the background. To enable this feature, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] > [!UICONTROL Asynchronous Sending]**. See [Sales Emails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in the _Admin User Guide_ for more information.
 
 ## Asynchronous order data processing
 
-There can be times when intensive sales on a storefront occur at the same time that [!DNL Commerce] is performing intensive order processing. You can configure [!DNL Commerce] to distinguish these two traffic patterns on the database level to avoid conflicts between read and write operations in the corresponding tables. You can store and index order data asynchronously. Orders are placed in temporary storage and moved in bulk to the Order Management grid without any collisions. You can activate this option from **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] > [!UICONTROL Asynchronous indexing]**. See [Scheduled Grid Updates](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in the _Magento Open Source User Guide_ for more information.
+There can be times when intensive sales on a storefront occur at the same time that [!DNL Commerce] is performing intensive order processing. You can configure [!DNL Commerce] to distinguish these two traffic patterns on the database level to avoid conflicts between read and write operations in the corresponding tables. You can store and index order data asynchronously. Orders are placed in temporary storage and moved in bulk to the Order Management grid without any collisions. You can activate this option from **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] > [!UICONTROL Asynchronous indexing]**. See [Scheduled Grid Updates](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in the _Admin User Guide_ for more information.
 
 >[!WARNING]
 >
