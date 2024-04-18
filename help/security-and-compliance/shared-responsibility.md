@@ -506,33 +506,282 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ## Operations Responsibility chart
 
-<table>
-<thead>
-  <tr>
-    <th>Task</th>
-    <th>Adobe</th>
-    <th>Merchant</th>
-    <th>Cloud service provider</th>
-    <th>CDN provider</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Applying Adobe Commerce on cloud infrastructure patches</td>
-    <td>C</td>
-    <td>R</td>
-    <td></td>
-    <td></td>
-  </tr>
-</tbody>
-<tfoot>
-  <tr>
-    <td colspan="5">
-      <p><sup><strong>1</strong></sup> Only if the Adobe Commerce on cloud infrastructure repository is used as the main repository. Use of other external repositories is the sole responsibility of the merchant.</p>
-      <p><sup><strong>2</strong></sup> Adobe provides Level 1 support for issues with CDN providers.</p>
-      <p><sup><strong>3</strong></sup> Some Ngnix controls are configured by the merchant for their applications and are their responsibility.</p>
-      <p><sup><strong>4</strong></sup> For PCI, penetration testing requirements are shared between Adobe and the merchant.</p>
-    </td>
-  </tr>
-</tfoot>
-</table>
+#### Performance
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Core Application tuning and optimization | X   |     |
+| Custom code tuning and optimization |     | X   |
+| Custom Adobe Commerce code |     | X   |
+| Load Testing |     | X   |
+| Performance testing |     | X   |
+
+#### Debugging and Issue Isolation
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Debugging and Issue isolation | X   | X   |
+| Timely support of debugging and issue isolation process |     | X   |
+
+#### Website(s) Availability
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Customized Adobe Commerce Application and Website(s) |     | X   |
+
+#### Third Party Services
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability and Quality of Third Party Services |     | X   |
+
+#### Patching
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Installing updates and patches to ECE-Tools |     | X   |
+| Installing updates and patches to Adobe Commerce core |     | X   |
+
+#### Customizations
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Custom Adobe Commerce modules and code |     | X   |
+| Extensions |     | X   |
+| Custom Integrations |     | X   |
+
+#### Core Adobe Commerce Code
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Publishing updates and patches to Adobe Commerce core | X   |     |
+| Publishing updates and patches to ECE-Tools | X   |     |
+| Fastly Extension Quality | X   |     |
+| Fastly Integration VCL Snippets (bundled with the Fastly Extension) Quality | X   |     |
+| Core Adobe Commerce Application Quality | X   |     |
+
+#### Configuration
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Application configuration |     | X   |
+| Adding domains to Adobe Commerce application (Base URLs) |     | X   |
+| Configuring PaaS to use Services versions compatible with the Adobe Commerce version used<br><br>(eg: different Commerce versions are compatible with specific versions of PHP, Redis, etc) |     | X   |
+
+#### CDN
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability and Quality of CDN | X   |     |
+| Fastly service configuration (via Extension / API) |     | X   |
+| Page Cache optimization |     | X   |
+| Adding domains to services to CDN & infrastructure | X   |     |
+| Custom VCL Snippets |     | X   |
+| WAF & WAF Rules | X   |     |
+
+#### DDOS
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Proactive IP Blocking |     | X   |
+| Bot Protection |     | X   |
+| DDOS detection - layer 3-4 | X   |     |
+| DDOS detection - layer 7 |     | X   |
+| DDOS response | X   |     |
+| Configuration of Fastly Extension Rate Limiting/Bot Protection (Limited) |     | X   |
+
+#### App Server
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Nginx | X   |     |
+| Configuration of Nginx | X   |     |
+| Ongoing quality and patching of Nginx | X   |     |
+
+#### Code Repository
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of repo.magento.com | X   |     |
+| Availability of Adobe Commerce cloud Git server | X   |     |
+| Other customer-selected Code repository (GitHub, Bitbucket, hosted Git server) |     | X   |
+
+#### Private link 
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Configuring and maintaining PrivateLink connections (if used) with Adobe-owned VPC(s) | X   |     |
+| Configuring and maintaining PrivateLink connections (if used) with Customer-owned VPC(s) |     | X   |
+| Availability of SSH (Non Private Link) | X   |     |
+| Configuration of PrivateLink Inbound to Magento Cloud Service Endpoint | X   |     |
+| Acceptance of PrivateLink Inbound to Adobe Commerce Cloud Service Endpoint |     | X   |
+| Configuration of PrivateLink Inbound to Customer’s VPC Service Endpoint |     | X   |
+| Acceptance of PrivateLink Inbound to Customer’s VPC Service Endpoint | X   |     |
+| Configuration of PrivateLink integrations (end point to account) |     | X   |
+| Configuration of customer-owned VPC for PrivateLink endpoint (inc. any VPN connections) |     | X   |
+
+#### Cron
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of default Crons | X   |     |
+| Ongoing quality of custom Crons |     | X   |
+
+#### Mysql
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Galera and MariaDB | X   |     |
+| Ongoing maintenance of default database settings (indexing and optimizing core tables, optimizing default sys-admin settings) | X   |     |
+| Ongoing maintenance of customer data and modified settings (configuring normalized vs flat tables, indexing and optimizing custom and 3rd party tables , archiving or removing data, configuring Sys admin settings) |     | X   |
+| Configuration of Galera and MySQL | X   |     |
+| Ongoing quality and patching of Galera and MariaDB | X   |     |
+| Ongoing infrastructure optimization | X   |     |
+| Identifying and fixing slow queries |     | X   |
+| Submit service request to install MariaDB versions compatible with installed Adobe Commerce version |     | X   |
+| Setting and maintaining customer-specific data retention policies (Adobe’s data retention policies are defined in the customer agreement) |     | X   |
+
+#### CLI
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Ongoing quality and updating of ECE Tools | X   |     |
+| Installing latest ECE Tools version |     | X   |
+
+#### Email 
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of SendGrid and its integration | X   |     |
+| Monitor customer’s SendGrid usage against limits | X   |     |
+| Configuring optional 3rd party email services |     | X   |
+
+#### Logs
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Rotating Logs | X   |     |
+
+#### Operating System
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Operating System | X   |     |
+| Ongoing quality and patching of Operating System | X   |     |
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of PhP | X   |     |
+| Configuration of default PhP settings | X   |     |
+| Configuration of custom PhP settings |     | X   |
+| Configuration of YAML file to align PhP versions compatible with installed Adobe Commerce version |     | X   |
+
+#### RabbitMQ
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of RabbitMQ | X   |     |
+| Configuration of default RabbitMQ settings | X   |     |
+| Ongoing quality and patching of RabbitMQ | X   |     |
+| Submit service request to install RabbitMQ versions compatible with installed Adobe Commerce versio | n   | X   |
+
+#### Redis
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Redis | X   |     |
+| Configuration of default Redis settings | X   |     |
+| Ongoing quality and patching of Redis | X   |     |
+| Submit service request to install Redis versions compatible with installed Adobe Commerce version |     | X   |
+
+#### Elasticsearch
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of ElasticSearch | X   |     |
+| Configuration of default ElasticSearch settings | X   |     |
+| Submit service request to install ElasticSearch versions compatible with installed Adobe Commerce ver | sion | X   |
+
+#### Deployments
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Infrastructure to build and deploy code | X   |     |
+| Ongoing quality of Infrastructure build-and-deploy configuration pipeline | X   |     |
+| Configuration of Build and Static Content Deployment |     | X   |
+| Building and executing deployment governance process: criteria and change management |     | X   |
+| Deploying to Staging environment |     | X   |
+| Deploying to Production environment |     | X   |
+| Production rollbacks |     | X   |
+
+#### Product Recommendations
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of the Advanced Reporting service | X   |     |
+| Configuration of Advanced Reporting, in accordance with Advanced Reporting Terms & Conditions |     | X   |
+
+#### Amazon Sales Channels
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Amazon Sales Channel services | X   |     |
+
+#### MBI
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Adobe Commerce Business Intelligence services | X   |     |
+| MBI Data Synchronization processes | X   |     |
+| Detecting MBI synchronization issues | X   |     |
+| Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On-Prem, or non-Adobe Commerce (API, Data quality/formatting, customer network, DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | X   |
+| Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro (Adobe Commerce Cloud DB configuration) | X   |     |
+
+#### New Relic
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of New Relic APM application & agent integration, Infrastructure application, Logging application & integration | X   |     |
+| Setting up New Relic Alerts |     | X   |
+| Deploying NR agent on Paas Servers |     | X   |
+
+#### Product Recommendations
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Product Recommendations service | X   |     |
+
+#### Synchronizing Environments
+
+Customers are responsible for synchronizing data between production and staging environments.
+
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of Snapshot and Backup process | X   |     |
+| Scheduling backups for Cloud Pro Staging & Production environments | X   |     |
+| Scheduling backups for all Cloud Starter environments, and Pro Integration environment |     | X   |
+| Availability of HA / Failover | X   |     |
+
+#### Cloud Servers & Scaling
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability of CPU resources, data center, disk space | X   |     |
+| Availability and execution of surge capacity or emergency upsizing | X   |     |
+| Requesting surge capacity |     | X   |
+| Monitoring vCPU usage against limits | X   |     |
+
+#### Synchronizing Environments
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Synchronizing data between Staging and Production environments |     | X   |
+
+#### Cloud Docker
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Making Cloud Docker containers available for download | X   |     |
+| Deployment and setup of Cloud Docker (optional) |     | X   |
+| Any other local development setup |     | X   |
