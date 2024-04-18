@@ -506,7 +506,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ## Operations Responsibility chart
 
-#### Performance
+### Performance
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -516,33 +516,33 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Load Testing |     | X   |
 | Performance testing |     | X   |
 
-#### Debugging and Issue Isolation
+### Debugging and Issue Isolation
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Debugging and Issue isolation | X   | X   |
 | Timely support of debugging and issue isolation process |     | X   |
 
-#### Website(s) Availability
+### Website(s) Availability
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Customized Adobe Commerce Application and Website(s) |     | X   |
 
-#### Third Party Services
+### Third Party Services
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Availability and Quality of Third Party Services |     | X   |
 
-#### Patching
+### Patching
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Installing updates and patches to ECE-Tools |     | X   |
 | Installing updates and patches to Adobe Commerce core |     | X   |
 
-#### Customizations
+### Customizations
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -550,7 +550,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Extensions |     | X   |
 | Custom Integrations |     | X   |
 
-#### Core Adobe Commerce Code
+### Core Adobe Commerce Code
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -560,7 +560,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Fastly Integration VCL Snippets (bundled with the Fastly Extension) Quality | X   |     |
 | Core Adobe Commerce Application Quality | X   |     |
 
-#### Configuration
+### Configuration
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -568,7 +568,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Adding domains to Adobe Commerce application (Base URLs) |     | X   |
 | Configuring PaaS to use Services versions compatible with the Adobe Commerce version used<br><br>(eg: different Commerce versions are compatible with specific versions of PHP, Redis, etc) |     | X   |
 
-#### CDN
+### CDN
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -579,7 +579,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Custom VCL Snippets |     | X   |
 | WAF & WAF Rules | X   |     |
 
-#### DDOS
+### DDOS
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -590,7 +590,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | DDOS response | X   |     |
 | Configuration of Fastly Extension Rate Limiting/Bot Protection (Limited) |     | X   |
 
-#### App Server
+### App Server
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -598,7 +598,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Configuration of Nginx | X   |     |
 | Ongoing quality and patching of Nginx | X   |     |
 
-#### Code Repository
+### Code Repository
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -606,7 +606,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Availability of Adobe Commerce cloud Git server | X   |     |
 | Other customer-selected Code repository (GitHub, Bitbucket, hosted Git server) |     | X   |
 
-#### Private link 
+### Private link 
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -620,14 +620,14 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Configuration of PrivateLink integrations (end point to account) |     | X   |
 | Configuration of customer-owned VPC for PrivateLink endpoint (inc. any VPN connections) |     | X   |
 
-#### Cron
+### Cron
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Availability of default Crons | X   |     |
 | Ongoing quality of custom Crons |     | X   |
 
-#### Mysql
+### Mysql
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -641,14 +641,14 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Submit service request to install MariaDB versions compatible with installed Adobe Commerce version |     | X   |
 | Setting and maintaining customer-specific data retention policies (Adobe’s data retention policies are defined in the customer agreement) |     | X   |
 
-#### CLI
+### CLI
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Ongoing quality and updating of ECE Tools | X   |     |
 | Installing latest ECE Tools version |     | X   |
 
-#### Email 
+### Email 
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -656,13 +656,13 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Monitor customer’s SendGrid usage against limits | X   |     |
 | Configuring optional 3rd party email services |     | X   |
 
-#### Logs
+### Logs
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Rotating Logs | X   |     |
 
-#### Operating System
+### Operating System
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -676,7 +676,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Configuration of custom PhP settings |     | X   |
 | Configuration of YAML file to align PhP versions compatible with installed Adobe Commerce version |     | X   |
 
-#### RabbitMQ
+### RabbitMQ
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -685,7 +685,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Ongoing quality and patching of RabbitMQ | X   |     |
 | Submit service request to install RabbitMQ versions compatible with installed Adobe Commerce versio | n   | X   |
 
-#### Redis
+### Redis
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -694,7 +694,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Ongoing quality and patching of Redis | X   |     |
 | Submit service request to install Redis versions compatible with installed Adobe Commerce version |     | X   |
 
-#### Elasticsearch
+### Elasticsearch
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -702,7 +702,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Configuration of default ElasticSearch settings | X   |     |
 | Submit service request to install ElasticSearch versions compatible with installed Adobe Commerce ver | sion | X   |
 
-#### Deployments
+### Deployments
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -714,20 +714,20 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Deploying to Production environment |     | X   |
 | Production rollbacks |     | X   |
 
-#### Product Recommendations
+### Product Recommendations
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Availability of the Advanced Reporting service | X   |     |
 | Configuration of Advanced Reporting, in accordance with Advanced Reporting Terms & Conditions |     | X   |
 
-#### Amazon Sales Channels
+### Amazon Sales Channels
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Availability of Amazon Sales Channel services | X   |     |
 
-#### MBI
+### Commerce Intelligence
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -737,7 +737,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On-Prem, or non-Adobe Commerce (API, Data quality/formatting, customer network, DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | X   |
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro (Adobe Commerce Cloud DB configuration) | X   |     |
 
-#### New Relic
+### New Relic
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -745,13 +745,13 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Setting up New Relic Alerts |     | X   |
 | Deploying NR agent on Paas Servers |     | X   |
 
-#### Product Recommendations
+### Product Recommendations
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Availability of Product Recommendations service | X   |     |
 
-#### Synchronizing Environments
+### Synchronizing Environments
 
 Customers are responsible for synchronizing data between production and staging environments.
 
@@ -763,7 +763,7 @@ Customers are responsible for synchronizing data between production and staging 
 | Scheduling backups for all Cloud Starter environments, and Pro Integration environment |     | X   |
 | Availability of HA / Failover | X   |     |
 
-#### Cloud Servers & Scaling
+### Cloud Servers & Scaling
 
 |     | Adobe | Customer |
 | --- | --- | --- |
@@ -772,13 +772,13 @@ Customers are responsible for synchronizing data between production and staging 
 | Requesting surge capacity |     | X   |
 | Monitoring vCPU usage against limits | X   |     |
 
-#### Synchronizing Environments
+### Synchronizing Environments
 
 |     | Adobe | Customer |
 | --- | --- | --- |
 | Synchronizing data between Staging and Production environments |     | X   |
 
-#### Cloud Docker
+### Cloud Docker
 
 |     | Adobe | Customer |
 | --- | --- | --- |
