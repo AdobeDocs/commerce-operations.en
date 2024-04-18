@@ -1,6 +1,6 @@
 ---
 title: On-premises installation security
-description: Learn about ways to improve the security posture of your Adobe Commerce or Magento Open Source on-premises installation.
+description: Learn about ways to improve the security posture of your Adobe Commerce on-premises installation.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
 ---

@@ -1,6 +1,6 @@
 ---
 title: Security and compliance
-description: Learn about security, privacy, and industry compliance resources for your Adobe Commerce or Magento Open Source project.
+description: Learn about security, privacy, and industry compliance resources for your Adobe Commerce project.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
 ---
 # Security and compliance

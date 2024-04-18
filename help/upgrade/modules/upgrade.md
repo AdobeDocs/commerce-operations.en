@@ -9,7 +9,7 @@ To update or upgrade a module or extension:
 
 1. Download the updated file from Marketplace or another extension developer. Take note of the module name and version.
 
-1. Export the contents to your Adobe Commerce or Magento Open Source root installation directory.
+1. Export the contents to your Adobe Commerce root installation directory.
 
 1. If a Composer package exists for the module, run one of the following.
 

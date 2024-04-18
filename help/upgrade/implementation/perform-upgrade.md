@@ -6,7 +6,7 @@ exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
 
 # Perform an upgrade
 
-You can upgrade _on-premises_ deployments of the Adobe Commerce or Magento Open Source application from the command line if you installed the software by:
+You can upgrade _on-premises_ deployments of the Adobe Commerce application from the command line if you installed the software by:
 
 - Downloading the Composer metapackage using the `composer create-project` command.
 - Installing the compressed archive.
@@ -105,7 +105,7 @@ You must complete the [upgrade prerequisites](../prepare/prerequisites.md) to pr
 
     - `<product>` —(Required) The package to upgrade. For on-premises installations, this value must be either `product-community-edition` or `product-enterprise-edition`.
 
-    - `<version>` —(Required) The version of Adobe Commerce or Magento Open Source that you are upgrading to. For example, `2.4.3`.
+    - `<version>` —(Required) The version of Adobe Commerce that you are upgrading to. For example, `2.4.3`.
 
     - `--no-update` —(Required) Disables the automatic update of the dependencies.
 

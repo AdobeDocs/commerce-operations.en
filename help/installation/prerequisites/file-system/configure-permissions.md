@@ -5,7 +5,7 @@ exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
 ---
 # Configure file ownership and permissions
 
-This topic discusses how to set read-write permissions for the web server group before you install Adobe Commerce or Magento Open Source. This is necessary so the command line can write files to the file system.
+This topic discusses how to set read-write permissions for the web server group before you install Adobe Commerce. This is necessary so the command line can write files to the file system.
 
 The procedure you use is different, depending on whether you use [shared hosting](#set-permissions-for-one-user-on-shared-hosting) and have one user or if you use a [private server](#set-ownership-and-permissions-for-two-users) and have two users.
 

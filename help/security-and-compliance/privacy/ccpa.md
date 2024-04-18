@@ -40,7 +40,7 @@ Developing and implementing a CCPA compliance plan requires a coordinated effort
 
 ## Personal information reference
 
-For technical information, see the dataflow diagrams and database entity mappings in the Personal Information Reference that applies to each version of Adobe Commerce or Magento Open Source that you support.
+For technical information, see the dataflow diagrams and database entity mappings in the Personal Information Reference that applies to each version of Adobe Commerce that you support.
 
 -  [Customer personal information reference (version 2.x)](data-m2.md)
 -  [Customer personal information reference (version) 1.x)](data-m1.md)

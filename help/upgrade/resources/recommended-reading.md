@@ -55,7 +55,7 @@ Continue learning about Adobe Commerce upgrades by using the resources on this p
     </tr>
     <tr>
       <td><strong>Upgrade Resources</strong>
-        <p>Keep your storefront secure and operating efficiently. Prepare for your Adobe Commerce or Magento Open Source upgrade by reviewing Adobe's extensive technical documentation.</p>
+        <p>Keep your storefront secure and operating efficiently. Prepare for your Adobe Commerce upgrade by reviewing Adobe's extensive technical documentation.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Recommended upgrade paths</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Technical Upgrade Workshop recording</a></li>

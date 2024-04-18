@@ -18,7 +18,6 @@ For a more responsive Commerce site, optimize CSS and JavaScript (JS) resource f
 
 - Adobe Commerce on cloud infrastructure
 - Adobe Commerce on-premises
-- Magento Open Source
 
 ## Merge or minify CSS files
 

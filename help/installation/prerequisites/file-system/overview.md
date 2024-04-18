@@ -5,7 +5,7 @@ exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 ---
 # File ownership and permissions
 
-It is important to secure your Adobe Commerce or Magento Open Source installation in a development environment to help prevent issues related to unauthorized people or processes accessing—and potentially harming—your system. Use the following file system ownership and permissions guidelines to protect your installation.
+It is important to secure your Adobe Commerce installation in a development environment to help prevent issues related to unauthorized people or processes accessing—and potentially harming—your system. Use the following file system ownership and permissions guidelines to protect your installation.
 
 ## File system owner
 
@@ -59,4 +59,4 @@ We further discuss permissions recommendations in [File systems access permissio
 
 >[!TIP]
 >
->Before you install Adobe Commerce or Magento Open Source, review [Configure file ownership and permissions](configure-permissions.md).
+>Before you install Adobe Commerce, review [Configure file ownership and permissions](configure-permissions.md).

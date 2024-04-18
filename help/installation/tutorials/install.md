@@ -1,6 +1,6 @@
 ---
 title: Install Adobe Commerce
-description: Follow these steps to install Adobe Commerce or Magento Open Source on infrastructure that you own.
+description: Follow these steps to install Adobe Commerce on infrastructure that you own.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 ---
 # Install Adobe Commerce
@@ -91,7 +91,7 @@ In Adobe Commerce version 2.2.8 and later, you can create the admin user during 
 |`--db-name`|Name of the database instance in which you want to install the database tables.<br><br>Default is `magento2`.|Yes|
 |`--db-user`|Username of the database instance owner.<br><br>Default is `root`.|Yes|
 |`--db-password`|Database instance owner's password.|Yes|
-|`--db-prefix`|Use only if you're installing the database tables in a database instance that has Adobe Commerce or Magento Open Source tables in it already.<br><br>In that case, use a prefix to identify the tables for this installation. Some customers have more than one Adobe Commerce instance running on a server with all tables in the same database.<br><br>The prefix can be a maximum of five characters in length. It must begin with a letter and can include only letters, numbers, and underscore characters.<br><br>This option enables those customers to share the database server with more than one installation.|No|
+|`--db-prefix`|Use only if you're installing the database tables in a database instance that has Adobe Commerce tables in it already.<br><br>In that case, use a prefix to identify the tables for this installation. Some customers have more than one Adobe Commerce instance running on a server with all tables in the same database.<br><br>The prefix can be a maximum of five characters in length. It must begin with a letter and can include only letters, numbers, and underscore characters.<br><br>This option enables those customers to share the database server with more than one installation.|No|
 |`--db-ssl-key`|Path to the client key.|No|
 |`--db-ssl-cert`|Path to the client certificate.|No|
 |`--db-ssl-ca`|Path to the server certificate.|No|

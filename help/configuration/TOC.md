@@ -1,6 +1,6 @@
 ---
 user-guide-title: Configuration Guide
-user-guide-description: Configure your Adobe Commerce or Magento Open Source application features and services.
+user-guide-description: Configure your Adobe Commerce application features and services.
 feature: Configuration
 ---
 

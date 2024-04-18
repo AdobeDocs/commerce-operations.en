@@ -1,6 +1,6 @@
 ---
 title: Understand Upgrade Scope
-description: Learn about backward incompatible changes in a release that might impact Adobe Commerce or Magento Open Source custom modules or third-party extensions.
+description: Learn about backward incompatible changes in a release that might impact Adobe Commerce custom modules or third-party extensions.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
 ---
 # Understand the scope of upgrading
