@@ -97,7 +97,7 @@ Adobe Commerce disabled the regular validation behavior by setting SET SQL_MODE=
 
 To properly update MySQL from version 5.7 to version 8, you must follow these steps in order:
 
-1. Upgrade Adobe Commerce or Magento Open Source to 2.4.0.
+1. Upgrade Adobe Commerce to 2.4.0.
    Test everything and make sure that your system works as expected.
 1. Enable maintenance mode:
 
@@ -127,7 +127,7 @@ To properly update MySQL from version 5.7 to version 8, you must follow these st
 
 ## Configuring the database instance
 
-This section discusses how to create a database instance for Adobe Commerce or Magento Open Source. Although a new database instance is recommended, you can optionally install Adobe Commerce or Magento Open Source with an existing database instance.
+This section discusses how to create a database instance for Adobe Commerce. Although a new database instance is recommended, you can optionally install Adobe Commerce with an existing database instance.
 
 To configure a MySQL database instance:
 
@@ -173,7 +173,7 @@ To configure a MySQL database instance:
 
    *  Indexers require higher `tmp_table_size` and `max_heap_table_size` values (for example, 64 M). If you configure the `batch_size` parameter, you can adjust that value along with the table size settings to improve indexer performance. Refer to the [Optimization Guide](../../../performance/configuration.md) for more information.
 
-   *  For optimal performance, make sure all MySQL and Adobe Commerce or Magento Open Source index tables can be kept in memory (for example, configure `innodb_buffer_pool_size`).
+   *  For optimal performance, make sure all MySQL and Adobe Commerce index tables can be kept in memory (for example, configure `innodb_buffer_pool_size`).
 
    *  Reindexing on MariaDB 10.4 takes more time compared to other MariaDB or MySQL versions. See [Configuration best practices](../../../performance/configuration.md#indexers).
 

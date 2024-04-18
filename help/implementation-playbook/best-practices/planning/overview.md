@@ -45,7 +45,7 @@ The following sections include best practice information for the planning phase.
   </tr>
   <tr>
     <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Full-page caching</a></td>
-    <td>Learn how to work with public data when implementing caching in your Adobe Commerce or Magento Open Source extension.</td>
+    <td>Learn how to work with public data when implementing caching in your Adobe Commerce extension.</td>
   </tr>
   <tr>
     <td><a href="opcache-memory-size.md">OPcache memory size</a></td>

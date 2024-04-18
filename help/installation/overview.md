@@ -19,7 +19,7 @@ The general installation flow is as follows:
 
 1. Get [authentication keys](prerequisites/authentication-keys.md) to the Commerce Composer repository.
 
-1. Get the Adobe Commerce or Magento Open Source software.
+1. Get the Adobe Commerce software.
 
    *  (Recommended) Get the [Composer metapackage](composer.md) to manage modules and their dependencies.
 

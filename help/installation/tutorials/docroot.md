@@ -1,6 +1,6 @@
 ---
 title: Modify docroot to improve security
-description: Prevent unauthorized browser-based access to Adobe Commerce or Magento Open Source on-premises file system.
+description: Prevent unauthorized browser-based access to the Adobe Commerce on-premises file system.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
 ---
@@ -50,7 +50,7 @@ To complete this tutorial, you need access to a working installation running on 
 -  MySQL (5.7+)
 -  PHP (7.4)
 -  Elasticsearch (7.x) or OpenSearch (1.2)
--  Adobe Commerce or Magento Open Source (2.4+)
+-  Adobe Commerce (2.4+)
 
 >[!NOTE]
 >

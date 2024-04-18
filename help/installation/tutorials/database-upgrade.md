@@ -1,6 +1,6 @@
 ---
 title: Upgrade the database schema and data
-description: Follow these steps to upgrade your Adobe Commerce or Magento Open Source database schema.
+description: Follow these steps to upgrade your Adobe Commerce database schema.
 exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
 ---
 # Upgrade the database schema and data

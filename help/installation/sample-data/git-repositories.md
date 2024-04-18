@@ -145,7 +145,7 @@ To clone the sample data GitHub repository using the HTTPS protocol:
 
 >[!WARNING]
 >
->If you're installing sample data *after* installing Adobe Commerce or Magento Open Source, you must also run the following command to update the database and schema:
+>If you're installing sample data *after* installing Adobe Commerce, you must also run the following command to update the database and schema:
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade

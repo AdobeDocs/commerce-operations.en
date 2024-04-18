@@ -27,7 +27,7 @@ Let's dive deeper into the roles and functions of each aspect of the infrastruct
 
 1. The second Elastic Load Balancing application load balancer distributes traffic from Varnish Cache across the AWS Auto Scaling group of Adobe Commerce instances in multiple Availability Zones.
 
-1. Install the latest version of Magento Open Source or Adobe Commerce on Amazon EC2 instances. Installation consists of the Adobe Commerce application, Nginx webserver, and PHP. Build the Amazon Machine Image (AMI) to launch new instances in an Auto Scaling group.
+1. Install the latest version of Adobe Commerce on Amazon EC2 instances. Installation consists of the Adobe Commerce application, Nginx webserver, and PHP. Build the Amazon Machine Image (AMI) to launch new instances in an Auto Scaling group.
 
 1. Amazon Elasticsearch Service is a managed Elasticsearch service for Adobe Commerce catalog search.
 
@@ -49,6 +49,6 @@ The value proposition for migrating Adobe Commerce to AWS is further enhanced by
 
 Adobe Commerce setup to AWS can replace specific application dependencies with fully managed alternatives available in the cloud. For example, rather than directly hosting a relational database on EC2 instances, the database for many applications can be easily replaced by Amazon Relational Database Service (AmazonRDS). The benefit to this strategy is that the operating responsibility of undifferentiated components can be offloaded to AWS without requiring significant changes to the core application.
 
-There are several deployment options available for running Adobe Commerce (both Magento Open Source and Adobe Commerce versions) on AWS. The most appropriate choice depends on your requirements for cost, scale, availability, and flexibility, as well as the AWS and Adobe Commerce skills of your organization.
+There are several deployment options available for running Adobe Commerce on AWS. The most appropriate choice depends on your requirements for cost, scale, availability, and flexibility, as well as the AWS and Adobe Commerce skills of your organization.
 
 {{$include /help/_includes/hosting-related-links.md}}

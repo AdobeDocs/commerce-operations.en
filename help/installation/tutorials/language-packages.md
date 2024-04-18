@@ -1,6 +1,6 @@
 ---
 title: Uninstall language packages
-description: Follow these steps to uninstall an Adobe Commerce or Magento Open Source language package.
+description: Follow these steps to uninstall an Adobe Commerce language package.
 exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
 ---
 # Uninstall language packages

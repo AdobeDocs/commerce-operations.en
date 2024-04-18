@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Follow these best practices to optimize the performance of your Adobe Commerce or Magento Open Source deployment.
+description: Follow these best practices to optimize the performance of your Adobe Commerce deployment.
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
 ---
 # Performance best practices
@@ -9,5 +9,5 @@ The _Performance Best Practices_ guide provides recommendations and instructions
 
 ## Assumptions
 
-*  You installed Adobe Commerce or Magento Open Source using [Composer](../installation/composer.md).
-*  You use this installation to run a live production instance of Adobe Commerce or Magento Open Source.
+*  You installed Adobe Commerce using [Composer](../installation/composer.md).
+*  You use this installation to run a live production instance of Adobe Commerce.

@@ -21,7 +21,7 @@ This library provides a set of functions for creating privacy data requests and 
 
 The Privacy JavaScript Library is available at the following CDN location: `commerce.adobe.net/magentoprivacy.js`
 
-After you have the file, you will need to add it to a custom module or theme installed in your Adobe Commerce or Magento Open Source instance. Follow the instructions described in the [Use custom JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) topic to accomplish this task.
+After you have the file, you will need to add it to a custom module or theme installed in your Adobe Commerce instance. Follow the instructions described in the [Use custom JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) topic to accomplish this task.
 
 ### Initialization
 

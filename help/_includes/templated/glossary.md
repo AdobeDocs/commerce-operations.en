@@ -121,7 +121,7 @@ _Term attributes:_
 _noun_
 
 A characteristic or property of a product that describes some aspect of the product.
-Adobe Commerce or Magento Open Source users can create custom attributes to add to the default attribute set or a custom attribute set.
+Adobe Commerce users can create custom attributes to add to the default attribute set or a custom attribute set.
 Create these attributes through the Admin or programmatically.
 Examples: color, size, weight, price, age, gender, and so on.
 
@@ -1431,7 +1431,7 @@ _Term attributes:_
 _noun_
 
 Vendor-produced code that extends or customizes Commerce behavior and operates as a third-party extension is considered a Vendor Bundled Extension (VBE).
-VBEs are thoroughly tested and included with each supported version of Magento Open Source and Adobe Commerce.
+VBEs are thoroughly tested and included with each supported version of Adobe Commerce.
 A VBE can include modules, themes, and language packs.
 
 Learn more in the [Vendor Bundled Extension topic](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
