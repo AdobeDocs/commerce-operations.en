@@ -721,12 +721,6 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Availability of the Advanced Reporting service | X   |     |
 | Configuration of Advanced Reporting complies with Advanced Reporting Terms & Conditions |     | X  |
 
-### Amazon Sales Channels
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of Amazon Sales Channel services | X   |     |
-
 ### Commerce Intelligence
 
 |     | Adobe | Merchant |
@@ -737,7 +731,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On-Prem, or non-Adobe Commerce<br>(API, Data quality and formatting, merchant network,<br>DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | X   |
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud database  configuration) | X   |     |
 
-###  Monitoring
+### Monitoring
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
