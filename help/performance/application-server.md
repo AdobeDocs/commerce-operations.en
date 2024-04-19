@@ -40,7 +40,11 @@ The `ApplicationServer` module (`Magento/ApplicationServer/`) enables GraphQL Ap
 
 ### Enable Pro projects
 
-Complete the following steps before deploying GraphQL Application Server on Pro projects:
+>[!NOTE]
+>
+>The Application Server is an opt-in feature on Cloud Pro instances. To enable it, please submit a request through our support system.
+
+Once you got the feature enabled on Pro project, complete the following steps before deploying GraphQL Application Server:
 
 1. Deploy Adobe Commerce on cloud infrastructure using the cloud template from the [2.4.7-appserver branch](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Ensure that all your Commerce customizations and extensions are [compatible](https://developer.adobe.com/commerce/php/development/components/app-server/) with GraphQL Application Server.
