@@ -508,7 +508,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Performance
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Core Application tuning and optimization | X   |     |
 | Custom code tuning and optimization |     | X   |
@@ -518,33 +518,33 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Debugging and Issue Isolation
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Debugging and Issue isolation | X   | X   |
 | Timely support of debugging and issue isolation process |     | X   |
 
 ### Website(s) Availability
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Customized Adobe Commerce application and website(s) |     | X   |
 
 ### Third Party Services
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability and quality of third party services |     | X   |
 
 ### Patching
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Installing updates and patches to ECE-Tools |     | X  |
 | Installing updates and patches to Adobe Commerce core |     | X   |
 
 ### Customizations
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Custom Adobe Commerce modules and code |     | X   |
 | Extensions |     | X   |
@@ -552,7 +552,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Core Adobe Commerce Code
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Publishing updates and patches to Adobe Commerce core | X   |     |
 | Publishing updates and patches to ECE-Tools | X   |     |
@@ -562,7 +562,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Application and Service Configuration
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Application configuration |     | X   |
 | Adding domains to Adobe Commerce application (Base URLs) |     | X   |
@@ -570,7 +570,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### CDN Service
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability and Quality of CDN | X   |     |
 | Fastly service configuration (via Extension / API) |     | X   |
@@ -581,7 +581,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### DDOS
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Proactive IP Blocking |     | X   |
 | Bot Protection |     | X   |
@@ -592,7 +592,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### App Server
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Nginx | X   |     |
 | Configuration of Nginx | X   |     |
@@ -600,76 +600,76 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Code Repository
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of repo.magento.com | X   |     |
 | Availability of Adobe Commerce cloud Git server | X   |     |
-| Other customer-selected Code repository (GitHub, Bitbucket, hosted Git server) |     | X   |
+| Other merchant-selected Code repository (GitHub, Bitbucket, hosted Git server) |     | X   |
 
 ### Private Link 
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Configuring and maintaining PrivateLink connections (if used) with Adobe-owned VPC(s) | X   |     |
-| Configuring and maintaining PrivateLink connections (if used) with Customer-owned VPC(s) |     | X   |
+| Configuring and maintaining PrivateLink connections (if used) with Merchant-owned VPC(s) |     | X   |
 | Availability of SSH (Non Private Link) | X   |     |
 | Configuration of PrivateLink Inbound to Adobe Commerce Cloud Service endpoint | X   |     |
 | Acceptance of PrivateLink Inbound to Adobe Commerce Cloud Service endpoint |     | X   |
-| Configuration of PrivateLink Inbound to Customer’s VPC Service endpoint |     | X   |
-| Acceptance of PrivateLink Inbound to Customer’s VPC Service endpoint | X   |     |
+| Configuration of PrivateLink Inbound to Merchant's VPC Service endpoint |     | X   |
+| Acceptance of PrivateLink Inbound to Merchant's VPC Service endpoint | X   |     |
 | Configuration of PrivateLink integrations (endpoint to account) |     | X   |
-| Configuration of customer-owned VPC for PrivateLink endpoint<br><br> (including any VPN connections) |     | X   |
+| Configuration of merchant-owned VPC for PrivateLink endpoint<br><br> (including any VPN connections) |     | X   |
 
 ### Cron Jobs
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of default cron jobs | X   |     |
 | Ongoing quality of custom cron jobs |     | X  |
 
 ### MySQL
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Galera and MariaDB services | X  |     |
 | Ongoing maintenance of default database settings<br><br>(indexing and optimizing core tables, optimizing default sys-admin settings) | X   |     |
-| Ongoing maintenance of customer data and modified settings<br><br>(configuring normalized vs flat tables, indexing and optimizing custom and third party tables, archiving or removing data, configuring Sys admin settings) |     | X   |
+| Ongoing maintenance of merchant data and modified settings<br><br>(configuring normalized vs flat tables, indexing and optimizing custom and third party tables, archiving or removing data, configuring Sys admin settings) |     | X   |
 | Configuration of Galera and MySQL | X   |     |
 | Ongoing quality and patching of Galera and MariaDB | X   |     |
 | Ongoing infrastructure optimization | X   |     |
 | Identifying and fixing slow queries |     | X   |
 | Submit service request to install MariaDB versions compatible with installed Adobe Commerce version |     | X   |
-| Setting and maintaining customer-specific data retention policies (Adobe’s data retention policies are defined in the customer agreement) |     | X   |
+| Setting and maintaining merchant-specific data retention policies (Adobe's data retention policies are defined in the merchant agreement) |     | X   |
 
 ### Commerce Cloud CLI
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Ongoing quality and updating of ECE Tools | X   |     |
 | Installing latest ECE Tools version |     | X   |
 
 ### Email Service
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of SendGrid email service and its integration | X  |     |
-| Monitor customer’s SendGrid usage against limits | X  |     |
+| Monitor merchant's SendGrid usage against limits | X  |     |
 | Configuring optional third party email services |     | X  |
 
 ### Logs
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Rotating Logs | X   |     |
 
 ### Operating System
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Operating System | X   |     |
 | Ongoing quality and patching of Operating System | X   |     |
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of PhP | X   |     |
 | Configuration of default PHP settings | X  |     |
@@ -678,7 +678,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Message Broker for Message Queue Framework
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of RabbitMQ service | X  |     |
 | Configuration of default RabbitMQ settings | X   |     |
@@ -687,7 +687,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Cache service
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Redis service | X  |     |
 | Configuration of default Redis settings | X   |     |
@@ -696,7 +696,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Search Service
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of ElasticSearch | X   |     |
 | Configuration of default ElasticSearch settings | X   |     |
@@ -704,7 +704,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Deployments
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of infrastructure to build and deploy code | X  |     |
 | Ongoing quality of infrastructure build-and-deploy configuration pipeline | X  |     |
@@ -716,30 +716,30 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Product Recommendations
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of the Advanced Reporting service | X   |     |
 | Configuration of Advanced Reporting complies with Advanced Reporting Terms & Conditions |     | X  |
 
 ### Amazon Sales Channels
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Amazon Sales Channel services | X   |     |
 
 ### Commerce Intelligence
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Adobe Commerce Business Intelligence services | X   |     |
 | MBI Data Synchronization processes | X   |     |
 | Detecting MBI synchronization issues | X   |     |
-| Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On-Prem, or non-Adobe Commerce<br>(API, Data quality and formatting, customer network,<br>DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | X   |
+| Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On-Prem, or non-Adobe Commerce<br>(API, Data quality and formatting, merchant network,<br>DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | X   |
 | Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud database  configuration) | X   |     |
 
 ###  Monitoring
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of New Relic services:<br>APM application and agent integration, Infrastructure application,<br>Logging & integration | X |     |
 | Setting up New Relic Alerts |     | X   |
@@ -747,7 +747,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 
 ### Product Recommendations
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of Product Recommendations service | X   |     |
 
@@ -756,7 +756,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 Customers are responsible for synchronizing data between production and staging environments.
 
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of snapshot and backup process | X |     |
 | Scheduling backups for Cloud Pro Staging and Production environments | X   |     |
@@ -765,7 +765,7 @@ Customers are responsible for synchronizing data between production and staging 
 
 ### Cloud Servers & Scaling
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Availability of CPU resources, data center, disk space | X   |     |
 | Availability and execution of surge capacity or emergency upsizing | X   |     |
@@ -774,13 +774,13 @@ Customers are responsible for synchronizing data between production and staging 
 
 ### Synchronizing Environments
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Synchronizing data between Staging and Production environments |     | X   |
 
 ### Cloud Docker
 
-|     | Adobe | Customer |
+|     | Adobe | Merchant |
 | --- | --- | --- |
 | Making Cloud Docker containers available for download | X   |     |
 | Deployment and setup of Cloud Docker (optional) |     | X   |
