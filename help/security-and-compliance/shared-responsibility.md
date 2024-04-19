@@ -589,6 +589,34 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | DDOS detection - layer 7 |     | X   |
 | DDOS response | X   |     |
 | Configuration of Fastly Extension Rate Limiting and Bot Protection (Limited) |     | X |
+### Network: IO
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability and Quality of Image Optimization |  X   |    |
+| Configuration of Image Optimization |     | X   |
+
+### Network: SSL
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| SSL Dedicated Certificate - expiration |  X   |    |
+| Provisioning SSL Certificates |   X  |    |
+| Purchasing and Maintaining EV/Specific SSL cert (other than defaults provided) and provide to Adobe |     |  X  |
+
+### Network: WAF
+
+|     | Adobe | Customer |
+| --- | --- | --- |
+| Availability & Configuration of WAF |  X   |    |
+| Addressing WAF Rule False Positives |   X  |    |
+| Reporting WAF Rule False Positives |     |   X |
+| WAF Rule Tuning (NOT SUPPORTED) |     |     |
+| WAF/CDN Logs |     |  X   |
+
+
+
+
 
 ### App Server
 
