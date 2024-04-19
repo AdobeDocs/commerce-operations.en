@@ -589,6 +589,7 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | DDOS detection - layer 7 |     | X   |
 | DDOS response | X   |     |
 | Configuration of Fastly Extension Rate Limiting and Bot Protection (Limited) |     | X |
+
 ### Network: IO
 
 |     | Adobe | Customer |
@@ -613,10 +614,6 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | Reporting WAF Rule False Positives |     |   X |
 | WAF Rule Tuning (NOT SUPPORTED) |     |     |
 | WAF/CDN Logs |     |  X   |
-
-
-
-
 
 ### App Server
 
