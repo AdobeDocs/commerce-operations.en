@@ -556,8 +556,6 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | --- | --- | --- |
 | Publishing updates and patches to Adobe Commerce core | X   |     |
 | Publishing updates and patches to ECE-Tools | X   |     |
-| Fastly Extension Quality | X   |     |
-| Fastly Integration VCL Snippets (bundled with the Fastly Extension) Quality | X   |     |
 | Core Adobe Commerce Application Quality | X   |     |
 
 ### Application and Service Configuration
@@ -574,6 +572,8 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 | --- | --- | --- |
 | Availability and Quality of CDN | X   |     |
 | Fastly service configuration (via Extension / API) |     | X   |
+| Fastly Extension Quality | X   |     |
+| Fastly Integration VCL Snippets (bundled with the Fastly Extension) Quality | X   |     |
 | Page Cache optimization |     | X   |
 | Adding domains to services, to CDN, and to infrastructure | X  |     |
 | Custom VCL Snippets |     | X   |
