@@ -1,12 +1,12 @@
 ---
 title: Manage Modules and Extensions (developer)
-description: Manage Adobe Commerce and Magento Open Source modules and extensions using the command-line interface and Composer package manager.
+description: Manage Adobe Commerce modules and extensions using the command-line interface and Composer package manager.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
 ---
 # Manage modules and extensions
 
-Contributing developers upgrade modules and extensions by specifying their versions in the Adobe Commerce or Magento Open Source `composer.json` file. If you are not a contributing developer, see [Perform an upgrade](../implementation/perform-upgrade.md).
+Contributing developers upgrade modules and extensions by specifying their versions in the Adobe Commerce `composer.json` file. If you are not a contributing developer, see [Perform an upgrade](../implementation/perform-upgrade.md).
 
 You can either add a `require` section to the `composer.json` file or you can use the `composer require` command as follows:
 

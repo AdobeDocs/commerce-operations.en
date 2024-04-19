@@ -1,11 +1,11 @@
 ---
 title: File ownership and permissions
-description: Learn about the importance of file system permissions when working with on-premises installations of Adobe Commerce and Magento Open Source.
+description: Learn about the importance of file system permissions when working with on-premises installations of Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 ---
 # File ownership and permissions
 
-It is important to secure your Adobe Commerce or Magento Open Source installation in a development environment to help prevent issues related to unauthorized people or processes accessing—and potentially harming—your system. Use the following file system ownership and permissions guidelines to protect your installation.
+It is important to secure your Adobe Commerce installation in a development environment to help prevent issues related to unauthorized people or processes accessing—and potentially harming—your system. Use the following file system ownership and permissions guidelines to protect your installation.
 
 ## File system owner
 
@@ -35,7 +35,7 @@ To tighten security, particularly in a production environment on a shared hostin
 >
 >File system security is complex and important. We strongly recommend that you consult an experienced system administrator or network administrator before you decide the level of permissions to set. We provide a mechanism for you to use, but creating a permissions strategy is your responsibility.
 
-Adobe Commerce and Magento Open Source use a three-bit, default mask: `002`. Subtract the default mask from the UNIX defaults of 666 for files and 777 for directories.
+Adobe Commerce uses a three-bit, default mask: `002`. Subtract the default mask from the UNIX defaults of 666 for files and 777 for directories.
 
 For example:
 
@@ -47,7 +47,7 @@ For more information about creating a `magento_umask` file, see [Set a umask](..
 
 ## Permissions, ownership, and application modes
 
-We recommend different permissions and ownership when you use the different Adobe Commerce and Magento Open Source application modes:
+We recommend different permissions and ownership when you use the different Adobe Commerce application modes:
 
 - Default
 - Developer
@@ -59,4 +59,4 @@ We further discuss permissions recommendations in [File systems access permissio
 
 >[!TIP]
 >
->Before you install Adobe Commerce or Magento Open Source, review [Configure file ownership and permissions](configure-permissions.md).
+>Before you install Adobe Commerce, review [Configure file ownership and permissions](configure-permissions.md).

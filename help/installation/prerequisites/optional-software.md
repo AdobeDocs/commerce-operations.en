@@ -1,19 +1,19 @@
 ---
 title: Optional software
-description: Learn more about optional software that you can install to support on-premises installations of Adobe Commerce and Magento Open Source.
+description: Learn more about optional software that you can install to support on-premises installations of Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
 ---
 # Optional software
 
 We strongly recommend you install NTP to ensure that cron-related tasks perform properly. (Server dates could be in the past or future, for example.)
 
-The other optional utilities discussed in this topic might assist you with your installation; however, they are not required to install or use Adobe Commerce or Magento Open Source.
+The other optional utilities discussed in this topic might assist you with your installation; however, they are not required to install or use Adobe Commerce.
 
 ## Installing and Configuring Network Time Protocol (NTP)
 
 [NTP](https://www.ntp.org/) enables servers to synchronize their system clocks using [globally available pool servers](https://www.ntppool.org/en/). We recommend you use NTP servers you trust, whether they are dedicated hardware solutions your internal network or external, public servers.
 
-If you are deploying Adobe Commerce or Magento Open Source on multiple hosts, NTP is a simple way to guarantee their clocks are all synchronized, no matter what time zone the servers are in. Also, cron-related tasks (such as indexing and transactional e-mails) depend on the server clock being accurate.
+If you are deploying Adobe Commerce on multiple hosts, NTP is a simple way to guarantee their clocks are all synchronized, no matter what time zone the servers are in. Also, cron-related tasks (such as indexing and transactional e-mails) depend on the server clock being accurate.
 
 ### Install and configure NTP on Ubuntu
 

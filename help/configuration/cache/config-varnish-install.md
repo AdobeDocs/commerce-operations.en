@@ -26,4 +26,4 @@ Open a terminal and enter the following command to display the version of Varnis
 varnishd -V
 ```
 
-Make sure that [Adobe Commerce and Magento Open Source supports](../../installation/system-requirements.md) the installed version of Varnish before continuing. If you are running an unsupported version, you must upgrade to a supported version. Consult the Varnish installation documentation for more information.
+Make sure that [Adobe Commerce supports](../../installation/system-requirements.md) the installed version of Varnish before continuing. If you are running an unsupported version, you must upgrade to a supported version. Consult the Varnish installation documentation for more information.

@@ -1,6 +1,6 @@
 ---
 title: Configure message consumers
-description: Follow these steps to configure the behavior of Adobe Commerce or Magento Open Source message queue consumers.
+description: Follow these steps to configure the behavior of Adobe Commerce message queue consumers.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
 ---
 # Configure message consumers

@@ -1,6 +1,6 @@
 ---
 title: Configure the lock provider
-description: Follow these steps to prevent the duplicate cron jobs and cron groups from running on your Adobe Commerce or Magento Open Source deployment.
+description: Follow these steps to prevent the duplicate cron jobs and cron groups from running on your Adobe Commerce deployment.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
 ---
 # Configure the lock provider
@@ -16,9 +16,9 @@ Before you run this command, you must do the following *or* you must [install th
 
 ## Configure the lock
 
-Configure a lock provider to prevent the launch of duplicate cron jobs and cron groups. (Requires Adobe Commerce or Magento Open Source 2.2.x, 2.2.5 and later, and 2.3.3 and later.)
+Configure a lock provider to prevent the launch of duplicate cron jobs and cron groups. (Requires Adobe Commerce 2.2.x, 2.2.5 and later, and 2.3.3 and later.)
 
-Adobe Commerce and Magento Open Source use the database to save locks by default. If you have multiple nodes on your servers, we recommend using Zookeeper as the lock provider.
+Adobe Commerce uses the database to save locks by default. If you have multiple nodes on your servers, we recommend using Zookeeper as the lock provider.
 
 If you are running Adobe Commerce on cloud infrastructure, you do not need to configure lock provider settings. The application configures the file lock provider for Pro projects during the provisioning process. See [Cloud variables](https://devdocs.magento.com/cloud/env/variables-cloud.html).
 

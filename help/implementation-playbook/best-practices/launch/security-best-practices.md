@@ -12,7 +12,7 @@ Although you cannot eliminate all security risks, applying these best practices 
 
 >[!NOTE]
 >
->For information about the roles and responsibilities for securing and maintaining Adobe Commerce projects on cloud infrastructure, see the [Shared Responsibility Guide](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) in the Adobe Trust Center.
+>For information about the roles and responsibilities for securing and maintaining Adobe Commerce projects on cloud infrastructure, see [Shared Responsibility Model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) in the _Adobe Commerce Security and Compliance Guide_.
 
 [All supported versions](../../../release/versions.md) of:
 
@@ -53,7 +53,7 @@ The `lock config` and `lock env` CLI commands configure environment variables to
 
 ![Checklist](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Run security scans**
 
-Use the [Commerce Security Scan service](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) to monitor all Adobe Commerce and Magento Open Source sites for known security risks and malware, and sign up to receive patch updates and security notifications.
+Use the [Commerce Security Scan service](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) to monitor all Adobe Commerce sites for known security risks and malware, and sign up to receive patch updates and security notifications.
 
 ## Ensure security of extensions and custom code
 

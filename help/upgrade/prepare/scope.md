@@ -1,6 +1,6 @@
 ---
 title: Understand Upgrade Scope
-description: Learn about backward incompatible changes in a release that might impact Adobe Commerce or Magento Open Source custom modules or third-party extensions.
+description: Learn about backward incompatible changes in a release that might impact Adobe Commerce custom modules or third-party extensions.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
 ---
 # Understand the scope of upgrading
@@ -9,7 +9,7 @@ Review the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes
 
 ## Backward-incompatible changes
 
-Adobe Commerce and Magento Open Source releases may contain backward-incompatible changes. Review our backward-incompatible changes documentation, see the following: 
+Adobe Commerce releases may contain backward-incompatible changes. Review our backward-incompatible changes documentation, see the following: 
 
 - **[Major change highlights](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**—Changes that have a major impact and require detailed explanation and special instructions to ensure that third-party modules continue working.
 - **[Minor change reference](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**—Reference documentation generated from the code base that describes minor changes to classes, API membership, database, dependency injection, interfaces, layouts, system, and XSD.

@@ -1,6 +1,6 @@
 ---
 title: Apache
-description: Follow these steps to install and configure the Apache web server for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Follow these steps to install and configure the Apache web server for on-premises installations of Adobe Commerce.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 ---
 # Apache
@@ -22,11 +22,11 @@ Adobe Commerce supports Apache 2.4.x.
 
 This topic discusses how to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all other sections in this topic as well.
+Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all other sections in this topic as well.
 
 Use this section to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to provide directory-level instructions for Apache.
+Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level instructions for Apache.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to pr
    >[!NOTE]
    >
    >-  If you upgraded from an earlier Apache version, first look for `<Directory "/var/www/html">` or `<Directory "/var/www">` in `000-default.conf`.
-   >-  You must change the value of `AllowOverride` in the directive for the directory to which you expect to install the Adobe Commerce or Magento Open Source software. For example, to install in the web server docroot, edit the directive in `<Directory /var/www>`.
+   >-  You must change the value of `AllowOverride` in the directive for the directory to which you expect to install the Adobe Commerce software. For example, to install in the web server docroot, edit the directive in `<Directory /var/www>`.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Adobe Commerce and Magento Open Source use server rewrites and `.htaccess` to pr
 
 ## Apache required modules
 
-Adobe Commerce and Magento Open Source require the following Apache modules to be installed:
+Adobe Commerce requires the following Apache modules to be installed:
 
 -  [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
 -  [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
@@ -178,7 +178,7 @@ To upgrade to Apache 2.4:
 
 ## Installing Apache on CentOS
 
-Adobe Commerce and Magento Open Source require Apache use server rewrites. You must also specify the type of directives that can be used in `.htaccess`, which the application uses to specify rewrite rules.
+Adobe Commerce requires Apache server rewrites. You must also specify the type of directives that can be used in `.htaccess`, which the application uses to specify rewrite rules.
 
 Installing and configuring Apache is basically a three-step process: install the software, enable rewrites, and specify `.htaccess` directives.
 

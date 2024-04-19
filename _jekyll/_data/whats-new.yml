@@ -14,9 +14,9 @@ entries:
   labels:
   - technical
   - 2.4.7
-- description: "- Update the release packages topics for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)
-    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source).<br/>-
-    Add a release packages topic for [B2B for Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b)."
+- description: "Updated the release packages topics for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source).<br/>
+    Added a release packages topic for [B2B for Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b)."
   versions: 2.4.7
   type: major-update
   date: April 9, 2024

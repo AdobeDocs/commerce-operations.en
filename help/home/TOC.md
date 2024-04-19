@@ -1,6 +1,6 @@
 ---
 user-guide-title: Operational Guides
-user-guide-description: Learn about the operational aspects of maintaining your Adobe Commerce or Magento Open Source application.
+user-guide-description: Learn about the operational aspects of maintaining your Adobe Commerce application.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 ---
 

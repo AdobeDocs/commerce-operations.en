@@ -1,6 +1,6 @@
 ---
 title: Message broker
-description: Follow these steps to install and configure required message broker software (such as [!DNL RabbitMQ]) for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Follow these steps to install and configure required message broker software (such as [!DNL RabbitMQ]) for on-premises installations of Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
 ---
 # Message broker
@@ -9,10 +9,10 @@ Adobe Commerce uses the [!DNL RabbitMQ] open-source message broker. It offers a 
 
 Message queues provide an asynchronous communications mechanism in which the sender and the receiver of a message do not contact each other. Nor do they need to communicate with the message queue at the same time. When a sender places a message in a queue, it is stored until the recipient receives them.
 
-The message queue system must be established before you install Adobe Commerce or Magento Open Source. The basic sequence is:
+The message queue system must be established before you install Adobe Commerce. The basic sequence is:
 
 1. Install [!DNL RabbitMQ] and any prerequisites.
-1. Connect [!DNL RabbitMQ] to Adobe Commerce or Magento Open Source.
+1. Connect [!DNL RabbitMQ] to Adobe Commerce.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Refer to the [[!DNL RabbitMQ]/Erlang version matrix](https://www.rabbitmq.com/wh
 
 The [!DNL RabbitMQ] server is included on CentOS, but the version is often old. [!DNL RabbitMQ] recommends installing the package from their website.
 
-Refer to the [!DNL RabbitMQ] install page to get the latest supported version. Adobe Commerce and Magento Open Source 2.3 and 2.4 support [!DNL RabbitMQ] 3.8.x.
+Refer to the [!DNL RabbitMQ] install page to get the latest supported version. Adobe Commerce 2.3 and 2.4 support [!DNL RabbitMQ] 3.8.x.
 
 Refer to [Installing on RPM-based Linux](https://www.rabbitmq.com/install-rpm.html) for more information.
 
@@ -65,7 +65,7 @@ Review the official [!DNL RabbitMQ] documentation to configure and manage [!DNL 
 
 ## Install with [!DNL RabbitMQ] and connect
 
-If you install Adobe Commerce or Magento Open Source _after_ you install [!DNL RabbitMQ], add the following command-line parameters during installation:
+If you install Adobe Commerce _after_ you install [!DNL RabbitMQ], add the following command-line parameters during installation:
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
@@ -84,7 +84,7 @@ Where:
 
 ## Connect [!DNL RabbitMQ]
 
-If you already had Adobe Commerce or Magento Open Source installed and you want to connect it to [!DNL RabbitMQ], add a `queue` section in the `<install_directory>/app/etc/env.php` file so that it is similar to the following:
+If you already had Adobe Commerce installed and you want to connect it to [!DNL RabbitMQ], add a `queue` section in the `<install_directory>/app/etc/env.php` file so that it is similar to the following:
 
 ```php
 'queue' =>

@@ -7,7 +7,7 @@ exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
 
 >[!NOTE]
 >
->This is one in a series of topics to help Adobe Commerce and Magento Open Source merchants and developers prepare for compliance with privacy regulations. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
+>This is one in a series of topics to help Adobe Commerce merchants and developers prepare for compliance with privacy regulations. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
 
 Use the following dataflow diagrams and database entity mappings for reference when developing compliance programs for privacy regulations such as:
 
