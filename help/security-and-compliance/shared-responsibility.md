@@ -709,7 +709,7 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-#### Cache Service
+#### Cache service
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
