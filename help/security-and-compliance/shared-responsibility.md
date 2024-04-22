@@ -660,7 +660,7 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-#### Task scheduling with Cron jobs
+#### Task scheduling with cron jobs
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -749,7 +749,7 @@ Merchants are responsible for synchronizing data between production and staging 
 | --- | --- | --- |
 | Availability of SendGrid email service and its integration| R |   |
 | Monitor merchant's SendGrid usage against limits| R |   |
-| Merchant is responsible for using the service for transactional (no marketing) emails|     | R |
+| Merchant is responsible for using the service only for outgoing transactional emails<br>The service does not support sending of marketing emails. |     | R |
 | Configuring optional third-party email services |     | R |
 
 {style="table-layout:auto"}
