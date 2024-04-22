@@ -748,6 +748,7 @@ Merchants are responsible for synchronizing data between production and staging 
 | --- | --- | --- |
 | Availability of SendGrid email service and its integration| R |   |
 | Monitor merchant's SendGrid usage against limits| R |   |
+| Merchant is responsible for using the service for transactional (no marketing) emails|     | R |
 | Configuring optional third-party email services |     | R |
 
 {style="table-layout:auto"}
