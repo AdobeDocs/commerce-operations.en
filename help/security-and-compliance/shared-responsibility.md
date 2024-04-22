@@ -632,6 +632,7 @@ Merchants are responsible for synchronizing data between production and staging 
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Rotating Logs| R |   |
+| Custom Adobe Commerce application| |R |
 | Availability of New Relic services:<br>APM application and agent integration, Infrastructure application,<br>Logging & integration| R |   |
 | Setting up New Relic Alerts |     | R |
 | Deploying New Relic agent on PaaS Servers |     | R |
