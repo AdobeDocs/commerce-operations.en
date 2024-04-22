@@ -69,7 +69,7 @@ The merchant is responsible for following security best practices for their spec
 - Testing and QA of the custom application
 - Maintaining the security of any systems or networks the merchant connects to the Adobe Commerce on cloud infrastructure application
 
-## Cloud service provider responsibilities
+## Cloud Service Provider responsibilities
 
 Adobe relies on well-established cloud service providers to host the cloud server infrastructure for Adobe Commerce on cloud infrastructure. These providers are responsible for security of the network, including routing, switching, and perimeter network security via firewall systems and intrusion detection systems (IDS). Cloud service providers are also responsible for the physical security of data centers that host the Adobe Commerce on cloud infrastructure solution and the environmental security of data centers.
 
@@ -83,10 +83,18 @@ Cloud service providers are also responsible for:
 
 The Adobe Commerce on cloud infrastructure solution uses CDN providers to speed page-load time, cache content, and instantly purge outdated content. These providers are also responsible for security issues directly related to or affecting their CDN, and for defining and maintaining CDN WAF rules.
 
-## Security responsibilities chart
+## Security responsibilities summary
 
-The following chart uses the RACI model (R — Responsible, A — Accountable, C — Consulted,
-I — Informed) to visually depict each party in the ecosystem's security responsibilities concerning the Adobe Commerce on cloud infrastructure shared responsibility security and operational model:
+>[!BEGINSHADEBOX]
+
+The following summary table uses the RACI model to visually depict the security responsibilities for the parties covered by the Adobe Commerce on cloud infrastructure shared responsibility security and operational model—Adobe, Merchant, and Cloud service provider.
+
+**R** — Responsible
+**A** — Accountable
+**C** — Consulted
+**I** — Informed
+
+>[!ENDSHADEBOX]
 
 <table>
 <thead>
@@ -504,303 +512,363 @@ I — Informed) to visually depict each party in the ecosystem's security respon
 </tfoot>
 </table>
 
-## Operations Responsibility chart
+## Operational responsibilities summary
 
-### Performance
+>[!BEGINSHADEBOX]
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Core Application tuning and optimization | X   |     |
-| Custom code tuning and optimization |     | X   |
-| Custom Adobe Commerce code |     | X   |
-| Load Testing |     | X   |
-| Performance testing |     | X   |
+The following summary tables clarify the operational responsibilities for Adobe and Merchants when developing, deploying, maintaining, and securing Adobe Commerce on cloud infrastructure based on Adobe's shared responsibility model.
 
-### Debugging and Issue Isolation
+>[!ENDSHADEBOX]
+
+### Coding and development
+
+#### Core Adobe Commerce Code
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Debugging and Issue isolation | X   | X   |
-| Timely support of debugging and issue isolation process |     | X   |
+| Publishing updates and patches to Adobe Commerce core | R |     |
+| Publishing updates and patches to ECE-Tools | R |     |
+| Core Adobe Commerce Application Quality | R |     |
 
-### Website(s) Availability
+{style="table-layout:auto"}
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Customized Adobe Commerce application and website(s) |     | X   |
-
-### Third Party Services
+#### Code Repository
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability and quality of third party services |     | X   |
+| Availability of repo.magento.com | R |     |
+| Availability of Adobe Commerce cloud Git server | R |     |
+| Other merchant-selected Code repository (GitHub, Bitbucket, hosted Git server) |     | R |
 
-### Patching
+{style="table-layout:auto"}
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Installing updates and patches to ECE-Tools |     | X  |
-| Installing updates and patches to Adobe Commerce core |     | X   |
-
-### Customizations
+#### Cloud Docker
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Custom Adobe Commerce modules and code |     | X   |
-| Extensions |     | X   |
-| Custom Integrations |     | X   |
+| Making Cloud Docker containers available for download| R |   |
+| Deployment and setup of Cloud Docker (optional) |     | R |
+| Any other local development setup |     | R |
 
-### Core Adobe Commerce Code
+{style="table-layout:auto"}
+
+#### Commerce Cloud CLI
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Publishing updates and patches to Adobe Commerce core | X   |     |
-| Publishing updates and patches to ECE-Tools | X   |     |
-| Core Adobe Commerce Application Quality | X   |     |
+| Ongoing quality and updating of ECE Tools| R |   |
+| Installing latest ECE Tools version |     | R |
+
+{style="table-layout:auto"}
+
+#### Customizations
+
+|  | Adobe | Merchant |
+| --- | --- | --- |
+| Custom Adobe Commerce modules and code |     | R |
+| Extensions |     | R |
+| Custom Integrations |     | R |
+
+{style="table-layout:auto"}
+
+#### Deployments
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of infrastructure to build and deploy code| R |   |
+| Ongoing quality of infrastructure build-and-deploy configuration pipeline| R |   |
+| Configuration of build and static content deployment |     | R |
+| Building and executing deployment governance process: criteria and change management |     | R |
+| Deploying to Staging environment |     | R |
+| Deploying to Production environment |     | R |
+| Production rollbacks |     | R |
+
+{style="table-layout:auto"}
+
+#### Synchronizing Environments
+
+Merchants are responsible for synchronizing data between production and staging environments.
+
+#### Patching
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Installing updates and patches to ECE-Tools |     | R |
+| Installing updates and patches to Adobe Commerce core |     | R |
+
+#### Website(s) Availability
+
+|  | Adobe | Merchant |
+| --- | --- | --- |
+| Customized Adobe Commerce application and website(s) |     | R |
+
+#### Performance
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Core Application tuning and optimization| R |   |
+| Custom code tuning and optimization |     | R |
+| Custom Adobe Commerce code |     | R |
+| Load Testing |     | R |
+| Performance testing |     | R |
+
+{style="table-layout:auto"}
+
+
+#### Logs and Monitoring
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Rotating Logs| R |   |
+| Availability of New Relic services:<br>APM application and agent integration, Infrastructure application,<br>Logging & integration| R |   |
+| Setting up New Relic Alerts |     | R |
+| Deploying New Relic agent on Paas Servers |     | R |
+
+{style="table-layout:auto"}
+
+#### Debugging and Issue Isolation
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Debugging and issue isolation | R |R |
+| Timely support of debugging and issue isolation process |     | R |
+
+{style="table-layout:auto"}
 
 ### Application and Service Configuration
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Application configuration |     | X   |
-| Adding domains to Adobe Commerce application (Base URLs) |     | X   |
-| Configuring PaaS to use Services versions supported by the deployed Adobe Commerce version<br><br>(for example, different Commerce versions are compatible with specific versions of PHP, Redis, and so on. |     | X  |
-
-### CDN Service
+#### Commerce application
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability and Quality of CDN | X   |     |
-| Fastly service configuration (via Extension / API) |     | X   |
-| Fastly Extension Quality | X   |     |
-| Fastly Integration VCL Snippets (bundled with the Fastly Extension) Quality | X   |     |
-| Page Cache optimization |     | X   |
-| Adding domains to services, to CDN, and to infrastructure | X  |     |
-| Custom VCL Snippets |     | X   |
-| WAF & WAF Rules | X   |     |
+| Application configuration |     | R |
+| Adding domains to Adobe Commerce application (Base URLs) |     | R |
+| Configuring PaaS to use Services versions supported by the deployed Adobe Commerce version<br><br>For example, different Commerce versions are compatible with specific versions of PHP, Redis, and so on. |     | R |
 
-### DDOS
+{style="table-layout:auto"}
+
+#### Cron Jobs
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Proactive IP Blocking |     | X   |
-| Bot Protection |     | X   |
-| DDOS detection - layer 3-4 | X   |     |
-| DDOS detection - layer 7 |     | X   |
-| DDOS response | X   |     |
-| Configuration of Fastly Extension Rate Limiting and Bot Protection (Limited) |     | X |
+| Availability of default cron jobs | R | |
+| Ongoing quality of custom cron jobs |  | R |
 
-### Network: IO
+{style="table-layout:auto"}
 
-|     | Adobe | Customer |
+#### Message Broker for Message Queue Framework
+
+|     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability and Quality of Image Optimization |  X   |    |
-| Configuration of Image Optimization |     | X   |
+| Availability of RabbitMQ service| R |   |
+| Configuration of default RabbitMQ settings| R |   |
+| Ongoing quality and patching of RabbitMQ| R |   |
+| Submit service request to install RabbitMQ versions compatible with installed Adobe Commerce version |   | R |
 
-### Network: SSL
+{style="table-layout:auto"}
 
-|     | Adobe | Customer |
+#### PHP Service
+
+|     | Adobe | Merchant |
 | --- | --- | --- |
-| SSL Dedicated Certificate - expiration |  X   |    |
-| Provisioning SSL Certificates |   X  |    |
-| Purchasing and Maintaining EV/Specific SSL cert (other than defaults provided) and provide to Adobe |     |  X  |
+| Availability of PHP| R |   |
+| Configuration of default PHP settings | R |     |
+| Configuration of custom PHP settings |     | R |
+| Configuration of YAML file to align PHP versions compatible with installed Adobe Commerce version |    | R |
 
-### Network: WAF
+{style="table-layout:auto"}
 
-|     | Adobe | Customer |
+#### MySQL services
+
+|     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability & Configuration of WAF |  X   |    |
-| Addressing WAF Rule False Positives |   X  |    |
-| Reporting WAF Rule False Positives |     |   X |
+| Availability of Galera and MariaDB services| R | |
+| Ongoing maintenance of default database settings<br><br>(indexing and optimizing core tables, optimizing default sys-admin settings)| R |   |
+| Ongoing maintenance of merchant data and modified settings<br><br>(configuring normalized vs flat tables, indexing and optimizing custom and third party tables, archiving or removing data, configuring Sys admin settings) |     | R |
+| Configuration of Galera and MySQL| R |   |
+| Ongoing quality and patching of Galera and MariaDB| R |   |
+| Ongoing infrastructure optimization| R  |   |
+| Identifying and fixing slow queries |     | R |
+| Submit service request to install MariaDB versions compatible with installed Adobe Commerce version |     | R |
+| Setting and maintaining merchant-specific data retention policies (Adobe's data retention policies are defined in the merchant agreement) |     | R |
+
+{style="table-layout:auto"}
+
+#### CDN Service
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability and Quality of CDN| R |   |
+| Fastly service configuration (via Extension / API) |     | R |
+| Fastly Extension Quality| R  |   |
+| Fastly Integration VCL Snippets (bundled with the Fastly Extension) Quality| R |   |
+| Page Cache optimization |     | R |
+| Adding domains to services, to CDN, and to infrastructure| R |   |
+| Custom VCL Snippets |     | R |
+| WAF & WAF Rules| R |   |
+
+{style="table-layout:auto"}
+
+#### Cache Service
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Redis service| R |   |
+| Configuration of default Redis settings| R |   |
+| Ongoing quality and patching of Redis| R |   |
+| Submit service request to install Redis versions compatible with installed Adobe Commerce version |     | R |
+
+{style="table-layout:auto"}
+
+#### Search Service
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of ElasticSearch| R |   |
+| Configuration of default ElasticSearch settings| R |   |
+| Submit service request to install ElasticSearch versions compatible with installed Adobe Commerce version |  | R |
+
+{style="table-layout:auto"}
+
+#### Email Service
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of SendGrid email service and its integration| R |   |
+| Monitor merchant's SendGrid usage against limits| R |   |
+| Configuring optional third party email services |     | R |
+
+{style="table-layout:auto"}
+
+#### Third Party Services
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability and quality of third party services |     | R |
+
+{style="table-layout:auto"}
+
+### Commerce Services extensions
+
+#### Advance Reporting Service
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of the Advanced Reporting service| R |   |
+| Configuration of Advanced Reporting complies with Advanced Reporting Terms & Conditions |     | R |
+
+{style="table-layout:auto"}
+
+#### Commerce Intelligence
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Adobe Commerce Business Intelligence services| R |   |
+| MBI Data Synchronization processes| R |   |
+| Detecting MBI synchronization issues| R |   |
+| Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On-Prem, or non-Adobe Commerce<br>(API, Data quality and formatting, merchant network,<br>DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | R  |
+| Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud database  configuration)| R |   |
+
+{style="table-layout:auto"}
+
+#### Product Recommendations
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Product Recommendations service| R |   |
+
+{style="table-layout:auto"}
+
+### Network Services
+
+#### Image Optimization
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability and Quality of Image Optimization| R |  |
+| Configuration of Image Optimization |     | R  |
+
+{style="table-layout:auto"}
+
+#### SSL Certificates
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| SSL Dedicated Certificate - expiration| R |  |
+| Provisioning SSL Certificates| R |  |
+| Purchasing and Maintaining EV/Specific SSL cert (other than defaults provided) and provide to Adobe |     | R |
+
+{style="table-layout:auto"}
+
+#### Web Application Firewall (WAF)
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability & Configuration of WAF| R  |  |
+| Addressing WAF Rule False Positives| R  | |
+| Reporting WAF Rule False Positives |     | R |
 | WAF Rule Tuning (NOT SUPPORTED) |     |     |
-| WAF/CDN Logs |     |  X   |
+| WAF/CDN Logs |     | R  |
 
-### App Server
+{style="table-layout:auto"}
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of Nginx | X   |     |
-| Configuration of Nginx | X   |     |
-| Ongoing quality and patching of Nginx | X   |     |
-
-### Code Repository
+#### DDOS
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of repo.magento.com | X   |     |
-| Availability of Adobe Commerce cloud Git server | X   |     |
-| Other merchant-selected Code repository (GitHub, Bitbucket, hosted Git server) |     | X   |
+| Proactive IP Blocking |     | R |
+| Bot Protection |     | R  |
+| DDOS detection - layer 3-4| R |   |
+| DDOS detection - layer 7 |     | R |
+| DDOS response| R  |   |
+| Configuration of Fastly Extension Rate Limiting and Bot Protection (Limited) |     | R |
 
-### Private Link 
+{style="table-layout:auto"}
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Configuring and maintaining PrivateLink connections (if used) with Adobe-owned VPC(s) | X   |     |
-| Configuring and maintaining PrivateLink connections (if used) with Merchant-owned VPC(s) |     | X   |
-| Availability of SSH (Non Private Link) | X   |     |
-| Configuration of PrivateLink Inbound to Adobe Commerce Cloud Service endpoint | X   |     |
-| Acceptance of PrivateLink Inbound to Adobe Commerce Cloud Service endpoint |     | X   |
-| Configuration of PrivateLink Inbound to Merchant's VPC Service endpoint |     | X   |
-| Acceptance of PrivateLink Inbound to Merchant's VPC Service endpoint | X   |     |
-| Configuration of PrivateLink integrations (endpoint to account) |     | X   |
-| Configuration of merchant-owned VPC for PrivateLink endpoint<br><br> (including any VPN connections) |     | X   |
-
-### Cron Jobs
+#### Private Link
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of default cron jobs | X   |     |
-| Ongoing quality of custom cron jobs |     | X  |
+| Configuring and maintaining PrivateLink connections (if used) with Adobe-owned VPC(s)| R  |   |
+| Configuring and maintaining PrivateLink connections (if used) with Merchant-owned VPC(s) |     | R |
+| Availability of SSH (Non Private Link)| R |   |
+| Configuration of PrivateLink Inbound to Adobe Commerce Cloud Service endpoint| R |   |
+| Acceptance of PrivateLink Inbound to Adobe Commerce Cloud Service endpoint |     | R |
+| Configuration of PrivateLink Inbound to Merchant's VPC Service endpoint |     | R |
+| Acceptance of PrivateLink Inbound to Merchant's VPC Service endpoint| R |   |
+| Configuration of PrivateLink integrations (endpoint to account) |     | R |
+| Configuration of merchant-owned VPC for PrivateLink endpoint<br><br> (including any VPN connections) |     | R |
 
-### MySQL
+{style="table-layout:auto"}
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of Galera and MariaDB services | X  |     |
-| Ongoing maintenance of default database settings<br><br>(indexing and optimizing core tables, optimizing default sys-admin settings) | X   |     |
-| Ongoing maintenance of merchant data and modified settings<br><br>(configuring normalized vs flat tables, indexing and optimizing custom and third party tables, archiving or removing data, configuring Sys admin settings) |     | X   |
-| Configuration of Galera and MySQL | X   |     |
-| Ongoing quality and patching of Galera and MariaDB | X   |     |
-| Ongoing infrastructure optimization | X   |     |
-| Identifying and fixing slow queries |     | X   |
-| Submit service request to install MariaDB versions compatible with installed Adobe Commerce version |     | X   |
-| Setting and maintaining merchant-specific data retention policies (Adobe's data retention policies are defined in the merchant agreement) |     | X   |
+### System and infrastructure
 
-### Commerce Cloud CLI
+#### App Server
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Ongoing quality and updating of ECE Tools | X   |     |
-| Installing latest ECE Tools version |     | X   |
+| Availability of Nginx| R  |   |
+| Configuration of Nginx| R  |   |
+| Ongoing quality and patching of Nginx| R |   |
 
-### Email Service
+{style="table-layout:auto"}
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of SendGrid email service and its integration | X  |     |
-| Monitor merchant's SendGrid usage against limits | X  |     |
-| Configuring optional third party email services |     | X  |
-
-### Logs
+#### Operating System
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Rotating Logs | X   |     |
+| Availability of Operating System| R |   |
+| Ongoing quality and patching of Operating System| R |   |
 
-### Operating System
+{style="table-layout:auto"}
 
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of Operating System | X   |     |
-| Ongoing quality and patching of Operating System | X   |     |
+#### Backup, High Availability, and Failover
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of PhP | X   |     |
-| Configuration of default PHP settings | X  |     |
-| Configuration of custom PHP settings |     | X  |
-| Configuration of YAML file to align PHP versions compatible with installed Adobe Commerce version |    | X |
+| Availability of snapshot and backup process| R |   |
+| Scheduling backups for Cloud Pro Staging and Production environments| R |   |
+| Scheduling backups for Cloud Starter and Pro Integration environments |     | R |
+| Availability of HA / Failover| R |   |
 
-### Message Broker for Message Queue Framework
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of RabbitMQ service | X  |     |
-| Configuration of default RabbitMQ settings | X   |     |
-| Ongoing quality and patching of RabbitMQ | X   |     |
-| Submit service request to install RabbitMQ versions compatible with installed Adobe Commerce version |   | X  |
-
-### Cache service
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of Redis service | X  |     |
-| Configuration of default Redis settings | X   |     |
-| Ongoing quality and patching of Redis | X   |     |
-| Submit service request to install Redis versions compatible with installed Adobe Commerce version |     | X   |
-
-### Search Service
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of ElasticSearch | X   |     |
-| Configuration of default ElasticSearch settings | X   |     |
-| Submit service request to install ElasticSearch versions compatible with installed Adobe Commerce version |  | X |
-
-### Deployments
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of infrastructure to build and deploy code | X  |     |
-| Ongoing quality of infrastructure build-and-deploy configuration pipeline | X  |     |
-| Configuration of build and static content deployment |     | X  |
-| Building and executing deployment governance process: criteria and change management |     | X  |
-| Deploying to Staging environment |     | X  |
-| Deploying to Production environment |     | X  |
-| Production rollbacks |     | X  |
-
-### Product Recommendations
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of the Advanced Reporting service | X   |     |
-| Configuration of Advanced Reporting complies with Advanced Reporting Terms & Conditions |     | X  |
-
-### Commerce Intelligence
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of Adobe Commerce Business Intelligence services | X   |     |
-| MBI Data Synchronization processes | X   |     |
-| Detecting MBI synchronization issues | X   |     |
-| Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro, Starter, On-Prem, or non-Adobe Commerce<br>(API, Data quality and formatting, merchant network,<br>DB connections both inside and outside of Adobe Commerce Cloud DB, over data thresholds) |     | X   |
-| Configuring MBI Data Synchronization to Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud database  configuration) | X   |     |
-
-### Monitoring
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of New Relic services:<br>APM application and agent integration, Infrastructure application,<br>Logging & integration | X |     |
-| Setting up New Relic Alerts |     | X   |
-| Deploying New Relic agent on Paas Servers |     | X |
-
-### Product Recommendations
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of Product Recommendations service | X   |     |
-
-### Synchronizing Environments
-
-Customers are responsible for synchronizing data between production and staging environments.
-
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of snapshot and backup process | X |     |
-| Scheduling backups for Cloud Pro Staging and Production environments | X   |     |
-| Scheduling backups for Cloud Starter and Pro Integration environments |     | X   |
-| Availability of HA / Failover | X   |     |
-
-### Cloud Servers & Scaling
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of CPU resources, data center, disk space | X   |     |
-| Availability and execution of surge capacity or emergency upsizing | X   |     |
-| Requesting surge capacity |     | X   |
-| Monitoring vCPU usage against limits | X   |     |
-
-### Synchronizing Environments
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Synchronizing data between Staging and Production environments |     | X   |
-
-### Cloud Docker
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Making Cloud Docker containers available for download | X   |     |
-| Deployment and setup of Cloud Docker (optional) |     | X   |
-| Any other local development setup |     | X   |
+{style="table-layout:auto"}
