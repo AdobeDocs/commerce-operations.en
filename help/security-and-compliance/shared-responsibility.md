@@ -596,7 +596,7 @@ Merchants are responsible for synchronizing data between production and staging 
 | Installing updates and patches to ECE-Tools |     | R |
 | Installing updates and patches to Adobe Commerce core |     | R |
 
-#### Website(s) Availability
+#### Website(s) availability
 
 |  | Adobe | Merchant |
 | --- | --- | --- |
@@ -615,7 +615,7 @@ Merchants are responsible for synchronizing data between production and staging 
 {style="table-layout:auto"}
 
 
-#### Logs and Monitoring
+#### Logs and monitoring
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -626,7 +626,7 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-#### Debugging and Issue Isolation
+#### Debugging and issue isolation
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -635,7 +635,7 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-### Application and Service Configuration
+### Application and service configuration
 
 #### Commerce application
 
@@ -647,7 +647,7 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-#### Cron Jobs
+#### Cron jobs
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -656,7 +656,7 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-#### Message Broker for Message Queue Framework
+#### Message broker for message queue framework
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -667,7 +667,7 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-#### PHP Service
+#### PHP service
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
@@ -694,7 +694,7 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-#### CDN Service
+#### CDN service
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
