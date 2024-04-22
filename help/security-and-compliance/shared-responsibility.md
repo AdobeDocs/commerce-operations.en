@@ -734,7 +734,12 @@ Merchants are responsible for synchronizing data between production and staging 
 
 |     | Adobe | Merchant |
 | --- | --- | --- |
-| Availability of SendGrid email service and its integration| R |   |
+| Availability of SendGrid email service and its integration | R |   |
+
+>[!NOTE]
+>
+>Adobe Commerce uses the SendGrid Simple Mail Transfer Protocol (SMTP) proxy service to provide outbound email authentication and reputation monitoring services. This service is not intended for use as a general purpose email server to receive incoming email or for use with email marketing campaigns.
+
 | Monitor merchant's SendGrid usage against limits| R |   |
 | Configuring optional third party email services |     | R |
 
