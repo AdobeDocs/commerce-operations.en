@@ -8,7 +8,7 @@ exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 Adobe Commerce beta programs are a way for merchants to get access to prerelease features and code, provide feedback, and guide the future of Adobe Commerce. There are two types of beta programs:
 
 - Public Beta: A public beta program is available to all Adobe Commerce customers and partners 
-- Private Bata: A private beta program may require an approval based on qualifying criteria in order to participate
+- Private Beta: A private beta program may require an approval based on qualifying criteria in order to participate
 
 >[!IMPORTANT]
 >
@@ -64,7 +64,7 @@ Each Adobe Commerce Foundation beta release includes all the changes delivered t
 
 #### Naming convention and schedule
 
-Adobe will release beta patches twice a year. The first beta patch is typically released three months after general availability of a new core application patch release.
+Adobe typically releases beta patches twice a year. 
 
 Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.4.7 beta release packages use the following naming convention:
 
