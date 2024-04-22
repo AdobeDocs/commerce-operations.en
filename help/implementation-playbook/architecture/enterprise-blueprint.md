@@ -12,7 +12,7 @@ Commerce has evolved to meet enterprise requirements for performance, scale, and
 
 The following architecture diagram illustrates the data flow between Adobe Commerce and all Adobe Experience Cloud solutions.
 
-![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture-v2.svg){zoomable="yes"}
+![Architectural diagram showing how Adobe Commerce connects to Experience Cloud solutions](../../assets/playbooks/commerce-architecture-v3.svg){zoomable="yes"}
 
 >[!NOTE]
 >
