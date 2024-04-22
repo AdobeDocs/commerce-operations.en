@@ -538,6 +538,7 @@ The following summary tables clarify the operational responsibilities for Adobe 
 |     | Adobe | Merchant |
 | --- | --- | --- |
 | Publishing updates and patches to Adobe Commerce core | R |     |
+| Availability and patching of the file system | R |  |
 | Publishing updates and patches to ECE-Tools | R |     |
 | Core Adobe Commerce Application Quality | R |     |
 
