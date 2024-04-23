@@ -15,7 +15,7 @@ Get practical information about concepts, processes, tools, and best practices t
       <img alt="Release Information" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Release Information</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>Release Information</strong></a>
       <p>Review all release information for Adobe Commerce patches and services.</p>
     </div>
   </td>
