@@ -57,14 +57,14 @@ recommendations: noDisplay, noCatalog
     - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
     - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
     - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
-- [Released versions](versions.md)
-- [Features by version](features.md)
 - [Product availability](product-availability.md)
 - [Beta releases](beta.md)
 - Planning and policies {#planning}
   - [Lifecycle policy](lifecycle-policy.md)
   - [Versioning policy](versioning-policy.md)
   - [Release schedule](schedule.md)
+- [Features by version](features.md)
+- [Released versions](versions.md)
 - Packages {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [B2B for Adobe Commerce](packages/adobe-commerce-b2b.md)
