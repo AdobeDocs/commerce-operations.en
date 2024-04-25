@@ -7,7 +7,6 @@ recommendations: noDisplay, noCatalog
 
 # Release Information {#release}
 
-- [Latest release](latest.md)
 - Release notes {#notes}
   - [Overview](release-notes/overview.md)
   - [Backward-incompatible changes](backward-incompatible-changes.md)
