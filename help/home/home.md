@@ -1,22 +1,22 @@
 ---
-keywords: Adobe Commerce;home;popular topics
-title: Home
-description: Browse an index of Adobe Commerce system administration and operational product documentation.
+title: Operational Guides Home
+description: Browse an index of Adobe Commerce system administration and operational technical documentation.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 ---
+
 # Adobe Commerce Operational Guides
 
-Get practical information about concepts, processes, tools, and best practices to develop, deploy, and maintain Adobe Commerce projects.
+Get technical information about system administration concepts, processes, tools, and best practices to configure, deploy, and maintain Adobe Commerce projects.
 
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
+    <a href="../release/latest.md">
       <img alt="Release Information" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>Release Information</strong></a>
-      <p>Review all release information for Adobe Commerce patches and services.</p>
+      <a href="../release/latest.md"><strong>Release Information</strong></a>
+      <p>Learn about the latest performance and security improvements in Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -58,11 +58,11 @@ Get practical information about concepts, processes, tools, and best practices t
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
+    <a href="../reference/commerce-on-premises.md">
        <img alt="Command-line tools reference" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>Command-Line Tools Reference</strong></a>
+      <a href="../reference/commerce-on-premises.md"><strong>Command-Line Tools Reference</strong></a>
       <p>Learn about commands, arguments, and options for the Adobe Commerce command-line tools.</p>
     </div>
   </td>
