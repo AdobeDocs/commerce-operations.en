@@ -1,69 +1,24 @@
 ---
 title: Operational Guides Home
-description: Browse an index of Adobe Commerce system administration and operational technical documentation.
+description: Browse an index of Adobe Commerce system administration and operational product documentation.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 ---
 
 # Adobe Commerce Operational Guides
 
-Get technical information about system administration concepts, processes, tools, and best practices to configure, deploy, and maintain Adobe Commerce projects.
+Get technical information about system administration concepts, processes, tools, and best practices to plan, configure, deploy, and maintain Adobe Commerce projects.
+
+## Planning and guidance
 
 <table>
 <tr>
   <td valign="top">
-    <a href="../release/latest.md">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
       <img alt="Release Information" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../release/latest.md"><strong>Release Information</strong></a>
-      <p>Learn about the latest performance and security improvements in Adobe Commerce.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../installation/overview.md">
-      <img alt="Installation" src="../assets/icons/servers.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../installation/overview.md"><strong>Installation</strong></a>
-      <p>Learn how to install Adobe Commerce for on-premises deployments.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../configuration/overview.md">
-      <img alt="Configuration" src="../assets/icons/settings.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../configuration/overview.md"><strong>Configuration</strong></a>
-      <p>Configure features and services for your Adobe Commerce application.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../tools/data-migration-tool/how-migration-works.md">
-      <img alt="Data Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Data Migration</strong></a>
-      <p>Learn about the data migration process between Magento 1 and Magento 2.</p>
-    </div>
-  </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../upgrade/overview.md">
-      <img alt="Upgrade" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
-      <p>Learn how to upgrade your Adobe Commerce project to keep your storefront secure and operating efficiently.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../reference/commerce-on-premises.md">
-       <img alt="Command-line tools reference" src="../assets/icons/page-rule.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../reference/commerce-on-premises.md"><strong>Command-Line Tools Reference</strong></a>
-      <p>Learn about commands, arguments, and options for the Adobe Commerce command-line tools.</p>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>Release Information</strong></a>
+      <p>Review all release information for Adobe Commerce patches and services.</p>
     </div>
   </td>
   <td valign="top">
@@ -76,12 +31,12 @@ Get technical information about system administration concepts, processes, tools
     </div>
   </td>
   <td valign="top">
-    <a href="../tools/overview.md">
-       <img alt="Tools" src="../assets/icons/wrench.svg" width="40" height="40"/>
+    <a href="../security-and-compliance/overview.md">
+       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../tools/overview.md"><strong>Tools</strong></a>
-      <p>Learn about tools you can use with Adobe Commerce.</p>
+      <a href="../security-and-compliance/overview.md"><strong>Security and Compliance</strong></a>
+      <p>Learn how Adobe Commerce merchants are responsible for maintaining a secure environment.</p>
     </div>
   </td>
 </tr>
@@ -105,7 +60,7 @@ Get technical information about system administration concepts, processes, tools
     </div>
   </td>
   <td valign="top">
-    <a href="../operational-playbook/overview.md">
+    <a href="../commerce-at-scale/overview.md">
        <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40" height="40"/>
     </a>
     <div>
@@ -113,13 +68,47 @@ Get technical information about system administration concepts, processes, tools
       <p>Learn how to deliver experiences at scale using Adobe Commerce with Adobe Experience Manager.</p>
     </div>
   </td>
+</tr>
+</table>
+
+## System management
+
+<table>
+<tr>
   <td valign="top">
-    <a href="../security-and-compliance/overview.md">
-       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+    <a href="../installation/overview.md">
+      <img alt="Installation (in-premises)" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.md"><strong>Security and Compliance</strong></a>
-      <p>Learn how Adobe Commerce merchants are responsible for maintaining a secure environment.</p>
+      <a href="../installation/overview.md"><strong>Installation</strong></a>
+      <p>Learn how to install Adobe Commerce for on-premises deployments.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../configuration/overview.md">
+      <img alt="Configuration" src="../assets/icons/settings.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="../configuration/overview.md"><strong>Configuration</strong></a>
+      <p>Configure features and services for your Adobe Commerce application.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../upgrade/overview.md">
+      <img alt="Upgrade" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
+      <p>Learn how to upgrade your Adobe Commerce project to keep your storefront secure and operating efficiently.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../tools/overview.md">
+       <img alt="Tools" src="../assets/icons/wrench.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="../tools/overview.md"><strong>Tools</strong></a>
+      <p>Learn about tools you can use with Adobe Commerce.</p>
     </div>
   </td>
 </tr>
