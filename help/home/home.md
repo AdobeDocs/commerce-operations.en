@@ -14,7 +14,7 @@ Get technical information about system administration concepts, processes, tools
 <tr>
   <td valign="top">
     <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
-      <img alt="Release Information" src="../assets/icons/promote.svg" width="40" height="40"/>
+      <img alt="Release Information" src="../assets/icons/promote.svg"/>
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>Release Information</strong></a>
@@ -23,7 +23,7 @@ Get technical information about system administration concepts, processes, tools
   </td>
   <td valign="top">
     <a href="../performance/overview.md">
-       <img alt="Performance" src="../assets/icons/gauge.svg" width="40" height="40"/>
+       <img alt="Performance" src="../assets/icons/gauge.svg"/>
     </a>
     <div>
       <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
@@ -32,7 +32,7 @@ Get technical information about system administration concepts, processes, tools
   </td>
   <td valign="top">
     <a href="../security-and-compliance/overview.md">
-       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+       <img alt="Enterprise" src="../assets/icons/alert-circle.svg"/>
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>Security and Compliance</strong></a>
@@ -43,7 +43,7 @@ Get technical information about system administration concepts, processes, tools
 <tr>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
-      <img alt="Implementation" src="../assets/icons/play.svg" width="40" height="40"/>
+      <img alt="Implementation" src="../assets/icons/play.svg"/>
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
@@ -52,7 +52,7 @@ Get technical information about system administration concepts, processes, tools
   </td>
   <td valign="top">
     <a href="../operational-playbook/overview.md">
-       <img alt="Operations" src="../assets/icons/refresh.svg" width="40" height="40"/>
+       <img alt="Operations" src="../assets/icons/refresh.svg"/>
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Operational Playbook</strong></a>
@@ -61,7 +61,7 @@ Get technical information about system administration concepts, processes, tools
   </td>
   <td valign="top">
     <a href="../commerce-at-scale/overview.md">
-       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40" height="40"/>
+       <img alt="Enterprise" src="../assets/icons/enterprise.svg"/>
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>Commerce at Scale</strong></a>
@@ -77,7 +77,7 @@ Get technical information about system administration concepts, processes, tools
 <tr>
   <td valign="top">
     <a href="../installation/overview.md">
-      <img alt="Installation (in-premises)" src="../assets/icons/servers.svg" width="40" height="40"/>
+      <img alt="Installation (in-premises)" src="../assets/icons/servers.svg"/>
     </a>
     <div>
       <a href="../installation/overview.md"><strong>Installation</strong></a>
@@ -86,7 +86,7 @@ Get technical information about system administration concepts, processes, tools
   </td>
   <td valign="top">
     <a href="../configuration/overview.md">
-      <img alt="Configuration" src="../assets/icons/settings.svg" width="40" height="40"/>
+      <img alt="Configuration" src="../assets/icons/settings.svg"/>
     </a>
     <div>
       <a href="../configuration/overview.md"><strong>Configuration</strong></a>
@@ -95,7 +95,7 @@ Get technical information about system administration concepts, processes, tools
   </td>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Upgrade" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
+      <img alt="Upgrade" src="../assets/icons/upload-cloud.svg"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
@@ -104,7 +104,7 @@ Get technical information about system administration concepts, processes, tools
   </td>
   <td valign="top">
     <a href="../tools/overview.md">
-       <img alt="Tools" src="../assets/icons/wrench.svg" width="40" height="40"/>
+       <img alt="Tools" src="../assets/icons/wrench.svg"/>
     </a>
     <div>
       <a href="../tools/overview.md"><strong>Tools</strong></a>
