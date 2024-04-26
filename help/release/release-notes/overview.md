@@ -10,7 +10,7 @@ Use the following table to find release notes and important information related 
 
 >[!TIP]
 >
->- If you are new to Adobe Commerce, see the [enterprise architecture](../../implementation-playbook/architecture/enterprise-blueprint.md) and [about Adobe Commerce](https://experienceleague-review.corp.adobe.com/docs/commerce-admin/start/about.html) topics to get oriented.
+>- If you are new to Adobe Commerce, see the [enterprise architecture](../../implementation-playbook/architecture/enterprise-blueprint.md) and [about Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) topics to get oriented.
 >- For information about upgrades, see [recommended reading](../../upgrade/resources/recommended-reading.md).
 
 <table>
