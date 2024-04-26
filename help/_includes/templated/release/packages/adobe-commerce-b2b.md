@@ -14,7 +14,7 @@
 
 B2B for Adobe Commerce uses Composer to manage PHP packages.
 
-The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of Adobe Commerce.
+The `composer.json` file declares the list of packages, whereas the `composer.lock` file stores a complete list of the packages (a full version of each package and its dependencies) used to build an installation of B2B for Adobe Commerce.
 
 The following reference documentation is generated from the `composer.lock` file, and it covers required packages included in B2B for Adobe Commerce 1.4.2.
 
