@@ -24,7 +24,7 @@ feature: Configuration
     - [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
     - [Usage](quality-patches-tool/usage.md)
     - [Release notes](quality-patches-tool/release-notes.md)
-- Command-line tools reference {#reference}
+- Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
     - [Magento Open Source](reference/magento-open-source.md)
     - [Upgrade Compatibility Tool](reference/uct.md)

@@ -15,5 +15,5 @@ feature: Configuration, Best Practices, Install, Integration, Security, Release 
 - [Commerce at Scale](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
 - [Installation (on-premises)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
-- [Upgrade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/how-migration-works)
+- [Upgrade](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
 - [Tools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)
