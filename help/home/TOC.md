@@ -12,7 +12,7 @@ feature: Configuration, Best Practices, Install, Integration, Security, Release 
 - [Security and Compliance](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [Implementation Playbook](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
 - [Operational Playbook](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
-- [Commerce at Scale with Experience Manager](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [Commerce at Scale](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
 - [Installation (on-premises)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
 - [Upgrade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/how-migration-works)
