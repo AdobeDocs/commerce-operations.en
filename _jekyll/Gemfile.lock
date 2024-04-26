@@ -97,6 +97,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colorator
   faraday-retry
   jekyll
   rake
