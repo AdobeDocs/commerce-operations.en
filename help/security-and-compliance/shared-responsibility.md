@@ -773,6 +773,14 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
+#### Amazon Sales Channels
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Amazon Sales Channel Services | R |   |
+
+{style="table-layout:auto"}
+
 #### Commerce Intelligence
 
 |     | Adobe | Merchant |
@@ -884,5 +892,16 @@ Merchants are responsible for synchronizing data between production and staging 
 | Scheduling backups for Cloud Pro Staging and Production environments| R |   |
 | Scheduling backups for Cloud Starter and Pro Integration environments |     | R |
 | Availability of HA / Failover| R |   |
+
+{style="table-layout:auto"}
+
+#### Cloud Servers & Scaling
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of CPU resources, data center, disk space | R |   |
+| Availability and execution of surge capacity or emergency upsizing | R |   |
+| Requesting surge capacity |     | R |
+| Monitoring vCPU usage against limits | R |   |
 
 {style="table-layout:auto"}
