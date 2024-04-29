@@ -3,6 +3,8 @@ title: Composer development
 description: Learn about developing Composer modules in-place in the `vendor/` directory.
 feature: Best Practices
 role: Developer
+hide: yes
+hidefromtoc: yes
 exl-id: 7664ffb5-2e46-49c3-b2e6-c133c35d2f6b
 ---
 # Composer development
