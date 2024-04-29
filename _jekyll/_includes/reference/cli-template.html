@@ -24,14 +24,17 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 
 ## `{{ command.name }}`
 
-{{ command.description | strip_html }}
-
 ```bash
 {{ tool }} {{ command.usage }}
 ```
 
-{{ command.help | strip_html }}
+{{ command.description | strip_html }}
 
+{% unless command.help == command.description %}
+```
+{{ command.help | strip_html }}
+```
+{% endunless %}
 {%- unless arguments.size == 0 %}
 {%- for argument in arguments %}
   {%- for item in argument %}
@@ -67,7 +70,7 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 
 {%- endif %}
 
-{{ opt.description | replace: strip_html | replace: '|', '\|' }}
+{{ opt.description | strip_html | replace: '|', '\|' }}
    {% unless opt.default == nil %}
    {%- if opt.default == false or opt.default == empty and opt.default != '' %}
 -  Default: `{{ opt.default | inspect }}`
