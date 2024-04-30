@@ -13,11 +13,11 @@ Use this following collection of guides to learn about system administration con
 <table>
 <tr>
   <td valign="top">
-    <a href="../release/latest.md">
+    <a href="../release/release-notes/overview.md">
       <img alt="Release Information" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/latest.md"><strong>Release Information</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Release Information</strong></a>
       <p>Review all release information for Adobe Commerce patches and services.</p>
     </div>
   </td>
