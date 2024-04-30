@@ -773,14 +773,6 @@ Merchants are responsible for synchronizing data between production and staging 
 
 {style="table-layout:auto"}
 
-#### Amazon Sales Channels
-
-|     | Adobe | Merchant |
-| --- | --- | --- |
-| Availability of Amazon Sales Channel Services | R |   |
-
-{style="table-layout:auto"}
-
 #### Commerce Intelligence
 
 |     | Adobe | Merchant |
