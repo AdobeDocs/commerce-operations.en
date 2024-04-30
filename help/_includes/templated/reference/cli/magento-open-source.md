@@ -19,11 +19,12 @@ Use the ["Add CLI commands"](https://developer.adobe.com/commerce/php/developmen
 
 ## `_complete`
 
-Internal command to provide shell completion suggestions
-
 ```bash
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
+
+Internal command to provide shell completion suggestions
+
 
 ### `--shell`, `-s`
 
@@ -58,7 +59,7 @@ deprecated
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -107,10 +108,40 @@ Do not ask any interactive question
 
 ## `completion`
 
-Dump the shell completion script
-
 ```bash
 bin/magento completion [--debug] [--] [<shell>]
+```
+
+Dump the shell completion script
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    bin/magento completion  | sudo tee /etc/bash_completion.d/magento
+
+Or dump the script to a local file and source it:
+
+    bin/magento completion  > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
 
@@ -128,7 +159,7 @@ Tail the completion debug log
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -177,10 +208,23 @@ Do not ask any interactive question
 
 ## `help`
 
-Display help for a command
-
 ```bash
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Display help for a command
+
+
+```
+The help command displays help for a given command:
+
+  bin/magento help list
+
+You can also output the help in other formats by using the --format option:
+
+  bin/magento help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -207,7 +251,7 @@ To output raw command help
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -256,10 +300,29 @@ Do not ask any interactive question
 
 ## `list`
 
-List commands
-
 ```bash
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+List commands
+
+
+```
+The list command lists all commands:
+
+  bin/magento list
+
+You can also display the commands for a specific namespace:
+
+  bin/magento list test
+
+You can also output the information in other formats by using the --format option:
+
+  bin/magento list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  bin/magento list --raw
 ```
 
 
@@ -291,7 +354,7 @@ To skip describing commands' arguments
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -340,15 +403,16 @@ Do not ask any interactive question
 
 ## `admin:adobe-ims:disable`
 
-Disable Adobe IMS Module
-
 ```bash
 bin/magento admin:adobe-ims:disable
 ```
 
+Disable Adobe IMS Module
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -397,11 +461,12 @@ Do not ask any interactive question
 
 ## `admin:adobe-ims:enable`
 
-Enable Adobe IMS Module.
-
 ```bash
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
+
+Enable Adobe IMS Module.
+
 
 ### `--organization-id`, `-o`
 
@@ -429,7 +494,7 @@ Check if 2FA is enabled for Organization in Adobe Admin Console. Required when e
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -478,15 +543,16 @@ Do not ask any interactive question
 
 ## `admin:adobe-ims:info`
 
-Information of Adobe IMS Module configuration
-
 ```bash
 bin/magento admin:adobe-ims:info
 ```
 
+Information of Adobe IMS Module configuration
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -535,15 +601,16 @@ Do not ask any interactive question
 
 ## `admin:adobe-ims:status`
 
-Status of Adobe IMS Module
-
 ```bash
 bin/magento admin:adobe-ims:status
 ```
 
+Status of Adobe IMS Module
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -592,11 +659,12 @@ Do not ask any interactive question
 
 ## `admin:user:create`
 
-Creates an administrator
-
 ```bash
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Creates an administrator
+
 
 ### `--admin-user`
 
@@ -636,7 +704,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -685,10 +753,17 @@ Do not ask any interactive question
 
 ## `admin:user:unlock`
 
-Unlock Admin Account
-
 ```bash
 bin/magento admin:user:unlock <username>
+```
+
+Unlock Admin Account
+
+
+```
+This command unlocks an admin account by its username.
+To unlock:
+      bin/magento admin:user:unlock username
 ```
 
 
@@ -700,7 +775,7 @@ The admin username to unlock
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -749,11 +824,12 @@ Do not ask any interactive question
 
 ## `app:config:dump`
 
-Create dump of application
-
 ```bash
 bin/magento app:config:dump [<config-types>...]
 ```
+
+Create dump of application
+
 
 
 ### `config-types`
@@ -766,7 +842,7 @@ Space-separated list of config types or omit to dump all [scopes, system, themes
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -815,15 +891,16 @@ Do not ask any interactive question
 
 ## `app:config:import`
 
-Import data from shared configuration files to appropriate data storage
-
 ```bash
 bin/magento app:config:import
 ```
 
+Import data from shared configuration files to appropriate data storage
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -872,15 +949,16 @@ Do not ask any interactive question
 
 ## `app:config:status`
 
-Checks if config propagation requires update
-
 ```bash
 bin/magento app:config:status
 ```
 
+Checks if config propagation requires update
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -929,11 +1007,12 @@ Do not ask any interactive question
 
 ## `braintree:migrate`
 
-Migrate stored cards from a Magento 1 database
-
 ```bash
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
+
+Migrate stored cards from a Magento 1 database
+
 
 ### `--host`
 
@@ -961,7 +1040,7 @@ Password
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1010,11 +1089,12 @@ Do not ask any interactive question
 
 ## `cache:clean`
 
-Cleans cache type(s)
-
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Cleans cache type(s)
+
 
 
 ### `types`
@@ -1033,7 +1113,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1082,11 +1162,12 @@ Do not ask any interactive question
 
 ## `cache:disable`
 
-Disables cache type(s)
-
 ```bash
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Disables cache type(s)
+
 
 
 ### `types`
@@ -1105,7 +1186,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1154,11 +1235,12 @@ Do not ask any interactive question
 
 ## `cache:enable`
 
-Enables cache type(s)
-
 ```bash
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Enables cache type(s)
+
 
 
 ### `types`
@@ -1177,7 +1259,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1226,11 +1308,12 @@ Do not ask any interactive question
 
 ## `cache:flush`
 
-Flushes cache storage used by cache type(s)
-
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Flushes cache storage used by cache type(s)
+
 
 
 ### `types`
@@ -1249,7 +1332,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1298,11 +1381,12 @@ Do not ask any interactive question
 
 ## `cache:status`
 
-Checks cache status
-
 ```bash
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
+
+Checks cache status
+
 
 ### `--bootstrap`
 
@@ -1312,7 +1396,7 @@ add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1361,11 +1445,12 @@ Do not ask any interactive question
 
 ## `catalog:images:resize`
 
-Creates resized product images
-
 ```bash
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
+
+Creates resized product images
+
 
 ### `--async`, `-a`
 
@@ -1383,7 +1468,7 @@ Do not process images marked as hidden from product page
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1432,15 +1517,16 @@ Do not ask any interactive question
 
 ## `catalog:product:attributes:cleanup`
 
-Removes unused product attributes.
-
 ```bash
 bin/magento catalog:product:attributes:cleanup
 ```
 
+Removes unused product attributes.
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1489,11 +1575,12 @@ Do not ask any interactive question
 
 ## `cms:wysiwyg:restrict`
 
-Set whether to enforce user HTML content validation or show a warning instead
-
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
+
+Set whether to enforce user HTML content validation or show a warning instead
+
 
 
 ### `restrict`
@@ -1504,7 +1591,7 @@ y\n
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1553,11 +1640,12 @@ Do not ask any interactive question
 
 ## `config:sensitive:set`
 
-Set sensitive configuration values
-
 ```bash
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
+
+Set sensitive configuration values
+
 
 
 ### `path`
@@ -1593,7 +1681,7 @@ Scope code for configuration, empty string by default
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1642,11 +1730,12 @@ Do not ask any interactive question
 
 ## `config:set`
 
-Change system configuration
-
 ```bash
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
+
+Change system configuration
+
 
 
 ### `path`
@@ -1697,7 +1786,7 @@ Deprecated, use the --lock-env option instead.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1746,11 +1835,12 @@ Do not ask any interactive question
 
 ## `config:show`
 
-Shows configuration value for given path. If path is not specified, all saved values will be shown
-
 ```bash
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
+
+Shows configuration value for given path. If path is not specified, all saved values will be shown
+
 
 
 ### `path`
@@ -1774,7 +1864,7 @@ Scope code (required only if scope is not `default`)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1823,11 +1913,12 @@ Do not ask any interactive question
 
 ## `cron:install`
 
-Generates and installs crontab for current user
-
 ```bash
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
+
+Generates and installs crontab for current user
+
 
 ### `--force`, `-f`
 
@@ -1845,7 +1936,7 @@ Install only the non-optional (default) tasks
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1894,15 +1985,16 @@ Do not ask any interactive question
 
 ## `cron:remove`
 
-Removes tasks from crontab
-
 ```bash
 bin/magento cron:remove
 ```
 
+Removes tasks from crontab
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -1951,11 +2043,12 @@ Do not ask any interactive question
 
 ## `cron:run`
 
-Runs jobs by schedule
-
 ```bash
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
+
+Runs jobs by schedule
+
 
 ### `--group`
 
@@ -1978,7 +2071,7 @@ Add or override parameters of the bootstrap
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2027,15 +2120,16 @@ Do not ask any interactive question
 
 ## `customer:hash:upgrade`
 
-Upgrade customer's hash according to the latest algorithm
-
 ```bash
 bin/magento customer:hash:upgrade
 ```
 
+Upgrade customer's hash according to the latest algorithm
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2084,11 +2178,12 @@ Do not ask any interactive question
 
 ## `deploy:mode:set`
 
-Set application mode.
-
 ```bash
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
+
+Set application mode.
+
 
 
 ### `mode`
@@ -2106,7 +2201,7 @@ Skips the clearing and regeneration of static content (generated code, preproces
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2155,15 +2250,16 @@ Do not ask any interactive question
 
 ## `deploy:mode:show`
 
-Displays current application mode.
-
 ```bash
 bin/magento deploy:mode:show
 ```
 
+Displays current application mode.
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2212,11 +2308,12 @@ Do not ask any interactive question
 
 ## `dev:di:info`
 
-Provides information on Dependency Injection configuration for the Command.
-
 ```bash
 bin/magento dev:di:info <class>
 ```
+
+Provides information on Dependency Injection configuration for the Command.
+
 
 
 ### `class`
@@ -2227,7 +2324,7 @@ Class name
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2276,15 +2373,16 @@ Do not ask any interactive question
 
 ## `dev:email:newsletter-compatibility-check`
 
-Scans newsletter templates for potential variable usage compatibility issues
-
 ```bash
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
+Scans newsletter templates for potential variable usage compatibility issues
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2333,15 +2431,16 @@ Do not ask any interactive question
 
 ## `dev:email:override-compatibility-check`
 
-Scans email template overrides for potential variable usage compatibility issues
-
 ```bash
 bin/magento dev:email:override-compatibility-check
 ```
 
+Scans email template overrides for potential variable usage compatibility issues
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2390,15 +2489,16 @@ Do not ask any interactive question
 
 ## `dev:profiler:disable`
 
-Disable the profiler.
-
 ```bash
 bin/magento dev:profiler:disable
 ```
 
+Disable the profiler.
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2447,11 +2547,12 @@ Do not ask any interactive question
 
 ## `dev:profiler:enable`
 
-Enable the profiler.
-
 ```bash
 bin/magento dev:profiler:enable [<type>]
 ```
+
+Enable the profiler.
+
 
 
 ### `type`
@@ -2461,7 +2562,7 @@ Profiler type
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2510,15 +2611,16 @@ Do not ask any interactive question
 
 ## `dev:query-log:disable`
 
-Disable DB query logging
-
 ```bash
 bin/magento dev:query-log:disable
 ```
 
+Disable DB query logging
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2567,11 +2669,12 @@ Do not ask any interactive question
 
 ## `dev:query-log:enable`
 
-Enable DB query logging
-
 ```bash
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
+
+Enable DB query logging
+
 
 ### `--include-all-queries`
 
@@ -2596,7 +2699,7 @@ Include call stack. [true\|false]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2645,11 +2748,12 @@ Do not ask any interactive question
 
 ## `dev:source-theme:deploy`
 
-Collects and publishes source files for theme.
-
 ```bash
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
+
+Collects and publishes source files for theme.
+
 
 
 ### `file`
@@ -2690,7 +2794,7 @@ Theme: [Vendor/theme]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2739,15 +2843,16 @@ Do not ask any interactive question
 
 ## `dev:template-hints:disable`
 
-Disable frontend template hints. A cache flush might be required.
-
 ```bash
 bin/magento dev:template-hints:disable
 ```
 
+Disable frontend template hints. A cache flush might be required.
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2796,15 +2901,16 @@ Do not ask any interactive question
 
 ## `dev:template-hints:enable`
 
-Enable frontend template hints. A cache flush might be required.
-
 ```bash
 bin/magento dev:template-hints:enable
 ```
 
+Enable frontend template hints. A cache flush might be required.
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2853,15 +2959,16 @@ Do not ask any interactive question
 
 ## `dev:template-hints:status`
 
-Show frontend template hints status.
-
 ```bash
 bin/magento dev:template-hints:status
 ```
 
+Show frontend template hints status.
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2910,11 +3017,12 @@ Do not ask any interactive question
 
 ## `dev:tests:run`
 
-Runs tests
-
 ```bash
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
+
+Runs tests
+
 
 
 ### `type`
@@ -2933,7 +3041,7 @@ Additional arguments for PHPUnit. Example: "-c'--filter=MyTest'" (no spaces)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -2982,11 +3090,12 @@ Do not ask any interactive question
 
 ## `dev:urn-catalog:generate`
 
-Generates the catalog of URNs to *.xsd mappings for the IDE to highlight xml.
-
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
+
+Generates the catalog of URNs to *.xsd mappings for the IDE to highlight xml.
+
 
 
 ### `path`
@@ -3004,7 +3113,7 @@ Format in which catalog will be generated. Supported: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3053,11 +3162,12 @@ Do not ask any interactive question
 
 ## `dev:xml:convert`
 
-Converts XML file using XSL style sheets
-
 ```bash
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
+
+Converts XML file using XSL style sheets
+
 
 
 ### `xml-file`
@@ -3081,7 +3191,7 @@ Overwrite XML file
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3130,11 +3240,12 @@ Do not ask any interactive question
 
 ## `downloadable:domains:add`
 
-Add domains to the downloadable domains whitelist
-
 ```bash
 bin/magento downloadable:domains:add [<domains>...]
 ```
+
+Add domains to the downloadable domains whitelist
+
 
 
 ### `domains`
@@ -3147,7 +3258,7 @@ Domains name
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3196,11 +3307,12 @@ Do not ask any interactive question
 
 ## `downloadable:domains:remove`
 
-Remove domains from the downloadable domains whitelist
-
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
 ```
+
+Remove domains from the downloadable domains whitelist
+
 
 
 ### `domains`
@@ -3213,7 +3325,7 @@ Domain names
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3262,15 +3374,16 @@ Do not ask any interactive question
 
 ## `downloadable:domains:show`
 
-Display downloadable domains whitelist
-
 ```bash
 bin/magento downloadable:domains:show
 ```
 
+Display downloadable domains whitelist
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3319,15 +3432,16 @@ Do not ask any interactive question
 
 ## `encryption:payment-data:update`
 
-Re-encrypts encrypted credit card data with latest encryption cipher.
-
 ```bash
 bin/magento encryption:payment-data:update
 ```
 
+Re-encrypts encrypted credit card data with latest encryption cipher.
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3376,11 +3490,12 @@ Do not ask any interactive question
 
 ## `i18n:collect-phrases`
 
-Discovers phrases in the codebase
-
 ```bash
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
+
+Discovers phrases in the codebase
+
 
 
 ### `directory`
@@ -3403,7 +3518,7 @@ Use the --magento parameter to parse the current Magento codebase. Omit the para
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3452,11 +3567,12 @@ Do not ask any interactive question
 
 ## `i18n:pack`
 
-Saves language package
-
 ```bash
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
+
+Saves language package
+
 
 
 ### `source`
@@ -3487,7 +3603,7 @@ Use the --allow-duplicates parameter to allow saving duplicates of translate. Ot
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3536,11 +3652,12 @@ Do not ask any interactive question
 
 ## `i18n:uninstall`
 
-Uninstalls language packages
-
 ```bash
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
+
+Uninstalls language packages
+
 
 
 ### `package`
@@ -3561,7 +3678,7 @@ Take code and configuration files backup (excluding temporary files)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3610,15 +3727,16 @@ Do not ask any interactive question
 
 ## `indexer:info`
 
-Shows allowed Indexers
-
 ```bash
 bin/magento indexer:info
 ```
 
+Shows allowed Indexers
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3667,11 +3785,12 @@ Do not ask any interactive question
 
 ## `indexer:reindex`
 
-Reindexes Data
-
 ```bash
 bin/magento indexer:reindex [<index>...]
 ```
+
+Reindexes Data
+
 
 
 ### `index`
@@ -3684,7 +3803,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3733,11 +3852,12 @@ Do not ask any interactive question
 
 ## `indexer:reset`
 
-Resets indexer status to invalid
-
 ```bash
 bin/magento indexer:reset [<index>...]
 ```
+
+Resets indexer status to invalid
+
 
 
 ### `index`
@@ -3750,7 +3870,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3799,11 +3919,12 @@ Do not ask any interactive question
 
 ## `indexer:set-dimensions-mode`
 
-Set Indexer Dimensions Mode
-
 ```bash
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
+
+Set Indexer Dimensions Mode
+
 
 
 ### `indexer`
@@ -3818,7 +3939,7 @@ Indexer dimension modes catalog_product_price          none,website,customer_gro
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3867,11 +3988,12 @@ Do not ask any interactive question
 
 ## `indexer:set-mode`
 
-Sets index mode type
-
 ```bash
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
+
+Sets index mode type
+
 
 
 ### `mode`
@@ -3889,7 +4011,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -3938,11 +4060,12 @@ Do not ask any interactive question
 
 ## `indexer:set-status`
 
-Sets the specified indexer status
-
 ```bash
 bin/magento indexer:set-status <status> [<index>...]
 ```
+
+Sets the specified indexer status
+
 
 
 ### `status`
@@ -3961,7 +4084,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4010,11 +4133,12 @@ Do not ask any interactive question
 
 ## `indexer:show-dimensions-mode`
 
-Shows Indexer Dimension Mode
-
 ```bash
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
+
+Shows Indexer Dimension Mode
+
 
 
 ### `indexer`
@@ -4027,7 +4151,7 @@ Space-separated list of index types or omit to apply to all indexes (catalog_pro
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4076,11 +4200,12 @@ Do not ask any interactive question
 
 ## `indexer:show-mode`
 
-Shows Index Mode
-
 ```bash
 bin/magento indexer:show-mode [<index>...]
 ```
+
+Shows Index Mode
+
 
 
 ### `index`
@@ -4093,7 +4218,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4142,11 +4267,12 @@ Do not ask any interactive question
 
 ## `indexer:status`
 
-Shows status of Indexer
-
 ```bash
 bin/magento indexer:status [<index>...]
 ```
+
+Shows status of Indexer
+
 
 
 ### `index`
@@ -4159,7 +4285,7 @@ Space-separated list of index types or omit to apply to all indexes.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4208,15 +4334,16 @@ Do not ask any interactive question
 
 ## `info:adminuri`
 
-Displays the Magento Admin URI
-
 ```bash
 bin/magento info:adminuri
 ```
 
+Displays the Magento Admin URI
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4265,15 +4392,16 @@ Do not ask any interactive question
 
 ## `info:backups:list`
 
-Prints list of available backup files
-
 ```bash
 bin/magento info:backups:list
 ```
 
+Prints list of available backup files
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4322,15 +4450,16 @@ Do not ask any interactive question
 
 ## `info:currency:list`
 
-Displays the list of available currencies
-
 ```bash
 bin/magento info:currency:list
 ```
 
+Displays the list of available currencies
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4379,11 +4508,12 @@ Do not ask any interactive question
 
 ## `info:dependencies:show-framework`
 
-Shows number of dependencies on Magento framework
-
 ```bash
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
+
+Shows number of dependencies on Magento framework
+
 
 ### `--output`, `-o`
 
@@ -4394,7 +4524,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4443,11 +4573,12 @@ Do not ask any interactive question
 
 ## `info:dependencies:show-modules`
 
-Shows number of dependencies between modules
-
 ```bash
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
+
+Shows number of dependencies between modules
+
 
 ### `--output`, `-o`
 
@@ -4458,7 +4589,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4507,11 +4638,12 @@ Do not ask any interactive question
 
 ## `info:dependencies:show-modules-circular`
 
-Shows number of circular dependencies between modules
-
 ```bash
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
+
+Shows number of circular dependencies between modules
+
 
 ### `--output`, `-o`
 
@@ -4522,7 +4654,7 @@ Report filename
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4571,15 +4703,16 @@ Do not ask any interactive question
 
 ## `info:language:list`
 
-Displays the list of available language locales
-
 ```bash
 bin/magento info:language:list
 ```
 
+Displays the list of available language locales
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4628,15 +4761,16 @@ Do not ask any interactive question
 
 ## `info:timezone:list`
 
-Displays the list of available timezones
-
 ```bash
 bin/magento info:timezone:list
 ```
 
+Displays the list of available timezones
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4685,16 +4819,17 @@ Do not ask any interactive question
 
 ## `inventory:reservation:create-compensations`
 
-Create reservations by provided compensation arguments
-
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
+Create reservations by provided compensation arguments
+
+
 
 ### `compensations`
 
-List of compensation arguments in format "\<ORDER_INCREMENT_ID>:\<SKU>:\<QUANTITY>:\<STOCK-ID>"
+List of compensation arguments in format ":::"
    
 -  Default: `[]`
    
@@ -4709,7 +4844,7 @@ Raw output
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4758,11 +4893,12 @@ Do not ask any interactive question
 
 ## `inventory:reservation:list-inconsistencies`
 
-Show all orders and products with salable quantity inconsistencies
-
 ```bash
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
+
+Show all orders and products with salable quantity inconsistencies
+
 
 ### `--complete-orders`, `-c`
 
@@ -4794,7 +4930,7 @@ Raw output
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4843,11 +4979,12 @@ Do not ask any interactive question
 
 ## `inventory-geonames:import`
 
-Download and import geo names for source selection algorithm
-
 ```bash
 bin/magento inventory-geonames:import <countries>...
 ```
+
+Download and import geo names for source selection algorithm
+
 
 
 ### `countries`
@@ -4861,7 +4998,7 @@ List of country codes to import
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4910,11 +5047,12 @@ Do not ask any interactive question
 
 ## `maintenance:allow-ips`
 
-Sets maintenance mode exempt IPs
-
 ```bash
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
+
+Sets maintenance mode exempt IPs
+
 
 
 ### `ip`
@@ -4947,7 +5085,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -4996,11 +5134,12 @@ Do not ask any interactive question
 
 ## `maintenance:disable`
 
-Disables maintenance mode
-
 ```bash
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Disables maintenance mode
+
 
 ### `--ip`
 
@@ -5017,7 +5156,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5066,11 +5205,12 @@ Do not ask any interactive question
 
 ## `maintenance:enable`
 
-Enables maintenance mode
-
 ```bash
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Enables maintenance mode
+
 
 ### `--ip`
 
@@ -5087,7 +5227,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5136,11 +5276,12 @@ Do not ask any interactive question
 
 ## `maintenance:status`
 
-Displays maintenance mode status
-
 ```bash
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Displays maintenance mode status
+
 
 ### `--magento-init-params`
 
@@ -5150,7 +5291,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5199,15 +5340,16 @@ Do not ask any interactive question
 
 ## `media-content:sync`
 
-Synchronize content with assets
-
 ```bash
 bin/magento media-content:sync
 ```
 
+Synchronize content with assets
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5256,15 +5398,16 @@ Do not ask any interactive question
 
 ## `media-gallery:sync`
 
-Synchronize media storage and media assets in the database
-
 ```bash
 bin/magento media-gallery:sync
 ```
 
+Synchronize media storage and media assets in the database
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5313,15 +5456,16 @@ Do not ask any interactive question
 
 ## `module:config:status`
 
-Checks the modules configuration in the 'app/etc/config.php' file and reports if they are up to date or not
-
 ```bash
 bin/magento module:config:status
 ```
 
+Checks the modules configuration in the 'app/etc/config.php' file and reports if they are up to date or not
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5370,11 +5514,12 @@ Do not ask any interactive question
 
 ## `module:disable`
 
-Disables specified modules
-
 ```bash
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+Disables specified modules
+
 
 
 ### `module`
@@ -5414,7 +5559,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5463,11 +5608,12 @@ Do not ask any interactive question
 
 ## `module:enable`
 
-Enables specified modules
-
 ```bash
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+Enables specified modules
+
 
 
 ### `module`
@@ -5507,7 +5653,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5556,11 +5702,12 @@ Do not ask any interactive question
 
 ## `module:status`
 
-Displays status of modules
-
 ```bash
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
+
+Displays status of modules
+
 
 
 ### `module-names`
@@ -5593,7 +5740,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5642,11 +5789,12 @@ Do not ask any interactive question
 
 ## `module:uninstall`
 
-Uninstalls modules installed by composer
-
 ```bash
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
+
+Uninstalls modules installed by composer
+
 
 
 ### `module`
@@ -5708,7 +5856,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5757,11 +5905,12 @@ Do not ask any interactive question
 
 ## `newrelic:create:deploy-marker`
 
-Check the deploy queue for entries and create an appropriate deploy marker.
-
 ```bash
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
+
+Check the deploy queue for entries and create an appropriate deploy marker.
+
 
 
 ### `message`
@@ -5788,7 +5937,7 @@ Revision
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5837,15 +5986,20 @@ Do not ask any interactive question
 
 ## `queue:consumers:list`
 
-List of MessageQueue consumers
-
 ```bash
 bin/magento queue:consumers:list
 ```
 
+List of MessageQueue consumers
+
+
+```
+This command shows list of MessageQueue consumers.
+```
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5894,15 +6048,20 @@ Do not ask any interactive question
 
 ## `queue:consumers:restart`
 
-Restart MessageQueue consumers
-
 ```bash
 bin/magento queue:consumers:restart
 ```
 
+Restart MessageQueue consumers
+
+
+```
+Command put poison pill for MessageQueue consumers and force to restart them after next status check.
+```
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -5951,10 +6110,43 @@ Do not ask any interactive question
 
 ## `queue:consumers:start`
 
-Start MessageQueue consumer
-
 ```bash
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
+```
+
+Start MessageQueue consumer
+
+
+```
+This command starts MessageQueue consumer by its name.
+
+To start consumer which will process all queued messages and terminate execution:
+
+    bin/magento queue:consumers:start someConsumer
+
+To specify the number of messages which should be processed by consumer before its termination:
+
+    bin/magento queue:consumers:start someConsumer --max-messages=50
+
+To specify the number of messages per batch for the batch consumer:
+
+    bin/magento queue:consumers:start someConsumer --batch-size=500
+
+To specify the preferred area:
+
+    bin/magento queue:consumers:start someConsumer --area-code='adminhtml'
+
+To do not run multiple copies of one consumer simultaneously:
+
+    bin/magento queue:consumers:start someConsumer --single-thread
+
+To save PID enter path (This option is deprecated, use --single-thread instead):
+
+    bin/magento queue:consumers:start someConsumer --pid-file-path='/var/someConsumer.pid'
+
+To define the number of processes per consumer:
+
+    bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
 
@@ -6003,7 +6195,7 @@ The file path for saving PID (This option is deprecated, use --single-thread ins
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6052,15 +6244,16 @@ Do not ask any interactive question
 
 ## `remote-storage:sync`
 
-Synchronize media files with remote storage.
-
 ```bash
 bin/magento remote-storage:sync
 ```
 
+Synchronize media files with remote storage.
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6109,11 +6302,12 @@ Do not ask any interactive question
 
 ## `saas:resync`
 
-Re-syncs feed data to SaaS service.
-
 ```bash
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
+
+Re-syncs feed data to SaaS service.
+
 
 ### `--feed`
 
@@ -6163,7 +6357,7 @@ Continue resync from the last stored position (This option is applicable to the 
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6212,11 +6406,12 @@ Do not ask any interactive question
 
 ## `sampledata:deploy`
 
-Deploy sample data modules for composer-based Magento installations
-
 ```bash
 bin/magento sampledata:deploy [--no-update]
 ```
+
+Deploy sample data modules for composer-based Magento installations
+
 
 ### `--no-update`
 
@@ -6227,7 +6422,7 @@ Update composer.json without executing composer update
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6276,11 +6471,12 @@ Do not ask any interactive question
 
 ## `sampledata:remove`
 
-Remove all sample data packages from composer.json
-
 ```bash
 bin/magento sampledata:remove [--no-update]
 ```
+
+Remove all sample data packages from composer.json
+
 
 ### `--no-update`
 
@@ -6291,7 +6487,7 @@ Update composer.json without executing composer update
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6340,15 +6536,16 @@ Do not ask any interactive question
 
 ## `sampledata:reset`
 
-Reset all sample data modules for re-installation
-
 ```bash
 bin/magento sampledata:reset
 ```
 
+Reset all sample data modules for re-installation
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6397,15 +6594,16 @@ Do not ask any interactive question
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-Disable reCAPTCHA for admin user forgot password form
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
+Disable reCAPTCHA for admin user forgot password form
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6454,15 +6652,16 @@ Do not ask any interactive question
 
 ## `security:recaptcha:disable-for-user-login`
 
-Disable reCAPTCHA for admin user login form
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
+Disable reCAPTCHA for admin user login form
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6511,11 +6710,12 @@ Do not ask any interactive question
 
 ## `security:tfa:google:set-secret`
 
-Set the secret used for Google OTP generation.
-
 ```bash
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
+
+Set the secret used for Google OTP generation.
+
 
 
 ### `user`
@@ -6532,7 +6732,7 @@ Secret
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6581,15 +6781,16 @@ Do not ask any interactive question
 
 ## `security:tfa:providers`
 
-List all available providers
-
 ```bash
 bin/magento security:tfa:providers
 ```
 
+List all available providers
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6638,11 +6839,12 @@ Do not ask any interactive question
 
 ## `security:tfa:reset`
 
-Reset configuration for one user
-
 ```bash
 bin/magento security:tfa:reset <user> <provider>
 ```
+
+Reset configuration for one user
+
 
 
 ### `user`
@@ -6659,7 +6861,7 @@ Provider code
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6708,11 +6910,12 @@ Do not ask any interactive question
 
 ## `setup:backup`
 
-Takes backup of Magento Application code base, media and database
-
 ```bash
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Takes backup of Magento Application code base, media and database
+
 
 ### `--code`
 
@@ -6743,7 +6946,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -6792,11 +6995,12 @@ Do not ask any interactive question
 
 ## `setup:config:set`
 
-Creates or modifies the deployment configuration
-
 ```bash
 bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Creates or modifies the deployment configuration
+
 
 ### `--backend-frontname`
 
@@ -7381,7 +7585,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7430,11 +7634,12 @@ Do not ask any interactive question
 
 ## `setup:db-data:upgrade`
 
-Installs and upgrades data in the DB
-
 ```bash
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installs and upgrades data in the DB
+
 
 ### `--magento-init-params`
 
@@ -7444,7 +7649,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7493,11 +7698,12 @@ Do not ask any interactive question
 
 ## `setup:db-declaration:generate-patch`
 
-Generate patch and put it in specific folder.
-
 ```bash
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
+
+Generate patch and put it in specific folder.
+
 
 
 ### `module`
@@ -7528,7 +7734,7 @@ Find out what type of patch should be generated. Available values: `data`, `sche
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7577,11 +7783,12 @@ Do not ask any interactive question
 
 ## `setup:db-declaration:generate-whitelist`
 
-Generate whitelist of tables and columns that are allowed to be edited by declaration installer
-
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
+
+Generate whitelist of tables and columns that are allowed to be edited by declaration installer
+
 
 ### `--module-name`
 
@@ -7592,7 +7799,7 @@ Name of the module where whitelist will be generated
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7641,11 +7848,12 @@ Do not ask any interactive question
 
 ## `setup:db-schema:upgrade`
 
-Installs and upgrades the DB schema
-
 ```bash
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installs and upgrades the DB schema
+
 
 ### `--convert-old-scripts`
 
@@ -7662,7 +7870,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7711,11 +7919,12 @@ Do not ask any interactive question
 
 ## `setup:db:status`
 
-Checks if DB schema or data requires upgrade
-
 ```bash
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Checks if DB schema or data requires upgrade
+
 
 ### `--magento-init-params`
 
@@ -7725,7 +7934,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7774,15 +7983,16 @@ Do not ask any interactive question
 
 ## `setup:di:compile`
 
-Generates DI configuration and all missing classes that can be auto-generated
-
 ```bash
 bin/magento setup:di:compile
 ```
 
+Generates DI configuration and all missing classes that can be auto-generated
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -7831,11 +8041,12 @@ Do not ask any interactive question
 
 ## `setup:install`
 
-Installs the Magento application
-
 ```bash
 bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installs the Magento application
+
 
 ### `--backend-frontname`
 
@@ -8659,7 +8870,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8708,11 +8919,12 @@ Do not ask any interactive question
 
 ## `setup:performance:generate-fixtures`
 
-Generates fixtures
-
 ```bash
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
+
+Generates fixtures
+
 
 
 ### `profile`
@@ -8730,7 +8942,7 @@ Skip reindex
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8779,11 +8991,12 @@ Do not ask any interactive question
 
 ## `setup:rollback`
 
-Rolls back Magento Application codebase, media and database
-
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Rolls back Magento Application codebase, media and database
+
 
 ### `--code-file`, `-c`
 
@@ -8811,7 +9024,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -8860,11 +9073,12 @@ Do not ask any interactive question
 
 ## `setup:static-content:deploy`
 
-Deploys static view files
-
 ```bash
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
+
+Deploys static view files
+
 
 
 ### `languages`
@@ -9037,7 +9251,7 @@ Do not compile parent themes. Supported only in quick and standard strategies.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9086,11 +9300,12 @@ Do not ask any interactive question
 
 ## `setup:store-config:set`
 
-Installs the store configuration. Deprecated since 2.2.0. Use config:set instead
-
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installs the store configuration. Deprecated since 2.2.0. Use config:set instead
+
 
 ### `--base-url`
 
@@ -9154,7 +9369,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9203,11 +9418,12 @@ Do not ask any interactive question
 
 ## `setup:uninstall`
 
-Uninstalls the Magento application
-
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Uninstalls the Magento application
+
 
 ### `--magento-init-params`
 
@@ -9217,7 +9433,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9266,11 +9482,12 @@ Do not ask any interactive question
 
 ## `setup:upgrade`
 
-Upgrades the Magento application, DB data, and schema
-
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Upgrades the Magento application, DB data, and schema
+
 
 ### `--keep-generated`
 
@@ -9313,7 +9530,7 @@ Add to any command to customize Magento initialization parameters For example: "
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9362,15 +9579,16 @@ Do not ask any interactive question
 
 ## `store:list`
 
-Displays the list of stores
-
 ```bash
 bin/magento store:list
 ```
 
+Displays the list of stores
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9419,15 +9637,16 @@ Do not ask any interactive question
 
 ## `store:website:list`
 
-Displays the list of websites
-
 ```bash
 bin/magento store:website:list
 ```
 
+Displays the list of websites
+
+
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9476,11 +9695,12 @@ Do not ask any interactive question
 
 ## `theme:uninstall`
 
-Uninstalls theme
-
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
+
+Uninstalls theme
+
 
 
 ### `theme`
@@ -9508,7 +9728,7 @@ Clear generated static view files.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -9557,11 +9777,12 @@ Do not ask any interactive question
 
 ## `varnish:vcl:generate`
 
-Generates Varnish VCL and echos it to the command line
-
 ```bash
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
+
+Generates Varnish VCL and echos it to the command line
+
 
 ### `--access-list`
 
@@ -9612,7 +9833,7 @@ Path to the file to write vcl
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
