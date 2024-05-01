@@ -3,6 +3,8 @@ title: Composer tips and tricks
 description: Learn about common Composer development tasks and guidance for quickly resolving issues.
 feature: Best Practices
 role: Developer
+hide: yes
+hidefromtoc: yes
 exl-id: 5ead5fb1-3bb3-4e77-a4f1-8e10c4f91efb
 ---
 # Composer tips and tricks

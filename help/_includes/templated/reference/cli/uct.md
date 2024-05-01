@@ -3,7 +3,7 @@
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 3.0.3
+**Version**: 3.0.16
 
 This reference contains 9 commands available through the `bin/uct` command-line tool.
 The initial list is auto generated using the `bin/uct list` command at Adobe Commerce.
@@ -16,11 +16,12 @@ Learn more about the tool in [Overview](/help/upgrade/upgrade-compatibility-tool
 
 ## `_complete`
 
-Internal command to provide shell completion suggestions
-
 ```bash
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
 ```
+
+Internal command to provide shell completion suggestions
+
 
 ### `--shell`, `-s`
 
@@ -49,7 +50,7 @@ The version of the completion script
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -98,10 +99,40 @@ Do not ask any interactive question
 
 ## `completion`
 
-Dump the shell completion script
-
 ```bash
 bin/uct completion [--debug] [--] [<shell>]
+```
+
+Dump the shell completion script
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently only bash completion is supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+
+Or dump the script to a local file and source it:
+
+    uct/bin/uct completion bash > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
 ```
 
 
@@ -119,7 +150,7 @@ Tail the completion debug log
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -168,10 +199,23 @@ Do not ask any interactive question
 
 ## `help`
 
-Display help for a command
-
 ```bash
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Display help for a command
+
+
+```
+The help command displays help for a given command:
+
+  uct/bin/uct help list
+
+You can also output the help in other formats by using the --format option:
+
+  uct/bin/uct help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -198,7 +242,7 @@ To output raw command help
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -247,10 +291,29 @@ Do not ask any interactive question
 
 ## `list`
 
-List commands
-
 ```bash
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+List commands
+
+
+```
+The list command lists all commands:
+
+  uct/bin/uct list
+
+You can also display the commands for a specific namespace:
+
+  uct/bin/uct list test
+
+You can also output the information in other formats by using the --format option:
+
+  uct/bin/uct list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  uct/bin/uct list --raw
 ```
 
 
@@ -282,7 +345,7 @@ To skip describing commands' arguments
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -331,11 +394,12 @@ Do not ask any interactive question
 
 ## `refactor`
 
-Resolves the issues that can be fixed automatically. The code in the path provided will be updated.
-
 ```bash
 bin/uct refactor <path>
 ```
+
+Resolves the issues that can be fixed automatically. The code in the path provided will be updated.
+
 
 
 ### `path`
@@ -346,7 +410,7 @@ Path to resolve issues in.
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -395,11 +459,12 @@ Do not ask any interactive question
 
 ## `core:code:changes`
 
-The Upgrade Compatibility Tool is a command-line tool that checks a Adobe Commerce instance against a specific version by analyzing all the non-Adobe Commerce modules installed in it. Returns a list of errors and warnings that you must address before upgrading to a new version of Adobe Commerce code.
-
 ```bash
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
+
+The Upgrade Compatibility Tool is a command-line tool that checks a Adobe Commerce instance against a specific version by analyzing all the non-Adobe Commerce modules installed in it. Returns a list of errors and warnings that you must address before upgrading to a new version of Adobe Commerce code.
+
 
 
 ### `dir`
@@ -421,7 +486,7 @@ Path of the file where the output will be exported (Json Format)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -470,12 +535,12 @@ Do not ask any interactive question
 
 ## `dbschema:diff`
 
-Allow to list Adobe Commerce DB schema differences between two selected versions.
-Available versions: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2.4.6
-
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
 ```
+
+Allow to list Adobe Commerce DB schema differences between two selected versions. Available versions: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
+
 
 
 ### `current-version`
@@ -492,7 +557,7 @@ target version (e.g. 2.4.5).
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -541,11 +606,12 @@ Do not ask any interactive question
 
 ## `graphql:compare`
 
-GraphQL schema compatibility verification
-
 ```bash
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
+
+GraphQL schema compatibility verification
+
 
 
 ### `schema1`
@@ -568,7 +634,7 @@ Path of the file where the output will be exported (JSON Format)
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value
@@ -617,11 +683,12 @@ Do not ask any interactive question
 
 ## `upgrade:check`
 
-The Upgrade Compatibility Tool is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. Returns a list of errors and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
-
 ```bash
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
+
+The Upgrade Compatibility Tool is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules installed in it. Returns a list of errors and warnings that must be addressed before upgrading to the latest version of Adobe Commerce.
+
 
 
 ### `dir`
@@ -638,7 +705,7 @@ Current Adobe Commerce version, version of the Adobe Commerce installation will 
 
 ### `--coming-version`, `-c`
 
-Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Available Adobe Commerce versions: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.5 \| 2.4.4-p2 \| 2.4.5-p1 \| 2.4.4-p3 \| 2.4.5-p2 \| 2.4.6
+Target Adobe Commerce version. The latest released stable version of Adobe Commerce will be used if omitted. Available Adobe Commerce versions: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7
    
 -  Accepts a value
 
@@ -676,7 +743,7 @@ Execution context. This option is for integration purposes and does not affect t
 
 ### `--help`, `-h`
 
-Display help for the given command. When no command is given display help for the \<info>list\</info> command
+Display help for the given command. When no command is given display help for the list command
    
 -  Default: `false`
 -  Does not accept a value

@@ -7,7 +7,7 @@ feature: Configuration, Best Practices, Install, Integration, Security, Release 
 # Adobe Commerce Operational Guides {#operational-guides}
 
 - [Operational Guides Home](home.md)
-- [Release Information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/latest)
+- [Release Information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
 - [Performance](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
 - [Security and Compliance](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [Implementation Playbook](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)

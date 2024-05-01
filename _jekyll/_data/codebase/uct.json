@@ -1,7 +1,7 @@
 {
     "application": {
         "name": "Upgrade Compatibility Tool",
-        "version": "3.0.3"
+        "version": "3.0.16"
     },
     "commands": [
         {
@@ -123,7 +123,7 @@
             "usage": [
                 "completion [--debug] [--] [<shell>]"
             ],
-            "help": "The <info>completion<\/> command dumps the shell completion script required\nto use shell autocompletion (currently only bash completion is supported).\n\n<comment>Static installation\n-------------------<\/>\n\nDump the script to a global completion file and restart your shell:\n\n    <info>bin\/uct completion bash | sudo tee \/etc\/bash_completion.d\/uct<\/>\n\nOr dump the script to a local file and source it:\n\n    <info>bin\/uct completion bash > completion.sh<\/>\n\n    <comment># source the file whenever you use the project<\/>\n    <info>source completion.sh<\/>\n\n    <comment># or add this line at the end of your \"~\/.bashrc\" file:<\/>\n    <info>source \/path\/to\/completion.sh<\/>\n\n<comment>Dynamic installation\n--------------------<\/>\n\nAdd this to the end of your shell configuration file (e.g. <info>\"~\/.bashrc\"<\/>):\n\n    <info>eval \"$(\/Users\/dimashevtsov\/Projects\/tools\/uct\/uct\/bin\/uct completion bash)\"<\/>",
+            "help": "The <info>completion<\/> command dumps the shell completion script required\nto use shell autocompletion (currently only bash completion is supported).\n\n<comment>Static installation\n-------------------<\/>\n\nDump the script to a global completion file and restart your shell:\n\n    <info>uct\/bin\/uct completion bash | sudo tee \/etc\/bash_completion.d\/uct<\/>\n\nOr dump the script to a local file and source it:\n\n    <info>uct\/bin\/uct completion bash > completion.sh<\/>\n\n    <comment># source the file whenever you use the project<\/>\n    <info>source completion.sh<\/>\n\n    <comment># or add this line at the end of your \"~\/.bashrc\" file:<\/>\n    <info>source \/path\/to\/completion.sh<\/>\n\n<comment>Dynamic installation\n--------------------<\/>\n\nAdd this to the end of your shell configuration file (e.g. <info>\"~\/.bashrc\"<\/>):\n\n    <info>eval \"$(\/var\/jenkins\/workspace\/gendocs-uct-cli\/uct\/bin\/uct completion bash)\"<\/>",
             "definition": {
                 "arguments": {
                     "shell": {
@@ -217,7 +217,7 @@
             "usage": [
                 "help [--format FORMAT] [--raw] [--] [<command_name>]"
             ],
-            "help": "The <info>help<\/info> command displays help for a given command:\n\n  <info>bin\/uct help list<\/info>\n\nYou can also output the help in other formats by using the <comment>--format<\/comment> option:\n\n  <info>bin\/uct help --format=xml list<\/info>\n\nTo display the list of available commands, please use the <info>list<\/info> command.",
+            "help": "The <info>help<\/info> command displays help for a given command:\n\n  <info>uct\/bin\/uct help list<\/info>\n\nYou can also output the help in other formats by using the <comment>--format<\/comment> option:\n\n  <info>uct\/bin\/uct help --format=xml list<\/info>\n\nTo display the list of available commands, please use the <info>list<\/info> command.",
             "definition": {
                 "arguments": {
                     "command_name": {
@@ -320,7 +320,7 @@
             "usage": [
                 "list [--raw] [--format FORMAT] [--short] [--] [<namespace>]"
             ],
-            "help": "The <info>list<\/info> command lists all commands:\n\n  <info>bin\/uct list<\/info>\n\nYou can also display the commands for a specific namespace:\n\n  <info>bin\/uct list test<\/info>\n\nYou can also output the information in other formats by using the <comment>--format<\/comment> option:\n\n  <info>bin\/uct list --format=xml<\/info>\n\nIt's also possible to get raw list of commands (useful for embedding command runner):\n\n  <info>bin\/uct list --raw<\/info>",
+            "help": "The <info>list<\/info> command lists all commands:\n\n  <info>uct\/bin\/uct list<\/info>\n\nYou can also display the commands for a specific namespace:\n\n  <info>uct\/bin\/uct list test<\/info>\n\nYou can also output the information in other formats by using the <comment>--format<\/comment> option:\n\n  <info>uct\/bin\/uct list --format=xml<\/info>\n\nIt's also possible to get raw list of commands (useful for embedding command runner):\n\n  <info>uct\/bin\/uct list --raw<\/info>",
             "definition": {
                 "arguments": {
                     "namespace": {
@@ -614,11 +614,11 @@
         },
         {
             "name": "dbschema:diff",
-            "description": "Allow to list Adobe Commerce DB schema differences between two selected versions.\nAvailable versions: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2.4.6",
+            "description": "Allow to list Adobe Commerce DB schema differences between two selected versions. Available versions: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8",
             "usage": [
                 "dbschema:diff <current-version> <target-version>"
             ],
-            "help": "Allow to list Adobe Commerce DB schema differences between two selected versions.\nAvailable versions: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2.4.6",
+            "help": "Allow to list Adobe Commerce DB schema differences between two selected versions. Available versions: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8",
             "definition": {
                 "arguments": {
                     "current-version": {
@@ -838,7 +838,7 @@
                         "accept_value": true,
                         "is_value_required": false,
                         "is_multiple": false,
-                        "description": "Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Available Adobe Commerce versions: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2.4.6",
+                        "description": "Target Adobe Commerce version. The latest released stable version of Adobe Commerce will be used if omitted. Available Adobe Commerce versions: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.4-p2 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.4-p6 | 2.4.4-p7 | 2.4.4-p8 | 2.4.5 | 2.4.5-p1 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.5-p5 | 2.4.5-p6 | 2.4.5-p7 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.6-p3 | 2.4.6-p4 | 2.4.6-p5 | 2.4.7-beta1 | 2.4.7-beta2 | 2.4.7-beta3 | 2.4.7",
                         "default": null
                     },
                     "json-output-path": {
