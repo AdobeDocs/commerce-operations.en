@@ -387,13 +387,3 @@ These files can be inspected with any tool you use to view XML or JSON, which wi
 >[!NOTE]
 >
 >`--state-monitor` is not compatible with PHP versions `8.3.0` - `8.3.4` due to a bug in the PHP garbage collector. If you are using PHP 8.3, you must upgrade to `8.3.5` or newer in order to use this feature.
-
-## Known Issues
-
-### Requests getting lost in cases of worker thread ending.
-
-If there is a problem with a worker thread that causes the worker thread to end, then any HTTP requests that are already queued to that same worker thread will get a TCP socket connection reset. With a reverse proxy, such as NGINX, in front of the server, these errors will appear as `502` errors. Workers may die from crashing, out of memory killer, or PHP errors in third-party extensions. The default behaviour of Swoole's HTTP Server causes this issue. By default, the HTTP Server is started in `SWOOLE_BASE` mode. In this mode, the HTTP requests that come in are assigned to worker threads in a queue, even if the worker thread is still processing a previous request. If you change this to the `SWOOLE_PROCESS` mode, then the connections are maintained by the main process and it uses significantly more inter-process communication. The downside to `SWOOLE_PROCESS` is that it does not support PHP ZTS. Read the [Swoole documentation](https://wiki.swoole.com/en/#/learn?id=swoole_process) for more information. 
-
-### Application Server may use previous attributes configuration in certain conditions.
-
-The `CatalogGraphQl\Model\Config\AttributeReader` in `2.4.7` contains a rare bug that can cause a GraphQL request to get a response using previous state of Attributes configuration. A fix for this was delivered in `2.4-develop`, but not in time for `2.4.7` release.
