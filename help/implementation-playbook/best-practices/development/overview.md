@@ -43,9 +43,9 @@ The following sections include best practices information for the development ph
 
 ## Checkout process
 
-| Best practice                                                  | Description                                                                     |
-|----------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Performance and scale](checkout.md)                           | Build performant Adobe Commerece checkout experiences that scale for your       |
+| Best practice                        | Description                                                                                      |
+|--------------------------------------|--------------------------------------------------------------------------------------------------|
+| [Performance and scale](checkout.md) | Use modern development tools to build performant Adobe Commerece checkout experiences that scale |
 
 ## Database
 
