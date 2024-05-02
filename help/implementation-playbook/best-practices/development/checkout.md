@@ -34,7 +34,9 @@ Consider the following use case:
 
 Describe LCBO's flash sale and inventory check use case
 
-Compare/contrast App Builder scenario with custom PHP code that demonstrates the superiority of App Builder
+Add architectural diagram
+
+Compare/contrast App Builder scenario with custom PHP code that demonstrates the superiority of App Builder?
 
 ### Example
 
