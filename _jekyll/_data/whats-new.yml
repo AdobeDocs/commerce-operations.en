@@ -1,8 +1,54 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Apr 9 14:35:35 2024
+updated: Thu May 2 12:52:57 2024
 entries:
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct).
+  versions: ''
+  type: technical
+  date: April 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/845
+  merge_commit: ae9b29601953f25ca28f253f557d547b200616a0
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
+- description: Reorganized the _Operational Guides_ home page (this page) and moved
+    the _[Command-Line Tools Reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)_
+    guide to the _[Tools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)_
+    guide.
+  versions: ''
+  type: major-update
+  date: April 26, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/843
+  merge_commit: 839b4e26a7c5d662093c7c1eec3fd5883ed7706a
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added a new [summary page](https://experienceleague.adobe.com/docs/commerce-operations/events/summit/2024.html)
+    for Adobe Summit.
+  versions: ''
+  type: new-topic
+  date: April 26, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/842
+  merge_commit: 1c2c75da7cda0e3c38ea904c98932472b618a3e5
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+- description: Updated the [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    page to include information about all available betas for Adobe Commerce.
+  versions: ''
+  type: major-update
+  date: April 15, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/823
+  merge_commit: a362cad66d38a89bacda656d1520047e22262179
+  contributor: slamech
+  membership: false
+  labels:
+  - major-update
 - description: Updated [Released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
   versions: 2.4.7
   type: technical
@@ -14,9 +60,9 @@ entries:
   labels:
   - technical
   - 2.4.7
-- description: "Updated the release packages topics for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)
+- description: Updated the release packages topics for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)
     and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source).<br/>
-    Added a release packages topic for [B2B for Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b)."
+    Added a release packages topic for [B2B for Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b).
   versions: 2.4.7
   type: major-update
   date: April 9, 2024

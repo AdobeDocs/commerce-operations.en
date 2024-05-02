@@ -2,7 +2,7 @@
 title: What's new in implementation best practices
 description: This page contains recent changes that we think you'd like to see. We
   exclude all minor updates, such as copy editing, from this list.
-updated: Wed Apr 3 12:08:34 2024
+updated: Thu May 2 12:53:01 2024
 entries:
 - description: Added best practice for [upgrading MariaDB](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html)
     to 10.5.1 and later.
