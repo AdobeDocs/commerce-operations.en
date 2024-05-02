@@ -31,7 +31,21 @@ The following sections include best practices information for the development ph
 | [Code review](code-review.md)                                   | Recommended validation process to ensure that implemented functionality meets requirements                                           |
 | [Composer vs Git](code-management.md)                           | Determine how to distribute custom code with consideration for release management, code complexity, and dependency management        |
 | [Branching strategy](git-branching.md)                          | Manage source code in Git repositories                                                                                               |
-| [GRA examples](../../architecture/global-reference/examples.md) | Understand common methods of organizing a [global reference architecture](../../architecture/global-reference/overview.md) code base |
+
+## Platform and services
+
+| Best practice                                                                                                                                          | Description                                                                                                 |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [Builds and deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Describes best practices for the build and deploy stages of Adobe Commerce on cloud infrastructure projects |
+| Debugging                                                                                                                                              | Systematically and effectively debug the Adobe Commerce framework                                           |
+| [Static content deployment](static-content-deployment.md)                                                                                              | Avoid issues with static content not appearing on your storefront                                           |
+| [Troubleshooting](troubleshooting.md)                                                                                                                  | Troubleshoot common Adobe Commerce implementation issues                                                    |
+
+## Checkout process
+
+| Best practice                                                  | Description                                                                     |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [Performance and scale](checkout.md)                           | Build performant Adobe Commerece checkout experiences that scale for your       |
 
 ## Database
 
@@ -61,12 +75,3 @@ The following sections include best practices information for the development ph
 | [Extensions](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Describes development patterns to help ensure compatibility between your extension, future versions of Adobe Commerce, and other custom extensions |
 | [Private content blocks](private-content-block-configuration.md)                        | Configure private content blocks to optimize storefront performance                                                                                |
 | [Modify core and third-party PHP code](modifying-core-and-third-party-code.md)          | Modify the functionality, result, or input of any code that you did not author or do not directly control                                          |
-
-## Platform and services
-
-| Best practice                                                                                                                                          | Description                                                                                                 |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Builds and deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Describes best practices for the build and deploy stages of Adobe Commerce on cloud infrastructure projects |
-| Debugging                                                                                                                                              | Systematically and effectively debug the Adobe Commerce framework                                           |
-| [Static content deployment](static-content-deployment.md)                                                                                              | Avoid issues with static content not appearing on your storefront                                           |
-| [Troubleshooting](troubleshooting.md)                                                                                                                  | Troubleshoot common Adobe Commerce implementation issues                                                    |
