@@ -17,7 +17,7 @@ Follow these general best practices when planning cart and checkout customizatio
 
 - Use the built-in cart and checkout [REST](https://developer.adobe.com/commerce/webapi/rest/quick-reference/) or [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/) APIs. An API-first approach to development promotes scalability and performance.
 - Use Adobe's modern development tools and services to optimize performance, simplify future Adobe Commerce upgrades, and lower your total cost of ownership of the platform. These tools and services include [App Builder](https://developer.adobe.com/commerce/extensibility/app-development/), [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/), and [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/overview).
-- Do not use custom PHP code to customize the built-in cart and checkout capability. In addition to potential performance issues, using custom PHP code can result in complex Adobe Commerce upgrades increase your total cost of ownership of the platform.
+- Do not use custom PHP code to customize the built-in cart and checkout capability. In addition to potential performance issues, using custom PHP code can result in complex Adobe Commerce upgrades and increase your total cost of ownership of the platform.
 - If PHP-based cart and checkout customization is unavoidable, use [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/)-approved extensions only. All marketplace extensions are subject to [extensive review](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) to verify that they meet Adobe Commerce coding standards and best practices.
 
 This page also describes common scenarios that may require customizations to the checkout process (for example, flash sales).
@@ -30,7 +30,7 @@ This page also describes common scenarios that may require customizations to the
 
 A "[!DNL flash sale]" is a promotional strategy where a merchant offers a discount for customers who purchase items within a short time frame.
 
-Consider the following use use:
+Consider the following use case:
 
 Describe LCBO's flash sale and inventory check use case
 
