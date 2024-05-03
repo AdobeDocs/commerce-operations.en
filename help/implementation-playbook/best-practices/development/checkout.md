@@ -15,6 +15,10 @@ As a developer, you may need to customize or integrate the checkout process with
 
 Performance is key in maintaining a good user experience, especially during high-traffic events like flash sales. Always follow best practices for performance optimization.
 
+>[!NOTE]
+>
+>Catalog configuration options can also affect checkout performance. See the [catalog management](../planning/catalog-management.md) best practices to learn about recommendations for configuring cart limits and product attributes, listing pagination, options, promotions, and variations.
+
 ### Customizations
 
 Follow these general best practices when planning cart and checkout customizations:
@@ -39,13 +43,9 @@ Follow these general best practices when planning cart and checkout integrations
 
 - **Create an integration**: Create an integration using App Builder to allow your third-party inventory management system to communicate with Adobe Commerce.
 
-- **Third-party inventory checks**: Use API Mesh to do real-time inventory checks at checkout. Adobe's API Mesh can be used to orchestrate calls between your third-party inventory management system and Adobe Commerce. During high-traffic events like flash sales, consider running these checks more frequently to ensure accurate inventory levels.
+- **Third-party inventory checks**: Use API Mesh to do real-time inventory checks at checkout. You can use API Mesh to orchestrate calls between your third-party inventory management system and Adobe Commerce. During high-traffic events like flash sales, consider running these checks more frequently to ensure accurate inventory levels. Running these checks outside of Adobe Commerce improves performance.
 
-- **Test tour integration**: Thoroughly test your integration to ensure it works as expected and doesn't introduce performance issues.
-
->[!NOTE]
->
->Catalog configuration options can also affect checkout performance. See the [catalog management](../planning/catalog-management.md) best practices to learn about recommendations for configuring cart limits and product attributes, listing pagination, options, promotions, and variations.
+- **Test your integration**: Thoroughly test your integration to ensure it works as expected and doesn't introduce performance issues.
 
 ## [!DNL Flash sales]
 
