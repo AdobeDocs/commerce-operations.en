@@ -61,7 +61,7 @@ Consider the following use case:
 
 ### Example
 
-The following example provides a design pattern for implementing inventory checks for the checkout process during a flash sale or similar promotional event.
+The following example provides a design pattern for implementing inventory checks at checkout during a flash sale or similar promotional event.
 
 Prerequisites and code samples:
 
