@@ -11,6 +11,12 @@ The [checkout process](https://experienceleague.adobe.com/en/docs/commerce-admin
 
 As a developer, you may need to customize or integrate the checkout process with third-party systems based on a merchant's business requirements. The goal of this page is to provide you with both general best practices and recommendations for specific use cases, such as promotional events.
 
+1. **Customization**: Involves making fundamental changes to the core structure of the Adobe Commerce application to meet specific business needs. Customizations can include enabling customers to personalize the products they purchase, such as choosing different colors or adding custom messages.
+
+2. **Integration**: Refers to the process of connecting Adobe Commerce with third-party systems to share data and enhance functionality. Adobe Commerce provides modern development tools and robust APIs for custom integrations. This enables seamless connectivity with various external systems and applications.
+
+Customization tailors the Adobe Commerce platform to specific business requirements and integrations connect the platform with other systems to expand its capabilities and streamline operations.
+
 ## General best practices
 
 Performance is key in maintaining a good user experience, especially during high-traffic events like flash sales. Always follow best practices for performance optimization.
@@ -41,9 +47,9 @@ Follow these general best practices when planning cart and checkout integrations
 
 - **Optimize performance**: Use Adobe's modern development tools and services to optimize performance, simplify future Adobe Commerce upgrades, and lower your total cost of ownership of the platform. These tools and services include [App Builder](https://developer.adobe.com/commerce/extensibility/app-development/), [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/), and [Catalog Service](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/overview).
 
-- **Create an integration**: Create an integration using App Builder to allow your third-party inventory management system to communicate with Adobe Commerce.
+- **Create an integration**: Create an integration using [App Builder](https://developer.adobe.com/commerce/extensibility/app-development/) to allow your third-party inventory management system to communicate with Adobe Commerce.
 
-- **Third-party inventory checks**: Use API Mesh to do real-time inventory checks at checkout. You can use API Mesh to orchestrate calls between your third-party inventory management system and Adobe Commerce. During high-traffic events like flash sales, consider running these checks more frequently to ensure accurate inventory levels. Running these checks outside of Adobe Commerce improves performance.
+- **Third-party inventory checks**: Use [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/) to do real-time inventory checks at checkout. You can use API Mesh to orchestrate calls between your third-party inventory management system and Adobe Commerce. During high-traffic events like flash sales, consider running these checks more frequently to ensure accurate inventory levels. Running these checks outside of Adobe Commerce improves performance.
 
 - **Test your integration**: Thoroughly test your integration to ensure it works as expected and doesn't introduce performance issues.
 
