@@ -66,7 +66,7 @@ After the Application Server feature is enabled on your Pro project, complete th
 1. Add updated files to the git index with this command:
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml application-server/*
    ```
 
 1. Commit your changes with this command:
