@@ -41,12 +41,6 @@ The following sections include best practices information for the development ph
 | [Static content deployment](static-content-deployment.md)                                                                                              | Avoid issues with static content not appearing on your storefront                                           |
 | [Troubleshooting](troubleshooting.md)                                                                                                                  | Troubleshoot common Adobe Commerce implementation issues                                                    |
 
-## Checkout process
-
-| Best practice                        | Description                                                                                      |
-|--------------------------------------|--------------------------------------------------------------------------------------------------|
-| [Performance and scale](checkout.md) | Use modern development tools to build performant Adobe Commerece checkout experiences that scale |
-
 ## Database
 
 | Best practice                                                  | Description                                                                     |

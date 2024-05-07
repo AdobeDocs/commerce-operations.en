@@ -84,7 +84,6 @@ mini-toc-levels: 3
     - [Exception handling](best-practices/development/exception-handling.md)
     - [Git branching](best-practices/development/git-branching.md)
     - [Catalog image resizing](best-practices/development/catalog-image-resizing.md)
-    - [Checkout performance](best-practices/development/checkout.md)
     - [Image optimization](best-practices/development/image-optimization.md)
     - [Troubleshooting](best-practices/development/troubleshooting.md)
     - [Optimize CSS and JS files](best-practices/development/optimize-css-js-files.md)
