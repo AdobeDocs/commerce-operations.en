@@ -95,9 +95,9 @@ When the AsyncOrder module is enabled, the following REST endpoints and GraphQL 
 
 **REST:**
 
-- `POST /V1/carts/mine/payment-information`
-- `POST /V1/guest-carts/:cartId/payment-information`
-- `POST /V1/negotiable-carts/:cartId/payment-information`
+- [`POST /V1/carts/mine/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartsminepayment-information#operation/PostV1CartsMinePaymentinformation)
+- [`POST /V1/guest-carts/{cartId}/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIdpayment-information#operation/PostV1GuestcartsCartIdPaymentinformation)
+- [`POST /V1/negotiable-carts/{cartId}/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/negotiable-cartscartIdpayment-information#operation/PostV1NegotiablecartsCartIdPaymentinformation)
 
 **GraphQL:**
 
