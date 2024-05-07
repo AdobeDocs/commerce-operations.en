@@ -16,7 +16,7 @@ Performance is key in maintaining a good user experience. You can optimize check
 - [Inventory Check on Cart Load](#disable-inventory-check)—Choose to skip inventory validation of cart items.
 - [Load balancing](#load-balancing)—Enable secondary connections for the MySQL database and Redis instance.
 
-The AsyncOrder, Deferred Total Calculation, and Inventory Check on Cart Load configuration options all work independently. You can use all three features simultaneously or enable and disable features in any combination.
+The AsyncOrder, Deferred Total Calculation, and Inventory Check on Cart Load configuration options all work independently. You can use all three features simultaneously or enable and disable the features in any combination.
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ AsyncOrder supports a limited set of Adobe Commerce features.
 The following features are **not** supported by AsyncOrder, but continue to work synchronously:
 
 - Payment Methods not included in the supported feature list
-- Multi Address Checkout
+- Multi-Address Checkout
 - Admin Order Creation
 
 #### Web API support
@@ -110,7 +110,7 @@ When the AsyncOrder module is enabled, the following REST endpoints and GraphQL 
 
 #### Excluding payment methods
 
-Developers can explicitly exclude certain payments methods from Asynchronous Order placement by adding them to the `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` array. Orders that use excluded payment methods are processed synchronously.
+Developers can explicitly exclude certain payments methods from asynchronous order placement by adding them to the `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` array. Orders that use excluded payment methods are processed synchronously.
 
 ### Negotiable Quote Async Order
 
@@ -118,7 +118,7 @@ The _Negotiable Quote Async Order_ B2B module enables you to save order items as
 
 ## Deferred Total Calculation
 
-The _Deferred Total Calculation_ module optimizes the checkout process by deferring the total calculation until it is requested for the shopping cart or during final checkout steps. When enabled, only the subtotal calculates as a customer adds products to the shopping cart.
+The _Deferred Total Calculation_ module optimizes the checkout process by deferring the total calculation until it is requested for the shopping cart or during the final checkout steps. When enabled, only the subtotal calculates as a customer adds products to the shopping cart.
 
 Deferred Total Calculation is **disabled** by default. Use the command-line interface to enable these features, or edit the `app/etc/env.php` file according to the corresponding README files defined in the [_Module Reference Guide_](https://developer.adobe.com/commerce/php/module-reference/).
 
