@@ -14,7 +14,7 @@ topic: Administration, Commerce, Development, Performance
 - [Development environment recommendations](development-environment.md)
 - [Configuration best practices](configuration.md)
 - [Deployment flow](deployment-flow.md)
-- [High-throughput order processing](high-throughput-order-processing.md)
+- [Checkout](high-throughput-order-processing.md)
 - Advanced concepts {#concepts}
   - [Advanced setup](advanced-setup.md)
   - [Advanced [!DNL JavaScript] bundling](advanced-js-bundling.md)
