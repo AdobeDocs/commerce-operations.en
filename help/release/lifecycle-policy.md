@@ -29,13 +29,12 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 
 {style="table-layout:auto"}
 
-<sup>1 End of software support includes both end of quality fixes and end of security fixes.</sup><br>
-<sup>2 Starting with the 2.4.5-p8 security patch.</sup><br>
-<sup>3 Starting with the 2.4.4-p9 security patch.</sup><br>
-
 >[!NOTE]
 >
->See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup>1</sup> End of software support includes both end of quality fixes and end of security fixes.
+>- <sup>2</sup> Starting with the 2.4.5-p8 security patch.
+>- <sup>3</sup> Starting with the 2.4.4-p9 security patch.
+>- See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
