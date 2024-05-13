@@ -80,17 +80,6 @@
           </td>
       </tr>
       <tr>
-          <td>Quick Checkout</td>
-          <td>-</td>
-          <td>1.0.0+</td>
-          <td>1.2.0+</td>
-          <td>1.0.0+</td>
-          <td>
-              <a href="https://commercemarketplace.adobe.com/magento-quick-checkout.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Release Notes</a><br/>
-          </td>
-      </tr>
-      <tr>
           <td>Store Fulfillment for Adobe Commerce</td>
           <td>-</td>
           <td>1.5.0</td>
