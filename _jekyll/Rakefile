@@ -77,3 +77,25 @@ desc 'Render the templated files'
 task :render do
   sh '_scripts/render'
 end
+
+desc 'Optimize images in modified uncommitted files. For other images, use "path" such as "rake image_optim path=../path/to/dir/or/file".'
+task :image_optim do
+  puts
+  puts 'Checking images ...'.magenta
+  path = ENV['path']
+
+  unless path
+    puts 'Looking in uncommitted files ...'.blue
+    modified_files = `git ls-files --modified --others --exclude-standard`.split("\n")
+    deleted_files = `git ls-files --deleted`.split("\n")
+    image_files_to_check = (modified_files - deleted_files).select do |file|
+      File.extname(file) =~ /\.(png|jpg|jpeg|gif)/i
+    end
+
+    next puts 'No images to check.'.magenta if image_files_to_check.empty?
+
+    path = image_files_to_check.join(' ')
+  end
+
+  system "bundle exec image_optim --recursive #{path}"
+end
