@@ -8,12 +8,6 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.5-p8 <!--Placeholder for June release-->
-
-The Adobe Commerce 2.4.5-p8 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
-
-For the latest information about the security bug fixes, see [Adobe Security Bulletin TBD](https://helpx.adobe.com/security/products/magento/TBD.html).
-
 ## Adobe Commerce 2.4.5-p7
 
 The Adobe Commerce 2.4.5-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
