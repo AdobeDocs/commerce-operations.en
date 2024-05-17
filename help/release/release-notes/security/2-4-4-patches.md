@@ -3,14 +3,14 @@ title: Release Notes for Adobe Commerce 2.4.4 Security Patches
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 ---
-# Adobe Commerce 2.4.4 Security Patch Release Notes
+# Release Notes for Adobe Commerce 2.4.4 Security Patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
 
 ## Adobe Commerce 2.4.4-p9
 
-The Adobe Commerce 2.4.4-p9 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
+The Adobe Commerce 2.4.4-p9 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of Adobe Commerce and Magento Open Source 2.4.4.
 
 For the latest information about the security bug fixes, see <!--[Adobe Security Bulletin TBD](https://helpx.adobe.com/security/products/magento/TBD.html)-->.
 

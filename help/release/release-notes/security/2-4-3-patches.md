@@ -3,7 +3,7 @@ title: Release Notes for Adobe Commerce 2.4.3 Security Patches
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
 ---
-# Adobe Commerce 2.4.3 Security Patch Release Notes
+# Release Notes for Adobe Commerce 2.4.3 Security Patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
