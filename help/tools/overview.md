@@ -15,5 +15,7 @@ This guide is designed for merchants, developers, and integrators to facilitate 
 
 *  [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
 *  [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+*  [`bin/magento` command-line tool](reference/commerce-on-premises.md)
+*  [`bin/uct` command-line tool](reference/commerce-on-premises.md)
 *  [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
 *  [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)

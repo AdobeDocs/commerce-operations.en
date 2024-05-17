@@ -886,3 +886,14 @@ Merchants are responsible for synchronizing data between production and staging 
 | Availability of HA / Failover| R |   |
 
 {style="table-layout:auto"}
+
+#### Cloud Servers & Scaling
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of CPU resources, data center, disk space | R |   |
+| Availability and execution of surge capacity or emergency upsizing | R |   |
+| Requesting surge capacity |     | R |
+| Monitoring vCPU usage against the limits | R |   |
+
+{style="table-layout:auto"}

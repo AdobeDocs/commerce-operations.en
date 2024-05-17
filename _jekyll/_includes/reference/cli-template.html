@@ -24,19 +24,17 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 
 ## `{{ command.name }}`
 
-{{ command.description | replace: '<', '\<' }}
+```bash
+{{ tool }} {{ command.usage }}
+```
 
-{%- for usage in command.usage %}
-{% if app.name contains 'Cloud' %}
-```bash
-{{ usage }}
+{{ command.description | strip_html }}
+
+{% unless command.help == command.description %}
 ```
-{% else %}
-```bash
-{{ tool }} {{ usage }}
+{{ command.help | strip_html }}
 ```
-{% endif %}
-{%- endfor %}
+{% endunless %}
 {%- unless arguments.size == 0 %}
 {%- for argument in arguments %}
   {%- for item in argument %}
@@ -44,7 +42,7 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 
 ### `{{ item.name }}`
 
-{{ item.description | replace: '<', '\<' }}
+{{ item.description | strip_html }}
    {% unless item.default == nil %}
    {%- if item.default == false or (item.default == empty and item.default != '') %}
 -  Default: `{{ item.default | inspect }}`
@@ -72,7 +70,7 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 
 {%- endif %}
 
-{{ opt.description | replace: '<', '\<' | replace: '|', '\|' }}
+{{ opt.description | strip_html | replace: '|', '\|' }}
    {% unless opt.default == nil %}
    {%- if opt.default == false or opt.default == empty and opt.default != '' %}
 -  Default: `{{ opt.default | inspect }}`

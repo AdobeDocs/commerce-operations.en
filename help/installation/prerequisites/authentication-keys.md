@@ -11,10 +11,10 @@ For access entitlement to Adobe Commerce packages, you must use keys associated 
 
 >[!TIP]
 >
->If you encounter [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), you may not have authorization to access the package or the access entitlement has expired due to an outstanding invoice on your account.
+>If you encounter [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), you may not have authorization to access the package, or the access entitlement has expired due to an outstanding invoice on your account.
 >
 >* If you are the Primary Contact person on the account, make sure that there is no outstanding invoice listed on the account.
->* If the keys provided by the Primary Contact are not working and there are no outstanding invoices on the account, contact [Adobe Commerce Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for assistance using the MAGEID of the Primary Contact.
+>* If the keys provided by the Primary Contact are not working and there are no outstanding invoices on the account, the Primary Contact should contact [Adobe Commerce Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for assistance.
 
 To create authentication keys:
 
