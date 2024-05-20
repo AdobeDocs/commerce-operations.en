@@ -11,3 +11,9 @@ description: Learn about security bug fixes, security enhancements, and other se
 The Adobe Commerce 2.4.6-p5 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of Adobe Commerce and Magento Open Source 2.4.7.
 
 For the latest information about these fixes, see <!--[Adobe Security Bulletin APSB24-(https://helpx.adobe.com/security/products/magento/APSB24-##.html)-->.
+
+## Security highlight
+
+
+
+
