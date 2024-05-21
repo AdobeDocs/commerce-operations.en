@@ -97,5 +97,5 @@ task :image_optim do
     path = image_files_to_check.join(' ')
   end
 
-  system "bundle exec image_optim --recursive #{path}"
+  system "bundle exec image_optim --recursive --no-svgo #{path}"
 end
