@@ -11,31 +11,6 @@
         Software dependencies
       </th>
       <th>2.4.7</th>
-      <th>2.4.6-p5</th>
-      <th>2.4.6-p4</th>
-      <th>2.4.6-p3</th>
-      <th>2.4.6-p2</th>
-      <th>2.4.6-p1</th>
-      <th>2.4.6</th>
-      <th>2.4.5-p7</th>
-      <th>2.4.5-p6</th>
-      <th>2.4.5-p5</th>
-      <th>2.4.5-p4</th>
-      <th>2.4.5-p3</th>
-      <th>2.4.5-p2</th>
-      <th>2.4.5-p1</th>
-      <th>2.4.5</th>
-      <th>2.4.4-p8</th>
-      <th>2.4.4-p7</th>
-      <th>2.4.4-p6</th>
-      <th>2.4.4-p5</th>
-      <th>2.4.4-p4</th>
-      <th>2.4.4-p3</th>
-      <th>2.4.4-p2</th>
-      <th>2.4.4-p1</th>
-      <th>2.4.4</th>
-      <th>2.4.3-p3</th>
-      <th>2.4.2-p2</th>
     </tr>
   </thead>
   <tbody>
@@ -44,87 +19,144 @@
       <td>
             2.7
       </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.2
-      </td>
-      <td>
-            2.1
-      </td>
-      <td>
-            2.1
-      </td>
-      <td>
-            2.1
-      </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
             8.11
       </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+            2.12
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            10.6
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
+      <td>
+            8.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            8.3, 8.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+            3.13
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            7.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Varnish]</span></td>
+      <td>
+            7.5
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+            2.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+            1.24
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+            8.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+            ✔️
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+            3.11.20
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+            Redis 7.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+            2.11
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>
+        Software dependencies
+      </th>
+      <th>2.4.6-p5</th>
+      <th>2.4.6-p4</th>
+      <th>2.4.6-p3</th>
+      <th>2.4.6-p2</th>
+      <th>2.4.6-p1</th>
+      <th>2.4.6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
             8.11, 7.17
       </td>
@@ -143,63 +175,6 @@
       <td>
             8.4, 7.17
       </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.17
-      </td>
-      <td>
-            7.16
-      </td>
-      <td>
-            7.16
-      </td>
-      <td>
-            7.16
-      </td>
-      <td>
-            7.16
-      </td>
-      <td>
-            7.9
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
@@ -207,9 +182,6 @@
             2.12
       </td>
       <td>
-            2.12
-      </td>
-      <td>
             2.5
       </td>
       <td>
@@ -223,63 +195,6 @@
       </td>
       <td>
             2.5
-      </td>
-      <td>
-            1.3
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.3
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -302,9 +217,383 @@
       <td>
             10.6
       </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-            10.6
+            8.0
       </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            8.2, 8.1
+      </td>
+      <td>
+            8.2, 8.1
+      </td>
+      <td>
+            8.2, 8.1
+      </td>
+      <td>
+            8.2, 8.1
+      </td>
+      <td>
+            8.2, 8.1
+      </td>
+      <td>
+            8.2, 8.1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+            3.12, 3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Varnish]</span></td>
+      <td>
+            7.5
+      </td>
+      <td>
+            7.3
+      </td>
+      <td>
+            7.3
+      </td>
+      <td>
+            7.3
+      </td>
+      <td>
+            7.3
+      </td>
+      <td>
+            7.1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+            1.24
+      </td>
+      <td>
+            1.24
+      </td>
+      <td>
+            1.24
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.16
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+            Redis 6.2
+      </td>
+      <td>
+            Redis 6.2
+      </td>
+      <td>
+            Redis 6.2
+      </td>
+      <td>
+            Redis 6.2
+      </td>
+      <td>
+            Redis 6.2
+      </td>
+      <td>
+            Redis 6.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>
+        Software dependencies
+      </th>
+      <th>2.4.5-p7</th>
+      <th>2.4.5-p6</th>
+      <th>2.4.5-p5</th>
+      <th>2.4.5-p4</th>
+      <th>2.4.5-p3</th>
+      <th>2.4.5-p2</th>
+      <th>2.4.5-p1</th>
+      <th>2.4.5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+            1.3
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
             10.4
       </td>
@@ -329,12 +618,471 @@
       <td>
             10.4
       </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-            10.4
+            8.0
       </td>
       <td>
-            10.4
+            8.0
       </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
+            3.9
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            7.0
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Varnish]</span></td>
+      <td>
+            7.5
+      </td>
+      <td>
+            7.3
+      </td>
+      <td>
+            7.3
+      </td>
+      <td>
+            7.3
+      </td>
+      <td>
+            7.3
+      </td>
+      <td>
+            7.1
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+            1.24
+      </td>
+      <td>
+            1.24
+      </td>
+      <td>
+            1.24
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>
+        Software dependencies
+      </th>
+      <th>2.4.4-p8</th>
+      <th>2.4.4-p7</th>
+      <th>2.4.4-p6</th>
+      <th>2.4.4-p5</th>
+      <th>2.4.4-p4</th>
+      <th>2.4.4-p3</th>
+      <th>2.4.4-p2</th>
+      <th>2.4.4-p1</th>
+      <th>2.4.4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.1
+      </td>
+      <td>
+            2.1
+      </td>
+      <td>
+            2.1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.16
+      </td>
+      <td>
+            7.16
+      </td>
+      <td>
+            7.16
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+            1.3
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
             10.4
       </td>
@@ -392,82 +1140,10 @@
       <td>
             8.0
       </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.3, 8.2
-      </td>
-      <td>
-            8.2, 8.1
-      </td>
-      <td>
-            8.2, 8.1
-      </td>
-      <td>
-            8.2, 8.1
-      </td>
-      <td>
-            8.2, 8.1
-      </td>
-      <td>
-            8.2, 8.1
-      </td>
-      <td>
-            8.2, 8.1
-      </td>
-      <td>
             8.1
       </td>
       <td>
@@ -493,77 +1169,11 @@
       </td>
       <td>
             8.1
-      </td>
-      <td>
-            8.1
-      </td>
-      <td>
-            8.1
-      </td>
-      <td>
-            8.1
-      </td>
-      <td>
-            8.1
-      </td>
-      <td>
-            8.1
-      </td>
-      <td>
-            8.1
-      </td>
-      <td>
-            8.1
-      </td>
-      <td>
-            8.1
-      </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.13
-      </td>
-      <td>
-            3.12, 3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
-            3.11, 3.9
-      </td>
-      <td>
             3.9
       </td>
       <td>
@@ -589,71 +1199,11 @@
       </td>
       <td>
             3.9
-      </td>
-      <td>
-            3.9
-      </td>
-      <td>
-            3.9
-      </td>
-      <td>
-            3.9
-      </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            6.2
-      </td>
-      <td>
-            6.2
-      </td>
-      <td>
-            6.2
-      </td>
-      <td>
-            6.2
-      </td>
-      <td>
-            6.2
-      </td>
-      <td>
-            6.2
-      </td>
-      <td>
-            6.2
-      </td>
-      <td>
             7.0
       </td>
       <td>
@@ -679,12 +1229,6 @@
       </td>
       <td>
             6.2
-      </td>
-      <td>
-            6.0
-      </td>
-      <td>
-            6.0
       </td>
     </tr>
     <tr>
@@ -693,51 +1237,6 @@
             7.5
       </td>
       <td>
-            7.5
-      </td>
-      <td>
-            7.3
-      </td>
-      <td>
-            7.3
-      </td>
-      <td>
-            7.3
-      </td>
-      <td>
-            7.3
-      </td>
-      <td>
-            7.1
-      </td>
-      <td>
-            7.5
-      </td>
-      <td>
-            7.3
-      </td>
-      <td>
-            7.3
-      </td>
-      <td>
-            7.3
-      </td>
-      <td>
-            7.3
-      </td>
-      <td>
-            7.1
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            7.0
-      </td>
-      <td>
-            7.5
-      </td>
-      <td>
             7.3
       </td>
       <td>
@@ -760,67 +1259,10 @@
       </td>
       <td>
             7.0
-      </td>
-      <td>
-            6.5
-      </td>
-      <td>
-            6.4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
-      <td>
-            2.4
-      </td>
       <td>
             2.4
       </td>
@@ -861,51 +1303,6 @@
             1.24
       </td>
       <td>
-            1.24
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.24
-      </td>
-      <td>
-            1.24
-      </td>
-      <td>
-            1.24
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.24
-      </td>
-      <td>
-            1.24
-      </td>
-      <td>
-            1.24
-      </td>
-      <td>
             1.22
       </td>
       <td>
@@ -922,12 +1319,6 @@
       </td>
       <td>
             1.22
-      </td>
-      <td>
-            1.18
-      </td>
-      <td>
-            1.18
       </td>
     </tr>
     <tr>
@@ -951,51 +1342,6 @@
             8.0
       </td>
       <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
-            8.0
-      </td>
-      <td>
             5.7
       </td>
       <td>
@@ -1003,12 +1349,6 @@
       </td>
       <td>
             5.7
-      </td>
-      <td>
-            5.7
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -1040,106 +1380,10 @@
       <td>
             ✔️
       </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.11.20
-      </td>
-      <td>
-            3.9.16
-      </td>
-      <td>
-            3.9.16
-      </td>
-      <td>
-            3.9.16
-      </td>
-      <td>
-            3.9.16
-      </td>
-      <td>
-            3.9.16
-      </td>
-      <td>
-            3.9.16
-      </td>
-      <td>
-            3.9.13
-      </td>
-      <td>
-            3.9.13
-      </td>
-      <td>
-            3.9.13
-      </td>
-      <td>
-            3.9.13
-      </td>
-      <td>
-            3.9.13
-      </td>
-      <td>
-            3.9.13
-      </td>
-      <td>
-            3.9.13
-      </td>
-      <td>
-            3.9.13
-      </td>
-      <td>
             3.9.13
       </td>
       <td>
@@ -1165,38 +1409,11 @@
       </td>
       <td>
             3.8.11
-      </td>
-      <td>
-            3.8.11
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-            Redis 7.0
-      </td>
-      <td>
-            Redis 6.2
-      </td>
-      <td>
-            Redis 6.2
-      </td>
-      <td>
-            Redis 6.2
-      </td>
-      <td>
-            Redis 6.2
-      </td>
-      <td>
-            Redis 6.2
-      </td>
-      <td>
-            Redis 6.2
-      </td>
-      <td>
             Redis 6
       </td>
       <td>
@@ -1222,36 +1439,6 @@
       </td>
       <td>
             Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -1275,51 +1462,6 @@
           --
       </td>
       <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
             7.9
       </td>
       <td>
@@ -1328,90 +1470,263 @@
       <td>
             7.9
       </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>
+        Software dependencies
+      </th>
+      <th>2.4.3-p3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+            1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+            7.16
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+            1.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            10.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
+      <td>
+            8.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            7.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+            3.8
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            6.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Varnish]</span></td>
+      <td>
+            6.5
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+            2.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+            1.18
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+            5.7
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+            ✔️
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+            3.8.11
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+            Redis 6
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
       <td>
             7.9
       </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+          --
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>
+        Software dependencies
+      </th>
+      <th>2.4.2-p2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+            1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+            7.9
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            10.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
+      <td>
+            8.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            7.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+            3.8
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            6.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Varnish]</span></td>
+      <td>
+            6.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+            2.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+            1.18
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
+      <td>
+            ✔️
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
       <td>
           --
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
-      <td>
-            2.11
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
       <td>
           --
       </td>
