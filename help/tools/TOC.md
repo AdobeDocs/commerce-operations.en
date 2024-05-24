@@ -26,7 +26,6 @@ feature: Configuration
     - [Release notes](quality-patches-tool/release-notes.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
-    - [Magento Open Source](reference/magento-open-source.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
 - Observation for Adobe Commerce {#observation-for-adobe-commerce}
     - [Introduction](observation-for-adobe-commerce/intro.md)
