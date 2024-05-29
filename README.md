@@ -121,7 +121,7 @@ To update templated content:
 
    ```
    modified:   _data/product-availability.yml
-   modified:   ../help/_includes/templated/product-availability-extensions.md
+   modified:   help/_includes/templated/product-availability-extensions.md
    ```
 
 1. Push your changes.
