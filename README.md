@@ -105,6 +105,12 @@ To update templated content:
 
    >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command.
 
+1. Navigate back to the `root` directory.
+
+   ```
+   cd ..
+   ```
+
 1. Verify that the expected `help/_includes/templated` files were modified.
 
    ```
@@ -116,6 +122,14 @@ To update templated content:
    ```
    modified:   _data/product-availability.yml
    modified:   ../help/_includes/templated/product-availability-extensions.md
+   ```
+
+1. Push your changes.
+
+   ```
+   git add
+   git commit -m "_descriptive message of the intended commit_"
+   git push
    ```
 
 See the Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles), [Liquid filters](https://jekyllrb.com/docs/liquid/filters/), and other features.
