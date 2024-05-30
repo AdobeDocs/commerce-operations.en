@@ -4,9 +4,19 @@ description: Learn about security bug fixes, security enhancements, and other se
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 ---
 
-# Release Notes for Adobe Commerce 2.4.5 Security Patches
+# Release notes for Adobe Commerce 2.4.5 security patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+The Adobe Commerce 2.4.5-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin TBD](https://helpx.adobe.com/security/products/magento/TBD.html).
+
+### Platform upgrades
+
+* **MariaDB 10.5 support**. This patch release introduces compatibility with MariaDB version 10.5. Adobe Commerce is still compatible with MariaDB version 10.4, but Adobe recommends using Adobe Commerce 2.4.5-p8 and all upcoming 2.4.5 security-only patch releases only with MariaDB version 10.5 because MariaDB 10.4 maintenance ends on June 18, 2024. <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -101,5 +111,3 @@ The Adobe Commerce 2.4.5-p1 security release provides security bug fixes for vul
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 One of the security bug fixes included the creation of a new configuration setting. The **Require email confirmation if email has been changed** configuration setting lets administrators require email confirmation when an Admin user changes their email address. <!-- AC-6292-->
-
-

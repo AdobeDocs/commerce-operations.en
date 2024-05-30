@@ -1,6 +1,6 @@
 # Security patch release notes intro
 
-These security patch release notes capture updates to enhance the security of your Adobe Commerce deployment. Information includes but is not limited to the following:
+These security patch release notes capture updates to enhance the security of your Adobe Commerce deployment. Information includes, but is not limited to, the following:
 
 * Security bug fixes
 * Security highlights that provide more detail about enhancements and updates included in the security patch
