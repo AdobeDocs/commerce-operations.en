@@ -2,7 +2,13 @@
 ---
 # Cloud requirements table
 
-{%- assign requirements = site.data.system-requirements %}
+{%- assign requirements_data = site.data.system-requirements %}
+
+{%- assign grouped_requirements = requirements_data | group_by_exp: "version", "version[0] | slice: 4" %}
+
+{%- for minor_version in grouped_requirements %}
+
+{%- assign requirements = minor_version.items %}
 
 <table style="table-layout:auto">
   <thead>
@@ -41,9 +47,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
         {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['OpenSearch Cloud'] %}
-            {{requirement[1]['OpenSearch Cloud']}}
-          {%- elsif requirement[1]['OpenSearch'] %}
+      <td>{%- if requirement[1]['OpenSearch'] %}
             {{requirement[1]['OpenSearch']}}
           {%- else %}
           --
@@ -97,3 +101,5 @@
     </tr>
   </tbody>
 </table>
+
+{%- endfor %}
