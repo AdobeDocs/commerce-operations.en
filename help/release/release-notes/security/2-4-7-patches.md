@@ -11,7 +11,7 @@ description: Learn about security bug fixes, security enhancements, and other se
 
 The Adobe Commerce 2.4.7-p1 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.7.
 
-For the latest information about the security bug fixes, see [Adobe Security Bulletin TBD](https://helpx.adobe.com/security/products/magento/TBD.html).
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ## Security highlight
 
