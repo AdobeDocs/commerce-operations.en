@@ -10,13 +10,13 @@ Adobe continually strives to find the right balance between making product upgra
 
 ## Features
 
-New features and feature updates are delivered independently from patch releases. Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh and Eventing. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) To learn more about the latest features.
+New features and feature updates are delivered independently from patch releases and are available through [external module, extension, tool, or web service](versioning-policy.md#cloud-infrastructure-services-and-extensibility-release). Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh and Eventing. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) To learn more about the latest features.
 
 Feature releases may vary throughout the year. However, Adobe regularly and continously releases improvements for cloud infrastructure, SaaS products (services), and extensibility tools between the dates specified on this page.
 
 ## Patches
 
-Adobe also releases [patches](versioning-policy.md#patch-release) for each supported release line of the core Adobe Commerce PHP application. Patch releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant. Features are independent of the core codebase and are available through [external module, extension, tool, or web service](versioning-policy.md#extensibility-infrastructure-and-services-release).
+Adobe also releases [patches](versioning-policy.md#patch-release) for each supported release line of the core Adobe Commerce PHP application. Patch releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant.
 
 >[!NOTE]
 >
