@@ -6,9 +6,17 @@ exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 
 # Release schedule
 
-Adobe continually strives to find the right balance between making product upgrades simple and predictable while delivering improvements and new features to early adopters faster (see [versioning policy](versioning-policy.md)). The purpose of this schedule is to provide dates for when Adobe plans to announce the release of substantial new features. These features may vary throughout the year. However, Adobe regularly and continously releases improvements for extensibility tools, infrastructure, and SaaS products (services) between the dates specified on this page.
+Adobe continually strives to find the right balance between making product upgrades simple and predictable while delivering improvements and new features to early adopters faster (see [versioning policy](versioning-policy.md)). The purpose of this schedule is to provide dates for when Adobe plans to announce the release of substantial new features.
 
-Adobe releases [patches](versioning-policy.md#patch-release) for each supported release line of the core Adobe Commerce PHP application. Patch releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant. Features are independent of the core codebase and are available through [external module, extension, tool, or web service](versioning-policy.md#extensibility-infrastructure-and-services-release).
+## Features
+
+Adobe Commerce is an enterprise commerce solution that delivers superior ecommerce experiences for consumers and B2B buyers globally. With thousands of customers and billions in annual gross merchandise value processed through our cloud platform, Adobe Commerce is at the forefront of powering the world's largest and most complex ecommerce experiences for retailers, consumer brands, manufacturers and wholesale distributors globally. To learn more about the latest features, see [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about).
+
+Feature releases may vary throughout the year. However, Adobe regularly and continously releases improvements for cloud infrastructure, SaaS products (services), and extensibility tools between the dates specified on this page.
+
+## Patches
+
+Adobe also releases [patches](versioning-policy.md#patch-release) for each supported release line of the core Adobe Commerce PHP application. Patch releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant. Features are independent of the core codebase and are available through [external module, extension, tool, or web service](versioning-policy.md#extensibility-infrastructure-and-services-release).
 
 >[!NOTE]
 >
