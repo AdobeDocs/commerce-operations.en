@@ -10,7 +10,7 @@ Adobe continually strives to find the right balance between making product upgra
 
 ## Features
 
-Adobe Commerce is an enterprise commerce solution that delivers superior ecommerce experiences for consumers and B2B buyers globally. With thousands of customers and billions in annual gross merchandise value processed through our cloud platform, Adobe Commerce is at the forefront of powering the world's largest and most complex ecommerce experiences for retailers, consumer brands, manufacturers and wholesale distributors globally. To learn more about the latest features, see [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about).
+New features and feature updates are delivered independently from patch releases. Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh and Eventing. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) To learn more about the latest features.
 
 Feature releases may vary throughout the year. However, Adobe regularly and continously releases improvements for cloud infrastructure, SaaS products (services), and extensibility tools between the dates specified on this page.
 
