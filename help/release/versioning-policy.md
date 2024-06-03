@@ -50,7 +50,7 @@ Beta Releases may contain defects and are provided "AS IS" without warranty of a
 
 ## Cloud infrastructure, services, and extensibility release
 
-Feature releases that contain new features and feature updates that are delivered as independent services, separate from patch releases. Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh and Eventing.
+Feature releases that contain new features and feature updates that are delivered as independent services, separate from patch releases. Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh, Integration Starter Kit, and Eventing.
 
 ## Hotfix
 

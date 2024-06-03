@@ -10,7 +10,7 @@ Adobe continually strives to find the right balance between making product upgra
 
 ## Features
 
-New features and feature updates are delivered independently from patch releases and are available through [external module, extension, tool, or web service](versioning-policy.md#cloud-infrastructure-services-and-extensibility-release). Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh and Eventing. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) To learn more about the latest features.
+New features and feature updates are delivered independently from patch releases and are available through [external module, extension, tool, or web service](versioning-policy.md#cloud-infrastructure-services-and-extensibility-release). Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh, Integration Starter Kit, and Eventing. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) to learn more about the latest features.
 
 Feature releases may vary throughout the year. However, Adobe regularly and continously releases improvements for cloud infrastructure, SaaS products (services), and extensibility tools between the dates specified on this page.
 
