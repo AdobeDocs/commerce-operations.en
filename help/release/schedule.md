@@ -3,6 +3,7 @@ title: Release schedule
 description: Learn when Adobe plans to announce the release of new features for Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 ---
+
 # Release schedule
 
 Adobe continually strives to find the right balance between making product upgrades simple and predictable while delivering improvements and new features to early adopters faster (see [versioning policy](versioning-policy.md)). The purpose of this schedule is to provide dates for when Adobe plans to announce the release of substantial new features. These features may vary throughout the year. However, Adobe regularly and continously releases improvements for extensibility tools, infrastructure, and SaaS products (services) between the dates specified on this page.
