@@ -23,9 +23,13 @@ The following are items that you may want to include in a thorough analysis:
 
 - **[!DNL Upgrade Compatibility Tool] results**—This tool makes any upgrade faster and easier by comparing your current code to the target version's code and producing a report of all the issues that need to be addressed. See the [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Key details from the report include:
 
-  -  Current installed version
+  - Current installed version
   - Upgrade target version
   - Number and details of critical errors found
+
+  >[!TIP]
+  >
+  >All of this information (and more) is available in the Site-Wide Analysis Tool [dashboard](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - Upgrading services to support target version. Use the following table template to map out which services you must upgrade. Use the [system requirements](../../installation/system-requirements.md) to determine what to add to the _Upgrade to_ column.
 
