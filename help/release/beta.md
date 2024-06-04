@@ -42,15 +42,6 @@ Expanded data sharing between Adobe Commerce & Adobe Experience Platform to driv
 
 To participate in this beta, send an email request to [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
 
-### Backoffice Integration Starter Kit (Private Beta)
-
-The backoffice [integration starter kit](https://developer-stage.adobe.com/commerce/extensibility/app-development/starter-kit/) provides developers with an accelerator to build event-driven integrations with systems like ERPs, CRMs, and OMSs. With the starter kit, you can reduce development costs by up to 50%. The starter kit also follows Adobe Commerce best practices that reduce the cost of maintenance significantly. Starter kit highlights include:
-- Data synchronization for commonly used objects like product, order, customer, stock, and shippment
-- Architectural blueprints following best practices
-- Onboarding scripts to accelerate development
-
-To participate in this beta, complete the [enrollment form](https://forms.office.com/r/YbYArqE3DT).
-
 ### Adobe Commerce Foundation (Public Beta) 
 
 Each Adobe Commerce Foundation beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
