@@ -5,11 +5,17 @@ exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
 ---
 # [!DNL Site-Wide Analysis Tool]
 
+>[!IMPORTANT]
+>
+>Effective April 23, 2024, the [!DNL Site-Wide Analysis Tool] will be decommissioned for all Adobe Commerce on-premises customers.
+
 This guide provides a holistic overview of the [!DNL Site-Wide Analysis Tool]. It describes the uses, step-by-step instructions for installation, and how to access the tool.
 
 ## What is [!DNL Site-Wide Analysis Tool]? 
 
 The [!DNL Site-Wide Analysis Tool] is a proactive self-service tool and central repository that includes detailed system insights and recommendations to ensure the security and operability of your Adobe Commerce installation. It provides 24/7 real-time performance monitoring, reports, and advice to identify potential issues and better visibility into site health, safety, and application configurations. It helps reduce resolution time and improve site stability and performance.
+
+![Site-Wide Analysis Tool dashboard](../../assets/tools/swat-dashboard.png){zoomable="yes"}
 
 See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to learn more.
 

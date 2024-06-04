@@ -1,6 +1,6 @@
 ---
 title: Software Recommendations
-description: Review a list of recommended software related to optimal performance of Adobe Commerce and Magento Open Source deployments.
+description: Review a list of recommended software related to optimal performance of Adobe Commerce deployments.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
 ---

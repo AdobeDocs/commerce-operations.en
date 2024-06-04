@@ -1,15 +1,15 @@
 ---
 title: System requirements
-description: Use this reference to identify required software dependencies that have been tested with Adobe Commerce and Magento Open Source releases.
+description: Use this reference to identify required software dependencies that have been tested with Adobe Commerce releases.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 ---
 # System requirements
 
-The following summarizes software dependencies and services tested for Adobe Commerce and Magento Open Source.
+The following summarizes software dependencies and services tested for Adobe Commerce.
 
 There are some differences in the dependencies for Commerce on Cloud infrastructure. Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1.2 is supported for Commerce 2.4.4 on Cloud infrastructure.
 
-The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce and Magento Open Source releases.
+The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
 Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
 
@@ -46,7 +46,7 @@ See [Configure services](https://experienceleague.adobe.com/docs/commerce-cloud-
 
 ## PHP settings
 
-There are particular PHP configuration settings, such as the `memory_limit` setting, which can help you to avoid common problems when using Adobe Commerce and Magento Open Source. See [Required PHP settings](prerequisites/php-settings.md).
+There are particular PHP configuration settings, such as the `memory_limit` setting, which can help you to avoid common problems when using Adobe Commerce. See [Required PHP settings](prerequisites/php-settings.md).
 
 For Cloud configuration guidance, see [PHP settings](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) in the _Commerce on Cloud Infrastructure_ guide.
 
@@ -64,7 +64,7 @@ If you must install OPcache separately, see the [PHP OPcache documentation](http
 
 ### PHPUnit
 
-PHPUnit (as a command-line tool) 9.0.0
+PHPUnit v9 (as a command-line tool).
 
 ### PHP extensions
 
@@ -96,7 +96,7 @@ This section describes support and compatibility for all other types of required
 
 >[!NOTE]
 >
->The following requirements apply to the latest 2.4.x patch release of Adobe Commerce and Magento Open Source. When relevant, Commerce on Cloud infrastructure guidance is provided.
+>The following requirements apply to the latest 2.4.x patch release of Adobe Commerce. When relevant, Commerce on Cloud infrastructure guidance is provided.
 
 ### Browsers
 
@@ -106,9 +106,8 @@ Storefront and Admin:
 - Firefox (latest and previous major version; any operating system)
 - Chrome (latest and previous major version; any operating system)
 - Safari (latest and previous major version; macOS only)
-- Safari Mobile for iPad 2, iPad Mini, iPad with Retina Display (iOS 12 or later), for desktop storefront
-- Safari Mobile for iPhone 6 or later; iOS 12 or later, for mobile storefront
-- Chrome for mobile (latest and previous major version [Android&trade; 4 or later] for mobile storefront)
+- Safari for iOS (latest and previous major version, for storefront)
+- Chrome for Android (latest and previous major version, for storefront)
 
 ### Mail server
 
@@ -122,7 +121,7 @@ Upgrading the applications and extensions you obtain from the Commerce Marketpla
 
 Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar. Microsoft Windows and macOS are not supported.
 
-Adobe Commerce and Magento Open Source require the following system tools for some operations:
+Adobe Commerce requires the following system tools for some operations:
 
 - [[!DNL bash]](https://www.gnu.org/software/bash/)
 - [[!DNL gzip]](https://www.gzip.org/)
@@ -144,10 +143,10 @@ For Commerce on Cloud infrastructure, see [Fastly configuration](https://experie
 
 ### Xdebug
 
-For Adobe Commerce and Magento Open Source, use [php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance).
+For Adobe Commerce, use [php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance).
 
 For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) in the _Commerce on Cloud Infrastructure_ guide.
 
 >[!NOTE]
 >
->There is a known issue with `xdebug` that can affect Adobe Commerce or Magento Open Source installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in the _Commerce Support Knowledge Base_.
+>There is a known issue with `xdebug` that can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) in the _Commerce Support Knowledge Base_.

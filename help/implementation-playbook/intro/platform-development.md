@@ -24,4 +24,4 @@ Like any large IT project, Adobe Commerce is built on coding standards that use 
 
 ## Adobe Commerce on cloud infrastructure
 
-Adobe Commerce on cloud infrastructure is a managed, automated hosting platform for the Adobe Commerce software. Adobe Commerce on cloud infrastructure comes with various features that sets it apart from on-premises Adobe Commerce and Magento Open Source implementations. See the [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce on cloud infrastructure is a managed, automated hosting platform for the Adobe Commerce software. Adobe Commerce on cloud infrastructure comes with various features that sets it apart from on-premises Adobe Commerce implementations. See the [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

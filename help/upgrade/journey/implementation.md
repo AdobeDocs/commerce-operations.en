@@ -23,9 +23,13 @@ The following are items that you may want to include in a thorough analysis:
 
 - **[!DNL Upgrade Compatibility Tool] results**—This tool makes any upgrade faster and easier by comparing your current code to the target version's code and producing a report of all the issues that need to be addressed. See the [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Key details from the report include:
 
-  -  Current installed version
+  - Current installed version
   - Upgrade target version
   - Number and details of critical errors found
+
+  >[!TIP]
+  >
+  >All of this information (and more) is available in the Site-Wide Analysis Tool [dashboard](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - Upgrading services to support target version. Use the following table template to map out which services you must upgrade. Use the [system requirements](../../installation/system-requirements.md) to determine what to add to the _Upgrade to_ column.
 
@@ -40,7 +44,7 @@ The following are items that you may want to include in a thorough analysis:
   | Composer        | 1.9.2           | 2.2        |                                                          |
   | Elasticsearch   | 7.10            | 7.17       |                                                          |
 
-- **Extensions and third-party modules**—Use this table template to help you understand the status of your extensions and customizations, so that you can make strategic decisions and define actions. This is an opportunity to replace any extensions that might be native to Adobe Commerce or Magento Open Source to minimize your project's complexity. Use the `bin/magento module:status` command to see a list of modules and extensions.
+- **Extensions and third-party modules**—Use this table template to help you understand the status of your extensions and customizations, so that you can make strategic decisions and define actions. This is an opportunity to replace any extensions that might be native to Adobe Commerce to minimize your project's complexity. Use the `bin/magento module:status` command to see a list of modules and extensions.
 
   | # | Extension/<br>module name   | Composer package                   | Vendor      | Current version   | Functionality         | Compatible with latest<br>Commerce version? | Issues                                           | Native to Commerce? | Action                  | Notes | 
   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|

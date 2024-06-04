@@ -6,7 +6,7 @@ exl-id: 866da415-c428-4092-a045-c3079493cdc4
 ---
 # Cache clearing with Varnish
 
-This topic discusses the basics of using Varnish as a web-caching accelerator for Adobe Commerce and Magento Open Source.
+This topic discusses the basics of using Varnish as a web-caching accelerator for Adobe Commerce.
 
 ## Varnish purging
 

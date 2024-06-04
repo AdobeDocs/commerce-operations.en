@@ -1,6 +1,6 @@
 ---
 title: How Patches Work
-description: Learn about the different types of patches for Adobe Commerce and Magento Open Source and how they work.
+description: Learn about the different types of patches for Adobe Commerce and how they work.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
 ---
 # How patches work
@@ -45,7 +45,7 @@ Use the [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/c
 
 ## Custom patches
 
-Sometimes it takes a while for the Adobe Engineering Team to include a bug fix made on GitHub in an Adobe Commerce or Magento Open Source Composer release. In the meantime, you can create a patch from GitHub and use the [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) plugin to apply it to your Composer-based installation.
+Sometimes it takes a while for the Adobe Engineering Team to include a bug fix made on GitHub in an Adobe Commerce Composer release. In the meantime, you can create a patch from GitHub and use the [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) plugin to apply it to your Composer-based installation.
 
 Use the [command line](apply.md#command-line) or [Composer](apply.md#composer) to apply custom patches.
 

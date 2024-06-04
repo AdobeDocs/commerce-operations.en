@@ -1,6 +1,6 @@
 ---
 title: Configuration Best Practices
-description: Optimize the response time of your Adobe Commerce or Magento Open Source deployment using these best practices.
+description: Optimize the response time of your Adobe Commerce deployment using these best practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
 ---
@@ -14,7 +14,7 @@ All asynchronous operations in [!DNL Commerce] are performed using the Linux `cr
 
 ## Indexers
 
-An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Update on Schedule]** mode. The **[!UICONTROL Update on Save]** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. We recommend using **Update on Schedule** mode in production, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each [!DNL Commerce] indexer separately on the  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuration page.
+An indexer can run in either **[!UICONTROL Update on Save]** or **[!UICONTROL Update on Schedule]** mode. The **[!UICONTROL Update on Save]** mode immediately indexes whenever your catalog or other data changes. This mode assumes a low intensity of update and browsing operations in your store. It can lead to significant delays and data unavailability during high loads. We recommend using **Update on Schedule** for performance purposes, because it stores information about data updates and performs indexation by portions in the background through a specific cron job. You can change the mode of each [!DNL Commerce] indexer separately on the  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** configuration page. The [!UICONTROL Customer Grid] index must always be set to the **[!UICONTROL Update on Save]** mode.
 
 >[!TIP]
 >
@@ -26,17 +26,17 @@ When you launch your store in production, activate all the caches from the **[!U
 
 ## Asynchronous email notifications
 
-Enabling the "Asynchronous email notifications" setting moves processes that handle checkout and order processing email notifications to the background. To enable this feature, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] > [!UICONTROL Asynchronous Sending]**. See [Sales Emails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in the _Magento Open Source User Guide_ for more information.
+Enabling the "Asynchronous email notifications" setting moves processes that handle checkout and order processing email notifications to the background. To enable this feature, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] > [!UICONTROL Asynchronous Sending]**. See [Sales Emails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in the _Admin User Guide_ for more information.
 
 ## Asynchronous order data processing
 
-There can be times when intensive sales on a storefront occur at the same time that [!DNL Commerce] is performing intensive order processing. You can configure [!DNL Commerce] to distinguish these two traffic patterns on the database level to avoid conflicts between read and write operations in the corresponding tables. You can store and index order data asynchronously. Orders are placed in temporary storage and moved in bulk to the Order Management grid without any collisions. You can activate this option from **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] > [!UICONTROL Asynchronous indexing]**. See [Scheduled Grid Updates](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in the _Magento Open Source User Guide_ for more information.
+There can be times when intensive sales on a storefront occur at the same time that [!DNL Commerce] is performing intensive order processing. You can configure [!DNL Commerce] to distinguish these two traffic patterns on the database level to avoid conflicts between read and write operations in the corresponding tables. You can store and index order data asynchronously. Orders are placed in temporary storage and moved in bulk to the Order Management grid without any collisions. You can activate this option from **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] > [!UICONTROL Asynchronous indexing]**. See [Scheduled Grid Updates](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in the _Admin User Guide_ for more information.
 
 >[!WARNING]
 >
 >The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
 
-## Asynchronous configuration save [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Available in 2.4.7-beta only"}
+## Asynchronous configuration save
 
 For projects with a large number of store-level configurations, saving a store configuration can take an inordinate amount of time or result in a timeout. The _Async Config_ module enables asynchronous configuration saves by running a cron job that uses a consumer to process the save in a message queue. AsyncConfig is **disabled** by default.
 

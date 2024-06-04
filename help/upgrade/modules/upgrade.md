@@ -1,6 +1,6 @@
 ---
 title: Upgrade Modules and Extensions
-description: Use the command-line interface and Composer to upgrade Adobe Commerce and Magento Open Source modules and extensions.
+description: Use the command-line interface and Composer to upgrade Adobe Commerce modules and extensions.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
 ---
 # Upgrade modules and extensions
@@ -9,7 +9,7 @@ To update or upgrade a module or extension:
 
 1. Download the updated file from Marketplace or another extension developer. Take note of the module name and version.
 
-1. Export the contents to your Adobe Commerce or Magento Open Source root installation directory.
+1. Export the contents to your Adobe Commerce root installation directory.
 
 1. If a Composer package exists for the module, run one of the following.
 

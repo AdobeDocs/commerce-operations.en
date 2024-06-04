@@ -1,8 +1,198 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Feb 13 09:42:37 2024
+updated: Thu May 2 12:52:57 2024
 entries:
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct).
+  versions: ''
+  type: technical
+  date: April 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/845
+  merge_commit: ae9b29601953f25ca28f253f557d547b200616a0
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
+- description: Reorganized the _Operational Guides_ home page (this page) and moved
+    the _[Command-Line Tools Reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)_
+    guide to the _[Tools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)_
+    guide.
+  versions: ''
+  type: major-update
+  date: April 26, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/843
+  merge_commit: 839b4e26a7c5d662093c7c1eec3fd5883ed7706a
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added a new [summary page](https://experienceleague.adobe.com/docs/commerce-operations/events/summit/2024.html)
+    for Adobe Summit.
+  versions: ''
+  type: new-topic
+  date: April 26, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/842
+  merge_commit: 1c2c75da7cda0e3c38ea904c98932472b618a3e5
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+- description: Updated the [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    page to include information about all available betas for Adobe Commerce.
+  versions: ''
+  type: major-update
+  date: April 15, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/823
+  merge_commit: a362cad66d38a89bacda656d1520047e22262179
+  contributor: slamech
+  membership: false
+  labels:
+  - major-update
+- description: Updated [Released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
+  versions: 2.4.7
+  type: technical
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/820
+  merge_commit: efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.7
+- description: Updated the release packages topics for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source).<br/>
+    Added a release packages topic for [B2B for Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b).
+  versions: 2.4.7
+  type: major-update
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/812
+  merge_commit: aad4b904ba95142d1d848f934c9d3702cc37ec16
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Updated the _bin/magento_ CLI reference documentation for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source).
+  versions: 2.4.7
+  type: major-update
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/813
+  merge_commit: b81dc87a261f128cdb572a30ff5538dae2087c49
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Published 2.4.7 GA [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7).
+  versions: 2.4.7
+  type: major-update
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/795
+  merge_commit: 35b7caafbef5ced52ef6e4907e0634dfb2a61e4f
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Adds release notes for the April 2024 Adobe Commerce security releases
+    (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). See [Release notes for Adobe Commerce and Magento
+    Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)
+  versions: 2.4.4, 2.4.5, 2.4.6
+  type: major-update
+  date: April 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/770
+  merge_commit: 7acab1d8d3f7b11cc1387b5558521f282ba0873f
+  contributor: frontain
+  membership: false
+  labels:
+  - 2.4.4
+  - major-update
+  - 2.4.5
+  - 2.4.6
+- description: Added an [architectural blueprint](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html)
+    for enterprise implementations of Commerce.
+  versions: ''
+  type: new-topic
+  date: March 24, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/787
+  merge_commit: d33294d02b4431d4aa473aa5d0ab42e297cfed14
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+- description: Updated the following topics for the 2.4.7-beta3 release:<br/>- [Adobe
+    Commerce CLI (on-premises, Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html)<br/>-
+    [Magento Open Source CLI (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html)<br/>-
+    [Adobe Commerce packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html)<br/>-
+    [Magento Open Source packages (Beta)](https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html)
+  versions: 2.4.7
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/785
+  merge_commit: 28029603b0a23eb161480363b5106142beda4180
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Updated the set up instructions for the [Application Server for GraphQL
+    APIs](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html)
+    feature.
+  versions: ''
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/775
+  merge_commit: a4f907a793b4384cb7c162c032a153fafbbc6ff3
+  contributor: adimov
+  membership: false
+  labels:
+  - major-update
+- description: Published release notes for [Adobe Commerce 2.4.7-beta3](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html).
+  versions: 2.4.7
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/771
+  merge_commit: d5bd6e1e9af78b24c687554261a50d4dce9483d6
+  contributor: frontain
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7
+- description: Added 2.4.7-beta3 to the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+  versions: ''
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/759
+  merge_commit: 4c622c47862c61fc9e6587ff95b3ac45142c2318
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added information about the new [`indexer:set-status`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+    CLI command.
+  versions: ''
+  type: major-update
+  date: March 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/755
+  merge_commit: acacc285f8b977b33bb27af76c971bc4015a2b45
+  contributor: poperech
+  membership: false
+  labels:
+  - major-update
+- description: Added best practice for [upgrading MariaDB](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html)
+    to 10.5.1 and later.
+  versions: ''
+  type: major-update
+  date: February 14, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/753
+  merge_commit: 7199e74f82cef6dd682f5e240ee2b6fc56da18c8
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - best-practices
 - description: Added February 2024 security patches to the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
   versions: ''
   type: major-update

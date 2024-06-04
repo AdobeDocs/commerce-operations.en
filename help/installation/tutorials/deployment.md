@@ -1,6 +1,6 @@
 ---
 title: Create or update the deployment configuration
-description: Follow these steps to manage your Adobe Commerce or Magento Open Source deployment configuration.
+description: Follow these steps to manage your Adobe Commerce deployment configuration.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
 ---
@@ -33,7 +33,7 @@ The following table discusses the meanings of installation parameters and values
 |`--db-name`|Name of the database instance in which you want to install the database tables.<br><br>Default is `magento2`.|No|
 |`--db-user`|Username of the database instance owner.<br><br>Default is `root`.|No|
 |`--db-password`|Database instance owner's password.|No|
-|`--db-prefix`|Use only if you're installing the database tables in a database instance that has Adobe Commerce and Magento Open Source tables in it already.<br><br>In that case, use a prefix to identify the tables for this installation. Some customers have more than one Adobe Commerce or Magento Open Source instance running on a server with all tables in the same database.<br><br>The prefix can be a maximum of five characters in length. It must begin with a letter and can include only letters, numbers, and underscore characters.<br><br>This option enables those customers to share the database server with more than one Adobe Commerce or Magento Open Source installation.|No|
+|`--db-prefix`|Use only if you're installing the database tables in a database instance that has Adobe Commerce tables in it already.<br><br>In that case, use a prefix to identify the tables for this installation. Some customers have more than one Adobe Commerce instance running on a server with all tables in the same database.<br><br>The prefix can be a maximum of five characters in length. It must begin with a letter and can include only letters, numbers, and underscore characters.<br><br>This option enables those customers to share the database server with more than one Adobe Commerce installation.|No|
 |`--session-save`|Use any of the following:<br><br>- `db` to store session data in the [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Choose database storage if you have a clustered database; otherwise, there might not be much benefit over file-based storage.<br><br>- `files` to store session data in the file system. File-based session storage is appropriate unless the file system access is slow, you have a clustered database, or you want to store session data in Redis.<br><br>- `redis` to store session data in [Use Redis for session storage](../../configuration/cache/config-redis.md). If you are using Redis for default or page caching, Redis must be already installed. |No|
 |`--key`|If you have one, specify a key to encrypt [sensitive data](#sensitive-data) in the database. If you don't have one, the application generates one for you.|No|
 |`--db-init-statements`|Advanced MySQL configuration parameter. Uses database initialization statements to run when connecting to the MySQL database.<br><br>Default is `SET NAMES utf8;`.<br><br>Consult a reference similar to [this one](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) before you set any values.|No|

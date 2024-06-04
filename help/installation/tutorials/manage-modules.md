@@ -1,6 +1,6 @@
 ---
 title: Enable or disable modules
-description: Follow these steps to manage Adobe Commerce or Magento Open Source modules.
+description: Follow these steps to manage Adobe Commerce modules.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
 ---
 # Enable or disable modules
@@ -20,6 +20,10 @@ Where
 *  `--enabled` lists all enabled modules.
 *  `--disabled` lists all disabled modules.
 *  `<module-list>` is a space-delimited list of modules to check the status. If any module name contains special characters, enclose the name in either single or double quotes.
+
+>[!NOTE]
+>
+>You cannot enable or disable modules directly on cloud projects. You must run these commands locally and then push changes to the `app/etc/config.php` file for an environment. See [Pro project workflow: Deployment workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Module enable, disable
 
@@ -68,7 +72,7 @@ bin/magento cache:clean
 
 ## About enabling and disabling modules
 
-Adobe Commerce and Magento Open Source enable you to enable or disable currently available modules; in other words, any Adobe-provided module or any third-party module that is currently available.
+Adobe Commerce enables you to enable or disable currently available modules; in other words, any Adobe-provided module or any third-party module that is currently available.
 
 Certain modules have dependencies on other modules, in which case you might not be able to enable or disable a module because it has dependencies on other modules.
 
@@ -82,7 +86,7 @@ Examples:
 
 *  Module A conflicts with Module B. You can disable Module A and Module B, or you can disable either module but you *cannot* enable Module A and Module B at the same time.
 
-*  Dependencies are declared in the `require` field in the Adobe Commerce and Magento Open Source `composer.json` file for each module. Conflicts are declared in the `conflict` field in modules' `composer.json` files. We use that information to build a dependency graph: `A->B` means module A depends on module B.
+*  Dependencies are declared in the `require` field in the Adobe Commerce `composer.json` file for each module. Conflicts are declared in the `conflict` field in modules' `composer.json` files. We use that information to build a dependency graph: `A->B` means module A depends on module B.
 
 *  A *dependency chain* is the path from a module to another one. For example, if module A depends on module B and module B depends on module C, then the dependency chain is `A->B->C`.
 

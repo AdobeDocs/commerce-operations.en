@@ -5,7 +5,7 @@
   <thead>
     <tr>
       <th>Adobe Commerce versions</th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
       <th>2.4.4</th>
@@ -59,10 +59,10 @@
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>2.3.0</td>
-          <td>2.2.0</td>
-          <td>2.2.0 (PHP 8.1)</td>
-          <td>2.2.0 (PHP 8.1)</td>
+          <td>2.6.0 (PHP 8.3)</td>
+          <td>2.5.0 (PHP 8.2)</td>
+          <td>2.4.0 (PHP 8.1)</td>
+          <td>2.4.0 (PHP 8.1)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Release Notes</a><br/>
@@ -76,17 +76,6 @@
           <td>6.0.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Release Notes</a><br/>
-          </td>
-      </tr>
-      <tr>
-          <td>Quick Checkout</td>
-          <td>-</td>
-          <td>1.0.0+</td>
-          <td>1.2.0+</td>
-          <td>1.0.0+</td>
-          <td>
-              <a href="https://commercemarketplace.adobe.com/magento-quick-checkout.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Release Notes</a><br/>
           </td>
       </tr>

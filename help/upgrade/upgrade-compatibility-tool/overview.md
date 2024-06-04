@@ -17,7 +17,7 @@ The [!DNL Upgrade Compatibility Tool] is a tool that checks an Adobe Commerce cu
 
 You can use the [!DNL Upgrade Compatibility Tool] via:
 
-- As a standalone [command-line interface](../upgrade-compatibility-tool/run.md) tool. For the full list of available commands, see the [`bin/uct` reference](/help/reference/uct.md).
+- As a standalone [command-line interface](../upgrade-compatibility-tool/run.md) tool. For the full list of available commands, see the [`bin/uct` reference](../../tools/reference/uct.md).
 - Integrating the [!DNL Upgrade Compatibility Tool] with the [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - A run configuration within the [Magento PHPStorm plugin](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
@@ -47,7 +47,7 @@ Refer to the [Contribute](https://developer.adobe.com/commerce/php/coding-standa
 
 See the following resources to help you understand Adobe Commerce upgrades:
 
-- The [upgrade guide](../overview.md) provides an overview of the typical Adobe Commerce or Magento Open Source upgrade journey and best practices to follow along that journey.
+- The [upgrade guide](../overview.md) provides an overview of the typical Adobe Commerce upgrade journey and best practices to follow along that journey.
 - The [upcoming releases](https://devdocs.magento.com/release/) page provides the dates for scheduled and upcoming releases.
 - The [community resources](https://developer.adobe.com/commerce/contributor/community/) page is to place to start discussions, or finding more information.
 - Check the [related tools](../upgrade-compatibility-tool/related-tools.md) page for useful tools in your typical upgrade journey.

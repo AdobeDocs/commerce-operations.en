@@ -1,20 +1,20 @@
 ---
 title: Get your authentication keys
-description: Follow these steps to retrieve credentials to access Adobe Commerce and Magento Open Source Composer packages on repo.magento.com.
+description: Follow these steps to retrieve credentials to access Adobe Commerce Composer packages on repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
 ---
 # Get your authentication keys
 
-The `repo.magento.com` repository is where Adobe Commerce and Magento Open Source and third-party Composer packages are stored and requires authentication. Use your Commerce Marketplace account to generate a pair of 32-character *authentication keys* to access the repository.
+The `repo.magento.com` repository is where Adobe Commerce and third-party Composer packages are stored and requires authentication. Use your Commerce Marketplace account to generate a pair of 32-character *authentication keys* to access the repository.
 
-For access entitlement to Adobe Commerce and Magento Open Source packages, you must use keys associated with a MAGEID that has been granted access to those packages. The MAGEID is typically the Primary Contact on the Adobe Commerce account and may not always be the Project Owner of the Adobe Commerce on cloud infrastructure project.
+For access entitlement to Adobe Commerce packages, you must use keys associated with a MAGEID that has been granted access to those packages. The MAGEID is typically the Primary Contact on the Adobe Commerce account and may not always be the Project Owner of the Adobe Commerce on cloud infrastructure project.
 
 >[!TIP]
 >
->If you encounter [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), you may not have authorization to access the package or the access entitlement has expired due to an outstanding invoice on your account.
+>If you encounter [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), you may not have authorization to access the package, or the access entitlement has expired due to an outstanding invoice on your account.
 >
 >* If you are the Primary Contact person on the account, make sure that there is no outstanding invoice listed on the account.
->* If the keys provided by the Primary Contact are not working and there are no outstanding invoices on the account, contact [Adobe Commerce Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for assistance using the MAGEID of the Primary Contact.
+>* If the keys provided by the Primary Contact are not working and there are no outstanding invoices on the account, the Primary Contact should contact [Adobe Commerce Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) for assistance.
 
 To create authentication keys:
 
@@ -40,7 +40,7 @@ You can also disable or delete authentication keys. For example, you can disable
 
 ### Manage SSH access token
 
-To download Adobe Commerce and Magento Open Source releases using SSH, you must generate a Downloads Access Token. To generate a token:
+To download Adobe Commerce releases using SSH, you must generate a Downloads Access Token. To generate a token:
 
 1. Log in to your [magento.com account](https://account.magento.com/customer/account/login).
 1. Click **My Account** at the top of the page.

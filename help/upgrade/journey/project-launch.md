@@ -1,6 +1,6 @@
 ---
 title: Project Launch
-description: Set the right expectations for the upgrade process with your Adobe Commerce or Magento Open Source project stakeholders.
+description: Set the right expectations for the upgrade process with your Adobe Commerce project stakeholders.
 exl-id: 8a5d9af2-e0e5-441c-976c-958a229ab933
 ---
 # Project launch

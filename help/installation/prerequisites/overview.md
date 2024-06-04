@@ -1,11 +1,11 @@
 ---
 title: On-premises installation prerequisites
-description: Learn more about the software dependencies required for on-premises installations of Adobe Commerce and Magento Open Source.
+description: Learn more about the software dependencies required for on-premises installations of Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 ---
 # On-premises installation prerequisites
 
-Before you install Adobe Commerce or Magento Open Source, you must do the following:
+Before you install Adobe Commerce, you must do the following:
 
 *  Set up one or more hosts that meet the [system requirements](../system-requirements.md).
 *  If you are setting up more than one web node with load balancing, set up and test that part of your system _before_ you install the application.
@@ -13,7 +13,7 @@ Before you install Adobe Commerce or Magento Open Source, you must do the follow
 
 >[!NOTE]
 >
->We assume you are installing the Adobe Commerce or Magento Open Source in a **development environment**, that you have root user access to the machine, **and** that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
+>We assume you are installing the Adobe Commerce in a **development environment**, that you have root user access to the machine, **and** that the machine does not need to be highly secure. If you are setting up a more secure machine, we strongly recommend you consult a network administrator for additional assistance.
 
 We strongly recommend you update and upgrade your operating system software. These upgrades can provide security and software fixes that might prevent future problems. Do not know what any of this means? Check out our [installation overview page](../overview.md).
 
@@ -49,7 +49,7 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-Adobe Commerce and Magento Open Source support Apache version 2.4 as the following result indicates:
+Adobe Commerce supports Apache version 2.4 as the following result indicates:
 
 ```terminal
 Server version: Apache/2.4.0 (Unix)
@@ -64,7 +64,7 @@ See [system requirements](../system-requirements.md) for supported versions of P
 
 ### MySQL
 
-Check that you have a compatible version of MySQL for the version of Adobe Commerce or Magento Open Source you are installing. See [System requirements](../system-requirements.md) for supported versions.
+Check that you have a compatible version of MySQL for the version of Adobe Commerce you are installing. See [System requirements](../system-requirements.md) for supported versions.
 
 ```bash
 mysql -u <database root user or database owner name> -p

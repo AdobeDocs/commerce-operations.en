@@ -1,13 +1,13 @@
 ---
 title: Customer personal information reference (version 2.x)
-description: Learn about dataflow diagrams and database entity mappings for customer personal information in Adobe Commerce and Magento Open Source 2.x.
+description: Learn about dataflow diagrams and database entity mappings for customer personal information in Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
 ---
 # Customer personal information reference (version 2.x)
 
 >[!NOTE]
 >
->This is one in a series of topics to help Adobe Commerce and Magento Open Source merchants and developers prepare for compliance with privacy regulations. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
+>This is one in a series of topics to help Adobe Commerce merchants and developers prepare for compliance with privacy regulations. Consult with your legal counsel to determine whether and how your business should comply with any legal obligations.
 
 Use the following dataflow diagrams and database entity mappings for reference when developing compliance programs for privacy regulations such as:
 
@@ -26,7 +26,7 @@ A user can enter customer, address, and payment information when registering for
 
 ### Frontend data access points
 
-Adobe Commerce and Magento Open Source load customer information when the customer logs in and views several different pages, or checks out.
+Adobe Commerce loads customer information when the customer logs in and views several different pages, or checks out.
 
 ![Frontend data access points](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -38,17 +38,17 @@ A merchant can enter customer information, address data, and payment data when c
 
 ### Backend data access points
 
-Adobe Commerce and Magento Open Source load customer information when a merchant views several types of grids, clicks on a grid to see detailed information, and performs various other tasks.
+Adobe Commerce loads customer information when a merchant views several types of grids, clicks on a grid to see detailed information, and performs various other tasks.
 
 ![Backend data access points](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Database entities
 
-Adobe Commerce and Magento Open Source primarily store customer-specific information in customer, address, order, quote, and payment tables. Other tables contain references to the customer ID.
+Adobe Commerce primarily stores customer-specific information in customer, address, order, quote, and payment tables. Other tables contain references to the customer ID.
 
 ### Customer data
 
-Adobe Commerce and Magento Open Source can be configured to store the following customer attributes:
+Adobe Commerce can be configured to store the following customer attributes:
 
 -  Date of Birth
 -  Email
@@ -113,7 +113,7 @@ The following columns in the `customer_grid_flat` table contain customer informa
 
 ### Address data
 
-Adobe Commerce and Magento Open Source store the following customer attributes:
+Adobe Commerce stores the following customer attributes:
 
 -  City
 -  Company
@@ -289,7 +289,7 @@ The `sales_order_payment` table includes credit card information and other trans
 
 ### Invitation data
 
-Adobe Commerce and Magento Open Source can be configured so that customers can send invitations to private sales and events.
+Adobe Commerce can be configured so that customers can send invitations to private sales and events.
 
 #### `magento_invitation` table
 

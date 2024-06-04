@@ -14,24 +14,27 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 
 - For critical security issues, such as zero-day vulnerabilities, Adobe provides [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) for all customers on a supported version, even if they are not on the latest patch or security patch release. It is important to note that a hotfix is not a catch-all and does not address all the security issues that would be fixed by upgrading to the latest release.
 
-- Adobe does not provide security and quality fixes for third-party services and software dependencies, such as PHP. It is your responsibility to maintain the security and compliance (for example, PCI, ISO, SOC) of third-party software dependencies. Adobe recommends updating your environments to use the latest version of PHP supported by Adobe Commerce as soon as possible. Do not use a version of PHP that has reached end of support.
+- Adobe does not provide security and quality fixes for third-party services and software dependencies (such as PHP and MySQL) that may reach end of life while customers are on the three-year support period for Adobe Commerce. See the [system requirements](../installation/system-requirements.md) for a full list of tested and supported third-party technologies.
+
+- Adobe provides compatibility with third-party services and software dependencies while customers are on the three-year support period for Adobe Commerce in the scope of security-only patch releases, but only when it is possible to do so without introducing backward-incompatible changes.
 
 ## End of software support
 
-| Release              | General Availability | End of software support<sup>1</sup> | Dependent PHP version |
-|----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                       | 8.2 and 8.3           |
-| Adobe Commerce 2.4.6 | March 14, 2023       | March 14, 2026                      | 8.1 and 8.2           |
-| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                      | 8.1                   |
-| Adobe Commerce 2.4.4 | April 12, 2022       | April 24, 2025                      | 8.1                   |
+| Release              | General Availability | End of software support<sup>1</sup> | Dependent PHP version | Dependendent MariaDB version |
+|----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                       | 8.2 and 8.3           | 10.6                         |
+| Adobe Commerce 2.4.6 | March 14, 2023       | March 14, 2026                      | 8.1 and 8.2           | 10.6                         |
+| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                      | 8.1                   | 10.5<sup>2</sup>             |
+| Adobe Commerce 2.4.4 | April 12, 2022       | April 24, 2025                      | 8.1                   | 10.5<sup>3</sup>             |
 
 {style="table-layout:auto"}
 
-<sup>1 End of software support includes both end of quality fixes and end of security fixes.</sup><br>
-
 >[!NOTE]
 >
->See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup>1</sup> End of software support includes both end of quality fixes and end of security fixes.
+>- <sup>2</sup> Starting with the 2.4.5-p8 security patch.
+>- <sup>3</sup> Starting with the 2.4.4-p9 security patch.
+>- See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>

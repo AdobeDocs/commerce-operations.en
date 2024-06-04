@@ -1,6 +1,6 @@
 ---
 title: Create the database schema
-description: Follow these steps to create a database for your Adobe Commerce or Magento Open Source.
+description: Follow these steps to create a database for your Adobe Commerce project.
 exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
 ---
 # Create the database schema

@@ -1,6 +1,6 @@
 ---
 title: Sample data overview
-description: Learn about using sample data for Adobe Commerce and Magento Open Source projects.
+description: Learn about using sample data for Adobe Commerce projects.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
 ---
 # Sample data overview
@@ -15,7 +15,7 @@ You can install sample data either before or after installing the Commerce softw
 
 >[!WARNING]
 >
->You cannot uninstall sample data. Use sample data only to learn about how Adobe Commerce and Magento Open Source work. Avoid doing any development in a system in which you installed sample data.
+>You cannot uninstall sample data. Use sample data only to learn about how Adobe Commerce works. Avoid doing any development in a system in which you installed sample data.
 
 You can install optional sample data in any of the following ways:
 

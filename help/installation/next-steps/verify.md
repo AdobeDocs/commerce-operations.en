@@ -1,6 +1,6 @@
 ---
 title: Verify the installation
-description: Follow these steps to confirm that your on-premises Adobe Commerce or Magento Open Source installation was successful.
+description: Follow these steps to confirm that your on-premises Adobe Commerce installation was successful.
 exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
 ---
 # Verify the installation
