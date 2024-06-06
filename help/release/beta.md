@@ -34,7 +34,7 @@ Key features:
 
 - Easy onboarding–Simplify merchant onboarding with a configurable synchronization process that enables full synchronization between the current Experience Manager Assets repository and the Commerce catalog.
 
-- Flexible matching strategy–Matching between asset and product is configurable and extensible to ensure that the current structure of the Asset management repository is not bottleneck for integration adoption.
+- Flexible matching strategy–Matching between asset and product is configurable and extensible to ensure that the current structure of the Asset management repository is not a bottleneck for integration adoption.
 
 To participate in the beta, send an email request to [mccran@adobe.com](mailto:mccran@adobe.com).
 
