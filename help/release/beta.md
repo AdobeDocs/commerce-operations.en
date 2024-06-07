@@ -32,7 +32,7 @@ Key features:
 
 - Personalize product images at scale–Use Experience Manager Assets to generate millions of product variations for personalized Commerce experiences with easy editing tools, generative content creation, and assign asset workflows to ensure brand consistency. Then, deliver those assets to Commerce storefronts using the Experience Manager for Assets Integration.
 
-- Easy onboarding–Simplify merchant onboarding with a configurable synchronization process that enables full synchronization between the current Experience Manager Assets repository and the Commerce catalog.
+- Easy onboarding–Simplify merchant onboarding with a configurable synchronization process that enables full synchronization between the Experience Manager Assets repository and the Commerce catalog.
 
 - Flexible matching strategy–The integration includes default asset matching algorithms with the ability to use App Builder to build an extensible matching strategy with your solution partner to match any Asset management repository structure.
 
