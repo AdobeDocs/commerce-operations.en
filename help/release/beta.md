@@ -34,7 +34,7 @@ Key features:
 
 - Easy onboarding–Simplify merchant onboarding with a configurable synchronization process that enables full synchronization between the Experience Manager Assets repository and the Commerce catalog.
 
-- Flexible matching strategy–The integration includes default asset matching algorithms, and it's extensible using Adobe Developer App Builder. Work with your solution partner to build a custom matching strategy on top of the integration to accommodate any Asset management repository structure.
+- Flexible matching strategy–The integration includes default asset matching algorithms based on product SKUs that synchronize images between AEM Assets and Commerce, and it's extensible using Adobe Developer App Builder. Work with your solution partner to build a custom asset matching strategy on top of the integration to accommodate any asset management repository structure.
 
 To participate in the beta, send an email request to [Shaun McCran](mailto:mccran@adobe.com).
 
