@@ -1,11 +1,12 @@
 ---
-title: Install an extension
-description: Follow these steps to install an Adobe Commerce extension.
+title: Manage third-party extensions
+description: Follow these steps to install, enable, upgrade, and uninstall an Adobe Commerce extensions.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
 ---
-# Install an extension
 
-Code that extends or customizes Adobe Commerce behavior is called an extension. You can optionally package and distribute extensions on the [Commerce Marketplace](https://marketplace.magento.com) or another extension distribution system.
+# Manage third-party extensions
+
+Code that extends or customizes Adobe Commerce behavior is called an extension. You can optionally package and distribute extensions on the [Commerce Marketplace](https://commercemarketplace.adobe.com/) or another extension distribution system.
 
 Extensions include:
 
@@ -15,7 +16,9 @@ Extensions include:
 
 >[!TIP]
 >
->This topic explains how to use the command line to install extensions you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's Composer name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
+>This topic explains how to use the command-line interface to manage third-party extensions that you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's Composer name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
+
+## Install
 
 Before installation, you may want to:
 
@@ -45,13 +48,13 @@ To install an extension, you must:
 1. Verify that the extension installed properly.
 1. Enable and configure the extension.
 
-## Get the extension Composer name and version
+### Get extension information
 
-If you already know the extension's Composer name and version, skip this step and continue with [Update your `composer.json` file](#update-your-composer-file).
+If you already know the extension's Composer name and version, skip this step and continue with [Update your `composer.json` file](#update-composer-dependencies).
 
 To get the extension's Composer name and version from the Commerce Marketplace:
 
-1. Log in to [Commerce Marketplace](https://marketplace.magento.com) with the username and password you used to purchase the extension.
+1. Log in to [Commerce Marketplace](https://commercemarketplace.adobe.com/) with the username and password you used to purchase the extension.
 
 1. In the upper-right corner, click **Your name** > **My Profile**.
 
@@ -69,7 +72,7 @@ To get the extension's Composer name and version from the Commerce Marketplace:
 >
 >Alternatively, you can find the Composer name and version of _any_ extension (whether you purchased it on Commerce Marketplace or somewhere else) in the extension's `composer.json` file.
 
-## Update your Composer file
+### Update Composer dependencies
 
 Add the extension's name and version to your `composer.json` file:
 
@@ -97,7 +100,7 @@ Add the extension's name and version to your `composer.json` file:
    Generating autoload files
    ```
 
-## Verify the extension
+### Verify installation
 
 To verify that the extension installed properly, run the following command:
 
@@ -119,7 +122,7 @@ bin/magento module:status
 
 And look for the extension under "List of disabled modules".
 
-## Enable the extension
+### Enable
 
 Some extensions don't work properly unless you clear generated static view files first. Use the `--clear-static-content` option to clear static view files when you're enabling an extension.
 
@@ -177,7 +180,7 @@ Some extensions don't work properly unless you clear generated static view files
 >
 >If you encounter errors when loading the storefront in a browser, use the following command to clear the cache: `bin/magento cache:flush`.
 
-## Upgrade an extension
+## Upgrade
 
 To update or upgrade a module or extension:
 
@@ -212,3 +215,39 @@ To update or upgrade a module or extension:
    ```bash
    bin/magento cache:clean
    ```
+
+## Uninstall
+
+You should contact the extension vendor for instructions to remove a third-party extension. The instructions should provide the following information:
+
+- How to revert database table changes
+- How to revert database data changes
+- Which files should be removed or reverted
+
+>[!CAUTION]
+>
+>Perform uninstallation steps on a non-production environment _first_ and thoroughly test before deploying to your production environment.
+
+The following instructions provide general information for uninstalling third-party extensions:
+
+1. Remove the extension from your Adobe Commerce project repository.
+
+   - For Composer-based extensions, remove the extension from your Adobe Commerce `composer.json` file.
+
+     ```bash
+     composer remove <package-name>
+     ```
+
+   - For non-Composer-based extensions, remove the physical files from your Adobe Commerce project repository.
+
+     ```bash
+     rm -rf app/code/<vendor-name>/<module-name>
+     ```
+
+1. If the `config.php` file is under source control in your Adobe Commerce project repository, remove the extension from the `config.php` file.
+
+1. Test your local database to ensure that the vendor-provided instructions work as expected.
+
+1. Verify that the extension is properly disabled and that your website works as expected on your staging environment.
+
+1. Deploy the changes to your production environment.
