@@ -30,11 +30,11 @@ Key features:
 
 - Plug and play integration–Provide an Adobe powered, out of the box, integration between Experience Manager Assets and Adobe Commerce to empower merchants to focus on what matters most, with reduced operational costs and improved efficiency.
 
-- Personalize product images at scale–Use Experience Manager Assets to generate millions of product variations for personalized Commerce experiences with easy UI based editing tools, generative content creation using Adobe Firefly, and assigned asset workflows to ensure brand consistency. Once you are happy with the Assets you can seamlessly deliver them to your Commerce storefronts using the Experience Manager for Assets Integration.
+- Personalize product images at scale–Use Experience Manager Assets to generate millions of product variations for personalized Commerce experiences with easy UI based editing tools, generative content creation using Adobe Firefly, and assigned asset workflows to ensure brand consistency. Once you are happy with the assets, you can seamlessly deliver them to your Commerce storefronts using the Experience Manager for Assets Integration.
 
 - Easy onboarding–Simplify merchant onboarding with a configurable synchronization process that enables full synchronization between the Experience Manager Assets repository and the Commerce catalog.
 
-- Flexible matching strategy–The integration includes default asset matching algorithms with the ability to use App Builder to build an extensible matching strategy with your solution partner to match any Asset management repository structure.
+- Flexible matching strategy–The integration includes default asset matching algorithms, and it's extensible using Adobe Developer App Builder. Work with your solution partner to build a custom matching strategy on top of the integration to accommodate any Asset management repository structure.
 
 To participate in the beta, send an email request to [Shaun McCran](mailto:mccran@adobe.com).
 
