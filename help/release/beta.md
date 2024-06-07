@@ -28,7 +28,7 @@ The Experience Manager Assets Integration for Commerce enables efficient managem
 
 Key features:
 
-- Streamline integration–Provide an Adobe branded integration between Experience Manager Assets and Commerce, empower merchants to focus on what matters, and reduce operation costs.
+- Plug and play integration–Provide an Adobe powered, out of the box, integration between Experience Manager Assets and Adobe Commerce to empower merchants to focus on what matters most, with reduced operational costs and improved efficiency.
 
 - Personalize product images at scale–Use Experience Manager Assets to generate millions of product variations for personalized Commerce experiences with easy editing tools, generative content creation, and assign asset workflows to ensure brand consistency. Then, deliver those assets to Commerce storefronts using the Experience Manager for Assets Integration.
 
