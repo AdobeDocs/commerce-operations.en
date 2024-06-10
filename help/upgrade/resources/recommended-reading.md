@@ -36,7 +36,7 @@ Continue learning about Adobe Commerce upgrades by using the resources on this p
         <p>Review details about Adobe Commerce releases and policies.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce Software End of Support FAQ</a></li>
-            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace policy</a></li>
+            <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements/">Commerce Marketplace policy</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">FAQ for New Adobe Commerce Release Strategy, Updated Lifecycle Policy, and Extended Support</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Lifecycle policy</a></li>
             <li><a href="../../release/schedule.md">Release schedule</a></li>

@@ -15,6 +15,8 @@ This guide provides a holistic overview of the [!DNL Site-Wide Analysis Tool]. I
 
 The [!DNL Site-Wide Analysis Tool] is a proactive self-service tool and central repository that includes detailed system insights and recommendations to ensure the security and operability of your Adobe Commerce installation. It provides 24/7 real-time performance monitoring, reports, and advice to identify potential issues and better visibility into site health, safety, and application configurations. It helps reduce resolution time and improve site stability and performance.
 
+![Site-Wide Analysis Tool dashboard](../../assets/tools/swat-dashboard.png){zoomable="yes"}
+
 See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to learn more.
 
 ## Tool Overview
@@ -30,7 +32,10 @@ See this [introduction video](https://www.youtube.com/watch?v=KW2R8ki_RG4) to le
         
 - **Information** - Provides customer contact information and a summary of current tickets, with detailed information about each installed Adobe Commerce product.
 
-- **Recommendations** - Lists recommendations based on best practices to address issues detected on your site.
+- **Recommendations** - Lists recommendations based on best practices to address issues detected on your site:
+  - For changes that require an infrastructure update, submit a support request.
+  - For changes that require an application update, make the changes yourself. 
+  - For changes that require manual intervention such as a [code deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow), ask your system administrator or developers for help.
 
 - **Exceptions** - Lists errors thrown by the application caused by abnormal conditions without an error handler.
 
