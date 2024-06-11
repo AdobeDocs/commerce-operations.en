@@ -599,7 +599,7 @@ The following summary tables clarify the operational responsibilities for Adobe 
 
 #### Synchronizing environments
 
-Merchants are responsible for synchronizing data between production and staging environments.
+Merchants are responsible for synchronizing data between environments.
 
 #### Patching
 
