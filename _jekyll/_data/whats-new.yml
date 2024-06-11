@@ -1,8 +1,53 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Thu May 2 12:52:57 2024
+updated: Tue Jun 11 13:40:17 2024
 entries:
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
+  versions: ''
+  type: technical
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/897
+  merge_commit: 1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
+- description: Added [beta information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    for Experience Manager Assets Integration for Commerce (private beta).
+  versions: ''
+  type: major-update
+  date: June 7, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/893
+  merge_commit: d51937e25049f636a3b69f072a3fe4ba135766c2
+  contributor: meker
+  membership: false
+  labels:
+  - enhancement
+  - major-update
+- description: Added instructions for [uninstalling](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+    third-party extensions.
+  versions: ''
+  type: major-update
+  date: June 7, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/894
+  merge_commit: a623002b366ae07eaabe9711946d7f8ceb3b9132
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Clarified support for third-party dependencies in the [software lifecycle
+    policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy).
+  versions: ''
+  type: major-update
+  date: May 21, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/861
+  merge_commit: 5459488d4b512447aff810dca8d3b32a074d5c1e
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
 - description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct).
   versions: ''
   type: technical
