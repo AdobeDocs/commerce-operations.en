@@ -1,7 +1,7 @@
 {
   "application": {
     "name": "Magento CLI",
-    "version": "2.4.7"
+    "version": "2.4.7-p1"
   },
   "commands": [
     {
@@ -5163,7 +5163,7 @@
       "name": "events:subscribe",
       "description": "Subscribes to the event",
       "usage": [
-        "events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>"
+        "events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>"
       ],
       "help": "Subscribes to the event",
       "definition": {
@@ -5230,6 +5230,15 @@
             "is_multiple": false,
             "description": "The destination of this event. Specify this option for the events that should be delivered to the custom destination.",
             "default": "default"
+          },
+          "hipaaAuditRequired": {
+            "name": "--hipaaAuditRequired",
+            "shortcut": "",
+            "accept_value": false,
+            "is_value_required": false,
+            "is_multiple": false,
+            "description": "Indicates the event contains data that is subject to HIPAA auditing.",
+            "default": false
           },
           "help": {
             "name": "--help",
