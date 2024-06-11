@@ -28,7 +28,7 @@ Learn about new documentation and significant updates to existing documentation.
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aef697509227b1dfebb801b0e1e098da90201971">aef697</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Update support for RabbitMQ in 2.4.5-p7 and 2.4.5-p8 in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirements</a>.</p>
+      <td><p>Updated support for RabbitMQ in 2.4.5-p7 and 2.4.5-p8 in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirements</a>.</p>
 </td>
       <td>technical</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/20823bae109f5b053f352b0a13275acecf991904">20823b</a> (commit)</td>

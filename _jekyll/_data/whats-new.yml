@@ -1,7 +1,7 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Jun 11 13:58:18 2024
+updated: Tue Jun 11 14:07:38 2024
 entries:
 - description: Published release notes for the June 2024 security patches:<br/>- [2.4.7-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
     [2.4.6-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
@@ -28,7 +28,7 @@ entries:
   membership: false
   labels:
   - technical
-- description: Update support for RabbitMQ in 2.4.5-p7 and 2.4.5-p8 in [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+- description: Updated support for RabbitMQ in 2.4.5-p7 and 2.4.5-p8 in [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
   versions: 2.4.5-p7, 2.4.5-p8
   type: technical
   date: June 11, 2024
