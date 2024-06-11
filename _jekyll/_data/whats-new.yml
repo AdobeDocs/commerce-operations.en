@@ -1,9 +1,9 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Jun 11 13:35:30 2024
+updated: Tue Jun 11 13:40:17 2024
 entries:
-- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct).
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
   versions: ''
   type: technical
   date: June 11, 2024
