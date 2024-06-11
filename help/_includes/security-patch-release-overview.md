@@ -1,4 +1,4 @@
-# About Adobe Commerce Security patch releases
+# About Adobe Commerce security patch releases
 
 **Security Bug Fix**: A software code change that resolves an identified security issue and delivers expected results in an affected product area. These fixes are generally backward compatible.
 

@@ -1,6 +1,6 @@
 # Adobe Commerce technical documentation
 
-We welcome contributions from our community as well as from Adobe employees from outside the documentation teams.
+We welcome contributions from the community as well as from Adobe employees from outside the documentation teams.
 
 ## Adobe Open Source Code of Conduct
 
@@ -60,7 +60,7 @@ Examples of templated content include, but are not limited to, the following:
 
 ### Generate templated content
 
-In general, most writers only need to add a release version to the product availability and system requirements tables. Maintenance for all other templated content is either automated or managed by a dedicated team member. These instructions are intended for "most" writers.
+In general, most writers only need to add a release version to the product availability and system requirements tables. Maintenance for all other templated content is either automated or managed by a dedicated team member. These instructions are intended for most writers.
 
 >**NOTE:**
 >

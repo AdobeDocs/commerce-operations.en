@@ -3,16 +3,16 @@ title: Release Notes for Adobe Commerce 2.4.3 Security Patches
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
 ---
-# Adobe Commerce 2.4.3 Security Patch Release Notes
+
+# Release notes for Adobe Commerce 2.4.3 security patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
-The Adobe Commerce 2.4.3-p3 security release provides security fixes for vulnerabilities that have been identified in the previous release (Adobe Commerce 2.4.3 and Magento Open Source 2.4.3). This release also includes security enhancements that improve compliance with the latest security best practices.
+The Adobe Commerce 2.4.3-p3 security release provides security fixes for vulnerabilities that have been identified in previous releases of 2.4.3. This release also includes security enhancements that improve compliance with the latest security best practices.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
-
 
 ### Apply `AC-3022.patch` to continue offering DHL as a shipping carrier
 
@@ -33,7 +33,6 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 ### Apply `AC-3022.patch` to continue offering DHL as a shipping carrier
 
 DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in the near future. Adobe Commerce 2.4.4 and earlier versions that support the DHL integration support only version 6.0. Merchants deploying these releases should apply `AC-3022.patch` at their earliest convenience to continue offering DHL as a shipping carrier. See the [Apply a patch to continue offering DHL as a shipping carrier](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Knowledge Base article for information about downloading and installing the patch.
-
 
 ### Security highlights
 
@@ -59,7 +58,6 @@ The Adobe Commerce 2.4.3-p1 security release provides security bug fixes for vul
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). The patch release also provides bug fixes for the [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html), and [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) vendor-developed extensions.
 
-
 ### Apply `AC-3022.patch` to continue offering DHL as a shipping carrier
 
 DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in the near future. Adobe Commerce 2.4.4 and earlier versions that support the DHL integration support only version 6.0. Merchants deploying these releases should apply `AC-3022.patch` at their earliest convenience to continue offering DHL as a shipping carrier. See the [Apply a patch to continue offering DHL as a shipping carrier](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Knowledge Base article for information about downloading and installing the patch.
@@ -81,4 +79,3 @@ This release includes the following hotfix, and all hotfixes that have been rele
 **Recent penetration test vulnerabilities** have been fixed in this release. <!-- MC-42431-->
 
 The unsupported source expression `unsafe-inline` has been removed from the Content Security Policy `frame-ancestors` directive. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
-

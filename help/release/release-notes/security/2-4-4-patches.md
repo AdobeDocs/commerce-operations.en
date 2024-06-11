@@ -3,9 +3,20 @@ title: Release Notes for Adobe Commerce 2.4.4 Security Patches
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 ---
-# Adobe Commerce 2.4.4 Security Patch Release Notes
+
+# Release notes for Adobe Commerce 2.4.4 security patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.4-p9
+
+The Adobe Commerce 2.4.4-p9 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.4.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Platform upgrades
+
+* **MariaDB 10.5 support**. This patch release introduces compatibility with MariaDB version 10.5. Adobe Commerce is still compatible with MariaDB version 10.4, but Adobe recommends using Adobe Commerce 2.4.4-p9 and all upcoming 2.4.4 security-only patch releases only with MariaDB version 10.5 because MariaDB 10.4 maintenance ends on June 18, 2024. <!--AC-11530-->
 
 ## 2.4.4-p8
 
@@ -125,4 +136,3 @@ Security improvements for this release improve compliance with the latest securi
 **Issue**: Web API and integration tests display this error when run on the 2.4.4-p1 package: `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **Workaround**: Install the previous version of Monolog by running the `require monolog/monolog:2.6.0` command. <!-- AC-3651-->
 
 **Issue**: Merchants may notice package version downgrade notices during an upgrade from Adobe Commerce 2.4.4 to Adobe Commerce 2.4.4-p1. These messages can be ignored. The discrepancy in package versions results from anomalies during package generation. No product functionality has been affected. See the [Packages downgraded after upgrading from 2.4.4 to 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) Knowledge Base article for a discussion of affected scenarios and workarounds.
-

@@ -5,6 +5,24 @@
 #     <Service Name>: <Service Version>, <Service Version 2>
 #     <Service Name> Cloud: <Service Version>, <Service Version 2>
 
+2.4.7-p1:
+  Apache: '2.4'
+  AWS Aurora (MySQL): '8.0'
+  AWS ElastiCache: Redis 7.0
+  AWS MQ: '3.11.20'
+  AWS OpenSearch: '2.11'
+  AWS S3: ✔️
+  Composer: '2.7'
+  Elasticsearch: '8.11'
+  MariaDB: '10.6'
+  MySQL: '8.0'
+  nginx: '1.24'
+  OpenSearch: '2.12'
+  PHP: '8.3, 8.2'
+  RabbitMQ Cloud: '3.12'
+  RabbitMQ: '3.13'
+  Redis: '7.2'
+  Varnish: '7.5'
 2.4.7:
   Composer: '2.7'
   Elasticsearch: '8.11'
@@ -23,6 +41,24 @@
   AWS MQ: '3.11.20'
   AWS ElastiCache: Redis 7.0
   AWS OpenSearch: '2.11'
+2.4.6-p6:
+  Apache: '2.4'
+  AWS Aurora (MySQL): '8.0'
+  AWS ElastiCache: Redis 6.2
+  AWS MQ: '3.9.16'
+  AWS OpenSearch: '1.2'
+  AWS S3: ✔️
+  Composer: '2.2'
+  Elasticsearch: '8.11, 7.17'
+  MariaDB: '10.6'
+  MySQL: '8.0'
+  nginx: '1.24'
+  OpenSearch Cloud: '2'
+  OpenSearch: '2.12'
+  PHP: '8.2, 8.1'
+  RabbitMQ: '3.12'
+  Redis: '7.0'
+  Varnish: '7.5'
 2.4.6-p5:
   Composer: '2.2'
   Elasticsearch: '8.11, 7.17'
@@ -131,6 +167,23 @@
   AWS MQ: '3.9.16'
   AWS ElastiCache: Redis 6.2
   AWS OpenSearch: '1.2'
+2.4.5-p8:
+  Apache: '2.4'
+  AWS Aurora (MySQL): '8.0'
+  AWS ElastiCache: Redis 6
+  AWS MQ: '3.9.13'
+  AWS OpenSearch: '1.2'
+  AWS S3: ✔️
+  Composer: '2.2'
+  Elasticsearch: '7.17'
+  MariaDB: '10.5, 10.4'
+  MySQL: '8.0'
+  nginx: '1.24'
+  OpenSearch: '1.3'
+  PHP: '8.1'
+  RabbitMQ: '3.12, 3.11'
+  Redis: '7.0'
+  Varnish: '7.5'
 2.4.5-p7:
   Composer: '2.2'
   Elasticsearch: '7.17'
@@ -138,7 +191,7 @@
   MariaDB: '10.4'
   MySQL: '8.0'
   PHP: '8.1'
-  RabbitMQ: '3.11, 3.9'
+  RabbitMQ: '3.12, 3.11, 3.9'
   Redis: '7.0'
   Varnish: '7.5'
   Apache: '2.4'
@@ -269,6 +322,23 @@
   AWS ElastiCache: Redis 6
   AWS Elasticsearch: '7.9'
   AWS OpenSearch: '1.2'
+2.4.4-p9:
+  Apache: '2.4'
+  AWS Aurora (MySQL): '8.0'
+  AWS ElastiCache: Redis 6
+  AWS MQ: '3.9.13'
+  AWS OpenSearch: '1.2'
+  AWS S3: ✔️
+  Composer: '2.2'
+  Elasticsearch: '7.17'
+  MariaDB: '10.5, 10.4'
+  MySQL: '8.0'
+  nginx: '1.24'
+  OpenSearch: '1.3'
+  PHP: '8.1'
+  RabbitMQ: '3.9'
+  Redis: '7.0'
+  Varnish: '7.5'
 2.4.4-p8:
   Composer: '2.2'
   Elasticsearch: '7.17'
