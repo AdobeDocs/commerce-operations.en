@@ -1,8 +1,19 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Jun 11 11:26:16 2024
+updated: Tue Jun 11 13:35:30 2024
 entries:
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct).
+  versions: ''
+  type: technical
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/897
+  merge_commit: 1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
 - description: Added [beta information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
     for Experience Manager Assets Integration for Commerce (private beta).
   versions: ''

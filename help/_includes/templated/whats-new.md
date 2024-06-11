@@ -4,6 +4,26 @@
 
 Learn about new documentation and significant updates to existing documentation.
 
+### June 11, 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct">UCT CLI reference</a>.</p>
+</td>
+      <td>technical</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd">1fbddf</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### June 7, 2024
 
 <table style="table-layout:auto;">
