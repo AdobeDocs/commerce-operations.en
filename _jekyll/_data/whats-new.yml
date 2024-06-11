@@ -1,8 +1,45 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Jun 11 13:40:17 2024
+updated: Tue Jun 11 14:07:38 2024
 entries:
+- description: Published release notes for the June 2024 security patches:<br/>- [2.4.7-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: ''
+  type: major-update
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/871
+  merge_commit: 000fe5ac88b31e5172c35b629d26423afcca214d
+  contributor: meker
+  membership: false
+  labels:
+  - major-update
+- description: Updated [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    according to the June 2024 patch release. Also, changed representation of the
+    system requirements tables.
+  versions: ''
+  type: technical
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/877
+  merge_commit: aef697509227b1dfebb801b0e1e098da90201971
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+- description: Updated support for RabbitMQ in 2.4.5-p7 and 2.4.5-p8 in [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+  versions: 2.4.5-p7, 2.4.5-p8
+  type: technical
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/879
+  merge_commit: 20823bae109f5b053f352b0a13275acecf991904
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.5-p7
+  - 2.4.5-p8
 - description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
   versions: ''
   type: technical
