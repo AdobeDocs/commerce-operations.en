@@ -1,5 +1,5 @@
 # Parameters for a GitHub search query
-base_branch: main
+base_branch: june-2024-release
 
 enterprise: git.corp.adobe.com
 
