@@ -67,7 +67,7 @@ After the Application Server feature is enabled on your Pro project, complete th
 
    ```bash
    chmod +x application-server/start.sh
-```
+   ```
 
 1. Add updated files to the git index with this command:
 
