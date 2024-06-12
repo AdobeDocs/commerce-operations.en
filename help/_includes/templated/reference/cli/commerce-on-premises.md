@@ -4,7 +4,7 @@
 
 <!-- The template to render with above values -->
 
-**Version**: 2.4.7
+**Version**: 2.4.7-p1
 
 This reference contains 141 commands available through the `bin/magento` command-line tool.
 The initial list is auto generated using the `bin/magento list` command at Adobe Commerce.
@@ -3989,7 +3989,7 @@ Do not ask any interactive question
 ## `events:subscribe`
 
 ```bash
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
 ```
 
 Subscribes to the event
@@ -4042,6 +4042,13 @@ The destination of this event. Specify this option for the events that should be
    
 -  Default: `default`
 -  Requires a value
+
+### `--hipaaAuditRequired`
+
+Indicates the event contains data that is subject to HIPAA auditing.
+   
+-  Default: `false`
+-  Does not accept a value
 
 ### `--help`, `-h`
 
