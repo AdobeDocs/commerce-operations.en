@@ -1,6 +1,6 @@
 # 2.4.7 security enhancements
 
-No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including but not limited to these efforts:
+No confirmed attacks related to these issues have occurred to date. However, certain vulnerabilities can potentially be exploited to access customer information or take over administrator sessions. Most of these issues require that an attacker first obtains access to the Admin. As a result, we remind you to take all necessary steps to protect your Admin, including, but not limited to these efforts:
 
 * IP allowlisting
 * [Two-factor authentication](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/)
@@ -17,7 +17,7 @@ Security improvements for this release improve compliance with the latest securi
 
 * **Limitations on the number of auto-generated coupon codes**. Commerce now limits the number of coupon codes that are automatically generated. The default maximum is 250,000. Merchants can use the new **[!UICONTROL Code Quantity Limit]** configuration option (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) to prevent potentially overwhelming the system with many coupons. <!-- AC-8753 -->
 
-* **Optimization of the default Admin URL generation process**. The generation of the default Admin URL has been optimized for increased randomness, which makes generated URLs less predictable. <!-- AC-9028 -->
+* **Optimization of the default Admin URL generation process**. The generation of the default Admin URL is optimized for increased randomness, which makes generated URLs less predictable. <!-- AC-9028 -->
 
 * **Added Subresource Integrity (SRI) support** to comply with PCI 4.0 requirements for verification of script integrity on payment pages. Subresource Integrity (SRI) support provides integrity hashes for all JavaScript assets residing in the local filesystem. The default SRI feature is implemented only on the payment pages for the Admin and storefront areas. However, merchants can extend the default configuration to other pages. See [Subresource Integrity](https://developer.adobe.com/commerce/php/development/security/subresource-integrity/) in the _Commerce PHP Developer Guide_.<!--AC-1153-->
 
