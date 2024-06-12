@@ -62,7 +62,11 @@ After the Application Server feature is enabled on your Pro project, complete th
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
 
    ```
+1. Make `/application-server/start.sh ` executable by running the following command:
 
+   ```bash
+   chmod +x application-server/start.sh
+   ```
 1. Add updated files to the git index with this command:
 
    ```bash
