@@ -13,7 +13,8 @@ The [!DNL Site-Wide Analysis Tool] service is available in [production mode](htt
 
 >[!NOTE]
 >
->If you have an on-premises installation of Adobe Commerce, you must install an [agent](../site-wide-analysis-tool/installation.md) on your infrastructure to use the tool.
+>Effective April 23, 2024, the [!DNL Site-Wide Analysis Tool] has been decommissioned and is no longer available for all Adobe Commerce on-premises customers.
+
 
 ![Site-Wide Analysis Dashboard](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool] Dashboard*
