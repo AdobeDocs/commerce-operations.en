@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce 2.4.7 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.7.
+exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 ---
-
 # Release notes for Adobe Commerce 2.4.7 security patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
