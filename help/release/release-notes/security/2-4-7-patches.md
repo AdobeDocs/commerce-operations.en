@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce 2.4.7 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.7.
+exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 ---
-
 # Release notes for Adobe Commerce 2.4.7 security patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
@@ -16,10 +16,6 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 ### Security highlight
 
 This release includes an update to the [one-time password (OTP) settings](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) for Google Authenticator to resolve an error that was introduced by a [backward-incompatible change](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7. The description of the **[!UICONTROL OTP Window]** field now provides an accurate explanation of the setting and the default value has been changed from `1` to `29`.
-
-### Additional security enhancements
-
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ### Hotfixes included in this release
 

@@ -86,8 +86,8 @@ task :image_optim do
 
   unless path
     puts 'Looking in uncommitted files ...'.blue
-    modified_files = `git ls-files --modified --others --exclude-standard`.split("\n")
-    deleted_files = `git ls-files --deleted`.split("\n")
+    modified_files = `git ls-files --modified --others --exclude-standard -- ..`.split("\n")
+    deleted_files = `git ls-files --deleted -- ..`.split("\n")
     image_files_to_check = (modified_files - deleted_files).select do |file|
       File.extname(file) =~ /\.(png|jpg|jpeg|gif)/i
     end
