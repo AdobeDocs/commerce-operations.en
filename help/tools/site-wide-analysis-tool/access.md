@@ -13,7 +13,7 @@ The [!DNL Site-Wide Analysis Tool] service is available in [production mode](htt
 
 >[!NOTE]
 >
->Effective April 23, 2024, the [!DNL Site-Wide Analysis Tool] has been decommissioned and is no longer available for all Adobe Commerce on-premises customers.
+>Effective April 23, 2024, the [!DNL Site-Wide Analysis Tool] has been decommissioned and is no longer available for Adobe Commerce on-premises customers.
 
 
 ![Site-Wide Analysis Dashboard](../../assets/tools/site-wide-analysis-tool-dashboard.png)
