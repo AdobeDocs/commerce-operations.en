@@ -260,7 +260,7 @@ The indexers-related database triggers are added when the indexer mode is set to
 
 ### Set indexer status
 
-This command allows administrators to modify the operational status of one or more indexers, optimizing system performance during extensive operations like data imports, updates, or maintenance.
+The `bin/magento indexer:set-status` command was introduced in Adobe Commerce 2.4.7. It allows administrators to modify the operational status of one or more indexers, optimizing system performance during extensive operations like data imports, updates, or maintenance.
 
 Command syntax:
 
