@@ -30,7 +30,6 @@ The following table provides the dates for scheduled feature releases (dates are
             <li><strong><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> Cloud infrastructure</strong>—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.</li>
             <li><strong><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> Services</strong>—New SaaS features that are delivered independently from patch releases. For example, Catalog Service, Live Search, and Product Recommendations.</li>
             <li><strong><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> Extensibility</strong>—New developer tools and services for out-of-process extensibility that are delivered independently from patch releases. For example, Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce, and API Mesh.</li>
-            <li><strong><img alt="B2B feature icon" src="../assets/icons/enterprise.svg"></img> B2B</strong>—New features, enhancements, and bug fixes for the B2B extension for Adobe Commerce. For details about releases of the B2B extension, see the <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B Release Notes</a>.</li>
          </ul>
       </td>
    </tr>
