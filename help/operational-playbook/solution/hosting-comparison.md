@@ -3,6 +3,8 @@ title: Commerce Hosting Comparison
 description: Make the best decision about hosting for your ecommerce project by reviewing this comparison table.
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
 feature: Best Practices, Cloud, Paas
+hide: yes
+hidefromtoc: yes
 ---
 # Cloud vs on-premises
 
