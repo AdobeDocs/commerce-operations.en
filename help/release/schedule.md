@@ -73,10 +73,6 @@ The following table provides the dates for scheduled feature releases (dates are
 
 Adobe also releases [patches](versioning-policy.md#patch-release) for each supported release line of the core Adobe Commerce PHP application. Patch releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant.
 
->[!NOTE]
->
->Beginning in 2024, Adobe no longer provides "pre-release" access to patches. Instead, for 2.4.7 and later, Adobe Commerce customers can use [beta releases](beta.md) to access pre-general availability code for testing and development purposes.
-
 The following table provides the dates for scheduled patch releases (dates are subject to change):
 
 <table>
