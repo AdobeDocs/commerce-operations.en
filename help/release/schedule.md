@@ -47,25 +47,6 @@ The following table provides the dates for scheduled releases (dates are subject
 </tfoot>
 <tbody>
   <tr>
-    <td>February 13, 2024</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.6-p4, 2.4.5-p6, 2.4.4-p7</td>
-  </tr>
-  <tr>
-    <td>March 12, 2024</td>
-    <td>--</td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2.4.7-beta3</td>
-  </tr>
-  <tr>
-    <td>April 9, 2024</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.7</a></strong>:<ul><li>Performance improvements</li><li>Quality enhancements</li><li>Security enhancements</li><li>Third-party dependency updates</li></ul><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.6-p5, 2.4.5-p7, 2.4.4-p8</td>
-  </tr>
-  <tr>
-    <td>June 11, 2024</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9</td>
-  </tr>
   <tr>
     <td>August 13, 2024</td>
     <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
@@ -75,6 +56,32 @@ The following table provides the dates for scheduled releases (dates are subject
     <td>October 8, 2024</td>
     <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
     <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2.4.8-beta1<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
+  </tr>
+  <tr>
+    <td>February 11, 2025</td>
+    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
+    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2.4.8-beta2<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a></td>
+  </tr>
+  <tr>
+    <tr>
+    <td>April 8, 2025</td>
+    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
+    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.8</a></strong>:<ul><li>Performance improvements</li><li>Quality enhancements</li><li>Security enhancements</li><li>Third-party dependency updates</li></ul><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a></td>
+  </tr>
+  <tr>
+    <td>June 10, 2025</td>
+    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
+    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a></td>
+  </tr>
+  <tr>
+    <td>August 12, 2025</td>
+    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
+    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a></td>
+  </tr>
+  <tr>
+    <td>October 14, 2025</td>
+    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
+    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a></td>
   </tr>
 </tbody>
 </table>
