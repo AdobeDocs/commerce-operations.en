@@ -25,7 +25,7 @@ The following table provides the dates for scheduled feature releases (dates are
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>Legend</strong>
+      <td colspan="2"><strong>Legend</strong>
          <ul>
             <li><strong><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> Cloud infrastructure</strong>—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.</li>
             <li><strong><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> Services</strong>—New SaaS features that are delivered independently from patch releases. For example, Catalog Service, Live Search, and Product Recommendations.</li>
@@ -88,7 +88,7 @@ The following table provides the dates for scheduled patch releases (dates are s
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>Legend</strong>
+      <td colspan="2"><strong>Legend</strong>
          <ul>
             <li><strong><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> Patches</strong>—Updates to the core Adobe Commerce PHP application that include security, compliance, performance, and high-priority quality fixes.</li>
          </ul>
