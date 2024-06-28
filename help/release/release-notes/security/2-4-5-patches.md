@@ -45,8 +45,6 @@ This release introduces two significant security enhancements:
 
 * **Limitations on the number of auto-generated coupon codes**. Commerce now limits the number of coupon codes that are automatically generated. The default maximum is 250,000. Merchants can use the new **[!UICONTROL Code Quantity Limit]** configuration option (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) to control this new limit. <!-- AC-8753 -->
 
-
-
 ## Adobe Commerce 2.4.5-p5
 
 The Adobe Commerce 2.4.5-p5 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements to improve compliance with the latest security best practices.

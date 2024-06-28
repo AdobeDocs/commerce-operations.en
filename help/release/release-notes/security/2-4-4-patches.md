@@ -1,5 +1,5 @@
 ---
-title: Release Notes for Adobe Commerce 2.4.4 Security Patches
+title: Adobe Commerce 2.4.4 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 ---
@@ -22,13 +22,13 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 {{$include /help/_includes/release-notes/2-4-7-security.md}}
 
-## 2.4.4-p8
+## Adobe Commerce 2.4.4-p8
 
 The Adobe Commerce 2.4.4-p8 security release provides security bug fixes for your Adobe Commerce 2.4.4 deployment. These updates fix vulnerabilities that have been identified in previous releases.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
 
-## 2.4.4-p7
+## Adobe Commerce 2.4.4-p7
 
 The Adobe Commerce 2.4.4-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements that improve compliance with the latest security best practices.
 
@@ -45,7 +45,7 @@ This release introduces two significant security enhancements:
 
 * **Limitations on the number of auto-generated coupon codes**. Commerce now limits the number of coupon codes that are automatically generated. The default maximum is 250,000. Merchants can use the new **[!UICONTROL Code Quantity Limit]** configuration option (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) to control this new limit. <!-- AC-8753 -->
 
-## 2.4.4-p6
+## Adobe Commerce 2.4.4-p6
 
 The Adobe Commerce 2.4.4-p6 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements that improve compliance with the latest security best practices.
 
@@ -68,7 +68,7 @@ This release introduces a new full page cache configuration setting that helps t
 
 If the checksum problem persists, remove the `composer.lock` file before re-running the `bin/magento composer update` command to update every package.
 
-## 2.4.4-p5
+## Adobe Commerce 2.4.4-p5
 
 The Adobe Commerce 2.4.4-p5 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
 
@@ -78,7 +78,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 `jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
 
-## 2.4.4-p4
+## Adobe Commerce 2.4.4-p4
 
 The Adobe Commerce 2.4.4-p4 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements and platform upgrades to improve compliance with the latest security best practices.
 
@@ -102,13 +102,13 @@ Platform upgrades for this release improve compliance with the latest security b
 
 * **JavaScript libraries**. Outdated JavaScript libraries have been upgraded to the latest minor or patch versions, including `moment.js` library (v2.29.4), `jQuery UI` library (v1.13.2), and `jQuery` validation plugin library (v1.19.5).
 
-## 2.4.4-p3
+## Adobe Commerce 2.4.4-p3
 
 The Adobe Commerce 2.4.4-p3 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html).
 
-## 2.4.4-p2
+## Adobe Commerce 2.4.4-p2
 
 The Adobe Commerce 2.4.4-p2 security release provides fixes for vulnerabilities that have been identified in previous releases. One fix includes the creation of a new configuration setting. The **Require email confirmation if email has been changed** configuration setting lets administrators require email confirmation when an admin user changes their email address. <!-- AC-6292-->
 
@@ -118,7 +118,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in the near future. Adobe Commerce 2.4.4 and earlier versions that support the DHL integration support only version 6.0. Merchants deploying these releases should apply `AC-3022.patch` at their earliest convenience to continue offering DHL as a shipping carrier. See the [Apply a patch to continue offering DHL as a shipping carrier](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier?_ga=2.201689433.994140970.1661546561-1218319047.1534347481) Knowledge Base article for information about downloading and installing the patch.
 
-## 2.4.4-p1
+## Adobe Commerce 2.4.4-p1
 
 The Adobe Commerce 2.4.4-p1 security release provides fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements to improve compliance with the latest security best practices.
 
