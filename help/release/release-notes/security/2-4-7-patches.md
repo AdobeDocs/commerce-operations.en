@@ -7,18 +7,31 @@ exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.7-p1
+## 2.4.7-p2
+
+The Adobe Commerce 2.4.7-p2 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.7.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Highlights
+
+This release includes the following significant security enhancements:
+
+- Prototype.js security vulnerability CVE-2020-27511 fix
+- Google Maps API fix
+
+## 2.4.7-p1
 
 The Adobe Commerce 2.4.7-p1 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.7.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
-### Security highlights
+### Highlights
 
-* **Update [one-time password (OTP) settings](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) for Google Authenticator**–This update is required to resolve an error that was introduced by a [backward-incompatible change](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7. The description of the **[!UICONTROL OTP Window]** field now provides an accurate explanation of the setting and the default value has been changed from `1` to `29`.
+- **Update [one-time password (OTP) settings](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) for Google Authenticator**–This update is required to resolve an error that was introduced by a [backward-incompatible change](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7. The description of the **[!UICONTROL OTP Window]** field now provides an accurate explanation of the setting and the default value has been changed from `1` to `29`.
 
-* **B2B version compatibility**—For compatibility with Commerce version 2.4.7-p1, merchants that have the Adobe Commerce B2B extension must upgrade to [B2B version 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html).
+- **B2B version compatibility**—For compatibility with Commerce version 2.4.7-p1, merchants that have the Adobe Commerce B2B extension must upgrade to [B2B version 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html).
 
-### Hotfixes included in this release
+### Hotfixes included in this patch
 
 Adobe Commerce 2.4.7-p1 resolves an issue introduced in the scope of the UPS integration migration from SOAP to REST API. This issue affected customers who ship outside of the US and prevented them from using the Metric System/SI measurements of kilograms and centimeters for packages to create shipments with UPS. See the [UPS shipping method integration migration from SOAP to RESTful API](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) knowledge base article for details.
