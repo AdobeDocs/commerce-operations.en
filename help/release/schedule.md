@@ -10,7 +10,7 @@ Adobe continually strives to find the right balance between making product upgra
 
 ## Features, cloud infrastructure, and extensibility
 
-New features, feature updates, cloud infrastructure, and extensibility updates are delivered independently from patch releases and are available through [external module, extension, tool, or web service](versioning-policy.md#features-cloud-infrastructure-and-extensibility-release). Examples include:
+New features, feature updates, cloud infrastructure, and extensibility updates are delivered independently from patch releases and are available through external module, extension, tool, or web service. Examples include:
 
 - ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all)—New features and functionality that are delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Live Search, and Product Recommendations.
 
