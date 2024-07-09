@@ -8,65 +8,29 @@ exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 
 Adobe continually strives to find the right balance between making product upgrades simple and predictable while delivering improvements and new features to early adopters faster (see [versioning policy](versioning-policy.md)). The purpose of this schedule is to provide dates for when Adobe plans to announce the release of substantial new features.
 
-## Features
+## Features, cloud infrastructure, and extensibility
 
-New features and feature updates are delivered independently from patch releases and are available through [external module, extension, tool, or web service](versioning-policy.md#cloud-infrastructure-services-and-extensibility-release). Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh, Integration Starter Kit, and Eventing. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) to learn more about the latest features.
+New features, feature updates, cloud infrastructure, and extensibility updates are delivered independently from patch releases and are available through [external module, extension, tool, or web service](versioning-policy.md#features-cloud-infrastructure-and-extensibility-release). Examples include:
 
-Feature releases may vary throughout the year. However, Adobe regularly and continously releases improvements for cloud infrastructure, SaaS products (services), and extensibility tools between the dates specified on this page.
+- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all)—New features and functionality that are delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Live Search, and Product Recommendations.
 
-The following table provides the dates for scheduled feature releases (dates are subject to change):
+- ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
-<table>
-<thead>
-  <tr>
-    <th>General Availability</th>
-    <th>Features</th>
-  </tr>
-</thead>
-<tfoot>
-   <tr>
-      <td colspan="2"><strong>Legend</strong>
-         <ul>
-            <li><strong><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> Cloud infrastructure</strong>—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.</li>
-            <li><strong><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> Services</strong>—New SaaS features that are delivered independently from patch releases. For example, Catalog Service, Live Search, and Product Recommendations.</li>
-            <li><strong><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> Extensibility</strong>—New developer tools and services for out-of-process extensibility that are delivered independently from patch releases. For example, Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce, and API Mesh.</li>
-         </ul>
-      </td>
-   </tr>
-</tfoot>
-<tbody>
-  <tr>
-  <tr>
-    <td>August 13, 2024</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-  </tr>
-  <tr>
-    <td>October 8, 2024</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-  </tr>
-  <tr>
-    <td>February 11, 2025</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-  </tr>
-  <tr>
-    <tr>
-    <td>April 8, 2025</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-  </tr>
-  <tr>
-    <td>June 10, 2025</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-  </tr>
-  <tr>
-    <td>August 12, 2025</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-  </tr>
-  <tr>
-    <td>October 14, 2025</td>
-    <td><img alt="Infrastructure feature icon" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Cloud infrastructure</a><br><img alt="Services feature icon" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Services</a><br><img alt="Extensibility feature icon" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibility</a></td>
-  </tr>
-</tbody>
-</table>
+- ![Extensibility icon](../assets/icons/brackets.svg) [**Extensibility**](https://developer.adobe.com/commerce/extensibility/)—New developer tools and services for out-of-process extensibility that are delivered independently from patch releases. For example, Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce, and API Mesh.
+
+The following list provides the dates for scheduled feature, cloud infrastructure, and extensibility releases (dates are subject to change):
+
+- August 13, 2024
+- October 8, 2024
+- February 11, 2025
+- April 8, 2025
+- June 10, 2025
+- August 12, 2025
+- October 14, 2025
+
+>[!NOTE]
+>
+>Feature, cloud infrastructure, and extensibility releases may vary throughout the year. However, Adobe regularly and continously releases improvements for these areas between the dates specified on this page. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) to learn more about the latest features.
 
 ## Patches
 
@@ -81,15 +45,6 @@ The following table provides the dates for scheduled patch releases (dates are s
     <th>Patches</th>
   </tr>
 </thead>
-<tfoot>
-   <tr>
-      <td colspan="2"><strong>Legend</strong>
-         <ul>
-            <li><strong><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> Patches</strong>—Updates to the core Adobe Commerce PHP application that include security, compliance, performance, and high-priority quality fixes.</li>
-         </ul>
-      </td>
-   </tr>
-</tfoot>
 <tbody>
   <tr>
   <tr>
