@@ -2,7 +2,7 @@
 # This file is being used in SWAT automation. Follow existing format to avoid breaking changes.
 # If breaking changes cannot be omitted, communicate with the SWAT team prior to introducing them.
 
-extensions:   
+extensions:
   Adobe I/O Events for Adobe Commerce:
     docs:
       Composer: https://developer.adobe.com/commerce/extensibility/events/installation/
@@ -41,14 +41,14 @@ extensions:
       - core: 2.4.5
         version: 1.2+
       - core: 2.4.4
-        version: 1.2+  
+        version: 1.2+
   B2B:
     docs:
       Composer: https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html
     support:
       - core: 2.4.7
-        version: 1.4.2 (PHP 8.2)
+        version: 1.4.2-p1 (PHP 8.2)
       - core: 2.4.6
         version: 1.3.5+
       - core: 2.4.5
