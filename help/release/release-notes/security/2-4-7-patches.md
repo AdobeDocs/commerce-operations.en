@@ -15,10 +15,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-This release includes the following significant security enhancements:
+This release includes a fix for the [!DNL Prototype.js] security vulnerability ([CVE-2020-27511](https://nvd.nist.gov/vuln/detail/CVE-2020-27511)).
 
-- Prototype.js security vulnerability CVE-2020-27511 fix
-- Google Maps API fix
+### Hotfixes included in this release
+
+Adobe Commerce 2.4.7-2 resolves a JavaScript error that prevented Google Maps from rendering properly in the [!UICONTROL **PageBuilder**] editor. See the [Revised patches for Google Maps access loss on all Adobe Commerce versions](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) knowledge base article for details.<!-- AC-11936, ACP2E-3156 -->
 
 ## 2.4.7-p1
 

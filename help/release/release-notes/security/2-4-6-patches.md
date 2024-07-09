@@ -8,6 +8,20 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
+## 2.4.6-p7
+
+The Adobe Commerce 2.4.6-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Highlights
+
+This release includes a fix for the [!DNL Prototype.js] security vulnerability ([CVE-2020-27511](https://nvd.nist.gov/vuln/detail/CVE-2020-27511)).
+
+### Hotfixes included in this release
+
+Adobe Commerce 2.4.6-p7 resolves a JavaScript error that prevented Google Maps from rendering properly in the [!UICONTROL **PageBuilder**] editor. See the [Revised patches for Google Maps access loss on all Adobe Commerce versions](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) knowledge base article for details.<!-- AC-11936, ACP2E-3156 -->
+
 ## 2.4.6-p6
 
 The Adobe Commerce 2.4.6-p6 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.6.
