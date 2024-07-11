@@ -12,7 +12,7 @@ Adobe continually strives to find the right balance between making product upgra
 
 New features, feature updates, cloud infrastructure, and extensibility updates are delivered independently from patch releases and are available through external module, extension, tool, or web service. Examples include:
 
-- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all)—New features and functionality that are delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Live Search, and Product Recommendations.
+- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all)—New features and functionality that are delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search, and Product Recommendations.
 
 - ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
@@ -36,6 +36,8 @@ The following list provides the dates for scheduled feature, cloud infrastructur
 
 Adobe also releases [patches](versioning-policy.md#patch-release) for each supported release line of the core Adobe Commerce PHP application. Patch releases are opportunities to upgrade the core codebase to keep your platform secure, reliable, and performant.
 
+In addition to the scheduled quality, security, and beta patches listed on this page, Adobe provides access to [individual patches](versioning-policy.md#individual-patch) through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md). The tool allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce.
+
 The following table provides the dates for scheduled patch releases (dates are subject to change):
 
 <table>
@@ -57,7 +59,7 @@ The following table provides the dates for scheduled patch releases (dates are s
   </tr>
   <tr>
     <td>February 11, 2025</td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2.4.8-beta2<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a></td>
+    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="beta.md#adobe-commerce-foundation-public-beta">Beta patch</a>: 2.4.8-beta2<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a></td>
   </tr>
   <tr>
     <tr>

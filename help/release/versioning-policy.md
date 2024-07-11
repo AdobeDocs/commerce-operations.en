@@ -50,7 +50,7 @@ Beta Releases may contain defects and are provided "AS IS" without warranty of a
 
 ## Features, cloud infrastructure, and extensibility release
 
-Cloud infrastructure and feature releases contain new features and feature updates that are delivered as independent services, separate from patch releases. Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh, Integration Starter Kit, and Eventing.
+Cloud infrastructure and feature releases contain new features and feature updates that are delivered as independent services, separate from patch releases. Examples include updates to our cloud hosting services and infrastructure, B2B, SaaS products (Catalog Service, Data Connection, Product Recommendations, and Live Search), and extensibility technology (API Mesh, Integration Starter Kit, and Eventing).
 
 ## Hotfix
 
@@ -66,7 +66,7 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 
 >[!NOTE]
 >
->Individual patches do not contain backward incompatible changes.
+>Individual patches do not contain backward-incompatible changes.
 
 ## Custom patch
 
