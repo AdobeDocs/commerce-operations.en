@@ -55,7 +55,7 @@ The following table provides the dates for scheduled patch releases (dates are s
   </tr>
   <tr>
     <td>October 8, 2024</td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta patch</a>: 2.4.8-beta1<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
+    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="beta.md#adobe-commerce-foundation-public-beta">Beta patch</a>: 2.4.8-beta1<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
   </tr>
   <tr>
     <td>February 11, 2025</td>
