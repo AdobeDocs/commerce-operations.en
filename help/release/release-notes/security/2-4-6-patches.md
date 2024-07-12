@@ -67,7 +67,7 @@ For the latest information about the security fixes, see [Adobe Security Bulleti
 
 This release introduces a new full page cache configuration setting that helps to mitigate the risks associated with the `{BASE-URL}/page_cache/block/esi HTTP` endpoint. This endpoint supports unrestricted, dynamically loaded content fragments from Commerce layout handles and block structures. The new **[!UICONTROL Handles Param]** configuration setting sets the value of this endpoint's `handles` parameter, which determines the maximum allowed number of handles per API. The default value of this property is 100. Merchants can change this value from the Admin (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
 
-### Hotfixes
+### Hotfixes included in this release
 
 Adobe Commerce 2.4.6-p3 includes resolution of the performance degradation fixed by patch ACSD-51892. Merchants are not affected by the issue addressed by this patch, which is described in the [ACSD-51892: Performance issue where config files load multiple times](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) Knowledge Base article.
 
