@@ -16,7 +16,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-08-security-patches.md}}
+{{$include /help/_includes/release-notes/2024-08/security.md}}
 
 ### Hotfixes included in this release
 
