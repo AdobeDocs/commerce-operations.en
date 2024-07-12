@@ -15,11 +15,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-This release includes a fix for the [!DNL Prototype.js] security vulnerability ([CVE-2020-27511](https://nvd.nist.gov/vuln/detail/CVE-2020-27511)).
+{{$include /help/_includes/release-notes/2024-08/security.md}}
 
 ### Hotfixes included in this release
 
-Adobe Commerce 2.4.7-2 resolves a JavaScript error that prevented Google Maps from rendering properly in the [!UICONTROL **PageBuilder**] editor. See the [Revised patches for Google Maps access loss on all Adobe Commerce versions](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions) knowledge base article for details.<!-- AC-11936, ACP2E-3156 -->
+{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
 
 ## 2.4.7-p1
 
@@ -28,6 +28,8 @@ The Adobe Commerce 2.4.7-p1 security release provides security bug fixes for vul
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ### Highlights
+
+This release includes the following highlights:
 
 * **Update [one-time password (OTP) settings](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) for Google Authenticator**–This update is required to resolve an error that was introduced by a [backward-incompatible change](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7. The description of the **[!UICONTROL OTP Window]** field now provides an accurate explanation of the setting and the default value has been changed from `1` to `29`.
 
