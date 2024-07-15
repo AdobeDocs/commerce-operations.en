@@ -1,8 +1,33 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Jun 11 14:07:38 2024
+updated: Mon Jul 15 09:50:42 2024
 entries:
+- description: Updated [Packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce),
+    [bin/magento](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises),
+    and [required PHP extensions](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions).
+  versions: 2.4.7-p1
+  type: technical
+  date: June 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/901
+  merge_commit: de91db690b6297dc8857807acec5d33c14e60478
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
+  - 2.4.7-p1
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
+  versions: ''
+  type: technical
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/897
+  merge_commit: 1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
 - description: Published release notes for the June 2024 security patches:<br/>- [2.4.7-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
     [2.4.6-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
     [2.4.5-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
@@ -40,17 +65,6 @@ entries:
   - technical
   - 2.4.5-p7
   - 2.4.5-p8
-- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
-  versions: ''
-  type: technical
-  date: June 11, 2024
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/897
-  merge_commit: 1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd
-  contributor: magedocs
-  membership: false
-  labels:
-  - technical
-  - devops
 - description: Added [beta information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
     for Experience Manager Assets Integration for Commerce (private beta).
   versions: ''
