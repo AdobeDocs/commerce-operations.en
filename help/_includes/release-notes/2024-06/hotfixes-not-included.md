@@ -8,10 +8,10 @@
 
 1. Apply a June security patch (recommended):
 
-   - 2.4.7-p1
-   - 2.4.6-p6
-   - 2.4.5-p8
-   - 2.4.4-p9
+   * 2.4.7-p1
+   * 2.4.6-p6
+   * 2.4.5-p8
+   * 2.4.4-p9
 
 1. Apply the hotfix described in the [placeholder](link) Knowledge Base article.
 
