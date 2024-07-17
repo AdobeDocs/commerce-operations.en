@@ -19,10 +19,14 @@
 
 >[!NOTE]
 >
->Alternatively, you can apply the updated isolated patch for CVE-2024-34102, which includes the hotfix. See the [placeholder](https://www.adobe.com/) Knowledge Base article for details about the updated isolated patch and how to apply it.
+>Alternatively, you can apply the updated [isolated patch](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) for CVE-2024-34102, which includes the hotfix.
 
 **If you HAVE applied a June security patch or the original [isolated patch](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) for CVE-2024-34102, take the following actions immediately:**
 
 1. Apply the hotfix described in the [placeholder](https://www.adobe.com/) Knowledge Base article.
 
 1. [Rotate](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) your encryption keys.
+
+**If you HAVE applied a June security patch or the original [isolated patch](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) for CVE-2024-34102 AND rotated your encryption key, take the following actions immediately:**
+
+1. Apply the hotfix described in the [placeholder](https://www.adobe.com/) Knowledge Base article.
