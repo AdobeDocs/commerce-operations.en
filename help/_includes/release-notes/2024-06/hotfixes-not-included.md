@@ -4,7 +4,7 @@
 >
 >This is an urgent update to our last communication regarding [CVE-2024-34102](https://nvd.nist.gov/vuln/detail/CVE-2024-34102). Adobe is aware that CVE-2024-34102 has been exploited in the wild in very limited attacks targeting Adobe Commerce merchants. Take immediate action to resolve the vulnerability, if you have not done so. 
  
-**For customers who have not applied the security update from June 11, 2024 or the isolated patch released on June 28, 2024:**
+**For customers who have not applied security patch released on June 11, 2024 or the isolated patch released on June 28, 2024:**
 
 Option 1:
 
