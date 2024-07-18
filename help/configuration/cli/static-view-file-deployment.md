@@ -87,7 +87,7 @@ bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-
 
 Sample output:
 
-```terminal
+```
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -126,7 +126,7 @@ bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magen
 
 Sample output:
 
-```terminal
+```
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -156,7 +156,7 @@ To do this, take the following steps:
 
 **Symptom**: The following error is displayed when you run the static view files deployment tool:
 
-```terminal
+```
 ERROR: You need to install the Commerce application before running this utility.
 ```
 

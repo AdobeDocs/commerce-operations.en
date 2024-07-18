@@ -388,7 +388,7 @@ If you configured the agent to run with cron instead, use the following instruct
 
 You may see the following error if your access keys are not parsed properly:
 
-```terminal
+```
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
 FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```

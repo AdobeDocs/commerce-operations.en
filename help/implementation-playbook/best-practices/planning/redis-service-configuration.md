@@ -225,7 +225,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
 
 During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
-```terminal
+```
 W:   - Downloading colinmollenhour/credis (1.11.1)
 W:   - Downloading colinmollenhour/php-redis-session-abstract (v1.4.5)
 ...

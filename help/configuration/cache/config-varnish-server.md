@@ -135,7 +135,7 @@ If Varnish fails to start as a service, start it from the command line as follow
 
    The following messages display to confirm a successful start:
 
-   ```terminal
+   ```
    child (29805) Started
    200 0
 
@@ -153,7 +153,7 @@ netstat -tulpn
 
 Look for the following output in particular:
 
-```terminal
+```
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -172,7 +172,7 @@ Install the Commerce software if you have not already done so. When prompted for
 
 Possible error installing Commerce:
 
-```terminal
+```
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -211,7 +211,7 @@ In a web browser, go to any Commerce page.
 
 A long list of response headers display in your command prompt window. Look for headers like the following:
 
-```terminal
+```
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -246,7 +246,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 Look for headers like the following:
 
-```terminal
+```
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

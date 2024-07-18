@@ -8,7 +8,7 @@ exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
 
 The following error message indicates that the Adobe Commerce version you are upgrading from is configured to use a catalog search engine that is not supported in the version you are upgrading to:
 
-```terminal
+```
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 

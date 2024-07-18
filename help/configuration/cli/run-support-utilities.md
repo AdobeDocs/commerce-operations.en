@@ -75,7 +75,7 @@ Where:
 
 Sensitive data includes customer information from the following database tables:
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -94,7 +94,7 @@ After the command completes, provide the database backup to Adobe Commerce Suppo
 
 We provide commands that display paths to utilities required by the Data Collector and the command line. You can use these commands, for example, if errors like the following display in the Admin or on the command line:
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -113,7 +113,7 @@ Run the following commands in the order shown to display the paths to the applic
 
 A sample follows:
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

@@ -33,7 +33,7 @@ bin/magento setup:uninstall
 
 The following message displays to confirm a successful uninstallation:
 
-```terminal
+```
 [SUCCESS]: Magento uninstallation complete.
 ```
 

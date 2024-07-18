@@ -29,7 +29,7 @@ From the command line of the Commerce application server, view the status of the
 
 A sample follows:
 
-```terminal
+```
 Current status:
                         config: 1
                         layout: 1
@@ -94,7 +94,7 @@ bin/magento cache:disable db_ddl full_page
 
 Sample result:
 
-```terminal
+```
    Changed cache status:
        db_ddl: 1 -> 0
     full_page: 1 -> 0
@@ -146,7 +146,7 @@ Where `[type]` is a space-separated list of cache types. Omitting `[type]` clean
 
 Sample result:
 
-```terminal
+```
    Flushed cache types:
    config
    layout
