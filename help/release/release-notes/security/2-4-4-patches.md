@@ -28,6 +28,10 @@ The Adobe Commerce 2.4.4-p9 security release provides security bug fixes for vul
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
+### Apply hotfix for CVE-2024-34102
+
+{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+
 ### Platform upgrades
 
 * **MariaDB 10.5 support**. This patch release introduces compatibility with MariaDB version 10.5. Adobe Commerce is still compatible with MariaDB version 10.4, but Adobe recommends using Adobe Commerce 2.4.4-p9 and all upcoming 2.4.4 security-only patch releases only with MariaDB version 10.5 because MariaDB 10.4 maintenance ends on June 18, 2024. <!--AC-11530-->
