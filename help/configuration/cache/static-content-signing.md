@@ -20,7 +20,7 @@ Commerce accomplishes this by adding a deployment version to the URL of static f
 
 The following is an example of a URL signed with a version:
 
-```terminal
+```
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 

@@ -29,7 +29,7 @@ The language package uninstall command performs the following tasks:
 
 For example, if you attempt to uninstall a language package that another language package depends on, the following message displays:
 
-```terminal
+```
 Cannot uninstall vendorname/language-en_us because the following package(s) depend on it:
       vendorname/language-en_gb
 ```
@@ -42,7 +42,7 @@ bin/magento i18n:uninstall vendorname/language-en_us vendorname/language-en_gb -
 
 Messages similar to the following display:
 
-```terminal
+```
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

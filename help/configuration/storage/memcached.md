@@ -66,7 +66,7 @@ Commerce uses memcached for session storage but not for page caching. For page c
 
    The results display similar to the following:
 
-   ```terminal
+   ```
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

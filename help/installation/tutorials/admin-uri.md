@@ -20,7 +20,7 @@ bin/magento info:adminuri
 
 A sample result follows:
 
-```terminal
+```
 Admin Panel URI: /admin_1wgrah
 ```
 

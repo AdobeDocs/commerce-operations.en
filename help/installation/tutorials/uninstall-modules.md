@@ -61,7 +61,7 @@ The module uninstall command performs the following tasks:
 
 For example, if you attempt to uninstall a module that another module depends on, the following message displays:
 
-```terminal
+```
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -75,7 +75,7 @@ bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent -
 
 Messages similar to the following display:
 
-```terminal
+```
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -174,7 +174,7 @@ For example, to restore a code (that is, file system) backup, enter the followin
 
    Messages similar to the following display:
 
-   ```terminal
+   ```
    Enabling maintenance mode
    Code rollback is starting ...
    Code rollback filename: 1433876616_filesystem.tgz
