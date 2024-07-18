@@ -94,7 +94,7 @@ The Adobe Commerce 2.4.6-p2 security release provides security bug fixes for vul
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
 
-### Apply patch to resolve security vulnerability CVE-2022-31160 in jQuery-UI library
+### Apply hotfix for CVE-2022-31160
 
 `jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
 
@@ -102,7 +102,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 The value of `fastcgi_pass` in the `nginx.sample` file has been returned to it's previous (pre-2.4.6-p1) value of `fastcgi_backend`. This value was inadvertently changed to `php-fpm:9000` in Adobe Commerce 2.4.6-p1.
 
-### Hotfixes included in this patch
+### Hotfixes included in this release
 
 Adobe Commerce 2.4.6-p2 includes resolution of the performance degradation that was addressed by patch ACSD-51892. Merchants are not affected by the issue addressed by this patch, which is described in the [ACSD-51892: Performance issue where config files load multiple times](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) Knowledge Base article.
 
@@ -112,7 +112,7 @@ The Adobe Commerce 2.4.6-p1 security release provides security bug fixes for vul
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
-### Apply patch to resolve security vulnerability CVE-2022-31160 in jQuery-UI library
+### Apply hotfix for CVE-2022-31160
 
 `jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [Query UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
 
