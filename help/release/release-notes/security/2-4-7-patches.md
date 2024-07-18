@@ -17,17 +17,9 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 {{$include /help/_includes/release-notes/2024-08/security.md}}
 
-### Hotfixes
-
-This section describes hotfixes for previous patches that are included in this release _and_ hotfixes that customers should apply in addition to this release.
-
 ### Hotfixes included in this release
 
 {{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
-
-### Hotfixes customers should apply
-
-{{$include /help/_includes/release-notes/2024-08/hotfixes-not-included.md}}
 
 ## 2.4.7-p1
 

@@ -1,4 +1,4 @@
-# August 2024 security patches
+# August 2024 security patch highlights
 
 This release includes the following highlights:
 
