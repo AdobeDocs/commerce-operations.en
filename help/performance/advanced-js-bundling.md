@@ -228,7 +228,7 @@ This command (used within the [!DNL PhantomJS] script) creates the same list of 
 
 After you merge the [!DNL RequireJS] dependencies into page-type text files, you can use the following command on each page-type dependency file to replace the commas in your files with newlines:
 
-```
+```bash
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -237,7 +237,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 You should also remove all the mixins for each file because mixins duplicate dependencies. Use the following command on each dependency file:
 
-```
+```bash
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
