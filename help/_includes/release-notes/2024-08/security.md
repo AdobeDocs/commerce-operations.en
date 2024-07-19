@@ -13,4 +13,4 @@ This release includes the following highlights:
 
 * **Fix for [CVE-2020-27511](https://nvd.nist.gov/vuln/detail/CVE-2020-27511)**—Resolves a [!DNL Prototype.js] security vulnerability.<!-- AC-11936 -->
 
-* **Fix for [CVE-2024-39397](https://nvd.nist.gov/vuln/detail/CVE-2024-39397)**—Resolves a remote code execution security vulnerability in custom product options through file upload and the `POST /checkout/cart/updateItemOptions/id/{id}` REST API endpoint.<!-- ACSD-60551 -->
+* **Fix for [CVE-2024-39397](https://nvd.nist.gov/vuln/detail/CVE-2024-39397)**—Resolves a remote code execution security vulnerability in custom product options through file upload and the `POST` operations on the `/checkout/cart/updateItemOptions/id/{id}` REST API endpoint.<!-- ACSD-60551 -->
