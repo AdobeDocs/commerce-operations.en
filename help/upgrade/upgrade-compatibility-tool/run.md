@@ -211,7 +211,7 @@ bin/uct --help
 
 That returns a list with all available `help` options for the [!DNL Upgrade Compatibility Tool] in a command-line interface:
 
-```terminal
+```
 - --raw             To output raw command list
 - --format=FORMAT   The output format (txt, xml, json, or md) [default: "txt"]
 - --short           To skip describing commands' arguments
@@ -233,7 +233,7 @@ bin/uct upgrade:check --help
 
 This returns specific options that can be run for the `upgrade:check` command:
 
-```terminal
+```
 - -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
 - -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
 - --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.

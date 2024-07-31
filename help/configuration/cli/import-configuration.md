@@ -30,7 +30,7 @@ If you enter `bin/magento app:config:import` without the optional flag, you are 
 
 For example, if configuration file contains one new website and one new store, the following message is displayed:
 
-```terminal
+```
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -40,14 +40,14 @@ To continue the import, enter `yes`.
 
 If deployment configuration files contain some data to import, a message similar to the following is displayed:
 
-```terminal
+```
 Start import:
 Some information about importing
 ```
 
 If deployment configuration files do not contain any data to import, a message similar to the following is displayed:
 
-```terminal
+```
 Start import:
 Nothing to import
 ```

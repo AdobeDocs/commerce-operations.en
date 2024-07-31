@@ -58,7 +58,9 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
         {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['MariaDB'] %}
+      <td>{%- if requirement[1]['MariaDB Cloud'] %}
+            {{requirement[1]['MariaDB Cloud']}}
+          {%- elsif requirement[1]['MariaDB'] %}
             {{requirement[1]['MariaDB']}}
           {%- else %}
           --

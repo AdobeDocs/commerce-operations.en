@@ -22,7 +22,7 @@ The [system requirements](../../installation/system-requirements.md) for the [!D
 
 The following diagram represents directory structure of [!DNL Data Migration Tool]:
 
-```terminal
+```
 
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2

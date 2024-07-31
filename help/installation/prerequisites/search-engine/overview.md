@@ -136,7 +136,7 @@ curl -XGET '<host>:9200/_cat/health?v&pretty'
 
 A message similar to the following is displayed:
 
-```terminal
+```
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks
 1519701563 03:19:23  elasticsearch green           1         1      0   0    0    0        0             0
 ```

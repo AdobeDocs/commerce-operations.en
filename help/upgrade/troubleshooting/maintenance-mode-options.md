@@ -66,7 +66,7 @@ To redirect traffic to a custom maintenance page:
 
    Add the following at the end of your Apache configuration file:
 
-   ```terminal
+   ```
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f

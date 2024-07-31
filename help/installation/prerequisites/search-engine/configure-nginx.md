@@ -63,7 +63,7 @@ This section discusses how to specify who can access the nginx server.
 
    Messages similar to the following display to indicate success:
 
-   ```terminal
+   ```
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
