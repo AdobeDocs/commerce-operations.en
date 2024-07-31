@@ -64,7 +64,7 @@ To create a remote connection:
 
    The location displays similar to the following:
 
-   ```terminal
+   ```
    Default options are read from the following files in the given order:
    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
    ```
@@ -132,7 +132,7 @@ mysql -u <local database username> -h <database server ip address> -p
 
 If the MySQL monitor displays as follows, the database is ready for Adobe Commerce:
 
-```terminal
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 213 Server version: 5.6.26 MySQL Community Server (GPL)
 

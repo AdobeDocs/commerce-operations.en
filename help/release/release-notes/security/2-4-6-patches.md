@@ -136,7 +136,7 @@ Platform upgrades for this release improve compliance with the latest security b
 
 * Missing dependencies for the B2B security package cause the following installation error when installing or upgrading the B2B extension to 1.4.0.
 
-  ```terminal
+  ```
   Your requirements could not be resolved to an installable set of packages.
 
     Problem 1

@@ -62,7 +62,7 @@ The command performs the following tasks:
 
 For example, if you attempt to uninstall a theme that another theme depends on, the following message displays:
 
-```terminal
+```
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
@@ -75,7 +75,7 @@ bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/Exam
 
 Messages similar to the following display:
 
-```terminal
+```
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

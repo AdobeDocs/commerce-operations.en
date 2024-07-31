@@ -92,7 +92,7 @@ Scope codes for websites and store views are stored in the Commerce database in 
 
    A sample result follows:
 
-   ```terminal
+   ```
    [mysql]> SELECT * FROM store_website;
    +------------+-------+--------------+------------+------------------+------------+
    | website_id | code  | name         | sort_order | default_group_id | is_default |
@@ -227,7 +227,7 @@ bin/magento config:show
 
 Result:
 
-```terminal
+```
 web/unsecure/base_url - http://example.com/
 general/region/display_all - 1
 general/region/state_required - AT,BR,CA,CH,EE,ES,FI,LT,LV,RO,US
@@ -243,7 +243,7 @@ bin/magento config:show --scope=websites --scope-code=base
 
 Result:
 
-```terminal
+```
 web/unsecure/base_url - http://example-for-website.com/
 general/region/state_required - AT,BR,CA
 ```
@@ -256,7 +256,7 @@ bin/magento config:show web/unsecure/base_url
 
 Result:
 
-```terminal
+```
 web/unsecure/base_url - http://example.com/
 ```
 
@@ -268,7 +268,7 @@ bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 
 Result:
 
-```terminal
+```
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
@@ -280,7 +280,7 @@ bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_ur
 
 Result:
 
-```terminal
+```
 web/unsecure/base_url - http://example-for-store.com/
 ```
 

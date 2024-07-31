@@ -74,7 +74,7 @@ crontab -l
 
 A sample follows:
 
-```terminal
+```
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
 * * * * * /usr/bin/php /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /var/www/html/magento2/var/log/magento.cron.log
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
