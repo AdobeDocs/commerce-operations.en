@@ -13,7 +13,7 @@ This release includes the following highlights:
 
   * All values in the `core_config_data` database table are now re-encrypted with a new key during an [encryption key rotation process](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key). Previously, some values were left encrypted with the old key.<!-- AC-12526, AC-12527, AC-12528, AC-12529 -->
 
-  * A new CLI command is now available for changing your encryption key. See the [Troubleshooting Encryption Key Rotation: CVE-2024-34102]() Knowledge Base article for details.
+  * A new CLI command is now available for changing your encryption key. See the [Troubleshooting Encryption Key Rotation: CVE-2024-34102](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102) Knowledge Base article for details.
 
 * **Fix for [CVE-2020-27511](https://nvd.nist.gov/vuln/detail/CVE-2020-27511)**—Resolves a [!DNL Prototype.js] security vulnerability.<!-- AC-11936 -->
 
