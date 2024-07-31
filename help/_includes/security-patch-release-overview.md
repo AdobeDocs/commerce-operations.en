@@ -8,4 +8,4 @@ With security patch releases, you can keep your site more secure without app
 
 Each security patch release is based on the prior full patch release. It contains quality and security fixes from prior patch release and security fixes created between the prior full patch release and the security patch release.
 
-For instructions on downloading and applying security patches, see [Quick start install](../installation/composer.md#example---security-patch).
+For instructions on downloading and applying security patches, see [Peform and upgrade](../installation/composer.md#example---security-patch) in the _Upgrade Guide_.

@@ -45,7 +45,7 @@ If no directory or filename is passed as an argument, the following application 
 
 The following is a portion of the output for a sample module dependencies report:
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -69,7 +69,7 @@ The following is a portion of the output for a sample module dependencies report
 
 The following is a portion of the output for a sample circular dependencies report:
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -95,7 +95,7 @@ The following is a portion of the output for a sample circular dependencies repo
 
 The following is a portion of the output for a sample framework dependencies report:
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

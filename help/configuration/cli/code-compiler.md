@@ -24,7 +24,7 @@ To run the single-tenant compiler:
 bin/magento setup:di:compile
 ```
 
-```terminal
+```
 Generated code and dependency injection configuration successfully.
 ```
 
@@ -48,7 +48,7 @@ In some cases, you might want to compile code before you install the Commerce ap
    bin/magento setup:di:compile
    ```
 
-   ```terminal
+   ```
    Generated code and dependency injection configuration successfully.
    ```
 

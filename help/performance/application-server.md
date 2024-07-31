@@ -143,7 +143,7 @@ git push
 
    The expected response should resemble this example:
 
-   ```terminal
+   ```json
    {    
     "data": {        
         "createEmptyCart": "HLATPzcLw5ylDf76IC92nxdO2hXSXOrv"    

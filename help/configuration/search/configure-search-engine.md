@@ -69,7 +69,7 @@ If so, try the following:
 
   If it is running on port 9200, it displays similar to the following:
 
-  ```terminal
+  ```
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
