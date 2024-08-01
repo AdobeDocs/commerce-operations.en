@@ -22,6 +22,10 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 {{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
 
+### Known issues
+
+{{$include /help/_includes/release-notes/2024-08/know-issues.md}}
+
 ## 2.4.6-p6
 
 The Adobe Commerce 2.4.6-p6 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.6.
