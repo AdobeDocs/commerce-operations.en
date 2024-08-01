@@ -7,26 +7,26 @@ exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
 
 Adobe Commerce uses [semantic versioning](https://semver.org/) on the individual module level (for example `magento/framework 101.1.1`), but not for the marketing version number. For example:
 
--  **MAJOR release**—2
--  **MINOR release**—2.4
--  **PATCH release**—2.4.5
-   -  **SECURITY patch release**—2.4.5-p1
-      -  Security bug fix
-      -  Security enhancement
--  **BETA patch release**—2.4.7-beta2
--  **Extensibility, Infrastructure, and Services release**
--  **Hotfix**
--  **Individual patch**
--  **Custom patch**
+- **MAJOR release**—2
+- **MINOR release**—2.4
+- **PATCH release**—2.4.5
+  - **SECURITY patch release**—2.4.5-p1
+    - Security bug fix
+    - Security enhancement
+- **BETA patch release**—2.4.7-beta2
+- **Extensibility, Infrastructure, and Services release**
+- **Hotfix**
+- **Individual patch**
+- **Custom patch**
 
 ## MINOR release
 
 The following guidelines apply to minor releases:
 
--  Breaking changes are possible; code written for Adobe Commerce 2.2.x may no longer work with Adobe Commerce 2.3.x. For example, minor releases can introduce support for major system requirements and dependencies, such as PHP.
--  Module versions can vary. For example, some module changes are introduced in a new patch whereas others are introduced in a minor release.
--  Minor releases can include new features that may require additional work by you or your solution partner during upgrade to ensure compatibility.
--  Minor releases can include fixes for security and quality issues.
+- Breaking changes are possible; code written for Adobe Commerce 2.2.x may no longer work with Adobe Commerce 2.3.x. For example, minor releases can introduce support for major system requirements and dependencies, such as PHP.
+- Module versions can vary. For example, some module changes are introduced in a new patch whereas others are introduced in a minor release.
+- Minor releases can include new features that may require additional work by you or your solution partner during upgrade to ensure compatibility.
+- Minor releases can include fixes for security and quality issues.
 
 ## PATCH release
 
@@ -34,9 +34,9 @@ Patch releases are primarily focused on delivering security, performance, compli
 
 The following guidelines apply to patch releases:
 
--  The latest-supported minor release receives full functional quality fixes and enhancements.
--  Changes that could break extensions or code compatibility are avoided. For example, code written for version 2.2.0 should still work on version 2.2.7.
--  On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these are mostly PATCH-level changes; sometimes MINOR-level changes.
+- The latest-supported minor release receives full functional quality fixes and enhancements.
+- Changes that could break extensions or code compatibility are avoided. For example, code written for version 2.2.0 should still work on version 2.2.7.
+- On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these are mostly PATCH-level changes; sometimes MINOR-level changes.
 
 ### SECURITY patch release
 
@@ -58,7 +58,7 @@ Hotfixes are patches that contain high-impact security or quality fixes, such as
 
 >[!NOTE]
 >
->Hotfixes can contain backward incompatible changes.
+>Hotfixes can contain backward-incompatible changes.
 
 ## Individual patch
 
@@ -66,14 +66,12 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 
 >[!NOTE]
 >
->Individual patches do not contain backward incompatible changes.
+>Individual patches do not contain backward-incompatible changes.
+
+## Isolated patch
+
+Contains a standalone fix addressing a critical security vulnerability, which is included in the latest security-only patch but being released separately for quicker implementation.
 
 ## Custom patch
 
 Created by non-Adobe personnel to fix an issue or modify the Adobe Commerce code for various reasons. Custom patches are delivered through the [Quality Patches Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
-
-## Related topics
-
--  [Versioning](https://developer.adobe.com/commerce/php/development/versioning/)
--  [Upcoming releases](schedule.md)
--  [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
