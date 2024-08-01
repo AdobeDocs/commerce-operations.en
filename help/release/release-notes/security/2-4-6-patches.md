@@ -24,7 +24,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Known issues
 
-{{$include /help/_includes/release-notes/2024-08/know-issues.md}}
+{{$include /help/_includes/release-notes/2024-08/known-issues.md}}
 
 ## 2.4.6-p6
 
