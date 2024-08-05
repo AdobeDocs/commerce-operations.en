@@ -15,6 +15,22 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.49 {#v1-1-49}
+
+* **ACSD-56979** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where product images are removed after deleting a staging update.
+* **ACSD-57086** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where the orders placed from non-default websites with terms and conditions enabled are not processed correctly.
+* **ACSD-57588** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where shipping an order to multiple addresses triggers an error during region ID processing.
+* **ACSD-57643** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where products with custom options are incorrectly added to the shopping cart via GraphQL.
+* **ACSD-57846** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the issue where GraphQL products search with filter for zero prices does not return any results due to an exception.
+* **ACSD-57941** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where product options are incorrectly assigned to the admin store instead of their respective stores.
+* **ACSD-58375** (for Adobe Commerce and Magento Open Source >=2.4.2 <2.4.7) - Fixes the "YouTube API Key" configuration by setting the scope to global. The wrong configuration was causing an error when adding a YouTube video at the Store View level.
+* **ACSD-58739** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where partial reindexing throws an error. It now works correctly with big change log and when the Slave db connection with synchronous_replication is configured.
+* **ACSD-58446** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where when deleting a team with child users or teams irrespective of their status (inactive), the system provides an uninformative error message not consistent with the UI.
+* **ACSD-58054** (for Adobe Commerce >=2.4.4 <2.4.6) - Fixes the issue where it is possible to generate customer tokens for inactive customers via API.
+* **ACSD-58163** (for Adobe Commerce >=2.4.3 <2.4.7) - Fixes the issue where a Cart Price Rule doesn't apply a discount for a guest customer from the matching Customer Segment cart without a coupon code.
+* **ACSD-57045** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where URL rewrites cause infinite page looping after "Website Root" is unchecked from Hierarchy.
+* Updated patches: ACSD-46815, ACSD-47027, ACSD-51683, ACSD-55031, ACSD-51819, ACSD-54965-V2
+
 ## v1.1.48 {#v1-1-48}
 
 * **ACSD-55566** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where the `mergeCart` mutation fails with an "*Internal Server Error*" in the [!DNL GraphQL] response when merging source and destination carts that have the same bundle items. 
