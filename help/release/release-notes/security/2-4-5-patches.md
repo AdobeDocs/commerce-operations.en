@@ -10,7 +10,7 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 ## Adobe Commerce 2.4.5-p8
 
-The Adobe Commerce 2.4.5-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
+The Adobe Commerce 2.4.5-p8 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
@@ -28,13 +28,13 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## Adobe Commerce 2.4.5-p7
 
-The Adobe Commerce 2.4.5-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
+The Adobe Commerce 2.4.5-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
 
 ## Adobe Commerce 2.4.5-p6
 
-The Adobe Commerce 2.4.5-p6 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements to improve compliance with the latest security best practices.
+The Adobe Commerce 2.4.5-p6 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5. This release also includes security enhancements to improve compliance with the latest security best practices.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html).
 
@@ -53,7 +53,7 @@ This release introduces two significant security enhancements:
 
 ## Adobe Commerce 2.4.5-p5
 
-The Adobe Commerce 2.4.5-p5 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements to improve compliance with the latest security best practices.
+The Adobe Commerce 2.4.5-p5 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5. This release also includes security enhancements to improve compliance with the latest security best practices.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html).
 
@@ -74,7 +74,7 @@ If the checksum problem persists, remove the `composer.lock` file before re-runn
 
 ## Adobe Commerce 2.4.5-p4
 
-The Adobe Commerce 2.4.5-p4 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
+The Adobe Commerce 2.4.5-p4 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
 
@@ -84,7 +84,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## Adobe Commerce 2.4.5-p3
 
-The Adobe Commerce 2.4.5-p3 security release provides security fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements that improve compliance with the latest security best practices.
+The Adobe Commerce 2.4.5-p3 security release provides security fixes for vulnerabilities that have been identified in previous releases of 2.4.5. This release also includes security enhancements that improve compliance with the latest security best practices.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
@@ -108,13 +108,13 @@ Platform upgrades for this release improve compliance with the latest security b
 
 ## Adobe Commerce 2.4.5-p2 release notes
 
-The Adobe Commerce 2.4.5-p2 security release provides three security fixes for vulnerabilities that have been identified in previous releases.
+The Adobe Commerce 2.4.5-p2 security release provides three security fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html).
 
 ## Adobe Commerce 2.4.5-p1
 
-The Adobe Commerce 2.4.5-p1 security release provides security bug fixes for vulnerabilities that have been identified in the previous release (Adobe Commerce 2.4.5 and Magento Open Source 2.4.5).
+The Adobe Commerce 2.4.5-p1 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
