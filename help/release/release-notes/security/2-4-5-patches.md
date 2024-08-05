@@ -63,7 +63,7 @@ This release introduces a new full page cache configuration setting that helps t
 
 ### Known issue
 
-**Issue**: Adobe Commerce displays a **wrong checksum** error during download by Composer from `repo.magento.com`,  and package download is interrupted. This issue can occur during download of release packages that were made available during prerelease and is caused by a repackaging of the `magento/module-page-cache` package. 
+**Issue**: Adobe Commerce displays a **wrong checksum** error during download by Composer from `repo.magento.com`, and package download is interrupted. This issue can occur during download of release packages that were made available during prerelease and is caused by a repackaging of the `magento/module-page-cache` package. 
 
 **Workaround**: Merchants who see this error during download can take these steps:
 
@@ -80,7 +80,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Apply patch to resolve security vulnerability CVE-2022-31160 in jQuery-UI library
 
-`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
+`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6) Knowledge Base article.
 
 ## Adobe Commerce 2.4.5-p3
 
@@ -90,7 +90,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Apply patch to resolve security vulnerability CVE-2022-31160 in jQuery-UI library
 
-`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [Query UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
+`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [Query UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6) Knowledge Base article.
 
 ### Security highlight
 
