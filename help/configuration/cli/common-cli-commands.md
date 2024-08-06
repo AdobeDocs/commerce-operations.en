@@ -45,7 +45,7 @@ Commands are shown in summary form only; for more information about a command, c
 
 ## Common arguments
 
-The following arguments are common to all commands. These commands can be run either before or after the Commerce software is installed:
+The following arguments are common to [all commands](/help/tools/reference/commerce-on-premises.md). These commands can be run either before or after the Commerce software is installed:
 
 |Long version|Short version|Meaning|
 |--- |--- |--- |
