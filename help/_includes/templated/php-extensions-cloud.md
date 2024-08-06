@@ -27,7 +27,6 @@
                 libxml<br>
                 mysqli<br>
                 opcache<br>
-                openswoole<br>
                 pcntl<br>
                 pdo_mysql<br>
                 Reflection<br>
@@ -35,6 +34,7 @@
                 sockets<br>
                 SPL<br>
                 standard<br>
+                swoole<br>
                 sysvmsg<br>
                 sysvsem<br>
                 sysvshm<br>
