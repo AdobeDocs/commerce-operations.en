@@ -10,7 +10,7 @@ exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
 
 ## Adobe Commerce 2.4.5-p8
 
-The Adobe Commerce 2.4.5-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
+The Adobe Commerce 2.4.5-p8 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
@@ -28,13 +28,13 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## Adobe Commerce 2.4.5-p7
 
-The Adobe Commerce 2.4.5-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
+The Adobe Commerce 2.4.5-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
 
 ## Adobe Commerce 2.4.5-p6
 
-The Adobe Commerce 2.4.5-p6 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements to improve compliance with the latest security best practices.
+The Adobe Commerce 2.4.5-p6 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5. This release also includes security enhancements to improve compliance with the latest security best practices.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html).
 
@@ -53,7 +53,7 @@ This release introduces two significant security enhancements:
 
 ## Adobe Commerce 2.4.5-p5
 
-The Adobe Commerce 2.4.5-p5 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements to improve compliance with the latest security best practices.
+The Adobe Commerce 2.4.5-p5 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5. This release also includes security enhancements to improve compliance with the latest security best practices.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html).
 
@@ -63,7 +63,7 @@ This release introduces a new full page cache configuration setting that helps t
 
 ### Known issue
 
-**Issue**: Adobe Commerce displays a **wrong checksum** error during download by Composer from `repo.magento.com`,  and package download is interrupted. This issue can occur during download of release packages that were made available during prerelease and is caused by a repackaging of the `magento/module-page-cache` package. 
+**Issue**: Adobe Commerce displays a **wrong checksum** error during download by Composer from `repo.magento.com`, and package download is interrupted. This issue can occur during download of release packages that were made available during prerelease and is caused by a repackaging of the `magento/module-page-cache` package. 
 
 **Workaround**: Merchants who see this error during download can take these steps:
 
@@ -74,23 +74,23 @@ If the checksum problem persists, remove the `composer.lock` file before re-runn
 
 ## Adobe Commerce 2.4.5-p4
 
-The Adobe Commerce 2.4.5-p4 security release provides security bug fixes for vulnerabilities that have been identified in previous releases.
+The Adobe Commerce 2.4.5-p4 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
 
 ### Apply patch to resolve security vulnerability CVE-2022-31160 in jQuery-UI library
 
-`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
+`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6) Knowledge Base article.
 
 ## Adobe Commerce 2.4.5-p3
 
-The Adobe Commerce 2.4.5-p3 security release provides security fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements that improve compliance with the latest security best practices.
+The Adobe Commerce 2.4.5-p3 security release provides security fixes for vulnerabilities that have been identified in previous releases of 2.4.5. This release also includes security enhancements that improve compliance with the latest security best practices.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
 ### Apply patch to resolve security vulnerability CVE-2022-31160 in jQuery-UI library
 
-`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [Query UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
+`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [Query UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6) Knowledge Base article.
 
 ### Security highlight
 
@@ -108,13 +108,13 @@ Platform upgrades for this release improve compliance with the latest security b
 
 ## Adobe Commerce 2.4.5-p2 release notes
 
-The Adobe Commerce 2.4.5-p2 security release provides three security fixes for vulnerabilities that have been identified in previous releases.
+The Adobe Commerce 2.4.5-p2 security release provides three security fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html).
 
 ## Adobe Commerce 2.4.5-p1
 
-The Adobe Commerce 2.4.5-p1 security release provides security bug fixes for vulnerabilities that have been identified in the previous release (Adobe Commerce 2.4.5 and Magento Open Source 2.4.5).
+The Adobe Commerce 2.4.5-p1 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.5.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
