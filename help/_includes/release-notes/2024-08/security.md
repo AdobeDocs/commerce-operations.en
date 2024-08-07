@@ -7,7 +7,7 @@ This release includes the following highlights:
   * [!UICONTROL **Retry attempt limit for Two-Factor Authentication**]
   * [!UICONTROL **Two-Factor Authentication lockout time (seconds)**]
 
-  Adobe advises setting a threshold for 2FA OTP validation to limit the number of retry attempts to mitigate brute force attacks. See [Security > 2FA](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa) in the _Configuration Reference Guide_ for more information. <!-- AC-12095 -->
+  Adobe advises setting a threshold for 2FA OTP validation to limit the number of retry attempts to mitigate brute-force attacks. See [Security > 2FA](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa) in the _Configuration Reference Guide_ for more information. <!-- AC-12095 -->
 
 * **Encryption key rotation**—A new CLI command is now available for changing your encryption key. See the [Troubleshooting Encryption Key Rotation: CVE-2024-34102](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102) Knowledge Base article for details.
 
