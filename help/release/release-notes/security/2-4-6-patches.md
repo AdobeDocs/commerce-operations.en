@@ -36,7 +36,7 @@ For compatibility with Commerce version 2.4.6-p6, merchants that have the Adobe 
 
 For compatibility with Commerce version 2.4.6-p6, merchants that have the Adobe Commerce B2B extension must upgrade to [B2B version 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html).
 
-### Hightlights
+### Highlights
 
 {{$include /help/_includes/release-notes/2-4-7-security.md}}
 
