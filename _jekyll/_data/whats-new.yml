@@ -1,8 +1,34 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Jul 15 09:50:42 2024
+updated: Wed Aug 7 09:39:53 2024
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.49 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: August 5, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/933
+  merge_commit: abd006da0182057336ba5adcd8ef198eb27e3319
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added urgent information about a JSON web token (JWT) validation hotfix
+    related to [CVE-2024-34102](https://nvd.nist.gov/vuln/detail/CVE-2024-34102) in
+    the June security patch release notes:<br/>- [2.4.7-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: ''
+  type: major-update
+  date: July 18, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/923
+  merge_commit: 3def61189269c39102e5dba289b8e04c1cb68a23
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
 - description: Updated [Packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce),
     [bin/magento](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises),
     and [required PHP extensions](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions).
