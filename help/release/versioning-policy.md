@@ -48,9 +48,9 @@ Pre-general availability releases of Adobe Commerce features are made publicly a
 
 Beta Releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) the Beta Releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the Beta Releases and/or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at Customer's own risk.
 
-## Cloud infrastructure, services, and extensibility release
+## Features, cloud infrastructure, and extensibility release
 
-Feature releases that contain new features and feature updates that are delivered as independent services, separate from patch releases. Examples include updates to our cloud hosting services and infrastructure, SaaS products like Catalog Service, Product Recommendations, and Live Search, and extensibility technology like API Mesh, Integration Starter Kit, and Eventing.
+Cloud infrastructure and feature releases contain new features and feature updates that are delivered as independent services, separate from patch releases. Examples include updates to our cloud hosting services and infrastructure, B2B, SaaS products (Catalog Service, Data Connection, Product Recommendations, and Live Search), and extensibility technology (API Mesh, Integration Starter Kit, and Eventing).
 
 ## Hotfix
 
@@ -66,7 +66,7 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 
 >[!NOTE]
 >
->Individual patches do not contain backward incompatible changes.
+>Individual patches do not contain backward-incompatible changes.
 
 ## Custom patch
 
