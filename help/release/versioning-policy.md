@@ -70,7 +70,7 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 
 ## Isolated patch
 
-Contains a standalone fix, which is included in the latest or upcoming security-only patch but is being released separately for quicker implementation.
+Contains a standalone fix that is included in the latest security-only patch or an upcoming security-only patch, which is being released separately for quicker implementation.
 
 ## Custom patch
 
