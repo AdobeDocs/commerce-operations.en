@@ -1,7 +1,7 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Mon Aug 12 15:29:24 2024
+updated: Tue Aug 13 15:29:24 2024
 entries:
 - description: Published release notes for the Agust 2024 security patches:<br/>-
     [2.4.7-p2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
@@ -10,7 +10,7 @@ entries:
     [2.4.4-p10](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
   versions: ''
   type: major-update
-  date: August 12, 2024
+  date: August 13, 2024
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/916
   merge_commit: 0bfe3444c045bbfacf63e59e609d75d43e9c44a0
   contributor: jmatthew
@@ -21,7 +21,7 @@ entries:
     for Adobe Commerce feature and patch releases.
   versions: ''
   type: major-update
-  date: June 27, 2024
+  date: August 13, 2024
   link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/913
   merge_commit: 6e499dc4423b8f0a3b72ac9ae3e1223f5c4c4db7
   contributor: jmatthew
