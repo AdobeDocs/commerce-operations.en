@@ -9,7 +9,7 @@ exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 
 ## 2.4.7-p2
 
-The Adobe Commerce 2.4.7-p2 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.7.
+The Adobe Commerce 2.4.7-p2 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 

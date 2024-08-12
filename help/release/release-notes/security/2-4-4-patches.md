@@ -10,7 +10,7 @@ exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 
 ## 2.4.4-p10
 
-The Adobe Commerce 2.4.4-p10 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.4.
+The Adobe Commerce 2.4.4-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 

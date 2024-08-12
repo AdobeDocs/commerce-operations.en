@@ -10,7 +10,7 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 ## 2.4.6-p7
 
-The Adobe Commerce 2.4.6-p7 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.6.
+The Adobe Commerce 2.4.6-p7 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 

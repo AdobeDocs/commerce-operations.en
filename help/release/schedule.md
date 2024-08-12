@@ -10,13 +10,13 @@ Adobe continually strives to find the right balance between making product upgra
 
 ## Features, cloud infrastructure, and extensibility
 
-New features, feature updates, cloud infrastructure, and extensibility updates are delivered independently from patch releases and are available through external module, extension, tool, or web service. Examples include:
+New features, feature updates, cloud infrastructure, and extensibility updates are delivered independently from patch releases and are available through external modules, extensions, tools, or web services. Examples include:
 
-- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all)—New features and functionality that are delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search, and Product Recommendations.
+- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all)—New features and functionality delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search, and Product Recommendations.
 
-- ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which are designed to deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
+- ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
-- ![Extensibility icon](../assets/icons/brackets.svg) [**Extensibility**](https://developer.adobe.com/commerce/extensibility/)—New developer tools and services for out-of-process extensibility that are delivered independently from patch releases. For example, Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce, and API Mesh.
+- ![Extensibility icon](../assets/icons/brackets.svg) [**Extensibility**](https://developer.adobe.com/commerce/extensibility/)—New developer tools and services for out-of-process extensibility delivered independently from patch releases. For example, Integration Starter Kit, Admin UI SDK, Adobe I/O Events for Commerce, and API Mesh.
 
 The following list provides the dates for scheduled feature, cloud infrastructure, and extensibility releases (dates are subject to change):
 
@@ -30,7 +30,7 @@ The following list provides the dates for scheduled feature, cloud infrastructur
 
 >[!NOTE]
 >
->Feature, cloud infrastructure, and extensibility releases may vary throughout the year. However, Adobe regularly and continously releases improvements for these areas between the dates specified on this page. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) to learn more about the latest features.
+>Feature, cloud infrastructure, and extensibility releases may vary throughout the year. However, Adobe regularly and continuously releases improvements for these areas between the dates specified on this page. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) to learn more about the latest features.
 
 ## Patches
 
