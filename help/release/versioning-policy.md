@@ -68,9 +68,9 @@ Individual patches contain low-impact quality fixes for a specific issue. These 
 >
 >Individual patches do not contain backward-incompatible changes.
 
-<!-- ## Isolated patch
+## Isolated patch
 
-Contains a standalone fix, which is included in the latest security-only patch but is being released separately for quicker implementation. -->
+Contains a standalone fix that is included in the latest security-only patch or an upcoming security-only patch, which is being released separately for quicker implementation.
 
 ## Custom patch
 
