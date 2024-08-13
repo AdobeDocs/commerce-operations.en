@@ -1,8 +1,33 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Wed Aug 7 09:39:53 2024
+updated: Tue Aug 13 15:39:10 2024
 entries:
+- description: Published release notes for the August 2024 security patches:<br/>-
+    [2.4.7-p2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p7](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p10](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: ''
+  type: major-update
+  date: August 13, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/916
+  merge_commit: 0bfe3444c045bbfacf63e59e609d75d43e9c44a0
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added [2025 announcement dates](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    for Adobe Commerce feature and patch releases.
+  versions: ''
+  type: major-update
+  date: August 13, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/913
+  merge_commit: 6e499dc4423b8f0a3b72ac9ae3e1223f5c4c4db7
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.49 Quality Patches Tool (QPT) package release.
   versions: ''
