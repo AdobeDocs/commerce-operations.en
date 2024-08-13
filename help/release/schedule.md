@@ -76,7 +76,7 @@ The following table provides the dates for scheduled patch releases (dates are s
   </tr>
   <tr>
     <td>October 14, 2025</td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: for 2.4.8, 2.4.7, 2.4.6, and 2.4.5</td>
+    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: for 2.4.8, 2.4.7, and 2.4.6</td>
   </tr>
 </tbody>
 </table>
