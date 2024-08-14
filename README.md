@@ -1,6 +1,6 @@
 # Adobe Commerce technical documentation
 
-We welcome contributions from our community as well as from Adobe employees from outside the documentation teams.
+We welcome contributions from the community as well as from Adobe employees from outside the documentation teams.
 
 ## Adobe Open Source Code of Conduct
 
@@ -60,7 +60,7 @@ Examples of templated content include, but are not limited to, the following:
 
 ### Generate templated content
 
-In general, most writers only need to add a release version to the product availability and system requirements tables. Maintenance for all other templated content is either automated or managed by a dedicated team member. These instructions are intended for "most" writers.
+In general, most writers only need to add a release version to the product availability and system requirements tables. Maintenance for all other templated content is either automated or managed by a dedicated team member. These instructions are intended for most writers.
 
 >**NOTE:**
 >
@@ -105,6 +105,12 @@ To update templated content:
 
    >**NOTE:** You must run the script from the `_jekyll` directory. If this is your first time to run the script, you must install Ruby dependencies first with the `bundle install` command.
 
+1. Navigate back to the `root` directory.
+
+   ```
+   cd ..
+   ```
+
 1. Verify that the expected `help/_includes/templated` files were modified.
 
    ```
@@ -115,7 +121,15 @@ To update templated content:
 
    ```
    modified:   _data/product-availability.yml
-   modified:   ../help/_includes/templated/product-availability-extensions.md
+   modified:   help/_includes/templated/product-availability-extensions.md
+   ```
+
+1. Push your changes.
+
+   ```
+   git add .
+   git commit -m "descriptive message of the intended commit"
+   git push
    ```
 
 See the Jekyll documentation for more details on [Data Files](https://jekyllrb.com/docs/datafiles), [Liquid filters](https://jekyllrb.com/docs/liquid/filters/), and other features.

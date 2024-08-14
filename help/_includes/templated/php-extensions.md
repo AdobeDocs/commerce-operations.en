@@ -30,36 +30,6 @@ Adobe Commerce requires:
 -  `ext-zlib`
 -  `lib-libxml`
 
-B2B for Adobe Commerce requires:
-
--  `ext-bcmath`
--  `ext-ctype`
--  `ext-curl`
--  `ext-dom`
--  `ext-fileinfo`
--  `ext-filter`
--  `ext-gd`
--  `ext-hash`
--  `ext-iconv`
--  `ext-intl`
--  `ext-json`
--  `ext-libxml`
--  `ext-mbstring`
--  `ext-openssl`
--  `ext-pcre`
--  `ext-pdo_mysql`
--  `ext-simplexml`
--  `ext-soap`
--  `ext-sockets`
--  `ext-sodium`
--  `ext-spl`
--  `ext-tokenizer`
--  `ext-xmlwriter`
--  `ext-xsl`
--  `ext-zip`
--  `ext-zlib`
--  `lib-libxml`
-
 Magento Open Source requires:
 
 -  `ext-bcmath`

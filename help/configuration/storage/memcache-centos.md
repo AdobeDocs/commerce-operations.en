@@ -187,7 +187,7 @@ stats items
 
 The result is similar to the following:
 
-```terminal
+```
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0

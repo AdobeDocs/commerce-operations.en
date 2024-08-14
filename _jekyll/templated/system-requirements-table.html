@@ -2,11 +2,17 @@
 ---
 # System requirements
 
-{%- assign requirements = site.data.system-requirements %}
+{%- assign requirements_data = site.data.system-requirements %}
+
+{%- assign grouped_requirements = requirements_data | group_by_exp: "version", "version[0] | slice: 4" %}
 
 >[!NOTE]
 >
 >Versions 2.4.4 and 2.4.5 support MySQL 8.0.0 through 8.0.28 only.
+
+{%- for minor_version in grouped_requirements %}
+
+{%- assign requirements = minor_version.items %}
 
 <table style="table-layout:auto">
   <thead>
@@ -209,3 +215,5 @@
     </tr>
   </tbody>
 </table>
+
+{%- endfor %}

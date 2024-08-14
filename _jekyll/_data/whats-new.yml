@@ -1,8 +1,201 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Apr 9 14:35:35 2024
+updated: Tue Aug 13 15:39:10 2024
 entries:
+- description: Published release notes for the August 2024 security patches:<br/>-
+    [2.4.7-p2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p7](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p10](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: ''
+  type: major-update
+  date: August 13, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/916
+  merge_commit: 0bfe3444c045bbfacf63e59e609d75d43e9c44a0
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added [2025 announcement dates](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    for Adobe Commerce feature and patch releases.
+  versions: ''
+  type: major-update
+  date: August 13, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/913
+  merge_commit: 6e499dc4423b8f0a3b72ac9ae3e1223f5c4c4db7
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.49 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: August 5, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/933
+  merge_commit: abd006da0182057336ba5adcd8ef198eb27e3319
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added urgent information about a JSON web token (JWT) validation hotfix
+    related to [CVE-2024-34102](https://nvd.nist.gov/vuln/detail/CVE-2024-34102) in
+    the June security patch release notes:<br/>- [2.4.7-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: ''
+  type: major-update
+  date: July 18, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/923
+  merge_commit: 3def61189269c39102e5dba289b8e04c1cb68a23
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Updated [Packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce),
+    [bin/magento](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises),
+    and [required PHP extensions](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions).
+  versions: 2.4.7-p1
+  type: technical
+  date: June 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/901
+  merge_commit: de91db690b6297dc8857807acec5d33c14e60478
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
+  - 2.4.7-p1
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
+  versions: ''
+  type: technical
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/897
+  merge_commit: 1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
+- description: Published release notes for the June 2024 security patches:<br/>- [2.4.7-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: ''
+  type: major-update
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/871
+  merge_commit: 000fe5ac88b31e5172c35b629d26423afcca214d
+  contributor: meker
+  membership: false
+  labels:
+  - major-update
+- description: Updated [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    according to the June 2024 patch release. Also, changed representation of the
+    system requirements tables.
+  versions: ''
+  type: technical
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/877
+  merge_commit: aef697509227b1dfebb801b0e1e098da90201971
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+- description: Updated support for RabbitMQ in 2.4.5-p7 and 2.4.5-p8 in [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+  versions: 2.4.5-p7, 2.4.5-p8
+  type: technical
+  date: June 11, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/879
+  merge_commit: 20823bae109f5b053f352b0a13275acecf991904
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.5-p7
+  - 2.4.5-p8
+- description: Added [beta information](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    for Experience Manager Assets Integration for Commerce (private beta).
+  versions: ''
+  type: major-update
+  date: June 7, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/893
+  merge_commit: d51937e25049f636a3b69f072a3fe4ba135766c2
+  contributor: meker
+  membership: false
+  labels:
+  - enhancement
+  - major-update
+- description: Added instructions for [uninstalling](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+    third-party extensions.
+  versions: ''
+  type: major-update
+  date: June 7, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/894
+  merge_commit: a623002b366ae07eaabe9711946d7f8ceb3b9132
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Clarified support for third-party dependencies in the [software lifecycle
+    policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy).
+  versions: ''
+  type: major-update
+  date: May 21, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/861
+  merge_commit: 5459488d4b512447aff810dca8d3b32a074d5c1e
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct).
+  versions: ''
+  type: technical
+  date: April 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/845
+  merge_commit: ae9b29601953f25ca28f253f557d547b200616a0
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
+- description: Reorganized the _Operational Guides_ home page (this page) and moved
+    the _[Command-Line Tools Reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)_
+    guide to the _[Tools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)_
+    guide.
+  versions: ''
+  type: major-update
+  date: April 26, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/843
+  merge_commit: 839b4e26a7c5d662093c7c1eec3fd5883ed7706a
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+- description: Added a new [summary page](https://experienceleague.adobe.com/docs/commerce-operations/events/summit/2024.html)
+    for Adobe Summit.
+  versions: ''
+  type: new-topic
+  date: April 26, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/842
+  merge_commit: 1c2c75da7cda0e3c38ea904c98932472b618a3e5
+  contributor: jmatthew
+  membership: false
+  labels:
+  - new-topic
+- description: Updated the [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)
+    page to include information about all available betas for Adobe Commerce.
+  versions: ''
+  type: major-update
+  date: April 15, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/823
+  merge_commit: a362cad66d38a89bacda656d1520047e22262179
+  contributor: slamech
+  membership: false
+  labels:
+  - major-update
 - description: Updated [Released versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
   versions: 2.4.7
   type: technical
@@ -14,9 +207,9 @@ entries:
   labels:
   - technical
   - 2.4.7
-- description: "Updated the release packages topics for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)
+- description: Updated the release packages topics for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)
     and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source).<br/>
-    Added a release packages topic for [B2B for Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b)."
+    Added a release packages topic for [B2B for Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b).
   versions: 2.4.7
   type: major-update
   date: April 9, 2024

@@ -83,7 +83,7 @@ This configuration expands upon [nginx configuration](../../installation/prerequ
 
 1. If successful, the following message displays:
 
-   ```terminal
+   ```
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -141,7 +141,7 @@ For more detail about the map directive, see [nginx documentation on the map dir
 
 1. If successful, the following message displays:
 
-   ```terminal
+   ```
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 

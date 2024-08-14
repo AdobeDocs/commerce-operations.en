@@ -1,6 +1,7 @@
 ---
 title: Released versions
 description: Learn when specific versions of Adobe Commerce were released.
+recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
 ---
 # Released versions

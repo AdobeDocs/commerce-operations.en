@@ -64,7 +64,7 @@ bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performanc
 
 Sample output for the small profile:
 
-```terminal
+```
 Generating profile with following params:
     |- Websites: 1
     |- Store Groups Count: 1

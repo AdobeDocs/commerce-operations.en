@@ -48,7 +48,7 @@ You are required to [authenticate](../prerequisites/authentication-keys.md) to c
 
 The following authentication error might display:
 
-```terminal
+```
 [Composer\Downloader\TransportException]
 The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
