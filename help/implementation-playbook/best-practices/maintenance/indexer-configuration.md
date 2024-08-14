@@ -18,7 +18,7 @@ To optimize and maintain site performance, review and update the indexer configu
 
 ## Set indexers to update on a schedule
 
-Adobe Commerce has two types of indexer modes: [!UICONTROL Update on Save] (default setting) and [!DNL Update on Schedule].
+Adobe Commerce has two types of indexer modes: [!UICONTROL Update on Save] and [!DNL Update on Schedule].
 
 - **[!UICONTROL Update on Save]** mode updates indexes immediately whenever your catalog or other data changes. For example, if an Admin user adds new products to a category, the category products index is reindexed immediately when the update is saved.
 
