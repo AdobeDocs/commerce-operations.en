@@ -188,7 +188,7 @@ Catalog Search indexer has been invalidated.
 
 Use this command to set the following indexer options:
 
-- **Update on save (`realtime`)**: Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
+- **Update on save (`realtime`)**: Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.)
 - **Update by schedule (`schedule`)**: Data is indexed according to the schedule set by your cron job.
 
 [Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/).
