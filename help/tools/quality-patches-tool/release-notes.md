@@ -15,6 +15,25 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.50 {#v1-1-50}
+
+* **ACSD-59280** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the error *Call to undefined method ReflectionUnionType::getName()* that occurs when installing 2.4.4-pX versions.
+* **ACSD-45049** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.4-p8 || >=2.4.5 <2.4.6) - Fixes the issue where a customer *[!UICONTROL Is required]* attribute setting doesn't work properly as per website scope in Admin.
+* **ACSD-46938** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.6) - Fixes the issue with the performance of DB triggers recreation during `setup:upgrade`.
+* **ACSD-48210** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where updating a *[!UICONTROL Website Scope]* attribute in a specific store view overrides the attribute values in the global scope.
+* **ACSD-54887** (for Adobe Commerce and Magento Open Source >=2.4.4-p4 <2.4.4-p9 || >=2.4.5-p3 <2.4.5-p8 || >=2.4.6-p1 <2.4.6-p6) - Fixes the issue where the customer shopping cart gets cleared after the customer session has expired with [!UICONTROL Persistent Shopping Cart] enabled.
+* **ACSD-58141** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where PHPSESSID regenerates on POST requests on the storefront area for a logged-in customer if the [!DNL L2 Redis cache] is enabled and the customer is updated from Admin.
+* **ACSD-58352** (for Adobe Commerce >=2.4.4 <2.4.7) - Fixes the issue where return attribute labels for the default store view are returned via GraphQL API when a non-default store view is specified in the request header.
+* **ACSD-58442** (for Adobe Commerce >=2.4.4 <2.4.7-p1) - Fixes the issue where devices with a width of 768px are treated as mobile, causing the menu and header to load in a mobile view instead of desktop.
+* **ACSD-58790** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes pinch-to-zoom functionality on the product detail page images in mobile view on [!DNL Chrome].
+* **ACSD-59036** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes an exception that happens when loading product prices with both lower and upper bounds equal to $0.
+* **ACSD-59229** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where customer group-related information is saved in the wrong segment due to the old value of the X-Magento-Vary in request.
+* **ACSD-59378** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.6) - Fixes the issue where store-level URL rewrites are incorrectly updated during import.
+* **ACSD-59514** (for Adobe Commerce >=2.4.4 <2.4.7-p2) - Fixes the issue where forms in the Admin area with [!DNL Page Builder] throw the error *[!DNL Page Builder] was rendering for 5 seconds without releasing locks.* in the browser console after submitting the form, and changes can't be saved.
+* **ACSD-60303** (for Adobe Commerce >=2.4.4-p9 <2.4.5 || >=2.4.5-p8 <2.4.6 || >=2.4.6-p6 <2.4.8) - Fixes the issue where an order from Admin cannot be placed if HTML minification is enabled.
+* **ACSD-60441** (for Adobe Commerce and Magento Open Source 2.4.4-p9 || 2.4.5-p8 || 2.4.6-p6 || 2.4.7-p1) - Fixes the issue with updating customers via `V1/customers` [!DNL REST API] endpoint when using the integration access token generated from the backend.
+* Updated patches: ACSD-57003
+
 ## v1.1.49 {#v1-1-49}
 
 * **ACSD-56979** (for Adobe Commerce and Magento Open Source >=2.4.3 <2.4.7) - Fixes the issue where product images are removed after deleting a staging update.
