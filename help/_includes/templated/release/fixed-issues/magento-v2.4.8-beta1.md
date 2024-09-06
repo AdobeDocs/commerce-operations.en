@@ -100,15 +100,13 @@ Previously it was possible to create the Duplicate website group price customer 
 ### Admin UI, Performance
 
 * _ACP2E-3169_: After update to 2.4.5-p8 500 errors occur when creating order from admin
-  * _Fix note_: Previously, when enabling HTML minification, an order from admin could not be placed. Now, with HTML minification enabled, the order from admin can be placed successfully.  
+  * _Fix note_: Previously, when enabling HTML minification, an order from admin could not be placed. Now, with HTML minification enabled, the order from admin can be placed successfully.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b21e5d91>
 
 ### Admin UI, Shipping
 
 * _ACP2E-2519_: The coupon code count does not update in the   "Time Used" column in the Manage Coupon Codes tab if an order is placed with multi-shipping.
   * _Fix note_: Earlier, when an order was placed with multi-shipping, the coupon code count did not update in the "Time Used" column on the Manage Coupon Codes tab. Now, the correct count is displayed in both the "Time Used" reflecting the desired values with multi shipping.
-
-
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/4745100c>
 
 ### Analytics / Reporting
@@ -200,7 +198,7 @@ Previously it was possible to create the Duplicate website group price customer 
   * _Fix note_: Previously, when placing a reorder through the Orders and Returns page, the customer was redirected to the login page. After this fix is applied, the registered customer is correctly redirected to the View Cart page when placing a reorder. The flow works the same as like as guest customers.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-2055_: Duplicate orders with same Quote Id at same time with few time difference
-  * _Fix note_: Fixed the issue when Adobe Commerce customers encountered duplicate orders placed with the same QuoteID 
+  * _Fix note_: Fixed the issue when Adobe Commerce customers encountered duplicate orders placed with the same QuoteID
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/f89a447e>
 * _ACP2E-2620_: In admin, the "Shopping Cart" on left side doesn't get updated when selecting the items and "Move to Shopping Cart" from the right side
   * _Fix note_: The "Shopping cart" on the left side gets updated when selecting the items and "Move to shopping cart" from the right side in the admin side. Previously this functionality was not working because the transformed cart items were not getting empty from the session.
@@ -237,10 +235,6 @@ Previously it was possible to create the Duplicate website group price customer 
 
 * _ACP2E-2871_: [Cloud] The Merchant is facing issues with wishlist count
   * _Fix note_: Adding a product to the wishlist in one store no longer increases the wishlist count in other stores open in the same browser. Previously, if both stores were loaded in the same browser, the wishlist count would increase in the other store as well.
-
-
-
-
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3a7c4d17>
 * _ACP2E-2843_: Products on the frontend use store specific data when Single-Store Mode is enabled
   * _Fix note_: Previously, when we enabled single store mode for the default store view, the changes were not migrated to the website-level scope. After this fix is applied, when we enable single store mode, the default store view-specific data will be synced with website-level-specific data and will resolve the possible conflicts for products and categories.
@@ -478,7 +472,7 @@ Previously it was possible to create the Duplicate website group price customer 
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38485>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38439>
 * _AC-9712_: Difference in less compilation between php & nodejs library (grunt) with complicated `calc` expressions
-  * _Fix note_: Fix the difference in less compilation between php & nodejs library (grunt) 
+  * _Fix note_: Fix the difference in less compilation between php & nodejs library (grunt)
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37841>
   * _GitHub code contribution_: <https://github.com/magento/magento2/ (Internal, Unmerged)>
 * _AC-11476_: [Issue] Fix issues with Customer Data when form contains element with name `method`
@@ -623,7 +617,7 @@ Previously it was possible to create the Duplicate website group price customer 
   * _Fix note_: The system now ensures that the resolver cache is not invalidated when creating, editing, moving, or deleting a staging update, but only when the staging update is applied to the entity. Previously, the resolver cache was invalidated prematurely, even before the staging update was applied, which led to unnecessary cache invalidations.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _ACP2E-2642_: Fastly cache not cleared for content staging update
-  * _Fix note_: Now GraphQL with PageBuilder contents response cache is invalidated, when the PageBuilder content related entities are updated.  
+  * _Fix note_: Now GraphQL with PageBuilder contents response cache is invalidated, when the PageBuilder content related entities are updated.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ba25af8a>
 * _ACP2E-2653_: Disabling Layered Navetion - Does not remove aggregation from Graphql
   * _Fix note_: The issue has been fixed after applying the check while requesting a product search with category aggregations through a GraphQL query when the admin configuration setting of "Catalog > Layered Navigation > Display Category Filter".
@@ -636,7 +630,6 @@ Previously it was possible to create the Duplicate website group price customer 
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6f4805f8>
 * _ACP2E-3184_: [Cloud] Configurable Products not shown in Production Site if Product is not enabled in "All Store Views"
   * _Fix note_: The system now correctly displays configurable products in the site even if the product is not enabled in "All Store Views", but is enabled in specific store view scopes. 
-
 Previously, if a product was disabled in "All Store Views" and enabled only in specific store view scopes, the product attributes would not be displayed correctly in the GraphQL response, leading to the product not being displayed properly.
   * _GitHub code contribution_: <https://github.com/magento/inventory/commit/3f300077>
 
@@ -689,7 +682,6 @@ Previously imported customer was duplicated.
 
 * _ACP2E-2102_: No Export VCL for Varnish 7 button in admin panel
   * _Fix note_: "Export VCL for Varnish 7" button was added to the Admin panel.
-
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/a4fbf702>
 
 ### Inventory / MSI
@@ -726,7 +718,7 @@ Previously imported customer was duplicated.
   * _Fix note_: When issuing a credit memo, the order status is no longer changed to "completed" if there are items that haven't been shipped yet.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7e0e5582>
 * _AC-10994_: [Issue] Wrong store ID used in Order Address Renderer
-  * _Fix note_:  The system now correctly uses the store ID associated with an order when rendering the order address, ensuring that addresses are formatted correctly according to their respective store ID. Previously, the system was incorrectly using the current store ID, which could lead to incorrect address formatting in cases where multiple order emails from different stores needed to be sent.
+  * _Fix note_: The system now correctly uses the store ID associated with an order when rendering the order address, ensuring that addresses are formatted correctly according to their respective store ID. Previously, the system was incorrectly using the current store ID, which could lead to incorrect address formatting in cases where multiple order emails from different stores needed to be sent.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38412>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/37932>
 * _ACP2E-3045_: Order closed without fully refunded
@@ -861,7 +853,7 @@ Before they were automatically rejected.
   * _Fix note_: Table Rate shipping method now is shown even if Free Shipping becomes available after coupon applying
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b2286ecf>
 * _ACP2E-2738_: Tracking Window showing wrong Expected Delivery Date
-  * _Fix note_: Display correct Delivery Date for Fedex Carrier. 
+  * _Fix note_: Display correct Delivery Date for Fedex Carrier.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/57a32313>
 * _AC-11938_: UPS REST "A shipment cannot have a KGS/IN or LBS/CM or OZS/CM as its unit of measurements"
   * _Fix note_: Ensure to UPS rates should visible in checkout and cart.
