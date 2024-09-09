@@ -635,7 +635,7 @@ Merchants are responsible for synchronizing data between environments.
 | Custom Adobe Commerce application| |R |
 | Availability of New Relic services:<br>APM application and agent integration, Infrastructure application,<br>Logging & integration| R |   |
 | Setting up New Relic Alerts |     | R |
-| Deploying New Relic agent on PaaS Servers |     | R |
+| Deploying New Relic agent on PaaS Servers |  R   |  |
 
 {style="table-layout:auto"}
 
@@ -835,7 +835,6 @@ Merchants are responsible for synchronizing data between environments.
 | DDOS detection - layer 3-4| R |   |
 | DDOS detection - layer 7 |     | R |
 | DDOS response| R  |   |
-| Configuration of Fastly Extension Rate Limiting and Bot Protection (Limited) |     | R |
 
 {style="table-layout:auto"}
 
