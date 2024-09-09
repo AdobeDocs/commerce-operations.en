@@ -1,0 +1,18 @@
+{%- assign grouped_fixes = fixes | sort: 'Components' | group_by: 'Components' %}
+{%- for fix in grouped_fixes %}
+
+### {{ fix.name }}
+{% for item in fix.items %}
+* _{{item['Issue key']}}_: {{item['Summary']}}
+{%- unless item['Custom field (Release Note)'] == empty %}
+  * _Fix note_: {{item['Custom field (Release Note)']}}
+{%- endunless %}
+{%- unless item['Custom field (External Issue URL)'] == empty %}
+  * _GitHub issue_: <{{item['Custom field (External Issue URL)']}}>
+{%- endunless %}
+{%- unless item['Custom field (Git Pull Request)'] == empty %}
+  * _GitHub code contribution_: {{item['Custom field (Git Pull Request)']}}
+{%- endunless %}
+
+{%- endfor %}
+{%- endfor %}
