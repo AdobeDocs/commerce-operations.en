@@ -2,8 +2,6 @@
 
 ## Highlights
 
-## Highlights
-
 * *AC-12901*: Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability 
 * *AC-12898*: UCT tool compatibility with MySQL 8.4
 * *AC-12897*: SVC and EAT tool compatibility with MySQL 8.4
