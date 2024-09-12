@@ -4,21 +4,13 @@
 
 Lorem ipsum dolor site amet
 
->[!BEGINSHADEBOX]
-
 ### Security
 
 This release includes the same security fixes and platform security improvements that are included in Adobe Commerce 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, and 2.4.4-p11. See [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb24-18.html) for the latest discussion of these fixed issues.
 
->[!ENDSHADEBOX]
-
->[!BEGINSHADEBOX]
-
 ### Platform
 
 The following platform upgrades for this release ensure that Adobe Commerce remains a robust and reliable platform, ready to meet the demands of modern commerce environments:
-
->[!ENDSHADEBOX]
 
 <table>
     <tbody>
@@ -59,13 +51,9 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
     </tbody>
 </table>
 
->[!BEGINSHADEBOX]
-
 ### Performance
 
 This release includes the following performance enhancements:
-
->[!ENDSHADEBOX]
 
 <table>
     <tbody>
@@ -76,13 +64,9 @@ This release includes the following performance enhancements:
     </tbody>
 </table>
 
->[!BEGINSHADEBOX]
-
 ### Quality
 
 This release includes the following quality enhancements:
-
->[!ENDSHADEBOX]
 
 <table>
     <tbody>
@@ -97,10 +81,6 @@ This release includes the following quality enhancements:
     </tbody>
 </table>
 
->[!BEGINSHADEBOX]
-
 ### GraphQL
 
 This release includes the following GraphQL enhancements:
-
->[!ENDSHADEBOX]
