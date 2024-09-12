@@ -18,13 +18,13 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 ## v1.1.51 {#v1-1-51}
 
 * **ACSD-59786** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where GraphQL returns an internal server error when trying to get a Quote ID for an expired quote.
-* **ACSD-60234** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where an incorrect amount is shown on PayPal when the discount is applied by payment method.
-* **ACSD-59967** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7-p2) - Fixes the issue where a JavaScript error prevents Google Maps from rendering correctly.
-* **ACSD-60326** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where an error occurs on GraphQL query for customer return status.
-* **ACSD-60538** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where if a product is disabled in \"All Store Views\" and enabled only in specific store view scopes, the product attributes don't show correctly in the GraphQL response, leading to the product not being displayed properly.
+* **ACSD-60234** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where an incorrect amount is shown on [!DNL PayPal] when the discount is applied by the payment method.
+* **ACSD-59967** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7-p2) - Fixes the issue where a JavaScript error prevents [!DNL Google Maps] from rendering correctly.
+* **ACSD-60326** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where an error occurs on the GraphQL query for customer return status.
+* **ACSD-60538** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where if a product is disabled in *[!UICONTROL All Store Views]* and enabled only in specific store view scopes, the product attributes don't show correctly in the GraphQL response, leading to the product not being displayed properly.
 * **ACSD-60631** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where GraphQL returns an error when the same simple product is assigned to multiple configurable products.
 * **ACSD-60632** (for Adobe Commerce and Magento Open Source >=2.4.5-p8 <2.4.8) - Fixes the issue where a new address is saved each time an order placement attempt is made, regardless of whether the order is successfully created or not.
-* **ACSD-60816** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the NewRelic Browser Monitoring scripts injected by the APM agent are not compliant with CSP (Content Security Policy), preventing their execution.
+* **ACSD-60816** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the [!DNL New Relic Browser Monitoring] scripts injected by the APM agent are not compliant with CSP (Content Security Policy), preventing their execution.
 * **ACSD-61195** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where no cart items are returned on the last page for the cart GraphQL request.
 * Updated patches: ACSD-59378
 
