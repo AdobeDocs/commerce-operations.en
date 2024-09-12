@@ -24,7 +24,7 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
     <tbody>
         <tr>
             <td><strong>Database</strong></td>
-            <td>In alignment with our <a href="help/release/lifecycle-policy.md">support lifecycle policy</a>, Adobe Commerce is now compatible with the following long-term support (LTS) versions of the following database technologies:
+            <td>In alignment with our <a href="/help/release/lifecycle-policy.md">support lifecycle policy</a>, Adobe Commerce is now compatible with the following long-term support (LTS) versions of the following database technologies:
               <ul>
                 <li><strong>MySQL 8.4 LTS</strong> <em>_(supported until 2032)_</em>: The previous version (MySQL 8.0) reaches end-of-life in 2026, making this upgrade essential for maintaining system integrity and performance.</li>
                 <li><strong>MariaDB 11.4 LTS</strong> <em>_(supported until 2029)_</em>: The previous version (MariaDB 10.6) reaches end-of-life in 2026, making this upgrade essential for maintaining system integrity and performance.</li>
@@ -37,7 +37,7 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
         </tr>
         <tr>
             <td><strong>Components</strong></td>
-            <td>All third-party <a href="release/packages/adobe-commerce.md">components and dependencies</a> were updated to the latest stable versions to enhance platform stability and performance:
+            <td>All third-party <a href="/help/release/packages/adobe-commerce.md">components and dependencies</a> were updated to the latest stable versions to enhance platform stability and performance:
               <ul>
                 <li>TinyMCE 7.x</li>
                 <li>moment.js 2.30.1</li>
@@ -71,7 +71,7 @@ This release includes the following performance enhancements:
     <tbody>
         <tr>
             <td><strong>Indexers</strong></td>
-            <td>The default <a href="help/implementation-playbook/best-practices/maintenance/indexer-configuration.md#set-indexers-to-update-on-schedule">indexer mode</a> for all indexers is now [!UICONTROL **Update by Schedule**] when installing a new version of Adobe Commerce or upgrading from a previous version. The new default ensures that indexers are in the recommended configuration, improving system performance and reducing potential issues.</td>
+            <td>The default <a href="/help/implementation-playbook/best-practices/maintenance/indexer-configuration.md#set-indexers-to-update-on-schedule">indexer mode</a> for all indexers is now [!UICONTROL **Update by Schedule**] when installing a new version of Adobe Commerce or upgrading from a previous version. The new default ensures that indexers are in the recommended configuration, improving system performance and reducing potential issues.</td>
         </tr>
     </tbody>
 </table>
