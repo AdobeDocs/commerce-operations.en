@@ -41,6 +41,7 @@ To participate in the beta, send an email request to [Shaun McCran](mailto:mccra
 ### IBM Sterling Order Management System Integration (Private Beta)
 
 This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
+
 - Real-time visibility into inventory levels and accurate delivery dates for your customers.
 - Automated sourcing for orders based on configurable rules, so you can optimize your fulfillment network and inventory.
 - A universal view of orders across channels from a single dashboard so your support teams can deliver exceptional service and identify and handle exceptions quickly.
@@ -51,10 +52,9 @@ To participate in this beta, send an email request to [sbieber@adobe.com](mailto
 ### Data Connection & Audience Activation (Public Beta)
 
 Expanded data sharing between Adobe Commerce & Adobe Experience Platform to drive more powerful personalized experiences. This capability enables merchants to:
+
 - Share Commerce customer profiles
 - Create custom attributes
-- Get Commerce insights in Real-Time CDP and Adobe Journey Optimizer
-- Support multiple datasets and datastreams
 
 To participate in this beta, send an email request to [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
 
@@ -62,12 +62,12 @@ To participate in this beta, send an email request to [DataConnection@adobe.com]
 
 Each Adobe Commerce Foundation beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
--  Latest security fixes
--  Performance improvements
--  GraphQL improvements
--  General quality bug fixes
--  Community contributions
--  Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- Latest security fixes
+- Performance improvements
+- GraphQL improvements
+- General quality bug fixes
+- Community contributions
+- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
 #### Naming convention and schedule
 
@@ -75,8 +75,8 @@ Adobe typically releases beta patches twice a year.
 
 Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.4.7 beta release packages use the following naming convention:
 
--  `2.4.7-beta1`
--  `2.4.7-beta2`
+- `2.4.7-beta1`
+- `2.4.7-beta2`
 
 See the [release schedule](schedule.md) for the list of upcoming public beta release dates.
 
