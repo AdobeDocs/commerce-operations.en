@@ -12,7 +12,7 @@ This release includes the same security fixes and platform security improvements
 
 The following platform upgrades for this release ensure that Adobe Commerce remains a robust and reliable platform, ready to meet the demands of modern commerce environments:
 
-<table>
+<table style="table-layout-auto">
     <tbody>
         <tr>
             <td><strong>Database</strong></td>
@@ -55,7 +55,7 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
 
 This release includes the following performance enhancements:
 
-<table>
+<table style="table-layout-auto">
     <tbody>
         <tr>
             <td><strong>Indexers</strong></td>
@@ -68,7 +68,7 @@ This release includes the following performance enhancements:
 
 This release includes the following quality enhancements:
 
-<table>
+<table style="table-layout-auto">
     <tbody>
         <tr>
            <td><strong>Inventory</strong></td>
