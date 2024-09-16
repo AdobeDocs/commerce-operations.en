@@ -37,20 +37,21 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
             <td><strong>Components</strong></td>
             <td>The following third-party <a href="/help/release/packages/adobe-commerce.md">components and dependencies</a> were updated to the latest stable versions to enhance platform stability and performance:
               <ul>
-                <li>TinyMCE 7.x</li>
+                <li>jquery/validate 1.20.x</li>
                 <li>moment.js 2.30.1</li>
                 <li>monolog/monolog 3.x</li>
+                <li>monolog/Require.js 2.3.7</li>
+                <li>TinyMCE 7.x</li>
                 <li>wikimedia/less.php 5.x</li>
-                <li>jquery/validate 1.20.x</li>
               </ul>
             </td>
         </tr>
         <tr>
             <td><strong>Search</strong></td>
-            <td>Adobe Commerce is now optimized for OpenSearch 2.x and is no longer compatible with Elasticsearch. All Elasticsearch 7 and 8 modules and classes have been marked deprecated in the codebase. Adobe strongly recommends transitioning to OpenSearch for both on-premises and cloud infrastructure deployments to ensure continued support and compatibility.
+            <td>Adobe Commerce is now optimized for OpenSearch 2.x and is no longer compatible with Elasticsearch. All Elasticsearch 7 and 8 modules and classes have been marked as deprecated in the codebase. Adobe strongly recommends transitioning to OpenSearch for both on-premises and cloud infrastructure deployments to ensure continued support and compatibility. See <a href="/help/upgrade/prepare/opensearch-migration.md">Migrating to OpenSearch</a>.
               <ul>
                 <li>The Elasticsearch 7 and Elasticsearch 8 options are now labeled as "(Deprecated)" in the Admin configuration.</li>
-                <li>When a user selects Elasticsearch as the search engine in the Admin configuration, Comemrce displays a notification stating, <em>"This search engine option is no longer supported by Adobe. It is recommended to use OpenSearch as a search engine instead."</em></li>
+                <li>When a user selects Elasticsearch as the search engine in the Admin configuration, Commerce displays a notification stating, <em>"This search engine option is no longer supported by Adobe. It is recommended to use OpenSearch as a search engine instead."</em></li>
               </ul>
             </td>
         </tr>
