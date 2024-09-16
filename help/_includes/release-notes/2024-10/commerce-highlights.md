@@ -18,18 +18,24 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
             <td><strong>Database</strong></td>
             <td>In alignment with our <a href="/help/release/lifecycle-policy.md">support lifecycle policy</a>, Adobe Commerce is now compatible with the following long-term support (LTS) versions of the following database technologies:
               <ul>
-                <li><strong>MySQL 8.4 LTS</strong> <em>_(supported until 2032)_</em>: The previous version (MySQL 8.0) reaches end-of-life in 2026, making this upgrade essential for maintaining system integrity and performance.</li>
-                <li><strong>MariaDB 11.4 LTS</strong> <em>_(supported until 2029)_</em>: The previous version (MariaDB 10.6) reaches end-of-life in 2026, making this upgrade essential for maintaining system integrity and performance.</li>
+                <li><strong>MariaDB 11.4 LTS</strong> <em>_(supported until 2029)_</em>: The previous version (MariaDB 10.6) reaches end-of-life in 2026, making this upgrade essential for maintaining system integrity and performance. MariaDB 10.6 is still supported, but Adobe recommends upgrading to MariaDB 11.4 when upgrading to Adobe Commerce 2.4.8.</li>
+                <li><strong>MySQL 8.4 LTS</strong> <em>_(supported until 2032)_</em>: The previous version (MySQL 8.0) reaches end-of-life in 2026, making this upgrade essential for maintaining system integrity and performance. MySQL 8.0 is still supported, but Adobe recommends upgrading to MySQL 8.4 when upgrading to Adobe Commerce 2.4.8</li>
               </ul>
             </td>
         </tr>
         <tr>
             <td><strong>PHP</strong></td>
-            <td>One of the significant changes in PHP 8.2 involves the deprecation of passing null to non-nullable internal function parameters. This release addresses deprecated PHP 8.1 features in core platform components and ensures compatibility with PHP 8.2.</td>
+            <td>
+            <ul>
+              <li><strong>PHP 8.1</strong>: This release removes PHP 8.1 compatibilty for Adobe Commerce 2.4.8. You must upgrade to PHP 8.2 before upgrading to Adobe Commerce 2.4.8.</li>
+              <li><strong>PHP 8.2</strong>: One of the significant changes in PHP 8.2 involves the deprecation of passing null to non-nullable internal function parameters. This release addresses deprecated PHP 8.1 features in core platform components and ensures compatibility with PHP 8.2.</li>
+              <li><strong>PHPUnit 10</strong>: This release addresses several critical issues, enhances compatibility, and ensures that the Adobe Commerce testing framework is aligned with the latest industry standards. Adobe recommends that all Commerce Marketplace vendors and customers with customizations verify that their unit and integration tests run on PHPUnit 10 instead of 9.</li>
+            </ul>
+            </td>
         </tr>
         <tr>
             <td><strong>Components</strong></td>
-            <td>All third-party <a href="/help/release/packages/adobe-commerce.md">components and dependencies</a> were updated to the latest stable versions to enhance platform stability and performance:
+            <td>The following third-party <a href="/help/release/packages/adobe-commerce.md">components and dependencies</a> were updated to the latest stable versions to enhance platform stability and performance:
               <ul>
                 <li>TinyMCE 7.x</li>
                 <li>moment.js 2.30.1</li>
