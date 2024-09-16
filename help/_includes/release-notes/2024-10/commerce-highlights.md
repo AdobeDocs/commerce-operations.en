@@ -2,7 +2,7 @@
 
 ## Highlights
 
-Lorem ipsum dolor site amet
+This release of Adobe Commerce includes several critical security fixes and platform improvements.
 
 ### Security
 

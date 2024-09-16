@@ -2,7 +2,7 @@
 
 ## Highlights
 
-Lorem ipsum dolor site amet
+This release of the Magento Open Source codebase includes the following critical security fixes and platform improvements:
 
 * *AC-11864*: Security Improvements for 2.4.8-beta1 from August 2024 release
 * *AC-11816*: Add compatibility with MySQL 8.4 LTS
