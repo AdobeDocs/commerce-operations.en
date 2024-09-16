@@ -30,7 +30,7 @@ This release of the Magento Open Source codebase includes the following critical
 * *AC-12085*: Added MariaDB 11.4 support with Adobe Commerce and extensions
 * *AC-12595*: Added MariaDB 11.4 support with Adobe Commerce and extensions
 * *AC-12901*: Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability 
-* *AC-12823*: 
+* *AC-12823*: Investigate the unit test failure due to phpunit patch update during component upgrade
 * *AC-12844*: Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
 * *AC-12022*: The system has been updated to use the latest major version of the "monolog/monolog:^3.x" library, ensuring compatibility and improved performance. Previously, the system was using an outdated version of the "monolog/monolog" library which could have led to potential issues and limitations.
 * *AC-12024*: Upgrade jquery/validate library dependency to the latest minor version 1.20.0
