@@ -40,6 +40,12 @@
 >
 >Adobe Commerce releases can contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Not all releases introduce major BICs.
 
+## Beta disclaimer {#beta}
+
+>[!IMPORTANT]
+>
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify or otherwise support (via Adobe Support Services or otherwise) the beta releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the beta releases and/or any accompanying documentation or materials. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+
 ## CVE notice {#cve-notice}
 
 >[!NOTE]
