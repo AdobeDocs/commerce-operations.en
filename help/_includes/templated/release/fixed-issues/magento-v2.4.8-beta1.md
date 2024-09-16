@@ -4,8 +4,6 @@
 
 Take a look at the following 49 highlights for the Magento Open Source 2.4.8 release.
 
-
-
 ### Framework
 
 * _AC-10721_: Upgrade the league/flysystem Composer dependencies upgrading to latest version
