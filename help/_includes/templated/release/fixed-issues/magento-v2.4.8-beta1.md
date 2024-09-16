@@ -1,4 +1,4 @@
-# Magento Open Source released notes (v2.4.8-beta1)
+# Magento Open Source release notes (v2.4.8-beta1)
 
 ## Highlights
 
