@@ -27,7 +27,7 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
             <td><strong>PHP</strong></td>
             <td>This release includes the following PHP enhancements:
             <ul>
-              <li><strong>PHP 8.1</strong>: This release removes PHP 8.1 compatibilty for Adobe Commerce 2.4.8. You must upgrade to PHP 8.2 before upgrading to Adobe Commerce 2.4.8.</li>
+              <li><strong>PHP 8.1</strong>: This release removes PHP 8.1 compatibilty for Adobe Commerce 2.4.8. You must upgrade to PHP 8.3 before upgrading to Adobe Commerce 2.4.8.</li>
               <li><strong>PHP 8.2</strong>: One of the significant changes in PHP 8.2 involves the deprecation of passing null to non-nullable internal function parameters. This release addresses deprecated PHP 8.1 features in core platform components and ensures compatibility with PHP 8.2.</li>
               <li><strong>PHPUnit 10</strong>: This release addresses several critical issues, enhances compatibility, and ensures that the Adobe Commerce testing framework is aligned with the latest industry standards. Adobe recommends that all Commerce Marketplace vendors and customers with customizations verify that their unit and integration tests run on PHPUnit 10 instead of 9.</li>
             </ul>
