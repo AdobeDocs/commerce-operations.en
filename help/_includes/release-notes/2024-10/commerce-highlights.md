@@ -98,7 +98,7 @@ This release includes the following GraphQL enhancements:
            <td><strong>General enhancements</strong></td>
            <td>This release includes the following general GraphQL API enhancements:
              <ul>
-              <li><!-- LYNX-524 --><strong>CustomerOrder type</strong>: Enhanced the CustomerOrder type to include detailed customer information. Improved data sourcing from the sales order database for comprehensive customer insights.</li>
+              <li><!-- LYNX-524 --><strong>CustomerOrder type</strong>: Enhanced the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#definition-CustomerOrder">CustomerOrder</a> type to include detailed customer information. Improved data sourcing from the sales order database for comprehensive customer insights.</li>
               <li><!-- LYNX-523: --><strong>availableOrderActions</strong>: Extended CustomerOrder interface to include availableOrderActions for better order management. Backend logic now supports mapping order statuses to available actions.</li>
               <li><!--LYNX-521--><strong>cancelOrder mutation</strong>:Implemented a new cancelOrder mutation in GraphQL. Enhanced order management capabilities by allowing cancellation through GraphQL.</li>
               <li><!--LYNX-519--><strong>Error codes for order cancellation</strong>: Added detailed error codes to the CancelOrderOutput type. Improved error handling and user feedback for order cancellation processes.</li>
