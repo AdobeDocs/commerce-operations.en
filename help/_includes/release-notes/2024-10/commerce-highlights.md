@@ -12,8 +12,6 @@ This release includes the same security fixes and platform security improvements
 >
 >See the [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb24-18.html) for the latest discussion of these fixed issues.
 
-The following security enhancements in this release improve compiance with the latest security best practices:
-
 {{$include /help/_includes/release-notes/2024-10/security-foo.md}}
 
 ### Platform

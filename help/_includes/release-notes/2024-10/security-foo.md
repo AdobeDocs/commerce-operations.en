@@ -1,6 +1,6 @@
 # August 2024 security patch highlights
 
-This release includes the following highlights:
+The following security enhancements in this release improve compiance with the latest security best practices:
 
 <table style="table-layout-auto">
     <tbody>
