@@ -11,7 +11,7 @@ The following sections provide details about the different AWS and Azure regions
 
 ## AWS regions
 
-![Diagram showing AWS regions](../../../assets/playbooks/aws-regions.png){zoomable="yes"}
+![Diagram showing AWS regions](../../../assets/playbooks/aws-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
