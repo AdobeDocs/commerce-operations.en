@@ -14,7 +14,7 @@ The Adobe Commerce 2.4.5-p10 security release provides security bug fixes for vu
 
 ## Highlights
 
-{{$include /help/_includes/release-notes/2024-10/security.md}}
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
 
 ## 2.4.5-p9
 

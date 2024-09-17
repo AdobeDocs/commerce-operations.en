@@ -14,7 +14,7 @@ The Adobe Commerce 2.4.6-p8 security release provides security bug fixes for vul
 
 ## Highlights
 
-{{$include /help/_includes/release-notes/2024-10/security.md}}
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
 
 ## 2.4.6-p7
 

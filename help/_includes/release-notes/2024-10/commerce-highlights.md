@@ -14,7 +14,7 @@ This release includes the same security fixes and platform security improvements
 
 The following security enhancements in this release improve compiance with the latest security best practices:
 
-{{$include /help/_includes/release-notes/2024-10/security.md}}
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
 
 ### Platform
 
