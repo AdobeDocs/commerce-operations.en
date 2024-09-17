@@ -6,7 +6,15 @@ This release of Adobe Commerce includes several critical security fixes and plat
 
 ### Security
 
-This release includes the same security fixes and platform security improvements that are included in Adobe Commerce 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, and 2.4.4-p11. See [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb24-18.html) for the latest discussion of these fixed issues.
+This release includes the same security fixes and platform security improvements that are included in Adobe Commerce 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, and 2.4.4-p11.
+
+>[!NOTE]
+>
+>See the [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb24-18.html) for the latest discussion of these fixed issues.
+
+The following security enhancements in this release improve compiance with the latest security best practices:
+
+{{$include /help/_includes/release-notes/2024-10/security.md}}
 
 ### Platform
 

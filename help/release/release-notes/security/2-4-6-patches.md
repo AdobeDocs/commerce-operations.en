@@ -8,6 +8,14 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
+## 2.4.6-p8
+
+The Adobe Commerce 2.4.6-p8 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+## Highlights
+
+{{$include /help/_includes/release-notes/2024-10/security.md}}
+
 ## 2.4.6-p7
 
 The Adobe Commerce 2.4.6-p7 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.

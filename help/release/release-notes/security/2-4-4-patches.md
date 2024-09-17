@@ -8,6 +8,14 @@ exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
+## 2.4.4-p11
+
+The Adobe Commerce 2.4.4-p11 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
+
+## Highlights
+
+{{$include /help/_includes/release-notes/2024-10/security.md}}
+
 ## 2.4.4-p10
 
 The Adobe Commerce 2.4.4-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
