@@ -17,6 +17,10 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 {{$include /help/_includes/release-notes/2024-10/security-foo.md}}
 
+### Hotfixes included in this release
+
+{{$include /help/_includes/release-notes/2024-10/hotfixes-included.md}}
+
 ## 2.4.7-p2
 
 The Adobe Commerce 2.4.7-p2 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
