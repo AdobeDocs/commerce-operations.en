@@ -6,13 +6,25 @@ This release of Adobe Commerce includes several critical security fixes and plat
 
 ### Security
 
-This release includes the same security fixes and platform security improvements that are included in Adobe Commerce 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, and 2.4.4-p11.
+The following security enhancements in this release improve compiance with the latest security best practices:
 
 >[!NOTE]
 >
->See the [Adobe Security Bulletin](https://helpx.adobe.com/security/products/magento/apsb24-18.html) for the latest discussion of these fixed issues.
+>For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-62](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+<table style="table-layout-auto">
+    <tbody>
+        <tr>
+            <td><strong>Settings</strong></td>
+            <td>This release includes the following enhancements to security settings:
+              <ul>
+                <li><strong>Encryption key rotation</strong>: A new CLI command is now available for changing your encryption key. See the <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102">Troubleshooting Encryption Key Rotation: CVE-2024-34102</a> Knowledge Base article for details.<!-- AC-12589 --></li>
+                <li><strong>One-time password (OTP) settings</strong>: This update is required to resolve an error that was introduced by a <a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value">backward-incompatible change</a> in 2.4.7. The description of the <strong>[!UICONTROL OTP Window]</strong> field now provides an accurate explanation of the setting and the default value has been changed from <code>1</code> to <code>29</code>.<!-- AC-11762 --></li>
+              </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Platform
 
