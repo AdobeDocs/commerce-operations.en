@@ -19,7 +19,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Hotfixes included in this release
 
-{{$include /help/_includes/release-notes/2024-10/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
 
 ## 2.4.7-p2
 

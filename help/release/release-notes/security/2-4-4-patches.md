@@ -14,6 +14,10 @@ The Adobe Commerce 2.4.4-p11 security release provides security bug fixes for vu
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-62](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
+### Highlights
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+
 ## 2.4.4-p10
 
 The Adobe Commerce 2.4.4-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
