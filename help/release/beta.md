@@ -36,7 +36,11 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
   - Shoppers to search for products where the attribute value starts with a particular string.
   - Merchants to configure an ends with search so shoppers can search for products where the attribute value ends with a particular string. To enable an ends with search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
 
-These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. To get access to this beta please reach out to the following emails: sagonzal@adobe.com, alexj@adobe.com
+- **contains search indexation** - Ability to search an attribute using contains indexation. This new capability allows:
+
+    - Shoppers to search for a query within a larger string. For example, a shopper searches for the product number "PE-123" in the string "HAPE-123". Note: this search type is different from the existing phrase search as the phrase search does an autocomplete search. For example, given a product attribute with a value of "outdoor pants", a phrase search returns a search response for the phrase "out pan", but does not return a response for "oor ants". Contains search, however, does return a response for "oor ants".
+
+These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. To get access to this beta please reach out to the following emails: `sagonzal@adobe.com`, `alexj@adobe.com`.
 
 To get started, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
