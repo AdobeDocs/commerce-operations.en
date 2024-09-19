@@ -24,7 +24,7 @@ See the following sections for a list of active beta programs.
 
 ### Enhanced search capabilities for Live Search (Public Beta)
 
-This beta supports two new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
 
 - **Layered search** - Ability to search within another search context. With this capability, you can undertake up to two layers of search for your search queries. For example:
   
@@ -36,7 +36,7 @@ This beta supports two new capabilities in the [`productSearch` query](https://d
   - Shoppers to search for products where the attribute value starts with a particular string.
   - Merchants to configure an ends with search so shoppers can search for products where the attribute value ends with a particular string. To enable an ends with search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
 
-These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
+These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. To get access to this beta please reach out to the following emails: sagonzal@adobe.com, alexj@adobe.com
 
 To get started, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
