@@ -24,7 +24,7 @@ See the following sections for a list of active beta programs.
 
 ### Enhanced search capabilities for Live Search (Public Beta)
 
-This beta supports two new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
 
 - **Layered search** - Ability to search within another search context. With this capability, you can undertake up to two layers of search for your search queries. For example:
   
