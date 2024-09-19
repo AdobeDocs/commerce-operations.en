@@ -31,10 +31,10 @@ This beta supports two new capabilities in the [`productSearch` query](https://d
   - **Layer 1 search** - Search for "motor" on "product_attribute_1".
   - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". In this example, "part number 123" is searched for within the results for "motor".
 
-- **startsWith search indexation** - Ability to search using `startsWith` indexation. This new capability allows you to:
+- **startsWith search indexation** - Ability to search using `startsWith` indexation. This new capability allows:
 
-  - Let shoppers search for products where the attribute value starts with a particular string.
-  - Configure an ends with search so shoppers can search for products where the attribute value ends with a particular string. To enable an ends with search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
+  - Shoppers to search for products where the attribute value starts with a particular string.
+  - Merchants to configure an ends with search so shoppers can search for products where the attribute value ends with a particular string. To enable an ends with search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query.
 
