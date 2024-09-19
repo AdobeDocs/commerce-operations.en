@@ -31,15 +31,18 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
   - **Layer 1 search** - Search for "motor" on "product_attribute_1".
   - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".
 
-- **startsWith search indexation** - Ability to search using `startsWith` indexation. This new capability allows:
+  Layered search is available for both `startsWith` search indexation and `contains` search indexation as described below:
 
-  - Search for products where the attribute value starts with a particular string.
-  - Merchants to configure an ends with search so shoppers can search for products where the attribute value ends with a particular string. To enable an ends with search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
+- **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
 
-- **contains search indexation** - Ability to search an attribute using contains indexation. This new capability allows:
+  - Searching for products where the attribute value starts with a particular string.
+  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
 
-    - Shoppers to search for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
-        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), because the phrase search performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
+- **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
+
+    - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
+        
+        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. For beta access, send an email to `sagonzal@adobe.com` or `alexj@adobe.com`.
 
