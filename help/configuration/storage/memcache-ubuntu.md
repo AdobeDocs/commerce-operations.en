@@ -136,7 +136,7 @@ stats items
 
 The result is similar to the following:
 
-```terminal
+```
 STAT items:2:number 1
 STAT items:2:age 106
 STAT items:2:evicted 0

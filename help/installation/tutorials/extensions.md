@@ -92,7 +92,7 @@ Add the extension's name and version to your `composer.json` file:
 
 1. Wait for Composer to finish updating your project dependencies and make sure that there aren't any errors:
 
-   ```terminal
+   ```
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -110,7 +110,7 @@ bin/magento module:status J2t_Payplug
 
 By default, the extension is probably disabled:
 
-```terminal
+```
 Module is disabled
 ```
 
@@ -134,7 +134,7 @@ Some extensions don't work properly unless you clear generated static view files
 
    You should see the following output:
 
-   ```terminal
+   ```
    The following modules have been enabled:
    - J2t_Payplug
 
@@ -164,7 +164,7 @@ Some extensions don't work properly unless you clear generated static view files
 
    You should see output verifying that the extension is no longer disabled:
 
-   ```terminal
+   ```
    Module is enabled
    ```
 

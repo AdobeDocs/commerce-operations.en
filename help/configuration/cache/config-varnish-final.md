@@ -22,7 +22,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 Important headers:
 
-```terminal
+```
 X-Magento-Cache-Control: max-age=86400, public, s-maxage=86400
 Age: 0
 X-Magento-Cache-Debug: MISS

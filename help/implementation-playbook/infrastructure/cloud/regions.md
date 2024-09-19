@@ -4,13 +4,14 @@ description: Review diagrams that show the AWS and Azure regions available for A
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 feature: Cloud
 ---
+
 # Cloud regions
 
-The following sections provide details about the different AWS and Azure regions that available for Adobe Commerce on cloud infrastructure.
+The following sections provide details about the different AWS and Azure regions that are available for Adobe Commerce on cloud infrastructure.
 
 ## AWS regions
 
-![Diagram showing AWS regions](../../../assets/playbooks/aws-regions.png)
+![Diagram showing AWS regions](../../../assets/playbooks/aws-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -18,8 +19,8 @@ The following sections provide details about the different AWS and Azure regions
 
 ## Azure regions
 
-![Diagram showing Azure regions](../../../assets/playbooks/azure-regions.png)
+![Diagram showing Azure regions](../../../assets/playbooks/azure-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
-> Only on-premises in China and Russia. All merchants that require Integration envrionments must use US regions.
+> Only on-premises in China and Russia. All merchants that require Integration environments must use US regions.

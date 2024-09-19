@@ -51,7 +51,7 @@ Ubuntu: `apache2 -v`
 
 Adobe Commerce supports Apache version 2.4 as the following result indicates:
 
-```terminal
+```
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
@@ -78,7 +78,7 @@ mysql -u magento -p
 
 The following result indicates the version that you are running.
 
-```terminal
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: 5.7.9 MySQL Community Server (GPL)
@@ -116,7 +116,7 @@ For example:
 curl -XGET 'localhost:9200'
 ```
 
-```terminal
+```
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",
