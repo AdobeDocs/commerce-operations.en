@@ -138,7 +138,7 @@ This release includes the following GraphQL enhancements:
         </tr>
         <tr>
            <td><strong>Customer management</strong></td>
-           <td>This release includes the following error handling and notification enhancements:
+           <td>This release includes the following customer management enhancements:
              <ul>
                <li><!--LYNX-391--><strong>generateCustomerToken mutation</strong>: Refined error handling in the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#mutation-generateCustomerToken"><code>generateCustomerToken</code></a> mutation to provide specific messages for unconfirmed emails. Supports better user guidance and error resolution.</li>
                <li><!--LYNX-390--><strong>resendConfirmationEmail mutation</strong>: Added a new <code>resendConfirmationEmail</code> mutation for resending email confirmations.</li>
@@ -147,7 +147,7 @@ This release includes the following GraphQL enhancements:
         </tr>
         <tr>
            <td><strong>Order management</strong></td>
-           <td>This release includes the following user product and order management enhancements:
+           <td>This release includes the following user order management enhancements:
              <ul>
               <li><!--LYNX-470--><strong>Date of first order</strong>: Added a new <code>date_of_first_order</code> field to the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#definition-CustomerOrders"><code>CustomerOrders</code></a> type.</li>
               <li><!--LYNX-468--><strong>OrderAddress</strong>: Extended the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#definition-OrderAddress"><code>OrderAddress</code></a> type to include custom attributes, enhancing order detail visibility. Supports additional information display on order confirmation pages.</li>
