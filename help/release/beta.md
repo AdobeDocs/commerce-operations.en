@@ -42,7 +42,7 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. To get access to this beta please reach out to the following emails: `sagonzal@adobe.com`, `alexj@adobe.com`.
 
-To get started, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
+To install the Live Search beta, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
 ### Experience Manager Assets Integration for Commerce (Private Beta)
 
