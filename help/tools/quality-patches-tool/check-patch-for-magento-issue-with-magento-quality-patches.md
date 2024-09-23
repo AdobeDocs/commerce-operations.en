@@ -32,7 +32,7 @@ The tool is aimed to enable you to self-serve with patches for issues you might 
 
 >[!NOTE]
 >
->QPT is for quality patches only. Security patches are available in the [Magento Security Center](https://magento.com/security/patches).
+>QPT is for quality patches only. Security patches are available in the [Magento Security Center](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ## Patches available in Quality Patches Tool
 
