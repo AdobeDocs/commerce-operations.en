@@ -26,7 +26,7 @@ It allows you to:
 
 Here's an example of the status table you can get to view the available patches:
 
-![Magento_patches_list](assets/status_table.png)
+![Magento_patches_list](/help/assets/tools/status_table.png)
 
 The tool is aimed to enable you to self-serve with patches for issues you might experience with Adobe Commerce, or easily apply patches suggested by Adobe Commerce support.
 

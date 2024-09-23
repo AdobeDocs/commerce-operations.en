@@ -31,7 +31,9 @@ VAT is not applied to a billing address without a VAT ID.
 
 1. Open the [!UICONTROL Commerce Admin] > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Customer Configuration]** > **[!UICONTROL Create New Account Options]** and set the **[!UICONTROL Enable Automatic Assignment to Customer Group]** to *[!UICONTROL Yes]*.
 1. Set different groups for VAT ID validations. For example:
-![VAT-ID-validations](/help/support-tools/patches-available-in-qpt-tool/assets/vat-id-validations.png)
+
+    ![VAT-ID-validations](/help/assets/tools/vat-id-validations.png)
+
 1. Register a new customer.
 1. Add a new default address without VAT. For example:
 
