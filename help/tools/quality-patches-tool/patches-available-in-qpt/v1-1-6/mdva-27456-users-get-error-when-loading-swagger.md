@@ -1,13 +1,13 @@
 ---
 title: 'MDVA-27456: Users get an error when loading Swagger'
-description: The MDVA-27456 patch fixes the issue where users get an error when trying to load Swagger. This patch is available when the [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.6 is installed. The patch ID is MDVA-27456. Please note that the issue was fixed in Adobe Commerce 2.3.7.
+description: The MDVA-27456 patch fixes the issue where users get an error when trying to load Swagger. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-27456. Please note that the issue was fixed in Adobe Commerce 2.3.7.
 exl-id: e331595f-a94b-4070-803a-60f559735b29
 feature: Tools and External Services
 role: Admin
 ---
 # MDVA-27456: Users get an error when loading Swagger
 
-The MDVA-27456 patch fixes the issue where users get an error when trying to load Swagger. This patch is available when the [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.6 is installed. The patch ID is MDVA-27456. Please note that the issue was fixed in Adobe Commerce 2.3.7.
+The MDVA-27456 patch fixes the issue where users get an error when trying to load Swagger. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-27456. Please note that the issue was fixed in Adobe Commerce 2.3.7.
 
 ## Affected products and versions
 

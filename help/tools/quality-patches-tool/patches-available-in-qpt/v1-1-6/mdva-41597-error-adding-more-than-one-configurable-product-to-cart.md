@@ -1,13 +1,13 @@
 ---
 title: 'MDVA-41597: Error adding more than one configurable product to cart'
-description: The MDVA-41597 patch fixes the issue where users get an error when adding more than one configurable product to the cart using GraphQL. This patch is available when the [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.6 is installed. The patch ID is MDVA-41597. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
+description: The MDVA-41597 patch fixes the issue where users get an error when adding more than one configurable product to the cart using GraphQL. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-41597. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 exl-id: 777e0f9c-80e3-4cfb-9328-c20eb038f74a
 feature: Configuration, Orders, Products, Shopping Cart
 role: Admin
 ---
 # MDVA-41597: Error adding more than one configurable product to cart
 
-The MDVA-41597 patch fixes the issue where users get an error when adding more than one configurable product to the cart using GraphQL. This patch is available when the [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.6 is installed. The patch ID is MDVA-41597. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
+The MDVA-41597 patch fixes the issue where users get an error when adding more than one configurable product to the cart using GraphQL. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-41597. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 
 ## Affected products and versions
 

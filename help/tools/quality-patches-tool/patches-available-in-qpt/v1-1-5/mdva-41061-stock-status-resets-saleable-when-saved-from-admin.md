@@ -1,13 +1,13 @@
 ---
 title: 'MDVA-41061: Stock status resets to saleable when product saved from Admin'
-description: The MDVA-41061 patch fixes the issue where the stock status resets to saleable when the product is saved from the Admin. This patch is available when the [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.5 is installed. The patch ID is MDVA-41061. The latest patch version is available in QPT 1.1.15 with MDVA-41061-V3 patch ID. Please note that the issue is fixed in Adobe Commerce 2.4.4.
+description: The MDVA-41061 patch fixes the issue where the stock status resets to saleable when the product is saved from the Admin. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is installed. The patch ID is MDVA-41061. The latest patch version is available in QPT 1.1.15 with MDVA-41061-V3 patch ID. Please note that the issue is fixed in Adobe Commerce 2.4.4.
 exl-id: fd71d3e5-685f-4987-b7e7-bfd86810d865
 feature: Admin Workspace, Orders, Products
 role: Admin
 ---
 # MDVA-41061: Stock status resets to saleable when product saved from Admin
 
-The MDVA-41061 patch fixes the issue where the stock status resets to saleable when the product is saved from the Admin. This patch is available when the [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.5 is installed. The patch ID is MDVA-41061. The latest patch version is available in QPT 1.1.15 with MDVA-41061-V3 patch ID. Please note that the issue is fixed in Adobe Commerce 2.4.4.
+The MDVA-41061 patch fixes the issue where the stock status resets to saleable when the product is saved from the Admin. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is installed. The patch ID is MDVA-41061. The latest patch version is available in QPT 1.1.15 with MDVA-41061-V3 patch ID. Please note that the issue is fixed in Adobe Commerce 2.4.4.
 
 ## Affected products and versions
 

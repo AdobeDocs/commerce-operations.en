@@ -1,13 +1,13 @@
 ---
 title: 'MDVA-37234: Adding item to cart multiple times creates duplicate line item'
-description: The MDVA-37234 patch fixes the issue where adding an item to the cart multiple times (parallel request) for the same SKU creates a duplicate line item for the same cart ID. This patch is available when the [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.3 is installed. The patch ID is MDVA-37234. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
+description: The MDVA-37234 patch fixes the issue where adding an item to the cart multiple times (parallel request) for the same SKU creates a duplicate line item for the same cart ID. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 is installed. The patch ID is MDVA-37234. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 exl-id: 8f0dc249-10b2-4f2c-abca-1f5b7aea204d
 feature: Orders, Shopping Cart
 role: Admin
 ---
 # MDVA-37234: Adding item to cart multiple times creates duplicate line item
 
-The MDVA-37234 patch fixes the issue where adding an item to the cart multiple times (parallel request) for the same SKU creates a duplicate line item for the same cart ID. This patch is available when the [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.3 is installed. The patch ID is MDVA-37234. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
+The MDVA-37234 patch fixes the issue where adding an item to the cart multiple times (parallel request) for the same SKU creates a duplicate line item for the same cart ID. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 is installed. The patch ID is MDVA-37234. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 
 ## Affected products and versions
 
