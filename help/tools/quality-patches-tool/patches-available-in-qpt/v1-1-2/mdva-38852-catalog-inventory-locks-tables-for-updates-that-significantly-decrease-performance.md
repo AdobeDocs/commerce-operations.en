@@ -1,13 +1,13 @@
 ---
 title: 'MDVA-38852: Catalog inventory locks tables which decreases performance'
-description: The MDVA-38852 patch solves the issue where the catalog inventory locks tables for updates which significantly decreases performance when several parallel orders are placed. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 is installed. The patch ID is MDVA-38852. Please note that the issue was fixed in Adobe Commerce 2.3.6.
+description: The MDVA-38852 patch solves the issue where the catalog inventory locks tables for updates which significantly decreases performance when several parallel orders are placed. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is installed. The patch ID is MDVA-38852. Please note that the issue was fixed in Adobe Commerce 2.3.6.
 exl-id: 6ecee9c8-1f39-47de-8fbc-55e30cc936af
 feature: Catalog Management, Inventory, Orders
 role: Admin
 ---
 # MDVA-38852: Catalog inventory locks tables which decreases performance
 
-The MDVA-38852 patch solves the issue where the catalog inventory locks tables for updates which significantly decreases performance when several parallel orders are placed. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 is installed. The patch ID is MDVA-38852. Please note that the issue was fixed in Adobe Commerce 2.3.6.
+The MDVA-38852 patch solves the issue where the catalog inventory locks tables for updates which significantly decreases performance when several parallel orders are placed. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is installed. The patch ID is MDVA-38852. Please note that the issue was fixed in Adobe Commerce 2.3.6.
 
 ## Affected products and versions
 
@@ -58,7 +58,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about Quality Patches Tool, refer to:
 
-* [Quality Patches Tool released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [Patches available in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in our developer documentation.

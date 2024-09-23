@@ -7,7 +7,7 @@ exl-id: 21a675dc-0750-4dc6-8cce-33e301f601bd
 ---
 # ACSD-54890: `aggregate_sales_report_bestsellers_data` causes MySQL errors
 
-The ACSD-54890 patch fixes the issue where the `aggregate_sales_report_bestsellers_data` causes [!DNL MySQL] errors due to `/tmpdisk` being out of space. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.42 is installed. The patch ID is ACSD-54890. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-54890 patch fixes the issue where the `aggregate_sales_report_bestsellers_data` causes [!DNL MySQL] errors due to `/tmpdisk` being out of space. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.42 is installed. The patch ID is ACSD-54890. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -51,7 +51,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.

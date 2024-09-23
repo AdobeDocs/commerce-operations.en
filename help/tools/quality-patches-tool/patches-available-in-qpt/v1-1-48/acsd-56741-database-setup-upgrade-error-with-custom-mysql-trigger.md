@@ -7,7 +7,7 @@ exl-id: 97839140-03c5-44f0-ba75-935d62f5bf90
 ---
 # ACSD-56741: Troubleshooting database setup errors with custom MySQL triggers
 
-The ACSD-56741 patch fixes the issue where an error message *Trying to access array offset on value of type null* appears during `setup:upgrade` due to a custom MySQL trigger in the database unrelated to indexation and [!DNL MView]. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 is installed. The patch ID is ACSD-56741. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.5.0
+The ACSD-56741 patch fixes the issue where an error message *Trying to access array offset on value of type null* appears during `setup:upgrade` due to a custom MySQL trigger in the database unrelated to indexation and [!DNL MView]. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.48 is installed. The patch ID is ACSD-56741. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.5.0
 
 ## Affected products and versions
 
@@ -63,7 +63,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.

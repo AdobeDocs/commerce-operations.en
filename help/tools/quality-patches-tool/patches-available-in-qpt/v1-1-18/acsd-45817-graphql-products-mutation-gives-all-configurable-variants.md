@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-45817: GraphQL products mutation gives all configurable variants'
-description: The ACSD-45817 patch fixes the issue where a GraphQL `products` mutation for a specific store returns all configurable variants, including those not assigned to the requested store. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 is installed. The patch ID is ACSD-45817. Please note that the issue was fixed in Adobe Commerce 2.4.4.
+description: The ACSD-45817 patch fixes the issue where a GraphQL `products` mutation for a specific store returns all configurable variants, including those not assigned to the requested store. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-45817. Please note that the issue was fixed in Adobe Commerce 2.4.4.
 exl-id: 3d61d1aa-36b5-471d-929b-7df8ce65c791
 feature: GraphQL, Configuration, Products
 role: Admin
 ---
 # ACSD-45817: GraphQL products mutation gives all configurable variants
 
-The ACSD-45817 patch fixes the issue where a GraphQL `products` mutation for a specific store returns all configurable variants, including those not assigned to the requested store. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 is installed. The patch ID is ACSD-45817. Please note that the issue was fixed in Adobe Commerce 2.4.4.
+The ACSD-45817 patch fixes the issue where a GraphQL `products` mutation for a specific store returns all configurable variants, including those not assigned to the requested store. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-45817. Please note that the issue was fixed in Adobe Commerce 2.4.4.
 
 ## Affected products and versions
 
@@ -124,7 +124,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about Quality Patches Tool, refer to:
 
-* [Quality Patches Tool released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [Patches available in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in our developer documentation.

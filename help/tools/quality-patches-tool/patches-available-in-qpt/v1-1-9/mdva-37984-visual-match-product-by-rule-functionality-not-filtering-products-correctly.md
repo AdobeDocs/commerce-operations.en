@@ -1,13 +1,13 @@
 ---
 title: 'MDVA-37984: Visual Merchandiser not working correctly when staging updates are applied'
-description: The MDVA-37984 patch solves the issue where the Visual Merchandiser's “Match product by rule” functionality does not filter products correctly when staging updates are applied. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 is installed. The patch ID is MDVA-37984. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
+description: The MDVA-37984 patch solves the issue where the Visual Merchandiser's “Match product by rule” functionality does not filter products correctly when staging updates are applied. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 is installed. The patch ID is MDVA-37984. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 exl-id: d806b94c-3b22-4d4c-8afb-7b57a0ebfe46
 feature: Categories, Merchandising, Products, Staging
 role: Admin
 ---
 # MDVA-37984: Visual Merchandiser not working correctly when staging updates are applied
 
-The MDVA-37984 patch solves the issue where the Visual Merchandiser's “Match product by rule” functionality does not filter products correctly when staging updates are applied. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 is installed. The patch ID is MDVA-37984. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
+The MDVA-37984 patch solves the issue where the Visual Merchandiser's “Match product by rule” functionality does not filter products correctly when staging updates are applied. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 is installed. The patch ID is MDVA-37984. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 
 ## Affected products and versions
 
@@ -56,7 +56,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about Quality Patches Tool, refer to:
 
-* [Quality Patches Tool released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [Patches available in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in our developer documentation.

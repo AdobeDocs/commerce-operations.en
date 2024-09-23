@@ -7,7 +7,7 @@ exl-id: 6676cfec-b833-4895-a7c4-c81fcd042e54
 ---
 # ACSD-57846: GraphQL products search with filter for zero prices not returning results
 
-The ACSD-57846 patch fixes the issue where filtering products for price from zero leads to a malformed request to [!DNL OpenSearch] and does not return any results. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.49 is installed. The patch ID is ACSD-57846. Please note that the issue was fixed in Adobe Commerce 2.4.7.
+The ACSD-57846 patch fixes the issue where filtering products for price from zero leads to a malformed request to [!DNL OpenSearch] and does not return any results. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.49 is installed. The patch ID is ACSD-57846. Please note that the issue was fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -116,7 +116,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.

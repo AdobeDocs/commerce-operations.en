@@ -1,13 +1,13 @@
 ---
 title: "ACSD-45257: GraphQL doesn't display cart discount correctly"
-description: The ACSD-45257 patch fixes the issue where GraphQL doesn't display the cart discount correctly. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 is installed. The patch ID is ACSD-45257. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+description: The ACSD-45257 patch fixes the issue where GraphQL doesn't display the cart discount correctly. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-45257. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 exl-id: 64576fa3-1160-4fc3-8458-4e622c30af74
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
 ---
 # ACSD-45257: GraphQL doesn't display cart discount correctly
 
-The ACSD-45257 patch fixes the issue where GraphQL doesn't display the cart discount correctly. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 is installed. The patch ID is ACSD-45257. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+The ACSD-45257 patch fixes the issue where GraphQL doesn't display the cart discount correctly. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-45257. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
@@ -53,7 +53,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about Quality Patches Tool, refer to:
 
-* [Quality Patches Tool released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [Patches available in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in our developer documentation.

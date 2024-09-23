@@ -1,13 +1,13 @@
 ---
 title: 'MDVA-40311: "Invalid security or form key" error after login into Admin if custom admin path is configured'
-description: 'The MDVA-40311 patch fixes the issue where the Admin user gets an error message: *Invalid security or form key. Please refresh the page*, after login into the Admin if the custom admin path is configured and the secret key is enabled. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 is installed. The patch ID is MDVA-40311. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.'
+description: 'The MDVA-40311 patch fixes the issue where the Admin user gets an error message: *Invalid security or form key. Please refresh the page*, after login into the Admin if the custom admin path is configured and the secret key is enabled. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is installed. The patch ID is MDVA-40311. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.'
 exl-id: d4562f09-0aed-438e-8c2e-90557aa2f146
 feature: Admin Workspace, Compliance, Security
 role: Admin
 ---
 # MDVA-40311: "Invalid security or form key" error after login into Admin if custom admin path is configured
 
-The MDVA-40311 patch fixes the issue where the Admin user gets an error message: *Invalid security or form key. Please refresh the page*, after login into the Admin if the custom admin path is configured and the secret key is enabled. This patch is available when the [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 is installed. The patch ID is MDVA-40311. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
+The MDVA-40311 patch fixes the issue where the Admin user gets an error message: *Invalid security or form key. Please refresh the page*, after login into the Admin if the custom admin path is configured and the secret key is enabled. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is installed. The patch ID is MDVA-40311. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 
 ## Affected products and versions
 
@@ -50,7 +50,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about Quality Patches Tool, refer to:
 
-* [Quality Patches Tool released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [Patches available in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in our developer documentation.

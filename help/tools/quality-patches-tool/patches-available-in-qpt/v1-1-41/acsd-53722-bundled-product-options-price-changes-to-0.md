@@ -7,7 +7,7 @@ exl-id: da4c25ac-78bc-4d4e-a55e-826924a099e9
 ---
 # ACSD-53722: Bundled product options price changes to $0
 
-The ACSD-53722 patch fixes the issue where the price of the bundled product options changes to $0 when scheduled updates for different scopes become active. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.41 is installed. The patch ID is ACSD-53722. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-53722 patch fixes the issue where the price of the bundled product options changes to $0 when scheduled updates for different scopes become active. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.41 is installed. The patch ID is ACSD-53722. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -62,7 +62,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in our support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in our support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in our support knowledge base.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
