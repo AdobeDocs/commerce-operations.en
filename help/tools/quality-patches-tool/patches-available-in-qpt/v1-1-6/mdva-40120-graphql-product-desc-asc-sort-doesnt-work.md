@@ -58,8 +58,8 @@ Create a few different products with the same price.
         }
       }
     }
-   ```
-       
+    ```
+
 1. Check the response.
 
 <u>Expected results</u>:
