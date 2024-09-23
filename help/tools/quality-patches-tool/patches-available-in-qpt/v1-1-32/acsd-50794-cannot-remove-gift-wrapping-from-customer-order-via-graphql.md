@@ -42,7 +42,7 @@ Users cannot remove gift wrapping from the customer order via GraphQL.
     * Set payment method: `setPaymentMethodOnCart` mutation (checkmo)
 1. Now check the gift wrapping *Uid* with this cart query: 
 
-    <pre><code class="language-GraphQL">
+    ```GraphQL
     {
       cart(cart_id: "{{CART_ID}}") {
         available_gift_wrappings{
@@ -50,8 +50,8 @@ Users cannot remove gift wrapping from the customer order via GraphQL.
         }
     }
     }
-    </code></pre>
-    
+    ```
+
 1. Set gift wrap using `setGiftOptionsOnCart`.
 1. Check the cart: cart query.
 1. Unset gift wrap using `setGiftOptionsOnCart` (set value to null).
@@ -59,7 +59,7 @@ Users cannot remove gift wrapping from the customer order via GraphQL.
 1. Place order: `placeOrder` mutation.
 1. Run customer query: customer.
 
-    <pre><code class="language-graphql">
+    ```GraphQL
     query {
       customer {
         firstname
@@ -92,7 +92,7 @@ Users cannot remove gift wrapping from the customer order via GraphQL.
         }
       }
     }
-    </code></pre>
+    ```
 
 <u>Expected results</u>:
 

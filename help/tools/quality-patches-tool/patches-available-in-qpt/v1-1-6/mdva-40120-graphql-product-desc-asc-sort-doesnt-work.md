@@ -32,8 +32,8 @@ Create a few different products with the same price.
 <u>Steps to reproduce</u>:
 
 1. Run the following GraphQL query:
-    <pre>
-    <code class="language-graphql">
+
+    ```GraphQL
     {
       products(filter: {category_id: {eq: "{{cat_id}}"}}, sort: {relevance: ASC}) {
         total_count
@@ -43,12 +43,12 @@ Create a few different products with the same price.
         }
       }
     }
-    </code>
-    </pre>
+    ```
+
 1. Check the response.
 1. Change the sort order from **ASC** to **DESC** in the GraphQL query:
-    <pre>
-    <code class="language-graphql">
+
+    ```GraphQL
     {
       products(filter: {category_id: {eq: "{{cat_id}}"}}, sort: {relevance: DESC}) {
         total_count
@@ -58,8 +58,8 @@ Create a few different products with the same price.
         }
       }
     }
-    </code>
-    </pre>
+   ```
+       
 1. Check the response.
 
 <u>Expected results</u>:

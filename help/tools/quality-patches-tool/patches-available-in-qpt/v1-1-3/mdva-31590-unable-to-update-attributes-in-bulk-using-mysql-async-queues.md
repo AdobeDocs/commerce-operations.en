@@ -54,7 +54,10 @@ Users are not able to update attributes in bulk using MySQL async.
 1. New records are created in `queue_message` and `queue_message_status` tables.
 1. `queue_message_status` table has record with error status (status value "6").
 1. `system.log` contains error similar to the following:
+
+    ```sql
     *main.CRITICAL: Message has been rejected: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'operation_key' cannot be null, query was: INSERT INTO {{magento_operation}} ({{id}}, {{bulk_uuid}}, {{topic_name}}, {{serialized_data}}, {{result_serialized_data}}, {{status}}, {{error_code}}, {{result_message}}, {{operation_key}}) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) [] []*
+    ```
 
 ## Apply the patch
 
