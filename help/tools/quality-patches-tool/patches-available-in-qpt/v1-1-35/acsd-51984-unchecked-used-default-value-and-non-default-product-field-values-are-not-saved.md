@@ -3,7 +3,6 @@ title: 'ACSD-51984: Unchecked [!UICONTROL Use Default Value] and non-default pro
 description: Apply the ACSD-51984 patch to fix the Adobe Commerce issue where the unchecked [!UICONTROL Use Default Value] and non-default product field values are not saved for the second website, store, and store view.
 feature: Products
 role: Admin
-exl-id: 1f45c700-dd27-4a69-8634-9c0aa131d197
 ---
 # ACSD-51984: Unchecked *[!UICONTROL Use Default Value]* and non-default product field values are not saved 
 

@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-49706: Default value saved for visual swatch attribute when no value is selected'
 description: Apply the ACSD-49706 patch to fix the Adobe Commerce issue where a default value is saved for a visual swatch attribute when no value is selected.
-exl-id: fe6071df-f2a4-443a-acfa-67f3d253c5e4
 feature: Admin Workspace, Attributes
 role: Admin
 ---

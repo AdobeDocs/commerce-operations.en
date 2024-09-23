@@ -1,7 +1,6 @@
 ---
 title: "ACSD-49960: Filtering by date doesn't work for the customer order grid"
 description: Apply the ACSD-49960 patch to fix the Adobe Commerce issue where filtering by date does not work for the customer order grid.
-exl-id: 483479f4-2688-4ff5-bbf3-bfd577a0c641
 feature: Admin Workspace, Orders
 role: Admin
 ---

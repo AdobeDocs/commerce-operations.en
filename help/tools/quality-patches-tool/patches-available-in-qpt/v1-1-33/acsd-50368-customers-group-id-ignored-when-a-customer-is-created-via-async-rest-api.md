@@ -3,7 +3,6 @@ title: 'ACSD-50368: Customers group_id is ignored when a customer is created via
 description: Apply the ACSD-50368 patch to fix the Adobe Commerce issue where the customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API.
 feature: REST
 role: Admin
-exl-id: bad76183-659a-4ba8-a4a8-18ad69e15aac
 ---
 # ACSD-50368: Customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API
 

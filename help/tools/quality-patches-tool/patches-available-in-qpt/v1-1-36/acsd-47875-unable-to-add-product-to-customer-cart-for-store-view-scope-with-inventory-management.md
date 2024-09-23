@@ -3,7 +3,6 @@ title: "ACSD-47875: Can't add product to cart for store view scope with inventor
 description: Apply the ACSD-47875 patch to fix the Adobe Commerce issue where a product cannot be added to a customer cart from Admin for a particular store view scope with inventory management.
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
-exl-id: fa5ecd65-704f-49bd-b3cc-3d60ff7e1dce
 ---
 # ACSD-47875: Can't add product to cart for store view scope with inventory management
 

@@ -3,7 +3,6 @@ title: 'ACSD-54111: Product thumbnail image not displaying'
 description: Apply the ACSD-54111 patch to fix the Adobe Commerce issue where all images are replaced by the default product placeholder image.
 feature: Products
 role: Admin, Developer
-exl-id: 087786e3-9d61-4fef-8884-8d22fa9170e3
 ---
 # ACSD-54111: Product thumbnail image not displaying
 

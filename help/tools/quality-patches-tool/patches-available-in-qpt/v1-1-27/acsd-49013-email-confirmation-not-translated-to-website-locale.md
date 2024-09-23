@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-49013: email confirmation not translated to website locale'
 description: Apply the ACSD-49013 patch to fix the Adobe Commerce issue where email confirmation is not translated to the website locale when creating customers using bulk API.
-exl-id: 68203bd4-021a-4736-a793-4b6663a9c66b
 feature: Admin Workspace, Communications
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-48164: restricted admin cannot save website-level value'
 description: Apply the ACSD-48164 patch to fix the Adobe Commerce issue where a restricted admin cannot save a website-level value.
-exl-id: 6ec15163-ad30-4566-a46c-5756bfd9f8d4
 feature: Admin Workspace
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: "ACSD-50858: Improved performance for loading banners' content"
 description: Apply the ACSD-50858 patch to fix the Adobe Commerce issue where banner performance is impacted in the cart/checkout page due to excessive DB queries and increased page loading time.
-exl-id: f9526d66-fc0e-44a0-8c72-b9f183004840
 feature: Page Content
 role: Admin
 ---

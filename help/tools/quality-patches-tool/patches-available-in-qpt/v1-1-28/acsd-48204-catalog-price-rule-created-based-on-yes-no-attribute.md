@@ -1,7 +1,6 @@
 ---
 title: "ACSD-48204: Catalog price rule created based on *Yes/No* attribute doesn't consider selected scope"
 description: Apply the ACSD-48204 patch to fix the Adobe Commerce issue where the catalog price rule created based on *Yes/No* attribute doesn't consider the selected scope.
-exl-id: 9b0b4d62-c4c5-40d7-a279-52f59ee7ac42
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules
 role: Admin
 ---

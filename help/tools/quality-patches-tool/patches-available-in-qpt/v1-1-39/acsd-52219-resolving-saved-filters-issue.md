@@ -3,7 +3,6 @@ title: 'ACSD-52219: Resolving admin grids filter issue in bookmark view switchin
 description: Apply the ACSD-52219 patch to fix the Adobe Commerce issue where the admin grids' saved filters don't work as expected when frequently switching between bookmark views.
 feature: Admin Workspace
 role: Admin
-exl-id: e8333ee7-28a8-4457-aeff-6828f8ca9412
 ---
 # ACSD-52219: Resolving admin grids filter issue in bookmark view switching
 

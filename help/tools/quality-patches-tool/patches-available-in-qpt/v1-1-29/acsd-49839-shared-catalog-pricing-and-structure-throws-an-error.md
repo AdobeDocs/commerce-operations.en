@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-49839: Shared catalog pricing and structure throws an error'
 description: Apply the ACSD-49839 patch to fix the Adobe Commerce issue where the shared catalog pricing and structure throws an error in the admin when products have single or double quotes in SKU.
-exl-id: 4c477ae8-602b-452e-83f0-b72a29547ef9
 feature: Admin Workspace, Catalog Management, Categories
 role: Admin
 ---

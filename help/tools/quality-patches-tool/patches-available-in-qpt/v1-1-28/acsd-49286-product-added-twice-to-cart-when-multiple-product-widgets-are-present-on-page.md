@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-49286: Product added twice to cart when multiple product widgets are present'
 description: Apply the ACSD-49286 patch to fix the Adobe Commerce issue where the product is added twice to a cart when multiple product widgets are present on the page.
-exl-id: b1764943-945d-4ef9-9bbe-3f3c8383b5b1
 feature: Admin Workspace, Orders, Products, Shopping Cart
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-50817: Optimizes cron job sales_clean_quotes to run faster'
 description: Apply the ACSD-50817 patch to optimize the cron job `sales_clean_quotes` to run faster by adding a composite index on the `store_id` and `updated_at` columns in the quote table.
-exl-id: b08b12ff-37ac-4a7d-bce2-2a27e4f916f0
 feature: Quotes
 role: Admin
 ---

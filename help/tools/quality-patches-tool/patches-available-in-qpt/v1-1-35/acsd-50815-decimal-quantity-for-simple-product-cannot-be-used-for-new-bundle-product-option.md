@@ -3,7 +3,6 @@ title: 'ACSD-50815: Decimal quantity for simple product cannot be used for new b
 description: Apply the ACSD-50815 patch to fix the Adobe Commerce issue where the decimal quantity for a simple product cannot be used for a new bundled product option.
 feature: Products
 role: Admin
-exl-id: f4aa417c-b0eb-4a68-bf1e-fd86770cc72d
 ---
 # ACSD-50815: Decimal quantity for simple product cannot be used for new bundled product option
 

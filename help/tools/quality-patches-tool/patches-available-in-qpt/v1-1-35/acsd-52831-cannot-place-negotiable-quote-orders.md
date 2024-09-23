@@ -3,7 +3,6 @@ title: 'ACSD-52831: Cannot place negotiable quote orders when [!DNL Google reCAP
 description: Apply the ACSD-52831 patch to fix the Adobe Commerce issue where you are not able to place negotiable quote orders when [!DNL Google reCAPTCHA v3 Invisible] is enabled.
 feature: Quotes, B2B, Checkout
 role: Admin
-exl-id: 80cf5592-0784-4b37-8373-abec0847a9f0
 ---
 # ACSD-52831: Cannot place negotiable quote orders when [!DNL Google reCAPTCHA v3 Invisible] enabled
 

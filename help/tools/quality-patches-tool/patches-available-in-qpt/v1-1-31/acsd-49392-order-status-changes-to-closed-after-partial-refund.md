@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-49392: Order status changes to closed after partial refund'
 description: Apply the ACSD-49392 patch to fix the Adobe Commerce issue where the order status changes to closed after a partial refund for a bundled product.
-exl-id: fca6f502-e224-4444-b0d0-f823853c9458
 feature: Orders
 role: Admin
 ---

@@ -3,7 +3,6 @@ title: 'ACSD-53628: CSV sales order report shows incorrect special characters'
 description: Apply the ACSD-53628 patch to fix the Adobe Commerce issue where the CSV sales order report shows incorrect special characters.
 feature: Orders, Data Import/Export
 role: Admin, Developer
-exl-id: d898fdb8-cab9-49ab-ad8e-43feadf49aa0
 ---
 # ACSD-53628: CSV sales order report shows incorrect special characters
 

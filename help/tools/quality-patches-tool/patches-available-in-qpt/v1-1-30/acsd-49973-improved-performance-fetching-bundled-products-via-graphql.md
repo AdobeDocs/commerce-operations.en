@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-49973: Improved performance fetching bundled products via [!DNL GraphQL]'
 description: Apply the ACSD-49973 patch to fix the Adobe Commerce issue where performance degradation occurs when fetching bundled products via [!DNL GraphQL].
-exl-id: 7d7fce0f-40f9-4dec-aee7-1014690ccd7c
 feature: GraphQL, Products
 role: Admin
 ---

@@ -3,7 +3,6 @@ title: 'ACSD-51102: Catalog rule applied to large number of products not correct
 description: Apply the ACSD-51102 patch to fix the Adobe Commerce issue where a catalog rule that is applied to a large number of products is not correctly indexed when the rule is enabled by a scheduled update.
 feature: Catalog Management, Products
 role: Admin
-exl-id: 5c1c5f9c-9cce-4b11-8058-0e12a4bf93fd
 ---
 # ACSD-51102: Catalog rule applied to large number of products not correctly indexed
 

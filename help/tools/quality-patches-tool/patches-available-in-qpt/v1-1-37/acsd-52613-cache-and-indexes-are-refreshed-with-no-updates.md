@@ -3,7 +3,6 @@ title: 'ACSD-52613: Cache and indexes are refreshed with no updates'
 description: Apply the ACSD-52613 patch to fix the Adobe Commerce issue where the cache and indexes are refreshed when no updates are made to `Inventory_source` items by [!DNL REST API].
 feature: REST
 role: Admin
-exl-id: 78f23fee-a48e-4ee2-bc75-e98e3dd1ac44
 ---
 # ACSD-52613: Cache and indexes are refreshed even with no updates
 

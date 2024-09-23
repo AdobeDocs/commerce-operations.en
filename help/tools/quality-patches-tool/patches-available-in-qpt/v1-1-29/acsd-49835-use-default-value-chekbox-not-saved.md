@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-49835: [!UICONTROL Use Default Value] checkbox is not saved'
 description: Apply the ACSD-49835 patch to fix the Adobe Commerce issue where the [!UICONTROL Use Default Value] checkbox is not saved correctly on a store level for a multi-select attribute.
-exl-id: 84270551-c8a9-4b08-a055-ffdcc538c33d
 feature: Storefront
 role: Admin
 ---

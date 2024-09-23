@@ -3,7 +3,6 @@ title: 'ACSD-53239: Inventory indexer cleans all caches'
 description: Apply the ACSD-53239 patch to fix the Adobe Commerce issue where the inventory indexer cleans all caches in the [!UICONTROL Update on Schedule] mode.
 feature: GraphQL, Inventory, Catalog Management
 role: Admin, Developer
-exl-id: b8e68cf7-d326-4c9e-8749-d83113de2070
 ---
 # ACSD-53239: Inventory indexer cleans all caches in the [!UICONTROL Update on Schedule] mode
 

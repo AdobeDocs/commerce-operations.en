@@ -3,7 +3,6 @@ title: 'ACSD-52929: Redundant request to re-index default source items'
 description: Apply the ACSD-52929 patch to fix the Adobe Commerce issue where there is a redundant request to reindex the default source items when the inventory indexer is configured in async mode.
 feature: Configuration, Inventory
 role: Admin, Developer
-exl-id: 978fe0d0-3917-4ba2-94bb-01c607a825cc
 ---
 # ACSD-52929: Redundant request to re-index default source items
 

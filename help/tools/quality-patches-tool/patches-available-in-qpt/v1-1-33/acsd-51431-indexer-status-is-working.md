@@ -3,7 +3,6 @@ title: 'ACSD-51431: Indexer status is *[!UICONTROL Working]* even though there a
 description: Apply the ACSD-51431 patch to fix the Adobe Commerce issue where the indexer status is *[!UICONTROL Working]* even though there are no entries in the changelog.
 feature: Logs, Price Indexer
 role: Admin
-exl-id: 85977b78-7f6b-47c7-b33e-16668bdf98fe
 ---
 # ACSD-51431: Indexer status is *[!UICONTROL Working]* even though there are no entries in the changelog
 

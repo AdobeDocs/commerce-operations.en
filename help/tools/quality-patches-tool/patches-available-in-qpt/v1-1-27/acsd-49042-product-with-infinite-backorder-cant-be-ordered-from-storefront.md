@@ -1,7 +1,6 @@
 ---
 title: "ACSD-49042: Product with infinite backorder can't be ordered from storefront"
 description: Apply the ACSD-49042 patch to fix the Adobe Commerce issue where a product with infinite backorder cannot be ordered from the storefront.
-exl-id: b9227296-f300-447c-a241-30ccc0691c9a
 feature: Admin Workspace, Orders, Products, Storefront
 role: Admin
 ---

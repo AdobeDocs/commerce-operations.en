@@ -3,7 +3,6 @@ title: 'ACSD-51574: Image not updated on frontend when replaced with another ima
 description: Apply the ACSD-51574 patch to fix the Adobe Commerce issue where the image is not updated on the frontend after replacing it with another image.
 feature: Configuration
 role: Admin
-exl-id: a6f26126-71c3-43c2-bba4-60a914d7ec11
 ---
 # ACSD-51574: Image not updated on frontend when replaced with another image 
 

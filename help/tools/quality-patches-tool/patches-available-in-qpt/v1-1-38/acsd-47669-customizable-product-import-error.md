@@ -3,7 +3,6 @@ title: 'ACSD-47669: Internal server error when importing products with customiza
 description: Apply the ACSD-47669 patch to fix the Adobe Commerce issue where there is an internal server error during importing products with customizable options.
 feature: Products
 role: Admin, Developer
-exl-id: 14afbd71-075a-4264-8da2-dbbd93f472a1
 ---
 # ACSD-47669: Internal server error when importing products with customizable options
 

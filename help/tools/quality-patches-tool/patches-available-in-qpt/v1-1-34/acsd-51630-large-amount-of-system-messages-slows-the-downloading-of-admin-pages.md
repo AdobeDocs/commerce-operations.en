@@ -3,7 +3,6 @@ title: 'ACSD-51630: Numerous system messages slow download of Admin Pages'
 description: Apply the ACSD-51630 patch to fix the Adobe Commerce performance issue where a large amount of system messages slows the downloading of Admin Pages.
 feature: Admin Workspace, System
 role: Admin
-exl-id: 28f85199-625e-4299-bbca-8d2fc75df602
 ---
 # ACSD-51630: Numerous system messages slow download of Admin Pages
 

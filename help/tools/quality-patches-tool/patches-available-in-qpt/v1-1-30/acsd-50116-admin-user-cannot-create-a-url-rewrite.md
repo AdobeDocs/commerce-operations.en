@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-50116: An admin user cannot create a URL rewrite for the sub-categories of level three or lower'
 description: Apply the ACSD-50116 patch to fix the Adobe Commerce issue where an admin user cannot create a URL rewrite for the sub-categories of level three or lower.
-exl-id: 3fa8ebc1-b55d-437e-9dc7-bf6c300b9bbe
 feature: Admin Workspace, Categories
 role: Admin
 ---

@@ -3,7 +3,6 @@ title: 'ACSD-52148: Google v3 reCAPTCHA admin login fails occasionally'
 description: Apply the ACSD-52148 patch to fix the Adobe Commerce issue where the Google v3 reCAPTCHA admin login fails occasionally.
 feature: Admin Workspace
 role: Admin
-exl-id: ebebd8e6-a75a-4d4f-aeb8-ca924ff92c94
 ---
 # ACSD-52148: Google v3 reCAPTCHA admin login fails occasionally 
 

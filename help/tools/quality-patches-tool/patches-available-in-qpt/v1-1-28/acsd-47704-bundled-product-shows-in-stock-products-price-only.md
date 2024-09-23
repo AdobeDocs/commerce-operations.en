@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47704: Bundled product shows the price of in stock products only'
 description: Apply the ACSD-47704 patch to fix the Adobe Commerce issue where a bundled product shows the price of in stock products only.
-exl-id: 91fbeaf7-4bc2-49b1-a561-c3e63f193eaa
 feature: Admin Workspace, Customer Service, Orders, Products
 role: Admin
 ---

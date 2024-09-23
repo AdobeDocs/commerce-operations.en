@@ -3,7 +3,6 @@ title: 'ACSD-51294: Price, quantity, tax, shipping, revenue sent as string to [!
 description: Apply the ACSD-51294 patch to fix the Adobe Commerce issue where price, quantity, tax, shipping, and revenue are sent as a string to [!DNL Google Analytics] and GTM.
 feature: Orders, Shipping/Delivery, Variables
 role: Admin
-exl-id: 159e1e98-0def-4b20-901d-f5f58c3ead7c
 ---
 # ACSD-51294: Price, quantity, tax, shipping, revenue sent as string to [!DNL Google Analytics] and GTM
 

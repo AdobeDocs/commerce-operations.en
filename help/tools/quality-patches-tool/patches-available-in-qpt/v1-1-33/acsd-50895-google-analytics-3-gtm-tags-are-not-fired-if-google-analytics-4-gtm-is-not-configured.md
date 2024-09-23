@@ -2,7 +2,6 @@
 title: 'ACSD-50895: [!DNL Google Analytics] 3 GTM tags are not fired if [!DNL Google Analytics] 4 GTM is not configured'
 description: Apply the ACSD-50895 patch to fix the Adobe Commerce issue where [!DNL Google Analytics] 3 GTM tags are not fired if [!DNL Google Analytics] 4 GTM is not configured.
 role: Admin
-exl-id: da48f6f1-a68b-4a9c-a79a-d7bd01b65dc2
 ---
 # ACSD-50895: [!DNL Google Analytics] 3 GTM tags are not fired if [!DNL Google Analytics] 4 GTM is not configured
 

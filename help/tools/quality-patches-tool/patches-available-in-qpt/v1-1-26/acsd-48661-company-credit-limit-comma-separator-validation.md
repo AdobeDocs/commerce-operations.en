@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-48661: company credit limit comma separator validation issue'
 description: Apply the ACSD-48661 patch to fix the Adobe Commerce issue where when the company credit limit is larger than 999, the comma separator prevents the saving of the company due to a validation error.
-exl-id: 85c5a93f-76c5-439b-adcc-511f8473f302
 feature: Admin Workspace, B2B, Companies, Orders
 role: Admin
 ---

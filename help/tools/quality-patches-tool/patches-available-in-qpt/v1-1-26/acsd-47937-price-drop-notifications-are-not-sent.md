@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47937: price drop notifications not sent due to application-level caching'
 description: Apply the ACSD-47937 patch to fix the Adobe Commerce issue where price drop notifications are not always sent due to application-level caching.
-exl-id: f39c9ef6-4689-427f-bd61-3a52dec88be2
 feature: Admin Workspace, Cache, Orders
 role: Admin
 ---

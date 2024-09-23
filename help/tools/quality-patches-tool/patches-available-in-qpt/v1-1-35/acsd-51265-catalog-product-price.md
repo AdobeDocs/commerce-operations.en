@@ -3,7 +3,6 @@ title: 'ACSD-51265: Optimize reindexing for bundled products'
 description: Apply the ACSD-51265 patch to fix the Adobe Commerce issue where the `catalog_product_price` reindexing performance is low when there are too many bundled products in the system.
 feature: Products, Price Indexer
 role: Admin
-exl-id: ddf23c19-b1ed-4064-adbc-58707eb63cc9
 ---
 # ACSD-51265: Optimize reindexing for bundled products
 

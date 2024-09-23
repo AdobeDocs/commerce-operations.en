@@ -3,7 +3,6 @@ title: 'ACSD-50512: Error when updating the start date for a downloadable produc
 description: Apply the ACSD-51892 patch to fix the Adobe Commerce performance issue where the error *The downloadable link isn't related to the product.Verify the link and try again*, occurs when updating the start date for a downloadable product staging update.
 feature: Products, Staging
 role: Admin
-exl-id: 873357ef-49c3-48f8-a98e-41c48cb9ba8b
 ---
 # ACSD-50512: Error when updating start date for downloadable product staging update
 

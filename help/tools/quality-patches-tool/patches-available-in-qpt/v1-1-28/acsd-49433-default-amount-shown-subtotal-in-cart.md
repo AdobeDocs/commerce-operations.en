@@ -1,7 +1,6 @@
 ---
 title: "ACSD-49433: Default amount shown as subtotal in cart for gift card'"
 description: Apply the ACSD-49433 patch to fix the Adobe Commerce issue where the default amount is shown as subtotal in the cart for gift card with an open amount.
-exl-id: e2a887bb-c15a-43a6-a145-b295deef399b
 feature: Admin Workspace, Gift, Orders, Shopping Cart
 role: Admin
 ---

@@ -3,7 +3,6 @@ title: 'ACSD-51884: Product image cache path incorrect on resize command'
 description: Apply the ACSD-51884 patch to fix the Adobe Commerce issue where the product image cache path becomes incorrect after running the resize command.
 feature: Products
 role: Admin
-exl-id: cf542c4b-07b1-4f05-95bc-82bc098bcd4d
 ---
 # ACSD-51884: Product image cache path incorrect on resize command
 

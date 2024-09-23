@@ -3,7 +3,6 @@ title: 'ACSD-51358: Schedule updates are missing'
 description: Apply the ACSD-51358 patch to fix the Adobe Commerce issue where the changes in scheduled update without an end date leads to removing other scheduled updates on the same entity.
 feature: Staging
 role: Admin, Developer
-exl-id: 8bc4c505-9cf2-4c33-93a1-4b4d7d0dfc15
 ---
 # ACSD-51358: Schedule updates are missing
 

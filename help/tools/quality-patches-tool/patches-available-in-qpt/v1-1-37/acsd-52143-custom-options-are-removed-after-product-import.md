@@ -3,7 +3,6 @@ title: 'ACSD-52143: Custom options are removed after product import'
 description: Apply the ACSD-52143 patch to fix the Adobe Commerce issue where the customization options are removed after the product import.
 feature: Data Import/Export
 role: Admin, Developer
-exl-id: 7dde1efe-37a3-443f-9ce1-82cf1b3d9da7
 ---
 # ACSD-52143: Custom options are removed after product import
 

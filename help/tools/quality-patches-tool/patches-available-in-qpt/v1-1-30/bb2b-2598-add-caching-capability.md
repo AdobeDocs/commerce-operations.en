@@ -1,7 +1,6 @@
 ---
 title: 'BB2B-2598: Adds caching capability to storeConfig, currency, country, countries, availableStores GraphQl queries'
 description: Apply the BB2B-2598 patch to add caching capability to the storeConfig, currency, country, countries, and availableStores GraphQl queries.
-exl-id: 37551954-d721-4f3a-b237-cd795f715a5f
 feature: B2B, GraphQL, Cache
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: "ACSD-49574: Can't update gift card product in shopping cart via GraphQL"
 description: Apply the ACSD-49574 patch to fix the Adobe Commerce issue where a gift card product cannot be updated in the shopping cart via GraphQL.
-exl-id: e446128f-c991-4c3c-8d1c-bbff6230e448
 feature: Admin Workspace, Gift, GraphQL, Orders, Products, Shopping Cart
 role: Admin
 ---

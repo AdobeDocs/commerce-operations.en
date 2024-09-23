@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-48773: Reward points email template taken from wrong store'
 description: Apply the ACSD-48773 patch to fix the Adobe Commerce issue where the reward points email template is taken from the wrong store.
-exl-id: 96dda97c-5177-4883-ad2b-709928cb5f4d
 feature: Admin Workspace, Communications, Marketing Tools, Orders, Personalization, Rewards
 role: Admin
 ---

@@ -3,7 +3,6 @@ title: 'ACSD-54018: Performance issue with catalog widget product list'
 description: Apply the ACSD-54018 patch to fix the Adobe Commerce issue where the page loads slowly when adding a catalog widget product list with condition and attribute type boolean.
 feature: Attributes, Catalog Management, Page Builder, Page Content, Storefront
 role: Admin, Developer
-exl-id: 9f20484d-58c7-49d8-87df-1eeb84bee6fe
 ---
 # ACSD-54018: Performance issue with catalog widget product List
 

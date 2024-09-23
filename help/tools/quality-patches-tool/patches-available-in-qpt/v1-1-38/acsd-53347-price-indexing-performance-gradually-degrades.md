@@ -3,7 +3,6 @@ title: 'ACSD-53347: Price indexing performance gradually degrades overtime'
 description: Apply the ACSD-53347 patch to fix the Adobe Commerce issue where performance gradually degrades when reindexing prices for a large product catalog.
 feature: Price Indexer
 role: Admin
-exl-id: 28795673-54b0-4282-bd43-344401cbe140
 ---
 # ACSD-53347: Price indexing performance gradually degrades overtime
 
