@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47444: _[!UICONTROL Trying to access array offset on value of type bool]_ error when accessing certain non-existing category paths for known products on PHP 7.4'
 description: Apply the ACSD-47444 patch to fix the Adobe Commerce issue where there is a _[!UICONTROL Trying to access array offset on value of type bool]_ error when accessing certain non-existing category paths for known products, on PHP 7.4.
-exl-id: dfe803d0-bcff-40e6-a759-8c2243235ea8
 feature: Categories, Products
 role: Admin
 ---

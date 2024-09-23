@@ -1,7 +1,6 @@
 ---
 title: "MDVA-42950: Videos don't play on the product page"
 description: The MDVA-42950 patch solves the issue where videos are not being played on the product page. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-42950. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: e19e5ff0-9ddd-41de-b64b-4c3aef4d16a5
 feature: Products
 role: Admin
 ---

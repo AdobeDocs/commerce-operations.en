@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-26005: Unable to select category in tree for Cart Price rule conditions'
 description: The MDVA-26005 patch solves the issue where users are not able to select a category in the category tree for Cart Price rule conditions. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is installed. The patch ID is MDVA-26005. Please note that the issue was fixed in Adobe Commerce 2.3.6.
-exl-id: d3b8efc3-fd0a-4706-8851-4cecb7d3126a
 feature: Categories, Orders, Price Rules, Shopping Cart
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: "MDVA-42509: CSV could not be uploaded for quick order resulting in 'Unable to send the cookie' error"
 description: The MDVA-42509 patch solves the issue where a CSV could not be uploaded for quick order resulting in *Unable to send the cookie* error. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16 is installed. The patch ID is MDVA-42509. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 7aa0e710-9a28-4531-b9cb-c82f654487f4
 feature: B2B, Orders
 role: Admin
 ---

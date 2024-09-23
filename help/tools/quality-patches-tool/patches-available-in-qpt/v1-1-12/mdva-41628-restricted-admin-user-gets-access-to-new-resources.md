@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-41628: Restricted admin users get access to new resources'
 description: The MDVA-41628 patch fixes the issue where the restricted admin users are able to access the new resources when new modules are added. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-41628. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 8f63ce9d-07b6-4d9d-a51b-b85b783b2adf
 feature: Admin Workspace
 role: Admin
 ---

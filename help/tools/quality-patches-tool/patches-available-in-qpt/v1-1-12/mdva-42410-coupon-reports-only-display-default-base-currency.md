@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-42410: Coupon reports only display default base currency'
 description: The MDVA-42410 patch fixes the issue where the coupon reports only display base currency. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-42410. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: b442a2ce-1bd4-4f09-95fd-2c626e32f509
 feature: Orders
 role: Admin
 ---

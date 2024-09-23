@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-39713: User is able to edit start time of active scheduled update'
 description: The MDVA-39713 patch fixes the issue where a user is able to edit the start time of an active scheduled update. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-39713. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: c7221fdb-5fc0-4179-8d4c-c9e1f0d00692
 feature: CMS
 role: Admin
 ---

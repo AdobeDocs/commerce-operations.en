@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-41046: Simple products with custom options not available for assigning'
 description: The MDVA-41046 patch solves the issue where simple products with custom options are not available for assigning to configurable/grouped product. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is installed. The patch ID is MDVA-41046. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
-exl-id: 01229a69-c72a-4189-9be5-1761073b74ee
 feature: Products
 role: Developer
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-38852: Catalog inventory locks tables which decreases performance'
 description: The MDVA-38852 patch solves the issue where the catalog inventory locks tables for updates which significantly decreases performance when several parallel orders are placed. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is installed. The patch ID is MDVA-38852. Please note that the issue was fixed in Adobe Commerce 2.3.6.
-exl-id: 6ecee9c8-1f39-47de-8fbc-55e30cc936af
 feature: Catalog Management, Inventory, Orders
 role: Admin
 ---

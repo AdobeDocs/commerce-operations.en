@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47179: mass deletion of product reviews does not work when logged in as limited user role'
 description: Apply the ACSD-47179 patch to fix the Adobe Commerce issue where mass deletion of product reviews does not work when logged in as a limited user role.
-exl-id: 85d7ce63-7dd6-4df4-b314-278d18e69fbb
 feature: Marketing Tools, Products, Roles/Permissions
 role: Admin
 ---

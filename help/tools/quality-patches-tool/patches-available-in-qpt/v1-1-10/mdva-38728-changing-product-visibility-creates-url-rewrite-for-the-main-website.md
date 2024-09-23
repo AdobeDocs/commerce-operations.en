@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-38728: Changing product visibility creates URL rewrite for the main website'
 description: The MDVA-38728 patch solves the issue where changing the product visibility of the second website creates a URL rewrite for the main website. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10 is installed. The patch ID is MDVA-38728. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: ad1d5f82-294d-485d-acd3-28c3cd0fbf56
 feature: Products
 role: Admin
 ---

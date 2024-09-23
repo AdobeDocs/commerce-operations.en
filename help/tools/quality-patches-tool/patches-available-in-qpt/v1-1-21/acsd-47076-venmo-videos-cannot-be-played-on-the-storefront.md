@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47076: [!DNL Vimeo] videos cannot be played on the storefront'
 description: Apply the ACSD-47076 patch to fix the Adobe Commerce issue where [!DNL Vimeo] videos cannot be played on the storefront.
-exl-id: 52161c0d-3d51-45a3-ba41-36f955df0bea
 feature: Storefront
 role: Admin
 ---

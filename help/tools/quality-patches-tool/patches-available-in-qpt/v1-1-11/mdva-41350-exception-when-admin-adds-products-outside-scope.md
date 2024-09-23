@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-41350: Exception when admin adds products outside their access'
 description: The MDVA-41350 patch fixes the issue where an exception error is thrown instead of a limited access notification when an admin user adds a product in the order by SKU which is outside their access. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11 is installed. The patch ID is MDVA-41350. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 3a96d029-5350-4dd6-aad3-2f2cdd5e65ac
 feature: Admin Workspace, Products
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-40619: Hierarchy changes break CMS page inline edit and throw 500 error'
 description: The MDVA-40619 patch solves the issue where the CMS page hierarchy changes break CMS page inline edit and throw "500 error". This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is installed. The patch ID is MDVA-40619. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
-exl-id: c003d845-1ba0-49c0-9f1a-a4b0ec00f30c
 feature: CMS
 role: Admin
 ---

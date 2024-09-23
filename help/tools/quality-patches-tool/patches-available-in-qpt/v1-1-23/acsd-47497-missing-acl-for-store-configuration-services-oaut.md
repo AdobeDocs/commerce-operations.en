@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47497: missing ACL for Store / Configuration / Services [!UICONTROL OAuth]'
 description: Apply the ACSD-47497 patch to fix the Adobe Commerce issue when permissions are set for a particular role, and you cannot define access to the configuration section.
-exl-id: c13fd541-1379-4893-9190-9da1422b2b99
 feature: Configuration, Identity Management, Services
 role: Admin
 ---

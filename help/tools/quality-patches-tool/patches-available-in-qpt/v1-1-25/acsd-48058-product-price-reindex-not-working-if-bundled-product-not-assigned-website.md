@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-48058: product price reindex not working if bundled product not assigned website'
 description: Apply the ACSD-48058 patch to fix the Adobe Commerce issue where product price reindex is not working if the bundled product is not assigned to any website.
-exl-id: 691371f1-7f10-4be6-80e4-821e7cf664a6
 feature: Admin Workspace, Orders, Products
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-40537: Creating store view gives error when several CMS pages have same URL Key.'
 description: The MDVA-40537 patch fixes the issue where users get an error when creating a store view if several CMS pages have the same URL key. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is installed. The patch ID is MDVA-40537. Please note that the issue was fixed in Adobe Commerce 2.4.1.
-exl-id: d92400c9-0c5a-4416-820d-99ab4ba34003
 feature: CMS
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-45168: SEO-friendly URLs not generated for products that have url_key attributes overridden'
 description: Apply the ACSD-45168 patch to fix the Adobe Commerce issue where SEO-friendly URLs not generated for products that have url_key attributes overridden on store-view level.
-exl-id: cdba42ac-3c96-439b-befa-f0a13587b5d9
 feature: Attributes, Cache, Categories, Marketing Tools, Products
 role: Admin
 ---

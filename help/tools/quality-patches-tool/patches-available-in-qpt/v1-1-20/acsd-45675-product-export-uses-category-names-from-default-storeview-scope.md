@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-45675: Product export uses category names from default store view scope'
 description: The ACSD-45675 patch fixes the issue where the product export uses category names from the default store view scope. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 is installed. The patch ID is ACSD-45675. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
-exl-id: 9edd718e-4c0c-44dd-b802-07c9ec7c182a
 feature: Categories, Data Import/Export, Products
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-44100: All FPTs are assigned to the last product in shopping cart'
 description: The MDVA-44100 patch solves the issue where all FPTs are assigned to the last product in the shopping cart. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44100. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: ab0f195c-fcc6-41ac-932d-d2603d068aa6
 feature: Orders, Products, Shopping Cart
 role: Admin
 ---

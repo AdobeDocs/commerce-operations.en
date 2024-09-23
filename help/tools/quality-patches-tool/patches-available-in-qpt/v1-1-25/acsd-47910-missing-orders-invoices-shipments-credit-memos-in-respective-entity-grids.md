@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47910: missing orders, invoices, shipments, credit memos in respective entity grids'
 description: Apply the ACSD-47910 patch to fix the Adobe Commerce issue where there are missing orders, invoices, shipments, and credit memos in respective entity grids.
-exl-id: 4eb897ec-16e4-420e-89a6-c8f7c8740303
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
 role: Admin
 ---

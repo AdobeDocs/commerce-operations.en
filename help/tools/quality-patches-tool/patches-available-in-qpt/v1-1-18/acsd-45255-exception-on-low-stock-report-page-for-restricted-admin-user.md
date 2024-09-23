@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-45255: Exception on Low Stock report page for restricted admin user'
 description: The ACSD-45255 patch solves the issue where an exception is thrown on the Low Stock Report page for a restricted admin user. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-45255. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
-exl-id: 4b08500a-384e-4d5b-9563-3f9d1b984349
 feature: Admin Workspace, Orders
 role: Admin
 ---

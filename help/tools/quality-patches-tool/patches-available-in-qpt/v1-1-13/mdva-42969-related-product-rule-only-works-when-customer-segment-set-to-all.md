@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-42969: Related product rule only works when customer segment is set to all'
 description: The MDVA-42969 patch fixes the issue where the related product rule only works when the customer segment is set to all. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is installed. The patch ID is MDVA-42969. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 2877ba7a-2681-4de2-9c37-228de232424f
 feature: Customer Service, Marketing Tools, Products
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-42584: Stock status of configurable product not updated automatically'
 description: The MDVA-42584 patch solves the issue where the stock status of the configurable product is not updated automatically when its simple product is updated. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10 is installed. The patch ID is MDVA-42584. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: bf2697a2-8d15-408b-8d59-7b4173537e60
 feature: Configuration, Orders, Products
 role: Admin
 ---

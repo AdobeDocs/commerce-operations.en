@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-46520: Incorrect order status when refunded using store credits'
 description: This article provides a solution for the issue where users get an incorrect order status when refunded using store credits.
-exl-id: 8464df22-0223-4ded-a15f-ce06eacdf77c
 feature: Orders, Returns
 role: Admin
 ---

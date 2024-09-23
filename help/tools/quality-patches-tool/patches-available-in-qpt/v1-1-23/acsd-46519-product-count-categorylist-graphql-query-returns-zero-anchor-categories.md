@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-46519: [!UICONTROL product_count] in [!UICONTROL categoryList] [!DNL GraphQL] query returns 0 for anchor categories'
 description: Apply the ACSD-46519 patch to fix the Adobe Commerce issue where when you use the [!UICONTROL categoryList] [!DNL GraphQL] method to get child categories it shows the [!UICONTROL product_count] as 0 for parent categories.
-exl-id: b71be3e6-6235-4e96-848b-d61eda973d98
 feature: Categories, GraphQL, Products
 role: Admin
 ---

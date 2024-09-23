@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-44505: GraphQL query for cart applying reward points does not update grand total'
 description: The MDVA-44505 patch solves the issue where the GraphQL query for a cart applying reward points does not consider the reward points and returns an incorrect grand total. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44505. Please note that the issue was fixed in Adobe Commerce 2.4.3.
-exl-id: 724273ba-b020-4dba-88ae-94968bbd83de
 feature: GraphQL, Orders, Rewards, Shopping Cart
 role: Admin
 ---

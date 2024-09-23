@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-39711: Unable to access customers grid after deleting website'
 description: The MDVA-39711 patch fixes the issue where the Admin user cannot access the customers' grid after deleting the website. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is installed. The patch ID is MDVA-39711. Please note that the issue was fixed in Adobe Commerce 2.4.3.
-exl-id: 46bef304-9360-4b69-b064-631725de381c
 feature: Configuration
 role: Admin
 ---

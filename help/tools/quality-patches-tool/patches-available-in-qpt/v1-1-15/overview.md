@@ -1,7 +1,6 @@
 ---
 title: 'Overview: [!DNL Quality Patches Tool] (QPT) v1.1.15'
 description: This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.15.
-exl-id: ce7d9142-9338-431e-88ce-630ad692c5eb
 feature: Tools and External Services
 role: Admin
 ---

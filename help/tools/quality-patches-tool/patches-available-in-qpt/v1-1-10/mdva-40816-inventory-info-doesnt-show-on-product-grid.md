@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-40816: Inventory data not shown on product grid'
 description: The MDVA-40816 patch solves the issue where inventory information is not displayed on the product grid if a product SKU contains special characters. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10 is installed. The patch ID is MDVA-40816. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 88c05c88-33be-4d72-a302-23a1510c401c
 feature: Admin Workspace, Inventory, Orders, Products
 role: Admin
 ---

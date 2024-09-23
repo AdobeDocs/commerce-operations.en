@@ -1,7 +1,6 @@
 ---
 title: "MDVA-43718: 'consumer isn't authorized to access resources' error appears when accessing shared catalog"
 description: The MDVA-43718 patch solves the issue where the error *consumer isn't authorized to access %resources.* appears when accessing a shared catalog from a custom integration. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 is installed. The patch ID is MDVA-43718. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: fa783ed4-906e-4ee6-b82a-cfe6db5ae89e
 feature: Catalog Management
 role: Admin
 ---

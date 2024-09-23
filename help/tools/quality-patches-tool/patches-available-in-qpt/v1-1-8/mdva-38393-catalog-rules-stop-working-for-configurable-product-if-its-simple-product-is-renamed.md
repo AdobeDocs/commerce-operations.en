@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-38393: Catalog rules stop working for configurable product if its simple product is re-named'
 description: The MDVA-38393 patch fixes the issue where catalog rules stop working for a configurable product if its simple product is re-named. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 is installed. The patch ID is MDVA-38393. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
-exl-id: a20856c4-8aff-427b-a404-7afe706be06f
 feature: Catalog Management, Categories, Configuration, Products
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47107: catalog price rule is applied to custom options'
 description: Apply the ACSD-47107 patch to fix the Adobe Commerce issue where catalog price rule is applied to custom options.
-exl-id: 5de2a87e-90c1-4a2a-a75c-7f9ca766868e
 feature: Catalog Management, Orders, Price Rules
 role: Developer
 ---

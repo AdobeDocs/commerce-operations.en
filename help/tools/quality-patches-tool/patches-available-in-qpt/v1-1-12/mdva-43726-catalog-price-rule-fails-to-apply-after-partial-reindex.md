@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-43726: Catalog price rule fails to apply after partial reindex'
 description: The MDVA-43726 patch fixes the issue where the catalog price rule based on store-level attribute match fails to apply after partial reindex. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-43726. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 70e7e1d2-e601-4fed-9274-a1a619de29e1
 feature: Catalog Management, Categories, Orders, Price Rules
 role: Admin
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-25631: Unable to save and refresh customer segments'
 description: The MDVA-25631 patch solves the issue where users are not able to save and refresh customer segments that contain a large number of customers. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is installed. The patch ID is MDVA-25631. Please note that the issue was fixed in Adobe Commerce 2.4.2.
-exl-id: 4250824b-e347-4ca4-8eaf-4de4d091bfc4
 feature: Customer Service
 role: Admin
 ---

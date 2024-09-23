@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-41164: Cannot save or edit Company with custom customer attributes'
 description: The MDVA-41164 patch solves the issue where the admin user is not able to save or edit a company with custom customer attributes of files or images of any type. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is installed. The patch ID is MDVA-41164. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
-exl-id: 24338895-68b4-404c-bedd-46cfc7e983a0
 feature: Admin Workspace, Attributes, B2B, Companies
 role: Developer
 ---

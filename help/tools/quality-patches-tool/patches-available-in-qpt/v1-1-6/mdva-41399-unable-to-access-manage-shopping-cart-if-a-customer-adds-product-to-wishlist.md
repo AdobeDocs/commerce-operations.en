@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-41399: Unable to access the Manage Shopping Cart if a customer adds product to wishlist'
 description: The MDVA-41399 patch solves the issue where admin users are unable to access the Manage Shopping Cart page if a customer adds a product to the wishlist. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-41399. Please note that the issue was fixed in Adobe Commerce 2.4.2.
-exl-id: 227653c6-2d20-4475-b973-b9fa58db815b
 feature: Orders, Products, Shopping Cart
 role: Admin
 ---

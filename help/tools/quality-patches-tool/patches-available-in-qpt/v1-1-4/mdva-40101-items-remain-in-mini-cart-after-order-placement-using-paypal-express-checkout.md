@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-40101: Items remain mini-cart after order placement PayPal Express Checkout'
 description: The MDVA-40101 patch fixes the issue where items are not removed from the mini-cart after a successful order placement using PayPal Express Checkout. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is installed. The patch ID is MDVA-40101. Please note that the issue was fixed in Adobe Commerce 2.4.0.
-exl-id: d640dfcd-6fb6-4cc6-8817-3ae19aa59bed
 feature: Checkout, Orders, Payments, Shopping Cart
 role: Admin
 ---

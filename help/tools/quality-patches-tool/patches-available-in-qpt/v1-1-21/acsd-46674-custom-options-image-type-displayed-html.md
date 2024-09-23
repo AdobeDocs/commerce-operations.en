@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-46674: custom options of image type displayed as HTML in customer emails'
 description: Apply the ACSD-46674 patch to fix the Adobe Commerce issue where custom options of image type displayed as HTML in customer emails.
-exl-id: b4941dd0-bb3a-4805-9631-1d256a92f461
 feature: Communications, Personalization
 role: Developer
 ---

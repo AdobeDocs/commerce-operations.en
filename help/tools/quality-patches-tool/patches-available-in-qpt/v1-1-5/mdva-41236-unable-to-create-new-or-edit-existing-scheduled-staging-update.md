@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-41236: Unable to create new or edit existing scheduled updates for product'
 description: The MDVA-41236 patch fixes the issue where users are unable to create new or edit existing scheduled updates for the product if the "End Date" has been previously removed. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is installed. The patch ID is MDVA-41236. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 00d6c0af-f248-49f6-aaa2-3ae3c0294832
 feature: Products, Staging
 role: Admin
 ---

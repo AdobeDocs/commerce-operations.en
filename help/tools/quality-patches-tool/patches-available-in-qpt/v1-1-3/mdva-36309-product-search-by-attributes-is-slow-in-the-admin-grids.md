@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-36309: Products search by attributes is slow in admin grids'
 description: The MDVA-36309 patch solves the issue where the products search by attributes is slow in the admin grids. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 is installed. The patch ID is MDVA-36309. Please note that the issue was fixed in Adobe Commerce 2.4.3.
-exl-id: 5e6b426b-201d-44a2-8c03-8ed5de8ed203
 feature: Admin Workspace, Attributes, Products, Search
 role: Admin
 ---

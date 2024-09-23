@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-42689: Users get Integrity Constraint Violation error while updating product categories during import'
 description: The MDVA-42689 patch solves the issue where users get an Integrity Constraint Violation error while updating product categories during import. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-42689. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 7beff3bb-9313-43dc-be96-e33eff52a38e
 feature: Categories, Data Import/Export, Products
 role: Admin
 ---

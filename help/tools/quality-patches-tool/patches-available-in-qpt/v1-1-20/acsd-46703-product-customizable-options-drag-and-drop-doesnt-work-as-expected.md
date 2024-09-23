@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-46703:  Product customization drag and drop does not work'
 description: This article provides a solution for the issue where the product customizable options drag and drop does not work as expected.
-exl-id: 49b29495-d225-4f34-ac76-b7294a86aea6
 feature: Products
 role: Developer
 ---

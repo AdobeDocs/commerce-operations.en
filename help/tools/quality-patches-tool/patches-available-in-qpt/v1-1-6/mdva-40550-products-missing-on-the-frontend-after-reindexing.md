@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-40550: Products missing on the frontend after reindexing'
 description: The MDVA-40550 patch solves the issue where reindexing results in some or all of storefront categories missing products. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-40550. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
-exl-id: 0aca6eb2-6eb2-4ac4-8ae1-052f671c14e5
 feature: Categories, Console, Products
 role: Admin
 ---

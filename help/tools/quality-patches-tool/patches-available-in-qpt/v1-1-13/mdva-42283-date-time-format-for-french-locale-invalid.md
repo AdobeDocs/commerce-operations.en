@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-42283: Date-time format for French locale is invalid'
 description: The MDVA-42283 patch fixes the issue where the date-time format in the admin order grid for the French locale is invalid. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is installed. The patch ID is MDVA-42283. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
-exl-id: 9b470e7b-4b73-4100-9a9d-1a45a5ac628b
 feature: CMS
 role: Admin
 ---

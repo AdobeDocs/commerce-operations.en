@@ -1,7 +1,6 @@
 ---
 title: "MDVA-40262: GraphQL queries don't show in popular search terms in admin"
 description: The MDVA-40262 Adobe Commerce quality patch fixes the issue where GraphQL search queries are not shown in popular search terms in the admin. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 is installed. The patch ID is MDVA-40262. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
-exl-id: 7157e47d-a042-4462-96ed-23203a3213bd
 feature: Admin Workspace, GraphQL, Search
 role: Admin
 ---

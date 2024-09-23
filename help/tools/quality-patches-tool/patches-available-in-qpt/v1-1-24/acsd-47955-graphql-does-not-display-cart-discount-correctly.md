@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47955: GraphQL does not display cart discount correctly'
 description: Apply the ACSD-47955 patch to fix the Adobe Commerce issue where GraphQL does not display the cart discount correctly.
-exl-id: 76b64f1c-9b69-4e8d-a93a-d6a355284105
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
 ---

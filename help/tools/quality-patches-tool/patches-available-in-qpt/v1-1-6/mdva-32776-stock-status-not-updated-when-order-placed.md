@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-32776: Stock status not updated with order placement'
 description: The MDVA-32776 patch fixes the issue where the stock status is not updated when an order is placed but not shipped. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 is installed. The patch ID is MDVA-32776. Please note that the issue was fixed in Adobe Commerce 2.4.2.
-exl-id: 10e9458f-562a-480b-b813-104a93db4308
 feature: Orders
 role: Admin
 ---

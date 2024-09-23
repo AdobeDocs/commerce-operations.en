@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47920: a guest user can place orders via REST API even when [!UICONTROL Allow Guest Checkout] is off'
 description: Apply the ACSD-47920 patch to fix the Adobe Commerce issue where orders can be placed via REST API as a guest user even when the [!UICONTROL Allow Guest Checkout] is turned off.
-exl-id: 8726eac4-ab19-4232-8e15-270d09bdc0a5
 feature: REST, Checkout, Orders
 role: Admin
 ---

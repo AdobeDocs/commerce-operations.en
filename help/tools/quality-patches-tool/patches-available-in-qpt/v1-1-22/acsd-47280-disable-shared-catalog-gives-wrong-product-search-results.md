@@ -1,7 +1,6 @@
 ---
 title: '[!DNL ACSD-47280]: Disable shared catalog gives wrong product search results'
 description: Apply the [!DNL ACSD-47280] patch to fix displaying the correct search results when the shared catalog feature is disabled.
-exl-id: 98bbae42-fd68-4b54-823d-189d742cc35f
 ---
 # [!DNL ACSD-47280]: Disabling shared catalog gives wrong product search results
 

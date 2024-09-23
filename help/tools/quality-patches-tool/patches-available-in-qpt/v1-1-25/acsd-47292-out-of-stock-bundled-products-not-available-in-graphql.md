@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-47292: out-of-stock bundled products are not available in GraphQL response'
 description: Apply the ACSD-47292 patch to fix the Adobe Commerce issue where the out-of-stock bundled products are not available in the GraphQL response even if the "show out-of-stock products" is set to Yes.
-exl-id: 377dc62f-d1cd-4292-b25d-53c498b772a9
 feature: Admin Workspace, Categories, GraphQL, Orders, Products
 role: Admin
 ---

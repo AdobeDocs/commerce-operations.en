@@ -1,7 +1,6 @@
 ---
 title: "ACSD-46541: An admin user cannot create a credit memo if an order item is deleted"
 description: Apply the ACSD-46541 patch to fix the Adobe Commerce issue where once a product is deleted you cannot create a credit memo in the Adobe Commerce Admin.
-exl-id: ff3f8f21-76c1-41b5-bf02-349403a46fc1
 feature: Admin Workspace, Orders, Returns
 role: Admin
 ---

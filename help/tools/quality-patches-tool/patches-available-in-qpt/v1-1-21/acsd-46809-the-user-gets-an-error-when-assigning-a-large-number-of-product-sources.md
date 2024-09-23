@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-46809: The user gets an error when assigning a large number of product sources'
 description: Apply the ACSD-46809 patch to fix the Adobe Commerce issue where the user gets an error when assigning a large number of product sources.
-exl-id: c67d7981-37fe-433a-b818-56a5b391082d
 feature: Products
 role: Admin
 ---

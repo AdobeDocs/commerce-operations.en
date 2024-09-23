@@ -1,7 +1,6 @@
 ---
 title: "ACSD-46581: Estimated tax total is not updated after selecting a country in the shopping cart"
 description: Apply the ACSD-46581 patch to solve the Adobe Commerce issue where the tax rate does not get updated after switching the country in the shopping cart.
-exl-id: 17334f7b-e5a2-4091-8196-eff80875c003
 feature: Orders, Shopping Cart
 role: Admin
 ---

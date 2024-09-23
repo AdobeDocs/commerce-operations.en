@@ -1,7 +1,6 @@
 ---
 title: "ACSD-47106: new custom attribute on company creation page not saved"
 description: Apply the ACSD-47106 patch to fix the Adobe Commerce issue where a value cannot be saved in a new custom attribute on a company creation page.
-exl-id: 941d6d8f-36eb-4b50-980f-e4afe6bf33df
 feature: Attributes, B2B, Companies
 role: Developer
 ---

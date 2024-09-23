@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-46770: order confirmation email is sent even when [!UICONTROL Email Order Confirmation] is unchecked'
 description: Apply the ACSD-46770 patch to fix the Adobe Commerce issue where order confirmation emails are sent even when [!UICONTROL Email Order Confirmation] is not selected.
-exl-id: 9cbf3a57-1f59-4030-b432-0e6cad410a27
 feature: Communications, Orders
 role: Admin
 ---

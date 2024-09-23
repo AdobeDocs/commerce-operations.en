@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-39986: Unable to place orders in admin in Safari browser on macOS'
 description: The MDVA-39986 patch fixes the issue where users are unable to place orders in the admin using the Safari browser on macOS. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is installed. The patch ID is MDVA-39986. Please note that the issue was fixed in Adobe Commerce 2.4.3.
-exl-id: a35b6253-e03f-4bdb-a3a3-fceb70588c6e
 feature: Admin Workspace, Orders
 role: Admin
 ---

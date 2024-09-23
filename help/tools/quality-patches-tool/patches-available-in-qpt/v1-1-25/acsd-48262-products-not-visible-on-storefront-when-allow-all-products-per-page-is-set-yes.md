@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-48262: products not visible on storefront when [!UICONTROL Allow All Products Per Page] is set [!UICONTROL Yes]'
 description: Apply the ACSD-48262 patch to fix the Adobe Commerce issue where products are not visible on the storefront when the [!UICONTROL Allow All Products Per Page] setting is set to [!UICONTROL Yes].
-exl-id: 327cad03-441d-4adb-8a10-802f06d3fcd1
 feature: Admin Workspace, Cache, Categories, Orders, Products, Storefront
 role: Admin
 ---

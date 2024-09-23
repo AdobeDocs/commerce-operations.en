@@ -1,7 +1,6 @@
 ---
 title: 'MC-42528: GraphQL query of categoryList shows all categories'
 description: The MC-42528 patch solves the issue where the GraphQL query of `categoryList` returns both assigned and unassigned categories when the Browsing Category of a particular category is set to "Deny". This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is installed. The patch ID is MC-42528. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
-exl-id: 8bb29f43-92ae-4f37-b147-7121b55c185b
 feature: Catalog Management, Categories, GraphQL, Customer Service
 role: Admin
 ---

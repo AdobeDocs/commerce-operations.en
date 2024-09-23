@@ -1,7 +1,6 @@
 ---
 title: 'MDVA-44562: Store id for quote items overridden by default store id'
 description: The MDVA-44562 patch fixes the issue where the default store id overrides the store id for quote items for GraphQL requests. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16 is installed. The patch ID is MDVA-44562. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
-exl-id: 902bfc05-411d-4a6c-a6e8-cd7376629b0c
 feature: Quotes
 role: Admin
 ---
