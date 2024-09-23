@@ -1,7 +1,6 @@
 ---
 title: Patches available in QPT tool overview
 description: This article provides an overview of [!DNL Quality Patches Tool] (QPT) and links to resources explaining how to use it.
-exl-id: ac1c6088-44fe-452c-a39b-3c35697e1cc3
 feature: Support, Tools and External Services
 role: Admin
 ---
