@@ -9,7 +9,7 @@ exl-id: 1f45c700-dd27-4a69-8634-9c0aa131d197
 
 >[!NOTE]
 >
->This patch is outdated and has been replaced by the [ACSD-54776](/help/support-tools/patches-available-in-qpt-tool/v1-1-39/acsd-54776-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md) patch added in the 1.1.39 QPT release.
+>This patch is outdated and has been replaced by the [ACSD-54776](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54776-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md) patch added in the 1.1.39 QPT release.
 
 The ACSD-51984 patch fixes the issue where the unchecked **[!UICONTROL Use Default Value]** and non-default product field values are not saved for the second website, store, and store view. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.35 is installed. The patch ID is ACSD-51984. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 

@@ -7,7 +7,7 @@ exl-id: e5822c54-4e77-46b0-84b6-5e25c3845974
 
 >[!NOTE]
 >
->This patch is replaced by [ACSD-55628](/help/support-tools/patches-available-in-qpt-tool/v1-1-42/acsd-55628-upload-file-company-registration-form-replace-file-customer-attribute-storefront.md).
+>This patch is replaced by [ACSD-55628](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-55628-upload-file-company-registration-form-replace-file-customer-attribute-storefront.md).
 
 The ACSD-51240 patch fixes the issue where the uploaded file is missing while registering via company registration form. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33 is installed. The patch ID is ACSD-51240. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7. 
 
