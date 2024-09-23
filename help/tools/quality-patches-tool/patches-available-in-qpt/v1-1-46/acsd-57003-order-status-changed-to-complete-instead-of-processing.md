@@ -3,7 +3,6 @@ title: 'ACSD-57003: Order status changes to *Complete* instead of changing to *P
 description: Apply the ACSD-57003 patch to fix the Adobe Commerce issue where the order status changes to *Complete* instead of changing to *Processing*.
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
-exl-id: c3c59185-c447-46fa-b404-6c4a4a300315
 ---
 # ACSD-57003: Order status changes to *Complete* instead of changing to *Processing*
 

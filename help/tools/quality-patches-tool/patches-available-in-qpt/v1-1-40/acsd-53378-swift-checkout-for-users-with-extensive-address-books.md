@@ -3,7 +3,6 @@ title: 'ACSD-53378: Enhanced checkout experience for customers with extensive ad
 description: Apply the ACSD-53378 patch to fix the Adobe Commerce issue where there are performance issues caused by large customer address volumes.
 feature: Customers, Checkout
 role: Admin
-exl-id: 561462fd-844b-40e0-9ccd-25f7aa9be161
 ---
 # ACSD-53378: Enhanced checkout experience for customers with extensive address books
 

@@ -3,7 +3,6 @@ title: 'ACSD-54776: Unchecked [!UICONTROL Use Default Value] and non-default pro
 description: Apply the ACSD-54776 patch to fix the Adobe Commerce issue where the unchecked [!UICONTROL Use Default Value] and non-default product field values are not saved for the second website, store, and store view.
 feature: Products
 role: Admin, Developer
-exl-id: 5bdad804-8d7b-48b4-ba3b-c2d5387ef55e
 ---
 # ACSD-54776: Unchecked *[!UICONTROL Use Default Value]* and non-default product field values are not saved
 

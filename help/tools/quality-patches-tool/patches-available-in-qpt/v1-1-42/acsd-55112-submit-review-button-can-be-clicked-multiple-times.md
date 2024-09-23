@@ -3,7 +3,6 @@ title: 'ACSD-55112: [!UICONTROL Sumbit Review] button can be clicked multiple ti
 description: Apply the ACSD-55112 patch to fix the Adobe Commerce issue where the [!UICONTROL Submit Review] button can be clicked multiple times without [!DNL Google reCAPTCHA v3] validation.
 feature: Products
 role: Admin, Developer
-exl-id: db202472-1d96-4ac0-8ecd-eab84c9f4cbf
 ---
 # ACSD-55112: The [!UICONTROL Submit Review] button can be clicked multiple times
 

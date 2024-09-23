@@ -3,7 +3,6 @@ title: 'ACSD-52801: GraphQL product filter query not showing partial match resul
 description: Apply the ACSD-52801 patch to fix the Adobe Commerce issue where the GraphQL product filter query not showing partial match results.
 feature: Products
 role: Admin, Developer
-exl-id: a03a4d09-ebec-4ad0-a875-48e000a29b44
 ---
 # ACSD-52801: GraphQL product filter query not showing partial match results
 

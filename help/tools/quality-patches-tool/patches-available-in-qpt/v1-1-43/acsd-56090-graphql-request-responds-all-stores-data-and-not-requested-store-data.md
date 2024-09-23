@@ -3,7 +3,6 @@ title: 'ACSD-56090: GraphQL response is not store specific'
 description: Apply the ACSD-56090 patch to fix the Adobe Commerce issue where the GraphQL response contains all stores data instead of the store specific data.
 feature: GraphQL
 role: Admin, Developer
-exl-id: 129491e0-1a77-4ccc-8aba-cd0afdb26176
 ---
 # ACSD-56090: GraphQL response is not store specific
 

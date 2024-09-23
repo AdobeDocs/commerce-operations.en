@@ -3,7 +3,6 @@ title: 'ACSD-46938: Performance issues with DB triggers during `setup:upgrade`'
 description: Apply the ACSD-46938 patch to fix the Adobe Commerce issue where the `setup:upgrade` command changes the indexer mode from schedule to save, causing significant performance slowdowns.
 feature: Upgrade
 role: Admin, Developer
-exl-id: 967727ed-f490-4233-a2b0-fcb2fa3f964b
 ---
 # ACSD-46938: Performance issues with DB triggers during `setup:upgrade`
 

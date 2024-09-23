@@ -3,7 +3,6 @@ title: 'ACSD-54965: [!UICONTROL Visual Merchandising] grid does not display the 
 description: Apply the ACSD-54965 patch to fix the Adobe Commerce issue where the [!UICONTROL Visual Merchandising] grid does not display the correct stock when a product is assigned to custom stock.
 feature: Merchandising, Categories
 role: Admin, Developer
-exl-id: 13d98f55-ca2c-4064-b66f-ab2cdeb37382
 ---
 # ACSD-54965: [!UICONTROL Visual Merchandising] grid does not display the correct stock
 

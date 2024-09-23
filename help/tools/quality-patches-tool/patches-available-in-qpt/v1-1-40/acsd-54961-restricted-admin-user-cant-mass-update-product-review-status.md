@@ -3,7 +3,6 @@ title: "ACSD-54961: Restricted admin user can't mass update [!UICONTROL Product 
 description: Apply the ACSD-54961 patch to fix the Adobe Commerce issue where a restricted admin user can't mass update Product Review status.
 feature: Products
 role: Admin, Developer
-exl-id: 26c5bacd-21de-4533-a7b6-4acbacd38fec
 ---
 # ACSD-54961: Restricted admin user can't mass update [!UICONTROL Product Review status]
 

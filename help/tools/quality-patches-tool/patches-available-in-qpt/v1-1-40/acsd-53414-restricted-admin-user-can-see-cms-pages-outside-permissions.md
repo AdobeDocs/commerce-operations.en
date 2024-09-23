@@ -3,7 +3,6 @@ title: 'ACSD-53414: Restricted admin users can see CMS pages outside their permi
 description: Apply the ACSD-53414 patch to fix the Adobe Commerce issue where a restricted admin user can see CMS pages outside of their permissions scope.
 feature: CMS
 role: Admin, Developer
-exl-id: f8540d52-a3bb-49bb-8868-7b1db03e571b
 ---
 # ACSD-53414: Restricted admin users can see CMS pages outside their permissions scope
 

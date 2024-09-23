@@ -3,7 +3,6 @@ title: 'ACSD-53643: Order has an incorrect total when placing a purchase order'
 description: Apply the ACSD-53643 patch to fix the Adobe Commerce issue where the order has an incorrect total when placing a purchase order with disabled or out-of-stock products.
 feature: B2B
 role: Admin, Developer
-exl-id: 9843e07a-8a17-401e-98bc-559df5148d34
 ---
 # ACSD-53643: Order has an incorrect total when placing a purchase order
 

@@ -3,7 +3,6 @@ title: 'ACSD-53790: Multiple RMAs for a single product can be created via Rest A
 description: Apply the ACSD-53790 patch to fix the Adobe Commerce issue where multiple RMAs for a single product can be created via Rest API.
 feature: REST, Products
 role: Admin, Developer
-exl-id: abb0c3d0-0f0d-4012-99c8-e97e81dba8c8
 ---
 # ACSD-53790: Multiple RMAs for a single product can be created via Rest API
 

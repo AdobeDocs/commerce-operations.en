@@ -3,7 +3,6 @@ title: 'ACSD-54040: The [!UICONTROL Created] field is blank in order details whe
 description: Apply the ACSD-54040 patch to fix the Adobe Commerce issue where the [!UICONTROL Created] field is blank on the order details page when B2B modules are enabled.
 feature: B2B
 role: Admin, Developer
-exl-id: 5c420b94-43e1-40ac-9482-8a2d42f173d9
 ---
 # ACSD-54040: *[!UICONTROL Created]* field is blank in order details when B2B modules are enabled.
 

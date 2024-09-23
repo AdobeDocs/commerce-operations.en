@@ -3,7 +3,6 @@ title: 'ACSD-56158: Wrong tax value in GraphQL response when multiple tax rules 
 description: Apply the ACSD-56158 patch to fix the Adobe Commerce issue where the tax value rendering in the GraphQL response is incorrect when multiple tax rules are applied to the cart.
 feature: GraphQL, Taxes
 role: Admin, Developer
-exl-id: 0f030b35-372f-46ce-8f67-29e4b6dd3527
 ---
 # ACSD-56158: Wrong tax value in GraphQL response when multiple tax rules applied to cart
 

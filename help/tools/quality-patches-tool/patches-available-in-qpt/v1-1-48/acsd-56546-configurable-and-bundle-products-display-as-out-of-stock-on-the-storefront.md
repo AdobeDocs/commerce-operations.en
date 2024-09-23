@@ -3,7 +3,6 @@ title: 'ACSD-56546: Configurable and bundle products display as out of stock on 
 description: Apply the ACSD-56546 patch to fix the Adobe Commerce issue where the configurable and bundle products display as out of stock on the storefront when the *[!UICONTROL Display Out of Stock Products]* configuration option is disabled.
 feature: Storefront, Products
 role: Admin, Developer
-exl-id: 488e2c69-442f-45e1-aa8f-71d9c0a93950
 ---
 # ACSD-56546: Configurable and bundle products display as out of stock on the storefront
 

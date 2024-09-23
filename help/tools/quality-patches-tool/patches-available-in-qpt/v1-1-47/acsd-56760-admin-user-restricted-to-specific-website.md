@@ -2,7 +2,6 @@
 title: 'ACSD-56760: Admin user is restricted to a specific website and is unable to sort or add new products'
 description: Apply the ACSD-56760 patch to fix the Adobe Commerce issue where the the Admin user that is restricted to a specific website and is unable to sort or add new products inside a category in case the web store has it's own root category.
 role: Admin
-exl-id: fc1898ce-dcd7-4c0b-bef0-445219e8455f
 ---
 # ACSD-56760: Admin user is restricted to a specific website and is unable to sort or add new products
 

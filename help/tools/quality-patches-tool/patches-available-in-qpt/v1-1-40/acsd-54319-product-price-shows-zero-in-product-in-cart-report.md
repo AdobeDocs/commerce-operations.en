@@ -3,7 +3,6 @@ title: 'ACSD-54319: Product price shows zero in *[!UICONTROL Products in Carts]*
 description: Apply the ACSD-54319 patch to fix the Adobe Commerce issue where the product price shows zero in *[!UICONTROL Products in Carts]* report
 feature: Reporting, Products
 role: Admin, Developer
-exl-id: f53b3ed3-d5d5-461c-bba2-4f9f3f038580
 ---
 # ACSD-54319: Product price shows zero in *[!UICONTROL Products in Carts]* report
 

@@ -3,7 +3,6 @@ title: 'ACSD-54007: Undefined array key _scope error on importing customer data'
 description: Apply the ACSD-54007 patch to fix the Adobe Commerce issue where an Undefined array key _scope error displays when importing customer data.
 feature: Data Import/Export
 role: Admin, Developer
-exl-id: b14a14fd-5021-460f-8ca9-c9845859df97
 ---
 # ACSD-54007: Undefined array key _scope error on importing customer data
 
@@ -38,7 +37,7 @@ You get no errors.
 
 <u>Actual results</u>:
 
-You get the following error:  *Warning: Undefined array key “_scope" in /var/www/html/vendor/magento/module-customer-import-export/Model/ResourceModel/Import/CustomerComposite/Data.php on line 84*
+You get the following error:  *Warning: Undefined array key "_scope" in /var/www/html/vendor/magento/module-customer-import-export/Model/ResourceModel/Import/CustomerComposite/Data.php on line 84*
 
 ## Apply the patch
 

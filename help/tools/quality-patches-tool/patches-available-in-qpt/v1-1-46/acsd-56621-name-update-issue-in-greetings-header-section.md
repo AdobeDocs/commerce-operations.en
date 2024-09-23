@@ -3,7 +3,6 @@ title: 'ACSD-56621: Updated names not displayed in greetings header for company 
 description: Apply the ACSD-56621 patch to fix the Adobe Commerce issue where the updated first name and last name of the company admin user are not reflected in the greetings header section.
 feature: Companies, B2B, User Account
 role: Admin, Developer
-exl-id: 4ad9c878-b617-4e6a-939c-be15faf7124b
 ---
 # ACSD-56621: Updated names not displayed in greetings header for company admin user
 

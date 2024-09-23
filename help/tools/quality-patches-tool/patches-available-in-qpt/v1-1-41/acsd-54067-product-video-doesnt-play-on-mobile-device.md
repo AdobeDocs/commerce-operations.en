@@ -3,7 +3,6 @@ title: 'ACSD-54067: Product video does not play on mobile device'
 description: Apply the ACSD-54067 patch to fix the Adobe Commerce issue where a product video doesn't play on a mobile device.
 feature: Media, Products
 role: Admin, Developer
-exl-id: 369650ef-bcce-47c5-bbfe-39f3c2b1d73f
 ---
 # ACSD-54067: Product video doesn't play on a mobile device
 

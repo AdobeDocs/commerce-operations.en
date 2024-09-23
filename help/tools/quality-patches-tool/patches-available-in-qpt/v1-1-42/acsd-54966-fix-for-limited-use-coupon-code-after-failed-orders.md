@@ -3,7 +3,6 @@ title: 'ACSD-54966: Fix for reusing coupon codes after failed orders'
 description: Apply the ACSD-54966 patch to fix the Adobe Commerce issue preventing the reuse of coupon codes limited per promotions and shopping cart following a previously failed order.
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
-exl-id: 931cfe7a-30a3-4a7d-ada5-4e2d7084f3e1
 ---
 # ACSD-54966: Fix for reusing coupon codes after failed orders
 

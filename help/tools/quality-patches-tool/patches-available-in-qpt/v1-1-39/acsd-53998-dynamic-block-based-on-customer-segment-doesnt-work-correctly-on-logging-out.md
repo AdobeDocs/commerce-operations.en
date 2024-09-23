@@ -3,7 +3,6 @@ title: 'ACSD-53998: Dynamic block based on customer segment works incorrectly af
 description: Apply the ACSD-53998 patch to fix the Adobe Commerce issue where a dynamic block based on a customer segment doesn't work correctly after logging out from a customer account.
 feature: Customers, Page Builder, Personalization
 role: Admin, Developer
-exl-id: 5a82a6b8-e8f7-47ff-89f6-93a39b72fe38
 ---
 # ACSD-53998: Dynamic block based on customer segment works incorrectly after logging out
 

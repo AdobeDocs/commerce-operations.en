@@ -3,7 +3,6 @@ title: 'ACSD-53658: **[!UICONTROL Recently Viewed Product]** data not updated pr
 description: Apply the ACSD-53658 patch to fix the Adobe Commerce issue where **[!UICONTROL Recently Viewed Product]** data is not updated properly in the store view.
 feature: CMS, Personalization
 role: Admin, Developer
-exl-id: 4086dcee-37e5-4393-9048-ce19a2d248e9
 ---
 # ACSD-53658: **[!UICONTROL Recently Viewed Product]** data not updated properly in the store view
 

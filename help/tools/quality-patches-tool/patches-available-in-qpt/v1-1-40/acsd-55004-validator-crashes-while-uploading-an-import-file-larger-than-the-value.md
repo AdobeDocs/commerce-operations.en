@@ -3,7 +3,6 @@ title: 'ACSD-55004: Validator crashes while uploading an import file larger than
 description: Apply the ACSD-55004 patch to fix the Adobe Commerce issue where a validator crashes while uploading an import file larger than the value configured in `php.ini`.
 feature: Data Import/Export
 role: Admin, Developer
-exl-id: 03b7667e-9b5b-4319-9135-dbc7fda7861d
 ---
 # ACSD-55004: Validator crashes while uploading an import file larger than the value 
 

@@ -3,7 +3,6 @@ title: "ACSD-55427: An admin cannot unassign product from **[!UICONTROL Product 
 description: Apply the ACSD-55427 patch to fix the Adobe Commerce issue where a product cannot be unassigned from **[!UICONTROL Product in Shared Catalogs]**.
 feature: Products, B2B
 role: Admin, Developer
-exl-id: 1e08def1-07f6-42e0-b600-9f0bfdd6477a
 ---
 # ACSD-55427: An admin cannot unassign product from **[!UICONTROL Product in Shared Catalogs]** on the product's page
 

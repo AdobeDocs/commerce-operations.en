@@ -3,7 +3,6 @@ title: 'ACSD-54885: Exception during multiple address checkout when admin logs i
 description: Apply the ACSD-54885 patch to fix the Adobe Commerce issue where an error occurs during multiple address checkout when the admin is using the *[!UICONTROL Login as Customer]* functionality.
 feature: Checkout
 role: Admin, Developer
-exl-id: 524ec96b-1465-4673-9fbe-1a9c086b7e87
 ---
 # ACSD-54885: Exception during multiple address checkout when admin logs in as customer
 

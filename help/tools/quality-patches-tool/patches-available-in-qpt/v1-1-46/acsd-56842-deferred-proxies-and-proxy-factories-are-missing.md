@@ -3,7 +3,6 @@ title: 'ACSD-56842: Deferred proxies and proxy factories are missing after runni
 description: Apply the ACSD-56842 patch to fix the Adobe Commerce issue where the deferred proxies and proxy factories are missing after running `setup:di:compile`.
 feature: Deploy, Catalog Management
 role: Admin, Developer
-exl-id: 2d12e36c-d8b7-4253-91d8-28b50477ccd9
 ---
 # ACSD-56842: Deferred proxies and proxy factories are missing after running `setup:di:compile`
 

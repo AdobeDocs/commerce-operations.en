@@ -3,7 +3,6 @@ title: 'ACSD-55414: Bad performance when MariaDB tries to cast the entitys_ids'
 description: Apply the ACSD-55414 patch to fix the Adobe Commerce issue when the MariaDB tries to convert `entitys_ids` from string to integer, it hampers the performance of reindexing.
 feature: Attributes
 role: Admin, Developer
-exl-id: 008a4fda-5d80-47e2-8fb4-c1e39d15a6ba
 ---
 # ACSD-55414: Bad performance when MariaDB tries to cast the `entitys_ids`
 

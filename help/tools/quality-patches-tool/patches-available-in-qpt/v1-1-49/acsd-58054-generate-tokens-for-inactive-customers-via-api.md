@@ -3,7 +3,6 @@ title: 'ACSD-58054: API token generation for inactive customers'
 description: Apply the ACSD-58054 patch to fix the Adobe Commerce issue where it is possible to generate customer tokens for inactive customers via API.
 feature: Customers, API Mesh
 role: Admin, Developer
-exl-id: 8c95ff8e-94b1-453a-9bb8-388612b6408f
 ---
 # ACSD-58054: API token generation for inactive customers
 

@@ -3,7 +3,6 @@ title: 'ACSD-56741: Troubleshooting database setup errors with custom MySQL trig
 description: Apply the ACSD-56741 patch to fix the Adobe Commerce issue where an error message *Trying to access array offset on value of type null* appears during `setup:upgrade` due to a custom MySQL trigger in the database unrelated to indexation and [!DNL MView].
 feature: Install
 role: Admin, Developer
-exl-id: 97839140-03c5-44f0-ba75-935d62f5bf90
 ---
 # ACSD-56741: Troubleshooting database setup errors with custom MySQL triggers
 

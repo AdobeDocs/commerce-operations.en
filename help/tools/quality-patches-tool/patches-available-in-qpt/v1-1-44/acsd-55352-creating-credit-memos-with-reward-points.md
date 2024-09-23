@@ -3,7 +3,6 @@ title: 'ACSD-55352: Creating credit memos with reward points'
 description: Apply the ACSD-55352 patch to fix the Adobe Commerce issue where after creating a partial credit memo with customer reward points, the order status changes to *closed* and credit memo options disappear from the admin order page.
 feature: Checkout, Orders
 role: Admin, Developer
-exl-id: 33ceb2e9-3cd5-4472-941a-e06c5c534f4a
 ---
 # ACSD-55352: Creating credit memos with reward points
 
