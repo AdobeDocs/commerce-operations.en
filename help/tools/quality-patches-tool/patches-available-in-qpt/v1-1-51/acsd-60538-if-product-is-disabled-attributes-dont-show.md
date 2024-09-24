@@ -28,7 +28,7 @@ If a product is disabled in *All Store Views* and enabled only in specific store
 
 <u>Prerequisites</u>:
 
-Inventory module installed.
+Inventory module is installed.
 
 <u>Steps to reproduce</u>:
 
