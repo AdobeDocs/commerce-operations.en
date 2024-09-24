@@ -1,7 +1,7 @@
 ---
 title: "ACSD-60538: If a product is disabled in 'All Store Views', the attributes dont show correctly"
 description: Apply the ACSD-60538 patch to fix the Adobe Commerce issue where if a product is disabled in *All Store Views* and enabled only in specific store view scopes, the product attributes don't show correctly in the GraphQL response, leading to the product not being displayed properly.
-feature: 
+feature: Attributes, GraphQL
 role: Admin, Developer
 ---
 # ACSD-60538: If a product is disabled in *All Store Views*, the attributes don't show correctly in the GraphQL response
