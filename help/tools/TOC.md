@@ -617,6 +617,8 @@ feature: Configuration
             - [ACSD-48210: Store view specific scope attribute overrides global values](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
             - [ACSD-59280: ReflectionUnionType::getName() error in 2.4.4-pX installations](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
             - [ACSD-60303: Admin order placement issue resolved with HTML minification enabled](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
+        - v1.1.51 {#v1-1-51}
+            - [ACSD-60538: If a product is disabled the attributes don't show](/quality-patches-tool/patches-available-in-qpt/v1-1-51/)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Command-line tools reference {#cli-reference}
