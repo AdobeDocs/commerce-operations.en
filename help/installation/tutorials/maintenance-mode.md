@@ -11,10 +11,8 @@ Adobe Commerce uses [maintenance mode](../../configuration/bootstrap/application
 
 The application detects maintenance mode as follows:
 
-*  If `var/.maintenance.flag` does not exist, maintenance mode is off and the application operates normally.
-*  Otherwise, maintenance mode is on unless `var/.maintenance.ip` exists.
-
-   `var/.maintenance.ip` can contain a list of IP addresses. If an entry point is accessed using HTTP and the client IP address corresponds to one of the entries in that list, then maintenance mode is off.
+*  If `var/.maintenance.flag` exists, maintenance mode is on, and the application will return a 503 maintenance page.
+*  If `var/.maintenance.ip` exists, and the client IP corresponds to one of the IP address entries within this file, the maintenance page is ignored for the request.
 
 ## Install the application
 

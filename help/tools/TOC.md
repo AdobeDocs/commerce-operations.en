@@ -123,7 +123,7 @@ feature: Configuration
             - [MDVA-42507: Full-page cache is cleaned after applying staging update for cart rule](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42507-full-page-cache-is-cleaned-after-applying-staging-update-for-cart-rule.md)
             - [MDVA-42657: Unable to select categories in the customer segment conditions](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
             - [MDVA-42806: New company registration email is sent each time existing company is updated](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42806-new-company-registration-email-sent-when-existing-company-updated.md)
-        - v1-1-10 {#v1-1-10}
+        - v1.1.10 {#v1-1-10}
             - [Overview: Quality Patches Tool (QPT) v1.1.10](quality-patches-tool/patches-available-in-qpt/v1-1-10/overview.md)
             - [MDVA-38728: Changing product visibility creates URL rewrite for the main website](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
             - [MDVA-39181: Related product rules show products from category undefined in rule](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
@@ -142,7 +142,7 @@ feature: Configuration
             - [MDVA-42269: Admin user cannot log into Admin due to the "TypeError" error](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
             - [MDVA-42520: Tax rate applied twice when "Enable Cross Border Trade" is used](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42520-tax-rate-applied-twice-when-enable-cross-border-trade-is-used.md)
             - [MDVA-42790: Product price attributes cannot be updated for specific website via REST API](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42790-product-price-attributes-cannot-be-updated-for-specific-website-via-rest-api.md)
-        - v1-1-12 {#v1-1-12}
+        - v1.1.12 {#v1-1-12}
             - [Overview: Quality Patches Tool (QPT) v1.1.12](quality-patches-tool/patches-available-in-qpt/v1-1-12/overview.md)
             - [MDVA-39546: Staging Update start date can be set to a date earlier than current date](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39546-staging-update-start-date-set-to-earlier-date-than-current-date.md)
             - [MDVA-39713: User is able to edit start time of active scheduled update](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39713-user-able-to-edit-start-time-for-active-scheduled-update.md)
@@ -619,6 +619,7 @@ feature: Configuration
             - [ACSD-60303: Admin order placement issue resolved with HTML minification enabled](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
         - v1.1.51 {#v1-1-51}
             - [ACSD-61195: Cart [!DNL GraphQL] request fails to return items on final page](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
+            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Command-line tools reference {#cli-reference}
