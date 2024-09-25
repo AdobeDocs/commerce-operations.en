@@ -11,9 +11,9 @@ This sub-section provides a detailed description of the issues fixed by the patc
 QPT v1.1.51 includes the following patches:
 
 1. **ACSD-59786**: Fixes the issue where GraphQL returns an internal server error when trying to get a Quote ID for an expired quote.
-1. **ACSD-60234**: Fixes the issue where an incorrect amount is shown on [!DNL PayPal] when the discount is applied by the payment method.
+1. **ACSD-60234**: Fixes the issue where an incorrect amount is shown on [!DNL PayPal] when the discount is applied through the payment method.
 1. **ACSD-59967**: Fixes the issue where a JavaScript error prevents [!DNL Google Maps] from rendering correctly.
-1. **ACSD-60326**: Fixes the issue where an error occurs on the GraphQL query for customer return status.
+1. **ACSD-60326**: Fixes the issue where an error occurs in the GraphQL query for customer return status.
 1. **ACSD-60538**: Fixes the issue where if a product is disabled in *[!UICONTROL All Store Views]* and enabled only in specific store view scopes, the product attributes don't show correctly in the GraphQL response, leading to the product not being displayed properly.
 1. **ACSD-60631**: Fixes the issue where GraphQL returns an error when the same simple product is assigned to multiple configurable products.
 1. **ACSD-60632**: Fixes the issue where a new address is saved each time an order placement attempt is made, regardless of whether the order is successfully created or not.
