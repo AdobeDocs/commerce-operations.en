@@ -10,7 +10,7 @@ The following security enhancements in this release improve compiance with the l
 
 >[!NOTE]
 >
->For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-62](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+>For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 <table style="table-layout-auto">
     <tbody>
