@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-60234: Incorrect amount is shown on [!DNL PayPal] when discount is applied'
-description: Apply the ACSD-60234 patch to fix the Adobe Commerce issue where an incorrect amount is shown on [!DNL PayPal] when the discount is applied through the [!UICONTROL Payment Method].
+description: Apply the ACSD-60234 patch to fix the Adobe Commerce issue where an incorrect amount is shown on [!DNL PayPal] when the discount is applied through the payment method.
 feature: Products, Payment
 role: Admin, Developer
 ---
