@@ -1,3 +1,11 @@
+#
+# ADOBE CONFIDENTIAL
+# Copyright 2024 Adobe All Rights Reserved.
+# NOTICE:  All information contained herein is, and remains the property of Adobe and its suppliers, if any.
+# The intellectual and technical concepts contained herein are proprietary to Adobe and its suppliers and are protected by all applicable intellectual property laws, including trade secret and copyright laws.
+# Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from Adobe.
+#
+
 # frozen_string_literal: true
 
 require 'yaml'
@@ -98,4 +106,10 @@ task :image_optim do
   end
 
   system "bundle exec image_optim --recursive --no-svgo #{path}"
+end
+
+desc 'Generate a Azure regions map. Put the input data file in tmp/azure-regions.json. Find the result in tmp/azure-regions.svg.'
+task :azure_regions do
+  sh 'python _scripts/azure_regions.py'
+  sh 'pdf2svg tmp/azure-regions.pdf tmp/azure-regions.svg'
 end
