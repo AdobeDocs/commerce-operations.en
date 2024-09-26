@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-61195: Cart [!DNL GraphQL] request fails to return items on final page
 
-The ACSD-61195 patch fixes the issue where no cart items are returned on the last page for the cart [!DNL GraphQL] request. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.51 is installed. The patch ID is ACSD-61195. Please note that the issue was fixed in Adobe Commerce 2.4.8.
+The ACSD-61195 patch fixes the issue where no cart items are returned on the last page for the cart [!DNL GraphQL] request. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.51 is installed. The patch ID is ACSD-61195. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -16,7 +16,7 @@ The ACSD-61195 patch fixes the issue where no cart items are returned on the las
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.7-p1 - 2.4.8
+* Adobe Commerce (all deployment methods) 2.4.7-p1 - 2.4.7-p2
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Cart [!DNL GraphQL] request fails to return items on final page.
 
 1. Run the following query:
 
-```
+    ```
 cart(cart_id: $cartId) {
     email
     itemsV2(pageSize: 2, currentPage: 3) {
@@ -95,15 +95,15 @@ cart(cart_id: $cartId) {
         }
     }
 }  
-```
+    ```
 
 <u>Expected results</u>:
 
-The query returns the items from the last page.
+The query returns the items on the last page.
 
 <u>Actual results</u>:
 
-```
+    ```
 {
     "data": {
         "cart": {
@@ -120,7 +120,7 @@ The query returns the items from the last page.
         }
     } 
 }  
-```
+    ```
 
 ## Apply the patch
 
