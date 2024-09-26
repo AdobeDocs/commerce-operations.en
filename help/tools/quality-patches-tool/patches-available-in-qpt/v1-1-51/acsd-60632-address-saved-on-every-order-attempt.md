@@ -16,7 +16,7 @@ The ACSD-60632 patch fixes the issue where a new address is saved with each orde
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.5-p8 - 2.4.7-p8
+* Adobe Commerce (all deployment methods) 2.4.5-p8 - 2.4.7-p2
 
 >[!NOTE]
 >
