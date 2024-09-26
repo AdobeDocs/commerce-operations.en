@@ -20,7 +20,7 @@
 >
 >The `support:backup` command is _not_ the same code backup performed by the `setup:backup` command. The `support:backup` command is intended to back up code for examination by Adobe Commerce Support.
 
-## B2B patches (#b2b-patches)
+## B2B patches {#b2b-patches}
 
 >[!NOTE]
 >
