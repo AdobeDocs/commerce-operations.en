@@ -103,8 +103,8 @@ The query returns the items on the last page.
 
 <u>Actual results</u>:
 
-    ```
-    {
+```
+  {
     "data": {
         "cart": {
             "email": "roni_cost@example.com",
@@ -120,7 +120,7 @@ The query returns the items on the last page.
         }
     } 
     }  
-    ```
+```
 
 ## Apply the patch
 
