@@ -47,7 +47,7 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
             <ul>
               <li><strong>PHP 8.1</strong>: This release removes PHP 8.1 compatibilty for Adobe Commerce 2.4.8. You must upgrade to PHP 8.3 before upgrading to Adobe Commerce 2.4.8.</li>
               <li><strong>PHP 8.2</strong>: One of the significant changes in PHP 8.2 involves the deprecation of passing null to non-nullable internal function parameters. This release addresses deprecated PHP 8.1 features in core platform components and ensures compatibility with PHP 8.2.</li>
-              <li><strong>PHPUnit 10</strong>: This release addresses several critical issues, enhances compatibility, and ensures that the Adobe Commerce testing framework is aligned with the latest industry standards. Adobe recommends that all Commerce Marketplace vendors and customers with customizations verify that their unit and integration tests run on PHPUnit 10 instead of 9.</li>
+              <li><strong>PHPUnit 10</strong>: This release addresses several critical issues, enhances compatibility, and ensures that the Adobe Commerce testing framework aligns with the latest industry standards. Adobe recommends that all Commerce Marketplace vendors and customers with customizations verify that their unit and integration tests run on PHPUnit 10 instead of 9.</li>
             </ul>
             </td>
         </tr>
@@ -66,10 +66,10 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
         </tr>
         <tr>
             <td><strong>Search</strong></td>
-            <td>Adobe Commerce is now optimized for OpenSearch 2.x and is no longer compatible with Elasticsearch. All Elasticsearch 7 and 8 modules and classes have been marked as deprecated in the codebase. Adobe strongly recommends transitioning to OpenSearch for both on-premises and cloud infrastructure deployments to ensure continued support and compatibility. See <a href="/help/upgrade/prepare/opensearch-migration.md">Migrating to OpenSearch</a>.
+            <td>Adobe Commerce is now optimized for OpenSearch 2.x and is no longer compatible with Elasticsearch. All Elasticsearch 7 and 8 modules and classes are now deprecated in the codebase. Adobe strongly recommends transitioning to OpenSearch for both on-premises and cloud infrastructure deployments to ensure continued support and compatibility. See <a href="/help/upgrade/prepare/opensearch-migration.md">Migrating to OpenSearch</a>.
               <ul>
                 <li>The Elasticsearch 7 and Elasticsearch 8 options are now labeled as "(Deprecated)" in the Admin configuration.</li>
-                <li>When a user selects Elasticsearch as the search engine in the Admin configuration, Commerce displays a notification stating, <em>"This search engine option is no longer supported by Adobe. It is recommended to use OpenSearch as a search engine instead."</em></li>
+                <li>When a user selects Elasticsearch as the search engine in the Admin configuration, Commerce displays a notification stating, <em>"This search engine option is no longer supported by Adobe. We recommend using OpenSearch as a search engine instead."</em></li>
               </ul>
             </td>
         </tr>
@@ -101,7 +101,7 @@ This release includes the following quality enhancements:
         </tr>
         <tr>
             <td><strong>Orders</strong></td>
-            <td>In order to minimize confusion, the [!UICONTROL **Submit Comment**] button label changed to [!UICONTROL **Update**] in the <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#notes-for-this-order">order detail</a> page.</td>
+            <td>To minimize confusion, the [!UICONTROL **Submit Comment**] button label changed to [!UICONTROL **Update**] in the <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#notes-for-this-order">order detail</a> page.</td>
         </tr>
     </tbody>
 </table>
@@ -126,13 +126,13 @@ This release includes the following GraphQL enhancements:
               </li>
               <li><!--LYNX-451--><strong>CartPrices</strong>: Added the <code>grand_total_excluding_tax</code> field to the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#definition-CartPrices"><code>CartPrices</code></a> type, providing clear tax-inclusive pricing.</li>
               <li><!--LYNX-542--><strong>updateCartItems mutation</strong>: Updated the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#mutation-updateCartItems"><code>updateCartItems</code></a> mutation to return success responses with error details instead of exceptions. Enhanced error mapping to improve the clarity of user notifications.</li>
-              <li><!--LYNX-522--><strong>recaptchaV3Config query</strong>: Introduced a <code>theme</code> field to the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#query-recaptchaV3Config"><code>recaptchaV3Config</code></a> query. This field allows you to specify the name of the theme that will be applied to render reCaptcha.</li>
-              <li><!--LYNX-540--><strong>ProductInterface</strong>: Introduced a <code>quantity</code> field in the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#definition-ProductInterface"><code>ProductInterface</code></a> to provide stock level details. Configurable to show available stock or null based on Admin settings.</li>
+              <li><!--LYNX-522--><strong>recaptchaV3Config query</strong>: Introduced a <code>theme</code> field to the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#query-recaptchaV3Config"><code>recaptchaV3Config</code></a> query. This field allows you to specify the name of the theme to use to render the reCaptcha.</li>
+              <li><!--LYNX-540--><strong>ProductInterface</strong>: Introduced a <code>quantity</code> field in the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#definition-ProductInterface"><code>ProductInterface</code></a> to provide stock level details. It displays available stock or null based on Admin settings.</li>
                <li><!--LYNX-460--><strong>Bundle products</strong>: Corrected pricing display for bundle products, ensuring accurate price and currency information.</li>
                <li><!--LYNX-547--><strong>Quantity</strong>: Refined messaging for insufficient and unavailable quantity notifications.</li>
                <li><!--LYNX-541--><strong>InsufficientStockError type</strong>: Added a new <code>InsufficientStockError</code> type to handle cases where stock levels are insufficient. Adjusted the schema to support new error types, enhancing error reporting capabilities.</li>
                <li><!--LYNX-476--><strong>Inventory amount</strong>: Enhanced error messaging to include available inventory amounts. Provides users with clearer insights into stock levels during order updates.</li>
-               <li><!--LYNX-377--><strong>Requested quantity</strong>: Added the <code>not_available_message</code> to the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#definition-CartItemInterface"><code>CartItemInterface</code></a></li>
+               <li><!--LYNX-377--><strong>Requested quantity</strong>: Added the <code>not_available_message</code> to the <a href="https://developer.adobe.com/commerce/webapi/graphql-api/index.html#definition-CartItemInterface"><code>CartItemInterface</code></a>.</li>
              </ul>
            </td>
         </tr>
