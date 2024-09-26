@@ -2,7 +2,7 @@
 
 ## Highlights
 
-Take a look at the following 49 highlights for the Magento Open Source 2.4.8 release.
+The following 49 highlights apply to the Magento Open Source 2.4.8 release.
 
 ### Framework
 
@@ -14,10 +14,10 @@ Take a look at the following 49 highlights for the Magento Open Source 2.4.8 rel
   * _Fix note_: Updated the latest version php-amqplib/php-amqplib :^3.x
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
 * _AC-11723_: Refactoring of Integration Test framework for phpunit 10 compatibility - IntegrationTest.php not found
-  * _Fix note_: PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.
+  * _Fix note_: PHPUnit 9 upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.
   * _GitHub code contribution_: <https://github.com/magento/magento2/ (Internal, Unmerged)>
 * _AC-11813_: WebApi Test framework for phpunit 10 compatibility - Issue related to RabbitMQ connectivity with SOAP and B2B modules
-  * _Fix note_: PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.
+  * _Fix note_: PHPUnit 9 upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.
   * _GitHub code contribution_: <https://github.com/magento/magento2/ (Internal, Unmerged)>
 * _AC-11816_: Add compatibility with MySQL 8.4 LTS
 * _AC-11911_: jQuery/fileuploader css cleanup after migration to uppy library
@@ -88,7 +88,7 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
 ### Order
 
 * _ACP2E-2709_: [Feature Request] Customer suggests that Submit Comment Button on Order Details page is confusing and should be changed to something else
-  * _Fix note_: In order to minimize the confusion, the "Submit Comment" button label changed to "Update" in the order detail page.
+  * _Fix note_: To minimize confusion, the "Submit Comment" button label changed to "Update" in the order detail page.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/488c1034>
 
 ### Other
