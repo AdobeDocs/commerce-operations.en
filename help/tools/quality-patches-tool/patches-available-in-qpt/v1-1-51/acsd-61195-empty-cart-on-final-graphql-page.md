@@ -94,7 +94,7 @@ Cart GraphQL request fails to return items on final page.
         quantity
         }
     }
-}  
+    }  
     ```
 
 <u>Expected results</u>:
@@ -119,7 +119,7 @@ The query returns the items on the last page.
             }
         }
     } 
-}  
+    }  
     ```
 
 ## Apply the patch
