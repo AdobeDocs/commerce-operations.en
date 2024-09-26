@@ -76,7 +76,7 @@ Cart GraphQL request fails to return items on final page.
 1. Run the following query:
 
     ```
-cart(cart_id: $cartId) {
+    cart(cart_id: $cartId) {
     email
     itemsV2(pageSize: 2, currentPage: 3) {
         total_count
@@ -104,7 +104,7 @@ The query returns the items on the last page.
 <u>Actual results</u>:
 
     ```
-{
+    {
     "data": {
         "cart": {
             "email": "roni_cost@example.com",
