@@ -20,6 +20,12 @@
 >
 >The `support:backup` command is _not_ the same code backup performed by the `setup:backup` command. The `support:backup` command is intended to back up code for examination by Adobe Commerce Support.
 
+## B2B patches (#b2b-patches)
+
+>[!NOTE]
+>
+>After installing this security patch, Adobe Commerce B2B merchants must also update to the latest compatible B2B security patch release. See [B2B release notes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+
 ## Adobe Commerce only {#ee-only}
 
 >[!NOTE]

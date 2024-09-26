@@ -1,5 +1,7 @@
 # October 2024 security patch highlights
 
+{{b2b-patches}}
+
 This release includes the following highlights:
 
 * **TinyMCE upgrade**—The [WYSIWYG editor](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/editor) in the Admin now uses the latest version of the TinyMCE dependency (7.3​).
