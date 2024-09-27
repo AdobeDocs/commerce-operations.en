@@ -9,7 +9,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 >[!INFO]
 >
->See [Apply patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) for instructions on applying patches to your Adobe Commerce projects. See [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the Software Update Guide to review a full list of released patches.
+>See [Apply patches](/help/tools/quality-patches-tool/usage.md#apply-individual-patches) for instructions on applying patches to your Adobe Commerce projects. See [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the Software Update Guide to review a full list of released patches.
 
 >[!INFO]
 >
