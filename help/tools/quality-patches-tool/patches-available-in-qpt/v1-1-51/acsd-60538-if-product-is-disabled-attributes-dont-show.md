@@ -69,7 +69,7 @@ Inventory module is installed.
 
 <u>Expected results</u>:
 
-GraphQL response includes the attribute values for the child associated product that is disabled on *[!UICONTROL All Store Views]* and enabled on the store view scope.
+GraphQL response includes the attribute values for the child associated product that is disabled on *[!UICONTROL All Store Views]* and enabled on the *[!UICONTROL Store View]* scope.
 
 <u>Actual results</u>:
 
