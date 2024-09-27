@@ -73,7 +73,7 @@ GraphQL response includes the attribute values for the child associated product 
 
 <u>Actual results</u>:
 
-GraphQL response has empty attribute values for the child associate product when the product is disabled on *[!UICONTROL All Store Views]* and enabled on the store view scope.
+GraphQL response has empty attribute values for the child associated product when the product is disabled on *[!UICONTROL All Store Views]* and enabled on the *[!UICONTROL Store View]* scope.
 
 ## Apply the patch
 
