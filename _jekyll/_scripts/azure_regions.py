@@ -1,5 +1,5 @@
 # This script generates a world map, plots data obtained from _jekyll/tmp/azure-regions.json,
-# and writes the result to tmp/azure-regions.pdf.
+# and writes the result to _jekyll/tmp/azure-regions.pdf.
 # For details on pygmt, see https://www.pygmt.org/latest/index.html.
 # For package installation, you can use micromamba (https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html)
 # and run the commands for mamba but replacing it with micromamba: https://www.pygmt.org/latest/install.html.
