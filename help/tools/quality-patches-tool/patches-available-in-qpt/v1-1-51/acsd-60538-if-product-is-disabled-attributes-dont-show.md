@@ -32,7 +32,7 @@ Inventory module is installed.
 
 <u>Steps to reproduce</u>:
 
-1. Create a configurable product with the *color* attribute, and three child products (*blue*, *black*, *brown*).
+1. Create a configurable product with the *color* attribute and three child products (*blue*, *black*, and *brown*).
 1. Disable two associated child products (*blue* and *black*) on the *[!UICONTROL All Store Views]* scope.
 1. Go to **[!UICONTROL Store View]** scope.
 1. Enable child products (*blue* and *black*) on *[!UICONTROL Store View]* scope. 
