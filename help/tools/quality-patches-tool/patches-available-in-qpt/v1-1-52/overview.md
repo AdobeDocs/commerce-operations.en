@@ -18,7 +18,7 @@ QPT v1.1.52 includes the following patches:
 1. **ACSD-60673**: Fixes the issue where the [!UICONTROL Cart Price Rule] for multiple payment methods at checkout doesn't apply appropriately to the specific payment method.
 1. **ACSD-60684**: Fixes the issue where GraphQL product sorting by multiple fields doesn't work as expected.
 1. **ACSD-60788**: Fixes the issue where custom scripts for [!DNL Google Tag Manager] are not executed due to Content Security Policy (CSP) errors.
-1. **ACSD-61322**: Fixes the issue where Products/Categories not assigned to the Shared Catalog for the Default (General Group) are still included in the XML Sitemap.
+1. **ACSD-61322**: Fixes the issue where Products/Categories not assigned to the [!UICONTROL Shared Catalog] for the Default (General Group) are still included in the XML Sitemap.
 1. **ACSD-61366**: Fixes the issue where the `setup:static-content:deploy --jobs 4` command runs with multiple jobs failing with the *Port must be configured within host parameter* error when the port is specified for the DB connection.
 
 Use the menu on the left to navigate to a specific patch page.
