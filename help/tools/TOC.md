@@ -618,7 +618,7 @@ feature: Configuration
             - [ACSD-59280: ReflectionUnionType::getName() error in 2.4.4-pX installations](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
             - [ACSD-60303: Admin order placement issue resolved with HTML minification enabled](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
         - v1.1.51 {#v1-1-51}
-            - [ACSD-60538: Attributes don't show If a product is disabled](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+            - [ACSD-60538: Attributes don't show if a product is disabled](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
