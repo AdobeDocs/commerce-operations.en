@@ -26,46 +26,19 @@ Adobe Commerce (all deployment methods) 2.4.6 - 2.4.7-p2
 
 The Products/Categories not assigned to the [!UICONTROL Shared Catalog] for the Default (General Group) are still included in the XML Sitemap.
 
-<u>Prerequisites</u>:
-
-Inventory module is installed.
-
 <u>Steps to reproduce</u>:
 
-1. Create a configurable product with the *color* attribute and three child products (*blue*, *black*, and *brown*).
-1. Disable two associated child products (*blue* and *black*) on the *[!UICONTROL All Store Views]* scope.
-1. Go to **[!UICONTROL Store View]** scope.
-1. Enable child products (*blue* and *black*) on *[!UICONTROL Store View]* scope. 
-1. Run the below GraphQL request:
-
-    ```GraphQL
-    {
-      products(filter: { sku: { eq: "SKU" } }) {
-        items {
-            ... on ConfigurableProduct {
-              configurable_options {
-                attribute_id,
-                attribute_code,
-             values {
-              value_index
-              label
-            }
-        }
-        variants {
-          product {
-            sku
-          }
-          attributes {
-            label
-            code
-            value_index
-           }
-          }
-         }
-        }
-       }
-      }  
-    ```
+1. Create a few categories and add products (for example, Category 1 with Category 2).
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** and enable [!UICONTROL Company and Shared Catalog].
+1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]** and modify the Default Catalog.
+1. From the **[!UICONTROL Select]** dropdown, select **[!UICONTROL Set Pricing and Structure]**, and click **[!UICONTROL Configure]**.
+1. Under the **[!UICONTROL Category1]** > **[!UICONTROL Category2]** category, unselect some products that shouldn't be in the [!UICONTROL Shared Catalog].
+1. Click on **[!UICONTROL Next]** and generate the catalog.
+1. On the Storefront, create a customer account.
+1. Go to the **[!UICONTROL Category1]** > **[!UICONTROL Category2]** category and you will only see the products that were assigned to the [!UICONTROL Shared Catalog].
+1. Go to **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL Site Map]** and generate a new sitemap.
+1. Open the `sitemap.xml` on the Storefront.
+1. Search for the product(s) that you didn't include in the [!UICONTROL Shared Catalog].
 
 <u>Expected results</u>:
 
