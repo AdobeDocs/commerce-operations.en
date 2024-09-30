@@ -68,15 +68,15 @@ Items in the media gallery were not sorted by position, leading to an incorrect 
          }
        }
      }
-   
+    ``` 
 
 <u>Expected results</u>:
 
-GraphQL response includes the attribute values for the child associated product that is disabled on *[!UICONTROL All Store Views]* and enabled on the *[!UICONTROL Store View]* scope.
+Items in the `media_gallery` are sorted by position.
 
 <u>Actual results</u>:
 
-GraphQL response has empty attribute values for the child associated product when the product is disabled on *[!UICONTROL All Store Views]* and enabled on the *[!UICONTROL Store View]* scope.
+Items in the `media_gallery` are not sorted by position.
 
 ## Apply the patch
 
