@@ -42,11 +42,11 @@ The Products/Categories not assigned to the [!UICONTROL Shared Catalog] for the 
 
 <u>Expected results</u>:
 
-GraphQL response includes the attribute values for the child associated product that is disabled on *[!UICONTROL All Store Views]* and enabled on the *[!UICONTROL Store View]* scope.
+The sitemap doesn't contain links to products and categories that are not assigned to the [!UICONTROL Shared Catalog].
 
 <u>Actual results</u>:
 
-GraphQL response has empty attribute values for the child associated product when the product is disabled on *[!UICONTROL All Store Views]* and enabled on the *[!UICONTROL Store View]* scope.
+The sitemap contains links to products and categories that are not assigned to the [!UICONTROL Shared Catalog].
 
 ## Apply the patch
 
