@@ -1,12 +1,12 @@
 ---
-title: "ACSD-59925: Sorting items in media gallery by position in GraphQL"
-description: Apply the ACSD-59925 patch to fix the Adobe Commerce issue where items in the media gallery were not sorted by position, leading to an incorrect display order.
+title: "ACSD-59925: Sorting items in Media Gallery by position in GraphQL"
+description: Apply the ACSD-59925 patch to fix the Adobe Commerce issue where items in the Media Gallery were not sorted by position, leading to an incorrect display order.
 feature: Media, GraphQL
 role: Admin, Developer
 ---
-# ACSD-59925: Fixes the issue with sorting items in the media gallery by position in GraphQL.
+# ACSD-59925: Fixes the issue with sorting items in the Media Gallery by position in GraphQL.
 
-The ACSD-59925 patch fixes the issue where items in the media gallery were not sorted by position, leading to an incorrect display order. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59925. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-59925 patch fixes the issue where items in the Media Gallery were not sorted by position, leading to an incorrect display order. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59925. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p2
 
 ## Issue
 
-Items in the media gallery were not sorted by position, leading to an incorrect display order.
+Items in the Media Gallery were not sorted by position, leading to an incorrect display order.
 
 <u>Steps to reproduce</u>:
 
@@ -32,7 +32,7 @@ Items in the media gallery were not sorted by position, leading to an incorrect 
 1. Add two or more images and save it.
 1. Edit the same product, but this time, drag the last image to the first position.
 1. Save the product.
-1. Reindex just in case.
+1. Reindex.
 1. Go to GraphQL client.
 1. Run GraphQL query:
 
