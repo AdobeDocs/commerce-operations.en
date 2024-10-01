@@ -1,7 +1,7 @@
 ---
 title: "ACSD-60590: Enhancing performance of bestseller daily reports for high order volumes"
 description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where the bestsellers aggregated daily report takes a significant amount of time to generate for a large volume of placed orders.
-feature: Orders
+feature: Reporting
 role: Admin, Developer
 ---
 # ACSD-60590: Enhancing performance of bestseller daily reports for high order volumes
