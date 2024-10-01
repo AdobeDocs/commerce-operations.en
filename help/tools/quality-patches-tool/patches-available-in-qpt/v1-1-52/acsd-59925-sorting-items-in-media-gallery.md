@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p2
 
 ## Issue
 
-Items in the media gallery were not sorted by position, leading to an incorrect display order.
+Items in the media gallery are not sorted by position, leading to an incorrect display order.
 
 <u>Steps to reproduce</u>:
 
