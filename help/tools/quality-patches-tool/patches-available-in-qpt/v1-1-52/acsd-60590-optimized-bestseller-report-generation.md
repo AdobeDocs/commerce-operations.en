@@ -1,12 +1,12 @@
 ---
-title: "ACSD-60590: Enhancing performance of bestseller daily reports for high order volumes"
-description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where the bestsellers aggregated daily report takes a significant amount of time to generate for a large volume of placed orders.
+title: "ACSD-60590: Enhancing performance of Bestseller Aggregated Daily Report generation"
+description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where the Bestseller Aggregated Daily Report generation takes a significant amount of time to generate for a large volume of placed orders.
 feature: Reporting
 role: Admin, Developer
 ---
-# ACSD-60590: Enhancing performance of bestseller daily reports for high order volumes
+# ACSD-60590: Enhancing performance of Bestseller Aggregated Daily Report generation
 
-The ACSD-60590 patch fixes the issue where the bestsellers aggregated daily report takes a significant amount of time to generate for a large volume of placed orders. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.52 is installed. The patch ID is ACSD-60590. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60590 patch fixes the issue where the Bestseller Aggregated Daily Report takes a significant amount of time to generate for a large volume of placed orders. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.52 is installed. The patch ID is ACSD-60590. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,21 +24,19 @@ The ACSD-60590 patch fixes the issue where the bestsellers aggregated daily repo
 
 ## Issue
 
-Performance issue with generating bestsellers aggregated daily reports for a large volume of placed orders.
+The Bestsellers Aggregated Daily Report takes significant time to generate for a large volume of placed orders.
 
 <u>Prerequisites</u>
 
-A large number of orders (For example: 500k)
+A large number of orders (For example: *500k*)
 
 <u>Steps to reproduce</u>:
 
 1. Run the following command:
 
-    ```
-    update sales_order set created_at = DATE(DATE_SUB(NOW(), INTERVAL ROUND(RAND()*3650) DAY)) ;
-    ```
-
-1. Run the ```aggregate_sales_report_bestsellers_data job```.
+    `update sales_order set created_at = DATE(DATE_SUB(NOW(), INTERVAL ROUND(RAND()*3650) DAY))  ;`
+   
+1. Run the `aggregate_sales_report_bestsellers_data job`.
 
 <u>Expected results</u>:
 
@@ -46,7 +44,7 @@ The job finishes in less than 30 seconds.
 
 <u>Actual results</u>:
 
-The query takes around 10 minutes for each store for created_at dates.
+The query takes around 10 minutes for each store for `created_at` dates.
 
 ## Apply the patch
 
