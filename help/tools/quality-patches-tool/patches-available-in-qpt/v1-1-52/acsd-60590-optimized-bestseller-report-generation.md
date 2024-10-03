@@ -1,12 +1,12 @@
 ---
-title: "ACSD-60590: Enhancing performance of Bestseller Aggregated Daily Report generation"
-description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where the Bestseller Aggregated Daily Report takes a significant amount of time to generate for a large volume of placed orders.
+title: "ACSD-60590: Enhancing performance of Bestsellers Aggregated Daily Report generation"
+description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where the Bestsellers Aggregated Daily Report takes a significant amount of time to generate for a large volume of placed orders.
 feature: Reporting
 role: Admin, Developer
 ---
-# ACSD-60590: Enhancing performance of Bestseller Aggregated Daily Report generation
+# ACSD-60590: Enhancing performance of Bestsellers Aggregated Daily Report generation
 
-The ACSD-60590 patch fixes the issue where the Bestseller Aggregated Daily Report takes a significant amount of time to generate for a large volume of placed orders. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.52 is installed. The patch ID is ACSD-60590. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60590 patch fixes the issue where the Bestsellers Aggregated Daily Report takes a significant amount of time to generate for a large volume of placed orders. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.52 is installed. The patch ID is ACSD-60590. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
