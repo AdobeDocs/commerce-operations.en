@@ -1,6 +1,6 @@
 ---
 title: "ACSD-59925: Sorting items in [!UICONTROL Media Gallery] by position in GraphQL"
-description: Apply the ACSD-59925 patch to fix the Adobe Commerce issue where items in the [!UICONTROL Media Gallery] were not sorted by position, leading to an incorrect display order.
+description: Apply the ACSD-59925 patch to fix the Adobe Commerce issue where items in the [!UICONTROL Media Gallery] are not sorted by position, leading to an incorrect display order.
 feature: Media, GraphQL
 role: Admin, Developer
 ---
