@@ -619,7 +619,7 @@ feature: Configuration
             - [ACSD-60303: Admin order placement issue resolved with HTML minification enabled](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
         - v1.1.51 {#v1-1-51}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
-            - [ACSD-60234: Incorrect amount is shown on [!DNL PayPal] when discount is applied](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-incorrect-amount-is-shown-on-paypal-when-discount-is-applied.md)
+            - [ACSD-60234: [!DNL PayPal] shows an incorrect amount when discount is applied](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Command-line tools reference {#cli-reference}
