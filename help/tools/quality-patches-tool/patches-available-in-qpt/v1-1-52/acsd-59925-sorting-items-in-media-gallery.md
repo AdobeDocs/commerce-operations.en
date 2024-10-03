@@ -4,7 +4,7 @@ description: Apply the ACSD-59925 patch to fix the Adobe Commerce issue where it
 feature: Media, GraphQL
 role: Admin, Developer
 ---
-# ACSD-59925: Sorting items in the Media Gallery by position in GraphQL
+# ACSD-59925: Sorting items in the [!UICONTROL Media Gallery] by position in GraphQL
 
 The ACSD-59925 patch fixes the issue where items in the Media Gallery were not sorted by position, leading to an incorrect display order. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59925. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
