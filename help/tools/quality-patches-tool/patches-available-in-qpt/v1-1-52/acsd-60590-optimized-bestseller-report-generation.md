@@ -28,7 +28,7 @@ The Bestsellers Aggregated Daily Report takes significant time to generate for a
 
 <u>Prerequisites</u>
 
-A large number of orders (For example: *500k*)
+A large number of orders (For example: *500k*).
 
 <u>Steps to reproduce</u>:
 
