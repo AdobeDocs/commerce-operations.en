@@ -1,6 +1,6 @@
 ---
 title: "ACSD-60590: Enhancing performance of Bestseller Aggregated Daily Report generation"
-description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where the Bestseller Aggregated Daily Report generation takes a significant amount of time to generate for a large volume of placed orders.
+description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where the Bestseller Aggregated Daily Report takes a significant amount of time to generate for a large volume of placed orders.
 feature: Reporting
 role: Admin, Developer
 ---
@@ -36,7 +36,7 @@ A large number of orders (For example: *500k*)
 
     `update sales_order set created_at = DATE(DATE_SUB(NOW(), INTERVAL ROUND(RAND()*3650) DAY))  ;`
    
-1. Run the `aggregate_sales_report_bestsellers_data job`.
+1. Run the `aggregate_sales_report_bestsellers_data` job.
 
 <u>Expected results</u>:
 
