@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-60234: Incorrect amount is shown on [!DNL PayPal] when discount is applied'
-description: Apply the ACSD-60234 patch to fix the Adobe Commerce issue where an incorrect amount is shown on [!DNL PayPal] when the discount is applied through the payment method.
+title: 'ACSD-60234: [!DNL PayPal] shows an incorrect amount when discount is applied'
+description: Apply the ACSD-60234 patch to fix the Adobe Commerce issue where [!DNL PayPal] shows an incorrect amount when the discount is applied through the payment method.
 feature: Products, Configuration
 role: Admin, Developer
 ---
-# ACSD-60234: Incorrect amount is shown on [!DNL PayPal] when the discount is applied
+# ACSD-60234: [!DNL PayPal] shows an incorrect amount when the discount is applied
 
-The ACSD-60234 patch solves/fixes the issue where incorrect amount is shown on [!DNL PayPal] when the discount is applied through the payment method. This patch is available when the [!DNL Quality Patches Tool (QPT)] 1.1.51 is installed. The patch ID is ACSD-60234. Please note that the issue was fixed/is scheduled to be fixed in Adobe Commerce 2.5.0.
+The ACSD-60234 patch solves/fixes the issue where [!DNL PayPal] shows an incorrect amount when the discount is applied through the payment method. This patch is available when the [!DNL Quality Patches Tool (QPT)] 1.1.51 is installed. The patch ID is ACSD-60234. Please note that the issue was fixed/is scheduled to be fixed in Adobe Commerce 2.5.0.
 
 ## Affected products and versions
 
@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p6
 
 ## Issue
 
-An incorrect amount is shown on [!DNL PayPal] when the discount is applied through the payment method.
+[!DNL PayPal] shows an incorrect amount when the discount is applied through the payment method.
 
 <u>Steps to reproduce</u>:
 
@@ -59,7 +59,7 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
-* [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
+* [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!DNL Quality Patches Tool] guide.
 
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
