@@ -35,7 +35,7 @@ Products/categories not assigned to the [!UICONTROL Shared Catalog] for the Defa
 1. Under the *Category 1 > Category 2* category, unselect some products that shouldn't be in the [!UICONTROL Shared Catalog].
 1. Click **[!UICONTROL Next]** and generate the catalog.
 1. On the Storefront, create a customer account.
-1. Go to the **[!UICONTROL Category1]** > **[!UICONTROL Category2]** category and you will only see the products that were assigned to the [!UICONTROL Shared Catalog].
+1. Go to the *Category 1 > Category 2* category. It displays only the products that were assigned to the [!UICONTROL Shared Catalog].
 1. Go to **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL Site Map]** and generate a new sitemap.
 1. Open the `sitemap.xml` on the Storefront.
 1. Search for the product(s) that you didn't include in the [!UICONTROL Shared Catalog].
