@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.6 - 2.4.7-p2
 
 ## Issue
 
-The Products/Categories not assigned to the [!UICONTROL Shared Catalog] for the Default (General Group) are still included in the XML Sitemap.
+Products/categories not assigned to the [!UICONTROL Shared Catalog] for the Default (General) group are still included in the XML Sitemap.
 
 <u>Steps to reproduce</u>:
 
