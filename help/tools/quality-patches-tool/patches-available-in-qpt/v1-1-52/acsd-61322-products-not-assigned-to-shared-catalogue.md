@@ -29,7 +29,7 @@ Products/categories not assigned to the [!UICONTROL Shared Catalog] for the Defa
 <u>Steps to reproduce</u>:
 
 1. Create a few categories and add products (for example, Category 1 with Category 2).
-1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** and enable [!UICONTROL Company and Shared Catalog].
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** and enable *[!UICONTROL Company and Shared Catalog]*.
 1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]** and modify the Default Catalog.
 1. From the **[!UICONTROL Select]** dropdown, select **[!UICONTROL Set Pricing and Structure]**, and click **[!UICONTROL Configure]**.
 1. Under the **[!UICONTROL Category1]** > **[!UICONTROL Category2]** category, unselect some products that shouldn't be in the [!UICONTROL Shared Catalog].
