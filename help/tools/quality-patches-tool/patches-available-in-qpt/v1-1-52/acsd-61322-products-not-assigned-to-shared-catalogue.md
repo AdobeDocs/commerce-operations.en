@@ -33,7 +33,7 @@ Products/categories not assigned to the [!UICONTROL Shared Catalog] for the Defa
 1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]** and modify the Default Catalog.
 1. From the **[!UICONTROL Select]** dropdown, select **[!UICONTROL Set Pricing and Structure]**, and click **[!UICONTROL Configure]**.
 1. Under the *Category 1 > Category 2* category, unselect some products that shouldn't be in the [!UICONTROL Shared Catalog].
-1. Click on **[!UICONTROL Next]** and generate the catalog.
+1. Click **[!UICONTROL Next]** and generate the catalog.
 1. On the Storefront, create a customer account.
 1. Go to the **[!UICONTROL Category1]** > **[!UICONTROL Category2]** category and you will only see the products that were assigned to the [!UICONTROL Shared Catalog].
 1. Go to **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL Site Map]** and generate a new sitemap.
