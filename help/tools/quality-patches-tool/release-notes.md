@@ -15,6 +15,21 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.52 {#v1-1-52}
+
+* **BUNDLE-3375** (for Adobe Commerce and Magento Open Source) - Adds all the necessary fields to fulfill the 3DS VISA mandate requirements when using [!DNL Braintree] as a payment gateway.
+* **ACSD-59366** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where an error occurs when attempting to delete a team that contains deactivated users who are not visible in the team list.
+* **ACSD-59865** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where a [!UICONTROL Cart Price Rule] doesn't cancel previously applied rules if the quantity of the product in the cart is not enough for the rules to be applied.
+* **ACSD-59925** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue with sorting items in the [!UICONTROL Media Gallery] by position in GraphQL.
+* **ACSD-59952** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where an error occurs when creating a [!UICONTROL Shared Catalog] with a group ID that is assigned to an existing [!UICONTROL Shared Catalog].
+* **ACSD-60590** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Improves the performance of generating [!UICONTROL Bestsellers Aggregated Daily Reports] for a large volume of placed orders.
+* **ACSD-60673** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the [!UICONTROL Cart Price Rule] for multiple payment methods at checkout doesn't apply appropriately to the specific payment method.
+* **ACSD-60684** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where GraphQL product sorting by multiple fields doesn't work as expected.
+* **ACSD-60788** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where custom scripts for [!DNL Google Tag Manager] are not executed due to Content Security Policy (CSP) errors.
+* **ACSD-61322** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where [!UICONTROL Products/Categories] not assigned to the [!UICONTROL Shared Catalog] for the Default (General Group) are still included in the XML Sitemap.
+* **ACSD-61366** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the `setup:static-content:deploy --jobs 4` command runs with multiple jobs failing with the *Port must be configured within host parameter* error when the port is specified for the DB connection.
+* Updated patches: ACSD-51857, ACSD-57394
+
 ## v1.1.51 {#v1-1-51}
 
 * **ACSD-59786** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where GraphQL returns an internal server error when trying to get a Quote ID for an expired quote.
