@@ -1,0 +1,55 @@
+Issue key,Summary,Custom field (External Issue URL),Custom field (Release Note),Custom field (Git Pull Request),Components
+AC-10721,Upgrade the league/flysystem Composer dependencies upgrading to latest version,"",Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x,<https://github.com/magento/magento2/commit/91cb4d46>,Framework
+AC-11041,Security Improvements for 2.4.8-beta1 from June 2024 release,"","","",Security
+AC-11420,Set indexers appear in Ready status default when new version of Adobe Commerce is installed,"","After Installation Magento, Indexer's Status must be in *Ready* state by default.",<https://github.com/magento/magento2/commit/71432aeb>,Other
+AC-11421,In existing Magento installation when install third party indexer module set indexers in update by schedule by default.,"","All new indexers are by default in [Update by Schedule] mode. Previously, the default mode was [Update on Save]. Same with custom indexers as well.",<https://github.com/magento/magento2/commit/71432aeb>,Other
+AC-11495,2.4.8-beta1 Platform Components Upgrade,"","","",Framework
+AC-11673,Investigate php-amqplib/php-amqplib latest versions,"",Updated the latest version php-amqplib/php-amqplib :^3.x,<https://github.com/magento/magento2/commit/de4dfb8e>,Framework
+AC-11723,Refactoring of Integration Test framework for phpunit 10 compatibility - IntegrationTest.php not found,"",PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.,"<https://github.com/magento/magento2/ (Internal, Unmerged)>",Framework
+AC-11813,WebApi Test framework for phpunit 10 compatibility - Issue related to RabbitMQ connectivity with SOAP and B2B modules,"",PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.,"<https://github.com/magento/magento2/ (Internal, Unmerged)>",Framework
+AC-11816,Add compatibility with MySQL 8.4 LTS,"","","",Framework
+AC-11864,Security Improvements for 2.4.8-beta1 from August 2024 release,"","","",Security
+AC-11911,jQuery/fileuploader css cleanup after migration to uppy library,"",Removed jQuery/fileUploader library because it has been migrated to Uppy library,<https://github.com/magento/magento2/commit/7cabfb46>,Framework
+AC-11995,Add compatibility with MySQL 8.4 LTS for Magento CE,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework
+AC-12014,Mark elasticsearch 8 module as deprecated,"","","",Framework
+AC-12015,ExtJs folder cleanup after migration to jsTree library,"",Removed extJs folder as the related functionality has been migrated to jsTree,<https://github.com/magento/magento2/commit/7cabfb46>,Framework
+AC-12022,Upgrade monolog/monolog system dependency to the latest major version ,"","The system has been updated to use the latest major version of the ""monolog/monolog:^3.x"" library, ensuring compatibility and improved performance. Previously, the system was using an outdated version of the ""monolog/monolog"" library which could have led to potential issues and limitations.",<https://github.com/magento/magento2/commit/edcd0dcc>,Framework
+AC-12023,Upgrade wikimedia/less.php dependency to the latest major version ,"","The system has been updated to use the latest major version 5.x of the ""wikimedia/less.php"" library, ensuring compatibility and up-to-date functionality. Previously, the system was using an outdated version of the library which could have led to security issues.",<https://github.com/magento/magento2/commit/edcd0dcc>,Framework
+AC-12024,Upgrade jquery/validate library dependency to the latest minor version,"",Upgrade jquery/validate library dependency to the latest minor version 1.20.0,<https://github.com/magento/magento2/commit/de4dfb8e>,Framework
+AC-12025,Upgrade moment.js system dependency to the latest minor version,"",Upgrade moment.js system dependency to the latest minor version 2.30.1,<https://github.com/magento/magento2/commit/de4dfb8e>,Framework
+AC-12032,Add compatibility with MySQL 8.4 LTS for EE,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework
+AC-12034,Add compatibility with MySQL 8.4 LTS for B2B,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework
+AC-12074,Add compatibility with MySQL 8.4 LTS for bundle extensions,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework
+AC-12085,Add compatibility with MariaDB 11.4 LTS For CE,"",Added MariaDB 11.4 support with Adobe Commerce and extensions,<https://github.com/magento/magento2/commit/b34c0a75>,Framework
+AC-12165,Subscribers Optimisation - PhpUnit10,"","",<https://github.com/magento/magento2/commit/90e25b6b>,Framework
+AC-12267,Support connection retries for Redis session and compatible with colinmollenhour/php-redis-session-abstract v2.0.0,"",Updated latest version of colinmollenhour/php-redis-session-abstract v2.0.0 compatible with adobe commerce,<https://github.com/magento/magento2/commit/672a2e61>,Framework
+AC-12268,Upgrade league/flysystem Composer dependencies to latest version,"",Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x,"",Framework
+AC-12346,Security Improvements for 2.4.8-beta1 from October 2024 release,"","","",Security
+AC-12480,Elasticsearch 7 and 8 options should come with Deprecated in Admin config.,"",Elasticsearch 8 option in Admin Config option will show with Deprecated text to inform users that Elasticsearch 8 is no longer recommended option to use.,<https://github.com/magento/magento2/commit/0611e750>,Other
+AC-12481,Add text note when Elasticsearch option is selected in Admin Configuration,"",A text note is added to let Adobe Commerce admin users know that elasticsearch is no longer supported by Adobe and is deprecated.,<https://github.com/magento/magento2/commit/0611e750>,Other
+AC-12576,Investigate the automation tests failures with MySQL 8.4 LTS,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework
+AC-12595,Add compatibility with MariaDB 11.4 LTS For EE,"",Added MariaDB 11.4 support with Adobe Commerce and extensions,<https://github.com/magento/magento2/commit/b34c0a75>,Framework
+AC-12691,[2.4.8-beta1] Customer update REST API endpoint is not working,"","","<https://github.com/magento/magento2/commit/a4102373>, <https://github.com/magento/magento2/commit/a4102373>",Security
+AC-12693,Investigate on Data Migration tool (DMT) with MySQL 8.4 LTS,"","","",Framework
+AC-12715,Update laminas composer dependencies upgrading to latest version,"","The system now supports the latest versions of laminas composer dependencies:
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validator
+ensuring compatibility and up-to-date functionality. Previously, updating to the latest versions of these dependencies could cause backward incompatibility issues and test failures.",<https://github.com/magento/magento2/commit/b34c0a75>,Framework
+AC-12726,[2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7,"","Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability",<https://github.com/magento/magento2/commit/edcd0dcc>,UI Framework
+AC-12752,Add compatibility with MariaDB 11.4 LTS For Data Migration tool,"",Added MariaDB 11.4 support with Adobe Commerce and extensions,"",Framework
+AC-12823,Investigate the unit test failure due to phpunit patch update during component upgrade,"","",<https://github.com/magento/magento2/commit/b34c0a75>,Framework
+AC-12825,[2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 Page Builder,"","Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability",<https://github.com/magento/magento2/commit/edcd0dcc>,UI Framework
+AC-12844,[2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 - Magento2-infra - banned words,"","Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability",<https://github.com/magento/magento2/commit/edcd0dcc>,UI Framework
+AC-12870,SVC and EAT tool compatibility with MariaDB 11.4,"",SVC and EAT tool compatibility with MariaDB 11.4,"",Other
+AC-12876,UCT tool compatibility with MariaDB 11.4,"","","",Other
+AC-12897,SVC and EAT tool compatibility with MySQL 8.4,"","","",Framework
+AC-12898,UCT tool compatibility with MySQL 8.4,"","The Upgrade Compatibility Tool (UCT) is now compatible with MySQL 8.4, ensuring smooth operation and compatibility checks for instances running on this version. Previously, the UCT tool was not tested and verified for compatibility with MySQL 8.4.","",Framework
+AC-12901,Require.js upgrade to the latest version 2.3.7 (security vulnerability CVE-2024-38999),"",Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability,<https://github.com/magento/magento2/commit/b34c0a75>,UI Framework
+AC-6819,"Set indexers to ""Update by Schedule"" by default","","","",Install & Administer
+AC-9749,PHPUnit 10 upgrade,"","Updated the phpunit/phpunit composer dependencies to compatible version - ""phpunit/phpunit"":""10.x""","",Framework
+ACP2E-2709,[Feature Request] Customer suggests that Submit Comment Button on Order Details page is confusing and should be changed to something else,"","In order to minimize the confusion, the ""Submit Comment"" button label changed to ""Update"" in the order detail page.",<https://github.com/magento/magento2/commit/488c1034>,Order
+LYNX-374,Document Email Confirmation via GraphQL,"","","",Other
+LYNX-376,Document getting configurations for reCAPTCHA in GraphQL,"","","",Other
+LYNX-409,DB Query Optimizations for Update Cart Items Mutation,"","","",Other
