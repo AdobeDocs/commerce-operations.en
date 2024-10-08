@@ -29,10 +29,10 @@ JavaScript error prevents Google maps from rendering correctly.
 <u>Steps to reproduce</u>:
 
 1. Generate a valid Google Maps keys.
-1. Configure the Google Maps API keys under Go to Stores > **[UICONTROL Configuration]** > General > Content Management.
-1. Add your Google API Key to **[UICONTROL Google Maps API Key]** field, and save the configuration.
+1. Configure the Google Maps API keys under Stores > **[!UICONTROL Configuration]** > General > Content Management.
+1. Add your Google API Key to **[!UICONTROL Google Maps API Key]** field, and save the **[!UICONTROL Configuration]**.
 1. Go to **Admin** > **Content** > **Pages** > **Create New Page**.
-1. Add a **[UICONTROL Row]** element and a **[UICONTROL Maps]** element.
+1. Add a **[!UICONTROL Row]** element and a **[!UICONTROL Maps]** element.
 
 <u>Expected results</u>:
 
