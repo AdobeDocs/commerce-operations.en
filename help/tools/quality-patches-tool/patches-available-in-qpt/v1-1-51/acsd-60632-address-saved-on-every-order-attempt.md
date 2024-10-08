@@ -35,7 +35,7 @@ Each time an order placement is attempted, a new address entry is saved in the s
 1. Add the product to cart.
 1. Proceed to Checkout.
 1. Fill in the address. Ensure that the first address is created at this step.
-1. On the *[!UICONTROL Review and Payments]* page, select the **[!UICONTROL Credit Card (Payflow Link)** radio button.
+1. On the *[!UICONTROL Review and Payments]* page, select the **[!UICONTROL Credit Card (Payflow Link)]** radio button.
 1. Click **[!UICONTROL Continue]**:
     * The checkout page returns to the *[!UICONTROL Review and Payments]* step with the pre-populated address and the expected error message.
 1. Select *[!UICONTROL Credit Card (Payflow Link)]* radio button again.
