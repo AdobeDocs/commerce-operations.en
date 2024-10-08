@@ -242,28 +242,23 @@
         "releases": [
             {
                 "publishedAt":"2022-08-09T12:08:32Z",
-                "tagName":"2.3.7-p4",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html"
+                "tagName":"2.3.7-p4"
             },
             {
                 "publishedAt": "2022-04-12T14:08:47Z",
-                "tagName": "2.3.7-p3",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p3.html"
+                "tagName": "2.3.7-p3"
             },
             {
                 "publishedAt": "2021-10-12T14:41:22Z",
-                "tagName": "2.3.7-p2",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html"
+                "tagName": "2.3.7-p2"
             },
             {
                 "publishedAt": "2021-08-10T16:44:05Z",
-                "tagName": "2.3.7-p1",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p1.html"
+                "tagName": "2.3.7-p1"
             },
             {
                 "publishedAt":"2021-05-11T15:16:04Z",
-                "tagName":"2.3.7",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html"
+                "tagName":"2.3.7"
             },
             {
                 "publishedAt":"2021-02-09T18:05:03Z",
@@ -271,8 +266,7 @@
             },
             {
                 "publishedAt":"2020-10-15T14:20:33Z",
-                "tagName":"2.3.6",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html"
+                "tagName":"2.3.6"
             },
             {
                 "publishedAt":"2020-07-28T14:49:50Z",
@@ -288,8 +282,7 @@
             },
             {
                 "publishedAt":"2020-04-28T14:36:19Z",
-                "tagName":"2.3.5",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html"
+                "tagName":"2.3.5"
             },
             {
                 "publishedAt":"2020-01-28T16:03:47Z",
@@ -297,8 +290,7 @@
             },
             {
                 "publishedAt":"2020-01-28T16:34:02Z",
-                "tagName":"2.3.4",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html"
+                "tagName":"2.3.4"
             },
             {
                 "publishedAt":"2019-10-09T01:49:34Z",
@@ -306,24 +298,19 @@
             },
             {
                 "publishedAt":"2019-10-08T14:19:13Z",
-                "tagName":"2.3.3",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html"
-
+                "tagName":"2.3.3"
             },
             {
                 "publishedAt":"2019-06-25T14:13:00Z",
-                "tagName":"2.3.2",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html"
+                "tagName":"2.3.2"
             },
             {
                 "publishedAt":"2019-03-26T14:43:59Z",
-                "tagName":"2.3.1",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html"
+                "tagName":"2.3.1"
             },
             {
                 "publishedAt":"2018-11-28T17:55:38Z",
-                "tagName":"2.3.0",
-                "releaseNotes": "https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html"
+                "tagName":"2.3.0"
             }
         ],
         "end-of-support": "2022-09-08"

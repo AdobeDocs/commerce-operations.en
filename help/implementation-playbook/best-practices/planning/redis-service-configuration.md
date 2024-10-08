@@ -151,6 +151,10 @@ stage:
           frontend: "stale_cache_enabled"
 ```
 
+>[!NOTE]
+>
+>In the previous example, the `full_page` cache is not relevant to Adobe Commerce on cloud infrastructure projects, because they use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
+
 For configuring on-premises installations, see [Stale cache options](../../../configuration/cache/level-two-cache.md#stale-cache-options) in the _Configuration Guide_.
 
 ## Separate Redis cache and session instances
