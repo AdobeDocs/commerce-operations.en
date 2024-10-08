@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-60632: Address saved with every order attempt
 
-The ACSD-60632 patch fixes the issue where a new address is saved with each order placement attempt, regardless of whether the order is successfully created or not. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.51 is installed. The patch ID is ACSD-60632. Please note that the issue was fixed in Adobe Commerce 2.4.8.
+The ACSD-60632 patch fixes the issue where a new address is saved with each order placement attempt, regardless of whether the order is successfully created or not. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.51 is installed. The patch ID is ACSD-60632. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -28,18 +28,18 @@ Each time an order placement is attempted, a new address entry is saved in the s
 
 <u>Steps to reproduce</u>:
 
-1. Enable **[!UICONTROL PayPal PayFlow Link]** payment method:
-    * On a local machine, it cannot receive API calls from PayPal PayFlow Link without a real IP.
+1. Enable **[!DNL PayPal Payflow Link]** payment method:
+    * On a local machine, it cannot receive API calls from [!DNL PayPal Payflow Link] without a real IP.
 1. Create a simple product.
 1. Create a registered customer without address.
 1. Add the product to cart.
 1. Proceed to Checkout.
 1. Fill in the address. Ensure that the first address is created at this step.
-1. On the **[!UICONTROL Review and Payments]** page select *Credit Card (Payflow Link)* radio button.
-1. Click the *Continue* button:
-    * The checkout page returns to the **[!UICONTROL Review and Payments]** step with the pre-populated address and the expected error message.
+1. On the *[!UICONTROL Review and Payments]* page, select the **[!UICONTROL Credit Card (Payflow Link)** radio button.
+1. Click **[!UICONTROL Continue]**:
+    * The checkout page returns to the *[!UICONTROL Review and Payments]* step with the pre-populated address and the expected error message.
 1. Select *[!UICONTROL Credit Card (Payflow Link)]* radio button again.
-1. Click on the *Continue* button again.
+1. Click on **[!UICONTROL Continue]**.
 
 <u>Expected results</u>:
 
@@ -62,6 +62,5 @@ To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
-
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
