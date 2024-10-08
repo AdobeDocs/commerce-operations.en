@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-60632: Address saved with every order attempt
 
-The ACSD-60632 patch fixes the issue where a new address is saved with each order placement attempt, regardless of whether the order is successfully created or not. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.51 is installed. The patch ID is ACSD-60632. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60632 patch fixes the issue where a new address is saved with each order placement attempt, regardless of whether the order is successfully created or not. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-60632. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
