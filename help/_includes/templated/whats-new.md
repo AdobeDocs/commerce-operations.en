@@ -16,6 +16,18 @@ Learn about new documentation and significant updates to existing documentation.
   </thead>
   <tbody>
     <tr>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirements</a> for the 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 versions.</p>
+</td>
+      <td>technical</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce5bbafb3887c8bfb803f37fe33133fed9a23783">ce5bba</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Published release notes for October 2024 patches:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8-beta1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p3</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p10</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p11</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/93649180699470370f8e4de4f5d544689bb385bc">936491</a> (commit)</td>
+    </tr>
+    <tr>
       <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#fixed-issues">fixed issues</a> in the release notes.</p>
 </td>
       <td>technical</td>

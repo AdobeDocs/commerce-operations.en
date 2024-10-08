@@ -1,8 +1,38 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Oct 8 14:07:17 2024
+updated: Tue Oct 8 14:14:35 2024
 entries:
+- description: Added [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for the 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 versions.
+  versions: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11
+  type: technical
+  date: October 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/988
+  merge_commit: ce5bbafb3887c8bfb803f37fe33133fed9a23783
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.7-p3
+  - 2.4.6-p8
+  - 2.4.5-p10
+  - 2.4.4-p11
+- description: Published release notes for October 2024 patches:<br/>- [2.4.8-beta1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)<br/>-
+    [2.4.7-p3](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p10](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p11](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: 2.4.8
+  type: major-update
+  date: October 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/967
+  merge_commit: 93649180699470370f8e4de4f5d544689bb385bc
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.8
 - description: Updated [fixed issues](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#fixed-issues)
     in the release notes.
   versions: 2.4.8
