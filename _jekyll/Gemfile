@@ -8,3 +8,5 @@ gem 'whatsup_github', git: 'https://github.com/commerce-docs/whatsup_github', br
 gem 'faraday-retry'
 gem 'image_optim'
 gem 'image_optim_pack'
+gem 'ostruct'
+gem 'logger'
