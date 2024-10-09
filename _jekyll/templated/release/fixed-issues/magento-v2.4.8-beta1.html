@@ -1,7 +1,14 @@
 ---
 ---
-# Magento Open Source fixed issues (v2.4.8-beta1)
+# Magento Open Source release notes (v2.4.8-beta1)
 
+## Highlights
+
+{%- assign fixes = site.data.release.highlights.v2-4-8-beta1 %}
+
+The following {{fixes | size }} highlights apply to the Magento Open Source 2.4.8 release.
+
+{%- include release/fixed-issues.html %}
 ## Fixed issues
 
 {%- assign fixes = site.data.release.fixed-issues.v2-4-8-beta1 | where_exp:"item", "item['Custom field (Git Pull Request)'] != empty" %}

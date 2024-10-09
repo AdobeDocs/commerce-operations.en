@@ -1,6 +1,21 @@
 {
+    "2.4.8": {
+        "releases": [
+            {
+                "publishedAt":"2024-10-08T14:08:31Z",
+                "tagName":"2.4.8-beta1",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8"
+            }
+        ],
+        "end-of-support": "????-??-??"
+    },
     "2.4.7": {
         "releases": [
+            {
+                "publishedAt":"2024-10-08T14:03:23Z",
+                "tagName":"2.4.7-p3",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p3"
+            },
             {
                 "publishedAt":"2024-08-13T14:05:10Z",
                 "tagName":"2.4.7-p2",
@@ -20,6 +35,11 @@
     },
     "2.4.6": {
         "releases": [
+{
+                "publishedAt":"2024-10-08T14:05:58Z",
+                "tagName":"2.4.6-p8",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p8"
+            },
             {
                 "publishedAt":"2024-08-13T14:04:05Z",
                 "tagName":"2.4.6-p7",
@@ -65,6 +85,11 @@
     },
     "2.4.5": {
         "releases": [
+            {
+                "publishedAt":"2024-10-08T14:04:47Z",
+                "tagName":"2.4.5-p10",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p10"
+            },
             {
                 "publishedAt":"2024-08-13T14:02:58Z",
                 "tagName":"2.4.5-p9",
@@ -122,6 +147,11 @@
     },
     "2.4.4": {
         "releases": [
+            {
+                "publishedAt":"2024-10-08T14:03:23Z",
+                "tagName":"2.4.4-p11",
+                "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p11"
+            },
             {
                 "publishedAt":"2024-08-13T14:01:42Z",
                 "tagName":"2.4.4-p10",
