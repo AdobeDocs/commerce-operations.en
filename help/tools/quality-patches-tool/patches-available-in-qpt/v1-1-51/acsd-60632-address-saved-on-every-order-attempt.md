@@ -29,7 +29,7 @@ Each time an order placement is attempted, a new address entry is saved in the s
 <u>Steps to reproduce</u>:
 
 1. Enable **[!DNL PayPal Payflow Link]** payment method:
-    * On a local machine, it cannot receive API calls from [!DNL PayPal Payflow Link] without a real IP.
+    * On a local machine, the system cannot receive API calls from [!DNL PayPal Payflow Link] without a real IP.
 1. Create a simple product.
 1. Create a registered customer without address.
 1. Add the product to cart.
