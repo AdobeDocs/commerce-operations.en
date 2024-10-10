@@ -1,7 +1,7 @@
 ---
 title: "ACSD-59967: JavaScript error prevents Google maps from rendering correctly"
 description: Apply the ACSD-59967 patch to fix the Adobe Commerce issue where the JavaScript error prevents Google maps from rendering correctly.
-feature: Admin Workspace, Configuration, API Mesh, CMS
+feature: Admin Workspace, Page Builder, CMS
 role: Admin, Developer
 ---
 # ACSD-59967: JavaScript error prevents Google maps from rendering correctly
