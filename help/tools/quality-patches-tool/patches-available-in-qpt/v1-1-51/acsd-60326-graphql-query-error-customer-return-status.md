@@ -1,10 +1,10 @@
 ---
-title: "ACSD-60326: GraphQL query error on customer [!UICONTROL Returns] status"
+title: "ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error"
 description: Apply the ACSD-60326 patch to fix the Adobe Commerce issue where an error occurs in the GraphQL query for customer [!UICONTROL Returns] status.
 feature: GraphQL, Returns, Customers
 role: Admin, Developer
 ---
-# ACSD-60326: GraphQL query error on customer [!UICONTROL Returns] status gives an error
+# ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error
 
 The ACSD-60326 patch fixes the issue where an error occurs in the GraphQL query for customer [!UICONTROL Returns] status. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-60326. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -40,8 +40,7 @@ GraphQL query on customer [!UICONTROL Returns] status gives an error.
 1. Select **[!UICONTROL Create Returns]**.
 1. Go to **[!UICONTROL Return Items]** > **[!UICONTROL Add Items]** and:
     * Select *WSH12-32-Red* and *WSH12-32-Purple*
-    * Click **[!UICONTROL Add Selected Products to returns]**.
-    * Fill out the return details:
+    * Click **[!UICONTROL Add Selected Products to returns]**:
         * Set **[!UICONTROL Requested]** = *1*
         * Set **[!UICONTROL Return Reason]** to *Out of Service*
         * Set **[!UICONTROL Item Condition]** to *Opened* 
@@ -58,7 +57,7 @@ GraphQL query on customer [!UICONTROL Returns] status gives an error.
 
     ```GraphQL
      mutation {
-      generateCustomerToken(email: "roni_cost@example.com", password: "password")
+      generateCustomerToken(email: "roni_cost@example.com", password: "password") {
         token
        }
     }
