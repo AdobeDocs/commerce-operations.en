@@ -52,7 +52,7 @@ GraphQL query on customer [!UICONTROL Returns] status gives an error.
     * Set **[!UICONTROL Status]** as *Denied* for *WSH12-32-Red*
     * Click **[!UICONTROL Save]**
 1. Create a new order with the same products.
-1. Create an *[!UICONTROL Invoice]*, *[!UICONTROL Shipment]*, and *[!UICONTROL Returns]* for the same products. Authorize both and proceed until the end of the [!UICONTROL Returns] process. Authorize both and proceed until the end of the return process.
+1. Create an *[!UICONTROL Invoice]*, *[!UICONTROL Shipment]*, and *[!UICONTROL Returns]* for the same products. Authorize both and proceed until the end of the [!UICONTROL Returns] process.
 1. Generate a customer token using the following GraphQL query:
 
     ```GraphQL
