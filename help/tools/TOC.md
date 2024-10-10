@@ -622,6 +622,7 @@ feature: Configuration
             - [ACSD-60632: Address saved with every order attempt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
             - [ACSD-61195: Cart GraphQL request fails to return items on final page](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
             - [ACSD-60538: Attributes don't show if a product is disabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+            - [ACSD-60816: NewRelic Browser Monitoring scripts injected by the APM agent are not compliant with CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
         - v1.1.52 {#v1-1-52}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
             - [ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
