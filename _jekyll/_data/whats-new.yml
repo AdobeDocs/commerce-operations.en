@@ -1,8 +1,109 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Aug 13 15:39:10 2024
+updated: Tue Oct 8 14:14:35 2024
 entries:
+- description: Added [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for the 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 versions.
+  versions: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11
+  type: technical
+  date: October 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/988
+  merge_commit: ce5bbafb3887c8bfb803f37fe33133fed9a23783
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.7-p3
+  - 2.4.6-p8
+  - 2.4.5-p10
+  - 2.4.4-p11
+- description: Published release notes for October 2024 patches:<br/>- [2.4.8-beta1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)<br/>-
+    [2.4.7-p3](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p10](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p11](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: 2.4.8
+  type: major-update
+  date: October 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/967
+  merge_commit: 93649180699470370f8e4de4f5d544689bb385bc
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.8
+- description: Updated [fixed issues](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#fixed-issues)
+    in the release notes.
+  versions: 2.4.8
+  type: technical
+  date: October 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/997
+  merge_commit: 03d7916aed86aa3869a0abaf32a9c2678add9bd2
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
+- description: Added [new released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+  versions: 2.4.8, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11
+  type: technical
+  date: October 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/999
+  merge_commit: 295f801219885c6908faea35648878fb7a4d8ec1
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
+  - 2.4.7-p3
+  - 2.4.6-p8
+  - 2.4.5-p10
+  - 2.4.4-p11
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.52 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: technical
+  date: October 4, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/989
+  merge_commit: c2cbbf8032ea9d29dc3c17e146ced81d7137bf77
+  contributor: muntianu
+  membership: false
+  labels:
+  - technical
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.51 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: September 12, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/964
+  merge_commit: a7cd214422842e321284f1ddc62fdab2796078d2
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.50 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: technical
+  date: August 28, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/951
+  merge_commit: 250c0d27d90e76996c86b8b3caaaaef1f1a5610f
+  contributor: muntianu
+  membership: false
+  labels:
+  - technical
+- description: Updated the AWS and Azure [cloud region availability](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/infrastructure/cloud/regions)
+    maps.
+  versions: ''
+  type: major-update
+  date: August 23, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/948
+  merge_commit: 2296ddc7411e882f03c41de434d22c41eae5f10c
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
 - description: Published release notes for the August 2024 security patches:<br/>-
     [2.4.7-p2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
     [2.4.6-p7](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
