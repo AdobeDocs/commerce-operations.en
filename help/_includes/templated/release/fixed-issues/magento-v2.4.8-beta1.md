@@ -137,7 +137,7 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
 
 ## Fixed issues
 
-We have fixed 253 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 254 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -200,6 +200,10 @@ Previously it was possible to create the Duplicate website group price customer 
   * _Fix note_: The system now accepts product image uploads with capital letter file extensions, ensuring a smooth product creation process. Previously, image uploads with capital letter file extensions were refused, forcing users to change the file extension to lowercase.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38831>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [Issue] Set default indexer mode to 'schedule'
+  * _Fix note_: All new indexers are by default in **[!UICONTROL Update by Schedule]** mode.  Previously, the default mode was **[!UICONTROL Update on Save]**. Existing indexers are not affected. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+  * _GitHub issue_: <https://github.com/magento/magento2/issues/36419>
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [Issue] Drop indexer changelog tables on mview unsubscribe
   * _Fix note_: The system now automatically removes unused changelog tables when an index is switched from 'update on schedule' to 'update on save', marking the index as invalid to ensure no entries are missed. Previously, switching an index to 'update on save' would leave unused changelog tables in the system and mark all changed indexes as 'valid'.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/29789>
@@ -293,18 +297,24 @@ We can now update custom-created order statuses, whereas previously, the status 
 ### Braintree
 
 * _BUNDLE-3367_: Pay via LPM
+  * _Fix note_: The system now correctly renders Local Payment Methods (LPM) on initial load, even when a logged-in customer's shipping and billing addresses do not match, ensuring a smooth checkout process. Previously, a mismatch between a customer's shipping and billing addresses would prevent LPM from rendering, causing potential disruptions during checkout.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: Configurable with Virtual as Child Product
+  * _Fix note_: The system now allows express payment methods for configurable products that have a virtual  child product, ensuring a smooth checkout process. Previously, express payment methods were not available when a configurable product with a virtual  child product was added to the cart.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: CVV Verification failed error
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_: Vaulting Via the account Area Issues 247
+  * _Fix note_: The system now allows customers to save new card or PayPal account information across multiple websites without encountering authorization errors. Previously, customers were unable to save new payment methods across different websites and were presented with an authorization error message.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: Ship to an address from a different country
+  * _Fix note_: The system now allows transactions to be processed without errors when shipping to an address from a different country, ensuring a smooth checkout process. Previously, attempting to ship to an address from a different country would result in console errors, despite no visible errors on the frontend.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: Credit Card - Teardown function
+  * _Fix note_: The system now correctly handles the teardown of Braintree PayPal components when a customer navigates back from the payment page to the shipping page, preventing any errors and ensuring that PayPal Express buttons render correctly. Previously, navigating back to the shipping page from the payment page sometimes resulted in an error when trying to teardown the Braintree PayPal components.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_: Shipping Callback for PayPal Express
+  * _Fix note_: The system now correctly displays available shipping methods in the PayPal Express modal, allowing customers to select their preferred shipping method before proceeding to the review page or completing their transaction. Previously, no shipping methods were available to select from in the PayPal Express modal, requiring customers to select a shipping method on a separate review page before they could complete their transaction.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Cart & Checkout
