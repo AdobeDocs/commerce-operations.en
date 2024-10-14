@@ -1,12 +1,12 @@
 ---
-title: "ACSD-59865: Cart price rule fails to cancel previous rules due to insufficient quantity"
-description: Apply the ACSD-59865 patch to fix the Adobe Commerce issue where the *Discount quantity step* value in *Fixed amount discount,* *Percent of product price discount,* and *Buy X get Y* cart price rules no longer cancels the action of previous rules.
+title: "ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity"
+description: Apply the ACSD-59865 patch to fix the Adobe Commerce issue where the *Discount quantity step* value in *Fixed amount discount,* *Percent of product price discount,* and *Buy X get Y* [!UICONTROL Cart Price Rules] no longer cancels the action of previous rules.
 feature: Price Rules
 role: Admin, Developer
 ---
-# ACSD-59865: Cart price rule fails to cancel previous rules due to insufficient quantity
+# ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity
 
-The ACSD-59865 patch fixes the issue where the *[!UICONTROL Discount quantity step]* value in *[!UICONTROL Fixed amount discount],* *[!UICONTROL Percent of product price discount],* and *[!UICONTROL Buy X get Y]* cart price rules no longer cancels the action of previous rules. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59865. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-59865 patch fixes the issue where the *[!UICONTROL Discount quantity step]* value in *[!UICONTROL Fixed amount discount],* *[!UICONTROL Percent of product price discount],* and *[!UICONTROL Buy X get Y]* [!UICONTROL Cart Price Rules] no longer cancels the action of previous rules. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59865. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,37 +24,37 @@ The ACSD-59865 patch fixes the issue where the *[!UICONTROL Discount quantity st
 
 ## Issue
 
-Cart price rule fails to cancel previously applied discounts when product quantity in the cart is insufficient for the rules to apply.
+The [!UICONTROL Cart Price Rule] fails to cancel previously applied rules due to an insufficient product quantity in the cart.
 
 <u>Steps to reproduce</u>:
 
 1. Log in as an admin.
 1. Go to **[!UICONTROL Marketing]** > **[!UICONTROL Cart Price Rules]** and click on **[!UICONTROL Add New rule]**.
-    * Set **[!UICONTROL Name]** = Test - *1*
-    * Select all websites and customer groups
-    * Set **[!UICONTROL priority]** = *0*
-    * Go to the *Actions* section:
-        * Apply: Percent of product price discount
+    * Set **[!UICONTROL Rule Name]** = *Test - 1*
+    * Select all *Websites* and *Customer groups*
+    * Set **[!UICONTROL Priority]** = *0*
+    * Go to the **[!UICONTROL Actions]** section:
+        * Set **[!UICONTROL Apply]** = *Percent of product price discount*
         * Set **[!UICONTROL Discount amount]** = *10*
-        * Set **[!UICONTROL Maximum Qty Discount]** = *100*
-        * Set **[!UICONTROL Discount Qty Step]** (Buy X) = *0*
-        * Set **[!UICONTROL Discard subsequent rules]** = *no*
+        * Set **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+        * Set **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
+        * Set **[!UICONTROL Discard subsequent rules]** to *No*
 1. Clear the cache.
 1. Go to the Storefront, add one item to the cart, and proceed to *checkout/cart*.
 1. Verify that the *10%* discount is applied to your cart.
 1. Return to the **[!UICONTROL Cart Price Rules]** and create a new rule.
-    * Set **[!UICONTROL Name]** = Test - *2*
-    * Select all websites and customer groups
-    * Set **[!UICONTROL priority]** = *2*
-    * Navigate to the *Actions* section:
-        * Apply: Percent of product price discount
+    * Set **[!UICONTROL Rule Name]** = *Test - 2*
+    * Select all **[!UICONTROL Websites]** and **[!UICONTROL Customer Groups]**
+    * Set **[!UICONTROL Priority]** = *2*
+    * Navigate to the **[!UICONTROL Actions]** section:
+        * Set **[!UICONTROL Apply]** = *Percent of product price discount*
         * Set **[!UICONTROL Discount amount]** = *20*
-        * Set **[!UICONTROL Maximum Qty Discount]** Applied To = *10*
-        * Set **[!UICONTROL Discount Qty Step] (Buy X) = *3*
+        * Set **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+        * Set **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
 1. Clear the cache.
 1. Go back to the Storefront again.
 1. Update the cart to refresh the rules. Verify that the *10%* discount is no longer applied.
-1. Add items to your cart until the quantity meets the *step* value required for the second rule.
+1. Add items to your cart until the quantity meets the *Step* value required for the second rule.
 
 <u>Expected results</u>:
 
