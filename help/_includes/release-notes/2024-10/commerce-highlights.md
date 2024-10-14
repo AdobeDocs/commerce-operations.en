@@ -12,7 +12,7 @@ The following security enhancements in this release improve compiance with the l
 >
 >For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Settings</strong></td>
@@ -30,7 +30,7 @@ The following security enhancements in this release improve compiance with the l
 
 The following platform upgrades for this release ensure that Adobe Commerce remains a robust and reliable platform, ready to meet the demands of modern commerce environments:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Database</strong></td>
@@ -80,7 +80,7 @@ The following platform upgrades for this release ensure that Adobe Commerce rema
 
 This release includes the following performance enhancements:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Indexers</strong></td>
@@ -93,7 +93,7 @@ This release includes the following performance enhancements:
 
 This release includes the following quality enhancements:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>Inventory</strong></td>
@@ -110,7 +110,7 @@ This release includes the following quality enhancements:
 
 This release includes the following GraphQL enhancements:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>General enhancements</strong></td>
