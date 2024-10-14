@@ -1,7 +1,7 @@
 ---
 title: "ACSD-59865: Cart price rule fails to cancel previous rules due to insufficient quantity"
 description: Apply the ACSD-59865 patch to fix the Adobe Commerce issue where the *Discount quantity step* value in *Fixed amount discount,* *Percent of product price discount,* and *Buy X get Y* cart price rules no longer cancels the action of previous rules.
-feature: Price Rules, Products
+feature: Price Rules
 role: Admin, Developer
 ---
 # ACSD-59865: Cart price rule fails to cancel previous rules due to insufficient quantity
