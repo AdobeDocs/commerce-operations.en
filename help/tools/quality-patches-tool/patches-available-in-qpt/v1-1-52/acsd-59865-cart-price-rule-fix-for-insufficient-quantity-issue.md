@@ -58,7 +58,7 @@ The [!UICONTROL Cart Price Rule] fails to cancel previously applied rules due to
 
 <u>Expected results</u>:
 
-The first cart price rule is applied when the second rule's conditions are met.
+The first [!UICONTROL Cart Price Rule] is applied when the second rule's conditions are met.
 
 <u>Actual results</u>:
 
