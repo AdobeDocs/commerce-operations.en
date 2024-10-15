@@ -28,7 +28,7 @@ JavaScript error prevents [!DNL Google Maps] from rendering correctly.
 
 <u>Steps to reproduce</u>:
 
-1. Generate a valid Google Maps keys.
+1. Generate a valid [!DNL Google Maps] key.
 1. Configure the Google Maps API keys under Stores > **[!UICONTROL Configuration]** > General > Content Management.
 1. Add your Google API Key to **[!UICONTROL Google Maps API Key]** field, and save the **[!UICONTROL Configuration]**.
 1. Go to **Admin** > **Content** > **Pages** > **Create New Page**.
