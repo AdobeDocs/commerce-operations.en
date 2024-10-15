@@ -1,7 +1,7 @@
 ---
 title: "ACSD-60816: *NewRelic* Browser Monitoring scripts injected by the APM agent are not compliant with *CSP*"
 description: Apply the ACSD-60816 patch to fix the Adobe Commerce issue where the *NewRelic* Browser Monitoring scripts injected by the APM agent are not compliant with *CSP* (Content Security Policy), preventing their execution.
-feature: Admin Workspace, Page Builder, CMS
+feature: Tools and External Services, Checkout
 role: Admin, Developer
 ---
 # ACSD-59967: JavaScript error prevents Google maps from rendering correctly
