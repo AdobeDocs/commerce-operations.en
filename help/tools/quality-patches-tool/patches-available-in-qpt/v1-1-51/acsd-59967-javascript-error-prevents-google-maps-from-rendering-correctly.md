@@ -30,7 +30,7 @@ JavaScript error prevents [!DNL Google Maps] from rendering correctly.
 
 1. Generate a valid [!DNL Google Maps] key.
 1. Configure the [!DNL Google Maps] API key under **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Content Management]**.
-1. Add your Google API Key to **[!UICONTROL Google Maps API Key]** field, and save the **[!UICONTROL Configuration]**.
+1. Add your [!DNL Google API Key] to **[!UICONTROL Google Maps API Key]** field and save the configuration.
 1. Go to **Admin** > **Content** > **Pages** > **Create New Page**.
 1. Add a **[!UICONTROL Row]** element and a **[!UICONTROL Maps]** element.
 
