@@ -36,7 +36,7 @@ JavaScript error prevents [!DNL Google Maps] from rendering correctly.
 
 <u>Expected results</u>:
 
-No JavaScript errors is present in console, and the map renders properly on the *Storefront* and *Admin*.
+No JavaScript errors are present in the console, and the map renders properly on the *Storefront* and *Admin*.
 
 <u>Actual results</u>:
 
