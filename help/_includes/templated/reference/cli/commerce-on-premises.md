@@ -905,7 +905,9 @@ Run jobs only from specified group
 
 Exclude jobs from the specified group
 
-- Default: `[]`- Accepts multiple values
+- Default: `[]`
+- Accepts multiple values
+
 #### `--bootstrap`
 
 Add or override parameters of the bootstrap
@@ -4869,32 +4871,44 @@ Deploy files using specified strategy.
 
 Generate files only for the specified areas.
 
-- Default: `all`- Accepts multiple values
+- Default: `all`
+- Accepts multiple values
+
 #### `--exclude-area`
 
 Do not generate files for the specified areas.
 
-- Default: `none`- Accepts multiple values
+- Default: `none`
+- Accepts multiple values
+
 #### `--theme`, `-t`
 
 Generate static view files for only the specified themes.
 
-- Default: `all`- Accepts multiple values
+- Default: `all`
+- Accepts multiple values
+
 #### `--exclude-theme`
 
 Do not generate files for the specified themes.
 
-- Default: `none`- Accepts multiple values
+- Default: `none`
+- Accepts multiple values
+
 #### `--language`, `-l`
 
 Generate files only for the specified languages.
 
-- Default: `all`- Accepts multiple values
+- Default: `all`
+- Accepts multiple values
+
 #### `--exclude-language`
 
 Do not generate files for the specified languages.
 
-- Default: `none`- Accepts multiple values
+- Default: `none`
+- Accepts multiple values
+
 #### `--jobs`, `-j`
 
 Enable parallel processing using the specified number of jobs.
