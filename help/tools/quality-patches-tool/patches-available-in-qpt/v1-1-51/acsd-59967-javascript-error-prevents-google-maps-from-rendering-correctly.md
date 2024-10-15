@@ -4,7 +4,7 @@ description: Apply the ACSD-59967 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Page Builder, CMS
 role: Admin, Developer
 ---
-# ACSD-59967: JavaScript error prevents Google maps from rendering correctly
+# ACSD-59967: JavaScript error prevents [!DNL Google Maps] from rendering correctly
 
 The ACSD-59967 patch fixes the issue where the JavaScript error prevents Google maps from rendering correctly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-59967. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
