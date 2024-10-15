@@ -32,7 +32,7 @@
 # GLOBAL OPTIONS PRINTING
 {%- endcomment %}
 
-## Global options
+### Global options
 {% assign first_command_options = commands[0].definition.options -%}
 {% for option in first_command_options -%}
    {%- if global_options contains option[0] %}

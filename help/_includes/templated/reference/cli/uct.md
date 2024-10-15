@@ -2,19 +2,21 @@
 
 <!-- All the assigned and captured content is used in the included template -->
 
+
+
 <!-- The template to render with above values -->
 **Version**: 3.0.19
 
 This reference contains 9 commands available through the `bin/uct` command-line tool.
 The initial list is auto generated using the `bin/uct list` command at Adobe Commerce.
 
+## General
+
 Learn more about the tool in [Overview](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
->[!NOTE]
->
->This reference is generated from the application codebase. To change the content, you can update the source code for the corresponding command implementation in the [codebase](https://github.com/magento) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+This reference is generated from the application codebase. To change the content, you can update the source code for the corresponding command implementation in the [codebase](https://github.com/magento) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
-## Global options
+### Global options
 
 #### `--help`, `-h`
 
