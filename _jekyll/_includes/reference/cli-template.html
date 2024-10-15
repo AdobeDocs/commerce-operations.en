@@ -18,7 +18,7 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 >
 >This reference is generated from the application codebase. To change the content, you can update the source code for the corresponding command implementation in the [codebase](https://github.com/magento) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
-{%- include reference/global-options.md %}
+{%- include reference/global-options.html %}
 
 {%- comment %}
 # COMMAND REFERENCE
@@ -41,14 +41,14 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 ```
 {% endunless %}
 
-{%- include reference/arguments.md -%}
+{%- include reference/arguments.html -%}
 {%- unless options.size == 0 %}
 ### Options
 
 For global options, see [Global options](#global-options).
 {% for option in options %}
 {%- unless global_options contains option[0] %}
-{% include reference/options.md -%}
+{% include reference/options.html -%}
 {% endunless -%}
 {% endfor -%}
 {% endunless -%}
