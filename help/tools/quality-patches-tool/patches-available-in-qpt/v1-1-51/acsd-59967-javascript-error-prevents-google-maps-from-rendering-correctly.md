@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p1
 
 ## Issue
 
-JavaScript error prevents Google maps from rendering correctly.
+JavaScript error prevents [!DNL Google Maps] from rendering correctly.
 
 <u>Steps to reproduce</u>:
 
