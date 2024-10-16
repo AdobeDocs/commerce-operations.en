@@ -28,25 +28,16 @@ The `bin/magento setup: static-content:deploy --jobs 4` command encounters multi
 
 <u>Steps to reproduce</u>:
 
-1. Create a few categories and add products (for example, Category 1 with Category 2).
-2. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** and enable *[!UICONTROL Company and Shared Catalog]*.
-3. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]** and modify the Default Catalog.
-4. From the **[!UICONTROL Select]** dropdown, select **[!UICONTROL Set Pricing and Structure]**, and click **[!UICONTROL Configure]**.
-5. Under the *Category 1 > Category 2* category, unselect some products that shouldn't be in the [!UICONTROL Shared Catalog].
-6. Click **[!UICONTROL Next]** and generate the catalog.
-7. On the Storefront, create a customer account.
-8. Go to the *Category 1 > Category 2* category. It displays only the products that were assigned to the [!UICONTROL Shared Catalog].
-9. Go to **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL Site Map]** and generate a new sitemap.
-10. Open the `sitemap.xml` on the Storefront.
-11. Search for the product(s) that you didn't include in the [!UICONTROL Shared Catalog].
+1. Specify a port in the database connection in `app/etc/env.php`.
+1. Run `bin/magento setup:static-content:deploy --jobs 4` command.
 
 <u>Expected results</u>:
 
-The sitemap doesn't contain links to products and categories that are not assigned to the [!UICONTROL Shared Catalog].
+The static content deployment finishes successfully.
 
 <u>Actual results</u>:
 
-The sitemap contains links to products and categories that are not assigned to the [!UICONTROL Shared Catalog].
+The command fails with the *Port must be configured within host parameter* error.
 
 ## Apply the patch
 
