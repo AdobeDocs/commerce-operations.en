@@ -15,6 +15,19 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.53 {#v1-1-53}
+
+* **ACSD-48318** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where environment emulation nesting is not allowed. Now, the emulation starts during the send() call once the emulation stops during the getInfoBlockHtml() call. 
+* **ACSD-59930** (for Adobe Commerce >=2.4.6 <2.4.8) - Improves performance of the company's create, save, and delete flows. 
+* **ACSD-60584** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where an access token created for the user on one website is allowed to access or change customer information on other websites. 
+* **ACSD-60804** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where editing a customer that is linked to a deleted company causes the error "Call to a member function getSuperUserId() on null". 
+* **ACSD-61133** (for Adobe Commerce >=2.4.4-p5 <2.4.5 || >=2.4.5-p4 <2.4.6 || >=2.4.6-p2 <2.4.8) - Fixes the issue where sales_clean_quotes cron deletes quotes from unapproved purchase orders.
+* **ACSD-61528** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where retrieving roles from the Admin using GraphQL returns no results.  
+* **ACSD-61553** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where Cart Price Rule discounts are incorrectly calculated when multiple discounts with different priorities and "Maximum Qty Discount is Applied To" are applied to the product. 
+* **ACSD-61667** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Improves inventory performance for creating shipping in case of many sources with in-store pickup. 
+* **ACSD-61969** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where the user is required to type in the coupon code exactly as it is configured taking into consideration uppercase or lowercase.
+* Updated patches: ACSD-54989, ACSD-60632
+
 ## v1.1.52 {#v1-1-52}
 
 * **BUNDLE-3375** (for Adobe Commerce and Magento Open Source) - Adds all the necessary fields to fulfill the 3DS VISA mandate requirements when using [!DNL Braintree] as a payment gateway.
