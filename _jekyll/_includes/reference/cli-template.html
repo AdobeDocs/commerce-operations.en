@@ -12,11 +12,17 @@
 This reference contains {{ commands | size }} commands available through the `{{ tool }}` command-line tool.
 The initial list is auto generated using the `{{ tool }} list` command at {{ edition }}.
 
-{{- intro }}
+## General
 
->[!NOTE]
->
->This reference is generated from the application codebase. To change the content, you can update the source code for the corresponding command implementation in the [codebase](https://github.com/magento) repository and submit your changes for review. Another way is to _Give us feedback_ (find the link at the upper right). For contribution guidelines, see [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+{{ intro }}
+
+This reference documentation is generated from the application source code. To change the documentation, you should open a pull request for the corresponding command in the relevant [codebase](https://github.com/magento) repository. See [Code Contributions](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) for more information.
+
+{%- include reference/global-options.html %}
+
+{%- comment %}
+# COMMAND REFERENCE
+{%- endcomment %}
 
 {%- for command in commands %}
   {%- assign arguments = command.definition.arguments %}
@@ -29,67 +35,24 @@ The initial list is auto generated using the `{{ tool }} list` command at {{ edi
 ```
 
 {{ command.description | strip_html }}
-
 {% unless command.help == command.description %}
 ```
 {{ command.help | strip_html }}
 ```
 {% endunless %}
-{%- unless arguments.size == 0 %}
-{%- for argument in arguments %}
-  {%- for item in argument %}
-    {%- if item.name %}
 
-### `{{ item.name }}`
-
-{{ item.description | strip_html }}
-   {% unless item.default == nil %}
-   {%- if item.default == false or (item.default == empty and item.default != '') %}
--  Default: `{{ item.default | inspect }}`
-   {% else %}
--  Default: `{{ item.default }}`
-   {% endif %}
-   {%- endunless %}
-   {%- if item.is_required %}
--  Required
-   {%- endif %}
-   {%- if item.is_array %}
--  Array
-   {%- endif %}
-   {%- endif %}
-  {%- endfor %}
-{%- endfor %}
-{% endunless %}
+{%- include reference/arguments.html -%}
 {%- unless options.size == 0 %}
- {%- for option in options %}
- {%- assign opt = option[1] %}
-{%- if opt.shortcut contains '-' %}
-### `{{ opt.name }}`, `{{ opt.shortcut }}`
-{%- else %}
-### `{{ opt.name }}`
+### Options
 
-{%- endif %}
-
-{{ opt.description | strip_html | replace: '|', '\|' }}
-   {% unless opt.default == nil %}
-   {%- if opt.default == false or opt.default == empty and opt.default != '' %}
--  Default: `{{ opt.default | inspect }}`
-   {%- else %}
--  Default: `{{ opt.default }}`
-   {%- endif %}
-   {%- endunless %}
-   {%- if opt.is_value_required %}
--  Requires a value
-   {%- elsif opt.accept_value and opt.is_multiple %}
--  Accepts multiple values
-   {%- elsif opt.accept_value and opt.is_multiple == false %}
--  Accepts a value
-   {%- else %}
--  Does not accept a value
-   {%- endif %}
-{% endfor %}
-{%- endunless %}
-{%- endfor %}
+For global options, see [Global options](#global-options).
+{% for option in options %}
+{%- unless global_options contains option[0] %}
+{% include reference/options.html -%}
+{% endunless -%}
+{% endfor -%}
+{% endunless -%}
+{% endfor -%}
 {%- else %}
 
 There is no data available for this reference at the moment.
