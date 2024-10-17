@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-60816: [!DNL New Relic] browser monitoring scripts injected by APM agent are not compliant with CSP
 
-The ACSD-60816 patch fixes the issue where the *NewRelic* Browser Monitoring scripts injected by the APM agent are not compliant with *CSP*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-60816. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60816 patch fixes the issue where the [!DNL New Relic] browser monitoring scripts injected by the APM agent are not compliant with Content Security Policy (CSP). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-60816. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
