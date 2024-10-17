@@ -16,7 +16,7 @@ Adobe Commerce (all deployment methods) 2.4.6-p6
 
 **Compatible with Adobe Commerce versions:**
 
-Adobe Commerce (all deployment methods) =2.4.4-2.4.7
+Adobe Commerce (all deployment methods) 2.4.4 - 2.4.6-p8
 
 >[!NOTE]
 >
