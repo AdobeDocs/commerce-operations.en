@@ -1,5 +1,5 @@
 ---
-title: "ACSD-60816: *NewRelic* Browser Monitoring scripts injected by the APM agent are not compliant with *CSP*"
+title: "ACSD-60816: [!DNL New Relic] browser monitoring scripts injected by APM agent are not compliant with CSP"
 description: Apply the ACSD-60816 patch to fix the Adobe Commerce issue where the *NewRelic* Browser Monitoring scripts injected by the APM agent are not compliant with *CSP* (Content Security Policy), preventing their execution.
 feature: Tools and External Services, Checkout
 role: Admin, Developer
