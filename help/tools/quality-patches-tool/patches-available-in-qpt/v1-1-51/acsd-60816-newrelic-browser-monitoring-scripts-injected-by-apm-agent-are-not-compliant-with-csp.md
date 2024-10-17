@@ -33,7 +33,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.6-p8
 
 <u>Expected results</u>:
 
-No CSP error in developer console.
+There is no CSP error in the developer console.
 
 <u>Actual results</u>:
 
