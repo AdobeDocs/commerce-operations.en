@@ -1,10 +1,10 @@
 ---
-title: "ACSD-61366: The `bin/magento setup` command encounters multiple job failures with an error"
+title: "ACSD-61366: The `bin/magento setup:static-content:deploy --jobs` command encounters multiple job failures with an error"
 description: Apply the ACSD-61366 patch to fix the Adobe Commerce issue where the `bin/magento setup:static-content:deploy --jobs 4` command encounters multiple job failures with the *Port must be configured within the host parameter* error, despite specifying the port for the DB connection.
 feature: SCD
 role: Admin, Developer
 ---
-# ACSD-61366: The `bin/magento setup` command encounters multiple job failures with an error
+# ACSD-61366: The `bin/magento setup:static-content:deploy --jobs` command encounters multiple job failures with an error
 
 The ACSD-61366 patch fixes the issue where the `bin/magento setup:static-content:deploy --jobs 4` command encounters multiple job failures with the *Port must be configured within the host parameter* error, despite specifying the port for the DB connection. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-61366. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
