@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.6-p8
 
 ## Issue
 
-*NewRelic* Browser Monitoring scripts injected by the APM agent are not compliant with *CSP*.
+[!DNL New Relic] browser monitoring scripts injected by the APM agent are not compliant with CSP.
 
 <u>Steps to reproduce</u>:
 
