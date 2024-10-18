@@ -17,7 +17,7 @@ QPT v1.1.53 includes the following patches:
 1. **ACSD-61133**: Fixes the issue where the `sales_clean_quotes` cron deletes quotes from unapproved purchase orders.
 1. **ACSD-61528**: Fixes the issue where retrieving roles from the [!UICONTROL Admin] using GraphQL returns no results.  
 1. **ACSD-61553**: Fixes the issue where *[!UICONTROL Cart Price Rule]* discounts are incorrectly calculated when multiple discounts with different priorities and *[!UICONTROL Maximum Qty Discount is Applied To]* are applied to the product. 
-1. **ACSD-61667**: Improves inventory performance for creating shipping in the case of many sources with in-store pickup. 
-1. **ACSD-61969**: Fixes the issue where the user is required to type in a case-sensitive coupon code to match exactly as the coupon code was configured.
+1. **ACSD-61667**: Improves inventory performance for creating shipping in the case of many sources with *In-Store Pickup*. 
+1. **ACSD-61969**: Fixes the issue where the user is required to type in a case-sensitive coupon code that exactly matches the configured coupon code.
 
 Use the menu on the left to navigate to a specific patch page.
