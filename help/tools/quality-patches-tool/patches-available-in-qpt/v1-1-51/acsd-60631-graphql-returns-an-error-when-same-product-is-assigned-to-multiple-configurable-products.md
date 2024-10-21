@@ -1,12 +1,12 @@
 ---
-title:"ACSD-60631: GraphQL returns an error when same product is assigned to multiple configurable products'
-description: Apply the ACSD-60631 patch to fix the Adobe Commerce issue where a GraphQL query returns an error when the same product is assigned to multiple configurable products.
+title:"ACSD-60631: Graphql returns an error when same product is assigned to multiple configurable products'
+description: Apply the ACSD-60631 patch to fix the Adobe Commerce issue where Graphql returns an error when same product is assigned to multiple configurable products
 feature: Attributes, GraphQL
 role: Admin, Developer
 ---
-# ACSD-60631: GraphQL query returns an error when the same product is assigned to multiple configurable products
+# ACSD-60631: Graphql returns an error when same product is assigned to multiple configurable products
 
-The ACSD-60631 patch fixes the issue where a GraphQL query returns an error when the same product is assigned to multiple configurable products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-60631. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60631 patch fixes the issue Graphql returns an error when same product is assigned to multiple configurable products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-60631. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -16,7 +16,7 @@ Adobe Commerce (all deployment methods) 2.4.7-p1
 
 **Compatible with Adobe Commerce versions:**
 
-Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p3
+Adobe Commerce (all deployment methods) 2.4.7 - 2.4.8
 
 >[!NOTE]
 >
@@ -24,57 +24,56 @@ Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p3
 
 ## Issue
 
-A GraphQL query returns an error when the same product is assigned to multiple configurable products.
+Graphql returns an error when same product is assigned to multiple configurable products.
 
 <u>Steps to reproduce</u>:
 
-1. Create a simple product with an attribute *color*.
-1. Create two configurable products and assign the simple product from step *1*.
-1. Run the GraphQL query (filtering the products by the `url_key` of the configurable products).
+1. Create a simple product with an *attribute color*.
+1. Create *2* configurable products and assigned the simple product from step *1*.
+1. Run the GraphQL query. Ensure that products are filtered by the URL keys of the configurable products.
 
-```GraphQL
-   {
-
-     products(filter: { url_key: { in : ["configurable-1", "configurable-2"] } }){
-       items {
-         id
-         attribute_set_id
-         name
-         sku
-         __typename
-         price_range{
-           minimum_price{
-             regular_price{
-               value
-               currency
-              }
-           }
-         }
-         categories {
+```
+{
+  products(filter: { url_key: { in : ["configurable-1", "configurable-2"] } }) {
+    items {
+      id
+      attribute_set_id
+      name
+      sku
+      __typename
+      price_range{
+        minimum_price{
+          regular_price{
+            value
+            currency
+          }
+        }
+      }
+      categories {
+        id
+      }
+      ... on ConfigurableProduct {
+        configurable_options {
+          id
+          attribute_id_v2
+          label
+          position
+          use_default
+          attribute_code
+          values {
+            value_index
+            label
+          }
+          product_id
+        }
+        variants {
+          product {
             id
-         }
-         ... on ConfigurableProduct {
-           configurable_options {
-             id
-             attribute_id_v2
-             label
-             position
-             use_default
-             attribute_code
-              values {
-               value_index
-               label
-             }
-             product_id
-           }
-           variants {
-             product {
-               id
-               name
-               sku
-                attribute_set_id
-               ... on PhysicalProductInterface {
-                 weight
+            name
+            sku
+            attribute_set_id
+            ... on PhysicalProductInterface {
+              weight
             }
             price_range{
               minimum_price{
@@ -94,16 +93,17 @@ A GraphQL query returns an error when the same product is assigned to multiple c
         }
       }
     }
-
+  }
+}
 ```
 
 <u>Expected results</u>:
 
-The GraphQL query returns no error.
+The GraphQL response returns no errors.
 
 <u>Actual results</u>:
 
-The GraphQL query returns an error.
+The GraphQL response returns an error.
 
 ## Apply the patch
 
