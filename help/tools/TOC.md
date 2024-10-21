@@ -623,7 +623,7 @@ feature: Configuration
             - [ACSD-61195: Cart GraphQL request fails to return items on final page](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
             - [ACSD-60538: Attributes don't show if a product is disabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
             - [ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
-            - [ACSD-59786: GraphQL returns an error when fetching a quote ID for an expired quote](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired%20quote.md)
+            - [ACSD-59786: GraphQL returns an error when fetching a quote ID for an expired quote](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.md)
         - v1.1.52 {#v1-1-52}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
             - [ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
