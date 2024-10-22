@@ -52,7 +52,7 @@ Install the Adobe Commerce B2B modules.
 
 1. Try to delete any of the shared catalogs using the following REST API call:
 
-    ```
+    ```REST
     /rest/default/V1/sharedCatalog/4
     ```
 
