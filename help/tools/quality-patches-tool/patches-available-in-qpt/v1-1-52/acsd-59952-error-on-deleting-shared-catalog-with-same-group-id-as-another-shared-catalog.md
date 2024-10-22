@@ -59,7 +59,7 @@ Install the Adobe Commerce B2B modules.
 <u>Expected results</u>:
 
 * Creating multiple shared catalogs assigned to the same `customer_group_id` is not possible.
-1. The shared catalog in the above case is deleted successfully.
+* The shared catalog in the above case is deleted successfully.
 
 <u>Actual results</u>:
 
