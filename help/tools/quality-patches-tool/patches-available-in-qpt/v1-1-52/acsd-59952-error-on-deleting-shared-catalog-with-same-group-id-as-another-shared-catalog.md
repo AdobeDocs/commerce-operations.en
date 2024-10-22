@@ -35,7 +35,7 @@ Install the Adobe Commerce B2B modules.
 
 1. Create multiple shared catalogs assigned to the same `customer_group_id` using the following REST API call:
 
-    ```
+    ```REST
     {
         "sharedCatalog": {
             "name": "test1",
