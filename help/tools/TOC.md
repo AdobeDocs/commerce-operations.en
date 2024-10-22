@@ -626,10 +626,13 @@ feature: Configuration
             - [ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
         - v1.1.52 {#v1-1-52}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
+            - [ACSD-61366: bin/magento setup:static-content:deploy --jobs 4 command fails with error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
             - [ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
             - [ACSD-60590: Enhancing performance of Bestsellers Aggregated Daily Report generation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
             - [ACSD-59925: Sorting items in [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
             - [ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient quantity](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+        - v1.1.53 {#v1-1-53}
+            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Command-line tools reference {#cli-reference}
