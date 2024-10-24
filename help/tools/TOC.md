@@ -622,6 +622,7 @@ feature: Configuration
             - [ACSD-60632: Address saved with every order attempt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
             - [ACSD-61195: Cart GraphQL request fails to return items on final page](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
             - [ACSD-60538: Attributes don't show if a product is disabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+            - [ACSD-60816: [!DNL New Relic] browser monitoring scripts injected by the APM agent are not compliant with CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
             - [ACSD-59967: JavaScript error prevents [!DNL Google Maps] from rendering correctly](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
             - [ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
         - v1.1.52 {#v1-1-52}
