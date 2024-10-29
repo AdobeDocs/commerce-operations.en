@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p3
 
 ## Issue
 
-Graphql returns an error when same product is assigned to multiple configurable products.
+A GraphQL query returns an error when the same product is assigned to multiple configurable products.
 
 <u>Steps to reproduce</u>:
 
