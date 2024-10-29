@@ -29,9 +29,7 @@ A GraphQL query returns an error when fetching a `quote_id` for an expired quote
 <u>Steps to reproduce</u>:
 
 1. Enable **[!UICONTROL Companies]** and **[!UICONTROL Purchase Orders]**.
-    
      * **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** and set **[!UICONTROL Enable Company]** to *Yes*.
-     
      * **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** > **[!UICONTROL Order Approval Configuration]** and set **[!UICONTROL Enable Purchase Orders]** to *Yes*.
 1. Create a new company and set **[!UICONTROL Enable Purchase Orders]** to *Yes* for the same.
 1. Create a simple product and assign it to a category.
