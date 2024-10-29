@@ -28,7 +28,7 @@ Improves performance of the company's create, save, and delete flows.
 
 <u>Prerequisites:</u>:
 
-Adobe Commerce B2B modules are installed and enabled.
+Install and enable Adobe Commerce B2B modules.
 
 <u>Steps to reproduce</u>:
 
