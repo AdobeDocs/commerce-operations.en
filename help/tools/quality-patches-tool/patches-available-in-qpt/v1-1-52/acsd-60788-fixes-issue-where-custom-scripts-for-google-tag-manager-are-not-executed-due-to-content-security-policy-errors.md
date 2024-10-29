@@ -16,7 +16,7 @@ Adobe Commerce (all deployment methods) 2.4.7-p1
 
 **Compatible with Adobe Commerce versions:**
 
-Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p
+Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Custom scripts for [!DNL Google Tag] Manager are not executed due to Content Sec
 </script>
 ```
 
-1. Flush caches after setting up the GTM.
+1. Flush caches after setting up the *GTM*.
 1. Open the developer console in your browser.
 1. Open the Home Page.
 
