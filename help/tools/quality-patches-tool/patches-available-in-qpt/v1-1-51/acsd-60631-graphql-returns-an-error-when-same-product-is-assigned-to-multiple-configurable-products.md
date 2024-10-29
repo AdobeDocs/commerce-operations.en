@@ -99,7 +99,7 @@ A GraphQL query returns an error when the same product is assigned to multiple c
 
 <u>Expected results</u>:
 
-The GraphQL response returns no errors.
+The GraphQL query returns no errors.
 
 <u>Actual results</u>:
 
