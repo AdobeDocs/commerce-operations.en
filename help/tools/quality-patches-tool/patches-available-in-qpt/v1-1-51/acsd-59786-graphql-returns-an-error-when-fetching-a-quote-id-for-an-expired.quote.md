@@ -1,12 +1,12 @@
 ---
-title: "ACSD-59786: GraphQL returns an error when fetching a quote ID for an expired quote"
-description: Apply the ACSD-59786 patch to fix the Adobe Commerce issue where the GraphQL returns an error when fetching a quote ID for an expired quote.
+title: "ACSD-59786: GraphQL returns an error when fetching a `quote_id` for an expired quote"
+description: Apply the ACSD-59786 patch to fix the Adobe Commerce issue where a GraphQL query returns an error when fetching a `quote_id` for an expired quote.
 feature: GraphQL, Quotes, Companies
 role: Admin, Developer
 ---
-# ACSD-59786: GraphQL returns an error when fetching a quote ID for an expired quote
+# ACSD-59786: GraphQL returns an error when fetching a `quote_id` for an expired quote
 
-The ACSD-59786 patch fixes the issue where the GraphQL returns an error when fetching a quote ID for an expired quote. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-59786. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-59786 patch fixes the issue where a GraphQL query returns an error when fetching a `quote_id` for an expired quote. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 is installed. The patch ID is ACSD-59786. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -16,7 +16,7 @@ The ACSD-59786 patch fixes the issue where the GraphQL returns an error when fet
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.6 -2.4.8 
+* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.7-p3 
 
 >[!NOTE]
 >
@@ -24,26 +24,26 @@ The ACSD-59786 patch fixes the issue where the GraphQL returns an error when fet
 
 ## Issue
 
-GraphQL returns an error when fetching a quote ID for an expired quote
+A GraphQL query returns an error when fetching a `quote_id` for an expired quote.
 
 <u>Steps to reproduce</u>:
 
-1. Enable **[!UICONTROL Companies and Purchase Orders]**.
+1. Enable **[!UICONTROL Companies]** and **[!UICONTROL Purchase Orders]**.
     
-     * **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** > **[!UICONTROL Enable Company]**.
+     * **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** and set **[!UICONTROL Enable Company]** to *Yes*.
      
-     * **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** > **[!UICONTROL Order Approval Configuration]** > **[!UICONTROL Enable Purchase Orders]**.
-1. Create a new company and set an **[!UICONTROL Enable Purchase Orders]** for the same.
+     * **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** > **[!UICONTROL Order Approval Configuration]** and set **[!UICONTROL Enable Purchase Orders]** to *Yes*.
+1. Create a new company and set **[!UICONTROL Enable Purchase Orders]** to *Yes* for the same.
 1. Create a simple product and assign it to a category.
-1. Log in to **[!UICONTROL storefront]** using the company Admin account and create a new order using **[!UICONTROL Purchase Order]** as the payment method.
-1. Change the quote lifetime to *0* days.
-    * **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Shopping Cart]** > **[!UICONTROL Quote Lifetime]** (days).
+1. Log in to Storefront using the company Admin account and create a new order using **[!UICONTROL Purchase Order]** as the payment method.
+1. Change the **[!UICONTROL Quote Lifetime (days)]**.
+    * **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Shopping Cart]** > **[!UICONTROL Quote Lifetime (days)]** = *0*.
 1. Run the command `bin/magento c:f`.
-1. Go to DB quote table and change the `created_at` and `updated_at` values with *1* day in the past.
+1. Go to the DB `quote_table` and change the `created_at` and `updated_at` values with one day in the past.
 1. Run the command `bin/magento cron:run --group="sales_clean_quotes`.
 1. Execute the GraphQL request given below using an authorized token for the Admin who creates the **[!UICONTROL Purchase Order]**:
 
-   ```
+   ```GraphQL
    {
        customer {
            purchase_order(uid: "MQ==") {
@@ -57,11 +57,11 @@ GraphQL returns an error when fetching a quote ID for an expired quote
 
 <u>Expected results</u>:
 
-GraphQL should return the expected Quote ID.
+The GraphQL query returns the `quote_id`.
 
 <u>Actual results</u>:
 
-GraphQL returns an internal server error.
+The GraphQL query returns an internal server error.
 
 ## Apply the patch
 
