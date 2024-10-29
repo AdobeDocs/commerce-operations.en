@@ -626,6 +626,7 @@ feature: Configuration
             - [ACSD-60816: [!DNL New Relic] browser monitoring scripts injected by the APM agent are not compliant with CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
             - [ACSD-59967: JavaScript error prevents [!DNL Google Maps] from rendering correctly](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
             - [ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
+            - [ACSD-59786: GraphQL returns an error when fetching a quote ID for an expired quote](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.md)
         - v1.1.52 {#v1-1-52}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
             - [ACSD-61366: bin/magento setup:static-content:deploy --jobs 4 command fails with error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
