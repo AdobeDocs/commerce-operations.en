@@ -1,10 +1,10 @@
 ---
-title: "ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for specific payment methods at checkout"
+title: "ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout"
 description: Apply the ACSD-60673 patch to fix the Adobe Commerce issue where the discounts from a [!UICONTROL Cart Price Rule] that use a payment method condition are not always listed in the totals.
 feature: Price Rules
 role: Admin, Developer
 ---
-# ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for specific payment methods at checkout
+# ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout
 
 The ACSD-60673 patch fixes the issue where the discounts from a [!UICONTROL Cart Price Rule] that use a payment method condition are not always listed in the totals. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-60673. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
