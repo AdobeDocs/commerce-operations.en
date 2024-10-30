@@ -4,7 +4,7 @@ description: Apply the ACSD-60788 patch to fix the Adobe Commerce issue where cu
 feature: Security
 role: Admin, Developer
 ---
-# ACSD-60788: Fixes the issue where custom scripts for [!DNL Google Tag] manager are not executed due to Content Security Policy errors
+# ACSD-60788: Custom scripts for [!DNL Google Tag Manager] are not executed due to Content Security Policy errors
 
 The ACSD-60788 patch fixes the issue where it Fixes the issue where custom scripts for [!DNL Google Tag] manager are not executed due to Content Security Policy errors. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-60788. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
