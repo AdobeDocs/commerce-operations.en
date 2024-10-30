@@ -44,7 +44,7 @@ Custom scripts for [!DNL Google Tag Manager] are not executed due to Content Sec
 
 <u>Expected results</u>:
 
-The browser dev console displays "Nonce from simple JS (random characters)".
+The browser dev console displays *Nonce from simple JS (random characters)*.
 
 <u>Actual results</u>:
 
