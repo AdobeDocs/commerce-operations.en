@@ -48,7 +48,7 @@ The browser dev console displays *Nonce from simple JS (random characters)*.
 
 <u>Actual results</u>:
 
-The browser dev console displays "Nonce from simple JS undefined".
+The browser dev console displays *Nonce from simple JS undefined*.
 
 ## Apply the patch
 
