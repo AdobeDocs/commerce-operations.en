@@ -28,7 +28,7 @@ Custom scripts for [!DNL Google Tag Manager] are not executed due to Content Sec
 
 <u>Steps to reproduce</u>:
 
-1. Setup the **[!DNL Google Tag]** Manager Variable.
+1. Set up the *[!DNL Google Tag Manager] variable.
 1. Setup the **[!DNL Google Tag]** Manager *Custom HTML Tag*.
 1. Place the following JavaScript code in the first Tag:
 
