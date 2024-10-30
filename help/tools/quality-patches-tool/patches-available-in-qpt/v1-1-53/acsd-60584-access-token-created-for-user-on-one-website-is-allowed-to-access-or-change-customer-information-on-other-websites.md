@@ -38,7 +38,7 @@ Access token created for the user on one website is allowed to access or change 
 
 <u>Expected results</u>:
 
-Customer information from the second *website* is returned because the token form the main *website* is used in **[!DNL GraphQL]** query.
+Customer information from the main *website* is returned because the token form the main *website* is used in **[!DNL GraphQL]** query.
 
 <u>Actual results</u>:
 
