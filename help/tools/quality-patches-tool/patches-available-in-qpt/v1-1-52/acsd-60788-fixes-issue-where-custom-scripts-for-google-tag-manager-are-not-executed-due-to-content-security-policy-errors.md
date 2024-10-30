@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p3
 
 ## Issue
 
-Custom scripts for [!DNL Google Tag] Manager are not executed due to Content Security Policy (CSP) errors.
+Custom scripts for [!DNL Google Tag Manager] are not executed due to Content Security Policy (CSP) errors.
 
 <u>Steps to reproduce</u>:
 
