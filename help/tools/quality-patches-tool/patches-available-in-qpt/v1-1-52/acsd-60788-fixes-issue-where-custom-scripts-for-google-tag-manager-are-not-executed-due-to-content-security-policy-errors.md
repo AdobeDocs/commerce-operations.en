@@ -33,7 +33,7 @@ Custom scripts for [!DNL Google Tag Manager] are not executed due to Content Sec
 1. Place the following JavaScript code in the first Tag:
 
 ```
-<script nonce="{{gtmNonce}}">
+    <script nonce="{{gtmNonce}}">
   console.log("Nonce from simple JS {{gtmNonce}}");
 </script>
 ```
