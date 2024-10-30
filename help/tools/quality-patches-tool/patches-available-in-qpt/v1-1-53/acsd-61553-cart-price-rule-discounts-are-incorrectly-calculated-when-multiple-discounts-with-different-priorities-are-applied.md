@@ -68,6 +68,10 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p8
 
 There should be the following total discount for different scenarios:
 
+    Scenario 01: $13,700
+    Scenario 02: $10,100
+    Scenario 03: $10,100
+
 <u>Actual results</u>:
 
 In all the three scenarios, the total discount is $9,000.
