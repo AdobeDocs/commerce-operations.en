@@ -1,5 +1,5 @@
 ---
-title: "ACSD-60788: Fixes the issue where custom scripts for [!DNL Google Tag] manager are not executed due to Content Security Policy errors"
+title: "ACSD-60788: Custom scripts for [!DNL Google Tag Manager] not executed due to CSP errors"
 description: Apply the ACSD-60788 patch to fix the Adobe Commerce issue where custom scripts for [!DNL Google Tag] Manager are not executed due to Content Security Policy (CSP) errors. The ability to add the nonce as a global variable to capture it from the GTM container and use it to sign Custom HTML Scripts.
 feature: Security
 role: Admin, Developer
