@@ -30,7 +30,7 @@ GraphQL request doesn't return Requisition Lists.
 
 1. Go to **Store** > **Settings** > **Configuration** > **General** > **B2B Features** and enable Requisition List.
 1. Log in as a customer and add a product to the [Requisition List](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html).
-1. Create a [Customer Token](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. Create a [Customer Token](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
     <pre>
     <code class="language-graphql">
@@ -45,7 +45,7 @@ GraphQL request doesn't return Requisition Lists.
       </code>
       </pre>
 
-1. Use the following query to retrieve all the Requisition Lists from the customer. Use the **Authorization** header with the value `Bearer <customer_token>`. Refer to the [Customer Query](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) article in our developer documentation for more information.
+1. Use the following query to retrieve all the Requisition Lists from the customer. Use the **Authorization** header with the value `Bearer <customer_token>`. Refer to the [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) article in our developer documentation for more information.
 
     Request:
 

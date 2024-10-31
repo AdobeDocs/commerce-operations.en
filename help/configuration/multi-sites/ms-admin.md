@@ -9,7 +9,7 @@ This task requires you to create a root category (and additional categories, if 
 
 - [Categories](https://docs.magento.com/user-guide/catalog/categories.html)
 - [Adding Websites](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Store URLs](https://docs.magento.com/user-guide/stores/store-urls.html)
+- [Store URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
 - [Content](https://docs.magento.com/user-guide/cms/content-menu.html)
 
 >[!INFO]
@@ -125,7 +125,7 @@ Commerce gives you the option to add the store code to the site base URL, which 
 
 This prevents `index.php` and `.htaccess` from getting out of sync with the Commerce codebase in future upgrades.
 
-See the [Commerce User Guide](https://docs.magento.com/user-guide/stores/store-urls.html).
+See the [Commerce User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 To add the store code to the base URL:
 

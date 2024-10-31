@@ -20,7 +20,7 @@ GraphQL allows you to make multiple queries in a single call. It is important to
 
 >[!NOTE]
 >
-> Further information on cacheable and non-cacheable queries, see the Adobe Commerce [developer documentation](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> Further information on cacheable and non-cacheable queries, see the Adobe Commerce [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/caching.html).
 
 ## Catalog flat table
 

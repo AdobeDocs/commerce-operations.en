@@ -30,5 +30,5 @@ After you set up the Fastly service for your Adobe Commerce Cloud project, see [
 
 ## Additional information
 
-- [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [Set up Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
 - [Poorly optimized images can lead to performance issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

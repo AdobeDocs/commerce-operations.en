@@ -34,7 +34,7 @@ To avoid an issue with static content not being available on your website, follo
 
 1. Check your SCD strategy. The *quick* strategy is the default. For more information:
     * Adobe Commerce on-premises (all versions): [Static files deployment strategies](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) in our developer documentation.
-    * Adobe Commerce on cloud infrastructure (all versions): [Deploy variables - SCD\_STRATEGY](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_strategy) in our developer documentation.
+    * Adobe Commerce on cloud infrastructure (all versions): [Deploy variables - SCD\_STRATEGY](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#scd_strategy) in our developer documentation.
 
 ## Additional information
 
@@ -42,7 +42,7 @@ In our developer documentation:
 
 * [Static Content Container](https://developer.adobe.com/commerce/admin-developer/pattern-library/containers/static-content/)
 * [Static Content Signing](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/static-content-signing.html)
-* [Deploy variables - STATIC\_CONTENT\_SYMLINK](https://devdocs.magento.com/cloud/env/variables-deploy.html#static_content_symlink)
+* [Deploy variables - STATIC\_CONTENT\_SYMLINK](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#static_content_symlink)
 * [Deployment flow](../../../performance/deployment-flow.md)
 * [Zero downtime deployment](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html)
 * [Optimize cloud deployment](https://devdocs.magento.com/cloud/deploy/optimize-cloud-deployment.html)

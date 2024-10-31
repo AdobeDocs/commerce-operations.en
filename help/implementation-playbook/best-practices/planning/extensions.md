@@ -29,5 +29,5 @@ Adobe Commerce third-party extensions (modules) have the potential to cause vari
 
 - [Best practices for planning upgrades](../../../upgrade/prepare/best-practices.md)
 - Using third-party extensions with Adobe Commerce on cloud infrastructure
-  - [Technologies and requirements - Development and testing](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
+  - [Technologies and requirements - Development and testing](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
   - [Why test fully in Integration and Staging?](https://devdocs.magento.com/cloud/live/live.html#whytest)

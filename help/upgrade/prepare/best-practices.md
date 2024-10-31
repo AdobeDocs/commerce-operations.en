@@ -43,7 +43,7 @@ Begin adopting the Adobe Commerce Extensibility platform, if you have not done s
 
 - **UI Extensibility**. Extend and evolve your storefront independently of your backend and middleware using [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **API Extensibility**. Use [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) to extend Web API layer by evolving the graph data model and executing lambda functions directly from the graph layer.
+- **API Extensibility**. Use [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html) to extend Web API layer by evolving the graph data model and executing lambda functions directly from the graph layer.
 
 - **Adobe I/O middleware and services**. Connect your systems with Adobe Commerce using Adobe's middleware and a suite of app connections built on [Adobe I/O](https://www.adobe.io/). In addition, you can extend core platform capabilities by overwriting the default behavior with your own business logic that runs on Adobe I/O.
 

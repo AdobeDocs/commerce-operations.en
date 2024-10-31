@@ -197,7 +197,7 @@ A list of downloadable domains available in this node. Additional domains can be
 ]
 ```
 
-Learn more about [Downloadable Domains](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+Learn more about [Downloadable Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## install
 

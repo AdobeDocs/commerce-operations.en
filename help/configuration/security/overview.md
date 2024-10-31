@@ -18,5 +18,5 @@ The topics in the Security section of the Configuration guide are not comprehens
 Several security-related topics that were included in the Configuration guide at one time, are now located in the following guides:
 
 - [Google reCAPTCHA](https://devdocs.magento.com/guides/v2.4/security/google-recaptcha.html) in the _Extension guide_.
-- [Two-Factor Authentication](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html) in the _Extension guide_.
+- [Two-Factor Authentication](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/) in the _Extension guide_.
 - [General Data Protection Regulation (GDPR) compliance](https://devdocs.magento.com/compliance/privacy/gdpr.html) in the _Security and Compliance guide_.
