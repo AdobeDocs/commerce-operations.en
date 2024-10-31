@@ -37,7 +37,7 @@ The API token created for the user on one website allows you to access customer 
 
 <u>Expected results</u>:
 
-Customer information from the main *website* is returned because the token form the main *website* is used in **[!DNL GraphQL]** query.
+Customer information from the main *website* is returned because the token from the main *website* is used in [!DNL GraphQL] query.
 
 <u>Actual results</u>:
 
