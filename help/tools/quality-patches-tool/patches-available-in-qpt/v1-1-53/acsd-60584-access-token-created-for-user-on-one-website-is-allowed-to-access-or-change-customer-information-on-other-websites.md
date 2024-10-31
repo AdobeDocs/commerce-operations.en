@@ -35,7 +35,6 @@ The API token created for the user on one website allows you to access customer 
 1. Using the generated token, send a customer **[!DNL GraphQL]** query with the second website in the header to retrieve customer information.
 1. Observe the returned result.
 
-
 <u>Expected results</u>:
 
 Customer information from the main *website* is returned because the token form the main *website* is used in **[!DNL GraphQL]** query.
