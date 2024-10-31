@@ -1,6 +1,6 @@
 ---
 title: "ACSD-60584: Access token created for one website is allowed to access information on other websites"
-description: Apply the ACSD-60584 patch to fix the issue where the access token created for the user on one website is allowed to access or change customer information on other websites. The API token created for the user on one website allows us to access customer information, create a cart, and add products to the cart on other website views.
+description: Apply the ACSD-60584 patch to fix the issue where the access token created for the user on one website is allowed to access or change customer information on other websites.
 feature: Customers, GraphQL
 role: Admin, Developer
 ---
