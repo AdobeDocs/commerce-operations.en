@@ -30,7 +30,7 @@ The API token created for the user on one website allows you to access customer 
 
 1. Ensure **[!DNL Share Customer Accounts configuration]** is set to **[!UICONTROL Per Website]**.
 1. Create additional *website*, *store*, and *storeview*.
-1. Create two customers with the same email on main *website* and *website* from previous step.
+1. Create two customers with the same email on the main *website* and the *website* from previous step.
 1. Generate a customer token via [!DNL GraphQL] on the main website.
 1. Using the generated token, send a customer **[!DNL GraphQL]** query with the second website in the header to retrieve customer information.
 1. Observe the returned result.
