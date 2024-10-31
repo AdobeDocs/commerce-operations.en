@@ -4,7 +4,7 @@ description: Apply the ACSD-60584 patch to fix the issue where the access token 
 feature: Customers, GraphQL
 role: Admin, Developer
 ---
-# ACSD-60584: Access token created for the user on one website is allowed to access or change customer information on other websites
+# ACSD-60584: Access token created for one website is allowed to access information on other websites
 
 The ACSD-60584 patch fixes the issue where the access token created for the user on one website is allowed to access or change customer information on other websites. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.53 is installed. The patch ID is ACSD-60584. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
