@@ -41,7 +41,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p2
    
 <u>Expected results</u>:
 
-The amount to be paid which is passed to [!DNL PayPal] includes the discount like it is in the cart.
+The amount to be paid passed to [!DNL PayPal] includes the discount as it is in the cart.
 
 <u>Actual results</u>:
 
