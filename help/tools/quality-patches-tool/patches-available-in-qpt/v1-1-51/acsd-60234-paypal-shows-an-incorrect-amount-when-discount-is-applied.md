@@ -30,7 +30,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p2
 
 1. Configure *[!DNL PayPal Express]* in **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Sales]** > **[!UICONTROL Payment methods]** > **[!DNL PayPal]** > **[!UICONTROL Express checkout]**.
    * [!UICONTROL Enable In-Context Checkout] can be [!UICONTROL Yes] or [!UICONTROL NO], the issue reproduces in both scenarios. 
-1. Create a **[!UICONTROL Cart Rule]** in *[!UICONTROL Marketing]* > *[!UICONTROL Promotions]* > *[!UICONTROL Cart Price Rules]* > *[!UICONTROL Add new Rule]*.
+1. Create a *[!UICONTROL Cart Rule]* in **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add New Rule]**.
    * Condition: If all of these conditions are true- **[!UICONTROL Payment Method]** is **[!DNL PayPal Express Checkout]**.
    * Actions: Any actions.
 1. Create a product.
