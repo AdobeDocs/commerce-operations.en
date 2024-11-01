@@ -7,7 +7,7 @@ exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
 
 Many companies work from annual budgets and roadmaps. It is imperative during these annual discussions that you talk about your platform health, direction, and upgrade strategy for the year, along with how it fits into the overall goals and key performance indicators (KPIs) of the business.
 
-Following the [release schedule](https://devdocs.magento.com/release/), assign budget and release windows for upgrades, avoiding holidays, company closures, and peak times. By understanding the Adobe release schedule and staying informed of what changes and improvements are part of each release through the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), you can better plan your year. 
+Following the [release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule), assign budget and release windows for upgrades, avoiding holidays, company closures, and peak times. By understanding the Adobe release schedule and staying informed of what changes and improvements are part of each release through the [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview), you can better plan your year. 
 
 During planning, you may want to ask yourself:
 

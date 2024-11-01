@@ -24,7 +24,7 @@ Enabling remote storage might affect your established development experience. Fo
 
 >[!INFO]
 >
->- Remote storage is available for Commerce version 2.4.2 and later only. See the [2.4.2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>- Remote storage is available for Commerce version 2.4.2 and later only. See the [2.4.2 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- The Remote storage module has _limited_ support on Adobe Commerce on cloud infrastructure. Adobe cannot fully troubleshoot the third-party storage adapter service. See [Configure remote storage for Commerce on Cloud infrastructure](cloud-support.md) for guidance implementing remote storage for cloud projects.
 
