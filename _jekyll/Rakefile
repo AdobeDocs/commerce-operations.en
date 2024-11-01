@@ -1,3 +1,11 @@
+#
+# ADOBE CONFIDENTIAL
+# Copyright 2024 Adobe All Rights Reserved.
+# NOTICE:  All information contained herein is, and remains the property of Adobe and its suppliers, if any.
+# The intellectual and technical concepts contained herein are proprietary to Adobe and its suppliers and are protected by all applicable intellectual property laws, including trade secret and copyright laws.
+# Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from Adobe.
+#
+
 # frozen_string_literal: true
 
 require 'yaml'
@@ -73,7 +81,8 @@ task :whatsnew_bp do
   puts report
 end
 
-desc 'Render the templated files'
+desc 'Render the templated files.
+  Renders the templated files in the "_jekyll/templates" directory. The result will be found in the "help/includes/templated" directory.'
 task :render do
   sh '_scripts/render'
 end
@@ -98,4 +107,16 @@ task :image_optim do
   end
 
   system "bundle exec image_optim --recursive --no-svgo #{path}"
+end
+
+desc 'Generate an Azure regions map.
+  Place the input data file in _jekyll/tmp/azure-regions.json.
+  The result will be found in _jekyll/tmp/azure-regions.svg.
+  Note, you need Python, PyGMT, and pdf2svg installed.'
+task :azure_regions do
+  puts 'Generating Azure regions map in PDF: $ '.magenta
+  puts 'Note, you need python, pygmt, and pdf2svg installed.'.blue
+  sh 'python _scripts/azure_regions.py'
+  puts 'Converting PDF to SVG: $ '.magenta
+  sh 'pdf2svg tmp/azure-regions.pdf tmp/azure-regions.svg'
 end
