@@ -35,5 +35,5 @@ Websites and stores are multipliers for catalog data, so having many websites an
 
 ## Additional information
 
-- [Understanding websites, stores, and store views](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Set up multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
+- [Understanding websites, stores, and store views](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Set up multiple websites or stores](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

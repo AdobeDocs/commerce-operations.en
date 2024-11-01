@@ -10,7 +10,7 @@ The Remote Storage module provides the option to store media files and schedule 
 
 >[!INFO]
 >
->Remote storage is available for Commerce version 2.4.2 and later only. See the [2.4.2 release notes](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>Remote storage is available for Commerce version 2.4.2 and later only. See the [2.4.2 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 
 >[!INFO]
 >
@@ -89,5 +89,5 @@ After you enable remote storage for a specific adapter, you can use the CLI to m
 
 <!-- link definitions -->
 
-[import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
+[import-export]: https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export
 [code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php

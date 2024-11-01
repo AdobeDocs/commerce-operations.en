@@ -140,7 +140,7 @@ Commerce uses an encryption key to protect passwords and other sensitive data. T
 ]
 ```
 
-Learn more about [Encryption Key](https://docs.magento.com/user-guide/system/encryption-key.html) in the _Commerce User guide_.
+Learn more about [Encryption Key](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in the _Commerce User guide_.
 
 ## db
 

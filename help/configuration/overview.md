@@ -19,7 +19,7 @@ The _Configuration_ guide provides reference material and limited guidance for m
 
 ## Commerce Admin configuration
 
-There are corresponding topics in the [Commerce User Guide](https://docs.magento.com/user-guide/stores/configuration.html) that can help you to understand field descriptions for every configuration setting in the Commerce Admin.
+There are corresponding topics in the [Commerce User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) that can help you to understand field descriptions for every configuration setting in the Commerce Admin.
 
 ## Cloud configuration
 
