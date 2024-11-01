@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-59366: Delete teams with deactivated users not visible in the team list
 
-The ACSD-59366 patch fixes the issue where an error occurs when you attempt deleting a team that contains deactivated users who are not visible in the team list. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59366. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-59366 patch fixes the issue where an error occurs when you attempt deleting a team that contains deactivated users who are not visible in the team list. When you delete a team with child users or teams, regardless of their inactive status, via [!DNL GraphQL], the system now provides an informative error message that matches the UI. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59366. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
