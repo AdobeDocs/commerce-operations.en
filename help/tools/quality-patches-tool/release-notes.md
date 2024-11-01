@@ -15,6 +15,23 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.54 {#v1-1-54}
+
+* **AC-13283** (for Adobe Commerce and Magento Open Source 2.4.6-p8) - Reverts Place Order backward incompatible changes included in 2.4.6-p8.
+* **ACSD-60267** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where Fixed Product Tax (FPT) applies correctly when adding simple products with FPT directly to the cart but fails when selecting these products through configurable product options.
+* **ACSD-61103** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the failure count in the `customer_entity` table is not reset to zero after a customer successfully logs in through API endpoints.
+* **ACSD-61134** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the [!DNL Braintree Vault] payment method is automatically deselected in the checkout workflow when a shopper updates their billing address by deselecting the *[!UICONTROL My billing and shipping address are the same]* checkbox.
+* **ACSD-61199** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the CMS page hierarchy tab does not display a proper tree structure when editing a CMS page with an existing hierarchy.
+* **ACSD-61200** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the calculations for *[!UICONTROL Total Amount]* and *[!UICONTROL Total Amount Actual]* in sales are missing the *[!UICONTROL Discount Tax Compensation Amount]* and *[!UICONTROL Shipping Discount Tax Compensation Amount]*, causing discrepancies in the sales order data.
+* **ACSD-61522** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where it is possible to enter email addresses into the guest customer's *[!UICONTROL First Name]* and *[!UICONTROL Last Name]* fields and send invalid order confirmation emails.
+* **ACSD-61756** (for Adobe Commerce >=2.4.4 <2.4.7) - Improves performance of `AdvancedSalesRule` filters.
+* **ACSD-61799** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where the total discount is incorrectly calculated when multiple cart rules with fixed discounts are applied to the quote.
+* **ACSD-61845** (for Adobe Commerce and Magento Open Source >=2.4.7-p1 <2.4.8) - Fixes the error that occurs when a request is sent with only *text/html* accept header.
+* **ACSD-62056** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where image uploading for a configurable product fails if MSI is installed.
+* **ACSD-62485** (for Adobe Commerce >=2.4.4 <2.4.6-p8 || >=2.4.7 <2.4.8) - Fixes the issue where `async.operations.all` consumer stops working when a company is created.
+* Updated patches: ACSD-48661, ACSD-51846, ACSD-55100, ACSD-61553
+* Deprecated patches: ACSD-51846
+
 ## v1.1.53 {#v1-1-53}
 
 * **ACSD-48318** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where environment emulation nesting is not allowed. Now, the emulation starts during the `send()` call once the emulation stops during the `getInfoBlockHtml()` call. 
