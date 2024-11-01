@@ -30,6 +30,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-62056** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where image uploading for a configurable product fails if MSI is installed.
 * **ACSD-62485** (for Adobe Commerce >=2.4.4 <2.4.6-p8 || >=2.4.7 <2.4.8) - Fixes the issue where async.operations.all consumer stops working when a company is created.
 * Updated patches: ACSD-48661, ACSD-51846, ACSD-55100, ACSD-61553
+* Deprecated patches: ACSD-51846
 
 ## v1.1.53 {#v1-1-53}
 
