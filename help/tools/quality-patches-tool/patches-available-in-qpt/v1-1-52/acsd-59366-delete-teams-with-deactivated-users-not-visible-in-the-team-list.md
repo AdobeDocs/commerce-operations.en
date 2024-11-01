@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.6 - 2.4.7-p3
 
 ## Issue
 
-an error occurs when you attempt deleting a team that contains deactivated users who are not visible in the team list.
+An error occurs when you attempt deleting a team that contains deactivated users who are not visible in the team list.
 
 <u>Prerequisites</u>:
 
@@ -40,7 +40,7 @@ Adobe Commerce B2B modules are installed and companies are enabled.
 
 <u>Expected results</u>:
 
-This team includes one or more inactive users. When you delete the team, the inactive users will be unassigned. You can view the list of inactive users in the [!UICONTROL Company Users] section.
+The team has one or more inactive users. Deleting the team will unassign these users. You can find inactive users in the [!UICONTROL Company Users] section.
 
 <u>Actual results</u>:
 
