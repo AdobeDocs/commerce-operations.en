@@ -35,7 +35,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p2
    * Actions: Any actions.
 1. Create a product.
 1. Go to the storefront, add the product to the cart, and then go to the **[!UICONTROL Payment Method]** step in the checkout.
-1. Make sure to select **[!DNL PayPal Express]** and validate that the discount is correctly applied.
+1. Make sure to select *[!DNL PayPal Express]* and validate that the discount is correctly applied.
 1. Click the **[!DNL PayPal]** button.
 1. Log in and observe the content of the popup.
    
