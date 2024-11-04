@@ -29,7 +29,7 @@ Having a large store with multiple Admins working in the backend or having many 
 To maximize site performance, follow these best practices for indexing:
 
 - Review the index configuration.
-- Set the indexers to _[!UICONTROL Update on Schedule]_ for large sites, and sites with frequent updates and heavy traffic. See [Index Management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- Set the indexers to _[!UICONTROL Update on Schedule]_ for large sites, and sites with frequent updates and heavy traffic. See [Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Follow [performance best practices](../../../performance/configuration.md) for managing indexes.
 
 >[!IMPORTANT]

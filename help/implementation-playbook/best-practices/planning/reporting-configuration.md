@@ -7,7 +7,7 @@ exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
 ---
 # Best practice for report configuration
 
-If your business does not require reporting or dynamic customer segments functionality, disable the [Reports functionality](https://docs.magento.com/user-guide/configuration/general/reports.html) to improve store performance.
+If your business does not require reporting or dynamic customer segments functionality, disable the [Reports functionality](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) to improve store performance.
 
 ## Affected products and versions
 
@@ -26,5 +26,5 @@ If you do not use the Reports or dynamic customer segments, disable the Reports 
 
 ## Additional information
 
-- [Generate reports in Adobe Commerce](https://docs.magento.com/user-guide/reports.html)
-- [Customer dynamic segments](https://docs.magento.com/user-guide/marketing/customer-segments.html)
+- [Generate reports in Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
+- [Customer dynamic segments](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)

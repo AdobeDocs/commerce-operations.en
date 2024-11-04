@@ -43,7 +43,7 @@ Begin adopting the Adobe Commerce Extensibility platform, if you have not done s
 
 - **UI Extensibility**. Extend and evolve your storefront independently of your backend and middleware using [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **API Extensibility**. Use [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) to extend Web API layer by evolving the graph data model and executing lambda functions directly from the graph layer.
+- **API Extensibility**. Use [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html) to extend Web API layer by evolving the graph data model and executing lambda functions directly from the graph layer.
 
 - **Adobe I/O middleware and services**. Connect your systems with Adobe Commerce using Adobe's middleware and a suite of app connections built on [Adobe I/O](https://www.adobe.io/). In addition, you can extend core platform capabilities by overwriting the default behavior with your own business logic that runs on Adobe I/O.
 
@@ -51,7 +51,7 @@ Begin adopting the Adobe Commerce Extensibility platform, if you have not done s
 
 As we continually expand the capabilities of Adobe Commerce, it is critical that you develop on the latest available release and define an upgrade strategy into your project plans. Doing so helps you remain secure, compliant, and up-to-date on the latest enhancements that allow you to grow sales faster, operate more effectively, and stay ahead of your competition now and into the future.
 
-To help you plan and budget for upgrades, you should monitor our [release schedule](https://devdocs.magento.com/release). Plan upgrade tasks within your team's backlog ahead of time. Aim to complete this work with GA.
+To help you plan and budget for upgrades, you should monitor our [release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Plan upgrade tasks within your team's backlog ahead of time. Aim to complete this work with GA.
 
 - Use the pre-release version to learn about each new release. Pre-release is General Availability code that is available to Adobe Commerce merchants and all partners two weeks before General Availability. If you have multiple stores, use the pre-release on your base store and verify that your custom modules and themes are compatible with it.
 
@@ -67,7 +67,7 @@ Upgrades should be done on regular basis, and under a predefined budget. We reco
 
 Assess the work to be done for upgrading:
 
-- Review the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) to understand the scope and impact of the new version.
+- Review the [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) to understand the scope and impact of the new version.
 
 - Use the [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) to identify potential problems that must be fixed in your custom code before attempting to upgrade to a newer version.
 
