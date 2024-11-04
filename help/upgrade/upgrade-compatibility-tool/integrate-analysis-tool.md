@@ -9,7 +9,7 @@ The [!DNL Site-Wide Analysis Tool] provides 24/7 real-time performance monitorin
 
 The [!DNL Upgrade Compatibility Tool] is now integrated with the [!DNL Site-Wide Analysis Tool] in order to provide the ability for non-technical people to run the [!DNL Upgrade Compatibility Tool] and get a [report](../upgrade-compatibility-tool/reports.md) containing a list of issues for each file.
 
-See the [[!DNL Site-Wide Analysis Tool] user guide](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) for more information.
+See the [[!DNL Site-Wide Analysis Tool] user guide](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) for more information.
 
 ## Run the [!DNL Upgrade Compatibility Tool] from the [!DNL Site-Wide Analysis Tool]
 

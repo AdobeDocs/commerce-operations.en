@@ -15,5 +15,5 @@ The Commerce application provides the following cron groups:
 - `index`, which refreshes [indexers](../cli/manage-indexers.md)
 - `consumers`, which runs message queue [consumers](../cli/start-message-queues.md)
 - These topics are available in Adobe Commerce only
-  - `staging`, which runs [Staging-related](https://docs.magento.com/user-guide/cms/content-staging.html) tasks
+  - `staging`, which runs [Staging-related](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) tasks
   - `catalog_event`, which runs tasks for target and shopping cart rules

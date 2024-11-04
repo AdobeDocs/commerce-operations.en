@@ -21,4 +21,4 @@ Use the [!UICONTROL Exceptions] page to see log file errors/exceptions logs for 
 
 ## Best practices
 
-Monitor the [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] page to see what exceptions occur. For more information, see [View and manage logs](https://devdocs.magento.com/cloud/project/log-locations.html) in our developer documentation.
+Monitor the [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] page to see what exceptions occur. For more information, see [View and manage logs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in our developer documentation.

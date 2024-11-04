@@ -60,7 +60,7 @@ Message queues provide an asynchronous communication mechanism in which the send
 
 ## Security tools
 
-The [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html) enables you to regularly monitor your store websites and receive updates for known security risks, malware, and out-of-date software. Typically, you start using this tool when you begin user-acceptance testing (UAT). Besides the Adobe Commerce Security Scan tool, which is free and available for all implementations and versions of Adobe Commerce, there are other choices that can be used during the CI/CD process and before each release.
+The [Adobe Commerce Security Scan Tool](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) enables you to regularly monitor your store websites and receive updates for known security risks, malware, and out-of-date software. Typically, you start using this tool when you begin user-acceptance testing (UAT). Besides the Adobe Commerce Security Scan tool, which is free and available for all implementations and versions of Adobe Commerce, there are other choices that can be used during the CI/CD process and before each release.
 
 SonarQube is an open-source quality management platform, designed to analyze and measure your code's technical quality. SonarQube not only provides a complete report of code bugs, syntax errors, and vulnerabilities, but also offers suggestions and examples for fixing your code. SonarQube is perfect to use in a CI/CD environment as a tool capable of analyzing the code before it's deployed.
 
