@@ -24,5 +24,3 @@ Having installed the tool, you can check for available patches and apply or reve
 
 * [Patches available in Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
 * [Quality Patches Tool release notes](/help/tools/quality-patches-tool/release-notes.md)
-
-
