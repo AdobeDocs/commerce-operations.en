@@ -35,6 +35,7 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p8
 1. Update the rules with any of the below scenarios:
 
     Scenario 01
+    
         Rule A
             Priority: 1
             Maximum Qty Discount is Applied To: 1
@@ -44,6 +45,7 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p8
             Maximum Qty Discount is Applied To: 0
 
     Scenario 02
+    
         Rule A
             Priority: 0
             Maximum Qty Discount is Applied To: 0
@@ -53,6 +55,7 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p8
             Maximum Qty Discount is Applied To: 1
 
     Scenario 03
+    
         Rule A
             Priority: 0
             Maximum Qty Discount is Applied To: 0
