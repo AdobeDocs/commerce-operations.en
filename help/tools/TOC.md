@@ -22,6 +22,7 @@ feature: Configuration
     - [Patches](site-wide-analysis-tool/patches.md)
 
 - Quality Patches Tool {#quality-patches-tool}
+    - [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
     - [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
     - [Usage](quality-patches-tool/usage.md)
     - [Release notes](quality-patches-tool/release-notes.md)
