@@ -7,7 +7,7 @@ exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 
 This topic describes a generic recommended setup for Adobe Commerce instances using plain servers hosted physically in a data center (not virtualized) in which resources are not shared with other users. Your hosting provider, especially if it specializes in Commerce high performance hosting, might recommend a different setup that is equally or more effective for your requirements.
 
-For Adobe Commerce on cloud infrastructure environments, see [Starter architecture](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
+For Adobe Commerce on cloud infrastructure environments, see [Starter architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Reference architecture diagram
 

@@ -22,6 +22,7 @@ feature: Configuration
     - [Patches](site-wide-analysis-tool/patches.md)
 
 - Quality Patches Tool {#quality-patches-tool}
+    - [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
     - [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
     - [Usage](quality-patches-tool/usage.md)
     - [Release notes](quality-patches-tool/release-notes.md)
@@ -619,6 +620,7 @@ feature: Configuration
             - [ACSD-60303: Admin order placement issue resolved with HTML minification enabled](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
         - v1.1.51 {#v1-1-51}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
+            - [ACSD-60234: [!DNL PayPal] shows an incorrect amount when discount is applied](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
             - [ACSD-60632: Address saved with every order attempt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
             - [ACSD-61195: Cart GraphQL request fails to return items on final page](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
             - [ACSD-60538: Attributes don't show if a product is disabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
@@ -639,6 +641,7 @@ feature: Configuration
         - v1.1.53 {#v1-1-53}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
             - [ACSD-59930: Improves performance of company's flows](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
+            - [ACSD-60584: Access token created for one website is allowed to access information on other websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Command-line tools reference {#cli-reference}
