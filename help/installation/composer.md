@@ -5,7 +5,7 @@ exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 ---
 # Quick start on-premises installation
 
-The instructions on this page describe how to install Adobe Commerce on [self-hosted](../implementation-playbook/infrastructure/self-hosting/overview.md) infrastructure. For guidance on upgrading an existing installation, see the [_Upgrade Guide_](../upgrade/overview.md).
+The instructions on this page describe how to install Adobe Commerce on self-hosted infrastructure. For guidance on upgrading an existing installation, see the [_Upgrade Guide_](../upgrade/overview.md).
 
 Adobe uses [Composer](https://getcomposer.org/) to manage Adobe Commerce components and their dependencies. Using Composer to get the Adobe Commerce metapackage provides the following advantages:
 

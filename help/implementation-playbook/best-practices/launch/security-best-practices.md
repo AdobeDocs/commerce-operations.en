@@ -109,10 +109,6 @@ As part of a disaster recovery plan, Adobe highly recommends that customers [exp
 
 **Adobe Commerce deployed on premises**
 
-- [Disaster recovery ideas](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [Backup and recovery](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
 - [Export configuration settings](../../../configuration/cli/export-configuration.md)
 
   - [Import configuration settings](../../../configuration/cli/import-configuration.md)

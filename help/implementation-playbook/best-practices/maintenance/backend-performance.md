@@ -64,7 +64,6 @@ For example, you can closely examine transactions with a focus on product detail
 Learn more about managing site performance:
 
 - [Performance monitoring](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (cloud infrastructure)
-- [Performance optimization review](/help/implementation-playbook/infrastructure/performance/recommendations.md)
 - [Configuration best practices](/help/performance/configuration.md)
 - [Observation for Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 

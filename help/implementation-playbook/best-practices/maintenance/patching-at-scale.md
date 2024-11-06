@@ -8,7 +8,7 @@ exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 ---
 # Best practices for distributing Adobe Commerce patches at scale
 
-If you manage multiple Adobe Commerce installations, [patching](../../../upgrade/patches/apply.md) can be a complex process. _Centralized patching_ is an essential part of [global reference architecture](../../architecture/global-reference/overview.md) and a best practice for enterprises. It helps you apply the right patches on all your Adobe Commerce installations. This topic explains how to achieve centralized patch distribution for all types of Adobe Commerce [patches](../../../upgrade/patches/overview.md).
+If you manage multiple Adobe Commerce installations, [patching](../../../upgrade/patches/apply.md) can be a complex process. _Centralized patching_ is a best practice for enterprises. It helps you apply the right patches on all your Adobe Commerce installations. This topic explains how to achieve centralized patch distribution for all types of Adobe Commerce [patches](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
