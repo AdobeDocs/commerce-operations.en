@@ -2,6 +2,8 @@
 user-guide-title: Deliver Commerce Experiences at Scale
 user-guide-description: Learn how to deliver experiences at scale using Adobe Commerce with Adobe Experience Manager.
 feature: Integration
+hide: yes
+hidefromtoc: yes
 ---
 
 # Deliver Commerce Experiences at Scale {#deliver-commerce-at-scale}
