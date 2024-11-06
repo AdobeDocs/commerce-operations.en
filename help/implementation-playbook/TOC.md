@@ -6,6 +6,7 @@ mini-toc-levels: 3
 
 # Implementation Playbook {#implementation-playbook}
 
+- [Overview](overview.md)
 - Architecture and integrations {#architecture}
   - [Enterprise reference](architecture/enterprise-blueprint.md)
 - Infrastructure and deployment {#infrastructure}
