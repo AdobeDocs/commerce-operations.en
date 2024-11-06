@@ -67,5 +67,4 @@ feature: Best Practices
   - [Click and collect](product/click-collect.md)
   - [PWA](product/progressive-web-app.md)
 - [Checklists and templates](checklists-templates/home.md)
-- [Glossary](glossary.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
