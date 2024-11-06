@@ -8,6 +8,13 @@ mini-toc-levels: 3
 
 - Architecture and integrations {#architecture}
   - [Enterprise reference](architecture/enterprise-blueprint.md)
+- Infrastructure and deployment {#infrastructure}
+  - Cloud infrastructure {#cloud}
+    - [Regions](infrastructure/cloud/regions.md)
+    - [Security and compliance](infrastructure/cloud/security.md)
+- Maintenance and support {#maintenance}
+  - [Overview](maintenance/overview.md)
+  - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Best practices {#best-practices}
   - [Overview](best-practices/phases.md)
   - Planning {#planning}
