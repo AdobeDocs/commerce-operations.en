@@ -108,4 +108,5 @@ mini-toc-levels: 3
     - [Update services](best-practices/maintenance/update-services.md)
     - [Upgrade checklist](best-practices/maintenance/upgrade-checklist.md)
     - [Upgrade prerequisites for MariaDB](best-practices/maintenance/mariadb-upgrade.md)
+- [Glossary](glossary.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
