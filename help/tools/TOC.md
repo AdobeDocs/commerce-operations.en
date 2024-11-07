@@ -22,6 +22,7 @@ feature: Configuration
     - [Patches](site-wide-analysis-tool/patches.md)
 
 - Quality Patches Tool {#quality-patches-tool}
+    - [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
     - [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
     - [Usage](quality-patches-tool/usage.md)
     - [Release notes](quality-patches-tool/release-notes.md)
@@ -635,8 +636,10 @@ feature: Configuration
             - [ACSD-60590: Enhancing performance of Bestsellers Aggregated Daily Report generation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
             - [ACSD-59925: Sorting items in [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
             - [ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient quantity](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+            - [ACSD-59366: Delete teams with deactivated users not visible in the team list](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
             - [ACSD-60788: Custom scripts for [!DNL Google Tag Manager] not executed due to CSP errors](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
             - [ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
+            - [ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout.md)
         - v1.1.53 {#v1-1-53}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
             - [ACSD-59930: Improves performance of company's flows](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
