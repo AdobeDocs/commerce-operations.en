@@ -108,15 +108,3 @@ task :image_optim do
 
   system "bundle exec image_optim --recursive --no-svgo #{path}"
 end
-
-desc 'Generate an Azure regions map.
-  Place the input data file in _jekyll/tmp/azure-regions.json.
-  The result will be found in _jekyll/tmp/azure-regions.svg.
-  Note, you need Python, PyGMT, and pdf2svg installed.'
-task :azure_regions do
-  puts 'Generating Azure regions map in PDF: $ '.magenta
-  puts 'Note, you need python, pygmt, and pdf2svg installed.'.blue
-  sh 'python _scripts/azure_regions.py'
-  puts 'Converting PDF to SVG: $ '.magenta
-  sh 'pdf2svg tmp/azure-regions.pdf tmp/azure-regions.svg'
-end
