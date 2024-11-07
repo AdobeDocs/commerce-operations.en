@@ -241,7 +241,7 @@ _adjective_
 
 A retail business with a permanent physical location, as opposed to businesses that function virtually or solely through the internet.
 
-For [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) and [Order Management](https://omsdocs.magento.com/getting-started/terminology/), this store is a source for tracking product quantities, shipping orders, and supporting in-store pickup.
+For [Inventory Management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) and [Order Management](https://commerce-docs.github.io/oms-documentation-archive/getting-started/terminology/), this store is a source for tracking product quantities, shipping orders, and supporting in-store pickup.
 
 _Term attributes:_
 
@@ -1051,7 +1051,7 @@ OMS capabilities include:
 * Easier and more responsive customer service
 * Better customer experience and loyalty
 
-Learn more: [Getting Started with OMS](https://omsdocs.magento.com/en/getting-started/), [OMS Docs site](https://omsdocs.magento.com/en/)
+Learn more: [Getting Started with OMS](https://commerce-docs.github.io/oms-documentation-archive/getting-started/), [OMS Docs site](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _Term attributes:_
 
