@@ -9,7 +9,7 @@ You are among the 240,000 merchants worldwide who put their trust in our eCommer
 
 ## How to get the software
 
-Check the availability of exciting new features and releases and learn how you can get them on our [product availability page](https://devdocs.magento.com/release/availability.html).
+Check the availability of exciting new features and releases and learn how you can get them on our [product availability page](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 Consult the following table for getting started with installing Adobe Commerce.
 

@@ -32,7 +32,7 @@ You can use MySQL to identify and resolve long running queries on any Adobe Comm
 If your Adobe Commerce project is deployed on Pro architecture, you can use the Percona Toolkit to analyze queries.
 
 1. Run the `pt-query-digest --type=slowlog` command against MySQL slow query logs.
-    * To find the location of the slow query logs, see **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) in our developer documentation.
+    * To find the location of the slow query logs, see **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in our developer documentation.
     * See the [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentation.
 1. Based on the issues found, take steps to fix the query so it runs more quickly.
 

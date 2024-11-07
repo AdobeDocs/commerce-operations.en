@@ -26,9 +26,9 @@ Before uploading images to your Commerce sites, optimize and compress them to ba
 
 ## Enable and configure Fastly image optimization
 
-After you set up the Fastly service for your Adobe Commerce Cloud project, see [Fastly image optimization](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) for instructions to enable and configure image optimization.
+After you set up the Fastly service for your Adobe Commerce Cloud project, see [Fastly image optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) for instructions to enable and configure image optimization.
 
 ## Additional information
 
-- [Set up Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [Set up Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
 - [Poorly optimized images can lead to performance issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
