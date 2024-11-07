@@ -44,7 +44,7 @@ The team has one or more inactive users. Deleting the team will unassign these u
 
 <u>Actual results</u>:
 
-An error occurs when you attempt deleting a team with a deativated user.
+An error occurs when you attempt to delete a team with a deactivated user.
 
 ## Apply the patch
 
