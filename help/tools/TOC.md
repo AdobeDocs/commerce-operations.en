@@ -639,6 +639,7 @@ feature: Configuration
             - [ACSD-59366: Delete teams with deactivated users not visible in the team list](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
             - [ACSD-60788: Custom scripts for [!DNL Google Tag Manager] not executed due to CSP errors](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
             - [ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
+            - [ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout.md)
         - v1.1.53 {#v1-1-53}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
             - [ACSD-59930: Improves performance of company's flows](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
