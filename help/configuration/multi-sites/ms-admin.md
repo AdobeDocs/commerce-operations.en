@@ -7,10 +7,10 @@ exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 
 This task requires you to create a root category (and additional categories, if desired) for each store. The tasks discussed in this topic provide one way to set up multiple stores. For additional information, see the following resources in the Commerce User Guide:
 
-- [Categories](https://docs.magento.com/user-guide/catalog/categories.html)
-- [Adding Websites](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Store URLs](https://docs.magento.com/user-guide/stores/store-urls.html)
-- [Content](https://docs.magento.com/user-guide/cms/content-menu.html)
+- [Categories](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Adding Websites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Store URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Content](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -28,7 +28,7 @@ To create a root category:
 1. In the **Category Name** field, enter a unique name to identify this category.
 1. Make sure that Enable Category is set to **Yes**.
 
-   For information about the other options on this page, see [Root Categories](https://docs.magento.com/user-guide/catalog/category-root.html).
+   For information about the other options on this page, see [Root Categories](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    The following figure shows an example.
 
@@ -125,7 +125,7 @@ Commerce gives you the option to add the store code to the site base URL, which 
 
 This prevents `index.php` and `.htaccess` from getting out of sync with the Commerce codebase in future upgrades.
 
-See the [Commerce User Guide](https://docs.magento.com/user-guide/stores/store-urls.html).
+See the [Commerce User Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 To add the store code to the base URL:
 
