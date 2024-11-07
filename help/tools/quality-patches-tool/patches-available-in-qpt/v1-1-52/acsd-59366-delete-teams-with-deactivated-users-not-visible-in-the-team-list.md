@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.6 - 2.4.7-p3
 
 ## Issue
 
-An error occurs when you attempt deleting a team that contains deactivated users who are not visible in the team list.
+An error occurs when you delete a team that contains deactivated users who are not visible in the team list.
 
 <u>Prerequisites</u>:
 
