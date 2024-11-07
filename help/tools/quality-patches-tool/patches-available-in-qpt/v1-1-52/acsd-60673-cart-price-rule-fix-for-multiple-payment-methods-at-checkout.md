@@ -28,31 +28,31 @@ The [!UICONTROL Cart Price Rule] for multiple payment methods at checkout does n
 
 <u>Prerequisites</u>
 
-Ensure [!UICONTROL Multiple Payment Methods] : **[!UICONTROL Money Order]** and **[!UICONTROL Bank Transfer]** is enabled.
+Ensure that in the **[!UICONTROL Multiple Payment Methods]** > **[!UICONTROL Money Order]** and **[!UICONTROL Bank Transfer]** is enabled.
 
 <u>Steps to reproduce</u>:
 
-1. Enable [!UICONTROL Multiple Payment Methods].
-1. Create a [!UICONTROL Cart Price Rule].
+1. Enable **[!UICONTROL Multiple Payment Methods]**.
+1. Create a *[!UICONTROL Cart Price Rule]*.
     * Set **[!UICONTROL Conditions]** : Payment Method to **[!UICONTROL Money Order]** (or Bank Transfer)
     * Select **[!UICONTROL Actions]** = *25%* discount on all products
 1. Create a virtual product.
-1. To copy a fresh quote and a [!UICONTROL guest customer state], go to the storefront and clear cookies.
+1. To copy a fresh quote and guest customer *[!UICONTROL Status]*, go to the storefront and clear cookies.
 1. Add the virtual product to the cart.
 1. Proceed to *checkout*.
-1. Click on the payment method that was defined in the [!UICONTROL Cart Price Rule].
-1. Update your billing address.
+1. Click on the payment method that was defined in the *[!UICONTROL Cart Price Rule]*.
+1. Update your *[!UICONTROL Billing Address]*.
 1. Ensure that the discount is visible in the total amount.
 1. Click on the checkbox to change the payment method.
 1. Verify that the discount is visible.
 
 <u>Expected results</u>:
 
-The discount is visible in **Totals** after clicking on the checkbox to switch to an applicable payment method.
+The discount is visible in *Totals* after clicking on the checkbox to switch to an applicable payment method.
 
 <u>Actual results</u>:
 
-The discount is not visible.
+The discount is not visible in the *Totals*.
 
 ## Apply the patch
 
