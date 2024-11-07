@@ -20,7 +20,7 @@ GraphQL allows you to make multiple queries in a single call. It is important to
 
 >[!NOTE]
 >
-> Further information on cacheable and non-cacheable queries, see the Adobe Commerce [developer documentation](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> Further information on cacheable and non-cacheable queries, see the Adobe Commerce [developer documentation](https://developer.adobe.com/commerce/webapi/graphql/caching.html).
 
 ## Catalog flat table
 
@@ -36,7 +36,7 @@ Fastly origin shielding can be enabled in your Adobe Commerce admin Fastly confi
 
 Once Fastly origin shielding is enabled, this allows you to also activate Fastly Image Optimizer. Where product catalogue images are stored on Adobe Commerce, this service gives the ability to offload all resource intensive, product catalogue images transformation processing onto Fastly and off from the Adobe Commerce origin. End user response times are also improved for page load times, as images are transformed at the edge location which eliminates latency by reducing the number of requests back to the Adobe Commerce origin.
 
-Fastly Image optimization can be enabled by "enable deep image optimization" in Fastly configuration in admin, although only after your origin shield has been activated. More details on configurations for Fastly Image optimization is available in the Adobe Commerce [developer documentation](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+Fastly Image optimization can be enabled by "enable deep image optimization" in Fastly configuration in admin, although only after your origin shield has been activated. More details on configurations for Fastly Image optimization is available in the Adobe Commerce [developer documentation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization).
 
 ![Screenshot of Fastly image optimization settings in the Adobe Commerce Admin](../assets/commerce-at-scale/image-optimization.svg)
 

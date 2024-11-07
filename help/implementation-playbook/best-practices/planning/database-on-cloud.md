@@ -53,9 +53,9 @@ To determine which search engine is currently in use, run the following command:
 
 For configuration instructions, see the Developer Guide for Adobe Commerce on cloud:
 
-- [Set up the OpenSearch service](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [Set up the OpenSearch service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Set up the Elasticsearch service](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Set up the Elasticsearch service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Avoid custom triggers
 
@@ -70,7 +70,7 @@ To learn about alternatives to using custom triggers, see [MySQL triggers](mysql
 
 ## Upgrade [!DNL ECE-Tools] to version 2002.0.21 or higher {#ece-tools-version}
 
-To avoid potential issues with cron deadlocks, upgrade ECE-Tools to version 2002.0.21 or higher. For instructions, see [Update `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) in our developer documentation.
+To avoid potential issues with cron deadlocks, upgrade ECE-Tools to version 2002.0.21 or higher. For instructions, see [Update `ece-tools` version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) in our developer documentation.
 
 ## Switch indexer mode safely
 
