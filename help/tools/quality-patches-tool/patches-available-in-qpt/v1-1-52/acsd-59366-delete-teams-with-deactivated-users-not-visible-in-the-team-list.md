@@ -28,7 +28,7 @@ An error occurs when you delete a team that contains deactivated users who are n
 
 <u>Prerequisites</u>:
 
-Adobe Commerce B2B modules are installed and companies are enabled.
+Adobe Commerce B2B modules are installed, and companies are enabled.
 
 <u>Steps to reproduce</u>:
 
