@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-48318: Environment emulation nesting error in `system.log`
 
-The ACSD-48318 patch fixes the issue where an error message *main.ERROR:Environment emulation nesting is not allowed* appears in `system.log` every time an invoice email is sent. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.53 is installed. The patch ID is ACSD-48318. Please note that the issue is fixed in Adobe Commerce 2.4.7.
+The ACSD-48318 patch fixes the issue where an error message *main.ERROR:Environment emulation nesting is not allowed* appears in `system.log` every time an invoice email is sent. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 is installed. The patch ID is ACSD-48318. Please note that the issue is fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -24,13 +24,13 @@ The ACSD-48318 patch fixes the issue where an error message *main.ERROR:Environm
 
 ## Issue
 
-Frequent *Environment Emulation Nesting Not Allowed* errors in `system.log`.
+The error message *Environment emulation nesting is not allowed* appears in `system.log` every time an invoice email is sent.
 
 <u>Steps to reproduce</u>:
 
 1. Place an order and generate invoice.
-1. Open the invoice from Admin and click on **send email**.
-1. Do the same by clicking on **send email** for *credit memo and shipment*.
+1. Open the invoice from Admin and click **[!UICONTROL Send Email]**.
+1. Follow the same step for *credit memo* and *shipment* by clicking **[!UICONTROL Send Email]**.
 
 <u>Expected results</u>:
 
@@ -51,4 +51,4 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
+[[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
