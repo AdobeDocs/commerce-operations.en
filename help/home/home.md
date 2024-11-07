@@ -21,13 +21,13 @@ Use this following collection of guides to learn about system administration con
       <p>Review all release information for Adobe Commerce patches and services.</p>
     </div>
   </td>
-  <td valign="top">
-    <a href="../performance/overview.md">
-       <img alt="Performance" src="../assets/icons/gauge.svg" width="40"/>
+    <td valign="top">
+    <a href="../implementation-playbook/overview.md">
+      <img alt="Implementation" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
-      <p>Use these recommendations to optimize the performance of your Adobe Commerce deployment.</p>
+      <a href="../implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
+      <p>Learn about strategies for planning and implementing a successful Adobe Commerce site.</p>
     </div>
   </td>
   <td valign="top">
@@ -39,15 +39,13 @@ Use this following collection of guides to learn about system administration con
       <p>Learn how Adobe Commerce merchants are responsible for maintaining a secure environment.</p>
     </div>
   </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../implementation-playbook/overview.md">
-      <img alt="Implementation" src="../assets/icons/play.svg" width="40"/>
+    <td valign="top">
+    <a href="../performance/overview.md">
+       <img alt="Performance" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
-      <p>Learn about strategies for planning and implementing a successful Adobe Commerce site.</p>
+      <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
+      <p>Use these recommendations to optimize the performance of your Adobe Commerce deployment.</p>
     </div>
   </td>
 </tr>
