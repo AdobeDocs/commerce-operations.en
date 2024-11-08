@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-61528: Retrieving roles using GraphQL returns no results
 
-The ACSD-61258 patch fixes the issue where retrieving roles from the company's administrator using GraphQL always returns a null result. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.53 is installed. The patch ID is ACSD-61528. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61258 patch fixes the issue where retrieving roles from the company's administrator using GraphQL always returns a null result. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 is installed. The patch ID is ACSD-61528. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
