@@ -1,8 +1,9 @@
 ---
-title: "ACSD-61528: Retrieving roles using GraphQL returns no results"
+title: 'ACSD-61528: Retrieving roles using GraphQL returns no results'
 description: Apply the ACSD-61528 patch to resolve the Adobe Commerce issue where retrieving roles from the company's administrator using GraphQL always returns a null result.
 feature: GraphQL, B2B, Companies, Roles/Permissions
 role: Admin, Developer
+exl-id: 81d78746-e723-4b18-860c-d973158b469c
 ---
 # ACSD-61528: Retrieving roles using GraphQL returns no results
 
