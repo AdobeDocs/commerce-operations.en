@@ -51,4 +51,4 @@ The [!UICONTROL Total Amount] and [!UICONTROL Total Amount Actual] values should
 
 <u>Actual results</u>:
 
-The sales and coupon report totals do not match because the [!UICONTROL Discount Tax Compensation Amount] and [!UICONTROL Shipping Discount Tax Compensation Amount] are missing from calculations.
+Sales order data and coupon report data do not match because the *[!UICONTROL Discount Tax Compensation Amount]* and *[!UICONTROL Shipping Discount Tax Compensation Amount]* are missing from calculations.
