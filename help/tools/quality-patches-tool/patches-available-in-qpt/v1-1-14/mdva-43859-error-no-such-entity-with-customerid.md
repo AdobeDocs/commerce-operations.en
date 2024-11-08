@@ -3,6 +3,7 @@ title: 'MDVA-43859: Error "No such entity with customerId =" logged when deleted
 description: The MDVA-43859 patch fixes the issue where the error *No such entity with customerId =* is logged when a deleted customer tries to log in. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-43859. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Variables
 role: Admin
+exl-id: b8451b08-978a-44a2-8664-4369e832423b
 ---
 # MDVA-43859: Error "No such entity with customerId =" logged when deleted customer logs in
 

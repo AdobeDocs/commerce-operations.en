@@ -3,6 +3,7 @@ title: 'MDVA-43824: Order cancellation action failed with error "You have not ca
 description: 'The MDVA-43824 patch solves the issue where the order cancellation action failed with the error: *You have not cancelled the item*. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is installed. The patch ID is MDVA-43824. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.'
 feature: Orders
 role: Admin
+exl-id: 8c2d15a0-2f53-4583-bdf2-86746f61160f
 ---
 # MDVA-43824: Order cancellation action failed with error "You have not cancelled the item"
 

@@ -3,6 +3,7 @@ title:"ACSD-60631: GraphQL returns an error when same product is assigned to mul
 description: Apply the ACSD-60631 patch to fix the Adobe Commerce issue where a GraphQL query returns an error when the same product is assigned to multiple configurable products.
 feature: Attributes, GraphQL
 role: Admin, Developer
+exl-id: 2fcc0e06-390f-4803-8e43-db7bac1c51e8
 ---
 # ACSD-60631: GraphQL query returns an error when the same product is assigned to multiple configurable products
 

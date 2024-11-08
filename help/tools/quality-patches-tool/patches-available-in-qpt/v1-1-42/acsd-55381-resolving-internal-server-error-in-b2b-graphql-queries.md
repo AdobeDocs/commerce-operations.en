@@ -3,6 +3,7 @@ title: 'ACSD-55381: Resolving error when requesting configurable product option 
 description: Apply the ACSD-55381 patch to fix the Adobe Commerce issue where an internal server error occurs during GraphQL queries for `configurable_product_option_uid` and `configurable_product_option_value_uid` fields from a B2B requisition list.
 feature: GraphQL, B2B, Products
 role: Admin, Developer
+exl-id: 573d33bc-c7b6-49ce-9ad1-926548f4c952
 ---
 # ACSD-55381: Resolving error when requesting configurable product option uids from B2B requisition list
 

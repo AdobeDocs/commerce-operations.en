@@ -3,6 +3,7 @@ title: 'ACSD-45754: Reward points not added after applying coupon to cart'
 description: The ACSD-45754 patch solves the issue where reward points are not added after applying a coupon to the cart. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-45754. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Orders, Rewards, Shopping Cart
 role: Admin
+exl-id: 02f3bfc4-440b-4d77-adf5-0824d1b21073
 ---
 # ACSD-45754: Reward points not added after applying coupon to cart
 

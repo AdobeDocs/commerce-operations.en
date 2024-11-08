@@ -3,6 +3,7 @@ title: 'MDVA-39993: Inventory changes done through API are not reflected on stor
 description: The MDVA-39993 patch solves the issue where the inventory changes done through API are not reflected on the storefront. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-39993. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: REST, Inventory, Orders, Storefront
 role: Admin
+exl-id: 5fa13635-bd58-470b-a4d5-e50cda8a46e3
 ---
 # MDVA-39993: Inventory changes done through API are not reflected on storefront
 

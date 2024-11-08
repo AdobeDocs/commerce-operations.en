@@ -3,6 +3,7 @@ title: 'ACSD-47559: email template preview for email not fully visible'
 description: Apply the ACSD-47559 patch to fix the Adobe Commerce issue where the email template preview is not fully visible.
 feature: Communications, Marketing Tools, Personalization
 role: Admin
+exl-id: a0bd51e0-990b-47c9-8de0-6071b6f79e54
 ---
 # ACSD-47559: email template preview not fully visible
 

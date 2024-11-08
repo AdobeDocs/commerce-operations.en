@@ -3,6 +3,7 @@ title: 'ACSD-45781: Store front search field not displayed on mobile'
 description: The MDVA-45781 patch solves the issue where the store front search field is not displayed on mobile. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 is installed. The patch ID is MDVA-45781. Please note that the issue was fixed in Adobe Commerce 2.4.3.
 feature: Cache, Native Luma Frontend Development, Search
 role: Admin
+exl-id: f761461b-2dd0-45d2-b80d-57793f6f0924
 ---
 # ACSD-45781: Store front search field not displayed on mobile
 

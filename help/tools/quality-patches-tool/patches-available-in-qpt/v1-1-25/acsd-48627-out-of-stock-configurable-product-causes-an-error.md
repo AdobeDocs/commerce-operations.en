@@ -3,6 +3,7 @@ title: 'ACSD-48627: out-of-stock configurable product causes an error'
 description: Apply the ACSD-48627 patch to fix the Adobe Commerce issue where the out-of-stock configurable product causes an error when sending a GraphQL request to get cart details.
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
+exl-id: 457c605e-d0c3-479e-b515-9b2851a71a08
 ---
 # ACSD-48627: out-of-stock configurable product causes an error
 

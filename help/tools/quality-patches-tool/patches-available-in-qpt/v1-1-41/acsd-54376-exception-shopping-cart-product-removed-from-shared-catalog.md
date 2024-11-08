@@ -3,6 +3,7 @@ title: 'ACSD-54376: Exception in shopping cart when product removed from [!UICON
 description: Apply the ACSD-54376 patch to fix the Adobe Commerce issue where an exception happens in the shopping cart when a product is removed from the [!UICONTROL shared catalog] after being added to the cart.
 feature: Shopping Cart, B2B
 role: Admin, Developer
+exl-id: 59047ccb-d434-46cd-8d2f-ceb0c85a785a
 ---
 # ACSD-54376: Exception in shopping cart when product removed from [!UICONTROL shared catalog]
 

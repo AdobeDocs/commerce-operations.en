@@ -3,6 +3,7 @@ title: 'ACSD-44851: Category with subcategories not able to open or expand'
 description: This article provides a solution for the issue where the user is unable to open or expand a category with subcategories.
 feature: Categories
 role: Admin
+exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
 ---
 # ACSD-44851: Category with subcategories not able to open or expand
 

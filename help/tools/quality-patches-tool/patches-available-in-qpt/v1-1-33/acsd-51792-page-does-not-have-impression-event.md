@@ -1,6 +1,7 @@
 ---
 title: 'ACSD-51792: Page does not have impression event'
 description: Apply the ACSD-51792 patch to fix the Adobe Commerce performance issue where a page does not have the impression event when Google Tag Manager 4 is enabled.
+exl-id: f9465a44-2c65-4af0-b949-1fe1f4a942ae
 ---
 # ACSD-51792: Page does not have impression event
 

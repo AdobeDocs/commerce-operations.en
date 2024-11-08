@@ -3,6 +3,7 @@ title: 'MDVA-42806: New company registration email is sent each time existing co
 description: The MDVA-42806 patch solves the issue where a new company registration email is sent each time an existing company is updated via REST API. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 is installed. The patch ID is MDVA-42806. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: REST, B2B, Communications, Companies
 role: Admin
+exl-id: 4fc2ee54-d88b-4940-b6ac-e25ad61e5c66
 ---
 # MDVA-42806: New company registration email is sent each time existing company is updated
 

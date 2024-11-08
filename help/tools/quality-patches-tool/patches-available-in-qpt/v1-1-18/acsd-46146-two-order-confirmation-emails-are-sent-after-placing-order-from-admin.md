@@ -3,6 +3,7 @@ title: 'ACSD-46146: Two order confirmation emails sent after placing order from 
 description: The ACSD-46146 patch solves the issue where two order confirmation emails are sent after placing an order from the admin. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-46146. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Admin Workspace, Communications, Orders
 role: Admin
+exl-id: 1db809d0-461d-45d4-9e1b-8209a014b7a1
 ---
 # ACSD-46146: Two order confirmation emails sent after placing order from admin
 

@@ -3,6 +3,7 @@ title: 'ACSD-56515: Admin with website-level permissions cannot edit [!UICONTROL
 description: Apply the ACSD-56515 patch to fix the Adobe Commerce issue where the admin with website-level permissions cannot add or edit the [!UICONTROL Dynamic Block].
 feature: Roles/Permissions, Admin Workspace
 role: Admin, Developer
+exl-id: dd3e61a4-aba4-4f86-b4fe-88ca4276ace5
 ---
 # ACSD-56515: Admin with website-level permissions cannot edit [!UICONTROL Dynamic Block]
 

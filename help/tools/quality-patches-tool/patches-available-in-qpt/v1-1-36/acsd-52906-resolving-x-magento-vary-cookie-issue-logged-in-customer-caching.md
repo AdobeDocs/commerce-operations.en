@@ -3,6 +3,7 @@ title: 'ACSD-52906: Resolving X-Magento-Vary cookie issue for logged-in customer
 description: Apply the ACSD-52906 patch to fix the Adobe Commerce issue where the X-Magento-Vary cookie is set incorrectly for logged-in customers.
 feature: Cache
 role: Admin, Developer
+exl-id: 487b7588-7131-4502-b714-05f37520991f
 ---
 # ACSD-52906: Resolving X-Magento-Vary cookie issue for logged-in customers
 
