@@ -5,9 +5,9 @@ feature: Checkout, Customers
 role: Admin, Developer
 ---
 
-# ACSD-61522: Enter email addresses in first name and last name fields to send invalid order confirmation emails
+# ACSD-61522: Email addresses in *First and Last Name* fields send invalid order confirmations
 
-The ACSD-61522 patch fixes the issue where it is possible to enter email addresses into the guest customer's First Name and Last Name fields and send invalid order confirmation emails. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61522. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61522 patch fixes the issue where it is possible to enter email addresses into a guest customer's *[!UICONTROL First Name]* and *[!UICONTROL Last Name]* fields, leading to invalid order confirmation emails being sent. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61522. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,26 +25,26 @@ The ACSD-61522 patch fixes the issue where it is possible to enter email address
 
 ## Issue
 
-The system allows email addresses to be entered into the guest customer's First Name and Last Name fields, resulting in the sending of invalid order confirmation emails.
+The system allows email addresses to be entered into a guest customer's *[!UICONTROL First Name]* and *[!UICONTROL Last Name]* fields, resulting in the sending of invalid order confirmation emails.
 
 <u>Steps to reproduce</u>:
 
-1. Add any product to the *cart* by a guest customer.
-1. Go to **[!UICONTROL checkout]**.
-1. Fill in the *Email Address* with "_test1@example.com_".
-1. Fill *First Name* with "<test2@example.com>".
-1. Fill *Last Name* with "<test3@example.com>".
+1. Add any product to the cart as a guest customer.
+1. Go to **[!UICONTROL Checkout]**.
+1. Fill the *[!UICONTROL Email Address]* field with *test1@example.com*.
+1. Fill the *[!UICONTROL First Name]* field with *<test2@example.com>*.
+1. Fill *[!UICONTROL Last Name]* with *<test3@example.com>*.
 1. Fill in other required fields.
 1. Place the order.
 
 <u>Expected results</u>:
 
-It is not possible to use email addresses in the First Name and Last Name fields.
+It is not possible to use email addresses in the *[!UICONTROL First Name]* and *[!UICONTROL Last Name]* fields.
 
 <u>Actual results</u>:
 
 1. The order is placed.
-1. First Name and Last Name fields are saved as entered.
+1. *[!UICONTROL First Name]* and *[!UICONTROL Last Name]* fields are saved as entered.
 1. Order confirmation emails are sent to all three emails.
 
 ## Apply the patch
