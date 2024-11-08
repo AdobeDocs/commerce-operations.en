@@ -1,6 +1,6 @@
 ---
 title: "ACSD-61522: Email addresses in *First and Last Name* fields send invalid order confirmations"
-description: Apply the ACSD-XXXXX patch to fix the Adobe Commerce issue where it is possible to enter email addresses into the guest customer's First Name and Last Name fields and send invalid order confirmation emails.
+description: Apply the ACSD-61522 patch to fix the Adobe Commerce issue where it is possible to enter email addresses into a guest customer's *[!UICONTROL First Name]* and *[!UICONTROL Last Name]* fields, leading to invalid order confirmation emails being sent.
 feature: Checkout, Customers
 role: Admin, Developer
 ---
