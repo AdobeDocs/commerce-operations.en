@@ -3,6 +3,7 @@ title: 'ACSD-54418: Fixed discount amount incorrectly added to child product of 
 description: Apply the ACSD-54418 patch to fix the Adobe Commerce issue where the fixed discount amount is incorrectly applied to each child product of the dynamically priced bundle.
 feature: Shopping Cart
 role: Admin, Developer
+exl-id: f7b57361-9056-4eec-a393-dadb65aa595b
 ---
 # ACSD-54418: Fixed discount amount incorrectly added to child product of dynamically priced bundle.
 

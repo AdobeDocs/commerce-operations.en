@@ -3,6 +3,7 @@ title: 'ACSD-47137: improve image gallery loading speed `pub/media` folder big'
 description: Apply the ACSD-47137 patch to improve the loading speed of the image gallery when the `pub/media` folder is very big.
 feature: Cache, Catalog Management, Categories, Media
 role: Admin
+exl-id: 8a5dd930-1940-486e-96db-ee1b166cf312
 ---
 # ACSD-47137: improve image gallery loading speed when `pub/media` folder big
 

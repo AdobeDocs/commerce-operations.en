@@ -3,6 +3,7 @@ title: 'MDVA-41229: Images available on backend not displayed on frontend after 
 description: The MDVA-41229 patch solves the issue where images available on the backend are not displayed on the frontend after configurable products import. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-41229. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Data Import/Export, Configuration, Products
 role: Admin
+exl-id: 894fdc5b-545c-4ed8-ae1b-573d1d8d3cd6
 ---
 # MDVA-41229: Images available on backend not displayed on frontend after configurable products import
 

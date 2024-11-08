@@ -3,6 +3,7 @@ title: 'ACSD-53118: Cart rules with coupon not working properly'
 description: Apply the ACSD-53118 patch to fix the Adobe Commerce issue where the cart price rule is applied using a coupon code while the product in the cart has an empty matching attribute.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
+exl-id: 8957790e-c22b-4a25-939b-94d7a9fb1cc7
 ---
 # ACSD-53118: Cart rules with coupon not working properly
 

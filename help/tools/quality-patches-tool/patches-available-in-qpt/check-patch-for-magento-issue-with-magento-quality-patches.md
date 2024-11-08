@@ -3,6 +3,7 @@ title: Check patch for Adobe Commerce issue with Quality Patches Tool
 description: This article provides an overview of Quality Patches Tool (QPT) and links to resources explaining how to use it.
 feature: Tools and External Services
 role: Admin
+exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
 ---
 # Check patch for Adobe Commerce issue with Quality Patches Tool
 

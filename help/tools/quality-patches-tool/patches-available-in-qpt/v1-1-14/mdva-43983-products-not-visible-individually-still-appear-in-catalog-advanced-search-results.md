@@ -3,6 +3,7 @@ title: 'MDVA-43983: Products set as "Not Visible Individually" appear in search 
 description: The MDVA-43983 patch solves the issue where the products that are set as "Not Visible Individually" still appear in catalog advanced search results. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-43983. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Catalog Management, Products, Search
 role: Admin
+exl-id: d494d263-016b-43fd-aa87-0d74eadc4a6a
 ---
 # MDVA-43983: Products set as "Not Visible Individually" appear in search results
 

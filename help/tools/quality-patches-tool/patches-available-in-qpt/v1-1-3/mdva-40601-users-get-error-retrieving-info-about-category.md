@@ -3,6 +3,7 @@ title: 'MDVA-40601: Unable to retrieve data about category changed by scheduled 
 description: The MDVA-40601 Adobe Commerce quality patch fixes the issue where users get an error when getting information about category changed by scheduled update through GraphQL. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 is installed. The patch ID is MDVA-40601. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Categories, GraphQL
 role: Admin
+exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
 ---
 # MDVA-40601: Unable to retrieve data about category changed by scheduled update via GraphQL
 

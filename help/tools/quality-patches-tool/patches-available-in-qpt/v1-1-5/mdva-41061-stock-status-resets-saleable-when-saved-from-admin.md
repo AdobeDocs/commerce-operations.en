@@ -3,6 +3,7 @@ title: 'MDVA-41061: Stock status resets to saleable when product saved from Admi
 description: The MDVA-41061 patch fixes the issue where the stock status resets to saleable when the product is saved from the Admin. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is installed. The patch ID is MDVA-41061. The latest patch version is available in QPT 1.1.15 with MDVA-41061-V3 patch ID. Please note that the issue is fixed in Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Products
 role: Admin
+exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
 ---
 # MDVA-41061: Stock status resets to saleable when product saved from Admin
 

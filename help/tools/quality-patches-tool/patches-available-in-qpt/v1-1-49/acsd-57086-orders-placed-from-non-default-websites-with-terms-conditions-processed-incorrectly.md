@@ -3,6 +3,7 @@ title: 'ACSD-57086: Orders from non-default websites with terms and conditions e
 description: Apply the ACSD-57086 patch to fix the Adobe Commerce issue where orders placed from non-default websites with terms and conditions enabled are not processed correctly.
 feature: Orders
 role: Admin, Developer
+exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
 ---
 # ACSD-57086: Orders from non-default websites with terms and conditions enabled are processed incorrectly
 

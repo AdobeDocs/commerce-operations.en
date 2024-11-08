@@ -3,6 +3,7 @@ title: 'MDVA-39153: Discount amount is calculated incorrectly during reorder in 
 description: The MDVA-39153 patch fixes the issue where the discount amount is calculated incorrectly during reorder in the Admin. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 is installed. The patch ID is MDVA-39153. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Personalization, Payments
 role: Admin
+exl-id: e8fe58ca-1218-4e76-b5fb-c7f935029cd2
 ---
 # MDVA-39153: Discount amount is calculated incorrectly during reorder in the Admin
 

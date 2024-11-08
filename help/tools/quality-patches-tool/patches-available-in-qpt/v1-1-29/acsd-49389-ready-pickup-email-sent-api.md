@@ -3,6 +3,7 @@ title: 'ACSD-49389: Ready for pickup email sent by API when not ready for pickup
 description: Apply the ACSD-49389 patch to fix the Adobe Commerce issue where a ready for pickup email is sent by the API when order is not ready for pickup.
 feature: REST, Communications
 role: Admin
+exl-id: d1bc430a-3021-40d1-9091-db8ed9125619
 ---
 # ACSD-49389: Ready for pickup email sent by API when not ready for pickup
 

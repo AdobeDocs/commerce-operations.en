@@ -3,6 +3,7 @@ title: 'ACSD-45488: Configurable product with multiple sources not returned to i
 description: The ACSD-45488 patch solves the issue where a configurable product with multiple sources is not returned to in stock automatically. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-45488. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Configuration, Orders, Products, Returns
 role: Admin
+exl-id: 53f34e8e-00bd-4386-bebf-b15882e36da1
 ---
 # ACSD-45488: Configurable product with multiple sources not returned to in stock automatically
 

@@ -3,6 +3,7 @@ title: 'ACSD-52287: Status of archived orders does not change'
 description: Apply the ACSD-52287 patch to fix the Adobe Commerce issue where the status of archived orders does not change from *completed* to *closed* on grid after the credit memo was submitted.
 feature: Orders, Checkout
 role: Admin, Developer
+exl-id: 012f49ba-fdc1-4e1e-87fe-7b9c661f231b
 ---
 # ACSD-52287: Status of archived orders does not change
 

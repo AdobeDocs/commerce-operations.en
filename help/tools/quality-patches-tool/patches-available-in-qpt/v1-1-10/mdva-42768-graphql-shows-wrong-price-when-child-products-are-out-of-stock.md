@@ -3,6 +3,7 @@ title: 'MDVA-42768: GraphQL shows wrong price when child products are out of sto
 description: The MDVA-42768 patch fixes the issue where GraphQL shows the wrong price when the child products a configurable product are out of stock. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10 is installed. The patch ID is MDVA-42768. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: GraphQL, Orders, Products
 role: Admin
+exl-id: 9f6ab418-2267-4548-952a-17dc8295f632
 ---
 # MDVA-42768: GraphQL shows wrong price when child products are out of stock
 

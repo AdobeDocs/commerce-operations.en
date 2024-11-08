@@ -3,6 +3,7 @@ title: 'ACSD-57643: Products with custom options incorrectly added to shopping c
 description: Apply the ACSD-57643 patch to fix the Adobe Commerce issue where products with custom options are incorrectly added to the shopping cart via GraphQL.
 feature: Shopping Cart, GraphQL, Products
 role: Admin, Developer
+exl-id: 568f820b-ecab-4839-b32e-b0b42c1d2342
 ---
 # ACSD-57643: Products with custom options incorrectly added to shopping cart via GraphQL
 

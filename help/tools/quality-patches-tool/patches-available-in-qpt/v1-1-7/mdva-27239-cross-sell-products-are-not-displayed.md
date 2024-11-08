@@ -3,6 +3,7 @@ title: 'MDVA-27239: Cross-sell products are not displayed'
 description: The MDVA-27239 patch fixes the issue where cross-sell products are not displayed. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is installed. Please note that the issue was fixed in Adobe Commerce 2.3.6.
 feature: Products
 role: Admin
+exl-id: ab8fe64d-adbe-4756-be43-1a35ba6b4123
 ---
 # MDVA-27239: Cross-sell products are not displayed
 
