@@ -30,16 +30,16 @@ Inaccuracies in the sales order and coupon report data due to missing *[!UICONTR
 
 1. Create a [!UICONTROL Tax Zone] and a [!UICONTROL Tax Rule].
 1. Set the following tax configurations:
-    - Tax Class for Shipping = Taxable Goods
-    - Catalog Prices = Including Tax
-    - Shipping Prices = Including Tax
-    - Apply Discount on Prices = Including Tax
-    - Display Product Prices in Catalog = Including Tax
-    - Display Shipping Prices = Including Tax
+    - **[!UICONTROL Tax Class for Shipping]** = [!UICONTROL Taxable Goods]
+    - **[!UICONTROL Catalog Prices]** = [!UICONTROL Including Tax]
+    - **[!UICONTROL Shipping Prices]** = [!UICONTROL Including Tax]
+    - **[!UICONTROL Apply Discount on Prices]** = [!UICONTROL Including Tax]
+    - **[!UICONTROL Display Product Prices in Catalog]** = [!UICONTROL Including Tax]
+    - **[!UICONTROL Display Shipping Prices]** = [!UICONTROL Including Tax]
 1. Update the following display settings for Orders, Invoices, and Credit memos:
-    - Display Prices = Including Tax
-    - Display Subtotal = Including Tax
-    - Display Shipping Amount = Including Tax
+    - **[!UICONTROL Display Prices]** = [!UICONTROL Including Tax]
+    - **[!UICONTROL Display Subtotal]**= [!UICONTROL Including Tax]
+    - **[!UICONTROL Display Shipping Amount]** = [!UICONTROL Including Tax]
 1. Create a [!UICONTROL Cart Price Rule] with a coupon for a 10% discount.
 1. Complete an order using the coupon and generate an invoice and shipment.
 1. Go to **[!UICONTROL Reports]** > **[!UICONTROL Sales]** > **[!UICONTROL Coupons]** and generate a report.
@@ -52,3 +52,16 @@ The *[!UICONTROL Total Amount]* and *[!UICONTROL Total Amount Actual]* calculati
 <u>Actual results</u>:
 
 Sales order data and coupon report data do not match because the *[!UICONTROL Discount Tax Compensation Amount]* and *[!UICONTROL Shipping Discount Tax Compensation Amount]* are missing from calculations.
+
+## Apply the patch
+
+To apply individual patches, use the following links depending on your deployment method:
+
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+
+## Related reading
+
+To learn more about [!DNL Quality Patches Tool], refer to:
+
+[[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the Tools guide.
