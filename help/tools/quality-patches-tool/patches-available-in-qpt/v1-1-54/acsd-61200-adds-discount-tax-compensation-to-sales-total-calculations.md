@@ -24,7 +24,7 @@ The ACSD-61200 patch fixes the issue where *[!UICONTROL Discount Tax Compensatio
 
 ## Issue
 
-Inaccuracies in the sales order and coupon report data due to missing [!UICONTROL Discount Tax Compensation Amount] and [!UICONTROL Shipping Discount Tax Compensation Amount] in total amount calculations.
+Inaccuracies in the sales order and coupon report data due to missing *[!UICONTROL Discount Tax Compensation Amount]* and *[!UICONTROL Shipping Discount Tax Compensation Amount]* in sales total calculations.
 
 <u>Steps to reproduce</u>:
 
