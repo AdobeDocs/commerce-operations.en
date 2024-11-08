@@ -1,8 +1,9 @@
 ---
-title: "ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap"
+title: 'ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap'
 description: Apply the ACSD-61322 patch to fix the Adobe Commerce issue where products/categories not assigned to the [!UICONTROL Shared Catalog] for the Default (General) group are still included in the XML Sitemap.
 feature: Site Navigation, B2B
 role: Admin, Developer
+exl-id: 4698ba5a-673e-4bf0-b36c-39f6122dab26
 ---
 # ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap
 

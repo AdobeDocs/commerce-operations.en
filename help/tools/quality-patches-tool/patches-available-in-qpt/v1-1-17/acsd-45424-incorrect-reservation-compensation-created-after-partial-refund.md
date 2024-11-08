@@ -3,6 +3,7 @@ title: 'ACSD-45424: Incorrect reservation compensation created after partial ref
 description: The ACSD-45424 patch fixes the issue where an incorrect reservation compensation is created after a partial refund. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 is installed. The patch ID is ACSD-45424. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Orders
 role: Admin
+exl-id: 94435816-9f4a-40f9-be80-05836ed7781f
 ---
 # ACSD-45424: Incorrect reservation compensation created after partial refund
 

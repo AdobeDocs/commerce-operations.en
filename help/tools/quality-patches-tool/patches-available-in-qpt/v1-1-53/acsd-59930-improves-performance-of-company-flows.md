@@ -3,6 +3,7 @@ title: "ACSD-59930: Improves performance of the company's flows"
 description: Apply the ACSD-59930 patch to resolve the Adobe Commerce issue where a *Timeout* error is displayed in the admin panel when creating, saving, or deleting a company with an admin that has *1000+* addresses in the address book.
 feature: Customers, B2B
 role: Admin, Developer
+exl-id: eaa6c78d-13e3-439d-90f7-70c1c96c3197
 ---
 # ACSD-59930: Improves performance of the company's flows
 

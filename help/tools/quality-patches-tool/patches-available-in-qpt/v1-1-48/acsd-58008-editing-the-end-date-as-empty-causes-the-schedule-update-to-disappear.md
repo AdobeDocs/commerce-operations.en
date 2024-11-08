@@ -3,6 +3,7 @@ title: 'ACSD-58008: Editing the end date as *empty* causes the schedule update t
 description: Apply the ACSD-58008 patch to fix the Adobe Commerce issue where editing the end date as *empty* causes schedule update to disappear.
 feature: Staging, Page Content
 role: Admin, Developer
+exl-id: 6d2279e5-6580-4325-b0a8-ed62a95da3c2
 ---
 # ACSD-58008: Editing the end date as *empty* causes the schedule update to disappear
 

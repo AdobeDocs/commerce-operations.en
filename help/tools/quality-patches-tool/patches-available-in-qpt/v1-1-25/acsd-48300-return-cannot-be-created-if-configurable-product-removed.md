@@ -3,6 +3,7 @@ title: 'ACSD-48300: return cannot be created if configurable product is removed'
 description: Apply the ACSD-48300 patch to fix the Adobe Commerce issue where return cannot be created if the configurable product is removed.
 feature: Admin Workspace, Configuration, Orders, Products, Returns
 role: Admin
+exl-id: 50139364-e2ea-47a8-9bca-09876dd0e70d
 ---
 # ACSD-48300: return cannot be created if configurable product is removed
 

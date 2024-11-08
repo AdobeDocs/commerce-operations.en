@@ -3,6 +3,7 @@ title: 'MDVA-43935: Upsell product shown twice on product page'
 description: The MDVA-43935 patch fixes the issue where the upsell product is being shown twice on the product page. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is installed. The patch ID is MDVA-43935. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Products
 role: Admin
+exl-id: f076b29a-b2de-4549-9216-407c50a3e3e5
 ---
 # MDVA-43935: Upsell product shown twice on product page
 

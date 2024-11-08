@@ -3,6 +3,7 @@ title: 'ACSD-53824: Deployment is failing on setup upgrade'
 description: Apply the ACSD-53824 patch to fix the Adobe Commerce issue where the deployment is failing on setup upgrade
 feature: Attributes, Upgrade
 role: Admin, Developer
+exl-id: 9038190b-5779-47b5-b4fb-ccd0a769dc61
 ---
 # ACSD-53824: Deployment is failing on setup upgrade
 

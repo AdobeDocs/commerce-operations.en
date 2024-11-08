@@ -3,6 +3,7 @@ title: 'ACSD-49822: Updates on requisition list page not reflected on print requ
 description: Apply the ACSD-49822 patch to fix the Adobe Commerce issue where updates on the requisition list page are not reflected on the print requisition list.
 feature: Admin Workspace, B2B
 role: Admin
+exl-id: 053b8900-0900-4b7e-ba1b-ad4b88ca3f35
 ---
 # ACSD-49822: Updates in requisition list not reflected on print requisition list
 

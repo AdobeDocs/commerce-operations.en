@@ -3,6 +3,7 @@ title: 'ACSD-57394: Incorrect product sorting by multiple sort attributes in [!D
 description: Apply the ACSD-57394 patch to fix the Adobe Commerce issue where products are incorrectly sorted when using multiple sort attributes in [!DNL GraphQL].
 feature: GraphQL, Products
 role: Admin, Developer
+exl-id: 3e4ca535-37ed-4363-ba6c-968eb53b98b3
 ---
 # ACSD-57394: Incorrect product sorting by multiple sort attributes in [!DNL GraphQL]
 
@@ -97,4 +98,3 @@ To learn more about [!DNL Quality Patches Tool], refer to:
 
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
-

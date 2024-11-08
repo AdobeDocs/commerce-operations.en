@@ -3,6 +3,7 @@ title: 'ACSD-48293: composite products out of stock when sold out child products
 description: Apply the ACSD-48293 patch to fix the Adobe Commerce issue where the composite products go out of stock when the sold-out child products are returned to stock.
 feature: Admin Workspace, Orders, Products
 role: Admin
+exl-id: 2aa75e97-373e-4e4a-a545-69bce807ca4d
 ---
 # ACSD-48293: composite products out of stock when sold out child products restocked
 

@@ -3,6 +3,7 @@ title: "MDVA-42645: Admin can't refund reward points for disabled store credit"
 description: The MDVA-42645 patch solves the issue where the admin cannot refund reward points if the store credit functionality is disabled. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 is installed. The patch ID is MDVA-42645. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Admin Workspace, Orders, Rewards, Returns
 role: Admin
+exl-id: 8053fcc7-d30c-424a-9494-df6e8630b095
 ---
 # MDVA-42645: Admin can't refund reward points for disabled store credit
 

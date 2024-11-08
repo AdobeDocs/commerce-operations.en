@@ -3,6 +3,7 @@ title: 'ACSD-54472: Customers of a rejected company can still authenticate'
 description: Apply the ACSD-54472 patch to fix the Adobe Commerce issue where the customers of a rejected company can still authenticate, and customers of a blocked and rejected company can still place orders.
 feature: B2B
 role: Admin, Developer
+exl-id: c0bd960f-609b-4253-9fc8-dc47fbbddc93
 ---
 # ACSD-54472: Customers of a rejected company can still authenticate
 

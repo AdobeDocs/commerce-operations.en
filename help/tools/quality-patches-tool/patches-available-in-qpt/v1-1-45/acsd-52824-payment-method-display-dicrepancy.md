@@ -3,6 +3,7 @@ title: 'ACSD-52824: Disabled payment methods displayed for company customers'
 description: Apply the ACSD-52824 patch to fix the Adobe Commerce issue where [!DNL PayPal Express], [!DNL Google Pay], and [!DNL Apple Pay] payment methods appear for company customers despite being disabled in the company settings.
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
+exl-id: 39d67de6-1796-4067-ae7a-ef17fcf794e5
 ---
 # ACSD-52824: Disabled payment methods displayed for company customers
 

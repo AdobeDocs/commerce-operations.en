@@ -1,8 +1,9 @@
 ---
-title: "ACSD-60584: Access token created for one website is allowed to access information on other websites"
+title: 'ACSD-60584: Access token created for one website is allowed to access information on other websites'
 description: Apply the ACSD-60584 patch to fix the issue where the access token created for the user on one website is allowed to access or change customer information on other websites.
 feature: Customers, GraphQL
 role: Admin, Developer
+exl-id: ea30ba92-4b7b-44f9-a1b1-97946061d9e6
 ---
 # ACSD-60584: Access token created for one website is allowed to access information on other websites
 

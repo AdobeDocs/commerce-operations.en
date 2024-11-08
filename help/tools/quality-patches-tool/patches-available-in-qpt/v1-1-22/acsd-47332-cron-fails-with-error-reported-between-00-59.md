@@ -3,6 +3,7 @@ title: 'ACSD-47332: cron fails with error reported only between 00:00 to 00:59 U
 description: Apply the ACSD-47332 patch to fix the Adobe Commerce issue where cron fails with an error that is reported only when it is running between 00:00 to 00:59 UTC.
 feature: Configuration
 role: Admin
+exl-id: ffe6c8f7-0e4c-4a22-853a-45d708bf8164
 ---
 # ACSD-47332: cron fails with error reported only when running between 00:00 to 00:59 UTC
 

@@ -3,8 +3,8 @@ title: 'ACSD-57045: URL rewrites cause infinite page looping after [!UICONTROL W
 description: Apply the ACSD-57045 patch to fix the Adobe Commerce issue where URL rewrites cause infinite page looping after [!UICONTROL Website Root] is unchecked from [!UICONTROL Hierarchy].
 feature: CMS
 role: Admin, Developer
+exl-id: 7beaee40-a392-4644-917e-c507e79bddcc
 ---
-
 # ACSD-57045: URL rewrites cause infinite page looping after [!UICONTROL Website Root] unchecked from [!UICONTROL Hierarchy]
 
 The ACSD-57045 patch fixes the issue where URL rewrites cause infinite page looping after **[!UICONTROL Website Root]** is unchecked from **[!UICONTROL Hierarchy]**. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.49 is installed. The patch ID is ACSD-57045. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.5.0.

@@ -3,6 +3,7 @@ title: 'ACSD-56616: Storefront display of bundled products during simple stock s
 description: Apply the ACSD-56616 patch to fix the Adobe Commerce issue where bundled products unexpectedly appear on the storefront when all associated simple products are out of stock.
 feature: Products
 role: Admin, Developer
+exl-id: 8b225d9d-1898-4c4d-81be-7b92cbf7d06f
 ---
 # ACSD-56616: Storefront display of bundled products during simple stock shortage.
 
