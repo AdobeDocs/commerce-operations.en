@@ -47,7 +47,7 @@ Inaccuracies in the sales order and coupon report data due to missing *[!UICONTR
 
 <u>Expected results</u>:
 
-The [!UICONTROL Total Amount] and [!UICONTROL Total Amount Actual] values should include both [!UICONTROL Discount Tax Compensation Amount] and [!UICONTROL Shipping Discount Tax Compensation Amount], matching the order summary with report data.
+The *[!UICONTROL Total Amount]* and *[!UICONTROL Total Amount Actual]* calculations include both *[!UICONTROL Discount Tax Compensation Amount]* and *[!UICONTROL Shipping Discount Tax Compensation Amount]*, matching the order summary with the report data.
 
 <u>Actual results</u>:
 
