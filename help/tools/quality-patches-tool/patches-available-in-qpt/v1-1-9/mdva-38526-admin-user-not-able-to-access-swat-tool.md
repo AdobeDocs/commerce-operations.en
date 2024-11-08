@@ -3,6 +3,7 @@ title: 'MDVA-38526: Admin user is not able to access SWAT tool'
 description: The MDVA-38526 patch solves the issue where the admin user is not able to access the SWAT tool. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 is installed. The patch ID is MDVA-38526. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Admin Workspace
 role: Admin
+exl-id: de8691ce-5225-4409-8908-f2b23f1da166
 ---
 # MDVA-38526: Admin user is not able to access SWAT tool
 

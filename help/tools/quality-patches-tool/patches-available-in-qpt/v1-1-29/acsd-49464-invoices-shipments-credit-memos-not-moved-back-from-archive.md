@@ -3,6 +3,7 @@ title: 'ACSD-49464: Invoices, shipments, and credit memos not moved back from ar
 description: Apply the ACSD-49464 patch to fix the Adobe Commerce issue where invoices, shipments, and credit memos are not moved back from the archive when the orderId is different.
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
 role: Admin
+exl-id: d9ccd043-cbd3-4be5-ab29-c5351da53030
 ---
 # ACSD-49464: Invoices, shipments, and credit memos not moved back from archive
 

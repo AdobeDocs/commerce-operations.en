@@ -1,8 +1,9 @@
 ---
-title: "ACSD-61195: Cart GraphQL request fails to return items on final page"
+title: 'ACSD-61195: Cart GraphQL request fails to return items on final page'
 description: Apply the ACSD-61195 patch to fix the Adobe Commerce issue where no cart items are returned on the last page for the cart GraphQL request.
 feature: GraphQL
 role: Admin, Developer
+exl-id: 15f0f29c-8517-4f1e-9370-772572e75c9a
 ---
 # ACSD-61195: Cart GraphQL request fails to return items on final page
 

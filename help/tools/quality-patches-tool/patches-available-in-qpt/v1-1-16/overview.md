@@ -3,6 +3,7 @@ title: 'Overview: [!DNL Quality Patches Tool] (QPT) v1.1.16'
 description: This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.16.
 feature: Tools and External Services
 role: Admin
+exl-id: 8fc8ad88-d6be-455c-a0af-22b102394f70
 ---
 # [!DNL Quality Patches Tool] (QPT) v1.1.16 overview
 

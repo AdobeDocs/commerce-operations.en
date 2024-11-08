@@ -3,6 +3,7 @@ title: 'MDVA-38799: Downloadable products not saved after creating a staging upd
 description: The MDVA-38799 patch solves the issue where downloadable products are not saved after creating a staging update. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0 is installed. The patch ID is MDVA-38799. Please note that the issue was fixed in Adobe Commerce version 2.4.3.
 feature: Products, Staging
 role: Admin
+exl-id: 0ae665a8-cda2-4340-91e7-5b9b969a6607
 ---
 # MDVA-38799: Downloadable products not saved after creating a staging update
 

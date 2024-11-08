@@ -3,6 +3,7 @@ title: 'ACSD-51238: Inventory source is removed when updating a configurable pro
 description: Apply the ACSD-51238 patch to fix the Adobe Commerce issue where the inventory source is removed when updating a configurable product and editing the price.
 feature: Configuration, Inventory, Orders, Products
 role: Admin
+exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
 ---
 # ACSD-51238: Inventory source is removed when updating a configurable product and editing the price
 

@@ -1,6 +1,7 @@
 ---
 title: 'ACSD-52160: Product validation result against the cart price rule'
 description: Apply the ACSD-52160 patch to fix the Adobe Commerce issue where the product validation result against the cart price rule is not properly evaluated based on the rule condition *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*.
+exl-id: 8f8799c9-850a-4c8f-bde4-68df64e46c85
 ---
 # ACSD-52160: Product validation result against the cart price rule is not properly evaluated
 

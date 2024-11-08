@@ -3,6 +3,7 @@ title: 'ACSD-55241: **Used** and **Times Used** attributes display incorrect val
 description: Apply the ACSD-55241 patch to fix the Adobe Commerce issue where the **Used** and **Times Used** attributes display incorrect values for generated coupons
 feature: Price Rules
 role: Admin, Developer
+exl-id: a156f03c-c939-4ea7-bd34-03c2234edbff
 ---
 # ACSD-55241: **Used** and **Times Used** attributes display incorrect values for generated coupons
 

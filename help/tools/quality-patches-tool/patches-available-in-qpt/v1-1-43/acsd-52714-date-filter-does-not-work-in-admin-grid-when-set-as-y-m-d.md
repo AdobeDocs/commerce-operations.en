@@ -3,6 +3,7 @@ title: 'ACSD-52714: Date filter does not work in admin grid when set as y-m-d'
 description: Apply the ACSD-52714 patch to fix the Adobe Commerce issue where the date filter does not work in the admin grid when the date format is set as y-m-d.
 feature: Attributes
 role: Admin, Developer
+exl-id: 4a34900b-9566-41bb-8d3e-18a440117907
 ---
 # ACSD-52714: Date filter does not work in admin grid when set as y-m-d
 

@@ -3,6 +3,7 @@ title: 'ACSD-53925: Cannot save CMS block with [!UICONTROL Product Carousel]'
 description: Apply the ACSD-53925 patch to fix the Adobe Commerce issue where the admin is unable to save a CMS block with Product Carousel when dimensions mode for `catalog_product_price` is set to website.
 feature: CMS, Page Builder, Price Indexer, Products
 role: Admin, Developer
+exl-id: f6d286ab-d904-4f08-8265-99632f74b88a
 ---
 # ACSD-53925: Cannot save CMS block with *[!UICONTROL Product Carousel]*
 

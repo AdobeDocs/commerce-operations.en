@@ -3,6 +3,7 @@ title: 'MDVA-39384: Unable to save custom customer attribute for company user'
 description: The MDVA-39384 patch solves the issue where the custom customer attribute for a company user is not saved. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is installed. The patch ID is MDVA-39384. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Attributes, B2B, Companies
 role: Developer
+exl-id: 0ccaa4c5-ca43-4b25-963b-b9a547ecc71f
 ---
 # MDVA-39384: Unable to save custom customer attribute for company user
 

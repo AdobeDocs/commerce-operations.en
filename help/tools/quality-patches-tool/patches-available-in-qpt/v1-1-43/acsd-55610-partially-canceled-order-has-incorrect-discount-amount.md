@@ -3,6 +3,7 @@ title: 'ACSD-55610: Partially canceled order has incorrect discount amount'
 description: Apply the ACSD-55610 patch to fix the Adobe Commerce issue where a partially canceled order has an incorrect discount amount.
 feature: Invoices, Orders, Price Rules, Shopping Cart
 role: Admin, Developer
+exl-id: b7b94c9d-e027-4601-837b-d70b7ff8bd2c
 ---
 # ACSD-55610: Partially canceled order has incorrect discount amount
 

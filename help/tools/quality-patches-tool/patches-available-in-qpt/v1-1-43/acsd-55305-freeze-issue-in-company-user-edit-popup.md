@@ -3,6 +3,7 @@ title: 'ACSD-55305: Popup freeze during company user editing in [!UICONTROL My A
 description: Apply the ACSD-55305 patch to fix the Adobe Commerce issue where [!UICONTROL Edit Company User] popup on the [!UICONTROL My Account] &gt; [!UICONTROL Company Structure] page freezes with a loader on the screen.
 feature: Companies, B2B
 role: Admin, Developer
+exl-id: eeb2b136-022f-42d5-85e2-85537f4677d6
 ---
 # ACSD-55305: Popup freeze during company user editing in [!UICONTROL My Account]
 

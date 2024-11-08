@@ -3,6 +3,7 @@ title: 'ACSD-52815: Input field for quantity field of non-default source support
 description: Apply the ACSD-52815 patch to fix the Adobe Commerce performance issue where the input field for the quantity field of a non-default source supports only up to 6 digits, unlike 8 for a default stock.
 feature: Inventory, Products
 role: Admin
+exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
 ---
 # ACSD-52815: Input field for quantity field of non-default source supports only up to 6 digits
 

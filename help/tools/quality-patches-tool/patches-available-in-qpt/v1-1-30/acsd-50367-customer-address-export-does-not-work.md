@@ -3,6 +3,7 @@ title: 'ACSD-50367: Customer address export does not work with multi-select attr
 description: Apply the ACSD-50367 patch to fix the Adobe Commerce issue where the customer address export does not work when a multi-select **`Customer Address`** attribute without values is created.
 feature: Admin Workspace, Attributes, Data Import/Export, Shipping/Delivery
 role: Admin
+exl-id: 3f33a590-e7c2-424e-aacd-2df7ab893c3e
 ---
 # ACSD-50367: Customer address export does not work
 

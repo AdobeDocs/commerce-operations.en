@@ -3,6 +3,7 @@ title: 'ACSD-51700: Error switching store views on downloadable product edit pag
 description: Apply the ACSD-51700 patch to fix the Adobe Commerce issue where an error occurs when switching store views on a downloadable product edit page in the admin.
 feature: Products
 role: Admin
+exl-id: dd3da026-ac72-440c-8632-8a3ca27fc134
 ---
 # ACSD-51700: Error switching store views on downloadable product edit page
 

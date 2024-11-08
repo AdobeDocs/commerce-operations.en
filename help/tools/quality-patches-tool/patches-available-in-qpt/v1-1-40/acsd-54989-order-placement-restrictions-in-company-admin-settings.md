@@ -3,6 +3,7 @@ title: 'ACSD-54989: Company admin cannot order when [!UICONTROL Enable Purchase 
 description: Apply the ACSD-54989 patch to fix the Adobe Commerce issue where company admin cannot place orders if [!UICONTROL Enable Purchase Orders] is set to Yes and [!UICONTROL Purchase Order] is set to No.
 feature: Orders, Companies, Purchase Orders
 role: Admin, Developer
+exl-id: 13830361-dd0c-486f-b07f-34280a17ab76
 ---
 # ACSD-54989: Company admin cannot order when *[!UICONTROL Enable Purchase Orders]* set to *Yes* and *[!UICONTROL Purchase Order]* set to *No*
 

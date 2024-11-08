@@ -3,6 +3,7 @@ title: 'ACSD-48070: Exception while editing a scheduled update'
 description: Apply the ACSD-48070 patch to fix the Adobe Commerce issue where an exception is triggered while editing a scheduled update.
 feature: Catalog Management, Categories
 role: Admin
+exl-id: cebed18d-d213-4a5e-bc3b-8abcb52d45d0
 ---
 # ACSD-48070: Exception while editing a scheduled update
 
