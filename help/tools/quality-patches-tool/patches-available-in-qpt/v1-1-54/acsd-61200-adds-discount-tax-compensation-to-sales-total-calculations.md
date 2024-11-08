@@ -42,7 +42,7 @@ Inaccuracies in the sales order and coupon report data due to missing *[!UICONTR
     - Display Shipping Amount = Including Tax
 1. Create a [!UICONTROL Cart Price Rule] with a coupon for a 10% discount.
 1. Complete an order using the coupon and generate an invoice and shipment.
-1. Go to [!UICONTROL Reports] > [!UICONTROL Sales] > [!UICONTROL Coupons] and generate a report.
+1. Go to **[!UICONTROL Reports]** > **[!UICONTROL Sales]** > **[!UICONTROL Coupons]** and generate a report.
 1. Compare the order summary data to the report.
 
 <u>Expected results</u>:
