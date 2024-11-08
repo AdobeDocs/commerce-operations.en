@@ -1,6 +1,6 @@
 ---
 title: "ACSD-61200: Adds discount tax compensation to sales total calculations"
-description: Apply the ACSD-61200 patch to correct missing [!UICONTROL Discount Tax Compensation Amount] and [!UICONTROL Shipping Discount Tax Compensation Amount] in sales total calculations, resolving discrepancies between sales and report data.
+description: Apply the ACSD-61200 patch to fix the Adobe Commerce issue where *[!UICONTROL Discount Tax Compensation Amount]* and *[!UICONTROL Shipping Discount Tax Compensation Amount]* are missing from sales total calculations, causing discrepancies between sales order data and coupon report data.
 feature: Reporting, Taxes
 role: Admin, Developer
 ---
