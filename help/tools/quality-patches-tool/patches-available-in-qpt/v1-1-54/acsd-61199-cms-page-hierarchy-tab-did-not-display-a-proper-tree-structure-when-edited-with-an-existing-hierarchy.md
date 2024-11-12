@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-61199: [!UICONTROL CMS page] hierarchy tab did not display a proper tree structure when edited with an existing hierarchy'
-description: Apply the ACSD-61199 patch to fix the Adobe Commerce issue where the [!UICONTROL CMS page] hierarchy tab did not display a proper tree structure when editing a [!UICONTROL CMS page] with an existing hierarchy, ensuring the hierarchy tree now displays correctly in the [!UICONTROL CMS page].
+title: 'ACSD-61199: **[!UICONTROL CMS page]** hierarchy tab did not display a proper tree structure when edited with an existing hierarchy'
+description: Apply the ACSD-61199 patch to fix the Adobe Commerce issue where the **[!UICONTROL CMS page]** hierarchy tab did not display a proper tree structure when editing a **[!UICONTROL CMS page]** with an existing hierarchy, ensuring the hierarchy tree now displays correctly in the **[!UICONTROL CMS page]**.
 feature: Page Content
 role: Admin, Developer
 ---
-# ACSD-61199: CMS page hierarchy tab did not display a proper tree structure when edited with an existing hierarchy
+# ACSD-61199: [!UICONTROL CMS page] hierarchy tab did not display a proper tree structure when edited with an existing hierarchy
 
-The ACSD-61199 patch fixes the issue where [!UICONTROL CMS page] hierarchy tab did not display a proper tree structure when editing a [!UICONTROL CMS page] with an existing hierarchy, ensuring the hierarchy tree now displays correctly in the [!UICONTROL CMS page]. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61199. Please note that the issue is fixed in Adobe Commerce 2.4.8.
+The ACSD-61199 patch fixes the issue where **[!UICONTROL CMS page]** hierarchy tab did not display a proper tree structure when editing a **[!UICONTROL CMS page]** with an existing hierarchy, ensuring the hierarchy tree now displays correctly in the **[!UICONTROL CMS page]**. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61199. Please note that the issue is fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,7 +24,7 @@ The ACSD-61199 patch fixes the issue where [!UICONTROL CMS page] hierarchy tab d
 
 ## Issue
 
-The [!UICONTROL CMS page] hierarchy tab did not display a proper tree structure when editing a CMS page with an existing hierarchy
+The **[!UICONTROL CMS page]** hierarchy tab did not display a proper tree structure when editing a **[!UICONTROL CMS page]** with an existing hierarchy
 
 <u>Steps to reproduce</u>:
 
