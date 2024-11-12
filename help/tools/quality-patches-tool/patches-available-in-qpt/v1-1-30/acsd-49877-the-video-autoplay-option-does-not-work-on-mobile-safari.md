@@ -3,6 +3,7 @@ title: 'ACSD-49877: Video autoplay does not work on mobile [!DNL Safari]'
 description: Apply the ACSD-49877 patch to fix the Adobe Commerce issue where the video autoplay option does not work on mobile [!DNL Safari] when the video is linked directly to a remote video file.
 feature: CMS
 role: Admin
+exl-id: aa2557e2-4bed-4004-b9bc-36c59f1e9cdc
 ---
 # ACSD-49877: Video autoplay does not work on mobile [!DNL Safari]
 

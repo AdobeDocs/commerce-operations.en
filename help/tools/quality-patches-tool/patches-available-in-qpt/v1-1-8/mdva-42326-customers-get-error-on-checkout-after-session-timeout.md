@@ -3,6 +3,7 @@ title: 'MDVA-42326: Customers get error on checkout after session timeout'
 description: The MDVA-42326 patch solves the issue where the customers get an error on checkout after the session timeout, even if the Persistent Shopping Cart is enabled. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 is installed. The patch ID is MDVA-42326. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Checkout, Orders
 role: Admin
+exl-id: f9ef6778-298b-4ff9-9c4b-b3f47bb04b67
 ---
 # MDVA-42326: Customers get error on checkout after session timeout
 

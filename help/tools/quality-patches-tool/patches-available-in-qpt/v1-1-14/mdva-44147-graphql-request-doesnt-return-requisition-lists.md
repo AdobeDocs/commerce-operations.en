@@ -3,6 +3,7 @@ title: "MDVA-44147: GraphQL request doesn't return Requisition Lists"
 description: The MDVA-44147 patch fixes the issue where GraphQL request doesn't return Requisition Lists. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
+exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
 ---
 # MDVA-44147: GraphQL request doesn't return Requisition Lists
 
@@ -29,8 +30,8 @@ GraphQL request doesn't return Requisition Lists.
 <u>Steps to reproduce</u>:
 
 1. Go to **Store** > **Settings** > **Configuration** > **General** > **B2B Features** and enable Requisition List.
-1. Log in as a customer and add a product to the [Requisition List](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html).
-1. Create a [Customer Token](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. Log in as a customer and add a product to the [Requisition List](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Create a [Customer Token](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
     <pre>
     <code class="language-graphql">
@@ -45,7 +46,7 @@ GraphQL request doesn't return Requisition Lists.
       </code>
       </pre>
 
-1. Use the following query to retrieve all the Requisition Lists from the customer. Use the **Authorization** header with the value `Bearer <customer_token>`. Refer to the [Customer Query](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) article in our developer documentation for more information.
+1. Use the following query to retrieve all the Requisition Lists from the customer. Use the **Authorization** header with the value `Bearer <customer_token>`. Refer to the [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) article in our developer documentation for more information.
 
     Request:
 

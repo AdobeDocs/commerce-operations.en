@@ -20,7 +20,7 @@ Configure a lock provider to prevent the launch of duplicate cron jobs and cron 
 
 Adobe Commerce uses the database to save locks by default. If you have multiple nodes on your servers, we recommend using Zookeeper as the lock provider.
 
-If you are running Adobe Commerce on cloud infrastructure, you do not need to configure lock provider settings. The application configures the file lock provider for Pro projects during the provisioning process. See [Cloud variables](https://devdocs.magento.com/cloud/env/variables-cloud.html).
+If you are running Adobe Commerce on cloud infrastructure, you do not need to configure lock provider settings. The application configures the file lock provider for Pro projects during the provisioning process. See [Cloud variables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Command usage
 

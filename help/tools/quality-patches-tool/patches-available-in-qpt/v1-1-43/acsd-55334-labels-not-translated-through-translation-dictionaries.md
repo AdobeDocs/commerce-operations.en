@@ -3,6 +3,7 @@ title: 'ACSD-55334: Labels not translated through translation dictionaries in Gr
 description: Apply the ACSD-55334 patch to fix the Adobe Commerce issue where labels are not translated through translation dictionaries in the GraphQL response.
 feature: Categories, GraphQL
 role: Admin, Developer
+exl-id: c22e5007-c661-49d4-90b7-dcee9b97c823
 ---
 # ACSD-55334: Labels not translated through translation dictionaries in GraphQL response
 

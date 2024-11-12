@@ -3,6 +3,7 @@ title: 'ACSD-57588: Error in region ID processing when shipping to multiple addr
 description: Apply the ACSD-57588 patch to fix the Adobe Commerce issue where shipping an order to multiple addresses triggers an error during region ID processing.
 feature: Orders, Shipping/Delivery
 role: Admin, Developer
+exl-id: 9a455d32-47d3-4d29-b12e-068bbee98f89
 ---
 # ACSD-57588: Error in region ID processing when shipping to multiple addresses
 

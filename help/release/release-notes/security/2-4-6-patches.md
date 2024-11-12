@@ -8,6 +8,22 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
+## 2.4.6-p8
+
+The Adobe Commerce 2.4.6-p8 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+
+### Hotfixes included in this release
+
+{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
+
 ## 2.4.6-p7
 
 The Adobe Commerce 2.4.6-p7 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.

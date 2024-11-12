@@ -3,6 +3,7 @@ title: "ACSD-57074: *Yes/No* custom attribute with `price_*` prefix in `attribut
 description: Apply the ACSD-57074 patch to fix the Adobe Commerce issue where the *Yes/No* custom attribute with `price_*` prefix in the `attribute_code` attribute doesn't work with indexing.
 feature: Products, Categories, Catalog Management
 role: Admin, Developer
+exl-id: 718b8f2d-4d3d-4755-8a91-5c2f97114813
 ---
 # ACSD-57074: *Yes/No* custom attribute with `price_*` prefix in `attribute_code` attribute doesn't work with indexing
 

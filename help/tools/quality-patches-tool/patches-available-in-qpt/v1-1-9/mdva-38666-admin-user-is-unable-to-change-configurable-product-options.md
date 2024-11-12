@@ -3,6 +3,7 @@ title: 'MDVA-38666: Admin user is unable to change configurable product options'
 description: The MDVA-38666 patch solves the issue where the admin user is unable to change configurable product options in the customer's cart. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 is installed. The patch ID is MDVA-38666. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Admin Workspace, Configuration, Products
 role: Admin
+exl-id: 8e72f6a4-b36f-4fe4-bc01-2254984dd512
 ---
 # MDVA-38666: Admin user is unable to change configurable product options
 

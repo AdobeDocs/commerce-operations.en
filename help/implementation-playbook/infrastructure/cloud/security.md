@@ -64,7 +64,7 @@ Adobe regularly tests the core application code for security vulnerabilities. Pa
 
 The full code base is scanned with these tools on a bi-weekly basis. Customers are notified of security patches through direct emails, notifications in the application, and in the [Security Center](https://helpx.adobe.com/security.html).
 
-Customers must ensure that these patches are applied to their customized application within 30 days of release, according to the PCI guidelines. Adobe also provides a [Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html) that enables merchants to regularly monitor their sites and receive updates about known security risks, malware, and unauthorized access. The Security Scan Tool is a free service and can be run on any version of Adobe Commerce.
+Customers must ensure that these patches are applied to their customized application within 30 days of release, according to the PCI guidelines. Adobe also provides a [Security Scan Tool](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) that enables merchants to regularly monitor their sites and receive updates about known security risks, malware, and unauthorized access. The Security Scan Tool is a free service and can be run on any version of Adobe Commerce.
 
 To encourage security researchers to identify and report vulnerabilities, Adobe Commerce has a [bug-bounty program](https://hackerone.com/magento) in addition to internal testing. Further, the customer is provided the full source code of the application for their own review if desired.
 
@@ -78,7 +78,7 @@ The only way to get executable code into the Managed Services production environ
 
 ## Logging
 
-All AWS activities are logged in AWS CloudTrail. Operating system, application server, and database logs are stored on the production servers and stored in backups. All source code changes are recorded in a Git repository. Deployment history is available in the Adobe Commerce [Project Web Interface](https://devdocs.magento.com/cloud/project/projects.html#login). All support access is logged and support sessions are recorded.
+All AWS activities are logged in AWS CloudTrail. Operating system, application server, and database logs are stored on the production servers and stored in backups. All source code changes are recorded in a Git repository. Deployment history is available in the Adobe Commerce [Project Web Interface](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview). All support access is logged and support sessions are recorded.
 
 See [View and manage logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in the _Cloud Guide_.
 

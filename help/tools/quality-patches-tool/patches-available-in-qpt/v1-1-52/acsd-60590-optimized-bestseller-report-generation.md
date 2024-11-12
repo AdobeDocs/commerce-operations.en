@@ -1,8 +1,9 @@
 ---
-title: "ACSD-60590: Enhancing performance of Bestsellers Aggregated Daily Report generation"
+title: 'ACSD-60590: Enhancing performance of Bestsellers Aggregated Daily Report generation'
 description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where the Bestsellers Aggregated Daily Report takes a significant amount of time to generate for a large volume of placed orders.
 feature: Reporting
 role: Admin, Developer
+exl-id: 3b2b92eb-d4fc-4cd7-a117-a2c1caac72ec
 ---
 # ACSD-60590: Enhancing performance of Bestsellers Aggregated Daily Report generation
 

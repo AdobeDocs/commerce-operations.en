@@ -3,6 +3,7 @@ title: 'ACSD-44591: Errors when order without CAPTCHA confirmation'
 description: The ACSD-44591 patch solves the issue where the user gets errors when trying to place an order without CAPTCHA confirmation.
 feature: Orders
 role: Admin
+exl-id: 4b8a8090-a2ba-428c-9a04-7c0842e94a6f
 ---
 # ACSD-44591: Errors when order without CAPTCHA confirmation
 

@@ -3,6 +3,7 @@ title: 'MDVA-41631: Error retrieving order information without optional "telepho
 description: The MDVA-41631 patch fixes the issue where users get an error retrieving order information without optional "telephone" value through GraphQL. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 is installed. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
+exl-id: e56cea59-ffc1-4520-85ca-136cda613884
 ---
 # MDVA-41631: Error retrieving order information without optional "telephone" value
 
@@ -30,8 +31,8 @@ Users get an error retrieving order information without optional "telephone" val
 
 1. Go to **Store** > **Configuration** > **Customers** > **Customer Configuration** > **Name and Address Options** > **Show Telephone** and set the phone number as optional.
 1. Place an order using GraphQL API as a logged-in customer.
-    * Do not set the telephone number when setting the billing and shipping addresses. Follow the instructions given in [GraphQL Checkout Tutorial](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-customer.html) in our developer documentation.
-1. Retrieve the order using the GraphQL [customerOrders query](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer-orders.html).
+    * Do not set the telephone number when setting the billing and shipping addresses. Follow the instructions given in [GraphQL Checkout Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) in our developer documentation.
+1. Retrieve the order using the GraphQL [customerOrders query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
 
 <pre>
 <code class="language-graphql">

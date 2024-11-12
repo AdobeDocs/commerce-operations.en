@@ -3,6 +3,7 @@ title: 'MDVA-29400: Duplicated orders placed with PayPal Express Checkout'
 description: The MDVA-29400 patch solves the issue where duplicated orders are created when customers place orders with PayPal Express Checkout. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is installed. The patch ID is MDVA-29400. Please note that the issue was fixed in Adobe Commerce 2.4.1.
 feature: Checkout, Orders, Payments
 role: Admin
+exl-id: 6f7291d3-d554-4e4e-a55d-89ea2b9dea33
 ---
 # MDVA-29400: Duplicated orders placed with PayPal Express Checkout
 

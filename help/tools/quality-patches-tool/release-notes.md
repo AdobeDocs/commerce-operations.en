@@ -15,6 +15,51 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.54 {#v1-1-54}
+
+* **AC-13283** (for Adobe Commerce and Magento Open Source 2.4.6-p8) - Reverts Place Order backward incompatible changes included in 2.4.6-p8.
+* **ACSD-60267** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where Fixed Product Tax (FPT) applies correctly when adding simple products with FPT directly to the cart but fails when selecting these products through configurable product options.
+* **ACSD-61103** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where the failure count in the `customer_entity` table is not reset to zero after a customer successfully logs in through API endpoints.
+* **ACSD-61134** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the [!DNL Braintree Vault] payment method is automatically deselected in the checkout workflow when a shopper updates their billing address by deselecting the *[!UICONTROL My billing and shipping address are the same]* checkbox.
+* **ACSD-61199** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the CMS page hierarchy tab does not display a proper tree structure when editing a CMS page with an existing hierarchy.
+* **ACSD-61200** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the calculations for *[!UICONTROL Total Amount]* and *[!UICONTROL Total Amount Actual]* in sales are missing the *[!UICONTROL Discount Tax Compensation Amount]* and *[!UICONTROL Shipping Discount Tax Compensation Amount]*, causing discrepancies in the sales order data.
+* **ACSD-61522** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where it is possible to enter email addresses into the guest customer's *[!UICONTROL First Name]* and *[!UICONTROL Last Name]* fields and send invalid order confirmation emails.
+* **ACSD-61756** (for Adobe Commerce >=2.4.4 <2.4.7) - Improves performance of `AdvancedSalesRule` filters.
+* **ACSD-61799** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where the total discount is incorrectly calculated when multiple cart rules with fixed discounts are applied to the quote.
+* **ACSD-61845** (for Adobe Commerce and Magento Open Source >=2.4.7-p1 <2.4.8) - Fixes the error that occurs when a request is sent with only *text/html* accept header.
+* **ACSD-62056** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where image uploading for a configurable product fails if MSI is installed.
+* **ACSD-62485** (for Adobe Commerce >=2.4.4 <2.4.6-p8 || >=2.4.7 <2.4.8) - Fixes the issue where `async.operations.all` consumer stops working when a company is created.
+* Updated patches: ACSD-48661, ACSD-51846, ACSD-55100, ACSD-61553
+* Deprecated patches: ACSD-51846
+
+## v1.1.53 {#v1-1-53}
+
+* **ACSD-48318** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where environment emulation nesting is not allowed. Now, the emulation starts during the `send()` call once the emulation stops during the `getInfoBlockHtml()` call. 
+* **ACSD-59930** (for Adobe Commerce >=2.4.6 <2.4.8) - Improves performance of the company's **[!UICONTROL Create]**, **[!UICONTROL Save]**, and **[!UICONTROL Delete]** flows. 
+* **ACSD-60584** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where an access token created for the user on one website is allowed to access or change customer information on other websites. 
+* **ACSD-60804** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where editing a customer that is linked to a deleted company causes the error *Call to a member function `getSuperUserId()` on null*. 
+* **ACSD-61133** (for Adobe Commerce >=2.4.4-p5 <2.4.5 || >=2.4.5-p4 <2.4.6 || >=2.4.6-p2 <2.4.8) - Fixes the issue where the `sales_clean_quotes` [!DNL cron] deletes quotes from unapproved purchase orders.
+* **ACSD-61528** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where retrieving roles from the [!UICONTROL Admin] using [!DNL GraphQL] returns no results.  
+* **ACSD-61553** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.7) - Fixes the issue where **[!UICONTROL Cart Price Rule]** discounts are incorrectly calculated when multiple discounts with different priorities and **[!UICONTROL Maximum Qty Discount is Applied To]** are applied to the product. 
+* **ACSD-61667** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Improves inventory performance for creating shipping in the case of many sources with in-store pickup. 
+* **ACSD-61969** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where the user is required to type in a case-sensitive coupon code to match exactly as the coupon code was configured.
+* Updated patches: ACSD-54989, ACSD-60632
+
+## v1.1.52 {#v1-1-52}
+
+* **BUNDLE-3375** (for Adobe Commerce and Magento Open Source) - Adds all the necessary fields to fulfill the 3DS VISA mandate requirements when using [!DNL Braintree] as a payment gateway.
+* **ACSD-59366** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where an error occurs when attempting to delete a team that contains deactivated users who are not visible in the team list.
+* **ACSD-59865** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where a [!UICONTROL Cart Price Rule] doesn't cancel previously applied rules if the quantity of the product in the cart is not enough for the rules to be applied.
+* **ACSD-59925** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue with sorting items in the [!UICONTROL Media Gallery] by position in GraphQL.
+* **ACSD-59952** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where an error occurs when creating a [!UICONTROL Shared Catalog] with a group ID that is assigned to an existing [!UICONTROL Shared Catalog].
+* **ACSD-60590** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Improves the performance of generating [!UICONTROL Bestsellers Aggregated Daily Reports] for a large volume of placed orders.
+* **ACSD-60673** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the [!UICONTROL Cart Price Rule] for multiple payment methods at checkout doesn't apply appropriately to the specific payment method.
+* **ACSD-60684** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where GraphQL product sorting by multiple fields doesn't work as expected.
+* **ACSD-60788** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where custom scripts for [!DNL Google Tag Manager] are not executed due to Content Security Policy (CSP) errors.
+* **ACSD-61322** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where [!UICONTROL Products/Categories] not assigned to the [!UICONTROL Shared Catalog] for the Default (General Group) are still included in the XML Sitemap.
+* **ACSD-61366** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the `setup:static-content:deploy --jobs 4` command runs with multiple jobs failing with the *Port must be configured within host parameter* error when the port is specified for the DB connection.
+* Updated patches: ACSD-51857, ACSD-57394
+
 ## v1.1.51 {#v1-1-51}
 
 * **ACSD-59786** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where GraphQL returns an internal server error when trying to get a Quote ID for an expired quote.

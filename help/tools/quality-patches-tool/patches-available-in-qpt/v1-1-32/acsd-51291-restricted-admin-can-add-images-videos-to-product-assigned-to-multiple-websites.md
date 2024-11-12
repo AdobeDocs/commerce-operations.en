@@ -3,6 +3,7 @@ title: 'ACSD-51291: Restricted admin can add images/videos to product assigned t
 description: Apply the ACSD-51291 patch to fix the Adobe Commerce issue where restricted admin with access to one website can add images/videos to a product assigned to multiple websites.
 feature: Admin Workspace, Products, Page Content
 role: Admin
+exl-id: a4edd034-f718-4559-9993-11609f0d0efa
 ---
 # ACSD-51291: Restricted admin can add images/videos to product assigned to multiple websites
 

@@ -3,6 +3,7 @@ title: "MDVA-40399: Partial invoices for same order can't be created simultaneou
 description: The MDVA-40399 patch fixes the issue where partial invoices for the same order cannot be created simultaneously via Rest API. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 is installed. The patch ID is MDVA-40399. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: REST, Invoices, Orders
 role: Admin
+exl-id: aa400a15-57b9-4f80-a49f-f4680b7e4705
 ---
 # MDVA-40399: Partial invoices for same order can't be created simultaneously via API
 
