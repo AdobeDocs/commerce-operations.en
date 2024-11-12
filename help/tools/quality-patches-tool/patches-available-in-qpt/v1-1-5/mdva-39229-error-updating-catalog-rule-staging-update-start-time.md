@@ -3,6 +3,7 @@ title: 'MDVA-39229: Error after updating Catalog rule Staging update start time'
 description: The MDVA-39229 patch fixes the issue where users get an error after updating the start time of the Catalog rule Staging update. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 is installed. The patch ID is MDVA-39229. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Catalog Management, Staging
 role: Admin
+exl-id: 633123bc-634c-4943-a2f1-9a48999774f4
 ---
 # MDVA-39229: Error after updating Catalog rule Staging update start time
 

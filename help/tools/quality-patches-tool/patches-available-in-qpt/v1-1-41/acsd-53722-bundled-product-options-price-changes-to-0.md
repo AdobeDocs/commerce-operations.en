@@ -3,6 +3,7 @@ title: 'ACSD-53722: Bundled product options price changes to $0'
 description: Apply the ACSD-53722 patch to fix the Adobe Commerce issue where the price of the bundled product options changes to $0 when scheduled updates for different scopes become active.
 feature: Products
 role: Admin, Developer
+exl-id: 2e974a6a-0c79-442f-9b45-b4edf831a052
 ---
 # ACSD-53722: Bundled product options price changes to $0
 

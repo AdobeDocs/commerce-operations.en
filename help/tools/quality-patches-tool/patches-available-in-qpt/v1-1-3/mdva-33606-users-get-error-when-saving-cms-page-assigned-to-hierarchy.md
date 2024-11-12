@@ -3,6 +3,7 @@ title: 'MDVA-33606: Users get error when saving CMS page assigned to hierarchy'
 description: The MDVA-33606 patch solves the issue where the users get *Unique constraint violation found* error when saving a CMS page assigned to hierarchy tree. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 is installed. The patch ID is MDVA-33606. Please note that the issue was fixed in Adobe Commerce 2.4.3.
 feature: CMS
 role: Admin
+exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
 ---
 # MDVA-33606: Users get error when saving CMS page assigned to hierarchy
 

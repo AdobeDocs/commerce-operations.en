@@ -3,6 +3,7 @@ title: 'ACSD-55231: SKU not found error while using quick order functionality'
 description: Apply the ACSD-55231 patch to fix the Adobe Commerce issue where you get *'The SKU was not found in the catalog'* error when trying to add a product to the cart using quick order functionality.
 feature: Products, Checkout, B2B
 role: Admin, Developer
+exl-id: f0a04773-7395-4945-a72b-5a6a018bc94e
 ---
 # ACSD-55231: SKU not found error while using quick order functionality
 

@@ -3,6 +3,7 @@ title: 'ACSD-60441: Updating customers via V1/customers [!DNL REST] API endpoint
 description: Apply the ACSD-60441 patch to fix the Adobe Commerce issue where updating customers via V1/customers [!DNL REST] API when using integration access token generated from backend throws an error.
 feature: REST, Customers
 role: Admin, Developer
+exl-id: 3936c065-41a6-4860-8313-e054f9b23ac7
 ---
 # ACSD-60441: Updating customers via `V1/customers` [!DNL REST] API endpoint throws an error
 

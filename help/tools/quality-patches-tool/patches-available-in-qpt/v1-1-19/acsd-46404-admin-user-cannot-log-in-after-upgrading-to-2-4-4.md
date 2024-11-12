@@ -3,6 +3,7 @@ title: 'ACSD-46404: Admin user cannot log in after upgrading to 2.4.4'
 description: The ACSD-46404 patch solves the issue where an admin user cannot log in after upgrading to 2.4.4. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 is installed. The patch ID is ACSD-46404. Please note that the issue was fixed in Adobe Commerce 2.4.5.
 feature: Admin Workspace
 role: Admin
+exl-id: f475ca56-5e06-4d4d-be42-f760c95968cf
 ---
 # ACSD-46404: Admin user cannot log in after upgrading to 2.4.4
 

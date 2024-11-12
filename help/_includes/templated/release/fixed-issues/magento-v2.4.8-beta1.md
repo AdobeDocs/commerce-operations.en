@@ -1,8 +1,143 @@
-# Magento Open Source fixed issues (v2.4.8-beta1)
+# Magento Open Source release notes (v2.4.8-beta1)
+
+## Highlights
+
+The following 49 highlights apply to the Magento Open Source 2.4.8 release.
+
+### Framework
+
+* _AC-10721_: Upgrade the league/flysystem Composer dependencies upgrading to latest version
+  * _Fix note_: Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/91cb4d46>
+* _AC-11495_: 2.4.8-beta1 Platform Components Upgrade
+* _AC-11673_: Investigate php-amqplib/php-amqplib latest versions
+  * _Fix note_: Updated the latest version php-amqplib/php-amqplib :^3.x
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-11723_: Refactoring of Integration Test framework for phpunit 10 compatibility - IntegrationTest.php not found
+  * _Fix note_: PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/ (Internal, Unmerged)>
+* _AC-11813_: WebApi Test framework for phpunit 10 compatibility - Issue related to RabbitMQ connectivity with SOAP and B2B modules
+  * _Fix note_: PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/ (Internal, Unmerged)>
+* _AC-11816_: Add compatibility with MySQL 8.4 LTS
+* _AC-11911_: jQuery/fileuploader css cleanup after migration to uppy library
+  * _Fix note_: Removed jQuery/fileUploader library because it has been migrated to Uppy library
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-11995_: Add compatibility with MySQL 8.4 LTS for Magento CE
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12014_: Mark elasticsearch 8 module as deprecated
+* _AC-12015_: ExtJs folder cleanup after migration to jsTree library
+  * _Fix note_: Removed extJs folder as the related functionality has been migrated to jsTree
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-12022_: Upgrade monolog/monolog system dependency to the latest major version 
+  * _Fix note_: The system has been updated to use the latest major version of the "monolog/monolog:^3.x" library, ensuring compatibility and improved performance. Previously, the system was using an outdated version of the "monolog/monolog" library which could have led to potential issues and limitations.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12023_: Upgrade wikimedia/less.php dependency to the latest major version 
+  * _Fix note_: The system has been updated to use the latest major version 5.x of the "wikimedia/less.php" library, ensuring compatibility and up-to-date functionality. Previously, the system was using an outdated version of the library which could have led to security issues.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12024_: Upgrade jquery/validate library dependency to the latest minor version
+  * _Fix note_: Upgrade jquery/validate library dependency to the latest minor version 1.20.0
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12025_: Upgrade moment.js system dependency to the latest minor version
+  * _Fix note_: Upgrade moment.js system dependency to the latest minor version 2.30.1
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12032_: Add compatibility with MySQL 8.4 LTS for EE
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12034_: Add compatibility with MySQL 8.4 LTS for B2B
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12074_: Add compatibility with MySQL 8.4 LTS for bundle extensions
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12085_: Add compatibility with MariaDB 11.4 LTS For CE
+  * _Fix note_: Added MariaDB 11.4 support with Adobe Commerce and extensions
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12165_: Subscribers Optimisation - PhpUnit10
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/90e25b6b>
+* _AC-12267_: Support connection retries for Redis session and compatible with colinmollenhour/php-redis-session-abstract v2.0.0
+  * _Fix note_: Updated latest version of colinmollenhour/php-redis-session-abstract v2.0.0 compatible with adobe commerce
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12268_: Upgrade league/flysystem Composer dependencies to latest version
+  * _Fix note_: Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x
+* _AC-12576_: Investigate the automation tests failures with MySQL 8.4 LTS
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12595_: Add compatibility with MariaDB 11.4 LTS For EE
+  * _Fix note_: Added MariaDB 11.4 support with Adobe Commerce and extensions
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12693_: Investigate on Data Migration tool (DMT) with MySQL 8.4 LTS
+* _AC-12715_: Update laminas composer dependencies upgrading to latest version
+  * _Fix note_: The system now supports the latest versions of laminas composer dependencies:
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validator
+ensuring compatibility and up-to-date functionality. Previously, updating to the latest versions of these dependencies could cause backward incompatibility issues and test failures.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12752_: Add compatibility with MariaDB 11.4 LTS For Data Migration tool
+  * _Fix note_: Added MariaDB 11.4 support with Adobe Commerce and extensions
+* _AC-12823_: Investigate the unit test failure due to phpunit patch update during component upgrade
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12897_: SVC and EAT tool compatibility with MySQL 8.4
+* _AC-12898_: UCT tool compatibility with MySQL 8.4
+  * _Fix note_: The Upgrade Compatibility Tool (UCT) is now compatible with MySQL 8.4, ensuring smooth operation and compatibility checks for instances running on this version. Previously, the UCT tool was not tested and verified for compatibility with MySQL 8.4.
+* _AC-9749_: PHPUnit 10 upgrade
+  * _Fix note_: Updated the phpunit/phpunit composer dependencies to compatible version - "phpunit/phpunit":"10.x"
+
+### Install & Administer
+
+* _AC-6819_: Set indexers to "Update by Schedule" by default
+
+### Order
+
+* _ACP2E-2709_: [Feature Request] Customer suggests that Submit Comment Button on Order Details page is confusing and should be changed to something else
+  * _Fix note_: In order to minimize the confusion, the "Submit Comment" button label changed to "Update" in the order detail page.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/488c1034>
+
+### Other
+
+* _AC-11420_: Set indexers appear in Ready status default when new version of Adobe Commerce is installed
+  * _Fix note_: After Installation Magento, Indexer's Status must be in *Ready* state by default.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-11421_: In existing Magento installation when install third party indexer module set indexers in update by schedule by default.
+  * _Fix note_: All new indexers are by default in [Update by Schedule] mode. Previously, the default mode was [Update on Save]. Same with custom indexers as well.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-12480_: Elasticsearch 7 and 8 options should come with Deprecated in Admin config.
+  * _Fix note_: Elasticsearch 8 option in Admin Config option will show with Deprecated text to inform users that Elasticsearch 8 is no longer recommended option to use.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12481_: Add text note when Elasticsearch option is selected in Admin Configuration
+  * _Fix note_: A text note is added to let Adobe Commerce admin users know that elasticsearch is no longer supported by Adobe and is deprecated.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12870_: SVC and EAT tool compatibility with MariaDB 11.4
+  * _Fix note_: SVC and EAT tool compatibility with MariaDB 11.4
+* _AC-12876_: UCT tool compatibility with MariaDB 11.4
+* _LYNX-374_: Document Email Confirmation via GraphQL
+* _LYNX-376_: Document getting configurations for reCAPTCHA in GraphQL
+* _LYNX-409_: DB Query Optimizations for Update Cart Items Mutation
+
+### Security
+
+* _AC-11041_: Security Improvements for 2.4.8-beta1 from June 2024 release
+* _AC-11864_: Security Improvements for 2.4.8-beta1 from August 2024 release
+* _AC-12346_: Security Improvements for 2.4.8-beta1 from October 2024 release
+* _AC-12691_: [2.4.8-beta1] Customer update REST API endpoint is not working
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/a4102373>, <https://github.com/magento/magento2/commit/a4102373>
+
+### UI Framework
+
+* _AC-12726_: [2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7
+  * _Fix note_: Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12825_: [2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 Page Builder
+  * _Fix note_: Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12844_: [2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 - Magento2-infra - banned words
+  * _Fix note_: Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12901_: Require.js upgrade to the latest version 2.3.7 (security vulnerability CVE-2024-38999)
+  * _Fix note_: Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
 
 ## Fixed issues
 
-We have fixed 253 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 254 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -65,6 +200,10 @@ Previously it was possible to create the Duplicate website group price customer 
   * _Fix note_: The system now accepts product image uploads with capital letter file extensions, ensuring a smooth product creation process. Previously, image uploads with capital letter file extensions were refused, forcing users to change the file extension to lowercase.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38831>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [Issue] Set default indexer mode to 'schedule'
+  * _Fix note_: All new indexers are by default in **[!UICONTROL Update by Schedule]** mode.  Previously, the default mode was **[!UICONTROL Update on Save]**. Existing indexers are not affected. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+  * _GitHub issue_: <https://github.com/magento/magento2/issues/36419>
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [Issue] Drop indexer changelog tables on mview unsubscribe
   * _Fix note_: The system now automatically removes unused changelog tables when an index is switched from 'update on schedule' to 'update on save', marking the index as invalid to ensure no entries are missed. Previously, switching an index to 'update on save' would leave unused changelog tables in the system and mark all changed indexes as 'valid'.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/29789>
@@ -158,18 +297,24 @@ We can now update custom-created order statuses, whereas previously, the status 
 ### Braintree
 
 * _BUNDLE-3367_: Pay via LPM
+  * _Fix note_: The system now correctly renders Local Payment Methods (LPM) on initial load, even when a logged-in customer's shipping and billing addresses do not match, ensuring a smooth checkout process. Previously, a mismatch between a customer's shipping and billing addresses would prevent LPM from rendering, causing potential disruptions during checkout.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: Configurable with Virtual as Child Product
+  * _Fix note_: The system now allows express payment methods for configurable products that have a virtual  child product, ensuring a smooth checkout process. Previously, express payment methods were not available when a configurable product with a virtual  child product was added to the cart.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: CVV Verification failed error
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_: Vaulting Via the account Area Issues 247
+  * _Fix note_: The system now allows customers to save new card or PayPal account information across multiple websites without encountering authorization errors. Previously, customers were unable to save new payment methods across different websites and were presented with an authorization error message.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: Ship to an address from a different country
+  * _Fix note_: The system now allows transactions to be processed without errors when shipping to an address from a different country, ensuring a smooth checkout process. Previously, attempting to ship to an address from a different country would result in console errors, despite no visible errors on the frontend.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: Credit Card - Teardown function
+  * _Fix note_: The system now correctly handles the teardown of Braintree PayPal components when a customer navigates back from the payment page to the shipping page, preventing any errors and ensuring that PayPal Express buttons render correctly. Previously, navigating back to the shipping page from the payment page sometimes resulted in an error when trying to teardown the Braintree PayPal components.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_: Shipping Callback for PayPal Express
+  * _Fix note_: The system now correctly displays available shipping methods in the PayPal Express modal, allowing customers to select their preferred shipping method before proceeding to the review page or completing their transaction. Previously, no shipping methods were available to select from in the PayPal Express modal, requiring customers to select a shipping method on a separate review page before they could complete their transaction.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Cart & Checkout

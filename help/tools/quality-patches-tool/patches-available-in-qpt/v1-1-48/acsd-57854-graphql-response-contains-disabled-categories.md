@@ -3,6 +3,7 @@ title: 'ACSD-57854: *GraphQL* response contains disabled categories that should 
 description: Apply the ACSD-57854 patch to fix the Adobe Commerce issue where the *GraphQL* response contains disabled categories that shouldn't be listed in the category aggregations.
 feature: GraphQL
 role: Admin, Developer
+exl-id: 216aad2a-f470-49f9-b8ca-79107ca07891
 ---
 # ACSD-57854: *GraphQL* response contains disabled categories that should not be listed in the category aggregations
 

@@ -29,7 +29,7 @@ A default Adobe Commerce project contains a hierarchy that includes a single web
 
 Follow these best practices when configuring the `robots.txt` and `sitemap.xml` files for single-site storefronts:
 
-- Make sure that your project is using [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) version 2002.0.12 or later.
+- Make sure that your project is using [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) version 2002.0.12 or later.
 - Use the Admin application to add content to the `robots.txt` file.
 
   >[!TIP]
@@ -58,12 +58,12 @@ Follow these best practices when configuring the `robots.txt` and `sitemap.xml` 
 
 >[!INFO]
 >
->See [Add site map and search engine robots](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) for detailed instructions.
+>See [Add site map and search engine robots](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) for detailed instructions.
 
 
 ### Multi-site storefronts
 
-You can set up and run several stores with a single implementation of Adobe Commerce on cloud infrastructure. See [Set up multiple websites or stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
+You can set up and run several stores with a single implementation of Adobe Commerce on cloud infrastructure. See [Set up multiple websites or stores](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
 
 The same best practices for configuring the `robots.txt` and `sitemap.xml` files for [single-site storefronts](#single-site-storefronts) applies to multi-site storefronts with two important differences:
 
@@ -105,7 +105,7 @@ For steps to edit the `robots.txt` file and remove all entries of the Admin path
 
 ## Additional information
 
-- [Understanding websites, stores, and store views](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Adding websites](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Use Fastly to block malicious traffic for your Adobe Commerce sites](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [Understanding websites, stores, and store views](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Adding websites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Use Fastly to block malicious traffic for your Adobe Commerce sites](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
 - [robots.txt gives a 404 error in Adobe Commerce on cloud infrastructure 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

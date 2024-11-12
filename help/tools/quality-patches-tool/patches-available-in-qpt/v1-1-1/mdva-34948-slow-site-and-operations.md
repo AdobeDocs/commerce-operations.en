@@ -3,6 +3,7 @@ title: 'MDVA-34948: Slowing of website'
 description: The MDVA-34948 Adobe Commerce patch fixes the issue of slowing of the website. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1 is installed. The patch ID is MDVA-34948. Please note that the issue was fixed in Adobe Commerce version 2.4.1.
 feature: Observability, Configuration
 role: Admin
+exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
 ---
 # MDVA-34948: Slowing of website
 

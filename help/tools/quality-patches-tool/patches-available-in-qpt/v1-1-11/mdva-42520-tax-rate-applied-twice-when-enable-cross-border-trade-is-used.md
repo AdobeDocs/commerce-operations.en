@@ -3,6 +3,7 @@ title: 'MDVA-42520: Tax rate applied twice when "Enable Cross Border Trade" is u
 description: The MDVA-42520 patch fixes the issue where the tax rate is applied twice when the **Enable Cross Border Trade** is used. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11 is installed. The patch ID is MDVA-42520. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Catalog Management, Orders, Taxes
 role: Admin
+exl-id: 34c101fd-3a47-4877-8a41-ccaeaa010969
 ---
 # MDVA-42520: Tax rate applied twice when "Enable Cross Border Trade" is used
 

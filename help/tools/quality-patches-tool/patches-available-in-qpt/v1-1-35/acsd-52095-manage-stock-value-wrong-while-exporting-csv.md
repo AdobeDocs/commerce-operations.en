@@ -3,6 +3,7 @@ title: 'ACSD-52095: Manage stock value is wrong while exporting CSV'
 description: Apply the ACSD-52095 patch to fix the Adobe Commerce issue where the product manage stock value is wrong while exporting CSV.
 feature: Inventory, Products
 role: Admin, Developer
+exl-id: 1f8415aa-23c6-480a-b54d-37b2b2d3199a
 ---
 # ACSD-52095: [!UICONTROL Manage Stock] value is wrong while exporting CSV
 

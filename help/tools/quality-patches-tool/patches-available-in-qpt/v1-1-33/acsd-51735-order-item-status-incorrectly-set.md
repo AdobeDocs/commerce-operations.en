@@ -3,6 +3,7 @@ title: 'ACSD-51735: Order item status incorrectly set to *[!UICONTROL Ordered]* 
 description: Apply the ACSD-51735 patch to fix the Adobe Commerce issue where the order item status is incorrectly set to *[!UICONTROL Ordered]* when the product stock is 0.
 feature: Orders, Products
 role: Admin
+exl-id: 56c8b58c-819f-46bd-8912-f543f56b66d6
 ---
 # ACSD-51735: Order item status incorrectly set to *[!UICONTROL Ordered]* when product stock is 0
 

@@ -3,6 +3,7 @@ title: 'ACSD-48059: merchants cannot save [!UICONTROL Match product by rule] for
 description: Apply the ACSD-48059 patch to fix the Adobe Commerce issue where merchants cannot save the [!UICONTROL Match product by rule] for the Categories attribute.
 feature: Admin Workspace, Attributes, Categories, Products
 role: Admin
+exl-id: e156a752-81b3-4404-81e2-af7ed29f2b1d
 ---
 # ACSD-48059: Merchants cannot save the *[!UICONTROL Match product by rule]* for the categories attribute
 

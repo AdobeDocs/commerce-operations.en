@@ -140,7 +140,7 @@ Commerce uses an encryption key to protect passwords and other sensitive data. T
 ]
 ```
 
-Learn more about [Encryption Key](https://docs.magento.com/user-guide/system/encryption-key.html) in the _Commerce User guide_.
+Learn more about [Encryption Key](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) in the _Commerce User guide_.
 
 ## db
 
@@ -197,7 +197,7 @@ A list of downloadable domains available in this node. Additional domains can be
 ]
 ```
 
-Learn more about [Downloadable Domains](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+Learn more about [Downloadable Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## install
 

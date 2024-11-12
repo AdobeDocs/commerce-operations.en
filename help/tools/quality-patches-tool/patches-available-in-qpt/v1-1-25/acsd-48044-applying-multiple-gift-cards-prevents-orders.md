@@ -3,6 +3,7 @@ title: 'ACSD-48044: applying multiple gift cards prevents orders from being plac
 description: Apply the ACSD-48044 patch to fix the Adobe Commerce issue where applying multiple gift cards to a single order with multi-shipping prevents orders from being placed.
 feature: Admin Workspace, Gift, Orders
 role: Admin
+exl-id: c7b72b1f-2f1b-4445-b842-5847d05d5ae9
 ---
 # ACSD-48044: applying multiple gift cards prevents orders from being placed
 
