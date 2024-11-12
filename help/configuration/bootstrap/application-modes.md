@@ -18,7 +18,7 @@ See [Set the operation mode](../cli/set-mode.md) to learn how to manually change
 
 ## Cloud support
 
-Because of the read-only filesystem, there is a strict restriction against changing the modes in  remote cloud environments and it cannot be overridden by Support. Do not attempt to change modes by modifying the `app/etc/env.php` file because the `ece-tools` package overwrites the file based on multiple configuration sources. 
+Because of the read-only filesystem, there is a strict restriction against changing the modes in remote cloud environments and it cannot be overridden by Adobe Commerce Support. Do not attempt to change modes by modifying the `app/etc/env.php` file because the `ece-tools` package overwrites the file based on multiple configuration sources. 
 
 Adobe Commerce on cloud infrastructure automatically runs the application in _maintenance_ mode during a deployment, which takes your site offline until the deployment is complete. Otherwise, the application remains in _production_ mode. See [Deployment process](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) in the _Commerce on Cloud Infrastructure guide_.
 
@@ -50,8 +50,9 @@ In developer mode:
 - An exception is thrown when an event subscriber cannot be invoked
 - Shows custom `X-Magento-*` HTTP request and response headers
 
->[!NOTE] This mode is not supported in the Adobe Commerce Cloud environment and Support is unable to facilitate changing the application mode.
-
+>[!NOTE]
+>
+>This mode is not supported in the Adobe Commerce Cloud environment and Adobe Commerce Support is unable to facilitate changing the application mode.
 
 ## Production mode
 
