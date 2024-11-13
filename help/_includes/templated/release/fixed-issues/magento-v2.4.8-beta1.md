@@ -802,10 +802,10 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
   * _Fix note_: The system now only adds the modified country to the 'general/region/state_required' configuration when a new country with required states is added, preventing any disruption to custom code that assumes the region is disabled. Previously, adding a new country with required states would reset the 'general/region/state_required' configuration to default countries with a required state, potentially breaking the shop.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37796>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38076>
-* _AC-9712_: https://github.com/magento/magento2/issues/37841
-  * _Fix note_: Difference in less compilation between php & nodejs library (grunt) with complicated `calc` expressions
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/b34c0a75>>
-  * _GitHub code contribution_: Fix the difference in less compilation between php & nodejs library (grunt) after update wikimedia/less.php:^5.x
+* _AC-9712_: Difference in less compilation between php & nodejs library (grunt) with complicated `calc` expressions
+  * _Fix note_: Fix the difference in less compilation between php & nodejs library (grunt) after update wikimedia/less.php:^5.x
+  * _GitHub issue_: <https://github.com/magento/magento2/issues/37841>
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_: "Base table or view not found" error occurs when partial indexing is executed
   * _Fix note_: Partial reindex now works correctly with big changelog in case of secondary db connection
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ba25af8a>
