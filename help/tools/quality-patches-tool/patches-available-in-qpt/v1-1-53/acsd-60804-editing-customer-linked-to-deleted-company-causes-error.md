@@ -32,7 +32,7 @@ Install and enable Adobe Commerce B2B modules.
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL Settings] > **[!UICONTROL B2B]** > **[!UICONTROL Enable Company]**.
+1. Go to **[!UICONTROL Settings]** > **[!UICONTROL B2B]** > **[!UICONTROL Enable Company]**.
 1. Go to **[!UICONTROL Customers]** > **[!UICONTROL Company]** > **[!UICONTROL Create New Company]**.
 1. Log in to `mysql` for the instance.
 1. Delete the company where `entity_id` = *1*.
