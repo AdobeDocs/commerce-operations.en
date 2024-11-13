@@ -45,7 +45,7 @@ The customer is edited without an exception error thrown.
 
 <u>Actual results</u>:
 
-An error occurs: *Call to a member function getSuperUserId() on null* if the company is associated with customer.
+An error occurs: *Call to a member function getSuperUserId() on null* if no company is associated with customer.
 
 ## Apply the patch
 
