@@ -1,12 +1,12 @@
 ---
 title: "ACSD-60804: Editing a customer associated with a deleted company results in an error"
-description: Apply the ACSD-60804 patch to fix the Adobe Commerce issue where editing a customer associated to a deleted company causes an error *Call to a member function getSuperUserId() on null*.
+description: Apply the ACSD-60804 patch to fix the Adobe Commerce issue where editing a customer associated with a deleted company causes an error *Call to a member function getSuperUserId() on null*.
 feature: Companies, Customers, B2B
 role: Admin, Developer
 ---
 # ACSD-60804: Editing a customer associated with a deleted company results in an error
 
-The ACSD-60804 patch fixes the issue where editing a customer associated to a deleted company causes an error *Call to a member function getSuperUserId() on null*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 is installed. The patch ID is ACSD-60804. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60804 patch fixes the issue where editing a customer associated with a deleted company causes an error *Call to a member function getSuperUserId() on null*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 is installed. The patch ID is ACSD-60804. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
 
 ## Issue
 
-Editing a customer associated to a deleted company causes an error *Call to a member function getSuperUserId() on null*.
+Editing a customer associated with a deleted company causes an error *Call to a member function getSuperUserId() on null*.
 
 <u>Prerequisites:</u>:
 
