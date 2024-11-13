@@ -41,7 +41,7 @@ Install and enable Adobe Commerce B2B modules.
 
 <u>Expected results</u>:
 
-The customer is edited without any exception.
+The customer is edited without an exception error thrown.
 
 <u>Actual results</u>:
 
