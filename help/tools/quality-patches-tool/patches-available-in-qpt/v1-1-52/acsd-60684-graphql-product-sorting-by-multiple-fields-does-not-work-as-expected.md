@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-60684: [!DNL GraphQL] product sorting by multiple fields does not work as expected
 
-The ACSD-60684 patch fixes the issue where [!DNL GraphQL] product sorting by multiple fields doesn't work when the sorting is passed in variables. This patch is available when the [[!DNL Quality Patches Tool (QPT)]] 1.1.52 is installed. The patch ID is ACSD-60684. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60684 patch fixes the issue where [!DNL GraphQL] product sorting by multiple fields doesn't work when the sorting is passed in variables. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)  1.1.52 is installed. The patch ID is ACSD-60684. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
