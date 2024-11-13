@@ -16,7 +16,7 @@ The ACSD-60684 patch fixes the issue where [!DNL GraphQL] product sorting by mul
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p7
+* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
