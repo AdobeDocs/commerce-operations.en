@@ -28,7 +28,7 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p8
 
 <u>Steps to reproduce</u>:
 
-1. Create a simple product with a Price of $9,000.
+1. Create a simple product with a price of $9,000.
 1. Create a [!UICONTROL Cart Price Rule]: Rule A with a fixed discount of $700 without any conditions and without discarding subsequent rules.
 1. Create another [!UICONTROL Cart Price Rule]: Rule B with a fixed discount of $1000 without any conditions and without discarding subsequent rules.
 1. Add the product with the quantity 13 to the cart.
