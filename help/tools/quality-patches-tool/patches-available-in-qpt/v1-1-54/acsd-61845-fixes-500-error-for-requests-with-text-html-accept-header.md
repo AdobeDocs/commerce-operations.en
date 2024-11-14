@@ -12,7 +12,7 @@ The ACSD-61845 patch fixes the issue where an HTTP request with only a *text/htm
 
 **The patch is created for Adobe Commerce version:**
 
-Adobe Commerce (all deployment methods) 2.4.7-p1
+* Adobe Commerce (all deployment methods) 2.4.7-p1
 
 **Compatible with Adobe Commerce versions:**
 
@@ -50,8 +50,8 @@ A 500 error is returned, with the following error message in exception.log:
 
 To apply individual patches, use the following links depending on your deployment method:
 
-- Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-- Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading
 
