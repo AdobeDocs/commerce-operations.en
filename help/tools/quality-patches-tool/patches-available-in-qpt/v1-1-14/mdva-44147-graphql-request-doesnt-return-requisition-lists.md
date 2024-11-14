@@ -1,13 +1,13 @@
 ---
-title: "MDVA-44147: GraphQL request doesn't return Requisition Lists"
-description: The MDVA-44147 patch fixes the issue where GraphQL request doesn't return Requisition Lists. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
+title: "MDVA-44147: [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]"
+description: The MDVA-44147 patch fixes the issue where [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
 exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
 ---
-# MDVA-44147: GraphQL request doesn't return Requisition Lists
+# MDVA-44147: [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]
 
-The MDVA-44147 patch fixes the issue where GraphQL request doesn't return Requisition Lists. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
+The MDVA-44147 patch fixes the issue where [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 
 ## Affected products and versions
 
@@ -25,12 +25,12 @@ The MDVA-44147 patch fixes the issue where GraphQL request doesn't return Requis
 
 ## Issue
 
-GraphQL request doesn't return Requisition Lists.
+[!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists].
 
 <u>Steps to reproduce</u>:
 
-1. Go to **Store** > **Settings** > **Configuration** > **General** > **B2B Features** and enable Requisition List.
-1. Log in as a customer and add a product to the [Requisition List](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Go to **Store** > **Settings** > **Configuration** > **General** > **B2B Features** and enable **[!UICONTROL Requisition List]**.
+1. Log in as a customer and add a product to the [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
 1. Create a [Customer Token](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
     <pre>
@@ -46,7 +46,7 @@ GraphQL request doesn't return Requisition Lists.
       </code>
       </pre>
 
-1. Use the following query to retrieve all the Requisition Lists from the customer. Use the **Authorization** header with the value `Bearer <customer_token>`. Refer to the [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) article in our developer documentation for more information.
+1. Use the following query to retrieve all the [!UICONTROL Requisition Lists] from the customer. Use the **Authorization** header with the value `Bearer <customer_token>`. Refer to the [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) article in our developer documentation for more information.
 
     Request:
 

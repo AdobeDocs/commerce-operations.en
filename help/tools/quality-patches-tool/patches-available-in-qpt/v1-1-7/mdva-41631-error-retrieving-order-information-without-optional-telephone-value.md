@@ -31,8 +31,8 @@ Users get an error retrieving order information without optional "telephone" val
 
 1. Go to **Store** > **Configuration** > **Customers** > **Customer Configuration** > **Name and Address Options** > **Show Telephone** and set the phone number as optional.
 1. Place an order using GraphQL API as a logged-in customer.
-    * Do not set the telephone number when setting the billing and shipping addresses. Follow the instructions given in [GraphQL Checkout Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) in our developer documentation.
-1. Retrieve the order using the GraphQL [customerOrders query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
+    * Do not set the telephone number when setting the billing and shipping addresses. Follow the instructions given in [GraphQL Checkout Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in our developer documentation.
+1. Retrieve the order using the GraphQL [customerOrders query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">
