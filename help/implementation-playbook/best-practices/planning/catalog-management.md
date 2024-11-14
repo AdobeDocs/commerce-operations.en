@@ -94,7 +94,7 @@ Remove unused product attribute sets using MySQL.
 
 #### Review attribute set configuration
 
-1. [Connect to the site database](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
+1. [Connect to the site database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Find the number of attribute sets using MySQL
 

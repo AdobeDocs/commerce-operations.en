@@ -3,6 +3,7 @@ title: "MDVA-37725: Emails sent via non-default sites contain default site's log
 description: The MDVA-37725 patch fixes the issue where asynchronous order emails are sent via non-default websites containing logo URLs from the default website.
 feature: Communications, Orders
 role: Admin
+exl-id: 6e72897c-7652-4b5a-8575-090e94188daf
 ---
 # MDVA-37725: Emails sent via non-default sites contain default site's logo URLs
 

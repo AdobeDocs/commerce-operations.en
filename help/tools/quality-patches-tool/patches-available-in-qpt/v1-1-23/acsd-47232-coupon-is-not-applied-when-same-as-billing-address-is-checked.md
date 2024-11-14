@@ -3,6 +3,7 @@ title: 'ACSD-47232: coupon is not applied when [!UICONTROL Same as Billing Addre
 description: Apply the ACSD-47232 patch to fix the Adobe Commerce issue where coupon is not applied when [!UICONTROL Same as Billing Address] is checked.
 feature: Orders, Shipping/Delivery
 role: Admin
+exl-id: d8050f6e-00a9-4aa3-bb8b-1631e0e7a714
 ---
 # ACSD-47232: coupon is not applied when [!UICONTROL Same as Billing Address] is checked
 

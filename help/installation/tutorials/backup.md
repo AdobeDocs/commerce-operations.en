@@ -17,7 +17,7 @@ After backing up, you can [rollback](#rollback) later.
 
 >[!TIP]
 >
->For Adobe Commerce on cloud infrastructure projects, see [Snapshots and backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html) in the _Cloud guide_.
+>For Adobe Commerce on cloud infrastructure projects, see [Snapshots and backup management](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in the _Cloud guide_.
 
 ## Enable backups
 

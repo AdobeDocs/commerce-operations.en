@@ -3,6 +3,7 @@ title: "ACSD-51683: Customizable option can't be added to the cart using GraphQL
 description: Apply the ACSD-51683 patch to fix the Adobe Commerce issue where the customizable option can't be added to the cart using GraphQL.
 feature: GraphQL
 role: Admin
+exl-id: 9cdf71aa-3dea-4f8c-b4d6-d6f192a9710d
 ---
 # ACSD-51683: Customizable option can't be added to the cart using GraphQL
 

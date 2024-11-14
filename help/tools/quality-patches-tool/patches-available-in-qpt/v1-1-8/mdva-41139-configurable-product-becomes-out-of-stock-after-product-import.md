@@ -3,6 +3,7 @@ title: 'MDVA-41139: Configurable product becomes out of stock after product impo
 description: The MDVA-41139 patch fixes the issue where the configurable product becomes out of stock after product import when the simple product's qty = 0 for one of its sources. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 is installed. The patch ID is MDVA-41139. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Data Import/Export, Configuration, Orders, Products
 role: Admin
+exl-id: 7366230c-3b7f-4211-9f0d-55a528dffdbd
 ---
 # MDVA-41139: Configurable product becomes out of stock after product import
 

@@ -5,14 +5,14 @@ exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
 ---
 # Understand the scope of upgrading
 
-Review the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) to understand the scope of a release, including enhancements, bug fixes, and known issues that might impact third-party and custom modules.
+Review the [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) to understand the scope of a release, including enhancements, bug fixes, and known issues that might impact third-party and custom modules.
 
 ## Backward-incompatible changes
 
 Adobe Commerce releases may contain backward-incompatible changes. Review our backward-incompatible changes documentation, see the following: 
 
-- **[Major change highlights](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**—Changes that have a major impact and require detailed explanation and special instructions to ensure that third-party modules continue working.
-- **[Minor change reference](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**—Reference documentation generated from the code base that describes minor changes to classes, API membership, database, dependency injection, interfaces, layouts, system, and XSD.
+- **[Major change highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)**—Changes that have a major impact and require detailed explanation and special instructions to ensure that third-party modules continue working.
+- **[Minor change reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)**—Reference documentation generated from the code base that describes minor changes to classes, API membership, database, dependency injection, interfaces, layouts, system, and XSD.
 
 ## Third-party extensions
 
@@ -20,7 +20,7 @@ Adobe Commerce Marketplace's new compatibility policy ensures that _all_ listed 
 
 ## Custom Modules
 
-All custom modules should be checked against the target version you are looking to upgrade to. This is the most time- and resource-intensive process of an upgrade. When evaluating your custom modules, you must look for backward-incompatible changes and be aware of new practices, such as controller decomposition. You can learn more about this in the [release notes](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Also, ensure that you're following [best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) for module development.
+All custom modules should be checked against the target version you are looking to upgrade to. This is the most time- and resource-intensive process of an upgrade. When evaluating your custom modules, you must look for backward-incompatible changes and be aware of new practices, such as controller decomposition. You can learn more about this in the [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Also, ensure that you're following [best practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) for module development.
 
 ## [!DNL Upgrade Compatibility Tool]
 

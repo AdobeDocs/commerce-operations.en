@@ -1,8 +1,9 @@
 ---
-title: "ACSD-46618: product list widget shows incorrect cached prices for logged-in customer"
+title: 'ACSD-46618: product list widget shows incorrect cached prices for logged-in customer'
 description: Apply a patch to fix the Adobe Commerce issue where the product list widget shows incorrect cached prices for a logged-in customer.
 feature: Cache, Orders, Products
 role: Admin
+exl-id: fa350f84-2fe5-474b-b4fd-d6c1e8bb0f95
 ---
 # ACSD-46618: Product list widget shows incorrect cached prices for a logged-in customer
 

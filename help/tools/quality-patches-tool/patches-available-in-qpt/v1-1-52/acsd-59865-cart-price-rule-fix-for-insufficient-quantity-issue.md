@@ -1,8 +1,9 @@
 ---
-title: "ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity"
+title: 'ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity'
 description: Apply the ACSD-59865 patch to fix the Adobe Commerce issue where the *Discount quantity step* value in *Fixed amount discount,* *Percent of product price discount,* and *Buy X get Y* [!UICONTROL Cart Price Rules] no longer cancels the action of previous rules.
 feature: Price Rules
 role: Admin, Developer
+exl-id: 5838a740-018d-44c2-8135-54426ea08627
 ---
 # ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity
 

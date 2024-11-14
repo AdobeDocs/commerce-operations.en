@@ -3,6 +3,7 @@ title: 'MDVA-39043: Admin users get error adding widget to CMS page'
 description: The MDVA-39043 patch fixes the issue where admin users with limited access get an error while adding the "Products" widget to the CMS page. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is installed. The patch ID is MDVA-39043. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Admin Workspace, CMS, Products
 role: Admin
+exl-id: 82488249-cca3-4a28-bdc1-fa93a4c9dc2f
 ---
 # MDVA-39043: Admin users get error adding widget to CMS page
 

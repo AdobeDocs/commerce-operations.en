@@ -3,6 +3,7 @@ title: 'ACSD-48362: the default shipping address is used instead of a new one.'
 description: Apply the ACSD-48362 patch to fix the Adobe Commerce issue where the default shipping address is used instead of a new one when placing an order using a negotiable quote.
 feature: Admin Workspace, B2B, Orders, Shipping/Delivery
 role: Admin
+exl-id: 6f0717a6-1e29-4059-9640-5b92586c36e4
 ---
 # ACSD-48362: the default shipping address is used instead of a new one
 

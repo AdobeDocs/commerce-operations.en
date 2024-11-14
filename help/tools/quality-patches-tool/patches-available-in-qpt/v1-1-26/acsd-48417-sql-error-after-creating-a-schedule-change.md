@@ -3,6 +3,7 @@ title: 'ACSD-48417: SQL error after creating a schedule change'
 description: Apply the ACSD-48417 patch to fix the Adobe Commerce issue where an SQL error appears after creating a schedule change for a product and saving another product.
 feature: Storage
 role: Admin
+exl-id: c8e7c7aa-ac53-4218-8c3c-ea2240af17c9
 ---
 # ACSD-48417: SQL error after creating a schedule change
 

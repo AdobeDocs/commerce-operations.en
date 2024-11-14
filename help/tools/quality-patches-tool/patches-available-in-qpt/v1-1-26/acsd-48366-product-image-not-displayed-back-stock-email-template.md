@@ -3,6 +3,7 @@ title: 'ACSD-48366: product image not displayed on [!UICONTROL Back to Stock] em
 description: Apply the ACSD-48366 patch to fix the Adobe Commerce issue where the product thumbnail image is not displayed in the product's stock alert email.
 feature: Admin Workspace, Communications, Orders, Products
 role: Admin
+exl-id: a721f399-f50a-4a13-9f5d-17ae7f3985f6
 ---
 # ACSD-48366: product image not displayed on [!UICONTROL Back to Stock] email template
 

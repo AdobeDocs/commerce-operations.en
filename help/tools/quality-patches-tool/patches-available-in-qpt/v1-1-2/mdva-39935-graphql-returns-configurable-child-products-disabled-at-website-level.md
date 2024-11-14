@@ -3,6 +3,7 @@ title: "MDVA-39935: GraphQL returns configurable child products disabled at the 
 description: The MDVA-39935 Adobe Commerce patch fixes the issue where GraphQL returns configurable child products disabled at the website level. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 is installed. The patch ID is MDVA-39935. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: GraphQL, Configuration, Products
 role: Admin
+exl-id: b86b1595-ddd5-41ce-b126-287046462561
 ---
 # MDVA-39935: GraphQL returns configurable child products disabled at the website level
 
