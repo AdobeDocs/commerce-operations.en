@@ -1,8 +1,9 @@
 ---
-title: "ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error"
+title: 'ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error'
 description: Apply the ACSD-60326 patch to fix the Adobe Commerce issue where an error occurs in the GraphQL query for customer [!UICONTROL Returns] status.
 feature: GraphQL, Returns, Customers
 role: Admin, Developer
+exl-id: 5cfd7e0d-8703-43a0-86d3-e69612347534
 ---
 # ACSD-60326: GraphQL query on customer [!UICONTROL Returns] status gives an error
 

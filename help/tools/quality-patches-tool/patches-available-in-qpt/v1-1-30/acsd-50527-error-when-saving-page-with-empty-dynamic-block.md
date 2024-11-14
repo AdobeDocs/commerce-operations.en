@@ -3,6 +3,7 @@ title: 'ACSD-50527: Error upon saving a page with empty dynamic block'
 description: Apply the ACSD-50527 patch to fix the Adobe Commerce issue where an error occurs when saving a page with an empty dynamic block.
 feature: Page Content
 role: Admin
+exl-id: d4943772-cbb8-4b6e-b553-7d3f5a50500e
 ---
 # ACSD-50527: Error upon saving a page with empty dynamic block
 

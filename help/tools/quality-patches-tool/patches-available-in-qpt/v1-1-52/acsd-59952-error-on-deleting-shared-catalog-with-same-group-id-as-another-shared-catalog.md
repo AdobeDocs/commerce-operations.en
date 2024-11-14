@@ -1,10 +1,10 @@
 ---
-title: "ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog"
+title: 'ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog'
 description: Apply the ACSD-59952 patch to fix the Adobe Commerce issue where an error is thrown when deleting a shared catalog with the same `customer_group_id` as another shared catalog.
 feature: B2B, REST
 role: Admin, Developer
+exl-id: 11cba2e6-dd62-4063-a38c-b98ea70a72e9
 ---
-
 # ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog
 
 The ACSD-59952 patch fixes the error thrown when deleting shared catalogs with the same `customer_group_id` as another shared catalog. It further prevents users from creating such shared catalogs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.52 is installed. The patch ID is ACSD-59952. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.

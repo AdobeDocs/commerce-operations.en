@@ -3,6 +3,7 @@ title: 'ACSD-48807: Product reviews not filtered by storeview'
 description: Apply the ACSD-48807 patch to fix the Adobe Commerce issue where product reviews are not filtered by storeview via GraphQL.
 feature: Admin Workspace, Products
 role: Admin
+exl-id: ce2cf5a1-a650-4eaa-8caf-f34dd0111c36
 ---
 # ACSD-48807: Product reviews not filtered by storeview
 

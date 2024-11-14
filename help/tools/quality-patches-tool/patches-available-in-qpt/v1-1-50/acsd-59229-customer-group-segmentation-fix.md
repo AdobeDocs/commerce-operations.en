@@ -3,6 +3,7 @@ title: 'ACSD-59229: Customer group data misallocation due to an outdated X-Magen
 description: Apply the ACSD-59229 patch to fix the Adobe Commerce issue where customer group-related information is saved in the wrong segment because of an outdated X-Magento-Vary value in the request.
 feature: Customers, Personalization, Marketing Tools
 role: Admin, Developer
+exl-id: c039c114-d920-4b05-b5e9-3e9b73490ee0
 ---
 # ACSD-59229: Customer group data misallocation due to an outdated X-Magento-Vary value
 

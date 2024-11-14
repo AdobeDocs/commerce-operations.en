@@ -137,7 +137,7 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
 
 ## Fixed issues
 
-We have fixed 254 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 253 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -802,10 +802,10 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
   * _Fix note_: The system now only adds the modified country to the 'general/region/state_required' configuration when a new country with required states is added, preventing any disruption to custom code that assumes the region is disabled. Previously, adding a new country with required states would reset the 'general/region/state_required' configuration to default countries with a required state, potentially breaking the shop.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37796>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38076>
-* _AC-9712_: https://github.com/magento/magento2/issues/37841
-  * _Fix note_: Difference in less compilation between php & nodejs library (grunt) with complicated `calc` expressions
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/b34c0a75>>
-  * _GitHub code contribution_: Fix the difference in less compilation between php & nodejs library (grunt) after update wikimedia/less.php:^5.x
+* _AC-9712_: Difference in less compilation between php & nodejs library (grunt) with complicated `calc` expressions
+  * _Fix note_: Fix the difference in less compilation between php & nodejs library (grunt) after update wikimedia/less.php:^5.x
+  * _GitHub issue_: <https://github.com/magento/magento2/issues/37841>
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_: "Base table or view not found" error occurs when partial indexing is executed
   * _Fix note_: Partial reindex now works correctly with big changelog in case of secondary db connection
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ba25af8a>
@@ -1136,10 +1136,6 @@ to bin/magento config:set twofactorauth/google/leeway VALUE
 * _AC-12128_: Prototype.js security vulnerability fix CVE-2020-27511
   * _Fix note_: The system has been updated to address the security vulnerability CVE-2020-27511 in Prototype.js 1.7.3, enhancing the overall security of the system. Prior to this update, the system was susceptible to a Regular Expression Denial of Service (ReDOS) through stripping crafted HTML tags.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_: 
-  * _Fix note_: Prototype.js security vulnerability fix CVE-2020-27511
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/de4dfb8e>>
-  * _GitHub code contribution_: The system has been updated to address the security vulnerability CVE-2020-27511 in Prototype.js 1.7.3, enhancing the overall security of the system. Prior to this update, the system was susceptible to a Regular Expression Denial of Service (ReDOS) through stripping crafted HTML tags.
 * _AC-12189_: Grunt Less uses pub/ prefix for sourcemaps
   * _Fix note_: The system now generates less/css sourcemaps without the /pub prefix for paths when using grunt, eliminating the need for a workaround in the webserver configuration. Previously, the use of the /pub prefix in sourcemaps paths required a specific configuration in the webserver to function correctly.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38837>

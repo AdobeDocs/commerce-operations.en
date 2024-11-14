@@ -3,6 +3,7 @@ title: 'MDVA-44533: Discount incorrectly applied to bundled child product'
 description: The MDVA-44533 patch fixes the issue where a discount is incorrectly applied to a bundled child product. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 is installed. The patch ID is MDVA-44533. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Orders, Personalization, Products
 role: Admin
+exl-id: 150fe577-a61a-451e-838a-d60be7754bf4
 ---
 # MDVA-44533: Discount incorrectly applied to bundled child product
 

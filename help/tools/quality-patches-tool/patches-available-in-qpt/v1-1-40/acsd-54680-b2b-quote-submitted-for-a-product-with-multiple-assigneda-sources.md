@@ -3,6 +3,7 @@ title: 'ACSD-54680: B2B Quote for a product with Multiple Assigned Sources cant 
 description: Apply the ACSD-54680 patch to fix the Adobe Commerce issue where the B2B Quote for a product with Multiple Assigned Sources can't be processed.
 feature: B2B
 role: Admin, Developer
+exl-id: c5307785-a4c6-4d0c-9009-0d0caee97b3d
 ---
 # ACSD-54680: B2B Quote for a product with Multiple Assigned Sources can't be processed.
 

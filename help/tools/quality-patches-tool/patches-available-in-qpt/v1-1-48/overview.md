@@ -3,6 +3,7 @@ title: 'Overview: [!DNL Quality Patches Tool] (QPT) v1.1.48'
 description: This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.48.
 feature: Tools and External Services
 role: Admin, Developer
+exl-id: 250c88e9-1422-4af5-a0f0-32b15d9ab078
 ---
 # Overview: [!DNL Quality Patches Tool] (QPT) v1.1.48
 
@@ -22,4 +23,3 @@ QPT v1.1.48 includes the following patches:
 1. **ACSD-58008**: Fixes the issue where updating a scheduled update removes the previous version of the staged item if no end date is specified.
 
 Use the menu on the left to navigate to a specific patch page.
-
