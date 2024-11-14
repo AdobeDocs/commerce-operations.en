@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-61845: Fixes 500 error for requests with text/html accept header
 
-The ACSD-61845 patch fixes the issue where an HTTP request with only a *text/html* accept header causes a 500 error due to media type mismatches in response handling. This patch is available with the [!DNL Quality Patches Tool (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54. The patch ID is ACSD-61845. This issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61845 patch fixes the issue where an HTTP request with only a *text/html* accept header causes a 500 error due to media type mismatches in response handling. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54. The patch ID is ACSD-61845. This issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected Products and Versions
 
