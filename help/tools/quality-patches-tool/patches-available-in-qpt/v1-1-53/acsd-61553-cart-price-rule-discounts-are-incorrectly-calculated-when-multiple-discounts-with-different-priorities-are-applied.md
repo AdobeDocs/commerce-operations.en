@@ -1,12 +1,12 @@
 ---
-title: "ACSD-61553: **Cart Price Rule** are incorrectly calculated when multiple discounts with different priorities are applied"
-description: Apply the ACSD-61553 patch to resolve the Adobe Commerce issue where **Cart Price Rule** are incorrectly calculated when multiple discounts with different priorities are applied.
+title: "ACSD-61553: [!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied"
+description: Apply the ACSD-61553 patch to resolve the Adobe Commerce issue where the [!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
 ---
-# ACSD-61553: **Cart Price Rule** are incorrectly calculated when multiple discounts with different priorities are applied
+# ACSD-61553: [!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied
 
-The ACSD-61553 patch fixes the issue where **Cart Price Rule** are incorrectly calculated when multiple discounts with different priorities are applied. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.53 is installed. The patch ID is ACSD-61553. Please note that this issue is scheduled to be fixed in Adobe Commerce  2.4.8.
+The ACSD-61553 patch fixes the issue where the [!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.53 is installed. The patch ID is ACSD-61553. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,14 +24,14 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p8
 
 ## Issue
 
-**Cart Price Rule** are incorrectly calculated when multiple discounts with different priorities are applied.
+[!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied.
 
 <u>Steps to reproduce</u>:
 
-1. Create a simple *product* with the Price $9,000.
-1. Create a **Cart Price Rule** - Rule A with Fix amount discount $700 without any conditions and without discarding subsequent rules.
-1. Create another **Cart Price Rule** - Rule B with Fix amount discount $1000 without any conditions and without discarding subsequent rules.
-1. Add the *product* with the quantity thirteen to the cart.
+1. Create a simple product with a Price of $9,000.
+1. Create a [!UICONTROL Cart Price Rule]: Rule A with a fixed discount of $700 without any conditions and without discarding subsequent rules.
+1. Create another [!UICONTROL Cart Price Rule]: Rule B with a fixed discount of $1000 without any conditions and without discarding subsequent rules.
+1. Add the product with the quantity 13 to the cart.
 1. Update the rules with any of the below scenarios:
 
     Scenario 01
@@ -66,10 +66,9 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p8
 
 1. Click the **[!UICONTROL Update Shopping Cart]** button to recalculate the discounts.
 
-
 <u>Expected results</u>:
 
-There should be the following total discount for different scenarios:
+You see the following total discount for different scenarios:
 
     Scenario 01: $13,700
     Scenario 02: $10,100
@@ -91,7 +90,6 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
-* [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
-
+* [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!DNL Quality Patches Tool] guide.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
