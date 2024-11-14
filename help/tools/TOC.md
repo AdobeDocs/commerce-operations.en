@@ -644,12 +644,14 @@ feature: Configuration
         - v1.1.53 {#v1-1-53}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
             - [ACSD-59930: Improves performance of company's flows](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
+            - [ACSD-61553: [!UICONTROL Cart Price Rule] is incorrectly calculated](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied.md)
             - [ACSD-60584: Access token created for one website is allowed to access information on other websites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
             - [ACSD-61528: Retrieving roles using GraphQL returns no results](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
             - [ACSD-48318: Environment emulation nesting error in "system.log"](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
             - [ACSD-60804: Editing a customer associated with a deleted company results in an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
         - v1.1.54 {#v1-1-54}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+            - [ACSD-61200: Fixes discount tax compensation in sales total calculations](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
             - [ACSD-61522: Email addresses in First and Last Name fields send invalid order confirmations](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
