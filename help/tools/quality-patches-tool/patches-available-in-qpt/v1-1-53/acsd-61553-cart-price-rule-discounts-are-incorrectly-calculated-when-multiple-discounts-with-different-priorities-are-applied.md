@@ -1,8 +1,9 @@
 ---
-title: "ACSD-61553: [!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied"
+title: 'ACSD-61553: [!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied'
 description: Apply the ACSD-61553 patch to resolve the Adobe Commerce issue where the [!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
+exl-id: 0fb7a988-d391-49e5-a59d-62315a16132c
 ---
 # ACSD-61553: [!UICONTROL Cart Price Rule] is incorrectly calculated when multiple discounts with different priorities are applied
 
