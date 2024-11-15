@@ -15,6 +15,25 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.55 {#v1-1-55}
+
+* **ACSD-58383** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where issuing a refund via the REST API with two identical requests that are executed simultaneously, creates duplicate credit memos.
+* **ACSD-58471** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled.
+* **ACSD-58566** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where GraphQL returns an internal server error when querying the created_at field in the addPurchaseOrderComment mutation.
+* **ACSD-58685** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where sales emails initiated while email communication was disabled, would still be sent once email communication was re-enabled.
+* **ACSD-58735** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a restricted admin couldn't view the abandoned shopping carts on the customer account page in the Admin for an associated website.
+* **ACSD-58828** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where the server-side validation message "address is required" appears if any required field is left empty, alongside the client-side validation message. The server-side validation won't display the message for empty required fields, and the client-side validation will handle the error notification, stating, "This is a required field."
+* **ACSD-60344** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where duplicate order confirmation emails are sent when using a Purchase Order with auto-approval.
+* **ACSD-61348** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where wishlist items are visible via GraphQL, but not on the storefront when in a multi-website environment.
+* **ACSD-61534** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where design configuration couldn't be set using the bin/magento config:set command, and locked values could be altered through form manipulation. Now locked values set from the CLI with --lock-env or --lock-conf can't be updated.
+* **ACSD-61785** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where updating the reward_warning_notification attribute wasn't possible via GraphQL mutation and REST API calls, aligning its behavior with reward_update_notification.
+* **ACSD-62591** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixing the issue where the theme doesn't switch properly when the "User Agent Rules" are configured.
+* **ACSD-62793** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where datetime attributes in exported data don't include the time component. Additionally if "Fields Enclosure" is enabled, attribute values in the additional_attributes column will be enclosed within double-quotes.
+* **ACSD-62332** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where the product listing GraphQL query was limited to a total_count of 10,000 products. Fixes the issue where Live Search sets the current page to *1* instead of page *2* in the search criteria when queried via GraphQL.
+* Versions updated: **ACSD-46581**, **ACSD-49513**, **ACSD-52801**, **ACSD-59514**
+* Replaced patches: **ACSD-52801**, **ACSD-55100**
+* Deprecated patches: **ACSD-52085**, **ACSD-57854**
+
 ## v1.1.54 {#v1-1-54}
 
 * **AC-13283** (for Adobe Commerce and Magento Open Source 2.4.6-p8) - Reverts Place Order backward incompatible changes included in 2.4.6-p8.
@@ -29,8 +48,8 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-61845** (for Adobe Commerce and Magento Open Source >=2.4.7-p1 <2.4.8) - Fixes the error that occurs when a request is sent with only *text/html* accept header.
 * **ACSD-62056** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where image uploading for a configurable product fails if MSI is installed.
 * **ACSD-62485** (for Adobe Commerce >=2.4.4 <2.4.6-p8 || >=2.4.7 <2.4.8) - Fixes the issue where `async.operations.all` consumer stops working when a company is created.
-* Updated patches: ACSD-48661, ACSD-51846, ACSD-55100, ACSD-61553
-* Deprecated patches: ACSD-51846
+* Versions updated: **ACSD-48661**, **ACSD-55100**, **ACSD-61553**
+* Deprecated patches: **ACSD-51846**
 
 ## v1.1.53 {#v1-1-53}
 
@@ -58,7 +77,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-60788** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where custom scripts for [!DNL Google Tag Manager] are not executed due to Content Security Policy (CSP) errors.
 * **ACSD-61322** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where [!UICONTROL Products/Categories] not assigned to the [!UICONTROL Shared Catalog] for the Default (General Group) are still included in the XML Sitemap.
 * **ACSD-61366** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the `setup:static-content:deploy --jobs 4` command runs with multiple jobs failing with the *Port must be configured within host parameter* error when the port is specified for the DB connection.
-* Updated patches: ACSD-51857, ACSD-57394
+* Versions updated: **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.51 {#v1-1-51}
 
