@@ -17,11 +17,11 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.55 {#v1-1-55}
 
-* **ACSD-58383** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where issuing a refund via the REST API with two identical requests that are executed simultaneously, creates duplicate credit memos.
+* **ACSD-58383** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where issuing a refund via the [!DNL REST API] with two identical requests that are executed simultaneously, creates duplicate credit memos.
 * **ACSD-58471** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled.
-* **ACSD-58566** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where GraphQL returns an internal server error when querying the created_at field in the addPurchaseOrderComment mutation.
+* **ACSD-58566** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where [!DNL GraphQL] returns an internal server error when querying the `created_at` field in the `addPurchaseOrderComment` mutation.
 * **ACSD-58685** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where sales emails initiated while email communication was disabled, would still be sent once email communication was re-enabled.
-* **ACSD-58735** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a restricted admin couldn't view the abandoned shopping carts on the customer account page in the Admin for an associated website.
+* **ACSD-58735** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a restricted admin couldn't view the abandoned shopping carts on the customer account page in the [!UICONTROL Admin] for an associated website.
 * **ACSD-58828** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where the server-side validation message "address is required" appears if any required field is left empty, alongside the client-side validation message. The server-side validation won't display the message for empty required fields, and the client-side validation will handle the error notification, stating, "This is a required field."
 * **ACSD-60344** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where duplicate order confirmation emails are sent when using a Purchase Order with auto-approval.
 * **ACSD-61348** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where wishlist items are visible via GraphQL, but not on the storefront when in a multi-website environment.
