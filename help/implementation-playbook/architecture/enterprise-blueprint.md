@@ -57,6 +57,7 @@ Adobe provides the following developer tools for building integrations and custo
 - [**Events**](https://developer.adobe.com/commerce/extensibility/events/)—Use custom event triggers to interact with other extensible development tools.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Use webhooks to automatically trigger interactions between Commerce and third-party systems.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Customize and enhance the Commerce Admin with new pages and features for your merchants.
+- [**Integration Starter Kit**](https://developer.adobe.com/commerce/extensibility/starter-kit/)—Accelerate your backoffice integrations with reference integrations, onboarding scripts, and a standardized architecture.
 
 ## Storefront services
 
