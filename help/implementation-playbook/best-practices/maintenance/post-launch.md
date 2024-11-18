@@ -38,10 +38,6 @@ Post-launch support and maintenance are crucial to ensure your Adobe Commerce st
 
     - **Index management**: Ensure that every table has a primary key and remove any duplicate indexes, as these can reduce efficiency and lead to conflicts during simultaneous writes.
 
-    - **Database clustering**: For high-traffic scenarios, setting up database clustering, such as with the Galera Cluster, can help balance the load across multiple MySQL servers, preventing single-server bottlenecks.
-
-    - **MySQL configuration adjustments**: Tuning MySQL's memory settings, such as the innodb_buffer_pool_instances and innodb-thread-concurrency, can help optimize memory usage and thread management.
-
     - **Cron job optimization**: Cron jobs should be scheduled during off-peak hours to minimize the impact on performance, especially if background tasks like indexing are frequent.
 
   >[!TIP]
@@ -228,11 +224,13 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 ### Reporting and analytics
 
-- **Commerce Intelligence tools:** Advanced Reporting is included with Adobe Commerce and Magento Open Source. This feature gives you access to a suite of dynamic reports that are based on your product, order, and customer data, with a personalized dashboard that is tailored to your business needs. See [advanced reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) in the _Admin Getting Started Guide_.
-
 - **Adobe Commerce Intelligence:** Commerce Intelligence, a core capability of Adobe Commerce, provides best practice insights across multiple data sources, allowing merchants to make scientific data-driven decisions and take clear and informed actions. See the [_Commerce Intelligence User Guide_](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/getting-started).
 
-- **Google Analytics:** Use Google Analytics to track customer behavior, traffic sources, and conversion rates.
+- **Adobe Analytics:**  Adobe Analytics offers a powerful solution to track, analyze, and optimize your online store's performance. Adobe Analytics helps eCommerce businesses gain deeper insights into customer behavior, product performance, conversion rates, and other key metrics, enabling data-driven decision-making. 
+
+- **Google Analytics:** Use Google Analytics to track customer behavior, traffic sources, and conversion rates. 
+
+- **Additional Commerce Intelligence tools:** Advanced Reporting is included with Adobe Commerce and Magento Open Source. This feature gives you access to a suite of dynamic reports that are based on your product, order, and customer data, with a personalized dashboard that is tailored to your business needs, see [advanced reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) in the _Admin User Guide_ for more information. 
 
 ### Conclusion
 
