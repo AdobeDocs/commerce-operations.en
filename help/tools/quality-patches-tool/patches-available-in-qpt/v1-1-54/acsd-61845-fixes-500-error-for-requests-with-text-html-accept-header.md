@@ -34,6 +34,10 @@ B2B modules are installed and enabled.
 
 1. Ensure **B2B modules** are installed and enabled.
 1. Send a request with only *text/html* in the accept header, as follows:
+
+    ```
+    curl -I --header "Accept: text/html, text/plain" http://<hostname>/pub/
+    ```
 `curl -I --header "Accept: text/html, text/plain" http://<hostname>/pub/`
 
 <u>Expected results</u>:
