@@ -24,7 +24,7 @@ The ACSD-61969 patch fixes the issue where a user is required to type in the cou
 
 ## Issue
 
-Coupons are case-sensitive in the Admin order creation but not in the storefront. However, you have noticed that coupon codes do not work in the storefront if they are not typed exactly as configured in uppercase or lowercase. 
+You are required to type in the coupon code exactly as configured in uppercase or lowercase when applying them from the backend. They are case-sensitive in the Admin order creation but not case-sensitive on the storefront. 
 
 <u>Steps to reproduce</u>:
 
