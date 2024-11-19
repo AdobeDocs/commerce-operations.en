@@ -28,7 +28,7 @@ When sending an HTTP request with only *text/html* in the accept header, a 500 e
 
 <u>Prerequisites</u>:
 
-**B2B modules** are installed and enabled.
+B2B modules are installed and enabled.
 
 <u>Steps to reproduce</u>:
 
