@@ -1,5 +1,5 @@
 ---
-title: "ACSD-61845: Fixes 500 error for requests with text/html accept header"
+title: "ACSD-61845: Error occurs for requests with text/html accept header"
 description: Apply the ACSD-61845 patch to fix the Adobe Commerce issue where sending an HTTP request with only a *text/html* accept header causes a 500 error, with B2B modules installed. 
 feature: B2B
 role: Admin, Developer
@@ -32,13 +32,11 @@ B2B modules are installed and enabled.
 
 <u>Steps to reproduce</u>:
 
-1. Ensure **B2B modules** are installed and enabled.
 1. Send a request with only *text/html* in the accept header, as follows:
 
     ```
     curl -I --header "Accept: text/html, text/plain" http://<hostname>/pub/
     ```
-`curl -I --header "Accept: text/html, text/plain" http://<hostname>/pub/`
 
 <u>Expected results</u>:
 
@@ -48,7 +46,9 @@ The page is returned with a *200 status code*.
 
 A 500 error is returned, with the following error message in the `exception.log`:
 
-```Magento\Framework\Webapi\Exception: Server cannot match any of the given Accept HTTP header media type(s) from the request: "text/html" with media types from the config of response renderer. in vendor/magento/framework/Webapi/Rest/Response/RendererFactory.php:84```
+```
+Magento\Framework\Webapi\Exception: Server cannot match any of the given Accept HTTP header media type(s) from the request: "text/html" with media types from the config of response renderer. in vendor/magento/framework/Webapi/Rest/Response/RendererFactory.php:84
+```
 
 ## Apply the patch
 
