@@ -37,7 +37,8 @@ B2B modules are installed and enabled.
 1. Start the consumer using the following command:
 
 ```
-bin/magento queue:consumer:start async.operations.all --max-messages=20000
+bin/magento queue:consumer:start async.operations.all --max-messages=20000 
+
 ```
 <u>Expected results</u>:
 
