@@ -46,7 +46,7 @@ The page is returned with a *200 status code*.
 
 <u>Actual results</u>:
 
-A 500 error is returned, with the following error message in exception.log:
+A 500 error is returned, with the following error message in the `exception.log`:
 
 ```Magento\Framework\Webapi\Exception: Server cannot match any of the given Accept HTTP header media type(s) from the request: "text/html" with media types from the config of response renderer. in vendor/magento/framework/Webapi/Rest/Response/RendererFactory.php:84```
 
