@@ -42,7 +42,7 @@ B2B modules are installed and enabled.
 
 <u>Expected results</u>:
 
-The page should be returned with a **200 status code**.
+The page is returned with a *200 status code*.
 
 <u>Actual results</u>:
 
