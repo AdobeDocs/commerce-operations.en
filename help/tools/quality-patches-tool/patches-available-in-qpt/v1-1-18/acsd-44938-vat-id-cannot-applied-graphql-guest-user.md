@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-44938: VAT_ID cannot be applied in GraphQL request for guest user'
-description: The ACSD-44938 patch fixes the issue where the VAT_ID cannot be applied in a GraphQL request for a guest user. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-44938. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+title: "ACSD-44938: VAT_ID can't be applied in [!DNL GraphQL] request for guest user"
+description: The ACSD-44938 patch fixes the issue where the `VAT_ID` can't be applied in a [!DNL GraphQL] request for a guest user. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-44938. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
 exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca
 ---
-# ACSD-44938: VAT_ID cannot be applied in GraphQL request for guest user
+# ACSD-44938: VAT_ID can't be applied in [!DNL GraphQL] request for guest user
 
-The ACSD-44938 patch fixes the issue where the VAT_ID cannot be applied in a GraphQL request for a guest user. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-44938. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+The ACSD-44938 patch fixes the issue where the `VAT_ID` can't be applied in a [!DNL GraphQL] request for a guest user. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 is installed. The patch ID is ACSD-44938. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
@@ -25,20 +25,20 @@ The ACSD-44938 patch fixes the issue where the VAT_ID cannot be applied in a Gra
 
 ## Issue
 
-VAT_ID cannot be applied in a GraphQL request for a guest user.
+`VAT_ID` can't be applied in a [!DNL GraphQL] request for a guest user.
 
 <u>Steps to reproduce</u>:
 
-1. Follow the steps mentioned in the [GraphQL tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) in our developer documentation to create a guest cart.
-1. Try to apply VAT_ID for the guest user using GraphQL.
+1. Follow the steps mentioned in the [[!DNL GraphQL] tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in our developer documentation to create a guest cart.
+1. Try to apply `VAT_ID` for the guest user using [!DNL GraphQL].
 
 <u>Expected results</u>:
 
-VAT_ID can be applied the same way as for a registered customer. See [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) article in our developer documentation.
+`VAT_ID` can be applied the same way as for a registered customer. See [`createCustomerAddress` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) article in our developer documentation.
 
 <u>Actual results</u>:
 
-VAT_ID cannot be applied for a guest user using GraphQL.
+`VAT_ID` can't be applied for a guest user using [!DNL GraphQL].
 
 ## Apply the patch
 
@@ -49,7 +49,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 ## Related reading
 
-To learn more about Quality Patches Tool, refer to:
+To learn more about the [!DNL Quality Patches Tool], refer to:
 
 * [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!DNL Quality Patches Tool] guide.
