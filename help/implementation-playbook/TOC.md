@@ -49,6 +49,7 @@ mini-toc-levels: 3
     - [Secure your site and infrastructure](best-practices/launch/security-best-practices.md)
   - Maintenance {#maintenance}
     - [Overview](best-practices/maintenance/overview.md)
+    - [Post-launch support](best-practices/maintenance/post-launch.md)
     - [Audit frontend performance](best-practices/maintenance/frontend-performance.md)
     - [Optimize backend performance](best-practices/maintenance/backend-performance.md)
     - [Indexer configuration](best-practices/maintenance/indexer-configuration.md)
