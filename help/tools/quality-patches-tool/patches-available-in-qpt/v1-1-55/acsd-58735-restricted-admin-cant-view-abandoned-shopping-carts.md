@@ -32,7 +32,7 @@ The issue occurs because when displaying the grid view for multiple websites if 
 
 1. Create an admin role with access to only one of the websites.
 1. Create an abandoned cart.
-1. Log in as an admin user with full privileges. Check **[UICONTROL Reports]** > **[!UICONTROL Abandoned Carts]** and see that the cart is displayed.
+1. Log in as an admin user with full privileges. Check **[!UICONTROL Reports]** > **[!UICONTROL Abandoned Carts]** and see that the cart is displayed.
 1. Check **[!UICONTROL Reports]** > **[!UICONTROL Abandoned Carts]** as the restricted admin user.
 
 <u>Expected results</u>:
