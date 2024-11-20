@@ -25,23 +25,23 @@ The ACSD-61799 patch solves/fixes the issue where the total discount is incorrec
 
 ## Issue
 
-The total discount is incorrectly calculated when multiple cart rules with "Fixed amount discount for the whole cart" are applied to a shopping cart.
+The total discount is incorrectly calculated when multiple cart rules with *[!UICONTROL Fixed amount discount for the whole cart]* are applied to a shopping cart.
 
 <u>Steps to reproduce</u>:
 
-1. Create 4 products with price $1000.
-1. Create 3 cart price rules without any conditions that give a $100 discount for the whole cart.
+1. Create four products with a price of $1000.
+1. Create three cart price rules without any conditions that give a $100 discount for the whole cart.
 1. Create another cart price rule that gives a $100 discount for the whole cart with the condition that will not apply the rule.
 1. Disable the rule.
-1. Add 3 products to the shopping cart and observe the discount in the cart.
+1. Add three products to the shopping cart and observe the discount in the cart.
 1. Add additional products to the cart and observe the discount in the cart.
 1. Enable the disabled cart price rule.
 1. Update the shopping cart page and observe the discount in the cart.
 
 <u>Expected results</u>:
 
-1. Adding additional products to the cart should not change the amount of discount.
-1. Enabling the cart price rule with a condition that doesn't apply should not change the amount of discount.
+1. Adding additional products to the cart does not change the amount of discount.
+1. Enabling the cart price rule with a condition that doesn't apply does not change the amount of discount.
 
 <u>Actual results</u>:
 
