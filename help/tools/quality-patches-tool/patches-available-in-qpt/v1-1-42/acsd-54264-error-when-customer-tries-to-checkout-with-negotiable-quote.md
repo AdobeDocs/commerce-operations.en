@@ -3,6 +3,7 @@ title: 'ACSD-54264: Error when customer tries to check out with negotiable quote
 description: Apply the ACSD-54264 patch to fix the Adobe Commerce issue where an error message "You cannot update the requested attribute. Row ID:store_id" appears when a customer tries to check out with a negotiable quote from another store view.
 feature: B2B, Checkout
 role: Admin, Developer
+exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
 ---
 # ACSD-54264: Error appears when customer tries to check out with negotiable quote
 

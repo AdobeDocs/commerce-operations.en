@@ -3,6 +3,7 @@ title: 'ACSD-56447: Adding same product to cart via parallel web REST API result
 description: Apply the ACSD-56447 patch to fix the Adobe Commerce issue where adding the same product to the cart via parallel web REST API requests results in two separate items in the cart.
 feature: Shopping Cart, REST
 role: Admin, Developer
+exl-id: ef0b2ce7-74f5-47b6-a44c-bda898c444b2
 ---
 # ACSD-56447: Adding same product to cart via parallel web REST API results in two separate items in cart
 

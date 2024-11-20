@@ -3,6 +3,7 @@ title: 'MDVA-44703: Order totals in Orders report are miscalculated'
 description: The MDVA-44703 patch fixes the issue where the order totals in the Orders report are miscalculated for the restricted admin user. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16 is installed. The patch ID is MDVA-44703. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Orders
 role: Admin
+exl-id: bdd38ba6-f282-4026-8f65-b76543859123
 ---
 # MDVA-44703: Order totals in Orders report are miscalculated
 

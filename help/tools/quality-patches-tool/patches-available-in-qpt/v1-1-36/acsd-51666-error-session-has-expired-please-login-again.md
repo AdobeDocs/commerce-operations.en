@@ -3,6 +3,7 @@ title: 'ACSD-51666: Error "The session has expired, please login again." after y
 description: Apply the ACSD-51666 patch to fix the Adobe Commerce issue where the error *The session has expired, please login again.* occurs after you try to log in.
 feature: Customers
 role: Admin, Developer
+exl-id: 8968b314-6625-45fa-9733-20560cca7089
 ---
 # ACSD-51666: Error *The session has expired, please login again.* after you log in
 

@@ -3,6 +3,7 @@ title: 'ACSD-56790: **[!UICONTROL move out of stock to bottom]** option does not
 description: Apply the ACSD-56790 patch to fix the Adobe Commerce issue where the move out of stock to bottom option does not work while sorting products in the Visual Merchandiser.
 feature: Products, Categories
 role: Admin, Developer
+exl-id: a5e5f208-793d-45a5-a000-f8ff1c31d049
 ---
 # ACSD-56790: **[!UICONTROL move out of stock to bottom]** option does not work while sorting products in the [!DNL Visual Merchandiser]
 

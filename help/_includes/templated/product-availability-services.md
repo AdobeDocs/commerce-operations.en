@@ -70,10 +70,10 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>6.0.2</td>
-          <td>6.0.2</td>
-          <td>6.0.2</td>
-          <td>6.0.2</td>
+          <td>6.0.3</td>
+          <td>6.0.3</td>
+          <td>6.0.3</td>
+          <td>6.0.3</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Release Notes</a><br/>

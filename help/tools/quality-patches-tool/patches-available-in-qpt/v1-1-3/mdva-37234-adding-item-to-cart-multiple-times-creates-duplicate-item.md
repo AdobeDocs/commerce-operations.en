@@ -3,6 +3,7 @@ title: 'MDVA-37234: Adding item to cart multiple times creates duplicate line it
 description: The MDVA-37234 patch fixes the issue where adding an item to the cart multiple times (parallel request) for the same SKU creates a duplicate line item for the same cart ID. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 is installed. The patch ID is MDVA-37234. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.4.
 feature: Orders, Shopping Cart
 role: Admin
+exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
 ---
 # MDVA-37234: Adding item to cart multiple times creates duplicate line item
 

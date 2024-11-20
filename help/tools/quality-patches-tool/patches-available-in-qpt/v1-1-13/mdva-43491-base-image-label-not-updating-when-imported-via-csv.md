@@ -3,6 +3,7 @@ title: 'MDVA-43491: Base image label not updating when imported via CSV'
 description: The MDVA-43491 patch fixes the issue where the `base_image_label` doesn't update when imported via a CSV file for a multi-store website. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 is installed. The patch ID is MDVA-43491. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Data Import/Export
 role: Admin
+exl-id: f6a5f641-aaf0-4b6e-afa9-7f436f8f59e6
 ---
 # MDVA-43491: Base image label not updating when imported via CSV
 

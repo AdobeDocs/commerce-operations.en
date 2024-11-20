@@ -1,6 +1,7 @@
 ---
 title: 'ACSD-51645: Saving a new Cart Price Rule if the extension Magento_OfflineShipping is disabled'
 description: Apply the ACSD-51645 patch to fix the Adobe Commerce issue where an error occurs when saving a new Cart Price Rule if the extension Magento_OfflineShipping is disabled.
+exl-id: ce747ae4-6d2f-41c0-ba75-7da72be359c7
 ---
 # ACSD-51645: Saving a new Cart Price Rule if the extension Magento_OfflineShipping is disabled
 

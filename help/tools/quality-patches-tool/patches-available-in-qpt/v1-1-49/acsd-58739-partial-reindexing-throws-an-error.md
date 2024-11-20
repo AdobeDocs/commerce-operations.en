@@ -3,6 +3,7 @@ title: 'ACSD-58739: Partial reindexing throws an error'
 description: Apply the ACSD-55241 patch to fix the Adobe Commerce issue where partial reindexing throws an error.
 feature: Inventory, Products
 role: Admin, Developer
+exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
 ---
 # ACSD-58739: Partial reindexing throws an error
 

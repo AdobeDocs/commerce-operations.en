@@ -3,8 +3,8 @@ title: 'ACSD-59514: Forms in Admin with [!DNL Page Builder] throw error in brows
 description: Apply the ACSD-59514 patch to fix the Adobe Commerce issue where forms in Admin with [!DNL Page Builder] throw the error "[!DNL Page Builder] was rendering for 5 seconds without releasing locks." in the browser console after submitting the form, and changes can't be saved.
 feature: Page Builder
 role: Admin, Developer
+exl-id: 3d1167d2-0a75-48ac-bc31-5bbd3c4a409e
 ---
-
 # ACSD-59514: Forms in Admin with [!DNL Page Builder] throw error in browser console
 
 The ACSD-59514 patch fixes the issue where the forms in Admin with [!DNL Page Builder] throw the error *[!DNL Page Builder] was rendering for 5 seconds without releasing locks.* in the browser console after submitting the form, and changes can't be saved. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 is installed. The patch ID is ACSD-59514. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.

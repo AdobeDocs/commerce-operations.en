@@ -3,6 +3,7 @@ title: 'ACSD-51819: Placing multiple orders with a single quote ID'
 description: Apply the ACSD-51819 patch to fix the Adobe Commerce issue where multiple orders can be placed through the same quote ID.
 feature: Orders, Checkout
 role: Admin, Developer
+exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
 ---
 # ACSD-51819: Placing multiple orders with a single quote ID
 

@@ -3,6 +3,7 @@ title: 'ACSD-51041: Price index takes very long to complete'
 description: Apply the ACSD-51041 patch to fix the Adobe Commerce issue where the price index takes a long time to complete with a very large product set.
 feature: Configuration
 role: Admin
+exl-id: d45d4042-06a1-445d-bed3-803085626dd3
 ---
 # ACSD-51041: Price index takes very long to complete
 

@@ -3,6 +3,7 @@ title: 'MDVA-39181: Related product rules show products from category undefined 
 description: The MDVA-39181 patch solves the issue where related product rules show products from a category not defined in the rule. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10 is installed. The patch ID is MDVA-39181. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: Categories, Products
 role: Admin
+exl-id: 98f65b7d-2cb3-49ff-95ef-c23a922e49f2
 ---
 # MDVA-39181: Related product rules show products from category undefined in rule
 
