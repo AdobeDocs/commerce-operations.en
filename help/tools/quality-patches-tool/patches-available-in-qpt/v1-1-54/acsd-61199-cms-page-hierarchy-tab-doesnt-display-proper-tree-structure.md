@@ -29,7 +29,7 @@ CMS page's *[!UICONTROL Hierarchy]* tab doesn't display a proper tree structure 
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Pages]**.
-1. Create a new **[!UICONTROL CMS page]**. It is added to the website root at the *[!UICONTROL Hierarchy].
+1. Create a new **[!UICONTROL CMS page]**. It is added to the website root at the *[!UICONTROL Hierarchy]*.
 1. Save the page.
 1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Hierarchy]**.
 1. Add any other existing pages to the *[!UICONTROL Hierarchy]*.
