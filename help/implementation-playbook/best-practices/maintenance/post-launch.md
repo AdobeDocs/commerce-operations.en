@@ -150,13 +150,13 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 #### Admin user training
 
-- **Internal training**: Train your staff on how to use the Magento Admin Panel, process orders, manage products, and handle customer service issues.
+- **Internal training**: Train your staff on how to use the Adobe Commerce Admin, process orders, manage products, and handle customer service issues.
 
 - **Documentation**: Maintain an internal knowledge base or user manual for frequently asked questions (FAQs), troubleshooting, and common tasks.
 
 #### Customer experience optimization
 
-- **Surveys and feedback**: Use surveys to collect customer feedback and optimize the customer experience. Magento supports integrations with tools like SurveyMonkey or Google Forms.
+- **Surveys and feedback**: Use surveys to collect customer feedback and optimize the customer experience. Adobe Commerce supports integrations with tools like SurveyMonkey or Google Forms.
 
 - **Review management**: Manage customer reviews and ratings on your products. Encourage happy customers to leave reviews while responding to negative reviews appropriately.
 
@@ -230,7 +230,7 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 - **Google Analytics:** Use Google Analytics to track customer behavior, traffic sources, and conversion rates. 
 
-- **Additional Commerce Intelligence tools:** Adobe Commerce and Magento Open Source include Advanced Reporting. This feature gives you access to a suite of dynamic reports based on your product, order, and customer data, with a personalized dashboard that tailored to your business needs, see [advanced reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) in the _Admin User Guide_ for more information. 
+- **Additional Commerce Intelligence tools:** Adobe Commerce includes Advanced Reporting. This feature gives you access to a suite of dynamic reports based on your product, order, and customer data, with a personalized dashboard that tailored to your business needs, see [advanced reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) in the _Admin User Guide_ for more information. 
 
 ### Conclusion
 
