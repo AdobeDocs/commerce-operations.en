@@ -7,7 +7,7 @@ feature: Best Practices
 
 # Post-launch support and maintenance for Adobe Commerce
 
-Post-launch support and maintenance are crucial to ensure your Adobe Commerce store runs smoothly, performs well, remains secure, and continues to meet your business objectives. This phase involves continuous monitoring, optimization, bug fixing, updates, and user support. Below, we've broken down **post-launch support** into key categories:
+Post-launch support and maintenance are crucial to ensure your Adobe Commerce store runs smoothly, performs well, remains secure, and continues to meet your business objectives. This phase involves continuous monitoring, optimization, bug fixing, updates, and user support. The following sections break down **post-launch support** into key categories:
 
 ## Regular site monitoring and performance optimization
 
@@ -15,7 +15,7 @@ Post-launch support and maintenance are crucial to ensure your Adobe Commerce st
 
 - **Site speed and load testing**: Adobe Commerce can be resource-intensive, so regular performance monitoring is crucial.
 
-    - **Tools to use**: All Adobe Commerce projects on cloud infrastructure include access to New Relic, which aids in monitoring performance and investigating events within the Commerce application and cloud infrastructure. Additional tools that can be utilized include Google PageSpeed Insights and GTMetrix.
+    - **Tools to use**: All Adobe Commerce on cloud infrastructure projects include access to New Relic, which aids in monitoring performance and investigating events within the Commerce application and cloud infrastructure. Additional tools include Google PageSpeed Insights and GTMetrix.
     
     - **What to monitor**: Here are the main items to monitor for Adobe Commerce on cloud infrastructure:
     
@@ -32,7 +32,7 @@ Post-launch support and maintenance are crucial to ensure your Adobe Commerce st
   >See [performance monitoring](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance) in the _Cloud Guide_.
 
 
-- **Optimizing database performance**: To optimize database performance in Adobe Commerce Cloud, several key actions can be implemented:
+- **Optimizing database performance**: To optimize database performance in Adobe Commerce Cloud, implement the following:
 
     - **Monitor and optimize MySQL queries**: Identify and resolve slow-running queries, which can be done using MySQL's SHOW FULL PROCESSLIST and EXPLAIN commands. For more complex setups, Pro architecture users can utilize the Percona Toolkit to analyze query logs for performance issues.
 
@@ -46,17 +46,17 @@ Post-launch support and maintenance are crucial to ensure your Adobe Commerce st
 
 - **Monitor CDN**: To monitor Fastly CDN performance in Adobe Commerce Cloud, you can take the following actions:
 
-    - **Leverage New Relic for monitoring**: Adobe Commerce offers New Relic to monitor Fastly performance and other metrics on staging and production environments. This tool can provide insights into server health, CDN caching, and network requests over time, which can help identify patterns and optimize CDN settings.
+    - **Leverage New Relic for monitoring**: Adobe Commerce offers New Relic to monitor Fastly performance and other metrics on staging and production environments. This tool provides insights into server health, CDN caching, and network requests over time, which helps identify patterns and optimize CDN settings.
 
     - **Fastly logs analysis**: For Adobe Commerce Cloud Pro projects, you can use New Relic Logs to review and analyze Fastly CDN and WAF log data to track performance trends, security events, and diagnose errors or latency issues.
 
-    - **Use cURL commands**: Run cURL commands with Fastly-specific headers to inspect your site's cache status. Key response headers include X-Cache (HIT/MISS), Fastly-Module-Enabled, Fastly-Magento-VCL-Uploaded, and Cache-Control to verify caching and module status (Adobe documentation provides sample cURL commands for both staging and production environments).
+    - **Use cURL commands**: Run cURL commands with Fastly-specific headers to inspect your site's cache status. Key response headers include `X-Cache` (HIT/MISS), `Fastly-Module-Enabled`, `Fastly-Magento-VCL-Uploaded`, and `Cache-Control` to verify caching and module status. Adobe provides sample cURL commands for both staging and production environments.
 
-    - **Check header information**: Inspect headers such as Cache-Control, Pragma, and X-Magento-Tags to confirm appropriate caching behavior and tag handling on cached content. Proper header values indicate whether caching configurations are effectively applied across the CDN.
+    - **Check header information**: Inspect headers such as `Cache-Control`, `Pragma`, and `X-Magento-Tags` to confirm appropriate caching behavior and tag handling on cached content. Proper header values indicate whether caching configurations are effectively applied across the CDN.
 
     - **Fastly debugging and testing**: Use Fastly's debugging feature to identify and troubleshoot issues with cache HIT and MISS rates, caching logic, or incorrect header responses, which can point to configuration issues or misalignment with expected caching rules.
 
-These monitoring steps can help maintain optimal CDN performance and address issues that might affect site speed and reliability.
+These monitoring steps help maintain optimal CDN performance and address issues that affect site speed and reliability.
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ To monitor error logging in Adobe Commerce Cloud, Adobe provides several tools a
 
 - **Log aggregation with New Relic**: New Relic collects and centralizes logs from Adobe Commerce applications, including logs related to infrastructure, CDN, and WAF. This setup allows for streamlined error tracking, creating dashboards, and querying logs for deeper insights into application performance and issues. Access to New Relic Logs enables searching and filtering logs by various attributes to diagnose issues quickly.
 
-- **Error log types**: Key error logs in Adobe Commerce Cloud include cloud.log, which contains deployment feedback, and cloud.error.log, which logs deployment warnings and errors. Other specific logs for debugging include debug.log, system.log, and exception.log, with each serving distinct roles in error and event tracking across the Commerce platform.
+- **Error log types**: Key error logs in Adobe Commerce Cloud include `cloud.log`, which contains deployment feedback, and `cloud.error.log`, which logs deployment warnings and errors. Other specific logs for debugging include `debug.log`, `system.log`, and `exception.log`, with each serving distinct roles in error and event tracking across the Commerce platform.
 
 - **Custom logging with Monolog**: Adobe Commerce supports custom logging via Monolog, which allows developers to direct log messages to various destinations like files, databases, and even alerts. This flexibility is useful for building advanced logging strategies that cater to different monitoring needs in development and production environments.
 
@@ -104,33 +104,33 @@ To monitor error logging in Adobe Commerce Cloud, Adobe provides several tools a
 
 To stay updated and ensure the security of your Adobe Commerce Cloud system, here are some key practices for monitoring security patches and updates:
 
-- **Subscribe to Adobe Commerce security alerts**: Stay informed about security vulnerabilities by registering for notifications from Adobe [here](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security).
+- **Subscribe to Adobe Commerce security alerts**: Stay informed about security vulnerabilities by [registering for notifications from Adobe](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security).
 
-- **Check release notes**: Regularly review security patch release notes, which are tagged with "-pN" for versions (e.g., 2.3.5-p1), and contain critical fixes and improvements, link for reference [here](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview).
+- **Check release notes**: Regularly review [security patch release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview), which are tagged with "-pN" for versions (e.g., 2.3.5-p1), and contain critical fixes and improvements.
 
-- **Apply security patches promptly**: Ensure that security patches are applied as soon as they are available. This can include updating to the latest versions or applying specific patch files.
+- **Apply security patches promptly**: Apply security patches as soon as they are available. This includes updating to the latest versions or applying specific patch files.
 
-- **Use cloud patches**: For Adobe Commerce Cloud, security patches may be bundled within the Cloud Tools Suite. Be sure to upgrade the suite or the Commerce version to receive these fixes.
+- **Use cloud patches**: For Adobe Commerce Cloud, security patches can be bundled within the Cloud Tools Suite. Be sure to upgrade the suite or the Commerce version to receive these fixes.
 
-- **Automated patch management**: Consider using tools like the centralized patcher to manage and apply patches across multiple stores automatically, see [here](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale).
+- **Automated patch management**: Consider using tools like the centralized patcher to [manage and apply patches across multiple stores automatically](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale).
 
 >[!TIP]
 >
->For further details and step-by-step instructions on applying patches and maintaining security, see [security patch release notes](../../../release/release-notes/security/overview.md) and [How to Apply Security Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches). You should also keep an eye on [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) reports.
+>For further details and step-by-step instructions on applying patches and maintaining security, see [security patch release notes](../../../release/release-notes/security/overview.md) and [How to Apply Security Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches). You should also review [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) reports.
 
 #### PCI compliance
 
 To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
-- **Protect cardholder data**: Cardholder data should never be stored within Adobe Commerce. If storage is required, use encrypted and tokenized methods to safeguard it.
+- **Protect cardholder data**: Do not ever store cardholder data within Adobe Commerce. If storage is required, use encrypted and tokenized methods to safeguard it.
 
 - **Use secure transmission protocols**: Always transmit payment data over secure protocols like TLS, with encryption and proper key management.
 
 - **Utilize web application firewall (WAF)**: The Fastly-powered WAF service helps meet PCI DSS 6.6 requirements and protects against common vulnerabilities by blocking malicious traffic before it reaches your site. See more information [here](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) and [here](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service).
 
-- **Limit access**: Ensure that only authorized personnel have access to sensitive payment data, and apply access control to reduce the risk of exposure. Reference [link](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
+- **Limit access**: Ensure that only authorized personnel have access to sensitive payment data, and [apply access control to reduce the risk of exposure](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
 
-- **Regular security scanning**: Perform regular PCI ASV scans and monitor your environment to address potential vulnerabilities. Reference [link](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility).
+- **Regular security scanning**: Perform regular PCI ASV scans and [monitor your environment](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) to address potential vulnerabilities.
 
 >[!TIP]
 >
@@ -142,7 +142,7 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 - **Support channels**: Implement customer support channels such as:
 
-  - **Live chat**: Offer live chat support for immediate assistance. Popular solutions include Zendesk, Intercom, or Tidio.
+  - **Live chat**: Offer live chat support for immediate assistance. Popular solutions include Zendesk, Intercom, and Tidio.
 
   - **Email support**: Use a support ticketing system like Freshdesk or Zoho Desk to manage customer inquiries effectively.
 
@@ -174,7 +174,7 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 #### Conversion rate optimization (CRO)
 
-- **A/B testing**: Run A/B tests on different page elements (e.g., product pages, checkout process) to improve conversion rates.
+- **A/B testing**: Run A/B tests on different page elements, such as product pages or checkout process, to improve conversion rates.
 
 - **Cart abandonment**: Implement cart abandonment email campaigns or exit-intent pop-ups to recover lost sales.
 
@@ -230,7 +230,7 @@ To ensure PCI compliance in Adobe Commerce Cloud, follow these key practices:
 
 - **Google Analytics:** Use Google Analytics to track customer behavior, traffic sources, and conversion rates. 
 
-- **Additional Commerce Intelligence tools:** Advanced Reporting is included with Adobe Commerce and Magento Open Source. This feature gives you access to a suite of dynamic reports that are based on your product, order, and customer data, with a personalized dashboard that is tailored to your business needs, see [advanced reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) in the _Admin User Guide_ for more information. 
+- **Additional Commerce Intelligence tools:** Adobe Commerce and Magento Open Source include Advanced Reporting. This feature gives you access to a suite of dynamic reports based on your product, order, and customer data, with a personalized dashboard that tailored to your business needs, see [advanced reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) in the _Admin User Guide_ for more information. 
 
 ### Conclusion
 
