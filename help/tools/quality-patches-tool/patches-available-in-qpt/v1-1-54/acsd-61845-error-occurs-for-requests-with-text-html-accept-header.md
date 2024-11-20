@@ -1,8 +1,9 @@
 ---
-title: "ACSD-61845: Error occurs for requests with text/html accept header"
-description: Apply the ACSD-61845 patch to fix the Adobe Commerce issue where sending an HTTP request with only a *text/html* accept header causes a 500 error, with B2B modules installed. 
+title: 'ACSD-61845: Error occurs for requests with text/html accept header'
+description: Apply the ACSD-61845 patch to fix the Adobe Commerce issue where sending an HTTP request with only a *text/html* accept header causes a 500 error, with B2B modules installed.
 feature: B2B
 role: Admin, Developer
+exl-id: 6fa6c3ff-bb45-4b9e-afd4-95692acb0a90
 ---
 # ACSD-61845: Error occurs for requests with *text/html* accept header
 
