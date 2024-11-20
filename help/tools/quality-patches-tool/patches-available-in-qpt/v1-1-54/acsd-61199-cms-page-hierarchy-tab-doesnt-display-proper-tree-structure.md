@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-61199: CMS page [!UICONTROL Hierarchy] tab does not display proper tree structure'
-description: Apply the ACSD-61199 patch to fix the Adobe Commerce issue where the CMS page's [!UICONTROL Hierarchy] tab doesn't display a proper tree structure when editing a CMS page with an existing *[!UICONTROL Hierarchy]*.
+description: Apply the ACSD-61199 patch to fix the Adobe Commerce issue where the CMS page's *[!UICONTROL Hierarchy]* tab doesn't display a proper tree structure when editing a CMS page with an existing *[!UICONTROL Hierarchy]*.
 feature: Page Content
 role: Admin, Developer
 ---
