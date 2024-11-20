@@ -1,5 +1,5 @@
 ---
-title: ‘ACSD-58471: dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled’
+title: "ACSD-58471: dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled"
 description: Apply the ACSD-58471 patch to fix the Adobe Commerce issue where where dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled.
 feature: Content, Catalog Management
 role: Admin, Developer
