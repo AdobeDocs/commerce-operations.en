@@ -1,10 +1,10 @@
 ---
-title: "ACSD-58471: dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled"
+title: 'ACSD-58471: dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled'
 description: Apply the ACSD-58471 patch to fix the Adobe Commerce issue where where dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled.
 feature: Catalog Management
 role: Admin, Developer
+exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
 ---
-
 # ACSD-58471: dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled
 
 The ACSD-58471 patch solves the issue where dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled. The system now correctly displays dynamic content associated with scheduled catalog price rules on the product detail page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 is installed. The patch ID is ACSD-58471. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.5.0.
