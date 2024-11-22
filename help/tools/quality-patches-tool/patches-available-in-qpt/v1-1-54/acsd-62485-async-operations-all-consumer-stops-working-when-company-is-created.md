@@ -32,7 +32,7 @@ B2B modules are installed and enabled.
 
 <u>Steps to reproduce</u>:
 
-1. Create 2 customers.
+1. Create two customers.
 1. Send a REST bulk request to create two companies, assigning the created customers as company administrators.
 1. Start the consumer using the following command:
 
