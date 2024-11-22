@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-62485: `async.operations.all` consumer stops working when company is created
 
-The ACSD-62485 patch fixes the issue where the `async.operations.all` consumer stops working when a B2B company is created. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-62485. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6-p7.
+The ACSD-62485 patch fixes the issue where the `async.operations.all` consumer stops working when a B2B company is created. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-62485. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
