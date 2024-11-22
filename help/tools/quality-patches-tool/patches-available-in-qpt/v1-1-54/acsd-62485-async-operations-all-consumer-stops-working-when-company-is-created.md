@@ -24,7 +24,7 @@ The ACSD-62485 patch fixes the issue where the `async.operations.all` consumer s
 
 ## Issue
 
-The `async.operations.all` consumer stops processing messages when a B2B company is created, leading to incomplete operations.
+The `async.operations.all` consumer stops processing messages if a B2B company is created asynchronously while the consumer is still running.
 
 <u>Prerequisites</u>:
 
