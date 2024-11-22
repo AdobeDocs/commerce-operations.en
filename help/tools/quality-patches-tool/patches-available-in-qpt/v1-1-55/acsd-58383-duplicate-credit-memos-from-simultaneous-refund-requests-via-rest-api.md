@@ -33,17 +33,19 @@ Duplicate credit memos result from two refunds created at the same time.
 <u>Steps to reproduce</u>:
 
 1. Configure [!DNL Paypal Express] in the Commerce Admin.
-1. Set payment action to **Sale**.
+1. Set payment action to *Sale*.
 1. Configure the [!DNL PayPal] IPN (Instant Payment Notification) on the [!DNL PayPal] Sandbox website.
 1. Issue refund on the [!DNL PayPal] Sandbox website.
 1. Emulate an IPN message from [!DNL PayPal]  using developer tools. IPN must create a credit memo.
 1. Create a second credit memo using an API call.
 
 <u>Expected results</u>:
+
 Only one credit memo is created for the same item.
 
 
 <u>Actual results</u>:
+
  Two credit memos are created for the same item.
 
 ## Apply the patch
