@@ -37,7 +37,7 @@ Duplicate credit memos result from two refunds created at the same time.
 1. Configure the [!DNL PayPal] IPN (Instant Payment Notification) on the [!DNL PayPal] Sandbox website.
 1. Issue refund on the [!DNL PayPal] Sandbox website.
 1. Emulate an IPN message from [!DNL PayPal]  using developer tools. IPN must create a credit memo.
-1. Create a second credit memo using an API call.
+1. Create a second credit memo using an [!DNL API] call.
 
 <u>Expected results</u>:
 
