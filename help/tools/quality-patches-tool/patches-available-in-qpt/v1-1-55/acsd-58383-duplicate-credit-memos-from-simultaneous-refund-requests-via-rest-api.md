@@ -3,8 +3,8 @@ title: 'ACSD-58383: duplicate credit memos from simultaneous refund requests via
 description: Apply the ACSD-58383 patch to fix the Adobe Commerce issue where issuing a refund via the [!DNL REST API] with two identical requests that are executed simultaneously, creates duplicate credit memos.
 feature: REST, Payments, Returns
 role: Admin, Developer
+exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
 ---
-
 # ACSD-58383 Adobe Commerce patch: duplicate credit memos from simultaneous refund requests via [!DNL REST API] 
 
 The ACSD-58383 patch fixes the issue where issuing a refund via the [!DNL REST API] with two identical requests that are executed simultaneously, results in duplicate credit memos.
