@@ -36,7 +36,7 @@ B2B modules are installed and enabled.
 1. Send a REST bulk request to create two companies, assigning the created customers as company administrators.
 1. Start the consumer using the following command:
 
-``` bin/magento queue:consumer:start async.operations.all --max-messages=20000 ```
+    ``` bin/magento queue:consumer:start async.operations.all --max-messages=20000 ```
 
 <u>Expected results</u>:
 
