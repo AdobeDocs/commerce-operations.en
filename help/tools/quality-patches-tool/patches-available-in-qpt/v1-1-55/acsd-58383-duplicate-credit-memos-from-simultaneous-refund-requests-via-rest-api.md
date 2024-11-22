@@ -46,7 +46,7 @@ Only one credit memo is created for the same item.
 
 <u>Actual results</u>:
 
- Two credit memos are created for the same item.
+Two credit memos are created for the same item.
 
 ## Apply the patch
 
