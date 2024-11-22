@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-61103: Failure count not reset to zero after successful customer login through API'
-description: Apply the ACSD-61103 patch to fix the Adobe Commerce issue where the `customer_entity` table is not reset to zero after a customer successfully logs in through API endpoints.
+description: Apply the ACSD-61103 patch to fix the Adobe Commerce issue where the failure count in the `customer_entity` table is not reset to zero after a customer successfully logs in through API endpoints.
 feature: GraphQL, REST, Customers 
 role: Admin, Developer
 ---
 
 # ACSD-61103: Failure count not reset to zero after successful customer login through API
 
-The ACSD-61103 patch solves the issue where the `customer_entity` table count is not reset to zero after a customer successfully logs in through API endpoints. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61103. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8. 
+The ACSD-61103 patch solves the issue where the failure count in the `customer_entity` table is not reset to zero after a customer successfully logs in through API endpoints. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61103. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8. 
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACSD-61103 patch solves the issue where the `customer_entity` table count is
 
 ## Issue
 
-The `customer_entity` table count does not reset even after a customer logs in successfully through API endpoints. 
+The failure count in the `customer_entity` table does not reset to zero even after a customer logs in successfully through API endpoints. 
 
 <u>Steps to reproduce</u>:
 
