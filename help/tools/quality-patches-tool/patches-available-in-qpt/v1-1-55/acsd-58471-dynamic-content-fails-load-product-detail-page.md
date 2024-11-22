@@ -26,7 +26,7 @@ The ACSD-58471 patch solves the issue where dynamic content fails to load on the
 <u>Steps to reproduce</u>:
 
 1. Create a Dynamic Block in the Commerce Admin > **[!UICONTROL Content]** > **[!UICONTROL Dynamic Blocks]**.
-1. Create a Static Block in Admin > **[!UICONTROL Content]** >  **[!UICONTROL Blocks]**. Use widgets to add content.
+1. Create a Static Block in [!UICONTROL Admin] > **[!UICONTROL Content]** >  **[!UICONTROL Blocks]**. Use widgets to add content.
 1. Create a product and add the CMS block to the description.
 1. Create a catalog rule with a scheduled update and assign the product and the created dynamic block in **[!UICONTROL Marketing]** > Promotions > **[!UICONTROL Catalog Products Rules]**.
 1. Run the cron and check that the product details page shows the dynamic content after the scheduled start time.
