@@ -8,7 +8,7 @@ role: Admin, Developer
 
 # ACSD-58735: restricted admin can’t view abandoned shopping carts on customer account  for associated website
 
-The ACSD-58735 patch fixes the issue where an admin user with a restricted role is unable to view abandoned customers' shopping carts from the Commerce **[!UICONTROL Admin]** >  **[!UICONTROL Reports]** > **[!UICONTROL Abandon Carts]** > **[!UICONTROL Select Cart]** > **[!UICONTROL Shopping Cart]** Tab.
+The ACSD-58735 patch fixes the issue where an admin user with a restricted role is unable to view abandoned customers' shopping carts from the Commerce **[!UICONTROL Admin]** >  **[!UICONTROL Reports]** > **[!UICONTROL Abandoned Carts]** > **[!UICONTROL Select Cart]** > **[!UICONTROL Shopping Cart]** tab.
 
 The issue occurs because when displaying the grid view for multiple websites if an abandoned cart is loaded by default in the Admin panel, it does not get the associated store ID to display.
 
