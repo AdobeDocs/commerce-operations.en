@@ -17,9 +17,11 @@ This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
+
 * Adobe Commerce (all deployment methods) 2.4.6-p4
 
 **Compatible with Adobe Commerce versions:**
+
 * Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
