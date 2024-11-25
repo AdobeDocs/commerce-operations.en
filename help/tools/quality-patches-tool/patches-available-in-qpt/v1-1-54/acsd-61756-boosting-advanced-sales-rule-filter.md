@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-61756: Enhancing performance of `AdvancedSalesRule` filters
 
-The ACSD-61756 patch fixes the issue where the `magento_salesrule_filter` query performs a full table scan, leading to performance degradation when handling large volumes of records. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.54 is installed. The patch ID is ACSD-61756. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+Apply the ACSD-61756 patch to improve the performance of the `AdvancedSalesRule` filters by adding missing database indexes. This fix the issue where the `magento_salesrule_filter` query performs a full table scan, leading to performance degradation when there are many records in the table. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.54 is installed. The patch ID is ACSD-61756. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
