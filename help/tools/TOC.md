@@ -660,6 +660,7 @@ feature: Configuration
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
             - [ACSD-58471: dynamic content fails to load on product detail page, when catalog price rules scheduled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
             - [ACSD-58383: duplicate credit memos from simultaneous refund requests via [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
+            - [ACSD-58828: Server-side "address required" message appears for any empty required field, alongside client-side validation](/help/support-tools/patches-available-in-qpt-tool/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Command-line tools reference {#cli-reference}
