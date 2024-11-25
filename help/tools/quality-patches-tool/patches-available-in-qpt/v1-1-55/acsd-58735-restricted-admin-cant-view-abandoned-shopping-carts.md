@@ -10,7 +10,7 @@ role: Admin, Developer
 
 The ACSD-58735 patch fixes the issue where an admin user with a restricted role is unable to view abandoned customers' shopping carts from the Commerce **[!UICONTROL Admin]** >  **[!UICONTROL Reports]** > **[!UICONTROL Abandoned Carts]** > **[!UICONTROL Select Cart]** > **[!UICONTROL Shopping Cart]** tab.
 
-The issue occurs because when displaying the grid view for multiple websites if an abandoned cart is loaded by default in the Admin panel, it does not get the associated store ID to display.
+The issue occurs because when displaying the grid view for multiple websites, if an abandoned cart is loaded by default in the Admin panel, it does not get the associated store ID to display.
 
  This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 is installed. The patch ID is ACSD-58735. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.5.0.
 
