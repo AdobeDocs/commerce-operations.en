@@ -1,8 +1,9 @@
 ---
 title: 'ACSD-62485: `async.operations.all` consumer stops working when company is created'
-description: Apply the ACSD-62485 patch to fix the Adobe Commerce issue where the `async.operations.all` consumer stops working when a B2B company is created. 
+description: Apply the ACSD-62485 patch to fix the Adobe Commerce issue where the `async.operations.all` consumer stops working when a B2B company is created.
 feature: B2B, Companies
 role: Admin, Developer
+exl-id: 99d20555-fe55-4a04-a067-5a2b104811f5
 ---
 # ACSD-62485: `async.operations.all` consumer stops working when company is created
 
