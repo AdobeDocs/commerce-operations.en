@@ -19,8 +19,8 @@ You can set `MAGE_DIRS` in any of the following ways:
    ```php
    <?php
    /**
-    * Copyright © Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
+    * Copyright Adobe
+    * All Rights Reserved.
     */
 
    use Magento\Framework\App\Bootstrap;
