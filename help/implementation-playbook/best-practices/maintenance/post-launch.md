@@ -3,8 +3,8 @@ title: Post-launch support and maintenance
 description: Ensure optimal performance and security of your Adobe Commerce store with our comprehensive post-launch support and maintenance best practices.
 role: Admin, User, Developer
 feature: Best Practices
+exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
 ---
-
 # Post-launch support and maintenance for Adobe Commerce
 
 Post-launch support and maintenance are crucial to ensure your Adobe Commerce store runs smoothly, performs well, remains secure, and continues to meet your business objectives. This phase involves continuous monitoring, optimization, bug fixing, updates, and user support. The following sections break down **post-launch support** into key categories:
