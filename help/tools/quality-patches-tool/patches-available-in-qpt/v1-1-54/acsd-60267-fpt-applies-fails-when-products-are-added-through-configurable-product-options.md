@@ -33,7 +33,7 @@ Fixed Product Tax (FPT) works properly when simple products with FPT are added t
 1. Open **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]**.
 1. For *[!UICONTROL Default Label]*, enter a label that identifies the attribute.
 1. Set *[!UICONTROL Catalog Input for Store Owner]* to *[!UICONTROL Fixed Product Tax]*.
-1. Create a new tax and zone and assign it to a new **Tax Rule**.
+1. Create a new tax and zone and assign it to a new *[!UICONTROL Tax Rule]*.
 1. Create a configurable product with two simple products.
 1. Now assign two different FPT values to those simple products.
 1. Reindex and check the prices on the storefront.
