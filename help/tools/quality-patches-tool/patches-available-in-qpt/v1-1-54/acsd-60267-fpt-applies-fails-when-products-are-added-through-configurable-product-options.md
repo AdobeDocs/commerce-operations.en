@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-60267: FPT applies fails when products are added through configurable product options'
-description: Apply the ACSD-60267 patch to fix the issue where FPT applies correctly when adding simple products directly to the cart, but fails when selecting products through configurable product options..
+title: 'ACSD-60267: FPT applies incorrectly when products are added through configurable product options'
+description: Apply the ACSD-60267 patch to fix the Adobe Commerce issue where the fixed product tax (FPT) applies correctly when adding simple products directly to the cart, but fails when selecting the same products through configurable product options.
 feature: Taxes
 role: Admin, Developer
 ---
-# ACSD-60267: FPT applies fails when products are added through configurable product options
+# ACSD-60267: FPT applies incorrectly when products are added through configurable product options
 
-The ACSD-60267 patch fixes the issue where FPT applies fails when products are added through configurable product options. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.54 is installed. The patch ID is ACSD-60267. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-60267 patch fixes the issue where the fixed product tax (FPT) applies correctly when adding simple products directly to the cart, but fails when selecting the same products through configurable product options. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.54 is installed. The patch ID is ACSD-60267. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,28 +24,30 @@ The ACSD-60267 patch fixes the issue where FPT applies fails when products are a
 
 ## Issue
 
-*Fixed Product Tax* (FPT) works properly when simple products with FPT are added to the cart, but FPT isn't added when products are added via configurable product selection.
+Fixed Product Tax (FPT) works properly when simple products with FPT are added to the cart, but FPT isn't added when products are added via configurable product selection.
 
 <u>Steps to reproduce</u>:
 
-1. Enable *Fixed Product Taxes* in **Admin** > **Configuration** > **Sales**> **Tax** > **Fixed Product Taxes**.
-1. Create an *FPT attribute* and assign it to an **attribute set**.
-1. Open **Stores** > **Attributes** > **Product**.
-1. For Default Label, enter a label that identifies the attribute.
+1. Set *[!UICONTROL Enable FPT]* to *Yes* by navigating to *Admin* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** > **[!UICONTROL Fixed Product Taxes]**.
+1. Create an FPT attribute and assign it to an *[!UICONTROL Attribute Set]*.
+1. Open **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]**.
+1. For *[!UICONTROL Default Label]*, enter a label that identifies the attribute.
 1. Set **Catalog Input** for Store Owner to *Fixed Product Tax*.
 1. Create a new tax and zone and assign it to a new **Tax Rule**.
-1. Create a **[!UICONTROL Configurable product]** with two simple products.
+1. Create a configurable product with two simple products.
 1. Now assign two different FPT values to those simple products.
-1. Reindex and check the prices on the **Storefront**.
+1. Reindex and check the prices on the storefront.
 1. Add the products to the cart and check the sub-totals.
 
 <u>Expected results</u>:
 
-The **catalog** page shows the prices including FPT value. Subtotals in the cart include the FPT.
+* The *[!UICONTROL Catalog]* page shows prices including FPT. 
+* Subtotals in the cart include FPT.
 
 <u>Actual results</u>:
 
-The **catalog** page doesn't show the prices including FPT value. Invalid subtotals and summary.
+* The *[!UICONTROL Catalog]* page doesn't show the prices including the FPT value. 
+* Subtotals and summary are invalid.
 
 ## Apply the patch
 
@@ -58,8 +60,5 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
-* [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
 
-
-For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
