@@ -30,6 +30,8 @@ This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools
 
 ## Issue
 
+Restricted admins cannot view abandoned shopping carts on the customer account page in the Admin panel.
+
 <u>Steps to reproduce</u>:
 
 1. Create an admin role with access to only one of the websites.
