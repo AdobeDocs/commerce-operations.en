@@ -118,12 +118,12 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 <table style="table-layout:auto">
  <tbody>
   <tr>
-   <td style="background-color:#67ac68;">Regular support</td>
-   <td>Security and quality patches for Adobe Commerce</td>
+   <td style="background-color:#67ac68;"></td>
+   <td>Regular support</td>
   </tr>
   <tr>
-   <td style="background-color:#ffd700;">Extended support</td>
-   <td>Version that has reached end of software support.</td>
+   <td style="background-color:#ffd700;"></td>
+   <td>Extended support</td>
   </tr>
  </tbody>
 </table>
