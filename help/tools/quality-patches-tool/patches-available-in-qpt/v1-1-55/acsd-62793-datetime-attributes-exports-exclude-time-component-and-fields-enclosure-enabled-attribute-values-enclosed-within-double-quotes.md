@@ -42,7 +42,7 @@ Create a product attribute with **[!UICONTROL Catalog Input Type for Store Owner
 
 <u>Expected results</u>:
 
-the date and time are exported and imported properly.
+The date and time are exported and imported properly.
 
 <u>Actual results</u>:
 
