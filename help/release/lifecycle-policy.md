@@ -18,14 +18,22 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 
 - Adobe provides compatibility with third-party services and software dependencies while customers are on the three-year support period for Adobe Commerce in the scope of security-only patch releases, but only when it is possible to do so without introducing backward-incompatible changes.
 
+## Extended support
+
+Adobe encourages customers to upgrade as soon as possible. However, to provide greater flexibility to align with upgrade plans and business needs, Adobe offers a one-year support extension at no additional cost for Adobe Commerce customers on versions 2.4.4 and 2.4.5. The support extension includes quality and security patches for the core application for up to one year.
+
+>[!NOTE]
+>
+>Extended support is available to Adobe Commerce customers only. It is not available for the Magento Open Source code base.
+
 ## End of software support
 
-| Release              | General Availability | End of software support<sup>1</sup> | Dependent PHP version | Dependendent MariaDB version |
-|----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
-| Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                       | 8.2 and 8.3           | 10.6                         |
-| Adobe Commerce 2.4.6 | March 14, 2023       | March 14, 2026                      | 8.1 and 8.2           | 10.6                         |
-| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                      | 8.1                   | 10.5<sup>2</sup>             |
-| Adobe Commerce 2.4.4 | April 12, 2022       | April 24, 2025                      | 8.1                   | 10.5<sup>3</sup>             |
+| Release              | General Availability | End of regular support<sup>1</sup> | End of extended support | Dependent PHP version | Dependendent MariaDB version |
+|----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                      | N/A                     | 8.2 and 8.3           | 10.6                         |
+| Adobe Commerce 2.4.6 | March 14, 2023       | March 14, 2026                     | N/A                     | 8.1 and 8.2           | 10.6                         |
+| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                     | August 11,2026          | 8.1                   | 10.5<sup>2</sup>             |
+| Adobe Commerce 2.4.4 | April 12, 2022       | April 24, 2025                     | April 14, 2026          | 8.1                   | 10.5<sup>3</sup>             |
 
 {style="table-layout:auto"}
 
@@ -39,7 +47,7 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 <table style="table-layout:auto">
 <thead>
   <tr>
-    <th colspan="2"></th>
+    <th colspan="1"></th>
     <th colspan="4">2022</th>
     <th colspan="4">2023</th>
     <th colspan="4">2024</th>
@@ -80,13 +88,15 @@ For Adobe Commerce 2.4.4 and subsequent releases:
     <td>2.4.4</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="10"></td>
+    <td colspan="4" style="background-color:#ffd700;"></td>
+    <td colspan="6"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="9"></td>
+    <td colspan="4" style="background-color:#ffd700;"></td>
+    <td colspan="6"></td>
   </tr>
   <tr>
     <td>2.4.6</td>
@@ -108,12 +118,12 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 <table style="table-layout:auto">
  <tbody>
   <tr>
-   <td style="background-color:#67ac68;">Supported</td>
+   <td style="background-color:#67ac68;">Regular support</td>
    <td>Security and quality patches for Adobe Commerce</td>
   </tr>
-  <!-- <tr>
-   <td style="background-color:#cd3c3c;">End of software support</td>
+  <tr>
+   <td style="background-color:#ffd700;">Extended support</td>
    <td>Version that has reached end of software support.</td>
   </tr>
- </tbody> -->
+ </tbody>
 </table>
