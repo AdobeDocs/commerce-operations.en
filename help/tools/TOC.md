@@ -658,9 +658,10 @@ feature: Configuration
             - [ACSD-61845: Error occurs for requests with text/html accept header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
         - v1.1.55 {#v1-1-55}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
-            - [ACSD-58735: Restricted admin can’t view abandoned shopping carts on customer account for associated website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
+            - [ACSD-58735: Restricted admin can't view abandoned shopping carts on customer account for associated website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
             - [ACSD-58471: dynamic content fails to load on product detail page, when catalog price rules scheduled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
             - [ACSD-58383: duplicate credit memos from simultaneous refund requests via [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
+            - [ACSD-61785: Updating reward_warning_notification attribute not possible via GraphQL mutation and REST API calls](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Command-line tools reference {#cli-reference}
