@@ -35,7 +35,7 @@ Create a product attribute with **[!UICONTROL Catalog Input Type for Store Owner
 1. Assign the attribute to the **[!UICONTROL Default]** attribute set.
 1. Create a simple product with a date and time value for the new attribute.
 1. Export the product to a CSV file from **[!UICONTROL System]** > *Data Transfer* > **[!UICONTROL Export]**.
-1. Check the attribute value in the additional_attributes column. It only has the date part, but not time.
+1. Check the attribute value in the *additional_attributes* column. It only has the date part, but not time.
 1. Update the attribute value to use the time, e.g. "08/10/22, 3:20 PM".
 1. Import the CSV file.
 1. Check the *catalog_product_entity_datetime* table.
