@@ -19,7 +19,7 @@ You can set `MAGE_DIRS` in any of the following ways:
    ```php
    <?php
    /**
-    * Copyright Adobe
+    * Copyright [first year code created] Adobe
     * All Rights Reserved.
     */
 
