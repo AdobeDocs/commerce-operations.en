@@ -1,8 +1,9 @@
 ---
-title: "ACSD-61133: `sales_clean_quotes` cron deletes quotes from unapproved purchase orders"
+title: 'ACSD-61133: `sales_clean_quotes` cron deletes quotes from unapproved purchase orders'
 description: Apply the ACSD-61133 patch to fix the Adobe Commerce issue where `sales_clean_quotes` cron deletes quotes from unapproved purchase orders.
 feature: B2B, Purchase Orders
 role: Admin, Developer
+exl-id: 06979d4b-08ea-40fe-a211-3d950c9afb47
 ---
 # ACSD-61133: `sales_clean_quotes` cron deletes quotes from unapproved purchase orders
 
