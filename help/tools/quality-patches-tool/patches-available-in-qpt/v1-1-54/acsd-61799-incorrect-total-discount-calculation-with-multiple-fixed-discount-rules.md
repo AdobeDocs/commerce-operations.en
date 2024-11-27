@@ -31,7 +31,7 @@ The total discount is incorrectly calculated when multiple cart rules with *[!UI
 
 1. Create four products with a price of $1000.
 1. Create three cart price rules without any conditions that give a $100 discount for the whole cart.
-1. Create another cart price rule that gives a $100 discount for the whole cart with the condition that will not apply the rule.
+1. Create another cart price rule that gives a $100 discount for the whole cart, with a condition that prevents the rule from being applied.
 1. Disable the rule.
 1. Add three products to the shopping cart and observe the discount in the cart.
 1. Add additional products to the cart and observe the discount in the cart.
