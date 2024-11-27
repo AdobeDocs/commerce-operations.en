@@ -1,10 +1,10 @@
 ---
 title: 'ACSD-61799: Incorrect total discount calculation with multiple fixed discount cart rules applied to quote'
 description: Apply the ACSD-61799 patch to fix the Adobe Commerce issue where the total discount is incorrectly calculated when multiple cart rules with fixed discounts are applied to the quote.
-feature: Price Rules 
+feature: Price Rules
 role: Admin, Developer
+exl-id: a87ec1cd-f141-43b9-bde1-eca354c12d4e
 ---
-
 # ACSD-61799: Incorrect total discount calculation with multiple fixed discount cart rules applied to quote
 
 The ACSD-61799 patch solves/fixes the issue where the total discount is incorrectly calculated when multiple cart rules with fixed discounts are applied to the quote. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61799. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
@@ -60,4 +60,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
