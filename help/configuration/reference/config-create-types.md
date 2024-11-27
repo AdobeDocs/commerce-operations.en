@@ -85,8 +85,8 @@ To create a configuration type:
 ```php
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ * Copyright [first year code created] Adobe
+ * All Rights Reserved.
  */
 
 namespace Vendor\ModuleName\Model\Config;
