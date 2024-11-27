@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-61667: Improves inventory performance for creating shipping
 
-The ACSD-61667 patch fixes the issue where the merchant is unable to ship the order when the MSI pickup store is enabled with multiple sources. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 is installed. The patch ID is ACSD-61667. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61667 patch fixes the issue where the merchant is unable to ship the order when the [[!DNL Inventory Management for Commerce]](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) (formerly MSI) pickup store is enabled with multiple sources. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 is installed. The patch ID is ACSD-61667. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,7 +24,7 @@ The ACSD-61667 patch fixes the issue where the merchant is unable to ship the or
 
 ## Issue
 
-You are unable to ship the order when MSI pick up store is enabled, with multiple sources. This patch improves the inventory performance to create shipping in case of many sources with in-store pickup.
+You are unable to ship the order when MSI pickup store is enabled, with multiple sources. This patch improves the inventory performance to create shipping in case of many sources with in-store pickup.
 
 <u>Prerequisites:</u>:
 
@@ -45,7 +45,7 @@ The shipping page loads as expected.
 
 <u>Actual results</u>:
 
-You get *503 Maximum execution time out* error.
+You get a *503 Maximum execution time out* error.
 
 ## Apply the patch
 
