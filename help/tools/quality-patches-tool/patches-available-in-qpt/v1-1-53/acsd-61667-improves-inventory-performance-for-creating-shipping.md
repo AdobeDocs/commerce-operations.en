@@ -3,6 +3,7 @@ title: 'ACSD-61667: Improves inventory performance for creating shipping'
 description: Apply the ACSD-60584 patch to enhance the inventory performance for creating shipping in case of many sources with in-store pickup.
 feature: Customers, Shipping/Delivery
 role: Admin, Developer
+exl-id: 47682daf-9117-45f1-ab09-a66c13132ff3
 ---
 # ACSD-61667: Improves inventory performance for creating shipping
 
@@ -59,4 +60,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
