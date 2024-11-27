@@ -24,27 +24,27 @@ Adobe Commerce (all deployment methods) 2.4.4-p5 - 2.4.4-p11, 2.4.5-p4 - 2.4.5-p
 
 ## Issue
 
-`sales_clean_quotes` cron deletes quotes from the unapproved purchase orders. The *[B2B Purchase Order]* can't be converted into the order of the quote associated with the purchased order as the cron deletes it.
+`sales_clean_quotes` cron deletes quotes from unapproved purchase orders. The *[B2B Purchase Order]* can't be converted into the order of the quote associated with the purchased order as the cron deletes it.
 
 <u>Prerequisites</u>:
 
-Adobe Commerce B2B modules are installed and enabled.
+Adobe Commerce [!UICONTROL B2B] modules are installed and enabled.
 
 <u>Steps to reproduce</u>:
 
 1. Enable *[!UICONTROL B2B Purchase Order]* functionality.
 1. Create a company.
 1. Create a *[!UICONTROL Purchase Order]*.
-1. Wait until the quote expires and is deleted by the cron Quote expiration period can be set with **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]** > **[!UICONTROL Default Expiration Period configuration]**.
-1. Convert *[!UICONTROL Purchase Order]* to the order via *[!UICONTROL My Purchase Order in Customer Dashboard]* or with GraphQL `placeOrderForPurchaseOrder` mutation.
+1. Wait until the quote expires and is deleted by the cron. Quote expiration period can be set with **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]** > **[!UICONTROL Default Expiration Period configuration]**.
+1. Convert *[!UICONTROL Purchase Order]* to the order via *[!UICONTROL My Purchase Order in Customer Dashboard]* or with [!DNL GraphQL] `placeOrderForPurchaseOrder` mutation.
 
 <u>Expected results</u>:
 
-The quote associated with active *[!UICONTROL Purchase Order]* is not deleted as expired by the cron. Order is successfully placed either on storefront or via GraphQL.
+The quote associated with active *[!UICONTROL Purchase Order]* isn't deleted as expired by the cron. The order is successfully placed either on storefront or via [!DNL GraphQL].
 
 <u>Actual results</u>:
 
-Order is not placed, and an error is displayed on the storefront or returned in GraphQL response.
+The order is not placed, and an error is displayed on the storefront or returned in the [!DNL GraphQL] response.
 
 ## Apply the patch
 
