@@ -4,7 +4,7 @@ description: Apply the ACSD-58685 patch to fix the Adobe Commerce issue where sa
 feature: Configuration
 role: Admin, Developer
 ---
-# ACSD-58685: Ensures disabled sales emails are not sent upon re-enabling
+# ACSD-58685: Disabled sales emails are sent upon re-enabling
 
 The ACSD-58685 patch fixes the issue where sales emails initiated while email communication was disabled would still be sent once email communication was re-enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 is installed. The patch ID is ACSD-58685. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
