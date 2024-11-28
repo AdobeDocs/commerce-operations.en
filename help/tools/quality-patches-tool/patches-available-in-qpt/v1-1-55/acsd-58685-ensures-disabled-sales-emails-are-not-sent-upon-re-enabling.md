@@ -24,7 +24,7 @@ The ACSD-58685 patch fixes the issue where sales emails initiated while email co
 
 ## Issue
 
-Sales emails initiated while email communication was disabled are sent once email communication is re-enabled.
+Sales emails initiated while email communication is disabled are sent once email communication is re-enabled.
 
 <u>Steps to reproduce</u>:
 
