@@ -29,7 +29,7 @@ Sales emails initiated while email communication is disabled are sent once email
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL Sales]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Mail Sending Settings]** and set **[!UICONTROL Disable Email Communications]** to *[!UICONTROL No]*.
-1. Navigate to **[!UICONTROL Sales]** → **[!UICONTROL Configuration]** → **[!UICONTROL Sales]** → **[!UICONTROL Sales Emails]** → **[!UICONTROL General Settings]** and set **[!UICONTROL Asynchronous Sending]** to *[!UICONTROL Yes]*.
+1. Navigate to **[!UICONTROL Sales]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Sales Emails]** > **[!UICONTROL General Settings]** and set **[!UICONTROL Asynchronous Sending]** to *[!UICONTROL Yes]*.
 1. Clear the configuration cache.
 1. Place an order.
 1. Enable email communication.
