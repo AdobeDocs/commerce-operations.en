@@ -41,18 +41,6 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 1. The System Administrator or Technical Architect MAY provide the team with a centrally maintained local development environment to assure and promote equal and up-to-date local environments.
 1. Developers and QA engineers MUST have access to the command line, the database, and the log files of the QA environment. This MAY require a VPN connection.
 
-## Coding standards
-
-1. All code SHOULD follow conventions in architecture, methodology, and coding standards. Creativity is desired in function, not form.
-1. All code SHOULD be in line with the [Adobe Commerce Architecture Guide](https://developer.adobe.com/commerce/php/architecture/){target="_blank}.
-1. All code SHOULD adhere to the [Adobe Commerce Coding Standards](https://developer.adobe.com/commerce/php/coding-standards/).
-1. All code SHOULD adhere to the [Adobe Commerce Technical Guidelines](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
-1. All code SHOULD implement the [Adobe Commerce Best Practices](../phases.md), if applicable.
-1. All code SHOULD adhere to the [PHP-Framework Interoperability Group (FIG) standards](https://www.php-fig.org/).
-1. Where possible, it is RECOMMENDED to take [Adobe Commerce Technical Visions](https://developer.adobe.com/commerce/php/architecture/technical-vision/) into account.
-1. All integrations with external systems SHOULD have integration tests that validate the business process.
-1. All modules SHOULD have test coverage. What to test for exactly SHOULD be determined by the development team in collaboration with the Technical Architect or Lead Developer. This determination SHOULD be based on qualitative measures and not on quantitative measures; a high code coverage percentage is not an indicator of success, nor does it imply high code quality. Rather, determine the risk of not covering a portion of the code by assessing the probability and the severity of regressions in that part of the program.
-
 ## Versioning
 
 Module versions MUST adhere to the [Semantic Versioning 2.0.0 standard](https://semver.org/).
