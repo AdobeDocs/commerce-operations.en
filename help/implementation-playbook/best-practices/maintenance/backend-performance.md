@@ -75,7 +75,7 @@ Addressing MySQL performance issues by implementing database clustering and quer
 
 High-traffic websites often face database bottlenecks, primarily caused by reliance on a single MySQL server. You can address these bottlenecks by implementing database clustering, a distributed architecture that improves performance and ensures high availability.
 
-Database clustering minimizes the impact of database-related issues during peak traffic periods by enabling multiple web nodes to connect to multiple MySQL servers. Use tools like Galera Cluster to set up database clustering for Commerce sites. Galera Cluster is included with [Adobe Commerce projects deployed on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html).
+Database clustering minimizes the impact of database-related issues during peak traffic periods by enabling multiple web nodes to connect to multiple MySQL servers. Use tools like Galera Cluster to set up database clustering for Commerce sites. Galera Cluster is included with [Adobe Commerce projects deployed on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
 
 #### Optimizing MySQL queries
 

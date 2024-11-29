@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-58471: dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled'
+title: 'ACSD-58471: Dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled'
 description: Apply the ACSD-58471 patch to fix the Adobe Commerce issue where where dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled.
 feature: Catalog Management
 role: Admin, Developer
 exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
 ---
-# ACSD-58471: dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled
+# ACSD-58471: Dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled
 
 The ACSD-58471 patch solves the issue where dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled. The system now correctly displays dynamic content associated with scheduled catalog price rules on the product detail page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 is installed. The patch ID is ACSD-58471. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.5.0.
 
@@ -22,6 +22,8 @@ The ACSD-58471 patch solves the issue where dynamic content fails to load on the
 >The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
+
+Dynamic content not loading on the product detail page when catalog price rules are scheduled.
 
 <u>Steps to reproduce</u>:
 
