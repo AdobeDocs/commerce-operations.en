@@ -663,6 +663,8 @@ feature: Configuration
         - v1.1.55 {#v1-1-55}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
             - [ACSD-61534: Design configuration can't be set using bin/magento config:set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
+            - [ACSD-61348: Wishlist items visible via GraphQL but not on storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
+            - [ACSD-61785: Updating reward_warning_notification attribute not possible via GraphQL mutation and REST API calls](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
             - [ACSD-58471: Dynamic content fails to load on product detail page, when catalog price rules scheduled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
             - [ACSD-58383: Duplicate credit memos from simultaneous refund requests via [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
             - [ACSD-58735: Restricted admin can’t view abandoned shopping carts on customer account for associated website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
