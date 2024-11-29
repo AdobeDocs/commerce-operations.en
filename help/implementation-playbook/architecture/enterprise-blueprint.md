@@ -39,7 +39,10 @@ Adobe Commerce integrates with all Experience Cloud solutions to deliver [person
 
 >[!NOTE]
 >
->See [Digital Experience blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) for more technical detail.
+>See the following reosurces for more information:
+>
+>- [Digital Experience blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) for more technical detail.
+>- See [Personalizing the Customer Experience](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integration with third-party systems
@@ -57,6 +60,11 @@ Adobe provides the following developer tools for building integrations and custo
 - [**Events**](https://developer.adobe.com/commerce/extensibility/events/)—Use custom event triggers to interact with other extensible development tools.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Use webhooks to automatically trigger interactions between Commerce and third-party systems.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Customize and enhance the Commerce Admin with new pages and features for your merchants.
+- [**Integration Starter Kit**](https://developer.adobe.com/commerce/extensibility/starter-kit/)—Accelerate your backoffice integrations with reference integrations, onboarding scripts, and a standardized architecture.
+
+>[!NOTE]
+>
+>See [The Modern Approach: Effective Extensibility in Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Storefront services
 
