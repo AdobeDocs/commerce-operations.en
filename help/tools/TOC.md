@@ -653,7 +653,8 @@ feature: Configuration
             - [ACSD-61667: Improves inventory performance for creating shipping](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
         - v1.1.54 {#v1-1-54}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
-            [ACSD-60267: FPT applies incorrectly when products are added through configurable product options](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
+            - [ACSD-61756: Performance degradation of AdvancedSalesRule filters due to missing database indexes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
+            - [ACSD-60267: FPT applies incorrectly when products are added through configurable product options](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
             - [ACSD-61199: CMS page's [!UICONTROL Hierarchy] tab doesn't display proper tree structure](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
             - [ACSD-61200: Fixes discount tax compensation in sales total calculations](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
             - [ACSD-61522: Email addresses in First and Last Name fields send invalid order confirmations](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
