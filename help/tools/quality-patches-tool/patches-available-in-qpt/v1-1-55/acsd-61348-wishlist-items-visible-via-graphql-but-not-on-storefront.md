@@ -3,6 +3,7 @@ title: 'ACSD-61348: Wishlist items visible via GraphQL but not on storefront'
 description: Apply the ACSD-61348 patch to fix the Adobe Commerce issue where the wishlist items are visible via GraphQL but not on the storefront in a multi-website environment.
 feature: Customers
 role: Admin, Developer
+exl-id: fcba2c28-077d-4663-b129-7da436e2791d
 ---
 # ACSD-61348: Wishlist items visible via GraphQL but not on storefront 
 

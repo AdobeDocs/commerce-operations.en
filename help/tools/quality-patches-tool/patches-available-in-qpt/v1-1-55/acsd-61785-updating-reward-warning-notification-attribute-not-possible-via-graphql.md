@@ -3,6 +3,7 @@ title: 'ACSD-61785: Updating reward_warning_notification attribute not possible 
 description: Apply the ACSD-61785 patch to fix the Adobe Commerce issue where updating the `reward_warning_notification` attribute is not possible via GraphQL mutation and REST API calls.
 feature: REST, GraphQL, Rewards
 role: Admin, Developer
+exl-id: 41f40452-4240-4b4a-b1bc-0da23139f19f
 ---
 # ACSD-61785: Updating reward_warning_notification attribute not possible via GraphQL mutation and REST API calls 
 
