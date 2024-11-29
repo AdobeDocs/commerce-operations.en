@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-61534: Design configuration can't be set using bin/magento config:set, and locked values can be altered via form manipulation'
+title: 'ACSD-61534: Design configuration cannot be set using bin/magento config:set, and locked values can be altered via form manipulation'
 description: Apply the ACSD-61534 patch to fix the Adobe Commerce issue where the design configuration can't be set using the `bin/magento config:set` command, and locked values can be altered through form manipulation.
 feature: Configuration
 role: Admin, Developer
