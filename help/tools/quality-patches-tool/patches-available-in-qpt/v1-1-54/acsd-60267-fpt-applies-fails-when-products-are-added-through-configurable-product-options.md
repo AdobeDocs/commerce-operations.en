@@ -3,6 +3,7 @@ title: 'ACSD-60267: FPT applies incorrectly when products are added through conf
 description: Apply the ACSD-60267 patch to fix the Adobe Commerce issue where the fixed product tax (FPT) applies correctly when adding simple products directly to the cart, but fails when selecting the same products through configurable product options.
 feature: Taxes
 role: Admin, Developer
+exl-id: 919b3b96-1995-4faf-aaf1-b5cbb20e46bf
 ---
 # ACSD-60267: FPT applies incorrectly when products are added through configurable product options
 
@@ -61,4 +62,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
