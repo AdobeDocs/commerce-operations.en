@@ -4,7 +4,7 @@ description: Apply the ACSD-61534 patch to fix the Adobe Commerce issue where th
 feature: Configuration
 role: Admin, Developer
 ---
-# ACSD-61534: Design configuration can't be set using bin/magento config:set, and locked values can be altered via form manipulation.  
+# ACSD-61534: Design configuration can't be set using `bin/magento config:set`, and locked values can be altered via form manipulation
 
 The ACSD-61534 patch fixes the issue where the design configuration can't be set using the `bin/magento config:set` command, and locked values can be altered through form manipulation. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 is installed. The patch ID is ACSD-61534. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8. 
 
