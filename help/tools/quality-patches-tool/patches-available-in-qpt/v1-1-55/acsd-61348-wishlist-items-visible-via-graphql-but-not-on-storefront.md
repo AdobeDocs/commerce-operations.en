@@ -18,27 +18,25 @@ Adobe Commerce (all deployment methods) 2.4.6-p5
 
 Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
 
-
 >[!NOTE]
 >
 >The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
 
-Wishlist items are visible via GraphQL but not on the storefront when in a multi-website environment.
+Wishlist items are visible via GraphQL but not on the storefront in a multi-website environment.
 
 <u>Steps to reproduce</u>:
 
 1. Configure two websites.
-1. Set **[!UICONTROL Config Customers]** > **[!UICONTROL Customer Configuration]** > **[!UICONTROL Account Sharing Options]** > **[!UICONTROL Share Customer Accounts to Global]**
-1. Go to **[!UICONTROL Config Customers]** > **[!UICONTROL Wishlist]** > **[!UICONTROL General Options]** and set **[!UICONTROL Multiple Wishlist]** to *Yes*.
+1. Go to **[!UICONTROL Config Customers]** > **[!UICONTROL Customer Configuration]** > **[!UICONTROL Account Sharing Options]** and set **[!UICONTROL Share Customer Accounts]** to *[!UICONTROL Global]*.
+1. Go to **[!UICONTROL Config Customers]** > **[!UICONTROL Wishlist]** > **[!UICONTROL General Options]** and set **[!UICONTROL Enable Multiple Wish Lists]** to *Yes*.
 1. Go to **[!UICONTROL Config General]** > **[!UICONTROL Web]** and set **[!UICONTROL Add Store Code to URLs]** to *Yes*.
 1. Create a simple product and assign it to the second website.
 1. Create a customer and log in.
 1. Add a product to the wishlist.
 1. Assign the product to the default website.
 1. Go to the *[!UICONTROL Wishlist]* page on the default website.
-
 
 <u>Expected results</u>:
 
@@ -54,7 +52,6 @@ To apply individual patches, use the following links depending on your deploymen
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
-
 
 ## Related reading
 
