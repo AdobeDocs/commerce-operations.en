@@ -1,8 +1,9 @@
 ---
-title: "ACSD-61756: Performance degradation of `AdvancedSalesRule` filters due to missing database indexes"
+title: 'ACSD-61756: Performance degradation of `AdvancedSalesRule` filters due to missing database indexes'
 description: Apply the ACSD-61756 patch to fix the Adobe Commerce issue where the `magento_salesrule_filter` query performs a full table scan without using indexes, leading to performance degradation when handling large volumes of records. This patch improves performance by adding the missing database indexes for `AdvancedSalesRule` filters.
 feature: Price Rules, Price Indexer
 role: Admin, Developer
+exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
 ---
 # ACSD-61756: Performance degradation of `AdvancedSalesRule` filters due to missing database indexes
 
