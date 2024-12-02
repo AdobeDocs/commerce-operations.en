@@ -1,10 +1,10 @@
 ---
 title: 'ACSD-61103: Failure count not reset to zero after successful customer login through API'
 description: Apply the ACSD-61103 patch to fix the Adobe Commerce issue where the failure count in the `customer_entity` table is not reset to zero after a customer successfully logs in through API endpoints.
-feature: GraphQL, REST, Customers 
+feature: GraphQL, REST, Customers
 role: Admin, Developer
+exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
 ---
-
 # ACSD-61103: Failure count not reset to zero after successful customer login through API
 
 The ACSD-61103 patch solves the issue where the failure count in the `customer_entity` table is not reset to zero after a customer successfully logs in through API endpoints. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61103. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8. 
@@ -55,4 +55,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
