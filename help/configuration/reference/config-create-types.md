@@ -85,7 +85,7 @@ To create a configuration type:
 ```php
 <?php
 /**
- * Copyright Adobe
+ * Copyright [first year code created] Adobe
  * All Rights Reserved.
  */
 

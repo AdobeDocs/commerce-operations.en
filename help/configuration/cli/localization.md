@@ -278,7 +278,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    ```php
    <?php
    /**
-    * Copyright Adobe
+    * Copyright [first year code created] Adobe
     * All Rights Reserved.
     */
 
@@ -296,7 +296,7 @@ Similar to the preceding example, generate a CSV file, but instead of specifying
    ```xml
    <?xml version="1.0"?>
    <!--
-   Copyright Adobe
+   Copyright [first year code created] Adobe
    All Rights Reserved.
    -->
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
