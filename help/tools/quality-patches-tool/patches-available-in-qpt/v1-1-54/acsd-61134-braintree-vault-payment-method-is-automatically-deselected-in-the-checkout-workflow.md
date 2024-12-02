@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.6-p8
 
 ## Issue
 
-**[!UICONTROL Braintree Vault]** payment method is automatically deselected in the checkout workflow.
+*[!UICONTROL Braintree Vault]* payment method is automatically deselected in the checkout workflow.
 
 <u>Steps to reproduce</u>:
 
