@@ -1,5 +1,5 @@
 ---
-title: “ACSD-58828: Server-side *address required* message appears for any empty required field, alongside client-side validation”
+title: 'ACSD-58828: Server-side *address required* message appears for any empty required field, alongside client-side validation'
 description: Apply the ACSD-58828 patch to fix the Adobe Commerce issue where the server-side validation message *address is required* appears if any required field is left empty, alongside the client-side validation message.
 feature: Shipping/Delivery, Checkout
 role: Admin, Developer
