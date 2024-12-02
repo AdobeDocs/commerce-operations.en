@@ -104,7 +104,7 @@ bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quo
 
 The following message displays to confirm a successful setup:
 
-```terminal
+```
 Migration has been finished successfully!
 ```
 
@@ -128,6 +128,6 @@ bin/magento setup:upgrade
 
 The following message displays to confirm a successful setup:
 
-```terminal
+```
 Migration has been finished successfully!
 ```

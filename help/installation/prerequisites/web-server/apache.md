@@ -46,7 +46,7 @@ Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level i
 
    For example, you can add the following to the end of `000-default.conf`:
 
-   ```terminal
+   ```
    <Directory "/var/www/html">
        AllowOverride All
    </Directory>
@@ -92,7 +92,7 @@ apache2 -v
 
 The result displays similar to the following:
 
-```terminal
+```
 Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
@@ -126,7 +126,7 @@ To install the default version of Apache:
 
    The result displays similar to the following:
 
-   ```terminal
+   ```
    Server version: Apache/2.4.18 (Ubuntu)
    Server built: 2020-04-15T18:00:57
    ```
@@ -169,7 +169,7 @@ To upgrade to Apache 2.4:
 
    Messages similar to the following should display:
 
-   ```terminal
+   ```
    Server version: Apache/2.4.10 (Ubuntu)
    Server built: Jul 22 2020 22:46:25
    ```
@@ -198,7 +198,7 @@ Installing and configuring Apache is basically a three-step process: install the
 
    Messages similar to the following display to confirm that the installation was successful:
 
-   ```terminal
+   ```
    Server version: Apache/2.4.40 (Unix)
    Server built: Oct 16 2020 14:48:21
    ```

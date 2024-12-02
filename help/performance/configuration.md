@@ -26,15 +26,15 @@ When you launch your store in production, activate all the caches from the **[!U
 
 ## Asynchronous email notifications
 
-Enabling the "Asynchronous email notifications" setting moves processes that handle checkout and order processing email notifications to the background. To enable this feature, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] > [!UICONTROL Asynchronous Sending]**. See [Sales Emails](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) in the _Admin User Guide_ for more information.
+Enabling the "Asynchronous email notifications" setting moves processes that handle checkout and order processing email notifications to the background. To enable this feature, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] > [!UICONTROL Asynchronous Sending]**. See [Sales Emails](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails) in the _Admin User Guide_ for more information.
 
 ## Asynchronous order data processing
 
-There can be times when intensive sales on a storefront occur at the same time that [!DNL Commerce] is performing intensive order processing. You can configure [!DNL Commerce] to distinguish these two traffic patterns on the database level to avoid conflicts between read and write operations in the corresponding tables. You can store and index order data asynchronously. Orders are placed in temporary storage and moved in bulk to the Order Management grid without any collisions. You can activate this option from **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] > [!UICONTROL Asynchronous indexing]**. See [Scheduled Grid Updates](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) in the _Admin User Guide_ for more information.
+There can be times when intensive sales on a storefront occur at the same time that [!DNL Commerce] is performing intensive order processing. You can configure [!DNL Commerce] to distinguish these two traffic patterns on the database level to avoid conflicts between read and write operations in the corresponding tables. You can store and index order data asynchronously. Orders are placed in temporary storage and moved in bulk to the Order Management grid without any collisions. You can activate this option from **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] > [!UICONTROL Asynchronous indexing]**. See [Scheduled Grid Updates](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing) in the _Admin User Guide_ for more information.
 
 >[!WARNING]
 >
->The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
+>The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) does not support `Developer` mode.
 
 ## Asynchronous configuration save
 
@@ -63,7 +63,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Deferred stock update
 
-In times of intensive sales, [!DNL Commerce] can defer stock updates related to orders. This minimizes the number of operations and speeds up the order placement process. However, this option is risky and can only be used when Backorders are activated in the store, because this option can lead to negative stock quantities. This option can bring significant performance improvement on Checkout flows for stores that can easily re-fill their stock on demand. To activate deferred stock updates on your site, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]**. See [Managing Inventory](https://docs.magento.com/user-guide/catalog/inventory.html) in the _Adobe Commerce User Guide_ for more information.
+In times of intensive sales, [!DNL Commerce] can defer stock updates related to orders. This minimizes the number of operations and speeds up the order placement process. However, this option is risky and can only be used when Backorders are activated in the store, because this option can lead to negative stock quantities. This option can bring significant performance improvement on Checkout flows for stores that can easily re-fill their stock on demand. To activate deferred stock updates on your site, go to **[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]**. See [Managing Inventory](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) in the _Adobe Commerce User Guide_ for more information.
 
 >[!INFO]
 >
@@ -89,7 +89,7 @@ To improve the storefront responsiveness of your [!DNL Commerce] instance, go to
 
 >[!INFO]
 >
->The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] on cloud infrastructure](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) does not support `Developer` mode.
+>The **[!UICONTROL Developer]** tab and options are only available in [Developer mode](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) does not support `Developer` mode.
 
 When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option, you allow Commerce to merge all JS resources into one or a set of bundles that are loaded in storefront pages. Bundling JS results in fewer requests to the server, which improves page performance. It also helps the browser cache JS resources on the first call and reuse them for all further browsing. This option also brings lazy evaluation, as all JS is loaded as text. It initiates analysis and evaluation of code only after specific actions are triggered on the page. However, this setting is not recommended for stores where the first page load time is extremely critical, because all JS content will be loaded on the first call.
 
@@ -105,7 +105,7 @@ When you activate the **[!UICONTROL Enable [!DNL JavaScript] Bundling]** option,
 
 ## Customer segments validation
 
-Merchants that have a large number of [customer segments](https://docs.magento.com/user-guide/marketing/customer-segments.html) may experience significant performance degradation with customer actions, such as customer login and adding products to the cart.
+Merchants that have a large number of [customer segments](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments) may experience significant performance degradation with customer actions, such as customer login and adding products to the cart.
 
 Customer actions trigger a validation process for customer segments, which is what can cause performance degradation. By default, Adobe Commerce validates each segment in real-time to define which customer segments are matched and which are not.
 

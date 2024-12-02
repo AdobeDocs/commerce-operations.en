@@ -15,7 +15,7 @@ bin/magento indexer:info
 
 The list displays as follows:
 
-```terminal
+```
 design_config_grid                       Design Config Grid
 customer_grid                            Customer Grid
 catalog_category_product                 Category Products
@@ -49,7 +49,7 @@ Where `[indexer]` is a space-separated list of indexers. Omit `[indexer]` to vie
 
 Sample result:
 
-```terminal
+```
 +----------------------+------------------+-----------+---------------------+---------------------+
 | Title                | Status           | Update On | Schedule Status     | Schedule Updated    |
 +----------------------+------------------+-----------+---------------------+---------------------+
@@ -85,7 +85,7 @@ Where `[indexer]` is a space-separated list of indexers. Omit `[indexer]` to rei
 
 Sample result:
 
-```terminal
+```
 Design Config Grid index has been rebuilt successfully in <time>
 Customer Grid index has been rebuilt successfully in <time>
 Category Products index has been rebuilt successfully in <time>
@@ -170,7 +170,7 @@ Where ```[indexer]``` is a space-separated list of indexers. Omit `[indexer]` to
 
 Sample result:
 
-```terminal
+```
 Design Config Grid indexer has been invalidated.
 Customer Grid indexer has been invalidated.
 Category Products indexer has been invalidated.
@@ -188,7 +188,7 @@ Catalog Search indexer has been invalidated.
 
 Use this command to set the following indexer options:
 
-- **Update on save (`realtime`)**: Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.) This is the default.
+- **Update on save (`realtime`)**: Indexed data is updated when a change is made in the Admin. (For example, the category products index is reindex after products are added to a category in the Admin.)
 - **Update by schedule (`schedule`)**: Data is indexed according to the schedule set by your cron job.
 
 [Learn more about indexing](https://developer.adobe.com/commerce/php/development/components/indexing/).
@@ -205,7 +205,7 @@ Where `[indexer]` is a space-separated list of indexers. Omit `[indexer]` to sho
 
 Sample result:
 
-```terminal
+```
 Design Config Grid:                                Update on Save
 Customer Grid:                                     Update on Save
 Category Products:                                 Update on Save
@@ -251,7 +251,7 @@ bin/magento indexer:set-mode schedule catalog_category_product catalog_product_c
 
 Sample result:
 
-```terminal
+```
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
@@ -260,7 +260,7 @@ The indexers-related database triggers are added when the indexer mode is set to
 
 ### Set indexer status
 
-This command allows administrators to modify the operational status of one or more indexers, optimizing system performance during extensive operations like data imports, updates, or maintenance.
+The `bin/magento indexer:set-status` command was introduced in Adobe Commerce 2.4.7. It allows administrators to modify the operational status of one or more indexers, optimizing system performance during extensive operations like data imports, updates, or maintenance.
 
 Command syntax:
 
@@ -283,7 +283,7 @@ bin/magento indexer:set-status suspended catalog_category_product catalog_produc
 
 Sample result:
 
-```terminal
+```
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```

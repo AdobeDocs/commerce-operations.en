@@ -17,7 +17,7 @@ After backing up, you can [rollback](#rollback) later.
 
 >[!TIP]
 >
->For Adobe Commerce on cloud infrastructure projects, see [Snapshots and backup management](https://devdocs.magento.com/cloud/project/project-webint-snap.html) in the _Cloud guide_.
+>For Adobe Commerce on cloud infrastructure projects, see [Snapshots and backup management](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in the _Cloud guide_.
 
 ## Enable backups
 
@@ -103,7 +103,7 @@ bin/magento setup:backup --code --db
 
 Messages similar to the following display:
 
-```terminal
+```
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -142,7 +142,7 @@ bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 
 Messages similar to the following display:
 
-```terminal
+```
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

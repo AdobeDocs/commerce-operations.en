@@ -14,9 +14,9 @@ Extensions include:
 -  Themes (change the look and feel of your storefront and Admin)
 -  Language packages (localize the storefront and Admin)
 
->[!TIP]
->
->This topic explains how to use the command-line interface to manage third-party extensions that you purchase from the Commerce Marketplace. You can use the same procedure to install _any_ extension; all you need is the extension's Composer name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
+This topic explains how to use the command-line interface to manage third-party extensions that you purchase from the Commerce Marketplace for _on-premises_ projects. For cloud infrastructure projects, see [Manage extensions](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+
+You can use the same procedure to install _any_ extension; all you need is the extension's Composer name and version. To find it, open the extension's `composer.json` file and note the values for `"name"` and `"version"`.
 
 ## Install
 
@@ -64,7 +64,7 @@ To get the extension's Composer name and version from the Commerce Marketplace:
 
    ![Marketplace purchase history](../../assets/installation//marketplace-my-purchases.png)
 
-1. Find the extension that you want to install and click **Technical Details**.
+1. Find the extension that you want to install and make a note of the component name and version.
 
    ![Technical details shows the extension's Composer name](../../assets/installation/marketplace-extension-technical-details.png)
 
@@ -92,7 +92,7 @@ Add the extension's name and version to your `composer.json` file:
 
 1. Wait for Composer to finish updating your project dependencies and make sure that there aren't any errors:
 
-   ```terminal
+   ```
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -110,7 +110,7 @@ bin/magento module:status J2t_Payplug
 
 By default, the extension is probably disabled:
 
-```terminal
+```
 Module is disabled
 ```
 
@@ -134,7 +134,7 @@ Some extensions don't work properly unless you clear generated static view files
 
    You should see the following output:
 
-   ```terminal
+   ```
    The following modules have been enabled:
    - J2t_Payplug
 
@@ -164,7 +164,7 @@ Some extensions don't work properly unless you clear generated static view files
 
    You should see output verifying that the extension is no longer disabled:
 
-   ```terminal
+   ```
    Module is enabled
    ```
 
@@ -235,13 +235,13 @@ The following instructions provide general information for uninstalling third-pa
    - For Composer-based extensions, remove the extension from your Adobe Commerce `composer.json` file.
 
      ```bash
-     composer remove <package-name>
+     composer remove <component-name>
      ```
 
    - For non-Composer-based extensions, remove the physical files from your Adobe Commerce project repository.
 
      ```bash
-     rm -rf app/code/<vendor-name>/<module-name>
+     rm -rf app/code/<vendor-name>/<component-name>
      ```
 
 1. If the `config.php` file is under source control in your Adobe Commerce project repository, remove the extension from the `config.php` file.

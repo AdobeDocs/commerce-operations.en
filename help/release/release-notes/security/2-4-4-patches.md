@@ -1,5 +1,5 @@
 ---
-title: Release Notes for Adobe Commerce 2.4.4 Security Patches
+title: Adobe Commerce 2.4.4 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 ---
@@ -8,17 +8,47 @@ exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.4-p9
+## 2.4.4-p11
+
+The Adobe Commerce 2.4.4-p11 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+
+## 2.4.4-p10
+
+The Adobe Commerce 2.4.4-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+
+### Highlights
+
+{{$include /help/_includes/release-notes/2024-08/security.md}}
+
+### Hotfixes included in this release
+
+{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+
+## 2.4.4-p9
 
 The Adobe Commerce 2.4.4-p9 security release provides security bug fixes for vulnerabilities that have been identified in previous releases of 2.4.4.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
+### Apply hotfix for CVE-2024-34102
+
+{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+
 ### Platform upgrades
 
 * **MariaDB 10.5 support**. This patch release introduces compatibility with MariaDB version 10.5. Adobe Commerce is still compatible with MariaDB version 10.4, but Adobe recommends using Adobe Commerce 2.4.4-p9 and all upcoming 2.4.4 security-only patch releases only with MariaDB version 10.5 because MariaDB 10.4 maintenance ends on June 18, 2024. <!--AC-11530-->
 
-### Additional security enhancements
+### Highlights
 
 {{$include /help/_includes/release-notes/2-4-7-security.md}}
 
@@ -34,7 +64,7 @@ The Adobe Commerce 2.4.4-p7 security release provides security bug fixes for vul
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html).
 
-### Security highlights
+### Highlights
 
 This release introduces two significant security enhancements:
 
@@ -53,11 +83,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 This release also includes security enhancements that improve compliance with the latest security best practices.
 
-### Security highlight
+### Highlights
 
 This release introduces a new full page cache configuration setting that helps to mitigate the risks associated with the `{BASE-URL}/page_cache/block/esi HTTP` endpoint. This endpoint supports unrestricted, dynamically loaded content fragments from Commerce layout handles and block structures. The new **[!UICONTROL Handles Param]** configuration setting sets the value of this endpoint's `handles` parameter, which determines the maximum allowed number of handles per API. The default value of this property is 100. Merchants can change this value from the Admin (**[!UICONTROL Stores]** > **[!UICONTROL Settings: Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**). <!-- AC-9113 -->
 
-### Known issue
+### Known issues
 
 **Issue**: Adobe Commerce displays a **wrong checksum** error during download by Composer from `repo.magento.com`, and package download is interrupted. This issue can occur during download of release packages that were made available during prerelease and is caused by a repackaging of the `magento/module-page-cache` package.
 
@@ -74,7 +104,7 @@ The Adobe Commerce 2.4.4-p5 security release provides security bug fixes for vul
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
 
-### Apply patch to resolve security vulnerability CVE-2022-31160 in jQuery-UI library
+### Apply hotfix for CVE-2022-31160
 
 `jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
 
@@ -84,11 +114,11 @@ The Adobe Commerce 2.4.4-p4 security release provides security bug fixes for vul
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
-### Apply patch to resolve security vulnerability CVE-2022-31160 in jQuery-UI library
+### Apply hotfix for CVE-2022-31160
 
 `jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. This library is a dependency of Adobe Commerce and Magento Open Source 2.4.4, 2.4.5, and 2.4.6. Merchants running affected deployments should apply the patch specified in the [jQuery UI security vulnerability CVE-2022-31160 fix for 2.4.4, 2.4.5, and 2.4.6 releases](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) Knowledge Base article.
 
-### Security highlight
+### Highlights
 
 The default behavior of the [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL query and ([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST endpoint has changed. By default, the API now always returns `true`. Merchants can enable the original behavior, which is to return `true` if the email does not exist in the database and `false` if it exists. <!-- AC-6695 -->
 
@@ -128,7 +158,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 DHL has introduced schema version 6.2 and will deprecate schema version 6.0 in the near future. Adobe Commerce 2.4.4 and earlier versions that support the DHL integration support only version 6.0. Merchants deploying these releases should apply `AC-3022.patch` at their earliest convenience to continue offering DHL as a shipping carrier. See the [Apply a patch to continue offering DHL as a shipping carrier](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Knowledge Base article for information about downloading and installing the patch.
 
-### Security highlights
+### Highlights
 
 Security improvements for this release improve compliance with the latest security best practices, including:
 

@@ -56,8 +56,8 @@ The general format of system settings variable names follows:
    For more information about scopes, see:
 
   - [Step 1: Find the website or store view scope value](#step-1-find-the-website-or-store-view-scope-value)
-  - [Commerce User Guide topic on scope](https://docs.magento.com/user-guide/configuration/scope.html)
-  - [Scope quick reference](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
+  - [Commerce User Guide topic on scope](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+  - [Scope quick reference](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` is the configuration path with double underscore characters substituted for `/`. For more information, see [Step 2: Set system variables](#step-2-set-global-website-or-store-view-variables).
 

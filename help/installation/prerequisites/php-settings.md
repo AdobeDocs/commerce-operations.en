@@ -29,7 +29,7 @@ php -v
 
 If PHP is installed, a message similar to the following displays:
 
-```terminal
+```
 PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.2, Copyright (c) Zend Technologies
@@ -63,7 +63,7 @@ To verify installed extensions:
 
 -  Set the system time zone for PHP; otherwise, errors like the following display during the installation and time-related operations like cron might not work:
 
-```terminal
+```
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 

@@ -10,7 +10,6 @@ default:
   - intl
   - libxml
   - mysqli
-  - openswoole
   - pcntl
   - pdo_mysql
   - Reflection
@@ -18,6 +17,7 @@ default:
   - standard
   - soap
   - sockets
+  - swoole
   - sysvmsg
   - sysvsem
   - sysvshm

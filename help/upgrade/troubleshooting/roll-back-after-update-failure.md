@@ -7,7 +7,7 @@ exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
 
 If your module update fails, messages similar to the following display in the console log:
 
-```terminal
+```
 [2015-08-14 12:12:02 CDT] Job "update {"components":[{"name":"example/module","version":"1.1.0"}]}" has been started
 [2015-08-14 12:12:02 CDT] Starting composer update...
 [2015-08-14 12:12:02 CDT] An error occurred while executing job "update {"components":

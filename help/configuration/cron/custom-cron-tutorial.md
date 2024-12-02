@@ -55,7 +55,7 @@ If you already have a sample module, you can use it; skip this step and the next
 
    You should see the following result:
 
-   ```terminal
+   ```
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -91,7 +91,7 @@ Before you continue, verify that the sample module is registered and enabled.
 
 1. Make sure that the module is enabled.
 
-   ```terminal
+   ```
    Module is enabled
    ```
 
@@ -209,7 +209,7 @@ To verify cron:
 
       The result should be similar to the following:
 
-      ```terminal
+      ```
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -228,7 +228,7 @@ To verify cron:
 
    You should see one or more entries like the following:
 
-   ```terminal
+   ```
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 

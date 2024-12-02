@@ -36,7 +36,7 @@ After you have installed and configured Varnish to work with Commerce, the follo
 
 ## Configure Commerce to purge Varnish
 
-Commerce purges Varnish hosts after you configure Varnish hosts using the [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) command.
+Commerce purges Varnish hosts after you configure Varnish hosts using the [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) command.
 
 You can use the optional parameter `--http-cache-hosts` parameter to specify a comma-separated list of Varnish hosts and listen ports. Configure all Varnish hosts, whether you have one or many. (Do not separate hosts with a space character.)
 

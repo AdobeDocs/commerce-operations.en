@@ -9,7 +9,7 @@ exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
 
 When security vulnerabilities are discovered by researchers, proper reporting channels are often lacking. As a result, some vulnerabilities are not reported. The purpose of the `security.txt` [file format](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) file is to provide security researchers the information they can use to report their findings.
 
-Merchants can enter their contact information for [security issue reporting](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) from the Commerce _Admin_. For developers, the `Magento_Securitytxt` module provides the following functionality:
+Merchants can enter their contact information for [security issue reporting](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-issue-reporting) from the Commerce _Admin_. For developers, the `Magento_Securitytxt` module provides the following functionality:
 
 - Allows security configurations to be saved from the _Admin_.
 - Contains a router to match application action class for requests to the `.well-known/security.txt` and `.well-known/security.txt.sig` files.

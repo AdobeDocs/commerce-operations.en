@@ -21,7 +21,7 @@ Allocate at least **2GB** of memory for the [OPcache PHP module](https://www.php
 ## Additional information
 
 * [Performance Best Practices - PHP Settings](../../../performance/software.md#php-settings) 
-* [Configure PHP options](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)
+* [Configure PHP options](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Database best practices for Adobe Commerce on cloud infrastructure](database-on-cloud.md)
 * [Most common database issues in Adobe Commerce on cloud infrastructure](../maintenance/resolve-database-performance-issues.md)
 * [Indexers "Update On Schedule" optimizes Adobe Commerce performance](../maintenance/indexer-configuration.md)

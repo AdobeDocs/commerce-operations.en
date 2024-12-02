@@ -48,10 +48,10 @@
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4.1.0</td>
-          <td>4.1.0</td>
-          <td>4.1.0</td>
-          <td>4.1.0</td>
+          <td>4.2.1</td>
+          <td>4.2.1</td>
+          <td>4.2.1</td>
+          <td>4.2.1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Release Notes</a><br/>
@@ -59,7 +59,7 @@
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>2.6.0 (PHP 8.3)</td>
+          <td>2.9.0 (PHP 8.3)</td>
           <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
@@ -70,10 +70,10 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>6.0.0</td>
-          <td>6.0.0</td>
-          <td>6.0.0</td>
-          <td>6.0.0</td>
+          <td>6.0.3</td>
+          <td>6.0.3</td>
+          <td>6.0.3</td>
+          <td>6.0.3</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Release Notes</a><br/>

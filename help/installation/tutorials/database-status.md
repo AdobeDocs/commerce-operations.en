@@ -19,7 +19,7 @@ This command has no arguments or options.
 
 Sample output follows:
 
-```terminal
+```
 All modules are up to date.
 ```
 

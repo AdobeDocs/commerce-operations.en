@@ -1,3 +1,11 @@
+#
+# ADOBE CONFIDENTIAL
+# Copyright 2024 Adobe All Rights Reserved.
+# NOTICE:  All information contained herein is, and remains the property of Adobe and its suppliers, if any.
+# The intellectual and technical concepts contained herein are proprietary to Adobe and its suppliers and are protected by all applicable intellectual property laws, including trade secret and copyright laws.
+# Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from Adobe.
+#
+
 # frozen_string_literal: true
 
 require 'yaml'
@@ -73,7 +81,8 @@ task :whatsnew_bp do
   puts report
 end
 
-desc 'Render the templated files'
+desc 'Render the templated files.
+  Renders the templated files in the "_jekyll/templates" directory. The result will be found in the "help/includes/templated" directory.'
 task :render do
   sh '_scripts/render'
 end
@@ -86,8 +95,8 @@ task :image_optim do
 
   unless path
     puts 'Looking in uncommitted files ...'.blue
-    modified_files = `git ls-files --modified --others --exclude-standard`.split("\n")
-    deleted_files = `git ls-files --deleted`.split("\n")
+    modified_files = `git ls-files --modified --others --exclude-standard -- ..`.split("\n")
+    deleted_files = `git ls-files --deleted -- ..`.split("\n")
     image_files_to_check = (modified_files - deleted_files).select do |file|
       File.extname(file) =~ /\.(png|jpg|jpeg|gif)/i
     end

@@ -27,7 +27,7 @@ After consuming all available messages, the command terminates. You can run the 
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-See [`queue:consumers:start`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) in the Commerce section of the _Command-line tools reference_ for details about the command options, parameters, and values.
+See [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) in the Commerce section of the _Command-line tools reference_ for details about the command options, parameters, and values.
 
 >[!INFO]
 >

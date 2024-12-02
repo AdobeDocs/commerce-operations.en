@@ -21,7 +21,7 @@ curl -i http://localhost:8080/_cluster/health
 
 The following message displays to indicate authentication failed:
 
-```terminal
+```
 HTTP/1.1 401 Unauthorized
 Date: Tue, 23 Feb 2016 20:35:29 GMT
 Content-Type: text/html
@@ -50,7 +50,7 @@ curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/healt
 
 This time the command succeeds with a message similar to the following:
 
-```terminal
+```
 HTTP/1.1 200 OK
 Date: Tue, 23 Feb 2016 20:38:03 GMT
 Content-Type: application/json; charset=UTF-8

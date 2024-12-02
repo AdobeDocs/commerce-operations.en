@@ -22,6 +22,32 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
+### Enhanced search capabilities for Live Search (Public Beta)
+
+This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+
+- **Layered search** - Search within another search context - With this capability, you can undertake up to two layers of search for your search queries. For example:
+  
+  - **Layer 1 search** - Search for "motor" on "product_attribute_1".
+  - **Layer 2 search** - Search for "part number 123" on "product_attribute_2". This example searches for "part number 123" within the results for "motor".
+
+  Layered search is available for both `startsWith` search indexation and `contains` search indexation as described below:
+
+- **startsWith search indexation** - Search using `startsWith` indexation. This new capability allows:
+
+  - Searching for products where the attribute value starts with a particular string.
+  - Configuring an "ends with" search so shoppers can search for products where the attribute value ends with a particular string. To enable an "ends with" search, the product attribute needs to be ingested in reverse and the API call should also be a reversed string.
+
+- **contains search indexation** -Search an attribute using contains indexation. This new capability allows:
+
+    - Searching for a query within a larger string. For example, if a shopper searches for the product number "PE-123" in the string "HAPE-123".
+        
+        - Note: This search type is different from the existing [phrase search](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), which performs an autocomplete search. For example, if your product attribute value is "outdoor pants", a phrase search returns a response for "out pan", but does not return a response for "oor ants". A contains search, however, does return a response for "oor ants".
+
+These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. To participate in the beta, send an email request to [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
+
+To install the Live Search beta, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
+
 ### Experience Manager Assets Integration for Commerce (Private Beta)
 
 The Experience Manager Assets Integration for Commerce enables efficient management and delivery of a large volume of product images from Experience Manager Assets to Adobe Commerce with low or no operational effort required.
@@ -41,6 +67,7 @@ To participate in the beta, send an email request to [Shaun McCran](mailto:mccra
 ### IBM Sterling Order Management System Integration (Private Beta)
 
 This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:
+
 - Real-time visibility into inventory levels and accurate delivery dates for your customers.
 - Automated sourcing for orders based on configurable rules, so you can optimize your fulfillment network and inventory.
 - A universal view of orders across channels from a single dashboard so your support teams can deliver exceptional service and identify and handle exceptions quickly.
@@ -51,10 +78,9 @@ To participate in this beta, send an email request to [sbieber@adobe.com](mailto
 ### Data Connection & Audience Activation (Public Beta)
 
 Expanded data sharing between Adobe Commerce & Adobe Experience Platform to drive more powerful personalized experiences. This capability enables merchants to:
+
 - Share Commerce customer profiles
 - Create custom attributes
-- Get Commerce insights in Real-Time CDP and Adobe Journey Optimizer
-- Support multiple datasets and datastreams
 
 To participate in this beta, send an email request to [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
 
@@ -62,12 +88,12 @@ To participate in this beta, send an email request to [DataConnection@adobe.com]
 
 Each Adobe Commerce Foundation beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
--  Latest security fixes
--  Performance improvements
--  GraphQL improvements
--  General quality bug fixes
--  Community contributions
--  Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- Latest security fixes
+- Performance improvements
+- GraphQL improvements
+- General quality bug fixes
+- Community contributions
+- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
 #### Naming convention and schedule
 
@@ -75,8 +101,8 @@ Adobe typically releases beta patches twice a year.
 
 Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.4.7 beta release packages use the following naming convention:
 
--  `2.4.7-beta1`
--  `2.4.7-beta2`
+- `2.4.7-beta1`
+- `2.4.7-beta2`
 
 See the [release schedule](schedule.md) for the list of upcoming public beta release dates.
 

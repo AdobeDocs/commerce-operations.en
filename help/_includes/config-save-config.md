@@ -26,7 +26,7 @@
 
    Sample response:
 
-   ```terminal
+   ```
    On branch m2.2_deploy
    Changed but not updated:
      (use "git add <file>..." to update what will be committed)
