@@ -30,7 +30,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.6-p8
 
 1. Configure the *[!DNL Braintree]* payment method with *[!UICONTROL Vault]* enabled.
 1. Checkout and save a card in the *[!UICONTROL Vault]*.
-1. Checkout another *product*.
+1. Checkout another product.
 1. On the *[!UICONTROL Shipping]* page, add a new shipping address so you have two addresses to select.
 1. On the *[!UICONTROL Payment]* page, select your payment method and click **[!UICONTROL My billing and shipping addresses are the same]**.
 
