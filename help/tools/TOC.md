@@ -654,6 +654,7 @@ feature: Configuration
             - [ACSD-61667: Improves inventory performance for creating shipping](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
         - v1.1.54 {#v1-1-54}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+            - [ACSD-61134: [!UICONTROL Braintree Vault] payment method automatically deselected in checkout workflow](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow.md)
             - [ACSD-61756: Performance degradation of AdvancedSalesRule filters due to missing database indexes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
             - [ACSD-60267: FPT applies incorrectly when products are added through configurable product options](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
             - [ACSD-61199: CMS page's [!UICONTROL Hierarchy] tab doesn't display proper tree structure](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
