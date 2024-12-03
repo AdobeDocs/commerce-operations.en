@@ -649,6 +649,7 @@ feature: Configuration
             - [ACSD-61528: Retrieving roles using GraphQL returns no results](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
             - [ACSD-48318: Environment emulation nesting error in "system.log"](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
             - [ACSD-60804: Editing a customer associated with a deleted company results in an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
+            - [ACSD-61969: Required to type coupon code as configured in uppercase or lowercase](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase.md)
             - [ACSD-61133: sales_clean_quotes cron deletes quotes from unapproved purchase orders](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
             - [ACSD-61667: Improves inventory performance for creating shipping](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
         - v1.1.54 {#v1-1-54}
