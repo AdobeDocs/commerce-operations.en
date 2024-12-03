@@ -23,7 +23,7 @@ The ACSD-58828 patch fixes the issue where the server-side validation message *a
 
 ## Issue
 
-Fixes the issue where the server-side validation message *address is required* appears if any required field is left empty, alongside the client-side validation message.
+The server-side validation message *address is required* appears if any required field is left empty, alongside the client-side validation message.
 
 Steps to reproduce:
 
