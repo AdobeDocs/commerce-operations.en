@@ -31,17 +31,18 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 | Release              | General Availability | End of regular support<sup>1</sup> | End of extended support | Dependent PHP version | Dependendent MariaDB version |
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                      | N/A                     | 8.2 and 8.3           | 10.6                         |
-| Adobe Commerce 2.4.6 | March 14, 2023       | March 14, 2026                     | N/A                     | 8.1 and 8.2           | 10.6                         |
-| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                     | August 11,2026          | 8.1                   | 10.5<sup>2</sup>             |
-| Adobe Commerce 2.4.4 | April 12, 2022       | April 24, 2025                     | April 14, 2026          | 8.1                   | 10.5<sup>3</sup>             |
+| Adobe Commerce 2.4.6 | March 14, 2023       | August 11, 2026<sup>2</sup>        | N/A                     | 8.1 and 8.2           | 10.6                         |
+| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                     | August 11,2026          | 8.1                   | 10.5<sup>3</sup>             |
+| Adobe Commerce 2.4.4 | April 12, 2022       | April 24, 2025                     | April 14, 2026          | 8.1                   | 10.5<sup>4</sup>             |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
 >- <sup>1</sup> End of software support includes both end of quality fixes and end of security fixes.
->- <sup>2</sup> Starting with the 2.4.5-p8 security patch.
->- <sup>3</sup> Starting with the 2.4.4-p9 security patch.
+>- <sup>2</sup> Updated to align with end of extended support for 2.4.5.
+>- <sup>3</sup> Starting with the 2.4.5-p8 security patch.
+>- <sup>4</sup> Starting with the 2.4.4-p9 security patch.
 >- See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
@@ -101,7 +102,7 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
   <tr>
     <td>2.4.6</td>
     <td colspan="4"></td>
-    <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="15" style="background-color:#67ac68;"></td>
     <td colspan="8"></td>
   </tr>
   <tr>
