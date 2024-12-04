@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-62056: Image upload for configurable product fails if MSI is installed 
 
-The ACSD-62056 patch solves/fixes the issue where images for configurable products are not getting added if MSI is installed. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-62056. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62056 patch fixes the issue where images for configurable products are not getting added if MSI is installed. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-62056. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,18 +24,18 @@ The ACSD-62056 patch solves/fixes the issue where images for configurable produc
 
 ## Issue
 
-When editing a configurable product with Inventory Management / MSI enabled, the options to add images are not working. This affects both the [!UICONTROL Apply a single set of images to all SKUs] and [!UICONTROL Apply unique images by attribute to each SKU] options.
+When editing a configurable product with [!UICONTROL Inventory Management/MSI] enabled, the options to add images are not working. This affects both the [!UICONTROL Apply a single set of images to all SKUs] and [!UICONTROL Apply unique images by attribute to each SKU] options.
 
 <u>Prerequisites</u>:
 
-Inventory Management / MSI modules are installed and enabled.
+[!UICONTROL Inventory Management/MSI] modules are installed and enabled.
 
 <u>Steps to reproduce</u>:
 
 1. Create a new source.
 1. Create a new stock and assign the new source.
-1. **[!UICONTROL Edit]** a configurable product.
-1. Click **[!UICONTROL Edit configurations]** > **[!UICONTROL Next]** > **[!UICONTROL Next]**.
+1. Edit a configurable product.
+1. Click **[!UICONTROL Edit Configurations]** > **[!UICONTROL Next]** > **[!UICONTROL Next]**.
 1. Select any of the following and add an image.
 
     * [!UICONTROL Apply a single set of images to all SKUs]
