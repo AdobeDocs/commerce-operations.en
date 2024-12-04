@@ -15,6 +15,29 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.56 {#v1-1-56}
+
+* **ACSD-63244** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a JavaScript error prevents Google Maps from rendering correctly. Fixes the issue where there are many "Uncaught TypeError: this._each is not a function" errors in the console in the Admin panel.
+* **ACSD-63242** (for Adobe Commerce and Magento Open Source >=2.4.6-p8 <2.4.7 || >=2.4.7-p3 <2.4.8) - Fixes the issue with slow import when adding catalog products with more than 10,000 entries.
+* **ACSD-63062** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where incorrect cart discount calculations occur when multiple overlapping rules are applied.
+* **ACSD-62979** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where using the wrong Store ID in the GraphQL header causes a fatal memory error.
+* **ACSD-62971** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where importing stock sources with non-numeric values in the 'quantity' column results in the quantity being set to 0.
+* **ACSD-62872** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue with unique attribute validation where schedule updates are validated incorrectly.
+* **ACSD-62755** (for Adobe Commerce and Magento Open Source >=2.4.4-p11 <2.4.5 || >=2.4.5-p10 <2.4.6 || >=2.4.6-p8 <2.4.7 || >=2.4.7-p3 <2.4.8) - Fixes the issue where TinyMCE 7 requires font size and font to be specifically added within editor initialization settings.
+* **ACSD-62670** (for Adobe Commerce and Magento Open Source >=2.4.4-p11 <2.4.5 || >=2.4.5-p10 <2.4.6 || >=2.4.6-p8 <2.4.7 || >=2.4.7-p3 <2.4.8) - Fixes the issue where the Products Ordered report export to CSV and XML throws an error.
+* **ACSD-62577** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue with slow performance of storefront search queries by optimizing both query and table indexes.
+* **ACSD-62475** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the Gift Card products are merged incorrectly in the cart.
+* **ACSD-62428** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where "is_out_of_stock" is set to an incorrect value in the catalog search index when the SKU is not set as a searchable attribute.
+* **ACSD-62355** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Improves loading time of configurable product edit page when configurable product is based on a lot of attributes with a lot of values.
+* **ACSD-61805** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where products remain out of stock on the storefront after updating the backorder status via the REST API.
+* **ACSD-60811** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where updating order status with custom value or comment is only possible if the current status is either "processing" or "fraud".
+* **ACSD-62952** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the Gift Registry date is displayed inaccurately on the storefront.
+* **ACSD-55339** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where a product SKU starting with 0 trims 0, preventing the quote from being updated.
+**
+* Updated patches: **ACSD-59514**
+* Versions updated: **ACSD-60816**
+* Replaced patches: **ACSD-59967**
+
 ## v1.1.55 {#v1-1-55}
 
 * **ACSD-58383** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where issuing a refund via the [!DNL REST API] with two identical requests that are executed simultaneously, creates duplicate credit memos.
