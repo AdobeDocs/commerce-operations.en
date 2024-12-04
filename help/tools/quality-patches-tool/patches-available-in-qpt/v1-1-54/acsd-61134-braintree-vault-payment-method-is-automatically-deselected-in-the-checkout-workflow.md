@@ -1,8 +1,9 @@
 ---
-title: "ACSD-61134: [!UICONTROL Braintree Vault] payment method automatically deselected in checkout workflow"
+title: 'ACSD-61134: [!UICONTROL Braintree Vault] payment method automatically deselected in checkout workflow'
 description: Apply the ACSD-61134 patch to resolve the Adobe Commerce issue where the *[!UICONTROL Braintree Vault]* payment method is automatically deselected in the checkout workflow when a shopper updates their billing address by deselecting the *[!UICONTROL My billing and shipping address are the same]* checkbox.
 feature: Checkout
 role: Admin, Developer
+exl-id: 8aad34e2-89ef-460c-8921-91098bd1645b
 ---
 # ACSD-61134: *[!UICONTROL Braintree Vault]* payment method automatically deselected in checkout workflow
 
@@ -54,4 +55,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
