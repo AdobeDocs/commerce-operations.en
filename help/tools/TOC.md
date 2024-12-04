@@ -664,6 +664,7 @@ feature: Configuration
             - [ACSD-61799: Incorrect total discount calculation with multiple fixed discount cart rules applied to quote](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
             - [ACSD-62485: async.operations.all consumer stops working when company is created](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
             - [ACSD-61845: Error occurs for requests with text/html accept header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+            - [ACSD-62056: Image upload for configurable product fails if MSI is installed](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
         - v1.1.55 {#v1-1-55}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
             - [ACSD-58828: Server-side "address is required" message appears for any empty required field, alongside client-side validation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
