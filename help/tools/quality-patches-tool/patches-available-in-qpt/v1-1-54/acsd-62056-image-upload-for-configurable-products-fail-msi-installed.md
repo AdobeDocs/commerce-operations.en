@@ -1,8 +1,9 @@
 ---
 title: 'ACSD-62056: Image upload for configurable product fails if MSI is installed'
 description: Apply the ACSD-62056 patch to fix the Adobe Commerce issue where images for configurable products are not getting added if MSI is installed.
-feature: Products, Media 
+feature: Products, Media
 role: Admin, Developer
+exl-id: bab8e617-d80c-4456-8ade-bdc6b4294d26
 ---
 # ACSD-62056: Image upload for configurable product fails if MSI is installed 
 
@@ -60,4 +61,4 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide. 
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
