@@ -212,7 +212,6 @@ Separating the Redis cache from Redis session allows you to manage the cache and
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
