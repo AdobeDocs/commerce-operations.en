@@ -28,7 +28,7 @@ GraphQL returns an internal server error when querying the `created_at` field in
 
 <u>Prerequisites</u>:
 
-B2B module installed and Company and Purchase Orders are enabled.
+B2B modules are installed and Company and Purchase Orders are enabled.
 
 <u>Steps to reproduce</u>:
 
