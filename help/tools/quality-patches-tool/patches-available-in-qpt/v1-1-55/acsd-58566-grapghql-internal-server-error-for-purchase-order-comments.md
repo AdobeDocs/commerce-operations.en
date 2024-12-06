@@ -66,7 +66,6 @@ The `created_at` field returns the datetime of the purchase order comment.
 
 Displays null instead of the `created_at` date.
 ```
-
 {
   "errors": [
     {
