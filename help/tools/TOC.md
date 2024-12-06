@@ -667,6 +667,7 @@ feature: Configuration
             - [ACSD-62056: Image upload for configurable product fails if MSI is installed](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
         - v1.1.55 {#v1-1-55}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+            - [ACSD-58685: Disabled sales emails are sent upon re-enabling](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
             - [ACSD-58828: Server-side "address is required" message appears for any empty required field, alongside client-side validation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
             - [ACSD-61534: Design configuration can't be set using bin/magento config:set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
             - [ACSD-61348: Wishlist items visible via GraphQL but not on storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
