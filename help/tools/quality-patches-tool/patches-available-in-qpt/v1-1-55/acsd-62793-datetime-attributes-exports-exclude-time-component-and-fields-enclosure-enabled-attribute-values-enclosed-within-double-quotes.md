@@ -29,8 +29,6 @@ Datetime attributes in exported data don't include the time component. Additiona
 
 <u>Steps to reproduce</u>:
 
-Create a product attribute with **[!UICONTROL Catalog Input Type for Store Owner]** = Date and Time.
-
 1. Create a product attribute with **[!UICONTROL Catalog Input Type for Store Owner]** = Date and Time. 
 1. Assign the attribute to the **[!UICONTROL Default]** attribute set.
 1. Create a simple product with a date and time value for the new attribute.
