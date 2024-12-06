@@ -86,7 +86,7 @@ Displays null instead of the `created_at` date.
   "data": {
     "addPurchaseOrderComment": null
   }
-} 
+}
 ```
 
 ## Apply the patch
