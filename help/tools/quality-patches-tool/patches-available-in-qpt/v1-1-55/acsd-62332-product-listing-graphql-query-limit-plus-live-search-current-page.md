@@ -20,7 +20,7 @@ The ACSD-62332 patch fixes the issues where the product listing GraphQL query is
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p3
+* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p8
 
 
 >[!NOTE]
