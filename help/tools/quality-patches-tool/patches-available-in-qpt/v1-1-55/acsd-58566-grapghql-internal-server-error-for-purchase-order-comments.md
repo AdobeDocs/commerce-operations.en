@@ -1,8 +1,9 @@
 ---
 title: 'ACSD-58566: GraphQL internal server error for purchase order comments'
-description: Apply the ACSD-58566 patch to fix the Adobe Commerce issue where GraphQL returns an internal server error when querying the `created_at` field in the `addPurchaseOrderComment` mutation. 
+description: Apply the ACSD-58566 patch to fix the Adobe Commerce issue where GraphQL returns an internal server error when querying the `created_at` field in the `addPurchaseOrderComment` mutation.
 feature: B2B, Purchase Orders, GraphQL
 role: Admin, Developer
+exl-id: 6d051f57-7a2f-44a5-a1c9-834917ed986c
 ---
 # ACSD-58566: GraphQL internal server error for purchase order comments
 
