@@ -22,7 +22,7 @@ QPT v1.1.56 includes the following patches:
 1. **ACSD-62475**: Fixes the issue where the [!UICONTROL Gift Card] products are merged incorrectly in the cart.
 1. **ACSD-62428**: Fixes the issue where `is_out_of_stock` is set to an incorrect value in the catalog search index when the [!DNL SKU] is not set as a searchable attribute.
 1. **ACSD-62355**: Improves the loading time of the configurable product edit page when the configurable product is based on many attributes with many values.
-1. **ACSD-61805**: Fixes the issue where products remain out of stock on the storefront after updating the backorder status via the [!DNL REST API].
+1. **ACSD-61805**: Fixes the issue where products remain out of stock on the storefront after updating the backorder status via [!DNL REST API].
 1. **ACSD-60811**: Fixes the issue where updating order status with a custom value or comment is only possible if the current status is either *[!UICONTROL Processing]* or *[!UICONTROL Fraud]*.
 1. **ACSD-62952**: Fixes the issue where the [!UICONTROL Gift Registry] date is displayed inaccurately on the storefront.
 1. **ACSD-55339**: Fixes the issue where a product [!DNL SKU] starting with *0* (zero) removes the *0*, preventing the quote from being updated.
