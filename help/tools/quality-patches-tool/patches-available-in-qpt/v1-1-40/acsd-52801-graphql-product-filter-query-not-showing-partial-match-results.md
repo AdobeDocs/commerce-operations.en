@@ -9,7 +9,7 @@ exl-id: 946a7189-60b2-4812-92ca-ed7ba35b2488
 
 >[!NOTE]
 >
->An updated patch has been released to resolve the same issue for versions 2.4.6 - 2.4.6-p8. For more details, see [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
+>An updated patch ([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) has been released to resolve the same issue for versions 2.4.6 - 2.4.6-p8. It replaces the ACSD-52801 patch for versions 2.4.6 onward. For more details, see [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
 The ACSD-52801 patch fixes the issue where the GraphQL product filter query doesn't show partial match results. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40 is installed. The patch ID is ACSD-52801. Please note that the issue is fixed in Adobe Commerce 2.4.7.
 
