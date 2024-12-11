@@ -205,6 +205,10 @@ Separating the Redis cache from Redis session allows you to manage the cache and
 1. Add the port number to the `.magento.env.yaml` configuration file.
 
    >[!NOTE]
+   >Configure the redis session port only if `ece-tools` is unable to automatically detect it from the `MAGENTO_CLOUD_RELATIONSHIPS` redis session service definition.
+   > 
+
+   >[!NOTE]
    >`disable_locking` must be set to `1`.
    >   
 
@@ -212,7 +216,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
+       port: 6374 # check the port in $MAGENTO_CLOUD_RELATIONSHIPS and put it here (by default, you can delete this line!!)
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
