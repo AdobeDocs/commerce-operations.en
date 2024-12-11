@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-62428: Fixes stock status errors in catalog search index'
+title: 'ACSD-62428: Stock status errors in catalog search index'
 description: Apply the ACSD-62428 patch to fix the issue where the `is_out_of_stock` value in the catalog search index is incorrectly set when the SKU is not as a searchable attribute.
 feature: Inventory, Catalog Management
 role: Admin, Developer
