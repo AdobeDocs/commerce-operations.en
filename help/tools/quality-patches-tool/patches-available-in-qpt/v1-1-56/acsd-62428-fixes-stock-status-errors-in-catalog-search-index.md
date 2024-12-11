@@ -31,7 +31,7 @@ The `is_out_of_stock` value in the catalog search index is set to an incorrect v
 1. Create a custom [!UICONTROL Source] and custom [!UICONTROL Stock].
 1. Create three simple products and assign their inventory to the custom [!UICONTROL Source]. Assign these products to a category.
 1. Set the *[!UICONTROL Inventory (MSI) Indexer]* to *[!UICONTROL Update on Save]* for easier replication.
-1. Set the [!UICONTROL Source Item Status] to [!UICONTROL In Stock] and assign a  [!UICONTROL Quantity].
+1. Set the *[!UICONTROL Source Item Status]* to *[!UICONTROL In Stock]* and assign a *[!UICONTROL Quantity]*.
 1. Save the product.
 1. Navigate to **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]**, and open the **[!UICONTROL SKU]** attribute.
 1. Set  *[!UICONTROL Use In]* to *[!UICONTROL No]*.
