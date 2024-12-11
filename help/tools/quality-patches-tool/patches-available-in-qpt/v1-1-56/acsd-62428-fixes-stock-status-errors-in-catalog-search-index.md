@@ -34,7 +34,7 @@ The `is_out_of_stock` value in the catalog search index is set to an incorrect v
 1. Set the [!UICONTROL Source Item Status] to [!UICONTROL In Stock] and assign a  [!UICONTROL Quantity].
 1. Save the product.
 1. Navigate to **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]**, and open the **[!UICONTROL SKU]** attribute.
-1. Set  [!UICONTROL Use In] to [!UICONTROL No].
+1. Set  *[!UICONTROL Use In]* to *[!UICONTROL No]*.
 1. Change the product quantity (make sure it is not set to 0).
 1. Save the product.
 
