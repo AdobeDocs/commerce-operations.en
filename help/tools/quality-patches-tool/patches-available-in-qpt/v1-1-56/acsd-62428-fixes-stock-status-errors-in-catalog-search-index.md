@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-62428: Stock status errors in catalog search index
 
-The ACSD-62428 patch fixes the issue where `is_out_of_stock` values in the catalog search index is set to an incorrect value when the SKU attribute is not set as searchable. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. The patch ID is ACSD-62428. This issue is planned to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62428 patch fixes the issue where `is_out_of_stock` values in the catalog search index is set to an incorrect value when the SKU attribute is not set as searchable. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. The patch ID is ACSD-62428. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
