@@ -35,19 +35,19 @@ Gift Card products added to the cart with unique sender or recipient details are
 1. On the storefront, create a new user and log in.
 
 1. Add the Gift Card product to the cart with the following details:
-   - **[!UICONTROL Sender Name]**: Sender 1
-   - **[!UICONTROL Sender Email**]: sender1@test.com
-   - **[!UICONTROL Recipient Name**]: Recipient 1
-   - **[!UICONTROL Recipient Email**]: recipient1@test.com
+   * **[!UICONTROL Sender Name]**: Sender 1
+   * **[!UICONTROL Sender Email**]: sender1@test.com
+   * **[!UICONTROL Recipient Name**]: Recipient 1
+   * **[!UICONTROL Recipient Email**]: recipient1@test.com
 
 
 1. Log out
 
 1. Add the same Gift Card product to the cart with the following details:
-   - **[!UICONTROL Sender Name]**: Sender 2
-   - **[!UICONTROL Sender Email**]: sender2@test.com
-   - **[!UICONTROL Recipient Name**]: Recipient 2
-   - **[!UICONTROL Recipient Email**]: recipient2@test.com
+   * **[!UICONTROL Sender Name]**: Sender 2
+   * **[!UICONTROL Sender Email**]: sender2@test.com
+   * **[!UICONTROL Recipient Name**]: Recipient 2
+   * **[!UICONTROL Recipient Email**]: recipient2@test.com
 
 1. Log back in and check the cart.
 
