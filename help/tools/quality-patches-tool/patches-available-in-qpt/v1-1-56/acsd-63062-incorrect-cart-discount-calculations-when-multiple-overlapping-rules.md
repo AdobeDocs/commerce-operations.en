@@ -40,7 +40,7 @@ Incorrect cart discount calculations occur when multiple overlapping rules are a
     * Rule 1:
 
         * *[!UICONTROL Priority]*: 100
-        * *[!UICONTROL Conditions]* tab: Use simple2 (280$) product if total qty equals or greater than 3
+        * *[!UICONTROL Conditions]* tab: Use simple2 ($280) product if total qty equals or is greater than 3
         * *[!UICONTROL Actions]* tab: SKU is simple2
         * *[!UICONTROL Fixed Amount Discount]*: $80
 
@@ -53,13 +53,13 @@ Incorrect cart discount calculations occur when multiple overlapping rules are a
     * Rule 3:
 
         * *[!UICONTROL Priority]*: 300
-        * *[!UICONTROL Conditions]* tab: Subtotal equals or greater than $1000
+        * *[!UICONTROL Conditions]* tab: Subtotal equals or is greater than $1000
         * *[!UICONTROL Fixed Amount Discount]* for the whole cart: $100
 
     * Rule 4:
 
         * *[!UICONTROL Priority]*: 400
-        * *[!UICONTROL Conditions]* tab: Use simple1 ($1080) product if total qty equals or greater than 2
+        * *[!UICONTROL Conditions]* tab: Use simple1 ($1080) product if total qty equals or is greater than 2
         * *[!UICONTROL Actions]* tab: SKU is simple1
         * *[!UICONTROL Fixed Amount Discount]* for the whole cart: $960
 
