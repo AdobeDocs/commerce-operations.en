@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-63242: Slow import when adding more than 10,000 catalog products 
 
-The ACSD-58383 patch fixes the issue of slow imports when catalog products with more than 10,000 entries are added. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-63242. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63242 patch fixes the issue of slow imports when catalog products with more than 10,000 entries are added. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-63242. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
