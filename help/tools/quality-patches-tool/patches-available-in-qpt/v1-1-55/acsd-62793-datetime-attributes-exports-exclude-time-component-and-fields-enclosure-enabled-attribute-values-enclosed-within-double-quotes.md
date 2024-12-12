@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-62793: Datetime attributes in exports missing time component. Additionally if **[!UICONTROL Fields Enclosure]** enabled, attribute values enclosed within double-quotes
 
-The ACSD-62793 patch fixes the issue where  datetime attributes in exported data exclude the time component. Additionally if **[!UICONTROL Fields Enclosure]** is enabled, attribute values in the *additional_attributes* column will be enclosed within double-quotes. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 is installed. The patch ID is ACSD-62793. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8. 
+The ACSD-62793 patch fixes the issue where  datetime attributes in exported data are missing the time component. Additionally if **[!UICONTROL Fields Enclosure]** is enabled, attribute values in the *additional_attributes* column will be enclosed within double-quotes. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 is installed. The patch ID is ACSD-62793. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8. 
 
 ## Affected products and versions
 
