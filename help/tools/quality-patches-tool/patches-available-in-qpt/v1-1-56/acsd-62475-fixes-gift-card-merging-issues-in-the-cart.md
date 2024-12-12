@@ -1,12 +1,12 @@
 ---
 title: 'ACSD-62475: Fixes gift card merging issues in the cart'
 description: Apply the ACSD-62475 patch to fix the Adobe Commerce issue where gift card products with different details are incorrectly merged into a single line item in the cart. 
-feature: Gift
+feature: Shopping Cart, Quotes
 role: Admin, Developer
 ---
 # ACSD-62475: Fixes gift card merging issues in the cart
 
-The ACSD-62475 patch fixes the issue where gift card products with different details are incorrectly merged into a single line item in the cart. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-61522. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62475 patch fixes the issue where gift card products with different details are incorrectly merged into a single line item in the cart. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62475. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -16,7 +16,7 @@ The ACSD-62475 patch fixes the issue where gift card products with different det
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.7 < 2.4.8
+* Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
