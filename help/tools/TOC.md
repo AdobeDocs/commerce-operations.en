@@ -680,6 +680,7 @@ feature: Configuration
         - v1.1.56 {#v1-1-56}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
             - [ACSD-62475: Fixes gift card merging issues in the cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
+            - [ACSD-62428: Stock status errors in catalog search index](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Command-line tools reference {#cli-reference}
