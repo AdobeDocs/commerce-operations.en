@@ -3,6 +3,7 @@ title: 'ACSD-63062: Incorrect cart discount calculations with multiple overlappi
 description: Apply the ACSD-63062 patch to fix the Adobe Commerce issue where where incorrect cart discount calculations occur when multiple overlapping rules are applied.
 feature: Price Rules
 role: Admin, Developer
+exl-id: c4a93063-b640-444e-ba0e-552dd8d1895b
 ---
 # ACSD-63062: Incorrect cart discount calculations with multiple overlapping rules 
 

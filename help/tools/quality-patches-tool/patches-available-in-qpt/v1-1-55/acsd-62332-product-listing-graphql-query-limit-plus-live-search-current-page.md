@@ -3,6 +3,7 @@ title: 'ACSD-62332: Product listing GraphQL query limited to 10,000 products and
 description: Apply the ACSD-62332 patch to fix the Adobe Commerce issues where the product listing GraphQL query is limited to a total_count of 10,000 products and where [!DNL Live Search] sets the current page to *1* instead of page *2* in the search criteria when queried via GraphQL.
 feature: GraphQL, Products, Search
 role: Admin, Developer
+exl-id: 3623a337-32e9-468b-a82b-6a7f7fa943c9
 ---
 # ACSD-62332: Product listing GraphQL query limited to 10,000 products, and [!DNL Live Search] sets current page to 1 
 
