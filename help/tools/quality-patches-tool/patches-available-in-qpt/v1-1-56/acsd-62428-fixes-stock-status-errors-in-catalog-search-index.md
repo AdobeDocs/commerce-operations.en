@@ -12,7 +12,7 @@ The ACSD-62428 patch fixes the issue where `is_out_of_stock` values in the catal
 
 **The patch is created for Adobe Commerce version:**
 
-Adobe Commerce (all deployment methods)  2.4.6-p5
+Adobe Commerce (all deployment methods) 2.4.6-p5
 
 **Compatible with Adobe Commerce versions:**
 
@@ -34,7 +34,7 @@ The `is_out_of_stock` value in the catalog search index is set to an incorrect v
 1. Set the *[!UICONTROL Source Item Status]* to *[!UICONTROL In Stock]* and assign a *[!UICONTROL Quantity]*.
 1. Save the product.
 1. Navigate to **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]**, and open the **[!UICONTROL SKU]** attribute.
-1. Set  *[!UICONTROL Use In]* to *[!UICONTROL No]*.
+1. Set *[!UICONTROL Use In]* to *[!UICONTROL No]*.
 1. Change the product quantity (make sure it is not set to 0).
 1. Save the product.
 
