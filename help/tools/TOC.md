@@ -680,6 +680,7 @@ feature: Configuration
             - [ACSD-62332: Product listing GraphQL query limited to 10,000 products and [!DNL Live Search] sets current page to 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
         - v1.1.56 {#v1-1-56}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+            - [ACSD-63242: Slow import when adding more than 10,000 catalog products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
             - [ACSD-63062: Incorrect cart discount calculations with multiple overlapping rules](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
             - [ACSD-62428: Stock status errors in catalog search index](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
