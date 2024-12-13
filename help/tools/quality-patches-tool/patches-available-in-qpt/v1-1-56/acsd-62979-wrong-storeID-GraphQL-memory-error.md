@@ -66,7 +66,7 @@ Fixes the issue where using the wrong Store ID in the GraphQL header causes a fa
 }
 ```
 
-<u>Expected results</u>: Error message: "The store that was requested wasn't found.] Verify the store and try again"
+<u>Expected results</u>: Error message: "The store that was requested wasn't found. Verify the store and try again"
 
 <u>Actual results</u>: Fatal error like:
 
