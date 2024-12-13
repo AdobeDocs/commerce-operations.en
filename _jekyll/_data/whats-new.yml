@@ -1,8 +1,618 @@
 ---
 title: What's New
 description: Learn about new documentation and significant updates to existing documentation.
-updated: Tue Oct 8 14:14:35 2024
+updated: Wed Dec 11 13:56:56 2024
 entries:
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview)
+  versions: ''
+  type: new-topic
+  date: December 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1096
+  merge_commit: 3f5f5ca91e33c75437c8830cb81da8316b56736b
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-58685
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling).
+  versions: ''
+  type: new-topic
+  date: December 6, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1079
+  merge_commit: 2f2dd29105dfd0cb76b6ebd5102143940b100655
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-58566
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments)
+  versions: ''
+  type: new-topic
+  date: December 6, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1073
+  merge_commit: ae89b7bb8bef0e832398cfc048e41975249062cb
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60344
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval)
+  versions: ''
+  type: new-topic
+  date: December 4, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1093
+  merge_commit: 1a9cd4c3bfb0994577fef62efcd38d61e7742120
+  contributor: mer30185
+  membership: false
+  labels:
+  - new-topic
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.56 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: December 4, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1094
+  merge_commit: e965b37fd14090d23ae034d5342f26ac7820875a
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added the [detailed description of the issue fixed by the ACSD-62056
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed)
+  versions: ''
+  type: new-topic
+  date: December 4, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1081
+  merge_commit: f1a79eba0bfd7cecb7fc947ee7e3a1d41ce59ba1
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61969
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase)
+  versions: ''
+  type: new-topic
+  date: December 3, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1066
+  merge_commit: e29e800948373e9a6730337127a0fe62ccf9595d
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-58828
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation)
+  versions: ''
+  type: new-topic
+  date: December 3, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1083
+  merge_commit: b75e94c146149124e1cfb9747ad9d975c01ecad6
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61134
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow)
+  versions: ''
+  type: new-topic
+  date: December 3, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1052
+  merge_commit: 07c327b633c66d694acdcd0cf379ca8aa0d6942b
+  contributor: mer21281
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61785
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql)
+  versions: ''
+  type: new-topic
+  date: November 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1087
+  merge_commit: 0e058c0b473b6006e3630b5b575c2755e07de9dd
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61756
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter)
+  versions: ''
+  type: new-topic
+  date: November 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1054
+  merge_commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+  contributor: mer27808
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60267
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options)
+  versions: ''
+  type: new-topic
+  date: November 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1053
+  merge_commit: 4f61153745dbd421a3b2e64bb7d4beb2c691d951
+  contributor: mer21281
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61534
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set)
+  versions: ''
+  type: new-topic
+  date: November 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1088
+  merge_commit: a2db756505e3ad370d4969b6555aeefdfbcdca1b
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61348
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront)
+  versions: ''
+  type: new-topic
+  date: November 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1086
+  merge_commit: bdcb79e809bcc96b9ad98f050a10975dbde29cdd
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61103
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61103-customer-entity-failure-count-not-reset-after-login)
+  versions: ''
+  type: new-topic
+  date: November 28, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1063
+  merge_commit: b6ae0563dee1dd52c5473063fe9550bfd2dde69f
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61799
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules)
+  versions: ''
+  type: new-topic
+  date: November 27, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1057
+  merge_commit: 9333592647e2d8a95745801351d8d0404e0a86e7
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61667
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping)
+  versions: ''
+  type: new-topic
+  date: November 27, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1062
+  merge_commit: 3a2be6a3ea6c85fc9a08b71664db193df1ebd076
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61133
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders)
+  versions: ''
+  type: new-topic
+  date: November 27, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1067
+  merge_commit: fc5343374cf270f85b908e9bd022ce89c00c615f
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-58735
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts)
+  versions: ''
+  type: new-topic
+  date: November 25, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1076
+  merge_commit: 358233a5c250b888c1a95ef1389b13caa4dbfcc6
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62485
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created).
+  versions: ''
+  type: new-topic
+  date: November 25, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1071
+  merge_commit: 50f430f82753c76675cf870cdc967c9dce6b6fa3
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-58383
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api)
+  versions: ''
+  type: new-topic
+  date: November 22, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1075
+  merge_commit: be768cdf7c4518db6a0c1ecb264a32170b51dbf7
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-58471
+    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page)
+  versions: ''
+  type: new-topic
+  date: November 22, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1078
+  merge_commit: 45fc69f6a52436edb96e83e99db2f5b9a7f3db62
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61199
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure)
+  versions: ''
+  type: new-topic
+  date: November 20, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1051
+  merge_commit: '0908c54f14963f0192f13b0bd33d581f7a5c6bdb'
+  contributor: mer21281
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview)
+  versions: ''
+  type: new-topic
+  date: November 19, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1072
+  merge_commit: 7848afbcdbec3ca4c06f53ddaef6de2829cc5006
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61845
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header).
+  versions: ''
+  type: new-topic
+  date: November 19, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1070
+  merge_commit: 46bc94e85c07dca87d4f3ed40a3eb45faa2f8d92
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.55 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: November 15, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1064
+  merge_commit: 0e8a6315fc93e271fc71bdad1629103ed727f3dd
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
+- description: Added the [detailed description of the issue fixed by the ACSD-61553
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied)
+  versions: ''
+  type: new-topic
+  date: November 14, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1021
+  merge_commit: d7b72cb646e47257a26f32bbddcec96e36c02946
+  contributor: mer21281
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61200
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations).
+  versions: ''
+  type: new-topic
+  date: November 14, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1046
+  merge_commit: ded386f6dcd7b99f6337c9f84ec1d3f3433f0d02
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61522
+    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations)
+  versions: ''
+  type: new-topic
+  date: November 13, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1047
+  merge_commit: 4aa599e57df7fe2282efdad7ebceda909aaa7398
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60804
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error)
+  versions: ''
+  type: new-topic
+  date: November 13, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1048
+  merge_commit: 893a0fe6a61a9a53734f34950ccf056a3faa068d
+  contributor: mer68235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60684
+    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60684-graphql-product-sorting-by-multiple-fields-does-not-work-as-expected).
+  versions: ''
+  type: new-topic
+  date: November 13, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1055
+  merge_commit: 4bae8f076b20579ce5e7c4c84d7235ab338f40c3
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61528
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results)
+  versions: ''
+  type: new-topic
+  date: November 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1033
+  merge_commit: dd2f98fad78659b360f243c78424f234389c05b7
+  contributor: mer68235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-48318
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log)
+  versions: ''
+  type: new-topic
+  date: November 7, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1030
+  merge_commit: 58274ac57cb6ce2cdafd4ae975d903463b1d92e2
+  contributor: mer27808
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60673
+    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout)
+  versions: ''
+  type: new-topic
+  date: November 7, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1019
+  merge_commit: a85539eb8e9fa8ff68f1525d63830cde815fdf70
+  contributor: mer27808
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-59366
+    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list).
+  versions: ''
+  type: new-topic
+  date: November 7, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1007
+  merge_commit: 416bf9d0d2ee1b3dacdf3aacf9057c2065b7c861
+  contributor: mer65815
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview)
+  versions: ''
+  type: new-topic
+  date: November 7, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1043
+  merge_commit: 13312dc0622c4f591f4b654ef302a327159ec454
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60584
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-user-on-one-website-is-allowed-to-access-or-change-customer-information-on-other-websites)
+  versions: ''
+  type: new-topic
+  date: November 4, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1020
+  merge_commit: 6b1d7055bf7151ae59e3772b004757cf77d4822a
+  contributor: mer21281
+  membership: false
+  labels:
+  - new-topic
+- description: Added [overview of Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
+  versions: ''
+  type: new-topic
+  date: November 4, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1032
+  merge_commit: 4c195fc18d4d37d632a576909c0ab247ede9874f
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Published [release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes#v1-1-54) for
+    the 1.1.54 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: November 1, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1026
+  merge_commit: 70aebb92496caf5d38b53c92f848a13465bac87b
+  contributor: muntianu
+  membership: false
+  labels:
+  - major-update
+- description: Added the [detailed description of the issue fixed by the ACSD-60234
+    patch in the QPT 1.1.51 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied).
+  versions: ''
+  type: new-topic
+  date: November 1, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/979
+  merge_commit: 14e66029f5da031fbd0ff08322636a997069a4fa
+  contributor: mer65815
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60788
+    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors)
+  versions: ''
+  type: new-topic
+  date: October 30, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1017
+  merge_commit: 2127b6aef8ea332bf39cef91e3948b91d6f3d021
+  contributor: mer21281
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-59786
+    patch in the QPT 1.1.51 release](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.html)
+  versions: ''
+  type: new-topic
+  date: October 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1014
+  merge_commit: 11daad619771517da108f5786eff500e28a0ab6f
+  contributor: mer57102
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-59930
+    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows)
+  versions: ''
+  type: new-topic
+  date: October 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1018
+  merge_commit: d413cdc916570e1d9274d520458afad1c1b44110
+  contributor: mer68235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60631
+    patch in the QPT 1.1.51 release](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60631-graphql-returns-an-error-when-same-product-is-assigned-to-multiple-configurable-products.html)
+  versions: ''
+  type: new-topic
+  date: October 29, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/996
+  merge_commit: 897d752ab879776fbb270d6587b0a119f7b2cf7f
+  contributor: mer57102
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60816
+    patch in the QPT 1.1.51 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp)
+  versions: ''
+  type: new-topic
+  date: October 24, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1002
+  merge_commit: ac52f8535291231ac74881f3f8b21229538263d3
+  contributor: mer21281
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-59952
+    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog)
+  versions: ''
+  type: new-topic
+  date: October 22, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1010
+  merge_commit: 9059dac7a36a597e1e7a636dcc65afa36b8a033d
+  contributor: mer30185
+  membership: false
+  labels:
+  - new-topic
+- description: Added a [detailed description of the issue fixed by the ACSD-59967
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly)
+  versions: ''
+  type: new-topic
+  date: October 22, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/994
+  merge_commit: 149e38d0533d8ccedea5b952bc76d350004d8641
+  contributor: mer21281
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61366
+    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error)
+  versions: ''
+  type: new-topic
+  date: October 21, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1011
+  merge_commit: ce0876bd2985897812d14c409f97e06eebc3b3f8
+  contributor: mer68235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview)
+  versions: ''
+  type: new-topic
+  date: October 18, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1013
+  merge_commit: 49c2f5d996fddc8a2dc5b9d3fde141c30bb444d8
+  contributor: mer54254
+  membership: false
+  labels:
+  - new-topic
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.53 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update
+  date: October 16, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1012
+  merge_commit: 84e5e87b1d0968e1e97524646032b48f130a2347
+  contributor: gorbivsk
+  membership: false
+  labels:
+  - major-update
+- description: Added a [detailed description of the issue fixed in the ACSD-59865
+    patch in the QPT 1.1.52 release](http://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue).
+  versions: ''
+  type: new-topic
+  date: October 14, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1003
+  merge_commit: 3089ebc2d94f0956704cb19e66c63d7ff5bbe889
+  contributor: mer27808
+  membership: false
+  labels:
+  - new-topic
+- description: Added a [detailed description of the issue fixed in the ACSD-60326
+    patch in the QPT 1.1.51 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status).
+  versions: ''
+  type: new-topic
+  date: October 10, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/998
+  merge_commit: d1075203fdd9d13f930d74f1f49478b2d2708be2
+  contributor: mer27808
+  membership: false
+  labels:
+  - new-topic
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct),
+    v3.0.18.
+  versions: ''
+  type: technical
+  date: October 9, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1001
+  merge_commit: f819d1d006f64504ebd604f7367ad73dbf19fdd2
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
+- description: Added [new released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+  versions: 2.4.8, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11
+  type: technical
+  date: October 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/999
+  merge_commit: 295f801219885c6908faea35648878fb7a4d8ec1
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
+  - 2.4.7-p3
+  - 2.4.6-p8
+  - 2.4.5-p10
+  - 2.4.4-p11
+- description: Updated [fixed issues](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#fixed-issues)
+    in the release notes.
+  versions: 2.4.8
+  type: technical
+  date: October 8, 2024
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/997
+  merge_commit: 03d7916aed86aa3869a0abaf32a9c2678add9bd2
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
 - description: Added [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
     for the 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 versions.
   versions: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11
@@ -33,33 +643,6 @@ entries:
   labels:
   - major-update
   - 2.4.8
-- description: Updated [fixed issues](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#fixed-issues)
-    in the release notes.
-  versions: 2.4.8
-  type: technical
-  date: October 8, 2024
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/997
-  merge_commit: 03d7916aed86aa3869a0abaf32a9c2678add9bd2
-  contributor: shevtsov
-  membership: false
-  labels:
-  - technical
-  - 2.4.8
-- description: Added [new released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
-  versions: 2.4.8, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11
-  type: technical
-  date: October 8, 2024
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/999
-  merge_commit: 295f801219885c6908faea35648878fb7a4d8ec1
-  contributor: shevtsov
-  membership: false
-  labels:
-  - technical
-  - 2.4.8
-  - 2.4.7-p3
-  - 2.4.6-p8
-  - 2.4.5-p10
-  - 2.4.4-p11
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.52 Quality Patches Tool (QPT) package release.
   versions: ''
