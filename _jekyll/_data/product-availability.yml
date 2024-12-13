@@ -140,7 +140,7 @@ services:
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html
     support:
       - core: 2.4.7
-        version: 2.9.0 (PHP 8.3)
+        version: 2.10.0 (PHP 8.3)
       - core: 2.4.6
         version: 2.5.0 (PHP 8.2)
       - core: 2.4.5
