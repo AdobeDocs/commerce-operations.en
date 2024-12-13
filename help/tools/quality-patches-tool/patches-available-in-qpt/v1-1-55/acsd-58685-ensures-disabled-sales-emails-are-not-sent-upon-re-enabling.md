@@ -3,6 +3,7 @@ title: 'ACSD-58685: Disabled sales emails are sent upon re-enabling'
 description: Apply the ACSD-58685 patch to fix the Adobe Commerce issue where sales emails initiated while email communication is disabled are sent once email communication is re-enabled.
 feature: Configuration
 role: Admin, Developer
+exl-id: 773c0e0e-92c3-42b1-8fbf-fcb05e0e8311
 ---
 # ACSD-58685: Disabled sales emails are sent upon re-enabling
 

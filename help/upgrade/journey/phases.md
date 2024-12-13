@@ -11,4 +11,4 @@ Upgrades require close attention, planning, and management. To help you understa
 - [Annual planning](annual-planning.md)
 - [Implementation](implementation.md)
 
-![](../../assets/upgrade-guide/upgrade-journey-phases.svg)
+![Upgrade journey phases](../../assets/upgrade-guide/upgrade-journey-phases.svg)
