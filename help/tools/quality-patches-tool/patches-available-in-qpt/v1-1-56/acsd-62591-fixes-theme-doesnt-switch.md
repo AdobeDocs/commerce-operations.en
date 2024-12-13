@@ -1,5 +1,5 @@
 ---
-title: ACSD-62591: Theme doesn't switch when **[!UICONTROL User Agent Rules]** configured
+title: "ACSD-62591: Theme doesn't switch when **[!UICONTROL User Agent Rules]** configured"
 description: Apply the ACSD-62591 patch to fix the Adobe Commerce issue where the theme doesn't switch properly when the **[!UICONTROL User Agent Rules]** are configured.
 feature: Themes
 role: Admin, Developer
