@@ -36,6 +36,7 @@ Large `search_query` tables significantly slow down storefront searches, increas
     DROP TABLE search_query;  
     SET FOREIGN_KEY_CHECKS = 1;  
     ```
+    
 1. Populate the `search_query` table with a large number of records, ex: 4 million records.
 1. Trigger reindexing and flush caches.
 
@@ -43,13 +44,14 @@ Large `search_query` tables significantly slow down storefront searches, increas
     bin/magento indexer:reindex  
     bin/magento c:c  
     bin/magento c:f  
-
     ```
+    
 1. Enable database debug logs:
 
     ```
     bin/magento dev:query-log:enable  
     ```
+    
 1. Search a term in the storefront search bar, e.g., 
 `http://your_magento_instance/default/catalogsearch/result/?q=test.`
 1. Check the db.log for the query execution time for the following SQL:
@@ -63,6 +65,7 @@ Large `search_query` tables significantly slow down storefront searches, increas
     ORDER BY `main_table`.`popularity` DESC  
     LIMIT 100  ) AS `result` WHERE (result.query_text = 'test')  
     ```
+    
 <u>Expected results</u>:
 
 The query execution time is optimized, resulting in a less significant increase in response time when processing large `search_query` tables.
@@ -73,8 +76,8 @@ The query execution time increases significantly due to inefficient handling of 
 
 ```
 TIME: 10.8520 seconds  
-
 ```
+
 ## Apply the patch
 
 To apply individual patches, use the following links depending on your deployment method:
