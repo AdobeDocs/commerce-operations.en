@@ -15,6 +15,29 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.56 {#v1-1-56}
+
+* **ACSD-63244** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a [!DNL JavaScript] error prevents [!DNL Google Maps] from rendering correctly. Fixes the issue where there are many *Uncaught TypeError: this._each is not a function* errors in the console in the [!UICONTROL Admin] panel.
+* **ACSD-63242** (for Adobe Commerce and Magento Open Source >=2.4.6-p8 <2.4.7 || >=2.4.7-p3 <2.4.8) - Fixes the issue with import slowness when adding catalog products with more than 10,000 entries.
+* **ACSD-63062** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where incorrect cart discount calculations occur when multiple overlapping rules are applied.
+* **ACSD-62979** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where using the wrong [!UICONTROL Store ID] in the [!DNL GraphQL] header causes a fatal memory error.
+* **ACSD-62971** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where importing stock sources with non-numeric values in the **quantity** column results in the **quantity** being set to *0*.
+* **ACSD-62872** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue with unique attribute validation where schedule updates are validated incorrectly.
+* **ACSD-62755** (for Adobe Commerce and Magento Open Source >=2.4.4-p11 <2.4.5 || >=2.4.5-p10 <2.4.6 || >=2.4.6-p8 <2.4.7 || >=2.4.7-p3 <2.4.8) - Fixes the issue where [!DNL TinyMCE] 7 requires font size and font to be specifically added within editor initialization settings.
+* **ACSD-62670** (for Adobe Commerce and Magento Open Source >=2.4.4-p11 <2.4.5 || >=2.4.5-p10 <2.4.6 || >=2.4.6-p8 <2.4.7 || >=2.4.7-p3 <2.4.8) - Fixes the issue where the [!UICONTROL Products Ordered] report export to [!DNL CSV] and [!DNL XML] returns an error.
+* **ACSD-62577** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue with slow performance of storefront search queries by optimizing both query and table indexes.
+* **ACSD-62475** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the [!UICONTROL Gift Card] products are merged incorrectly in the cart.
+* **ACSD-62428** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where `is_out_of_stock` is set to an incorrect value in the catalog search index when the [!DNL SKU] is not set as a searchable attribute.
+* **ACSD-62355** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Improves the loading time of the configurable product edit page when the configurable product is based on many attributes with many values.
+* **ACSD-61805** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where products remain out of stock on the storefront after updating the backorder status via the [!DNL REST API].
+* **ACSD-60811** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where updating order status with a custom value or comment is only possible if the current status is either *processing* or *fraud*.
+* **ACSD-62952** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the [!UICONTROL Gift Registry] date is displayed inaccurately on the storefront.
+* **ACSD-55339** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where a product [!DNL SKU] starting with "0" (zero) removes the "0", preventing the quote from being updated.
+**
+* Updated patches: **ACSD-59514**
+* Versions updated: **ACSD-60816**
+* Replaced patches: **ACSD-59967**
+
 ## v1.1.55 {#v1-1-55}
 
 * **ACSD-58383** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where issuing a refund via the [!DNL REST API] with two identical requests that are executed simultaneously, creates duplicate credit memos.
