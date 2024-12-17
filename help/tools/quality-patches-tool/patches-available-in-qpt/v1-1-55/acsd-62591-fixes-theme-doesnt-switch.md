@@ -36,7 +36,7 @@ The theme doesn't switch properly when the **[!UICONTROL User Agent Rules]** are
 
 <u>Expected results</u>:
 
-The pages use different themes for a desktop browser and for a mobile device.
+The desktop browser and the mobile device display pages using their respective themes.
 
 <u>Actual results</u>:
 
