@@ -27,7 +27,7 @@ The theme doesn't switch properly when the **[!UICONTROL User Agent Rules]** are
 
 <u>Steps to reproduce</u>:
 
-1. Open Commerce **[!UICONTROL Admin]** > **[!UICONTROL Content]** > _[!UICONTROL Design]_ > **[!UICONTROL Configuration]**.
+1. Open Commerce **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Design]** > **[!UICONTROL Configuration]**.
 1. Edit a store view theme.
 1. Set `/iPhone|iPod|BlackBerry|Palm|Googlebot-Mobile|Mobile|mobile|mobi|Windows Mobile|Safari Mobile|Android|Opera Mini/i` in **[!UICONTROL User Agent Rules]** and choose a different theme.
 1. Save changes and clear caches.
