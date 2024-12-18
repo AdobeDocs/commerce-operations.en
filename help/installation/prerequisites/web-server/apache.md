@@ -20,7 +20,7 @@ Adobe Commerce supports Apache 2.4.x.
 
 ## Apache rewrites and htaccess
 
-This topic discusses how to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+This topic discusses how to enable Apache 2.4 rewrites and specify a setting for the [distributed configuration file, `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample).
 
 Adobe Commerce uses server rewrites and `.htaccess` to provide directory-level instructions for Apache. The following instructions are included in all other sections in this topic as well.
 
