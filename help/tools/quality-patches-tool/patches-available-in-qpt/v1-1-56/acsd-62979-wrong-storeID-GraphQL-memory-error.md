@@ -17,7 +17,7 @@ The ACSD-62979 patch fixes the issue where using the wrong Store ID in the Graph
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7
+* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.6-p8
 
 >[!NOTE]
 >
