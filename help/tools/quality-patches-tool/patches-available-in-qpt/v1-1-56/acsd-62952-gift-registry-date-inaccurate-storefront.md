@@ -17,7 +17,7 @@ The ACSD-62952 patch fixes the issue where the Gift Registry date is displayed i
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7
+* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
