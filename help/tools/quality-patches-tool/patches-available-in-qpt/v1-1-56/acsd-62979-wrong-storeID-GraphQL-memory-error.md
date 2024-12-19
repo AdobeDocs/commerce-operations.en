@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-62979: Wrong Store ID in the GraphQL header causes a fatal memory error'
-description: Apply the ACSD-62979 patch to fix the Adobe Commerce issue where using the wrong Store ID in the GraphQL header causes a fatal memory error
+title: 'ACSD-62979: Incorrect Store ID in the GraphQL header causes a fatal memory error'
+description: Apply the ACSD-62979 patch to fix the Adobe Commerce issue where using the incorrect Store ID in the GraphQL header causes a fatal memory error
 feature: GraphQL
 role: Admin, Developer
 ---
 
-# ACSD-62979: Wrong Store ID in the GraphQL header causes a fatal memory error
+# ACSD-62979: Incorrect Store ID in the GraphQL header causes a fatal memory error
 
-The ACSD-62979 patch fixes the issue where using the wrong Store ID in the GraphQL header causes a fatal memory error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62979. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62979 patch fixes the issue where using the incorrect Store ID in the GraphQL header causes a fatal memory error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62979. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,11 +25,11 @@ The ACSD-62979 patch fixes the issue where using the wrong Store ID in the Graph
 
 ## Issue
 
-Fixes the issue where using the wrong Store ID in the GraphQL header causes a fatal memory error.
+Fixes the issue where using the incorrect Store ID in the GraphQL header causes a fatal memory error.
 
 <u>Steps to reproduce</u>:
 
-1. Enable "Add Store Code to Urls" (**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]** > **[!UICONTROL Url Options]**)
+1. Navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]** > **[!UICONTROL Url Options]**). Enable **[!UICONTROL Add Store Code to Urls]**. 
 1. Run below GraphQL query with the incorrect value for the store header.
 
 ```graphql
@@ -66,9 +66,13 @@ Fixes the issue where using the wrong Store ID in the GraphQL header causes a fa
 }
 ```
 
-<u>Expected results</u>: Error message: "The store that was requested wasn't found. Verify the store and try again"
+<u>Expected results</u>: 
 
-<u>Actual results</u>: Fatal error like:
+Error message: "The store that was requested wasn't found. Verify the store and try again"
+
+<u>Actual results</u>: 
+
+Fatal error like:
 
 ```Allowed memory size of 792723456 bytes exhausted```
 
