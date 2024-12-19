@@ -683,6 +683,7 @@ feature: Configuration
         - v1.1.56 {#v1-1-56}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
             - [ACSD-62979: Incorrect Store ID in the GraphQL header causes a fatal memory error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
+            - [ACSD-62475: Fixes gift card merging issues in the cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
             - [ACSD-63242: Slow import when adding more than 10,000 catalog products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
             - [ACSD-63062: Incorrect cart discount calculations with multiple overlapping rules](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
             - [ACSD-62428: Stock status errors in catalog search index](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
