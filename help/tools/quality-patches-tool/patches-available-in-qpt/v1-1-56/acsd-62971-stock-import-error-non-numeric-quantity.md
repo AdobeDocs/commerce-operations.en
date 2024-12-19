@@ -30,7 +30,7 @@ Fixes the issue where importing stock sources with non-numeric values in the **[
 <u>Steps to reproduce</u>:
 
 1. Create **[!UICONTROL Simple Product]** with qty=100
-1. Do a **[!UICONTROL "Stock Sources"]** import using the file which has an incorrect quantity ("abc")
+1. Do a **[!UICONTROL Stock Sources]** import using the file which has an incorrect quantity ("abc")
 
     ```table
     source_code    sku    status    quantity
@@ -43,7 +43,7 @@ Fixes the issue where importing stock sources with non-numeric values in the **[
 The import data validation should fail.
 
 <u>Actual results</u>:
-The quantity of simple product has become 0, and the product is updated as [!UICONTROL "out of stock"].
+The quantity of simple product has become 0, and the product is updated as [!UICONTROL Out of Stock].
 
 ## Apply the patch
 
