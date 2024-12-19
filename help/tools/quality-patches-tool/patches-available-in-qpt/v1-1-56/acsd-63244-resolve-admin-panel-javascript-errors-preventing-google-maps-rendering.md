@@ -29,6 +29,7 @@ When loading the Admin panel, the browser console displays multiple JavaScript e
 ```
 Uncaught TypeError: this._each is not a function
 ```
+
 These errors cause issues, such as Google Maps failing to render properly in the Admin panel.
 
 <u>Steps to reproduce</u>:
