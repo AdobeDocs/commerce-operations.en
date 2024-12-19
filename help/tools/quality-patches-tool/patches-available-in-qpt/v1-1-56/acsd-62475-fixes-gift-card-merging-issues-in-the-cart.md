@@ -29,7 +29,7 @@ Gift Card products added to the cart with unique sender or recipient details are
 <u>Steps to reproduce</u>:
 
 1. Create a [!UICONTROL Gift Card] product with the following settings:
-    * **[!UICONTROL Cart Type]**: [!UICONTROL Virtual]
+    * **[!UICONTROL Card Type]**: [!UICONTROL Virtual]
     * **[!UICONTROL Amount]**: 10
 
 1. On the storefront, create a new user and log in.
