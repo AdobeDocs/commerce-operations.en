@@ -3,8 +3,8 @@ title: 'ACSD-62971: Stock sources import with non-numeric quantity values result
 description: Apply the ACSD-62971 patch to fix the Adobe Commerce issue where importing stock sources with non-numeric values in the 'quantity' column results in the quantity being set to 0.
 feature: Data Import/Export, Inventory
 role: Admin, Developer
+exl-id: ece23153-4932-4ac5-b46e-49327a8e84a1
 ---
-
 # ACSD-62971: Stock sources import with non-numeric quantity values results in the quantity being set to 0
 
 The ACSD-62971 patch fixes the issue where importing stock sources with non-numeric values in the 'quantity' column results in the quantity being set to 0. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62971. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
@@ -57,4 +57,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-

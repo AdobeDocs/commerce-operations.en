@@ -3,8 +3,8 @@ title: 'ACSD-62979: Incorrect Store ID in the GraphQL header causes a fatal memo
 description: Apply the ACSD-62979 patch to fix the Adobe Commerce issue where using the incorrect Store ID in the GraphQL header causes a fatal memory error
 feature: GraphQL
 role: Admin, Developer
+exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
 ---
-
 # ACSD-62979: Incorrect Store ID in the GraphQL header causes a fatal memory error
 
 The ACSD-62979 patch fixes the issue where using the incorrect Store ID in the GraphQL header causes a fatal memory error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62979. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
@@ -88,4 +88,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
