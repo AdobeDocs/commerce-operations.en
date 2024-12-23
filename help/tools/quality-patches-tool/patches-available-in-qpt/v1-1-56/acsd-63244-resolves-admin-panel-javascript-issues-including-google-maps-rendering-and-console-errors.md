@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-63244: Resolve admin panel JavaScript errors preventing google maps rendering'
-description: Apply the ACSD-63244 patch to fixes the issue where JavaScript errors `Uncaught TypeError this._each is not a function` appear in the console, preventing Google Maps from rendering correctly in the Admin panel.
+title: 'ACSD-63244: Resolve admin panel JavaScript issues, including [!DNL Google Maps] rendering and console errors'
+description: The ACSD-63244 patch fixes the multiple JavaScript issues in the admin panel, including problems with [!DNL Google Maps] rendering and recurring `Uncaught TypeError: this._each` is not a function errors in the browser console.
 feature: Admin Workspace
 role: Admin, Developer
 ---
-# ACSD-63244: Resolve admin panel JavaScript errors preventing google maps rendering
+# ACSD-63244: ACSD-63244: Resolve admin panel JavaScript issues, including [!DNL Google Maps] rendering and console errors
 
-The ACSD-63244 patch fixes the issue where multiple JavaScript errors, such as `Uncaught TypeError: this._each is not a function`, appear in the Admin panel console. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. The patch ID is ACSD-62428. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63244 patch fixes the multiple JavaScript issues in the admin panel, including problems with [!DNL Google Maps] rendering and recurring `Uncaught TypeError: this._each` is not a function errors in the browser console. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. The patch ID is ACSD-63244. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -16,7 +16,7 @@ Adobe Commerce (all deployment methods) 2.4.4, 2.4.4-p9, 2.4.6-p7, 2.4.7
 
 **Compatible with Adobe Commerce versions:**
 
-Adobe Commerce (all deployment methods) 2.4.4 - 2.4.8
+Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -24,13 +24,8 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.8
 
 ## Issue
 
-When loading the Admin panel, the browser console displays multiple JavaScript errors:
-
-```
-Uncaught TypeError: this._each is not a function
-```
-
-These errors cause issues, such as Google Maps failing to render properly in the Admin panel.
+* The `Uncaught TypeError: this._each` is not a function error appears in the browser console, disrupting the Admin UI functionality.
+* JavaScript error prevents [!DNL Google Maps] to render correctly.
 
 <u>Steps to reproduce</u>:
 
