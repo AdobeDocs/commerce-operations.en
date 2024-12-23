@@ -15,7 +15,7 @@ The ACSD-51739 patch fixes the issue where an error is returned when the `struct
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p1
+* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.7
 
 >[!NOTE]
 >
