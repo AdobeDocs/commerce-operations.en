@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-63244: Resolve admin panel JavaScript issues, including [!DNL Google Maps] rendering and console errors'
-description: The ACSD-63244 patch fixes the multiple JavaScript issues in the admin panel, including problems with [!DNL Google Maps] rendering and recurring `Uncaught TypeError: this._each` is not a function errors in the browser console.
+description: The ACSD-63244 patch fixes the multiple JavaScript issues in the admin panel, including problems with [!DNL Google Maps] rendering and recurring `Uncaught TypeError this._each` is not a function errors in the browser console.
 feature: Admin Workspace
 role: Admin, Developer
 ---
