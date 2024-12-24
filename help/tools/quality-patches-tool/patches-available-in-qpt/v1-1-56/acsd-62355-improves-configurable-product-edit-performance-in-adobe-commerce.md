@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-62355: Improves configurable product edit performance in Adobe Commerce
 
-The ACSD-62355 patch fixes the issue where the configurable product edit page experiences slow loading times and high memory consumption when the product is based on a large number of attributes with many values. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62355. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62355 patch fixes the issue of slow loading times and high memory consumption on the configurable product edit page when the product has many attributes with numerous values. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62355. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -28,7 +28,7 @@ The configurable product edit page takes a long time to load when the configurab
 
 <u>Steps to reproduce</u>:
 
-1. Create 9 new attributes in the default attribute set (global scope and be filterable).
+1. Create 9 new attributes in the default attribute set, each is [!UICONTROL Filterable] and has [!UICONTROL Scope]: [!UICONTROL Global].
     * Attribute 1: 50 options
     * Attribute 2: 20 options
     * Attribute 3: 10 options
