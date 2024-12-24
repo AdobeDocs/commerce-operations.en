@@ -28,7 +28,7 @@ Adobe Commerce (all deployment methods) 2.4.4-p11, 2.4.5-p10, 2.4.6-p8, 2.4.7-p3
 
 <u>Steps to reproduce</u>:
 
-Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Content]**, and click *[!UICONTROL Show Editor]*.
+Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Content]**, and select *[!UICONTROL Show Editor]*.
     
 <u>Expected results</u>:
 
