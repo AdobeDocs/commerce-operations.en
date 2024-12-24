@@ -22,7 +22,7 @@ QPT v1.1.57 includes the following patches:
 1. **ACSD-62635**: Fixes the issue where multi-store related products do not display properly in the [!DNL GraphQL] product query.
 1. **ACSD-62671**: Fixes the issue where the [!DNL GraphQL] request does not return up-to-date address information on the first attempt.
 1. **ACSD-62689**: Fixes the issue where the customer is unable to add Categories in [!UICONTROL Related Product Rules] and [!UICONTROL Widgets] after depth 4.
-1. **ACSD-62708**: Fixes the issue where [!DNL TinyMCE] 7 editor font size in the admin shows [!UICONTROL px] and not [!UICONTROL pt] after applying the fix from [!UICONTROL ACP2E-3430]. Now, you can also set the font size in [!UICONTROL px] instead of [!UICONTROL pt]. 
+1. **ACSD-62708**: Fixes the issue where [!DNL TinyMCE] 7 editor font size in the admin shows [!UICONTROL px] and not [!UICONTROL pt] after applying the fix from [!UICONTROL ACP2E-3430]. Now, you can also set the font size in [!UICONTROL px] instead of [!UICONTROL pt].
 1. **ACSD-62758**: Fixes the issue where product videos do not render correctly on the [!UICONTROL Configurable Product] details page if the URL contains selected options.
 1. **ACSD-62951**: Fixes the issue where the [!UICONTROL Credit Memo] email is sent without including items and totals.
 1.  **ACSD-62965**: Fixes the issue where a *LocalizedException* message is not included in the order placement [!DNL GraphQL response].
