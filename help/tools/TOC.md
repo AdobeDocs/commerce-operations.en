@@ -692,6 +692,7 @@ feature: Configuration
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
         - v1.1.57 {#v1-1-57}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+            - [ACSD-57570: Fix for restricted admin user access to shared catalogs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
