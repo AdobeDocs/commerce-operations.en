@@ -29,7 +29,7 @@ Certain database update operations result in 'Base table or view not found' erro
 <u>Steps to reproduce</u>:
 
 1. Set indexer mode to **[!UICONTROL Update on Schedule]**.
-1. Insert records into cl tables using the following SQL commands:
+1. Insert records into `cl` tables using the following SQL commands:
 
 ```
 INSERT INTO catalogrule_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
