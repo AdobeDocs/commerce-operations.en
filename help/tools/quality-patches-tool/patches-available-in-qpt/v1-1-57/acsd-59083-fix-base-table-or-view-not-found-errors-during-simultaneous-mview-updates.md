@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.2 - 2.4.7-p3
 
 ## Issue
 
-Certain database update operations result in 'Base table or view not found' errors when mview updates run simultaneously.
+Certain database update operations result in 'Base table or view not found' errors when `mview` updates run simultaneously.
 
 <u>Steps to reproduce</u>:
 
