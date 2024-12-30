@@ -31,8 +31,7 @@ Admins are redirected to a page with a broken layout after successfully placing 
 1. Navigate to the **[!UICONTROL Customers]** section in the Admin panel.
 1. Select any customer and click **[!UICONTROL Edit]**.
 1. On the customer detail page, click **[!UICONTROL Create Order]** from the top menu.
-1. Select the **[!UICONTROL FR French]** store.
-1. Add any available product to the order.
+1. Select the [!UICONTROL FR French] store and add any available product to the order.
 1. Fill in the required details at checkout and click **[!UICONTROL Get Shipping Methods]**.
 1. Click **[Submit Order]** to place the order.
 
