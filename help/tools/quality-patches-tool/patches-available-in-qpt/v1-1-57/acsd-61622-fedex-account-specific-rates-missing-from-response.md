@@ -1,22 +1,22 @@
 ---
-title: 'ACSD-61622: FedEx's account specific rates are missing in API response'
-description: Apply the ACSD-61622 patch to fix the Adobe Commerce issue where the total discount is incorrectly calculated when multiple cart rules with fixed discounts are applied to the quote.
-feature: Price Rules
+title: 'ACSD-61622: FedEx account specific rates are missing in REST API response'
+description: Apply the ACSD-61622 patch to fix the Adobe Commerce issue where FedEx account specific rates are missing from the REST API response.
+feature: Shipping/Delivery
 role: Admin, Developer
 ---
-# ACSD-61622: Incorrect total discount calculation with multiple fixed discount cart rules applied to quote
+# ACSD-61622: FedEx account specific rates are missing in REST API response
 
-The ACSD-61622 patch solves/fixes the issue where the total discount is incorrectly calculated when multiple cart rules with fixed discounts are applied to the quote. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 is installed. The patch ID is ACSD-61622. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61622 patch adds `ACCOUNT` to the rate request type on the request sent from Adobe Commerce, by which FedEx returns a response similar to a SOAP response. This resolves the issue where FedEx account specific rates were missing from the REST API response. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61622. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 2.4.4-p6
+* Adobe Commerce (all deployment methods) 2.4.6-p5
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.4-p11
+* Adobe Commerce (all deployment methods) 2.4.6-p1 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ The ACSD-61622 patch solves/fixes the issue where the total discount is incorrec
 
 ## Issue
 
-The total discount is incorrectly calculated when multiple cart rules with *[!UICONTROL Fixed amount discount for the whole cart]* are applied to a shopping cart.
+FedEx account specific rates are missing from the REST API response to a request sent from Adobe Commerce.
 
 <u>Steps to reproduce</u>:
 
