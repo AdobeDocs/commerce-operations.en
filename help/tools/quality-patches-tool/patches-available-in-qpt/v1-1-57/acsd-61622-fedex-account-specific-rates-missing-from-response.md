@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-61622: FedEx account specific rates are missing in REST API response'
-description: Apply the ACSD-61622 patch to fix the Adobe Commerce issue where FedEx account specific rates are missing from the REST API response.
+title: 'ACSD-61622: [!DNL FedEx] account specific rates are missing in REST API response'
+description: Apply the ACSD-61622 patch to fix the Adobe Commerce issue where [!DNL FedEx] account specific rates are missing from the REST API response.
 feature: Shipping/Delivery
 role: Admin, Developer
 ---
-# ACSD-61622: FedEx account specific rates are missing in REST API response
+# ACSD-61622: [!DNL FedEx] account specific rates are missing in REST API response
 
-The ACSD-61622 patch adds `ACCOUNT` to the rate request type on the request sent from Adobe Commerce, by which FedEx returns a response similar to a SOAP response. This resolves the issue where FedEx account specific rates were missing from the REST API response. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61622. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61622 patch adds `ACCOUNT` to the rate request type on the request sent from Adobe Commerce, by which [!DNL FedEx] returns a response similar to a SOAP response. This resolves the issue where [!DNL FedEx]'s account specific rates were missing from the REST API response. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61622. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,28 +24,31 @@ The ACSD-61622 patch adds `ACCOUNT` to the rate request type on the request sent
 
 ## Issue
 
-FedEx account specific rates are missing from the REST API response to a request sent from Adobe Commerce.
+[!DNL FedEx] account specific rates are missing from the REST API response to a request sent from Adobe Commerce.
 
 <u>Steps to reproduce</u>:
 
-1. Create four products with a price of $1000.
-1. Create three cart price rules without any conditions that give a $100 discount for the whole cart.
-1. Create another cart price rule that gives a $100 discount for the whole cart, with a condition that prevents the rule from being applied.
-1. Disable the rule.
-1. Add three products to the shopping cart and observe the discount in the cart.
-1. Add additional products to the cart and observe the discount in the cart.
-1. Enable the disabled cart price rule.
-1. Update the shopping cart page and observe the discount in the cart.
+1. Install a clean AC instance.
+1. Create a simple product with a weight of 5 lbs.
+1. Configure [!DNL FedEx] for REST API.
+1. Enable [!DNL FedEx] shipping method and clear the cache.
+1. Start observing the log file: `var/log/shipping.log`
+1. Add a simple product to the cart and go to the shipping page on checkout. Example of customer data:
+    
+    * Postcode: 58601
+    * Names: John Doe
+    * Address: 196 Eulalia Burg
+    * Country: US
+    * State: North Dakota
+    * Phone number: 187-563-3627
 
 <u>Expected results</u>:
 
-1. Adding additional products to the cart does not change the amount of discount.
-1. Enabling the cart price rule with a condition that doesn't apply does not change the amount of discount.
+`PAYOR_ACCOUNT_PACKAGE` rates are available in the REST API response, similar to SOAP API responses.
 
 <u>Actual results</u>:
 
-1. Adding additional products to the cart changes the amount of discount.
-1. Enabling the cart price rule with a condition that doesn't apply changes the amount of discount.
+Only `PAYOR_LIST_PACKAGE` rates are available in the response, which means there are no negotiated (account) rates from [!DNL FedEx].
 
 ## Apply the patch
 
