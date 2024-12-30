@@ -31,20 +31,20 @@ Certain database update operations result in 'Base table or view not found' erro
 1. Set indexer mode to **[!UICONTROL Update on Schedule]**.
 1. Insert records into `cl` tables using the following SQL commands:
 
-```
-INSERT INTO catalogrule_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO catalogrule_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO catalogsearch_fulltext_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO catalog_category_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO catalog_product_attribute_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO catalog_product_category_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO catalog_product_price_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO customer_dummy_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO design_config_dummy_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO salesrule_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO targetrule_product_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
-INSERT INTO targetrule_rule_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
-```
+    ```
+    INSERT INTO catalogrule_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO catalogrule_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO catalogsearch_fulltext_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO catalog_category_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO catalog_product_attribute_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO catalog_product_category_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO catalog_product_price_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO customer_dummy_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO design_config_dummy_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO salesrule_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO targetrule_product_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    INSERT INTO targetrule_rule_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
+    ```
 
 1. Install the `setup/performance-toolkit/profiles/ce/small.xml` profile.
 1. Add a breakpoint in the file `magento2ee/lib/internal/Magento/Framework/ForeignKey/Config/DbReader.php` at line 72.
