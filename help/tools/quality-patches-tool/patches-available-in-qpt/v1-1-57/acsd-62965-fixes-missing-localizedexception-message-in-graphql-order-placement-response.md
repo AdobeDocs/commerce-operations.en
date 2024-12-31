@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-62965: Fixes missing `LocalizedException` message in GraphQL order placement response
 
-The ACSD-62965 patch fixes the issue where the `LocalizedException` message was not included in the GraphQL response during order placement. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. The patch ID is ACSD-62965. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62965 patch fixes the issue where the `LocalizedException` message was not included in the GraphQL response during order placement. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. The patch ID is ACSD-62965. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -43,7 +43,7 @@ The GraphQL response for order placement does not include a `LocalizedException`
     throw new LocalizedException(new Phrase("Test LocalizedException"));
     ```
 
-1. Execute the place order GraphQL mutation:
+1. Execute the place order GraphQL request:
 
     ```
     mutation {
@@ -75,7 +75,7 @@ If a `LocalizedException` occurs, the exception message should be included in th
 
 <u>Actual results</u>:
 
-If a `LocalizedException` occurs, the exception message is not get included in the order place GraphQL response.
+If a `LocalizedException` occurs, the exception message is not included in the order placement GraphQL response.
 
 ## Apply the patch
 
