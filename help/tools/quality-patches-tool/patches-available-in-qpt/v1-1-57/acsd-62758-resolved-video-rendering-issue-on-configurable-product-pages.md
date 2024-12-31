@@ -11,9 +11,11 @@ The ACSD-62758 patch fixes the issue where product videos on configurable produc
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
+
 * Adobe Commerce (all deployment methods) 2.4.6
 
 **Compatible with Adobe Commerce versions:**
+
 * Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
@@ -26,15 +28,15 @@ Product videos do not render correctly on configurable product detail pages when
 
 <u>Steps to reproduce</u>:
 
-1. Navigate to **[!UICONTROL Store]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]**.
+1. Navigate to [!UICONTROL Stores] > [!UICONTROL Attributes] > [!UICONTROL Product].
 1. Select the **[!UICONTROL Color]** attribute and edit it.
 1. Update the following settings:
-    1. Set **[!UICONTROL Catalog Input Type]** for **[!UICONTROL Store Owner]** to **[!UICONTROL Visual Swatch]**
+    1. Set [!UICONTROL Catalog Input Type for Store Owner] to [!UICONTROL Visual Swatch].
     1. Set **[!UICONTROL Update Product Preview Image]** to **[!UICONTROL Yes]**.
 1. Create a few options for this attribute.
 1. Create a new category and add a new configurable product to it, using the **[!UICONTROL Color]** attribute.
 1. Add a single random image to the parent product.
-1. Edit the configurable child products and add a video to their media gallery:
+1. Edit the newly created configurable child products and add a video to their media gallery:
     1. Click **[!UICONTROL Add Video]** and use the test video URL: https://vimeo.com/12860646.
 1. Save the product, clear the cache, and re-index the store.
 1. Open the newly created product in the storefront, select one of the swatch options, and confirm that the video loads correctly with the player button displayed.
