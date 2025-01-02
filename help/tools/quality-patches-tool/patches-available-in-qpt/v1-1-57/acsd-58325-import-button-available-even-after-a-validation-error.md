@@ -1,5 +1,5 @@
 ---
-title: ACSD-58325: Import button available even after a validation error
+title: "ACSD-58325: Import button available even after a validation error"
 description: Apply the ACSD-58325 patch to fix the Adobe Commerce issue where the Import button is available even after a validation error.
 feature: Data Import/Export
 role: Admin, Developer
