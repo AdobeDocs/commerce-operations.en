@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-62708: Fix TinyMCE 7 editor font size issue in admin panel from PT to PX'
-description: Apply the ACSD-62708 patch to fix the Adobe Commerce issue where TinyMCE 7 editor font size in the admin shows PT and not PX after applying the fix from ACP2E-3430. Now, you can also set the font size in PX instead of PT.
+description: Apply the ACSD-62708 patch to fix the Adobe Commerce issue where TinyMCE 7 editor font size in the admin shows PT and not PX. Now, you can also set the font size in PX instead of PT.
 feature: Admin Workspace
 role: Admin, Developer
 ---
 
 # ACSD-62708: Fix TinyMCE 7 editor font size issue in admin panel from PT to PX
 
-The ACSD-62708 patch resolves the issue where the TinyMCE 7 editor font size in the admin panel displays in PT instead of PX after applying the ACP2E-3430 fix. This patch allows you to set the font size in PX. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-62708. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62708 patch resolves the issue where the TinyMCE 7 editor font size in the admin panel displays in PT instead of PX. This patch allows you to set the font size in PX. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-62708. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
