@@ -6,7 +6,7 @@ exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
 ---
 # ACSD-56760: Admin user is restricted to a specific website and is unable to sort or add new products
 
-The ACSD-56760 patch fixes the issue where the the Admin user that is restricted to a specific website and is unable to sort or add new products inside a category in case the web store has it's own root category. This patch is available when the [!DNL Quality Patches Tool (QPT)] 1.1.47 is installed. The patch ID is ACSD-56760. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-56760 patch fixes the issue where the the Admin user that is restricted to a specific website and is unable to sort or add new products inside a category in case the web store has it's own root category. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47 is installed. The patch ID is ACSD-56760. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8-beta1.
 
 ## Affected products and versions
 
@@ -63,8 +63,4 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
-* [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
-
-
-For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.

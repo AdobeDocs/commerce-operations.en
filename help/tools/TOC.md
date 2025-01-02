@@ -676,11 +676,22 @@ feature: Configuration
             - [ACSD-58471: Dynamic content fails to load on product detail page, when catalog price rules scheduled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
             - [ACSD-58383: Duplicate credit memos from simultaneous refund requests via [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
             - [ACSD-58735: Restricted admin can't view abandoned shopping carts on customer account for associated website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
+            - [ACSD-62793: Datetime attributes in exports missing time component. Additionally if [!UICONTROL Fields Enclosure] enabled, attribute values enclosed within double-quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
             - [ACSD-60344: Duplicate order confirmation emails on using [!UICONTROL Purchase Order] with auto-approval](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
+            - [ACSD-62332: Product listing GraphQL query limited to 10,000 products and [!DNL Live Search] sets current page to 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
+            - [ACSD-62591: Theme doesn't switch properly when [!UICONTROL User Agent Rules] configured](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
         - v1.1.56 {#v1-1-56}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+            - [ACSD-62971: Stock sources import with non-numeric quantity values results in the quantity being set to 0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity.md)
+            - [ACSD-62979: Incorrect Store ID in the GraphQL header causes a fatal memory error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
+            - [ACSD-62475: Fixes gift card merging issues in the cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
+            - [ACSD-63242: Slow import when adding more than 10,000 catalog products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
+            - [ACSD-63062: Incorrect cart discount calculations with multiple overlapping rules](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
+            - [ACSD-62428: Stock status errors in catalog search index](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+            - [ACSD-62577: Storefront search performance optimization](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-
+        - v1.1.57 {#v1-1-57}
+            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
