@@ -693,6 +693,7 @@ feature: Configuration
         - v1.1.57 {#v1-1-57}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
             - [ACSD-62708: Fix TinyMCE 7 editor font size issue in admin panel from PT to PX](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
+            - [ACSD-63326: Fix admin redirection issue after placing an order from the backend](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
