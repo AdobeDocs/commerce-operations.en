@@ -56,7 +56,7 @@ Learn about new documentation and significant updates to existing documentation.
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-wrong-storeID-GraphQL-memory-error">detailed description of the issue fixed by the ACSD-62979 patch in the QPT 1.1.56 release</a></p>
+      <td><p>Added the <a href="hthttps://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">detailed description of the issue fixed by the ACSD-62979 patch in the QPT 1.1.56 release</a></p>
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9b27e2a82954a3874e9847eacc71f0515c99625">c9b27e</a> (commit)</td>
@@ -120,7 +120,7 @@ Learn about new documentation and significant updates to existing documentation.
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-exclude-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes">detailed description of the issue fixed by the ACSD-62793 patch in the QPT 1.1.55 release</a></p>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes">detailed description of the issue fixed by the ACSD-62793 patch in the QPT 1.1.55 release</a></p>
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f541ea47bba9e5af5ed0d4736eb84b72b3691e28">f541ea</a> (commit)</td>
