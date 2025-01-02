@@ -15,6 +15,28 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.57 {#v1-1-57}
+
+* **ACSD-57570** (for Adobe Commerce >=2.4.4 <2.4.4-p10) - Fixes the issue where a restricted admin user with access to a particular store cannot always see all shared catalogs to which the products are assigned or can see customers that cannot save, leading to inconsistencies in the system.
+* **ACSD-58325** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where the Import button is available even after a validation error.
+* **ACSD-59083** (for Adobe Commerce >=2.4.4 <2.5.0) - Fixes the issue where some database update operations result in 'Base table or view not found' error if the mview update is running at the same time.
+* **ACSD-61622** (for Adobe Commerce and Magento Open Source >=2.4.6-p1 <2.4.7) - Fixes the issue where FedEx's account specific rates are missing in the response.
+* **ACSD-61895** (for Adobe Commerce >=2.4.4 <2.5.0) - Fixes the issue where the categories GraphQL query returns categories with allow permission even if the root category doesn't have allow permission.
+* **ACSD-62212** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where the "Forgot Password" email content is not translated to the store view's language.
+* **ACSD-62481** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where the customer's shopping cart gets empty even if Persistence is enabled.
+* **ACSD-62629** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.5.0) - Fixes the issue where a product list used in Widgets does not respect category condition.
+* **ACSD-62635** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.5.0) - Fixes the issue where multi-store related products do not display properly in the GraphQL product query.
+* **ACSD-62671** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.5.0) - Fixes the issue where the GraphQL request does not return up-to-date address information on the first attempt.
+* **ACSD-62689** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.5.0) - Fixes the issue where the customer is unable to add Categories in Related Product Rules and Widgets after depth 4.
+* **ACSD-62708** (for Adobe Commerce and Magento Open Source >=2.4.4-p11 <2.4.5 || >=2.4.5-p10 <2.4.6-p2 || >=2.4.6-p8 <2.4.7-p1) - Fixes the issue where TinyMCE 7 editor font size in the admin shows PT and not PX. Now, you can also set the font size in PX instead of PT.
+* **ACSD-62758** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where product videos do not render correctly on the Configurable Product's details page if the URL contains selected options.
+* **ACSD-62951** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where the Credit Memo email is sent without including items and totals.
+* **ACSD-62965** (for Adobe Commerce >=2.4.7 <2.5.0) - Fixes the issue where a LocalizedException message is not included in the order placement GraphQL response.
+* **ACSD-63286** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where products assigned to a shared catalog via API do not appear on the storefront until a manual reindex is executed.
+* **ACSD-63326** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where the admin is redirected to a broken page after placing an order from the backend.
+* Versions updated: **ACSD-51739**
+* Replaced patches: **MDVA-43451**, **ACSD-62755**
+
 ## v1.1.56 {#v1-1-56}
 
 * **ACSD-63244** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a [!DNL JavaScript] error prevents [!DNL Google Maps] from rendering correctly. Fixes the issue where there are many *Uncaught TypeError: this._each is not a function* errors in the console in the [!UICONTROL Admin] panel.
