@@ -56,7 +56,7 @@ Learn about new documentation and significant updates to existing documentation.
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="hthttps://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">detailed description of the issue fixed by the ACSD-62979 patch in the QPT 1.1.56 release</a></p>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">detailed description of the issue fixed by the ACSD-62979 patch in the QPT 1.1.56 release</a></p>
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9b27e2a82954a3874e9847eacc71f0515c99625">c9b27e</a> (commit)</td>
