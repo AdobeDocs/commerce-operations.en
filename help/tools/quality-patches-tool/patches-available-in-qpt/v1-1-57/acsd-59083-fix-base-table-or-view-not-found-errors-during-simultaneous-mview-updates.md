@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-59083: *Base table or view not found* errors during simultaneous `mview` updates
 
-The ACSD-59083 patch fixes the issue where certain database update operations fail with the error 'Base table or view not found' when `mview` updates run simultaneously. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-59083. Please note that the issue was fixed in Adobe Commerce 2.4.7.
+The ACSD-59083 patch fixes the issue where certain database update operations fail with the error 'Base table or view not found' when `mview` updates run simultaneously. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-59083. Please note that the issue was fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
