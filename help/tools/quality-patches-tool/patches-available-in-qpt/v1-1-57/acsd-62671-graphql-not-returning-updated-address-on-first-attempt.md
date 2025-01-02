@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-62671: [!DNL GraphQL] doesn't return updated address on first attempt'
+title: 'ACSD-62671: [!DNL GraphQL] does not return updated address on first attempt'
 description: Apply the ACSD-62671 patch to fix the Adobe Commerce issue where a [!DNL GraphQL] request does not return up-to-date address information on the first attempt.
 feature: GraphQL, Application Server
 role: Admin, Developer
