@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-62872: Schedule updates validated incorrectly'
-description: Apply the ACSD-62872 patch to fix the Adobe Commerce issue with unique attribute validation where schedule updates are validated incorrectly
+description: Apply the ACSD-62872 patch to fix the Adobe Commerce issue with unique attribute validation where scheduled updates are validated incorrectly.
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
 ---
 
 # ACSD-62872: Schedule updates validated incorrectly
 
-The ACSD-62872 patch fixes the issue where the Adobe Commerce issue with unique attribute validation where schedule updates are validated incorrectly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62872. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62872 patch fixes the issue with unique attribute validation where scheduled updates are validated incorrectly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62872. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACSD-62872 patch fixes the issue where the Adobe Commerce issue with unique 
 
 ## Issue
 
-Fixes the issue with unique attribute validation where schedule updates are validated incorrectly.
+Scheduled update to a custom attribute is validated incorrectly.
 
 <u>Steps to reproduce</u>:
 
@@ -34,14 +34,14 @@ Fixes the issue with unique attribute validation where schedule updates are vali
 1. Create a new category.
 1. In the same category, go to the **[!UICONTROL Scheduled Updates]** section.
 1. Set up a new update for this category with any future time
-1. Before the scheduled update is started, try editing created schedule update for the category.
+1. Before starting the scheduled update, try editing the created schedule update for the category.
 
 <u>Expected results</u>:
 Should be able to update the scheduled update
 
 <u>Actual results</u>:
 
-`Error: The value of the "Custom Attribute" attribute isn't unique. Set a unique value and try again.`
+An error is thrown: *The value of the "Custom Attribute" attribute isn't unique. Set a unique value and try again.*
 
 ## Apply the patch
 
