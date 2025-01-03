@@ -35,7 +35,7 @@ Fixes the issue where the Import button is available even after a validation err
 
 <u>Expected results</u>:
 
-[!UICONTROL Last outcome] should be [!UICONTROL Failed]
+[!UICONTROL Last outcome] should be [!UICONTROL Failed].
 
 <u>Actual results</u>:
 
