@@ -3,8 +3,8 @@ title: 'ACSD-62872: Schedule updates validated incorrectly'
 description: Apply the ACSD-62872 patch to fix the Adobe Commerce issue with unique attribute validation where scheduled updates are validated incorrectly.
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
 ---
-
 # ACSD-62872: Schedule updates validated incorrectly
 
 The ACSD-62872 patch fixes the issue with unique attribute validation where scheduled updates are validated incorrectly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62872. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
