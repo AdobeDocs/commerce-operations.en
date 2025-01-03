@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-61622: [!DNL FedEx] account specific rates are missing in REST API response
 
-The ACSD-61622 patch adds `ACCOUNT` to the rate request type on the request sent from Adobe Commerce, following which [!DNL FedEx] returns a response similar to a SOAP response. This resolves the issue where [!DNL FedEx's] account specific rates were missing from the REST API response. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61622. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61622 patch resolves the issue where [!DNL FedEx's] account specific rates are missing from the REST API response. It adds the `ACCOUNT` rate request type to the REST API request sent from Adobe Commerce to [!DNL FedEx], which returns a response similar to SOAP API response. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61622. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
