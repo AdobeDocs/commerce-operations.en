@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-62952: Gift Registry date displayed inaccurately on the storefront'
-description: Apply the ACSD-62952 patch to fix the Adobe Commerce issue where the Gift Registry date is displayed inaccurately on the storefront
+description: Apply the ACSD-62952 patch to fix the Adobe Commerce issue where the Gift Registry date is displayed inaccurately on the storefront.
 feature: Gift, Storefront
 role: Admin, Developer
 ---
@@ -29,17 +29,19 @@ The event date displayed on the storefront for a Shared Gift Registry is incorre
 
 <u>Steps to reproduce</u>:
 
-1. Log in to the frontend as the customer
-1. In the [!UICONTROL My Account] dashboard, click **[!UICONTROL Gift Registry]**
-1. If there is no existing registry, create one and specify any date
-1. Add any items to the cart
-1. From the cart page, click **[!UICONTROL Add all items to Gift Registry]**
-1. Share the Gift Registry
+1. Log in to the frontend as the customer.
+1. In the [!UICONTROL My Account] dashboard, click **[!UICONTROL Gift Registry]**.
+1. If there is no existing registry, create one and specify any date.
+1. Add any item to the cart.
+1. From the cart page, click **[!UICONTROL Add all items to Gift Registry]**.
+1. Share the Gift Registry.
 
 <u>Expected results</u>:
+
 The Gift Registry displays the correct event date.
 
 <u>Actual results</u>:
+
 The Gift Registry opened from the invitation email displays the event date as one day earlier.
 
 ## Apply the patch
