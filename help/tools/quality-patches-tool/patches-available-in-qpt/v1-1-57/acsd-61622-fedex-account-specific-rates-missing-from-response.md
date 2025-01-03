@@ -28,7 +28,7 @@ The ACSD-61622 patch resolves the issue where [!DNL FedEx's] account specific ra
 
 <u>Steps to reproduce</u>:
 
-1. Install a clean AC instance.
+1. Install a clean Adobe Commerce instance.
 1. Create a simple product with a weight of 5 lbs.
 1. Configure [!DNL FedEx] for REST API.
 1. Enable [!DNL FedEx] shipping method and clear the cache.
