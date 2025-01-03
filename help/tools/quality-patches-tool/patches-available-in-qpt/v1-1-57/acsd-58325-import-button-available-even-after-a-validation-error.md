@@ -12,7 +12,7 @@ The ACSD-58325 patch fixes the issue where the **[!UICONTROL Import]** button is
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
-* Adobe Commerce all deployment methods 2.4.6-p3
+* Adobe Commerce (all deployment methods) 2.4.6-p3
 
 **Compatible with Adobe Commerce versions:**
 * Adobe Commerce on-premises 2.4.6 - 2.4.6-p8
@@ -28,15 +28,17 @@ Fixes the issue where the Import button is available even after a validation err
 
 <u>Steps to reproduce</u>:
 
-1. Create the CSV file for the product import with incorrect image name in the file.
+1. Create the CSV file for the product import with an incorrect image name in the file.
 1. Create a scheduled product import using the created CSV file.
 1. Wait until the scheduled import is performed.
-1. Check [!UICONTROL Last outcome] in **[!UICONTROL Scheduled Imports/Exports]** grid
+1. Check [!UICONTROL Last outcome] in **[!UICONTROL Scheduled Imports/Exports]** grid.
 
 <u>Expected results</u>:
+
 [!UICONTROL Last outcome] should be [!UICONTROL Failed]
 
 <u>Actual results</u>:
+
 [!UICONTROL Last outcome] is [!UICONTROL Successful].
 
 ## Apply the patch
