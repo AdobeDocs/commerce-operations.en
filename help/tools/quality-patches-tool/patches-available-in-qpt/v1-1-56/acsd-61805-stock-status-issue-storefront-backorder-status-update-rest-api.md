@@ -50,7 +50,7 @@ Fixes the issue where products remain out of stock on the storefront after updat
     ```json
     {
       "product":{
-        "sku": "HBE3502CAS",
+        "sku": "24-MB01",
         "extension_attributes": {
             "stock_item": {
                 "stock_id": "1",
