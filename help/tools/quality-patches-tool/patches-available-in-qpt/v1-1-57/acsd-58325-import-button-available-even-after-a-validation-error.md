@@ -24,7 +24,7 @@ The ACSD-58325 patch fixes the issue where the **[!UICONTROL Import]** button is
 
 ## Issue
 
-Fixes the issue where the Import button is available even after a validation error.
+The [!UICONTROL Import] button is available even after a validation error.
 
 <u>Steps to reproduce</u>:
 
