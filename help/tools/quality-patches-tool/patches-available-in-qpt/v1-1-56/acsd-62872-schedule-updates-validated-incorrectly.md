@@ -29,16 +29,16 @@ Scheduled update to a custom attribute is validated incorrectly.
 
 <u>Steps to reproduce</u>:
 
-1. Create a custom attribute for categories
-1. Navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**
+1. Create a custom attribute for categories.
+1. Navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 1. Create a new category.
 1. In the same category, go to the **[!UICONTROL Scheduled Updates]** section.
-1. Set up a new update for this category with any future time
+1. Set up a new update for this category with any future time.
 1. Before starting the scheduled update, try editing the created schedule update for the category.
 
 <u>Expected results</u>:
 
-Should be able to update the scheduled update
+Should be able to update the scheduled update.
 
 <u>Actual results</u>:
 
