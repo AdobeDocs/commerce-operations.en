@@ -3,8 +3,8 @@ title: 'ACSD-62952: Gift Registry date displayed inaccurately on the storefront'
 description: Apply the ACSD-62952 patch to fix the Adobe Commerce issue where the Gift Registry date is displayed inaccurately on the storefront.
 feature: Gift, Storefront
 role: Admin, Developer
+exl-id: c11e95ab-775d-4aa7-828b-29ec52685d47
 ---
-
 # ACSD-62952: Gift Registry date displayed inaccurately on the storefront
 
 The ACSD-62952 patch fixes the issue where the Gift Registry date is displayed inaccurately on the storefront. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62952. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
@@ -56,4 +56,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-

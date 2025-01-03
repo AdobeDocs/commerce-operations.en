@@ -3,6 +3,7 @@ title: 'ACSD-62965: Fixes missing LocalizedException message in GraphQL order pl
 description: Apply the ACSD-62965 patch to fix the Adobe Commerce issues where the `LocalizedException` message was not included in the GraphQL response during order placement.
 feature: Orders, GraphQL
 role: Admin, Developer
+exl-id: cf9d1409-6fe3-4019-9207-df5f12a41505
 ---
 # ACSD-62965: Fixes missing `LocalizedException` message in GraphQL order placement response
 
