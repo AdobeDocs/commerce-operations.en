@@ -41,11 +41,11 @@ When B2B is enabled, [!DNL GraphQL] request returns all related products from al
 
 <u>Expected results</u>:
 
-The response contains related products only from all websites that correspond to the store code sent in the request header.
+The response contains related products only from the websites that correspond to the store code sent in the request header.
 
 <u>Actual results</u>:
 
-The response contains all related products from all websites.
+The response contains all related products from all websites, regardless of the store code specified in the request.
 
 ## Apply the patch
 
