@@ -24,7 +24,7 @@ The ACSD-61622 patch resolves the issue where [!DNL FedEx's] account specific ra
 
 ## Issue
 
-[!DNL FedEx's] account specific rates are missing from the REST API response, unlike that of a SOAP API response.
+[!DNL FedEx's] account specific rates are missing from the REST API response.
 
 <u>Steps to reproduce</u>:
 
