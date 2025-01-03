@@ -37,6 +37,7 @@ Scheduled update to a custom attribute is validated incorrectly.
 1. Before starting the scheduled update, try editing the created schedule update for the category.
 
 <u>Expected results</u>:
+
 Should be able to update the scheduled update
 
 <u>Actual results</u>:
