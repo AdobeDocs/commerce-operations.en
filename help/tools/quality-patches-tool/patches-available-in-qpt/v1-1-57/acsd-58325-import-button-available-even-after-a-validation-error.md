@@ -1,10 +1,10 @@
 ---
-title: "ACSD-58325: [!UICONTROL Import] button available even after a validation error"
+title: 'ACSD-58325: [!UICONTROL Import] button available even after a validation error'
 description: Apply the ACSD-58325 patch to fix the Adobe Commerce issue where the [!UICONTROL Import] button is available even after a validation error.
 feature: Data Import/Export
 role: Admin, Developer
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
 ---
-
 # ACSD-58325: [!UICONTROL Import] button available even after a validation error
 
 The ACSD-58325 patch fixes the issue where the **[!UICONTROL Import]** button is available even after a validation error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-58325. Please note that the issue was fixed in Adobe Commerce 2.4.7.
@@ -54,4 +54,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
