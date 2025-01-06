@@ -15,8 +15,7 @@ The ACSD-58325 patch fixes the issue where the **[!UICONTROL Import]** button is
 * Adobe Commerce (all deployment methods) 2.4.6-p3
 
 **Compatible with Adobe Commerce versions:**
-* Adobe Commerce on-premises 2.4.6 - 2.4.6-p8
-* Adobe Commerce on cloud infrastructure 2.4.6 - 2.4.6-p8
+* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
