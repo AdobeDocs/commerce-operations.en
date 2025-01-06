@@ -3,6 +3,7 @@ title: 'ACSD-62355:  Improves configurable product edit performance in Adobe Com
 description: Apply the ACSD-62355 patch to fix the Adobe Commerce issue where the configurable product edit page experiences slow loading when the product is based on numerous attributes with many values.
 feature: Admin Workspace
 role: Admin, Developer
+exl-id: cd934aa9-901a-4f03-ab83-716131e6bd85
 ---
 # ACSD-62355: Improves configurable product edit performance in Adobe Commerce
 
