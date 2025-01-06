@@ -83,7 +83,7 @@ To get the Adobe Commerce metapackage:
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
     ```
 
-    When prompted, enter your authentication keys. Public and private keys are created and configured from [Commerce Marketplace - Access Keys](https://commercemarketplace.adobe.com/customer/account/login/). For the `username`, copy and paste the public key value. For the `password`, copy and paste the private key value.
+    When prompted, enter your authentication keys. Public and private keys are created and configured from [Commerce Marketplace - Access Keys](https://commercemarketplace.adobe.com/customer/account/login/). For the `[!UICONTROL username]`, copy and paste the public key value. For the `[!UICONTROL password]`, copy and paste the private key value.
 
    >[!NOTE]
    >
