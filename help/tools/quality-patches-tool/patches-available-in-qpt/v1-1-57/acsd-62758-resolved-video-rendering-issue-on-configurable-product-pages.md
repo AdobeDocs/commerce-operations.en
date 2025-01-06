@@ -1,8 +1,9 @@
 ---
-title: "ACSD-62758: Resolved video rendering issue on configurable product pages"
-description: Apply the ACSD-62758 patch to fix the Adobe Commerce issue where product videos on configurable product detail pages do not render correctly when URLs contain pre-selected swatch options. 
+title: 'ACSD-62758: Resolved video rendering issue on configurable product pages'
+description: Apply the ACSD-62758 patch to fix the Adobe Commerce issue where product videos on configurable product detail pages do not render correctly when URLs contain pre-selected swatch options.
 feature: Catalog Management
 role: Admin, Developer
+exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
 ---
 # ACSD-62758: Resolved video rendering issue on configurable product pages
 
