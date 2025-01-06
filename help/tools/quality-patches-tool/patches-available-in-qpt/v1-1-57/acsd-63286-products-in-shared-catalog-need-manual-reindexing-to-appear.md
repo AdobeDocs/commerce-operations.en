@@ -3,6 +3,7 @@ title: 'ACSD-63286: Products assigned to shared catalog need manual reindexing t
 description: Apply the ACSD-63286 patch to fix the Adobe Commerce issue where products assigned to a shared catalog via API do not appear on the storefront until a manual reindex is executed.
 feature: Products, REST
 role: Admin, Developer
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
 ---
 # ACSD-63286: Products assigned to shared catalog need manual reindexing to appear
 
