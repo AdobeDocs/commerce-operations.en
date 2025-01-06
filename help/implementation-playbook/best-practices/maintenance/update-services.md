@@ -23,7 +23,7 @@ Customers on Pro plans can only self-serve on services upgrades in their [Integr
 
 >[!WARNING]
 >
->Service upgrades cannot be pushed to the production environment without 48 business hours' notice to our infrastructure team. This is required as we need to ensure that we have an infrastructure support engineer available to update your configuration within a desired timeframe with minimal downtime to your production environment.
+>Service upgrades cannot be pushed to a production environment without 48 business hours' notice to Adobe's infrastructure team. This is required so that Adobe can ensure that an infrastructure support engineer is available to update your configuration within a desired timeframe with minimal downtime to your production environment. Adobe recommends putting your site in maintenance mode during the service upgrade.
 
 You can view the list of service versions and end-of-life dates in the following file: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 

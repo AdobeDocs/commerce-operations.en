@@ -3,6 +3,7 @@ title: 'ACSD-50336: Product alert emails not sent'
 description: Apply the ACSD-50336 patch to fix the Adobe Commerce issue where the product alert emails are not sent when a product is back in stock or the price is changed.
 feature: Communications, Personalization, Products
 role: Admin
+exl-id: 45dd12af-a3b2-4cfa-be90-af1c7b5f74b3
 ---
 # ACSD-50336: Product alert emails not sent
 

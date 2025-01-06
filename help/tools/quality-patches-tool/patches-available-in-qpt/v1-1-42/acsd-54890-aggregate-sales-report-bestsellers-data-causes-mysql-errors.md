@@ -3,6 +3,7 @@ title: 'ACSD-54890: `aggregate_sales_report_bestsellers_data` causes [!DNL MySQL
 description: Apply the ACSD-54890 patch to fix the Adobe Commerce issue where the `aggregate_sales_report_bestsellers_data` causes [!DNL MySQL] errors due to `/tmpdisk` being out of space.
 feature: Attributes
 role: Admin, Developer
+exl-id: 21f926e0-a4f4-45ae-9397-4885a85db947
 ---
 # ACSD-54890: `aggregate_sales_report_bestsellers_data` causes MySQL errors
 

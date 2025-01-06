@@ -1,8 +1,9 @@
 ---
-title: "ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout"
+title: 'ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout'
 description: Apply the ACSD-60673 patch to fix the Adobe Commerce issue where the discounts from a [!UICONTROL Cart Price Rule] that use a payment method condition are not always listed in the totals.
 feature: Price Rules
 role: Admin, Developer
+exl-id: 2fe27959-5e5f-4d25-9f56-b0f8319fd562
 ---
 # ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout
 

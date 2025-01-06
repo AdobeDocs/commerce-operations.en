@@ -3,6 +3,7 @@ title: 'ACSD-49179: Orders report shows incorrect amounts for different stores.'
 description: Apply the ACSD-49179 patch to fix the Adobe Commerce issue where the orders report shows incorrect amounts in case of different currencies for different stores.
 feature: Admin Workspace, Orders
 role: Admin
+exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
 ---
 # ACSD-49179: Orders report shows incorrect amounts for different stores
 

@@ -3,6 +3,7 @@ title: 'ACSD-48212: product import assigns product to wrong source'
 description: Apply the ACSD-48212 patch to fix the Adobe Commerce issue where the product import assigns the product to the wrong source.
 feature: Admin Workspace, Data Import/Export, Products
 role: Admin
+exl-id: d573d95b-95fc-4f59-b518-18088855a154
 ---
 # ACSD-48212: product import assigns product to wrong source
 

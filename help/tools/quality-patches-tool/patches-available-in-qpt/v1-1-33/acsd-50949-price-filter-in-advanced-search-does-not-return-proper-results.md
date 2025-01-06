@@ -3,6 +3,7 @@ title: 'ACSD-50949: The price filter in advanced search does not return proper r
 description: Apply the ACSD-50949 patch to fix the Adobe Commerce issue where the price filter in advanced search does not return proper results when used along with the SKU filter.
 feature: Orders, Search
 role: Admin
+exl-id: 89e54940-e763-4554-8641-a162516bcabd
 ---
 # ACSD-50949: Price filter in advanced search is not returning proper results when used with SKU filter
 
@@ -56,7 +57,7 @@ Products with prices higher than *$21* are returned.
 
 To apply individual patches, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading

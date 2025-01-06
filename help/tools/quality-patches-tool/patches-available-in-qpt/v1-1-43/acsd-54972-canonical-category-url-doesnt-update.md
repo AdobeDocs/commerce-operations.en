@@ -3,6 +3,7 @@ title: 'ACSD-54972: Canonical category URL doesnt update'
 description: Apply the ACSD-54972 patch to fix the Adobe Commerce issue where the canonical category URL doesn't update after changing the cateogry URL.
 feature: Catalog Management, Products, Categories
 role: Admin, Developer
+exl-id: c4b17c08-9a2b-44a2-925e-f4c5cce7b760
 ---
 # ACSD-54972: Canonical category URL doesn't update after changing category URL
 

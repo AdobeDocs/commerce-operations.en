@@ -3,6 +3,7 @@ title: 'ACSD-51984: Unchecked [!UICONTROL Use Default Value] and non-default pro
 description: Apply the ACSD-51984 patch to fix the Adobe Commerce issue where the unchecked [!UICONTROL Use Default Value] and non-default product field values are not saved for the second website, store, and store view.
 feature: Products
 role: Admin
+exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
 ---
 # ACSD-51984: Unchecked *[!UICONTROL Use Default Value]* and non-default product field values are not saved 
 
@@ -51,7 +52,7 @@ The values for the fields and for the checkboxes are not saved.
 
 To apply individual patches, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading

@@ -3,6 +3,7 @@ title: 'ACSD-53979: JS error occurs on the homepage'
 description: Apply the ACSD-53979 patch to fix the Adobe Commerce issue where a JavaScript error occurs on the homepage if the welcome message contains a single quote.
 feature: Page Content
 role: Admin, Developer
+exl-id: 34a1802e-b64c-4d5d-85df-356c0740aa41
 ---
 # ACSD-53979: JavaScript error occurs on the homepage
 

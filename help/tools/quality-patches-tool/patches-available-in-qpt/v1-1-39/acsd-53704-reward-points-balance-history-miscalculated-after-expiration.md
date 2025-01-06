@@ -3,6 +3,7 @@ title: 'ACSD-53704: Reward points balance history miscalculated after expiration
 description: Apply the ACSD-53704 patch to fix the Adobe Commerce issue where the reward points balance history is miscalculated after the reward points' expiration date.
 feature: Rewards
 role: Admin, Developer
+exl-id: 8cd297cc-9e9d-4615-b817-283065a79c2f
 ---
 # ACSD-53704: Reward points balance history miscalculated after expiration
 

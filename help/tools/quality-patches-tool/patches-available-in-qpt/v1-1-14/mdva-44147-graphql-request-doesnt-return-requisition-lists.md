@@ -1,12 +1,13 @@
 ---
-title: "MDVA-44147: GraphQL request doesn't return Requisition Lists"
-description: The MDVA-44147 patch fixes the issue where GraphQL request doesn't return Requisition Lists. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
+title: "MDVA-44147: [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]"
+description: The MDVA-44147 patch fixes the issue where [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
+exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
 ---
-# MDVA-44147: GraphQL request doesn't return Requisition Lists
+# MDVA-44147: [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]
 
-The MDVA-44147 patch fixes the issue where GraphQL request doesn't return Requisition Lists. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
+The MDVA-44147 patch fixes the issue where [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 is installed. The patch ID is MDVA-44147. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 
 ## Affected products and versions
 
@@ -20,17 +21,17 @@ The MDVA-44147 patch fixes the issue where GraphQL request doesn't return Requis
 
 >[!NOTE]
 >
->The patch might become applicable to other versions with new Quality Patches Tool releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Use the patch ID as a search keyword to locate the patch.
+>The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
 
-GraphQL request doesn't return Requisition Lists.
+[!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists].
 
 <u>Steps to reproduce</u>:
 
-1. Go to **Store** > **Settings** > **Configuration** > **General** > **B2B Features** and enable Requisition List.
-1. Log in as a customer and add a product to the [Requisition List](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
-1. Create a [Customer Token](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
+1. Go to **Store** > **Settings** > **Configuration** > **General** > **B2B Features** and enable **[!UICONTROL Requisition List]**.
+1. Log in as a customer and add a product to the [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Create a [[!UICONTROL Customer Token]](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/).
 
     <pre>
     <code class="language-graphql">
@@ -45,7 +46,7 @@ GraphQL request doesn't return Requisition Lists.
       </code>
       </pre>
 
-1. Use the following query to retrieve all the Requisition Lists from the customer. Use the **Authorization** header with the value `Bearer <customer_token>`. Refer to the [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) article in our developer documentation for more information.
+1. Use the following query to retrieve all the [!UICONTROL Requisition Lists] from the customer. Use the **Authorization** header with the value `Bearer <customer_token>`. Refer to the [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) article in our developer documentation for more information.
 
     Request:
 
@@ -175,9 +176,9 @@ To apply individual patches, use the following links depending on your deploymen
 
 ## Related reading
 
-To learn more about Quality Patches Tool, refer to:
+To learn more about the [!DNL Quality Patches Tool], refer to:
 
-* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
-* [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!DNL Quality Patches Tool] guide.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [Check if patch is available for your Adobe Commerce issue using the [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!DNL Quality Patches Tool] guide.
 
-For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
+For info about other patches available in the [!DNL QPT], refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
