@@ -87,7 +87,7 @@ To get the Adobe Commerce metapackage:
 
    >[!NOTE]
    >
-   > If you use a Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` file or environment variable configured with your Commerce authentication keys, you are not prompted to enter authentication keys.
+   > If you use a Composer [auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys) file or environment variable configured with your Commerce authentication keys, you are not prompted to enter authentication keys.
 
     If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure that there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://support.magento.com/hc/en-us) for help.
 
