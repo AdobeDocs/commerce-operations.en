@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-57570: Fix for restricted admin user access to shared catalogs'
-description: Apply the ACSD-57570 patch to fix the Adobe Commerce issue where a restricted admin user with access to a particular store cannot always see all shared catalogs to which the products are assigned or can see customers that cannot save, leading to inconsistencies in the system.
+description: Apply the ACSD-57570 patch to fix the Adobe Commerce issue where a restricted admin user with access to a particular store cannot consistently view all shared catalogs assigned to products or save customer information, leading to system inconsistencies.
 feature: B2B, Companies, Roles/Permissions
 role: Admin, Developer
 ---
 
 # ACSD-57570: Fix for restricted admin user access to shared catalogs
 
-The ACSD-57570 patch fixes the issue where a restricted admin user with access to a particular store cannot always see all shared catalogs to which the products are assigned or can see customers that cannot save, leading to inconsistencies in the system. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-57570. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.5.0.
+The ACSD-57570 patch fixes the issue where a restricted admin user with access to a particular store cannot consistently view all shared catalogs assigned to products or save customer information, leading to system inconsistencies. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-57570. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.5.0.
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACSD-57570 patch fixes the issue where a restricted admin user with access t
 
 ## Issue
 
-Fixes the issue where a restricted admin user with access to a particular store cannot always see all shared catalogs or save customers, leading to inconsistencies. With multiple stores, the restricted admin cannot see new companies or custom shared catalogs.
+A restricted admin user with access to a particular store cannot always see all shared catalogs or save customers, leading to inconsistencies. With multiple stores, the restricted admin cannot see new companies or custom shared catalogs.
 
 <u>Steps to reproduce</u>:
 
