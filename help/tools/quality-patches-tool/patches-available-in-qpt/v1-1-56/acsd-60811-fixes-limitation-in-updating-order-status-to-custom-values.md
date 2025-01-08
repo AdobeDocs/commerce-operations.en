@@ -25,7 +25,7 @@ The ACSD-60811 patch fixes the issue where updating the order status with a cust
 
 ## Issue
 
-Fixes the issue where updating the order status with a custom value or comment is only possible if the current status is either 'processing' or 'fraud,' and the order status remains unchanged when a new status is selected and submitted.
+Updating the order status with a custom value or comment is only possible if the current status is either *processing* or *fraud*. The order status remains unchanged when a new status is selected and submitted.
 
 <u>Steps to reproduce</u>:
 
