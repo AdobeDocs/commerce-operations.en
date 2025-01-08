@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-62670: [!UICONTROL Products Ordered] report export to CSV and XML throws error'
-description: Apply the ACSD-62670 patch to fix the Adobe Commerce issue where exporting the [!UICONTROL Products Ordered] report to CSV and XML throws an error.
+title: 'ACSD-62670: [!UICONTROL Ordered Products Report] export to CSV and XML throws error'
+description: Apply the ACSD-62670 patch to fix the Adobe Commerce issue where exporting the [!UICONTROL Ordered Products Report] to CSV and XML throws an error.
 feature: Reporting, Admin Workspace, Data Import/Export
 role: Admin, Developer
 ---
-# ACSD-62670: *[!UICONTROL Products Ordered]* report export to CSV and XML throws error
+# ACSD-62670: *[!UICONTROL Ordered Products Report]* export to CSV and XML throws error
 
-The ACSD-62670 patch fixes the issue where exporting the *[!UICONTROL Products Ordered]* report to CSV and XML throws an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.56 is installed. The patch ID is ACSD-62670. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62670 patch fixes the issue where exporting the *[!UICONTROL Ordered Products Report]* report to CSV and XML throws an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.56 is installed. The patch ID is ACSD-62670. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,12 +24,12 @@ The ACSD-62670 patch fixes the issue where exporting the *[!UICONTROL Products O
 
 ## Issue
 
-Export of the *[!UICONTROL Products Ordered]* report to CSV and XML throws an error.
+Export of the *[!UICONTROL Ordered Products Report]* to CSV and XML throws an error.
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Reports]** > **[!UICONTROL Ordered]**.
-2. Try to export either CSV or Excel files.
+1. Go to the *Admin* panel, and navigate to **[!UICONTROL Reports]** > **[!UICONTROL Products]** > **[!UICONTROL Ordered]**.
+1. Try to export either CSV or Excel files.
 
 <u>Expected results</u>:
 
@@ -37,7 +37,7 @@ Reports are exported without errors.
 
 <u>Actual results</u>:
 
-Export of the *[!UICONTROL Products Ordered]* report results in error 404.
+Export of the *[!UICONTROL Ordered Products Report]* results in error 404.
 
 ## Apply the patch
 
