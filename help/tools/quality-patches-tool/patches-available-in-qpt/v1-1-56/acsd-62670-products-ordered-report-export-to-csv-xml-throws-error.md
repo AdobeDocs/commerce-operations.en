@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-62670: *[!UICONTROL Ordered Products Report]* export to CSV and XML throws error
 
-The ACSD-62670 patch fixes the issue where exporting the *[!UICONTROL Ordered Products Report]* report to CSV and XML throws an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.56 is installed. The patch ID is ACSD-62670. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62670 patch fixes the issue where exporting the *[!UICONTROL Ordered Products Report]* to CSV and XML throws an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.56 is installed. The patch ID is ACSD-62670. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
