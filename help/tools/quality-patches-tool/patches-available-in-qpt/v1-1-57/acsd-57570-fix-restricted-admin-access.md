@@ -3,8 +3,8 @@ title: 'ACSD-57570: Fix for restricted admin user access to shared catalogs'
 description: Apply the ACSD-57570 patch to fix the Adobe Commerce issue where a restricted admin user with access to a particular store cannot consistently view all shared catalogs assigned to products or save customer information, leading to system inconsistencies.
 feature: B2B, Companies, Roles/Permissions
 role: Admin, Developer
+exl-id: 3eeaf1f1-0338-459f-99ec-53764f3f12db
 ---
-
 # ACSD-57570: Fix for restricted admin user access to shared catalogs
 
 The ACSD-57570 patch fixes the issue where a restricted admin user with access to a particular store cannot consistently view all shared catalogs assigned to products or save customer information, leading to system inconsistencies. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-57570. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.5.0.
