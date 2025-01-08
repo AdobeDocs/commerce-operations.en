@@ -694,6 +694,7 @@ feature: Configuration
             - [ACSD-62872: Schedule updates validated incorrectly](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
             - [ACSD-62952: Gift Registry date displayed inaccurately on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
             - [ACSD-62577: Storefront search performance optimization](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
+            - [ACSD-62670: [!UICONTROL Products Ordered] report export to CSV and XML throws error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
             - [ACSD-62755: [!DNL TinyMCE] 7 needs font size and font added to editor initialization settings](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
         - v1.1.57 {#v1-1-57}
