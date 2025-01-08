@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-62755: [!DNL TinyMCE] 7 needs font size and font added to editor initialization settings
 
-The ACSD-62755 patch fixes the issue where [!DNL TinyMCE] 7 requires *font size* and *font family* selectors to be specifically added within editor initialization settings. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62755. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62755 patch fixes the issue where [!DNL TinyMCE] 7 requires *font size* and *font family* selectors to be specifically added within editor initialization settings. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62755. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
