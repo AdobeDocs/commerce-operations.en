@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-62755: [!DNL TinyMCE] 7 needs font size and font added to editor initialization settings'
-description: Apply the ACSD-62755 patch to fix the Adobe Commerce issue where [!DNL TinyMCE] 7 requires font size and font to be specifically added within editor initialization settings.
+description: Apply the ACSD-62755 patch to fix the Adobe Commerce issue where [!DNL TinyMCE] 7 requires *font size* and *font family* to be specifically added within editor initialization settings.
 feature: Page Content, Page Builder, Admin Workspace
 role: Admin, Developer
 ---
