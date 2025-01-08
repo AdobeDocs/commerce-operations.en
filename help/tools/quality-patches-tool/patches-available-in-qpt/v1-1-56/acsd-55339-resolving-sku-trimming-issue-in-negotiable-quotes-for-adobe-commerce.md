@@ -1,12 +1,12 @@
 ---
 title: 'ACSD-55339: Resolving SKU trimming issue in negotiable quotes for Adobe Commerce'
-description: Apply the ACSD-55339 patch to fix the Adobe Commerce issue where product SKUs starting with leading zeros are trimmed, resulting in errors during the negotiation process.
+description: Apply the ACSD-55339 patch to fix the Adobe Commerce issue where product SKUs with leading zeros are trimmed, causing negotiation errors.
 feature:  B2B, Quotes
 role: Admin, Developer
 ---
 # ACSD-55339: Resolving SKU trimming issue in negotiable quotes for Adobe Commerce
 
-The ACSD-55339 patch fixes the issue where product SKUs starting with leading zeros are trimmed, resulting in errors during the negotiation process. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-55339. Please note that the issue is scheduled to be fixed in Adobe Commerce B2B 1.5.0.
+The ACSD-55339 patch fixes the issue where product SKUs with leading zeros are trimmed, resulting in errors during the negotiation process. This patch is available when the [!DNL Quality Patches Tool (QPT)] 1.1.56 is installed. The patch ID is ACSD-55339. Please note that the issue is scheduled to be fixed in Adobe Commerce B2B 1.5.0.
 
 ## Affected products and versions
 
@@ -30,7 +30,7 @@ Numeric product SKUs with leading zeros are trimmed when used in negotiable quot
 
 1. Navigate to the product creation section in the admin panel.
 1. Set the SKU for the product as *01910*.
-1. Log in to the storefront, and perform the following opertions:
+1. Log in to the storefront and perform the following operations:
     1. Add product to the cart.
     1. View and edit the cart.
     1. Request a quote.
