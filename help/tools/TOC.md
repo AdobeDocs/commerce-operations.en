@@ -697,6 +697,7 @@ feature: Configuration
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
         - v1.1.57 {#v1-1-57}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+            - [ACSD-57570: Fix for restricted admin user access to shared catalogs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access.md)
             - [ACSD-62635: Multi-store related products displayed incorrectly in [!DNL GraphQL]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql.md)
             - [ACSD-61622: [!DNL FedEx] account specific rates are missing in REST API response](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response.md)
             - [ACSD-62965: Fixes missing LocalizedException message in GraphQL order placement response](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
