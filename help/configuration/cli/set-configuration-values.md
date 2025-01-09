@@ -135,8 +135,6 @@ The following table describes the `set` command parameters:
 >[!INFO]
 >
 >As of Commerce 2.2.4, the `--lock-env` and `--lock-config` options replace the `--lock` option.
->
->If you use the `--lock-env` or `--lock-config` option to set or change a value, you must use the [`bin/magento app:config:import` command](../cli/import-configuration.md) to import the setting before you access the Admin or storefront.
 
 If you enter an incorrect configuration path, this command returns an error
 
