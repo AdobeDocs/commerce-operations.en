@@ -83,11 +83,11 @@ To get the Adobe Commerce metapackage:
     composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
     ```
 
-    When prompted, enter your authentication keys. Public and private keys are created and configured in your [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+    When prompted, enter your authentication keys. Public and private keys are created and configured from [Commerce Marketplace - Access Keys](https://commercemarketplace.adobe.com/customer/account/login/). For the `[!UICONTROL username]`, copy and paste the public key value. For the `[!UICONTROL password]`, copy and paste the private key value.
 
    >[!NOTE]
    >
-   > When using a Composer `auth.json` file or environment variable, you will not be prompted to enter your authentication keys.
+   > If you use a Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` file or environment variable configured with your Commerce authentication keys, you are not prompted to enter authentication keys.
 
     If you encounter errors, such as `Could not find package...` or `...no matching package found`, make sure that there are no typos in your command. If you still encounter errors, you may not be authorized to download Adobe Commerce. Contact [Adobe Commerce Support](https://support.magento.com/hc/en-us) for help.
 
