@@ -32,7 +32,16 @@ While resetting password via GraphQL in a store view other than the one register
 1. Switch *[!UICONTROL Locale]* to *[!UICONTROL French (France)]* in the secondary store view scope.
 1. Install the French language pack for translations.
 1. Create a customer account.
-1. Use GraphQL mutation with *store* header with the secondary store view code.
+1. Use the following GraphQL mutation with *store* header with the secondary store view code.
+
+    ```
+    mutation {
+        requestPasswordResetEmail(
+            email: "test@gmail.com"
+        )
+    }
+    ```
+
 1. Check the email.
 
 <u>Expected results</u>:
