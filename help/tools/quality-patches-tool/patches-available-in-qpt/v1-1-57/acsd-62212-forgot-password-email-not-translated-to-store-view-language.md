@@ -24,7 +24,7 @@ The ACSD-62212 patch fixes the issue where the content of the *[!UICONTROL Forgo
 
 ## Issue
 
-While resetting password via GraphQL in a store view other than the one you registered, the reset password link does not match the store view from which it was initiated.
+While resetting password via GraphQL in a store view other than the one registered, the reset password link does not match the store view from which it was initiated.
 
 <u>Steps to reproduce</u>:
 
@@ -32,7 +32,7 @@ While resetting password via GraphQL in a store view other than the one you regi
 1. Switch *[!UICONTROL Locale]* to *[!UICONTROL French (France)]* in the secondary store view scope.
 1. Install the French language pack for translations.
 1. Create a customer account.
-1. Use the GraphQL mutation with the *store* header with the secondary store view code.
+1. Use GraphQL mutation with *store* header with the secondary store view code.
 1. Check the email.
 
 <u>Expected results</u>:
@@ -44,7 +44,9 @@ While resetting password via GraphQL in a store view other than the one you regi
 
 The following could be observed in the email:
 
-
+* The reset password link has the "default" store code.
+* The subject is in English.
+* The content is in French.
 
 ## Apply the patch
 
