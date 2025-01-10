@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-61805: Fixes stock issue on storefront after backorder status update via REST API
 
-The ACSD-61805 patch fixes the issue where the products remain out of stock on the storefront after updating the backorder status via the REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-61805. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61805 patch fixes the issue where products remain out of stock on the storefront after updating the backorder status via REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-61805. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,18 +25,18 @@ The ACSD-61805 patch fixes the issue where the products remain out of stock on t
 
 ## Issue
 
-Fixes the issue where products remain out of stock on the storefront after updating the backorder status via the REST API.
+Products remain out of stock on the storefront after updating the backorder status via REST API.
 
 <u>Steps to reproduce</u>:
 
 1. Install a clean instance with sample data.
 1. Create a new inventory source.
-1. Create a new inventory stock and assign the new source.
+1. Create a new inventory stock and assign the new source to it.
 1. Assign the new source to product 24-MB01.
-1. Set the source item status to "In Stock" for both product sources.
-1. Set the quantity (**[!UICONTROL QTY]**) to "0" for both product quantities.
+1. Set **[!UICONTROL Source Item Status]** to `In Stock` for both product sources.
+1. Set the quantity (**[!UICONTROL QTY]**) to *0* for both product quantities.
 1. Save the product.
-1. Fetch the admin token from this endpoint URL: /rest/default/V1/integration/admin/token
+1. Fetch the admin token from this endpoint URL: `/rest/default/V1/integration/admin/token`
 
     ```json
     {
@@ -45,7 +45,7 @@ Fixes the issue where products remain out of stock on the storefront after updat
     }
     ```
     
-1. Update the product using the endpoint: /rest/default/V1/products
+1. Update the product using the endpoint: `/rest/default/V1/products`
 
     ```json
     {
@@ -73,11 +73,11 @@ Fixes the issue where products remain out of stock on the storefront after updat
 
 <u>Expected results</u>:
 
-The product should be "In Stock"
+The product should be *In Stock*.
 
 <u>Actual results</u>:
 
-The product is "Out of Stock"
+The product is *Out of Stock*.
 
 ## Apply the patch
 
