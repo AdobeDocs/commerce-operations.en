@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-62629: Product list in widgets shows incorrect categories'
-description: Apply the ACSD-62629 patch to fix the Adobe Commerce issue where a product list used in Widgets does not respect category condition.
+description: Apply the ACSD-62629 patch to fix the Adobe Commerce issue where a product list used in widgets does not respect category condition.
 feature: Page Content
 role: Admin, Developer
 ---
 
 # ACSD-62629: Product list in widgets shows incorrect categories 
 
-The ACSD-62629 patch fixes the issue where the product list used in Widgets does not respect category condition. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-62629. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62629 patch fixes the issue where the product list used in widgets does not respect category condition. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-62629. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACSD-62629 patch fixes the issue where the product list used in Widgets does
 
 ## Issue
 
-Fixes the issue where a product list used in Widgets does not respect the category condition.
+Product list used in widgets does not respect the category condition.
 
 <u>Steps to reproduce</u>:
 
@@ -34,8 +34,8 @@ Fixes the issue where a product list used in Widgets does not respect the catego
 1. Create a [!UICONTROL configurable product] named TEST 2 with two child products and add it to Category 2.
 1. Create another [!UICONTROL simple product] named TEST 5 and add it to Category 1.
 1. Run a full reindex.
-1. Navigate to **[!UICONTROL Content]** > **[!UICONTROL Pages]** and edit the home page.
-1. Add a [!UICONTROL Products] widget with [!UICONTROL Appearance] set to [!UICONTROL Product Carousel] and [!UICONTROL Category] set to Category 2. Save the page.
+1. Navigate to **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]** and edit the home page.
+1. Add a [!UICONTROL Products] widget with *[!UICONTROL Appearance]* set to *[!UICONTROL Product Carousel]* and *[!UICONTROL Category]* set to Category 2. Save the page.
 1. Go to the frontend and open the home page.
 
 <u>Expected results</u>:
