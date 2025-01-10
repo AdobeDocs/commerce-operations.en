@@ -15,6 +15,28 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.57 {#v1-1-57}
+
+* **ACSD-57570** (for Adobe Commerce >=2.4.4 <2.4.4-p10) - Fixes the issue where a restricted admin user with access to a particular store can't always see all shared catalogs to which the products are assigned, nor can see customers that can't be saved, leading to inconsistencies in the system.
+* **ACSD-58325** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where the **[!UICONTROL Import]** button is available even after a validation error.
+* **ACSD-59083** (for Adobe Commerce >=2.4.4 <2.5.0) - Fixes the issue where some database update operations result in a *Base table or view not found* error if the [!DNL mview] update is running at the same time.
+* **ACSD-61622** (for Adobe Commerce and Magento Open Source >=2.4.6-p1 <2.4.7) - Fixes the issue where [!DNL FedEx]'s account-specific rates are missing in the response.
+* **ACSD-61895** (for Adobe Commerce >=2.4.4 <2.5.0) - Fixes the issue where the categories [!DNL GraphQL] query returns categories with the **allow** permission even if the root category doesn't have the **allow** permission.
+* **ACSD-62212** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where the **Forgot Password** email content isn't translated to the store view's language.
+* **ACSD-62481** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where the customer's shopping cart becomes empty even if **[!UICONTROL Persistence]** is enabled.
+* **ACSD-62629** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.5.0) - Fixes the issue where a product list used in **[!UICONTROL Widgets]** doesn't reflect the category condition.
+* **ACSD-62635** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.5.0) - Fixes the issue where multi-store related products don't display properly in the [!DNL GraphQL] product query.
+* **ACSD-62671** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.5.0) - Fixes the issue where the [!DNL GraphQL] request doesn't return up-to-date address information on the first attempt.
+* **ACSD-62689** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.5.0) - Fixes the issue where the customer is unable to add Categories in **[!UICONTROL Related Product Rules and Widgets]** after *depth 4*.
+* **ACSD-62708** (for Adobe Commerce and Magento Open Source >=2.4.4-p11 <2.4.5 || >=2.4.5-p10 <2.4.6-p2 || >=2.4.6-p8 <2.4.7-p1) - Fixes the issue where [!DNL TinyMCE] 7 editor font size in the admin shows *PT* and not *PX*. Now, you can also set the font size in *PX* instead of *PT*.
+* **ACSD-62758** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where product videos don't render correctly on the **[!UICONTROL Configurable Product]**'s details page if the [!DNL URL] contains selected options.
+* **ACSD-62951** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where the Credit Memo email is sent without including items and totals.
+* **ACSD-62965** (for Adobe Commerce >=2.4.7 <2.5.0) - Fixes the issue where a `LocalizedException` message isn't included in the order placement [!DNL GraphQL] response.
+* **ACSD-63286** (for Adobe Commerce >=2.4.6 <2.4.7) - Fixes the issue where products assigned to a shared catalog via [!DNL API] don't appear on the storefront until a manual reindex is executed.
+* **ACSD-63326** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.5.0) - Fixes the issue where the [!UICONTROL Admin] is redirected to a broken page after placing an order from the backend.
+* Versions updated: **ACSD-51739**
+* Replaced patches: **MDVA-43451**, **ACSD-62755**
+
 ## v1.1.56 {#v1-1-56}
 
 * **ACSD-63244** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a [!DNL JavaScript] error prevents [!DNL Google Maps] from rendering correctly. Fixes the issue where there are many *Uncaught TypeError: this._each is not a function* errors in the console in the [!UICONTROL Admin] panel.
@@ -250,7 +272,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-54067** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.7) - Fixes the issue where a product video doesn't play on a mobile device.
 * **ACSD-55414** (for Adobe Commerce and Magento Open Source >=2.4.0 <2.4.6) - Improves performance when the MariaDB tries to cast the EAV entity_id from string to integer.
 * **ACSD-51819** (for Adobe Commerce >=2.4.4 <2.4.4-p4) - Fixes the issue where multiple orders can be placed with the same quote ID.
-* **ACSD-53118** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where the *[!UICONTROL Cart Price Rule]* is applied using coupon code while the product has an empty attribute.
+* **ACSD-53118** (for Adobe Commerce >=2.4.0 <2.4.7) - Fixes the issue where the *[!UICONTROL Cart Price Rule]* is applied using coupon code while the product has an empty attribute, which should have caused the rule to be invalidated.
 * **ACSD-54324** (for Adobe Commerce >=2.4.5 <2.4.7) - Fixes the issue where the GraphQL requisition_lists request does not consider pagination settings and returns all results.
 * Updated patches: MDVA-42855-v2
 
