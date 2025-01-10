@@ -682,6 +682,7 @@ feature: Configuration
             - [ACSD-62591: Theme doesn't switch properly when [!UICONTROL User Agent Rules] configured](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
         - v1.1.56 {#v1-1-56}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+            - [ACSD-61805: Fixes stock issue on storefront after backorder status update via REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api.md)
             - [ACSD-60811: Fixes limitation in updating order status to custom values](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values.md)
             - [ACSD-62971: Stock sources import with non-numeric quantity values results in the quantity being set to 0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity.md)
             - [ACSD-62979: Incorrect Store ID in the GraphQL header causes a fatal memory error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
