@@ -3,8 +3,8 @@ title: 'ACSD-61805: Fixes stock issue on storefront after backorder status updat
 description: Apply the ACSD-61805 patch to fix the Adobe Commerce issue where products remain out of stock on the storefront after updating the backorder status via the REST API
 feature: REST, Catalog Management, Inventory
 role: Admin, Developer
+exl-id: ff85e747-6394-43db-a02a-87b1e5e59f00
 ---
-
 # ACSD-61805: Fixes stock issue on storefront after backorder status update via REST API
 
 The ACSD-61805 patch fixes the issue where products remain out of stock on the storefront after updating the backorder status via REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-61805. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
