@@ -3,8 +3,8 @@ title: 'ACSD-62629: Product list in widgets shows incorrect categories'
 description: Apply the ACSD-62629 patch to fix the Adobe Commerce issue where a product list used in widgets does not respect category condition.
 feature: Page Content
 role: Admin, Developer
+exl-id: a7d6bd43-4b8b-48c4-ae9a-4093ac3a4110
 ---
-
 # ACSD-62629: Product list in widgets shows incorrect categories 
 
 The ACSD-62629 patch fixes the issue where the product list used in widgets does not respect category condition. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-62629. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
