@@ -700,7 +700,7 @@ feature: Configuration
         - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
         - v1.1.57 {#v1-1-57}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
-            - [ACSD-62689: Customer unable to add Categories in Related Product Rules and Widgets after depth 4](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets.md)
+            - [ACSD-62689: Unable to add categories in [!UICONTROL Related Product Rules] and widgets after depth 4](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets.md)
             - [ACSD-62629: Product list in widgets shows incorrect categories](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62629-product-list-widgets-category-condition.md)
             - [ACSD-57570: Fix for restricted admin user access to shared catalogs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access.md)
             - [ACSD-62635: Multi-store related products displayed incorrectly in [!DNL GraphQL]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql.md)
