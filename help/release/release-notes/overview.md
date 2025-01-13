@@ -29,11 +29,11 @@ Use the following table to find release notes and important information related 
       <td><strong>Adobe Commerce on cloud infrastructure</strong>
         <p>Learn about the latest improvements to the Cloud Suite for Adobe Commerce packages, which are designed to deploy and manage Adobe Commerce installations and upgrades on the cloud platform.</p>
           <ul>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">Backward-incompatible changes</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html">Cloud Patches for Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Cloud Docker for Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcc-release-notes.html">Cloud Components for Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">Backward-incompatible changes</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Cloud Patches for Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker for Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Cloud Components for Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
           </ul>
       </td>
     </tr>

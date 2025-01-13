@@ -3,6 +3,7 @@ title: 'ACSD-46865: [!UICONTROL shipment] and [!UICONTROL credit memo] not popul
 description: Apply the ACSD-46865 patch to fix the Adobe Commerce issue where [!UICONTROL shipment] and [!UICONTROL credit memo] grids are not populated when [!UICONTROL asynchronous indexing] is enabled.
 feature: Cache, Orders, Returns, Shipping/Delivery
 role: Admin
+exl-id: 6f84f5b6-6c34-476c-aae5-9a8ba306f8e4
 ---
 # ACSD-46865: [!UICONTROL shipment] and [!UICONTROL credit memo] not populated when [!UICONTROL asynchronous indexing] is enabled
 

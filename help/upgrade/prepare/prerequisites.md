@@ -223,11 +223,11 @@ Results similar to the following should display:
 
 Another symptom of cron not running is the following error in the Admin:
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![System messages - cron not running](../../assets/upgrade-guide/cron-not-running.png)
 
 To see the error, click **System Messages** at the top of the window as follows:
 
-![](../../assets/upgrade-guide/system-messages.png)
+![System messages notification](../../assets/upgrade-guide/system-messages.png)
 
 See [Configure and run cron](../../configuration/cli/configure-cron-jobs.md) for more information.
 

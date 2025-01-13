@@ -3,6 +3,7 @@ title: 'ACSD-51358: Schedule updates are missing'
 description: Apply the ACSD-51358 patch to fix the Adobe Commerce issue where the changes in scheduled update without an end date leads to removing other scheduled updates on the same entity.
 feature: Staging
 role: Admin, Developer
+exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
 ---
 # ACSD-51358: Schedule updates are missing
 
@@ -44,7 +45,7 @@ The (*update 2*) was removed from the **[!UICONTROL schedule update]** list when
 
 To apply individual patches, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading

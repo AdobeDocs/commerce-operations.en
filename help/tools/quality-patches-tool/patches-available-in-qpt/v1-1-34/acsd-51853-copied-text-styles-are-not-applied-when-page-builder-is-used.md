@@ -3,6 +3,7 @@ title: "ACSD-51853: Copied text styles aren't applied using page builder"
 description: Apply the ACSD-51853 patch to fix the Adobe Commerce issue where the copied text styles are not applied when page builder is used.
 feature: Page Builder
 role: Admin
+exl-id: fda5ba6e-4786-473c-a3a2-7356aa20f5ae
 ---
 # ACSD-51853: Copied text styles aren't applied using page builder
 

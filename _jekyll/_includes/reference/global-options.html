@@ -1,0 +1,41 @@
+{%- comment %}
+# GLOBAL OPTIONS DETERMINATION
+{%- endcomment %}
+
+{%- assign all_options = '' %}
+{%- for command in commands %}
+   {%- assign command_options = command.definition.options %}
+   {%- for option in command_options %}
+     {%- assign all_options = all_options | append: ',' | append: option[0] %}
+   {%- endfor %}
+{%- endfor %}
+
+{%- assign all_options = all_options | remove_first: ',' | split: ',' %}
+{%- assign unique_options = all_options | uniq | sort %}
+
+{%- assign number_of_commands = commands | size %}
+{%- for unique_option in unique_options %}
+   {%- assign counter = 0 %}
+   {%- for option in all_options  %}
+       {%- if option == unique_option %}
+          {%- assign counter = counter | plus: 1 %}
+       {%- endif %}
+   {%- endfor %}
+   {%- if counter == number_of_commands %}
+      {%- assign global_options = global_options | append: ',' | append: unique_option %}
+   {%- endif %}
+{%- endfor %}
+
+{%- assign global_options = global_options | remove_first: ',' | split: ',' %}
+
+{%- comment %}
+# GLOBAL OPTIONS PRINTING
+{%- endcomment %}
+
+### Global options
+{% assign first_command_options = commands[0].definition.options -%}
+{% for option in first_command_options -%}
+   {%- if global_options contains option[0] %}
+{% include reference/options.html -%}
+{% endif -%}
+{% endfor -%}

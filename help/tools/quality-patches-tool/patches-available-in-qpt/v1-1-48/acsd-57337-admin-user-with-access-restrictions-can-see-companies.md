@@ -3,6 +3,7 @@ title: 'ACSD-57337: Admin user with access restrictions could view all companies
 description: Apply the ACSD-57337 patch to fix the Adobe Commerce issue where an admin user with access restrictions to specific websites could view companies from all websites in the *Companies* grid.
 feature: Companies, B2B, Configuration
 role: Admin, Developer
+exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
 ---
 # ACSD-57337: Admin user with access restrictions could view all companies in the *Companies* grid
 

@@ -200,6 +200,10 @@ Previously it was possible to create the Duplicate website group price customer 
   * _Fix note_: The system now accepts product image uploads with capital letter file extensions, ensuring a smooth product creation process. Previously, image uploads with capital letter file extensions were refused, forcing users to change the file extension to lowercase.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38831>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [Issue] Set default indexer mode to 'schedule'
+  * _Fix note_: All new indexers are by default in **[!UICONTROL Update by Schedule]** mode.  Previously, the default mode was **[!UICONTROL Update on Save]**. Existing indexers are not affected. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+  * _GitHub issue_: <https://github.com/magento/magento2/issues/36419>
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [Issue] Drop indexer changelog tables on mview unsubscribe
   * _Fix note_: The system now automatically removes unused changelog tables when an index is switched from 'update on schedule' to 'update on save', marking the index as invalid to ensure no entries are missed. Previously, switching an index to 'update on save' would leave unused changelog tables in the system and mark all changed indexes as 'valid'.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/29789>
@@ -293,18 +297,24 @@ We can now update custom-created order statuses, whereas previously, the status 
 ### Braintree
 
 * _BUNDLE-3367_: Pay via LPM
+  * _Fix note_: The system now correctly renders Local Payment Methods (LPM) on initial load, even when a logged-in customer's shipping and billing addresses do not match, ensuring a smooth checkout process. Previously, a mismatch between a customer's shipping and billing addresses would prevent LPM from rendering, causing potential disruptions during checkout.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: Configurable with Virtual as Child Product
+  * _Fix note_: The system now allows express payment methods for configurable products that have a virtual  child product, ensuring a smooth checkout process. Previously, express payment methods were not available when a configurable product with a virtual  child product was added to the cart.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: CVV Verification failed error
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_: Vaulting Via the account Area Issues 247
+  * _Fix note_: The system now allows customers to save new card or PayPal account information across multiple websites without encountering authorization errors. Previously, customers were unable to save new payment methods across different websites and were presented with an authorization error message.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: Ship to an address from a different country
+  * _Fix note_: The system now allows transactions to be processed without errors when shipping to an address from a different country, ensuring a smooth checkout process. Previously, attempting to ship to an address from a different country would result in console errors, despite no visible errors on the frontend.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: Credit Card - Teardown function
+  * _Fix note_: The system now correctly handles the teardown of Braintree PayPal components when a customer navigates back from the payment page to the shipping page, preventing any errors and ensuring that PayPal Express buttons render correctly. Previously, navigating back to the shipping page from the payment page sometimes resulted in an error when trying to teardown the Braintree PayPal components.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_: Shipping Callback for PayPal Express
+  * _Fix note_: The system now correctly displays available shipping methods in the PayPal Express modal, allowing customers to select their preferred shipping method before proceeding to the review page or completing their transaction. Previously, no shipping methods were available to select from in the PayPal Express modal, requiring customers to select a shipping method on a separate review page before they could complete their transaction.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Cart & Checkout
@@ -792,10 +802,10 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
   * _Fix note_: The system now only adds the modified country to the 'general/region/state_required' configuration when a new country with required states is added, preventing any disruption to custom code that assumes the region is disabled. Previously, adding a new country with required states would reset the 'general/region/state_required' configuration to default countries with a required state, potentially breaking the shop.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37796>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38076>
-* _AC-9712_: https://github.com/magento/magento2/issues/37841
-  * _Fix note_: Difference in less compilation between php & nodejs library (grunt) with complicated `calc` expressions
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/b34c0a75>>
-  * _GitHub code contribution_: Fix the difference in less compilation between php & nodejs library (grunt) after update wikimedia/less.php:^5.x
+* _AC-9712_: Difference in less compilation between php & nodejs library (grunt) with complicated `calc` expressions
+  * _Fix note_: Fix the difference in less compilation between php & nodejs library (grunt) after update wikimedia/less.php:^5.x
+  * _GitHub issue_: <https://github.com/magento/magento2/issues/37841>
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_: "Base table or view not found" error occurs when partial indexing is executed
   * _Fix note_: Partial reindex now works correctly with big changelog in case of secondary db connection
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ba25af8a>
@@ -1126,10 +1136,6 @@ to bin/magento config:set twofactorauth/google/leeway VALUE
 * _AC-12128_: Prototype.js security vulnerability fix CVE-2020-27511
   * _Fix note_: The system has been updated to address the security vulnerability CVE-2020-27511 in Prototype.js 1.7.3, enhancing the overall security of the system. Prior to this update, the system was susceptible to a Regular Expression Denial of Service (ReDOS) through stripping crafted HTML tags.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_: 
-  * _Fix note_: Prototype.js security vulnerability fix CVE-2020-27511
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/de4dfb8e>>
-  * _GitHub code contribution_: The system has been updated to address the security vulnerability CVE-2020-27511 in Prototype.js 1.7.3, enhancing the overall security of the system. Prior to this update, the system was susceptible to a Regular Expression Denial of Service (ReDOS) through stripping crafted HTML tags.
 * _AC-12189_: Grunt Less uses pub/ prefix for sourcemaps
   * _Fix note_: The system now generates less/css sourcemaps without the /pub prefix for paths when using grunt, eliminating the need for a workaround in the webserver configuration. Previously, the use of the /pub prefix in sourcemaps paths required a specific configuration in the webserver to function correctly.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38837>

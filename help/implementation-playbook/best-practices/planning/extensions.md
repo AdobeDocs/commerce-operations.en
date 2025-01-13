@@ -9,6 +9,7 @@ exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
 
 Adobe Commerce third-party extensions (modules) have the potential to cause various issues that can negatively impact storefront performance. You can avoid these issues by following these best practices:
 
+- Develop your Commerce integrations and customizations using [out-of-process extensibility](https://developer.adobe.com/commerce/extensibility/) wherever possible to ease maintenance and upgradability.
 - Download and purchase third-party extensions from a trusted source, like the [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Update all third-party extensions to the latest version. 
 - If you cannot keep your third-party extensions updated, consider using different extensions.
@@ -29,5 +30,5 @@ Adobe Commerce third-party extensions (modules) have the potential to cause vari
 
 - [Best practices for planning upgrades](../../../upgrade/prepare/best-practices.md)
 - Using third-party extensions with Adobe Commerce on cloud infrastructure
-  - [Technologies and requirements - Development and testing](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
-  - [Why test fully in Integration and Staging?](https://devdocs.magento.com/cloud/live/live.html#whytest)
+  - [Technologies and requirements - Development and testing](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+  - [Why test fully in Integration and Staging?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

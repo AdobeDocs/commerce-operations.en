@@ -3,6 +3,7 @@ title: 'ACSD-52095: Manage stock value is wrong while exporting CSV'
 description: Apply the ACSD-52095 patch to fix the Adobe Commerce issue where the product manage stock value is wrong while exporting CSV.
 feature: Inventory, Products
 role: Admin, Developer
+exl-id: 1f8415aa-23c6-480a-b54d-37b2b2d3199a
 ---
 # ACSD-52095: [!UICONTROL Manage Stock] value is wrong while exporting CSV
 
@@ -51,7 +52,7 @@ The **[!UICONTROL Manage Stock]** value is *0* when it is enabled for the produc
 
 To apply individual patches, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](</help/tools/quality-patches-tool/usage.md>) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading

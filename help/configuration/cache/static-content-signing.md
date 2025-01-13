@@ -29,7 +29,7 @@ This changes the URL of the static files and forces the browser to load the new 
 
 Commerce enables this feature by default, and Adobe recommends keeping this feature enabled to prevent issues related to browsers serving up old static resources.
 
-The configuration for static content signing is in [**[!UICONTROL Stores]** > Settings > Configuration > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+The configuration for static content signing is in [**[!UICONTROL Stores]** > Settings > Configuration > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
 - **On-Premises only**: This configuration is available if your site is **not** in [Production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
 - **Cloud**: This configuration is hidden because Production mode is strictly enforced; therefore, you must use the command line as shown below.
