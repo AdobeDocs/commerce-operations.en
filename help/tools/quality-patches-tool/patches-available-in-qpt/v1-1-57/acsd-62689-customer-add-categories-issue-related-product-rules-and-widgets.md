@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-62689: Customer unable to add Categories in Related Product Rules and Widgets after depth 4'
-description: Apply the ACSD-62689 patch to fix the Adobe Commerce issue where the customer is unable to add Categories in Related Product Rules and Widgets after depth 4.
+title: 'ACSD-62689: Unable to add categories in [!UICONTROL Related Product Rules] and widgets after depth 4'
+description: Apply the ACSD-62689 patch to fix the Adobe Commerce issue where a customer is unable to add categories in [!UICONTROL Related Product Rules] and widgets after depth four nesting.
 feature: Categories
 role: Admin, Developer
 ---
 
-# ACSD-62689: Customer unable to add Categories in Related Product Rules and Widgets after depth 4
+# ACSD-62689: Unable to add categories in *[!UICONTROL Related Product Rules]* and widgets after depth 4
 
-The ACSD-62689 patch fixes the issue where the customer is unable to add Categories in Related Product Rules and Widgets after depth 4. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57 is installed. The patch ID is ACSD-62689. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62689 patch fixes the issue where a customer is unable to add categories in *[!UICONTROL Related Product Rules]* and widgets after depth four nesting. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57 is installed. The patch ID is ACSD-62689. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,23 +25,24 @@ The ACSD-62689 patch fixes the issue where the customer is unable to add Categor
 
 ## Issue
 
-Fixes the issue where the customer is unable to add Categories in Related Product Rules and Widgets after depth 4.
+A customer is unable to add categories in *[!UICONTROL Related Product Rules]* and widgets after depth four nesting.
 
 <u>Steps to reproduce</u>:
 
-1. Create two categories named [!UICONTROL "Anchor"] and [!UICONTROL "Non-Anchor"] under the default root category. Ensure the [!UICONTROL "Is Anchor"] flag is disabled for the [!UICONTROL "Non-Anchor"] category.
+1. Create two categories named *[!UICONTROL Anchor]* and *[!UICONTROL Non-Anchor]* under the default root category. 
+    * Ensure the *[!UICONTROL Is Anchor]* flag is disabled for the *[!UICONTROL Non-Anchor]* category.
 1. Go to **[!UICONTROL Content]** > **[!UICONTROL Widgets]** and create a widget.
-1. Under [!UICONTROL Layout Updates], select [!UICONTROL Non-Anchor Categories] in the [!UICONTROL Display on] field.
-1. Click [!UICONTROL Specific Categories].
+1. Under *[!UICONTROL Layout Updates]*, select **[!UICONTROL Non-Anchor Categories]** in the *[!UICONTROL Display on]* field.
+1. Click **[!UICONTROL Specific Categories]**.
 1. Click the category select icon.
 1. Expand the root category.
 1. Check the categories. Both should be disabled and not selectable.
-1. Under [!UICONTROL Layout Updates], select [!UICONTROL Anchor Categories] in the [!UICONTROL Display on] field. Then follow steps 5 and 6.
+1. Under *[!UICONTROL Layout Updates]*, select **[!UICONTROL Anchor Categories]** in the *[!UICONTROL Display on]* field. Then follow steps 5 and 6.
 1. Check the categories. Both should be enabled and selectable.
 
 <u>Expected results</u>:
 
-In step 7, only the "Non-Anchor" category should be selectable. In step 9, the "Anchor" category should be selectable.
+In step 7, only the *[!UICONTROL Non-Anchor]* category should be selectable. In step 9, the *[!UICONTROL Anchor]* category should be selectable.
 
 <u>Actual results</u>:
 
