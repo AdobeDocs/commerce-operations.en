@@ -3,8 +3,8 @@ title: 'ACSD-62689: Unable to add categories in [!UICONTROL Related Product Rule
 description: Apply the ACSD-62689 patch to fix the Adobe Commerce issue where a customer is unable to add categories in [!UICONTROL Related Product Rules] and widgets after depth four nesting.
 feature: Categories
 role: Admin, Developer
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
 ---
-
 # ACSD-62689: Unable to add categories in *[!UICONTROL Related Product Rules]* and widgets after depth 4
 
 The ACSD-62689 patch fixes the issue where a customer is unable to add categories in *[!UICONTROL Related Product Rules]* and widgets after depth four nesting. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57 is installed. The patch ID is ACSD-62689. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.

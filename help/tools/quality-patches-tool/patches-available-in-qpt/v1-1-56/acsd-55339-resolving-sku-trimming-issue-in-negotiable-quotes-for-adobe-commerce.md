@@ -1,8 +1,9 @@
 ---
 title: 'ACSD-55339: Resolving SKU trimming issue in negotiable quotes for Adobe Commerce'
 description: Apply the ACSD-55339 patch to fix the Adobe Commerce issue where product SKUs with leading zeros are trimmed, causing negotiation errors.
-feature:  B2B, Quotes
+feature: B2B, Quotes
 role: Admin, Developer
+exl-id: 7a9f92df-fb3e-4723-b731-155c6c4fc431
 ---
 # ACSD-55339: Resolving SKU trimming issue in negotiable quotes for Adobe Commerce
 
