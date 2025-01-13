@@ -3,8 +3,8 @@ title: 'ACSD-60811: Fixes limitation in updating order status to custom values'
 description: Apply the ACSD-60811 patch to fix the Adobe Commerce issue where updating order status with custom value or comment is only possible if the current status is either 'processing' or 'fraud.'
 feature: Orders, Admin Workspace
 role: Admin, Developer
+exl-id: 6d5391b3-7014-4d0a-b4ab-799f0733bbca
 ---
-
 # ACSD-60811: Fixes limitation in updating order status to custom values
 
 The ACSD-60811 patch fixes the issue where updating the order status with a custom value or comment is only possible if the current status is either '[!UICONTROL Processing]' or '[!UICONTROL Suspected Fraud].' This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-60811. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
