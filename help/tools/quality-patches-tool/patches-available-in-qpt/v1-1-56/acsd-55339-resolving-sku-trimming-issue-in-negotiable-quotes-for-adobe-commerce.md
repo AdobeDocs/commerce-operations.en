@@ -29,12 +29,12 @@ Numeric product SKUs with leading zeros are trimmed when used in negotiable quot
 <u>Steps to reproduce</u>:
 
 1. Navigate to the product creation section in the admin panel.
-1. Set the SKU for the product as *01910*.
+1. Set the [!UICONTROL SKU] for the product as 01910.
 1. Log in to the storefront and perform the following operations:
     1. Add product to the cart.
     1. View and edit the cart.
     1. Request a quote.
-1. Go to [!UICONTROL admin] >  [!UICONTROL Quote] > [!UICONTROL View] and add product by SKU - *01910*.
+1. Go to [!UICONTROL admin] > [!UICONTROL Quote] > [!UICONTROL View] and [!UICONTROL Add Products by SKU] - 01910.
 
 **Note:** The SKU is displayed as *1910* instead of *01910*. This discrepancy prevents the user from updating the quantity or setting prices, as no product with the SKU 1910 exists in the catalog.
 
