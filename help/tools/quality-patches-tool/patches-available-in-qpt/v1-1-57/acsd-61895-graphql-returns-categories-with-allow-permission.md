@@ -1,13 +1,13 @@
 ---
-title: "ACSD-61895: [!DNL GraphQL] category query returns categories with allow permission"
-description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where the [!DNL GraphQL] category query returns categories with allow permission even if the root category does not have allow permission.
-feature: Categories, [!DNL GraphQL], Roles/Permissions
+title: 'ACSD-61895: [!DNL GraphQL] category query fails for private shared catalog with restricted view'
+description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where the [!DNL GraphQL] category query returns no categories when a company user is assigned to a private shared catalog with restricted category view.
+feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 ---
 
-# ACSD-61895: [!DNL GraphQL] 'category' query returns categories with allow permission
+# ACSD-61895: [!DNL GraphQL] `category` query fails for private shared catalog with restricted view
 
-The ACSD-61895 patch fixes the issue where the [!DNL GraphQL] category query returns categories with allow permission even if the root category does not have allow permission. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61895. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61895 patch fixes the issue where the [!DNL GraphQL] `category` query returns no categories when a company user is assigned to a private shared catalog with restricted category view. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61895. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,19 +25,69 @@ The ACSD-61895 patch fixes the issue where the [!DNL GraphQL] category query ret
 
 ## Issue
 
-The [!DNL GraphQL] *category* query is returning nothing when a company user is assigned to a private shared catalog with restricted category view.
+The [!DNL GraphQL] `category` query returns no categories when a company user is assigned to a private shared catalog with restricted category view.
+
+However, after the fix, it returns categories with allow permission even if the root category doesn not have allow permission.
 
 <u>Steps to reproduce</u>:
 
+1. Install Adobe Commerce with B2B and sample data.
+1. Ensure that B2B features are enabled.
+1. Create two shared catalogs: one public and one private.
+
+    * Public Shared Catalog: 
+    
+        * Assign all categories to the public catalog.
+
+    * Private Shared Catalog: 
+    
+        * Assign only the `Gear` category and its child categories to the private catalog.
+        * Assign the private catalog to a test company.
+
+1. Create a company user:
+
+    * Create a user associated with the test company linked to the private shared catalog.
+    * Ensure that the user is only able to access the `Gear` category and its child categories on the frontend when logged in.
+
+1. Query categories via API:
+
+    * Use API client to execute the following [!DNL GraphQL] query without a customer token:
+
+    ```
+    query Categories { 
+        categories { 
+            items { 
+                children_count 
+                children { 
+                    uid 
+                    name 
+                    children_count 
+                    children { 
+                    uid 
+                    name 
+                    } 
+                } 
+            } 
+        } 
+    }
+    ```
+
+1. Observe the response and verify if the `Gear` category and other categories are returned.
+1. Now query categories with a customer token:
+
+    * Log in as the test company user.
+    * Execute the same [!DNL GraphQL] category query, but include the customer token for the logged-in user.
+    * Observe the response and check if only the `Gear` category and its child categories are returned.
 
 
 <u>Expected results</u>:
 
-
+* When querying as a *guest* user, all categories should be returned (as expected).
+* When querying as the *test company user*, only the `Gear` category and its child categories should be returned.
 
 <u>Actual results</u>:
 
-
+The response from the `category` query shows no categories.
 
 ## Apply the patch
 
