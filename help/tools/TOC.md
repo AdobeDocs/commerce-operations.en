@@ -698,7 +698,7 @@ feature: Configuration
             - [ACSD-62758: Resolved video rendering issue on configurable product pages](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
             - [ACSD-63326: Fix admin redirection issue after placing an order from the backend](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
             - [ACSD-58325: [!UICONTROL Import] button available even after a validation error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
-            - [ACSD-61895: [!DNL GraphQL] category query returns categories with allow permission](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-returns-categories-with-allow-permission.md)-
+            - [ACSD-61895: [!DNL GraphQL] category query fails for private shared catalog with restricted view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-returns-categories-with-allow-permission.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
