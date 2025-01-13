@@ -710,6 +710,7 @@ feature: Configuration
             - [ACSD-63286: Products assigned to shared catalog need manual reindexing to appear](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
             - [ACSD-58325: [!UICONTROL Import] button available even after a validation error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
             - [ACSD-62671: [!DNL GraphQL] does not return updated address on first attempt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
+            - [ACSD-62481: Shopping cart remains empty even with [!UICONTROL Persistence] enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
