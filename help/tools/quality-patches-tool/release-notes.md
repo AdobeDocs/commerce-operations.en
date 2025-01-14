@@ -15,6 +15,24 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.58 {#v1-1-58}
+
+* **ACSD-48570** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the reset password page couldn't be reached by clicking the Admin reset password link when "Add Store Code to URLs" was enabled, which previously resulted in the login page or a 404 page being displayed.
+* **ACSD-62118** (for Adobe Commerce >=2.4.6 <2.4.8) - Fixes the issue where the sales_order_tax_item table isn't fully updated when B2B orders are placed using the Purchase Order method.
+* **ACSD-63067** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where all product quantities are incorrectly highlighted, and the message "Please specify the quantity of product(s)." is displayed for all products in a grouped product when only one quantity is incorrect.
+* **ACSD-63090** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where shopping cart items are removed when a product is deleted, after being added to the cart.
+* **ACSD-63182** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where an error occurs when saving a duplicated bundle product with MSI enabled.
+* **ACSD-63283** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where ordering items from the gift registry causes an exception and where gift registry updates include items that don't belong to the registry.
+* **ACSD-63299** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the special price for a configurable product doesn't display on the storefront.
+* **ACSD-63325** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where a "Syntax Error: Unexpected <EOF>" error occurs when submitting an empty GraphQL request.
+* **ACSD-63329** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the default values for attributes with "Date" or "Date and Time" input types aren't set when creating products via the REST API.
+* **ACSD-63572** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where the CatalogRule indexer temporary tables aren't cleaned up if the indexer process is terminated.
+* **ACSD-63578** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where clicking the "Delete" button in "Add to Order by SKU" in the Admin doesn't remove the SKU.
+* Versions updated: **MDVA-39305-V3**
+* Replaced patches: **ACSD-56280**
+* Deprecated patches: **ACSD-62872**
+
+
 ## v1.1.57 {#v1-1-57}
 
 * **ACSD-57570** (for Adobe Commerce >=2.4.4 <2.4.4-p10) - Fixes the issue where a restricted admin user with access to a particular store can't always see all shared catalogs to which the products are assigned, nor can see customers that can't be saved, leading to inconsistencies in the system.
