@@ -2,7 +2,75 @@
 
 ## Highlights in v2.4.8-beta2
 
-TBD
+The following 30 highlights apply to the Magento Open Source 2.4.8 release.
+
+### Braintree
+
+* _BUNDLE-3400_: Remove Unsupported LPMs
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3401_: Google Pay Mark
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3402_: Apple Pay Mark
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3403_: Google Pay Shipping Call Back
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3404_: Pay Later Messaging
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3405_: JS-SDK button
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3406_: Optimise code within the Braintree extension
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3407_: Update Braintree PHP and JS SDK
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3408_: Line Items (GooglePay)
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3409_: Line Items (Apple Pay)
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+* _BUNDLE-3420_: Package Tracking
+  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/208>
+
+### Framework
+
+* _AC-12012_: Update Nginx version from 1.24 to 1.26
+* _AC-12028_: Add compatibility with the latest Composer 2.8 version for 2.4.8 and 2.4.7
+* _AC-12029_: Check compatibility with Varnish 7.6
+* _AC-12970_: PHPUnit 10 upgrade part 2 - Remove Deprecations
+  * _Fix note_: Updated the phpunit/phpunit composer dependencies to compatible version - "phpunit/phpunit":"10.x"
+* _AC-13076_: Update all js library and npm dependency with latest available version
+  * _Fix note_: composer version support was up to the composer version 2.2.x only. Now the support extended to 2.4.x version as well.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/19844aa0>
+* _AC-13077_: All bundled extensions and integrated components are compatible with PHP 8.4
+* _AC-13078_: All the Adobe Commerce tools are compatible with PHP 8.4
+* _AC-13079_: All the Adobe Commerce project laminas/dependencies are compatible with PHP 8.4
+* _AC-13256_: Downgrade TinyMCE dependency from version 7 to version 6.8.5
+* _AC-13276_: PHP 8.4 deprecations require Adobe Commerce breaking changes
+* _AC-8828_: Set default collation to utf8mb4 for MySQL
+
+### Other
+
+* _AC-12133_: Adobe Commerce 2.4.8 core code is compatible with PHP 8.4
+* _AC-12972_: 2.4.8-beta2 Core Quality Improvements
+* _AC-13038_: Remove PHP 8.1 from composer.json and all related support
+* _AC-13448_: Deliver tier-price operations performance improvement patch into 2.4.8
+  * _Fix note_: The system now allows for more efficient bulk updates of tier prices without causing performance issues or site unresponsiveness when using the "/V1/products/tier-prices" REST API endpoint. Previously, updating a large number of prices using this endpoint could result in performance issues and site unresponsiveness.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/082d981c>
+* _AC-13550_: Remove all the Adobe confidential copyright notices from the Magento Open Source repositories
+  * _Fix note_: All Adobe confidential copyright notices have been removed from the open source repositories, ensuring that only the reduced form of Adobe copyright is used. Previously, some files in the public repositories contained Adobe confidential copyright notices, which led to escalations from the community.
+  * _GitHub issue_: <https://github.com/magento/magento2/issues/39493>
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/4bca5dfe>
+
+### Security
+
+* _AC-10982_: [2FA] Integrate with Duo Web SDK to support Universal Prompt
+  * _Fix note_: TBD
+
+### Test framework
+
+* _AC-9037_: Ability to use Adobe copyright for Adobe Commerce source code
+
+### UI Framework
+
+* _AC-12944_: Remove TinyMCE 5 from adobe commerce
 
 ## Fixed issues in v2.4.8-beta2
 

@@ -4,8 +4,11 @@
 
 ## Highlights in v2.4.8-beta2
 
-TBD
+{%- assign fixes = site.data.release.highlights.v2-4-8-beta2 %}
 
+The following {{fixes | size }} highlights apply to the Magento Open Source 2.4.8 release.
+
+{%- include release/fixed-issues.html %}
 ## Fixed issues in v2.4.8-beta2
 
 {%- assign fixes = site.data.release.fixed-issues.v2-4-8-beta2 | where_exp:"item", "item['Custom field (Git Pull Request)'] != empty" %}
