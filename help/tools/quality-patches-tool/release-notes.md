@@ -24,7 +24,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-63182** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where an error occurs when saving a duplicated bundle product with **[!DNL MSI]** *enabled*.
 * **ACSD-63283** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where ordering items from the gift registry causes an exception and where gift registry updates include items that don't belong to the registry.
 * **ACSD-63299** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the special price for a configurable product doesn't display on the storefront.
-* **ACSD-63325** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where a *[!DNL Syntax Error: Unexpected <EOF>]* error occurs when submitting an empty [!DNL GraphQL] request.
+* **ACSD-63325** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where a `Syntax Error: Unexpected <EOF>` error occurs when submitting an empty [!DNL GraphQL] request.
 * **ACSD-63329** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the default values for attributes with **[!UICONTROL Date]** or **[!UICONTROL Date and Time]** input types aren't set when creating products via the [!DNL REST API].
 * **ACSD-63572** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where the `CatalogRule` indexer temporary tables aren't cleaned up if the indexer process is terminated.
 * **ACSD-63578** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where clicking the **[!UICONTROL Delete]** button in **[!UICONTROL Add to Order by SKU]** in the [!UICONTROL Admin] doesn't remove the [!DNL SKU].
