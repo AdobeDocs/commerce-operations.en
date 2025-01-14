@@ -32,7 +32,6 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * Replaced patches: **ACSD-56280**
 * Deprecated patches: **ACSD-62872**
 
-
 ## v1.1.57 {#v1-1-57}
 
 * **ACSD-57570** (for Adobe Commerce >=2.4.4 <2.4.4-p10) - Fixes the issue where a restricted admin user with access to a particular store can't always see all shared catalogs to which the products are assigned, nor can see customers that can't be saved, leading to inconsistencies in the system.
