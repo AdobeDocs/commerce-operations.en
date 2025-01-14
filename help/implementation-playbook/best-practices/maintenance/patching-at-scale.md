@@ -3,7 +3,7 @@ title: Best practices for distributing patches at scale
 description: Learn how centralized patching for Adobe Commerce can help you manage enterprise projects.
 role: Developer
 feature: Best Practices
-badge: label="Contributed by Anton Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contributed by Anton Evers"
+badge: label="Contributed by Tony Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contributed by Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 ---
 # Best practices for distributing Adobe Commerce patches at scale
