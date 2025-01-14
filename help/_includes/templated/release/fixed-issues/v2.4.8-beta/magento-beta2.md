@@ -50,7 +50,7 @@ The following 30 highlights apply to the Magento Open Source 2.4.8 release.
 
 * _AC-12133_: Adobe Commerce 2.4.8 core code is compatible with PHP 8.4
 * _AC-12972_: 2.4.8-beta2 Core Quality Improvements
-* _AC-13038_: Remove PHP 8.1 from composer.json and all related support	
+* _AC-13038_: Remove PHP 8.1 from composer.json and all related support
 * _AC-13448_: Deliver tier-price operations performance improvement patch into 2.4.8
   * _Fix note_: The system now allows for more efficient bulk updates of tier prices without causing performance issues or site unresponsiveness when using the "/V1/products/tier-prices" REST API endpoint. Previously, updating a large number of prices using this endpoint could result in performance issues and site unresponsiveness.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/082d981c>
