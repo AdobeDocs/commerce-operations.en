@@ -23,7 +23,7 @@ The date when support of the 2.4.8 release line ends has not been set yet.
 
 ## 2.4.7
 
-Support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
+Support for the 2.4.7 release line ends on April 9, 2027.
 
 <table>
   <thead>
@@ -62,7 +62,7 @@ Support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
 
 ## 2.4.6
 
-Support for the 2.4.6 release line ends on March&nbsp;14, 2026.
+Support for the 2.4.6 release line ends on August 11, 2026.
 
 <table>
   <thead>
