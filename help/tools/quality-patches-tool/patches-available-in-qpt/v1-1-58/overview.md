@@ -3,6 +3,7 @@ title: 'Overview: [!DNL Quality Patches Tool] (QPT) v1.1.58'
 description: This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.58.
 feature: Tools and External Services
 role: Admin, Developer
+exl-id: 61bf8b82-f897-41f6-8524-5aa74c6440f1
 ---
 # Overview: [!DNL Quality Patches Tool] (QPT) v1.1.58
 
@@ -23,4 +24,3 @@ QPT v1.1.58 includes the following patches:
 1. **ACSD-63578**: Fixes the issue where clicking the **[!UICONTROL Delete]** button in **[!UICONTROL Add to Order by SKU]** in the [!UICONTROL Admin] doesn't remove the [!DNL SKU].
 
 Use the menu on the left to navigate to a specific patch page.
-
