@@ -7,7 +7,7 @@ exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
 ---
 # ACSD-63286: Products assigned to shared catalog need manual reindexing to appear
 
-The ACSD-63286 patch fixes the issue where products assigned to a shared catalog via API do not appear on the storefront until a manual reindex is executed. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-63286. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63286 patch fixes the issue where products assigned to a shared catalog via API do not appear on the storefront until a manual reindex is executed. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-63286. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
