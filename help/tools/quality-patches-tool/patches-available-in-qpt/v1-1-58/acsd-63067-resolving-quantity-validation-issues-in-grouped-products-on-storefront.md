@@ -1,10 +1,10 @@
 ---
-title: 'ACSD-63067: Resolving quantity validation issues in grouped products on Storefront'
+title: 'ACSD-63067: Resolving quantity validation issues in grouped products on storefront'
 description: Apply the ACSD-63067 patch to fix the Adobe Commerce issue where all product quantities in grouped products are incorrectly highlighted as invalid when only one product has an incorrect quantity.
 feature: Storefront
 role: Admin, Developer
 ---
-# ACSD-63067: Resolving quantity validation issues in grouped products on Storefront
+# ACSD-63067: Resolving quantity validation issues in grouped products on storefront
 
 The ACSD-63067 patch fixes the issue where all product quantities in grouped products are incorrectly highlighted as invalid when only one product has an incorrect quantity. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63067. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
 
 ## Issue
 
-An issue occurs in grouped products where an invalid quantity in one of the sub-products leads to all quantities being incorrectly highlighted as invalid. Additionally, a validation message appears for all products instead of only for the one with the invalid quantity.
+In grouped products, an invalid quantity in one of the sub-products causes all quantities to be incorrectly highlighted as invalid. Additionally, a validation message appears for all products instead of only for the one with the invalid quantity.
 
 <u>Steps to reproduce</u>:
 
@@ -39,7 +39,7 @@ Only the product with the invalid quantity is highlighted as invalid.
 
 <u>Actual results</u>:
 
-All product quantities are highlighted as invalid, and the message "Please specify the quantity of product(s)." is displayed for all products.
+All product quantities are highlighted as invalid, and the message Please specify the quantity of product(s). is displayed for all products.
 
 
 ## Apply the patch
