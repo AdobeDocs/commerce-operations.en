@@ -6,7 +6,7 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 # Release notes for Adobe Commerce 2.4.6 security patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## 2.4.6-p8
 
@@ -18,11 +18,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ### Hotfixes included in this release
 
-{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
 ## 2.4.6-p7
 
@@ -32,11 +32,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### Hotfixes included in this release
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.6-p6
 
@@ -48,13 +48,13 @@ For compatibility with Commerce version 2.4.6-p6, merchants that have the Adobe 
 
 ### Apply hotfix for CVE-2024-34102
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 For compatibility with Commerce version 2.4.6-p6, merchants that have the Adobe Commerce B2B extension must upgrade to [B2B version 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
+{{$include /help/_includes/release-notes/highlights/2-4-7-security.md}}
 
 ## 2.4.6-p5
 
