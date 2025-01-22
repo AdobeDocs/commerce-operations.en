@@ -62,7 +62,7 @@ Support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
 
 ## 2.4.6
 
-Support for the 2.4.6 release line ends on March&nbsp;14, 2026.
+Support for the 2.4.6 release line ends on August&nbsp;11, 2026.
 
 <table>
   <thead>

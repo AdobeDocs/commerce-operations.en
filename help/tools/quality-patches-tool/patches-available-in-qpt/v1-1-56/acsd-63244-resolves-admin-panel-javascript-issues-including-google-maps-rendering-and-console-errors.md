@@ -5,7 +5,7 @@ feature: Admin Workspace
 role: Admin, Developer
 exl-id: 1985c845-219e-4af4-8f70-62dd57722494
 ---
-# ACSD-63244: ACSD-63244: Resolve admin panel JavaScript issues, including [!DNL Google Maps] rendering and console errors
+# ACSD-63244: Resolve admin panel JavaScript issues, including [!DNL Google Maps] rendering and console errors
 
 The ACSD-63244 patch fixes the multiple JavaScript issues in the admin panel, including problems with [!DNL Google Maps] rendering and recurring `Uncaught TypeError: this._each is not a function` errors in the browser console. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. The patch ID is ACSD-63244. Please note that the issue was is scheduled to be fixed in Adobe Commerce 2.4.8.
 
