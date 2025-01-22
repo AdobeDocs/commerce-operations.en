@@ -714,6 +714,7 @@ feature: Configuration
             - [ACSD-62671: [!DNL GraphQL] does not return updated address on first attempt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
         - v1.1.58 {#v1-1-58}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
+            - [ACSD-63067: Resolving quantity validation issues in grouped products on storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
             - [ACSD-62118: sales_order_tax_item table not fully updated for B2B orders placed using the [!UICONTROL Purchase Order] method](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
