@@ -3,8 +3,8 @@ title: 'ACSD-62481: Shopping cart remains empty even with [!UICONTROL Persistenc
 description: Apply the ACSD-62481 patch to fix the Adobe Commerce issue where the persistent cart feature fails when using the login pop-up during checkout.
 feature: Shopping Cart, Checkout
 role: Admin, Developer
+exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
 ---
-
 # ACSD-62481: Shopping cart remains empty even with *[!UICONTROL Persistence]* enabled
 
 The ACSD-62481 patch fixes the issue where the persistent cart feature fails when using the login pop-up during checkout because it lacks the *[!UICONTROL Remember Me]* checkbox, causing products to disappear from the cart after signing out. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-62481. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
