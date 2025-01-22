@@ -32,6 +32,7 @@ It is recommended that merchants use the most recent version of a service to ens
 * Adobe Commerce Services are currently compatible with Commerce 2.4.4 and later. It is recommended that merchants use the latest version of the service.
 * Services are considered compatible with earlier versions of Commerce 2.4.x but are not officially supported.
 * Services are not compatible with Commerce 2.3.x, except for Product Recommendations 3.3.7 and earlier.
+* The Payments service is currently compatible with Magento Open Source 2.4.4 and later. It is recommended that merchants use the latest version of the service.
 
 The following table shows the version support for each service relative to the Adobe Commerce version.
 
