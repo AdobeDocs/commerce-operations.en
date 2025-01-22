@@ -39,7 +39,7 @@ Only the product with the invalid quantity is highlighted as invalid.
 
 <u>Actual results</u>:
 
-All product quantities are highlighted as invalid, and the message Please specify the quantity of product(s). is displayed for all products.
+All product quantities are highlighted as invalid, and the message *Please specify the quantity of product(s). is displayed for all products*.
 
 
 ## Apply the patch
