@@ -3,6 +3,7 @@ title: 'ACSD-63067: Resolving quantity validation issues in grouped products on 
 description: Apply the ACSD-63067 patch to fix the Adobe Commerce issue where all product quantities in grouped products are incorrectly highlighted as invalid when only one product has an incorrect quantity.
 feature: Storefront
 role: Admin, Developer
+exl-id: a497f2c4-8bf0-41da-955a-a58e79f09c08
 ---
 # ACSD-63067: Resolving quantity validation issues in grouped products on storefront
 
