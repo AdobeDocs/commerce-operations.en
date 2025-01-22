@@ -3,6 +3,7 @@ title: 'ACSD-62212: [!UICONTROL Forgot Password] email not translated to store v
 description: Apply the ACSD-62212 patch to fix the Adobe Commerce issue where the content of the *[!UICONTROL Forgot Password]* email is not translated to the store view's language.
 feature: GraphQL
 role: Admin, Developer
+exl-id: 29e6f2fa-574f-4ab1-82f5-88e1eb1de83e
 ---
 # ACSD-62212: *[!UICONTROL Forgot Password]* email not translated to store view language
 
