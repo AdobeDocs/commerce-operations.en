@@ -1,13 +1,17 @@
 ---
 title: 'ACSD-61895: [!DNL GraphQL] category query fails for private shared catalog with restricted view'
-description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where the [!DNL GraphQL] category query returns no categories when a company user is assigned to a private shared catalog with restricted category view.
+description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where [!DNL GraphQL] query does not return categories with allow permission under public shared catalog, when a guest customer is assigned to a private shared catalog with restrictions for the same categories.
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 ---
 
 # ACSD-61895: [!DNL GraphQL] `category` query fails for private shared catalog with restricted view
 
-The ACSD-61895 patch fixes the issue where the [!DNL GraphQL] `category` query returns no categories when a company user is assigned to a private shared catalog with restricted category view. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61895. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-61895 patch fixes the issue where [!DNL GraphQL] `categories` query does not return categories with allow permission under a public shared catalog when a guest customer is assigned to a private shared catalog with restrictions for the same categories. 
+
+After the fix, it returns categories with allow permission under a public shared catalog, even if the root category doesn't have allow permission in the scope of a private shared catalog. 
+
+This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61895. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,9 +29,7 @@ The ACSD-61895 patch fixes the issue where the [!DNL GraphQL] `category` query r
 
 ## Issue
 
-The [!DNL GraphQL] `category` query returns no categories when a company user is assigned to a private shared catalog with restricted category view.
-
-However, after the fix, it returns categories with allow permission even if the root category doesn not have allow permission.
+[!DNL GraphQL] `categories` query does not return categories with allow permission under a public shared catalog when a guest customer is assigned to a private shared catalog with restrictions for the same categories.
 
 <u>Steps to reproduce</u>:
 
