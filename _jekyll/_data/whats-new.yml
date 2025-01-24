@@ -1,9 +1,282 @@
 ---
 title: What's New
-description: This page contains the changes made in the last 60 days. We
-  exclude all minor updates, such as copy editing, from this list.
-updated: Thu Jan 2 14:06:40 2025
+description: This page contains the changes made in the last 60 days. We exclude all
+  minor updates, such as copy editing, from this list.
+updated: Fri Jan 24 19:24:27 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-62212
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language)
+  versions: ''
+  type: new-topic
+  date: January 22, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1138
+  merge_commit: 9a00ebde10ad5dd916fd7afeb73e5e6aeec32495
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-62481
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled)
+  versions: ''
+  type: new-topic
+  date: January 22, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1156
+  merge_commit: 94781de6a8ec4e342299da5a64bef1a9a2d14366
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-62118
+    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method)
+  versions: ''
+  type: new-topic
+  date: January 22, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1171
+  merge_commit: 7fb220f5a55f6ff40fddf980537262d933f993dc
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview)
+  versions: ''
+  type: new-topic
+  date: January 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1169
+  merge_commit: 657f4f1f497fca7a8f1278be73284bf558c5769e
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-62708
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue)
+  versions: ''
+  type: new-topic
+  date: January 15, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1137
+  merge_commit: da761a8db901b5b95b4682dfb7721cc53e2c842a
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-62689
+    patch in the QPT 1.1.57 release]<br/>(https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets)
+  versions: ''
+  type: new-topic
+  date: January 13, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1136
+  merge_commit: a6a62dea458a8e70c432c83fc7c75a4f0a26aacb
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-55339
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce)
+  versions: ''
+  type: new-topic
+  date: January 13, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1148
+  merge_commit: c7311e6c665a018c3da30f37fea2c35487034795
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-61805
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api)
+  versions: ''
+  type: new-topic
+  date: January 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1122
+  merge_commit: cac43e2e74ddfa0fa77603100a73e2894510b552
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-62629
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62629-product-list-widgets-category-condition)
+  versions: ''
+  type: new-topic
+  date: January 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1131
+  merge_commit: cab2b42f8fa02419d0ca4164e74cc87dd344b3e4
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-62755
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting)
+  versions: ''
+  type: new-topic
+  date: January 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1123
+  merge_commit: 5a785f5111778a36e1556ecc3443d37f50ffc435
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62670
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error)
+  versions: ''
+  type: new-topic
+  date: January 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1125
+  merge_commit: 1d04fa3c26e1762156f99837ea75e38a142bf595
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-60811
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values)
+  versions: ''
+  type: new-topic
+  date: January 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1126
+  merge_commit: 1def9cb825b4935987727a6b27b01482a3f91ba7
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-57570
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access)
+  versions: ''
+  type: new-topic
+  date: January 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1129
+  merge_commit: 7e40cf7e683ac578614d61233cae2155ab2f777e
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-63244
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63244-resolves-admin-panel-javascript-issues-including-google-maps-rendering-and-console-errors)
+  versions: ''
+  type: new-topic
+  date: January 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1117
+  merge_commit: 4bff3aebf07c922e1121468d556facdfd7c7bad1
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62355
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce)
+  versions: ''
+  type: new-topic
+  date: January 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1121
+  merge_commit: d6544587a287ce8374933f25bed69fa45dab2e97
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-61622
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response)
+  versions: ''
+  type: new-topic
+  date: January 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1133
+  merge_commit: dd7956e3577b47faef15350b06c9f38ca36899da
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62635
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql)
+  versions: ''
+  type: new-topic
+  date: January 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1139
+  merge_commit: 71e2d772e0cf118c0f47a65e1b81360741d71f5a
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62671
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt)
+  versions: ''
+  type: new-topic
+  date: January 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1140
+  merge_commit: 72c7e7d96c9adffba8d3c48fc4a3f0f961268a4c
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-63286
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear)
+  versions: ''
+  type: new-topic
+  date: January 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1146
+  merge_commit: a0a2b5ad10c5f38603963af036fb280988df612d
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62952
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront)
+  versions: ''
+  type: new-topic
+  date: January 3, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1114
+  merge_commit: 5d612d7f4a57824aae06e8dcff86c4534e451f68
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62872
+    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly)
+  versions: ''
+  type: new-topic
+  date: January 3, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1116
+  merge_commit: 374deb66f7fb8081318a966f78fe3b1bd4ced2a0
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62758
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages)
+  versions: ''
+  type: new-topic
+  date: January 3, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1130
+  merge_commit: f6582b9c90f84d99335534f25d38aa2bff9d02be
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62965
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response)
+  versions: ''
+  type: new-topic
+  date: January 3, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1132
+  merge_commit: 427969b0e983065cbaad20d7b960a023ae238299
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-58325
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error)
+  versions: ''
+  type: new-topic
+  date: January 3, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1143
+  merge_commit: 9a46f93eab7e2cb3da76941a6d8a2ef636fd8696
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
 - description: Added the [detailed description of the issue fixed by the ACSD-63326
     patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend)
   versions: ''
