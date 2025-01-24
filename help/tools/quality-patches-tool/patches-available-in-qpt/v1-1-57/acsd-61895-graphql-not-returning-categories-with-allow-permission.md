@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-61895: [!DNL GraphQL] category query fails for private shared catalog with restricted view'
-description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where [!DNL GraphQL] query does not return categories with allow permission under public shared catalog, when a guest customer is assigned to a private shared catalog with restrictions for the same categories.
+title: 'ACSD-61895: [!DNL GraphQL] categories query fails for private shared catalog with restricted view'
+description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where [!DNL GraphQL] categories query does not return categories with allow permission under public shared catalog, when the guest customer is assigned to a private shared catalog with restrictions for the same categories.
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 ---
 
-# ACSD-61895: [!DNL GraphQL] `category` query fails for private shared catalog with restricted view
+# ACSD-61895: [!DNL GraphQL] `categories` query fails for private shared catalog with restricted view
 
-The ACSD-61895 patch fixes the issue where [!DNL GraphQL] `categories` query does not return categories with allow permission under a public shared catalog, when a guest customer is assigned to a private shared catalog with restrictions for the same categories. 
+The ACSD-61895 patch fixes the issue where [!DNL GraphQL] `categories` query does not return categories with allow permission under a public shared catalog, when the guest customer is assigned to a private shared catalog with restrictions for the same categories. 
 
 After the fix, it returns categories with allow permission under a public shared catalog, even if the root category doesn't have allow permission in the scope of a private shared catalog. 
 
@@ -29,7 +29,7 @@ This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools
 
 ## Issue
 
-[!DNL GraphQL] `categories` query does not return categories with allow permission under a public shared catalog, when a guest customer is assigned to a private shared catalog with restrictions for the same categories.
+[!DNL GraphQL] `categories` query does not return categories with allow permission under a public shared catalog, when the guest customer is assigned to a private shared catalog with restrictions for the same categories.
 
 <u>Steps to reproduce</u>:
 
@@ -55,7 +55,7 @@ This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools
 
     * Use API client to execute the following [!DNL GraphQL] query without a customer token:
 
-    ```
+    ```graphql
     query Categories { 
         categories { 
             items { 
@@ -84,12 +84,11 @@ This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools
 
 <u>Expected results</u>:
 
-* When querying as a *guest* user, all categories should be returned (as expected).
-* When querying as the *test company user*, only the `Gear` category and its child categories should be returned.
+When querying as a guest company user, all categories should be returned (as expected).
 
 <u>Actual results</u>:
 
-The response from the `category` query shows no categories.
+The response from the `categories` query shows no categories.
 
 ## Apply the patch
 
