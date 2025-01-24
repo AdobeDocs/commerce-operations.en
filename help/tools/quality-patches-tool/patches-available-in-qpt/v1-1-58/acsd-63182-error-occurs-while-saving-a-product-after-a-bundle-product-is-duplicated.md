@@ -1,7 +1,7 @@
 ---
 title: "ACSD-63182: Error occurs while saving a product after a bundle product is duplicated"
 description: Apply the ACSD-63182 patch to fix the Adobe Commerce issue where an error occurs while saving a product after a bundle product is duplicated with [!UICONTROL MSI] enabled.
-feature: Inventory, Catalog management
+feature: Inventory, Catalog Management
 Role: Admin, Developer
 ---
 
