@@ -1,15 +1,15 @@
 ---
 title: 'ACSD-61895: [!DNL GraphQL] categories query fails for private shared catalog with restricted view'
-description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where [!DNL GraphQL] categories query does not return categories with allow permission under public shared catalog, when the guest customer is assigned to a private shared catalog with restrictions for the same categories.
+description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where [!DNL GraphQL] responses for guest customers (using a public shared catalog with all allowed categories) did not return any categories when a private shared catalog with restrictions was created for the same categories.
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 ---
 
 # ACSD-61895: [!DNL GraphQL] `categories` query fails for private shared catalog with restricted view
 
-The ACSD-61895 patch fixes the issue where [!DNL GraphQL] `categories` query does not return categories with allow permission under a public shared catalog, when the guest customer is assigned to a private shared catalog with restrictions for the same categories. 
+The ACSD-61895 patch fixes the issue where [!DNL GraphQL] responses for guest customers (using a public shared catalog with all allowed categories) did not return any categories when a private shared catalog with restrictions was created for the same categories. 
 
-After the fix, it returns categories with allow permission under a public shared catalog, even if the root category doesn't have allow permission in the scope of a private shared catalog. 
+After the fix, it returns all categories with allow permissions (public shared catalog) for guest users, even if the root category doesn't have allow permission in the scope of a private shared catalog. 
 
 This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-61895. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -29,7 +29,7 @@ This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools
 
 ## Issue
 
-[!DNL GraphQL] `categories` query does not return categories with allow permission under a public shared catalog, when the guest customer is assigned to a private shared catalog with restrictions for the same categories.
+[!DNL GraphQL] responses for guest customers (using a public shared catalog with all allowed categories) do not return any categories when a private shared catalog with restrictions is created for the same categories. 
 
 <u>Steps to reproduce</u>:
 
