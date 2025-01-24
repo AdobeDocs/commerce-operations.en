@@ -1,21 +1,23 @@
 ---
-title: 'ACSD-58325: [!UICONTROL Import] button available even after a validation error'
-description: Apply the ACSD-58325 patch to fix the Adobe Commerce issue where the [!UICONTROL Import] button is available even after a validation error.
-feature: Data Import/Export
+title: 'ACSD-62755: [!DNL TinyMCE] 7 needs font size and font added to editor initialization settings'
+description: Apply the ACSD-62755 patch to fix the Adobe Commerce issue where [!DNL TinyMCE] 7 requires *font size* and *font family* to be specifically added within editor initialization settings.
+feature: Page Content, Page Builder, Admin Workspace
 role: Admin, Developer
-exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+exl-id: f61dc7b6-ac6b-45eb-a0a2-f3f0bff4422b
 ---
-# ACSD-58325: [!UICONTROL Import] button available even after a validation error
+# ACSD-62755: [!DNL TinyMCE] 7 needs font size and font added to editor initialization settings
 
-The ACSD-58325 patch fixes the issue where the **[!UICONTROL Import]** button is available even after a validation error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-58325. Please note that the issue was fixed in Adobe Commerce 2.4.7.
+The ACSD-62755 patch fixes the issue where [!DNL TinyMCE] 7 requires *font size* and *font family* selectors to be specifically added within editor initialization settings. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62755. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
-* Adobe Commerce (all deployment methods) 2.4.6-p3
+
+Adobe Commerce (all deployment methods) 2.4.5-p10
 
 **Compatible with Adobe Commerce versions:**
-* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p8
+
+Adobe Commerce (all deployment methods) 2.4.4-p11, 2.4.5-p10, 2.4.6-p8, 2.4.7-p3 
 
 >[!NOTE]
 >
@@ -23,22 +25,19 @@ The ACSD-58325 patch fixes the issue where the **[!UICONTROL Import]** button is
 
 ## Issue
 
-The [!UICONTROL Import] button is available even after a validation error.
+[!DNL TinyMCE] 7 requires *font size* and *font family* selectors to be specifically added within editor initialization settings.
 
 <u>Steps to reproduce</u>:
 
-1. Create the CSV file for the product import with an incorrect image name in the file.
-1. Create a scheduled product import using the created CSV file.
-1. Wait until the scheduled import is performed.
-1. Check [!UICONTROL Last outcome] in **[!UICONTROL Scheduled Imports/Exports]** grid.
-
+Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Content]**, and select *[!UICONTROL Show Editor]*.
+    
 <u>Expected results</u>:
 
-[!UICONTROL Last outcome] should be [!UICONTROL Failed].
+*Font size* and *font family* selectors are visible in the WYSIWYG editor.
 
 <u>Actual results</u>:
 
-[!UICONTROL Last outcome] is [!UICONTROL Successful].
+*Font size* selector is missing from the WYSIWYG editor.
 
 ## Apply the patch
 
@@ -46,7 +45,6 @@ To apply individual patches, use the following links depending on your deploymen
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
-
 
 ## Related reading
 
