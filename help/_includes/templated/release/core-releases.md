@@ -212,7 +212,7 @@ Support for the 2.4.5 release line ends on August&nbsp; 9, 2025.
 
 ## 2.4.4
 
-Support for the 2.4.4 release line ends on April&nbsp;24, 2025.
+Support for the 2.4.4 release line ends on April&nbsp;12, 2025.
 
 <table>
   <thead>
