@@ -1,10 +1,10 @@
 ---
-title: "ACSD-63182: Error occurs while saving a product after bundle product duplication"
+title: 'ACSD-63182: Error occurs while saving a product after bundle product duplication'
 description: Apply the ACSD-63182 patch to fix the Adobe Commerce issue where an error occurs while saving a product after a bundle product is duplicated with MSI enabled.
 feature: Inventory, Catalog Management
 Role: Admin, Developer
+exl-id: 2c664c89-e00e-40a8-9127-8c3f36c5bab9
 ---
-
 # ACSD-63182: Error occurs while saving a product after bundle product duplication
 
 The ACSD-63182 patch fixes the issue where a simple product used as a bundle option could not be saved after the bundle product duplication. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63182. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
