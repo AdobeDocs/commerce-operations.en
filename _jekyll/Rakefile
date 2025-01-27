@@ -109,7 +109,7 @@ task :image_optim do
   system "bundle exec image_optim --recursive --no-svgo #{path}"
 end
 
-desc 'Find unused images. To exclude by regex pattern, use the "exclude_img" argument. Example of excluding a "layout" directory: "rake test:unused_includes exclude_img=/layout/"'
+desc 'Find unused images.'
 task :unused_images do
   puts 'Running a task for finding unused images (png,svg,jpeg,jpg,ico)'.magenta
   images = FileList['../help/**/*.{png,svg,jpeg,jpg,ico}']
