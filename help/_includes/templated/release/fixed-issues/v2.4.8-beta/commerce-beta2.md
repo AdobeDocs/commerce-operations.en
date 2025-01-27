@@ -2,7 +2,7 @@
 
 ## Fixed issues in v2.4.8-beta2
 
-We have fixed 185 issues in the Adobe Commerce 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 206 issues in the Adobe Commerce 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -78,7 +78,10 @@ Previously, after logging in, the products added to the compare list as a guest 
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39013>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38996>
 * _AC-13529_: Product import csv file with special characters fails due to code changes in Validate.php file
+  * _Fix note_: The system now correctly validates and imports product CSV files containing special characters, allowing for successful data transfer. Previously, attempting to import a product CSV file with special characters would result in an error, preventing the import process.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
+* _AC-13767_: When the Max Number of Password Reset Requests"  is set greater than 0 eg: 3 , "Exceeding limit error messages are sent before reching the limit i.e from second time
+* _AC-13768_: Though the Max Number of Password Reset Requests"  is set to 0( diabled) , "Exceeding limit error messages are sent from 2nd time"
 * _AC-7962_: No link to shipping when in payments in checkout in mobile phone view
   * _Fix note_: The system now ensures that the checkout titles/links "Shipping" and "Review & Payments" are always visible on top of the page in mobile view, allowing users to easily navigate between steps and make necessary corrections. Previously, these titles/links were hidden in mobile view, making it difficult for users to know their current step or go back to previous steps.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/36856>
@@ -93,10 +96,6 @@ Previously, after logging in, the products added to the compare list as a guest 
 * _ACP2E-3364_: Reset button doesn't work on Add/Edit admin user
   * _Fix note_: Previously, the Reset button did not function on the Add/Edit Admin User page. Now, in the Admin panel under System -> Permissions -> All Users, the Reset button will work correctly on the Add/Edit Admin User page.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/5184c067>
-* _ACP2E-3373_: [Cloud] Admin Panel exposed to the public - Custom Admin URL not effective
-  * _Fix note_: After the fix, if the custom admin domain is a subdomain of the main domain, the admin is accessible only from the configured subdomain.
-  * _GitHub issue_: <https://github.com/magento/magento2/issues/37663>
-  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/55615e61>
 * _ACP2E-3392_: Broken validation for “Maximum Qty Allowed in Shopping Cart”
   * _Fix note_: Previously, when we put `Maximum Qty Allowed in Shopping Cart` empty, it did not throw any exception, though an empty value is not accepted here. After this fix applies, putting an empty string will throw exceptions and will not allow saving the product.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d50f6b5d>
@@ -113,15 +112,10 @@ Previously, after logging in, the products added to the compare list as a guest 
   * _Fix note_: '-
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d50f6b5d>
 
-### Admin UI, Catalog
-
-* _ACP2E-3389_: Adobe Commerce backend loads categories very slowly
-  * _Fix note_: Improved performance of admin category page in case of large number of anchor categories
-  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/55615e61>
-
 ### Admin UI, Payment/ Payment Methods, Order
 
 * _AC-13520_: Transaction Authorization Not Displayed in Transaction Tab After PayPal Smart Button Order
+  * _Fix note_: The system now correctly displays the transaction authorization in the Transaction tab after an order is placed using the PayPal Smart Button. Previously, the authorization transaction was not appearing in the Transaction tab after clicking the "Authorize" button, and no new transaction of type "Authorization" was created.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 
 ### Admin UI, Staging & Preview
@@ -163,6 +157,7 @@ Previously, after logging in, the products added to the compare list as a guest 
 ### B2B
 
 * _AC-13501_: 2.4.8-beta102 package Enterprise edition is failing with application exceptions
+* _AC-13816_: Unable to enable b2b feature in backend admin for the first time
 * _ACP2E-2139_: Products assigned to shared catalog are not reflect on the front end when partial index is executed
   * _Fix note_: Products assigned to shared catalog via REST API are now immediately visible on storefront after partial indexing is complete. Previously, Products were visible only after a full re-indexation.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7377de59>
@@ -174,6 +169,10 @@ Previously, after logging in, the products added to the compare list as a guest 
 * _ACP2E-3474_: [CLOUD] No such entity with id = 0 with b2b module
   * _Fix note_: Logged in user is able to add product to cart when Shared Catalog features are enabled.
 Previously adding product to cart resulted in Error 'no such entity with id = 0'
+
+### B2B, Cart & Checkout
+
+* _AC-13817_: unable to see products on cart when b2b all features are enabled
 
 ### B2B, GraphQL
 
@@ -195,6 +194,7 @@ Previously adding product to cart resulted in Error 'no such entity with id = 0'
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38694>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/581b7ef1>
 * _AC-12479_: Terms and conditions checkbox is not allowing HTML on storefront
+  * _Fix note_: The system now supports HTML formatting in the "Terms and Conditions" checkbox text on the storefront, allowing for enhanced customization and readability. Previously, the checkbox text was displayed in plain text format, ignoring any HTML tags used.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 * _AC-12541_: Cart price rule created for logged in user incorrectly gets applied for not logged in user
   * _Fix note_: The system now correctly removes the cart price rule for logged-in users when they are automatically logged out due to cookie expiration, ensuring that the discount is not applied to non-logged-in users. Previously, the cart price rule was still applied even when the user was logged out, resulting in an incorrect discount being applied to non-logged-in users.
@@ -204,6 +204,7 @@ Previously adding product to cart resulted in Error 'no such entity with id = 0'
   * _Fix note_: The system now optimizes performance for large shopping carts by preventing duplicate getActions calls, enhancing the speed and efficiency of shopping cart operations. Previously, for a shopping cart with multiple items, the getActions function was called multiple times, slowing down the system's performance.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39292>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/39290>
+* _AC-13797_: Gift registry link isn't working properly
 * _ACP2E-3176_: [Cloud] quick order large amount of SKU performance
   * _Fix note_: Checkout performance has been improved when attributes used in cart price rules conditions are not present for all products and when MAP (Minimum advertised price) feature is enabled.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/66dea0de>
@@ -247,7 +248,9 @@ Previously adding product to cart resulted in Error 'no such entity with id = 0'
   * _GitHub issue_: <https://github.com/magento/magento2/issues/32322>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/31264>
 * _AC-13596_: Catalog Advanced Search with empty data goes to search result page[2.4.dev branch]
+  * _Fix note_: The system now correctly retains users on the Advanced Search page and displays an error message when they attempt to perform a search without entering any data. Previously, performing an empty search would redirect users to the Catalog Advanced Search page with a message prompting them to modify their search.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
+* _AC-13786_: White border is not getting remover after disabling product_image_white_borders for custom theme
 * _ACP2E-3103_: New Products RSS feed is not updated with new products due to cache
   * _Fix note_: The Rss feed for New Products is now updated when a product is set as new and saved
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d01ee51e>
@@ -305,12 +308,6 @@ Previously adding product to cart resulted in Error 'no such entity with id = 0'
 * _ACP2E-3385_: [CLOUD] B2B: category issue via GraphQL
   * _Fix note_: After the fix, the categories graphql query returns categories with allow permission even if the root category doesn't have allow permission.
 
-### Catalog, Product
-
-* _AC-12124_: [Random Bug] Fotorama lib isn't loaded
-  * _Fix note_: The system now ensures that the Fotorama library is properly loaded, allowing all attached images to be displayed in the image gallery as expected. Previously, only the first image was visible due to an issue with the Fotorama library not loading correctly.
-  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7d5e3906>
-
 ### Catalog, Search
 
 * _ACP2E-3345_: Type Error occurred when creating object: Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor Exception
@@ -343,8 +340,6 @@ Previously adding product to cart resulted in Error 'no such entity with id = 0'
 * _ACP2E-3275_: [Cloud] - CMS Slider not reflecting the latest changes
   * _Fix note_: The issue has been fixed by ensuring the slider list gets refreshed while the save event is triggered on the edit slide screen. Previously, it was triggering and causing the issue.
   * _GitHub code contribution_: <https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
-* _ACP2E-3285_: CMS Page Hierarchy tab issue
-  * _Fix note_: Previously, before this fix was applied, the CMS page hierarchy tab did not show a proper tree when editing a CMS page with the corresponding hierarchy. After this fix is applied, the CMS page hierarchy tree display properly in CMS page.
 * _ACP2E-3326_: An error occurs in CSM page when CMS blocks are inserted using page builder in certain order
   * _Fix note_: Previously on some versions of PHP and OS (Linux), the rendering of blocks that referenced other cms blocks through PageBuilder would have failed with an "An unknown error occurred. Please try again.". Now the content of the cms blocks is rendered correctly inside a PageBuilder controlled content.
   * _GitHub code contribution_: <https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
@@ -471,6 +466,7 @@ Previously query worked without making sure the customer exists on non-default w
 * _ACP2E-3467_: [Cloud] 500 response to empty Graphql response on 2.4.7
   * _Fix note_: After the fix, invalid graphql requests will not be logged into the exception.log file.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/1984c61c>
+* _LYNX-600_: Increase max default GraphQL query complexity to 1000
 
 ### GraphQL, Search
 
@@ -498,6 +494,12 @@ Previously query worked without making sure the customer exists on non-default w
 * _ACP2E-3475_: Product export causes OOM even with 4G memory limit
   * _Fix note_: Previous to this fix, the product export failed if product attributes had thousands of option values even with 4G available memory. After this fix, the product export should finish exporting the csv file.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/1984c61c>
+
+### Import / export, Performance
+
+* _ACP2E-3476_: [Cloud] Product import time has significantly increased
+  * _Fix note_: Previous to the fix, catalog product import with over 10K entries had a significant time degradation. After the fix, the import of catalog product executes in a timely manner.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/87d012e5>
 
 ### Install & Administer
 
@@ -543,6 +545,19 @@ Previously query worked without making sure the customer exists on non-default w
 
 ### Other
 
+* _LYNX-426_: The discount_percentage is not calculated for bundle products with dynamic price
+* _LYNX-485_: Bundle products still shows "IN_STOCK" when one of its bundled product out of stock
+* _LYNX-486_: not_available_message and only_x_left_in_stock doesn't show the same available stock
+* _LYNX-488_: original_row_total field returning wrong value
+* _LYNX-503_: Grouped product thumbnail should be shown according to the configuration     .
+* _LYNX-510_: Error when querying selected_options in OrderAddress
+* _LYNX-512_: original_item_price is not including discounts
+* _LYNX-530_: Not available message is not showing the available inventory quantity
+* _LYNX-532_: "OUT_OF_STOCK" status returns on Simple with custom options products with multi select options
+* _LYNX-533_: Error (GQL): cart.itemsV2.items.product.custom_attributesV2 returns a server error
+* _LYNX-536_: orders/date_of_first_order always returning null
+* _LYNX-544_: Customer must not be able to cancel a partially shipped order
+* _LYNX-548_: Error codes for order cancellation based on the error message
 * _LYNX-581_: Move back cookie-related properties from private to protected
 
 ### Other Developer Tools
@@ -588,6 +603,7 @@ Previously query worked without making sure the customer exists on non-default w
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38961>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38940>
 * _AC-13423_: [Issue] Fixed broken Bundle and Downloadable product pages layout in Magento >= 2.4.7
+  * _Fix note_: The layout for bundle and downloadable product pages has been fixed, ensuring a consistent and correct display across all devices. Previously, these pages experienced layout issues due to a rearrangement of the product info media block.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39403>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 * _ACP2E-3471_: [Cloud] Products in Category - Add Products - Assign - Select All
@@ -641,11 +657,18 @@ Previously restricted admin users could see the return menu and buttons.
 * _ACP2E-3443_: Return Screen is messed up when refresh the screen
   * _Fix note_: The user can refresh the page without experiencing screen distortion.
 
+### Sales
+
+* _AC-13750_: Grand Total and base grand total are not matching with test result steps
+* _AC-13751_: Second Cart Price Rule isn't applied if First Cart rule is already applied
+
 ### Search
 
 * _AC-13053_: Getting "Enter a search term and try again." error on advanced search page in storefront in 2.4.8-beta1
   * _Fix note_: The system now correctly displays search results on the Advanced Search page when a product attribute is set to "No". Previously, setting a product attribute to "No" and performing a search would result in an error message, "Enter a search term and try again."
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3ea26621>
+* _AC-13721_: magento/module-open-search depends on on nonexistent opensearch-php branch
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/05dc0bbf>
 * _ACP2E-3362_: search_query table when of huge size, has large impact on load time frontend
   * _Fix note_: Improved search listing page load time. Prior to the fix, the search listing page was being delayed because of an unoptimized query.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/55615e61>
@@ -688,6 +711,7 @@ Previously restricted admin users could see the return menu and buttons.
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/31398>
 * _AC-13478_: MAGETWO-95118: Checking behaviour with the persistent shopping cart after the session is expired
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7d5e3906>
+* _AC-13716_: Integration tests are failed Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission
 * _ACP2E-3458_: [MFTF] StorefrontCheckoutProcessForQuoteWithoutNegotiatedPricesTest
   * _Fix note_: Fixed mftfs
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/078c387e>

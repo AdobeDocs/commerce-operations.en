@@ -74,7 +74,7 @@ The following 30 highlights apply to the Magento Open Source 2.4.8 release.
 
 ## Fixed issues in v2.4.8-beta2
 
-We have fixed 160 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 159 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -138,6 +138,7 @@ Previously, after logging in, the products added to the compare list as a guest 
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39013>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38996>
 * _AC-13529_: Product import csv file with special characters fails due to code changes in Validate.php file
+  * _Fix note_: The system now correctly validates and imports product CSV files containing special characters, allowing for successful data transfer. Previously, attempting to import a product CSV file with special characters would result in an error, preventing the import process.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 * _AC-7962_: No link to shipping when in payments in checkout in mobile phone view
   * _Fix note_: The system now ensures that the checkout titles/links "Shipping" and "Review & Payments" are always visible on top of the page in mobile view, allowing users to easily navigate between steps and make necessary corrections. Previously, these titles/links were hidden in mobile view, making it difficult for users to know their current step or go back to previous steps.
@@ -153,10 +154,6 @@ Previously, after logging in, the products added to the compare list as a guest 
 * _ACP2E-3364_: Reset button doesn't work on Add/Edit admin user
   * _Fix note_: Previously, the Reset button did not function on the Add/Edit Admin User page. Now, in the Admin panel under System -> Permissions -> All Users, the Reset button will work correctly on the Add/Edit Admin User page.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/5184c067>
-* _ACP2E-3373_: [Cloud] Admin Panel exposed to the public - Custom Admin URL not effective
-  * _Fix note_: After the fix, if the custom admin domain is a subdomain of the main domain, the admin is accessible only from the configured subdomain.
-  * _GitHub issue_: <https://github.com/magento/magento2/issues/37663>
-  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/55615e61>
 * _ACP2E-3392_: Broken validation for “Maximum Qty Allowed in Shopping Cart”
   * _Fix note_: Previously, when we put `Maximum Qty Allowed in Shopping Cart` empty, it did not throw any exception, though an empty value is not accepted here. After this fix applies, putting an empty string will throw exceptions and will not allow saving the product.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d50f6b5d>
@@ -173,15 +170,10 @@ Previously, after logging in, the products added to the compare list as a guest 
   * _Fix note_: '-
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d50f6b5d>
 
-### Admin UI, Catalog
-
-* _ACP2E-3389_: Adobe Commerce backend loads categories very slowly
-  * _Fix note_: Improved performance of admin category page in case of large number of anchor categories
-  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/55615e61>
-
 ### Admin UI, Payment/ Payment Methods, Order
 
 * _AC-13520_: Transaction Authorization Not Displayed in Transaction Tab After PayPal Smart Button Order
+  * _Fix note_: The system now correctly displays the transaction authorization in the Transaction tab after an order is placed using the PayPal Smart Button. Previously, the authorization transaction was not appearing in the Transaction tab after clicking the "Authorize" button, and no new transaction of type "Authorization" was created.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 
 ### Admin UI, Staging & Preview
@@ -240,6 +232,7 @@ Previously, after logging in, the products added to the compare list as a guest 
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38694>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/581b7ef1>
 * _AC-12479_: Terms and conditions checkbox is not allowing HTML on storefront
+  * _Fix note_: The system now supports HTML formatting in the "Terms and Conditions" checkbox text on the storefront, allowing for enhanced customization and readability. Previously, the checkbox text was displayed in plain text format, ignoring any HTML tags used.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 * _AC-12541_: Cart price rule created for logged in user incorrectly gets applied for not logged in user
   * _Fix note_: The system now correctly removes the cart price rule for logged-in users when they are automatically logged out due to cookie expiration, ensuring that the discount is not applied to non-logged-in users. Previously, the cart price rule was still applied even when the user was logged out, resulting in an incorrect discount being applied to non-logged-in users.
@@ -290,6 +283,7 @@ Previously, after logging in, the products added to the compare list as a guest 
   * _GitHub issue_: <https://github.com/magento/magento2/issues/32322>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/31264>
 * _AC-13596_: Catalog Advanced Search with empty data goes to search result page[2.4.dev branch]
+  * _Fix note_: The system now correctly retains users on the Advanced Search page and displays an error message when they attempt to perform a search without entering any data. Previously, performing an empty search would redirect users to the Catalog Advanced Search page with a message prompting them to modify their search.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 * _ACP2E-3103_: New Products RSS feed is not updated with new products due to cache
   * _Fix note_: The Rss feed for New Products is now updated when a product is set as new and saved
@@ -345,12 +339,6 @@ Previously, after logging in, the products added to the compare list as a guest 
 * _ACP2E-3312_: Tier Prices return wrong value in products GraphQL (compared to Storefront)
   * _Fix note_: After the fix, product's tier prices returned for graphql requests have price per one item.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/1366ae5e>
-
-### Catalog, Product
-
-* _AC-12124_: [Random Bug] Fotorama lib isn't loaded
-  * _Fix note_: The system now ensures that the Fotorama library is properly loaded, allowing all attached images to be displayed in the image gallery as expected. Previously, only the first image was visible due to an issue with the Fotorama library not loading correctly.
-  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Catalog, Search
 
@@ -528,6 +516,12 @@ Previously query worked without making sure the customer exists on non-default w
   * _Fix note_: Previous to this fix, the product export failed if product attributes had thousands of option values even with 4G available memory. After this fix, the product export should finish exporting the csv file.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/1984c61c>
 
+### Import / export, Performance
+
+* _ACP2E-3476_: [Cloud] Product import time has significantly increased
+  * _Fix note_: Previous to the fix, catalog product import with over 10K entries had a significant time degradation. After the fix, the import of catalog product executes in a timely manner.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/87d012e5>
+
 ### Install & Administer
 
 * _AC-13242_: Magento upgrade fails on MariaDB 11.4 + 2.4.8-beta1
@@ -611,6 +605,7 @@ Previously query worked without making sure the customer exists on non-default w
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38961>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38940>
 * _AC-13423_: [Issue] Fixed broken Bundle and Downloadable product pages layout in Magento >= 2.4.7
+  * _Fix note_: The layout for bundle and downloadable product pages has been fixed, ensuring a consistent and correct display across all devices. Previously, these pages experienced layout issues due to a rearrangement of the product info media block.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39403>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 
@@ -655,6 +650,8 @@ Previously query worked without making sure the customer exists on non-default w
 * _AC-13053_: Getting "Enter a search term and try again." error on advanced search page in storefront in 2.4.8-beta1
   * _Fix note_: The system now correctly displays search results on the Advanced Search page when a product attribute is set to "No". Previously, setting a product attribute to "No" and performing a search would result in an error message, "Enter a search term and try again."
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3ea26621>
+* _AC-13721_: magento/module-open-search depends on on nonexistent opensearch-php branch
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/05dc0bbf>
 * _ACP2E-3362_: search_query table when of huge size, has large impact on load time frontend
   * _Fix note_: Improved search listing page load time. Prior to the fix, the search listing page was being delayed because of an unoptimized query.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/55615e61>
