@@ -1,23 +1,21 @@
 ---
-title: 'ACSD-62872: Schedule updates validated incorrectly'
-description: Apply the ACSD-62872 patch to fix the Adobe Commerce issue with unique attribute validation where scheduled updates are validated incorrectly.
-feature: Catalog Management, Admin Workspace
+title: 'ACSD-58325: [!UICONTROL Import] button available even after a validation error'
+description: Apply the ACSD-58325 patch to fix the Adobe Commerce issue where the [!UICONTROL Import] button is available even after a validation error.
+feature: Data Import/Export
 role: Admin, Developer
-exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
 ---
-# ACSD-62872: Schedule updates validated incorrectly
+# ACSD-58325: [!UICONTROL Import] button available even after a validation error
 
-The ACSD-62872 patch fixes the issue with unique attribute validation where scheduled updates are validated incorrectly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62872. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-58325 patch fixes the issue where the **[!UICONTROL Import]** button is available even after a validation error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-58325. Please note that the issue was fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
-
-* Adobe Commerce (all deployment methods) 2.4.6-p5
+* Adobe Commerce (all deployment methods) 2.4.6-p3
 
 **Compatible with Adobe Commerce versions:**
-
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
+* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -25,24 +23,22 @@ The ACSD-62872 patch fixes the issue with unique attribute validation where sche
 
 ## Issue
 
-Scheduled update to a custom attribute is validated incorrectly.
+The [!UICONTROL Import] button is available even after a validation error.
 
 <u>Steps to reproduce</u>:
 
-1. Create a custom attribute for categories.
-1. Navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
-1. Create a new category.
-1. In the same category, go to the **[!UICONTROL Scheduled Updates]** section.
-1. Set up a new update for this category with any future time.
-1. Before starting the scheduled update, try editing the created schedule update for the category.
+1. Create the CSV file for the product import with an incorrect image name in the file.
+1. Create a scheduled product import using the created CSV file.
+1. Wait until the scheduled import is performed.
+1. Check [!UICONTROL Last outcome] in **[!UICONTROL Scheduled Imports/Exports]** grid.
 
 <u>Expected results</u>:
 
-Should be able to update the scheduled update.
+[!UICONTROL Last outcome] should be [!UICONTROL Failed].
 
 <u>Actual results</u>:
 
-An error is thrown: *The value of the "Custom Attribute" attribute isn't unique. Set a unique value and try again.*
+[!UICONTROL Last outcome] is [!UICONTROL Successful].
 
 ## Apply the patch
 

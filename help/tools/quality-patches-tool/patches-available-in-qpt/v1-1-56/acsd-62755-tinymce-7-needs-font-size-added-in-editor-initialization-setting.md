@@ -1,23 +1,23 @@
 ---
-title: 'ACSD-62872: Schedule updates validated incorrectly'
-description: Apply the ACSD-62872 patch to fix the Adobe Commerce issue with unique attribute validation where scheduled updates are validated incorrectly.
-feature: Catalog Management, Admin Workspace
+title: 'ACSD-62755: [!DNL TinyMCE] 7 needs font size and font added to editor initialization settings'
+description: Apply the ACSD-62755 patch to fix the Adobe Commerce issue where [!DNL TinyMCE] 7 requires *font size* and *font family* to be specifically added within editor initialization settings.
+feature: Page Content, Page Builder, Admin Workspace
 role: Admin, Developer
-exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+exl-id: f61dc7b6-ac6b-45eb-a0a2-f3f0bff4422b
 ---
-# ACSD-62872: Schedule updates validated incorrectly
+# ACSD-62755: [!DNL TinyMCE] 7 needs font size and font added to editor initialization settings
 
-The ACSD-62872 patch fixes the issue with unique attribute validation where scheduled updates are validated incorrectly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62872. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62755 patch fixes the issue where [!DNL TinyMCE] 7 requires *font size* and *font family* selectors to be specifically added within editor initialization settings. This patch is available with the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62755. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 2.4.6-p5
+Adobe Commerce (all deployment methods) 2.4.5-p10
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
+Adobe Commerce (all deployment methods) 2.4.4-p11, 2.4.5-p10, 2.4.6-p8, 2.4.7-p3 
 
 >[!NOTE]
 >
@@ -25,24 +25,19 @@ The ACSD-62872 patch fixes the issue with unique attribute validation where sche
 
 ## Issue
 
-Scheduled update to a custom attribute is validated incorrectly.
+[!DNL TinyMCE] 7 requires *font size* and *font family* selectors to be specifically added within editor initialization settings.
 
 <u>Steps to reproduce</u>:
 
-1. Create a custom attribute for categories.
-1. Navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
-1. Create a new category.
-1. In the same category, go to the **[!UICONTROL Scheduled Updates]** section.
-1. Set up a new update for this category with any future time.
-1. Before starting the scheduled update, try editing the created schedule update for the category.
-
+Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Content]**, and select *[!UICONTROL Show Editor]*.
+    
 <u>Expected results</u>:
 
-Should be able to update the scheduled update.
+*Font size* and *font family* selectors are visible in the WYSIWYG editor.
 
 <u>Actual results</u>:
 
-An error is thrown: *The value of the "Custom Attribute" attribute isn't unique. Set a unique value and try again.*
+*Font size* selector is missing from the WYSIWYG editor.
 
 ## Apply the patch
 
@@ -50,7 +45,6 @@ To apply individual patches, use the following links depending on your deploymen
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
-
 
 ## Related reading
 

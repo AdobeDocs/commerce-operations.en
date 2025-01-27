@@ -32,8 +32,8 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                      | N/A                     | 8.2 and 8.3           | 10.6                         |
 | Adobe Commerce 2.4.6 | March 14, 2023       | August 11, 2026<sup>2</sup>        | N/A                     | 8.1 and 8.2           | 10.6                         |
-| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                     | August 11,2026          | 8.1                   | 10.5<sup>3</sup>             |
-| Adobe Commerce 2.4.4 | April 12, 2022       | April 24, 2025                     | April 14, 2026          | 8.1                   | 10.5<sup>4</sup>             |
+| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                     | August 11,2026          | 8.1                   | 10.6<sup>3</sup>             |
+| Adobe Commerce 2.4.4 | April 12, 2022       | April 12, 2025                     | April 14, 2026          | 8.1                   | 10.6<sup>4</sup>             |
 
 {style="table-layout:auto"}
 
@@ -41,8 +41,8 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 >
 >- <sup>1</sup> End of software support includes both end of quality fixes and end of security fixes.
 >- <sup>2</sup> Updated to align with the end of extended support for 2.4.5.
->- <sup>3</sup> Starting with the 2.4.5-p8 security patch.
->- <sup>4</sup> Starting with the 2.4.4-p9 security patch.
+>- <sup>3</sup> Starting with the 2.4.5-p11 security patch.
+>- <sup>4</sup> Starting with the 2.4.4-p12 security patch.
 >- See [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
