@@ -7,7 +7,7 @@ Role: Admin, Developer
 
 # ACSD-63182: Error occurs while saving a product after bundle product duplication
 
-The ACSD-63182 patch solves/fixes the issue where a simple product used as a bundle option could not be saved after the bundle product duplication. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63182. Please note that the issue was fixed/is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63182 patch fixes the issue where a simple product used as a bundle option could not be saved after the bundle product duplication. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63182. Please note that the issue was fixed/is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,20 +25,22 @@ The ACSD-63182 patch solves/fixes the issue where a simple product used as a bun
 
 ## Issue
 
-An error occurs while saving a product after a bundle product is duplicated 
+An error occurs when saving a simple product used as a bundle option after duplicating the bundle product.
 
 <u>Steps to reproduce</u>:
 
-1. Create a new [!UICONTROL MSI] source and stock.
+1. Create a new MSI source and stock.
 1. Create two simple products: **p1** and **p2**.
 1. Create a bundle product **b1** with **p1** and **p2** as bundled options.
-1. Edit the **bundle product b1** and click on ***[!UICONTROL Save and Duplicate]***.
-1. Edit the **simple product p1** and click on **[!UICONTROL Save]**. 
+1. Edit the **bundle product b1** and click ***[!UICONTROL Save and Duplicate]***.
+1. Edit the **simple product p1** and click **[!UICONTROL Save]**. 
 
 <u>Expected results</u>:
+
 The product is saved without error.
 
 <u>Actual results</u>:
+
 The following error is displayed:
 *Exception: Item (Magento\Catalog\Model\Product\Interceptor) with the same ID 'XXX' already exists.*
 
