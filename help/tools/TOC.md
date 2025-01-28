@@ -712,6 +712,7 @@ feature: Configuration
             - [ACSD-63326: Fix admin redirection issue after placing an order from the backend](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
             - [ACSD-63286: Products assigned to shared catalog need manual reindexing to appear](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
             - [ACSD-58325: [!UICONTROL Import] button available even after a validation error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
+            - [ACSD-61895: [!DNL GraphQL] categories query fails for private shared catalog with restricted view](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission.md)
             - [ACSD-62671: [!DNL GraphQL] does not return updated address on first attempt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
             - [ACSD-62481: Shopping cart remains empty even with [!UICONTROL Persistence] enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled.md)
         - v1.1.58 {#v1-1-58}
@@ -719,6 +720,7 @@ feature: Configuration
             - [ACSD-63067: Resolving quantity validation issues in grouped products on storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
             - [ACSD-63283: Resolving [!UICONTROL Gift Registry] email and order placement issues in Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
             - [ACSD-62118: sales_order_tax_item table not fully updated for B2B orders placed using the [!UICONTROL Purchase Order] method](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
+            - [ACSD-63182: Error occurs while saving a product after bundle product duplication](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
