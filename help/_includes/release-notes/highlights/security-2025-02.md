@@ -6,6 +6,6 @@ This release includes the following highlight:
 
   New CLI commands are now available for [changing](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) keys and [re-encrypting](https://developer.adobe.com/commerce/php/development/security/data-encryption/) certain system configuration, payment, and custom field data. Changing keys in the Admin UI is no longer supported in this release. You must use the CLI commands.
 
-* **Fix for [CVE-TBD](https://nvd.nist.gov/vuln)**—Resolves a vulnerability with the REST API.
+* **Fix for [CVE-2025-24434](https://nvd.nist.gov/vuln/detail/CVE-2025-24434)**—Resolves an improper authorization vulnerability.
 
-  This fix is also available as an isolated patch. See the [KB-title-TBD](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) Knowledge Base article for details.<!-- AC-12755 -->
+  This fix is also available as an isolated patch. See the [KB-title-TBD](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) Knowledge Base article for details.<!-- AC-12755 -->
