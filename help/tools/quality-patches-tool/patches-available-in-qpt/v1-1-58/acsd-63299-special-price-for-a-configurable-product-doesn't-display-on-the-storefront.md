@@ -23,7 +23,7 @@ The ACSD-63299 patch fixes the issue where the special price attribute no longer
 
 ## Issue
 
-Special price for a configurable product doesn't display on the storefront 
+Special price attribute no longer affects the display of special prices for configurable products 
 
 <u>Steps to reproduce</u>:
 
