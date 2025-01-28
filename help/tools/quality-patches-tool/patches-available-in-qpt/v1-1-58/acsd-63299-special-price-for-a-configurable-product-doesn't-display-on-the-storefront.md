@@ -28,16 +28,16 @@ Special price attribute no longer affects the display of special prices for conf
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Products]**. 
-1. Find a **[!UICONTROL Special Price] and go to the **[Storefront Properties]**.
-1. Change ***[!UICONTROL Used in Product Listing]*** to [!UICONTROL No].
+1. Find a ***[!UICONTROL Special Price]*** and go to the **[!UICONTROL Storefront Properties]**.
+1. Change ***[!UICONTROL Used in Product Listing]*** to ***[!UICONTROL No]***.
 1. Create a configurable product with one child:
-    *Name and SKU: Test
-    *Price: $159.00
-    *Generate option based on color. Add a new color: Blue
-    *Save
+    * Name and SKU: Test
+    * Price: $159.00
+    * Generate option based on color. Add a new color: Blue
+    * Save
 1. Open the child product and change the following two things:
-    *Set a special price to $99.90 in [!UICONTROL Advanced Pricing]
-    *Change the visibility to [!UICONTROL Catalog], [!UICONTROL Search].
+    * Set a special price to $99.90 in **[!UICONTROL Advanced Pricing]**
+    * Change the visibility to **[!UICONTROL Catalog]**, **[!UICONTROL Search]**.
 1. Open the simple product page and confirm that the special price is visible.
 1. Open the configurable product page. 
 1. Select the blue product.
