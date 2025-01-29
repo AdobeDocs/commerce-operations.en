@@ -3,6 +3,7 @@ title: 'ACSD-62951: Fixes missing items and totals in [!UICONTROL Credit Memo] e
 description: Apply the ACSD-62951 patch to fix the Adobe Commerce issue where the[!UICONTROL Credit Memo] email is sent without including the order items and totals.
 feature: REST
 role: Admin, Developer
+exl-id: e0c6d4c1-ecaf-46e7-af2d-05a148970d71
 ---
 # ACSD-62951: Fixes missing items and totals in *[!UICONTROL Credit Memo]* emails sent via REST API
 
