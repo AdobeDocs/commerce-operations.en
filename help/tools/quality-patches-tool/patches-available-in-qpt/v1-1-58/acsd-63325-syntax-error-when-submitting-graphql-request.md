@@ -25,7 +25,7 @@ The ACSD-63325 patch fixes the issue where a "Syntax Error: Unexpected < EOF >" 
 
 ## Issue
 
-On submitting an empty [!DNL GraphQL] request there is a HTTP internal server error instead of a 200 response code. 
+On submitting an empty [!DNL GraphQL] request there is an HTTP internal server error instead of a 200 response code. 
 
 <u>Steps to reproduce</u>:
 
@@ -45,7 +45,7 @@ curl -i -X OPTIONS http://commerce.local/graphql
 
 <u>Actual results</u>:
 
-A 500 internal server error occur as shown:
+A 500 internal server error occurs as shown:
 
 ```
 HTTP/1.1 500 Internal Server Error
@@ -56,7 +56,7 @@ HTTP/1.1 500 Internal Server Error
 To apply individual patches, use the following links depending on your deployment method:
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce on Cloud Infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading
 
