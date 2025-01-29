@@ -1,6 +1,7 @@
 ---
 title: "ACSD-63299: Special price for a configurable product doesn't display on the storefront"
 description: Apply the ACSD-63299 patch to fix the Adobe Commerce issue where the special price attribute no longer affects the display of special prices for configurable products.
+Feature: Catalog Management
 ---
 
 # ACSD-63299: Special price for a configurable product doesn't display on the storefront
