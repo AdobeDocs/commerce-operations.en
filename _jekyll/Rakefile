@@ -108,3 +108,57 @@ task :image_optim do
 
   system "bundle exec image_optim --recursive --no-svgo #{path}"
 end
+
+desc 'Find unused images.'
+task :unused_images do
+  puts 'Running a task for finding unused images (png,svg,jpeg,jpg,ico)'.magenta
+  images = FileList['../help/**/*.{png,svg,jpeg,jpg,ico}']
+
+  puts "The project contains a total of #{images.size} images."
+
+  puts 'Checking for unlinked images...'
+  Dir['../help/**/*.{md}'].each do |file|
+    # Exclude symmlinks
+    next if File.symlink? file
+
+    images.delete_if { |image| File.read(file).include?(File.basename(image)) }
+  end
+
+  if images.empty?
+    puts 'No unlinked images'.green
+  else
+    images.each do |image|
+      puts "No links for #{image}".yellow
+    end
+    puts "Found #{images.size} dangling images".red
+  end
+end
+
+desc 'Find unused includes.'
+task :unused_includes do
+  puts 'Running a task to find unused _includes'.magenta
+  includes = FileList['../help/_includes/**/*']
+
+  puts "The project contains a total of #{includes.size} includes"
+  
+  # snippets.md is expected and should not be removed based on the way the snippets functionality was designed for ExL.
+  # See https://experienceleague.corp.adobe.com/docs/authoring-guide-exl/using/authoring/includes-snippets.html?lang=en#creating-snippets.
+  exclude = '../help/_includes/snippets.md'
+  includes.exclude(exclude) if exclude
+
+  Dir['../help/**/*.{md}'].each do |file|
+    next if File.symlink? file
+
+    includes.delete_if { |include| File.read(file).include?(File.basename(include)) }
+  end
+
+  if includes.empty?
+    puts 'No unlinked includes'.green
+  else
+    puts 'The following includes are not linked:'
+    includes.each do |include|
+      puts "No links for #{include}".yellow
+    end
+    puts "Found #{includes.size} unlinked includes".red
+  end
+end
