@@ -25,7 +25,7 @@ The ACSD-63325 patch fixes the issue where a "Syntax Error: Unexpected < EOF >" 
 
 ## Issue
 
-On submitting an empty [!DNL GraphQL] request there is an HTTP internal server error instead of a 200 response code. 
+On submitting an empty [!DNL GraphQL] request, there is an HTTP internal server error instead of a 200 response code. 
 
 <u>Steps to reproduce</u>:
 
