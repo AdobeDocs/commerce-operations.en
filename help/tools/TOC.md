@@ -701,6 +701,7 @@ feature: Configuration
         - v1.1.57 {#v1-1-57}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
             - [ACSD-59083:  'Base table or view not found' errors during simultaneous mview updates](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates.md)
+            - [ACSD-62951: Fixes missing items and totals in [!UICONTROL Credit Memo] emails sent via REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api.md)
             - [ACSD-62212: [!UICONTROL Forgot Password] email not translated to store view language](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language.md)
             - [ACSD-62708: [!DNL TinyMCE] 7 editor font size in admin panel shows PT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
             - [ACSD-62689: Unable to add categories in [!UICONTROL Related Product Rules] and widgets after depth 4](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets.md)
