@@ -3,6 +3,7 @@ title: 'ACSD-59083: Base table or view not found errors during simultaneous mvie
 description: Apply the ACSD-59083 patch to fix the Adobe Commerce issue where certain database update operations fail with the error 'Base table or view not found'.
 feature: System
 role: Admin, Developer
+exl-id: a0fa2ac9-e61f-43d5-81ff-edf178b1abc0
 ---
 # ACSD-59083: *Base table or view not found* errors during simultaneous `mview` updates
 
