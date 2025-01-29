@@ -3,8 +3,8 @@ title: 'ACSD-62118: `sales_order_tax_item` table not fully updated for B2B order
 description: Apply the ACSD-62118 patch to fix the Adobe Commerce issue where the `sales_order_tax_item` table isn't fully updated when B2B orders are placed using the [!UICONTROL Purchase Order] method.
 feature: Purchase Orders, B2B
 role: Admin, Developer
+exl-id: 8ace73ad-f5a5-47ab-aca7-62c818775d2f
 ---
-
 # ACSD-62118: `sales_order_tax_item` table not fully updated for B2B orders placed using the [!UICONTROL Purchase Order] method
 
 The ACSD-62118 patch fixes the issue where the `sales_order_tax_item` table doesn't fully update when a B2B order is placed using the *[!UICONTROL Purchase Order]* method. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-62118. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
