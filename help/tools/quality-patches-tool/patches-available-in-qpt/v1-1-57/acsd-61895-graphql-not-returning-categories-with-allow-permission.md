@@ -3,8 +3,8 @@ title: 'ACSD-61895: [!DNL GraphQL] categories query fails for private shared cat
 description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where [!DNL GraphQL] responses for guest customers (using a public shared catalog with all allowed categories) did not return any categories when a private shared catalog with restrictions was created for the same categories.
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
+exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
 ---
-
 # ACSD-61895: [!DNL GraphQL] `categories` query fails for private shared catalog with restricted view
 
 The ACSD-61895 patch fixes the issue where [!DNL GraphQL] responses for guest customers (using a public shared catalog with all allowed categories) did not return any categories when a private shared catalog with restrictions was created for the same categories. 
@@ -103,4 +103,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
