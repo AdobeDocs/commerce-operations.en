@@ -6,7 +6,7 @@ exl-id: e6058e96-b810-4a78-8804-15783afef951
 
 # Release notes for Adobe Commerce 2.4.2 security patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.2-p2
 
