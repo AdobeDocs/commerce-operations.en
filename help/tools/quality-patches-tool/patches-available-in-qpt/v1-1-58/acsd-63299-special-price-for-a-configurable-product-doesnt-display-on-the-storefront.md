@@ -38,7 +38,7 @@ Special price attribute no longer affects the display of special prices for conf
     * Save
 1. Open the child product and change the following two things:
     * Set a special price to $99.90 in **[!UICONTROL Advanced Pricing]**
-    * Change the visibility to **[!UICONTROL Catalog Search]**.
+    * Change the visibility to **[!UICONTROL Catalog, Search]**.
 1. Open the simple product page and confirm that the special price is visible.
 1. Open the configurable product page. 
 1. Select the blue product.
