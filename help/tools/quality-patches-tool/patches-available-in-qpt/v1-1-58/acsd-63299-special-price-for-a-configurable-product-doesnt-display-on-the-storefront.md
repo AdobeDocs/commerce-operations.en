@@ -6,7 +6,7 @@ Feature: Catalog Management
 
 # ACSD-63299: Special price for a configurable product doesn't display on the storefront
 
-The ACSD-63299 patch fixes the issue where the special price attribute no longer affects the display of special prices for configurable products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63182. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63299 patch fixes the issue where the special price attribute no longer affects the display of special prices for configurable products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63299. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -38,7 +38,7 @@ Special price attribute no longer affects the display of special prices for conf
     * Save
 1. Open the child product and change the following two things:
     * Set a special price to $99.90 in **[!UICONTROL Advanced Pricing]**
-    * Change the visibility to **[!UICONTROL Catalog]**, **[!UICONTROL Search]**.
+    * Change the visibility to **[!UICONTROL Catalog Search]**.
 1. Open the simple product page and confirm that the special price is visible.
 1. Open the configurable product page. 
 1. Select the blue product.
