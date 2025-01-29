@@ -8,6 +8,9 @@ role: Admin, Developer
 
 The ACSD-63283 patch fixes the issue where ordering items from the [!UICONTROL Gift Registry] causes an exception and ensures [!UICONTROL Gift Registry Updates] include only the correct items. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63283. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
+>[!NOTE] 
+>This patch replaces and extends the [ACSD-56280](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed) QPT patch.
+
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
