@@ -17,7 +17,7 @@ The ACSD-62872 patch fixes the issue with unique attribute validation where sche
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p3
+* Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
