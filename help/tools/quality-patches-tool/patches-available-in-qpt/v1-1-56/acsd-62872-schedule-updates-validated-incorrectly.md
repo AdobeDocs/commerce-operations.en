@@ -21,6 +21,10 @@ The ACSD-62872 patch fixes the issue with unique attribute validation where sche
 
 >[!NOTE]
 >
+>The patch is marked as deprecated for versions 2.4.4 - 2.4.6-p8 in the 1.1.58 QPT release.
+
+>[!NOTE]
+>
 >The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
