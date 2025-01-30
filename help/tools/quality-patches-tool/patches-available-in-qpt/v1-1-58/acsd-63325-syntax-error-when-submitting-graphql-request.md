@@ -1,10 +1,10 @@
 ---
-title: 'ACSD-63325: Syntax Error: Unexpected <EOF> error when submitting empty [!DNL GraphQL] request'
+title: 'ACSD-63325: Syntax Error: Unexpected &lt;EOF&gt; error when submitting empty [!DNL GraphQL] request'
 description: Apply the ACSD-63325 patch to fix the Adobe Commerce issue where a syntax error occurs when submitting an empty [!DNL GraphQL] request.
 feature: GraphQL
-Role: Admin, Developer 
+Role: Admin, Developer
+exl-id: a83a8c5f-a43a-4733-a601-7b92656e5325
 ---
-
 # ACSD-63325: "Syntax Error: Unexpected < EOF >" error when submitting empty [!DNL GraphQL] request
 
 The ACSD-63325 patch fixes the issue where a "Syntax Error: Unexpected < EOF >" error and a non-200 response code returned when submitting an empty [!DNL GraphQL] request. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63325. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
