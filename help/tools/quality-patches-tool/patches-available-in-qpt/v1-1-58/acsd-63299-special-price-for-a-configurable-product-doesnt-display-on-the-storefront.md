@@ -36,7 +36,7 @@ Special price attribute no longer affects the display of special prices for conf
     * Price: $159.00
     * Generate option based on color. Add a new color: Blue
     * Save
-1. Open the child product and change the following two things:
+1. Open the child product do the following:
     * Set a special price to $99.90 in **[!UICONTROL Advanced Pricing]**
     * Change the visibility to **[!UICONTROL Catalog, Search]**.
 1. Open the simple product page and confirm that the special price is visible.
