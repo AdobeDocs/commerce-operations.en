@@ -3,6 +3,7 @@ title: 'ACSD-48570: Fixing admin reset password link issue with store code in UR
 description: Apply the ACSD-48570 patch to fix the Adobe Commerce issue where the reset password page could not be accessed via the Admin reset password link when the [!UICONTROL Add Store Code to URLs] configuration was enabled.
 feature: Security, User Account
 role: Admin, Developer
+exl-id: 049a82ff-80e3-46a1-8472-ac74de0e365f
 ---
 # ACSD-48570: Fixing admin reset password link issue with store code in URL
 
