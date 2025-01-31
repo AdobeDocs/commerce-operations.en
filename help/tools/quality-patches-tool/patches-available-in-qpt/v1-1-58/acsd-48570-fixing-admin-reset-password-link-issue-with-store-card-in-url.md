@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-48570: Fixing admin reset password link issue with store code in URL
 
-The ACSD-48570 patch to fix the Adobe Commerce issue where the reset password page could not be accessed via the Admin reset password link when the [!UICONTROL Add Store Code to URLs] configuration was enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-48570. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-48570 patch to fix the Adobe Commerce issue where the reset password page could not be accessed via the Admin reset password link when the *[!UICONTROL Add Store Code to URLs]* configuration was enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-48570. Please note that the issue was fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
