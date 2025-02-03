@@ -1,13 +1,13 @@
 ---
 title: "ACSD-63329: Date and time attributes aren't set when creating products with the REST API"
-description: Apply the ACSD-63299 patch to fix the Adobe Commerce issue where default values are not set for the date and time fields when creating products via the REST API.
+description: Apply the ACSD-63299 patch to fix the Adobe Commerce issue where default values are not set for the date and time fields when creating products with the REST API.
 feature: REST
 Role: Admin, Developers
 ---
 
-# ACSD-63299: Default values for date and time fields aren't set when creating products with the REST API
+# ACSD-63329: Default values for date and time fields aren't set when creating products with the REST API
 
-The ACSD-63299 patch fixes the issue where the special price attribute no longer affects the display of special prices for configurable products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63299. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63329 patch fixes the issue where deafult values were not set for the date and time fileds when creating a new product using REST API: `/rest/default/V1/products`. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63329. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,43 +25,43 @@ The ACSD-63299 patch fixes the issue where the special price attribute no longer
 
 ## Issue
 
-Default values are not set for the date and time fields when creating products via the REST API
+Default values aren't set for the date and time fields when creating products with the REST API: `/rest/default/V1/products`
 
 <u>Steps to reproduce</u>:
 
-1. Create a [!UICONTROL Product] attribute, set its default value to `12/31/2020`, and set the **[!UICONTROL Catalog Input Type]** for **[Store Owner]**.
-1. Create another text type attribute and set the default value to *test value*.
-1. Create a new product using a REST API POST request to /rest/all/V1/products/
+1. Create a **[!UICONTROL Product]** attribute, set its default value to `12/31/2020`, and set the ***[!UICONTROL Catalog Input Type]*** for ***[!UICONTROL Store Owner]*** to **[!UICONTROL Date]** or **[!UICONTROL Date and Time]**.
+1. Create another text type attribute and set the default value to ***test value***.
+1. Create a new product using a REST API POST request to `/rest/all/V1/products/`
 
-```
-    {
-        "product": {
-            "sku": "testsku2",
-            "name": "Test Api Product 2",
-            "attribute_set_id": 4,
-            "price": 100,
-            "status": 1,
-            "visibility": 4,
-            "type_id": "simple",
-            "weight": 20,
-            "extension_attributes": {
-                "website_ids": [
-                    1
-                ]
+    ```
+        {
+            "product": {
+                "sku": "testsku2",
+                "name": "Test Api Product 2",
+                "attribute_set_id": 4,
+                "price": 100,
+                "status": 1,
+                "visibility": 4,
+                "type_id": "simple",
+                "weight": 20,
+                "extension_attributes": {
+                    "website_ids": [
+                        1
+                    ]
+                }
             }
         }
-    }
-```
+    ```
 
-1. Check the values saved for the above attributes.
+1. Check the values saved for the attributes mentioned above.
 
 <u>Expected results</u>:
 
-The default value should be saved in Date/Datetime type attributes when creating a product using API.
+The default value should be saved in **[!UICONTROL Date/Datetime]** type attributes when creating a product using API.
 
 <u>Actual results</u>:
 
-The default value is saved for the text attribute but not for the Date type attribute. The value for the Date attribute is empty.
+The default value is saved for the **[!UICONTROL Text]** attribute but not for the **[!UICONTROL Date type]** attribute. The value for the **[!UICONTROL Date]** attribute is empty.
 
 ## Apply the patch
 
