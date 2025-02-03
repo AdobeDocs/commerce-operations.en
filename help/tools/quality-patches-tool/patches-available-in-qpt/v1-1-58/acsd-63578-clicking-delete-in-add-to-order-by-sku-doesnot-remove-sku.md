@@ -5,9 +5,9 @@ feature: Orders
 role: Admin
 ---
 
-# ACSD-63578: ACSD-63578: Clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] does not remove SKU
+# ACSD-63578: ACSD-63578: Clicking **[!UICONTROL Delete]** in *[!UICONTROL Add to Order by SKU]* does not remove SKU
 
-The ACSD-63578 patch fixes the issue where clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] in the Admin does not remove the SKU. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63578. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63578 patch fixes the issue where clicking **[!UICONTROL Delete]**in *[!UICONTROL Add to Order by SKU]* in the Admin does not remove the SKU. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63578. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,11 +25,13 @@ The ACSD-63578 patch fixes the issue where clicking [!UICONTROL Delete] in [!UIC
 
 ## Issue
 
-Clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] in the Admin does not remove the SKU from the order.
+Clicking **[!UICONTROL Delete]** in *[!UICONTROL Add to Order by SKU]* in the Admin does not remove the SKU from the order.
 
 <u>Steps to reproduce</u>:
 
-1. Go to Admin > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > Create new order > choose a customer > Add to Order by SKU > add another > click the garbage icon
+1. Go to Admin > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > [!UICONTROL Create new order].
+1. Choose a customer and add to [!UICONTROL Order by SKU].
+1. Add another and click the garbage icon.
 
 <u>Expected results</u>:
 
@@ -38,8 +40,9 @@ Clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] in the Admin do
 <u>Actual results</u>:
 
 * The delete icon doesn't work.
-* There's an error in the console.
-`jquery.js:130 Refused to execute inline script because it violates the following Content Security Policy directive`
+* There's an error in the console:
+
+    `jquery.js:130 Refused to execute inline script because it violates the following Content Security Policy directive`
 
 ## Apply the patch
 
