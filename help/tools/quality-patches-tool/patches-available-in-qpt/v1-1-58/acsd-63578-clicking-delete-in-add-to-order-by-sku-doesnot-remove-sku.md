@@ -1,12 +1,13 @@
 ---
-title: 'ACSD-63578: `sales_order_tax_item` table not fully updated for B2B orders placed using the [!UICONTROL Purchase Order] method'
-description: Apply the ACSD-63578 patch to fix the Adobe Commerce issue where the `sales_order_tax_item` table isn't fully updated when B2B orders are placed using the [!UICONTROL Purchase Order] method.
-feature: Purchase Orders, B2B
-role: Admin, Developer
+title: 'ACSD-63578: Clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] does not remove SKU'
+description: Apply the ACSD-63578 patch to fix the Adobe Commerce issue where clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] in the Admin does not remove the SKU.
+feature: Orders
+role: Admin
 ---
-# ACSD-63578: `sales_order_tax_item` table not fully updated for B2B orders placed using the [!UICONTROL Purchase Order] method
 
-The ACSD-63578 patch fixes the issue where the `sales_order_tax_item` table doesn't fully update when a B2B order is placed using the *[!UICONTROL Purchase Order]* method. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63578. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+# ACSD-63578: ACSD-63578: Clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] does not remove SKU
+
+The ACSD-63578 patch fixes the issue where clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] in the Admin does not remove the SKU. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63578. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,23 +25,21 @@ The ACSD-63578 patch fixes the issue where the `sales_order_tax_item` table does
 
 ## Issue
 
-When B2B orders are placed using the *[!UICONTROL Purchase Order]* method, the `sales_order_tax_item` table is not fully updated. This issue affects tax calculations and order processing. Specifically, the `applied_taxes` array is empty when querying the order via the API, and both `tax_item_amount` and `tax_item_percent` are NULL. 
+Clicking [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] in the Admin does not remove the SKU from the order.
 
 <u>Steps to reproduce</u>:
 
-1. Go to Admin > **[!UICONTROL Sales]** -> Orders -> Create new order -> choose a customer -> Add to Order by SKU -> add another -> click the garbage icon
+1. Go to Admin > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > Create new order > choose a customer > Add to Order by SKU > add another > click the garbage icon
 
 <u>Expected results</u>:
 
-* The `sales_order_tax_item` table should contain `tax_item` data.
-* The `applied_taxes` array should display the correct tax information in the API response for purchase orders, similar to other payment methods (e.g., Check/Money Order).
+* Products are added and removed from an order in the Admin.
 
 <u>Actual results</u>:
 
-
+* The delete icon doesn't work.
+* There's an error in the console.
 `jquery.js:130 Refused to execute inline script because it violates the following Content Security Policy directive`
-
-
 
 ## Apply the patch
 
