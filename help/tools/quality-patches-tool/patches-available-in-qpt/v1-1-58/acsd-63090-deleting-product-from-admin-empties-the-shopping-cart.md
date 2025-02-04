@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-63090: Shopping cart items disappear on deleting a product from cart'
+title: 'ACSD-63090: Deleting a product from Admin empties the shopping cart'
 description: Apply the ACSD-63090 patch to fix the Adobe Commerce issue where a customer's shopping cart items disappeared as a result of a product being deleted after it was added to the shopping cart.
 feature: Shopping Cart, Quotes
 role: Admin, Developer
 ---
-# ACSD-63090: Shopping cart items disappear on deleting a product from the cart
+# ACSD-63090: Deleting a product from Admin empties the shopping cart
 
-The ACSD-63090 patch resolves the issue where a customer's shopping cart items disappeared as a result of a product being deleted after it was added to the shopping cart. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63090. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63090 patch resolves the issue where a customer's shopping cart items disappeared as a result of a product being deleted from Admin, after it was added to the shopping cart. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63090. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
