@@ -720,7 +720,7 @@ feature: Configuration
             - [ACSD-63067: Resolving quantity validation issues in grouped products on storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
             - [ACSD-62118: sales_order_tax_item table not fully updated for B2B orders placed using the [!UICONTROL Purchase Order] method](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
             - [ACSD-63182: Error occurs while saving a product after bundle product duplication](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
-            - [ACSD-63090: Shopping cart items disappear on deleting a product from cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-shopping-cart-items-removed-on-deleting-product-from-cart.md)
+            - [ACSD-63090: Deleting a product from Admin empties the shopping cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
