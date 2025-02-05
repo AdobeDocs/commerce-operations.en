@@ -29,9 +29,9 @@ Default values aren't set for the date and time fields when creating products wi
 
 <u>Steps to reproduce</u>:
 
-1. Create a **[!UICONTROL Product]** attribute, set its default value to `12/31/2020`, and set the ***[!UICONTROL Catalog Input Type]*** for ***[!UICONTROL Store Owner]*** to **[!UICONTROL Date]** or **[!UICONTROL Date and Time]**.
+1. Create a **[!UICONTROL Product]** attribute, set its default value to `12/31/2020`, and set the **[!UICONTROL Catalog Input Type for Store Owner]** to ***[!UICONTROL Date]*** or ***[!UICONTROL Date and Time]***.
 1. Create another text type attribute and set the default value to ***test value***.
-1. Create a new product using a REST API POST request to `/rest/all/V1/products/`
+1. Create a new product using a REST API POST request to `/rest/all/V1/products/`.
 
     ```
         {
@@ -57,7 +57,7 @@ Default values aren't set for the date and time fields when creating products wi
 
 <u>Expected results</u>:
 
-The default value should be saved in **[!UICONTROL Date/Datetime]** type attributes when creating a product using API.
+The default value should be saved in **[!UICONTROL Date/Datetime]** type attributes when creating a product using the API.
 
 <u>Actual results</u>:
 
