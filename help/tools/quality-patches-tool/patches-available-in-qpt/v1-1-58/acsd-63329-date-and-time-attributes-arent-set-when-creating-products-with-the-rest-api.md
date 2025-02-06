@@ -3,8 +3,8 @@ title: "ACSD-63329: Date and time attributes aren't set when creating products w
 description: Apply the ACSD-63329 patch to fix the Adobe Commerce issue where default values are not set for the date and time fields when creating products with the REST API.
 feature: REST
 Role: Admin, Developers
+exl-id: d8e7917b-07a5-465b-944b-fd6168dea63c
 ---
-
 # ACSD-63329: Default values for date and time fields aren't set when creating products with the REST API
 
 The ACSD-63329 patch fixes the issue where default values were not set for the date and time fields when creating a new product using REST API: `/rest/default/V1/products`. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63329. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
