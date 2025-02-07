@@ -1051,7 +1051,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.6
+            10.6, 10,5
       </td>
       <td>
             10.5, 10.4
@@ -1324,7 +1324,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-            1.24
+            1.26
       </td>
       <td>
             1.24
@@ -1748,7 +1748,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.6
+            10.6, 10.5
       </td>
       <td>
             10.5, 10.4
