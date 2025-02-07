@@ -24,7 +24,7 @@ The ACSD-63090 patch resolves the issue where a customer's shopping cart items d
 
 ## Issue
 
-Shopping cart items disappear as a result of a product being deleted after it was added to the shopping cart.
+Shopping cart items disappear when a product is deleted after being added to the shopping cart.
 
 <u>Steps to reproduce</u>:
 
@@ -33,16 +33,16 @@ Shopping cart items disappear as a result of a product being deleted after it wa
 1. Add both child products to the cart.
 1. Log out of the account.
 1. Delete one of the child products from the catalog.
-1. Update the price of the other child product using API.
+1. Update the price of the other child product using the API.
 
 <u>Expected results</u>:
 
-The remaining product is displayed in the cart, and the existing quote is updated in the quote database table.
+The remaining product is displayed in the cart, and the existing quote is updated in the `quote` database table.
 
 <u>Actual results</u>:
 
 * The mini cart is empty.
-* A new quote record is generated in the quote database table.
+* A new quote record is generated in the `quote` database table.
 
 ## Apply the patch
 
