@@ -3,6 +3,7 @@ title: 'ACSD-63090: Deleting a product from Admin empties the shopping cart'
 description: Apply the ACSD-63090 patch to fix the Adobe Commerce issue where a customer's shopping cart items disappeared as a result of a product being deleted after it was added to the shopping cart.
 feature: Shopping Cart, Quotes
 role: Admin, Developer
+exl-id: c07778cb-390f-4202-9539-7bb159e4b714
 ---
 # ACSD-63090: Deleting a product from Admin empties the shopping cart
 
