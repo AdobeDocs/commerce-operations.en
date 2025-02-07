@@ -2,8 +2,55 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jan 28 16:01:31 2025
+updated: Tue Feb 4 16:58:52 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-63299
+    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront).
+  versions: ''
+  type: new-topic
+  date: January 31, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1186
+  merge_commit: 226813a0d54147f545ef39b5ed5995df1f6c5ba1
+  contributor: glo16760
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63325
+    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request)
+  versions: ''
+  type: new-topic
+  date: January 30, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1188
+  merge_commit: 246ae49b1127c6ba74d771bbfe945eef97affab6
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-59083
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates)
+  versions: ''
+  type: new-topic
+  date: January 29, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1128
+  merge_commit: 78ee64cc19489d5e16c7ab097ac5327db403b1e4
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-62951
+    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api)
+  versions: ''
+  type: new-topic
+  date: January 29, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1135
+  merge_commit: e5d47ed00a2ef491ac2028166d52cb8a99bbd736
+  contributor: glo76462
+  membership: false
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [detailed description of the issue fixed by the ACSD-61895
     patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission)
   versions: ''
