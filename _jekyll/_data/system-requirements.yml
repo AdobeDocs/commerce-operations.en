@@ -281,7 +281,7 @@
   Elasticsearch: '7.17'
   MariaDB: '10.6'
   MySQL: '8.0'
-  nginx: '1.24'
+  nginx: '1.26'
   OpenSearch: '1.3.20'
   PHP: '8.1'
   RabbitMQ: '3.13'
