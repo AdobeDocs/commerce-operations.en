@@ -25,7 +25,7 @@ The ACSD-63572 patch fixes the issue where the indexer temporary tables aren't c
 
 ## Issue
 
-Indexer temporary tables weren't cleaned up when the process was terminated due to a system upgrade or halt in [!UICONTROL CLI]
+Indexer temporary tables aren't cleaned up when the process was terminated due to a system upgrade or halt in [!UICONTROL CLI].
 
 <u>Steps to reproduce</u>:
 
