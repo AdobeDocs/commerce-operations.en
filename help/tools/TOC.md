@@ -728,7 +728,7 @@ feature: Configuration
             - [ACSD-63299: Special price for a configurable product doesn't display on the storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
             - [ACSD-63325: "Syntax Error: Unexpected < EOF >" error when submitting empty [!DNL GraphQL] request](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
             - [ACSD-63329: Default values for date and time fields aren't set when creating products with the REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
-            - [ACSD-63572: `catalogrule` indexer temporary tables aren't cleaned if the indexer process is terminated](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-are-not-cleaned-if-the-indexer-process-is-terminated.md)
+            - [ACSD-63572: `catalogrule` indexer temporary tables aren't cleaned if the indexer process is terminated](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
