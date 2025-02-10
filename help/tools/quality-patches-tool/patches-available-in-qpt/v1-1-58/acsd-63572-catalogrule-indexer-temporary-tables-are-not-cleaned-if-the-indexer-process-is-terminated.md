@@ -30,7 +30,7 @@ Indexer temporary tables weren't cleaned up when the process was terminated due 
 <u>Steps to reproduce</u>:
 
 1. Open [!UICONTROL CLI].
-1. Run command: `bin/magento indexer:reindex catalogrule_rule`
+1. Run command: `bin/magento indexer:reindex catalogrule_rule`.
 1. Cancel the process before it is finished using: `^C`.
 1. Reset indexers using: `bin/magento indexer:reset catalogrule_rule catalogrule_product`.
 1. Repeat the previous steps several times.
