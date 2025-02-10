@@ -43,7 +43,7 @@ Indexer temporary tables aren't cleaned up when the process was terminated due t
 
 <u>Expected results</u>:
 
-The old temporary tables are deleted when they are not needed.
+The old temporary tables are deleted when they aren't needed.
 
 <u>Actual results</u>:
 
