@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-62872: Schedule updates validated incorrectly'
-description: Apply the ACSD-62872 patch to fix the Adobe Commerce issue with unique attribute validation where scheduled updates are validated incorrectly.
-feature: Catalog Management, Admin Workspace
-role: Admin, Developer
-exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+title: 'ACSD-63325: Syntax Error: Unexpected &lt;EOF&gt; error when submitting empty [!DNL GraphQL] request'
+description: Apply the ACSD-63325 patch to fix the Adobe Commerce issue where a syntax error occurs when submitting an empty [!DNL GraphQL] request.
+feature: GraphQL
+Role: Admin, Developer
+exl-id: a83a8c5f-a43a-4733-a601-7b92656e5325
 ---
-# ACSD-62872: Schedule updates validated incorrectly
+# ACSD-63325: "Syntax Error: Unexpected < EOF >" error when submitting empty [!DNL GraphQL] request
 
-The ACSD-62872 patch fixes the issue with unique attribute validation where scheduled updates are validated incorrectly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 is installed. The patch ID is ACSD-62872. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63325 patch fixes the issue where a "Syntax Error: Unexpected < EOF >" error and a non-200 response code returned when submitting an empty [!DNL GraphQL] request. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63325. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 2.4.6-p5
+* Adobe Commerce (all deployment methods) 2.4.7-p3
 
 **Compatible with Adobe Commerce versions:**
 
@@ -21,32 +21,35 @@ The ACSD-62872 patch fixes the issue with unique attribute validation where sche
 
 >[!NOTE]
 >
->The patch is marked as deprecated for versions 2.4.4 - 2.4.6-p8 in the 1.1.58 QPT release.
-
->[!NOTE]
->
 >The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
 
-Scheduled update to a custom attribute is validated incorrectly.
+On submitting an empty [!DNL GraphQL] request, there is an HTTP internal server error instead of a 200 response code. 
 
 <u>Steps to reproduce</u>:
 
-1. Create a custom attribute for categories.
-1. Navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
-1. Create a new category.
-1. In the same category, go to the **[!UICONTROL Scheduled Updates]** section.
-1. Set up a new update for this category at any future time.
-1. Before starting the scheduled update, try editing the created schedule update for the category.
+1. Send an empty GraphQL request
+
+    ```graphql
+    curl -i -X OPTIONS http://commerce.local/graphql
+    ```
 
 <u>Expected results</u>:
 
-Should be able to update the scheduled update.
+The response code is 200 for the request.
+
+```
+curl -i -X OPTIONS http://commerce.local/graphql
+```
 
 <u>Actual results</u>:
 
-An error is thrown: *The value of the "Custom Attribute" attribute isn't unique. Set a unique value and try again.*
+A 500 internal server error occurs as shown:
+
+```
+HTTP/1.1 500 Internal Server Error
+```
 
 ## Apply the patch
 
