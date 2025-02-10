@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-63572: `catalogrule` indexer temporary tables aren't cleaned if the indexer process is terminated'
-description: Apply the ACSD-63572 patch to fix the Adobe Commerce issue where the indexer tables weren't cleaned up when the process was terminated due to a system upgrade or halt in [!UICONTROL CLI].
+description: Apply the ACSD-63572 patch to fix the Adobe Commerce issue where the indexer tables aren't cleaned up when the process was terminated due to a system upgrade or halt in [!UICONTROL CLI].
 feature: System
 Role: Admin, Developers
 ---
