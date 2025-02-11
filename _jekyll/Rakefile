@@ -173,7 +173,7 @@ task :unused_includes do
 end
 
 desc 'Get released versions.
-  Generates the "jekyll/tmp/core-release.yml" file with the last 10 released versions from magento/magento2.
+  Generates the "tmp/core-release.txt" file with the last 10 released versions from magento/magento2.
   Pre-requisites: GitHub CLI.'
 task :get_released_versions do
   Dir.mkdir('tmp') unless Dir.exist?('tmp')
