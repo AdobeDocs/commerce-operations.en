@@ -1,0 +1,31 @@
+Issue key,Summary,Custom field (Release Note),Custom field (External Issue URL),Custom field (Git Pull Request),Components
+AC-10982,[2FA] Integrate with Duo Web SDK to support Universal Prompt,TBD,"","",Security
+AC-12012,Update Nginx version from 1.24 to 1.26,"","","",Framework
+AC-12028,Add compatibility with the latest Composer 2.8 version for 2.4.8 and 2.4.7,"","","",Framework
+AC-12029,Check compatibility with Varnish 7.6,"","","",Framework
+AC-12133,Adobe Commerce 2.4.8 core code is compatible with PHP 8.4,"","","",Other
+AC-12944,Remove TinyMCE 5 from adobe commerce,"","","",UI Framework
+AC-12970,PHPUnit 10 upgrade part 2 - Remove Deprecations,"Updated the phpunit/phpunit composer dependencies to compatible version - ""phpunit/phpunit"":""10.x""","","",Framework
+AC-12972,2.4.8-beta2 Core Quality Improvements,"","","",Other
+AC-13038,Remove PHP 8.1 from composer.json and all related support,"","","",Other
+AC-13076,Update all js library and npm dependency with latest available version,composer version support was up to the composer version 2.2.x only. Now the support extended to 2.4.x version as well.,"",<https://github.com/magento/magento2/commit/19844aa0>,Framework
+AC-13077,All bundled extensions and integrated components are compatible with PHP 8.4,"","","",Framework
+AC-13078,All the Adobe Commerce tools are compatible with PHP 8.4,"","","",Framework
+AC-13079,All the Adobe Commerce project laminas/dependencies are compatible with PHP 8.4,"","","",Framework
+AC-13256,Downgrade TinyMCE dependency from version 7 to version 6.8.5,"","","",Framework
+AC-13276,PHP 8.4 deprecations require Adobe Commerce breaking changes,"","","",Framework
+AC-13448,Deliver tier-price operations performance improvement patch into 2.4.8,"The system now allows for more efficient bulk updates of tier prices without causing performance issues or site unresponsiveness when using the ""/V1/products/tier-prices"" REST API endpoint. Previously, updating a large number of prices using this endpoint could result in performance issues and site unresponsiveness.","",<https://github.com/magento/magento2/commit/082d981c>,Other
+AC-13550,Remove all the Adobe confidential copyright notices from the Magento Open Source repositories,"All Adobe confidential copyright notices have been removed from the open source repositories, ensuring that only the reduced form of Adobe copyright is used. Previously, some files in the public repositories contained Adobe confidential copyright notices, which led to escalations from the community.",https://github.com/magento/magento2/issues/39493,<https://github.com/magento/magento2/commit/4bca5dfe>,Other
+AC-8828,Set default collation to utf8mb4 for MySQL,"","","",Framework
+AC-9037,Ability to use Adobe copyright for Adobe Commerce source code,"","","",Test framework
+BUNDLE-3400,Remove Unsupported LPMs,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3401,Google Pay Mark,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3402,Apple Pay Mark,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3403,Google Pay Shipping Call Back,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3404,Pay Later Messaging,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3405,JS-SDK button,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3406,Optimise code within the Braintree extension,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3407,Update Braintree PHP and JS SDK,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3408,Line Items (GooglePay),"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3409,Line Items (Apple Pay),"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree
+BUNDLE-3420,Package Tracking,"","",<https://github.com/magento/ext-braintree/pull/208>,Braintree

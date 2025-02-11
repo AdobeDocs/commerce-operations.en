@@ -87,6 +87,15 @@ task :render do
   sh '_scripts/render'
 end
 
+desc 'Get the release notes data.
+  Generates the release notes data file for "_jekyll/_data/release/" from the Jira filter export.
+  Pre-requisites: GitHub CLI, the Jira filter export CSV file, and access to the linked repositories.
+  Example: rake release_notes_data csv_file=tmp/2.4.8-fixed-issues.csv'
+task :release_notes_data do
+  filepath = ENV['csv_file'] || abort('ERROR: Please provide the path to the CSV file exported from Jira.'.red)
+  sh 'ruby _scripts/get_release_notes_data.rb ' + filepath
+end
+
 desc 'Optimize images in modified uncommitted files. For other images, use "path" such as "rake image_optim path=../path/to/dir/or/file".'
 task :image_optim do
   puts
