@@ -1,8 +1,143 @@
-# Adobe Commerce fixed issues (v2.4.8-beta1)
+# Magento Open Source release notes (v2.4.8-beta1)
 
-## Fixed issues
+## Highlights in v2.4.8-beta1
 
-We have fixed 308 issues in the Adobe Commerce 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+The following 49 highlights apply to the Magento Open Source 2.4.8 release.
+
+### Framework
+
+* _AC-10721_: Upgrade the league/flysystem Composer dependencies upgrading to latest version
+  * _Fix note_: Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/91cb4d46>
+* _AC-11495_: 2.4.8-beta1 Platform Components Upgrade
+* _AC-11673_: Investigate php-amqplib/php-amqplib latest versions
+  * _Fix note_: Updated the latest version php-amqplib/php-amqplib :^3.x
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-11723_: Refactoring of Integration Test framework for phpunit 10 compatibility - IntegrationTest.php not found
+  * _Fix note_: PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/ (Internal, Unmerged)>
+* _AC-11813_: WebApi Test framework for phpunit 10 compatibility - Issue related to RabbitMQ connectivity with SOAP and B2B modules
+  * _Fix note_: PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/ (Internal, Unmerged)>
+* _AC-11816_: Add compatibility with MySQL 8.4 LTS
+* _AC-11911_: jQuery/fileuploader css cleanup after migration to uppy library
+  * _Fix note_: Removed jQuery/fileUploader library because it has been migrated to Uppy library
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-11995_: Add compatibility with MySQL 8.4 LTS for Magento CE
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12014_: Mark elasticsearch 8 module as deprecated
+* _AC-12015_: ExtJs folder cleanup after migration to jsTree library
+  * _Fix note_: Removed extJs folder as the related functionality has been migrated to jsTree
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-12022_: Upgrade monolog/monolog system dependency to the latest major version 
+  * _Fix note_: The system has been updated to use the latest major version of the "monolog/monolog:^3.x" library, ensuring compatibility and improved performance. Previously, the system was using an outdated version of the "monolog/monolog" library which could have led to potential issues and limitations.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12023_: Upgrade wikimedia/less.php dependency to the latest major version 
+  * _Fix note_: The system has been updated to use the latest major version 5.x of the "wikimedia/less.php" library, ensuring compatibility and up-to-date functionality. Previously, the system was using an outdated version of the library which could have led to security issues.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12024_: Upgrade jquery/validate library dependency to the latest minor version
+  * _Fix note_: Upgrade jquery/validate library dependency to the latest minor version 1.20.0
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12025_: Upgrade moment.js system dependency to the latest minor version
+  * _Fix note_: Upgrade moment.js system dependency to the latest minor version 2.30.1
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12032_: Add compatibility with MySQL 8.4 LTS for EE
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12034_: Add compatibility with MySQL 8.4 LTS for B2B
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12074_: Add compatibility with MySQL 8.4 LTS for bundle extensions
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12085_: Add compatibility with MariaDB 11.4 LTS For CE
+  * _Fix note_: Added MariaDB 11.4 support with Adobe Commerce and extensions
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12165_: Subscribers Optimisation - PhpUnit10
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/90e25b6b>
+* _AC-12267_: Support connection retries for Redis session and compatible with colinmollenhour/php-redis-session-abstract v2.0.0
+  * _Fix note_: Updated latest version of colinmollenhour/php-redis-session-abstract v2.0.0 compatible with adobe commerce
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12268_: Upgrade league/flysystem Composer dependencies to latest version
+  * _Fix note_: Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x
+* _AC-12576_: Investigate the automation tests failures with MySQL 8.4 LTS
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12595_: Add compatibility with MariaDB 11.4 LTS For EE
+  * _Fix note_: Added MariaDB 11.4 support with Adobe Commerce and extensions
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12693_: Investigate on Data Migration tool (DMT) with MySQL 8.4 LTS
+* _AC-12715_: Update laminas composer dependencies upgrading to latest version
+  * _Fix note_: The system now supports the latest versions of laminas composer dependencies:
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validator
+ensuring compatibility and up-to-date functionality. Previously, updating to the latest versions of these dependencies could cause backward incompatibility issues and test failures.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12752_: Add compatibility with MariaDB 11.4 LTS For Data Migration tool
+  * _Fix note_: Added MariaDB 11.4 support with Adobe Commerce and extensions
+* _AC-12823_: Investigate the unit test failure due to phpunit patch update during component upgrade
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12897_: SVC and EAT tool compatibility with MySQL 8.4
+* _AC-12898_: UCT tool compatibility with MySQL 8.4
+  * _Fix note_: The Upgrade Compatibility Tool (UCT) is now compatible with MySQL 8.4, ensuring smooth operation and compatibility checks for instances running on this version. Previously, the UCT tool was not tested and verified for compatibility with MySQL 8.4.
+* _AC-9749_: PHPUnit 10 upgrade
+  * _Fix note_: Updated the phpunit/phpunit composer dependencies to compatible version - "phpunit/phpunit":"10.x"
+
+### Install & Administer
+
+* _AC-6819_: Set indexers to "Update by Schedule" by default
+
+### Order
+
+* _ACP2E-2709_: [Feature Request] Customer suggests that Submit Comment Button on Order Details page is confusing and should be changed to something else
+  * _Fix note_: In order to minimize the confusion, the "Submit Comment" button label changed to "Update" in the order detail page.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/488c1034>
+
+### Other
+
+* _AC-11420_: Set indexers appear in Ready status default when new version of Adobe Commerce is installed
+  * _Fix note_: After Installation Magento, Indexer's Status must be in *Ready* state by default.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-11421_: In existing Magento installation when install third party indexer module set indexers in update by schedule by default.
+  * _Fix note_: All new indexers are by default in [Update by Schedule] mode. Previously, the default mode was [Update on Save]. Same with custom indexers as well.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-12480_: Elasticsearch 7 and 8 options should come with Deprecated in Admin config.
+  * _Fix note_: Elasticsearch 8 option in Admin Config option will show with Deprecated text to inform users that Elasticsearch 8 is no longer recommended option to use.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12481_: Add text note when Elasticsearch option is selected in Admin Configuration
+  * _Fix note_: A text note is added to let Adobe Commerce admin users know that elasticsearch is no longer supported by Adobe and is deprecated.
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12870_: SVC and EAT tool compatibility with MariaDB 11.4
+  * _Fix note_: SVC and EAT tool compatibility with MariaDB 11.4
+* _AC-12876_: UCT tool compatibility with MariaDB 11.4
+* _LYNX-374_: Document Email Confirmation via GraphQL
+* _LYNX-376_: Document getting configurations for reCAPTCHA in GraphQL
+* _LYNX-409_: DB Query Optimizations for Update Cart Items Mutation
+
+### Security
+
+* _AC-11041_: Security Improvements for 2.4.8-beta1 from June 2024 release
+* _AC-11864_: Security Improvements for 2.4.8-beta1 from August 2024 release
+* _AC-12346_: Security Improvements for 2.4.8-beta1 from October 2024 release
+* _AC-12691_: [2.4.8-beta1] Customer update REST API endpoint is not working
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/a4102373>, <https://github.com/magento/magento2/commit/a4102373>
+
+### UI Framework
+
+* _AC-12726_: [2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7
+  * _Fix note_: Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12825_: [2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 Page Builder
+  * _Fix note_: Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12844_: [2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 - Magento2-infra - banned words
+  * _Fix note_: Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12901_: Require.js upgrade to the latest version 2.3.7 (security vulnerability CVE-2024-38999)
+  * _Fix note_: Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b34c0a75>
+
+## Fixed issues in v2.4.8-beta1
+
+We have fixed 253 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -13,10 +148,6 @@ We have fixed 308 issues in the Adobe Commerce 2.4.8 core code. A subset of the 
   * _Fix note_: The system now correctly handles integer values in the GetCustomSelectedOptionAttributes function when executing a GraphQL query, preventing any type-related errors. Previously, launching a GraphQL query that used GetCustomSelectedOptionAttributes with an integer argument resulted in a type error.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38662>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38663>
-* _ACP2E-2703_: REST API showing orders from another website. 
-  * _Fix note_: The system now supports scope authorized access for REST API admin tokens and Magento_Sales endpoints, ensuring that the REST API only displays orders that admin has access to. Previously, the REST API would display orders from all websites, regardless of the admin user's assigned website.
-* _ACP2E-2755_: Issue with rest api after enable 2FA Duo
-  * _Fix note_: 2FA with Duo security option now generates correct signature for Rest API
 * _ACP2E-2927_: [REST API]: Use Default value in store view does not stay checked after adding configurations for a configurable product
   * _Fix note_: The issue has been fixed by ensuring correct database entries for the customizable options for a non-default store. The checkbox for the custom store in the "admin > Catalogue > Product Edit > Customizable Options" section was previously unchecked owing to inaccurate database entries, even if the option title for the custom store stayed the same as the default store.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3056e9cb>
@@ -33,11 +164,6 @@ Previously it was possible to create the Duplicate website group price customer 
 * _ACP2E-3130_: Can't add order comment with status via REST API
   * _Fix note_: The issue has been resolved by allowing the change in order status if it is from the current state only. Previously, it was not honouring the order state and preventing changes in any order status, even if it was from the same state.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/93d50f8d>
-
-### APIs, GraphQL, Tax
-
-* _AC-12060_: Both Luma (Rest API) and Graphql  does not calculate taxes when only Zip code is provided.
-  * _Fix note_: The system now correctly calculates taxes when only a zip code is provided, ensuring accurate tax estimations for both Luma (Rest API) and GraphQL. Previously, only shipping estimates were calculated and taxes were not included when only a zip code was provided.
 
 ### Account
 
@@ -64,8 +190,6 @@ Previously it was possible to create the Duplicate website group price customer 
 * _ACP2E-2791_: Not able to Save Customer attribute information in Admin Edit customer section;
   * _Fix note_: The store ID of the customer is now implemented properly per website scope for the admin customer edit form.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/488c1034>
-* _ACP2E-3115_: [Cloud] Can't create customer via API when Private Sales is enabled
-  * _Fix note_: Now customer can be created by authenticated admin user as well as with authenticated integration token via REST api when website restriction is enabled.
 
 ### Admin UI
 
@@ -87,8 +211,6 @@ Previously it was possible to create the Duplicate website group price customer 
 * _AC-9843_: i18n:collect-phrases breaks the translations integrity
   * _Fix note_: The `bin/magento i18n:collect-phrases -o` command  now correctly collects and adds new phrases from JavaScript and .phtml files, ensuring that translations are accurately reflected in the translation file. Previously, the system failed to include multiline translation phrases from JavaScript files and phrases from .phtml files in the translation file, leading to incomplete or incorrect translations.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0c53bbf7>
-* _ACP2E-2687_: Permission Issue for accessing Dynamic Block
-  * _Fix note_: Previously for restricted admin adding a new dynamic block threw an error. After implementing this fix restricted admin can successfully add the dynamic block, and edit the block without any error
 * _ACP2E-2787_: Apostrophe in store view name is replaced by &#039;
   * _Fix note_: The grid's store view filters now properly display apostrophes
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38395>
@@ -122,11 +244,6 @@ Previously it was possible to create the Duplicate website group price customer 
 We can now update custom-created order statuses, whereas previously, the status could only be changed if the current status was either "processing" or "fraud."
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38659>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/8459b17d>
-
-### Admin UI, Catalog
-
-* _ACP2E-2708_: Cannot change positions for the category products in the allowed website as a restricted admin user
-  * _Fix note_: Allow for a restricted admin user to add and sort products under a category contained under the root category assigned under restricted website.
 
 ### Admin UI, Performance
 
@@ -167,16 +284,9 @@ We can now update custom-created order statuses, whereas previously, the status 
 
 ### B2B
 
-* _ACP2E-2873_: [Cloud] Price display in mobile and desktop version not the same in "My quotes"
-  * _Fix note_: Unneeded Include Tax line is not shown anymore in Negotiable Quote when catalog total price section is expended.
 * _ACP2E-3044_: Unnecessary borders on the My Orders section
   * _Fix note_: Previously an additional container(order references) was created that applied additional CSS classes, which caused unnecessary border lines were appearing below the order number inside the My Orders section, which isn't visible now.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/9af794a4>
-
-### B2B, Catalog
-
-* _ACP2E-2860_: Products/Categories visible during reindexation when using NoDDL and Category Permissions
-  * _Fix note_: Avoid displaying on storefront restricted categories and their content while catalog permissions indexing is being performed.
 
 ### B2B, Framework
 
@@ -255,9 +365,6 @@ We can now update custom-created order statuses, whereas previously, the status 
 * _ACP2E-2664_: [Cloud] Production Parallel Requests to Add Same Product to Cart Result In Two Separate Items In The Cart rest API
   * _Fix note_: The system now correctly processes multiple parallel requests to add the same product to the cart into a single line item, preventing the creation of separate line items for the same SKU. Previously, making parallel requests to add the same product to the cart via the REST API would result in multiple line items for the same SKU.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/f89a447e>
-* _ACP2E-2676_: Issue with Ordering from Gift Registry Magento 2.4.4 Enterprise/Commerce
-  * _Fix note_: The issue preventing the successful purchase of a product from a gift registry has been resolved, allowing orders to be placed and the gift registry to be updated appropriately. Previously, an error occurred when attempting to place an order from a gift registry, preventing the completion of the purchase.
-  * _GitHub issue_: <https://github.com/magento/magento2/issues/35432>
 * _ACP2E-2704_: Getting Unable to send the cookie. Size of 'mage-messages' while trying to Reorder
   * _Fix note_: The reordering processwill not generate its own errors now. It will rely on cart listing built-in item checks.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ba25af8a>
@@ -267,8 +374,6 @@ We can now update custom-created order statuses, whereas previously, the status 
 * _ACP2E-2897_: [CLOUD] graphql addProductsToCart api issue with custom option
   * _Fix note_: GraphQL adds to cart correctly the same product with different custom options
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/c971859e>
-* _ACP2E-2917_: [Cloud] Related Products Rules not working when changing the store view
-  * _Fix note_: The issue has been fixed by confirming that the custom property value is successfully received on the cart page. Previously, it wasn't fetched properly when switching between stores on the storefront cart page.
 * _ACP2E-2923_: Multiple addresses added to the account when checkout as new customer
   * _Fix note_: The system now saves a new customer address only once if the order failed to be created, preventing the creation of multiple identical addresses in the event of order placement errors. Previously, the system would save a new address each time an order placement attempt was made, regardless of whether the order was successfully created or not.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/001e5188>, <https://github.com/magento/inventory/commit/2ebcef39>
@@ -384,9 +489,6 @@ We can now update custom-created order statuses, whereas previously, the status 
 * _ACP2E-2874_: Category Page at frontend shows empty slots when using bundle product
   * _Fix note_: Bundle products that are not salable in current store context are not indexed anymore.
   * _GitHub code contribution_: <https://github.com/magento/inventory/commit/bc37ec76>
-* _ACP2E-2888_: [CLARIFICATION] Bundle product sequence table issues
-  * _Fix note_: The records in the Bundle product sequence tables (sequence_product_bundle_option, sequence_product_bundle_selection) are now removed when Bundle product is deleted or Bundle product options are deleted.
-Previously the records in the Bundle product sequence tables were not removed.
 * _ACP2E-2905_: [Cloud] Issue of Quote in multi-website architecture
   * _Fix note_: Previously, multi-website architecture with different currencies and customer groups could not correctly apply discounts to the store. After this fix is implemented, multi-website architecture with different customer group price discounts will apply successfully to different stores.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38506>
@@ -419,8 +521,6 @@ Previously the records in the Bundle product sequence tables were not removed.
 * _ACP2E-3076_: Error when deleting bundle options
   * _Fix note_: The system now correctly deletes bundle options without triggering an error or causing the page to become unresponsive. Previously, attempting to delete bundle options would result in a "Page Unresponsive" error and prevent the product from being saved.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6a185204>
-* _ACP2E-3094_: Category Permissions out of memory browser issue
-  * _Fix note_: Category Permissions UI was redesigned to allow rendering a large amount of permissions using out of box UI component and pagination. Previously category permissions would cause browser to crash with large amount of permissions assigned to the category.
 * _ACP2E-3100_: [Cloud] Image File does not exist in New Relic Error Log
   * _Fix note_: The system now synchronizes custom placeholder images to local storage, ensuring that they render correctly when using remote storage such as AWS S3. Previously, custom placeholder images failed to render when using remote storage, resulting in a broken image display and error logs.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d1f7dc95>
@@ -499,8 +599,6 @@ Previously the records in the Bundle product sequence tables were not removed.
 * _ACP2E-2392_: [On-PREM] Dynamic block issue
   * _Fix note_: Wdigets are now being properly rendered within dynamic blocks.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/a12063bd>
-* _ACP2E-2606_: YouTube nocookie url not working in Page Builder
-  * _Fix note_: Now the pagebuilder allows the youtube no-cookie url in the form element settings of the validation rules. Previously the youtube no-cookie url is not working in pagebuilder.
 * _ACP2E-2693_: [Cloud] Frontend not loading due to issue in newsletter template
   * _Fix note_: Adding blocks via CMS Page content section does not lead to exception anymore
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ea79f7dd>
@@ -522,24 +620,12 @@ Previously the records in the Bundle product sequence tables were not removed.
 * _ACP2E-3092_: [CLOUD] No buttons of checkout or edit cart on the cart section
   * _Fix note_: Bundle product is now added to the cart via widgets without errors.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b21e5d91>, <https://github.com/magento/magento2-page-builder/commit/4ebe3f1d>
-* _ACP2E-3113_: Content Staging preview on category pages does not show product widgets
-  * _Fix note_: The issue has been fixed by ensuring that product entries for the additional category linked to the CMS block have been accurately recorded into the database. Previously, it was returning an empty result set when the category preview page was requested.
 * _ACP2E-3127_: imagecreatetruecolor(): Argument #2 ($height) must be greater than 0. Can't upload specific image
   * _Fix note_: Resolved the issue causing errors in the admin when uploading images with a height of 0 via the media gallery, and successful the assets synchronization using the sync command. Previously can't upload the image via the media gallery and the sync command also fails when a specific image is in the gallery.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6f4805f8>
 * _ACP2E-3154_: Prototype.js Array.from in conflict with Google Maps API
   * _Fix note_: Google Maps now renders properly in PageBuilder editor. Previously, a Javascript error prevents Google Maps from rendering correctly.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/148c3ead>
-
-### Content, SEO
-
-* _ACP2E-2870_: CMS Page hierarchy can cause URL rewrite issues
-  * _Fix note_: Previously, for custom permanent URL rewrite for non-website root pages, redirect infinitely and the page was never loaded. After this fix is applied, the custom URL rewrite for the non-website root page works as expected and no redirection loop occurs.
-
-### Content, Staging & Preview
-
-* _ACP2E-2979_: Catalog price rule is not showing when it is set to schedule with dynamic blocks
-  * _Fix note_: The system now correctly displays dynamic content associated with scheduled catalog price rules on the product detail page. Previously, dynamic content failed to load when catalog price rules were scheduled.
 
 ### Customer/ Customers
 
@@ -573,8 +659,6 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now optimizes queries from related, upsell, and cross-sell blocks, improving the performance and preventing the site from going down due to excessive queries. Previously, the system could become overloaded with queries from these blocks, causing significant slowdowns and potentially bringing the site down.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/36667>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38050>
-* _AC-11388_: 
-  * _Fix note_: Verify Deleting Folder Deletes S3 and Local File Storage Directories
 * _AC-11423_: Exception: Warning: Trying to access array offset in... -> Calendar.php since upgrade to ICU 74.1 (PHP Intl)
   * _Fix note_: Commerce no longer logs the following exception in the exception.log whenever a shopper or merchant visits either the storefront or Admin: `main.CRITICAL: Exception: Warning: Trying to access array offset on value of type null in /vendor/magento/framework/View/Element/Html/Calendar.php on line 114 in /vendor/magento/framework/App/ErrorHandler.php:62`. [GitHub-38214](https://github.com/magento/magento2/issues/38214)
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38214>
@@ -622,9 +706,6 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now labels the section for tokenizable account payment methods as "Account" instead of "PayPal Account" in the Stored Payment Methods page, making it more representative of its function. Previously, this section was specifically labeled as "PayPal Account", which was misleading when other tokenizable account payment methods were added.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/35622>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/37959>
-* _AC-11874_: Backward compatibility has been lost on Magento\Catalog\Model\ProductRepository class
-  * _Fix note_: The ProductRepository class now maintains backward compatibility by restoring the Initialization Helper class as the second parameter, ensuring that modules extending from this class function as expected. Previously, the removal of the Initialization Helper from the constructor in the ProductRepository class resulted in a loss of backward compatibility, forcing users to employ a workaround.
-  * _GitHub issue_: <https://github.com/magento/magento2/issues/38669>
 * _AC-11905_: [Issue] Static content deploy - Type error
   * _Fix note_: The system now correctly handles empty LESS files during static content deployment, displaying an "LESS file is empty" error message. Previously, an incorrect type error was thrown when encountering an empty LESS file during deployment.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38682>
@@ -681,15 +762,10 @@ laminas/laminas-server
 laminas/laminas-stdlib
 laminas/laminas-validator
 ensuring compatibility and up-to-date functionality. Previously, updating to the latest versions of these dependencies could cause backward incompatibility issues and test failures.
-* _AC-12750_: 
-  * _Fix note_: The removal of ExtJs is logging error in browser console log and magento log
 * _AC-12778_: [Issue] Minor cleanup: fixed wrong usage of sprintf, it only takes 2 placeholders here and w…
   * _Fix note_: The system now correctly uses the sprintf function with the appropriate number of placeholders, enhancing code cleanliness and consistency. Previously, the sprintf function was incorrectly used with an extra argument, which did not cause any major issues but was not the correct usage.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39062>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38628>
-* _AC-12823_: 
-  * _Fix note_: Investigate the unit test failure due to phpunit patch update during component upgrade
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/b34c0a75>>
 * _AC-12866_: 
   * _Fix note_: Remove Deprecations- PhpUnit10 Integration Tests
   * _GitHub issue_: <<https://github.com/magento/magento2/commit/edcd0dcc>>
@@ -702,15 +778,10 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
   * _Fix note_: The system now correctly references classes in modules, ensuring smoother operation and preventing crashes due to non-existing classes. This includes a bugfix in the Indexer and Creditmemo modules, and the implementation of the HttpGetActionInterface in the PrintAction class. Previously, incorrect class references led to errors and potential system crashes, and certain functionalities, such as the filename for creditmemo PDF files and reindexing of stocks, were not working as expected.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39126>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12882_: 
-  * _Fix note_: Investigate the Integration build after component upgrade
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/b34c0a75>>
 * _AC-6754_: typo error on a js file.
   * _Fix note_: The system now correctly uses the term "subscribers" in the JavaScript file, ensuring proper functionality of the related features. Previously, a typographical error in the JavaScript file resulted in the incorrect use of the term "subsctibers".
   * _GitHub issue_: <https://github.com/magento/magento2/issues/36163>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/36171>
-* _AC-8089_: 
-  * _Fix note_: Investigate the league/flysystem Composer dependencies upgrading to latest version
 * _AC-8353_: [Issue] Remove forbidden `@author` tag
   * _Fix note_: The system now adheres to coding standards by removing the forbidden `@author` tag from certain modules, ensuring cleaner and more standardized code. Previously, the `@author` tag was present in some modules, which was against the established coding standards.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37253>
@@ -750,8 +821,6 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
 * _ACP2E-2966_: In ipad mini the menu and header loads as mobile, instead they should load as desktop.
   * _Fix note_: The system now treats devices with a width of 768px as desktop, ensuring that the menu and header load correctly. Previously, devices with a width of 768px were treated as mobile, causing the menu and header to load in a mobile view.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/35b1b1da>, <https://github.com/magento/magento2-page-builder/commit/4d5db10a>
-* _ACP2E-3046_: Base table or view not found error when running mview cron while having a DDL operation
-  * _Fix note_: The system now correctly handles database update operations while mview update is running in background, preventing the occurrence of 'Base table or view not found' errors. Previously, some database update operations could result in 'Base table or view not found' error, if mview update was running at the same time.
 
 ### Framework, GraphQL
 
@@ -759,10 +828,6 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
   * _Fix note_: The system now supports custom scalar types for GraphQL schema, allowing developers to define custom scalar types and implementations. This feature can be particularly useful for expressing values that may require validation, such as HTML, emails, URLs, dates, etc., and for more advanced cases like EAV attributes. Previously, the system did not support the processing of custom scalar types in GraphQL.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/36877>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/34651>, <https://github.com/magento/magento2/commit/0574ac23>
-
-### Framework, Product
-
-* _AC-13011_: 2.4.8-beta1 EE Reports are not generating due to magento exception
 
 ### GraphQL
 
@@ -854,14 +919,9 @@ Previously, assigned to the admin store instead of their respective store.
 
 ### Inventory / MSI
 
-* _AC-10750_: Inventory update of Configurable Product fails when database uses prefixes
-  * _Fix note_: The system now correctly updates the inventory of configurable products when the database uses prefixes, preventing any error messages and ensuring the correct quantity is saved. Previously, an error would occur when trying to save the inventory quantity for simple products within a configurable product if the database was using prefixes.
-  * _GitHub issue_: <https://github.com/magento/magento2/issues/38045>
 * _AC-11593_: Google google API key is not working while adding Map with attributes
   * _Fix note_: The system now supports the latest Google Maps API version 3.56, allowing users to successfully add a Map content block from the PageBuilder menu to the stage without encountering any errors. Previously, users were unable to add a Map content block due to compatibility issues with the Google Maps API version, resulting in a "something went wrong" error message.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0574ac23>
-* _ACP2E-1411_: [Test] Bundle products with 0 inventory showing on store front
-  * _Fix note_: The bundle product does not display on the additional websites using additional stock.
 * _ACP2E-2794_: [Cloud] Critical Issue with Product Listing with Empty Spaces
   * _Fix note_: The system now correctly displays product listings without empty spaces when products are set to 'Out of Stock', ensuring a consistent and accurate display of available products. Previously, setting a product to 'Out of Stock' would result in an empty space appearing in the product listing, disrupting the layout and potentially confusing customers.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ea79f7dd>, <https://github.com/magento/inventory/commit/b59e48ca>
@@ -908,30 +968,6 @@ Previously, assigned to the admin store instead of their respective store.
 * _ACP2E-3003_: [CLOUD] Incorrect base_row_total in RESTFUL order API when enabling cross-border transactions and applying coupon discounts
   * _Fix note_: Now correct base_row_total is returned from RESTFUL order API when cross-border transaction is enabled and coupon discount is applied.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/9af794a4>
-
-### Other
-
-* _LYNX-339_: private_content_version cookie returned in GQL queries
-* _LYNX-366_: Server error on email props in physical gift card queries
-* _LYNX-380_: is_available attribute in CartItemInterface returns always false for configurable products
-* _LYNX-382_: is_available attribute in CartItemInterface returns true even when salable stock is lower than the quantity of the product
-* _LYNX-395_: only_x_left_in_stock attribute in ProductInterface is not accurate on configurable products
-* _LYNX-399_: Placeholder thumbnail returns when a simple product added to cart within a grouped product
-* _LYNX-400_: Customer's custom option attributes not working with integer values
-* _LYNX-402_: Internal server error when trying to get priceDetails for Bundle products with dynamic price
-* _LYNX-403_: only_x_left_in_stock always returns 0 for configurable products
-* _LYNX-405_: GraphQL Error: Unsupported 'file' type in customizable options query
-* _LYNX-411_: GraphQL query not returning correct calculated regular price for customizable products
-* _LYNX-412_: AppliedTaxes via EstimatedTotals persist with updated mutations 
-* _LYNX-420_: is_available attribute in CartItemInterface returns true even when salable stock is lower than the quantity of the product
-* _LYNX-421_: Cannot add coupon to cart for shipping only discount
-* _LYNX-425_: Product regular price with 12 decimals and wrong value
-* _LYNX-430_: GraphQL server error on cart with out of stock bundled product
-* _LYNX-441_: It is not possible to create an address with custom attributes
-* _LYNX-447_: GraphQL server error on cart with only_x_left_in_stock on bundled product 
-* _LYNX-464_: GraphQL error when removing other products with insufficient configurable product in cart 
-* _LYNX-469_: Cannot add products due to SKU in mutation being case sensitive
-* _LYNX-526_: GraphQL. Configuration is not respected for CANCEL order available_actions
 
 ### Other Developer Tools
 
@@ -980,17 +1016,6 @@ Before they were automatically rejected.
   * _Fix note_: The system now executes the Order Rest API call within a reasonable timeframe, improving the performance when fetching a large number of orders. Previously, the Order Rest API call was taking a long time to execute, causing delays when retrieving a large number of orders.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/001e5188>
 
-### Performance, Promotion
-
-* _ACP2E-2617_: Sales rule indexer stopped running
-  * _Fix note_: The system now successfully completes the sales rule indexer even with a large number of combined filter groups, ensuring that cart rule conditions are applied to the cart as expected. Previously, the sales rule indexer would fail to complete when there were a large number of combined filter groups, leading to an error message and preventing the application of cart rule conditions.
-
-### Pricing
-
-* _AC-11810_: Magento2.4.6-p4 Order API Simple Item missing price
-  * _Fix note_: The system now correctly displays the price of simple products when queried through the Order API, ensuring accurate data representation. Previously, the price of simple products was incorrectly displayed as zero in the API response.
-  * _GitHub issue_: <https://github.com/magento/magento2/issues/38603>
-
 ### Product
 
 * _AC-10535_: Special characters in configurable associate product name are  being Converted to HTML Entities.
@@ -1024,10 +1049,6 @@ Before they were automatically rejected.
 * _ACP2E-2811_: [Cloud] Reindexing Catalog Rule Product Indexer throws SQLSTATE[HY000]: General error: 2006 MySQL server has gone away.
   * _Fix note_: The system now correctly handles custom "batchCount" value in the di.xml for the "Magento\CatalogRule\Model\Indexer\IndexBuilder", preventing SQL errors such as "General error: 2006 MySQL server has gone away" during the reindexing of the Catalog Rule Product Indexer due to the incorrect batch size on large catalogs
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/b2286ecf>
-* _ACP2E-2926_: [CLOUD]Cart Price Rule for Visitors Customer Segment not applying discount on cart
-  * _Fix note_: The system now correctly applies Cart Price Rules for Visitor Customer Segments, even if the rule does not use a coupon, ensuring that the appropriate discounts are applied to the cart. Previously, discounts were not being applied to the cart for Visitor Customer Segments unless the Cart Price Rule used a coupon.
-* _ACP2E-3024_: Missing "Type" Attribute in "Products to Match" Tab of Related Product Rules
-  * _Fix note_: The "Type" attribute is now available as a filter option in the "Products to Match" tab of the "Related Product Rules" module, allowing for more precise rule definition. Previously, this attribute was missing from the "Products to Match" tab, limiting the ability to create accurate matching criteria.
 
 ### SEO
 
@@ -1092,17 +1113,6 @@ to bin/magento config:set twofactorauth/google/leeway VALUE
 * _ACP2E-2765_: MFTF test AdminCreatingShippingLabelTest failing due to credentials not added in Jenkins environment
   * _Fix note_: mftf test fix
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ea79f7dd>
-
-### Staging & Preview
-
-* _ACP2E-2901_: Scheduled update settings not saved if originally added by running update
-  * _Fix note_: The system now correctly clears product attributes values in subsequent scheduled updates when such attributes is modified in the currently running update. Previously, when a product attribute was modified by a running scheduled update, it was impossible to clear such attributes values when creating a new scheduled update, requiring the user to re-edit them after creation.
-* _ACP2E-2999_: Cart Price Rule from date and to date issue not Synced with Staging Update
-  * _Fix note_: Dates are saved according to updates for Cart Price Rule Staging.
-* _ACP2E-3104_: JS error in Staging Preview
-  * _Fix note_: Now the form-mini-stub.js file is loading successfully without any Js syntax error in Developer tools.
-* _ACP2E-3162_: Product Special Price Staged Content cannot be updated
-  * _Fix note_: The system now allows for the editing of the end date of a price update campaign after it has started, ensuring that users can make necessary adjustments to their campaigns. Previously, an error was thrown when attempting to update the end date of an active campaign, preventing users from making changes.
 
 ### Targeting
 
