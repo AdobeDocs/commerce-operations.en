@@ -31,9 +31,9 @@ Clicking **[!UICONTROL Delete]** in *[!UICONTROL Add to Order by SKU]* in the Ad
 
 1. Go to Admin > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > [!UICONTROL Create new order].
 1. Choose a customer and add to [!UICONTROL Order by SKU].
-1. Click "Add to Order by SKU". 
-    * Enter an SKU. 
-    * Click "Add another" button.
+1. Click **[!UICONTROL Add to Order by SKU]**. 
+    * Enter an SKU.
+    * Click **[!UICONTROL Add another]** button.
 1. Click the garbage icon.
 
 <u>Expected results</u>:
