@@ -40,7 +40,7 @@ The following guidelines apply to patch releases:
 
 ### SECURITY patch release
 
-{{$include /help/_includes/security-patch-release-overview.md}}
+{{$include /help/_includes/release-notes/security-patch-overview.md}}
 
 ## BETA patch release
 

@@ -6,7 +6,7 @@ exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
 
 # Release notes for Adobe Commerce 2.4.3 security patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
