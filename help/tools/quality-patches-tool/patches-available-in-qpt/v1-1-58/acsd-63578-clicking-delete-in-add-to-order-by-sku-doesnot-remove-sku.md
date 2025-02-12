@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-63578: Using [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] does not remove SKU'
-description: Apply the ACSD-63578 patch to fix the Adobe Commerce issue where using [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] in the Admin does not remove the SKU.
+title: 'ACSD-63578: Clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] doesn't remove SKU'
+description: Apply the ACSD-63578 patch to fix the Adobe Commerce issue where clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] in the Admin doesn't remove the SKU.
 feature: Orders
-role: Admin
+role: Admin, Developer
 ---
 
-# ACSD-63578: ACSD-63578: Using **[!UICONTROL Delete]** in *[!UICONTROL Add to Order by SKU]* does not remove SKU
+# ACSD-63578: Clicking the **[!UICONTROL Delete]** icon in *[!UICONTROL Add to Order by SKU]* doesn't remove SKU
 
-The ACSD-63578 patch fixes the issue where using **[!UICONTROL Delete]** in *[!UICONTROL Add to Order by SKU]* in the Admin does not remove the SKU. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63578. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63578 patch fixes the issue where clicking the **[!UICONTROL Delete]** icon in *[!UICONTROL Add to Order by SKU]* in the Admin doesn't remove the SKU. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63578. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,16 +25,16 @@ The ACSD-63578 patch fixes the issue where using **[!UICONTROL Delete]** in *[!U
 
 ## Issue
 
-Using **[!UICONTROL Delete]** in *[!UICONTROL Add to Order by SKU]* in the Admin does not remove the SKU from the order.
+Clicking the **[!UICONTROL Delete]** icon in *[!UICONTROL Add to Order by SKU]* in the Admin doesn't remove the SKU from the order.
 
 <u>Steps to reproduce</u>:
 
-1. Go to Admin > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > [!UICONTROL Create new order].
+1. Navigate to Admin > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**, and click **[!UICONTROL Create New Order]**.
 1. Choose a customer.
 1. Click **[!UICONTROL Add to Order by SKU]**. 
     * Enter an SKU.
-    * Click **[!UICONTROL Add another]** button.
-1. Click the garbage icon.
+    * Click the **[!UICONTROL Add another]** button.
+1. Click the **[!UICONTROL Delete]** icon.
 
 <u>Expected results</u>:
 
@@ -42,7 +42,7 @@ Using **[!UICONTROL Delete]** in *[!UICONTROL Add to Order by SKU]* in the Admin
 
 <u>Actual results</u>:
 
-* The delete icon doesn't work.
+* The **[!UICONTROL Delete]** icon doesn't work.
 * There's an error in the console:
 
     `jquery.js:130 Refused to execute inline script because it violates the following Content Security Policy directive`
