@@ -10,6 +10,7 @@
 
 require 'yaml'
 require 'colorator'
+require 'date'
 
 desc 'Generate data for a news digest.
       Default timeframe is since last update.
@@ -127,7 +128,7 @@ task :unused_images do
 
   puts 'Checking for unlinked images...'
   Dir['../help/**/*.{md}'].each do |file|
-    # Exclude symmlinks
+    # Exclude symlinks
     next if File.symlink? file
 
     images.delete_if { |image| File.read(file).include?(File.basename(image)) }
@@ -172,11 +173,19 @@ task :unused_includes do
   end
 end
 
-desc 'Get released versions.
-  Generates the "tmp/core-release.txt" file with the last 10 released versions from magento/magento2.
-  Pre-requisites: GitHub CLI.'
+desc 'Get released versions. Requires GitHub CLI.
+  Generates the "tmp/core-release.txt" file with the last 10 released versions from magento/magento2.'
 task :get_released_versions do
   Dir.mkdir('tmp') unless Dir.exist?('tmp')
   sh 'gh --repo=magento/magento2 release list --limit 10 | grep --only-matching --extended-regexp "2\.4\.\d\d?|2\.\d\d?\.\d\d?-p\d\d?|2\.\d\d?\.\d\d?-beta\d"| uniq | xargs -I {} gh --repo=magento/magento2 release view {} --json tagName,publishedAt > tmp/core-release.txt'
   puts "Find results in ".green + "tmp/core-release.txt".blue
+end
+
+desc 'Get the first merge date for a pull request in the base branch. Requires GitHub CLI.
+  Example: rake first_merge_date base=develop.'
+task :first_merge_date do
+  base_branch = ENV['base'] || abort('ERROR: Please provide the base branch.'.red)
+  merged_at=`gh pr list --search 'is:pr is:merged base:#{base_branch} sort:merged_at' --limit 1 --json mergedAt --jq '.[0].mergedAt'`
+  date_only = DateTime.parse(merged_at).strftime('%Y-%m-%d')
+  puts "The first merge date for a PR in the branch #{base_branch.magenta} is #{date_only.green}"
 end
