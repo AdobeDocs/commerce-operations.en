@@ -2,8 +2,50 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Feb 11 02:21:07 2025
+updated: Wed Feb 12 15:47:35 2025
 entries:
+- description: Added [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for the February'25 release.
+  versions: 2.4.7-p4, 2.4.6-p9, 2.4.5-p11, 2.4.4-p12
+  type: major-update
+  date: February 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1194
+  merge_commit: 2004b40fafb74b0af2a82f618bb04ca13e9372c8
+  contributor: shevtsov
+  membership: false
+  labels:
+  - major-update
+  - 2.4.7-p4
+  - 2.4.6-p9
+  - 2.4.5-p11
+  - 2.4.4-p12
+- description: Published release notes for the February 2025 beta and security patches:<br/>-
+    [2.4.8-beta2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)<br/>-
+    [2.4.7-p4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p11](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p12](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: 2.4.8
+  type: major-update
+  date: February 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1161
+  merge_commit: 12562e72703651b48cc506d587732e896573c7bc
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.8
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
+  versions: ''
+  type: technical
+  date: February 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1197
+  merge_commit: 8c45d89c610a5b319352d202057d010b0450c848
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
 - description: Added the [detailed description of the issue fixed by the ACSD-63090
     patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart)
   versions: ''
@@ -1124,36 +1166,6 @@ entries:
   membership: false
   labels:
   - technical
-  - 2.4.8
-- description: Added [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
-    for the 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 versions.
-  versions: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11
-  type: technical
-  date: October 8, 2024
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/988
-  merge_commit: ce5bbafb3887c8bfb803f37fe33133fed9a23783
-  contributor: shevtsov
-  membership: false
-  labels:
-  - technical
-  - 2.4.7-p3
-  - 2.4.6-p8
-  - 2.4.5-p10
-  - 2.4.4-p11
-- description: Published release notes for October 2024 patches:<br/>- [2.4.8-beta1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)<br/>-
-    [2.4.7-p3](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
-    [2.4.6-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
-    [2.4.5-p10](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
-    [2.4.4-p11](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
-  versions: 2.4.8
-  type: major-update
-  date: October 8, 2024
-  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/967
-  merge_commit: 93649180699470370f8e4de4f5d544689bb385bc
-  contributor: jmatthew
-  membership: false
-  labels:
-  - major-update
   - 2.4.8
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.52 Quality Patches Tool (QPT) package release.
