@@ -8,7 +8,7 @@
   Apache: '2.4'
   AWS Aurora (MySQL): '8.0'
   AWS ElastiCache: Redis 7.0
-  AWS MQ: '3.11.20'
+  AWS MQ: '3.13'
   AWS OpenSearch: '2.11'
   AWS S3: ✔️
   Composer: '2.8'
@@ -95,7 +95,7 @@
   Apache: '2.4'
   AWS Aurora (MySQL): '8.0'
   AWS ElastiCache: Redis 6.2
-  AWS MQ: '3.9.16'
+  AWS MQ: '3.13'
   AWS OpenSearch: '1.2'
   AWS S3: ✔️
   Composer: '2.2'
@@ -274,7 +274,7 @@
   Apache: '2.4'
   AWS Aurora (MySQL): '8.0'
   AWS ElastiCache: Redis 6
-  AWS MQ: '3.9.13'
+  AWS MQ: '3.13'
   AWS OpenSearch: '1.2'
   AWS S3: ✔️
   Composer: '2.2'

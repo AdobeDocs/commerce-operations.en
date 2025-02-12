@@ -255,7 +255,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.11.20
+            3.13
       </td>
       <td>
             3.11.20
@@ -778,7 +778,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.9.16
+            3.13
       </td>
       <td>
             3.9.16
@@ -1441,7 +1441,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.9.13
+            3.13
       </td>
       <td>
             3.9.13
