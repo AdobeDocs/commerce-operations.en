@@ -18,7 +18,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 ## v1.1.59 {#v1-1-59}
 
 * **ACSD-63454** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the default value for a dropdown and multi-select attributes is not saved properly in the database.
-* **ACSD-63574** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes an issue where adding a Bundle Product Listing to a block via the Page Builder resulted in an error.
+* **ACSD-63574** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where adding a Bundle Product Listing to a block via the Page Builder resulted in an error.
 * **ACSD-63793** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue when Import Processes are interfering with Each Other in different browser tabs.
 * **ACSD-64113** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixed the issue causing errors in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the media gallery.
 * **ACSD-64212** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where an order is not associated with a customer account when the account is created via GraphQL after the order is placed.
