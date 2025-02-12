@@ -128,7 +128,7 @@ task :unused_images do
 
   puts 'Checking for unlinked images...'
   Dir['../help/**/*.{md}'].each do |file|
-    # Exclude symmlinks
+    # Exclude symlinks
     next if File.symlink? file
 
     images.delete_if { |image| File.read(file).include?(File.basename(image)) }
