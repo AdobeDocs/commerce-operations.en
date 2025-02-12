@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-63578: Clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] doesn't remove SKU'
-description: Apply the ACSD-63578 patch to fix the Adobe Commerce issue where clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] in the Admin doesn't remove the SKU.
+title: 'ACSD-63578: Clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] does not remove SKU'
+description: Apply the ACSD-63578 patch to fix the Adobe Commerce issue where clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] in the Admin does not remove the SKU.
 feature: Orders
 role: Admin, Developer
 ---
