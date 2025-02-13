@@ -10,4 +10,4 @@ The Adobe Commerce security patch release notes provide information about the la
 
 ## About security patch releases
 
-{{$include /help/_includes/security-patch-release-overview.md}}
+{{$include /help/_includes/release-notes/security-patch-overview.md}}

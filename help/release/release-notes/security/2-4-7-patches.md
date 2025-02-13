@@ -5,7 +5,19 @@ exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 ---
 # Release notes for Adobe Commerce 2.4.7 security patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.7-p4
+
+The Adobe Commerce 2.4.7-p4 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
 
 ## 2.4.7-p3
 
@@ -17,11 +29,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ### Hotfixes included in this release
 
-{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
 ## 2.4.7-p2
 
@@ -31,11 +43,11 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### Hotfixes included in this release
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.7-p1
 
@@ -45,7 +57,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Apply hotfix for CVE-2024-34102
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### Highlights
 
