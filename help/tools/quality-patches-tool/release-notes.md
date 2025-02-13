@@ -15,6 +15,20 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.59 {#v1-1-59}
+
+* **ACSD-63454** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the default value for a dropdown and multi-select attributes is not saved properly in the database.
+* **ACSD-63574** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.5) - Fixes the issue where adding a Bundle Product Listing to a block via the Page Builder resulted in an error.
+* **ACSD-63793** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue when Import processes interfere with each other in different browser tabs.
+* **ACSD-64113** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue causing errors in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the media gallery.
+* **ACSD-64212** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where an order is not associated with a customer account when the account is created via GraphQL after the order is placed.
+* **ACSD-63469** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where fixed-amount discounts for the whole cart were not being applied properly when more than one rule was applied.
+* **ACSD-63870** (for Adobe Commerce >=2.4.4 <2.4.4-p11) - Fixes the issue where a company customer wasn't logged out properly when the company status changes during the customer active session.
+* **ACSD-64112** (for Adobe Commerce >=2.4.5 <2.4.8) - Fixes an issue where the `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set.
+* Versions updated: **ACSD-61622**
+* Replaced patches: **ACSD-61553**
+* Deprecated patches: **ACSD-61199**
+
 ## v1.1.58 {#v1-1-58}
 
 * **ACSD-48570** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where the reset password page couldn't be reached by clicking the [!UICONTROL Admin] reset password link when **Add Store Code to URLs** was *enabled*, which previously resulted in the login page or a 404 page being displayed.
