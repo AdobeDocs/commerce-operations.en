@@ -8,7 +8,7 @@ role: Admin
 
 This article provides troubleshooting steps when you receive a warning disk alert for Adobe Commerce in New Relic. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
 
-![disc warning alert](../../assets/disk-warning-magento-managed.png){width="500"}
+![disc warning alert](../../assets/managed-alerts/disk-warning-magento-managed.png){width="500"}
 
 ## Affected products and versions
 
