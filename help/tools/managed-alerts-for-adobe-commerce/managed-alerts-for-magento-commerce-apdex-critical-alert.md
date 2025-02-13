@@ -8,7 +8,7 @@ role: Admin
 
 This article provides troubleshooting steps when you receive an Apdex critical alert for Adobe Commerce in New Relic. The Apdex score measures users' satisfaction to the response time of web applications and services. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
 
-![apdex critical alert](../../assets/apdex-critical-magento-managed.png){width="500"}
+![apdex critical alert](../../assets/managed-alerts/apdex-critical-magento-managed.png){width="500"}
 
 ## Affected products and versions
 
