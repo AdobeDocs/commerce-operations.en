@@ -11,7 +11,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 QPT v1.1.59 includes the following patches:
 
 1. **ACSD-63454**: Fixes the issue where the default value for dropdown and multi-select attributes is not saved properly in the database.
-1. **ACSD-63574**: Fixes the issue where adding a **[!UICONTROL Bundle Product]** listing to a block via the **[!UICONTROL Page Builder]** results in an error.
+1. **ACSD-63574**: Fixes the issue where adding a **[!UICONTROL Bundle Product]** listing to a block via [!DNL Page Builder] results in an error.
 1. **ACSD-63793**: Fixes the issue where import processes interfere with each other in different browser tabs.
 1. **ACSD-64113**: Fixes the issue causing errors in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the media gallery.
 1. **ACSD-64212**: Fixes the issue where an order is not associated with a customer account when the account is created via [!DNL GraphQL] after the order is placed.
