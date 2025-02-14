@@ -3,8 +3,8 @@ title: 'ACSD-63578: Clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to 
 description: Apply the ACSD-63578 patch to fix the Adobe Commerce issue where clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] in the Admin does not remove the SKU.
 feature: Orders
 role: Admin, Developer
+exl-id: 12afceb5-db3c-4783-a532-93c4c71f05f4
 ---
-
 # ACSD-63578: Clicking the **[!UICONTROL Delete]** icon in *[!UICONTROL Add to Order by SKU]* doesn't remove SKU
 
 The ACSD-63578 patch fixes the issue where clicking the **[!UICONTROL Delete]** icon in *[!UICONTROL Add to Order by SKU]* in the Admin doesn't remove the SKU. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 is installed. The patch ID is ACSD-63578. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
