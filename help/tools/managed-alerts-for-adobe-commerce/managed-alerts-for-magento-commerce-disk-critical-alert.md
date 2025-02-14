@@ -44,7 +44,7 @@ Follow these steps to identify and troubleshoot the cause.
     * Contact Reason: select "New Relic CRITICAL alert received."
     * Description of the alert.
     * [New Relic Incident link](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). This is included in your [Managed alerts for Adobe Commerce](/managed-alerts-for-magento-commerce.md).
-1. In New Relic, review disks for highest use. For steps refer to Storage tab on New Relic [Infrastructure monitoring Hosts page: Storage](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage)
+1. In New Relic, review disks for highest use. For steps refer to Storage tab on New Relic [Infrastructure monitoring Hosts page: Storage tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage)
     * If in New Relic you see a slow increase in disk usage, try the following options:
     * Optimizing disk space by adjusting space allocation. For steps, refer to [Manage Disk space](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) in our developer documentation. You may also need to request more disk space (contact your Adobe Account Team).
     * Clear up disk space for MySQL. Refer to [MySQL disk space is low](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) in our support knowledge base for steps.
