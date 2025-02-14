@@ -8,7 +8,7 @@ role: Admin
 
 This article provides troubleshooting steps when you receive a CPU warning alert for Adobe Commerce in New Relic. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
 
-![CPU warning alert](../../assets/managed-alerts/cpu-warning-magento-managed.png)
+![CPU warning alert](../../assets/managed-alerts/cpu-warning-magento-managed.png){width="500"}
 
 ## Affected products and versions
 
