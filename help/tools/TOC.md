@@ -729,6 +729,8 @@ feature: Configuration
             - [ACSD-63325: "Syntax Error: Unexpected < EOF >" error when submitting empty [!DNL GraphQL] request](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
             - [ACSD-63578: Clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] doesn't remove SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
             - [ACSD-63329: Default values for date and time fields aren't set when creating products with the REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+        - v1.1.59 {#v1-1-59}
+            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
