@@ -2,7 +2,7 @@
 title: 'Managed alerts on Adobe Commerce: Redis memory warning alert'
 description: 'This article provides troubleshooting steps for when you receive a Redis warning alert for Adobe Commerce in New Relic. Immediate action is 
 feature: Categories, Marketing Tools, Observability, Services, Support, Tools and External Services, Variables
-role: Admin
+role:A dmin
 ---
 # Managed alerts on Adobe Commerce: Redis memory warning alert
 
