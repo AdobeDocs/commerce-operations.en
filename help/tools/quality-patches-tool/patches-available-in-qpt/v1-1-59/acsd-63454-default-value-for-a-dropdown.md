@@ -41,7 +41,7 @@ The default value for [!UICONTROL Dropdown] and [!UICONTROL Multiple Select] att
     `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. Go back and set one of the two options as **[!UICONTROL Is Default]**.
-1. Check the database again to ensure that default_value now contains the selected option ID.
+1. Check the database again to ensure that *default_value* now contains the selected option ID.
 1. Go back and change the default option by selecting the other option.
 
 <u>Expected results</u>:
