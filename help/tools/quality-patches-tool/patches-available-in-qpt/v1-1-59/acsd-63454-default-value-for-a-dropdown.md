@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-63454: Default value for a dropdown and `Multi Select` attributes is not saved properly in the database'
-description: Apply the ACSD-63454 patch to fix the Adobe Commerce issue where the default value for a dropdown and `Multi Select` attributes is not saved properly in the database.
+title: 'ACSD-63454: Default value for a Dropdown and Multiple Select attributes is not saved properly in the database'
+description: Apply the ACSD-63454 patch to fix the Adobe Commerce issue where the default value for a Dropdown and Multiple Select attributes is not saved properly in the database.
 feature: Attributes, Products
 role: Admin, Developer
 ---
 
-# ACSD-63454: Default value for a dropdown and `Multi Select` attributes is not saved properly in the database
+# ACSD-63454: Default value for a [!UICONTROL Dropdown] and [!UICONTROL Multiple Select] attributes is not saved properly in the database
 
 The ACSD-63454 patch fixes the issue where the default value for a dropdown and `Multi Select` attributes is not saved properly in the database. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63454. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -25,28 +25,28 @@ The ACSD-63454 patch fixes the issue where the default value for a dropdown and 
 
 ## Issue
 
-Default value for a dropdown and `Multi Select` attributes is not saved properly in the database.
+The default value for [!UICONTROL Dropdown] and [!UICONTROL Multiple Select] attributes is not saved correctly in the database; instead of updating the default value, the new value is appended to the old one, separated by a comma.
 
 <u>Steps to reproduce</u>:
 
-1. Login to the backend, go to **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**
-1. Click **[!UICONTROL Add new attribute]**. 
-1. Create an **[!UICONTROL attribute]**:
-    * default label: `test`.
-    * Catalog Input Type for Store Owner: `Multiple select`.
-    * Manage Options: add 2 options without selecting **[!UICONTROL is default]**.
-1. Click **[!UICONTROL Save]**.
+1. Login to the backend, go to **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]**.
+1. Click **[!UICONTROL Add New Attribute]**. 
+1. In the **[!UICONTROL Properties]** tab, set the following:
+    * [!UICONTROL Default Label] = test
+    * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
+    * [!UICONTROL Manage Options]: Add 2 options without selecting **[!UICONTROL Is Default]**.
+1. Click **[!UICONTROL Save Attribute]**.
 1. Check in the databasse that the *default_value* column is empty.
 
     `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
-1. Go back and set one of the two options as **[!UICONTROL is default]**.
-1. Check again the database to see that *default_value* now contains the ID of the option.
-1. Go back and change the default option selecting the other option.
+1. Go back and set one of the two options as **[!UICONTROL Is Default]**.
+1. Check the database again to ensure that default_value now contains the selected option ID.
+1. Go back and change the default option by selecting the other option.
 
 <u>Expected results</u>:
 
-New default value should replace old value in database.
+The new default value should replace the old value in the database.
 
 <u>Actual results</u>:
 
