@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-63454: Default value for a dropdown and multi-select attributes is not saved properly in the database'
-description: Apply the ACSD-63454 patch to fix the Adobe Commerce issue where the default value for a dropdown and multi-select attributes is not saved properly in the database.
+title: 'ACSD-63454: Default value for a dropdown and `Multi Select` attributes is not saved properly in the database'
+description: Apply the ACSD-63454 patch to fix the Adobe Commerce issue where the default value for a dropdown and `Multi Select` attributes is not saved properly in the database.
 feature: Attributes, Products
 role: Admin, Developer
 ---
 
-# ACSD-63454: Default value for a dropdown and multi-select attributes is not saved properly in the database
+# ACSD-63454: Default value for a dropdown and `Multi Select` attributes is not saved properly in the database
 
-The ACSD-63454 patch fixes the issue where the default value for a dropdown and multi-select attributes is not saved properly in the database. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63454. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63454 patch fixes the issue where the default value for a dropdown and `Multi Select` attributes is not saved properly in the database. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63454. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,15 +25,15 @@ The ACSD-63454 patch fixes the issue where the default value for a dropdown and 
 
 ## Issue
 
-Default value for a dropdown and multi-select attributes is not saved properly in the database.
+Default value for a dropdown and `Multi Select` attributes is not saved properly in the database.
 
 <u>Steps to reproduce</u>:
 
 1. Login to the backend, go to **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**
 1. Click **[!UICONTROL Add new attribute]**. 
 1. Create an **[!UICONTROL attribute]**:
-    * default label: test.
-    * Catalog Input Type for Store Owner: Multiple select.
+    * default label: `test`.
+    * Catalog Input Type for Store Owner: `Multiple select`.
     * Manage Options: add 2 options without selecting **[!UICONTROL is default]**.
 1. Click **[!UICONTROL Save]**.
 1. Check in the databasse that the *default_value* column is empty.
