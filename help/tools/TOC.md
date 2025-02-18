@@ -778,7 +778,7 @@ feature: Configuration
         - [Troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
         - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
-        - [Managed alerts on Adobe Commerce: Redis memory critical alert](managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
+        - [Managed alerts on Adobe Commerce: Redis memory critical alert]((/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
         - [Managed alerts for Adobe Commerce: Disk warning alert](managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
         - [Managed alerts for Adobe Commerce](managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
         - [Managed alerts for Adobe Commerce: Disk critical alert](managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
