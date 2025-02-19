@@ -5,7 +5,7 @@ feature: Customers, B2B, Companies
 role: Admin, Developer
 ---
 
-# 'ACSD-63870: Customer not logged out properly during company status change'
+# ACSD-63870: Customer not logged out properly during company status change
 
 The ACSD-63870 patch solves the issue where a company customer is not logged out properly when the company status changes during an active customer session. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63870. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -31,11 +31,11 @@ Customer logout failure when company status is changed during an active customer
 
 1. Enable B2B functionality.
 1. Create a simple product.
-1. Create a new company and mark it as *Active.*
-1. Login as the comapny user and add a product to the cart.
+1. Create a new company and mark it as *Active*.
+1. Log in as the company user and add a product to the cart.
 1. Proceed to checkout till the [!UICONTROL Shipping Address] step. Do not enter the address.
-1. Go to admin and change the company status to *Pending Approval.*
-1. Go back to frontend and fill the shipping address.
+1. Go to admin and change the company status to *Pending Approval*.
+1. Go back to the frontend and fill the shipping address.
 
 <u>Expected results</u>:
 
@@ -43,7 +43,7 @@ Customer has been logged out.
 
 <u>Actual results</u>:
 
-* User get `Something went wrong` error.
+* Users get the *Something went wrong* error.
 * `var/log/exception.log` contains:
 
 ```
