@@ -46,9 +46,9 @@ Customer has been logged out.
 * Users get the *Something went wrong* error.
 * `var/log/exception.log` contains:
 
-```
-report.CRITICAL: InvalidArgumentException: Incorrect theme identification key in /home/lib/internal/Magento/Framework/View/Design/Theme/FlyweightFactory.php:60
-```
+  ```
+  report.CRITICAL: InvalidArgumentException: Incorrect theme identification key in /home/lib/internal/Magento/Framework/View/Design/Theme/FlyweightFactory.php:60
+  ```
 
 
 ## Apply the patch
