@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-63574: Adding **[!UICONTROL Bundle Product]** listing to block via [!DNL Page Builder] results in error'
+title: 'ACSD-63574: Adding [!UICONTROL Bundle Product] listing to block via [!DNL Page Builder] results in error'
 description: Apply the ACSD-63574 patch to fix the Adobe Commerce issue where adding **[!UICONTROL Bundle Product]** with `Checkbox` or `Multi Select` options to a block via [!DNL Page Builder] results in an error.
 feature: Page Builder, Page Content
 role: Admin, Developer
