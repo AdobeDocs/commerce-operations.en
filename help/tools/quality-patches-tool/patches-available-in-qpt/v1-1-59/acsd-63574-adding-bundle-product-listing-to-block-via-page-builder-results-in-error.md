@@ -4,7 +4,7 @@ description: Apply the ACSD-63574 patch to fix the Adobe Commerce issue where ad
 feature: Page Builder, Page Content
 role: Admin, Developer
 ---
-# ACSD-63574: Adding **[!UICONTROL Bundle Product]** listing to block via [!DNL Page Builder] results in error
+# ACSD-63574: Adding [!UICONTROL Bundle Product] listing to block via [!DNL Page Builder] results in error
 
 The ACSD-63574 patch fixes the issue where adding **[!UICONTROL Bundle Product]** with `Checkbox` or `Multi Select` options to a block via [!DNL Page Builder] results in an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63574. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.4 - 2.4.4-p11
 
 ## Issue
 
-When adding **[!UICONTROL Bundle Product]** to block using [!DNL Page Builder], the product widget preview breaks and shows the error message "We're sorry, an error has occurred while generating this content." This issue occurs specifically when the bundle product includes `Checkbox` or `Multi Select` option type and `indexer dimension mode` is set to `website_and_customer_group` and in the exception log it shows below error.
+When adding **[!UICONTROL Bundle Product]** to a block using [!DNL Page Builder], the product widget preview breaks and shows the error message *We're sorry, an error has occurred while generating this content*. This issue occurs specifically when the bundle product includes `Checkbox` or `Multi Select` option types and `indexer dimension mode` is set to `website_and_customer_group`. The exception log shows the following error:
 
     ```
     report.CRITICAL: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_name.catalog_product_index_price_cg0_ws0' doesn't exist in /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
@@ -32,14 +32,14 @@ When adding **[!UICONTROL Bundle Product]** to block using [!DNL Page Builder], 
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]**
-1. In the left panel, expand **[!UICONTROL Catalog]** and choose **[!UICONTROL Catalog]** underneath.
+1. Go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]**.
+1. In the left panel, expand **[!UICONTROL Catalog]** and select **[!UICONTROL Catalog]** from the options below.
 1. Scroll down to the **[!UICONTROL Price]** section and set **[!UICONTROL Catalog Price Scope]** to **[!UICONTROL Global]**.
 1. Set `Indexer dimension mode` to `website_and_customer_group` using below command:
 
     `bin/magento indexer:set-dimensions-mode catalog_product_price website_and_customer_group`
 
-1. Create **[!UICONTROL Bundle Product]** with a bundle option type `Checkbox` or `Multi Select` and assign product to category.
+1. Create a **[!UICONTROL Bundle Product]** with a bundle option type `Checkbox` or `Multi Select`, and assign the product to a category.
 1. Go to **[!UICONTROL Content]** > **[!UICONTROL Blocks]** > **[!UICONTROL Edit Content with Page Builder]**.
 1. Select the category to which the created product is assigned and try to **[!UICONTROL Save]**.
 
@@ -49,7 +49,7 @@ Product added without errors.
 
 <u>Actual results</u>:
 
-Unable to add product through [!DNL Page Builder] when **[!UICONTROL Bundle Product]** option type is `Checkbox` or `Multi Select` and `indexer dimension mode` is `website_and_customer_group` and it is throwing error "We're sorry, an error has occurred while generating this content."
+Unable to add a product through [!DNL Page Builder] when the **[!UICONTROL Bundle Product]** option type is `Checkbox` or `Multi Select`, and `indexer dimension mode` is set to  `website_and_customer_group`. It throws the error: *We're sorry, an error has occurred while generating this content*.
 
 
 ## Apply the patch
