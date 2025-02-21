@@ -16,7 +16,7 @@ Adobe Commerce on cloud infrastructure Pro plan architecture
 
 ## Issue
 
-You will receive a managed alert in New Relic if you have signed up to [Managed alerts for Adobe Commerce](/managed-alerts-for-magento-commerce.md) and one or more of the alert thresholds have been surpassed. These alerts were developed by Adobe Commerce to give customers a standard set using insights from Support and Engineering.
+You will receive a managed alert in New Relic if you have signed up to [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md) and one or more of the alert thresholds have been surpassed. These alerts were developed by Adobe Commerce to give customers a standard set using insights from Support and Engineering.
 
  <u>**Do!**</u>:
 
