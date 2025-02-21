@@ -33,14 +33,14 @@ See below in the table for links to the KB articles providing troubleshooting st
 
 | Severity | CPU | Memory | Disk | Apdex | MariaDB | Redis Memory | Troubleshooting Article |
 |----------|-----|--------|------|-------|---------|--------------|-------------------------|
-| Warning  | ✅  |        |      |       |         |              | [Managed alerts for Adobe Commerce: CPU warning alert](managed-alerts-for-magento-commerce-cpu-warning-alert)|
-| Critical | ✅  |        |      |       |         |              | [Managed alerts for Adobe Commerce: CPU critical alert](managed-alerts-on-magento-commerce-cpu-critical-alert)|
-| Warning  |     | ✅     |      |       |         |              | [Managed alerts for Adobe Commerce: memory warning alert](managed-alerts-for-magento-commerce-memory-warning-alert)|
-| Critical |     | ✅     |      |       |         |              | [Managed alerts for Adobe Commerce: memory critical alert](managed-alerts-on-magento-commerce-memory-critical-alert)|
-| Warning  |     |        |      | ✅    |         |              | [Managed alerts for Adobe Commerce: Apdex warning alert](managed-alerts-for-magento-commerce-apdex-warning-alert)|
-| Critical |     |        |      | ✅    |         |              | [Managed alerts for Adobe Commerce: Apdex critical alert](managed-alerts-for-magento-commerce-apdex-critical-alert)|
-| Warning  |     |        | ✅   |       |         |              | [Managed alerts for Adobe Commerce: disk warning alert](managed-alerts-for-magento-commerce-disk-warning-alert)|
-| Critical |     |        | ✅   |       |         |              | [Managed alerts for Adobe Commerce: disk critical alert](managed-alerts-for-magento-commerce-disk-critical-alert)|
-| Warning & Critical |     |        |      |       | ✅       |              | [Managed alerts on Adobe Commerce: MariaDB alerts](managed-alerts-on-magento-commerce-mariadb-alerts)|
-| Warning  |     |        |      |       |         | ✅          | [Managed alerts on Adobe Commerce: Redis memory warning alert](managed-alerts-on-magento-commerce-redis-memory-warning-alert)|
-| Critical |     |        |      |       |         | ✅          | [Managed alerts on Adobe Commerce: Redis memory critical alert](managed-alerts-on-magento-commerce-redis-memory-critical-alert)|
+| Warning  | ✅  |        |      |       |         |              | [Managed alerts for Adobe Commerce: CPU warning alert](managed-alerts-for-magento-commerce-cpu-warning-alert.md)|
+| Critical | ✅  |        |      |       |         |              | [Managed alerts for Adobe Commerce: CPU critical alert](managed-alerts-on-magento-commerce-cpu-critical-alertmd)|
+| Warning  |     | ✅     |      |       |         |              | [Managed alerts for Adobe Commerce: memory warning alert](managed-alerts-for-magento-commerce-memory-warning-alert.md)|
+| Critical |     | ✅     |      |       |         |              | [Managed alerts for Adobe Commerce: memory critical alert](managed-alerts-on-magento-commerce-memory-critical-alert.md)|
+| Warning  |     |        |      | ✅    |         |              | [Managed alerts for Adobe Commerce: Apdex warning alert](managed-alerts-for-magento-commerce-apdex-warning-alert.md)|
+| Critical |     |        |      | ✅    |         |              | [Managed alerts for Adobe Commerce: Apdex critical alert](managed-alerts-for-magento-commerce-apdex-critical-alert.md)|
+| Warning  |     |        | ✅   |       |         |              | [Managed alerts for Adobe Commerce: disk warning alert](managed-alerts-for-magento-commerce-disk-warning-alert.md)|
+| Critical |     |        | ✅   |       |         |              | [Managed alerts for Adobe Commerce: disk critical alert](managed-alerts-for-magento-commerce-disk-critical-alert.md)|
+| Warning & Critical |     |        |      |       | ✅       |              | [Managed alerts on Adobe Commerce: MariaDB alerts](managed-alerts-on-magento-commerce-mariadb-alerts.md)|
+| Warning  |     |        |      |       |         | ✅          | [Managed alerts on Adobe Commerce: Redis memory warning alert](managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)|
+| Critical |     |        |      |       |         | ✅          | [Managed alerts on Adobe Commerce: Redis memory critical alert](managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)|
