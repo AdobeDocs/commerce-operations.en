@@ -7,7 +7,7 @@ role: Admin
 ---
 # Managed alerts on Adobe Commerce: memory critical alert
 
-This article provides troubleshooting steps when you receive a memory critical alert for Adobe Commerce in New Relic. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
+This article provides troubleshooting steps when you receive a memory critical alert for Adobe Commerce in New Relic. Immediate action is required to remedy the issue. 
 
 ![disc critical alert](../../assets/managed-alerts/memory-critical-magento-managed.png){width="500"}
 
