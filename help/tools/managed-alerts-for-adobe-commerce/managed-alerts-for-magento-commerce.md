@@ -34,7 +34,7 @@ See below in the table for links to the KB articles providing troubleshooting st
 | Severity | CPU | Memory | Disk | Apdex | MariaDB | Redis Memory | Troubleshooting Article |
 |----------|-----|--------|------|-------|---------|--------------|-------------------------|
 | Warning  | ✅  |        |      |       |         |              | [Managed alerts for Adobe Commerce: CPU warning alert](managed-alerts-for-magento-commerce-cpu-warning-alert.md)|
-| Critical | ✅  |        |      |       |         |              | [Managed alerts for Adobe Commerce: CPU critical alert](managed-alerts-on-magento-commerce-cpu-critical-alertmd)|
+| Critical | ✅  |        |      |       |         |              | [Managed alerts for Adobe Commerce: CPU critical alert](managed-alerts-on-magento-commerce-cpu-critical-alert.md)|
 | Warning  |     | ✅     |      |       |         |              | [Managed alerts for Adobe Commerce: memory warning alert](managed-alerts-for-magento-commerce-memory-warning-alert.md)|
 | Critical |     | ✅     |      |       |         |              | [Managed alerts for Adobe Commerce: memory critical alert](managed-alerts-on-magento-commerce-memory-critical-alert.md)|
 | Warning  |     |        |      | ✅    |         |              | [Managed alerts for Adobe Commerce: Apdex warning alert](managed-alerts-for-magento-commerce-apdex-warning-alert.md)|
