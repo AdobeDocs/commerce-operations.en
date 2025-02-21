@@ -43,7 +43,7 @@ Follow these steps to identify and troubleshoot the cause.
 1. Check if an Adobe Commerce support ticket exists. For steps, refer to [Track your support tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case) in the Commerce Support Knowledge Base. Support may have received a New Relic threshold alert, created a ticket and started working on the issue. If no ticket exists, create one. The ticket should have the following information:
     * Contact Reason: select "New Relic CRITICAL alert received."
     * Description of the alert.
-    * [New Relic Incident link](https://docs.newrelic.com/docs/alerts/incident-management/view-event-details-incidents/). This is included in your [Managed alerts for Adobe Commerce](/managed-alerts-for-magento-commerce.md).
+    * [New Relic Incident link](https://docs.newrelic.com/docs/alerts/incident-management/view-event-details-incidents/). This is included in your [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md).
 1. In New Relic, review disks for highest use. For steps refer to Storage tab on New Relic [Infrastructure monitoring Hosts page: Storage tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage)
     * If in New Relic you see a slow increase in disk usage, try the following options:
     * Optimizing disk space by adjusting space allocation. For steps, refer to [Manage Disk space](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) in the Commerce on Cloud Guide. You may also need to request more disk space (contact your Adobe Account Team).
