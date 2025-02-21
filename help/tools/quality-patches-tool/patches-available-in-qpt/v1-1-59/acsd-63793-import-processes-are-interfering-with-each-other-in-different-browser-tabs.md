@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-63793: [!UICONTROL Import] Processes are interfering with Each Other in different browser tabs'
-description: Apply the ACSD-63793 patch to fix the Adobe Commerce issue where [!UICONTROL Import] Processes are interfering with Each Other in different browser tabs.
+title: 'ACSD-63793: [!UICONTROL Import] processes are interfering with each other in different browser tabs'
+description: Apply the ACSD-63793 patch to fix the Adobe Commerce issue where [!UICONTROL Import] processes are interfering with each other in different browser tabs.
 feature: Data Import/Export
 role: Admin, Developer
 ---
 
-# ACSD-63793: [!UICONTROL Import] Processes are interfering with Each Other in different browser tabs
+# ACSD-63793: [!UICONTROL Import] processes are interfering with each other in different browser tabs
 
-The ACSD-63793 patch fixes the issue where **[!UICONTROL Import]** Processes are interfering with Each Other in different browser tabs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63793. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63793 patch fixes the issue where **[!UICONTROL Import]** processes are interfering with each other in different browser tabs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63793. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -29,7 +29,7 @@ Importing data through the Admin UI interferes with another **[!UICONTROL Import
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**
+1. Go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**.
 1. Select **[!UICONTROL Customers and Addresses (single file)]** for **[!UICONTROL Entity Type]**.
 1. Choose **[!UICONTROL Add/Update]** for **[!UICONTROL Import Behavior]**.
 1. Select a valid file to import.
