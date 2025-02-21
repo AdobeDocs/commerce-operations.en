@@ -40,7 +40,7 @@ If you receive a DML Queries Critical alert start at step one. If you receive a 
 1. Check if an Adobe Commerce support ticket exists. For steps, refer to our knowledge base [Track your support tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). Support may have received a New Relic threshold alert, created a ticket and started working on the issue. If no ticket exists, create one. The ticket should have the following information:
 1. Contact Reason: select "New Relic MariaDB alert received".
 1. Description of the alert.
-1. [New Relic Incident link](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). This is included in your [Managed alerts for Adobe Commerce](/managed-alerts-for-magento-commerce.md).
+1. [New Relic Incident link](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). This is included in your [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md).
 1. To identify the source of the issue, try to identify the DML queries:
 1. Review your database operations by using steps from New Relic [Databases page](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time) .
 1. Sort by CALL COUNT, then OPERATION. Review INSERT, DELETE, and UPDATE operations.
