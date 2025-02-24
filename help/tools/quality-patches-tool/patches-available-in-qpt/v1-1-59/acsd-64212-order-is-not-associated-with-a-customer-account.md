@@ -1,10 +1,10 @@
 ---
-title: 'ACSD-64212: [!UICONTROL Order] is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order'
+title: 'ACSD-64212: Order not linked to a customer account created via [!DNL GraphQL] after placing order'
 description: Apply the ACSD-64212 patch to fix the Adobe Commerce issue where an order does not get linked to a customer account that is created via [!DNL GraphQL] after placing the order.
 feature: GraphQL, Checkout, Customers
 role: Admin, Developer
 ---
-# ACSD-64212: [!UICONTROL Order] is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order
+# ACSD-64212: Order not linked to a customer account created via [!DNL GraphQL] after placing order
 
 The ACSD-64212 patch fixes the issue where an order does not get linked to a customer account that is created via [!DNL GraphQL] after placing the order. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-64212. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -24,48 +24,49 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.7-p3
 
 ## Issue
 
-Order is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order.
+Order is not linked to a customer account when the account is created via [!DNL GraphQL] after placing the order.
 
 <u>Steps to reproduce</u>:
 
 1. Place a guest order on the frontend.
 1. Send the following request to create the account:
 
-```
-mutation CreateAccountAfterCheckout(
+  ```
+  mutation CreateAccountAfterCheckout(
   $email: String!
   $firstname: String!
   $lastname: String!
   $password: String!
   $is_subscribed: Boolean!
-) {
-  createCustomer(
-    input: {
-      email: $email
-      firstname: $firstname
-      lastname: $lastname
-      password: $password
-      is_subscribed: $is_subscribed
-    }
   ) {
-    customer {
-      email
+    createCustomer(
+      input: {
+        email: $email
+        firstname: $firstname
+        lastname: $lastname
+        password: $password
+        is_subscribed: $is_subscribed
+      }
+    ) {
+      customer {
+        email
+        __typename
+      }
       __typename
     }
-    __typename
   }
-}
-```
 
-```
-{
+  ```
+
+  ```
+  {
     "email": "guest@example.com",
     "firstname": "first",
     "lastname": "last",
     "password": "password",
     "is_subscribed": false
-}
-```
+  }
+  ```
 
 <u>Expected results</u>:
 
