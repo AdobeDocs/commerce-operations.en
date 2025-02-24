@@ -4,7 +4,7 @@ description: This article provides troubleshooting steps when you receive a memo
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 ---
-# Managed alerts on Adobe Commerce: memory critical alert
+# Managed alerts on Adobe Commerce: Memory critical alert
 
 This article provides troubleshooting steps when you receive a memory critical alert for Adobe Commerce in New Relic. Immediate action is required to remedy the issue. 
 
