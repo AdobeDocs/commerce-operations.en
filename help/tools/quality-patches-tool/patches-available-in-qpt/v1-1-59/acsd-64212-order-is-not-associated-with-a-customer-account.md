@@ -1,12 +1,12 @@
 ---
 title: 'ACSD-64212: [!UICONTROL Order] is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order'
-description: Apply the ACSD-64212 patch to fix the Adobe Commerce issue where [!UICONTROL Order] is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order.
+description: Apply the ACSD-64212 patch to fix the Adobe Commerce issue where an order does not get linked to a customer account that is created via [!DNL GraphQL] after placing the order.
 feature: GraphQL, Checkout, Customers
 role: Admin, Developer
 ---
 # ACSD-64212: [!UICONTROL Order] is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order
 
-The ACSD-64212 patch fixes the issue where **[!UICONTROL Order]** is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-64212. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64212 patch fixes the issue where an order does not get linked to a customer account that is created via [!DNL GraphQL] after placing the order. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-64212. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.7-p3
 
 ## Issue
 
-**[!UICONTROL Order]** is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order.
+Order is not associated with a customer account when the account is created via [!DNL GraphQL] after placing the order.
 
 <u>Steps to reproduce</u>:
 
@@ -32,7 +32,7 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.7-p3
 1. Send the following request to create the account:
 
 ```
-    mutation CreateAccountAfterCheckout(
+mutation CreateAccountAfterCheckout(
   $email: String!
   $firstname: String!
   $lastname: String!
