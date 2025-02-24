@@ -37,11 +37,9 @@ The image is uploaded without errors.
 
 <u>Actual results</u>:
 
-The following error message is thrown: 
-
+1. The following error message is thrown:
 *A technical problem with the server created an error. Try again to continue what you were doing. If the problem persists, try again later.*
-
-`var/log/exception.log` contains:
+1. `var/log/exception.log` contains:
 
 ```
 report.CRITICAL: ValueError: imagecreatetruecolor(): Argument #1 ($width) must be greater than 0 in /home/lib/internal/Magento/Framework/Image/Adapter/Gd2.php:427
