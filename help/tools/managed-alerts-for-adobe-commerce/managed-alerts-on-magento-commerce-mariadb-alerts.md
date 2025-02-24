@@ -49,4 +49,4 @@ If you receive a DML Queries Critical alert start at step one. If you receive a 
 1. Seek out either code optimizations, or operational optimizations:
 1. Code optimizations: Look to optimize queries with bulk inserts / updates, minimizing index usage, or throttling code.
 1. Operational optimizations: Offload resource intensive data modifications to lower traffic times.
-1. Additional optimizations: Ensure that you are on the latest version of ECE-Tools. For steps, refer to [Update ece-tools version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) in the Commerce on Cloud Guide. 
+1. Additional optimizations: Ensure that you are on the latest version of ECE-Tools. For steps, refer to [Update ece-tools version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) in the Commerce on Cloud Guide. 
