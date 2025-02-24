@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-63793: [!UICONTROL Import] processes are interfering with each other in different browser tabs'
-description: Apply the ACSD-63793 patch to fix the Adobe Commerce issue where [!UICONTROL Import] processes are interfering with each other in different browser tabs.
+title: 'ACSD-63793: Import processes interfere with each other in different browser tabs'
+description: Apply the ACSD-63793 patch to fix the Adobe Commerce issue where import processes interfere with each other in different browser tabs.
 feature: Data Import/Export
 role: Admin, Developer
 ---
 
-# ACSD-63793: [!UICONTROL Import] processes are interfering with each other in different browser tabs
+# ACSD-63793: Import processes interfere with each other in different browser tabs
 
-The ACSD-63793 patch fixes the issue where **[!UICONTROL Import]** processes are interfering with each other in different browser tabs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63793. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63793 patch fixes the issue where import processes interfere with each other in different browser tabs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63793. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -45,7 +45,7 @@ The import process should not interfere with each other.
 
 <u>Actual results</u>:
 
-The **[!UICONTROL Import]** process completes, and the report file is available for download. It indicates an error in the second row, and data from another import is processed, even though the initial validation passed without any errors.
+The import process completes, and the report file is available for download. It indicates an error in the second row, and data from another import is processed, even though the initial validation passed without any errors.
 
 ## Apply the patch
 
