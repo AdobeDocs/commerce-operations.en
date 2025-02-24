@@ -22,11 +22,11 @@ feature: Configuration
     - [Patches](site-wide-analysis-tool/patches.md)
 
  - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
-    - [Managed alerts on Adobe Commerce: Redis memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
+    - [Managed alerts on Adobe Commerce: [[!DNL Redis] memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
     - [Managed alerts for Adobe Commerce: Disk warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
     - [Managed alerts for Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
     - [Managed alerts for Adobe Commerce: Disk critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
-    - [Managed alerts on Adobe Commerce: Redis memory warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
+    - [Managed alerts on Adobe Commerce: [[!DNL Redis] memory warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
     - [Managed alerts for Adobe Commerce: Memory warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
     - [Managed alerts on Adobe Commerce: CPU critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
     - [Managed alerts on Adobe Commerce: Memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
