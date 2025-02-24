@@ -25,23 +25,23 @@ The ACSD-63793 patch fixes the issue where **[!UICONTROL Import]** processes are
 
 ## Issue
 
-Importing data through the Admin UI interferes with another **[!UICONTROL Import]**, causing unexpected behavior where data from one **[!UICONTROL Import]** is processed in another.
+Importing data through the Admin UI interferes with another import, causing data from one import to be processed in another.
 
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**.
-1. Select **[!UICONTROL Customers and Addresses (single file)]** for **[!UICONTROL Entity Type]**.
-1. Choose **[!UICONTROL Add/Update]** for **[!UICONTROL Import Behavior]**.
+1. Set **[!UICONTROL Entity Type]** to *[!UICONTROL Customers and Addresses] (single file)*.
+1. Set **[!UICONTROL Import Behavior]** to *[!UICONTROL Add/Update]*.
 1. Select a valid file to import.
 1. Click the **[!UICONTROL Check Data]** button.
 1. Keep this tab open.
-1. Open a new tab and repeat the steps with a file containing invalid data (e.g., two identical emails for different customers).
+1. Open a new tab and repeat the steps with a file containing invalid data (for example, two identical emails for different customers).
 1. Switch back to the first tab.
 1. Click the **[!UICONTROL Import]** button at the bottom.
 
 <u>Expected results</u>:
 
-The **[!UICONTROL Import]** process should not interfere with each other.
+The import process should not interfere with each other.
 
 <u>Actual results</u>:
 

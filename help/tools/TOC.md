@@ -733,7 +733,7 @@ feature: Configuration
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
             - [ACSD-63454: Default value for a Dropdown and Multiple Select attributes is not saved properly in the database](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
             - [ACSD-63870: Customer not logged out properly during company status change](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
-            - [ACSD-63793: [!UICONTROL Import] processes are interfering with each other in different browser tabs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
+            - [ACSD-63793: Import processes interfere with each other in different browser tabs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
