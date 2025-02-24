@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-64113: Errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the [!UICONTROL Media Gallery]'
-description: Apply the ACSD-64113 patch to fix the Adobe Commerce issue where errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the [!UICONTROL Media Gallery].
+description: Apply the ACSD-64113 patch to fix the Adobe Commerce issue where errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the [!DNL Media Gallery].
 feature: Page Content, Media, Admin Workspace
 role: Admin, Developer
 ---
@@ -28,12 +28,12 @@ Errors occur in the admin when uploading images with a relatively small width co
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL Content]** > **[!UICONTROL Media]** > **[!UICONTROL Media Gallery]** > Select **[!UICONTROL wysiwyg]** directory.
+1. Go to **[!UICONTROL Content]** > **[!UICONTROL Media]** > **[!UICONTROL Media Gallery]** and select the **[!UICONTROL wysiwyg]** directory.
 1. Upload the image with a relatively small width compared to its height (or vice versa).
 
 <u>Expected results</u>:
 
-The image was uploaded without errors.
+The image is uploaded without errors.
 
 <u>Actual results</u>:
 
