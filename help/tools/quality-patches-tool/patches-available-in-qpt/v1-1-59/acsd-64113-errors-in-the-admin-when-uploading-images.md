@@ -37,7 +37,9 @@ The image is uploaded without errors.
 
 <u>Actual results</u>:
 
-The user gets an error message: *A technical problem with the server created an error. Try again to continue what you were doing. If the problem persists, try again later.*
+The following error message is thrown: 
+
+*A technical problem with the server created an error. Try again to continue what you were doing. If the problem persists, try again later.*
 
 `var/log/exception.log` contains:
 
