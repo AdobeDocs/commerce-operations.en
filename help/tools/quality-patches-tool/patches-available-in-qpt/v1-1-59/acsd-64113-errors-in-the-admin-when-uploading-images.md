@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-64113: Errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the [!UICONTROL Media Gallery]'
+title: 'ACSD-64113: Error in admin on uploading image with smaller width than height via [!DNL Media Gallery]'
 description: Apply the ACSD-64113 patch to fix the Adobe Commerce issue where errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the [!DNL Media Gallery].
 feature: Page Content, Media, Admin Workspace
 role: Admin, Developer
 ---
-# ACSD-64113: Errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the [!UICONTROL Media Gallery]
+# ACSD-64113: Error in admin on uploading image with smaller width than height via [!DNL Media Gallery]
 
-The ACSD-64113 patch fixes the issue where errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the **[!UICONTROL Media Gallery]**. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-64113. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64113 patch fixes the issue where errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the [!DNL Media Gallery]. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-64113. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -24,7 +24,7 @@ Adobe Commerce (all deployment methods) 2.4.5 - 2.4.7-p3
 
 ## Issue
 
-Errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the **[!UICONTROL Media Gallery]**.
+Errors occur in the admin when uploading images with a relatively small width compared to their height (or vice versa) via the [!DNL Media Gallery].
 
 <u>Steps to reproduce</u>:
 
@@ -38,18 +38,19 @@ The image is uploaded without errors.
 <u>Actual results</u>:
 
 1. The following error message is thrown:
-*A technical problem with the server created an error. Try again to continue what you were doing. If the problem persists, try again later.*
+
+    *A technical problem with the server created an error. Try again to continue what you were doing. If the problem persists, try again later.*
 1. `var/log/exception.log` contains:
 
-```
-report.CRITICAL: ValueError: imagecreatetruecolor(): Argument #1 ($width) must be greater than 0 in /home/lib/internal/Magento/Framework/Image/Adapter/Gd2.php:427
-```
+    ```
+    report.CRITICAL: ValueError: imagecreatetruecolor(): Argument #1 ($width) must be greater than 0 in /home/lib/internal/Magento/Framework/Image/Adapter/Gd2.php:427
+    ```
 
-or
+    or
 
-```
-report.CRITICAL: ValueError: imagecreatetruecolor(): Argument #1 ($height) must be greater than 0 in /home/lib/internal/Magento/Framework/Image/Adapter/Gd2.php:427
-```
+    ```
+    report.CRITICAL: ValueError: imagecreatetruecolor(): Argument #1 ($height) must be greater than 0 in /home/lib/internal/Magento/Framework/Image/Adapter/Gd2.php:427
+    ```
 
 ## Apply the patch
 
