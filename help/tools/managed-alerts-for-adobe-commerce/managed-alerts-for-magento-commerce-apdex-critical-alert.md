@@ -1,12 +1,12 @@
 ---
-title: 'Managed alerts for Adobe Commerce: Apdex critical alert'
-description: This article provides troubleshooting steps when you receive an Apdex critical alert for Adobe Commerce in [!DNL New Relic]. The Apdex score measures users' satisfaction to the response time of web applications and services. Immediate action is required to remedy the issue. 
+title: 'Managed alerts for Adobe Commerce: [!DNL Apdex] critical alert'
+description: This article provides troubleshooting steps when you receive an [!DNL Apdex] critical alert for Adobe Commerce in [!DNL New Relic]. The [!DNL Apdex] score measures users' satisfaction to the response time of web applications and services. Immediate action is required to remedy the issue. 
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 ---
-# Managed alerts for Adobe Commerce: Apdex critical alert
+# Managed alerts for Adobe Commerce: [!DNL Apdex] critical alert
 
-This article provides troubleshooting steps when you receive an Apdex critical alert for Adobe Commerce in [!DNL New Relic]. The Apdex score measures users' satisfaction to the response time of web applications and services. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
+This article provides troubleshooting steps when you receive an [!DNL Apdex] critical alert for Adobe Commerce in [!DNL New Relic]. The [!DNL Apdex] score measures users' satisfaction to the response time of web applications and services. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
 
 ![apdex critical alert](../../assets/managed-alerts/apdex-critical-magento-managed.png){width="500"}
 
@@ -46,7 +46,7 @@ Follow these steps to identify and troubleshoot the cause.
     * Description of the alert.
     * [[!DNL New Relic] Incident link](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). This is included in your [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md).
 1. To identify the source of the problem, use [[!DNL New Relic] APM's Transaction page](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems) to identify transactions with performance issues:
-    * Sort transactions by ascending Apdex scores. [Apdex](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction) refers to user satisfaction to the response time of your web applications and services. A low Apdex score can indicate a bottleneck (a transaction with a higher response time). Usually it is the database, Redis, or PHP. For steps, refer to [[!DNL New Relic] View transactions with highest Apdex dissatisfaction](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/#dissatisfaction).
+    * Sort transactions by ascending [!DNL Apdex] scores. [Apdex](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction) refers to user satisfaction to the response time of your web applications and services. A low [!DNL Apdex] score can indicate a bottleneck (a transaction with a higher response time). Usually it is the database, Redis, or PHP. For steps, refer to [[!DNL New Relic] View transactions with highest Apdex dissatisfaction](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/#dissatisfaction).
     * Sort transactions by highest throughput, the slowest average response time, most time-consuming, and other thresholds. For steps, refer to [[!DNL New Relic] Find specific performance problems](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems). If you are still struggling to identify the issue use [!DNL New Relic] APM's Infrastructure page.
 1. Use [[!DNL New Relic] APM's Infrastructure page](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/) to identify resource intensive processes. For steps, refer to [[!DNL New Relic] Infrastructure monitoring Hosts page: Processes tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes).
 1. If services like Redis or MySQL are the top source of memory consumption, try the following:
