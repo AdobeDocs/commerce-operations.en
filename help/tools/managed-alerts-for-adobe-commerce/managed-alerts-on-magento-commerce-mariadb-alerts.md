@@ -11,7 +11,7 @@ This article provides troubleshooting steps when you receive MariaDB alerts for 
 * DML Queries Warning
 * DML Queries Critical
 
-## **Affected products and versions**
+## Affected products and versions
 
 Adobe Commerce on cloud infrastructure Pro plan architecture
 
