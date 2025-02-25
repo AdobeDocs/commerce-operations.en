@@ -6,7 +6,7 @@ role: Admin
 ---
 # Managed alerts for Adobe Commerce: Disk warning alert
 
-This article provides troubleshooting steps when you receive a warning disk alert for Adobe Commerce in !DNL New Relic]. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
+This article provides troubleshooting steps when you receive a warning disk alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
 
 ![disc warning alert](../../assets/managed-alerts/disk-warning-magento-managed.png){width="500"}
 
@@ -34,7 +34,7 @@ You will receive an alert in [!DNL New Relic] if you have signed up to [Managed 
 
 Follow these steps to identify and troubleshoot the cause:
 
-1. In New Relic, review disks for highest use. For steps refer to Storage tab on [!DNL New Relic] [Infrastructure monitoring Hosts page: Storage tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage):
+1. In [!DNL New Relic], review disks for highest use. For steps refer to Storage tab on [!DNL New Relic] [Infrastructure monitoring Hosts page: Storage tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage):
     * If in [!DNL New Relic] you see a slow increase in disk usage, try the following options:
     * Optimizing disk space by adjusting space allocation. For steps, refer to [Manage Disk space](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) in the Commerce on Cloud Guide. You may also need to request more disk space (contact your Adobe Account Team).
     * Clear up disk space for MySQL. Refer to [MySQL disk space is low](http://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud) for steps.
