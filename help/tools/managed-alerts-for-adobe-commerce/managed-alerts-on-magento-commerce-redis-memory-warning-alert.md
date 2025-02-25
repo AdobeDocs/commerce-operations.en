@@ -21,7 +21,7 @@ You will receive an alert in New Relic if you have signed up to [Managed alerts 
  **<u>Do!</u>**
 
 * It is recommended you abort any deployment scheduled until this alert is cleared.
-* If your site is or becomes completely unresponsive, immediately put your site into maintenance mode. For steps, refer to [Enable or disable maintenance mode](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in the Commerce Installation Guide.
+* If your site is or becomes completely unresponsive, immediately put your site into maintenance mode. For steps, refer to [Enable or disable maintenance mode](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in the Commerce Installation Guide.
 * Make sure to add your IP to the exempt IP address list to ensure that you are still able to access your site for troubleshooting. For steps, refer to [Maintain the list of exempt IP addresses](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#maintain-the-list-of-exempt-ip-addresses) in the Commerce Installation Guide.
 
  **<u>Don't!</u>**
