@@ -1,6 +1,6 @@
 ---
 title: 'Managed alerts for Adobe Commerce: Disk warning alert'
-description: This article provides troubleshooting steps when you receive a warning disk alert for Adobe Commerce in !DNL New Relic]. Immediate action is required to remedy the issue. 
+description: This article provides troubleshooting steps when you receive a warning disk alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue. 
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 ---
@@ -16,7 +16,7 @@ This article provides troubleshooting steps when you receive a warning disk aler
 
 ## Issue
 
-You will receive an alert in New Relic if you have signed up to [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md) and one or more of the alert thresholds have been surpassed. These alerts were developed by Adobe to give customers a standard set using insights from Support and Engineering.
+You will receive an alert in [!DNL New Relic] if you have signed up to [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md) and one or more of the alert thresholds have been surpassed. These alerts were developed by Adobe to give customers a standard set using insights from Support and Engineering.
 
  <u> **Do!** </u>
 
@@ -34,8 +34,8 @@ You will receive an alert in New Relic if you have signed up to [Managed alerts 
 
 Follow these steps to identify and troubleshoot the cause:
 
-1. In New Relic, review disks for highest use. For steps refer to Storage tab on !DNL New Relic] [Infrastructure monitoring Hosts page: Storage tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage):
-    * If in !DNL New Relic] you see a slow increase in disk usage, try the following options:
+1. In New Relic, review disks for highest use. For steps refer to Storage tab on [!DNL New Relic] [Infrastructure monitoring Hosts page: Storage tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage):
+    * If in [!DNL New Relic] you see a slow increase in disk usage, try the following options:
     * Optimizing disk space by adjusting space allocation. For steps, refer to [Manage Disk space](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) in the Commerce on Cloud Guide. You may also need to request more disk space (contact your Adobe Account Team).
     * Clear up disk space for MySQL. Refer to [MySQL disk space is low](http://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud) for steps.
     * If [!DNL New Relic] shows rapidly increasing disk usage, this could indicate that there is a problem that has caused a file to increase very quickly in a directory. Do the following checks:
