@@ -3,8 +3,8 @@ title: 'ACSD-64112: `indexer_update_all_views` cron execution fails when `MAGE_I
 description: Apply the ACSD-64112 patch to fix the Adobe Commerce issue where the `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set.
 feature: Catalog Management, B2B
 role: Admin, Developer
+exl-id: c95f179d-5291-481f-b655-08a9db608513
 ---
-
 # ACSD-64112: `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set
 
 The ACSD-64112 patch fixes the issue where the `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-64112. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
