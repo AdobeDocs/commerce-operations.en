@@ -1,5 +1,5 @@
 ---
-title: 'Managed alerts for Adobe Commerce: disk warning alert'
+title: 'Managed alerts for Adobe Commerce: Disk warning alert'
 description: This article provides troubleshooting steps when you receive a warning disk alert for Adobe Commerce in New Relic. Immediate action is required to remedy the issue. 
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
