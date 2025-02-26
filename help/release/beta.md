@@ -32,7 +32,7 @@ Commerce Optimizer is for:
 - Businesses where a third-party system manages the cart and checkout lifecycle.
 - AEM customers not currently using Adobe Commerce, seeking a simple way to manage their product catalog.
 
-[Learn more](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=en) about Adobe Commerce Optimizer. If you would like to participate in the Adobe Commerce Optimizer early access program, send an email request to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+[Learn more](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) about Adobe Commerce Optimizer. If you would like to participate in the Adobe Commerce Optimizer early access program, send an email request to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Enhanced search capabilities for Live Search (Public Beta)
 
