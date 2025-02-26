@@ -17,7 +17,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.60 {#v1-1-60}
 
-* **ACSD-63323** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where the 'Select All' option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
+* **ACSD-63323** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where the **[!UICONTROL Select All]** option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
 * **ACSD-63992** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes an issue where a cart price rule with a coupon and a condition based on a shipping method cannot be correctly applied through the Admin UI.
 * **ACSD-64111** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes an error when setting nested conditions for a Product component in Page Builder.
 * **ACSD-64137** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where searching for pickup locations by zip code did not work properly for Dutch localization.
