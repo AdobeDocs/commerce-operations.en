@@ -34,7 +34,7 @@ You will receive an alert in [!DNL New Relic] if you have signed up to [Managed 
 
 Follow these steps to identify and troubleshoot the cause:
 
-1. In [!DNL New Relic], review disks for highest use. For steps refer to **[!UICONTROL Storage]** tab on [!DNL New Relic] [Infrastructure monitoring Hosts page: Storage tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage):
+1. In [!DNL New Relic], review disks for highest use. For steps refer to **[!UICONTROL Storage]** tab on [!DNL New Relic] [Infrastructure monitoring Hosts page: [!UICONTROL Storage] tab](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage):
     * If in [!DNL New Relic] you see a slow increase in disk usage, try the following options:
     * Optimizing disk space by adjusting space allocation. For steps, refer to [Manage Disk space](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) in the Commerce on Cloud Guide. You may also need to request more disk space (contact your Adobe Account Team).
     * Clear up disk space for MySQL. Refer to [MySQL disk space is low](http://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud) for steps.
