@@ -7,7 +7,7 @@ role: Admin
 # Managed alerts for Adobe Commerce
 
 
-We've set up key dashboards and alerts to aid you in understanding when your site is reaching critical storage and Apdex levels (users' satisfaction with applications and services response time). This can help you take action before you notice slow response times or an outage. You will be able to troubleshoot the alerts with the articles listed below. Before you can use the alerts, first set up notification channels. Please refer to [New Relic Configure Notification Channels](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in the Commerce on Cloud Guide.
+We've set up key dashboards and alerts to aid you in understanding when your site is reaching critical storage and Apdex levels (users' satisfaction with applications and services response time). This can help you take action before you notice slow response times or an outage. You will be able to troubleshoot the alerts with the articles listed below. Before you can use the alerts, first set up notification channels. Please refer to [New Relic Configure Notification Channels](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) in the Commerce on Cloud Guide.
 
 >[!NOTE]
 >
