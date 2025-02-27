@@ -4,6 +4,66 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### February 21, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">detailed description of the issue fixed by the ACSD-64112 patch in the QPT 1.1.59 release</a>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c22cffcbac34ed45d0252a879fa714cf283be4fe">c22cff</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### February 20, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">detailed description of the issue fixed by the ACSD-63454 patch in the QPT 1.1.59 release</a>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee04269b7b443d9a75bc905e4dde2470e2c9eb7d">ee0426</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### February 19, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change">detailed description of the issue fixed by the ACSD-63870 patch in the QPT 1.1.59 release</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/826125b9e176639a53c79ec7fea825b6963ffa3c">826125</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### February 14, 2025
 
 <table style="table-layout:auto;">

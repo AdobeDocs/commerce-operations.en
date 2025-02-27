@@ -12,5 +12,6 @@ This page lists released versions of Adobe Commerce. It contains release dates f
 >
 >Adobe recommends installing or upgrading Adobe Commerce to the latest security patch available for each release.
 >For other security updates, see [Security Updates for Magento / Adobe Commerce](https://helpx.adobe.com/security/products/magento.html).
+>For pricing, see [Adobe Commerce pricing](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
