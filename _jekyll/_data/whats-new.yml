@@ -2,8 +2,44 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Feb 18 02:20:52 2025
+updated: Tue Feb 25 17:37:26 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-64112
+    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails).
+  versions: ''
+  type: new-topic
+  date: February 21, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1210
+  merge_commit: c22cffcbac34ed45d0252a879fa714cf283be4fe
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63454
+    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown).
+  versions: ''
+  type: new-topic
+  date: February 20, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1207
+  merge_commit: ee04269b7b443d9a75bc905e4dde2470e2c9eb7d
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63870
+    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change)
+  versions: ''
+  type: new-topic
+  date: February 19, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1208
+  merge_commit: 826125b9e176639a53c79ec7fea825b6963ffa3c
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [description of the issues fixed by the patches available
     in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview)
   versions: ''

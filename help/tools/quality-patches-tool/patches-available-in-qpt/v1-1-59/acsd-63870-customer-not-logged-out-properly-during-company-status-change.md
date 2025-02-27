@@ -1,10 +1,10 @@
 ---
 title: 'ACSD-63870: Customer not logged out properly during company status change'
-description: 'Apply the ACSD-63870 patch to fix the Adobe Commerce issue where a company customer is not logged out properly when the company status changes during an active customer session.'
+description: Apply the ACSD-63870 patch to fix the Adobe Commerce issue where a company customer is not logged out properly when the company status changes during an active customer session.
 feature: Customers, B2B, Companies
 role: Admin, Developer
+exl-id: 4488f3cb-bb34-491e-8821-c2e98ff69429
 ---
-
 # ACSD-63870: Customer not logged out properly during company status change
 
 The ACSD-63870 patch solves the issue where a company customer is not logged out properly when the company status changes during an active customer session. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63870. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
@@ -67,4 +67,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
