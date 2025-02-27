@@ -3,8 +3,8 @@ title: 'ACSD-63793: Import processes interfere with each other in different brow
 description: Apply the ACSD-63793 patch to fix the Adobe Commerce issue where import processes interfere with each other in different browser tabs.
 feature: Data Import/Export
 role: Admin, Developer
+exl-id: f6bed4c4-5ea2-47e7-97fa-d7717470297f
 ---
-
 # ACSD-63793: Import processes interfere with each other in different browser tabs
 
 The ACSD-63793 patch fixes the issue where import processes interfere with each other in different browser tabs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63793. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
