@@ -3,8 +3,8 @@ title: 'ACSD-63454: Default value for a Dropdown and Multiple Select attributes 
 description: Apply the ACSD-63454 patch to fix the Adobe Commerce issue where the default value for a Dropdown and Multiple Select attributes is not saved properly in the database.
 feature: Attributes, Products
 role: Admin, Developer
+exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
 ---
-
 # ACSD-63454: Default value for a [!UICONTROL Dropdown] and [!UICONTROL Multiple Select] attributes is not saved properly in the database
 
 The ACSD-63454 patch fixes the issue where the default value for a [!UICONTROL Dropdown] and [!UICONTROL Multiple Select] attributes is not saved properly in the database. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63454. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
