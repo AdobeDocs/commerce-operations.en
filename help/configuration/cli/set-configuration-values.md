@@ -118,7 +118,7 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 **To set sensitive configuration values**:
 
 ```bash
-bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path мфдгу
+bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
 The following table describes the `set` command parameters:
