@@ -29,7 +29,7 @@ The default value for [!UICONTROL Dropdown] and [!UICONTROL Multiple Select] att
 
 <u>Steps to reproduce</u>:
 
-1. Login to the backend, go to **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]**.
+1. Login to the backend, go to **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**.
 1. Click **[!UICONTROL Add New Attribute]**. 
 1. In the **[!UICONTROL Properties]** tab, set the following:
     * **[!UICONTROL Default Label]**: *test*
