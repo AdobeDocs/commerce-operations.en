@@ -4,6 +4,58 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### February 28, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account">detailed description of the issue fixed by the ACSD-64212 patch in the QPT 1.1.59 release</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/60f62d00afe94c1e9874c623d6703162c35791c2">60f62d</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images">detailed description of the issue fixed by the ACSD-64113 patch in the QPT 1.1.59 release</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8b71fc097d50209786beda72cfc5a7eae6a0449f">8b71fc</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### February 27, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error">detailed description of the issue fixed by the ACSD-63574 patch in the QPT 1.1.59 release</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7477a28c5db13e5c2daabea4f36dc9de784581a5">7477a2</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs">detailed description of the issue fixed by the ACSD-63793 patch in the QPT 1.1.59 release</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dae40520a0b5584a0627ddccaeaa7faed37e42bd">dae405</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### February 21, 2025
 
 <table style="table-layout:auto;">
@@ -476,70 +528,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a0a2b5ad10c5f38603963af036fb280988df612d">a0a2b5</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### January 3, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront">detailed description of the issue fixed by the ACSD-62952 patch in the QPT 1.1.56 release</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d612d7f4a57824aae06e8dcff86c4534e451f68">5d612d</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly">detailed description of the issue fixed by the ACSD-62872 patch in the QPT 1.1.56 release</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/374deb66f7fb8081318a966f78fe3b1bd4ced2a0">374deb</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages">detailed description of the issue fixed by the ACSD-62758 patch in the QPT 1.1.57 release</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6582b9c90f84d99335534f25d38aa2bff9d02be">f6582b</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response">detailed description of the issue fixed by the ACSD-62965 patch in the QPT 1.1.57 release</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/427969b0e983065cbaad20d7b960a023ae238299">427969</a> (commit)</td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error">detailed description of the issue fixed by the ACSD-58325 patch in the QPT 1.1.57 release</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9a46f93eab7e2cb3da76941a6d8a2ef636fd8696">9a46f9</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### January 2, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend">detailed description of the issue fixed by the ACSD-63326 patch in the QPT 1.1.57 release</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/de06ef0133bf57169c80c82ca4bb4cb09671c63b">de06ef</a> (commit)</td>
     </tr>
   </tbody>
 </table>
