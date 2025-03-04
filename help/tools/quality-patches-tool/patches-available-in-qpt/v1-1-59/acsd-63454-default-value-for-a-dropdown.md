@@ -29,19 +29,19 @@ The default value for [!UICONTROL Dropdown] and [!UICONTROL Multiple Select] att
 
 <u>Steps to reproduce</u>:
 
-1. Login to the backend, go to **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]**.
+1. Login to the backend, go to **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**.
 1. Click **[!UICONTROL Add New Attribute]**. 
 1. In the **[!UICONTROL Properties]** tab, set the following:
-    * [!UICONTROL Default Label] = test
-    * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
-    * [!UICONTROL Manage Options]: Add 2 options without selecting **[!UICONTROL Is Default]**.
+    * **[!UICONTROL Default Label]**: *test*
+    * **[!UICONTROL Catalog Input Type for Store Owner]**: *[!UICONTROL Multiple Select]*
+    * **[!UICONTROL Manage Options]**: Add two options without selecting **[!UICONTROL Is Default]**.
 1. Click **[!UICONTROL Save Attribute]**.
-1. Check in the databasse that the *default_value* column is empty.
+1. Check in the databasse that the `default_value` column is empty.
 
     `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. Go back and set one of the two options as **[!UICONTROL Is Default]**.
-1. Check the database again to ensure that *default_value* now contains the selected option ID.
+1. Check the database again to ensure that `default_value` now contains the selected option ID.
 1. Go back and change the default option by selecting the other option.
 
 <u>Expected results</u>:
