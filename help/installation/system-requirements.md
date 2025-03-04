@@ -11,7 +11,7 @@ There are some differences in the dependencies for Commerce on Cloud infrastruct
 
 >[!NOTE]
 >
->The system requirements apply to released version of Adobe Commerce only. Beta or early access versions are not included. See the [release notes](../release/release-notes/overview.md) to learn more about the latest released versions of Adobe Commerce.
+>The system requirements apply to released versions of Adobe Commerce only. Beta or early access versions are not included. See the [release notes](../release/release-notes/overview.md) to learn more about the latest released versions of Adobe Commerce.
 
 The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
