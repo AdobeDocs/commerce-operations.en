@@ -9,6 +9,10 @@ The following summarizes software dependencies and services tested for Adobe Com
 
 There are some differences in the dependencies for Commerce on Cloud infrastructure. Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1.2 is supported for Commerce 2.4.4 on Cloud infrastructure.
 
+>[!NOTE]
+>
+>The system requirements apply to released version of Adobe Commerce only. Beta or early access versions are not included. See the [release notes](../release/release-notes/overview.md) to learn more about the latest released versions of Adobe Commerce.
+
 The following tables show versions of third-party software dependencies that Adobe has tested with specific Adobe Commerce releases.
 
 Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
