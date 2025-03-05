@@ -50,15 +50,15 @@ The message should be: 1200 records found (1200 selected)
 
 **Actual results**:
 
-- Pagination doesn't work.
-- The wrong message is shown: 5 records found (20 selected)
+* Pagination doesn't work.
+* The wrong message is shown: 5 records found (20 selected)
 
 ## Apply the patch
 
 To apply individual patches, use the following links depending on your deployment method:
 
-- Adobe Commerce or Magento Open Source on-premises: [!DNL Quality Patches Tool] > Usage in the [!DNL Quality Patches Tool] guide.
-- Adobe Commerce on cloud infrastructure: Upgrades and Patches > Apply Patches in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce or Magento Open Source on-premises: [!DNL Quality Patches Tool] > Usage in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce on cloud infrastructure: Upgrades and Patches > Apply Patches in the Commerce on Cloud Infrastructure guide.
 
 ## Additional steps required after the patch installation
 
