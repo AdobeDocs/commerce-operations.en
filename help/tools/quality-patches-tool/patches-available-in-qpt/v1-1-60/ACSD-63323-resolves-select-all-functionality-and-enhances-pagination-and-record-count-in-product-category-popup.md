@@ -1,4 +1,3 @@
-
 ---
 title: 'ACSD-63323: Resolves Select All functionality and enhances pagination and record count in product category popup'
 description: Apply the ACSD-63323 patch to fix the Adobe Commerce issue where the Select All option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
@@ -43,7 +42,7 @@ None
 1. Open a Default Category > Products in Category > Add Products.
 1. Click on Assign > Select All.
 1. Change the number of products on the page to value = 5.
-</ol>
+
 
 **Expected results**: 
 
