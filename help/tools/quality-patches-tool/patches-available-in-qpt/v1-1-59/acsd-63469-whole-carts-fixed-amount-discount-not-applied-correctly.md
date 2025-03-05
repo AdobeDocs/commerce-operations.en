@@ -32,12 +32,13 @@ When multiple **[!UICONTROL Fixed amount discount for whole cart]** rules are ap
 1. Create two products priced at $850 and $85, and set their special prices to $765 and $68, respectively.
 1. Create two **[!UICONTROL Cart Price Rules]** as follows:
     * Rule 1
-        * **[!UICONTROL Conditions]** -> *Qty >= 2, $850 product*
+        * **[!UICONTROL Conditions]**: For the $850 product, set *Qty* to *equals or greater than 2*
+        * **[!UICONTROL Actions]**: Apply **[!UICONTROL Fixed amount discount for whole cart]** of *$153*
         * **[!UICONTROL Actions]** -> **[!UICONTROL Fixed amount discount for whole cart]** = $153
     * Rule 2
         * **[!UICONTROL Conditions]** -> *Qty >= 2, $85 product*
         * **[!UICONTROL Actions]** -> **[!UICONTROL Fixed amount discount for whole cart]** = $14
-1. Add two products to the cart, each with a quantity of 2.
+1. Add both products to the cart, each with a quantity of 2.
 
 <u>Expected results</u>:
 
