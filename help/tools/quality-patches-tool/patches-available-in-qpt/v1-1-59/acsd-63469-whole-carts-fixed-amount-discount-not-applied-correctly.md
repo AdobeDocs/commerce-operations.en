@@ -3,8 +3,8 @@ title: 'ACSD-63469: Fixed-amount cart discounts not applied correctly with multi
 description: Apply the ACSD-63469 patch to fix the Adobe Commerce issue where fixed-amount discounts for the whole cart do not apply properly when more than one rule is applied.
 feature: Price Rules
 role: Admin, Developer
+exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
 ---
-
 # ACSD-63469: Fixed-amount cart discounts not applied correctly with multiple rules
 
 The ACSD-63469 patch fixes the issue where fixed-amount discounts for the whole cart do not apply properly when more than one rule is applied. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59 is installed. The patch ID is ACSD-63469. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
@@ -63,4 +63,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
