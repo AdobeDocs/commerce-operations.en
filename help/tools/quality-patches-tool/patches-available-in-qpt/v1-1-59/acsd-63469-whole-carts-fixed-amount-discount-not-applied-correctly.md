@@ -1,6 +1,7 @@
 ---
 title: 'ACSD-63469: Fixed-amount cart discounts not applied correctly with multiple rules'
 description: Apply the ACSD-63469 patch to fix the Adobe Commerce issue where fixed-amount discounts for the whole cart do not apply properly when more than one rule is applied.
+feature: Price Rules
 role: Admin, Developer
 ---
 
