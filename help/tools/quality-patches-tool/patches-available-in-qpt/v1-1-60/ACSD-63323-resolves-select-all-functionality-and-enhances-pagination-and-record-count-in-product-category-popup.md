@@ -25,7 +25,7 @@ The ACSD-63323 patch fixes the issue where the [!UICONTROL Select All option doe
 
 ## Issue
 
-Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTROL Categories]** > a category >  [!UICONTROL Products in Category] > **[!UICONTROL Add Products]**. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
+Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTROL Categories]** > a category >  **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
 
 
 <u>Steps to reproduce</u>:
@@ -37,8 +37,8 @@ Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTRO
    ```
 
 1. Open **[!UICONTROL Catalog]** > **[UICONTROL Products]** and see the number of products: *1200* records found.
-1. Open a Default Category > *[!UICONTROL Products in Category]* > **[!UICONTROL Add Products]**.
-1. Click on Assign > **[!UICONTROL Select All]**.
+1. Open a Default Category > **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**.
+1. Click on **[!UICONTROL Assign]** > **[!UICONTROL Select All]**.
 1. Change the number of products on the page to value = *5*.
 
 
