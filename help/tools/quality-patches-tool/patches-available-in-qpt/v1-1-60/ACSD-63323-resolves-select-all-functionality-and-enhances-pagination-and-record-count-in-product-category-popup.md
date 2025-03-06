@@ -36,7 +36,7 @@ Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTRO
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
    ```
 
-1. Open Catalog > Products and see the number of products: 1200 records found.
+1. Open **[!UICONTROL Catalog]** > **[UICONTROL Products]** and see the number of products: *1200* records found.
 1. Open a Default Category > *[!UICONTROL Products in Category]* > **[!UICONTROL Add Products]**.
 1. Click on Assign > **[!UICONTROL Select All]**.
 1. Change the number of products on the page to value = *5*.
