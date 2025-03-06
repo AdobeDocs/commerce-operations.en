@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-63323: Resolves Select All functionality and enhances pagination and record count in product category popup'
-description: Apply the ACSD-63323 patch to fix the Adobe Commerce issue where the Select All option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
+title: 'ACSD-63323: Resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup'
+description: Apply the ACSD-63323 patch to fix the Adobe Commerce issue where the [!UICONTROL Select All] option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
 feature: Products
 role: Admin, Developer
 ---
 
-# ACSD-63323: resolves Select All functionality and enhances pagination and record count in product category popup
+# ACSD-63323: resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup
 
-The ACSD-63323 patch fixes the issue where the Select All option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) is installed. The patch ID is ACSD-63323. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63323 patch fixes the issue where the [!UICONTROL Select All option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) is installed. The patch ID is ACSD-63323. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,10 +25,8 @@ The ACSD-63323 patch fixes the issue where the Select All option doesn't work wh
 
 ## Issue
 
-Fixes the issue where the Select all option doesn't work in Admin > Categories > a category > Products in Category > Add Products. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
+Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTROL Categories]** > a category >  [!UICONTROL Products in Category] > **[!UICONTROL Add Products]**. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
 
-<u>Prerequisites</u>:
-None
 
 <u>Steps to reproduce</u>:
 
@@ -39,35 +37,32 @@ None
    ```
 
 1. Open Catalog > Products and see the number of products: 1200 records found.
-1. Open a Default Category > Products in Category > Add Products.
-1. Click on Assign > Select All.
-1. Change the number of products on the page to value = 5.
+1. Open a Default Category > *[!UICONTROL Products in Category]* > **[!UICONTROL Add Products]**.
+1. Click on Assign > **[!UICONTROL Select All]**.
+1. Change the number of products on the page to value = *5*.
 
 
 **Expected results**: 
 
-The message should be: 1200 records found (1200 selected)
+The message should be: 1200 records found (1200 selected).
 
 **Actual results**:
 
 * Pagination doesn't work.
-* The wrong message is shown: 5 records found (20 selected)
+* The wrong message is shown: 5 records found (20 selected).
 
 ## Apply the patch
 
 To apply individual patches, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [!DNL Quality Patches Tool] > Usage in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: Upgrades and Patches > Apply Patches in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
-## Additional steps required after the patch installation
-
-None
 
 ## Related reading
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [!DNL Quality Patches Tool]: A self-service tool for quality patches in the Tools guide.
+* [[!DNL Quality Patches Tool]]: A self-service tool for quality patches in the Tools guide (/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
 
 
