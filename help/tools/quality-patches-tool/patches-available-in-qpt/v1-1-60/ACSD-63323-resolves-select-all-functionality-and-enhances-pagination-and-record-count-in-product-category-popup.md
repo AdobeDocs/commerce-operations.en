@@ -68,6 +68,6 @@ None
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-- [!DNL Quality Patches Tool]: A self-service tool for quality patches in the Tools guide.
+* [!DNL Quality Patches Tool]: A self-service tool for quality patches in the Tools guide.
 
 
