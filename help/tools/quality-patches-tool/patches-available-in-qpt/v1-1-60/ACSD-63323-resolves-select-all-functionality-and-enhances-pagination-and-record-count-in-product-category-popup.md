@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-63323: resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup
 
-The ACSD-63323 patch fixes the issue where the [!UICONTROL Select All option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) is installed. The patch ID is ACSD-63323. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63323 patch fixes the issue where the [!UICONTROL Select All] option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) is installed. The patch ID is ACSD-63323. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACSD-63323 patch fixes the issue where the [!UICONTROL Select All option doe
 
 ## Issue
 
-Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTROL Categories]** > a category >  **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
+Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTROL Categories]** > choose a category >  **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**. It also helps pagination and the record count label to function correctly when adding products to a category via the popup grid.
 
 
 <u>Steps to reproduce</u>:
