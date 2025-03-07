@@ -5,7 +5,7 @@ feature: Cache, Marketing Tools, Observability, Support, Tools and External Serv
 role: Admin
 ---
 
-# Managed alerts for Adobe Commerce: Apdex warning alert
+# Managed alerts for Adobe Commerce: [!DNL Apdex] warning alert
 
 This article provides troubleshooting steps for when you receive an [!DNL Apdex] warning alert for Adobe Commerce in [!DNL New Relic]. The [!DNL Apdex] score measures users' satisfaction to the response time of web applications and services. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
 
@@ -18,7 +18,7 @@ This article provides troubleshooting steps for when you receive an [!DNL Apdex]
 
 ## Issue
 
-You will receive a managed alert in  [!DNL New Relic] if you have signed up to [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md) and one or more of the alert thresholds have been surpassed. These alerts were developed by Adobe to give merchants a standard set using insights from Support and Engineering.
+You will receive a managed alert in [!DNL New Relic] if you have signed up to [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md) and one or more of the alert thresholds have been surpassed. These alerts were developed by Adobe to give merchants a standard set using insights from Support and Engineering.
 
  <u> **Do!** </u>
 
