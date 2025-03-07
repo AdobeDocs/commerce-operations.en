@@ -4,6 +4,7 @@ description: This article provides troubleshooting steps when you receive a CPU 
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 ---
+
 # Managed alerts for Adobe Commerce: CPU warning alert
 
 This article provides troubleshooting steps when you receive a CPU warning alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
