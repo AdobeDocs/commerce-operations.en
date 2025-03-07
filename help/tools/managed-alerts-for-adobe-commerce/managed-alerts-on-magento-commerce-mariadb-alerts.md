@@ -4,6 +4,7 @@ description: This article provides troubleshooting steps when you receive MariaD
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
 ---
+
 # Managed alerts on Adobe Commerce: MariaDB alerts
 
 This article provides troubleshooting steps when you receive MariaDB alerts for Adobe Commerce in [!DNL New Relic]. The MariaDB alerts monitor high query load as well as excessive Data Manipulation Language (DML) queries. Both can lead to a degraded user experience or even downtime. You can receive two kinds of alerts:
@@ -42,7 +43,7 @@ If you receive a DML Queries Critical alert, start at step one. If you receive a
     * Description of the alert.
     * [[!DNL New Relic] Incident link](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). This is included in your [Managed alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md).
 1. To identify the source of the issue, try to identify the DML queries:
-    1. Review your database operations by using steps from New Relic [Databases page](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time) .
+    1. Review your database operations by using steps from New Relic [Databases page](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time).
     1. Sort by **[!UICONTROL CALL COUNT]**, then **[!UICONTROL OPERATION]**. Review `INSERT`, `DELETE`, and `UPDATE` operations.
     1. Look for high AVG.
     1. Click through to find database operation callers. This will identify transactions using that query by time.
