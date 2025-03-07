@@ -35,7 +35,7 @@ You will receive a managed alert in [!DNL New Relic] if you have signed up to [M
 
 **DML Queries (queries that modify the database using UPDATE, INSERT, and DELETE)**
 
-If you receive a DML Queries Critical alert start at step one. If you receive a DML Queries Warning alert start at step two.
+If you receive a DML Queries Critical alert, start at step one. If you receive a DML Queries Warning alert, start at step two.
 
 1. Check if an Adobe Commerce support ticket exists. For steps, refer to our knowledge base [Track your support tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). Support may have received a [!DNL New Relic] threshold alert, created a ticket and started working on the issue. If no ticket exists, create one. The ticket should have the following information:
     * Contact Reason: select **[!UICONTROL New Relic MariaDB alert received]**.
