@@ -38,12 +38,12 @@ Follow these steps to identify and troubleshoot the cause.
 
 1. Check if an Adobe Commerce support ticket exists. For steps, refer to [Track your support tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case) in the Commerce Support Knowledge Base. Support may have already received a [!DNL New Relic] threshold alert, created a ticket and started working on the issue. If no ticket exists, create one. The ticket should have the following information:
 
-    * Contact Reason: select [!DNL New Relic] CRITICAL alert received.
+    * Contact Reason: select **[!UICONTROL New Relic CRITICAL alert received]**.
     * Description of the alert.
     * [[!DNL New Relic] incident link](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents/). This is included in your [Managed Alerts for Adobe Commerce](managed-alerts-for-magento-commerce.md).
 
 1. If no support ticket exists, check if [!DNL Redis] Used Memory is increasing or decreasing by going to [one.newrelic.com](https://login.newrelic.com) > **[!UICONTROL Infrastructure]** > **[!UICONTROL Third-party services]** page, select the [!DNL Redis] dashboard. If it is stable or increasing, [submit a support ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) to have your cluster upsized, or increase the `maxmemory` limit to the next level.
-1. If you cannot identify the cause of increased Redis memory consumption, review recent trends to identify issues with recent code deployments or configuration changes (for example, new customer groups and large changes to the catalog). It is recommended that you review the past seven days of activity for any correlations in code deployments or changes.
+1. If you cannot identify the cause of increased [!DNL Redis] memory consumption, review recent trends to identify issues with recent code deployments or configuration changes (for example, new customer groups and large changes to the catalog). It is recommended that you review the past seven days of activity for any correlations in code deployments or changes.
 1. Check for misbehaving third party extensions:
 
     * Try to find a correlation with recently installed third party extensions and the time the issue started.
