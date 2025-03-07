@@ -21,6 +21,19 @@ feature: Configuration
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
 
+ - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
+    - [Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
+    - [Managed alerts for Adobe Commerce: Disk warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
+    - [Managed alerts for Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
+    - [Managed alerts for Adobe Commerce: Disk critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
+    - [Managed alerts on Adobe Commerce: [!DNL Redis] memory warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
+    - [Managed alerts for Adobe Commerce: Memory warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
+    - [Managed alerts on Adobe Commerce: CPU critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+    - [Managed alerts on Adobe Commerce: Memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
+    - [Managed alerts for Adobe Commerce: [!DNL Apdex] critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
+    - [Managed alerts on Adobe Commerce: [!DNL MariaDB] alerts](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
+    - [Managed alerts for Adobe Commerce: [!DNL Apdex] warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
+    - [Managed alerts for Adobe Commerce: CPU warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Quality Patches Tool {#quality-patches-tool}
     - [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
     - [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
