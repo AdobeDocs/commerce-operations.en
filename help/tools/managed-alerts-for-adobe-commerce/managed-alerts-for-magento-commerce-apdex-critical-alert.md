@@ -1,8 +1,9 @@
 ---
 title: 'Managed alerts for Adobe Commerce: [!DNL Apdex] critical alert'
-description: This article provides troubleshooting steps when you receive an [!DNL Apdex] critical alert for Adobe Commerce in [!DNL New Relic]. The [!DNL Apdex] score measures users' satisfaction to the response time of web applications and services. Immediate action is required to remedy the issue. 
+description: This article provides troubleshooting steps when you receive an [!DNL Apdex] critical alert for Adobe Commerce in [!DNL New Relic]. The [!DNL Apdex] score measures users' satisfaction to the response time of web applications and services. Immediate action is required to remedy the issue.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
+exl-id: 00e29611-fd4b-45c8-a1e0-56fc3cbe90e0
 ---
 # Managed alerts for Adobe Commerce: [!DNL Apdex] critical alert
 

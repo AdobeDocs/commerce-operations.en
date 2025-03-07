@@ -3,8 +3,8 @@ title: 'Managed alerts on Adobe Commerce: MariaDB alerts'
 description: This article provides troubleshooting steps when you receive MariaDB alerts for Adobe Commerce in [!DNL New Relic]. The MariaDB alerts monitor high query load as well as excessive Data Manipulation Language (DML) queries. Both can lead to a degraded user experience or even downtime. You can receive two kinds of alerts.
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
+exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
 ---
-
 # Managed alerts on Adobe Commerce: MariaDB alerts
 
 This article provides troubleshooting steps when you receive MariaDB alerts for Adobe Commerce in [!DNL New Relic]. The MariaDB alerts monitor high query load as well as excessive Data Manipulation Language (DML) queries. Both can lead to a degraded user experience or even downtime. You can receive two kinds of alerts:
@@ -50,4 +50,4 @@ If you receive a DML Queries Critical alert, start at step one. If you receive a
     1. Seek out either code optimizations, or operational optimizations:
           * Code optimizations: Look to optimize queries with bulk inserts / updates, minimizing index usage, or throttling code.
           * Operational optimizations: Offload resource intensive data modifications to lower traffic times.
-          * Additional optimizations: Ensure that you are on the latest version of ECE-Tools. For steps, refer to [Update ece-tools version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) in the Commerce on Cloud Guide. 
+          * Additional optimizations: Ensure that you are on the latest version of ECE-Tools. For steps, refer to [Update ece-tools version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) in the Commerce on Cloud Guide.

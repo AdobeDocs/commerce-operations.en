@@ -1,8 +1,9 @@
 ---
 title: 'Managed alerts for Adobe Commerce: Memory warning alert'
-description: This article provides troubleshooting steps for when you receive a memory warning alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue. 
+description: This article provides troubleshooting steps for when you receive a memory warning alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
+exl-id: 0910a431-bf2c-469e-81e2-92c8d9be3249
 ---
 # Managed alerts for Adobe Commerce: Memory warning alert
 

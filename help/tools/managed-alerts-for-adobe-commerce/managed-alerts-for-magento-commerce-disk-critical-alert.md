@@ -1,10 +1,10 @@
 ---
 title: 'Managed alerts for Adobe Commerce: Disk critical alert'
-description: This article provides troubleshooting steps when you receive a critical disk alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue. 
+description: This article provides troubleshooting steps when you receive a critical disk alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
+exl-id: 1378dcfd-cf7c-4234-82bb-6697e23d54ca
 ---
-
 # Managed alerts for Adobe Commerce: Disk critical alert
 
 This article provides troubleshooting steps when you receive a critical disk alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue. The alert will look something like the following, depending on the alert notification channel you selected.
