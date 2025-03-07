@@ -1,8 +1,9 @@
 ---
 title: 'Managed alerts on Adobe Commerce: CPU critical alert'
-description: This article provides troubleshooting steps when you receive a CPU critical alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue. 
+description: This article provides troubleshooting steps when you receive a CPU critical alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to remedy the issue.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
+exl-id: 8629ab18-5eef-4d76-9cf8-88fe2d3439df
 ---
 # Managed alerts on Adobe Commerce: CPU critical alert
 

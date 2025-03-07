@@ -3,8 +3,8 @@ title: 'Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert'
 description: This article provides troubleshooting steps for when you receive a [!DNL Redis] memory critical alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to resolve the issue.
 feature: Cache, Categories, Observability, Services, Support, Tools and External Services, Variables
 role: Admin
+exl-id: 1233889e-8c02-4ad6-b12c-683010b7bf35
 ---
-
 # Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert
 
 This article provides troubleshooting steps for when you receive a [!DNL Redis] memory critical alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to resolve the issue. The alert will look something like the following, depending on the alert notification channel you selected.

@@ -3,8 +3,8 @@ title: 'Managed alerts on Adobe Commerce: [!DNL Redis] memory warning alert'
 description: This article provides troubleshooting steps for when you receive a [!DNL Redis] warning alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required.
 feature: Categories, Marketing Tools, Observability, Services, Support, Tools and External Services, Variables
 role: Admin
+exl-id: f71b5e83-fb6c-4183-87c7-f41cbdf4c684
 ---
-
 # Managed alerts on Adobe Commerce: [!DNL Redis] memory warning alert
 
 This article provides troubleshooting steps for when you receive a [!DNL Redis] warning alert for Adobe Commerce in [!DNL New Relic]. Immediate action is required to resolve the issue. The alert will look something like the following, depending on the alert notification channel you selected:
