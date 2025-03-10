@@ -12,12 +12,10 @@ The ACSD-63323 patch fixes the issue where the [!UICONTROL Select All] option do
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
-* Adobe Commerce on-premises 2.4.7-p2
-* Adobe Commerce on cloud infrastructure 2.4.7-p2
+* Adobe Commerce (all deployment methods) 2.4.7-p2
 
 **Compatible with Adobe Commerce versions:**
-* Adobe Commerce on-premises 2.4.7 - 2.4.7-p4
-* Adobe Commerce on cloud infrastructure 2.4.7 - 2.4.7-p4
+* Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -25,12 +23,12 @@ The ACSD-63323 patch fixes the issue where the [!UICONTROL Select All] option do
 
 ## Issue
 
-Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTROL Categories]** > choose a category >  **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**. It also helps pagination and the record count label to function correctly when adding products to a category via the popup grid.
+Fixes the issue where the **[!UICONTROL Select All]** option doesn't work in Admin > **[!UICONTROL Categories]** > choose a category >  **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**. It also helps pagination and the record count label to function correctly when adding products to a category via the popup grid.
 
 
 <u>Steps to reproduce</u>:
 
-1. Generate 1200 products using the command:
+1. Generate *1200* products using the command:
 
    ```bash
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
@@ -44,12 +42,12 @@ Fixes the issue where the Select all option doesn't work in Admin > **[!UICONTRO
 
 **Expected results**: 
 
-The message should be: 1200 records found (1200 selected).
+*The message should be: 1200 records found (1200 selected)*
 
 **Actual results**:
 
 * Pagination doesn't work.
-* The wrong message is shown: 5 records found (20 selected).
+* The wrong message is shown: *5* records found (*20* selected).
 
 ## Apply the patch
 
