@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-63323: Resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup
 
-The ACSD-63323 patch fixes the issue where the [!UICONTROL Select All] option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) is installed. The patch ID is ACSD-63323. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63323 patch fixes the issue where the **[!UICONTROL Select All]** option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) is installed. The patch ID is ACSD-63323. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -47,7 +47,7 @@ Fixes the issue where the **[!UICONTROL Select All]** option doesn't work in Adm
 **Actual results**:
 
 * Pagination doesn't work.
-* The wrong message is shown: *5* records found (*20* selected).
+* The wrong message is shown: *5* records found (*20* selected)
 
 ## Apply the patch
 
@@ -61,6 +61,6 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool]]: A self-service tool for quality patches in the Tools guide (/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
+* [[!DNL Quality Patches Tool]]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
 
 
