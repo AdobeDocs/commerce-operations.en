@@ -7,7 +7,7 @@ exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 
 The following summarizes software dependencies and services tested for Adobe Commerce.
 
-There are some differences in the dependencies for Commerce on Cloud infrastructure. Service version and compatibility support for Adobe Commerce on cloud infrastructure is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1.2 is supported for Commerce 2.4.4 on Cloud infrastructure.
+There are some differences in the dependencies for Commerce on Cloud. Service version and compatibility support for Adobe Commerce on Cloud is determined by services tested and deployed to the hosted cloud environments, and sometimes differ from versions supported by Adobe Commerce on-premises deployments. For example, Elasticsearch 7.17 is supported for Commerce 2.4.4 for on-premise deployments, but OpenSearch 1 is supported for 2.4.4 Adobe Commerce on Cloud.
 
 >[!NOTE]
 >
