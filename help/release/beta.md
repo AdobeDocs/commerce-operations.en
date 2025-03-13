@@ -24,13 +24,15 @@ See the following sections for a list of active beta programs.
 
 ### Adobe Commerce Optimizer
 
-Adobe Commerce Optimizer is a fast, performant storefront with a scalable catalog that allows you to optimize your existing eCommerce backend by increasing traffic and driving higher engagement and conversion.
+Adobe Commerce Optimizer enhances your e-commerce experience with a high-performance storefront, boosting organic traffic, customer engagement, and revenue.
 
-Commerce Optimizer is for:
+With Adobe Commerce Optimizer, you can:
 
-- Merchants who want to maintain their existing backend commerce system and only transform storefront experiences.
-- Businesses where a third-party system manages the cart and checkout lifecycle.
-- AEM customers not currently using Adobe Commerce, seeking a simple way to manage their product catalog.
+- Grow and scale your catalog without re-platforming your entire commerce stack.
+- Ingest catalog data from any source.
+- Define business channels and policies.
+- Create personalized search and recommendations using AI and ML.
+- View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
 
 [Learn more](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) about Adobe Commerce Optimizer. If you would like to participate in the Adobe Commerce Optimizer early access program, send an email request to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
