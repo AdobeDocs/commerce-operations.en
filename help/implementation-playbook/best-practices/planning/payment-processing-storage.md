@@ -47,4 +47,4 @@ The recommended method to handle cardholder data is to tokenize the data instead
 
 ## Additional information
 
-If you are looking for recommended payment solutions by Adobe, consider [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+If you are looking for recommended payment solutions by Adobe, consider [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).

@@ -65,7 +65,7 @@
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
