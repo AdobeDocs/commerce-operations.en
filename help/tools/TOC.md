@@ -753,6 +753,8 @@ feature: Configuration
             - [ACSD-64212: Order not linked to a customer account created via [!DNL GraphQL] after placing order](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
             - [ACSD-63793: Import processes interfere with each other in different browser tabs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
             - [ACSD-63574: Adding [!UICONTROL Bundle Product] listing to block via [!DNL Page Builder] results in error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
+        - v1.1.60 {#v1-1-60}
+           - [ACSD-63323: Resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
