@@ -87,6 +87,8 @@ services:
       Marketplace: https://commercemarketplace.adobe.com/magento-module-amazon.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: '-'
       - core: 2.4.6
@@ -100,6 +102,8 @@ services:
       Overview: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: 1.17
       - core: 2.4.6
@@ -113,6 +117,8 @@ services:
       Marketplace: https://commercemarketplace.adobe.com/magento-channel-manager.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: 2.1.0
       - core: 2.4.6
@@ -126,6 +132,8 @@ services:
       Marketplace: https://commercemarketplace.adobe.com/magento-live-search.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: 4.2.1
       - core: 2.4.6
@@ -139,6 +147,8 @@ services:
       Marketplace: https://commercemarketplace.adobe.com/magento-payment-services.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html
     support:
+      - core: 2.4.8
+        version: 2.11.0 (PHP 8.3)
       - core: 2.4.7
         version: 2.10.0 (PHP 8.3)
       - core: 2.4.6
@@ -152,6 +162,8 @@ services:
       Marketplace: https://commercemarketplace.adobe.com/magento-product-recommendations.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: 6.0.3
       - core: 2.4.6
@@ -165,6 +177,8 @@ services:
       Marketplace: https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: '-'
       - core: 2.4.6

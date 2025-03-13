@@ -47,7 +47,9 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
         {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['OpenSearch'] %}
+      <td>{%- if requirement[1]['OpenSearch Cloud'] %}
+            {{requirement[1]['OpenSearch Cloud']}}
+          {%- elsif requirement[1]['OpenSearch'] %}
             {{requirement[1]['OpenSearch']}}
           {%- else %}
           --

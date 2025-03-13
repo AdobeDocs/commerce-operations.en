@@ -48,22 +48,6 @@ These new conditions enhance the search query filtering mechanism to refine sear
 
 To install the Live Search beta, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
-### Experience Manager Assets Integration for Commerce (Private Beta)
-
-The Experience Manager Assets Integration for Commerce enables efficient management and delivery of a large volume of product images from Experience Manager Assets to Adobe Commerce with low or no operational effort required.
-
-Key features:
-
-- Plug and play integration–Provide an Adobe powered, out of the box, integration between Experience Manager Assets and Adobe Commerce to empower merchants to focus on what matters most, with reduced operational costs and improved efficiency.
-
-- Personalize product images at scale–Use Experience Manager Assets to generate millions of product variations for personalized Commerce experiences with easy UI based editing tools, generative content creation using Adobe Firefly, and assigned asset workflows to ensure brand consistency. Once you are happy with the assets, seamlessly deliver them to your Commerce storefronts using the Experience Manager Assets Integration.
-
-- Easy onboarding–Simplify merchant onboarding with a configurable synchronization process that enables full synchronization between the Experience Manager Assets repository and the Commerce catalog.
-
-- Flexible matching strategy–The integration includes default asset matching algorithms based on product SKUs that synchronize images between AEM Assets and Commerce, and it's extensible using Adobe Developer App Builder. Work with your solution partner to build a custom asset matching strategy on top of the integration to accommodate any asset management repository structure.
-
-To participate in the beta, send an email request to [Shaun McCran](mailto:mccran@adobe.com).
-
 ### IBM Sterling Order Management System Integration (Private Beta)
 
 This integration accelerator for IBM Sterling Order Management enables Adobe Commerce customers to get started with advanced order management capabilities powered by IBM Sterling OMS. With this integration merchants get:

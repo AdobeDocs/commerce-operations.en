@@ -53,19 +53,19 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.12
+            2
       </td>
     </tr>
     <tr>
@@ -231,34 +231,34 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.12
+            2
       </td>
       <td>
-            2.5
+            2
       </td>
       <td>
-            2.5
+            2
       </td>
       <td>
-            2.5
+            2
       </td>
       <td>
-            2.5
+            2
       </td>
       <td>
-            2.5
+            2
       </td>
     </tr>
     <tr>
@@ -498,46 +498,46 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            1.3.20
+            1
       </td>
       <td>
-            1.3
+            1
       </td>
       <td>
-            1.3
+            1
       </td>
       <td>
-            1.3
+            1
       </td>
       <td>
-            1.3
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.6, 10,5
+            10.6, 10.5
       </td>
       <td>
             10.5
@@ -802,43 +802,43 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            1.3.20
+            1
       </td>
       <td>
-            1.3
+            1
       </td>
       <td>
-            1.3
+            1
       </td>
       <td>
-            1.3
+            1
       </td>
       <td>
-            1.3
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
       <td>
-            1.2
+            1
       </td>
     </tr>
     <tr>
@@ -1037,7 +1037,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            1.2
+            1
       </td>
     </tr>
     <tr>
