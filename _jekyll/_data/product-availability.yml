@@ -8,6 +8,8 @@ extensions:
       Composer: https://developer.adobe.com/commerce/extensibility/events/installation/
       Release Notes: https://developer.adobe.com/commerce/extensibility/events/release-notes/
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: 1.5+
       - core: 2.4.6
@@ -21,6 +23,8 @@ extensions:
       Composer: https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/
       Release Notes: https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: 1.3+
       - core: 2.4.6
@@ -34,6 +38,8 @@ extensions:
       Composer: https://developer.adobe.com/commerce/extensibility/webhooks/installation/
       Release Notes: https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: 1.2+
       - core: 2.4.6
@@ -47,6 +53,8 @@ extensions:
       Composer: https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html
     support:
+      - core: 2.4.8
+        version: 1.5.2 (PHP 8.4)
       - core: 2.4.7
         version: 1.5.0 (PHP 8.3)
       - core: 2.4.6
@@ -60,6 +68,8 @@ extensions:
       Marketplace: https://commercemarketplace.adobe.com/magento-experience-platform-connector.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: 3.1.1+
       - core: 2.4.6
@@ -73,6 +83,8 @@ extensions:
       User Guide: https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html
     support:
+      - core: 2.4.8
+        version: '-'
       - core: 2.4.7
         version: '-'
       - core: 2.4.6
