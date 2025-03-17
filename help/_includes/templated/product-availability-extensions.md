@@ -58,8 +58,8 @@
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
@@ -71,7 +71,7 @@
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
@@ -82,8 +82,8 @@
           <td>1.7.2</td>
           <td>1.7.1</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html">User Guide</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">User Guide</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/release-notes">Release Notes</a><br/>
           </td>
       </tr>
   </tbody>

@@ -50,8 +50,8 @@ extensions:
         version: 1.2+
   B2B:
     docs:
-      Composer: https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html
+      Composer: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes
     support:
       - core: 2.4.8
         version: 1.5.2 (PHP 8.4)
@@ -66,7 +66,7 @@ extensions:
   Data Connection: 
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-experience-platform-connector.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes
     support:
       - core: 2.4.8
         version: '-'
@@ -80,8 +80,8 @@ extensions:
         version: 1.0.0+
   Page Builder:
     docs:
-      User Guide: https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html
+      User Guide: https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/release-notes
     support:
       - core: 2.4.8
         version: '-'
@@ -96,8 +96,8 @@ extensions:
 services:
   Catalog Service for Adobe Commerce:
     docs:
-      Overview: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html
+      Overview: https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes
     support:
       - core: 2.4.8
         version: '-'
@@ -112,7 +112,7 @@ services:
   Live Search:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-live-search.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes
     support:
       - core: 2.4.8
         version: '-'
@@ -127,7 +127,7 @@ services:
   Payment Services:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-payment-services.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes
     support:
       - core: 2.4.8
         version: 2.11.0 (PHP 8.3)
@@ -142,7 +142,7 @@ services:
   Product Recommendations:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-product-recommendations.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes
     support:
       - core: 2.4.8
         version: '-'
