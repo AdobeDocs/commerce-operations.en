@@ -82,21 +82,6 @@ extensions:
       - core: 2.4.4
         version: 1.7.1
 services:
-  Amazon Sales Channel:
-    docs:
-      Marketplace: https://commercemarketplace.adobe.com/magento-module-amazon.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html
-    support:
-      - core: 2.4.8
-        version: '-'
-      - core: 2.4.7
-        version: '-'
-      - core: 2.4.6
-        version: 4.4.0+
-      - core: 2.4.5
-        version: 4.3.0+
-      - core: 2.4.4
-        version: 4.3.0+
   Catalog Service for Adobe Commerce:
     docs:
       Overview: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html
@@ -112,21 +97,6 @@ services:
         version: 1.17
       - core: 2.4.4
         version: 1.17
-  Channel Manager:
-    docs:
-      Marketplace: https://commercemarketplace.adobe.com/magento-channel-manager.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html
-    support:
-      - core: 2.4.8
-        version: '-'
-      - core: 2.4.7
-        version: 2.1.0
-      - core: 2.4.6
-        version: 2.0.0
-      - core: 2.4.5
-        version: 1.0.0+
-      - core: 2.4.4
-        version: 1.0.0+
   Live Search:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-live-search.html
@@ -172,18 +142,3 @@ services:
         version: 6.0.3
       - core: 2.4.4
         version: 6.0.3
-  Store Fulfillment for Adobe Commerce:
-    docs:
-      Marketplace: https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html
-    support:
-      - core: 2.4.8
-        version: '-'
-      - core: 2.4.7
-        version: '-'
-      - core: 2.4.6
-        version: 1.5.0
-      - core: 2.4.5
-        version: 1.2.0+
-      - core: 2.4.4
-        version: 1.2.0+
