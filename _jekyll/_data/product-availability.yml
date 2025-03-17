@@ -54,7 +54,7 @@ extensions:
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes
     support:
       - core: 2.4.8
-        version: 1.5.2 (PHP 8.4)
+        version: 1.5.2, 1.5.1 (PHP 8.4)
       - core: 2.4.7
         version: 1.5.0 (PHP 8.4)
       - core: 2.4.6
