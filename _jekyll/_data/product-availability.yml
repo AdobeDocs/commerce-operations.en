@@ -142,18 +142,3 @@ services:
         version: 6.1.0
       - core: 2.4.4
         version: 6.1.0
-  Store Fulfillment for Adobe Commerce:
-    docs:
-      Marketplace: https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html
-      Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html
-    support:
-      - core: 2.4.8
-        version: '-'
-      - core: 2.4.7
-        version: '-'
-      - core: 2.4.6
-        version: 1.5.0
-      - core: 2.4.5
-        version: 1.2.0+
-      - core: 2.4.4
-        version: 1.2.0+
