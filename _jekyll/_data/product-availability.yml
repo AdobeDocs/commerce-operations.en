@@ -103,15 +103,15 @@ services:
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html
     support:
       - core: 2.4.8
-        version: '-'
+        version: 4.3.0
       - core: 2.4.7
-        version: 4.2.1
+        version: 4.3.0
       - core: 2.4.6
-        version: 4.2.1
+        version: 4.3.0
       - core: 2.4.5
-        version: 4.2.1
+        version: 4.3.0
       - core: 2.4.4
-        version: 4.2.1
+        version: 4.3.0
   Payment Services:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-payment-services.html
@@ -133,12 +133,12 @@ services:
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html
     support:
       - core: 2.4.8
-        version: '-'
+        version: 6.1.0
       - core: 2.4.7
-        version: 6.0.3
+        version: 6.1.0
       - core: 2.4.6
-        version: 6.0.3
+        version: 6.1.0
       - core: 2.4.5
-        version: 6.0.3
+        version: 6.1.0
       - core: 2.4.4
-        version: 6.0.3
+        version: 6.1.0
