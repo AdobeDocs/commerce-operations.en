@@ -21,6 +21,19 @@ feature: Configuration
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
 
+ - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
+    - [Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
+    - [Managed alerts for Adobe Commerce: Disk warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
+    - [Managed alerts for Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
+    - [Managed alerts for Adobe Commerce: Disk critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
+    - [Managed alerts on Adobe Commerce: [!DNL Redis] memory warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
+    - [Managed alerts for Adobe Commerce: Memory warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
+    - [Managed alerts on Adobe Commerce: CPU critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+    - [Managed alerts on Adobe Commerce: Memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
+    - [Managed alerts for Adobe Commerce: [!DNL Apdex] critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
+    - [Managed alerts on Adobe Commerce: [!DNL MariaDB] alerts](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
+    - [Managed alerts for Adobe Commerce: [!DNL Apdex] warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
+    - [Managed alerts for Adobe Commerce: CPU warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Quality Patches Tool {#quality-patches-tool}
     - [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
     - [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
@@ -729,11 +742,19 @@ feature: Configuration
             - [ACSD-63325: "Syntax Error: Unexpected < EOF >" error when submitting empty [!DNL GraphQL] request](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
             - [ACSD-63578: Clicking the [!UICONTROL Delete] icon in [!UICONTROL Add to Order by SKU] doesn't remove SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
             - [ACSD-63329: Default values for date and time fields aren't set when creating products with the REST API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+            - [ACSD-63572: catalogrule indexer temporary tables aren't cleaned if the indexer process is terminated](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
         - v1.1.59 {#v1-1-59}
             - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
             - [ACSD-64112: indexer_update_all_views cron execution fails when MAGE_INDEXER_THREADS_COUNT is set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
             - [ACSD-63454: Default value for a Dropdown and Multiple Select attributes is not saved properly in the database](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
             - [ACSD-63870: Customer not logged out properly during company status change](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+            - [ACSD-63469: Fixed-amount cart discounts not applied correctly with multiple rules](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly.md)
+            - [ACSD-64113: Error in admin on uploading image with smaller width than height via [!DNL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images.md)
+            - [ACSD-64212: Order not linked to a customer account created via [!DNL GraphQL] after placing order](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
+            - [ACSD-63793: Import processes interfere with each other in different browser tabs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
+            - [ACSD-63574: Adding [!UICONTROL Bundle Product] listing to block via [!DNL Page Builder] results in error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
+        - v1.1.60 {#v1-1-60}
+           - [ACSD-63323: Resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

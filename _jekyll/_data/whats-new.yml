@@ -2,8 +2,56 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Feb 25 17:37:26 2025
+updated: Tue Mar 4 02:38:00 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-64212
+    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account)
+  versions: ''
+  type: new-topic
+  date: February 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1214
+  merge_commit: 60f62d00afe94c1e9874c623d6703162c35791c2
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64113
+    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images)
+  versions: ''
+  type: new-topic
+  date: February 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1215
+  merge_commit: 8b71fc097d50209786beda72cfc5a7eae6a0449f
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63574
+    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error)
+  versions: ''
+  type: new-topic
+  date: February 27, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1212
+  merge_commit: 7477a28c5db13e5c2daabea4f36dc9de784581a5
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63793
+    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs)
+  versions: ''
+  type: new-topic
+  date: February 27, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1213
+  merge_commit: dae40520a0b5584a0627ddccaeaa7faed37e42bd
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [detailed description of the issue fixed by the ACSD-64112
     patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails).
   versions: ''
