@@ -28,11 +28,11 @@
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>-</td>
-          <td>4.2.1</td>
-          <td>4.2.1</td>
-          <td>4.2.1</td>
-          <td>4.2.1</td>
+          <td>4.3.0</td>
+          <td>4.3.0</td>
+          <td>4.3.0</td>
+          <td>4.3.0</td>
+          <td>4.3.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Release Notes</a><br/>
@@ -52,11 +52,11 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>-</td>
-          <td>6.0.3</td>
-          <td>6.0.3</td>
-          <td>6.0.3</td>
-          <td>6.0.3</td>
+          <td>6.1.0</td>
+          <td>6.1.0</td>
+          <td>6.1.0</td>
+          <td>6.1.0</td>
+          <td>6.1.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Release Notes</a><br/>
