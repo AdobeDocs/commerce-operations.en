@@ -22,6 +22,20 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
+### Adobe Commerce Optimizer
+
+Adobe Commerce Optimizer enhances your e-commerce experience with a high-performance storefront, boosting organic traffic, customer engagement, and revenue.
+
+With Adobe Commerce Optimizer, you can:
+
+- Grow and scale your catalog without re-platforming your entire commerce stack.
+- Ingest catalog data from any source.
+- Define business channels and policies.
+- Create personalized search and recommendations using AI and ML.
+- View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
+
+[Learn more](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) about Adobe Commerce Optimizer. If you would like to participate in the Adobe Commerce Optimizer early access program, send an email request to [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
 ### Enhanced search capabilities for Live Search (Public Beta)
 
 This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
