@@ -152,7 +152,7 @@ To properly update MySQL from version 8.0 to version 8.4, you must follow these 
    bin/magento setup:backup --db
    ```
 
-1. Update MySQL to version 8.
+1. Update MySQL to version 8.4.
 1. Set `restrict_fk_on_non_standard_key` to `OFF` inside `[mysqld]` in `my.cnf`  file.
 
    ```bash
