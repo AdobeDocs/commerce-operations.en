@@ -154,10 +154,12 @@ To properly update MySQL from version 8.0 to version 8.4, you must follow these 
 
 1. Update MySQL to version 8.
 1. Set `restrict_fk_on_non_standard_key` to `OFF` inside `[mysqld]` in `my.cnf`  file.
+
    ```bash
    [mysqld]
    restrict_fk_on_non_standard_key = OFF 
    ```
+   
    >[!WARNING]
    >
    >If not update the value of `restrict_fk_on_non_standard_key` to `OFF` will get the following error while import: 
