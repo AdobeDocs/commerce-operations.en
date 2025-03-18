@@ -235,7 +235,7 @@ We can now update custom-created order statuses, whereas previously, the status 
   * _Fix note_: After the fix, if the custom admin domain is a subdomain of the main domain, the admin is accessible only from the configured subdomain.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37663>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: Broken validation for “Maximum Qty Allowed in Shopping Cart”
+* _ACP2E-3392_: Broken validation for "Maximum Qty Allowed in Shopping Cart"
   * _Fix note_: Previously, when we put `Maximum Qty Allowed in Shopping Cart` empty, it did not throw any exception, though an empty value is not accepted here. After this fix applies, putting an empty string will throw exceptions and will not allow saving the product.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [Pagebuilder Preview UI Issue] The buttons in the Page Builder column aren't lining up correctly
@@ -973,7 +973,7 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now resets the region text field when the country is changed in the dropdown menu, ensuring that previous values do not persist. Previously, changing the country from the dropdown list did not reset the region field, causing the last saved value to be preserved.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-9240_: Deleting Customer Does Not Clean All Browser Session Data on Storefront for Logged in & Deleted Customer
-  * _Fix note_: Deleting a customer now cleans all browser session data from the storefront for logged-in and deleted customers as expected. The shopper can continue shopping, and their browser treats their session as a guest session. Previously, when the customer account for a logged-in shopper was deleted from the Admin, then the shopper’s browser threw JavaScript errors.
+  * _Fix note_: Deleting a customer now cleans all browser session data from the storefront for logged-in and deleted customers as expected. The shopper can continue shopping, and their browser treats their session as a guest session. Previously, when the customer account for a logged-in shopper was deleted from the Admin, then the shopper's browser threw JavaScript errors.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Framework
@@ -1584,7 +1584,7 @@ Previously, assigned to the admin store instead of their respective store.
 * _LYNX-544_: Customer must not be able to cancel a partially shipped order
 * _LYNX-548_: Error codes for order cancellation based on the error message
 * _LYNX-581_: Move back cookie-related properties from private to protected
-* _LYNX-603_: Product attribute > trademark short form ™ is returned as &trade;
+* _LYNX-603_: Product attribute > trademark short form &trade; is returned as &trade;
   * _Fix note_: Resolved character encoding issue with the product name for the GraphQL API
 * _LYNX-619_: updateCustomerEmail mutation issue
   * _Fix note_: Resolved an issue with the updateCustomerEmail mutation where customers without required custom attributes (added after account creation) were unable to update their email.
@@ -1592,9 +1592,9 @@ Previously, assigned to the admin store instead of their respective store.
   * _Fix note_: Fixed an issue where the setShippingAddressesOnCart mutation returned an error when using pickup_location_code without specifying customer_address_id or address. The mutation now correctly allows setting a shipping address with just the pickup_location_code.
 * _LYNX-627_: CustomerOrder.items_eligible_for_return list must be consistent with order items
   * _Fix note_: Resolved inconsistencies with return eligibility in orders:
-	1.	The CustomerOrder.items_eligible_for_return list is now consistent with actual order items.
-	2.	The OrderItemInterface.eligible_for_return field correctly returns false when the full quantity has already been returned.
-	3.	CustomerOrder.items_eligible_for_return now includes only items that are not already in the process of being returned.
+  1. The CustomerOrder.items_eligible_for_return list is now consistent with actual order items.
+  2. The OrderItemInterface.eligible_for_return field correctly returns false when the full quantity has already been returned.
+  3. CustomerOrder.items_eligible_for_return now includes only items that are not already in the process of being returned.
 * _LYNX-628_: Add quantity_return_requested field
   * _Fix note_: Added the quantity_return_requested field to the OrderItemInterface, allowing you to identify the quantity of items for which a return has been submitted. This enhances return tracking alongside the existing quantity_returned field.
 * _LYNX-634_: Order available actions must not contain RETURN after returns created for all items in full quantity
@@ -1602,7 +1602,7 @@ Previously, assigned to the admin store instead of their respective store.
 * _LYNX-637_: Storefront Compatibility - Update logic to get table name with prefix and other minor improvements
   * _Fix note_: Updated logic to retrieve the table name with the prefix (related to SCP changes).
 * _LYNX-643_: save in address book does not work when using setBillingAddressOnCart GQL's same_as_shipping field
-  * _Fix note_: Fixed an issue where the shipping address was not saved to the customer’s address book when using the setBillingAddressOnCart GraphQL mutation with the same_as_shipping field set to true. Now, the shipping address is correctly stored as expected.
+  * _Fix note_: Fixed an issue where the shipping address was not saved to the customer's address book when using the setBillingAddressOnCart GraphQL mutation with the same_as_shipping field set to true. Now, the shipping address is correctly stored as expected.
 * _LYNX-650_: Standarize the order_id in mutations
   * _Fix note_: Standardized the order_id input in mutations and updated the order cancel confirmation email template to expose increment id instead of order id.
 * _LYNX-651_: CustomerOrder is not displaying the order comments
