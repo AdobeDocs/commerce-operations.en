@@ -138,8 +138,6 @@ The use of non-unique or partial keys as foreign keys is nonstandard, and is dep
 
 To properly update MySQL from version 8.0 to version 8.4, you must follow these steps in order:
 
-1. Upgrade Adobe Commerce to 2.4.8.
-   Test everything and make sure that your system works as expected.
 1. Enable maintenance mode:
 
    ```bash
