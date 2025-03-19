@@ -16,7 +16,7 @@
   <tbody>
       <tr>
           <td>Catalog Service for Adobe Commerce</td>
-          <td>-</td>
+          <td>1.32</td>
           <td>1.32</td>
           <td>1.32</td>
           <td>1.32</td>
