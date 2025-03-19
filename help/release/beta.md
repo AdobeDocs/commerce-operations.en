@@ -60,7 +60,7 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. To participate in the beta, send an email request to [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-To install the Live Search beta, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
+To install the Live Search beta, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
@@ -91,7 +91,7 @@ Each Adobe Commerce Foundation beta release includes all the changes delivered t
 - GraphQL improvements
 - General quality bug fixes
 - Community contributions
-- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
 
 #### Naming convention and schedule
 
