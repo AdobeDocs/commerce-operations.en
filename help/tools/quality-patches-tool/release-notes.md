@@ -18,7 +18,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 ## v1.1.61 {#v1-1-61}
 
 * **ACP2E-3689** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes multiple issues with category tree display on deeper levels and reflecting anchor/non-anchor relationships.
-* **ACP2E-3705** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes an issue where the indexer_update_all_views cron execution fails when MAGE_INDEXER_THREADS_COUNT is set.
+* **ACP2E-3705** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes an issue where the `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set.
 * **ACSD-63883** (for Adobe Commerce >=2.4.4 <2.4.7-p4) - Fixes the issue where the Requisition List returns an incorrect items_count in the GraphQL response.
 * **ACSD-63974** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the Requisition list page takes too much time to load when there are too many items, by adding a pagination feature to the Requisition list grid on the Storefront, that displays only portions of records that are limited to the number of records per page, instead of all the records at once.
 * **ACSD-64178** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the attribute set edit page loads slowly if there are thousands of product attributes.
