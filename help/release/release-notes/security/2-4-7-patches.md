@@ -7,6 +7,18 @@ exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.7-p5
+
+The Adobe Commerce 2.4.7-p5 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release introduces support for the Adobe Commerce [HIPAA-ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
+
 ## 2.4.7-p4
 
 The Adobe Commerce 2.4.7-p4 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
