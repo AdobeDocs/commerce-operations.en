@@ -56,6 +56,59 @@ As of 2.4, MySQL is no longer a supported catalog search engine. You must instal
 
 Some third-party catalog search engines run on top of the Adobe Commerce search engine. Contact your vendor to determine whether you must update your extension.
 
+### MySQL 8.4 changes
+
+For Adobe Commerce **2.4.8**, we added support for MySQL 8.4.
+This section describes major changes to MySQL 8.4 that developers should be aware of.
+
+#### Deprecated NON STANDARD KEY in MySQL 8.4
+
+The use of non-unique or partial keys as foreign keys is nonstandard, and is deprecated in MySQL 8.4. Beginning with MySQL 8.4.0, you must explicitly enable such keys by setting [`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) to OFF, or by starting the server with --skip-restrict-fk-on-non-standard-key.
+
+#### Upgrading from MySQL 8.0 ( or old version )  to MySQL 8.4
+
+To properly update MySQL from version 8.0 to version 8.4, you must follow these steps in order:
+
+1. Enable maintenance mode:
+
+   ```bash
+   bin/magento maintenance:enable
+   ```
+
+1. Make a database backup:
+
+   ```bash
+   bin/magento setup:backup --db
+   ```
+
+1. Update MySQL to version 8.4.
+1. Set `restrict_fk_on_non_standard_key` to `OFF` inside `[mysqld]` in `my.cnf`  file.
+
+   ```bash
+   [mysqld]
+   restrict_fk_on_non_standard_key = OFF 
+   ```
+
+   >[!WARNING]
+   >
+   >If not update the value of `restrict_fk_on_non_standard_key` to `OFF` will get the following error while import:
+   >```sql
+   > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
+   >```
+1. Restart MySQL server
+1. Import the backed-up data into MySQL.
+1. Clean the cache:
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+1. Disable maintenance mode:
+
+   ```bash
+   bin/magento maintenance:disable
+   ```
+
 #### MariaDB
 
 {{$include /help/_includes/maria-db-config.md}}
