@@ -88,7 +88,7 @@ services:
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html
     support:
       - core: 2.4.8
-        version: '-'
+        version: '1.32'
       - core: 2.4.7
         version: 1.32
       - core: 2.4.6
