@@ -31,7 +31,6 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * Replaced patches: **ACSD-49392**, **ACSD-58739**, **ACSD-62689**, **ACSD-64112**
 * Deprecated patches: **ACSD-46192**, **ACSD-52133**
 
-
 ## v1.1.60 {#v1-1-60}
 
 * **ACSD-63323** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where the **[!UICONTROL Select All]** option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
