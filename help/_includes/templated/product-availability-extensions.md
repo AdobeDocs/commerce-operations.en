@@ -16,7 +16,7 @@
   <tbody>
       <tr>
           <td>Adobe I/O Events for Adobe Commerce</td>
-          <td>-</td>
+          <td>1.8+</td>
           <td>1.5+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -28,7 +28,7 @@
       </tr>
       <tr>
           <td>Adobe Commerce Admin UI SDK</td>
-          <td>-</td>
+          <td>2.0+</td>
           <td>1.3+</td>
           <td>1.3+</td>
           <td>1.3+</td>
@@ -40,7 +40,7 @@
       </tr>
       <tr>
           <td>Adobe Commerce Webhooks</td>
-          <td>-</td>
+          <td>1.5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
           <td>1.2+</td>
