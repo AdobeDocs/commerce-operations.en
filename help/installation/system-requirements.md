@@ -58,7 +58,7 @@ For Cloud configuration guidance, see [PHP settings](https://experienceleague.ad
 
 It is recommended that you verify that [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) is enabled for performance reasons. The OPcache is enabled in many PHP distributions. The `opcache` extension is installed by default in the Commerce on Cloud infrastructure.
 
-For on-premesis, verify that PHP OPcache it is installed, see [PHP settings](prerequisites/php-settings.md). Or for specific guidance on performance settings, see the software recommendations for [PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in the _Performance Best Practices_ guide.
+For on-premises, verify that PHP OPcache is installed, see [PHP settings](prerequisites/php-settings.md). Or for specific guidance on performance settings, see the software recommendations for [PHP settings](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) in the _Performance Best Practices_ guide.
 
 If you must install OPcache separately, see the [PHP OPcache documentation](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -123,7 +123,9 @@ Upgrading the applications and extensions you obtain from the Commerce Marketpla
 
 ### Operating systems (Linux x86-64)
 
-Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar. Microsoft Windows and macOS are not supported.
+Linux distributions, such as RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian, and similar.
+
+Microsoft Windows and macOS are **not** supported.
 
 Adobe Commerce requires the following system tools for some operations:
 
