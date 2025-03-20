@@ -55,7 +55,7 @@ extensions:
         version: 1.3.4
       - core: 2.4.4
         version: 1.3.3
-  Data Connection: 
+  Data Connection:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-experience-platform-connector.html
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html
@@ -88,15 +88,15 @@ services:
       Release Notes: https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html
     support:
       - core: 2.4.8
-        version: '-'
+        version: 1.32
       - core: 2.4.7
-        version: 1.17
+        version: 1.32
       - core: 2.4.6
-        version: 1.17
+        version: 1.32
       - core: 2.4.5
-        version: 1.17
+        version: 1.32
       - core: 2.4.4
-        version: 1.17
+        version: 1.32
   Live Search:
     docs:
       Marketplace: https://commercemarketplace.adobe.com/magento-live-search.html
