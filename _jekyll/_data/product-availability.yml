@@ -28,7 +28,7 @@ extensions:
       - core: 2.4.5
         version: 1.3+
       - core: 2.4.4
-        version: '-' 
+        version: '-'
   Adobe Commerce Webhooks:
     docs:
       Composer: https://developer.adobe.com/commerce/extensibility/webhooks/installation/
@@ -42,6 +42,19 @@ extensions:
         version: 1.2+
       - core: 2.4.4
         version: 1.2+
+  Adobe Experience Manager Assets Integration for Commerce:
+    docs:
+      Composer: https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce
+      Release Notes: https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes
+    support:
+      - core: 2.4.7
+        version: 1.0.20+
+      - core: 2.4.6
+        version: 1.0.20+
+      - core: 2.4.5
+        version: 1.0.20+
+      - core: 2.4.4
+        version: 1.0.20+
   B2B:
     docs:
       Composer: https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html
