@@ -15,6 +15,31 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.61 {#v1-1-61}
+
+* **ACP2E-3689** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes multiple issues with category tree display on deeper levels and reflecting anchor/non-anchor relationships.
+* **ACP2E-3705** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes an issue where the `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set.
+* **ACSD-63883** (for Adobe Commerce >=2.4.4 <2.4.7-p4) - Fixes the issue where the Requisition List returns an incorrect `items_count` in the GraphQL response.
+* **ACSD-63974** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the Requisition list page takes too much time to load when there are too many items, by adding a pagination feature to the Requisition list grid on the Storefront, that displays only portions of records that are limited to the number of records per page, instead of all the records at once.
+* **ACSD-64178** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the Attribute Set edit page loads slowly if there are thousands of product attributes.
+* **ACSD-64209** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status **[!UICONTROL ordered]**, causing an email or emails to be triggered.
+* **ACSD-64431** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - The `placeOrder` mutation that contains the coupon code information in the request no longer throws an internal error, but instead shows that the order was placed successfully.
+* **ACSD-64467** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the WYSIWYG editor appears empty after saving a category description on the store view level.
+* **ACSD-64546** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a generic error message occurs in the UI and an *Array to string conversion* exception is stored in the logs during UPS shipping label creation, ensuring that the actual error is displayed in the UI and the correct error message is stored in the logs.
+* **ACSD-64684** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where a validation error occurs when editing and saving a gift card with a value greater than *999* due to the comma (thousand separator) in the number *one thousand (1,000)*.
+* Versions updated: **ACSD-49392**, **ACSD-50368**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-57003**, **ACSD-62979**, **ACSD-64112**
+* Replaced patches: **ACSD-49392**, **ACSD-58739**, **ACSD-62689**, **ACSD-64112**
+* Deprecated patches: **ACSD-46192**, **ACSD-52133**
+
+## v1.1.60 {#v1-1-60}
+
+* **ACSD-63323** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where the **[!UICONTROL Select All]** option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid.
+* **ACSD-63992** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes an issue where a cart price rule with a coupon and a condition based on a shipping method cannot be correctly applied through the Admin UI.
+* **ACSD-64111** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where an error occurs when setting nested conditions for a Product component in [!DNL Page Builder].
+* **ACSD-64137** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where searching for pickup locations by zip code doesn't work properly for Dutch localization.
+* **ACSD-64149** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where a customer segment with a date range condition can be saved when only one of the dates is edited.
+* Versions updated: **MDVA-12304**, **ACSD-45049**, **MDVA-43824**, **ACSD-46192**, **ACSD-50368**, **ACSD-52133**, **ACSD-47657**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-55628**, **ACSD-45049**, **ACSD-63242**
+
 ## v1.1.59 {#v1-1-59}
 
 * **ACSD-63454** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the default value for a dropdown and multi-select attributes is not saved properly in the database.
