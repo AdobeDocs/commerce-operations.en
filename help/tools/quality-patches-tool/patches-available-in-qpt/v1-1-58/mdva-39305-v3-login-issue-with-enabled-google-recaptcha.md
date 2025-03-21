@@ -29,6 +29,7 @@ This patch was added in the [Quality Patches Tool (QPT)](https://experienceleagu
 >The patch might become applicable to other versions with new Quality Patches Tool releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Use the patch ID as a search keyword to locate the patch.
 
 ## Issues
+
 ### Case I
 
 1. Registered customers are not able to log in using the enabled [!DNL Google reCAPTCHA]. 
