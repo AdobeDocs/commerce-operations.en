@@ -1,22 +1,26 @@
 ---
 title: 'MDVA-39305-V3: Login issue with enabled [!DNL Google reCAPTCHA]'
-description: The MDVA-39305-V3 patch fixes the issue where registered customers are not able to log in with enabled [!DNL Google reCAPTCHA]. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1 is installed. The patch ID is MDVA-39305-V3. Please note that the issue is scheduled to be fixed in Adobe Commerce versions 2.4.4 and 2.4.7.
+description: Apply the MDVA-39305-V3 patch to fix the Adobe Commerce issue where registered customers are not able to log in when [!DNL Google reCAPTCHA] is enabled. 
 feature: Console
 role: Admin
 ---
 # MDVA-39305-V3: Login issue with enabled [!DNL Google reCAPTCHA]
 
-The MDVA-39305-V3 patch fixes the issue where registered customers are not able to log in with enabled [!DNL Google reCAPTCHA]. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.58 is installed. The patch ID is MDVA-39305-V3. Please note that the issue is scheduled to be fixed in Adobe Commerce versions 2.4.4 and 2.4.7.
+>[!NOTE]
+>
+>This patch is an update of the [MDVA-39305](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md) patch.
+
+The MDVA-39305-V3 patch fixes the issue where registered customers are not able to log in when [!DNL Google reCAPTCHA] is enabled. This patch was added in the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.48 release. It was updated in the QPT 1.1.58 release to include new Adobe Commerce versions 2.4.7 - 2.4.7-p4. The patch ID is MDVA-39305-V3. Please note that the issue was fixed in Adobe Commerce versions 2.4.4 and 2.4.7.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce on cloud infrastructure 2.4.2-p1, 2.4.3-p3, 2.4.5-p2, 2.4.4, 2.4.7
+* Adobe Commerce (all deployment methods) 2.4.4, 2.4.5-p2, 2.4.7
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.1-p1 - 2.4.3-p3, 2.4.4-p1 - 2.4.7-p3
+* Adobe Commerce (all deployment methods) 2.4.4-p1 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -51,7 +55,4 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about Quality Patches Tool, refer to:
 
-* [Quality Patches Tool released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
-* [Check if patch is available for your Adobe Commerce issue using Quality Patches Tool](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!DNL Quality Patches Tool] guide.
 
-For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
