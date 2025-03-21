@@ -2,7 +2,7 @@
 
 ## Fixed issues in v2.4.8
 
-We have fixed 612 issues in the Adobe Commerce 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 582 issues in the Adobe Commerce 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 
@@ -21,6 +21,7 @@ We have fixed 612 issues in the Adobe Commerce 2.4.8 core code. A subset of the 
   * _Fix note_: The system now supports scope authorized access for REST API admin tokens and Magento_Sales endpoints, ensuring that the REST API only displays orders that admin has access to. Previously, the REST API would display orders from all websites, regardless of the admin user&apos;s assigned website.
 * _ACP2E-2755_: Issue with rest api after enable 2FA Duo
   * _Fix note_: 2FA with Duo security option now generates correct signature for Rest API
+  * _GitHub code contribution_: <https://github.com/magento/security-package/commit/412fa642>
 * _ACP2E-2927_: [REST API]: Use Default value in store view does not stay checked after adding configurations for a configurable product
   * _Fix note_: The issue has been fixed by ensuring correct database entries for the customizable options for a non-default store. The checkbox for the custom store in the &quot;admin &gt; Catalogue &gt; Product Edit &gt; Customizable Options&quot; section was previously unchecked owing to inaccurate database entries, even if the option title for the custom store stayed the same as the default store.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3056e9cb>
@@ -99,6 +100,7 @@ Previously it was possible to create the Duplicate website group price customer 
   * _Fix note_: The system now allows the &quot;Login as Customer opt-in checkbox&quot; and &quot;Login as Customer checkbox tooltip&quot; fields to be set at the &quot;Store view&quot; scope, enabling translations for different store views. Previously, these fields were only set at the &quot;Website&quot; scope, preventing translations for individual store views.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/32329>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/32359>
+* _AC-14299_: Front end UI Homepage in my profile Dropdown is button is not there.(intermittently)
 * _AC-6071_: Customer is logged in but showing 404 error in frontend.
   * _Fix note_: The storefront customer dashboard page now loads as expected when a customer logs in. Previously, customers could log in, but this page showed a 404 error. [GitHub-35838](https://github.com/magento/magento2/issues/35838)
   * _GitHub issue_: <https://github.com/magento/magento2/issues/35838>
@@ -171,6 +173,7 @@ Previously, after logging in, the products added to the compare list as a guest 
 * _AC-13850_: There is no red asterisk for mandatory phone number field
   * _Fix note_: Earlier red asterisk was not showing for phone number but  phone number was mandatory. Which is now fixed red asterisk can be seen on phone number as a mandatory filed.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/c699c206>
+* _AC-14300_: In Admin When we try to Reorder submit order button is not clickable. (intermittently)
 * _AC-6975_: [Issue] Set default indexer mode to 'schedule'
   * _Fix note_: All new indexers are by default in **[!UICONTROL Update by Schedule]** mode.  Previously, the default mode was **[!UICONTROL Update on Save]**. Existing indexers are not affected. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
   * _GitHub issue_: <https://github.com/magento/magento2/issues/36419>
@@ -201,7 +204,7 @@ Previously, after logging in, the products added to the compare list as a guest 
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/39d54c2d>
 * _ACP2E-2957_: Gallery in PageBuilder is showing old image thumbnail instead of newly uploaded image
   * _Fix note_: Regenerate image previews for images deleted and re-uploaded with same name through media gallery in page builder content.
-  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/001e5188>, <https://github.com/magento/magento2-page-builder/commit/60140cd2>
+  * _GitHub code contribution_: <https://github.com/magento/magento2-page-builder/commit/60140cd2>, <https://github.com/magento/magento2/commit/001e5188>
 * _ACP2E-2978_: Saving product by admin user with different role scope overwrites/deletes existing Related product information in the product
   * _Fix note_: Previously, before the fix, the related products were reset and became empty when the secondary admin user clicked on the save button without changing in related product. After this fix, the secondary admin user clicks on the save button and the product doesn&apos;t reset and is saved successfully.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3056e9cb>
@@ -235,7 +238,7 @@ We can now update custom-created order statuses, whereas previously, the status 
   * _Fix note_: After the fix, if the custom admin domain is a subdomain of the main domain, the admin is accessible only from the configured subdomain.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37663>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: Broken validation for "Maximum Qty Allowed in Shopping Cart"
+* _ACP2E-3392_: Broken validation for “Maximum Qty Allowed in Shopping Cart”
   * _Fix note_: Previously, when we put `Maximum Qty Allowed in Shopping Cart` empty, it did not throw any exception, though an empty value is not accepted here. After this fix applies, putting an empty string will throw exceptions and will not allow saving the product.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [Pagebuilder Preview UI Issue] The buttons in the Page Builder column aren't lining up correctly
@@ -350,7 +353,6 @@ We can now update custom-created order statuses, whereas previously, the status 
 ### B2B
 
 * _AC-13501_: 2.4.8-beta102 package Enterprise edition is failing with application exceptions
-* _AC-13816_: Unable to enable b2b feature in backend admin for the first time
 * _ACP2E-2139_: Products assigned to shared catalog are not reflect on the front end when partial index is executed
   * _Fix note_: Products assigned to shared catalog via REST API are now immediately visible on storefront after partial indexing is complete. Previously, Products were visible only after a full re-indexation.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7377de59>
@@ -372,10 +374,6 @@ Previously adding product to cart resulted in Error &apos;no such entity with id
 * _ACP2E-3628_: Issue with SKU Updates after Scheduled Updates Causing Incorrect Product Permissions (-2 Deny)
   * _Fix note_: Modifying a product&apos;s SKU with past scheduled updates no longer causes the product to be inaccessible to the shared catalog customers entitled to see the product.
 
-### B2B, Cart & Checkout
-
-* _AC-13817_: unable to see products on cart when b2b all features are enabled
-
 ### B2B, Catalog
 
 * _ACP2E-2860_: Products/Categories visible during reindexation when using NoDDL and Category Permissions
@@ -394,6 +392,7 @@ Previously adding product to cart resulted in Error &apos;no such entity with id
 
 ### Braintree
 
+* _AC-14293_: Admin express checkout button is disabled.
 * _BUNDLE-3367_: Pay via LPM
   * _Fix note_: The system now correctly renders Local Payment Methods (LPM) on initial load, even when a logged-in customer&apos;s shipping and billing addresses do not match, ensuring a smooth checkout process. Previously, a mismatch between a customer&apos;s shipping and billing addresses would prevent LPM from rendering, causing potential disruptions during checkout.
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
@@ -468,7 +467,7 @@ Previously adding product to cart resulted in Error &apos;no such entity with id
   * _Fix note_: The system now optimizes performance for large shopping carts by preventing duplicate getActions calls, enhancing the speed and efficiency of shopping cart operations. Previously, for a shopping cart with multiple items, the getActions function was called multiple times, slowing down the system&apos;s performance.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39292>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/39290>
-* _AC-13797_: Gift registry link isn't working properly
+* _AC-13797_: Gift registry Product isn't displayinging properly
 * _AC-13841_: Gift registry Product isn't displaying properly
 * _AC-8103_: Translation VAT in address renderer
   * _Fix note_: The system now allows for the translation of the text &quot;VAT&quot;, &quot;T&quot;, &quot;F&quot; in the address renderers, enabling users to translate these terms to the specific language of the store. Previously, these terms were not translatable, forcing users to employ a workaround.
@@ -542,8 +541,6 @@ Previously adding product to cart resulted in Error &apos;no such entity with id
   * _Fix note_: Gift registry update no longer includes items that do not belong to the gift registry.
 * _ACP2E-3510_: [Cloud] Issue with "Remove All" Confirmation Popup Removing Cart Items Without Confirmation
   * _Fix note_: Now, clicking the &quot;Remove All&quot; button for attention-required products prompts a confirmation popup to ensure items are only removed with your confirmation. Previously, items were removed immediately without any confirmation
-* _ACP2E-3541_: "Something went wrong" error on checkout for inactive company
-  * _Fix note_: Prior to the fix, the logout action was not being completed properly on the cart page, if the longged in user company was no longer enabled. Now, if the company is no longer available, the logout is performed properly.
 * _ACP2E-3618_: [CLOUD] Re-order button functionality
   * _Fix note_: Re-orderind an order from the administrator area will now add products with stock to the quote even though there are some products in the original order that do not have stock anymore. Prior to the fix no products were being added to the new quote if product with no stock were in the original order.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/a52ff98f>
@@ -618,7 +615,6 @@ Previously adding product to cart resulted in Error &apos;no such entity with id
   * _Fix note_: The system now allows the adjustment of product layout based on the attribute set, providing a more practical and efficient way to manage product display in the frontend store. Previously, the layout could only be adjusted by SKU or by product types, which was not always practical for many products or specific articles.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38790>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/36244>
-* _AC-13786_: White border is not getting remover after disabling product_image_white_borders for custom theme
 * _AC-6738_: Missing unique key on eav_attribute_option_value table
   * _Fix note_: The system now includes a unique key on the &apos;option_id&apos; and &apos;store_id&apos; columns in the &apos;eav_attribute_option_value&apos; table, preventing the possibility of an option having multiple values for the same store view. Previously, faulty code could result in an option having multiple values for the same store view, causing issues when editing products or attributes.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/24718>
@@ -973,7 +969,7 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now resets the region text field when the country is changed in the dropdown menu, ensuring that previous values do not persist. Previously, changing the country from the dropdown list did not reset the region field, causing the last saved value to be preserved.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-9240_: Deleting Customer Does Not Clean All Browser Session Data on Storefront for Logged in & Deleted Customer
-  * _Fix note_: Deleting a customer now cleans all browser session data from the storefront for logged-in and deleted customers as expected. The shopper can continue shopping, and their browser treats their session as a guest session. Previously, when the customer account for a logged-in shopper was deleted from the Admin, then the shopper's browser threw JavaScript errors.
+  * _Fix note_: Deleting a customer now cleans all browser session data from the storefront for logged-in and deleted customers as expected. The shopper can continue shopping, and their browser treats their session as a guest session. Previously, when the customer account for a logged-in shopper was deleted from the Admin, then the shopper’s browser threw JavaScript errors.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Framework
@@ -986,9 +982,6 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now adheres to the constraints set within the management GUI when processing password change requests via the API, preventing potential abuse of the password reset function. Previously, the API could process password change requests outside of the rules defined in the management GUI, potentially allowing for a constant stream of reset emails if valid emails were known.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38238>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0c53bbf7>
-* _AC-10721_: 
-  * _Fix note_: Upgrade the league/flysystem Composer dependencies upgrading to latest version
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/91cb4d46>>
 * _AC-10738_: Varnish configuration does not exclude all marketing parameters
   * _Fix note_: The system now correctly excludes all common marketing parameters in the Varnish configuration, ensuring accurate tracking and analytics. Previously, certain marketing parameters such as gad_source, srsltid, and msclkid were not excluded, leading to potential inaccuracies in data collection.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38298>
@@ -1001,15 +994,10 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now supports the use of created_at, status, and grand_total filters in customer Orders queries, and has resolved an issue where multiple filters were not being applied correctly. Previously, the system did not support these filters and would fail to apply all filters when more than one was used in a query.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38392>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/36949>
-* _AC-10971_: https://github.com/magento/magento2/issues/38415
-  * _Fix note_: PHP 8.2/8.3, only one dependency fails the php linter at the moment: league/flysystem
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/672a2e61>>
 * _AC-10991_: Randomly getting flooded with queries from related / upsell / crosssell blocks and price indexing
   * _Fix note_: The system now optimizes queries from related, upsell, and cross-sell blocks, improving the performance and preventing the site from going down due to excessive queries. Previously, the system could become overloaded with queries from these blocks, causing significant slowdowns and potentially bringing the site down.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/36667>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38050>
-* _AC-11388_: 
-  * _Fix note_: Verify Deleting Folder Deletes S3 and Local File Storage Directories
 * _AC-11423_: Exception: Warning: Trying to access array offset in... -> Calendar.php since upgrade to ICU 74.1 (PHP Intl)
   * _Fix note_: Commerce no longer logs the following exception in the exception.log whenever a shopper or merchant visits either the storefront or Admin: `main.CRITICAL: Exception: Warning: Trying to access array offset on value of type null in /vendor/magento/framework/View/Element/Html/Calendar.php on line 114 in /vendor/magento/framework/App/ErrorHandler.php:62`. [GitHub-38214](https://github.com/magento/magento2/issues/38214)
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38214>
@@ -1030,9 +1018,6 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now allows the modification of previously read-only properties in the LoggerProxy&apos;s __wakeup method, ensuring smooth operation without forcing users to employ a workaround. Previously, an attempt to reassign the value of a read-only property in the LoggerProxy&apos;s __wakeup method would cause issues.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38526>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/c8f87c25>
-* _AC-11673_: 
-  * _Fix note_: Investigate php-amqplib/php-amqplib latest versions
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/de4dfb8e>>
 * _AC-11681_: [Issue] AC-2039 AC-1667 upgrade TinyMCE references
   * _Fix note_: Updated tinymce latest version in composer.json
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38533>
@@ -1045,8 +1030,6 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now correctly names the variable that contains the amount of money that can still be refunded, preventing confusion during debugging. Previously, this variable was incorrectly named as totalRefund, which could lead to misunderstandings for developers.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38609>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/36205>
-* _AC-11808_: 
-  * _Fix note_: Investiagte and upgrade Adobe Commerce Core dependencies list
 * _AC-11809_: [Issue] Pass custom attributes to current link via XML
   * _Fix note_: The system now allows custom attributes to be passed to the current link via XML, ensuring that these attributes are correctly displayed even when the link is the current page. Previously, custom attributes were not displayed for the current page link due to the getAttributesHtml() method not being used for the current link.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38500>
@@ -1070,37 +1053,14 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now correctly handles empty LESS files during static content deployment, displaying an &quot;LESS file is empty&quot; error message. Previously, an incorrect type error was thrown when encountering an empty LESS file during deployment.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38682>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38683>
-* _AC-11911_: 
-  * _Fix note_: jQuery/fileuploader css cleanup after migration to uppy library
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/7cabfb46>>
 * _AC-12002_: [Issue] [View] Removed extra space in link and script tag
   * _Fix note_: The system now ensures that there are no extra spaces in the link and script tags, providing cleaner and more efficient code. Previously, double spaces could be found between attributes in the link and script tags.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/32920>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/32919>
-* _AC-12015_: 
-  * _Fix note_: ExtJs folder cleanup after migration to jsTree library
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/7cabfb46>>
-* _AC-12022_: 
-  * _Fix note_: Upgrade monolog/monolog system dependency to the latest major version
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/edcd0dcc>>
-* _AC-12023_: 
-  * _Fix note_: Upgrade wikimedia/less.php dependency to the latest major version
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/edcd0dcc>>
-* _AC-12024_: 
-  * _Fix note_: Upgrade jquery/validate library dependency to the latest minor version
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/de4dfb8e>>
-* _AC-12025_: 
-  * _Fix note_: Upgrade moment.js system dependency to the latest minor version
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/de4dfb8e>>
 * _AC-12127_: [Issue] avoid a misconfiguration infinite loop
   * _Fix note_: The system now avoids an infinite loop by preventing self-referential mapping in virtual type configurations. This ensures the application does not get stuck in an endless loop when attempting to dereference a self-referential node. Previously, if a virtual type configuration was self-referential, it would cause the application to spin indefinitely.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38822>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38794>
-* _AC-12267_: 
-  * _Fix note_: Support connection retries for Redis session and compatible with colinmollenhour/php-redis-session-abstract v2.0.0
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/672a2e61>>
-* _AC-12268_: 
-  * _Fix note_: Upgrade league/flysystem Composer dependencies to latest version
 * _AC-12299_: Object Manager not used for Magento\Csp\Model\Mode\Data\ModeConfigured
   * _Fix note_: The system now correctly uses the Object Manager when creating the ModeConfigured object, allowing plugins to be used on this object. Previously, the Object Manager was not being used, preventing plugins from being applied to the ModeConfigured object.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38875>
@@ -1117,35 +1077,18 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now removes references to files from extjs which were previously removed, eliminating errors in the browser&apos;s console and the system log file. Previously, these references were causing errors due to the absence of the referenced files.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38960>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38951>
-* _AC-12715_: 
-  * _Fix note_: Update laminas composer dependencies upgrading to latest version
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/b34c0a75>>
-* _AC-12750_: 
-  * _Fix note_: The removal of ExtJs is logging error in browser console log and magento log
 * _AC-12778_: [Issue] Minor cleanup: fixed wrong usage of sprintf, it only takes 2 placeholders here and w…
   * _Fix note_: The system now correctly uses the sprintf function with the appropriate number of placeholders, enhancing code cleanliness and consistency. Previously, the sprintf function was incorrectly used with an extra argument, which did not cause any major issues but was not the correct usage.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39062>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38628>
-* _AC-12823_: 
-  * _Fix note_: Investigate the unit test failure due to phpunit patch update during component upgrade
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/b34c0a75>>
 * _AC-12857_: PHP 8.2.15 removed FTP extension
   * _Fix note_: The system now includes the FTP extension as a dependency in the composer.json file, ensuring the successful configuration of CSV imports via FTP. Previously, an error was thrown when attempting to configure CSV imports via FTP due to the FTP extension being missing in the PHP package.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39083>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/47b448e2>
-* _AC-12866_: 
-  * _Fix note_: Remove Deprecations- PhpUnit10 Integration Tests
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/edcd0dcc>>
-* _AC-12868_: 
-  * _Fix note_: Remove Deprecations- PhpUnit10 WebApi Tests
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/edcd0dcc>>
 * _AC-12869_: [Issue] Fixes incorrect classes being referenced in Magento modules.
   * _Fix note_: The system now correctly references classes in modules, ensuring smoother operation and preventing crashes due to non-existing classes. This includes a bugfix in the Indexer and Creditmemo modules, and the implementation of the HttpGetActionInterface in the PrintAction class. Previously, incorrect class references led to errors and potential system crashes, and certain functionalities, such as the filename for creditmemo PDF files and reindexing of stocks, were not working as expected.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39126>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12882_: 
-  * _Fix note_: Investigate the Integration build after component upgrade
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/b34c0a75>>
 * _AC-12964_: Ability to define Area for dev:di:info CLI command
   * _Fix note_: The system now allows developers to define an area for the dev:di:info CLI command, enhancing the development and debugging process. Previously, this command could only display information for the GLOBAL area.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38758>
@@ -1186,8 +1129,6 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now correctly uses the term &quot;subscribers&quot; in the JavaScript file, ensuring proper functionality of the related features. Previously, a typographical error in the JavaScript file resulted in the incorrect use of the term &quot;subsctibers&quot;.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/36163>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/36171>
-* _AC-8089_: 
-  * _Fix note_: Investigate the league/flysystem Composer dependencies upgrading to latest version
 * _AC-8353_: [Issue] Remove forbidden `@author` tag
   * _Fix note_: The system now adheres to coding standards by removing the forbidden `@author` tag from certain modules, ensuring cleaner and more standardized code. Previously, the `@author` tag was present in some modules, which was against the established coding standards.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37253>
@@ -1337,7 +1278,36 @@ Previously query worked without making sure the customer exists on non-default w
 * _ACP2E-3647_: [CLOUD]: GraphQl error Internal server error placeOrder mutation
   * _Fix note_: The &quot;placeOrder&quot; mutation with coupon code information in the request is no longer throwing an internal error exception, the order was placed successfully. Previously, it failed with &quot;Internal server error&quot;.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/982b1c42>
+* _LYNX-426_: The discount_percentage is not calculated for bundle products with dynamic price
+  * _Fix note_: Fix added for discount_percentage of product.price_details not showing the correct value for bundle products with dynamic price enabled and discount coupon applied.
+* _LYNX-485_: Bundle products still shows "IN_STOCK" when one of its bundled product out of stock
+  * _Fix note_: Resolved the issue where bundle products were still showing &quot;IN_STOCK&quot; even when one of their bundled products was out of stock.
+* _LYNX-486_: not_available_message and only_x_left_in_stock doesn't show the same available stock
+  * _Fix note_: Resolved the issue where the not_available_message and only_x_left_in_stock were showing inconsistent stock availability
+* _LYNX-488_: original_row_total field returning wrong value
+  * _Fix note_: Resolved the issue with the original_row_total field, which was returning incorrect values when custom options were selected
+* _LYNX-503_: Grouped product thumbnail should be shown according to the configuration     .
+  * _Fix note_: Resolved the issue to ensure the grouped product thumbnail is displayed according to the configuration settings
+* _LYNX-510_: Error when querying selected_options in OrderAddress
+  * _Fix note_: Updated AttributeSelectedOptions to custom_attributesV2 in the order address GraphQL response.
+* _LYNX-512_: original_item_price is not including discounts
+  * _Fix note_: Updated original_item_price to include discounts.
+* _LYNX-530_: Not available message is not showing the available inventory quantity
+  * _Fix note_: Resolved the error message and error code for the AddProductsToCart mutation to align with the &quot;not available&quot; message configuration
+* _LYNX-532_: "OUT_OF_STOCK" status returns on Simple with custom options products with multi select options
+  * _Fix note_: Updated the StockStatusProvider resolver in the inventory package to fix the stock_status for simple products with custom options.
+* _LYNX-533_: Error (GQL): cart.itemsV2.items.product.custom_attributesV2 returns a server error
+  * _Fix note_: Resolved the server error that occurred when a cart query included a product&apos;s custom attributes by adding a product without any custom attributes.
+* _LYNX-536_: orders/date_of_first_order always returning null
+  * _Fix note_: Resolved the issue where orders &gt; date_of_first_order was always returning null.
+* _LYNX-544_: Customer must not be able to cancel a partially shipped order
+  * _Fix note_: Validation has been added to restrict customers from canceling a partially shipped order.
+* _LYNX-548_: Error codes for order cancellation based on the error message
+  * _Fix note_: The error codes for order cancellation are now based on the specific error message.
+* _LYNX-581_: Move back cookie-related properties from private to protected
+  * _Fix note_: Reverts Magento\Framework\App\PageCache\Version class constructor properties visibility from private to protected
 * _LYNX-600_: Increase max default GraphQL query complexity to 1000
+  * _Fix note_: Increased the default maximum GraphQL query complexity from 300 to 1000.
 * _LYNX-620_: GQL - itemsV2 > Original row total, price range prices is returned as $0.00 for downloadable product with file options which has separate prices.
   * _Fix note_: Resolved an issue where downloadable products with separate link purchase options enabled were returning $0 for itemsV2 &gt; Original row total, price range returned as $0.00 for products with file options having separate prices.
 * _LYNX-711_: Schema of a table when is created brand new different than when upgrading
@@ -1550,41 +1520,54 @@ Previously, assigned to the admin store instead of their respective store.
 * _BUNDLE-3422_: [Braintree] [Cloud]Braintree SSL Certificate expire by June 30
   * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/211>, <https://github.com/magento/ext-braintree/pull/212>, <https://github.com/magento/ext-braintree/pull/213>, <https://github.com/magento/ext-braintree/pull/215>
 * _LYNX-339_: private_content_version cookie returned in GQL queries
+  * _Fix note_: Fixed an issue where the private_content_version cookie was returned in GraphQL queries, even when the session cookie was disabled. The cookie is no longer included in GraphQL responses when the session is disabled, as expected.
 * _LYNX-366_: Server error on email props in physical gift card queries
+  * _Fix note_: Fixed an issue where queries for sender_email and recipient_email on physical gift cards resulted in a server error. These props now return correctly for virtual gift cards and the query behavior is consistent.
 * _LYNX-380_: is_available attribute in CartItemInterface returns always false for configurable products
+  * _Fix note_: Fixed an issue where the is_available attribute in CartItemInterface always returned false for in-stock configurable products. Now, it correctly reflects availability as true when applicable.
 * _LYNX-382_: is_available attribute in CartItemInterface returns true even when salable stock is lower than the quantity of the product
+  * _Fix note_: Fixed the issue where the is_available attribute in the CartItemInterface incorrectly returned true even when the cart item quantity exceeded the salable stock.
 * _LYNX-395_: only_x_left_in_stock attribute in ProductInterface is not accurate on configurable products
+  * _Fix note_: Fixed an issue where the only_x_left_in_stock attribute in ProductInterface did not accurately reflect the available stock for configurable product variants in the cart. Now, the only_x_left_in_stock value corresponds correctly to the actual variant stock levels, ensuring accurate inventory data is returned in the Cart GQL query.
 * _LYNX-399_: Placeholder thumbnail returns when a simple product added to cart within a grouped product
+  * _Fix note_: Fixed an issue where adding a simple product (part of a grouped product) to the cart returned a placeholder thumbnail image, even when the product had an assigned image.
+Fix Details:
+ • The product thumbnail now correctly displays the assigned image if available.
+ • The thumbnail selection respects the admin configuration under:
+Stores &gt; Configuration &gt; Sales &gt; Checkout &gt; Shopping Cart &gt; Grouped Product Image.
+This ensures consistent thumbnail behavior for grouped products based on store settings.
 * _LYNX-400_: Customer's custom option attributes not working with integer values
+  * _Fix note_: Fixed an issue where customer’s custom option attributes did not work when the returned value was an integer. Custom options now correctly handle and return integer values as expected.
 * _LYNX-402_: Internal server error when trying to get priceDetails for Bundle products with dynamic price
+  * _Fix note_: Resolved an issue where querying price_details for bundle products with dynamic pricing via GraphQL resulted in an internal server error. This enhancement ensures stable cart queries when working with bundle products configured with dynamic pricing.
 * _LYNX-403_: only_x_left_in_stock always returns 0 for configurable products
+  * _Fix note_: Resolved an issue where the only_x_left_in_stock attribute always returned 0 for configurable products when added using the parent SKU with options.
+Fix Details:
+ • The only_x_left_in_stock value now accurately reflects the stock of the selected child variant instead of the parent SKU.
+ • This ensures that stock levels are correctly displayed for configurable product variations in the cart and product pages.
 * _LYNX-405_: GraphQL Error: Unsupported 'file' type in customizable options query
+  * _Fix note_: Fixed an issue where GraphQL returned an error for customizable options of type “file” in cart items. The query now correctly returns details for all customizable option types, including file-based options, without causing errors.
 * _LYNX-411_: GraphQL query not returning correct calculated regular price for customizable products
+  * _Fix note_: Fixed an issue where GraphQL did not return the correct calculated regular price for customizable products. The query now correctly includes the calculated regular price with customizable values applied (e.g., $125) in the prices property, reflecting both the base price and any additional customization costs.
 * _LYNX-412_: AppliedTaxes via EstimatedTotals persist with updated mutations
+  * _Fix note_: Fixed an issue with the EstimatedTotals mutation where applied taxes persisted on a cart even after updating the region or postcode. The mutation now correctly updates the applied taxes when changing between region and postcode values, ensuring that only the correct tax rule is applied based on the current cart data.
 * _LYNX-420_: is_available attribute in CartItemInterface returns true even when salable stock is lower than the quantity of the product
+  * _Fix note_: Fixed an issue where the is_available attribute in CartItemInterface incorrectly returned true even when the salable stock was lower than the requested product quantity. The is_available field now correctly returns false when the product’s quantity exceeds the available stock.
 * _LYNX-421_: Cannot add coupon to cart for shipping only discount
+  * _Fix note_: Fixed an issue where a coupon could not be applied to a cart for shipping-only discounts. The coupon is now correctly applied to the shipping amount when using a sales rule with no product conditions, ensuring the expected discount is applied to the shipping cost.
 * _LYNX-425_: Product regular price with 12 decimals and wrong value
-* _LYNX-426_: The discount_percentage is not calculated for bundle products with dynamic price
+  * _Fix note_: Fixed an issue where the regular_price value in the product.price_range.maximum_price and minimum_price GraphQL paths did not match the catalog price when multiple tax rates were applied. The regular_price now consistently reflects the catalog price across all tax configurations, ensuring accurate unit pricing, total row cost calculations, and discount checks in the Cart Summary.
 * _LYNX-430_: GraphQL server error on cart with out of stock bundled product
+  * _Fix note_: Fixed an issue where GraphQL returned an internal server error when fetching a cart containing a bundled product with an out-of-stock item, specifically when the query included the itemsV2 property. GraphQL now correctly returns a list of items with relevant error messages attached to the bundled product item entry, as expected.
 * _LYNX-441_: It is not possible to create an address with custom attributes
+  * _Fix note_: Fixed an issue with the createCustomerAddress mutation that prevented the creation of addresses with required custom attributes. The mutation now correctly handles custom address attributes when the appropriate payload is provided.
 * _LYNX-447_: GraphQL server error on cart with only_x_left_in_stock on bundled product
+  * _Fix note_: Fixed an issue where fetching a cart containing a bundled product with the only_x_left_in_stock field in the GraphQL query resulted in an internal server error. GraphQL now correctly returns a float or null for the only_x_left_in_stock field without errors.
 * _LYNX-464_: GraphQL error when removing other products with insufficient configurable product in cart
+  * _Fix note_: Fixed an issue where attempting to remove in-stock products from the cart resulted in a “The requested qty is not available” GraphQL error if the cart also contained configurable products with insufficient stock. The removal now works as expected without triggering errors.
 * _LYNX-469_: Cannot add products due to SKU in mutation being case sensitive
-* _LYNX-485_: Bundle products still shows "IN_STOCK" when one of its bundled product out of stock
-* _LYNX-486_: not_available_message and only_x_left_in_stock doesn't show the same available stock
-* _LYNX-488_: original_row_total field returning wrong value
-* _LYNX-503_: Grouped product thumbnail should be shown according to the configuration     .
-* _LYNX-510_: Error when querying selected_options in OrderAddress
-* _LYNX-512_: original_item_price is not including discounts
-* _LYNX-526_: GraphQL. Configuration is not respected for CANCEL order available_actions
-* _LYNX-530_: Not available message is not showing the available inventory quantity
-* _LYNX-532_: "OUT_OF_STOCK" status returns on Simple with custom options products with multi select options
-* _LYNX-533_: Error (GQL): cart.itemsV2.items.product.custom_attributesV2 returns a server error
-* _LYNX-536_: orders/date_of_first_order always returning null
-* _LYNX-544_: Customer must not be able to cancel a partially shipped order
-* _LYNX-548_: Error codes for order cancellation based on the error message
-* _LYNX-581_: Move back cookie-related properties from private to protected
-* _LYNX-603_: Product attribute > trademark short form &trade; is returned as &trade;
+  * _Fix note_: Resolved an issue where the addProductsToCart mutation returned a “PRODUCT_NOT_FOUND” error when using SKUs with different casing. The mutation now handles SKUs case-insensitively, ensuring consistency with Catalog Service queries and PDP behavior.
+* _LYNX-603_: Product attribute > trademark short form ™ is returned as &trade;
   * _Fix note_: Resolved character encoding issue with the product name for the GraphQL API
 * _LYNX-619_: updateCustomerEmail mutation issue
   * _Fix note_: Resolved an issue with the updateCustomerEmail mutation where customers without required custom attributes (added after account creation) were unable to update their email.
@@ -1592,9 +1575,9 @@ Previously, assigned to the admin store instead of their respective store.
   * _Fix note_: Fixed an issue where the setShippingAddressesOnCart mutation returned an error when using pickup_location_code without specifying customer_address_id or address. The mutation now correctly allows setting a shipping address with just the pickup_location_code.
 * _LYNX-627_: CustomerOrder.items_eligible_for_return list must be consistent with order items
   * _Fix note_: Resolved inconsistencies with return eligibility in orders:
-  1. The CustomerOrder.items_eligible_for_return list is now consistent with actual order items.
-  2. The OrderItemInterface.eligible_for_return field correctly returns false when the full quantity has already been returned.
-  3. CustomerOrder.items_eligible_for_return now includes only items that are not already in the process of being returned.
+1. The CustomerOrder.items_eligible_for_return list is now consistent with actual order items.
+2. The OrderItemInterface.eligible_for_return field correctly returns false when the full quantity has already been returned.
+3. CustomerOrder.items_eligible_for_return now includes only items that are not already in the process of being returned.
 * _LYNX-628_: Add quantity_return_requested field
   * _Fix note_: Added the quantity_return_requested field to the OrderItemInterface, allowing you to identify the quantity of items for which a return has been submitted. This enhances return tracking alongside the existing quantity_returned field.
 * _LYNX-634_: Order available actions must not contain RETURN after returns created for all items in full quantity
@@ -1602,7 +1585,7 @@ Previously, assigned to the admin store instead of their respective store.
 * _LYNX-637_: Storefront Compatibility - Update logic to get table name with prefix and other minor improvements
   * _Fix note_: Updated logic to retrieve the table name with the prefix (related to SCP changes).
 * _LYNX-643_: save in address book does not work when using setBillingAddressOnCart GQL's same_as_shipping field
-  * _Fix note_: Fixed an issue where the shipping address was not saved to the customer's address book when using the setBillingAddressOnCart GraphQL mutation with the same_as_shipping field set to true. Now, the shipping address is correctly stored as expected.
+  * _Fix note_: Fixed an issue where the shipping address was not saved to the customer’s address book when using the setBillingAddressOnCart GraphQL mutation with the same_as_shipping field set to true. Now, the shipping address is correctly stored as expected.
 * _LYNX-650_: Standarize the order_id in mutations
   * _Fix note_: Standardized the order_id input in mutations and updated the order cancel confirmation email template to expose increment id instead of order id.
 * _LYNX-651_: CustomerOrder is not displaying the order comments
@@ -1738,6 +1721,8 @@ Before they were automatically rejected.
 * _AC-11810_: Magento2.4.6-p4 Order API Simple Item missing price
   * _Fix note_: The system now correctly displays the price of simple products when queried through the Order API, ensuring accurate data representation. Previously, the price of simple products was incorrectly displayed as zero in the API response.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38603>
+* _AC-13855_: Penny rounding error in catalog rule
+  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/276e0acd>
 
 ### Product
 
@@ -1856,7 +1841,6 @@ Previously restricted admin users could see the return menu and buttons.
 
 ### Sales
 
-* _AC-13750_: Grand Total and base grand total are not matching with test result steps
 * _AC-13751_: Second Cart Price Rule isn't applied if First Cart rule is already applied
 
 ### Search
@@ -1872,24 +1856,19 @@ Previously restricted admin users could see the return menu and buttons.
 
 ### Security
 
-* _AC-11762_: 
-  * _Fix note_: Update 2FA OTP window field with correct description and default value after BiC change
 * _AC-11855_: [Issue] Missing Font CSP Paylater Popup
   * _Fix note_: The system now allows the loading of the font &apos;https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff&apos; without violating the Content Security Policy directive, ensuring the correct display of the Paylater Popup. Previously, the font was refused to load due to a violation of the Content Security Policy directive, causing display issues with the Paylater Popup.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38624>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/37401>
-* _AC-11937_: 
-  * _Fix note_: Update 2FA OTP window field with correct description and default value after BiC change
 * _AC-12035_: [Issue] Update js.js DOM text reinterpreted as HTML
   * _Fix note_: By using innerText, it will avoid the risk of HTML injection, as these properties automatically escape any HTML special characters in the provided text. This fix, helps prevent cross-site scripting (XSS) vulnerabilities by treating the input as plain text rather than interpreted HTML.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38767>
-* _AC-12309_: 
-  * _Fix note_: Update user documentation for two-factor authentication (2FA) to change otp_window command
 * _ACP2E-3273_: ReCaptcha V2 shows incorrectly on checkout for German language
   * _Fix note_: Previously the recaptcha from under email address from checkout appear unstyled for languages with long words, like german. After this the recaptcha looks the same as all recaptcha elements from the rest of the areas.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7377de59>
 * _ACP2E-3300_: Captcha on admin login does not require interaction for some users
   * _Fix note_: ReCaptcha for admin login is validated as expected
+  * _GitHub code contribution_: <https://github.com/magento/security-package/commit/8f64ab3c>
 
 ### Shipping
 
@@ -1897,19 +1876,10 @@ Previously restricted admin users could see the return menu and buttons.
   * _Fix note_: The system now correctly uses the term &quot;carrier&quot; instead of the misspelled &quot;currier&quot; in the JavaScript handler functions used in the order tracking template, ensuring proper function naming and code clarity. Previously, the misspelled term &quot;currier&quot; was used, leading to potential confusion and inconsistency in the codebase.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/34523>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/33414>
-* _AC-11811_: 
-  * _Fix note_: UPS REST &quot;A shipment cannot have a KGS/IN or LBS/CM or OZS/CM as its unit of measurements&quot;
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/9b1713d8>>
-* _AC-11916_: 
-  * _Fix note_: [QPT] UPS REST &quot;A shipment cannot have a KGS/IN or LBS/CM or OZS/CM as its unit of measurements&quot;
 * _AC-11938_: UPS REST "A shipment cannot have a KGS/IN or LBS/CM or OZS/CM as its unit of measurements"
   * _Fix note_: Ensure to UPS rates should visible in checkout and cart.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38618>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/493e01f5>
-* _AC-11983_: 
-  * _Fix note_: [QPT] UPS REST &quot;A shipment cannot have a KGS/IN or LBS/CM or OZS/CM as its unit of measurements&quot;
-* _AC-11984_: 
-  * _Fix note_: [QPT] UPS REST &quot;A shipment cannot have a KGS/IN or LBS/CM or OZS/CM as its unit of measurements&quot;
 * _AC-12938_: UPS REST "sandbox" and "prod" setup instruction updates in devdoc
 * _AC-13172_: [Issue] Correct spelling of variables for customer address
   * _Fix note_: The system now correctly spells variables for customer addresses, ensuring accurate display in the account area of the front end. Previously, incorrect spelling of these variables could lead to errors during local code reviews.
@@ -1964,10 +1934,6 @@ Previously restricted admin users could see the return menu and buttons.
 
 ### Test framework
 
-* _AC-11491_: 
-  * _Fix note_: [Skip] Need to be Un-skip again Integration test
-  * _GitHub issue_: <<https://github.com/magento/magento2/commit/493e01f5>>
-  * _GitHub code contribution_: <https://github.com/magento/magento2/commit/1227768a>
 * _AC-11654_: Integration test failing testDbSchemaUpToDate due to JSON column type
   * _Fix note_: The system now correctly recognizes JSON column types in the database schema during integration tests, preventing test failures due to a mismatch between the database schema and the declarative schema. Previously, the system incorrectly identified JSON column types as LONGTEXT in MariaDB, causing integration tests to fail.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/ef81f5a2>

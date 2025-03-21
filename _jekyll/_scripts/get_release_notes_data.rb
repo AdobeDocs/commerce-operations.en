@@ -7,7 +7,30 @@
 # frozen_string_literal: true
 
 require 'csv'
+require 'json'
 
+CACHE_FILE = 'tmp/pr_merge_commit_cache.json'
+
+NECESSARY_COLUMNS = [
+  'Issue key',
+  'Summary',
+  'Custom field (Release Note)',
+  'Components',
+  'Custom field (External Issue URL)',
+  'Custom field (Git Pull Request)',
+  'is_magento'
+].freeze
+
+GITHUB_KEYWORDS = [
+  '/magento2/',
+  '/magento2ce/',
+  '/inventory/',
+  '/magento2-page-builder/',
+  '/security-package/',
+  '/magento2-sample-data/'
+].freeze
+
+# Load CSV files from arguments
 def csv_files
   ARGV.reject(&:empty?)
 end
@@ -18,7 +41,7 @@ def serialize(csv_file)
   CSV.parse(normalized_content, headers: true, nil_value: "")
 end
 
-# Merge columns with same headers
+# Merge columns with the same headers
 def merge_dup_headers(csv_table, duplicate_header, merged_header)
   return if csv_table.headers.none? duplicate_header
 
@@ -32,88 +55,122 @@ def merge_dup_headers(csv_table, duplicate_header, merged_header)
   end
 end
 
-# Prepare a table for merging
-def prepare_necessary_columns(csv_table)
-  necessary_columns = ['Issue key', 'Summary', 'Custom field (Release Note)', 'Components', 'Custom field (External Issue URL)', 'Custom field (Git Pull Request)']
-  csv_table.by_col.delete_if { |column, _| necessary_columns.none? column }
+# Calculate the value of 'is_magento' for a row
+def calculate_is_magento(row)
+  contains_keywords = GITHUB_KEYWORDS.any? do |keyword|
+    row['Custom field (Git Pull Request)']&.include?(keyword)
+  end
+  has_external_issue_url = !row['Custom field (External Issue URL)'].to_s.strip.empty?
+  contains_keywords || has_external_issue_url
 end
 
-def filter_github_links(text)
-  public_links = text.scan(/https:\/\/github\.com\/magento\/[^\s]+/)
-  private_links = text.scan(/https:\/\/github\.com\/magento-commerce\/magento2ce\/pull\/[0-9]+/) +
-                  text.scan(/https:\/\/github\.com\/magento-commerce\/inventory\/pull\/[0-9]+/) +
-                  text.scan(/https:\/\/github\.com\/magento-commerce\/magento2-page-builder\/pull\/[0-9]+/)
+# Prepare necessary columns and add 'is_magento'
+def prepare_necessary_columns(csv_table)
+  csv_table.headers << 'is_magento' unless csv_table.headers.include?('is_magento')
+
+  csv_table.each do |row|
+    row['is_magento'] = calculate_is_magento(row)
+  end
+
+  csv_table.by_col.delete_if { |column, _| NECESSARY_COLUMNS.none?(column) }
+end
+
+# Convert GitHub links to public links
+def convert_github_links_to_public(text)
+  public_links = text.scan(%r{https://github\.com/magento/[^\s>]+})
+  private_links = text.scan(%r{https://github\.com/magento-commerce/.+?/pull/\d+})
+                     .select { |link| GITHUB_KEYWORDS.any? { |keyword| link.include?(keyword) } }
+
   links = public_links + convert_pr_to_merge_commit(private_links)
   links.map { |link| "<#{link}>" }.join(", ")
 end
 
+# Convert pull request links to merge commit links
 def convert_pr_to_merge_commit(links)
+  cache = load_cache
   converted_links = []
-  links.map do |link|
-    merge_commit = `gh pr view #{link} --json mergeCommit --jq .mergeCommit.oid`.rstrip.slice(0, 8)
-    unless merge_commit.empty?
-      converted_links << link.sub('-commerce', '').sub('ce', '').sub(/pull\/[0-9]+/, 'commit/' + merge_commit)
+
+  links.each do |link|
+    if cache.key?(link)
+      merge_commit = cache[link]
     else
-      converted_links << link.sub('-commerce', '').sub('ce', '').sub(/pull\/[0-9]+/, ' ' + '(Internal, Unmerged)')
+      merge_commit = `gh pr view #{link} --json mergeCommit --jq .mergeCommit.oid`.rstrip.slice(0, 8)
+      cache[link] = merge_commit.empty? ? nil : merge_commit
+    end
+
+    if merge_commit
+      converted_links << link.sub('-commerce', '').sub('ce', '').sub(%r{pull/\d+}, "commit/#{merge_commit}")
+    else
+      converted_links << link.sub('-commerce', '').sub('ce', '').sub(%r{pull/\d+}, ' ' + '(Internal, Unmerged)')
       puts "Failed to convert PR link to merge commit: #{link}"
     end
   end
+
+  save_cache(cache)
   converted_links
 end
 
+# Load cache from file
+def load_cache
+  return {} unless File.exist?(CACHE_FILE)
+  JSON.parse(File.read(CACHE_FILE))
+end
+
+# Save cache to file
+def save_cache(cache)
+  File.write(CACHE_FILE, JSON.pretty_generate(cache))
+end
+
+# Process 'Custom field (Git Pull Request)' column
 def process_pr_field(csv_table)
   csv_table.each do |row|
     if row['Custom field (Git Pull Request)']
-      row['Custom field (Git Pull Request)'] = filter_github_links(row['Custom field (Git Pull Request)'])
+      row['Custom field (Git Pull Request)'] = convert_github_links_to_public(row['Custom field (Git Pull Request)'])
     end
   end
 end
 
+# Delete specific text from a column
 def delete_text(csv_table, header, text)
   csv_table[header] =
     csv_table[header].map do |field|
       next field unless field.match? text
-
       field.gsub text, ''
     end
 end
 
+# Replace empty fields with a default value
 def replace_empty(csv_table, header, text)
   csv_table[header] =
     csv_table[header].map do |field|
       next field unless field.empty?
-
       field.replace text
     end
 end
 
-def filter_table(table)
-  table.uniq do |row|
-    row['Custom field (External Issue URL)']
-  end
-end
-
-def final_table_from_csv(csv)
-  filtered_table = filter_table(merged_table(csv))
-
-  CSV::Table.new(filtered_table)
-end
-
-def sort_by_key(data)
-  data.sort_by { |row| row['Issue key'] }
-end
-
+# Remove duplicate rows based on 'Issue key'
 def filter_issue_key_duplicates(csv)
   unique_keys = csv.uniq { |row| row['Issue key'] }
-  sort_by_key(unique_keys)
+  unique_keys.sort_by { |row| row['Issue key'] }
 end
 
+# Strip blank lines from a column
 def strip_blank_lines(csv_table, header)
   csv_table[header] =
     csv_table[header].map do |field|
       next field if field.nil? || field.empty?
       field.lines.reject { |line| line.strip.empty? }.join.strip
     end
+end
+
+# Replace hard tabs with spaces in specified columns
+def replace_tabs_with_spaces(csv_table, headers)
+  headers.each do |header|
+    csv_table[header] = csv_table[header].map do |field|
+      next field if field.nil?
+      field.gsub("\t", ' ')
+    end
+  end
 end
 
 # Main script
@@ -128,12 +185,13 @@ csv_files.each do |csv_file|
   process_pr_field(csv_table)
   strip_blank_lines(csv_table, 'Summary')
   strip_blank_lines(csv_table, 'Custom field (Release Note)')
+  replace_tabs_with_spaces(csv_table, ['Summary', 'Custom field (Release Note)'])
   csv_table.each do |row|
     combined_rows << row
   end
 end
 
-final_table = CSV::Table.new filter_issue_key_duplicates(combined_rows)
+final_table = CSV::Table.new(filter_issue_key_duplicates(combined_rows))
 
 # Print resulted CSV table to 'tmp'
 Dir.mkdir 'tmp' unless File.exist? 'tmp'
