@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-39305-V3: Login issue with enabled [!DNL Google reCAPTCHA]'
-description: Apply the MDVA-39305-V3 patch to fix the Adobe Commerce issue where registered customers are not able to log in when [!DNL Google reCAPTCHA] is enabled. 
+description: Apply the MDVA-39305-V3 patch to fix the Adobe Commerce issue where registered customers are not able to log in when [!DNL Google reCAPTCHA] is enabled. This patch also fixes the issue where a form can be submitted before [!DNL Google reCAPTCHA] fully loads. Additionally, it fixes the error *Call to a member function isDisabled() on null* when blocks are used in non-default locations on a CMS page.
 feature: Console
 role: Admin
 ---
@@ -10,7 +10,9 @@ role: Admin
 >
 >This patch is an update of the [MDVA-39305](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md) patch.
 
-The MDVA-39305-V3 patch fixes the issue where registered customers are not able to log in when [!DNL Google reCAPTCHA] is enabled. This patch was added in the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.48 release. It was updated in the QPT 1.1.58 release to include new Adobe Commerce versions 2.4.7 - 2.4.7-p4. The patch ID is MDVA-39305-V3. Please note that the issue was fixed in Adobe Commerce versions 2.4.4 and 2.4.7.
+The MDVA-39305-V3 patch fixes the issue where registered customers are not able to log in when [!DNL Google reCAPTCHA] is enabled. This patch also fixes the issue where a form can be submitted before [!DNL Google reCAPTCHA] fully loads. Additionally, it fixes the error *Call to a member function isDisabled() on null* when blocks are used in non-default locations on a CMS page.
+
+This patch was added in the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.48 release. It was updated in the QPT 1.1.58 release to include new Adobe Commerce versions 2.4.7 - 2.4.7-p4. The patch ID is MDVA-39305-V3. Please note that the issue was fixed in Adobe Commerce versions 2.4.4 and 2.4.7.
 
 ## Affected products and versions
 
@@ -28,7 +30,9 @@ The MDVA-39305-V3 patch fixes the issue where registered customers are not able 
 
 ## Issue
 
-Registered customers are not able to log in using the enabled [!DNL Google reCAPTCHA].
+1. Registered customers are not able to log in using the enabled [!DNL Google reCAPTCHA]. 
+1. A form can be submitted before [!DNL Google reCAPTCHA] fully loads. 
+1. An error is thrown stating *Call to a member function isDisabled() on null* when blocks are used in non-default locations on a CMS page.
 
 <u>Steps to reproduce</u>:
 
