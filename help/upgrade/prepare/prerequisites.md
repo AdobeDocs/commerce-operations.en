@@ -124,7 +124,7 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
       composer require magento/module-elasticsearch-8 --no-update
       ```
 
-   1. Then update the Elasticsearch 8 module and aws/aws-sdk-php packages:
+   1. Then update the Elasticsearch 8 module and `aws/aws-sdk-php` packages:
 
       ```bash
       composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
