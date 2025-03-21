@@ -53,6 +53,8 @@ To apply individual patches, use the following links depending on your deploymen
 
 ## Related reading
 
-To learn more about Quality Patches Tool, refer to:
+To learn more about [!DNL Quality Patches Tool], refer to:
+
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
 
 
