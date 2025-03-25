@@ -56,6 +56,59 @@ As of 2.4, MySQL is no longer a supported catalog search engine. You must instal
 
 Some third-party catalog search engines run on top of the Adobe Commerce search engine. Contact your vendor to determine whether you must update your extension.
 
+### MySQL 8.4 changes
+
+Adobe added support for MySQL 8.4 in the 2.4.8 release.
+This section describes major changes to MySQL 8.4 that developers should be aware of.
+
+#### Deprecated non-standard key
+
+The use of non-unique or partial keys as foreign keys is non-standard and is deprecated in MySQL 8.4. Beginning with MySQL 8.4.0, you must explicitly enable such keys by setting [`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) to `OFF`, or by starting the server with the `--skip-restrict-fk-on-non-standard-key` option.
+
+#### Upgrading from MySQL 8.0 ( or older versions )  to MySQL 8.4
+
+To properly upgrade MySQL from version 8.0 to version 8.4, you must follow these steps in order:
+
+1. Enable maintenance mode:
+
+   ```bash
+   bin/magento maintenance:enable
+   ```
+
+1. Make a database backup:
+
+   ```bash
+   bin/magento setup:backup --db
+   ```
+
+1. Upgrade MySQL to version 8.4.
+1. Set `restrict_fk_on_non_standard_key` to `OFF` in `[mysqld]` in the `my.cnf`  file.
+
+   ```bash
+   [mysqld]
+   restrict_fk_on_non_standard_key = OFF 
+   ```
+
+   >[!WARNING]
+   >
+   >If you do not change the value of `restrict_fk_on_non_standard_key` to `OFF`, you will get the following error during import:
+   >```sql
+   > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
+   >```
+1. Restart the MySQL server.
+1. Import the backed-up data into MySQL.
+1. Clean the cache:
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+1. Disable maintenance mode:
+
+   ```bash
+   bin/magento maintenance:disable
+   ```
+
 #### MariaDB
 
 {{$include /help/_includes/maria-db-config.md}}
