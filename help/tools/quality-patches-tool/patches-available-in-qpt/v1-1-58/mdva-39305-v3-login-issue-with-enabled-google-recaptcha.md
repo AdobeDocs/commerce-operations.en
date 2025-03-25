@@ -3,6 +3,7 @@ title: 'MDVA-39305-V3: Login issue with enabled [!DNL Google reCAPTCHA]'
 description: Apply the MDVA-39305-V3 patch to fix the Adobe Commerce issue where registered customers are not able to log in when [!DNL Google reCAPTCHA] is enabled. This patch also fixes the issue where a form can be submitted before [!DNL Google reCAPTCHA] fully loads. Additionally, it fixes the error *Call to a member function isDisabled() on null* when blocks are used in non-default locations on a CMS page.
 feature: Console
 role: Admin
+exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 ---
 # MDVA-39305-V3: Login issue with enabled [!DNL Google reCAPTCHA]
 
@@ -85,5 +86,3 @@ To apply individual patches, use the following links depending on your deploymen
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
-
