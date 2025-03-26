@@ -41,8 +41,8 @@ Fixes the issue where searching for pickup locations by zip code does not work p
     bin/magento inventory-geonames:import NL
     ```
 
-1. Add the product to **[!UICONTROL Cart]** and go to shipping step.
-1. Select [!UICONTROL Pickup] in **[!UICONTROL Store]** and Select other button to select other stores.
+1. Add the product to cart and go to shipping step.
+1. Select [!UICONTROL Pickup] in **[!UICONTROL Store]** and select the button to select other stores.
 1. Type *7311* or *7311AE* in the **[!UICONTROL Select Store model]**.
 
 
