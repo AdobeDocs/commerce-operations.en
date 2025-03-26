@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-64149: customer segment with a date range condition can be saved when only one of the dates is edited'
-description: Apply the ACSD-64149 patch to fix the Adobe Commerce issue where customer segment with a date range condition can be saved when only one of the dates is edited.
+title: 'ACSD-64149: customer segment with a **[!UICONTROL Date range]** condition can be saved when only one of the dates is edited'
+description: Apply the ACSD-64149 patch to fix the Adobe Commerce issue where customer segment with a **[!UICONTROL Date range]** condition can be saved when only one of the dates is edited.
 feature: Customers, Admin Workspace
 role: Admin, Developer
 ---
 
-# ACSD-64149: customer segment with a date range condition can be saved when only one of the dates is edited
+# ACSD-64149: customer segment with a **[!UICONTROL Date range]** condition can be saved when only one of the dates is edited
 
 The ACSD-64149 patch fixes the issue where customer segment with a date range condition can be saved when only one of the dates sssis edited. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64149. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -25,7 +25,7 @@ The ACSD-64149 patch fixes the issue where customer segment with a date range co
 
 ## Issue
 
-A customer segment with a date range condition can be saved when only one of the dates is edited.
+A customer segment with a **[!UICONTROL Date range]** condition can be saved when only one of the dates is edited.
 
 <u>Steps to reproduce</u>:
 
@@ -41,19 +41,19 @@ A customer segment with a date range condition can be saved when only one of the
 1. Enter a **[!UICONTROL Segment Name]**, select a website under **[!UICONTROL Assigned to Website]**, ensure the **[!UICONTROL Status]** is set to *Active*.
 1. Click **[!UICONTROL Save]** and **[!UICONTROL Continue Edit]**.
 1. Go to **[!UICONTROL Conditions]** tab and add a new Condition: *Products{} > {}Product List*{*}*.
-1. Add a subcondition for the **[!UICONTROL Date Range]**.
-1. Set a valid date range.
-1. Click the green confirmation button next to the date range.
-1. Click the date range again and select the date chooser.
+1. Add a subcondition for the **[!UICONTROL Date range]**.
+1. Set a valid **[!UICONTROL Date range]**.
+1. Click the green confirmation button next to the **[!UICONTROL Date range]**.
+1. Click the **[!UICONTROL Date range]** again and select the date chooser.
 1. Edit one of the date values and confirm by clicking the green button.
 
 <u>Expected results</u>:
 
-The DateRange selector should not add time to the date when editing.
+The **[!UICONTROL Date range]** selector should not add time to the date when editing.
 
 <u>Actual results</u>:
 
-* The Date Range selector adds time to the date:
+* The **[!UICONTROL Date range]** selector adds time to the date:
     * One of the dates only has the date, while the other has both the date and time specified.
 * The following error appears in the logs:
 
