@@ -226,7 +226,7 @@ We can now update custom-created order statuses, whereas previously, the status 
   * _Fix note_: Products Ordered report excport to CSV and XML now works as expected
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/88660e79>
 * _ACP2E-3457_: TinyMCE JS Error in console after Js minification enable with production mode
-  * _Fix note_: Previously, enabling JavaScript minification in production mode within the admin panel caused JavaScript errors related to TinyMCE 7 to appear in the browser console, affecting the functionality and user experience. Now, This issue has been resolved, ensuring that TinyMCE 7 operates smoothly without generating any errors, even when JS minification is enabled.
+  * _Fix note_: Previously, enabling JavaScript minification in production mode within the admin panel caused JavaScript errors related to TinyMCE 6 to appear in the browser console, affecting the functionality and user experience. Now, This issue has been resolved, ensuring that TinyMCE 6 operates smoothly without generating any errors, even when JS minification is enabled.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/56463d5e>
 * _ACP2E-3459_: Request for additional changes to fully complete the ACP2E-3375 fix
   * _Fix note_: &apos;-
