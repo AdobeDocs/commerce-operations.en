@@ -1,0 +1,153 @@
+Issue key,Summary,Custom field (Release Note),Custom field (External Issue URL),Custom field (Git Pull Request),Components,is_magento
+AC-10721,Upgrade the league/flysystem Composer dependencies upgrading to latest version,Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x,"",<https://github.com/magento/magento2/commit/91cb4d46>,Framework,true
+AC-10982,[2FA] Integrate with Duo Web SDK to support Universal Prompt,TBD,"","",Security,false
+AC-11041,Security Improvements for 2.4.8-beta1 from June 2024 release,"","","",Security,false
+AC-11420,Set indexers appear in Ready status default when new version of Adobe Commerce is installed,"After Installation Magento, Indexer's Status must be in *Ready* state by default.","",<https://github.com/magento/magento2/commit/71432aeb>,Other,true
+AC-11421,In existing Magento installation when install third party indexer module set indexers in update by schedule by default.,"All new indexers are by default in [Update by Schedule] mode. Previously, the default mode was [Update on Save]. Same with custom indexers as well.","",<https://github.com/magento/magento2/commit/71432aeb>,Other,true
+AC-11495,2.4.8-beta1 Platform Components Upgrade,"","","",Framework,false
+AC-11673,Investigate php-amqplib/php-amqplib latest versions,Updated the latest version php-amqplib/php-amqplib :^3.x,"",<https://github.com/magento/magento2/commit/de4dfb8e>,Framework,true
+AC-11723,Refactoring of Integration Test framework for phpunit 10 compatibility - IntegrationTest.php not found,PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.,"","",Framework,false
+AC-11813,WebApi Test framework for phpunit 10 compatibility - Issue related to RabbitMQ connectivity with SOAP and B2B modules,PHPUnit 9 is upgraded to PHPUnit 10 with Integration and WebAPI Test framework changes of Adobe Commerce. PHPUnit 10 changes are backward compatible.,"","",Framework,false
+AC-11816,Add compatibility with MySQL 8.4 LTS,"","","",Framework,false
+AC-11864,Security Improvements for 2.4.8-beta1 from August 2024 release,"","","",Security,false
+AC-11911,jQuery/fileuploader css cleanup after migration to uppy library,Removed jQuery/fileUploader library because it has been migrated to Uppy library,"",<https://github.com/magento/magento2/commit/7cabfb46>,Framework,true
+AC-11995,Add compatibility with MySQL 8.4 LTS for Magento CE,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework,true
+AC-12012,Update Nginx version from 1.24 to 1.26,"","","",Framework,false
+AC-12014,Mark elasticsearch 8 module as deprecated,"","","",Framework,false
+AC-12015,ExtJs folder cleanup after migration to jsTree library,Removed extJs folder as the related functionality has been migrated to jsTree,"",<https://github.com/magento/magento2/commit/7cabfb46>,Framework,true
+AC-12022,Upgrade monolog/monolog system dependency to the latest major version,"The system has been updated to use the latest major version of the ""monolog/monolog:^3.x"" library, ensuring compatibility and improved performance. Previously, the system was using an outdated version of the ""monolog/monolog"" library which could have led to potential issues and limitations.","",<https://github.com/magento/magento2/commit/edcd0dcc>,Framework,true
+AC-12023,Upgrade wikimedia/less.php dependency to the latest major version,"The system has been updated to use the latest major version 5.x of the ""wikimedia/less.php"" library, ensuring compatibility and up-to-date functionality. Previously, the system was using an outdated version of the library which could have led to security issues.","",<https://github.com/magento/magento2/commit/edcd0dcc>,Framework,true
+AC-12024,Upgrade jquery/validate library dependency to the latest minor version,Upgrade jquery/validate library dependency to the latest minor version 1.20.0,"",<https://github.com/magento/magento2/commit/de4dfb8e>,Framework,true
+AC-12025,Upgrade moment.js system dependency to the latest minor version,Upgrade moment.js system dependency to the latest minor version 2.30.1,"",<https://github.com/magento/magento2/commit/de4dfb8e>,Framework,true
+AC-12026,Add support for RabbitMQ 4,"","","",Framework,false
+AC-12027,Add support for Valkey 8.x,"","","",Framework,false
+AC-12028,Add compatibility with the latest Composer 2.8 version for 2.4.8 and 2.4.7,"","","",Framework,false
+AC-12029,Check compatibility with Varnish 7.6,"","","",Framework,false
+AC-12032,Add compatibility with MySQL 8.4 LTS for EE,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework,true
+AC-12034,Add compatibility with MySQL 8.4 LTS for B2B,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework,true
+AC-12074,Add compatibility with MySQL 8.4 LTS for bundle extensions,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework,true
+AC-12085,Add compatibility with MariaDB 11.4 LTS For CE,Added MariaDB 11.4 support with Adobe Commerce and extensions,"",<https://github.com/magento/magento2/commit/b34c0a75>,Framework,true
+AC-12133,Adobe Commerce 2.4.8 core code is compatible with PHP 8.4,"","","",Other,false
+AC-12165,Subscribers Optimisation - PhpUnit10,"","",<https://github.com/magento/magento2/commit/90e25b6b>,Framework,true
+AC-12267,Support connection retries for Redis session and compatible with colinmollenhour/php-redis-session-abstract v2.0.0,Updated latest version of colinmollenhour/php-redis-session-abstract v2.0.0 compatible with adobe commerce,"",<https://github.com/magento/magento2/commit/672a2e61>,Framework,true
+AC-12268,Upgrade league/flysystem Composer dependencies to latest version,Upgrade the 2.x league/flysystem Composer dependencies to latest version 3.x,"","",Framework,false
+AC-12346,Security Improvements for 2.4.8-beta1 from October 2024 release,"","","",Security,false
+AC-12480,Elasticsearch 7 and 8 options should come with Deprecated in Admin config.,Elasticsearch 8 option in Admin Config option will show with Deprecated text to inform users that Elasticsearch 8 is no longer recommended option to use.,"",<https://github.com/magento/magento2/commit/0611e750>,Other,true
+AC-12481,Add text note when Elasticsearch option is selected in Admin Configuration,A text note is added to let Adobe Commerce admin users know that elasticsearch is no longer supported by Adobe and is deprecated.,"",<https://github.com/magento/magento2/commit/0611e750>,Other,true
+AC-12576,Investigate the automation tests failures with MySQL 8.4 LTS,"","",<https://github.com/magento/magento2/commit/672a2e61>,Framework,true
+AC-12595,Add compatibility with MariaDB 11.4 LTS For EE,Added MariaDB 11.4 support with Adobe Commerce and extensions,"",<https://github.com/magento/magento2/commit/b34c0a75>,Framework,true
+AC-12693,Investigate on Data Migration tool (DMT) with MySQL 8.4 LTS,"","","",Framework,false
+AC-12715,Update laminas composer dependencies upgrading to latest version,"The system now supports the latest versions of laminas composer dependencies:
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validator
+ensuring compatibility and up-to-date functionality. Previously, updating to the latest versions of these dependencies could cause backward incompatibility issues and test failures.","",<https://github.com/magento/magento2/commit/b34c0a75>,Framework,true
+AC-12726,[2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7,"Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability","",<https://github.com/magento/magento2/commit/edcd0dcc>,UI Framework,true
+AC-12752,Add compatibility with MariaDB 11.4 LTS For Data Migration tool,Added MariaDB 11.4 support with Adobe Commerce and extensions,"","",Framework,false
+AC-12823,Investigate the unit test failure due to phpunit patch update during component upgrade,"","",<https://github.com/magento/magento2/commit/b34c0a75>,Framework,true
+AC-12825,[2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 Page Builder,"Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability","",<https://github.com/magento/magento2/commit/edcd0dcc>,UI Framework,true
+AC-12844,[2.4.8-beta1] TinyMCE 5 migration to TinyMCE 7 - Magento2-infra - banned words,"Migrated TinyMCE 5 to TinyMCE 7.3.0 to be a supported version for Adobe Commerce, previously system was using 5.10.2 which was out dated and reported security vulnerability","",<https://github.com/magento/magento2/commit/edcd0dcc>,UI Framework,true
+AC-12870,SVC and EAT tool compatibility with MariaDB 11.4,SVC and EAT tool compatibility with MariaDB 11.4,"","",Other,false
+AC-12876,UCT tool compatibility with MariaDB 11.4,"","","",Other,false
+AC-12897,SVC and EAT tool compatibility with MySQL 8.4,"","","",Framework,false
+AC-12898,UCT tool compatibility with MySQL 8.4,"The Upgrade Compatibility Tool (UCT) is now compatible with MySQL 8.4, ensuring smooth operation and compatibility checks for instances running on this version. Previously, the UCT tool was not tested and verified for compatibility with MySQL 8.4.","","",Framework,false
+AC-12901,Require.js upgrade to the latest version 2.3.7 (security vulnerability CVE-2024-38999),Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability,"",<https://github.com/magento/magento2/commit/b34c0a75>,UI Framework,true
+AC-12944,Remove TinyMCE 5 from adobe commerce,"","","",UI Framework,false
+AC-12970,PHPUnit 10 upgrade part 2 - Remove Deprecations,"Updated the phpunit/phpunit composer dependencies to compatible version - ""phpunit/phpunit"":""10.x""","","",Framework,false
+AC-12972,2.4.8-beta2 Core Quality Improvements,"","","",Other,false
+AC-13038,Remove PHP 8.1 from composer.json and all related support,"","","",Other,false
+AC-13076,[Part 1] - Update all js library and npm dependency with latest available version,composer version support was up to the composer version 2.2.x only. Now the support extended to 2.4.x version as well.,"",<https://github.com/magento/magento2/commit/19844aa0>,Framework,true
+AC-13077,All bundled extensions and integrated components are compatible with PHP 8.4,"","","",Framework,false
+AC-13078,All the Adobe Commerce tools are compatible with PHP 8.4,"","","",Framework,false
+AC-13079,All the Adobe Commerce project laminas/dependencies are compatible with PHP 8.4,"","","",Framework,false
+AC-13221,Incorporate the JWT ID (jti) into JWTs,"","","",Security,false
+AC-13222,Move HIPAA logging expansion into default EE,"","","",Security,false
+AC-13256,Downgrade TinyMCE dependency from version 7 to version 6.8.5,"","","",Framework,false
+AC-13276,PHP 8.4 deprecations require Adobe Commerce breaking changes,"","","",Framework,false
+AC-13371,Add support for the latest OpenSearch 2.19,"","","",Framework,false
+AC-13448,Deliver tier-price operations performance improvement patch into 2.4.8,"The system now allows for more efficient bulk updates of tier prices without causing performance issues or site unresponsiveness when using the ""/V1/products/tier-prices"" REST API endpoint. Previously, updating a large number of prices using this endpoint could result in performance issues and site unresponsiveness.","",<https://github.com/magento/magento2/commit/082d981c>,Other,true
+AC-13550,Remove all the Adobe confidential copyright notices from the Magento Open Source repositories,"All Adobe confidential copyright notices have been removed from the open source repositories, ensuring that only the reduced form of Adobe copyright is used. Previously, some files in the public repositories contained Adobe confidential copyright notices, which led to escalations from the community.",https://github.com/magento/magento2/issues/39493,<https://github.com/magento/magento2/commit/4bca5dfe>,Other,true
+AC-13571,Replacement of Laminas abandoned repos,"","","",Framework,false
+AC-13629,2.4.8 Core Quality Improvements,"","","",Other,false
+AC-13795,Make ES8 to be default for 2.4.8 instead of ES7,"","","",Other,false
+AC-6819,"Set indexers to ""Update by Schedule"" by default","","","",Install & Administer,false
+AC-8828,Set default collation to utf8mb4 for MySQL,"","","",Framework,false
+AC-9037,Ability to use Adobe copyright for Adobe Commerce source code,"","","",Test framework,false
+AC-9749,PHPUnit 10 upgrade,"Updated the phpunit/phpunit composer dependencies to compatible version - ""phpunit/phpunit"":""10.x""","","",Framework,false
+ACP2E-2709,[Feature Request] Customer suggests that Submit Comment Button on Order Details page is confusing and should be changed to something else,"In order to minimize the confusion, the ""Submit Comment"" button label changed to ""Update"" in the order detail page.","",<https://github.com/magento/magento2/commit/488c1034>,Order,true
+ACP2E-3368,UCT 3.0.19 Release,NA,"","",Other Developer Tools,false
+ACP2E-3420,UCT 3.0.20 Release,NA,"","",Other Developer Tools,false
+ACP2E-3683,UCT 3.0.21 Release,NA,"","",Other Developer Tools,false
+BUNDLE-3400,Remove Unsupported LPMs,"","","",Braintree,false
+BUNDLE-3401,Google Pay Mark,"","","",Braintree,false
+BUNDLE-3402,Apple Pay Mark,"","","",Braintree,false
+BUNDLE-3403,Google Pay Shipping Call Back,"","","",Braintree,false
+BUNDLE-3404,Pay Later Messaging,"","","",Braintree,false
+BUNDLE-3405,JS-SDK button,"","","",Braintree,false
+BUNDLE-3406,Optimise code within the Braintree extension,"","","",Braintree,false
+BUNDLE-3407,Update Braintree PHP and JS SDK,"","","",Braintree,false
+BUNDLE-3408,Line Items (GooglePay),"","","",Braintree,false
+BUNDLE-3409,Line Items (Apple Pay),"","","",Braintree,false
+BUNDLE-3420,Package Tracking,"","","",Braintree,false
+LYNX-319,401 and 403 HTTP response codes for GraphQL API,Improved GraphQL API security by ensuring that requests with expired customer tokens now return a 401 Unauthorized response instead of returning guest data. This change aligns with expected behavior for headless applications.,"","",Other,false
+LYNX-374,Document Email Confirmation via GraphQL,Added documentation for the implementation of email confirmation via GraphQL.,"","",Other,false
+LYNX-376,Document getting configurations for reCAPTCHA in GraphQL,"","","",Other,false
+LYNX-409,DB Query Optimizations for Update Cart Items Mutation,"Optimized database operations for the Update Cart Items mutation to reduce latency and improve performance. The number of database commits has been reduced from seven to a more efficient number through configuration and code changes, improving the overall performance of the operation.","","",Other,false
+LYNX-448,Update the API to support merging guest orders with the account associated with the same email,Updated the API to support merging guest orders with customer accounts when the email addresses match. Orders placed by guests are now automatically associated with the corresponding customer account upon registration or if an existing account with the same email is found.,"","",Other,false
+LYNX-449,"Include ""cart summary"" related fields in guestOrder/guestOrderByToken GQL","Enhanced the guestOrder and guestOrderByToken GraphQL responses to include missing cart summary-related fields for order confirmation. Introduced the OrderItemPrices type and added original_price and original_price_including_tax fields to both OrderItemPrices and CartItemPrices. The prices field now includes detailed pricing information, allowing the order confirmation page to display a more complete cart summary, including total quantity, item details, and pre-discount prices.","","",Other,false
+LYNX-450,"Include field ""is_virtual"" in ""CustomerOrder"" GQL type","Added the is_virtual field to the CustomerOrder GraphQL type, similar to the Cart type. This allows the customer to conditionally hide shipping information for orders containing only virtual products.","","",Other,false
+LYNX-451,Deliver Order Grand_Total Without Tax in CartPrices,"Added a new grand_total_excluding_tax field to the CartPrices GraphQL response. This field returns the total of the cart, including discounts, shipping, and other fees, excluding tax. The grand_total_excluding_tax is also available in the estimatedTotals mutation, providing an estimated order total without tax. This enhancement allows for more accurate cart summaries when the “Additionally Show Order Total Without Tax” option is enabled in the Store Config’s Shopping Cart Display Settings.","","",Other,false
+LYNX-458,Include custom address attributes in guestOrder and guestOrderByToken queries,"Updated the guestOrder and guestOrderByToken GraphQL queries to include custom address attributes. This ensures that addresses can be successfully created for guest users after sign-up on the order confirmation page, even when merchants have configured required custom address attributes.","","",Other,false
+LYNX-460,Bundle products does not show original price and the final price has no currency,"Fixed an issue where bundle products in the cart query did not display the original price, and the final price lacked currency information. The query response now includes the original price and adds the currency to bundle_options.values.price for accurate pricing details.","","",Other,false
+LYNX-468,add custom attributes in OrderAddress used in CustomerOrder GQL,"","","",Other,false
+LYNX-470,Implement order history filter based on created_at,Implemented an order history filter based on the created_at field and exposed date_of_first_order with the CustomerOrders type,"","",Other,false
+LYNX-476,Deliver available inventory amount in error message,"","","",Other,false
+LYNX-515,Implement possibility to create return as a guest user,"Added support for guest RMA requests in existing database tables by introducing the confirmation_key column and UNCONFIRMED status to track RMA confirmations. Guests must pass a token with the returnGuestRequest GraphQL API to create an RMA with an unconfirmed status, and use the confirmReturn GraphQL API with the confirmation key to confirm the return.","","",Other,false
+LYNX-519,Error codes for order cancellation,Mapped error codes with corresponding error messages for order cancellation.,"","",Other,false
+LYNX-521,GraphQL | cancelOrder mutation,"","","",Other,false
+LYNX-522,Add theme field to recaptchaV3Config query,Exposed theme field to the ReCaptchaConfigurationV3 type.,"","",Other,false
+LYNX-523,GraphQL: Provide available order actions,Exposed CustomerOrder.available_actions to display the available actions for an order.,"","",Other,false
+LYNX-524,GraphQL | Order Edit | Add Customer Information to Customer Order type,Exposed OrderCustomerInfo to the CustomerOrder type.,"","",Other,false
+LYNX-540,Add quantity to ProductInterface,Exposed quantity with ProductInterface and synchronized it with the product stock option-related configuration.,"","",Other,false
+LYNX-541,Introduce InsufficientStockError type,Introduced the InsufficientStockError type to manage errors when adding products to the cart due to insufficient stock.,"","",Other,false
+LYNX-542,Change updateCartItems mutation response,"Updated the updateCartItems mutation to return a success response with errors, instead of throwing exceptions.","","",Other,false
+LYNX-547,Insufficient and unavailable quantity notifications,Updated the notifications for insufficient and unavailable quantities,"","",Other,false
+LYNX-551,Add order status date tracking and API coverage,Exposed order_status_change_date with the Order GraphQL API to display order status change date,"","",Other,false
+LYNX-563,Add error code for decimal quantity in UpdateCartItems mutation response,"","","",Other,false
+LYNX-566,Add pagination to customer addresses GraphQL,"Introduced customer.addressesV2 in the customer query, adding pagination for customer addresses.","","",Other,false
+LYNX-568,Request order token for guest order cancellation,"Made the cancelOrder mutation accessible only to registered customers and introduced a new requestGuestOrderCancel mutation, which requires an order token (similar to the guestOrderByToken input).","","",Other,false
+LYNX-572,Documentation for added UNCONFIRMED status to the RMA (Returns),"Documentation updates added for Guest RMA, including details about Guest RMA GraphQL APIs and the newly added UNCONFIRMED status.
+GraphQL APIs: requestGuestReturn, confirmReturn.","","",Other,false
+LYNX-587,Expose Tax Display Settings via GraphQL,"Exposed Tax Display Settings via GraphQL for orders, invoices, credit memos, and related entities.","","",Other,false
+LYNX-598,Modify guest order token generation to use lastname instead of postcode,"Some countries consider the postcode optional. As a result, some guest users faced issues while fetching tokens during order placement or retrieving already placed orders using a token. Guest GraphQL APIs for fetching orders, requesting order cancellations, and requesting returns were modified by updating the token logic and using the last name instead of the postcode.","","",Other,false
+LYNX-617,extend cart and customerCart GQL queries to know if the shipping addresses and billing address are the same or not,"Extended the ShippingCartAddress GraphQL API to introduce the same_as_billing field, which indicates whether the shipping and billing addresses are the same.","","",Other,false
+LYNX-618,return identifier of the address book's address set on shipping/billing cart addresses for customerCart query,Extended CartAddressInterface to introduce an identifier for the address book in shipping or billing cart address.,"","",Other,false
+LYNX-621,Update logic to store guest RMA into existing tables and handle impacted areas,"","","",Other,false
+LYNX-622,Remove Order Edit related funcionality implemented in the scope of LYNX-482 and LYNX-483,"","","",Other,false
+LYNX-632,Inconsistency between attribute values in GraphQL queries and mutations,Updated the Return Request mutation for the RMA items input to resolve inconsistencies between the return attribute related query and mutation,"","",Other,false
+LYNX-633,Expose Tax Display Settings via GraphQL in a correct way,Refined the exposure of Tax Display Settings via GraphQL.,"","",Other,false
+LYNX-642,REORDER action in order.availableActions,REORDER action in order.availableActions updated as per store configuration,"","",Other,false
+LYNX-644,Update date format returned by OrderStatusChangeDate resolver,"Updated the OrderStatusChangeDate resolver to return the order status change date in the default format without additional reformatting, ensuring consistency across responses.","","",Other,false
+LYNX-685,Investigate  issues with B2B WebAPI Tests for Storefront-Compatibility Package,"","","",GraphQL,false
+LYNX-691,Gift Card - Extend customer.orders query,"Extended the customer.orders query to include the applied_gift_cards field, allowing retrieval of applied gift card data similar to applied_coupons. Now, customers can see gift card codes used in their orders via GraphQL.","","",Other,false
+LYNX-692,Gift Options - Fix issue with customer.orders query,Updated the customer.orders query to correctly process the gift_message field.,"","",Other,false
+LYNX-693,Gift Options - Extend cart query,Gift message and Gift wrapping exposed to GiftCardCartItem; updated logic to discard Gift wrapping for virtual products.,"","",Other,false
+LYNX-694,Gift Options - Extend products query,Enhanced the products query in GraphQL by adding gift_wrapping_available and gift_wrapping_price fields. The gift_wrapping_price is now returned as a price object for better consistency.,"","",Other,false
+LYNX-695,Gift Options - Extend storeConfig query,Extended the storeConfig query to include printed_card_priceV2 to return a price object instead of a string.,"","",Other,false
+LYNX-697,Deliver subtotals fields in placeOrder mutation,"Exposed OrderTotal.subtotal_excl_tax and OrderTotal.subtotal_incl_tax, while marking OrderTotal.subtotal as deprecated.","","",Other,false
+LYNX-698,Error when item in return is out of stock,"Fixed the issue where the customer.returns query returned an internal server error when an item in the return was out of stock. Now, product data is correctly returned, even if the item is out of stock, ensuring consistent response handling.","","",Other,false
+LYNX-701,Include store credit / reward points data to order payload,"Extended the CustomerOrder GraphQL interface to include store credit and reward points applied to the order totals. Now, the order payload returns the label and value for both store credit and reward points, ensuring complete cost summary details.","","",Other,false
+LYNX-713,Gift options pricing and taxes calculation,Extended the GiftOptionsPrices and OrderTotal interfaces in GraphQL to include both price_excluding_tax and price_including_tax for gift wrapping (per item and order) and printed cards. This enhancement ensures accurate tax display based on store configuration settings for both cart and order queries.,"","",Other,false
+LYNX-729,Provide top level customer group related information via GraphQL API,Added the customerGroup query to expose customer group-related information via the GraphQL API for guests and customers,"","",Other,false
+LYNX-730,Provide catalog rules related information via GraphQL API,"Added store configurations for catalog rule and the allCatalogRules query to list all available catalog rules, and exposed Product.rules to return the the applied catalog rules to current product","","",Other,false
+LYNX-731,Provide cart rules related information via GraphQL API,"Added GraphQL support for retrieving cart rule information. Introduced new store configurations to control exposure of all and applied cart rules, along with the allCartRules query and Cart.rules field for fetching active cart rules.","","",Other,false
+LYNX-732,Provide customer group related information via GraphQL API,"Added store configurations for customer group, the allCustomerGroups query to list all customer groups, and exposed Customer.group to return the current customer’s group.","","",Other,false
+LYNX-750,Correct GraphQL type name CustomerGroup -> customerGroup,Updated GraphQL type for customerGroup query,"","",Other,false
+LYNX-753,Deliver Terms & Conditions configuration in StoreConfig,"Added support for retrieving terms and conditions configuration settings via the StoreConfig GraphQL query.
+New Configurations Available:
+- Stores > Settings > Configuration > Checkout > Checkout Options > Enable Terms and Conditions
+These settings enable frontend applications to dynamically enable and configure terms and conditions by store view in checkout page.","","",Other,false
+LYNX-773,Provide customer segments related information via GraphQL API,Exposed customer segments related information via GraphQL APIs,"","",Other,false
+LYNX-781,Return only free payment method when the order total is 0,Updated the checkout process for GraphQl to display only the “Free” payment method when the order total is zero. This enhancement reduces shopper confusion and ensures a smoother purchasing experience.,"","",Other,false
+LYNX-788,Enhance Gift Options handling during cart merge,"Enhanced gift options handling during cart merges to ensure a more consistent user experience. Gift options now follow a prioritized merging logic, preventing unintended overrides when a guest user logs in and their cart is merged with an existing customer cart.","","",Other,false

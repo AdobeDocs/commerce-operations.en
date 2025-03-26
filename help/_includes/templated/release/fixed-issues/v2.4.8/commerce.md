@@ -248,7 +248,7 @@ We can now update custom-created order statuses, whereas previously, the status 
   * _Fix note_: Products Ordered report excport to CSV and XML now works as expected
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/88660e79>
 * _ACP2E-3457_: TinyMCE JS Error in console after Js minification enable with production mode
-  * _Fix note_: Previously, enabling JavaScript minification in production mode within the admin panel caused JavaScript errors related to TinyMCE 7 to appear in the browser console, affecting the functionality and user experience. Now, This issue has been resolved, ensuring that TinyMCE 7 operates smoothly without generating any errors, even when JS minification is enabled.
+  * _Fix note_: Previously, enabling JavaScript minification in production mode within the admin panel caused JavaScript errors related to TinyMCE 6 to appear in the browser console, affecting the functionality and user experience. Now, This issue has been resolved, ensuring that TinyMCE 6 operates smoothly without generating any errors, even when JS minification is enabled.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/56463d5e>
 * _ACP2E-3459_: Request for additional changes to fully complete the ACP2E-3375 fix
   * _Fix note_: &apos;-
@@ -395,24 +395,17 @@ Previously adding product to cart resulted in Error &apos;no such entity with id
 * _AC-14293_: Admin express checkout button is disabled.
 * _BUNDLE-3367_: Pay via LPM
   * _Fix note_: The system now correctly renders Local Payment Methods (LPM) on initial load, even when a logged-in customer&apos;s shipping and billing addresses do not match, ensuring a smooth checkout process. Previously, a mismatch between a customer&apos;s shipping and billing addresses would prevent LPM from rendering, causing potential disruptions during checkout.
-  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: Configurable with Virtual as Child Product
   * _Fix note_: The system now allows express payment methods for configurable products that have a virtual  child product, ensuring a smooth checkout process. Previously, express payment methods were not available when a configurable product with a virtual  child product was added to the cart.
-  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: CVV Verification failed error
-  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_: Vaulting Via the account Area Issues 247
   * _Fix note_: The system now allows customers to save new card or PayPal account information across multiple websites without encountering authorization errors. Previously, customers were unable to save new payment methods across different websites and were presented with an authorization error message.
-  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: Ship to an address from a different country
   * _Fix note_: The system now allows transactions to be processed without errors when shipping to an address from a different country, ensuring a smooth checkout process. Previously, attempting to ship to an address from a different country would result in console errors, despite no visible errors on the frontend.
-  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: Credit Card - Teardown function
   * _Fix note_: The system now correctly handles the teardown of Braintree PayPal components when a customer navigates back from the payment page to the shipping page, preventing any errors and ensuring that PayPal Express buttons render correctly. Previously, navigating back to the shipping page from the payment page sometimes resulted in an error when trying to teardown the Braintree PayPal components.
-  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_: Shipping Callback for PayPal Express
   * _Fix note_: The system now correctly displays available shipping methods in the PayPal Express modal, allowing customers to select their preferred shipping method before proceeding to the review page or completing their transaction. Previously, no shipping methods were available to select from in the PayPal Express modal, requiring customers to select a shipping method on a separate review page before they could complete their transaction.
-  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Bundle
 
@@ -1518,7 +1511,6 @@ Previously, assigned to the admin store instead of their respective store.
 * _BUNDLE-3394_: [Braintree] Refund online storing transaction as transactionid-refund
 * _BUNDLE-3421_: [Braintree] + [CLOUD] Braintree (credit card) orders unable to split the charges
 * _BUNDLE-3422_: [Braintree] [Cloud]Braintree SSL Certificate expire by June 30
-  * _GitHub code contribution_: <https://github.com/magento/ext-braintree/pull/211>, <https://github.com/magento/ext-braintree/pull/212>, <https://github.com/magento/ext-braintree/pull/213>, <https://github.com/magento/ext-braintree/pull/215>
 * _LYNX-339_: private_content_version cookie returned in GQL queries
   * _Fix note_: Fixed an issue where the private_content_version cookie was returned in GraphQL queries, even when the session cookie was disabled. The cookie is no longer included in GraphQL responses when the session is disabled, as expected.
 * _LYNX-366_: Server error on email props in physical gift card queries
