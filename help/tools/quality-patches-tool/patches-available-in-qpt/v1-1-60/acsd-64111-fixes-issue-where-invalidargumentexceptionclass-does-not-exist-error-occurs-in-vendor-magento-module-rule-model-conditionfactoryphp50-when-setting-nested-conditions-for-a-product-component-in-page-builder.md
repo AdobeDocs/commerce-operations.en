@@ -23,7 +23,7 @@ The ACSD-64112 patch fixes the issue where the error *InvalidArgumentException: 
 
 ## Issue
 
- An error *InvalidArgumentException: Class does not exist in /app/<project id>/vendor/magento/module-rule/Model/ConditionFactory.php* is thrown when adding a *Conditions Combination* in Page Builder Products widget condition.
+ An error *InvalidArgumentException: Class does not exist in /app/<project id\>/vendor/magento/module-rule/Model/ConditionFactory.php* is thrown when adding a *Conditions Combination* in Page Builder Products widget condition.
 
 <u>Steps to reproduce</u>:
 
