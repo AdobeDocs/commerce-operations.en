@@ -44,7 +44,7 @@ When editing an existing customer segment with a condition on products within th
 1. Add a subcondition for the **[!UICONTROL Date range]** and set a valid **[!UICONTROL Date range]**.
 1. Set a valid **[!UICONTROL Date range]**.
 1. Click the green confirmation button next to the **[!UICONTROL Date range]**.
-1. Click the **[!UICONTROL Date range]** again and select the date chooser.
+1. Click the **[!UICONTROL Date range]** again, select the date chooser, edit one of the date values, and confirm by clicking the green button.
 1. Edit one of the date values and confirm by clicking the green button.
 
 <u>Expected results</u>:
