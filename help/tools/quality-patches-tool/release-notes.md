@@ -22,7 +22,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-64523** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where it was possible to create new products without a name through the import process (admin or API), which would break the admin interface and result in invalid products.
 * **ACSD-64532** (for Adobe Commerce and Magento Open Source >=2.4.6-p2 <2.4.8) - Fixes the issue where an ENV variable set to "false" is treated as a string "false" instead of a boolean false.
 * **ACSD-64592** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the claim link from the email for a gift card in non-default stores always redirected the gift card claim to the default website.
-* **ACSD-65164** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where the error message \"Some of the selected item options are not currently available\" occurs when reordering a configurable product with a single selected checkbox custom option.
+* **ACSD-65164** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.8) - Fixes the issue where the error message *Some of the selected item options are not currently available* occurs when reordering a configurable product with a single selected checkbox custom option.
 * **ACSD-64732** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where 3rd party controllers were not cached correctly with customer segments.
 
 ## v1.1.61 {#v1-1-61}
