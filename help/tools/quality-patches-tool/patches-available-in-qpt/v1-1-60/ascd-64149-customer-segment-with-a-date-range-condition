@@ -41,7 +41,7 @@ When editing an existing customer segment with a condition on products within th
 1. Enter a **[!UICONTROL Segment Name]**, select a website under **[!UICONTROL Assigned to Website]**, and ensure the **[!UICONTROL Status]** is set to *Active*.
 1. Click **[!UICONTROL Save and Continue Edit]**.
 1. Go to the **[!UICONTROL Conditions]** tab and add a new Condition: *Products{} > {}Product List*{*}*.
-1. Add a subcondition for the **[!UICONTROL Date range]**.
+1. Add a subcondition for the **[!UICONTROL Date range]** and set a valid **[!UICONTROL Date range]**.
 1. Set a valid **[!UICONTROL Date range]**.
 1. Click the green confirmation button next to the **[!UICONTROL Date range]**.
 1. Click the **[!UICONTROL Date range]** again and select the date chooser.
