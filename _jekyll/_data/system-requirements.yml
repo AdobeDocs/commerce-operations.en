@@ -13,9 +13,9 @@
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
   Composer: '2.8'
-  Elasticsearch: '8.16'
+  Elasticsearch: '8.17'
   MariaDB: '11.4'
-  MySQL: '8.0'
+  MySQL: '8.4'
   nginx: '1.26'
   OpenSearch: '2.19'
   PHP: '8.4/8.3'
@@ -143,7 +143,7 @@
   MariaDB: '10.6'
   MySQL: '8.0'
   nginx: '1.26'
-  OpenSearch: 2.19 or latest available
+  OpenSearch: 2.19
   PHP: '8.2, 8.1'
   RabbitMQ: '3.13'
   Redis: '7.2'
