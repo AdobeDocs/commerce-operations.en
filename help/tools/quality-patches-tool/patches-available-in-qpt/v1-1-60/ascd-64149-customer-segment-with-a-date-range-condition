@@ -25,7 +25,7 @@ The ACSD-64149 patch fixes the issue where a customer segment with a date range 
 
 ## Issue
 
-A customer segment with a **[!UICONTROL Date range]** condition can be saved when only one of the dates is edited.
+When editing an existing customer segment with a condition on products within the shopping cart specified by a date range, the consumer `matchCustomerSegmentProcessor` fails with an SQL error.
 
 <u>Steps to reproduce</u>:
 
