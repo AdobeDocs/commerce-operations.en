@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-64111: Fixes an issue where an InvalidArgumentException: Class does not exist error occurs in vendor/magento/module-rule/Model/ConditionFactory.php:50 when setting nested conditions for a Product component in Page Builder'
+title: 'ACSD-64111: Fixes an issue where an *InvalidArgumentException: Class does not exist error* occurs in `vendor/magento/module-rule/Model/ConditionFactory.php:50` when setting nested conditions for a Product component in Page Builder'
 feature: Products, Page Builder
 role: Admin, Developer
 ---
-# ACSD-64111: Fixes an issue where an InvalidArgumentException: Class does not exist error occurs in vendor/magento/module-rule/Model/ConditionFactory.php:50 when setting nested conditions for a Product component in Page Builder
+# ACSD-64111: Fixes an issue where an *InvalidArgumentException: Class does not exist error* occurs in `vendor/magento/module-rule/Model/ConditionFactory.php:50` when setting nested conditions for a Product component in Page Builder
 
-The ACSD-64112 patch fixes the issue where the error *InvalidArgumentException: Class does not exist error occurs in vendor/magento/module-rule/Model/ConditionFactory.php:50* when setting nested conditions for a Product component in Page Builder. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64111. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64112 patch fixes the issue where the error *InvalidArgumentException: Class does not exist* error occurs in `vendor/magento/module-rule/Model/ConditionFactory.php:50*` when setting nested conditions for a Product component in Page Builder. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64111. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -28,7 +28,7 @@ The ACSD-64112 patch fixes the issue where the error *InvalidArgumentException: 
 <u>Steps to reproduce</u>:
 
 1. Log in to the Commerce admin.
-1. Go to **[!UICONTROL Content]** > [!UICONTROL Elements] > **[!UICONTROL Pages]**.
+1. Go to **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]**.
 1. Add a new page (or edit an existing page).
 1. Expand the content and click on  **[!UICONTROL Edit with Page Builder]**.
 1. Add a new row and then the  **[!UICONTROL Products]** widget.
