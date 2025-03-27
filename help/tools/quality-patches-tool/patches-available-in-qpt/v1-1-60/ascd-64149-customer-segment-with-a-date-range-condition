@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-64149: customer segment with a **[!UICONTROL Date range]** condition can be saved when only one of the dates is edited'
+title: 'ACSD-64149: Customer segment with a [!UICONTROL Date range] condition can be saved when only one date is edited'
 description: Apply the ACSD-64149 patch to fix the Adobe Commerce issue where customer segment with a **[!UICONTROL Date range]** condition can be saved when only one of the dates is edited.
 feature: Customers, Admin Workspace
 role: Admin, Developer
