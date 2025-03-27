@@ -17,7 +17,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.62 {#v1-1-62}
 
-* **ACSD-63406** (for Adobe Commerce and Magento Open Source >=2.4.4-p9 <2.4.5 || >=2.4.5-p8 <2.4.6 || >=2.4.6-p6 <2.4.8) - Fixes the issue where expired persistent quotes are not cleared by any cron job when the 'persistent_clear_expired' cron job runs.
+* **ACSD-63406** (for Adobe Commerce and Magento Open Source >=2.4.4-p9 <2.4.5 || >=2.4.5-p8 <2.4.6 || >=2.4.6-p6 <2.4.8) - Fixes the issue where expired persistent quotes are not cleared by any cron job when the `persistent_clear_expired` cron job runs.
 * **ACSD-63520** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where images added through Configurations in the admin panel do not adhere to the maximum upload size limit.
 * **ACSD-64523** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where it was possible to create new products without a name through the import process (admin or API), which would break the admin interface and result in invalid products.
 * **ACSD-64532** (for Adobe Commerce and Magento Open Source >=2.4.6-p2 <2.4.8) - Fixes the issue where an ENV variable set to "false" is treated as a string \"false\" instead of a boolean false.
