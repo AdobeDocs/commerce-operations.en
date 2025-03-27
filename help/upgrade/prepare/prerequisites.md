@@ -141,6 +141,10 @@ OpenSearch requires JDK 1.8 or higher. See [Install the Java Software Developmen
 
 Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The following instructions show an example of upgrading Elasticsearch from 7.x to 8.x:
 
+>[!NOTE]
+>
+>In the upcoming 2.4.8 release, these steps won't be necessary because the Elasticsearch 8 module is included by default and you won't need to install it separately.
+
 1. Upgrade the Elasticsearch 7.x server to 8.x and make sure that is is up and running. See the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 1. Enable the `id_field_data` field by adding the following configuration to your `elasticsearch.yml` file and restarting the Elasticsearch 8.x service. 
@@ -160,6 +164,28 @@ Support for Elasticsearch 8.x was introduced in Adobe Commerce 2.4.6. The follow
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
+
+   If you encounter a dependency error for `psr/http-message`, click to expand the following troubleshooting section:
+   
+   +++Troubleshooting
+
+   If you encounter dependency conflicts while installing Elasticsearch 8, particularly with `psr/http-message`, you can resolve this by following these steps:
+
+   1. First, require the Elasticsearch 8 module without updating other dependencies:
+
+      ```bash
+      composer require magento/module-elasticsearch-8 --no-update
+      ```
+
+   1. Then update the Elasticsearch 8 module and `aws/aws-sdk-php` packages:
+
+      ```bash
+      composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
+      ```
+
+   This approach works for 2.4.7-p4 with PHP 8.3. The issue occurs because `aws/aws-sdk-php` requires `psr/http-message >= 2.0`, which can cause conflicts. The above steps help resolve these dependency issues.
+
+   +++
 
 1. Update your project components.
 

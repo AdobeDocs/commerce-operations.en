@@ -51,6 +51,17 @@
           </td>
       </tr>
       <tr>
+          <td>Adobe Experience Manager Assets Integration for Commerce</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Release Notes</a><br/>
+          </td>
+      </tr>
+      <tr>
           <td>B2B</td>
           <td>1.5.2</td>
           <td>1.5+<br /> 1.4+</td>
