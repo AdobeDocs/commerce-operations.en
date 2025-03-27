@@ -29,7 +29,7 @@ When editing an existing customer segment with a condition on products within th
 
 <u>Steps to reproduce</u>:
 
-1. Ensure that the consumer `matchCustomerSegmentProcessor` is running.
+1. Ensure that the consumer `matchCustomerSegmentProcessor` is running:
 
     ```bash
     $ bin/magento que:cons:st matchCustomerSegmentProcessor
@@ -42,10 +42,8 @@ When editing an existing customer segment with a condition on products within th
 1. Click **[!UICONTROL Save and Continue Edit]**.
 1. Go to the **[!UICONTROL Conditions]** tab and add a new Condition: *Products{} > {}Product List*{*}*.
 1. Add a subcondition for the **[!UICONTROL Date range]** and set a valid **[!UICONTROL Date range]**.
-1. Set a valid **[!UICONTROL Date range]**.
 1. Click the green confirmation button next to the **[!UICONTROL Date range]**.
 1. Click the **[!UICONTROL Date range]** again, select the date chooser, edit one of the date values, and confirm by clicking the green button.
-1. Edit one of the date values and confirm by clicking the green button.
 
 <u>Expected results</u>:
 
