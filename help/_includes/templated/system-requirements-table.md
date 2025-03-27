@@ -23,7 +23,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.16
+            8.17
       </td>
     </tr>
     <tr>
@@ -41,7 +41,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-            8.0
+            8.4
       </td>
     </tr>
     <tr>
@@ -589,7 +589,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2.19 or latest available
+            2.19
       </td>
       <td>
             2.12
