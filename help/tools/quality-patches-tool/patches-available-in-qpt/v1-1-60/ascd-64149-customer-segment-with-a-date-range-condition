@@ -54,7 +54,7 @@ The **[!UICONTROL Date range]** selector should not add time to the date when ed
 <u>Actual results</u>:
 
 * The **[!UICONTROL Date range]** selector adds time to the date:
-    * One of the dates only has the date, while the other has both the date and time specified.
+    * One date only has the date, while the other has both the date and time specified.
 * The following error appears in the logs:
 
     ```
