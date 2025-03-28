@@ -3,8 +3,8 @@ title: 'ACSD-63992: [!UICONTROL Cart Price Rule] with coupon and shipping method
 description: Apply the ACSD-63992 patch to fix the Adobe Commerce issue where the [!UICONTROL Cart Price Rule] with a coupon and a condition based on a shipping method can't be correctly applied through the Admin UI.
 feature: Price Rules, Admin Workspace
 role: Admin, Developer
+exl-id: 80f407c7-4552-4cfb-96ae-43773d2ec398
 ---
-
 # ACSD-63992: [!UICONTROL Cart Price Rule] with coupon and shipping method condition error in Admin UI
 
 The ACSD-63992 patch fixes the issue where the [!UICONTROL Cart Price Rule] with a coupon and a condition based on a shipping method can't be correctly applied through the Admin UI. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-63992. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
