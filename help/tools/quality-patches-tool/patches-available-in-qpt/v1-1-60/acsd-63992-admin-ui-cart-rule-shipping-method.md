@@ -32,7 +32,7 @@ _The <> coupon code isn't valid. Verify the code and try again._
 <u>Steps to reproduce</u>:
 
 1. Create a cart price rule and describe its conditions:
-    * Under *[!UICONTROL Conditions]*: Add a condition to include the shipping method (e.g., *[!UICONTROL Flat Rate]*).
+    * Under *[!UICONTROL Conditions]*: Add a condition to include the shipping method (for example, *[!UICONTROL Flat Rate]*).
     * Under *[!UICONTROL Rule Information]*: Set **[!UICONTROL Coupon]** to *[!UICONTROL Specific Coupon]* and then enter **[!UICONTROL Coupon Code]** as *TEST*.
 1. Create a new order from the Admin Panel and enter the coupon code *TEST* in the **[!UICONTROL Apply Coupon]** field.
 
