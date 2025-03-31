@@ -87,7 +87,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL New Relic Cloud]</span></td>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
             10.15.004+, 10.7.0.319+
       </td>
@@ -313,7 +313,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL New Relic Cloud]</span></td>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
             10.7.0.319+, 9.19.0.309+
       </td>
@@ -625,7 +625,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL New Relic Cloud]</span></td>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
             9.19.0.309+
       </td>
@@ -974,7 +974,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL New Relic Cloud]</span></td>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
             9.19.0.309+
       </td>
@@ -1179,7 +1179,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL New Relic Cloud]</span></td>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
           --
       </td>
@@ -1240,7 +1240,7 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL New Relic Cloud]</span></td>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
           --
       </td>
