@@ -15,7 +15,7 @@
   Elasticsearch: '8.16'
   MariaDB: '10.6'
   MySQL: '8.0'
-  New Relic Cloud: '10.15.04+, 10.7.0.319+'
+  New Relic Cloud: '10.15.0.4+, 10.7.0.319+'
   nginx: '1.26'
   OpenSearch: '2.12'
   OpenSearch Cloud: '2'
