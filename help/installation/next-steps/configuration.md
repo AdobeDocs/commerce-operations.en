@@ -57,7 +57,7 @@ For more information, see one of the following:
 >
 >The following availability information applies to Adobe Commerce on Cloud Infrastructure projects:
 >
->* Starter envrionments do not have log rotation.
+>* Starter environments do not have log rotation.
 >
 >* You cannot configure log rotation on Pro Integration environments. You must implement a custom solution/script and [configure your cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) to run the script as needed.
 
