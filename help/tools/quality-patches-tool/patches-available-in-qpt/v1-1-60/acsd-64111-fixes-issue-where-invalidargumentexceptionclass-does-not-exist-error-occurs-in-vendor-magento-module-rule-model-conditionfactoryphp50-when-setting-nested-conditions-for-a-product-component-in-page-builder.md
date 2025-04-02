@@ -31,7 +31,7 @@ An error *InvalidArgumentException: Class does not exist in /app/<project id\>/v
 1. Go to **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]**.
 1. Add a new page (or edit an existing page).
 1. Expand the [!UICONTROL Content] section and click **[!UICONTROL Edit with Page Builder]**.
-1. Add a new row and then the  **[!UICONTROL Products]** widget.
+1. Add a new row and then the **[!UICONTROL Products]** widget.
 1. Configure the **[!UICONTROL Products]** widget.
 1. Select the **[!UICONTROL  Condition]** under **[!UICONTROL Select Products By]**.
 1. Add a new condition and select **[!UICONTROL Conditions Combination]** from the dropdown.
