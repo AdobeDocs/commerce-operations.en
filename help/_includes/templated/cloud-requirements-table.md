@@ -87,6 +87,24 @@
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            10.15.0.4+, 10.7.0.319+
+      </td>
+      <td>
+            10.15.0.4+, 10.7.0.319+
+      </td>
+      <td>
+            10.15.0.4+, 10.7.0.319+
+      </td>
+      <td>
+            10.15.0.4+, 10.7.0.319+
+      </td>
+      <td>
+            10.15.0.4+, 10.7.0.319+
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
             8.3, 8.2
@@ -292,6 +310,39 @@
       </td>
       <td>
             10.6
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
       </td>
     </tr>
     <tr>
@@ -571,6 +622,45 @@
       </td>
       <td>
             10.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
       </td>
     </tr>
     <tr>
@@ -884,6 +974,48 @@
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
             8.1
@@ -1047,6 +1179,12 @@
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
             7.4
@@ -1099,6 +1237,12 @@
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
             10.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          --
       </td>
     </tr>
     <tr>
