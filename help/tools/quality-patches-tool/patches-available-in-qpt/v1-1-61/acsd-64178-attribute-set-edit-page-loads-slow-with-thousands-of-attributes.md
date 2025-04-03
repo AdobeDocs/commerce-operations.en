@@ -4,7 +4,7 @@ description: Apply the ACSD-64178 patch to fix the Adobe Commerce issue where th
 feature: Catalog Management
 role: Admin, Developer
 ---
-# ACSD-64178: **[!UICONTROL Edit Attribute Set]** page loads slowly with thousands of product attributes
+# ACSD-64178: [!UICONTROL Edit Attribute Set] page loads slowly with thousands of product attributes
 
 The ACSD-64178 patch fixes the issue where the **[!UICONTROL Edit Attribute Set]** page loads slowly if there are thousands of product attributes. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64178. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
