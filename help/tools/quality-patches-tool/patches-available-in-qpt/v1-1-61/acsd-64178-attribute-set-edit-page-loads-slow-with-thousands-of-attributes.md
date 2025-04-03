@@ -3,6 +3,7 @@ title: 'ACSD-64178: [!UICONTROL Edit Attribute Set] page loads slowly with thous
 description: Apply the ACSD-64178 patch to fix the Adobe Commerce issue where the [!UICONTROL Edit Attribute Set] page loads slowly if there are thousands of product attributes.
 feature: Catalog Management
 role: Admin, Developer
+exl-id: 959d825d-1b7b-49f0-b49f-64e149106e91
 ---
 # ACSD-64178: [!UICONTROL Edit Attribute Set] page loads slowly with thousands of product attributes
 
