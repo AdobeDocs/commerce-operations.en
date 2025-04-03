@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # ACSD-63883: Fixing incorrect `items_count` in [!DNL GraphQL] response for [!UICONTROL Requisition List]
 
-The ACSD-63883 patch fixes the issue where the **[!UICONTROL Requisition List]** returns an incorrect `items_count` in the [!DNL GraphQL] response. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-63883. Please note that this issue was fixed in Adobe Commerce B2B 1.5.3.
+The ACSD-63883 patch fixes the issue where the **[!UICONTROL Requisition List]** returns an incorrect `items_count` in the [!DNL GraphQL] response. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-63883. Please note that the issue is scheduled to be fixed in Adobe Commerce B2B 1.5.3.
 
 ## Affected products and versions
 
@@ -29,11 +29,11 @@ The **[!UICONTROL Requisition List]** returns an incorrect `items_count` in the 
 
 <u>Steps to reproduce</u>:
 
-1. Enable B2B **[!UICONTROL Requisition List]** feature.
-1. Create few products.
-1. Create customer account.
+1. Enable the B2B **[!UICONTROL Requisition List]** feature.
+1. Create a few products.
+1. Create a customer account.
 1. Click **[!UICONTROL Create new Requisition List]**.
-1. Send `addProductsToRequisitionList` [!DNL GraphQL] mutation request with a product to add the product to the [!UICONTROL Requisition List].
+1. Send the `addProductsToRequisitionList` [!DNL GraphQL] mutation request with a product to add it to the [!UICONTROL Requisition List].
 
     ```
     mutation addProductsToRequisitionList(
@@ -50,8 +50,8 @@ The **[!UICONTROL Requisition List]** returns an incorrect `items_count` in the 
     }
     ```
 
-1. Send `addProductsToRequisitionList` [!DNL GraphQL] mutation request with 3 other products to add them to [!UICONTROL Requisition List].
-1. Check `items_count` in the response.
+1. Send the `addProductsToRequisitionList` [!DNL GraphQL] mutation request with three other products to add them to the [!UICONTROL Requisition List].
+1. Check the `items_count` in the response.
 
 **Expected results**: 
 
