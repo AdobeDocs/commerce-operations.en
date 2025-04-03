@@ -29,7 +29,7 @@ The **[!UICONTROL Edit Attribute Set]** page loads slowly if there are thousands
 <u>Steps to reproduce</u>:
 
 1. Create at least 4200 attributes unassigned to any of the attribute sets.
-1. On the Admin sidebar, go to **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** and edit any attribute set.
+1. On the Admin sidebar, go to **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Attribute Set]**. Click on any attribute set to edit.
 
 <u>Expected results</u>: 
 
