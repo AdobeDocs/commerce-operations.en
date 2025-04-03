@@ -11,7 +11,7 @@ role: Admin, Developer
 >
 >This patch replaces the [ACSD-62689](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets.md) for versions 2.4.7 and above.
 
-The ACP2E-3689 patch fixes multiple issues with category tree display on more than depth four nesting and reflecting anchor/non-anchor relationships. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACP2E-3689. Please note that the issue is scheduled to be fixed in Adobe Commerce xxx.
+The ACP2E-3689 patch fixes multiple issues with category tree display on more than depth four nesting and reflecting anchor/non-anchor relationships. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACP2E-3689. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
