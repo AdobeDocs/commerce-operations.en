@@ -2,6 +2,7 @@
 title: 'ACSD-64111: Fixes an issue where an *InvalidArgumentException: Class does not exist error* occurs in `vendor/magento/module-rule/Model/ConditionFactory.php:50` when setting nested conditions for a Product component in [!DNL Page Builder]'
 feature: Products, Page Builder
 role: Admin, Developer
+exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
 ---
 # ACSD-64111: Fixes an issue where an *InvalidArgumentException: Class does not exist error* occurs in `vendor/magento/module-rule/Model/ConditionFactory.php:50` when setting nested conditions for a Product component in [!DNL Page Builder]
 
