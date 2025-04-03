@@ -762,7 +762,7 @@ feature: Configuration
         - v1.1.61 {#v1-1-61}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)  
            - [ACSD-64178: [!UICONTROL Edit Attribute Set] page loads slowly with thousands of product attributes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
-           - [ACSD-63883: Fixing incorrect `items_count` in [!DNL GraphQL] response for [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
+           - [ACSD-63883: Fixing incorrect items_count in [!DNL GraphQL] response for [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
