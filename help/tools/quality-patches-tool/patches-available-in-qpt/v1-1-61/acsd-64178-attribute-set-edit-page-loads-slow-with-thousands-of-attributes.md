@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-64178: Attribute set edit page loads slowly with thousands of product attributes'
-description: Apply the ACSD-64178 patch to fix the Adobe Commerce issue where the attribute set edit page loads slowly if there are thousands of product attributes.
+title: 'ACSD-64178: [!UICONTROL Edit Attribute Set] page loads slowly with thousands of product attributes'
+description: Apply the ACSD-64178 patch to fix the Adobe Commerce issue where the [!UICONTROL Edit Attribute Set] page loads slowly if there are thousands of product attributes.
 feature: Catalog Management
 role: Admin, Developer
 ---
-# ACSD-64178: Attribute set edit page loads slowly with thousands of product attributes
+# ACSD-64178: **[!UICONTROL Edit Attribute Set]** page loads slowly with thousands of product attributes
 
-The ACSD-64178 patch fixes the issue where the attribute set edit page loads slowly if there are thousands of product attributes. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64178. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64178 patch fixes the issue where the **[!UICONTROL Edit Attribute Set]** page loads slowly if there are thousands of product attributes. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64178. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 2.4.7-p2
+* Adobe Commerce (all deployment methods) 2.4.7-p4
 
 **Compatible with Adobe Commerce versions:**
 
@@ -24,31 +24,20 @@ The ACSD-64178 patch fixes the issue where the attribute set edit page loads slo
 
 ## Issue
 
-Fixes the issue where the **[!UICONTROL Select All]** option doesn't work in Admin > **[!UICONTROL Categories]** > choose a category >  **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**. It also helps pagination and the record count label to function correctly when adding products to a category via the popup grid.
-
+The **[!UICONTROL Edit Attribute Set]** page loads slowly if there are thousands of product attributes.
 
 <u>Steps to reproduce</u>:
 
-1. Generate *1200* products using the command:
+1. Create at least 4200 attributes unassigned to any of the attribute sets.
+1. On the Admin sidebar, go to **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** and edit any attribute set.
 
-   ```bash
-   bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
-   ```
+<u>Expected results</u>: 
 
-1. Open **[!UICONTROL Catalog]** > **[!UICONTROL Products]** and see the number of products: *1200* records found.
-1. Open a Default Category > **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**.
-1. Click on **[!UICONTROL Assign]** > **[!UICONTROL Select All]**.
-1. Change the number of products on the page to value = *5*.
+The page loads in a reasonable time.
 
+<u>Actual results</u>:
 
-**Expected results**: 
-
-*The message should be: 1200 records found (1200 selected)*
-
-**Actual results**:
-
-* Pagination doesn't work.
-* The wrong message is shown: *5* records found (*20* selected)
+It takes several minutes to load the page.
 
 ## Apply the patch
 
