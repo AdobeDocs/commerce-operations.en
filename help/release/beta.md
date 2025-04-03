@@ -73,15 +73,6 @@ This integration accelerator for IBM Sterling Order Management enables Adobe Com
 
 To participate in this beta, send an email request to [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Data Connection & Audience Activation (Public Beta)
-
-Expanded data sharing between Adobe Commerce & Adobe Experience Platform to drive more powerful personalized experiences. This capability enables merchants to:
-
-- Share Commerce customer profiles
-- Create custom attributes
-
-To participate in this beta, send an email request to [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
 ### Adobe Commerce Foundation (Public Beta)
 
 Each Adobe Commerce Foundation beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
@@ -103,7 +94,6 @@ Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.
 - `2.4.7-beta2`
 
 See the [release schedule](schedule.md) for the list of upcoming public beta release dates.
-
 
 #### Beta release access
 
