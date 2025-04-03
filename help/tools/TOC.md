@@ -761,6 +761,7 @@ feature: Configuration
            - [ACSD-63992: [!UICONTROL Cart Price Rule] with coupon and shipping method condition error in Admin UI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
         - v1.1.61 {#v1-1-61}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)  
+           - [ACSD-64178: [!UICONTROL Edit Attribute Set] page loads slowly with thousands of product attributes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
