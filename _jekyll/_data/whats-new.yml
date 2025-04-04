@@ -2,8 +2,173 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Mar 4 02:38:00 2025
+updated: Fri Apr 4 20:58:03 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACP2E-3689
+    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships)
+  versions: ''
+  type: new-topic
+  date: April 4, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1270
+  merge_commit: cb678a54cb8dcd6e9443ef2c8be4a73b4b901921
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64111
+    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder)
+  versions: ''
+  type: new-topic
+  date: April 3, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1254
+  merge_commit: 8e50457a21fa17c59523e28e5ff50b1d4dd0d9f9
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added New Relic to the [cloud system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    table.
+  versions: ''
+  type: technical
+  date: April 1, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1264
+  merge_commit: 8241f034529ca5be821ed9768fce391c16efacbc
+  contributor: jmatthew
+  membership: false
+  labels:
+  - technical
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview)
+  versions: ''
+  type: new-topic
+  date: April 1, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1269
+  merge_commit: bf9c698e5b0fa81bc2b10e97270d9cbe38ab9c37
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63992
+    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method)
+  versions: ''
+  type: new-topic
+  date: March 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1255
+  merge_commit: 8d0b38999c1d317098bd20098f042f1a78e8faeb
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview)
+  versions: ''
+  type: new-topic
+  date: March 25, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1252
+  merge_commit: dca8a509796fb6c81e338000f771cc5fe3fea81c
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added a troubleshooting section to the [search engine preparation](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#search-engine)
+    instructions.
+  versions: ''
+  type: technical
+  date: March 25, 2025
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/149
+  merge_commit: 81a16e89892b2630d6571703047376b56f1a08f4
+  contributor: jeff-matthews
+  membership: false
+  labels:
+  - internal
+  - technical
+- description: Added the [detailed description of the issue fixed by the MDVA-39305-V3
+    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha)
+  versions: ''
+  type: new-topic
+  date: March 21, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1205
+  merge_commit: d7440a2239d2252920576f1f851d27c8f3a6ef5d
+  contributor: glo16760
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Updated [availability table](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)
+    with latest Catalog Service version, v1.32.
+  versions: ''
+  type: technical
+  date: March 20, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1245
+  merge_commit: 8dea781eaaeb52efad65cbc522bb779b3929c4e6
+  contributor: meker
+  membership: false
+  labels:
+  - maintenance
+  - technical
+- description: Changed the supported version of OpenSearch for Adobe Commerce on Cloud
+    projects in the [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    to the corresponding major version for each release line. This aligns with the
+    support process when customers request service version updates.
+  versions: ''
+  type: technical
+  date: March 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1230
+  merge_commit: e1a681a66014e70d9e41fd98ea0b2bbca1377d9d
+  contributor: jmatthew
+  membership: false
+  labels:
+  - technical
+- description: Migrated the [Managed alerts for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
+    due to the migration of Commerce Knowledge base:<br/>- [Memory warning alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert)<br/>-
+    [Redis memory warning alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)<br/>-
+    [Redis memory critical alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)<br/>-
+    [Disk warning alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)<br/>-
+    [Disk critical alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert)<br/>-
+    [CPU critical alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert)<br/>-
+    [Memory critical alert](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-memory-critical-alert)<br/>-
+    [Apdex critical alert](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-critical-alert)<br/>-
+    [MariaDB alerts](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-mariadb-alerts)<br/>-
+    [CPU warning alert](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-cpu-warning-alert)<br/>-
+    [Apdex warning alert](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert)
+  versions: ''
+  type: new-topic
+  date: March 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1203
+  merge_commit: c265c6348697c5a07f5990a5e2ffeba9d4dfe358
+  contributor: barnato
+  membership: false
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-63572
+    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated)
+  versions: ''
+  type: new-topic
+  date: March 6, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1195
+  merge_commit: 862a248bee86d4ceed05b0ce3a3d072c3542d6b3
+  contributor: glo16760
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63469
+    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly).
+  versions: ''
+  type: new-topic
+  date: March 5, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1222
+  merge_commit: dab020c6b176717a38b5a81a8710217b0feab0eb
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [detailed description of the issue fixed by the ACSD-64212
     patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account)
   versions: ''
