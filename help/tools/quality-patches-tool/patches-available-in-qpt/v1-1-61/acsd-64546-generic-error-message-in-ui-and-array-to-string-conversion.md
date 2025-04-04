@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-64546: Fixes the issue where a generic error message shows up in the UI and an Array to string conversion exception occurs during UPS label creation'
+title: 'ACSD-64546: Generic error message in UI and Array to string conversion exception during UPS label creation'
 description: Apply the ACSD-64546 patch to fix the issue where a generic error message appears in the UI and an Array to string conversion exception is logged during UPS label creation, ensuring the correct error is shown in the UI and logs.
 feature: Shipping/Delivery
 role: Admin, Developer
 ---
 
-# ACSD-64546: Fixes the issue where a generic error message shows up in the UI and an Array to string conversion exception occurs during UPS label creation
+# ACSD-64546: Generic error message in UI and *Array to string conversion* exception during UPS label creation
 
 The ACSD-64546 patch fixes the issue where a generic error message appears in the UI and an *Array to string conversion* exception is logged during UPS label creation, ensuring the correct error is shown in the UI and logs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64546. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -37,9 +37,9 @@ A generic error message shows up in the UI and an *Array to string conversion* e
 1. Open the created order in the **[!UICONTROL Admin]**.
 1. Create a new shipment.
     1. Select the **[!UICONTROL Create Shipping Label]** checkbox.
-    2. Click **[!UICONTROL Submit shipment]**.
-    3. Add the product to a package. Specify the package size (Length, Width, and Height).
-    4. Click **[!UICONTROL Save]**.
+    1. Click **[!UICONTROL Submit shipment]**.
+    1. Add the product to a package. Specify the package size (Length, Width, and Height).
+    1. Click **[!UICONTROL Save]**.
 
 **Expected results:**
 
@@ -47,10 +47,9 @@ An actual error message is displayed in UI or in logs.
 
 **Actual results:**
 
-The error in UI:
-`An error occurred while creating shipping label.`
-
-The *Array to string conversion* exception prevents the actual error message from being displayed or stored in the logs.
+* The following error appears in the UI:
+    *An error occurred while creating shipping label.*  
+* The *Array to string conversion* exception prevents the actual error message from being displayed or stored in the logs.
 
 ## Apply the patch
 
