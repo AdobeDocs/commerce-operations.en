@@ -23,7 +23,7 @@ The ACSD-64546 patch fixes the issue where a generic error message appears in th
 
 ## Issue
 
-A generic error message shows up in the UI and an *Array to string conversion* exception occurs during UPS label creation.
+A generic error message shows up in the UI and the *Array to string conversion* exception occurs during UPS label creation.
 
 <u>Steps to reproduce</u>:
 
