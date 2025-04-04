@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-64546: Generic error message in UI and Array to string conversion exception during UPS label creation'
+title: 'ACSD-64546: Generic error message in UI and array to string conversion exception during UPS label creation'
 description: Apply the ACSD-64546 patch to fix the Adobe Commerce issue where a generic error message appears in the UI and the array to string conversion exception is logged during UPS label creation. The patch ensures the correct error is shown in the UI and the logs.
 feature: Shipping/Delivery
 role: Admin, Developer
