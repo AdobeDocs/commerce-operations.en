@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-64546: Generic error message in UI and *Array to string conversion* exception during UPS label creation
 
-The ACSD-64546 patch fixes the issue where a generic error message appears in the UI and an *Array to string conversion* exception is logged during UPS label creation, ensuring the correct error is shown in the UI and logs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64546. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64546 patch fixes the issue where a generic error message appears in the UI and the *Array to string conversion* exception is logged during UPS label creation, ensuring the correct error is shown in the UI and logs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64546. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
