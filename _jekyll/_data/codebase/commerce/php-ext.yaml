@@ -1,6 +1,6 @@
 ---
-version: 2.4.7-p1
-extension-b2b: 1.4.2
+version: 
+
 php-extensions:
   -  ext-bcmath
   -  ext-ctype
@@ -8,6 +8,7 @@ php-extensions:
   -  ext-dom
   -  ext-fileinfo
   -  ext-filter
+  -  ext-ftp
   -  ext-gd
   -  ext-hash
   -  ext-iconv
