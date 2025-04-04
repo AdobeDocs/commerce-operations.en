@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-64546: Generic error message in UI and Array to string conversion exception during UPS label creation'
-description: Apply the ACSD-64546 patch to fix the issue where a generic error message appears in the UI and an Array to string conversion exception is logged during UPS label creation, ensuring the correct error is shown in the UI and logs.
+description: Apply the ACSD-64546 patch to fix the Adobe Commerce issue where a generic error message appears in the UI and an Array to string conversion exception is logged during UPS label creation. The patch ensures that the correct error is shown in the UI and the logs.
 feature: Shipping/Delivery
 role: Admin, Developer
 ---
@@ -32,7 +32,7 @@ A generic error message shows up in the UI and an *Array to string conversion* e
 1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL SALES]** > **[!UICONTROL Shipping settings]** > **[!UICONTROL Origin]** and add a valid address.
 1. Go to **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL SALES]** > **[!UICONTROL Delivery methods]** > **[!UICONTROL UPS]** and configure UPS.
 1. Place an order using [!UICONTROL UPS].
-1. Remove UPS user ID and password from `core_config_data` in the database.
+1. Remove the UPS user ID and password from `core_config_data` in the database.
 1. Clean config cache.
 1. Open the created order in the **[!UICONTROL Admin]**.
 1. Create a new shipment.
@@ -41,11 +41,11 @@ A generic error message shows up in the UI and an *Array to string conversion* e
     1. Add the product to a package. Specify the package size (Length, Width, and Height).
     1. Click **[!UICONTROL Save]**.
 
-**Expected results:**
+<u>Expected results</u>:
 
-An actual error message is displayed in UI or in logs.
+The actual error message is displayed in the UI and the logs.
 
-**Actual results:**
+<u>Actual results</u>:
 
 * The following error appears in the UI:
     *An error occurred while creating shipping label.*  
