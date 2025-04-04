@@ -760,7 +760,7 @@ feature: Configuration
            - [ACSD-63992: [!UICONTROL Cart Price Rule] with coupon and shipping method condition error in Admin UI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
         - v1.1.61 {#v1-1-61}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)  
-           - [ACSD-64546: Fixes the issue where a generic error message shows up in the UI and an Array to string conversion exception occurs during UPS label creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
+           - [ACSD-64546: Generic error message in UI and Array to string conversion exception during UPS label creation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
