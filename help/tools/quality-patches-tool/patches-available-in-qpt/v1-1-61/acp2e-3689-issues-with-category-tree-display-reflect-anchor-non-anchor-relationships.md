@@ -1,10 +1,10 @@
 ---
 title: 'ACP2E-3689: Multiple issues with category tree display on deeper levels and reflecting anchor/non-anchor relationships'
 description: Apply the ACP2E-3689 patch to fix the Adobe Commerce issue with category tree display on more than depth four nesting and reflecting anchor/non-anchor relationships.
-feature: Categories, Page Content 
+feature: Categories, Page Content
 role: Admin, Developer
+exl-id: 8d3c484f-3f8d-4fc1-8b31-e850cb34341c
 ---
-
 # ACP2E-3689: Multiple issues with category tree display on deeper levels and reflecting anchor/non-anchor relationships
 
 >[!NOTE]
