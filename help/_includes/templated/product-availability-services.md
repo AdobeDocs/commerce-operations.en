@@ -52,11 +52,11 @@
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>6.1.0</td>
-          <td>6.1.0</td>
-          <td>6.1.0</td>
-          <td>6.1.0</td>
-          <td>6.1.0</td>
+          <td>6.2.0</td>
+          <td>6.2.0</td>
+          <td>6.2.0</td>
+          <td>6.2.0</td>
+          <td>6.2.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Release Notes</a><br/>

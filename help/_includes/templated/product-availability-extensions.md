@@ -63,6 +63,17 @@
           </td>
       </tr>
       <tr>
+          <td>Audience Activation</td>
+          <td>1.0.0+</td>
+          <td>1.0.0+</td>
+          <td>1.0.0+</td>
+          <td>1.0.0+</td>
+          <td>
+              <a href="https://commercemarketplace.adobe.com/magento-audiences.html">Marketplace</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes">Release Notes</a><br/>
+          </td>
+      </tr>
+      <tr>
           <td>B2B</td>
           <td>1.5.2</td>
           <td>1.5+<br /> 1.4+</td>
