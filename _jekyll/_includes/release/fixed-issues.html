@@ -6,7 +6,7 @@
 {%- for fix in sorted_fixes %}
 * _{{fix['Issue key']}}_: {{fix['Summary']}}
 {%- unless fix['Custom field (Release Note)'] == empty %}
-  * _Fix note_: {{fix['Custom field (Release Note)']}}
+  * _Fix note_: {{fix['Custom field (Release Note)'] | xml_escape }}
 {%- endunless %}
 {%- unless fix['Custom field (External Issue URL)'] == empty %}
   * _GitHub issue_: <{{fix['Custom field (External Issue URL)']}}>
