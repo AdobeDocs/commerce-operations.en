@@ -3,8 +3,8 @@ title: 'ACSD-63974: Fixes slow [!UICONTROL Requisition List] load time with pagi
 description: Apply the ACSD-63974 patch to fix the issue where the [!UICONTROL Requisition List] page takes a long time to load when there are too many items.
 feature: B2B
 role: Admin, Developer
+exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
 ---
-
 # ACSD-63974: Fixes slow [!UICONTROL Requisition List] load time with pagination
 
 The ACSD-63974 patch fixes the issue where the **[!UICONTROL Requisition List]** page takes a long time to load when there are too many items. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-63974. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
