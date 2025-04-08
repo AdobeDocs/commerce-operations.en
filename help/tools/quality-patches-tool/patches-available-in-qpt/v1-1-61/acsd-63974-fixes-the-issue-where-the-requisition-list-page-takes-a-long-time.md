@@ -30,7 +30,7 @@ The **[!UICONTROL Requisition List]** page takes a long time to load when there 
 <u>Steps to reproduce</u>:
 
 1. Go to the **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > *[!UICONTROL General]* > **[!UICONTROL B2B features]**.
-1. Set **[!UICONTROL Enable Company]** and **[!UICONTROL Enable Requisition List]** to `Yes`.
+1. Set **[!UICONTROL Enable Requisition List]** to *Yes*.
 1. Generate 2000+ products by editing `simple_products` node in `setup/performance-toolkit/profiles/ce/small.xml`.
 1. Run the command:
 
