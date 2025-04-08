@@ -8,6 +8,7 @@ Adobe Commerce requires:
 -  `ext-dom`
 -  `ext-fileinfo`
 -  `ext-filter`
+-  `ext-ftp`
 -  `ext-gd`
 -  `ext-hash`
 -  `ext-iconv`
@@ -38,6 +39,7 @@ Magento Open Source requires:
 -  `ext-dom`
 -  `ext-fileinfo`
 -  `ext-filter`
+-  `ext-ftp`
 -  `ext-gd`
 -  `ext-hash`
 -  `ext-iconv`
