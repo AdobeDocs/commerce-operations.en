@@ -29,7 +29,7 @@ The ACP2E-3705 patch fixes the issue where the `indexer_update_all_views` cron e
 
 ## Issue
 
-The `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set to a value greater than 2, specifically affecting the [!UICONTROL Customer Segments] indexer with B2B enabled.
+The `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set to a value greater than *2*, specifically affecting the [!UICONTROL Customer Segments] indexer with B2B enabled.
 
 <u>Steps to reproduce</u>:
 
