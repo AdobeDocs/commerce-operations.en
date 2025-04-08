@@ -56,7 +56,7 @@
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
-          <td>-</td>
+          <td>1.0.20+</td>
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Composer</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Release Notes</a><br/>
@@ -64,6 +64,7 @@
       </tr>
       <tr>
           <td>Audience Activation</td>
+          <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
