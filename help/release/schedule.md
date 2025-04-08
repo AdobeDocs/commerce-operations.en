@@ -12,7 +12,7 @@ Adobe continually strives to find the right balance between making product upgra
 
 New features, feature updates, cloud infrastructure, and extensibility updates are delivered independently from patch releases and are available through external modules, extensions, tools, or web services. Examples include:
 
-- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all)—New features and functionality delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search, and Product Recommendations.
+- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—New features and functionality delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search, and Product Recommendations.
 
 - ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
