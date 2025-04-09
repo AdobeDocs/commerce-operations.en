@@ -49,7 +49,7 @@ The `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_C
 
 <u>Expected results</u>:
 
-* Reindex is completed without any errors.
+Reindex is completed without any errors.
 
 <u>Actual results</u>:
 
