@@ -29,12 +29,12 @@ Fixes the issue where the cron scheduler retrieves all negotiable quotes without
 <u>Steps to reproduce</u>:
 
 
-1. Enable Company and B2B Quote in *Admin* > **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL B2B Features]**.
-1. Set **[!UICONTROL Default Expiration Period]** to *1* in *Admin* > **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]**.
+1. Enable Company and B2B Quote. On the *Admin* sidebar, go to **[!UICONTROL Stores]** > *Settings* > **[!UICONTROL Configuration]** > **[!UICONTROL B2B Features]**.
+1. Set **[!UICONTROL Default Expiration Period]** to *1* in *Admin* > **[!UICONTROL Stores]** > *settings* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]**.
 1. Create a company, activate it, and log in as the company admin.
 1. Add a product to the cart.
 1. Request a quote.
-1. In *Admin*, go to **[!UICONTROL Sales]** > **[!UICONTROL Quotes]**.
+1. On the *Admin* sidebar, go to **[!UICONTROL Sales]** > **[!UICONTROL Quotes]**.
 1. Select the created quote, and click **[!UICONTROL Send]** to send the quote back to the buyer.
 1. Log in as the company admin on the storefront.
 1. Select the quote and click **[!UICONTROL Proceed to checkout]** to complete the purchase.
