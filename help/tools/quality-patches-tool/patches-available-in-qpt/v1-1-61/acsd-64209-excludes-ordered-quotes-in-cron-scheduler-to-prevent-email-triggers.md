@@ -1,12 +1,12 @@
 ---
-title: 'ACSD-64209: Excludes "ordered" quotes in cron scheduler to prevent email triggers'
-description: Apply the ACSD-64209 patch to fix the Adobe Commerce issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status "ordered", causing an email or emails to be triggered.
+title: 'ACSD-64209: excludes [!UICONTROL Ordered] quotes in cron scheduler to prevent email triggers'
+description: Apply the ACSD-64209 patch to fix the Adobe Commerce issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status [!UICONTROL Ordered], causing an email or emails to be triggered.
 feature:  B2B, Communications
 role: Admin, Developer
 ---
-# ACSD-64209: Excludes "ordered" quotes in cron scheduler to prevent email triggers
+# ACSD-64209: excludes [!UICONTROL Ordered] quotes in cron scheduler to prevent email triggers
 
-The ACSD-64209 patch fixes the issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status "ordered", causing an email or emails to be triggered. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64209. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64209 patch fixes the issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status [!UICONTROL Ordered], causing an email or emails to be triggered. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64209. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -29,16 +29,16 @@ Fixes the issue where the cron scheduler retrieves all negotiable quotes without
 <u>Steps to reproduce</u>:
 
 
-1. Enable Company and B2B Quote in **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL B2B Features]**.
-1. Set "Default Expiration Period" to *1* in **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]**.
-1. Create a company, activate it, and log in as **[!DNL company admin]**.
+1. Enable Company and B2B Quote in *Admin* > **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL B2B Features]**.
+1. Set **[!UICONTROL Default Expiration Period]** to *1* in *Admin* > **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]**.
+1. Create a company, activate it, and log in as the company admin.
 1. Add a product to the cart.
 1. Request a quote.
-1. In **[!UICONTROL Admin]**, go to **[!UICONTROL Sales]** > **[!UICONTROL Quotes]**.
+1. In *Admin*, go to **[!UICONTROL Sales]** > **[!UICONTROL Quotes]**.
 1. Select the created quote, and click **[!UICONTROL Send]** to send the quote back to the buyer.
-1. Log in as the **[!DNL company admin]** on the **[!UICONTROL Storefront]**.
+1. Log in as the company admin on the storefront.
 1. Select the quote and click **[!UICONTROL Proceed to checkout]** to complete the purchase.
-1. Check that the status of the quote is **[!UICONTROL "Ordered"]** and no more actions are possible on the **[!UICONTROL Storefront]**.
+1. Check that the status of the quote is **[!UICONTROL Ordered]** and no more actions are possible on the storefront.
 1. Trigger the **[!UICONTROL negotiable_quote_send_emails]** cron job.
 
 
