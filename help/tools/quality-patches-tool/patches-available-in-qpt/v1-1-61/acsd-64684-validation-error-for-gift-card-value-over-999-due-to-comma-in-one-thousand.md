@@ -25,7 +25,7 @@ The ACSD-64684 patch fixes the issue where a validation error occurs when saving
 
 ## Issue
 
-A validation error occurs when saving a gift card with a value over 999 due to the comma in 'one thousand' (1,000).
+A validation error occurs when editing and saving a gift card with a value greater than 999 due to the comma (thousand separator) in the number, such as 'one thousand' (1,000).
 
 <u>Steps to reproduce</u>:
 
