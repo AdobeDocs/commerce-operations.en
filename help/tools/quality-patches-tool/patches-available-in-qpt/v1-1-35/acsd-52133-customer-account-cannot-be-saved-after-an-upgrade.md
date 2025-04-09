@@ -7,6 +7,10 @@ exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
 ---
 # ACSD-52133: Customer account cannot be saved after an upgrade
 
+>[!NOTE]
+>
+>The ACSD-52133 patch has been deprecated due to a conflict with the security patch [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
+
 The ACSD-52133 patch fixes the issue where a customer account cannot be saved after an upgrade. This patch is available when the [!DNL Quality Patches Tool (QPT)] 1.1.35 is installed. The patch ID is ACSD-52133. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
@@ -24,7 +28,7 @@ The ACSD-52133 patch fixes the issue where a customer account cannot be saved af
 >The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
-
+ 
 Customer account cannot be saved after an upgrade.
 
 <u>Steps to reproduce</u>:
