@@ -7,6 +7,10 @@ exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
 ---
 # ACSD-62689: Unable to add categories in *[!UICONTROL Related Product Rules]* and widgets after depth 4
 
+>[!NOTE]
+>
+>This patch is replaced by [ACP2E-3689](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md).
+
 The ACSD-62689 patch fixes the issue where a customer is unable to add categories in *[!UICONTROL Related Product Rules]* and widgets after depth four nesting. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 is installed. The patch ID is ACSD-62689. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions

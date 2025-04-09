@@ -60,7 +60,7 @@ This beta supports three new capabilities in the [`productSearch` query](https:/
 
 These new conditions enhance the search query filtering mechanism to refine search results. These new conditions do not affect the main search query. To participate in the beta, send an email request to [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-To install the Live Search beta, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
+To install the Live Search beta, see the [Live Search guide](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management System Integration (Private Beta)
 
@@ -73,15 +73,6 @@ This integration accelerator for IBM Sterling Order Management enables Adobe Com
 
 To participate in this beta, send an email request to [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Data Connection & Audience Activation (Public Beta)
-
-Expanded data sharing between Adobe Commerce & Adobe Experience Platform to drive more powerful personalized experiences. This capability enables merchants to:
-
-- Share Commerce customer profiles
-- Create custom attributes
-
-To participate in this beta, send an email request to [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
 ### Adobe Commerce Foundation (Public Beta)
 
 Each Adobe Commerce Foundation beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
@@ -91,7 +82,7 @@ Each Adobe Commerce Foundation beta release includes all the changes delivered t
 - GraphQL improvements
 - General quality bug fixes
 - Community contributions
-- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
 
 #### Naming convention and schedule
 
@@ -103,7 +94,6 @@ Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.
 - `2.4.7-beta2`
 
 See the [release schedule](schedule.md) for the list of upcoming public beta release dates.
-
 
 #### Beta release access
 

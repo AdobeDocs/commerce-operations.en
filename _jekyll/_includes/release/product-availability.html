@@ -17,7 +17,7 @@
           {%- for core_version in sorted_core_versions %}
           {%- for item_version in item[1].support %}
           {%- if item_version.core == core_version %}
-          <td>{{item_version.version }}</td>
+          <td>{{item_version.version | replace: ',', '<br />' }}</td>
           {%- endif %}
           {%- endfor %}
           {%- endfor %}
