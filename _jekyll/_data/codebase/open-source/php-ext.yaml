@@ -1,5 +1,5 @@
 ---
-version: 2.4.7-p1
+version: 
 
 php-extensions:
   -  ext-bcmath
@@ -8,6 +8,7 @@ php-extensions:
   -  ext-dom
   -  ext-fileinfo
   -  ext-filter
+  -  ext-ftp
   -  ext-gd
   -  ext-hash
   -  ext-iconv

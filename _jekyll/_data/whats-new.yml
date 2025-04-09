@@ -2,8 +2,19 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 4 20:58:03 2025
+updated: Tue Apr 8 02:20:52 2025
 entries:
+- description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
+  versions: ''
+  type: technical
+  date: April 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1284
+  merge_commit: 492e669787d4acd46789190b8afcf5b9e60ac6b6
+  contributor: magedocs
+  membership: false
+  labels:
+  - technical
+  - devops
 - description: Added the [detailed description of the issue fixed by the ACP2E-3689
     patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships)
   versions: ''
