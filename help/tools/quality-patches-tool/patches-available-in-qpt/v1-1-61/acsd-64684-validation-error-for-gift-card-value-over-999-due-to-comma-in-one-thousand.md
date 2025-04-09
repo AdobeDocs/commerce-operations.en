@@ -12,9 +12,11 @@ The ACSD-64684 patch fixes the issue where a validation error occurs when saving
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
+
 * Adobe Commerce (all deployment methods) 2.4.7-p3
 
 **Compatible with Adobe Commerce versions:**
+
 * Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
