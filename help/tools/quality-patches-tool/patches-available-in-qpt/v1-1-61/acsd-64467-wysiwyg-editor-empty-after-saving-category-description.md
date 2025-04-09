@@ -28,7 +28,7 @@ The WYSIWYG editor appears empty after saving a category description at the stor
 
 <u>Steps to reproduce</u>:
 
-1. Edit a category in the Admin at the store view level.
+1. Edit a category in the Commerce Admin at the store view level.
 1. Deselect the *[!UICONTROL Use default value]* checkbox next to the category description.
 1. Enter a description in the WYSIWYG editor.
 1. Click **[!UICONTROL Save]**.
