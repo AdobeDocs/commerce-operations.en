@@ -182,16 +182,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.342.20",
+            "version": "3.342.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "eb68ff5bed48e653c1ddd84bd04a0d893f99ef46"
+                "reference": "a5e9ba23ffecf1f71d8cfb177ef5cb3fbe2ecf05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eb68ff5bed48e653c1ddd84bd04a0d893f99ef46",
-                "reference": "eb68ff5bed48e653c1ddd84bd04a0d893f99ef46",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a5e9ba23ffecf1f71d8cfb177ef5cb3fbe2ecf05",
+                "reference": "a5e9ba23ffecf1f71d8cfb177ef5cb3fbe2ecf05",
                 "shasum": ""
             },
             "require": {
@@ -273,9 +273,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.20"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.23"
             },
-            "time": "2025-04-03T18:11:14+00:00"
+            "time": "2025-04-08T18:35:41+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -877,16 +877,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.8.7",
+            "version": "2.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "fc06c099955929ac67270d169e8b5fb83ad53807"
+                "reference": "85ff84d6c5260ba21740a7c5c9a111890805d6e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/fc06c099955929ac67270d169e8b5fb83ad53807",
-                "reference": "fc06c099955929ac67270d169e8b5fb83ad53807",
+                "url": "https://api.github.com/repos/composer/composer/zipball/85ff84d6c5260ba21740a7c5c9a111890805d6e7",
+                "reference": "85ff84d6c5260ba21740a7c5c9a111890805d6e7",
                 "shasum": ""
             },
             "require": {
@@ -971,7 +971,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.8.7"
+                "source": "https://github.com/composer/composer/tree/2.8.8"
             },
             "funding": [
                 {
@@ -987,7 +987,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-03T14:26:28+00:00"
+            "time": "2025-04-04T14:56:46+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -2388,16 +2388,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "6.4.0",
+            "version": "6.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jsonrainbow/json-schema.git",
-                "reference": "16b274cb469bc8165c59b76c283724a035d27f4c"
+                "reference": "35d262c94959571e8736db1e5c9bc36ab94ae900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/16b274cb469bc8165c59b76c283724a035d27f4c",
-                "reference": "16b274cb469bc8165c59b76c283724a035d27f4c",
+                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/35d262c94959571e8736db1e5c9bc36ab94ae900",
+                "reference": "35d262c94959571e8736db1e5c9bc36ab94ae900",
                 "shasum": ""
             },
             "require": {
@@ -2457,9 +2457,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jsonrainbow/json-schema/issues",
-                "source": "https://github.com/jsonrainbow/json-schema/tree/6.4.0"
+                "source": "https://github.com/jsonrainbow/json-schema/tree/6.4.1"
             },
-            "time": "2025-04-01T18:50:59+00:00"
+            "time": "2025-04-04T13:08:07+00:00"
         },
         {
             "name": "laminas/laminas-captcha",
@@ -26676,12 +26676,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpmd/phpmd.git",
-                "reference": "293ce67f1aece57f5df7ea491496fac38f34d26e"
+                "reference": "3a8f6ed5293a244cdf4ec3a4f1ebc32db1dadf27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/293ce67f1aece57f5df7ea491496fac38f34d26e",
-                "reference": "293ce67f1aece57f5df7ea491496fac38f34d26e",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/3a8f6ed5293a244cdf4ec3a4f1ebc32db1dadf27",
+                "reference": "3a8f6ed5293a244cdf4ec3a4f1ebc32db1dadf27",
                 "shasum": ""
             },
             "require": {
@@ -26755,7 +26755,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-01T22:43:04+00:00"
+            "time": "2025-04-07T18:47:38+00:00"
         },
         {
             "name": "phpstan/phpstan",
@@ -28746,16 +28746,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.12.0",
+            "version": "3.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "2d1b63db139c3c6ea0c927698e5160f8b3b8d630"
+                "reference": "ea16a1f3719783345febd3aab41beb55c8c84bfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/2d1b63db139c3c6ea0c927698e5160f8b3b8d630",
-                "reference": "2d1b63db139c3c6ea0c927698e5160f8b3b8d630",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/ea16a1f3719783345febd3aab41beb55c8c84bfd",
+                "reference": "ea16a1f3719783345febd3aab41beb55c8c84bfd",
                 "shasum": ""
             },
             "require": {
@@ -28826,7 +28826,7 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-03-18T05:04:51+00:00"
+            "time": "2025-04-04T12:57:55+00:00"
         },
         {
             "name": "symfony/dotenv",
