@@ -24,7 +24,7 @@ The ACSD-64209 patch fixes the issue where the cron scheduler retrieves all nego
 
 ## Issue
 
-Fixes the issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status "ordered", causing an email or emails to be triggered.
+Fixes the issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status [!UICONTROL Ordered], causing an email or emails to be triggered.
 
 <u>Steps to reproduce</u>:
 
@@ -39,7 +39,7 @@ Fixes the issue where the cron scheduler retrieves all negotiable quotes without
 1. Log in as the company admin on the storefront.
 1. Select the quote and click **[!UICONTROL Proceed to checkout]** to complete the purchase.
 1. Check that the status of the quote is **[!UICONTROL Ordered]** and no more actions are possible on the storefront.
-1. Trigger the **[!UICONTROL negotiable_quote_send_emails]** cron job.
+1. Trigger the *negotiable_quote_send_emails* cron job.
 
 
 <u>Expected results</u>: 
@@ -48,7 +48,7 @@ Since the quote has been ordered and no further actions can be taken, no emails 
 
 <u>Actual results</u>:
 
-An email "Quote expires soon" is sent.
+An email *Quote expires soon* is sent.
 
 ## Apply the patch
 
