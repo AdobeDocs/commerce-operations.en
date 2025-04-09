@@ -71,6 +71,17 @@
         {%- endfor %}
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+        {%- for requirement in requirements %}
+      <td>{%- if requirement[1]['New Relic Cloud'] %}
+            {{requirement[1]['New Relic Cloud']}}
+          {%- else %}
+          --
+          {%- endif %}
+      </td>
+        {%- endfor %}
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
         {%- for requirement in requirements %}
       <td>{%- if requirement[1]['PHP'] %}

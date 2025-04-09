@@ -1,0 +1,19 @@
+---
+---
+# Magento Open Source release notes (v2.4.8)
+
+## Highlights
+
+{%- assign fixes = site.data.release.highlights.v2-4-8 | where: 'is_magento', 'true' %}
+
+The following {{fixes | size }} highlights apply to the Magento Open Source 2.4.8 release.
+
+{%- include release/fixed-issues.html %}
+## Fixed issues
+
+{%- assign fixes = site.data.release.fixed-issues.v2-4-8 | where: 'is_magento', 'true' | where_exp: "item", "item['Issue key'] != 'ACP2E-2676'" %}
+{%- assign fixes = fixes | reject: 'Issue key', 'ACP2E-2676' %}
+
+We have fixed {{fixes | size }} issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+
+{%- include release/fixed-issues.html -%}

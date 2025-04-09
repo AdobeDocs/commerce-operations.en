@@ -22,8 +22,8 @@
           <td>1.32</td>
           <td>1.32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Overview</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Overview</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
@@ -35,7 +35,7 @@
           <td>4.3.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
@@ -47,19 +47,19 @@
           <td>2.4.0 (PHP 8.1)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Release Notes</a><br/>
           </td>
       </tr>
       <tr>
           <td>Product Recommendations</td>
-          <td>6.1.0</td>
-          <td>6.1.0</td>
-          <td>6.1.0</td>
-          <td>6.1.0</td>
-          <td>6.1.0</td>
+          <td>6.2.0</td>
+          <td>6.2.0</td>
+          <td>6.2.0</td>
+          <td>6.2.0</td>
+          <td>6.2.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Release Notes</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Release Notes</a><br/>
           </td>
       </tr>
   </tbody>
