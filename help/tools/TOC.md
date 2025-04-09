@@ -819,6 +819,3 @@ feature: Configuration
         - [Troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
         - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
-
-
-[def]: /help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md
