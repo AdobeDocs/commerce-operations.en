@@ -21,7 +21,7 @@ The ACSD-46192 patch fixes the issue with the `async/bulk/V1/configurable-produc
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.3.6 - 2.4.3-p1
+* Adobe Commerce (all deployment methods) 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
