@@ -757,6 +757,7 @@ feature: Configuration
         - v1.1.60 {#v1-1-60}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md) 
            - [ACSD-63323: Resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
+           - [ACSD-64137: Searching for pickup locations by zip code does not work properly for Dutch localization](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
            - [ACSD-64111: Fixes the InvalidArgumentException: Class does not exist error when setting nested conditions for a Product component in [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
            - [ACSD-63992: [!UICONTROL Cart Price Rule] with coupon and shipping method condition error in Admin UI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
         - v1.1.61 {#v1-1-61}  
@@ -817,3 +818,6 @@ feature: Configuration
         - [Troubleshooting](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
         - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Return to Operational Guides](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+
+
+[def]: /help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md
