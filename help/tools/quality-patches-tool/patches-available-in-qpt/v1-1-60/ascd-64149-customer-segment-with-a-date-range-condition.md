@@ -3,8 +3,8 @@ title: 'ACSD-64149: Customer segment with a [!UICONTROL Date range] condition ca
 description: Apply the ACSD-64149 patch to fix the Adobe Commerce issue where customer segment with a **[!UICONTROL Date range]** condition can be saved when only one of the dates is edited.
 feature: Customers, Admin Workspace
 role: Admin, Developer
+exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
 ---
-
 # ACSD-64149: Customer segment with a [!UICONTROL Date range] condition can be saved when only one date is edited
 
 The ACSD-64149 patch fixes the issue where a customer segment with a date range condition can be saved when only one of the dates is edited. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64149. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
