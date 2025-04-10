@@ -3,8 +3,8 @@ title: 'ACSD-64684: Validation error when saving a gift card with a value over 9
 description: Apply the ACSD-64684 patch to fix the Adobe Commerce issue where a validation error occurs when saving a gift card with a value over 999 due to the comma in "one thousand" (1,000).
 feature: Catalog Management
 role: Admin, Developer
+exl-id: 327c5d28-b52c-4da9-a905-8a3deb755241
 ---
-
 # ACSD-64684: Validation error when saving a gift card with a value over 999 due to the comma in one thousand (1,000)
 
 The ACSD-64684 patch fixes the issue where a validation error occurs when saving a gift card with a value over 999 due to the comma in "one thousand" (1,000). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64684. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
