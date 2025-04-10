@@ -5,9 +5,9 @@ feature: Shipping/Delivery
 role: Admin, Developer
 ---
 
-# ACSD-64137: searching for pickup locations by zip code did not work properly for Dutch localization
+# ACSD-64137: Searching for pickup locations by zip code doesn't work properly for Dutch localization
 
-The ACSD-64137 patch fixes the issue where searching for pickup locations by zip code does not work properly for Dutch localization. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64137. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64137 patch fixes the issue where searching for pickup locations by zip code doesn't work properly for Dutch localization. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64137. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,34 +25,34 @@ The ACSD-64137 patch fixes the issue where searching for pickup locations by zip
 
 ## Issue
 
-Fixes the issue where searching for pickup locations by zip code does not work properly for Dutch localization. After the fix, the pickup location search will provide results based on zip code.
+The zip code search for the Netherlands is not showing results on the frontend checkout page. However, it works by city and displays the corresponding address without search.
 
 <u>Steps to reproduce</u>:
 
-1. Install clean instance with inventory modules.
-1. Create a custom Stock.
-1. Create two sources with Netherlands addresses and assign to the stock (post code 7311ER and 7311AE).
+1. Install a clean instance with inventory modules.
+1. Create a custom stock.
+1. Create two sources with Netherlands addresses and assign them to the stock (post codes 7311ER and 7311AE).
 1. Create a simple product and add inventory.
-1. Enable In-Store Delivery navigating to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]**
-1. **[!UICONTROL Enable Offline Calculation Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Distance Provider for Distance Based SSA]**.
-1. Run below command to import geo names for NL country.
+1. Enable **[!UICONTROL In-Store Delivery]** by navigating to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]**.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Distance Provider for Distance Based SSA]**. Set **[!UICONTROL Provider]** to *Offline calculation*.
+1. Run the following command to import geo names for NL country.
 
     ```bash
     bin/magento inventory-geonames:import NL
     ```
 
-1. Add the product to cart and go to shipping step.
-1. Select [!UICONTROL Pickup] in **[!UICONTROL Store]** and select the button to select other stores.
-1. Type *7311* or *7311AE* in the **[!UICONTROL Select Store model]**.
+1. Add the product to the cart and go to the shipping step.
+1. Select **[!UICONTROL Pick In Store]**. Then, click **[!UICONTROL Select Other]** to select other stores.
+1. Type *7311* or *7311AE* in the **[!UICONTROL Select Store]** search form.
 
 
 **Expected results**: 
 
-* Matched stores should be populated
+* Matched stores should be populated.
 
 **Actual results**:
 
-* No Results found
+* No results found.
 
 ## Apply the patch
 
