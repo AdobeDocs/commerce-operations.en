@@ -3,8 +3,8 @@ title: 'ACSD-64137: Searching for pickup locations by zip code does not work pro
 description: Apply the ACSD-64137 patch to fix the issue where searching for pickup locations by zip code does not work properly for Dutch localization.
 feature: Shipping/Delivery
 role: Admin, Developer
+exl-id: 86c28b6d-6584-4caf-bd35-13e0c1bdcf1d
 ---
-
 # ACSD-64137: Searching for pickup locations by zip code doesn't work properly for Dutch localization
 
 The ACSD-64137 patch fixes the issue where searching for pickup locations by zip code doesn't work properly for Dutch localization. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-64137. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
