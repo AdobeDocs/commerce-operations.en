@@ -7,6 +7,10 @@ exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
 ---
 # ACSD-46192: Issue with async/bulk/V1/configurable-products/bySku/options endpoint
 
+>[!NOTE]
+>
+>The ACSD-46192 patch is partially deprecated, as this issue is addressed by the mandatory security patch [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
+
 The ACSD-46192 patch fixes the issue with the `async/bulk/V1/configurable-products/bySku/options` endpoint. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 is installed. The patch ID is ACSD-46192. Please note that the issue was fixed in Adobe Commerce 2.4.5.
 
 ## Affected products and versions
@@ -17,7 +21,7 @@ The ACSD-46192 patch fixes the issue with the `async/bulk/V1/configurable-produc
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.3 and 2.4.4
+* Adobe Commerce (all deployment methods) 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
