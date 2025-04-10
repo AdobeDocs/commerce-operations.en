@@ -3,6 +3,7 @@ title: 'ACSD-64467: WYSIWYG editor empty after saving category description at st
 description: Apply the ACSD-64467 patch to fix the Adobe Commerce issue where the WYSIWYG editor appears empty after saving a category description at the store view level.
 feature: Page Content
 role: Admin, Developer
+exl-id: 8bc1794f-ace1-4719-9fff-194dbd701ab6
 ---
 # ACSD-64467: WYSIWYG editor empty after saving category description at store view level
 
