@@ -39,7 +39,7 @@ The cron scheduler retrieves all negotiable quotes without excluding those with 
 1. Log in as the company admin on the storefront.
 1. Select the quote and click **[!UICONTROL Proceed to checkout]** to complete the purchase.
 1. Check that the status of the quote is **[!UICONTROL Ordered]** and no more actions are possible on the storefront.
-1. Trigger the *negotiable_quote_send_emails* cron job.
+1. Trigger the `negotiable_quote_send_emails` cron job.
 
 
 <u>Expected results</u>: 
