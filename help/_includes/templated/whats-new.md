@@ -16,7 +16,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list">detailed description of the issue fixed by the ACSD-63883 patch in the QPT 1.1.61 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list">detailed description of the issue fixed by the ACSD-63883 patch in the QPT 1.1.61 release</a></p>
 </td>
       <td>
         New topic
@@ -24,7 +24,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a4d84b88f6d235f722ce131ce9ffbbd6ae59b12a">a4d84b</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">detailed description of the issue fixed by the ACSD-64137 patch in the QPT 1.1.60 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">detailed description of the issue fixed by the ACSD-64137 patch in the QPT 1.1.60 release</a></p>
 </td>
       <td>
         New topic
@@ -32,7 +32,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e6fb66170fd0a0487a049508c7ac3fa96fa3633a">e6fb66</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand">detailed description of the issue fixed by the ACSD-64684 patch in the QPT 1.1.61 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand">detailed description of the issue fixed by the ACSD-64684 patch in the QPT 1.1.61 release</a></p>
 </td>
       <td>
         New topic
@@ -54,7 +54,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description">detailed description of the issue fixed by the ACSD-64467 patch in the QPT 1.1.61 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description">detailed description of the issue fixed by the ACSD-64467 patch in the QPT 1.1.61 release</a></p>
 </td>
       <td>
         New topic
@@ -62,7 +62,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d58695ea2c82c6e1c5f30411ef9fc343e983b892">d58695</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer">detailed description of the issue fixed by the ACP2E-3705 patch in the QPT 1.1.61 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer">detailed description of the issue fixed by the ACP2E-3705 patch in the QPT 1.1.61 release</a></p>
 </td>
       <td>
         New topic
@@ -70,7 +70,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaed1bc7241dc485894fcb63a99c08d26cb99a15">aaed1b</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition">detailed description of the issue fixed by the ACSD-64149 patch in the QPT 1.1.60 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition">detailed description of the issue fixed by the ACSD-64149 patch in the QPT 1.1.60 release</a></p>
 </td>
       <td>
         New topic
@@ -78,7 +78,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84f12be207347cd77c9577e976780c3f32a3e6ed">84f12b</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">detailed description of the issue fixed by the ACSD-64137 patch in the QPT 1.1.60 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">detailed description of the issue fixed by the ACSD-64137 patch in the QPT 1.1.60 release</a></p>
 </td>
       <td>
         New topic
@@ -100,7 +100,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion">detailed description of the issue fixed by the ACSD-64546 patch in the QPT 1.1.61 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion">detailed description of the issue fixed by the ACSD-64546 patch in the QPT 1.1.61 release</a></p>
 </td>
       <td>
         New topic
@@ -108,7 +108,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0214c378a5a985e5f91aed6407567f770ced6fc">c0214c</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time">detailed description of the issue fixed by the ACSD-63974 patch in the QPT 1.1.61 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time">detailed description of the issue fixed by the ACSD-63974 patch in the QPT 1.1.61 release</a></p>
 </td>
       <td>
         New topic
@@ -148,7 +148,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9bfad60e8a1ebe414d5f2826eecb0a4e5e886614">9bfad6</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added detailed steps to the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#mysql">documentation</a> for upgrading to MySQL 8.4 from older versions.</p>
+      <td><p>Added detailed steps to the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#mysql">documentation</a> to upgrade to MySQL 8.4 from older versions.</p>
 </td>
       <td>
         Major update
@@ -192,7 +192,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships">detailed description of the issue fixed by the ACP2E-3689 patch in the QPT 1.1.61 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships">detailed description of the issue fixed by the ACP2E-3689 patch in the QPT 1.1.61 release</a></p>
 </td>
       <td>
         New topic
@@ -214,7 +214,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder">detailed description of the issue fixed by the ACSD-64111 patch in the QPT 1.1.60 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder">detailed description of the issue fixed by the ACSD-64111 patch in the QPT 1.1.60 release</a></p>
 </td>
       <td>
         New topic
@@ -266,7 +266,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method">detailed description of the issue fixed by the ACSD-63992 patch in the QPT 1.1.60 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method">detailed description of the issue fixed by the ACSD-63992 patch in the QPT 1.1.60 release</a></p>
 </td>
       <td>
         New topic
@@ -318,7 +318,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha">detailed description of the issue fixed by the MDVA-39305-V3 patch in the QPT 1.1.58 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha">detailed description of the issue fixed by the MDVA-39305-V3 patch in the QPT 1.1.58 release</a></p>
 </td>
       <td>
         New topic
@@ -340,7 +340,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability">availability table</a> with latest Catalog Service version, v1.32.</p>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability">availability table</a> with latest Catalog Service version, v1.32.</p>
 </td>
       <td>
         Technical
@@ -406,7 +406,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated">detailed description of the issue fixed by the ACSD-63572 patch in the QPT 1.1.58 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated">detailed description of the issue fixed by the ACSD-63572 patch in the QPT 1.1.58 release</a></p>
 </td>
       <td>
         New topic
@@ -428,7 +428,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly">detailed description of the issue fixed by the ACSD-63469 patch in the QPT 1.1.59 release</a>.</p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly">detailed description of the issue fixed by the ACSD-63469 patch in the QPT 1.1.59 release</a>.</p>
 </td>
       <td>
         New topic
@@ -450,7 +450,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account">detailed description of the issue fixed by the ACSD-64212 patch in the QPT 1.1.59 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account">detailed description of the issue fixed by the ACSD-64212 patch in the QPT 1.1.59 release</a></p>
 </td>
       <td>
         New topic
@@ -458,7 +458,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/60f62d00afe94c1e9874c623d6703162c35791c2">60f62d</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images">detailed description of the issue fixed by the ACSD-64113 patch in the QPT 1.1.59 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images">detailed description of the issue fixed by the ACSD-64113 patch in the QPT 1.1.59 release</a></p>
 </td>
       <td>
         New topic
@@ -480,7 +480,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error">detailed description of the issue fixed by the ACSD-63574 patch in the QPT 1.1.59 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error">detailed description of the issue fixed by the ACSD-63574 patch in the QPT 1.1.59 release</a></p>
 </td>
       <td>
         New topic
@@ -488,7 +488,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7477a28c5db13e5c2daabea4f36dc9de784581a5">7477a2</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs">detailed description of the issue fixed by the ACSD-63793 patch in the QPT 1.1.59 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs">detailed description of the issue fixed by the ACSD-63793 patch in the QPT 1.1.59 release</a></p>
 </td>
       <td>
         New topic
@@ -510,7 +510,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">detailed description of the issue fixed by the ACSD-64112 patch in the QPT 1.1.59 release</a>.</p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">detailed description of the issue fixed by the ACSD-64112 patch in the QPT 1.1.59 release</a>.</p>
 </td>
       <td>
         New topic
@@ -532,7 +532,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">detailed description of the issue fixed by the ACSD-63454 patch in the QPT 1.1.59 release</a>.</p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">detailed description of the issue fixed by the ACSD-63454 patch in the QPT 1.1.59 release</a>.</p>
 </td>
       <td>
         New topic
@@ -554,7 +554,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change">detailed description of the issue fixed by the ACSD-63870 patch in the QPT 1.1.59 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change">detailed description of the issue fixed by the ACSD-63870 patch in the QPT 1.1.59 release</a></p>
 </td>
       <td>
         New topic
@@ -598,7 +598,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
   </thead>
   <tbody>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku">detailed description of the issue fixed by the ACSD-63578 patch in the QPT 1.1.58 release</a></p>
+      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku">detailed description of the issue fixed by the ACSD-63578 patch in the QPT 1.1.58 release</a></p>
 </td>
       <td>
         New topic
