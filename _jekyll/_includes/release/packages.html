@@ -44,7 +44,7 @@ The following reference documentation is generated from the `composer.lock` file
       {{ package.name }}
     {%- endif %}
     </td>
-    <td>{{ package.type }}</td>
+    <td>{{ package.type | capitalize }}</td>
     <td>{{ package.description }}</td>
   </tr>
     {%- endunless %}
