@@ -3,6 +3,7 @@ title: 'ACSD-64209: Cron scheduler retrieves negotiable quotes without excluding
 description: Apply the ACSD-64209 patch to fix the Adobe Commerce issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status [!UICONTROL Ordered], causing an email or emails to be triggered.
 feature:  B2B, Communications
 role: Admin, Developer
+exl-id: 51ba0edc-ad0c-4e32-acd7-2337a62bff53
 ---
 # ACSD-64209: Cron scheduler retrieves negotiable quotes without excluding [!UICONTROL Ordered] quotes
 
