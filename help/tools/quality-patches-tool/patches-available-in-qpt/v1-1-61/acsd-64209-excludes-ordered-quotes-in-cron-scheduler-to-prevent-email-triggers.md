@@ -29,7 +29,7 @@ The cron scheduler retrieves all negotiable quotes without excluding those with 
 <u>Steps to reproduce</u>:
 
 
-1. Enable Company and B2B Quote. On the *Admin* sidebar, go to **[!UICONTROL Stores]** > *Settings* > **[!UICONTROL Configuration]** > **[!UICONTROL B2B Features]**.
+1. On the *Admin* sidebar, go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL B2B Features]** and enable Company and B2B Quote. 
 1. Set **[!UICONTROL Default Expiration Period]** to *1* in *Admin* > **[!UICONTROL Stores]** > *settings* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]**.
 1. Create a company, activate it, and log in as the company admin.
 1. Add a product to the cart.
