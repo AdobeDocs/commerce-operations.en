@@ -4,7 +4,7 @@ description: Apply the ACSD-64209 patch to fix the Adobe Commerce issue where th
 feature:  B2B, Communications
 role: Admin, Developer
 ---
-# ACSD-64209: excludes [!UICONTROL Ordered] quotes in cron scheduler to prevent email triggers
+# ACSD-64209: Excludes [!UICONTROL Ordered] quotes in cron scheduler to prevent email triggers
 
 The ACSD-64209 patch fixes the issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status [!UICONTROL Ordered], causing an email or emails to be triggered. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64209. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
