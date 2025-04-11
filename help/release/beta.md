@@ -34,7 +34,7 @@ With Adobe Commerce Optimizer, you can:
 - Create personalized search and recommendations using AI and ML.
 - View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
 
-[Learn more](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) about Adobe Commerce Optimizer. If you are interested in participating in the Adobe Commerce Optimizer early access program, complete the [Early Access request form](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
+[Learn more](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) about Adobe Commerce Optimizer. If you are interested in participating in the Adobe Commerce Optimizer early access program, complete the [Early Access request form](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)
 
 ### Enhanced search capabilities for Live Search (Public Beta)
 
