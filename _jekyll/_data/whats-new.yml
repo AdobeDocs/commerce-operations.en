@@ -2,8 +2,189 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Apr 8 02:20:52 2025
+updated: Fri Apr 11 16:36:58 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-63883
+    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list)
+  versions: ''
+  type: new-topic
+  date: April 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1276
+  merge_commit: a4d84b88f6d235f722ce131ce9ffbbd6ae59b12a
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64137
+    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
+  versions: ''
+  type: new-topic
+  date: April 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1301
+  merge_commit: e6fb66170fd0a0487a049508c7ac3fa96fa3633a
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64684
+    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand)
+  versions: ''
+  type: new-topic
+  date: April 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1285
+  merge_commit: fd0a4d5421c4214dea0c0d5be5644c22c662ea11
+  contributor: glo42770
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64467
+    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description)
+  versions: ''
+  type: new-topic
+  date: April 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1286
+  merge_commit: d58695ea2c82c6e1c5f30411ef9fc343e983b892
+  contributor: glo16024
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACP2E-3705
+    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an%20issue-where-the-indexer)
+  versions: ''
+  type: new-topic
+  date: April 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1289
+  merge_commit: aaed1bc7241dc485894fcb63a99c08d26cb99a15
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64149
+    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition)
+  versions: ''
+  type: new-topic
+  date: April 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1258
+  merge_commit: 84f12be207347cd77c9577e976780c3f32a3e6ed
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64137
+    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
+  versions: ''
+  type: new-topic
+  date: April 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1256
+  merge_commit: 8466ea44aee9b2e73a964ee657937946e36ea40d
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64546
+    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion)
+  versions: ''
+  type: new-topic
+  date: April 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1277
+  merge_commit: c0214c378a5a985e5f91aed6407567f770ced6fc
+  contributor: glo42770
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63974
+    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time)
+  versions: ''
+  type: new-topic
+  date: April 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1279
+  merge_commit: 6661088b3f6cfad2c5afca3e8ac3d76c07ae3237
+  contributor: glo53002
+  membership: false
+  labels:
+  - new-topic
+  - qpt
+- description: Updated [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+  versions: 2.4.8, 2.4.7-p5, 2.4.6-p10, 2.4.5-p12, 2.4.4-p13
+  type: technical
+  date: April 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1291
+  merge_commit: 6420c55a08a43fc331ebebc073565df977827d34
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
+  - 2.4.7-p5
+  - 2.4.6-p10
+  - 2.4.5-p12
+  - 2.4.4-p13
+- description: Updated [Packages](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce),
+    [bin/magento](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises),
+    and [required PHP extensions](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions).
+  versions: 2.4.8
+  type: major-update
+  date: April 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1283
+  merge_commit: cba45d45b7b7051551e6bec981b66989091cff54
+  contributor: magedocs
+  membership: false
+  labels:
+  - major-update
+  - devops
+  - 2.4.8
+- description: Added [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for the new releases.
+  versions: 2.4.8, 2.4.7-p5, 2.4.6-p10, 2.4.5-p12, 2.4.4-p13
+  type: technical
+  date: April 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1263
+  merge_commit: 29811930541b3d91f0560a64190d790cdb742a70
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
+  - 2.4.7-p5
+  - 2.4.6-p10
+  - 2.4.5-p12
+  - 2.4.4-p13
+- description: Published release notes for the April 2025 quality and security patches:<br/>-
+    [2.4.8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)<br/>-
+    [2.4.7-p5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p10](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p12](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p13](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: 2.4.8
+  type: major-update
+  date: April 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1240
+  merge_commit: 9bfad60e8a1ebe414d5f2826eecb0a4e5e886614
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.8
+- description: Added detailed steps to the [documentation](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#mysql)
+    for upgrading to MySQL 8.4 from older versions.
+  versions: 2.4.8
+  type: major-update
+  date: April 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1246
+  merge_commit: 4378655948fd2cd5003a665a3a9ccc3ceb825b4d
+  contributor: pru34625
+  membership: false
+  labels:
+  - major-update
+  - 2.4.8
 - description: Updated the [UCT CLI reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct).
   versions: ''
   type: technical
