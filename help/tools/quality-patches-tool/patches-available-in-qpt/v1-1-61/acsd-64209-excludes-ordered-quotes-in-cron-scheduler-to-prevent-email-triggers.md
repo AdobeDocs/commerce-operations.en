@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-64209: excludes [!UICONTROL Ordered] quotes in cron scheduler to prevent email triggers'
+title: 'ACSD-64209: Excludes [!UICONTROL Ordered] quotes in cron scheduler to prevent email triggers'
 description: Apply the ACSD-64209 patch to fix the Adobe Commerce issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status [!UICONTROL Ordered], causing an email or emails to be triggered.
 feature:  B2B, Communications
 role: Admin, Developer
