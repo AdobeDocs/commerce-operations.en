@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-64467: WYSIWYG editor empty after saving category description at store view level'
-description: Apply the ACSD-64467 patch to fix the Adobe Commerce issue where the WYSIWYG editor appears empty after saving a category description at the store view level.
-feature: Page Content
+title: 'ACSD-64684: Validation error when saving a gift card with a value over 999 due to the comma in one thousand (1,000)'
+description: Apply the ACSD-64684 patch to fix the Adobe Commerce issue where a validation error occurs when saving a gift card with a value over 999 due to the comma in "one thousand" (1,000).
+feature: Catalog Management
 role: Admin, Developer
-exl-id: 8bc1794f-ace1-4719-9fff-194dbd701ab6
+exl-id: 327c5d28-b52c-4da9-a905-8a3deb755241
 ---
-# ACSD-64467: WYSIWYG editor empty after saving category description at store view level
+# ACSD-64684: Validation error when saving a gift card with a value over 999 due to the comma in one thousand (1,000)
 
-The ACSD-64467 patch fixes the issue where the WYSIWYG editor appears empty after saving a category description at the store view level. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64467. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64684 patch fixes the issue where a validation error occurs when saving a gift card with a value over 999 due to the comma in "one thousand" (1,000). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64684. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -17,7 +17,7 @@ The ACSD-64467 patch fixes the issue where the WYSIWYG editor appears empty afte
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.7 - 2.4.7-p4
+* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -25,22 +25,21 @@ The ACSD-64467 patch fixes the issue where the WYSIWYG editor appears empty afte
 
 ## Issue
 
-The WYSIWYG editor appears empty after saving a category description at the store view level.
+A validation error occurs when editing and saving a gift card with a value greater than 999 due to the comma (thousand separator) in the number, such as 'one thousand' (1,000).
 
 <u>Steps to reproduce</u>:
 
-1. Edit a category in the Commerce Admin at the store view level.
-1. Deselect the *[!UICONTROL Use default value]* checkbox next to the category description.
-1. Enter a description in the WYSIWYG editor.
-1. Click **[!UICONTROL Save]**.
+1. Create a Gift Card Product.
+    1. Enter 1,000 as the [!UICONTROL Amount].
+    1. Click **[!UICONTROL Save]**.
 
-<u>Expected results</u>: 
+<u>Expected results</u>:
 
-The description is saved and properly displayed.
+* The new gift card with an amount of 1,000 is saved.
 
 <u>Actual results</u>:
 
-The description is empty after the page reloads.
+* A validation error occurs when the gift card amount is greater than 999.
 
 ## Apply the patch
 

@@ -7,6 +7,10 @@ exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
 ---
 # ACSD-49392: Order status changes to closed after partial refund
 
+>[!NOTE]
+>
+>The patch ACSD-49392 was replaced with patch [ACSD-57003](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing) for versions 2.4.6-p7 to 2.4.6-p10.
+
 The ACSD-49392 patch fixes the issue where the order status changes to closed after a partial refund for a bundled product. This patch is available when the [!DNL Quality Patches Tool (QPT)] 1.1.31 is installed. The patch ID is ACSD-49392. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
@@ -17,7 +21,7 @@ The ACSD-49392 patch fixes the issue where the order status changes to closed af
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.3.7 - 2.3.7-p4 and 2.4.1 - 2.4.6
+* Adobe Commerce (all deployment methods) 2.3.7 - 2.3.7-p4 and 2.4.1 - 2.4.6-p6
 
 >[!NOTE]
 >
