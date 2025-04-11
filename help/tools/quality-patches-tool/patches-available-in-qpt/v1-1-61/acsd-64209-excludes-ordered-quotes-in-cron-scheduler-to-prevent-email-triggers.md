@@ -24,7 +24,7 @@ The ACSD-64209 patch fixes the issue where the cron scheduler retrieves all nego
 
 ## Issue
 
-Fixes the issue where the cron scheduler retrieves all negotiable quotes without excluding those with the status [!UICONTROL Ordered], causing an email or emails to be triggered.
+The cron scheduler retrieves all negotiable quotes without excluding those with the status *[!UICONTROL Ordered]*, causing an email or emails to be triggered.
 
 <u>Steps to reproduce</u>:
 
