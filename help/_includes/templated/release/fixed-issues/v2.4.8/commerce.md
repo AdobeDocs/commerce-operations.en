@@ -313,8 +313,8 @@ We can now update custom-created order statuses, whereas previously, the status 
 * _ACP2E-3080_: Admin Ordered Products Report date range visibility issue.
   * _Fix note_: The user will be able to select any date from the ordered products report. Previously, after a table refresh, selecting &apos;FROM&apos; date will reset &apos;TO&apos; date.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6f4805f8>
-* _ACP2E-3096_: Incorrect curl headers making newrelic:create:deploy-marker not working
-  * _Fix note_: The system now correctly formats curl headers, allowing the newrelic:create:deploy-marker command to successfully create a deployment marker in New Relic. Previously, incorrect curl headers prevented the creation of a deployment marker in New Relic.
+* _ACP2E-3096_: Incorrect curl headers making `newrelic:create:deploy-marker` not working
+  * _Fix note_: The system now correctly formats curl headers, allowing the `newrelic:create:deploy-marker` command to successfully create a deployment marker in New Relic. Previously, incorrect curl headers prevented the creation of a deployment marker in New Relic.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37641>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3146_: GTM missing addToCart event in dataLayer for configurable product with custom option
