@@ -28,7 +28,9 @@
       {%- if item.membership == false and item.link contains "github.com" -%}
       <p><i>Community contribution by {{ item.contributor }}</i></p>
       {%- endif -%}</td>
-      <td>{{ item.type }}</td>
+      <td>
+        {{ item.type | replace: "-", " " | capitalize }}
+      </td>
       {%- if item.link contains "git.corp" %}
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/{{ item.merge_commit }}">{{ item.merge_commit | slice: 0, 6 }}</a> (commit)</td>
       {%- else %}
