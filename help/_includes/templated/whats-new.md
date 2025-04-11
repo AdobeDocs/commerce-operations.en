@@ -54,7 +54,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d58695ea2c82c6e1c5f30411ef9fc343e983b892">d58695</a> (commit)</td>
     </tr>
     <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an%20issue-where-the-indexer">detailed description of the issue fixed by the ACP2E-3705 patch in the QPT 1.1.61 release</a></p>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer">detailed description of the issue fixed by the ACP2E-3705 patch in the QPT 1.1.61 release</a></p>
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaed1bc7241dc485894fcb63a99c08d26cb99a15">aaed1b</a> (commit)</td>

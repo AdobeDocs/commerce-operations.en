@@ -53,7 +53,7 @@ entries:
   - new-topic
   - qpt
 - description: Added the [detailed description of the issue fixed by the ACP2E-3705
-    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an%20issue-where-the-indexer)
+    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer)
   versions: ''
   type: new-topic
   date: April 9, 2025
