@@ -7,12 +7,14 @@ The following reference documentation is generated from the `composer.lock` file
 ## Dependencies
 
 `{{ product.name }} {{ product.version }}` has the following dependencies:
-
-```config
-{%- for dependency in product.require %}
-{{ dependency[0] }}: {{ dependency[1] }}
+{% for dependency in product.require -%}
+{%- if dependency[0] contains 'magento/module' %}
+{%- assign module = dependency[0] | split: '/' %}
+- [{{ dependency[0] }}](https://developer.adobe.com/commerce/php/module-reference/{{ module[1] }}/): {{ dependency[1] }}
+{%- else %}
+- {{ dependency[0] }}: {{ dependency[1] }}
+{%- endif %}
 {%- endfor %}
-```
 
 {%- assign packages_by_license = packages | group_by:"license" | sort: 'name' %}
 
@@ -37,12 +39,12 @@ The following reference documentation is generated from the `composer.lock` file
   <tr>
     <td>
     {%- if package.source.url contains '://'%}
-      <a href="{{ package.source.url }}">{{ package.name }}</a>
+      <a href="{{ package.source.url | remove: '.git' }}">{{ package.name }}</a>
     {%- else %}
       {{ package.name }}
     {%- endif %}
     </td>
-    <td>{{ package.type }}</td>
+    <td>{{ package.type | capitalize }}</td>
     <td>{{ package.description }}</td>
   </tr>
     {%- endunless %}

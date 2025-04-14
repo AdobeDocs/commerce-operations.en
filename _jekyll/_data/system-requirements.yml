@@ -13,7 +13,6 @@
   AWS OpenSearch: '2.19 or latest available'
   AWS S3: ✔️
   Composer: '2.8'
-  Elasticsearch: '8.17'
   MariaDB: '11.4'
   MySQL: '8.4'
   New Relic Cloud: '11.5.0.18+, 10.15.0.4+'
@@ -871,34 +870,3 @@
   AWS MQ: '3.8.11'
   AWS ElastiCache: Redis 6
   AWS Elasticsearch: '7.9'
-2.4.3-p3:
-  Composer: '1'
-  Elasticsearch: '7.16'
-  OpenSearch: '1.2'
-  OpenSearch Cloud: '1'
-  MariaDB: '10.4'
-  MySQL: '8.0'
-  PHP: '7.4'
-  RabbitMQ: '3.8'
-  Redis: '6.0'
-  Varnish: '6.5'
-  Apache: '2.4'
-  nginx: '1.18'
-  AWS Aurora (MySQL): '5.7'
-  AWS S3: ✔️
-  AWS MQ: '3.8.11'
-  AWS ElastiCache: Redis 6
-  AWS Elasticsearch: '7.9'
-2.4.2-p2:
-  Composer: '1'
-  Elasticsearch: '7.9'
-  Elasticsearch Cloud: '7.9'
-  MariaDB: '10.4'
-  MySQL: '8.0'
-  PHP: '7.4'
-  RabbitMQ: '3.8'
-  Redis: '6.0'
-  Varnish: '6.4'
-  Apache: '2.4'
-  nginx: '1.18'
-  AWS S3: ✔️
