@@ -21,7 +21,7 @@ The ACSD-64112 patch fixes the issue where the `indexer_update_all_views` cron e
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.5 - 2.4.7
+* Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p10
 
 >[!NOTE]
 >
