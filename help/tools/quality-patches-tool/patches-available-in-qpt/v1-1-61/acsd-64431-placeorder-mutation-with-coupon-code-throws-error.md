@@ -1,10 +1,10 @@
 ---
 title: 'ACSD-64431: The "placeOrder" mutation with coupon code in the request throws an internal server error'
 description: Apply the ACSD-64431 patch to fix the Adobe Commerce issue where the "placeOrder" mutation containing the coupon code information in the request throws an internal server error instead of placing the order successfully.
-feature: GraphQL, Orders, Promotions/Events 
+feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
+exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
 ---
-
 # ACSD-64431: The "placeOrder" mutation with coupon code in the request throws an internal error
 
 The ACSD-64431 patch fixes the issue where the `placeOrder` mutation containing the coupon code information in the request throws an internal server error instead of placing the order successfully. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64431. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
