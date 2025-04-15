@@ -30,6 +30,7 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 
 | Release              | General Availability | End of regular support<sup>1</sup> | End of extended support | Dependent PHP version | Dependendent MariaDB version |
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.8 | April 8, 2025        | April 11, 2028                     | N/A                     | 8.3 and 8.4           | 11.4                         |
 | Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                      | N/A                     | 8.2 and 8.3           | 10.6                         |
 | Adobe Commerce 2.4.6 | March 14, 2023       | August 11, 2026<sup>2</sup>        | N/A                     | 8.1 and 8.2           | 10.6                         |
 | Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                     | August 11,2026          | 8.1                   | 10.6<sup>3</sup>             |
@@ -55,11 +56,16 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
     <th colspan="4">2025</th>
     <th colspan="4">2026</th>
     <th colspan="4">2027</th>
+    <th colspan="4">2028</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Commerce</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
     <td>Q3</td>
@@ -90,24 +96,30 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
-    <td colspan="6"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
-    <td colspan="6"></td>
+    <td colspan="9"></td>
   </tr>
   <tr>
     <td>2.4.6</td>
     <td colspan="4"></td>
     <td colspan="15" style="background-color:#67ac68;"></td>
-    <td colspan="8"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.7</td>
     <td colspan="9"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>2.4.8</td>
+    <td colspan="13"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
