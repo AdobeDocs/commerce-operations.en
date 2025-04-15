@@ -92,8 +92,8 @@ Previously it was possible to create the Duplicate website group price customer 
   * _Fix note_: The system now correctly aligns the Page Actions Buttons to the right side of the sticky header in the admin panel, enhancing the professional look and feel. Previously, these buttons were incorrectly floating to the left side of the sticky header.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38701>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: dev:di:info error in magento 2.4.7
-  * _Fix note_: The system now correctly displays constructor parameters when executing the dev:di:info command, preventing any errors from occurring. Previously, executing this command resulted in an error due to a type mismatch in the argument.
+* _AC-11999_: `dev:di:info` error in magento 2.4.7
+  * _Fix note_: The system now correctly displays constructor parameters when executing the `dev:di:info` command, preventing any errors from occurring. Previously, executing this command resulted in an error due to a type mismatch in the argument.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38740>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_: Login as customer opt-in checkbox not translatable
@@ -238,7 +238,7 @@ We can now update custom-created order statuses, whereas previously, the status 
   * _Fix note_: After the fix, if the custom admin domain is a subdomain of the main domain, the admin is accessible only from the configured subdomain.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37663>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: Broken validation for “Maximum Qty Allowed in Shopping Cart”
+* _ACP2E-3392_: Broken validation for "Maximum Qty Allowed in Shopping Cart"
   * _Fix note_: Previously, when we put `Maximum Qty Allowed in Shopping Cart` empty, it did not throw any exception, though an empty value is not accepted here. After this fix applies, putting an empty string will throw exceptions and will not allow saving the product.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [Pagebuilder Preview UI Issue] The buttons in the Page Builder column aren't lining up correctly
@@ -962,7 +962,7 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now resets the region text field when the country is changed in the dropdown menu, ensuring that previous values do not persist. Previously, changing the country from the dropdown list did not reset the region field, causing the last saved value to be preserved.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-9240_: Deleting Customer Does Not Clean All Browser Session Data on Storefront for Logged in & Deleted Customer
-  * _Fix note_: Deleting a customer now cleans all browser session data from the storefront for logged-in and deleted customers as expected. The shopper can continue shopping, and their browser treats their session as a guest session. Previously, when the customer account for a logged-in shopper was deleted from the Admin, then the shopper’s browser threw JavaScript errors.
+  * _Fix note_: Deleting a customer now cleans all browser session data from the storefront for logged-in and deleted customers as expected. The shopper can continue shopping, and their browser treats their session as a guest session. Previously, when the customer account for a logged-in shopper was deleted from the Admin, then the shopper's browser threw JavaScript errors.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Framework
@@ -1524,27 +1524,27 @@ Previously, assigned to the admin store instead of their respective store.
 * _LYNX-399_: Placeholder thumbnail returns when a simple product added to cart within a grouped product
   * _Fix note_: Fixed an issue where adding a simple product (part of a grouped product) to the cart returned a placeholder thumbnail image, even when the product had an assigned image.
 Fix Details:
- • The product thumbnail now correctly displays the assigned image if available.
- • The thumbnail selection respects the admin configuration under:
+ * The product thumbnail now correctly displays the assigned image if available.
+ * The thumbnail selection respects the admin configuration under:
 Stores &gt; Configuration &gt; Sales &gt; Checkout &gt; Shopping Cart &gt; Grouped Product Image.
 This ensures consistent thumbnail behavior for grouped products based on store settings.
 * _LYNX-400_: Customer's custom option attributes not working with integer values
-  * _Fix note_: Fixed an issue where customer’s custom option attributes did not work when the returned value was an integer. Custom options now correctly handle and return integer values as expected.
+  * _Fix note_: Fixed an issue where customer's custom option attributes did not work when the returned value was an integer. Custom options now correctly handle and return integer values as expected.
 * _LYNX-402_: Internal server error when trying to get priceDetails for Bundle products with dynamic price
   * _Fix note_: Resolved an issue where querying price_details for bundle products with dynamic pricing via GraphQL resulted in an internal server error. This enhancement ensures stable cart queries when working with bundle products configured with dynamic pricing.
 * _LYNX-403_: only_x_left_in_stock always returns 0 for configurable products
   * _Fix note_: Resolved an issue where the only_x_left_in_stock attribute always returned 0 for configurable products when added using the parent SKU with options.
 Fix Details:
- • The only_x_left_in_stock value now accurately reflects the stock of the selected child variant instead of the parent SKU.
- • This ensures that stock levels are correctly displayed for configurable product variations in the cart and product pages.
+ * The only_x_left_in_stock value now accurately reflects the stock of the selected child variant instead of the parent SKU.
+ * This ensures that stock levels are correctly displayed for configurable product variations in the cart and product pages.
 * _LYNX-405_: GraphQL Error: Unsupported 'file' type in customizable options query
-  * _Fix note_: Fixed an issue where GraphQL returned an error for customizable options of type “file” in cart items. The query now correctly returns details for all customizable option types, including file-based options, without causing errors.
+  * _Fix note_: Fixed an issue where GraphQL returned an error for customizable options of type "file" in cart items. The query now correctly returns details for all customizable option types, including file-based options, without causing errors.
 * _LYNX-411_: GraphQL query not returning correct calculated regular price for customizable products
   * _Fix note_: Fixed an issue where GraphQL did not return the correct calculated regular price for customizable products. The query now correctly includes the calculated regular price with customizable values applied (e.g., $125) in the prices property, reflecting both the base price and any additional customization costs.
 * _LYNX-412_: AppliedTaxes via EstimatedTotals persist with updated mutations
   * _Fix note_: Fixed an issue with the EstimatedTotals mutation where applied taxes persisted on a cart even after updating the region or postcode. The mutation now correctly updates the applied taxes when changing between region and postcode values, ensuring that only the correct tax rule is applied based on the current cart data.
 * _LYNX-420_: is_available attribute in CartItemInterface returns true even when salable stock is lower than the quantity of the product
-  * _Fix note_: Fixed an issue where the is_available attribute in CartItemInterface incorrectly returned true even when the salable stock was lower than the requested product quantity. The is_available field now correctly returns false when the product’s quantity exceeds the available stock.
+  * _Fix note_: Fixed an issue where the is_available attribute in CartItemInterface incorrectly returned true even when the salable stock was lower than the requested product quantity. The is_available field now correctly returns false when the product's quantity exceeds the available stock.
 * _LYNX-421_: Cannot add coupon to cart for shipping only discount
   * _Fix note_: Fixed an issue where a coupon could not be applied to a cart for shipping-only discounts. The coupon is now correctly applied to the shipping amount when using a sales rule with no product conditions, ensuring the expected discount is applied to the shipping cost.
 * _LYNX-425_: Product regular price with 12 decimals and wrong value
@@ -1556,10 +1556,10 @@ Fix Details:
 * _LYNX-447_: GraphQL server error on cart with only_x_left_in_stock on bundled product
   * _Fix note_: Fixed an issue where fetching a cart containing a bundled product with the only_x_left_in_stock field in the GraphQL query resulted in an internal server error. GraphQL now correctly returns a float or null for the only_x_left_in_stock field without errors.
 * _LYNX-464_: GraphQL error when removing other products with insufficient configurable product in cart
-  * _Fix note_: Fixed an issue where attempting to remove in-stock products from the cart resulted in a “The requested qty is not available” GraphQL error if the cart also contained configurable products with insufficient stock. The removal now works as expected without triggering errors.
+  * _Fix note_: Fixed an issue where attempting to remove in-stock products from the cart resulted in a "The requested qty is not available" GraphQL error if the cart also contained configurable products with insufficient stock. The removal now works as expected without triggering errors.
 * _LYNX-469_: Cannot add products due to SKU in mutation being case sensitive
-  * _Fix note_: Resolved an issue where the addProductsToCart mutation returned a “PRODUCT_NOT_FOUND” error when using SKUs with different casing. The mutation now handles SKUs case-insensitively, ensuring consistency with Catalog Service queries and PDP behavior.
-* _LYNX-603_: Product attribute > trademark short form ™ is returned as &trade;
+  * _Fix note_: Resolved an issue where the addProductsToCart mutation returned a "PRODUCT_NOT_FOUND" error when using SKUs with different casing. The mutation now handles SKUs case-insensitively, ensuring consistency with Catalog Service queries and PDP behavior.
+* _LYNX-603_: Product attribute > trademark short form &trade; is returned as &trade;
   * _Fix note_: Resolved character encoding issue with the product name for the GraphQL API
 * _LYNX-619_: updateCustomerEmail mutation issue
   * _Fix note_: Resolved an issue with the updateCustomerEmail mutation where customers without required custom attributes (added after account creation) were unable to update their email.
@@ -1577,7 +1577,7 @@ Fix Details:
 * _LYNX-637_: Storefront Compatibility - Update logic to get table name with prefix and other minor improvements
   * _Fix note_: Updated logic to retrieve the table name with the prefix (related to SCP changes).
 * _LYNX-643_: save in address book does not work when using setBillingAddressOnCart GQL's same_as_shipping field
-  * _Fix note_: Fixed an issue where the shipping address was not saved to the customer’s address book when using the setBillingAddressOnCart GraphQL mutation with the same_as_shipping field set to true. Now, the shipping address is correctly stored as expected.
+  * _Fix note_: Fixed an issue where the shipping address was not saved to the customer's address book when using the setBillingAddressOnCart GraphQL mutation with the same_as_shipping field set to true. Now, the shipping address is correctly stored as expected.
 * _LYNX-650_: Standarize the order_id in mutations
   * _Fix note_: Standardized the order_id input in mutations and updated the order cancel confirmation email template to expose increment id instead of order id.
 * _LYNX-651_: CustomerOrder is not displaying the order comments
