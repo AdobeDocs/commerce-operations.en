@@ -2,10 +2,23 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Fri Apr 11 16:36:58 2025
+updated: Tue Apr 15 02:20:54 2025
 entries:
-- description: Added [detailed description of the issue fixed by the ACSD-63883
-    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list)
+- description: Update [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    tables:<br/>- Delete Elasticsearch in v2.4.8 as not supported<br/>- Delete versions
+    2.4.2 and 2.4.3 as reached the end of support
+  versions: 2.4.8
+  type: technical
+  date: April 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1305
+  merge_commit: 6557cc45c1250ca17ba53acdd2a9c4748403df8d
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
+- description: Added [detailed description of the issue fixed by the ACSD-63883 patch
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list)
   versions: ''
   type: new-topic
   date: April 10, 2025
@@ -16,8 +29,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64137
-    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
+- description: Added [detailed description of the issue fixed by the ACSD-64137 patch
+    in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
   versions: ''
   type: new-topic
   date: April 10, 2025
@@ -28,8 +41,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64684
-    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand)
+- description: Added [detailed description of the issue fixed by the ACSD-64684 patch
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand)
   versions: ''
   type: new-topic
   date: April 10, 2025
@@ -40,8 +53,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64467
-    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description)
+- description: Added [detailed description of the issue fixed by the ACSD-64467 patch
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description)
   versions: ''
   type: new-topic
   date: April 9, 2025
@@ -52,8 +65,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACP2E-3705
-    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer)
+- description: Added [detailed description of the issue fixed by the ACP2E-3705 patch
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer)
   versions: ''
   type: new-topic
   date: April 9, 2025
@@ -64,8 +77,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64149
-    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition)
+- description: Added [detailed description of the issue fixed by the ACSD-64149 patch
+    in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition)
   versions: ''
   type: new-topic
   date: April 9, 2025
@@ -76,8 +89,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64137
-    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
+- description: Added [detailed description of the issue fixed by the ACSD-64137 patch
+    in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
   versions: ''
   type: new-topic
   date: April 9, 2025
@@ -88,8 +101,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64546
-    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion)
+- description: Added [detailed description of the issue fixed by the ACSD-64546 patch
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion)
   versions: ''
   type: new-topic
   date: April 8, 2025
@@ -100,8 +113,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63974
-    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time)
+- description: Added [detailed description of the issue fixed by the ACSD-63974 patch
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time)
   versions: ''
   type: new-topic
   date: April 8, 2025
@@ -196,8 +209,8 @@ entries:
   labels:
   - technical
   - devops
-- description: Added [detailed description of the issue fixed by the ACP2E-3689
-    patch in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships)
+- description: Added [detailed description of the issue fixed by the ACP2E-3689 patch
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships)
   versions: ''
   type: new-topic
   date: April 4, 2025
@@ -208,8 +221,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64111
-    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder)
+- description: Added [detailed description of the issue fixed by the ACSD-64111 patch
+    in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder)
   versions: ''
   type: new-topic
   date: April 3, 2025
@@ -243,8 +256,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63992
-    patch in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method)
+- description: Added [detailed description of the issue fixed by the ACSD-63992 patch
+    in the QPT 1.1.60 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method)
   versions: ''
   type: new-topic
   date: March 28, 2025
@@ -337,8 +350,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-63572
-    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated)
+- description: Added [detailed description of the issue fixed by the ACSD-63572 patch
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated)
   versions: ''
   type: new-topic
   date: March 6, 2025
@@ -349,8 +362,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63469
-    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly).
+- description: Added [detailed description of the issue fixed by the ACSD-63469 patch
+    in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly).
   versions: ''
   type: new-topic
   date: March 5, 2025
@@ -361,8 +374,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64212
-    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account)
+- description: Added [detailed description of the issue fixed by the ACSD-64212 patch
+    in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account)
   versions: ''
   type: new-topic
   date: February 28, 2025
@@ -373,8 +386,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64113
-    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images)
+- description: Added [detailed description of the issue fixed by the ACSD-64113 patch
+    in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images)
   versions: ''
   type: new-topic
   date: February 28, 2025
@@ -385,8 +398,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63574
-    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error)
+- description: Added [detailed description of the issue fixed by the ACSD-63574 patch
+    in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error)
   versions: ''
   type: new-topic
   date: February 27, 2025
@@ -397,8 +410,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63793
-    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs)
+- description: Added [detailed description of the issue fixed by the ACSD-63793 patch
+    in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs)
   versions: ''
   type: new-topic
   date: February 27, 2025
@@ -409,8 +422,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-64112
-    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails).
+- description: Added [detailed description of the issue fixed by the ACSD-64112 patch
+    in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails).
   versions: ''
   type: new-topic
   date: February 21, 2025
@@ -421,8 +434,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63454
-    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown).
+- description: Added [detailed description of the issue fixed by the ACSD-63454 patch
+    in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown).
   versions: ''
   type: new-topic
   date: February 20, 2025
@@ -433,8 +446,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63870
-    patch in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change)
+- description: Added [detailed description of the issue fixed by the ACSD-63870 patch
+    in the QPT 1.1.59 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change)
   versions: ''
   type: new-topic
   date: February 19, 2025
@@ -457,8 +470,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63578
-    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku)
+- description: Added [detailed description of the issue fixed by the ACSD-63578 patch
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku)
   versions: ''
   type: new-topic
   date: February 13, 2025
@@ -511,8 +524,8 @@ entries:
   labels:
   - technical
   - devops
-- description: Added [detailed description of the issue fixed by the ACSD-63090
-    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart)
+- description: Added [detailed description of the issue fixed by the ACSD-63090 patch
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart)
   versions: ''
   type: new-topic
   date: February 7, 2025
@@ -523,8 +536,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63329
-    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api)
+- description: Added [detailed description of the issue fixed by the ACSD-63329 patch
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api)
   versions: ''
   type: new-topic
   date: February 6, 2025
@@ -535,8 +548,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63299
-    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront).
+- description: Added [detailed description of the issue fixed by the ACSD-63299 patch
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront).
   versions: ''
   type: new-topic
   date: January 31, 2025
@@ -547,8 +560,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63325
-    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request)
+- description: Added [detailed description of the issue fixed by the ACSD-63325 patch
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request)
   versions: ''
   type: new-topic
   date: January 30, 2025
@@ -559,8 +572,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-59083
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates)
+- description: Added [detailed description of the issue fixed by the ACSD-59083 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates)
   versions: ''
   type: new-topic
   date: January 29, 2025
@@ -570,8 +583,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62951
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api)
+- description: Added [detailed description of the issue fixed by the ACSD-62951 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api)
   versions: ''
   type: new-topic
   date: January 29, 2025
@@ -582,8 +595,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-61895
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission)
+- description: Added [detailed description of the issue fixed by the ACSD-61895 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission)
   versions: ''
   type: new-topic
   date: January 27, 2025
@@ -594,8 +607,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-63182
-    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication)
+- description: Added [detailed description of the issue fixed by the ACSD-63182 patch
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication)
   versions: ''
   type: new-topic
   date: January 27, 2025
@@ -606,8 +619,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-62212
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language)
+- description: Added [detailed description of the issue fixed by the ACSD-62212 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language)
   versions: ''
   type: new-topic
   date: January 22, 2025
@@ -618,8 +631,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-62481
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled)
+- description: Added [detailed description of the issue fixed by the ACSD-62481 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled)
   versions: ''
   type: new-topic
   date: January 22, 2025
@@ -630,8 +643,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-62118
-    patch in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method)
+- description: Added [detailed description of the issue fixed by the ACSD-62118 patch
+    in the QPT 1.1.58 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method)
   versions: ''
   type: new-topic
   date: January 22, 2025
@@ -654,8 +667,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-62708
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue)
+- description: Added [detailed description of the issue fixed by the ACSD-62708 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue)
   versions: ''
   type: new-topic
   date: January 15, 2025
@@ -666,8 +679,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-62689
-    patch in the QPT 1.1.57 release]<br/>(https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets)
+- description: Added [detailed description of the issue fixed by the ACSD-62689 patch
+    in the QPT 1.1.57 release]<br/>(https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets)
   versions: ''
   type: new-topic
   date: January 13, 2025
@@ -678,8 +691,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-55339
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce)
+- description: Added [detailed description of the issue fixed by the ACSD-55339 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce)
   versions: ''
   type: new-topic
   date: January 13, 2025
@@ -690,8 +703,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-61805
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api)
+- description: Added [detailed description of the issue fixed by the ACSD-61805 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api)
   versions: ''
   type: new-topic
   date: January 10, 2025
@@ -702,8 +715,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-62629
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62629-product-list-widgets-category-condition)
+- description: Added [detailed description of the issue fixed by the ACSD-62629 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62629-product-list-widgets-category-condition)
   versions: ''
   type: new-topic
   date: January 10, 2025
@@ -714,8 +727,8 @@ entries:
   labels:
   - new-topic
   - qpt
-- description: Added [detailed description of the issue fixed by the ACSD-62755
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting)
+- description: Added [detailed description of the issue fixed by the ACSD-62755 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting)
   versions: ''
   type: new-topic
   date: January 8, 2025
@@ -725,8 +738,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62670
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error)
+- description: Added [detailed description of the issue fixed by the ACSD-62670 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error)
   versions: ''
   type: new-topic
   date: January 8, 2025
@@ -736,8 +749,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60811
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values)
+- description: Added [detailed description of the issue fixed by the ACSD-60811 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values)
   versions: ''
   type: new-topic
   date: January 8, 2025
@@ -747,8 +760,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-57570
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access)
+- description: Added [detailed description of the issue fixed by the ACSD-57570 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-57570-fix-restricted-admin-access)
   versions: ''
   type: new-topic
   date: January 8, 2025
@@ -758,8 +771,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-63244
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63244-resolves-admin-panel-javascript-issues-including-google-maps-rendering-and-console-errors)
+- description: Added [detailed description of the issue fixed by the ACSD-63244 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63244-resolves-admin-panel-javascript-issues-including-google-maps-rendering-and-console-errors)
   versions: ''
   type: new-topic
   date: January 6, 2025
@@ -769,8 +782,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62355
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce)
+- description: Added [detailed description of the issue fixed by the ACSD-62355 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce)
   versions: ''
   type: new-topic
   date: January 6, 2025
@@ -780,8 +793,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61622
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response)
+- description: Added [detailed description of the issue fixed by the ACSD-61622 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response)
   versions: ''
   type: new-topic
   date: January 6, 2025
@@ -791,8 +804,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62635
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql)
+- description: Added [detailed description of the issue fixed by the ACSD-62635 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql)
   versions: ''
   type: new-topic
   date: January 6, 2025
@@ -802,8 +815,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62671
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt)
+- description: Added [detailed description of the issue fixed by the ACSD-62671 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt)
   versions: ''
   type: new-topic
   date: January 6, 2025
@@ -813,8 +826,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-63286
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear)
+- description: Added [detailed description of the issue fixed by the ACSD-63286 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear)
   versions: ''
   type: new-topic
   date: January 6, 2025
@@ -824,8 +837,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62952
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront)
+- description: Added [detailed description of the issue fixed by the ACSD-62952 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront)
   versions: ''
   type: new-topic
   date: January 3, 2025
@@ -835,8 +848,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62872
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly)
+- description: Added [detailed description of the issue fixed by the ACSD-62872 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly)
   versions: ''
   type: new-topic
   date: January 3, 2025
@@ -846,8 +859,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62758
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages)
+- description: Added [detailed description of the issue fixed by the ACSD-62758 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages)
   versions: ''
   type: new-topic
   date: January 3, 2025
@@ -857,8 +870,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62965
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response)
+- description: Added [detailed description of the issue fixed by the ACSD-62965 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response)
   versions: ''
   type: new-topic
   date: January 3, 2025
@@ -868,8 +881,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-58325
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error)
+- description: Added [detailed description of the issue fixed by the ACSD-58325 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error)
   versions: ''
   type: new-topic
   date: January 3, 2025
@@ -879,8 +892,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-63326
-    patch in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend)
+- description: Added [detailed description of the issue fixed by the ACSD-63326 patch
+    in the QPT 1.1.57 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend)
   versions: ''
   type: new-topic
   date: January 2, 2025
@@ -901,8 +914,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62979
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error)
+- description: Added [detailed description of the issue fixed by the ACSD-62979 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error)
   versions: ''
   type: new-topic
   date: December 19, 2024
@@ -912,8 +925,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62577
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization)
+- description: Added [detailed description of the issue fixed by the ACSD-62577 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization)
   versions: ''
   type: new-topic
   date: December 19, 2024
@@ -923,8 +936,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62971
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity)
+- description: Added [detailed description of the issue fixed by the ACSD-62971 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity)
   versions: ''
   type: new-topic
   date: December 19, 2024
@@ -934,8 +947,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62475
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart)
+- description: Added [detailed description of the issue fixed by the ACSD-62475 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart)
   versions: ''
   type: new-topic
   date: December 19, 2024
@@ -945,8 +958,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62591
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch)
+- description: Added [detailed description of the issue fixed by the ACSD-62591 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch)
   versions: ''
   type: new-topic
   date: December 18, 2024
@@ -967,8 +980,8 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Added [detailed description of the issue fixed by the ACSD-62793
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes)
+- description: Added [detailed description of the issue fixed by the ACSD-62793 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes)
   versions: ''
   type: new-topic
   date: December 13, 2024
@@ -978,8 +991,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62332
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page)
+- description: Added [detailed description of the issue fixed by the ACSD-62332 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page)
   versions: ''
   type: new-topic
   date: December 12, 2024
@@ -989,8 +1002,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-63242
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products)
+- description: Added [detailed description of the issue fixed by the ACSD-63242 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products)
   versions: ''
   type: new-topic
   date: December 12, 2024
@@ -1000,8 +1013,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-63242
-    patch in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules)
+- description: Added [detailed description of the issue fixed by the ACSD-63242 patch
+    in the QPT 1.1.56 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules)
   versions: ''
   type: new-topic
   date: December 12, 2024
@@ -1033,8 +1046,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-58685
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling).
+- description: Added [detailed description of the issue fixed by the ACSD-58685 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling).
   versions: ''
   type: new-topic
   date: December 6, 2024
@@ -1044,8 +1057,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-58566
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments)
+- description: Added [detailed description of the issue fixed by the ACSD-58566 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments)
   versions: ''
   type: new-topic
   date: December 6, 2024
@@ -1055,8 +1068,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60344
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval)
+- description: Added [detailed description of the issue fixed by the ACSD-60344 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval)
   versions: ''
   type: new-topic
   date: December 4, 2024
@@ -1077,8 +1090,8 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Added [detailed description of the issue fixed by the ACSD-62056
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed)
+- description: Added [detailed description of the issue fixed by the ACSD-62056 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed)
   versions: ''
   type: new-topic
   date: December 4, 2024
@@ -1088,8 +1101,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61969
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase)
+- description: Added [detailed description of the issue fixed by the ACSD-61969 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase)
   versions: ''
   type: new-topic
   date: December 3, 2024
@@ -1099,8 +1112,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-58828
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation)
+- description: Added [detailed description of the issue fixed by the ACSD-58828 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation)
   versions: ''
   type: new-topic
   date: December 3, 2024
@@ -1110,8 +1123,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61134
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow)
+- description: Added [detailed description of the issue fixed by the ACSD-61134 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow)
   versions: ''
   type: new-topic
   date: December 3, 2024
@@ -1121,8 +1134,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61785
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql)
+- description: Added [detailed description of the issue fixed by the ACSD-61785 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql)
   versions: ''
   type: new-topic
   date: November 29, 2024
@@ -1132,8 +1145,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61756
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter)
+- description: Added [detailed description of the issue fixed by the ACSD-61756 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter)
   versions: ''
   type: new-topic
   date: November 29, 2024
@@ -1143,8 +1156,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60267
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options)
+- description: Added [detailed description of the issue fixed by the ACSD-60267 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options)
   versions: ''
   type: new-topic
   date: November 29, 2024
@@ -1154,8 +1167,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61534
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set)
+- description: Added [detailed description of the issue fixed by the ACSD-61534 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set)
   versions: ''
   type: new-topic
   date: November 29, 2024
@@ -1165,8 +1178,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61348
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront)
+- description: Added [detailed description of the issue fixed by the ACSD-61348 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront)
   versions: ''
   type: new-topic
   date: November 29, 2024
@@ -1176,8 +1189,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61103
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61103-customer-entity-failure-count-not-reset-after-login)
+- description: Added [detailed description of the issue fixed by the ACSD-61103 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61103-customer-entity-failure-count-not-reset-after-login)
   versions: ''
   type: new-topic
   date: November 28, 2024
@@ -1187,8 +1200,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61799
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules)
+- description: Added [detailed description of the issue fixed by the ACSD-61799 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules)
   versions: ''
   type: new-topic
   date: November 27, 2024
@@ -1198,8 +1211,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61667
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping)
+- description: Added [detailed description of the issue fixed by the ACSD-61667 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping)
   versions: ''
   type: new-topic
   date: November 27, 2024
@@ -1209,8 +1222,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61133
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders)
+- description: Added [detailed description of the issue fixed by the ACSD-61133 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders)
   versions: ''
   type: new-topic
   date: November 27, 2024
@@ -1220,8 +1233,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-58735
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts)
+- description: Added [detailed description of the issue fixed by the ACSD-58735 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts)
   versions: ''
   type: new-topic
   date: November 25, 2024
@@ -1231,8 +1244,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-62485
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created).
+- description: Added [detailed description of the issue fixed by the ACSD-62485 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created).
   versions: ''
   type: new-topic
   date: November 25, 2024
@@ -1242,8 +1255,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-58383
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api)
+- description: Added [detailed description of the issue fixed by the ACSD-58383 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api)
   versions: ''
   type: new-topic
   date: November 22, 2024
@@ -1253,8 +1266,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-58471
-    patch in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page)
+- description: Added [detailed description of the issue fixed by the ACSD-58471 patch
+    in the QPT 1.1.55 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page)
   versions: ''
   type: new-topic
   date: November 22, 2024
@@ -1264,8 +1277,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61199
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure)
+- description: Added [detailed description of the issue fixed by the ACSD-61199 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure)
   versions: ''
   type: new-topic
   date: November 20, 2024
@@ -1286,8 +1299,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61845
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header).
+- description: Added [detailed description of the issue fixed by the ACSD-61845 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header).
   versions: ''
   type: new-topic
   date: November 19, 2024
@@ -1308,8 +1321,8 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Added [detailed description of the issue fixed by the ACSD-61553
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied)
+- description: Added [detailed description of the issue fixed by the ACSD-61553 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied)
   versions: ''
   type: new-topic
   date: November 14, 2024
@@ -1319,8 +1332,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61200
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations).
+- description: Added [detailed description of the issue fixed by the ACSD-61200 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations).
   versions: ''
   type: new-topic
   date: November 14, 2024
@@ -1330,8 +1343,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61522
-    patch in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations)
+- description: Added [detailed description of the issue fixed by the ACSD-61522 patch
+    in the QPT 1.1.54 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations)
   versions: ''
   type: new-topic
   date: November 13, 2024
@@ -1341,8 +1354,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60804
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error)
+- description: Added [detailed description of the issue fixed by the ACSD-60804 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error)
   versions: ''
   type: new-topic
   date: November 13, 2024
@@ -1352,8 +1365,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60684
-    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60684-graphql-product-sorting-by-multiple-fields-does-not-work-as-expected).
+- description: Added [detailed description of the issue fixed by the ACSD-60684 patch
+    in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60684-graphql-product-sorting-by-multiple-fields-does-not-work-as-expected).
   versions: ''
   type: new-topic
   date: November 13, 2024
@@ -1363,8 +1376,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61528
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results)
+- description: Added [detailed description of the issue fixed by the ACSD-61528 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results)
   versions: ''
   type: new-topic
   date: November 8, 2024
@@ -1374,8 +1387,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-48318
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log)
+- description: Added [detailed description of the issue fixed by the ACSD-48318 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log)
   versions: ''
   type: new-topic
   date: November 7, 2024
@@ -1385,8 +1398,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60673
-    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout)
+- description: Added [detailed description of the issue fixed by the ACSD-60673 patch
+    in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout)
   versions: ''
   type: new-topic
   date: November 7, 2024
@@ -1396,8 +1409,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-59366
-    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list).
+- description: Added [detailed description of the issue fixed by the ACSD-59366 patch
+    in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list).
   versions: ''
   type: new-topic
   date: November 7, 2024
@@ -1418,8 +1431,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60584
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-user-on-one-website-is-allowed-to-access-or-change-customer-information-on-other-websites)
+- description: Added [detailed description of the issue fixed by the ACSD-60584 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-user-on-one-website-is-allowed-to-access-or-change-customer-information-on-other-websites)
   versions: ''
   type: new-topic
   date: November 4, 2024
@@ -1450,8 +1463,8 @@ entries:
   membership: false
   labels:
   - major-update
-- description: Added [detailed description of the issue fixed by the ACSD-60234
-    patch in the QPT 1.1.51 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied).
+- description: Added [detailed description of the issue fixed by the ACSD-60234 patch
+    in the QPT 1.1.51 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied).
   versions: ''
   type: new-topic
   date: November 1, 2024
@@ -1461,8 +1474,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60788
-    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors)
+- description: Added [detailed description of the issue fixed by the ACSD-60788 patch
+    in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors)
   versions: ''
   type: new-topic
   date: October 30, 2024
@@ -1472,8 +1485,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-59786
-    patch in the QPT 1.1.51 release](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.html)
+- description: Added [detailed description of the issue fixed by the ACSD-59786 patch
+    in the QPT 1.1.51 release](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.html)
   versions: ''
   type: new-topic
   date: October 29, 2024
@@ -1483,8 +1496,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-59930
-    patch in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows)
+- description: Added [detailed description of the issue fixed by the ACSD-59930 patch
+    in the QPT 1.1.53 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows)
   versions: ''
   type: new-topic
   date: October 29, 2024
@@ -1494,8 +1507,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60631
-    patch in the QPT 1.1.51 release](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60631-graphql-returns-an-error-when-same-product-is-assigned-to-multiple-configurable-products.html)
+- description: Added [detailed description of the issue fixed by the ACSD-60631 patch
+    in the QPT 1.1.51 release](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60631-graphql-returns-an-error-when-same-product-is-assigned-to-multiple-configurable-products.html)
   versions: ''
   type: new-topic
   date: October 29, 2024
@@ -1505,8 +1518,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-60816
-    patch in the QPT 1.1.51 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp)
+- description: Added [detailed description of the issue fixed by the ACSD-60816 patch
+    in the QPT 1.1.51 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp)
   versions: ''
   type: new-topic
   date: October 24, 2024
@@ -1516,8 +1529,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-59952
-    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog)
+- description: Added [detailed description of the issue fixed by the ACSD-59952 patch
+    in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog)
   versions: ''
   type: new-topic
   date: October 22, 2024
@@ -1538,8 +1551,8 @@ entries:
   membership: false
   labels:
   - new-topic
-- description: Added [detailed description of the issue fixed by the ACSD-61366
-    patch in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error)
+- description: Added [detailed description of the issue fixed by the ACSD-61366 patch
+    in the QPT 1.1.52 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error)
   versions: ''
   type: new-topic
   date: October 21, 2024
