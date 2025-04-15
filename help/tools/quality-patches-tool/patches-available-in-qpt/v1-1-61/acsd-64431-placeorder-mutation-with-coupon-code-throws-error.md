@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-64431: The "placeOrder" mutation with coupon code in the request throws an internal error'
-description: Apply the ACSD-64431 patch to fix the Adobe Commerce issue where the "placeOrder" mutation containing the coupon code information in the request throws an internal error, instead of placing the order successfully.
+title: 'ACSD-64431: The "placeOrder" mutation with coupon code in the request throws an internal server error'
+description: Apply the ACSD-64431 patch to fix the Adobe Commerce issue where the "placeOrder" mutation containing the coupon code information in the request throws an internal server error instead of placing the order successfully.
 feature: GraphQL, Orders, Promotions/Events 
 role: Admin, Developer
 ---
 
 # ACSD-64431: The "placeOrder" mutation with coupon code in the request throws an internal error
 
-The ACSD-64431 patch fixes the issue where the `placeOrder` mutation containing the coupon code information in the request throws an internal error, instead of placing the order successfully. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64431. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64431 patch fixes the issue where the `placeOrder` mutation containing the coupon code information in the request throws an internal server error instead of placing the order successfully. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 is installed. The patch ID is ACSD-64431. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -30,7 +30,7 @@ The `placeOrder` mutation that contains the coupon code information in the reque
 <u>Steps to reproduce</u>:
 
 1. Create a simple product with _SKU 2836611_.
-1. Create a **[!UICONTROL Cart Price Rule]**, set Coupon to `Specific Coupon` and enter _TEST1234_ as the coupon code.
+1. Create a **[!UICONTROL Cart Price Rule]**, set **[!UICONTROL Coupon]** to `Specific Coupon` and enter _TEST1234_ as the coupon code.
 1. Create a customer:
 
     ```
