@@ -16,9 +16,9 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 
 - Adobe does not provide security and quality fixes for third-party services and software dependencies (such as PHP and MySQL) that may reach end of life while customers are on the three-year support period for Adobe Commerce. See the [system requirements](../installation/system-requirements.md) for a full list of tested and supported third-party technologies.
 
-- Adobe provides compatibility with third-party services and software dependencies while customers are on the three-year support period for Adobe Commerce in the scope of security-only patch releases, but only when it is possible to do so without introducing backward-incompatible changes.
-
 - For Adobe Commerce on Cloud customers using versions 2.4.4 and 2.4.5, Adobe automatically applies PHP 8.1 lifetime security fixes to the infrastructure, so these customers are not impacted by PHP 8.1 end-of-support. On-premises customers using Adobe Commerce 2.4.4 and 2.4.5 must contact Adobe Support to request PHP 8.1 lifetime security patches if needed.
+
+- Adobe provides compatibility with third-party services and software dependencies while customers are on the three-year support period for Adobe Commerce in the scope of security-only patch releases, but only when it is possible to do so without introducing backward-incompatible changes.
 
 ## Extended support
 
