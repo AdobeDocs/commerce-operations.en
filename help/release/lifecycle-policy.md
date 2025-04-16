@@ -18,6 +18,8 @@ For Adobe Commerce 2.4.4 and subsequent releases:
 
 - Adobe provides compatibility with third-party services and software dependencies while customers are on the three-year support period for Adobe Commerce in the scope of security-only patch releases, but only when it is possible to do so without introducing backward-incompatible changes.
 
+- For Adobe Commerce on Cloud customers using versions 2.4.4 and 2.4.5, Adobe automatically applies PHP 8.1 lifetime security fixes to the infrastructure, so these customers are not impacted by PHP 8.1 end-of-support. On-premises customers using Adobe Commerce 2.4.4 and 2.4.5 must contact Adobe Support to request PHP 8.1 lifetime security patches if needed.
+
 ## Extended support
 
 Adobe encourages customers to upgrade as soon as possible. However, to provide greater flexibility to align with upgrade plans and business needs, Adobe offers a one-year support extension at no additional cost for Adobe Commerce customers on versions 2.4.4 and 2.4.5. The support extension includes quality and security patches for the core application for up to one year.
