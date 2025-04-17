@@ -9,11 +9,12 @@ Adobe Commerce uses [semantic versioning](https://semver.org/) on the individual
 
 - **MAJOR release**—2
 - **MINOR release**—2.4
-- **PATCH release**—2.4.5
-  - **SECURITY patch release**—2.4.5-p1
+- **PATCH release**—2.4.8
+  - **SECURITY patch release**—2.4.8-p1
     - Security bug fix
     - Security enhancement
-- **BETA patch release**—2.4.7-beta2
+- **ALPHA patch release**—2.4.8-alpha1
+- **BETA patch release**—2.4.8-beta1
 - **Extensibility, Infrastructure, and Services release**
 - **Hotfix**
 - **Individual patch**
@@ -42,11 +43,17 @@ The following guidelines apply to patch releases:
 
 {{$include /help/_includes/release-notes/security-patch-overview.md}}
 
+## ALPHA patch release
+
+Pre-Beta releases of Adobe Commerce features that are made publicly available to all Adobe Commerce customers and Adobe partners. Alpha releases are intended for early feedback and evaluation of features that are still in active development. These releases provide an opportunity for early testing and integration planning ahead of Beta and General Availability releases.
+
+Alpha releases may be incomplete, and are likely to contain defects. They are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) Alpha releases. Customers should not rely on the correct functioning or performance of Alpha releases or any accompanying documentation or materials. Use of Alpha releases is entirely at the customer's own risk.
+
 ## BETA patch release
 
-Pre-general availability releases of Adobe Commerce features are made publicly available to all Adobe Commerce customers and Adobe partners. It allows for extra time before General Availability to review code and affected components.
+Pre-General Availability releases of Adobe Commerce features are made publicly available to all Adobe Commerce customers and Adobe partners. It allows for extra time before General Availability to review code and affected components.
 
-Beta Releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) the Beta Releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of the Beta Releases and/or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at Customer's own risk.
+Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe will have no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) Beta releases. Customers are advised to use caution and not to rely in any way on the correct functioning or performance of Beta releases or any accompanying documentation or materials. Accordingly, any use of the Beta Releases is entirely at customer's own risk.
 
 ## Features, cloud infrastructure, and extensibility release
 
