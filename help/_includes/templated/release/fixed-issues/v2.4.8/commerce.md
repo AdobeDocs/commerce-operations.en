@@ -238,7 +238,7 @@ We can now update custom-created order statuses, whereas previously, the status 
   * _Fix note_: After the fix, if the custom admin domain is a subdomain of the main domain, the admin is accessible only from the configured subdomain.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/37663>
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: Broken validation for "Maximum Qty Allowed in Shopping Cart"
+* _ACP2E-3392_: Broken validation for 'Maximum Qty Allowed in Shopping Cart'
   * _Fix note_: Previously, when we put `Maximum Qty Allowed in Shopping Cart` empty, it did not throw any exception, though an empty value is not accepted here. After this fix applies, putting an empty string will throw exceptions and will not allow saving the product.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [Pagebuilder Preview UI Issue] The buttons in the Page Builder column aren't lining up correctly
@@ -962,7 +962,7 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now resets the region text field when the country is changed in the dropdown menu, ensuring that previous values do not persist. Previously, changing the country from the dropdown list did not reset the region field, causing the last saved value to be preserved.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-9240_: Deleting Customer Does Not Clean All Browser Session Data on Storefront for Logged in & Deleted Customer
-  * _Fix note_: Deleting a customer now cleans all browser session data from the storefront for logged-in and deleted customers as expected. The shopper can continue shopping, and their browser treats their session as a guest session. Previously, when the customer account for a logged-in shopper was deleted from the Admin, then the shopper's browser threw JavaScript errors.
+  * _Fix note_: Deleting a customer now cleans all browser session data from the storefront for logged-in and deleted customers as expected. The shopper can continue shopping, and their browser treats their session as a guest session. Previously, when the customer account for a logged-in shopper was deleted from the Admin, then the shopper&apos;s browser threw JavaScript errors.
   * _GitHub code contribution_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Framework
@@ -1082,8 +1082,8 @@ Previously the records in the Bundle product sequence tables were not removed.
   * _Fix note_: The system now correctly references classes in modules, ensuring smoother operation and preventing crashes due to non-existing classes. This includes a bugfix in the Indexer and Creditmemo modules, and the implementation of the HttpGetActionInterface in the PrintAction class. Previously, incorrect class references led to errors and potential system crashes, and certain functionalities, such as the filename for creditmemo PDF files and reindexing of stocks, were not working as expected.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/39126>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_: Ability to define Area for dev:di:info CLI command
-  * _Fix note_: The system now allows developers to define an area for the dev:di:info CLI command, enhancing the development and debugging process. Previously, this command could only display information for the GLOBAL area.
+* _AC-12964_: Ability to define Area for `dev:di:info` CLI command
+  * _Fix note_: The system now allows developers to define an area for the `dev:di:info` CLI command, enhancing the development and debugging process. Previously, this command could only display information for the GLOBAL area.
   * _GitHub issue_: <https://github.com/magento/magento2/issues/38758>
   * _GitHub code contribution_: <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_: [Issue] add isMultipleFiles property to image form element template
@@ -1529,7 +1529,7 @@ Fix Details:
 Stores &gt; Configuration &gt; Sales &gt; Checkout &gt; Shopping Cart &gt; Grouped Product Image.
 This ensures consistent thumbnail behavior for grouped products based on store settings.
 * _LYNX-400_: Customer's custom option attributes not working with integer values
-  * _Fix note_: Fixed an issue where customer's custom option attributes did not work when the returned value was an integer. Custom options now correctly handle and return integer values as expected.
+  * _Fix note_: Fixed an issue where customer&apos;s custom option attributes did not work when the returned value was an integer. Custom options now correctly handle and return integer values as expected.
 * _LYNX-402_: Internal server error when trying to get priceDetails for Bundle products with dynamic price
   * _Fix note_: Resolved an issue where querying price_details for bundle products with dynamic pricing via GraphQL resulted in an internal server error. This enhancement ensures stable cart queries when working with bundle products configured with dynamic pricing.
 * _LYNX-403_: only_x_left_in_stock always returns 0 for configurable products
@@ -1538,13 +1538,13 @@ Fix Details:
  * The only_x_left_in_stock value now accurately reflects the stock of the selected child variant instead of the parent SKU.
  * This ensures that stock levels are correctly displayed for configurable product variations in the cart and product pages.
 * _LYNX-405_: GraphQL Error: Unsupported 'file' type in customizable options query
-  * _Fix note_: Fixed an issue where GraphQL returned an error for customizable options of type "file" in cart items. The query now correctly returns details for all customizable option types, including file-based options, without causing errors.
+  * _Fix note_: Fixed an issue where GraphQL returned an error for customizable options of type &apos;file&apos; in cart items. The query now correctly returns details for all customizable option types, including file-based options, without causing errors.
 * _LYNX-411_: GraphQL query not returning correct calculated regular price for customizable products
   * _Fix note_: Fixed an issue where GraphQL did not return the correct calculated regular price for customizable products. The query now correctly includes the calculated regular price with customizable values applied (e.g., $125) in the prices property, reflecting both the base price and any additional customization costs.
 * _LYNX-412_: AppliedTaxes via EstimatedTotals persist with updated mutations
   * _Fix note_: Fixed an issue with the EstimatedTotals mutation where applied taxes persisted on a cart even after updating the region or postcode. The mutation now correctly updates the applied taxes when changing between region and postcode values, ensuring that only the correct tax rule is applied based on the current cart data.
 * _LYNX-420_: is_available attribute in CartItemInterface returns true even when salable stock is lower than the quantity of the product
-  * _Fix note_: Fixed an issue where the is_available attribute in CartItemInterface incorrectly returned true even when the salable stock was lower than the requested product quantity. The is_available field now correctly returns false when the product's quantity exceeds the available stock.
+  * _Fix note_: Fixed an issue where the is_available attribute in CartItemInterface incorrectly returned true even when the salable stock was lower than the requested product quantity. The is_available field now correctly returns false when the product&apos;s quantity exceeds the available stock.
 * _LYNX-421_: Cannot add coupon to cart for shipping only discount
   * _Fix note_: Fixed an issue where a coupon could not be applied to a cart for shipping-only discounts. The coupon is now correctly applied to the shipping amount when using a sales rule with no product conditions, ensuring the expected discount is applied to the shipping cost.
 * _LYNX-425_: Product regular price with 12 decimals and wrong value
@@ -1556,9 +1556,9 @@ Fix Details:
 * _LYNX-447_: GraphQL server error on cart with only_x_left_in_stock on bundled product
   * _Fix note_: Fixed an issue where fetching a cart containing a bundled product with the only_x_left_in_stock field in the GraphQL query resulted in an internal server error. GraphQL now correctly returns a float or null for the only_x_left_in_stock field without errors.
 * _LYNX-464_: GraphQL error when removing other products with insufficient configurable product in cart
-  * _Fix note_: Fixed an issue where attempting to remove in-stock products from the cart resulted in a "The requested qty is not available" GraphQL error if the cart also contained configurable products with insufficient stock. The removal now works as expected without triggering errors.
+  * _Fix note_: Fixed an issue where attempting to remove in-stock products from the cart resulted in a &apos;The requested qty is not available&apos; GraphQL error if the cart also contained configurable products with insufficient stock. The removal now works as expected without triggering errors.
 * _LYNX-469_: Cannot add products due to SKU in mutation being case sensitive
-  * _Fix note_: Resolved an issue where the addProductsToCart mutation returned a "PRODUCT_NOT_FOUND" error when using SKUs with different casing. The mutation now handles SKUs case-insensitively, ensuring consistency with Catalog Service queries and PDP behavior.
+  * _Fix note_: Resolved an issue where the addProductsToCart mutation returned a &apos;PRODUCT_NOT_FOUND&apos; error when using SKUs with different casing. The mutation now handles SKUs case-insensitively, ensuring consistency with Catalog Service queries and PDP behavior.
 * _LYNX-603_: Product attribute > trademark short form &trade; is returned as &trade;
   * _Fix note_: Resolved character encoding issue with the product name for the GraphQL API
 * _LYNX-619_: updateCustomerEmail mutation issue
@@ -1577,7 +1577,7 @@ Fix Details:
 * _LYNX-637_: Storefront Compatibility - Update logic to get table name with prefix and other minor improvements
   * _Fix note_: Updated logic to retrieve the table name with the prefix (related to SCP changes).
 * _LYNX-643_: save in address book does not work when using setBillingAddressOnCart GQL's same_as_shipping field
-  * _Fix note_: Fixed an issue where the shipping address was not saved to the customer's address book when using the setBillingAddressOnCart GraphQL mutation with the same_as_shipping field set to true. Now, the shipping address is correctly stored as expected.
+  * _Fix note_: Fixed an issue where the shipping address was not saved to the customer&apos;s address book when using the setBillingAddressOnCart GraphQL mutation with the same_as_shipping field set to true. Now, the shipping address is correctly stored as expected.
 * _LYNX-650_: Standarize the order_id in mutations
   * _Fix note_: Standardized the order_id input in mutations and updated the order cancel confirmation email template to expose increment id instead of order id.
 * _LYNX-651_: CustomerOrder is not displaying the order comments
