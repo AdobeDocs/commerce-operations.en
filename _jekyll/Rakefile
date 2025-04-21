@@ -172,7 +172,7 @@ task :get_released_versions do
   puts "Find results in ".green + "tmp/core-release.txt".blue
 end
 
-desc 'Get the first merge date for a pull request in the base branch. Requires GitHub CLI.
+desc 'Get the date of the first merge into a branch. Requires GitHub CLI.
   Example: rake first_merge_date base=develop.'
 task :first_merge_date do
   base_branch = ENV['base'] || abort('ERROR: Please provide the base branch.'.red)
