@@ -1,3 +1,5 @@
 exclude:
   - Rakefile
   - tmp
+  - Gemfile
+  - Gemfile.lock
