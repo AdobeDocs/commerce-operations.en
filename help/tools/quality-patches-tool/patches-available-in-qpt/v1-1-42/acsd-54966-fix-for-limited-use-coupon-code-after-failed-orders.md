@@ -14,10 +14,12 @@ The ACSD-54966 patch fixes the issue preventing the reuse of coupon codes limite
 **The patch is created for Adobe Commerce version:**
 
 * Adobe Commerce (all deployment methods) 2.4.6-p1
+* Adobe Commerce 2.4.7-p2  
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.5 - 2.4.6-p3
+* Adobe Commerce (all deployment methods) 2.4.5 - 2.4.5-p10, 2.4.6 - 2.4.6-p8
+* Adobe Commerce: 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -56,6 +58,5 @@ To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
-
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.
