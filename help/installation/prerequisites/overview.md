@@ -7,7 +7,7 @@ exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 
 Before you install Adobe Commerce, you must do the following:
 
-*  Set up one or more hosts that meet the [system requirements](../system-requirements.md).
+*  Set up one or more hosts that meet the [system requirements](../system-requirements.md) listed in the *Commerce on-premises* tab.
 *  If you are setting up more than one web node with load balancing, set up and test that part of your system _before_ you install the application.
 *  Make sure you can back up your entire system at various points during the installation so that you can roll it back if there are issues.
 
@@ -60,11 +60,11 @@ To install or upgrade Apache, see [Apache](web-server/apache.md).
 
 ### PHP
 
-See [system requirements](../system-requirements.md) for supported versions of PHP and [PHP](../system-requirements.md#php-settings) for PHP requirements.
+See the *Commerce on-premises* tab in the [system requirements](../system-requirements.md) for supported versions of PHP and [PHP](../system-requirements.md#php-settings) for PHP requirements.
 
 ### MySQL
 
-Check that you have a compatible version of MySQL for the version of Adobe Commerce you are installing. See [System requirements](../system-requirements.md) for supported versions.
+Check that you have a compatible version of MySQL for the version of Adobe Commerce you are installing. See the *Commerce on-premises* tabe in the [System requirements](../system-requirements.md) for supported versions.
 
 ```bash
 mysql -u <database root user or database owner name> -p
