@@ -60,7 +60,7 @@ To install or upgrade Apache, see [Apache](web-server/apache.md).
 
 ### PHP
 
-See the *Commerce on-premises* tab in the [system requirements](../system-requirements.md) for supported versions of PHP and [PHP](../system-requirements.md#php-settings) for PHP requirements.
+See the *Commerce on-premises* tab in [system requirements](../system-requirements.md) for supported versions of PHP and [PHP](../system-requirements.md#php-settings) for PHP requirements.
 
 ### MySQL
 
