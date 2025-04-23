@@ -64,7 +64,7 @@ See the *Commerce on-premises* tab in [system requirements](../system-requiremen
 
 ### MySQL
 
-Check that you have a compatible version of MySQL for the version of Adobe Commerce you are installing. See the *Commerce on-premises* tabe in the [System requirements](../system-requirements.md) for supported versions.
+Check that you have a compatible version of MySQL for the version of Adobe Commerce you are installing. See the *Commerce on-premises* tab in [System requirements](../system-requirements.md) for supported versions.
 
 ```bash
 mysql -u <database root user or database owner name> -p
