@@ -25,19 +25,7 @@ This release introduces support for the Adobe Commerce [HIPAA-ready extension](h
 
 Additionally, for versions 2.4.7-p3, 2.4.7-p4, and 2.4.7-p5, the Braintree extension version 4.6.1-p5 may be installed, while some users expect 4.6.1-p3 or p4, due to prior stricter dependencies having been relaxed to allow for extension upgrades within a release line. <!-- AC-14430 -->
 
-**Workaround**: If you require the use of 2.4.7-p5 on PHP 8.2+, override the `paypal/module-braintree` version in your `composer.json` file to enforce version 4.6.1-p5, which is verified for compatibility with the 2.4.7 line.
-
-Specify 4.6.1-p5 as your dependency to ensure that Composer pulls in the correct version.
-
-```json
-"require": {
-  "paypal/module-braintree": "~4.6.0"
-}
-```
-
-Alternatively, use PHP 8.1, which automatically pulls in the compatible Braintree version as dictated by `adobe-commerce/extensions-metapackage:2.0.0`.
-
-For all 2.4.7 patch releases, if you need to lock to a particular Braintree version (for example, 4.6.1-p3 or 4.6.1-p4) for compatibility reasons, use Composer's version constraints explicitly in your project dependencies.
+**Workaround**: To ensure that you have the correct Braintree version for your PHP version, run `composer update` to install the appropriate version as dictated by the `adobe-commerce/extensions-metapackage:2.0.0` dependency.
 
 ## 2.4.7-p4
 
