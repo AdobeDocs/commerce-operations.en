@@ -10,7 +10,6 @@ exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 - Configure Valkey L2 cache
 - Pre-load keys
 - Enable stale cache
-- Separate the Valkey cache from the Valkey session
 - Compress the Valkey cache and use `gzip` for higher compression
 
 ## Configure Valkey L2 cache
@@ -44,7 +43,7 @@ It is important to adjust the L2 cache memory maximum usage based on project req
 
 - Create a support ticket to request size changes of the `/dev/shm` mount.
 - Adjust the `cleanup_percentage` property at the application level to cap the maximum filling percentage of the storage. The remaining free memory can be used by other services.
-   You can adjust the configuration in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`.
+  You can adjust the configuration in the deployment configuration under the cache configuration group `cache/frontend/default/backend_options/cleanup_percentage`.
 
 >[!NOTE]
 >
@@ -155,80 +154,6 @@ stage:
 >In the previous example, the `full_page` cache is not relevant to Adobe Commerce on cloud infrastructure projects, because they use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 For configuring on-premises installations, see [Stale cache options](../../../configuration/cache/level-two-cache.md#stale-cache-options) in the _Configuration Guide_.
-
-## Separate Valkey cache and session instances
-
-Separating the Valkey cache from Valkey session allows you to manage the cache and sessions independently. It prevents cache issues from affecting sessions, which could impact revenue. Each Valkey instance runs on its own core, which improves performance.
-
-1. Update the `.magento/services.yaml` configuration file.
-
-   ```yaml
-   mysql:
-       type: mysql:10.4
-       disk: 35000
-
-   cache:
-      type: valkey:6.0
-
-   valkey-session:              # This is for the new Valkey instance
-      type: valkey:8.0
-
-   search:
-      type: elasticsearch:7.9
-      disk: 5000
-
-   rabbitmq:
-      type: rabbitmq:3.8
-      disk: 2048
-   ```
-
-1. Update the `.magento.app.yaml` configuration file.
-
-   ```yaml
-   relationships:
-       database: "mysql:mysql"
-       valkey: "cache:valkey"
-       valkey-session: "valkey-session:valkey"   # Relationship of the new Valkey instance
-       search: "search:elasticsearch"
-       rabbitmq: "rabbitmq:rabbitmq"
-   ```
-
-1. Submit an [Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) to request the provisioning of a new Valkey instance dedicated to sessions on Production and Staging environments. Include the updated `.magento/services.yaml` and `.magento.app.yaml` configuration files. This won't cause any downtime, but it requires a deployment to activate the new service.
-
-1. Verify that the new instance is running and make a note of the port number.
-
-   ```bash
-   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
-   ```
-
-1. Add the port number to the `.magento.env.yaml` configuration file.
-
-   >[!IMPORTANT]
-   >
-   >Configure the valkey session port only if `ece-tools` is unable to automatically detect it from the `MAGENTO_CLOUD_RELATIONSHIPS` valkey session service definition.
-
-   >[!NOTE]
-   >
-   >`disable_locking` must be set to `1`.
-
-   ```yaml
-   SESSION_CONFIGURATION:
-     _merge: true
-     valkey:
-       port: 6370 # check the port in $MAGENTO_CLOUD_RELATIONSHIPS and put it here (by default, you can delete this line!!)
-       timeout: 5
-       disable_locking: 1
-       bot_first_lifetime: 60
-       bot_lifetime: 7200
-       max_lifetime: 2592000
-       min_lifetime: 60
-   ```
-
-1. Remove sessions from the [default database](../../../configuration/cache/redis-pg-cache.md) (`db 0`) on the Valkey cache instance.
-
-   ```bash
-   valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
-   ```
 
 During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
