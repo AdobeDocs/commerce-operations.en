@@ -15,6 +15,7 @@ labels:
     - major-update
   optional:
     - technical
+    - qpt
 
 # Format of output file
 output_format:
