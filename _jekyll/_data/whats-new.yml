@@ -2,8 +2,31 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Apr 15 02:20:54 2025
+updated: Tue Apr 29 02:20:49 2025
 entries:
+- description: Added 2.4.8 to the [lifecycle policy](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy).
+  versions: 2.4.8
+  type: major-update
+  date: April 18, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1309
+  merge_commit: 915f5f61c27bedeafdceee7a8c2e0cd474765418
+  contributor: jmatthew
+  membership: false
+  labels:
+  - major-update
+  - 2.4.8
+- description: Added [detailed description of the issue fixed by the ACSD-64431 patch
+    in the QPT 1.1.61 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error).
+  versions: ''
+  type: new-topic
+  date: April 15, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1292
+  merge_commit: 13f5f1c06e5c60047ed246bee766b7f515b0661f
+  contributor: glo51235
+  membership: false
+  labels:
+  - new-topic
+  - qpt
 - description: Update [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
     tables:<br/>- Delete Elasticsearch in v2.4.8 as not supported<br/>- Delete versions
     2.4.2 and 2.4.3 as reached the end of support
