@@ -17,7 +17,6 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.63 {#v1-1-63}
 
-* **ACP2E-3651** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the cart price rule for multi-shipping products doesn't apply correctly when sub-select conditions are used and free shipping is enabled.
 * **ACSD-64627** (for Adobe Commerce >=2.4.6-p8 <2.4.8) - Fixes the issue where custom customer attributes can't be saved when adding or editing users within the Company Structure.
 * **ACSD-64753** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the pre-selected store in "Pickup in Store" doesn't update when the shipping address changes, even if it is outside the store's radius.
 * **ACSD-65195** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the GraphQL mutation `createCompany` throws an error for a country without a required region.
