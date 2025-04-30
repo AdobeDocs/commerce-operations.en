@@ -4,16 +4,24 @@
 ### {{ group.name }}
 {% assign sorted_fixes = group.items | sort: 'Issue key' %}
 {%- for fix in sorted_fixes %}
-* _{{fix['Issue key']}}_: {{fix['Summary'] | xml_escape }}
+* __{{fix['Summary'] | xml_escape }}__
 {%- unless fix['Custom field (Release Note)'] == empty %}
-  * _Fix note_: {{fix['Custom field (Release Note)'] | xml_escape }}
-{%- endunless %}
-{%- unless fix['Custom field (External Issue URL)'] == empty %}
-  * _GitHub issue_: <{{fix['Custom field (External Issue URL)']}}>
-{%- endunless %}
-{%- unless fix['Custom field (Git Pull Request)'] == empty %}
-  * _GitHub code contribution_: {{fix['Custom field (Git Pull Request)']}}
-{%- endunless %}
+  {{fix['Custom field (Release Note)'] | xml_escape }}
+{%- endunless -%}
 
+{% capture key %}{{fix['Issue key']}}{% endcapture %}
+
+{%- capture issue -%}
+{%- unless fix['Custom field (External Issue URL)'] == empty %} - [GitHub issue]({{fix['Custom field (External Issue URL)']}})
+{%- endunless -%}
+{%- endcapture -%}
+{%- capture contribution -%}
+{%- unless fix['Custom field (Git Pull Request)'] == empty -%}
+{%- assign prs = fix['Custom field (Git Pull Request)'] | split: ', ' -%}
+{%- for pr in prs %} - [GitHub code contribution]({{pr}})
+{%- endfor -%}
+{%- endunless -%}
+{%- endcapture %}
+  _{{ key }}{{ issue }}{{ contribution }}_
 {%- endfor %}
 {%- endfor %}
