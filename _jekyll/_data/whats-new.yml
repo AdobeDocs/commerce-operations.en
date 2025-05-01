@@ -2,8 +2,34 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Apr 29 12:15:30 2025
+updated: Thu May 1 01:34:50 2025
 entries:
+- description: Improved release notes formatting for fixed issues in [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)
+    2.4.8. (Credits to [@hostep](https://github.com/hostep))
+  versions: 2.4.8
+  type: technical
+  date: May 1, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1326
+  merge_commit: 35df05be16d3da775b9cead47d2895b63d575892
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
+- description: Fixed text rendering in Release notes for [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8).
+    (Credits to [@hostep](https://github.com/hostep))
+  versions: 2.4.8
+  type: technical
+  date: April 30, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1325
+  merge_commit: ce23f97dfa62e9b9b57b6db62a7d0c97d3faf7a6
+  contributor: shevtsov
+  membership: false
+  labels:
+  - technical
+  - 2.4.8
 - description: Added a known issue about Braintree to the [2.4.7-p5 release notes](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5).
   versions: 2.4.7-p5
   type: major-update
