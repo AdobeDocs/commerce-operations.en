@@ -7,7 +7,7 @@ exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 
 Before you install Adobe Commerce, you must do the following:
 
-*  Set up one or more hosts that meet the [system requirements](../system-requirements.md).
+*  Set up one or more hosts that meet the [system requirements](../system-requirements.md) listed in the *Commerce on-premises* tab.
 *  If you are setting up more than one web node with load balancing, set up and test that part of your system _before_ you install the application.
 *  Make sure you can back up your entire system at various points during the installation so that you can roll it back if there are issues.
 
@@ -51,7 +51,7 @@ Ubuntu: `apache2 -v`
 
 Adobe Commerce supports Apache version 2.4 as the following result indicates:
 
-```terminal
+```
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
@@ -60,11 +60,11 @@ To install or upgrade Apache, see [Apache](web-server/apache.md).
 
 ### PHP
 
-See [system requirements](../system-requirements.md) for supported versions of PHP and [PHP](../system-requirements.md#php-settings) for PHP requirements.
+See the *Commerce on-premises* tab in [system requirements](../system-requirements.md) for supported versions of PHP and [PHP](../system-requirements.md#php-settings) for PHP requirements.
 
 ### MySQL
 
-Check that you have a compatible version of MySQL for the version of Adobe Commerce you are installing. See [System requirements](../system-requirements.md) for supported versions.
+Check that you have a compatible version of MySQL for the version of Adobe Commerce you are installing. See the *Commerce on-premises* tab in [System requirements](../system-requirements.md) for supported versions.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -78,7 +78,7 @@ mysql -u magento -p
 
 The following result indicates the version that you are running.
 
-```terminal
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: 5.7.9 MySQL Community Server (GPL)
@@ -116,7 +116,7 @@ For example:
 curl -XGET 'localhost:9200'
 ```
 
-```terminal
+```
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

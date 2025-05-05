@@ -21,13 +21,13 @@ Use this following collection of guides to learn about system administration con
       <p>Review all release information for Adobe Commerce patches and services.</p>
     </div>
   </td>
-  <td valign="top">
-    <a href="../performance/overview.md">
-       <img alt="Performance" src="../assets/icons/gauge.svg" width="40"/>
+    <td valign="top">
+    <a href="../implementation-playbook/overview.md">
+      <img alt="Implementation" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
-      <p>Use these recommendations to optimize the performance of your Adobe Commerce deployment.</p>
+      <a href="../implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
+      <p>Learn about strategies for planning and implementing a successful Adobe Commerce site.</p>
     </div>
   </td>
   <td valign="top">
@@ -39,33 +39,13 @@ Use this following collection of guides to learn about system administration con
       <p>Learn how Adobe Commerce merchants are responsible for maintaining a secure environment.</p>
     </div>
   </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../implementation-playbook/overview.md">
-      <img alt="Implementation" src="../assets/icons/play.svg" width="40"/>
+    <td valign="top">
+    <a href="../performance/overview.md">
+       <img alt="Performance" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
-      <p>Learn about strategies for planning and implementing a successful Adobe Commerce site.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="Operations" src="../assets/icons/refresh.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../operational-playbook/overview.md"><strong>Operational Playbook</strong></a>
-      <p>Learn how to get your businesses operationally ready to run a successful ecommerce site.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../commerce-at-scale/overview.md">
-       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Commerce at Scale</strong></a>
-      <p>Learn how to deliver experiences at scale using Adobe Commerce with Adobe Experience Manager.</p>
+      <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
+      <p>Use these recommendations to optimize the performance of your Adobe Commerce deployment.</p>
     </div>
   </td>
 </tr>

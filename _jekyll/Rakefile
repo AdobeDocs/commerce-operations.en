@@ -1,7 +1,16 @@
+#
+# ADOBE CONFIDENTIAL
+# Copyright 2024 Adobe All Rights Reserved.
+# NOTICE:  All information contained herein is, and remains the property of Adobe and its suppliers, if any.
+# The intellectual and technical concepts contained herein are proprietary to Adobe and its suppliers and are protected by all applicable intellectual property laws, including trade secret and copyright laws.
+# Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained from Adobe.
+#
+
 # frozen_string_literal: true
 
 require 'yaml'
 require 'colorator'
+require 'date'
 
 desc 'Generate data for a news digest.
       Default timeframe is since last update.
@@ -73,7 +82,8 @@ task :whatsnew_bp do
   puts report
 end
 
-desc 'Render the templated files'
+desc 'Render the templated files.
+  Renders the templated files in the "_jekyll/templates" directory. The result will be found in the "help/includes/templated" directory.'
 task :render do
   sh '_scripts/render'
 end
@@ -98,4 +108,75 @@ task :image_optim do
   end
 
   system "bundle exec image_optim --recursive --no-svgo #{path}"
+end
+
+desc 'Find unused images.'
+task :unused_images do
+  puts 'Running a task for finding unused images (png,svg,jpeg,jpg,ico)'.magenta
+  images = FileList['../help/**/*.{png,svg,jpeg,jpg,ico}']
+
+  puts "The project contains a total of #{images.size} images."
+
+  puts 'Checking for unlinked images...'
+  Dir['../help/**/*.{md}'].each do |file|
+    # Exclude symlinks
+    next if File.symlink? file
+
+    images.delete_if { |image| File.read(file).include?(File.basename(image)) }
+  end
+
+  if images.empty?
+    puts 'No unlinked images'.green
+  else
+    images.each do |image|
+      puts "No links for #{image}".yellow
+    end
+    puts "Found #{images.size} dangling images".red
+  end
+end
+
+desc 'Find unused includes.'
+task :unused_includes do
+  puts 'Running a task to find unused _includes'.magenta
+  includes = FileList['../help/_includes/**/*']
+
+  puts "The project contains a total of #{includes.size} includes"
+  
+  # snippets.md is expected and should not be removed based on the way the snippets functionality was designed for ExL.
+  # See https://experienceleague.corp.adobe.com/docs/authoring-guide-exl/using/authoring/includes-snippets.html?lang=en#creating-snippets.
+  exclude = '../help/_includes/snippets.md'
+  includes.exclude(exclude) if exclude
+
+  Dir['../help/**/*.{md}'].each do |file|
+    next if File.symlink? file
+
+    includes.delete_if { |include| File.read(file).include?(File.basename(include)) }
+  end
+
+  if includes.empty?
+    puts 'No unlinked includes'.green
+  else
+    puts 'The following includes are not linked:'
+    includes.each do |include|
+      puts "No links for #{include}".yellow
+    end
+    puts "Found #{includes.size} unlinked includes".red
+  end
+end
+
+desc 'Get released versions. Requires GitHub CLI.
+  Generates the "tmp/core-release.txt" file with the last 10 released versions from magento/magento2.'
+task :get_released_versions do
+  Dir.mkdir('tmp') unless Dir.exist?('tmp')
+  sh 'gh --repo=magento/magento2 release list --limit 10 | grep --only-matching --extended-regexp "2\.4\.\d\d?|2\.\d\d?\.\d\d?-p\d\d?|2\.\d\d?\.\d\d?-beta\d"| uniq | xargs -I {} gh --repo=magento/magento2 release view {} --json tagName,publishedAt > tmp/core-release.txt'
+  puts "Find results in ".green + "tmp/core-release.txt".blue
+end
+
+desc 'Get the date of the first merge into a branch. Requires GitHub CLI.
+  Example: rake first_merge_date base=develop.'
+task :first_merge_date do
+  base_branch = ENV['base'] || abort('ERROR: Please provide the base branch.'.red)
+  merged_at=`gh pr list --search 'is:pr is:merged base:#{base_branch} sort:merged_at' --limit 1 --json mergedAt --jq '.[0].mergedAt'`
+  date_only = DateTime.parse(merged_at).strftime('%Y-%m-%d')
+  puts "The first merge date for a PR in the branch #{base_branch.magenta} is #{date_only.green}"
 end

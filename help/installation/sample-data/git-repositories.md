@@ -55,7 +55,7 @@ To clone the sample data GitHub repository using the SSH protocol:
    >
    >If the following error displays, make sure you [shared your SSH key](https://docs.github.com/articles/generating-ssh-keys/) with GitHub:<br>
 
-   ```terminal
+   ```
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly

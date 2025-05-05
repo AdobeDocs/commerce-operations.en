@@ -1,0 +1,27 @@
+{%- assign grouped_fixes = fixes | sort: 'Components' | group_by: 'Components' %}
+{%- for group in grouped_fixes %}
+
+### {{ group.name }}
+{% assign sorted_fixes = group.items | sort: 'Issue key' %}
+{%- for fix in sorted_fixes %}
+* __{{fix['Summary'] | xml_escape }}__
+{%- unless fix['Custom field (Release Note)'] == empty %}
+  {{fix['Custom field (Release Note)'] | xml_escape }}
+{%- endunless -%}
+
+{% capture key %}{{fix['Issue key']}}{% endcapture %}
+
+{%- capture issue -%}
+{%- unless fix['Custom field (External Issue URL)'] == empty %} - [GitHub issue]({{fix['Custom field (External Issue URL)']}})
+{%- endunless -%}
+{%- endcapture -%}
+{%- capture contribution -%}
+{%- unless fix['Custom field (Git Pull Request)'] == empty -%}
+{%- assign prs = fix['Custom field (Git Pull Request)'] | split: ', ' -%}
+{%- for pr in prs %} - [GitHub code contribution]({{pr}})
+{%- endfor -%}
+{%- endunless -%}
+{%- endcapture %}
+  _{{ key }}{{ issue }}{{ contribution }}_
+{%- endfor %}
+{%- endfor %}

@@ -37,7 +37,7 @@ bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="front
 
 The following messages display to confirm success:
 
-```terminal
+```
 Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type: less.
 -> css/styles-l.less
 Successfully processed.

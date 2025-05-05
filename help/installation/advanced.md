@@ -113,7 +113,7 @@ The following options specify the user information and credentials for the Admin
 
 You can create the Admin user during or after installation. If you create the user during installation, all admin credential variables are required. See [Sample localhost installations](#sample-localhost-installations).
 
-The following tables provide many but not all available install parameters. For a complete list, see the [Command-line Tools Reference](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html).
+The following tables provide many but not all available install parameters. For a complete list, see the [Command-line Tools Reference](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 |Name|Value|Required?|
 |--- |--- |--- |
@@ -246,7 +246,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages similar to the following display to indicate a successful installation:
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -268,7 +268,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages like the following display if the installation is successful:
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -323,7 +323,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Messages like the following display if the installation is successful:
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]

@@ -6,7 +6,7 @@ exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
 
 # Release notes for Adobe Commerce 2.4.3 security patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
@@ -74,7 +74,7 @@ This release includes the following hotfix, and all hotfixes that have been rele
 
 **Restricted admin access to Media Gallery folders**. Default Media Gallery permissions now allow only directory operations (view, upload, delete, and create) that are allowed explicitly by configuration. Admin users can no longer access media assets through the Media Gallery that were uploaded outside of the `catalog/category` or `wysiwyg` directories. Administrators who want to access media assets must move them to an explicitly allowed folder or adjust their configuration settings. See [Modify Media Library folder permissions](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
-**Lowered limits to GraphQL query complexity**. The GraphQL maximum allowed query complexity has been lowered to prevent Denial-of-Service (DOS) attacks. See [GraphQL security configuration](https://devdocs.magento.com/guides/v2.4/graphql/security-configuration.html). <!-- PWA-1700-->
+**Lowered limits to GraphQL query complexity**. The GraphQL maximum allowed query complexity has been lowered to prevent Denial-of-Service (DOS) attacks. See [GraphQL security configuration](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 
 **Recent penetration test vulnerabilities** have been fixed in this release. <!-- MC-42431-->
 

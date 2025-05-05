@@ -29,7 +29,7 @@ You can specify bootstrap variables as system-wide environment variables, which 
 
 For example, you can use the `MAGE_PROFILER` system environment variable to specify a mode as follows:
 
-```terminal
+```
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -74,7 +74,7 @@ You can modify `.htaccess` in any of the following locations, depending on your 
 
 1. Set the value of `MAGE_PROFILER` to any of the following:
 
-   ```terminal
+   ```
    firebug
    csvfile
    <custom value>

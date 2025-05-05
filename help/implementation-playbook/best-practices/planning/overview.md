@@ -88,12 +88,6 @@ The following sections include best practice information for the planning phase.
 </tbody>
 </table>
 
-## Architectural design
-
-| Best practice                                                                          | Description                                              |
-|----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Global reference architecture (GRA)](../../architecture/global-reference/examples.md) | Understand common methods of organizing a GRA code base. |
-
 ## Catalog design
 
 | Best practice                                                                                     | Description                                                   |

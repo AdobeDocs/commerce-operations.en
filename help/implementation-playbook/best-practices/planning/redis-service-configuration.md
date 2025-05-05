@@ -151,6 +151,10 @@ stage:
           frontend: "stale_cache_enabled"
 ```
 
+>[!NOTE]
+>
+>In the previous example, the `full_page` cache is not relevant to Adobe Commerce on cloud infrastructure projects, because they use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
+
 For configuring on-premises installations, see [Stale cache options](../../../configuration/cache/level-two-cache.md#stale-cache-options) in the _Configuration Guide_.
 
 ## Separate Redis cache and session instances
@@ -200,15 +204,19 @@ Separating the Redis cache from Redis session allows you to manage the cache and
 
 1. Add the port number to the `.magento.env.yaml` configuration file.
 
+   >[!IMPORTANT]
+   >
+   >Configure the redis session port only if `ece-tools` is unable to automatically detect it from the `MAGENTO_CLOUD_RELATIONSHIPS` redis session service definition.
+
    >[!NOTE]
+   >
    >`disable_locking` must be set to `1`.
-   >   
 
    ```yaml
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
+       port: 6374 # check the port in $MAGENTO_CLOUD_RELATIONSHIPS and put it here (by default, you can delete this line!!)
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
@@ -225,7 +233,7 @@ Separating the Redis cache from Redis session allows you to manage the cache and
 
 During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
-```terminal
+```
 W:   - Downloading colinmollenhour/credis (1.11.1)
 W:   - Downloading colinmollenhour/php-redis-session-abstract (v1.4.5)
 ...

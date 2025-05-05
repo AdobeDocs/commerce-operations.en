@@ -20,6 +20,12 @@
 >
 >The `support:backup` command is _not_ the same code backup performed by the `setup:backup` command. The `support:backup` command is intended to back up code for examination by Adobe Commerce Support.
 
+## B2B patches {#b2b-patches}
+
+>[!NOTE]
+>
+>After installing this security patch, Adobe Commerce B2B merchants must also update to the latest compatible B2B security patch release. See [B2B release notes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+
 ## Adobe Commerce only {#ee-only}
 
 >[!NOTE]
@@ -38,7 +44,13 @@
 
 >[!NOTE]
 >
->Adobe Commerce releases can contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Not all releases introduce major BICs.
+>Adobe Commerce releases can contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Not all releases introduce major BICs.
+
+## Beta disclaimer {#beta}
+
+>[!IMPORTANT]
+>
+>Beta releases can contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (from Adobe Support Services or any other service) the beta releases. Customers should use caution and not rely in any way on the correct functioning or performance of beta releases and/or any accompanying documentation or materials. Accordingly, any use of the beta releases is entirely at the customer's own risk.
 
 ## CVE notice {#cve-notice}
 

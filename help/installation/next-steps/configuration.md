@@ -53,6 +53,14 @@ For more information, see one of the following:
 *  [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 *  [`logrotate` man page](https://linuxconfig.org/logrotate-8-manual-page)
 
+>[!AVAILABILITY]
+>
+>The following availability information applies to Adobe Commerce on Cloud Infrastructure projects:
+>
+>* Starter environments do not have log rotation.
+>
+>* You cannot configure log rotation on Pro Integration environments. You must implement a custom solution/script and [configure your cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) to run the script as needed.
+
 ### Set up iptables rules to enable various services to communicate
 
 Whether you have one server or many, you must open ports in the firewall to enable services to communicate. For example, if you use the Solr search engine with Adobe Commerce, you must enable it to communicate with the web server. If you have multiple web nodes, you must enable them to communicate with each other.

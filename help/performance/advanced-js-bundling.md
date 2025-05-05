@@ -206,7 +206,7 @@ phantomjs deps.js <i>url-to-specific-page</i> > <i>text-file-representing-pagety
 
 For example, here are four pages from the Luma themed sample store that represent the four page types we will use to create our four bundles (homepage, category, product, cart):
 
-```terminal
+```
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -228,7 +228,7 @@ This command (used within the [!DNL PhantomJS] script) creates the same list of 
 
 After you merge the [!DNL RequireJS] dependencies into page-type text files, you can use the following command on each page-type dependency file to replace the commas in your files with newlines:
 
-```terminal
+```bash
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -237,7 +237,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 You should also remove all the mixins for each file because mixins duplicate dependencies. Use the following command on each dependency file:
 
-```terminal
+```bash
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -256,7 +256,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 This command merges and sorts the dependencies found in the `bundle/*.txt` files.  The output also shows the number of files that contain each dependency:
 
-```terminal
+```
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -311,7 +311,7 @@ bash deps-map.sh
 
 The output from this script, applied to our three example page types, should look something like this (but much longer):
 
-```terminal
+```
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -421,7 +421,7 @@ Listing the contents of the new bundle directory might look like this:
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```terminal
+```
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../

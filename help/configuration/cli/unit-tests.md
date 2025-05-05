@@ -41,7 +41,7 @@ bin/magento dev:tests:run --help
 
 Sample return:
 
-```terminal
+```
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 

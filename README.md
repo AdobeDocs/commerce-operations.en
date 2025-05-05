@@ -127,8 +127,8 @@ To update templated content:
 1. Push your changes.
 
    ```
-   git add
-   git commit -m "_descriptive message of the intended commit_"
+   git add .
+   git commit -m "descriptive message of the intended commit"
    git push
    ```
 

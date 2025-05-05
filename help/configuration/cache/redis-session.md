@@ -63,11 +63,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 Commerce adds lines similar to the following to `<magento_root>app/etc/env.php`:
 
 ```php
-    'session' =>
-    array (
-      'save' => 'redis',
-      'redis' =>
-      array (
+'session' => [
+    'save' => 'redis',
+    'redis' => [
         'host' => '127.0.0.1',
         'port' => '6379',
         'password' => '',
@@ -85,9 +83,9 @@ Commerce adds lines similar to the following to `<magento_root>app/etc/env.php`:
         'bot_lifetime' => '7200',
         'disable_locking' => '0',
         'min_lifetime' => '60',
-        'max_lifetime' => '2592000'
-      )
-    ),
+        'max_lifetime' => '2592000',
+    ],
+],
 ```
 
 >[!INFO]
@@ -106,7 +104,7 @@ redis-cli monitor
 
 Sample session-storage output:
 
-```terminal
+```
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"

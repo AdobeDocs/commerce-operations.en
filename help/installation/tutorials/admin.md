@@ -47,7 +47,7 @@ Example of usage:
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -57,7 +57,7 @@ If you do not specify any of the required params, the application asks about the
 bin/magento admin:user:create
 ```
 
-```terminal
+```
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -65,7 +65,7 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```terminal
+```
 Created Magento administrator user named John
 ```
 
@@ -75,7 +75,7 @@ The following example updates `first name`, `last name`, and `password` of `j.do
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -93,13 +93,13 @@ You must specify the administrator's username. Example:
 bin/magento admin:user:unlock admin
 ```
 
-```terminal
+```
 The user account "admin" has been unlocked
 ```
 
 If the account is either not unlocked or if there was a problem, the following message displays:
 
-```terminal
+```
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -107,6 +107,6 @@ Verify that the user is an administrator, the user is active, and that the accou
 
 If the account doesn't exist, the following message displays:
 
-```terminal
+```
 Couldn't find the user account "bob"
 ```
