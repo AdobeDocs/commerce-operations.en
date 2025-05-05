@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-64523: REST Endpoint fails to validate mandatory fields
 
-The ACSD-64523 patch fixes the issue where the REST endpoint `[V1/import/csv]` fails to validate mandatory fields, allowing the creation of products without providing the required mandatory fields. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64523 patch fixes an issue where the REST endpoint [V1/import/csv] fails to validate mandatory fields, allowing product creation without required data. To resolve this, update the Authorization header.This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
