@@ -46,7 +46,6 @@ Images uploaded through the [!UICONTROL Images Upload Configuration] in the [!UI
     1. Click [!UICONTROL Generate Product].
 1. Click [!UICONTROL Save].
 
-
 <u>Expected results</u>:
 
     Images should follow the configured upload size and resize limits.
