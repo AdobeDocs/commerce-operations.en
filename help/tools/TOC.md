@@ -20,8 +20,7 @@ feature: Configuration
     - [Extensions](site-wide-analysis-tool/extensions.md)
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
-
- - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
+- Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
     - [Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
     - [Managed alerts for Adobe Commerce: Disk warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
     - [Managed alerts for Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -775,6 +774,7 @@ feature: Configuration
            - [ACSD-64209: Cron scheduler retrieves negotiable quotes without excluding [!UICONTROL Ordered] quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
         - v1.1.62 {#v1-1-62}
            - [ACSD-63406: Expired persistent quotes not cleared when persistent_clear_expired cron job runs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared.md)
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.62](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
