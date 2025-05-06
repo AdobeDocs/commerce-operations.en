@@ -4,6 +4,28 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### May 5, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview">description of the issues fixed by the patches available in the QPT 1.1.62 release</a></p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7143b297825f8c87e47d1425718b82a87d1d8c16">7143b2</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### May 1, 2025
 
 <table style="table-layout:auto;">
@@ -620,72 +642,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Technical
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e1a681a66014e70d9e41fd98ea0b2bbca1377d9d">e1a681</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### March 7, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Migrated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce">Managed alerts for Adobe Commerce</a> due to the migration of Commerce Knowledge base:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert">Memory warning alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert">Redis memory warning alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert">Redis memory critical alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert">Disk warning alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert">Disk critical alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert">CPU critical alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-memory-critical-alert">Memory critical alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-critical-alert">Apdex critical alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-mariadb-alerts">MariaDB alerts</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-cpu-warning-alert">CPU warning alert</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Apdex warning alert</a></p>
-</td>
-      <td>
-        New topic
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c265c6348697c5a07f5990a5e2ffeba9d4dfe358">c265c6</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### March 6, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated">detailed description of the issue fixed by the ACSD-63572 patch in the QPT 1.1.58 release</a></p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/862a248bee86d4ceed05b0ce3a3d072c3542d6b3">862a24</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### March 5, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly">detailed description of the issue fixed by the ACSD-63469 patch in the QPT 1.1.59 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dab020c6b176717a38b5a81a8710217b0feab0eb">dab020</a> (commit)</td>
     </tr>
   </tbody>
 </table>

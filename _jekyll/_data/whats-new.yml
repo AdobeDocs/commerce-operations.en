@@ -2,8 +2,20 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Thu May 1 15:50:30 2025
+updated: Tue May 6 02:20:54 2025
 entries:
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.62 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview)
+  versions: ''
+  type: new-topic, qpt
+  date: May 5, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1333
+  merge_commit: 7143b297825f8c87e47d1425718b82a87d1d8c16
+  contributor: glo51235
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Improved release notes formatting for fixed issues in [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)
     and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8)
     2.4.8.<br/>_Credits to [@hostep](https://github.com/hostep)._
