@@ -775,6 +775,7 @@ feature: Configuration
         - v1.1.62 {#v1-1-62}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.62](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
+           - [ACSD-64592: claim link from email for gift card in non-default stores redirected gift card claim to default website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-claim-link-from-email-for-gift-card-in-non-default-stores-redirected-gift-card-claim-to-default-website.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
     - [Upgrade Compatibility Tool](reference/uct.md)
