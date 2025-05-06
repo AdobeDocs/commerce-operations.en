@@ -44,7 +44,7 @@ The REST endpoint `[V1/import/csv]` fails to validate mandatory fields, allowing
             "allowed_error_count": 0,
             "items": [
                 {
-                    "sku": "SLD-SB-TAN-10101.BRN",
+                    "sku": "product_sku",
                     "product_online": "no",
                     "attribute_set_code": "Default",
                     "product_type": "configurable",
@@ -90,4 +90,5 @@ To apply individual patches, use the following links depending on your deploymen
 ## Related reading
 
 To learn more about [!DNL Quality Patches Tool], refer to:
+
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
