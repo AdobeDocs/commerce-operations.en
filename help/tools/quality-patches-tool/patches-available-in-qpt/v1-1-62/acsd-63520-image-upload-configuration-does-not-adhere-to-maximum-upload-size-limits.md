@@ -27,24 +27,24 @@ Images uploaded through the [!UICONTROL Images Upload Configuration] in the [!UI
 
 <u>Steps to reproduce</u>:
 
-1. Log in to [!UICONTROL Admin] panel.
-1. Navigate to [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL System] > [!UICONTROL Images Upload Configuration] and set:
+1. Log in to **[!UICONTROL Admin]** panel.
+1. Navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Images Upload Configuration]** and set:
     * Quality: 100
     * Enable Frontend Resize: Yes  
     * Maximum Width: 800  
     * Maximum Height: 600  
-1. Expand [!UICONTROL Media Gallery Image Optimization] and set:
+1. Expand **[!UICONTROL Media Gallery Image Optimization]** and set:
     * Enable Image Optimization: Yes  
     * Maximum Width: 1000  
     * Maximum Height: 1000  
-1. Navigate to [!UICONTROL Catalog] > [!UICONTROL Products] > [!UICONTROL Add Configurable Product].
-    1. Add [!UICONTROL Product Name], [!UICONTROL SKU], and [!UICONTROL Price].
-    1. Click [!UICONTROL Create Configurations], select [!UICONTROL Attributes], and click [!UICONTROL Next].
-    1. Choose sizes (S, M, L, XL), click [!UICONTROL Next].
-    1. Under [!UICONTROL Images], select [!UICONTROL Apply single set of images to all SKUs].
-    1. Upload an image (minimum 1024x1024), click [!UICONTROL Next].
-    1. Click [!UICONTROL Generate Product].
-1. Click [!UICONTROL Save].
+1. Navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Add Configurable Product]**.
+    1. Add **[!UICONTROL Product Name]**, **[!UICONTROL SKU]**, and **[!UICONTROL Price]**.
+    1. Click **[!UICONTROL Create Configurations]**, select **[!UICONTROL Attributes]**, and click **[!UICONTROL Next]**.
+    1. Choose sizes (S, M, L, XL), click **[!UICONTROL Next]**.
+    1. Under **[!UICONTROL Images]**, select **[!UICONTROL Apply single set of images to all SKUs]**.
+    1. Upload an image (minimum 1024x1024), click **[!UICONTROL Next]**.
+    1. Click **[!UICONTROL Generate Product]**.
+1. Click **[!UICONTROL Save]**.
 
 <u>Expected results</u>:
 
