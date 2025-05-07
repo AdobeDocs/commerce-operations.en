@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-63520: Images uploaded through Image Upload Configuration exceed the configured size limits'
-description: Apply the ACSD-63520 patch to fix the Adobe Commerce issue where Images uploaded through the Images Upload Configuration in the Admin panel do not adhere to the configured maximum upload size limits
+description: Apply the ACSD-63520 patch to fix the Adobe Commerce issue where Images uploaded through the Images Upload Configuration in the Admin panel do not adhere to the configured maximum upload size limits.
 feature: Media, Products
 role: Admin, Developer
 ---
