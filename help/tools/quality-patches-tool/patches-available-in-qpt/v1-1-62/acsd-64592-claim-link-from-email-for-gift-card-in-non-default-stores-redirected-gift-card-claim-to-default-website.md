@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-64592: claim link from email for gift card in non-default stores redirected gift card claim to default website
 
-The ACSD-64592 patch fixes an issue where in a multi-site environment, if a Virtual Gift Card is bought from a secondary (non-primary) website, the email containing the Gift Card Code link will direct users to the default website's URL.
+The ACSD-64592 patch fixes an issue where in a multi-site environment, if a Virtual Gift Card is bought from a secondary (non-primary) website, the email containing the Gift Card Code link will direct users to the default website's URL. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.x.
 
 ## Affected products and versions
 
@@ -29,13 +29,13 @@ In a multi-website setup, when a Virtual Gift Card is purchased from a secondary
 
 <u>Steps to reproduce</u>:
 
-1 Create a secondary Website, Store and Store View.
-1 Configure different Base URLs for the Base and the secondary website.
-1 Create a Virtual Gift Card with some Amount options.
-1 Generate a new code pool at **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Gift Card Accounts]**.
-1 Place an order with the Gift Card product on the secondary website.
-1 Invoice the order in the admin.
-1 Check the URL in the Gift Card Code link of the *You've been sent a gift from Two* email.
+1. Create a secondary website, storen and store view.
+1. Configure different base URLs for the Base and the secondary website.
+1. Create a Virtual Gift Card with some amount options.
+1. Generate a new code pool at **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Gift Card Accounts]**.
+1. Place an order with the Gift Card product on the secondary website.
+1. Invoice the order in the Commerce admin.
+1. Check the URL in the Gift Card Code link of the *You've been sent a gift from Two* email.
 
 
 <u>Expected results</u>:
