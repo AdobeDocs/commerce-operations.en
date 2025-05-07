@@ -29,7 +29,7 @@ In a multi-website setup, when a Virtual Gift Card is purchased from a secondary
 
 <u>Steps to reproduce</u>:
 
-1. Create a secondary website, storen and store view.
+1. Create a secondary website, store, and store view.
 1. Configure different base URLs for the Base and the secondary website.
 1. Create a Virtual Gift Card with some amount options.
 1. Generate a new code pool at **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Gift Card Accounts]**.
