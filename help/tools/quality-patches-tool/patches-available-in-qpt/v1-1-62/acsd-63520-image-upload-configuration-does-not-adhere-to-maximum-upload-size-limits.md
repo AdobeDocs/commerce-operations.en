@@ -3,8 +3,8 @@ title: 'ACSD-63520: Images uploaded through Image Upload Configuration exceed th
 description: Apply the ACSD-63520 patch to fix the Adobe Commerce issue where Images uploaded through the Images Upload Configuration in the Admin panel do not adhere to the configured maximum upload size limits.
 feature: Media, Products
 role: Admin, Developer
+exl-id: 5132bfa9-813a-4623-8e02-a8801f6396e8
 ---
-
 # ACSD-63520: Images uploaded through [!UICONTROL Image Upload Configuration] exceed the configured size limits
 
 The ACSD-63520 patch resolves an issue where images uploaded through the [!UICONTROL Images Upload Configuration] do not adhere to the configured maximum upload size limits. To address this, configure the [!UICONTROL Images Upload Configuration] settings in the [!UICONTROL Admin] panel. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. The patch ID is ACSD-63520. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
