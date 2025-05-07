@@ -19,7 +19,7 @@ The ACSD-63520 patch resolves an issue where images uploaded through the [!UICON
 
 >[!NOTE]
 >
->The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
+>The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your [!DNL Adobe Commerce] version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
 
@@ -48,11 +48,11 @@ Images uploaded through the [!UICONTROL Images Upload Configuration] in the [!UI
 
 <u>Expected results</u>:
 
-    Images should follow the configured upload size and resize limits.
+Images should follow the configured upload size and resize limits.
 
 <u>Actual results</u>:
 
-    Images are not resized and exceed the configured upload size limits.
+Images are not resized and exceed the configured upload size limits.
 
 ## Apply the patch
 
