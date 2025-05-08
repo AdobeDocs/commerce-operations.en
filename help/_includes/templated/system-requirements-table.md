@@ -53,7 +53,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4
+            4.1
       </td>
     </tr>
     <tr>
@@ -263,7 +263,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.13
+            4.1
       </td>
       <td>
             3.13
@@ -733,7 +733,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.13
+            4.1
       </td>
       <td>
             3.13
@@ -1406,7 +1406,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.13
+            4.1
       </td>
       <td>
             3.13
