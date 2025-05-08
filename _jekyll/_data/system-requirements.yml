@@ -20,7 +20,7 @@
   OpenSearch: '2.19'
   OpenSearch Cloud: '2'
   PHP: '8.4/8.3'
-  RabbitMQ: '4'
+  RabbitMQ: '4.1'
   Redis: 'Valkey 8'
   Varnish: '7.6'
 2.4.7-p5:
@@ -39,7 +39,7 @@
   OpenSearch: '2.19'
   OpenSearch Cloud: '2'
   PHP: '8.3/8.2'
-  RabbitMQ: '3.13'
+  RabbitMQ: '4.1'
   Redis: '7.2'
   Varnish: '7.6'
 2.4.7-p4:
@@ -155,7 +155,7 @@
   OpenSearch: 2.19
   OpenSearch Cloud: '2'
   PHP: '8.2, 8.1'
-  RabbitMQ: '3.13'
+  RabbitMQ: '4.1'
   Redis: '7.2'
   Varnish: '7.6'
 2.4.6-p9:
@@ -365,7 +365,7 @@
   OpenSearch: '2.19'
   OpenSearch Cloud: '2'
   PHP: '8.1'
-  RabbitMQ: '3.13'
+  RabbitMQ: '4.1'
   Redis: '7.2'
   Varnish: '7.6'
 2.4.5-p11:
