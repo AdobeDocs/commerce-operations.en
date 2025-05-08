@@ -44,7 +44,7 @@ The Gift Card Code link should have the link to the second website.
 
 <u>Actual results</u>:
 
-The Gift Card Code link has the default website URL, even though the order is placed on the second website
+The Gift Card Code link has the default website URL, even though the order is placed on the second website.
 
 ## Apply the patch
 
