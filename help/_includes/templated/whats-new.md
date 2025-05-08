@@ -21,7 +21,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7143b297825f8c87e47d1425718b82a87d1d8c16">7143b2</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7143b297825f8c87e47d1425718b82a87d1d8c16">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -43,7 +43,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35df05be16d3da775b9cead47d2895b63d575892">35df05</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35df05be16d3da775b9cead47d2895b63d575892">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -65,7 +65,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f112a65859e1337183ab49aff9b6a812f9caa569">f112a6</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f112a65859e1337183ab49aff9b6a812f9caa569">commit</a></td>
     </tr>
     <tr>
       <td><p>Fixed text rendering in Release notes for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>.<br /><em>Credits to <a href="https://github.com/hostep">@hostep</a>.</em></p>
@@ -73,7 +73,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce23f97dfa62e9b9b57b6db62a7d0c97d3faf7a6">ce23f9</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce23f97dfa62e9b9b57b6db62a7d0c97d3faf7a6">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -95,7 +95,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e195b58c7ae5573373f644c583eb12633703591">0e195b</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e195b58c7ae5573373f644c583eb12633703591">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -117,7 +117,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">aa47a8</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">commit</a></td>
     </tr>
     <tr>
       <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">affected products and versions section in the ACSD-62979 patch</a></p>
@@ -125,7 +125,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f16e57e339fd9ef7de1e0da30eaec7b7bb38396">4f16e5</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f16e57e339fd9ef7de1e0da30eaec7b7bb38396">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -147,7 +147,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/915f5f61c27bedeafdceee7a8c2e0cd474765418">915f5f</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/915f5f61c27bedeafdceee7a8c2e0cd474765418">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -169,7 +169,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/13f5f1c06e5c60047ed246bee766b7f515b0661f">13f5f1</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/13f5f1c06e5c60047ed246bee766b7f515b0661f">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -191,7 +191,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6557cc45c1250ca17ba53acdd2a9c4748403df8d">6557cc</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6557cc45c1250ca17ba53acdd2a9c4748403df8d">commit</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers">detailed description of the issue fixed by the ACSD-64209 patch in the QPT 1.1.61 release</a></p>
@@ -199,7 +199,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a24858852d774c0945f407fceb96a17ebc500cd">3a2485</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a24858852d774c0945f407fceb96a17ebc500cd">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -221,7 +221,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e6fb66170fd0a0487a049508c7ac3fa96fa3633a">e6fb66</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e6fb66170fd0a0487a049508c7ac3fa96fa3633a">commit</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand">detailed description of the issue fixed by the ACSD-64684 patch in the QPT 1.1.61 release</a></p>
@@ -229,7 +229,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd0a4d5421c4214dea0c0d5be5644c22c662ea11">fd0a4d</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd0a4d5421c4214dea0c0d5be5644c22c662ea11">commit</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list">detailed description of the issue fixed by the ACSD-63883 patch in the QPT 1.1.61 release</a></p>
@@ -237,7 +237,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a4d84b88f6d235f722ce131ce9ffbbd6ae59b12a">a4d84b</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a4d84b88f6d235f722ce131ce9ffbbd6ae59b12a">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -259,7 +259,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84f12be207347cd77c9577e976780c3f32a3e6ed">84f12b</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/84f12be207347cd77c9577e976780c3f32a3e6ed">commit</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description">detailed description of the issue fixed by the ACSD-64467 patch in the QPT 1.1.61 release</a></p>
@@ -267,7 +267,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d58695ea2c82c6e1c5f30411ef9fc343e983b892">d58695</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d58695ea2c82c6e1c5f30411ef9fc343e983b892">commit</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer">detailed description of the issue fixed by the ACP2E-3705 patch in the QPT 1.1.61 release</a>.</p>
@@ -275,7 +275,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaed1bc7241dc485894fcb63a99c08d26cb99a15">aaed1b</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaed1bc7241dc485894fcb63a99c08d26cb99a15">commit</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code">detailed description of the issue fixed by the ACSD-64137 patch in the QPT 1.1.60 release</a></p>
@@ -283,7 +283,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8466ea44aee9b2e73a964ee657937946e36ea40d">8466ea</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8466ea44aee9b2e73a964ee657937946e36ea40d">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -305,7 +305,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0214c378a5a985e5f91aed6407567f770ced6fc">c0214c</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c0214c378a5a985e5f91aed6407567f770ced6fc">commit</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time">detailed description of the issue fixed by the ACSD-63974 patch in the QPT 1.1.61 release</a></p>
@@ -313,7 +313,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6661088b3f6cfad2c5afca3e8ac3d76c07ae3237">666108</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6661088b3f6cfad2c5afca3e8ac3d76c07ae3237">commit</a></td>
     </tr>
     <tr>
       <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">Released versions</a>.</p>
@@ -321,7 +321,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6420c55a08a43fc331ebebc073565df977827d34">6420c5</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6420c55a08a43fc331ebebc073565df977827d34">commit</a></td>
     </tr>
     <tr>
       <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Packages</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>, and <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">required PHP extensions</a>.</p>
@@ -329,7 +329,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cba45d45b7b7051551e6bec981b66989091cff54">cba45d</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cba45d45b7b7051551e6bec981b66989091cff54">commit</a></td>
     </tr>
     <tr>
       <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirements</a> for the new releases.</p>
@@ -337,7 +337,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29811930541b3d91f0560a64190d790cdb742a70">298119</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29811930541b3d91f0560a64190d790cdb742a70">commit</a></td>
     </tr>
     <tr>
       <td><p>Published release notes for the April 2025 quality and security patches:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p5</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p10</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p12</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p13</a></p>
@@ -345,7 +345,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9bfad60e8a1ebe414d5f2826eecb0a4e5e886614">9bfad6</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9bfad60e8a1ebe414d5f2826eecb0a4e5e886614">commit</a></td>
     </tr>
     <tr>
       <td><p>Added detailed steps to the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#mysql">documentation</a> to upgrade to MySQL 8.4 from older versions.</p>
@@ -353,7 +353,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Major update
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4378655948fd2cd5003a665a3a9ccc3ceb825b4d">437865</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4378655948fd2cd5003a665a3a9ccc3ceb825b4d">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -375,7 +375,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/492e669787d4acd46789190b8afcf5b9e60ac6b6">492e66</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/492e669787d4acd46789190b8afcf5b9e60ac6b6">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -397,7 +397,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cb678a54cb8dcd6e9443ef2c8be4a73b4b901921">cb678a</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cb678a54cb8dcd6e9443ef2c8be4a73b4b901921">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -419,7 +419,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e50457a21fa17c59523e28e5ff50b1d4dd0d9f9">8e5045</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e50457a21fa17c59523e28e5ff50b1d4dd0d9f9">commit</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes">detailed description of the issue fixed by the ACSD-64178 patch in the QPT 1.1.61 release</a></p>
@@ -427,7 +427,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddb5ac8342deee4aa290fdf41d8b1692b4d912de">ddb5ac</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddb5ac8342deee4aa290fdf41d8b1692b4d912de">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -449,7 +449,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf9c698e5b0fa81bc2b10e97270d9cbe38ab9c37">bf9c69</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf9c698e5b0fa81bc2b10e97270d9cbe38ab9c37">commit</a></td>
     </tr>
     <tr>
       <td><p>Added New Relic to the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">cloud system requirements</a> table.</p>
@@ -457,7 +457,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8241f034529ca5be821ed9768fce391c16efacbc">8241f0</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8241f034529ca5be821ed9768fce391c16efacbc">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -479,7 +479,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8d0b38999c1d317098bd20098f042f1a78e8faeb">8d0b38</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8d0b38999c1d317098bd20098f042f1a78e8faeb">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -501,7 +501,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e1252b88973dcc6e936d61cfe3a5f4dc54567a00">e1252b</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e1252b88973dcc6e936d61cfe3a5f4dc54567a00">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -523,7 +523,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/149">149</a> (pull request)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/149">pull request</a></td>
     </tr>
     <tr>
       <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview">description of the issues fixed by the patches available in the QPT 1.1.60 release</a></p>
@@ -531,7 +531,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dca8a509796fb6c81e338000f771cc5fe3fea81c">dca8a5</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dca8a509796fb6c81e338000f771cc5fe3fea81c">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -553,7 +553,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d7440a2239d2252920576f1f851d27c8f3a6ef5d">d7440a</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d7440a2239d2252920576f1f851d27c8f3a6ef5d">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -575,7 +575,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8dea781eaaeb52efad65cbc522bb779b3929c4e6">8dea78</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8dea781eaaeb52efad65cbc522bb779b3929c4e6">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -597,7 +597,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bfb62aa5cc840eff989db71b9e25ab1397162a0a">bfb62a</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bfb62aa5cc840eff989db71b9e25ab1397162a0a">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -619,7 +619,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         New topic, qpt
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b3feda26f02ecef83e9cfcc266f990cacf0c37b4">b3feda</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b3feda26f02ecef83e9cfcc266f990cacf0c37b4">commit</a></td>
     </tr>
   </tbody>
 </table>
@@ -641,7 +641,7 @@ This page contains the changes made in the last 60 days. We exclude all minor up
       <td>
         Technical
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e1a681a66014e70d9e41fd98ea0b2bbca1377d9d">e1a681</a> (commit)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e1a681a66014e70d9e41fd98ea0b2bbca1377d9d">commit</a></td>
     </tr>
   </tbody>
 </table>
