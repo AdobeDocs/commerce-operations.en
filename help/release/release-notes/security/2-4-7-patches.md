@@ -17,7 +17,13 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-This release introduces support for the Adobe Commerce [HIPAA-ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
+{{$include /help/_includes/release-notes/highlights/security-2025-04.md}}
+
+>[!BEGINSHADEBOX]
+
+This release also introduces support for the Adobe Commerce [HIPAA-ready extension](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
+
+>[!ENDSHADEBOX]
 
 ### Known issues
 
