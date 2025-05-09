@@ -37,7 +37,6 @@ In a multi-website setup, when a Virtual Gift Card is purchased from a secondary
 1. Invoice the order in the Commerce admin.
 1. Check the URL in the Gift Card Code link of the *You've been sent a gift from Two* email.
 
-
 <u>Expected results</u>:
 
 The Gift Card Code link should have the link to the second website.
