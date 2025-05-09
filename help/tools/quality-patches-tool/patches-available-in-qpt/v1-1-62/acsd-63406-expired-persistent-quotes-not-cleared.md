@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-63406: Expired persistent quotes not cleared when persistent_clear_expired cron job runs'
-description: Apply the ACSD-63406 patch to fix the issue where the expired persistent quotes are not cleared by any cron job when the `persistent_clear_expired` cron job runs.
+description: Apply the ACSD-63406 patch to fix the Adobe Commerce issue where the expired persistent quotes are not cleared by any cron job when the `persistent_clear_expired` cron job runs.
 feature: Quotes, Shopping Cart
 role: Admin, Developer
 ---
@@ -37,13 +37,13 @@ Expired persistent quotes are not cleared by any cron job when the `persistent_c
 1. Add a product to the cart.
 1. Sign out, wait 60 seconds, and log in again.
 
-**Expected results**: 
+<u>Expected results</u>: 
 
-* The `persistent_clear_expired` cron job should delete persistent quotes based on the persistence lifetime settings in the configuration.
+The `persistent_clear_expired` cron job should delete persistent quotes based on the persistence lifetime settings in the configuration.
 
-**Actual results**:
+<u>Actual results</u>:
 
-* The `is_persistent` value for the customer quote remains *1* in the quote table.
+The `is_persistent` value for the customer quote remains *1* in the quote table.
 
 ## Apply the patch
 
