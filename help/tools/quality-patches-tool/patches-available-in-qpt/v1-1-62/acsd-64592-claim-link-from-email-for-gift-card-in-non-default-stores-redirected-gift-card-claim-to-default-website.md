@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-64592: claim link from email for gift card in non-default stores redirected gift card claim to default website'
+title: 'ACSD-64592: Non-default store gift card claim links redirect to default website'
 description: Apply the ACSD-64592 patch to fix the issue where in a multi-website setup, when a Virtual Gift Card is purchased from the secondary (non-default) website, the Gift Card Code link in the email has the default website URL.
 feature: Gift, Products
 role: Admin, Developer
