@@ -3,8 +3,8 @@ title: 'ACSD-63406: Expired persistent quotes not cleared when persistent_clear_
 description: Apply the ACSD-63406 patch to fix the Adobe Commerce issue where the expired persistent quotes are not cleared by any cron job when the `persistent_clear_expired` cron job runs.
 feature: Quotes, Shopping Cart
 role: Admin, Developer
+exl-id: 795d1ddf-0d5b-406c-870b-36cb92cf07fa
 ---
-
 # ACSD-63406: Expired persistent quotes not cleared when `persistent_clear_expired` cron job runs
 
 The ACSD-63406 patch fixes the issue where the expired persistent quotes are not cleared by any cron job when the `persistent_clear_expired` cron job runs. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. The patch ID is ACSD-63406. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.

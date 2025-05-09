@@ -3,8 +3,8 @@ title: 'ACSD-64592: Non-default store gift card claim links redirect to default 
 description: Apply the ACSD-64592 patch to fix the issue where in a multi-website setup, when a Virtual Gift Card is purchased from the secondary (non-default) website, the Gift Card Code link in the email has the default website URL.
 feature: Gift, Products
 role: Admin, Developer
+exl-id: 1cc026c0-7487-48e8-a092-3e72085ca38a
 ---
-
 # ACSD-64592: Non-default store gift card claim links redirect to default website
 
 The ACSD-64592 patch fixes an issue where in a multi-site environment, if a Virtual Gift Card is bought from a secondary (non-primary) website, the email containing the Gift Card Code link will direct users to the default website's URL. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.9.
