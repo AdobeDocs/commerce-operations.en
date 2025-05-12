@@ -11,10 +11,10 @@ The ACSD-64532 patch fixes the issue where the `ENV` variable set to *false* is 
 
 ## Affected products and versions
 **The patch is created for Adobe Commerce version:**
-* Adobe Commerce (all deployment methods) 2.4.6-p8
+Adobe Commerce (all deployment methods) 2.4.6-p8
 
 **Compatible with Adobe Commerce versions:**
-* Adobe Commerce (all deployment methods) 2.4.6-p2 - 2.4.7-p4
+Adobe Commerce (all deployment methods) 2.4.6-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -28,6 +28,7 @@ The ACSD-64532 patch fixes the issue where the `ENV` variable set to *false* is 
 1. Add `env:MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK` with value *false* to environment variables on Adobe Cloud.
 1. Wait for redeployment.
 1. Run the script checking the value:
+
     ```php
     <?php
     require '../app/bootstrap.php';
