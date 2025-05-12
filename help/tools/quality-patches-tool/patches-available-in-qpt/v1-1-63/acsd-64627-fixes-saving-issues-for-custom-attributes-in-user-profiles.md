@@ -1,7 +1,7 @@
 ---
 title: 'ACSD-64627: Custom customer attributes not saving in Company Structure'
 description: Apply the ACSD-64627 patch to fix the Adobe Commerce issue where custom customer attributes can't be saved when adding or editing users within the Company Structure.
-feature: Account, B2B 
+feature: Accounts, B2B 
 role: Admin, Developer
 ---
 
