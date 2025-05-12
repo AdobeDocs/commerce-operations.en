@@ -295,7 +295,7 @@ Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
-# How to supplement env.php configuration with OS Environment variables
+## How to supplement env.php configuration with OS Environment variables
 
 ## How to set
 
