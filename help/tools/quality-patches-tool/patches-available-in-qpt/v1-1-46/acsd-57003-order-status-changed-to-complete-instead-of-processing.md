@@ -13,11 +13,11 @@ The ACSD-57003 patch fixes the issue where the order status changes to *Complete
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 2.4.6-p3
+* Adobe Commerce (all deployment methods) 2.4.6-p3, 2.4.6-p8, 2.4.7-p3
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p3
+* Adobe Commerce (all deployment methods) 2.4.6 - 2.4.6-p9, 2.4.7-p2 - 2.4.7-p4
 
 >[!NOTE]
 >

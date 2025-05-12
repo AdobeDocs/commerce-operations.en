@@ -11,7 +11,7 @@ Review the [release notes](https://experienceleague.adobe.com/en/docs/commerce-o
 
 Adobe Commerce releases may contain backward-incompatible changes. Review our backward-incompatible changes documentation, see the following: 
 
-- **[Major change highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)**—Changes that have a major impact and require detailed explanation and special instructions to ensure that third-party modules continue working.
+- **[Major change highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)**—Changes that have a major impact and require detailed explanation and special instructions to ensure that third-party modules continue working.
 - **[Minor change reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)**—Reference documentation generated from the code base that describes minor changes to classes, API membership, database, dependency injection, interfaces, layouts, system, and XSD.
 
 ## Third-party extensions
