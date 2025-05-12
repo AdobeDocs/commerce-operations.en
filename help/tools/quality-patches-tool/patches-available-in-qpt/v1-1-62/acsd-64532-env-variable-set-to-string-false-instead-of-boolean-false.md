@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-64532: ENV variable set to *false* is treated as a string *false* instead of a BOOLEAN *FALSE*'
-description: Apply the ACSD-64532 patch to fix the Adobe Commerce issue where a `ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN *FALSE*`.
+description: Apply the ACSD-64532 patch to fix the Adobe Commerce issue where a `ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN` *FALSE*.
 feature: Variables
 role: Admin, Developer
 ---
 
 # ACSD-64532: ENV variable set to "false" is treated as a string "false" instead of a BOOLEAN FALSE
 
-The ACSD-64532 patch fixes the issue where the `ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN *FALSE*`. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. The patch ID is ACSD-64532. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-64532 patch fixes the issue where the `ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN` *FALSE*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. The patch ID is ACSD-64532. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -23,7 +23,7 @@ Adobe Commerce (all deployment methods) 2.4.6-p2 - 2.4.7-p4
 
 ## Issue
 
-`ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN *FALSE*`.
+`ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN` *FALSE*.
 
 <u>Steps to reproduce</u>:
 1. Add `env:MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK` with value *false* to environment variables on Adobe Cloud.
