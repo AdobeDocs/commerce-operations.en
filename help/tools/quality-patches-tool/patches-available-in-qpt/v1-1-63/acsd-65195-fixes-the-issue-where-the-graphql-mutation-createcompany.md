@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-65195: GraphQL `createCompany` mutation returns an error for a country without a required region'
-description: Apply the ACSD-65195 patch to fix the Adobe Commerce issue where the GraphQL `createCompany` mutation returns an error for a country without a required region.
+description: Apply the ACSD-65195 patch to fix the Adobe Commerce issue where the GraphQL `createCompany` mutation throws an error for countries that don't require a region.
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
 ---
 
 # ACSD-65195: GraphQL `createCompany` mutation returns an error for a country without a required region
 
-The ACSD-65195 patch fixes the issue where the GraphQL `createCompany` mutation returns an error for a country without a required region. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.63 is installed. The patch ID is ACSD-65195. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65195 patch fixes the issue where the [!UICONTROL GraphQL] `createCompany` mutation throws an error for countries that don't require a region. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.63 is installed. The patch ID is ACSD-65195. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,13 +25,13 @@ The ACSD-65195 patch fixes the issue where the GraphQL `createCompany` mutation 
 
 ## Issue
 
-The GraphQL `createCompany` mutation returns an error when a region is specified for a country that does not require one.
+The [!UICONTROL GraphQL] `createCompany` mutation returns an error when a region is specified for a country that doesn't require one.
 
 
 <u>Steps to reproduce</u>:
 
 1. Enable **[!UICONTROL B2B Companies]**.
-1. Send the `createCompany` GraphQL mutation with a specified region field for a country that does not require a one, for example: [!UICONTROL country_id]: *AE* and [!UICONTROL region]: *Dubai*.
+1. Send the `createCompany` [!UICONTROL GraphQL] mutation with a specified region field for a country that doesn't require one. For example: [!UICONTROL country_id]: *AE* and [!UICONTROL region]: *Dubai*.
 1. Check the GraphQL response.
 
 
