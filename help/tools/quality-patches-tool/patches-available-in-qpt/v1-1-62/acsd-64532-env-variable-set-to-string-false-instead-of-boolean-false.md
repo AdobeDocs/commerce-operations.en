@@ -3,8 +3,8 @@ title: 'ACSD-64532: ENV variable set to *false* is treated as a string *false* i
 description: Apply the ACSD-64532 patch to fix the Adobe Commerce issue where a `ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN` *FALSE*.
 feature: Variables
 role: Admin, Developer
+exl-id: 7940df1f-d527-4b57-bde7-7a0216b12436
 ---
-
 # ACSD-64532: ENV variable set to "false" is treated as a string "false" instead of a BOOLEAN FALSE
 
 The ACSD-64532 patch fixes the issue where the `ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN` *FALSE*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. The patch ID is ACSD-64532. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
