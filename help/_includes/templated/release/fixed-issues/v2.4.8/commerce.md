@@ -1631,6 +1631,9 @@ Fix Details:
 * __Using virtual type to configure plugin, interceptor method cannot be generated correctly in `setup:di:compile` command__
   The system now correctly generates interceptor methods when using a virtual type to configure a plugin, ensuring consistent results whether precompiled or runtime compiled. Previously, the system would generate incorrect results when precompiled compared to runtime compilation.
   _AC-13398 - [GitHub issue](https://github.com/magento/magento2/issues/33980) - [GitHub code contribution](https://github.com/magento/magento2/pull/38141)_
+* __Unable to download files from Data Collector__
+  Downloading backup no longer shows blank page instead of downloading the file.
+  _ACP2E-3441_
 * __Adobe Commerce 2.4.7-p3 unit tests are failing__
   No release notes are required.
   _ACP2E-3631 - [GitHub code contribution](https://github.com/magento/magento2/commit/982b1c42)_
