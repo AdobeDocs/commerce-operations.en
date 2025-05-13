@@ -23,7 +23,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-65100** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where removing the values for [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error during the image optimization process.
 * **ACSD-65127** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where enabling JavaScript minification in production mode caused TinyMCE 6 to generate errors in the browser console, affecting functionality and user experience.
 * **ACSD-65787** (for Adobe Commerce and Magento Open Source >=2.4.7-p5 <2.4.9) - Fixes the issue where the SchemaBuilder class crashes during schema creation or updates due to an undefined array key 'column' when processing table data.
-* **ACSD-65223* (for Adobe Commerce, B2B 1.5.1) - Fixes the issue where manually selected terms and agreements for B2B purchase orders result in an error.
+* **ACSD-65223** (for Adobe Commerce, B2B 1.5.1) - Fixes the issue where manually selected terms and agreements for [!DNL B2B] purchase orders result in an error.
 * **ACSD-65540* (for Adobe Commerce, B2B 1.5.2) - Fixes the issue where an SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table.
 * **ACSD-65684* (for Adobe Commerce, B2B 1.5.2) - Fixes the performance issue where upgrading the Magento_Company module after updating to B2B 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the company_structure table.
 * Versions updated: **ACSD-48234**, **ACSD-51819**, **ACSD-57570**, **ACSD-56415**
