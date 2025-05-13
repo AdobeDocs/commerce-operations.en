@@ -17,7 +17,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.64 {#v1-1-64}
 
-* **ACP2E-3838** (for Adobe Commerce and Magento Open Source >=2.4.4-p9 <2.4.4-p13 || >=2.4.5-p8 <2.4.5-p12 || >=2.4.6-p6 <2.4.6-p10 || >=2.4.7 <2.4.7-p5) - Fixes the issue where Page Builder CORS errors prevent saving changes in the Admin panel in production mode.
+* **ACP2E-3838** (for Adobe Commerce and Magento Open Source >=2.4.4-p9 <2.4.4-p13 || >=2.4.5-p8 <2.4.5-p12 || >=2.4.6-p6 <2.4.6-p10 || >=2.4.7 <2.4.7-p5) - Fixes the issue where [!DNL Page Builder] CORS errors prevent saving changes in the Admin panel in production mode.
 * **ACP2E-3841** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled.
 * **ACSD-63139** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where product export fails when product attributes contain thousands of option values.
 * **ACSD-65100** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where removing the values for [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error during the image optimization process.
