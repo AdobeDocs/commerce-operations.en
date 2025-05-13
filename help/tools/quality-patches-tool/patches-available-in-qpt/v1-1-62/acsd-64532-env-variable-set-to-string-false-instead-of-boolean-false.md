@@ -26,7 +26,7 @@ Adobe Commerce (all deployment methods) 2.4.6-p2 - 2.4.7-p4
 `ENV` variable set to *false* is treated as a string *false* instead of a `BOOLEAN` *FALSE*.
 
 <u>Steps to reproduce</u>:
-1. Add `env:MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK` with value *false* to environment variables on Adobe Cloud.
+1. Add `env:MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK` with value *false* to environment variables on Adobe Commerce on cloud infrastructure.
 1. Wait for redeployment.
 1. Run the script checking the value:
 
@@ -50,3 +50,15 @@ Adobe Commerce (all deployment methods) 2.4.6-p2 - 2.4.7-p4
 
 <u>Actual results</u>:
 `$configParsedValue` has a value of *`string(5) false`*.
+
+## Apply the patch
+
+To apply individual patches, use the following links depending on your deployment method:
+
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+
+## Related reading
+
+To learn more about [!DNL Quality Patches Tool], refer to:
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
