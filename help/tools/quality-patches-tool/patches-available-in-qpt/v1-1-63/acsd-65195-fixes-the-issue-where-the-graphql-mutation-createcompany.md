@@ -27,13 +27,11 @@ The ACSD-65195 patch fixes the issue where the [!UICONTROL GraphQL] `createCompa
 
 The [!UICONTROL GraphQL] `createCompany` mutation returns an error when a region is specified for a country that doesn't require one.
 
-
 <u>Steps to reproduce</u>:
 
 1. Enable **[!UICONTROL B2B Companies]**.
 1. Send the `createCompany` [!UICONTROL GraphQL] mutation with a specified region field for a country that doesn't require one. For example: [!UICONTROL country_id]: *AE* and [!UICONTROL region]: *Dubai*.
 1. Check the GraphQL response.
-
 
 <u>Expected results</u>:
 
@@ -43,7 +41,6 @@ The company should be created successfully without returning an error when a reg
 
 The company is not created, and the following error is returned:
 `Error: Invalid value of "Dubai" provided for the region field.`
-
 
 ## Apply the patch
 
