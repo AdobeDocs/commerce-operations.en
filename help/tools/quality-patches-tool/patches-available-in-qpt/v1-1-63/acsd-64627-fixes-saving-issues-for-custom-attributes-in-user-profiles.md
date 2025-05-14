@@ -1,10 +1,10 @@
 ---
 title: 'ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]'
 description: Apply the ACSD-64627 patch to fix the Adobe Commerce issue where custom customer attributes can't be saved when adding or editing users within [!UICONTROL Company Structure].
-feature: B2B 
+feature: B2B
 role: Admin, Developer
+exl-id: 8e7dd72e-c21e-46cf-8e2b-9dccedfd8b04
 ---
-
 # ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]
 
 The ACSD-64627 patch fixes the issue where custom customer attributes can't be saved when adding or editing users within the **[!UICONTROL Company Structure]** page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.63 is installed. The patch ID is ACSD-64627. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.9.
