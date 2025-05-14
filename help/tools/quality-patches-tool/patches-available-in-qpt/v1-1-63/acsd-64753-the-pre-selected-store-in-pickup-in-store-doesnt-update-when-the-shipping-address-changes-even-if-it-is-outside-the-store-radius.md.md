@@ -29,7 +29,7 @@ The pre-selected store did not update when a new shipping address was entered ou
 
 <u>Steps to reproduce</u>:
 
-1. Enable In-Store Delivery (Stores > Configuration > Sales > Delivery Methods > In~-Store Delivery).
+1. Enable In-Store Delivery (**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**).
 1. Provide a valid Google API Key for Google Distance Provider (Stores > Configuration > Catalog > Inventory > Google Distance Provider).
 1. Add a new Source (Stores > Sources > Add New Source):
 Latitude 41.917344
