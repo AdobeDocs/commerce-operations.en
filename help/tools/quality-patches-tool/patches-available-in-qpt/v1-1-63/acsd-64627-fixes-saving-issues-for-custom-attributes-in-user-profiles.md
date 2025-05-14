@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-64627: Custom customer attributes not saving in Company Structure'
-description: Apply the ACSD-64627 patch to fix the Adobe Commerce issue where custom customer attributes can't be saved when adding or editing users within the Company Structure.
+title: 'ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]'
+description: Apply the ACSD-64627 patch to fix the Adobe Commerce issue where custom customer attributes can't be saved when adding or editing users within [!UICONTROL Company Structure].
 feature: B2B 
 role: Admin, Developer
 ---
 
-# ACSD-64627: Custom customer attributes not saving in Company Structure
+# ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]
 
 The ACSD-64627 patch fixes the issue where custom customer attributes can't be saved when adding or editing users within the **[!UICONTROL Company Structure]** page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.63 is installed. The patch ID is ACSD-64627. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
@@ -29,10 +29,10 @@ Custom customer attributes don't save when adding or editing users on the **[!UI
 
 <u>Steps to reproduce</u>:
 
-1. Install an Adobe Commerce (AC) instance with B2B features enabled.
-1. Create a new customer attribute named *custom_upload* with the **[!UICONTROL type]** set to *File (attachment)*.
-1. Create another customer attribute named *image_attachment* with the **[!UICONTROL type]** set to *Image*.
-1. Set both attributes to be available on the storefront by enabling **[!UICONTROL Show on Storefront]** = *Yes* and selecting all forms:
+1. Install an Adobe Commerce instance with B2B features enabled.
+1. Create a new customer attribute named *custom_upload* with the **[!UICONTROL Input Type]** set to *[!UICONTROL File (attachment)]*.
+1. Create another customer attribute named *image_attachment* with the **[!UICONTROL Input Type]** set to *[!UICONTROL Image File]*.
+1. Set **[!UICONTROL Show on Storefront]** to *Yes* to make both the attributes visible on the storefront. Select all forms:
    * Customer Registration
    * Customer Account Edit
    * Admin Checkout

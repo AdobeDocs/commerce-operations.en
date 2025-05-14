@@ -780,7 +780,7 @@ feature: Configuration
            - [ACSD-63520: Images uploaded through [!UICONTROL Image Upload Configuration] exceed the configured size limits](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits.md)
         - v1.1.63 {#v1-1-63}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)
-           - [ACSD-64627: Custom customer attributes not saving in Company Structure](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles.md)
+           - [ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
