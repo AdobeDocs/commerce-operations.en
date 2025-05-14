@@ -31,7 +31,7 @@ The pre-selected store did not update when a new shipping address was entered ou
 
 1. Enable In-Store Delivery (**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**).
 1. Provide a valid Google API Key for Google Distance Provider (**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[UICONTROL Catalog]** > **[UICONTROL Inventory]** >  **[!UICONTROL Google Distance Provider]**).
-1. Add a new Source (**[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]**):
+1. Add a new source (**[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]**):
     * Latitude 41.917344
     * Longitude -88.102569
     * Use as Pickup Location Yes
@@ -39,13 +39,13 @@ The pre-selected store did not update when a new shipping address was entered ou
     * State Illinois
     * City Carol Stream
     * Postcode 60188
-1. Add a new Stock (Stores > Stocks > Add New Stock), assign the new source and the Main Website to it.
-1. Edit any product, assign it to the new Source, In Stock and qty > 0.
-1. Wait until reindex is complete.
-1. On the Storefront, create a new Customer, add a California address as default billing and shipping
-1. Add an additional non-default Illinois address to this customer.
-1. Add the product to cart and proceed to checkout.
-1. Leave California shipping address selected and choose Pick in Store Shipping Method, and then Next.
+1. Add a new Stock (**[!UICONTROL Stores]** > **[!UICONTROL Stock]** > **[!UICONTROL Add New Stock]**), assign the new source and the main website to it.
+1. Edit any product, assign the product to the new Source, In Stock and qty > *0*.
+1. Wait until the reindex is complete.
+1. On the storefront, create a new customer, and then add a California address as default billing and shipping.
+1. Add another non-default Illinois address to this customer.
+1. Add the product to the cart and proceed to checkout.
+1. Leave the California shipping address selected and choose **[!UICONTROL Pick in Store]** shipping method, and then **[!UICONTROL Next]**.
 
 <u>Expected results</u>:
 
