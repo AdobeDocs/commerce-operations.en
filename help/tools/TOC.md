@@ -777,7 +777,6 @@ feature: Configuration
            - [ACSD-64523: REST Endpoint fails to validate mandatory fields](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields.md)
            - [ACSD-63520: Images uploaded through [!UICONTROL Image Upload Configuration] exceed the configured size limits](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits.md)
          - v1.1.63 {#v1-1-63}
-           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)
            - [ACSD-64753: The pre-selected store in "Pickup in Store" doesn't update when the shipping address changes, even if it is outside the store's radius](help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64753-the-pre-selected-store-in-pickup-in-store-doesnt-update-when-the-shipping-address-changes-even-if-it-is-outside-the-store-radius.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
