@@ -782,7 +782,7 @@ feature: Configuration
         - v1.1.63 {#v1-1-63}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)
            - [ACSD-65195: GraphQL createCompany mutation returns an error for a country without a required region](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md) 
-           - [ACSD-64753: The pre-selected store in "Pickup in Store" doesn't update when the shipping address changes, even if it is outside the store's radius](help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64753-the-pre-selected-store-in-pickup-in-store-doesnt-update-when-the-shipping-address-changes-even-if-it-is-outside-the-store-radius.md)
+           - [ACSD-64753: The pre-selected store in "Pickup in Store" doesn't update when the shipping address changes, even if it is outside the store's radius](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64753-the-pre-selected-store-in-pickup-in-store-doesnt-update-when-the-shipping-address-changes-even-if-it-is-outside-the-store-radius.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
