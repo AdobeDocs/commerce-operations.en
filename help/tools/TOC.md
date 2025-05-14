@@ -772,11 +772,16 @@ feature: Configuration
            - [ACSD-64467: WYSIWYG editor empty after saving category description at store view level](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
            - [ACSD-63974: Fixes slow [!UICONTROL Requisition List] load time with pagination](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
            - [ACSD-64209: Cron scheduler retrieves negotiable quotes without excluding [!UICONTROL Ordered] quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
-        - v1.1.62 {#v1-1-62}  
+        - v1.1.62 {#v1-1-62}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.62](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview.md)
+           - [ACSD-64532: ENV variable set to "false" is treated as a string "false" instead of a BOOLEAN "FALSE"](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false.md)
+           - [ACSD-63406: Expired persistent quotes not cleared when persistent_clear_expired cron job runs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared.md)
+           - [ACSD-64592: Non-default store gift card claim links redirect to default website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website.md)
            - [ACSD-64523: REST Endpoint fails to validate mandatory fields](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields.md)
            - [ACSD-63520: Images uploaded through [!UICONTROL Image Upload Configuration] exceed the configured size limits](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits.md)
-         - v1.1.63 {#v1-1-63}
+        - v1.1.63 {#v1-1-63}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)
+           - [ACSD-65195: GraphQL createCompany mutation returns an error for a country without a required region](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md) 
            - [ACSD-64753: The pre-selected store in "Pickup in Store" doesn't update when the shipping address changes, even if it is outside the store's radius](help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64753-the-pre-selected-store-in-pickup-in-store-doesnt-update-when-the-shipping-address-changes-even-if-it-is-outside-the-store-radius.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
