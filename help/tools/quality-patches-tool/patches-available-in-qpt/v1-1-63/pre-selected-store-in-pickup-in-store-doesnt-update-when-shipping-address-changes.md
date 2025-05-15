@@ -29,7 +29,7 @@ The pre-selected store did not update when a new shipping address was entered ou
 
 <u>Steps to reproduce</u>:
 
-1. Enable **[!UICONTROL In-Store Delivery]** by navigating to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**).
+1. Enable **[!UICONTROL In-Store Delivery]** by navigating to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**.
 1. Provide a valid [!DNL Google] API Key for [!DNL Google Distance Provider]. To do so, navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** >  **[!UICONTROL Google Distance Provider]**).
 1. Add a new source (**[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]**), and set the following values:
     * **[!UICONTROL Latitude]**: *-41.917344*
