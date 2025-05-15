@@ -12,7 +12,7 @@ GraphQL Application Server is available for Adobe Commerce only. It is not avail
 
 >[!NOTE]
 >
->GraphQL Application Server is currently not compatible with [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Adobe Commerce on cloud infrastructure customers currently using [!DNL AWS S3] for [remote storage](../configuration/remote-storage/cloud-support.md) cannot use GraphQL Application Server until Adobe releases a hotfix later in 2024.
+>GraphQL Application Server is currently not compatible with [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Adobe Commerce on cloud infrastructure customers currently using [!DNL AWS S3] for [remote storage](../configuration/remote-storage/cloud-support.md) cannot use GraphQL Application Server.
 
 ## Architecture
 

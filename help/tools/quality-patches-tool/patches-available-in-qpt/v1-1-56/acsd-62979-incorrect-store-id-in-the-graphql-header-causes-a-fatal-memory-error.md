@@ -13,11 +13,11 @@ The ACSD-62979 patch fixes the issue where using the incorrect Store ID in the G
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 2.4.6-p7, 2.4.6
+* Adobe Commerce (all deployment methods) 2.4.6, 2.4.6-p7, 2.4.7-p3
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.6-p8
+* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >

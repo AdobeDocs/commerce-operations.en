@@ -20,8 +20,7 @@ feature: Configuration
     - [Extensions](site-wide-analysis-tool/extensions.md)
     - [Alerts](site-wide-analysis-tool/alerts.md)
     - [Patches](site-wide-analysis-tool/patches.md)
-
- - Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
+- Managed alerts on Adobe Commerce {#managed-alerts-for-adobe-commerce}
     - [Managed alerts on Adobe Commerce: [!DNL Redis] memory critical alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
     - [Managed alerts for Adobe Commerce: Disk warning alert](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
     - [Managed alerts for Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -766,12 +765,21 @@ feature: Configuration
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
            - [ACP2E-3689: Multiple issues with category tree display on deeper levels and reflecting anchor/non-anchor relationships](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md) 
            - [ACSD-64178: [!UICONTROL Edit Attribute Set] page loads slowly with thousands of product attributes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+           - [ACSD-64431: The "placeOrder" mutation with coupon code in the request throws an internal server error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
            - [ACSD-64684: Validation error when saving a gift card with a value over 999 due to the comma in one thousand (1,000)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
            - [ACSD-63883: Fixing incorrect items_count in [!DNL GraphQL] response for [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
            - [ACP2E-3705: indexer_update_all_views cron execution fails when MAGE_INDEXER_THREADS_COUNT is set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
            - [ACSD-64467: WYSIWYG editor empty after saving category description at store view level](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
            - [ACSD-63974: Fixes slow [!UICONTROL Requisition List] load time with pagination](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
            - [ACSD-64209: Cron scheduler retrieves negotiable quotes without excluding [!UICONTROL Ordered] quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
+        - v1.1.62 {#v1-1-62}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.62](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview.md)
+           - [ACSD-63406: Expired persistent quotes not cleared when persistent_clear_expired cron job runs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared.md)
+           - [ACSD-64592: Non-default store gift card claim links redirect to default website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website.md)
+           - [ACSD-64523: REST Endpoint fails to validate mandatory fields](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields.md)
+           - [ACSD-63520: Images uploaded through [!UICONTROL Image Upload Configuration] exceed the configured size limits](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits.md)
+        - v1.1.63 {#v1-1-63}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)  
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

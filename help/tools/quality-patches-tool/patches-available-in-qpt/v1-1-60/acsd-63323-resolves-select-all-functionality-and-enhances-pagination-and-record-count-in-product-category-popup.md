@@ -7,7 +7,7 @@ exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
 ---
 # ACSD-63323: Resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup
 
-The ACSD-63323 patch fixes the issue where the **[!UICONTROL Select All]** option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) is installed. The patch ID is ACSD-63323. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-63323 patch fixes the issue where the **[!UICONTROL Select All]** option doesn't work when adding products to a category. Additionally, it ensures that pagination and the record count label function correctly when adding products to a category via the popup grid. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 is installed. The patch ID is ACSD-63323. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 

@@ -13,11 +13,11 @@ The ACSD-51819 patch fixes the issue where multiple orders can be placed through
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 2.4.4-p2
+* Adobe Commerce (all deployment methods) 2.4.4-p2, 2.4.5-p5, 2.4.6, 2.4.6-p4, 2.4.7-p1
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.4-p3
+* Adobe Commerce (all deployment methods) 2.4.4 - 2.4.4-p11, 2.4.5-p3 - 2.4.5-p10, 2.4.6 - 2.4.6-p8, 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >

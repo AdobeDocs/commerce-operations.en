@@ -24,4 +24,4 @@ magic_word: whatsnew
 
 # An organization to check a contributor for membership.
 # Values: 'true', 'false', empty if not configured.
-membership: AdobeDocs
+# membership: AdobeDocs

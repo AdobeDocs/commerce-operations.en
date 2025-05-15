@@ -53,7 +53,7 @@ Available options for the `upgrade:check` command:
 
 | **Command** | **Available options** |
 |----------------|-----------------|
-| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--current-version: Current Adobe Commerce version. This parameter is required and must always be used.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or -i): If you do not want to include critical issues, errors, and warnings from the current version in your report.</li><li>--coming-version (or -c): Target a specific Adobe Commerce version. Latest available will be used if omitted.</li></ul> |
+| `upgrade:check` |<ul><li>--help: Returns all available options.</li><li>--current-version: Current Adobe Commerce version. Version of the Adobe Commerce installation will be used if omitted.</li><li>--min-issue-level: You can filter issues according to the minimum issue level (default value is WARNING).</li><li>--ignore-current-version-compatibility-issues (or -i): If you do not want to include critical issues, errors, and warnings from the current version in your report.</li><li>--coming-version (or -c): Target a specific Adobe Commerce version. Latest available will be used if omitted.</li></ul> |
 
 The [!DNL Upgrade Compatibility Tool] allows you to run the `upgrade:check` command with an `--ignore-current-version-compatibility-issues` option. Use this option when you only want to get new issues that are introduced with the update from your current version to the targeted version in your [!DNL Upgrade Compatibility Tool] report:
 
