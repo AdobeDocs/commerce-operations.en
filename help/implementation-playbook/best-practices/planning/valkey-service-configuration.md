@@ -187,8 +187,3 @@ stage:
             compress_threshold: 20480     # don't compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
-
-## Additional information
-
-- [Valkey Page Cache](../../../configuration/cache/valkey-pg-cache.md)
-- [Use Valkey for session storage](../../../configuration/cache/valkey-session.md)
