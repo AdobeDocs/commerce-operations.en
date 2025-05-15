@@ -781,6 +781,7 @@ feature: Configuration
            - [ACSD-63520: Images uploaded through [!UICONTROL Image Upload Configuration] exceed the configured size limits](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits.md)
         - v1.1.63 {#v1-1-63}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)
+           - [ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles.md)
            - [ACSD-65195: GraphQL createCompany mutation returns an error for a country without a required region](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md) 
            - [ACSD-64753: The pre-selected store in "Pickup in Store" doesn't update when the shipping address changes, even if it is outside the store's radius](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64753-the-pre-selected-store-in-pickup-in-store-doesnt-update-when-the-shipping-address-changes-even-if-it-is-outside-the-store-radius.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
