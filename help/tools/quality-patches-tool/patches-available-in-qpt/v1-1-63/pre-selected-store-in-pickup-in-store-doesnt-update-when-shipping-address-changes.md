@@ -1,5 +1,5 @@
 ---
-title: "Pre-selected store in "Pickup in Store" doesn't update when shipping address changes"
+title: "Pre-selected store in 'Pickup in Store' doesn't update when shipping address changes"
 description: Apply the ACSD-64753 patch to fix the Adobe Commerce issue where the pre-selected store did not update when a new shipping address was entered outside the selected store's service radius.
 feature: Inventory
 role: Admin, Developer
@@ -29,7 +29,7 @@ The pre-selected store did not update when a new shipping address was entered ou
 
 <u>Steps to reproduce</u>:
 
-1. Enable In-Store Delivery (**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**).
+1. Enable **[!UICONTROL In-Store Delivery]** by navigating to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**).
 1. Provide a valid Google API Key for Google Distance Provider (**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** >  **[!UICONTROL Google Distance Provider]**).
 1. Add a new source (**[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]**):
     * Latitude 41.917344
