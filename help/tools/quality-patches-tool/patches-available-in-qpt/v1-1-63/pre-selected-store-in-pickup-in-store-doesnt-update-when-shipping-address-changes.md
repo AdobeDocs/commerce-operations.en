@@ -29,23 +29,23 @@ The pre-selected store did not update when a new shipping address was entered ou
 
 <u>Steps to reproduce</u>:
 
-1. Enable **[!UICONTROL In-Store Delivery]** by navigating to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**).
+1. Enable **[!UICONTROL In-Store Delivery]** by navigating to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**).
 1. Provide a valid [!DNL Google] API Key for [!DNL Google Distance Provider]. To do so, navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** >  **[!UICONTROL Google Distance Provider]**).
-1. Add a new source (**[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]**:
-    * Latitude 41.917344
-    * Longitude -88.102569
-    * Use as Pickup Location Yes
-    * Country United States
-    * State Illinois
-    * City Carol Stream
-    * Postcode 60188
-1. Add a new Stock (**[!UICONTROL Stores]** > **[!UICONTROL Stock]** > **[!UICONTROL Add New Stock]**), assign the new source and the main website to it.
+1. Add a new source (**[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]**, and set the following values:
+    * **[!UICONTROL Latitude]**: *-41.917344*
+    * **[!UICONTROL Longitude]**: *-88.102569*
+    * **[!UICONTROL Use as Pickup Location]**: *Yes*
+    * **[!UICONTROL Country United]**: *States*
+    * **[!UICONTROL State]**: *Illinois*
+    * **[!UICONTROL City]**: Carol Stream
+    * **[!UICONTROL Postcode]**: 60188
+1. Add a new stock (**[!UICONTROL Stores]** > *[!UICONTROL Inventory]* > **[!UICONTROL Stock]** > **[!UICONTROL Add New Stock]**), assign the new source and the main website to it.
 1. Edit any product, assign the product to the new Source, In Stock and qty > *0*.
 1. Wait until the reindex is complete.
 1. On the storefront, create a new customer, and then add a California address as default billing and shipping.
 1. Add another non-default Illinois address to this customer.
 1. Add the product to the cart and proceed to checkout.
-1. Leave the California shipping address selected and choose **[!UICONTROL Pick in Store]** shipping method, and then **[!UICONTROL Next]**.
+1. Leave the California shipping address selected and choose **[!UICONTROL Pick in Store]** shipping method. Click **[!UICONTROL Next]**.
 
 <u>Expected results</u>:
 
