@@ -1,5 +1,5 @@
 ---
-title: Best practices for Redis service configuration
+title: Best practices for Valkey service configuration
 description: Learn how to improve caching performance by using the extended Redis cache implementation for Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices, Cache
