@@ -1,5 +1,5 @@
 ---
-title: "ACSD-64753: The pre-selected store in 'Pickup in Store' doesn't update when the shipping address changes, even if it is outside the store's radius"
+title: "Pre-selected store in "Pickup in Store" doesn't update when shipping address changes"
 description: Apply the ACSD-64753 patch to fix the Adobe Commerce issue where the pre-selected store did not update when a new shipping address was entered outside the selected store's service radius.
 feature: Inventory
 role: Admin, Developer
