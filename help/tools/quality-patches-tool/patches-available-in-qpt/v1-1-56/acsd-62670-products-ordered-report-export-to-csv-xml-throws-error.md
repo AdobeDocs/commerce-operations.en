@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-62670: [!UICONTROL Ordered Products Report] export to CSV and XML throws error'
+title: 'ACSD-62670: [!UICONTROL Ordered Products Report] export to CSV and XML returns 404 error'
 description: Apply the ACSD-62670 patch to fix the Adobe Commerce issue where exporting the [!UICONTROL Ordered Products Report] to CSV and XML throws an error.
 feature: Reporting, Admin Workspace, Data Import/Export
 role: Admin, Developer
