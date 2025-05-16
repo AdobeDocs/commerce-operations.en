@@ -46,10 +46,7 @@ The product should be added to the shopping cart successfully.
 
 An error message is displayed:
 
-```
-Could not add the product with SKU "24-MB01" to the shopping cart: Some of the selected item options are not currently available.
-```
-
+*Could not add the product with SKU "24-MB01" to the shopping cart: Some of the selected item options are not currently available.*
 
 ## Apply the patch
 
