@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-64732: Third-Party controllers not cached correctly with customer segments'
+title: 'ACSD-64732: Third-party controllers not cached correctly with customer segments'
 description: Apply the ACSD-64732 patch to fix the Adobe Commerce issue where third-party controllers are not cached correctly with customer segments.
 feature: Cache
 role: Admin, Developer
 ---
 
-# ACSD-64732: Third-Party controllers not cached correctly with customer segments
+# ACSD-64732: Third-party controllers not cached correctly with customer segments
 
 The ACSD-64732 patch fixes the issue where the third-party controllers are not cached correctly with customer segments. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. The patch ID is ACSD-64732. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
@@ -30,7 +30,7 @@ Third-party controllers are not cached correctly with customer segments.
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL catalog]** > **[!UICONTROL category]** > **[!UICONTROL vary]**.
-1. Observe the **[!UICONTROL Network]** tab.
+1. Go to the **[!UICONTROL Network]** tab and check the value of **[!DNL X-Magento-Vary]**.
 1. Check the value of **[!UICONTROL X-Magento-Vary]**.
 
 <u>Expected results</u>:
@@ -39,7 +39,7 @@ The **[!UICONTROL X-Magento-Vary]** value should be the same on the custom contr
 
 <u>Actual results</u>:
 
-The value of **[!UICONTROL X-Magento-Vary]** is different, which causes cache misses. This means the previously generated cache can't be used when visiting the custom controller..
+The value of **[!UICONTROL X-Magento-Vary]** is different, which causes cache misses. This means the previously generated cache can't be used when visiting the custom controller.
 
 ## Apply the patch
 
