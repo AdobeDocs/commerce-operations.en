@@ -31,7 +31,6 @@ Third-party controllers are not cached correctly with customer segments.
 
 1. Go to **[!UICONTROL catalog]** > **[!UICONTROL category]** > **[!UICONTROL vary]**.
 1. Go to the **[!UICONTROL Network]** tab and check the value of **[!DNL X-Magento-Vary]**.
-1. Check the value of **[!UICONTROL X-Magento-Vary]**.
 
 <u>Expected results</u>:
 
