@@ -15,6 +15,14 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.63 {#v1-1-63}
+
+* **ACSD-64627** (for Adobe Commerce >=2.4.6-p8 <2.4.8) - Fixes the issue where custom customer attributes can't be saved when adding or editing users within the Company Structure.
+* **ACSD-64753** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the pre-selected store in "Pickup in Store" doesn't update when the shipping address changes, even if it is outside the store's radius.
+* **ACSD-65195** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the GraphQL mutation `createCompany` throws an error for a country without a required region.
+* **LYNX-839** (for Adobe Commerce 2.4.8) - Removed exposure of customer group, segments, and promotional rules information through GraphQL.
+* Versions updated: **MDVA-12304**, **ACSD-48234**, **ACSD-58054**
+
 ## v1.1.62 {#v1-1-62}
 
 * **ACSD-63406** (for Adobe Commerce and Magento Open Source >=2.4.4-p9 <2.4.5 || >=2.4.5-p8 <2.4.6 || >=2.4.6-p6 <2.4.8) - Fixes the issue where expired persistent quotes are not cleared by any cron job when the `persistent_clear_expired` cron job runs.
