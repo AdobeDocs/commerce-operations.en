@@ -12,6 +12,7 @@ recommendations: noDisplay, noCatalog
   - [Backward-incompatible changes](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
     - [Overview](release-notes/commerce/overview.md)
+    - [2.4.9](release-notes/commerce/2-4-9.md)
     - [2.4.8](release-notes/commerce/2-4-8.md)
     - [2.4.7](release-notes/commerce/2-4-7.md)
     - [2.4.6](release-notes/commerce/2-4-6.md)
@@ -23,6 +24,7 @@ recommendations: noDisplay, noCatalog
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
     - [Overview](release-notes/open-source/overview.md)
+    - [2.4.9](release-notes/open-source/2-4-9.md)
     - [2.4.8](release-notes/open-source/2-4-8.md)
     - [2.4.7](release-notes/open-source/2-4-7.md)
     - [2.4.6](release-notes/open-source/2-4-6.md)
