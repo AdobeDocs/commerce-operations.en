@@ -1,6 +1,6 @@
 ---
 title: Best practices for Valkey service configuration
-description: Learn how to improve caching performance by using the extended Redis cache implementation for Adobe Commerce.
+description: Learn how to improve caching performance by using the extended Valkey cache implementation for Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
@@ -83,7 +83,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-See [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
+See [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
 For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento:setup` commands. See [Use Valkey for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
 
@@ -187,3 +187,8 @@ stage:
             compress_threshold: 20480     # don't compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
+
+## Additional information
+
+- [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
+- [Use Redis for session storage](../../../configuration/cache/redis-session.md)
