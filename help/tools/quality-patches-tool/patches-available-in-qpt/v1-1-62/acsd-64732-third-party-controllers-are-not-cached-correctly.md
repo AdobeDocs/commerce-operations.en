@@ -3,8 +3,8 @@ title: 'ACSD-64732: Third-party controllers not cached correctly with customer s
 description: Apply the ACSD-64732 patch to fix the Adobe Commerce issue where third-party controllers are not cached correctly with customer segments.
 feature: Cache
 role: Admin, Developer
+exl-id: 378e5a96-06dd-4796-9e45-a67cf539fcce
 ---
-
 # ACSD-64732: Third-party controllers not cached correctly with customer segments
 
 The ACSD-64732 patch fixes the issue where the third-party controllers are not cached correctly with customer segments. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. The patch ID is ACSD-64732. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
