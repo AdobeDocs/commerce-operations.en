@@ -9,6 +9,8 @@ Adobe Commerce on cloud infrastructure is a platform-as-a-service (PaaS) offerin
 
 This shared model enables merchants to design and implement a highly flexible, customizable, and scalable solution to meet their business requirements while minimizing operational responsibilities and costs.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
+
 In general, Adobe is responsible for the following:
 
 - Developing and maintaining secure core application code

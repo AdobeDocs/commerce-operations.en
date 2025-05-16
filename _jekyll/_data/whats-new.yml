@@ -2,8 +2,105 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue May 6 02:20:54 2025
+updated: Tue May 13 20:54:45 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-65195
+    patch in the QPT 1.1.63 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany).
+  versions: ''
+  type: new-topic, qpt
+  date: May 13, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1348
+  merge_commit: a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc
+  contributor: glo53002
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: The [ACSD-64532 patch](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false)
+    fixes the issue where the ENV variable set to false is treated as a string false
+    instead of a BOOLEAN FALSE.
+  versions: ''
+  type: new-topic, qpt
+  date: May 13, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1351
+  merge_commit: e043fb96774c79b4d0f0b41a93fbbdbce25c5ec9
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.63 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview)
+  versions: ''
+  type: new-topic, qpt
+  date: May 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1347
+  merge_commit: 73e94802a4fbf4dfcbfb50be1a8a23d831368168
+  contributor: glo51235
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-63406
+    patch in the QPT 1.1.62 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared)
+  versions: ''
+  type: new-topic, qpt
+  date: May 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1335
+  merge_commit: 9661351d137ebd704c884f2dc1459eee26a3fdc4
+  contributor: glo51235
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Updated the [affected products and versions section in the ACSD-64592
+    patch](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website).
+  versions: ''
+  type: new-topic, qpt
+  date: May 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1339
+  merge_commit: d709a0d7fed160c1c24cc934d731d90d04b8e765
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added RabbitMQ 4.1  to the list of supported [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for the June 2025 patches (except 2.4.4-p13).<br/>- 2.4.8<br/>- 2.4.7-p5<br/>-
+    2.4.6-p10<br/>- 2.4.5-p12
+  versions: ''
+  type: technical
+  date: May 8, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1321
+  merge_commit: eefd34642834599db4a24f23f2a8bce5f0ff2155
+  contributor: jmatthew
+  membership:
+  labels:
+  - technical
+- description: Added the [detailed description of the issue fixed by the ACSD-64523
+    patch in the QPT 1.1.62 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields)
+  versions: ''
+  type: new-topic, qpt
+  date: May 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1330
+  merge_commit: 55dd9097d014d37d519ff0ce00fee03c82fbc0ac
+  contributor: glo42770
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64684
+    patch in the QPT 1.1.62 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits)
+  versions: ''
+  type: new-topic, qpt
+  date: May 7, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1331
+  merge_commit: e894a4b3e56afd2359ac35a149785447dfa97b80
+  contributor: glo42770
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [description of the issues fixed by the patches available
     in the QPT 1.1.62 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview)
   versions: ''
