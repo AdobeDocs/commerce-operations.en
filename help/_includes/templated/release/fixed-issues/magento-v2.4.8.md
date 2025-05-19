@@ -107,7 +107,7 @@ ensuring compatibility and up-to-date functionality. Previously, updating to the
   Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability
   _AC-12901 - [GitHub code contribution](<https://github.com/magento/magento2/commit/b34c0a75>)_
 
-## Fixed issues
+## Fixed issues in v2.4.8
 
 We have fixed 497 issues in the Magento Open Source 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
