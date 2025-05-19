@@ -2,7 +2,7 @@
 
 ## Fixed issues in v2.4.8
 
-We have fixed 582 issues in the Adobe Commerce 2.4.8 core code. A subset of the fixed issues included in this release is described below.
+We have fixed 581 issues in the Adobe Commerce 2.4.8 core code. A subset of the fixed issues included in this release is described below.
 
 ### APIs
 

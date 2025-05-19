@@ -3,8 +3,8 @@ title: 'ACSD-65195: GraphQL `createCompany` mutation returns an error for a coun
 description: Apply the ACSD-65195 patch to fix the Adobe Commerce issue where the GraphQL `createCompany` mutation throws an error for countries that don't require a region.
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
+exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
 ---
-
 # ACSD-65195: GraphQL `createCompany` mutation returns an error for a country without a required region
 
 The ACSD-65195 patch fixes the issue where the [!UICONTROL GraphQL] `createCompany` mutation throws an error for countries that don't require a region. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.63 is installed. The patch ID is ACSD-65195. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
