@@ -1,0 +1,17 @@
+---
+version: "2.4.9-alpha1"
+product: "Magento Open Source"
+---
+{%- assign data_path = page.version | replace: ".", "-" | prepend: "v" -%}
+# {{page.product}} release notes (v{{page.version}})
+
+## Highlights in v{{page.version}}
+
+{%- assign fixes = site.data.release.highlights[data_path] %}
+{% if fixes.size == 1 -%}
+The following highlight applies to the {{page.product}} {{page.version}} release.
+{%- else %}
+The following {{fixes | size }} highlights apply to the {{page.product}} {{page.version}} release.
+{%- endif -%}
+
+{%- include release/fixed-issues.html -%}
