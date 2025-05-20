@@ -36,6 +36,7 @@ recommendations: noDisplay, noCatalog
     - [2.4.0](release-notes/open-source/2-4-0.md)
   - Security patch releases {#security-patches}
     - [Overview](release-notes/security/overview.md)
+    - [2.4.8](release-notes/security/2-4-8-patches.md)
     - [2.4.7](release-notes/security/2-4-7-patches.md)
     - [2.4.6](release-notes/security/2-4-6-patches.md)
     - [2.4.5](release-notes/security/2-4-5-patches.md)
