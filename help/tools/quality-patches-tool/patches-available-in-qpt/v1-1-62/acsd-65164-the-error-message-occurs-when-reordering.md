@@ -3,8 +3,8 @@ title: 'ACSD-65164: Error message when reordering configurable product with a si
 description: Apply the ACSD-65164 patch to fix the Adobe Commerce issue where the error message *Some of the selected item options are not currently available* occurs when reordering a configurable product with a single selected checkbox custom option.
 feature: Products, Orders
 role: Admin, Developer
+exl-id: 22b72d24-4852-45ba-ac98-df9565f94539
 ---
-
 # ACSD-65164: Error message when reordering configurable product with a single checkbox custom option selected
 
 The ACSD-65164 patch fixes the issue where the error message *Some of the selected item options are not currently available* occurs when reordering a configurable product with a single selected checkbox custom option. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 is installed. The patch ID is ACSD-65164. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.

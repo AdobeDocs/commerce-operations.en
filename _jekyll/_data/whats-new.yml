@@ -2,8 +2,56 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue May 13 20:54:45 2025
+updated: Tue May 20 02:20:55 2025
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.64 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update, qpt
+  date: May 19, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1354
+  merge_commit: 922a00af2ba6d071054b25551f6a01e78310adef
+  contributor: gorbivsk
+  membership:
+  labels:
+  - major-update
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64732
+    patch in the QPT 1.1.62 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly)
+  versions: ''
+  type: new-topic, qpt
+  date: May 16, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1338
+  merge_commit: 7d2d6c5fb9b72dd7fcf6aed6c87568903219b5d6
+  contributor: glo53002
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-65164
+    patch in the QPT 1.1.62 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering)
+  versions: ''
+  type: new-topic, qpt
+  date: May 16, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1340
+  merge_commit: bca0ae7421b4fcdeef7a11103fbc8706dd208669
+  contributor: glo53002
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64627
+    patch in the QPT 1.1.63 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles)
+  versions: ''
+  type: new-topic, qpt
+  date: May 14, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1349
+  merge_commit: be26fe753a0824af8cf90db612e7c1e37febefa2
+  contributor: glo51235
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [detailed description of the issue fixed by the ACSD-65195
     patch in the QPT 1.1.63 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany).
   versions: ''
