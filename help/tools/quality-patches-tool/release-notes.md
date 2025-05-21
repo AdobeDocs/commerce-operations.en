@@ -15,6 +15,19 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.64 {#v1-1-64}
+
+* **ACP2E-3838** (for Adobe Commerce and Magento Open Source >=2.4.4-p9 <2.4.4-p13 || >=2.4.5-p8 <2.4.5-p12 || >=2.4.6-p6 <2.4.6-p10 || >=2.4.7 <2.4.7-p5) - Fixes the issue where [!DNL Page Builder] CORS errors prevent saving changes in the Admin panel in production mode.
+* **ACP2E-3841** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled.
+* **ACSD-63139** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where product export fails when product attributes contain thousands of option values.
+* **ACSD-65100** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where removing the values for [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error during the image optimization process.
+* **ACSD-65127** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where enabling JavaScript minification in production mode causes [!DNL TinyMCE] 6 to generate errors in the browser console, affecting functionality and user experience.
+* **ACSD-65787** (for Adobe Commerce and Magento Open Source >=2.4.7-p5 <2.4.8) - Fixes the issue where the SchemaBuilder class crashes during schema creation or updates due to an undefined array key 'column' when processing table data.
+* **ACSD-65223** (for Adobe Commerce, B2B 1.5.1) - Fixes the issue where manually selected terms and agreements for [!DNL B2B] purchase orders result in an error.
+* **ACSD-65540** (for Adobe Commerce, B2B 1.5.2) - Fixes the issue where an SQL syntax error occurs due to the absence of the `REGEXP_LIKE` function when updating the `company_structure` table.
+* **ACSD-65684** (for Adobe Commerce, B2B 1.5.2) - Fixes the performance issue where upgrading the `Magento_Company` module after updating to [!DNL B2B] 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the `company_structure` table.
+* Versions updated: **ACSD-48234**, **ACSD-51819**, **ACSD-57570**, **ACSD-56415**
+
 ## v1.1.63 {#v1-1-63}
 
 * **ACSD-64627** (for Adobe Commerce >=2.4.6-p8 <2.4.8) - Fixes the issue where custom customer attributes can't be saved when adding or editing users within the Company Structure.
