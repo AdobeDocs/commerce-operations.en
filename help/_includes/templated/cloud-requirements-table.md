@@ -4,6 +4,65 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.9-alpha1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+          2.8
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            11.4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          11.5.0.18+, 10.15.0.4+
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+          8.4, 8.3
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+            4.1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            7.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+            8
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>Software dependencies</th>
       <th>2.4.8</th>
       <th>2.4.8-p1</th>
     </tr>
