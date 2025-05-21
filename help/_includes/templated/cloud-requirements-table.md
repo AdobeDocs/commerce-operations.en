@@ -3,9 +3,7 @@
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software dependencies
-      </th>
+      <th>Software dependencies</th>
       <th>2.4.8</th>
     </tr>
   </thead>
@@ -13,19 +11,13 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2.8
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          --
+          2.8
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -37,13 +29,13 @@
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            11.5.0.18+, 10.15.0.4+
+          11.5.0.18+, 10.15.0.4+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.4/8.3
+          8.4/8.3
       </td>
     </tr>
     <tr>
@@ -64,9 +56,7 @@
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software dependencies
-      </th>
+      <th>Software dependencies</th>
       <th>2.4.7-p5</th>
       <th>2.4.7-p4</th>
       <th>2.4.7-p3</th>
@@ -79,64 +69,43 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2.8
+          2.8
       </td>
       <td>
-            2.8
+          2.8
       </td>
       <td>
-            2.7
+          2.7
       </td>
       <td>
-            2.7
+          2.7
       </td>
       <td>
-            2.7
+          2.7
       </td>
       <td>
-            2.7
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
+          2.7
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -163,43 +132,43 @@
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.3/8.2
+          8.3/8.2
       </td>
       <td>
-            8.3, 8.2
+          8.3, 8.2
       </td>
       <td>
-            8.3, 8.2
+          8.3, 8.2
       </td>
       <td>
-            8.3, 8.2
+          8.3, 8.2
       </td>
       <td>
-            8.3, 8.2
+          8.3, 8.2
       </td>
       <td>
-            8.3, 8.2
+          8.3, 8.2
       </td>
     </tr>
     <tr>
@@ -217,10 +186,10 @@
             3.13
       </td>
       <td>
-            3.12
+          3.12
       </td>
       <td>
-            3.12
+          3.12
       </td>
     </tr>
     <tr>
@@ -250,9 +219,7 @@
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software dependencies
-      </th>
+      <th>Software dependencies</th>
       <th>2.4.6-p10</th>
       <th>2.4.6-p9</th>
       <th>2.4.6-p8</th>
@@ -270,109 +237,73 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
+          2.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -414,73 +345,73 @@
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
     </tr>
     <tr>
@@ -528,7 +459,7 @@
             7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
             7.0
@@ -561,9 +492,7 @@
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software dependencies
-      </th>
+      <th>Software dependencies</th>
       <th>2.4.5-p12</th>
       <th>2.4.5-p11</th>
       <th>2.4.5-p10</th>
@@ -583,127 +512,85 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
+          2.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
     </tr>
     <tr>
@@ -715,10 +602,10 @@
             10.6, 10.5
       </td>
       <td>
-            10.5
+          10.5
       </td>
       <td>
-            10.5
+          10.5
       </td>
       <td>
             10.5, 10.4
@@ -751,85 +638,85 @@
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
     </tr>
     <tr>
@@ -883,7 +770,7 @@
             7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
             7.0
@@ -922,9 +809,7 @@
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software dependencies
-      </th>
+      <th>Software dependencies</th>
       <th>2.4.4-p13</th>
       <th>2.4.4-p12</th>
       <th>2.4.4-p11</th>
@@ -945,136 +830,91 @@
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.2
+          2.2
       </td>
       <td>
-            2.1
+          2.1
       </td>
       <td>
-            2.1
+          2.1
       </td>
       <td>
-            2.1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
+          2.1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
     </tr>
     <tr>
@@ -1086,10 +926,10 @@
             10.6, 10.5
       </td>
       <td>
-            10.5
+          10.5
       </td>
       <td>
-            10.5
+          10.5
       </td>
       <td>
             10.5, 10.4
@@ -1125,91 +965,91 @@
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
     </tr>
     <tr>
@@ -1266,7 +1106,7 @@
             7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
             7.0
