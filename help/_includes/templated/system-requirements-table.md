@@ -79,12 +79,12 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-          --
+              8
       </td>
       <td>
-          --
+              8
       </td>
     </tr>
     <tr>
@@ -356,27 +356,27 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td><span class="uicontrol">[!DNL Redis/Valkey]</span></td>
       <td>
-          --
+              7.2/8
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
     </tr>
     <tr>
@@ -893,42 +893,42 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td><span class="uicontrol">[!DNL Redis/Valkey]</span></td>
       <td>
-          --
+              7.2/8
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2, 7.0
+              7.2, 7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
     </tr>
     <tr>
@@ -1624,48 +1624,48 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td><span class="uicontrol">[!DNL Redis/Valkey]</span></td>
       <td>
-          --
+              7.2/8
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2, 7.0
+              7.2, 7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
     </tr>
     <tr>
@@ -2439,49 +2439,49 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2
+              7.2
       </td>
       <td>
-            7.2, 7.0
+              7.2, 7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            7.0
+              7.0
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
       <td>
-            6.2
+              6.2
       </td>
     </tr>
     <tr>

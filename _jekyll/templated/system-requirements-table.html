@@ -104,12 +104,26 @@
         {%- endfor %}
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td><span class="uicontrol">[!DNL {%- if requirements[0][0] contains '2.4.8' %} Valkey{%- elsif requirements[0][0] == '2.4.7-p6' or requirements[0][0] == '2.4.6-p11' or requirements[0][0] == '2.4.5-p13' %} Redis/Valkey{%- else %} Redis{%- endif %}]</span></td>
         {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['Redis'] %}
-            {{requirement[1]['Redis']}}
+      <td>{%- if requirement[0] contains '2.4.8' %}
+            {%- if requirement[1]['Valkey'] %}
+              {{requirement[1]['Valkey']}}
+            {%- else %}
+              --
+            {%- endif %}
+          {%- elsif requirement[0] == '2.4.7-p6' or requirement[0] == '2.4.6-p11' or requirement[0] == '2.4.5-p13' %}
+            {%- if requirement[1]['Redis/Valkey'] %}
+              {{requirement[1]['Redis/Valkey']}}
+            {%- else %}
+              --
+            {%- endif %}
           {%- else %}
-          --
+            {%- if requirement[1]['Redis'] %}
+              {{requirement[1]['Redis']}}
+            {%- else %}
+              --
+            {%- endif %}
           {%- endif %}
       </td>
         {%- endfor %}
