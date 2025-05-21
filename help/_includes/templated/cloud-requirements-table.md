@@ -15,7 +15,7 @@
           2.8
       </td>
       <td>
-          --
+          2.8
       </td>
     </tr>
     <tr>
@@ -24,7 +24,7 @@
           2
       </td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -42,13 +42,16 @@
           11.5.0.18+, 10.15.0.4+
       </td>
       <td>
-            11.5.0.18+, 10.15.0.4+
+          11.5.0.18+, 10.15.0.4+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-          8.4/8.3
+          8.4, 8.3
+      </td>
+      <td>
+          8.4, 8.3
       </td>
     </tr>
     <tr>
@@ -61,12 +64,21 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-              8
+            7.2
       </td>
       <td>
-              8
+            7.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+            8
+      </td>
+      <td>
+            8
       </td>
     </tr>
   </tbody>
@@ -76,6 +88,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.7-p6</th>
       <th>2.4.7-p5</th>
       <th>2.4.7-p4</th>
       <th>2.4.7-p3</th>
@@ -94,7 +107,7 @@
           2.8
       </td>
       <td>
-          2.7
+          2.8
       </td>
       <td>
           2.7
@@ -106,7 +119,7 @@
           2.7
       </td>
       <td>
-          --
+          2.7
       </td>
     </tr>
     <tr>
@@ -130,7 +143,7 @@
           2
       </td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -178,13 +191,16 @@
           10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-          8.3/8.2
+          8.3, 8.2
+      </td>
+      <td>
+          8.3, 8.2
       </td>
       <td>
           8.3, 8.2
@@ -227,27 +243,51 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis/Valkey]</span></td>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-              7.2/8
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
-              7.2
+            7.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+            8
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
       </td>
     </tr>
   </tbody>
@@ -257,6 +297,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.6-p11</th>
       <th>2.4.6-p10</th>
       <th>2.4.6-p9</th>
       <th>2.4.6-p8</th>
@@ -307,7 +348,7 @@
           2.2
       </td>
       <td>
-          --
+          2.2
       </td>
     </tr>
     <tr>
@@ -346,7 +387,7 @@
           2
       </td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -424,7 +465,7 @@
           10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
     </tr>
     <tr>
@@ -463,7 +504,7 @@
           8.2, 8.1
       </td>
       <td>
-            8.2, 8.1
+          8.2, 8.1
       </td>
     </tr>
     <tr>
@@ -506,42 +547,81 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis/Valkey]</span></td>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-              7.2/8
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
           7.2
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+            8
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
       </td>
     </tr>
   </tbody>
@@ -551,6 +631,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.5-p13</th>
       <th>2.4.5-p12</th>
       <th>2.4.5-p11</th>
       <th>2.4.5-p10</th>
@@ -609,11 +690,14 @@
           2.2
       </td>
       <td>
-          --
+          2.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2
+      </td>
       <td>
           2
       </td>
@@ -741,7 +825,7 @@
           9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
     </tr>
     <tr>
@@ -786,7 +870,7 @@
           8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
     </tr>
     <tr>
@@ -835,48 +919,93 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis/Valkey]</span></td>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-              7.2/8
+            7.2
       </td>
       <td>
-              7.2
+            7.2
+      </td>
+      <td>
+            7.2
       </td>
       <td>
           7.2
       </td>
       <td>
-              7.2, 7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+            8
       </td>
       <td>
-              6.2
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
       </td>
     </tr>
   </tbody>
@@ -886,6 +1015,7 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
+      <th>2.4.4-p14</th>
       <th>2.4.4-p13</th>
       <th>2.4.4-p12</th>
       <th>2.4.4-p11</th>
@@ -939,7 +1069,7 @@
           2.2
       </td>
       <td>
-          2.1
+          2.2
       </td>
       <td>
           2.1
@@ -948,11 +1078,14 @@
           2.1
       </td>
       <td>
-          --
+          2.1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2
+      </td>
       <td>
           2
       </td>
@@ -1089,7 +1222,7 @@
           9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
     </tr>
     <tr>
@@ -1137,7 +1270,7 @@
           8.1
       </td>
       <td>
-            8.1
+          8.1
       </td>
     </tr>
     <tr>
@@ -1191,49 +1324,97 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
-              7.2
+            7.2
       </td>
       <td>
           7.2
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              7.0
+            7.0
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
       </td>
       <td>
-              6.2
+            6.2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
+      </td>
+      <td>
+        --
       </td>
     </tr>
   </tbody>
