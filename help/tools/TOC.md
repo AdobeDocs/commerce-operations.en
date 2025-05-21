@@ -788,6 +788,7 @@ feature: Configuration
            - [ACSD-64753: Pre-selected store in "Pickup in Store" doesn't update when shipping address changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
         - v1.1.64 {#v1-1-64}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
+           - [ACP2E-3841: Cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled](help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
