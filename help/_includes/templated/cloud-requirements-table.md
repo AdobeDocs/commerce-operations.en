@@ -45,12 +45,6 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
-      <td>
-            7.2
-      </td>
-    </tr>
-    <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
             8
@@ -120,15 +114,6 @@
       </td>
       <td>
             4.1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
-      <td>
-            7.2
-      </td>
-      <td>
-            7.2
       </td>
     </tr>
     <tr>
