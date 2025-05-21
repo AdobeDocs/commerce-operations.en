@@ -5,8 +5,8 @@
 {%- assign requirements_data = site.data.system-requirements %}
 {%- assign grouped_requirements = requirements_data | group_by_exp: "version", "version[0] | slice: 4" %}
 
-{%- assign cloud_dependencies = "Composer,OpenSearch Cloud,MariaDB Cloud,New Relic Cloud,PHP,RabbitMQ Cloud,Redis Cloud" | split: "," %}
-{%- assign fallback_keys = "OpenSearch,MariaDB,RabbitMQ,Redis" | split: "," %}
+{%- assign cloud_dependencies = "Composer,OpenSearch Cloud,MariaDB Cloud,New Relic Cloud,PHP,RabbitMQ Cloud,Redis Cloud,Valkey Cloud" | split: "," %}
+{%- assign fallback_keys = "OpenSearch,MariaDB,RabbitMQ,Redis,Valkey" | split: "," %}
 
 {%- for minor_version in grouped_requirements %}
 {%- assign requirements = minor_version.items %}
@@ -22,27 +22,39 @@
   </thead>
   <tbody>
     {%- for dependency in cloud_dependencies %}
+    {%- assign has_value = false %}
+    {%- for requirement in requirements %}
+      {%- if requirement[1][dependency] %}
+        {%- assign has_value = true %}
+        {%- break %}
+      {%- endif %}
+      {%- assign base_dependency = dependency | remove: " Cloud" %}
+      {%- if fallback_keys contains base_dependency and requirement[1][base_dependency] %}
+        {%- assign has_value = true %}
+        {%- break %}
+      {%- endif %}
+    {%- endfor %}
+    {%- if has_value %}
     <tr>
       <td><span class="uicontrol">[!DNL {{dependency | remove: " Cloud"}}]</span></td>
       {%- for requirement in requirements %}
       <td>
-        {%- assign has_value = false %}
-        {%- if requirement[1][dependency] %}
-          {{requirement[1][dependency]}}
-          {%- assign has_value = true %}
-        {%- else %}
+        {%- assign value = requirement[1][dependency] %}
+        {%- unless value %}
           {%- assign base_dependency = dependency | remove: " Cloud" %}
-          {%- if fallback_keys contains base_dependency and requirement[1][base_dependency] %}
-            {{requirement[1][base_dependency]}}
-            {%- assign has_value = true %}
+          {%- if fallback_keys contains base_dependency %}
+            {%- assign value = requirement[1][base_dependency] %}
           {%- endif %}
-        {%- endif %}
-        {%- unless has_value %}
-        --
         {%- endunless %}
+        {%- if value %}
+          {{value}}
+        {%- else %}
+          --
+        {%- endif %}
       </td>
       {%- endfor %}
     </tr>
+    {%- endif %}
     {%- endfor %}
   </tbody>
 </table>
