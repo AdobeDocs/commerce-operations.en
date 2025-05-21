@@ -23,7 +23,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            11.4
+          11.4
       </td>
     </tr>
     <tr>
@@ -41,13 +41,13 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4.1
+          4.1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-            8
+          8
       </td>
     </tr>
   </tbody>
@@ -83,10 +83,10 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            11.4
+          11.4
       </td>
       <td>
-            11.4
+          11.4
       </td>
     </tr>
     <tr>
@@ -110,19 +110,19 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4.1
+          4.1
       </td>
       <td>
-            4.1
+          4.1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-            8
+          8
       </td>
       <td>
-            8
+          8
       </td>
     </tr>
   </tbody>
@@ -193,25 +193,25 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.11
+          10.11
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
     </tr>
     <tr>
@@ -265,19 +265,19 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4.1, 3.13
+          4.1, 3.13
       </td>
       <td>
-            4.1
+          4.1
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
           3.12
@@ -289,49 +289,49 @@
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
       <td>
-            7.2
+          7.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-            8
+          8
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
     </tr>
   </tbody>
@@ -437,40 +437,40 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.11
+          10.11
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
     </tr>
     <tr>
@@ -554,118 +554,118 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4.1, 3.13
+          4.1, 3.13
       </td>
       <td>
-            4.1
+          4.1
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
-            3.12
+          3.12
       </td>
       <td>
-            3.12, 3.11, 3.9
+          3.12, 3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2
-      </td>
-      <td>
-            7.2
-      </td>
-      <td>
-            7.2
+          7.2
       </td>
       <td>
           7.2
       </td>
       <td>
-            7.0
+          7.2
       </td>
       <td>
-            7.0
+          7.2
       </td>
       <td>
-            7.0
+          7.0
       </td>
       <td>
-            7.0
+          7.0
       </td>
       <td>
-            7.0
+          7.0
       </td>
       <td>
-            7.0
+          7.0
       </td>
       <td>
-            7.0
+          7.0
       </td>
       <td>
-            7.0
+          7.0
+      </td>
+      <td>
+          7.0
+      </td>
+      <td>
+          7.0
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-            8
+          8
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
     </tr>
   </tbody>
@@ -785,46 +785,46 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6, 10.5
-      </td>
-      <td>
-          10.5
+          10.6, 10.5
       </td>
       <td>
           10.5
       </td>
       <td>
-            10.5, 10.4
+          10.5
       </td>
       <td>
-            10.4
+          10.5, 10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
+      </td>
+      <td>
+          10.4
       </td>
     </tr>
     <tr>
@@ -920,136 +920,136 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4.1, 3.13
+          4.1, 3.13
       </td>
       <td>
-            4.1
+          4.1
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
-            3.13
+          3.13
       </td>
       <td>
-            3.12, 3.11
+          3.12, 3.11
       </td>
       <td>
-            3.12, 3.11, 3.9
+          3.12, 3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
       <td>
-            3.11, 3.9
+          3.11, 3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2
-      </td>
-      <td>
-            7.2
-      </td>
-      <td>
-            7.2
+          7.2
       </td>
       <td>
           7.2
       </td>
       <td>
-            7.0
+          7.2
       </td>
       <td>
-            7.0
+          7.2
       </td>
       <td>
-            7.0
+          7.0
       </td>
       <td>
-            6.2
+          7.0
       </td>
       <td>
-            6.2
+          7.0
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
+          6.2
+      </td>
+      <td>
+          6.2
+      </td>
+      <td>
+          6.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-            8
+          8
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
       <td>
-        --
+          --
       </td>
     </tr>
   </tbody>
@@ -1176,49 +1176,49 @@
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6
+          10.6
       </td>
       <td>
-            10.6, 10.5
-      </td>
-      <td>
-          10.5
+          10.6, 10.5
       </td>
       <td>
           10.5
       </td>
       <td>
-            10.5, 10.4
+          10.5
       </td>
       <td>
-            10.4
+          10.5, 10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
       </td>
       <td>
-            10.4
+          10.4
+      </td>
+      <td>
+          10.4
       </td>
     </tr>
     <tr>
@@ -1320,145 +1320,97 @@
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
       <td>
-            3.9
+          3.9
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2
-      </td>
-      <td>
-            7.2
-      </td>
-      <td>
-            7.2
+          7.2
       </td>
       <td>
           7.2
       </td>
       <td>
-            7.0
+          7.2
       </td>
       <td>
-            7.0
+          7.2
       </td>
       <td>
-            7.0
+          7.0
       </td>
       <td>
-            6.2
+          7.0
       </td>
       <td>
-            6.2
+          7.0
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
+          6.2
       </td>
       <td>
-            6.2
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Valkey]</span></td>
-      <td>
-        --
+          6.2
       </td>
       <td>
-        --
+          6.2
       </td>
       <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
-      </td>
-      <td>
-        --
+          6.2
       </td>
     </tr>
   </tbody>

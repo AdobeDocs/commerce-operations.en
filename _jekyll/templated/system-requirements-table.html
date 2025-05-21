@@ -25,17 +25,14 @@
   </thead>
   <tbody>
     {%- for dependency in dependencies %}
-    {%- assign skip_row = false %}
+    {%- assign has_value = false %}
     {%- for requirement in requirements %}
-      {%- assign is_target_version = false %}
-      {%- if requirement[0] contains "2.4.8" or requirement[0] contains "2.4.9" %}
-        {%- assign is_target_version = true %}
-      {%- endif %}
-      {%- if is_target_version and dependency == "Redis" %}
-        {%- assign skip_row = true %}
+      {%- if requirement[1][dependency] %}
+        {%- assign has_value = true %}
+        {%- break %}
       {%- endif %}
     {%- endfor %}
-    {%- unless skip_row %}
+    {%- if has_value %}
     <tr>
       <td><span class="uicontrol">[!DNL {{dependency}}]</span></td>
       {%- for requirement in requirements %}
@@ -48,7 +45,7 @@
       </td>
       {%- endfor %}
     </tr>
-    {%- endunless %}
+    {%- endif %}
     {%- endfor %}
   </tbody>
 </table>

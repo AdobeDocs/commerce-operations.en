@@ -19,12 +19,6 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
           2.19
@@ -103,12 +97,6 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
           2.19 or latest available
@@ -133,15 +121,6 @@
       </td>
       <td>
           2.8
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -259,15 +238,6 @@
       </td>
       <td>
           ElastiCache version 7.1 for Redis OSS (enhanced)
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -678,30 +648,6 @@
       </td>
       <td>
           Redis 7.0
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -1372,45 +1318,6 @@
       </td>
       <td>
           Redis 6.2
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -2693,54 +2600,6 @@
       </td>
       <td>
           6.2
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Valkey]</span></td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
