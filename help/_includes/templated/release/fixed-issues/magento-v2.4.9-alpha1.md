@@ -29,7 +29,7 @@ Previously the API REST Customer query did not consider store when fetching is_s
   This pull request adds buttons to collapse all, expand all, and expand branches with selected items. This functionality is similar to that provided in the category tree (Catalog -&gt; Inventory -&gt; Categories)
   _AC-14020 - [GitHub issue](https://github.com/magento/magento2/issues/39654) - [GitHub code contribution](https://github.com/magento/magento2/pull/36511)_
 * __Symfony\Component\Mime\Exception\LogicException: The &quot;Sender&quot; header must be an instance of &quot;Symfony\Component\Mime\Header\MailboxHeader&quot; (got &quot;Symfony\Component\Mime\Header\MailboxListHeader&quot;)__
-  _AC-14520 - [GitHub issue](https://github.com/magento/magento2/issues/39823) - [GitHub code contribution](https://github.com/magento/magento2/commit/1e14bd72) - [GitHub code contribution](https://github.com/magento/magento2/commit/1514117f)_
+  _AC-14520 - [GitHub issue](https://github.com/magento/magento2/issues/39823) - [GitHub code contribution](https://github.com/magento/magento2/commit/1e14bd72)
 * __Provide a feature to mass-delete tax rates using the grid__
   Admin users can now simultaneously delete multiple tax rates from the Admin Tax Rates grid.  [GitHub-33399](https://github.com/magento/magento2/issues/33399)
   _AC-2238 - [GitHub issue](https://github.com/magento/magento2/issues/33399) - [GitHub code contribution](https://github.com/magento/magento2/pull/33484) - [GitHub code contribution](https://github.com/magento/magento2/commit/5cd64dd0)_
@@ -72,13 +72,13 @@ Previously the API REST Customer query did not consider store when fetching is_s
 * __Not able to place the order with the guest__
   _AC-14241 - [GitHub code contribution](https://github.com/magento/magento2/commit/27217d0e)_
 * __Expired persistent quotes are not cleaned up by a cron job sales_clean_quotes__
-  The expired persistent quotes are now cleared when the &apos;persistent_clear_expired&apos; cron job runs. Previously, the expired persistent quotes where not cleared by any other cron job.
+  The expired persistent quotes are now cleared when the &apos;persistent_clear_expired&apos; cron job runs. Previously, the expired persistent quotes were not cleared by any other cron job.
   _ACP2E-3493 - [GitHub code contribution](https://github.com/magento/magento2/commit/11be3dff)_
 * __&quot;Something went wrong&quot; error on checkout for inactive company__
-  Prior to the fix, the logout action was not being completed properly on the cart page, if the longged in user company was no longer enabled. Now, if the company is no longer available, the logout is performed properly.
+  Prior to the fix, the logout action was not being completed properly on the cart page, if the logged in user company was no longer enabled. Now, if the company is no longer available, the logout is performed properly.
   _ACP2E-3541 - [GitHub code contribution](https://github.com/magento/magento2/commit/df92debe)_
 * __Addresses selection is not saved when we &quot;Check Out with Multiple Addresses&quot;__
-  Prior to the fix when cancelling the multishipping option, the address was not preselected when reverting back to multshipping. Now, the default address is replaced with one of the selections made within the multishipping screen.
+  Prior to the fix when canceling the multishipping option, the address was not preselected when reverting back to multshipping. Now, the default address is replaced with one of the selections made within the multishipping screen.
   _ACP2E-3646 - [GitHub code contribution](https://github.com/magento/magento2/commit/6ea61121)_
 
 ### Cart & Checkout, Shipping
@@ -90,7 +90,7 @@ Previously the API REST Customer query did not consider store when fetching is_s
 ### Catalog
 
 * __Duplicate cache fpc for same page with same query__
-  The system now correctly identifies and uses the same Full Page Cache (FPC) for pages with the same query parameters, regardless of their order or trailing characters. This prevents unnecessary increase in the page cache folder size. Previously, the system would create a different FPC identifier for the same page if the order of the query parameters was different or if there were trailing characters, leading to an increase in the page cache folder size.
+  The system now correctly identifies and uses the same Full Page Cache (FPC) for pages with the same query parameters, regardless of their order or trailing characters. This prevents an unnecessary increase in the page cache folder size. Previously, the system would create a different FPC identifier for the same page if the order of the query parameters was different or if there were trailing characters, leading to an increase in the page cache folder size.
   _AC-10722 - [GitHub issue](https://github.com/magento/magento2/issues/38269) - [GitHub code contribution](https://github.com/magento/magento2/pull/38270)_
 * __Missing indexing of required columns in catalog_product_entity_int table__
   Added the missing indexing of required columns in catalog_product_entity_int table
@@ -149,21 +149,21 @@ Previously operation ended with memory leak or with timeout.
 
 ### Framework
 
-* __Compling code of disabled module.__
-  This pull request escape disabled modules before code compilation.
+* __Compiling code of disabled module.__
+  This pull request escapes disabled modules before code compilation.
   _AC-10933 - [GitHub issue](https://github.com/magento/magento2/issues/38241) - [GitHub code contribution](https://github.com/magento/magento2/pull/39723)_
 * __Magento_Theme title.phtml template invalid for PHP 8.2__
   This pull request fixes an issue when CMS page created with the null heading as in Php 8.x passing null to trim() throws Exception: Deprecated Functionality: trim(): Passing null to parameter #1 ($string) of type string
   _AC-12856 - [GitHub issue](https://github.com/magento/magento2/issues/39092) - [GitHub code contribution](https://github.com/magento/magento2/pull/39398)_
 * __When using file storage for the lock provider, we get an ever growing directory of files without any cleanup happening__
-  This pull request introduce a new cronjob that runs once per day and searches for lock files that haven&apos;t been modified in the last 24 hours and can thus be safely removed. This will keep the contents of the lock files directory under control.
-This cronjob will only execute something when the lock provider is configured to use files, not when one of the others is used (database - the default, zookeeper or cache)
+  This pull request introduce a new cron job that runs once per day and searches for lock files that haven&apos;t been modified in the last 24 hours and can thus be safely removed. This will keep the contents of the lock files directory under control.
+This cron job will only execute something when the lock provider is configured to use files, not when one of the others is used (database - the default, zookeeper or cache)
   _AC-13367 - [GitHub issue](https://github.com/magento/magento2/issues/39369) - [GitHub code contribution](https://github.com/magento/magento2/pull/39372)_
 * __[Issue] Cleanup: don&apos;t use void return value from method calls.__
   This PR does minor cleanup. Sometimes we called methods that didn&apos;t return anything (void) and then used that result value. Which is really not needed.
   _AC-13664 - [GitHub issue](https://github.com/magento/magento2/issues/39524) - [GitHub code contribution](https://github.com/magento/magento2/pull/39516)_
 * __[Issue] [PHPDOC] Fix bad phpdoc for Magento\Framework\Message\ManagerInterface__
-  This PR fixes the bad phpdoc for \Magento\Framework\Message\ManagerInterface and remove all duplicate phpdoc in \Magento\Framework\Message\Manager (use inheritdoc syntaxe).
+  This PR fixes the bad phpdoc for \Magento\Framework\Message\ManagerInterface and remove all duplicate phpdoc in \Magento\Framework\Message\Manager (use inheritdoc syntax).
   _AC-14312 - [GitHub issue](https://github.com/magento/magento2/issues/39593) - [GitHub code contribution](https://github.com/magento/magento2/pull/39153)_
 * __Removed beta minimum-stability from composer.json__
   Removed beta minimum-stability from composer.json
@@ -181,7 +181,7 @@ This cronjob will only execute something when the lock provider is configured to
 ### GraphQL
 
 * __GraphQL Response for Order placement does not include the exception message__
-  Reverted previous change that was returning errors in a different format. Now potential errors are returned in a consistent manner, not breaking GraphQL schema. This should be added as known BIC, approved by PM here: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+  Reverted previous change that was returning errors in a different format. Now potential errors are returned in a consistent manner, not breaking GraphQL schema. This should be added as known BIC, approved by PM in ACP2E-3399.
   _ACP2E-3399 - [GitHub code contribution](https://github.com/magento/magento2/commit/9608ca21)_
 * __GraphQL Response for Order placement is partially localised__
   Errors returned by placeOrder GraphQl mutation were not fully localized. Now, in a multilanguage context, errors are properly translated.
@@ -225,7 +225,7 @@ This cronjob will only execute something when the lock provider is configured to
 ### Order, Pricing
 
 * __Admin displays incorrect currency symbol on when creating return__
-  In a multi-website setup with different currencies (EUR/USD/GBP), the return product selection page in admin is now displaying the correct tcurrency symbol. Previously, it displayed the default currency symbol.
+  In a multi-website setup with different currencies (EUR/USD/GBP), the return product selection page in admin is now displaying the correct currency symbol. Previously, it displayed the default currency symbol.
   _ACP2E-3658 - [GitHub code contribution](https://github.com/magento/magento2/commit/df92debe)_
 
 ### Other Developer Tools
@@ -233,9 +233,9 @@ This cronjob will only execute something when the lock provider is configured to
 * __Lighthouse Accessibility failure__
   The System now Pass with Accessibility score of 100
   _AC-12783 - [GitHub issue](https://github.com/magento/magento2/issues/39054) - [GitHub code contribution](https://github.com/magento/magento2/pull/39164)_
-* __Disable captcha storefont config still load captcha js files__
+* __Disable captcha storefront config still load captcha js files__
   The System now does not load captcha js files when we disabled captcha 
- for storefont
+ for storefront
   _AC-14267 - [GitHub issue](https://github.com/magento/magento2/issues/32987) - [GitHub code contribution](https://github.com/magento/magento2/pull/39154)_
 
 ### Payments
