@@ -788,6 +788,7 @@ feature: Configuration
            - [ACSD-64753: Pre-selected store in "Pickup in Store" doesn't update when shipping address changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
         - v1.1.64 {#v1-1-64}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
+           - [ACSD-63139: Product export fails when product attributes contain thousands of option values](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
