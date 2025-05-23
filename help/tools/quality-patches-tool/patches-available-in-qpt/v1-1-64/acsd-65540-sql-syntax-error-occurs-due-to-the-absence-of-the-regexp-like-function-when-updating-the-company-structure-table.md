@@ -13,11 +13,11 @@ The ACSD-65540 patch fixes the issue where sQL syntax error occurs due to the ab
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 
+* Adobe Commerce (all deployment methods) B2B 1.5.2
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 
+* Adobe Commerce (all deployment methods) B2B 1.5.2
 
 >[!NOTE]
 >
