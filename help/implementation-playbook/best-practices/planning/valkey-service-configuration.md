@@ -3,14 +3,10 @@ title: Best practices for Valkey service configuration
 description: Learn how to improve caching performance by using the extended Valkey cache implementation for Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices, Cache
-exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 ---
 # Best practices for Valkey service configuration
 
-- Configure Valkey L2 cache
-- Pre-load keys
-- Enable stale cache
-- Compress the Valkey cache and use `gzip` for higher compression
+Adobe recommends the following best practices when configuring the Valkey service:
 
 ## Configure Valkey L2 cache
 
@@ -22,18 +18,17 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-For environment configuration on Cloud infrastructure, see the [`VALKEY_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_backend) in the _Commerce on Cloud Infrastructure Guide_.
+For environment configuration on Cloud infrastructure, see the [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in the _Commerce on Cloud Infrastructure Guide_.
 
 For on-premises installations, see [Configure Valkey page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
 
 >[!NOTE]
 >
->Verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command.
-
+>Verify that you are using the latest version of the `ece-tools` package. If not, [upgrade to the latest version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). You can check the version installed in your local environment using the `composer show magento/ece-tools` CLI command.
 
 ### L2 cache memory sizing (Adobe Commerce Cloud)
 
-L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) as a storage mechanism. Compared with specialized key-value database systems, a temporary file system doesn't have a key eviction policy to control memory usage.
+L2 cache uses a [temporary file system](https://en.wikipedia.org/wiki/Tmpfs) as a storage mechanism. Compared with specialized key-value database systems, a temporary file system does not have a key eviction policy to control memory usage.
 
 The lack of memory usage control can cause the L2 cache memory usage to grow over time by accumulating the stale cache.
 
@@ -47,9 +42,9 @@ It is important to adjust the L2 cache memory maximum usage based on project req
 
 >[!NOTE]
 >
->The `cleanup_percentage` configurable option was introduced in Adobe Commerce 2.4.4.
+>The `cleanup_percentage` configuration option was introduced in Adobe Commerce 2.4.4.
 
-The following code shows an example configuration in the `.magento.env.yaml` file:
+The following example shows a `CACHE_CONFIGURATION` in the `.magento.env.yaml` file:
 
 ```yaml
 stage:
@@ -63,11 +58,11 @@ stage:
             cleanup_percentage: 90
 ```
 
-Cache requirements can vary based on project configuration and custom third-party code. The scope of the L2 cache memory sizing allows the L2 cache to operate without too many threshold hits.
-Ideally, L2 cache memory usage should stabilize at a certain level below the threshold, just to avoid frequent storage clearing.
+Cache requirements can vary based on project configuration and custom third-party code. The scope of the L2 cache memory sizing allows the L2 cache to operate without unnecessary threshold hits.
+Ideally, L2 cache memory usage should stabilize at a certain level below the threshold, to avoid frequent storage clearing.
 
-You can check L2 cache storage memory usage on each node of the cluster using the following CLI command and looking for the `/dev/shm` line.
-The usage could vary across different nodes, but it should converge to the same value.
+You can check L2 cache storage memory usage on each node of the cluster using the following CLI command and then searching for the `/dev/shm` line.
+The usage can vary across different nodes, but it should converge to the same value.
 
 ```bash
 df -h
@@ -83,13 +78,13 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-See [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
+For more details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
-For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento:setup` commands. See [Use Valkey for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
+For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento:setup` commands. For more information, see [Use Valkey for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
 
 >[!WARNING]
 >
->Do _not_ configure a Valkey slave connection for cloud infrastructure projects with a [scaled/split architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). This causes Redis connection errors. See [Redis configuration guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
+>Do _not_ configure a Valkey slave connection for cloud infrastructure projects with a [scaled/split architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). This causes Redis connection errors. For more information, For more information, see the [Redis configuration guidance](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
 
 ## Pre-load keys
 
@@ -116,7 +111,7 @@ For on-premises installations, see [Valkey preload feature](../../../configurati
 
 ## Enable stale cache
 
-Reduce lock waiting times and enhance performance—especially when dealing with numerous Blocks and Cache keys—by using an outdated cache while generating a new cache in parallel. Enable stale cache and define cache types in the `.magento.env.yaml` configuration file:
+Reduce lock waiting times and enhance performance, especially when dealing with numerous Blocks and Cache keys,by using an outdated cache while generating a new cache in parallel. Enable the stale cache and define cache types in the `.magento.env.yaml` configuration file:
 
 ```yaml
 stage:
@@ -151,11 +146,11 @@ stage:
 
 >[!NOTE]
 >
->In the previous example, the `full_page` cache is not relevant to Adobe Commerce on cloud infrastructure projects, because they use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>In the previous example, the `full_page` cache is not relevant to Adobe Commerce on cloud infrastructure projects, because they use [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
 
 For configuring on-premises installations, see [Stale cache options](../../../configuration/cache/level-two-cache.md#stale-cache-options) in the _Configuration Guide_.
 
-During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+During deployment, you should see the following lines in the [build and deploy log](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -166,12 +161,12 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 ...
 [2022-08-17 01:13:40] INFO: Version of service 'valkey' is 8.0
 [2022-08-17 01:13:40] INFO: Version of service 'valkey-session' is 8.0
-[2022-08-17 01:13:40] INFO: valkey-session will be used for session if it was not override by SESSION_CONFIGURATION
+[2022-08-17 01:13:40] INFO: valkey-session will be used for the session if it was not overridden by SESSION_CONFIGURATION.
 ```
 
 ## Cache compression
 
-If you are using over 6GB of Valkey `maxmemory`, you can use cache compression to reduce the space consumed by the keys. Be aware that there is a trade-off with client-side performance. If you have spare CPUs, enable it. See [Use Redis for session storage](../../../configuration/cache/redis-session.md) in the _Configuration Guide_.
+If you are using over 6GB of Valkey `maxmemory`, you can use cache compression to reduce the space consumed by the keys. Be aware that there is a trade-off with client-side performance. If you have spare CPUs, Adobe suggests enabling them. See [Use Redis for session storage](../../../configuration/cache/redis-session.md) in the _Configuration Guide_.
 
 ```yaml
 stage:
@@ -184,8 +179,8 @@ stage:
           backend_options:
             compress_data: 4              # 0-9
             compress_tags: 4              # 0-9
-            compress_threshold: 20480     # don't compress files smaller than this value
-            compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
+            compress_threshold: 20480     # do not compress files smaller than this value
+            compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~70%)
 ```
 
 ## Additional information
