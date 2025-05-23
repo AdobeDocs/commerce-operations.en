@@ -13,11 +13,11 @@ The ACSD-65223 patch fixes the issue where if Terms and Conditions are required 
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 
+* Adobe Commerce (all deployment methods) B2B 1.5.1
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 
+* Adobe Commerce (all deployment methods) B2B 1.5.1
 
 >[!NOTE]
 >
