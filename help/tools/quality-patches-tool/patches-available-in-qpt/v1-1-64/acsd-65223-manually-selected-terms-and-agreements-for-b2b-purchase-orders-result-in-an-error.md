@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-65223: Manually selected terms and agreements for B2B purchase orders result in an error'
-description: Apply the ACSD-65223 patch to fix the Adobe Commerce issue where if Terms and Conditions are required to place an order, and you are trying to finalize an order created using Purchase Orders, the order cannot be placed using online payment methods (Credit Card).
+description: Apply the ACSD-65223 patch to fix the Adobe Commerce issue where orders created using [!UICONTROL Purchase Orders] can't be completed with online payment methods like credit cards when terms and conditions are required for checkout.
 feature: B2B, Purchase Orders
 role: Admin, Developer
 ---
 
 # ACSD-65223: Manually selected terms and agreements for B2B purchase orders result in an error
 
-The ACSD-65223 patch fixes the issue where if Terms and Conditions are required to place an order, and you are trying to finalize an order created using Purchase Orders, the order cannot be placed using online payment methods (Credit Card). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65223. Please note that this issue is scheduled to be fixed in Adobe Commerce TBD.
+The ACSD-65223 patch fixes the issue where orders created using [!UICONTROL Purchase Orders] can't be completed with online payment methods like credit cards when terms and conditions are required for checkout. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65223. Please note that this issue is scheduled to be fixed in Adobe Commerce TBD.
 
 ## Affected products and versions
 
@@ -25,34 +25,36 @@ The ACSD-65223 patch fixes the issue where if Terms and Conditions are required 
 
 ## Issue
 
-If Terms and Conditions are required to place an order, and you are trying to finalize an order created using Purchase Orders, the order cannot be placed using online payment methods (Credit Card).
+If terms and conditions are required to place an order, and you are trying to finalize an order created using [!UICONTROL Purchase Orders], the order can't be placed using online payment methods like credit cards.
 
 <u>Steps to reproduce</u>:
 
-1. Create any simple product
-1. Go to Stores > Configuration > General > B2B Settings
-1. Enable Company and Purchase Orders
-1. Go to Stores > Terms and Conditions and create a new Condition (Applied: Manually)
-1. Go to Stores > Configuration > Sales > Checkout and enable Terms and Conditions
-1. Go to Stores > Configuration > Sales > Payment Methods and configure Braintree
-1. On the frontend, create a Company
-1. In the admin, go to Customers > Companies
-1. Approve the Company and allow Purchase orders
-1. On the frontend, login to the account
-1. Add an item to the cart
+1. Create a simple product.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** and choose **[!UICONTROL B2B Features]**.
+1. Set **[!UICONTROL Enable Company]** and **[!UICONTROL Enable Purchase Orders]** to *Yes*.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Terms and Conditions]** and create a new condition. 
+
+    * Set **[!UICONTROL Applied]** to *[UICONTROL Manually]*.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** and set **[!UICONTROL Enable Terms and Conditions]** to *Yes*.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Payment Methods]** and configure [!DNL Braintree].
+1. On the frontend, create a company.
+1. In the admin, go to **[!UICONTROL Customers]** > **[!UICONTROL Companies]**.
+1. Approve the company and allow [!UICONTROL Purchase Orders].
+1. On the frontend, log in to the account.
+1. Add an item to the cart.
 1. Place an order using Purchase Order
-1. In the customer's dashboard, click on the Purchase Orders tab
-1. Create an order from the new Purchase Order - then select the Credit Card method
+1. In the customer dashboard, click the **[!UICONTROL Purchase Orders]** tab.
+1. Create an order from the new purchase order. Then select credit card as the payment method.
 1. Agree to the Terms and Conditions
 1. Try to place the order
 
 <u>Expected results</u>:
 
-User should be able to place an order using an online payment method on approved Purchase Orders when Terms and Conditions are required
+User is able to place an order using an online payment method on approved purchase orders when terms and conditions are required for checkout.
 
 <u>Actual results</u>:
 
-User cannot place an order using an online payment method on approved Purchase Orders when Terms and Conditions are required
+User can't place an order using an online payment method on approved purchase orders when terms and conditions are required for checkout.
 
 ## Apply the patch
 
