@@ -1,13 +1,13 @@
 ---
-title: 'ACP2E-3838: Page Builder CORS errors prevent saving changes in the Admin panel in production mode'
-description: Apply the ACP2E-3838 patch to fix the Adobe Commerce issue where page Builder CORS errors prevent saving changes in the Admin panel in production mode.
+title: 'ACP2E-3838: [!DNL Page Builder] CORS errors prevent saving changes in the Admin panel in production mode'
+description: Apply the ACP2E-3838 patch to fix the Adobe Commerce issue where [!DNL Page Builder] CORS errors prevent saving changes in the Admin panel in production mode.
 feature: Page Builder, Page Content, Admin Workspace
 role: Admin, Developer
 ---
 
-# ACP2E-3838: Page Builder CORS errors prevent saving changes in the Admin panel in production mode
+# ACP2E-3838: [!DNL Page Builder] CORS errors prevent saving changes in the Admin panel in production mode
 
-The ACP2E-3838 patch fixes the issue where page Builder CORS errors prevent saving changes in the Admin panel in production mode. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACP2E-3838. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACP2E-3838 patch fixes the issue where [!DNL Page Builder] CORS errors prevent saving changes in the Admin panel in production mode. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACP2E-3838. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,16 +25,16 @@ The ACP2E-3838 patch fixes the issue where page Builder CORS errors prevent savi
 
 ## Issue
 
-Page Builder CORS errors prevent saving changes in the Admin panel in production mode.
+[!DNL Page Builder] CORS errors prevent saving changes in the Admin panel in production mode.
 
 <u>Steps to reproduce</u>:
 
 1. Log in to the Admin panel.
-1. Go to Content > Pages.
-1. Click on Add New Page (or select an existing CMS page and click Edit).
-1. Use the Page Builder to add a new content block (or edit an existing block).
-1. Make any changes to the content (e.g., adding text, images, or other elements).
-1. Click the Save button.
+1. Go to **[!UICONTROL Content]** > **[!UICONTROL Pages]**.
+1. Click **[!UICONTROL Add New Page]**, or select an existing CMS page and click **[!UICONTROL Edit]**.
+1. Click **[!UICONTROL Edit with Page Builder]** to add a new content block or edit an existing block.
+1. Make any changes to the content, such as adding text, images, or other elements.
+1. Click the **[!UICONTROL Save]** button.
 
 <u>Expected results</u>:
 
@@ -42,7 +42,7 @@ The page content should be saved successfully without any errors.
 
 <u>Actual results</u>:
 
-1. The Page Builder changes fail to save.
+1. The[!DNL Page Builder] changes fail to save.
 1. The browser console logs CORS-related errors.
 
 ## Apply the patch
