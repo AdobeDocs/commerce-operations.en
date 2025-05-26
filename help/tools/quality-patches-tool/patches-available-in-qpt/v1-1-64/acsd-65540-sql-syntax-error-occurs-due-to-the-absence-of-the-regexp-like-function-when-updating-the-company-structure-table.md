@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-65540: SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table'
-description: Apply the ACSD-65540 patch to fix the Adobe Commerce issue where sQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table.
+description: Apply the ACSD-65540 patch to fix the Adobe Commerce issue where SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table.
 feature: B2B
 role: Admin, Developer
 ---
@@ -29,8 +29,8 @@ SQL syntax error occurs due to the absence of the REGEXP_LIKE function when upda
 
 <u>Steps to reproduce</u>:
 
-1. Upgrade to B2B 1.5.2
-1. Run
+1. Upgrade Magento to B2B version 1.5.2.
+1. Run the following command:
 
 ```
 bin/magento setup:upgrade
