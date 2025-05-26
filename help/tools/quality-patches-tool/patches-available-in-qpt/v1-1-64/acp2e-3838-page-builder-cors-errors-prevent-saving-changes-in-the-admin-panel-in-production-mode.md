@@ -42,7 +42,7 @@ The page content should be saved successfully without any errors.
 
 <u>Actual results</u>:
 
-1. The[!DNL Page Builder] changes fail to save.
+1. The [!DNL Page Builder] changes fail to save.
 1. The browser console logs CORS-related errors.
 
 ## Apply the patch
