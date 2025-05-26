@@ -1,23 +1,23 @@
 ---
-title: 'ACSD-65540: SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table'
-description: Apply the ACSD-65540 patch to fix the Adobe Commerce issue where SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table.
+title: 'ACSD-65540: SQL error occurs due to missing REGEXP_LIKE function in company_structure updates'
+description: Apply the ACSD-65540 patch to fix the Adobe Commerce issue where SQL error occurs due to missing REGEXP_LIKE function in company_structure updates.
 feature: B2B
 role: Admin, Developer
 ---
 
-# ACSD-65540: SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table
+# ACSD-65540: SQL error occurs due to missing REGEXP_LIKE function in company_structure updates
 
-The ACSD-65540 patch fixes the issue where SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65540. Please note that this issue is scheduled to be fixed in Adobe Commerce TBD.
+The ACSD-65540 patch fixes the issue where SQL error occurs due to missing REGEXP_LIKE function in company_structure updates. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65540.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) B2B 1.5.2
+* Adobe Commerce (all deployment methods) 1.5.2
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) B2B 1.5.2
+* Adobe Commerce (all deployment methods) 1.5.2
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ The ACSD-65540 patch fixes the issue where SQL syntax error occurs due to the ab
 
 ## Issue
 
-SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table.
+SQL syntax error occurs due to missing REGEXP_LIKE function in company_structure updates.
 
 <u>Steps to reproduce</u>:
 
