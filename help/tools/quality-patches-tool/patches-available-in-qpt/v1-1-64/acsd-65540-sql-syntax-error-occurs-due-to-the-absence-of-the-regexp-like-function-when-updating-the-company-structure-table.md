@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-65540: SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table
 
-The ACSD-65540 patch fixes the issue where sQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65540. Please note that this issue is scheduled to be fixed in Adobe Commerce TBD.
+The ACSD-65540 patch fixes the issue where SQL syntax error occurs due to the absence of the REGEXP_LIKE function when updating the company_structure table. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65540. Please note that this issue is scheduled to be fixed in Adobe Commerce TBD.
 
 ## Affected products and versions
 
