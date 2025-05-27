@@ -29,7 +29,7 @@ Enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to g
 
 <u>Steps to reproduce</u>:
 
-1. Set configuration by running the below commands:
+1. Set the configuration by running the below commands:
 
   ```
   bin/magento config:set --lock-config dev/js/minify_files 1
@@ -47,7 +47,7 @@ Enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to g
 
 <u>Expected results</u>:
 
-No JS errors in browser console.
+No JS errors in the browser console.
 
 <u>Actual results</u>:
 
@@ -58,7 +58,7 @@ No JS errors in browser console.
 To apply individual patches, use the following links depending on your deployment method:
 
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) in the Commerce on Cloud Infrastructure guide.
 
 ## Related reading
 
