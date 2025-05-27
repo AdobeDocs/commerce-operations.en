@@ -61,7 +61,6 @@ Log in as an admin and go to **[!UICONTROL Marketing]** >  **[!UICONTROL Promoti
 
 Conditions:
 
-
 **[!UICONTROL If ALL of these conditions are TRUE:]**
 
 
