@@ -30,8 +30,8 @@ Cart price rules for multi-shipping products do not apply correctly when subsele
 <u>Prerequisites</u>:
 
 **Settings:**
-1. Free Shipping = Enabled
-1. Min Order Amount = 99999999
+1. **[!UICONTROL Free Shipping]** = *Enabled*
+1. **[!UICONTROL Minimum Order Amount]** = *99999999*
 
 **Needed categories:**
 1. Category Test 1
@@ -44,9 +44,10 @@ Cart price rules for multi-shipping products do not apply correctly when subsele
 1. Product Test 2
     1. Categories: Category Test 2
     1. Price: $ 56.25 
-    **(Prices should be the same as here, they're very important for this test to work)**
+    **(Prices should be the same as here, they are important for this test to work)**
 
 **Cart Price Rule**:
+
 Log in as an admin and go to **[!UICONTROL Marketing]** >  **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add new rule]**. Use these values:
 
 **[!UICONTROL Rule Information]**
@@ -54,16 +55,23 @@ Log in as an admin and go to **[!UICONTROL Marketing]** >  **[!UICONTROL Promoti
 1. **[!UICONTROL Active]**: *Yes*
 1. **[!UICONTROL Websites]**: *Main Website*
 1. **[!UICONTROL Customer Groups]**: *NOT LOGGED IN, General, Wholesale, Retailer*
-1.  **[!UICONTROL Coupon]**: *No Coupon*
-1.  **[!UICONTROL Uses per Customer]**: *0*
-1. Priority: *1*
+1. **[!UICONTROL Coupon]**: *No Coupon*
+1. **[!UICONTROL Uses per Customer]**: *0*
+1. **[!UICONTROL Priority]**: *1*
 
 Conditions:
+
+
 **[!UICONTROL If ALL of these conditions are TRUE:]**
-**[!UICONTROL If total amount (incl. tax) equals or greater than 100 for a subselection of items in  cart matching ALL of these conditions:]**
-   **[!UICONTRO Category is]** *5,12,13*
+
+
+   **[!UICONTROL If total amount (incl. tax) equals or greater than 100 for a subselection of items in  cart matching ALL of these conditions:]**
+
+
+    **[!UICONTRO Category is]** *5,12,13*
 
 Actions:
+
  **[!UICONTROL Percent of product price discount]** = *10*
 
 <u>Steps to reproduce</u>:
