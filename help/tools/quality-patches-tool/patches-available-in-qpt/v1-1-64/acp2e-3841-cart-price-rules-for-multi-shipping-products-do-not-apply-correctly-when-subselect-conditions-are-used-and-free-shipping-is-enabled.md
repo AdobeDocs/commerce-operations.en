@@ -72,7 +72,7 @@ Conditions:
 
 Actions:
 
- **[!UICONTROL Percent of product price discount]** = *10*
+**[!UICONTROL Percent of product price discount]** = *10*
 
 <u>Steps to reproduce</u>:
 
