@@ -47,33 +47,32 @@ Cart price rules for multi-shipping products do not apply correctly when subsele
     **(Prices should be the same as here, they're very important for this test to work)**
 
 **Cart Price Rule**:
-Log in as an admin and go to Marketing -> Cart Price Rule -> Add new rule. Use these values:
+Log in as an admin and go to **[!UICONTROL Marketing]** >  *Promotions* > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add new rule]**. Use these values:
 
-Rule Information:
-1. Rule Name: Test Free Shipping
-1. Active: Yes
-1. Websites: Main Website
-1. Customer Groups: NOT LOGGED IN, General, Wholesale, Retailer
-1. Coupon: No Coupon
-1. Uses per Customer: 0
-1. Priority: 1
+**[!UICONTROL Rule Information]**
+1. **[!UICONTROL  Rule Name]**: Test Free Shipping
+1. **[!UICONTROL Active]**: *Yes*
+1. **[!UICONTROL Websites]**: Main Website
+1. **[!UICONTROL Customer Groups]**: *NOT LOGGED IN, General, Wholesale, Retailer*
+1.  **[!UICONTROL Coupon]**: *No Coupon*
+1.  **[!UICONTROL Uses per Customer]**: *0*
+1. Priority: *1*
 
 Conditions:
-If ALL of these conditions are TRUE:
-
-    If total amount (incl. tax) equals or greater than 100 for a subselection of items in  cart matching ALL of these conditions:
-    Category is 5,12,13
+**[!UICONTROL If ALL of these conditions are TRUE:
+   If total amount (incl. tax) equals or greater than 100 for a subselection of items in  cart matching ALL of these conditions:
+    Category is]** 5,12,13
 
 Actions:
 Percent of product price discount = 10
 
 <u>Steps to reproduce</u>:
 
-1. Log in to Store front.
+1. Log in to the store front.
 2. Add Product Test 1.
 3. Add 2 Product Test 2.
 4. Visit Cart.
-5. Click **Check Out with Multiple Addresses.**
+5. Select **Check Out with Multiple Addresses.**
 
 <u>Expected results</u>:
 
