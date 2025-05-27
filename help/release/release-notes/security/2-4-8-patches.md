@@ -14,3 +14,7 @@ The Adobe Commerce 2.4.8-p1 security release provides security bug fixes for vul
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}

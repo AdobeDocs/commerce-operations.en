@@ -1,6 +1,6 @@
 # February 2025 security patch highlights
 
-This release includes the following highlight:
+This release includes the following highlights:
 
 * **Managing encryption keys and re-encrypting data**—Redesigned managing encryption keys to improve usability and eliminate previous limitations and bugs.<!-- AC-12679 -->
 
