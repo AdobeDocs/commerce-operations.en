@@ -47,24 +47,24 @@ Cart price rules for multi-shipping products do not apply correctly when subsele
     **(Prices should be the same as here, they're very important for this test to work)**
 
 **Cart Price Rule**:
-Log in as an admin and go to **[!UICONTROL Marketing]** >  *Promotions* > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add new rule]**. Use these values:
+Log in as an admin and go to **[!UICONTROL Marketing]** >  **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add new rule]**. Use these values:
 
 **[!UICONTROL Rule Information]**
 1. **[!UICONTROL  Rule Name]**: Test Free Shipping
 1. **[!UICONTROL Active]**: *Yes*
-1. **[!UICONTROL Websites]**: Main Website
+1. **[!UICONTROL Websites]**: *Main Website*
 1. **[!UICONTROL Customer Groups]**: *NOT LOGGED IN, General, Wholesale, Retailer*
 1.  **[!UICONTROL Coupon]**: *No Coupon*
 1.  **[!UICONTROL Uses per Customer]**: *0*
 1. Priority: *1*
 
 Conditions:
-**[!UICONTROL If ALL of these conditions are TRUE:
-   If total amount (incl. tax) equals or greater than 100 for a subselection of items in  cart matching ALL of these conditions:
-    Category is]** 5,12,13
+**[!UICONTROL If ALL of these conditions are TRUE:]**
+**[!UICONTROL If total amount (incl. tax) equals or greater than 100 for a subselection of items in  cart matching ALL of these conditions:]**
+   **[!UICONTRO Category is]** *5,12,13*
 
 Actions:
-Percent of product price discount = 10
+ **[!UICONTROL Percent of product price discount]** = *10*
 
 <u>Steps to reproduce</u>:
 
@@ -76,11 +76,11 @@ Percent of product price discount = 10
 
 <u>Expected results</u>:
 
-No errors
+No errors.
 
 <u>Actual results</u>:
 
-500 error
+*500 error*
 
 *Message: Deprecated Functionality: Implicit conversion from float 112.5 to int loses precision in /app/code/Magento/SalesRule/Model/Rule/Condition/Product/Subselect.php on line 214*
 
