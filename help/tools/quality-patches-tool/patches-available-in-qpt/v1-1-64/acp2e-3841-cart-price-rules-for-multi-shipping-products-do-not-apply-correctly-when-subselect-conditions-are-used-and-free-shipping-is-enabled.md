@@ -68,7 +68,7 @@ Conditions:
    **[!UICONTROL If total amount (incl. tax) equals or greater than 100 for a subselection of items in  cart matching ALL of these conditions:]**
 
 
-    **[!UICONTRO Category is]** *5,12,13*
+    **[!UICONTROl Category is]** *5,12,13*
 
 Actions:
 
