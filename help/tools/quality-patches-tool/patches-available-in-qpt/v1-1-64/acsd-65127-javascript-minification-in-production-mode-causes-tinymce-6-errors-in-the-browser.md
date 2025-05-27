@@ -30,15 +30,19 @@ Enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to g
 <u>Steps to reproduce</u>:
 
 1. Set configuration by running the below commands:
+
   ```
   bin/magento config:set --lock-config dev/js/minify_files 1
   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
   bin/magento config:set --lock-config dev/js/merge_files 1
   ```
+
 1. Enable production mode.
+
   ```
   bin/magento deploy:mode:set production
   ```
+
 1. On the Admin sidebar, go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]**. Click **[!UICONTROL Edit]** on any listed product and scroll down to **[!UICONTROL Content]** and select **[!UICONTROL Show Editor]**.
 
 <u>Expected results</u>:
