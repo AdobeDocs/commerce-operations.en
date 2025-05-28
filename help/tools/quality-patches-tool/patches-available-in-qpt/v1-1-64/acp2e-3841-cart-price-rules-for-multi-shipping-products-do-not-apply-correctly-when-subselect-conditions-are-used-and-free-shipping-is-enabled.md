@@ -59,7 +59,7 @@ Log in as an admin and go to **[!UICONTROL Marketing]** >  **[!UICONTROL Promoti
 1. **[!UICONTROL Uses per Customer]**: *0*
 1. **[!UICONTROL Priority]**: *1*
 
-Conditions:
+**[!UICONTROL Conditions]:**
 
 **[!UICONTROL If ALL of these conditions are TRUE:]**
 
