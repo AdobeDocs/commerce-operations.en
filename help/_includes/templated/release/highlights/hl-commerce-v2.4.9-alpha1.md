@@ -11,9 +11,7 @@ The following 9 highlights apply to the Adobe Commerce 2.4.9-alpha1 release.
 
 ### Framework
 
-* __[Part 2] - Update all js library and npm dependency with latest the available version__
-  composer version support was up to the composer version 2.2.x only. Now, the support extended to 2.4.x version as well.
-  _AC-13792 - [GitHub code contribution](https://github.com/magento/magento2/commit/19844aa0)_
+* __[Part 2] - Update all JS libraries and npm dependencies with the latest available versions__
 * __Add compatibility for Valkey 8.x for 2.4.8, 2.4.7, 2.4.6 and 2.4.5, 2.4.9-alpha1__
   _AC-14103_
 * __Check compatibility with Varnish 7.7__
