@@ -9,7 +9,6 @@ feature: Configuration
 - [Overview](overview.md)
 - Site-Wide Analysis Tool {#site-wide-analysis-tool}
     - [Introduction](site-wide-analysis-tool/intro.md)
-    - [Installation](site-wide-analysis-tool/installation.md)
     - [How to access](site-wide-analysis-tool/access.md)
     - [Status attributes](site-wide-analysis-tool/status.md)
     - [Features tabs](site-wide-analysis-tool/features-tabs.md)
