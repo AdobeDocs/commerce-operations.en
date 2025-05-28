@@ -79,7 +79,7 @@ Actions:
 2. Add Product Test 1.
 3. Add two quantities of Product Test 2.
 4. Visit cart.
-5. Select **Check Out with Multiple Addresses.**
+5. Select **[!UICONTROLCheck Out with Multiple Addresses]**.
 
 <u>Expected results</u>:
 
