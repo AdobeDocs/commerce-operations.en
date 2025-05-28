@@ -44,7 +44,7 @@ Cart price rules for multi-shipping products do not apply correctly when subsele
 1. Product Test 2:
     1. Categories: Category Test 2
     1. Price: $ 56.25 
-    **(Prices should be the same as here, they are important for this test to work)**
+    **(Prices must be the same as shown here to ensure the test works correctly.)**
 
 **Cart Price Rule:**
 
