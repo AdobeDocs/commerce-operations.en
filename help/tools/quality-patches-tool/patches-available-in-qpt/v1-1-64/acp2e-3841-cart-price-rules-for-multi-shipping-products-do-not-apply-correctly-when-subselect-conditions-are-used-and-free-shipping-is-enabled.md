@@ -78,7 +78,7 @@ Actions:
 1. Log in to the store front.
 2. Add Product Test 1.
 3. Add 2 Product Test 2.
-4. Visit Cart.
+4. Visit cart.
 5. Select **Check Out with Multiple Addresses.**
 
 <u>Expected results</u>:
