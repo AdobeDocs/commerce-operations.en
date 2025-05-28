@@ -64,7 +64,7 @@ Log in as an admin and go to **[!UICONTROL Marketing]** >  **[!UICONTROL Promoti
 **[!UICONTROL If ALL of these conditions are TRUE:]**
 
 
-**[!UICONTROL If total amount (incl. tax) equals or greater than 100 for a subselection of items in  cart matching ALL of these conditions:]**
+**[!UICONTROL If total amount (incl. tax) equals or greater than 100 for a subselection of items in cart matching ALL of these conditions:]**
 
 
 **[!UICONTROL Category is]** *5,12,13*
