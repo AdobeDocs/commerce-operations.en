@@ -51,7 +51,7 @@ Cart price rules for multi-shipping products do not apply correctly when subsele
 Log in as an admin and go to **[!UICONTROL Marketing]** >  **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add new rule]**. Use these values:
 
 **[!UICONTROL Rule Information]:**
-1. **[!UICONTROL  Rule Name]**: Test Free Shipping
+1. **[!UICONTROL Rule Name]**: Test Free Shipping
 1. **[!UICONTROL Active]**: *Yes*
 1. **[!UICONTROL Websites]**: *Main Website*
 1. **[!UICONTROL Customer Groups]**: *NOT LOGGED IN, General, Wholesale, Retailer*
