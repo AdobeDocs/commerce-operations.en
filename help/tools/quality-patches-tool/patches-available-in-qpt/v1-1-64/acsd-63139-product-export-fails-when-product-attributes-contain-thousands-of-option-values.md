@@ -30,11 +30,11 @@ The product export fails when product attributes contain thousands of option val
 <u>Steps to reproduce</u>:
 
 1. Install Adobe Commerce with the B2B module.
-2. Import a large database dump with:
+1. Import a large database dump with:
    - ~7,000 products
    - ~450 product attributes
    - Some attributes having more than 100 options
-3. Run the following command to install cron (if not already installed):
+1. Run the following command to install cron (if not already installed):
 
    ```
    bin/magento cron:install
