@@ -43,7 +43,7 @@ The product export fails when product attributes contain thousands of option val
 1. Configure [!DNL RabbitMQ] by following the instructions in [[!DNL RabbitMQ] prerequisites](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
 1. Open the `php.ini` file, set the memory limit to 4G, and restart the PHP service.
 1. In the Admin Panel, go to **[!UICONTROL System]** -> *[!UICONTROL Data Transfer]* -> **[!UICONTROL Export]**.
-1. Set **[!UICONTROL Entity Type]** to *Products*, scroll to the bottom and click **[!UICONTROL Continue]**.
+1. In the *[!UICONTROL Export Settings]* section, set **[!UICONTROL Entity Type]** to *Products*, scroll to the bottom and click **[!UICONTROL Continue]**.
 1. Run the following command to start the export processor:
 
    ```
