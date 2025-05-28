@@ -25,39 +25,42 @@ The ACSD-63139 patch fixes the issue where product export fails when product att
 
 ## Issue
 
-Product export fails when product attributes contain thousands of option values.
+The product export fails when product attributes contain thousands of option values.
 
 <u>Steps to reproduce</u>:
 
-1. Install Adobe Commerce with B2B
-1. Import large DB dump (<sub>7K products, </sub>450 attributes, part of them should have more than 100 options)
-1. Install cron (if not already installed)
+1. Install Adobe Commerce with the B2B module.
+2. Import a large database dump with:
+   - ~7,000 products
+   - ~450 product attributes
+   - Some attributes having more than 100 options
+3. Run the following command to install cron (if not already installed):
 
-```
-bin/magento cron:install
-```
+   ```
+   bin/magento cron:install
+   ```
+   
+1. Configure [!DNL RabbitMQ] by following the instructions in [[!DNL RabbitMQ] prerequisites](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
+1. Open the `php.ini` file, set the memory limit to 4G, and restart the PHP service.
+1. In the Admin Panel, go to **[!UICONTROL System]** -> *[!UICONTROL Data Transfer]* -> **[!UICONTROL Export]**.
+1. Set **[!UICONTROL Entity Type]** to *Products*, scroll to the bottom and click **[!UICONTROL Continue]**.
+1. Run the following command to start the export processor:
 
-1. Configure RabbitMQ using https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq
-1. Change the memory limit in php.ini to 4G and restart PHP
-1. Go to admin panel -> System -> Data Transfer -> Export -> Select Entity Type = Products, scroll down and click Continue button
-1. Run command
-
-```
-bin/magento q:c:s exportProcessor --max-messages=1
-```
-
+   ```
+   bin/magento queue:consumers:start exportProcessor --max-messages=1
+   ```
 
 <u>Expected results</u>:
 
-Export should be finished successfully
+The product export should be finished successfully.
 
 <u>Actual results</u>:
 
+The product export process fails and returns the following fatal error:
 
 ```
 Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocate 12288 bytes) in /var/www/html/app/code/Magento/Catalog/Model/ResourceModel/Product/Collection.php on line 597
 ```
-
 
 ## Apply the patch
 
