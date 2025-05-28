@@ -46,7 +46,7 @@ Cart price rules for multi-shipping products do not apply correctly when subsele
     1. Price: $ 56.25 
     **(Prices should be the same as here, they are important for this test to work)**
 
-**Cart Price Rule**:
+**Cart Price Rule:**
 
 Log in as an admin and go to **[!UICONTROL Marketing]** >  **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add new rule]**. Use these values:
 
