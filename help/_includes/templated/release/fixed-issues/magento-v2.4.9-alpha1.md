@@ -29,7 +29,7 @@ Previously the API REST Customer query did not consider store when fetching is_s
   This pull request adds buttons to collapse all, expand all, and expand branches with selected items. This functionality is similar to that provided in the category tree (Catalog -&gt; Inventory -&gt; Categories)
   _AC-14020 - [GitHub issue](https://github.com/magento/magento2/issues/39654) - [GitHub code contribution](https://github.com/magento/magento2/pull/36511)_
 * __Symfony\Component\Mime\Exception\LogicException: The &quot;Sender&quot; header must be an instance of &quot;Symfony\Component\Mime\Header\MailboxHeader&quot; (got &quot;Symfony\Component\Mime\Header\MailboxListHeader&quot;)__
-  _AC-14520 - [GitHub issue](https://github.com/magento/magento2/issues/39823) - [GitHub code contribution](https://github.com/magento/magento2/commit/1e14bd72)
+  _AC-14520 - [GitHub issue](https://github.com/magento/magento2/issues/39823) - [GitHub code contribution](https://github.com/magento/magento2/commit/1e14bd72)_
 * __Provide a feature to mass-delete tax rates using the grid__
   Admin users can now simultaneously delete multiple tax rates from the Admin Tax Rates grid.  [GitHub-33399](https://github.com/magento/magento2/issues/33399)
   _AC-2238 - [GitHub issue](https://github.com/magento/magento2/issues/33399) - [GitHub code contribution](https://github.com/magento/magento2/pull/33484) - [GitHub code contribution](https://github.com/magento/magento2/commit/5cd64dd0)_
@@ -181,7 +181,7 @@ This cron job will only execute something when the lock provider is configured t
 ### GraphQL
 
 * __GraphQL Response for Order placement does not include the exception message__
-  Reverted previous change that was returning errors in a different format. Now potential errors are returned in a consistent manner, not breaking GraphQL schema. This should be added as known BIC, approved by PM in ACP2E-3399.
+  Reverted previous change that was returning errors in a different format. Now potential errors are returned in a consistent manner, not breaking GraphQL schema. This should be added as known BIC, approved by PM in ACP2E-3399
   _ACP2E-3399 - [GitHub code contribution](https://github.com/magento/magento2/commit/9608ca21)_
 * __GraphQL Response for Order placement is partially localised__
   Errors returned by placeOrder GraphQl mutation were not fully localized. Now, in a multilanguage context, errors are properly translated.
@@ -234,8 +234,7 @@ This cron job will only execute something when the lock provider is configured t
   The System now Pass with Accessibility score of 100
   _AC-12783 - [GitHub issue](https://github.com/magento/magento2/issues/39054) - [GitHub code contribution](https://github.com/magento/magento2/pull/39164)_
 * __Disable captcha storefront config still load captcha js files__
-  The System now does not load captcha js files when we disabled captcha 
- for storefront
+  The System now does not load captcha js files when we disabled captcha for storefront
   _AC-14267 - [GitHub issue](https://github.com/magento/magento2/issues/32987) - [GitHub code contribution](https://github.com/magento/magento2/pull/39154)_
 
 ### Payments
