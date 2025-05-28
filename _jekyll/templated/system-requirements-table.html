@@ -3,7 +3,6 @@
 # System requirements
 
 {%- assign requirements_data = site.data.system-requirements %}
-
 {%- assign grouped_requirements = requirements_data | group_by_exp: "version", "version[0] | slice: 4" %}
 
 >[!NOTE]
@@ -11,208 +10,34 @@
 >Versions 2.4.4 and 2.4.5 support MySQL 8.0.0 through 8.0.28 only.
 
 {%- for minor_version in grouped_requirements %}
-
 {%- assign requirements = minor_version.items %}
+
+{%- assign dependencies = "Composer,Elasticsearch,OpenSearch,MariaDB,MySQL,PHP,RabbitMQ,Redis,Varnish,Apache,nginx,AWS Aurora (MySQL),AWS S3,AWS MQ,AWS ElastiCache,AWS Elasticsearch,AWS OpenSearch" | split: "," %}
 
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software dependencies
-      </th>
-    {%- for requirement in requirements %}
+      <th>Software dependencies</th>
+      {%- for requirement in requirements %}
       <th>{{requirement[0]}}</th>
-    {%- endfor %}
+      {%- endfor %}
     </tr>
   </thead>
   <tbody>
+    {%- for dependency in dependencies %}
     <tr>
-      <td><span class="uicontrol">[!DNL Composer]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['Composer'] %}
-            {{requirement[1]['Composer']}}
-          {%- else %}
-          --
-          {%- endif %}
+      <td><span class="uicontrol">[!DNL {{dependency}}]</span></td>
+      {%- for requirement in requirements %}
+      <td>
+        {%- if requirement[1][dependency] %}
+        {{requirement[1][dependency]}}
+        {%- else %}
+        --
+        {%- endif %}
       </td>
-        {%- endfor %}
+      {%- endfor %}
     </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['Elasticsearch'] %}
-            {{requirement[1]['Elasticsearch']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['OpenSearch'] %}
-            {{requirement[1]['OpenSearch']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['MariaDB'] %}
-            {{requirement[1]['MariaDB']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL MySQL]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['MySQL'] %}
-            {{requirement[1]['MySQL']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL PHP]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['PHP'] %}
-            {{requirement[1]['PHP']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['RabbitMQ'] %}
-            {{requirement[1]['RabbitMQ']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Redis]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['Redis'] %}
-            {{requirement[1]['Redis']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Varnish]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['Varnish'] %}
-            {{requirement[1]['Varnish']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Apache]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['Apache'] %}
-            {{requirement[1]['Apache']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL nginx]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['nginx'] %}
-            {{requirement[1]['nginx']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['AWS Aurora (MySQL)'] %}
-            {{requirement[1]['AWS Aurora (MySQL)']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['AWS S3'] %}
-            {{requirement[1]['AWS S3']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['AWS MQ'] %}
-            {{requirement[1]['AWS MQ']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['AWS ElastiCache'] %}
-            {{requirement[1]['AWS ElastiCache']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['AWS Elasticsearch'] %}
-            {{requirement[1]['AWS Elasticsearch']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
-        {%- for requirement in requirements %}
-      <td>{%- if requirement[1]['AWS OpenSearch'] %}
-            {{requirement[1]['AWS OpenSearch']}}
-          {%- else %}
-          --
-          {%- endif %}
-      </td>
-        {%- endfor %}
-    </tr>
+    {%- endfor %}
   </tbody>
 </table>
 

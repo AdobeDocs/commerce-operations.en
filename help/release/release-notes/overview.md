@@ -43,7 +43,7 @@ Use the following table to find release notes and important information related 
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">Catalog Service</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">Live Search</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Payment Services</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Product Recommendations</a></li>
