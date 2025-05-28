@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-65100: Removing the values for Maximum Width and Maximum Height in the Media Gallery Image Optimization configuration causes an error during the image optimization process'
-description: Apply the ACSD-65100 patch to fix the Adobe Commerce issue where removing the values for Maximum Width and Maximum Height in the Media Gallery Image Optimization configuration causes an error during the image optimization process.
+title: 'ACSD-65100: Removing the [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] values in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error'
+description: Apply the ACSD-65100 patch to fix the Adobe Commerce issue where removing the [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] values in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error during the image optimization process.
 feature: Media
 role: Admin, Developer
 ---
 
-# ACSD-65100: Removing the values for Maximum Width and Maximum Height in the Media Gallery Image Optimization configuration causes an error during the image optimization process
+# ACSD-65100: Removing the [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] values in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error
 
-The ACSD-65100 patch fixes the issue where removing the values for Maximum Width and Maximum Height in the Media Gallery Image Optimization configuration causes an error during the image optimization process. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65100. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65100 patch fixes the issue where removing the **[!UICONTROL Maximum Width]** and **[!UICONTROL Maximum Height]** values in the **[!UICONTROL Media Gallery Image Optimization]** configuration causes an error during the image optimization process. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65100. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,27 +25,29 @@ The ACSD-65100 patch fixes the issue where removing the values for Maximum Width
 
 ## Issue
 
-Removing the values for Maximum Width and Maximum Height in the Media Gallery Image Optimization configuration causes an error during the image optimization process.
+An error occurs during the image optimization process when the values for **[!UICONTROL Maximum Width]** and **[!UICONTROL Maximum Height]** are removed in the **[!UICONTROL Media Gallery Image Optimization]** configuration.
 
 <u>Steps to reproduce</u>:
 
-1. Go to System -> Configuration -> Advanced -> System -> Media Gallery Image Optimization
-1. Remove values (leave empty) for Maximum Width and Maximum Height
-1. Clean Config cache
-1. Go to Content -> Elements -> Pages
-1. Open for edit any page
-1. Click on content area
-    1. Add Layout -> Row
-    1. Add Elements -> Text into row
-    1. In WYSIWYG click Add image
-    1. Upload any image and then click Add Selected button
-1. Check var/log/exception.log
+1. Go to the **[!UICONTROL Stores]** -> *[!UICONTROL Settings]* -> **[!UICONTROL Configuration]** -> **[!UICONTROL Advanced]** -> **[!UICONTROL System]** -> **[!UICONTROL Media Gallery Image Optimization]**.
+1. Remove the values for **[!UICONTROL Maximum Width]** and **[!UICONTROL Maximum Height]**.
+1. Clean the configuration cache.
+1. Navigate to **[!UICONTROL Content]** -> *[!UICONTROL Elements]* -> **[!UICONTROL Pages]**.
+1. Open any page for editing.
+1. In the content area:
+    1. Select **[!UICONTROL Add Layout]** > **[!UICONTROL Row]**.
+    1. Select **[!UICONTROL Add Elements]** > **[!UICONTROL Text]**.
+    1. In the WYSIWYG editor, click **[!UICONTROL Add Image]**.
+    1. Upload an image and select **[!UICONTROL Add Selected]**.
+1. Check the `var/log/exception.log` file.
 
 <u>Expected results</u>:
 
-No errors
+No errors.
 
 <u>Actual results</u>:
+
+An error similar to the following is logged:
 
 ```
 report.ERROR: InvalidArgumentException: Invalid image dimensions. in /var/www/html/vendor/magento/framework/Image/Adapter/AbstractAdapter.php:630
