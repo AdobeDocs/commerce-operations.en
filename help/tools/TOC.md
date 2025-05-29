@@ -788,7 +788,7 @@ feature: Configuration
            - [ACSD-64753: Pre-selected store in "Pickup in Store" doesn't update when shipping address changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
         - v1.1.64 {#v1-1-64}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
-           - [ACSD-65684: Performance issue where upgrading the Magento_Company module after updating to B2B 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the company_structure table](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
+           - [ACSD-65684: Upgrading Magento_Company after B2B 1.5.2 is slow with over 100,000 records in company_structure](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
