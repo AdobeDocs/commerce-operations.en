@@ -16,6 +16,6 @@ This release includes the following highlights:
 
   This fix is also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) for details.
 
-* **Fix for CVE-2025-47109**—Resolves an email templates vulnerability.<!-- AC-14695 -->
+* **Fix for CVE-2025-47110**—Resolves an email templates vulnerability.<!-- AC-14695 -->
 
   This fix is also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) for details.
