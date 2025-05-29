@@ -1,23 +1,23 @@
 ---
-title: 'ACSD-65684: Performance issue where upgrading the Magento_Company module after updating to B2B 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the company_structure table'
-description: Apply the ACSD-65684 patch to fix the Adobe Commerce issue where performance issue where upgrading the Magento_Company module after updating to B2B 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the company_structure table.
-feature: B2B,
+title: 'ACSD-65684: Upgrading Magento_Company after B2B 1.5.2 is slow with over 100,000 records in company_structure'
+description: Apply the ACSD-65684 patch to fix the Adobe Commerce issue where upgrading the Magento_Company module in B2B 1.5.2 takes too long due to processing a large number of records (~100,000+) in the company_structure table.
+feature: B2B
 role: Admin, Developer
 ---
 
-# ACSD-65684: Performance issue where upgrading the Magento_Company module after updating to B2B 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the company_structure table
+# ACSD-65684: Upgrading Magento_Company after B2B 1.5.2 is slow with over 100,000 records in company_structure
 
-The ACSD-65684 patch fixes the issue where performance issue where upgrading the Magento_Company module after updating to B2B 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the company_structure table. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65684. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65684 patch fixes a performance issue where upgrading the `Magento_Company` module in B2B 1.5.2 takes too long when processing 100,000+ records in the `company_structure` table. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65684. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) B2B 1.5.2
+* Adobe Commerce (all deployment methods) 1.5.2
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) B2B 1.5.2
+* Adobe Commerce (all deployment methods) 1.5.2
 
 >[!NOTE]
 >
@@ -25,15 +25,15 @@ The ACSD-65684 patch fixes the issue where performance issue where upgrading the
 
 ## Issue
 
-Performance issue where upgrading the Magento_Company module after updating to B2B 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the company_structure table.
+Performance issue where upgrading the `Magento_Company` module in B2B 1.5.2 takes too long when processing 100,000+ records in the `company_structure` table.
 
 <u>Steps to reproduce</u>:
 
-1. Install Adobe Commerce 2.4.7-p4 with B2B
-1. Add 100,000 records to company_structure table
-1. Upgrade to Commerce 2.4.7-p5 and latest B2B module
-1. Apply ACSD-65540 patch
-1. Run
+1. Install Adobe Commerce 2.4.7-p4 with B2B.
+1. Add 100,000 records to `company_structure` table.
+1. Upgrade to Adobe Commerce 2.4.7-p5 and the latest B2B module.
+1. Apply patch ACSD-65540.
+1. Run:
 
 ```
 bin/magento setup:upgrade
@@ -41,11 +41,11 @@ bin/magento setup:upgrade
 
 <u>Expected results</u>:
 
-setup:upgrade will complete within a reasonable time
+`setup:upgrade` completes in a reasonable time.
 
 <u>Actual results</u>:
 
-setup:upgrade will take a long time to complete
+`setup:upgrade` takes an excessively long time to complete.
 
 ## Apply the patch
 
