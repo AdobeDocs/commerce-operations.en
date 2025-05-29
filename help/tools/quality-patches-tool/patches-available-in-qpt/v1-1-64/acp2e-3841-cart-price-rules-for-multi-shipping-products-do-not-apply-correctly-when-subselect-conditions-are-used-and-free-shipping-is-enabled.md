@@ -3,8 +3,8 @@ title: 'ACP2E-3841: Cart price rules for multi-shipping products do not apply co
 description: Apply the ACP2E-3841 patch to fix the Adobe Commerce issue where cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
+exl-id: 73979b71-9b15-4a4b-a1c9-37d3213c177f
 ---
-
 # ACP2E-3841: Cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled
 
 The ACP2E-3841 patch fixes the issue where cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACP2E-3841. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
