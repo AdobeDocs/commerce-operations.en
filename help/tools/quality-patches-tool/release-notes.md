@@ -22,7 +22,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-64813** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where it took a long time to unassign categories in a B2B shared catalog.
 * **ACSD-65202** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the "My Account" page doesn't display recent orders from other store views within the same store.
 * **ACSD-65254** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where email notifications were not sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` GraphQL mutation.
-* **ACSD-65331** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the selected store in "Pick in Store" was cleared after repeatedly navigating back to the checkout page.
+* **ACSD-65331** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the selected store in [!UICONTROL Pick in Store] was cleared after repeatedly navigating back to the checkout page.
 * **ACSD-65822** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where bundle and configurable product quantities don't display correctly in the shopping cart panel under [!UICONTROL Customer's Activities].
 * **ACSD-66093** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where email addresses could be entered into the guest customer's [!UICONTROL First Name] and [!UICONTROL Last Name] fields, resulting in invalid order confirmation emails.
 * Versions updated: **ACSD-51291**
