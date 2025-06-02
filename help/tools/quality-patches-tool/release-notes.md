@@ -24,7 +24,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-65254** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where email notifications were not sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` GraphQL mutation.
 * **ACSD-65331** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the selected store in "Pick in Store" was cleared after repeatedly navigating back to the checkout page.
 * **ACSD-65822** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where bundle and configurable product quantities don't display correctly in the "Shopping Cart" section under Customer Activities.
-* **ACSD-66093** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where email addresses could be entered into the guest customer's First and Last Name fields, resulting in invalid order confirmation emails.
+* **ACSD-66093** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where email addresses could be entered into the guest customer's [!UICONTROL First Name] and [!UICONTROL Last Name] fields, resulting in invalid order confirmation emails.
 * Versions updated: **ACSD-51291**
 * Replaced patches: **ACSD-61522**
 
