@@ -19,7 +19,7 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 * **ACP2E-3753** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where product alert emails in a multi-store setup were always sent using the default theme, regardless of the store or theme configuration.
 * **ACSD-64118** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where concurrent requests to save and update the same product result in data inconsistency or duplicated products.
-* **ACSD-64813** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where it took a long time to unassign categories in a B2B shared catalog.
+* **ACSD-64813** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where unassigning categories from a [!DNL B2B] shared catalog via [!DNL REST] API takes too long or times out with large catalogs.
 * **ACSD-65202** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the "My Account" page doesn't display recent orders from other store views within the same store.
 * **ACSD-65254** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where email notifications were not sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` GraphQL mutation.
 * **ACSD-65331** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the selected store in [!UICONTROL Pick in Store] was cleared after repeatedly navigating back to the checkout page.
