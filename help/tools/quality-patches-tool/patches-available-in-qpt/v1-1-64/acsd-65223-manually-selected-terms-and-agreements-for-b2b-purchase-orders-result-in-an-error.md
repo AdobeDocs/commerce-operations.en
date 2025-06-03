@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-65223: Manually selected terms and agreements for B2B purchase orders result in an error
 
-The ACSD-65223 patch fixes the issue where orders created using [!UICONTROL Purchase Orders] can't be completed with online payment methods like credit cards when terms and conditions are required for checkout. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65223.
+The ACSD-65223 patch fixes the issue where orders created using **[!UICONTROL Purchase Orders]** can't be completed with online payment methods like credit cards when terms and conditions are required for checkout. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65223.
 
 ## Affected products and versions
 
