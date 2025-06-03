@@ -3,8 +3,8 @@ title: 'ACSD-65127: JavaScript minification in production mode causes [!DNL Tiny
 description: Apply the ACSD-65127 patch to fix the Adobe Commerce issue where enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to generate errors in the browser console, affecting functionality and user experience.
 feature: Page Builder, Page Content
 role: Admin, Developer
+exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 ---
-
 # ACSD-65127: JavaScript minification in production mode causes [!DNL TinyMCE] 6 errors in the browser
 
 The ACSD-65127 patch fixes the issue where enabling JavaScript minification in production mode caused [!DNL TinyMCE] 6 to generate errors in the browser console, affecting functionality and user experience. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65127. Please note that this issue was fixed in Adobe Commerce 2.4.8.

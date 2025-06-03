@@ -3,8 +3,8 @@ title: 'ACSD-65787: SchemaBuilder crashes during schema creation or update due t
 description: Apply the ACSD-65787 patch to fix the Adobe Commerce issue where SchemaBuilder class crashes during schema creation or updates due to an undefined array key "column" when processing table data.
 feature: Backend Development, Deploy
 role: Admin, Developer
+exl-id: c01d1799-13fe-4657-a480-698efbe45a30
 ---
-
 # ACSD-65787: `SchemaBuilder` crashes during schema creation or update due to undefined array key "column" in table data
 
 The ACSD-65787 patch fixes the issue where `SchemaBuilder` class crashes during schema creation or updates due to an undefined array key "column" when processing table data. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65787. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.

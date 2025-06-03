@@ -3,8 +3,8 @@ title: 'ACP2E-3838: [!DNL Page Builder] CORS errors prevent saving changes in th
 description: Apply the ACP2E-3838 patch to fix the Adobe Commerce issue where [!DNL Page Builder] CORS errors prevent saving changes in the admin panel in production mode.
 feature: Page Builder, Page Content, Admin Workspace
 role: Admin, Developer
+exl-id: 0d590c0e-e21c-4553-a0a3-9332e22796f3
 ---
-
 # ACP2E-3838: [!DNL Page Builder] CORS errors prevent saving changes in the admin panel in production mode
 
 The ACP2E-3838 patch fixes the issue where [!DNL Page Builder] CORS errors prevent saving changes in the admin panel in production mode. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACP2E-3838. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
