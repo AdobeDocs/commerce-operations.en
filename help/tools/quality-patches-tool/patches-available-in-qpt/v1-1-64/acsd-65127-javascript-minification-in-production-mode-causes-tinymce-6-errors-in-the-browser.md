@@ -51,7 +51,7 @@ No JS errors in the browser console.
 
 <u>Actual results</u>:
 
-*404* errors in the browser console for the js `tiny_mce_7/plugins/help/js/i18n/keynav/en.js`.
+*404* errors in the browser console for the js `tiny_mce_6/plugins/help/js/i18n/keynav/en.js`.
 
 ## Apply the patch
 
