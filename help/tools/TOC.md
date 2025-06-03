@@ -9,7 +9,6 @@ feature: Configuration
 - [Overview](overview.md)
 - Site-Wide Analysis Tool {#site-wide-analysis-tool}
     - [Introduction](site-wide-analysis-tool/intro.md)
-    - [Installation](site-wide-analysis-tool/installation.md)
     - [How to access](site-wide-analysis-tool/access.md)
     - [Status attributes](site-wide-analysis-tool/status.md)
     - [Features tabs](site-wide-analysis-tool/features-tabs.md)
@@ -789,6 +788,10 @@ feature: Configuration
         - v1.1.64 {#v1-1-64}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
            - [ACSD-65127: JavaScript minification in production mode causes [!DNL TinyMCE] 6 errors in the browser](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65127-javascript-minification-in-production-mode-causes-tinymce-6-errors-in-the-browser.md)
+           - [ACP2E-3838: [!DNL Page Builder] CORS errors prevent saving changes in the admin panel in production mode](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3838-page-builder-cors-errors-prevent-saving-changes-in-the-admin-panel-in-production-mode.md)
+           - [ACSD-65787: SchemaBuilder crashes during schema creation or update due to undefined array key "column" in table data](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65787-schemabuilder-crashes-during-schema-creation-updates-due-to-undefined-array-key-column-in-table-data.md)
+           - [ACSD-65223: Manually selected terms and agreements for B2B purchase orders result in an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error.md)
+           - [ACP2E-3841: Cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

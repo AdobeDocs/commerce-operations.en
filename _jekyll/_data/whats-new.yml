@@ -2,8 +2,53 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue May 27 02:20:53 2025
+updated: Tue Jun 3 02:20:53 2025
 entries:
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.65 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: major-update, qpt
+  date: June 2, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1390
+  merge_commit: f73cb441d66ee3c33bbdbb40fe10dcced6a04580
+  contributor: poltorat
+  membership:
+  labels:
+  - major-update
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACP2E-3841
+    patch in the QPT 1.1.64 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled)
+  versions: ''
+  type: new-topic, qpt
+  date: May 29, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1368
+  merge_commit: fde352fb5e7849347a12b6478fb00c315f1c3e1c
+  contributor: barnato
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added RabbitMQ 3.13 in the [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    table for the April 2025 security patches.
+  versions: ''
+  type: technical
+  date: May 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1384
+  merge_commit: cdf687ce0f1201e57b66d2b9232ed8820a116d6f
+  contributor: jmatthew
+  membership:
+  labels:
+  - technical
+- description: Added 2.4.9-alpha patches to the [release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule).
+  versions: ''
+  type: major-update
+  date: May 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1356
+  merge_commit: 6bb93ade098db81ca771616c0b694e565311b477
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.64 Quality Patches Tool (QPT) package release.
   versions: ''
