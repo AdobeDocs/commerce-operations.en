@@ -52,7 +52,7 @@ You are able to place an order using an online payment method on approved purcha
 
 <u>Actual results</u>:
 
-User can't place an order using an online payment method on approved purchase orders when terms and conditions are required for checkout.
+You can't place an order using an online payment method on approved purchase orders when terms and conditions are required for checkout.
 
 ## Apply the patch
 
