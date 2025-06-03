@@ -48,7 +48,7 @@ If terms and conditions are required to place an order, and you are trying to fi
 
 <u>Expected results</u>:
 
-User is able to place an order using an online payment method on approved purchase orders when terms and conditions are required for checkout.
+You are able to place an order using an online payment method on approved purchase orders when terms and conditions are required for checkout.
 
 <u>Actual results</u>:
 
