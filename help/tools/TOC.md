@@ -9,7 +9,6 @@ feature: Configuration
 - [Overview](overview.md)
 - Site-Wide Analysis Tool {#site-wide-analysis-tool}
     - [Introduction](site-wide-analysis-tool/intro.md)
-    - [Installation](site-wide-analysis-tool/installation.md)
     - [How to access](site-wide-analysis-tool/access.md)
     - [Status attributes](site-wide-analysis-tool/status.md)
     - [Features tabs](site-wide-analysis-tool/features-tabs.md)
@@ -789,6 +788,7 @@ feature: Configuration
         - v1.1.64 {#v1-1-64}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
            - [ACSD-65684: Upgrading Magento_Company in B2B 1.5.2 is slow with over 100,000 records in company_structure](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
+           - [ACP2E-3841: Cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
