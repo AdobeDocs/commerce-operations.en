@@ -40,7 +40,7 @@ If terms and conditions are required to place an order, and you are trying to fi
 1. Approve the company and allow **[!UICONTROL Purchase Orders]**.
 1. On the frontend, log in to the account.
 1. Add an item to the cart.
-1. Place an order using [!UICONTROL Purchase Order].
+1. Place an order using **[!UICONTROL Purchase Order]**.
 1. In the customer dashboard, click the **[!UICONTROL Purchase Orders]** tab.
 1. Create an order from the new purchase order. Then select credit card as the payment method.
 1. Agree to the terms and conditions.
