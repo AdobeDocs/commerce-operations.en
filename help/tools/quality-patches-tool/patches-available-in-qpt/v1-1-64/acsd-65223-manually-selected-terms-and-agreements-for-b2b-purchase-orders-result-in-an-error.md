@@ -35,7 +35,7 @@ If terms and conditions are required to place an order, and you are trying to fi
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Terms and Conditions]** and create a new condition. Set **[!UICONTROL Applied]** to *[!UICONTROL Manually]*.
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** and set **[!UICONTROL Enable Terms and Conditions]** to *Yes*.
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Payment Methods]** and configure [!DNL Braintree].
-1. On the frontend, create a company.
+1. On the storefront, create a company.
 1. In the admin, go to **[!UICONTROL Customers]** > **[!UICONTROL Companies]**.
 1. Approve the company and allow [!UICONTROL Purchase Orders].
 1. On the frontend, log in to the account.
