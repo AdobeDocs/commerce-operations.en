@@ -38,7 +38,7 @@ The ACP2E-3838 patch fixes the issue where [!DNL Page Builder] CORS errors preve
 
 <u>Expected results</u>:
 
-The page content should be saved successfully without any errors.
+The page content should save successfully without any errors.
 
 <u>Actual results</u>:
 
