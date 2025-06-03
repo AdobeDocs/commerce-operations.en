@@ -9,7 +9,6 @@ feature: Configuration
 - [Overview](overview.md)
 - Site-Wide Analysis Tool {#site-wide-analysis-tool}
     - [Introduction](site-wide-analysis-tool/intro.md)
-    - [Installation](site-wide-analysis-tool/installation.md)
     - [How to access](site-wide-analysis-tool/access.md)
     - [Status attributes](site-wide-analysis-tool/status.md)
     - [Features tabs](site-wide-analysis-tool/features-tabs.md)
@@ -789,6 +788,7 @@ feature: Configuration
         - v1.1.64 {#v1-1-64}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
            - [ACSD-65223: Manually selected terms and agreements for B2B purchase orders result in an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error.md)
+           - [ACP2E-3841: Cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
