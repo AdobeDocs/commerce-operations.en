@@ -33,7 +33,8 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Adobe Commerce merchants using Live Search, Catalog Service, or Product Recommendations have the option to use [SaaS-based price indexing](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html).
+>
+> Adobe Commerce merchants using Live Search, Catalog Service, or Product Recommendations have the option to use [SaaS-based price indexing](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## View indexer status
 
