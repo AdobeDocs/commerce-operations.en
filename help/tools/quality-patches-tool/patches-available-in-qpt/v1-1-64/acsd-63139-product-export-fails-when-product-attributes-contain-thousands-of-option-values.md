@@ -3,8 +3,8 @@ title: 'ACSD-63139: Product export fails when product attributes contain thousan
 description: Apply the ACSD-63139 patch to fix the Adobe Commerce issue where product export fails when product attributes contain thousands of option values.
 feature: Data Import/Export
 role: Admin, Developer
+exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 ---
-
 # ACSD-63139: Product export fails when product attributes contain thousands of option values
 
 The ACSD-63139 patch fixes the issue where product export fails when product attributes contain thousands of option values. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-63139. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
