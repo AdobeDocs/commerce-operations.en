@@ -3,8 +3,8 @@ title: 'ACSD-65100: Removing the [!UICONTROL Maximum Width] and [!UICONTROL Maxi
 description: Apply the ACSD-65100 patch to fix the Adobe Commerce issue where removing the [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] values in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error during the image optimization process.
 feature: Media
 role: Admin, Developer
+exl-id: 86197602-19a1-41c2-b129-1f695f303ce5
 ---
-
 # ACSD-65100: Removing the [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] values in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error
 
 The ACSD-65100 patch fixes the issue where removing the **[!UICONTROL Maximum Width]** and **[!UICONTROL Maximum Height]** values in the **[!UICONTROL Media Gallery Image Optimization]** configuration causes an error during the image optimization process. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65100. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
