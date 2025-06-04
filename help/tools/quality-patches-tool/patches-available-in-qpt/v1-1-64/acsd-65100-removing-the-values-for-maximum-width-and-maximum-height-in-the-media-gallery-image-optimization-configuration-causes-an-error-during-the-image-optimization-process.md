@@ -29,10 +29,10 @@ An error occurs during the image optimization process when the values for **[!UI
 
 <u>Steps to reproduce</u>:
 
-1. Go to the **[!UICONTROL Stores]** -> *[!UICONTROL Settings]* -> **[!UICONTROL Configuration]** -> **[!UICONTROL Advanced]** -> **[!UICONTROL System]** -> **[!UICONTROL Media Gallery Image Optimization]**.
+1. Go to the **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Media Gallery Image Optimization]**.
 1. Remove the values for **[!UICONTROL Maximum Width]** and **[!UICONTROL Maximum Height]**.
 1. Clean the configuration cache.
-1. Navigate to **[!UICONTROL Content]** -> *[!UICONTROL Elements]* -> **[!UICONTROL Pages]**.
+1. Navigate to **[!UICONTROL Content]** > *[!UICONTROL Elements]* > **[!UICONTROL Pages]**.
 1. Open any page for editing.
 1. In the content area:
     1. Select **[!UICONTROL Add Layout]** > **[!UICONTROL Row]**.
