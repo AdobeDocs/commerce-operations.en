@@ -11,6 +11,7 @@
 require 'yaml'
 require 'colorator'
 require 'date'
+require 'json'
 
 desc 'Generate data for a news digest.
       Default timeframe is since last update.
@@ -168,7 +169,9 @@ desc 'Get released versions. Requires GitHub CLI.
   Generates the "tmp/core-release.txt" file with the last 10 released versions from magento/magento2.'
 task :get_released_versions do
   Dir.mkdir('tmp') unless Dir.exist?('tmp')
-  sh 'gh --repo=magento/magento2 release list --limit 10 | grep --only-matching --extended-regexp "2\.4\.\d\d?|2\.\d\d?\.\d\d?-p\d\d?|2\.\d\d?\.\d\d?-beta\d"| uniq | xargs -I {} gh --repo=magento/magento2 release view {} --json tagName,publishedAt > tmp/core-release.txt'
+  releases_json = `gh release list --repo=magento/magento2 --limit 10 --json tagName,publishedAt`
+  releases = JSON.parse(releases_json)
+  File.write('tmp/core-release.txt', JSON.pretty_generate(releases))
   puts "Find results in ".green + "tmp/core-release.txt".blue
 end
 

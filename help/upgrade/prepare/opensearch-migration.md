@@ -12,7 +12,7 @@ As of 2.4.4, 2.4.3-p2, and 2.3.7-p3, Adobe Commerce supports OpenSearch. On-prem
 
 ## Migration path
 
-The steps to migrate to OpenSearch are simple and largely follow the steps for Elasticsearch configuration. These steps assume that Adobe Commerce is the only application using the search engine. In cases where multiple applications use the search engine, follow the official migration guide [Moving from open source Elasticsearch to OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
+The steps to migrate to OpenSearch are simple and largely follow the steps for Elasticsearch configuration. These steps assume that Adobe Commerce is the only application using the search engine. In cases where multiple applications use the search engine, follow the official migration guide [Moving from open source Elasticsearch to OpenSearch](https://opensearch.org/blog/moving-from-opensource-elasticsearch-to-opensearch/).
 
 1. Ensure that your installation meets the [search engine prerequisites](../../installation/prerequisites/search-engine/overview.md).
 
