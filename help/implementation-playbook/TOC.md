@@ -22,6 +22,7 @@ mini-toc-levels: 3
     - [Database configuration for cloud deployments​](best-practices/planning/database-on-cloud.md)
     - [MySQL configuration](best-practices/planning/mysql-configuration.md)
     - [Redis service configuration](best-practices/planning/redis-service-configuration.md)
+    - [Valkey service configuration](best-practices/planning/valkey-service-configuration.md)
     - [OPcache memory size](best-practices/planning/opcache-memory-size.md)
     - [Realpath cache size](best-practices/planning/realpath-cache-size.md)
     - [Extensions](best-practices/planning/extensions.md)
