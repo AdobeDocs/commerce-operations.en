@@ -29,7 +29,7 @@ SQL syntax error occurs due to missing `REGEXP_LIKE` function in `company_struct
 
 <u>Steps to reproduce</u>:
 
-1. Update B2B to version 1.5.2
+1. Run the following command to update B2B to version 1.5.2.
 1. Run the following command:
 
 ```
