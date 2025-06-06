@@ -17,7 +17,7 @@ The ACSD-65684 patch fixes a performance issue where upgrading the `Magento_Comp
 
 **Compatible with Adobe Commerce versions:**
 
-* Adobe Commerce (all deployment methods) 1.5.2
+* Adobe Commerce B2B (all deployment methods) 1.5.2
 
 >[!NOTE]
 >
