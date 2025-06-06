@@ -29,7 +29,7 @@ Performance issue where upgrading the `Magento_Company` module in [!DNL B2B] 1.5
 
 <u>Steps to reproduce</u>:
 
-1. Install Adobe Commerce 2.4.7-p4 with B2B.
+1. Install Adobe Commerce 2.4.7-p4 with [!DNL B2B].
 1. Add 100,000 records to `company_structure` table.
 1. Upgrade to Adobe Commerce 2.4.7-p5 and the latest B2B module (1.5.2).
 1. Apply patch ACSD-65540.
