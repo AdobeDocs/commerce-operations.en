@@ -299,7 +299,7 @@ Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 
 ## How to set
 
-Every configuration option (variable with value) can be set or overwritten with OS Environment Variables.
+You can set or override every configuration option (variable with value) with operating system (OS)-level environment variables.
 
 The `env.php` configuration is stored in an array with nested levels. To convert a nested array path to a string for OS Environment variables, concatenate each key in the path with double underscore characters `__`, uppercased, and prefixed with `MAGENTO_DC_`.
 
