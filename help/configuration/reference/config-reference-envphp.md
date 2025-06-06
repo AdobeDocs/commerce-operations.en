@@ -294,3 +294,74 @@ Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## Add variables to file configuration
+
+You can set or override every configuration option (variable with value) with operating system (OS)-level environment variables.
+
+The `env.php` configuration is stored in an array with nested levels. To convert a nested array path to a string for OS environment variables, concatenate each key in the path with double underscore characters `__`, uppercased, and prefixed with `MAGENTO_DC_`.
+
+For example, let's convert the session save handler from `env.php` configuration to an OS environment variable.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+Concatenated with `__` and uppercased keys will become `SESSION__SAVE`.
+
+Then, we prefix it with `MAGENTO_DC_` to get the resulting OS environment variable name `MAGENTO_DC_SESSION__SAVE`.
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+As another example, let's convert a scalar `env.php` configuration option path.
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>While the variable name should be uppercased, the value is case sensitive and should be preserved as documented.
+
+We simply uppercase it and prefix with `MAGENTO_DC_` to receive the final OS environment variable name `MAGENTO_DC_X-FRAME-OPTIONS`.
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>Note that `env.php` content will have priority over the OS environment variables.
+
+## Override file configuration with variables
+
+To override the existing `env.php` configuration options with an OS environment variable, the array element of the configuration must be JSON encoded and set as a value of the `MAGENTO_DC__OVERRIDE` OS variable.
+
+If you need to override multiple configuration options, assemble them all in a single array before JSON encoding.
+
+For example, let's override the following `env.php` configurations:
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+The JSON encoded text of the above array would be
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
+
+Now, set it as the value of the `MAGENTO_DC__OVERRIDE` OS variable.
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>Ensure the JSON encoded array is properly quoted and/or escaped if needed, to prevent the OS from corrupting the encoded string.
