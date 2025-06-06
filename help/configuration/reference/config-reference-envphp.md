@@ -301,7 +301,7 @@ Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 
 You can set or override every configuration option (variable with value) with operating system (OS)-level environment variables.
 
-The `env.php` configuration is stored in an array with nested levels. To convert a nested array path to a string for OS Environment variables, concatenate each key in the path with double underscore characters `__`, uppercased, and prefixed with `MAGENTO_DC_`.
+The `env.php` configuration is stored in an array with nested levels. To convert a nested array path to a string for OS environment variables, concatenate each key in the path with double underscore characters `__`, uppercased, and prefixed with `MAGENTO_DC_`.
 
 For example, let's convert the session save handler from `env.php` configuration to an OS environment variable.
 
