@@ -296,7 +296,7 @@ Learn more in [env-php-config-set](../cli/set-configuration-values.md).
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
 
-## How to set
+## Add variables to file configuration
 
 You can set or override every configuration option (variable with value) with operating system (OS)-level environment variables.
 
