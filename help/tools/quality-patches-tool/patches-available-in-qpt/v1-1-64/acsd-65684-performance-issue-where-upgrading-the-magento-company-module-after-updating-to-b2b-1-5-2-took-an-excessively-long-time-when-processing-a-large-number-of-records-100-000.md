@@ -25,7 +25,7 @@ The ACSD-65684 patch fixes a performance issue where upgrading the `Magento_Comp
 
 ## Issue
 
-Performance issue where upgrading the `Magento_Company` module in B2B 1.5.2 takes too long when processing 100,000+ records in the `company_structure` table.
+Performance issue where upgrading the `Magento_Company` module in [!DNL B2B] 1.5.2 takes too long when processing 100,000+ records in the `company_structure` table.
 
 <u>Steps to reproduce</u>:
 
