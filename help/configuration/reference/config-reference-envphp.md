@@ -339,7 +339,7 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 >
 >Note that `env.php` content will have priority over the OS environment variables.
 
-## How to override
+## Override file configuration with variables
 
 To override the existing `env.php` configuration options with an OS environment variable, the array element of the configuration must be JSON encoded and set as a value of the `MAGENTO_DC__OVERRIDE` OS variable.
 
