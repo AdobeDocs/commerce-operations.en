@@ -327,7 +327,7 @@ As another example, let's convert a scalar `env.php` configuration option path.
 
 >[!INFO]
 >
->While variable name should be uppercased, the value is case sensitive and should be preserved as documented.
+>While the variable name should be uppercased, the value is case sensitive and should be preserved as documented.
 
 We simply uppercase it and prefix with `MAGENTO_DC_` to receive the final OS environment variable name `MAGENTO_DC_X-FRAME-OPTIONS`.
 
