@@ -313,7 +313,7 @@ For example, let's convert the session save handler from `env.php` configuration
 
 Concatenated with `__` and uppercased keys will become `SESSION__SAVE`.
 
-Then we prefix it with `MAGENTO_DC_`, to get the resulting OS environment variable name `MAGENTO_DC_SESSION__SAVE`.
+Then, we prefix it with `MAGENTO_DC_` to get the resulting OS environment variable name `MAGENTO_DC_SESSION__SAVE`.
 
 ```shell
 export MAGENTO_DC_SESSION__SAVE=files
