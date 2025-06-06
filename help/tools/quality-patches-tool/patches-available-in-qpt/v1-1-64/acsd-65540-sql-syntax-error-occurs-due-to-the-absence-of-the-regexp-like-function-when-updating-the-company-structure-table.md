@@ -13,7 +13,7 @@ The ACSD-65540 patch fixes the issue where SQL error occurs due to missing `REGE
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 1.5.2
+* Adobe Commerce B2B (all deployment methods) 1.5.2
 
 **Compatible with Adobe Commerce versions:**
 
