@@ -1,5 +1,5 @@
 # Parameters for a GitHub search query
-base_branch: main
+base_branch: 2.4.9-develop
 
 enterprise: git.corp.adobe.com
 
