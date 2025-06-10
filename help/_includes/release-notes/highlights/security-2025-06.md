@@ -14,10 +14,8 @@ This release includes the following highlights:
 
 * **Fix for CVE-2025-47110**—Resolves an email templates vulnerability.<!-- AC-14695 -->
 
-* **Fix for VULN-31547**—Resolves a category canonical link vulnerability.<!-- AC-14713 -->
-
 >[!BEGINSHADEBOX]
 
-Fixes for CVE-2025-47110 VULN-31547 are also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) for details.
+The fix for CVE-2025-47110 is also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) for details.
 
 >[!ENDSHADEBOX]
