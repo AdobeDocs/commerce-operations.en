@@ -2,8 +2,35 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jun 3 02:20:53 2025
+updated: Tue Jun 10 08:06:42 2025
 entries:
+- description: Published release notes for the June 2025 security patches and 2.4.9-alpha1
+    patch:<br/>- [2.4.9-alpha1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)<br/>-
+    [2.4.8-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches)<br/>-
+    [2.4.7-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches)<br/>-
+    [2.4.6-p11](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches)<br/>-
+    [2.4.5-p13](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches)<br/>-
+    [2.4.4-p14](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches)
+  versions: ''
+  type: major-update
+  date: June 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1363
+  merge_commit: 7cd58c1fe597258ee1f4514acfb08e71bee1c848
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+- description: Updated [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for the June 2025 patch release.
+  versions: ''
+  type: major-update
+  date: June 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1365
+  merge_commit: 71ddfd423cbf8b1bb76155a9f1d67e90f46c5c46
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
 - description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
     for the 1.1.65 Quality Patches Tool (QPT) package release.
   versions: ''
