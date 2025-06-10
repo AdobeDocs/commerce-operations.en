@@ -1,0 +1,10 @@
+Issue key,Summary,Custom field (External Issue URL),Custom field (Release Note),Custom field (Git Pull Request),Components,is_magento
+AC-13258,Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs,"","","",Shipping,false
+AC-13792,[Part 2] - Update all js library and npm dependency with the latest available version,"","composer version support was up to the composer version 2.2.x only. Now, the support extended to 2.4.x version as well.",https://github.com/magento/magento2/commit/19844aa0,Framework,true
+AC-13916,"Add ""Actions"" menu for the Catalog Price Rules grid in Admin UI","","","",Admin UI,false
+AC-14026,2.4.9-alpha1 - June Core Quality Improvements,"","","",Other,false
+AC-14099,Make 2.4.7 and 2.4.6 compatible with MariaDB 10.11,"","","",Other,false
+AC-14103,"Add compatibility for Valkey 8.x for 2.4.8, 2.4.7, 2.4.6 and 2.4.5, 2.4.9-alpha1","","","",Framework,false
+AC-14105,Check compatibility with Varnish 7.7,"","","",Framework,false
+AC-14357,"Add compatibility for RabbitMQ 4.1 for 2.4.8, 2.4.7, 2.4.6 and 2.4.5","","","",Framework,false
+AC-14559,2.4.9-alpha1 - June 2025 Community contributions,"","","",Other,false

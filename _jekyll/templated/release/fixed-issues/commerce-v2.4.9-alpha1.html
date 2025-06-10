@@ -1,0 +1,14 @@
+---
+version: "2.4.9-alpha1"
+product: "Adobe Commerce"
+---
+{%- assign data_path = page.version | replace: ".", "-" | prepend: "v" -%}
+# {{page.product}} fixed issues (v{{page.version}})
+
+## Fixed issues in v{{page.version}}
+
+{%- assign fixes = site.data.release.fixed-issues[data_path] %}
+
+We have fixed {{fixes | size }} issues in the {{page.product}} {{page.version}} core code. A subset of the fixed issues included in this release is described below.
+
+{%- include release/fixed-issues.html -%}
