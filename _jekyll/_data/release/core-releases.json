@@ -1,13 +1,12 @@
 {
-    "2.4.9": {
+    "2.4.9-alpha": {
         "releases": [
             {
                 "publishedAt":"2025-06-10T14:13:07Z",
                 "tagName":"2.4.9-alpha1",
                 "releaseNotes": "https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9"
             }
-        ],
-        "end-of-support": "2029-04-10"
+        ]
     },
     "2.4.8": {
         "releases": [
