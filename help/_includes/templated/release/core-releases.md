@@ -1,8 +1,7 @@
 # Released versions
 
-## 2.4.9
+## 2.4.9-alpha
 
-Support for the 2.4.9 release line ends on April&nbsp;10, 2029.
 
 <table>
   <thead>
