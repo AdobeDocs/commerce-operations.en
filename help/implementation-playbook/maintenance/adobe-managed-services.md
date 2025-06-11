@@ -48,8 +48,6 @@ Review the following table for a more detailed comparison of key Managed Service
 | Dedicated escalation management | | | |
 | Application monitoring and assistance | | | |
 
-Let me know if you'd like this exported to Excel or another format.
-
 ## Roles and responsibilities
 
 Adobe provides a set of services around the provisioning, development, staging, and production of Adobe Commerce on Managed Services systems. For the development and deployment of the solution to proceed as efficiently as possible, it is important that the customer and partner understand and fulfill their roles, as described below:
