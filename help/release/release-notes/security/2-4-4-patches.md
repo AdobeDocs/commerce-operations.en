@@ -176,7 +176,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## 2.4.4-p2
 
-The Adobe Commerce 2.4.4-p2 security release provides fixes for vulnerabilities that have been identified in previous releases. One fix includes the creation of a new configuration setting. The **Require email confirmation if email has been changed** configuration setting lets administrators require email confirmation when an admin user changes their email address. <!-- AC-6292-->
+The Adobe Commerce 2.4.4-p2 security release provides fixes for vulnerabilities that have been identified in previous releases. One fix includes the creation of a new configuration setting. The [!UICONTROL **Require email confirmation if email has been changed**] configuration setting lets administrators require email confirmation when an admin user changes their email address. <!-- AC-6292-->
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
