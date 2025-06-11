@@ -29,15 +29,7 @@ This release includes the following highlights:
 
 * **Cookie limit compatibility**—Resolves a backward-incompatible change involving the `MAX_NUM_COOKIES` constant in the framework. This update restores expected behavior and ensures compatibility for extensions or customizations that interact with cookie limits.<!-- AC-14475 -->
 
-* **Fix for CVE-2024-34104**—Resolves an improper authorization vulnerability.<!-- AC-13917 -->
-
-* **Fix for CVE-2025-47110**—Resolves an email templates vulnerability.<!-- AC-14695 -->
-
->[!BEGINSHADEBOX]
-
-The fix for CVE-2025-47110 is also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) for details.
-
->[!ENDSHADEBOX]
+* **Async operations**—Restricted async operations for overriding previous customers orders.<!-- AC-13917 -->
 
 ## 2.4.7-p5
 
