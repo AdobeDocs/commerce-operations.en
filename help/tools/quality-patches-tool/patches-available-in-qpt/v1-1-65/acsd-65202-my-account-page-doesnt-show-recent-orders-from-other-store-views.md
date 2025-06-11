@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-65202: "My Account" page doesn't show recent orders from other store views'
-description: Apply the ACSD-65202 patch to fix the Adobe Commerce issue where when you go to the customer account page (section {**}**My Account**{**}), you don't see Recent orders placed in another Store View, while when you go to the Order history (section {**}**My Orders**{**}), you see all orders in both Store Views.
+title: 'ACSD-65202: My Account page does not show recent orders from other store views'
+description: Apply the ACSD-65202 patch to fix the Adobe Commerce issue where where the My Account page doesn't display recent orders from other store views within the same store.
 feature: Orders, User Account
 role: Admin, Developer
 ---
 
-# ACSD-65202: "My Account" page doesn't show recent orders from other store views
+# ACSD-65202: [!UICONTROL My Account] page does not show recent orders from other store views
 
-The ACSD-65202 patch fixes the issue where the "My Account" page doesn't display recent orders from other store views within the same store. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65202. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65202 patch fixes the issue where the **[!UICONTROL My Account]** page doesn't display recent orders from other store views within the same store. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65202. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,29 +25,29 @@ The ACSD-65202 patch fixes the issue where the "My Account" page doesn't display
 
 ## Issue
 
-Issue where the "My Account" page doesn't display recent orders from other store views within the same store.
+When you go to the customer account page (section **[!UICONTROL My Account]**), you don't see recent orders placed in another store view. However, when you go to the order history (section *[!UICONTROL My Orders]*), you see all orders in both Store Views.
 
 <u>Steps to reproduce</u>:
 
-1. Install Adobe Commerce
-2. Create a new Store View: code - {**}**second**{**}.
+1. Install Adobe Commerce.
+2. In the *Admin* panel, create a new Store View and enter its code as, *second*, to identify the view.
 3. Create a simple product and reindex.
-4. Create a customer account and place an order in the default Store View: code - {**}**default**{**}.
-5. Go to the My Orders page and check the order is visible in both Store Views, for example:
-1. Default: [https://localhost/pub/default/sales/order/history/]
-1. Second: [https://localhost/pub/second/sales/order/history/] 
+4. Create a customer account and place an order in the default store view whose code is *default*.
+5. Go to the **[!UICONTROL My Orders]** page and check the order is visible in both Store Views, for example:
+  1. Default: [https://localhost/pub/default/sales/order/history/]
+  1. Second: [https://localhost/pub/second/sales/order/history/] 
 
 6. Go to the My Account page in both Store Views:
-1. Default: [https://localhost/pub/default/customer/account/]
-1. Second: [https://localhost/pub/second/customer/account/]
+  1. Default: [https://localhost/pub/default/customer/account/]
+  1. Second: [https://localhost/pub/second/customer/account/]
 
 <u>Expected results</u>:
 
-To see orders in both Store Views like on the Orders page. It's the same Store, only a different Store View.
+You can see orders from both store views on the Orders page. It's the same store, just a different store view.
 
 <u>Actual results</u>:
 
-The behavior is inconsistent. No orders in the Second Store View.
+The behavior is inconsistent. Orders do not appear in the second store view.
 
 ## Apply the patch
 
