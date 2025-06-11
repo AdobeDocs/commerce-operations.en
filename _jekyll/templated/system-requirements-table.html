@@ -12,7 +12,7 @@
 {%- for minor_version in grouped_requirements %}
 {%- assign requirements = minor_version.items %}
 
-{%- assign dependencies = "Composer,Elasticsearch,OpenSearch,MariaDB,MySQL,PHP,RabbitMQ,Redis,Varnish,Apache,nginx,AWS Aurora (MySQL),AWS S3,AWS MQ,AWS ElastiCache,AWS Elasticsearch,AWS OpenSearch" | split: "," %}
+{%- assign dependencies = "Composer,Elasticsearch,OpenSearch,MariaDB,MySQL,PHP,RabbitMQ,Redis,Valkey,Varnish,Apache,nginx,AWS Aurora (MySQL),AWS S3,AWS MQ,AWS ElastiCache,AWS Elasticsearch,AWS OpenSearch" | split: "," %}
 
 <table style="table-layout:auto">
   <thead>
@@ -25,18 +25,27 @@
   </thead>
   <tbody>
     {%- for dependency in dependencies %}
+    {%- assign has_value = false %}
+    {%- for requirement in requirements %}
+      {%- if requirement[1][dependency] %}
+        {%- assign has_value = true %}
+        {%- break %}
+      {%- endif %}
+    {%- endfor %}
+    {%- if has_value %}
     <tr>
       <td><span class="uicontrol">[!DNL {{dependency}}]</span></td>
       {%- for requirement in requirements %}
       <td>
         {%- if requirement[1][dependency] %}
-        {{requirement[1][dependency]}}
+          {{requirement[1][dependency]}}
         {%- else %}
-        --
+          --
         {%- endif %}
       </td>
       {%- endfor %}
     </tr>
+    {%- endif %}
     {%- endfor %}
   </tbody>
 </table>

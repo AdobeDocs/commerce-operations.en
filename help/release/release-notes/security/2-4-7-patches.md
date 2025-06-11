@@ -7,6 +7,38 @@ exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.7-p6
+
+The Adobe Commerce 2.4.7-p6 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+* **MariaDB support**—Added support for MariaDB 10.11.
+
+* **API performance enhancement**—Resolves performance degradation in bulk asynchronous web API endpoints that were introduced after the previous security patch.<!-- AC-14078 -->
+
+* **CMS Blocks access fix**—Resolves an issue where Admin users with restricted permissions (such as merchandising-only access) were unable to view the [!UICONTROL CMS Blocks] listing page. 
+
+  Previously, these users encountered an error due to missing configuration parameters after installing previous security patches.<!-- AC-14087 -->
+
+* **Cookie limit compatibility**—Resolves a backward-incompatible change involving the `MAX_NUM_COOKIES` constant in the framework. This update restores expected behavior and ensures compatibility for extensions or customizations that interact with cookie limits.<!-- AC-14475 -->
+
+* **Fix for CVE-2024-34104**—Resolves an improper authorization vulnerability.<!-- AC-13917 -->
+
+* **Fix for CVE-2025-47110**—Resolves an email templates vulnerability.<!-- AC-14695 -->
+
+>[!BEGINSHADEBOX]
+
+The fix for CVE-2025-47110 is also available as an isolated patch. See the [Knowledge Base article](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) for details.
+
+>[!ENDSHADEBOX]
+
 ## 2.4.7-p5
 
 The Adobe Commerce 2.4.7-p5 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.7.
