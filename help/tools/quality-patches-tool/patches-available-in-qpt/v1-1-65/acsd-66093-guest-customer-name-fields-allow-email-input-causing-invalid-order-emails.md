@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-66093: Guest customer name fields allow email input causing invalid order emails'
-description: Apply the ACSD-66093 patch to fix the Adobe Commerce issue where it is possible to enter email addresses into the Guest customer First Name and Last Name fields and send invalid order confirmation emails.
+description: Apply the ACSD-66093 patch to fix the Adobe Commerce issue where it is possible to enter email addresses into the Guest customer **[!UICONTROL First Name]** and **[!UICONTROL Last Name]** fields and send invalid order confirmation emails.
 feature: Checkout
 role: Admin, Developer
 ---
@@ -32,21 +32,21 @@ Issue where email addresses could be entered into the guest customer's First and
 1. Add any product to the cart by Guest customer.
 2. Go to Checkout.
 3. Fill in the Email Address with "test1@gmail.co".
-4. Fill First Name with "<test2@gmail.co>".
-5. Fill Last Name with "<test3@gmail.co>".
+4. Fill **[!UICONTROL First Name]** with "<test2@gmail.co>".
+5. Fill **[!UICONTROL Last Name]** with "<test3@gmail.co>".
 6. Fill in other required fields.
 7. Place order.
 
 <u>Expected results</u>:
 
-"First Name is not valid!" and "First Name is not valid!" validation messages are displayed when "Place Order" button is clicked.
+*First Name is not valid!* and *First Name is not valid!* validation messages are displayed when Place Order button is clicked.
 Order is not placed.
 
 <u>Actual results</u>:
 
 Order is placed.
-First Name and Last Name fields are saved as entered.
-Order confirmation email is sent to all three emails: test1@gmail.co, test2@gmail.co and test3@gmail.co.
+**[!UICONTROL First Name]** and **[!UICONTROL Last Name]** fields are saved as entered.
+Order confirmation email is sent to all three emails: test1@gmail.co, test2@gmail.co, and test3@gmail.co.
 
 ## Apply the patch
 
