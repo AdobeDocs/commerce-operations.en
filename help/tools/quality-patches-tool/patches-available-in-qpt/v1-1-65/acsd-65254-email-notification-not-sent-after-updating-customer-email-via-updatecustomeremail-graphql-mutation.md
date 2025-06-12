@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-65254: email notification not sent after updating customer email via `updateCustomerEmail` [!DNL GraphQL] mutation'
+title: 'ACSD-65254: Email notification not sent after updating customer email via `updateCustomerEmail` [!DNL GraphQL] mutation'
 description: Apply the ACSD-65254 patch to fix the Adobe Commerce issue where email notifications were not sent to customers after successfully updating their email addresses on their accounts using the `updateCustomerEmail` [!DNL GraphQL] mutation.
 feature: GraphQL, User Account
 role: Admin, Developer
 ---
 
-# ACSD-65254: email notification not sent after updating customer email via `updateCustomerEmail` [!DNL GraphQL] mutation
+# ACSD-65254: Email notification not sent after updating customer email via `updateCustomerEmail` [!DNL GraphQL] mutation
 
 The ACSD-65254 patch fixes the issue where email notifications weren't sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` [!DNL GraphQL] mutation. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65254. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
