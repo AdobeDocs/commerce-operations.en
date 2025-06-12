@@ -25,11 +25,11 @@ The ACSD-66093 patch fixes the issue where email addresses could be entered into
 
 ## Issue
 
-Issue where email addresses could be entered into the guest customer's First and Last Name fields, resulting in invalid order confirmation emails.
+Issue where email addresses could be entered into the guest customer's **[!UICONTROL First Name]** and **[!UICONTROL Last Name]** fields, resulting in invalid order confirmation emails.
 
 <u>Steps to reproduce</u>:
 
-1. Add any product to the cart by Guest customer.
+1. The customer adds a product to the cart.
 2. Go to Checkout.
 3. Fill in the Email Address with "test1@gmail.co".
 4. Fill **[!UICONTROL First Name]** with "<test2@gmail.co>".
