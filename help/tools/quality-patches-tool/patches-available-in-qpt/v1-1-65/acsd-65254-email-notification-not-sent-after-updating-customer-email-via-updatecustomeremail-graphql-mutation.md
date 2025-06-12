@@ -25,7 +25,7 @@ The ACSD-65254 patch fixes the issue where email notifications weren't sent to c
 
 ## Issue
 
-Issue where email notifications weren't sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` [!DNL GraphQL] mutation.
+Email notifications were not sent to customers after updating their email addresses using the `updateCustomerEmail` [!DNL GraphQL] mutation.
 
 <u>Steps to reproduce</u>:
 
