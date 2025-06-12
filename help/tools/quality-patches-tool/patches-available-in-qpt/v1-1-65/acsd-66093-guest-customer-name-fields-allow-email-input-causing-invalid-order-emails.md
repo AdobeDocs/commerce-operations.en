@@ -7,7 +7,7 @@ role: Admin, Developer
 
 # ACSD-66093: Guest customer name fields allow email input causing invalid order emails
 
-The ACSD-66093 patch fixes the issue where email addresses could be entered into the guest customer's First and Last Name fields, resulting in invalid order confirmation emails. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-66093. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-66093 patch fixes the issue where email addresses could be entered into the guest customer's **[!UICONTROL First Name]** and **[!UICONTROL Last Name]** fields, resulting in invalid order confirmation emails. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-66093. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -39,8 +39,7 @@ Issue where email addresses could be entered into the guest customer's **[!UICON
 
 <u>Expected results</u>:
 
-*First Name is not valid!* and *First Name is not valid!* validation messages are displayed when Place Order button is clicked.
-Order is not placed.
+Validation messages should appear indicating that the **[!UICONTROL First Name]** and **[!UICONTROL Last Name]** fields are not valid like *First Name is not valid! and First Name is not valid!* and the order should not be placed.
 
 <u>Actual results</u>:
 
