@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-65254: Email notification not sent after updating customer email via `updateCustomerEmail` GraphQL mutation'
+title: 'ACSD-65254: email notification not sent after updating customer email via `updateCustomerEmail` [!DNL GraphQL] mutation'
 description: Apply the ACSD-65254 patch to fix the Adobe Commerce issue where email wasn't sent to customers after successfully updating their email addresses on their accounts using updateCustomerEmail [!DNL GraphQL] mutation.
 feature: GraphQL, User Account
 role: Admin, Developer
 ---
 
-# ACSD-65254: Email notification not sent after updating customer email via `updateCustomerEmail` GraphQL mutation
+# ACSD-65254: email notification not sent after updating customer email via `updateCustomerEmail` [!DNL GraphQL] mutation
 
-The ACSD-65254 patch fixes the issue where email notifications weren't sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` GraphQL mutation. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65254. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65254 patch fixes the issue where email notifications weren't sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` [!DNL GraphQL] mutation. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65254. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACSD-65254 patch fixes the issue where email notifications weren't sent to c
 
 ## Issue
 
-Issue where email notifications weren't sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` GraphQL mutation.
+Issue where email notifications weren't sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` [!DNL GraphQL] mutation.
 
 <u>Steps to reproduce</u>:
 
@@ -73,12 +73,11 @@ mutation {
 
 <u>Expected results</u>:
 
-Customers should successfully receive email notifications after updating their email addresses.
+Customers should receive email notifications after updating the email addresses on their accounts.
 
 <u>Actual results</u>:
 
-Only one single email for subscription to a new email is sent.
-Changed email address confirmation email is not sent.
+Only a subscription email is sent to the new address; the confirmation email for the email address change is not sent.
 
 ## Apply the patch
 
