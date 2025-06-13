@@ -31,44 +31,44 @@ Email notifications were not sent to customers after updating their email addres
 
 1. Create user using below mutation:
 
-```
-mutation {
-	createCustomer(
-		input: {
-			firstname: "Test"
-			lastname: "User"
-			email: "test@test.com"
-			password: "Admin@123"
-			is_subscribed: true
-		}
-	) {
-		customer {
-			created_at
-		}
-	}
-}
-```
-
-2. Generate a token for the previously created user and use as a bearer token:
-
-```
-mutation {
-  generateCustomerToken(email: "test@test.com", password: "Admin@123") {
-    token
-  }
-}
-```
-
-3. Try to update the email for the previously created user using the last created Bearer token:
-
-```
-mutation {
-	updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
-		customer {
-			email
+	```
+	mutation {
+		createCustomer(
+			input: {
+				firstname: "Test"
+				lastname: "User"
+				email: "test@test.com"
+				password: "Admin@123"
+				is_subscribed: true
+			}
+		) {
+			customer {
+				created_at
+			}
 		}
 	}
-}
+	```
+
+1. Generate a token for the previously created user and use as a bearer token:
+
+	```
+	mutation {
+	generateCustomerToken(email: "test@test.com", password: "Admin@123") {
+		token
+	}
+	}
+	```
+
+1. Try to update the email for the previously created user using the last created Bearer token:
+
+	```
+	mutation {
+		updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
+			customer {
+				email
+			}
+		}
+	}
 ```
 
 <u>Expected results</u>:
