@@ -1,10 +1,3 @@
----
-title: 'ACSD-64813: Unassigning categories in [!DNL B2B] shared catalog via REST API is slow'
-description: Apply the ACSD-64813 patch to fix the Adobe Commerce issue where unassigning categories in a [!DNL B2B] shared catalog via the REST API is slow.
-feature: B2B, REST, Categories
-role: Admin, Developer
----
-
 # ACSD-64813: Unassigning categories in [!DNL B2B] shared catalog via REST API is slow
 
 The ACSD-64813 patch fixes the issue where unassigning categories in a [!DNL B2B] shared catalog via the REST API is slow. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-64813. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
@@ -22,7 +15,6 @@ The ACSD-64813 patch fixes the issue where unassigning categories in a [!DNL B2B
 >[!NOTE]
 >
 >The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
-
 ## Issue
 
 Unassigning categories in a [!DNL B2B] shared catalog via the REST API takes a long time.
@@ -35,25 +27,24 @@ Unassigning categories in a [!DNL B2B] shared catalog via the REST API takes a l
 1. Create a new category under the Default root category and assign a few products to it.
 1. Use the admin token to call the REST API endpoint `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` with the new category ID.
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
-
+	  ```
+	  {
+	    "categories": [
+	      { "id": <new category id> }
+	    ]
+	  }
+	  ```
 1. Confirm the response is *true*.
 1. Run `bin/magento cron:run` twice or perform a reindex.
 1. Use the admin token to execute the following REST API call with the new category ID: `rest/all/V1/sharedCatalog/<shared_catalog_id>/unassignCategories`.
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+	  ```
+	  {
+	    "categories": [
+	      { "id": <new category id> }
+	    ]
+	  }
+	  ```
 
 <u>Expected results</u>:
 
