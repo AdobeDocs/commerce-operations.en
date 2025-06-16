@@ -39,7 +39,7 @@ Issue where email addresses could be entered into the guest customer's **[!UICON
 
 <u>Expected results</u>:
 
-Validation messages should appear indicating that the **[!UICONTROL First Name]** and **[!UICONTROL Last Name]** fields are not valid like *First Name is not valid! and First Name is not valid!* and the order should not be placed.
+Validation messages should appear indicating that the **[!UICONTROL First Name]** and **[!UICONTROL Last Name]** fields are not valid like *First Name is not valid! and Last Name is not valid!* and the order should not be placed.
 
 <u>Actual results</u>:
 
