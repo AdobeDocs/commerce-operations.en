@@ -82,7 +82,7 @@ Each Adobe Commerce Foundation alpha and beta releases include all the changes d
 - GraphQL improvements
 - General quality bug fixes
 - Community contributions
-- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Naming convention and schedule
 
@@ -102,7 +102,7 @@ See the [release schedule](schedule.md) for the list of upcoming public alpha an
 
 #### Release access
 
-Adobe Commerce alpha and beta releases are distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
+Adobe Commerce alpha and beta releases are distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is available on [GitHub](https://github.com/magento/magento2).
 
 See [Composer installation quick start](../installation/composer.md) for more details.
 
@@ -110,6 +110,6 @@ See [Composer installation quick start](../installation/composer.md) for more de
 
 Adobe does not provide the standard Adobe Support Service for alpha and beta releases.
 
-To submit feedback related to alpha and beta releases, follow our [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
+To submit feedback related to alpha and beta releases, follow the [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
 
-Our internal teams will monitor all critical issues reported against the latest alpha or beta release and prioritize them to be resolved prior to the GA release date.
+Adobe monitors all critical issues reported against the latest alpha or beta release and prioritizes them to be resolved prior to the GA release date.
