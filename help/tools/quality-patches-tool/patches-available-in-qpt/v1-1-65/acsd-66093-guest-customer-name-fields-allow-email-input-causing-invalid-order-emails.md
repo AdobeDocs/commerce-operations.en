@@ -29,7 +29,7 @@ Issue where email addresses could be entered into the guest customer's **[!UICON
 
 <u>Steps to reproduce</u>:
 
-1. The customer adds a product to the cart.
+1. Add products to the cart as a guest customer.
 2. Go to checkout.
 3. Fill in the Email Address with "test1@gmail.co".
 4. Fill **[!UICONTROL First Name]** with "<test2@gmail.co>".
