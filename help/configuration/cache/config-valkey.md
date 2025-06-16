@@ -2,7 +2,6 @@
 title: Configure Valkey
 description: Get an overview of Valkey features and start your Valkey configuration.
 feature: Configuration, Cache
-exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
 ---
 # Configure Valkey
 

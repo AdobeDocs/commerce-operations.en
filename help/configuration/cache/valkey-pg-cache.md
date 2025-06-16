@@ -2,7 +2,6 @@
 title: Use Valkey for default cache
 description: Learn to configure Valkey as the default cache for Adobe Commerce.
 feature: Configuration, Cache
-exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
 ---
 # Use Valkey for default cache
 
@@ -95,6 +94,7 @@ As a result of the two example commands, Commerce adds lines similar to the foll
     ]
 ],
 ```
+
 ## New Valkey cache implementation
 
 As of Commerce 2.4.9, it is recommended to use the Valkey cache implementation: `\Magento\Framework\Cache\Backend\Valkey`.

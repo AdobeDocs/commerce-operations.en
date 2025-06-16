@@ -2,7 +2,6 @@
 title: Use Valkey for session storage
 description: Learn how to configure Valkey for session storage.
 feature: Configuration, Cache
-exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 ---
 # Use Valkey for session storage
 
@@ -118,6 +117,7 @@ Sample session-storage output:
 ```bash
 valkey-cli ping
 ```
+
 `PONG` should be the response.
 
 If both commands succeeded, Valkey is set up properly.
