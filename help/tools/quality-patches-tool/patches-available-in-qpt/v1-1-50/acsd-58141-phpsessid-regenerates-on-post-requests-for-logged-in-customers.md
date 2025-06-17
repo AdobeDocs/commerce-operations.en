@@ -7,7 +7,7 @@ exl-id: c188c215-204c-489f-8703-4c81ca8703b7
 ---
 # ACSD-58141: PHPSESSID regenerates on [!DNL POST] requests for logged-in customers if the L2 Redis cache is enabled
 
-The ACSD-58141 patch fixes the issue where `PHPSESSID` regenerates on [!DNL POST] requests for a logged-in customer if the L2 Redis cache is enabled, and the customer is updated from Admin. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 is installed. The patch ID is ACSD-58141. Please note that the issue was fixed in Adobe Commerce 2.4.7.
+The ACSD-58141 patch fixes the issue where `PHPSESSID` regenerates on [!DNL POST] requests for a logged-in customer if the L2 Redis cache is enabled, and the customer is updated from Admin. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.50 is installed. The patch ID is ACSD-58141. Please note that the issue was fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -62,7 +62,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

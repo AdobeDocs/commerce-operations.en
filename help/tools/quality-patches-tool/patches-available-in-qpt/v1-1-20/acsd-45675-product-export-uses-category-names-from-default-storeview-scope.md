@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-45675: Product export uses category names from default store view scope'
-description: The ACSD-45675 patch fixes the issue where the product export uses category names from the default store view scope. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 is installed. The patch ID is ACSD-45675. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+description: The ACSD-45675 patch fixes the issue where the product export uses category names from the default store view scope. This patch is available when the [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20 is installed. The patch ID is ACSD-45675. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
 ---
 # ACSD-45675: Product export uses category names from default store view scope
 
-The ACSD-45675 patch fixes the issue where the product export uses category names from the default store view scope. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 is installed. The patch ID is ACSD-45675. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+The ACSD-45675 patch fixes the issue where the product export uses category names from the default store view scope. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20 is installed. The patch ID is ACSD-45675. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
