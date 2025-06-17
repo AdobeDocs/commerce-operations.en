@@ -27,7 +27,7 @@ To optimize the Valkey instance for your requirements, you get best results by u
 
 For sessions, Adobe recommends that you enable persistence to copy Valkey data to disk using either of the following persistence options: regular Valkey Database Backup (RDB) snapshots, or Append Only File (AOF) persistence logs.
 
-- **Redis Database Backup** (RDB) snapshots store the complete database in a dump file after a given time, when a minimum number of keys have changed since the last save. Use the `save` setting inside the `valkey.conf` file to configure this setting.
+- **RDB** (Valkey Database) snapshots store the complete database in a dump file after a given time, when a minimum number of keys have changed since the last save. Use the `save` setting inside the `valkey.conf` file to configure this setting.
 
 - **Append Only File** (AOF) stores each write operation sent to Valkey in a journal file. Valkey reads this file on restart only and uses it to restore the original dataset.
 
