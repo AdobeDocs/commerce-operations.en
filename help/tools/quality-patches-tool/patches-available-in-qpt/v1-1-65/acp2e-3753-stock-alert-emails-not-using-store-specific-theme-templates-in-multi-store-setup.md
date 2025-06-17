@@ -1,6 +1,6 @@
 ---
 title: 'ACP2E-3753: Stock alert emails not using store-specific theme templates in multi-store setup'
-description: Apply the ACP2E-3753 patch to fix the Adobe Commerce issue where theme-level changes are not reflected in a stock alert email.
+description: Apply the ACP2E-3753 patch to fix the Adobe Commerce issue where product alert emails in a multi-store setup are always sent using the default theme, regardless of the store or theme configuration.
 feature: Themes, Personalization
 role: Admin, Developer
 ---
@@ -25,21 +25,22 @@ The ACP2E-3753 patch fixes the issue where product alert emails in a multi-store
 
 ## Issue
 
-Issue where product alert emails in a multi-store setup were always sent using the default theme, regardless of the store or theme configuration.
+Product alert emails in a multi-store setup are always sent using the default theme, regardless of the store or theme configuration.
 
 <u>Steps to reproduce</u>:
 
-1. Created 2 websites, stores and store views (like Taiwan and Japan).
-1. Create 2 separate themes and assign these to different stores.
+1. Create two websites, stores and store views.
+1. Create two separate themes and assign these to different stores.
 1. Product alert setting is the default scope that runs every minute.
-1. Override/add some content to the stock.phtml file for both themes. Example of the file location:
+1. Override/add some content to the `stock.phtml` file for both themes. Example of the file location:
 
-```
- app\design\frontend\Adobe\Taiwan\Magento_ProductAlert\templates\email\stock.phtml app\design\frontend\Adobe\Japan\Magento_ProductAlert\templates\email\stock.phtml
-```
+    ```
+    app\design\frontend\Adobe\Taiwan\Magento_ProductAlert\templates\email\stock.phtml
+    app\design\frontend\Adobe\Japan\Magento_ProductAlert\templates\email\stock.phtml
+    ```
 
- # Create a user for each store and subscribe to the product stock alert.
- # Trigger the product stock alert to send the emails.
+ 1. Create a user for each store and subscribe to the product stock alert.
+ 1. Trigger the product stock alert to send the emails.
 
 <u>Expected results</u>:
 
@@ -47,7 +48,7 @@ The email should include the theme-level changes.
 
 <u>Actual results</u>:
 
-The emails do not include the templates set in the respective website/store.
+The emails don't include the templates set in the respective website/store.
 
 ## Apply the patch
 
