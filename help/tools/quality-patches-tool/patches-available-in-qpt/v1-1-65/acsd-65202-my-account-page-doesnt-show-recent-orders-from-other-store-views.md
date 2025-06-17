@@ -34,12 +34,12 @@ When you go to the customer account page (section **[!UICONTROL My Account]**), 
 1. Create a simple product and reindex.
 1. Create a customer account and place an order in the default store view whose code is *default*.
 1. Go to the **[!UICONTROL My Orders]** page and check the order is visible in both Store Views, for example:
-  1. Default: [https://localhost/pub/default/sales/order/history/]
-  1. Second: [https://localhost/pub/second/sales/order/history/] 
+  1. Default: https://localhost/pub/default/sales/order/history/
+  1. Second: https://localhost/pub/second/sales/order/history/
 
 1. Go to the **[!UICONTROL My Account]** page in both Store Views:
-  1. Default: [https://localhost/pub/default/customer/account/]
-  1. Second: [https://localhost/pub/second/customer/account/]
+  1. Default: https://localhost/pub/default/customer/account/
+  1. Second: https://localhost/pub/second/customer/account/
 
 <u>Expected results</u>:
 
