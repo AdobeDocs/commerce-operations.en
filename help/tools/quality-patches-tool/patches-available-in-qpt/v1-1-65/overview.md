@@ -9,7 +9,7 @@ role: Admin, Developer
 This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.65.
 
 QPT v1.1.65 includes the following patches:
-1. **[ACP2E-3753](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup.md)**: Stock alert emails not using store-specific theme templates in multi-store setup.
+1. **ACP2E-3753**: Stock alert emails not using store-specific theme templates in multi-store setup.
 1. **ACSD-64118**: Concurrent product save requests for same product cause data inconsistency and duplicate entries.
 1. **ACSD-64813**: Unassigning categories in B2B shared catalog via REST API is slow.
 1. **ACSD-65202**: **[!UICONTROL My Account]** page does not show recent orders from other store views.
