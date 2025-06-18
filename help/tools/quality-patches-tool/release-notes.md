@@ -17,14 +17,14 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 
 ## v1.1.66 {#v1-1-66}
 
-* **ACP2E-3789** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where updating a product via WebAPI duplicated media files when a media ID was provided.
-* **ACP2E-3918** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where checkout failed for logged-in company customers using in-store pickup without a default billing address.
-* **ACSD-65750** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where the GraphQL "route" query returned products out of order in Page Builder Products content types.
-* **ACSD-65775** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the REST API order details returned incorrect "base_row_total" and "row_total" values when multiple quantities of the same item were ordered.
-* **ACSD-65777** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the "types" field was missing for product image types in the `MediaGallery` GraphQL request.
+* **ACP2E-3789** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where updating a product via [!DNL WebAPI] duplicated media files when a media ID was provided.
+* **ACP2E-3918** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where the checkout failed for logged-in company customers using in-store pickup without a default billing address.
+* **ACSD-65750** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where the GraphQL `route` query returned products out of order in the Page Builder Products content types.
+* **ACSD-65775** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the [!DNL REST] API order details returned incorrect `base_row_total` and `row_total` values when multiple quantities of the same item were ordered.
+* **ACSD-65777** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the `types` field was missing for product image types in the `MediaGallery` GraphQL request.
 * **ACSD-65848** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the total product count in a category was calculated using a sub-select, by refactoring the method to use a join instead.
-* **ACSD-65913** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where OpenSearch threw an illegal_argument_exception for categories with products having the same price.
-* **ACSD-66041** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where Ireland (IE) postcodes were not searchable for pickup locations due to a missing CountryID.
+* **ACSD-65913** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where [!DNL OpenSearch] threw an *illegal_argument_exception* error for categories with products having the same price.
+* **ACSD-66041** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where Ireland (IE) postcodes weren't searchable for pickup locations due to a missing `CountryID`.
 * **ACSD-66212** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where importing a customer CSV file twice caused failures on the second and subsequent attempts.
 * Versions updated: **MDVA-12304**, **MDVA-19640**, **ACP2E-3841**, **ACSD-65100**, **ACSD-65787**, **ACP2E-3753**, **ACSD-65202**, **ACSD-65331**, **ACSD-65822**
 
