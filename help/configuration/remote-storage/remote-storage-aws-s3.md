@@ -38,6 +38,10 @@ The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage ser
 
 ## Configure Nginx
 
+>[!NOTE]
+>
+>This approach is not applicable to Commerce Cloud instances. Nginx cannot be configured on Cloud. To set up the remote storage on Cloud please use guidelines in this [document](cloud-support.md).
+
 Nginx requires additional configuration to perform Authentication with the `proxy_pass` directive. Add the following proxy information to the `nginx.conf` file:
 
 >nginx.conf
