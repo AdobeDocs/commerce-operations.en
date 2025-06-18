@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-65822: Bundle and configurable product quantities not reflected correctly in "Shopping Cart"'
-description: Apply the ACSD-65822 patch to fix the Adobe Commerce issue where the quantity was showing as 0 in the Admin customer shopping cart section when adding bundle products.
+title: 'ACSD-65822: Bundle and Configurable product quantities not reflected correctly in the shopping cart'
+description: Apply the ACSD-65822 patch to fix the Adobe Commerce issue where the quantity appeared as 0 in the customer shopping cart section in the admin panel when adding bundle products.
 feature: Admin Workspace, Checkout, Orders
 role: Admin, Developer
 ---
 
-# ACSD-65822: Bundle and configurable product quantities not reflected correctly in "Shopping Cart"
+# ACSD-65822: Bundle and Configurable product quantities not reflected correctly in the [!UICONTROL Shopping Cart]
 
-The ACSD-65822 patch fixes the issue where bundle and configurable product quantities don't display correctly in the "Shopping Cart" section under Customer Activities. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65822. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65822 patch fixes the issue where bundle and configurable product quantities are not displayed correctly in the **[!UICONTROL Shopping Cart]** section under *[!UICONTROL Customer's Activities]*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65822. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,24 +25,24 @@ The ACSD-65822 patch fixes the issue where bundle and configurable product quant
 
 ## Issue
 
-Issue where bundle and configurable product quantities don't display correctly in the "Shopping Cart" section under Customer Activities.
+The bundle and configurable product quantities are not displayed correctly in the **[!UICONTROL Shopping Cart]** section under *[!UICONTROL Customer's Activities]*.
 
 <u>Steps to reproduce</u>:
 
-1. Create a user in Frontend
-2. Create Bundle product
-3. As logged in user, add the bundle products to the shopping cart with some quantity
-4. Go to admin > customer and select the customer created in step1
-5. click on new order
-6. On left hand side you can see the customer activities Shopping cart section and you will be able to see the bundle products  qty
+1. Create a user on the storefront.
+2. Create a **[!UICONTROL Bundle product]** in the admin panel.
+3. On the storefront, as a logged-in user, add the bundle product to the shopping cart with a specified quantity.
+4. In the *Admin* panel, go to **[!UICONTROL Customers]** and click **[!UICONTROL Edit]** for the customer created in Step 1.
+5. Click **[!UICONTROL Create Order]**.
+6. On the left-hand side, under *[!UICONTROL Customer's Activities]*, check the **[!UICONTROL Shopping Cart]** section. You should see the bundle product along with the selected quantity.
 
 <u>Expected results</u>:
 
-Bundle item qty should show be same as frontend
+The bundle item quantity should match the quantity shown on the storefront.
 
 <u>Actual results</u>:
 
-Bundle item qty showing as 0
+The bundle item quantity is displayed as 0.
 
 ## Apply the patch
 
