@@ -4,8 +4,8 @@ description: Apply the ACSD-65202 patch to fix the Adobe Commerce issue where wh
 feature: Orders, User Account
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 031f12f2-1b70-4cbc-92a0-8eb561e34067
 ---
-
 # ACSD-65202: [!UICONTROL My Account] page does not show recent orders from other store views
 
 The ACSD-65202 patch fixes the issue where the **[!UICONTROL My Account]** page does not display recent orders from other store views within the same store. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65202. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.

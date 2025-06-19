@@ -4,8 +4,8 @@ description: Apply the ACSD-65540 patch to fix the Adobe Commerce issue where SQ
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
+exl-id: a3e60742-60d4-41e3-93c3-506cc5a1c4a3
 ---
-
 # ACSD-65540: SQL error occurs due to missing `REGEXP_LIKE` function in `company_structure` updates
 
 The ACSD-65540 patch fixes the issue where SQL error occurs due to missing `REGEXP_LIKE` function in `company_structure` updates. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 is installed. The patch ID is ACSD-65540.
