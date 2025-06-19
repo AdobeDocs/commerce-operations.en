@@ -4,6 +4,7 @@ description: Apply the ACSD-49748 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Communications, Marketing Tools
 role: Admin
 exl-id: 03dad66c-4691-421e-8c80-eca12c60175c
+type: Troubleshooting
 ---
 # ACSD-49748: Email invitations cannot be sent
 

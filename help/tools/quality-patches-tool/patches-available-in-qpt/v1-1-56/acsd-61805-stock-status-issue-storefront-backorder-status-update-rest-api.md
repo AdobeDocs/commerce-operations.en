@@ -4,6 +4,7 @@ description: Apply the ACSD-61805 patch to fix the Adobe Commerce issue where pr
 feature: REST, Catalog Management, Inventory
 role: Admin, Developer
 exl-id: ff85e747-6394-43db-a02a-87b1e5e59f00
+type: Troubleshooting
 ---
 # ACSD-61805: Fixes stock issue on storefront after backorder status update via REST API
 

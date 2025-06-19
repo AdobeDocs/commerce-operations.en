@@ -4,6 +4,7 @@ description: Apply the ACSD-64523 patch to fix the issue where the REST endpoint
 feature: REST, Products, Admin Workspace
 role: Admin, Developer
 exl-id: 21aecd6d-06e4-4f2b-904a-27487ba74968
+type: Troubleshooting
 ---
 # ACSD-64523: REST Endpoint fails to validate mandatory fields
 

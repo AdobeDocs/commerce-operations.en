@@ -4,6 +4,7 @@ description: Apply the ACSD-64431 patch to fix the Adobe Commerce issue where th
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
 exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
+type: Troubleshooting
 ---
 # ACSD-64431: The "placeOrder" mutation with coupon code in the request throws an internal server error
 

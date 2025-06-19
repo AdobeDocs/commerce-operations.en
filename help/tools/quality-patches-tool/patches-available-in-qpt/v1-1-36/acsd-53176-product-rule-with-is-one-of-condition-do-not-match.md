@@ -4,6 +4,7 @@ description: Apply the ACSD-53176 patch to fix the Adobe Commerce issue where th
 feature: Marketing Tools
 role: Admin
 exl-id: 8260c6ac-3ca2-4361-9e36-a8a58468fa95
+type: Troubleshooting
 ---
 # ACSD-53176: Product rule with `is one of` condition do not match
 

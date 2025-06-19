@@ -4,6 +4,7 @@ description: Apply the ACSD-55305 patch to fix the Adobe Commerce issue where [!
 feature: Companies, B2B
 role: Admin, Developer
 exl-id: eeb2b136-022f-42d5-85e2-85537f4677d6
+type: Troubleshooting
 ---
 # ACSD-55305: Popup freeze during company user editing in [!UICONTROL My Account]
 

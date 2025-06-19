@@ -4,6 +4,7 @@ description: The MDVA-39986 patch fixes the issue where users are unable to plac
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: bd4e72fe-278d-40ae-98d3-1eeca0a0e70c
+type: Troubleshooting
 ---
 # MDVA-39986: Unable to place orders in admin in Safari browser on macOS
 

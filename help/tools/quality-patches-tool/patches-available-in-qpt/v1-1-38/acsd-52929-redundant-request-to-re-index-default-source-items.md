@@ -4,6 +4,7 @@ description: Apply the ACSD-52929 patch to fix the Adobe Commerce issue where th
 feature: Configuration, Inventory
 role: Admin, Developer
 exl-id: 904aed0e-a6cd-4a0f-949d-bb32fcd77356
+type: Troubleshooting
 ---
 # ACSD-52929: Redundant request to re-index default source items
 

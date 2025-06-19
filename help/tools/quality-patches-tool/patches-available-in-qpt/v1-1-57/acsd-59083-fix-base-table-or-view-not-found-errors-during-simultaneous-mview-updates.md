@@ -4,6 +4,7 @@ description: Apply the ACSD-59083 patch to fix the Adobe Commerce issue where ce
 feature: System
 role: Admin, Developer
 exl-id: a0fa2ac9-e61f-43d5-81ff-edf178b1abc0
+type: Troubleshooting
 ---
 # ACSD-59083: *Base table or view not found* errors during simultaneous `mview` updates
 

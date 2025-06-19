@@ -3,6 +3,7 @@ title: 'ACSD-65684: Upgrading Magento_Company in B2B 1.5.2 is slow with over 100
 description: Apply the ACSD-65684 patch to fix the Adobe Commerce issue where upgrading the Magento_Company module in B2B 1.5.2 takes too long due to processing a large number of records (~100,000+) in the company_structure table.
 feature: B2B
 role: Admin, Developer
+type: Troubleshooting
 exl-id: 1b45ebe4-4fb4-4fb5-b107-a2d44ec784e0
 ---
 # ACSD-65684: Upgrading `Magento_Company` in [!DNL B2B] 1.5.2 is slow with over 100,000 records in `company_structure`

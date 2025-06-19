@@ -4,6 +4,7 @@ description: The MDVA-39966 patch solves the issue where the user is unable to d
 feature: Deploy
 role: Admin
 exl-id: 03bb0002-9742-4f26-bb41-1b46f0a3573c
+type: Troubleshooting
 ---
 # MDVA-39966: Unable to deploy locales other than en_US
 

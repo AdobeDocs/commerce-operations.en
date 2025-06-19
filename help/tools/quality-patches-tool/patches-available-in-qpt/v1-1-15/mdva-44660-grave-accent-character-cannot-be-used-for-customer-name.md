@@ -4,6 +4,7 @@ description: The MDVA-44660 patch fixes the issue where the grave accent charact
 feature: Variables
 role: Admin
 exl-id: 603161bf-fac3-4571-b872-d98de1bdf6b4
+type: Troubleshooting
 ---
 # MDVA-44660: Grave accent character (&grave;) cannot be used for customer's name
 

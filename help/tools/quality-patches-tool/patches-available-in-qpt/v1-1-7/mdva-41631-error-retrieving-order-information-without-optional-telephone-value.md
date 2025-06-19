@@ -4,6 +4,7 @@ description: The MDVA-41631 patch fixes the issue where users get an error retri
 feature: Orders
 role: Admin
 exl-id: e56cea59-ffc1-4520-85ca-136cda613884
+type: Troubleshooting
 ---
 # MDVA-41631: Error retrieving order information without optional "telephone" value
 

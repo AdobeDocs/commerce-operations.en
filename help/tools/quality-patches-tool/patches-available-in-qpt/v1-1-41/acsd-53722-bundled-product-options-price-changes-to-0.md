@@ -4,6 +4,7 @@ description: Apply the ACSD-53722 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin, Developer
 exl-id: 2e974a6a-0c79-442f-9b45-b4edf831a052
+type: Troubleshooting
 ---
 # ACSD-53722: Bundled product options price changes to $0
 

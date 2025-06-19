@@ -4,6 +4,7 @@ description: The MDVA-37364 patch solves the issue where the custom customer att
 feature: Attributes, Cache
 role: Developer
 exl-id: 5bd64004-06c4-49fd-8e56-e2c44008ca82
+type: Troubleshooting
 ---
 # MDVA-37364: Custom customer attribute of date type breaks Grid UI
 

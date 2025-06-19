@@ -4,6 +4,7 @@ description: Apply the ACSD-53309 patch to fix the Adobe Commerce issue where ta
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer
 exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
+type: Troubleshooting
 ---
 # ACSD-53309: Incomplete tax application for customizable options and '[!UICONTROL Regular Price]' label
 

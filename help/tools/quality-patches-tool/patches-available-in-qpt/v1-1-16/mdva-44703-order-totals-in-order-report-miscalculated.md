@@ -4,6 +4,7 @@ description: The MDVA-44703 patch fixes the issue where the order totals in the 
 feature: Orders
 role: Admin
 exl-id: bdd38ba6-f282-4026-8f65-b76543859123
+type: Troubleshooting
 ---
 # MDVA-44703: Order totals in Orders report are miscalculated
 

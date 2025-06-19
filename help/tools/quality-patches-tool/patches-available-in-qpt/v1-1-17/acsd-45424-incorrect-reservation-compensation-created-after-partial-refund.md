@@ -4,6 +4,7 @@ description: The ACSD-45424 patch fixes the issue where an incorrect reservation
 feature: Orders
 role: Admin
 exl-id: 94435816-9f4a-40f9-be80-05836ed7781f
+type: Troubleshooting
 ---
 # ACSD-45424: Incorrect reservation compensation created after partial refund
 

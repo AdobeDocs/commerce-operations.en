@@ -4,6 +4,7 @@ description: Apply the ACSD-48587 patch to fix the Adobe Commerce issue where HT
 feature: Admin Workspace, CMS, Orders, Products
 role: Admin
 exl-id: c3e31835-03be-46b4-a080-09edf55b5b4e
+type: Troubleshooting
 ---
 # ACSD-48587: product widget not working with SKUs containing HTML characters
 

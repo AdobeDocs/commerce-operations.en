@@ -4,6 +4,7 @@ description: Apply the ACSD-51890 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin
 exl-id: db69ccdc-c66e-4bdb-9783-772f2af0d33f
+type: Troubleshooting
 ---
 # ACSD-51890: **[!UICONTROL Submit Review]** button can be clicked multiple times without **[!DNL Google reCAPTCHA v3]** validation
 

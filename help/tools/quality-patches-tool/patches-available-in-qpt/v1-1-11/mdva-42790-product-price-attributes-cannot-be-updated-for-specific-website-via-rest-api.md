@@ -4,6 +4,7 @@ description: The MDVA-42790 patch fixes the issue where users are not able to up
 feature: REST, Attributes, Orders, Products
 role: Admin
 exl-id: bb8dc764-d2d5-4e00-884a-2b4c1a567f58
+type: Troubleshooting
 ---
 # MDVA-42790: Product price attributes cannot be updated for specific website via REST API
 

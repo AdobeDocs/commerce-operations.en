@@ -4,6 +4,7 @@ description: The MDVA-44562 patch fixes the issue where the default store id ove
 feature: Quotes
 role: Admin
 exl-id: 007a82f7-4bc9-4a51-8b18-05f6c0867ea7
+type: Troubleshooting
 ---
 # MDVA-44562: Store id for quote items overridden by default store id
 

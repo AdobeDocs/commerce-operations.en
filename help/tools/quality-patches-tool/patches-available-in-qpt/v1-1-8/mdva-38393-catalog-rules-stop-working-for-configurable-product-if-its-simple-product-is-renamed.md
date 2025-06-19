@@ -4,6 +4,7 @@ description: The MDVA-38393 patch fixes the issue where catalog rules stop worki
 feature: Catalog Management, Categories, Configuration, Products
 role: Admin
 exl-id: 3d98671c-6ee7-4fe8-80d9-67fa697cae75
+type: Troubleshooting
 ---
 # MDVA-38393: Catalog rules stop working for configurable product if its simple product is re-named
 

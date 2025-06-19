@@ -4,6 +4,7 @@ description: Apply the ACSD-47004 patch to fix the Adobe Commerce issue where VA
 feature: Customer Service, Shipping/Delivery, Orders
 role: Admin
 exl-id: 72a64937-1c04-4fc2-bc61-fd2056e24419
+type: Troubleshooting
 ---
 # ACSD-47004: VAT not applied to billing address without VAT ID
 

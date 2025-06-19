@@ -4,6 +4,7 @@ description: Apply the ACSD-62056 patch to fix the Adobe Commerce issue where im
 feature: Products, Media
 role: Admin, Developer
 exl-id: bab8e617-d80c-4456-8ade-bdc6b4294d26
+type: Troubleshooting
 ---
 # ACSD-62056: Image upload for configurable product fails if MSI is installed 
 

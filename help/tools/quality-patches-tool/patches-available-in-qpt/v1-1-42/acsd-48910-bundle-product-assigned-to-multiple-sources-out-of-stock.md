@@ -4,6 +4,7 @@ description: Apply the ACSD-48910 patch to fix the Adobe Commerce issue where th
 feature: Products, Inventory
 role: Admin, Developer
 exl-id: c8d86531-2db5-4115-92d5-a8d391c4f75d
+type: Troubleshooting
 ---
 # ACSD-48910: Bundled product assigned multiple sources go out of stock after invoice and shipping
 

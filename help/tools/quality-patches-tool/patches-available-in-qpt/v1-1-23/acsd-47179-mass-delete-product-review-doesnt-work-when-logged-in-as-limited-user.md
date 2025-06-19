@@ -4,6 +4,7 @@ description: Apply the ACSD-47179 patch to fix the Adobe Commerce issue where ma
 feature: Marketing Tools, Products, Roles/Permissions
 role: Admin
 exl-id: 7131ee47-fadc-4e93-b8b2-5b2e0521ad97
+type: Troubleshooting
 ---
 # ACSD-47179: mass deletion of product reviews does not work when logged in as a limited user role
 

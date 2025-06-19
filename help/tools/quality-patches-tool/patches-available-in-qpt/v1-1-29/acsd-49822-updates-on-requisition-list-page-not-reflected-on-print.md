@@ -4,6 +4,7 @@ description: Apply the ACSD-49822 patch to fix the Adobe Commerce issue where up
 feature: Admin Workspace, B2B
 role: Admin
 exl-id: 053b8900-0900-4b7e-ba1b-ad4b88ca3f35
+type: Troubleshooting
 ---
 # ACSD-49822: Updates in requisition list not reflected on print requisition list
 

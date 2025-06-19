@@ -4,6 +4,7 @@ description: Apply the ACSD-51892 patch to fix the Adobe Commerce performance is
 feature: Products, Staging
 role: Admin
 exl-id: 9c3b4d45-c500-46a7-8679-a8aa9e0a66d6
+type: Troubleshooting
 ---
 # ACSD-50512: Error when updating start date for downloadable product staging update
 

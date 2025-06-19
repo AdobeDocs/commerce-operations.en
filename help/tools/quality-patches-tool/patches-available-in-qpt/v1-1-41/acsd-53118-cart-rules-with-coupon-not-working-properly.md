@@ -4,6 +4,7 @@ description: Apply the ACSD-53118 patch to fix the Adobe Commerce issue where th
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
 exl-id: 8957790e-c22b-4a25-939b-94d7a9fb1cc7
+type: Troubleshooting
 ---
 # ACSD-53118: Cart rules with coupon not working properly
 

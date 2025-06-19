@@ -4,6 +4,7 @@ description: Apply the ACSD-57941 patch to fix the Adobe Commerce issue where pr
 feature: Products
 role: Admin, Developer
 exl-id: a78c1797-c366-4931-b036-966d3dcf59bb
+type: Troubleshooting
 ---
 # ACSD-57941: Product options are incorrectly assigned to the admin store
 

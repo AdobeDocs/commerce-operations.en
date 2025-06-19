@@ -4,6 +4,7 @@ description: Apply the ACSD-50858 patch to fix the Adobe Commerce issue where ba
 feature: Page Content
 role: Admin
 exl-id: 1b46e51f-70ad-4450-b3a8-173c2e4b7925
+type: Troubleshooting
 ---
 # ACSD-50858: Improved performance for loading banners' content
 

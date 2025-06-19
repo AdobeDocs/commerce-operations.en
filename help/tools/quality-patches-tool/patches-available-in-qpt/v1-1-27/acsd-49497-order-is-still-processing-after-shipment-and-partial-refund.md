@@ -4,6 +4,7 @@ description: Apply the ACSD-49497 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Orders, Shipping/Delivery
 role: Admin
 exl-id: e2e3d2b3-24be-4827-a735-aebfc6f475ea
+type: Troubleshooting
 ---
 # ACSD-49497: order still processing after shipment and partial refund
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-50849 patch to fix the Adobe Commerce issue where ad
 feature: Cache, Categories, Products
 role: Admin
 exl-id: e7fd0614-eaa3-48ad-95ff-87f7ad3d76c1
+type: Troubleshooting
 ---
 # ACSD-50849: Adding new product after clearing cache results in mismatch
 

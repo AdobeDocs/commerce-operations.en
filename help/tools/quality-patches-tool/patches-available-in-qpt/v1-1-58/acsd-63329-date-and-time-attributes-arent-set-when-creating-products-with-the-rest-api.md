@@ -4,6 +4,7 @@ description: Apply the ACSD-63329 patch to fix the Adobe Commerce issue where de
 feature: REST
 Role: Admin, Developers
 exl-id: d8e7917b-07a5-465b-944b-fd6168dea63c
+type: Troubleshooting
 ---
 # ACSD-63329: Default values for date and time fields aren't set when creating products with the REST API
 

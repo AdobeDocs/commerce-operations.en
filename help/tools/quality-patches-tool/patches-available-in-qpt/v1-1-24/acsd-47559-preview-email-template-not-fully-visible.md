@@ -4,6 +4,7 @@ description: Apply the ACSD-47559 patch to fix the Adobe Commerce issue where th
 feature: Communications, Marketing Tools, Personalization
 role: Admin
 exl-id: a0bd51e0-990b-47c9-8de0-6071b6f79e54
+type: Troubleshooting
 ---
 # ACSD-47559: email template preview not fully visible
 

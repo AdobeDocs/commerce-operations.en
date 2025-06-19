@@ -4,6 +4,7 @@ description: Apply the ACSD-51666 patch to fix the Adobe Commerce issue where th
 feature: Customers
 role: Admin, Developer
 exl-id: 8968b314-6625-45fa-9733-20560cca7089
+type: Troubleshooting
 ---
 # ACSD-51666: Error *The session has expired, please login again.* after you log in
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-59925 patch to fix the Adobe Commerce issue where it
 feature: Media, GraphQL
 role: Admin, Developer
 exl-id: a4dd840f-44d2-40dc-b0e1-13d55b688204
+type: Troubleshooting
 ---
 # ACSD-59925: Sorting items in the [!UICONTROL Media Gallery] by position in GraphQL
 

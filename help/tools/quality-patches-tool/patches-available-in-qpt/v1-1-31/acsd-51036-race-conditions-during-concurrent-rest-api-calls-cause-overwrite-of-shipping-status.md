@@ -4,6 +4,7 @@ description: Apply the ACSD-51036 patch to fix the Adobe Commerce issue where th
 feature: REST, Orders, Shipping/Delivery
 role: Admin
 exl-id: 6150d072-05fe-4010-b31b-8ccde9cab656
+type: Troubleshooting
 ---
 # ACSD-51036: Race conditions during concurrent REST API calls result in an overwrite of shipping status in the items ordered table
 

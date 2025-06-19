@@ -4,6 +4,7 @@ description: Apply the ACSD-51305 patch to fix the Adobe Commerce issue where ou
 feature: Categories, GraphQL, Orders, Products
 role: Admin
 exl-id: 110bb332-2032-4aaf-b95e-971fc3382262
+type: Troubleshooting
 ---
 # ACSD-51305: Out-of-stock composite child products unavailable in GraphQL response
 

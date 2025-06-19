@@ -4,6 +4,7 @@ description: The MDVA-39163 patch solves the issue where the shipping methods ar
 feature: CMS, Marketing Tools, Orders, Products, Shipping/Delivery
 role: Admin
 exl-id: 781b466b-7d8f-4ad1-9fb4-5404cd02f7d8
+type: Troubleshooting
 ---
 # MDVA-39163: Shipping methods not available to newly registered users with products from guest session
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-52657 patch to fix the Adobe Commerce issue where th
 feature: Shopping Cart
 role: Admin, Developer
 exl-id: feec9dde-5532-481b-9410-7f6be9df4be7
+type: Troubleshooting
 ---
 # ACSD-52657: Minicart not updated on the second storeview that uses subdomain
 

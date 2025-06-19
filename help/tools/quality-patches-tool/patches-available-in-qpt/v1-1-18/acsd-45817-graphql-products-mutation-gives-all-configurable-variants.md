@@ -4,6 +4,7 @@ description: The ACSD-45817 patch fixes the issue where a GraphQL `products` mut
 feature: GraphQL, Configuration, Products
 role: Admin
 exl-id: f00e9a8e-c18b-4fa8-b7c6-c228b6a22a2c
+type: Troubleshooting
 ---
 # ACSD-45817: GraphQL products mutation gives all configurable variants
 

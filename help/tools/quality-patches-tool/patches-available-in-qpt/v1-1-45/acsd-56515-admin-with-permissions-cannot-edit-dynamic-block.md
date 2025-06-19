@@ -4,6 +4,7 @@ description: Apply the ACSD-56515 patch to fix the Adobe Commerce issue where th
 feature: Roles/Permissions, Admin Workspace
 role: Admin, Developer
 exl-id: dd3e61a4-aba4-4f86-b4fe-88ca4276ace5
+type: Troubleshooting
 ---
 # ACSD-56515: Admin with website-level permissions cannot edit [!UICONTROL Dynamic Block]
 

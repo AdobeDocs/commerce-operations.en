@@ -4,6 +4,7 @@ description: Apply the ACSD-62971 patch to fix the Adobe Commerce issue where im
 feature: Data Import/Export, Inventory
 role: Admin, Developer
 exl-id: ece23153-4932-4ac5-b46e-49327a8e84a1
+type: Troubleshooting
 ---
 # ACSD-62971: Stock sources import with non-numeric quantity values results in the quantity being set to 0
 

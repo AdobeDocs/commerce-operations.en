@@ -4,6 +4,7 @@ description: "The MDVA-38827 patch fixes the issue where customers receive an or
 feature: Communications, Marketing Tools, Orders, Shipping/Delivery
 role: Admin
 exl-id: ab522c9c-2983-4c2f-b341-4487bdbee34d
+type: Troubleshooting
 ---
 # MDVA-38827: Customers receive order shipment error via email
 

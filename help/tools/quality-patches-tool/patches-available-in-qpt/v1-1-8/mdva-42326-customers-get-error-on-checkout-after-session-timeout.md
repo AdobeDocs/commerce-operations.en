@@ -4,6 +4,7 @@ description: The MDVA-42326 patch solves the issue where the customers get an er
 feature: Checkout, Orders
 role: Admin
 exl-id: f9ef6778-298b-4ff9-9c4b-b3f47bb04b67
+type: Troubleshooting
 ---
 # MDVA-42326: Customers get error on checkout after session timeout
 

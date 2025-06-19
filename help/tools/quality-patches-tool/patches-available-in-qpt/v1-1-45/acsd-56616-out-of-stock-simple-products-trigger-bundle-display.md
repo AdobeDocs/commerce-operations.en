@@ -4,6 +4,7 @@ description: Apply the ACSD-56616 patch to fix the Adobe Commerce issue where bu
 feature: Products
 role: Admin, Developer
 exl-id: 8b225d9d-1898-4c4d-81be-7b92cbf7d06f
+type: Troubleshooting
 ---
 # ACSD-56616: Storefront display of bundled products during simple stock shortage.
 

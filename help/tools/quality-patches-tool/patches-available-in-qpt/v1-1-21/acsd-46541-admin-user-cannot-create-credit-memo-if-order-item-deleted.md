@@ -4,6 +4,7 @@ description: Apply the ACSD-46541 patch to fix the Adobe Commerce issue where on
 feature: Admin Workspace, Orders, Returns
 role: Admin
 exl-id: c46ee888-92b1-4798-bd2b-1a082fd1406a
+type: Troubleshooting
 ---
 # ACSD-46541: An admin user cannot create a credit memo if an order item is deleted
 

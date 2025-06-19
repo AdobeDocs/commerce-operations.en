@@ -4,6 +4,7 @@ description: Apply the ACSD-62591 patch to fix the Adobe Commerce issue where th
 feature: Themes
 role: Admin, Developer
 exl-id: 7b206b25-8918-40a6-a956-d38d5058d38f
+type: Troubleshooting
 ---
 # ACSD-62591: Theme doesn't switch properly when [!UICONTROL User Agent Rules] configured
 

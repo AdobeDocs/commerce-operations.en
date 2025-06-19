@@ -3,6 +3,7 @@ title: 'ACSD-65202: My Account page does not show recent orders from other store
 description: Apply the ACSD-65202 patch to fix the Adobe Commerce issue where where the My Account page doesn't display recent orders from other store views within the same store.
 feature: Orders, User Account
 role: Admin, Developer
+type: Troubleshooting
 exl-id: 031f12f2-1b70-4cbc-92a0-8eb561e34067
 ---
 # ACSD-65202: [!UICONTROL My Account] page does not show recent orders from other store views

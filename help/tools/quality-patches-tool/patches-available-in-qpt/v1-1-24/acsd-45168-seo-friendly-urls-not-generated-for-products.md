@@ -4,6 +4,7 @@ description: Apply the ACSD-45168 patch to fix the Adobe Commerce issue where SE
 feature: Attributes, Cache, Categories, Marketing Tools, Products
 role: Admin
 exl-id: 7d908307-f60c-4758-ad0f-f108ebb94558
+type: Troubleshooting
 ---
 # ACSD-45168: SEO-friendly URLs not generated for products that have url_key attributes overridden
 

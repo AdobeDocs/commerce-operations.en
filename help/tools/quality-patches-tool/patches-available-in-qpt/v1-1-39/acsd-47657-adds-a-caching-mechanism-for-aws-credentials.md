@@ -4,6 +4,7 @@ description: Apply the ACSD-47657 patch to fix the Adobe Commerce issue that hap
 feature: Cache
 role: Admin, Developer
 exl-id: 2851d511-a9b0-49f8-94ba-ad63d2397ca5
+type: Troubleshooting
 ---
 # ACSD-47657: Adds a caching mechanism for AWS credentials
 

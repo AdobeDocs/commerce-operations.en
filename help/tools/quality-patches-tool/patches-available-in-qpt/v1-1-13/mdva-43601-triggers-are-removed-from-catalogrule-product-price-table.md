@@ -4,6 +4,7 @@ description: The MDVA-43601 patch fixes the issue where triggers are removed fro
 feature: Catalog Management, Orders, Products
 role: Admin
 exl-id: b9580806-ac35-4c86-8eee-c9f16d654171
+type: Troubleshooting
 ---
 # MDVA-43601: Triggers are removed from "catalogrule_product_price" table after full reindex
 

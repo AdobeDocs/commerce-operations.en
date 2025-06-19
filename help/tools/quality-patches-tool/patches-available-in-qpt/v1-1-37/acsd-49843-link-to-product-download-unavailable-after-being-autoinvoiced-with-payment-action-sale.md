@@ -4,6 +4,7 @@ description: Apply the ACSD-49843 patch to fix the Adobe Commerce issue where pr
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer
 exl-id: e990b550-fb32-48d2-9c39-2176d7ab34c9
+type: Troubleshooting
 ---
 # ACSD-49843: Product download link unavailable after being auto invoiced with [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]
 

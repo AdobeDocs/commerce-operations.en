@@ -4,6 +4,7 @@ description: Apply the ACSD-48204 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules
 role: Admin
 exl-id: 69f2b35c-856e-4f96-ae2f-fb0c64d5eb94
+type: Troubleshooting
 ---
 # ACSD-48204: Catalog price rule created based on *Yes/No* attribute doesn't consider selected scope
 

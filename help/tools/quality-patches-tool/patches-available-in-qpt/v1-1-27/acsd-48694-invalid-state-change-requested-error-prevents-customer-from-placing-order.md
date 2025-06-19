@@ -4,6 +4,7 @@ description: Apply the ACSD-48694 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: 6b9fa474-1d9d-411d-bbca-ce7463cfeb0d
+type: Troubleshooting
 ---
 # ACSD-48694: *Invalid state change requested* error prevents customer from placing order
 

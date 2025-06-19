@@ -4,6 +4,7 @@ description: The MDVA-43178 patch fixes the issue where the customer token for a
 feature: GraphQL
 role: Admin
 exl-id: 8dd9c9e7-573c-4c7a-8fd0-3b3886649af3
+type: Troubleshooting
 ---
 # MDVA-43178: Customer token for custom store cannot be retrieved in GraphQL
 

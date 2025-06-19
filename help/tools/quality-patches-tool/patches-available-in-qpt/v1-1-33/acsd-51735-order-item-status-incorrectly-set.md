@@ -4,6 +4,7 @@ description: Apply the ACSD-51735 patch to fix the Adobe Commerce issue where th
 feature: Orders, Products
 role: Admin
 exl-id: 56c8b58c-819f-46bd-8912-f543f56b66d6
+type: Troubleshooting
 ---
 # ACSD-51735: Order item status incorrectly set to *[!UICONTROL Ordered]* when product stock is 0
 

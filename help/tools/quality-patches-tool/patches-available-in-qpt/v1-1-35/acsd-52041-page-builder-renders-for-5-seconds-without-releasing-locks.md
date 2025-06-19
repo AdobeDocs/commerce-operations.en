@@ -4,6 +4,7 @@ description: Apply the ACSD-52041 patch to fix the Adobe Commerce issue where th
 feature: Page Builder
 role: Admin, Developer
 exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
+type: Troubleshooting
 ---
 # ACSD-52041: Page Builder rendering doesn't release locks
 

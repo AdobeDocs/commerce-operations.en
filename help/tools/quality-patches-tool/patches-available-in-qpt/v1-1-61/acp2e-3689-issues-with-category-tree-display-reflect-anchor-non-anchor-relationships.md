@@ -4,6 +4,7 @@ description: Apply the ACP2E-3689 patch to fix the Adobe Commerce issue with cat
 feature: Categories, Page Content
 role: Admin, Developer
 exl-id: 8d3c484f-3f8d-4fc1-8b31-e850cb34341c
+type: Troubleshooting
 ---
 # ACP2E-3689: Multiple issues with category tree display on deeper levels and reflecting anchor/non-anchor relationships
 

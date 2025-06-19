@@ -4,6 +4,7 @@ description: Apply the ACSD-59514 patch to fix the Adobe Commerce issue where fo
 feature: Page Builder
 role: Admin, Developer
 exl-id: 3d1167d2-0a75-48ac-bc31-5bbd3c4a409e
+type: Troubleshooting
 ---
 # ACSD-59514: Forms in Admin with [!DNL Page Builder] throw error in browser console
 

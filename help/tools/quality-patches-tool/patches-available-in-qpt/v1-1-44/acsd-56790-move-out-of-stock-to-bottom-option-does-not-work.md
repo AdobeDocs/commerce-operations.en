@@ -4,6 +4,7 @@ description: Apply the ACSD-56790 patch to fix the Adobe Commerce issue where th
 feature: Products, Categories
 role: Admin, Developer
 exl-id: a5e5f208-793d-45a5-a000-f8ff1c31d049
+type: Troubleshooting
 ---
 # ACSD-56790: **[!UICONTROL move out of stock to bottom]** option does not work while sorting products in the [!DNL Visual Merchandiser]
 

@@ -4,6 +4,7 @@ description: The ACSD-45520 patch fixes the issue where swatch options are not p
 feature: Products
 role: Admin
 exl-id: a8b37dba-5a02-45a9-8e43-5288352a9d75
+type: Troubleshooting
 ---
 # ACSD-45520: Swatch options not selected on product detail page
 

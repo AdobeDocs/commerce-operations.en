@@ -4,6 +4,7 @@ description: Apply the ACSD-60267 patch to fix the Adobe Commerce issue where th
 feature: Taxes
 role: Admin, Developer
 exl-id: 919b3b96-1995-4faf-aaf1-b5cbb20e46bf
+type: Troubleshooting
 ---
 # ACSD-60267: FPT applies incorrectly when products are added through configurable product options
 

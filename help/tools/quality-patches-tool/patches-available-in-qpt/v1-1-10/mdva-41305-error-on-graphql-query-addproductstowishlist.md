@@ -4,6 +4,7 @@ description: The MDVA-41305 patch solves the issue where users get an error on G
 feature: GraphQL, Configuration, Products
 role: Admin
 exl-id: 985c3c46-d2c8-4479-b9e4-e5f9504ab03b
+type: Troubleshooting
 ---
 # MDVA-41305: Error on GraphQL Query addProductsToWishlist for Configurable Products
 

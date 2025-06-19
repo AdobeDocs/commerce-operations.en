@@ -4,6 +4,7 @@ description: The MDVA-43102 patch fixes the issue where the salable quantity is 
 feature: Variables
 role: Admin
 exl-id: 6a10f586-bbde-4252-9b8e-9b2b712f0fb3
+type: Troubleshooting
 ---
 # MDVA-43102: Salable quantity not updated correctly
 

@@ -4,6 +4,7 @@ description: The MDVA-39935 Adobe Commerce patch fixes the issue where GraphQL r
 feature: GraphQL, Configuration, Products
 role: Admin
 exl-id: b86b1595-ddd5-41ce-b126-287046462561
+type: Troubleshooting
 ---
 # MDVA-39935: GraphQL returns configurable child products disabled at the website level
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-60234 patch to fix the Adobe Commerce issue where [!
 feature: Products, Configuration
 role: Admin, Developer
 exl-id: 2ce7bde5-02a4-4989-80d6-ab1be0ca5fe9
+type: Troubleshooting
 ---
 # ACSD-60234: [!DNL PayPal] shows an incorrect amount when the discount is applied
 

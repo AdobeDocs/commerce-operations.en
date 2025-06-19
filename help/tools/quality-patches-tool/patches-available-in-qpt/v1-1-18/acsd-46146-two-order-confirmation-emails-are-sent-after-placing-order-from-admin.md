@@ -4,6 +4,7 @@ description: The ACSD-46146 patch solves the issue where two order confirmation 
 feature: Admin Workspace, Communications, Orders
 role: Admin
 exl-id: 1db809d0-461d-45d4-9e1b-8209a014b7a1
+type: Troubleshooting
 ---
 # ACSD-46146: Two order confirmation emails sent after placing order from admin
 

@@ -4,6 +4,7 @@ description: The MDVA-41628 patch fixes the issue where the restricted admin use
 feature: Admin Workspace
 role: Admin
 exl-id: 774a4329-fa1f-4cca-aa97-1b8ef03c11d1
+type: Troubleshooting
 ---
 # MDVA-41628: Restricted admin users get access to new resources
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-61195 patch to fix the Adobe Commerce issue where no
 feature: GraphQL
 role: Admin, Developer
 exl-id: 15f0f29c-8517-4f1e-9370-772572e75c9a
+type: Troubleshooting
 ---
 # ACSD-61195: Cart GraphQL request fails to return items on final page
 

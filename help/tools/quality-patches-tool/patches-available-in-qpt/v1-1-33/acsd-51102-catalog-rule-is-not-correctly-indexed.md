@@ -4,6 +4,7 @@ description: Apply the ACSD-51102 patch to fix the Adobe Commerce issue where a 
 feature: Catalog Management, Products
 role: Admin
 exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
+type: Troubleshooting
 ---
 # ACSD-51102: Catalog rule applied to large number of products not correctly indexed
 

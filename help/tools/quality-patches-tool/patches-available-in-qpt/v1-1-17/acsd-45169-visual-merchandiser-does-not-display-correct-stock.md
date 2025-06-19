@@ -4,6 +4,7 @@ description: The ACSD-45169 patch fixes the issue where the Visual Merchandiser 
 feature: Categories, Configuration, Merchandising, Orders, Products
 role: Admin
 exl-id: 3f1218ee-2fd0-4f3e-80d7-7e6f9342e0fb
+type: Troubleshooting
 ---
 # ACSD-45169: Visual Merchandiser displays incorrect stock and price for configurable product
 

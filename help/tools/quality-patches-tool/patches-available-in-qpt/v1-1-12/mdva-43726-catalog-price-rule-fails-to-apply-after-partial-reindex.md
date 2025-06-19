@@ -4,6 +4,7 @@ description: The MDVA-43726 patch fixes the issue where the catalog price rule b
 feature: Catalog Management, Categories, Orders, Price Rules
 role: Admin
 exl-id: db536749-eb89-4bb5-9c69-f448f74497b8
+type: Troubleshooting
 ---
 # MDVA-43726: Catalog price rule fails to apply after partial reindex
 

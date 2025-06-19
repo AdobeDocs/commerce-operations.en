@@ -4,6 +4,7 @@ description: Apply the ACSD-54626 patch to fix the Adobe Commerce issue where a 
 feature: Attributes, B2B, GraphQL, Purchase Orders
 role: Admin, Developer
 exl-id: 626bd403-6334-4475-b702-09606a590c7e
+type: Troubleshooting
 ---
 # ACSD-54626: Can't create new purchase order rule with NUMBER_OF_SKUS via GraphQL
 

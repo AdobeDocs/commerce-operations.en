@@ -4,6 +4,7 @@ description: Apply the ACSD-60538 patch to fix the Adobe Commerce issue where if
 feature: Attributes, GraphQL
 role: Admin, Developer
 exl-id: 2ea9de11-b750-4ab6-9cc7-e940e1791f22
+type: Troubleshooting
 ---
 # ACSD-60538: Attributes don't show correctly if product is disabled in *[!UICONTROL All Store Views]*
 

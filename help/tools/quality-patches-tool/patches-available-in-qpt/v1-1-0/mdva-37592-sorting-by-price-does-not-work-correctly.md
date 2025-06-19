@@ -4,6 +4,7 @@ description: The MDVA-37592 Adobe Commerce patch solves the issue where sorting 
 feature: B2B, Catalog Management, Categories, Orders, Products
 role: Admin
 exl-id: 4d4a158c-2020-42a4-9b8b-14c9b48b4107
+type: Troubleshooting
 ---
 # MDVA-37592: Sorting by price not working for products with price zero
 

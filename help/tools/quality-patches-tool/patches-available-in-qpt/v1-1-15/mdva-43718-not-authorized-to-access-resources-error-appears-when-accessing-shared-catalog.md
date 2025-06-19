@@ -4,6 +4,7 @@ description: The MDVA-43718 patch solves the issue where the error *consumer isn
 feature: Catalog Management
 role: Admin
 exl-id: 2ced2177-aeff-4c36-8d34-6028539b66bd
+type: Troubleshooting
 ---
 # MDVA-43718: 'consumer isn't authorized to access resources' error appears when accessing shared catalog
 

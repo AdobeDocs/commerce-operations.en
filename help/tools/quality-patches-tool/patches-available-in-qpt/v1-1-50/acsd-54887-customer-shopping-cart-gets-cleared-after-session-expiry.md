@@ -4,6 +4,7 @@ description: Apply the ACSD-54887 patch to fix the Adobe Commerce issue where th
 feature: Shopping Cart
 role: Admin, Developer
 exl-id: de2a96b2-48ce-4b9b-93bc-f7b64c37463a
+type: Troubleshooting
 ---
 # ACSD-54887: Customer shopping cart gets cleared after customer session has expired
 

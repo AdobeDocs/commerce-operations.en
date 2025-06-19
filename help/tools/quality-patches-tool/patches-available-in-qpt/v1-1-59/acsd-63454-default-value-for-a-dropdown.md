@@ -4,6 +4,7 @@ description: Apply the ACSD-63454 patch to fix the Adobe Commerce issue where th
 feature: Attributes, Products
 role: Admin, Developer
 exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
+type: Troubleshooting
 ---
 # ACSD-63454: Default value for a [!UICONTROL Dropdown] and [!UICONTROL Multiple Select] attributes is not saved properly in the database
 

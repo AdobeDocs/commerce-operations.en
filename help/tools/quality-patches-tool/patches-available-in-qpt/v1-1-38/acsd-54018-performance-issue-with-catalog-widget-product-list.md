@@ -4,6 +4,7 @@ description: Apply the ACSD-54018 patch to fix the Adobe Commerce issue where th
 feature: Attributes, Catalog Management, Page Builder, Page Content, Storefront
 role: Admin, Developer
 exl-id: 2fb7ca37-78cc-45f4-86a3-d922cf4d1457
+type: Troubleshooting
 ---
 # ACSD-54018: Performance issue with catalog widget product List
 

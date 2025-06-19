@@ -4,6 +4,7 @@ description: The MDVA-41597 patch fixes the issue where users get an error when 
 feature: Configuration, Orders, Products, Shopping Cart
 role: Admin
 exl-id: a4bb2aea-c477-40f0-a016-50886dc2cd4b
+type: Troubleshooting
 ---
 # MDVA-41597: Error adding more than one configurable product to cart
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-49286 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Orders, Products, Shopping Cart
 role: Admin
 exl-id: 03fdaafe-5566-4b75-a0eb-e0cba3dad3e7
+type: Troubleshooting
 ---
 # ACSD-49286: Product added twice to cart when multiple product widgets are present
 

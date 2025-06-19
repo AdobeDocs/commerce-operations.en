@@ -4,6 +4,7 @@ description: Apply the ACSD-48300 patch to fix the Adobe Commerce issue where re
 feature: Admin Workspace, Configuration, Orders, Products, Returns
 role: Admin
 exl-id: 50139364-e2ea-47a8-9bca-09876dd0e70d
+type: Troubleshooting
 ---
 # ACSD-48300: return cannot be created if configurable product is removed
 

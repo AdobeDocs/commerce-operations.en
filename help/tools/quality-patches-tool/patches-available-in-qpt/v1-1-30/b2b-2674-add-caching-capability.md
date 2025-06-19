@@ -4,6 +4,7 @@ description: Apply the B2B-2674 patch to add caching capability to the customAtt
 feature: Attributes, B2B, Cache, GraphQL
 role: Admin
 exl-id: b49633f3-b144-405f-a21d-726e222a7bfe
+type: Troubleshooting
 ---
 # B2B-2674: Adds caching capability to the `customAttributeMetadata` GraphQL query
 
