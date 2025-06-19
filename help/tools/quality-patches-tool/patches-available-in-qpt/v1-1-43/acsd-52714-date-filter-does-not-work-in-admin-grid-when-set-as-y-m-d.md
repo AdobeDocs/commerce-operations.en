@@ -4,6 +4,7 @@ description: Apply the ACSD-52714 patch to fix the Adobe Commerce issue where th
 feature: Attributes
 role: Admin, Developer
 exl-id: 4a34900b-9566-41bb-8d3e-18a440117907
+type: Troubleshooting
 ---
 # ACSD-52714: Date filter does not work in admin grid when set as y-m-d
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-57045 patch to fix the Adobe Commerce issue where UR
 feature: CMS
 role: Admin, Developer
 exl-id: 7beaee40-a392-4644-917e-c507e79bddcc
+type: Troubleshooting
 ---
 # ACSD-57045: URL rewrites cause infinite page looping after [!UICONTROL Website Root] unchecked from [!UICONTROL Hierarchy]
 

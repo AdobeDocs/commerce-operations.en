@@ -4,6 +4,7 @@ description: Apply the ACSD-52399 patch to fix the Adobe Commerce issue where th
 feature: Products, Configuration
 role: Admin, Developer
 exl-id: 7b7332bb-15ae-44b6-a347-38ac7c9001db
+type: Troubleshooting
 ---
 # ACSD-52399: Product with salable qty 0 shows in stock
 

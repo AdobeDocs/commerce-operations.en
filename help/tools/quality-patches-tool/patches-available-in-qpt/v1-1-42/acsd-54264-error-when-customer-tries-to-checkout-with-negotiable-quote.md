@@ -4,6 +4,7 @@ description: Apply the ACSD-54264 patch to fix the Adobe Commerce issue where an
 feature: B2B, Checkout
 role: Admin, Developer
 exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
+type: Troubleshooting
 ---
 # ACSD-54264: Error appears when customer tries to check out with negotiable quote
 

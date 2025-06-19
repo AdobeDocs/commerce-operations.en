@@ -4,6 +4,7 @@ description: Apply the ACSD-56280 patch to fix the Adobe Commerce issue where th
 feature: Checkout
 role: Admin
 exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
+type: Troubleshooting
 ---
 # ACSD-56280: Gift registry purchases are not completed
 

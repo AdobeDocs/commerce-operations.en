@@ -4,6 +4,7 @@ description: Apply the BB2B-2598 patch to add caching capability to the storeCon
 feature: B2B, GraphQL, Cache
 role: Admin
 exl-id: b842fab4-d2c0-4ef1-be13-182f09015cd7
+type: Troubleshooting
 ---
 # BB2B-2598: Adds caching capability to `storeConfig`, `currency`, `country`, `countries`, and `availableStores` GraphQl queries
 

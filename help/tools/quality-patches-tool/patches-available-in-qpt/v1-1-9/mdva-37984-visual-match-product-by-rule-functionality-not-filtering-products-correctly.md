@@ -4,6 +4,7 @@ description: The MDVA-37984 patch solves the issue where the Visual Merchandiser
 feature: Categories, Merchandising, Products, Staging
 role: Admin
 exl-id: 3aeb74a4-b6f7-453a-a8f6-45a345aaa74f
+type: Troubleshooting
 ---
 # MDVA-37984: Visual Merchandiser not working correctly when staging updates are applied
 

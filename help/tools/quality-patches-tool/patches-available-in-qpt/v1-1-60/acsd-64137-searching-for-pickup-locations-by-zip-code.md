@@ -4,6 +4,7 @@ description: Apply the ACSD-64137 patch to fix the issue where searching for pic
 feature: Shipping/Delivery
 role: Admin, Developer
 exl-id: 86c28b6d-6584-4caf-bd35-13e0c1bdcf1d
+type: Troubleshooting
 ---
 # ACSD-64137: Searching for pickup locations by zip code doesn't work properly for Dutch localization
 

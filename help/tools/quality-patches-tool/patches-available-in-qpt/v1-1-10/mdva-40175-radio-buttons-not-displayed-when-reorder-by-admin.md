@@ -4,6 +4,7 @@ description: The MDVA-40175 patch solves the issue where the Radio buttons are n
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: e84ff581-13ba-4f9f-9247-519b0b54807a
+type: Troubleshooting
 ---
 # MDVA-40175: Radio buttons not displayed when reorder
 

@@ -4,6 +4,7 @@ description: The ACSD-46404 patch solves the issue where an admin user cannot lo
 feature: Admin Workspace
 role: Admin
 exl-id: f475ca56-5e06-4d4d-be42-f760c95968cf
+type: Troubleshooting
 ---
 # ACSD-46404: Admin user cannot log in after upgrading to 2.4.4
 

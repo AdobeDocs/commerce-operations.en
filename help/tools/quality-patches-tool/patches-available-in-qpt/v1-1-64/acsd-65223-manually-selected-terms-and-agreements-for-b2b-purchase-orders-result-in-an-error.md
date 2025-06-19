@@ -4,6 +4,7 @@ description: Apply the ACSD-65223 patch to fix the Adobe Commerce issue where or
 feature: B2B, Purchase Orders
 role: Admin, Developer
 exl-id: 5a5d0774-3801-4688-86bd-58a390394cc0
+type: Troubleshooting
 ---
 # ACSD-65223: Manually selected terms and agreements for B2B purchase orders result in an error
 

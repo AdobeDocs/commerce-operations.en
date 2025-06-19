@@ -4,6 +4,7 @@ description: Apply the ACSD-56741 patch to fix the Adobe Commerce issue where an
 feature: Install
 role: Admin, Developer
 exl-id: 93a1c75f-8a45-49df-9fa4-6ba1234c822d
+type: Troubleshooting
 ---
 # ACSD-56741: Troubleshooting database setup errors with custom MySQL triggers
 

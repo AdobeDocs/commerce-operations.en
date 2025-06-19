@@ -4,6 +4,7 @@ description: The MDVA-40550 patch solves the issue where reindexing results in s
 feature: Categories, Console, Products
 role: Admin
 exl-id: 5ce7e341-e165-4668-9de7-8e9ca3a70c70
+type: Troubleshooting
 ---
 # MDVA-40550: Products missing on the frontend after reindexing
 

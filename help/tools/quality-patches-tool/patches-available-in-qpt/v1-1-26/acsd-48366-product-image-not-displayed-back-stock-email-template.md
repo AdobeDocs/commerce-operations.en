@@ -4,6 +4,7 @@ description: Apply the ACSD-48366 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Communications, Orders, Products
 role: Admin
 exl-id: a721f399-f50a-4a13-9f5d-17ae7f3985f6
+type: Troubleshooting
 ---
 # ACSD-48366: product image not displayed on [!UICONTROL Back to Stock] email template
 

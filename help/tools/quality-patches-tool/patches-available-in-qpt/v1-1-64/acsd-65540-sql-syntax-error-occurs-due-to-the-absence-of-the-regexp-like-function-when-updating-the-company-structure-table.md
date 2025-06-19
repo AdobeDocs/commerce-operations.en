@@ -3,6 +3,7 @@ title: 'ACSD-65540: SQL error occurs due to missing REGEXP_LIKE function in comp
 description: Apply the ACSD-65540 patch to fix the Adobe Commerce issue where SQL error occurs due to missing REGEXP_LIKE function in company_structure updates.
 feature: B2B
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-65540: SQL error occurs due to missing `REGEXP_LIKE` function in `company_structure` updates

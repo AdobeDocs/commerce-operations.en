@@ -4,6 +4,7 @@ description: Apply the ACSD-49835 patch to fix the Adobe Commerce issue where th
 feature: Storefront
 role: Admin
 exl-id: e8d5a95f-b17d-49fc-a6d3-e03554667438
+type: Troubleshooting
 ---
 # ACSD-49835: [!UICONTROL Use Default Value] checkbox is not saved
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-60590 patch to fix the Adobe Commerce issue where th
 feature: Reporting
 role: Admin, Developer
 exl-id: 3b2b92eb-d4fc-4cd7-a117-a2c1caac72ec
+type: Troubleshooting
 ---
 # ACSD-60590: Enhancing performance of Bestsellers Aggregated Daily Report generation
 

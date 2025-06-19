@@ -4,6 +4,7 @@ description: The MDVA-31590 patch solves the issue where the users are unable to
 feature: Attributes, Services
 role: Admin
 exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
+type: Troubleshooting
 ---
 # MDVA-31590: Unable to update attributes in bulk using MySQL async queues
 

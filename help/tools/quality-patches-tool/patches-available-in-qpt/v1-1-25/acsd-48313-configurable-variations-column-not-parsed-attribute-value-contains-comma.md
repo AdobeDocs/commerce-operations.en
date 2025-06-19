@@ -4,6 +4,7 @@ description: Apply the ACSD-48313 patch to fix the Adobe Commerce issue where th
 feature: Attributes, Configuration
 role: Admin
 exl-id: 1ce0c8dc-0d03-4ebd-b02a-08090b244190
+type: Troubleshooting
 ---
 # ACSD-48313: **[!UICONTROL configurable_variations]** column not parsed if attribute value contains comma
 

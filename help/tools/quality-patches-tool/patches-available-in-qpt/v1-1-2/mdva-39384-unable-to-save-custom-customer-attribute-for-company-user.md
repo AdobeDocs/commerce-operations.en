@@ -4,6 +4,7 @@ description: The MDVA-39384 patch solves the issue where the custom customer att
 feature: Attributes, B2B, Companies
 role: Developer
 exl-id: 0ccaa4c5-ca43-4b25-963b-b9a547ecc71f
+type: Troubleshooting
 ---
 # MDVA-39384: Unable to save custom customer attribute for company user
 

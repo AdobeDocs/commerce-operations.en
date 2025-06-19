@@ -4,6 +4,7 @@ description: The MDVA-42645 patch solves the issue where the admin cannot refund
 feature: Admin Workspace, Orders, Rewards, Returns
 role: Admin
 exl-id: 8053fcc7-d30c-424a-9494-df6e8630b095
+type: Troubleshooting
 ---
 # MDVA-42645: Admin can't refund reward points for disabled store credit
 

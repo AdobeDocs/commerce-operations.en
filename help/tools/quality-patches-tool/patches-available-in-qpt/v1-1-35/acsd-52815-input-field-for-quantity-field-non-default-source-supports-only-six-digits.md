@@ -4,6 +4,7 @@ description: Apply the ACSD-52815 patch to fix the Adobe Commerce performance is
 feature: Inventory, Products
 role: Admin
 exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
+type: Troubleshooting
 ---
 # ACSD-52815: Input field for quantity field of non-default source supports only up to 6 digits
 

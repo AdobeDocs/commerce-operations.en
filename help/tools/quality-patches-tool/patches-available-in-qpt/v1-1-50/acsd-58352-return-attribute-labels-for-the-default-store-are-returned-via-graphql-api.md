@@ -4,6 +4,7 @@ description: Apply the ACSD-58352 patch to fix the Adobe Commerce issue where re
 feature: GraphQL, Returns
 role: Admin, Developer
 exl-id: e513039e-42cd-4dac-963b-3068ba8bf7ee
+type: Troubleshooting
 ---
 # ACSD-58352: Return attribute labels for the default store are returned via [!DNL GraphQL] API
 

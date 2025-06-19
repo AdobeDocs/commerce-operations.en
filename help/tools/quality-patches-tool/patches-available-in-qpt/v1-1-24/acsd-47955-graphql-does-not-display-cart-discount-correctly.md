@@ -4,6 +4,7 @@ description: Apply the ACSD-47955 patch to fix the Adobe Commerce issue where Gr
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
 exl-id: bbfe9957-18f9-4874-8e11-2f7cfcb5b614
+type: Troubleshooting
 ---
 # ACSD-47955: GraphQL does not display cart discount correctly
 

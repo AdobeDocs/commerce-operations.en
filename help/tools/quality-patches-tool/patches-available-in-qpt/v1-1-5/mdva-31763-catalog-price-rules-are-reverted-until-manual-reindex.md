@@ -4,6 +4,7 @@ description: The MDVA-31763 patch solves the issue where catalog price rules are
 feature: Catalog Management, Orders, Price Rules
 role: Admin
 exl-id: 1d144bfc-c26b-43d0-a80c-26a9c2d8ef32
+type: Troubleshooting
 ---
 # MDVA-31763: Catalog price rules are reverted until manual reindex
 

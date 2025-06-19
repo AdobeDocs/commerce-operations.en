@@ -4,6 +4,7 @@ description: The MDVA-42283 patch fixes the issue where the date-time format in 
 feature: CMS
 role: Admin
 exl-id: ed99519d-03e2-444b-9cd1-e5c6e6d2ac2d
+type: Troubleshooting
 ---
 # MDVA-42283: Date-time format for French locale is invalid
 

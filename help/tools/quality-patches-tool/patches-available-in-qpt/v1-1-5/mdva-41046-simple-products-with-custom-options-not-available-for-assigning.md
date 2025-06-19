@@ -4,6 +4,7 @@ description: The MDVA-41046 patch solves the issue where simple products with cu
 feature: Products
 role: Developer
 exl-id: 7fd7a9db-f834-4aea-a9d7-6e9535c037c8
+type: Troubleshooting
 ---
 # MDVA-41046: Simple products with custom options not available for assigning
 

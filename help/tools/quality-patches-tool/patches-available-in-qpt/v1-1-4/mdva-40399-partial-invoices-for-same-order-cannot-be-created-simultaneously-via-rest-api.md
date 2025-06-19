@@ -4,6 +4,7 @@ description: The MDVA-40399 patch fixes the issue where partial invoices for the
 feature: REST, Invoices, Orders
 role: Admin
 exl-id: aa400a15-57b9-4f80-a49f-f4680b7e4705
+type: Troubleshooting
 ---
 # MDVA-40399: Partial invoices for same order can't be created simultaneously via API
 

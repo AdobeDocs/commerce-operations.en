@@ -4,6 +4,7 @@ description: Apply the ACSD-60788 patch to fix the Adobe Commerce issue where cu
 feature: Security
 role: Admin, Developer
 exl-id: 3392da76-86cb-4357-8658-c95d914a5829
+type: Troubleshooting
 ---
 # ACSD-60788: Custom scripts for [!DNL Google Tag Manager] are not executed due to Content Security Policy errors
 

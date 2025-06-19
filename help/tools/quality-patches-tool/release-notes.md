@@ -2,6 +2,7 @@
 title: Release notes
 description: Learn about the patches available for Adobe Commerce and the issues they resolve.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
+type: Troubleshooting
 ---
 # Release notes
 

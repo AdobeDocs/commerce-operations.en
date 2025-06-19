@@ -4,6 +4,7 @@ description: The MDVA-43859 patch fixes the issue where the error *No such entit
 feature: Variables
 role: Admin
 exl-id: b8451b08-978a-44a2-8664-4369e832423b
+type: Troubleshooting
 ---
 # MDVA-43859: Error "No such entity with customerId =" logged when deleted customer logs in
 

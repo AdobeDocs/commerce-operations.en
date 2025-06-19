@@ -4,6 +4,7 @@ description: The MDVA-39181 patch solves the issue where related product rules s
 feature: Categories, Products
 role: Admin
 exl-id: 98f65b7d-2cb3-49ff-95ef-c23a922e49f2
+type: Troubleshooting
 ---
 # MDVA-39181: Related product rules show products from category undefined in rule
 

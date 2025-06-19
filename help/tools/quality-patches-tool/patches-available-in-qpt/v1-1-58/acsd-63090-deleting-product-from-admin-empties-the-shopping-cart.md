@@ -4,6 +4,7 @@ description: Apply the ACSD-63090 patch to fix the Adobe Commerce issue where a 
 feature: Shopping Cart, Quotes
 role: Admin, Developer
 exl-id: c07778cb-390f-4202-9539-7bb159e4b714
+type: Troubleshooting
 ---
 # ACSD-63090: Deleting a product from Admin empties the shopping cart
 

@@ -4,6 +4,7 @@ description: The MDVA-39482 fixes the issue where the product goes out of stock 
 feature: Data Import/Export, Orders, Products
 role: Admin
 exl-id: 9d705ebf-2372-4e59-b447-cdb5b0db32f4
+type: Troubleshooting
 ---
 # MDVA-39482: Product goes out of stock if imported with '0' quantity with backorders enabled
 

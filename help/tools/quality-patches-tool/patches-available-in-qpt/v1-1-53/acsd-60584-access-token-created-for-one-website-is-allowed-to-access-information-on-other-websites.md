@@ -4,6 +4,7 @@ description: Apply the ACSD-60584 patch to fix the issue where the access token 
 feature: Customers, GraphQL
 role: Admin, Developer
 exl-id: ea30ba92-4b7b-44f9-a1b1-97946061d9e6
+type: Troubleshooting
 ---
 # ACSD-60584: Access token created for one website is allowed to access information on other websites
 

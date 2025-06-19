@@ -4,6 +4,7 @@ description: The MDVA-41136 patch solves the issue where the expiration date of 
 feature: Cache
 role: Admin
 exl-id: f9fbbbdb-b440-4e94-a5b0-c03cdad9f010
+type: Troubleshooting
 ---
 # MDVA-41136: Expiration date of mage-cache-sessid is not extended
 

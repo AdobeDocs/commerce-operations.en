@@ -4,6 +4,7 @@ description: Apply the ACSD-48661 patch to fix the Adobe Commerce issue where wh
 feature: Admin Workspace, B2B, Companies, Orders
 role: Admin
 exl-id: 7115226e-5942-4a8f-9dec-b1b6f665eef8
+type: Troubleshooting
 ---
 # ACSD-48661: company credit limit comma separator validation issue
 

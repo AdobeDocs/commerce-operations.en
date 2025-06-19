@@ -4,6 +4,7 @@ description: Apply the ACP2E-3838 patch to fix the Adobe Commerce issue where [!
 feature: Page Builder, Page Content, Admin Workspace
 role: Admin, Developer
 exl-id: 0d590c0e-e21c-4553-a0a3-9332e22796f3
+type: Troubleshooting
 ---
 # ACP2E-3838: [!DNL Page Builder] CORS errors prevent saving changes in the admin panel in production mode
 

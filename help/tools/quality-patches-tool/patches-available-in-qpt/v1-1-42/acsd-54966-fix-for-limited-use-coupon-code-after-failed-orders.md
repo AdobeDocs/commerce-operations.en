@@ -4,6 +4,7 @@ description: Apply the ACSD-54966 patch to fix the Adobe Commerce issue preventi
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
 exl-id: e08062e5-62ff-4da6-918f-896af36edccc
+type: Troubleshooting
 ---
 # ACSD-54966: Fix for reusing coupon codes after failed orders
 

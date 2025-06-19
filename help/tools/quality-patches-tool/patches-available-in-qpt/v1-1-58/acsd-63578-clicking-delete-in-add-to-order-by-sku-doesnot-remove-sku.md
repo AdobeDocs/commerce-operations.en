@@ -4,6 +4,7 @@ description: Apply the ACSD-63578 patch to fix the Adobe Commerce issue where cl
 feature: Orders
 role: Admin, Developer
 exl-id: 12afceb5-db3c-4783-a532-93c4c71f05f4
+type: Troubleshooting
 ---
 # ACSD-63578: Clicking the **[!UICONTROL Delete]** icon in *[!UICONTROL Add to Order by SKU]* doesn't remove SKU
 

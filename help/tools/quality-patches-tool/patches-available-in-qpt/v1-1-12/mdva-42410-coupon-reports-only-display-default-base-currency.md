@@ -4,6 +4,7 @@ description: The MDVA-42410 patch fixes the issue where the coupon reports only 
 feature: Orders
 role: Admin
 exl-id: 97b4d9cf-12fd-4659-ad71-914c8422da37
+type: Troubleshooting
 ---
 # MDVA-42410: Coupon reports only display default base currency
 

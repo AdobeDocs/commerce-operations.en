@@ -4,6 +4,7 @@ description: Apply the ACSD-59786 patch to fix the Adobe Commerce issue where a 
 feature: GraphQL, Quotes, Companies
 role: Admin, Developer
 exl-id: 3c7aaa99-a2e0-44fe-9426-b24095615915
+type: Troubleshooting
 ---
 # ACSD-59786: GraphQL returns an error when fetching a `quote_id` for an expired quote
 

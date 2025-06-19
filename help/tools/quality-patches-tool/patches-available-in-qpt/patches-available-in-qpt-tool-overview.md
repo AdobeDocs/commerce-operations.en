@@ -4,6 +4,7 @@ description: This article provides an overview of [!DNL Quality Patches Tool] (Q
 feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
+type: Troubleshooting
 ---
 # Patches available in QPT tool overview
 

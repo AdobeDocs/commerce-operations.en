@@ -4,6 +4,7 @@ description: Apply the ACSD-54342 patch to fix the Adobe Commerce issue where an
 feature: Roles/Permissions
 role: Admin, Developer
 exl-id: 34324a18-45af-462b-a6e6-6b6a02d4d331
+type: Troubleshooting
 ---
 # ACSD-54342: Error message when importing CSV file without valid data
 

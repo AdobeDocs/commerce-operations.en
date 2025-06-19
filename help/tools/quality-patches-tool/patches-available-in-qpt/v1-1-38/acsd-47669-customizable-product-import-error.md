@@ -4,6 +4,7 @@ description: Apply the ACSD-47669 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin, Developer
 exl-id: e1a3b3b4-0392-4325-9766-a83276c1a593
+type: Troubleshooting
 ---
 # ACSD-47669: Internal server error when importing products with customizable options
 

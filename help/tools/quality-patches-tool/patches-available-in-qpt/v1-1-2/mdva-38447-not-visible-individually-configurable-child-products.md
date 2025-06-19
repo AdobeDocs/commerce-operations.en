@@ -4,6 +4,7 @@ description: The MDVA-38447 Adobe Commerce patch fixes the issue where "Not visi
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
 exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
+type: Troubleshooting
 ---
 # MDVA-38447: "Not visible individually" configurable child products are returned in GraphQL response and slow MySQL query
 

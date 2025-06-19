@@ -4,6 +4,7 @@ description: Apply the ACSD-56246 patch to fix the Adobe Commerce issue where sc
 feature: Products, Attributes, Staging
 role: Admin, Developer
 exl-id: 1751a03d-2610-423f-be2f-b9d060452904
+type: Troubleshooting
 ---
 # ACSD-56246: Scheduling product updates clears multiselect attributes values
 

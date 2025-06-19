@@ -4,6 +4,7 @@ description: Apply the ACSD-48210 patch to fix the Adobe Commerce issue of updat
 feature: Products, Attributes
 role: Admin, Developer
 exl-id: 944089c6-2f05-4c51-86ea-ede124bff80b
+type: Troubleshooting
 ---
 # ACSD-48210: Store view specific scope attributes override global values
 

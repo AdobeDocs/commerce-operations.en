@@ -4,6 +4,7 @@ description: Apply the ACSD-57337 patch to fix the Adobe Commerce issue where an
 feature: Companies, B2B, Configuration
 role: Admin, Developer
 exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
+type: Troubleshooting
 ---
 # ACSD-57337: Admin user with access restrictions could view all companies in the *Companies* grid
 

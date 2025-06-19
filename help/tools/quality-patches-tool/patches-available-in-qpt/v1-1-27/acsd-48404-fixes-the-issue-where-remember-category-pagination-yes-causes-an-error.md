@@ -4,6 +4,7 @@ description: Apply the ACSD-48404 patch to fix the Adobe Commerce issue where *[
 feature: Categories
 role: Admin
 exl-id: 8c08f0e2-d4f9-4ac8-b8e8-85b4a7de98fb
+type: Troubleshooting
 ---
 # ACSD-48404: *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]* causes error when pressing browser's back button
 

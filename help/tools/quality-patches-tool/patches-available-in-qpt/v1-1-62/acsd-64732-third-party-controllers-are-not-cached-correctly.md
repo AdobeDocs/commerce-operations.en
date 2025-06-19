@@ -4,6 +4,7 @@ description: Apply the ACSD-64732 patch to fix the Adobe Commerce issue where th
 feature: Cache
 role: Admin, Developer
 exl-id: 378e5a96-06dd-4796-9e45-a67cf539fcce
+type: Troubleshooting
 ---
 # ACSD-64732: Third-party controllers not cached correctly with customer segments
 

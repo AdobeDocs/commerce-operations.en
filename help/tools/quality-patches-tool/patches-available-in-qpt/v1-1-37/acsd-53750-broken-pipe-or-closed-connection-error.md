@@ -4,6 +4,7 @@ description: Apply the ACSD-53750 patch to fix the Adobe Commerce issue where a 
 feature: Products
 role: Admin, Developer
 exl-id: 6c2f092f-a98e-4990-839c-a7291635f8af
+type: Troubleshooting
 ---
 # ACSD-53750: *Broken pipe or closed connection* error during multi-threaded `catalog_product_price` reindex
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-55414 patch to fix the Adobe Commerce issue when the
 feature: Attributes
 role: Admin, Developer
 exl-id: 76309cef-559e-4a55-a27b-7d807ef9f74e
+type: Troubleshooting
 ---
 # ACSD-55414: Bad performance when MariaDB tries to cast the `entitys_ids`
 

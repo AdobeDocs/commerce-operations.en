@@ -4,6 +4,7 @@ description: Apply the ACSD-57565 patch to fix the Adobe Commerce issue where th
 feature: Roles/Permissions
 role: Admin, Developer
 exl-id: dc4ad263-725e-4605-9b85-fc4305ab9a29
+type: Troubleshooting
 ---
 # ACSD-57565: The order dashboard displays incorrect order information
 

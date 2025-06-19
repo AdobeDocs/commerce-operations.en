@@ -4,6 +4,7 @@ description: 'The ACSD-46213 patch fixes the issue where the category tree reque
 feature: Categories
 role: Admin
 exl-id: 2cd4b102-db52-424f-9a7f-d775cb2b2c49
+type: Troubleshooting
 ---
 # ACSD-46213: Category tree request limited to 20 categories
 

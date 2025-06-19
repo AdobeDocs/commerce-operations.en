@@ -4,6 +4,7 @@ description: Apply the ACSD-58442 patch to fix the Adobe Commerce issue where de
 feature: Storefront
 role: Admin, Developer
 exl-id: 86ea64aa-10fc-4fa3-9902-918fb8983ca0
+type: Troubleshooting
 ---
 # ACSD-58442: Fixes the issue where devices with 768px width treated as mobile, causing menu and header to load in mobile view not desktop
 

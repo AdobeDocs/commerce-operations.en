@@ -4,6 +4,7 @@ description: Apply the ACSD-49527 patch to fix the Adobe Commerce issue where th
 feature: B2B, GraphQL, Companies, Roles/Permissions
 role: Admin
 exl-id: 2fbc80ad-5a15-471b-99f0-213609ab3978
+type: Troubleshooting
 ---
 # ACSD-49527: GraphQL company roles don't display pagination correctly
 

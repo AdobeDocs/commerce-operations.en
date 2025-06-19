@@ -4,6 +4,7 @@ description: Apply the ACSD-58054 patch to fix the Adobe Commerce issue where it
 feature: Customers, API Mesh
 role: Admin, Developer
 exl-id: 143cfc3e-0220-4950-8528-acf3bce686db
+type: Troubleshooting
 ---
 # ACSD-58054: API token generation for inactive customers
 

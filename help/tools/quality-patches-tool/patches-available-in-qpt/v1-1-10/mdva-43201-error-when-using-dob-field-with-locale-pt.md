@@ -4,6 +4,7 @@ description: The MDVA-43201 patch solves the issue where an error occurs when us
 feature: B2B, Cache
 role: Admin
 exl-id: be087420-1ee3-40cc-8ff7-62c5641609cc
+type: Troubleshooting
 ---
 # MDVA-43201: Error when using DOB field with locale PT
 

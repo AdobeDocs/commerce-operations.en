@@ -4,6 +4,7 @@ description: The MDVA-43414 patch solves the PHP fatal error that occurs when ru
 feature: Inventory, Orders
 role: Admin
 exl-id: 893a5665-ff1b-4862-a984-d9abf642fba3
+type: Troubleshooting
 ---
 # MDVA-43414: PHP fatal error when running "inventory.reservations.updateSalabilityStatus"
 

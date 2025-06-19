@@ -4,6 +4,7 @@ description: Apply the ACSD-58141 patch to fix the Adobe Commerce issue where `P
 feature: Customers, Cache
 role: Admin, Developer
 exl-id: c188c215-204c-489f-8703-4c81ca8703b7
+type: Troubleshooting
 ---
 # ACSD-58141: PHPSESSID regenerates on [!DNL POST] requests for logged-in customers if the L2 Redis cache is enabled
 

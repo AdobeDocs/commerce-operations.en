@@ -4,6 +4,7 @@ description: Apply the ACSD-52095 patch to fix the Adobe Commerce issue where th
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: 1f8415aa-23c6-480a-b54d-37b2b2d3199a
+type: Troubleshooting
 ---
 # ACSD-52095: [!UICONTROL Manage Stock] value is wrong while exporting CSV
 

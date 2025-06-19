@@ -4,6 +4,7 @@ description: Apply the ACSD-47988 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Data Import/Export, Page Builder, Products
 role: Admin
 exl-id: 2cb3b4ac-38df-4832-b894-b34bb3d7bbc6
+type: Troubleshooting
 ---
 # ACSD-47988: product export trims HTML tags from page builder product description
 

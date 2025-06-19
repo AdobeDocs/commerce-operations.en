@@ -4,6 +4,7 @@ description: Apply the ACSD-55238 patch to fix the Adobe Commerce issue where a 
 feature: Products, Page Builder, Page Content
 role: Admin, Developer
 exl-id: 39ccf1bb-a71a-47a0-b252-e6331e2df9b0
+type: Troubleshooting
 ---
 # ACSD-55238: Saving the empty product meta description
 

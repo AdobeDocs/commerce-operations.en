@@ -4,6 +4,7 @@ description: Apply the ACSD-61622 patch to fix the Adobe Commerce issue where [!
 feature: Shipping/Delivery
 role: Admin, Developer
 exl-id: 59e33dc4-3f9b-4590-95b6-e98c77e750ee
+type: Troubleshooting
 ---
 # ACSD-61622: [!DNL FedEx] account specific rates are missing in REST API response
 

@@ -4,6 +4,7 @@ description: The MDVA-42806 patch solves the issue where a new company registrat
 feature: REST, B2B, Communications, Companies
 role: Admin
 exl-id: 4fc2ee54-d88b-4940-b6ac-e25ad61e5c66
+type: Troubleshooting
 ---
 # MDVA-42806: New company registration email is sent each time existing company is updated
 

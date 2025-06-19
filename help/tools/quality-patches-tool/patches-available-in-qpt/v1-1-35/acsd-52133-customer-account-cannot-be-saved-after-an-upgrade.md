@@ -4,6 +4,7 @@ description: Apply the ACSD-52133 patch to fix the Adobe Commerce issue where a 
 feature: Customers, Upgrade
 role: Admin
 exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
+type: Troubleshooting
 ---
 # ACSD-52133: Customer account cannot be saved after an upgrade
 

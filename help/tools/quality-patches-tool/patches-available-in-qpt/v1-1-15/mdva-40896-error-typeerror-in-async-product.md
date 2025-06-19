@@ -4,6 +4,7 @@ description: 'The MDVA-40896 patch fixes the issue where the `Error: TypeError: 
 feature: Products
 role: Admin
 exl-id: 24eedd8d-4ae1-4ebc-a3e4-993f0c361a67
+type: Troubleshooting
 ---
 # MDVA-40896: 'Error: TypeError: Argument 3' error in async product
 

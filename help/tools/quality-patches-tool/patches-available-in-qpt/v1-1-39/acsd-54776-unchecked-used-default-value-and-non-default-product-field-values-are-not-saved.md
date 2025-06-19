@@ -4,6 +4,7 @@ description: Apply the ACSD-54776 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin, Developer
 exl-id: d9f63abb-5d00-4777-a186-1120344af018
+type: Troubleshooting
 ---
 # ACSD-54776: Unchecked *[!UICONTROL Use Default Value]* and non-default product field values are not saved
 

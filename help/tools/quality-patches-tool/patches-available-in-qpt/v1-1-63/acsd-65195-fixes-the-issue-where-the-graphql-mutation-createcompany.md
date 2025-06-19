@@ -4,6 +4,7 @@ description: Apply the ACSD-65195 patch to fix the Adobe Commerce issue where th
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
 exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
+type: Troubleshooting
 ---
 # ACSD-65195: GraphQL `createCompany` mutation returns an error for a country without a required region
 

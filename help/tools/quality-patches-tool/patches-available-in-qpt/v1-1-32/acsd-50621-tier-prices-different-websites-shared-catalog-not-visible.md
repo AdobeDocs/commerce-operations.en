@@ -4,6 +4,7 @@ description: Apply the ACSD-50621 patch to fix the Adobe Commerce issue where th
 feature: Catalog Management, Orders
 role: Admin
 exl-id: 2256dee7-e544-4723-9753-ba9cf7247880
+type: Troubleshooting
 ---
 # ACSD-50621: Tier prices for different websites in shared catalog are not visible
 

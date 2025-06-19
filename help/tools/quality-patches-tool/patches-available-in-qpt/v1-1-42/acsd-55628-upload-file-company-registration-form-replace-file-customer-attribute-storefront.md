@@ -4,6 +4,7 @@ description: Apply the ACSD-55628 patch to fix the Adobe Commerce issue with upl
 feature: Storefront, Attributes, B2B, Customers
 role: Admin, Developer
 exl-id: a008a205-ec1d-4a1d-9cd2-75f10a937057
+type: Troubleshooting
 ---
 # ACSD-55628: Uploading file on company registration form; replacing file for customer attribute on storefront
 

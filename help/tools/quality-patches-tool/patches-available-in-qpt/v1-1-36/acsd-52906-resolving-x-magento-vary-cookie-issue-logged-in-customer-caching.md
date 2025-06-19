@@ -4,6 +4,7 @@ description: Apply the ACSD-52906 patch to fix the Adobe Commerce issue where th
 feature: Cache
 role: Admin, Developer
 exl-id: 487b7588-7131-4502-b714-05f37520991f
+type: Troubleshooting
 ---
 # ACSD-52906: Resolving X-Magento-Vary cookie issue for logged-in customers
 

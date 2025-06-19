@@ -4,6 +4,7 @@ description: Apply the ACSD-62708 patch to fix the Adobe Commerce issue where [!
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 037a5831-dbc7-4834-ab8e-9b1f765b92b2
+type: Troubleshooting
 ---
 # ACSD-62708: [!DNL TinyMCE] 7 editor font size in admin panel shows PT
 

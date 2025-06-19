@@ -4,6 +4,7 @@ description: Apply the ACSD-50817 patch to optimize the cron job `sales_clean_qu
 feature: Quotes
 role: Admin
 exl-id: b6cd412f-2f37-438b-9abc-d45de6ed54d6
+type: Troubleshooting
 ---
 # ACSD-50817: Optimizes cron job `sales_clean_quotes` to run faster
 

@@ -4,6 +4,7 @@ description: The MDVA-37748 patch fixes the issue where a GraphQL query returns 
 feature: B2B, GraphQL, Catalog Management, Categories, Products
 role: Admin
 exl-id: 8aa00953-dbf0-4533-9b53-b809bf59ec20
+type: Troubleshooting
 ---
 # MDVA-37748: GraphQL query returns products not assigned to shared catalog
 

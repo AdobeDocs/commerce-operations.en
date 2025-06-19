@@ -4,6 +4,7 @@ description: The MDVA-37234 patch fixes the issue where adding an item to the ca
 feature: Orders, Shopping Cart
 role: Admin
 exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
+type: Troubleshooting
 ---
 # MDVA-37234: Adding item to cart multiple times creates duplicate line item
 

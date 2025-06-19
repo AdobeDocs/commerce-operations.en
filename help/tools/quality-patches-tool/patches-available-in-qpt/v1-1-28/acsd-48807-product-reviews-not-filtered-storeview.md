@@ -4,6 +4,7 @@ description: Apply the ACSD-48807 patch to fix the Adobe Commerce issue where pr
 feature: Admin Workspace, Products
 role: Admin
 exl-id: ce2cf5a1-a650-4eaa-8caf-f34dd0111c36
+type: Troubleshooting
 ---
 # ACSD-48807: Product reviews not filtered by storeview
 

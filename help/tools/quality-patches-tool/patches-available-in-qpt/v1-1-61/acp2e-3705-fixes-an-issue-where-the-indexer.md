@@ -4,6 +4,7 @@ description: Apply the ACP2E-3705 patch to fix the Adobe Commerce issue where th
 feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: 111325fa-8ed5-45f9-9e68-b52f4425d253
+type: Troubleshooting
 ---
 # ACP2E-3705: `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set
 

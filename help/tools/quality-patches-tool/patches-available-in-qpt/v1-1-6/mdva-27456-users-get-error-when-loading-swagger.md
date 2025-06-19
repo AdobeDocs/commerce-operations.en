@@ -4,6 +4,7 @@ description: The MDVA-27456 patch fixes the issue where users get an error when 
 feature: Tools and External Services
 role: Admin
 exl-id: a7d5dc7d-b916-4a09-9068-646f8474bba4
+type: Troubleshooting
 ---
 # MDVA-27456: Users get an error when loading Swagger
 

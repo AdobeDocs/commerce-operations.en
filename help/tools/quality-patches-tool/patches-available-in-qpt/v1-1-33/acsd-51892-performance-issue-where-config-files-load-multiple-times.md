@@ -4,6 +4,7 @@ description: Apply the ACSD-51892 patch to fix the Adobe Commerce performance is
 feature: Observability
 role: Admin
 exl-id: ef3d3b85-b6a0-4037-95c0-e84125fa9088
+type: Troubleshooting
 ---
 # ACSD-51892: Performance issue where config files load multiple times
 

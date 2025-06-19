@@ -4,6 +4,7 @@ description: Apply the ACSD-53790 patch to fix the Adobe Commerce issue where mu
 feature: REST, Products
 role: Admin, Developer
 exl-id: 7feb29bd-cd81-4d84-b572-53f625743883
+type: Troubleshooting
 ---
 # ACSD-53790: Multiple RMAs for a single product can be created via Rest API
 

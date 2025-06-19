@@ -4,6 +4,7 @@ description: The MDVA-45781 patch solves the issue where the store front search 
 feature: Cache, Native Luma Frontend Development, Search
 role: Admin
 exl-id: f761461b-2dd0-45d2-b80d-57793f6f0924
+type: Troubleshooting
 ---
 # ACSD-45781: Store front search field not displayed on mobile
 

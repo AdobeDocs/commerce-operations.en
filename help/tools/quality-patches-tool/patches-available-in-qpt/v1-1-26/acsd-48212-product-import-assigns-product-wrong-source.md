@@ -4,6 +4,7 @@ description: Apply the ACSD-48212 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Data Import/Export, Products
 role: Admin
 exl-id: d573d95b-95fc-4f59-b518-18088855a154
+type: Troubleshooting
 ---
 # ACSD-48212: product import assigns product to wrong source
 

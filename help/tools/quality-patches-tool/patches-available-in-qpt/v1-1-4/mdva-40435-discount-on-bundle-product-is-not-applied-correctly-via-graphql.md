@@ -4,6 +4,7 @@ description: The MDVA-40435 patch solves the issue where the discount on a bundl
 feature: GraphQL, Orders, Personalization, Products
 role: Admin
 exl-id: 001be138-5d09-455d-a597-57115cd21a25
+type: Troubleshooting
 ---
 # MDVA-40435: Discount on bundle product is not applied correctly via GraphQL
 

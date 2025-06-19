@@ -4,6 +4,7 @@ description: Apply the ACSD-50345 patch to fix the Adobe Commerce issue where th
 feature: Checkout, Orders
 role: Admin
 exl-id: eae9a6ad-0999-4581-b3c0-7667ee7beb54
+type: Troubleshooting
 ---
 # ACSD-50345: reCAPTCHA issues during the checkout
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-47332 patch to fix the Adobe Commerce issue where cr
 feature: Configuration
 role: Admin
 exl-id: ffe6c8f7-0e4c-4a22-853a-45d708bf8164
+type: Troubleshooting
 ---
 # ACSD-47332: cron fails with error reported only when running between 00:00 to 00:59 UTC
 

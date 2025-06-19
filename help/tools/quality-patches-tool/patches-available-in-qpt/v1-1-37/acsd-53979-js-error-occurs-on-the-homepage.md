@@ -4,6 +4,7 @@ description: Apply the ACSD-53979 patch to fix the Adobe Commerce issue where a 
 feature: Page Content
 role: Admin, Developer
 exl-id: 34a1802e-b64c-4d5d-85df-356c0740aa41
+type: Troubleshooting
 ---
 # ACSD-53979: JavaScript error occurs on the homepage
 

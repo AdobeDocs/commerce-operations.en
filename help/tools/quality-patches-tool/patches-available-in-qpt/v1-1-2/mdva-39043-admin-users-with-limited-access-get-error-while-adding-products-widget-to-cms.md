@@ -4,6 +4,7 @@ description: The MDVA-39043 patch fixes the issue where admin users with limited
 feature: Admin Workspace, CMS, Products
 role: Admin
 exl-id: 82488249-cca3-4a28-bdc1-fa93a4c9dc2f
+type: Troubleshooting
 ---
 # MDVA-39043: Admin users get error adding widget to CMS page
 

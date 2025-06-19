@@ -4,6 +4,7 @@ description: Apply the ACSD-48813 patch to fix the Adobe Commerce issue where se
 feature: Admin Workspace, Attributes, Search
 role: Admin
 exl-id: 98ef7eb1-c13e-4c56-9a25-8e61cfb5fade
+type: Troubleshooting
 ---
 # ACSD-48813: Search not showing relevant results based on search weight of attributes
 

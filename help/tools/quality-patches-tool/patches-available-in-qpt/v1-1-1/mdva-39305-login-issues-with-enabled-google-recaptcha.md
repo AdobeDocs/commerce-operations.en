@@ -4,6 +4,7 @@ description: Apply the MDVA-39305 patch to fix the Adobe Commerce issue where re
 feature: Console
 role: Admin
 exl-id: c40fd84a-73dc-42bd-8cda-58738615fbba
+type: Troubleshooting
 ---
 # MDVA-39305: Login issue with enabled Google reCAPTCHA
 

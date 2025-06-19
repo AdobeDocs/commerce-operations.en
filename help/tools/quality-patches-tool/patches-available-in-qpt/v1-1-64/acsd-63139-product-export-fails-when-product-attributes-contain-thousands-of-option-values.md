@@ -4,6 +4,7 @@ description: Apply the ACSD-63139 patch to fix the Adobe Commerce issue where pr
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
+type: Troubleshooting
 ---
 # ACSD-63139: Product export fails when product attributes contain thousands of option values
 

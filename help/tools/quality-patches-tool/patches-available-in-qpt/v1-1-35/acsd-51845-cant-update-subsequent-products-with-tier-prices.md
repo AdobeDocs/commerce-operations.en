@@ -4,6 +4,7 @@ description: Apply the ACSD-51845 patch to fix the Adobe Commerce issue where yo
 feature: REST, Products
 role: Admin
 exl-id: 83d97946-83da-4c1b-8f2a-21a64ee84e93
+type: Troubleshooting
 ---
 # ACSD-51845: Can't update subsequent products with tier prices & different attribute sets via asynch bulk [!DNL API]
 

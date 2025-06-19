@@ -4,6 +4,7 @@ description: The MDVA-41164 patch solves the issue where the admin user is not a
 feature: Admin Workspace, Attributes, B2B, Companies
 role: Developer
 exl-id: 9d1792e0-ba7b-444b-b1b1-771fd0e328eb
+type: Troubleshooting
 ---
 # MDVA-41164: Cannot save or edit Company with custom customer attributes
 

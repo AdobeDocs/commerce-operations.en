@@ -4,6 +4,7 @@ description: The MC-42528 patch solves the issue where the GraphQL query of `cat
 feature: Catalog Management, Categories, GraphQL, Customer Service
 role: Admin
 exl-id: 0611a7ff-9d55-4d95-9d4e-9ce1d9096bb6
+type: Troubleshooting
 ---
 # MC-42528: GraphQL query of categoryList shows all categories
 

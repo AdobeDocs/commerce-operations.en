@@ -3,6 +3,7 @@ title: 'ACSD-66093: Guest customer name fields allow email input causing invalid
 description: Apply the ACSD-66093 patch to fix the Adobe Commerce issue where it is possible to enter email addresses into the Guest customer **[!UICONTROL First Name]** and **[!UICONTROL Last Name]** fields and send invalid order confirmation emails.
 feature: Checkout
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66093: Guest customer name fields allow email input causing invalid order emails

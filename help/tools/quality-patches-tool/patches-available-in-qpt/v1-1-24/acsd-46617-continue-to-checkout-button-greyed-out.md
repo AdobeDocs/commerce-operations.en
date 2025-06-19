@@ -4,6 +4,7 @@ description: Apply the ACSD-46617 patch to solve the Adobe Commerce issue where 
 feature: Checkout, Orders
 role: Admin
 exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
+type: Troubleshooting
 ---
 # ACSD-46617: "[!UICONTROL Continue to Checkout]" button greyed out when subtotal greater than "[!UICONTROL Minimum Order Amount]"
 

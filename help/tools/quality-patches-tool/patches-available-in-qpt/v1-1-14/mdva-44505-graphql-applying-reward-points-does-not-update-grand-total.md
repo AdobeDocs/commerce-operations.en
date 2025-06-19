@@ -4,6 +4,7 @@ description: The MDVA-44505 patch solves the issue where the GraphQL query for a
 feature: GraphQL, Orders, Rewards, Shopping Cart
 role: Admin
 exl-id: 543698d8-8963-4bf7-af82-11c2498e882e
+type: Troubleshooting
 ---
 # MDVA-44505: GraphQL query for cart applying reward points does not update grand total
 

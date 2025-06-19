@@ -4,6 +4,7 @@ description: Apply the ACSD-65164 patch to fix the Adobe Commerce issue where th
 feature: Products, Orders
 role: Admin, Developer
 exl-id: 22b72d24-4852-45ba-ac98-df9565f94539
+type: Troubleshooting
 ---
 # ACSD-65164: Error message when reordering configurable product with a single checkbox custom option selected
 

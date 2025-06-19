@@ -4,6 +4,7 @@ description: Apply the ACSD-63242 patch to fix the Adobe Commerce issue of slow 
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: 2d9114c8-72e4-4a11-89e7-b1a41c1fe14f
+type: Troubleshooting
 ---
 # ACSD-63242: Slow import when adding more than 10,000 catalog products 
 

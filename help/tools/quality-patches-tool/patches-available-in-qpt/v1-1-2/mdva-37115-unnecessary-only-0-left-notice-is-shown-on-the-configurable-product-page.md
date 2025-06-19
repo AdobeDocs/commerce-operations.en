@@ -4,6 +4,7 @@ description: The MDVA-37115 patch solves the issue where the unnecessary *Only 0
 feature: Configuration, Products, Orders
 role: Admin
 exl-id: ba94b2fd-6a7d-4194-afd8-798854431b57
+type: Troubleshooting
 ---
 # MDVA-37115: "Only 0 left" notice is shown on product page
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-47079 patch to fix the Adobe Commerce issue where co
 feature: Orders, Products
 role: Admin
 exl-id: f035f530-fae5-4b61-8af9-044f6ec02284
+type: Troubleshooting
 ---
 # ACSD-47079: composite products' stock status not updated when sub-product stock status changes
 

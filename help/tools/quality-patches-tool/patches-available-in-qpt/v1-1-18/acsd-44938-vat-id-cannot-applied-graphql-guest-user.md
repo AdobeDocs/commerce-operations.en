@@ -4,6 +4,7 @@ description: The ACSD-44938 patch fixes the issue where the `VAT_ID` can't be ap
 feature: Admin Workspace, GraphQL
 role: Admin
 exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca
+type: Troubleshooting
 ---
 # ACSD-44938: VAT_ID can't be applied in [!DNL GraphQL] request for guest user
 

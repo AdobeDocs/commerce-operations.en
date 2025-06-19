@@ -4,6 +4,7 @@ description: Apply the ACSD-50949 patch to fix the Adobe Commerce issue where th
 feature: Orders, Search
 role: Admin
 exl-id: 89e54940-e763-4554-8641-a162516bcabd
+type: Troubleshooting
 ---
 # ACSD-50949: Price filter in advanced search is not returning proper results when used with SKU filter
 

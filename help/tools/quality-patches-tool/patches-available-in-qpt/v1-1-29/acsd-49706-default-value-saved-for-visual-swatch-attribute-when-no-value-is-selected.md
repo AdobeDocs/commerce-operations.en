@@ -4,6 +4,7 @@ description: Apply the ACSD-49706 patch to fix the Adobe Commerce issue where a 
 feature: Admin Workspace, Attributes
 role: Admin
 exl-id: fa3cb0a1-f898-4826-aa64-efeba1af58a8
+type: Troubleshooting
 ---
 # ACSD-49706: Default value saved for visual swatch attribute when no value is selected
 

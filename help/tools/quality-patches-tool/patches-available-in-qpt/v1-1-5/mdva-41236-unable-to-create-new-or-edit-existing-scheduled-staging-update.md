@@ -4,6 +4,7 @@ description: The MDVA-41236 patch fixes the issue where users are unable to crea
 feature: Products, Staging
 role: Admin
 exl-id: 82192778-4f25-40a0-882e-d52d32c433c2
+type: Troubleshooting
 ---
 # MDVA-41236: Unable to create new or edit existing scheduled updates for product
 

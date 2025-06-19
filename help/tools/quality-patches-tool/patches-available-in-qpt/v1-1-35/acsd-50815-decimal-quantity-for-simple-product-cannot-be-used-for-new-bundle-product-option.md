@@ -4,6 +4,7 @@ description: Apply the ACSD-50815 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin
 exl-id: 5cd69abe-bd88-497d-9696-804c787b73ef
+type: Troubleshooting
 ---
 # ACSD-50815: Decimal quantity for simple product cannot be used for new bundled product option
 

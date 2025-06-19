@@ -4,6 +4,7 @@ description: The ACSD-45488 patch solves the issue where a configurable product 
 feature: Configuration, Orders, Products, Returns
 role: Admin
 exl-id: 53f34e8e-00bd-4386-bebf-b15882e36da1
+type: Troubleshooting
 ---
 # ACSD-45488: Configurable product with multiple sources not returned to in stock automatically
 
