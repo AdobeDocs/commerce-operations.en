@@ -70,7 +70,7 @@ Email notifications were not sent to customers after updating their email addres
 			}
 		}
 	}
-```
+        ```
 
 <u>Expected results</u>:
 
