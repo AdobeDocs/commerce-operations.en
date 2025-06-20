@@ -95,7 +95,9 @@ As a result of the two example commands, Commerce adds lines similar to the foll
 
 ## New Valkey cache implementation
 
-As of Commerce 2.4.9, it is recommended to use the Valkey cache implementation: `\Magento\Framework\Cache\Backend\Valkey`.
+[!BADGE 2.4.9-alpha]{type=Nuetral tooltip="Available in 2.4.9-alpha only."}
+
+Starting with Adobe Commerce 2.4.9, Adobe recommends using the Valkey cache implementation: `\Magento\Framework\Cache\Backend\Valkey`.
 
 ```php
 'cache' => [
