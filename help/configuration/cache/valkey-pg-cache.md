@@ -38,7 +38,7 @@ The following example enables Valkey default caching, sets the host to `127.0.0.
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
 ```
 
-## Configure  page caching
+## Configure page caching
 
 To configure Valkey page caching on Commerce, run the `setup:config:set` command with additional parameters.
 
