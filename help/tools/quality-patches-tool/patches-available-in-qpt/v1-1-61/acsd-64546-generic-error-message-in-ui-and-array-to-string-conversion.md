@@ -4,6 +4,7 @@ description: Apply the ACSD-64546 patch to fix the Adobe Commerce issue where a 
 feature: Shipping/Delivery
 role: Admin, Developer
 exl-id: 458371bc-4afe-4675-b090-5797e05c5b88
+type: Troubleshooting
 ---
 # ACSD-64546: Generic error message in UI and *Array to string conversion* exception during UPS label creation
 

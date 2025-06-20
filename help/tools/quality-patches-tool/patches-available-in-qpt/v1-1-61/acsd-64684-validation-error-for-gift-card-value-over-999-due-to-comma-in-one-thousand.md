@@ -4,6 +4,7 @@ description: Apply the ACSD-64684 patch to fix the Adobe Commerce issue where a 
 feature: Catalog Management
 role: Admin, Developer
 exl-id: 327c5d28-b52c-4da9-a905-8a3deb755241
+type: Troubleshooting
 ---
 # ACSD-64684: Validation error when saving a gift card with a value over 999 due to the comma in one thousand (1,000)
 

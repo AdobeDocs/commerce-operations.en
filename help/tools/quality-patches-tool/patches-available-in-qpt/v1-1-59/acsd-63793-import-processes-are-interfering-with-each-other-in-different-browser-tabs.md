@@ -4,6 +4,7 @@ description: Apply the ACSD-63793 patch to fix the Adobe Commerce issue where im
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: f6bed4c4-5ea2-47e7-97fa-d7717470297f
+type: Troubleshooting
 ---
 # ACSD-63793: Import processes interfere with each other in different browser tabs
 

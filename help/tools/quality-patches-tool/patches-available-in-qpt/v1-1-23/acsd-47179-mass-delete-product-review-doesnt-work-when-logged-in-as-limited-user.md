@@ -4,10 +4,11 @@ description: Apply the ACSD-47179 patch to fix the Adobe Commerce issue where ma
 feature: Marketing Tools, Products, Roles/Permissions
 role: Admin
 exl-id: 7131ee47-fadc-4e93-b8b2-5b2e0521ad97
+type: Troubleshooting
 ---
 # ACSD-47179: mass deletion of product reviews does not work when logged in as a limited user role
 
-The ACSD-47179 patch fixes the issue where mass deletion of product reviews does not work when logged in as a limited user role. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.23 is installed. The patch ID is ACSD-47179. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
+The ACSD-47179 patch fixes the issue where mass deletion of product reviews does not work when logged in as a limited user role. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.23 is installed. The patch ID is ACSD-47179. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
@@ -58,7 +59,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

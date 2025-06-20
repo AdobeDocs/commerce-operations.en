@@ -3,6 +3,7 @@ title: Best practices for Valkey service configuration
 description: Learn how to improve caching performance by using the extended Valkey cache implementation for Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices, Cache
+exl-id: ca1598b0-07c6-4338-aed1-f2ba05375197
 ---
 # Best practices for Valkey service configuration
 

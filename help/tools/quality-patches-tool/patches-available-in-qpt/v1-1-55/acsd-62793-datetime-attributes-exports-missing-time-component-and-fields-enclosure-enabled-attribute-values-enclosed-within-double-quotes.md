@@ -4,6 +4,7 @@ description: Apply the ACSD-62793 patch to fix the Adobe Commerce issue where da
 feature: Attributes, Data Import/Export, Catalog Service
 role: Admin, Developer
 exl-id: 340dcc84-dcb8-40ed-b2ab-2d950d1dd1ca
+type: Troubleshooting
 ---
 # ACSD-62793: Datetime attributes in exports missing time component. Additionally if **[!UICONTROL Fields Enclosure]** enabled, attribute values enclosed within double-quotes
 

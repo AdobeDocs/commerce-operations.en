@@ -4,6 +4,7 @@ description: Apply the ACSD-64112 patch to fix the Adobe Commerce issue where th
 feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: c95f179d-5291-481f-b655-08a9db608513
+type: Troubleshooting
 ---
 # ACSD-64112: `indexer_update_all_views` cron execution fails when `MAGE_INDEXER_THREADS_COUNT` is set
 

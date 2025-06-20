@@ -4,6 +4,7 @@ description: Apply the ACSD-60344 patch to fix the Adobe Commerce issue where du
 feature: Purchase Orders
 role: Admin, Developer
 exl-id: c4d415ee-b1ac-4094-9209-19b91f9a7666
+type: Troubleshooting
 ---
 # ACSD-60344: Duplicate order confirmation emails on using *[!UICONTROL Purchase Order]* with auto-approval 
 

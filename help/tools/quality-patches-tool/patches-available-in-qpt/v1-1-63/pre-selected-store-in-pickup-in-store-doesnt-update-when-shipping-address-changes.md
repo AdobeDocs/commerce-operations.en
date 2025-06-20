@@ -4,6 +4,7 @@ description: Apply the ACSD-64753 patch to fix the Adobe Commerce issue where th
 feature: Inventory
 role: Admin, Developer
 exl-id: 4efc99d6-88a3-43f9-88d4-dedb9d8a269e
+type: Troubleshooting
 ---
 # ACSD-64753: Pre-selected store in "Pickup in Store" doesn't update when shipping address changes
 

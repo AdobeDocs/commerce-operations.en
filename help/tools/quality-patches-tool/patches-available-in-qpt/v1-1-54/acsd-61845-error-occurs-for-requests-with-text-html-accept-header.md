@@ -4,6 +4,7 @@ description: Apply the ACSD-61845 patch to fix the Adobe Commerce issue where se
 feature: B2B
 role: Admin, Developer
 exl-id: 6fa6c3ff-bb45-4b9e-afd4-95692acb0a90
+type: Troubleshooting
 ---
 # ACSD-61845: Error occurs for requests with *text/html* accept header
 

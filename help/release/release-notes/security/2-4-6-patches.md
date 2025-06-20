@@ -8,6 +8,30 @@ exl-id: cde096ac-d192-490d-873a-475996c474ff
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.6-p11
+
+The Adobe Commerce 2.4.6-p11 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
+
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+This release includes the following highlights:
+
+* **MariaDB support**—Added support for MariaDB 10.11.
+
+* **API performance enhancement**—Resolves performance degradation in bulk asynchronous web API endpoints that were introduced after the previous security patch.<!-- AC-14078 -->
+
+* **CMS Blocks access fix**—Resolves an issue where Admin users with restricted permissions (such as merchandising-only access) were unable to view the [!UICONTROL CMS Blocks] listing page. 
+
+  Previously, these users encountered an error due to missing configuration parameters after installing previous security patches.<!-- AC-14087 -->
+
+* **Cookie limit compatibility**—Resolves a backward-incompatible change involving the `MAX_NUM_COOKIES` constant in the framework. This update restores expected behavior and ensures compatibility for extensions or customizations that interact with cookie limits.<!-- AC-14475 -->
+
+* **Async operations**—Restricted async operations for overriding previous customers orders.<!-- AC-13917 -->
+
 ## 2.4.6-p10
 
 The Adobe Commerce 2.4.6-p10 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.

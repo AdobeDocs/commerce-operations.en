@@ -4,6 +4,7 @@ description: Apply the ACSD-61528 patch to resolve the Adobe Commerce issue wher
 feature: GraphQL, B2B, Companies, Roles/Permissions
 role: Admin, Developer
 exl-id: 81d78746-e723-4b18-860c-d973158b469c
+type: Troubleshooting
 ---
 # ACSD-61528: Retrieving roles using GraphQL returns no results
 

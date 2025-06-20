@@ -4,10 +4,11 @@ description: Apply the ACSD-54018 patch to fix the Adobe Commerce issue where th
 feature: Attributes, Catalog Management, Page Builder, Page Content, Storefront
 role: Admin, Developer
 exl-id: 2fb7ca37-78cc-45f4-86a3-d922cf4d1457
+type: Troubleshooting
 ---
 # ACSD-54018: Performance issue with catalog widget product List
 
-The ACSD-54018 patch fixes the issue where the page loads slowly when adding a catalog widget product list with condition and attribute type boolean. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.38 is installed. The patch ID is ACSD-54018. Please note that the issue was fixed in Adobe Commerce 2.4.6.
+The ACSD-54018 patch fixes the issue where the page loads slowly when adding a catalog widget product list with condition and attribute type boolean. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.38 is installed. The patch ID is ACSD-54018. Please note that the issue was fixed in Adobe Commerce 2.4.6.
 
 ## Affected products and versions
 
@@ -67,7 +68,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 
