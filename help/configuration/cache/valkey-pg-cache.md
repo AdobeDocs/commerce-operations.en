@@ -11,28 +11,26 @@ You must [install Valkey](config-redis.md#install-redis) before continuing.
 
 ## Configure Valkey default caching
 
-Run the `setup:config:set` command and specify parameters that specific to Valkey default caching.
+Run the `setup:config:set` command and specify parameters for Valkey default caching.
 
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
-With the following parameters:
-
 - `--cache-backend=valkey` enables the valkey default caching. If this feature has already been enabled, omit this parameter.
 
-- `--cache-backend-valkey-<parameter>=<value>` is a list of key-and-value pairs that configure the default caching:
+- `--cache-backend-valkey-<parameter>=<value>` is a list of key-value pairs that configure the default caching:
 
 | Command-line parameter          | Value     | Meaning                                                                                                                                                                                                                                                                                                                                                                                                                                                | Default value |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
-| `cache-backend-valkey-server`   | server    | Fully qualified hostname, IP address, or an absolute path to a UNIX socket. The default value of 127.0.0.1 indicates that Valkey is installed on the Commerce server.                                                                                                                                                                                                                                                                                       | `127.0.0.1` |
+| `cache-backend-valkey-server`   | server    | Fully qualified hostname, IP address, or an absolute path to a UNIX socket. The default value of `127.0.0.1` indicates that Valkey is installed on the Commerce server.                                                                                                                                                                                                                                                                                       | `127.0.0.1` |
 | `cache-backend-valkey-port`     | port      | Valkey server listen port                                                                                                                                                                                                                                                                                                                                                                                                                              | `6379` |
-| `cache-backend-valkey-db`       | database  | Required if you use Valkey for both the default and full-page cache. You must specify the database number of one of the caches; the other cache uses 0 by default.<br><br>**Important**: If you use Valkey for more than one type of caching, the database numbers must be different. It is recommended that you assign the default caching database number to 0, the page-caching database number to 1, and the session storage database number to 2. | `0` |
+| `cache-backend-valkey-db`       | database  | Required if you use Valkey for both the default and full-page cache. You must specify the database number of one of the caches; the other cache uses `0` by default.<br><br>**Important**: If you use Valkey for more than one type of caching, the database numbers must be different. Adobe recommends that you assign the default caching database number to `0`, the page-caching database number to `1`, and the session storage database number to `2`. | `0` |
 | `cache-backend-valkey-password` | password  | Configuring a Valkey password enables one of its built-in security features: the `auth` command, which requires clients to authenticate to access the database. The password is configured directly in Valkey' configuration file: `/etc/valkey/valkey.conf`                                                                                                                                                                                           | |
 
 ### Example command
 
-The following example enables Valkey default caching, sets the host to `127.0.0.1`, and assigns the database number to 0. Valkey uses default values for all other parameters.
+The following example enables Valkey default caching, sets the host to `127.0.0.1`, and assigns the database number to `0`. Valkey uses default values for all other parameters.
 
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
@@ -54,14 +52,14 @@ With the following parameters:
 
 | Command-line parameter       | Value     | Meaning                                                                                                                                                                                                                                                                                                                                                                                                                                             | Default value |
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
-| `page-cache-valkey-server`   | server    | Fully qualified hostname, IP address, or an absolute path to a UNIX socket. The default value of 127.0.0.1 indicates that Valkey is installed on the Commerce server.                                                                                                                                                                                                                                                                                    | `127.0.0.1` |
-| `page-cache-valkey-port`     | port      | Valkey server listen port                                                                                                                                                                                                                                                                                                                                                                                                                           | `6379` |
-| `page-cache-valkey-db`       | database  | Required if you use Valkey for both the default and full page cache. You must specify the database number of one of the caches; the other cache uses 0 by default.<br/>**Important**: If you use Valkey for more than one type of caching, the database numbers must be different. It is recommended that you assign the default caching database number to 0, the page-caching database number to 1, and the session storage database number to 2. | `0` |
+| `page-cache-valkey-server`   | server    | Fully qualified hostname, IP address, or an absolute path to a UNIX socket. The default value of `127.0.0.1` indicates that Valkey is installed on the Commerce server.                                                                                                                                                                                                                                                                                    | `127.0.0.1` |
+| `page-cache-valkey-port`     | port      | Valkey server listen port.                                                                                                                                                                                                                                                                                                                                                                                                                           | `6379` |
+| `page-cache-valkey-db`       | database  | Required if you use Valkey for both default and full-page cache. You must specify the database number of one of the caches; the other cache uses `0` by default.<br/>**Important**: If you use Valkey for more than one type of caching, the database numbers must be different. It is recommended that you assign the default caching database number to `0`, the page-caching database number to `1`, and the session storage database number to `2`. | `0` |
 | `page-cache-valkey-password` | password  | Configuring a Valkey password enables one of its built-in security features: the `auth` command, which requires clients to authenticate to access the database. Configure the password within the Valkey configuration file: `/etc/valkey/valkey.conf`                                                                                                                                                                                              | |
 
 ### Example command
 
-The following example enables Valkey page caching, sets the host to `127.0.0.1`, and assigns the database number to 1. All other parameters are set to the default value.
+The following example enables Valkey page caching, sets the host to `127.0.0.1`, and assigns the database number to `1`. All other parameters are set to the default value.
 
 ```bash
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
@@ -115,9 +113,9 @@ As of Commerce 2.4.9, it is recommended to use the Valkey cache implementation: 
 
 ## Valkey preload feature
 
-Since Commerce stores configuration data in the Valkey cache, you can preload data that is reused between pages. To find keys that must be preloaded, analyze data that is transferred from Valkey to Commerce. Adobe suggests preloading data that is loaded on every page, such as `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+Since Commerce stores configuration data in the Valkey cache, you can preload data that is reused between pages. To find keys that must be preloaded, analyze data that is transferred from Valkey to Commerce. Adobe suggests preloading data that is loaded on every page, such as `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, and `DB_IS_UP_TO_DATE`.
 
-Valkey uses the `pipeline` to composite load requests. Keys should include the database prefix; for example, if database prefix is `061_`, preload key looks like: `061_SYSTEM_DEFAULT`
+Valkey uses the `pipeline` to composite load requests. Keys should include the database prefix; for example, if database prefix is `061_`, the preload key looks like: `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -147,7 +145,7 @@ Valkey uses the `pipeline` to composite load requests. Keys should include the d
 ]
 ```
 
-When using the preload feature with L2 cache, you must add the `:hash` suffix to your keys. The L2 cache transfers only the hash of the data, not the actual data.
+When using the preload feature with an L2 cache, you must add the `:hash` suffix to your keys. The L2 cache transfers only the hash of the data, not the actual data.
 
 ```php
 'preload_keys' => [
@@ -160,7 +158,7 @@ When using the preload feature with L2 cache, you must add the `:hash` suffix to
 
 ## Parallel generation
 
-Starting with the 2.4.0 release, Adobe introduced the `allow_parallel_generation` option for the users that want to eliminate waitings for locks.
+Starting with the Commerce 2.4.0 release, Adobe introduced the `allow_parallel_generation` option for users who want to eliminate waitings for locks.
 It is disabled by default, and Adobe recommends disabling it until you have excessive configurations and/or blocks.
 
 **To enable parallel generation**:
@@ -196,7 +194,7 @@ Since it is a flag, you cannot disable it with a command. You must manually set 
 
 ## Verify Valkey connection
 
-To verify that Valkey and Commerce are working together properly, log in to the server that runs Valkey, open a terminal, and use either the Valkey monitor command or the `ping` command.
+To verify that Valkey and Commerce are working together properly, log in to the server that runs Valkey, open a terminal, and use either the `valkey-cli monitor` command or the `redis-cli ping` command.
 
 ### Valkey monitor command
 
@@ -241,4 +239,4 @@ If both commands succeeded, Valkey is set up properly.
 
 ### Inspecting compressed data
 
-To inspect compressed Session data and Page Cache, the [RESP.app](https://flathub.org/apps/app.resp.RESP) supports the automatic decompression of Commerce 2 Session and Page cache and displays PHP session data in a human-readable form.
+To inspect compressed session data and the page cache, the [RESP.app](https://flathub.org/apps/app.resp.RESP) supports automatic decompression of Commerce 2 session and page cache and displays PHP session data in a human-readable format.

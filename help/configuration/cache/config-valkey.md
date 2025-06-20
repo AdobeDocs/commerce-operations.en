@@ -13,7 +13,7 @@ Valkey features include:
 
 ## Install Valkey
 
-Installing and configuring the Valkey software is beyond the scope of this guide. Consult resources such as:
+To install and configure Valkey software, consult the following resources:
 
 - [Download Valkey page](https://valkey.io/download/)
 - [Valkey quick start](https://valkey.io/topics/quickstart/)
@@ -21,9 +21,9 @@ Installing and configuring the Valkey software is beyond the scope of this guide
 
 ## Set up Valkey configuration
 
-Depending on your installation, you can usually find your Valkey configuration in one of the following files: `/etc/valkey/valkey.conf` or `/etc/valkey/<port>.conf`
+Depending on your installation, you can usually find your Valkey configuration in either `/etc/valkey/valkey.conf` or `/etc/valkey/<port>.conf`.
 
-To optimize the Valkey instance for your requirements, you can get the best results by using a dedicated instance for each session, Commerce cache and FPC.
+To optimize the Valkey instance for your requirements, you can get the best results by using a dedicated instance for each session, Commerce cache, and FPC.
 
 Adobe recommends enabling persistence for sessions to copy Valkey data to disk. You can use either Valkey Database Backup (RDB) snapshots or Append Only File (AOF) persistence logs.
 
