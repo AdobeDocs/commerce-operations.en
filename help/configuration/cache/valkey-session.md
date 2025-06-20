@@ -18,7 +18,7 @@ Run the `setup:config:set` command and specify Valkey-specific parameters.
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parameter_name>=<parameter_value>...
 ```
 
-where
+Where
 
 `--session-save=valkey` enables Valkey session storage. If this feature has already been enabled, omit this parameter.
 
@@ -93,7 +93,7 @@ Commerce adds lines similar to the following to `<magento_root>app/etc/env.php`:
 
 ## Verify Valkey connection
 
-To verify that Valkey and Commerce are working together, log in to the server running Valkey, open a terminal, and use the Valkey monitor command or the ping command.
+To verify that Valkey and Commerce are working together properly, log in to the server where Valkey is running, open a terminal, and use either the Valkey monitor command or the `ping` command.
 
 ### Valkey monitor command
 
@@ -124,4 +124,4 @@ If both commands succeeded, Valkey is set up properly.
 
 ### Inspecting compressed data
 
-To inspect compressed Session data and Page Cache, the [RESP.app](https://flathub.org/apps/details/app.resp.RESP) supports the automatic decompression of Commerce 2 Session and Page cache and displays PHP session data in a human-readable form.
+To inspect compressed Session data and Page Cache, the [RESP.app](https://flathub.org/apps/app.resp.RESP) supports the automatic decompression of Commerce 2 Session and Page cache and displays PHP session data in a human-readable form.

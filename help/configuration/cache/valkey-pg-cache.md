@@ -25,7 +25,7 @@ With the following parameters:
 
 | Command-line parameter          | Value     | Meaning                                                                                                                                                                                                                                                                                                                                                                                                                                                | Default value |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
-| `cache-backend-valkey-server`   | server    | Fully qualified hostname, IP address, or an absolute path to a UNIX socket. The default value of 127.0.0.1 indicates Valkey is installed on the Commerce server.                                                                                                                                                                                                                                                                                       | `127.0.0.1` |
+| `cache-backend-valkey-server`   | server    | Fully qualified hostname, IP address, or an absolute path to a UNIX socket. The default value of 127.0.0.1 indicates that Valkey is installed on the Commerce server.                                                                                                                                                                                                                                                                                       | `127.0.0.1` |
 | `cache-backend-valkey-port`     | port      | Valkey server listen port                                                                                                                                                                                                                                                                                                                                                                                                                              | `6379` |
 | `cache-backend-valkey-db`       | database  | Required if you use Valkey for both the default and full-page cache. You must specify the database number of one of the caches; the other cache uses 0 by default.<br><br>**Important**: If you use Valkey for more than one type of caching, the database numbers must be different. It is recommended that you assign the default caching database number to 0, the page-caching database number to 1, and the session storage database number to 2. | `0` |
 | `cache-backend-valkey-password` | password  | Configuring a Valkey password enables one of its built-in security features: the `auth` command, which requires clients to authenticate to access the database. The password is configured directly in Valkey' configuration file: `/etc/valkey/valkey.conf`                                                                                                                                                                                           | |
@@ -54,7 +54,7 @@ With the following parameters:
 
 | Command-line parameter       | Value     | Meaning                                                                                                                                                                                                                                                                                                                                                                                                                                             | Default value |
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
-| `page-cache-valkey-server`   | server    | Fully qualified hostname, IP address, or an absolute path to a UNIX socket. The default value of 127.0.0.1 indicates Valkey is installed on the Commerce server.                                                                                                                                                                                                                                                                                    | `127.0.0.1` |
+| `page-cache-valkey-server`   | server    | Fully qualified hostname, IP address, or an absolute path to a UNIX socket. The default value of 127.0.0.1 indicates that Valkey is installed on the Commerce server.                                                                                                                                                                                                                                                                                    | `127.0.0.1` |
 | `page-cache-valkey-port`     | port      | Valkey server listen port                                                                                                                                                                                                                                                                                                                                                                                                                           | `6379` |
 | `page-cache-valkey-db`       | database  | Required if you use Valkey for both the default and full page cache. You must specify the database number of one of the caches; the other cache uses 0 by default.<br/>**Important**: If you use Valkey for more than one type of caching, the database numbers must be different. It is recommended that you assign the default caching database number to 0, the page-caching database number to 1, and the session storage database number to 2. | `0` |
 | `page-cache-valkey-password` | password  | Configuring a Valkey password enables one of its built-in security features: the `auth` command, which requires clients to authenticate to access the database. Configure the password within the Valkey configuration file: `/etc/valkey/valkey.conf`                                                                                                                                                                                              | |
@@ -115,9 +115,9 @@ As of Commerce 2.4.9, it is recommended to use the Valkey cache implementation: 
 
 ## Valkey preload feature
 
-Since Commerce stores configuration data in the Valkey cache, we can preload data that is reused between pages. To find keys that must be preloaded, analyze data that is transferred from Valkey to Commerce. We suggest preloading data that is loaded on every page, such as `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+Since Commerce stores configuration data in the Valkey cache, you can preload data that is reused between pages. To find keys that must be preloaded, analyze data that is transferred from Valkey to Commerce. Adobe suggests preloading data that is loaded on every page, such as `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
-Valkey uses the `pipeline` in order to composite load requests. Keys should include the database prefix; for example, if database prefix is `061_`, preload key looks like: `061_SYSTEM_DEFAULT`
+Valkey uses the `pipeline` to composite load requests. Keys should include the database prefix; for example, if database prefix is `061_`, preload key looks like: `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -147,7 +147,7 @@ Valkey uses the `pipeline` in order to composite load requests. Keys should incl
 ]
 ```
 
-In case you are using the preload feature with the L2 cache, do not forget to add the `:hash` suffix to your keys, since L2 cache only transfers the hash of the data, not the data itself:
+When using the preload feature with L2 cache, you must add the `:hash` suffix to your keys. The L2 cache transfers only the hash of the data, not the actual data.
 
 ```php
 'preload_keys' => [
@@ -160,8 +160,8 @@ In case you are using the preload feature with the L2 cache, do not forget to ad
 
 ## Parallel generation
 
-Starting with the 2.4.0 release, we introduced the `allow_parallel_generation` option for the users that want to eliminate waitings for locks.
-It is disabled by default, and we recommend disabling it until you have excessive configurations and/or blocks.
+Starting with the 2.4.0 release, Adobe introduced the `allow_parallel_generation` option for the users that want to eliminate waitings for locks.
+It is disabled by default, and Adobe recommends disabling it until you have excessive configurations and/or blocks.
 
 **To enable parallel generation**:
 
@@ -196,7 +196,7 @@ Since it is a flag, you cannot disable it with a command. You must manually set 
 
 ## Verify Valkey connection
 
-To verify that Valkey and Commerce are working together, log in to the server running Valkey, open a terminal, and use the Valkey monitor command or the ping command.
+To verify that Valkey and Commerce are working together properly, log in to the server that runs Valkey, open a terminal, and use either the Valkey monitor command or the `ping` command.
 
 ### Valkey monitor command
 
@@ -241,4 +241,4 @@ If both commands succeeded, Valkey is set up properly.
 
 ### Inspecting compressed data
 
-To inspect compressed Session data and Page Cache, the [RESP.app](https://flathub.org/apps/details/app.resp.RESP) supports the automatic decompression of Commerce 2 Session and Page cache and displays PHP session data in a human-readable form.
+To inspect compressed Session data and Page Cache, the [RESP.app](https://flathub.org/apps/app.resp.RESP) supports the automatic decompression of Commerce 2 Session and Page cache and displays PHP session data in a human-readable form.
