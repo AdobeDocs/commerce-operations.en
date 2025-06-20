@@ -98,4 +98,4 @@ In this example, output for the `Magento_Review` module has been disabled and cu
 
 ### Re-enable module output
 
-To re-enable output, set the value for the module to `0`, or remove the line/module from the `config.php` file
+To re-enable output, set the value for the module to `0`, or remove the line/module from the `config.php` file.
