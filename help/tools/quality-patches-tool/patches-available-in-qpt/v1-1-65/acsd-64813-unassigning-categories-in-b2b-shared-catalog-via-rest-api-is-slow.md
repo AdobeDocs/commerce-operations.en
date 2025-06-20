@@ -45,7 +45,7 @@ Unassigning categories in a [!DNL B2B] shared catalog via the REST API is slow.
 	  ```
 1. Confirm the response is *true*.
 1. Run `bin/magento cron:run` twice or perform a reindex.
-1. Use the admin token to execute the following REST API call with the new category ID: `rest/all/V1/sharedCatalog/<shared_catalog_id>/unassignCategories`.
+1. Use the admin token to call the REST API endpoint `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` with the new category ID.
 
 	  ```
 	  {
