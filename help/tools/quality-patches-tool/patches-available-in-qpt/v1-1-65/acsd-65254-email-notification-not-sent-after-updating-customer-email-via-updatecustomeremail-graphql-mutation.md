@@ -60,7 +60,7 @@ Email notifications were not sent to customers after updating their email addres
 	}
 	```
 
-1. Try to update the email for the previously created user using the last created Bearer token:
+1. Try to update the email for the previously created user using the last created bearer token:
 
 	```
 	mutation {
