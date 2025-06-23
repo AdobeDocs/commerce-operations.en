@@ -1,8 +1,9 @@
 ---
 title: 'ACSD-64118: Concurrent product save requests for same product cause data inconsistency and duplicate entries'
-description: Apply the ACSD-64118 patch to fix the Adobe Commerce issue where concurrent requests to save and update the same product may result in data inconsistency or duplicated products.
+description: Apply the ACSD-64118 patch to fix the Adobe Commerce issue where concurrent requests to save and update the same product result in data inconsistency or duplicated products.
 feature: REST
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-64118: Concurrent product save requests for same product cause data inconsistency and duplicate entries
@@ -25,47 +26,47 @@ The ACSD-64118 patch fixes the issue where concurrent requests to save and updat
 
 ## Issue
 
-Issue where concurrent requests to save and update the same product result in data inconsistency or duplicated products.
+Concurrent requests to save and update the same product result in data inconsistency or duplicated products.
 
 <u>Steps to reproduce</u>:
 
-1. Setup multi process for consumers in env.php
+1. Set up multi-process for consumers in `env.php`:
 
-```
-        'multiple_processes' =>
-            array (
-                'async.operations.all' => 4,
-            ),
-```
+    ```
+    'multiple_processes' =>
+        array (
+            'async.operations.all' => 4,
+        ),
+    ```
 
-1. Add additional store and storeview to the Main Website
-1. Sent bulk request on default sotreview /rest/default/async/bulk/V1/products with the following payload to create a product:
+1. Add an additional store and a new storeview to the main website.
+1. Send a bulk API request to the default storeview endpoint `/rest/default/async/bulk/V1/products` with the following payload to create a product:
 
-```
-[
-  {
-    "product": {
-      "sku": "Test_Prod",
-      "name": "Test Product",
-      "attribute_set_id": 4
-    }
-  }
-]
-```
+    ```
+    [
+      {
+        "product": {
+          "sku": "Test_Prod",
+          "name": "Test Product",
+          "attribute_set_id": 4
+        }
+      }
+    ]
+    ```
 
-1. Sent bulk request on another storeview /rest/store/async/bulk/V1/products wit the payload from previous step to update the product
-1. Flush cache
-1. Run crons
-1. Check catalog_product_entity table for entries for the product from previous steps
+1. Use the same payload to send a bulk API request to the new storeview endpoint `/rest/store/async/bulk/V1/products` to update the product.
+1. Flush cache.
+1. Run cron jobs.
+1. Check the `catalog_product_entity` table for entries of the product from the previous steps.
 
 <u>Expected results</u>:
 
-Single entry for the product SKU should be present in catalog_product_entity table
-The 1st REST request should create 1 DB entry, and all subsequent REST requests should update the DB entry
+* A single entry for the product SKU should be present in the `catalog_product_entity` table.
+* The first REST API request should create one database entry, and all subsequent requests should update the database entry.
 
 <u>Actual results</u>:
 
-Multiple entries for the same SKU are present in catalog_product_entity table
+Multiple entries for the same SKU are present in `catalog_product_entity` table.
 
 ## Apply the patch
 
