@@ -3,8 +3,8 @@ title: 'ACP2E-3753: Stock alert emails not using store-specific theme templates 
 description: Apply the ACP2E-3753 patch to fix the Adobe Commerce issue where product alert emails in a multi-store setup are always sent using the default theme, regardless of the store or theme configuration.
 feature: Themes, Personalization
 role: Admin, Developer
+exl-id: ad44ffdd-f122-4119-83e3-1816951b662c
 ---
-
 # ACP2E-3753: Stock alert emails not using store-specific theme templates in multi-store setup
 
 The ACP2E-3753 patch fixes the issue where product alert emails in a multi-store setup were always sent using the default theme, regardless of the store or theme configuration. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACP2E-3753. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
