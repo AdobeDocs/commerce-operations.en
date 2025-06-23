@@ -50,7 +50,7 @@ Email notifications were not sent to customers after updating their email addres
 	}
 	```
 
-1. Generate a token for the previously created user and use as a bearer token:
+1. Generate a token for the previously created user and use it as a bearer token:
 
 	```
 	mutation {
