@@ -4,10 +4,11 @@ description: Apply the ACSD-61756 patch to fix the Adobe Commerce issue where th
 feature: Price Rules, Price Indexer
 role: Admin, Developer
 exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
+type: Troubleshooting
 ---
 # ACSD-61756: Performance degradation of `AdvancedSalesRule` filters due to missing database indexes
 
-Apply the ACSD-61756 patch to improve the performance of the `AdvancedSalesRule` filters by adding missing database indexes. This fixes the issue where the `magento_salesrule_filter` query performs a full table scan without utilizing the indexes, leading to performance degradation when there are many records in the table. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.54 is installed. The patch ID is ACSD-61756. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+Apply the ACSD-61756 patch to improve the performance of the `AdvancedSalesRule` filters by adding missing database indexes. This fixes the issue where the `magento_salesrule_filter` query performs a full table scan without utilizing the indexes, leading to performance degradation when there are many records in the table. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.54 is installed. The patch ID is ACSD-61756. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -50,7 +51,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 For info about other patches available in QPT, refer to [[!DNL Quality Patches Tool]: Search for patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in the [!DNL Quality Patches Tool] guide.

@@ -4,10 +4,11 @@ description: Apply the ACSD-56090 patch to fix the Adobe Commerce issue where th
 feature: GraphQL
 role: Admin, Developer
 exl-id: 0909c09c-3260-43d2-8eac-0e5d7639f24b
+type: Troubleshooting
 ---
 # ACSD-56090: GraphQL response is not store specific
 
-The ACSD-56090 patch fixes the issue where the GraphQL respond contains all stores data instead of the store specific data. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.43 is installed. The patch ID is ACSD-56090. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
+The ACSD-56090 patch fixes the issue where the GraphQL respond contains all stores data instead of the store specific data. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.43 is installed. The patch ID is ACSD-56090. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.5.
 
 ## Affected products and versions
 
@@ -79,7 +80,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-61522 patch to fix the Adobe Commerce issue where it
 feature: Checkout, Customers
 role: Admin, Developer
 exl-id: e1ed7a57-4054-44db-bc17-9b9056096fce
+type: Troubleshooting
 ---
 # ACSD-61522: Email addresses in *First and Last Name* fields send invalid order confirmations
 

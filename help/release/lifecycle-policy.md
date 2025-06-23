@@ -35,7 +35,7 @@ Adobe encourages customers to upgrade as soon as possible. However, to provide g
 | Adobe Commerce 2.4.8 | April 8, 2025        | April 11, 2028                     | N/A                     | 8.3 and 8.4           | 11.4                      |
 | Adobe Commerce 2.4.7 | April 9, 2024        | April 9, 2027                      | N/A                     | 8.2 and 8.3           | 10.11<sup>3</sup>         |
 | Adobe Commerce 2.4.6 | March 14, 2023       | August 11, 2026<sup>2</sup>        | N/A                     | 8.1 and 8.2           | 10.11<sup>4</sup>         |
-| Adobe Commerce 2.4.5 | August 9, 2022       | August 9, 2025                     | August 11, 2026         | 8.1                   | 10.6<sup>5</sup>          |
+| Adobe Commerce 2.4.5 | August 9, 2022       | August 12, 2025                    | August 11, 2026         | 8.1                   | 10.6<sup>5</sup>          |
 | Adobe Commerce 2.4.4 | April 12, 2022       | April 12, 2025                     | April 14, 2026          | 8.1                   | 10.6<sup>6</sup>          |
 
 {style="table-layout:auto"}

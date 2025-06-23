@@ -4,6 +4,7 @@ description: Apply the ACSD-64113 patch to fix the Adobe Commerce issue where er
 feature: Page Content, Media, Admin Workspace
 role: Admin, Developer
 exl-id: aba9d875-1d5d-49c2-8071-ba0ce679d7cd
+type: Troubleshooting
 ---
 # ACSD-64113: Error in admin on uploading image with smaller width than height via [!DNL Media Gallery]
 

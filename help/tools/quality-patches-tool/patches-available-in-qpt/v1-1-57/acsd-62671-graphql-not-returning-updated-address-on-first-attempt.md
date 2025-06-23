@@ -4,6 +4,7 @@ description: Apply the ACSD-62671 patch to fix the Adobe Commerce issue where a 
 feature: GraphQL
 role: Admin, Developer
 exl-id: afd75ad2-e801-4f8a-b68f-526ca5168413
+type: Troubleshooting
 ---
 # ACSD-62671: [!DNL GraphQL] doesn't return updated address on first attempt
 

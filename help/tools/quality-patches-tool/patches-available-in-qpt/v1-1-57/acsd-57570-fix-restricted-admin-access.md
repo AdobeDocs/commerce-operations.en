@@ -4,6 +4,7 @@ description: Apply the ACSD-57570 patch to fix the Adobe Commerce issue where a 
 feature: B2B, Companies, Roles/Permissions
 role: Admin, Developer
 exl-id: 3eeaf1f1-0338-459f-99ec-53764f3f12db
+type: Troubleshooting
 ---
 # ACSD-57570: Fix for restricted admin user access to shared catalogs
 

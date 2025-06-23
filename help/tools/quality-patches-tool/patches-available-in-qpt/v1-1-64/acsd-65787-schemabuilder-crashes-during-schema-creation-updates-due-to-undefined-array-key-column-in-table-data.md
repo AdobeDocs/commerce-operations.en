@@ -4,6 +4,7 @@ description: Apply the ACSD-65787 patch to fix the Adobe Commerce issue where Sc
 feature: Backend Development, Deploy
 role: Admin, Developer
 exl-id: c01d1799-13fe-4657-a480-698efbe45a30
+type: Troubleshooting
 ---
 # ACSD-65787: `SchemaBuilder` crashes during schema creation or update due to undefined array key "column" in table data
 

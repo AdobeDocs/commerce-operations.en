@@ -22,7 +22,7 @@
 
 ## 2.4.8
 
-Support for the 2.4.8 release line ends on April&nbsp;11, 2028.
+Regular support for the 2.4.8 release line ends on April&nbsp;11, 2028.
 
 <table>
   <thead>
@@ -49,7 +49,7 @@ Support for the 2.4.8 release line ends on April&nbsp;11, 2028.
 
 ## 2.4.7
 
-Support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
+Regular support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
 
 <table>
   <thead>
@@ -106,7 +106,7 @@ Support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
 
 ## 2.4.6
 
-Support for the 2.4.6 release line ends on August&nbsp;11, 2026.
+Regular support for the 2.4.6 release line ends on August&nbsp;11, 2026.
 
 <table>
   <thead>
@@ -193,7 +193,8 @@ Support for the 2.4.6 release line ends on August&nbsp;11, 2026.
 
 ## 2.4.5
 
-Support for the 2.4.5 release line ends on August&nbsp; 9, 2025.
+Regular support for the 2.4.5 release line ends on August&nbsp;12, 2025.
+Extended support for the 2.4.5 release line ends on August&nbsp;11, 2026.
 
 <table>
   <thead>
@@ -292,7 +293,8 @@ Support for the 2.4.5 release line ends on August&nbsp; 9, 2025.
 
 ## 2.4.4
 
-Support for the 2.4.4 release line ended on April&nbsp;12, 2025.
+Regular support for the 2.4.4 release line ended on April&nbsp;12, 2025.
+Extended support for the 2.4.4 release line ends on August&nbsp;14, 2026.
 
 <table>
   <thead>
@@ -397,7 +399,7 @@ Support for the 2.4.4 release line ended on April&nbsp;12, 2025.
 
 ## 2.4.0-2.4.3
 
-Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
+Regular support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
 
 <table>
   <thead>
@@ -478,7 +480,7 @@ Support for the 2.4.0-2.4.3 release line ended on November&nbsp;28, 2022.
 
 ## 2.3
 
-Support for the 2.3 release line ended on September&nbsp; 8, 2022.
+Regular support for the 2.3 release line ended on September&nbsp; 8, 2022.
 
 <table>
   <thead>
@@ -601,7 +603,7 @@ Support for the 2.3 release line ended on September&nbsp; 8, 2022.
 
 ## 2.2
 
-Support for the 2.2 release line ended on December&nbsp; 1, 2019.
+Regular support for the 2.2 release line ended on December&nbsp; 1, 2019.
 
 <table>
   <thead>
@@ -688,7 +690,7 @@ Support for the 2.2 release line ended on December&nbsp; 1, 2019.
 
 ## 2.1
 
-Support for the 2.1 release line ended on June&nbsp;30, 2019.
+Regular support for the 2.1 release line ended on June&nbsp;30, 2019.
 
 <table>
   <thead>
@@ -817,7 +819,7 @@ Support for the 2.1 release line ended on June&nbsp;30, 2019.
 
 ## 2.0
 
-Support for the 2.0 release line ended on March&nbsp;31, 2018.
+Regular support for the 2.0 release line ended on March&nbsp;31, 2018.
 
 <table>
   <thead>

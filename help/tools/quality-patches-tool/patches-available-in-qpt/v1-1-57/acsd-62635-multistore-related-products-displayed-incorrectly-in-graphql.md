@@ -4,6 +4,7 @@ description: Apply the ACSD-62635 patch to fix the Adobe Commerce issue where mu
 feature: B2B
 role: Admin, Developer
 exl-id: 540cd37b-4dc5-42d1-a968-2989262effdd
+type: Troubleshooting
 ---
 # ACSD-62635: Multi-store related products displayed incorrectly in [!DNL GraphQL]
 

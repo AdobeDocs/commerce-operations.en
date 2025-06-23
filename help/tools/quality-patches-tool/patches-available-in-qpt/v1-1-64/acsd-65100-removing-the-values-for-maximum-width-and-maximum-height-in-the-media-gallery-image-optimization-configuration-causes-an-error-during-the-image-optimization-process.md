@@ -4,6 +4,7 @@ description: Apply the ACSD-65100 patch to fix the Adobe Commerce issue where re
 feature: Media
 role: Admin, Developer
 exl-id: 86197602-19a1-41c2-b129-1f695f303ce5
+type: Troubleshooting
 ---
 # ACSD-65100: Removing the [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] values in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error
 
