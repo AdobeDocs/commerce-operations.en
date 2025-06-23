@@ -33,7 +33,7 @@ Unassigning categories in a [!DNL B2B] shared catalog via the REST API is slow.
 1. Enable **[!UICONTROL B2B]**, **[!UICONTROL Company]**, and **[!UICONTROL Shared Catalog]**.
 1. Generate 30,000 active, in-stock products.
 1. Create a [custom shared catalog](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) and assign all products to it.
-1. Create a new category under the Default root category and assign a few products to it.
+1. Create a new category under the default root category and assign a few products to it.
 1. Use the admin token to call the REST API endpoint `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` with the new category ID.
 
 	  ```
