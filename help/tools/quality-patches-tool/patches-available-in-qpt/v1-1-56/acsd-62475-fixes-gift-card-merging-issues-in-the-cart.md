@@ -4,6 +4,7 @@ description: Apply the ACSD-62475 patch to fix the Adobe Commerce issue where gi
 feature: Shopping Cart, Quotes
 role: Admin, Developer
 exl-id: fc97c3c0-dc1b-4546-aad0-ef3b4b6a3415
+type: Troubleshooting
 ---
 # ACSD-62475: Fixes gift card merging issues in the cart
 

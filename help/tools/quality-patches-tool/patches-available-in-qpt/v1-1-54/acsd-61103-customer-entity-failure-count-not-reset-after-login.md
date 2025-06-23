@@ -4,6 +4,7 @@ description: Apply the ACSD-61103 patch to fix the Adobe Commerce issue where th
 feature: GraphQL, REST, Customers
 role: Admin, Developer
 exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
+type: Troubleshooting
 ---
 # ACSD-61103: Failure count not reset to zero after successful customer login through API
 

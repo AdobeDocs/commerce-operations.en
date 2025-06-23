@@ -4,6 +4,7 @@ description: Apply the ACSD-63283 patch to fix the Adobe Commerce issue where or
 feature: Gift, Shopping Cart
 role: Admin, Developer
 exl-id: cff5b9e6-56ee-4df2-961a-6d90ec83c0c2
+type: Troubleshooting
 ---
 # ACSD-63283: Resolving [!UICONTROL Gift Registry] email and order placement issues in Adobe Commerce
 

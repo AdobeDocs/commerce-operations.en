@@ -4,6 +4,58 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### June 16, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails">detailed description of the issue fixed by the ACSD-66093 patch in the QPT 1.1.65 release</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/69bf5e6d1e98e18d0402a39d910d90c13eb15b3d">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added details about <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#adobe-commerce-foundation-public-beta">alpha releases</a> for Adobe Commerce Foundation.</p>
+</td>
+      <td>
+        Major update
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9f7fb2a4f564f89091c831e03c88c818d688d08f">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### June 11, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/overview">description of the issues fixed by the patches available in the QPT 1.1.65 release</a></p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7a41e648e7fa62a48db7faa065013c1c84b1fb3c">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### June 10, 2025
 
 <table style="table-layout:auto;">
@@ -538,50 +590,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f16e57e339fd9ef7de1e0da30eaec7b7bb38396">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### April 18, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added 2.4.8 to the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">lifecycle policy</a>.</p>
-</td>
-      <td>
-        Major update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/915f5f61c27bedeafdceee7a8c2e0cd474765418">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### April 15, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">detailed description of the issue fixed by the ACSD-64431 patch in the QPT 1.1.61 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/13f5f1c06e5c60047ed246bee766b7f515b0661f">commit</a></td>
     </tr>
   </tbody>
 </table>

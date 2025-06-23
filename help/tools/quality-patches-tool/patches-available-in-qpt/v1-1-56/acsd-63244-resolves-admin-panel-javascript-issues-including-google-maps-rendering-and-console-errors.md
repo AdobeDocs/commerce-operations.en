@@ -4,6 +4,7 @@ description: The ACSD-63244 patch fixes the multiple JavaScript issues in the ad
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 1985c845-219e-4af4-8f70-62dd57722494
+type: Troubleshooting
 ---
 # ACSD-63244: Resolve admin panel JavaScript issues, including [!DNL Google Maps] rendering and console errors
 
