@@ -4,6 +4,7 @@ description: Apply the ACSD-52219 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace
 role: Admin
 exl-id: 3f1af6ba-88a0-480c-b16e-c00c655e346f
+type: Troubleshooting
 ---
 # ACSD-52219: Resolving admin grids filter issue in bookmark view switching
 

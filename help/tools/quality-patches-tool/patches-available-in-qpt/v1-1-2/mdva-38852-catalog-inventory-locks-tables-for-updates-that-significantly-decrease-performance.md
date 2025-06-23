@@ -4,6 +4,7 @@ description: The MDVA-38852 patch solves the issue where the catalog inventory l
 feature: Catalog Management, Inventory, Orders
 role: Admin
 exl-id: ce93130b-8d96-47b8-96c6-da5988b34ae0
+type: Troubleshooting
 ---
 # MDVA-38852: Catalog inventory locks tables which decreases performance
 

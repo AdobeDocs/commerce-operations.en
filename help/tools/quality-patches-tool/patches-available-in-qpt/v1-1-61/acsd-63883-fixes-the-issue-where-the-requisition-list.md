@@ -4,6 +4,7 @@ description: Apply the ACSD-63883 patch to fix the issue where the [!UICONTROL R
 feature: B2B, GraphQL
 role: Admin, Developer
 exl-id: 8946d7fb-558a-4867-a843-a61715416f25
+type: Troubleshooting
 ---
 # ACSD-63883: Fixing incorrect `items_count` in [!DNL GraphQL] response for [!UICONTROL Requisition List]
 

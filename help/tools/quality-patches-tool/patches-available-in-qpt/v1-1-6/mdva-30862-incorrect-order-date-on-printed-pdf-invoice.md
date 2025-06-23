@@ -4,6 +4,7 @@ description: The MDVA-30862 patch fixes the issue where an incorrect order date 
 feature: Invoices, Orders
 role: Admin
 exl-id: 26ecf821-61e7-4e30-8ee4-66134e84a9dd
+type: Troubleshooting
 ---
 # MDVA-30862: Incorrect order date on printed PDF invoice
 

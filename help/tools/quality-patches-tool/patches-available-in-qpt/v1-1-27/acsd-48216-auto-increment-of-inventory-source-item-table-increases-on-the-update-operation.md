@@ -4,6 +4,7 @@ description: Apply the ACSD-48216 patch to fix the Adobe Commerce issue where *A
 feature: Admin Workspace, Inventory, Orders
 role: Admin
 exl-id: acb956c8-75d4-4764-8b8d-250bc8620b29
+type: Troubleshooting
 ---
 # ACSD-48216: *AUTO_INCREMENT* of *inventory_source_item* table increases on *UPDATE* operation
 

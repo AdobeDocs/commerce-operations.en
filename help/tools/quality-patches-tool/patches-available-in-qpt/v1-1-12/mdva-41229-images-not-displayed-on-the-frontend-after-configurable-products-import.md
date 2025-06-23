@@ -4,6 +4,7 @@ description: The MDVA-41229 patch solves the issue where images available on the
 feature: Data Import/Export, Configuration, Products
 role: Admin
 exl-id: 894fdc5b-545c-4ed8-ae1b-573d1d8d3cd6
+type: Troubleshooting
 ---
 # MDVA-41229: Images available on backend not displayed on frontend after configurable products import
 

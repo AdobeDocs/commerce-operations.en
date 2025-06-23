@@ -4,6 +4,7 @@ description: This article provides a solution for the issue where the user is un
 feature: Categories
 role: Admin
 exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
+type: Troubleshooting
 ---
 # ACSD-44851: Category with subcategories not able to open or expand
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-57315 patch to fix the Adobe Commerce issue where a 
 feature: Payments
 role: Admin, Developer
 exl-id: 1fb8a5af-fda1-4c24-859d-d45424bde12f
+type: Troubleshooting
 ---
 # ACSD-57315: New transaction is created in [!DNL PayPal Payflow Pro] each time the fetch button is clicked
 

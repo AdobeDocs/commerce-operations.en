@@ -4,6 +4,7 @@ description: Apply the ACSD-51041 patch to fix the Adobe Commerce issue where th
 feature: Configuration
 role: Admin
 exl-id: d45d4042-06a1-445d-bed3-803085626dd3
+type: Troubleshooting
 ---
 # ACSD-51041: Price index takes very long to complete
 

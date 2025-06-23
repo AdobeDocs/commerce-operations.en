@@ -4,6 +4,7 @@ description: Apply the ACSD-56090 patch to fix the Adobe Commerce issue where th
 feature: GraphQL
 role: Admin, Developer
 exl-id: 0909c09c-3260-43d2-8eac-0e5d7639f24b
+type: Troubleshooting
 ---
 # ACSD-56090: GraphQL response is not store specific
 

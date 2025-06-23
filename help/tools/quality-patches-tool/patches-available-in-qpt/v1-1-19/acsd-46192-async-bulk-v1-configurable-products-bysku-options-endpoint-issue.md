@@ -4,6 +4,7 @@ description: The ACSD-46192 patch fixes the issue with the `async/bulk/V1/config
 feature: Configuration, Products
 role: Admin
 exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
+type: Troubleshooting
 ---
 # ACSD-46192: Issue with async/bulk/V1/configurable-products/bySku/options endpoint
 

@@ -4,6 +4,7 @@ description: The MDVA-40830 patch fixes the issue where the store credit is appl
 feature: Orders, Returns
 role: Admin
 exl-id: 4ee952c8-2736-47b2-84f6-a7a0556608dd
+type: Troubleshooting
 ---
 # MDVA-40830: Store credit applied multiple times during order
 

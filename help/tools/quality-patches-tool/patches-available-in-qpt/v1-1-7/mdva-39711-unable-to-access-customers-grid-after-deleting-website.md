@@ -4,6 +4,7 @@ description: The MDVA-39711 patch fixes the issue where the Admin user cannot ac
 feature: Configuration
 role: Admin
 exl-id: 7ddca2e7-86f5-4ffd-9c00-ea4c511ab663
+type: Troubleshooting
 ---
 # MDVA-39711: Unable to access customers grid after deleting website
 

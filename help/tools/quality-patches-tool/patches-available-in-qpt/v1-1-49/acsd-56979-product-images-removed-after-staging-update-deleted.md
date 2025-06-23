@@ -4,6 +4,7 @@ description: Apply the ACSD-56979 patch to fix the Adobe Commerce issue where pr
 feature: Products
 role: Admin, Developer
 exl-id: 1e0fbd5c-285b-408e-ba52-72619e29167b
+type: Troubleshooting
 ---
 # ACSD-56979: Product images removed after staging update deleted
 

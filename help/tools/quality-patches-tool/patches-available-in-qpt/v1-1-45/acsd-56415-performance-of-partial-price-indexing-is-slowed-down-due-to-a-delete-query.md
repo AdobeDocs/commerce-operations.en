@@ -4,6 +4,7 @@ description: Apply the ACSD-56415 patch to fix the Adobe Commerce issue where th
 feature: Catalog Service
 role: Admin, Developer
 exl-id: c877844e-79d3-4756-97a5-de44e6fb5170
+type: Troubleshooting
 ---
 # ACSD-56415: Performance of [!UICONTROL Partial Price Indexing] is slowed due to `DELETE` query
 

@@ -4,6 +4,7 @@ description: The MDVA-40120 patch solves the issue where GraphQL sorting by DESC
 feature: GraphQL, Products
 role: Admin
 exl-id: 4df7f14d-181b-4f34-aff7-0af823632015
+type: Troubleshooting
 ---
 # MDVA-40120: GraphQL product DESC/ASC sort doesn't work
 

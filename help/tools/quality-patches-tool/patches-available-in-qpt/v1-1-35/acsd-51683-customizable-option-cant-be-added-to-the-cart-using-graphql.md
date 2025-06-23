@@ -4,6 +4,7 @@ description: Apply the ACSD-51683 patch to fix the Adobe Commerce issue where th
 feature: GraphQL
 role: Admin
 exl-id: 9cdf71aa-3dea-4f8c-b4d6-d6f192a9710d
+type: Troubleshooting
 ---
 # ACSD-51683: Customizable option can't be added to the cart using GraphQL
 

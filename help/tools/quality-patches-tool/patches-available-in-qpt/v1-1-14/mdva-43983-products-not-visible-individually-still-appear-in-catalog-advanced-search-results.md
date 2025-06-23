@@ -4,6 +4,7 @@ description: The MDVA-43983 patch solves the issue where the products that are s
 feature: Catalog Management, Products, Search
 role: Admin
 exl-id: d494d263-016b-43fd-aa87-0d74eadc4a6a
+type: Troubleshooting
 ---
 # MDVA-43983: Products set as "Not Visible Individually" appear in search results
 

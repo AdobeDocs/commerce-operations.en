@@ -4,6 +4,7 @@ description: Apply the ACSD-64467 patch to fix the Adobe Commerce issue where th
 feature: Page Content
 role: Admin, Developer
 exl-id: 8bc1794f-ace1-4719-9fff-194dbd701ab6
+type: Troubleshooting
 ---
 # ACSD-64467: WYSIWYG editor empty after saving category description at store view level
 

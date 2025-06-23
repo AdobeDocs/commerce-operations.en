@@ -4,6 +4,7 @@ description: The MDVA-39229 patch fixes the issue where users get an error after
 feature: Catalog Management, Staging
 role: Admin
 exl-id: 633123bc-634c-4943-a2f1-9a48999774f4
+type: Troubleshooting
 ---
 # MDVA-39229: Error after updating Catalog rule Staging update start time
 

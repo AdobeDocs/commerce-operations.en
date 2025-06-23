@@ -4,6 +4,7 @@ description: Apply the ACSD-55100 patch to fix the Adobe Commerce issue where th
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
+type: Troubleshooting
 ---
 # ACSD-55100: [!DNL GraphQL] doesn't return products beyond 10k in search results
 

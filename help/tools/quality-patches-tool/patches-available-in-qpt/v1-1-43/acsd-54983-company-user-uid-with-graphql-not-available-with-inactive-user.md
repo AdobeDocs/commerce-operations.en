@@ -4,6 +4,7 @@ description: Apply the ACSD-54983 patch to fix the Adobe Commerce issue where it
 feature: GraphQL
 role: Admin, Developer
 exl-id: b188270f-5454-41c9-8370-f4c396095297
+type: Troubleshooting
 ---
 # ACSD-54983: Company user UID with GraphQL not available with inactive user
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-54026 patch to fix the Adobe Commerce issue where th
 feature: Roles/Permissions
 role: Admin, Developer
 exl-id: 21695333-5f18-48db-acde-246f269dd691
+type: Troubleshooting
 ---
 # ACSD-54026: Incorrect error message for `updateCompanyRole` GraphQL request
 

@@ -4,6 +4,7 @@ description: The ACSD-46869 patch fixes the issue where the configurable product
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
+type: Troubleshooting
 ---
 # ACSD-46869: Configurable products not updating using REST API at checkout
 

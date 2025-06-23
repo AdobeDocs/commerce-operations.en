@@ -4,6 +4,7 @@ description: Apply the ACSD-60811 patch to fix the Adobe Commerce issue where up
 feature: Orders, Admin Workspace
 role: Admin, Developer
 exl-id: 6d5391b3-7014-4d0a-b4ab-799f0733bbca
+type: Troubleshooting
 ---
 # ACSD-60811: Fixes limitation in updating order status to custom values
 

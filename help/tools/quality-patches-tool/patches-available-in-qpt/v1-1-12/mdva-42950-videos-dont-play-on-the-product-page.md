@@ -4,6 +4,7 @@ description: The MDVA-42950 patch solves the issue where videos are not being pl
 feature: Products
 role: Admin
 exl-id: 61c36dc5-0015-431d-84c1-0726bb310cd6
+type: Troubleshooting
 ---
 # MDVA-42950: Videos don't play on the product page
 

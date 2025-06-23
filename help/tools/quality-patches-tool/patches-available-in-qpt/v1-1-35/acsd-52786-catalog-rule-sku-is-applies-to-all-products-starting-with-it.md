@@ -4,6 +4,7 @@ description: Apply the ACSD-52786 patch to fix the Adobe Commerce issue where th
 feature: Price Rules
 role: Admin
 exl-id: 668d5f16-18a9-4054-aa6e-1fb8fa211373
+type: Troubleshooting
 ---
 # ACSD-52786: Catalog rule "*[!UICONTROL SKU is]*" applies to all products starting with the SKU
 

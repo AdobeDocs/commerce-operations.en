@@ -4,6 +4,7 @@ description: The MDVA-37897 patch solves the issue of incorrect redirect when us
 feature: Products
 role: Admin
 exl-id: d4d1d735-38e4-455e-9045-a2443ce33851
+type: Troubleshooting
 ---
 # MDVA-37897: Incorrect redirect when adding products from Recently Viewed
 

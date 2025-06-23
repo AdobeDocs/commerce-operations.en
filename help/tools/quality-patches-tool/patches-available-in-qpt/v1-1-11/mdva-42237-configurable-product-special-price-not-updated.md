@@ -4,6 +4,7 @@ description: The MDVA-42237 patch fixes the issue where the configurable product
 feature: Admin Workspace, Configuration, Orders, Personalization, Products
 role: Admin
 exl-id: 1bae9a14-d6c1-4ee3-85aa-5d80ef479385
+type: Troubleshooting
 ---
 # MDVA-42237: Configurable product special price not updated
 

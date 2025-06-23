@@ -4,6 +4,7 @@ description: The MDVA-44100 patch solves the issue where all FPTs are assigned t
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: b370dcbb-cbe9-4f5d-9b8f-1722ab521fcb
+type: Troubleshooting
 ---
 # MDVA-44100: All FPTs are assigned to the last product in shopping cart
 

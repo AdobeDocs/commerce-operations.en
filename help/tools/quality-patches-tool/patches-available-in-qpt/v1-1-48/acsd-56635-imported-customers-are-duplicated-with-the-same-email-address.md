@@ -4,6 +4,7 @@ description: Apply the ACSD-56635 patch to fix the Adobe Commerce issue where th
 feature: Customers, Attributes
 role: Admin, Developer
 exl-id: 73abec4a-03b0-45d4-bfc6-f3c6862e733c
+type: Troubleshooting
 ---
 # ACSD-56635: Imported customers are duplicated with same email address when account sharing set to [!DNL Global]
 

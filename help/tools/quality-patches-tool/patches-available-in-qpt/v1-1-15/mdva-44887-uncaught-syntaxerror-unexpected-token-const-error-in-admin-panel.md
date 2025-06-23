@@ -4,6 +4,7 @@ description: "The MDVA-44887 patch fixes the issue where the admin user can't cl
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: d8cc03c3-35a0-4f00-8ec3-1ba3e100f7ca
+type: Troubleshooting
 ---
 # MDVA-44887: 'Uncaught SyntaxError: Unexpected token const' error in Admin panel
 

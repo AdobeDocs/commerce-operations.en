@@ -4,6 +4,7 @@ description: Apply the ACSD-53643 patch to fix the Adobe Commerce issue where th
 feature: B2B
 role: Admin, Developer
 exl-id: 72b52695-ef3c-4143-9e77-901463d4a9ed
+type: Troubleshooting
 ---
 # ACSD-53643: Order has an incorrect total when placing a purchase order
 

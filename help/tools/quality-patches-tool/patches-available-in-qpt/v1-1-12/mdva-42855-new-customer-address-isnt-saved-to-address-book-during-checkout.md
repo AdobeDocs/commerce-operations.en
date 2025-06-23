@@ -4,6 +4,7 @@ description: The MDVA-42855 patch fixes the issue where the new customer address
 feature: Checkout, Orders, Shipping/Delivery
 role: Admin
 exl-id: 924b8f57-1fec-4e62-bf0e-1f9cafa75cab
+type: Troubleshooting
 ---
 # MDVA-42855: New customer address is not saved to address book during checkout 
 

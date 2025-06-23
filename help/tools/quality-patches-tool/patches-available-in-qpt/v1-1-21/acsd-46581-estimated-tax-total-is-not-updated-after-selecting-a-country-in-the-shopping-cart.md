@@ -4,6 +4,7 @@ description: Apply the ACSD-46581 patch to solve the Adobe Commerce issue where 
 feature: Orders, Shopping Cart
 role: Admin
 exl-id: 45800055-8556-4f87-8938-c6be5d82938d
+type: Troubleshooting
 ---
 # ACSD-46581: Estimated tax total is not updated after selecting a country in the shopping cart
 

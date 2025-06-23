@@ -4,6 +4,7 @@ description: Apply the ACSD-47292 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Categories, GraphQL, Orders, Products
 role: Admin
 exl-id: 3b8114a3-cc45-4d65-af74-cb3e905d7f75
+type: Troubleshooting
 ---
 # ACSD-47292: out-of-stock bundled products are not available in GraphQL response
 

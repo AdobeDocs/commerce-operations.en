@@ -4,6 +4,7 @@ description: The MDVA-41399 patch solves the issue where admin users are unable 
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
+type: Troubleshooting
 ---
 # MDVA-41399: Unable to access the Manage Shopping Cart if a customer adds product to wishlist
 

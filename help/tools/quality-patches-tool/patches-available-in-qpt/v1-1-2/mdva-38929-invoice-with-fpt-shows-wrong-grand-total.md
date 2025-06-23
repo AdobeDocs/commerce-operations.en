@@ -4,6 +4,7 @@ description: The MDVA-38929 patch solves the issue where the invoice with FPT sh
 feature: Invoices, Orders
 role: Admin
 exl-id: fd0ca2f3-c6bf-4f09-a0fa-c931df94158b
+type: Troubleshooting
 ---
 # MDVA-38929: Invoice with FPT shows wrong total
 

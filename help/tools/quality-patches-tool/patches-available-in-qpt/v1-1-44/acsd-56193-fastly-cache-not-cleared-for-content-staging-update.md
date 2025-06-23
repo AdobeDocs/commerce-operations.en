@@ -4,6 +4,7 @@ description: Apply the ACSD-56193 patch to fix the Adobe Commerce issue where th
 feature: Cache, GraphQL, Staging
 role: Admin, Developer
 exl-id: a702ce22-cc85-4f58-8766-637a1b93d405
+type: Troubleshooting
 ---
 # ACSD-56193: [!DNL Fastly] cache is not cleared for content staging update
 

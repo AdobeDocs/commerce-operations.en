@@ -4,6 +4,7 @@ description: Apply the ACSD-46683 patch to fix the Adobe Commerce issue where th
 feature: Marketing Tools, Orders, Shipping/Delivery
 role: Admin
 exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
+type: Troubleshooting
 ---
 # ACSD-46683: Shipping price shows *Not yet calculated*
 

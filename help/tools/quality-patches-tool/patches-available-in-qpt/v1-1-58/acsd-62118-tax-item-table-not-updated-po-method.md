@@ -4,6 +4,7 @@ description: Apply the ACSD-62118 patch to fix the Adobe Commerce issue where th
 feature: Purchase Orders, B2B
 role: Admin, Developer
 exl-id: 8ace73ad-f5a5-47ab-aca7-62c818775d2f
+type: Troubleshooting
 ---
 # ACSD-62118: `sales_order_tax_item` table not fully updated for B2B orders placed using the [!UICONTROL Purchase Order] method
 

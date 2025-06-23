@@ -4,6 +4,7 @@ description: Apply the ACSD-61756 patch to fix the Adobe Commerce issue where th
 feature: Price Rules, Price Indexer
 role: Admin, Developer
 exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
+type: Troubleshooting
 ---
 # ACSD-61756: Performance degradation of `AdvancedSalesRule` filters due to missing database indexes
 

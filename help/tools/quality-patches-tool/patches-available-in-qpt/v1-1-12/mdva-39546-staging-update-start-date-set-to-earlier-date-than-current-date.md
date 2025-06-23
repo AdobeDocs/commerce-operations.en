@@ -4,6 +4,7 @@ description: The MDVA-39546 patch fixes the issue where the start date for the S
 feature: Staging
 role: Admin
 exl-id: 5d53db52-71af-4c19-84dd-dffb7303c00f
+type: Troubleshooting
 ---
 # MDVA-39546: Staging Update start date can be set to a date earlier than current date
 

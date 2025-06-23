@@ -4,6 +4,7 @@ description: Apply the ACSD-48058 patch to fix the Adobe Commerce issue where pr
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: 270e1b5d-75e0-4374-973a-2bb37161ceec
+type: Troubleshooting
 ---
 # ACSD-48058: product price reindex not working if bundled product not assigned website
 

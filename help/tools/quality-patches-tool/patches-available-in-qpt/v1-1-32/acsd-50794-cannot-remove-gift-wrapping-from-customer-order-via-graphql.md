@@ -4,6 +4,7 @@ description: Apply the ACSD-50794 patch to fix the Adobe Commerce issue where us
 feature: Gift, GraphQL, Orders
 role: Admin
 exl-id: e088fb18-89d3-47e4-ad02-54068c1ab653
+type: Troubleshooting
 ---
 # ACSD-50794: Cannot remove gift wrapping from customer order via GraphQL
 

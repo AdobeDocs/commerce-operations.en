@@ -4,6 +4,7 @@ description: Apply the ACSD-46770 patch to fix the Adobe Commerce issue where or
 feature: Communications, Orders
 role: Admin
 exl-id: d25ca121-7551-417c-b598-d8ed3a3da969
+type: Troubleshooting
 ---
 # ACSD-46770: order confirmation email is sent even when **[!UICONTROL Email Order Confirmation]** is unchecked
 

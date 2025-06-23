@@ -4,6 +4,7 @@ description: The MDVA-39923 patch fixes the issue where customers get an error w
 feature: B2B, Catalog Management, Orders, Search
 role: Admin
 exl-id: 9bed5615-b398-42f5-8313-ae2acca59155
+type: Troubleshooting
 ---
 # MDVA-39923: Search by SKU in B2B quick order functionality is case-sensitive
 

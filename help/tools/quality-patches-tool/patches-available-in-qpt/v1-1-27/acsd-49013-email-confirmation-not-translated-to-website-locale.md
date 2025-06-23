@@ -4,6 +4,7 @@ description: Apply the ACSD-49013 patch to fix the Adobe Commerce issue where em
 feature: Admin Workspace, Communications
 role: Admin
 exl-id: 1b0dc6aa-d5ee-4adf-882d-88f29a7eab34
+type: Troubleshooting
 ---
 # ACSD-49013: email confirmation not translated to website locale
 

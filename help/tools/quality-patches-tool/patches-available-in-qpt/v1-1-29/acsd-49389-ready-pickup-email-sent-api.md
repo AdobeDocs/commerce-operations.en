@@ -4,6 +4,7 @@ description: Apply the ACSD-49389 patch to fix the Adobe Commerce issue where a 
 feature: REST, Communications
 role: Admin
 exl-id: d1bc430a-3021-40d1-9091-db8ed9125619
+type: Troubleshooting
 ---
 # ACSD-49389: Ready for pickup email sent by API when not ready for pickup
 

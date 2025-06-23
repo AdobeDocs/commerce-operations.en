@@ -4,6 +4,7 @@ description: Apply the ACSD-50234 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
 exl-id: 9a8a7cef-0166-4b4b-96a0-87fd4f1a0ef3
+type: Troubleshooting
 ---
 # ACSD-50234: Incorrect customer name in confirmation email for orders placed using [!DNL PayPal]
 

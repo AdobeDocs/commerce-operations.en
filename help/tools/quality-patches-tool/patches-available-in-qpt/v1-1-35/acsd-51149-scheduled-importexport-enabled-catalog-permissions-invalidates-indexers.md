@@ -4,6 +4,7 @@ description: Apply the ACSD-51149 patch to fix the Adobe Commerce performance is
 feature: Cache, Data Import/Export
 role: Admin
 exl-id: eafc69ab-ec81-4192-85f8-a235f0a131a9
+type: Troubleshooting
 ---
 # ACSD-51149: Scheduled [!UICONTROL ImportExport] with enabled [!UICONTROL Catalog Permissions] invalidates indexers
 

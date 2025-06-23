@@ -4,6 +4,7 @@ description: Apply the ACSD-49628 patch to fix the Adobe Commerce issue where th
 feature: Categories, Page Builder, Products
 role: Admin
 exl-id: 5bceddfa-5fbf-4ebe-a233-de7720764849
+type: Troubleshooting
 ---
 # ACSD-49628: [!DNL Page Builder] CORS errors prevent product save
 

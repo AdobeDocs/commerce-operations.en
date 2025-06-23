@@ -4,6 +4,7 @@ description: Apply the ACSD-49898 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: adc8f12e-73e4-4ed5-8081-a9907ec13342
+type: Troubleshooting
 ---
 # ACSD-49898: Products grid throws an exception
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-55352 patch to fix the Adobe Commerce issue where af
 feature: Checkout, Orders
 role: Admin, Developer
 exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
+type: Troubleshooting
 ---
 # ACSD-55352: Creating credit memos with reward points
 

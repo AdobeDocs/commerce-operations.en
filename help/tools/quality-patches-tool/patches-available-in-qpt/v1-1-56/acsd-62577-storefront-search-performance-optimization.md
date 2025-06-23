@@ -4,6 +4,7 @@ description: Apply the ACSD-62577 patch to fix the Adobe Commerce issue where st
 feature: Search
 role: Admin, Developer
 exl-id: 211c1e3c-0739-4ff6-a25c-b27d335920d1
+type: Troubleshooting
 ---
 # ACSD-62577: Storefront search performance optimization
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-56546 patch to fix the Adobe Commerce issue where th
 feature: Storefront, Products
 role: Admin, Developer
 exl-id: d9bb05ca-a84e-48bb-957e-55b28631b3cb
+type: Troubleshooting
 ---
 # ACSD-56546: Configurable and bundle products display as out of stock on the storefront
 

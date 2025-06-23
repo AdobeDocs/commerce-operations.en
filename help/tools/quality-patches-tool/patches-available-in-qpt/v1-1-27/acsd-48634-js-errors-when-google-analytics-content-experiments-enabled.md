@@ -4,6 +4,7 @@ description: Apply the ACSD-48634 patch to fix [!DNL JS] errors on a [!DNL stagi
 feature: Catalog Management, Categories, Console, Page Content
 role: Admin
 exl-id: 99368346-157f-4283-bb8c-192a62501717
+type: Troubleshooting
 ---
 # ACSD-48634: [!DNL JS] errors when [!DNL Google Analytics Content Experiments] enabled
 

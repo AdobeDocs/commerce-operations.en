@@ -4,6 +4,7 @@ description: Apply the ACSD-49480 patch to fix the Adobe Commerce issue where th
 feature: Price Rules
 role: Admin
 exl-id: 1919043b-99a8-46a2-94df-9285c05bec7b
+type: Troubleshooting
 ---
 # ACSD-49480: [!UICONTROL Cart Price Rule - Discard Subsequent Rules] is not working as intended
 

@@ -4,6 +4,7 @@ description: The MDVA-38559 patch fixes the issue where the `/V1/customers/searc
 feature: REST, Search
 role: Admin
 exl-id: 6bcb65d0-1389-4090-b53c-8048bf64d8fb
+type: Troubleshooting
 ---
 # MDVA-38559: /V1/customers/search API returns error
 

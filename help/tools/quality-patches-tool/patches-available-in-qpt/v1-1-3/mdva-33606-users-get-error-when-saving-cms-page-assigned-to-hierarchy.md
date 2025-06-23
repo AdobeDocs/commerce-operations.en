@@ -4,6 +4,7 @@ description: The MDVA-33606 patch solves the issue where the users get *Unique c
 feature: CMS
 role: Admin
 exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
+type: Troubleshooting
 ---
 # MDVA-33606: Users get error when saving CMS page assigned to hierarchy
 

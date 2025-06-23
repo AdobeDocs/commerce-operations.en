@@ -4,6 +4,7 @@ description: The MDVA-38346 patch solves the issue where date filters are not wo
 feature: Configuration
 role: Admin
 exl-id: 6ed909be-81da-4e06-97c7-4eab8be2ddd2
+type: Troubleshooting
 ---
 # MDVA-38346: Date filters not working when Adobe Commerce timezone is different from local
 

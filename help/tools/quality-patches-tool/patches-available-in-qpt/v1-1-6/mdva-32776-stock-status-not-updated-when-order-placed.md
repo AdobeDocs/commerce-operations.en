@@ -4,6 +4,7 @@ description: The MDVA-32776 patch fixes the issue where the stock status is not 
 feature: Orders
 role: Admin
 exl-id: 6f872c72-c96f-4c23-b6df-44e3da3a81c2
+type: Troubleshooting
 ---
 # MDVA-32776: Stock status not updated with order placement
 

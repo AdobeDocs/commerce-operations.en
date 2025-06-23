@@ -4,6 +4,7 @@ description: Apply the ACSD-51630 patch to fix the Adobe Commerce performance is
 feature: Admin Workspace, System
 role: Admin
 exl-id: 8f39afea-551a-4306-994a-cb8ce5bd5b4a
+type: Troubleshooting
 ---
 # ACSD-51630: Numerous system messages slow download of Admin Pages
 

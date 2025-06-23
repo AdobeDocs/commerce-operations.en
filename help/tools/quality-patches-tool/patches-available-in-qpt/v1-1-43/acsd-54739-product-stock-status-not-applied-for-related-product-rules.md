@@ -4,6 +4,7 @@ description: Apply the ACSD-54739 patch to fix the Adobe Commerce issue where *[
 feature: Products
 role: Admin, Developer
 exl-id: d6d3b25d-b10e-4ccb-a9c4-b5c1c7773eb6
+type: Troubleshooting
 ---
 # ACSD-54739: *[!UICONTROL Product stock]* status not applied for *[!UICONTROL Related Product Rules]*
 

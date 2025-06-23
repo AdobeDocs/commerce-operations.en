@@ -4,6 +4,7 @@ description: Apply the ACSD-63286 patch to fix the Adobe Commerce issue where pr
 feature: Products, REST
 role: Admin, Developer
 exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+type: Troubleshooting
 ---
 # ACSD-63286: Products assigned to shared catalog need manual reindexing to appear
 

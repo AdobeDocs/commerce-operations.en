@@ -4,6 +4,7 @@ description: Apply the ACSD-47497 patch to fix the Adobe Commerce issue when per
 feature: Configuration, Identity Management, Services
 role: Admin
 exl-id: 4dbbd7df-f34b-4db8-a207-3de40fb39c6f
+type: Troubleshooting
 ---
 # ACSD-47497: missing ACL for Store / Configuration / Services [!UICONTROL OAuth]
 

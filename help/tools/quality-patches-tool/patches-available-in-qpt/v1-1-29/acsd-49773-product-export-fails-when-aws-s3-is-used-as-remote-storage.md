@@ -4,6 +4,7 @@ description: Apply the ACSD-49773 patch to fix the Adobe Commerce issue where pr
 feature: Data Import/Export, Iaas, Products, Storage
 role: Admin
 exl-id: 82f1299f-52b6-4f87-b01c-072d1661c022
+type: Troubleshooting
 ---
 # ACSD-49773: Product export fails when AWS S3 is used as remote storage
 

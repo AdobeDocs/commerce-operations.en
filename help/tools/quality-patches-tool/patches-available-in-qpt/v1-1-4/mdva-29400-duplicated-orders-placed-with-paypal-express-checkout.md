@@ -4,6 +4,7 @@ description: The MDVA-29400 patch solves the issue where duplicated orders are c
 feature: Checkout, Orders, Payments
 role: Admin
 exl-id: 6f7291d3-d554-4e4e-a55d-89ea2b9dea33
+type: Troubleshooting
 ---
 # MDVA-29400: Duplicated orders placed with PayPal Express Checkout
 

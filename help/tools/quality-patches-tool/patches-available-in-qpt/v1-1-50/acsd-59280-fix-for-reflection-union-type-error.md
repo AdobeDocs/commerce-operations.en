@@ -4,6 +4,7 @@ description: Apply the ACSD-59280 patch to fix the Adobe Commerce issue where th
 feature: Install, Upgrade
 role: Admin, Developer
 exl-id: 5a47dad4-4490-4e3d-93f2-9b176fb144d9
+type: Troubleshooting
 ---
 # ACSD-59280: `ReflectionUnionType::getName()` error in 2.4.4-pX installations
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-48293 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: 2aa75e97-373e-4e4a-a545-69bce807ca4d
+type: Troubleshooting
 ---
 # ACSD-48293: composite products out of stock when sold out child products restocked
 

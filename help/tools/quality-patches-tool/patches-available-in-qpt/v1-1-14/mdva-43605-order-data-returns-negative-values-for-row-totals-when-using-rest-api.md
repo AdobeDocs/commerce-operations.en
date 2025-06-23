@@ -4,6 +4,7 @@ description: The MDVA-43605 patch fixes the issue where the order data returns n
 feature: REST, Orders
 role: Admin
 exl-id: f27439a6-eeee-4176-9ac9-98220752db3f
+type: Troubleshooting
 ---
 # MDVA-43605: Order data returns negative values for row totals when using Rest API
 

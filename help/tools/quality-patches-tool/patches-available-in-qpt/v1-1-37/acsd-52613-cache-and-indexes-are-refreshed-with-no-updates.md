@@ -4,6 +4,7 @@ description: Apply the ACSD-52613 patch to fix the Adobe Commerce issue where th
 feature: REST
 role: Admin
 exl-id: 18878161-da4e-4d6e-9f58-706519f837f8
+type: Troubleshooting
 ---
 # ACSD-52613: Cache and indexes are refreshed even with no updates
 

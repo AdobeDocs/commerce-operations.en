@@ -4,6 +4,7 @@ description: Apply the ACSD-47666 patch to fix the Adobe Commerce issue where th
 feature: Roles/Permissions, Search
 role: Admin
 exl-id: fb66f114-b95c-402e-a35a-e552f264966c
+type: Troubleshooting
 ---
 # ACSD-47666: search in **[!UICONTROL User Roles]** does not work
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-49839 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Catalog Management, Categories
 role: Admin
 exl-id: b74e3926-16c8-4222-b642-ed1b7095dea4
+type: Troubleshooting
 ---
 # ACSD-49839: Shared catalog pricing and structure throws an error
 

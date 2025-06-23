@@ -4,6 +4,7 @@ description: Apply the ACSD-47232 patch to fix the Adobe Commerce issue where co
 feature: Orders, Shipping/Delivery
 role: Admin
 exl-id: d8050f6e-00a9-4aa3-bb8b-1631e0e7a714
+type: Troubleshooting
 ---
 # ACSD-47232: coupon is not applied when [!UICONTROL Same as Billing Address] is checked
 

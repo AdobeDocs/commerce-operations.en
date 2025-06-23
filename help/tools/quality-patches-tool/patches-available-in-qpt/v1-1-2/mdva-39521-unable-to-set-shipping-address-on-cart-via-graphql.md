@@ -4,6 +4,7 @@ description: The MDVA-39521 patch solves the issue where the user is unable to s
 feature: GraphQL, Orders, Shipping/Delivery, Shopping Cart
 role: Admin
 exl-id: aac44c20-b244-472b-bab0-7d6e7d99608a
+type: Troubleshooting
 ---
 # MDVA-39521: Unable to set shipping address on carts via GraphQL
 

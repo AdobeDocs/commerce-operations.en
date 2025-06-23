@@ -4,6 +4,7 @@ description: Apply the ACSD-52736 patch to fix the Adobe Commerce issue where a 
 feature: Shopping Cart, Products
 role: Admin, Developer
 exl-id: 80c3b14e-62ce-4cfc-b1ff-968e70e3a6f8
+type: Troubleshooting
 ---
 # ACSD-52736: [!UICONTROL Cart Price Rule] doesn't work as expected
 

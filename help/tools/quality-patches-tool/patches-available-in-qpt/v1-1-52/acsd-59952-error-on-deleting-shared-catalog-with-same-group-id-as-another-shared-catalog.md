@@ -4,6 +4,7 @@ description: Apply the ACSD-59952 patch to fix the Adobe Commerce issue where an
 feature: B2B, REST
 role: Admin, Developer
 exl-id: 11cba2e6-dd62-4063-a38c-b98ea70a72e9
+type: Troubleshooting
 ---
 # ACSD-59952: Error on deleting shared catalog with same group ID as another shared catalog
 

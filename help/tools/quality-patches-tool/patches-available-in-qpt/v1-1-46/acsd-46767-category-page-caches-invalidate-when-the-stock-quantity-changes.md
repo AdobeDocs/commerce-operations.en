@@ -4,6 +4,7 @@ description: Apply the ACSD-46767 patch to fix the Adobe Commerce issue where th
 feature: Cache, Products, Inventory
 role: Admin, Developer
 exl-id: 5872dca7-fdef-47ad-8718-bf343cd3a42a
+type: Troubleshooting
 ---
 # ACSD-46767: [!UICONTROL Category] page caches invalidate when the stock quantity changes
 

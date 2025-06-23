@@ -4,6 +4,7 @@ description: The MDVA-41350 patch fixes the issue where an exception error is th
 feature: Admin Workspace, Products
 role: Admin
 exl-id: 4dc5ee5c-bd93-42e1-9c63-93ffb8e5f21c
+type: Troubleshooting
 ---
 # MDVA-41350: Exception when admin adds products outside their access
 

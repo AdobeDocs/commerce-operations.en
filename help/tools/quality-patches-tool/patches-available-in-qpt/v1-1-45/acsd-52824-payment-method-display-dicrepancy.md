@@ -4,6 +4,7 @@ description: Apply the ACSD-52824 patch to fix the Adobe Commerce issue where [!
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
 exl-id: 39d67de6-1796-4067-ae7a-ef17fcf794e5
+type: Troubleshooting
 ---
 # ACSD-52824: Disabled payment methods displayed for company customers
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-48857 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, CMS, Page Builder
 role: Admin
 exl-id: b03cd597-8fef-4528-9699-793dc61d34da
+type: Troubleshooting
 ---
 # ACSD-48857: Unable to save changes after editing with [!DNL Page Builder]
 

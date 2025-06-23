@@ -4,6 +4,7 @@ description: Apply the ACSD-46519 patch to fix the Adobe Commerce issue where wh
 feature: Categories, GraphQL, Products
 role: Admin
 exl-id: 7becaa4e-421a-4983-ac73-f5b58fc45d8f
+type: Troubleshooting
 ---
 # ACSD-46519: [!UICONTROL product_count] in [!UICONTROL categoryList] [!DNL GraphQL] query returns 0 for anchor categories
 

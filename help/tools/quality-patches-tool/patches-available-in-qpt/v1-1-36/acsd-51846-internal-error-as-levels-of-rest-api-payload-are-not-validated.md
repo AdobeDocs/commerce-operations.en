@@ -4,6 +4,7 @@ description: Apply the ACSD-51846 patch to fix the Adobe Commerce issue where an
 feature: REST
 role: Developer
 exl-id: 436b075c-d9df-4bf2-94a2-52f2e66e8a4c
+type: Troubleshooting
 ---
 # ACSD-51846: Internal error as [!DNL REST API] payload levels aren't validated
 

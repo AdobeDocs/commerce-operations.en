@@ -4,6 +4,7 @@ description: Apply the ACSD-54660 patch to fix the Adobe Commerce issue where a 
 feature: GraphQL, Orders
 role: Admin, Developer
 exl-id: 3962d4b6-634e-4164-adae-fa840ca7d869
+type: Troubleshooting
 ---
 # ACSD-54660:  New input attribute sort added to sort customer orders in [!DNL GraphQL]
 

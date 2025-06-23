@@ -4,6 +4,7 @@ description: Apply the ACSD-62952 patch to fix the Adobe Commerce issue where th
 feature: Gift, Storefront
 role: Admin, Developer
 exl-id: c11e95ab-775d-4aa7-828b-29ec52685d47
+type: Troubleshooting
 ---
 # ACSD-62952: Gift Registry date displayed inaccurately on the storefront
 

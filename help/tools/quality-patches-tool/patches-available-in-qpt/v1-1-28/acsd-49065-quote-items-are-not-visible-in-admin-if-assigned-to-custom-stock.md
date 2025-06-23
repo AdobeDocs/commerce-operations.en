@@ -4,6 +4,7 @@ description: Apply the ACSD-49065 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, B2B, Orders, Quotes
 role: Admin
 exl-id: fc3bea92-305b-4598-9915-3422d61c76ec
+type: Troubleshooting
 ---
 # ACSD-49065: Quote items are not visible in admin
 

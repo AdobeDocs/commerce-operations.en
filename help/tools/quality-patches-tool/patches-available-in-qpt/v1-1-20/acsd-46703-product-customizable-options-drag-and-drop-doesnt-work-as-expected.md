@@ -4,6 +4,7 @@ description: This article provides a solution for the issue where the product cu
 feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
+type: Troubleshooting
 ---
 # ACSD-46703: Product customization drag and drop does not work
 

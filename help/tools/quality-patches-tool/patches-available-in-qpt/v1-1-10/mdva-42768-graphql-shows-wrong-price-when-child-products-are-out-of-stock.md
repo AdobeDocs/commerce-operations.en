@@ -4,6 +4,7 @@ description: The MDVA-42768 patch fixes the issue where GraphQL shows the wrong 
 feature: GraphQL, Orders, Products
 role: Admin
 exl-id: 9f6ab418-2267-4548-952a-17dc8295f632
+type: Troubleshooting
 ---
 # MDVA-42768: GraphQL shows wrong price when child products are out of stock
 

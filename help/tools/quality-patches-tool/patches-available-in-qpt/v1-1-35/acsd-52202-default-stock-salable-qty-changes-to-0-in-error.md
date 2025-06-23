@@ -4,6 +4,7 @@ description: Apply the ACSD-52202 patch to fix the Adobe Commerce issue where a 
 feature: Inventory, Products
 role: Admin
 exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
+type: Troubleshooting
 ---
 # ACSD-52202: Default stock salable quantity changes to 0 in error when non-default stock set to 0 quantity in an order
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-47076 patch to fix the Adobe Commerce issue where [!
 feature: Storefront
 role: Admin
 exl-id: 156b961b-e507-44fe-9b26-d73136e336a9
+type: Troubleshooting
 ---
 # ACSD-47076: [!DNL Vimeo] videos cannot be played on the storefront
 

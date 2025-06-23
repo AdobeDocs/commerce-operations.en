@@ -4,6 +4,7 @@ description: Apply the ACSD-47803 patch to fix the Adobe Commerce issue where ou
 feature: Configuration, Orders, Products
 role: Admin
 exl-id: c1b80949-65ed-4a44-8be4-25decda32142
+type: Troubleshooting
 ---
 # ACSD-47803: out-of-stock configurable product swatches displayed as available
 

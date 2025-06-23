@@ -3,6 +3,7 @@ title: 'ACSD-64111: Fixes the *InvalidArgumentException: Class does not exist* e
 feature: Products, Page Builder
 role: Admin, Developer
 exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
+type: Troubleshooting
 ---
 # ACSD-64111: Fixes the *InvalidArgumentException: Class does not exist* error when setting nested conditions for a Product component in [!DNL Page Builder]
 

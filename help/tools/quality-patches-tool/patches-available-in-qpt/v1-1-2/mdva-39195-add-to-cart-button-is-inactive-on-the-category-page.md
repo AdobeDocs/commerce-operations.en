@@ -4,6 +4,7 @@ description: The MDVA-39195 patch solves the issue where the **Add to Cart** but
 feature: Categories, Orders, Shopping Cart
 role: Admin
 exl-id: 2c391f54-3b9e-4e72-944b-b003e4ade9b9
+type: Troubleshooting
 ---
 # MDVA-39195: Add to Cart is inactive on Category Page
 

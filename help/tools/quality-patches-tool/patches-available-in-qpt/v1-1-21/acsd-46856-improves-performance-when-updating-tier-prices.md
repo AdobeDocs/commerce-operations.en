@@ -4,6 +4,7 @@ description: Apply the ACSD-46856 patch to improve performance when updating tie
 feature: Orders
 role: Admin
 exl-id: 5c954f2c-a55c-43ba-919f-406f4b173d30
+type: Troubleshooting
 ---
 # ACSD-46856: Updating of tier prices via System > Configuration > Import > Advanced Pricing is slow
 

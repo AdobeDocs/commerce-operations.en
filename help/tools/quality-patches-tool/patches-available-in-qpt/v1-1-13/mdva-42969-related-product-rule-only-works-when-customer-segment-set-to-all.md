@@ -4,6 +4,7 @@ description: The MDVA-42969 patch fixes the issue where the related product rule
 feature: Customer Service, Marketing Tools, Products
 role: Admin
 exl-id: 121da040-4541-468a-aeaf-cf98094e1918
+type: Troubleshooting
 ---
 # MDVA-42969: Related product rule only works when customer segment is set to all
 

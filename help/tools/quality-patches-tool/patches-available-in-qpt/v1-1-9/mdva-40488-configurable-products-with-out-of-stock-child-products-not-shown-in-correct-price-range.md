@@ -4,6 +4,7 @@ description: The MDVA-40488 patch solves the issue where configurable products w
 feature: Configuration, Orders, Products
 role: Admin
 exl-id: 9a843d1b-88df-4bd7-a358-3aa34c436bdf
+type: Troubleshooting
 ---
 # MDVA-40488: Configurable products with out-of-stock child products not shown in correct price range
 

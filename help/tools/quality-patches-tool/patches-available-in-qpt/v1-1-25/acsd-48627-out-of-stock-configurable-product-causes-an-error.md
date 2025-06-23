@@ -4,6 +4,7 @@ description: Apply the ACSD-48627 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
 exl-id: 457c605e-d0c3-479e-b515-9b2851a71a08
+type: Troubleshooting
 ---
 # ACSD-48627: out-of-stock configurable product causes an error
 

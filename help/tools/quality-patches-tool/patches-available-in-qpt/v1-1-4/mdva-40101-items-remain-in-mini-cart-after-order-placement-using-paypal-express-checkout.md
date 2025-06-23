@@ -4,6 +4,7 @@ description: The MDVA-40101 patch fixes the issue where items are not removed fr
 feature: Checkout, Orders, Payments, Shopping Cart
 role: Admin
 exl-id: 8d3fa92e-39ed-4d8f-8dbe-9c08f787c6f1
+type: Troubleshooting
 ---
 # MDVA-40101: Items remain mini-cart after order placement PayPal Express Checkout
 

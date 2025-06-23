@@ -4,6 +4,7 @@ description: The MDVA-43862 patch solves the issue where the customer can't upda
 feature: GraphQL, Orders, Shopping Cart
 role: Admin
 exl-id: d8a2579f-58f5-4407-8006-d58794a84b1f
+type: Troubleshooting
 ---
 # MDVA-43862: customer can't update cart items because of a GraphQL UpdateCartItems mutation error
 
