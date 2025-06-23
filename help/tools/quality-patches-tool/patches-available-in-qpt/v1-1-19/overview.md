@@ -4,6 +4,7 @@ description: This sub-section provides a detailed description of the issues fixe
 feature: Tools and External Services
 role: Admin
 exl-id: 3de3d0c1-37c7-4510-9092-fbaae384120e
+type: Troubleshooting
 ---
 # [!DNL Quality Patches Tool] (QPT) v1.1.19 overview
 

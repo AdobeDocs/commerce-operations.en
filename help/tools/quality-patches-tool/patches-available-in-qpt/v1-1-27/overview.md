@@ -4,6 +4,7 @@ description: This sub-section provides a detailed description of the issues fixe
 feature: Tools and External Services
 role: Admin
 exl-id: c82b5829-917d-4f38-b8a6-826f92e319b6
+type: Troubleshooting
 ---
 # Overview: Quality Patches Tool (QPT) v1.1.27 
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-62979 patch to fix the Adobe Commerce issue where us
 feature: GraphQL
 role: Admin, Developer
 exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
+type: Troubleshooting
 ---
 # ACSD-62979: Incorrect Store ID in the GraphQL header causes a fatal memory error
 

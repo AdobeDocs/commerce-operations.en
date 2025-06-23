@@ -4,6 +4,7 @@ description: Apply the ACSD-62332 patch to fix the Adobe Commerce issues where t
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: 3623a337-32e9-468b-a82b-6a7f7fa943c9
+type: Troubleshooting
 ---
 # ACSD-62332: Product listing GraphQL query limited to 10,000 products, and [!DNL Live Search] sets current page to 1 
 

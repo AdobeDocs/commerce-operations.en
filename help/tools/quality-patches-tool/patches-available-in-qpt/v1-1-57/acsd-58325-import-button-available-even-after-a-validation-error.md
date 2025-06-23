@@ -4,6 +4,7 @@ description: Apply the ACSD-58325 patch to fix the Adobe Commerce issue where th
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+type: Troubleshooting
 ---
 # ACSD-58325: [!UICONTROL Import] button available even after a validation error
 

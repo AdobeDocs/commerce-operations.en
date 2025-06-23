@@ -4,6 +4,7 @@ description: Apply the ACSD-63067 patch to fix the Adobe Commerce issue where al
 feature: Storefront
 role: Admin, Developer
 exl-id: a497f2c4-8bf0-41da-955a-a58e79f09c08
+type: Troubleshooting
 ---
 # ACSD-63067: Resolving quantity validation issues in grouped products on storefront
 

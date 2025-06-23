@@ -4,10 +4,11 @@ description: Apply the ACSD-50858 patch to fix the Adobe Commerce issue where ba
 feature: Page Content
 role: Admin
 exl-id: 1b46e51f-70ad-4450-b3a8-173c2e4b7925
+type: Troubleshooting
 ---
 # ACSD-50858: Improved performance for loading banners' content
 
-The ACSD-50858 patch fixes a banner performance issue in the cart/checkout page: *excessive DB queries and increased page loading time*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.31 is installed. The patch ID is ACSD-50858. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-50858 patch fixes a banner performance issue in the cart/checkout page: *excessive DB queries and increased page loading time*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.31 is installed. The patch ID is ACSD-50858. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -128,7 +129,7 @@ for ($i = 0; $i < 1000; $i++) {
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

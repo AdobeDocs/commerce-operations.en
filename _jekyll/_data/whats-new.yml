@@ -2,8 +2,43 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jun 10 11:34:28 2025
+updated: Tue Jun 17 02:20:54 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-66093
+    patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails).
+  versions: ''
+  type: new-topic, qpt
+  date: June 16, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1420
+  merge_commit: 69bf5e6d1e98e18d0402a39d910d90c13eb15b3d
+  contributor: muntianu
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added details about [alpha releases](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#adobe-commerce-foundation-public-beta)
+    for Adobe Commerce Foundation.
+  versions: ''
+  type: major-update
+  date: June 16, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1425
+  merge_commit: 9f7fb2a4f564f89091c831e03c88c818d688d08f
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+- description: Added the [description of the issues fixed by the patches available
+    in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/overview)
+  versions: ''
+  type: new-topic, qpt
+  date: June 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1406
+  merge_commit: 7a41e648e7fa62a48db7faa065013c1c84b1fb3c
+  contributor: muntianu
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Published release notes for the June 2025 security patches and 2.4.9-alpha1
     patch:<br/>- [2.4.9-alpha1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)<br/>-
     [2.4.8-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches)<br/>-
@@ -31,7 +66,6 @@ entries:
   membership:
   labels:
   - major-update
-
 - description: Added the [detailed description of the issue fixed by the ACSD-65540
     patch in the QPT 1.1.64 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table).
   versions: ''

@@ -3,6 +3,7 @@ title: Usage
 description: Learn how to use the [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
+type: Troubleshooting
 ---
 # Usage
 

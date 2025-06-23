@@ -4,10 +4,11 @@ description: Apply the ACSD-47444 patch to fix the Adobe Commerce issue where th
 feature: Categories, Products
 role: Admin
 exl-id: 9f04ee28-d22c-4fdf-9228-e436abe973e8
+type: Troubleshooting
 ---
 # ACSD-47444: _[!UICONTROL Trying to access array offset on value of type bool]_ error when accessing certain non-existing category paths for known products on PHP 7.4
 
-The ACSD-47444 patch solves the issue where you see _[!UICONTROL Trying to access array offset on value of type bool]_ error when accessing certain non-existing category paths for known products on PHP 7.4. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.22 is installed.  
+The ACSD-47444 patch solves the issue where you see _[!UICONTROL Trying to access array offset on value of type bool]_ error when accessing certain non-existing category paths for known products on PHP 7.4. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22 is installed.  
 
 ## Affected products and versions
 
@@ -56,7 +57,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

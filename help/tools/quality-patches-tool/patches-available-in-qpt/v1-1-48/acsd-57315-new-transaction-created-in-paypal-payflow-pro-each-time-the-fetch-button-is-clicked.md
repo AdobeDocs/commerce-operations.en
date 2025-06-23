@@ -4,6 +4,7 @@ description: Apply the ACSD-57315 patch to fix the Adobe Commerce issue where a 
 feature: Payments
 role: Admin, Developer
 exl-id: 1fb8a5af-fda1-4c24-859d-d45424bde12f
+type: Troubleshooting
 ---
 # ACSD-57315: New transaction is created in [!DNL PayPal Payflow Pro] each time the fetch button is clicked
 
@@ -55,7 +56,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 
