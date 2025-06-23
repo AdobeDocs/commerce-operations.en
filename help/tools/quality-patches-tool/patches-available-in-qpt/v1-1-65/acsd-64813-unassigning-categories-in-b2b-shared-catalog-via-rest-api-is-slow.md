@@ -4,8 +4,8 @@ description: Apply the ACSD-64813 patch to fix the Adobe Commerce issue where un
 feature: B2B, REST, Categories
 role: Admin, Developer
 type: Troubleshooting
+exl-id: e6fd89c2-d3c0-462f-b328-7a80b456d96d
 ---
-
 # ACSD-64813: Unassigning categories in [!DNL B2B] shared catalog via REST API is slow
 
 The ACSD-64813 patch fixes the issue where unassigning categories in a [!DNL B2B] shared catalog via the REST API is slow. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-64813. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.

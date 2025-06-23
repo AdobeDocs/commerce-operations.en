@@ -3,8 +3,8 @@ title: 'ACSD-65822: Bundle and configurable product quantities not reflected cor
 description: Apply the ACSD-65822 patch to fix the Adobe Commerce issue where the quantity appeared as 0 in the customer shopping cart section in the admin panel when adding bundle products.
 feature: Admin Workspace, Checkout, Orders
 role: Admin, Developer
+exl-id: 6740b5a6-8710-458c-abe4-03d2a8a694c5
 ---
-
 # ACSD-65822: Bundle and configurable product quantities not reflected correctly in the [!UICONTROL Shopping Cart]
 
 The ACSD-65822 patch fixes the issue where bundle and configurable product quantities are not displayed correctly in the **[!UICONTROL Shopping Cart]** section under *[!UICONTROL Customer's Activities]*. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65822. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
