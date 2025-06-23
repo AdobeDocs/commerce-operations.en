@@ -4,6 +4,7 @@ description: 'The MDVA-40311 patch fixes the issue where the Admin user gets an 
 feature: Admin Workspace, Compliance, Security
 role: Admin
 exl-id: dce4914b-e32e-4af0-be24-e55680191fa3
+type: Troubleshooting
 ---
 # MDVA-40311: "Invalid security or form key" error after login into Admin if custom admin path is configured
 

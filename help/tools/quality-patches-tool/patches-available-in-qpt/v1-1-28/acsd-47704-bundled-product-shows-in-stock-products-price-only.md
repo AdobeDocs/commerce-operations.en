@@ -4,6 +4,7 @@ description: Apply the ACSD-47704 patch to fix the Adobe Commerce issue where a 
 feature: Admin Workspace, Customer Service, Orders, Products
 role: Admin
 exl-id: 7f05ceed-869c-4d1a-91fd-0122dc98e65e
+type: Troubleshooting
 ---
 # ACSD-47704: Bundled product shows the price of in stock products only
 

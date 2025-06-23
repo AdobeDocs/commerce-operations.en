@@ -4,6 +4,7 @@ description: The MDVA-39605 patch solves the issue where the Redis cache TTL (ex
 feature: Cache, Console, Services
 role: Admin
 exl-id: 65f5d50a-e49e-4155-9d1a-3758f0c723a8
+type: Troubleshooting
 ---
 # MDVA-39605: Redis cache TTL (expiration date) has wrong value
 

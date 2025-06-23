@@ -4,6 +4,7 @@ description: Apply the ACSD-56886 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin, Developer
 exl-id: 5e9c1fd4-b56a-42c0-83e7-75e868213124
+type: Troubleshooting
 ---
 # ACSD-56886: Configurable product becomes out of stock when child products are disabled 
 

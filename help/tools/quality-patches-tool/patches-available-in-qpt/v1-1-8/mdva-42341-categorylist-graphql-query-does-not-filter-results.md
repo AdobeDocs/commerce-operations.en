@@ -4,6 +4,7 @@ description: The MDVA-42341 patch solves the issue where the "categoryList" Grap
 feature: GraphQL, Categories
 role: Admin
 exl-id: 56b81385-6db0-4e62-8e2b-bccfc9e0a581
+type: Troubleshooting
 ---
 # MDVA-42341: "categoryList" GraphQL query does not filter results
 

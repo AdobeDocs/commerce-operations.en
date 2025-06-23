@@ -4,6 +4,7 @@ description: Apply the ACSD-61895 patch to fix the Adobe Commerce issue where [!
 feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
+type: Troubleshooting
 ---
 # ACSD-61895: [!DNL GraphQL] `categories` query fails for private shared catalog with restricted view
 

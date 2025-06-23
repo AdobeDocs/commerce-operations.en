@@ -4,6 +4,7 @@ description: The MDVA-26005 patch solves the issue where users are not able to s
 feature: Categories, Orders, Price Rules, Shopping Cart
 role: Admin
 exl-id: 02d9eef4-89f0-48be-8bb9-c62bbdad76a5
+type: Troubleshooting
 ---
 # MDVA-26005: Unable to select category in tree for Cart Price rule conditions
 

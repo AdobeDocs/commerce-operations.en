@@ -4,6 +4,7 @@ description: The MDVA-43091 patch solves the issue where users are unable to ord
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: d2812f97-107c-4db9-93cc-7004344fcc95
+type: Troubleshooting
 ---
 # MDVA-43091: Unable to order bundled product from Admin
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-53148 patch to fix the Adobe Commerce issue where tw
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 exl-id: e5e22bed-69de-4872-9aa8-ab228f640b30
+type: Troubleshooting
 ---
 # ACSD-53148: Two parallel requests in GraphQL for adding the same configurable product
 

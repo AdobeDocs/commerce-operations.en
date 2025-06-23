@@ -4,6 +4,7 @@ description: Apply the ACSD-53378 patch to fix the Adobe Commerce issue where th
 feature: Customers, Checkout
 role: Admin
 exl-id: 699d09fe-872f-44d3-88bb-b5b585e15067
+type: Troubleshooting
 ---
 # ACSD-53378: Enhanced checkout experience for customers with extensive address books
 

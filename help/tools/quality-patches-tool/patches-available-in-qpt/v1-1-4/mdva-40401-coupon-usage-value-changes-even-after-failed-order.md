@@ -4,6 +4,7 @@ description: The MDVA-40401 patch fixes the issue where coupon usage value chang
 feature: Orders
 role: Admin
 exl-id: bc8eedd6-977f-4f21-bcd1-b5f6c4a6704f
+type: Troubleshooting
 ---
 # MDVA-40401: Coupon usage value changes after failed order
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-51265 patch to fix the Adobe Commerce issue where th
 feature: Products, Price Indexer
 role: Admin
 exl-id: 1a173ca7-f99e-42d8-87d7-81a6b33f2d4d
+type: Troubleshooting
 ---
 # ACSD-51265: Optimize reindexing for bundled products
 

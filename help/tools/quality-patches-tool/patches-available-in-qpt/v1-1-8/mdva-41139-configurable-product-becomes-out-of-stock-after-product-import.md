@@ -4,6 +4,7 @@ description: The MDVA-41139 patch fixes the issue where the configurable product
 feature: Data Import/Export, Configuration, Orders, Products
 role: Admin
 exl-id: 7366230c-3b7f-4211-9f0d-55a528dffdbd
+type: Troubleshooting
 ---
 # MDVA-41139: Configurable product becomes out of stock after product import
 

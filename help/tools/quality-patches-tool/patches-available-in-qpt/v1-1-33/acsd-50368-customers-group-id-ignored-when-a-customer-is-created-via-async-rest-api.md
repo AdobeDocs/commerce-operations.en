@@ -4,6 +4,7 @@ description: Apply the ACSD-50368 patch to fix the Adobe Commerce issue where th
 feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
+type: Troubleshooting
 ---
 # ACSD-50368: Customers group_id is ignored when a customer is created via Async REST API or Async Bulk REST API
 

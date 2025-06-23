@@ -4,6 +4,7 @@ description: Apply the ACSD-63469 patch to fix the Adobe Commerce issue where fi
 feature: Price Rules
 role: Admin, Developer
 exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
+type: Troubleshooting
 ---
 # ACSD-63469: Fixed-amount cart discounts not applied correctly with multiple rules
 

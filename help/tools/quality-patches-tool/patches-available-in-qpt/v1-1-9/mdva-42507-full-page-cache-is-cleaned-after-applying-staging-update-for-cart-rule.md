@@ -4,6 +4,7 @@ description: The MDVA-42507 patch solves the issue where the full-page cache is 
 feature: Cache, Categories, Orders, Shopping Cart, Staging
 role: Admin
 exl-id: 19f61e31-67da-4bd6-bce7-a9250f3946c7
+type: Troubleshooting
 ---
 # MDVA-42507: Full-page cache is cleaned after applying staging update for cart rule
 

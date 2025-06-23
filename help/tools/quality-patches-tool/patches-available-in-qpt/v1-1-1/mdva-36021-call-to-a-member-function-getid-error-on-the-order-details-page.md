@@ -4,6 +4,7 @@ description: The MDVA-36021 patch solves the issue where users get *Call to a me
 feature: Orders
 role: Admin
 exl-id: 737479fe-f363-4974-9c58-7ed9cd113fdb
+type: Troubleshooting
 ---
 # MDVA-36021: Users get error message when opening order details
 

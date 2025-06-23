@@ -4,6 +4,7 @@ description: The MDVA-36309 patch solves the issue where the products search by 
 feature: Admin Workspace, Attributes, Products, Search
 role: Admin
 exl-id: fe23f129-15b4-4239-a699-4776587cc4b8
+type: Troubleshooting
 ---
 # MDVA-36309: Products search by attributes is slow in admin grids
 

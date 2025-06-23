@@ -4,6 +4,7 @@ description: The MDVA-44533 patch fixes the issue where a discount is incorrectl
 feature: Orders, Personalization, Products
 role: Admin
 exl-id: 150fe577-a61a-451e-838a-d60be7754bf4
+type: Troubleshooting
 ---
 # MDVA-44533: Discount incorrectly applied to bundled child product
 

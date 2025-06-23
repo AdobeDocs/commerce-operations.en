@@ -4,6 +4,7 @@ description: Apply the ACSD-64532 patch to fix the Adobe Commerce issue where a 
 feature: Variables
 role: Admin, Developer
 exl-id: 7940df1f-d527-4b57-bde7-7a0216b12436
+type: Troubleshooting
 ---
 # ACSD-64532: ENV variable set to "false" is treated as a string "false" instead of a BOOLEAN FALSE
 

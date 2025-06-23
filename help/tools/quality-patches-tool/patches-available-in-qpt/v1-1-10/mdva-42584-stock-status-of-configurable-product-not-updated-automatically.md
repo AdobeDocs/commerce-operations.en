@@ -4,6 +4,7 @@ description: The MDVA-42584 patch solves the issue where the stock status of the
 feature: Configuration, Orders, Products
 role: Admin
 exl-id: 6311f069-f08f-4d58-9f4b-fa1246c02640
+type: Troubleshooting
 ---
 # MDVA-42584: Stock status of configurable product not updated automatically
 

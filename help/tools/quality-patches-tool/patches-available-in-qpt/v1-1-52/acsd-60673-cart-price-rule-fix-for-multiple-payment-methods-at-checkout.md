@@ -4,6 +4,7 @@ description: Apply the ACSD-60673 patch to fix the Adobe Commerce issue where th
 feature: Price Rules
 role: Admin, Developer
 exl-id: 2fe27959-5e5f-4d25-9f56-b0f8319fd562
+type: Troubleshooting
 ---
 # ACSD-60673: [!UICONTROL Cart Price Rule] issue fixed for multiple payment methods at checkout
 

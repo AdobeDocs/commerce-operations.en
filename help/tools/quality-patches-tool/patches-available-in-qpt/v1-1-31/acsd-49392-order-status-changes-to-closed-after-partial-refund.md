@@ -4,6 +4,7 @@ description: Apply the ACSD-49392 patch to fix the Adobe Commerce issue where th
 feature: Orders
 role: Admin
 exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
+type: Troubleshooting
 ---
 # ACSD-49392: Order status changes to closed after partial refund
 

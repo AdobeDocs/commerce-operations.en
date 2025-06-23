@@ -4,6 +4,7 @@ description: The MDVA-38728 patch solves the issue where changing the product vi
 feature: Products
 role: Admin
 exl-id: c9dfa386-6327-43b6-a977-a29178c64b89
+type: Troubleshooting
 ---
 # MDVA-38728: Changing product visibility creates URL rewrite for the main website
 

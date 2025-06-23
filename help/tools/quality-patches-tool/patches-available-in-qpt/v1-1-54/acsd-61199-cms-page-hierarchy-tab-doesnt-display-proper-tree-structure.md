@@ -4,6 +4,7 @@ description: Apply the ACSD-61199 patch to fix the Adobe Commerce issue where th
 feature: Page Content
 role: Admin, Developer
 exl-id: f541d001-9680-431a-9a62-816c2d10b6d5
+type: Troubleshooting
 ---
 # ACSD-61199: CMS page's [!UICONTROL Hierarchy] tab doesn't display proper tree structure
 

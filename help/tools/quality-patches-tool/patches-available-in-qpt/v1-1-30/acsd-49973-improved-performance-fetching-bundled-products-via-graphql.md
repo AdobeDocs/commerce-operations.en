@@ -4,6 +4,7 @@ description: Apply the ACSD-49973 patch to fix the Adobe Commerce issue where pe
 feature: GraphQL, Products
 role: Admin
 exl-id: d4817522-65dd-4ac8-8759-8518818684ed
+type: Troubleshooting
 ---
 # ACSD-49973: Improved performance fetching bundled products via [!DNL GraphQL]
 

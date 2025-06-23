@@ -4,6 +4,7 @@ description: The MDVA-38626 patch solves the issue where the admin user is unabl
 feature: Admin Workspace, Orders, Payments
 role: Admin
 exl-id: 32d2e5dd-7081-42f2-a074-71e21c870dc2
+type: Troubleshooting
 ---
 # MDVA-38626: Admin user is unable to place orders using PayPal Payflow Pro
 

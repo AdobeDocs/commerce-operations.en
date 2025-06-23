@@ -4,6 +4,7 @@ description: Apply the ACSD-54319 patch to fix the Adobe Commerce issue where th
 feature: Reporting, Products
 role: Admin, Developer
 exl-id: 10052d32-99f8-4b45-9fe9-a4c45bcaaa44
+type: Troubleshooting
 ---
 # ACSD-54319: Product price shows zero in *[!UICONTROL Products in Carts]* report
 

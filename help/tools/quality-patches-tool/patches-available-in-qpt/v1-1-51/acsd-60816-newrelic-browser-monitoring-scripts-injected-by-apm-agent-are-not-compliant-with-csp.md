@@ -4,6 +4,7 @@ description: Apply the ACSD-60816 patch to fix the Adobe Commerce issue where th
 feature: Tools and External Services, Checkout
 role: Admin, Developer
 exl-id: d03c25e0-ed25-4877-8470-737d3499473f
+type: Troubleshooting
 ---
 # ACSD-60816: [!DNL New Relic] browser monitoring scripts injected by APM agent are not compliant with CSP
 

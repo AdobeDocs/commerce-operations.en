@@ -4,6 +4,7 @@ description: The ACSD-45849 patch fixes the issue where the video metadata is lo
 feature: Staging, Page Content
 role: Admin
 exl-id: cbab0120-585a-47ef-8ed9-abb2da1ec3d6
+type: Troubleshooting
 ---
 # ACSD-45849: Video metadata is lost after staging update
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-53704 patch to fix the Adobe Commerce issue where th
 feature: Rewards
 role: Admin, Developer
 exl-id: 8cd297cc-9e9d-4615-b817-283065a79c2f
+type: Troubleshooting
 ---
 # ACSD-53704: Reward points balance history miscalculated after expiration
 

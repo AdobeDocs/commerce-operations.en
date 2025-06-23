@@ -4,6 +4,7 @@ description: The MDVA-34948 Adobe Commerce patch fixes the issue of slowing of t
 feature: Observability, Configuration
 role: Admin
 exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
+type: Troubleshooting
 ---
 # MDVA-34948: Slowing of website
 

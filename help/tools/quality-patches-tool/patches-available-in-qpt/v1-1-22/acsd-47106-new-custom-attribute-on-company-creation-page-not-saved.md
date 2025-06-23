@@ -4,6 +4,7 @@ description: Apply the ACSD-47106 patch to fix the Adobe Commerce issue where a 
 feature: Attributes, B2B, Companies
 role: Developer
 exl-id: 5835760d-fca1-44ba-aa5e-8797258c7c75
+type: Troubleshooting
 ---
 # ACSD-47106: new custom attribute on company creation page not saved
 

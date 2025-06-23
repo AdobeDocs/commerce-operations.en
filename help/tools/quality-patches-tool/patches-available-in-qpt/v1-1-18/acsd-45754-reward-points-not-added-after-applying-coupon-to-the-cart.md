@@ -4,6 +4,7 @@ description: The ACSD-45754 patch solves the issue where reward points are not a
 feature: Orders, Rewards, Shopping Cart
 role: Admin
 exl-id: 02f3bfc4-440b-4d77-adf5-0824d1b21073
+type: Troubleshooting
 ---
 # ACSD-45754: Reward points not added after applying coupon to cart
 

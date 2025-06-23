@@ -4,6 +4,7 @@ description: The MDVA-42509 patch solves the issue where a CSV could not be uplo
 feature: B2B, Orders
 role: Admin
 exl-id: 6319931b-9cf1-4004-b302-737863c53ff8
+type: Troubleshooting
 ---
 # MDVA-42509: CSV could not be uploaded for quick order resulting in 'Unable to send the cookie' error
 

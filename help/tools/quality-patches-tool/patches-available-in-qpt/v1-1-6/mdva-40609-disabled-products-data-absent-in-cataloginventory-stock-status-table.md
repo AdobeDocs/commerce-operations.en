@@ -4,6 +4,7 @@ description: The MDVA-40609 patch solves the issue where the disabled products d
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
 exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
+type: Troubleshooting
 ---
 # MDVA-40609: Disabled products data absent in cataloginventory_stock_status table
 

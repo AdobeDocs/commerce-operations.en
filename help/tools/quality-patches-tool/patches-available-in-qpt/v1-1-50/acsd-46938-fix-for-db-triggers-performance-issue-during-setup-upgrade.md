@@ -4,6 +4,7 @@ description: Apply the ACSD-46938 patch to fix the Adobe Commerce issue where th
 feature: Upgrade
 role: Admin, Developer
 exl-id: a4e88329-c5bb-4666-8738-b78b86056b71
+type: Troubleshooting
 ---
 # ACSD-46938: Performance issues with DB triggers during `setup:upgrade`
 

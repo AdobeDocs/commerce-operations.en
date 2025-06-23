@@ -4,6 +4,7 @@ description: Apply the ACSD-63299 patch to fix the Adobe Commerce issue where th
 feature: Catalog Management
 Role: Admin, Developer
 exl-id: cd1775c5-783e-4ed5-a148-1dae0b7542f8
+type: Troubleshooting
 ---
 # ACSD-63299: Special price for a configurable product doesn't display on the storefront
 

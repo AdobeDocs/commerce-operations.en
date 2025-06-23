@@ -4,6 +4,7 @@ description: The MDVA-43232 patch fixes the issue where sorting products in visu
 feature: Categories, Merchandising, Orders, Personalization, Products
 role: Admin
 exl-id: c977bec8-f99c-4799-abce-26aad49b77e8
+type: Troubleshooting
 ---
 # MDVA-43232: Sorting products in visual merchandiser by Special Price to Top (or Bottom) causes an error
 

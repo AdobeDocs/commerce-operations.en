@@ -4,6 +4,7 @@ description: The MDVA-42269 patch fixes the issue where Admin users cannot log i
 feature: Admin Workspace
 role: Admin
 exl-id: 42ad4bb5-950f-476d-bf55-931b38bcb937
+type: Troubleshooting
 ---
 # MDVA-42269: Admin user cannot log into Admin due to the "TypeError" error
 

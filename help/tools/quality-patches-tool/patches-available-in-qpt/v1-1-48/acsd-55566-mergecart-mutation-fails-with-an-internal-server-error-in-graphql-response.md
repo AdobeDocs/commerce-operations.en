@@ -4,6 +4,7 @@ description: Apply the ACSD-55566 patch to fix the Adobe Commerce issue where th
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 exl-id: 84c6fbb9-73b3-4197-aff3-49743f0ebb2c
+type: Troubleshooting
 ---
 # ACSD-55566: `mergeCart` mutation fails with internal server error in [!DNL GraphQL] response
 

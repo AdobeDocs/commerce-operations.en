@@ -4,6 +4,7 @@ description: The MDVA-39031 patch solves the issue where adding a product to the
 feature: GraphQL, Orders, Products, Shopping Cart
 role: Admin
 exl-id: 6250c6f6-b74b-4713-a704-d252270693d4
+type: Troubleshooting
 ---
 # MDVA-39031: Adding unassigned products to cart possible via GraphQL
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-48262 patch to fix the Adobe Commerce issue where pr
 feature: Admin Workspace, Cache, Categories, Orders, Products, Storefront
 role: Admin
 exl-id: 733ac476-5c3c-4cbe-88b7-f436d15f1c7d
+type: Troubleshooting
 ---
 # ACSD-48262: products not visible on storefront when [!UICONTROL Allow All Products Per Page] is set *[!UICONTROL Yes]*
 

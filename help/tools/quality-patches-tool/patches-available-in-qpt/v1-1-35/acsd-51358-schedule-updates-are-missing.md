@@ -4,6 +4,7 @@ description: Apply the ACSD-51358 patch to fix the Adobe Commerce issue where th
 feature: Staging
 role: Admin, Developer
 exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
+type: Troubleshooting
 ---
 # ACSD-51358: Schedule updates are missing
 

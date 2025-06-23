@@ -4,6 +4,7 @@ description: Apply the ACSD-49433 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Gift, Orders, Shopping Cart
 role: Admin
 exl-id: 22691e35-0491-4935-8e7c-148900706491
+type: Troubleshooting
 ---
 # ACSD-49433: Default amount shown as subtotal in cart for gift card
 

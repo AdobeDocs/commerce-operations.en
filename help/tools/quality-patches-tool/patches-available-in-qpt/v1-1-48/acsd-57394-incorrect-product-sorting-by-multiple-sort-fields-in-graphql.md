@@ -4,6 +4,7 @@ description: Apply the ACSD-57394 patch to fix the Adobe Commerce issue where pr
 feature: GraphQL, Products
 role: Admin, Developer
 exl-id: 3e4ca535-37ed-4363-ba6c-968eb53b98b3
+type: Troubleshooting
 ---
 # ACSD-57394: Incorrect product sorting by multiple sort attributes in [!DNL GraphQL]
 

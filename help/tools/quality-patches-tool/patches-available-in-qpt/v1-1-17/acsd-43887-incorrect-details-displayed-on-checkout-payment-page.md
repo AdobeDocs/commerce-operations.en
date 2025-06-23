@@ -4,6 +4,7 @@ description: The ACSD-43887 patch fixes the issue where incorrect details are di
 feature: B2B, Checkout, Orders, Payments, User Account
 role: Admin
 exl-id: e150f093-9f1a-4ba5-bdcf-90e7f42a29c3
+type: Troubleshooting
 ---
 # ACSD-43887: Incorrect details displayed on checkout payment page
 

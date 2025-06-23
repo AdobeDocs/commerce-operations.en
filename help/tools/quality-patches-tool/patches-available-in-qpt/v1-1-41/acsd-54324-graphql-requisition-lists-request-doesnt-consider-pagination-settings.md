@@ -4,6 +4,7 @@ description: Apply the ACSD-54324 patch to fix the Adobe Commerce issue where th
 feature: B2B, Customers, GraphQL
 role: Admin, Developer
 exl-id: 60f82602-1cfc-4523-a50d-46af5d5f10d9
+type: Troubleshooting
 ---
 # ACSD-54324: GraphQL `requisition_lists` request doesn't consider pagination settings
 

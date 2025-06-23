@@ -4,6 +4,7 @@ description: Apply the ACSD-53204 patch to fix the Adobe Commerce issue where *T
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
 exl-id: 7fdf41e5-46ef-4505-b8ce-c330bd899fa1
+type: Troubleshooting
 ---
 # ACSD-53204: "*The product can't be saved*" error on concurrent requests to add images to gallery
 

@@ -4,6 +4,7 @@ description: The MDVA-43451 patch solves the issue where the user is unable to s
 feature: Catalog Management
 role: Admin
 exl-id: 2cddfca2-ee32-4e73-9ef6-78125fbaa13d
+type: Troubleshooting
 ---
 # MDVA-43451: Error when setting Pricing and Structure for shared catalog
 

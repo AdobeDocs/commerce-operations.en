@@ -4,6 +4,7 @@ description: The MDVA-44147 patch fixes the issue where [!DNL GraphQL] request d
 feature: B2B, GraphQL
 role: Admin
 exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
+type: Troubleshooting
 ---
 # MDVA-44147: [!DNL GraphQL] request doesn't return [!UICONTROL Requisition Lists]
 

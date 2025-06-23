@@ -4,6 +4,7 @@ description: Apply the ACSD-60584 patch to enhance the inventory performance for
 feature: Customers, Shipping/Delivery
 role: Admin, Developer
 exl-id: 47682daf-9117-45f1-ab09-a66c13132ff3
+type: Troubleshooting
 ---
 # ACSD-61667: Improves inventory performance for creating shipping
 

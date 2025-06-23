@@ -4,6 +4,7 @@ description: Apply the ACSD-63572 patch to fix the Adobe Commerce issue where th
 feature: System
 Role: Admin, Developers
 exl-id: 1cab7058-ca20-4d43-bfca-9b0e3ad35f42
+type: Troubleshooting
 ---
 # ACSD-63572: `catalogrule` indexer temporary tables are not cleaned if the indexer process is terminated
 

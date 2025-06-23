@@ -4,6 +4,7 @@ description: Apply the ACSD-48234 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Categories, Catalog Management, Orders, Products, Search
 role: Admin
 exl-id: c177f12d-2db5-48e2-8f88-ff589cea4dd4
+type: Troubleshooting
 ---
 # ACSD-48234: catalog search result shows incorrect category item count **[!UICONTROL Display Out of Stock Products]** enabled
 

@@ -4,6 +4,7 @@ description: This article provides an overview of Quality Patches Tool (QPT) and
 feature: Tools and External Services
 role: Admin
 exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
+type: Troubleshooting
 ---
 # Check patch for Adobe Commerce issue with Quality Patches Tool
 

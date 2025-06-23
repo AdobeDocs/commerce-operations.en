@@ -4,6 +4,7 @@ description: Apply the ACSD-50336 patch to fix the Adobe Commerce issue where th
 feature: Communications, Personalization, Products
 role: Admin
 exl-id: 45dd12af-a3b2-4cfa-be90-af1c7b5f74b3
+type: Troubleshooting
 ---
 # ACSD-50336: Product alert emails not sent
 

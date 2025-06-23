@@ -4,6 +4,7 @@ description: The ACSD-45241 patch fixes the issue where the virtual product's st
 feature: Orders, Products
 role: Admin
 exl-id: 447a84f0-aab4-4bb1-9f06-c056c006cd69
+type: Troubleshooting
 ---
 # ACSD-45241: Virtual product's stock quantity miscalculated
 

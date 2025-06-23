@@ -4,6 +4,7 @@ description: Apply the ACSD-63323 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin, Developer
 exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
+type: Troubleshooting
 ---
 # ACSD-63323: Resolves [!UICONTROL Select All] functionality and enhances pagination and record count in product category popup
 

@@ -4,6 +4,7 @@ description: The MDVA-44044 patch solves the issue where a product is not displa
 feature: Categories, Products
 role: Admin
 exl-id: ae797cdc-5977-40b8-82da-ccf364466bdf
+type: Troubleshooting
 ---
 # MDVA-44044: Product not displayed on category page after it is assigned to new website
 

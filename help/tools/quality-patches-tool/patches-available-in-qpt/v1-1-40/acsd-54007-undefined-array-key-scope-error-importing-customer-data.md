@@ -4,6 +4,7 @@ description: Apply the ACSD-54007 patch to fix the Adobe Commerce issue where an
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: df0fc9f4-1d42-47bc-b161-d2f109996684
+type: Troubleshooting
 ---
 # ACSD-54007: Undefined array key _scope error on importing customer data
 

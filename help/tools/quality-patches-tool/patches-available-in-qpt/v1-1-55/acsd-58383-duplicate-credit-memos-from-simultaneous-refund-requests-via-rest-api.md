@@ -4,6 +4,7 @@ description: Apply the ACSD-58383 patch to fix the Adobe Commerce issue where is
 feature: REST, Payments, Returns
 role: Admin, Developer
 exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
+type: Troubleshooting
 ---
 # ACSD-58383: Duplicate credit memos from simultaneous refund requests via [!DNL REST API] 
 

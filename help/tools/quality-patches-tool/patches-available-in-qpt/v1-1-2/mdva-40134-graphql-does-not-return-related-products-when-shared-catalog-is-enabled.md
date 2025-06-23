@@ -4,6 +4,7 @@ description: The MDVA-40134 patch fixes the issue where GraphQL does not return 
 feature: B2B, Catalog Management, GraphQL, Products
 role: Admin
 exl-id: 5d31e042-4396-40ce-8bf1-63ad9a55214d
+type: Troubleshooting
 ---
 # MDVA-40134: GraphQL not returning related products when shared catalog is enabled
 

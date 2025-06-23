@@ -4,6 +4,7 @@ description: Apply the ACSD-49502 patch to fix the Adobe Commerce issue where th
 feature: Staging
 role: Admin
 exl-id: 9bdc9a7e-4291-4438-9ba0-65fcab1f95bb
+type: Troubleshooting
 ---
 # ACSD-49502: Downloadable link not updated correctly after [!DNL staging] update
 

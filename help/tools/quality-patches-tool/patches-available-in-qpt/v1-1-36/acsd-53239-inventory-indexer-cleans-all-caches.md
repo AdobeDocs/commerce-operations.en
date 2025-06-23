@@ -4,6 +4,7 @@ description: Apply the ACSD-53239 patch to fix the Adobe Commerce issue where th
 feature: GraphQL, Inventory, Catalog Management
 role: Admin, Developer
 exl-id: 69e71e2d-8f26-4200-ad4a-6bd9e45627e4
+type: Troubleshooting
 ---
 # ACSD-53239: Inventory indexer cleans all caches in the [!UICONTROL Update on Schedule] mode
 

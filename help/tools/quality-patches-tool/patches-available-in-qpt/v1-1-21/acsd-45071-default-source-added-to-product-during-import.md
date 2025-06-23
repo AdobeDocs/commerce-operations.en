@@ -4,6 +4,7 @@ description: The ACSD-45071 patch solves the issue where the default source is a
 feature: Data Import/Export, Products
 role: Admin
 exl-id: d28cbfb1-ad6b-4ccf-a877-6db763cea61b
+type: Troubleshooting
 ---
 # ACSD-45071: default source added to product during import
 

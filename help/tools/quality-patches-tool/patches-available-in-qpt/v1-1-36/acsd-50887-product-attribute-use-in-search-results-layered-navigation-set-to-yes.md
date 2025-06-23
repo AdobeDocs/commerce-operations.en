@@ -4,6 +4,7 @@ description: Apply the ACSD-50887 patch to fix the Adobe Commerce issue where th
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
 exl-id: 5e797121-c386-4aca-9139-0a02a60be38a
+type: Troubleshooting
 ---
 # ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]* set to *Yes* without the *[!UICONTROL Use in Search]* option
 

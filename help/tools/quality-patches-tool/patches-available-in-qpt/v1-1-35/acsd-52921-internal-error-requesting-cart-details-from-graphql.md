@@ -4,6 +4,7 @@ description: Apply the ACSD-52921 patch to fix the Adobe Commerce issue where an
 feature: GraphQL, Configuration, Products, Shopping Cart
 role: Admin
 exl-id: 7790718a-6b86-497e-b1a1-88ba22c3e8ff
+type: Troubleshooting
 ---
 # ACSD-52921: Error requesting cart details from GraphQL for out-of-stock configurable product
 

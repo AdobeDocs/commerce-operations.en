@@ -4,6 +4,7 @@ description: The MDVA-44188 patch fixes the issue where emails are not sent to t
 feature: Communications
 role: Admin
 exl-id: 9029c7f1-3e62-44a1-8962-9730ae54db7d
+type: Troubleshooting
 ---
 # MDVA-44188: Emails are not sent to IDs containing ".-"
 

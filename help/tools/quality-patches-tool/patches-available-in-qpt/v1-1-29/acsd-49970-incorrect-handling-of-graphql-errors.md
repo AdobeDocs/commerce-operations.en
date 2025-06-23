@@ -4,6 +4,7 @@ description: Apply the ACSD-49970 patch to fix the Adobe Commerce issue where th
 feature: GraphQL, Observability
 role: Admin
 exl-id: f06f6cbf-ea85-406a-850d-f63e1001ff82
+type: Troubleshooting
 ---
 # ACSD-49970: Incorrect handling of GraphQL errors
 

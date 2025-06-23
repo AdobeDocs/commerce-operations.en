@@ -4,6 +4,7 @@ description: Apply the ACSD-48570 patch to fix the Adobe Commerce issue where th
 feature: Security, User Account
 role: Admin, Developer
 exl-id: 049a82ff-80e3-46a1-8472-ac74de0e365f
+type: Troubleshooting
 ---
 # ACSD-48570: Fixing admin reset password link issue with store code in URL
 

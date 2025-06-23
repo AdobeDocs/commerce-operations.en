@@ -4,6 +4,7 @@ description: Apply the ACSD-51899 patch to fix the Adobe Commerce issue where th
 feature: Checkout
 role: Admin
 exl-id: 14e48613-6af8-476c-978d-87c27a0b0d15
+type: Troubleshooting
 ---
 # ACSD-51899: Default shipping address auto-populated incorrectly
 

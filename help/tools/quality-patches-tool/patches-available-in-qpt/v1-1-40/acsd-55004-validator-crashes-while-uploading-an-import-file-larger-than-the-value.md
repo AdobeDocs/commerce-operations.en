@@ -4,6 +4,7 @@ description: Apply the ACSD-55004 patch to fix the Adobe Commerce issue where a 
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: c889f645-a3ae-4330-8ca9-45f8b6616ac8
+type: Troubleshooting
 ---
 # ACSD-55004: Validator crashes while uploading an import file larger than the value 
 

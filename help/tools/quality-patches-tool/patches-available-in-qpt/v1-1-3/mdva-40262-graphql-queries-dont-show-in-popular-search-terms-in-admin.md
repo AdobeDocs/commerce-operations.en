@@ -4,6 +4,7 @@ description: The MDVA-40262 Adobe Commerce quality patch fixes the issue where G
 feature: Admin Workspace, GraphQL, Search
 role: Admin
 exl-id: 9442ac86-e632-4ab3-8cb3-d29487a1ecbe
+type: Troubleshooting
 ---
 # MDVA-40262: GraphQL queries don't show in popular search terms in admin
 

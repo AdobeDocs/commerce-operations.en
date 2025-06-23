@@ -4,6 +4,7 @@ description: The MDVA-39993 patch solves the issue where the inventory changes d
 feature: REST, Inventory, Orders, Storefront
 role: Admin
 exl-id: 5fa13635-bd58-470b-a4d5-e50cda8a46e3
+type: Troubleshooting
 ---
 # MDVA-39993: Inventory changes done through API are not reflected on storefront
 

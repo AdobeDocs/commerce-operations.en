@@ -4,6 +4,7 @@ description: Apply the ACSD-55231 patch to fix the Adobe Commerce issue where yo
 feature: Products, Checkout, B2B
 role: Admin, Developer
 exl-id: f0a04773-7395-4945-a72b-5a6a018bc94e
+type: Troubleshooting
 ---
 # ACSD-55231: SKU not found error while using quick order functionality
 

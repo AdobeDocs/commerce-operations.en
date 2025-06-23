@@ -4,6 +4,7 @@ description: The MDVA-42046 patch fixes the issue where an incorrect value is as
 feature: Attributes, Products
 role: Admin
 exl-id: ff5903ff-70b3-4274-a8a1-450c2fde9750
+type: Troubleshooting
 ---
 # MDVA-42046: Incorrect value assigned for product attribute
 
