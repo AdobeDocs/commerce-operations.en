@@ -283,7 +283,7 @@
             }
         ],
         "end-of-support": "2025-04-12",
-        "end-of-extended-support": "2026-08-14"
+        "end-of-extended-support": "2026-04-14"
     },
     "2.4.0-2.4.3": {
         "releases": [
