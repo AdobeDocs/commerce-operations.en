@@ -9,7 +9,7 @@ role: Admin, Developer
 This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.66.
 
 QPT v1.1.66 includes the following patches:
-1. **ACP2E-3789**: Updating a product via `WebAPI` duplicated media files when a media ID was provided.
+1. **[ACP2E-3789](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-updating-a-product-via-webapi-duplicated-media-files-when-a-media-id-was-provided.md)**: Updating a product via `WebAPI` duplicated media files when a media ID was provided.
 1. **ACP2E-3918**: Checkout failed for logged-in company customers using in-store pickup without a default billing address.
 1. **ACSD-65750**: GraphQL "route" query returned products out of order in Page Builder Products content types.
 1. **ACSD-65775**: REST API order details returned incorrect `base_row_total` and `row_total` values when multiple quantities of the same item were ordered.
