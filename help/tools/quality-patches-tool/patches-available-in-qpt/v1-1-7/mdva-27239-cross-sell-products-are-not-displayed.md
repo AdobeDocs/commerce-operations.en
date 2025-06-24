@@ -4,6 +4,7 @@ description: The MDVA-27239 patch fixes the issue where cross-sell products are 
 feature: Products
 role: Admin
 exl-id: ab8fe64d-adbe-4756-be43-1a35ba6b4123
+type: Troubleshooting
 ---
 # MDVA-27239: Cross-sell products are not displayed
 

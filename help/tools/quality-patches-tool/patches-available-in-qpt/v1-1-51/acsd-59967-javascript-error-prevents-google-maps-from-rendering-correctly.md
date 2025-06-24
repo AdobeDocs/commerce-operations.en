@@ -4,6 +4,7 @@ description: Apply the ACSD-59967 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Page Builder, CMS
 role: Admin, Developer
 exl-id: 2982857a-7adb-4163-be18-4d2caf0d645c
+type: Troubleshooting
 ---
 # ACSD-59967: JavaScript error prevents [!DNL Google Maps] from rendering correctly
 

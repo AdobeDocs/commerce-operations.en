@@ -4,6 +4,7 @@ description: 'The MDVA-43824 patch solves the issue where the order cancellation
 feature: Orders
 role: Admin
 exl-id: 8c2d15a0-2f53-4583-bdf2-86746f61160f
+type: Troubleshooting
 ---
 # MDVA-43824: Order cancellation action failed with error "You have not cancelled the item"
 

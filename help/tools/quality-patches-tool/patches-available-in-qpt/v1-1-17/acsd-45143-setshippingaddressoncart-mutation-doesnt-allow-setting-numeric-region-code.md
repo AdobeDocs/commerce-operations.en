@@ -4,6 +4,7 @@ description: The ACSD-45143 patch fixes the issue where the setShippingAddresses
 feature: Orders, Shipping/Delivery, Shopping Cart
 role: Admin
 exl-id: c7d9d1f2-4731-406f-93bd-036f0fe75b1d
+type: Troubleshooting
 ---
 # ACSD-45143: setShippingAddressesOnCart mutation not setting numeric region code as 'region'
 

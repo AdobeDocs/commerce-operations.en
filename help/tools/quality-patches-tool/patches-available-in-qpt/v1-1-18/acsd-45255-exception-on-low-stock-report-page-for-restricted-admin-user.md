@@ -4,6 +4,7 @@ description: The ACSD-45255 patch solves the issue where an exception is thrown 
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: bf7e0893-e4a7-4184-a223-02ceef7a30d9
+type: Troubleshooting
 ---
 # ACSD-45255: Exception on Low Stock report page for restricted admin user
 

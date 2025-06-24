@@ -4,6 +4,7 @@ description: Apply the ACSD-60441 patch to fix the Adobe Commerce issue where up
 feature: REST, Customers
 role: Admin, Developer
 exl-id: 3936c065-41a6-4860-8313-e054f9b23ac7
+type: Troubleshooting
 ---
 # ACSD-60441: Updating customers via `V1/customers` [!DNL REST] API endpoint throws an error
 

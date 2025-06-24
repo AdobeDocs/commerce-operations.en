@@ -4,6 +4,7 @@ description: Apply the ACSD-59865 patch to fix the Adobe Commerce issue where th
 feature: Price Rules
 role: Admin, Developer
 exl-id: 5838a740-018d-44c2-8135-54426ea08627
+type: Troubleshooting
 ---
 # ACSD-59865: [!UICONTROL Cart Price Rule] fails to cancel previous rules due to insufficient product quantity
 

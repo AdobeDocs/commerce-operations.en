@@ -4,6 +4,7 @@ description: Apply the ACSD-54418 patch to fix the Adobe Commerce issue where th
 feature: Shopping Cart
 role: Admin, Developer
 exl-id: f7b57361-9056-4eec-a393-dadb65aa595b
+type: Troubleshooting
 ---
 # ACSD-54418: Fixed discount amount incorrectly added to child product of dynamically priced bundle.
 

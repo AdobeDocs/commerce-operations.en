@@ -4,6 +4,7 @@ description: The MDVA-40619 patch solves the issue where the CMS page hierarchy 
 feature: CMS
 role: Admin
 exl-id: 148cb0a5-5a6c-4cfa-bf95-4bafc57beec6
+type: Troubleshooting
 ---
 # MDVA-40619: Hierarchy changes break CMS page inline edit and throw 500 error
 

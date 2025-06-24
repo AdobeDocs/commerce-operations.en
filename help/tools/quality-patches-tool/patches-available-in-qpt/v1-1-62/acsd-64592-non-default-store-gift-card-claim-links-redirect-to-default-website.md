@@ -4,6 +4,7 @@ description: Apply the ACSD-64592 patch to fix the issue where in a multi-websit
 feature: Gift, Products
 role: Admin, Developer
 exl-id: 1cc026c0-7487-48e8-a092-3e72085ca38a
+type: Troubleshooting
 ---
 # ACSD-64592: Non-default store gift card claim links redirect to default website
 

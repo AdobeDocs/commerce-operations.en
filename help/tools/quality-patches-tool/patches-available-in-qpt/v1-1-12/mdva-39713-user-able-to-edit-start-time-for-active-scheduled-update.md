@@ -4,6 +4,7 @@ description: The MDVA-39713 patch fixes the issue where a user is able to edit t
 feature: CMS
 role: Admin
 exl-id: 450a968f-a5ed-478f-a857-579fea1eb3b7
+type: Troubleshooting
 ---
 # MDVA-39713: User is able to edit start time of active scheduled update
 

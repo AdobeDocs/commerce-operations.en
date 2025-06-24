@@ -4,6 +4,7 @@ description: Apply the ACSD-64149 patch to fix the Adobe Commerce issue where cu
 feature: Customers, Admin Workspace
 role: Admin, Developer
 exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
+type: Troubleshooting
 ---
 # ACSD-64149: Customer segment with a [!UICONTROL Date range] condition can be saved when only one date is edited
 

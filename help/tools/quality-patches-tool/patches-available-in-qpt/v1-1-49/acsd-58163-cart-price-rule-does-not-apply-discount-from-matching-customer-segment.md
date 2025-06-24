@@ -4,6 +4,7 @@ description: Apply the ACSD-58163 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin, Developer
 exl-id: 209a50f7-32d9-40e9-bfd5-4658e4ca392d
+type: Troubleshooting
 ---
 # ACSD-58163: [!UICONTROL Cart Price Rule] does not apply discount from matching [!UICONTROL Customer Segment] cart without coupon code
 

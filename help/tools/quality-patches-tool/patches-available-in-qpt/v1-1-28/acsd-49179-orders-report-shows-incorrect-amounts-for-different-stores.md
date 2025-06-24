@@ -4,6 +4,7 @@ description: Apply the ACSD-49179 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
+type: Troubleshooting
 ---
 # ACSD-49179: Orders report shows incorrect amounts for different stores
 

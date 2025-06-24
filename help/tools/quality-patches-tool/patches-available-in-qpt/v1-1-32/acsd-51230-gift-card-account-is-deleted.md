@@ -4,6 +4,7 @@ description: Apply the ACSD-51230 patch to fix the Adobe Commerce issue where th
 feature: Customer Service, Gift, Marketing Tools
 role: Admin
 exl-id: a4aed574-3908-42e0-ac32-911f61b44995
+type: Troubleshooting
 ---
 # ACSD-51230: Gift card account is deleted 
 

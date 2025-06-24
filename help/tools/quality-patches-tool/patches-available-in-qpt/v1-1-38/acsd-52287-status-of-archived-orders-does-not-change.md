@@ -4,6 +4,7 @@ description: Apply the ACSD-52287 patch to fix the Adobe Commerce issue where th
 feature: Orders, Checkout
 role: Admin, Developer
 exl-id: 012f49ba-fdc1-4e1e-87fe-7b9c661f231b
+type: Troubleshooting
 ---
 # ACSD-52287: Status of archived orders does not change
 

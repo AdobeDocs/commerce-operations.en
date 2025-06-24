@@ -4,6 +4,7 @@ description: Apply the ACSD-54111 patch to fix the Adobe Commerce issue where al
 feature: Products
 role: Admin, Developer
 exl-id: 4615ebf6-aa68-4d49-8d91-e9756b3d4a05
+type: Troubleshooting
 ---
 # ACSD-54111: Product thumbnail image not displaying
 

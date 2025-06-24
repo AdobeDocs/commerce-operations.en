@@ -4,6 +4,7 @@ description: Apply the ACSD-51431 patch to fix the Adobe Commerce issue where th
 feature: Logs, Price Indexer
 role: Admin
 exl-id: c87c059b-f435-468d-a7fe-e6786fdba1f8
+type: Troubleshooting
 ---
 # ACSD-51431: Indexer status is *[!UICONTROL Working]* even though there are no entries in the changelog
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-63406 patch to fix the Adobe Commerce issue where th
 feature: Quotes, Shopping Cart
 role: Admin, Developer
 exl-id: 795d1ddf-0d5b-406c-870b-36cb92cf07fa
+type: Troubleshooting
 ---
 # ACSD-63406: Expired persistent quotes not cleared when `persistent_clear_expired` cron job runs
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-46815 patch to fix the Adobe Commerce issue where st
 feature: Deploy, Page Content, SCD
 role: Admin
 exl-id: 66941a83-daf8-4bb2-a575-b615e1c5dc7c
+type: Troubleshooting
 ---
 # ACSD-46815: static content deploy fails when using compact strategy
 

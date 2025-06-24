@@ -4,6 +4,7 @@ description: The MDVA-43348 patch fixes the issue where Gift Card GraphQL reques
 feature: Gift, GraphQL
 role: Admin
 exl-id: 94cb939a-fad2-4f01-a641-d8d5b656d931
+type: Troubleshooting
 ---
 # MDVA-43348: Gift Card GraphQL request shows error
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-55241 patch to fix the Adobe Commerce issue where th
 feature: Price Rules
 role: Admin, Developer
 exl-id: a156f03c-c939-4ea7-bd34-03c2234edbff
+type: Troubleshooting
 ---
 # ACSD-55241: **Used** and **Times Used** attributes display incorrect values for generated coupons
 

@@ -4,6 +4,7 @@ description: The MDVA-42520 patch fixes the issue where the tax rate is applied 
 feature: Catalog Management, Orders, Taxes
 role: Admin
 exl-id: 34c101fd-3a47-4877-8a41-ccaeaa010969
+type: Troubleshooting
 ---
 # MDVA-42520: Tax rate applied twice when "Enable Cross Border Trade" is used
 

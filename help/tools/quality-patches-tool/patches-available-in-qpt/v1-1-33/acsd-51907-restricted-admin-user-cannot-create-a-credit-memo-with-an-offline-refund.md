@@ -2,6 +2,7 @@
 title: "ACSD-51907: Restricted admin user can't create credit memo for offline refund"
 description: Apply the ACSD-51907 patch to fix the Adobe Commerce issue where the restricted admin user can't create a credit memo with an offline refund.
 exl-id: 1c44d99b-7633-4768-b7e7-332f3666a5d9
+type: Troubleshooting
 ---
 # ACSD-51907: Restricted admin user can't create credit memo for offline refund
 

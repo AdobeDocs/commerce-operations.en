@@ -4,6 +4,7 @@ description: Apply the ACSD-49849 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
 exl-id: 1d7a2bde-892a-4ded-a4b4-9450989c8aee
+type: Troubleshooting
 ---
 # ACSD-49849: Customer email is replaced with [!DNL PayPal] email
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-54060 patch to fix the Adobe Commerce issue where a 
 feature: Admin Workspace, Roles/Permissions, Products
 role: Admin, Developer
 exl-id: 2af24cbf-65a1-4bd6-aad3-19b613bee7f2
+type: Troubleshooting
 ---
 # ACSD-54060: Restricted admin can't save product if it's child of another product
 

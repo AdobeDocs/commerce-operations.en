@@ -4,6 +4,7 @@ description: Apply the ACSD-49042 patch to fix the Adobe Commerce issue where a 
 feature: Admin Workspace, Orders, Products, Storefront
 role: Admin
 exl-id: b94d06c0-806a-40be-bcd4-d6b8e5e474c3
+type: Troubleshooting
 ---
 # ACSD-49042: Product with infinite backorder can't be ordered from storefront
 

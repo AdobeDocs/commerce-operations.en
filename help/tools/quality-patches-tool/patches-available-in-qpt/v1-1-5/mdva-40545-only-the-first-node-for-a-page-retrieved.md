@@ -4,6 +4,7 @@ description: The MDVA-40545 patch solves the issue where only the first node for
 feature: CMS, Cache
 role: Admin
 exl-id: f87344e9-5a63-4c38-af2b-1500ef053dec
+type: Troubleshooting
 ---
 # MDVA-40545: Only the first node for a page is retrieved
 

@@ -4,6 +4,7 @@ description: The MDVA-38526 patch solves the issue where the admin user is not a
 feature: Admin Workspace
 role: Admin
 exl-id: de8691ce-5225-4409-8908-f2b23f1da166
+type: Troubleshooting
 ---
 # MDVA-38526: Admin user is not able to access SWAT tool
 

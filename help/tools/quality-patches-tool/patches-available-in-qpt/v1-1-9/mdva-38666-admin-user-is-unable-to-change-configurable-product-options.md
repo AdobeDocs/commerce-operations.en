@@ -4,6 +4,7 @@ description: The MDVA-38666 patch solves the issue where the admin user is unabl
 feature: Admin Workspace, Configuration, Products
 role: Admin
 exl-id: 8e72f6a4-b36f-4fe4-bc01-2254984dd512
+type: Troubleshooting
 ---
 # MDVA-38666: Admin user is unable to change configurable product options
 

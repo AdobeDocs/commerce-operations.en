@@ -4,6 +4,7 @@ description: Apply the ACSD-64178 patch to fix the Adobe Commerce issue where th
 feature: Catalog Management
 role: Admin, Developer
 exl-id: 959d825d-1b7b-49f0-b49f-64e149106e91
+type: Troubleshooting
 ---
 # ACSD-64178: [!UICONTROL Edit Attribute Set] page loads slowly with thousands of product attributes
 

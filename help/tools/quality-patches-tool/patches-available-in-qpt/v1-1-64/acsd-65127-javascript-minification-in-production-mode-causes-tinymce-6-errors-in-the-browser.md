@@ -4,6 +4,7 @@ description: Apply the ACSD-65127 patch to fix the Adobe Commerce issue where en
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
+type: Troubleshooting
 ---
 # ACSD-65127: JavaScript minification in production mode causes [!DNL TinyMCE] 6 errors in the browser
 

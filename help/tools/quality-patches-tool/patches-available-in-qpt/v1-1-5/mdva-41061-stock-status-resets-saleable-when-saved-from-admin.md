@@ -4,6 +4,7 @@ description: The MDVA-41061 patch fixes the issue where the stock status resets 
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
+type: Troubleshooting
 ---
 # MDVA-41061: Stock status resets to saleable when product saved from Admin
 

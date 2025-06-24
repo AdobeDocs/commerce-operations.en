@@ -4,6 +4,7 @@ description: Apply the ACSD-53347 patch to fix the Adobe Commerce issue where pe
 feature: Price Indexer
 role: Admin
 exl-id: 8986b685-55e4-47c7-852c-aca18e3b02e9
+type: Troubleshooting
 ---
 # ACSD-53347: Price indexing performance gradually degrades overtime
 

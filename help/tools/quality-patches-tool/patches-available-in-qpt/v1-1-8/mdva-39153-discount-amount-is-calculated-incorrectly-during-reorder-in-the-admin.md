@@ -4,6 +4,7 @@ description: The MDVA-39153 patch fixes the issue where the discount amount is c
 feature: Admin Workspace, Orders, Personalization, Payments
 role: Admin
 exl-id: e8fe58ca-1218-4e76-b5fb-c7f935029cd2
+type: Troubleshooting
 ---
 # MDVA-39153: Discount amount is calculated incorrectly during reorder in the Admin
 

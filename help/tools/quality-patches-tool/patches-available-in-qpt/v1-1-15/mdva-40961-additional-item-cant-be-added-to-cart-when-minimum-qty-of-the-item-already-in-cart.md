@@ -4,6 +4,7 @@ description: The MDVA-40961 patch fixes the issue where an additional item can't
 feature: Orders, Shopping Cart
 role: Admin
 exl-id: b5191919-062d-4ddd-84e2-a4801501724d
+type: Troubleshooting
 ---
 # MDVA-40961: Additional item can't be added to cart when minimum qty of item is already in cart
 

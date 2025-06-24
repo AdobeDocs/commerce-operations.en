@@ -4,6 +4,7 @@ description: Apply the ACSD-54376 patch to fix the Adobe Commerce issue where an
 feature: Shopping Cart, B2B
 role: Admin, Developer
 exl-id: 59047ccb-d434-46cd-8d2f-ceb0c85a785a
+type: Troubleshooting
 ---
 # ACSD-54376: Exception in shopping cart when product removed from [!UICONTROL shared catalog]
 

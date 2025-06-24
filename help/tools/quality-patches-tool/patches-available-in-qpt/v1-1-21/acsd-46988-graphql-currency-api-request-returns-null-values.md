@@ -4,6 +4,7 @@ description: The ACSD-46988 patch fixes the issue where the GraphQL currency API
 feature: REST, GraphQL
 role: Admin
 exl-id: 276d2c75-6e7f-4888-b4d2-ac96bea93fc1
+type: Troubleshooting
 ---
 # ACSD-46988: GraphQL currency API request returns null values
 

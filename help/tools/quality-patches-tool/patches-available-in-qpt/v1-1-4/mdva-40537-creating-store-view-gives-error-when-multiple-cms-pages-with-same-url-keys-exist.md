@@ -4,6 +4,7 @@ description: The MDVA-40537 patch fixes the issue where users get an error when 
 feature: CMS
 role: Admin
 exl-id: 10c3d935-dbc9-4033-85a1-041b8af74d78
+type: Troubleshooting
 ---
 # MDVA-40537: Creating store view gives error when several CMS pages have same URL Key.
 

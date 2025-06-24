@@ -21,7 +21,7 @@ stage:
 
 For environment configuration on Cloud infrastructure, see the [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in the _Commerce on Cloud Infrastructure Guide_.
 
-For on-premises installations, see [Configure Valkey page caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
+For on-premises installations, see [Configure Valkey page caching](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) in the _Configuration Guide_.
 
 >[!NOTE]
 >
@@ -81,11 +81,11 @@ stage:
 
 For more details, see [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure Guide_.
 
-For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento:setup` commands. For more information, see [Use Valkey for default cache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) in the _Configuration Guide_.
+For Adobe Commerce on-premises installations, configure the new Valkey cache implementation using the `bin/magento:setup` commands. For more information, see [Use Valkey for default cache](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) in the _Configuration Guide_.
 
 >[!WARNING]
 >
->Do _not_ configure a Valkey slave connection for cloud infrastructure projects with a [scaled/split architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). This causes Redis connection errors. For more information, For more information, see the [Redis configuration guidance](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
+>Do _not_ configure a Valkey slave connection for cloud infrastructure projects with a [scaled/split architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). This causes Valkey connection errors. For more information, For more information, see the [Valkey configuration guidance](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) in the _Commerce on Cloud Infrastructure_ guide.
 
 ## Pre-load keys
 
@@ -108,7 +108,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-For on-premises installations, see [Valkey preload feature](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) in the _Configuration Guide_.
+For on-premises installations, see [Valkey preload feature](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) in the _Configuration Guide_.
 
 ## Enable stale cache
 
@@ -167,7 +167,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Cache compression
 
-If you are using over 6GB of Valkey `maxmemory`, you can use cache compression to reduce the space consumed by the keys. Be aware that there is a trade-off with client-side performance. If you have spare CPUs, Adobe suggests enabling them. See [Use Redis for session storage](../../../configuration/cache/redis-session.md) in the _Configuration Guide_.
+If you are using over 6GB of Valkey `maxmemory`, you can use cache compression to reduce the space consumed by the keys. Be aware that there is a trade-off with client-side performance. If you have spare CPUs, Adobe suggests enabling them. See [Use Valkey for session storage](../../../configuration/cache/valkey-session.md) in the _Configuration Guide_.
 
 ```yaml
 stage:
@@ -183,8 +183,3 @@ stage:
             compress_threshold: 20480     # do not compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~70%)
 ```
-
-## Additional information
-
-- [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
-- [Use Redis for session storage](../../../configuration/cache/redis-session.md)

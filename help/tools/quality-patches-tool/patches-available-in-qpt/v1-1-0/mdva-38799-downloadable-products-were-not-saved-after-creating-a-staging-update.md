@@ -4,6 +4,7 @@ description: The MDVA-38799 patch solves the issue where downloadable products a
 feature: Products, Staging
 role: Admin
 exl-id: 0ae665a8-cda2-4340-91e7-5b9b969a6607
+type: Troubleshooting
 ---
 # MDVA-38799: Downloadable products not saved after creating a staging update
 

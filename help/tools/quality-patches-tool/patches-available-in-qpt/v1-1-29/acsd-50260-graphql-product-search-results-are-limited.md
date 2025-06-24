@@ -4,6 +4,7 @@ description: Apply the ACSD-50260 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Categories, GraphQL, Products, Search
 role: Admin
 exl-id: a9099fab-226d-439b-b2d0-f354d6b5638f
+type: Troubleshooting
 ---
 # ACSD-50260: GraphQL product search results are limited
 

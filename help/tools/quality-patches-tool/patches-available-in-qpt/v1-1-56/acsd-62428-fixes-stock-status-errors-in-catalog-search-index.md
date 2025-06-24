@@ -4,6 +4,7 @@ description: Apply the ACSD-62428 patch to fix the issue where the `is_out_of_st
 feature: Inventory, Catalog Management
 role: Admin, Developer
 exl-id: 4b9d7e4c-f522-4d75-8fc9-dcf14287d02a
+type: Troubleshooting
 ---
 # ACSD-62428: Stock status errors in catalog search index
 

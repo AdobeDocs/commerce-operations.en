@@ -4,6 +4,7 @@ description: Apply the ACSD-52398 patch to fix the Adobe Commerce issue where th
 feature: Shopping Cart, Quotes, Products
 role: Admin
 exl-id: 75fa5f96-22e7-40a2-8b8a-f44452e5124d
+type: Troubleshooting
 ---
 # ACSD-52398: Requested qty not available when trying to update quantity of bundled product
 

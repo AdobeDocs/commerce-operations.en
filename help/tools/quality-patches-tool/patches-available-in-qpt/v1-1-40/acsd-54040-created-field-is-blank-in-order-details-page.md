@@ -4,6 +4,7 @@ description: Apply the ACSD-54040 patch to fix the Adobe Commerce issue where th
 feature: B2B
 role: Admin, Developer
 exl-id: 09fc1e0f-2e02-4cfc-9a7a-7c6aacd9fee0
+type: Troubleshooting
 ---
 # ACSD-54040: *[!UICONTROL Created]* field is blank in order details when B2B modules are enabled.
 

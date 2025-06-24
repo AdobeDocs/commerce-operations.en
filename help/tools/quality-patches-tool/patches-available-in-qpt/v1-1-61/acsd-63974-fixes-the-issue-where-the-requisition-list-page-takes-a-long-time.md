@@ -4,6 +4,7 @@ description: Apply the ACSD-63974 patch to fix the issue where the [!UICONTROL R
 feature: B2B
 role: Admin, Developer
 exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
+type: Troubleshooting
 ---
 # ACSD-63974: Fixes slow [!UICONTROL Requisition List] load time with pagination
 

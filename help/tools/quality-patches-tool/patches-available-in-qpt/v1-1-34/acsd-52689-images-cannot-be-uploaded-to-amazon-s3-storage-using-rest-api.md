@@ -4,6 +4,7 @@ description: Apply the ACSD-52689 patch to fix the Adobe Commerce issue where th
 feature: REST, Storage, Iaas
 role: Admin
 exl-id: 4d7a8ea7-2856-4b40-a922-fdd356dcaea4
+type: Troubleshooting
 ---
 # ACSD-52689: Images can't upload to Amazon S3 storage via REST API
 

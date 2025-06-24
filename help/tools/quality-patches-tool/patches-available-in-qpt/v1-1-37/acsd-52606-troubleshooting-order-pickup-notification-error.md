@@ -4,6 +4,7 @@ description: Apply the ACSD-52606 patch to fix the Adobe Commerce issue where an
 feature: Orders, User Account
 role: Admin, Developer
 exl-id: d0b5a7a6-0d32-4019-8f28-60722fce1a99
+type: Troubleshooting
 ---
 # ACSD-52606: Error message displayed when the user clicks "Notify Order is Ready for Pickup"
 

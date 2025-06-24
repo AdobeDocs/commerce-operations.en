@@ -4,6 +4,7 @@ description: Apply the ACSD-55339 patch to fix the Adobe Commerce issue where pr
 feature: B2B, Quotes
 role: Admin, Developer
 exl-id: 7a9f92df-fb3e-4723-b731-155c6c4fc431
+type: Troubleshooting
 ---
 # ACSD-55339: Resolving SKU trimming issue in negotiable quotes for Adobe Commerce
 

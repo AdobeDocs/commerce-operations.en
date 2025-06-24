@@ -4,6 +4,7 @@ description: Apply the ACSD-55241 patch to fix the Adobe Commerce issue where pa
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
+type: Troubleshooting
 ---
 # ACSD-58739: Partial reindexing throws an error
 

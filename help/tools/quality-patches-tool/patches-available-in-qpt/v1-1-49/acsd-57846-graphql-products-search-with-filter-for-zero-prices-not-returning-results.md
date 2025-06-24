@@ -4,6 +4,7 @@ description: Apply the ACSD-57846 patch to fix the Adobe Commerce issue where fi
 feature: GraphQL, Products
 role: Admin, Developer
 exl-id: ec523a54-201b-4a8f-85ce-cbe1d0bf1304
+type: Troubleshooting
 ---
 # ACSD-57846: GraphQL products search with filter for zero prices not returning results
 

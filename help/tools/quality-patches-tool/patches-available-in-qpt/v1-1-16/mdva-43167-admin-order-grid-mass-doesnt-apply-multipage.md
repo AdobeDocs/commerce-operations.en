@@ -4,6 +4,7 @@ description: The MDVA-43167 patch fixes the issue where the admin order grid mas
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: 992f8a90-300e-41aa-b03d-b8a647dddd51
+type: Troubleshooting
 ---
 # MDVA-43167: Admin order grid mass action doesn't apply for multi-page
 

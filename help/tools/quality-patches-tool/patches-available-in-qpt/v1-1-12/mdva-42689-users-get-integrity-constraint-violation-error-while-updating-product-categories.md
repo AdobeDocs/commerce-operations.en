@@ -4,6 +4,7 @@ description: The MDVA-42689 patch solves the issue where users get an Integrity 
 feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: 3f81f195-5a95-45f6-8970-403b8398e759
+type: Troubleshooting
 ---
 # MDVA-42689: Users get Integrity Constraint Violation error while updating product categories during import
 

@@ -4,6 +4,7 @@ description: The MDVA-42657 patch solves the issue where the admin user is unabl
 feature: Categories, Console, Customer Service
 role: Admin
 exl-id: 115bad99-a603-4940-897e-034974ed1a6c
+type: Troubleshooting
 ---
 # MDVA-42657: Unable to select categories in the customer segment conditions
 

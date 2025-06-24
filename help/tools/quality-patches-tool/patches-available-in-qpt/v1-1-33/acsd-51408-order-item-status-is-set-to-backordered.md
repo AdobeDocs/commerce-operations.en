@@ -4,6 +4,7 @@ description: Apply the ACSD-51408 patch to fix the Adobe Commerce issue where th
 feature: B2B, Orders
 role: Admin
 exl-id: 51abb4c6-5618-43a5-89ca-a3879be2c3c4
+type: Troubleshooting
 ---
 # ACSD-51408: Order item status is incorrectly set to *[!UICONTROL backordered]* 
 

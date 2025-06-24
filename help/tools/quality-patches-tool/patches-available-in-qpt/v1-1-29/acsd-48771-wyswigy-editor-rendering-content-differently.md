@@ -4,6 +4,7 @@ description: Apply the ACSD-48771 patch to fix the Adobe Commerce issue where WY
 feature: Cache, Page Content
 role: Admin
 exl-id: 9480af54-800b-4802-b1a3-65d1a6e169ec
+type: Troubleshooting
 ---
 # ACSD-48771: WYSIWYG editor renders content differently
 

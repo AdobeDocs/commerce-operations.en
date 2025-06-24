@@ -4,6 +4,7 @@ description: The MDVA-25631 patch solves the issue where users are not able to s
 feature: Customer Service
 role: Admin
 exl-id: 3cf40538-822a-4d3e-b8fa-20f9ef9228ae
+type: Troubleshooting
 ---
 # MDVA-25631: Unable to save and refresh customer segments
 

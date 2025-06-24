@@ -4,6 +4,7 @@ description: Apply the ACSD-57003 patch to fix the Adobe Commerce issue where th
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
 exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
+type: Troubleshooting
 ---
 # ACSD-57003: Order status changes to *Complete* instead of changing to *Processing*
 

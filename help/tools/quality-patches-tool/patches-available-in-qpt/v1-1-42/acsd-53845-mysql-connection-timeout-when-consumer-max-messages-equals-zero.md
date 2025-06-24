@@ -4,6 +4,7 @@ description: Apply the ACSD-53845 patch to fix the Adobe Commerce issue where My
 feature: REST, Configuration
 role: Admin, Developer
 exl-id: 437e29f4-b11a-466c-9928-3867821d2b8d
+type: Troubleshooting
 ---
 # ACSD-53845: MySQL connection timeout issue when consumer `max_messages = 0`
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-60632 patch to fix the Adobe Commerce issue where a 
 feature: Orders, Products
 role: Admin, Developer
 exl-id: 9b623a1c-594f-47ed-82b4-d11ba20f3a58
+type: Troubleshooting
 ---
 # ACSD-60632: Address saved with every order attempt
 

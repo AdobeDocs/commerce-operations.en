@@ -4,6 +4,7 @@ description: Apply the ACSD-52143 patch to fix the Adobe Commerce issue where th
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: 630fffa7-012c-4539-9745-9a34571bd2eb
+type: Troubleshooting
 ---
 # ACSD-52143: Custom options are removed after product import
 

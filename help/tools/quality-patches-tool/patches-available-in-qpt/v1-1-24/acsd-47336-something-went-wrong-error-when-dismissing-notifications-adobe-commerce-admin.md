@@ -4,6 +4,7 @@ description: Apply the ACSD-47336 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace
 role: Admin
 exl-id: da0c0119-6720-493f-a278-d573ed898a63
+type: Troubleshooting
 ---
 # ACSD-47336: _[!UICONTROL Something went wrong]_ error when dismissing notifications in Adobe Commerce Admin
 

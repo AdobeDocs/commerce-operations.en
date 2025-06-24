@@ -4,6 +4,7 @@ description: The ACSD-45675 patch fixes the issue where the product export uses 
 feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
+type: Troubleshooting
 ---
 # ACSD-45675: Product export uses category names from default store view scope
 

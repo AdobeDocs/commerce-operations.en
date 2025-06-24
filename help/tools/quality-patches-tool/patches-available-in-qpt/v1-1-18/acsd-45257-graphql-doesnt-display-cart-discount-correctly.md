@@ -4,6 +4,7 @@ description: The ACSD-45257 patch fixes the issue where GraphQL doesn't display 
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
 exl-id: 3d546768-7f7e-4724-a6d7-c88ca6b67e8c
+type: Troubleshooting
 ---
 # ACSD-45257: GraphQL doesn't display cart discount correctly
 

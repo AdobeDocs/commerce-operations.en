@@ -4,6 +4,7 @@ description: Apply the ACSD-47054 patch to fix the Adobe Commerce issue where th
 feature: Page Content
 role: Admin, Developer
 exl-id: bfbda95a-354b-4b67-8081-84aefbbd7cb4
+type: Troubleshooting
 ---
 # ACSD-47054: Preview content slow as all stores reindex
 

@@ -4,6 +4,7 @@ description: The MDVA-43491 patch fixes the issue where the `base_image_label` d
 feature: Data Import/Export
 role: Admin
 exl-id: f6a5f641-aaf0-4b6e-afa9-7f436f8f59e6
+type: Troubleshooting
 ---
 # MDVA-43491: Base image label not updating when imported via CSV
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-61366 patch to fix the Adobe Commerce issue where th
 feature: SCD
 role: Admin, Developer
 exl-id: d71a4833-a236-429b-a4e5-7d7d51c2caeb
+type: Troubleshooting
 ---
 # ACSD-61366: The `bin/magento setup:static-content:deploy --jobs 4` command encounters multiple job failures with an error
 

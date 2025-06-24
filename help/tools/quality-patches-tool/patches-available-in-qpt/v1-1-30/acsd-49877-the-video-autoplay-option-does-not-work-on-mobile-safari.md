@@ -4,6 +4,7 @@ description: Apply the ACSD-49877 patch to fix the Adobe Commerce issue where th
 feature: CMS
 role: Admin
 exl-id: aa2557e2-4bed-4004-b9bc-36c59f1e9cdc
+type: Troubleshooting
 ---
 # ACSD-49877: Video autoplay does not work on mobile [!DNL Safari]
 

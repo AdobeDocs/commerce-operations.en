@@ -4,6 +4,7 @@ description: The ACSD-42807 patch fixes the issue where the custom currency sign
 feature: Storefront
 role: Developer
 exl-id: 9aa3dd73-fab8-4a5b-b177-5226a37ee3c2
+type: Troubleshooting
 ---
 # ACSD-42807: Custom currency sign not displayed on storefront
 

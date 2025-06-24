@@ -2,6 +2,7 @@
 title: 'ACSD-51240: Uploaded file missing while registering via company registration form'
 description: Apply the ACSD-51240 patch to fix the Adobe Commerce issue where the uploaded file missing while registering via company registration form.
 exl-id: 78e339d6-435e-4856-9f57-98bb955d093c
+type: Troubleshooting
 ---
 # ACSD-51240: Uploaded file missing while registering via company registration form
 

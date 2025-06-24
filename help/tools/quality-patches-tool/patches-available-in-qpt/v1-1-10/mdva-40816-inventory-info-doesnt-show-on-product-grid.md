@@ -4,6 +4,7 @@ description: The MDVA-40816 patch solves the issue where inventory information i
 feature: Admin Workspace, Inventory, Orders, Products
 role: Admin
 exl-id: be1dbf75-389d-4bb2-847f-56afb746e4ce
+type: Troubleshooting
 ---
 # MDVA-40816: Inventory data not shown on product grid
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-61322 patch to fix the Adobe Commerce issue where pr
 feature: Site Navigation, B2B
 role: Admin, Developer
 exl-id: 4698ba5a-673e-4bf0-b36c-39f6122dab26
+type: Troubleshooting
 ---
 # ACSD-61322: Products not assigned to [!UICONTROL Shared Catalogue] are included in XML Sitemap
 

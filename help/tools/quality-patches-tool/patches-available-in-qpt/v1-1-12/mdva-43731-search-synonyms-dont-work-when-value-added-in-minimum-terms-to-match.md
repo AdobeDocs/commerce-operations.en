@@ -4,6 +4,7 @@ description: The MDVA-43731 patch fixes the issue where Search Synonyms stop wor
 feature: Cache, Marketing Tools, Search
 role: Admin
 exl-id: 1eada0cd-c0ab-4f0f-b6bf-7c10e1df07ce
+type: Troubleshooting
 ---
 # MDVA-43731: Search Synonyms don't work when value is added in 'Minimum Terms to Match'
 

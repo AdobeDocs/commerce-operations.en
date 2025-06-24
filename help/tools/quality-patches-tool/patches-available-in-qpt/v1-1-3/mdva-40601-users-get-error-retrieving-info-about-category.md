@@ -4,6 +4,7 @@ description: The MDVA-40601 Adobe Commerce quality patch fixes the issue where u
 feature: Categories, GraphQL
 role: Admin
 exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
+type: Troubleshooting
 ---
 # MDVA-40601: Unable to retrieve data about category changed by scheduled update via GraphQL
 

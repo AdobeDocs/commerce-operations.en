@@ -4,6 +4,7 @@ description: Apply the ACSD-61134 patch to resolve the Adobe Commerce issue wher
 feature: Checkout
 role: Admin, Developer
 exl-id: 8aad34e2-89ef-460c-8921-91098bd1645b
+type: Troubleshooting
 ---
 # ACSD-61134: *[!UICONTROL Braintree Vault]* payment method automatically deselected in checkout workflow
 

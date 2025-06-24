@@ -4,6 +4,7 @@ description: The MDVA-37725 patch fixes the issue where asynchronous order email
 feature: Communications, Orders
 role: Admin
 exl-id: 6e72897c-7652-4b5a-8575-090e94188daf
+type: Troubleshooting
 ---
 # MDVA-37725: Emails sent via non-default sites contain default site's logo URLs
 

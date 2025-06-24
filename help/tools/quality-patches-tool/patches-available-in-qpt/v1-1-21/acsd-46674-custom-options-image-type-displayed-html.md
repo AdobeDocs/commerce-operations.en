@@ -4,6 +4,7 @@ description: Apply the ACSD-46674 patch to fix the Adobe Commerce issue where cu
 feature: Communications, Personalization
 role: Developer
 exl-id: 123ca7b5-02da-4573-897f-ff8adb184389
+type: Troubleshooting
 ---
 # ACSD-46674: custom options of image type displayed as HTML in customer emails
 

@@ -4,6 +4,7 @@ description: The MDVA-43935 patch fixes the issue where the upsell product is be
 feature: Products
 role: Admin
 exl-id: f076b29a-b2de-4549-9216-407c50a3e3e5
+type: Troubleshooting
 ---
 # MDVA-43935: Upsell product shown twice on product page
 

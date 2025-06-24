@@ -4,6 +4,7 @@ description: Apply the ACSD-48448 patch to fix the Adobe Commerce performance is
 feature: Orders, Checkout
 role: Admin
 exl-id: c1905b60-4607-454c-975b-77b0056661ad
+type: Troubleshooting
 ---
 # ACSD-48448: *[!UICONTROL Race]* condition issue during order cancellations causing duplicated entry in `inventory_reservation` table
 

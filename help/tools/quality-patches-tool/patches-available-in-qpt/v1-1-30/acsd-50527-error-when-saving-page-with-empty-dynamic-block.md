@@ -4,6 +4,7 @@ description: Apply the ACSD-50527 patch to fix the Adobe Commerce issue where an
 feature: Page Content
 role: Admin
 exl-id: d4943772-cbb8-4b6e-b553-7d3f5a50500e
+type: Troubleshooting
 ---
 # ACSD-50527: Error upon saving a page with empty dynamic block
 

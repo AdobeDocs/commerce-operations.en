@@ -4,6 +4,7 @@ description: Apply the ACSD-50367 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace, Attributes, Data Import/Export, Shipping/Delivery
 role: Admin
 exl-id: 3f33a590-e7c2-424e-aacd-2df7ab893c3e
+type: Troubleshooting
 ---
 # ACSD-50367: Customer address export does not work
 

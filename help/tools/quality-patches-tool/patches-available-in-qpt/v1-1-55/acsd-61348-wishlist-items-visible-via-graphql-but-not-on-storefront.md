@@ -4,6 +4,7 @@ description: Apply the ACSD-61348 patch to fix the Adobe Commerce issue where th
 feature: Customers
 role: Admin, Developer
 exl-id: fcba2c28-077d-4663-b129-7da436e2791d
+type: Troubleshooting
 ---
 # ACSD-61348: Wishlist items visible via GraphQL but not on storefront 
 

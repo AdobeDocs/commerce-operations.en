@@ -4,6 +4,7 @@ description: This article provides a solution for the issue where users get an i
 feature: Orders, Returns
 role: Admin
 exl-id: 67740003-a71e-41bf-afda-ca3e32290115
+type: Troubleshooting
 ---
 # ACSD-46520: Incorrect order status when refunded using store credits
 

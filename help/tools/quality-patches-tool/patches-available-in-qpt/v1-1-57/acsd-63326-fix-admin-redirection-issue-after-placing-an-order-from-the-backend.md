@@ -4,6 +4,7 @@ description: Apply the ACSD-63326 patch to fix the Adobe Commerce issue where th
 feature: Orders, Admin Workspace
 role: Admin, Developer
 exl-id: 8fffc3ad-11a4-4e62-b747-1c4c7b493ada
+type: Troubleshooting
 ---
 # ACSD-63326: Fix admin redirection issue after placing an order from the backend
 

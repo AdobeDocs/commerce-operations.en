@@ -4,6 +4,7 @@ description: Apply the ACSD-55112 patch to fix the Adobe Commerce issue where th
 feature: Products
 role: Admin, Developer
 exl-id: 270c8adc-4f85-4643-8425-341ab0849d2b
+type: Troubleshooting
 ---
 # ACSD-55112: The [!UICONTROL Submit Review] button can be clicked multiple times
 

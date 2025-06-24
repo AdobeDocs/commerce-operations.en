@@ -4,6 +4,7 @@ description: Apply the ACSD-50276 patch to fix the Adobe Commerce issue where th
 feature: Attributes, Storefront
 role: Admin
 exl-id: e7cb2416-d10b-46b0-83c4-93b107560d71
+type: Troubleshooting
 ---
 # ACSD-50276: Customer registration form doesn't work on storefront if multi-select customer attribute is created
 

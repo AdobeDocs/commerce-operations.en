@@ -4,6 +4,7 @@ description: Apply the ACSD-54472 patch to fix the Adobe Commerce issue where th
 feature: B2B
 role: Admin, Developer
 exl-id: c0bd960f-609b-4253-9fc8-dc47fbbddc93
+type: Troubleshooting
 ---
 # ACSD-54472: Customers of a rejected company can still authenticate
 

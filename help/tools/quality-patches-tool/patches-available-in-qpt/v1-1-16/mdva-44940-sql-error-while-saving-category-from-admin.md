@@ -4,6 +4,7 @@ description: The MDVA-44940 patch fixes the issue where an SQL error occurs whil
 feature: Admin Workspace, Categories, Sales Channels
 role: Admin
 exl-id: de4384f1-a75d-4726-810f-6560a7c57b82
+type: Troubleshooting
 ---
 # MDVA-44940: SQL error while saving category from admin
 

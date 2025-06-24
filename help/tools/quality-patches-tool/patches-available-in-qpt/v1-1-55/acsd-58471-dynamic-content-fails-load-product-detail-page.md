@@ -4,6 +4,7 @@ description: Apply the ACSD-58471 patch to fix the Adobe Commerce issue where wh
 feature: Catalog Management
 role: Admin, Developer
 exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
+type: Troubleshooting
 ---
 # ACSD-58471: Dynamic content fails to load on the product detail page, when the associated catalog price rules were scheduled
 
