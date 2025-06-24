@@ -13,7 +13,7 @@ QPT v1.1.66 includes the following patches:
 1. **ACP2E-3918**: Checkout failed for logged-in company customers using in-store pickup without a default billing address.
 1. **ACSD-65750**: GraphQL "route" query returned products out of order in Page Builder Products content types.
 1. **ACSD-65775**: REST API order details returned incorrect `base_row_total` and `row_total` values when multiple quantities of the same item were ordered.
-1. **ACSD-65777**: "types" field was missing for product image types in the `MediaGallery` GraphQL request.
+1. **[ACSD-65777](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request.md)**: "types" field was missing for product image types in the `MediaGallery` GraphQL request.
 1. **ACSD-65848**: Categories in admin are loading very slow.
 1. **ACSD-65913**: OpenSearch threw an `illegal_argument_exception` for categories with products having the same price.
 1. **ACSD-66041**: Ireland (IE) postcodes were not searchable for pickup locations due to a missing CountryID.
