@@ -2,6 +2,7 @@
 title: Use Valkey for default cache
 description: Learn to configure Valkey as the default cache for Adobe Commerce.
 feature: Configuration, Cache
+exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
 ---
 # Use Valkey for default cache
 
