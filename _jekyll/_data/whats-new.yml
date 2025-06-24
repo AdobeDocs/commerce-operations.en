@@ -2,8 +2,79 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jun 17 02:20:54 2025
+updated: Tue Jun 24 02:20:54 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACP2E-3753
+    patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup).
+  versions: ''
+  type: new-topic, qpt
+  date: June 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1414
+  merge_commit: e81c1572972796e9d74b75c0e9f044c0c49825a0
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-65254
+    patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65254-email-notification-not-sent-after-updating-customer-email-via-updatecustomeremail-graphql-mutation).
+  versions: ''
+  type: new-topic, qpt
+  date: June 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1419
+  merge_commit: 6e62ff4d749749586e49c451f54314442f43abb1
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-64813
+    patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64813-unassigning-categories-in-b2b-shared-catalog-via-rest-api-is-slow).
+  versions: ''
+  type: new-topic, qpt
+  date: June 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1422
+  merge_commit: b979fda8b4d453aff404d309d11b23f2de23250a
+  contributor: muntianu
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-65822
+    patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65822-bundle-and-configurable-product-quantities-not-reflected-correctly-in-shopping-cart).
+  versions: ''
+  type: new-topic, qpt
+  date: June 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1429
+  merge_commit: 947cb293173b35f6a256c5cf3827fb96d1cc7e73
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added [guidance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for incrementally upgrading RabbitMQ for on-premises projects.
+  versions: ''
+  type: technical
+  date: June 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1426
+  merge_commit: 6f7d205e5e9899eead6a8f21b499522ca5e14443
+  contributor: vkolesny
+  membership:
+  labels:
+  - technical
+- description: Added the [detailed description of the issue fixed by the ACSD-65202
+    patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65202-my-account-page-doesnt-show-recent-orders-from-other-store-views).
+  versions: ''
+  type: new-topic, qpt
+  date: June 17, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1418
+  merge_commit: 6394375ae83265780fc4caf2433adc7959781618
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [detailed description of the issue fixed by the ACSD-66093
     patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails).
   versions: ''
