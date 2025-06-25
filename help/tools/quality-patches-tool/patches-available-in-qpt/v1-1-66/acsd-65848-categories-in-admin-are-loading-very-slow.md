@@ -1,7 +1,7 @@
 ---
 title: 'ACSD-65848: Categories in admin are loading very slow'
 description: Apply the ACSD-65848 patch to fix the Adobe Commerce issue where the total product count in a category was calculated using a sub-select, by refactoring the method to use a join instead.
-feature: Admin
+feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 ---
