@@ -1,19 +1,19 @@
 ---
-title: 'ACSD-65331: Stock alert emails not using store-specific theme templates in multi-store setup'
-description: Apply the ACSD-65331 patch to fix the Adobe Commerce issue where product alert emails in a multi-store setup are always sent using the default theme, regardless of the store or theme configuration.
-feature: Themes, Personalization
+title: 'ACSD-65331: Selected store in [!UICONTROL Pick in Store] cleared after returning to checkout'
+description: Apply the ACSD-65331 patch to fix the Adobe Commerce issue where the selected store under the [!UICONTROL Pick In-store] option is cleared when users repeatedly return to the checkout page.
+feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
 ---
-# ACSD-65331: Stock alert emails not using store-specific theme templates in multi-store setup
+# ACSD-65331: Selected store in [!UICONTROL Pick in Store] cleared after returning to checkout
 
-The ACSD-65331 patch fixes the issue where product alert emails in a multi-store setup were always sent using the default theme, regardless of the store or theme configuration. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65331. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65331 patch fixes the issue where the selected store under the [!UICONTROL Pick In-store] option is cleared when users repeatedly return to the checkout page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65331. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
 **The patch is created for Adobe Commerce version:**
 
-* Adobe Commerce (all deployment methods) 2.4.5-p11
+* Adobe Commerce (all deployment methods) 2.4.7-p3
 
 **Compatible with Adobe Commerce versions:**
 
@@ -25,7 +25,7 @@ The ACSD-65331 patch fixes the issue where product alert emails in a multi-store
 
 ## Issue
 
-Product alert emails in a multi-store setup are always sent using the default theme, regardless of the store or theme configuration.
+The selected store under the **[!UICONTROL Pick In-store]** option is cleared when users repeatedly return to the checkout page. 
 
 <u>Steps to reproduce</u>:
 
