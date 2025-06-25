@@ -3,6 +3,7 @@ title: 'ACSD-65848: Categories in admin are loading very slow'
 description: Apply the ACSD-65848 patch to fix the Adobe Commerce issue where the total product count in a category was calculated using a sub-select, by refactoring the method to use a join instead.
 feature: Admin
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-65848: Categories in admin are loading very slow
@@ -25,27 +26,45 @@ The ACSD-65848 patch fixes the issue where the total product count in a category
 
 ## Issue
 
-Issue where the total product count in a category was calculated using a sub-select, by refactoring the method to use a join instead.
+The Admin category view/edit page experiences significant delays when loading. The delay is caused by the method used to calculate the total product count in a category, which relies on a sub-select query. Refactoring this logic to use a join instead improves performance and reduces load time.
 
 <u>Steps to reproduce</u>:
 
-1. Create a new instance
-1. Create a 2500 categories and at least 10000 products:
-    1. Create a copy of  setup/performance-toolkit and put it to ./var to be able to edit profiles
-    1. Edit small.xml profile and set categories to 2500 and products to 250000 (same as merchant's)
-    1. Run bin/magento  setup:performance:generate-fixtures var/setup/performance-toolkit/profiles/ce/small.xml
-1. After creating products and categories, ensure all of them are anchors, run query:
-UPDATE catalog_category_entity_int set value = 1 where attribute_id = (select attribute_id from eav_attribute where attribute_code = 'is_anchor'); 
-1. Go to admin menu, ensure we have a deeper structure of the categories, therefore move Category 2 deeper into Category 1 tree
-1. Try to open category page in admin /admin/catalog/category/edit/id/xx/
+1. Create a new Adobe Commerce Cloud instance using version 2.4.8.
+1. Create 2,500 categories and at least 10,000 products:
+    1. Copy the `setup/performance-toolkit` directory to `./var` so you can edit the profiles.
+    1. Open the `small.xml` profile and update it to include 2,500 categories and 250,000 products (to match the merchant's setup).
+    1. Run the following command to generate the fixtures:
+        
+        ```bash
+        bin/magento 
+        setup:performance:generate-fixtures var/setup/performance-toolkit/profiles/ce/small.xml
+        ```
+
+1. After the products and categories are created, make sure all categories are set as anchors. Run this SQL query:
+
+    ```sql
+    UPDATE catalog_category_entity_int 
+    SET value = 1 
+    WHERE attribute_id = (
+    SELECT attribute_id 
+    FROM eav_attribute 
+    WHERE attribute_code = 'is_anchor'
+    );
+    ```
+
+1. In the Admin panel, create a deeper category structure:
+    * Move Category 2 under Category 1 to nest it deeper in the tree.
+1. Try to open a category page in the Admin panel using a URL like:
+    ```/admin/catalog/category/edit/id/xx/```
 
 <u>Expected results</u>:
 
-Every category opens from the first try just in few seconds
+Each category page opens on the first try within a few seconds.
 
 <u>Actual results</u>:
 
-Category opens in more than a minute
+Category pages take more than a minute to open.
 
 ## Apply the patch
 
