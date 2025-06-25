@@ -21,11 +21,13 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 * **ACSD-65935** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the `customerOrders` GraphQL query returned an internal server error when a product was deleted.
 * **ACSD-66049** (for Adobe Commerce and Magento Open Source >=2.4.5-p3 <2.4.6 || >=2.4.7 <2.4.9) - Fixes the issue where non-English storefronts display incorrect pricing due to the ICU library version.
 * **ACSD-66084** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where `row_total_incl_tax` is returned as a near-zero residual value in the order API response instead of 0.00 for fully discounted items.
-* **ACSD-66118** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where updating the store view code clears Design Configuration settings if the configuration cache is not refreshed.
-* **ACSD-66139** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where GraphQL calls to place an order for a non-existent or inactive cart returned an UNDEFINED error code.
+* **ACSD-66118** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where updating the store view code clears [!UICONTROL Design Configuration] settings if the configuration cache is not refreshed.
+* **ACSD-66139** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where GraphQL calls to place an order for a non-existent or inactive cart returned an *UNDEFINED* error code.
 * **ACSD-66301** (for Adobe Commerce and Magento Open Source >=2.4.6-p9 <2.4.7) - Fixes the issue where moving products from an order back to the cart in the Admin results in quantity mismatch.
 * **ACSD-66434** (for Adobe Commerce >=2.4.6-p8 <2.4.9) - Fixes the issue where customer ID was missing from company GraphQL queries.
 * **ACSD-66441** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where the storefront displays incorrect index data in layered navigation when indexing configurable products for a multi-store setup.
+* **AC-14984** (for Adobe Commerce and Magento Open Source >=2.4.6-p10 <2.4.7 || >=2.4.8 <2.4.9) - Fixes the error *Invalid frame type 21* on RabbitMQ SSL connection.
+* **AC-14985** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where emails aren't sent when using the external `smtp` server with TLS enabled.
 * Versions updated: **MDVA-12304**, **ACSD-47920**, **ACSD-56447**, **ACSD-61845**, **ACSD-64118**
 
 ## v1.1.66 {#v1-1-66}
