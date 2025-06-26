@@ -26,7 +26,7 @@ The ACP2E-3789 patch fixes the issue where product updates via WebAPI duplicate 
 
 ## Issue
 
-Updating a product via WebAPI with a media ID causes the system to duplicate media files instead of replacing them, creating new files with each API call. This results in a buildup of images, overloading the `/pub/media/catalog/products/cache/` directory.
+Updating a product via WebAPI with a media ID causes the system to duplicate media files instead of replacing them, creating new files with each API call and resulting in a buildup of images that overloads the `/pub/media/catalog/products/cache/` directory.
 
 <u>Steps to reproduce</u>:
 
