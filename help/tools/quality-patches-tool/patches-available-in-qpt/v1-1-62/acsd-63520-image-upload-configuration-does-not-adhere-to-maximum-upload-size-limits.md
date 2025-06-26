@@ -4,6 +4,7 @@ description: Apply the ACSD-63520 patch to fix the Adobe Commerce issue where Im
 feature: Media, Products
 role: Admin, Developer
 exl-id: 5132bfa9-813a-4623-8e02-a8801f6396e8
+type: Troubleshooting
 ---
 # ACSD-63520: Images uploaded through [!UICONTROL Image Upload Configuration] exceed the configured size limits
 

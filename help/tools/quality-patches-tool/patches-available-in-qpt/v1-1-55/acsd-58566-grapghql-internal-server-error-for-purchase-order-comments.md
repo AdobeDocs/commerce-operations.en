@@ -4,6 +4,7 @@ description: Apply the ACSD-58566 patch to fix the Adobe Commerce issue where Gr
 feature: B2B, Purchase Orders, GraphQL
 role: Admin, Developer
 exl-id: 6d051f57-7a2f-44a5-a1c9-834917ed986c
+type: Troubleshooting
 ---
 # ACSD-58566: GraphQL internal server error for purchase order comments
 

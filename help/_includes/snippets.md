@@ -46,6 +46,12 @@
 >
 >Adobe Commerce releases can contain backward-incompatible changes (BICs). To review backward-incompatible changes, see [BIC reference](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Major backward-incompatible issues are described in [BIC highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Not all releases introduce major BICs.
 
+## Alpha disclaimer {#alpha}
+
+>[!IMPORTANT]
+>
+>[Alpha](/help/release/versioning-policy.md#alpha-patch-release) releases may be incomplete, and are likely to contain defects. They are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) Alpha releases. Customers should not rely on the correct functioning or performance of Alpha releases or any accompanying documentation or materials. Use of Alpha releases is entirely at the customer's own risk.
+
 ## Beta disclaimer {#beta}
 
 >[!IMPORTANT]

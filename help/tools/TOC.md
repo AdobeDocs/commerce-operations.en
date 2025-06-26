@@ -9,7 +9,6 @@ feature: Configuration
 - [Overview](overview.md)
 - Site-Wide Analysis Tool {#site-wide-analysis-tool}
     - [Introduction](site-wide-analysis-tool/intro.md)
-    - [Installation](site-wide-analysis-tool/installation.md)
     - [How to access](site-wide-analysis-tool/access.md)
     - [Status attributes](site-wide-analysis-tool/status.md)
     - [Features tabs](site-wide-analysis-tool/features-tabs.md)
@@ -774,6 +773,8 @@ feature: Configuration
            - [ACSD-64209: Cron scheduler retrieves negotiable quotes without excluding [!UICONTROL Ordered] quotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
         - v1.1.62 {#v1-1-62}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.62](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview.md)
+           - [ACSD-64732: Third-party controllers not cached correctly with customer segments](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly.md)
+           - [ACSD-65164: Error message when reordering configurable product with a single checkbox custom option selected](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering.md)
            - [ACSD-64532: ENV variable set to "false" is treated as a string "false" instead of a BOOLEAN "FALSE"](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false.md)
            - [ACSD-63406: Expired persistent quotes not cleared when persistent_clear_expired cron job runs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared.md)
            - [ACSD-64592: Non-default store gift card claim links redirect to default website](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website.md)
@@ -784,6 +785,27 @@ feature: Configuration
            - [ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles.md)
            - [ACSD-65195: GraphQL createCompany mutation returns an error for a country without a required region](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md) 
            - [ACSD-64753: Pre-selected store in "Pickup in Store" doesn't update when shipping address changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
+        - v1.1.64 {#v1-1-64}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
+           - [ACSD-65684: Upgrading Magento_Company in B2B 1.5.2 is slow with over 100,000 records in company_structure](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
+           - [ACSD-65540: SQL error occurs due to missing REGEXP_LIKE function in company_structure updates](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table.md)
+           - [ACSD-63139: Product export fails when product attributes contain thousands of option values](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
+           - [ACSD-65100: Removing the [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] values in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
+           - [ACSD-65127: JavaScript minification in production mode causes [!DNL TinyMCE] 6 errors in the browser](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65127-javascript-minification-in-production-mode-causes-tinymce-6-errors-in-the-browser.md)
+           - [ACP2E-3838: [!DNL Page Builder] CORS errors prevent saving changes in the admin panel in production mode](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3838-page-builder-cors-errors-prevent-saving-changes-in-the-admin-panel-in-production-mode.md)
+           - [ACSD-65787: SchemaBuilder crashes during schema creation or update due to undefined array key "column" in table data](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65787-schemabuilder-crashes-during-schema-creation-updates-due-to-undefined-array-key-column-in-table-data.md)
+           - [ACSD-65223: Manually selected terms and agreements for B2B purchase orders result in an error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error.md)
+           - [ACP2E-3841: Cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
+        - v1.1.65 {#v1-1-65}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.65](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/overview.md)
+           - [ACSD-65254: Email notification not sent after updating customer email via updateCustomerEmail [!DNL GraphQL] mutation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65254-email-notification-not-sent-after-updating-customer-email-via-updatecustomeremail-graphql-mutation.md)
+           - [ACSD-64813: Unassigning categories in [!DNL B2B] shared catalog via REST API is slow](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64813-unassigning-categories-in-b2b-shared-catalog-via-rest-api-is-slow.md)
+           - [ACSD-65822: Bundle and configurable product quantities not reflected correctly in the [!UICONTROL Shopping Cart]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65822-bundle-and-configurable-product-quantities-not-reflected-correctly-in-shopping-cart.md)
+           - [ACP2E-3753: Stock alert emails not using store-specific theme templates in multi-store setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup.md)
+           - [ACSD-65202: [!UICONTROL My Account] page doesn't show recent orders from other store views](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65202-my-account-page-doesnt-show-recent-orders-from-other-store-views.md)
+           - [ACSD-66093: Guest customer name fields allow email input causing invalid order emails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails.md)
+        - v1.1.66 {#v1-1-66}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

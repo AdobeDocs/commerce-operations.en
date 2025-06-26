@@ -4,6 +4,7 @@ description: Apply the ACSD-64209 patch to fix the Adobe Commerce issue where th
 feature:  B2B, Communications
 role: Admin, Developer
 exl-id: 51ba0edc-ad0c-4e32-acd7-2337a62bff53
+type: Troubleshooting
 ---
 # ACSD-64209: Cron scheduler retrieves negotiable quotes without excluding [!UICONTROL Ordered] quotes
 

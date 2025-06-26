@@ -4,6 +4,7 @@ description: Apply the ACSD-63870 patch to fix the Adobe Commerce issue where a 
 feature: Customers, B2B, Companies
 role: Admin, Developer
 exl-id: 4488f3cb-bb34-491e-8821-c2e98ff69429
+type: Troubleshooting
 ---
 # ACSD-63870: Customer not logged out properly during company status change
 

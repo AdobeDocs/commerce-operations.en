@@ -4,6 +4,7 @@ description: Apply the ACSD-62629 patch to fix the Adobe Commerce issue where a 
 feature: Page Content
 role: Admin, Developer
 exl-id: a7d6bd43-4b8b-48c4-ae9a-4093ac3a4110
+type: Troubleshooting
 ---
 # ACSD-62629: Product list in widgets shows incorrect categories 
 

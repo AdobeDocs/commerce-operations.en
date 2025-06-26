@@ -2,6 +2,7 @@
 title: Release notes
 description: Learn about the patches available for Adobe Commerce and the issues they resolve.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
+type: Troubleshooting
 ---
 # Release notes
 
@@ -14,6 +15,45 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >[!INFO]
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.66 {#v1-1-66}
+
+* **ACP2E-3789** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.9) - Fixes the issue where updating a product via [!DNL WebAPI] duplicated media files when a media ID was provided.
+* **ACP2E-3918** (for Adobe Commerce >=2.4.5 <2.4.9) - Fixes the issue where the checkout failed for logged-in company customers using in-store pickup without a default billing address.
+* **ACSD-65750** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where the GraphQL `route` query returned products out of order in the Page Builder Products content types.
+* **ACSD-65775** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the [!DNL REST] API order details returned incorrect `base_row_total` and `row_total` values when multiple quantities of the same item were ordered.
+* **ACSD-65777** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the `types` field was missing for product image types in the `MediaGallery` GraphQL request.
+* **ACSD-65848** (for Adobe Commerce and Magento Open Source >=2.4.8 <2.4.9) - Fixes the issue where the total product count in a category was calculated using a sub-select, by refactoring the method to use a join instead.
+* **ACSD-65913** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.9) - Fixes the issue where [!DNL OpenSearch] threw an *illegal_argument_exception* error for categories with products having the same price.
+* **ACSD-66041** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where Ireland (IE) postcodes weren't searchable for pickup locations due to a missing `CountryID`.
+* **ACSD-66212** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.9) - Fixes the issue where importing a customer CSV file twice caused failures on the second and subsequent attempts.
+* Versions updated: **MDVA-12304**, **MDVA-19640**, **ACP2E-3841**, **ACSD-65100**, **ACSD-65787**, **ACP2E-3753**, **ACSD-65202**, **ACSD-65331**, **ACSD-65822**
+
+## v1.1.65 {#v1-1-65}
+
+* **ACP2E-3753** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where product alert emails in a multi-store setup were always sent using the default theme, regardless of the store or theme configuration.
+* **ACSD-64118** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.7) - Fixes the issue where concurrent requests to save and update the same product result in data inconsistency or duplicated products.
+* **ACSD-64813** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where unassigning categories from a [!DNL B2B] shared catalog via [!DNL REST] API takes too long or times out with large catalogs.
+* **ACSD-65202** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the "My Account" page doesn't display recent orders from other store views within the same store.
+* **ACSD-65254** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where email notifications were not sent to customers after updating their email addresses on their accounts using the `updateCustomerEmail` [!DNL GraphQL] mutation.
+* **ACSD-65331** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the selected store in [!UICONTROL Pick in Store] was cleared after repeatedly navigating back to the checkout page.
+* **ACSD-65822** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where bundle and configurable product quantities don't display correctly in the shopping cart panel under [!UICONTROL Customer's Activities].
+* **ACSD-66093** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where email addresses could be entered into the guest customer's [!UICONTROL First Name] and [!UICONTROL Last Name] fields, resulting in invalid order confirmation emails.
+* Versions updated: **ACSD-51291**
+* Replaced patches: **ACSD-61522**
+
+## v1.1.64 {#v1-1-64}
+
+* **ACP2E-3838** (for Adobe Commerce and Magento Open Source >=2.4.4-p9 <2.4.4-p13 || >=2.4.5-p8 <2.4.5-p12 || >=2.4.6-p6 <2.4.6-p10 || >=2.4.7 <2.4.7-p5) - Fixes the issue where [!DNL Page Builder] CORS errors prevent saving changes in the Admin panel in production mode.
+* **ACP2E-3841** (for Adobe Commerce and Magento Open Source >=2.4.5 <2.4.8) - Fixes the issue where cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled.
+* **ACSD-63139** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.7) - Fixes the issue where product export fails when product attributes contain thousands of option values.
+* **ACSD-65100** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where removing the values for [!UICONTROL Maximum Width] and [!UICONTROL Maximum Height] in the [!UICONTROL Media Gallery Image Optimization] configuration causes an error during the image optimization process.
+* **ACSD-65127** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where enabling JavaScript minification in production mode causes [!DNL TinyMCE] 6 to generate errors in the browser console, affecting functionality and user experience.
+* **ACSD-65787** (for Adobe Commerce and Magento Open Source >=2.4.7-p5 <2.4.8) - Fixes the issue where the SchemaBuilder class crashes during schema creation or updates due to an undefined array key 'column' when processing table data.
+* **ACSD-65223** (for Adobe Commerce, B2B 1.5.1) - Fixes the issue where manually selected terms and agreements for [!DNL B2B] purchase orders result in an error.
+* **ACSD-65540** (for Adobe Commerce, B2B 1.5.2) - Fixes the issue where an SQL syntax error occurs due to the absence of the `REGEXP_LIKE` function when updating the `company_structure` table.
+* **ACSD-65684** (for Adobe Commerce, B2B 1.5.2) - Fixes the performance issue where upgrading the `Magento_Company` module after updating to [!DNL B2B] 1.5.2 took an excessively long time when processing a large number of records (~100,000+) in the `company_structure` table.
+* Versions updated: **ACSD-48234**, **ACSD-51819**, **ACSD-57570**, **ACSD-56415**
 
 ## v1.1.63 {#v1-1-63}
 

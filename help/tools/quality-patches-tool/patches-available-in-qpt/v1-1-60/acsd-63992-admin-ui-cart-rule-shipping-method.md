@@ -4,6 +4,7 @@ description: Apply the ACSD-63992 patch to fix the Adobe Commerce issue where th
 feature: Price Rules, Admin Workspace
 role: Admin, Developer
 exl-id: 80f407c7-4552-4cfb-96ae-43773d2ec398
+type: Troubleshooting
 ---
 # ACSD-63992: [!UICONTROL Cart Price Rule] with coupon and shipping method condition error in Admin UI
 
