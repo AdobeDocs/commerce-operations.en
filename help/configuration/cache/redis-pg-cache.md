@@ -30,8 +30,8 @@ With the following parameters:
 | `cache-backend-redis-port`     | port      | Redis server listen port | `6379` |
 | `cache-backend-redis-db`       | database  | Required if you use Redis for both the default and full-page cache. You must specify the database number of one of the caches; the other cache uses 0 by default.<br><br>**Important**: If you use Redis for more than one type of caching, the database numbers must be different. It is recommended that you assign the default caching database number to 0, the page-caching database number to 1, and the session storage database number to 2. | `0` |
 | `cache-backend-redis-password` | password  | Configuring a Redis password enables one of its built-in security features: the `auth` command, which requires clients to authenticate to access the database. The password is configured directly in Redis' configuration file: `/etc/redis/redis.conf` | |
-| `--cache-backend-redis-use-lua` | use_lua   | Enable or disable LUA. <br><br>**LUA**: Lua enables us to run part of the application logic inside Redis, improving performance and ensuring data consistency its atomic execution. | `0` |
-| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Enable or disable LUA for garbage collection. <br><br>**LUA**: Lua enables us to run part of the application logic inside Redis, improving performance and ensuring data consistency its atomic execution. | `1` |
+| `--cache-backend-redis-use-lua` | use_lua   | Enable or disable LUA. <br><br>**LUA**: Lua enables us to run part of the application logic inside Redis, improving performance and ensuring data consistency through its atomic execution. | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Enable or disable LUA for garbage collection. <br><br>**LUA**: Lua enables us to run part of the application logic inside Redis, improving performance and ensuring data consistency through its atomic execution. | `1` |
 
 ### Example command
 
