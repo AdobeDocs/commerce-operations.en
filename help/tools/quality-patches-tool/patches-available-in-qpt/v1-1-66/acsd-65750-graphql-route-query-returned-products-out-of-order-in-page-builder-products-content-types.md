@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-65750: GraphQL "route" query returned products out of order in Page Builder Products content types'
-description: Apply the ACSD-65750 patch to fix the Adobe Commerce issue where the GraphQL "route" query response did not return products in the correct sort order within a Page Builder Products content type.
+title: 'ACSD-65750: GraphQL "route" query returns products out of order in [!DNL Page Builder] Products content type'
+description: Apply the ACSD-65750 patch to fix the Adobe Commerce issue where the GraphQL "route" query returns products out of order in [!DNL Page Builder] Products content type.
 feature: GraphQL, Page Builder, Products
 role: Admin, Developer
 ---
 
-# ACSD-65750: GraphQL "route" query returned products out of order in Page Builder Products content types
+# ACSD-65750: GraphQL "route" query returns products out of order in [!DNL Page Builder] Products content type
 
-The ACSD-65750 patch fixes the issue where the GraphQL "route" query returned products out of order in Page Builder Products content types. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65750. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65750 patch fixes the issue where the GraphQL "route" query returns products out of order in [!DNL Page Builder] Products content type. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65750. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACSD-65750 patch fixes the issue where the GraphQL "route" query returned pr
 
 ## Issue
 
-Issue where the GraphQL "route" query returned products out of order in Page Builder Products content types.
+The GraphQL "route" query does not return products in the correct sort order when using the [!DNL Page Builder] Products content type.
 
 <u>Steps to reproduce</u>:
 
@@ -69,11 +69,11 @@ query {
 
 <u>Expected results</u>:
 
-1. Products should be returned in the order defined by their category position.
+Products should be returned in the order defined by their category position.
 
 <u>Actual results</u>:
 
-1. Products are not ordered by category position in the GraphQL response.
+Products are not ordered by category position in the GraphQL response.
 
 ## Apply the patch
 
