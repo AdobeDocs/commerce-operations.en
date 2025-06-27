@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-66041: Ireland (IE) postcodes were not searchable for pickup locations due to a missing CountryID'
+title: 'ACSD-66041: Ireland (IE) postcodes not searchable for pickup locations due to missing CountryID'
 description: Apply the ACSD-66041 patch to fix the Adobe Commerce issue where of missing CountryID issue for Ireland (IE), which was causing errors.
-feature: Catalog
+feature: Catalog Management, Catalog Service
 role: Admin, Developer
 ---
 
-# ACSD-66041: Ireland (IE) postcodes were not searchable for pickup locations due to a missing CountryID
+# ACSD-66041: Ireland (IE) postcodes not searchable for pickup locations due to missing `CountryID`
 
-The ACSD-66041 patch fixes the issue where Ireland (IE) postcodes were not searchable for pickup locations due to a missing CountryID. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-66041. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66041 patch fixes the issue where Ireland (IE) postcodes were not searchable for pickup locations due to a missing `CountryID`. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-66041. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,14 +25,16 @@ The ACSD-66041 patch fixes the issue where Ireland (IE) postcodes were not searc
 
 ## Issue
 
-Issue where Ireland (IE) postcodes were not searchable for pickup locations due to a missing CountryID.
+Ireland (IE) postcodes were not searchable for pickup locations due to a missing `CountryID`.
 
 <u>Steps to reproduce</u>:
 
-```
-query getStoresTestError($term: String!, $radius: Int!) {
-	pickupLocations(
-		sort: { distance: ASC }
+1. Run the following GraphQL query:
+
+    ```graphql
+    query getStoresTestError($term: String!, $radius: Int!) {
+	    pickupLocations(
+	    	sort: { distance: ASC }
 		area: { radius: $radius, search_term: $term }
 	) {
 		items {
@@ -49,30 +51,30 @@ query getStoresTestError($term: String!, $radius: Int!) {
 			phone
 		}
 	}
-}
-```
+    }
+    ```
 
-Variables:
+1. Use the following variables:
 
-```
-{
+    ```
+    {
 	"radius": 81,
 	"term": "dublin:IE"
-}
-```
+    }
+    ```
 
 <u>Expected results</u>:
 
-No Error. Ireland postcodes are available to search for pickup locations.
+Ireland postcodes are available to search for pickup locations.
 
 <u>Actual results</u>:
 
-Internal Server Error
-var/log/exception.log contains:
+* An *Internal Server Error* is returned.
+* `var/log/exception.log` contains the following error:
 
-```
-report.ERROR: Provided countryId does not exist.  {"exception":"[object] (GraphQL\\Error\\Error(code: 0): Provided countryId does not exist.
-```
+    ```
+    report.ERROR: Provided countryId does not exist.  {"exception":"[object] (GraphQL\\Error\\Error(code: 0): Provided countryId does not exist.
+    ```
 
 ## Apply the patch
 
