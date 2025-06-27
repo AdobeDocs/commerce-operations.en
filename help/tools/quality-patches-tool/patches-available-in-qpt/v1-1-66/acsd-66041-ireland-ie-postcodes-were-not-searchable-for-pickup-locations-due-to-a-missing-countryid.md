@@ -38,17 +38,17 @@ Ireland (IE) postcodes were not searchable for pickup locations due to a missing
             area: { radius: $radius, search_term: $term }
         ) {
             items {
-                pickup_location_code
-                name
-                description
-		latitude
-		longitude
-		country_id
-		region
-		city
-		street
-		postcode
-		phone
+                    pickup_location_code
+                    name
+                    description
+		    latitude
+		    longitude
+		    country_id
+		    region
+		    city
+		    street
+		    postcode
+		    phone
             }
         }
     }
