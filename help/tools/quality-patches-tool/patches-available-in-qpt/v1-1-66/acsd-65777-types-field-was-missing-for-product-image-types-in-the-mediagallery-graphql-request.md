@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-65777: "types" field was missing for product image types in the `MediaGallery` GraphQL request'
-description: Apply the ACSD-65777 patch to fix the Adobe Commerce issue where added "types" field to media_gallery GraphQL interface.
+title: 'ACSD-65777: Missing "types" field for product image types in the `MediaGallery` GraphQL request'
+description: Apply the ACSD-65777 patch to fix the Adobe Commerce issue where the "types" field was missing for product image types in the `MediaGallery` GraphQL request.
 feature: GraphQL, Media
 role: Admin, Developer
 ---
 
-# ACSD-65777: "types" field was missing for product image types in the `MediaGallery` GraphQL request
+# ACSD-65777: Missing **[!UICONTROL types]** field for product image types in the `MediaGallery` GraphQL request
 
-The ACSD-65777 patch fixes the issue where the "types" field was missing for product image types in the `MediaGallery` GraphQL request. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65777. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65777 patch fixes the issue where the **[!UICONTROL types]** field was missing for product image types in the `MediaGallery` GraphQL request. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65777. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,21 +25,21 @@ The ACSD-65777 patch fixes the issue where the "types" field was missing for pro
 
 ## Issue
 
-Issue where the "types" field was missing for product image types in the `MediaGallery` GraphQL request.
+The **[!UICONTROL types]** field is missing for product image types when fetching media data via the `MediaGallery` GraphQL request.
 
 <u>Steps to reproduce</u>:
 
-1. Create a product
-1. Upload image to the product
-1. Fetch the media data using the following GraphQL
+1. Create a product.
+1. Upload image to the product.
+1. Fetch the media data using the following GraphQL.
 
 <u>Expected results</u>:
 
-The media_gallery GraphQL interface should have types as a field
+The `media_gallery` GraphQL interface should include the **[!UICONTROL types]** field.
 
 <u>Actual results</u>:
 
-The media_gallery does not contain the media types
+The `media_gallery` doesn't contain the media **[!UICONTROL types]** field.
 
 ## Apply the patch
 
