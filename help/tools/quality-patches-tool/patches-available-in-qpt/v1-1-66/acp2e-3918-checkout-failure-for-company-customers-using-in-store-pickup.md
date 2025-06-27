@@ -41,8 +41,8 @@ Issue where checkout fails when a logged-in company customer without a default a
     1. On the frontend, log in as the Company User.
     1. Add products to **[!UICONTROL Cart]**.
 1. Proceed to Checkout:
-    1. Select **[!UICONTROL In-Store pick up]** on shipping step.
-    1. Proceed to the payment step.
+    1. Select **[!UICONTROL In-Store Pick Up]** on shipping step.
+    1. Proceed to the payment.
 
 <u>Expected results</u>:
 
