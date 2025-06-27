@@ -33,7 +33,7 @@ Import a CSV that contains customer data, including the customer status.
 
 <u>Expected results</u>:
 
-The status is imported and exported appropriately.
+The status is imported and exported correctly.
 
 <u>Actual results</u>:
 
