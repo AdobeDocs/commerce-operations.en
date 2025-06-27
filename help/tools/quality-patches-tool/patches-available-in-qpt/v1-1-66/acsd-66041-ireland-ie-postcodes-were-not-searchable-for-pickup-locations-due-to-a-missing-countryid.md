@@ -33,24 +33,24 @@ Ireland (IE) postcodes were not searchable for pickup locations due to a missing
 
     ```graphql
     query getStoresTestError($term: String!, $radius: Int!) {
-	    pickupLocations(
-	    	sort: { distance: ASC }
-		area: { radius: $radius, search_term: $term }
-	) {
-		items {
-			pickup_location_code
-			name
-			description
-			latitude
-			longitude
-			country_id
-			region
-			city
-			street
-			postcode
-			phone
-		}
-	}
+        pickupLocations(
+            sort: { distance: ASC }
+            area: { radius: $radius, search_term: $term }
+        ) {
+            items {
+                pickup_location_code
+                name
+                description
+		latitude
+		longitude
+		country_id
+		region
+		city
+		street
+		postcode
+		phone
+            }
+        }
     }
     ```
 
@@ -58,8 +58,8 @@ Ireland (IE) postcodes were not searchable for pickup locations due to a missing
 
     ```
     {
-	"radius": 81,
-	"term": "dublin:IE"
+        "radius": 81,
+        "term": "dublin:IE"
     }
     ```
 
