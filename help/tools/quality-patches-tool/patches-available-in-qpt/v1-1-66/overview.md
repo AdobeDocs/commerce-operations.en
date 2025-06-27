@@ -17,6 +17,6 @@ QPT v1.1.66 includes the following patches:
 1. **ACSD-65848**: Categories in admin are loading very slow.
 1. **ACSD-65913**: OpenSearch threw an `illegal_argument_exception` for categories with products having the same price.
 1. **ACSD-66041**: Ireland (IE) postcodes were not searchable for pickup locations due to a missing CountryID.
-1. **[ACSD-66212](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66212-importing-a-customer-csv-file-twice-caused-failures-on-the-second-and-subsequent-attempts.md)**: Fixes the issue where importing a customer CSV file twice caused failures on the second and subsequent attempts.
+1. **ACSD-66212**: Fixes the issue where importing a customer CSV file twice caused failures on the second and subsequent attempts.
 
 Use the menu on the left to navigate to a specific patch page.
