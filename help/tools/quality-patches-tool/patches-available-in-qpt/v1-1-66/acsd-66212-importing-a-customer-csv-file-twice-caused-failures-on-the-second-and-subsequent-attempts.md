@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-66212: Importing a customer CSV file twice caused failures on the second and subsequent attempts'
+title: 'ACSD-66212: Importing customer CSV file twice caused failures on second and subsequent attempts'
 description: Apply the ACSD-66212 patch to fix the Adobe Commerce issue where importing a customer CSV file twice caused failures on the second and subsequent attempts.
 feature: Data Import/Export, Customers
 role: Admin, Developer
 ---
 
-# ACSD-66212: Importing a customer CSV file twice caused failures on the second and subsequent attempts
+# ACSD-66212: Importing customer CSV file twice caused failures on second and subsequent attempts
 
 The ACSD-66212 patch fixes the issue where importing a customer CSV file twice caused failures on the second and subsequent attempts. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-66212. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
@@ -25,11 +25,11 @@ The ACSD-66212 patch fixes the issue where importing a customer CSV file twice c
 
 ## Issue
 
-Issue where importing a customer CSV file twice caused failures on the second and subsequent attempts.
+Importing a customer CSV file twice caused failures on the second and subsequent attempts.
 
 <u>Steps to reproduce</u>:
 
-Import a CSV that contains customer data, including customer status.
+Import a CSV that contains customer data, including the customer status.
 
 <u>Expected results</u>:
 
@@ -37,7 +37,7 @@ The status is imported and exported appropriately.
 
 <u>Actual results</u>:
 
-An error happens during import.
+An error occurs during import:
 
 ```
 General system exception happened
