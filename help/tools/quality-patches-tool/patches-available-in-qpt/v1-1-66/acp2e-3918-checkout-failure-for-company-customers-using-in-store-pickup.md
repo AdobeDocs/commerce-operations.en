@@ -1,7 +1,7 @@
 ---
 title: 'ACP2E-3918: Checkout failure for company customers using in-store pickup'
 description: Apply the ACP2E-3918 patch to fix the Adobe Commerce issue where checkout fails for logged-in company customers using in-store pickup without a default billing address.
-feature: B2B, Company, Purchase Order
+feature: B2B, Companies, Purchase Orders
 role: Admin, Developer
 type: Troubleshooting
 ---
