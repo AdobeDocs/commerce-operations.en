@@ -30,16 +30,19 @@ Issue where checkout fails when a logged-in company customer without a default a
 
 <u>Steps to reproduce</u>:
 
-1. Enable **[!UICONTROL Purchase Orders]** in the [!UICONTROL Admin].
-1. Create a Company and enable **[!UICONTROL Purchase Orders]** for it.
-1. Create a Company User without any saved addresses.
-1. Enable the **[!UICONTROL In-Store Delivery]** shipping method.
-1. Add an Inventory Source and Inventory Stock.
-1. Assign Inventory to a product.
-1. On the frontend, log in as the company user.
-1. Add products to the cart and proceed to Checkout.
-1. Select **[!UICONTROL In-Store Pickup]** during the shipping step.
-1. Proceed to the payment step.
+1. Enable **[!UICONTROL Purchase Orders]** in the **[!UICONTROL Admin]**:
+    1. Create a **[!UICONTROL Company]**.
+    1. enable **[!UICONTROL Purchase Orders]** for it.
+1. Create a **[!UICONTROL Company User]** Without Saved Addresses:
+    1. Enable the **[!UICONTROL In-Store Delivery]** shipping method.
+    1. Add Inventory Source.
+    1. Add Inventory Stock.
+1. Assign Inventory to a Product:
+    1. On the frontend, log in as the Company User.
+    1. Add products to **[!UICONTROL Cart]**.
+1. Proceed to Checkout:
+    1. Select **[!UICONTROL In-Store pick up]** on shipping step.
+    1. Proceed to the payment step.
 
 <u>Expected results</u>:
 
