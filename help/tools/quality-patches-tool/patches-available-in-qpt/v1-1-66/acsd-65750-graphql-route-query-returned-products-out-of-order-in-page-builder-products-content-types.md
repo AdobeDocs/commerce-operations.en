@@ -25,23 +25,23 @@ The ACSD-65750 patch fixes the issue where the GraphQL "route" query returns pro
 
 ## Issue
 
-The GraphQL "route" query does not return products in the correct sort order when using the [!DNL Page Builder] Products content type.
+The GraphQL "route" query doesn't return products in the correct sort order when using the [!DNL Page Builder] Products content type.
 
 <u>Steps to reproduce</u>:
 
-1. Create a new category and some products, and link the products to this category.
+1. Create a new category and some products in **[!UICONTROL Catalog]**, and link the products to this category.
 1. In Catalog > Category, edit the category and set positions in the "Products in Category" tab.
 1. Save the category and reindex.
 1. In Content > Elements > Pages, click "Add New Page".
 1. Expand the Content tab and click "Edit with Page Builder".
 1. Drag a row element to the content area and then a Products element inside it.
 1. Configure the Products element:
-    1. Select Products By: Category
-    1. Category: the recently created category
-    1. Sort By: Position
+    * Select Products By: Category
+    * Category: the recently created category
+    * Sort By: Position
 1. In the Search Engine Optimization tab, set the URL Key as "test-widget".
 1. Save the page.
-1. Make a GraphQL request using the following curl command:
+1. Make the following GraphQL request:
 
 ```
 query {
