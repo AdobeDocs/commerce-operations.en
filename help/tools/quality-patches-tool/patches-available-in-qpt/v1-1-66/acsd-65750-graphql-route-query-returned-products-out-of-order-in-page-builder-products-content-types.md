@@ -29,17 +29,18 @@ The GraphQL "route" query doesn't return products in the correct sort order when
 
 <u>Steps to reproduce</u>:
 
-1. Create a new category and some products in **[!UICONTROL Catalog]**, and link the products to this category.
-1. In Catalog > Category, edit the category and set positions in the "Products in Category" tab.
-1. Save the category and reindex.
-1. In Content > Elements > Pages, click "Add New Page".
-1. Expand the Content tab and click "Edit with Page Builder".
-1. Drag a row element to the content area and then a Products element inside it.
-1. Configure the Products element:
-    * Select Products By: Category
-    * Category: the recently created category
-    * Sort By: Position
-1. In the Search Engine Optimization tab, set the URL Key as "test-widget".
+1. Create a new category and some products in Catalog, and link the products to this category.
+1. Navigate to **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**, edit the created category, and open the **[!UICONTROL Products in Category]** tab.
+1. Set custom **[!UICONTROL Position]** for each product in this category.
+1. Save the category and run reindex.
+1. Navigate to **[!UICONTROL Content]** > *[!UICONTROL Elements]* > **[!UICONTROL Pages]** and click **[!UICONTROL Add New Page]**.
+1. Expand the **[!UICONTROL Content]** tab, then click **[!UICONTROL Edit with Page Builder]**.
+1. Drag a **[!UICONTROL Row]** element into the content area, then drag a **[!UICONTROL Products]** element inside the row.
+1. Configure the Products element as follows:
+    * **[!UICONTROL Select Products By]**: *Category*
+    * **[!UICONTROL Category]**: *Select the newly created category*
+    * **[!UICONTROL Sort By]**: *Position*
+1. Switch to the **[!UICONTROL Search Engine Optimization]** tab, and set the **[!UICONTROL URL Key]** to *test-widget*.
 1. Save the page.
 1. Make the following GraphQL request:
 
@@ -69,11 +70,11 @@ query {
 
 <u>Expected results</u>:
 
-Products should be returned in the order defined by their category position.
+The products should be returned in the order defined by their category position.
 
 <u>Actual results</u>:
 
-Products are not ordered by category position in the GraphQL response.
+The products are not ordered by category position in the GraphQL response.
 
 ## Apply the patch
 
