@@ -39,7 +39,7 @@ The `base_row_total` and `row_total` in the order details REST API response show
     ```
     {
       "username": "admin",
-      "password": "123123q"
+      "password": "password"
     }
     ```
 
