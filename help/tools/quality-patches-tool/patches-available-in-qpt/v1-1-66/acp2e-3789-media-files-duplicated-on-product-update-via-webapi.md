@@ -4,8 +4,8 @@ description: Apply the ACP2E-3789 patch to fix the Adobe Commerce issue where pr
 feature: Catalog Management, Media, REST, Products, Cache
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 1eaa8ed0-fde6-47c4-9339-8f5e7bce7b19
 ---
-
 # ACP2E-3789: Media files duplicated on product update via WebAPI
 
 The ACP2E-3789 patch fixes the issue where product updates via WebAPI duplicate media files when a media ID is provided. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACP2E-3789. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
