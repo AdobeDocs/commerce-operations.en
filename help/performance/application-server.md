@@ -153,7 +153,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 1. Use SSH to log in to the remote cloud environment (_not_ the `application-server` app):
 
    ```bash
-   magento-cloud ssh
+   magento-cloud ssh -p <project-ID> -e <environment-ID>
    ```
 
 1. Sync the data from the local mounts to the shared mounts:
