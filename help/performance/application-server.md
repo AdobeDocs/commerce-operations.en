@@ -108,7 +108,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
    ```
 
-1. Uncomment the files section in the `.magento/services.yaml` file.
+1. Uncomment the `files` section in the `.magento/services.yaml` file.
 
    ```yaml
    files:
