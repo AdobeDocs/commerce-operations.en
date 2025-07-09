@@ -150,7 +150,7 @@ Complete the following steps before deploying GraphQL Application Server on Star
    git push
    ```
 
-1. Connect by ssh to the main app (not the `application-server` app):
+1. Use SSH to log in to the remote cloud environment (_not_ the `application-server` app):
 
    ```bash
    magento-cloud ssh
