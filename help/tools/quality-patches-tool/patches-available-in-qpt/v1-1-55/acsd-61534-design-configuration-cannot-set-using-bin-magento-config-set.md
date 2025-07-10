@@ -4,6 +4,7 @@ description: Apply the ACSD-61534 patch to fix the Adobe Commerce issue where th
 feature: Configuration
 role: Admin, Developer
 exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
+type: Troubleshooting
 ---
 # ACSD-61534: Design configuration can't be set using `bin/magento config:set`, and locked values can be altered via form manipulation
 

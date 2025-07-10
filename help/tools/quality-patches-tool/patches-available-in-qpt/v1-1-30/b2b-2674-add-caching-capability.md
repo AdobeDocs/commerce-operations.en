@@ -4,10 +4,11 @@ description: Apply the B2B-2674 patch to add caching capability to the customAtt
 feature: Attributes, B2B, Cache, GraphQL
 role: Admin
 exl-id: b49633f3-b144-405f-a21d-726e222a7bfe
+type: Troubleshooting
 ---
 # B2B-2674: Adds caching capability to the `customAttributeMetadata` GraphQL query
 
-The B2B-2674 patch adds caching capability to the `customAttributeMetadata` GraphQL queries. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.30 is installed. The patch ID is B2B-2674. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7-beta1.
+The B2B-2674 patch adds caching capability to the `customAttributeMetadata` GraphQL queries. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.30 is installed. The patch ID is B2B-2674. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.7-beta1.
 
 ## Affected products and versions
 
@@ -49,7 +50,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

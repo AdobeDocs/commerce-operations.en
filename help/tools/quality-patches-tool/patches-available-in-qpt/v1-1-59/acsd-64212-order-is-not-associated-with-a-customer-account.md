@@ -4,6 +4,7 @@ description: Apply the ACSD-64212 patch to fix the Adobe Commerce issue where an
 feature: GraphQL, Checkout, Customers
 role: Admin, Developer
 exl-id: be62e635-2a61-41ed-9c1d-b2c54ee01024
+type: Troubleshooting
 ---
 # ACSD-64212: Order not linked to a customer account created via [!DNL GraphQL] after placing order
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-62689 patch to fix the Adobe Commerce issue where a 
 feature: Categories
 role: Admin, Developer
 exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+type: Troubleshooting
 ---
 # ACSD-62689: Unable to add categories in *[!UICONTROL Related Product Rules]* and widgets after depth 4
 

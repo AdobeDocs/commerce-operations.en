@@ -22,20 +22,6 @@ Getting early access to features that Adobe is developing provides customers and
 
 See the following sections for a list of active beta programs.
 
-### Adobe Commerce Optimizer
-
-Adobe Commerce Optimizer enhances your e-commerce experience with a high-performance storefront, boosting organic traffic, customer engagement, and revenue.
-
-With Adobe Commerce Optimizer, you can:
-
-- Grow and scale your catalog without re-platforming your entire commerce stack.
-- Ingest catalog data from any source.
-- Define business channels and policies.
-- Create personalized search and recommendations using AI and ML.
-- View crucial product data availability, including synchronization status and storefront eventing data for accurate implementation and troubleshooting.
-
-[Learn more](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) about Adobe Commerce Optimizer. If you are interested in learning more about the [!DNL Adobe Commerce Optimizer] early access program, complete the [Early Access request form](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
-
 ### Enhanced search capabilities for Live Search (Public Beta)
 
 This beta supports three new capabilities in the [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
@@ -73,38 +59,43 @@ This integration accelerator for IBM Sterling Order Management enables Adobe Com
 
 To participate in this beta, send an email request to [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Adobe Commerce Foundation (Public Beta)
+### Adobe Commerce Foundation (Public Alpha/Beta)
 
-Each Adobe Commerce Foundation beta release includes all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
+Each Adobe Commerce Foundation alpha and beta releases include all the changes delivered to Adobe Commerce core code by the scheduled release date, including, but not limited to the following functional areas: 
 
 - Latest security fixes
 - Performance improvements
 - GraphQL improvements
 - General quality bug fixes
 - Community contributions
-- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- Changes required to support compatibility with [Adobe Commerce services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Naming convention and schedule
 
-Adobe typically releases beta patches twice a year.
+Adobe typically releases alpha and beta patches several times a year.
+
+Alpha release packages have a `-alphaX` suffix. For example, the Adobe Commerce 2.4.7 alpha release packages use the following naming convention:
+
+- `2.4.7-alpha1`
+- `2.4.7-alpha2`
 
 Beta release packages have a `-betaX` suffix. For example, the Adobe Commerce 2.4.7 beta release packages use the following naming convention:
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-See the [release schedule](schedule.md) for the list of upcoming public beta release dates.
+See the [release schedule](schedule.md) for the list of upcoming public alpha and beta release dates.
 
-#### Beta release access
+#### Release access
 
-Adobe Commerce beta releases are distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is avilable on [GitHub](https://github.com/magento/magento2).
+Adobe Commerce alpha and beta releases are distributed in the same way as any other Adobe Commerce patch release: as Composer metapackages on `https://repo.magento.com`. The source code is available on [GitHub](https://github.com/magento/magento2).
 
 See [Composer installation quick start](../installation/composer.md) for more details.
 
 #### Issue reporting
 
-Adobe does not provide the standard Adobe Support Service for beta releases.
+Adobe does not provide the standard Adobe Support Service for alpha and beta releases.
 
-To submit feedback related to beta releases, follow our [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
+To submit feedback related to alpha and beta releases, follow the [regular issue reporting flow](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) on [GitHub](https://github.com/magento/magento2).
 
-Our internal teams will monitor all critical issues reported against the latest beta release and prioritize them to be resolved prior to the GA release date.
+Adobe monitors all critical issues reported against the latest alpha or beta release and prioritizes them to be resolved prior to the GA release date.

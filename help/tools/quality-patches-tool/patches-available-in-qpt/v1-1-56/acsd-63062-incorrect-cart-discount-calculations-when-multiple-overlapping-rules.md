@@ -4,6 +4,7 @@ description: Apply the ACSD-63062 patch to fix the Adobe Commerce issue where wh
 feature: Price Rules
 role: Admin, Developer
 exl-id: c4a93063-b640-444e-ba0e-552dd8d1895b
+type: Troubleshooting
 ---
 # ACSD-63062: Incorrect cart discount calculations with multiple overlapping rules 
 

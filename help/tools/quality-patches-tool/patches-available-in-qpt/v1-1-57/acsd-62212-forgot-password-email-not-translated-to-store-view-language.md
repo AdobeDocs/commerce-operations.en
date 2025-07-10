@@ -4,6 +4,7 @@ description: Apply the ACSD-62212 patch to fix the Adobe Commerce issue where th
 feature: GraphQL
 role: Admin, Developer
 exl-id: 29e6f2fa-574f-4ab1-82f5-88e1eb1de83e
+type: Troubleshooting
 ---
 # ACSD-62212: *[!UICONTROL Forgot Password]* email not translated to store view language
 

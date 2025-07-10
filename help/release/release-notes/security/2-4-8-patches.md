@@ -1,8 +1,8 @@
 ---
 title: Adobe Commerce 2.4.8 Security Patch Release Notes
 description: Learn about security bug fixes, security enhancements, and other security related updates included in the security patch releases for Adobe Commerce version 2.4.7.
+exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
 ---
-
 # Release notes for Adobe Commerce 2.4.8 security patches
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
@@ -27,7 +27,7 @@ This release includes the following highlights:
 
 * **Cookie limit compatibility**—Resolves a backward-incompatible change involving the `MAX_NUM_COOKIES` constant in the framework. This update restores expected behavior and ensures compatibility for extensions or customizations that interact with cookie limits.<!-- AC-14475 -->
 
-* **Fix for CVE-2024-34104**—Resolves an improper authorization vulnerability.<!-- AC-13917 -->
+* **Async operations**—Restricted async operations for overriding previous customers orders.<!-- AC-13917 -->
 
 * **Fix for CVE-2025-47110**—Resolves an email templates vulnerability.<!-- AC-14695 -->
 

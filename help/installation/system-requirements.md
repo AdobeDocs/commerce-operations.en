@@ -17,6 +17,8 @@ The following tables show versions of third-party software dependencies that Ado
 
 Adobe only supports the combination of system requirements described in the following tables. For example, 2.4.5 is fully tested with MariaDB 10.4. Adobe recommends that you upgrade to MariaDB 10.4 before upgrading to 2.4.5.
 
+To ensure a smooth upgrade process and prevent deployment failures, Adobe recommends upgrading RabbitMQ versions incrementally. For example, when upgrading from version 3.8 to 4.1, you should first upgrade from 3.8 to 3.9, then from 3.9 to 3.10, and so on. Only after reaching version 3.13 should you proceed with the upgrade to version 4.1.
+
 >[!BEGINTABS]
 
 >[!TAB Commerce on Cloud]

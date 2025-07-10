@@ -784,7 +784,7 @@ feature: Configuration
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.63](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview.md)
            - [ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles.md)
            - [ACSD-65195: GraphQL createCompany mutation returns an error for a country without a required region](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany.md) 
-           - [ACSD-64753: Pre-selected store in "Pickup in Store" doesn't update when shipping address changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
+           - [ACSD-64753: Pre-selected store in "Pickup in Store" does not update when shipping address changes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
         - v1.1.64 {#v1-1-64}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
            - [ACSD-65684: Upgrading Magento_Company in B2B 1.5.2 is slow with over 100,000 records in company_structure](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
@@ -799,6 +799,16 @@ feature: Configuration
         - v1.1.65 {#v1-1-65}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.65](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/overview.md)
            - [ACSD-64118: Concurrent product save requests for same product cause data inconsistency and duplicate entries](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64118-concurrent-product-save-requests-for-same-product-cause-data-inconsistency-and-duplicate-entries.md)
+           - [ACSD-65254: Email notification not sent after updating customer email via updateCustomerEmail [!DNL GraphQL] mutation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65254-email-notification-not-sent-after-updating-customer-email-via-updatecustomeremail-graphql-mutation.md)
+           - [ACSD-64813: Unassigning categories in [!DNL B2B] shared catalog via REST API is slow](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64813-unassigning-categories-in-b2b-shared-catalog-via-rest-api-is-slow.md)
+           - [ACSD-65822: Bundle and configurable product quantities not reflected correctly in the [!UICONTROL Shopping Cart]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65822-bundle-and-configurable-product-quantities-not-reflected-correctly-in-shopping-cart.md)
+           - [ACP2E-3753: Stock alert emails not using store-specific theme templates in multi-store setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup.md)
+           - [ACSD-65202: [!UICONTROL My Account] page doesn't show recent orders from other store views](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65202-my-account-page-doesnt-show-recent-orders-from-other-store-views.md)
+           - [ACSD-66093: Guest customer name fields allow email input causing invalid order emails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails.md)
+        - v1.1.66 {#v1-1-66}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
+           - [ACSD-65775: Incorrect base_row_total and row_total values in REST API order details for multiple quantities](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities.md)
+           - [ACP2E-3789: Media files duplicated on product update via WebAPI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-media-files-duplicated-on-product-update-via-webapi.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)

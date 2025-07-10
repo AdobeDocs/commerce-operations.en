@@ -4,6 +4,7 @@ description: Apply the ACSD-60804 patch to fix the Adobe Commerce issue where ed
 feature: Companies, Customers, B2B
 role: Admin, Developer
 exl-id: 09241160-f5ed-41f8-8bb6-2bb8ed5cccd5
+type: Troubleshooting
 ---
 # ACSD-60804: Editing a customer associated with a deleted company results in an error
 

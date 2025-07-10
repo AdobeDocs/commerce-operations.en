@@ -2,6 +2,7 @@
 title: 'ACSD-50813: Admin unable to add bundled products containing a slash'
 description: Apply the ACSD-50813 patch to fix the Adobe Commerce performance issue where the admin cannot add bundled products containing a slash mark (`/`) in the SKU with the *Add Products by SKU* functionality to the admin order.
 exl-id: ff6fa673-bac1-4ef8-a427-60c2f56068f3
+type: Troubleshooting
 ---
 # ACSD-50813: Admin unable to add bundled products containing a slash
 
@@ -60,7 +61,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

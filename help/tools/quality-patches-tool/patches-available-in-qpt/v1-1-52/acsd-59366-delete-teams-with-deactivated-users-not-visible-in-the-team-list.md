@@ -4,6 +4,7 @@ description: Apply the ACSD-59366 patch to fix the Adobe Commerce issue where an
 feature: GraphQL, Companies
 role: Admin, Developer
 exl-id: 406d2242-38f9-4852-b311-0ee57c4a7c26
+type: Troubleshooting
 ---
 # ACSD-59366: Delete teams with deactivated users not visible in the team list
 

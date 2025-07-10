@@ -38,6 +38,10 @@ The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage ser
 
 ## Configure Nginx
 
+>[!NOTE]
+>
+>This approach is not applicable to Adobe Commerce on cloud infrastructure projects. Nginx cannot be configured on Adobe Commerce on cloud infrastructure. See the [cloud-specific documentation](cloud-support.md) for more information.
+
 Nginx requires additional configuration to perform Authentication with the `proxy_pass` directive. Add the following proxy information to the `nginx.conf` file:
 
 >nginx.conf

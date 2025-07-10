@@ -4,10 +4,11 @@ description: This article provides a solution for the issue where users get an i
 feature: Orders, Returns
 role: Admin
 exl-id: 67740003-a71e-41bf-afda-ca3e32290115
+type: Troubleshooting
 ---
 # ACSD-46520: Incorrect order status when refunded using store credits
 
-The ACSD-46520 patch solves the issue where users get an incorrect order status when refunded using store credits. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 is installed. The patch ID is ACSD-46520. Please note that the issue was fixed in Adobe Commerce 2.4.5.
+The ACSD-46520 patch solves the issue where users get an incorrect order status when refunded using store credits. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20 is installed. The patch ID is ACSD-46520. Please note that the issue was fixed in Adobe Commerce 2.4.5.
 
 ## Affected products and versions
 
