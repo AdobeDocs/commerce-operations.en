@@ -108,29 +108,154 @@ Complete the following steps before deploying GraphQL Application Server on Star
 
    ```
 
+1. Uncomment the `files` section in the `.magento/services.yaml` file.
+
+   ```yaml
+   files:
+       type: network-storage:2.0
+       disk: 5120
+   ```
+
+1. Uncomment the `TEMPORARY SHARED MOUNTS` part of the mounts configuration in the `.magento.app.yaml` file.
+
+   ```yaml
+   "var_shared":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc_shared":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media_shared":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static_shared":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
 1. Add updated files to the git index:
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
-1. Commit your changes:
+1. Commit your changes and push them to trigger a deployment:
 
    ```bash
-   git commit -m "AppServer Enabled"
+   git commit -m "Enabling AppServer: initial changes"
+   git push
+   ```
+
+1. Use SSH to log in to the remote cloud environment (_not_ the `application-server` app):
+
+   ```bash
+   magento-cloud ssh -p <project-ID> -e <environment-ID>
+   ```
+
+1. Sync the data from the local mounts to the shared mounts:
+
+   ```bash
+   rsync -avz var/* var_shared/
+   rsync -avz app/etc/* app/etc_shared/
+   rsync -avz pub/media/* pub/media_shared/
+   rsync -avz pub/static/* pub/static_shared/
+   ```
+
+1. Comment out the `DEFAULT MOUNTS` and the `TEMPORARY SHARED MOUNTS` parts of the mounts configuration in the `.magento.app.yaml` file.
+
+   ```yaml
+   #"var": "shared:files/var"
+   #"app/etc": "shared:files/etc"
+   #"pub/media": "shared:files/media"
+   #"pub/static": "shared:files/static"
+   
+   #"var_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "var"
+   #"app/etc_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "etc"
+   #"pub/media_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "media"
+   #"pub/static_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "static"
+   ```
+
+1. Uncomment the `OLD LOCAL MOUNTS` and the `SHARED MOUNTS` parts of the mounts configuration in the `.magento.app.yaml` file.
+
+   ```yaml
+   "var_old": "shared:files/var"
+   "app/etc_old": "shared:files/etc"
+   "pub/media_old": "shared:files/media"
+   "pub/static_old": "shared:files/static"
+   
+   "var":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
+1. Add the updated file to the git index, commit changes, and push to trigger a deployment:
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: switch mounts"
+   git push
+   ```
+
+1. Ensure files from `*_old` directories are present in the actual directories.
+
+1. Cleanup old local mounts:
+
+   ```bash
+   rm -rf var_old/*
+   rm -rf app/etc_old/*
+   rm -rf pub/media_old/*
+   rm -rf pub/static_old/*
+   ```
+
+1. Comment out the `OLD LOCAL MOUNTS` part of the mounts configuration in the `.magento.app.yaml` file.
+
+    ```yaml
+    #"var_old": "shared:files/var"
+    #"app/etc_old": "shared:files/etc"
+    #"pub/media_old": "shared:files/media"
+    #"pub/static_old": "shared:files/static"
+    ```
+
+1. Add the updated file to the git index, commit changes, and push to trigger a deployment:
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: finish"
+   git push
    ```
 
 >[!NOTE]
 >
 >Ensure that all custom settings in your root `.magento.app.yaml` file are appropriately migrated to the `application-server/.magento/.magento.app.yaml` file. After the `application-server/.magento/.magento.app.yaml` file is added to your project, you should maintain it in addition to the root `.magento.app.yaml` file. For example, if you need to [configure the RabbitMQ service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) or [manage web properties](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) you should add the same configuration to `application-server/.magento/.magento.app.yaml` as well.
-
-### Deploy Starter projects
-
-After completing the enablement [steps](#before-you-begin-a-cloud-starter-deployment), push changes to your Git repository to deploy GraphQL Application Server:
-
-```bash
-git push
-```
 
 ### Verify enablement on cloud projects
 
