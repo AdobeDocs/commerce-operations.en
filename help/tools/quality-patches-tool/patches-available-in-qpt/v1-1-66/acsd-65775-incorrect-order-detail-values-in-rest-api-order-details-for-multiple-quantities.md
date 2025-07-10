@@ -4,8 +4,8 @@ description: Apply the ACSD-65775 patch to fix the Adobe Commerce issue where th
 feature: REST
 role: Admin, Developer
 type: Troubleshooting
+exl-id: c2a8f4ef-3998-4e73-af9e-69b17a10d684
 ---
-
 # ACSD-65775: Incorrect `base_row_total` and `row_total` values in REST API order details for multiple quantities
 
 The ACSD-65775 patch fixes the issue where the REST API order details return incorrect `base_row_total` and `row_total` values when multiple quantities of the same item are ordered. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65775. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
