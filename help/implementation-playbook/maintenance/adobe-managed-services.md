@@ -33,20 +33,21 @@ Review the following table for a more detailed comparison of key Managed Service
 
 | Feature | Adobe Commerce on-premises | Adobe Commerce on Cloud | Adobe Commerce on Managed Services |
 |---------|---------------------------|-------------------------|-----------------------------------|
-| Adobe's Enterprise Software | ✓ | ✓ | ✓ |
-| Secure & dedicated cloud infrastructure | | ✓ | ✓ |
-| Enhanced Incident Service Level Target | | P1: 1 hour | P1: 15 minutes |
-| Surge Capacity Monitoring & Response | | | ✓ |
-| Infrastructure Security | | | ✓ |
-| Infrastructure level 99.99% SLA | | | ✓ |
-| Application level 99.9% SLA | | | |
-| Designated infrastructure expert resource (Customer Success Engineer) | | | |
-| Planned event management | | | |
-| Customized site monitoring and personalized runbook | | | |
-| Upgrade & Patching Deployment Assistance | | | |
-| Go-live process coordination | | | |
-| Dedicated escalation management | | | |
-| Application monitoring and assistance | | | |
+| Adobe's enterprise software | ✓ | ✓ | ✓ |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| Secure & dedicated cloud infrastructure | | ✓ P1: 1 hour | ✓ P1: 15 minutes |
+| Enhanced incident service level target | | ✓ | ✓ |
+| Surge capacity monitoring & response | | ✓ | ✓ |
+| Infrastructure security | | ✓ | ✓ |
+| Infrastructure level 99.99% SLA | | ✓ | ✓ |
+| Application level 99.9% SLA | | | ✓ |
+| Designated infrastructure expert resource (Customer Success Engineer) | | | ✓ |
+| Planned event management | | | ✓ |
+| Customized site monitoring & personalized runbook | | | ✓ |
+| Upgrade & patching deployment assistance | | | ✓ |
+| Go-live process coordination | | | ✓ |
+| Dedicated escalation management | | | ✓ |
+| Application monitoring and assistance | | | ✓ |
 
 ## Roles and responsibilities
 
