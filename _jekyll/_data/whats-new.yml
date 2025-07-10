@@ -2,8 +2,78 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jun 24 02:20:54 2025
+updated: Thu Jul 10 20:42:28 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-65775
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities).
+  versions: ''
+  type: new-topic, qpt
+  date: July 10, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1442
+  merge_commit: b6c4c0432e81fc6a91c205d0d8829074e30a9457
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added additional information about [enabling the Application Server](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/concepts/application-server)
+    for Adobe Commerce on Cloud Starter projects. In particular, it adds steps for
+    syncing stored data to the shared mount.
+  versions: ''
+  type: major-update
+  date: July 9, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1453
+  merge_commit: db41694a0b50d9517783dcb3a64fcaf60b18e1db
+  contributor: horytsky
+  membership:
+  labels:
+  - major-update
+- description: Added the [detailed description of the issue fixed by the ACP2E-3789
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-media-files-duplicated-on-product-update-via-webapi).
+  versions: ''
+  type: new-topic, qpt
+  date: July 4, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1439
+  merge_commit: e6b0d4c07efc18f5abfba406e60bdad0f039e6b1
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Published [release notes](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)
+    for the 1.1.67 Quality Patches Tool (QPT) package release.
+  versions: ''
+  type: technical
+  date: June 27, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1448
+  merge_commit: 9c37702371b990a90fba735b90fe2f95a85c3c78
+  contributor: poltorat
+  membership:
+  labels:
+  - technical
+- description: Added [Overview](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview)
+    for the Quality Patches Tool (QPT) v1.1.66.
+  versions: ''
+  type: new-topic, qpt
+  date: June 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1438
+  merge_commit: 715656a5f97b8c45395cb84b09b8b621133c07b1
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added instructions for [configuring Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey)
+    for Adobe Commerce.
+  versions: ''
+  type: new-topic
+  date: June 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1433
+  merge_commit: b57376c4edec06bf0f1565b64e0966ed81a66962
+  contributor: jmatthew
+  membership:
+  labels:
+  - new-topic
 - description: Added the [detailed description of the issue fixed by the ACP2E-3753
     patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup).
   versions: ''
