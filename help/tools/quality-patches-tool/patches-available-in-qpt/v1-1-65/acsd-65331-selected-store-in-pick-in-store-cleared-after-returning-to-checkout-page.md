@@ -31,7 +31,7 @@ The selected store under the **[!UICONTROL Pick In Store]** option is cleared wh
 <u>Steps to reproduce</u>:
 
 1. Enable **[!UICONTROL In-Store Delivery]** by navigating to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**.
-1. Configure a valid [!DNL Google] API key for [!DNL Google Distance Provider] by navigating to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]**.
+1. Configure a valid [!DNL Google] API key for [!UICONTROL Google Distance Provider] by navigating to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]**.
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]** to add a new source with the following details:
 
     * *[!UICONTROL Latitude]: 41.917344*
