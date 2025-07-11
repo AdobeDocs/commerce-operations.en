@@ -51,7 +51,7 @@ The selected store under the **[!UICONTROL Pick In Store]** option is cleared wh
     1. Assign it to the newly created source.
     1. Set its status to *[!UICONTROL In Stock]* and quantity to greater than 0.
 
-1. Run all indexers.
+1. Run your reindexers.
 1. On the storefront, create a new customer and set a California address as the default billing and shipping address.
 1. Add an additional Illinois address to the same customer (non-default).
 1. Add the configured product to the cart and proceed to **[!UICONTROL Checkout]**.
