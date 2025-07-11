@@ -62,11 +62,11 @@ Concurrent requests to save and update the same product result in data inconsist
 <u>Expected results</u>:
 
 * A single entry for the product SKU should be present in the `catalog_product_entity` table.
-* The first REST API request should create one database entry, and all subsequent requests should update the database entry.
+* The first REST API request should create one database entry, and all subsequent requests should update that database entry.
 
 <u>Actual results</u>:
 
-Multiple entries for the same SKU are present in `catalog_product_entity` table.
+Multiple entries for the same SKU are present in the `catalog_product_entity` table.
 
 ## Apply the patch
 
