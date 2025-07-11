@@ -4,8 +4,8 @@ description: Apply the ACSD-64118 patch to fix the Adobe Commerce issue where co
 feature: REST
 role: Admin, Developer
 type: Troubleshooting
+exl-id: e014645e-72b2-4b3d-8b44-3daca502c950
 ---
-
 # ACSD-64118: Concurrent product save requests for same product cause data inconsistency and duplicate entries
 
 The ACSD-64118 patch fixes the issue where concurrent requests to save and update the same product result in data inconsistency or duplicated products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-64118. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
