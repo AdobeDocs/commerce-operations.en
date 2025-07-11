@@ -4,8 +4,8 @@ description: Apply the ACSD-65331 patch to fix the Adobe Commerce issue where th
 feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
 ---
-
 # ACSD-65331: Selected store in **[!UICONTROL Pick in Store]** cleared after returning to checkout
 
 The ACSD-65331 patch fixes the issue where the selected store under the **[!UICONTROL Pick In Store]** option is cleared when users repeatedly return to the checkout page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65 is installed. The patch ID is ACSD-65331. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
