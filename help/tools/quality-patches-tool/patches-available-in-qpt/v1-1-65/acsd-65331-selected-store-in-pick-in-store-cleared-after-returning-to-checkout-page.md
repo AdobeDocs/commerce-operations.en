@@ -34,14 +34,14 @@ The selected store under the **[!UICONTROL Pick In Store]** option is cleared wh
 1. Configure a valid [!DNL Google] API key for [!UICONTROL Google Distance Provider] by navigating to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]**.
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]** to add a new source with the following details:
 
-    * *[!UICONTROL Latitude]: 41.917344*
-    * *[!UICONTROL Longitude]: -88.102569*
-    * *[!UICONTROL Use as Pickup Location]: Yes*
-    * *[!UICONTROL Country]: United States*
-    * *[!UICONTROL State]: Illinois*
-    * *[!UICONTROL City]: Carol Stream*
-    * *[!UICONTROL Street]: 565 E. Fullerton Ave.*
-    * *[!UICONTROL Postcode]: 60188*
+    * **[!UICONTROL Latitude]**: *41.917344*
+    * **[!UICONTROL Longitude]**: *-88.102569*
+    * **[!UICONTROL Use as Pickup Location]**: *Yes*
+    * **[!UICONTROL Country]**: *United States*
+    * **[!UICONTROL State]**: *Illinois*
+    * **[!UICONTROL City]**: *Carol Stream*
+    * **[!UICONTROL Street]**: *565 E. Fullerton Ave.*
+    * **[!UICONTROL Postcode]**: *60188*
 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Stocks]** > **[!UICONTROL Add New Stock]** to create a new stock.
 
