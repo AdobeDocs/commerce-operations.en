@@ -805,6 +805,7 @@ feature: Configuration
            - [ACP2E-3753: Stock alert emails not using store-specific theme templates in multi-store setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup.md)
            - [ACSD-65202: [!UICONTROL My Account] page doesn't show recent orders from other store views](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65202-my-account-page-doesnt-show-recent-orders-from-other-store-views.md)
            - [ACSD-66093: Guest customer name fields allow email input causing invalid order emails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails.md)
+           - [ACSD-65331: Selected store in [!UICONTROL Pick in Store] cleared after returning to checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page.md)
         - v1.1.66 {#v1-1-66}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
            - [ACSD-65775: Incorrect base_row_total and row_total values in REST API order details for multiple quantities](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities.md)
