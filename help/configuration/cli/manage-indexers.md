@@ -258,16 +258,16 @@ Stores Feed:                                       Update by Schedule
 >   Use the following command to set this indexer to update on save:
 >
 >   ```bash
->   php bin/magento indexer:set-mode realtime customer_grid
+>   bin/magento indexer:set-mode realtime customer_grid
 >   ```
 >
 >- **2.4.8 and later**: The [!DNL Customer Grid] indexer supports both [!UICONTROL Update on Save] and [!UICONTROL Update by Schedule] modes, and defaults to [!UICONTROL Update by Schedule].
 >
->See [Best practices for indexer configuration](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) in the _Implementation Playbook_.
+>See [Best practices for indexer configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) in the _Implementation Playbook_.
 
 >[!INFO]
 >
->Before switching indexer modes, set your website to [maintenance](../../installation/tutorials/maintenance-mode.md) mode and [disable cron jobs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). This ensures you do not suffer database locks.
+>Before switching indexer modes, set your website to [maintenance](../../installation/tutorials/maintenance-mode.md) mode and [disable cron jobs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). This ensures you do not experience database locks.
 
 To specify the indexer configuration:
 
@@ -330,13 +330,13 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 When an indexer is set to a `suspended` status, it primarily affects automatic reindexing and materialized view updates. Here's a brief overview:
 
-**Reindexing Skipped**: Automatic reindexing is bypassed for `suspended` indexers and any indexers sharing the same `shared_index`. This ensures system resources are conserved by not reindexing data related to suspended processes.
+**Reindexing Skipped**: The system skips automatic reindexing for `suspended` indexers and any indexers that share the same `shared_index`. This approach conserves system resources by avoiding reindexing data related to suspended processes.
 
-**Materialized View Updates Skipped**: Similar to reindexing, updates to materialized views related to `suspended` indexers or their shared indexes are also paused. This action further reduces system load during suspension periods.
+**Materialized View Updates Skipped**: Similar to reindexing, the system also pauses updates to materialized views related to `suspended` indexers or their shared indexes. This pause further reduces system load during suspension periods.
 
 >[!INFO]
 >
->The `indexer:reindex` command reindexes all indexers, including those marked as `suspended`, making it useful for manual updates when automatic ones are paused.
+>The `indexer:reindex` command reindexes all indexers, including indexers marked as `suspended`, making it useful for manual updates when automatic ones are paused.
 
 >[!IMPORTANT]
 >
