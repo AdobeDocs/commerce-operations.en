@@ -11,6 +11,8 @@ The [Amazon Simple Storage Service (Amazon S3)][AWS S3] is an object storage ser
 >[!WARNING]
 >
 >Adobe highly discourages the use of public buckets because it poses a serious security risk.
+>
+>When using a customer-provided S3 bucket for asset or media storage, Adobe is not responsible for, and does not provide support for, any issues, data loss, or outages related to the configuration, management, or operation of the S3 bucket. All troubleshooting and maintenance of the S3 bucket is the sole responsibility of the customer.
 
 **To enable remote storage with the AWS S3 adapter**:
 
