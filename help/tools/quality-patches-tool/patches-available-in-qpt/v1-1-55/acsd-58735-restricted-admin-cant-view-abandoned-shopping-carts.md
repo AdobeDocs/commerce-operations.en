@@ -4,6 +4,7 @@ description: Apply the ACSD-58735 patch to fix the Adobe Commerce issue where a 
 feature: Shopping Cart, Admin Workspace, Customers
 role: Admin, Developer
 exl-id: b5dcc12f-325d-4de5-bae5-ff938ec77b13
+type: Troubleshooting
 ---
 # ACSD-58735: Restricted admin can’t view abandoned shopping carts on customer account  for associated website
 

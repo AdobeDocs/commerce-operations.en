@@ -4,6 +4,7 @@ description: Apply the ACSD-50887 patch to fix the Adobe Commerce issue where th
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
 exl-id: 5e797121-c386-4aca-9139-0a02a60be38a
+type: Troubleshooting
 ---
 # ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]* set to *Yes* without the *[!UICONTROL Use in Search]* option
 
@@ -79,7 +80,7 @@ To apply individual patches, use the following links depending on your deploymen
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in the support knowledge base.
+* [[!DNL Quality Patches Tool] released: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in the support knowledge base.
 * [Check if patch is available for your Adobe Commerce issue using [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) in the [!UICONTROL Quality Patches Tool] guide.
 
 

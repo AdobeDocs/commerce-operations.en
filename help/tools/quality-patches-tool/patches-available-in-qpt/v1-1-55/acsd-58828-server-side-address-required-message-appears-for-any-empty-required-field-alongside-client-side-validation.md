@@ -4,6 +4,7 @@ description: Apply the ACSD-58828 patch to fix the Adobe Commerce issue where th
 feature: Shipping/Delivery, Checkout
 role: Admin, Developer
 exl-id: 6c19773d-cb75-409f-bbd7-78d285a0252a
+type: Troubleshooting
 ---
 # ACSD-58828: Server-side *address is required* message appears for any empty required field, alongside client-side validation
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-62481 patch to fix the Adobe Commerce issue where th
 feature: Shopping Cart, Checkout
 role: Admin, Developer
 exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
+type: Troubleshooting
 ---
 # ACSD-62481: Shopping cart remains empty even with *[!UICONTROL Persistence]* enabled
 

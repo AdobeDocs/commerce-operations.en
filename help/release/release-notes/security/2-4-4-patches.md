@@ -10,7 +10,7 @@ exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
 
 ## 2.4.4-p14
 
-The Adobe Commerce 2.4.4-p14 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4.
+Adobe Commerce 2.4.4-p14 is an extended support security release that provides security bug fixes for vulnerabilities identified in previous releases of 2.4.4. It is available for Adobe Commerce customers only.
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
@@ -18,7 +18,17 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
+This release includes the following highlights:
+
+* **API performance enhancement**—Resolves performance degradation in bulk asynchronous web API endpoints that were introduced after the previous security patch.<!-- AC-14078 -->
+
+* **CMS Blocks access fix**—Resolves an issue where Admin users with restricted permissions (such as merchandising-only access) were unable to view the [!UICONTROL CMS Blocks] listing page. 
+
+  Previously, these users encountered an error due to missing configuration parameters after installing previous security patches.<!-- AC-14087 -->
+
+* **Cookie limit compatibility**—Resolves a backward-incompatible change involving the `MAX_NUM_COOKIES` constant in the framework. This update restores expected behavior and ensures compatibility for extensions or customizations that interact with cookie limits.<!-- AC-14475 -->
+
+* **Async operations**—Restricted async operations for overriding previous customers orders.<!-- AC-13917 -->
 
 ## 2.4.4-p13
 
@@ -176,7 +186,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 ## 2.4.4-p2
 
-The Adobe Commerce 2.4.4-p2 security release provides fixes for vulnerabilities that have been identified in previous releases. One fix includes the creation of a new configuration setting. The **Require email confirmation if email has been changed** configuration setting lets administrators require email confirmation when an admin user changes their email address. <!-- AC-6292-->
+The Adobe Commerce 2.4.4-p2 security release provides fixes for vulnerabilities that have been identified in previous releases. One fix includes the creation of a new configuration setting. The [!UICONTROL **Require email confirmation if email has been changed**] configuration setting lets administrators require email confirmation when an admin user changes their email address. <!-- AC-6292-->
 
 For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 

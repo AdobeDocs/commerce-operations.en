@@ -4,6 +4,7 @@ description: Apply the ACSD-60684 patch to fix the Adobe Commerce issue where [!
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: 1c29299b-c85f-4166-886b-357a1486e67e
+type: Troubleshooting
 ---
 # ACSD-60684: [!DNL GraphQL] product sorting by multiple fields does not work as expected
 

@@ -4,6 +4,7 @@ description: Apply the ACSD-61969 patch to fix the Adobe Commerce issue where a 
 feature: Price Rules
 role: Admin, Developer
 exl-id: 4bdf797b-2570-49f8-8e03-952b49ed1d18
+type: Troubleshooting
 ---
 # ACSD-61969: Required to type coupon code as configured in uppercase or lowercase
 

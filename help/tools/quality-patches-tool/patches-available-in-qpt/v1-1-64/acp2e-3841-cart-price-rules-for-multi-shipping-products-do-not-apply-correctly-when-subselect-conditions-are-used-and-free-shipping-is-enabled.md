@@ -4,6 +4,7 @@ description: Apply the ACP2E-3841 patch to fix the Adobe Commerce issue where ca
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
 exl-id: 73979b71-9b15-4a4b-a1c9-37d3213c177f
+type: Troubleshooting
 ---
 # ACP2E-3841: Cart price rules for multi-shipping products do not apply correctly when subselect conditions are used and free shipping is enabled
 

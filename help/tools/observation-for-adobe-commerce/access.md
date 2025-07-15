@@ -8,6 +8,8 @@ feature: Configuration, Observability
 
 To use the [!DNL New Relic Observation for Adobe Commerce] nerdlet, ensure you have access to [!DNL New Relic].
 
+[New Relic account management](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+
 Then from the [!DNL New Relic] home page, select the Apps menu item.
 
 ![New Relic home page](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)

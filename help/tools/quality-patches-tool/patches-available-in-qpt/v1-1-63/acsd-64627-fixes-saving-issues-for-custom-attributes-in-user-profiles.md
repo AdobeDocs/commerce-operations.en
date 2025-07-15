@@ -4,6 +4,7 @@ description: Apply the ACSD-64627 patch to fix the Adobe Commerce issue where cu
 feature: B2B
 role: Admin, Developer
 exl-id: 8e7dd72e-c21e-46cf-8e2b-9dccedfd8b04
+type: Troubleshooting
 ---
 # ACSD-64627: Unable to save custom customer attributes in [!UICONTROL Company Structure]
 
