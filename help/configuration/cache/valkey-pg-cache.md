@@ -18,6 +18,7 @@ Run the `setup:config:set` command and specify parameters for Valkey default cac
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
+
 - `--cache-backend=valkey` enables the valkey default caching. If this feature has already been enabled, omit this parameter.
 
 - `--cache-backend-valkey-<parameter>=<value>` is a list of key-value pairs that configure the default caching:

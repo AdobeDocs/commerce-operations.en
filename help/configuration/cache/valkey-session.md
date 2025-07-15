@@ -18,6 +18,7 @@ Run the `setup:config:set` command and specify Valkey-specific parameters.
 ```bash
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parameter_name>=<parameter_value>...
 ```
+
 - `--session-save=valkey` enables Valkey session storage. If this feature is already enabled, omit this parameter.
 
 - `--session-save-valkey-<parameter_name>=<parameter_value>` is a list of parameter/value pairs that configure session storage:
