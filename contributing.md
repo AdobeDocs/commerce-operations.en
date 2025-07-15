@@ -12,7 +12,7 @@ you are expected to uphold this code. Please report unacceptable behavior to
 
 ## Contributor Guide Documentation
 
-See the [Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+See the [Contributor Guide](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 ## Have A Question?
 
@@ -24,14 +24,14 @@ consensus around project direction and issue solutions within issue threads
 
 All third-party contributions to this project must be accompanied by a signed contributor
 license agreement. This gives Adobe permission to redistribute your contributions
-as part of the project. [Sign our CLA](http://opensource.adobe.com/cla.html). You
+as part of the project. [Sign our CLA](https://opensource.adobe.com/cla.html). You
 only need to submit an Adobe CLA one time, so if you have submitted one previously,
 you are good to go!
 
 ## Code Reviews
 
 All submissions should come in the form of pull requests and need to be reviewed
-by project committers. Read [GitHub's pull request documentation](https://help.github.com/articles/about-pull-requests/)
+by project committers. Read [GitHub's pull request documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 for more information on sending pull requests.
 
 <!--
@@ -87,7 +87,7 @@ To add a What's New highlight:
    - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/second-topic.html).
    ```
 
-1. Add supported labels that indicate the type of change. Supported labels include labels for type of change, such as:
+1. Add supported labels that indicate the type of change. Supported labels include labels for each type of change, such as:
 
    - `new-topic` - for new topics
    - `major-update` - for major updates that can include significant changes in content, structure, or functionality
