@@ -2,8 +2,43 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Thu Jul 10 20:42:28 2025
+updated: Tue Jul 15 02:21:32 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-64118
+    patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64118-concurrent-product-save-requests-for-same-product-cause-data-inconsistency-and-duplicate-entries).
+  versions: ''
+  type: new-topic, qpt
+  date: July 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1416
+  merge_commit: c99a084b9be2dfe8e600f1f0080cd117deed5bf4
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-65331
+    patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page).
+  versions: ''
+  type: new-topic, qpt
+  date: July 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1449
+  merge_commit: edcf1cfbc38b38159ec2777e99bc698754e7ae97
+  contributor: glo16024
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Clarified the default mode for the [Customer Grid indexer](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration),
+    which changed in 2.4.8.
+  versions: ''
+  type: technical
+  date: July 11, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1457
+  merge_commit: 76483e33f2259df65df6c1d6f5a0baf372c16965
+  contributor: jmatthew
+  membership:
+  labels:
+  - technical
 - description: Added the [detailed description of the issue fixed by the ACSD-65775
     patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities).
   versions: ''
