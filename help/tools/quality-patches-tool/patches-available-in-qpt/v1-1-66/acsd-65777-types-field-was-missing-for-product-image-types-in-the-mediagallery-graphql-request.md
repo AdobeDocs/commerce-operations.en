@@ -3,6 +3,7 @@ title: 'ACSD-65777: Missing "types" field for product image types in the `MediaG
 description: Apply the ACSD-65777 patch to fix the Adobe Commerce issue where the "types" field was missing for product image types in the `MediaGallery` GraphQL request.
 feature: GraphQL, Media
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-65777: Missing **[!UICONTROL types]** field for product image types in the `MediaGallery` GraphQL request
