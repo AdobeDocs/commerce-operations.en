@@ -4,8 +4,8 @@ description: Apply the ACSD-65777 patch to fix the Adobe Commerce issue where th
 feature: GraphQL, Media
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 20866963-54a3-4859-9c2d-716945e37156
 ---
-
 # ACSD-65777: Missing **[!UICONTROL types]** field for product image types in the `MediaGallery` GraphQL request
 
 The ACSD-65777 patch fixes the issue where the **[!UICONTROL types]** field was missing for product image types in the `MediaGallery` GraphQL request. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65777. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
