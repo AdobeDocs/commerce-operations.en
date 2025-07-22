@@ -4,6 +4,58 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### July 22, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request">detailed description of the issue fixed by the ACSD-65777 patch in the QPT 1.1.66 release</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b3bd37c346db10a233be1f8a121c734e8b322068">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### July 18, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66212-importing-a-customer-csv-file-twice-caused-failures-on-the-second-and-subsequent-attempts">detailed description of the issue fixed by the ACSD-66212 patch in the QPT 1.1.66 release</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/994a951e0ede7bb850685f33217ab028f044b61c">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added new <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache">Redis configuration</a> options (<code class="language-plaintext highlighter-rouge">--cache-backend-redis-use-lua</code> and <code class="language-plaintext highlighter-rouge">--cache-backend-redis-use-lua-on-gc</code>).</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/34d672617737c857a9489b4394d13ab244cf9abe">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### July 11, 2025
 
 <table style="table-layout:auto;">
@@ -502,28 +554,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6bb93ade098db81ca771616c0b694e565311b477">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### May 19, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.64 Quality Patches Tool (QPT) package release.</p>
-</td>
-      <td>
-        Major update, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/922a00af2ba6d071054b25551f6a01e78310adef">commit</a></td>
     </tr>
   </tbody>
 </table>
