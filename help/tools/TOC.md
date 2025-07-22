@@ -808,6 +808,7 @@ feature: Configuration
            - [ACSD-65331: Selected store in [!UICONTROL Pick in Store] cleared after returning to checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page.md)
         - v1.1.66 {#v1-1-66}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
+           - [ACSD-66212: Importing customer CSV file twice caused failures on second and subsequent attempts](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66212-importing-a-customer-csv-file-twice-caused-failures-on-the-second-and-subsequent-attempts.md)
            - [ACSD-65775: Incorrect base_row_total and row_total values in REST API order details for multiple quantities](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities.md)
            - [ACP2E-3789: Media files duplicated on product update via WebAPI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-media-files-duplicated-on-product-update-via-webapi.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)

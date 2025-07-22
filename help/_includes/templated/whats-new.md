@@ -4,6 +4,44 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### July 11, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64118-concurrent-product-save-requests-for-same-product-cause-data-inconsistency-and-duplicate-entries">detailed description of the issue fixed by the ACSD-64118 patch in the QPT 1.1.65 release</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c99a084b9be2dfe8e600f1f0080cd117deed5bf4">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page">detailed description of the issue fixed by the ACSD-65331 patch in the QPT 1.1.65 release</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edcf1cfbc38b38159ec2777e99bc698754e7ae97">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Clarified the default mode for the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration">Customer Grid indexer</a>, which changed in 2.4.8.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/76483e33f2259df65df6c1d6f5a0baf372c16965">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### July 10, 2025
 
 <table style="table-layout:auto;">
@@ -486,88 +524,6 @@ This page contains the changes made in the last 60 days. We exclude all minor up
         Major update, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/922a00af2ba6d071054b25551f6a01e78310adef">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### May 16, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly">detailed description of the issue fixed by the ACSD-64732 patch in the QPT 1.1.62 release</a></p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d2d6c5fb9b72dd7fcf6aed6c87568903219b5d6">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering">detailed description of the issue fixed by the ACSD-65164 patch in the QPT 1.1.62 release</a></p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bca0ae7421b4fcdeef7a11103fbc8706dd208669">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### May 14, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles">detailed description of the issue fixed by the ACSD-64627 patch in the QPT 1.1.63 release</a></p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/be26fe753a0824af8cf90db612e7c1e37febefa2">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### May 13, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">detailed description of the issue fixed by the ACSD-65195 patch in the QPT 1.1.63 release</a>.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>The <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532 patch</a> fixes the issue where the ENV variable set to false is treated as a string false instead of a BOOLEAN FALSE.</p>
-</td>
-      <td>
-        New topic, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e043fb96774c79b4d0f0b41a93fbbdbce25c5ec9">commit</a></td>
     </tr>
   </tbody>
 </table>
