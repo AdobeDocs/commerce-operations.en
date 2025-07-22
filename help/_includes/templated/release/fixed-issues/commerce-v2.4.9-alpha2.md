@@ -105,7 +105,7 @@ We have fixed 118 issues in the Adobe Commerce 2.4.9-alpha2 core code. A subset 
   This PR Change a loop variable name to correctly add the &quot;_cache_instance_product_ids&quot; data on the given product to be used on subsequent calls.
   _AC-14159 - [GitHub issue](https://github.com/magento/magento2/issues/39641) - [GitHub code contribution](https://github.com/magento/magento2/pull/39642)_
 * __[Mainline] [CLOUD] Image Resizing consumes over 400GB of disk space__
-  After the fix, the catalog:images:resize command used with --skip_hidden_images flag will not generate image caches for websites where images are not present.
+  After the fix, the `catalog:images:resize` command used with --skip_hidden_images flag will not generate image caches for websites where images are not present.
   _ACP2E-3869 - [GitHub code contribution](https://github.com/magento/magento2/commit/9ad7d277)_
 * __Provided CountryID Does not Exist - Ireland (IE)__
   After the fix, Ireland postcodes are available to search for pickup locations.
@@ -205,7 +205,7 @@ We have fixed 118 issues in the Adobe Commerce 2.4.9-alpha2 core code. A subset 
 * __Magnifier.js syntax error__
   The system Magnifier functionality should keep working the way it worked before and magnifierOptions should not be available in global scope
   _AC-14722 - [GitHub issue](https://github.com/magento/magento2/issues/36200) - [GitHub code contribution](https://github.com/magento/magento2/pull/39321)_
-* __Backport Verbose Mode in setup:db:status CLI command__
+* __Backport Verbose Mode in `setup:db:status` CLI command__
   _AC-14807 - [GitHub code contribution](https://github.com/magento/magento2/commit/7bdafaa2)_
 * __SMTP mail send with tls and 2.4.8__
   _AC-14883 - [GitHub issue](https://github.com/magento/magento2/issues/39947) - [GitHub code contribution](https://github.com/magento/magento2/commit/3717e6cb) - [GitHub code contribution](https://github.com/magento/magento2/commit/8b453942) - [GitHub code contribution](https://github.com/magento/magento2/commit/d3ea191d)_
