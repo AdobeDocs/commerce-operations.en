@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-65750: GraphQL "route" query returns products out of order in [!DNL Page Builder] Products content type'
+title: 'ACSD-65750: [!DNL GraphQL] "route" query returns products out of order in [!DNL Page Builder] Products content type'
 description: Apply the ACSD-65750 patch to fix the Adobe Commerce issue where the GraphQL "route" query returns products out of order in [!DNL Page Builder] Products content type.
 feature: GraphQL, Page Builder, Products
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-65750: GraphQL "route" query returns products out of order in [!DNL Page Builder] Products content type
+# ACSD-65750: [!DNL GraphQL] "route" query returns products out of order in [!DNL Page Builder] Products content type
 
-The ACSD-65750 patch fixes the issue where the GraphQL "route" query returns products out of order in [!DNL Page Builder] Products content type. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65750. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65750 patch fixes the issue where the [!DNL GraphQL] "route" query returns products out of order in [!DNL Page Builder] Products content type. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65750. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,7 +26,7 @@ The ACSD-65750 patch fixes the issue where the GraphQL "route" query returns pro
 
 ## Issue
 
-The GraphQL "route" query doesn't return products in the correct sort order when using the [!DNL Page Builder] Products content type.
+The [!DNL GraphQL] "route" query doesn't return products in the correct sort order when using the [!DNL Page Builder] Products content type.
 
 <u>Steps to reproduce</u>:
 
@@ -42,7 +43,7 @@ The GraphQL "route" query doesn't return products in the correct sort order when
     * **[!UICONTROL Sort By]**: *Position*
 1. Switch to the **[!UICONTROL Search Engine Optimization]** tab, and set the **[!UICONTROL URL Key]** to *test-widget*.
 1. Save the page.
-1. Make the following GraphQL request:
+1. Make the following [!DNL GraphQL] request:
 
 ```
 query {
@@ -70,11 +71,11 @@ query {
 
 <u>Expected results</u>:
 
-The products should be returned in the order defined by their category position.
+The system returns products in the order defined by their category position.
 
 <u>Actual results</u>:
 
-The products are not ordered by category position in the GraphQL response.
+The system returns products in an order that does not match their category position in the GraphQL response.
 
 ## Apply the patch
 
