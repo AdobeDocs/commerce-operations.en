@@ -21,9 +21,9 @@ The general installation flow is as follows:
 
 1. Get the Adobe Commerce software.
 
-   *  (Recommended) Get the [Composer metapackage](composer.md) to manage modules and their dependencies.
+   * (Recommended) Get the [Composer metapackage](composer.md) to manage modules and their dependencies.
 
-   *  If you want to contribute to the Magento Open Source codebase or customize the application, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) the GitHub repository. This method requires familiarity with both GitHub and Composer.
+   * If you want to contribute to the Magento Open Source codebase or customize the application, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) the GitHub repository. This method requires familiarity with both GitHub and Composer.
 
 1. Install the application using the command line.
 
