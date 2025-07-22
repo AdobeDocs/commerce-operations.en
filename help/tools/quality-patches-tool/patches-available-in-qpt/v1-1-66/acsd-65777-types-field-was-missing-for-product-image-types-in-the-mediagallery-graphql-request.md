@@ -31,7 +31,7 @@ The **[!UICONTROL types]** field is missing for product image types when fetchin
 <u>Steps to reproduce</u>:
 
 1. Create a product.
-1. Upload image to the product.
+1. Upload an image to the product.
 1. Fetch the media data using the following GraphQL.
 
     ```
