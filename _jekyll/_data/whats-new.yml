@@ -2,8 +2,43 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jul 15 02:21:32 2025
+updated: Tue Jul 22 21:07:39 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-65777
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request).
+  versions: ''
+  type: new-topic, qpt
+  date: July 22, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1443
+  merge_commit: b3bd37c346db10a233be1f8a121c734e8b322068
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-66212
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66212-importing-a-customer-csv-file-twice-caused-failures-on-the-second-and-subsequent-attempts).
+  versions: ''
+  type: new-topic, qpt
+  date: July 18, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1447
+  merge_commit: 994a951e0ede7bb850685f33217ab028f044b61c
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added new [Redis configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache)
+    options (`--cache-backend-redis-use-lua` and `--cache-backend-redis-use-lua-on-gc`).
+  versions: ''
+  type: technical
+  date: July 18, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1450
+  merge_commit: 34d672617737c857a9489b4394d13ab244cf9abe
+  contributor: soumah
+  membership:
+  labels:
+  - technical
 - description: Added the [detailed description of the issue fixed by the ACSD-64118
     patch in the QPT 1.1.65 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64118-concurrent-product-save-requests-for-same-product-cause-data-inconsistency-and-duplicate-entries).
   versions: ''
