@@ -1,0 +1,18 @@
+Issue key,Summary,Custom field (Release Note),Custom field (Git Pull Request),Custom field (External Issue URL),Components,is_magento
+AC-11846,Add support for OpenSearch 3,"","","",Framework,false
+AC-12971,[2.4.9-alpha2] Platform Component Upgrade,"","","",Framework,false
+AC-13257,Migrate USPS integration from outdated Web Tools APIs to new RESTful USPS APIs,"","","",Shipping,false
+AC-14104,Update Nginx version from 1.26 to 1.28,"","","",Framework,false
+AC-14403,Investigate the latest version jquery-validate,Investigate the latest version jquery-validate:1.21.0,https://github.com/magento/magento2/commit/98b2848a,"",Framework,true
+AC-14417,Investigate the latest version jquery-ui,Investigate the latest version jquery-ui:1.14.1,https://github.com/magento/magento2/commit/77c589a6,"",Framework,true
+AC-14418,Investigate the latest version less.js,Investigate the latest version 4.2.2 less.js,https://github.com/magento/magento2/commit/98b2848a,"",Framework,true
+AC-14419,Investigate the latest version moment-timezone-with-data.js,Investigate the latest version moment-timezone-with-data.js,https://github.com/magento/magento2/commit/98b2848a,"",Framework,true
+AC-14420,Investigate the latest version underscore.js,Investigate the latest version underscore.js,https://github.com/magento/magento2/commit/98b2848a,"",Framework,true
+AC-14482,Ensure the latest version of Chrome is used for all Adobe Commerce versions builds,"","","",Framework,false
+AC-14568,Migrate from TinyMCE to Hugerte.org,"","","",Framework,false
+AC-14569,reCAPTCHA Classic depreciation and migration to Google Cloud,"","","",Framework,false
+AC-14604,Add Full Valkey 8.x support for 2.4.9-alpha2,"","","",Framework,false
+AC-14610,Security Improvements for 2.4.9-alpha2,"","","",Security,false
+AC-14700,2.4.9-alpha2 - August Core Quality Improvements,"","","",Other,false
+AC-14990,Review the Magento Zend PDF pull request and create a new tag,Fix inconsistent switch case syntax,https://github.com/magento/magento-zend-pdf/pull/5,"",Framework,false
+AC-15113,2.4.9-alpha2 - Aug 2025 Community contributions,"","","",Other,false
