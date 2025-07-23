@@ -20,7 +20,7 @@ The installation creates a fully functional Adobe Commerce store with both a [cu
 
 The following diagram illustrates the main steps involved in installing Adobe Commerce for on-premises environments:
 
-![How installation works](../assets/installation/install-diagram-24.svg)
+![How installation works](../assets/installation/on-premises-install.drawio.svg)
 
 ### Set up your server environment
    
@@ -28,7 +28,7 @@ Install and configure PHP, web server, database, and search engine according to 
 
 ### Get authentication keys
    
-Generate [authentication keys](prerequisites/authentication-keys.md) from the Commerce Marketplace to access Adobe Commerce Composer packages.
+Generate new [authentication keys](prerequisites/authentication-keys.md) (or copy existing keys) from the Commerce Marketplace to access Adobe Commerce Composer packages.
 
 ### Get the Adobe Commerce software
    
