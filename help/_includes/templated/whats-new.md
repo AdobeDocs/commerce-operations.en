@@ -505,25 +505,3 @@ This page contains the changes made in the last 60 days. We exclude all minor up
     </tr>
   </tbody>
 </table>
-
-### May 19, 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Published <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">release notes</a> for the 1.1.64 Quality Patches Tool (QPT) package release.</p>
-</td>
-      <td>
-        Major update, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/922a00af2ba6d071054b25551f6a01e78310adef">commit</a></td>
-    </tr>
-  </tbody>
-</table>
