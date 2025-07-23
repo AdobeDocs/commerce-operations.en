@@ -4,8 +4,8 @@ description: Apply the ACSD-65750 patch to fix the Adobe Commerce issue where th
 feature: GraphQL, Page Builder, Products
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 3aee28e1-1293-42d0-a62c-5021e8f75518
 ---
-
 # ACSD-65750: [!DNL GraphQL] "route" query returns products out of order in [!DNL Page Builder] Products content type
 
 The ACSD-65750 patch fixes the issue where the [!DNL GraphQL] "route" query returns products out of order in [!DNL Page Builder] Products content type. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65750. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
