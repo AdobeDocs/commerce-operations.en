@@ -54,14 +54,14 @@ The ACSD-65913 patch fixes the issue where [!DNL OpenSearch] threw an `illegal_a
 
 <u>Actual results</u>:
 
-[!DNL OpenSearch] throws an `illegal_argument_exception` with the message:
+* [!DNL OpenSearch] throws an `illegal_argument_exception` with the message:
     *[from] parameter cannot be negative, found [-1]*
 
-The `var/log/exception.log` file contains:
+* The `var/log/exception.log` file contains:
 
-```
-  [2025-05-14T22:39:33.595272+00:00] report.CRITICAL: [!DNL OpenSearch]\Common\Exceptions\BadRequest400Exception: {"error":{"root_cause":[{"type":"illegal_argument_exception","reason":"[from] parameter cannot be negative, found [-1]"}],"type":"illegal_argument_exception","reason":"[from] parameter cannot be negative, found [-1]"},"status":400}
-```
+    ```
+    [2025-05-14T22:39:33.595272+00:00] report.CRITICAL: [!DNL OpenSearch]\Common\Exceptions\BadRequest400Exception: {"error":{"root_cause":[{"type":"illegal_argument_exception","reason":"[from] parameter cannot be negative, found [-1]"}],"type":"illegal_argument_exception","reason":"[from] parameter cannot be negative, found [-1]"},"status":400}
+    ```
 
 ## Apply the patch
 
