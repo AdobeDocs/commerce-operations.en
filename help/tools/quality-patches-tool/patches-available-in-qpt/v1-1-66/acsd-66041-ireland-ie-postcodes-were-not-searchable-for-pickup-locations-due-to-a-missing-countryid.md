@@ -1,8 +1,9 @@
 ---
 title: 'ACSD-66041: Ireland (IE) postcodes not searchable for pickup locations due to missing CountryID'
 description: Apply the ACSD-66041 patch to fix the Adobe Commerce issue where of missing CountryID issue for Ireland (IE), which was causing errors.
-feature: Catalog Management, Catalog Service
+feature: Shipping/Delivery, Shopping Cart
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66041: Ireland (IE) postcodes not searchable for pickup locations due to missing `CountryID`
