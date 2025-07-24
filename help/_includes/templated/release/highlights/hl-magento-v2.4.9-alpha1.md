@@ -2,7 +2,7 @@
 
 ## Highlights in v2.4.9-alpha1
 
-The following 9 highlights apply to the Magento Open Source 2.4.9-alpha1 release.
+The following highlights apply to the Magento Open Source 2.4.9-alpha1 release.
 
 ### Admin UI
 
