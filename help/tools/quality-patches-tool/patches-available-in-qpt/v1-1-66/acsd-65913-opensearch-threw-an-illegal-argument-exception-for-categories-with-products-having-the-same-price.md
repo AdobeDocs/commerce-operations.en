@@ -4,8 +4,8 @@ description: Apply the ACSD-65913 patch to fix the Adobe Commerce issue where [!
 feature: Search
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 984db32e-1a0d-4e0a-a83b-7fe909226ed3
 ---
-
 # ACSD-65913: [!DNL OpenSearch] throws an `illegal_argument_exception` for categories with products having the same price
 
 The ACSD-65913 patch fixes the issue where [!DNL OpenSearch] threw an `illegal_argument_exception` for categories with products having the same price. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65913. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
