@@ -4,8 +4,8 @@ description: Apply the ACSD-65848 patch to fix the Adobe Commerce issue where th
 feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 0233db9b-86b1-4320-a566-7e7e207dab84
 ---
-
 # ACSD-65848: Categories in admin are loading very slow
 
 The ACSD-65848 patch fixes the issue where the total product count in a category was calculated using a sub-select, which delayed category load time. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-65848. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
