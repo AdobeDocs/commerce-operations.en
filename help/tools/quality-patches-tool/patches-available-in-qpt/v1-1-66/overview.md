@@ -16,7 +16,7 @@ QPT v1.1.66 includes the following patches:
 1. **ACSD-65775**: Incorrect `base_row_total` and `row_total` values in REST API order details for multiple quantities.
 1. **ACSD-65777**: "types" field was missing for product image types in the `MediaGallery` GraphQL request.
 1. **ACSD-65848**: Categories in admin are loading very slow.
-1. **ACSD-65913**: OpenSearch threw an `illegal_argument_exception` for categories with products having the same price.
+1. **ACSD-65913**: [!DNL OpenSearch] throws an `illegal_argument_exception` for categories with products having the same price.
 1. **ACSD-66041**: Ireland (IE) postcodes were not searchable for pickup locations due to a missing CountryID.
 1. **ACSD-66212**: Fixes the issue where importing a customer CSV file twice caused failures on the second and subsequent attempts.
 
