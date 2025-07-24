@@ -1,0 +1,63 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .title { font: bold 24px sans-serif; }
+    .month { font: bold 16px sans-serif; }
+    .date { font: 14px sans-serif; }
+    .type { font: italic 12px sans-serif; fill: #555; }
+</style>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="20" y="40" class="title">Adobe Commerce 2026 Release Calendar</text>
+<rect x="20" y="80" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="30" y="100" class="month">January</text>
+<text x="30" y="120" class="date">Release Date: 2026-01-13</text>
+<text x="30" y="140" class="type">Monthly Security Patch</text>
+<rect x="320" y="80" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="330" y="100" class="month">February</text>
+<text x="330" y="120" class="date">Release Date: 2026-02-10</text>
+<text x="330" y="140" class="type">Monthly Security Patch</text>
+<text x="330" y="155" class="type">Biannual Beta Patch</text>
+<rect x="620" y="80" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="630" y="100" class="month">March</text>
+<text x="630" y="120" class="date">Release Date: 2026-03-10</text>
+<text x="630" y="140" class="type">Monthly Security Patch</text>
+<rect x="20" y="200" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="30" y="220" class="month">April</text>
+<text x="30" y="240" class="date">Release Date: 2026-04-14</text>
+<text x="30" y="260" class="type">Monthly Security Patch</text>
+<rect x="320" y="200" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="330" y="220" class="month">May</text>
+<text x="330" y="240" class="date">Release Date: 2026-05-12</text>
+<text x="330" y="260" class="type">Monthly Security Patch</text>
+<text x="330" y="275" class="type">Annual Patch</text>
+<text x="330" y="290" class="type">Biannual Security Patch</text>
+<rect x="620" y="200" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="630" y="220" class="month">June</text>
+<text x="630" y="240" class="date">Release Date: 2026-06-09</text>
+<text x="630" y="260" class="type">Monthly Security Patch</text>
+<rect x="20" y="320" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="30" y="340" class="month">July</text>
+<text x="30" y="360" class="date">Release Date: 2026-07-14</text>
+<text x="30" y="380" class="type">Monthly Security Patch</text>
+<rect x="320" y="320" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="330" y="340" class="month">August</text>
+<text x="330" y="360" class="date">Release Date: 2026-08-11</text>
+<text x="330" y="380" class="type">Monthly Security Patch</text>
+<rect x="620" y="320" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="630" y="340" class="month">September</text>
+<text x="630" y="360" class="date">Release Date: 2026-09-08</text>
+<text x="630" y="380" class="type">Monthly Security Patch</text>
+<rect x="20" y="440" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="30" y="460" class="month">October</text>
+<text x="30" y="480" class="date">Release Date: 2026-10-13</text>
+<text x="30" y="500" class="type">Monthly Security Patch</text>
+<text x="30" y="515" class="type">Biannual Security Patch</text>
+<text x="30" y="530" class="type">Biannual Beta Patch</text>
+<rect x="320" y="440" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="330" y="460" class="month">November</text>
+<text x="330" y="480" class="date">Release Date: 2026-11-10</text>
+<text x="330" y="500" class="type">Monthly Security Patch</text>
+<rect x="620" y="440" width="280" height="100" fill="#f0f0f0" stroke="#ccc"/>
+<text x="630" y="460" class="month">December</text>
+<text x="630" y="480" class="date">Release Date: 2026-12-08</text>
+<text x="630" y="500" class="type">Monthly Security Patch</text>
+</svg>
