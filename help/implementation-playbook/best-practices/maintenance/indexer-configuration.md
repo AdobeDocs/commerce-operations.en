@@ -34,7 +34,10 @@ To maximize site performance, follow these best practices for indexing:
 
 >[!IMPORTANT]
 >
->The [!DNL Customer Grid] can only be reindexed using the [!UICONTROL Update on Save] option. This index does not support the `Update by Schedule` option.
+>The [!DNL Customer Grid] indexer behavior changed in 2.4.8:
+>
+>- **Prior to 2.4.8**: The [!DNL Customer Grid] indexer can only be reindexed using the [!UICONTROL Update on Save] option and does not support the [!UICONTROL Update by Schedule] option.
+>- **2.4.8 and later**: The [!DNL Customer Grid] indexer supports both [!UICONTROL Update on Save] and [!UICONTROL Update by Schedule] modes, and defaults to [!UICONTROL Update by Schedule].
 
 ## Additional information
 
