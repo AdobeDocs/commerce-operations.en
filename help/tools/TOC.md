@@ -808,6 +808,7 @@ feature: Configuration
            - [ACSD-65331: Selected store in [!UICONTROL Pick in Store] cleared after returning to checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page.md)
         - v1.1.66 {#v1-1-66}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
+           - [ACSD-65848: Categories in admin are loading very slow](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65848-categories-in-admin-are-loading-very-slow.md)
            - [ACSD-65750: [!DNL GraphQL] "route" query returns products out of order in [!DNL Page Builder] Products content type](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65750-graphql-route-query-returned-products-out-of-order-in-page-builder-products-content-types.md)
            - [ACSD-65777: Missing "types" field for product image types in the MediaGallery GraphQL request](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request.md)
            - [ACSD-66212: Importing customer CSV file twice caused failures on second and subsequent attempts](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66212-importing-a-customer-csv-file-twice-caused-failures-on-the-second-and-subsequent-attempts.md)
