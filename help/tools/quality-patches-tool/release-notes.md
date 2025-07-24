@@ -16,6 +16,26 @@ The [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) de
 >
 >For information about [!DNL quality patches] created by the Community for Magento Open Source, see the [release notes](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.68 {#v1-1-68}
+
+* **ACSD-58131** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where the presence of a 0-byte image in the media gallery prevented all images in the directory from being displayed or selected.
+* **ACSD-62415** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue when Adobe Commerce backend loads categories very slowly.
+* **ACSD-66082** (for Adobe Commerce and Magento Open Source >=2.4.6 <2.4.9) - Fixes the issue where it was not possible to update the swatch image of a product through product import.
+* **ACSD-66179** (for Adobe Commerce and Magento Open Source >=2.4.4-p11 <2.4.5 || >=2.4.5-p10 <2.4.6 || >=2.4.6-p8 <2.4.7 || >=2.4.7-p3 <2.4.9) - Fixes the issue where canceling an invoice created with the "Not Capture" payment type resulted in a 404 error page.
+* **ACSD-66865** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where saving catalog price rules invalidated indexers and provides alternative to reindex only affected products.
+* **ACSD-66963** (for Adobe Commerce and Magento Open Source >=2.4.7 <2.4.8) - Fixes the issue where the estimateTotals mutation returned null for discounts when a discount code was applied to a cart containing virtual products.
+* **ACSD-67039** (for Adobe Commerce and Magento Open Source >=2.4.4 <2.4.8) - Fixes the issue where customer records were not saved due to validation of the rp_token system attribute and diacritics validation is now applied only to the resulting customer email.
+* **ACSD-62146** (for Adobe Commerce >=2.4.7 <2.4.8) - Fixes the issue where the presence of a 0-byte image in the media gallery prevented all images in the directory from being displayed or selected.
+* **ACSD-65938** (for Adobe Commerce >=2.4.4 <2.4.9) - Fixes the issue where gift card emails were sent even when the invoice creation failed.
+* **ACSD-66072** (for Adobe Commerce >=2.4.6 <2.4.9) - Fixes the issue where related products were not returned via GraphQL on the Product Detail Page due to an internal server error when "Related Product Rules" were configured.
+* **ACSD-66233** (for Adobe Commerce >=2.4.8 <2.4.9) - Fixes the issue where admin users were unable to add products to a category due to the Add Product popup failing to load.
+* **ACSD-66889** (for Adobe Commerce >=2.4.4 <2.4.6) - Fixes deprecated line of code with proper structure to ensure successful completion of inventory indexer process.
+* **ACSD-66965** (for Adobe Commerce B2B >=1.5.0 <1.5.3) - Fixes the issue with the Requisition List Page Print Option that caused an error.
+* **ACSD-66506** (for Adobe Commerce B2B >=1.5.0 <1.5.3) - Fixes the backend error that occurred when previously assigned products of a Shared Catalog were deleted and new products were assigned.
+* **ACSD-66417** (for Braintree 4.6.1) - Fixes an issue where the sales order grid throws an error when trying to filter orders by date.
+* Versions updated: **ACSD-60590**, **ACP2E-3705**
+* Replaced patches: **ACSD-57003**, **ACSD-66434**
+
 ## v1.1.67 {#v1-1-67}
 
 * **ACSD-65935** (for Adobe Commerce >=2.4.4 <2.4.8) - Fixes the issue where the `customerOrders` GraphQL query returned an internal server error when a product was deleted.
