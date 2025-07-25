@@ -808,11 +808,15 @@ feature: Configuration
            - [ACSD-65331: Selected store in [!UICONTROL Pick in Store] cleared after returning to checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page.md)
         - v1.1.66 {#v1-1-66}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
+           - [ACSD-66041: Ireland (IE) postcodes not searchable for pickup locations due to missing CountryID](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66041-ireland-ie-postcodes-were-not-searchable-for-pickup-locations-due-to-a-missing-countryid.md)
+           - [ACSD-65913: [!DNL OpenSearch] throws an illegal_argument_exception for categories with products having the same price](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65913-opensearch-threw-an-illegal-argument-exception-for-categories-with-products-having-the-same-price.md)
+           - [ACSD-65848: Categories in admin are loading very slow](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65848-categories-in-admin-are-loading-very-slow.md)
            - [ACSD-65750: [!DNL GraphQL] "route" query returns products out of order in [!DNL Page Builder] Products content type](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65750-graphql-route-query-returned-products-out-of-order-in-page-builder-products-content-types.md)
            - [ACSD-65777: Missing "types" field for product image types in the MediaGallery GraphQL request](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request.md)
            - [ACSD-66212: Importing customer CSV file twice caused failures on second and subsequent attempts](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66212-importing-a-customer-csv-file-twice-caused-failures-on-the-second-and-subsequent-attempts.md)
            - [ACSD-65775: Incorrect base_row_total and row_total values in REST API order details for multiple quantities](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities.md)
            - [ACP2E-3789: Media files duplicated on product update via WebAPI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-media-files-duplicated-on-product-update-via-webapi.md)
+           - [ACP2E-3918: Checkout failure for company customers using in-store pickup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
