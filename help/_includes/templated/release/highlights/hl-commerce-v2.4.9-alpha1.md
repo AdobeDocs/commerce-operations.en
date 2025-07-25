@@ -46,8 +46,9 @@ _AC-14559_
 
 ### Shipping
 
-* __Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs__
-  _AC-13258_
+#### Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs
+
+_AC-13258_
 
 ### Security
 
