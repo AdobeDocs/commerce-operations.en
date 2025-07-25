@@ -4,8 +4,8 @@ description: Apply the ACSD-66041 patch to fix the Adobe Commerce issue where Ir
 feature: Shipping/Delivery, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 4c33da14-38b2-4a3c-a680-849b62dfb896
 ---
-
 # ACSD-66041: Ireland (IE) postcodes not searchable for pickup locations due to missing `CountryID`
 
 The ACSD-66041 patch fixes the issue where Ireland (IE) postcodes are not searchable for pickup locations due to a missing `CountryID`. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACSD-66041. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.

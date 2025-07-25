@@ -4,8 +4,8 @@ description: Apply the ACP2E-3918 patch to fix the Adobe Commerce issue where ch
 feature: B2B, Companies, Purchase Orders
 role: Admin, Developer
 type: Troubleshooting
+exl-id: b3a01d6d-4e25-4089-9f47-e898a8d7a76e
 ---
-
 # ACP2E-3918: Checkout failure for company customers using in-store pickup
 
 The ACP2E-3918 patch fixes the issue where checkout fails for logged-in company customers using in-store pickup without a default billing address. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 is installed. The patch ID is ACP2E-3918. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
