@@ -1,12 +1,12 @@
-{%- assign grouped_fixes = fixes | sort: 'Components' | group_by: 'Components' %}
-{%- for group in grouped_fixes %}
-
+{% assign grouped_fixes = fixes | sort: 'Components' | group_by: 'Components' %}
+{% for group in grouped_fixes %}
 ### {{ group.name }}
 {% assign sorted_fixes = group.items | sort: 'Issue key' %}
 {%- for fix in sorted_fixes %}
-* __{{fix['Summary'] | xml_escape }}__
+#### {{fix['Summary'] | xml_escape }}
 {%- unless fix['Custom field (Release Note)'] == empty %}
-  {{fix['Custom field (Release Note)'] | xml_escape }}
+
+{{fix['Custom field (Release Note)'] | xml_escape}}
 {%- endunless -%}
 
 {% capture key %}{{fix['Issue key']}}{% endcapture %}
@@ -22,6 +22,7 @@
 {%- endfor -%}
 {%- endunless -%}
 {%- endcapture %}
-  _{{ key }}{{ issue }}{{ contribution }}_
-{%- endfor %}
-{%- endfor %}
+
+_{{ key }}{{ issue }}{{ contribution }}_
+{% endfor -%}
+{%- endfor -%}
