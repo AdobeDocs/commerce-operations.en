@@ -83,7 +83,7 @@ Beginning February 2026, Adobe Commerce will move to a monthly release schedule 
 - Monthly [isolated patches](versioning-policy.md#isolated-patch) for supported release lines (includes regular and extended support)
 - Annual [patch](versioning-policy.md#patch-release) (May)
 - Biannual [security patches](versioning-policy.md#security-patch-release) for supported release lines (includes regular and extended support) (May and October)
-- Biannual [beta](versioning-policy.md#beta-patch-release) patches (February abd October)
+- Biannual [beta](versioning-policy.md#beta-patch-release) patches (February and October)
 
 See the following image for details:
 
