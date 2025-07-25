@@ -26,7 +26,7 @@ The ACSD-66041 patch fixes the issue where Ireland (IE) postcodes are not search
 
 ## Issue
 
-Ireland (IE) postcodes were not searchable for pickup locations due to a missing `CountryID`.
+Ireland (IE) postcodes are not searchable for pickup locations due to a missing `CountryID`.
 
 <u>Steps to reproduce</u>:
 
