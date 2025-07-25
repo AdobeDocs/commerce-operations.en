@@ -469,7 +469,6 @@ _ACP2E-3871 - [GitHub code contribution](https://github.com/magento/magento2/com
 
 #### PHP8.4 Deprecation Error: E_USER_ERROR after Upgrade to Adobe Commerce 2.4.8
 
-*NO RELEASE NOTES ARE REQUIRED*
 Customer-facing scenarios are not affected by the fix.
 
 _ACP2E-3963 - [GitHub code contribution](https://github.com/magento/magento2/commit/7accebfa)_

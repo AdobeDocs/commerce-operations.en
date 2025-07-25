@@ -87,10 +87,10 @@ _AC-14610_
 
 To comply with USPS’s announced of retirement of  the legacy Web Tools APIs by January 25, 2026, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs. 
 Key Enhancements:
- - Dual API Support: Admin users can now choose between the legacy Web Tools API and the new RESTful USPS API via configuration settings.
- - Authentication Upgrade: Implemented OAuth 2.0 for secure API access.
- - Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
- - New Admin Fields:
+- Dual API Support: Admin users can now choose between the legacy Web Tools API and the new RESTful USPS API via configuration settings.
+- Authentication Upgrade: Implemented OAuth 2.0 for secure API access.
+- Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
+- New Admin Fields:
 Gateway REST URL (based on mode: Development or Live)
 Client ID &amp; Secret
 Account Type, Account Number
