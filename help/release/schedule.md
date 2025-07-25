@@ -12,7 +12,7 @@ Adobe continually strives to find the right balance between making product upgra
 
 New features and updates for cloud infrastructure and extensibility are released separately from patch releases. You can access these updates through modules, extensions, tools, or web services. Examples include:
 
-- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—New features and functionality delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search, and Product Recommendations.
+- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—New features and functionality delivered independently from patch releases. For example, Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer.
 
 - ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
@@ -20,11 +20,33 @@ New features and updates for cloud infrastructure and extensibility are released
 
 The following list provides the dates for scheduled feature, cloud infrastructure, and extensibility releases (dates are subject to change):
 
+>[!BEGINTABS]
+
+>[!TAB 2025 schedule]
+
 - February 11, 2025
 - April 8, 2025
 - June 10, 2025
 - August 12, 2025
 - October 14, 2025
+
+>[!TAB 2026 schedule]
+
+Beginning February 2026, Adobe Commerce will move to a monthly release schedule:
+
+- February 10, 2026
+- March 10, 2026
+- April 14, 2026
+- May 12, 2026
+- June 9, 2026
+- July 14, 2026
+- August 11, 2026
+- September 8, 2026
+- October 13, 2026
+- November 10, 2026
+- December 8, 2026
+
+>[!ENDTABS]
 
 >[!NOTE]
 >
