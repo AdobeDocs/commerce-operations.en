@@ -18,6 +18,6 @@ QPT v1.1.67 includes the following patches:
 1. **ACSD-66139**: GraphQL returns UNDEFINED error for non-existent or inactive cart during order placement.
 1. **ACSD-66301**: Moving products from an order back to the cart in Admin results in quantity mismatch.
 1. **ACSD-66434**: Customer ID missing from company GraphQL queries.
-1. **ACSD-66441**: Incorrect index data in layered navigation for configurable products in multi-store setups.
+1. **[ACSD-66441](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-incorrect-index-data-in-layered-navigation-for-configurable-products-in-multi-store-setups.md)**: Incorrect index data in layered navigation for configurable products in multi-store setups.
 
 Use the menu on the left to navigate to a specific patch page.
