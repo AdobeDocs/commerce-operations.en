@@ -2,56 +2,101 @@
 
 ## Highlights in v2.4.9-alpha2
 
-The following 17 highlights apply to the Adobe Commerce 2.4.9-alpha2 release.
+The following highlights apply to the Adobe Commerce 2.4.9-alpha2 release.
 
 ### Framework
 
-* __Add support for OpenSearch 3__
-  _AC-11846_
-* __[2.4.9-alpha2] Platform Component Upgrade__
-  _AC-12971_
-* __Update Nginx version from 1.26 to 1.28__
-  _AC-14104_
-* __Investigate the latest version jquery-validate__
-  Investigate the latest version jquery-validate:1.21.0
-  _AC-14403 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
-* __Investigate the latest version jquery-ui__
-  Investigate the latest version jquery-ui:1.14.1
-  _AC-14417 - [GitHub code contribution](https://github.com/magento/magento2/commit/77c589a6)_
-* __Investigate the latest version less.js__
-  Investigate the latest version 4.2.2 less.js
-  _AC-14418 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
-* __Investigate the latest version moment-timezone-with-data.js__
-  Investigate the latest version moment-timezone-with-data.js
-  _AC-14419 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
-* __Investigate the latest version underscore.js__
-  Investigate the latest version underscore.js
-  _AC-14420 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
-* __Ensure the latest version of Chrome is used for all Adobe Commerce versions builds__
-  _AC-14482_
-* __Migrate from TinyMCE to Hugerte.org__
-  _AC-14568_
-* __reCAPTCHA Classic depreciation and migration to Google Cloud__
-  _AC-14569_
-* __Add Full Valkey 8.x support for 2.4.9-alpha2__
-  _AC-14604_
-* __Review the Magento Zend PDF pull request and create a new tag__
-  Fix inconsistent switch case syntax
-  _AC-14990 - [GitHub code contribution](https://github.com/magento/magento-zend-pdf/pull/5)_
+#### Add support for OpenSearch 3
+
+Adobe Commerce 2.4.9 is now fully compatible with  OpenSearch 3.x. This update enables merchants to benefit from improved performance, security, and long-term support while maintaining backward compatibility with OpenSearch 2.x.
+
+_AC-11846_
+
+#### Update Nginx version from 1.26 to 1.28
+
+The Nginx version used in development and testing environments across all the currently supported version of Adobe Commerce is updated from 1.26 to 1.28, aligning with the latest stable  Nginx release available.
+PR-level testing now runs against Nginx 1.28 confirming full compatibility and support for all the Adobe Commerce versions.
+
+_AC-14104_
+
+#### Investigate the latest version jquery-validate
+
+Upgraded the jQuery Validate library to version 1.21.0 to enhance form validation capabilities, improve user experience, and ensure modern browser compatibility across all Adobe Commerce forms in both admin and frontend interfaces.
+
+_AC-14403 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
+
+#### Investigate the latest version jquery-ui
+
+Upgraded the jQuery UI library to version 1.14.1 to enhance user interface widgets, improve accessibility, and ensure modern browser compatibility across all Adobe Commerce admin and frontend interface components.
+
+_AC-14417 - [GitHub code contribution](https://github.com/magento/magento2/commit/77c589a6)_
+
+#### Investigate the latest version less.js
+
+Upgraded the Less.js CSS preprocessor to version 4.2.2 to enhance CSS compilation performance, improve syntax support, and modernize the theme build process across all Adobe Commerce frontend and admin themes.
+
+_AC-14418 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
+
+#### Investigate the latest version moment-timezone-with-data.js
+
+Upgraded the Moment Timezone library to version 0.5.43 to enhance timezone handling capabilities, update timezone data with latest IANA Time Zone Database changes, and improve date/time processing accuracy across all Adobe Commerce international and multi-timezone operations.
+
+_AC-14419 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
+
+#### Investigate the latest version underscore.js
+
+Upgraded the Underscore.js utility library to version 1.13.7 to enhance JavaScript functional programming capabilities, improve data manipulation performance, and ensure modern browser compatibility across all Adobe Commerce frontend and admin interface components.
+
+_AC-14420 - [GitHub code contribution](https://github.com/magento/magento2/commit/98b2848a)_
+
+#### Migrate from TinyMCE to Hugerte.org
+
+Due to the end of support for TinyMCE 5 and 6 and licensing incompatibilities with TinyMCE 7, The current implementation of Adobe Commerce WYSIWYG editor is migrated from TinyMCE to the open-source HugeRTE editor (https://hugerte.org/). 
+This migration ensures Adobe Commerce remains compliant with open-source licensing, avoids known TinyMCE 6 vulnerabilities, and delivers a modern, supported editing experience for merchants and developers.
+
+_AC-14568_
+
+#### Add Full Valkey 8.x support for 2.4.9-alpha2
+
+Adobe Commerce 2.4.9 has a full CLI commands support for Valkey, mirroring currently existing Redis functionality. Admin and cloud configuration updated to allow seamless Valkey setup.
+This update ensures Adobe Commerce remains future-proof and performant by supporting Valkey 8.x, giving merchants and developers a reliable alternative to Redis as it approaches end-of-life.
+
+_AC-14604_
 
 ### Other
 
-* __2.4.9-alpha2 - August Core Quality Improvements__
-  _AC-14700_
-* __2.4.9-alpha2 - Aug 2025 Community contributions__
-  _AC-15113_
+#### Update the AWS Valkey 8.x Service for CNS Build and Test
+
+Update the AWS Valkey 8.x Service for CNS Build
+
+_AC-14470_
+
+#### 2.4.9-alpha2 - August Core Quality Improvements
+
+_AC-14700_
 
 ### Security
 
-* __Security Improvements for 2.4.9-alpha2__
-  _AC-14610_
+#### Security Improvements for 2.4.9-alpha2
+
+_AC-14610_
 
 ### Shipping
 
-* __Migrate USPS integration from outdated Web Tools APIs to new RESTful USPS APIs__
-  _AC-13257_
+#### Migrate USPS integration from outdated Web Tools APIs to new RESTful USPS APIs
+
+To comply with USPS’s announced of retirement of  the legacy Web Tools APIs by January 25, 2026, Adobe Commerce USPS integration is migrated to the new RESTful USPS APIs. 
+Key Enhancements:
+- Dual API Support: Admin users can now choose between the legacy Web Tools API and the new RESTful USPS API via configuration settings.
+- Authentication Upgrade: Implemented OAuth 2.0 for secure API access.
+- Improved Data Format: Transitioned from XML to JSON for cleaner, more efficient communication.
+- New Admin Fields:
+Gateway REST URL (based on mode: Development or Live)
+Client ID &amp; Secret
+Account Type, Account Number
+CRID, MID, Mailer Identification Code
+AES/ITN for international shipments
+REST-specific allowed shipping methods
+This migration ensures Adobe Commerce remains compliant with USPS standards, improves system reliability, and future-proofs shipping integrations for merchants.
+
+_AC-13257_
