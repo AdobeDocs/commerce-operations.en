@@ -10,7 +10,7 @@ This sub-section provides a detailed description of the issues fixed by the patc
 
 QPT v1.1.67 includes the following patches:
 1. **AC-14985**: SMTP mail sent with TLS returns error.
-1. **AC-14984**: SSL connection issue with php-amqplib/php-amqplib ^3.2.0.
+1. **[AC-14984](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14984-ssl-connection-issue-with-php-amqplib-php-amqplib-3-2.md)**: SSL connection issue with php-amqplib/php-amqplib ^3.2.0.
 1. **ACSD-65935**: `customerOrders` GraphQL query returned an internal server error when a product was deleted.
 1. **ACSD-66049**: Non-English storefronts display incorrect pricing due to the ICU library version.
 1. **ACSD-66084**: `row_total_incl_tax` returns near-zero residual value instead of 0.00 for fully discounted items in the order API response.
