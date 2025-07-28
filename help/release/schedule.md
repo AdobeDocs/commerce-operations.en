@@ -78,7 +78,7 @@ The following table provides the dates for scheduled patch releases (dates are s
 
 >[!TAB 2026 schedule]
 
-Beginning February 2026, Adobe Commerce will move to a monthly release schedule with the following approach:
+Beginning February 2026, Adobe Commerce will move to a monthly patch release schedule with the following strategy:
 
 - **Monthly security updates**—[Isolated patches](versioning-policy.md#isolated-patch) are released monthly and include individual security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support).
 
