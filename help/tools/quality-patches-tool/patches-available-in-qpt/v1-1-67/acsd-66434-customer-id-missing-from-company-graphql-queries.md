@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-66434: Customer ID missing from company GraphQL queries'
-description: Apply the ACSD-66434 patch to fix the Adobe Commerce issue where customer ID is missing from the company GraphQL queries.
+title: 'ACSD-66434: Customer ID missing from company [!DNL GraphQL] queries'
+description: Apply the ACSD-66434 patch to fix the Adobe Commerce issue where customer ID is missing from the company [!DNL GraphQL] queries.
 feature: B2B, GraphQL
 role: Admin, Developer
 ---
 
-# ACSD-66434: Customer ID missing from company GraphQL queries
+# ACSD-66434: Customer ID missing from company [!DNL GraphQL] queries
 
-The ACSD-66434 patch fixes the issue where customer ID is missing from company GraphQL queries. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66434. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66434 patch fixes the issue where customer ID is missing from company [!DNL GraphQL] queries. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66434. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,13 +25,13 @@ The ACSD-66434 patch fixes the issue where customer ID is missing from company G
 
 ## Issue
 
-Issue where customer ID is missing from company GraphQL queries.
+The [!DNL GraphQL] company query returns `null` for the customer ID in the company structure.
 
 <u>Steps to reproduce</u>:
 
-1. Install AC 2.4-develop with [!DNL B2B] and Inventory.
-2. Enable and create a test company from Backend.
-3. Generate the Bearer token for the previously created company admin using the following GraphQL mutation:
+1. Install Adobe Commerce 2.4-develop with B2B and Inventory modules.
+2. From the Admin, enable B2B features and create a test company.
+3. Generate a bearer token for the company admin using the following [!DNL GraphQL] mutation:
 
 ```
 mutation {
@@ -41,7 +41,7 @@ mutation {
 }
 ```
 
-4. Retrieve the customer's company structure with the token generated above, using the following GraphQL query:
+4. Use the generated token to retrieve the customer's company structure with the following [!DNL GraphQL] query:
 
 ```
 query{
@@ -69,11 +69,11 @@ query{
 
 <u>Expected results</u>:
 
-An ID is expected so that it can then be passed into other mutations or queries.
+Customer ID should be returned in the company [!DNL GraphQL] query.
 
 <u>Actual results</u>:
 
-'null' response in Customer entity for ID.
+Customer ID returns as `null` in the company [!DNL GraphQL] query.
 
 ## Apply the patch
 
