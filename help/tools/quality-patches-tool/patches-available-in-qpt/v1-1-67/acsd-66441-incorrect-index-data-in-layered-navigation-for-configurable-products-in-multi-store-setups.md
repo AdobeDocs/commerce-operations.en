@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-66441: Incorrect index data in layered navigation for configurable products in multi-store setups'
-description: Apply the ACSD-66441 patch to fix the Adobe Commerce issue where layered Navigation display options from other stores appear incorrectly in a multi-store setup.
+title: 'ACSD-66441: Layered Navigation displays incorrect attribute options in multi-store setup'
+description: Apply the ACSD-66441 patch to fix the Adobe Commerce issue where layered Navigation display attributes from other stores appear incorrectly in a multi-store setup.
 feature: Catalog, Search
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-66441: Incorrect index data in layered navigation for configurable products in multi-store setups
+# ACSD-66441: Layered Navigation displays incorrect attribute options in multi-store setup
 
-The ACSD-66441 patch fixes the issue where the storefront displays incorrect index data in layered navigation when indexing configurable products for a multi-store setup. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66441. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66441 patch fixes the issue where Layered Navigation displays attributes from other stores incorrectly in a multi-store setup. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66441. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,26 +26,26 @@ The ACSD-66441 patch fixes the issue where the storefront displays incorrect ind
 
 ## Issue
 
-Issue where the storefront displays incorrect index data in layered navigation when indexing configurable products for a multi-store setup.
+Layered Navigation on the frontend includes attribute values from other stores, even when those products are not available in the current store view. 
 
 <u>Steps to reproduce</u>:
 
 1. Create a secondary website, store, and store view.
-2. Create a configurable product using a Size attribute (I use a custom size attribute).
-3. Assign the configurable product to the Main website and a category.
+2. Create a configurable product using a custom attribute (for example, Size).
+3.Assign the configurable product to the Main website and a category.
 4. Reindex all data.
-5. Navigate to the assigned category on the frontend and observe the Layered Navigation (All size options are visible as expected).
-6. Unassign two simple products from the Main website and assign them to the Secondary website (or simply remove them from the Main website).
+5. Navigate to the assigned category on the frontend. All size options appear correctly in Layered Navigation.
+6. Unassign two simple products from the Main website and assign them to the Secondary website, or remove them from the Main website.
 7. Reindex all data.
 8. Revisit the frontend category page and check the Layered Navigation.
 
 <u>Expected results</u>:
 
-Layered Navigation should only display attribute options from products assigned to the current store/website.
+Layered Navigation displays only attribute options from products assigned to the current store or website.
 
 <u>Actual results</u>:
 
-Layered Navigation still displays options (sizes) that belong to products assigned to other stores.
+Layered Navigation displays attribute options (sizes) from products assigned to other stores or websites.
 
 ## Apply the patch
 
