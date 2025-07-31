@@ -29,16 +29,17 @@ Issue where `row_total_incl_tax` is returned as a near-zero residual value in th
 
 <u>Steps to reproduce</u>:
 
-1. Create product with price = 25 and special price = 16.99.
-2. Set **[!UICONTROL Tax Class]** with **[!UICONTROL Default Tax Class for Product]** > **[!UICONTROL Taxable Goods]** and configure a tax rule with 20% rate.
-3. Create a aales rule with a 100% discount and a coupon code.
-4. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]**.
-5. Enable the free shipping method.
-6. Add product to cart via Storefront and apply the coupon.
-7. Place the order with the applicable tax zone.
-8. Generate an admin token via REST API.
-9. Retrieve order details via REST API.
-10. Check `row_total_incl_tax` in the response.
+1. Create Product with a price and special price. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** → Click **[!UICONTROL Add Product]** > Set **[!UICONTROL Price]** to $25 and **[!UICONTROL Special Price]** to $16.99 under **[!UICONTROL Advanced Pricing]**.
+1. Set Tax Class and 20% Tax Rule. Go to **[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]** and add a 20% rate. Then go to **[!UICONTROL Tax Rules]** and create a rule and assign
+**[!UICONTROL Taxable Goods]** as the product tax class.
+1. Create sales rule with a 100% and a coupon. Go to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** and add a rule with a 100% discount and then use [!UICONTROL Specific Coupon] and enter your code
+Configure Tax Settings Go to [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Tax] → Set up how tax is calculated and applied
+Enable Free Shipping Go to [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Delivery Methods] > [!UICONTROL Free Shipping] → Set [!UICONTROL Enabled] to Yes and adjust settings
+Add Product to Cart and Apply Coupon From the Storefront, go to the product page → Click [!UICONTROL Add to Cart] → Go to [!UICONTROL Shopping Cart] → Enter and apply the coupon code
+Place Order with Tax Zone Go to [!UICONTROL Checkout] → Use a shipping address that matches your tax zone → Click [!UICONTROL Place Order]
+Generate Admin Token (API) Use POST /rest/V1/integration/admin/token with admin login
+Get Order Details (API) Use GET /rest/V1/orders/{orderId} with your token
+Check Tax in Response Look for row_total_incl_tax in the API response under items[]
 
 <u>Expected results</u>:
 
