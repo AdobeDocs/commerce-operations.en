@@ -35,7 +35,7 @@ Issue where non-English storefronts display incorrect pricing due to the ICU lib
 
 <u>Expected results</u>:
 
-The price shouldn't be displayed as 0.
+The displayed price is not 0.
 
 <u>Actual results</u>:
 
