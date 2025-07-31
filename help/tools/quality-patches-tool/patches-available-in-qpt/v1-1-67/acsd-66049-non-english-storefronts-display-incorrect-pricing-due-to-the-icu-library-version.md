@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACSD-66049: Non-English storefronts display incorrect pricing due to the ICU library version
 
-The ACSD-66049 patch fixes the issue where non-English storefronts display incorrect pricing due to the ICU library version. (Older PHP ICU libraries 63.1 - 74.1). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66049. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66049 patch fixes the issue where non-English storefronts display incorrect pricing due to the ICU library version (Older PHP ICU libraries 63.1 - 74.1). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66049. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -32,7 +32,7 @@ Non-English storefronts display incorrect pricing when the PHP ICU library versi
 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[UICONTOL Hebrew (Israel)]*.
 2. Create a product with price = 100.
-3. View the product page in the storefronts.
+3. View the product page in the storefront.
 
 <u>Expected results</u>:
 
@@ -41,7 +41,7 @@ The displayed price is not 0.
 <u>Actual results</u>:
 
 After briefly appearing as 100, the price is immediately updated to 0.
-(Issue happens to older PHP ICU libraries 63.1 - 74.1)
+(This issue affects PHP ICU library versions 63.1 to 74.1.)
 
 ## Apply the patch
 
