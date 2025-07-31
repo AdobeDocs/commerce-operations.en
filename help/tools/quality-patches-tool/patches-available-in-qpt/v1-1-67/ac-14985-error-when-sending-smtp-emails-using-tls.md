@@ -31,10 +31,10 @@ An error occurs when sending email using Simple Mail Transfer Protocol (SMTP) wi
 <u>Steps to reproduce</u>:
 
 1. Set up the SMTP configuration as follows:
- * Transport: SMTP
- * Host: url.to.smtp.host
- * Port: 587
- * SSL: TLS
+* Transport: SMTP
+* Host: url.to.smtp.host
+* Port: 587
+* SSL: TLS
 
 <u>Expected results</u>:
 
