@@ -819,7 +819,7 @@ feature: Configuration
            - [ACP2E-3918: Checkout failure for company customers using in-store pickup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
         - v1.1.67 {#v1-1-67}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
-           - [AC-14985: SMTP mail sent with TLS returns error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-smtp-mail-sent-with-tls-returns-error.md)
+           - [AC-14985: Error when sending SMTP emails using TLS](help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
