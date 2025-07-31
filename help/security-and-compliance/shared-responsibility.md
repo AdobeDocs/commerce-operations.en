@@ -815,6 +815,7 @@ Merchants are responsible for synchronizing data between environments.
 | Custom AEM EDS implementation |  | R  |
 | Any other custom storefront implementation |  | R  |
 
+{style="table-layout:auto"}
 
 ### Network services
 
