@@ -30,7 +30,6 @@ An error occurs when sending email using Simple Mail Transfer Protocol (SMTP) wi
 
 <u>Steps to reproduce</u>:
 
-1. 
 1. Set up the SMTP configuration as follows:
  - Transport: SMTP
  - Host: url.to.smtp.host
