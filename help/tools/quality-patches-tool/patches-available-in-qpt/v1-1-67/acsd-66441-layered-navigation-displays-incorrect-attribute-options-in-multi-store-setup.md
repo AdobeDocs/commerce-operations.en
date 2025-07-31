@@ -32,7 +32,7 @@ Layered Navigation on the frontend includes attribute values from other stores, 
 
 1. Create a secondary website, store, and store view.
 1. Create a configurable product using a custom attribute (for example, Size).
-1.Assign the configurable product to the Main website and a category.
+1. Assign the configurable product to the Main website and a category.
 1. Reindex all data.
 1. Navigate to the assigned category on the frontend. All size options appear correctly in Layered Navigation.
 1. Unassign two simple products from the Main website and assign them to the Secondary website, or remove them from the Main website.
