@@ -80,13 +80,13 @@ The following table provides the dates for scheduled patch releases (dates are s
 
 Beginning February 2026, Adobe Commerce will move to a monthly patch release schedule with the following strategy:
 
-- **Monthly security updates**—[Isolated patches](versioning-policy.md#isolated-patch) are released monthly and include individual security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support).
+- **Isolated patches**—[Isolated patches](versioning-policy.md#isolated-patch) are released monthly and include individual security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support).
 
-- **Annual patch**—A full [patch](versioning-policy.md#patch-release) for the Adobe Commerce 2.4.x LTS release line (3-year support period) is released annually (May).
+- **Security patches**—At minimium, [security patches](versioning-policy.md#security-patch-release) are released annually (May) for all [supported](lifecycle-policy.md) release lines (includes regular and extended support). Adobe may release additional security patches in October, but it is not guaranteed.
 
-- **Biannual security patches**—[Security patches](versioning-policy.md#security-patch-release) are released twice a year (May and October) for all [supported](lifecycle-policy.md) release lines (includes regular and extended support).
+- **Patch**—A full [patch](versioning-policy.md#patch-release) for the Adobe Commerce 2.4.x LTS release line (3-year support period) is released annually (May).
 
-- **Biannual beta patches**—Two [beta patches](versioning-policy.md#beta-patch-release) for the Adobe Commerce 2.4.x LTS release line are released twice a year (February and October).
+- **Beta patches**—Two [beta patches](versioning-policy.md#beta-patch-release) for the Adobe Commerce 2.4.x LTS release line are released twice a year (March and October).
 
 See the following image for details:
 
