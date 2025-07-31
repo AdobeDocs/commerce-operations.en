@@ -1,13 +1,14 @@
 ---
-title: 'AC-14985: SMTP mail sent with TLS returns error'
-description: Apply the AC-14985 patch to fix the Adobe Commerce issue where an error occues when sending SMTP mail with TLS. .
+title: 'AC-14985: Error when sending SMTP emails using TLS'
+description: Apply the AC-14985 patch to fix the Adobe Commerce issue where an error occurs when sending Simple Mail Transfer Protocol (SMTP) email using Transport Layer Security (TLS).
 feature: Configuration
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# AC-14985: SMTP mail sent with TLS returns error
+# AC-14985: Error when sending SMTP emails using TLS
 
-The AC-14985 patch fixes the issue where error when sending emails with TLS. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is AC-14985. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The AC-14985 patch fixes an issue where an error occurs when sending Simple Mail Transfer Protocol (SMTP) email using Transport Layer Security (TLS). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is AC-14985. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,11 +26,12 @@ The AC-14985 patch fixes the issue where error when sending emails with TLS. Thi
 
 ## Issue
 
-Issue where error when sending emails with TLS.
+An error occurs when sending email using Simple Mail Transfer Protocol (SMTP) with Transport Layer Security (TLS) enabled.
 
 <u>Steps to reproduce</u>:
 
-1. Setup the SMTP config as following:
+1. 
+1. Set up the SMTP configuration as follows:
  - Transport: SMTP
  - Host: url.to.smtp.host
  - Port: 587
@@ -37,11 +39,11 @@ Issue where error when sending emails with TLS.
 
 <u>Expected results</u>:
 
-Email is sent without further issues.
+The email sends successfully without errors.
 
 <u>Actual results</u>:
 
-Error happens:
+The following error appears:
 
 ```
 error:1408F10B:SSL routines:ssl3_get_record:wrong version number [] []
