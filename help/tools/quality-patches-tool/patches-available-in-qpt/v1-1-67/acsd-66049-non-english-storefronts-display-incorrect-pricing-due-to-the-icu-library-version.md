@@ -3,6 +3,7 @@ title: 'ACSD-66049: Non-English storefronts display incorrect pricing due to the
 description: Apply the ACSD-66049 patch to fix the Adobe Commerce issue where incorrect pricing displayed on non-English storefronts due to ICU library version mismatch in older PHP environments (versions 63.1 to 74.1).
 feature: Content
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66049: Non-English storefronts display incorrect pricing due to the ICU library version
@@ -29,9 +30,9 @@ Issue where non-English storefronts display incorrect pricing due to the ICU lib
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL Stores]** > Config > General > Locale > Locale Options. **[!UICONTROL Configure Locale]** = *[UICONTOL Hebrew (Israel)]*.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[UICONTOL Hebrew (Israel)]*.
 2. Create a product with price = 100.
-3. View the product page in the frontend.
+3. View the product page in the storefronts.
 
 <u>Expected results</u>:
 
