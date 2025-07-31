@@ -29,7 +29,7 @@ Issue where non-English storefronts display incorrect pricing due to the ICU lib
 
 <u>Steps to reproduce</u>:
 
-1. Go to Stores > Config > General > Locale > Locale Options. Configure Locale = "Hebrew (Israel)".
+1. Go to **[!UICONTROL Stores]** > Config > General > Locale > Locale Options. **[!UICONTROL Configure Locale]** = *[UICONTOL Hebrew (Israel)]*.
 2. Create a product with price = 100.
 3. View the product page in the frontend.
 
