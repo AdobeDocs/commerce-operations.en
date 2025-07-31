@@ -30,11 +30,11 @@ Issue where `row_total_incl_tax` is returned as a near-zero residual value in th
 <u>Steps to reproduce</u>:
 
 1. Create product with price = 25 and special price = 16.99.
-2. Set Tax Class = Taxable Goods and configure Tax Rule with 20% rate.
-3. Create a Sales Rule with a 100% discount and a coupon code.
-4. Go to Stores > Configuration > Sales > Tax. Configure tax settings.
+2. Set **[!UICONTROL Tax Class]** with **[!UICONTROL Default Tax Class for Product]** > **[!UICONTROL Taxable Goods]** and configure a tax rule with 20% rate.
+3. Create a aales rule with a 100% discount and a coupon code.
+4. On the _Admin_ sidebar, go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]**.
 5. Enable the free shipping method.
-6. Add product to cart via Storefront and apply coupon.
+6. Add product to cart via Storefront and apply the coupon.
 7. Place the order with the applicable tax zone.
 8. Generate an admin token via REST API.
 9. Retrieve order details via REST API.
