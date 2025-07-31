@@ -31,13 +31,13 @@ Layered Navigation on the frontend includes attribute values from other stores, 
 <u>Steps to reproduce</u>:
 
 1. Create a secondary website, store, and store view.
-2. Create a configurable product using a custom attribute (for example, Size).
-3.Assign the configurable product to the Main website and a category.
-4. Reindex all data.
-5. Navigate to the assigned category on the frontend. All size options appear correctly in Layered Navigation.
-6. Unassign two simple products from the Main website and assign them to the Secondary website, or remove them from the Main website.
-7. Reindex all data.
-8. Revisit the frontend category page and check the Layered Navigation.
+1. Create a configurable product using a custom attribute (for example, Size).
+1.Assign the configurable product to the Main website and a category.
+1. Reindex all data.
+1. Navigate to the assigned category on the frontend. All size options appear correctly in Layered Navigation.
+1. Unassign two simple products from the Main website and assign them to the Secondary website, or remove them from the Main website.
+1. Reindex all data.
+1. Revisit the frontend category page and check the Layered Navigation.
 
 <u>Expected results</u>:
 
