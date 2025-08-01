@@ -373,25 +373,3 @@ export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAME
 >[!INFO]
 >
 >Ensure the JSON encoded array is properly quoted and/or escaped if needed, to prevent the OS from corrupting the encoded string.
-
-### Queue configuration override example
-
-This feature is particularly useful for environments where you need different queue configurations between staging and production, such as different AMQP virtual hosts:
-
-**Staging environment:**
-
-```shell
-export MAGENTO_DC__OVERRIDE='{"queue":{"amqp":{"host":"rabbitmq.example.com","port":"5672","user":"magento_user","password":"user_password","virtualhost":"STAGING"},"consumers_wait_for_messages":1}}'
-```
-
-**Production environment:**
-
-```shell
-export MAGENTO_DC__OVERRIDE='{"queue":{"amqp":{"host":"rabbitmq.example.com","port":"5672","user":"magento_user","password":"user_password","virtualhost":"PRODUCTION"},"consumers_wait_for_messages":1}}'
-```
-
-In both cases, the `env.php` file can contain default or fallback queue configuration, but the environment-specific settings from `MAGENTO_DC__OVERRIDE` will take precedence.
-
->[!INFO]
->
->To verify that the override is working correctly, connect to your external service (such as RabbitMQ) and confirm that messages are being sent to the correct destination as specified in the environment variable.
