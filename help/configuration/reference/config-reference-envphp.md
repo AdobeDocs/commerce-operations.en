@@ -369,6 +369,7 @@ Now, set it as the value of the `MAGENTO_DC__OVERRIDE` OS variable.
 ```shell
 export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
 ```
+
 >[!INFO]
 >
 >Ensure the JSON encoded array is properly quoted and/or escaped if needed, to prevent the OS from corrupting the encoded string.
