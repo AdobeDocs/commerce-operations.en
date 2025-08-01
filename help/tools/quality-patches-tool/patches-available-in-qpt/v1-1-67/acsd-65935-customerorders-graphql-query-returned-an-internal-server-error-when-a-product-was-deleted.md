@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-65935: `customerOrders` GraphQL query returned an internal server error when a product was deleted'
-description: Apply the ACSD-65935 patch to fix the Adobe Commerce issue where the `customerOrders` GraphQL query returned an internal server error when a product was deleted.
-feature: 
+title: 'ACSD-65935: `customerOrders` GraphQL query returned an internal server error when a product is deleted'
+description: Apply the ACSD-65935 patch to fix the Adobe Commerce issue where the `customerOrders` GraphQL query returned an internal server error when a product is deleted.
+feature: Orders, GraphQL
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-65935: `customerOrders` GraphQL query returned an internal server error when a product was deleted
+# ACSD-65935: `customerOrders` GraphQL query returned an internal server error when a product is deleted
 
-The ACSD-65935 patch fixes the issue where the `customerOrders` GraphQL query returned an internal server error when a product was deleted. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-65935. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65935 patch fixes the issue where the `customerOrders` GraphQL query returned an internal server error when a product is deleted. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-65935. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,14 +26,14 @@ The ACSD-65935 patch fixes the issue where the `customerOrders` GraphQL query re
 
 ## Issue
 
-Issue where the `customerOrders` GraphQL query returned an internal server error when a product was deleted.
+The `customerOrders` GraphQL query returned an internal server error when a product is deleted.
 
 <u>Steps to reproduce</u>:
 
-1. Create a few simple products.
-2. Create a customer and place order with two products from the frontend.
-3. Go to backend and delete one product.
-3. Create customer token:
+1. Create products.
+2. Create a customer and place an order with two products from the frontend.
+3. Go to the backend and delete one product.
+3. Create a customer token:
 
 ```
 https://localhost/pub/graphql
@@ -43,7 +44,7 @@ mutation {
 }
 ```
 
-4. Get list of orders with "eligible_for_return" filter (used in PWA when getting list of customers orders):
+4. Retrieve the list of orders using the `eligible_for_return` filter (used in PWA to fetch customer orders):
 
 ```
 https://localhost/pub/graphql
@@ -65,17 +66,21 @@ https://localhost/pub/graphql
 
 <u>Expected results</u>:
 
-Order list should be collected without errors.
+
+Order list is collected without errors.
 
 <u>Actual results</u>:
 
 Exception : "Internal server error"
 
+```
 [2025-05-16T23:42:15.174025+00:00] report.ERROR: Call to a member function getIsReturnable() on null
 
 {"exception":"[object] (GraphQL\\Error\\Error(code: 0): Call to a member function getIsReturnable() on null at /var/www/html/localhost/vendor/webonyx/graphql-php/src/Error/Error.php:170) [previous exception] [object] (Error(code: 0): Call to a member function getIsReturnable() on null at /var/www/html/localhost/magento2ee/app/code/Magento/Rma/Helper/Data.php:644)"}
 
 []
+```
+
 
 ## Apply the patch
 
