@@ -342,7 +342,15 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 
 To override the existing `env.php` configuration options with an OS environment variable, the array element of the configuration must be JSON encoded and set as a value of the `MAGENTO_DC__OVERRIDE` OS variable.
 
+When `MAGENTO_DC__OVERRIDE` is set, the Commerce framework bypasses the corresponding values in `env.php` and reads the configuration directly from the environment variable. The values in `env.php` remain unchanged but are ignored for the overridden configuration sections.
+
+>[!IMPORTANT]
+>
+>The `MAGENTO_DC__OVERRIDE` variable completely bypasses the specified configuration sections in `env.php`. This behavior is different from individual `MAGENTO_DC_` variables, which have lower priority than `env.php` values.
+
 If you need to override multiple configuration options, assemble them all in a single array before JSON encoding.
+
+### Basic override example
 
 For example, let's override the following `env.php` configurations:
 
@@ -361,7 +369,28 @@ Now, set it as the value of the `MAGENTO_DC__OVERRIDE` OS variable.
 ```shell
 export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
 ```
-
 >[!INFO]
 >
 >Ensure the JSON encoded array is properly quoted and/or escaped if needed, to prevent the OS from corrupting the encoded string.
+
+### Queue configuration override example
+
+This feature is particularly useful for environments where you need different queue configurations between staging and production, such as different AMQP virtual hosts:
+
+**Staging environment:**
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"queue":{"amqp":{"host":"rabbitmq.example.com","port":"5672","user":"magento_user","password":"user_password","virtualhost":"STAGING"},"consumers_wait_for_messages":1}}'
+```
+
+**Production environment:**
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"queue":{"amqp":{"host":"rabbitmq.example.com","port":"5672","user":"magento_user","password":"user_password","virtualhost":"PRODUCTION"},"consumers_wait_for_messages":1}}'
+```
+
+In both cases, the `env.php` file can contain default or fallback queue configuration, but the environment-specific settings from `MAGENTO_DC__OVERRIDE` will take precedence.
+
+>[!INFO]
+>
+>To verify that the override is working correctly, connect to your external service (such as RabbitMQ) and confirm that messages are being sent to the correct destination as specified in the environment variable.
