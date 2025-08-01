@@ -350,8 +350,6 @@ When `MAGENTO_DC__OVERRIDE` is set, the Commerce framework bypasses the correspo
 
 If you need to override multiple configuration options, assemble them all in a single array before JSON encoding.
 
-### Basic override example
-
 For example, let's override the following `env.php` configurations:
 
 ```conf
