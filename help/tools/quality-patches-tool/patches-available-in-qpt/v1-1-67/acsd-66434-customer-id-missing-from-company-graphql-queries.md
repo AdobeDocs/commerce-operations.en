@@ -45,26 +45,26 @@ mutation {
 1. Use the generated token to retrieve the customer's company structure with the following [!DNL GraphQL] query:
 
 ```
-query{
- company{
- id
- name
- legal_name
- structure{
- items {
- entity {
- __typename
- ... on Customer {
- firstname
- lastname
- email
- job_title
- id
- }
- }
- }
- }
- }
+query {
+  company {
+    id
+    name
+    legal_name
+    structure {
+      items {
+        entity {
+          __typename
+          ... on Customer {
+            firstname
+            lastname
+            email
+            job_title
+            id
+          }
+        }
+      }
+    }
+  }
 }
 ```
 
