@@ -26,7 +26,7 @@ The ACSD-65935 patch fixes the issue where the `customerOrders` GraphQL query re
 
 ## Issue
 
-The `customerOrders` GraphQL query returned an internal server error when a product is deleted.
+The `customerOrders` GraphQL query returns an internal server error when a product is deleted.
 
 <u>Steps to reproduce</u>:
 
