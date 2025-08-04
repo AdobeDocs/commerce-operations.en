@@ -1,7 +1,7 @@
 ---
 title: 'ACSD-66441: Layered Navigation displays incorrect attribute options in multi-store setup'
 description: Apply the ACSD-66441 patch to fix the Adobe Commerce issue where Layered Navigation displays attributes from other stores incorrectly in a multi-store setup.
-feature: Catalog, Search
+feature: Catalog Management, Search
 role: Admin, Developer
 type: Troubleshooting
 ---
