@@ -795,6 +795,28 @@ Merchants are responsible for synchronizing data between environments.
 
 {style="table-layout:auto"}
 
+#### Live Search
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Availability of Live Search service| R |   |
+
+{style="table-layout:auto"}
+
+#### Quality of storefront events (data collection) to power Product Recommendations and Live Search output
+
+|     | Adobe | Merchant |
+| --- | --- | --- |
+| Core theme (Luma) | R |   |
+| Custom theme |  |  R |
+| Core PWA implementation | R |   |
+| Custom PWA implementation |  | R  |
+| Core AEM EDS implementation (Commerce Boilerplate) | R |   |
+| Custom AEM EDS implementation |  | R  |
+| Any other custom storefront implementation |  | R  |
+
+{style="table-layout:auto"}
+
 ### Network services
 
 #### Image Optimization
