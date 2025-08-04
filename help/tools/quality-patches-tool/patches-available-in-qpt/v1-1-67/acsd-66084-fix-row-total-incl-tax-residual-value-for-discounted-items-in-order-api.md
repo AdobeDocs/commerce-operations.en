@@ -32,11 +32,11 @@ Issue where `row_total_incl_tax` is returned as a near-zero residual value in th
 1. Create a product with a price and a special price. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > Click **[!UICONTROL Add Product]** > set **[!UICONTROL Price]** to $25 and **[!UICONTROL Special Price]** to $16.99 under **[!UICONTROL Advanced Pricing]**.
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]** and add a 20% rate. Then go to **[!UICONTROL Tax Rules]** and create a rule and assign
 **[!UICONTROL Taxable Goods]** as the product tax class.
-1. Create sales rule with a 100% and a coupon. Go to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** and add a rule with a 100% discount and then use **[!UICONTROL Specific Coupon]** and enter your code.
+1. Create a sales rule with a 100% discount and a coupon. Go to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** and add a rule with a 100% discount and then use **[!UICONTROL Specific Coupon]** and enter your code.
 1. Configure tax settings. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** >  **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** > configure tax settings.
 1. Enable free shipping. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]**  > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL Free Shipping]**. Set **[!UICONTROL Enabled]** to **Yes** and adjust settings.
 1. Add the product to cart and apply the coupon from the storefront. Go to the product page and select **[!UICONTROL Add to Cart]**. Go to the shopping cart, enter and apply the coupon code.
-1. Place the order with the applicable tax zone. Go to **[!UICONTROL Checkout]** > use a shipping address that matches your tax zone. Click **[!UICONTROL Place Order]**.
+1. Place the order with the applicable tax zone.
 1. Generate an admin token (API) via REST API.
 1. Retrieve order details via REST API.
 1. Check `row_total_incl_tax` in the response. 
