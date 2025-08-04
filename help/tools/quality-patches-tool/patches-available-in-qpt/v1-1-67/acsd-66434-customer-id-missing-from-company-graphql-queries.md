@@ -4,8 +4,8 @@ description: Apply the ACSD-66434 patch to fix the Adobe Commerce issue where [!
 feature: B2B, GraphQL
 role: Admin, Developer
 type: Troubleshooting
+exl-id: cd83c868-29d8-4d7c-9067-af7597056d35
 ---
-
 # ACSD-66434: [!UICONTROL Customer ID] missing from company [!DNL GraphQL] queries
 
 The ACSD-66434 patch fixes the issue where **[!UICONTROL Customer ID]** is missing from company [!DNL GraphQL] queries. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66434. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
