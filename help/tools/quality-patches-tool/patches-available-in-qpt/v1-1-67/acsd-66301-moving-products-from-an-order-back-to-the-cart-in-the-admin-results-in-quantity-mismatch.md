@@ -37,7 +37,7 @@ Issue where moving products from an order back to the cart in the Admin results 
 6. Add the product to the order.
 7. Update quantity = *4* in the main order section.
 8. Click **[!UCONTROL Update Items and Quantities]** button.
-9. Click Action > **[!Move to Shopping Cart]** dropdown.
+9. Transfer the selected items from the order back into the customer's shopping cart.
 
 <u>Expected results</u>:
 
