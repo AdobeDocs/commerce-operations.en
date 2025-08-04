@@ -70,7 +70,7 @@ Order list is collected without errors.
 
 <u>Actual results</u>:
 
-Exception : "Internal server error"
+Exception : *Internal server error*
 
 ```
 [2025-05-16T23:42:15.174025+00:00] report.ERROR: Call to a member function getIsReturnable() on null
