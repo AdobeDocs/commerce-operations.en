@@ -25,7 +25,7 @@ The ACSD-66084 patch fixes the issue where `row_total_incl_tax` is returned as a
 
 ## Issue
 
-Issue where `row_total_incl_tax` is returned as a near-zero residual value in the order API response instead of 0.00 for fully discounted items.
+The `row_total_incl_tax` is returned as a near-zero residual value in the order API response instead of 0.00 for fully discounted items.
 
 <u>Steps to reproduce</u>:
 
@@ -33,7 +33,7 @@ Issue where `row_total_incl_tax` is returned as a near-zero residual value in th
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]** and add a 20% rate. Then go to **[!UICONTROL Tax Rules]** and create a rule and assign
 **[!UICONTROL Taxable Goods]** as the product tax class.
 1. Create a sales rule with a 100% discount and a coupon. Go to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** and add a rule with a 100% discount and then use **[!UICONTROL Specific Coupon]** and enter your code.
-1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** >  **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** > configure tax settings.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** >  **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** > and configure tax settings.
 1. Enable free shipping. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]**  > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL Free Shipping]**. Set **[!UICONTROL Enabled]** to **Yes** and adjust settings.
 1. Go to the product page and select **[!UICONTROL Add to Cart]**. Go to the shopping cart and apply the coupon code.
 1. Place the order with the applicable tax zone.
