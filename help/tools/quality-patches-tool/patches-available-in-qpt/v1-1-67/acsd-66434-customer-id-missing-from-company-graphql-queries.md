@@ -31,7 +31,7 @@ The [!DNL GraphQL] company query returns `null` for the **[!UICONTROL Customer I
 <u>Steps to reproduce</u>:
 
 1. Install Adobe Commerce 2.4-develop with B2B and Inventory modules.
-1. From the Admin, enable B2B features and create a test company.
+1. From the Commerce Admin, enable B2B features and create a test company.
 1. Generate a bearer token for the company admin using the following [!DNL GraphQL] mutation:
 
 ```
