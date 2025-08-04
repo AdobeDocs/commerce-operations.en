@@ -26,13 +26,13 @@ The ACSD-66049 patch fixes the issue where non-English storefronts display incor
 
 ## Issue
 
-Non-English storefronts display incorrect pricing when the PHP ICU library versions 63.1-74.1 are used.
+Non-English storefronts display incorrect pricing when the PHP ICU library versions 63.1-74.1 are used.  
 
 <u>Steps to reproduce</u>:
-
+1. Validate your `INTL_ICU_VERSION` by running: `php -r "echo INTL_ICU_VERSION;`.
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[UICONTOL Hebrew (Israel)]*.
-2. Create a product with price = 100.
-3. View the product page in the storefront.
+1. Create a product with price = 100.
+1. View the product page in the storefront.
 
 <u>Expected results</u>:
 
