@@ -34,7 +34,6 @@ The `customerOrders` GraphQL query returned an internal server error when a prod
 1. Create a customer and place an order with two products from the frontend.
 1. Go to the backend and delete one product.
 1. Create a customer token:
-
 ```
 https://localhost/pub/graphql
 mutation {
