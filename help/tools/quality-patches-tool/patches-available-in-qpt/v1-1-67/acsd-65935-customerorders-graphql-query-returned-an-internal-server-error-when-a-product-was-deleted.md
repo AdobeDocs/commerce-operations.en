@@ -31,9 +31,9 @@ The `customerOrders` GraphQL query returned an internal server error when a prod
 <u>Steps to reproduce</u>:
 
 1. Create products.
-2. Create a customer and place an order with two products from the frontend.
-3. Go to the backend and delete one product.
-3. Create a customer token:
+1. Create a customer and place an order with two products from the frontend.
+1. Go to the backend and delete one product.
+1. Create a customer token:
 
 ```
 https://localhost/pub/graphql
@@ -44,7 +44,7 @@ mutation {
 }
 ```
 
-4. Retrieve the list of orders using the `eligible_for_return` filter (used in PWA to fetch customer orders):
+1. Retrieve the list of orders using the `eligible_for_return` filter (used in PWA to fetch customer orders):
 
 ```
 https://localhost/pub/graphql
