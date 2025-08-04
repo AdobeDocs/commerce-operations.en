@@ -29,14 +29,14 @@ Issue where moving products from an order back to the cart in the Admin results 
 
 <u>Steps to reproduce</u>:
 
-1. Create a user in Frontend.
-2. Add the product to the shopping cart with quantity = 5.
-3. Go back to admin - go to user account where you add the quantity.
-4. Click on new order.
-5. On the left panel you can see the customer activities and you will be able to see it which they added over the frontend.
-6. Add product to the order from the left panel by using checkbox and "->" button.
-7. Update Qty=4 in the main order section.
-8. Click Update Items and quantities button.
+1. Create a user through the storefront.
+2. Add the product to the shopping cart with quantity = *5*.
+3. Go back to the admin - go to the user account where you add the quantity.
+4. Click on a new order and you will be able to see it which they added over the frontend.
+5. On the left panel you can see the customer activities adding the product and the quantity. 
+6. Add a product to the order.
+7. Update Qty= *4* in the main order section.
+8. Click **[!UCONTROL Update Items and Quantities]** button.
 9. Click Action > "move to shopping cart" dropdown.
 
 <u>Expected results</u>:
