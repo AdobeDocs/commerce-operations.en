@@ -1,0 +1,69 @@
+---
+title: 'ACSD-67039: Customer records were not saved due to validation of the rp_token system attribute'
+description: Apply the ACSD-67039 patch to fix the Adobe Commerce issue where encoding diacritics causes validation breaks on rp_token.
+rp_token is excluded from attribute validation, and diacritics are allowed only for email as intended.
+feature: Customers, Admin Workspace
+role: Admin, Developer
+---
+
+# ACSD-67039: Customer records were not saved due to validation of the rp_token system attribute
+
+The ACSD-67039 patch fixes the issue where customer records were not saved due to validation of the rp_token system attribute and diacritics validation is now applied only to the resulting customer email. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-67039. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+
+## Affected products and versions
+
+**The patch is created for Adobe Commerce version:**
+
+* Adobe Commerce (all deployment methods) 2.4.6-p9
+
+**Compatible with Adobe Commerce versions:**
+
+* Adobe Commerce (all deployment methods) 2.4.6-p9 - 2.4.6-p11
+
+>[!NOTE]
+>
+>The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
+
+## Issue
+
+Issue where customer records were not saved due to validation of the rp_token system attribute and diacritics validation is now applied only to the resulting customer email.
+
+<u>Steps to reproduce</u>:
+
+1. Install Magento 2.4.4 version.
+2. Create a customer.
+3. Upgrade Magento to 2.4.6 from 2.4.4 earlier version where customer is already created.
+4. Set the encryption key as below in `env.php`:
+d337b914e91ff703b1e94ba4156aadf0
+5. Set below values into database for any customer under customer_entity table:
+-> rp_token as incr4869
+-> rp_token_created_at as "2021-04-29 20:06:14"
+6. Go to Admin -> Customers -> All Customers.
+7. Edit the customer for which updated the above values.
+8. Click on "Save Customer" or "Save and Continue Edit".
+
+<u>Expected results</u>:
+
+Values are saved successfully.
+
+<u>Actual results</u>:
+
+The customer record is not saved, and the admin user sees the error message, "Something went wrong while saving the customer."
+The system.log contains the following error:
+
+```
+report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete multibyte character in input string in /vendor/magento/module-eav/Model/Attribute/Data/Text.php on line 190
+```
+
+## Apply the patch
+
+To apply individual patches, use the following links depending on your deployment method:
+
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+
+## Related reading
+
+To learn more about [!DNL Quality Patches Tool], refer to:
+
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
