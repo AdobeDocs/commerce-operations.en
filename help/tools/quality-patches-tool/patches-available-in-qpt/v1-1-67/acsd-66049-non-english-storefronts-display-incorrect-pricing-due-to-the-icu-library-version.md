@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-66049: Non-English storefronts display incorrect pricing due to the ICU library version'
-description: Apply the ACSD-66049 patch to fix the Adobe Commerce issue where incorrect pricing displayed on non-English storefronts due to ICU library version mismatch in older PHP environments (versions 63.1 to 74.1).
+description: Apply the ACSD-66049 patch to fix the Adobe Commerce issue where non-English storefronts display incorrect pricing due to ICU library version mismatch in older PHP environments (versions 63.1 to 74.1).
 feature: Products
 role: Admin, Developer
 type: Troubleshooting
