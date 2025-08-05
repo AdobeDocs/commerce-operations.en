@@ -2,8 +2,105 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jul 22 21:07:39 2025
+updated: Tue Jul 29 18:41:04 2025
 entries:
+- description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.67](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview).'
+  versions: ''
+  type: new-topic, qpt
+  date: July 28, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1476
+  merge_commit: 39393ec8ddebce7deb9ab533ff272887d04b28d6
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-66041
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-66041-ireland-ie-postcodes-were-not-searchable-for-pickup-locations-due-to-a-missing-countryid).
+  versions: ''
+  type: new-topic, qpt
+  date: July 25, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1446
+  merge_commit: 52e0b2f2333047ae7e203422e699292299a8b9f6
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACP2E-3918
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup).
+  versions: ''
+  type: new-topic, qpt
+  date: July 25, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1440
+  merge_commit: 4c7650bcc4058fde70c798bc151ed98d2308aa65
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-65848
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65848-categories-in-admin-are-loading-very-slow).
+  versions: ''
+  type: new-topic, qpt
+  date: July 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1444
+  merge_commit: 39806b93bb81a8ea9da73075effd9a219a1b6188
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added the [detailed description of the issue fixed by the ACSD-65913
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65913-opensearch-threw-an-illegal-argument-exception-for-categories-with-products-having-the-same-price).
+  versions: ''
+  type: new-topic, qpt
+  date: July 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1445
+  merge_commit: edefc780462fe9cf05e1b12d657c450393f15a2b
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added a highlight about the TinyMCE version downgrade from 7 to 6.8.5
+    in the February 2025 security patch release notes.<br/>- [2.4.7-p4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4)<br/>-
+    [2.4.6-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9)<br/>-
+    [2.4.5-p11](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11)<br/>-
+    [2.4.4-p12](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12)
+  versions: ''
+  type: technical
+  date: July 24, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1470
+  merge_commit: c0e4de35cf4af2548d602c68ed309d161e8488c3
+  contributor: jmatthew
+  membership:
+  labels:
+  - technical
+- description: Added the [detailed description of the issue fixed by the ACSD-65750
+    patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65750-graphql-route-query-returned-products-out-of-order-in-page-builder-products-content-types).
+  versions: ''
+  type: new-topic, qpt
+  date: July 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1441
+  merge_commit: c853f485dc07be20020e28ba81a4f9bef517966e
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Added more guidance to the [on-premises installation overview](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+    to help users understand what they're about to learn and set expectations.
+  versions: ''
+  type: major-update
+  date: July 23, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1466
+  merge_commit: 0e7af8c03c56a72a5a2af6a9b49d20651fd2452a
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+  - feedback
 - description: Added the [detailed description of the issue fixed by the ACSD-65777
     patch in the QPT 1.1.66 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request).
   versions: ''
