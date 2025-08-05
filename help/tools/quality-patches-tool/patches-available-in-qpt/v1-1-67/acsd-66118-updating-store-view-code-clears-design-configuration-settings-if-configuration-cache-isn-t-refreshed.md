@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-66118: Updating store view code clears Design Configuration settings if configuration cache isn’t refreshed'
-description: Apply the ACSD-66118 patch to fix the Adobe Commerce issue where updating the store view code clears the design configuration (theme and custom settings) if the configuration cache isn’t properly refreshed.
+title: 'ACSD-66118: Updating [!UICONTROL Store View Code] clears [!UICONTROL Design Configuration] settings if [!UICONTROL Configuration Cache] isn’t refreshed'
+description: Apply the ACSD-66118 patch to fix the Adobe Commerce issue where updating the [!UICONTROL Store View Code] clears the [!UICONTROL Design Configuration] (theme and custom settings) if the [!UICONTROL Configuration Cache] isn’t properly refreshed.
 feature: Cache, Configuration, Themes
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-66118: Updating store view code clears Design Configuration settings if configuration cache isn’t refreshed
+# ACSD-66118: Updating **[!UICONTROL Store View Code]** clears **[!UICONTROL Design Configuration]** settings if **[!UICONTROL Configuration Cache]** isn’t refreshed
 
-The ACSD-66118 patch fixes the issue where updating the store view code clears Design Configuration settings if the configuration cache is not refreshed. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66118. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66118 patch fixes the issue where updating the **[!UICONTROL Store View Code]** clears **[!UICONTROL Design Configuration]** settings if the **[!UICONTROL Configuration Cache]** isn't refreshed. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66118. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,24 +26,24 @@ The ACSD-66118 patch fixes the issue where updating the store view code clears D
 
 ## Issue
 
-Issue where updating the store view code clears Design Configuration settings if the configuration cache is not refreshed.
+**[!UICONTROL Design Configuration]** settings (such as theme and custom settings) are cleared when updating the **[!UICONTROL Store View Code]** field, if the **[!UICONTROL Configuration Cache]** isn't refreshed.
 
 <u>Steps to reproduce</u>:
 
-1. Log in to Admin panel.
-2. Navigate to Stores > Settings > All Stores.
-3. Edit an existing Store View that has a custom theme set in Content > Design > Configuration.
-4. Change the Code field (e.g., from storeview_1 to storeview_main).
-5. Save the Store View.
-6. Refresh or reopen the Content > Design > Configuration page for the updated Store View, and you may see no theme selected.
+1. Log in to **[!UICONTROL Admin]** panel.
+2. Navigate to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL All Stores]**.
+3. Edit a Store View that has a custom theme configured in **[!UICONTROL Content]** > *[!UICONTROL Design]* > **[!UICONTROL Configuration]**.
+4. Change the [!UICONTROL Code] field (for example, from `storeview_1` to `storeview_main`).
+5. Save the **[!UICONTROL Store View]**.
+6. Refresh or reopen the **[!UICONTROL Content]** > *[!UICONTROL Design]* > **[!UICONTROL Configuration]** page for the updated **[!UICONTROL Store View]**, and no theme will be selected.
 
 <u>Expected results</u>:
 
-The design configuration (theme and custom settings) remains intact after changing the store view code.
+After updating the **[!UICONTROL Store View Code]**, the **[!UICONTROL Design Configuration]** (including the theme and custom settings) should remain intact.
 
 <u>Actual results</u>:
 
-The design configuration is not displayed.
+The **[!UICONTROL Design Configuration]** isn't displayed.
 
 ## Apply the patch
 
