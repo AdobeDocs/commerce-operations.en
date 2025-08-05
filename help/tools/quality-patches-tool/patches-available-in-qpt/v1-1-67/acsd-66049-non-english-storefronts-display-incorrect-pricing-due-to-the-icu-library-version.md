@@ -26,7 +26,7 @@ The ACSD-66049 patch fixes the issue where non-English storefronts display incor
 
 ## Issue
 
-Non-English storefronts display incorrect pricing when the PHP ICU library versions 63.1-74.1 are used.  
+Non-English storefronts display incorrect pricing when older PHP ICU library versions (63.1 to 74.1) are used.  
 
 <u>Steps to reproduce</u>:
 1. Validate your `INTL_ICU_VERSION` by running: `php -r "echo INTL_ICU_VERSION;`.
