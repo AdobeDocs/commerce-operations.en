@@ -1,14 +1,13 @@
 ---
-title: 'ACSD-66233: Admins can't add products due to unresponsive product list popup'
-description: Apply the ACSD-66233 patch to fix the Adobe Commerce issue where the admins can't add products to categories because the [!UICONTROL Add Product] popup in Visual Merchandiser loads indefinitely.
-feature: Inventory, Merchandising
+title: 'ACSD-66233: Admins unable add products due to unresponsive product list popup'
+description: Apply the ACSD-66233 patch to fix the Adobe Commerce issue where admins are unable to add products to categories because the [!UICONTROL Add Product] popup in Visual Merchandiser loads indefinitely.
 role: Admin, Developer
 type: Troubleshooting
 ---
 
-# ACSD-66233: Admins can't add products due to unresponsive product list popup
+# ACSD-66233: Admins unable to add products due to unresponsive product list popup
 
-The ACSD-66233 patch fixes an issue where admins can't add products to categories because the [!UICONTROL Add Product] popup in Visual Merchandiser loads indefinitely. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66233. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66233 patch fixes an issue where admins are unable to add products to categories because the [!UICONTROL Add Product] popup in Visual Merchandiser loads indefinitely. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66233. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
