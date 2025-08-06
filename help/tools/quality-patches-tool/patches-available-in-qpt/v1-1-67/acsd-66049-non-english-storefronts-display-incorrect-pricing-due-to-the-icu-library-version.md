@@ -31,8 +31,8 @@ Non-English storefronts display incorrect pricing when older PHP ICU library ver
 <u>Steps to reproduce</u>:
 
 1. Check ICU Version:
-   - Connect to the server via SSH and run the command: `php -a`
-   - At the prompt, enter: `echo INTL_ICU_VERSION;`
+   * Connect to the server via SSH and run the command: `php -a`
+   * At the prompt, enter: `echo INTL_ICU_VERSION;`
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[UICONTOL Hebrew (Israel)]*.
 1. Create a product with price = 100.
 1. View the product page in the storefront.
