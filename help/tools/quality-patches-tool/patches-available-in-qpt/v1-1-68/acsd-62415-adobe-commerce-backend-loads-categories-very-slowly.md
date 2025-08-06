@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-62415: Adobe Commerce backend loads categories very slowly'
-description: Apply the ACSD-62415 patch to fix the Adobe Commerce issue where improved performance of admin category page in case of large number of anchor categories.
+title: 'ACSD-62415: Adobe Commerce backend loads [!UICONTROL Categories] very slowly'
+description: Apply the ACSD-62415 patch to fix the Adobe Commerce issue where the performance of the [!UICONTROL Categories] page in the [!UICONTROL Admin] panel is improved when a large number of anchor categories are present.
 feature: Admin Workspace
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-62415: Adobe Commerce backend loads categories very slowly
+# ACSD-62415: Adobe Commerce backend loads **[!UICONTROL Categories]** very slowly
 
-The ACSD-62415 patch fixes the issue where Adobe Commerce backend loads categories very slowly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62415. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62415 patch fixes the issue where Adobe Commerce backend loads **[!UICONTROL Categories]** very slowly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62415. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,20 +26,20 @@ The ACSD-62415 patch fixes the issue where Adobe Commerce backend loads categori
 
 ## Issue
 
-Issue where Adobe Commerce backend loads categories very slowly.
+The **[!UICONTROL Categories]** page in the **[!UICONTROL Admin]** panel loads very slowly when a large number of anchor categories are present. 
 
 <u>Steps to reproduce</u>:
 
-1. Generate 3K anchor categories
-1. Open Catalog -> Categories page in admin menu
+1. Generate 3K anchor categories.
+1. Open **[!UICONTROL Catalog]** > **[!UICONTROL Categories]** page in the **[!UICONTROL Admin]** panel.
 
 <u>Expected results</u>:
 
-Loading should be fast. Query should not be repeated 1K times
+The **[!UICONTROL Categories]** page loads quickly, and the query should not be repeated 1K times.
 
 <u>Actual results</u>:
 
-Loading takes from 7 to 20 seconds. Query was run more than 1K times.
+Loading takes 7 to 20 seconds, and the query is run more than 1K times.
 
 ## Apply the patch
 
