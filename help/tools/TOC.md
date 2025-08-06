@@ -822,7 +822,7 @@ feature: Configuration
            - [ACSD-66434: [!UICONTROL Customer ID] missing from company [!DNL GraphQL] queries](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
         - v1.1.68 {#v1-1-68}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
-           - [ACSD-62415: Adobe Commerce backend loads categories very slowly](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)
+           - [ACSD-62415: Adobe Commerce backend loads [!UICONTROL Categories] very slowly](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
