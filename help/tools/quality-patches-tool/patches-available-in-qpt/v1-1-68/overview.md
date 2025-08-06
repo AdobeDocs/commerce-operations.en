@@ -13,7 +13,7 @@ QPT v1.1.68 includes the following patches:
 1. **ACSD-58131**: Presence of a 0-byte image in the media gallery prevented all images in the directory from being displayed or selected.
 1. **ACSD-62146**: Selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1.
 1. **ACSD-62415**: Adobe Commerce backend loads categories very slowly.
-1. **ACSD-65938**: Gift card emails were sent even when the invoice creation failed.
+1. **[ACSD-65938](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-65938-gift-card-emails-were-sent-even-when-the-invoice-creation-failed.md)**: Gift card emails were sent even when the invoice creation failed.
 1. **ACSD-66072**: Related products are not returned via GraphQL on the Product Detail Page due to an internal server error when [!UICONTROL Related Products Rule] is configured.
 1. **ACSD-66082**: Can't update a product's swatch image through product import.
 1. **ACSD-66179**: Canceling an invoice with the "Not Capture" payment type results in a 404 error page.
