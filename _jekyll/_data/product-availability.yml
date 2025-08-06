@@ -159,6 +159,8 @@ services:
       Marketplace: https://commercemarketplace.adobe.com/magento-payment-services.html
       Release Notes: https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes
     support:
+      - core: 2.4.9
+        version: 2.12.0 (PHP 8.3)
       - core: 2.4.8
         version: 2.11.0 (PHP 8.3)
       - core: 2.4.7
