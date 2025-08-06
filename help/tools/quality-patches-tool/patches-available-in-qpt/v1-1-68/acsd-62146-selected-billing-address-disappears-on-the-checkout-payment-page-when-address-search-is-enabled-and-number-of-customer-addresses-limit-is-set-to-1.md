@@ -1,14 +1,13 @@
 ---
 title: 'ACSD-62146: Selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1'
-description: Apply the ACSD-62146 patch to fix the Adobe Commerce issue where if "Number of Customer Addresses Limit" is configured to 1, and the customer has more than one address, the selected billing address would disappear after reloading the page.
-The checkout payment page will now retain the selected billing address when address search is enabled.
+description: Apply the ACSD-62146 patch to fix the Adobe Commerce issue where the selected billing address disappears on the checkout payment page when address search is enabled and the "Number of Customer Addresses Limit" is set to 1.The checkout payment page will now retain the selected billing address when address search is enabled.
 feature: Customers, Checkout
 role: Admin, Developer
 ---
 
 # ACSD-62146: Selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1
 
-The ACSD-62146 patch fixes the issue where the selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62146. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-62146 patch fixes the issue where the selected billing address disappears on the checkout payment page when address search is enabled and the *Number of Customer Addresses Limit* is set to 1. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62146. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -26,11 +25,11 @@ The ACSD-62146 patch fixes the issue where the selected billing address disappea
 
 ## Issue
 
-Issue where the selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1.
+The selected billing address disappears on the checkout payment page when address search is enabled and the *Number of Customer Addresses Limit* is set to 1.
 
 <u>Steps to reproduce</u>:
 
-1. Enable Address Search navigating tot Store > Configuration > Sales > Checkout > Checkout Options
+1. Enable Address Search navigating tot **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Opentions]** .
 1. Set Number of Customer Addresses Limit to 1
 1. Create a customer and add two different addresses.
 1. Add a product to cart and go to checkout step
