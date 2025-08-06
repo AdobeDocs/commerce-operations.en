@@ -20,7 +20,7 @@ QPT v1.1.68 includes the following patches:
 1. **ACSD-66233**: Admin users couldn't add products to categories due to Add Product popup not loading.
 1. **ACSD-66506**: Backend error occurred when previously assigned products of a Shared Catalog were deleted and new ones assigned.
 1. **ACSD-66865**: Saving catalog price rules invalidates indexers and provides an alternative to reindex only affected products.
-1. **ACSD-66889**: Error during inventory reindex in CLI.
+1. **[ACSD-66889](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66889-error-during-inventory-reindex-in-cli.md)**: Error during inventory reindex in CLI.
 1. **ACSD-66963**: EstimateTotals mutation returns null for discounts when a discount code is applied to a cart with virtual products.
 1. **ACSD-66965**: Print option on Requisition List page causes an error.
 1. **ACSD-67039**: Customer records were not saved due to validation of the rp_token system attribute.
