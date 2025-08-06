@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACSD-62415: Adobe Commerce backend loads **[!UICONTROL Categories]** very slowly
 
-The ACSD-62415 patch fixes the issue where Adobe Commerce backend loads **[!UICONTROL Categories]** very slowly. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62415. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-62415 patch fixes the issue where the performance of the **[!UICONTROL Categories]** page in the **[!UICONTROL Admin]** panel is improved when a large number of anchor categories are present. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62415. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
