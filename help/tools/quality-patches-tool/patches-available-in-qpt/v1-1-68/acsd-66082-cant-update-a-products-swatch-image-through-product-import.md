@@ -1,11 +1,11 @@
 ---
-title: 'ACSD-66082: Can't update a product's swatch image through product import'
+title: 'ACSD-66082: Cannot update the swatch image of a product through product import'
 description: Apply the ACSD-66082 patch to fix the Adobe Commerce issue where uploading a CSV file with the swatch_image field set to EMPTY_VALUE to unset swatch images causes the import process to fail with an error.
 feature: Products, Data Import/Export, Media
 role: Admin, Developer
 ---
 
-# ACSD-66082: Can't update a product's swatch image through product import
+# ACSD-66082: Cannot update the swatch image of a product through product import
 
 The ACSD-66082 patch fixes the issue where it was not possible to update the swatch image of a product through product import. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66082. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
@@ -25,35 +25,35 @@ The ACSD-66082 patch fixes the issue where it was not possible to update the swa
 
 ## Issue
 
-Issue where it was not possible to update the swatch image of a product through product import.
+Uploading a CSV file with the `swatch_image` field set to `EMPTY_VALUE` to unset swatch images causes the import process to fail with an error.
 
 <u>Steps to reproduce</u>:
 
-1. Create a simple product with SKU: ABC.
-1. Upload a PNG image named testing.png in `var/import/images/`.
+1. Create a simple product. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Products]**. Click the down arrow next to the **[!UICONTROL Add Product]** button and choose **[!UICONTROL Simple Product]**. Set its **[!UICONTROL SKU]** to *ABC*.
+1. Upload a PNG image named *testing.png* to `var/import/images/`.
 1. Create a CSV file with the following content:
 
-```
-sku,swatch_image,swatch_image_label
-ABC,testing.png,testing
-```
+    ```
+    sku,swatch_image,swatch_image_label
+    ABC,testing.png,testing
+    ```
 
-1. Import the file via System > Import:
-    1. Entity type : Products
-    1. Import Behavior : Add/update
-    1. The import is successful and the swatch had been added.
+1. Go to **[!UICONTROL System]** > **[!UICONTROL Import]** to import the file by adjusting the following settings:  
+    * **[!UICONTROL Entity type]** : *Products*
+    * **[!UICONTROL Import Behavior]** : *Add/Update*
+    * Click **[!UICONTROL Choose File]** to select the CSV file created in the previous step to import. The import is successful, and the swatch is added.
 1. Update the CSV with the following content:
 
-```
-sku,swatch_image,swatch_image_label
-ABC,__EMPTY__VALUE__,__EMPTY__VALUE__
-```
+    ```
+    sku,swatch_image,swatch_image_label
+    ABC,__EMPTY__VALUE__,__EMPTY__VALUE__
+    ```
 
 1. Repeat the import process.
 
 <u>Expected results</u>:
 
-The swatch image gets unset.
+The swatch image is unset.
 
 <u>Actual results</u>:
 
