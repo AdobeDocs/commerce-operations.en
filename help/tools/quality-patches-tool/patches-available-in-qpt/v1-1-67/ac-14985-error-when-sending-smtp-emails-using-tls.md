@@ -26,7 +26,7 @@ The AC-14985 patch fixes an issue where an error occurs when sending Simple Mail
 
 ## Issue
 
-An error occurs when sending email using Simple Mail Transfer Protocol (SMTP) with Transport Layer Security (TLS) enabled.
+An error occurs when sending email via SMTP with TLS enabled.
 
 <u>Steps to reproduce</u>:
 
