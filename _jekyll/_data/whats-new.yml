@@ -2,8 +2,32 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Tue Jul 29 18:41:04 2025
+updated: Tue Aug 5 02:22:43 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-66434
+    patch in the QPT 1.1.67 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries).
+  versions: ''
+  type: new-topic, qpt
+  date: August 4, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1485
+  merge_commit: '05318ff4ce4ee13b0220098aa45baeb9ac9f9889'
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Clarified [shared responsibility](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)
+    for storefront data collection.
+  versions: ''
+  type: major-update
+  date: August 1, 2025
+  link: https://github.com/AdobeDocs/commerce-operations.en/pull/154
+  merge_commit: eed27ac2a355fe140261d2159f53868b66fc8dd7
+  contributor: shiftedreality
+  membership:
+  labels:
+  - internal
+  - major-update
 - description: 'Added [Overview: Quality Patches Tool (QPT) v1.1.67](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview).'
   versions: ''
   type: new-topic, qpt
