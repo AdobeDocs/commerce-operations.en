@@ -3,6 +3,7 @@ title: 'ACSD-62146: Selected billing address disappears on the checkout payment 
 description: Apply the ACSD-62146 patch to fix the Adobe Commerce issue where the selected billing address disappears on the checkout payment page when address search is enabled and the "Number of Customer Addresses Limit" is set to 1.The checkout payment page will now retain the selected billing address when address search is enabled.
 feature: Customers, Checkout
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-62146: Selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1
@@ -45,7 +46,7 @@ Shipping address is visible when billing and shipping addresses are the same.
 
 <u>Actual results</u>:
 
-Neither the default billing address nor the set shipping addresses are displayed.
+Default billing address and selected shipping address are not visible.
 
 ## Apply the patch
 
