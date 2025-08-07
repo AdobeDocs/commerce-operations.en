@@ -26,18 +26,18 @@ The ACSD-66441 patch fixes the issue where Layered Navigation displays attribute
 
 ## Issue
 
-Layered Navigation on the frontend includes attribute values from other stores, even when those products are not available in the current store view. 
+Layered Navigation on the storefront includes attribute values from other stores, even when those products are not available in the current store view. 
 
 <u>Steps to reproduce</u>:
 
 1. Create a secondary website, store, and store view.
-1. Create a configurable product using a custom attribute (for example, Size).
-1. Assign the configurable product to the Main website and a category.
+1. Create a configurable product using a custom attribute (for example, size).
+1. Assign the configurable product to the main website and a category.
 1. Reindex all data.
-1. Navigate to the assigned category on the frontend. All size options appear correctly in Layered Navigation.
-1. Unassign two simple products from the Main website and assign them to the Secondary website, or remove them from the Main website.
+1. Navigate to the assigned category on the storefront. All size options appear correctly in Layered Navigation.
+1. Unassign two simple products from the main website and assign them to the secondary website, or remove them from the main website.
 1. Reindex all data.
-1. Revisit the frontend category page and check the Layered Navigation.
+1. Revisit the storefront category page and check the Layered Navigation.
 
 <u>Expected results</u>:
 
