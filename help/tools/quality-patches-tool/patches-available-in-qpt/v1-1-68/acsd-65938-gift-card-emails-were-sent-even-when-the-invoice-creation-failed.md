@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-65938: Gift card emails were sent even when the invoice creation failed'
-description: Apply the ACSD-65938 patch to fix the Adobe Commerce issue where gift card emails were sent before the invoice was successfully saved and committed; emails are now triggered only after the invoice is properly saved.
+title: 'ACSD-65938: Gift card emails sent even when the invoice creation failed'
+description: Apply the ACSD-65938 patch to fix the Adobe Commerce issue where gift card emails were sent before the invoice was successfully saved and committed, ensuring emails are triggered after the invoice is properly saved.
 feature: Orders, Checkout
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-65938: Gift card emails were sent even when the invoice creation failed
+# ACSD-65938: Gift card emails sent even when the invoice creation failed
 
-The ACSD-65938 patch fixes the issue where gift card emails were sent even when the invoice creation failed. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-65938. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65938 patch fixes the issue where gift card emails were sent before the invoice was successfully saved and committed, ensuring emails are triggered after the invoice is properly saved. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-65938. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,25 +26,33 @@ The ACSD-65938 patch fixes the issue where gift card emails were sent even when 
 
 ## Issue
 
-Issue where gift card emails were sent even when the invoice creation failed.
+Gift card emails were sent even when the invoice creation failed.
 
 <u>Steps to reproduce</u>:
 
-1. Make sure that Admin > Stores > Configuration> Sales > Gift Cards > General Gift Card Settings > Generate Gift Card Account when Orders Item is set to "Invoiced"
-2. Create a new gift card product
-3. Add gift cart product to cart and checkout (you can use check/money order)
-4. place the order.
-5. Edit OrderRepository to simulate an exception during order placement
-6. Send a POST request to "rest/default/V1/order/<ORDER_ID>/invoice" with the following payload: {
-"capture": true,  "notify": true
+1. Log in to the **[!UICONTROL Admin]** panel.
+2. Navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Gift Cards]** > **[!UICONTROL General Gift Card Settings]**, and set **[!UICONTROL Generate Gift Card Account when Order Item]** is to *Invoiced*.
+3. Create a new gift card product.
+4. Add gift cart product to cart and proceed to **[!UICONTROL checkout]** (you can use Check/Money Order as the payment method).
+5. place the order.
+6. Modify the `OrderRepository` to simulate an exception during order placement.
+7. Send a POST request to "rest/default/V1/order/<ORDER_ID>/invoice" with the following payload:
+
+```
+{
+  "capture": true,
+  "notify": true
+}
+```
+
 
 <u>Expected results</u>:
 
-No gift card email should be sent if order fails
+No gift card email should be sent if the invoice creation fails.
 
 <u>Actual results</u>:
 
-sending the gift card email after the order has been failed.
+Gift card email is sent even though the invoice creation has failed.
 
 ## Apply the patch
 
