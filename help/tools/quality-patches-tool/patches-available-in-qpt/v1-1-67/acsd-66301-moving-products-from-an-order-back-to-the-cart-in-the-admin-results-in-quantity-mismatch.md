@@ -27,13 +27,13 @@ The ACSD-66301 patch fixes the issue where moving products from an order back to
 
 ## Issue
 
-Issue where moving products from an order back to the cart in the Admin results in quantity mismatch.
+Issue where moving products from an order back to the cart in the Commerce Admin results in quantity mismatch.
 
 <u>Steps to reproduce</u>:
 
 1. Create a user through the storefront.
 2. Add the product to the shopping cart with quantity = *5*.
-3. Go back to the Commerce admin and go to the user account where you added the quantity.
+3. Go back to the admin and go to the user account where you added the quantity.
 4. Click on a new order.
 5. On the left panel you can see the customer activities adding the product and the quantity. 
 6. Add the product to the order.
