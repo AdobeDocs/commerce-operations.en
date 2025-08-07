@@ -43,7 +43,7 @@ Issue where moving products from an order back to the cart in the Admin results 
 
 <u>Expected results</u>:
 
-Product added to the shopping cart with new QTY = *4*.
+Product added to the shopping cart with new quantity = *4*.
 
 <u>Actual results</u>:
 
