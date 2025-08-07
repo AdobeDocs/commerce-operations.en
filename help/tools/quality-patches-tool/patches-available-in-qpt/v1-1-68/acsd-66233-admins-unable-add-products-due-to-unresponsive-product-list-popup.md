@@ -1,6 +1,7 @@
 ---
 title: 'ACSD-66233: Admins unable add products due to unresponsive product list popup'
 description: Apply the ACSD-66233 patch to fix the Adobe Commerce issue where admins are unable to add products to categories because the [!UICONTROL Add Product] popup in Visual Merchandiser loads indefinitely.
+feature: Inventory, Merchandising
 role: Admin, Developer
 type: Troubleshooting
 ---
