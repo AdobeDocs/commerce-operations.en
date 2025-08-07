@@ -38,12 +38,12 @@ Gift card emails were sent even when the invoice creation failed.
 6. Modify the `OrderRepository` to simulate an exception during order placement.
 7. Send a POST request to "rest/default/V1/order/<ORDER_ID>/invoice" with the following payload:
 
-```
-{
+   ```
+   {
   "capture": true,
   "notify": true
-}
-```
+   }
+   ```
 
 
 <u>Expected results</u>:
