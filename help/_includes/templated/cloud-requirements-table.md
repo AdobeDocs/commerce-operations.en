@@ -57,8 +57,8 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
-      <th>2.4.8</th>
       <th>2.4.8-p1</th>
+      <th>2.4.8</th>
     </tr>
   </thead>
   <tbody>
