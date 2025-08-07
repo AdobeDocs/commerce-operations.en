@@ -109,8 +109,8 @@
   <thead>
     <tr>
       <th>Software dependencies</th>
-      <th>2.4.8</th>
       <th>2.4.8-p1</th>
+      <th>2.4.8</th>
     </tr>
   </thead>
   <tbody>
@@ -180,10 +180,10 @@
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-          7.6
+          7.7
       </td>
       <td>
-          7.7
+          7.6
       </td>
     </tr>
     <tr>
