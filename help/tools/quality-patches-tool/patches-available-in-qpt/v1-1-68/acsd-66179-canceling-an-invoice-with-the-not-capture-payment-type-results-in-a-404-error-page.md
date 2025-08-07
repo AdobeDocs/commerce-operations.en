@@ -3,11 +3,12 @@ title: 'ACSD-66179: Canceling an invoice with the "Not Capture" payment type res
 description: Apply the ACSD-66179 patch to fix the Adobe Commerce issue where canceling an invoice with the "Not Capture" payment type led to a 404 error page.
 feature: Orders, Payments
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66179: Canceling an invoice with the "Not Capture" payment type results in a 404 error page
 
-The ACSD-66179 patch fixes the issue where canceling an invoice created with the "Not Capture" payment type resulted in a 404 error page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66179. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66179 patch fixes the issue where canceling an invoice created with the *Not Capture* payment type resulted in a 404 error page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66179. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,22 +26,22 @@ The ACSD-66179 patch fixes the issue where canceling an invoice created with the
 
 ## Issue
 
-Issue where canceling an invoice created with the "Not Capture" payment type resulted in a 404 error page.
+Canceling an invoice created with the *Not Capture* payment type results in a 404 error page.
 
 <u>Steps to reproduce</u>:
 
-1. Create an order with payment method like PayPal Express Checkout.
-1. Create an invoice. Set Amount to "Not Capture". Submit Invoice.
-1. Open the created Invoice and click "Cancel".
+1. Create an order using a payment method such as PayPal Express Checkout.
+1. Create an invoice. Set **[!UICONTROL Amount]** to *Not Capture*, and submit the invoice.
+1. Open the created invoice and select **[!UICONTROL Cancel]**.
 
 <u>Expected results</u>:
 
-1. Invoice is canceled correctly.
-1. A success message is shown: "You canceled the invoice."
+1. The invoice is canceled successfully.
+1. A success message is displayed: *You canceled the invoice.*
 
 <u>Actual results</u>:
 
-1. A 404 Error "Page Not Found" is displayed.
+1. A 404 error page is displayed: *Page Not Found.*
 
 ## Apply the patch
 
