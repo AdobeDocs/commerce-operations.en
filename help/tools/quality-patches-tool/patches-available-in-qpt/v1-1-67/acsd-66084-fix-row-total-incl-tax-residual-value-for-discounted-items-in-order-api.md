@@ -35,7 +35,7 @@ The `row_total_incl_tax` is returned as a near-zero residual value in the order 
 **[!UICONTROL Taxable Goods]** as the product tax class.
 1. Create a sales rule with a 100% discount and a coupon. Go to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** and add a rule with a 100% discount and then use **[!UICONTROL Specific Coupon]** and enter your code.
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** >  **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** > and configure tax settings.
-1. Enable free shipping. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]**  > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL Free Shipping]**. Set **[!UICONTROL Enabled]** to **Yes** and adjust settings.
+1. Enable free shipping. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]**  > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL Free Shipping]**. Set **[!UICONTROL Enabled]** to **[!UICONTROL Yes]** and adjust settings.
 1. Go to the product page and select **[!UICONTROL Add to Cart]**. Go to the shopping cart and apply the coupon code.
 1. Place the order with the applicable tax zone.
 1. Generate an admin token (API) via REST API.
