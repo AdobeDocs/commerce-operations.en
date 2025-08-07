@@ -4,8 +4,8 @@ description: Apply the ACSD-66049 patch to fix the Adobe Commerce issue where no
 feature: Products
 role: Admin, Developer
 type: Troubleshooting
+exl-id: e667d462-87f6-4db5-bf3f-3213edac2f09
 ---
-
 # ACSD-66049: Non-English storefronts display incorrect pricing due to the ICU library version
 
 The ACSD-66049 patch fixes the issue where non-English storefronts display incorrect pricing due to ICU library version mismatch in older PHP environments (versions 63.1 to 74.1). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66049. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
