@@ -38,7 +38,7 @@ An error occurs when sending email via SMTP with TLS enabled.
 
 <u>Expected results</u>:
 
-The email sends successfully without errors.
+The email is sent successfully without errors.
 
 <u>Actual results</u>:
 
