@@ -43,11 +43,11 @@ Issue where moving products from an order back to the cart in the Admin results 
 
 <u>Expected results</u>:
 
-Product added to the shopping cart with new quantity = *4*.
+Product added to the shopping cart with the new quantity = *4*.
 
 <u>Actual results</u>:
 
-Product added to the shopping cart with old QTY = *5*.
+Product added to the shopping cart with the old quantity = *5*.
 
 ## Apply the patch
 
