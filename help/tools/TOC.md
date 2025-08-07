@@ -819,6 +819,7 @@ feature: Configuration
            - [ACP2E-3918: Checkout failure for company customers using in-store pickup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
         - v1.1.67 {#v1-1-67}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
+           - [ACSD-66049: Non-English storefronts display incorrect pricing due to the ICU library version](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66049-non-english-storefronts-display-incorrect-pricing-due-to-the-icu-library-version.md)
            - [ACSD-66441: Layered Navigation displays incorrect attribute options in multi-store setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-layered-navigation-displays-incorrect-attribute-in-multi-store-setup.md)
            - [AC-14985: Error when sending SMTP emails using TLS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
            - [ACSD-66434: [!UICONTROL Customer ID] missing from company [!DNL GraphQL] queries](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
