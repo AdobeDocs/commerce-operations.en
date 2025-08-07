@@ -1,13 +1,14 @@
 ---
 title: 'ACSD-66889: Error during inventory reindex in CLI'
-description: Apply the ACSD-66889 patch to fix the Adobe Commerce issue where fixes deprecated line of code with proper structure to ensure successful completion of inventory indexer process.
+description: Apply the ACSD-66889 patch to fix the Adobe Commerce issue that triggers an error when running the inventory indexer in the production environment.
 feature: Inventory
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66889: Error during inventory reindex in CLI
 
-The ACSD-66889 patch fixes the issue where fixes deprecated line of code with proper structure to ensure successful completion of inventory indexer process. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66889. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.x.
+The ACSD-66889 patch fixes the error that occurs when running the inventory indexer in the production environment. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66889.
 
 ## Affected products and versions
 
@@ -25,11 +26,12 @@ The ACSD-66889 patch fixes the issue where fixes deprecated line of code with pr
 
 ## Issue
 
-Issue where fixes deprecated line of code with proper structure to ensure successful completion of inventory indexer process.
+When running the inventory indexer in production, the process throws a deprecation warning and fails to complete due to outdated string syntax.
 
 <u>Steps to reproduce</u>:
 
-Execute the following command on the CLI:
+1. Access the Adobe Commerce Cloud production environment.
+1. Run the inventory indexer using the CLI command:
 
 ```
 php bin/magento indexer:reindex inventory
@@ -37,12 +39,11 @@ php bin/magento indexer:reindex inventory
 
 <u>Expected results</u>:
 
-The inventory indexer should rebuild successfully when executed via the CLI
+The CLI rebuilds the inventory indexer successfully.
 
 <u>Actual results</u>:
 
-Inventory indexes remain in "Reindex Required" state.
-Error like:
+The CLI throws a deprecated functionality error, and inventory indexes remain in the *Reindex Required* state:
 
 ```
 Deprecated Functionality: Using ${var} in strings is deprecated, use {$var} instead in /home/vendor/magento/module-elasticsearch-catalog-permissions/Model/Adapter/FieldMapper/Product/FieldProvider/FieldName/Resolver/CategoryPermission.php on line 24
