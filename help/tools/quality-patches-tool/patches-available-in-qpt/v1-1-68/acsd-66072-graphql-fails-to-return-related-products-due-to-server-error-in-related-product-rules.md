@@ -122,16 +122,55 @@ Related products are not returned via GraphQL on the Product Detail Page due to 
 
     ```
 
-
-
-1. ...
-1. ...
-
 <u>Expected results</u>:
-...
+
+The query returns the related product (`config1`).
 
 <u>Actual results</u>:
-...
+
+```graphql
+{
+    "errors": [
+        {
+            "message": "Internal server error",
+            "locations": [
+                {
+                    "line": 10,
+                    "column": 7
+                }
+            ],
+            "path": [
+                "products",
+                "items",
+                0,
+                "related_products"
+            ]
+        }
+    ],
+    "data": {
+        "products": {
+            "items": [
+                {
+                    "id": 4,
+                    "__typename": "ConfigurableProduct",
+                    "uid": "NA==",
+                    "url_key": "config2",
+                    "name": "config2",
+                    "sku": "config2",
+                    "related_products": null
+                }
+            ],
+            "__typename": "Products"
+        }
+    }
+}
+```
+
+The `var/log/exception.log` file contains:
+
+```
+report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/magento2ee/app/code/Magento/TargetRule/Model/ResourceModel/Index.php on line 557
+```
 
 ## Apply the patch
 
