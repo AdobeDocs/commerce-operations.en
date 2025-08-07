@@ -30,7 +30,7 @@ The `customerOrders` GraphQL query returns an internal server error when a produ
 
 <u>Steps to reproduce</u>:
 
-1. Create products.
+1. Create two simple products
 1. Create a customer and place an order with two products from the frontend.
 1. Go to the backend and delete one product.
 1. Create a customer token: 
