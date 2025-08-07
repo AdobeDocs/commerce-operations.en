@@ -4,8 +4,8 @@ description: Apply the ACSD-66441 patch to fix the Adobe Commerce issue where La
 feature: Catalog Management, Search
 role: Admin, Developer
 type: Troubleshooting
+exl-id: d61c6b9e-bbcf-4285-b97b-b1fee67048e5
 ---
-
 # ACSD-66441: Layered Navigation displays incorrect attribute options in multi-store setup
 
 The ACSD-66441 patch fixes the issue where Layered Navigation displays attributes from other stores incorrectly in a multi-store setup. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66441. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.

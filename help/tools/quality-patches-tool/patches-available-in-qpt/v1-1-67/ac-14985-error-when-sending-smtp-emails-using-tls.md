@@ -4,8 +4,8 @@ description: Apply the AC-14985 patch to fix the Adobe Commerce issue where an e
 feature: Configuration
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 98d91421-ebfd-4414-ade3-f25d29541874
 ---
-
 # AC-14985: Error when sending SMTP emails using TLS
 
 The AC-14985 patch fixes an issue where an error occurs when sending Simple Mail Transfer Protocol (SMTP) email using Transport Layer Security (TLS). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is AC-14985. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
