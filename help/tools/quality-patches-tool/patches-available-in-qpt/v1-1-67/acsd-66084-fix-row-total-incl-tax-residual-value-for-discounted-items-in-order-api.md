@@ -3,6 +3,7 @@ title: 'ACSD-66084: `row_total_incl_tax` returns near-zero residual value instea
 description: Apply the ACSD-66084 patch to fix the Adobe Commerce issue where `row_total_incl_tax` returned as a near-zero residual value instead of 0.00 for fully discounted items in the order API response.
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66084: `row_total_incl_tax` returns near-zero residual value instead of 0.00 for fully discounted items in the order API response
