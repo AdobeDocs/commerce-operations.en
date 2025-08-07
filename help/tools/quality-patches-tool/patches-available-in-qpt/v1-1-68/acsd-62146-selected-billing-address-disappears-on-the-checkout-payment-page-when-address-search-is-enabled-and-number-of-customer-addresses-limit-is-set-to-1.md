@@ -33,15 +33,15 @@ The selected billing address disappears on the checkout payment page when addres
 1. Set *Number of Customer Addresses Limit* to 1.
 1. Create a customer and add two addresses.
 1. Add a product to the cart and proceed to checkout.
-1. Click on Change Address link add use the popup to change the address
-1. Select Address 2 and set it as the shipping address
-1. Now Click the Next button and go to payment step
-1. Check My billing and shipping address are the same
-1. Now without making the payment, refresh the page.
+1. Click the Change Address link and use the popup to change the address.
+1. Select Address 2 and set it as the shipping address.
+1. Click the **[!UICONTROL Next]** button to proceed to the payment step.
+1. Verify billing and shipping address are the same.
+1. Refresh the page without making the payment.
 
 <u>Expected results</u>:
 
-Since the billing and shipping addresses are set to be the same, the shipping address should be visible.
+Shipping address is visible when billing and shipping addresses are the same.
 
 <u>Actual results</u>:
 
