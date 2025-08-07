@@ -30,9 +30,9 @@ The selected billing address disappears on the checkout payment page when addres
 <u>Steps to reproduce</u>:
 
 1. Enable Address Search navigating tot **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Opentions]** .
-1. Set Number of Customer Addresses Limit to 1
-1. Create a customer and add two different addresses.
-1. Add a product to cart and go to checkout step
+1. Set *Number of Customer Addresses Limit* to 1.
+1. Create a customer and add two addresses.
+1. Add a product to the cart and proceed to checkout.
 1. Click on Change Address link add use the popup to change the address
 1. Select Address 2 and set it as the shipping address
 1. Now Click the Next button and go to payment step
