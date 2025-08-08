@@ -31,9 +31,9 @@ Gift card emails were sent even when the invoice creation failed.
 <u>Steps to reproduce</u>:
 
 1. Log in to the **[!UICONTROL Admin]** panel.
-2. Navigate to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Gift Cards]** > **[!UICONTROL General Gift Card Settings]**, and set **[!UICONTROL Generate Gift Card Account when Order Item]** is to *Invoiced*.
+2. Navigate to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Gift Cards]** > **[!UICONTROL Gift Card General Settings]**, and set **[!UICONTROL Generate Gift Card Account when Order Item is]** to *Invoiced*.
 3. Create a new gift card product.
-4. Add gift cart product to cart and proceed to **[!UICONTROL checkout]** (you can use Check/Money Order as the payment method).
+4. Add gift cart product to cart and proceed to **[!UICONTROL checkout]** (you can use **[!UICONTROL Check/Money Order]** as the payment method).
 5. place the order.
 6. Modify the `OrderRepository` to simulate an exception during order placement.
 7. Send a POST request to "rest/default/V1/order/<ORDER_ID>/invoice" with the following payload:
