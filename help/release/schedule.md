@@ -48,14 +48,6 @@ The following table provides the dates for scheduled patch releases (dates are s
 <tbody>
   <tr>
   <tr>
-    <td>August 13, 2024</td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
-  </tr>
-  <tr>
-    <td>October 8, 2024</td>
-    <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta patch</a>: 2.4.8-beta1<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
-  </tr>
-  <tr>
     <td>February 11, 2025</td>
     <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta patch</a>: 2.4.8-beta2<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: for 2.4.7, 2.4.6, 2.4.5, and 2.4.4</td>
   </tr>
