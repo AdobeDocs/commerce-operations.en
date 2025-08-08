@@ -42,7 +42,7 @@ Related products are not returned via GraphQL on the Product Detail Page due to 
 1. Navigate to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Related Product Rules]**, then create a new rule with the following settings:
     
     * **[!UICONTROL Priority]**: 1
-    * **[!UICONTROL Applies To]**: **[!UICONTROLRelated Products]**
+    * **[!UICONTROL Applies To]**: **[!UICONTROL Related Products]**
     * **[!UICONTROL Result Limit]**: 10 
     * **[!UICONTROL Products to Match]**: **[!UICONTROL Attribute Set is Default]**  
     * **[!UICONTROL Products to Display]**: `Product Category is the Same as Matched Product Categories`
