@@ -20,8 +20,6 @@ New features, feature updates, cloud infrastructure, and extensibility updates a
 
 The following list provides the dates for scheduled feature, cloud infrastructure, and extensibility releases (dates are subject to change):
 
-- August 13, 2024
-- October 8, 2024
 - February 11, 2025
 - April 8, 2025
 - June 10, 2025
