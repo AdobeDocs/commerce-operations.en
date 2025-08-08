@@ -1,14 +1,14 @@
 ---
-title: 'AC-14985: Error when sending SMTP emails using TLS'
-description: Apply the AC-14985 patch to fix the Adobe Commerce issue where an error occurs when sending Simple Mail Transfer Protocol (SMTP) email using Transport Layer Security (TLS).
-feature: Configuration
+title: 'ACSD-66233: Admins unable add products due to unresponsive product list popup'
+description: Apply the ACSD-66233 patch to fix the Adobe Commerce issue where admins are unable to add products to categories because the [!UICONTROL Add Product] popup in Visual Merchandiser loads indefinitely.
+feature: Inventory, Merchandising
 role: Admin, Developer
 type: Troubleshooting
-exl-id: 98d91421-ebfd-4414-ade3-f25d29541874
+exl-id: 2e01e62d-b6f9-4aa5-9040-7908aa83d422
 ---
-# AC-14985: Error when sending SMTP emails using TLS
+# ACSD-66233: Admins unable to add products due to unresponsive product list popup
 
-The AC-14985 patch fixes an issue where an error occurs when sending Simple Mail Transfer Protocol (SMTP) email using Transport Layer Security (TLS). This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is AC-14985. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66233 patch fixes an issue where admins are unable to add products to categories because the [!UICONTROL Add Product] popup in Visual Merchandiser loads indefinitely. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66233. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -26,27 +26,26 @@ The AC-14985 patch fixes an issue where an error occurs when sending Simple Mail
 
 ## Issue
 
-An error occurs when sending email via SMTP with TLS enabled.
+Issue where the [!UICONTROL Add Product] popup in Visual Merchandiser loads indefinitely, preventing admins from adding products to categories.
 
 <u>Steps to reproduce</u>:
 
-1. Set up the SMTP configuration as follows:
-* Transport: SMTP
-* Host: url.to.smtp.host
-* Port: 587
-* SSL: TLS
+1. Install and enable the inventory modules.
+1. Create a large number of inventory sources (for example, 700).
+1. Create multiple inventory stocks (for example, 12) and assign the inventory sources to them.
+1. Create some products and assign them to the inventory sources.
+1. Create a category.
+1. Expand the [!UICONTROL Products in Category] section.
+1. Click the [!UICONTROL Add Product] button.
+1. Observe the pop-up with the list of products.
 
 <u>Expected results</u>:
 
-The email is sent successfully without errors.
+The product list loads in the popup within a reasonable time.
 
 <u>Actual results</u>:
 
-The following error appears:
-
-```
-error:1408F10B:SSL routines:ssl3_get_record:wrong version number [] []
-```
+The popup loads indefinitely and fails to display the product list.
 
 ## Apply the patch
 
