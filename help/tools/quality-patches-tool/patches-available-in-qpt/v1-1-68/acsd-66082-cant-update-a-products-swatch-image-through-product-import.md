@@ -39,8 +39,8 @@ Uploading a CSV file with the `swatch_image` field set to `EMPTY_VALUE` to unset
     ```
 
 1. Go to **[!UICONTROL System]** > **[!UICONTROL Import]** to import the file by adjusting the following settings:  
-    * **[!UICONTROL Entity type]** : *Products*
-    * **[!UICONTROL Import Behavior]** : *Add/Update*
+    * **[!UICONTROL Entity type]**: *Products*
+    * **[!UICONTROL Import Behavior]**: *Add/Update*
     * Click **[!UICONTROL Choose File]** to select the CSV file created in the previous step to import. The import is successful, and the swatch is added.
 1. Update the CSV with the following content:
 
