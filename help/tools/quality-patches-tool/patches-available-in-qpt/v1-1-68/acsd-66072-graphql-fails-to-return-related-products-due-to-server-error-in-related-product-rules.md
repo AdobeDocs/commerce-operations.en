@@ -30,7 +30,6 @@ Related products are not returned via GraphQL on the Product Detail Page due to 
 
 <u>Steps to reproduce</u>:
 
-
 1. Create configurable products:
     * **Product 1**: `config1` with `option1`
     * **Product 2**: `config2` with `option2`
@@ -39,7 +38,7 @@ Related products are not returned via GraphQL on the Product Detail Page due to 
     * Create a **new category**.
     * Assign both products (`config1` and `config2`) to this category.
 
-1. Navigate to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Related Product Rules]**, then create a new rule with the following settings:
+1. Navigate to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Related Products Rule]**, then create a new rule with the following settings:
     
     * **[!UICONTROL Priority]**: 1
     * **[!UICONTROL Applies To]**: **[!UICONTROL Related Products]**
@@ -179,11 +178,8 @@ To apply individual patches, use the following links depending on your deploymen
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
-
-
 ## Related reading
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
 * [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
-
