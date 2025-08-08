@@ -10,9 +10,9 @@ Adobe continually strives to find the right balance between making product upgra
 
 ## Features, cloud infrastructure, and extensibility
 
-New features and updates for cloud infrastructure and extensibility are released separately from patch releases. You can access these updates through modules, extensions, tools, or web services. Examples include:
+New features, feature updates, cloud infrastructure, and extensibility updates are delivered independently from patch releases and are available through external modules, extensions, tools, or web services. Examples include:
 
-- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—New features and functionality delivered independently from patch releases. For example, Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer.
+- ![Feature icon](../assets/icons/feature.svg) [**Features and functionality**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—New features and functionality delivered independently from patch releases. For example, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Catalog Service, Data Connection, Live Search, and Product Recommendations.
 
 - ![Infrastructure icon](../assets/icons/servers.svg) [**Cloud infrastructure**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)—New features and enhancements to Adobe Commerce on cloud infrastructure and the Cloud Tools Suite for Commerce packages, which deploy and manage Adobe Commerce installations and upgrades on the Cloud platform.
 
@@ -36,12 +36,6 @@ Adobe also releases [patches](versioning-policy.md#patch-release) for each suppo
 
 In addition to the scheduled quality, security, and beta patches listed on this page, Adobe provides access to [individual patches](versioning-policy.md#individual-patch) through the [Quality Patches Tool](../tools/quality-patches-tool/usage.md). The tool allows you to apply, revert, and view general information about all individual patches that are available for the installed version of Adobe Commerce.
 
-Click one of the following tabs to view the release schedule for each year:
-
->[!BEGINTABS]
-
->[!TAB 2025 schedule]
-
 The following table provides the dates for scheduled patch releases (dates are subject to change):
 
 <table>
@@ -52,6 +46,7 @@ The following table provides the dates for scheduled patch releases (dates are s
   </tr>
 </thead>
 <tbody>
+  <tr>
   <tr>
     <td>February 11, 2025</td>
     <td><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta patch</a>: 2.4.8-beta2<br><img alt="Patch release icon" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security patches</a>: for 2.4.7, 2.4.6, 2.4.5, and 2.4.4</td>
@@ -75,21 +70,3 @@ The following table provides the dates for scheduled patch releases (dates are s
   </tr>
 </tbody>
 </table>
-
->[!TAB 2026 schedule]
-
-Beginning February 2026, Adobe Commerce will move to a monthly patch release schedule with the following strategy:
-
-- **Isolated patches**—[Isolated patches](versioning-policy.md#isolated-patch) are released monthly and include individual security fixes for all [supported](lifecycle-policy.md) release lines (includes regular and extended support).
-
-- **Security patches**—At minimium, [security patches](versioning-policy.md#security-patch-release) are released annually (May) for all [supported](lifecycle-policy.md) release lines (includes regular and extended support). Adobe may release additional security patches in October, but it is not guaranteed.
-
-- **Patch**—A full [patch](versioning-policy.md#patch-release) for the Adobe Commerce 2.4.x LTS release line (3-year support period) is released annually (May).
-
-- **Beta patches**—Two [beta patches](versioning-policy.md#beta-patch-release) for the Adobe Commerce 2.4.x LTS release line are released twice a year (March and October).
-
-See the following image for details:
-
-![2026 Adobe Commerce release calendar](../assets/release/release-calendar.drawio.svg)
-
->[!ENDTABS]
