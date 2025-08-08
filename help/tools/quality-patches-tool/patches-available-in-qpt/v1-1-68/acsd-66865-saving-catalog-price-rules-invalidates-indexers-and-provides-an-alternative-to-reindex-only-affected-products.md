@@ -3,6 +3,7 @@ title: 'ACSD-66865: Saving catalog price rules invalidates indexers and provides
 description: Apply the ACSD-66865 patch to fix the Adobe Commerce issue where  Saving catalog price rules invalidates indexers and provides an alternative to reindex only affected products.
 feature: Price Rules, Price Indexer
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66865: Saving catalog price rules invalidates indexers and provides an alternative to reindex only affected products
@@ -25,24 +26,24 @@ The ACSD-66865 patch fixes the issue where saving catalog price rules invalidate
 
 ## Issue
 
-Issue where saving catalog price rules invalidated indexers and provides alternative to reindex only affected products.
+Saving catalog price rules causes all indexers to be invalidated, triggering full reindexes instead of reindexing only affected products.
 
 <u>Steps to reproduce</u>:
 
-1. Ensure cron is not running and all indexers are set to update on schedule (except customer_grid which can update on save)
-2. Execute a full manual reindex using the "php bin/magento indexer:reindex" command.
-3. At this point, all indexes should be marked as "ready" with 0 items in the backlog.
-4. Create a catalog rule for only one product and ensure it is active (the most obvious one being a rule with a SKU condition.)
-5. Execute the "php bin/magento indexer:status" command to check indexer status.
-6. Number of indexes are marked as "Reindex required" even though there is only one product affected by the change and is present in the backlog.
+1. Ensure cron isn't running and all indexers are set to update on schedule (except customer_grid which can update on save)
+2. Run a full manual reindex using the command: `php bin/magento indexer:reindex`.
+3. Verify all indexes show status "ready" with 0 items in the backlog.
+4. Create an active catalog price rule for a single product (for example, using a SKU condition).
+5. Run the command: `php bin/magento indexer:status` to check indexer status.
+6. Observe that multiple indexes are marked as "Reindex required" even though only one product is affected.
 
 <u>Expected results</u>:
 
-Adobe Commerce retrieves only the data that is actually affected and triggers a partial reindex.
+Only affected product data is identified, and a partial reindex is triggered instead of a full reindex across all indexers.
 
 <u>Actual results</u>:
 
-Adobe Commerce performs full reindexes for changes that affect only a small portion of the product catalog.
+Full reindex is triggered for all indexers, even when only a single product is affected by the catalog price rule.
 
 ## Apply the patch
 
