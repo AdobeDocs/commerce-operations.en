@@ -4,8 +4,8 @@ description: Apply the ACSD-66082 patch to fix the Adobe Commerce issue where up
 feature: Products, Data Import/Export, Media
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 0bfff90e-5f1f-4c87-8a99-efc5bb0d814b
 ---
-
 # ACSD-66082: Cannot update the swatch image of a product through product import
 
 The ACSD-66082 patch fixes the issue where it was not possible to update the swatch image of a product through product import. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66082. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
