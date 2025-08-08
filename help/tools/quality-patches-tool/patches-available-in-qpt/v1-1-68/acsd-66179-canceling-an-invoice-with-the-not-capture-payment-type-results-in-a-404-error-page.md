@@ -4,8 +4,8 @@ description: Apply the ACSD-66179 patch to fix the Adobe Commerce issue where ca
 feature: Orders, Payments
 role: Admin, Developer
 type: Troubleshooting
+exl-id: a7c1827d-fe28-40e2-9ec6-a04b4a5d33ee
 ---
-
 # ACSD-66179: Canceling an invoice with the [!UICONTROL Not Capture] payment type results in a 404 error page
 
 The ACSD-66179 patch fixes the issue where canceling an invoice created with the *[!UICONTROL Not Capture]* payment type resulted in a 404 error page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66179. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
