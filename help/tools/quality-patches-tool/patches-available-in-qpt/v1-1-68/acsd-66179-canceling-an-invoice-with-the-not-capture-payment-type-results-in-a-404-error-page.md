@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-66179: Canceling an invoice with the "Not Capture" payment type results in a 404 error page'
-description: Apply the ACSD-66179 patch to fix the Adobe Commerce issue where canceling an invoice with the "Not Capture" payment type led to a 404 error page.
+title: 'ACSD-66179: Canceling an invoice with the [!UICONTROL Not Capture] payment type results in a 404 error page'
+description: Apply the ACSD-66179 patch to fix the Adobe Commerce issue where canceling an invoice with the [!UICONTROL Not Capture] payment type led to a 404 error page.
 feature: Orders, Payments
 role: Admin, Developer
 type: Troubleshooting
