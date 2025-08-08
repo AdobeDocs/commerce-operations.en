@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-66963: EstimateTotals mutation returns null for discounts when a discount code is applied to a cart with virtual products'
-description: Apply the ACSD-66963 patch to fix the Adobe Commerce issue where the estimateTotals mutation returned null for discounts when a discount code was applied to a cart containing virtual products.
+title: 'ACSD-66963: EstimateTotals mutation returns null for discounts on virtual products'
+description: Apply the ACSD-66963 patch to fix the Adobe Commerce issue where `estimateTotals` returns *null* for discounts when a discount code is applied to a cart with only virtual products.
 feature: GraphQL
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-66963: EstimateTotals mutation returns null for discounts when a discount code is applied to a cart with virtual products
+# ACSD-66963: EstimateTotals mutation returns null for discounts on virtual products
 
-The ACSD-66963 patch fixes the issue where the estimateTotals mutation returned null for discounts when a discount code was applied to a cart containing virtual products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66963. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-66963 patch fixes the issue where `estimateTotals` returns *null* for discounts when a discount code is applied to a cart with only virtual products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66963. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,11 +26,11 @@ The ACSD-66963 patch fixes the issue where the estimateTotals mutation returned 
 
 ## Issue
 
-Issue where the estimateTotals mutation returned null for discounts when a discount code was applied to a cart containing virtual products.
+The `estimateTotals` mutation returns *null* for discounts when a discount code is applied to a cart containing only virtual products.
 
 <u>Steps to reproduce</u>:
 
-1. Create a cart with virtual products only.
+1. Create a cart containing only virtual products.
 1. Apply a discount code:
 
 ```
@@ -72,7 +73,7 @@ mutation {
 
 <u>Expected results</u>:
 
-Discount information is included for virtual products.
+Discount information is included for carts containing only virtual products.
 
 ```
 {
@@ -104,7 +105,7 @@ Discount information is included for virtual products.
 
 <u>Actual results</u>:
 
-Discount information is returned as null for virtual products.
+Discount information returns as *null* for carts with only virtual products.
 
 ```
 {
