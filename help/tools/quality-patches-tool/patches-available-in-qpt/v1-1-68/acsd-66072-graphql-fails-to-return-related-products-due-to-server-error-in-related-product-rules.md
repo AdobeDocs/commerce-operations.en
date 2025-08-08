@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACSD-66072: GraphQL fails to return related products on the Product Detail Page
 
-The ACSD-66072 patch fixes the issue where related products are not returned via GraphQL on the Product Detail Page due to an internal server error when Related Product Rules are configured. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) xxx is installed. The patch ID is ACSD-66072. Please note that the issue is scheduled to be fixed in Adobe Commerce 1.1.68.
+The ACSD-66072 patch fixes the issue where related products are not returned via GraphQL on the Product Detail Page due to an internal server error when **[!UICONTROL Related Products Rule]** is configured. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66072. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -26,26 +26,26 @@ The ACSD-66072 patch fixes the issue where related products are not returned via
 
 ## Issue
 
-Related products are not returned via GraphQL on the Product Detail Page due to an internal server error when "Related Product Rules" are configured.
+Related products are not returned via GraphQL on the Product Detail Page due to an internal server error when **[!UICONTROL Related Products Rule]** is configured.
 
 <u>Steps to reproduce</u>:
 
 
-1. Create Configurable Products:
+1. Create configurable products:
     * **Product 1**: `config1` with `option1`
     * **Product 2**: `config2` with `option2`
 
-1. Create and Assign Category
+1. Create and assign products to a category
     * Create a **new category**.
     * Assign both products (`config1` and `config2`) to this category.
 
-1. Navigate to **Marketing** > **Related Product Rules**, then create a new rule with the following settings:
+1. Navigate to **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Related Product Rules]**, then create a new rule with the following settings:
     
-    * **Priority**: `1`  
-    * **Apply To**: `Related Products`  
-    * **Result Limit**: `10`  
-    * **Products to Match**: `Attribute Set is Default`  
-    * **Products to Display**: `Product Category is the Same as Matched Product Categories`
+    * **[!UICONTROL Priority]**: 1
+    * **[!UICONTROL Applies To]**: **[!UICONTROLRelated Products]**
+    * **[!UICONTROL Result Limit]**: 10 
+    * **[!UICONTROL Products to Match]**: **[!UICONTROL Attribute Set is Default]**  
+    * **[!UICONTROL Products to Display]**: `Product Category is the Same as Matched Product Categories`
 
 1. Run the following Magento CLI commands:
 
@@ -179,9 +179,7 @@ To apply individual patches, use the following links depending on your deploymen
 * Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
 * Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
 
-## Additional steps required after the patch installation
 
-(This section is optional; there might be some steps required after applying the patch to fix the issue.) 
 
 ## Related reading
 
