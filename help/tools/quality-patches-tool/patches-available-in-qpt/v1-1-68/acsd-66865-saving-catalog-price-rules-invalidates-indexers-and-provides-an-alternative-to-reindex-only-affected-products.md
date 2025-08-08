@@ -32,10 +32,10 @@ Saving catalog price rules causes all indexers to be invalidated, triggering ful
 
 1. Ensure cron isn't running and all indexers are set to update on schedule (except customer_grid which can update on save)
 2. Run a full manual reindex using the command: `php bin/magento indexer:reindex`.
-3. Verify all indexes show status "ready" with 0 items in the backlog.
+3. Verify all indexes show status *ready* with 0 items in the backlog.
 4. Create an active catalog price rule for a single product (for example, using a SKU condition).
 5. Run the command: `php bin/magento indexer:status` to check indexer status.
-6. Observe that multiple indexes are marked as "Reindex required" even though only one product is affected.
+6. Observe that multiple indexes are marked as *Reindex required* even though only one product is affected.
 
 <u>Expected results</u>:
 
