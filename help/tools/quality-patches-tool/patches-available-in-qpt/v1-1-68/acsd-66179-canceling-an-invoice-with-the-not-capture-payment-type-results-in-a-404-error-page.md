@@ -41,7 +41,7 @@ Canceling an invoice created with the *[!UICONTROL Not Capture]* payment type re
 
 <u>Actual results</u>:
 
-1. A 404 error page is displayed: *Page Not Found.*
+A 404 error page is displayed: *Page Not Found.*
 
 ## Apply the patch
 
