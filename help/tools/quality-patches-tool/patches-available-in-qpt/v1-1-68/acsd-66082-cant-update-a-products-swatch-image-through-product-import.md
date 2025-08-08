@@ -3,6 +3,7 @@ title: 'ACSD-66082: Cannot update the swatch image of a product through product 
 description: Apply the ACSD-66082 patch to fix the Adobe Commerce issue where uploading a CSV file with the swatch_image field set to EMPTY_VALUE to unset swatch images causes the import process to fail with an error.
 feature: Products, Data Import/Export, Media
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66082: Cannot update the swatch image of a product through product import
