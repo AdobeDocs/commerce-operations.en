@@ -26,7 +26,7 @@ The ACSD-65938 patch fixes the issue where gift card emails were sent before the
 
 ## Issue
 
-Gift card emails were sent even when the invoice creation failed.
+Gift card emails were sent before confirming that the invoice was successfully created and saved, resulting in emails being sent even when invoice creation failed.
 
 <u>Steps to reproduce</u>:
 
