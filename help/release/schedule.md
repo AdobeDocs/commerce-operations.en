@@ -28,7 +28,7 @@ The following list provides the dates for scheduled feature, cloud infrastructur
 
 >[!NOTE]
 >
->Feature, cloud infrastructure, and extensibility releases may vary throughout the year. However, Adobe regularly and continuously releases improvements for these areas between the dates specified on this page. See [What is Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) to learn more about the latest features.
+>Feature, cloud infrastructure, and extensibility releases may vary throughout the year. However, Adobe regularly and continuously releases improvements for these areas between the dates specified on this page. See [What is Adobe Commerce?](https://business.adobe.com/products/magento/magento-commerce.html) to learn more about the latest features.
 
 ## Patches
 
