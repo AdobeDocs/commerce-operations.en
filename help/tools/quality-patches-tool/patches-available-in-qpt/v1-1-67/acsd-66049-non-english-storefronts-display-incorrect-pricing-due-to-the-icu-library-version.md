@@ -33,7 +33,7 @@ Non-English storefronts display incorrect pricing when older PHP ICU library ver
 1. Check ICU Version:
    * Connect to the server via SSH and run the command: `php -a`
    * At the prompt, enter: `echo INTL_ICU_VERSION;`
-1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[UICONTOL Hebrew (Israel)]*.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[!UICONTROL Hebrew (Israel)]*.
 1. Create a product with price = 100.
 1. View the product page in the storefront.
 
@@ -44,7 +44,6 @@ The displayed price is not 0.
 <u>Actual results</u>:
 
 After briefly appearing as 100, the price is immediately updated to 0.
-(This issue affects PHP ICU library versions 63.1 to 74.1.)
 
 ## Apply the patch
 
