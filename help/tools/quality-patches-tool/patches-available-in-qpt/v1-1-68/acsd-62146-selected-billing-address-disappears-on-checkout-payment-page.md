@@ -1,14 +1,14 @@
 ---
-title: 'ACSD-62146: Selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1'
-description: Apply the ACSD-62146 patch to fix the Adobe Commerce issue where the selected billing address disappears on the checkout payment page when address search is enabled and the "Number of Customer Addresses Limit" is set to 1.The checkout payment page will now retain the selected billing address when address search is enabled.
+title: 'ACSD-62146: Selected billing address disappears on checkout payment page'
+description: Apply the ACSD-62146 patch to fix the Adobe Commerce issue where the selected billing address disappears on checkout payment page.
 feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
 ---
 
-# ACSD-62146: Selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1
+# ACSD-62146: Selected billing address disappears on checkout payment page.
 
-The ACSD-62146 patch fixes the issue where the selected billing address disappears on the checkout payment page when address search is enabled and the *Number of Customer Addresses Limit* is set to 1. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62146. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-62146 patch fixes the issue where the selected billing address disappears on checkout payment page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62146. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -30,13 +30,13 @@ The selected billing address disappears on the checkout payment page when addres
 
 <u>Steps to reproduce</u>:
 
-1. Enable Address Search navigating tot **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Opentions]** .
-1. Set *Number of Customer Addresses Limit* to 1.
+1. To enable address search, go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Opentions]** .
+1. Set **[!UICONTROL Number of Customer Addresses Limit]** to 1.
 1. Create a customer and add two addresses.
 1. Add a product to the cart and proceed to checkout.
 1. Click the Change Address link and use the popup to change the address.
-1. Select Address 2 and set it as the shipping address.
-1. Click the **[!UICONTROL Next]** button to proceed to the payment step.
+1. Select Address 2 as the shipping address.
+1. Click the **[!UICONTROL Next]** to proceed to the payment step.
 1. Verify billing and shipping address are the same.
 1. Refresh the page without making the payment.
 
