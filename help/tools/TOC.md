@@ -822,7 +822,7 @@ feature: Configuration
            - [ACSD-66434: [!UICONTROL Customer ID] missing from company [!DNL GraphQL] queries](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
         - v1.1.68 {#v1-1-68}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
-           - [ACSD-62146: Selected billing address disappears on the checkout payment page when address search is enabled and 'Number of Customer Addresses Limit' is set to 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62146-selected-billing-address-disappears-on-the-checkout-payment-page-when-address-search-is-enabled-and-number-of-customer-addresses-limit-is-set-to-1.md)
+           - [ACSD-62146: Selected billing address disappears on checkout payment page](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62146-selected-billing-address-disappears-on-the-checkout-payment-page-when-address-search-is-enabled-and-number-of-customer-addresses-limit-is-set-to-1.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
