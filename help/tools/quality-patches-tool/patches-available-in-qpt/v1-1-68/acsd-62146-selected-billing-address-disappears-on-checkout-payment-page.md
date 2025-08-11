@@ -36,7 +36,7 @@ The selected billing address disappears on the checkout payment page when addres
 1. Add a product to the cart and proceed to checkout.
 1. Click the Change Address link and use the popup to change the address.
 1. Select Address 2 as the shipping address.
-1. Click the **[!UICONTROL Next]** to proceed to the payment step.
+1. Click **[!UICONTROL Next]** to proceed to the payment step.
 1. Verify billing and shipping address are the same.
 1. Refresh the page without making the payment.
 
