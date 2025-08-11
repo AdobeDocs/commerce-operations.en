@@ -6,7 +6,7 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 ---
 
-# ACSD-67039: Customer records were not saved due to validation of the rp_token system attribute
+# ACSD-67039: Customer records weren't saved due to rp_token system attribute validation
 
 The ACSD-67039 patch fixes the issue where customer records were not saved due to validation of the rp_token system attribute and diacritics validation is now applied only to the resulting customer email. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-67039. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
