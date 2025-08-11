@@ -34,7 +34,7 @@ The selected billing address disappears on the checkout payment page when addres
 1. Set **[!UICONTROL Number of Customer Addresses Limit]** to 1.
 1. Create a customer and add two addresses.
 1. Add a product to the cart and proceed to checkout.
-1. Click the Change Address link and use the popup to change the address.
+1. Click **[!UICONTROL Change Address]** and use the popup to change the address.
 1. Select Address 2 as the shipping address.
 1. Click **[!UICONTROL Next]** to proceed to the payment step.
 1. Verify billing and shipping address are the same.
