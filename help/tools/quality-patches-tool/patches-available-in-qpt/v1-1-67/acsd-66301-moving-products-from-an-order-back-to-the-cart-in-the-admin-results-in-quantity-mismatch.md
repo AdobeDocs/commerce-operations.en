@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-66301: Moving products from an order back to the cart in the Commerce Admin results in quantity mismatch'
-description: Apply the ACSD-66301 patch to fix the Adobe Commerce issue where when creating an order from the Admin panel, products in the customer’s cart are not removed after being added to the order.
+description: Apply the ACSD-66301 patch to fix the Adobe Commerce issue where, when creating an order from the Admin panel, products in the customer’s cart are not removed after being added to the order.
 feature: Order, Admin Panel
 role: Admin, Developer
 type: Troubleshooting
