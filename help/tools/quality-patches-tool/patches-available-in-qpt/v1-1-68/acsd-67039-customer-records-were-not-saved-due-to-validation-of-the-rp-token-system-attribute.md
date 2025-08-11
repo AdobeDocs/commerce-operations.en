@@ -31,16 +31,16 @@ Issue where customer records weren't saved due to validation of the `rp_token` s
 <u>Steps to reproduce</u>:
 
 1. Install the Adobe Commerce 2.4.4 version.
-2. Create a customer.
-3. Upgrade Adobe Commerce to version 2.4.6 from the 2.4.4 earlier version where the customer was already created.
-4. Set the encryption key as below in `env.php`:
-d337b914e91ff703b1e94ba4156aadf0
-5. Set below values into database for any customer under customer_entity table:
--> rp_token as incr4869
--> rp_token_created_at as "2021-04-29 20:06:14"
-6. Go to **Admin** > **Customers** > **All Customers**.
-7. Edit the customer for which updated the above values.
-8. Click on **Save Customer** or **Save and Continue Edit**.
+1. Create a customer.
+1. Upgrade Adobe Commerce to version 2.4.6 from the 2.4.4 earlier version where the customer was already created.
+1. Set the encryption key as below in `env.php` =
+*d337b914e91ff703b1e94ba4156aadf0*
+1. Set below values into database for any customer under customer_entity table:
+    *`rp_token` = *incr4869*
+    *`rp_token_created_at` = *2021-04-29 20:06:14*
+1. Go to **Admin** > **Customers** > **All Customers**.
+1. Edit the customer for which updated the above values.
+1. Click on **Save Customer** or **Save and Continue Edit**.
 
 <u>Expected results</u>:
 
@@ -49,7 +49,7 @@ The customer values are saved successfully.
 <u>Actual results</u>:
 
 The customer record isn't saved, and the admin user sees the error message, *Something went wrong while saving the customer.*
-The system.log contains the following error:
+The `system.log` contains the following error:
 
 ```
 report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete multibyte character in input string in /vendor/magento/module-eav/Model/Attribute/Data/Text.php on line 190
