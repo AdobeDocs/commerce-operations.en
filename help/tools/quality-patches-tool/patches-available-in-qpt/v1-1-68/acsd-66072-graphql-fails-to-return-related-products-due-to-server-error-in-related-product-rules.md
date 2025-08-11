@@ -1,11 +1,11 @@
 ---
 title: 'ACSD-66072: GraphQL fails to return related products on the Product Detail Page'
 description: Apply the ACSD-66072 patch to fix the Adobe Commerce issue where related products are not returned via GraphQL on the Product Detail Page due to an internal server error when Related Product Rules are configured.
-feature: GraphQL, Products 
+feature: GraphQL, Products
 role: Admin, Developer
 type: Troubleshooting
+exl-id: a706a710-aed3-41a4-bc87-3150e9ba95f7
 ---
-
 # ACSD-66072: GraphQL fails to return related products on the Product Detail Page
 
 The ACSD-66072 patch fixes the issue where related products are not returned via GraphQL on the Product Detail Page due to an internal server error when **[!UICONTROL Related Products Rule]** is configured. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66072. Please note that the issue is scheduled to be fixed in Adobe Commerce 2.4.9.
