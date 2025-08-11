@@ -35,7 +35,7 @@ Moving products from an order back to the cart in the Commerce Admin results in 
 2. Add a product to the shopping cart with quantity = *5*.
 3. Go to the Admin panel and open the user account where the product was added.
 4. Click **[!UICONTROL Create Order]**.
-5. On the left panel you can see the customer activities adding the product and the quantity. 
+5. In the left panel, you can view customer's activities, including the product and quantity added. 
 6. Add the product to the order.
 7. Update the quantity = *4* in the main order section.
 8. Click **[!UCONTROL Update Items and Quantities]** button.
