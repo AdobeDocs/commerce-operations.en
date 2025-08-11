@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-62146: Selected billing address disappears on checkout payment page'
-description: Apply the ACSD-62146 patch to fix the Adobe Commerce issue where the selected billing address disappears on checkout payment page.
+description: Apply the ACSD-62146 patch to fix the Adobe Commerce issue where the selected billing address disappears on the checkout payment page when address search is enabled and the Number of Customer Addresses Limit is set to 1.
 feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
