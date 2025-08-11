@@ -8,7 +8,7 @@ role: Admin, Developer
 
 # ACSD-67039: Customer records weren't saved due to rp_token system attribute validation
 
-The ACSD-67039 patch fixes the issue where customer records were not saved due to validation of the rp_token system attribute and diacritics validation is now applied only to the resulting customer email. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-67039. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-67039 patch fixes the issue where customer records weren't saved due to validation of the `rp_token` system attribute and diacritics validation was only applied to the resulting customer email. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-67039. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -26,29 +26,29 @@ The ACSD-67039 patch fixes the issue where customer records were not saved due t
 
 ## Issue
 
-Issue where customer records were not saved due to validation of the rp_token system attribute and diacritics validation is now applied only to the resulting customer email.
+Issue where customer records weren't saved due to validation of the `rp_token` system attribute and diacritics validation was only applied to the resulting customer email.
 
 <u>Steps to reproduce</u>:
 
-1. Install Magento 2.4.4 version.
+1. Install the Adobe Commerce 2.4.4 version.
 2. Create a customer.
-3. Upgrade Magento to 2.4.6 from 2.4.4 earlier version where customer is already created.
+3. Upgrade Adobe Commerce to version 2.4.6 from the 2.4.4 earlier version where the customer was already created.
 4. Set the encryption key as below in `env.php`:
 d337b914e91ff703b1e94ba4156aadf0
 5. Set below values into database for any customer under customer_entity table:
 -> rp_token as incr4869
 -> rp_token_created_at as "2021-04-29 20:06:14"
-6. Go to Admin -> Customers -> All Customers.
+6. Go to **Admin** > **Customers** > **All Customers**.
 7. Edit the customer for which updated the above values.
-8. Click on "Save Customer" or "Save and Continue Edit".
+8. Click on **Save Customer** or **Save and Continue Edit**.
 
 <u>Expected results</u>:
 
-Values are saved successfully.
+The customer values are saved successfully.
 
 <u>Actual results</u>:
 
-The customer record is not saved, and the admin user sees the error message, "Something went wrong while saving the customer."
+The customer record isn't saved, and the admin user sees the error message, *Something went wrong while saving the customer.*
 The system.log contains the following error:
 
 ```
