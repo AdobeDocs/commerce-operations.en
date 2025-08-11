@@ -26,7 +26,7 @@ The ACSD-62146 patch fixes the issue where the selected billing address disappea
 
 ## Issue
 
-The selected billing address disappears on the checkout payment page when address search is enabled and the *Number of Customer Addresses Limit* is set to 1.
+The selected billing address disappears on the checkout payment page when address search is enabled and the **[!UICONTROL Number of Customer Addresses Limit]** is set to 1.
 
 <u>Steps to reproduce</u>:
 
