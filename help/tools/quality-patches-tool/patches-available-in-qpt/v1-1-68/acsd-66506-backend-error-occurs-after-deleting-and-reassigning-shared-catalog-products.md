@@ -31,16 +31,16 @@ Issue where the backend throws the error *The product that was requested doesn't
 <u>Steps to reproduce</u>:
 
 1. Create some products using the performance toolkit: `bin/magento setup:perf:generate-fixtures setup/performance-toolkit/profiles/ce/small.xml`
-1. Go to [!UICONTROL [!DNL B2B] Features] Configuration and enable both [!UICONTROL Company] and [!UICONTROL Shared Catalog].
+1. Go to **[!UICONTROL [!DNL B2B] Features]** Configuration and enable both **[!UICONTROL Company]** and **[!UICONTROL Shared Catalog]**.
 1. Create a new Shared Catalog.
 1. Assign all generated products to the newly created Shared Catalog.
-1. Use [!UICONTROL Product Import] to delete a product that was assigned to the Shared Catalog.
+1. Use **[!UICONTROL Product Import]** to delete a product that was assigned to the Shared Catalog.
     1. Export a product filtered by SKU.
-    1. Select [!UICONTROL Import Behavior: Delete], then import the same file.
+    1. Select **[!UICONTROL Import Behavior: Delete]**, then import the same file.
 1. Open the Shared Catalog and configure pricing and structure.
-    1. Select [!UICONTROL Set Pricing and Structure].
-    1. Click [!UICONTROL Next], then [!UICONTROL Generate Catalog].
-    1. Click [!UICONTROL Save].
+    1. Select **[!UICONTROL Set Pricing and Structure]**.
+    1. Click **[!UICONTROL Next]**, then **[!UICONTROL Generate Catalog]**.
+    1. Click **[!UICONTROL Save]**.
 
 <u>Expected results</u>:
 
