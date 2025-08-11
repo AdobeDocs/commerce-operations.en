@@ -32,9 +32,9 @@ The ACSD-66118 patch fixes the issue where updating the **[!UICONTROL Store View
 
 1. Log in to **[!UICONTROL Admin]** panel.
 2. Navigate to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL All Stores]**.
-3. Edit a Store View that has a custom theme configured in **[!UICONTROL Content]** > *[!UICONTROL Design]* > **[!UICONTROL Configuration]**.
-4. Change the [!UICONTROL Code] field (for example, from `storeview_1` to `storeview_main`).
-5. Save the **[!UICONTROL Store View]**.
+3. Edit a store view that has a custom theme configured in **[!UICONTROL Content]** > *[!UICONTROL Design]* > **[!UICONTROL Configuration]**.
+4. Change the **[!UICONTROL Code]** field (for example, from `storeview_1` to `storeview_main`).
+5. Click **[!UICONTROL Save Store View]** to save the changes.
 6. Refresh or reopen the **[!UICONTROL Content]** > *[!UICONTROL Design]* > **[!UICONTROL Configuration]** page for the updated **[!UICONTROL Store View]**, and no theme will be selected.
 
 <u>Expected results</u>:
@@ -43,7 +43,7 @@ After updating the **[!UICONTROL Store View Code]**, the **[!UICONTROL Design Co
 
 <u>Actual results</u>:
 
-The **[!UICONTROL Design Configuration]** isn't displayed.
+The **[!UICONTROL Design Configuration]** is cleared. Theme reverts to default and custom settings are lost.
 
 ## Apply the patch
 
