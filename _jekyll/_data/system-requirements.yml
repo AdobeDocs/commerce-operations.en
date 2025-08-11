@@ -23,24 +23,6 @@
   RabbitMQ: '4.1'
   Valkey: '8'
   Varnish: '7.7'
-2.4.8:
-  Apache: '2.4'
-  AWS Aurora (MySQL): '8.0.mysql_aurora.3.08 or latest available'
-  AWS ElastiCache: ElastiCache version 7.1 for Redis OSS (enhanced)
-  AWS MQ: '3.13 or latest available'
-  AWS OpenSearch: '2.19 or latest available'
-  AWS S3: ✔️
-  Composer: '2.8'
-  MariaDB: '11.4'
-  MySQL: '8.4'
-  New Relic Cloud: '11.5.0.18+, 10.15.0.4+'
-  nginx: '1.26'
-  OpenSearch: '2.19'
-  OpenSearch Cloud: '2'
-  PHP: '8.4, 8.3'
-  RabbitMQ: '4.1'
-  Valkey: '8'
-  Varnish: '7.6'
 2.4.8-p1:
   Apache: '2.4'
   AWS Aurora (MySQL): '8.0.mysql_aurora.3.08 or latest available'
@@ -59,6 +41,24 @@
   RabbitMQ: '4.1'
   Valkey: '8'
   Varnish: '7.7'
+2.4.8:
+  Apache: '2.4'
+  AWS Aurora (MySQL): '8.0.mysql_aurora.3.08 or latest available'
+  AWS ElastiCache: ElastiCache version 7.1 for Redis OSS (enhanced)
+  AWS MQ: '3.13 or latest available'
+  AWS OpenSearch: '2.19 or latest available'
+  AWS S3: ✔️
+  Composer: '2.8'
+  MariaDB: '11.4'
+  MySQL: '8.4'
+  New Relic Cloud: '11.5.0.18+, 10.15.0.4+'
+  nginx: '1.26'
+  OpenSearch: '2.19'
+  OpenSearch Cloud: '2'
+  PHP: '8.4, 8.3'
+  RabbitMQ: '4.1'
+  Valkey: '8'
+  Varnish: '7.6'
 2.4.7-p6:
   Apache: '2.4'
   AWS Aurora (MySQL): 8.0.mysql_aurora.3.08 or latest available

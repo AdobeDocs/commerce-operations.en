@@ -2552,8 +2552,8 @@ _LYNX-382_
 
 Fixed an issue where adding a simple product (part of a grouped product) to the cart returned a placeholder thumbnail image, even when the product had an assigned image.
 Fix Details:
-* The product thumbnail now correctly displays the assigned image if available.
-* The thumbnail selection respects the admin configuration under:
+- The product thumbnail now correctly displays the assigned image if available.
+- The thumbnail selection respects the admin configuration under:
 Stores &gt; Configuration &gt; Sales &gt; Checkout &gt; Shopping Cart &gt; Grouped Product Image.
 This ensures consistent thumbnail behavior for grouped products based on store settings.
 
@@ -2575,8 +2575,8 @@ _LYNX-402_
 
 Resolved an issue where the only_x_left_in_stock attribute always returned 0 for configurable products when added using the parent SKU with options.
 Fix Details:
-* The only_x_left_in_stock value now accurately reflects the stock of the selected child variant instead of the parent SKU.
-* This ensures that stock levels are correctly displayed for configurable product variations in the cart and product pages.
+- The only_x_left_in_stock value now accurately reflects the stock of the selected child variant instead of the parent SKU.
+- This ensures that stock levels are correctly displayed for configurable product variations in the cart and product pages.
 
 _LYNX-403_
 
