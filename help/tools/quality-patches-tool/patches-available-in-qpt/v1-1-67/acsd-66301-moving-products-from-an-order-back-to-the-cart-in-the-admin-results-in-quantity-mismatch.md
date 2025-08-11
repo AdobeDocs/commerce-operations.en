@@ -39,7 +39,7 @@ Moving products from an order back to the cart in the Commerce Admin results in 
 6. Add the product to the order.
 7. Update the quantity = *4* in the main order section.
 8. Click **[!UCONTROL Update Items and Quantities]** button.
-9. Transfer the selected items from the order back into the customer's shopping cart.
+9. Transfer the selected items from the order back to the customer's shopping cart.
 
 <u>Expected results</u>:
 
