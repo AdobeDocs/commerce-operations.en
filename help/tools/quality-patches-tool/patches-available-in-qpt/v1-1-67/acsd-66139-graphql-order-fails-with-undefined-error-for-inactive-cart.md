@@ -36,10 +36,10 @@ GraphQL returns an UNDEFINED error code instead of a specific one when placing a
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
-2. Create new store view in the admin with code=test.
-3. Assign german language to the newly created store view.
-4. Perform `setup:upgrade` and `setup:static-content:deploy -f`.
-5. Perform the following GraphQL query with "Store: test" in headers:
+1. Create new store view in the admin with code=test.
+1. Assign german language to the newly created store view.
+1. Perform `setup:upgrade` and `setup:static-content:deploy -f`.
+1. Perform the following GraphQL query with "Store: test" in headers:
 
 ```
 mutation {
