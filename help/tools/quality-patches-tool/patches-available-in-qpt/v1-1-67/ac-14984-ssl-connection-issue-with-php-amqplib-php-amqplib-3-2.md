@@ -4,8 +4,8 @@ description: Apply the AC-14984 patch to fix the Adobe Commerce issue where SSL 
 feature: System
 role: Admin, Developer
 type: Troubleshooting
+exl-id: cf46cd16-ef09-406a-835a-e5973887248f
 ---
-
 # AC-14984: SSL connection issue with php-amqplib/php-amqplib ^3.2.0
 
 The AC-14984 patch fixes the issue where SSL connection fails with an error when using `php-amqplib/php-amqplib` version `^3.2.0`. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is AC-14984. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
