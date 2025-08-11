@@ -1,14 +1,14 @@
 ---
-title: 'ACSD-66139: GraphQL returns 'UNDEFINED' error for non-existent or inactive cart during order placement'
-description: Apply the ACSD-66139 patch to fix the Adobe Commerce issue where translated error messages during GraphQL order placement return an UNDEFINED error code instead of a specific one.
+title: 'ACSD-66139: GraphQL order fails with 'UNDEFINED' error for inactive cart'
+description: Apply the ACSD-66139 patch to fix the Adobe Commerce issue where GraphQL returns an UNDEFINED error code instead of a specific one when placing an order for a non-existent or inactive cart with translated error messages.
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
 ---
 
-# ACSD-66139: GraphQL returns UNDEFINED error for non-existent or inactive cart during order placement
+# ACSD-66139: GraphQL order fails with 'UNDEFINED' error for inactive cart
 
-The ACSD-66139 patch fixes the issue where GraphQL calls to place an order for a non-existent or inactive cart returned an UNDEFINED error code. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66139. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66139 patch fixes the issue where GraphQL returns an UNDEFINED error code instead of a specific one when placing an order for a non-existent or inactive cart with translated error messages. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66139. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -22,11 +22,11 @@ The ACSD-66139 patch fixes the issue where GraphQL calls to place an order for a
 
 >[!NOTE]
 >
->The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latest version and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
+>The patch might become applicable to other versions with new [!DNL Quality Patches Tool] releases. To check if the patch is compatible with your Adobe Commerce version, update the `magento/quality-patches` package to the latestvers ion and check the compatibility on the [[!DNL Quality Patches Tool]: Search for patches page](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use the patch ID as a search keyword to locate the patch.
 
 ## Issue
 
-Issue where GraphQL calls to place an order for a non-existent or inactive cart returned an UNDEFINED error code.
+GraphQL returns an UNDEFINED error code instead of a specific one when placing an order for a non-existent or inactive cart, if the error message is translated.
 
 <u>Steps to reproduce</u>:
 
