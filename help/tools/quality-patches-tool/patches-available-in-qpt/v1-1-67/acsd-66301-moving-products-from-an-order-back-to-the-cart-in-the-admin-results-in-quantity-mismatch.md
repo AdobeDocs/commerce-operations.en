@@ -33,7 +33,7 @@ Moving products from an order back to the cart in the Commerce Admin results in 
 
 1. Create a user through the storefront.
 2. Add a product to the shopping cart with quantity = *5*.
-3. Go back to the admin and go to the user account where you added the quantity.
+3. Go to the Admin panel and open the user account where the product was added.
 4. Click on a new order.
 5. On the left panel you can see the customer activities adding the product and the quantity. 
 6. Add the product to the order.
