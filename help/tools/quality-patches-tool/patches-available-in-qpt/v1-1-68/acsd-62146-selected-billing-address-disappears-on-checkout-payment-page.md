@@ -6,7 +6,7 @@ role: Admin, Developer
 type: Troubleshooting
 ---
 
-# ACSD-62146: Selected billing address disappears on checkout payment page.
+# ACSD-62146: Selected billing address disappears on checkout payment page
 
 The ACSD-62146 patch fixes the issue where the selected billing address disappears on checkout payment page. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-62146. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
