@@ -822,7 +822,7 @@ feature: Configuration
            - [ACSD-66434: [!UICONTROL Customer ID] missing from company [!DNL GraphQL] queries](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
         - v1.1.68 {#v1-1-68}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
-           - [ACSD-66506: backend error occurred when previously assigned products of a Shared Catalog were deleted and new ones assigned](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66506-backend-error-occurred-when-previously-assigned-products-of-a-shared-catalog-were-deleted-and-new-ones-assigned.md)
+           - [ACSD-66506: Backend error occurs after deleting and reassigning Shared Catalog products](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66506-backend-error-occurs-after-deleting-and-reassigning-shared-catalog-products.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
