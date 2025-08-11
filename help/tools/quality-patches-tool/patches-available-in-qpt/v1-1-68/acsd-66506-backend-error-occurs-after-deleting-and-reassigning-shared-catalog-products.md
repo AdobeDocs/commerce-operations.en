@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-66506: Backend error occurs after deleting and reassigning Shared Catalog products'
-description: Apply the ACSD-66506 patch to fix the Adobe Commerce issue where the backend throws the error “The product that was requested doesn't exist. Verify the product and try again” after deleting previously assigned products and assigning new ones to a Shared Catalog.
+description: Apply the ACSD-66506 patch to fix the Adobe Commerce issue where the backend throws the error *The product that was requested doesn't exist. Verify the product and try again* after deleting previously assigned products and assigning new ones to a Shared Catalog.
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
