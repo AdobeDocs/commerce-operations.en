@@ -30,7 +30,7 @@ The selected billing address disappears on the checkout payment page when addres
 
 <u>Steps to reproduce</u>:
 
-1. To enable address search, go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Opentions]** .
+1. To enable Address Search, go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Options]**.
 1. Set **[!UICONTROL Number of Customer Addresses Limit]** to 1.
 1. Create a customer and add two addresses.
 1. Add a product to the cart and proceed to checkout.
