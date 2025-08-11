@@ -533,16 +533,16 @@ LYNX-382,is_available attribute in CartItemInterface returns true even when sala
 LYNX-395,only_x_left_in_stock attribute in ProductInterface is not accurate on configurable products,"","Fixed an issue where the only_x_left_in_stock attribute in ProductInterface did not accurately reflect the available stock for configurable product variants in the cart. Now, the only_x_left_in_stock value corresponds correctly to the actual variant stock levels, ensuring accurate inventory data is returned in the Cart GQL query.","",Other,false
 LYNX-399,Placeholder thumbnail returns when a simple product added to cart within a grouped product,"","Fixed an issue where adding a simple product (part of a grouped product) to the cart returned a placeholder thumbnail image, even when the product had an assigned image.
 Fix Details:
-* The product thumbnail now correctly displays the assigned image if available.
-* The thumbnail selection respects the admin configuration under:
+- The product thumbnail now correctly displays the assigned image if available.
+- The thumbnail selection respects the admin configuration under:
 Stores > Configuration > Sales > Checkout > Shopping Cart > Grouped Product Image.
 This ensures consistent thumbnail behavior for grouped products based on store settings.","",Other,true
 LYNX-400,Customer's custom option attributes not working with integer values,"",Fixed an issue where customer's custom option attributes did not work when the returned value was an integer. Custom options now correctly handle and return integer values as expected.,"",Other,true
 LYNX-402,Internal server error when trying to get priceDetails for Bundle products with dynamic price,"",Resolved an issue where querying price_details for bundle products with dynamic pricing via GraphQL resulted in an internal server error. This enhancement ensures stable cart queries when working with bundle products configured with dynamic pricing.,"",Other,true
 LYNX-403,only_x_left_in_stock always returns 0 for configurable products,"","Resolved an issue where the only_x_left_in_stock attribute always returned 0 for configurable products when added using the parent SKU with options.
 Fix Details:
-* The only_x_left_in_stock value now accurately reflects the stock of the selected child variant instead of the parent SKU.
-* This ensures that stock levels are correctly displayed for configurable product variations in the cart and product pages.","",Other,true
+- The only_x_left_in_stock value now accurately reflects the stock of the selected child variant instead of the parent SKU.
+- This ensures that stock levels are correctly displayed for configurable product variations in the cart and product pages.","",Other,true
 LYNX-405,GraphQL Error: Unsupported 'file' type in customizable options query,"","Fixed an issue where GraphQL returned an error for customizable options of type 'file' in cart items. The query now correctly returns details for all customizable option types, including file-based options, without causing errors.","",Other,false
 LYNX-411,GraphQL query not returning correct calculated regular price for customizable products,"","Fixed an issue where GraphQL did not return the correct calculated regular price for customizable products. The query now correctly includes the calculated regular price with customizable values applied (e.g., $125) in the prices property, reflecting both the base price and any additional customization costs.","",Other,true
 LYNX-412,AppliedTaxes via EstimatedTotals persist with updated mutations,"","Fixed an issue with the EstimatedTotals mutation where applied taxes persisted on a cart even after updating the region or postcode. The mutation now correctly updates the applied taxes when changing between region and postcode values, ensuring that only the correct tax rule is applied based on the current cart data.","",Other,true
