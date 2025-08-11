@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-66965: Print option on Requisition List page causes an error'
-description: Apply the ACSD-66965 patch to fix the Adobe Commerce issue where with the Requisition List Page Print Option that caused an error.
+title: 'ACSD-66965: [!UICONTROL Print] option on [!UICONTROL Requisition List] page causes an error'
+description: Apply the ACSD-66965 patch to fix an issue in Adobe Commerce where the [!UICONTROL Print] option on the [!UICONTROL Requisition List] page causes an error.
 feature: B2B
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-66965: Print option on Requisition List page causes an error
+# ACSD-66965: **[!UICONTROL Print]** option on **[!UICONTROL Requisition List]** page causes an error
 
-The ACSD-66965 patch fixes the issue where with the Requisition List Page Print Option that caused an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66965. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66965 patch fixes the issue where the **[!UICONTROL Print]** option on the **[!UICONTROL Requisition List]** page causes an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66965. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,25 +26,26 @@ The ACSD-66965 patch fixes the issue where with the Requisition List Page Print 
 
 ## Issue
 
-Issue where with the Requisition List Page Print Option that caused an error.
+**[!UICONTROL Print]** option on the **[!UICONTROL Requisition List]** page causes an error due to a null object reference in `Grid.php`.
 
 <u>Steps to reproduce</u>:
 
-1. Enable company and shared catalog from Stores-> Configuration-> [!DNL B2B] feature-> Enable Requisition list page.
+1. Go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+1. Set **[!UICONTROL Enable Company]**, **[!UICONTROL Enable Shared Catalog]** and **[!UICONTROL Enable Requisition List]** to `Yes`.
 1. Create two simple products.
-1. Login to storefront and open My Account page.
-1. Create requisition list.
-1. Assign both the products to requisition list.
+1. Login to **[!UICONTROL Storefront]** and open **[!UICONTROL My Account]** page.
+1. Create a requisition list.
+1. Assign both the products to the requisition list.
 1. Access the requisition list and list the products.
-1. Click "Print".
+1. Click **[!UICONTROL Print]**.
 
 <u>Expected results</u>:
 
-Print preview is displayed.
+The **[!UICONTROL Print]** option on the **[!UICONTROL Requisition List]** page displays the print preview without errors.
 
 <u>Actual results</u>:
 
-The following error message appears: “An error has happened during application run. See exception log for details.”
+The following error message appears: *An error has happened during application run. See exception log for details.*
 
 ```
 Call to a member function setCollection() on null in /vendor/magento/module-requisition-list/Block/Requisition/View/Items/Grid.php:146
