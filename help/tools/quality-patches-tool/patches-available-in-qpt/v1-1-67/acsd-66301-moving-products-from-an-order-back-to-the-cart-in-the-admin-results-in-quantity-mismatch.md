@@ -27,7 +27,7 @@ The ACSD-66301 patch fixes the issue where moving products from an order back to
 
 ## Issue
 
-Issue where moving products from an order back to the cart in the Commerce Admin results in quantity mismatch.
+Moving products from an order back to the cart in the Commerce Admin results in quantity mismatch.
 
 <u>Steps to reproduce</u>:
 
