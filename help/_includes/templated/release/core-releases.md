@@ -13,7 +13,13 @@
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#highlights-in-v249-alpha2">2.4.9-alpha2</a>
+        </td>
+        <td>August&nbsp;12, 2025</td>
+    </tr>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#highlights-in-v249-alpha1">2.4.9-alpha1</a>
         </td>
         <td>June&nbsp;10, 2025</td>
     </tr><!-- patch_releases -->
@@ -32,6 +38,12 @@ Regular support for the 2.4.8 release line ends on April&nbsp;11, 2028.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p2">2.4.8-p2</a>
+        </td>
+        <td>August&nbsp;12, 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p1">2.4.8-p1</a>
@@ -59,6 +71,12 @@ Regular support for the 2.4.7 release line ends on April&nbsp; 9, 2027.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p7">2.4.7-p7</a>
+        </td>
+        <td>August&nbsp;12, 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p6">2.4.7-p6</a>
@@ -116,6 +134,12 @@ Regular support for the 2.4.6 release line ends on August&nbsp;11, 2026.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p12">2.4.6-p12</a>
+        </td>
+        <td>August&nbsp;12, 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p11">2.4.6-p11</a>
@@ -193,7 +217,7 @@ Regular support for the 2.4.6 release line ends on August&nbsp;11, 2026.
 
 ## 2.4.5
 
-Regular support for the 2.4.5 release line ends on August&nbsp;12, 2025.
+Regular support for the 2.4.5 release line ended on August&nbsp;12, 2025.
 Extended support for the 2.4.5 release line ends on August&nbsp;11, 2026.
 
 <table>
@@ -206,15 +230,15 @@ Extended support for the 2.4.5 release line ends on August&nbsp;11, 2026.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p13">2.4.5-p13</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p14">2.4.5-p14</a>
         </td>
-        <td>June&nbsp;10, 2025</td>
+        <td>August&nbsp;12, 2025</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12">2.4.5-p12</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p13">2.4.5-p13</a>
         </td>
-        <td>April&nbsp; 8, 2025</td>
+        <td>June&nbsp;10, 2025</td>
     </tr>
     <tr>
         <td>
@@ -304,6 +328,12 @@ Extended support for the 2.4.4 release line ends on April&nbsp;14, 2026.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p15">2.4.4-p15</a>
+        </td>
+        <td>August&nbsp;12, 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p14">2.4.4-p14</a>
