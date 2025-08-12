@@ -40,7 +40,7 @@ mutation {
 			cart_id: "cart_id",
 			address: {
 				country_code: US,
-				postcode: "78732"
+				postcode: "12345"
 				region: {
 					region_code: "TX"
 				}
@@ -89,7 +89,7 @@ Discount information is included for carts containing only virtual products.
                             },
                             "label": "A second discount code for testing",
                             "coupon": {
-                                "code": "z3r0c00l"
+                                "code": "discount123"
                             },
                             "applied_to": "ITEM",
                             "type": null
