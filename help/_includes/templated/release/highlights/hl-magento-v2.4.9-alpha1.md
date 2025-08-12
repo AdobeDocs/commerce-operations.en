@@ -49,3 +49,9 @@ _AC-14559_
 #### Migrate DHL integration from outdated DHL Express XML to new MyDHL API RESTful APIs
 
 _AC-13258_
+
+### Security
+
+For the latest information about security bug fixes, see [Adobe Security Bulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+
+{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
