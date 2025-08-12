@@ -4,9 +4,8 @@ description: Apply the ACSD-66301 patch to fix the Adobe Commerce issue where, w
 feature: Orders, Products
 role: Admin, Developer
 type: Troubleshooting
-
+exl-id: 61e0e491-b2dc-4ae0-807e-2ae80d17f9c2
 ---
-
 # ACSD-66301: Moving products from an order back to the cart in the Commerce Admin results in quantity mismatch
 
 The ACSD-66301 patch fixes the issue where moving products from an order back to the cart in the Admin results in quantity mismatch. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66301. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
