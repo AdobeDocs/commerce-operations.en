@@ -37,9 +37,9 @@ GraphQL returns an *UNDEFINED* error code instead of a specific one when placing
 ```
 
 1. Create a store view in the admin with code=test.
-1. Assign german language to the newly created store view.
-1. Perform `setup:upgrade` and `setup:static-content:deploy -f`.
-1. Perform the following GraphQL query with "Store: test" in headers:
+1. Assign German language to the created store view.
+1. Run `setup:upgrade` and `setup:static-content:deploy -f`.
+1. Run the following GraphQL query with header 'Store:test':
 
 ```
 mutation {
@@ -54,7 +54,7 @@ mutation {
 
 <u>Expected results</u>:
 
-Proper error code:
+Correct error response:
 
 ```
 {
@@ -84,7 +84,7 @@ Proper error code:
 
 <u>Actual results</u>:
 
-The `error_code` is UNDEFINED:
+The `error_code` returned is *UNDEFINED*:
 
 ```
 {
