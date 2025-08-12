@@ -4,6 +4,36 @@
 
 This page contains the changes made in the last 60 days. We exclude all minor updates, such as copy editing, from this list.
 
+### August 12, 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Added the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66301-order-to-cart-quantity-mismatch">detailed description of the issue fixed by the ACSD-66301 patch in the QPT 1.1.67 release</a>.</p>
+</td>
+      <td>
+        New topic, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9f1d7321e8a989b65a47998e89cc79d0ce7bddc8">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>Update <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">Released versions</a> with August’25 releases.<br />Fixed <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">system requirement</a> for Varnish in 2.4.8-p1.</p>
+</td>
+      <td>
+        Technical
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/68390cacbc6b91ad7abfc3911d3721b1bac2f9ec">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### August 11, 2025
 
 <table style="table-layout:auto;">

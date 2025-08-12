@@ -2,8 +2,33 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Aug 11 22:15:13 2025
+updated: Tue Aug 12 20:26:19 2025
 entries:
+- description: Added the [detailed description of the issue fixed by the ACSD-66301
+    patch in the QPT 1.1.67 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66301-order-to-cart-quantity-mismatch).
+  versions: ''
+  type: new-topic, qpt
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1484
+  merge_commit: 9f1d7321e8a989b65a47998e89cc79d0ce7bddc8
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
+- description: Update [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions)
+    with August'25 releases.<br/>Fixed [system requirement](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for Varnish in 2.4.8-p1.
+  versions: 2.4.9-alpha2
+  type: technical
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1519
+  merge_commit: 68390cacbc6b91ad7abfc3911d3721b1bac2f9ec
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+  - 2.4.9-alpha2
 - description: Added the [detailed description of the issue fixed by the ACSD-66118
     patch in the QPT 1.1.67 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66118-updating-store-view-code-clears-design-configuration-settings-if-configuration-cache-isn-t-refreshed).
   versions: ''
