@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACSD-66139: GraphQL order fails with 'UNDEFINED' error for inactive cart
 
-The ACSD-66139 patch fixes the issue where GraphQL returns an UNDEFINED error code instead of a specific one when placing an order for a non-existent or inactive cart with translated error messages. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66139. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66139 patch fixes the issue where GraphQL returns an *UNDEFINED* error code instead of a specific one when placing an order for a non-existent or inactive cart with translated error messages. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67 is installed. The patch ID is ACSD-66139. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -26,17 +26,17 @@ The ACSD-66139 patch fixes the issue where GraphQL returns an UNDEFINED error co
 
 ## Issue
 
-GraphQL returns an UNDEFINED error code instead of a specific one when placing an order for a non-existent or inactive cart, if the error message is translated.
+GraphQL returns an *UNDEFINED* error code instead of a specific one when placing an order for a non-existent or inactive cart, if the error message is translated.
 
 <u>Steps to reproduce</u>:
 
-1. Add file app/i18n/Magento/de_DE/de_DE.csv with translation of error string, like:
+1. Add `app/i18n/Magento/de_DE/de_DE.csv` and include the following error string translation:
 
 ```
 "Could not find a cart with ID ""%masked_cart_id""","Oh noo, we have an UNDEFINED issue, see!",module,Magento_QuoteGraphQl
 ```
 
-1. Create new store view in the admin with code=test.
+1. Create a store view in the admin with code=test.
 1. Assign german language to the newly created store view.
 1. Perform `setup:upgrade` and `setup:static-content:deploy -f`.
 1. Perform the following GraphQL query with "Store: test" in headers:
