@@ -16,7 +16,7 @@ QPT v1.1.69 includes the following patches:
 1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** can't be left empty.
 1. **ACP2E-4050**: Cart price rules fail for multi-shipping with bundle products and free shipping.
 1. **ACSD-56226**: READ queries return outdated data with `synchronous_replication` enabled.
-1. **ACSD-57477**: Sales rule processing slows performance on cart-related requests.
+1. **[ACSD-57477](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-57477-sales-rule-processing-slows-performance-on-cart-related-requests.md)**: Sales rule processing slows performance on cart-related requests.
 1. **ACSD-58108**: Missing join table name causes SQL errors in order grid custom module extension.
 1. **ACSD-65983**: Error occurs when reconfiguring bundled product quote in Admin.
 1. **ACSD-66149**: IPN handler returns 500 for unsupported types.
