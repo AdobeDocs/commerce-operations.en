@@ -19,7 +19,7 @@ QPT v1.1.69 includes the following patches:
 1. **ACSD-57477**: Sales rule processing slows performance on cart-related requests.
 1. **ACSD-58108**: Missing join table name causes SQL errors in order grid custom module extension.
 1. **ACSD-65983**: Error occurs when reconfiguring bundled product quote in Admin.
-1. **ACSD-66149**: IPN handler returns 500 for unsupported types.
+1. **[ACSD-66149](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)**: IPN handler returns 500 for unsupported types.
 1. **ACSD-66153**: Page returns 500 due to incorrect layout structure being cached.
 1. **ACSD-66302**: Wishlist items filtered by store ID instead of website.
 1. **ACSD-66311**: Companies grid loads slowly for restricted admins.
