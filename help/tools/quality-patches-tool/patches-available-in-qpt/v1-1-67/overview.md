@@ -17,7 +17,7 @@ QPT v1.1.67 includes the following patches:
 1. **ACSD-66084**: `row_total_incl_tax` returns near-zero residual value instead of 0.00 for fully discounted items in the order API response.
 1. **ACSD-66118**: Updating **[!UICONTROL Store View]** code clears **[!UICONTROL Design Configuration]** settings if configuration cache isn’t refreshed.
 1. **ACSD-66139**: GraphQL returns UNDEFINED error for non-existent or inactive cart during order placement.
-1. **ACSD-66301**: Moving products from an order back to the cart in Admin results in quantity mismatch.
+1. **ACSD-66301**: Moving products from an order to the cart in Commerce Admin results in a quantity mismatch.
 1. **ACSD-66434**: Customer ID missing from company GraphQL queries.
 1. **ACSD-66441**: Layered Navigation displays incorrect attribute options in multi-store setup.
 

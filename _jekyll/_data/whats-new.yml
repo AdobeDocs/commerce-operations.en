@@ -2,8 +2,105 @@
 title: What's New
 description: This page contains the changes made in the last 60 days. We exclude all
   minor updates, such as copy editing, from this list.
-updated: Mon Aug 11 22:15:13 2025
+updated: Tue Aug 12 15:32:41 2025
 entries:
+- description: Update [Released versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions)
+    with August'25 releases.<br/>Fixed [system requirement](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for Varnish in 2.4.8-p1.
+  versions: 2.4.9-alpha2
+  type: technical
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1519
+  merge_commit: 68390cacbc6b91ad7abfc3911d3721b1bac2f9ec
+  contributor: shevtsov
+  membership:
+  labels:
+  - technical
+  - 2.4.9-alpha2
+- description: Added [system requirements](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+    for the 2.4.9-alpha2, 2.4.8-p2, 2.4.7-p7, 2.4.6-p12, 2.4.5-p14, 2.4.4-p15 releases.
+  versions: 2.4.9-alpha2
+  type: major-update
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1494
+  merge_commit: d3c66369a65e8c9e2315b3db94c9b89052436113
+  contributor: shevtsov
+  membership:
+  labels:
+  - major-update
+  - 2.4.9-alpha2
+- description: Added release notes for the August 2025 security patches:<br/>- [2.4.8-p2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#p2)<br/>-
+    [2.4.7-p7](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p7)<br/>-
+    [2.4.6-p12](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p12)<br/>-
+    [2.4.5-p14](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p14)<br/>-
+    [2.4.4-p15](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p15)
+  versions: ''
+  type: major-update
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1489
+  merge_commit: b9781050a6e1f48b04b06db58c7e3135d69e6e9c
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+- description: Updated the [release schedule](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)
+    for 2026.
+  versions: ''
+  type: major-update
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1471
+  merge_commit: a31fc9a1a7ea68f432bfcbe214bf2bd261f00def
+  contributor: jmatthew
+  membership:
+  labels:
+  - major-update
+- description: Added release notes for highlights introduced in 2.4.9-alpha2 [Adobe
+    Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)
+    and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9).
+  versions: 2.4.9-alpha2
+  type: major-update
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1464
+  merge_commit: d2a91313c8750c0a08ce4c480f560d731419f59a
+  contributor: shevtsov
+  membership:
+  labels:
+  - major-update
+  - 2.4.9-alpha2
+- description: Added [release notes for fixed issues introduced in 2.4.9-alpha2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9).
+  versions: 2.4.9-alpha2
+  type: major-update
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1463
+  merge_commit: f082f828816839078e30254c07a6b5038af0edfe
+  contributor: shevtsov
+  membership:
+  labels:
+  - major-update
+  - 2.4.9-alpha2
+- description: Added instructions for [configuring Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey)
+    for Adobe Commerce.
+  versions: ''
+  type: new-topic
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1396
+  merge_commit: 8fcd959d660cf454be4005c2282057be5c5515b6
+  contributor: del71107
+  membership:
+  labels:
+  - new-topic
+- description: Added the [detailed description of the issue fixed by the ACSD-66301
+    patch in the QPT 1.1.67 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66301-order-to-cart-quantity-mismatch).
+  versions: ''
+  type: new-topic, qpt
+  date: August 12, 2025
+  link: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/pull/1484
+  merge_commit: 9f1d7321e8a989b65a47998e89cc79d0ce7bddc8
+  contributor: jmenn
+  membership:
+  labels:
+  - new-topic
+  - qpt
 - description: Added the [detailed description of the issue fixed by the ACSD-66118
     patch in the QPT 1.1.67 release](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66118-updating-store-view-code-clears-design-configuration-settings-if-configuration-cache-isn-t-refreshed).
   versions: ''
