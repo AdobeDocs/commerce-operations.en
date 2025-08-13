@@ -32,13 +32,13 @@ Issue where customer records weren't saved due to validation of the `rp_token` s
 1. Install the Adobe Commerce 2.4.4 version.
 1. Create a customer.
 1. Upgrade Adobe Commerce to version 2.4.6 from the 2.4.4 earlier version where the customer was already created.
-1. Set the encryption key as below in `env.php` =
+1. Set the encryption key to `env.php` =
 *d337b914e91ff703b1e94ba4156aadf0*
-1. Set below values into database for any customer under customer_entity table:
+1. Set the below values into the database for any customer under the `customer_entity` table:
     *`rp_token` = *incr4869*
     *`rp_token_created_at` = *2021-04-29 20:06:14*
 1. Go to **Admin** > **Customers** > **All Customers**.
-1. Edit the customer for which updated the above values.
+1. Edit the customer for which you just updated the above values.
 1. Click on **Save Customer** or **Save and Continue Edit**.
 
 <u>Expected results</u>:
