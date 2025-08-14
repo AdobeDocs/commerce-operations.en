@@ -346,7 +346,7 @@ When `MAGENTO_DC__OVERRIDE` is set, the Commerce framework bypasses the correspo
 
 >[!IMPORTANT]
 >
->The `MAGENTO_DC__OVERRIDE` variable completely bypasses the specified configuration sections in `env.php`. This behavior is different from individual `MAGENTO_DC_` variables, which have lower priority than `env.php` values.
+>The `MAGENTO_DC__OVERRIDE` variable completely bypasses the specified configuration sections in the `env.php` file. This behavior is different from individual `MAGENTO_DC_` variables, which have lower priority than values in the `env.php` file.
 
 If you need to override multiple configuration options, assemble them all in a single array before JSON encoding.
 
