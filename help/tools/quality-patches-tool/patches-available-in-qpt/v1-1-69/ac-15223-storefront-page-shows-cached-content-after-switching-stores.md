@@ -30,7 +30,7 @@ After switching stores, the page is served from cache (the store switcher is not
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]**.
-2. Create one more store view.
+2. Create a new store view.
 3. From the storefront try to switch the store views.
 
 <u>Expected results</u>:
