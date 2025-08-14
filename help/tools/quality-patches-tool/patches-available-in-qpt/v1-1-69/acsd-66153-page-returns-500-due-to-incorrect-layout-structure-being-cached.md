@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-66153: Page returns 500 due to incorrect layout structure being cached'
-description: Apply the ACSD-66153 patch to fix the Adobe Commerce fixed then issue when a page would return a 500 error code, due to an incorrect layout structure being cached in the layout.
+title: 'ACSD-66153: Page returns 500 error due to cached incorrect layout structure'
+description: Apply the ACSD-66153 patch to fix the Adobe Commerce issue where a page returns a 500 error code due to a cached incorrect layout structure.
 feature: Catalog Management
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-66153: Page returns 500 due to incorrect layout structure being cached
+# ACSD-66153: Page returns 500 error due to cached incorrect layout structure
 
-The ACSD-66153 patch fixes the issue where a page returns a 500 error due to an incorrect layout structure being cached. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66153. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66153 patch fixes the issue where a page returns a 500 error code due to a cached incorrect layout structure. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66153. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,28 +26,32 @@ The ACSD-66153 patch fixes the issue where a page returns a 500 error due to an 
 
 ## Issue
 
-Issue where a page returns a 500 error due to an incorrect layout structure being cached.
+A page returns a 500 error because of a cached incorrect layout structure.
 
 <u>Steps to reproduce</u>:
 
-1. Install `2.4-develop` 
-1. Create and install a custom module
-    1. This module should add a custom block to the `catalog_category_view` layout.
-    1. The custom block injects `Magento\Framework\View\Result\Layout` via its constructor.
-1. Create a category "shop"
-1. Open **two terminal windows**:
-    1. **Terminal 1**: Repeatedly clean the layout cache:
-    {noformat}
+1. Install `2.4-develop.
+1. Create and install custom module
+    1.1 Add a custom block to the `catalog_category_view` layout.
+    1.1 Inject `Magento\Framework\View\Result\Layout` into the custom block through its constructor.
+1. Create the category **[!UICONTROL shop]**.
+1. Open **[!UICONTROL two terminal windows]**:
+    1. **Terminal 1**: Continuously clean the layout cache:
+
+   ```
     for i in {1..200}; do
       bin/magento cache:clean layout
-    done{noformat}
-    1. **Terminal 2**: Simulate concurrent requests to a category page:
-    {noformat}
-    for i in {1..200}; do
+    done
+   ```
+   
+    1. **Terminal 2**: Simulate concurrent requests to the category page:
+
+   ```
+   for i in {1..200}; do
       curl -s -o /dev/null -w "Request $i: HTTP %{http_code}\n" "http://your_magento_base_url/shop.html?req=$i"
-    done {noformat}
-1. It can be observed that some requests randomly fails with 500 status code
-and  `var/log/support_report.log` contains errors like: 
+    done
+   ```
+1. Some requests randomly fail with a 500 status code. The var/log/support_report.log file shows errors like: 
 {noformat}
 report.CRITICAL: The element with the "root" ID wasn't found. Verify the ID and try again. [] []{noformat}
 
