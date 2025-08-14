@@ -30,8 +30,8 @@ Issue where **[!UICONTROL Cap Reward Points Balance At]** cannot be left empty.
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Reward points]**.
-1. Set **[!Rewards Points Balance Redemption Threshold}** = *30*.
-1. Leave "Cap Reward Points Balance At" empty.
+1. Set **[!UICONTROL Rewards Points Balance Redemption Threshold}** = *30*.
+1. Leave **[!UICONTROL Cap Reward Points Balance At]** empty.
 1. Save.
 
 <u>Expected results</u>:
