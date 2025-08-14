@@ -25,11 +25,11 @@ The ACP2E-3977 patch fixes the issue where **[!UICONTROL Cap Reward Points Balan
 
 ## Issue
 
-Issue where **[!UICONTROL Cap Reward Points Balance At]** can't be left empty.
+Issue where **[!UICONTROL Cap Reward Points Balance At]** cannot be left empty.
 
 <u>Steps to reproduce</u>:
 
-1. Go to Stores > Config > Customers > Reward points.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Reward points]**.
 1. Set "Rewards Points Balance Redemption Threshold" = 30.
 1. Leave "Cap Reward Points Balance At" empty.
 1. Save.
