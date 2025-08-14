@@ -1,5 +1,5 @@
 ---
-title: 'ACP2E-3977: Cap Reward Points Balance At field can't be left empty'
+title: 'ACP2E-3977: Cap Reward Points Balance At field cannot be left empty'
 description: Apply the ACP2E-3977 patch to fix the Adobe Commerce issue where the Cap Reward Points Balance At field could not be left empty when Rewards Points Balance Redemption Threshold field was set, causing a validation error.
 feature: Configuration, Rewards
 role: Admin, Developer
