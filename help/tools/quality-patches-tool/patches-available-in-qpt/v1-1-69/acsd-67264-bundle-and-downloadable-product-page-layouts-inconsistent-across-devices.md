@@ -29,28 +29,28 @@ Issue where bundle and downloadable product page layouts are inconsistent across
 
 <u>Steps to reproduce</u>:
 
-1. Install Sample data
-1. Open the bundle product page and check the layout on the desktop. (Gear > Fitness Equipment > Sprite Yoga Companion Kit)
-1. Add bundle product page to the wishlist, navigate to the wishlist, click on the edit icon, and check the layout.
+1. Install the sample data.
+1. Open the bundle product page and check the layout on the desktop.
+1. Add the bundle product page to the wishlist, navigate to the wishlist, click on the edit icon, and check the layout.
 1. Repeat the same two steps for the downloadable product.
 
 <u>Expected results</u>:
 
-Bundle Product PDP should be rendered without any issue.
+The Bundle Product PDP is rendered without any issues.
 
 <u>Actual results</u>:
 
-Bundle Product PDP being rendered with random spaces.
+The Bundle Product PDP is rendered with random spaces.
 
 ## Apply the patch
 
 To apply individual patches, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide
 
 ## Related reading
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide
