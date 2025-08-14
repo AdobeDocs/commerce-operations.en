@@ -26,7 +26,7 @@ Resolves the issue where cart price rules don’t apply correctly during multi-s
 
 ## Issue
 
-Cart price rules fail during multi-shipping when bundle products and sub-select conditions are combined with Free Shipping enabled.
+Cart price rules fail during multi-shipping when the cart includes bundle products and sub-select conditions.
 
 <u>Steps to reproduce</u>:
 
@@ -50,7 +50,7 @@ Confirm all conditions are TRUE:
 
 <u>Expected results</u>:
 
-1. Free shipping should apply to shipments containing configurable and bundle products.
+1.Free shipping applies to configurable and bundle product shipments.
 
 <u>Actual results</u>:
 
