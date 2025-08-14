@@ -25,7 +25,7 @@ The ACP2E-3977 patch fixes the issue where **[!UICONTROL Cap Reward Points Balan
 
 ## Issue
 
-Issue where **[!UICONTROL Cap Reward Points Balance At]** cannot be left empty.
+Leaving [!UICONTROL Cap Reward Points Balance At] empty triggers a validation error, even though it should disable the cap when left blank.
 
 <u>Steps to reproduce</u>:
 
