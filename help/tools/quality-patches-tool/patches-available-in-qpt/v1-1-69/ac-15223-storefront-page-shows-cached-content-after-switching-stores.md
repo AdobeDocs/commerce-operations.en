@@ -1,6 +1,6 @@
 ---
 title: 'AC-15223: Storefront page shows cached content after switching stores'
-description: Apply the AC-15223 patch to fix the Adobe Commerce issue where after switching stores, the page is served from cache because the store is not switced as expected.
+description: Apply the AC-15223 patch to fix the Adobe Commerce issue where after switching stores the page is served from cache and the store is not switced as expected.
 feature: Cache
 role: Admin, Developer
 ---
