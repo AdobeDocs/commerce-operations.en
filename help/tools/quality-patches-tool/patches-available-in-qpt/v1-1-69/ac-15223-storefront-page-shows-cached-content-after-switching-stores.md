@@ -1,6 +1,6 @@
 ---
 title: 'AC-15223: Storefront page shows cached content after switching stores'
-description: Apply the AC-15223 patch to fix the Adobe Commerce issue where after switching stores the page is served from cache and the store is not switced as expected.
+description: Apply the AC-15223 patch to fix the Adobe Commerce issue where after switching stores the page is served from cache and the store is not switched as expected.
 feature: Cache
 role: Admin, Developer
 ---
@@ -30,16 +30,16 @@ After switching stores, the page is served from cache (the store switcher is not
 <u>Steps to reproduce</u>:
 
 1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]**.
-2. Create one more storeview.
-3. From the storefront try to switch the storeviews.
+2. Create one more store view.
+3. From the storefront try to switch the store views.
 
 <u>Expected results</u>:
 
- The storeview switched successfully.
+ The store view switched successfully.
 
 <u>Actual results</u>:
 
-The storeview name is not changed in the header untill the cache is cleaned from the backend.
+The store view name is not changed in the header until the cache is cleaned from the backend.
 
 ## Apply the patch
 
