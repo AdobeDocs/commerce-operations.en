@@ -25,27 +25,27 @@ The ACSD-66952 patch fixes the issue where cache is cleared on each PLP or Cart 
 
 ## Issue
 
-Issue where cache is cleared on each PLP or Cart visit, causing performance overhead when a target rule is set.
+Issue where the cache is cleared on each PLP or Cart visit, causing performance overhead when a target rule is set.
 
 <u>Steps to reproduce</u>:
 
-1. Generate small sample data set
-1. Create target rule as below:
+1. Generate a small sample data set.
+1. Create target rule values as below:
     1. Rule information
-    -> Rule Name: Related Products
-    -> Status: Active
-    -> Apply to: Related Products
-    1. Products to Match
-    -> leave it as is
-    1. Products to Display
-    -> If ALL of these conditions are True: Product Category is Constant Value 111111
-1. Start monitoring logs for cache invalidation requests
-1. Visit product page
-1. Add product to cart and navigate to cart page
+        * **Rule Name** = *Related Products*
+        * **Status** = *Active*
+        * **Apply to** = *Related Products*
+    1. **Products to Match**
+        * Leave at its default value.
+    1. **Products to Display**
+        * If **ALL** of these conditions are *true*, set **Product Category** = *Constant Value 111111*
+1. Start monitoring the logs for cache invalidation requests.
+1. Visit the product page.
+1. Add a product to cart and navigate to the cart page.
 
 <u>Expected results</u>:
 
-The application should not invalidate the cache while browsing the site.
+The application shouldn't invalidate the cache while browsing the site.
 
 <u>Actual results</u>:
 
@@ -55,11 +55,11 @@ Cache tags get invalidated.
 
 To apply individual patches, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide
 
 ## Related reading
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide
