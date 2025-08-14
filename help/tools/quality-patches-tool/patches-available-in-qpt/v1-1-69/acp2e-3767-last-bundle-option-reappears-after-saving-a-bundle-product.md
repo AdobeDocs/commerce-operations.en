@@ -29,9 +29,9 @@ Issue where the last bundle option is restored upon saving a bundle product.
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL Catalog]** > **[UICONTROL Products]** > Add Product. Select Simple Product from the dropdown.
+1. Go to **[!UICONTROL Catalog]** > **[UICONTROL Products]** > **[!UICONTROL Add Product]**. Select **[!UICONTROL Simple Product]** from the dropdown.
 1. Fill out the required data and save.
-1. Go to Catalog > Products > Add Product. Select Bundle Product from the dropdown.
+1. Go to **[!UICONTROL Catalog]** > **[UICONTROL Products]** > **[!UICONTROL Add Product]**. Select **[!UICONTROL Bundle Product]** from the dropdown.
 1. Fill out the required data.
 1. In Bundle Items, click Add Option.
 1. Give any title to the newly created option and click Add Products To Option.
