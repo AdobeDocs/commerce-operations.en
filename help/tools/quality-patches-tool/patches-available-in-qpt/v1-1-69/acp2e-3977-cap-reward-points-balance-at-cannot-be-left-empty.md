@@ -36,11 +36,11 @@ Issue where **[!UICONTROL Cap Reward Points Balance At]** cannot be left empty.
 
 <u>Expected results</u>:
 
-1. An empty value for **[!UICONTROL Cap Reward Points Balance At]** is allowed and disables the limitation.
+An empty value for **[!UICONTROL Cap Reward Points Balance At]** is allowed and disables the limitation.
 
 <u>Actual results</u>:
 
-1. *The Cap Reward Points Balance is invalid. The balance needs to be a positive number or left empty. Verify and try again.* error is displayed.
+*The Cap Reward Points Balance is invalid. The balance needs to be a positive number or left empty. Verify and try again.* error is displayed.
 
 ## Apply the patch
 
