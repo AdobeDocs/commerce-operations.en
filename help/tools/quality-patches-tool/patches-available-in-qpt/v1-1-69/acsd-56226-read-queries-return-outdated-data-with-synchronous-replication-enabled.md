@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-56226: READ queries return outdated data with 'synchronous_replication' enabled'
-description: Apply the ACSD-56226 patch to fix the Adobe Commerce issue where DB critical read fails when 'synchronous_replication' is enabled for slave connection on Cloud.
+title: 'ACSD-56226: READ queries return outdated data with `synchronous_replication` enabled'
+description: Apply the ACSD-56226 patch to fix the Adobe Commerce issue where READ queries return outdated data when the `synchronous_replication` flag is enabled for slave connection on Cloud.
 feature: System
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-56226: READ queries return outdated data with 'synchronous_replication' enabled
+# ACSD-56226: READ queries return outdated data with `synchronous_replication` enabled
 
-The ACSD-56226 patch fixes the issue where READ queries at the slave node return outdated data when the 'synchronous_replication' flag is enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-56226. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7.
+The ACSD-56226 patch fixes the issue where READ queries return outdated data when the `synchronous_replication` flag is enabled for slave connection on Cloud. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-56226. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7.
 
 ## Affected products and versions
 
@@ -25,28 +26,30 @@ The ACSD-56226 patch fixes the issue where READ queries at the slave node return
 
 ## Issue
 
-Issue where READ queries at the slave node return outdated data when the 'synchronous_replication' flag is enabled.
+READ queries return outdated data when the `synchronous_replication` flag is enabled. This causes the slave connection to be disabled, leading to database overload.
 
 <u>Steps to reproduce</u>:
 
-1. Enable slave connections - MYSQL_USE_SLAVE_CONNECTION: true
-2. Change synchronous_replication to "false" by using this configuration in .magento.env.yaml
+1. Set `MYSQL_USE_SLAVE_CONNECTION` to *true* in the environment variables on Adobe Commerce on cloud infrastructure.
+1. Add the following configuration to `.magento.env.yaml` to set `synchronous_replication` to *false*:
 
 ```
 DATABASE_CONFIGURATION:
-_merge: true slave_connection: default:
-synchronous_replication: false
+  _merge: true
+  slave_connection:
+    default:
+      synchronous_replication: false
 ```
-
-3. Do some activities on the frontend like login/add to cart/place order
+ 
+1. Redeploy and perform frontend actions such as login, add to cart, or place an order.
 
 <u>Expected results</u>:
 
-With "synchronous_replication" = false, slave connection should still enabled
+Slave connection remains enabled when `synchronous_replication` is set to *false*.
 
 <u>Actual results</u>:
 
-AC does not use slave connection anymore, which causes overloading of the DB
+Slave connection is disabled when `synchronous_replication` is set to *false*, causing database overload.
 
 ## Apply the patch
 
