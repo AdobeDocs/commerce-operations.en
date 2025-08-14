@@ -822,7 +822,7 @@ feature: Configuration
            - [ACSD-66301: Moving products from an order to the cart in Commerce Admin results in a quantity mismatch](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66301-order-to-cart-quantity-mismatch.md)
            - [AC-14984: SSL connection issue with php-amqplib/php-amqplib ^3.2.0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14984-ssl-connection-issue-with-php-amqplib-php-amqplib-3-2.md)
            - [ACSD-66118: Updating [!UICONTROL Store View] code clears [!UICONTROL Design Configuration] settings if configuration cache isn’t refreshed](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66118-updating-store-view-code-clears-design-configuration-settings-if-configuration-cache-isn-t-refreshed.md)
-           - [ACSD-66084: row_total_incl_tax returns near-zero residual value instead of 0.00 for fully discounted items in the order API response](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66084-fix-row-total-incl-tax-residual-value-for-discounted-items-in-order-api.md)
+           - [ACSD-66084: row_total_incl_tax returns near-zero instead of 0.00 for fully discounted items in order API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66084-fix-row-total-incl-tax-residual-value-for-discounted-items-in-order-api.md)
            - [ACSD-66049: Non-English storefronts display incorrect pricing due to the ICU library version](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66049-non-english-storefronts-display-incorrect-pricing-due-to-the-icu-library-version.md)
            - [ACSD-66441: Layered Navigation displays incorrect attribute options in multi-store setup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-layered-navigation-displays-incorrect-attribute-in-multi-store-setup.md)
            - [AC-14985: Error when sending SMTP emails using TLS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
@@ -833,6 +833,8 @@ feature: Configuration
            - [ACSD-66179: Canceling an invoice with the [!UICONTROL Not Capture] payment type results in a 404 error page](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66179-canceling-an-invoice-with-the-not-capture-payment-type-results-in-a-404-error-page.md)
            - [ACSD-66082: Cannot update the swatch image of a product through product import](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66082-cant-update-a-products-swatch-image-through-product-import.md)
            - [ACSD-66233: Admins unable add products due to unresponsive product list popup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66233-admins-unable-add-products-due-to-unresponsive-product-list-popup.md)
+        - v1.1.69 {#v1-1-69}
+           - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
