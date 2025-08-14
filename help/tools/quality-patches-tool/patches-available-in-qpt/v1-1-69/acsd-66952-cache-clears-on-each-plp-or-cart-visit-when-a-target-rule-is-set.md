@@ -31,14 +31,14 @@ Issue where the cache is cleared on each PLP or Cart visit, causing performance 
 
 1. Generate a small sample data set.
 1. Create target rule values as below:
-    1. Rule information
-        * **Rule Name** = *Related Products*
-        * **Status** = *Active*
-        * **Apply to** = *Related Products*
-    1. **Products to Match**
+    1. **[!UICONTROL Rule information]**
+        * **[!UICONTROL Rule Name]** = *Related Products*
+        * **[!UICONTROL Status]** = *Active*
+        * **[!UICONTROL Apply to]** = *Related Products*
+    1. **[!UICONTROL Products to Match]**
         * Leave at its default value.
-    1. **Products to Display**
-        * If **ALL** of these conditions are *true*, set **Product Category** = *Constant Value 111111*
+    1. **[!UICONTROL Products to Display]**
+        * If **ALL** of these conditions are *true*, set **[!UICONTROL Product Category]** = *Constant Value 111111*
 1. Start monitoring the logs for cache invalidation requests.
 1. Visit the product page.
 1. Add a product to cart and navigate to the cart page.
