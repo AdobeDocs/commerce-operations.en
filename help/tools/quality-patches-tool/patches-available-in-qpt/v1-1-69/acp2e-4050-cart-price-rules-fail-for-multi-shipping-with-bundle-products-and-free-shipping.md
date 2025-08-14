@@ -32,7 +32,7 @@ Cart price rules fail during multi-shipping when bundle products and sub-select 
 
 1. Create a customer account with two addresses.
 1. Enable Free Shipping and set Minimum Order Amount to 999999.
-1. Create a cart price rule in Admin > Marketing > Cart Price Rules
+1. Create a cart price rule in Admin > Marketing > Cart Price Rules.
 
 ```
 Confirm all conditions are TRUE:
@@ -42,15 +42,15 @@ Confirm all conditions are TRUE:
   - Category is 23
 ```
 
-1. Add the products to the cart in this order: Wayfarer Messenger Bag, Olivia 1/4 Zip Light Jacket, Sprite Yoga Companion Kit.
-1.Open the shopping cart and confirm that the Free shipping option appears.
+1. Place the items in the cart in this order: Wayfarer Messenger Bag, Olivia 1/4 Zip Light Jacket, Sprite Yoga Companion Kit.
+1. Open the shopping cart and confirm that the Free shipping option appears.
 1. Click "Check Out with Multiple Addresses".
 1. Select a different address for the simple product.
 1. Click "Go to Shipping Information".
 
 <u>Expected results</u>:
 
-1. Free shipping should be available for the configurable + bundle product shipment.
+1. Free shipping must be available for the configurable and bundle product shipment.
 
 <u>Actual results</u>:
 
