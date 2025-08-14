@@ -342,7 +342,7 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 
 To override the existing `env.php` configuration options with an OS environment variable, the array element of the configuration must be JSON encoded and set as a value of the `MAGENTO_DC__OVERRIDE` OS variable.
 
-When `MAGENTO_DC__OVERRIDE` is set, the Commerce framework bypasses the corresponding values in `env.php` and reads the configuration directly from the environment variable. The values in `env.php` remain unchanged but are ignored for the overridden configuration sections.
+When `MAGENTO_DC__OVERRIDE` is set, the Commerce framework bypasses the corresponding values in the `env.php` file and reads the configuration directly from the environment variable. The values in the `env.php` file remain unchanged but are ignored for the overridden configuration sections.
 
 >[!IMPORTANT]
 >
