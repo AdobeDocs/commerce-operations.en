@@ -31,7 +31,7 @@ Child products of configurable products with a video in the **[!UICONTROL Media 
 <u>Steps to reproduce</u>:
 
 1. Create a new configurable product and add a single child product.
-1. Edit the child product and add a video under **[!UICONTROL Images and Videos]** (for example, [https://vimeo.com/1084537]).
+1. Edit the child product and add a video under **[!UICONTROL Images and Videos]** (for example, [https://vimeo.com/1084537](https://vimeo.com/1084537).
 1. Save the child product.
 1. Send a GET request to the REST API endpoint: `rest/v1/configurable-products/%sku%/children` using an admin bearer token.
 
