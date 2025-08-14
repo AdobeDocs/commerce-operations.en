@@ -5,9 +5,9 @@ feature: Configuration, Rewards
 role: Admin, Developer
 ---
 
-# ACP2E-3977: Cap Reward Points Balance At field can't be left empty
+# ACP2E-3977: **[!UICONTROL Cap Reward Points Balance At field]** can't be left empty
 
-The ACP2E-3977 patch fixes the issue where "Cap Reward Points Balance At" can't be left empty. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3977. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACP2E-3977 patch fixes the issue where **[!UICONTROL Cap Reward Points Balance At]** field can't be left empty. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3977. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACP2E-3977 patch fixes the issue where "Cap Reward Points Balance At" can't 
 
 ## Issue
 
-Issue where "Cap Reward Points Balance At" can't be left empty.
+Issue where **[!UICONTROL Cap Reward Points Balance At]** can't be left empty.
 
 <u>Steps to reproduce</u>:
 
@@ -36,11 +36,11 @@ Issue where "Cap Reward Points Balance At" can't be left empty.
 
 <u>Expected results</u>:
 
-1. An empty value for "Cap Reward Points Balance At" is allowed and disables the limitation.
+1. An empty value for **[!UICONTROL Cap Reward Points Balance At]** is allowed and disables the limitation.
 
 <u>Actual results</u>:
 
-1. "The 'Cap Reward Points Balance' is invalid. The balance needs to be a positive number or left empty. Verify and try again." error is displayed.
+1. *The Cap Reward Points Balance is invalid. The balance needs to be a positive number or left empty. Verify and try again.* error is displayed.
 
 ## Apply the patch
 
