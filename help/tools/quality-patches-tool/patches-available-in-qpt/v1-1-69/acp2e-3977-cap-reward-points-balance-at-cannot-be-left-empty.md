@@ -5,7 +5,7 @@ feature: Configuration, Rewards
 role: Admin, Developer
 ---
 
-# ACP2E-3977: **[!UICONTROL Cap Reward Points Balance At field]** can't be left empty
+# ACP2E-3977: **[!UICONTROL Cap Reward Points Balance At field]** cannot be left empty
 
 The ACP2E-3977 patch fixes the issue where **[!UICONTROL Cap Reward Points Balance At]** field can't be left empty. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3977. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
