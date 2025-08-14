@@ -39,7 +39,7 @@ After switching stores, the page is served from cache (the store switcher is not
 
 <u>Actual results</u>:
 
-The storeview name is not changed in the header untill cache is cleaned from backend.
+The storeview name is not changed in the header untill the cache is cleaned from the backend.
 
 ## Apply the patch
 
