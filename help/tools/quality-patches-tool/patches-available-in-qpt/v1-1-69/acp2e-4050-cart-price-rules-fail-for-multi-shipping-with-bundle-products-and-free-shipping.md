@@ -1,6 +1,6 @@
 ---
 title: 'ACP2E-4050: Cart price rules fail during multi-shipping with bundle products and free shipping'
-description: Apply the ACP2E-4050 patch to fix the Adobe Commerce issue where Free Shipping is not applied when using Multiple Addresses checkout with specific cart rule conditions and products with specific prices.
+description: Apply the ACP2E-4050 patch to fix the Adobe Commerce issue where The system does not apply Free Shipping when using Multiple Addresses checkout with specific cart rule conditions and products with specific prices.
 feature: Shopping Cart, Shipping/Delivery
 role: Admin, Developer
 type: Troubleshooting 
@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACP2E-4050: Cart price rules fail for multi-shipping with bundle products and free shipping
 
-The ACP2E-4050 patch resolves the issue where cart price rules don’t apply correctly during multi-shipping with bundle products and free shipping when bundle products and sub-select conditions are used with free shipping enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-4050. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+Resolves the issue where cart price rules don’t apply correctly during multi-shipping with bundle products and free shipping when bundle products and sub-select conditions are used with free shipping enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-4050. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -26,7 +26,7 @@ The ACP2E-4050 patch resolves the issue where cart price rules don’t apply cor
 
 ## Issue
 
-Cart price rules fail during multi-shipping when bundle products and sub-select conditions are used with Free Shipping enabled.
+Cart price rules fail during multi-shipping when bundle products and sub-select conditions are combined with Free Shipping enabled.
 
 <u>Steps to reproduce</u>:
 
@@ -42,7 +42,7 @@ Confirm all conditions are TRUE:
   - Category is 23
 ```
 
-1. Place the items in the cart in this order: Wayfarer Messenger Bag, Olivia 1/4 Zip Light Jacket, Sprite Yoga Companion Kit.
+1. Add the items in this order: Wayfarer Messenger Bag, Olivia 1/4 Zip Light Jacket, Sprite Yoga Companion Kit.
 1. Open the shopping cart and confirm that the Free shipping option appears.
 1. Click "Check Out with Multiple Addresses".
 1. Select a different address for the simple product.
@@ -50,11 +50,11 @@ Confirm all conditions are TRUE:
 
 <u>Expected results</u>:
 
-1. Free shipping must be available for the configurable and bundle product shipment.
+1. Free shipping should apply to shipments containing configurable and bundle products.
 
 <u>Actual results</u>:
 
-1. Free shipping is not available.
+1. Free shipping does not available.
 
 ## Apply the patch
 
