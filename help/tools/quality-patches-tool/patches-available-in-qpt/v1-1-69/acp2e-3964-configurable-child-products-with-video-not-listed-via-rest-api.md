@@ -1,13 +1,14 @@
 ---
 title: 'ACP2E-3964: Configurable child products with video not listed via REST API'
-description: Apply the ACP2E-3964 patch to fix the Adobe Commerce issue where child products of configurable products could not be listed via the REST API when a video was set in the gallery.
+description: Apply the ACP2E-3964 patch to fix the Adobe Commerce issue where child products of configurable products with a video in the [!UICONTROL Media Gallery] aren't returned via the REST API.
 feature: Products, Media, REST, Catalog Management
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACP2E-3964: Configurable child products with video not listed via REST API
 
-The ACP2E-3964 patch fixes the issue where child products of configurable products with a video in the gallery can't be listed via REST API, resulting in an error response. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3964. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACP2E-3964 patch fixes the issue where child products of configurable products with a video in the **[!UICONTROL Media Gallery]** aren't returned via the REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3964. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,22 +26,22 @@ The ACP2E-3964 patch fixes the issue where child products of configurable produc
 
 ## Issue
 
-Issue where child products of configurable products with a video in the gallery can't be listed via REST API, resulting in an error response.
+Child products of configurable products with a video in the **[!UICONTROL Media Gallery]** can't be listed via REST API, resulting in an error response.
 
 <u>Steps to reproduce</u>:
 
 1. Create a new configurable product and add a single child product.
-1. Edit the child product and add a video under **Images and Videos** (e.g., [https://vimeo.com/1084537]).
-1. Save the product.
-1. Send a GET request to the endpoint: `rest/v1/configurable-products/%sku%/children` using an admin bearer token.
+1. Edit the child product and add a video under **[!UICONTROL Images and Videos]** (for example, [https://vimeo.com/1084537]).
+1. Save the child product.
+1. Send a GET request to the REST API endpoint: `rest/v1/configurable-products/%sku%/children` using an admin bearer token.
 
 <u>Expected results</u>:
 
-1. The API should return the child product data without error, including the video entry.
+The REST API should return the child product data without errors, including the video information in the **[!UICONTROL Media Gallery]**.
 
 <u>Actual results</u>:
 
-1. The API throws the following error:
+The REST API returns an error:
 
 ```
 Error: Call to a member function getVideoProvider() on null in vendor/magento/module-product-video/Model/Product/Attribute/Media/ExternalVideoEntryConverter.php:87
