@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-66139: GraphQL order fails with UNDEFINED error for inactive cart'
-description: Apply the ACSD-66139 patch to fix the Adobe Commerce issue where GraphQL returns an UNDEFINED error code instead of a specific one when placing an order for a non-existent or inactive cart with translated error messages.
+description: Apply the ACSD-66139 patch to fix the Adobe Commerce issue where, when placing an order for a non-existent or inactive cart, GraphQL returns an UNDEFINED error code instead of a specific one when error messages are translated.
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
