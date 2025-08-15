@@ -30,8 +30,8 @@ A page returns a 500 error because of a cached incorrect layout structure.
 
 <u>Steps to reproduce</u>:
 
-1. Install `2.4-develop.
-1. Create and install custom module
+1. Install `2.4-develop`.
+1. Create and install custom module:
     1.1 Add a custom block to the `catalog_category_view` layout.
     1.1 Inject `Magento\Framework\View\Result\Layout` into the custom block through its constructor.
 1. Create the category **[!UICONTROL shop]**.
@@ -51,13 +51,16 @@ A page returns a 500 error because of a cached incorrect layout structure.
       curl -s -o /dev/null -w "Request $i: HTTP %{http_code}\n" "http://your_magento_base_url/shop.html?req=$i"
     done
    ```
-1. Some requests randomly fail with a 500 status code. The var/log/support_report.log file shows errors like: 
-{noformat}
-report.CRITICAL: The element with the "root" ID wasn't found. Verify the ID and try again. [] []{noformat}
+   
+1. Some requests randomly fail with a 500 status code, and the `var/log/support_report.log` shows the following error:
+
+   ```
+   report.CRITICAL: The element with the "root" ID wasn't found. Verify the ID and try again. [] []
+   ```
 
 <u>Expected results</u>:
 
-All requests should return 200 OK.
+All requests return 200 OK.
 
 <u>Actual results</u>:
 
