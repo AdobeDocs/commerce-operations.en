@@ -4,8 +4,8 @@ description: Apply the ACSD-56226 patch to fix the Adobe Commerce issue where RE
 feature: System
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 5ad0e884-decb-4e09-b5b3-b38a9953a4b8
 ---
-
 # ACSD-56226: READ queries return outdated data with `synchronous_replication` enabled
 
 The ACSD-56226 patch fixes the issue where READ queries return outdated data when the `synchronous_replication` flag is enabled for slave connection on Cloud. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-56226. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7.
