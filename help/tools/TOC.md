@@ -836,6 +836,7 @@ feature: Configuration
            - [ACSD-66233: Admins unable add products due to unresponsive product list popup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66233-admins-unable-add-products-due-to-unresponsive-product-list-popup.md)
         - v1.1.69 {#v1-1-69}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
+           - [ACSD-56226: READ queries return outdated data with synchronous_replication enabled](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-56226-read-queries-return-outdated-data-with-synchronous-replication-enabled.md)
            - [ACSD-66149: IPN handler returns 500 for unsupported types](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)
            - [ACSD-66952: Cache clears on each PLP or cart visit when a target rule is set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66952-cache-clears-on-each-plp-or-cart-visit-when-a-target-rule-is-set.md)
            - [ACSD-67264: Bundle and downloadable product page layouts inconsistent across devices](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-67264-bundle-and-downloadable-product-page-layouts-inconsistent-across-devices.md)
