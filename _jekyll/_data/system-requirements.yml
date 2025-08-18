@@ -486,10 +486,10 @@
   AWS ElastiCache: Redis 6.2
   AWS OpenSearch: '1.2'
 2.4.5-p14:
-  AWS Aurora (MySQL): '8.0.mysql_aurora.3.09 or latest available'
-  AWS ElastiCache: Redis 6
-  AWS MQ: '3.13 or latest available'
-  AWS OpenSearch: 'ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.'
+  AWS Aurora (MySQL): 8.0.mysql_aurora.3.09 or latest available
+  AWS ElastiCache: ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
+  AWS MQ: 3.13 or latest available
+  AWS OpenSearch: 2.19 or latest available
   Composer: '2.2'
   Elasticsearch: '7.17'
   MariaDB: '10.6'
