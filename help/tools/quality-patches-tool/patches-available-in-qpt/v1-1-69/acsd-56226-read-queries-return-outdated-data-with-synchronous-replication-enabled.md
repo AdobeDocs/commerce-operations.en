@@ -31,17 +31,17 @@ READ queries return outdated data when the `synchronous_replication` flag is ena
 <u>Steps to reproduce</u>:
 
 1. Set `MYSQL_USE_SLAVE_CONNECTION` to *true* in the environment variables on Adobe Commerce on cloud infrastructure.
-2. Add the following configuration to `.magento.env.yaml` to set `synchronous_replication` to *false*:
+1. Add the following configuration to `.magento.env.yaml` to set `synchronous_replication` to *false*:
 
-```
-DATABASE_CONFIGURATION:
-  _merge: true
-  slave_connection:
-    default:
-      synchronous_replication: false
-```
+   ```
+   DATABASE_CONFIGURATION:
+     _merge: true
+     slave_connection:
+       default:
+         synchronous_replication: false
+   ```
  
-3. Redeploy and perform frontend actions such as login, add to cart, or place an order.
+ 1. Redeploy and perform frontend actions such as login, add to cart, or place an order.
 
 <u>Expected results</u>:
 
