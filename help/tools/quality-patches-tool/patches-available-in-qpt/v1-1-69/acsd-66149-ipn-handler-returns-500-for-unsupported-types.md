@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-66149: IPN handler returns *500* for unsupported types'
-description: Apply the ACSD-66149 patch to fix the Adobe Commerce IPN handler does not ignore unsupported or unknown IPN types, causing the issue not to be logged, interrupting the process, and also returning a 500 error.
+description: Apply the ACSD-66149 patch to fix the Adobe Commerce issue where the IPN handler does not ignore unsupported or unknown IPN types, causing the issue not to be logged, interrupting the process, and also returning a 500 error.
 feature: Payments
 role: Admin, Developer
 ---
