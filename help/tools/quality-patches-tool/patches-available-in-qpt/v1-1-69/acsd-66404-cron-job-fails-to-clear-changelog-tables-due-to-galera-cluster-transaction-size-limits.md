@@ -3,6 +3,7 @@ title: 'ACSD-66404: Cron job fails to clear changelog tables due to [!DNL Galera
 description: Apply the ACSD-66404 patch to fix the Adobe Commerce issue where with cron job not clearing changelog tables and causing [!DNL Galera Cluster] issues in case of large amount of data in these tables.
 feature: System
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-66404: Cron job fails to clear changelog tables due to [!DNL Galera Cluster] transaction size limits
@@ -25,7 +26,7 @@ The ACSD-66404 patch fixes the issue where the cron job fails to clear changelog
 
 ## Issue
 
-Issue where the cron job fails to clear changelog tables, causing [!DNL Galera Cluster] issues when handling large amounts of data.
+Cron job not clearing changelog tables and causing [!DNL Galera Cluster] issues in case of large amount of data in these tables.
 
 <u>Steps to reproduce</u>:
 
