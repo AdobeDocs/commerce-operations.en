@@ -4,6 +4,7 @@ description: Apply the ACSD-67039 patch to fix the Adobe Commerce issue where en
 feature: Customers, Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
+exl-id: e5995e28-b6b5-4955-a52a-895842c6b6e8
 ---
 # ACSD-67039: Customer records weren't saved due to `rp_token` system attribute validation
 
