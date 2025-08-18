@@ -2303,7 +2303,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-          Redis 6
+          ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
       </td>
       <td>
           Redis 6
@@ -2399,7 +2399,7 @@
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
-          ElastiCache version 7.1 for Redis OSS (enhanced). Valkey 8 is available.
+          2.19 or latest available
       </td>
       <td>
           1.2
