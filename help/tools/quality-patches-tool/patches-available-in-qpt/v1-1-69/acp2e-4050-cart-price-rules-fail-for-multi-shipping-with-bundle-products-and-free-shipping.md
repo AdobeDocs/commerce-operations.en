@@ -1,14 +1,14 @@
 ---
-title: 'ACP2E-4050: Cart price rules fail during multi-shipping with bundle products and free shipping'
-description: Apply the ACP2E-4050 patch to fix the Adobe Commerce issue where The system does not apply Free Shipping when using Multiple Addresses checkout with specific cart rule conditions and products with specific prices.
+title: 'ACP2E-4050: Free shipping not applied with multi-address checkout'
+description: Apply the ACP2E-4050 patch to fix the Adobe Commerce issue where the system does not apply Free Shipping during multi-address checkout when cart price rules include sub-select conditions and bundle products with specific price ranges.
 feature: Shopping Cart, Shipping/Delivery
 role: Admin, Developer
 type: Troubleshooting 
 ---
 
-# ACP2E-4050: Cart price rules fail for multi-shipping with bundle products and free shipping
+# ACP2E-4050: Free shipping not applied with multi-address checkout
 
-Resolves the issue where cart price rules don’t apply correctly during multi-shipping with bundle products and free shipping when bundle products and sub-select conditions are used with free shipping enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-4050. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+Resolves the issue where the system does not apply Free Shipping during multi-address checkout when cart price rules include sub-select conditions and bundle products with specific price ranges. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-4050. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
