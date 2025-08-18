@@ -1,13 +1,14 @@
 ---
-title: 'ACSD-67347: Order fails with lock error when using special character coupons and file locking'
-description: Apply the ACSD-67347 patch to fix the Adobe Commerce issue where customers are unable to place an order when a coupon code containing a '/' (e.g., BIT/123456) is applied. They encounter the error: "Cannot acquire a lock" when file lock is enabled and the order is being placed.
-feature: 
+title: 'ACSD-67347: Special character coupons and file locking causes the order to fail with a lock error'
+description: Apply the ACSD-67347 patch to the Adobe Commerce issue where customers cannot place an order when a coupon code containing a '/' (for example, BIT/123456) using. The system throws a 'Cannot acquire a lock' error if file locking is enabled during order placement.
+feature: Patch Fix
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACSD-67347: Order fails with lock error when using special character coupons and file locking
+# ACSD-67347: Special character coupons and file locking causes the order to fail with a lock error
 
-The ACSD-67347 patch fixes the issue where order fails with **Cannot acquire a lock** error when coupons with special characters are used and file locking is enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-67347. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-67347 patch fixes the issue where orders fail with the "Cannot acquire a lock" error when using coupons that contain special characters and file locking is enabled. The patch is available when [!DNL Quality Patches Tool (QPT)] version 1.1.69 is installed. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,13 +26,13 @@ The ACSD-67347 patch fixes the issue where order fails with **Cannot acquire a l
 
 ## Issue
 
-Issue where order fails with **Cannot acquire a lock** error when coupons with special characters are used and file locking is enabled.
+Orders fail with the **Cannot acquire a lock** error when coupons with special characters are used and file locking is enabled
 
 <u>Steps to reproduce</u>:
 
 1. Install 2.4-develop
-1. Configure file lock in the env.php file
-
+1. Set the file lock configuration in the env.php file
+   
 ```
 'lock' => [
         'provider' => 'file',
@@ -41,18 +42,18 @@ Issue where order fails with **Cannot acquire a lock** error when coupons with s
     ],
 ```
 
-1. Create a cart rule with a coupon, coupon code format: BIT/123456
+1. Create a cart rule with a coupon using the coupon code format: BIT/123456
 1. Create a simple product
 1. Add the product to cart and apply the coupon code
-1. Go to the checkout and try to place the order
+1. Proceed to checkout and place the order
 
 <u>Expected results</u>:
 
-Should be able to place the order as there are no any restrictions to create the coupon codes.
+The order can be placed as there are no restrictions on creating coupon codes.
 
 <u>Actual results</u>:
 
-Order can not be placed > getting an error code 'Cannot acquire lock'
+Unable to place the order due to error code 'Cannot acquire lock'.
 
 ```
 File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning!fopen(/Users/test/sites/test/locks/coupon_code_123/abc): Failed to open stream: No such file or directory
