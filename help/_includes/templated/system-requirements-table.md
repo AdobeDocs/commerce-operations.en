@@ -68,15 +68,6 @@
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6.1
-      </td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
           8
@@ -240,18 +231,6 @@
       </td>
       <td>
           4.1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6.1
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -567,33 +546,6 @@
       </td>
       <td>
           3.13
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6.1
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -1181,48 +1133,6 @@
       </td>
       <td>
           3.11, 3.9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6.1
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
@@ -2004,54 +1914,6 @@
       </td>
       <td>
           3.9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6.1
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
     </tr>
     <tr>
