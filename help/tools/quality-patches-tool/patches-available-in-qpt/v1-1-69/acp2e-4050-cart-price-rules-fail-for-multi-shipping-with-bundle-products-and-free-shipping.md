@@ -1,6 +1,6 @@
 ---
 title: 'ACP2E-4050: Free shipping not applied with multi-address checkout'
-description: Apply the ACP2E-4050 patch to fix the Adobe Commerce issue where the system does not apply Free Shipping during multi-address checkout when cart price rules include sub-select conditions and bundle products with specific price ranges.
+description: Apply the ACP2E-4050 patch to fix the Adobe Commerce issue where Free Shipping is not applied during multi-address checkout when cart price rules include sub-select conditions and products with specific prices.
 feature: Shopping Cart, Shipping/Delivery
 role: Admin, Developer
 type: Troubleshooting 
@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACP2E-4050: Free shipping not applied with multi-address checkout
 
-Resolves the issue where the system does not apply Free Shipping during multi-address checkout when cart price rules include sub-select conditions and bundle products with specific price ranges. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-4050. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+Resolves the issue where Free Shipping is not applied during multi-address checkout when cart price rules include sub-select conditions and products with specific prices. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-4050. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -26,35 +26,30 @@ Resolves the issue where the system does not apply Free Shipping during multi-ad
 
 ## Issue
 
-Cart price rules fail during multi-shipping when the cart includes bundle products and sub-select conditions.
+Free Shipping is not applied during multi-address checkout when cart price rules include sub-select conditions and products with specific prices.
 
 <u>Steps to reproduce</u>:
 
 1. Create a customer account with two addresses.
 1. Enable Free Shipping and set Minimum Order Amount to 999999.
-1. Create a cart price rule in Admin > Marketing > Cart Price Rules.
-
-```
-Confirm all conditions are TRUE:
-- Subtotal is at least 50
-- The subtotal is at most 500
-- Apply this condition if the total amount is 50 or more for a subset of cart items that meet all specified criteria:
-  - Category is 23
-```
-
-1. Add the items in this order: Wayfarer Messenger Bag, Olivia 1/4 Zip Light Jacket, Sprite Yoga Companion Kit.
-1. Open the shopping cart and confirm that the Free shipping option appears.
-1. Click "Check Out with Multiple Addresses".
+1. Create a cart price rule in **[!UICONTROL Admin]** > **[!UICONTROL Marketing]** > **[!UICONTROL Cart Price Rules]**.If ALL of these conditions are TRUE:
+   - Subtotal is at least 50
+   - The subtotal is at most 500
+   - Apply this condition if the total amount is 50 or more for a subset of cart items that meet all specified criteria:
+   - Category is 23
+1. Add these products to the cart in order: Wayfarer Messenger Bag, Olivia 1/4 Zip Light Jacket, Sprite Yoga Companion Kit.
+1. Open the shopping cart and verify the Free shipping option is visible.
+1. Click **[!UICONTROL Check Out with Multiple Addresses]**.
 1. Select a different address for the simple product.
-1. Click "Go to Shipping Information".
+1. Click **"****[!UICONTROL Go to Shipping Information]**.
 
 <u>Expected results</u>:
 
-1.Free shipping applies to configurable and bundle product shipments.
+Free shipping applies to configurable and bundle product shipments.
 
 <u>Actual results</u>:
 
-1. Free shipping does not available.
+Free shipping is not available.
 
 ## Apply the patch
 
