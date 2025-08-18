@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-66952: Cache clears on each PLP or cart visit when a target rule is set'
-description: Apply the ACSD-66952 patch to fix the Adobe Commerce issue where cache was cleared on each PLP or Cart visit, causing unnecessary performance overhead, when a target rule was set.
+description: Apply the ACSD-66952 patch to fix the Adobe Commerce issue where cache was cleared on each PLP or cart visit, causing unnecessary performance overhead, when a target rule was set.
 feature: Shopping Cart, Cache, Price Rules
 role: Admin, Developer
 ---
 
 # ACSD-66952: Cache clears on each PLP or cart visit when a target rule is set
 
-The ACSD-66952 patch fixes the issue where cache is cleared on each PLP or Cart visit, causing performance overhead when a target rule is set. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66952. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66952 patch fixes the issue where cache is cleared on each PLP or cart visit, causing performance overhead when a target rule is set. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66952. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,7 +25,7 @@ The ACSD-66952 patch fixes the issue where cache is cleared on each PLP or Cart 
 
 ## Issue
 
-Issue where the cache is cleared on each PLP or Cart visit, causing performance overhead when a target rule is set.
+Issue where the cache is cleared on each PLP or cart visit, causing performance overhead when a target rule is set.
 
 <u>Steps to reproduce</u>:
 
@@ -41,7 +41,7 @@ Issue where the cache is cleared on each PLP or Cart visit, causing performance 
         * If **ALL** of these conditions are *true*, set **[!UICONTROL Product Category]** = *Constant Value 111111*
 1. Start monitoring the logs for cache invalidation requests.
 1. Visit the product page.
-1. Add a product to cart and navigate to the cart page.
+1. Add a product to the cart and navigate to the cart page.
 
 <u>Expected results</u>:
 
