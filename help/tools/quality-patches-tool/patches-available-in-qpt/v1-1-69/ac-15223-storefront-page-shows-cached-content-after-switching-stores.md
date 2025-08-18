@@ -4,8 +4,8 @@ description: Apply the AC-15223 patch to fix the Adobe Commerce issue where afte
 feature: Cache
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 22257e94-8d59-4221-bf79-1d63b5600498
 ---
-
 # AC-15223: Storefront page shows cached content after switching stores
 
 The AC-15223 patch fixes the issue where after switching stores, the page is served from cache as the store switcher is not working. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is AC-15223. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
