@@ -32,7 +32,7 @@ Bundle and downloadable product pages experienced layout issues due to a rearran
 
 1. Install the sample data.
 1. Open the bundle product page and check the layout on the desktop.
-1. Add the bundle product page to the wishlist, navigate to the wishlist, click on the edit icon, and check the layout.
+1. Add the bundle product page to the wishlist, navigate to the wishlist, click the edit icon, and check the layout.
 1. Repeat steps 2 and 3 for a downloadable product.
 
 <u>Expected results</u>:
