@@ -1,7 +1,7 @@
 ---
 title: 'ACSD-66952: Cache clears on each PLP or cart visit when a target rule is set'
 description: Apply the ACSD-66952 patch to fix the Adobe Commerce issue where cache was cleared on each PLP or Cart visit, causing unnecessary performance overhead, when a target rule was set.
-feature: Shopping Cart
+feature: Shopping Cart, Cache, Price Rules
 role: Admin, Developer
 ---
 
