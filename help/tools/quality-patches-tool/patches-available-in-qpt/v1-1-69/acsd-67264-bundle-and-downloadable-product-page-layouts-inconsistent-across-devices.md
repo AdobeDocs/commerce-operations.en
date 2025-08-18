@@ -3,11 +3,12 @@ title: 'ACSD-67264: Bundle and downloadable product page layouts inconsistent ac
 description: Apply the ACSD-67264 patch to fix the Adobe Commerce bundle and Downloadable pages experienced layout issues due to a rearrangement of the product info media block.
 feature: Page Content, Products
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-67264: Bundle and downloadable product page layouts inconsistent across devices
 
-The ACSD-67264 patch fixes the issue where bundle and downloadable product page layouts are inconsistent across devices. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-67264. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.8.
+The ACSD-67264 patch fixes the issue where bundle and downloadable product page layouts are inconsistent across devices. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-67264. Please note that this issue was fixed in Adobe Commerce 2.4.8.
 
 ## Affected products and versions
 
@@ -25,14 +26,14 @@ The ACSD-67264 patch fixes the issue where bundle and downloadable product page 
 
 ## Issue
 
-Issue where bundle and downloadable product page layouts are inconsistent across devices.
+Bundle and downloadable product pages experienced layout issues due to a rearrangement of the product info media block.
 
 <u>Steps to reproduce</u>:
 
 1. Install the sample data.
 1. Open the bundle product page and check the layout on the desktop.
 1. Add the bundle product page to the wishlist, navigate to the wishlist, click on the edit icon, and check the layout.
-1. Repeat the same two steps for the downloadable product.
+1. Repeat steps 2 and 3 for a downloadable product.
 
 <u>Expected results</u>:
 
