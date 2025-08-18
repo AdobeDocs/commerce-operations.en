@@ -38,19 +38,19 @@ A page returns a 500 error because of a cached incorrect layout structure.
 1. Open **[!UICONTROL two terminal windows]**:
     1. **Terminal 1**: Continuously clean the layout cache:
 
-   ```
-    for i in {1..200}; do
-      bin/magento cache:clean layout
-    done
-   ```
+       ```
+       for i in {1..200}; do
+         bin/magento cache:clean layout
+       done
+       ```
    
     1. **Terminal 2**: Simulate concurrent requests to the category page:
 
-   ```
-   for i in {1..200}; do
-      curl -s -o /dev/null -w "Request $i: HTTP %{http_code}\n" "http://your_magento_base_url/shop.html?req=$i"
-    done
-   ```
+       ```
+       for i in {1..200}; do
+         curl -s -o /dev/null -w "Request $i: HTTP %{http_code}\n""http://your_magento_base_url/shop.html?req=$i"
+       done
+       ```
    
 1. Some requests randomly fail with a 500 status code, and the `var/log/support_report.log` shows the following error:
 
