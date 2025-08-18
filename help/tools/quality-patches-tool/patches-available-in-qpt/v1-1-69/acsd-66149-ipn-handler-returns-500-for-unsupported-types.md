@@ -38,6 +38,7 @@ The issue is the IPN handler returns a *500* error for unsupported or unknown IP
 <u>Expected results</u>:
 
 The application IPN handler ignores incorrect IPN types and doesn't generate *500* errors:
+
 ```Order 000000001: Status processing — HTTP 500```
 
 <u>Actual results</u>:
