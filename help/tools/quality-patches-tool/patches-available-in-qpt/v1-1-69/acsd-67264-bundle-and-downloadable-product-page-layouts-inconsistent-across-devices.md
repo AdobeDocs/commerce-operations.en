@@ -4,8 +4,8 @@ description: Apply the ACSD-67264 patch to fix the Adobe Commerce bundle and Dow
 feature: Page Content, Products
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 783271ba-176c-4542-8dd8-82bc029ea453
 ---
-
 # ACSD-67264: Bundle and downloadable product page layouts inconsistent across devices
 
 The ACSD-67264 patch fixes the issue where bundle and downloadable product page layouts are inconsistent across devices. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-67264. Please note that this issue was fixed in Adobe Commerce 2.4.8.
