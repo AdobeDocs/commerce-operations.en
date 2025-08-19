@@ -41,10 +41,14 @@ Companies grid loads slowly for admin users with restricted website access.
 1. Create an admin user with a role ***Admins in Scope***, e.g. adminscope.
 1. Generate specific distributed customer and company data:
    1. ****Customers assigned to websites****
-        ||Website ID||Number of customers|
-        |1|600k|
-        |2|1500|
-        |3|500|
+      
+      | Website ID | Number of customers |
+      |------------|---------------------|
+      | 1          | 600,000             |
+      | 2          | 1,500               |
+      | 3          | 500                 |
+
+      
    1. Run the following query to verify the distribution:
 
        ```
@@ -54,10 +58,13 @@ Companies grid loads slowly for admin users with restricted website access.
        ```
        
    1. ****Customers assigned to companies****
-       ||Number of customers||Number of companies|
-       |1|4500|
-       |2|~1000|
-       |~595k|1|
+
+      | Number of customers | Number of companies |
+      |---------------------|---------------------|
+      | 1                   | 4,500               |
+      | 2                   | ~1,000              |
+      | ~595k               | 1                   |
+
    1. Run the following query to verify the distribution:
 
       ```
