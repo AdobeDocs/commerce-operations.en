@@ -4,8 +4,8 @@ description: Apply the ACSD-65938 patch to fix the Adobe Commerce issue where gi
 feature: Orders, Checkout
 role: Admin, Developer
 type: Troubleshooting
+exl-id: a6e85c9a-cbf6-4b4a-927b-43ec2ce827fc
 ---
-
 # ACSD-65938: Gift card emails sent even when the invoice creation failed
 
 The ACSD-65938 patch resolves an issue where gift card emails were sent before the invoice was successfully saved and committed. With this fix, emails are now triggered only after the invoice has been successfully saved. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-65938. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
