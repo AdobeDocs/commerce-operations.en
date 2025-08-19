@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACSD-66311: Companies grid loads slowly for restricted admin users
 
-The ACSD-66311 patch fixes the issue where the companies grid loads slowly for admin users with restricted website access. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66153. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-66311 patch fixes the issue where the companies grid loads slowly for admin users with restricted website access. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66311. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -80,7 +80,7 @@ Companies grid loads slowly for admin users with restricted website access.
 
 1. Reindex all data to generate entries in the **customer_grid_flat**.
 1. Log in as **adminscope**.
-1. Go to [!UICONTROL Customers] > [!UICONTROL Companies].
+1. Go to **[!UICONTROL Customers]** > **[!UICONTROL Companies]**.
 
 <u>Expected results</u>:
 
