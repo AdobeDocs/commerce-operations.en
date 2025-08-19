@@ -37,7 +37,7 @@ Running GraphQL Application Server requires the following:
 
 ### Cloud projects
 
-Adobe Commerce on cloud infrastructure projects include the Swoole extension by default. You just need to [enable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) it in the `runtime` property of the `.magento.app.yaml` file. For example:
+Adobe Commerce on cloud infrastructure projects include the Swoole extension by default. You can [enable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) it in the `runtime` property of the `.magento.app.yaml` file. For example:
 
 ```yaml
 runtime:
