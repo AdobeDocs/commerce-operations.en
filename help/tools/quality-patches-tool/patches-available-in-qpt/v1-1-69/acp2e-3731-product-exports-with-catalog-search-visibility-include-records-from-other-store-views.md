@@ -1,13 +1,14 @@
 ---
-title: 'ACP2E-3731: Product exports with "Catalog, Search" visibility include records from other store views'
-description: Apply the ACP2E-3731 patch to fix the Adobe Commerce resolves an issue where product exports with visibility filter set to "Catalog, Search" included incorrect rows in multi-store setups due to store-scoped attribute variations.
+title: 'ACP2E-3731: Product exports with [!UICONTROL Catalog, Search] visibility include records from other store views'
+description: Apply the ACP2E-3731 patch to fix the Adobe Commerce resolves an issue where product exports with visibility filter set to [!UICONTROL Catalog, Search] included incorrect rows in multi-store setups due to store-scoped attribute variations.
 feature: Data Import/Export
 role: Admin, Developer
+type: Troubleshooting
 ---
 
-# ACP2E-3731: Product exports with "Catalog, Search" visibility include records from other store views
+# ACP2E-3731: Product exports with [!UICONTROL Catalog, Search] visibility include records from other store views
 
-The ACP2E-3731 patch fixes the issue where product exports with "Catalog, Search" visibility incorrectly include records from other store views in multi-store environments. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3731. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACP2E-3731 patch fixes the issue where product exports with *[!UICONTROL Catalog, Search]* visibility incorrectly include records from other store views in multi-store environments. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3731. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -25,33 +26,33 @@ The ACP2E-3731 patch fixes the issue where product exports with "Catalog, Search
 
 ## Issue
 
-Issue where product exports with "Catalog, Search" visibility incorrectly include records from other store views in multi-store environments.
+Product exports with visibility filter set to *[!UICONTROL Catalog, Search]* included incorrect rows in multi-store setups due to store-scoped attribute variations.
 
 <u>Steps to reproduce</u>:
 
-1. Create additional Website, Store, and Store View.
-1. Create an attribute and assign it to the default attribute set.
-1. Create a product and assign it to both the Main Website and the secondary website.
-1. Set a text value for the newly created attribute with Scope: All Store Views.
-1. Change the scope to the secondary store view and update the attribute value to a different value.
-1. Change the scope to Default Store View and Secondary Store View, then set visibility to "Not Visible Individually".
-1. Navigate to System > Export, select Products from the dropdown.
-1. Set a filter on Visibility = Catalog, Search and click Continue.
+1. In the Admin panel, go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* **[!UICONTROL All Stores]** to create an additional website, store, and store view.
+1. Go to **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* **[!UICONTROL Attribute Set]**. Click **[!UICONTROL Add Attribute Set]** to create an attribute. Set **[!UICONTROL Based On]** to *Default*.
+1. Create a product and assign it to both the main website and the secondary website.
+1. Set a text value for the newly created attribute with **[!UICONTROL Scope]** set to *All Store Views*.
+1. Change the scope to the secondary store view and update the attribute with a different value.
+1. Change the scope to the default store view and the secondary store view. Then, set the product visibility to *Not Visible Individually*.
+1. Go to **[!UICONTROL System]** > **[!UICONTROL Export]**, and select *Products* from the dropdown menu.
+1. Set a filter where **[!UICONTROL Visibility]** = *[!UICONTROL Catalog, Search]*, and click **[!UICONTROL Continue]**.
 1. Run the following command to process the export:
 
-```
-php bin/magento queue:consumers:start exportProcessor
-```
+    ```
+    php bin/magento queue:consumers:start exportProcessor
+    ```
 
-1. Check the exported file
+1. Check the exported file.
 
 <u>Expected results</u>:
 
-Only the filtered records should be exported
+Only the filtered records are exported.
 
 <u>Actual results</u>:
 
-Exported file contains row for secondary store view which doesn't correspond to the filter set during export
+The exported file includes a row for the secondary store view, which doesn't match the filter criteria set during export.
 
 ## Apply the patch
 
