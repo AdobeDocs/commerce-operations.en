@@ -40,8 +40,8 @@ Gift card emails were sent before confirming that the invoice was successfully c
 
    ```
    {
-  "capture": true,
-  "notify": true
+     "capture": true,
+     "notify": true
    }
    ```
 
