@@ -32,8 +32,21 @@ Running GraphQL Application Server requires the following:
 
 * Commerce version 2.4.7+
 * PHP 8.2 or higher
-* Swoole PHP extension v5+ installed
-* Adequate RAM and CPU based on the expected load
+* Swoole PHP extension v5+ (see project-specific requirements below)
+
+### Cloud projects
+
+Adobe Commerce on cloud infrastructure projects include the Swoole extension by default. You just need to [enable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) it in the `runtime` property of the `.magento.app.yaml` file. For example:
+
+```yaml
+runtime:
+    extensions:
+        - swoole
+```
+
+### On-premises projects
+
+You must manually [install and configure](#install-and-configure-swoole) the Swoole PHP extension for on-premises projects.
 
 ## Enable and deploy on cloud infrastructure
 
