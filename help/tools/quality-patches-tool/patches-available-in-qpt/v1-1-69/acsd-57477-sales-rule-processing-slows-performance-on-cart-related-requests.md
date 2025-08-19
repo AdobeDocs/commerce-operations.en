@@ -1,7 +1,6 @@
 ---
 title: 'ACSD-57477: Sales rule processing slows performance on cart-related requests'
-description: Apply the ACSD-57477 patch to fix the Adobe Commerce issue where in a project where lot of product attributes available ex: 1000 attributes, when AddProductsToCart GraphQL operation is executed with variables, Magento tries to load all these product attributes, due to that performance of the AddProductsToCart GraphQL operation slows down.
-Check all possible custom product attributes sent through add to cart mutation and accept only valid product attributes.
+description: Apply the ACSD-57477 patch to fix the Adobe Commerce issue where in a project with many product attributes available (example of 1000 attributes), when AddProductsToCart GraphQL operation is executed with variables, Commerce tries to load all these product attributes and causes slow performance issues from the AddProductsToCart GraphQL operation.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
