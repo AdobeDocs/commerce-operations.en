@@ -8,7 +8,7 @@ type: Troubleshooting
 
 # ACSD-65938: Gift card emails sent even when the invoice creation failed
 
-The ACSD-65938 patch fixes the issue where gift card emails were sent before the invoice was successfully saved and committed, ensuring emails are triggered after the invoice is properly saved. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-65938. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-65938 patch resolves an issue where gift card emails were sent before the invoice was successfully saved and committed. With this fix, emails are now triggered only after the invoice has been successfully saved. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-65938. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -33,10 +33,10 @@ Gift card emails were sent before confirming that the invoice was successfully c
 1. Log in to the **[!UICONTROL Admin]** panel.
 2. Navigate to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Gift Cards]** > **[!UICONTROL Gift Card General Settings]**, and set **[!UICONTROL Generate Gift Card Account when Order Item is]** to *Invoiced*.
 3. Create a new gift card product.
-4. Add gift cart product to cart and proceed to **[!UICONTROL checkout]** (you can use **[!UICONTROL Check/Money Order]** as the payment method).
-5. place the order.
+4. Add gift cart product to cart and proceed to **[!UICONTROL checkout]**. You can use **[!UICONTROL Check/Money Order]** as the payment method.
+5. Place the order.
 6. Modify the `OrderRepository` to simulate an exception during order placement.
-7. Send a POST request to "rest/default/V1/order/<ORDER_ID>/invoice" with the following payload:
+7. Send a POST request to `rest/default/V1/order/<ORDER_ID>/invoice` with the following payload:
 
    ```
    {
