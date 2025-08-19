@@ -32,6 +32,7 @@ Running GraphQL Application Server requires the following:
 
 * Commerce version 2.4.7+
 * PHP 8.2 or higher
+* Adequate RAM and CPU based on the expected load
 * Swoole PHP extension v5+ (see project-specific requirements below)
 
 ### Cloud projects
