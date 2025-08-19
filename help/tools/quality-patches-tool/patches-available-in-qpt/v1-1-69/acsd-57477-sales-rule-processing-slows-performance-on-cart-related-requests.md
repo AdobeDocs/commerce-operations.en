@@ -4,6 +4,7 @@ description: Apply the ACSD-57477 patch to fix the Adobe Commerce issue where in
 Check all possible custom product attributes sent through add to cart mutation and accept only valid product attributes.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
+type: Troubleshooting
 ---
 
 # ACSD-57477: Sales rule processing slows performance on cart-related requests
@@ -26,77 +27,87 @@ The ACSD-57477 patch fixes the issue where sales rule processing causes slow per
 
 ## Issue
 
-Issue where sales rule processing causes slow performance on cart-related requests.
+Sales rule processing causes slow performance on cart-related requests if you send the parameters as GraphQL variables.
 
 <u>Steps to reproduce</u>:
 
-1) Add 1000 product attributes
- 2) Create a cart using below Graphql query
-{noformat}
-mutation {createEmptyCart}{noformat}
- 3) Add a product to cart using below GraphQL query
-{noformat}
-mutation AddProductsToCart($cartId: String!, $products: [CartItemInput!]!) {
-    addProductsToCart(cartId: $cartId, cartItems: $products) {
-      cart {
-        id
-        __typename
-      }
-      __typename
-    }
-  }
-  {noformat}
-Variables
-{noformat}
-{
-  "cartId": "id_here",
-  "products": [
-    {
-      "sku": "product_dynamic_1",
-      "parent_sku": "product_dynamic_1",
-      "quantity": 1
-    }
-  ]
-}{noformat}
-This issue occurs only when we send the parameters as GraphQL variables. If we include the parameters into the GraphQL query itself, then this issue does not occur.
-5) Send the same add to cart request after adding parameters into the GraphQL query itself.
-{noformat}
-mutation {
- addProductsToCart(
-   cartId: "id_here"
-   cartItems:  [
-    {
-      sku: "product_dynamic_1",
-      parent_sku: "product_dynamic_1",
-      quantity: 1
-    }
-  ]
- ) {
-   cart {
-        id
-        __typename
-      }
-      __typename
- }
-}{noformat}
+1. Add 1000 product attributes.
+1. Create a cart using below GraphQL query.
+
+    ```
+    mutation {createEmptyCart}{noformat}
+    ```
+
+1. Add a product to cart using below GraphQL query.
+
+    ```
+    mutation AddProductsToCart($cartId: String!, $products: [CartItemInput!]!) {
+        addProductsToCart(cartId: $cartId, cartItems: $products) {
+          cart {
+            id
+            __typename
+          }
+          __typename
+        }
+      }
+    ```
+
+1. Set these Variables.
+
+    ```
+    {
+      "cartId": "id_here",
+      "products": [
+        {
+          "sku": "product_dynamic_1",
+          "parent_sku": "product_dynamic_1",
+          "quantity": 1
+        }
+      ]
+    }
+    ```
+
+1. This issue occurs only when you send the parameters as GraphQL variables. If you include the parameters into the GraphQL query itself, then this issue doesn't occur.
+1. Send the same **Add To Cart** request after adding parameters into the GraphQL query itself.
+
+    ```
+    mutation {
+     addProductsToCart(
+       cartId: "id_here"
+       cartItems:  [
+        {
+          sku: "product_dynamic_1",
+          parent_sku: "product_dynamic_1",
+          quantity: 1
+        }
+      ]
+     ) {
+       cart {
+            id
+            __typename
+          }
+          __typename
+     }
+    }
+    ```
 
 <u>Expected results</u>:
 
-The AddProductsToCart Graphql operation performance should not be degraded.
+The `AddProductsToCart` GraphQL operation performance shouldn't be degraded.
 
 <u>Actual results</u>:
 
-The AddProductsToCart GraphQL operation performance degrades because it loads all product attributes when parameters are sent as variables
+The `AddProductsToCart` GraphQL operation performance degrades, because it loads all product attributes when parameters are sent as variables.
 
 ## Apply the patch
 
 To apply individual patches, use the following links depending on your deployment method:
 
-* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide.
-* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide.
+* Adobe Commerce or Magento Open Source on-premises: [[!DNL Quality Patches Tool] > Usage](/help/tools/quality-patches-tool/usage.md) in the [!DNL Quality Patches Tool] guide
+* Adobe Commerce on cloud infrastructure: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in the Commerce on Cloud Infrastructure guide
 
 ## Related reading
 
 To learn more about [!DNL Quality Patches Tool], refer to:
 
-* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide.
+* [[!DNL Quality Patches Tool]: A self-service tool for quality patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in the Tools guide
