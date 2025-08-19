@@ -1,14 +1,14 @@
 ---
-title: 'ACSD-67347: Special character coupons and file locking causes the order to fail with a lock error'
-description: Apply the ACSD-67347 patch to the Adobe Commerce issue where customers cannot place an order when a coupon code containing a '/' (for example, BIT/123456) using. The system throws a 'Cannot acquire a lock' error if file locking is enabled during order placement.
-feature: Patch Fix
+title: 'ACSD-67347: Order fails with Cannot acquire a lock when using coupon codes'
+description: Apply the ACSD-67347 patch to the Adobe Commerce issue where orders fail with a “Cannot acquire a lock” error when coupon codes contain special characters (e.g., BIT/123456) and file locking is enabled.
+feature: Checkout, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
 ---
 
-# ACSD-67347: Special character coupons and file locking causes the order to fail with a lock error
+# ACSD-67347: Order fails with Cannot acquire a lock when using coupon codes
 
-The ACSD-67347 patch fixes the issue where orders fail with the "Cannot acquire a lock" error when using coupons that contain special characters and file locking is enabled. The patch is available when [!DNL Quality Patches Tool (QPT)] version 1.1.69 is installed. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
+The ACSD-67347 patch fixes the issue where orders fail with a “Cannot acquire a lock” error when coupon codes contain special characters (e.g., BIT/123456) and file locking is enabled. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-67347. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
 
 ## Affected products and versions
 
@@ -30,30 +30,30 @@ Orders fail with the **Cannot acquire a lock** error when coupons with special c
 
 <u>Steps to reproduce</u>:
 
-1. Install 2.4-develop
-1. Set the file lock configuration in the env.php file
+1. Install 2.4-develop.
+1. Set the file lock configuration in the `env.php` file:
    
-```
-'lock' => [
-        'provider' => 'file',
-        'config' => [
-            'path' => '/Users/awijesooriya/sites/acsd15194dev/locks'
-        ]
-    ],
-```
+   ```
+   'lock' => [
+           'provider' => 'file',
+           'config' => [
+               'path' => '/Users/awijesooriya/sites/acsd15194dev/locks'
+           ]
+       ],
+   ```
 
-1. Create a cart rule with a coupon using the coupon code format: BIT/123456
-1. Create a simple product
-1. Add the product to cart and apply the coupon code
-1. Proceed to checkout and place the order
+1. Create a cart rule with a coupon using the coupon code format: BIT/123456.
+1. Create a simple product.
+1. Add the product to cart and apply the coupon code.
+1. Proceed to checkout and place the order.
 
 <u>Expected results</u>:
 
-The order can be placed as there are no restrictions on creating coupon codes.
+Orders are placed because there are no restrictions on creating coupon codes.
 
 <u>Actual results</u>:
 
-Unable to place the order due to error code 'Cannot acquire lock'.
+Order cannot be placed. Showing error: Cannot acquire lock.
 
 ```
 File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning!fopen(/Users/test/sites/test/locks/coupon_code_123/abc): Failed to open stream: No such file or directory
