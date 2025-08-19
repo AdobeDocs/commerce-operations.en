@@ -4,8 +4,8 @@ description: Apply the ACP2E-3964 patch to fix the Adobe Commerce issue where ch
 feature: Products, Media, REST, Catalog Management
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 61c5b97c-79aa-4ee7-96b3-70924d2c85a0
 ---
-
 # ACP2E-3964: Configurable child products with video not listed via REST API
 
 The ACP2E-3964 patch fixes the issue where child products of configurable products with a video in the **[!UICONTROL Media Gallery]** aren't listed via the REST API. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3964. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
