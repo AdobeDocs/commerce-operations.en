@@ -45,7 +45,7 @@ The ACP2E-4050 patch fixes the issue where **[!UICONTROL Free Shipping]** isn't 
 
 <u>Expected results</u>:
 
-Free shipping applies to configurable and bundle product shipments.
+**[!UICONTROL Free Shipping]** applies to configurable and bundle product shipments.
 
 <u>Actual results</u>:
 
