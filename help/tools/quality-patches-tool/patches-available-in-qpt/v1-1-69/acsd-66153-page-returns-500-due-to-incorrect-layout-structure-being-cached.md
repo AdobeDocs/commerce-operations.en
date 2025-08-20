@@ -4,8 +4,8 @@ description: Apply the ACSD-66153 patch to fix the Adobe Commerce issue where a 
 feature: Catalog Management
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 2d6f47cb-2244-40b6-b1b9-0d03f13adc43
 ---
-
 # ACSD-66153: Page returns 500 error due to cached incorrect layout structure
 
 The ACSD-66153 patch fixes the issue where a page returns a 500 error code due to a cached incorrect layout structure. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-66153. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
