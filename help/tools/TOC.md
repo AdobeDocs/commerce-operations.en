@@ -822,7 +822,7 @@ feature: Configuration
            - [ACSD-66434: [!UICONTROL Customer ID] missing from company [!DNL GraphQL] queries](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
         - v1.1.68 {#v1-1-68}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
-           - [ACSD-58131: presence of a 0-byte image in the media gallery prevented all images in the directory from being displayed or selected](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-58131-presence-of-a-byte-image-in-the-media-gallery-prevented-all-images-in-the-directory-from-being-displayed-or-selected.md)
+           - [ACSD-58131: Old media gallery fails to load images due to 0-byte image file](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-58131-old-media-gallery-fails-to-load-images-due-to-0-byte-image-file.md)
     - [Check patch for Adobe Commerce issue with Quality Patches Tool](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Command-line tools reference {#cli-reference}
     - [Adobe Commerce (on-premises)](reference/commerce-on-premises.md)
