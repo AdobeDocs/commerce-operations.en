@@ -31,13 +31,13 @@ Sales rule processing causes slow performance on cart-related requests if you se
 <u>Steps to reproduce</u>:
 
 1. Add 1000 product attributes.
-1. Create a cart using below GraphQL query.
+2. Create a cart using below GraphQL query.
 
     ```
     mutation {createEmptyCart}{noformat}
     ```
 
-1. Add a product to cart using below GraphQL query.
+3. Add a product to cart using below GraphQL query.
 
     ```
     mutation AddProductsToCart($cartId: String!, $products: [CartItemInput!]!) {
@@ -51,7 +51,7 @@ Sales rule processing causes slow performance on cart-related requests if you se
       }
     ```
 
-1. Set these Variables.
+4. Set these Variables.
 
     ```
     {
@@ -66,8 +66,8 @@ Sales rule processing causes slow performance on cart-related requests if you se
     }
     ```
 
-1. This issue occurs only when you send the parameters as GraphQL variables. If you include the parameters into the GraphQL query itself, then this issue doesn't occur.
-1. Send the same **Add To Cart** request after adding parameters into the GraphQL query itself.
+5. This issue occurs only when you send the parameters as GraphQL variables. If you include the parameters into the GraphQL query itself, then this issue doesn't occur.
+6. Send the same **Add To Cart** request after adding parameters into the GraphQL query itself.
 
     ```
     mutation {
