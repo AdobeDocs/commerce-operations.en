@@ -49,7 +49,7 @@ Free shipping applies to configurable and bundle product shipments.
 
 <u>Actual results</u>:
 
-Free shipping is not available.
+**[!UICONTROL Free Shipping]** isn't available.
 
 ## Apply the patch
 
