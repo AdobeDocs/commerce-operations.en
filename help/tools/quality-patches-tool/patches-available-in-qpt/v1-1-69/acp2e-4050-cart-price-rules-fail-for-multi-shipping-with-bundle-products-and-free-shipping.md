@@ -26,7 +26,7 @@ The ACP2E-4050 patch fixes the issue where **[!UICONTROL Free Shipping]** isn't 
 
 ## Issue
 
-Free Shipping is not applied during multi-address checkout when cart price rules include sub-select conditions and products with specific prices.
+**[!UICONTROL Free Shipping]** isn't applied during multi-address checkout when **[!UICONTROL Cart Price Rules]** include sub-select conditions and products with specific prices.
 
 <u>Steps to reproduce</u>:
 
