@@ -34,8 +34,8 @@ The issue occurs when a 0-byte image is placed in the media gallery directory, c
 
 <u>Steps to reproduce</u>:
 
-1. Go to **[!UICONTROL Stores > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Media Gallery]**.
-1. Set **[!UICONTROLEnable Old Media Gallery]** to **[!UICONTROL Yes]**.
+1. Go to **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Media Gallery]**.
+1. Set **[!UICONTROL Enable Old Media Gallery]** to **[!UICONTROL Yes]**.
 1. Place few images in the `pub/media/wysiwyg directory`.
 1. Create a 0-byte image in the same directory using `touch pub/media/wysiwyg/empty_image.png`.
 1. Add an image from the `wysiwyg` directory via Page Builder under any content (for example, CMS Block).
