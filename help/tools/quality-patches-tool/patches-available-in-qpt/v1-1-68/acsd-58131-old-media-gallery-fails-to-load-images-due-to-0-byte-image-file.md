@@ -26,7 +26,7 @@ The ACSD-58131 patch fixes the issue where the old media gallery fails to render
 
 ## Issue
 
-Issue occurs when a 0-byte image is placed in the media gallery directory. The old media gallery fails to render any images in that directory. The system now skips invalid 0-byte files, displays valid images as expected, and logs a warning for the incorrect file.
+The issue occurs when a 0-byte image is placed in the media gallery directory, causing the old media gallery to fail rendering any images. The updated system now skips invalid 0-byte files, displays valid images as expected, and logs a warning for each incorrect file.
 
 ```
 [2024-05-02T14:00:39.616459+00:00] report.WARNING: The image empty2.jpg is invalid and cannot be displayed in the gallery. [] []
