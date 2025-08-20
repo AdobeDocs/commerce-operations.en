@@ -4,6 +4,7 @@ description: Learn to configure Valkey as the default cache for Adobe Commerce.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
 ---
+
 # Use Valkey for default cache
 
 Commerce provides command-line options to configure the Valkey page and default caching. Although you can configure caching by editing the `<Commerce-install-dir>app/etc/env.php` file, using the command line is the recommended method, especially for initial configurations. The command line provides validation, ensuring the configuration is syntactically correct.
