@@ -33,62 +33,62 @@ Sales rule processing causes slow performance on cart-related requests if you se
 1. Add 1000 product attributes.
 2. Create a cart using below GraphQL query.
 
-    ```
-    mutation {createEmptyCart}{noformat}
-    ```
+```
+mutation {createEmptyCart}{noformat}
+```
 
 3. Add a product to cart using below GraphQL query.
 
-    ```
-    mutation AddProductsToCart($cartId: String!, $products: [CartItemInput!]!) {
-        addProductsToCart(cartId: $cartId, cartItems: $products) {
-          cart {
-            id
-            __typename
-          }
-          __typename
-        }
-      }
-    ```
+```
+mutation AddProductsToCart($cartId: String!, $products: [CartItemInput!]!) {
+    addProductsToCart(cartId: $cartId, cartItems: $products) {
+      cart {
+        id
+        __typename
+      }
+      __typename
+    }
+  }
+```
 
 4. Set these Variables.
 
-    ```
+```
+{
+  "cartId": "id_here",
+  "products": [
     {
-      "cartId": "id_here",
-      "products": [
-        {
-          "sku": "product_dynamic_1",
-          "parent_sku": "product_dynamic_1",
-          "quantity": 1
-        }
-      ]
+      "sku": "product_dynamic_1",
+      "parent_sku": "product_dynamic_1",
+      "quantity": 1
     }
-    ```
+  ]
+}
+```
 
 5. This issue occurs only when you send the parameters as GraphQL variables. If you include the parameters into the GraphQL query itself, then this issue doesn't occur.
 6. Send the same **Add To Cart** request after adding parameters into the GraphQL query itself.
 
-    ```
-    mutation {
-     addProductsToCart(
-       cartId: "id_here"
-       cartItems:  [
-        {
-          sku: "product_dynamic_1",
-          parent_sku: "product_dynamic_1",
-          quantity: 1
-        }
-      ]
-     ) {
-       cart {
-            id
-            __typename
-          }
-          __typename
-     }
+```
+mutation {
+ addProductsToCart(
+   cartId: "id_here"
+   cartItems:  [
+    {
+      sku: "product_dynamic_1",
+      parent_sku: "product_dynamic_1",
+      quantity: 1
     }
-    ```
+  ]
+ ) {
+   cart {
+        id
+        __typename
+      }
+      __typename
+ }
+}
+```
 
 <u>Expected results</u>:
 
