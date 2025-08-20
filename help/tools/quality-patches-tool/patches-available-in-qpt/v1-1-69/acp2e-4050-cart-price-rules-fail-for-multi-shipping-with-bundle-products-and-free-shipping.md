@@ -1,6 +1,6 @@
 ---
 title: 'ACP2E-4050: [!UICONTROL Free Shipping] not applied with multi-address checkout'
-description: Apply the ACP2E-4050 patch to fix the Adobe Commerce issue where Free Shipping is not applied during multi-address checkout when cart price rules include sub-select conditions and products with specific prices.
+description: Apply the ACP2E-4050 patch to fix the Adobe Commerce issue where [!UICONTROL Free Shipping] isn't applied during multi-address checkout when [!UICONTROL Cart Price Rules] include sub-select conditions and products with specific prices.
 feature: Shopping Cart, Shipping/Delivery
 role: Admin, Developer
 type: Troubleshooting 
