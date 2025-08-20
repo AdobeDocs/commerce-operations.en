@@ -31,7 +31,7 @@ Reconfiguration of a bundled product quote in the Admin backend returns an error
 <u>Steps to reproduce</u>:
 
 1. Go to Admin panel and enable the **[!UICONTROL B2B Feature]**:  **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Feature]**.
-1. Create a bundle product with fixed amount (For example: *$10*) and add 3 or more simple products with *0* amount, *2* in **Option 1** and *other* in **Option 2**.
+1. Create a bundle product with fixed amount (for example: *$10*) and add three or more simple products with *0* amount, *2* in **Option 1** and *other* in **Option 2**.
 1. Create a company account from the frontend.
 1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]**, assign the created company and products to the new/custom shared catalog.
 1. Log in as the **Company User** on the frontend, and add one simple product to the cart from the bundle.
@@ -39,7 +39,7 @@ Reconfiguration of a bundled product quote in the Admin backend returns an error
 1. Go to the backend and edit the created quote.
 1. In the **Quote Item** section, click the **Configure** button.
 1. Select another simple product from the **Option 2**.
-1. Now click on **OK** button and see the error message.
+1. Now click on the **OK** button and see the error message.
 
 <u>Expected results</u>:
 
