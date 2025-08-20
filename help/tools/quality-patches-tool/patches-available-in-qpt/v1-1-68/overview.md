@@ -10,7 +10,7 @@ exl-id: 74094036-cb1b-419f-b287-ca24d351a448
 This sub-section provides a detailed description of the issues fixed by the patches available in [!DNL Quality Patches Tool] (QPT) v1.1.68.
 
 QPT v1.1.68 includes the following patches:
-1. **[ACSD-58131](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-58131-presence-of-a-byte-image-in-the-media-gallery-prevented-all-images-in-the-directory-from-being-displayed-or-selected.md)**: Presence of a 0-byte image in the media gallery prevented all images in the directory from being displayed or selected.
+1. **ACSD-58131** Old media gallery fails to load images due to 0-byte image file.
 1. **ACSD-62146**: Selected billing address disappears on the checkout payment page when address search is enabled and "Number of Customer Addresses Limit" is set to 1.
 1. **ACSD-62415**: Adobe Commerce backend loads categories very slowly.
 1. **ACSD-65938**: Gift card emails were sent even when the invoice creation failed.
