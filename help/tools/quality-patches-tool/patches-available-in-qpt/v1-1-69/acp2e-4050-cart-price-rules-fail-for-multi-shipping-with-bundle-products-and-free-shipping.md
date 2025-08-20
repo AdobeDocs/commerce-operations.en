@@ -41,7 +41,7 @@ The ACP2E-4050 patch fixes the issue where **[!UICONTROL Free Shipping]** isn't 
 1. Open the shopping cart and verify the Free shipping option is visible.
 1. Click **[!UICONTROL Check Out with Multiple Addresses]**.
 1. Select a different address for the simple product.
-1. Click **"****[!UICONTROL Go to Shipping Information]**.
+1. Click **[!UICONTROL Go to Shipping Information]**.
 
 <u>Expected results</u>:
 
