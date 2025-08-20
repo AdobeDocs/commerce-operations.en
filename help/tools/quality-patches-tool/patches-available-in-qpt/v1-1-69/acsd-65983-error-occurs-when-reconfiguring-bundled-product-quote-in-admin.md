@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-65983: Error occurs when reconfiguring bundled product quote in Admin'
-description: Apply the ACSD-65983 patch to fix the Adobe Commerce issue where an error appear when attempting to configure a bundle product in the Sales > Quotes > Edit screen on the backend.
+description: Apply the ACSD-65983 patch to fix the Adobe Commerce issue where an error appears when attempting to configure a bundle product in the [!UICONTROL Sales] > [!UICONTROL Quotes] > [!UICONTROL Edit] screen on the backend.
 feature: B2B, Quotes
 role: Admin, Developer
 type: Troubleshooting
@@ -30,11 +30,11 @@ Reconfiguration of a bundled product quote in the Admin backend returns an error
 
 <u>Steps to reproduce</u>:
 
-1. Go to Admin panel and enable the **[!UICONTROL B2B Feature]**:  **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Feature]**.
-1. Create a bundle product with fixed amount (for example: *$10*) and add three or more simple products with *0* amount, *2* in **Option 1** and *other* in **Option 2**.
+1. Go to Admin panel and enable the **[!UICONTROL B2B Feature]**: **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Feature]**.
+1. Create a bundle product with fixed amount (For example: *$10*) and add three or more simple products with *0* amount, *2* in **Option 1** and *other* in **Option 2**.
 1. Create a company account from the frontend.
 1. Go to **[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]**, assign the created company and products to the new/custom shared catalog.
-1. Log in as the **Company User** on the frontend, and add one simple product to the cart from the bundle.
+1. Log in as a **Company User** on the frontend, and add one simple product to the cart from the bundle.
 1. Open the cart page and submit as a **Request a Quote**.
 1. Go to the backend and edit the created quote.
 1. In the **Quote Item** section, click the **Configure** button.
