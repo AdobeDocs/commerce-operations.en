@@ -4,8 +4,8 @@ description: Apply the ACSD-57477 patch to fix the Adobe Commerce issue where in
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 3944b4d4-09c0-49a4-9a7e-8e1758d9d73c
 ---
-
 # ACSD-57477: Sales rule processing slows performance on cart-related requests
 
 The ACSD-57477 patch fixes the issue where sales rule processing causes slow performance on cart-related requests. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-57477. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.7.

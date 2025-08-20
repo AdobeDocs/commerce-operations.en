@@ -1,11 +1,11 @@
 ---
 title: 'ACSD-65983: Error occurs when reconfiguring bundled product quote in Admin'
-description: Apply the ACSD-65983 patch to fix the Adobe Commerce issue where an error appears when attempting to configure a bundle product in the [!UICONTROL Sales] > [!UICONTROL Quotes] > [!UICONTROL Edit] screen on the backend.
+description: Apply the ACSD-65983 patch to fix the Adobe Commerce issue where an error appears when attempting to configure a bundle product in the [!UICONTROL Sales] &gt; [!UICONTROL Quotes] &gt; [!UICONTROL Edit] screen on the backend.
 feature: B2B, Quotes
 role: Admin, Developer
 type: Troubleshooting
+exl-id: d03d09bc-a444-486f-ad6b-fddbbf795d8a
 ---
-
 # ACSD-65983: Error occurs when reconfiguring bundled product quote in Admin
 
 The ACSD-65983 patch fixes the issue where reconfiguring a bundled product quote in the Admin backend returns an error. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACSD-65983. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
