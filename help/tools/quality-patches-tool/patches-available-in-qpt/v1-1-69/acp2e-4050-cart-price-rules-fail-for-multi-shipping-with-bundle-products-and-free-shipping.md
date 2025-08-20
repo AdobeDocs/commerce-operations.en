@@ -32,13 +32,21 @@ The ACP2E-4050 patch fixes the issue where **[!UICONTROL Free Shipping]** isn't 
 
 1. Create a customer account with two addresses.
 1. Enable **[!UICONTROL Free Shipping]** and set **[!UICONTROL Minimum Order Amount]** to *999999*.
-1. Create a cart price rule in **[!UICONTROL Admin]** > **[!UICONTROL Marketing]** > **[!UICONTROL Cart Price Rules]**.If ALL of these conditions are TRUE:
+1. Navigate to [!UICONTROL Admin] > [!UICONTROL Marketing] > [!UICONTROL Cart Price Rules], and create a cart price rule with the following conditions:
+
+  ```
+  If ALL of these conditions are TRUE:
    * Subtotal is at least 50
    * The subtotal is at most 500
    * Apply this condition if the total amount is 50 or more for a subset of cart items that meet all specified criteria:
    * Category is 23
-1. Add these products to the cart in order: Wayfarer Messenger Bag, Olivia 1/4 Zip Light Jacket, Sprite Yoga Companion Kit.
-1. Open the shopping cart and verify the Free shipping option is visible.
+  ```
+
+1. Add the following products to the cart in the specified order: 
+    - Wayfarer Messenger Bag
+    - Olivia 1/4 Zip Light Jacket
+    - Sprite Yoga Companion Kit.
+1. Open the shopping cart and verify that the **[!UICONTROL Free Shipping]** option is available.
 1. Click **[!UICONTROL Check Out with Multiple Addresses]**.
 1. Select a different shipping address for the simple product.
 1. Click **[!UICONTROL Go to Shipping Information]**.
