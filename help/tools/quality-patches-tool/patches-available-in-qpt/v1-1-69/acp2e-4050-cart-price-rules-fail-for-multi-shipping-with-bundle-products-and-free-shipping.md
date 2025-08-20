@@ -43,9 +43,9 @@ The ACP2E-4050 patch fixes the issue where **[!UICONTROL Free Shipping]** isn't 
   ```
 
 1. Add the following products to the cart in the specified order: 
-    - Wayfarer Messenger Bag
-    - Olivia 1/4 Zip Light Jacket
-    - Sprite Yoga Companion Kit.
+    * Wayfarer Messenger Bag
+    * Olivia 1/4 Zip Light Jacket
+    * Sprite Yoga Companion Kit.
 1. Open the shopping cart and verify that the **[!UICONTROL Free Shipping]** option is available.
 1. Click **[!UICONTROL Check Out with Multiple Addresses]**.
 1. Select a different shipping address for the simple product.
