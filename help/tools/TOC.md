@@ -819,6 +819,7 @@ feature: Configuration
            - [ACP2E-3918: Checkout failure for company customers using in-store pickup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
         - v1.1.67 {#v1-1-67}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
+           - [ACSD-66139: GraphQL order fails with UNDEFINED error for inactive cart](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66139-graphql-order-fails-with-undefined-error-for-inactive-cart.md)
            - [ACSD-66301: Moving products from an order to the cart in Commerce Admin results in a quantity mismatch](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66301-order-to-cart-quantity-mismatch.md)
            - [AC-14984: SSL connection issue with php-amqplib/php-amqplib ^3.2.0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14984-ssl-connection-issue-with-php-amqplib-php-amqplib-3-2.md)
            - [ACSD-66118: Updating [!UICONTROL Store View] code clears [!UICONTROL Design Configuration] settings if configuration cache isn’t refreshed](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66118-updating-store-view-code-clears-design-configuration-settings-if-configuration-cache-isn-t-refreshed.md)
