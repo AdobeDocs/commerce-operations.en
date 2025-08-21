@@ -841,6 +841,7 @@ feature: Configuration
            - [ACSD-66233: Admins unable add products due to unresponsive product list popup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66233-admins-unable-add-products-due-to-unresponsive-product-list-popup.md)
         - v1.1.69 {#v1-1-69}
            - [Overview: [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
+           - [ACP2E-3731: Product exports with [!UICONTROL Catalog, Search] visibility include records from other store views](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3731-product-exports-with-catalog-search-visibility-include-records-from-other-store-views.md)
            - [ACSD-66153: page returns 500 due to incorrect layout structure being cached](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66153-page-returns-500-due-to-incorrect-layout-structure-being-cached.md)
            - [ACSD-57477: Sales rule processing slows performance on cart-related requests](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-57477-sales-rule-processing-slows-performance-on-cart-related-requests.md)
            - [ACSD-65983: Error occurs when reconfiguring bundled product quote in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-65983-error-occurs-when-reconfiguring-bundled-product-quote-in-admin.md)
