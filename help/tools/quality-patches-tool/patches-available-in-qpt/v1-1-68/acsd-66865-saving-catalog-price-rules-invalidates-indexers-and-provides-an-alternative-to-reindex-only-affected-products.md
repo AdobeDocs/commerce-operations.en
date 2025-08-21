@@ -4,8 +4,8 @@ description: Apply the ACSD-66865 patch to fix the Adobe Commerce issue where  
 feature: Price Rules, Price Indexer
 role: Admin, Developer
 type: Troubleshooting
+exl-id: 68baf176-ee6e-4ba8-8a34-8adb8d1e16fe
 ---
-
 # ACSD-66865: Saving a **[!UICONTROL Catalog Price Rule]** invalidates indexers and provides an alternative to reindex only affected products
 
 The ACSD-66865 patch fixes the issue where saving a **[!UICONTROL Catalog Price Rule]** invalidates indexers and provides an alternative to reindex only affected products. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 is installed. The patch ID is ACSD-66865. Please note that this issue was fixed in Adobe Commerce 2.4.8.

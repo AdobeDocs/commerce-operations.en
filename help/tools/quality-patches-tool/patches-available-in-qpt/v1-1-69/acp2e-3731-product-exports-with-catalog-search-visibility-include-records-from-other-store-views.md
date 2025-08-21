@@ -4,8 +4,8 @@ description: Apply the ACP2E-3731 patch to fix the Adobe Commerce where product 
 feature: Data Import/Export
 role: Admin, Developer
 type: Troubleshooting
+exl-id: e363e63c-26fb-43eb-86f7-30057f7d9897
 ---
-
 # ACP2E-3731: Product exports with [!UICONTROL Catalog, Search] visibility include records from other store views
 
 The ACP2E-3731 patch fixes the issue where product exports with *[!UICONTROL Catalog, Search]* visibility incorrectly include records from other store views in multi-store environments. This patch is available when the [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69 is installed. The patch ID is ACP2E-3731. Please note that this issue is scheduled to be fixed in Adobe Commerce 2.4.9.
