@@ -33,9 +33,9 @@ The ACSD-66965 patch fixes the issue where the **[!UICONTROL Print]** option on 
 1. Go to **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
 1. Set **[!UICONTROL Enable Company]**, **[!UICONTROL Enable Shared Catalog]** and **[!UICONTROL Enable Requisition List]** to `Yes`.
 1. Create two simple products.
-1. Login to **[!UICONTROL Storefront]** and open **[!UICONTROL My Account]** page.
+1. Log in to the storefront and open the **[!UICONTROL My Account]** page.
 1. Create a requisition list.
-1. Assign both the products to the requisition list.
+1. Assign both products to the requisition list.
 1. Access the requisition list and list the products.
 1. Click **[!UICONTROL Print]**.
 
