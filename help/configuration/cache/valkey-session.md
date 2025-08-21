@@ -4,6 +4,7 @@ description: Learn how to configure Valkey for session storage.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
 ---
+
 # Use Valkey for session storage
 
 >[!IMPORTANT]

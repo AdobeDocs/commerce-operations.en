@@ -5,8 +5,8 @@
 {%- assign requirements_data = site.data.system-requirements %}
 {%- assign grouped_requirements = requirements_data | group_by_exp: "version", "version[0] | slice: 4" %}
 
-{%- assign cloud_dependencies = "Composer,OpenSearch Cloud,MariaDB Cloud,New Relic Cloud,PHP,RabbitMQ Cloud,Redis Cloud,Valkey Cloud" | split: "," %}
-{%- assign fallback_keys = "OpenSearch,MariaDB,RabbitMQ,Redis,Valkey" | split: "," %}
+{%- assign cloud_dependencies = "Composer,OpenSearch Cloud,MariaDB Cloud,New Relic Cloud,PHP,RabbitMQ Cloud,ActiveMQ Cloud,Redis Cloud,Valkey Cloud" | split: "," %}
+{%- assign fallback_keys = "OpenSearch,MariaDB,RabbitMQ,ActiveMQ,Redis,Valkey" | split: "," %}
 
 {%- for minor_version in grouped_requirements %}
 {%- assign requirements = minor_version.items %}
